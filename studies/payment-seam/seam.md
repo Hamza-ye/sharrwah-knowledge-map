@@ -60,7 +60,6 @@ Agreed by both platforms (section (b) in each crossing note):
 - **Exchange-rate policy,** and the rate service.
 - **Zones and markets.**
 - **Parties:** customers, merchants and legal sellers, staff and permissions.
-- **The order itself:** order identity and states.
 - **Tax.**
 - **Catalogue facts.**
 - **Shipping and delivery.**
@@ -102,6 +101,72 @@ These carry the most risk and should be the engineer's first review.
 - **Salla's help-centre article bodies were fetched live on 2026-10-10.**
 - **Neither crossing map is exhaustive.** Each lists the crossings it suspected but could not show.
 
+## Rules added after tagging
+
+Two taggers tagged the 81 rows independently from the first version of this file. They agreed on 78 primary tags and flagged the same gaps on 21 rows. The rules below fill those gaps, and the final tags apply them.
+
+**Parties, roles and the company**
+1. **Money roles.** Roles such as merchant of record, custodian, processor and cash collector are attributes of a payment setup, so they stay inside payments. The parties who fill them are a foundation. The outcome record names the custodian (element 3).
+2. **Seller verification and sanctions screening.** Sharrwah's own screening and verification of sellers, owners and partners is a foundation, because it gates selling and payments alike. Identity checks a rail requires stay inside payments and read the verified identity from the foundation.
+3. **Company-level questions are outside the seam.** Sharrwah's legal entity, domicile and sanctions posture bind both sides. They take the tag **company**, and in the frame they are step 0 for the founder.
+
+**Obligations and the order**
+4. **Order states belong to core.** Core owns them and the contract relies on them (element 0). They are not a foundation.
+5. **Obligations outside the buyer–seller order are core obligations too.**
+   - This covers store credit owed by a seller and Sharrwah's own bills to sellers. They use the same agreed-and-due structure, and they become payments only when money moves, through elements 1 to 4.
+   - When Sharrwah bills a seller, Sharrwah is simply the payee.
+   - Store value usable across sellers counts as e-money. It is held back as a company decision (PAY-57).
+6. **Deadlines have two owners.**
+   - The attempt timeout (provider session, voucher validity) stays inside payments. It reaches core as an expired or failed attempt (element 2).
+   - The deadline for an unpaid obligation, and what happens when it passes (cancel, release stock, notify), is a core term on core's own clock.
+7. **Purchase options that charge later** (pre-order, instalments, subscriptions) are core terms (element 0).
+   - Charging later needs either the buyer to pay again, or a stored permission (reserved).
+   - Lender-funded instalments are a rail inside payments.
+
+**Offering methods**
+8. **Who customises the offer.**
+   - Payments decides which methods the buyer may use, and it enforces the platform minimum and zone availability (element 1).
+   - The seller's presentation rules (hide, reorder, rename, default) are seller settings that core's checkout applies to the returned list.
+9. **Methods published to outside surfaces** (marketplaces, buyer apps, agents) form an offer with no obligation attached. That offer is element 1. Credentials bound to an obligation are element 2.
+
+**Attempts and outcomes**
+10. **Split tender.**
+    - Core splits one obligation across several attempts, because it owns what is owed.
+    - Payments runs each attempt, and the limit on each method comes from its capabilities (element 6).
+    - When a part fails, core decides whether to void the completed parts, through element 4.
+11. **When an attempt makes an order.** The order is created when the attempt succeeds, or when it is accepted as pending and the method's capabilities allow an order before payment, as with cash on delivery or transfer-with-proof. Rejection and pending reasons cross as a closed set of categories (element 2).
+12. **Capture policy.**
+    - When held funds are taken is a seller setting held by core.
+    - Core sends the capture request (element 4) at the right moment.
+    - If a method cannot hold funds (element 6), core falls back to an immediate sale.
+13. **Differences between agreed, moved and settled amounts** are recorded as new outcome records (element 3), never as edits. Settlement differences stay inside payments.
+
+**Refunds and blocks**
+14. **Refund plans.**
+    - Core decides the refund plan: the amount, the destination (original method, store credit or cash) and which outcomes it draws on.
+    - Payments enforces the ceiling on each outcome and executes the refund.
+    - Going over a ceiling needs a core staff permission. It is carried out as a manual reversal.
+15. **Blocks on money actions.**
+    - Core enforces business blocks that come from order states, by not making the request.
+    - Payments refuses anything its own capabilities or states do not allow.
+16. **Complaints and disputes.** A buyer's complaint to Sharrwah is core customer service. If it becomes a dispute with a rail or partner, the mechanics stay inside payments and the status crosses as a verdict (element 5).
+
+**Shared mechanisms and per-market values**
+17. **Reconciliation.**
+    - Reconciling outcomes against rails, partners and custodians stays inside payments.
+    - Sellers' reconciliation reports combine core and payments data through the identifiers that cross: obligation reference, attempt id, outcome id and provider reference.
+18. **Per-market values have one owner each.**
+    - Zones and markets are a foundation.
+    - Payment values per market, such as methods enabled and partner availability, stay inside payments.
+    - Other values per market, such as rial edition, rate policy, civil calendar and tax, are foundations.
+    - Rail cut-offs and settlement calendars stay inside payments and build on the civil calendar.
+19. **The ledger pattern is shared.** Append-only entries, idempotent posting, and reversal instead of edit form a shared foundation used by core's order money and payments' custody and settlement ledgers. Each ledger's content belongs to its owner.
+20. **Tax on Sharrwah's own revenue** belongs to the tax foundation. Tax on rail fees stays inside payments.
+
+**Housekeeping**
+21. **Reserved parts** (stored permissions, the settlement contract) take the tag contract with element **R**.
+22. **Rows that inform several parts.** A field-research row takes as its primary tag the part whose design its answer changes most; the others go in `also`.
+
 ## Tagging the 81 register rows
 
 Each row gets one tag:
@@ -110,5 +175,18 @@ Each row gets one tag:
 - **payments-internal:** its answer stays inside payments;
 - **core:** commerce outside payments;
 - **foundation:** a shared foundation.
+- **company:** outside the seam, binding both sides (rule 3).
 
-Two taggers work independently from this file. Where they disagree, a rule above is missing. Results are in `rows-tagged.tsv`.
+Two taggers worked independently from the first version of this file. `rows-tagged.tsv` gives both taggers' tags, the final tag and the rule applied wherever the final tag differs from theirs.
+
+**Result.**
+
+| Tag | Rows | What it means for the order of work |
+| --- | --- | --- |
+| contract | 24: element 0 ×7, 1 ×3, 2 ×3, 3 ×4, 4 ×2, 6 ×3, 7 ×1, reserved ×1 | Settle early. Most are answerable from the Shopify and Salla evidence already held. The Yemen-specific ones are PAY-49, PAY-75 and PAY-76. |
+| foundation | 13: PAY-01, 22, 34, 38, 40, 41, 43, 48, 61, 62, 73, 74, 81 | Settle early. These cover money with its rial edition, rates, zones, calendars, verification, the ledger pattern and tax. |
+| payments-internal | 42 | These move at their own pace: rails, partners, licences, custody, regulation and consultations. Nothing in core waits for them. |
+| core | 1: PAY-23 | — |
+| company | 1: PAY-44 | Step 0, for the founder. |
+
+How the taggers agreed: they matched on 78 of 81 primary tags. The three disagreements were PAY-16, PAY-44 and PAY-61; each had low confidence from at least one tagger, and rules 6, 3 and 2 settle them. Five tags both taggers agreed on were changed by the new rules: PAY-06, PAY-11, PAY-15, PAY-34 and PAY-41.

@@ -2,7 +2,10 @@
 
 Each item says what it decides and what it needs. Items lower down depend on the ones above.
 
-## 1. The payment seam (before the frame sort)
+## 1. The payment seam (before the frame sort): done
+
+The answer is in `studies/payment-seam/seam.md`, with the 81 rows tagged in `studies/payment-seam/rows-tagged.tsv`. In short, there is a hard boundary around the rails and a seven-element contract on the order side. The tags are 24 contract rows, 13 foundation rows, 42 payments-internal rows, 1 core row and 1 company row. The original brief follows.
+
 
 **Question.** Can payments be its own part of Sharrwah, with its own questions, research, regulation, consultations and pace? The rest of the platform would then depend only on a narrow, stable contract and could be built now, while payments evolves alone in parallel.
 
@@ -52,7 +55,11 @@ Two agents sort the rows without seeing each other's work, then the results are 
   - the model.
 - **Citations:** every sorted line cites a source that resolves.
 - **Disagreements:** a disagreement between the two agents means a rule is missing; a citation that doesn't resolve means the line isn't grounded.
-- **Scope:** runs per group from item 1. The contract rows go first.
+- **Scope:** runs per group from item 1, in this order:
+  1. the 24 contract rows and the 13 foundation rows, which settle early;
+  2. the 42 payments-internal rows, on their own track, at their own pace.
+
+  PAY-44 (company) goes to the founder as step 0.
 
 ## 3. Yemen sources (in progress, payments side only)
 
