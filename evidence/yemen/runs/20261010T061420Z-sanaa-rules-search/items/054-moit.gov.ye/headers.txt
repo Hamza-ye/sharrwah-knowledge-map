@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 10 Oct 2026 06:14:43 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: must-revalidate, no-cache, private
+X-Drupal-Dynamic-Cache: MISS
+Content-language: ar
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+expires: -1
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Drupal-Cache: HIT
+pragma: no-cache
+Accept-Ranges: bytes
+

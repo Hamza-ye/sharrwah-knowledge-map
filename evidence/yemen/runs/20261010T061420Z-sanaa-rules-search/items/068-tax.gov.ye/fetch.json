@@ -1,0 +1,18 @@
+{
+ "n": 68,
+ "url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/salesmd/93-2002.pdf",
+ "dir": "items/068-tax.gov.ye",
+ "fetched_at": "2026-10-10T06:14:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/salesmd/93-2002.pdf",
+ "content_type": "application/pdf",
+ "bytes": 1221205,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A068"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "2dc0c9a7f97de91465f02cd9cfecd72e1f2055225ca78741d98205bac0d2d13f",
+ "raw_ext": "pdf"
+}

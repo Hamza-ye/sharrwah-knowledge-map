@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://whjnews.com/archives/7182",
+ "dir": "items/014-whjnews.com",
+ "fetched_at": "2026-10-10T06:14:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://whjnews.com/archives/7182",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 10990,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A014"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8fbd493b8a7e42a631f5e0c77eccc11bd4d5c3f30c63e6fd63c83ccc6905d3d0",
+ "raw_ext": "html"
+}

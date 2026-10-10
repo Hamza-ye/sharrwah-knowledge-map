@@ -1,0 +1,16 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 06:14:35 GMT
+content-type: image/jpeg
+content-length: 107662
+last-modified: Thu, 25 Dec 2025 17:51:55 GMT
+cache-control: public
+expires: Sun, 11 Oct 2026 05:28:39 GMT
+strict-transport-security: max-age=15768000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+accept-ranges: bytes
+

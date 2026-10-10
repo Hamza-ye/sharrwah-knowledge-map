@@ -1,0 +1,15 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 06:14:30 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+link: <https://whjnews.com/wp-json/>; rel="https://api.w.org/"
+link: <https://whjnews.com/wp-json/wp/v2/posts/7182>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://whjnews.com/?p=7182>; rel=shortlink
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains
+content-encoding: gzip
+

@@ -1,0 +1,18 @@
+{
+ "n": 71,
+ "url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/evidence-indicati/recordsbills-guide.pdf",
+ "dir": "items/071-tax.gov.ye",
+ "fetched_at": "2026-10-10T06:14:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/evidence-indicati/recordsbills-guide.pdf",
+ "content_type": "application/pdf",
+ "bytes": 7939848,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A071"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "9fd39a7de893c51c41d368f05529bef6ab8c40e8a14d29485620569ce7c03e05",
+ "raw_ext": "pdf"
+}

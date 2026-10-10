@@ -1,0 +1,18 @@
+{
+ "n": 67,
+ "url": "https://tax.gov.ye/salestaxes/",
+ "dir": "items/067-tax.gov.ye",
+ "fetched_at": "2026-10-10T06:14:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://tax.gov.ye/salestaxes/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 35939,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A067"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b77a9a1352af998d8b20a3372e01dae8a8620ddf63e5c7f15b011b2d9257c1bf",
+ "raw_ext": "html"
+}

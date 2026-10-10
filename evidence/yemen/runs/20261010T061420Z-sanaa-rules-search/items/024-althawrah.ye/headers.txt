@@ -1,0 +1,12 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Date: Sat, 10 Oct 2026 06:14:34 GMT
+Server: Apache
+Link: <https://althawrah.ye/wp-json/>; rel="https://api.w.org/"
+Link: <https://althawrah.ye/?p=606475>; rel=shortlink
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 27367
+Content-Type: text/html; charset=UTF-8
+

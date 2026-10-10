@@ -17,6 +17,12 @@ Raw copies of the sources behind the Yemen payment work, kept so that citations 
 | --- | --- |
 | `runs/20261010T050304Z-cited-sources/` | The 262 web sources cited in `yemen-setup-options/report.md` and its five Yemen notes. See that run's README. |
 | `runs/20261010T051708Z-community-clients/` | The 13 community-written payment client repositories the notes cite, copied at a fixed commit. See that run's README. |
+| `runs/20261010T061420Z-sanaa-rules-search/` | The 83 documents found by the Arabic-first search for Sana'a-side rules. 66 were captured; 17 are blocked from outside Yemen. |
+
+Other folders:
+
+- `finding-aids/` holds the search agents' lists of sources found. These are not evidence.
+- `derived/` holds page images and OCR text for scanned PDFs.
 
 ## Adding sources fetched inside Yemen
 

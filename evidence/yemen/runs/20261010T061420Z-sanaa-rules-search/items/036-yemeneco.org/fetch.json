@@ -1,0 +1,18 @@
+{
+ "n": 36,
+ "url": "https://yemeneco.org/archives/103317",
+ "dir": "items/036-yemeneco.org",
+ "fetched_at": "2026-10-10T06:14:36Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemeneco.org/archives/103317",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 34974,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A036"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4dc9d0486df78544e11e3cf98d68fc10db728fbc382405bd4cef089109bf713c",
+ "raw_ext": "html"
+}

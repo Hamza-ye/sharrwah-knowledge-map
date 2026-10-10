@@ -1,0 +1,1496 @@
+[
+{
+"n": 1,
+"url": "https://www.centralbank.gov.ye/Home/payment",
+"dir": "items/001-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:20Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A001"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 2,
+"url": "https://centralbank.gov.ye/Home/Detail/141-43104/%D8%A7%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%AF%D9%81%D9%88%D8%B9%D8%A7%D8%AA?lang=en",
+"dir": "items/002-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:20Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A002"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 3,
+"url": "https://centralbank.gov.ye/Home/Detail/143-00124/%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA?lang=en",
+"dir": "items/003-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:20Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A003"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 4,
+"url": "https://centralbank.gov.ye/Home/Detail/121-14140/%D8%A8%D9%86%D9%88%D9%83-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9?lang=en",
+"dir": "items/004-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:20Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A004"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 5,
+"url": "https://centralbank.gov.ye/Home/Detail/160-41024/%D8%A7%D9%84%D9%85%D9%86%D8%B4%D9%88%D8%B1%D8%A7%D8%AA?lang=en",
+"dir": "items/005-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:20Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A005"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 6,
+"url": "https://www.centralbank.gov.ye/Home/Detail/1264-13344/Exchangers-requirements-and-forms",
+"dir": "items/006-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:20Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A006"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 7,
+"url": "https://centralbank.gov.ye/Home/Detail/1254-22242/Financial%20Laws",
+"dir": "items/007-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:27Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A007"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 8,
+"url": "http://centralbank.gov.ye/ar/CBY.aspx?cattype=1&keyid=80&lang=2&pid=74",
+"dir": "items/008-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:27Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 503,
+"final_url": "http://centralbank.gov.ye/ar/CBY.aspx?cattype=1&keyid=80&lang=2&pid=74",
+"content_type": "text/plain",
+"bytes": 114,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A008"
+],
+"raw_file": "raw.txt",
+"sha256": "bf979f8e946d90de52c7c561b82ea1e5ae0f3fcf9b0fdb9a4370bca5b77d49de",
+"raw_ext": "txt"
+},
+{
+"n": 9,
+"url": "https://www.centralbank.gov.ye/Home/banks",
+"dir": "items/009-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:27Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A009"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 10,
+"url": "https://centralbank.gov.ye/Home/ExchangeRateReport",
+"dir": "items/010-centralbank.gov.ye",
+"fetched_at": "2026-10-10T06:14:28Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A010"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 11,
+"url": "https://www.saba.ye/en/news3335749.htm",
+"dir": "items/011-saba.ye",
+"fetched_at": "2026-10-10T06:14:28Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.saba.ye/en/news3335749.htm",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 3188,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A011"
+],
+"raw_file": "raw.html",
+"sha256": "ebe2fa5ddb957d3109c73057a3df53697c434c7de3c12a84d064fd48cec0cc1c",
+"raw_ext": "html"
+},
+{
+"n": 12,
+"url": "https://althawrah.ye/archives/880148",
+"dir": "items/012-althawrah.ye",
+"fetched_at": "2026-10-10T06:14:28Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://althawrah.ye/archives/880148",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 22363,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A012"
+],
+"raw_file": "raw.html",
+"sha256": "b793c757f2a4df3ba24d7cc425bbc734cc6640b9e4956bcd7d72fd066d244f3b",
+"raw_ext": "html"
+},
+{
+"n": 13,
+"url": "https://yemeneco.org/archives/107413",
+"dir": "items/013-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:29Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/107413",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34503,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A013"
+],
+"raw_file": "raw.html",
+"sha256": "9e040d2e1664f7432495e7327a99aeb4550efe6319f12801bba923093e037078",
+"raw_ext": "html"
+},
+{
+"n": 14,
+"url": "https://whjnews.com/archives/7182",
+"dir": "items/014-whjnews.com",
+"fetched_at": "2026-10-10T06:14:29Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://whjnews.com/archives/7182",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 10990,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A014"
+],
+"raw_file": "raw.html",
+"sha256": "8fbd493b8a7e42a631f5e0c77eccc11bd4d5c3f30c63e6fd63c83ccc6905d3d0",
+"raw_ext": "html"
+},
+{
+"n": 15,
+"url": "https://yemeneco.org/archives/117948",
+"dir": "items/015-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:30Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/117948",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34924,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A015"
+],
+"raw_file": "raw.html",
+"sha256": "01e0c95bd83e8f6d51f703e658a2886d14663967b071d4eb031b9d51ea862aad",
+"raw_ext": "html"
+},
+{
+"n": 16,
+"url": "https://yemeneco.org/wp-content/uploads/2025/11/IMG_20251113_191313_951.jpg",
+"dir": "items/016-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:30Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/wp-content/uploads/2025/11/IMG_20251113_191313_951.jpg",
+"content_type": "image/jpeg",
+"bytes": 90256,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A016"
+],
+"raw_file": "raw.jpeg",
+"sha256": "0ec788d6e053df363e6ac4e372e7c81344511ebd011ab5923663ce9487b06ca0",
+"raw_ext": "jpeg"
+},
+{
+"n": 17,
+"url": "https://yemeneco.org/archives/119836",
+"dir": "items/017-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:30Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/119836",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 33802,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A017"
+],
+"raw_file": "raw.html",
+"sha256": "3417efcf85174a974781f25fee27e062c2d3622af39a90cd21029fab4a654586",
+"raw_ext": "html"
+},
+{
+"n": 18,
+"url": "https://yemeneco.org/archives/126677",
+"dir": "items/018-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:30Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/126677",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34281,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A018"
+],
+"raw_file": "raw.html",
+"sha256": "d99ee389495e3a4a22f0942430546872afaf3c9c4a5295014fdd756d34db0d98",
+"raw_ext": "html"
+},
+{
+"n": 19,
+"url": "https://yemeneco.org/archives/122953",
+"dir": "items/019-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:31Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/122953",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34518,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A019"
+],
+"raw_file": "raw.html",
+"sha256": "cbd7eae9bdb772f7ed1ea0a261f44b97a5950e0526f923a54cdff7935b02fd51",
+"raw_ext": "html"
+},
+{
+"n": 20,
+"url": "https://yemeneco.org/archives/126835",
+"dir": "items/020-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:31Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/126835",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34155,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A020"
+],
+"raw_file": "raw.html",
+"sha256": "75fc0d55706e82c2fbefd2c4ca64a3f3d170e2483363729179e097669d17ebbe",
+"raw_ext": "html"
+},
+{
+"n": 21,
+"url": "https://www.saba.ye/ar/news3516903.htm",
+"dir": "items/021-saba.ye",
+"fetched_at": "2026-10-10T06:14:31Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.saba.ye/ar/news3516903.htm",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 3189,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A021"
+],
+"raw_file": "raw.html",
+"sha256": "8dde136a14409e4137c7db3efe0649cfcbb2617fe40a05ddf56c5b532753a233",
+"raw_ext": "html"
+},
+{
+"n": 22,
+"url": "https://www.saba.ye/ar/news3515394.htm",
+"dir": "items/022-saba.ye",
+"fetched_at": "2026-10-10T06:14:32Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.saba.ye/ar/news3515394.htm",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 3194,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A022"
+],
+"raw_file": "raw.html",
+"sha256": "007b53412177b6e7a3d8ee9a819f5e76239922799f624b96b01f275e78a585ff",
+"raw_ext": "html"
+},
+{
+"n": 23,
+"url": "https://www.saba.ye/ar/news3337222.htm",
+"dir": "items/023-saba.ye",
+"fetched_at": "2026-10-10T06:14:32Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.saba.ye/ar/news3337222.htm",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 3187,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A023"
+],
+"raw_file": "raw.html",
+"sha256": "4b5f8296de400b71be16974759cb7d9f788794f663ee6fb0dc96bf96331f01ea",
+"raw_ext": "html"
+},
+{
+"n": 24,
+"url": "https://althawrah.ye/archives/606475",
+"dir": "items/024-althawrah.ye",
+"fetched_at": "2026-10-10T06:14:33Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://althawrah.ye/archives/606475",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 27367,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A024"
+],
+"raw_file": "raw.html",
+"sha256": "f656cfc76341677633a71ac4033f54370eb5971e161833378340e626b8033937",
+"raw_ext": "html"
+},
+{
+"n": 25,
+"url": "https://yemeneco.org/archives/121997",
+"dir": "items/025-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:33Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/121997",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34410,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A025"
+],
+"raw_file": "raw.html",
+"sha256": "949260ebf345bed34c0fccb7c73e93b402a0993b37629794651a06511a9f3b74",
+"raw_ext": "html"
+},
+{
+"n": 26,
+"url": "https://yemeneco.org/wp-content/uploads/2026/01/photo_2026-01-07_17-53-32.jpg",
+"dir": "items/026-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:33Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/wp-content/uploads/2026/01/photo_2026-01-07_17-53-32.jpg",
+"content_type": "image/jpeg",
+"bytes": 76808,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A026"
+],
+"raw_file": "raw.jpeg",
+"sha256": "2268d6f93c11cc177e6fdec43fde242d7ee2f75efbf543ee97f901b366af2ebf",
+"raw_ext": "jpeg"
+},
+{
+"n": 27,
+"url": "https://yemeneco.org/archives/121784",
+"dir": "items/027-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:34Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/121784",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34162,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A027"
+],
+"raw_file": "raw.html",
+"sha256": "9f9e250789be745123443c2329a28fd7100897c2a1dfb9f8a7ba70c3b886381a",
+"raw_ext": "html"
+},
+{
+"n": 28,
+"url": "https://yemeneco.org/archives/144198",
+"dir": "items/028-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:34Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/144198",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 32197,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A028"
+],
+"raw_file": "raw.html",
+"sha256": "d2721422206bbc275d25a45177e714f26fcfc15ff24007886759ac8649815460",
+"raw_ext": "html"
+},
+{
+"n": 29,
+"url": "https://yemeneco.org/archives/121127",
+"dir": "items/029-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:34Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/121127",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34755,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A029"
+],
+"raw_file": "raw.html",
+"sha256": "08a7a5709df8a32c8d3264758c8673c42ff98d4509fe788f7c40c29035dae64c",
+"raw_ext": "html"
+},
+{
+"n": 30,
+"url": "https://yemeneco.org/wp-content/uploads/2025/12/photo_%D9%A2%D9%A0%D9%A2%D9%A5-%D9%A1%D9%A2-%D9%A2%D9%A5_%D9%A2%D9%A0-%D9%A4%D9%A2-%D9%A2%D9%A3.jpg",
+"dir": "items/030-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:35Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/wp-content/uploads/2025/12/photo_%D9%A2%D9%A0%D9%A2%D9%A5-%D9%A1%D9%A2-%D9%A2%D9%A5_%D9%A2%D9%A0-%D9%A4%D9%A2-%D9%A2%D9%A3.jpg",
+"content_type": "image/jpeg",
+"bytes": 107662,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A030"
+],
+"raw_file": "raw.jpeg",
+"sha256": "4541a28879953b360a2c0f2d50df56f6d6f4a0534f217bb65b318729f0025d1f",
+"raw_ext": "jpeg"
+},
+{
+"n": 31,
+"url": "https://yemeneco.org/archives/132457",
+"dir": "items/031-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:35Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/132457",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 32267,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A031"
+],
+"raw_file": "raw.html",
+"sha256": "45b109db6c9980780c35fc6f162480962097377c230f8940210002b3f76fd907",
+"raw_ext": "html"
+},
+{
+"n": 32,
+"url": "https://yemen-yba.com/17876/",
+"dir": "items/032-yemen-yba.com",
+"fetched_at": "2026-10-10T06:14:35Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemen-yba.com/17876/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 28235,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A032"
+],
+"raw_file": "raw.html",
+"sha256": "aab88a80d8b7c3ff0b8e721112ec12af6b76e9ab7f5cc0156f456b544586e532",
+"raw_ext": "html"
+},
+{
+"n": 33,
+"url": "https://althawrah.ye/archives/546052",
+"dir": "items/033-althawrah.ye",
+"fetched_at": "2026-10-10T06:14:35Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://althawrah.ye/archives/546052",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 24594,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A033"
+],
+"raw_file": "raw.html",
+"sha256": "10e70faeff5e99b5ae470284f381f10b3ad8d92fb34879f321cff77940f12327",
+"raw_ext": "html"
+},
+{
+"n": 34,
+"url": "https://yemeneco.org/archives/93954",
+"dir": "items/034-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:35Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/93954",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34118,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A034"
+],
+"raw_file": "raw.html",
+"sha256": "752675a1e18a102a17fbe41d45da558c0b58b4a1b9b294d231bf2b01909bffbd",
+"raw_ext": "html"
+},
+{
+"n": 35,
+"url": "https://www.saba.ye/ar/news3445820.htm",
+"dir": "items/035-saba.ye",
+"fetched_at": "2026-10-10T06:14:36Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.saba.ye/ar/news3445820.htm",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 3191,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A035"
+],
+"raw_file": "raw.html",
+"sha256": "77b24421e65517ea4aa62e3dff7941d0ebb8caa33b35f19b7c7d950d3c18b15d",
+"raw_ext": "html"
+},
+{
+"n": 36,
+"url": "https://yemeneco.org/archives/103317",
+"dir": "items/036-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:36Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/103317",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34974,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A036"
+],
+"raw_file": "raw.html",
+"sha256": "4dc9d0486df78544e11e3cf98d68fc10db728fbc382405bd4cef089109bf713c",
+"raw_ext": "html"
+},
+{
+"n": 37,
+"url": "https://www.saba.ye/ar/news3230501.htm",
+"dir": "items/037-saba.ye",
+"fetched_at": "2026-10-10T06:14:36Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.saba.ye/ar/news3230501.htm",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 3188,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A037"
+],
+"raw_file": "raw.html",
+"sha256": "6f9148da2fc001e9fdd3b77581099434352ba0631320ca6d82521e7fef3a16eb",
+"raw_ext": "html"
+},
+{
+"n": 38,
+"url": "https://yemeneco.org/archives/55242",
+"dir": "items/038-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:36Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/55242",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 33512,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A038"
+],
+"raw_file": "raw.html",
+"sha256": "c123596ba347fa7f57864aadecf6d4a8dd8ad9aff23cb55405a065d6ab12ba2d",
+"raw_ext": "html"
+},
+{
+"n": 39,
+"url": "http://www.yemen-nic.info/db/laws_ye/detail.php?ID=69344",
+"dir": "items/039-yemen-nic.info",
+"fetched_at": "2026-10-10T06:14:36Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "http://www.yemen-nic.info/db/laws_ye/detail.php?ID=69344",
+"content_type": "text/html; charset=utf-8",
+"bytes": 182316,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A039"
+],
+"raw_file": "raw.html",
+"sha256": "bc4dd1cb058fca6906384e1b351ad8b7654a05aa7f881def5e9faa36013f90d6",
+"raw_ext": "html"
+},
+{
+"n": 40,
+"url": "https://www.moit.gov.ye/legislations",
+"dir": "items/040-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:36Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/legislations",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 83852,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A040"
+],
+"raw_file": "raw.html",
+"sha256": "e0d5255033b7c5af02b71af3064d68aee15fb495c8fa48994670ed77166b83cd",
+"raw_ext": "html"
+},
+{
+"n": 41,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%20%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+"dir": "items/041-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:37Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%20%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+"content_type": "application/pdf",
+"bytes": 244328,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A041"
+],
+"raw_file": "raw.pdf",
+"sha256": "a2f10d85cf0d4fa28bca441b3c78c29d42dbef7956d1f1e2fba0f45a406095a3",
+"raw_ext": "pdf"
+},
+{
+"n": 42,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D8%A7%D9%84%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A.pdf",
+"dir": "items/042-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:37Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D8%A7%D9%84%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A.pdf",
+"content_type": "application/pdf",
+"bytes": 4656150,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A042"
+],
+"raw_file": "raw.pdf",
+"sha256": "994cf4849fa0b7655461cfe9abb07a5afd0bb190390c477ca7db0c31159afb21",
+"raw_ext": "pdf"
+},
+{
+"n": 43,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%87%D9%84%D9%83.pdf",
+"dir": "items/043-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:37Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%87%D9%84%D9%83.pdf",
+"content_type": "application/pdf",
+"bytes": 1795728,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A043"
+],
+"raw_file": "raw.pdf",
+"sha256": "97ba8f5423cdb7089b65d9eccdc5ebf5aae4891dfc98df2fda2760ba681ddedd",
+"raw_ext": "pdf"
+},
+{
+"n": 44,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D8%A7%D9%84%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%87%D9%84%D9%83.pdf",
+"dir": "items/044-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:38Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D8%A7%D9%84%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%87%D9%84%D9%83.pdf",
+"content_type": "application/pdf",
+"bytes": 365664,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A044"
+],
+"raw_file": "raw.pdf",
+"sha256": "25dc314d4aff96af03f35fa7f54260c5c8ef06e2d96b7bb784b6ad9017af3776",
+"raw_ext": "pdf"
+},
+{
+"n": 45,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AA%D9%86%D8%B8%D9%8A%D9%85%20%D9%88%D9%83%D8%A7%D9%84%D8%A7%D8%AA%20%D9%88%D9%81%D8%B1%D9%88%D8%B9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AC%D9%86%D8%A8%D9%8A%D8%A9.pdf",
+"dir": "items/045-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:38Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AA%D9%86%D8%B8%D9%8A%D9%85%20%D9%88%D9%83%D8%A7%D9%84%D8%A7%D8%AA%20%D9%88%D9%81%D8%B1%D9%88%D8%B9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AC%D9%86%D8%A8%D9%8A%D8%A9.pdf",
+"content_type": "application/pdf",
+"bytes": 207000,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A045"
+],
+"raw_file": "raw.pdf",
+"sha256": "8653a508e8d483c231fe79a46aa3f8d3bfeb1a016c81ac0115c706e67ae55078",
+"raw_ext": "pdf"
+},
+{
+"n": 46,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D9%88%D9%83%D8%A7%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%20.pdf",
+"dir": "items/046-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:39Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D9%88%D9%83%D8%A7%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%20.pdf",
+"content_type": "application/pdf",
+"bytes": 3950846,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A046"
+],
+"raw_file": "raw.pdf",
+"sha256": "f9b3c390301d411ebac7871db17670b1bc395ed1002a2e601ac004e842702d99",
+"raw_ext": "pdf"
+},
+{
+"n": 47,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D9%85%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9-.pdf",
+"dir": "items/047-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:40Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D9%85%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9-.pdf",
+"content_type": "application/pdf",
+"bytes": 232053,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A047"
+],
+"raw_file": "raw.pdf",
+"sha256": "925b691c6ff40c80f50edbd7676d92d2cd9ee2e01fd111d24727bc03659600ae",
+"raw_ext": "pdf"
+},
+{
+"n": 48,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA%20%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+"dir": "items/048-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:40Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA%20%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+"content_type": "application/pdf",
+"bytes": 951804,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A048"
+],
+"raw_file": "raw.pdf",
+"sha256": "c8cf36b73bf261e42d01d3da89d78c729cedf5de3eca4dc2635a004d53ebce55",
+"raw_ext": "pdf"
+},
+{
+"n": 49,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%AA%D8%AC%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%A9.pdf",
+"dir": "items/049-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:40Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%AA%D8%AC%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%A9.pdf",
+"content_type": "application/pdf",
+"bytes": 1816880,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A049"
+],
+"raw_file": "raw.pdf",
+"sha256": "d58f866284ea42e042ecc51e7f28f95e9aba33e51eeb94ebd8db1e91dbdfb33c",
+"raw_ext": "pdf"
+},
+{
+"n": 50,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%B1%D9%82%D9%85%20%283%29%20%D9%84%D8%B3%D9%86%D8%A9%201446%20-2025%202%20.pdf",
+"dir": "items/050-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:41Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%B1%D9%82%D9%85%20%283%29%20%D9%84%D8%B3%D9%86%D8%A9%201446%20-2025%202%20.pdf",
+"content_type": "application/pdf",
+"bytes": 20407989,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A050"
+],
+"raw_file": "raw.pdf",
+"sha256": "09c62ea8281f203448bad70418b304dfabd9451db15b29b32dc0f8f5aab636b9",
+"raw_ext": "pdf"
+},
+{
+"n": 51,
+"url": "https://www.moit.gov.ye/sites/default/files/2026-01/%D9%82%D8%B1%D8%A7%D8%B1_%D8%B1%D8%A6%D9%8A%D8%B3_%D9%85%D8%AC%D9%84%D8%B3_%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1_%D8%B1%D9%82%D9%85%2810%29_%D9%84%D8%B3%D9%86%D8%A9_1446%D9%87%D9%80_%D8%A8%D8%B4%D8%A3%D9%86_%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9_%D8%A7%D9%84%D8%B3%D9%84%D8%B9_%D9%88%D8%A7%D9%84%D8%A8%D8%B6%D8%A7%D8%A6%D8%B9_%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA_%D8%A7%D9%84%D8%A7%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9%5B1%5D_0.pdf",
+"dir": "items/051-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:41Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/sites/default/files/2026-01/%D9%82%D8%B1%D8%A7%D8%B1_%D8%B1%D8%A6%D9%8A%D8%B3_%D9%85%D8%AC%D9%84%D8%B3_%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1_%D8%B1%D9%82%D9%85%2810%29_%D9%84%D8%B3%D9%86%D8%A9_1446%D9%87%D9%80_%D8%A8%D8%B4%D8%A3%D9%86_%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9_%D8%A7%D9%84%D8%B3%D9%84%D8%B9_%D9%88%D8%A7%D9%84%D8%A8%D8%B6%D8%A7%D8%A6%D8%B9_%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA_%D8%A7%D9%84%D8%A7%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9%5B1%5D_0.pdf",
+"content_type": "application/pdf",
+"bytes": 972800,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A051"
+],
+"raw_file": "raw.pdf",
+"sha256": "3d5991c090388b1e987724fe048a37aa2eaf7b8f348cf441ae996507b3a3f680",
+"raw_ext": "pdf"
+},
+{
+"n": 52,
+"url": "https://yemeneco.org/archives/106361",
+"dir": "items/052-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:42Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/106361",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34865,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A052"
+],
+"raw_file": "raw.html",
+"sha256": "13c531aae8661bb4622bf8f559fc1297d39aa9068431c3ac55d33cee8c03e915",
+"raw_ext": "html"
+},
+{
+"n": 53,
+"url": "https://www.moit.gov.ye/commercial-registry-for-individuals",
+"dir": "items/053-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:42Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/commercial-registry-for-individuals",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 68100,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A053"
+],
+"raw_file": "raw.html",
+"sha256": "5f3dbd4afb356914e550237cc1e24b10c9985f840837017c103b32b1acd4aa3f",
+"raw_ext": "html"
+},
+{
+"n": 54,
+"url": "https://www.moit.gov.ye/node/223",
+"dir": "items/054-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:42Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/node/223",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 71168,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A054"
+],
+"raw_file": "raw.html",
+"sha256": "84c6ff264c7fb2a93758056812cf7fa15cc1c9028c6c85730a7f871be53d4075",
+"raw_ext": "html"
+},
+{
+"n": 55,
+"url": "https://www.moit.gov.ye/node/221",
+"dir": "items/055-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:42Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/node/221",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 75958,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A055"
+],
+"raw_file": "raw.html",
+"sha256": "13a154fc9d4ac7ee22779c1adcd7f374b9c4d9602cd606142c856c239850e6af",
+"raw_ext": "html"
+},
+{
+"n": 56,
+"url": "https://www.moit.gov.ye/registering-commercial-agency",
+"dir": "items/056-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:43Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.moit.gov.ye/registering-commercial-agency",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 89403,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A056"
+],
+"raw_file": "raw.html",
+"sha256": "e9f4ab5d1dada3b8d722952eb56f5dd8c097302a553fe7d4b45c5d6a106f329c",
+"raw_ext": "html"
+},
+{
+"n": 57,
+"url": "https://moit.gov.ye/sites/default/files/2026-02/%D8%AF%D9%84%D9%8A%D9%84%20%D9%82%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%20%D9%88%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%20%D9%85%D8%B9%D8%AF%D9%84.pdf",
+"dir": "items/057-moit.gov.ye",
+"fetched_at": "2026-10-10T06:14:43Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://moit.gov.ye/sites/default/files/2026-02/%D8%AF%D9%84%D9%8A%D9%84%20%D9%82%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%20%D9%88%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%20%D9%85%D8%B9%D8%AF%D9%84.pdf",
+"content_type": "application/pdf",
+"bytes": 93393409,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A057"
+],
+"raw_file": "raw.pdf",
+"sha256": "8180492cf004a8b99e8aada0bb12c2c08b6e49ce854c1857c80359b92a6a20c8",
+"raw_ext": "pdf"
+},
+{
+"n": 58,
+"url": "https://yemeneco.org/archives/71383",
+"dir": "items/058-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:44Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/71383",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34072,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A058"
+],
+"raw_file": "raw.html",
+"sha256": "9a2faebb96ccf78c849517bae4a19ec1c1682931aaf16d14ca2a572981d31615",
+"raw_ext": "html"
+},
+{
+"n": 59,
+"url": "https://yemeneco.org/archives/101997",
+"dir": "items/059-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:44Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/101997",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 35000,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A059"
+],
+"raw_file": "raw.html",
+"sha256": "77f45c70f15807344a4b64b2a24a263cf49e0c25b2bfd037df3247bde775fe87",
+"raw_ext": "html"
+},
+{
+"n": 60,
+"url": "https://yemeneco.org/archives/130124",
+"dir": "items/060-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:44Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/130124",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 32512,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A060"
+],
+"raw_file": "raw.html",
+"sha256": "2e41f0239748d7088a8a27b23c0e2979871311c830f4a70098add656bb4711ae",
+"raw_ext": "html"
+},
+{
+"n": 61,
+"url": "https://www.saba.ye/ar/news3389327.htm",
+"dir": "items/061-saba.ye",
+"fetched_at": "2026-10-10T06:14:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.saba.ye/ar/news3389327.htm",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 3189,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A061"
+],
+"raw_file": "raw.html",
+"sha256": "f899254f0e2997e7901823316437b6a7407d2a7563eaca3044f47de49c98846f",
+"raw_ext": "html"
+},
+{
+"n": 62,
+"url": "https://26sep.net/index.php/local/110168",
+"dir": "items/062-26sep.net",
+"fetched_at": "2026-10-10T06:14:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://26sep.net/index.php/local/110168",
+"content_type": "text/html; charset=utf-8",
+"bytes": 64765,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A062"
+],
+"raw_file": "raw.html",
+"sha256": "02cd743336348413a9e7c44abbd982b0d00bbfe1d7be24219b4d1ad114d4fcc6",
+"raw_ext": "html"
+},
+{
+"n": 63,
+"url": "https://yemeneco.org/archives/103799",
+"dir": "items/063-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/103799",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34917,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A063"
+],
+"raw_file": "raw.html",
+"sha256": "fb50a5b263ba5d8d0daae670e5dea54b7ddb5e7fad4e91d17fed2a80c17d7dad",
+"raw_ext": "html"
+},
+{
+"n": 64,
+"url": "https://yemeneco.org/archives/138237",
+"dir": "items/064-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/138237",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 32149,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A064"
+],
+"raw_file": "raw.html",
+"sha256": "602508715b789a98d794507f051d939dd8d8b01b9ba092e47a67b345bd1a38b5",
+"raw_ext": "html"
+},
+{
+"n": 65,
+"url": "https://yemeneco.org/archives/109501",
+"dir": "items/065-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/109501",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 35091,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A065"
+],
+"raw_file": "raw.html",
+"sha256": "02cb96fbdc19cfd8e4c656f4fa16995c4319ea36202e43f49584fd697c8a8b0e",
+"raw_ext": "html"
+},
+{
+"n": 66,
+"url": "https://tax.gov.ye/images/portfolio/tax/pdf/salestax.pdf",
+"dir": "items/066-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/images/portfolio/tax/pdf/salestax.pdf",
+"content_type": "application/pdf",
+"bytes": 5975110,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A066"
+],
+"raw_file": "raw.pdf",
+"sha256": "1a7a30e2f3430d4f0d85d3f46dc169a420462a8fff758491db124169dccc8b28",
+"raw_ext": "pdf"
+},
+{
+"n": 67,
+"url": "https://tax.gov.ye/salestaxes/",
+"dir": "items/067-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/salestaxes/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 35939,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A067"
+],
+"raw_file": "raw.html",
+"sha256": "b77a9a1352af998d8b20a3372e01dae8a8620ddf63e5c7f15b011b2d9257c1bf",
+"raw_ext": "html"
+},
+{
+"n": 68,
+"url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/salesmd/93-2002.pdf",
+"dir": "items/068-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/salesmd/93-2002.pdf",
+"content_type": "application/pdf",
+"bytes": 1221205,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A068"
+],
+"raw_file": "raw.pdf",
+"sha256": "2dc0c9a7f97de91465f02cd9cfecd72e1f2055225ca78741d98205bac0d2d13f",
+"raw_ext": "pdf"
+},
+{
+"n": 69,
+"url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/saleshd/108-2002.pdf",
+"dir": "items/069-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/saleshd/108-2002.pdf",
+"content_type": "application/pdf",
+"bytes": 3421825,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A069"
+],
+"raw_file": "raw.pdf",
+"sha256": "55eaab43392b3a9d204adbc6c3995b6f74461cd6dc182ff08c55ad299cb0d710",
+"raw_ext": "pdf"
+},
+{
+"n": 70,
+"url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/saleshd/86-2005.pdf",
+"dir": "items/070-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/saleshd/86-2005.pdf",
+"content_type": "application/pdf",
+"bytes": 1571825,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A070"
+],
+"raw_file": "raw.pdf",
+"sha256": "a22d6800f2427987c7a027e380169b0f7425ae8c2ff456eedebf3c9a8eeef6a7",
+"raw_ext": "pdf"
+},
+{
+"n": 71,
+"url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/evidence-indicati/recordsbills-guide.pdf",
+"dir": "items/071-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/images/portfolio/tax/files/salestax/evidence-indicati/recordsbills-guide.pdf",
+"content_type": "application/pdf",
+"bytes": 7939848,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A071"
+],
+"raw_file": "raw.pdf",
+"sha256": "9fd39a7de893c51c41d368f05529bef6ab8c40e8a14d29485620569ce7c03e05",
+"raw_ext": "pdf"
+},
+{
+"n": 72,
+"url": "https://tax.gov.ye/images/2023/pdf/reg-guid.pdf",
+"dir": "items/072-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/images/2023/pdf/reg-guid.pdf",
+"content_type": "application/pdf",
+"bytes": 7414255,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A072"
+],
+"raw_file": "raw.pdf",
+"sha256": "dec09919b1710514efcdf80502685153a2607b94cd26cec2b410f40d3e4eba9e",
+"raw_ext": "pdf"
+},
+{
+"n": 73,
+"url": "https://tax.gov.ye/wp-content/uploads/2024/04/%E2%80%8F%E2%80%8F%E2%80%8F%E2%80%8F%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AF%D8%A7%D8%AF-18.pdf",
+"dir": "items/073-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/wp-content/uploads/2024/04/%E2%80%8F%E2%80%8F%E2%80%8F%E2%80%8F%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AF%D8%A7%D8%AF-18.pdf",
+"content_type": "application/pdf",
+"bytes": 3237736,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A073"
+],
+"raw_file": "raw.pdf",
+"sha256": "17716647d45a2cbd042ea30be208b8155082c75021092b92e534c3c86ad3457b",
+"raw_ext": "pdf"
+},
+{
+"n": 74,
+"url": "https://yemeneco.org/archives/128492",
+"dir": "items/074-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/128492",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 33351,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A074"
+],
+"raw_file": "raw.html",
+"sha256": "f3d1c9fe6d5a5988b35537ae553ce377c0e35a43071e6bbf0bb9404a4c5306da",
+"raw_ext": "html"
+},
+{
+"n": 75,
+"url": "https://tax.gov.ye/%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D8%B5%D9%84%D8%AD%D9%80%D9%80%D9%80%D9%80%D8%A9-%D8%A7%D9%84%D8%B6%D8%B1%D8%A7%D8%A6%D8%A8-%D9%84%D9%84%D8%A5%D8%AE%D9%88%D8%A9-%D9%85%D9%83%D9%84%D9%81%D9%8A/",
+"dir": "items/075-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D8%B5%D9%84%D8%AD%D9%80%D9%80%D9%80%D9%80%D8%A9-%D8%A7%D9%84%D8%B6%D8%B1%D8%A7%D8%A6%D8%A8-%D9%84%D9%84%D8%A5%D8%AE%D9%88%D8%A9-%D9%85%D9%83%D9%84%D9%81%D9%8A/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 38078,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A075"
+],
+"raw_file": "raw.html",
+"sha256": "5b7d73595eaa84b33a9b504d47f6fa3046e645793ce13400c2a640d63ecd0e9c",
+"raw_ext": "html"
+},
+{
+"n": 76,
+"url": "https://tax.gov.ye/74-d4/",
+"dir": "items/076-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/74-d4/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 40577,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A076"
+],
+"raw_file": "raw.html",
+"sha256": "51ad442bed1306638a2c48aa2c3d76642414cdd98e6e9c30a68228f5c95e7c76",
+"raw_ext": "html"
+},
+{
+"n": 77,
+"url": "https://tax.gov.ye/2023-05-30/",
+"dir": "items/077-tax.gov.ye",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://tax.gov.ye/2023-05-30/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 39132,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A077"
+],
+"raw_file": "raw.html",
+"sha256": "393ae385ea65c99a064dd0a49a2af2e385b614b1dfbad9aa8160c579d81953fd",
+"raw_ext": "html"
+},
+{
+"n": 78,
+"url": "http://www.yemen-nic.info/news/detail.php?ID=76157",
+"dir": "items/078-yemen-nic.info",
+"fetched_at": "2026-10-10T06:14:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "http://www.yemen-nic.info/news/detail.php?ID=76157",
+"content_type": "text/html; charset=utf-8",
+"bytes": 56076,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A078"
+],
+"raw_file": "raw.html",
+"sha256": "fcfad50e5b9c3e2603456db379fdf60807c56cc15cb8059ba40270e3acf8d65a",
+"raw_ext": "html"
+},
+{
+"n": 79,
+"url": "https://yemen-nic.info/db/laws_ye/detail.php?ID=11600",
+"dir": "items/079-yemen-nic.info",
+"fetched_at": "2026-10-10T06:14:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemen-nic.info/db/laws_ye/detail.php?ID=11600",
+"content_type": "text/html; charset=utf-8",
+"bytes": 130622,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A079"
+],
+"raw_file": "raw.html",
+"sha256": "2d586db182551f86ddb79132713a9eee76abc26c53ddf2855a9ebcf86160ad92",
+"raw_ext": "html"
+},
+{
+"n": 80,
+"url": "https://yemen-nic.info/news/detail.php?ID=72660",
+"dir": "items/080-yemen-nic.info",
+"fetched_at": "2026-10-10T06:14:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemen-nic.info/news/detail.php?ID=72660",
+"content_type": "text/html; charset=utf-8",
+"bytes": 46006,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A080"
+],
+"raw_file": "raw.html",
+"sha256": "b6dd8b75327edb1e073c672bc347a4b0b4378004258dfe610b47320ee3093fa7",
+"raw_ext": "html"
+},
+{
+"n": 81,
+"url": "https://althawrah.ye/archives/576086",
+"dir": "items/081-althawrah.ye",
+"fetched_at": "2026-10-10T06:14:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://althawrah.ye/archives/576086",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 26900,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A081"
+],
+"raw_file": "raw.html",
+"sha256": "236715157827aa3b4d543eeb9d2b8ba2cbb163ecf2fec70068b9d84ebf3641f1",
+"raw_ext": "html"
+},
+{
+"n": 82,
+"url": "https://26sep.net/index.php/spotlight/136376-2x88",
+"dir": "items/082-26sep.net",
+"fetched_at": "2026-10-10T06:14:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://26sep.net/index.php/spotlight/136376-2x88",
+"content_type": "text/html; charset=utf-8",
+"bytes": 23334,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A082"
+],
+"raw_file": "raw.html",
+"sha256": "2968378696faaf7d3500f274e8e2f3a3af3fbec65ea41e9c839bf7d719167d28",
+"raw_ext": "html"
+},
+{
+"n": 83,
+"url": "https://yemeneco.org/archives/132382",
+"dir": "items/083-yemeneco.org",
+"fetched_at": "2026-10-10T06:14:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/132382",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 32119,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A083"
+],
+"raw_file": "raw.html",
+"sha256": "34e6254207963ee59baca9d00739dac92fe0e289134bdf8da779d684c6981a9b",
+"raw_ext": "html"
+}
+]
