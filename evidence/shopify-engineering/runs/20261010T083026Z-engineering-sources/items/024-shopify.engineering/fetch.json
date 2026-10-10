@@ -1,0 +1,18 @@
+{
+ "n": 24,
+ "url": "https://shopify.engineering/a-pods-architecture-to-allow-shopify-to-scale",
+ "dir": "items/024-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/a-pods-architecture-to-allow-shopify-to-scale",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 49268,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E024"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f7d52342e0bf2617209c89e71aae030c61d3e4a7913f8d0f4de3026de853a574",
+ "raw_ext": "html"
+}

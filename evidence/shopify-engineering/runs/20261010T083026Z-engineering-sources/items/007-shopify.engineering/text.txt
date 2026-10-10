@@ -1,0 +1,303 @@
+Skip to Content
+Solutions
+Start
+Start your business
+.
+Build your brand
+Create your website
+.
+Online store editor
+Customize your store
+.
+Store themes
+Find business apps
+.
+Shopify app store
+Own your site domain
+.
+Domains & hosting
+Explore free business tools
+.
+Tools to run your business
+Sell
+Sell your products
+.
+Sell online or in person
+Check out customers
+.
+World-class checkout
+Sell online
+.
+Grow your business online
+Sell across channels
+.
+Reach millions of shoppers and boost sales
+Sell globally
+.
+International sales
+Sell wholesale & direct
+.
+Business-to-business (B2B)
+Market
+Market your business
+.
+Reach & retain customers
+Market across social
+.
+Social media integrations
+Chat with customers
+.
+Shopify Inbox
+Nurture customers
+.
+Shopify Messaging
+Know your audience
+.
+Gain customer insights
+Manage
+Manage your business
+.
+Track sales, orders & analytics
+Measure your performance
+.
+Analytics and Reporting
+Manage your stock & orders
+.
+Inventory & order management
+Automate your business
+.
+Shopify Flow
+Shopify Developers
+.
+Build with Shopify's powerful APIs
+Plus
+.
+A commerce solution for growing digital brands
+All Products
+.
+Explore all Shopify products & features
+Pricing
+Resources
+Help and support
+Help and support
+.
+Get 24/7 support
+Business courses
+.
+Learn from proven experts
+Popular topics
+What is Shopify?
+.
+How our commerce platform works
+Essential tools
+Business name generator
+.
+Logo maker
+.
+Stock photography
+.
+QR code generator
+.
+What’s new
+Changelog
+.
+Your source for recent updates
+Newsroom
+.
+All company news and press releases
+Engineering Blog
+AI & Machine Learning
+Mobile
+Infrastructure
+Culture
+Latest
+More topics
+Security
+Developer Tooling
+Data Science Engineering
+Search
+BLOG|INFRASTRUCTURE
+Performance Testing At Scale—for BFCM and Beyond
+
+Let’s unpack our approach to BFCM Scale Testing to explore some of what it takes to ensure that our ecommerce platform can handle the busiest weekend of the year.
+
+Engineering at Shopify
+
+We’re hiring
+
+See open roles
+
+At Shopify, Black Friday Cyber Monday (BFCM) is the most critical time of year for us and our merchants. It’s where we reach unprecedented milestones and achieve the highest levels of scale every year. In order to prepare for this, we leverage different types of exercises that include capacity planning, resiliency testing, single application performance testing, and full-scale load testing, or as we call it—BFCM Scale Testing. Let’s unpack our approach to BFCM Scale Testing to explore some of what it takes to ensure that our ecommerce platform can handle the busiest weekend of the year.
+
+What is BFCM Scale Testing?
+
+In the simplest sense, BFCM Scale Testing boils down to testing the platform to ensure that it can handle BFCM levels of traffic. At a high level this involves:
+
+Scaling up our core platform (and select subsystems) to their BFCM profile.
+Running load tests against the platform to simulate BFCM peak traffic levels
+Scaling down core platform to regular baseline
+Analyzing the results and discussing our findings
+Making iterative performance improvements, and repeating this process several times throughout the year.
+
+The Shopify architecture is comprised of a hybrid model with a monolithic ruby application in the center (Shopify Core) that’s supported by a variety of services including Storefront Renderer (responsible for serving HTML to browsers and some storefront API traffic), our analytics pipelines, fraud analysis pipelines, payment processing infrastructure, webhook-sending services, and many more. As one can imagine, there are many different systems involved that receive traffic when a buyer browses a storefront, adds items to their cart, enters their shipping and payment information, and ultimately completes their purchase via checkout. When we generate BFCM level load against the platform, we need to be cognizant of which components need to be scaled up (and how high) to support this load.
+
+Scaling Up
+
+In 2022 we were determined to perform more of these full-scale tests than we did in 2021 with the goal of making them as much of a non-event as possible. We started planning for our first tests for the year in February by analyzing our numbers from 2021 BFCM including the number of instances we had running of the various components of Shopify Core and our other related applications, as well as revising some of the results of our 2021 scale tests.
+
+After we had devised our plan for how we wanted to scale up, our next steps were to work with our cloud vendor to ensure that we could secure the number of desired virtual machines for the first scale test date. One of the challenges encountered when operating large-scale cloud infrastructure is that cloud providers also only have a finite number of resources available at any given time, and making a request for scaling up an already-large footprint by 200 percent is something that needs special attention.
+
+Our scale up strategy evolved from years of observing how the platform as a whole behaves at scale and which components are necessary to be scaled up for load testing. For example, our nginx request-routing tiers that sit downstream of our core platform must be scaled up prior to these BFCM Scale Tests to accommodate the high level of traffic we generate. Similarly, upstream components of Shopify core such as our ProxySQL tier and our global Key/Value store need to be scaled up as well ahead of any large-scale testing.
+
+When coordinating these BFCM Scale Tests, it’s a multi-team effort. Some teams scale up their associated components the day before testing as they may require more time, and other components scale up only on test days to help keep costs down.
+
+On the day of each BFCM Scale Test, we scale up the remaining components to their full scale profiles, and they remain in this configuration for the duration of the test exercise that day, usually lasting several hours. During (or shortly after) we’ve completed our full scale-up we occasionally encounter issues that arise from operating at this scaled up profile without any additional load on the system. Identifying these issues now (rather than during BFCM) is a key part about why we do these exercises early and often. These issues have included themes like:
+
+The increased number of connections resulting from an increased number of Storefront Renderer instances running to an upstream application is overloading the upstream application even at idle platform load.
+An increased number of Shopify Core replicas is creating extra pressure on our streaming infrastructure due to an increased number of connections.
+
+In cases where we’ve experienced these connection-count based issues, we’ve sometimes been able to scale up dependent services to cope with the additional connections. Other times we’ve been able to avoid the source of contention by refactoring parts of the architecture and introducing intermediary software to multiplex these connections.
+
+Running Load Tests
+
+After we’ve completed a full scale up and the platform is stable, we begin initialization of our load tests. This year we used a suite of five main tests with each simulating a different class of load against the platform:
+
+Browsing and buying flow: This flow simulates users browsing storefronts, adding products to cart, and checking out via a mock payment gateway with test credit card details.
+Admin flow: This flow simulates merchants loading and making changes on their store’s admin portal—things like checking inventory and updating product prices.
+Flash sale flow: We have a dedicated flow that simulates a flash sale—this flow results in a burst of storefront activity while simulated users purchase a single product.
+Storefront API flow: With the increasing adoption of Shopify Hydrogen, we wanted to ensure that our APIs powering this new technology were ready for increased traffic. This flow simulates API calls that a headless Shopify store makes when users are browsing and checking out on a headless shop.
+Hydrogen and Oxygen flow: This flow simulates users browsing and checking out via a real headless storefront powered by Shopify’s hosted Hydrogen and Oxygen offering.
+
+Each flow represents a single user’s journey in HTTP calls that’s then executed by our custom load testing tool Cronograma many times over—you can learn more about Cronograma in the post Pummelling the Platform–Performance Testing Shopify. One flow might make as many as 25 to 50 HTTP calls as it simulates things like a user browsing storefront product pages, adding and removing a few items to and from their cart, and then eventually checking out.
+
+We configure these different flows to run at different rates, in order to have control over the desired target requests per minute that we’re generating against the platform from each class of load. We also increase the load slowly over time and layer the tests atop one another sequentially. It’s an additional way to maintain control as we constantly monitor the platform health during the Scale Test. If at any point during the Scale Test we see signs of platform degradation, we have a quick “abort switch” integrated into our Cronograma tooling that we use to immediately stop all of the tests.
+
+An example of stacking the different load test flows together incrementally, each adding on additional load. Note that not all flows may run for the entire duration of the test.
+Determining How Far Do We Push the Platform
+
+For our first few BFCM Scale Tests in 2022, we based our numbers around our BFCM 2021 projections and actuals to come up with a proposed target for these early tests. We typically measure these large tests in terms of Requests Per Minute (RPM) achieved as well as Checkouts Completed Per Minute (CCPM).
+
+Around August, we receive insights from the internal Data Science teams that provide us official projections for the 2022 BFCM weekend, which further allow us to tweak our targets for RPM and CCPM that we want to achieve during the scale tests. We cannot accurately know what our actual numbers will be, but we want to test with a high enough load that we’re comfortable that we can easily satisfy the projections without the platform being overly stressed.
+
+During select scale tests, we opt to also test how we handle this level of load if one of our key cloud regions goes down. In this scenario, we effectively shut off one of our U.S. cloud regions by routing all requests to the other sister region. The goal of this test is to verify that we have enough capacity in a single region to be able to still service this workload even if there were to be a catastrophic failure in the other region.
+
+Our goal isn’t to break the platform with these BFCM Scale Tests, but rather to gain confidence that we’re able to service our target load without degradation to our systems. As part of this process, it necessitates identifying pieces of the platform that need further optimization, and we continuously iterate to eliminate scaling issues as they are discovered.
+
+Scaling Down
+
+When we’ve completed our test runs for the exercise, it’s time to begin the process of scaling down. During scale-down it’s important to ensure that it happens in reverse order of scale-up to continue protecting our dependencies that are upstream from systems like Shopify Core (ProxySQL, for example). If we were to scale-down ProxySQL before scaling down Shopify Core, we might risk overloading ProxySQL with the high number of connections that are still being made from the larger Shopify Core profile.
+
+Analyzing the Results
+
+After scale-down is completed, the teams involved in the Scale Test exercise take time to gather data from their particular discipline’s systems and conclude if there are things that need to be addressed as action items. After giving a day or so for data collection and analysis, we assemble as a group to do a blameless retrospective on how the Scale Test exercises went, not only paying special attention to any issues that came up that need remediation actions going forward, but also considering parts of the system that were close to being overloaded, but did not exhibit failure during the scale tests.
+
+Iterating on the Plan
+
+After we’ve identified items that need adjustments, we ensure that these are tracked appropriately, have appropriate owners, and have an action plan for moving forward with mitigation before our next scale test. The final step of iteration is then starting to plan the next scale test!
+
+Why Do Full-scale Testing?
+
+There are (at least) two strategies that can be adopted when designing a load test of a distributed system. The first way is to use a scaled-model of the production environment, in which testing would take place against a small number of servers instead of the whole production fleet. The traffic generated against the servers during the test is not the final expected production load, but instead a scaled sample of the traffic according to how many servers are serving the workload. After testing is completed and results are analyzed, engineers can extrapolate the data and compare real production traffic estimates and then horizontally scale-out the workloads based on the scaled-model test.
+
+This scaled-model strategy is cost-effective and can be easier to reason about and manage, but also comes with several drawbacks, including:
+
+It’s difficult to translate databases and other vertically-scaled components into a scaled model
+It assumes that workloads can scale horizontally in a predictable manner
+
+In contrast to the scaled-model methodology, we choose to do BFCM Scale testing with a full-scale approach, where we scale the systems to their expected BFCM profile and simulate the full amount of projected traffic during our load tests.
+
+What Are the Considerations and Tradeoffs?
+
+In comparison to load testing with a scaled-model, scaling up workloads to massive numbers to perform full-scale testing can add a significant amount of additional expense, especially in a cloud environment model where billing happens based on usage. At Shopify, we acknowledge that BFCM is the biggest weekend of the year for our merchants, and it’s extremely important that we do all we can to ensure that our platform is ready for these immense waves of traffic.
+
+When scaling up a large system by a significant amount, often there are situations where things break without any more significant load on the system. It’s purely from operating at a higher baseline level of infrastructure, even if there is no additional load on the system. One common theme that often occurs when scaling up systems by orders of magnitude is that things break because of more TCP connections. Greater numbers of TCP connections in a system typically means more memory consumption by things like proxies and databases, and can even manifest in issues like maximum connection count exceeded errors. Becoming comfortable with running the system at this significantly higher scale builds confidence that all pieces of the infrastructure are ready to support high load scenarios.
+
+We also want to identify unexpected interactions in a complex architecture. In an environment that’s constantly changing, it’s not practical to expect any single human to be able to keep a mind map of all of the dependencies at play at a single point in time. Pushing a high level of real traffic through the system helps us find these dependencies that may have problems that surface as a side effect of the load on the platform.
+
+When we simulate large amounts of traffic through a few core business flows, all systems that are part of the path get load tested “for free.” It can be difficult to necessarily design an appropriate load test for a middleware component like a proxy. How much load should you simulate? Of what type? And what’s realistic? By ensuring that these middleware components can satisfy the full-scale load test workload, we can reasonably expect that they’re appropriately sized for handling large-scale traffic.
+
+Some pieces of the system are beyond our control, like the content delivery network (CDN) that we use but don’t own or operate. During BFCM, real user traffic originates from all over the world, and users’ HTTP requests traverse through the CDN point-of-presence (PoP) that’s closest to them. Our BFCM Scale Tests have their HTTP request load generated from a limited number of locations, which isn’t a realistic representation of traffic sources. The result is that when we attempt to generate millions of requests per minute from our small number of load generation clusters, all of this load is concentrated through only a handful of CDN PoPs, which can be problematic and overwhelm them. To work around this, our load testing scripts are configured to bypass the CDN for a portion of the traffic, sending some requests directly to our origins, while still sending a portion through the CDN.
+
+There are multiple layers of cache in the systems that we load test, and we need to be aware of how this could artificially skew the results. Some of the applications that we run these tests against leverage different layers of in-memory cache, and key/value store caching. In order to combat this, we specify a portion of our requests in our load test scripts to “bust through” the cache. The applications that support this mechanism are watching for specially-crafted HTTP requests, and if one is observed, they bypass their caching layers for the given request.
+
+When testing with synthetic workloads like this, it should be stressed that just because a system survives a load test of a specific magnitude under a synthetic load, doesn’t mean that it’s ready for the same magnitude of production traffic. It’s difficult to recreate exact production traffic patterns in load tests and we acknowledge that the only substitute for production traffic is real production traffic. We treat these exercises as an iterative process and not an assurance of success. Despite the fact that our load generation doesn’t mimic production traffic, we still do pay crucial attention to the slightest bits of negative feedback from the systems while these tests are running. Any increase in latency or error rate could be an early warning signal of larger problems looming.
+
+What We Learned
+
+Throughout the process of BFCM Scale Testing in 2022, we’ve been able to conquer several key challenges that may have otherwise proven problematic during a high traffic event like BFCM.
+
+One of the issues that came up midyear was the realization that after we had refactored our architecture to run a smaller number of Kubernetes clusters for Shopify Core, we were now limited to a maximum number of 1000 endpoints per cluster with a single deployment due to an issue that had yet to be fixed in ingress-nginx. This meant that instead of scaling up to our desired number of Shopify core Kubernetes pods (around 1200 per cluster), only the first 1000 pods would actually receive traffic. We discussed several options for remediation here, including patching ingress-nginx ourselves and running an additional deployment per cluster. Ultimately, we settled on changing the profile of our Kubernetes pods so that each pod had more CPU, memory, and web worker capacity, and therefore was able to serve more requests per pod. In this configuration, we were able to keep the number of pods per cluster under 1000 and maintained enough capacity for servicing these BFCM Scale Tests as well as BFCM weekend itself.
+
+During our tests where we were routing all requests to a single region (that is,. simulating a regional outage of a sibling region), we noticed that we were encountering some latency and increasing errors as we would begin to ramp up the load. Upon further analysis it appeared that some of our ingress nginx Kubernetes pods inside our Shopify Core clusters were getting far more load than others and were exhibiting symptoms of overload, leading to elevated response times and occasional timeouts resulting in HTTP 504s. After much debugging and troubleshooting with our cloud vendor, we had confirmed that the cloud load balancer wasn’t equally distributing requests among load balancer backends. These nginx pods were scheduled on the same Kubernetes node pools as other workloads that meant that some of the Kubernetes nodes present in the list of load balancer backends had one nginx pod on it and some had several. In addition to this balancing issue, the fact that our load tests generated traffic from a limited number of source IPs meant that there was limited entropy being used for selecting a backend at the cloud load balancer, which further resulted in a poor distribution of requests among backends. To mitigate this issue, we built dedicated Kubernetes node pools for nginx to ensure that all Kubernetes nodes would always have an equal amount of Kubernetes pods running. This helped avoid these hot spots of overloaded nginx pods.
+
+What Are Our Next Steps?
+
+Looking forward, the next steps on our BFCM Scale Testing journey may involve increasing adoption of additional load generation locations to further align with Shopify’s global expansion. In order to keep evolving the realism of our synthetic load tests, we recognize the need to continue to iterate our load tests flows to closer align with production traffic patterns.
+
+Jordan Neufeld is a Site Reliability Engineer with over seven years of experience supporting a wide range of technologies. He has led many incident response efforts through all aspects of triage, troubleshooting, remediation, and retrospectives. When Jordan is not debugging production, collaborating with peers or creating a morale-boosting meme, you might find him hacking on Go code or Kubernetes controllers. In his spare time, Jordan enjoys making music, BBQing, and hanging out with his wife and children. 
+
+We all get shit done, ship fast, and learn. We operate on low process and high trust, and trade on impact. You have to care deeply about what you’re doing, and commit to continuously developing your craft, to keep pace here. If you’re seeking hypergrowth, can solve complex problems, and can thrive on change (and a bit of chaos), you’ve found the right place. Visit our Engineering career page to find your role.
+
+JN
+by
+Jordan Neufeld
+Published on Jan 27, 2023
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Jordan Neufeld
+Published on Jan 27, 2023
+• 14 minute read
+
+DEVELOPMENT
+Introducing Ruvy
+DEVELOPER TOOLING
+Building a ShopifyQL Code Editor
+
+APPS
+Shopify’s platform is the Web platform
+DEVELOPMENT
+The Engineering Story Behind Flex Comp
+WORK FROM ANYWHERE
+WITH SHOPIFY
+
+See our open roles and learn more about our digital by design culture.
+
+See open roles
+Shopify
+About
+Careers
+Investors
+Press and Media
+Partners
+Affiliates
+Legal
+Service status
+Support
+Merchant Support
+Shopify Help Center
+Hire a Partner
+Shopify Community
+Developers
+Shopify.dev
+API Documentation
+Dev Degree
+Products
+Shop
+Shop Pay
+Shopify for Enterprise
+Global Impact
+Sustainability
+Build Black
+Accessibility
+Research
+Solutions
+Online Store Builder
+Website Builder
+Ecommerce Website
+Terms of service
+Privacy policy
+Sitemap
+Your Privacy Choices

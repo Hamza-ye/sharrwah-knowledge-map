@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://archive.qconlondon.com/system/files/presentation-slides/qcon_london_2022_-_shopify_architecture.pdf",
+ "dir": "items/002-archive.qconlondon.com",
+ "fetched_at": "2026-10-10T08:30:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://archive.qconlondon.com/system/files/presentation-slides/qcon_london_2022_-_shopify_architecture.pdf",
+ "content_type": "application/pdf",
+ "bytes": 3063373,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E002"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "f2afd62a0788f8c16740bbf904eb0fc4f0a802bd8c9b5c20778136ae2f553d31",
+ "raw_ext": "pdf"
+}

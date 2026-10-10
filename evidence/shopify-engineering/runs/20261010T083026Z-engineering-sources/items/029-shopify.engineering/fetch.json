@@ -1,0 +1,18 @@
+{
+ "n": 29,
+ "url": "https://shopify.engineering/making-shopify-point-of-sale-reliable",
+ "dir": "items/029-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/making-shopify-point-of-sale-reliable",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 56374,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E029"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7dd12137e758ffca32cef06ab1738bd443106f53c5e918248f0f2812cf731978",
+ "raw_ext": "html"
+}

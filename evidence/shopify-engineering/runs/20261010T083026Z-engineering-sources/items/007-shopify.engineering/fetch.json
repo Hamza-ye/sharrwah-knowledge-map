@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://shopify.engineering/scale-performance-testing",
+ "dir": "items/007-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/scale-performance-testing",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 56571,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E007"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7b928b22ed65cc268a31d3888c2cf133b363d92d8359720c8534f1d378dbcda5",
+ "raw_ext": "html"
+}

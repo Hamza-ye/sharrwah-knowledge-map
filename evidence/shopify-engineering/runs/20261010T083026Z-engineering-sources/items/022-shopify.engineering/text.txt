@@ -1,0 +1,272 @@
+Skip to Content
+Solutions
+Start
+Start your business
+.
+Build your brand
+Create your website
+.
+Online store editor
+Customize your store
+.
+Store themes
+Find business apps
+.
+Shopify app store
+Own your site domain
+.
+Domains & hosting
+Explore free business tools
+.
+Tools to run your business
+Sell
+Sell your products
+.
+Sell online or in person
+Check out customers
+.
+World-class checkout
+Sell online
+.
+Grow your business online
+Sell across channels
+.
+Reach millions of shoppers and boost sales
+Sell globally
+.
+International sales
+Sell wholesale & direct
+.
+Business-to-business (B2B)
+Market
+Market your business
+.
+Reach & retain customers
+Market across social
+.
+Social media integrations
+Chat with customers
+.
+Shopify Inbox
+Nurture customers
+.
+Shopify Messaging
+Know your audience
+.
+Gain customer insights
+Manage
+Manage your business
+.
+Track sales, orders & analytics
+Measure your performance
+.
+Analytics and Reporting
+Manage your stock & orders
+.
+Inventory & order management
+Automate your business
+.
+Shopify Flow
+Shopify Developers
+.
+Build with Shopify's powerful APIs
+Plus
+.
+A commerce solution for growing digital brands
+All Products
+.
+Explore all Shopify products & features
+Pricing
+Resources
+Help and support
+Help and support
+.
+Get 24/7 support
+Business courses
+.
+Learn from proven experts
+Popular topics
+What is Shopify?
+.
+How our commerce platform works
+Essential tools
+Business name generator
+.
+Logo maker
+.
+Stock photography
+.
+QR code generator
+.
+What’s new
+Changelog
+.
+Your source for recent updates
+Newsroom
+.
+All company news and press releases
+Engineering Blog
+AI & Machine Learning
+Mobile
+Infrastructure
+Culture
+Latest
+More topics
+Security
+Developer Tooling
+Data Science Engineering
+Search
+BLOG|DEVELOPMENT
+Shopify-Made Patterns in Our Rails Apps
+
+Engineering at Shopify
+
+We’re hiring
+
+See open roles
+
+At Shopify, we’ve developed our own patterns in order to support our global platform. Before coming here, I've developed multiple Ruby (and Rails) applications at multiple growth stages. Because of that, I quickly came to appreciate some workarounds and automation that were created to support the large codebase of Shopify.
+
+If there’s something I appreciate about Ruby on Rails, it’s the principle of convention over configuration it’s been built with. This enables junior developers to build higher quality code than in other languages, simply by following conventions. Conventions are also great when moving to a new Rails application: the file structure is always familiar.
+
+But this makes it harder to go outside conventions. When people ask me about the biggest challenges of Ruby, I usually say it’s easy to start, but hard to become an expert. Everything is so abstracted, so one must be really curious and take the time to understand how Ruby and specifically Rails actually work.
+
+Our monolith, Shopify Core, employs many of the common Rails conventions. This ranges from the default application structure, to the usage of in-built libraries like the Active Record ORM, Active Model, or Ruby gems like FrozenRecord.
+
+At Shopify, we implement what most merchants need, most of the time. Similarly, the Rails framework also provides the infrastructure that most developers need, most of the time. Therefore, we had to find creative ways to make the largest Rails monolithic application maintainable.
+
+When ready to join Shopify as a developer, my goal is that this blog post is useful to you whether you are new to Ruby, or if you’ve worked with Ruby on other projects in the past.
+
+Dev
+
+I would like to give the first mention to our command line developer tool, dev. At Shopify, we have thousands of developers working on hundreds of active projects. Many of these projects,in the past, had their own workflows and instructions on setup, how to run tests, and so on.
+
+We created dev to provide us with a unified workflow across a variety of projects. It gives us a way to specify and automate the installation of all the dependencies and includes the workflow items required to boot the project on macOS, from XCode to bin/rails db:migrate. This is probably the first Shopify-made infrastructure you’ll use when starting at Shopify. It’s easy to take it for granted, but dev is doing so much towards increasing our productivity.
+
+Time is money and automations are one time efforts.
+
+We believe consistency is important across development environments. Inconsistencies can lead to debugging nightmares and incorrect local behaviour. Even with the existing tools like chruby, bundler, and homebrew to manage dependencies, setup can be a multi-step tedious process, and it can be difficult to outline the processes that achieve the desired consistency. So, we standardise many of the commands we use at Shopify through dev.
+
+One of the most powerful features of dev is the ability to spin up services, in multiple programming languages. That means each repo has the same base configuration, structure, and libraries. Our infrastructure team is constantly working to make dev better to ultimately increase developer productivity. Dev also abstracts environment variables. Whenever joining smaller companies, one would spend days “fishing” environment variables before getting a few connected systems up and running.
+
+Dev also enables Shopify developers to enable and disable integrations with interconnected services. This is usually manually changed through environment variables or configuration types.
+
+Lastly, dev even abstracts command aliases! Ruby is already pretty good on commands, but when looking at tools, the commands can get super long. And this is where aliases help us developers save time, as we can make shortcuts for longer commands. So Shopify took this to the next level: why let developers set up their environment if they can get a baseline configuration, right through dev? This also helps standardise commands across projects, regardless of the programming language. For example, before I'd use the Hub package for opening PR’s. Now, I just use dev open pr.
+
+Pods
+
+Shopify core has a podded architecture, which means that the database is split into an arbitrary number of subsets, each containing a distinct subset of shops. Each pod runs Shopify independently, with a database containing a portion of our shops. The concept is based on the shard database infrastructure pattern. The Rails framework already has the pod/shard structure built-in. It was implemented with Shopify’s usage in mind and in collaboration with Github. In comparison with the shard database pattern, we’re expanding it to the full infrastructure. That includes provisioning, deployment, load balancers, caching, and servers. If one pod shuts down temporarily, the other pods aren’t affected. If you’d like to learn more about the infrastructure behind this, check out our blog post about running Kafka on Kubernetes at Shopify.
+
+Horizontally scaling out our monolith was the fastest solution to handling our load.
+
+Shopify is not just a software as a service company. It’s a platform able to generate full websites for millions of merchants. Whenever we deliver our services to merchants, we look at data in the context of the merchant's store. And that’s why we split everything by shop, including:
+
+Incoming HTTP requests
+Background jobs
+Asynchronous events
+
+That’s why every table in a podded database is connected to a shop. The shop is necessary for podding—our solution for horizontal scaling. And the link helps us avoid having data leaks between shops.
+
+For a more detailed overview of pods, check out A Pods Architecture to Allow Shopify to Scale.
+
+Domain Driven Design
+
+At Shopify, we love monoliths. The same way microservices have their challenges, so do monoliths, but these are challenges we're excited to try and solve.
+
+Splitting concerns became a necessity to support delivery in our growing organization.
+
+Monoliths can serve our business purpose very well—if they aren’t a mess. And this is where domain driven architecture comes into place. This concept wasn’t invented by Shopify, but it was definitely tweaked to work in our domain. If you’d like to learn more about how we deconstructed our monolith through components, check out Deconstructing the Monolith: Designing Software that Maximizes Developer Productivity and Under Deconstruction: The State of Shopify’s Monolith.
+
+We did split our code in domains, but that’s about all we split. Traditionally, we’d see no link between domains besides public or internal APIs. But our database is still common for all domains, and everything is still linked to the Shop. This means we’re breaking domain boundaries every time we call Shop from another domain. As mentioned earlier, this is a necessity for our podded architecture. This is where it becomes trickier: every time we’re instantiating a model outside our domain, we’re ignoring component boundaries and we receive a warning for it. But, because the shop is already part of every table, the shop is practically part of every domain.
+
+Something else you may be surprised by is we don’t enforce any relationships between tables on the database layer. This means the foreign keys are enforced only at the code level through models.
+
+And, even though we use ActiveRecord migrations (not split by pods), running all historical migrations wouldn’t be feasible. Because of that, we only use migrations in the short term. Every month or so, we merge our migrations in a raw sql file which holds our database structure. This avoids the platform running migrations for hours, aging back 10 years. This blog post, Pros and Cons of Using structure.sql in Your Ruby on Rails Application, explains in more detail the benefits of using a structure.sql file.
+
+Standardizing How We Write code
+
+We expect to hire over 2000 this year. How can we control the quality of the code written? We do it by detecting repetitive mistakes. There are so many systems Shopify created to address this, ranging from gems to generators.
+
+We built safeguards to keep quality levels up in a fast scaling organization.
+
+One of the tools often used that’s implemented by us is the translation platform: a system handling creation, translation, and publication of translations directly through git.
+
+In smaller companies, you’d just receive translations from the marketing team to embed in the app, or just get it through a CRM. This is certainly not enough when it comes to globalizing such a large application. The goal is to enable anyone to release their work while translations are being handled asynchronously, and it definitely saves us a lot of time. All we need to do is push the English version, and all the strings are automatically sent to a third party system where translators can add their translations. Without any input from the developers, the translations are directly committed back in our repos. The idea was first developed during Shopify hack days back in 2017. To learn more, check out this blog post about our translation platform.
+
+Our maintenance task system also deserves a memorable mention. It’s built over the rails Active Job library, but has been adapted to work with our podded infrastructure. In a nutshell, it’s a Rails engine for queuing and managing maintenance tasks. In case you’d like to look into it, we’ve made this project open source.
+
+In our monolith, we’ve also set up tons of automatic tests letting us know when we’re taking the wrong approach, and limits were put in to avoid overloading our system when spawning jobs.
+
+Another system that standardizes how we do things is Monorail. Initially inspired by Airbnb Jitney, Monorail enforces schemas for widely used events. It creates contracts between Kafka producers and consumers through a defined structure of the data sent through JSON. Some benefits are
+
+With unstructured events, events with different structure would end up as part of the same data warehouse table. Monorail creates a contract between developers and data scientists through schemas. If it changes, it has to be done through versioning.
+It also helps to prevent Personal Identifiable Information (PII) leaks. We have a process to review Schemas to annotate PII fields so that they can be automatically scrubbed (obfuscated, tokenized).
+
+I’ve covered many different topics herein this introduction to all of the awesome features we’ve set up to increase our productivity levels and focus on what matters: shipping great features. If you decide to join us, this overview should give you enough background to help you take the right approach at Shopify from the beginning.
+
+Ioana Surdu-Bob is a Developer at Shopify, working on the Shopify Payments team. She’s passionate about personal finance and investing. She’s trying to help everyone build for financial independence through Konvi, a crowdfunding platform for alternative assets.
+
+Wherever you are, your next journey starts here! If building systems from the ground up to solve real-world problems interests you, our Engineering blog has stories about other challenges we have encountered. Intrigued? Visit our Engineering career page to find out about our open positions and learn about Digital by Default.
+IS
+by
+Ioana Surdu-Bob
+Published on Jul 13, 2021
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Ioana Surdu-Bob
+Published on Jul 13, 2021
+• 8 minute read
+
+DEVELOPMENT
+Introducing Ruvy
+DEVELOPER TOOLING
+Building a ShopifyQL Code Editor
+
+APPS
+Shopify’s platform is the Web platform
+DEVELOPMENT
+The Engineering Story Behind Flex Comp
+WORK FROM ANYWHERE
+WITH SHOPIFY
+
+See our open roles and learn more about our digital by design culture.
+
+See open roles
+Shopify
+About
+Careers
+Investors
+Press and Media
+Partners
+Affiliates
+Legal
+Service status
+Support
+Merchant Support
+Shopify Help Center
+Hire a Partner
+Shopify Community
+Developers
+Shopify.dev
+API Documentation
+Dev Degree
+Products
+Shop
+Shop Pay
+Shopify for Enterprise
+Global Impact
+Sustainability
+Build Black
+Accessibility
+Research
+Solutions
+Online Store Builder
+Website Builder
+Ecommerce Website
+Terms of service
+Privacy policy
+Sitemap
+Your Privacy Choices

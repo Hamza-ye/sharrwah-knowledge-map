@@ -1,0 +1,261 @@
+Skip to Content
+Solutions
+Start
+Start your business
+.
+Build your brand
+Create your website
+.
+Online store editor
+Customize your store
+.
+Store themes
+Find business apps
+.
+Shopify app store
+Own your site domain
+.
+Domains & hosting
+Explore free business tools
+.
+Tools to run your business
+Sell
+Sell your products
+.
+Sell online or in person
+Check out customers
+.
+World-class checkout
+Sell online
+.
+Grow your business online
+Sell across channels
+.
+Reach millions of shoppers and boost sales
+Sell globally
+.
+International sales
+Sell wholesale & direct
+.
+Business-to-business (B2B)
+Market
+Market your business
+.
+Reach & retain customers
+Market across social
+.
+Social media integrations
+Chat with customers
+.
+Shopify Inbox
+Nurture customers
+.
+Shopify Messaging
+Know your audience
+.
+Gain customer insights
+Manage
+Manage your business
+.
+Track sales, orders & analytics
+Measure your performance
+.
+Analytics and Reporting
+Manage your stock & orders
+.
+Inventory & order management
+Automate your business
+.
+Shopify Flow
+Shopify Developers
+.
+Build with Shopify's powerful APIs
+Plus
+.
+A commerce solution for growing digital brands
+All Products
+.
+Explore all Shopify products & features
+Pricing
+Resources
+Help and support
+Help and support
+.
+Get 24/7 support
+Business courses
+.
+Learn from proven experts
+Popular topics
+What is Shopify?
+.
+How our commerce platform works
+Essential tools
+Business name generator
+.
+Logo maker
+.
+Stock photography
+.
+QR code generator
+.
+What’s new
+Changelog
+.
+Your source for recent updates
+Newsroom
+.
+All company news and press releases
+Engineering Blog
+AI & Machine Learning
+Mobile
+Infrastructure
+Culture
+Latest
+More topics
+Security
+Developer Tooling
+Data Science Engineering
+Search
+BLOG|DEVELOPMENT
+Creating a Flexible Order Routing System with Shopify Functions
+
+In this article, I’ll cover how we added flexibility to our previous one-size-fits-all order routing system with the introduction of “routing rules”, and how we dogfooded our own Shopify Functions feature to give merchants the ability to create their own routing rules.
+
+Engineering at Shopify
+
+We’re hiring
+
+See open roles
+
+In our Winter ‘23 Edition, we announced smart order routing: a new system to give merchants more flexibility when deciding how they want to route their orders to their various locations. In this article, I’ll cover how we added flexibility to our previous one-size-fits-all order routing system with the introduction of “routing rules”, and how we dogfooded our own Shopify Functions feature to give merchants the ability to create their own routing rules.
+
+What Exactly is “Order Routing”?
+
+When a customer places an order from a Shopify store, the process of getting their package from the warehouse, basement storage, or physical store begins with a very important step: determining which inventory location the order will ship from. For merchants who fulfill orders from a single location, this is a simple task. But for merchants who store inventory and fulfill orders from multiple locations (perhaps they have a few brick-and-mortar stores where they keep inventory, or multiple warehouses, etc.), this becomes more complex. The platform’s decision around which location an order will ship from is referred to as “order routing” in Shopify.
+
+Optimal order routing takes into account more than the obvious consideration of which location is closest to the buyer. There are several questions that come into play, for example:
+
+Which locations have sufficient inventory?
+Can I ship all the items together from a single location?
+Can I ship this from a warehouse in the buyer’s country?
+Can I prioritize shipping from specific locations over others?
+
+When these questions and other factors are considered, it’s clear that merchants need flexibility when it comes to determining how their orders are routed. What works for a family-owned business with a few locations may be completely different from a business run by a single individual, or a large enterprise with multiple warehouses across the country. 
+
+Increased Flexibility with Smart Order Routing
+
+Before smart order routing, the only customization available for order routing was allowing merchants to set a prioritized list of locations to route orders to. By default, our algorithm would always try to prioritize shipping all the items within a single order from one location where possible and if multiple locations fit this criteria, then it would use the prioritized list of locations to break this tie.
+
+Our goal with smart order routing was to make order routing more flexible for our merchants by allowing them to customize the order routing process based on their unique business setup, while making it as easy as possible to do natively within their admin. If routing orders were akin to making a coffee, it was like we upgraded merchants from a simple drip machine with the choice of decaf or regular, to a high-end espresso machine and their choice of any milks and syrups they wanted. In this situation, our ingredients were referred to as “routing rules” and our coffee machine represents our servers that the routing rules would run on.
+
+Routing Rules
+
+A routing rule is a function that determines how we rank all possible locations, given a certain parameter, to determine the best location for an order to be routed to. We formalized some of the questions we asked earlier as the default routing rules that we would build. For example, the question “Can I ship this from a warehouse in the buyer’s country? ” became the routing rule to stay within the destination market.
+
+If a merchant added a routing rule for proximity to the buyer, all eligible locations would be ranked accordingly, with the closest location ranked best, and the farthest ranked worst. A merchant could combine any of these rules in any order they want to get the optimal location assigned to an order. If a merchant decided shipping from locations closest to buyers was the most important factor, followed by a prioritized list of locations, they could set this up in that order with the Order Routing settings in their admin. 
+
+While this was a great starting point, think of this scenario: what if we only provide oat and soy milk, but our merchant wants to use their special homemade almond milk? Well, we shouldn’t stop them (within reasonable parameters of course). We knew that the ultimate goal of this project was extensibility for our merchants. We wanted them to be able to further customize how they wanted to route their orders by bringing in their own routing rules, but we needed to design the new order routing process in a way that merchants could use our routing rules and bring their own rules. In comes Shopify Functions. With Shopify Functions, developers could create their own logic compiled into a WebAssembly (Wasm) module, and plug it into our servers. 
+
+At Shopify, we strongly believe in dogfooding, i.e., testing our own products by using them to ensure that we’re putting out the best quality products that we can defend. Smart order routing presented itself as the perfect opportunity to dogfood Shopify Functions, so we built our routing rules as Shopify Functions that we would install ourselves on the merchant’s store. 
+
+Using Shopify Functions
+
+A Shopify Function consists of three parts: the input, the logic, and the output. The input is shaped as a GraphQL query of pieces of information that the function logic needs, like the inventory locations.
+
+We built three default routing rules powered by three different functions written in Rust. These rules are:
+
+Ship from closest location prioritizes proximity to the destination address.
+Stay within the destination market prioritizes shipping from locations in the same country as the destination address.
+Ranked locations allows single locations to be prioritized one after the other, or a group of locations to be prioritized over others (for example if a merchant prefers to ship from their warehouses first). In this scenario, one function would power two different rules.
+Routing rules in Order Routing settings page in Admin
+
+The output of running the logic is a ranking of the locations based on the criteria presented in the function logic. The location that best meets this criteria for the rule is ranked 0. For example, if we ran the “proximity to buyer” rule against all the eligible inventory locations, the closest location to the buyer would be ranked 0, the next closest 1, and all the following locations ranked in increasing order. This result conforms to a GraphQL payload that we defined that looks something like this:
+
+When a merchant selects the routing rules they want to use for their store, each rule runs independent of the others and produces a ranking of the locations based on the logic from that rule. In the UI, selected rules are set in the specific order that a merchant chooses.
+
+An example of a merchant selecting the routing rules for an order.
+
+In a perfect world, if a merchant has a rule like “ship from the closest location” as the highest priority, there would most likely be a definite single best location and we can call it a day. In the event that two or more locations are ranked equally as the best option, we implemented a tie breaker, which we called the reducer. 
+
+The Reducer
+
+The reducer processes the results of all the selected rules to determine the best location to route the order to as the final output. If the result of the first rule has only one location ranked 0, the reducer simply returns this location. If there are two or more locations ranked 0 by the first rule, the reducer takes those locations and using the rankings from the next rule, it breaks the tie between those locations by selecting the one with the lower rank number (the lower the rank number, the better the location). This process may be repeated with the next location rule if necessary.
+
+The reducer breaking a tie between two rules.
+Building with the Pipeline Pattern
+
+One major decision we made when rebuilding our order routing algorithm was using the pipeline pattern. In this pattern, the entire process that you want to go through is broken down into steps, and each step should only perform one overarching action. Some benefits of this pattern include a clean separation of concerns between all the steps involved, better code readability, and easier debugging. The pipeline’s input is available to be used by all the steps as needed. When one step performs its operation, its output is available for use by all the subsequent steps, alongside the initial pipeline input. For example, if we wanted to turn the process of making a latte into a pipeline, it would look like this:
+
+Previously, we had a tightly coupled process that performed multiple iterations with nested loops to find the optimal location to route the orders to. Whenever order routing related errors were reported, most of our developers without domain context had to spend a lot of time trying to understand the code. With the pipeline pattern, we deconstructed this process into several discrete steps to prepare the order routing input, run the routing rules, reduce the result, and produce the optimal location. Flattening the order routing process into smaller steps made it easier for developers to understand and debug any issues that popped up.
+
+What’s Next
+
+The combination of routing rules as a means of introducing flexibility to the order routing process, the use of Shopify Functions as a bridge for introducing extensibility, and the use of the pipeline pattern for cleaner code formed stage one of smart order routing. In the next stage, we’ll focus more on extensibility by opening up order routing for developers to build additional and possibly more complex rules for merchants.
+
+Ebunoluwa Segun is a developer with experience in orders and shipping labels, working on the Fulfillment team at Shopify where she splits her engineering efforts between frontend and backend development. Some of her greatest passions include reading, writing, fashion, indoor and outdoor gardening, and mentoring high school girls through STEM-focused programs. You can reach out to her on LinkedIn or her website.
+
+Wherever you are, your next journey starts here! If building systems from the ground up to solve real-world problems interests you, our Engineering blog has stories about other challenges we have encountered. Intrigued? Visit our Engineering career page to find out about our open positions and learn about Digital by Design.
+
+ES
+by
+Ebun Segun
+Published on Apr 13, 2023
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Ebun Segun
+Published on Apr 13, 2023
+• 8 minute read
+
+DEVELOPMENT
+Introducing Ruvy
+DEVELOPER TOOLING
+Building a ShopifyQL Code Editor
+
+APPS
+Shopify’s platform is the Web platform
+DEVELOPMENT
+The Engineering Story Behind Flex Comp
+WORK FROM ANYWHERE
+WITH SHOPIFY
+
+See our open roles and learn more about our digital by design culture.
+
+See open roles
+Shopify
+About
+Careers
+Investors
+Press and Media
+Partners
+Affiliates
+Legal
+Service status
+Support
+Merchant Support
+Shopify Help Center
+Hire a Partner
+Shopify Community
+Developers
+Shopify.dev
+API Documentation
+Dev Degree
+Products
+Shop
+Shop Pay
+Shopify for Enterprise
+Global Impact
+Sustainability
+Build Black
+Accessibility
+Research
+Solutions
+Online Store Builder
+Website Builder
+Ecommerce Website
+Terms of service
+Privacy policy
+Sitemap
+Your Privacy Choices

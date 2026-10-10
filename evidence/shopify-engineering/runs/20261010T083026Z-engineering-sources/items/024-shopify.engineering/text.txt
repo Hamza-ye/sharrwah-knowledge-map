@@ -1,0 +1,227 @@
+Skip to Content
+Solutions
+Start
+Start your business
+.
+Build your brand
+Create your website
+.
+Online store editor
+Customize your store
+.
+Store themes
+Find business apps
+.
+Shopify app store
+Own your site domain
+.
+Domains & hosting
+Explore free business tools
+.
+Tools to run your business
+Sell
+Sell your products
+.
+Sell online or in person
+Check out customers
+.
+World-class checkout
+Sell online
+.
+Grow your business online
+Sell across channels
+.
+Reach millions of shoppers and boost sales
+Sell globally
+.
+International sales
+Sell wholesale & direct
+.
+Business-to-business (B2B)
+Market
+Market your business
+.
+Reach & retain customers
+Market across social
+.
+Social media integrations
+Chat with customers
+.
+Shopify Inbox
+Nurture customers
+.
+Shopify Messaging
+Know your audience
+.
+Gain customer insights
+Manage
+Manage your business
+.
+Track sales, orders & analytics
+Measure your performance
+.
+Analytics and Reporting
+Manage your stock & orders
+.
+Inventory & order management
+Automate your business
+.
+Shopify Flow
+Shopify Developers
+.
+Build with Shopify's powerful APIs
+Plus
+.
+A commerce solution for growing digital brands
+All Products
+.
+Explore all Shopify products & features
+Pricing
+Resources
+Help and support
+Help and support
+.
+Get 24/7 support
+Business courses
+.
+Learn from proven experts
+Popular topics
+What is Shopify?
+.
+How our commerce platform works
+Essential tools
+Business name generator
+.
+Logo maker
+.
+Stock photography
+.
+QR code generator
+.
+What’s new
+Changelog
+.
+Your source for recent updates
+Newsroom
+.
+All company news and press releases
+Engineering Blog
+AI & Machine Learning
+Mobile
+Infrastructure
+Culture
+Latest
+More topics
+Security
+Developer Tooling
+Data Science Engineering
+Search
+BLOG|INFRASTRUCTURE
+A Pods Architecture To Allow Shopify To Scale
+
+In 2015, it was no longer possible to continue buying a larger database server for Shopify. We finally had no choice but to shard the database, which allowed us to horizontally scale our databases and continue our growth. However, what we gained in performance and scalability we lost in resilience. Throughout the Shopify codebase was code like this: Sharding.with_each_shard do some_action end If any of our shards went down, that entire action would be unavailable across the platform. We realized this would become a major problem as the number of shards continued to increase. In 2016 we sat down to reorganize Shopify’s runtime architecture.
+
+Engineering at Shopify
+
+We’re hiring
+
+See open roles
+
+In 2015, it was no longer possible to continue buying a larger database server for Shopify. We finally had no choice but to shard the database, which allowed us to horizontally scale our databases and continue our growth. However, what we gained in performance and scalability we lost in resilience. Throughout the Shopify codebase was code like this:
+
+Sharding.with_each_shard do
+
+
+some_action
+
+end
+
+If any of our shards went down, that entire action would be unavailable across the platform. We realized this would become a major problem as the number of shards continued to increase. In 2016 we sat down to reorganize Shopify’s runtime architecture.
+
+Simply sharding the databases wasn't enough, we needed to fully isolate each shard so a failure couldn't spiral out into a platform outage. We introduced pods (not to be confused with Kubernetes pods) to solve this problem. A pod consists of a set of shops that live on a fully isolated set of datastores.
+
+Outside of the isolated datastores, pods also have shared resources such as job workers, app servers, and load balancers. However, all shared resources can only ever communicate to a single pod at a time—we don’t allow any actions to reach across pods.
+
+Using pods buys us horizontal scalability, we can consider each pod in total independence, and since there no cross-pod communication, adding a new pod won’t cause unexpected interference with other, pre-existing pods.
+
+Fully isolated, every datastore buys us capacity and prevents a single shop from sucking up database time across the platform but does nothing to solve our problem from above. To do that we decided to assign every unit of work (web request and delayed job) to a single pod. This means that serving a request only requires a single pod to be online.
+
+Request Lifecycle
+
+When a request comes into Shopify how do we know which pod is responsible for it? Complicating the question is that we have multiple data centers. To address this we introduced a piece of software in our load balancers called Sorting Hat. Using a list of rules Sorting Hat matches every request to a pod and adds a header to that request. It then forwards the request to the correct location.
+
+Our application servers use the header attached by Sorting Hat to correctly connect the datastore that should respond to the request. This allows them to only query a single pod at a time while maintaining shared capacity across the platform.
+
+Disaster Recovery & Pod Mover
+
+Before any of the sharding or podding work started at Shopify, we had already established a recovery data center, ensuring that should the active data center fail we’d be able to recover quickly. It only made sense for the podding work to carry over to this. We assigned each pod a pair of data centers, and at any point in time one of the two will be the active data center while the second acts as a recovery site.
+
+Having disaster recovery working on the level of individual pods became very important to uphold our promise that a single pod’s failure wouldn’t spiral to a platform outage. We developed a tool called the Pod Mover to allow us to move a pod to its recovery data center in a minute without dropping requests or jobs. (In later posts, we’ll dive into Pod Mover’s functionality and implementation.)
+
+A pod forms a convenient atom for our disaster recovery tooling, evacuating a whole data center is nothing more than evacuating each pod active there one at a time. At Shopify we want to move our pods around on a daily basis for a variety of reasons. Manually moving services and ensuring correctness quickly became untenable, and stressful.
+
+The consequences of the Pods Architecture have revealed themselves everywhere at Shopify. From this basic unit, we’re able to build our resiliency, disaster recovery and scalability. By breaking Shopify down, our problems became more manageable, setting the stage to build on top of Shopify in a way that wasn’t possible before.
+
+XD
+by
+Xavier Denis
+Published on Mar 2, 2018
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Xavier Denis
+Published on Mar 2, 2018
+• 3 minute read
+
+DEVELOPMENT
+Introducing Ruvy
+DEVELOPER TOOLING
+Building a ShopifyQL Code Editor
+
+APPS
+Shopify’s platform is the Web platform
+DEVELOPMENT
+The Engineering Story Behind Flex Comp
+WORK FROM ANYWHERE
+WITH SHOPIFY
+
+See our open roles and learn more about our digital by design culture.
+
+See open roles
+Shopify
+About
+Careers
+Investors
+Press and Media
+Partners
+Affiliates
+Legal
+Service status
+Support
+Merchant Support
+Shopify Help Center
+Hire a Partner
+Shopify Community
+Developers
+Shopify.dev
+API Documentation
+Dev Degree
+Products
+Shop
+Shop Pay
+Shopify for Enterprise
+Global Impact
+Sustainability
+Build Black
+Accessibility
+Research
+Solutions
+Online Store Builder
+Website Builder
+Ecommerce Website
+Terms of service
+Privacy policy
+Sitemap
+Your Privacy Choices

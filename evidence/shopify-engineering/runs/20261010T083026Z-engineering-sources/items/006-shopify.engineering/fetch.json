@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://shopify.engineering/high-availability-background-jobs",
+ "dir": "items/006-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/high-availability-background-jobs",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 56061,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E006"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "87fbfe222e82766b10761ec682bd184199ca0aba1af5227d568ac2e9f8f59969",
+ "raw_ext": "html"
+}

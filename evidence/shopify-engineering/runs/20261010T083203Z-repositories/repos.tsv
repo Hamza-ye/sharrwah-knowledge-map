@@ -1,0 +1,4 @@
+repo	url	commit	commit_date	kept_files	captured_at
+Shopify/packwerk	https://github.com/Shopify/packwerk	31e534283f93a225b520cddab3c2d735557c76de	2026-08-25T21:36:37-04:00	CHANGELOG.md LICENSE.md README.md RESOLVING_VIOLATIONS.md USAGE.md files.txt 	2026-10-10T08:32:03Z
+Shopify/semian	https://github.com/Shopify/semian	ddeab8c829b67d4e2a8c3401fa6599e1ad25263e	2026-09-07T12:53:18+02:00	CHANGELOG.md LICENSE.md README.md files.txt 	2026-10-10T08:32:03Z
+activemerchant/active_merchant	https://github.com/activemerchant/active_merchant	ca45b1b063ce2e1495e1427e0a1d42dcb482d57d	2025-11-04T07:57:54-05:00	CHANGELOG MIT-LICENSE README.md files.txt gateways-list.txt lib/active_merchant/billing/gateway.rb lib/active_merchant/billing/response.rb 	2026-10-10T08:32:03Z

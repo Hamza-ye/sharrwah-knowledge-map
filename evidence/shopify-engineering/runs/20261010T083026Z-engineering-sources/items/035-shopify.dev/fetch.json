@@ -1,0 +1,18 @@
+{
+ "n": 35,
+ "url": "https://shopify.dev/changelog/making-idempotency-mandatory-for-inventory-adjustments-and-refund-mutations",
+ "dir": "items/035-shopify.dev",
+ "fetched_at": "2026-10-10T08:30:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/changelog/posts/making-idempotency-mandatory-for-inventory-adjustments-and-refund-mutations",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 66045,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E035"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0c3742763826833851bfbfb18bc3d57ec126dc3341afd10f1834072398b5f17b",
+ "raw_ext": "html"
+}

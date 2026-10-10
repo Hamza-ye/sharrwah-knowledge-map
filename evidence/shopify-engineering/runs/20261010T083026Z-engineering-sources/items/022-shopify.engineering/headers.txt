@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 08:30:29 GMT
+content-type: text/html; charset=utf-8
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=31jXlnE8rtwRpUaliTZWvf5q6c3TiW5VGWq4QSVZBF5LLG0JVzq%2BYt9MDqxEsmCO7GwjlU9NcE5SN1JXK7N0%2B%2BDLXdvvoa4shaYLuLEBTk5be68bD9%2BDD6PTZdFn63RIGyHxdw0%3D"}]}
+cf-cache-status: DYNAMIC
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+age: 167
+cache-control: max-age=900, stale-while-revalidate=86400
+last-modified: Sat, 10 Oct 2026 08:27:42 GMT
+server: cloudflare
+content-encoding: br
+set-cookie: __cf_bm=QBx8nNs9pm0.jB6jC5dlOez_5cLL2vCevrexc_Ihsow-1791621029.2914236-1.0.1.1-disL0NVUDNbotenQiIG26moegBG0sLyRZGfns8_H.IMAKRCppzwJbLEMStKLYsGpwz6FwV0IbsdQ1KavTOQHv8XsdbnMvlHwcB.D3DB5.osV4pKhBnkeYQhf4yzALw0R; HttpOnly; SameSite=None; Secure; Path=/; Domain=shopify.engineering; Expires=Sat, 10 Oct 2026 09:00:29 GMT
+vary: accept-encoding
+cf-ray: a48443691a97c07e-IAD
+alt-svc: h3=":443"; ma=86400
+

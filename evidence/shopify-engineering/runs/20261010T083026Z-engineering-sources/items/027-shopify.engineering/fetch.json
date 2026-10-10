@@ -1,0 +1,18 @@
+{
+ "n": 27,
+ "url": "https://shopify.engineering/creating-a-flexible-order-routing-system-with-shopify-functions",
+ "dir": "items/027-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/creating-a-flexible-order-routing-system-with-shopify-functions",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 53494,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E027"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e8f95ff239a10729665341f764e7c5b22335fc24a93696b726f053c9158114e5",
+ "raw_ext": "html"
+}

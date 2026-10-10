@@ -1,0 +1,18 @@
+{
+ "n": 31,
+ "url": "https://shopify.dev/docs/apps/build/payments/considerations",
+ "dir": "items/031-shopify.dev",
+ "fetched_at": "2026-10-10T08:30:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/payments/considerations",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 102861,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E031"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "899b9c6bdd542327d797a0f93da83cb2b6321d0f3dd65695973035f9b6c9e0d7",
+ "raw_ext": "html"
+}

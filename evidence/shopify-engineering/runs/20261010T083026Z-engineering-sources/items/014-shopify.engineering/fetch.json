@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://shopify.engineering/supporting-passkeys-in-shop-authentication-flows",
+ "dir": "items/014-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/supporting-passkeys-in-shop-authentication-flows",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 53331,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E014"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d78d86566cf62f94ab9a4a1faae32add081de27a321397a033e0fc8962fc1b07",
+ "raw_ext": "html"
+}
