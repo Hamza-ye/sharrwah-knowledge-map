@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://www.centralbank.gov.ye/",
+ "dir": "items/005-centralbank.gov.ye",
+ "fetched_at": "2026-10-10T07:25:50Z",
+ "curl_exit": 35,
+ "curl_error": "curl: (35) Recv failure: Connection reset by peer",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B005"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://centralbank.gov.ye/Home/Detail/143-00124/%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA?lang=en",
+ "dir": "items/003-centralbank.gov.ye",
+ "fetched_at": "2026-10-10T06:14:20Z",
+ "curl_exit": 35,
+ "curl_error": "curl: (35) Recv failure: Connection reset by peer",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A003"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

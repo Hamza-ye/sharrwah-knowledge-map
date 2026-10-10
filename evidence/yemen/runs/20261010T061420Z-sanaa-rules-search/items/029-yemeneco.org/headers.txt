@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 06:14:34 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+cache-control: no-cache
+wpo-cache-status: cached
+last-modified: Sat, 10 Oct 2026 05:28:39 GMT
+cache-control: private, must-revalidate
+expires: Sun, 11 Oct 2026 06:14:34 GMT
+vary: Accept-Encoding,User-Agent
+strict-transport-security: max-age=15768000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+content-encoding: br
+

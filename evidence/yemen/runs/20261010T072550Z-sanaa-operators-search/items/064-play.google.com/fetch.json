@@ -1,0 +1,18 @@
+{
+ "n": 64,
+ "url": "https://play.google.com/store/apps/details?id=com.KuraimiBank&hl=ar",
+ "dir": "items/064-play.google.com",
+ "fetched_at": "2026-10-10T07:26:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=com.KuraimiBank&hl=ar",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 197779,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B064"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0ef36c1eb49017da18ef491e6f6c145761432a5996b28e664a75978cfd301aab",
+ "raw_ext": "html"
+}

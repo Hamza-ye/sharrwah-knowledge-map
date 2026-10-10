@@ -1,0 +1,18 @@
+{
+ "n": 80,
+ "url": "https://yemen-nic.info/news/detail.php?ID=72660",
+ "dir": "items/080-yemen-nic.info",
+ "fetched_at": "2026-10-10T06:14:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemen-nic.info/news/detail.php?ID=72660",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 46006,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A080"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b6dd8b75327edb1e073c672bc347a4b0b4378004258dfe610b47320ee3093fa7",
+ "raw_ext": "html"
+}

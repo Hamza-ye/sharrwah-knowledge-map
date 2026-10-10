@@ -1,0 +1,18 @@
+{
+ "n": 26,
+ "url": "https://yemeneco.org/wp-content/uploads/2026/01/photo_2026-01-07_17-53-32.jpg",
+ "dir": "items/026-yemeneco.org",
+ "fetched_at": "2026-10-10T06:14:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemeneco.org/wp-content/uploads/2026/01/photo_2026-01-07_17-53-32.jpg",
+ "content_type": "image/jpeg",
+ "bytes": 76808,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A026"
+ ],
+ "raw_file": "raw.jpeg",
+ "sha256": "2268d6f93c11cc177e6fdec43fde242d7ee2f75efbf543ee97f901b366af2ebf",
+ "raw_ext": "jpeg"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 98,
+ "url": "https://apps.apple.com/ye/app/alnaeem/id6456525872",
+ "dir": "items/098-apps.apple.com",
+ "fetched_at": "2026-10-10T07:26:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://apps.apple.com/ye/app/alnaeem/id6456525872",
+ "content_type": "text/html",
+ "bytes": 59109,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B098"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4d26b73b11292cede5589a45c371968411f70287c96256221875bcb0f939fd4d",
+ "raw_ext": "html"
+}

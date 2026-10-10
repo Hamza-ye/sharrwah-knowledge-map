@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://centralbank.gov.ye/Home/ExchangeRateReport",
+ "dir": "items/010-centralbank.gov.ye",
+ "fetched_at": "2026-10-10T06:14:28Z",
+ "curl_exit": 35,
+ "curl_error": "curl: (35) Recv failure: Connection reset by peer",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A010"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

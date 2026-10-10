@@ -1,0 +1,14 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 10 Oct 2026 06:14:45 GMT
+Content-Type: application/pdf
+Content-Length: 93393409
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+Last-Modified: Thu, 11 Jun 2026 17:31:59 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=31536000
+Expires: Sun, 10 Oct 2027 06:14:45 GMT
+

@@ -1,0 +1,18 @@
+{
+ "n": 56,
+ "url": "https://www.moit.gov.ye/registering-commercial-agency",
+ "dir": "items/056-moit.gov.ye",
+ "fetched_at": "2026-10-10T06:14:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.moit.gov.ye/registering-commercial-agency",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 89403,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A056"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e9f4ab5d1dada3b8d722952eb56f5dd8c097302a553fe7d4b45c5d6a106f329c",
+ "raw_ext": "html"
+}

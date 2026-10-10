@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://www.yemenwillasil.com/2019/12/central-bank-of-sanaa.html",
+ "dir": "items/004-yemenwillasil.com",
+ "fetched_at": "2026-10-10T07:25:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.yemenwillasil.com/2019/12/central-bank-of-sanaa.html",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 72855,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B004"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6476fb0d22c13fc23a5d7fa15950c92dd4c494b89805dfa17a3748eef8015aeb",
+ "raw_ext": "html"
+}

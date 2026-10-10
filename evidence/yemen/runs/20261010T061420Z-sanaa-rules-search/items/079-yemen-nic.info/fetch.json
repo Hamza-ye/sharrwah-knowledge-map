@@ -1,0 +1,18 @@
+{
+ "n": 79,
+ "url": "https://yemen-nic.info/db/laws_ye/detail.php?ID=11600",
+ "dir": "items/079-yemen-nic.info",
+ "fetched_at": "2026-10-10T06:14:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemen-nic.info/db/laws_ye/detail.php?ID=11600",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 130622,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A079"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2d586db182551f86ddb79132713a9eee76abc26c53ddf2855a9ebcf86160ad92",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 12,
+ "url": "https://althawrah.ye/archives/880148",
+ "dir": "items/012-althawrah.ye",
+ "fetched_at": "2026-10-10T06:14:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://althawrah.ye/archives/880148",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 22363,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A012"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b793c757f2a4df3ba24d7cc425bbc734cc6640b9e4956bcd7d72fd066d244f3b",
+ "raw_ext": "html"
+}

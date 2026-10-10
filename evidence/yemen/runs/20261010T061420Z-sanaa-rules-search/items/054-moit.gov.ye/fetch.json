@@ -1,0 +1,18 @@
+{
+ "n": 54,
+ "url": "https://www.moit.gov.ye/node/223",
+ "dir": "items/054-moit.gov.ye",
+ "fetched_at": "2026-10-10T06:14:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.moit.gov.ye/node/223",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 71168,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A054"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "84c6ff264c7fb2a93758056812cf7fa15cc1c9028c6c85730a7f871be53d4075",
+ "raw_ext": "html"
+}

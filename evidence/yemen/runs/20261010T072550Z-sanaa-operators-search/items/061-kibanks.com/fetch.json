@@ -1,0 +1,18 @@
+{
+ "n": 61,
+ "url": "https://kibanks.com/ar/service-points",
+ "dir": "items/061-kibanks.com",
+ "fetched_at": "2026-10-10T07:26:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kibanks.com/ar/service-points",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 2480,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B061"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e28c5c68bd6c3a426873d9ae214fdf3d77f1f799dd475512601b051b0545f581",
+ "raw_ext": "html"
+}

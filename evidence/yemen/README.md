@@ -17,6 +17,14 @@ Raw copies of the sources behind the Yemen payment work, kept so that citations 
 | --- | --- |
 | `runs/20261010T050304Z-cited-sources/` | The 262 web sources cited in `yemen-setup-options/report.md` and its five Yemen notes. See that run's README. |
 | `runs/20261010T051708Z-community-clients/` | The 13 community-written payment client repositories the notes cite, copied at a fixed commit. See that run's README. |
+| `runs/20261010T061420Z-sanaa-rules-search/` | The 83 documents found by the Arabic-first search for Sana'a-side rules. 66 were captured; 17 are blocked from outside Yemen. |
+| `runs/20261010T072550Z-sanaa-operators-search/` | The 99 pages found by the Arabic-first search for wallets, banks, couriers and Sana'a sellers. 93 were captured; 6 are blocked from outside Yemen. |
+| `blocked-evidence-founder/` | 15 pages the founder saved from inside Yemen on 10 October 2026: the Sana'a central bank's list of electronic payment companies, Saba's text of the central bank's May 2024 ban decision, Yemen Kuwait Bank's ONE Cash page, and 12 other sources blocked from outside Yemen. Its `manifest.tsv` maps each file to the fetch list. |
+
+Other folders:
+
+- `finding-aids/` holds the search agents' lists of sources found. These are not evidence.
+- `derived/` holds page images and OCR text for scanned PDFs.
 
 ## Adding sources fetched inside Yemen
 
@@ -33,6 +41,8 @@ Some Sana'a-side sites refuse or cut connections from outside Yemen. `to-fetch-f
    For example: `cby-circular.pdf	https://…	2026-10-12 09:10 (Sana'a time)	Sana'a, home connection, no VPN	browser download`
 
 4. Write nothing else: no summary and no opinion. Agents add fingerprints when the files arrive.
+
+A single-file browser save also works, like the files in `blocked-evidence-founder/`. Such a file records its own address and save time, so it needs no `sources.tsv` line.
 
 Raw captures that show personal data, such as phone numbers, names or balances, stay in this private repository.
 

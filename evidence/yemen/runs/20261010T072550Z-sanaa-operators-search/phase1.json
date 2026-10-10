@@ -1,0 +1,1784 @@
+[
+{
+"n": 1,
+"url": "https://ymp.ye/api/providers?type=e-wallet&perPage=50&page=1",
+"dir": "items/001-ymp.ye",
+"fetched_at": "2026-10-10T07:25:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://ymp.ye/api/providers?type=e-wallet&perPage=50&page=1",
+"content_type": "application/json",
+"bytes": 78971,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B001"
+],
+"raw_file": "raw.json",
+"sha256": "aa6884e5edb7a3cca700831024c010cadea24da1356aa585f43f05e88e9371b2",
+"raw_ext": "json"
+},
+{
+"n": 2,
+"url": "https://pmo-ye.net/post/7616",
+"dir": "items/002-pmo-ye.net",
+"fetched_at": "2026-10-10T07:25:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://pmo-ye.net/post/7616",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 5653,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B002"
+],
+"raw_file": "raw.html",
+"sha256": "d6d6b85523a5f1b92c4911babec857605dbe4ad88ee6836f84bd0b7ae8636769",
+"raw_ext": "html"
+},
+{
+"n": 3,
+"url": "https://cby-ye.com/news/1",
+"dir": "items/003-cby-ye.com",
+"fetched_at": "2026-10-10T07:25:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://cby-ye.com/news/1",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 9683,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B003"
+],
+"raw_file": "raw.html",
+"sha256": "bad45faea24e7d7689993693d955c7aaa11ee51ca8e22b134c47189d8615ebd9",
+"raw_ext": "html"
+},
+{
+"n": 4,
+"url": "https://www.yemenwillasil.com/2019/12/central-bank-of-sanaa.html",
+"dir": "items/004-yemenwillasil.com",
+"fetched_at": "2026-10-10T07:25:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.yemenwillasil.com/2019/12/central-bank-of-sanaa.html",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 72855,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B004"
+],
+"raw_file": "raw.html",
+"sha256": "6476fb0d22c13fc23a5d7fa15950c92dd4c494b89805dfa17a3748eef8015aeb",
+"raw_ext": "html"
+},
+{
+"n": 5,
+"url": "https://www.centralbank.gov.ye/",
+"dir": "items/005-centralbank.gov.ye",
+"fetched_at": "2026-10-10T07:25:50Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B005"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 6,
+"url": "https://www.cash.com.ye/ar/خدمة-الدفـــع-الالكتروني-كاش-باي-cash-pay",
+"dir": "items/006-cash.com.ye",
+"fetched_at": "2026-10-10T07:25:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.cash.com.ye/ar/خدمة-الدفـــع-الالكتروني-كاش-باي-cash-pay",
+"content_type": "text/html; charset=utf-8",
+"bytes": 13299,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B006"
+],
+"raw_file": "raw.html",
+"sha256": "4b4e5c9d6d47db0085e9ce9d8adb75e5c907f8d8f1e678efb2bf5a3c14e25e7c",
+"raw_ext": "html"
+},
+{
+"n": 7,
+"url": "https://www.cash.com.ye/ar/ميزات-الشركات-والتجار",
+"dir": "items/007-cash.com.ye",
+"fetched_at": "2026-10-10T07:25:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.cash.com.ye/ar/ميزات-الشركات-والتجار",
+"content_type": "text/html; charset=utf-8",
+"bytes": 12748,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B007"
+],
+"raw_file": "raw.html",
+"sha256": "91d4df8c14fcb4589aa98beccf7b83c7293101bfbd37c901c57b2904987f341b",
+"raw_ext": "html"
+},
+{
+"n": 8,
+"url": "https://www.cash.com.ye/ar/الشروط-والأحكام",
+"dir": "items/008-cash.com.ye",
+"fetched_at": "2026-10-10T07:25:51Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.cash.com.ye/ar/الشروط-والأحكام",
+"content_type": "text/html; charset=utf-8",
+"bytes": 30984,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B008"
+],
+"raw_file": "raw.html",
+"sha256": "780a45a3c9d9b150b3f7368671876384083a8c8fa3622391116ecd6a647e7c34",
+"raw_ext": "html"
+},
+{
+"n": 9,
+"url": "https://jawali.com.ye/faq",
+"dir": "items/009-jawali.com.ye",
+"fetched_at": "2026-10-10T07:25:51Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://jawali.com.ye/faq",
+"content_type": "text/html;charset=utf-8;",
+"bytes": 17468,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B009"
+],
+"raw_file": "raw.html",
+"sha256": "2e814f3eac3bb4eec84e54e644e36e4e2838656819eb3f52f24a54e5a6bb2caf",
+"raw_ext": "html"
+},
+{
+"n": 10,
+"url": "https://jawali.com.ye/apply_qr.php",
+"dir": "items/010-jawali.com.ye",
+"fetched_at": "2026-10-10T07:25:51Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://jawali.com.ye/apply_qr.php",
+"content_type": "text/html;charset=utf-8;",
+"bytes": 14230,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B010"
+],
+"raw_file": "raw.html",
+"sha256": "3eead842ef64d054846a0c1b1553f9b1e8778b16d0db51720f840b5ac81cb267",
+"raw_ext": "html"
+},
+{
+"n": 11,
+"url": "https://jawali.com.ye/services/12",
+"dir": "items/011-jawali.com.ye",
+"fetched_at": "2026-10-10T07:25:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://jawali.com.ye/services/12",
+"content_type": "text/html;charset=utf-8;",
+"bytes": 19308,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B011"
+],
+"raw_file": "raw.html",
+"sha256": "a25f6001e6ecbe4aa48198a70ac863d7d1e7a74e549b2682eb354807af06b625",
+"raw_ext": "html"
+},
+{
+"n": 12,
+"url": "https://jawali.com.ye/services/1",
+"dir": "items/012-jawali.com.ye",
+"fetched_at": "2026-10-10T07:25:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://jawali.com.ye/services/1",
+"content_type": "text/html;charset=utf-8;",
+"bytes": 19179,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B012"
+],
+"raw_file": "raw.html",
+"sha256": "c5dda05c6455e77915bcd9d2c22a84b4e0c9fee5acedf0b7a1643f9fcab0bc51",
+"raw_ext": "html"
+},
+{
+"n": 13,
+"url": "https://www.wecash.com.ye/about",
+"dir": "items/013-wecash.com.ye",
+"fetched_at": "2026-10-10T07:25:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.wecash.com.ye/about",
+"content_type": "text/html;charset=utf-8;",
+"bytes": 10894,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B013"
+],
+"raw_file": "raw.html",
+"sha256": "39ef8fa95843d1e91fe40216a54081dcf5fab6f5784a241f13d7017551ceae73",
+"raw_ext": "html"
+},
+{
+"n": 14,
+"url": "https://play.google.com/store/apps/details?id=com.ama.wecashmobileapp&hl=ar",
+"dir": "items/014-play.google.com",
+"fetched_at": "2026-10-10T07:25:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.ama.wecashmobileapp&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 197843,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B014"
+],
+"raw_file": "raw.html",
+"sha256": "1085e1850d4c0cc7cb80f0c6b6f51ba2b39ca4e09c9d5157c3c89986ad93eb56",
+"raw_ext": "html"
+},
+{
+"n": 15,
+"url": "https://play.google.com/store/apps/details?id=com.tamkeen.sms&hl=ar",
+"dir": "items/015-play.google.com",
+"fetched_at": "2026-10-10T07:25:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.tamkeen.sms&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 197017,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B015"
+],
+"raw_file": "raw.html",
+"sha256": "73e607722ac7801effce4c62b2807c64d0814dc7f4620c2710285561c63c7c5b",
+"raw_ext": "html"
+},
+{
+"n": 16,
+"url": "https://play.google.com/store/apps/details?id=com.cash.Mughtarib&hl=ar",
+"dir": "items/016-play.google.com",
+"fetched_at": "2026-10-10T07:25:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.cash.Mughtarib&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 178858,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B016"
+],
+"raw_file": "raw.html",
+"sha256": "716a8d11c0bb82a8bec4f0e4ad19a2742112ffec6c3342eda5c87945f0d9aafe",
+"raw_ext": "html"
+},
+{
+"n": 17,
+"url": "https://play.google.com/store/apps/details?id=com.yottagate.sabacash&hl=ar",
+"dir": "items/017-play.google.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.yottagate.sabacash&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 185834,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B017"
+],
+"raw_file": "raw.html",
+"sha256": "3a266a703403e9067e6ffa417bbe95936c9d4e22d3a6be4868722ee65f998997",
+"raw_ext": "html"
+},
+{
+"n": 18,
+"url": "https://play.google.com/store/apps/details?id=com.ahd.jaib&hl=ar",
+"dir": "items/018-play.google.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.ahd.jaib&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 194842,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B018"
+],
+"raw_file": "raw.html",
+"sha256": "bfbff39ed8c9231374b75dbd0716629e79faaef8f35d728d5716bde209ddb801",
+"raw_ext": "html"
+},
+{
+"n": 19,
+"url": "https://onecashye.com/join-onecash/",
+"dir": "items/019-onecashye.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://onecashye.com/join-onecash/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 15922,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B019"
+],
+"raw_file": "raw.html",
+"sha256": "1dfcaaf9f2cac9357ef703f8a1d7593543e396539c7db7363fa529a2911e41c3",
+"raw_ext": "html"
+},
+{
+"n": 20,
+"url": "https://onecashye.com/",
+"dir": "items/020-onecashye.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://onecashye.com/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 18230,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B020"
+],
+"raw_file": "raw.html",
+"sha256": "3efd074ab068997c345ec62bb02550380863fd50ab5df573ae90ad2e92819a9f",
+"raw_ext": "html"
+},
+{
+"n": 21,
+"url": "https://onecashye.com/faq/",
+"dir": "items/021-onecashye.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://onecashye.com/faq/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 18568,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B021"
+],
+"raw_file": "raw.html",
+"sha256": "46c917b1d829cf884ed33bbb03ae3a18b0ff075740d242aada62ea8bf5d11367",
+"raw_ext": "html"
+},
+{
+"n": 22,
+"url": "https://qc-yemen.com/services-floosak/",
+"dir": "items/022-qc-yemen.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://qc-yemen.com/services-floosak/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34705,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B022"
+],
+"raw_file": "raw.html",
+"sha256": "e167703efb8c121bc0bbebeda1306b86a690dc373137e248d8f0a4605ba9f37d",
+"raw_ext": "html"
+},
+{
+"n": 23,
+"url": "https://qc-yemen.com/faq/",
+"dir": "items/023-qc-yemen.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://qc-yemen.com/faq/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 35485,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B023"
+],
+"raw_file": "raw.html",
+"sha256": "bee12362cac2c4a836bfac0339fcfdda30c024841d88fbd23557e461c31b4370",
+"raw_ext": "html"
+},
+{
+"n": 24,
+"url": "https://yemen-wallet.ye/",
+"dir": "items/024-yemen-wallet.ye",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemen-wallet.ye/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 448737,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B024"
+],
+"raw_file": "raw.html",
+"sha256": "cd156b98ebeca07b0bc8fa01fb05d6a6af672bff1d20ec06318cd8b2bda23a5b",
+"raw_ext": "html"
+},
+{
+"n": 25,
+"url": "https://yemen-wallet.ye/about-us/",
+"dir": "items/025-yemen-wallet.ye",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemen-wallet.ye/about-us/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 147556,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B025"
+],
+"raw_file": "raw.html",
+"sha256": "e0b9e0bbf204968e564b3f497d4e9a32387c1c96150f438d2f25a66293c5c0af",
+"raw_ext": "html"
+},
+{
+"n": 26,
+"url": "https://play.google.com/store/apps/details?id=cac.mobilemoney.app&hl=ar",
+"dir": "items/026-play.google.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=cac.mobilemoney.app&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 193833,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B026"
+],
+"raw_file": "raw.html",
+"sha256": "7a7ef18e4f851a16f6bcc5489f3ebc0e1b37b5adb249a38f03454ce945045b16",
+"raw_ext": "html"
+},
+{
+"n": 27,
+"url": "https://play.google.com/store/apps/details?id=com.mobilemoney.business&hl=ar",
+"dir": "items/027-play.google.com",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.mobilemoney.business&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 186887,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B027"
+],
+"raw_file": "raw.html",
+"sha256": "f6cb6425a07426c3fbde1cdc245c8191b4e86753504b2be1254c12b214d24c03",
+"raw_ext": "html"
+},
+{
+"n": 28,
+"url": "https://t.me/ONECashye/1553",
+"dir": "items/028-t.me",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/ONECashye/1553",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9296,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B028"
+],
+"raw_file": "raw.html",
+"sha256": "0023d88be04d3a3bf359f37fb659517af24338071e1b3c298b6fbef696003cfa",
+"raw_ext": "html"
+},
+{
+"n": 29,
+"url": "https://t.me/ONECashye/1552",
+"dir": "items/029-t.me",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/ONECashye/1552",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9195,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B029"
+],
+"raw_file": "raw.html",
+"sha256": "e32a65547a314b372cfdaff23e5d248b785de89abfa481a88db1f788a05cf6aa",
+"raw_ext": "html"
+},
+{
+"n": 30,
+"url": "https://t.me/ONECashye/1545",
+"dir": "items/030-t.me",
+"fetched_at": "2026-10-10T07:25:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/ONECashye/1545",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9196,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B030"
+],
+"raw_file": "raw.html",
+"sha256": "1ebd6e6c0f73fcd4764a4ffcd4c98f1c5835b79d692783a5926b18507e9d12ff",
+"raw_ext": "html"
+},
+{
+"n": 31,
+"url": "https://t.me/sabacash/626",
+"dir": "items/031-t.me",
+"fetched_at": "2026-10-10T07:25:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/sabacash/626",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9331,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B031"
+],
+"raw_file": "raw.html",
+"sha256": "fe98895cf81f8d6ee0a836516bf1c984fc6014b42fabdd1e9ea6c734e660481a",
+"raw_ext": "html"
+},
+{
+"n": 32,
+"url": "https://t.me/sabacash/639",
+"dir": "items/032-t.me",
+"fetched_at": "2026-10-10T07:25:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/sabacash/639",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9118,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B032"
+],
+"raw_file": "raw.html",
+"sha256": "e4691cd585affec92ef6b152f4313ed791a75295aafc082020418a7e6f54d240",
+"raw_ext": "html"
+},
+{
+"n": 33,
+"url": "https://sabacash.com/ar/services/",
+"dir": "items/033-sabacash.com",
+"fetched_at": "2026-10-10T07:25:54Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B033"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 34,
+"url": "https://floosak.com/",
+"dir": "items/034-floosak.com",
+"fetched_at": "2026-10-10T07:25:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 522,
+"final_url": "https://floosak.com/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 7220,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B034"
+],
+"raw_file": "raw.html",
+"sha256": "4ec691913746ce90c025775fc52b6feeb818ff9a96de8d46c1b0819ed5949b94",
+"raw_ext": "html"
+},
+{
+"n": 35,
+"url": "https://www.yk-bank.com/ar/e-Services/floosak",
+"dir": "items/035-yk-bank.com",
+"fetched_at": "2026-10-10T07:25:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.yk-bank.com/ar/e-Services/floosak",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2196,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B035"
+],
+"raw_file": "raw.html",
+"sha256": "5980c003876017093c57406c049d29cb63a44fc9a4eb28897b713cd7841cbfcc",
+"raw_ext": "html"
+},
+{
+"n": 36,
+"url": "https://www.ahdfinancial.com/",
+"dir": "items/036-ahdfinancial.com",
+"fetched_at": "2026-10-10T07:25:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.ahdfinancial.com/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 5282,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B036"
+],
+"raw_file": "raw.html",
+"sha256": "9c18b91e7e4dd44e588a779ba684ae3600749bf85f1261e4d881d0049166145f",
+"raw_ext": "html"
+},
+{
+"n": 37,
+"url": "https://yemeneco.org/archives/93954",
+"dir": "items/037-yemeneco.org",
+"fetched_at": "2026-10-10T07:25:55Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/93954",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34118,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B037"
+],
+"raw_file": "raw.html",
+"sha256": "752675a1e18a102a17fbe41d45da558c0b58b4a1b9b294d231bf2b01909bffbd",
+"raw_ext": "html"
+},
+{
+"n": 38,
+"url": "https://kuraimibank.com/ar/services/55",
+"dir": "items/038-kuraimibank.com",
+"fetched_at": "2026-10-10T07:25:55Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/ar/services/55",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2180,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B038"
+],
+"raw_file": "raw.html",
+"sha256": "6064e237f57da015c6e607a7c0dad8a40121237359252ef7e8ea10204ee3d53d",
+"raw_ext": "html"
+},
+{
+"n": 39,
+"url": "https://kuraimibank.com/ar/services/72",
+"dir": "items/039-kuraimibank.com",
+"fetched_at": "2026-10-10T07:25:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/ar/services/72",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2218,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B039"
+],
+"raw_file": "raw.html",
+"sha256": "83fd3f656fb80eae68b2c55ea133804cd38d4e1d6084920e589c5b84a88c6996",
+"raw_ext": "html"
+},
+{
+"n": 40,
+"url": "https://kuraimibank.com/api/ar/services/5",
+"dir": "items/040-kuraimibank.com",
+"fetched_at": "2026-10-10T07:25:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/api/ar/services/5",
+"content_type": "application/json",
+"bytes": 3954,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B040"
+],
+"raw_file": "raw.json",
+"sha256": "59fdb69f5c0ea6ef842f2efb53c2301246c4bb4bbcdd2ebf541d8b3e8b27395b",
+"raw_ext": "json"
+},
+{
+"n": 41,
+"url": "https://kuraimibank.com/ar/services/28",
+"dir": "items/041-kuraimibank.com",
+"fetched_at": "2026-10-10T07:25:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/ar/services/28",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2221,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B041"
+],
+"raw_file": "raw.html",
+"sha256": "0c491b122733cae8092a90e8802434f75548994c76cbf4f347d22b65e24706be",
+"raw_ext": "html"
+},
+{
+"n": 42,
+"url": "https://kuraimibank.com/ar/services/61",
+"dir": "items/042-kuraimibank.com",
+"fetched_at": "2026-10-10T07:25:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/ar/services/61",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2239,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B042"
+],
+"raw_file": "raw.html",
+"sha256": "df64f3ba970703ed188b5e25589383a072e3ddfb80ea991e51f2b69ddc6acd39",
+"raw_ext": "html"
+},
+{
+"n": 43,
+"url": "https://kuraimibank.com/api/ar/services/50",
+"dir": "items/043-kuraimibank.com",
+"fetched_at": "2026-10-10T07:25:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/api/ar/services/50",
+"content_type": "application/json",
+"bytes": 2858,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B043"
+],
+"raw_file": "raw.json",
+"sha256": "79035b5ea0575f15da1ab90ec19551f8a52448f848b101f87d626156f7d1b9de",
+"raw_ext": "json"
+},
+{
+"n": 44,
+"url": "https://t.me/kuraimibank/1338",
+"dir": "items/044-t.me",
+"fetched_at": "2026-10-10T07:25:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/kuraimibank/1338",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9066,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B044"
+],
+"raw_file": "raw.html",
+"sha256": "394ce1c321554f38b8f18725b8d3efc0b7e1ecfb62b4dad96d350967bf0e556a",
+"raw_ext": "html"
+},
+{
+"n": 45,
+"url": "https://t.me/kuraimibank/1188",
+"dir": "items/045-t.me",
+"fetched_at": "2026-10-10T07:25:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/kuraimibank/1188",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9069,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B045"
+],
+"raw_file": "raw.html",
+"sha256": "ec778718d18e75392e805b1c4310d3dba87b8dba2c80e58d9b60f5053692cf33",
+"raw_ext": "html"
+},
+{
+"n": 46,
+"url": "https://t.me/kuraimibank/1161",
+"dir": "items/046-t.me",
+"fetched_at": "2026-10-10T07:25:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/kuraimibank/1161",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9187,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B046"
+],
+"raw_file": "raw.html",
+"sha256": "75da8917a24ca4d7ede7c622542dd6cd9d7539474dc0bc0e625c76b832de1c0e",
+"raw_ext": "html"
+},
+{
+"n": 47,
+"url": "https://t.me/kuraimibank/1039",
+"dir": "items/047-t.me",
+"fetched_at": "2026-10-10T07:25:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/kuraimibank/1039",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9069,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B047"
+],
+"raw_file": "raw.html",
+"sha256": "8ef5d0a4da7e5d33da3ec4f120ef76d470043b9a12cf9bcee1a9ea2d16ac3e1e",
+"raw_ext": "html"
+},
+{
+"n": 48,
+"url": "https://t.me/kuraimibank/1298",
+"dir": "items/048-t.me",
+"fetched_at": "2026-10-10T07:25:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/kuraimibank/1298",
+"content_type": "text/html; charset=utf-8",
+"bytes": 10234,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B048"
+],
+"raw_file": "raw.html",
+"sha256": "8a94acae8e13f9931040ec577f76b234d3271d5af8bebede6872259c22c3e30f",
+"raw_ext": "html"
+},
+{
+"n": 49,
+"url": "https://t.me/MFloosWallet/338",
+"dir": "items/049-t.me",
+"fetched_at": "2026-10-10T07:25:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/MFloosWallet/338",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9209,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B049"
+],
+"raw_file": "raw.html",
+"sha256": "f210c0c3a3837294eda8e172733c162721c2e13e6846b522617a60e305a8cf30",
+"raw_ext": "html"
+},
+{
+"n": 50,
+"url": "https://t.me/MFloosWallet/491",
+"dir": "items/050-t.me",
+"fetched_at": "2026-10-10T07:25:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/MFloosWallet/491",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9221,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B050"
+],
+"raw_file": "raw.html",
+"sha256": "855ea35cf6e20eec97c0de2174f35a934139ece20941f8e6e6b4bba5c171f074",
+"raw_ext": "html"
+},
+{
+"n": 51,
+"url": "https://t.me/MFloosWallet/415",
+"dir": "items/051-t.me",
+"fetched_at": "2026-10-10T07:25:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/MFloosWallet/415",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9236,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B051"
+],
+"raw_file": "raw.html",
+"sha256": "c390d3f6509f061817d837c0dcb3cbaba384c276d09442fb9c65c9c224ec8b24",
+"raw_ext": "html"
+},
+{
+"n": 52,
+"url": "https://t.me/MFloosWallet/551",
+"dir": "items/052-t.me",
+"fetched_at": "2026-10-10T07:25:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/MFloosWallet/551",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9196,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B052"
+],
+"raw_file": "raw.html",
+"sha256": "a255706e75d21d193a73ae4a679c5c9538601749cb479beb7609fb2b46ba1ae4",
+"raw_ext": "html"
+},
+{
+"n": 53,
+"url": "https://t.me/MFloosWallet/552",
+"dir": "items/053-t.me",
+"fetched_at": "2026-10-10T07:25:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/MFloosWallet/552",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9018,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B053"
+],
+"raw_file": "raw.html",
+"sha256": "3435f5c106962e0ee0371a2e8f360d1034d1ace658194adc925a8117cea5bcb7",
+"raw_ext": "html"
+},
+{
+"n": 54,
+"url": "https://hakikah.net/what-is-the-truth-about-the-suspension-of-al-kuraimi-bank-in-sanaa/",
+"dir": "items/054-hakikah.net",
+"fetched_at": "2026-10-10T07:25:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://hakikah.net/what-is-the-truth-about-the-suspension-of-al-kuraimi-bank-in-sanaa/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 23849,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B054"
+],
+"raw_file": "raw.html",
+"sha256": "f4f5aab22eee907cdbf4939ea9b085a1577f397a1149ec96045a8eb76218c5c6",
+"raw_ext": "html"
+},
+{
+"n": 55,
+"url": "https://yemenat.net/archives/408754",
+"dir": "items/055-yemenat.net",
+"fetched_at": "2026-10-10T07:25:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemenat.net/archives/408754",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 24260,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B055"
+],
+"raw_file": "raw.html",
+"sha256": "18e618452d1ded06504ed66ac2aec122a3d9698ae9a7e625ae4e7ee593f8c698",
+"raw_ext": "html"
+},
+{
+"n": 56,
+"url": "https://barran.press/news/topic/9910",
+"dir": "items/056-barran.press",
+"fetched_at": "2026-10-10T07:25:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "http://barran.press/news/9910",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 16186,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B056"
+],
+"raw_file": "raw.html",
+"sha256": "29336663b8bdc1f75bf0cf2a274f47af3ba2dddcadee13c723e206d1cfdecd3a",
+"raw_ext": "html"
+},
+{
+"n": 57,
+"url": "https://yemenat.net/archives/418987",
+"dir": "items/057-yemenat.net",
+"fetched_at": "2026-10-10T07:25:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemenat.net/archives/418987",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 25622,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B057"
+],
+"raw_file": "raw.html",
+"sha256": "9dbec120dfc4269276ef870dd5dd4f6b0bbdbd34f98d5862dbbf33fdb8d2707c",
+"raw_ext": "html"
+},
+{
+"n": 58,
+"url": "https://ainaden.com/details-content/123377",
+"dir": "items/058-ainaden.com",
+"fetched_at": "2026-10-10T07:25:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://ainaden.com/details-content/123377",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 37430,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B058"
+],
+"raw_file": "raw.html",
+"sha256": "ee11aff0840ac260ada072f55390072442776b52b424c1d1ca17bb206adfee3a",
+"raw_ext": "html"
+},
+{
+"n": 59,
+"url": "https://www.alayyam.info/news/9QXUUHLC-NWVTIC-6720",
+"dir": "items/059-alayyam.info",
+"fetched_at": "2026-10-10T07:26:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.alayyam.info/news/9QXUUHLC-NWVTIC-6720",
+"content_type": "text/html; charset=utf-8",
+"bytes": 30940,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B059"
+],
+"raw_file": "raw.html",
+"sha256": "d5cb2fe616771869b4ec1ae75071b1779d9c40eb3c9165b2b657bf84ce316068",
+"raw_ext": "html"
+},
+{
+"n": 60,
+"url": "https://www.almashhad.news/180488",
+"dir": "items/060-almashhad.news",
+"fetched_at": "2026-10-10T07:26:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.almashhad.news/news/180488",
+"content_type": "text/html; charset=utf-8",
+"bytes": 16395,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B060"
+],
+"raw_file": "raw.html",
+"sha256": "9d75111bab7738217ad4798a2e6a4b8f39d11befc834fe4c1bbdc420b2ba3902",
+"raw_ext": "html"
+},
+{
+"n": 61,
+"url": "https://kibanks.com/ar/service-points",
+"dir": "items/061-kibanks.com",
+"fetched_at": "2026-10-10T07:26:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kibanks.com/ar/service-points",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2480,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B061"
+],
+"raw_file": "raw.html",
+"sha256": "e28c5c68bd6c3a426873d9ae214fdf3d77f1f799dd475512601b051b0545f581",
+"raw_ext": "html"
+},
+{
+"n": 62,
+"url": "https://play.google.com/store/apps/details?id=wallet.mfloos.com.mflooswallet.customer&hl=ar",
+"dir": "items/062-play.google.com",
+"fetched_at": "2026-10-10T07:26:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=wallet.mfloos.com.mflooswallet.customer&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 195438,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B062"
+],
+"raw_file": "raw.html",
+"sha256": "2e85250782e48024283a473458b7d4ab69e3ebb96c6580392ef2b0c7083fc259",
+"raw_ext": "html"
+},
+{
+"n": 63,
+"url": "https://play.google.com/store/apps/details?id=wallet.mfloos.com.mflooswallet&hl=ar",
+"dir": "items/063-play.google.com",
+"fetched_at": "2026-10-10T07:26:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=wallet.mfloos.com.mflooswallet&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 195802,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B063"
+],
+"raw_file": "raw.html",
+"sha256": "4e989ef5c09c31c30a6c585e3c4526ea0776677d2dec97812e521bfc9d4eaca4",
+"raw_ext": "html"
+},
+{
+"n": 64,
+"url": "https://play.google.com/store/apps/details?id=com.KuraimiBank&hl=ar",
+"dir": "items/064-play.google.com",
+"fetched_at": "2026-10-10T07:26:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.KuraimiBank&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 197779,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B064"
+],
+"raw_file": "raw.html",
+"sha256": "0ef36c1eb49017da18ef491e6f6c145761432a5996b28e664a75978cfd301aab",
+"raw_ext": "html"
+},
+{
+"n": 65,
+"url": "https://x.com/Kuraimibank/status/1965297255201849357",
+"dir": "items/065-x.com",
+"fetched_at": "2026-10-10T07:26:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://x.com/Kuraimibank/status/1965297255201849357",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 22654,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B065"
+],
+"raw_file": "raw.html",
+"sha256": "094b7b2efe989feb70b501c9160c3dd1ddd77e17f67eca27f79fc85a4c823273",
+"raw_ext": "html"
+},
+{
+"n": 66,
+"url": "https://kuraimibank.com/ar/services/51",
+"dir": "items/066-kuraimibank.com",
+"fetched_at": "2026-10-10T07:26:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/ar/services/51",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2215,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B066"
+],
+"raw_file": "raw.html",
+"sha256": "4bbc139daf36af78005b4f20db81939e705f69baee16d19b3098b8a7dfdb2012",
+"raw_ext": "html"
+},
+{
+"n": 67,
+"url": "https://kuraimibank.com/ar/services/22",
+"dir": "items/067-kuraimibank.com",
+"fetched_at": "2026-10-10T07:26:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/ar/services/22",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2205,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B067"
+],
+"raw_file": "raw.html",
+"sha256": "e787fb59fa11c27d1e599a3e5e59fa62108a7bead57fbc66c4fa7568e3c7ba43",
+"raw_ext": "html"
+},
+{
+"n": 68,
+"url": "https://kuraimibank.com/ar/service-points",
+"dir": "items/068-kuraimibank.com",
+"fetched_at": "2026-10-10T07:26:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://kuraimibank.com/ar/service-points",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 2269,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B068"
+],
+"raw_file": "raw.html",
+"sha256": "c26be250eedc598cbe80b5719b8d7683829b92e39ec9c02c04cfdd0a26aded57",
+"raw_ext": "html"
+},
+{
+"n": 69,
+"url": "https://t.me/kuraimibank/538",
+"dir": "items/069-t.me",
+"fetched_at": "2026-10-10T07:26:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/kuraimibank/538",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9077,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B069"
+],
+"raw_file": "raw.html",
+"sha256": "f7482dbc6085b085961a7ecf229f5e5408c9903dcdedc86b2c0f8556569f5e37",
+"raw_ext": "html"
+},
+{
+"n": 70,
+"url": "https://t.me/kuraimibank/1367",
+"dir": "items/070-t.me",
+"fetched_at": "2026-10-10T07:26:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/kuraimibank/1367",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9022,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B070"
+],
+"raw_file": "raw.html",
+"sha256": "77ab1b0a95f3a487e77417e3caacf8c8289609694c83ff8a30dbdebed76eea22",
+"raw_ext": "html"
+},
+{
+"n": 71,
+"url": "https://t.me/MFloosWallet/154",
+"dir": "items/071-t.me",
+"fetched_at": "2026-10-10T07:26:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/MFloosWallet/154",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9209,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B071"
+],
+"raw_file": "raw.html",
+"sha256": "8cd6d7db4652ce7f6d59f8da6d952e40781eb2ae7d067d2b56a671f477aa3036",
+"raw_ext": "html"
+},
+{
+"n": 72,
+"url": "https://t.me/MFloosWallet/420",
+"dir": "items/072-t.me",
+"fetched_at": "2026-10-10T07:26:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://t.me/MFloosWallet/420",
+"content_type": "text/html; charset=utf-8",
+"bytes": 9172,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B072"
+],
+"raw_file": "raw.html",
+"sha256": "326451165e3fd31a0a991bda3e686f04c9e88024a47e7fe7e5d17043c3c397e9",
+"raw_ext": "html"
+},
+{
+"n": 73,
+"url": "https://www.alayyam.info/news/A45J4MYI-X8YJCD-E165",
+"dir": "items/073-alayyam.info",
+"fetched_at": "2026-10-10T07:26:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.alayyam.info/news/A45J4MYI-X8YJCD-E165",
+"content_type": "text/html; charset=utf-8",
+"bytes": 32928,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B073"
+],
+"raw_file": "raw.html",
+"sha256": "ab769095f79721ff55b276ffcfe4033c407a1abe7a01d7be12379d7e4f5c2e5e",
+"raw_ext": "html"
+},
+{
+"n": 74,
+"url": "https://yemeneco.org/archives/107597",
+"dir": "items/074-yemeneco.org",
+"fetched_at": "2026-10-10T07:26:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yemeneco.org/archives/107597",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 33961,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B074"
+],
+"raw_file": "raw.html",
+"sha256": "d2147376ef7657d2996ca79f74644823e6ffdccaa75e9c6ffcbe053746aaedf6",
+"raw_ext": "html"
+},
+{
+"n": 75,
+"url": "https://x.com/YemenTelecom/status/1820512274974441492",
+"dir": "items/075-x.com",
+"fetched_at": "2026-10-10T07:26:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://x.com/YemenTelecom/status/1820512274974441492",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 22712,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B075"
+],
+"raw_file": "raw.html",
+"sha256": "26c4b8307d61e52a08b65143976cf822f5b4a366ec0505eca807bcba0038f409",
+"raw_ext": "html"
+},
+{
+"n": 76,
+"url": "https://www.alaraby.co.uk/economy/%D8%A3%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%88%D9%84%D8%A9-%D8%AA%D9%86%D8%B9%D8%B4-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%81%D8%B8-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86",
+"dir": "items/076-alaraby.co.uk",
+"fetched_at": "2026-10-10T07:26:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://www.alaraby.co.uk/economy/%D8%A3%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%88%D9%84%D8%A9-%D8%AA%D9%86%D8%B9%D8%B4-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%81%D8%B8-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86",
+"content_type": "text/html",
+"bytes": 977,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B076"
+],
+"raw_file": "raw.html",
+"sha256": "593bc4821c8f64f64942210bbb8280c79f1eca3e43f3225834d1dd728e2505dc",
+"raw_ext": "html"
+},
+{
+"n": 77,
+"url": "https://almahriah.net/economy/%D9%85%D8%AD%D8%A7%D9%81%D8%B8-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86",
+"dir": "items/077-almahriah.net",
+"fetched_at": "2026-10-10T07:26:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://almahriah.net/economy/%D9%85%D8%AD%D8%A7%D9%81%D8%B8-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86",
+"content_type": "text/html; charset=utf-8",
+"bytes": 21330,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B077"
+],
+"raw_file": "raw.html",
+"sha256": "2b4ce59f81d9b2b47a99131c8d87128870b0a7b623e9eeb9f140f92f512e7dc3",
+"raw_ext": "html"
+},
+{
+"n": 78,
+"url": "https://shahedpress.net/?p=2420",
+"dir": "items/078-shahedpress.net",
+"fetched_at": "2026-10-10T07:26:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://shahedpress.net/?p=2420",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 44087,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B078"
+],
+"raw_file": "raw.html",
+"sha256": "1a7b4cef7a1232b85a0692effbc9559690db6e36e76ff07fb64b26c65ca87246",
+"raw_ext": "html"
+},
+{
+"n": 79,
+"url": "https://play.google.com/store/apps/details?id=com.ontime.application&hl=ar",
+"dir": "items/079-play.google.com",
+"fetched_at": "2026-10-10T07:26:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.ontime.application&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 191480,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B079"
+],
+"raw_file": "raw.html",
+"sha256": "e87de00e8ef6d3efcaff9b859a1e51c35b3cf72be93c27b5d80065ee322610d8",
+"raw_ext": "html"
+},
+{
+"n": 80,
+"url": "https://qc-yemen.com/services-ontime/",
+"dir": "items/080-qc-yemen.com",
+"fetched_at": "2026-10-10T07:26:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://qc-yemen.com/services-ontime/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 32242,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B080"
+],
+"raw_file": "raw.html",
+"sha256": "d9a3c1740210658ea8ea31e309b5e0d670076680210dadfab6385779c11524af",
+"raw_ext": "html"
+},
+{
+"n": 81,
+"url": "https://play.google.com/store/apps/details?id=com.smartapps.tawseel&hl=ar",
+"dir": "items/081-play.google.com",
+"fetched_at": "2026-10-10T07:26:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.smartapps.tawseel&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 205776,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B081"
+],
+"raw_file": "raw.html",
+"sha256": "6f7009c8356d1fdbe663840b997680be137a9a53fe9ec634984cc54ceab1ba48",
+"raw_ext": "html"
+},
+{
+"n": 82,
+"url": "https://play.google.com/store/apps/details?id=com.wagbat&hl=ar",
+"dir": "items/082-play.google.com",
+"fetched_at": "2026-10-10T07:26:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.wagbat&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 175074,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B082"
+],
+"raw_file": "raw.html",
+"sha256": "14748b1b74bb3b80045b49cc6e826d8d7fc8d8cecc21bce2cc97ba31e0809175",
+"raw_ext": "html"
+},
+{
+"n": 83,
+"url": "https://www.post.ye/web/index.php/postal-services/personal/postal-parcel-service",
+"dir": "items/083-post.ye",
+"fetched_at": "2026-10-10T07:26:03Z",
+"curl_exit": 60,
+"curl_error": "curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B083"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 84,
+"url": "https://yesmediastore.com/",
+"dir": "items/084-yesmediastore.com",
+"fetched_at": "2026-10-10T07:26:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://yesmediastore.com/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 88963,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B084"
+],
+"raw_file": "raw.html",
+"sha256": "01f4feb46d4c18488a5c044740eeb475c2e8ca4e392eebc5b621c34eb194bfca",
+"raw_ext": "html"
+},
+{
+"n": 85,
+"url": "https://anayees.com/pages/faqs",
+"dir": "items/085-anayees.com",
+"fetched_at": "2026-10-10T07:26:04Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://anayees.com/pages/faqs",
+"content_type": "text/html; charset=utf-8",
+"bytes": 35522,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B085"
+],
+"raw_file": "raw.html",
+"sha256": "528f66892bea7de91605c18138f8996a9388b854456a97b6cdf593aab94b0a86",
+"raw_ext": "html"
+},
+{
+"n": 86,
+"url": "https://procorners.com/alibaba-yemen/",
+"dir": "items/086-procorners.com",
+"fetched_at": "2026-10-10T07:26:04Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://procorners.com/alibaba-yemen/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 64354,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B086"
+],
+"raw_file": "raw.html",
+"sha256": "ae43f389c2c8363478573a6fe77ea4218c3cb9c9d7da78354642cbe517a9a635",
+"raw_ext": "html"
+},
+{
+"n": 87,
+"url": "https://procorners.com/shein-yemen-sanaa/",
+"dir": "items/087-procorners.com",
+"fetched_at": "2026-10-10T07:26:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://procorners.com/shein-yemen-sanaa/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 63816,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B087"
+],
+"raw_file": "raw.html",
+"sha256": "fdc65b7f72aca3f1b463b70bf5a4518abe952d5717a8dbbacc80a9525ad4016a",
+"raw_ext": "html"
+},
+{
+"n": 88,
+"url": "https://procorners.com/noon-yemen/",
+"dir": "items/088-procorners.com",
+"fetched_at": "2026-10-10T07:26:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://procorners.com/noon-yemen/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 59613,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B088"
+],
+"raw_file": "raw.html",
+"sha256": "838c1b6ab66f6baa815cf472c3375201dc8ecc0e060808e0be3fdc81c9f4589f",
+"raw_ext": "html"
+},
+{
+"n": 89,
+"url": "https://play.google.com/store/apps/details?id=com.aosan.online&hl=ar",
+"dir": "items/089-play.google.com",
+"fetched_at": "2026-10-10T07:26:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.aosan.online&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 174033,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B089"
+],
+"raw_file": "raw.html",
+"sha256": "c5d5f7f13ac00fc2e1a46f84f366136e68daa14f278748c6a1309c5598bf8cf3",
+"raw_ext": "html"
+},
+{
+"n": 90,
+"url": "https://www.uptownye.com/",
+"dir": "items/090-uptownye.com",
+"fetched_at": "2026-10-10T07:26:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.uptownye.com/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 41711,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B090"
+],
+"raw_file": "raw.html",
+"sha256": "becf2d08f03449dcf6da80dfb5db577dd5d31c7043178643615a7d18bda03a3a",
+"raw_ext": "html"
+},
+{
+"n": 91,
+"url": "https://play.google.com/store/apps/details?id=com.swiftlife.cardnet&hl=ar",
+"dir": "items/091-play.google.com",
+"fetched_at": "2026-10-10T07:26:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.swiftlife.cardnet&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 194012,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B091"
+],
+"raw_file": "raw.html",
+"sha256": "d683cc5473f4aab8f0bfe78d0ad4bdbfb56c528c903bc1c10fffd810ccd06375",
+"raw_ext": "html"
+},
+{
+"n": 92,
+"url": "https://1mdp.com/%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D8%AF%D9%81%D8%B9/",
+"dir": "items/092-1mdp.com",
+"fetched_at": "2026-10-10T07:26:06Z",
+"curl_exit": 35,
+"curl_error": "curl: (35) Recv failure: Connection reset by peer",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B092"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+},
+{
+"n": 93,
+"url": "https://perfumgardeen.com/about/",
+"dir": "items/093-perfumgardeen.com",
+"fetched_at": "2026-10-10T07:26:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://perfumgardeen.com/about/?v=00c66f1a036b",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 86217,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B093"
+],
+"raw_file": "raw.html",
+"sha256": "139d78b4cd6fafc4b087d6e6055276685ba39696e522a2667a4b48a23cc5b9c8",
+"raw_ext": "html"
+},
+{
+"n": 94,
+"url": "https://perfumgardeen.com/return-and-refund-policy/",
+"dir": "items/094-perfumgardeen.com",
+"fetched_at": "2026-10-10T07:26:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://perfumgardeen.com/return-and-refund-policy/?v=00c66f1a036b",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 86722,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B094"
+],
+"raw_file": "raw.html",
+"sha256": "14386f59427c2a02766c40ff32a710c8ddd86cde20a5a189db1c20cb4deff0df",
+"raw_ext": "html"
+},
+{
+"n": 95,
+"url": "https://play.google.com/store/apps/details?id=com.ebda3soft.ebsEcommerce&hl=ar",
+"dir": "items/095-play.google.com",
+"fetched_at": "2026-10-10T07:26:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://play.google.com/store/apps/details?id=com.ebda3soft.ebsEcommerce&hl=ar",
+"content_type": "text/html; charset=utf-8",
+"bytes": 177021,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B095"
+],
+"raw_file": "raw.html",
+"sha256": "93b53540fd7b001017b703ab065b755023f5fc6015a8cd4d8a4310471d8c87e6",
+"raw_ext": "html"
+},
+{
+"n": 96,
+"url": "https://apps.apple.com/ye/app/%D8%AF%D9%8A%D9%84%D9%8A-%D9%81%D8%A7%D8%B3%D8%AA-%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%B7%D8%B9%D8%A7%D9%85-%D9%88%D9%87%D8%AF%D8%A7%D9%8A%D8%A7/id6745570168",
+"dir": "items/096-apps.apple.com",
+"fetched_at": "2026-10-10T07:26:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://apps.apple.com/ye/app/%D8%AF%D9%8A%D9%84%D9%8A-%D9%81%D8%A7%D8%B3%D8%AA-%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%B7%D8%B9%D8%A7%D9%85-%D9%88%D9%87%D8%AF%D8%A7%D9%8A%D8%A7/id6745570168",
+"content_type": "text/html",
+"bytes": 66363,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B096"
+],
+"raw_file": "raw.html",
+"sha256": "e4c5211a47b5a21c3d8d330fac426e2918b4f87d1955524de5494c66cec4c132",
+"raw_ext": "html"
+},
+{
+"n": 97,
+"url": "https://apps.apple.com/ye/app/%D8%A7%D8%B7%D9%84%D8%A8%D9%86%D9%8A-%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85-%D9%88%D9%83%D9%84-%D8%B4%D9%8A/id1556208614",
+"dir": "items/097-apps.apple.com",
+"fetched_at": "2026-10-10T07:26:07Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://apps.apple.com/ye/app/%D8%A7%D8%B7%D9%84%D8%A8%D9%86%D9%8A-%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85-%D9%88%D9%83%D9%84-%D8%B4%D9%8A/id1556208614",
+"content_type": "text/html",
+"bytes": 65961,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B097"
+],
+"raw_file": "raw.html",
+"sha256": "58f8847643270910c2ab147941b0eb45f39f8f25f1a5e8f35beb60ce03b3d4a4",
+"raw_ext": "html"
+},
+{
+"n": 98,
+"url": "https://apps.apple.com/ye/app/alnaeem/id6456525872",
+"dir": "items/098-apps.apple.com",
+"fetched_at": "2026-10-10T07:26:07Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://apps.apple.com/ye/app/alnaeem/id6456525872",
+"content_type": "text/html",
+"bytes": 59109,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B098"
+],
+"raw_file": "raw.html",
+"sha256": "4d26b73b11292cede5589a45c371968411f70287c96256221875bcb0f939fd4d",
+"raw_ext": "html"
+},
+{
+"n": 99,
+"url": "https://www.emahallat.com/en/shipping-delivery/",
+"dir": "items/099-emahallat.com",
+"fetched_at": "2026-10-10T07:26:07Z",
+"curl_exit": 56,
+"curl_error": "curl: (56) CONNECT tunnel failed, response 502",
+"http_code": 0,
+"final_url": "",
+"content_type": "",
+"bytes": 0,
+"cited_in": [
+"evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B099"
+],
+"raw_file": "",
+"sha256": "",
+"raw_ext": ""
+}
+]

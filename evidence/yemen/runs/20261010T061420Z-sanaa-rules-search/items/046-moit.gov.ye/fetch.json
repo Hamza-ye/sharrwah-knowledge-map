@@ -1,0 +1,18 @@
+{
+ "n": 46,
+ "url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D9%88%D9%83%D8%A7%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%20.pdf",
+ "dir": "items/046-moit.gov.ye",
+ "fetched_at": "2026-10-10T06:14:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.moit.gov.ye/sites/default/files/2026-02/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D9%88%D9%83%D8%A7%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%20.pdf",
+ "content_type": "application/pdf",
+ "bytes": 3950846,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A046"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "f9b3c390301d411ebac7871db17670b1bc395ed1002a2e601ac004e842702d99",
+ "raw_ext": "pdf"
+}

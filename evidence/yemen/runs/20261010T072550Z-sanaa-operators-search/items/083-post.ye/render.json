@@ -1,0 +1,25 @@
+{
+ "n": 83,
+ "url": "https://www.post.ye/web/index.php/postal-services/personal/postal-parcel-service",
+ "rendered_at": "2026-10-10T07:28:42Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 200,
+ "final_url": "https://www.post.ye/web/index.php/postal-services/personal/postal-parcel-service",
+ "title": "الطرود البريدية",
+ "text_chars": 2365,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "b43161d51c446fbeb1608d2d675c7fab4b2b954b326ed0086e3f53ba14f58d16",
+ "browser_headers": {
+  "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "connection": "Keep-Alive",
+  "content-type": "text/html; charset=utf-8",
+  "date": "Sat, 10 Oct 2026 07:35:09 GMT",
+  "expires": "Wed, 17 Aug 2005 00:00:00 GMT",
+  "keep-alive": "timeout=5, max=100",
+  "last-modified": "Sat, 10 Oct 2026 07:35:10 GMT",
+  "pragma": "no-cache",
+  "server": "Apache/2.4.53 (Unix) OpenSSL/1.1.1o PHP/7.4.29",
+  "transfer-encoding": "chunked",
+  "x-powered-by": "PHP/7.4.29"
+ }
+}

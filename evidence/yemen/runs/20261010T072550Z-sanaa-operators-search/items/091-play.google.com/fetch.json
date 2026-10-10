@@ -1,0 +1,18 @@
+{
+ "n": 91,
+ "url": "https://play.google.com/store/apps/details?id=com.swiftlife.cardnet&hl=ar",
+ "dir": "items/091-play.google.com",
+ "fetched_at": "2026-10-10T07:26:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=com.swiftlife.cardnet&hl=ar",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 194012,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B091"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d683cc5473f4aab8f0bfe78d0ad4bdbfb56c528c903bc1c10fffd810ccd06375",
+ "raw_ext": "html"
+}

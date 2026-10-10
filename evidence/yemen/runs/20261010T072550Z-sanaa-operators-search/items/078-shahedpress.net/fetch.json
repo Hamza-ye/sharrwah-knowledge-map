@@ -1,0 +1,18 @@
+{
+ "n": 78,
+ "url": "https://shahedpress.net/?p=2420",
+ "dir": "items/078-shahedpress.net",
+ "fetched_at": "2026-10-10T07:26:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shahedpress.net/?p=2420",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44087,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B078"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1a7b4cef7a1232b85a0692effbc9559690db6e36e76ff07fb64b26c65ca87246",
+ "raw_ext": "html"
+}

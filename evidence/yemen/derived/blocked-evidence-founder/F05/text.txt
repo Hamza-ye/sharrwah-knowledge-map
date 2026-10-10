@@ -1,0 +1,435 @@
+EXPERTISE
+PEOPLE
+CONTACT US
+ALUMNI
+About the Firm
+Careers
+Collaborations
+Culture
+Expertise - Industries
+Expertise - Practices
+Knowledge Repository
+News and Insights
+Contact Us
+People
+Sustainability
+Alumni
+Search Your Queries Related To Trilegal
+All
+People
+Knowledge Repository
+Practice
+News and Insights
+Analysis
+RBI’s Guidelines on Regulation of Payment Aggregators and Payment Gateways
+
+07 Apr 2020
+
+ 
+Home Knowledge Repository RBI’s Guidelines on Regulation of Payment Aggregators and Payment Gateways
+
+To protect consumer interests, the Reserve Bank of India has issued Guidelines to regulate payment aggregators and payment gateways. The Guidelines have taken effect from 1 April 2020 and stipulate a registration requirement and eligibility criteria for aggregators, along with several other compliances concerning local incorporation, governance, security and anti-money laundering measures.
+
+BACKGROUND
+
+The Reserve Bank of India (RBI) issued the Guidelines on Regulation of Payment Gateways and Payment Aggregators (Guidelines) on 17 March 2020, which seeks to regulate Payment Aggregators and Payment Gateways. The Guidelines are effective from 1 April 2020 and apply mandatorily to Payment Aggregators, while the technology-related recommendations apply voluntarily to Payment Gateways. This is a significant change from the extant RBI regulatory regime that governed some of these entities as ‘intermediaries’ – the Directions for Opening and Operation of Accounts and Settlement of Payments for Electronic Payment Transactions Involving Intermediaries (Intermediary Directions) issued in November 2009. Given that Payment Aggregators often receive funds from the customer before it reaches the accounts of the respective merchants, and may additionally handle large volumes of customer data, the RBI has decided to regulate these entities in the interest of the consumer.
+
+The salient features of the Guidelines are described below.
+
+PAYMENT AGGREGATORS AND PAYMENT GATEWAYS
+
+Payment Aggregators: Payment Aggregators facilitate e-commerce sites and merchants to accept various payment instruments from the customers for completion of their payment obligations without the need for merchants to create a separate payment integration system of their own. Payment Aggregators facilitate merchants to connect with acquirers and in the process, receive payments from customers, pool and transfer them on to the merchants after some time.
+
+This definition is similar to the definition of ‘intermediaries’ under the Intermediary Directions, which defines an intermediary as ‘an entity that collect monies received from customers for payment to merchants using any electronic/online payment mode, for goods and services availed by them and subsequently facilitate the transfer of these monies to the merchants in final settlement of the obligations of the paying customers.’
+
+Before the Guidelines, most aggregators in the market used to comply with the Intermediary Directions. Intermediaries are a broad classification and included within its ambit both e-commerce marketplaces (who use nodal accounts to facilitate payments) and payment aggregation service providers. While e-commerce marketplaces were providing aggregation services to its merchants in furtherance of their trust eco-sytstem, the aggregation service providers were providing these as a service to merchants and e-commerce marketplaces. From a reading of the Guidelines, it appears that the Guidelines intend to replace the Intermediary Directions. However, in the absence of an over-riding clause, it is unclear whether the Intermediary Directions are still in force and this leads to ambiguity surrounding dual regulation.
+
+Payment Gateways: Payment Gateways are entities that provide technology infrastructure to route and facilitate the processing of online payment transactions without actually handling funds. The definition covers all entities processing online payments without providing aggregation of funds. However, it must be noted that a large number of players in the market are currently operating as both Payment Aggregators and Payment Gateways.
+
+The Guidelines are mandatorily applicable to Payment Aggregators. On the other hand, since Payment Gateways merely provide infrastructure and do not handle funds at any stage, they have been given the option to adhere to the baseline technology-related recommendations, as specified in the Guidelines. Further, since Payment Aggregators may process cross-border payments, the Guidelines have specified that they apply to the domestic leg of any import-export related payments facilitated by Payment Aggregators. In these instances, Payment Aggregators must ensure compliance with the Guidelines only for collecting and maintaining funds from all domestic customers, as well as settlement with domestic merchants. The Guidelines, however, do not apply to any Cash-on-Delivery (CoD) transactions conducted by Payment Aggregators.
+
+REGISTRATION REQUIREMENTS
+
+All existing non-bank Payment Aggregators are required to obtain a registration from the RBI under the Payment and Settlement Systems Act, 2007 (PSSA) by 30 June 2021. Any Payment Aggregator seeking authorization would need to adhere to the following conditions:
+
+The Payment Aggregator must be a company incorporated in India under the Companies Act, 1956/2013.
+All new Payment Aggregators require minimum net-worth of Rs. 25 crores (approx. USD 3.5 million) at the time of application, while existing Payment Aggregators require minimum net-worth of Rs. 15 crores (approx. USD 2 million) by 31 March 2021 and Rs. 25 crores by 31 March 2023, to be maintained at all times. It must be noted that ‘net-worth’ has been defined to include only such preference capital where there is a restriction under the shareholders’ agreement preventing this capital from being ‘withdrawn’.
+E-commerce entities desirous of authorization are required to separate their Payment Aggregator activities from their e-commerce business and obtain a separate registration for their Payment Aggregator business.
+KEY COMPLIANCES
+
+Governance: The RBI has sought to regulate the governance of Payment Aggregators in relation to their management and internal policies. For instance, and similar to the requirement applicable to prepaid instrument issuers, the promoters of a Payment Aggregators must satisfy the ‘fit and proper criteria’ prescribed by the RBI. Further, Payment Aggregators must communicate any takeover or change in control to the RBI. Similarly, to ensure transparent governance they must also disclose information regarding their merchant policies, customer grievances, privacy policy and other terms and conditions on their website or mobile application.
+
+Anti-Money Laundering: Payment Aggregators must follow all requirements under the RBI’s Master Direction – Know Your Customer (KYC) Directions, in addition to requirements under the Prevention of Money Laundering Act, 2002 that are presently applicable to entities such as banks, financial institutions and payment system providers. Payment Aggregators would, therefore (indicatively) be required to ensure that customers are verified in the prescribed manner, develop KYC and Customer Acceptance policies, monitor large transactions, update KYC information periodically, and maintain, preserve and make available all customer information held with them. However, the Guidelines do not address how Payment Aggregators without direct relationships with the customer may carry out this exercise.
+
+Settlement/Escrow Account: Payment Aggregators are required to set up an escrow account with a scheduled commercial bank for the funds they collect. Given the objective of the Guidelines to regulate the flow of funds through Payment Aggregators, the RBI has issued strict requirements for the use of the escrow account. The account can be used by Payment Aggregators only for debits and credits specified in the Guidelines and cannot be used for CoD transactions. Permitted debit transactions include payments to merchants and service providers, payments made on instructions from merchants, payment of commission to intermediaries, and payments for promotional activities. Similarly, permitted credits include payments from customers, pre-funding of the escrow account by merchants, refunds for failed or cancelled transactions, and payments for onward transfer to merchants for promotional activities. The RBI has also stipulated timelines within which Payment Aggregators must settle amounts with merchants. These are prescribed based on the nature of the transaction and the entity that is responsible for the delivery of goods or services. For instance, where the Payment Aggregator is responsible for delivery, settlement must be completed within one day of the date of intimation to the Payment Aggregator of shipment by the merchant (Ts). Where the merchant is responsible for delivery, the settlement must be completed within one day of the date of confirmation to the Payment Aggregator of delivery by the merchant (Td). Further, where the agreement with the merchant requires the Payment Aggregator to retain the funds till the expiry of the refund period prescribed by the merchant, settlement must be completed within one day of the date of expiry of refund period (Tr).
+
+Unlike the Intermediary Directions, these Guidelines do not seem to distinguish between services that involve an instant delivery (such as flight tickets or e-books) and those that are delivered over time. Further, the timelines for settlement provided under the Guidelines are more stringent than those provided in the Intermediary Directions. Given that the Guidelines do not replace the Intermediary Directions but appear to add to them, in the absence of any clarity such a discrepancy is likely to lead to uncertainty for Payment Aggregators.
+
+This is also bound to create changes to the current trust mechanisms built-in by e-commerce marketplaces.
+
+Security, Fraud Prevention and Risk Management: Payment Aggregators are required to put in place a Board approved information security policy, establish mechanisms for handling cybersecurity incidents and breaches and submit System Audit Reports to the RBI.
+
+Data Storage: Payment Aggregators must comply with data storage requirements as applicable to Payment System Operators under the PSSA including the requirement to mandatorily localise all payment data on a server in India under the conditions stipulated in the RBI Notification on Storage of Payment System Data issued on 6 April 2018.
+
+Baseline Technology: Given that Payment Aggregators rely heavily on technology for providing services and may handle large volumes of data, the RBI has specified several technological requirements to be met by such entities. These include reporting requirements such as submitting internal and external audit reports, cybersecurity reports and reporting of security incidents and conducting internal and external audits. Payment Aggregators also need to adopt and maintain prescribed data security and encryption standards.
+
+Merchant Onboarding: Payment Aggregators have increased responsibilities concerning the merchants they contract with. In this regard, Payment Aggregators will need to undertake background checks to ensure that merchants are not selling fake or counterfeit products, and ensure that merchant websites indicate the terms and conditions of the service and time-line for processing returns and refunds. They are also responsible for ensuring that merchants adopt the prescribed security standards and that merchants do not save customer debit/credit card number and related data. While it is likely that these requirements will have to be stipulated in the contracts entered into between Payment Aggregators and merchants, the extent of their responsibility and the standard of due diligence in this regard remains unclear.
+
+Regulation of Payment Gateways: Payment Gateways are to be considered as ‘technology providers’ or ‘outsourcing partners’ of banks or other entities, as the case may be, and may voluntarily undertake the baseline technology recommendations under the Guidelines. The Guidelines also stipulate that in case of bank Payment Gateways, all applicable guidelines for outsourcing issued by Reserve Bank of India must be complied with by banks. Banks may therefore contractually pass on any relevant compliances to Payment Gateways to adhere to these requirements.
+
+Other miscellaneous requirements: Payment Aggregators are now not permitted to place limits on transaction amounts, and this responsibility remains with the banks. Payment Aggregators must not implement the ATM PIN as a two-factor option for the authentication of card-not-present transactions. All refunds made by the Payment Aggregator must be to the original payment method unless specifically agreed by the customer.
+
+DOWNLOAD PDF TO READ MORE
+SEARCH MORE TOPICS
+LATEST ARTICLES
+
+Mumbai’s Occupation Certificate Amnesty Scheme: Grant and its implications
+
+18 Sep 2026
+
+ITAT holds buyback of vested but unexercised ESOPs taxable as capital gains, not perquisite
+
+09 Sep 2026
+
+Maharashtra reforms framework for commercial leasing of government land
+
+04 Sep 2026
+RELATED TOPICS
+
+The Emerging Regulation of Tokenisation
+
+26 May 2026
+
+AI and the DPDP Act
+
+07 May 2026
+
+Technology and Data Protection Quarterly Milestones (October-December 2025) 
+
+13 Feb 2026
+TRENDING ARTICLES
+UPDATE
+18 Sep 2026
+Mumbai’s Occupation Certificate Amnesty Scheme: Grant and its implications
+ANALYSIS
+09 Sep 2026
+ITAT holds buyback of vested but unexercised ESOPs taxable as capital gains, not perquisite
+UPDATE
+04 Sep 2026
+Maharashtra reforms framework for commercial leasing of government land
+UPDATE
+03 Sep 2026
+IRDAI intermediary reforms: From periodic renewals to continuous supervision
+UPDATE
+02 Sep 2026
+PULSEIMPULSE | Inaugural Issue
+
+Quarterly Review: India’s Healthcare & Lifesciences Sector (Apr-Jul 2026)
+UPDATE
+02 Sep 2026
+Financial Regulatory Quarterly Milestones (April-June 2026)
+UPDATE
+01 Sep 2026
+Real Estate Quarterly Milestones (April-June 2026)
+UPDATE
+31 Aug 2026
+Indirect Tax Quarterly Milestones (April-June 2026)
+UPDATE
+25 Aug 2026
+Asset Management and Funds Quarterly Milestones (April-June 2026)
+UPDATE
+19 Aug 2026
+Direct Tax Quarterly Milestones (April-June 2026)
+UPDATE
+18 Aug 2026
+Labour and Employment Quarterly Milestones (April-June 2026)
+ANALYSIS
+14 Aug 2026
+Retrospective demands versus sanctity of contracts: The legal battle over CIDCO’s transfer charges
+SUBSCRIBE TO OUR KNOWLEDGE REPOSITORY
+
+If you would like to receive content directly in your inbox from our knowledge repository, please complete this subscription form. This service is reserved for clients and eligible contacts.
+
+First Name: *
+
+
+Last Name: *
+
+
+Organisation: *
+
+
+Role: *
+
+
+Official Email ID: *
+
+
+Your Contact at Trilegal:
+
+
+Location *
+
+Select Country
+Afghanistan
+Aland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua And Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas The
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Congo The Democratic Republic Of The
+Cook Islands
+Costa Rica
+Cote D'Ivoire (Ivory Coast)
+Croatia (Hrvatska)
+Cuba
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands
+Faroe Islands
+Fiji Islands
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+Gabon
+Gambia The
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey and Alderney
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard and McDonald Islands
+Honduras
+Hong Kong S.A.R.
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Korea North
+Korea South
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau S.A.R.
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Man (Isle of)
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands Antilles
+Netherlands The
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestinian Territory Occupied
+Panama
+Papua new Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Island
+Poland
+Portugal
+Puerto Rico
+Qatar
+Reunion
+Romania
+Russia
+Rwanda
+Saint Helena
+Saint Kitts And Nevis
+Saint Lucia
+Saint Pierre and Miquelon
+Saint Vincent And The Grenadines
+Saint-Barthelemy
+Saint-Martin (French part)
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard And Jan Mayen Islands
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad And Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks And Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City State (Holy See)
+Venezuela
+Vietnam
+Virgin Islands (British)
+Virgin Islands (US)
+Wallis And Futuna Islands
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+
+QUICK LINKS
+Careers
+Culture
+Knowledge Repository
+News and Insights
+Contact Us
+Alumni
+Privacy Policy
+Terms of Use
+ UPDATES
+SUBSCRIBE TO RECEIVE NEWS ON TRILEGAL
+ 
+
+© 2026 Trilegal. All Rights Reserved.

@@ -1,0 +1,18 @@
+{
+ "n": 75,
+ "url": "https://tax.gov.ye/%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D8%B5%D9%84%D8%AD%D9%80%D9%80%D9%80%D9%80%D8%A9-%D8%A7%D9%84%D8%B6%D8%B1%D8%A7%D8%A6%D8%A8-%D9%84%D9%84%D8%A5%D8%AE%D9%88%D8%A9-%D9%85%D9%83%D9%84%D9%81%D9%8A/",
+ "dir": "items/075-tax.gov.ye",
+ "fetched_at": "2026-10-10T06:14:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://tax.gov.ye/%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D8%B5%D9%84%D8%AD%D9%80%D9%80%D9%80%D9%80%D8%A9-%D8%A7%D9%84%D8%B6%D8%B1%D8%A7%D8%A6%D8%A8-%D9%84%D9%84%D8%A5%D8%AE%D9%88%D8%A9-%D9%85%D9%83%D9%84%D9%81%D9%8A/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 38078,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A075"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5b7d73595eaa84b33a9b504d47f6fa3046e645793ce13400c2a640d63ecd0e9c",
+ "raw_ext": "html"
+}

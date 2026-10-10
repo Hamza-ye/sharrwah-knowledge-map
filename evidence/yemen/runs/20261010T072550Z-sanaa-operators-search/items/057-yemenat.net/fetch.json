@@ -1,0 +1,18 @@
+{
+ "n": 57,
+ "url": "https://yemenat.net/archives/418987",
+ "dir": "items/057-yemenat.net",
+ "fetched_at": "2026-10-10T07:25:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemenat.net/archives/418987",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25622,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B057"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9dbec120dfc4269276ef870dd5dd4f6b0bbdbd34f98d5862dbbf33fdb8d2707c",
+ "raw_ext": "html"
+}

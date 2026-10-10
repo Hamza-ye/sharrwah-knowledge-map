@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 10 Oct 2026 07:25:56 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Link: <https://yemen-wallet.ye/wp-json/>; rel="https://api.w.org/", <https://yemen-wallet.ye/wp-json/wp/v2/pages/779>; rel="alternate"; title="JSON"; type="application/json", <https://yemen-wallet.ye/?p=779>; rel=shortlink
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: no-referrer-when-downgrade
+Permissions-Policy: geolocation=(), microphone=(), camera=()
+Vary: Accept-Encoding,User-Agent
+Accept-Ranges: bytes
+

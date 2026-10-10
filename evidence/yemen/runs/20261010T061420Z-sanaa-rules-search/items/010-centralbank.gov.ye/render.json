@@ -1,0 +1,7 @@
+{
+ "n": 10,
+ "url": "https://centralbank.gov.ye/Home/ExchangeRateReport",
+ "rendered_at": "2026-10-10T06:16:03Z",
+ "browser": "Chromium 141.0.7390.37",
+ "error": "page.goto: net::ERR_CONNECTION_RESET at https://centralbank.gov.ye/Home/ExchangeRateReport"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 88,
+ "url": "https://procorners.com/noon-yemen/",
+ "dir": "items/088-procorners.com",
+ "fetched_at": "2026-10-10T07:26:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://procorners.com/noon-yemen/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 59613,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B088"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "838c1b6ab66f6baa815cf472c3375201dc8ecc0e060808e0be3fdc81c9f4589f",
+ "raw_ext": "html"
+}

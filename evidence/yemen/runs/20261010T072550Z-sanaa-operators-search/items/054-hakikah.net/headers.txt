@@ -1,0 +1,16 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 07:26:00 GMT
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding
+cache-provider: CLOUDWAYS-CACHE-DE
+last-modified: Fri, 09 Oct 2026 16:38:49 GMT
+cache-control: max-age=0, s-maxage=2592000
+expires: Sat, 10 Oct 2026 05:13:09 GMT
+vary: Accept-Encoding
+age: 7970
+x-cache: HIT
+content-encoding: gzip
+

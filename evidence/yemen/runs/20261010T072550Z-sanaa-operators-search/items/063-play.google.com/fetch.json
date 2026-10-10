@@ -1,0 +1,18 @@
+{
+ "n": 63,
+ "url": "https://play.google.com/store/apps/details?id=wallet.mfloos.com.mflooswallet&hl=ar",
+ "dir": "items/063-play.google.com",
+ "fetched_at": "2026-10-10T07:26:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=wallet.mfloos.com.mflooswallet&hl=ar",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 195802,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B063"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4e989ef5c09c31c30a6c585e3c4526ea0776677d2dec97812e521bfc9d4eaca4",
+ "raw_ext": "html"
+}

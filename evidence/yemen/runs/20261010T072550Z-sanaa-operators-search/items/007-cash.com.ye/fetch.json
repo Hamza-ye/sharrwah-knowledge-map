@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://www.cash.com.ye/ar/ميزات-الشركات-والتجار",
+ "dir": "items/007-cash.com.ye",
+ "fetched_at": "2026-10-10T07:25:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.cash.com.ye/ar/ميزات-الشركات-والتجار",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 12748,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B007"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "91d4df8c14fcb4589aa98beccf7b83c7293101bfbd37c901c57b2904987f341b",
+ "raw_ext": "html"
+}

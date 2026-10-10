@@ -1,0 +1,18 @@
+{
+ "n": 35,
+ "url": "https://www.saba.ye/ar/news3445820.htm",
+ "dir": "items/035-saba.ye",
+ "fetched_at": "2026-10-10T06:14:36Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.saba.ye/ar/news3445820.htm",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3191,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A035"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "77b24421e65517ea4aa62e3dff7941d0ebb8caa33b35f19b7c7d950d3c18b15d",
+ "raw_ext": "html"
+}

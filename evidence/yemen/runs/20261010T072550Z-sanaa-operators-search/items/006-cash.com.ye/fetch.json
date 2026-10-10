@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://www.cash.com.ye/ar/خدمة-الدفـــع-الالكتروني-كاش-باي-cash-pay",
+ "dir": "items/006-cash.com.ye",
+ "fetched_at": "2026-10-10T07:25:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.cash.com.ye/ar/خدمة-الدفـــع-الالكتروني-كاش-باي-cash-pay",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 13299,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B006"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4b4e5c9d6d47db0085e9ce9d8adb75e5c907f8d8f1e678efb2bf5a3c14e25e7c",
+ "raw_ext": "html"
+}

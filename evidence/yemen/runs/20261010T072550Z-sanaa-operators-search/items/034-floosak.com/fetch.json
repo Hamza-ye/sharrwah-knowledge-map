@@ -1,0 +1,18 @@
+{
+ "n": 34,
+ "url": "https://floosak.com/",
+ "dir": "items/034-floosak.com",
+ "fetched_at": "2026-10-10T07:25:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 522,
+ "final_url": "https://floosak.com/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 7220,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B034"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4ec691913746ce90c025775fc52b6feeb818ff9a96de8d46c1b0819ed5949b94",
+ "raw_ext": "html"
+}

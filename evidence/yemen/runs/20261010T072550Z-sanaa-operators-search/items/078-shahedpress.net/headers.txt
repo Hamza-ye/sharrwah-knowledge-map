@@ -1,0 +1,25 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 07:26:05 GMT
+content-type: text/html; charset=UTF-8
+x-powered-by: PHP/8.2.34
+x-pingback: https://shahedpress.net/xmlrpc.php
+x-frame-options: SAMEORIGIN
+content-security-policy: upgrade-insecure-requests
+set-cookie: z9mioh6u=oqtykkn3d6tj; expires=Thu, 15 Oct 2026 07:26:04 GMT; Max-Age=432000; path=/; secure; HttpOnly
+set-cookie: p27ruk1f=23j0j83mymdc; expires=Thu, 15 Oct 2026 07:26:04 GMT; Max-Age=432000; path=/; secure; HttpOnly
+set-cookie: nv8e0f6a=mado00msl7j9; expires=Thu, 15 Oct 2026 07:26:04 GMT; Max-Age=432000; path=/; secure; HttpOnly
+link: <https://shahedpress.net/index.php?rest_route=/>; rel="https://api.w.org/"
+link: <https://shahedpress.net/index.php?rest_route=/wp/v2/posts/2420>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://shahedpress.net/?p=2420>; rel=shortlink
+content-encoding: br
+platform: hostinger
+panel: hpanel
+vary: Accept-Encoding
+server: hcdn
+alt-svc: h3=":443"; ma=86400
+x-hcdn-request-id: ae5da86c25b2480a25895926047ede13-imm-edge5
+x-hcdn-cache-status: DYNAMIC
+x-hcdn-upstream-rt: 0.287
+

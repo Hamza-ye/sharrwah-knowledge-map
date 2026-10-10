@@ -1,0 +1,18 @@
+{
+ "n": 65,
+ "url": "https://x.com/Kuraimibank/status/1965297255201849357",
+ "dir": "items/065-x.com",
+ "fetched_at": "2026-10-10T07:26:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://x.com/Kuraimibank/status/1965297255201849357",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 22654,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B065"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "094b7b2efe989feb70b501c9160c3dd1ddd77e17f67eca27f79fc85a4c823273",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "url": "http://centralbank.gov.ye/ar/CBY.aspx?cattype=1&keyid=80&lang=2&pid=74",
+ "dir": "items/008-centralbank.gov.ye",
+ "fetched_at": "2026-10-10T06:14:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 503,
+ "final_url": "http://centralbank.gov.ye/ar/CBY.aspx?cattype=1&keyid=80&lang=2&pid=74",
+ "content_type": "text/plain",
+ "bytes": 114,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A008"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "bf979f8e946d90de52c7c561b82ea1e5ae0f3fcf9b0fdb9a4370bca5b77d49de",
+ "raw_ext": "txt"
+}

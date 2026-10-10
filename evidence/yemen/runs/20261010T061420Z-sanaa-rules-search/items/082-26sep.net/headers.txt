@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 06:14:48 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+referrer-policy: strict-origin-when-cross-origin
+cross-origin-opener-policy: same-origin
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+vary: Accept-Encoding,User-Agent
+x-content-encoded-by: Joomla
+expires: Wed, 17 Aug 2005 00:00:00 GMT
+cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+pragma: no-cache
+set-cookie: 30f807fc03bda0373bab862cb4814c6e=38a0289b51fc1462f5459ffa12024567; path=/; secure; HttpOnly
+last-modified: Sat, 10 Oct 2026 06:14:48 GMT
+cf-cache-status: DYNAMIC
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=wOxKSeKmIj0OX9S9P2XlDjFYMLQ8ZjBhWf5r1aqJVBdyzLjkRxHH5stW9OZuCuVUwWg81fPfuLNMiwysU84V2U7y9T0IIPK0E8f9iQLaEc5wAAMlr6IAEtXZ6yo%3D"}]}
+content-encoding: zstd
+cf-ray: a4837ca599959a65-IAD
+alt-svc: h3=":443"; ma=86400
+

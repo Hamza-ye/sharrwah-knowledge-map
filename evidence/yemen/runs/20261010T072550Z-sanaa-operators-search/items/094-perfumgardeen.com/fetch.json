@@ -1,0 +1,18 @@
+{
+ "n": 94,
+ "url": "https://perfumgardeen.com/return-and-refund-policy/",
+ "dir": "items/094-perfumgardeen.com",
+ "fetched_at": "2026-10-10T07:26:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://perfumgardeen.com/return-and-refund-policy/?v=00c66f1a036b",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 86722,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B094"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "14386f59427c2a02766c40ff32a710c8ddd86cde20a5a189db1c20cb4deff0df",
+ "raw_ext": "html"
+}

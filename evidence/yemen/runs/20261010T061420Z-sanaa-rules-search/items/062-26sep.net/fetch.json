@@ -1,0 +1,18 @@
+{
+ "n": 62,
+ "url": "https://26sep.net/index.php/local/110168",
+ "dir": "items/062-26sep.net",
+ "fetched_at": "2026-10-10T06:14:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://26sep.net/index.php/local/110168",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 64765,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-rules-search.tsv:A062"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "02cd743336348413a9e7c44abbd982b0d00bbfe1d7be24219b4d1ad114d4fcc6",
+ "raw_ext": "html"
+}

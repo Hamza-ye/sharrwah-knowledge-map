@@ -1,0 +1,18 @@
+{
+ "n": 25,
+ "url": "https://yemen-wallet.ye/about-us/",
+ "dir": "items/025-yemen-wallet.ye",
+ "fetched_at": "2026-10-10T07:25:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemen-wallet.ye/about-us/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 147556,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B025"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e0b9e0bbf204968e564b3f497d4e9a32387c1c96150f438d2f25a66293c5c0af",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 83,
+ "url": "https://www.post.ye/web/index.php/postal-services/personal/postal-parcel-service",
+ "dir": "items/083-post.ye",
+ "fetched_at": "2026-10-10T07:26:03Z",
+ "curl_exit": 60,
+ "curl_error": "curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B083"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

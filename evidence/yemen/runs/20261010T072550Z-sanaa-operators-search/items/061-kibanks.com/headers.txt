@@ -1,0 +1,14 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+x-powered-by: PHP/8.0.30
+cache-control: no-cache, private
+date: Sat, 10 Oct 2026 07:26:02 GMT
+set-cookie: XSRF-TOKEN=eyJpdiI6IjA3STRzbXJYTW5zSGVWY1NRWVNPbHc9PSIsInZhbHVlIjoiWTNsVER5d0R3ckJFYUNrU0JYWTV2ZkkzT1lqNzFrbnFnTTRuUlJ0N1cxeW4vT0s4c29GcXA1eERzR1NGMlZEQ0lraEY1OU80UDd1YmxwNXEzQy9MK3lmYVB4TTFLMi9TSWRqM3lFZXplQ1diMGNwbzNwVW1rQnNFc1RPWkxYT2QiLCJtYWMiOiIwZWU3MDRmNzU0YTQ3NTBkMjhlNTNjMjZkM2I2NTQ0YzhmMDMyYTgwZTM2NDY4MGQ2YjIwMzRjNDY5NzY4YTM1IiwidGFnIjoiIn0%3D; expires=Sat, 10-Oct-2026 09:26:02 GMT; Max-Age=7200; path=/; samesite=lax
+set-cookie: laravel_session=eyJpdiI6IkEvbmhBbWU1Skozb1M0elZ1eUN4YXc9PSIsInZhbHVlIjoiVTBIMEVNUDE3U0QxSkN3UnJPd1E2LzdzT1d4N0ovbnhMVkpXVHN3SEJKK016a01jZjVnUjFwWEJBUGJYazhacndRR2hxZ3FBOVFkRWU5WXV0QmNmd29lWjByRFNmanpUdW5JY2tUeWVYTVpySis4SHFwU2Z0RjIyMkFOUE0vMzYiLCJtYWMiOiIxNWQ1ZjYwN2JkZTk4ZjM5NDk0ZTAyYzIwMjYzZjI1MjY3ZmU5ZWNhYzJhOTQ1NDQ1ZDJkOTc2MGZiMTkwM2UwIiwidGFnIjoiIn0%3D; expires=Sat, 10-Oct-2026 09:26:02 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+vary: Accept-Encoding
+content-encoding: gzip
+content-length: 2480
+content-type: text/html; charset=UTF-8
+server: Apache
+
