@@ -37,7 +37,7 @@ Directions: **core → payments** means core asks payments; **payments → core*
 
 **Reserved, not built.**
 - **Stored permissions to charge later** (mandates, Shopify S086, S090, S120, S128, S129). Neither card networks nor wallets in Yemen support them today.
-- **The settlement contract:** holding, netting, payouts and balance debits (Salla L028–L039; Shopify's own processor side). Sharrwah needs it only if it ever holds money, or when a licensed partner settles per order (stage 2).
+- **The settlement contract:** holding, netting, payouts and balance debits (Salla L028–L039; Shopify's own processor side). It is needed only when a payment setup's position involves holding or settling funds. That happens with a licensed partner settling per order (stage 2), or with Sharrwah's own reserved holder position, which needs a licence.
 
 ## What stays inside payments
 

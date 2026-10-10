@@ -69,5 +69,5 @@ Two agents sort the rows without seeing each other's work, then the results are 
 
 ## 4. Before going live in Sana'a (payments side)
 
-- A Sana'a lawyer or accountant on what a platform that holds no money needs there (PAY-58).
+- A Sana'a lawyer or accountant on what Sana'a requires of a platform in the launch positions, record-only and integrator (PAY-58).
 - Dated screenshots of the payment flows the launch relies on.

@@ -28,7 +28,7 @@ Each Context outcome is one of two kinds:
 - **researched:** looked up once, such as a law text.
 - **monitored:** it changes on its own, such as rates, ban lists, partner status, the zone map or calendars. It needs a built feed and an owner, and every record stamps the value it used.
 
-**Company constraints are not outcome types.** A question that binds the whole company leaves at step 0 (section 4) and goes to the founder. Examples are the legal entity, whether Sharrwah will ever hold buyer money, and the revenue model.
+**Company constraints are not outcome types.** A question that binds the whole company and is not a variation point leaves at step 0 (section 4) and goes to the founder. The legal entity and its domicile is one. Anything that can vary by payment setup, zone, plan or time is not a company constraint. That includes which money roles Sharrwah takes, its prices, and when it seeks a licence. It is typed like any other outcome.
 
 **Buyer choices at checkout are not Chosen outcomes.** They are transaction data inside Built behaviour.
 
