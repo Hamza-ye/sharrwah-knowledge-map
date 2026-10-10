@@ -1,0 +1,20 @@
+{
+ "n": 28,
+ "url": "https://help.salla.sa/article/توافق-سياسة-الخصوصية-لمتجرك-مع-نظام-حماية-البيانات-الشخصي/g4ycbbfqagvghtjz6ap1t0lb",
+ "dir": "items/028-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/توافق-سياسة-الخصوصية-لمتجرك-مع-نظام-حماية-البيانات-الشخصي/g4ycbbfqagvghtjz6ap1t0lb",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 132262,
+ "cited_in": [
+  "SA-S-0168",
+  "SA-S-0169",
+  "SA-S-0170"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "25acc3ab67b6fa01cf577f2e216c7975ebdd7f8cbcf7774689f9306f3258f925",
+ "raw_ext": "html"
+}

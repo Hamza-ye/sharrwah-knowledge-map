@@ -1,0 +1,23 @@
+{
+ "n": 26,
+ "url": "https://help.salla.sa/article/تفعيل-وإدارة-الأسواق-المتعددة/wv9wyqrnhwpm6m2rp3cmg653",
+ "dir": "items/026-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/تفعيل-وإدارة-الأسواق-المتعددة/wv9wyqrnhwpm6m2rp3cmg653",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 141726,
+ "cited_in": [
+  "SA-S-0157",
+  "SA-S-0158",
+  "SA-S-0159",
+  "SA-S-0160",
+  "SA-S-0161",
+  "SA-S-0162"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "71305b7e263f3aca1bd227e09a268a0de5a59806ba056ad1210698e6a6b3ec86",
+ "raw_ext": "html"
+}

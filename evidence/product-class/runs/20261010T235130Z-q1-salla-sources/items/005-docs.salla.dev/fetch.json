@@ -1,0 +1,20 @@
+{
+ "n": 5,
+ "url": "https://docs.salla.dev/comm-apps/overview.md",
+ "dir": "items/005-docs.salla.dev",
+ "fetched_at": "2026-10-10T23:51:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/comm-apps/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2565,
+ "cited_in": [
+  "SA-S-0192",
+  "SA-S-0193",
+  "SA-S-0194"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5f0da6f688da1521ad3ed66f631052c39fa8b5b5ca785a48480930d40b3e2eef",
+ "raw_ext": "txt"
+}

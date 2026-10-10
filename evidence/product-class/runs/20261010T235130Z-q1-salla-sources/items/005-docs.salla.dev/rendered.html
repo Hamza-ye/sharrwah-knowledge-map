@@ -1,0 +1,130 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Overview
+
+# Overview
+
+A **Communication App** on Salla lets you take over message delivery for any merchant who installs your app. When Salla needs to send an SMS, Email, or WhatsApp message to a customer, it fires an event that calls your **App Function**. Your function receives the full message payload, calls your chosen provider (Twilio, SendGrid, 360dialog, Unifonic, or any other), and returns the result.
+
+Merchants benefit from using their own provider accounts, sender IDs, and templates. You control the routing and delivery logic entirely through code.
+
+## Prerequiste
+
+- Partners account
+- It is a must to have a good foundational background in [App Functions](https://docs.salla.dev/1726817m0)
+
+:::note[Already familiar with App Functions?]
+Jump directly to [Build Your App Function](./04-step-3-build-your-app-function.md) if you already have your app created and your provider set up.
+:::
+
+
+
+:::info[Good to know]
+
+If you are new to App Functions, read the [App Functions reference](https://docs.salla.dev/1726817m0) first. It covers execution types, the `Resp` utility class, runtime constraints, and how to use the Partner Portal editor. This guide assumes that foundation and focuses entirely on Communication Apps.
+:::
+
+
+
+## How it works
+
+When a store event occurs, an order status change, a new customer registration, an OTP request, Salla intercepts it and, instead of sending the message itself, fires an event to your App Function. Your function receives the full message payload, calls your provider, and returns the result. Salla never touches the delivery layer.
+
+The diagram below shows the full lifecycle of a single outgoing message.
+
+
+
+```mermaid
+sequenceDiagram
+    participant Store as 🛒 Store
+    participant Salla as 🖥 Salla Platform
+    participant App as &lt;&gt; Your App
+    participant Provider as ✈ Provider API
+
+    Store-&gt;&gt;Salla: 1. Event occurs (order, OTP, cart, review, account)
+    Salla-&gt;&gt;App: 2. Fire communication event (SMS, Email, or WhatsApp)
+    App-&gt;&gt;Provider: 3. Send message via provider (Twilio, SendGrid, etc.)
+
+    alt ✓ delivery successful
+        Provider--&gt;&gt;App: 4.1 Message delivered
+        App--&gt;&gt;Salla: 4.2 Return success response
+        Salla--&gt;&gt;Store: 4.3 Communication complete
+    else ✗ delivery failed
+        Provider--&gt;&gt;App: 5.1 Delivery error
+        App--&gt;&gt;Salla: 5.2 Return error response
+        Salla--&gt;&gt;Store: 5.3 Communication failed
+    end
+```
+
+
+## Supported channels
+
+Each channel maps to a **Supported Feature** you declare in the Partner Portal and a dedicated App Function event. The Supported Feature is what makes your app appear on the merchant side as the active handler for that message type — once selected, your app takes full ownership of all messages for that feature.
+
+| Supported Feature | Event name | What your app handles |
+|---|---|---|
+| Local SMS | `communication.sms.send` | SMS messages to KSA numbers (`+966...`) |
+| International SMS | `communication.sms.send` | SMS messages to numbers outside KSA |
+| Email | `communication.email.send` | All email messages |
+| WhatsApp | `communication.whatsapp.send` | All WhatsApp messages |
+
+:::note[Important]
+Local SMS and International SMS both arrive through the same `communication.sms.send` event. If you select both Supported Features, your app handles all SMS traffic regardless of destination. You can inspect `notifiable[0]` to apply provider-specific routing by number prefix if needed.
+:::
+
+## What Salla sends to your function
+
+Every communication event delivers the same payload shape inside `context.payload.data`. These fields are all you need to route and deliver a message through your provider.
+
+| Field | Type | Description |
+|---|---|---|
+| `notifiable` | `string[]` | One or more recipients (phone numbers or email addresses) |
+| `type` | `string` | Why this message is being sent (e.g. `auth.otp.verification`, `order.status.updated`) |
+| `content` | `string` | The ready-to-send message body |
+| `entity` | `object \| null` | Related store entity (order, shipment, product, etc.) or `null` |
+| `meta` | `object` | Additional context (e.g. `customer_id`, OTP `code`) |
+
+
+
+&lt;TipGood&gt;A full list of `type` values is in the [Event &amp; Payload Reference](https://docs.salla.dev/doc-2006119).&lt;/TipGood&gt;
+
+
+
+
+## What you control
+
+Salla owns the trigger. You own the delivery. Here's the full boundary:
+
+| Concern | Owned by |
+|---|---|
+| Deciding when to send a message | Salla |
+| Which message types your app handles | Supported Features (configured in the Partner Portal) |
+| Routing to your provider | Your App Function |
+| Provider credentials | Your App Settings |
+| Template content and sender IDs | Your provider account |
+| Observing message outcomes | Your App Function (logging and responses) |
+
+---
+
+## What this guide covers
+
+
+&lt;CardGroup cols={2}&gt;
+  &lt;Card title="Create Your App &amp; Configure Channels" icon="material-two-tone-add_business" href="./02-step-1-create-app.md"&gt;
+    Create the app in the Partner Portal and declare which channels you handle.
+  &lt;/Card&gt;
+  &lt;Card title="Set Up Your Provider" icon="material-two-tone-settings" href="./03-step-2-setup-provider.md"&gt;
+    Configure Twilio (or any provider) and prepare your credentials.
+  &lt;/Card&gt;
+  &lt;Card title="Build Your App Function" icon="material-two-tone-code" href="./04-step-3-build-your-app-function.md"&gt;
+    Understand the payload, write your handler, and configure App Settings.
+  &lt;/Card&gt;
+  &lt;Card title="Test &amp; Go Live" icon="material-two-tone-rocket_launch" href="./05-step-4-test-and-go-live.md"&gt;
+    Test end-to-end from the dashboard, preview panel, and publish.
+  &lt;/Card&gt;
+  &lt;Card title="Events &amp; Payload Reference" icon="material-two-tone-data_object" href="https://salla.dev"&gt;
+    Full payload interface, event type list, entity reference, and error code table.
+  &lt;/Card&gt;
+  &lt;Card title="Examples" icon="material-two-tone-integration_instructions" href="https://salla.dev"&gt;
+    Ready-to-use handler code for SMS, Email, and WhatsApp — including OTP handling, multi-channel routing, and a SendGrid and Meta implementation.
+  &lt;/Card&gt;
+&lt;/CardGroup&gt;
+</pre></body></html>

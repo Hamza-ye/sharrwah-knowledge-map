@@ -1,0 +1,20 @@
+{
+ "n": 42,
+ "url": "https://status.salla.sa/",
+ "dir": "items/042-status.salla.sa",
+ "fetched_at": "2026-10-10T23:51:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://status.salla.com/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 24867,
+ "cited_in": [
+  "SA-S-0047",
+  "SA-S-0048",
+  "SA-S-0211"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "dd6e33334584d1d9ec43520e69b354410637b647a1aee2d93fb31c496ba57f18",
+ "raw_ext": "html"
+}

@@ -25,7 +25,7 @@ const version = browser.version();
 async function one(it) {
   const dir = path.join(run, it.dir);
   const rec = { n: it.n, url: it.url, rendered_at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), browser: `Chromium ${version}` };
-  const ctx = await browser.newContext({ userAgent: UA, extraHTTPHeaders: { 'Accept-Language': 'ar,en;q=0.8' }, viewport: { width: 1366, height: 900 } });
+  const ctx = await browser.newContext({ userAgent: UA, extraHTTPHeaders: { 'Accept-Language': process.env.CAPTURE_LANG || 'ar,en;q=0.8' }, viewport: { width: 1366, height: 900 } });
   const page = await ctx.newPage();
   try {
     const resp = await page.goto(it.url, { waitUntil: 'domcontentloaded', timeout: 45000 });

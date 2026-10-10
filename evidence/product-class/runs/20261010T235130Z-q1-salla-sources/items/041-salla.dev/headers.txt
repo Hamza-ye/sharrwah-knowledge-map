@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 23:51:52 GMT
+content-type: text/html; charset=UTF-8
+set-cookie: __cf_bm=Vxm15zb6j0MXwGzPC6JF.bsIQJH1XLIyjL6SmVDYKSU-1791676312.7295475-1.0.1.1-hmskCkS4WowJtj1BGh7OLhuTqsSk7ozelrEP2OuDlrTVJMx14Jx4BAFOkAj3d.T.aRkW0Xw6jsQNF22FbjWKsIBPE1i48b73JL.UfiHe2L6MAGX5VJPal2VHKKpRSOFf; HttpOnly; SameSite=None; Secure; Path=/; Domain=salla.dev; Expires=Sun, 11 Oct 2026 00:21:52 GMT
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+vary: Accept-Encoding
+server: cloudflare
+platform: hostinger
+panel: hpanel
+content-security-policy: upgrade-insecure-requests
+x-turbo-charged-by: LiteSpeed
+link: <https://salla.dev/wp-json/>; rel="https://api.w.org/"
+link: <https://salla.dev/wp-json/wp/v2/tutorial/37480>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://salla.dev/?p=37480>; rel=shortlink
+x-content-type-options: nosniff
+cf-cache-status: DYNAMIC
+content-encoding: br
+cf-ray: a489891a88e54967-IAD
+alt-svc: h3=":443"; ma=86400
+

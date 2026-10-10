@@ -1,0 +1,28 @@
+{
+ "n": 24,
+ "url": "https://help.salla.sa/article/تفعيل-طرق-الدفع-في-المتجر-الإمارات/z2mys3spo71u3yovhs7lhii4",
+ "dir": "items/024-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/تفعيل-طرق-الدفع-في-المتجر-الإمارات/z2mys3spo71u3yovhs7lhii4",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 137087,
+ "cited_in": [
+  "SA-S-0053",
+  "SA-S-0054",
+  "SA-S-0055",
+  "SA-S-0056",
+  "SA-S-0057",
+  "SA-S-0058",
+  "SA-S-0059",
+  "SA-S-0060",
+  "SA-S-0061",
+  "SA-S-0062",
+  "SA-S-0199"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e18375d365abcbf5f72b77a73225d473885a98415fba737ead09127b77aa4799",
+ "raw_ext": "html"
+}

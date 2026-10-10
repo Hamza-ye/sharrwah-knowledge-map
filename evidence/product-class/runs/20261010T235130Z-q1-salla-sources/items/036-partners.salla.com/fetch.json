@@ -1,0 +1,30 @@
+{
+ "n": 36,
+ "url": "https://partners.salla.com/legal/apps-policy",
+ "dir": "items/036-partners.salla.com",
+ "fetched_at": "2026-10-10T23:51:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://partners.salla.com/legal/apps-policy",
+ "content_type": "text/html",
+ "bytes": 39333,
+ "cited_in": [
+  "SA-S-0015",
+  "SA-S-0021",
+  "SA-S-0022",
+  "SA-S-0023",
+  "SA-S-0024",
+  "SA-S-0025",
+  "SA-S-0026",
+  "SA-S-0027",
+  "SA-S-0028",
+  "SA-S-0029",
+  "SA-S-0030",
+  "SA-S-0031",
+  "SA-S-0215"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "753c1ac712c08d74bb848d1022ea48624cda210eae12307e1e562bcbb6e4d40a",
+ "raw_ext": "html"
+}

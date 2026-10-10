@@ -29,7 +29,7 @@ def fetch(it):
     body, hdr = os.path.join(d, "raw.body"), os.path.join(d, "headers.txt")
     started = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     p = subprocess.run(["curl", "-sS", "-L", "--max-redirs", "8", "--max-time", "150", "-A", UA,
-                        "-H", "Accept-Language: ar,en;q=0.8", "--compressed",
+                        "-H", "Accept-Language: " + os.environ.get("CAPTURE_LANG", "ar,en;q=0.8"), "--compressed",
                         "-D", hdr, "-o", body,
                         "-w", '{"code":%{http_code},"final":"%{url_effective}","ctype":"%{content_type}","bytes":%{size_download}}',
                         it["url"]], capture_output=True, text=True)

@@ -259,7 +259,10 @@ for plat, pfx in PLATFORMS.items():
             elif r["concern_id"] not in inv_to_con.get(i, set()):
                 issues.append(("warning", "concerns", r["concern_id"], f"lists '{i}', but that entry doesn't list this concern"))
         if not split_ids(r["inv_ids"]):
-            issues.append(("error", "concerns", r["concern_id"], "no inventory entries"))
+            if r["split_note"].startswith("Not in the platform's lists:"):
+                issues.append(("review", "concerns", r["concern_id"], "not in the platform's lists; " + r["split_note"][28:].strip()[:160]))
+            else:
+                issues.append(("error", "concerns", r["concern_id"], "no inventory entries, and split_note doesn't start with \"Not in the platform's lists:\""))
 
     per = defaultdict(list)
     for r in pla:

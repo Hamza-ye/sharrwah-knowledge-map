@@ -1,0 +1,21 @@
+{
+ "n": 35,
+ "url": "https://help.salla.sa/article/نظام-موحد-للضرائب-والرسوم-الجمركية-لكل-سوق/x08tsh93ur45m0t5xl770wjx",
+ "dir": "items/035-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/نظام-موحد-للضرائب-والرسوم-الجمركية-لكل-سوق/x08tsh93ur45m0t5xl770wjx",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 135829,
+ "cited_in": [
+  "SA-S-0144",
+  "SA-S-0145",
+  "SA-S-0146",
+  "SA-S-0147"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5db1ad4581d0dbaf70efbe812b226b257f2307332aa7787697621ec8d8a35f03",
+ "raw_ext": "html"
+}

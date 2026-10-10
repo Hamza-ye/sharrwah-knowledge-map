@@ -1,0 +1,22 @@
+{
+ "n": 14,
+ "url": "https://help.salla.sa/article/-إعداد-الحساب-البنكي/bhrrwm3oexjhzqjibwnic7dg",
+ "dir": "items/014-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/-إعداد-الحساب-البنكي/bhrrwm3oexjhzqjibwnic7dg",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 135640,
+ "cited_in": [
+  "SA-S-0094",
+  "SA-S-0095",
+  "SA-S-0096",
+  "SA-S-0097",
+  "SA-S-0098"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cfff3d685d7e28a80deced557da57a258d9910f5c305654afee5bcc73afa38f2",
+ "raw_ext": "html"
+}

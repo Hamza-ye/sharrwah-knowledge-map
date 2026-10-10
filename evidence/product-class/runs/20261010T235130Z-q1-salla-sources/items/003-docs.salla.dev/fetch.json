@@ -1,0 +1,20 @@
+{
+ "n": 3,
+ "url": "https://docs.salla.dev/app-functions/welcome.md",
+ "dir": "items/003-docs.salla.dev",
+ "fetched_at": "2026-10-10T23:51:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/app-functions/welcome.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3533,
+ "cited_in": [
+  "SA-S-0187",
+  "SA-S-0188",
+  "SA-S-0189"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1d4c723b435d9683309294732a9efec43153c83e6bb9e1158877ccac09c4d518",
+ "raw_ext": "txt"
+}

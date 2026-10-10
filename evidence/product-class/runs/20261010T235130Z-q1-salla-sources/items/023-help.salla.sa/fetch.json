@@ -1,0 +1,21 @@
+{
+ "n": 23,
+ "url": "https://help.salla.sa/article/تفعيل-المدفوعات-الإلكترونية/ppros5gh7uqhilhqddqnjgbd",
+ "dir": "items/023-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/تفعيل-المدفوعات-الإلكترونية/ppros5gh7uqhilhqddqnjgbd",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 133181,
+ "cited_in": [
+  "SA-S-0049",
+  "SA-S-0050",
+  "SA-S-0051",
+  "SA-S-0052"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d230c2f7c112fbcc0ef67550bce74dc463c798438e78874afde94e3d26d12479",
+ "raw_ext": "html"
+}

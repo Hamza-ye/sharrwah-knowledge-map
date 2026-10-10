@@ -1,0 +1,19 @@
+{
+ "n": 41,
+ "url": "https://salla.dev/tutorial/salla-partners-billing-system/",
+ "dir": "items/041-salla.dev",
+ "fetched_at": "2026-10-10T23:51:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://salla.dev/tutorial/salla-partners-billing-system/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 2820,
+ "cited_in": [
+  "SA-S-0045",
+  "SA-S-0046"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8b105506d33b209850029a5ec058c0e63c9b4c4d23033c9ca62e42fc5df966f8",
+ "raw_ext": "html"
+}

@@ -1,0 +1,25 @@
+{
+ "n": 27,
+ "url": "https://help.salla.sa/article/تفعيل-وإدارة-الدفع-عند-الاستلام-مع-بوليصات-سلة/koda8pykc6pdhylg7zb2iu0g",
+ "dir": "items/027-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/تفعيل-وإدارة-الدفع-عند-الاستلام-مع-بوليصات-سلة/koda8pykc6pdhylg7zb2iu0g",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 137668,
+ "cited_in": [
+  "SA-S-0120",
+  "SA-S-0121",
+  "SA-S-0122",
+  "SA-S-0123",
+  "SA-S-0124",
+  "SA-S-0125",
+  "SA-S-0126",
+  "SA-S-0127"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "153ad661efbcc02e789fed53d959881ad9164cc13e32d92ad0200e62233b3258",
+ "raw_ext": "html"
+}

@@ -1,0 +1,66 @@
+# Getting Started
+
+App Functions give shipping companies a faster and simpler way to join the Salla AWB flow. Developers can write their logic directly inside Salla Partners without building or maintaining a backend. This reduces development time, removes infrastructure work, and makes it easier to connect shipment creation, AWB generation, and tracking with Salla Stores.
+
+By running your logic inside Salla, you gain direct access to Salla APIs, automatic execution on key events, and a native presence in the merchant’s AWB creation screen. This creates a smooth, predictable, and fully integrated experience for both the shipping provider and the merchant.
+
+
+
+## Benefits of Integrating With Salla Using App Functions
+
+
+<CardGroup cols={2}>
+<Card title="Faster Integration" icon="material-two-tone-bolt">
+    Shipping providers can connect to Salla without building or maintaining a backend system. All logic runs directly inside Salla Partners, which shortens development time and removes the need for external services.
+  </Card>
+
+  <Card title="Lower Development Overhead" icon="material-two-tone-settings">
+    There is no need for servers, deployments, infrastructure monitoring, or scaling. App Functions are fully managed by Salla, which reduces operational cost and complexity.
+  </Card>
+
+  <Card title="Direct Access to Salla APIs" icon="material-two-tone-link">
+    Developers can call the Salla Shipping API from inside the function environment, making it easier to work with orders, shipments, and merchant data in one place.
+  </Card>
+
+  <Card title="Automatic Execution on Key Events" icon="material-two-tone-autorenew">
+    Functions run automatically when specific store events occur, such as when a merchant creates, cancells, or returns an AWB. This removes the need for polling or custom triggers outside Salla.
+  </Card>
+
+</CardGroup>
+
+  <Card title="Native Presence Inside the AWB Flow" icon="material-two-tone-dashboard">
+    Your shipping service appears directly in the Salla AWB creation screen. Merchants can choose your company and process shipments without leaving the Salla dashboard.
+  </Card>
+
+
+## Salla AWB
+
+This guide brings together everything needed to set up an AWB Shipping App with Salla. It explains how the app is created, how it is configured, and how it handles the app functions. It also outlines how AWB labels are generated and how shipment creation, returns, and cancellations are managed.
+
+| Section | Description |
+| -- | -- |
+| **Create Shipping App** | Learn how to create the Shipping App inside Salla Partners and prepare it for integration. |
+| **Setup Shipping App** | Configure webhook URLs, permissions, and App Functions to connect the Shipping App with your shipping system. |
+| **Core App Functions** | Core App Functions handle the main lifecycle events that Salla triggers for shipping. <br><br>• **Shipment Creating** – Triggered when a shipment is created. Used to generate the AWB label, tracking link, and tracking number. <br>• **Shipment Cancelled** – Triggered when a shipment is cancelled. Allows the shipping system to update or confirm the cancellation status. |
+| **AWB Processing Flows** | AWB Processing Flows describe how AWB labels and tracking details are generated and updated across various shipping scenarios. <br><br>• **Shipment AWB** – Standard process for generating AWB labels for new shipments. <br>• **Shipment Return AWB** – Flow for generating AWB labels and tracking info for return shipments. <br>• **Shipment Cancelled AWB** – How AWB and shipment status behave during a cancellation. |
+
+
+
+
+## Community
+
+The [Salla Developer Community](https://t.me/salladev) is a dynamic hub for developers to explore Salla products, including APIs, open-source projects, and Twilight. It is a space to collaborate, build , and ask qeustions about apps and themes, as well as create end-to-end solutions for Salla Merchants with Salla Products (such as Services, Influencers, and Affiliates). Visit the [Knowledge Base Portal](https://salla.dev) for developer-focused blogs and tutorials.
+
+## Support
+
+The support team is available during working hours via the following channels:
+
+
+<CardGroup cols={2}>
+  <Card title="Email" href="mailto:support@salla.dev" icon="material-two-tone-email">
+  </Card>
+  <Card title="Developers Community" href="https://t.me/salladev" icon="material-two-tone-people">
+    
+  </Card>
+</CardGroup>
+

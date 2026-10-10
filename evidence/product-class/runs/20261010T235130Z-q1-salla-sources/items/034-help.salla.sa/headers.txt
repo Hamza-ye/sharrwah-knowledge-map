@@ -1,0 +1,24 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 103 
+link: </_next/static/chunks/3y5692pu7ei6z.css>; as=style; rel=preload, </_next/static/chunks/37x8pkuc7reiu.css>; as=style; rel=preload
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 23:51:50 GMT
+content-type: text/html; charset=utf-8
+link: </_next/static/chunks/3y5692pu7ei6z.css>; rel=preload; as="style", </_next/static/chunks/37x8pkuc7reiu.css>; rel=preload; as="style"
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+set-cookie: utm_params=%7B%22utm_source%22%3A%22referral%22%2C%22utm_medium%22%3A%22direct%22%2C%22utm_synthetic%22%3A%221%22%2C%22utm_ref_page%22%3A%22help.salla.sa%2Farticle%2F%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%B4%D8%AD%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%88%D8%AA%D9%81%D8%B9%D9%8A%D9%84-%D9%83%D9%88%D8%AF-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82-%D8%A7%D9%84%D8%AC%D9%85%D8%B1%D9%83%D9%8A-%D9%84%D9%84%D9%85%D9%86%D8%AA%D8%AC-hs-code%2Fwo7amlc0ck99nho3i9hvmoal%22%7D; Path=/; Expires=Mon, 09 Nov 2026 23:51:50 GMT; Max-Age=2592000; Secure; SameSite=lax
+set-cookie: utm_params=%7B%22utm_source%22%3A%22referral%22%2C%22utm_medium%22%3A%22direct%22%2C%22utm_synthetic%22%3A%221%22%2C%22utm_ref_page%22%3A%22help.salla.sa%2Farticle%2F%25D8%25B4%25D8%25B1%25D9%2588%25D8%25B7-%25D8%25A7%25D9%2584%25D8%25B4%25D8%25AD%25D9%2586-%25D8%25A7%25D9%2584%25D8%25AF%25D9%2588%25D9%2584%25D9%258A-%25D9%2588%25D8%25AA%25D9%2581%25D8%25B9%25D9%258A%25D9%2584-%25D9%2583%25D9%2588%25D8%25AF-%25D8%25A7%25D9%2584%25D8%25AA%25D9%2586%25D8%25B3%25D9%258A%25D9%2582-%25D8%25A7%25D9%2584%25D8%25AC%25D9%2585%25D8%25B1%25D9%2583%25D9%258A-%25D9%2584%25D9%2584%25D9%2585%25D9%2586%25D8%25AA%25D8%25AC-hs-code%2Fwo7amlc0ck99nho3i9hvmoal%22%7D; Path=/; Expires=Mon, 09 Nov 2026 23:51:50 GMT; Max-Age=2592000; Secure; SameSite=lax
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, accept-encoding
+cf-placement: local-IAD
+content-security-policy: frame-ancestors 'self' https://api.salla.dev https://hc.salla.group
+x-locale: ar
+x-opennext: 1
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-encoding: br
+server: cloudflare
+cf-ray: a489890b6c1401e1-IAD
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://docs.salla.dev/embedded-sdk/overview.md",
+ "dir": "items/006-docs.salla.dev",
+ "fetched_at": "2026-10-10T23:51:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/embedded-sdk/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1518,
+ "cited_in": [
+  "SA-S-0197"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "7b5374fff70787f2f41f97d44196c9149ec3225bbcb707ac57ff1f224c70c0e5",
+ "raw_ext": "txt"
+}
