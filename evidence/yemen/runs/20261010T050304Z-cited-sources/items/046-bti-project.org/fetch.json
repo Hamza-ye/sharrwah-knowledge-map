@@ -1,0 +1,18 @@
+{
+ "n": 46,
+ "url": "https://bti-project.org/en/reports/country-report/YEM",
+ "dir": "items/046-bti-project.org",
+ "fetched_at": "2026-10-10T05:03:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://bti-project.org/en/reports/country-report/YEM",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 56829,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:28"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2109f485fcecbe964bca5360d12c0122dc4df13502995fabb091863731a6023a",
+ "raw_ext": "html"
+}

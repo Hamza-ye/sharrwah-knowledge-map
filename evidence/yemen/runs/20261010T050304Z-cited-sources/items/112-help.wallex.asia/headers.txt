@@ -1,0 +1,34 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 103 
+link: <//7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/template_assets/DEFAULT_ASSET/1790963948380/template_article.min.css>; as=style; rel=preload, <https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-107255593217/1790964023579/module_website-header.min.css>; as=style; rel=preload, <https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-153268142413/1790964024725/module_kb-search-input.min.css>; as=style; rel=preload, <https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-112597758981/1790963941096/module_kb_breadcrumbs.min.css>; as=style; rel=preload, <https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-112598395238/1790963939686/module_kb_feedback.min.css>; as=style; rel=preload
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:18 GMT
+content-type: text/html; charset=UTF-8
+set-cookie: __cf_bm=Wkgc1lbUWI.MCLWcvleAi6A0iV5egB18WI0vaglyISo-1791608598.7955928-1.0.1.1-wgyaydPMUHfkrM3Xqe7QFRfiKm245PNJL4QNU.zjky0RPaGf2xNjXH7VWjmHcJ8XoVUauYlxm8XtmAMbXAk6wr6eC2HKIvFtZ6H84T4C3lumpowybyptDlz4VCjP7OGc; HttpOnly; SameSite=None; Secure; Path=/; Domain=help.wallex.asia; Expires=Sat, 10 Oct 2026 05:33:18 GMT
+set-cookie: _cfuvid=PtjZhXX1OHdozC4JKkdTTfImExNWaNL3.rw5fy9381s-1791608598.7955928-1.0.1.1-tf1pW7tbebKPvcFSiiY3k9mWEQf_jGtM6UceJJ7kwyk; HttpOnly; SameSite=None; Secure; Path=/; Domain=help.wallex.asia
+cache-control: s-maxage=36000, max-age=5
+last-modified: Sun, 04 Oct 2026 21:57:54 GMT
+link: <//7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/template_assets/DEFAULT_ASSET/1790963948380/template_article.min.css>; rel=preload; as=style,<https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-107255593217/1790964023579/module_website-header.min.css>; rel=preload; as=style,<https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-153268142413/1790964024725/module_kb-search-input.min.css>; rel=preload; as=style,<https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-112597758981/1790963941096/module_kb_breadcrumbs.min.css>; rel=preload; as=style,<https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-112598395238/1790963939686/module_kb_feedback.min.css>; rel=preload; as=style
+strict-transport-security: max-age=31536000
+vary: Accept, accept-encoding
+content-security-policy: upgrade-insecure-requests
+edge-cache-tag: CT-205071758905,CG-205083869102,P-8332041,DB-10929527,MENU-35527000273,PGS-ALL,SW-4,GC-205082146847,GC-205082146848,TS-205071688774
+referrer-policy: no-referrer-when-downgrade
+x-hs-cf-cache-status: HIT
+x-hs-cache-config: BrowserCache-5s-EdgeCache-180s
+x-hs-cache-control: s-maxage=36000, max-age=0
+x-hs-content-id: 205071758905
+x-hs-hub-id: 8332041
+x-hs-markdown-eligible: true
+x-hs-prerendered: Sun, 04 Oct 2026 21:57:54 GMT
+x-hs-cfworker-meta: {"contentType":"STRUCTURED_CONTENT","resolver":"PreRenderedContentResolver"}
+x-hs-portal-id: 8332041
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=42sC4eZrcjRY9oMIfuVkek8cNgQ1O0%2BxUtZO048I6IjG6aLjdGeSwdvGVyydw7DsxaOqJEtamimn1crYLB405qQQ2xzkNWywmTmOXZ4qsIc2vmfgtje5oXNLOviRN%2BJpP4c%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+content-encoding: br
+server: cloudflare
+cf-ray: a48313ee7eb16589-IAD
+alt-svc: h3=":443"; ma=86400
+

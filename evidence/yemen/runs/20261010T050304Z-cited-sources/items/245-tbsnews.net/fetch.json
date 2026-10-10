@@ -1,0 +1,18 @@
+{
+ "n": 245,
+ "url": "https://www.tbsnews.net/economy/no-more-direct-payments-e-commerce-accounts-293197",
+ "dir": "items/245-tbsnews.net",
+ "fetched_at": "2026-10-10T05:03:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.tbsnews.net/economy/no-more-direct-payments-e-commerce-accounts-293197",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 16393,
+ "cited_in": [
+  "yemen-setup-options/report.md:180"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "701cff2870be49c0218fdcc948cebc6b202476b16687e37797ee18cb8f2b26c2",
+ "raw_ext": "html"
+}

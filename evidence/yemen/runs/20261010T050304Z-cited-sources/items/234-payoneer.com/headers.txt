@@ -1,0 +1,25 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:45 GMT
+content-type: text/html
+content-security-policy: frame-src 'self' *.google.com *.google.be *.google.nl *.google.co.uk *.google.co.il *.google.com.ua *.gstatic.com *.scrmtech.com *.quora.com *.consensu.org *.sharethis.com *.doubleclick.net *.greenhouse.io *.payoneer.com *.trustpilot.com *.oraclecloud.com *.driftt.com *.ubembed.com *.youtube.com *.github.io *.userway.org v.qq.com *.adpartner.pro *.facebook.com *.chilipiper.com *.teamme.io *.adsrvr.org *.googlesyndication.com ssgtm-sbyzlt5hyq-ey.a.run.app *.optimizely.com *.googletagmanager.com *.adform.net payoneer.kinsta.cloud klentycal.com kl-website-tracking.s3.us-west-2.amazonaws.com cdn.klenty.com sgtm.payoneer.com sgtm.payoneer.com.cn *.div.show baiduboxapp: *.ziniao.block.j3e6di0o036cpreg88f2165z.com ziniao.block.j3e6di0o036cpreg88f2165z.com *.cloudfront.net *.b54b2699s971bp4335b9b00s735906bd4c7f; script-src 'self' data: 'unsafe-inline' 'unsafe-eval' *.googletagmanager.com *.cookielaw.org *.convertexperiments.com *.marketo.net *.googleadservices.com *.bing.com bat.bing.com *.licdn.com *.facebook.net *.taboola.com *.yimg.jp *.yahoo.co.jp *.doubleclick.net *.sharethis.com *.consensu.org *.onetrust.com *.onetrust.io *.greenhouse.io *.payoneer.com *.mouseflow.com *.salesloft.com *.trendemon.com *.trustpilot.com *.ubembed.com *.google.com *.google.be *.google.nl *.google.co.uk *.google.co.il *.gstatic.com *.dynatrace.com *.oraclecloud.com *.baidu.com *.driftt.com *.youtube.com *.daumcdn.net unpkg.com *.yandex.ru *.cloudflare.com *.strattic.com *.6sc.co *.jsdelivr.net *.bootstrapcdn.com *.twitter.com *.ads-twitter.com *.highcharts.com *.github.io *.qualtrics.com *.microsoft.com *.userway.org *.tiktok.com *.googleoptimize.com accessibilityserver.org *.adnxs.com *.pdst.fm *.fullstory.com *.redditstatic.com *.cheqzone.com *.clarity.ms *.line-scdn.net redditstatic.s3.amazonaws.com wcs.naver.net *.googlesyndication.com *.google-analytics.com *.adpartner.pro *.line-cdn.net *.chilipiper.com *.teamme.io *.quora.com *.adsrvr.org *.amplitude.com server-side-tagging-sbyzlt5hyq-uc.a.run.app *.trackjs.com ssgtm-sbyzlt5hyq-ey.a.run.app *.optimizely.com optimizely.s3.amazonaws.com *.adform.net sdk.teamme.link js.hsforms.net app.beschannels.com js.hs-scripts.com kl-website-tracking.s3.us-west-2.amazonaws.com cdn.klenty.com work.codejudge.io hsforms.com storage.googleapis.com/skuad-public-assets/ geoapify.com s3-us-west-2.amazonaws.com *.hs-analytics.net *.hsadspixel.net *.hs-banner.com *.hs-scripts.com adform.net sgtm.payoneer.com sgtm.payoneer.com.cn *.amazon-adsystem.com *.factors.ai *.partnerstack.com *.personsync.com js.hubspot.com *.openai.com; worker-src 'self' blob:; connect-src 'self' data: blob: https:; img-src 'self' data: blob: https:; report-to default; report-uri https://payoneer.report-uri.com/r/d/csp/enforce
+x-frame-options: SAMEORIGIN
+server: cloudflare
+last-modified: Thu, 24 Sep 2026 13:12:09 GMT
+x-xss-protection: 1; mode=block
+x-amz-server-side-encryption: AES256
+x-cache: Miss from cloudfront
+via: 1.1 62a6f4110403bfc7c933ba71346b6272.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD61-P15
+x-amz-cf-id: xYl0YjLG_dq3QuN7v4hPFqrsMj4yTnAKQKkEWvwLEk7OZm6vP77tbA==
+cf-cache-status: DYNAMIC
+set-cookie: __cf_bm=XbRyH7x1riFqu4vBy8LCeELkJacNf_fMarQ4Tordu9o-1791608625.405753-1.0.1.1-N4o0AGzKZr3awhB0vlZfvWJBxZHc8nl7TjHxdVi2vPVj_1LpCUG8dL_ZvKA7UKlWWxd2HPAuB7oMNV9H2unTCxvClx5mMH4awjqKYbd2CxcQjukloRKPl6FF7ekUTvn_; HttpOnly; SameSite=None; Secure; Path=/; Domain=payoneer.com; Expires=Sat, 10 Oct 2026 05:33:45 GMT
+set-cookie: _cfuvid=w8XBQKscYYxkoNDVy22a5uy7BH6PkqR7RR6bjK2Tx1U-1791608625.405753-1.0.1.1-kDuT9YlqLwDozDCu7yKsBgIhBWCmT76.vh61KVlSURk; HttpOnly; SameSite=None; Secure; Path=/; Domain=payoneer.com
+referrer-policy: no-referrer-when-downgrade
+access-control-allow-origin: https://registration.powerappsportals.com
+strict-transport-security: max-age=31536000; includesubdomains; preload
+x-content-type-options: nosniff
+content-encoding: gzip
+cf-ray: a4831494cc757c36-IAD
+

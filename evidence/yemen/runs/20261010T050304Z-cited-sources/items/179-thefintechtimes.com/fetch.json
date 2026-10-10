@@ -1,0 +1,19 @@
+{
+ "n": 179,
+ "url": "https://thefintechtimes.com/yemen-can-fintech-connect-an-economy-divided-by-war/",
+ "dir": "items/179-thefintechtimes.com",
+ "fetched_at": "2026-10-10T05:03:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://thefintechtimes.com/yemen-can-fintech-connect-an-economy-divided-by-war/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 37049,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:110",
+  "yemen-setup-options/notes/wallets_emoney.md:449"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f6cdafbfa79f1f32e0e98a1a11ac7fc08afdf805381ccab40e1410fdcf4928c6",
+ "raw_ext": "html"
+}

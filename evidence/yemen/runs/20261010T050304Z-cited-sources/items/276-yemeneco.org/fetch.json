@@ -1,0 +1,18 @@
+{
+ "n": 276,
+ "url": "https://yemeneco.org/archives/57418",
+ "dir": "items/276-yemeneco.org",
+ "fetched_at": "2026-10-10T05:03:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemeneco.org/archives/57418",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 33901,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:558"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cdb3ad6796114847f97b3bc2e1889ea4bef1071d2c00f3942317275542d07866",
+ "raw_ext": "html"
+}

@@ -1,0 +1,232 @@
+Case Study
+
+
+
+Driving financial
+inclusion through
+instant payments
+Going beyond instant payment standards with innovative
+and accessible mobile-first payment services
+Introduction
+
+WeNet is Yemen’s national financial switch interbank network. Founded in 2006 by 12 local
+and international banks as a payments system infrastructure, it is approved by the Central
+Bank of Yemen.
+
+
+WeNet is owned by Murooj, a subsidiary of Hayel Saeed Anam Group and the majority
+shareholder of Yemen Financial Services Company.
+
+
+WeNet’s primary function is to facilitate and process payments in real time between the point of
+customer interaction (ATM, POS, ewallets) and the bank’s processing system. Service offerings
+include a range of payment products and services for banks and retail customers. WeNet also
+supports the Central Bank of Yemen in the financial control and management of monetary policy
+in the country.
+
+
+WeNet has engaged BPC to establish an instant payment infrastructure with the aim of boosting
+economic development in Yemen.
+
+
+
+
+                                                                                             BPC | CASE STUDY | 2
+Challenge
+
+More than four years of civil war has             Furthermore, banks operating in Yemen
+left Yemen facing a humanitarian crisis,          have found themselves increasingly
+instability, currency depreciation and the        disconnected - both locally (due to divided
+collapse of civil and financial services          territories) and globally.
+infrastructure. Ninety percent of the
+population is unbanked and more than              WeNet recognised that resolving this
+20 million Yemenis lack access to formal          disconnection and expanding access to
+financial services.                               financial services within Yemen was an
+                                                  imperative even amongst the many other
+                                                  challenges facing the country. It was clear
+                                                  that this needed to be done without delay.
+
+
+
+
+                 WeNet established a strategic plan to respond
+                    to the major challenges it would face
+
+
+        Access to finance                                  Partnership
+        Address country liquidity issues by                Create an ecosystem of partners
+        introducing some of the capabilities               with banks and e-money operators
+        of real-time gross settlement.                     to ensure interoperability of financial
+                                                           services, everywhere, for all users.
+
+
+        Inclusion                                          Open up the economy
+        Beyond cash-centered activities                     Through instant payment and trust,
+        to drive digital and mobile-first                  re-establish a dynamic economic
+        financial inclusion for citizens with a            environment to foster financial and
+        mobile or smartphone.                              commercial activity now and for
+                                                           future generations leveraging the
+                                                           latest industry standards.
+
+
+
+
+                                                                                         BPC | CASE STUDY | 3
+Solution
+
+Following a public request for proposals        WeNet will enable customers who have
+WeNet chose BPC’s SmartVista platform to        accounts at any licensed payment service
+develop its Instant Transfer Scheme (ITS) for   provider to send funds to each other in real
+real time retail payments and the National      time, 24/7 without any risk. The service will
+Switch for card payments in Yemen.              be accessible through payment service
+                                                provider branches, internet channels, and
+SmartVista Instant Payment and its suite of     mobile channels.
+switch, card management, fraud prevention
+and API services was selected for its strong    WeNet will enable customers who have
+expertise across the payment value chain        accounts at any licensed payment service
+including instant payment, the robustness of    provider to send funds to each other in real
+its platform, time to deploy and strong local   time, 24/7 without any risk. The service will
+and regional support.                           be accessible through payment service
+                                                provider branches, internet channels, and
+                                                mobile channels.
+
+
+
+
+                                                                                     BPC | CASE STUDY | 4
+SmartVista Instant Payment key features:
+
+•   Instant payment platform and third party module
+•   Settlement & Reconciliation
+•   Smart Calculation:
+     – Calculation of net debit cap for each participant with the collateral 				
+        position of WENET Ledger
+     – Calculation of online limits and offline (by the time of the End-of-Day 			
+        report) switch and interchange fees for the participants
+     – Full breakdown on the transactions and associated fees
+     – Report on interchange fees affecting net debit caps to be included into the 			
+        settlement process
+     – Switch fees billed by end of day and charged monthly
+•   Notifications & Reporting: Generation of settlement reports for the participants 			
+    and WENET Ledger
+•   Risk & Fraud Prevention: Control of online limits and performing online checks against 		
+    Fraud Prevention module rules based on the real time transaction statistics
+•   Aggregate Accounting
+•   Bank gateways
+•   Interfaces for e-money provider, banks (online and batch), settlement bank
+
+
+
+
+End user payment flows:
+
+
+
+       Account to              Wallet to Wallet       Wallet to Account      Account to
+    Account payments             payments                payments          Wallet payments
+
+
+
+
+                                                                                     BPC | CASE STUDY | 5
+Results
+
+With instant payment becoming the new           Pushing the boundaries
+norm globally, WeNet will benefit from          of mobile for greater
+operational stability, increased security for   financial inclusion
+users and a drive for innovation. WeNet will    The service supports e-wallet services
+enable customers of every Yemeni bank           from all mobile operators available on
+and mobile wallet company to transact           GSM and smartphone devices as part of
+easily with one another. Businesses will also   an interoperability initiative with the newly-
+benefit from enhanced cash management           formed National Mobile Wallet Company
+and economic activity, increasing the speed     to provide financial access to the 90% of
+of commerce and simplifying treasury            Yemenis currently unbanked.
+management with payment facilities for
+suppliers and employees.                        Built to scale up
+                                                Demand for instant payment services is
+Simplified payment experience                   expected to be high given the current
+With a focus on financial inclusion, the        liquidity crisis affecting Yemen, coupled with
+WeNet instant payment system has been           the large number of people who face daily
+built with easy to use payment functions.       difficulties in transferring funds between
+As an example, users can use an alias           banks. SmartVista is designed to process
+or a mobile number to transfer money to         more than 5000 transactions per second
+someone from their mobile, making the           while its system will scale as WeNet
+service accessible to all.                      transactions volumes rise.
+
+
+
+
+                                                                                      BPC | CASE STUDY | 6
+Switch & shared services                      interfaces, ensuring a secure and well-
+Beyond ensuring interoperability with         functioning interoperable infrastructure for
+banks and mobile operators, WeNet will        ecosystem partners.
+be using SmartVista issuing and acquiring
+to become a national switch and third         National impact
+party processor for both local card and       Yemen will benefit from expanding access
+international schemes.                        to modern financial services and reducing
+                                              the heavy reliance on cash and cheques.
+International standards                       The WeNet switch will also address liquidity
+By using SmartVista, the WeNet instant        issues and enable the financial industry
+payment platform ensures compliance           to grow services sustainably and improve
+with the latest industry standards such as    customer satisfaction and protection.
+ISO20022 or ISO8583 for bank and ewallet
+
+
+
+
+Key facts
+
+
+
+        Over                     12               5,000
+      90%                      banks            transactions
+    unbanked                 connected           per second
+
+
+
+
+“The implementation of the WeNet Instant Transfer Service will enable us to transform
+the company and unlock its full potential. Working with Yemen’s largest banks and
+payment service providers, we aim to provide innovative solutions to Yemen’s financial
+challenges with the objective of improving consumer spending power and reviving trade,
+especially in the SME segment. By minimising consumer’s dependency on scarcely
+available currency and maximising the collection of cash into the financial system,
+WeNet aims to drive funds back into circulation and stimulate the economy - and most
+importantly bring business back to the banks.”
+
+
+WeNet
+
+
+
+
+                                                                                  BPC | CASE STUDY | 7
+About BPC
+Founded in 1996, BPC has transformed over the years to deliver innovative and best in class proven
+solutions which fit with today’s consumer lifestyle when banking, shopping or moving in both urban
+and rural areas, bridging real life and the digital world. With 350 customers across 100 countries
+globally, BPC collaborates with all ecosystem players ranging from tier one banks to neobanks,
+Payment Service Providers (PSPs) to large processors, ecommerce giants to start-up merchants, and
+government bodies to local hail riding companies. BPC’s SmartVista suite comprises cutting-edge
+banking, commerce and mobility solutions including digital banking, ATM & switching, payments
+processing, card and fraud management, financial inclusion, merchant portals, transport and smart
+cities solutions.
+
+
+www.bpcbt.com
+
+
+
+
+                                                                                               BPC | CASE STUDY | 8
+Want to find
+out more?
+Request a free discovery workshop from BPC
+and one of our experts will be in touch to book
+your 1-2-1 workshop.
+
+
+
+
+bpcbt.com | info@bpcbt.com
+

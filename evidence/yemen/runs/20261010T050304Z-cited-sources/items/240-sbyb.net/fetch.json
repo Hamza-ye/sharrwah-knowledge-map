@@ -1,0 +1,18 @@
+{
+ "n": 240,
+ "url": "https://www.sbyb.net/en/service/17",
+ "dir": "items/240-sbyb.net",
+ "fetched_at": "2026-10-10T05:03:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.sbyb.net/en/service/17",
+ "content_type": "text/html;charset=utf-8;",
+ "bytes": 89576,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:243"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2c5f37aa4a2b1c813f871e571daa4b9700429319cd3887d0ccb4d6930ee17b87",
+ "raw_ext": "html"
+}

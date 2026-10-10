@@ -1,0 +1,27 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+content-type: application/pdf;charset=utf-8
+date: Sat, 10 Oct 2026 00:42:22 GMT
+content-encoding: gzip
+server: Apache
+x-dispatcher: dispatcher3useast1
+x-vhost: publish
+strict-transport-security: max-age=63072000; includeSubdomains;
+x-xss-protection: 1; mode=block;
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-credentials: true
+content-disposition: inline;filename=P1776311d18a7e09319665177f98b3e43a7.pdf
+last-modified: Sat, 10 Oct 2026 00:42:22 GMT
+vary: Accept-Encoding
+x-cache: Hit from cloudfront
+via: 1.1 21c5f60ba963e85c4713b3293cada1f8.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD61-P4
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: 4GNioUqE-c9h11nxxlcIejDw4-wrrYXOsLxdiZp5Q-3ZZEystBSbkg==
+age: 15652
+

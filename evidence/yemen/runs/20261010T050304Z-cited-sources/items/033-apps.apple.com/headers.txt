@@ -1,0 +1,30 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: daiquiri/5
+content-type: text/html
+cache-control: public, max-age=900
+content-encoding: br
+content-security-policy: upgrade-insecure-requests; default-src 'none'; manifest-src 'self' https://*.apple.com; img-src 'self' https://*.apple.com https://*.mzstatic.com data:; font-src 'self' https://*.apple.com; style-src 'self' https://*.apple.com 'unsafe-inline'; script-src 'self' https://*.apple.com; connect-src 'self' https://*.apple.com https://*.mzstatic.com; media-src 'self' https://*.apple.com blob:; child-src 'self' https://*.apple.com; frame-src 'self' https://*.apple.com itms-appss: macappstore:; worker-src blob:; frame-ancestors 'none'; block-all-mixed-content; report-uri /api/csp-report
+etag: "BsNLdS58jIql0/UX1KX0uD69RfvP0Xj8mknQ0T6IV9w="
+link: <https://is1-ssl.mzstatic.com>; rel=preconnect
+vary: accept-encoding
+x-apple-jingle-correlation-key: NYSJOTXLKIIRESNNPQV4FB2YIY
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-original-content-length: 718205
+x-responding-instance: amp-web-app-store-server:amp-web-app-store-server-main-94fb887df-7kxrp:4200:2640.6.0-external
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains
+x-daiquiri-instance: daiquiri:10001:daiquiri-cluster-76f7c779f4-8nvl5:7987:26HOTFIX41:daiquiri-amp-kubernetes-shared-cluster-ak8s-prod-as4-amp-web-app-store-prod
+x-daiquiri-debug-worker-pid: 16786
+strict-transport-security: max-age=31536000; includeSubDomains
+x-daiquiri-instance: daiquiri:10001:daiquiri-all-shared-ext-c56cf449f-9jt4v:7987:26HOTFIX41:daiquiri-amp-kubernetes-shared-ext-ak8s-prod-as4-amp-daiquiri-ingress-prod
+x-daiquiri-debug-worker-pid: 642995
+content-length: 53057
+date: Sat, 10 Oct 2026 05:03:09 GMT
+x-cache: TCP_MISS from a2-17-209-204.deploy.akamaitechnologies.com (AkamaiGHost/22.6.4-888a2d21768272d5e2d80e9762941e76) (-)
+x-cache-remote: TCP_REFRESH_MISS from a23-64-113-139.deploy.akamaitechnologies.com (AkamaiGHost/22.6.5-e48a1e600c03e7d517694b5b11b937be) (S)
+set-cookie: geo=US; domain=.apple.com
+alt-svc: h3=":443"; ma=93600
+

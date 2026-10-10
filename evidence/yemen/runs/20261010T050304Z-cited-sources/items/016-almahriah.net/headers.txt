@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:07 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cross-origin-resource-policy: cross-origin
+cross-origin-embedder-policy: unsafe-none
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+link: </_next/static/media/01f0c602c274ea55-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/350b852752f8489d-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/4bc3899ff5a145b7-s.p.ttf>; rel=preload; as="font"; crossorigin=""; type="font/ttf", </_next/static/media/8f15531a39955d09-s.p.ttf>; rel=preload; as="font"; crossorigin=""; type="font/ttf", </_next/static/media/b261c59b2d76913d-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/e4af272ccee01ff0-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/e62bc6de3d7bc387-s.p.ttf>; rel=preload; as="font"; crossorigin=""; type="font/ttf", </_next/static/css/c719e3949d76d5e3.css>; rel=preload; as="style", </_next/static/css/8d2b8aaba281c689.css>; rel=preload; as="style"
+x-powered-by: Next.js
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qF0p068o28neFhMmrg6IVlGac0xC9K4R2ByZAqekAGf4AysAs372LirminTLoOQeHsCN5NCMRDwuHWTXP6Dp7V7lct4O0NMzy0cU9bLLCppi6bQa%2F97KHHDreJX6eWA%3D"}]}
+cf-cache-status: DYNAMIC
+content-encoding: br
+cf-ray: a48313a5ef0dc970-IAD
+

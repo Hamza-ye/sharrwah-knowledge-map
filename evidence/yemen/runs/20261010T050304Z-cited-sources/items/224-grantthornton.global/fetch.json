@@ -1,0 +1,19 @@
+{
+ "n": 224,
+ "url": "https://www.grantthornton.global/en/insights/indirect-tax-guide/indirect-tax---Yemen/",
+ "dir": "items/224-grantthornton.global",
+ "fetched_at": "2026-10-10T05:03:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.grantthornton.global/en/insights/indirect-tax-guide/indirect-tax---Yemen/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 165284,
+ "cited_in": [
+  "yemen-setup-options/report.md:48",
+  "yemen-setup-options/notes/regulation_licensing.md:557"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "dc5571e4f2ec474309573badeaa023e4ab2eccef1e353458f700066c4cd3935e",
+ "raw_ext": "html"
+}

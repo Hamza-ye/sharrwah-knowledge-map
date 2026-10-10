@@ -1,0 +1,19 @@
+{
+ "n": 86,
+ "url": "https://eur-lex.europa.eu/eli/dec_impl/2022/420",
+ "dir": "items/086-eur-lex.europa.eu",
+ "fetched_at": "2026-10-10T05:03:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://eur-lex.europa.eu/eli/dec_impl/2022/420",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 268061,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:384",
+  "yemen-setup-options/notes/regulation_licensing.md:385"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "03c7f54720ccb01571f15435473d068a0ddf35d661593d9063333f9b5c8e0db1",
+ "raw_ext": "html"
+}

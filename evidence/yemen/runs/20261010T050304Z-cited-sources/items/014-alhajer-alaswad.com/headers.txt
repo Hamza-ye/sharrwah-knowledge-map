@@ -1,0 +1,16 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+content-type: text/html; charset=UTF-8
+cache-control: no-cache, private
+x-ratelimit-limit: 20
+x-ratelimit-remaining: 19
+set-cookie: XSRF-TOKEN=eyJpdiI6InVpa1N1aFkreUx1aEdSbUxydkZJNXc9PSIsInZhbHVlIjoiZU96SWYwakJZRUtRTVN2eCt5S1JHcWg1c2kvWGRpck9wU0swZm5PVUcvNDVSOG42WDd6Nm9TTkl6YVFzTjgvQXVEeDBvbHJ3QTVMbkN4bnAzM3g2dFRyTkt0ZldUVUU3RkFPVFVBVWhybDF0L2lNU3Z6a0t3Vk1DWlI0QkF2cjEiLCJtYWMiOiJmNzY0ZjUxMGZmNDVhMmRmYzdiZTdiNGVlZTUyMDQ1NmI3ZGJiYWEzMzYwNTRkZTQ1MzEyNThjNDU0ZjJmN2MzIiwidGFnIjoiIn0%3D; expires=Sat, 10 Oct 2026 07:03:08 GMT; Max-Age=7200; path=/; samesite=lax; secure
+set-cookie: techcms_session=eyJpdiI6IlVYbzdjMVg5SkM0cCtOL0pGdTlPSGc9PSIsInZhbHVlIjoiNnRKREFCd1N3aWFyNlc5a2x6azQ4cHBVYSt2cmJ5QzBRbXdnWHNuSjdrRGdCdEMrSnVWUjZELzlDMjF4MWxKSVROdXoya1ZpVE52dGQwbDBYaHdkb3JYTS82a3ZMcm1vNXhUdkd0REdrUjR2bEVuaCs1SHBFd2I0dVR2VWxBNzUiLCJtYWMiOiJhMWQ1NDQxYTg5MjNlZmEzY2Q5Y2VjMzcwMWJlODgzZGFlYTUwYTAzNDk4MmUzMDk0ZWVjZDZjMzQzY2Q5M2NjIiwidGFnIjoiIn0%3D; expires=Sat, 10 Oct 2026 07:03:08 GMT; Max-Age=7200; path=/; httponly; samesite=lax; secure
+content-length: 17747
+content-encoding: br
+vary: Accept-Encoding,User-Agent
+date: Sat, 10 Oct 2026 05:03:08 GMT
+server: LiteSpeed
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000
+

@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:18 GMT
+content-type: text/html; charset=utf-8
+x-powered-by: Express
+cache-control: public,max-age=15,s-maxage=900,stale-while-revalidate=1000,stale-if-error=14400
+vary: Accept-Encoding
+strict-transport-security: max-age=86400
+content-security-policy: default-src data: 'unsafe-inline' 'unsafe-eval' https: http:;script-src data: 'unsafe-inline' 'unsafe-eval' https: http: blob:;style-src data: 'unsafe-inline' https: http: blob:;img-src data: https: http: blob:;font-src data: https: http:;connect-src https: wss: ws: http: blob:;media-src https: blob: http:;object-src https: http:;child-src https: data: blob: http:;form-action https: http:;block-all-mixed-content;
+link: <https://fea.assettype.com/gulfnews/assets/app-15da25279f2d887015ea.js>; rel=preload; as=script;
+cf-cache-status: MISS
+content-encoding: br
+server: cloudflare
+cf-ray: a48313ea4ef9ffc6-IAD
+alt-svc: h3=":443"; ma=86400
+

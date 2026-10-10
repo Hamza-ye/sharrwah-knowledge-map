@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 
+Date: Sat, 10 Oct 2026 05:03:44 GMT
+Server: *
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+Content-Type: text/html;charset=UTF-8
+Content-Language: en
+Vary: Accept-Encoding,User-Agent
+Content-Encoding: gzip
+Set-Cookie: anonymous-consents=%5B%5D; Max-Age=31536000; Expires=Sun, 10 Oct 2027 05:03:44 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: JSESSIONID=Y1-0e003eff-afd7-405a-85f8-a7e4cbb265c6.accstorefront-59cfd98f57-6zcck; Path=/; Secure; HttpOnly
+Set-Cookie: ROUTE=.accstorefront-59cfd98f57-6zcck; Path=/; Secure; HttpOnly; SameSite=None
+X-SAP-Pad: 628
+Transfer-Encoding: chunked
+

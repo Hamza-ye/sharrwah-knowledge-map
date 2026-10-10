@@ -1,0 +1,18 @@
+{
+ "n": 131,
+ "url": "https://mwm.ai/apps/ki-bank-app/6748606298",
+ "dir": "items/131-mwm.ai",
+ "fetched_at": "2026-10-10T05:03:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://mwm.ai/apps/ki-bank-app/6748606298",
+ "content_type": "text/html;charset=utf-8",
+ "bytes": 35179,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:58"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "44a51e246a5937130afec78779452db603f9b8a3e14ceaa7bf35fb63f1439fd6",
+ "raw_ext": "html"
+}

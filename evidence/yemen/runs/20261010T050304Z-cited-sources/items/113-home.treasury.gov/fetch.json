@@ -1,0 +1,20 @@
+{
+ "n": 113,
+ "url": "https://home.treasury.gov/news/press-releases/jy2014",
+ "dir": "items/113-home.treasury.gov",
+ "fetched_at": "2026-10-10T05:03:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://home.treasury.gov/news/press-releases/jy2014",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 18653,
+ "cited_in": [
+  "yemen-setup-options/report.md:153",
+  "yemen-setup-options/notes/banks_exchange_cards.md:206",
+  "yemen-setup-options/notes/banks_exchange_cards.md:375"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e3a1ffdd12975ed052664c2b10436d28b7035c07608f73485d9db0f3feb416f8",
+ "raw_ext": "html"
+}

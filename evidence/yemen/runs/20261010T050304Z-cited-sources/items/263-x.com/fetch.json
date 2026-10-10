@@ -1,0 +1,18 @@
+{
+ "n": 263,
+ "url": "https://x.com/Yemen_PM/status/1954999121284304979",
+ "dir": "items/263-x.com",
+ "fetched_at": "2026-10-10T05:03:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://x.com/Yemen_PM/status/1954999121284304979",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26418,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:116"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bf53515a2ae0478d3789a2621ce015877af01938d88c1bba80d7847597532c1a",
+ "raw_ext": "html"
+}

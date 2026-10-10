@@ -1,0 +1,14 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 10 Oct 2026 05:03:11 GMT
+Content-Type: application/pdf
+Content-Length: 12128493
+Last-Modified: Thu, 24 Aug 2023 06:00:08 GMT
+Connection: keep-alive
+ETag: "64e6f1e8-b910ed"
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+

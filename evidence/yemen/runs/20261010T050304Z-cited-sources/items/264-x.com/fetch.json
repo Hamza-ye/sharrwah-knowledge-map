@@ -1,0 +1,18 @@
+{
+ "n": 264,
+ "url": "https://x.com/bazzarry",
+ "dir": "items/264-x.com",
+ "fetched_at": "2026-10-10T05:03:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://x.com/bazzarry",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27581,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:25"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "41f18ff26b8537ed9e3bd250c94a167f32b31aade09144a04789eaf63dca4ffe",
+ "raw_ext": "html"
+}

@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:17 GMT
+content-type: text/html
+x-sveltekit-page: true
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4UnlnUfs1b1dGdNTPtL3sa5BC2rBhX4gFdEMkHNHgO1ubhzc3ChRN1tB36WwfKO4po5JoUh7RjmYOUGjE1vG77VGtXmM3PQliJrQkNFAEClA%2Fp7QyyPv4r13Dwk%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+link: <./_app/immutable/assets/0.Cwig1A9n.css>; rel="preload"; as="style"; nopush, <./_app/immutable/assets/3.AK-K1hIe.css>; rel="preload"; as="style"; nopush, <./_app/immutable/assets/ErrorMessage.u8FZ89sT.css>; rel="preload"; as="style"; nopush, <./_app/immutable/assets/ExchangeRateTable.r7TxWtBv.css>; rel="preload"; as="style"; nopush, <./_app/immutable/assets/15.BNc7v6VQ.css>; rel="preload"; as="style"; nopush, <./_app/immutable/entry/start.B-zf3LXI.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/Bkz3rGP_.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/LfjRnNlq.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/DbTaXtgb.js>; rel="modulepreload"; nopush, <./_app/immutable/entry/app.SLxdPFfB.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/C1FmrZbK.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/IHki7fMi.js>; rel="modulepreload"; nopush, <./_app/immutable/nodes/0.DJjqGcn4.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/CgU5AtxT.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/BxsunnGz.js>; rel="modulepreload"; nopush, <./_app/immutable/nodes/3.D17s77tE.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/BvTqot6x.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/DJvg-wvF.js>; rel="modulepreload"; nopush, <./_app/immutable/nodes/15.BNAwV-vk.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/Bk1zEF1k.js>; rel="modulepreload"; nopush, <./_app/immutable/chunks/Dwf7rrOS.js>; rel="modulepreload"; nopush
+vary: accept-encoding
+strict-transport-security: max-age=0
+server: cloudflare
+cf-cache-status: DYNAMIC
+content-encoding: br
+cf-ray: a48313e3596ef26e-IAD
+alt-svc: h3=":443"; ma=86400
+

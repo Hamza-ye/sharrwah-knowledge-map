@@ -1,0 +1,19 @@
+{
+ "n": 20,
+ "url": "https://almasdaronline.com/articles/323695",
+ "dir": "items/020-almasdaronline.com",
+ "fetched_at": "2026-10-10T05:03:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://almasdaronline.com/articles/323695",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3436,
+ "cited_in": [
+  "yemen-setup-options/report.md:90",
+  "yemen-setup-options/notes/currency_territory.md:116"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f5df080ea179f6fda32d58a6055c2466d116655656fee74946b6e6838a160e62",
+ "raw_ext": "html"
+}

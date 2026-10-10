@@ -1,0 +1,30 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:19 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+vary: Accept-Encoding
+cf-edge-cache: cache,platform=wordpress
+x-pingback: https://infoalltec.com/xmlrpc.php
+link: <https://infoalltec.com/wp-json/>; rel="https://api.w.org/"
+link: <https://infoalltec.com/wp-json/wp/v2/posts/3630>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://infoalltec.com/?p=3630>; rel=shortlink
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: public, max-age=2678400
+referrer-policy: strict-origin-when-cross-origin
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-cacheable: YES
+age: 105144
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Orl5iExOYCsQpUIxu2Tvttj7X1M59NYgttvH7c4EGREQiR5qpxTT9IQ6RyDm5hZUdnGglm8ZMpRN6X8d8V4RdTTnwXrnUhhaMorxrGwYKWGF1nBan9ROsEMXrTi4KN5Qqw%3D%3D"}]}
+x-cache: HIT
+strict-transport-security: max-age=15768000
+last-modified: Thu, 08 Oct 2026 23:50:55 GMT
+cf-cache-status: HIT
+speculation-rules: "/cdn-cgi/speculation"
+content-encoding: zstd
+cf-ray: a48313f34c984d20-IAD
+alt-svc: h3=":443"; ma=86400
+

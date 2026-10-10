@@ -1,0 +1,1015 @@
+/* YemenPay Payment SDK Scoped Styles - 2026 Enhanced Version */
+:root {
+  --yemenpay-primary: #0ea5e9;
+  --yemenpay-primary-hover: #0284c7;
+  --yemenpay-bg: #0f172a;
+  --yemenpay-card-bg: rgba(30, 41, 59, 0.95);
+  --yemenpay-border: rgba(51, 65, 85, 0.5);
+  --yemenpay-text: #f8fafc;
+  --yemenpay-text-muted: #94a3b8;
+  --yemenpay-input-bg: #1e293b;
+  --yemenpay-font: 'Noto Kufi Arabic', system-ui, -apple-system, sans-serif;
+  --yemenpay-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.yemenpay-modal-container,
+.yemenpay-modal-container *,
+.yemenpay-nested-container,
+.yemenpay-nested-container * {
+  box-sizing: border-box;
+}
+
+.yemenpay-modal-container button,
+.yemenpay-modal-container input,
+.yemenpay-modal-container textarea,
+.yemenpay-nested-container button,
+.yemenpay-nested-container input,
+.yemenpay-nested-container textarea {
+  font-family: var(--yemenpay-font);
+}
+
+/* Modal Layout styles */
+.yemenpay-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-family: var(--yemenpay-font);
+  direction: rtl;
+  padding: 16px;
+}
+
+.yemenpay-modal-backdrop.yemenpay-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.yemenpay-modal-container {
+  background: var(--yemenpay-card-bg);
+  border: 1px solid var(--yemenpay-border);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transform: scale(0.9) translateY(20px);
+  transition: max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: var(--yemenpay-text);
+  position: relative;
+}
+
+.yemenpay-modal-container.yemenpay-wide-layout {
+  max-width: 680px;
+}
+
+.yemenpay-modal-backdrop.yemenpay-open .yemenpay-modal-container {
+  transform: scale(1) translateY(0);
+}
+
+/* Inline Layout styles (Embedded checkout) */
+.yemenpay-inline-container {
+  font-family: var(--yemenpay-font);
+  direction: rtl;
+  background: var(--yemenpay-card-bg);
+  border: 1px solid var(--yemenpay-border);
+  border-radius: 24px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  color: var(--yemenpay-text);
+  position: relative;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: yemenpay-slideDown 0.3s ease-out;
+}
+
+.yemenpay-inline-container.yemenpay-closing {
+  opacity: 0 !important;
+  transform: scale(0.96) translateY(10px) !important;
+}
+
+/* Header */
+.yemenpay-header {
+  padding: 24px 24px 16px;
+  border-bottom: 1px solid var(--yemenpay-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yemenpay-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.yemenpay-title,
+.yemenpay-step-title,
+.yemenpay-section-title,
+.yemenpay-status-title,
+.yemenpay-loader-title {
+  color: var(--yemenpay-text) !important;
+  font-family: var(--yemenpay-font), sans-serif;
+  margin: 0;
+}
+
+.yemenpay-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.yemenpay-step-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 6px 0 2px;
+  text-align: center;
+}
+
+.yemenpay-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+
+.yemenpay-status-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.yemenpay-subtitle {
+  font-size: 12px;
+  color: var(--yemenpay-text-muted);
+  margin: 0;
+}
+
+.yemenpay-price-tag {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.15) 0%, rgba(14, 165, 233, 0.05) 100%);
+  border: 1px solid var(--yemenpay-border);
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--yemenpay-primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.yemenpay-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--yemenpay-text-muted);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--yemenpay-transition);
+}
+
+.yemenpay-close-btn:hover {
+  background: rgba(239, 68, 68, 0.15) !important;
+  color: #ef4444 !important;
+  transform: rotate(90deg);
+}
+
+/* Steps Indicator */
+.yemenpay-steps-bar {
+  padding: 16px 24px;
+  background: rgba(15, 23, 42, 0.2);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.yemenpay-steps-bar::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  right: 24px;
+  height: 2px;
+  background: var(--yemenpay-border);
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.yemenpay-steps-progress {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  height: 2px;
+  background: var(--yemenpay-primary);
+  z-index: 2;
+  transform: translateY(-50%);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.yemenpay-step-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--yemenpay-input-bg);
+  border: 2px solid var(--yemenpay-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--yemenpay-text-muted);
+  z-index: 3;
+  transition: var(--yemenpay-transition);
+}
+
+.yemenpay-step-dot.active {
+  background: var(--yemenpay-bg);
+  border-color: var(--yemenpay-primary);
+  color: var(--yemenpay-primary);
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
+}
+
+.yemenpay-step-dot.completed {
+  background: var(--yemenpay-primary);
+  border-color: var(--yemenpay-primary);
+  color: #fff;
+}
+
+/* Content Container */
+.yemenpay-wizard-content {
+  position: relative;
+  min-height: auto;
+  overflow: visible;
+}
+
+.yemenpay-step-panel {
+  position: absolute;
+  inset: 0;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(30px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.yemenpay-step-panel.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  position: relative;
+}
+
+/* For sliding back */
+.yemenpay-step-panel.slide-out-left {
+  transform: translateX(-30px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Circular Wallets Grid */
+.yemenpay-wallet-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.yemenpay-wallet-card {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--yemenpay-input-bg);
+  border: 2px solid var(--yemenpay-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--yemenpay-transition);
+  position: relative;
+}
+
+.yemenpay-wallet-card:hover {
+  border-color: var(--yemenpay-primary);
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.yemenpay-wallet-card.selected {
+  border: 4px solid var(--yemenpay-primary);
+  background: rgba(14, 165, 233, 0.15);
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
+}
+
+.yemenpay-wallet-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Inputs */
+.yemenpay-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.yemenpay-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--yemenpay-text-muted);
+}
+
+.yemenpay-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.yemenpay-input-icon {
+  position: absolute;
+  right: 14px;
+  color: var(--yemenpay-text-muted);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.yemenpay-input {
+  width: 100%;
+  background: var(--yemenpay-input-bg);
+  border: 1px solid var(--yemenpay-border);
+  border-radius: 12px;
+  padding: 12px 42px 12px 14px;
+  color: var(--yemenpay-text);
+  font-family: var(--yemenpay-font);
+  font-size: 14px;
+  transition: var(--yemenpay-transition);
+}
+
+.yemenpay-input:focus {
+  outline: none;
+  border-color: var(--yemenpay-primary);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+}
+
+.yemenpay-input.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.yemenpay-error-msg {
+  color: #ef4444;
+  font-size: 11px;
+  margin-top: 4px;
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+
+.yemenpay-error-msg.visible {
+  display: flex;
+}
+
+/* Info Box / Step 2 & 3 details */
+.yemenpay-info-box {
+  background: var(--yemenpay-input-bg) !important;
+  border: 1px solid var(--yemenpay-border);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 481px) {
+  .yemenpay-modal-container .yemenpay-info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    text-align: right;
+  }
+}
+
+.yemenpay-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.yemenpay-info-label {
+  color: var(--yemenpay-text-muted) !important;
+}
+
+.yemenpay-info-value {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  word-break: break-word;
+  color: var(--yemenpay-text) !important;
+}
+
+.yemenpay-copy-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--yemenpay-bg) !important;
+  border: 1px solid var(--yemenpay-border);
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+
+.yemenpay-copy-btn {
+  background: transparent;
+  border: none;
+  color: var(--yemenpay-primary);
+  cursor: pointer;
+  padding: 2px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--yemenpay-transition);
+}
+
+.yemenpay-copy-btn:hover {
+  transform: scale(1.15);
+  color: var(--yemenpay-primary-hover);
+}
+
+.yemenpay-copy-btn.copied {
+  color: #10b981 !important;
+}
+
+/* Step 2 Edit Button with Pencil */
+.yemenpay-edit-btn {
+  background: linear-gradient(135deg, var(--yemenpay-input-bg) 0%, var(--yemenpay-border) 50%, var(--yemenpay-input-bg) 100%);
+  background-size: 200% auto;
+  background-position: right center;
+  border: 1px solid var(--yemenpay-border);
+  color: var(--yemenpay-text-muted);
+  font-family: var(--yemenpay-font);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  transition: background-position 0.4s ease, transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.yemenpay-edit-btn:hover {
+  background-position: left center;
+  color: var(--yemenpay-text);
+  border-color: var(--yemenpay-primary);
+  transform: translateY(-1px);
+}
+
+/* Footer Controls */
+.yemenpay-footer {
+  padding: 12px 24px 16px;
+  border-top: 1px solid var(--yemenpay-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.yemenpay-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-family: var(--yemenpay-font);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-position 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.yemenpay-btn-primary {
+  background: linear-gradient(135deg, var(--yemenpay-primary) 0%, var(--yemenpay-primary-hover) 50%, var(--yemenpay-primary) 100%);
+  background-size: 200% auto;
+  background-position: right center;
+  color: #fff;
+  flex: 1;
+}
+
+.yemenpay-btn-primary:hover:not(:disabled) {
+  background-position: left center;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.yemenpay-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.yemenpay-btn-secondary {
+  background: linear-gradient(135deg, var(--yemenpay-input-bg) 0%, var(--yemenpay-border) 50%, var(--yemenpay-input-bg) 100%);
+  background-size: 200% auto;
+  background-position: right center;
+  border: 1px solid var(--yemenpay-border);
+  color: var(--yemenpay-text-muted);
+}
+
+.yemenpay-btn-secondary:hover {
+  background-position: left center;
+  color: var(--yemenpay-text);
+  border-color: var(--yemenpay-text-muted);
+  transform: translateY(-1px);
+}
+
+/* Loader Screen */
+.yemenpay-loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 260px;
+  height: auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.yemenpay-circular-progress {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.yemenpay-progress-svg {
+  transform: rotate(-90deg);
+  width: 100px;
+  height: 100px;
+}
+
+.yemenpay-progress-circle-bg {
+  fill: none;
+  stroke: var(--yemenpay-border);
+  stroke-width: 6;
+}
+
+.yemenpay-progress-circle-val {
+  fill: none;
+  stroke: var(--yemenpay-primary);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 295.3;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.yemenpay-timer-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--yemenpay-text);
+}
+
+.yemenpay-loader-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.yemenpay-loader-subtitle {
+  font-size: 12px;
+  color: var(--yemenpay-text-muted);
+  margin: 4px 0 0;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+/* Status Screens */
+.yemenpay-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.yemenpay-status-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+
+.yemenpay-status-icon.success {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
+  animation: yemenpay-scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.yemenpay-status-icon.failed {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.15);
+  animation: yemenpay-shakeUp 0.5s ease-in-out;
+}
+
+.yemenpay-status-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.yemenpay-status-desc {
+  font-size: 13px;
+  color: var(--yemenpay-text-muted);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
+}
+
+.yemenpay-payment-id-box {
+  background: var(--yemenpay-input-bg);
+  border: 1px dashed var(--yemenpay-border);
+  border-radius: 12px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 4px;
+}
+
+.yemenpay-payment-id-val {
+  font-family: monospace;
+  font-size: 14px;
+  color: var(--yemenpay-text);
+  letter-spacing: 0.5px;
+}
+
+.yemenpay-contact-buttons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 8px;
+}
+
+.yemenpay-contact-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: var(--yemenpay-transition);
+}
+
+.yemenpay-contact-btn.whatsapp {
+  background: #25d366;
+}
+
+.yemenpay-contact-btn.whatsapp:hover {
+  background: #20ba5a;
+}
+
+.yemenpay-contact-btn.email {
+  background: #3b82f6;
+}
+
+.yemenpay-contact-btn.email:hover {
+  background: #2563eb;
+}
+
+.yemenpay-contact-btn.telegram { background: #0088cc; }
+.yemenpay-contact-btn.telegram:hover { background: #0077b3; }
+
+.yemenpay-contact-btn.facebook { background: #1877f2; }
+.yemenpay-contact-btn.facebook:hover { background: #166fe5; }
+
+.yemenpay-contact-btn.instagram { background: #e1306c; }
+.yemenpay-contact-btn.instagram:hover { background: #c13584; }
+
+.yemenpay-contact-btn.call { background: #64748b; }
+.yemenpay-contact-btn.call:hover { background: #475569; }
+
+/* Animations */
+@keyframes yemenpay-scaleUp {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes yemenpay-shakeUp {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+@keyframes yemenpay-slideDown {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Copy notification toast */
+.yemenpay-toast {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  background: var(--yemenpay-card-bg) !important;
+  border: 1.5px solid var(--yemenpay-primary) !important;
+  color: var(--yemenpay-text) !important;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.yemenpay-toast.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Custom Styled Select Dropdown (Step 2) */
+.yemenpay-custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.yemenpay-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--yemenpay-input-bg);
+  border: 1px solid var(--yemenpay-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--yemenpay-text);
+  transition: var(--yemenpay-transition);
+}
+
+.yemenpay-select-trigger:hover {
+  border-color: var(--yemenpay-primary);
+}
+
+.yemenpay-select-options {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  right: 0;
+  background-color: var(--yemenpay-card-bg);
+  border: 1px solid var(--yemenpay-border);
+  border-radius: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.yemenpay-select-options::-webkit-scrollbar {
+  width: 6px;
+}
+.yemenpay-select-options::-webkit-scrollbar-track {
+  background: transparent;
+}
+.yemenpay-select-options::-webkit-scrollbar-thumb {
+  background: var(--yemenpay-border);
+  border-radius: 3px;
+}
+.yemenpay-select-options::-webkit-scrollbar-thumb:hover {
+  background: var(--yemenpay-primary);
+}
+
+.yemenpay-select-options.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.yemenpay-select-option {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.15s;
+  text-align: right;
+  color: var(--yemenpay-text);
+}
+
+.yemenpay-select-option:hover {
+  background-color: var(--yemenpay-input-bg);
+  color: var(--yemenpay-primary);
+}
+
+.yemenpay-select-option.selected {
+  background-color: var(--yemenpay-primary);
+  color: #ffffff;
+}
+
+/* Mobile Responsiveness Media Queries */
+@media (max-width: 480px) {
+  .yemenpay-modal-container,
+  .yemenpay-inline-container {
+    border-radius: 16px;
+  }
+  .yemenpay-header {
+    padding: 16px 16px 12px;
+  }
+  .yemenpay-steps-bar {
+    padding: 12px 16px;
+  }
+  .yemenpay-step-panel {
+    padding: 16px;
+    gap: 16px;
+  }
+  .yemenpay-footer {
+    padding: 12px 16px 16px;
+  }
+  .yemenpay-wallet-grid {
+    gap: 10px;
+  }
+  .yemenpay-wallet-card {
+    width: 56px;
+    height: 56px;
+  }
+  .yemenpay-wallet-logo {
+    width: 36px;
+    height: 36px;
+  }
+  .yemenpay-loader-container {
+    min-height: 220px;
+    gap: 14px;
+  }
+  .yemenpay-circular-progress {
+    width: 80px;
+    height: 80px;
+  }
+  .yemenpay-progress-svg {
+    width: 80px;
+    height: 80px;
+  }
+  .yemenpay-timer-text {
+    font-size: 16px;
+  }
+  .yemenpay-info-row {
+    font-size: 12px;
+  }
+  .yemenpay-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+/* Custom CSS Tooltip depending on the theme */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.85);
+  background: var(--yemenpay-input-bg);
+  color: var(--yemenpay-text);
+  border: 1px solid var(--yemenpay-border);
+  padding: 5px 8px;
+  border-radius: 8px;
+  font-family: var(--yemenpay-font), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+}
+
+[data-tooltip]:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+
+/* Tooltip positions */
+[data-tooltip-pos="bottom"]::before {
+  top: 125%;
+  bottom: auto;
+}
+[data-tooltip-pos="left"]::before {
+  left: auto;
+  right: 125%;
+  bottom: 50%;
+  transform: translateY(50%) scale(0.85);
+}
+[data-tooltip-pos="left"]:hover::before {
+  transform: translateY(50%) scale(1);
+}
+
+/* Exit Confirmation Overlay & Card */
+.yemenpay-confirm-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 100001;
+}
+
+.yemenpay-confirm-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.yemenpay-confirm-card {
+  background: var(--yemenpay-card-bg);
+  border: 1px solid var(--yemenpay-border);
+  border-radius: 20px;
+  padding: 24px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transform: scale(0.9);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-align: center;
+}
+
+.yemenpay-confirm-overlay.open .yemenpay-confirm-card {
+  transform: scale(1);
+}
+
+/* Modal Shake Animation for Sticky Layouts */
+.yemenpay-modal-container.yemenpay-shake {
+  animation: yemenpay-modalShake 0.4s ease-in-out;
+}
+
+@keyframes yemenpay-modalShake {
+  0%, 100% { transform: scale(1) translateX(0); }
+  20%, 60% { transform: scale(1) translateX(-8px); }
+  40%, 80% { transform: scale(1) translateX(8px); }
+}
+

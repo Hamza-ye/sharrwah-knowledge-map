@@ -1,0 +1,25 @@
+{
+ "n": 70,
+ "url": "https://da5m.com/pages/pay",
+ "dir": "items/070-da5m.com",
+ "fetched_at": "2026-10-10T05:03:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://da5m.com/pages/pay",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 28432,
+ "cited_in": [
+  "yemen-setup-options/report.md:7",
+  "yemen-setup-options/report.md:84",
+  "yemen-setup-options/report.md:118",
+  "yemen-setup-options/report.md:144",
+  "yemen-setup-options/notes/cash_logistics_practice.md:52",
+  "yemen-setup-options/notes/cash_logistics_practice.md:93",
+  "yemen-setup-options/notes/cash_logistics_practice.md:145",
+  "yemen-setup-options/notes/cash_logistics_practice.md:239"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8ed28b6b275d2809de513dbd3a484e3ad85097b928442d7e54f29974432a17bb",
+ "raw_ext": "html"
+}

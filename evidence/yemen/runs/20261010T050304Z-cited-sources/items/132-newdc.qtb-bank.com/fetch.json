@@ -1,0 +1,18 @@
+{
+ "n": 132,
+ "url": "https://newdc.qtb-bank.com:5052/PayBills",
+ "dir": "items/132-newdc.qtb-bank.com",
+ "fetched_at": "2026-10-10T05:03:21Z",
+ "curl_exit": 35,
+ "curl_error": "curl: (35) Recv failure: Connection reset by peer",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:154"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

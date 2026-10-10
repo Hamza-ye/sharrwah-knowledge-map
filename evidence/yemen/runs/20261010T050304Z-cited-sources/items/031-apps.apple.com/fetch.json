@@ -1,0 +1,20 @@
+{
+ "n": 31,
+ "url": "https://apps.apple.com/ae/app/bazzarry-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%D9%8A/id1631702675?l=ar",
+ "dir": "items/031-apps.apple.com",
+ "fetched_at": "2026-10-10T05:03:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://apps.apple.com/ae/app/bazzarry-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%D9%8A/id1631702675?l=ar",
+ "content_type": "text/html",
+ "bytes": 48874,
+ "cited_in": [
+  "yemen-setup-options/report.md:82",
+  "yemen-setup-options/report.md:204",
+  "yemen-setup-options/notes/cash_logistics_practice.md:17"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ad6b3ce4a0e8d26033d13413cfbed901319ab4e443afe6f0a8201f90e4c83bfc",
+ "raw_ext": "html"
+}

@@ -1,0 +1,24 @@
+{
+ "n": 211,
+ "url": "https://www.cash.com.ye/en/cash-pay-electronic-payment-service",
+ "rendered_at": "2026-10-10T05:10:59Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 200,
+ "final_url": "https://www.cash.com.ye/en/cash-pay-electronic-payment-service",
+ "title": "Cash Pay – Electronic Payment Service - Cash",
+ "text_chars": 2527,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "6b0e49c76055dd338166b79b49a412b13e18396c1671d342b75fee376f959687",
+ "browser_headers": {
+  "cache-control": "no-cache, private",
+  "content-encoding": "gzip",
+  "content-length": "11825",
+  "content-type": "text/html; charset=utf-8",
+  "date": "Sat, 10 Oct 2026 05:11:00 GMT",
+  "host-header": "c2hhcmVkLmJsdWVob3N0LmNvbQ==",
+  "server": "nginx/1.29.8",
+  "vary": "Accept-Encoding",
+  "x-proxy-cache": "MISS",
+  "x-server-cache": "true"
+ }
+}

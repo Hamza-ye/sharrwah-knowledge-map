@@ -1,0 +1,18 @@
+{
+ "n": 87,
+ "url": "https://exrye.com/aden",
+ "dir": "items/087-exrye.com",
+ "fetched_at": "2026-10-10T05:03:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://exrye.com/aden",
+ "content_type": "text/html",
+ "bytes": 3627,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:189"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ce891976ffda1299ac737babd1c6bde132888dca250607d8c12845921240fcd2",
+ "raw_ext": "html"
+}

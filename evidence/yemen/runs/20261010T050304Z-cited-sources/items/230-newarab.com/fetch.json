@@ -1,0 +1,18 @@
+{
+ "n": 230,
+ "url": "https://www.newarab.com/news/houthi-banknote-yemen-draws-rebuke-adens-central-bank",
+ "dir": "items/230-newarab.com",
+ "fetched_at": "2026-10-10T05:03:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.newarab.com/news/houthi-banknote-yemen-draws-rebuke-adens-central-bank",
+ "content_type": "text/html",
+ "bytes": 457,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:237"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d9fcbbdc83a77e6bf4c31bf474438e83d1c95ba3acb040fb8c853493ea5cd7f8",
+ "raw_ext": "html"
+}

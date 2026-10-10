@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Date: Sat, 10 Oct 2026 05:03:47 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Access-Control-Allow-Origin: /en/service/17
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: deny
+Strict-Transport-Security: max-age=631138519
+Content-Security-Policy: base-uri 'self'; frame-ancestors 'self'; form-action 'self'; navigate-to 'none'
+Set-Cookie: PHPSESSID=55fe5c55386724da29bae837d890c025; path=/
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+Content-Type: text/html;charset=utf-8;
+

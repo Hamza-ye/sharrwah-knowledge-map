@@ -1,0 +1,38 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 308 
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.storyblok.com
+content-type: text/plain
+date: Sat, 10 Oct 2026 05:03:46 GMT
+location: /help-center/payments/restricted-countries-and-international-payment-types
+permissions-policy: camera=(), microphone=(self "https://app.spara.co"), geolocation=(), interest-cohort=()
+refresh: 0;url=/help-center/payments/restricted-countries-and-international-payment-types
+server: Vercel
+strict-transport-security: max-age=63072000; preload
+x-content-type-options: nosniff
+x-dns-prefetch-control: on
+x-vercel-id: iad1::lxpl7-1791608626769-2464ae3c303f
+x-xss-protection: 1; mode=block
+
+HTTP/2 200 
+age: 335
+cache-control: public, max-age=0, must-revalidate
+content-encoding: br
+content-security-policy: frame-ancestors 'self' https://app.storyblok.com
+content-type: text/html; charset=utf-8
+date: Sat, 10 Oct 2026 04:58:11 GMT
+etag: W/"12htf9zko1d8mkd"
+permissions-policy: camera=(), microphone=(self "https://app.spara.co"), geolocation=(), interest-cohort=()
+server: Vercel
+strict-transport-security: max-age=63072000; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-content-type-options: nosniff
+x-dns-prefetch-control: on
+x-matched-path: /[lang]/help-center/[category]/[slug]
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-vercel-cache: STALE
+x-vercel-id: iad1::iad1::wpg7n-1791608626903-60a515e42f9d
+x-xss-protection: 1; mode=block
+

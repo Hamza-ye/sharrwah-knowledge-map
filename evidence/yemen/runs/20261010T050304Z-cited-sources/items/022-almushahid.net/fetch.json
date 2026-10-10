@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://almushahid.net/123951/",
+ "dir": "items/022-almushahid.net",
+ "fetched_at": "2026-10-10T05:03:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://almushahid.net/123951/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 32169,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:231"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bb6ac6ac0b45d0fe2e9dcd69348fd7ec4e7d3047ca47279f51d32d57a3d3f73a",
+ "raw_ext": "html"
+}

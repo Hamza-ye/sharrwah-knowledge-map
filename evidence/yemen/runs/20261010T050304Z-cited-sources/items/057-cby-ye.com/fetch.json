@@ -1,0 +1,19 @@
+{
+ "n": 57,
+ "url": "https://cby-ye.com/files/693a7845e7f26.pdf",
+ "dir": "items/057-cby-ye.com",
+ "fetched_at": "2026-10-10T05:03:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://cby-ye.com/files/693a7845e7f26.pdf",
+ "content_type": "application/pdf",
+ "bytes": 3311835,
+ "cited_in": [
+  "yemen-setup-options/report.md:46",
+  "yemen-setup-options/notes/regulation_licensing.md:227"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "4075bb65d8ea57071b33229bdfb2c98e7b107ab07dd4a9ad8bb814a813de01c0",
+ "raw_ext": "pdf"
+}

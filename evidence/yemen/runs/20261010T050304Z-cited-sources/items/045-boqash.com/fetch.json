@@ -1,0 +1,18 @@
+{
+ "n": 45,
+ "url": "https://boqash.com/price-currency/",
+ "dir": "items/045-boqash.com",
+ "fetched_at": "2026-10-10T05:03:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://boqash.com/price-currency/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 60169,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:189"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6b757320d365ca621804dc0381b0b6f50bcb1e00f23ba2ac73509a14ce566e25",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 195,
+ "url": "https://www.aiddata.org/blog/leveraging-remittances-for-economic-recovery-in-yemen",
+ "dir": "items/195-aiddata.org",
+ "fetched_at": "2026-10-10T05:03:34Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.aiddata.org/blog/leveraging-remittances-for-economic-recovery-in-yemen",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 12709,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:315"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9b8ca6a109b1c2ecafb2afcba539536670ed3bc0d97f7150ab09690faad879af",
+ "raw_ext": "html"
+}

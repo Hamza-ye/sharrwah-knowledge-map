@@ -1,0 +1,27 @@
+{
+ "n": 249,
+ "url": "https://www.theigc.org/sites/default/files/2026-02/YEM-24338%20From%20cash%20to%20capital.pdf",
+ "dir": "items/249-theigc.org",
+ "fetched_at": "2026-10-10T05:03:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.theigc.org/sites/default/files/2026-02/YEM-24338%20From%20cash%20to%20capital.pdf",
+ "content_type": "application/pdf",
+ "bytes": 2400476,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:75",
+  "yemen-setup-options/notes/currency_territory.md:76",
+  "yemen-setup-options/notes/currency_territory.md:79",
+  "yemen-setup-options/notes/currency_territory.md:80",
+  "yemen-setup-options/notes/currency_territory.md:87",
+  "yemen-setup-options/notes/currency_territory.md:93",
+  "yemen-setup-options/notes/currency_territory.md:95",
+  "yemen-setup-options/notes/currency_territory.md:127",
+  "yemen-setup-options/notes/currency_territory.md:191",
+  "yemen-setup-options/notes/currency_territory.md:234"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "64a42c62991785d806845a933c4befa9b805b288ca6bcdd30515b87ee3d531bc",
+ "raw_ext": "pdf"
+}

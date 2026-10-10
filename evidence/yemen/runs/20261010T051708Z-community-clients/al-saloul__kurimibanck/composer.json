@@ -1,0 +1,32 @@
+{
+    "name": "al-saloul/kuraimibank-payment",
+    "description": "The description",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "AlSaloul\\KuraimibankPayment\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammed Alsaloul",
+            "email": "eng.alsaloul.mohammed@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": "^11",
+        "illuminate/http": "^11.14",
+        "illuminate/validation": "^11.14",
+        "illuminate/routing": "^11.14"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlSaloul\\KuraimibankPayment\\ServiceProvider"
+            ]
+        }
+    }
+}

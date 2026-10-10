@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: keycdn
+date: Sat, 10 Oct 2026 05:03:24 GMT
+content-type: application/pdf
+content-length: 167042
+x-amz-id-2: /1YrQ/2774lelMfbD+hA/MHRMTKc4v1GTAfeeQ0eUQZqwuk9UdhYJpwNXo3zqmmENQ7MnMK0EOY=
+x-amz-request-id: PP4EC77HKR87A1HX
+last-modified: Tue, 10 Feb 2026 12:00:48 GMT
+etag: "e0e85819abc9a750837fc71ea210d127"
+expires: Sat, 10 Oct 2026 06:03:24 GMT
+cache-control: max-age=3600
+link: <http://q4live.s205.clientfiles.s3-website-us-east-1.amazonaws.com/370993272/files/doc_financials/2025/q4/Jumia-EX-99-1-Q4-2025-2-10-2026-Final-v5.pdf>; rel="canonical"
+x-cache: MISS
+x-shield: active
+x-edge-location: usny
+access-control-allow-origin: *
+accept-ranges: bytes
+

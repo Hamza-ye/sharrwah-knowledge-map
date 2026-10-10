@@ -1,0 +1,19 @@
+{
+ "n": 279,
+ "url": "https://yeniyemen.net/p-271984",
+ "dir": "items/279-yeniyemen.net",
+ "fetched_at": "2026-10-10T05:03:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yeniyemen.net/p-271984",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 18823,
+ "cited_in": [
+  "yemen-setup-options/report.md:52",
+  "yemen-setup-options/notes/regulation_licensing.md:281"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "15f524be5f1e22e09df7947e7029af7f7cf6db681a8dcb7521391fede78c846f",
+ "raw_ext": "html"
+}

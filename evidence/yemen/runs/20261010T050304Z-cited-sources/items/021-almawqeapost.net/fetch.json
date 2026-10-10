@@ -1,0 +1,18 @@
+{
+ "n": 21,
+ "url": "https://almawqeapost.net/reports/53255",
+ "dir": "items/021-almawqeapost.net",
+ "fetched_at": "2026-10-10T05:03:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://almawqeapost.net/reports/53255",
+ "content_type": "text/html;charset=utf-8;",
+ "bytes": 27159,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:237"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "68b72bd9c1212bc4050777119c4d67a08ec071872c88db18ed853385f2b10716",
+ "raw_ext": "html"
+}

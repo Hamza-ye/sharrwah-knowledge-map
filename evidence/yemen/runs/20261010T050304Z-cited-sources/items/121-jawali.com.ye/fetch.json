@@ -1,0 +1,22 @@
+{
+ "n": 121,
+ "url": "https://jawali.com.ye/en/about",
+ "dir": "items/121-jawali.com.ye",
+ "fetched_at": "2026-10-10T05:03:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://jawali.com.ye/en/about",
+ "content_type": "text/html;charset=utf-8;",
+ "bytes": 16973,
+ "cited_in": [
+  "yemen-setup-options/report.md:198",
+  "yemen-setup-options/notes/wallets_emoney.md:98",
+  "yemen-setup-options/notes/wallets_emoney.md:221",
+  "yemen-setup-options/notes/wallets_emoney.md:382",
+  "yemen-setup-options/notes/wallets_emoney.md:441"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "39170963755c6beb0d4a3594e8dbb0a0f015c06e3e58817575d361b7888b30e7",
+ "raw_ext": "html"
+}

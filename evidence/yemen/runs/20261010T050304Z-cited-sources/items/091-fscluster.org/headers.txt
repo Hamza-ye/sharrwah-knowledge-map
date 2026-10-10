@@ -1,0 +1,24 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+content-type: application/pdf
+date: Thu, 08 Oct 2026 16:30:59 GMT
+content-encoding: br
+etag: W/"11c029-64efc580c22ce"
+server: Apache/2.4.68 (Amazon Linux)
+x-content-type-options: nosniff
+last-modified: Thu, 09 Apr 2026 00:46:16 GMT
+expires: Fri, 08 Oct 2027 16:30:59 GMT
+cache-control: max-age=31536000
+vary: Accept-Encoding
+x-cache: Hit from cloudfront
+via: 1.1 cb8ef8ab2cbd348b17e5331233140ba8.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD61-P11
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: 8RM1qAa0cb7XPfz5UJY_B38oxqXqEsaqESlFJbOpRDuA-NfVF7Cf-w==
+age: 131537
+x-xss-protection: 1; mode=block
+x-frame-options: SAMEORIGIN
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000
+

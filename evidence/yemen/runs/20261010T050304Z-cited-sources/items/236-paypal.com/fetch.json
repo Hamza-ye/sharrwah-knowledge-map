@@ -1,0 +1,18 @@
+{
+ "n": 236,
+ "url": "https://www.paypal.com/ye/webapps/mpp/home",
+ "dir": "items/236-paypal.com",
+ "fetched_at": "2026-10-10T05:03:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.paypal.com/ye/webapps/mpp/home",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 32408,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:305"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1f3c4d2e700c8dd5eccc7582ce606b21e3f21ac71cc03482509a8c9fec5c8a32",
+ "raw_ext": "html"
+}

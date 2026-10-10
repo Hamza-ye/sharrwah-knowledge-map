@@ -1,0 +1,23 @@
+{
+ "n": 163,
+ "url": "https://sanaacenter.org/the-yemen-review/july-sept-2024/23500",
+ "dir": "items/163-sanaacenter.org",
+ "fetched_at": "2026-10-10T05:03:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://sanaacenter.org/the-yemen-review/july-sept-2024/23500",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 52802,
+ "cited_in": [
+  "yemen-setup-options/report.md:173",
+  "yemen-setup-options/notes/banks_exchange_cards.md:65",
+  "yemen-setup-options/notes/banks_exchange_cards.md:109",
+  "yemen-setup-options/notes/banks_exchange_cards.md:168",
+  "yemen-setup-options/notes/banks_exchange_cards.md:174",
+  "yemen-setup-options/notes/banks_exchange_cards.md:204"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "afcef7a866ffb36e3aada91fb70c97cd348d1e0af7eddbeb7f7bc7ca52ebefae",
+ "raw_ext": "html"
+}

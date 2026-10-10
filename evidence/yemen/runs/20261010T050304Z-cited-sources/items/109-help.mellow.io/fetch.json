@@ -1,0 +1,18 @@
+{
+ "n": 109,
+ "url": "https://help.mellow.io/en/articles/9647437-tested-bank-cards-of-yemen",
+ "dir": "items/109-help.mellow.io",
+ "fetched_at": "2026-10-10T05:03:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.mellow.io/en/articles/9647437-tested-bank-cards-of-yemen",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 19395,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:247"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3a131f5a4b33c6da43f8fc442fc9b78f06b64e63a292a84b3f4c0032f713a460",
+ "raw_ext": "html"
+}

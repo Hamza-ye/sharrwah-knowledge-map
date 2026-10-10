@@ -1,0 +1,29 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 05:03:10 GMT
+content-type: text/html; charset=iso-8859-1
+location: http://barran.press/news/10727
+server: cloudflare
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MttdFgZBwPKKBj3%2BwCI6gaDkxYpYx1b4iqfj93NwzaPDTlUAM1d4c79cVvyEW9mfZFKVyZRegcFk9ARo4Eg8Ke2pABtS4vyNaprJMfEN45oIHI9RVfty1gl%2Bye0piXw%3D"}]}
+cf-cache-status: DYNAMIC
+cf-ray: a48313b8aad3a5f8-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 200 OK
+date: Sat, 10 Oct 2026 05:03:10 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+x-powered-by: PHP/8.3.23
+cache-control: no-cache, private
+set-cookie: XSRF-TOKEN=eyJpdiI6IldCWnVWVFVJUFYyRkladmpZWldmcVE9PSIsInZhbHVlIjoiUk5zblhBZ2ZDRm53U3RnZTYyR05jOCtnRHlQMldHMUcvVkNWMGdZTXpPVGNvbDA2Z2dJMGxwYVRNOGM2T1J4b2dSU05ad2JFcXZWc2EyYUpKN084Qnp0WVhYbmZKeW56YUV1UjUxeFFlTjhTR2FCVXJ2Qml1NHhYWEU1TDNwL3YiLCJtYWMiOiI3MmJkZTM2N2EwOGEzNjU4NTI1MmQ0NmY4MDlhMzdmOGFlZjY2MjlmNzExODVmY2ZlYTc3NTMwNDZjN2ZlNmU2IiwidGFnIjoiIn0%3D; expires=Sat, 10 Oct 2026 07:03:10 GMT; Max-Age=7200; path=/; samesite=lax
+set-cookie: barranpress_session=bckm4LiQkY9uXBi1apsDVB1RYnGTSyVT1EDkJOZc; expires=Sat, 10 Oct 2026 07:03:10 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ru77d7B7DAahNDCA9FH1Ph91%2FL4rEgsJ%2BJS%2BofdgnrCOU%2BSkcsWNR7KCeUzZvSECMShWzczbtoT5gli2L3no%2F%2BGUzop1UtHQhR8r8fULW1Gk5ODc5fqOr%2BHUM8eRJ8o%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+content-encoding: zstd
+cf-ray: a48313b96e2d13a0-ORD
+alt-svc: h3=":443"; ma=86400
+transfer-encoding: chunked
+

@@ -1,0 +1,18 @@
+{
+ "n": 144,
+ "url": "https://play.google.com/store/apps/details?id=com.one.onecustomer&hl=en_US",
+ "dir": "items/144-play.google.com",
+ "fetched_at": "2026-10-10T05:03:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=com.one.onecustomer&hl=en_US",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 188790,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:109"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b441cb35fd70f667831fc8373b9179f565c1f5fc47939859d08af4ff2043b310",
+ "raw_ext": "html"
+}

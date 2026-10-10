@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+cache-control: public, s-maxage=604800, stale-while-revalidate=86400, max-age=3600
+vary: Accept-Encoding
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+referrer-policy: strict-origin-when-cross-origin
+permissions-policy: camera=(), microphone=(), geolocation=()
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://r.wdfl.co https://news.google.com https://static.cloudflareinsights.com https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self'; connect-src 'self' https://api.mwm.ai https://itunes.apple.com https://www.google-analytics.com https://analytics.google.com https://prod.spark-api.mwm-publishing-platform.mwmwebapis.com https://region1.google-analytics.com https://prod.events.mwm-publishing-platform.mwmwebapis.com https://prod.account.mwm-publishing-platform.mwmwebapis.com https://bded8a3c6ae-1-1053047382554.us-central1.run.app https://ov-1d104299d2a447049cdc73700c9309f7.ecs.us-west-2.on.aws https://connect.facebook.net https://www.google.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://www.facebook.com https://ad.doubleclick.net; media-src 'self' https://fastly.mwm-storage.mwmcdn.com; frame-src 'self' https://www.google.com https://td.doubleclick.net https://www.linkedin.com https://www.youtube-nocookie.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'
+content-type: text/html;charset=utf-8
+x-cloud-trace-context: d94aab8ce4c0f550e48ced5eee51e38e
+date: Sat, 10 Oct 2026 05:03:21 GMT
+server: Google Frontend
+via: 1.1 google
+content-encoding: br
+alt-svc: h3=":443"; ma=2592000
+

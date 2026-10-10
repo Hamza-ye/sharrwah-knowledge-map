@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:30 GMT
+content-type: text/html; charset=UTF-8
+link: <https://sanctionsnews.bakermckenzie.com/wp-json/>; rel="https://api.w.org/", <https://sanctionsnews.bakermckenzie.com/wp-json/wp/v2/posts/4559>; rel="alternate"; title="JSON"; type="application/json", <https://sanctionsnews.bakermckenzie.com/?p=4559>; rel=shortlink
+cf-ray: a4831436dbd0d6fd-IAD
+cf-cache-status: DYNAMIC
+content-encoding: gzip
+server: cloudflare
+strict-transport-security: max-age=31536000; includeSubDomains
+vary: Accept-Encoding
+content-security-policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com; style-src 'self' 'unsafe-inline' 'unsafe-eval' cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' 'unsafe-inline' 'unsafe-eval' fonts.gstatic.com use.typekit.net https://fonts.gstatic.com data:; media-src 'self' 'unsafe-inline' 'unsafe-eval' ssl.gstatic.com *.bakermckenzie-podcastlibrary-wordpress.onenorth.com bakermckenzie-podcastlibrary-wordpress.onenorth.com blob: ; connect-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com translate.googleapis.com stats.g.doubleclick.net cdn.cookielaw.org *.mktoresp.com blob: ; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: gateway.zscalertwo.net *.google.com *.gstatic.com bakermckenzie-wordpress.admin.onenorth.com *.googletagmanager.com *.siteimprove.com siteimproveanalytics.com cdnjs.cloudflare.com *.typekit.net translate.google.com *.google-analytics.com *.twitter.com static.ads-twitter.com munchkin.marketo.net cdn.cookielaw.org snap.licdn.com *.ceros.com connect.facebook.net *.cloudfront.net *.onistaged.com; img-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: filesystem: *.bakermckenzie.com bakermckenzie.com *.googletagmanager.com gstatic.com *.gstatic.com *.typekit.net *.gravatar.com *.twitter.com translate.google.com *.google-analytics.com *.siteimproveanalytics.io px.ads.linkedin.com p.adsymptotic.com  cdn.cookielaw.org *.sbmckenziems.wpengine.com; frame-src 'self' gateway.zscalertwo.net *.spotify.com *.youtube.com *.vbrick.com *.bryter.io *.bakermckenzie.com *.bakerxchange.com bakerxchange.com *.twitter.com *.youtube-nocookie.com *.vimeo.com *.google.com *.googletagmanager.com app-static.turtl.co view.ceros.com
+referrer-policy: no-referrer-when-downgrade
+x-content-type-options: nosniff
+x-frame-options: sameorigin
+x-pass-why: custom-path
+x-pingback: 
+x-xss-protection: 1; mode=block
+

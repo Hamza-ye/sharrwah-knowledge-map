@@ -1,0 +1,23 @@
+{
+ "n": 115,
+ "url": "https://home.treasury.gov/news/press-releases/sb0092",
+ "dir": "items/115-home.treasury.gov",
+ "fetched_at": "2026-10-10T05:03:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://home.treasury.gov/news/press-releases/sb0092",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 18775,
+ "cited_in": [
+  "yemen-setup-options/report.md:11",
+  "yemen-setup-options/report.md:60",
+  "yemen-setup-options/notes/regulation_licensing.md:292",
+  "yemen-setup-options/notes/regulation_licensing.md:349",
+  "yemen-setup-options/notes/regulation_licensing.md:372",
+  "yemen-setup-options/notes/banks_exchange_cards.md:68"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e09b4ffcf9874aa1a1ac9c40589cae9433e217296529d0ec47e06971c30d4a6c",
+ "raw_ext": "html"
+}

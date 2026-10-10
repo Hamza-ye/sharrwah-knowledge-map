@@ -1,0 +1,18 @@
+{
+ "n": 24,
+ "url": "https://alp.unescwa.org/plans/1811",
+ "dir": "items/024-alp.unescwa.org",
+ "fetched_at": "2026-10-10T05:03:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://alp.unescwa.org/plans/1811",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3169,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:565"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "dc8cf10198ae6f4b1284472661283a4f53e962e0fb7040d7683ee4cf7a124e92",
+ "raw_ext": "html"
+}

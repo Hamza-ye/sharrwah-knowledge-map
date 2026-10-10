@@ -1,0 +1,19 @@
+{
+ "n": 222,
+ "url": "https://www.forbesmiddleeast.com/lists/the-middle-easts-fintech-50-2025/one-cash/",
+ "dir": "items/222-forbesmiddleeast.com",
+ "fetched_at": "2026-10-10T05:03:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.forbesmiddleeast.com/lists/the-middle-easts-fintech-50-2025/one-cash/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27723,
+ "cited_in": [
+  "yemen-setup-options/report.md:66",
+  "yemen-setup-options/notes/wallets_emoney.md:105"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d519f91945af865f101821eb012db651fa0ac8cb30e136e2b49bfb92a729d2d7",
+ "raw_ext": "html"
+}

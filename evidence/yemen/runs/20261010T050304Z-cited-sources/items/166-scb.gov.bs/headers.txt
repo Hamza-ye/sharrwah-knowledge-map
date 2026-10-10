@@ -1,0 +1,25 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:30 GMT
+content-type: application/pdf
+content-length: 469586
+cf-ray: a4831435db1ed6fc-IAD
+cf-cache-status: HIT
+accept-ranges: bytes
+cache-control: public, max-age=31536000
+etag: "6a3d5565-72a52"
+last-modified: Thu, 25 Jun 2026 16:20:53 GMT
+server: cloudflare
+ki-cf-cache-status: HIT
+x-content-type-options: nosniff
+x-edge-location-klb: 1
+ki-cache-tag: a4637a87-b558-4a56-b771-4f4060f1cfeb,f533ac3db49ae7d2233978162927d3789fefea9f561492bb2964b4b4d577636a
+ki-cache-type: CDN
+ki-edge: v=28.5.1;mv=99.9.9
+ki-origin: g1p
+set-cookie: __cf_bm=PfHN8hxnYxMqdclcH1BCPm2SmxzKJpI6UJdPAELj14c-1791608610.2182608-1.0.1.1-wSwH.l4W3b4TuCQVt98klF.oSqN6qQWsksHa2yToUX47g.oq95Mk3oMCDgo1F71TnSxUwm2Sj5FgPZwVCYHwBGiB1O2fyuB8Bql0Mw8BByVqYEYcWBG02E1ZcM0S9hkT; HttpOnly; SameSite=None; Secure; Path=/; Domain=scb.gov.bs; Expires=Sat, 10 Oct 2026 05:33:30 GMT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=F65n6QohQ%2BM3BfA3ytGh4h8wnX84lNDkISTpglD5L4VPaqHd6gCNiP13mX%2F3RSvObXqadAljsWy3kT8qbfWotHYwvf7dtfl6AXB2UWAAIMdGMoQLG%2F8r6FfFkBs%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+alt-svc: h3=":443"; ma=86400
+

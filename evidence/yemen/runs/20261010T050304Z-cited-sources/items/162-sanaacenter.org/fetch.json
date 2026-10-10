@@ -1,0 +1,24 @@
+{
+ "n": 162,
+ "url": "https://sanaacenter.org/the-yemen-review/jul-sept-2025/25633",
+ "dir": "items/162-sanaacenter.org",
+ "fetched_at": "2026-10-10T05:03:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://sanaacenter.org/the-yemen-review/jul-sept-2025/25633",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45773,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:16",
+  "yemen-setup-options/notes/currency_territory.md:24",
+  "yemen-setup-options/notes/currency_territory.md:82",
+  "yemen-setup-options/notes/currency_territory.md:88",
+  "yemen-setup-options/notes/currency_territory.md:90",
+  "yemen-setup-options/notes/currency_territory.md:121",
+  "yemen-setup-options/notes/currency_territory.md:219"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e07318a413a30336fb93a31eddc8852a624f25a7dce6b20e74809e1eabe0e188",
+ "raw_ext": "html"
+}

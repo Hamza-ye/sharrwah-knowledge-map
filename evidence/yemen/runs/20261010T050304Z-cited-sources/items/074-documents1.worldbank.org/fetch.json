@@ -1,0 +1,29 @@
+{
+ "n": 74,
+ "url": "https://documents1.worldbank.org/curated/en/099630405192627146/pdf/IDU-915b334e-33e9-407b-b634-2ee6167b4790.pdf",
+ "dir": "items/074-documents1.worldbank.org",
+ "fetched_at": "2026-10-10T05:03:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://documents1.worldbank.org/curated/en/099630405192627146/pdf/IDU-915b334e-33e9-407b-b634-2ee6167b4790.pdf",
+ "content_type": "application/pdf;charset=utf-8",
+ "bytes": 575971,
+ "cited_in": [
+  "yemen-setup-options/report.md:78",
+  "yemen-setup-options/report.md:88",
+  "yemen-setup-options/notes/currency_territory.md:20",
+  "yemen-setup-options/notes/currency_territory.md:23",
+  "yemen-setup-options/notes/currency_territory.md:42",
+  "yemen-setup-options/notes/currency_territory.md:118",
+  "yemen-setup-options/notes/currency_territory.md:126",
+  "yemen-setup-options/notes/currency_territory.md:186",
+  "yemen-setup-options/notes/currency_territory.md:188",
+  "yemen-setup-options/notes/currency_territory.md:220",
+  "yemen-setup-options/notes/currency_territory.md:226",
+  "yemen-setup-options/notes/currency_territory.md:241"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "7038f81d62faf707f732cd07b8e57367812704ab9e4e17892d893332e3febbcc",
+ "raw_ext": "pdf"
+}

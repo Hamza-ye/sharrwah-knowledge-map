@@ -1,0 +1,18 @@
+{
+ "n": 127,
+ "url": "https://laamedia.net/news.aspx?newsnum=33644",
+ "dir": "items/127-laamedia.net",
+ "fetched_at": "2026-10-10T05:03:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://laamedia.net/news.aspx?newsnum=33644",
+ "content_type": "text/html; charset=windows-1256",
+ "bytes": 8933,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:73"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b2ecbd5ca75405910e2187da34ffdc7e32a0cf8c90d86fecb5fdfba314fdca3c",
+ "raw_ext": "html"
+}

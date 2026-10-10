@@ -1,0 +1,20 @@
+{
+ "n": 241,
+ "url": "https://www.sbyb.net/faq",
+ "dir": "items/241-sbyb.net",
+ "fetched_at": "2026-10-10T05:03:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.sbyb.net/faq",
+ "content_type": "text/html;charset=utf-8;",
+ "bytes": 95046,
+ "cited_in": [
+  "yemen-setup-options/report.md:152",
+  "yemen-setup-options/notes/wallets_emoney.md:141",
+  "yemen-setup-options/notes/wallets_emoney.md:219"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bae7e7c719621e0b3b6bae167095a2d086b0b469e791d57214d631e3c9fbd18a",
+ "raw_ext": "html"
+}

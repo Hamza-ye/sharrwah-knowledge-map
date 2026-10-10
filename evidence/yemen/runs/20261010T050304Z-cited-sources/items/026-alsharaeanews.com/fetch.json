@@ -1,0 +1,18 @@
+{
+ "n": 26,
+ "url": "https://alsharaeanews.com/2022/09/21/63084/",
+ "dir": "items/026-alsharaeanews.com",
+ "fetched_at": "2026-10-10T05:03:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://alsharaeanews.com/2022/09/21/63084/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 34943,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:72"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9437e51f52b32309ad4f8956f8fc6be0ec76cd2c90a6e4e2df11b9ee04538ce0",
+ "raw_ext": "html"
+}

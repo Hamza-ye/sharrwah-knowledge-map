@@ -1,0 +1,18 @@
+{
+ "n": 135,
+ "url": "https://ofac.treasury.gov/recent-actions/20250305",
+ "dir": "items/135-ofac.treasury.gov",
+ "fetched_at": "2026-10-10T05:03:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://ofac.treasury.gov/recent-actions/20250305",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 11981,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:365"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "dd559190759e50690b0da5e8c83a7ca28fc1fd0008ca386a62f4c83b7db62c0e",
+ "raw_ext": "html"
+}

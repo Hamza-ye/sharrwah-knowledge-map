@@ -1,0 +1,21 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = lf
+
+[*.{kt,kts,xml}]
+indent_size = 4
+
+[*.kt]
+# Allow PascalCase for @Composable functions
+ktlint_standard_function-naming = disabled
+# Allow wildcard imports (useful for Compose layout/material)
+ktlint_standard_no-wildcard-imports = disabled
+
+[*.yml]
+indent_size = 2

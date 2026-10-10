@@ -1,0 +1,19 @@
+{
+ "n": 108,
+ "url": "https://gulfnews.com/world/gulf/yemen/al-houthis-yemen-govt-reach-financial-de-escalation-deal-un-envoy-1.103583412",
+ "dir": "items/108-gulfnews.com",
+ "fetched_at": "2026-10-10T05:03:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://gulfnews.com/world/gulf/yemen/al-houthis-yemen-govt-reach-financial-de-escalation-deal-un-envoy-1.103583412",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 142845,
+ "cited_in": [
+  "yemen-setup-options/report.md:52",
+  "yemen-setup-options/notes/banks_exchange_cards.md:66"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "53e9d8968647fba55d3e4b66ed40e224c65339a6d49439d1cace7db3590b90b0",
+ "raw_ext": "html"
+}

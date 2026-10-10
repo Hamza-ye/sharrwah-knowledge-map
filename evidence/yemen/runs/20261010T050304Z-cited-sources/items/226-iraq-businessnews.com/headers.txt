@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:44 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+link: <https://www.iraq-businessnews.com/wp-json/>; rel="https://api.w.org/", <https://www.iraq-businessnews.com/wp-json/wp/v2/posts/227742>; rel="alternate"; title="JSON"; type="application/json", <https://www.iraq-businessnews.com/?p=227742>; rel=shortlink
+x-wp-cf-super-cache-disabled-reason: Single Post
+cache-control: no-store, no-cache, must-revalidate, max-age=0
+pragma: no-cache
+expires: Sat, 10 Oct 2026 05:03:44 GMT
+x-wp-spc-disk-cache: BYPASS
+x-wp-cf-super-cache: no-cache
+x-wp-cf-super-cache-cache-control: no-store, no-cache, must-revalidate, max-age=0
+vary: Accept-Encoding
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=h70%2FWYWa4jB%2B%2B5JUCw6SLSgcJ5iWkenUmYYtdfVphe92yYnO5IaaTOb48pX31vfwDbC60o7F66Pxi75bEOa5irKGLQMpx8YD9WCkDF%2BJ4ujKFlJWfsMMHbfh%2FK%2F9ecSSlu%2BspGjNWsg3djM%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: BYPASS
+content-encoding: br
+cf-ray: a483148c7e69d5ea-IAD
+

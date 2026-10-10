@@ -1,0 +1,28 @@
+{
+ "n": 159,
+ "url": "https://sanaacenter.org/the-yemen-review/april-june-2025/25056",
+ "dir": "items/159-sanaacenter.org",
+ "fetched_at": "2026-10-10T05:03:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://sanaacenter.org/the-yemen-review/april-june-2025/25056",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 47153,
+ "cited_in": [
+  "yemen-setup-options/report.md:11",
+  "yemen-setup-options/report.md:54",
+  "yemen-setup-options/report.md:151",
+  "yemen-setup-options/notes/regulation_licensing.md:246",
+  "yemen-setup-options/notes/regulation_licensing.md:290",
+  "yemen-setup-options/notes/regulation_licensing.md:291",
+  "yemen-setup-options/notes/regulation_licensing.md:293",
+  "yemen-setup-options/notes/regulation_licensing.md:294",
+  "yemen-setup-options/notes/regulation_licensing.md:373",
+  "yemen-setup-options/notes/regulation_licensing.md:379",
+  "yemen-setup-options/notes/regulation_licensing.md:397"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d3876836efb5579b413f84105966766af82af01f894b3eed07b98f188088c7a9",
+ "raw_ext": "html"
+}

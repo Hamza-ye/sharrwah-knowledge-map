@@ -1,0 +1,23 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Server: nginx/1.30.4
+Date: Sat, 10 Oct 2026 05:03:15 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Security-Policy: default-src 'self'; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com; script-src 'self' 'unsafe-inline' https://www.youtube.com https://s.ytimg.com chrome-extension:; img-src 'self' data: blob: https: https://img.youtube.com https://i.ytimg.com https://i.ibb.co https://ibb.co; font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self' https: wss: ws: https://www.youtube-nocookie.com https://dashboardapi.e-jaib.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; media-src 'self' https: blob:
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-XSS-Protection: 1; mode=block
+Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+Cross-Origin-Embedder-Policy: unsafe-none
+Cross-Origin-Opener-Policy: unsafe-none
+Cross-Origin-Resource-Policy: cross-origin
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+Link: </_next/static/media/Linaround_Regular.p.2w9eiv9rbspt1.otf>; rel=preload; as="font"; crossorigin=""; type="font/otf", </_next/static/media/MPLUSRounded1c_Regular.p.19ystrt1cavxd.ttf>; rel=preload; as="font"; crossorigin=""; type="font/ttf", </fonts/Lina round/Linaround-Regular.otf>; rel=preload; as="font"; crossorigin="anonymous"; type="font/otf"; fetchpriority="high", </assets/icons/frist-video.svg>; rel=preload; as="image"; fetchpriority="high"
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+

@@ -1,0 +1,19 @@
+{
+ "n": 81,
+ "url": "https://en.barran.press/news/6377",
+ "dir": "items/081-en.barran.press",
+ "fetched_at": "2026-10-10T05:03:15Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://en.barran.press/news/6377",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 10573,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:69",
+  "yemen-setup-options/notes/currency_territory.md:228"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0908cdbaad2f5a30713a8b092cf93dcb28d0ebccf2fcef2703f5d0435af46797",
+ "raw_ext": "html"
+}

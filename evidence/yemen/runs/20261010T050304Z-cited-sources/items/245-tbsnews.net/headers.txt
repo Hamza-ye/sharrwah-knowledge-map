@@ -1,0 +1,23 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:49 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+x-drupal-cache: MISS
+content-language: en
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-ua-compatible: IE=edge
+link: <https://www.tbsnews.net/economy/no-more-direct-payments-e-commerce-accounts-293197>; rel="canonical",<https://www.tbsnews.net/node/293197>; rel="shortlink"
+x-generator: RSI LAB
+cache-control: public, max-age=300
+last-modified: Sat, 10 Oct 2026 05:03:48 GMT
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+vary: Cookie, accept-encoding
+x-rsi-cache: MISS
+cf-cache-status: EXPIRED
+content-encoding: br
+cf-ray: a48314a40aca8e82-IAD
+alt-svc: h3=":443"; ma=86400
+

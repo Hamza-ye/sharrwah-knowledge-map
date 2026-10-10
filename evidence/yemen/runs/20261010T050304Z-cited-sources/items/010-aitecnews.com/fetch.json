@@ -1,0 +1,19 @@
+{
+ "n": 10,
+ "url": "https://aitecnews.com/ar/blog/post/afdl-10-shrkat-tosyl-altlbat-fy-alymn",
+ "dir": "items/010-aitecnews.com",
+ "fetched_at": "2026-10-10T05:03:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://aitecnews.com/ar/blog/post/afdl-10-shrkat-tosyl-altlbat-fy-alymn",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24141,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:106",
+  "yemen-setup-options/notes/cash_logistics_practice.md:189"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "47c3029a73228976420bcb875a10037079298d41f082f722c20d9766900a6c48",
+ "raw_ext": "html"
+}

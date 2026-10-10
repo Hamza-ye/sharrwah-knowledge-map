@@ -1,0 +1,18 @@
+{
+ "n": 225,
+ "url": "https://www.ibanet.org/article/6FC3317B-4F9C-4DFC-BDF1-80CF98B68B21",
+ "dir": "items/225-ibanet.org",
+ "fetched_at": "2026-10-10T05:03:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.ibanet.org/article/6FC3317B-4F9C-4DFC-BDF1-80CF98B68B21",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 12702,
+ "cited_in": [
+  "yemen-setup-options/report.md:178"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "40f892f0b2287c03a27d2904701ea1638dacd09ab4e585356774e528e78061e3",
+ "raw_ext": "html"
+}

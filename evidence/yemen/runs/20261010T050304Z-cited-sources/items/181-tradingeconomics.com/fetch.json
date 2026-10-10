@@ -1,0 +1,18 @@
+{
+ "n": 181,
+ "url": "https://tradingeconomics.com/yemen/currency",
+ "dir": "items/181-tradingeconomics.com",
+ "fetched_at": "2026-10-10T05:03:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://tradingeconomics.com/yemen/currency",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 51897,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:190"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3ce3b485bf9d03c5646befa8f0040e9035b55bb74177d16fbdc384c7b12d68e0",
+ "raw_ext": "html"
+}

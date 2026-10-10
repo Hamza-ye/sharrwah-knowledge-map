@@ -1,0 +1,1763 @@
+Loading web-font Gyre-Pagella/Variants/Regular
+Journals Topics Information Author Services Initiatives About
+Sign In / Sign Up Submit
+ 
+Search for Articles:
+Sustainability
+All Article Types
+Advanced
+ 
+Journals  Sustainability  Volume 15  Issue 18  10.3390/su151813712 
+Submit to this Journal Review for this Journal Propose a Special Issue
+Article Menu
+Academic Editors
+Gomaa Agag
+Ziad H. Abdelmoety
+Mansour Alyahya
+Recommended Articles
+Related Info Link
+More by Authors Links
+Article Views
+10563
+Citations
+12
+Table of Contents
+Abstract
+Introduction
+Literature Review
+Methodology
+Results and Discussion
+Conclusions
+Author Contributions
+Funding
+Institutional Review Board Statement
+Informed Consent Statement
+Data Availability Statement
+Acknowledgments
+Conflicts of Interest
+Appendix A
+References
+Altmetric
+share
+Share
+announcement
+Help
+format_quote
+Cite
+question_answer
+Discuss in SciProfiles
+first_page
+settings
+Order Article Reprints
+Open AccessArticle
+Unlocking the Potential of E-Commerce in Yemen: Identifying Key Impacting Factors and Exploring Strategic Solutions
+by Yaser Khaled Al Harazi 1,Gang Tian 1,*,Syed Ahsan Ali Shah 2,*,Ahmed Khaled Al Harazi 3,Saleh Yahya Alwan 1 andAmr Mohammed Ali Amer 4
+1
+College of Economics and Management, Northeast Forestry University, Harbin 150040, China
+2
+EMC3 Research Group, Science and Math Education Department, Universidad de Salamanca, 37008 Salamanca, Spain
+3
+School of Civil and Hydraulic Engineering, Huazhong University of Science and Technology, Wuhan 430074, China
+4
+School of Economics and Management, Harbin University of Science and Technology, Harbin 150006, China
+*
+Authors to whom correspondence should be addressed.
+Sustainability 2023, 15(18), 13712; https://doi.org/10.3390/su151813712
+Submission received: 27 July 2023 / Revised: 23 August 2023 / Accepted: 6 September 2023 / Published: 14 September 2023
+(This article belongs to the Special Issue Sustainable E-commerce: Understanding the Motivations and Challenges)
+
+Download
+keyboard_arrow_down
+ Browse Figures Versions Notes
+
+Abstract
+This study offers a comprehensive analysis of the e-commerce ecosystem in Yemen, identifying key opportunities and impacting factors to growth, and suggesting suitable strategies for e-commerce startups. The study employs an integrated methodical approach, combining a literature review, and data analysis using Grey Analytic Hierarchy Process (Grey AHP) and Grey Technique for Order of Preference by Similarity to Ideal Solution (Grey TOPSIS). The literature review identifies opportunities, challenges, and strategic solutions. The Grey AHP assesses the relative importance of opportunities and challenges. The Grey TOPSIS ranks the best strategies that e-commerce startups in Yemen can adopt to leverage these opportunities and manage the negative effects of the barriers. The results show that large market potential, the underserved market, and the growing middle class represent the most significant opportunities. In contrast, economic and political instability, logistical challenges, and the lack of trust in online payments are the most significant impacting factors. To overcome these challenges, the top three strategies recommended are building strategic partnerships, offering secure payment and delivery options, and targeting the underserved market. By implementing these strategies, the e-commerce ecosystem in Yemen can prosper, take advantage of opportunities, and contribute to the country’s economic development.
+Keywords: e-commerce; economic development; sustainable development; Grey AHP; Grey TOPSIS; Yemen
+
+1. Introduction
+The rapid growth of e-commerce reshapes the global marketplace, transitioning from traditional physical stores to virtual platforms where consumers easily access goods and services from the comfort of their homes [1]. This digital revolution is fueled by advancements in technology, increased internet penetration, and the widespread use of mobile devices. The COVID-19 pandemic further accelerates the growth of e-commerce, as safety concerns and social restrictions prompt individuals to explore new online purchasing options for both essential and non-essential products and services. Consequently, global e-commerce revenues witness an additional 19% sales growth in 2020 and an extra 22% sales growth beyond the initially anticipated rates of 9% and 12%, respectively (Figure 1) [2]. However, the benefits of e-commerce expansion do not distribute evenly across countries and regions. Developing countries, such as Yemen, often struggle to fully utilize the potential of digital commerce due to political instability, widespread poverty, and fragile infrastructure [3]. This study investigates the complex e-commerce landscape in Yemen, identifying the barriers that hinder startup growth and the factors that enable them to overcome these challenges.
+Figure 1. Global e-commerce revenue pre-COVID and post-COVID.
+Recent years have seen Yemen grappling with a constellation of challenges including an ongoing civil conflict since 2015, an unrelenting humanitarian crisis, and the catastrophic effects of the COVID-19 pandemic [4]. The war has perpetrated widespread violence, triggered massive population displacement, and inflicted deep-seated humanitarian suffering. The fallout of this conflict has been disastrous, dealing a severe blow to the economy, infrastructure, and social cohesion of the country. The estimated economic losses from the destruction of infrastructure and commerce interruptions stand at a staggering $89 billion [5]. Further, the conflict has disrupted the provision of basic amenities such as healthcare, education, water, and sanitation, escalating the problem of food scarcity, malnutrition, and disease. Roughly 24 million people, accounting for 80% of the population, are in dire need of humanitarian aid [6], making it the largest humanitarian crisis worldwide. The COVID-19 pandemic has aggravated this critical situation, spreading rapidly in a nation already grappling with weak healthcare capacity and infrastructure, and further straining an overburdened humanitarian response [7].
+In Yemen, where internet connectivity is sparse and the technological infrastructure is underdeveloped, the concept of e-commerce is still embryonic [8]. A study conducted by the United Nations Conference on Trade and Development (UNCTAD) projected the worth of business-to-consumer (B2C) e-commerce in Yemen at merely seven million dollars in 2018. Yemen’s budding e-commerce startups face substantial hurdles rooted in the country’s deficient infrastructure, further exacerbated by the ongoing civil war and humanitarian crisis. In 2020, the average revenue per user for mobile phone services in Yemen was a meagre $2.70 per month (GSMA Intelligence, 2020), indicating that pricing poses a significant challenge for e-commerce enterprises targeting Yemeni consumers [9]. Additionally, the Yemeni economy is heavily cash-dependent, and its populace exhibits limited familiarity with online payment systems, which complicates the task for nascent enterprises trying to encourage digital transactions [10]. The unstable political and security climate also harbors threats of internet and service disruptions, while the traditional conservative Muslim culture presents additional obstacles, particularly for women aspiring to establish their own businesses.
+Despite the myriad challenges, Yemen holds considerable potential for businesses pivoting towards online commerce. Over sixty percent of Yemen’s population is under the age of 25, yielding a youthful, tech-savvy demographic increasingly plugged into the internet and social media [11]. This generation furnishes e-commerce firms with a wealth of opportunities, which, coupled with a growing internet connectivity and a distinct cultural heritage, formulates a unique market. Mobile devices, forecasted to boast a penetration rate of approximately 73% in 2020, constitute an indispensable conduit for e-commerce businesses in Yemen to engage with customers [12]. This is in a primarily cash-reliant economy, thus offering a ripe market for businesses to introduce digital payment solutions and related financial services. The shift to digital presents a potentially lucrative market for entrepreneurial minds ready to seize the opportunities embedded in this digital transformation. Moreover, the relatively unsaturated state of the Yemeni e-commerce sector opens the door for new ventures to make their mark [12]. With judicious strategies, e-commerce enterprises in Yemen have the potential to carve a successful path. Startups can explore opportunities across various sectors such as fashion, beauty, and food. The nation’s rich cultural heritage in traditional textiles and handicrafts can potentially be marketed effectively online. Likewise, Yemen’s vibrant gastronomy, replete with unique spices and flavors, could be packaged and sold through various online platforms. However, to navigate the complex economic, social, and political landscape of Yemen and become successful, businesses must demonstrate adeptness in devising innovative strategies to surmount the challenges that stand in their way.
+Recognizing the criticality of understanding and effectively navigating Yemen’s complex e-commerce landscape, this research adopts a robust approach encompassing a comprehensive literature review, expert interviews, and the development of a Multi-Criteria Decision Analysis (MCDA) framework. This was conducted for recognizing the pertinence of such a comprehensive approach. The literature review aims to discern not only the challenges but also the opportunities encountered by fledgling businesses in Yemen’s e-commerce sphere. Upon the conclusion of the literature survey, potential solutions are derived from both the reviewed literature and expert interviews to mitigate these challenges and capitalize on the opportunities. The MCDA framework integrates two significant methodologies—the Analytic Hierarchy Process (AHP) and the Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS). MCDA is particularly apt for analyzing challenges and opportunities due to its capability to handle multifaceted decision-making scenarios [13]. For the analysis, a diverse cohort of professionals from industry, academia, and government were surveyed, their responses captured in structured questionnaires. This research further refines the analytical process by merging Grey System Theory with the AHP and TOPSIS, establishing the Grey Analytic Hierarchy Process (GAHP) and the Grey Technique for Order of Preference by Similarity to Ideal Solution (GTOPSIS). This fusion aims to mitigate potential biases and uncertainties in the experts’ inputs. The Grey System Theory, proposed by Julong [14], efficiently addresses the ‘greyness’ or uncertainty inherent in data. GAHP is employed to compute the relative weights of the various identified opportunities and challenges. These computed weights are then inputted into the GTOPSIS to rank the proposed solutions. In the GTOPSIS model, opportunities are appraised using a benefit-type criterion, while challenges are assessed based on a cost-type criterion. Employing this analytical approach empowers the research to effectively scrutinize Yemen’s e-commerce environment and offer practical strategies to surmount obstacles and leverage opportunities.
+This research aspires to offer several crucial contributions. Firstly, it delves into the intricate nature of the e-commerce environment in Yemen, pinpointing the impediments hampering the growth of startups and identifying the factors that can empower them to overcome these obstacles. The study commences by examining the current state of e-commerce in the country, subsequently proposing strategies that leverage enabling factors to surmount challenges. This approach aids in fostering the long-term viability and sustainability of e-commerce ventures in Yemen. Secondly, this comprehensive exploration of the trials and opportunities confronting e-commerce entrepreneurs in Yemen contributes to an enhanced understanding of digital commerce’s potential as a catalyst for economic growth and resilience under complex conditions. Furthermore, the findings shed light on the broader implications of digital commerce for global trade, economic development, and the empowerment of entrepreneurs in nations currently in the throes of war. Findings from this research provide valuable insights for policymakers, development agencies, and other stakeholders interested in fostering e-commerce sector growth. This holds true not only for Yemen but also for countries facing similar challenges. By doing so, this study not only enhances our understanding of the e-commerce landscape in Yemen but also contributes to the global discourse on digital commerce’s role in promoting economic resilience and development.
+The rest of the paper is organized as follows: Section 2 reviews the literature and explores drivers, barriers, and strategies from the existing literature, Section 3 develops an integrated methodology to find the relative importance of barriers and drivers and then prioritizes the strategies, Section 4 presents findings and discusses the results, and Section 5 concludes the study and provides policy implications.
+2. Literature Review
+E-commerce experiences significant growth in recent years, with various factors contributing to its popularity. Numerous studies have explored the rise of e-commerce in different contexts. For example, Galhotra and Dewan [15] investigated the impact of external factors on e-commerce in India. Hasanat et al. [16] assessed the effect of market conditions on Malaysian online businesses. Kim [17] looked at structural changes in consumer behavior and market digitalization. Shahzad et al. [18] conducted a quantitative online survey-based study on e-commerce in Malaysian healthcare. Dinesh and MuniRaju [19] attempted to comprehend the characteristics that help e-commerce enterprises improve their operations. Hoang et al. [20] conducted empirical research on the use of e-commerce by small and medium enterprises (SMEs) in Vietnam. The literature review revealed various opportunities, barriers, and strategies for e-commerce, offering valuable insights for effective e-commerce adoption. While the focus of our study is the Yemeni context, similar e-commerce opportunities, barriers, and strategies have been observed globally. Studies from diverse countries such as India, Malaysia, and Vietnam have shown patterns of growth, challenges, and mitigation strategies that resonate with the Yemeni environment. By understanding these international contexts, we can better position Yemen’s e-commerce prospects and challenges within the global framework. Building upon the findings of existing studies, the next subsections will delve into the unique context of e-commerce startups in Yemen, focusing on the specific opportunities, barriers, and competing strategies related to this understudied market.
+2.1. Opportunities for E-Commerce Startups in Yemen
+Yemen offers a wealth of opportunities for e-commerce startups. The country’s population is young and tech-savvy, and the internet is widely available. This means that entrepreneurs can reach a large potential customer base with relative ease. Furthermore, the country’s economy is largely cash-based, which presents an opportunity for startups to offer digital payment solutions and other financial services. This could open up a lucrative market for entrepreneurs looking to capitalize on the country’s digital transformation. Additionally, the e-commerce market in Yemen is not overly saturated, so there is plenty of room for new businesses to enter the market and make an impact. With the right strategies, e-commerce startups in Yemen could be highly successful. After conducting an exhaustive survey of the existing literature on e-commerce startups in Yemen, a list of potential opportunities for success has been compiled and is presented in Table 1.
+Table 1. Opportunities for e-commerce startups.
+2.2. Impacting Factors for E-Commerce Startups in Yemen
+While there are evident advantages to conducting online business in Yemen, there are also associated risks. A substantial proportion of transactions within the country still relies on cash, and many individuals lack familiarity with making online payments. This could pose a challenge for new businesses trying to persuade their customer base to transition online. Additionally, the precarious political climate and volatile security situation could result in disruptions to the internet and other vital services. The ongoing civil conflict further complicates the business landscape, as it breeds instability and unpredictability, both of which could hinder the successful operation of an e-commerce venture. The lack of adequate infrastructure poses another significant risk. Yemen has limited payment options, and its internet infrastructure lags behind that of other countries. This can lead to extended page loading times, which could negatively impact the user experience. Furthermore, the possibility of falling victim to fraud is not entirely ruled out, as there are unscrupulous individuals in Yemen who aim to exploit the burgeoning e-commerce industry. Table 2 presents an overview of these potential challenges that could impede the long-term survival and growth of new businesses.
+Table 2. Impacting factors for e-commerce startups.
+2.3. Strategies to Promote Success of E-Commerce Startups
+E-commerce businesses in Yemen may use a variety of techniques that capitalize on opportunities and reduce the impact of influential variables in order to overcome the obstacles they face and achieve the greatest amount of success possible. In the evolving landscape of e-commerce, strategies that startups employ may vary from one region to another. While some strategies like targeting underserved markets and prioritizing security are often universally acknowledged, the specific socio-economic and political contexts, such as that of Yemen, require specially tailored solutions.
+2.3.1. Target the Underserved Market
+E-commerce start-ups have the ability to target underserved populations in order to tap into unknown areas since there is a vast potential market and a rising middle class. The provision of products and services to regions that are presently underserved and that have little or no access to typical retail alternatives is an option that may be pursued by startups. This strategy may help new businesses acquire a loyal client base and carve out a specialized market in an industry that may have been disregarded by more established competitors. For instance, many developing economies, such as Southeast Asia and parts of Africa, have seen e-commerce startups succeed by focusing on the underserved markets. Emulating this strategy can be fruitful for Yemen, considering the similarities in market potential.
+2.3.2. Offer Secure Payment and Delivery
+E-commerce firms should give top priority to safe payment and delivery alternatives in order to answer concerns about the dangers associated with cybersecurity. Building confidence with clients and lowering cybersecurity threats may be accomplished by forming strategic alliances with reputable logistical suppliers and introducing encrypted payment methods. It is noteworthy that established regions like Europe and North America rely on secure platforms such as PayPal and Apple Pay. Adapting global best practices to Yemen’s context could be a game changer.
+2.3.3. Focus on Cash-on-Delivery
+Focusing on cash-on-delivery (COD) alternatives is one way to circumvent problems associated with insufficient access to credit and a general mistrust of online payment systems. Like in early e-commerce markets in India and parts of the Middle East, Yemen observes cash on delivery (COD) as a dominant form of payment.
+2.3.4. Increase Consumer Awareness
+Startups in Yemen face a significant hurdle due to a lack of customer awareness about e-commerce. To counter this, new businesses should prioritize customer education on the benefits of online shopping and the use of e-commerce platforms. This can be achieved through targeted marketing campaigns, partnerships with social media influencers, and offering tutorials and webinars designed to help customers gain a more profound understanding of how to navigate various platforms. This approach mirrors global giants like Amazon and Alibaba, which utilize extensive marketing to familiarize customers with e-commerce. Yemeni startups can similarly craft localized campaigns for effective outreach.
+2.3.5. Build Strategic Partnerships
+Established firms in the Yemeni e-commerce market pose a substantial challenge for emerging businesses. To mitigate this, newcomers might consider forming strategic alliances with more established companies. Such partnerships could provide access to a larger customer base, enhanced supply chain networks, and experience in dealing with regulatory hurdles. This could be executed through strategic partnerships, joint ventures, or mergers. Forming strategic collaborations with entrenched entities in the financial sector and logistics industry could be another approach to tackle the issue of limited investment and the logistical challenges they present. This strategy could aid new businesses in reducing costs and establishing trust with their target audience. Such partnerships have precedence. For example, local e-commerce startups in the Middle East have formed partnerships with global players like Amazon, providing an illustrative model for Yemeni businesses.
+2.3.6. Stay Abreast of Government Regulations
+E-commerce startups in Yemen may encounter difficulties due to government regulations, thus necessitating staying current with the latest regulatory changes. Compliance with relevant laws should be a priority for startups, and they should engage constructively with government authorities to resolve any regulatory concerns. To achieve this, leveraging lobbying organizations, industry associations, and maintaining close collaboration with regulatory bodies to address issues as they arise could prove effective. Drawing parallels, the GDPR compliance in Europe and evolving e-commerce norms in Asia signify the universal challenge of regulations in e-commerce. Yemeni startups can strategize by benchmarking against these global shifts.
+2.3.7. Differentiate from Competitors
+Rising levels of competition can be countered by differentiating from competitors in terms of product offerings, the quality of customer service, and the degree of personalization in shopping experiences. E-commerce startups could carve out a competitive advantage by focusing on their inherent strengths and cultivating a network of loyal customers. Internationally, differentiation is pivotal. Platforms in Southeast Asia, such as Shopee and Lazada, demonstrate this by offering unique shopping experiences. Yemeni startups can glean insights from such approaches.
+2.3.8. Access Funding
+Shortage of investment is a significant hindrance to e-commerce startups in Yemen. To address this, startups should explore funding opportunities such as venture capital, angel investors, and crowdfunding. By analyzing the growth stories from startups in markets like India, Brazil, and Indonesia, Yemeni ventures can discern valuable lessons. A robust business plan, rooted in regional nuances, will be pivotal.
+3. Methodology
+The theoretical framework for this study, depicted in Figure 2, has been designed following a comprehensive review of the latest advancements in the applications of Grey AHP, Grey TOPSIS, and grey theory in MCDM. The review not only considers potential opportunities and influential variables but also encompasses an examination of the recent studies such as Ulutaş et al. (2021), which presented a new integrated grey MCDM model in the context of warehouse location selection [39]. Similarly, Badi et al. (2023) utilized Grey TOPSIS in the decision-making process for solar-farm-location selection in Libya [40]. Other studies that have employed Grey AHP include [41], where Grey AHP was used to select a healthcare-waste-disposal strategy, and [42], where it assisted in environmental vulnerability assessment. Grey TOPSIS has been extensively explored by researchers like [43] for prioritizing waste-to-energy solutions, and [44] for benchmarking smart manufacturing drivers. Grey theory’s applications in MCDM have been growing, with works by [45] on mining and mineral planning, revealing the versatility and efficiency of these methods. Building on these insights and methodologies, Grey AHP shall be employed in this study to determine the relative importance of opportunities and impacting factors, which are then prioritized based on their level of significance. Finally, Grey TOPSIS shall be applied to prioritize strategies, aligning with the contemporary practices and developments in the field as reflected in the referenced literature.
+Figure 2. Methodological framework.
+3.1. Grey System Theory
+Grey theory is a mathematical approach designed to tackle decision-making problems amidst ambiguity [14]. The theory is segmented into five main components: grey relational analysis, grey forecasting, grey programming, grey decision-making, and grey control. Compared to traditional statistical methods, grey models require significantly fewer data to comprehend the behavior of uncertain systems and yield consistent, unbiased point estimates [46]. In grey systems, aspects such as operations, mechanisms, structures, and behaviors are not entirely comprehended or fully predictable, but rather, they are partially known. The constituents of the grey system, including its operation, structure, behavior, and mechanism, are neither completely predictable nor fully understood, though they are partially known. The concept of the grey system categorizes the degree of information into three tiers, as depicted in Figure 3. These tiers are labeled “white,” “grey”, and “black”, corresponding to “fully-known”, “partially-known”, and “completely unknown” knowledge, respectively.
+Figure 3. Concept of grey system theory.
+Grey numerals are often symbolized by the 
+⊗
+ sign. Let’s define 
+⊗𝑎
+ as a grey number 
+⊗𝑎=[
+𝑎
+̲
+,
+𝑎
+
+
+
+
+
+
+]
+ in which 
+𝑎
+̲
+ is the lower bound and 
+𝑎
+
+
+
+
+
+
+ is the upper bound. Let 
+𝑐∈𝔪
+, while 
+⊗
+𝑎
+1
+=[
+𝑎
+̲
+1
+,
+𝑎
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+ and 
+⊗
+𝑎
+2
+=[
+𝑎
+̲
+2
+,
+𝑎
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+ are two grey numbers, then the following are the fundamental arithmetic operations that can be performed between these two numbers:
+⊗
+𝑎
+1
++⊗
+𝑎
+2
+=[
+𝑎
+̲
+1
++
+𝑎
+̲
+2
+,
+𝑎
+
+
+
+
+
+
+1
++
+𝑎
+
+
+
+
+
+
+2
+]
+	
+(1)
+⊗
+𝑎
+1
+−⊗
+𝑎
+2
+=[
+𝑎
+̲
+1
+−
+𝑎
+
+
+
+
+
+
+2
+,
+𝑎
+
+
+
+
+
+
+1
+−
+𝑎
+̲
+2
+]
+	
+(2)
+⊗
+𝑎
+1
+×⊗
+𝑎
+2
+=[min(
+𝑎
+̲
+1
+𝑎
+̲
+2
+,
+𝑎
+
+
+
+
+
+
+1
+𝑎
+
+
+
+
+
+
+2
+,
+𝑎
+
+
+
+
+
+
+1
+𝑎
+̲
+2
+,
+𝑎
+̲
+1
+𝑎
+
+
+
+
+
+
+2
+),     max(
+𝑎
+̲
+1
+𝑎
+̲
+2
+,
+𝑎
+
+
+
+
+
+
+1
+𝑎
+
+
+
+
+
+
+2
+,
+𝑎
+
+
+
+
+
+
+1
+𝑎
+̲
+2
+,
+𝑎
+̲
+1
+𝑎
+
+
+
+
+
+
+2
+)] 
+	
+(3)
+⊗
+𝑎
+1
+×⊗
+𝑎
+2
+−1
+=[min(
+𝑎
+̲
+1
+𝑎
+̲
+2
+,
+𝑎
+
+
+
+
+
+
+1
+𝑎
+
+
+
+
+
+
+2
+,
+𝑎
+
+
+
+
+
+
+1
+𝑎
+̲
+2
+,
+𝑎
+̲
+1
+𝑎
+
+
+
+
+
+
+2
+),     max(
+𝑎
+̲
+1
+𝑎
+̲
+2
+,
+𝑎
+
+
+
+
+
+
+1
+𝑎
+
+
+
+
+
+
+2
+,
+𝑎
+
+
+
+
+
+
+1
+𝑎
+̲
+2
+,
+𝑎
+̲
+1
+𝑎
+
+
+
+
+
+
+2
+)]
+	
+(4)
+𝑐×⊗
+𝑎
+1
+=𝑐[
+𝑎
+̲
+1
+,
+𝑎
+
+
+
+
+
+
+1
+]=[𝑐
+𝑎
+̲
+1
+,𝑐
+𝑎
+
+
+
+
+
+
+1
+]     
+	
+(5)
+⊗
+𝑎
+1
+𝑐
+=[
+𝑎
+̲
+1
+𝑐
+,
+𝑎
+
+
+
+
+
+
+1
+𝑐
+]
+	
+(6)
+The study uses grey numbers as a means of reflecting subjectivity and reducing the ambiguity in the feedback of decision makers. The linguistic scale that was used in this study is represented by gray numbers and can be seen in Table 3. The evaluation values are going to be converted into gray numbers accordingly.
+Table 3. Grey linguistic scales.
+3.2. Grey AHP
+The Analytical Hierarchy Process (AHP) method is a structured multi-criteria decision-making (MCDM) methodology that is used to organize and assess complex decision-making processes. Since Saaty first introduced the AHP in 1977 [47], it has gained significant recognition from a growing number of researchers throughout the world. AHP allows for the consideration of both quantitative and qualitative data in the decision-making process, which may then be based on a wide range of criteria. From pairwise comparisons, the approach derives the relative rankings of the various options according to the criteria that are stated. The Analytic Hierarchy Process (AHP) has been included into a variety of MCDM techniques and has also been combined with other theoretical frameworks, such as fuzzy set theory [48]. In order to remove the need for subjective evaluations during the decision-making process, the Analytical Hierarchy Process (AHP) was combined with the grey system theory. The basic procedure of the GAHP is the same as that of the AHP; the only difference is that the GAHP uses fuzzy numbers rather than clear integers. The representation of grey numbers as well as the language phrases employed in GAHP are shown in Table 3, and the phases of the approach are outlined in the following paragraphs [49]:
+Step 1: Construct a hierarchical structure to define the problem including goal, criteria, and alternatives.
+Step 2: Obtain experts’ feedback using the grey linguistic scale given in Table 3.
+Step 3: Construct the integrated pairwise grey comparison matrix 
+𝐺
+ of the feedback given by decision maker 
+𝑧
+ as follows:
+𝐺=
+⎡
+⎣
+⎢
+⎢
+⎢
+⊗
+𝑥
+𝑧
+11
+⋮
+⊗
+𝑥
+𝑧
+𝑚1
+⋯
+⋱
+⋯
+⊗
+𝑥
+𝑧
+1𝑛
+⋮
+⊗
+𝑥
+𝑧
+𝑚𝑛
+⎤
+⎦
+⎥
+⎥
+⎥
+=
+⎡
+⎣
+⎢
+⎢
+⎢
+[
+𝑥
+̲
+𝑧
+11
+,
+𝑥
+
+
+
+
+
+
+
+𝑧
+11
+]
+⋮
+[
+𝑥
+̲
+𝑧
+𝑚1
+,
+𝑥
+
+
+
+
+
+
+
+𝑧
+𝑚1
+]
+⋯
+⋱
+⋯
+[
+𝑥
+̲
+𝑧
+1𝑛
+,
+𝑥
+
+
+
+
+
+
+
+𝑧
+1𝑛
+]
+⋮
+[
+𝑥
+̲
+𝑧
+𝑚𝑛
+,
+𝑥
+
+
+
+
+
+
+
+𝑧
+𝑚𝑛
+]
+⎤
+⎦
+⎥
+⎥
+⎥
+ 
+	
+(7)
+where 
+⊗
+𝑥
+𝑧
+𝑖𝑗
+=[
+𝑥
+̲
+𝑧
+𝑖𝑗
+,
+𝑥
+
+
+
+
+
+
+
+𝑧
+𝑖𝑗
+]
+ and 
+𝑧∈{1,2,3,…,𝑍}
+. For all pairwise comparisons, the upper component of major diagonals, such as conventional AHP, is employed; the lower components are determined using Equation (8); components on primary diagonals, on the other hand, are equal to 1, as indicated in Equation (9).
+⊗
+𝑥
+𝑘
+𝑖𝑗
+=[
+1
+𝑥
+
+
+
+
+
+
+𝑘
+𝑖𝑗
+,
+1
+𝑥
+̲
+𝑘
+𝑖𝑗
+] 
+	
+(8)
+⊗
+𝑎
+𝑘
+𝑖𝑖
+=[1,1]
+	
+(9)
+Step 4: Combine the responses of experts by aggregating pairwise comparison matrices using Equation (10) (geometric mean formulation). This formulation is unaffected by very high or extremely low values for the pairwise comparison matrix. According to [50], the only method for determining weights from several pairwise comparisons that satisfies fundamental requirements for consistency is the geometric mean. This is the case even though there are other methods available. In addition, in the additive circumstance, the geometric mean solution is the only route out that maintains the issue’s rich algebraic structure and is naturally consistent with the arithmetic mean solution. This is because the geometric mean solution is derived from the geometric mean of the original problem. The calculation is exactly the same as that of the conventional AHP, which also makes use of the formula for the geometric mean. However, the calculations that are carried out for the bottom and upper bounds of the grey numbers are not the same. When all of the pairwise comparison matrices are merged, the consolidated pairwise matrices may be presented as 
+𝐺
+𝑦
+=
+[⊗
+𝑥
+𝑖𝑗
+]
+𝑚𝑛
+ without requiring the number of decision maker.
+⊗
+𝑥
+𝑖𝑗
+=
+∏
+𝑧=1
+𝑍
+⊗
+𝑥
+𝑧
+𝑖𝑗
+−
+−
+−
+−
+−
+−
+
+⎷
+
+
+𝑍
+ 
+	
+(10)
+Step 5: Normalize the integrated pairwise matrices using modified Converting Fuzzy data into the Crisp Scores (CFCS) approach, as shown in Equations (11) and (12) [51]:
+⊗
+𝑥
+̲
+𝑧
+𝑖𝑗
+=
+(⊗
+𝑥
+̲
+𝑧
+𝑖𝑗
+−
+min
+𝑗
+⊗
+𝑥
+̲
+𝑧
+𝑖𝑗
+)
+Δ
+max
+min
+	
+(11)
+⊗
+𝑥
+
+
+
+
+
+
+
+𝑧
+𝑖𝑗
+=
+(⊗
+𝑥
+
+
+
+
+
+
+
+𝑧
+𝑖𝑗
+−
+min
+𝑗
+⊗
+𝑥
+̲
+𝑧
+𝑖𝑗
+)
+Δ
+max
+min
+	
+(12)
+where 
+Δ
+max
+min
+=max⊗
+𝑥
+
+
+
+
+
+
+
+𝑧
+𝑖𝑗
+−min⊗
+𝑥
+̲
+𝑧
+𝑖𝑗
+.
+Step 6: Calculate each criterion’s grey weight by averaging the rows, as shown in Equation (13):
+⊗
+𝑤
+𝑖
+=
+∑
+𝑛
+𝑗=1
+⊗
+𝑥
+z
+𝑖𝑗
+𝑛
+	
+(13)
+where 
+𝑛={1,2,…,𝑁}
+ is the criterion set.
+Step 7: Convert grey weights to white using Equation (14) making their interpretation and analysis easier and more accurate. The white values are crisp numbers with a possible value between lower and upper bounds of an interval grey weight, as shown below:
+𝑀
+𝑖
+=(1−𝜆)
+𝑤
+
+
+
+
+
+
+𝑖
++𝜆
+𝑤
+
+
+
+
+
+
+
+
+
+
+𝑖
+ 
+	
+(14)
+where 
+𝜆
+ (whitening coefficient) is 
+𝜆∈[0,1]
+.
+The consistency ratio (
+𝐶𝑅
+) of all the pairwise matrices were computed to process consistent feedback only. If the CR was greater than 10%, then the responses were recorded again. The CRs were computed using Equation (15).
+𝐶𝑅=
+𝜆
+max
+−𝑛
+𝑛−1
+Random Index Value
+	
+(15)
+3.3. Grey TOPSIS
+The TOPSIS (The Technique for Order Preference by Similarity to Ideal Solutions) technique was presented in 1981 by Hwang and Yoon as an ideal point multi-criteria decision-making approach and was tried by assessors and various administrators. TOPSIS strategy chooses an option with the most extreme closeness/nearest to the positive ideal solution [52,53]. In this strategy, alternatives are appraised dependent on ideal solution similarity. In the event that an option is more like an optimal solution, it has a higher grade. The Ideal solution is the best arrangement from any viewpoint that does not exist in actuality and is being approximated. TOPSIS is prefaced on the idea that the ideal arrangement has the best level for all credits viable while the negative ideal is the one with the very most exceedingly terrible characteristic qualities. The positive ideal solution augments the advantages’ alternative and limits the cost criteria while the negative ideal solution amplifies the cost criteria and limits the advantages options [54]. For estimating the comparability of a choice to the best arrangement and non-ideal solution, we think about the distance of that alternative from ideal and non-ideal solution.
+This research incorporates grey system theory and TOPSIS to prioritize strategies for e-commerce startups. Grey-TOPSIS is generally proper for taking care of the collective choice-making issues under an uncertain environment. In this study, the weights of criteria and ratings of performance measurements are considered as linguistic variables. The linguistic variables are introduced in grey numbers by scales that are acknowledged by decision makers. The following are the steps involved in ranking the alternatives using the Grey-AHP and TOPSIS-Grey approach [55]:
+Step 1: Develop the hierarchal structure of the problem by defining goal, criteria, and alternatives to be evaluated.
+Step 2: Compute weights of criteria using Grey AHP.
+Step 3: Rate alternatives with respect to each criterion using linguistic values given in Table 4.
+Table 4. Grey scale for rating alternatives with respect to criteria.
+Step 4: Define the TOPSIS-Grey decision matrix 
+𝐷
+𝑘
+ as
+D
+𝑘
+=
+⎡
+⎣
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢
+⊗
+𝑥
+𝑘
+11
+⊗
+𝑥
+𝑘
+21
+⊗
+𝑥
+𝑘
+31
+…
+⊗
+𝑥
+𝑘
+𝑛1
+⊗
+𝑥
+𝑘
+12
+⊗
+𝑥
+𝑘
+22
+⊗
+𝑥
+𝑘
+32
+…
+⊗
+𝑥
+𝑘
+𝑛2
+⊗
+𝑥
+𝑘
+13
+⊗
+𝑥
+𝑘
+23
+⊗
+𝑥
+𝑘
+33
+…
+⊗
+𝑥
+𝑘
+𝑛3
+…
+…
+…
+…
+…
+⊗
+𝑥
+𝑘
+1𝑚
+⊗
+𝑥
+𝑘
+2𝑚
+⊗
+𝑥
+𝑘
+3𝑚
+…
+⊗
+𝑥
+𝑘
+𝑛𝑚
+⎤
+⎦
+⎥
+⎥
+⎥
+⎥
+⎥
+⎥
+⎥
+ 
+	
+(16)
+where 
+⊗
+𝑥
+𝑘
+ij
+ represents a grey evaluation of 
+𝑖
+th alternative with respect to the 
+𝑗
+th criteria by decision maker 
+𝑘
+ 
+(𝑘=1,2,3,…,𝐾)
+; 
+⊗
+𝑥
+𝑘
+𝑖
+=[⊗
+𝑥
+𝑘
+𝑖1
+,⊗
+𝑥
+𝑘
+𝑖2
+,⊗
+𝑥
+𝑘
+𝑖3
+,…,⊗
+𝑥
+𝑘
+𝑖𝑚
+] represents an evaluation of 
+𝑖
+th alternative by the 
+𝑘
+th decision maker.
+Step 5: Normalize 
+D
+𝑘
+ using Equation (17) (for benefit-type criteria) and Equation (18) (for cost-type criteria):
+⊗
+𝑔
+𝑖𝑗
+=
+⊗
+𝑥
+𝑖𝑗
+max
+𝑖
+(
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+)
+=(
+𝑥
+̲
+𝑖𝑗
+max
+𝑖
+(
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+)
+; 
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+max
+𝑖
+(
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+)
+)
+	
+(17)
+⊗
+𝑔
+𝑖𝑗
+=1−
+⊗
+𝑥
+𝑖𝑗
+max
+𝑖
+(
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+)
+=(1−
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+max
+𝑖
+(
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+)
+; 1−
+𝑥
+̲
+𝑖𝑗
+max
+𝑖
+(
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+)
+)
+	
+(18)
+where 
+𝑥
+̲
+𝑖𝑗
+ denotes interval’s lower value and 
+𝑥
+
+
+
+
+
+
+
+𝑖𝑗
+ denotes the interval’s upper value.
+Step 6: Compute the positive ideal alternative 
+𝐴
+𝑘+
+𝑖
+ and a negative ideal alternative 
+𝐴
+𝑘−
+𝑖
+ using Equation (19), and Equation (20), respectively.
+𝐴
+𝑖
+𝑘
++
+=
+m
+a
+x
+ 
+𝑔
+¯
+𝑖
+𝑗
+𝑖
+𝑗
+∈
+𝐽
+,
+ 
+m
+i
+n
+ 
+𝑖
+𝑔
+_
+𝑖
+𝑗
+𝑗
+∈
+𝐽
+′
+𝑖
+∈
+𝑛
+=
+𝑔
+1
++
+,
+𝑔
+2
++
+,
+𝑔
+3
++
+,
+…
+,
+𝑔
+𝑚
++
+ 
+	
+(19)
+𝐴
+𝑖
+𝑘
+−
+=
+m
+i
+n
+ 
+𝑖
+ 
+𝑔
+_
+𝑖
+𝑗
+𝑗
+∈
+𝐽
+,
+ 
+m
+a
+x
+ 
+𝑔
+¯
+𝑖
+𝑗
+𝑖
+𝑗
+∈
+𝐽
+′
+𝑖
+∈
+𝑛
+=
+𝑔
+1
++
+,
+𝑔
+2
++
+,
+𝑔
+3
++
+,
+…
+,
+𝑔
+𝑚
++
+	
+(20)
+where 
+𝐽
+ denotes benefit-type criteria (larger the better), while, 
+𝐽
+′
+ represents cost-type criteria (smaller the better).
+Step 7: Compute alternatives’ positive ideal solution distance 
+𝑑
+𝑖
+𝑘
++
+ and negative ideal solution distance 
+𝑑
+𝑖
+𝑘
+−
+ using Equation (21), and Equation (22), respectively.
+𝑑
+𝑖
+𝑘
++
+=
+{
+1
+2
+∑
+𝑗
+=
+1
+𝑚
+𝑤
+𝑗
+[
+|
+𝑔
+𝑗
+𝑘
++
+−
+𝑔
+¯
+𝑖
+𝑗
+𝑘
+|
+𝑝
++
+|
+𝑔
+𝑗
+𝑘
++
+−
+𝑔
+¯
+𝑖
+𝑗
+𝑘
+|
+𝑝
+]
+}
+1
+/
+𝑝
+	
+(21)
+𝑑
+𝑖
+𝑘
+−
+=
+{
+1
+2
+∑
+𝑗
+=
+1
+𝑚
+𝑤
+𝑗
+[
+|
+𝑔
+𝑗
+𝑘
+−
+−
+𝑔
+¯
+𝑖
+𝑗
+𝑘
+|
+𝑝
++
+|
+𝑔
+𝑗
+𝑘
+−
+−
+𝑔
+¯
+𝑖
+𝑗
+𝑘
+|
+𝑝
+]
+}
+1
+/
+𝑝
+	
+(22)
+In Equations (21) and (22), 
+𝑝
+=
+2
+ (Euclidean distance function), and 
+𝑤
+𝑗
+ is the weight of 
+𝑗
+th criterion determined using Grey AHP.
+Step 8: Obtain relative closeness (
+𝐶
+𝑖
++
+) to the ideal solution using Equation (23).
+𝐶
+𝑖
++
+=
+𝑑
+𝑖
+−
+𝑑
+𝑖
++
++
+𝑑
+𝑖
+−
+,
+(
+𝑖
+=
+1
+,
+2
+,
+3
+,
+…
+,
+𝑛
+)
+	
+(23)
+Step 9: Rank the strategies based on 
+𝐶
+𝑖
++
+ score; the larger score of 
+𝐶
+𝑖
++
+ indicates the better alternative.
+4. Results and Discussion
+This section presents the findings of the Grey Analytic Hierarchy Process (Grey AHP) and Grey Technique for Order of Preference by Similarity to Ideal Solution (Grey TOPSIS) models, applied to measure the relative importance of opportunities, impacting factors, and prioritize strategies. The results are divided into two subsections: the first subsection discusses the outcomes of Grey AHP, while the second subsection focuses on the Grey TOPSIS findings.
+4.1. Grey AHP
+The Grey AHP model was utilized to evaluate the relative significance of opportunities and impacting factors in the context of our study. The first step was to build a hierarchical structure, as well as to define the issue that needed to be solved. The hierarchical structure that was used in this study can be seen shown in Figure 4 and comprises three separate levels. Assessing the factors that contribute to steady expansion in the selected industry is the primary objective of this research, which brings us to the first level of the hierarchy. The second level is comprised of the impacting elements and opportunities that lead to this kind of sustainable development. The third and final level is comprised of the strategies or alternatives that have been developed to make the most of these possibilities and to lessen the impact of the causes that are impacting them. This hierarchical structure serves as the foundation for the Grey AHP analysis, enabling a systematic evaluation of the relevant factors and subsequent prioritization of strategies.
+Figure 4. Hierarchical structure of the Grey AHP.
+Later, pairwise comparison matrices were developed for opportunities and impacting factors separately, and both matrices were computed using Grey AHP computational steps. The consistency ratio for both matrices was less than 0.1, which indicates that the matrices were consistent.
+First, the relative importance of opportunities was computed, as depicted in Figure 5. The large market potential, with a weight of 0.175, stands out as the most significant opportunity, highlighting the vast potential for businesses to expand and capture a more considerable market share. In comparison, the underserved market, at a weight of 0.171, presents a similarly crucial opportunity for businesses to target niche segments and address unmet needs, thereby further strengthening their market presence. The growing middle class, with a weight of 0.153, signifies a burgeoning target market with increased purchasing power. This group represents an attractive consumer base that can drive business growth and success. In tandem, the increased internet penetration, weighted at 0.141, underscores the importance of adopting digital strategies to reach a wider audience, enhance customer engagement, and streamline business operations.
+Figure 5. Relative weights of opportunities.
+Moreover, government support, with a weight of 0.110, showcases the benefits of aligning business practices with favorable policies and taking advantage of incentives to promote growth. Convenient and accessible shopping, at a weight of 0.099, emphasizes the need for businesses to invest in creating seamless customer experiences to retain clients and foster loyalty. The diversification of the economy, at a weight of 0.081, highlights the value of adapting to the evolving economic landscape and exploring new markets or industries. This strategy can serve as a catalyst for businesses to innovate and maintain their competitive edge. In contrast, increased competition, with a weight of 0.070, serves as a reminder that businesses must continually refine their strategies to stay ahead in a dynamic market. These findings suggest that businesses should capitalize on the large market potential and underserved markets, cater to the growing middle class, harness the power of the internet, improve customer experience, align with government initiatives, and adapt to the competitive landscape to maximize their potential.
+Next, the relative importance of impacting factors was computed, as presented in Figure 6. Economic and political instability emerged as the most impactful factor, carrying a weight of 0.171, highlighting the importance of businesses navigating uncertain conditions and adjusting their strategies accordingly. Logistical challenges, with a weight of 0.153, ranked second, indicating that businesses must address transportation, warehousing, and supply chain management to remain competitive. The lack of trust in online payments, at a weight of 0.115, surfaced as the third most crucial impacting factor, suggesting that businesses need to address customer concerns about security and reliability to foster the adoption of digital payment methods. Other impacting factors, such as limited access to credit (0.106), competition from established players (0.090), and lack of consumer awareness (0.111), underscore the challenges businesses encounter in securing funding, differentiating themselves in the market, and informing potential customers about their products and services. Cybersecurity risks, with a weight of 0.097, highlight the importance of safeguarding sensitive business and customer information. Government regulations, at a weight of 0.100, emphasize the need for businesses to remain updated on and adhere to relevant laws and policies. Lastly, the shortage of investment, weighted at 0.057, brings attention to the necessity of securing adequate funding for business growth and operations.
+Figure 6. Relative weights of impacting factors.
+After determining the relative importance of opportunities and impacting factors, the study calculated their final weights by multiplying the Grey AHP weights of opportunities with 0.5 (weightage of opportunities) and the Grey AHP weights of impacting factors with 0.5 (weightage of impacting factors). The final weights are provided in Table 5. The highest weighted opportunity was the large market potential (0.088), and the most critical impacting factor was economic and political instability (0.086). These findings provide a foundation for prioritizing strategies based on their relevance to the identified opportunities and impacting factors. The detailed analysis of the opportunities and impacting factors allows for a more in-depth understanding of the challenges and potential avenues for growth. The next subsection will present the results of the Grey TOPSIS model, which further refines the prioritization of strategies.
+Table 5. Final weights of opportunities and impacting factors.
+4.2. Grey TOPSIS
+Grey TOPSIS is applied to rank the strategies, taking into account the weights of opportunities and impacting factors computed using Grey AHP. Opportunities are treated as benefit-type criteria, while impacting factors are treated as cost-type criteria. The initial decision matrix and normalized decision matrix are given, respectively, in Table A1 and Table A2 in Appendix A. The results of Grey TOPSIS are given in Table 6, while the ranking of strategies is depicted in Figure 7. The evaluation ranks the top three strategies for e-commerce startups in Yemen as building strategic partnerships, offering secure payment and delivery options, and targeting the underserved market. These strategies are paramount in overcoming the most significant challenges and leveraging the key opportunities in the Yemeni market.
+Figure 7. Prioritization of strategies for E-commerce startups.
+Table 6. Distance from positive and negative ideal solution; closeness coefficient; and final ranking.
+The strategy deemed most pivotal is the formation of strategic partnerships (0.23). Given the unstable political and economic landscape in Yemen, this finding underscores the importance of collaborative efforts in the realm of e-commerce. Entrepreneurs can tap into the experience and resources of established entities in the e-commerce, logistics, and finance sectors by forging strategic alliances. This broadens their capacity to navigate various challenges. Such alliances can aid new businesses in reducing operational costs, expanding their customer base, and enhancing supply chain management. Moreover, these partnerships can help startups surmount regulatory hurdles and augment their credibility in the customers’ perception. Within Yemen’s unpredictable economic and political context, associating with well-established firms provides a competitive edge and bolsters a startup’s resilience against unforeseen issues.
+By comparison, secure payment and delivery mechanisms rank as the second most crucial concern (0.20), underlining the necessity to build trust with customers and address the risks posed by cyber threats. Notably, regional consumers have significant apprehensions regarding cybersecurity risks and harbor reservations about transacting online. Consequently, startups need to prioritize the establishment of secure payment channels and the engagement of trustworthy logistic partners. By offering a secure and reliable purchasing environment, e-commerce companies can foster customer trust, bolster their reputation, and encourage increased consumer spending. The third most critical strategy is focusing on underserved markets (0.18), emphasizing venturing into untapped areas to capitalize on the extensive market potential and the growing middle class. There is a considerable opportunity for startups to offer products and services to regions with limited or no access to traditional retail alternatives, fueled by a vast potential market and a burgeoning middle class. By centering their efforts on these overlooked areas, startups can carve a distinct niche for themselves, cultivate a loyal customer base, and simultaneously fulfill the unsatisfied needs of customers. This approach also allows startups to capitalize on the diversification of the economy and the convenience and accessibility of online shopping. When comparing the top three strategies, it becomes evident that building strategic partnerships provides a more holistic approach to address multiple challenges and opportunities simultaneously. In contrast, secure payment and delivery and targeting the underserved market focus on more specific aspects of the e-commerce landscape in Yemen.
+The middle-ranking strategies, focusing on cash on delivery (0.14) and differentiating from competitors (0.10), deal with essential aspects of customer preferences and competitive advantage. While COD addresses the prevalent mistrust in online payments and limited access to credit, differentiation ensures that startups stand out in an increasingly competitive market. Although these strategies are ranked lower than the top three, they still hold significant importance for startups to thrive in the Yemeni market. For instance, the convenience and familiarity of COD can encourage consumers, especially those who are hesitant to engage in online transactions, to adopt e-commerce services. Differentiation can also help startups attract investment, as a strong value proposition and a clear market position make the business more appealing to investors.
+The least important strategies according to the TOPSIS evaluation are increasing consumer awareness (0.07), staying abreast of government regulations (0.05), and accessing funding (0.03). Although ranked lower, these strategies are still crucial for the long-term success of e-commerce startups in Yemen. Increasing consumer awareness can help bridge the knowledge gap and expand the customer base, while staying informed about government regulations ensures compliance and smooth business operations. By raising awareness, startups can capitalize on the increased internet penetration and large market potential in Yemen. By staying informed about regulatory changes, startups can avoid potential penalties, maintain a positive relationship with authorities, and ensure the smooth functioning of their businesses. Accessing funding, despite being the least important strategy, remains essential for startups to fuel growth, expand operations, and remain competitive. To attract investment, startups must develop a solid business plan and demonstrate a clear path to profitability. By securing funding, startups can ensure long-term growth, expand their operations, and remain competitive in the market.
+4.3. Discussion
+The research findings, derived from the Grey Analytic Hierarchy Process (Grey AHP) and Grey Technique for Order of Preference by Similarity to Ideal Solution (Grey TOPSIS), are pivotal in understanding the unique challenges and opportunities facing the Yemeni e-commerce market. The strategies discerned in the current study, such as building strategic partnerships, offering secure payment and delivery options, and targeting the underserved market, are in line with previous research on e-commerce in emerging markets. The emphasis on collaboration and trust as foundational elements of e-commerce success resonates with studies conducted in other politically and economically unstable regions. However, this research uniquely examines these concepts within the particular context of Yemen, with its distinct challenges of political instability, logistical issues, and broad market potential.
+Compared to other international studies, the emphasis on building strategic partnerships stands out as a universal concern. Several studies have highlighted the importance of collaboration in the e-commerce industry, citing it as a vital component in market expansion and growth. However, the current study extends this understanding by identifying specific strategic alliances suitable for the Yemeni context. Offering secure payment and delivery options is another area where this study aligns with the international perspective on e-commerce. The global surge in cybersecurity threats has necessitated robust payment and security protocols, an issue that is magnified in Yemen due to prevalent mistrust in online transactions. This highlights an area of commonality between the study’s findings and the broader e-commerce landscape. The strategy of targeting the underserved market is more unique to this research. While many studies on e-commerce highlight the importance of market segmentation and targeting, the current study’s emphasis on the specific needs and potential of Yemen’s underserved regions is distinctive. This approach can be considered a significant addition to the body of knowledge on e-commerce in emerging markets.
+The originality of this paper lies in its rigorous focus on the Yemeni e-commerce sector. Previous research on e-commerce has often focused on well-established markets, leaving a gap in understanding the dynamics in emerging and conflict-affected regions like Yemen. This study bridges that gap, offering insights that can be generalized to other markets with similar challenges. Furthermore, the theoretical contribution of this research is significant as it provides a framework that can be employed to assess and strategize e-commerce in other emerging markets. This study has three key limitations. First, the confinement to the Yemeni market, while providing in-depth insights, restricts the generalizability of the findings. The complex socio-economic dynamics of Yemen may not be directly applicable to other emerging or developed markets. Second, the techniques employed, Grey AHP, and Grey TOPSIS, though rigorous, are not without drawbacks. They are reliant on expert judgment and the quality of input data, and any inconsistencies or inaccuracies in these areas may affect the final outcomes. This highlights the need for careful consideration and potential triangulation with other methods in future studies. Finally, the volatile nature of the Yemeni market, characterized by political unrest and economic uncertainty, implies that the findings may be subject to rapid changes. The e-commerce landscape can shift dramatically in response to political, economic, or technological changes, underscoring the need for ongoing monitoring and adaptation of strategies.
+5. Conclusions
+This research aimed to probe the factors contributing to the sustainable development of e-commerce in Yemen and to propose feasible strategies for e-commerce startups. Additionally, the study sought to identify the elements fostering the growth of e-commerce in Yemen. A methodical approach was employed to ensure the successful attainment of the research’s objectives, encompassing a comprehensive review of pertinent prior literature and data analysis using the Grey Analytic Hierarchy Process (Grey AHP) and the Grey Technique for Order of Preference by Similarity to Ideal Solution (Grey TOPSIS) models. The literature review illuminated the global surge of online commerce as well as the unique challenges and opportunities facing e-commerce enterprises in Yemen. Moreover, it underscored the significance of strategic planning and the role various factors play in driving the growth of the sector.
+The Grey Analytic Hierarchy Process facilitated an evaluation of the relative importance of opportunities and barriers. Utilizing Grey AHP to establish a hierarchical structure enabled a systematic scrutiny of the factors impacting sustainable development in the e-commerce industry. The study identified the broad market potential, the underserved market, and the expanding middle class as the most significant opportunities. Conversely, economic and political instability, logistical challenges, and lack of trust in online payment systems emerged as the most influential impediments. Subsequently, the Grey TOPSIS model was utilized to rank the strategies that e-commerce enterprises in Yemen could adopt to exploit these opportunities and mitigate the detrimental impacts of the identified hurdles. The top three strategies discerned included focusing on the underserved market, forging strategic relationships, and implementing secure payment and delivery options. These strategies address the major challenges and opportunities in the Yemeni market, encompassing the country’s volatile economic and political environment, logistical concerns, and broad market potential. The findings of this research furnish Yemen’s e-commerce entrepreneurs, governmental authorities, and investors with valuable insights, enhancing their understanding of the market dynamics and the potential strategies for sustainable growth in this burgeoning sector. By prioritizing the identified strategies, businesses can effectively navigate the challenges and capitalize on the opportunities available in the Yemeni market. The successful implementation of these strategies can contribute to sustainable growth and, ultimately, support the region’s economic development.
+Understanding the complex and volatile economic environment in Yemen presents a unique challenge for e-commerce entrepreneurs. Further investigation is warranted to explore the role of governmental policies, regulations, and support mechanisms in fostering or hindering the growth of e-commerce startups. Analyzing how governmental engagement can bridge the trust gap in online payment systems, facilitate better logistical solutions, and enable secure collaboration with international partners can add value to the strategic planning within the e-commerce sector in Yemen.
+Author Contributions
+The study’s authors have all contributed to it. Y.K.A.H. and G.T. established the contextual framework of the study and prepared the initial draft. G.T. also provided supervision. S.A.A.S. and A.K.A.H. reviewed and improved the quality of the manuscript. S.Y.A. contributed to the methodological framework and obtained the results. A.M.A.A. provided further insights and revisions to the draft. All authors have read and agreed to the published version of the manuscript.
+Funding
+This research is funded by the National Social Science Foundation Project of China, grant number: 21BGJ066.
+Institutional Review Board Statement
+Not applicable.
+Informed Consent Statement
+Not applicable.
+Data Availability Statement
+The datasets used and/or analyzed during the current study are available from the corresponding author on reasonable request.
+Acknowledgments
+The authors express their gratitude to the experts who generously volunteered to take part in the survey and provided valuable comments that significantly contributed to the analysis.
+Conflicts of Interest
+The authors declare no conflict of interest.
+Appendix A
+Table A1. Grey TOPSIS decision matrix.
+Table A2. Grey TOPSIS normalized decision matrix.
+References
+Chawla, N.; Kumar, B. E-Commerce and Consumer Protection in India: The Emerging Trend. J. Bus. Ethics 2022, 180, 581–604. [Google Scholar] [CrossRef] [Scilit] [PubMed]
+Nanda, A.; Xu, Y.; Zhang, F. How Would the COVID-19 Pandemic Reshape Retail Real Estate and High Streets through Acceleration of E-Commerce and Digitalization? J. Urban Manag. 2021, 10, 110–124. [Google Scholar] [CrossRef] [Scilit]
+Saleh, M.A.K.; Manjunath, K.R. Review of Historical and Temporary Challenges Facing Small and Medium Enterprises in Yemen. Int. J. Trend Sci. Res. Dev. 2020, 4, 752–764. [Google Scholar]
+Alsabri, M.; Alhadheri, A.; Alsakkaf, L.M.; Cole, J. Conflict and COVID-19 in Yemen: Beyond the Humanitarian Crisis. Glob. Health 2021, 17, 83. [Google Scholar] [CrossRef] [Scilit]
+Alsabri, M.; Alsakkaf, L.; Alhadheri, A. Yemen: Dealing with the COVID-19 Pandemic alongside the World’s Worst Humanitarian Crisis. Mediterr. J. Emerg. Med. 2021. [Google Scholar] [CrossRef] [Scilit]
+Rahmat, Z.S.; Islam, Z.; Mohanan, P.; Kokash, D.M.; Essar, M.Y.; Hasan, M.M.; Hashim, H.T.; Basalilah, A.F.M. Food Insecurity during COVID-19 in Yemen. Am. J. Trop. Med. Hyg. 2022, 106, 1589. [Google Scholar] [CrossRef] [Scilit]
+Al Harazi, A.K.; Zhang, W.; Shah, S.A.A.; Al Asbahi, A.A.M.H.; Al Harazi, Y.K.; Alwan, S.Y. Multidimensional Study of Factors Influencing Sustainable Construction Adoption in Yemen: Insights for Implementing Sustainable Practices. Environ. Sci. Pollut. Res. 2022, 30, 1–23. [Google Scholar] [CrossRef] [Scilit]
+Alhakimi, W.; Esmail, J. The Factors Influencing the Adoption of Internet Banking in Yemen. Int. J. Electron. Bank. 2020, 2, 97. [Google Scholar] [CrossRef] [Scilit]
+Alwan, S.Y.; Hu, Y.; Al Asbahi, A.A.M.H.; Al Harazi, Y.K.; Al Harazi, A.K. Sustainable and Resilient E-Commerce under COVID-19 Pandemic: A Hybrid Grey Decision-Making Approach. Environ. Sci. Pollut. Res. 2023, 30, 47328–47348. [Google Scholar] [CrossRef] [Scilit]
+Lackner, H. Global warming, the environmental crisis and social justice in Yemen. Asian Aff. 2020, 51, 859–874. [Google Scholar] [CrossRef] [Scilit]
+Aminova, M.; Mareef, S.; Machado, C. Entrepreneurship Ecosystem in Arab World: The Status Quo, Impediments and the Ways Forward. Int. J. Bus. Ethics Gov. 2020, 3, 1–13. [Google Scholar] [CrossRef] [Scilit]
+Abdullah, A.; White, G.R.T.; Thomas, B. An Extended Stage Model for Assessing Yemeni Smes’ E-Business Adoption. In Creating Entrepreneurial Space: Talking through Multi-Voices, Reflections on Emerging Debates; Contemporary Issues in Entrepreneurship Research; Emerald Publishing Limited: Bingley, UK, 2019; Volume 9B, pp. 9–26. [Google Scholar] [CrossRef] [Scilit]
+Jiskani, I.M.; Cai, Q.; Zhou, W.; Lu, X.; Shah, S.A.A. An Integrated Fuzzy Decision Support System for Analyzing Challenges and Pathways to Promote Green and Climate Smart Mining. Expert Syst. Appl. 2021, 188, 116062. [Google Scholar] [CrossRef] [Scilit]
+Julong, D. Introduction to Grey System Theory. J. Grey Syst. 1989, 1, 1–24. [Google Scholar]
+Galhotra, B.; Dewan, A. Impact of COVID-19 on Digital Platforms and Change in E-Commerce Shopping Trends. In Proceedings of the 2020 Fourth International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC), Palladam, India, 7–9 October 2020; IEEE: Piscataway, NJ, USA, 2020; pp. 861–866. [Google Scholar]
+Hasanat, M.W.; Hoque, A.; Shikha, F.A.; Anwar, M.; Hamid, A.B.A.; Tat, H.H. The Impact of Coronavirus (COVID-19) on e-Business in Malaysia. Asian J. Multidiscip. Stud. 2020, 3, 85–90. [Google Scholar]
+Kim, R.Y. The Impact of COVID-19 on Consumers: Preparing for Digital Sales. IEEE Eng. Manag. Rev. 2020, 48, 212–218. [Google Scholar] [CrossRef] [Scilit]
+Shahzad, A.; Hassan, R.; Abdullah, N.I.; Hussain, A.; Fareed, M. COVID-19 Impact on e-Commerce Usage: An Empirical Evidence from Malaysian Healthcare Industry. Humanit. Soc. Sci. Rev. 2020, 8, 599–609. [Google Scholar] [CrossRef] [Scilit]
+Dinesh, S.; MuniRaju, Y. Scalability of E-Commerce in the COVID-19 Era. Int. J. Res.-GRANTHAALAYAH 2021, 9, 123–128. [Google Scholar] [CrossRef] [Scilit]
+Hoang, T.D.L.; Nguyen, H.K.; Nguyen, H.T. Towards an Economic Recovery after the COVID-19 Pandemic: Empirical Study on Electronic Commerce Adoption of Small and Medium Enterprises in Vietnam. Manag. Mark. 2021, 16, 47–68. [Google Scholar] [CrossRef] [Scilit]
+Hadi, M.N.; Hadi, A.N.; Abdulrab, M.A. Effect of Vendor Characteristics and Relationship Quality on Consumer Re-Purchase Intention in the B2C E-Commerce in Yemen. Int. J. Res. Bus. Soc. Sci. 2019, 8, 172–184. [Google Scholar] [CrossRef] [Scilit]
+Al-Mamary, Y.H.; Shamsuddin, A.; Aziati, N. Investigating the Key Factors Influencing on Management Information Systems Adoption among Telecommunication Companies in Yemen: The Conceptual Framework Development. Int. J. Energy Inf. Commun. 2015, 6, 59–68. [Google Scholar] [CrossRef] [Scilit]
+Abdullah, A.; Thomas, B.; Murphy, L.; Plant, E. An Investigation of the Benefits and Barriers of E-Business Adoption Activities in Yemeni SMEs. Strateg. Chang. 2018, 27, 195–208. [Google Scholar] [CrossRef] [Scilit]
+Abdullah, A.; Thomas, B.; Metcalfe, S. Measuring the E-Business Activities of SMEs in Yemen. Small 2015, 10, 4–9. [Google Scholar]
+Al-Fahim, N.H. An Examination Factors Influencing the Intention to Adopt Internet Banking among SMEs in Yemen: Using an Extension of the Technology Acceptance Model (TAM). J. Internet Bank. Commer. 2016, 21, 1–23. [Google Scholar]
+Abdullah, A.; White, G.; Thomas, B. Conceptualising a New Stage Model of Electronic Business Adoption in Yemeni SMEs. In Proceedings of the 39th Annual Conference of the Institute for Small Business and Entrepreneurship (ISBE), Paris, France, 27–28 October 2016; pp. 1–2. [Google Scholar]
+Al-Ajam, A.S.; Md Nor, K. Challenges of Adoption of Internet Banking Service in Yemen. Int. J. Bank Mark. 2015, 33, 178–194. [Google Scholar] [CrossRef] [Scilit]
+Chinnasamy, G.; Madbouly, A.; Reyad, S. Fintech: A Pathway for MENA Region. In The Fourth Industrial Revolution: Implementation of Artificial Intelligence for Growing Business Success; Studies in Computational Intelligence; Springer: Cham, Switzerland, 2021; Volume 935, pp. 135–151. [Google Scholar] [CrossRef] [Scilit]
+Zolait, A.H.S.; Ibrahim, A.R.; Farooq, A. A Study on the Internet Security and Its Implication for E-Commerce in Yemen. Int. J. Technol. Diffus. 2010, 1, 34–47. [Google Scholar] [CrossRef] [Scilit]
+Saleh, M.A.K.; Manjunath, K.R. Moving towards Digitalization in Small and Medium Enterprises in Least Developed Countries, Review of the Case of Yemen. Int. J. Mod. Trends Sci. Technol. 2020, 6, 233–239. [Google Scholar] [CrossRef] [Scilit]
+Saifan, M.S.M.; Muhammad, N.; Sawaluddin, S. Factors Affecting Online Shopping Intention Among Generation ‘Y’In Yemen: Building A Conceptual Framework. Perdana Int. J. Acad. Res. 2022, 15, 12–23. [Google Scholar]
+Hajar, M.A.; Alkahtani, A.A.; Ibrahim, D.N.; Al-Sharafi, M.A.; Alkawsi, G.; Iahad, N.A.; Darun, M.R.; Tiong, S.K. The Effect of Value Innovation in the Superior Performance and Sustainable Growth of Telecommunications Sector: Mediation Effect of Customer Satisfaction and Loyalty. Sustainability 2022, 14, 6342. [Google Scholar] [CrossRef] [Scilit]
+Al-Fahim, N.H.; Jusoh, W.J.W.; Abideen, A. Factors Affecting the Intention to Adopt Internet Banking Services among Small and Medium Sized-Enterprises in Yemen. J. Manag. Bus. Stud. 2014, 3, 432–440. [Google Scholar]
+Al-Fahim, N.H.; Abdulghafor, R. Technological and Organizational Factors Influencing the Internet Banking Use among SMES in Yemen: The Mediating Role of Attitude. In Advances in Electrical and Computer Technologies; Lecture Notes in Electrical Engineering; Springer: Singapore, 2022; Volume 881, pp. 389–408. [Google Scholar] [CrossRef] [Scilit]
+Al-Hattami, H.M. University Accounting Curriculum, IT, and Job Market Demands: Evidence from Yemen. Sage Open 2021, 11, 21582440211007111. [Google Scholar] [CrossRef] [Scilit]
+Qaied, M.M.M.; Basavaraj, K. The Role of Small and Micro Enterprises in Light of the Current Crisis in Yemen. Int. J. Recent Technol. Eng. 2020, 8, 2454–2461. [Google Scholar] [CrossRef] [Scilit]
+Aladwani, A.M. Key Internet Characteristics and E-Commerce Issues in Arab Countries. Inf. Technol. People 2003, 16, 9–20. [Google Scholar] [CrossRef] [Scilit]
+Alrawi, K.W.; Ekbia, H.R.; Jaber, K.H. A New Marketing Strategy for E-Commerce. Sage J. 2008, 9, 273–286. [Google Scholar] [CrossRef] [Scilit]
+Ulutaş, A.; Balo, F.; Sua, L.; Demir, E.; Topal, A.; Jakovljević, V.; Ulutaş, A.; Balo, F.; Sua, L.; Demir, E.; et al. A New Integrated Grey MCDM Model: Case of Warehouse Location Selection. Facta Univ. Ser. Mech. Eng. 2021, 19, 515–535. [Google Scholar] [CrossRef] [Scilit]
+Badi, I.; Abdulshahed, A.; Mechanical, E.A.-R. Using Grey-TOPSIS Approach for Solar Farm Location Selection in Libya. Rep. Mech. Eng. 2023, 4, 80–89. [Google Scholar] [CrossRef] [Scilit]
+Thakur, V.; Ramesh, A. Healthcare Waste Disposal Strategy Selection Using Grey-AHP Approach. Benchmarking 2017, 24, 735–749. [Google Scholar] [CrossRef] [Scilit]
+Sahoo, S.; Dhar, A.; Kar, A. Environmental Vulnerability Assessment Using Grey Analytic Hierarchy Process Based Model. Environ. Impact Assess. Rev. 2016, 56, 145–154. [Google Scholar] [CrossRef] [Scilit]
+Longsheng, C.; Ali Shah, S.A.; Solangi, Y.A.; Ahmad, M.; Ali, S. An Integrated SWOT-Multi-Criteria Analysis of Implementing Sustainable Waste-to-Energy in Pakistan. Renew Energy 2022, 195, 1438–1453. [Google Scholar] [CrossRef] [Scilit]
+Malaga, A.; Vinodh, S. Benchmarking Smart Manufacturing Drivers Using Grey TOPSIS and COPRAS-G Approaches. Benchmarking 2021, 28, 2916–2951. [Google Scholar] [CrossRef] [Scilit]
+Jiskani, I.M.; Shah, S.A.A.; Qingxiang, C.; Zhou, W.; Lu, X. A Multi-Criteria Based SWOT Analysis of Sustainable Planning for Mining and Mineral Industry in Pakistan. Arab. J. Geosci. 2020, 13, 1108. [Google Scholar] [CrossRef] [Scilit]
+Liu, S.; Forrest, J.Y.L. Grey Systems: Theory and Applications; Springer Science & Business Media: Berlin, Germany, 2010; ISBN 364216157X. [Google Scholar]
+Saaty, T.L. A Scaling Method for Priorities in Hierarchical Structures. J. Math. Psychol. 1977, 15, 234–281. [Google Scholar] [CrossRef] [Scilit]
+Shah, S.A.A. Feasibility Study of Renewable Energy Sources for Developing the Hydrogen Economy in Pakistan. Int. J. Hydrogen Energy 2019, 45, 15841–15854. [Google Scholar] [CrossRef] [Scilit]
+Shah, S.A.A.; Longsheng, C. Evaluating Renewable and Sustainable Energy Impeding Factors Using an Integrated Fuzzy-Grey Decision Approach. Sustain. Energy Technol. Assess. 2022, 51, 101905. [Google Scholar] [CrossRef] [Scilit]
+Barzilai, J. Deriving Weights from Pairwise Comparison Matrices. J. Oper. Res. Soc. 1997, 48, 1226–1232. [Google Scholar] [CrossRef] [Scilit]
+Wu, W.-W.; Lee, Y.-T. Developing Global Managers’ Competencies Using the Fuzzy DEMATEL Method. Expert Syst. Appl. 2007, 32, 499–507. [Google Scholar] [CrossRef] [Scilit]
+Hwang, C.-L.; Yoon, K. Multiple Criteria Decision Making. Lect. Notes Econ. Math. Syst. 1981, 186, 58–191. [Google Scholar]
+Sun, C.-C.C. A Performance Evaluation Model by Integrating Fuzzy AHP and Fuzzy TOPSIS Methods. Expert Syst. Appl. 2010, 37, 7745–7754. [Google Scholar] [CrossRef] [Scilit]
+Wang, Y.-M.; Yang, J.-B.; Xu, D.-L.; Chin, K.-S. On the Centroids of Fuzzy Numbers. Fuzzy Sets Syst. 2006, 157, 919–926. [Google Scholar] [CrossRef] [Scilit]
+Zhuo, Z.; Siyal, Z.A.; Shaikh, G.M.; Shah, S.A.A.; Solangi, Y.A.; Musaad O, A.S.O.; Zhuo, Z.; Siyal, Z.A.; Shaikh, G.M.; Shah, S.A.A.; et al. An Integrated Multi-Criteria Decision Support Framework for the Selection of Suppliers in Small and Medium Enterprises Based on Green Innovation Ability. Processes 2020, 8, 418. [Google Scholar] [CrossRef] [Scilit]
+	
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+
+© 2023 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Share and Cite
+      
+MDPI and ACS Style
+
+Al Harazi, Y.K.; Tian, G.; Shah, S.A.A.; Al Harazi, A.K.; Alwan, S.Y.; Amer, A.M.A. Unlocking the Potential of E-Commerce in Yemen: Identifying Key Impacting Factors and Exploring Strategic Solutions. Sustainability 2023, 15, 13712. https://doi.org/10.3390/su151813712
+
+AMA Style
+
+
+Al Harazi YK, Tian G, Shah SAA, Al Harazi AK, Alwan SY, Amer AMA. Unlocking the Potential of E-Commerce in Yemen: Identifying Key Impacting Factors and Exploring Strategic Solutions. Sustainability. 2023; 15(18):13712. https://doi.org/10.3390/su151813712
+
+Chicago/Turabian Style
+
+
+Al Harazi, Yaser Khaled, Gang Tian, Syed Ahsan Ali Shah, Ahmed Khaled Al Harazi, Saleh Yahya Alwan, and Amr Mohammed Ali Amer. 2023. "Unlocking the Potential of E-Commerce in Yemen: Identifying Key Impacting Factors and Exploring Strategic Solutions" Sustainability 15, no. 18: 13712. https://doi.org/10.3390/su151813712
+
+APA Style
+
+
+Al Harazi, Y. K., Tian, G., Shah, S. A. A., Al Harazi, A. K., Alwan, S. Y., & Amer, A. M. A. (2023). Unlocking the Potential of E-Commerce in Yemen: Identifying Key Impacting Factors and Exploring Strategic Solutions. Sustainability, 15(18), 13712. https://doi.org/10.3390/su151813712
+
+Note that from the first issue of 2016, this journal uses article numbers instead of page numbers. See further details here.
+Article Metrics
+Citations
+Crossref
+ 
+12
+Scopus
+ 
+12
+Web of Science
+ 
+8
+Google Scholar
+ 
+[click to view]
+Article Access Statistics
+Article access statistics
+Article Views
+13. Jul
+14. Jul
+15. Jul
+16. Jul
+17. Jul
+18. Jul
+19. Jul
+20. Jul
+21. Jul
+22. Jul
+23. Jul
+24. Jul
+25. Jul
+26. Jul
+27. Jul
+28. Jul
+29. Jul
+30. Jul
+31. Jul
+1. Aug
+2. Aug
+3. Aug
+4. Aug
+5. Aug
+6. Aug
+7. Aug
+8. Aug
+9. Aug
+10. Aug
+11. Aug
+12. Aug
+13. Aug
+14. Aug
+15. Aug
+16. Aug
+17. Aug
+18. Aug
+19. Aug
+20. Aug
+21. Aug
+22. Aug
+23. Aug
+24. Aug
+25. Aug
+26. Aug
+27. Aug
+28. Aug
+29. Aug
+30. Aug
+31. Aug
+1. Sep
+2. Sep
+3. Sep
+4. Sep
+5. Sep
+6. Sep
+7. Sep
+8. Sep
+9. Sep
+10. Sep
+11. Sep
+12. Sep
+13. Sep
+14. Sep
+15. Sep
+16. Sep
+17. Sep
+18. Sep
+19. Sep
+20. Sep
+21. Sep
+22. Sep
+23. Sep
+24. Sep
+25. Sep
+26. Sep
+27. Sep
+28. Sep
+29. Sep
+30. Sep
+1. Oct
+2. Oct
+3. Oct
+4. Oct
+5. Oct
+6. Oct
+7. Oct
+8. Oct
+9. Oct
+10. Oct
+0k
+10k
+2.5k
+5k
+7.5k
+12.5k
+For more information on the journal statistics, click here.
+Multiple requests from the same IP address are counted as one view.
+Sustainability, EISSN 2071-1050, Published by MDPI
+RSS Content Alert
+Further Information
+Article Processing Charge
+Pay an Invoice
+Open Access Policy
+Contact MDPI
+Jobs at MDPI
+Guidelines
+For Authors
+For Reviewers
+For Editors
+For Librarians
+For Publishers
+For Societies
+For Conference Organizers
+MDPI Initiatives
+Sciforum
+MDPI Books
+Preprints.org
+Scilit
+SciProfiles
+Encyclopedia
+JAMS
+Proceedings Series
+Follow MDPI
+LinkedIn
+Facebook
+X
+
+Subscribe to receive issue release notifications and newsletters from MDPI journals
+
+Select options
+ Subscribe
+© 1996-2026 MDPI (Basel, Switzerland) unless otherwise stated
+Disclaimer Legal Notice Terms and Conditions Privacy Policy Privacy Settings Accessibility

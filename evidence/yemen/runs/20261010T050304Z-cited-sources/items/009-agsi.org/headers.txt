@@ -1,0 +1,52 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 05:03:05 GMT
+content-type: text/html; charset=UTF-8
+location: https://agsi.org/ar/analysis/%d8%a7%d9%84%d8%b1%d9%8a%d8%a7%d9%84-%d8%a7%d9%84%d9%8a%d9%85%d9%86%d9%8a-%d8%a7%d9%84%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a-%d8%aa%d8%b5%d9%88%d8%b1-%d8%b1%d9%82%d9%85%d9%8a-%d9%84%d8%b3/
+cache-control: max-age=3600
+expires: Sat, 10 Oct 2026 06:03:05 GMT
+server: cloudflare
+strict-transport-security: max-age=300
+x-pantheon-styx-hostname: styx-us-a-58d475665b-j2vtj
+x-redirect-by: WordPress
+x-styx-req-id: e0916489-c467-11f1-afaa-ca1332ed6442
+x-served-by: cache-chi-kigq8000071-CHI, cache-iad-kiad7000144-IAD
+x-cache: MISS, MISS
+x-cache-hits: 0, 0
+x-timer: S1791608585.331656,VS0,VE274
+vary: accept, content-type, Cookie, Cookie
+age: 0
+accept-ranges: bytes
+via: 1.1 varnish, 1.1 varnish
+cf-cache-status: DYNAMIC
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2FPBLkA5NmeZINl2L1ARS3cNE4m4etFpqyjyLkBenyuETrd2nXsGM6Fw4Wt2GKtJ4KpW0%2FbRKX%2B%2FaaD%2Be02Fp%2FhS17G6QM89wFbcmMXPPUNOnIUU550Hj5UCYAA%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a483139a4f1ca9d6-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:06 GMT
+content-type: text/html; charset=UTF-8
+cache-control: public, max-age=604800
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+link: <https://agsi.org/ar/wp-json/>; rel="https://api.w.org/"
+link: <https://agsi.org/ar/?p=22899>; rel=shortlink
+server: cloudflare
+strict-transport-security: max-age=300
+x-pantheon-styx-hostname: styx-us-a-58d475665b-6pwbs
+x-pingback: https://agsi.org/xmlrpc.php
+x-styx-req-id: e0c0f54c-c467-11f1-acb2-7ed1d9fc810f
+x-served-by: cache-chi-kigq8000138-CHI, cache-iad-kiad7000144-IAD
+x-cache: MISS, MISS
+x-cache-hits: 0, 0
+x-timer: S1791608586.641883,VS0,VE635
+vary: Accept-Encoding, accept, content-type, Cookie, Cookie
+age: 0
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Fj%2BEDpQp7rfaouqUniteYb5EsdgKx1RoPGJc1ggeMIusIxQBMvrq8i2do94LJBFz2JEl5iaVgc1DNXa09S7bo78lP5YFkjhCXy%2BCRav0t%2BESUsTEAZSrie9DBA%3D%3D"}]}
+via: 1.1 varnish, 1.1 varnish
+cf-cache-status: DYNAMIC
+content-encoding: zstd
+cf-ray: a483139c3c9ba9d6-IAD
+alt-svc: h3=":443"; ma=86400
+

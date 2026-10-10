@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+cache-control: max-age=0, must-revalidate, no-cache, no-store, private
+content-type: text/html; charset=utf-8
+pragma: no-cache
+expires: Fri, 01 Jan 1990 00:00:00 GMT
+x-frame-options: DENY
+content-security-policy: frame-ancestors 'none'
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+set-cookie: XSRF-TOKEN=eyJpdiI6Im1xZ2FuQVA0VXA1SDJXTmZPRW80dVE9PSIsInZhbHVlIjoidVFadThkTE5qdzNFTHo2N3EwQXhRZCtoK041MmhxRGRLNnRubXlBalFYN0tBSTB2WFpwWFRIYkRwVGEzQi80SE5yUkZPV1I0OXdaYXpMRU5ubGh2QWF3clY0eHVSMmdidStaNjFWMXp5VldMVjFsQ2FmdzlQNjlqbDJZVytjamkiLCJtYWMiOiJhMWE2YjAzYzY5ZjZkZjBiZjZkY2JjMmVlNzU5NWRlZWE2MmQ3ZjBiMmUyOGQ5MjlmZjZlZWYwNDgwZTIwYjM5IiwidGFnIjoiIn0%3D; expires=Sat, 10 Oct 2026 07:03:06 GMT; Max-Age=7200; path=/; secure; samesite=lax
+set-cookie: laravel-session=eyJpdiI6IjArQ2tNaXJockthc0ExNHgzV0xpeFE9PSIsInZhbHVlIjoieTcvdUZLMlJNRkUwNEZBUWRrQ1pNMms0czN4OG9kWHF0LzM2YVVueDhmMVVRbmVTZG1DMVVoMDQ2V3Iwc0c2OGZKbmovYkhmQkRnSEF0bkt3bXJYRWFOeTB4bzJLQXJ2MTJOdVVyZ1N0MjFrT3psU2wwZWYxOUVDUVY2OUlpVkIiLCJtYWMiOiI4ZjhiMmQzNjJkMTgyMTNhYWViZjY4YjZhOGYwYTFjNmEzZTIxOWNiM2ZiMzFjYjA4NmM5ZDExMmViZWZhYjQ5IiwidGFnIjoiIn0%3D; expires=Sat, 10 Oct 2026 07:03:06 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+content-length: 28287
+content-encoding: br
+vary: Accept-Encoding
+date: Sat, 10 Oct 2026 05:03:06 GMT
+platform: hostinger
+panel: hpanel
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000
+

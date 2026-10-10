@@ -1,0 +1,47 @@
+{
+  "name": "@alsharie/kuraimiepay",
+  "version": "1.0.6",
+  "description": "TypeScript Node.js SDK for integrating with Kuraimi Bank E-Pay API for suppliers.",
+  "main": "dist/KuraimiEPayClient.js",
+  "types": "dist/KuraimiEPayClient.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example:payment": "ts-node src/examples/sendPayment.ts",
+    "example:reversal": "ts-node src/examples/reversePayment.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "kuraimi",
+    "epay",
+    "payment",
+    "gateway",
+    "sdk",
+    "bank",
+    "fintech",
+    "typescript",
+    "alsharie"
+  ],
+  "author": "abdulrahman alsharie",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alsharie/kuraimiepay.git"
+  },
+  "homepage": "https://github.com/alsharie/kuraimiepay#readme",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

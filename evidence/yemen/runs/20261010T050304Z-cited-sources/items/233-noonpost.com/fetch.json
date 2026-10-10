@@ -1,0 +1,18 @@
+{
+ "n": 233,
+ "url": "https://www.noonpost.com/41375/amp/",
+ "dir": "items/233-noonpost.com",
+ "fetched_at": "2026-10-10T05:03:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.noonpost.com/41375/amp/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 11442,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:319"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1ee578d5ba12de988a564db4f7541006812f47cb0a455395541b83cc065ecf64",
+ "raw_ext": "html"
+}

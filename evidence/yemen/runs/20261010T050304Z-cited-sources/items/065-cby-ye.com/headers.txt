@@ -1,0 +1,15 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache, private
+Date: Sat, 10 Oct 2026 05:03:14 GMT
+Set-Cookie: XSRF-TOKEN=eyJpdiI6Im5rU3liQXdUc0JIem5HS29VWnlKcHc9PSIsInZhbHVlIjoiNm1wVWhxemhrejI5dGlQbGwyZzBSeWV6eDZyV1hhOGphZHVRRENQeUpBdUVXTUNzb2IwZWtuaVVZYk1KRlk2ZFo3K3FtSGhxYURpRmx5elR4bEJlcHc9PSIsIm1hYyI6ImJkOWU5ZTliNmRjMTAzM2Q4OWYwZDYyZjlhN2E1MDYyNWY2MmU3NDhmYzEzZDQxYTc3YjdmZDllMWVmNWFmNjUifQ%3D%3D; expires=Sat, 10-Oct-2026 07:03:14 GMT; Max-Age=7200; path=/; secure
+Set-Cookie: system_session=eyJpdiI6IkhTT2hCUVBDdUkzWHgyUllGcTArcHc9PSIsInZhbHVlIjoiRExDN3lmdjNMZ1dNXC9raDlvbmdBcTd3emRNeTNhSnlaQnFNRTJyT1FLVVlaZUZoblo2Qlg5Ull4Nm5YZDh1MFpNbXY0cFR3RmQ4Tm56Q3orK1hTdDZRPT0iLCJtYWMiOiIxMDNlNTQwNWNhZDE4NWRhNjk2NTUxNDk3MzU1ODI5Yjg2OWNjMTM5NzdmMDM4ZGRhZTA4NDllMTc0ZTAzNDQwIn0%3D; expires=Sat, 10-Oct-2026 07:03:14 GMT; Max-Age=7200; path=/; secure; httponly
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+

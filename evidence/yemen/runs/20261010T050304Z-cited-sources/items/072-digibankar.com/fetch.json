@@ -1,0 +1,18 @@
+{
+ "n": 72,
+ "url": "https://digibankar.com/docs/transfer/yemen/global/",
+ "dir": "items/072-digibankar.com",
+ "fetched_at": "2026-10-10T05:03:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://digibankar.com/docs/transfer/yemen/global/",
+ "content_type": "text/html",
+ "bytes": 11224,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:379"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cb4c4623e9e97a877ffef6cd5dae1f3ee67cdc99f2cde993207d172d3e12429f",
+ "raw_ext": "html"
+}

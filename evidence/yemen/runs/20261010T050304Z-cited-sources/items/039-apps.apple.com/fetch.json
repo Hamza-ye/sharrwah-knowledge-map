@@ -1,0 +1,19 @@
+{
+ "n": 39,
+ "url": "https://apps.apple.com/us/app/id6503729833",
+ "dir": "items/039-apps.apple.com",
+ "fetched_at": "2026-10-10T05:03:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://apps.apple.com/us/app/yemen-national-wallet/id6503729833",
+ "content_type": "text/html",
+ "bytes": 32548,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:152",
+  "yemen-setup-options/notes/wallets_emoney.md:219"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e0e8091273d81b7fd5086bcfd6171539f3ec4a32e0fc629fb8d306edc8ce0ffe",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 202,
+ "url": "https://www.almashhad.news/335316",
+ "dir": "items/202-almashhad.news",
+ "fetched_at": "2026-10-10T05:03:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.almashhad.news/news/335316",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 17795,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:117"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7a4299a5e97c5d7f8a7866dfefc271fcb787e7fb056a12e611600b3624ed5587",
+ "raw_ext": "html"
+}

@@ -1,0 +1,21 @@
+{
+ "n": 211,
+ "url": "https://www.cash.com.ye/en/cash-pay-electronic-payment-service",
+ "dir": "items/211-cash.com.ye",
+ "fetched_at": "2026-10-10T05:03:39Z",
+ "curl_exit": 35,
+ "curl_error": "curl: (35) Recv failure: Connection reset by peer",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:92",
+  "yemen-setup-options/notes/wallets_emoney.md:199",
+  "yemen-setup-options/notes/wallets_emoney.md:320",
+  "yemen-setup-options/notes/wallets_emoney.md:381"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

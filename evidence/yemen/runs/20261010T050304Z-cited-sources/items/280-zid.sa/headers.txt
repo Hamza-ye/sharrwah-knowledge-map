@@ -1,0 +1,27 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 308 
+date: Sat, 10 Oct 2026 05:03:55 GMT
+location: /en/legal/zidpay-terms-conditions-kw/
+refresh: 0;url=/en/legal/zidpay-terms-conditions-kw/
+cf-cache-status: BYPASS
+set-cookie: __cf_bm=giFrFlGWUmXol2VnQ0ti0V8Jmns2j_NXpL6IjXr5gUc-1791608635.702832-1.0.1.1-G3mcETyHis5Ougq_VCVIwSg1RNLqmYuXOJROOKwihRyP7CyuDpfBUUglJVGoNF4rmXg2fmcwJ1.zkdMaQ73xVbX1lrgsSrbIrl8sdC2O8J7gQ0CVMPsGu1T2AZtspWxu; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Sat, 10 Oct 2026 05:33:55 GMT
+set-cookie: _cfuvid=HTcFLoVRBnwWeU8AzjK1nuS7BNmncS8702GKX464SKw-1791608635.702832-1.0.1.1-ucClDiX9d0ByZC2v5.sDOYfq3NbjrLXgRRBxvbTDHps; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+strict-transport-security: max-age=0; includeSubDomains
+server: cloudflare
+cf-ray: a48314d52a2f578c-IAD
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:56 GMT
+content-type: text/html; charset=utf-8
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+x-powered-by: Next.js
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+strict-transport-security: max-age=0; includeSubDomains
+cf-cache-status: BYPASS
+set-cookie: __cf_bm=8fMAqI56YIsC63rMYzEG1MwFsMlh49lc.HFiA1knyn8-1791608635.9572825-1.0.1.1-aHqbFoViZAmGhtUMuRNg59QY4DtPNmiiFuXglg_9_051XmHu9bOUg60QemzB3oXSk1ANOl6fk.8vHT7V8diYsCuZTIKSXShqryUb3jLc.iQWqPHmBbDMOTrbQyCeR.Ri; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Sat, 10 Oct 2026 05:33:56 GMT
+set-cookie: _cfuvid=yZ3JihhM5D4mOMCzEcD5u5A8leZIkPxWDISjoAWad5U-1791608635.9572825-1.0.1.1-4rtY_su9BgEG3om7urwiYTzN4KYELPda4CF4Wt0gsTg; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+content-encoding: gzip
+server: cloudflare
+cf-ray: a48314d6bf09578c-IAD
+

@@ -1,0 +1,18 @@
+{
+ "n": 89,
+ "url": "https://faolex.fao.org/docs/pdf/yem221463.pdf",
+ "dir": "items/089-faolex.fao.org",
+ "fetched_at": "2026-10-10T05:03:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://faolex.fao.org/docs/pdf/yem221463.pdf",
+ "content_type": "application/pdf",
+ "bytes": 119150,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:565"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "336e7103851c4092c7fd79037f77cf2756eefc1b38ad444cbf9f3b773e03e7b2",
+ "raw_ext": "pdf"
+}

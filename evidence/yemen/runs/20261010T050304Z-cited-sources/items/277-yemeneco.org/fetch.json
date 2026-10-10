@@ -1,0 +1,20 @@
+{
+ "n": 277,
+ "url": "https://yemeneco.org/archives/84396",
+ "dir": "items/277-yemeneco.org",
+ "fetched_at": "2026-10-10T05:03:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemeneco.org/archives/84396",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 33584,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:60",
+  "yemen-setup-options/notes/wallets_emoney.md:158",
+  "yemen-setup-options/notes/wallets_emoney.md:450"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d8b9bb0e0e0fad30307aafa13357bd72ab95d6953051195eef34f026af02f24d",
+ "raw_ext": "html"
+}

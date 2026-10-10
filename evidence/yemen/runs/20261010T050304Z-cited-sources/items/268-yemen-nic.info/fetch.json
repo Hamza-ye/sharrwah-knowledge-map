@@ -1,0 +1,18 @@
+{
+ "n": 268,
+ "url": "https://yemen-nic.info/db/laws_ye/detail.php?ID=11733",
+ "dir": "items/268-yemen-nic.info",
+ "fetched_at": "2026-10-10T05:03:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemen-nic.info/db/laws_ye/detail.php?ID=11733",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 333547,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:544"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9bf5004d955b67fd499b780ccab2e9e8724854ccb795282af21976a29dff0f26",
+ "raw_ext": "html"
+}

@@ -1,0 +1,20 @@
+{
+ "n": 5,
+ "url": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5266997-%D8%A3%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%88%D9%84%D8%A9-%D8%AA%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A-%D9%88%D8%AA%D8%B9%D8%B7%D9%84-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AA%D8%A8",
+ "dir": "items/005-aawsat.com",
+ "fetched_at": "2026-10-10T05:03:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5266997-%D8%A3%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%88%D9%84%D8%A9-%D8%AA%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A-%D9%88%D8%AA%D8%B9%D8%B7%D9%84-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AA%D8%A8",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 38481,
+ "cited_in": [
+  "yemen-setup-options/report.md:88",
+  "yemen-setup-options/notes/currency_territory.md:222",
+  "yemen-setup-options/notes/currency_territory.md:223"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d1ec434c7997718dc47b2122421ee5ada21308eb731e32663716cb50057ff9d8",
+ "raw_ext": "html"
+}

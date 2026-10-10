@@ -1,0 +1,18 @@
+{
+ "n": 185,
+ "url": "https://usa.visa.com/dam/VCOM/global/support-legal/documents/visa-payment-facilitator-model.pdf",
+ "dir": "items/185-usa.visa.com",
+ "fetched_at": "2026-10-10T05:03:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://usa.visa.com/dam/VCOM/global/support-legal/documents/visa-payment-facilitator-model.pdf",
+ "content_type": "application/pdf",
+ "bytes": 256314,
+ "cited_in": [
+  "yemen-setup-options/report.md:180"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "69e04693de5795a5b7644a5b4551c97072671dc39deec8816f172c4ac3dcf07f",
+ "raw_ext": "pdf"
+}

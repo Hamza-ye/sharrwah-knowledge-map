@@ -1,0 +1,23 @@
+{
+ "n": 274,
+ "url": "https://yemen.yeti.acaps.org/xr-commodities/",
+ "dir": "items/274-yemen.yeti.acaps.org",
+ "fetched_at": "2026-10-10T05:03:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemen.yeti.acaps.org/xr-commodities/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 91474,
+ "cited_in": [
+  "yemen-setup-options/report.md:88",
+  "yemen-setup-options/notes/wallets_emoney.md:406",
+  "yemen-setup-options/notes/currency_territory.md:12",
+  "yemen-setup-options/notes/currency_territory.md:34",
+  "yemen-setup-options/notes/currency_territory.md:41",
+  "yemen-setup-options/notes/currency_territory.md:185"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b562701a79358155cb49e6085639593cb7f7c040b5126d4bef6fc072d4182c13",
+ "raw_ext": "html"
+}

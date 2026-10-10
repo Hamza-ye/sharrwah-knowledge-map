@@ -1,0 +1,18 @@
+{
+ "n": 173,
+ "url": "https://staging.fintech-expert.net",
+ "dir": "items/173-staging.fintech-expert.net",
+ "fetched_at": "2026-10-10T05:03:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://staging.fintech-expert.net/login",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3783,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:235"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1965833fe8dc97ba1874a2ea8c40aae1e174df5d1b84df9e9d9fdac7f264b3d8",
+ "raw_ext": "html"
+}

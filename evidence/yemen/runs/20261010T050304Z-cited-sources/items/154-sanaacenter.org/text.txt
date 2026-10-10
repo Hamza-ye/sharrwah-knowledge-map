@@ -1,0 +1,2219 @@
+CHALLENGES AND
+PROSPECTS FOR
+ELECTRONIC MONEY AND
+PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+                          By:
+                   The Sana’a Center
+                     Economic Unit
+
+
+
+                       March 2022
+    CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+                               CHALLENGES AND
+                               PROSPECTS FOR
+                               ELECTRONIC MONEY AND
+                               PAYMENT SYSTEMS IN YEMEN
+
+
+
+                               By:
+                               The Sana’a Center
+                               Economic Unit
+
+
+                               March 2022
+
+
+
+
+                              This white paper was prepared by the Sana’a Center for
+                              Strategic Studies, in coordination with the project partners
+                              DeepRoot Consulting and CARPO – Center for Applied
+                              Research in Partnership with the Orient.
+
+                              Note: This document has been produced with the financial
+                              assistance of the European Union and the Embassy of the
+                              Kingdom of the Netherlands to Yemen. The recommendations
+                              expressed within this document are the personal opinions
+                              of the author(s) only, and do not represent the views of the
+                              Sana’a Center for Strategic Studies, DeepRoot Consulting,
+                              CARPO - Center for Applied Research in Partnership with
+                              the Orient, or any other persons or organizations with whom
+                              the participants may be otherwise affiliated. The contents of
+                              this document can under no circumstances be regarded as
+                              reflecting the position of the European Union or the Embassy
+                              of the Kingdom of the Netherlands to Yemen.
+
+
+
+
+                                            Co-funded by
+                                      the European Union
+
+
+
+
+    Rethinking Yemen’s Economy | March 2022
+2
+  CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+TABLE OF CONTENTS
+
+Executive Summary                                                                     5
+
+1 | Introduction                                                                      7
+
+2 | Yemen’s Financial System                                                         10
+    2.1 | Pre-Conflict Legal Framework, Reform Efforts and E-Money Usage             11
+
+3 | Continued Efforts Towards an E-Rial During the Conflict                          15
+    3.1 | Houthi Alterations to E-Rial Legal Framework                               19
+    3.2 | CBY-Aden Response to Houthi E-Rial Push                                    20
+
+4 | E-Money Systems, Infrastructure and Players                                      22
+    4.1 | The Limits of Comparing International Examples to Yemen                    22
+    4.2 | Licensed E-Money Services Providers and Usage During the Conflict          24
+    4.3 | The National Financial Switch Interbank Network                            29
+
+5 | E-rial Progress: Challenges and Prospects                                        31
+    5.1 | Existing Challenges Preventing E-Rial Expansion                            31
+    5.2 | Prospects for E-rial Development                                           34
+
+6 | Recommendations                                                                  37
+    6.1 | Short- to Medium-Term Recommendations                                      37
+    6.2 | Long-Term Recommendations                                                  39
+
+
+
+
+                                                 Rethinking Yemen’s Economy | March 2022
+                                                                                           3
+    CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+    LIST OF ACRONYMS
+    ACH		           automated clearing house
+    AFESD		         Arab Fund for Economic and Social Development
+    AMF		           Arab Monetary Fund
+    AML		           Anti-money laundering
+    ATM		           Automated Teller Machine
+    B2B		           Business-to-business
+    B2C		           Business-to-customer
+    C2B		           customers to businesses
+    CAC Bank        Cooperative and Agricultural Credit Bank
+    CBY		           Central Bank of Yemen
+    CGAP		          Consultative Group to Assist the Poor
+    CTF		           counter-terrorist financing
+    EFT		           electronic fund transfer
+    GAPPS		         General Authority for Post and Postal Savings
+    GIZ		           Deutsche Gesellschaft für Internationale Zusammenarbeit
+    HSA		           Hayel Saeed Anam group
+    IBY		           International Bank of Yemen
+    ICT		           information and communications technology
+    IDA		           International Development Association
+    ITS		           instant transfer scheme
+    IVR		           integrated voice recording
+    KYC		           Know Your Customer
+    MENA		          Middle East and North Africa
+    MFI		           microfinance institution
+    MNO		           mobile network operator
+    NFSIN		         national financial switch interbank network
+    NSG		           National Salvage Government
+    P2P		           person-to-person
+    PSD		           Payments System Department
+    PTC		           Public Telecommunication Corporation
+    RTGS		          real-time gross settlements
+    SBYB		          Shamil Bank of Yemen and Bahrain
+    SFD		           Social Fund for Development
+    SMS		           Short Message Service
+    USSD		          Unstructured Supplementary Service Data
+    YFSC		          Yemen Financial Services Company
+    YPC		           Yemen Petroleum Company
+    YKB		           Yemen Kuwait Bank
+
+
+
+
+    Rethinking Yemen’s Economy | March 2022
+4
+  CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+EXECUTIVE SUMMARY
+Yemen has a heavily cash-based economy with low levels of
+financial inclusion. The country’s formal banking sector is highly
+underdeveloped, undercapitalized and concentrated in urban areas,
+leaving it inaccessible for the majority of the Yemeni population. Just
+prior to the current conflict, the Central Bank of Yemen (CBY) began
+reforms aimed at developing Yemen’s financial sector infrastructure
+and reducing the predominance of cash by improving electronic
+interbank transactions and local electronic payment systems,
+including electronic and mobile money services. Given the widespread
+prevalence of mobile phones among the population, successful reform
+had the potential to dramatically increase financial inclusion. The
+onset of the ongoing conflict, however, interrupted progress.
+
+This paper examines the existing regulations surrounding the use of
+e-money in Yemen, its attempts to adopt e-money services both before
+and during the conflict, the major players and state of infrastructure in
+the sector, and the challenges and prospects facing greater adoption of
+electronic currency in the country.
+
+Broadly speaking, e-money adoption around the globe has been
+accompanied by three types of regulatory environments: highly,
+moderately and minimally regulated markets. In Yemen, a highly
+regulated market – which grants the right to provide e-money services
+only to banks – was the legal framework prior to 2014, though in practice
+adoption remained minimal. The Yemeni conflict escalated in 2015,
+and by 2016 the CBY was fragmented across frontlines, with rivaling
+branches vying for dominance in Aden and Sana’a – affiliated with the
+internationally recognized government and the Houthi authorities,
+respectively. In the years following, the CBY-Sana’a has increasingly
+taken steps to establish a minimally regulated, nonbank led model for
+e-money services, which the CBY-Aden has opposed, holding to the
+prewar legal framework.
+
+Given Yemen’s armed conflict, political crisis, deep institutional
+fragmentation in key state institutions – including the parliament and
+the CBY – and the underdeveloped state of e-payment infrastructure
+overall, widespread use of e-money is unlikely to emerge. During
+the conflict, any enforcement of aggressive unilateral steps by any
+of the competing parties to the conflict could deepen the division
+in the institutions involved in operating the e-payment services.
+Holistic initiatives to strengthen the Yemeni e-money and e-payment
+
+
+
+
+                                         Rethinking Yemen’s Economy | March 2022
+                                                                                   5
+    CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+    ecosystem are invariably tied to ending political division and stabilizing
+    the monetary regime, which must start by unifying the central banks
+    and the official exchange rate.
+
+    Until a resolution can be reached, this paper recommends that
+    stakeholders interested in implementing e-money services in Yemen
+    adopt a “do no harm” approach. In general, this should focus on
+    supporting the reunification of the country’s regulatory environment
+    and, when supporting public and private entities in developing
+    the necessary skills and infrastructure to implement e-money and
+    e-payment services, do so in a way that does not compound the current
+    regulatory and monetary chaos.
+
+    Over the long term, international stakeholders should support a unified
+    CBY in developing strategic plans to stabilize the monetary regime and
+    foster recovery of the financial system, including developing a national
+    payment systems strategy to strengthen the payment infrastructure
+    and facilitate a well-studied shift to electronic payments.
+
+
+
+
+    Rethinking Yemen’s Economy | March 2022
+6
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+1 | INTRODUCTION
+Yemen is a heavily cash-based economy with low levels of financial
+inclusion within the formal banking sector. In 2014, 94 percent of
+the Yemeni adult population over 15 didn’t hold a financial account,
+including electronic accounts, and only 3 percent of the population
+could receive money via digital payment means. By 2019, 3 million
+Yemenis (10 percent of the population) held at least one bank account,
+of which 27 percent were electronic money, or ‘e-money’, accounts.[1]
+(Importantly, much of this increase occurred after the Houthi
+authorities imposed new restrictions on the circulation of new rial
+banknotes, printed by the Yemeni government-run central bank in
+Aden, in Houthi-controlled areas; this forced people to either exchange
+their new bills for old, or receive e-rial balances, as will be discussed
+in detail below).[2] Women have been disproportionately affected by
+the lack of access to finance services, with just 2 percent holding a
+financial account.[3]
+
+As of 2015, there were only 1.6 bank branches and 6.4 automated teller
+machines (ATMs) per 100,000 Yemeni adults.[4] Between 2015 and
+2016, the number of open bank accounts (including accounts opened
+with microfinance banks and for electronic money services) decreased
+by 40 percent, leaving some 2.4 million accounts held by 1.5 million
+Yemenis, while the number of active debit cards – mostly used for
+ATM services – decreased from more than 1 million in 2014-2015, to
+200,000 by the end of 2016. Much of this was due to the fact that by
+mid-2016 – shortly before the central bank was fragmented between
+Sana’a and Aden – the country entered a severe liquidity crisis as the
+Yemeni government essentially exhausted both its supply of domestic
+currency banknotes and its available foreign currency reserves. It thus
+
+[1] E-money is a surrogate for physical banknotes in which monetary value is stored electronically,
+    rather than in paper or coins, and can be held and accessed on various platforms, such as payment
+    cards, electronic devices and servers. E-money is a prepaid store of value, making it different to
+    credit available through credit cards. Domestic financial institutions, such as central banks, generally
+    authorize and regulate the financial service providers authorized to provide e-money services in any
+    given country. An electronic wallet, or ‘e-wallet’, is the electronic monetary value held by individual
+    entities and needs to be linked with an account for initiating digital payments. A mobile money
+    transfer is an electronic transfer made between a sender and receiver using a mobile phone.
+
+[2] Abdulghani Mohamed AlSamawi et al., “Electronic Payment Services in Yemen: Challenges and
+    Opportunities for Success,” Institute of Banking Studies, May 2020, http://www.ibs.edu.ye/sites/
+    default/files/Electronic%20Money%20Service%20in%20Yemen%20-%20Challenges%20and%20
+    Opportunities%20for%20Success.pdf. Accessed January 2, 2021.
+
+[3] “Digital Financial Services in the MENA Region,” SHOPS) Plus, USAID, https://www.shopsplusproject.
+    org/sites/default/files/resources/Digital%20Financial%20Services%20in%20the%20MENA%20
+    Region.pdf. Accessed January 3, 2021.
+
+[4] “Commercial bank branches (per 100,000 adults),” World Bank Data, https://data.worldbank.org/
+    indicator/FB.CBK.BRCH.P5?most_recent_year_desc=true. Accessed March 23, 2021.
+
+
+
+
+                                                           Rethinking Yemen’s Economy | March 2022
+                                                                                                               7
+    CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+    suspended salary payments to roughly 1.25 million public servants and
+    also ceased completely the repayment of its public debt instruments
+    to commercial banks. Yemen banks have historically been major
+    investors in government debt, and so the currency crisis left them
+    financially crippled and unable to meet customer demands for cash
+    withdrawals, or attract new investments. Consequently, many banking
+    customers, mostly public employees, abandon the formal banking
+    system altogether. Limited use of debit cards gradually increased in
+    the following years, reaching about 400,000 active cards at the end of
+    2019; meanwhile, credit card usage still remained minimal, with just
+    over 6,600 active cards in Yemen in 2014 decreasing to 1,206 cards in
+    2019.[5]
+
+    Concurrently, between 2015 and 2019, the CBY granted four
+    Yemeni banks – Al-Kuraimi Islamic Microfinance Bank, Tadhamon
+    International Islamic Bank, Al-Amal Microfinance Bank, Yemen Kuwait
+    Bank (YKB) – licenses to provide electronic money services via mobile
+    phone means; the CBY-Sana’a provided a license to the Cooperative
+    and Agricultural Credit Bank (CAC Bank) during that same time period.
+    In January 2021, the CBY-Sanaa gave licenses to two additional banks,
+    Shamil Bank of Yemen and Bahrain (SBYB) and International Bank of
+    Yemen (IBY), to provide electronic money services; this move by the
+    Houthi authorities, as part of a larger campaign to restrict the use of
+    new currency notes in Houthi-controlled areas, helped spur an uptick
+    in e-money usage (as will be discussed in detail below).
+
+    It is important to note that Yemenis have access to informal financial
+    services via the traditional hawala system – whereby money is paid
+    to an agent who then instructs a remote associate to pay the final
+    recipient – that retains a great deal of importance in everyday activity.
+    People are able to send and receive money transfers through the
+    hawala system and also have access to borrowing and credit. During
+    the conflict, though, the ability of hawala networks to offer credit
+    services has decreased.
+
+    The current level of e-money usage in Yemen is very low and certainly
+    not helped by the inadequate regulatory framework and the low level
+    of technical and technological infrastructure in the country as well
+    as the institutionally fragmented monetary status quo. Nevertheless,
+    there is clear potential for e-money usage in Yemen to enhance the
+
+
+    [5] Abdulghani Mohamed AlSamawi et al., “Electronic Payment Services in Yemen: Challenges and
+        Opportunities for Success,” Institute of Banking Studies, May 2020, http://www.ibs.edu.ye/sites/
+        default/files/Electronic%20Money%20Service%20in%20Yemen%20-%20Challenges%20and%20
+        Opportunities%20for%20Success.pdf. Accessed January 2, 2021.
+
+
+
+
+    Rethinking Yemen’s Economy | March 2022
+8
+  CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+level of financial inclusion within the formal banking system in the
+country and through financial service providers working underneath,
+notably the money exchange and financial hawla networks that have
+wide geographical presence and could reach the majority of financially
+disadvantaged people living in rural areas.
+
+
+
+
+                                         Rethinking Yemen’s Economy | March 2022
+                                                                                   9
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     2 | YEMEN’S FINANCIAL SYSTEM
+     Yemen’s formal domestic payment market includes three types of
+     financial service providers: commercial and Islamic banks; microfinance
+     banks and microcredit institutions;[6] and money exchange companies.
+     Payment service providers are also an increasing part of the payment
+     market. However, to date there is no ratified legal framework formalizing
+     the operations of electronic payment service providers, other than the
+     circular issued by CBY Sana’a in March 2020 intended to regulate such
+     services.[7] There is also the state-run General Authority for Post and
+     Postal Savings (GAPPS), which offers a range of financial services and
+     is overseen by the Ministry of Telecommunications and Information
+     Technology. GAPPS offers people the ability to pay utility bills – for
+     state-run companies providing internet, electricity, phone and water
+     services – though not electronically. GAPPS also offers a range of
+     pension, domestic transfer and deposit services, while at the same
+     time operates outside of the commercial financial sector and Yemen’s
+     central bank legal framework.
+
+     The formal banking sector in Yemen is highly underdeveloped,
+     undercapitalized and concentrated in urban areas, leaving the majority
+     of the Yemeni population unable to access the formal banking system.
+     Before the conflict, Yemeni banks were largely credit concentrated,
+     with over 72 percent of commercial banks’ investments in public debt
+     instruments, mainly treasury bills.[8] This led to an unprecedented
+     liquidity crisis once the Yemeni government, namely the Ministry
+     of Finance, was unable to make interest payments or repay banks’
+     principal investments in mid-2016.[9] As of February 2021, there are 18
+     banks operating in Yemen, including four state-run banks, four Islamic
+
+
+     [6] There are currently seven microfinance institutions and programs active in the Yemen microfinance
+         sector. The main difference between microfinance banks and microcredit institutions is that
+         microfinance banks are governed by the Microfinance Banks Law No. 15 of 2009 and thus being subject
+         to CBY’s supervision while the latter are governed by the Law No. (1) of 2000 regarding the Yemeni
+         Associations and Civil Society Organizations and are not allowed to practice many of the activities
+         reserved legally for banks. For more see: Moneef al-Shaibani, “Microfinance in Yemen: An Overview
+         of Challenges and Opportunities”, Sana’a Center for Strategic Studies/DeepRoot Consulting/CARPO,
+         Rethinking Yemen’s Economy White Paper 06, April, 2020, https://devchampions.org/uploads/
+         publications/files/Microfinance%20in%20Yemen. Accessed February 21, 2022.
+
+     [7] Central Bank of Yemen (Sana’a), March 11, 20202, https://yemen-yba.com/wp-content/
+         uploads/2020/03/-‫الهاتف‬-‫عرب‬-‫االلكرتوين‬-‫الدفع‬-‫خدمات‬-‫املالية‬-‫املؤسســات‬-‫لتقديم‬-‫التنظيمية‬-‫لقواعد‬-‫املركزي‬-‫البنك‬-‫محافظ‬-‫قرار‬
+         -1‫املحمول‬.pdf. Accessed February 21, 2022.
+
+     [8] “Revitalizing Yemen’s Banking Sector: Necessary Steps for Restarting Formal Financial Cycles
+         and Basic Economic Stabilization,” Sana’a Center for Strategic Studies, February 15, 2019, https://
+         sanaacenter.org/publications/analysis/7049. Accessed February 21, 2022.
+
+     [9] “Addressing Yemen’s Most Critical Challenges,” Sana’a Center for Strategic Studies/DeepRoot
+         Consulting/CARPO, Rethinking Yemen’s Economy Policy Brief 01, June 5, 2017, https://devchampions.
+         org/publications/policy-brief/Practical_Short-Term_Recommendations/. Accessed February 21, 2022.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+10
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+banks, eight commercial banks (including four foreign banks that have
+branches in Yemen) and two microfinance banks.[10] In addition, there
+are seven microfinance institutions and programs.[11]
+
+Money exchange companies, meanwhile, are officially non-deposit
+takers – by law, they are not allowed to accept or take deposits from
+clients. Money exchange companies are currently under regulated,
+however, and many do not uphold or adhere to international financial
+standards. Nonetheless, money exchangers are well positioned to
+reach large segments of society, including those living in remote rural
+areas, with money transfers and money exchange services. The number
+of branches of money exchange companies and shops, mostly family-
+owned businesses, has increased significantly during the conflict: in
+2017, there were 876 such businesses reported in Yemen; in 2019, there
+were 3,244.[12]
+
+
+
+2.1 | Pre-Conflict Legal Framework, Reform Efforts and
+E-Money Usage
+
+Prior to 2014, there was no clear regulatory framework to govern the
+provision of electronic financial services in Yemen. The first CBY
+framework to be issued post-unification, Law No. 14 of 2000, was designed
+to regulate the CBY’s functions, rules and responsibilities. Law No. 14
+did not include any legal basis to create an e-money payment system
+but called for encouraging and simplifying the procedures of payment
+systems. Follow-up legislation, such as Law No. 40 of 2006, focused
+on electronic payment systems and financial and banking operations;
+these regulations recognized electronic transactions, data, information,
+records and signatures on the same legal basis as physical documents
+and handwritten signatures. In 2006, the CBY also supported the
+
+
+[10] The four state-run banks are: Cooperative and Agricultural Credit Bank (CAC Bank), National Bank
+    of Yemen, The Yemen Bank for Reconstruction and Development and The Housing Bank (the latter of
+    which is not operational but also not officially declared defunct). The four Islamic banks are Islamic
+    Bank of Yemen for Finance and Investment, Tadhamon International Islamic Bank, Saba Islamic Bank,
+    and Yemen and Bahrain Shamil Bank. The eight commercial banks are Arab Bank Limited, International
+    Bank of Yemen, Qatar National Bank, Rafidan Bank, United Bank Limited, Yemen Commercial Bank,
+    Yemen Gulf Bank, and the Yemen Kuwait Bank for Trade and Investment. The two microfinance banks
+    are Al-Kuraimi Islamic Microfinance Bank, and Al-Amal Microfinance Bank.
+
+[11] Moneef al-Shaibani, “Microfinance in Yemen: An Overview of Challenges and Opportunities”, Sana’a
+    Center for Strategic Studies/DeepRoot Consulting/CARPO, Rethinking Yemen’s Economy White Paper
+    06, April 30, 2020, https://devchampions.org/uploads/publications/files/Microfinance%20in%20
+    Yemen. Accessed February 21, 2022.
+
+[12] Abdulghani Mohamed AlSamawi et al., “Electronic Payment Services in Yemen: Challenges and
+    Opportunities for Success,” Institute of Banking Studies, May 2020, http://www.ibs.edu.ye/sites/
+    default/files/Electronic%20Money%20Service%20in%20Yemen%20-%20Challenges%20and%20
+    Opportunities%20for%20Success.pdf. Accessed January 2, 2021.
+
+
+
+
+                                                          Rethinking Yemen’s Economy | March 2022
+                                                                                                             11
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     creation of the Yemen Financial Services Company (YFSC), established
+     and jointly owned by 11 Yemeni banks, which was intended to manage
+     the country’s national financial switch interbank network (NFSIN) and
+     interoperability connections among Yemeni banks.
+
+     In 2013, aided by a US$20 million grant from the International
+     Development Association (IDA), an arm of the World Bank, the CBY
+     began undertaking reforms aimed at developing Yemen’s financial
+     sector infrastructure.[13] The slated reforms included the installation
+     of an advanced electronic fund transfer (EFT) system to accommodate
+     real-time gross settlements (RTGS), a credit bureau, and a modern
+     core bank system to help reduce the dominance of cash in the Yemeni
+     economy by improving electronic interbank transactions and local
+     electronic payment systems, as well as an automated clearing house
+     (ACH) to process retail payment transactions between banks and other
+     financial players, such as money exchange outlets.[14]
+
+     In late 2014, the CBY issued Circular No. 11 of 2014 to enable the
+     establishment of a bank-led model to provide electronic money services,
+     with support from USAID, the World Bank, the Consultative Group to
+     Assist the Poor (CGAP) and the Deutsche Gesellschaft für Internationale
+     Zusammenarbeit (GIZ). The model was informed by a nearly two-year
+     review process and discussions with the private sector.[15] The 2014
+     circular determined the basic regulatory and supervisory aspects for
+     electronic mobile money services – e.g. license requirements and
+     technical capacities as well as duties and responsibilities of envisioned
+     actors and the bank-oriented providers of such services. It allowed for
+     licensed banks to contract or outsource the provision of electronic mobile
+     money services to telecommunications companies and agents, while
+     holding banks ultimately responsible for the actions of these entities.
+
+     Both sets of internationally backed reforms were cut short by the
+     onset of conflict in Yemen. No implementation plan was developed or
+     carried out for Circular No. 11 due to the country’s widening political
+     divisions. Meanwhile, the World Bank and IDA project to develop
+     Yemen’s financial sector infrastructure was suspended in February
+     2015, when the World Bank closed its office in Sana’a in response to
+     deteriorating security conditions.
+
+     [13] “E-commerce in Yemen: Problems and Prospects Update,” Internet Society, 2017, https://www.
+         internetsociety.org/wp-content/uploads/2017/08/Appendix201_E-Commerce20Reserch20Document.
+         pdf. Accessed February 21, 2022.
+
+     [14] “Financial Infrastructure Project (P132311),” World Bank, January 12, 2014, http://
+         d o c u m e n t s 1 .w o r l d b a n k . o r g / c u r a t e d / e n / 4 9 7 1 6 1 4 6 8 1 8 1 7 6 6 9 1 8 / p d f / I S R- D i s c l o s a b l e
+         -P132311-12-01-2014-1417416231517.pdf. Accessed February 21, 2022.
+
+     [15] John Owens, “Central Bank of Yemen issues new mobile banking regulations,” Alliance for Financial
+         Inclusion, March 7, 2015, https://www.afi-global.org/blog/2015/03/central-bank-yemen-issues-new-
+         mobile-banking-regulations. Accessed February 21, 2022.
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+12
+          CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+      Figure 1: E-rial usage before the conflict
+
+
+    JAN 10, 2000                                 JAN 1, 2006                             MAR 2, 2006
+      Electronic Fund                           Law No.40 of 2006                                YFSC
+       Transfer (EFT)                    "Law No.40 of 2006 recognizes
+                                                                                      CBY supports 11 Yemeni
+ Government-owned Post                   electronic transactions, data,
+                                                                                      banks in establishing the
+ Office launchs an electronic            information, records, and signatures
+                                                                                      Yemen Financial Services
+ fund transfer (EFT) system              as legal evidence in financial
+                                                                                      Company (YFSC) to manage
+ e-rial project to settle limited        transactions.
+                                                                                      the National Financial Switch
+ utility bills.
+                                                                                      Interbank Network.
+
+
+
+
+    JUL 6, 2013
+   World Bank Grant
+The CBY received technical assistance from                                                 DEC 11, 2014
+several international institutions to reform                                                       Launch
+the regulatory payment framework, including
+at World Bank grant to develop Yemen's                                                   CBY Circular No. (11) of 2014
+financial sector infrastructure.                                                         endorses bank-led model
+                                                                                         for e-money services, laying
+                                                                                         out basic regulatory and
+                                                                                         supervisory aspects for mobile
+                                                                                         e-money service.
+
+
+
+
+                                               Sources: CBY, World Bank
+
+
+
+      Prior to the conflict, Yemen’s e-payment infrastructure and systems
+      were significantly underdeveloped and lacked basic institutional,
+      technical and technological capacities. One of first electronic payment/
+      e-money schemes was rolled out via the government-run GAPPS[16] in
+      2002, in the form of an EFT system to settle some utility bills.[17] The
+      project was short-lived because it lacked the required accessibility and
+      technical infrastructure, including a centralized database.[18] Moreover,
+      as a non-banking entity, GAPPS operated outside the CBY’s existing
+      framework, meaning that its basic e-rial payment system lacked a
+      regulatory basis for payment policies as well as rules denoting how
+
+      [16] The GAPPS is fully owned by the government and part of the Ministry of Telecommunications and
+          Information Technology. It offers pensions and utility payment and domestic transfer and deposit
+          services, but it is not legally authorized to offer credit facilities. In 2017, GAPPS had 356 branches
+          and was delivering salaries to around 520,000 governmental employees. (Figures from “Assessment of
+          the Status of Solar PV in Yemen,” World Bank, May 2017, http://documents1.worldbank.org/curated/
+          en/284461511876486207/text/121707-WP-PUBLIC-P158449-WB-RCREEE-Solar-PV-in-Yemen-
+          Report-002.txt. Accessed February 21, 2022.)
+
+      [17] “E-commerce in Yemen: Problems and Prospects Update,” Internet Society, 2017, https://www.
+          internetsociety.org/wp-content/uploads/2017/08/Appendix201_E-Commerce20Reserch20Document.
+          pdf. Accessed February 21, 2022.
+
+      [18] Ibid.
+
+
+
+
+                                                                Rethinking Yemen’s Economy | March 2022
+                                                                                                                          13
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     digital financial services should be licensed, processed, accessed and
+     supervised. In 2011, the Yemeni postal operator signed a partnership
+     with the Social Fund for Development (SFD) to launch its platform
+     “Post Mobily Service”, and develop person-to-person (P2P) payments
+     through allowing access to savings accounts directly from mobile
+     phones, but its limited legal status – lacking authorization to offer
+     credit facilities or issue e-money – prevented it from securing the
+     needed license from the central bank to move forward.
+
+     Although the use of e-payments was limited before the conflict began,
+     and the infrastructure for such payments was underdeveloped, as the
+     following section of this paper will show, there has been a clear shift
+     during the conflict. In particular, the de facto Houthi authorities have
+     started placing increased emphasis on developing e-payment systems
+     and regulations in areas they control – promoting the e-rial as part
+     of their ongoing struggle with the internationally recognized Yemeni
+     government for control of the country’s monetary policy and economy.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+14
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+3 | CONTINUED EFFORTS TOWARDS
+    AN E-RIAL DURING THE
+    CONFLICT
+President Abdo Rabbu Mansour Hadi ordered the relocation of
+the CBY headquarters from Sana’a to Aden in September 2016,
+leaving the central bank fragmented between the two cities.[19] This
+marked the onset of the economic competition between, on the one
+hand, the Houthi authorities and CBY-Sana’a and, on the other, the
+internationally recognized Yemeni government and CBY-Aden.[20]
+While the Houthi authorities maintained purview over the country’s
+largest population and financial centers, and the CBY-Sana’a kept much
+of the physical infrastructure, human resource and financial records
+needed to run a monetary institution, the CBY-Sana’a has never been
+internationally recognized as Yemen’s central bank. As a result, CBY-
+Sana’a has no access to the corresponding international privileges and
+support, and no direct access to global financial networks. Meanwhile,
+the CBY-Aden has experienced a great deal of difficulty asserting its
+authority domestically. It is, however, internationally recognized as
+Yemen’s Central Bank, and is thus treated as such by other countries,
+international agencies and financial institutions, and has access to
+global financial networks. In the years that followed the relocation
+of the CBY headquarters, both sides have sought to leverage their
+respective positions to enforce their own competing monetary policies,
+battling for control of the local currency.[21] This has led to significant
+distortions in the monetary environment. For instance, while the
+government and CBY-Aden resorted to printing more money to cover
+expenditure costs, due to insufficient revenues and foreign currency
+reserves, the Houthi authorities and CBY-Sana’a looked to limit the use
+
+
+
+
+[19] “Yemen president names new central bank governor, moves HQ to Aden,” Reuters, September 18,
+    2016, https://www.reuters.com/article/us-yemen-cenbank-idUSKCN11O0WB. Accessed February 21,
+    2022.
+
+[20] Mansour Rageh, Amal Nasser and Farea Al-Muslimi, “Yemen Without a Functioning Central Bank: The
+    Loss of Basic Economic Stabilization and Accelerating Famine,” Sana’a Center for Strategic Studies,
+    November 2, 2016, https://sanaacenter.org/publications/main-publications/55. Accessed February 21,
+    2022; Farea Al-Muslimi, “Revitalizing Yemen’s Banking Sector: Necessary Steps for Restarting Formal
+    Financial Cycles and Basic Economic Stabilization,” Sana’a Center for Strategic Studies, February 15,
+    2019, https://sanaacenter.org/publications/analysis/7049. Accessed February 21, 2022.
+
+[21] Anthony Biswell, “Yemen Economic Bulletin: The War for Monetary Control Enters a Dangerous New
+    Phase,” Sana’a Center for Strategic Studies, January 21, 2020, https://sanaacenter.org/publications/
+    analysis/8674. Accessed February 21, 2022; “Yemen Economic Bulletin: Battle to Regulate Banks
+    Threatens to Rupture the Financial Sector,” Sana’a Center for Strategic Studies, November 27, 2020,
+    https://sanaacenter.org/publications/analysis/12004. Accessed February 21, 2022.
+
+
+
+
+                                                         Rethinking Yemen’s Economy | March 2022
+                                                                                                            15
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     of newly printed bank notes in Houthi-controlled territories.[22] This
+     has resulted in increasingly divergent exchange rates between ‘old
+     rial’ banknotes, used primarily in Houthi-controlled northern areas,
+     and ‘new rial’ banknotes, which circulate throughout the rest of the
+     country.
+
+     The promotion of e-money and e-payments is part of the Houthi
+     authorities’ broader monetary and fiscal approach, which seeks to
+     promote liquidity by preventing the movement of rial and foreign
+     currency banknotes out of Houthi-controlled areas. In light of the
+     ongoing decline in the supply of old rial banknotes as existing bills
+     degrade through usage and become unusable, these liquidity concerns
+     are particularly pressing. The YR50 and YR100 banknotes in particular
+     are becoming increasingly scarce.[23]
+
+     Unlike the internationally recognized Yemeni government and CBY-
+     Aden, the Houthi authorities and CBY-Sana’a, without access to the
+     necessary currency printers, are unable to issue new rial banknotes.
+     They have also refused to accept the Yemeni government’s legitimacy
+     to do so, with the Houthi authorities introducing increasingly severe
+     measures to prohibit the use and circulation of all newly printed rial
+     notes – i.e. those issued by CBY-Aden from January 2017 onwards. This
+     has helped prop up the rial’s value in Houthi-controlled territories.
+     These measures also prevent new rial banknotes being exchanged for
+     foreign currency in Houthi areas,[24] another safeguard against the
+     potential outflow of foreign currency.
+
+     From 2017 onwards, Houthi authorities have examined various ways
+     of increasing the use of the e-rial.[25] Unwilling to direct their limited
+     supplies of old rial banknotes toward paying the salaries of public sector
+     employees, in April 2017 the Houthis established a voucher system
+     designed to enable public sector employees to purchase essential food
+     commodities. The system began to unravel when the authorities did
+
+     [22] Farea Al-Muslimi, “Revitalizing Yemen’s Banking Sector: Necessary Steps for Restarting Formal
+         Financial Cycles and Basic Economic Stabilization,” Sana’a Center for Strategic Studies, February
+         15, 2019, https://sanaacenter.org/publications/analysis/7049. Accessed February 21, 2022; Anthony
+         Biswell, “Yemen Economic Bulletin: The War for Monetary Control Enters a Dangerous New
+         Phase,” Sana’a Center for Strategic Studies, January 21, 2020, https://sanaacenter.org/publications/
+         analysis/8674. Accessed February 21, 2022.
+
+     [23] Anthony Biswell, “Yemen Economic Bulletin: The War for Monetary Control Enters a Dangerous New
+         Phase,” Sana’a Center for Strategic Studies, January 21, 2020, https://sanaacenter.org/publications/
+         analysis/8674. Accessed February 21, 2022.
+
+     [24] Anthony Biswell, “Yemen Economic Bulletin: The War for Monetary Control Enters a Dangerous New
+         Phase,” Sana’a Center for Strategic Studies, January 21, 2020, https://sanaacenter.org/publications/
+         analysis/8674. Accessed February 21, 2022.
+
+     [25] “Yemen at the UN – March 2018 Review,” Sana’a Center for Strategic Studies, April 7, 2018, https://
+         sanaacenter.org/publications/yemen-at-the-un/5563#In-Houthi-Controlled-Areas.             Accessed
+         February 21, 2022.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+16
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+not provide sufficient physical cash to food merchants when the latter
+sought to convert vouchers into cash in order to restock their shelves.[26]
+As a result of the Houthi voucher scheme, two exchange rates were
+prevalent in the market: an undervalued one linked to balances
+accumulated on voucher credit and another premium exchange rate
+for cash transactions.
+
+Two years later, in April 2019, the Houthis publicly promoted the
+e-rial as a means to pay public sector salaries in territories under their
+control. This proposal was met with resistance, however, as illustrated
+by the refusal of the Public Telecommunication Corporation (PTC) –
+also known as Yemen Telecom or Y Telecom, which was envisioned
+to function nationwide – to integrate an electronic payments system
+for the payment of staff salaries. After reluctance was also expressed
+by other state institutions, the Houthi authorities turned to the
+Sana’a-based Yemen Petroleum Company (YPC) – the sole authorized
+distributor of fuel in Houthi-controlled territories.[27] The introduction
+of an e-rial pilot program for the payment of YPC employee salaries
+in mid-2019 was met with opposition by YPC staff, who organized
+demonstrations in Sana’a against the move.[28] With e-rials not
+widely accepted for transactions, the YPC staff, much like the broader
+population, wanted physical cash.
+
+On December 18, 2019, CBY-Sana’a issued a circular expanding the
+ban on new rial banknotes in Houthi-controlled territories.[29] Whereas
+the ban had previously only applied to banks, businesses and money
+exchange companies, this 2019 circular granted the general population
+a one-month grace period in which to trade new rial banknotes for either
+old rial banknotes or electronic currency.[30] In the circular, CBY-Sana’a
+listed three specific mobile money/e-wallet platforms authorized to
+handle the exchange of “illegal” new rial notes for e-rials: M Floos,[31]
+
+
+[26] The value of the food vouchers depreciated due to a lack of Yemeni rial liquidity. In need of cash
+    themselves, retailers managed two different price schemes: one for coupons and one for cash
+    payments. See: “Yemen at the UN – April 2017 Review,” Sana’a Center for Strategic Studies, May 8,
+    2017, https://sanaacenter.org/publications/yemen-at-the-un/99. Accessed February 21, 2022.
+
+[27] “Game of Parliaments – The Yemen Review, April 2019,” Sana’a Center for Strategic Studies, May
+    7, 2019, https://sanaacenter.org/publications/the-yemen-review/7357#Houthi-Authorities-Attempt-.
+    Accessed February 21, 2022.
+
+[28] Ibid.
+
+[29] “Fresh banknotes spark new economic war in Yemen,” Al-Monitor, January 9, 2020, https://www.
+    al-monitor.com/originals/2020/01/yemen-aden-central-bank-notes-houthi-sanaa-economy.
+    html#ixzz6q7gNYmfl. Accessed February 21, 2022; a copy of the December 18 CBY-Sana’a circular was
+    also shared with the Sana’a Center.
+
+[30] Per a copy of the December 18, 2020 CBY-Sana’a circular shared with the Sana’a Center.
+
+[31] Rafat al-AKhali, “Yemen Transition 2.0: M-Floos: A Game Changer?”, DeepRoot Consulting, June
+    2016,      https://www.deeproot.consulting/single-post/2016/06/09/yemen-transition-20-mfloos-a-
+    game-changer. Accessed February 21, 2022.
+
+
+
+
+                                                        Rethinking Yemen’s Economy | March 2022
+                                                                                                          17
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     owned and operated by Al-Kuraimi Islamic Microfinance Bank; Mobile
+     Money, owned and operated by Cooperative and Agricultural Credit
+     Bank (CAC Bank); and Quality Connect, jointly owned by Yemen Kuwait
+     Bank (YKB), Swaid & Sons for Exchange, and Al Akwaa Exchange.[32]
+
+     In practice, CBY-Sana’a also granted permission to several other banks
+     and money exchange companies to exchange the new rial banknotes
+     for old ones; these transactions were, however, capped at YR100,000.
+     For those in Houthi-controlled territories without a registered account
+     at any of the financial service providers authorized to provide e-rials,
+     in-kind mobile phone credit was also on offer. The Houthi authorities
+     also announced that they would convert previously confiscated new
+     rial banknotes into e-rials.[33]
+
+     During 2020, the Houthi authorities finalized a number of measures
+     to reform the previously established legal framework associated with
+     the provision of e-money services. Such measures would, of course,
+     only pertain to areas under Houthi control. In early 2020, CBY-
+     Sana’a established a Payments System Department (PSD) within its
+     organizational structure to develop national e-payment institutional
+     capacity and its functional framework, and to supervise the newly
+     envisioned e-rial payment system. Notably, the CBY-Sana’a, lacking
+     international recognition, received none of the international technical
+     support and capacity-building assistance that was provided to the
+     CBY-Aden in establishing its own PSD (details below).
+
+     In March 2020, CBY-Sana’a issued a new directive that expanded
+     the scope of the type of financial service providers eligible to obtain
+     a license to offer e-rial services.[34] The directive paved the way for
+     non-bank institutions such as money exchange companies, traders
+     and non-financial institutions to be granted permission to offer e-rial
+     services.[35] CBY-Aden challenged the legality of this directive, while
+     senior banking officials warned of the potential repercussions.[36] (More
+     on this below.)
+
+     [32] Ibid.
+
+     [33] Anthony Biswell, “Yemen Economic Bulletin: The War for Monetary Control Enters a Dangerous New
+         Phase,” Sana’a Center for Strategic Studies, January 21, 2020, https://sanaacenter.org/publications/
+         analysis/8674. Accessed February 21, 2022.
+
+     [34] “Decision no. 1 of the Central Bank Governor”, the Banking Supervision Sector, Central Bank of
+         Yemen – Sana’a, March 8, 2020, https://yemen-yba.com/wp-content/uploads/2020/03/-‫البنــك‬-‫محافظ‬-‫قرار‬
+         -1‫املحمول‬-‫الهاتف‬-‫عرب‬-‫االلكرتوين‬-‫الدفع‬-‫خدمات‬-‫املالية‬-‫املؤسســات‬-‫لتقديم‬-‫التنظيمية‬-‫لقواعد‬-‫املركزي‬.pdf. Accessed February
+         21, 2022.
+
+     [35] Ibid.
+
+     [36] “Cautionary statement [AR],” CBY-Aden statement, April 2020, https://www.cby-ye.com/2020/04/%
+         d8%a8%d9%8a%d9%80%d9%80%d8%a7%d9%86-%d8%aa%d8%ad%d8%b0%d9%8a%d9%80%d9%80
+         %d9%80%d8%b1%d9%8a/. Accessed February 21, 2022.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+18
+  CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+Further expansion of digital currency avenues continued in the first
+quarter of 2021, with the CBY-Sana’a officially authorizing WeNet to
+operate the payment settlement system among banks and e-wallets.
+More financial institutions were also permitted to provide customers
+with e-rials, such as IBY, SBYB, One and Tamkeen. CAC bank was also
+permitted to collect public revenue in e-rials on behalf of the customs
+authority.
+
+Furthermore, Houthi authorities have supported a gradual transition
+to a state e-payment system to pay public salaries and social benefits
+in electronic form. On November 28, 2021, the Ministry of Finance
+issued Circular No. 28 of 2021 declaring that the disbursement of public
+salaries and financial incentives to all government employees would
+be facilitated solely via the e-government payment system. In early
+2022, the Ministry of Finance issued the Circular No. 1 of 2022 to start
+addressing the payroll arrears, disbursing the first half-month salary
+of April 2018 to all public service servants across Houthi-controlled
+areas using the e-payment system via CAC bank and the GAPPS.
+
+
+
+3.1 | Houthi Alterations to E-Rial Legal Frameworks
+
+The CBY-Sana’a decree in March 2020 contradicted CBY Circular
+No. 11 of 2014, which restricted the provision of e-rial services to
+banks operating in Yemen. The new Houthi legal framework created
+an opportunity for less regulated actors – such as money exchange
+companies, traders and other non-bank institutions – to obtain
+licenses from CBY-Sana’a to perform e-money issuance and e-payment
+management services previously reserved for banks.
+
+While the bank-oriented model involved a limited number of actors
+– banks holding trust accounts and issuing e-rials; mobile network
+operators contracted to deliver network services; and agents available
+on the ground to manage electronic money services on behalf of banks
+– the new model gives additional financial institutions the right to
+obtain a license to contract a third party to manage agent networks
+delivering e-money services. These financial institutions are then
+permitted to receive physical cash liquidity in exchange for e-rial
+balances and manage e-payment services.
+
+In addition, the March 2020 decree set no maximum limit on the
+amount of e-money one financial institution could issue, overriding
+the regulation in Circular No. 11 (2014) that mandated that a bank
+was only allowed to issue electronic money up to 15 percent of its paid
+
+
+
+
+                                         Rethinking Yemen’s Economy | March 2022
+                                                                                   19
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     capital and statutory reserves (by law in Yemen, a commercial bank has
+     to put up YR6 billion in capital to be licensed to operate). The decree
+     also created payment instruments outside the mobile phone app, such
+     as prepaid cards and other fintech tools.
+
+
+
+     3.2 | CBY-Aden Response to Houthi E-Rial Push
+
+     In January 2020, CBY-Aden warned Yemeni banks and money exchange
+     firms against adhering to the Houthi ban on new rial banknotes and
+     dealing in the e-rial. The CBY-Aden stated that the CBY-Sana’a circular
+     was issued by an illegal entity, outside the legal framework of the
+     banking sector, and would lead to loss of trust in cash. On September
+     21, 2020, the CBY-Aden issued a circular decrying Houthi authorities’
+     efforts to establish an e-money model and process real-time clearing
+     settlements for interbank payment transactions outside the legal
+     framework of the banking sector.
+
+     Over the last two years, CBY-Aden has conducted several consultations
+     with the World Bank, the Arab Monetary Fund (AMF), USAID, and
+     other international development donors to develop a payment
+     system infrastructure. The technical support offered by these bodies
+     has included institutional capacity building; this resulted in the
+     establishment of the CBY-Aden’s own Payment Systems Department
+     (PSD). The PSD, intended to oversee payment systems within the
+     CBY-Aden, has also sought to develop the use of e-payments for
+     governmental services and humanitarian purposes.[37]
+
+     As part of the technical assistance, a same-day settlement arrangement
+     among commercial banks at CBY, using the SWIFT Closed User
+     Group and existing core banking system, was also envisioned to be
+     established in 2019 and 2020. This was seen as a stopgap measure to
+     enable the CBY-Aden to perform its settlement functions until a full
+     real-time gross settlement (RTGS) system is installed. This endeavor
+     was sidelined, however, following increased political and economic
+     instability in Aden in 2019.[38]
+
+     Similarly, the poor political and security situation in Aden derailed
+     the adoption of Tadhamon Bank’ card switch system, which had
+
+
+
+     [37] “The Central Bank of Yemen: Payment System Capacity Building Workshop,” World Bank, April 28
+         - May 3, 2019, http://documents.worldbank.org/curated/pt/832121563254060755/pdf/The-Central-
+         Bank-of-Yemen-Payment-System-Capacity-Building-Workshop.pdf. Accessed February 21, 2022.
+
+     [38] Ibid.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+20
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+otherwise been given the go-ahead after a feasibility review.[39] This
+system has been seen by the World Bank Group as an alternative core
+infrastructure for connecting banks until the costly RTGS, or any
+other retail payment system, is established. The system could be used
+to facilitate the distribution of salaries, pensions, and humanitarian
+aid, increase electronic transactions and help address liquidity
+shortages in the market. The switch could be also expanded to cover
+the interoperability of mobile money services, e-commerce, and bank
+accounts.
+
+The technical capacity project ended with the drafting of a funding
+request from the Arab Fund for Economic and Social Development
+(AFESD) to support the installation of a RTGS system, with technical
+assistance from the World Bank.[40] However, the fulfillment of payment
+system reforms depends on improvements in southern Yemen’s
+political situation and the ability of CBY-Aden to prepare the ground
+for change.
+
+
+
+
+[39] Tadhamon Bank, which includes shareholders from the Hayel Saeed Anam family, is the largest
+    Yemeni bank in terms of asset size.
+
+[40] “The Central Bank of Yemen: Payment System Capacity Building Workshop,” World Bank, April 28
+    - May 3, 2019, http://documents.worldbank.org/curated/pt/832121563254060755/pdf/The-Central-
+    Bank-of-Yemen-Payment-System-Capacity-Building-Workshop.pdf. Accessed February 21, 2022.
+
+
+
+
+                                                     Rethinking Yemen’s Economy | March 2022
+                                                                                                    21
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     4 | E-MONEY SYSTEMS,
+         INFRASTRUCTURE AND PLAYERS
+     4.1 | The Limits of Comparing International Examples
+     to Yemen
+     Globally, there are three broad types of markets to regulate the provision
+     of electronic money services: highly regulated markets; moderately
+     regulated markets; and minimally regulated markets.[41] Some studies
+     have suggested that a minimally regulated, nonbank-led model – as
+     seen in countries such as Somalia, South Sudan, Kenya and Tanzania –
+     is generally more enabling of a successful rollout of e-money services.[42]
+     Subscribers in a nonbank-led model are not required to own a bank
+     account or have a connection to internet services, as payment
+     transactions occur entirely or partially in cooperation with a mobile
+     network operator (MNO), with banking services being provided via
+     Short Message Service (SMS) and Unstructured Supplementary Service
+     Data (USSD) technologies.[43] Meanwhile, the most successful examples
+     of bank-led models have come from electronic money providers that
+     have established a new bank or developed a specialized subsidiary
+     bank to take the lead on e-money services, such as QIWI in Russia and
+     bKash in Bangladesh.[44]
+
+     A country’s specific context is crucial in determining the most
+     appropriate avenue to pursue the expansion of e-money services.
+     Nonbank-led models have tended to be suitable for countries that
+     have developed a strong level of maturity and the necessary controls in
+     electronic money ecosystems or, alternatively, countries at the other
+     end of the spectrum where the exchange rate for domestic banknotes
+     has collapsed and an e-currency has become a necessary alternative to
+     maintain a means of exchange with a reliable store of value.
+
+     [41] Gurpreet Singh Sambhy, “Study of Mobile Payment Services in India”, Master of Science Thesis
+         for the School of Information and Communication Technology KTH-Royal Institute of Technology
+         Stockholm, Sweden, 2014, p. 16, www.diva-portal.org/smash/get/diva2:696343/FULLTEXT01.
+         Accessed February 21, 2022.
+
+     [42] “Basic Regulatory Enablers for Digital Financial Services”, CGAP, May 2018, https://www.cgap.
+         org/sites/default/files/researches/documents/Focus-Note-Basic-Regulatory-Enablers-for-DFS-
+         May-2018.pdf. Accessed February 21, 2022; Also see: Juliet Maina, “Mobile Money Policy and
+         Regulatory Handbook”, GSMA, September 2018, https://www.gsma.com/mobilefordevelopment/wp-
+         content/uploads/2018/09/GSMA-Mobile-Money-Policy-Handbook-2018.pdf. Accessed February 21,
+         2022.
+
+     [43] In Kenya, the MNO enters the market and cooperates with financial institutions to accept money
+         directly from the client; this money is then forwarded to the financial institution. See: Gurpreet Singh
+         Sambhy, “Study of Mobile Payment Services in India,” Master of Science Thesis, School of Information
+         and Communication Technology, KTH-Royal Institute of Technology Stockholm, Sweden, 2014, http://
+         www.diva-portal.org/smash/get/diva2:696343/FULLTEXT01. Accessed February 21, 2022.
+
+     [44] “USAID Report Template (Letter Size).” 27 Dec. 2016, https://pdf.usaid.gov/pdf_docs/PA00MT1H.pdf.
+         Accessed May 28, 2021.
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+22
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+Lessons learned internationally regarding how to pursue the
+development of e-money services have limited usefulness in application
+to Yemen today however, given the country’s unique circumstances.
+Few countries in the world have ever attempted to launch e-money
+services while its national monetary policy was bifurcated across active
+frontlines. In Yemen, the central bank on one side (Sana’a) is dominant
+domestically, the central bank on the other (Aden) is the sole holder
+of international legitimacy, large portions of the physical banknotes in
+circulation are accepted as legal tender in only part of the country, and
+neither side in the civil war wields the parliamentary authority needed
+to enact new financial governance legislation. In such an environment,
+attempts to create an enabling environment for e-money services must
+be approached cautiously to balance the benefits of wider e-money
+adoption with the risks of further distortion and fragmentation of the
+monetary environment.
+
+In Yemen, a highly regulated market – which grants the right to provide
+e-money services only to banks – was the legal practice prior to 2014.
+Indeed, the regulatory framework outlined under Circular No. 11 of
+2014 established a conservative and narrow model, allowing banks to
+issue and manage electronic money either directly or through agents,
+by acting as the intermediary financial channel to open e-money
+accounts and facilitate cash-in and cash-out services. Under this
+model, clients and recipients were required to have a bank account to
+conduct e-money services such as e-payments, balance inquiries and
+transfers between accounts. The distinguishing facet of this model
+is that banks are the main legal providers of e-money services while
+other potential actors, such as mobile phone companies or financial
+services companies, are secondary players. These secondary players
+work on behalf of authorized banks either as agents, to deliver cash-
+in and cash-out services, or to provide the mobile network services
+essential to operate e-money transactions. The mobile network
+operator’s participation would be limited to providing the data transfer
+services, while the banks offer individual accounts and organize the
+infrastructure such as cash-in/cash-out payments through ATMs,
+branches, or an agent network. The bank-led model created prior to
+the conflict in Yemen saw a slow service growth as it limits competition
+and scope for innovators to access unbanked populations.[45]
+
+
+
+
+[45] Inutu Lukonga, “Fintech, inclusive growth, and financial risks: Focus on the MENAP and CCA
+    Regions”, International Monetary Fund, September 11, 2018, https://www.imf.org/en/Publications/
+    WP/Issues/2018/09/11/Fintech-Inclusive-Growth-and-Cyber-RisksFocus-on-the-MENAP-and-CCA-
+    Regions-46190. Accessed February 21, 2022.
+
+
+
+
+                                                      Rethinking Yemen’s Economy | March 2022
+                                                                                                      23
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     4.2 | Licensed E-Money Services Providers and Usage
+     During the Conflict
+
+     Between 2015 and 2019, some efforts were made to facilitate
+     e-payments via Yemen’s MNOs. During this period, CBY granted
+     four Yemeni banks licenses to provide e-money services via mobile
+     phones: Al-Kuraimi Islamic Microfinance Bank; Tadhamon Bank; Al-
+     Amal Microfinance Bank; and Yemen Kuwait Bank (YKB). CBY-Sana’a
+     licensed the Cooperative and Agricultural Credit Bank (CAC Bank).[46]
+     These banks have constructed their own respective e-wallet platforms.
+
+     The balance of these e-wallets should equal the total amount held in a
+     pool account, also known as a trust account, with the settlement bank.
+     This pool of e-money is technically owned by e-money holders (who
+     access it via a mobile phone), not by the MNO nor the e-money service
+     providers, who collect physical money from clients in exchange for
+     e-rials.[47] As noted, Circular No. 11 of 2014 stipulated that the total
+     amount of e-rials in each bank’s e-wallet must be the equivalent of
+     physically deposited rial notes, and the total value of the e-wallet
+     cannot exceed 15 percent of a bank’s paid-in capital and legal reserve.[48]
+     This is equivalent to the annual reserve amount that a bank must
+     deduct from its net profits as a guarantee of depositors’ rights.[49]
+
+     In general, a functioning cell phone and a bank account are two
+     fundamental prerequisites for conducting mobile e-money services.
+     As distinguished from a traditional account, the customer’s electronic
+     account is virtual, linked to a mobile phone number and saved on a
+     data platform linked to a combined bank account (e-wallet) of the
+     licensed bank.[50] Customers can open an account at the bank or at any
+     of its agents, and, after installing the mobile app, can transfer money
+
+     [46] Al-Kuraimi Islamic Microfinance Bank was the first bank licensed to provide electronic money
+         services, in 2015, but only in 2016 did it launch the service. The second bank to be licensed was
+         Tadhamon International Islamic Bank, in 2016. It started to introduce e-rial services in 2018. Al-Amal
+         Microfinance Bank was licensed in 2017 and the Bank of Yemen and Kuwait and the Cooperative and
+         Agricultural Credit Bank were licensed in 2018.
+
+     [47] Abdulghani Mohamed AlSamawi et al., “Electronic Payment Services in Yemen: Challenges and
+         Opportunities for Success,” Institute of Banking Studies, May 2020, http://www.ibs.edu.ye/sites/
+         default/files/Electronic%20Money%20Service%20in%20Yemen%20-%20Challenges%20and%20
+         Opportunities%20for%20Success.pdf. Accessed January 2, 2021
+
+     [48] According to Circular No. 11 of 2014, a licensed bank is not allowed to issue electronic money
+         exceeding 15 percent of its paid-up capital and the statutory reserve, except with prior approval
+         from CBY. The obligatory value of the e-rial issued by the e-wallet should equal 100 percent of the
+         accumulated trust (pool) account in the bank.
+
+     [49] Article (12): Law No. (38) of 1998, Central Bank of Yemen, http://centralbank.gov.ye/App_Upload/
+         law38a.pdf. Accessed February 21, 2022.
+
+     [50] CBY Circular No. 11 of 2014, as discussed in: John Owens, “Central Bank of Yemen issues new mobile
+         banking regulations,” Alliance for Financial Inclusion, March 7, 2015, https://www.afi-global.org/
+         blog/2015/03/central-bank-yemen-issues-new-mobile-banking-regulations. Accessed February 21,
+         2022.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+24
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+between accounts, send remittances, pay bills and purchase goods
+from registered merchants.
+
+Recent statistics indicate the number of Yemenis using the formal
+banking system has grown over the course of the conflict, though
+usage still remains very low relative to the global average of about 69
+percent (as of 2017).[51] As stated above, almost 2.9 million Yemenis
+(approximately 10 percent of the population) owned at least one
+bank account by the end of 2019, including current and savings
+accounts and accounts with microfinance banks and electronic money
+accounts.[52] However, many citizens still prefer to use money exchange
+outlets to conduct financial transactions – attracted by the flexible and
+less costly means of payment. Notably, during the ongoing conflict,
+money exchange companies have proliferated enormously, with
+thousands of them being established. This has been accompanied by
+an erosion, rather than an expansion of central bank oversight. There
+is no integrated system to connect Yemeni banks with the money
+transfer and exchange outlets, rather there are various different
+transfer networks that money exchange companies use but these
+networks are difficult to inspect and supervise. As well, many money
+exchange companies are not committed to the minimum compliance
+procedures in doing their financial services. For instance, by law they
+are only permitted to perform certain functions like facilitating money
+exchange transactions or transferring financial remittances but they
+have turned to perform the functions of banks such as accepting
+deposits and offering loans.
+
+While a cursory evaluation of statistics indicates that e-rial services
+expanded during the conflict, this does not tell the full story. The total
+amount of e-money issued from 2016 to 2019) amounted to YR115
+billion, while in 2019 alone some YR75 billion was issued. Based on
+recently published indicators, the number of e-money accounts also
+surged substantially between 2017 and 2019, from around 82,000 to
+over 800,000, with 91 percent of the new accounts opened in urban
+areas, and two-thirds opened in 2019 alone.[53] Many of these accounts
+were temporarily created following the Houthi ban on the circulation of
+new rial banknotes, which required citizens possessing new banknotes
+
+[51] Asli Demirgüç-Kunt et al., “The Global Findex Database 2017: Measuring Financial Inclusion
+    and the Fintech Revolution”, World Bank Group, 2018, https://openknowledge.worldbank.org/
+    handle/10986/29510. Accessed January 2, 2021.
+
+[52] Abdulghani Mohamed AlSamawi et al., “Electronic Payment Services in Yemen: Challenges and
+    Opportunities for Success,” Institute of Banking Studies, May 2020, http://www.ibs.edu.ye/sites/
+    default/files/Electronic%20Money%20Service%20in%20Yemen%20-%20Challenges%20and%20
+    Opportunities%20for%20Success.pdf. Accessed January 2, 2021.
+
+[53] Ibid.
+
+
+
+
+                                                      Rethinking Yemen’s Economy | March 2022
+                                                                                                       25
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     to deposit them into electronic accounts opened with listed e-money
+     financial service providers in exchange for physical old rial notes or
+     e-rials. E-rial accounts have also been opened to receive salaries,
+     humanitarian cash transfers and incentives, and pay utility bills, but
+     overall use remains relatively low.
+
+     Figure 2
+
+                Market Share of Yemeni E-rial Providers, December 2019
+
+                2%                                                    2%
+                                    3%
+
+
+
+                        13%
+                                                                                     80%
+
+
+
+
+                       Al Kuraimi Islamic Microfinance Bank      Al Amal Microfinance Bank
+             Cooperative and Agricultural Credit Bank     Yemen Kuwait Bank       Al-Tadhamon bank
+
+
+
+                            Source: Institute of Banking Studies, Sana’a, Yemen
+
+
+
+     One institution, Al-Kuraimi Islamic Microfinance Bank, handled 80
+     percent of total e-money accounts in 2019.[54] This was largely due
+     to Al-Kuraimi’s wide geographic coverage – the bank operates 132
+     branches, 2,626 agents and 7,620 points of sale, including in many
+     rural areas – and the fact that it has been one of the main financial
+     service providers used by INGOs to reach beneficiaries with cash aid
+     transfers across Yemen.
+
+
+
+
+     [54] ulghani Mohamed AlSamawi et al., “Electronic Payment Services in Yemen: Challenges and
+         Opportunities for Success,” Institute of Banking Studies, May 2020, http://www.ibs.edu.ye/sites/
+         default/files/Electronic%20Money%20Service%20in%20Yemen%20-%20Challenges%20and%20
+         Opportunities%20for%20Success.pdf. Accessed January 2, 2021.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+26
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+Figure 3
+                                                   E.rial Access and Channels
+
+                                              Agents             Points of sale        Branches
+
+                       Al Kuraimi                     2626
+                        (Mfloos)                                            7,620
+                                        132
+                                        26
+                        CAC Bank
+                                                     2,222
+                  (Mobile Money)
+                                        50
+  Bank E.wallet
+
+
+
+
+                            YKB              391
+                       (Floosak)                                   5071
+                                        17
+
+                         Al Amal         238
+                          (PYes)                   1547
+                                        15
+
+                    Al-Tadhamon         90
+                    (Mahfathati)        116
+                                        28
+                                                          3371
+                           Total                                                                          16,576
+                                        242
+                                    0                        5000                   10000         15000
+
+
+
+
+                                Source: Institute of Banking Studies (Sana’a)
+
+
+
+The integration of the e-wallets held by these five banks is limited. As of
+this writing there is still limited capacity to complete money transfers
+between accounts held with different commercial, and technically
+independent, services providers operating on different platforms (e.g.
+mobile wallet to bank account). A client can only transfer money from
+one electronic account to another held in the same e-wallet or between
+the five participant banks that have been recently connected to the
+financial switch interbank network led by YFSC under the business
+identity and brand, WeNet, in Houthi-controlled areas. Individuals
+without an e-money account can only receive money in cash according
+to transaction ceilings dictated by Circular No. 11 of 2014: YR30,000
+per financial transaction and YR50,000 for total transactions per
+day, while the maximum e-rial balance per person cannot exceed
+YR300,000.[55] The circular created limited Know Your Customer (KYC)
+requirements for identification, where a potential client has to provide
+the personal ID with a national number to open a financial account
+within e-money wallets. For the transfer of money from an e-money-
+based account to a client not subscribing to electronic money services,
+a two-tiered approach for identification of financial transfer recipients
+is applicable. The first tier requires a personal ID (without a national
+number) and other means of alternative identification such as a family
+card, military card, social security card, electoral card, or passport for
+
+
+[55] CBY Circular No. 11 of 2014, as discussed in: John Owens, “Central Bank of Yemen issues new mobile
+    banking regulations,” Alliance for Financial Inclusion, March 7, 2015, http://beta.wenet-ye.com/en/
+    about. Accessed February 21, 2022.
+
+
+
+
+                                                                          Rethinking Yemen’s Economy | March 2022
+                                                                                                                    27
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     foreigners for the receiving of a financial transfer up to YR50,000.
+     The second tier requires a personal ID along with a national number,
+     or a passport for foreigners for receiving financial transfers above
+     YR50,000 cap. Similarly, identification means required for opening
+     financial accounts are also limited, up to YR30,000 and above for the
+     first and second tier of identification respectively. As more than half of
+     Yemen’s adult population does not have a national identification card,
+     which has become difficult to attain since the onset of the conflict,
+     access to e-money services in the absence of other acceptable means
+     of identification is very challenging.[56]
+     A client subscribed to an e-wallet can convert an e-rial balance
+     into cash either through a branch of their bank or through one of
+     the intermediary agents working on behalf of their licensed bank.
+     These agents access e-wallets and settle transactions electronically
+     via terminals connected to the e-wallet bank information systems.
+     Cash-in and cash-out agent networks taking part in the provision of
+     e-money services are insufficient and concentrated in urban areas.
+     Due to the ongoing shortage of old rials, bank agents often restrict or
+     impose delays on customers attempting to withdraw cash, particularly
+     outside urban areas. E-money payments as a share of total payments
+     is an indicator as to the extent to which e-money instruments have
+     become acceptable means for conducting financial transactions in
+     the financial market. The use of e-rials across the country since 2016
+     under the bank-led model has been restricted to financial transfers
+     among held accounts, capped cash-in or cash-out transactions, and to
+     a minimal extent the payment of cell phone, internet, electricity, and
+     water bills, which can be made easily via GAPPs branches or money
+     exchange outlets. From 2016 to 2018, total transactions made through
+     e-money services accounted for just 1 percent of the total YR4.35
+     trillion in average annual payments made through the banking sector.[57]
+     In 2018, transfers among electronic money and banking accounts as
+     well as cash-in and cash-out transactions represented 95 percent
+     of the electronic money transactions (of which 9 percent was cash-
+     out payments), while the value of financial transactions conducted
+     to disburse electricity, cell phone, and internet bills, and carry out
+     commodity purchases only represented 1 percent.[58] The overall utility
+     of an e-money account is, therefore, limited.
+
+     [56] “E-MONEY SERVICES AND THEIR POTENTIAL IN YEMEN ANALYSIS OF GAPS AND
+         OPPORTUNITIES”, Chemonics International for USAID, December 27, 2016, https://pdf.usaid.gov/
+         pdf_docs/PA00MT1H.pdf. Accessed 28 May. 2021
+
+     [57] Numbers were compiled from: Abdulghani Mohamed AlSamawi et al., “Electronic Payment Services
+         in Yemen: Challenges and Opportunities for Success,” Institute of Banking Studies, May 2020,
+         http://www.ibs.edu.ye/sites/default/files/Electronic%20Money%20Service%20in%20Yemen%20
+         -%20Challenges%20and%20Opportunities%20for%20Success.pdf. Accessed January 2, 2021. The
+         total value of e-money payments each year from 2016 to 2019 was: In 2016 YR101,685,663; in 2017
+         YR11,393,123,266; in 2018, YR 31,243,779,947; in 2019, YR118,905,021,167.
+
+     [58] Ibid.
+
+
+     Rethinking Yemen’s Economy | March 2022
+28
+  CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+Figure 4
+
+           Payments Using E-rials in Yemen, 2016 - 2019
+
+
+
+                                13%
+
+
+
+
+                     26%
+                                                          59%
+
+
+
+
+               Cash Withdrawl       Invoices Payment (cellphone and internet)
+                Online Purchasing        Invoices Payment for other utilities
+
+
+
+                    Source: Institute of Banking Studies (Sana’a)
+
+
+
+
+4.3 | The National Financial Switch Interbank Network
+
+Amid the growth of electronic payment systems in northern Yemen,
+the question of which institution should be assigned to administer
+the National Financial Switch Interbank Network (NFSIN) has led to
+increased competition. In 2006, a group of 11 Yemeni banks registered
+the Yemen Financial Services Company (YFSC). However, this private
+sector-based organizational structure for performing real time gross
+settlement among financial service providers made no progress in
+making the NFSIN operational for more than a decade. In 2017, Murooj,
+a subsidiary of Hayel Saeed Anam (HSA) Group, the largest business
+conglomerate in Yemen, acquired 25 percent of YFSC’s capital to save
+it from potential bankruptcy. The acquisition of YFSC, later operated
+under the business brand name WeNet, came after fierce competition
+with Quality Connect, a company created to perform similar roles. Two
+financial companies, ONE Cash and Tamkeen, have subsequently been
+established to provide electronic payments and e-wallet services.
+
+
+
+
+                                                 Rethinking Yemen’s Economy | March 2022
+                                                                                           29
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     In September 2020, the WeNet announced that it was launching the
+     first phase of an instant transfer scheme[59] (ITS) for real time retail
+     payments among participant banks, before moving to the second phase
+     that would target customers of money exchangers. In mid-September
+     2020, WeNet started to process instant money transfers among the
+     six participant banks subscribing to its network: Yemen Bank for
+     Reconstruction and Development, Yemen Kuwait Bank, Shamil Bank
+     of Yemen and Bahrain, Saba Islamic Bank, Islamic Bank of Yemen
+     for Finance and Investment, and CAC Bank.[60] Until now, the ITS saw
+     limited market acceptance, being restricted to conducting instant
+     transfer payments in Houthi-controlled areas, and as a completely cash-
+     based transfer payment mechanism allowing neither money transfers
+     from electronic wallet-based accounts nor from non-cash-based bank
+     accounts into cash-based bank accounts – a legal prerequisite of
+     e-money prevalence. According to a credible source close to e-money
+     market developments in Houthi-held areas, the launching of ITS by
+     WeNet came after it was given the green light for a license from the
+     CBY-Sana’a to manage the financial switch interbank network.
+
+     HSA Group is also working to introduce a new mobile money system
+     called ONE Cash, which has been envisioned to transform the nature
+     and scope of mobile money and e-money usage in Yemen. In mid-2020,
+     ONE Cash sought approval from both CBY-Sana’a and CBY-Aden to
+     start operations. While CBY-Sana’a issued an initial e-money license
+     to ONE Cash in July 2020, CBY-Aden has not yet accepted its request
+     to obtain the license. (Despite receiving the final license in early 2022
+     from the CBY-Sana’a, as of this writing ONE Cash is yet to launch
+     operations in Houthi-controlled areas.)
+
+
+
+
+     [59] The ITS initiates the provision of five instant transfer services: instant transfer from any cash-based
+         bank account to other cash-based account in another bank; instant transfer from any cash-based bank
+         account to any electronic wallet; instant transfer from one electronic wallet to another; and instant
+         transfer from any electronic wallet to any cash-based bank account
+
+     [60] WeNet, September 17, 2020, https://www.facebook.com/WeNetSwitch/photos/a.177399200511135/
+         177875193796869/. Accessed February 21, 2022.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+30
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+5 | E-RIAL PROGRESS:
+    CHALLENGES AND PROSPECTS
+5.1 | Existing Challenges Preventing E-Rial Expansion
+
+The installation of an e-rial payment system in Yemen must be
+accompanied by modernized credit infrastructure, digital connectivity
+infrastructure and fintech-powered e-money services. Until now, the
+infrastructural components for operating e-currency and e-payment
+systems are either underdeveloped or yet to come online. The
+interoperable digital and financial infrastructure, such as the RTGS,
+essential for settling high-volume transactions and enabling digital
+interoperable payments, still does not exist. When interoperability
+is absent, individuals and businesses are forced to maintain multiple
+accounts and deal with different types of financial transactions, leading
+to inefficiencies in and restrictions on the use of digital payment.[61]
+
+Moreover, the automated clearing house (ACH)[62] essential for
+processing retail payment transactions between banks and other
+financial players is not secured. Neither CBY-Sana’a nor CBY-Aden –
+nor, indeed, the commercial banks – operate through an electronically
+integrated system. Instead, they carry out payments independently
+and in complete isolation from one another. Although the central bank
+acts as a settlement agent for financial transactions among banks, this
+task is fulfilled outside the ACH. Checks must be processed manually
+while SWIFT-based payment orders remain the primary avenue for
+large value payments.[63]
+
+Outside the formal banking system, money exchange outlets also
+operate in a disconnected manner. Some money exchangers have
+developed interconnectability infrastructure, where a group of money
+exchange companies have been connected into an integrated transfer
+network that allows participants to settle transactions instantaneously
+and make wire money transfers quickly and cheaply, in comparison
+to the more expensive financial services banks provide. This ability,
+
+[61] Ceyla Pazarbasioglu, Alfonso Garcia Mora, Mahesh Uttamchandani, Harish Natarajan, Erik Feyen and
+    Mathew Saal, “Digital Financial Services,” World Bank Group, April 2020, http://pubdocs.worldbank.
+    org/en/230281588169110691/Digital-Financial-Services.pdf. Accessed February 21, 2022.
+
+[62] An automated clearing house (ACH) is an electronic system serving financial institutions to facilitate
+    financial transactions at the close of business each day. In Yemen, the CBY conducts the end-of-day
+    settlement between banks using cheques instead of having the process automated. This, therefore, is
+    a central challenge for the e-rial to become operational.
+
+[63] “Making Electronic Payments Work for Humanitarian Response,” International Rescue Committee,
+    May 2016, https://www.rescue.org/sites/default/files/document/469/makinge-paymentsworkforhum
+    anitarianresponse-final1.pdf. Accessed February 21, 2022.
+
+
+
+
+                                                          Rethinking Yemen’s Economy | March 2022
+                                                                                                              31
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     along with money exchangers’ longer operating hours compared to
+     commercial banks, has helped exchange outlets dominate the financial
+     market in Yemen.
+
+     During the conflict, the extremely costly and low speed of internet
+     services in Yemen and the limited mobile phone network coverage
+     have been two of the biggest obstacles for clients with e-money
+     accounts at any of the five banks offering mobile banking and e-wallet
+     services. Yemen’s digital connectivity infrastructure, information and
+     communications technology (ICT) sector[64] and electricity provision
+     – essential for the functioning of the financial system and e-money
+     services providers – is the weakest in the Middle East and North Africa
+     (MENA) region.
+
+     Yemeni mobile network operators have been technologically
+     unprepared and have, as a result, refused to provide unstructured
+     supplementary service device (USSD) and integrated voice recording
+     (IVR) services to e-payment providers.[65] The USSD, a communication
+     channel controlled by MNOs, is critical for securely providing mobile
+     financial services to all cell phones through encrypted SMS text
+     messaging. This system, if implemented, would result in lower costs
+     compared to the existing model of providing e-money services through
+     banks.[66] The lack of a USSD service has restricted the ability to serve
+     illiterate and limited-income persons who live in rural areas, use non-
+     smart phones and are disconnected from the internet.
+
+     While the number of mobile phone subscriptions in Yemen increased
+     five-fold between 2006 and 2016, from 3 million to 16 million
+     subscribers, the mobile penetration rate for the total population
+     remained the lowest in the MENA region, at almost 57 percent,
+
+
+     [64] The information communication sector is highly dominated and monopolized by the Ministry of
+         Telecommunications and Information Technology and state-owned institutions working in the sector.
+         Although the ministry manages only one of the four mobile operators working in the country (Yemeni
+         Mobile Company), it controls many aspects of telecommunication services and has refrained from
+         granting licenses to local mobile operators to provide 3G or 4G services. Mobile operators have to
+         go through the Yemen Net service provider for internet service and through Tele Yemen to make
+         international calls. The government also, through its Yemen Telecom Corporation, owns and controls
+         the domestic public switched data network. For details, see: Mansoor al-Bashiri, “Impacts of the
+         War on the Telecommunications Sector in Yemen”, Deeproot/Sana’a Center for Strategic Studies/
+         CARPO. Rethinking Yemen’s Economy Policy Brief 21 , January 11, 2021, https://devchampions.org/
+         publications/policy-brief/Impacts_of_the_War_on_the_Telecommunications/. Accessed February 21,
+         2022.
+
+     [65] Abdulghani Mohamed AlSamawi et al., “Electronic Payment Services in Yemen: Challenges and
+         Opportunities for Success,” Institute of Banking Studies, May 2020, http://www.ibs.edu.ye/sites/
+         default/files/Electronic%20Money%20Service%20in%20Yemen%20-%20Challenges%20and%20
+         Opportunities%20for%20Success.pdf. Accessed January 2, 2021.
+
+     [66] Barnabas Andiva, “Mobile Financial Service and Regulation in Kenya,” Competition Authority of
+         Kenya, https://static1.squarespace.com/static/52246331e4b0a46e5f1b8ce5/t/5534a332e4b078bae80c
+         baeb/1429513010529/Barnabas+Andiva_Mobile+Money+Kenya.pdf. Accessed February 21, 2022.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+32
+   CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+compared to a regional average of over 100 percent.[67] In 2015, only
+1.7 percent of Yemeni citizens could access 3G or mobile internet
+services.[68] Iraq and Afghanistan, also conflict-affected countries,
+have recorded higher mobile penetration rates – of 91 and 89 percent
+respectively.[69] Additionally, while the prices of mobile voice calls and
+SMS services in Yemen are around average in the context of the MENA
+region, Yemen ranks as the 17th most expensive of 20 MENA countries
+in terms of broadband.[70]
+
+Internet connectivity and electricity supply have been negatively
+impacted during the conflict. In 2020, damage to an underwater cable
+temporarily shut down 80 percent of Yemen’s internet capacities,
+affecting the ability to conduct commercial and financial transactions
+nationwide.[71] Smartphone apps used to operate the e-rial payment
+do not work when the internet service is cut or the operating speed
+is low. On January 21, 2022, the Saudi-led coalition airstrike on a
+telecommunications building located in the Red Sea city of Hudaydah
+knocked out power to the country’s primary internet access point,
+causing a large-scale and complete blackout of internet connectivity
+for four days in many areas of the country. During the ongoing
+conflict, Yemen’s electricity supply – already unreliable pre-war –
+has further collapsed, with infrastructure attacks and fuel shortages
+cutting off the majority of the country’s population from grid-supplied
+electricity. Continued fragility in electricity supply would likely impact
+the operations of financial institutions that rely heavily on Yemen’s
+internet infrastructure to provide digital financial services.[72]
+
+During 2020, Yemen’s mobile network operators were competing for
+licenses to upgrade their networks for the provision of 3G/4G services
+and to secure higher capacity mobile broadband services. In September
+2020, the privately owned telecommunications company Sabafon
+
+
+[67] Simon Kemp, February 18, 2020, “Digital 2020: Yemen”, DataReportal, https://datareportal.com/
+    reports/digital-2020-yemen. Accessed February 21, 2022.
+
+[68] “Input to The Yemen Policy Note No. 4. on Inclusive Services Delivery: Yemen Information &
+    Communication Technology (ICT),” World Bank Group, May 2017 ,http://documents1.worldbank.org/
+    curated/es/337651508409897554/pdf/120531-WP-P159636-PUBLIC-Yemen-ICT-Policy-Note-Input-
+    to-PN-4.pdf. Accessed February 21, 2022.
+
+[69] Ibid.
+
+[70] Ibid.
+
+[71] Lily Hay Newman, “Cut Undersea Cable Plunges Yemen Into Days-Long Internet Outage,” Wired,
+    January 13, 2020, https://www.wired.com/story/yemen-internet-blackout-undersea-cable/. Accessed
+    February 21, 2022.
+
+[72] Inutu Lukonga, “Fintech, inclusive growth, and financial risks: Focus on the MENAP and CCA
+    Regions”, International Monetary Fund, September 11, 2018, https://www.imf.org/en/Publications/
+    WP/Issues/2018/09/11/Fintech-Inclusive-Growth-and-Cyber-RisksFocus-on-the-MENAP-and-CCA-
+    Regions-46190. Accessed February 21, 2022.
+
+
+
+
+                                                      Rethinking Yemen’s Economy | March 2022
+                                                                                                      33
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     relocated its headquarters from Sana’a to Aden, following regular
+     lawsuits and legal verdicts against it by Houthi authorities attempting
+     to extract sizable levies, including alleged backdated taxes, from the
+     company. Following the relocation, Sabafon announced that it has
+     set a strategic plan to launch 4G and 5G mobile phone services with
+     support from the Aden-based Ministry of Telecommunications and
+     Information Technology.[73]
+
+     Meanwhile, Yemen Mobile Company, the major government-owned
+     mobile network operator based in Sana’a, has been implementing a
+     large project over the last few years to develop and upgrade its mobile
+     network infrastructure from 3G to 4G to expand network coverage and
+     the quality of mobile internet services, and launched its 4G service in
+     early January 2022. The fragmentation of the mobile communication
+     systems legal framework between Sana’a and Aden could, however,
+     still restrict mobile network services upgrades necessary to facilitate
+     the more efficient operation of the e-rial payment system.
+
+     In sum, a number of obstacles would need to be addressed in order to
+     increase the utility and usage of the e-rial in Yemen. These include: a
+     heavily cash-based economy; poor telecommunications infrastructure
+     coverage; low consumer trust in financial service providers; the absence
+     of a proper regulatory environment (ie. one that maintains necessary
+     oversight but leaves room for market growth and innovation); low
+     general awareness about mobile money and e-wallet services offered by
+     financial service providers; issues related to legislation and regulation
+     (buyer and seller protections); limited technological capacity of
+     e-payment service providers; and security considerations (verification
+     and authentication issues).
+
+
+
+     5.2 | Prospects for E-rial Development
+
+     The inauguration of electronic payment systems in Yemen must start
+     by addressing its fundamental requirements and developing a coherent
+     ecosystem for operating them. The architecture for e-payments systems
+     involve the interaction between the key actors in a mobile payment
+     ecosystem that is highly unlikely under dual political and economic
+     structures prevailing currently in the country. The fragmentation in
+     the legal framework of monetary and financial policies in general and
+     over provision of digital financial services in particular in Yemen would
+
+
+     [73] “Battle for Marib – The Yemen Review, September 2020,” Sana’a Center for Strategic Studies, October
+         10, 2020, https://sanaacenter.org/publications/the-yemen-review/11678. Accessed February 21, 2022.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+34
+  CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+remain one of the greatest challenges. Two distinct models have been
+created out of the two competing central bank branches: a recently
+created non-bank model in Houthi-controlled areas and CBY-Aden
+sticking to the bank-led model created prior to the conflict.
+
+In addition, the development of e-payment services would be
+constrained by weak information and communications technology (ICT)
+infrastructure and high service costs linked to e-money provision. The
+ICT and e-money platforms essential to operate e-payment services
+would continue to be nonexistent while suffering the repercussions of
+the conflict for years to come. Effectively implementing the necessary
+regulatory reforms for e-payment services is also highly unlikely under
+dual political and economic realities.
+
+The de facto Houthi authorities have attempted to develop the
+digital financial services through the government e-payment system.
+However, the prominence of cash-based transactions in Houthi-held
+areas is only reinforced by the Houthi-affiliated National Salvage
+Government (NSG) and CBY-Sana’a policies of accepting public
+revenues only in cash, and to this end creating distinct cash-based
+accounts for collecting government dues. In mid-November 2020, the
+NSG officially announced the suspension of salary payments to public
+servants working in Houthi-held areas, and this has likely discouraged
+e-rial payments through the government spending window. However,
+from early 2022 the Houthi authorities launched an ambitious
+e-government payment system to initiate government-to-person
+(G2P) transactions through electronically disbursing public salaries
+and financial incentives to government servants working in Houthi-
+controlled regions. The success of such a move would depend on
+several factors; whether an adequate liquidity is in place to complete
+transactions; the availability of convenient access points and reliable
+agent networks that guarantee customers an unlimited access to cash-
+in/cash-out services (to easily cash out funds received in digital form);
+and finally, the degree to which incentives are created for merchants
+and businesses to invest in electronic payment services and accept
+them unhesitantly in conducting their financial transactions.
+
+The liquidity crisis has demolished the trust in the banking system
+and in the Yemeni rial to act as a store of monetary value and medium
+of exchange in settling financial transactions. Financial service clients
+have found their deposits stuck in the banking sector, while all rial-
+dominated holdings and investments have depreciated in real value
+due to high inflation and rapid cycles of rial depreciation. Additional
+barriers to e-money payment services adoption include low financial
+
+
+
+
+                                         Rethinking Yemen’s Economy | March 2022
+                                                                                   35
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+     literacy and a cultural preference for cash. Indeed, Yemeni customers
+     and businessmen often prefer cash payment means conducted outside
+     formal financial networks. They have negative perceptions about formal
+     financial products and are more familiar with local money exchange
+     agents which are flexible, convenient, unmonitored and anonymous.
+     The consumers’ high mistrust in the government and commercial
+     banks has been one of the reasons for the low demand for digital money
+     in the country. In addition, documentation requirements to open DFS
+     accounts can pose barriers to displaced and low-income populations.
+
+     Yemen is currently experiencing the world’s worst humanitarian
+     crisis with an estimated 24 million people in need of some form of
+     humanitarian assistance while the majority have limited financial
+     options on how to live and feed themselves the next day. This indicates
+     that a large segment of Yemeni population has no out of the pocket
+     money to save for depositing in e-rial balances. On the other hand,
+     while millions of Yemeni citizens are recipients of cash transfers and
+     aid funds from humanitarian organizations, e-wallet service providers
+     have been utilizing fintech platforms to serve targeted beneficiaries
+     through e-money payment tools, and this could serve as an entry point
+     for DFS expansion. Allowing this to succeed would depend on how the
+     fractured status of the Yemen monetary scheme would be adopted to
+     embrace mobile money platforms and services.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+36
+  CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+6 | RECOMMENDATIONS
+Improved digital financial services and electronic money could
+potentially be transformative in addressing Yemen’s humanitarian
+crisis through expanding and facilitating financial inclusion. However,
+given the current political crisis, the fragmentation in monetary
+policy and regulation between competing central banks, and the
+underdeveloped state of e-payment infrastructure in the country,
+widespread development of e-money services is unlikely to emerge.
+
+During the conflict, any enforcement of aggressive unilateral steps by
+any of the competing parties to the conflict could deepen the division in
+the institutions involved in operating the e-payment services. As well,
+international stakeholders interested in developing e-money services
+in Yemen should keep the “Do No Harm” principle paramount. Creating
+a situation in which two rivaling entities in the same country were
+both treated as legitimate monetary authorities by the international
+community would have profoundly distortive repercussions across the
+Yemeni economy.
+
+Holistic initiatives to strengthen the Yemeni e-money and e-payment
+ecosystem are invariably tied to ending the political division and
+stabilizing the monetary regime – which must start by unifying the
+CBY and the official exchange rate, addressing the severe liquidity
+crisis, and ending the currency war. However, until the resolution of
+the political and central banking crisis, some initiatives under the
+current circumstances could be launched:
+
+
+
+6.1 | Short- to Medium-Term Recommendations
+ • Until the unification of central banking administration in Yemen, the
+   fragmented CBYs in Sana’a and Aden should cautiously approach any
+   regulatory changes governing e-money services to balance the benefits
+   of enabling wider e-money adoption with the risks of further distortion
+   and fragmentation of the monetary environment.
+ • International stakeholders should investigate possible avenues to
+   support the reunification of the CBY and end the current currency war.
+   Specifically:
+     ° Look to unify the regulatory framework governing the e-money
+       system and monetary and financial policies.
+     ° Work to encourage coordination among the CBY branches, Yemeni
+       banks, and the communication companies to eliminate barriers and
+
+
+
+
+                                         Rethinking Yemen’s Economy | March 2022
+                                                                                   37
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+              unify any possible efforts toward facilitating the provision of digital
+              financial services in the country. It is essential to ensure easy access
+              to ICT infrastructure such as USSD & IVR, which should provide
+              electronic money services at reasonable prices.
+           ° Support initiatives for commercial banks and businesses to prepare
+             for financial intermediation and e-commerce expansion, but without
+             distorting the monetary environment.
+           ° Refrain from supporting developments in e-money services that
+             are outside of the current legal framework in Yemen. Specifically,
+             humanitarian agencies trying to implement cash transfer programs
+             through e-payment mechanisms should ensure that they are adhering
+             to the “Do No Harm” principle.
+      • International development institutions and INGOs intervening to
+        support the payment system infrastructure and enhance financial
+        intermediation in Yemen should ensure that they do not support any
+        actions or activities that deepen the schism in Yemen’s central bank
+        and make reunification of the monetary environment more difficult.
+      • As almost all of technical assistance and capacity-building programs
+        by external donors such as the World Bank Group, IMF, and the Arab
+        Monetary Fund (AMF) have been implemented only to support the
+        CBY-Aden, the CBY in Aden should:
+           ° Make use of the technical assistance support to address its
+             technological, infrastructural, human resources and regulatory gaps.
+           ° Strengthen the institutional and governance structure of the national
+             payment system and the Payment Systems Department (PSD),
+             established in mid-2020 inside CBY, and equip the PSD with needed
+             qualified staff and overall capacity to operate and oversee the national
+             payment system.
+           ° Initiate a project to fully integrate the national switch, and lay
+             out the groundwork to automatically connect the CBY with all
+             commercial banks in the country, to conduct automated check
+             clearing transactions. This should involve using a same-day interbank
+             settlement as a temporary solution, by using the SWIFT Closed User
+             Group and the existing core banking system until the highly costly
+             RTGS system is established.
+           ° Explore potential avenues to develop a fully operational card/mobile
+             money Switch. This should be done through utilizing the existing
+             card switch owned by commercial banks and private sector investors
+             to facilitate the distribution of salaries, pensions, humanitarian aid
+             as well as the collection of taxes, customs, and other government
+             due fees. Such initiatives would result in increasing digital payment
+             transactions, cover interoperability of mobile money services, and
+             contain the extreme liquidity shortage prevailing in the market.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+38
+ CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+    ° Capitalize on donor-funded efforts from USAID and other donors
+      aimed at scaling up the use of e-money in Yemen. This would involve
+      integrating e-money into government/donor-led crisis cash transfers,
+      optimizing the existent payment infrastructure to encourage Yemeni
+      merchants to use electronic payment methods for goods and services
+      at the retail and wholesale levels, as well as expanding the technical
+      capacities to the providers of e-money services, including licensed
+      and regulated banks, to improve the e-money enabling environment.
+
+
+
+6.2 | Long-Term Recommendations
+• Develop strategic plans to stabilize the monetary regime and foster
+  recovery of the financial system. A detailed action plan must aim to
+  address the international isolation of the country’s banking sector that
+  has resulted from the perception of Yemen as being ‘extremely high-
+  risk’. It should also aim to restore a larger share of the monetary cycle to
+  the formal financial system and enhance its robustness to play a key role
+  in reforming the digital financial services. A national risk assessment
+  could be undertaken to identify and assess anti-money laundering
+  (AML) and combatting the financing of terrorism (CFT) risks impacting
+  Yemeni banks and then take the necessary actions to mitigate such
+  risks.
+• Develop a national payment systems strategy to strengthen the payment
+  infrastructure and facilitate a well-studied shift to electronic payments
+  through the following:
+    ° Develop comprehensively consolidated legal and regulatory reforms
+      to protect the integrity of the financial system and update the current
+      laws and circulars governing the provision of electronic money and
+      e-payment services in the country. The new regulatory framework
+      should encourage the creation of private digital service providers,
+      allow a gradual shift to a non-bank led model for e-currency issuance
+      and the development of widespread agent networks that strike a
+      balance between innovation enhancement and mitigating risks of
+      fraud, money laundering, and insolvency. It should also include
+      legal articles to safeguard consumer protection and foster customer
+      confidence in DFS.
+    ° Develop the country’s ICT infrastructure through taking advantage of
+      successful modern technologies used in other developing countries,
+      such as Somalia, South Sudan and Kenya, to provide electronic
+      payment services. The USSD, a communication channel controlled by
+      MNOs, is critical for securely providing mobile financial services to
+      all cell phones through encrypted SMS text messaging. This system,
+      if implemented, would result in lower costs compared to the existing
+      model of providing e-money services through banks.
+
+
+
+
+                                           Rethinking Yemen’s Economy | March 2022
+                                                                                     39
+     CHALLENGES AND PROSPECTS FOR ELECTRONIC MONEY AND PAYMENT SYSTEMS IN YEMEN
+
+
+
+
+           ° Identify the operational environment and requirements of the
+             RTGS system that are essential to settle all high-value and systemic
+             payment transactions as well as the automated clearing system (ACH)
+             to process retail payments between banks and other institutions.
+           ° Deploy the digital means to access financially excluded and
+             underserved populations at a cost affordable to customers and
+             sustainable for providers.
+           ° Develop a national financial inclusion plan to support the spread of
+             mobile money, the inclusion of youth and women, enhancing client
+             and digital financial literacy.
+           ° Establish a digital foundational identity (national identity scheme) to
+             overcome barriers to usage, in particular for individuals in rural areas,
+             and foster alternative forms of ID to open up e-money accounts for
+             Yemenis without national ID.
+      • To unleash the potential of mobile money, regulators must create
+        an open and level playing field that allows both banks and non-bank
+        providers to offer mobile money services, which are well suited to
+        building sustainable services and extending the reach of the formal
+        financial sector rapidly and soundly. This would help to advance
+        financial inclusion, stability, integrity, and consumer protection,
+        and is consistent with the Bank for International Settlements’ (BIS)
+        international best practices in financial regulation. Increased outreach
+        to hard to reach rural areas and overall financial system liquidity would
+        be welcomed by humanitarian actors that seek to make secure cash
+        transfers to beneficiaries in rural areas.
+
+
+
+
+     Rethinking Yemen’s Economy | March 2022
+40
+  PREVIOUS PUBLICATIONS
+
+Improving Relations             Priorities for the
+Between Central State           Recovery and Reform of
+Institutions and Local          the Electricity Sector in
+Authorities                     Yemen
+
+
+
+
+Yemen’s Accelerating            Microfinance in
+Economic Woes                   Yemen: An Overview
+During the COVID-19             of Challenges and
+Pandemic                        Opportunities
+
+
+
+
+Yemen’s Expatriate              Combating
+Workforce Under Threat:         Corruption in
+The Essential Role of           Yemen
+Remittances in Mitigating
+Economic Collapse
+
+
+
+
+Private Sector                  Local Governance in
+Engagement in Post-             Yemen Amid Conflict
+Conflict Yemen                  and Instability
+
+
+
+
+An Institutional
+Framework for Post-         For more previous
+Conflict Reconstruction       publications:
+                            www.devchampions.org
+   RETHINKING YEMEN’S ECONOMY
+
+   The Rethinking Yemen’s Economy initiative aims to contribute to peacebuilding and
+   conflict prevention, (economic) stabilization and sustainable development in Yemen by
+   building consensus in crucial policy areas through engaging and promoting informed
+   Yemeni voices from all backgrounds in the public discourse on development, economy
+   and post-conflict reconstruction in Yemen and by positively influencing local, regional
+   and international development agendas. The project is implemented by CARPO – Center
+   for Applied Research in Partnership with the Orient, DeepRoot Consulting and the
+   Sana’a Center for Strategic Studies. It is funded by the European Union and the Embassy
+   of the Kingdom of the Netherlands to Yemen.
+
+
+           For more information and previous publications:                     w ww.devchampions.org
+
+
+
+
+                                           Implementing Partners
+                 The project is implemented by a consortium of the following three partners:
+
+
+
+
+The Sana’a Center for Strategic            DeepRoot Consulting is a dynamic             The Center for Applied Re-
+Studies is an independent think-           social enterprise passionate about           search in Partnership with the
+tank that seeks to foster change           Yemen’s development. DeepRoot                Orient (CARPO) is a Germany-
+through knowledge production               aims to help international develop-          based organization whose work is
+with a focus on Yemen and the              ment actors, the private sector, local       situated at the nexus of research,
+surrounding region. The Center’s           civil society organizations and the          consultancy and exchange with a
+                                           Yemeni Government anchor their in-           focus on implementing projects in
+publications and programs, of-
+                                           terventions in a deep understanding          close cooperation and partnership
+fered in both Arabic and English,
+                                           of Yemen’s national and local con-           with stakeholders in the Middle
+cover political, social, economic          texts, and international best prac-          East. The CARPO team has long-
+and security related develop-              tices. Our leadership team and advi-         standing experience in the imple-
+ments, aiming to impact policy             sory board has decades of combined           mentation of projects in coopera-
+locally, regionally, and interna-          experience working in Yemen and              tion with partners from the region
+tionally.                                  internationally in the public, private       and a deep understanding of the
+                                           and nonprofit sectors.                       Yemeni context.
+www.sanaacenter.org                        www.deeproot.consulting                      www.carpo-bonn.org
+
+
+
+
+          Co-funded by: the European Union and the Embassy of the Kingdom of the Netherlands to Yemen
+
+
+
+         Contact: Sana’a Center for Strategic Studies, Haddah Street, Sana’a, Yemen | Email: info@devchampions.org
+

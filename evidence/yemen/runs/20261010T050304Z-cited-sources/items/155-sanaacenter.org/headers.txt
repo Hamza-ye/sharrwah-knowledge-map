@@ -1,0 +1,26 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:25 GMT
+content-type: application/pdf
+content-length: 896423
+server: cloudflare
+x-frame-options: SAMEORIGIN
+permissions-policy: geolocation=(), microphone=(), camera=(), fullscreen=(self "https://www.youtube.com"), payment=()
+last-modified: Tue, 17 Feb 2026 14:06:08 GMT
+etag: "dada7-64b0592ad1400"
+accept-ranges: bytes
+cache-control: public, max-age=31536000
+expires: Sat, 09 Oct 2027 01:10:29 GMT
+referrer-policy: no-referrer-when-downgrade
+pragma: public
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+age: 100376
+cf-cache-status: HIT
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=D%2BlR29LYKwRL8IDft8c%2FueKTJviLDkp4pkiHKezEaKBRhNxoEB%2F1T0S2%2F%2FEuZAREU9mzRc2G69nKjnUrf%2BZWwwrXX3g9OOtPcFWZfl5yDwGnrHCL65lc2BvrxcMfaIDo0EU%3D"}]}
+cf-ray: a483141aedeae03a-IAD
+alt-svc: h3=":443"; ma=86400
+

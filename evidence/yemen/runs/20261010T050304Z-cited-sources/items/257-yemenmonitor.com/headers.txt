@@ -1,0 +1,43 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 05:03:51 GMT
+content-type: text/html; charset=UTF-8
+location: https://www.yemenmonitor.com/en/Details/ArtMID/908/ArticleID/146776
+server: cloudflare
+x-pingback: https://www.yemenmonitor.com/xmlrpc.php
+x-redirect-by: Polylang
+set-cookie: pll_language=ar; expires=Sun, 10-Oct-2027 05:03:51 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax
+x-server-powered-by: Dimofinf INC
+x-nginx-upstream-cache-status: MISS
+access-control-allow-origin: *
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=15552000; includeSubDomains
+cf-cache-status: DYNAMIC
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=H470EXOf1W8foJ5LLdDSqgOIqhn%2Bai15%2F3sxJ9AuKhIOged2sc3NwKOQBOZ9B0NPOL%2BYVfDPiN6sZCB7%2FVhZXR4SsU9ZA5XeS7NyLTsjy0TNDOk1X5ZTBEKAgZ%2BuDAZ9tgiFRMEDMw%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a48314b6ecd7c977-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:51 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+vary: Accept-Encoding
+x-pingback: https://www.yemenmonitor.com/xmlrpc.php
+link: <https://www.yemenmonitor.com/wp-json/>; rel="https://api.w.org/", <https://www.yemenmonitor.com/wp-json/wp/v2/posts/146776>; rel="alternate"; title="JSON"; type="application/json", <https://www.yemenmonitor.com/?p=146776>; rel=shortlink
+set-cookie: pll_language=en; expires=Sun, 10-Oct-2027 05:03:51 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax
+x-server-powered-by: Dimofinf INC
+x-nginx-upstream-cache-status: MISS
+access-control-allow-origin: *
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=15552000; includeSubDomains
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Pjok5DGyhqCa9ZXesOxClJoxq4etek7SwqgqbX%2FKtRSRPgrdYL37kO6T6hsSHp4iSvaqNfhE%2BJ%2FthI3V3uO%2Fz281qYrYjlXwRqC%2FkTsQtHoduvzL4zo9t82KWHGhsdcllFCMkjZL3A%3D%3D"}]}
+content-encoding: zstd
+cf-ray: a48314b87877c977-IAD
+alt-svc: h3=":443"; ma=86400
+

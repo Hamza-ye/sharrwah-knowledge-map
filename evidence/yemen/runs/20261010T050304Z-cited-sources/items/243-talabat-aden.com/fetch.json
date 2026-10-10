@@ -1,0 +1,18 @@
+{
+ "n": 243,
+ "url": "https://www.talabat-aden.com/",
+ "dir": "items/243-talabat-aden.com",
+ "fetched_at": "2026-10-10T05:03:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.talabat-aden.com/",
+ "content_type": "text/html",
+ "bytes": 2081,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:41"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cc18dcdf86254555906eb282137ac0db135afd5a160140283b54db2c3d4f4b0a",
+ "raw_ext": "html"
+}

@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:16 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+x-powered-by: PHP/8.3.23
+cache-control: no-cache, private
+set-cookie: XSRF-TOKEN=eyJpdiI6InRISHJtbEhqUWlKWENCSHEyN21wU3c9PSIsInZhbHVlIjoiK3pZaWhTYUpiZzEzWGlxQnliSXdvOHBqTURFelpYdTZRcWxOQWNxUmEyVHhHSXFQNkd2YW9XVTluUGhRM3V5K09Db0NyK3VhYWhSL2Z6am9JVmdBUzI0clNBZzBKdnQ0OHZHaUxiMU9WVVQ3ejAvb0dOTjNxV0JmeTNFdDFNT0giLCJtYWMiOiI0ODljNmUyNWU2ZmUyYzQ4ZTAyOTg2NDcyZDBkMDkxODUyM2U0YzJlZWRhZGY3Zjg1MTBkOGE5MTUzZDEzYjhlIiwidGFnIjoiIn0%3D; expires=Sat, 10 Oct 2026 07:03:16 GMT; Max-Age=7200; path=/; samesite=lax
+set-cookie: en_24barranpress_session=75TARR3Ern3r52IK6xGSDP8FOWik2ss1Mh2EBwTs; expires=Sat, 10 Oct 2026 07:03:16 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UxKFRAUx9SLm7bDinAZeDQNIX54%2FWitmGeqqCixFqigvteptievn9XIiXG3vK%2F79l4lY%2FyW8IXrQkyWmQNDQdi3H3YNjMEA91m%2B5szxGoHYpPfydzX4NnJTQo2tPkROttrc%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+content-encoding: zstd
+cf-ray: a48313de8a9fefaa-IAD
+alt-svc: h3=":443"; ma=86400
+

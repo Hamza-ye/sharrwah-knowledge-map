@@ -1,0 +1,18 @@
+{
+ "n": 133,
+ "url": "https://newhedge.io/buy/yemen",
+ "dir": "items/133-newhedge.io",
+ "fetched_at": "2026-10-10T05:03:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://newhedge.io/buy/yemen",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3179,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:378"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9e4dcf5177ff3a8fac24c485c5154132c528dce907784b04f1ae294ad0a39ffe",
+ "raw_ext": "html"
+}

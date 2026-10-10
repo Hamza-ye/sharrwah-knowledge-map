@@ -1,0 +1,33 @@
+{
+ "n": 193,
+ "url": "https://www.adslgate.com/thread/2208401",
+ "rendered_at": "2026-10-10T05:10:23Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 200,
+ "final_url": "https://www.adslgate.com/thread/2208401",
+ "title": "كيف اتأكد من متاجر الانستقرام هل هي موثوقة او لا ؟ - adslgate",
+ "text_chars": 5190,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "ccb2212eac748c7cb860875b39697e929857489a7790819443689afa2a450234",
+ "browser_headers": {
+  "cache-control": "no-cache, private",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "a4831e523c0059f1-IAD",
+  "content-encoding": "br",
+  "content-type": "text/html; charset=utf-8",
+  "date": "Sat, 10 Oct 2026 05:10:24 GMT",
+  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+  "permissions-policy": "camera=(), microphone=(self), geolocation=()",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=be80IOUJ47jsEDWobq%2Ff260N6SAkB6ecd0ksQ7z58d%2Fnl2X6Kb9n%2BfuDnPKHlSTQk9sPbpyQswl1pS%2FOVUdzKrgzrak8h%2B%2FaCWTuCiW5M8bblejEuiljPf0q3AXIiI7xxVQ%3D\"}]}",
+  "server": "cloudflare",
+  "server-timing": "cfCacheStatus;desc=\"DYNAMIC\"\ncfEdge;dur=7,cfOrigin;dur=385",
+  "strict-transport-security": "max-age=31536000; includeSubDomains",
+  "vary": "Accept-Encoding",
+  "x-cache-status": "MISS",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "SAMEORIGIN",
+  "x-powered-by": "PHP/8.2.19",
+  "x-xss-protection": "1; mode=block"
+ }
+}

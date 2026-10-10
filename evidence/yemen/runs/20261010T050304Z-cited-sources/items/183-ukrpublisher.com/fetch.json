@@ -1,0 +1,19 @@
+{
+ "n": 183,
+ "url": "https://ukrpublisher.com/wp-content/uploads/2026/08/The-Impact-of-Determinants-of-Customer-Buying-Behavior-on-the-Market-Performance-of-E-Commerce-Platform.-A-case-stud-on-BAZARRY-e-commerce-company-Aden-Yemen.pdf",
+ "dir": "items/183-ukrpublisher.com",
+ "fetched_at": "2026-10-10T05:03:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://ukrpublisher.com/wp-content/uploads/2026/08/The-Impact-of-Determinants-of-Customer-Buying-Behavior-on-the-Market-Performance-of-E-Commerce-Platform.-A-case-stud-on-BAZARRY-e-commerce-company-Aden-Yemen.pdf",
+ "content_type": "application/pdf",
+ "bytes": 650398,
+ "cited_in": [
+  "yemen-setup-options/report.md:82",
+  "yemen-setup-options/notes/cash_logistics_practice.md:220"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "45b2c8118d5195327f2f0bc782834753c9b2453e7ef7da114c3fca9e9679e16d",
+ "raw_ext": "pdf"
+}

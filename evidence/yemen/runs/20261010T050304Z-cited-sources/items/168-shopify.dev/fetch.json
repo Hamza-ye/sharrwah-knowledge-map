@@ -1,0 +1,18 @@
+{
+ "n": 168,
+ "url": "https://shopify.dev/docs/apps/build/payments/alternative/build-an-alternative-payment-extension",
+ "dir": "items/168-shopify.dev",
+ "fetched_at": "2026-10-10T05:03:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/payments/alternative/build-an-alternative-payment-extension?framework=remix",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 271627,
+ "cited_in": [
+  "yemen-setup-options/report.md:158"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e46d1c80f4abac391de3deeb6d703faeb1e867055ad1305c763f5b6d353f223f",
+ "raw_ext": "html"
+}

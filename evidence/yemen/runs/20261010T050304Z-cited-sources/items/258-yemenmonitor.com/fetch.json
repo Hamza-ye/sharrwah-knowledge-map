@@ -1,0 +1,19 @@
+{
+ "n": 258,
+ "url": "https://www.yemenmonitor.com/en/Details/ArtMID/908/ArticleID/148920",
+ "dir": "items/258-yemenmonitor.com",
+ "fetched_at": "2026-10-10T05:03:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.yemenmonitor.com/en/Details/ArtMID/908/ArticleID/148920",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27234,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:37",
+  "yemen-setup-options/notes/currency_territory.md:184"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cb962c5f219cbac0b76c5ae2130acac204554a4d14f59dc9293989a7e1073866",
+ "raw_ext": "html"
+}

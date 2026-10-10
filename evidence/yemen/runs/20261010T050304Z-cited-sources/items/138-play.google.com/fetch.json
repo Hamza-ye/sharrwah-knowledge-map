@@ -1,0 +1,19 @@
+{
+ "n": 138,
+ "url": "https://play.google.com/store/apps/details?id=co.ysys.floosak&gl=US",
+ "dir": "items/138-play.google.com",
+ "fetched_at": "2026-10-10T05:03:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=co.ysys.floosak&gl=US",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 198127,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:88",
+  "yemen-setup-options/notes/wallets_emoney.md:440"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0799f548497c119f179255125b956886467c6d0d7733efe263ed774a95f982ec",
+ "raw_ext": "html"
+}

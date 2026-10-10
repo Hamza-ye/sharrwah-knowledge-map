@@ -1,0 +1,25 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 103 
+link: <https://cdn.prod.website-files.com>; crossorigin; rel=preconnect, <https://cdn.prod.website-files.com/656b13e882c1169c678acb11/css/mepsy.webflow.shared.86a2fccfb.css>; as=style; crossorigin; integrity=sha384-hqL8z7vjZCr4fbgWI5s+b4hsMhS/B9XuyuZOQ0vxUUffAm0cCagcKzhpwSivAiIX; rel=preload, <https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; crossorigin; rel=preconnect
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:47 GMT
+content-type: text/html; charset=utf-8
+set-cookie: _cfuvid=72suaf74SH_tLfduvaRv6RZKFJFrsu2Fjv.gxE8mbZc-1791608624.6636443-1.0.1.1-lW_Gp8x7HNhsnVnIhf4c6eNpaf84JWbb6FLOGA.L8KM; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.mepsyemen.com
+cf-ray: a48314902a57c9bf-IAD
+cf-cache-status: MISS
+content-encoding: gzip
+last-modified: Sat, 10 Oct 2026 05:03:47 GMT
+link: <https://cdn.prod.website-files.com>; rel=preconnect; crossorigin, <https://cdn.prod.website-files.com/656b13e882c1169c678acb11/css/mepsy.webflow.shared.86a2fccfb.css>; rel=preload; as=style; crossorigin; integrity="sha384-hqL8z7vjZCr4fbgWI5s+b4hsMhS/B9XuyuZOQ0vxUUffAm0cCagcKzhpwSivAiIX", <https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; rel=preconnect; crossorigin
+server: cloudflare
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+vary: accept-encoding
+content-security-policy: frame-ancestors 'self'
+surrogate-control: max-age=432000
+surrogate-key: www.mepsyemen.com 656b13e882c1169c678acb11 pageId:659db5d5321bd318c8204924 659db5d5321bd318c8204941
+x-frame-options: SAMEORIGIN
+x-lambda-id: f495b5a4-25c1-42ab-ac63-ca7bfd40d1bc
+x-wf-region: us-east-1
+alt-svc: h3=":443"; ma=86400
+

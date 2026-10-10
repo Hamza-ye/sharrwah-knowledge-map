@@ -1,0 +1,18 @@
+{
+ "n": 68,
+ "url": "https://complianceconcourse.willkie.com/?p=15641",
+ "dir": "items/068-complianceconcourse.willkie.com",
+ "fetched_at": "2026-10-10T05:03:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://complianceconcourse.willkie.com/articles/united-states-sanctions-yemen-kuwait-bank-for-supporting-the-houthis/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 10793,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:369"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "df2a7c56e77db06aae1ab7484c03e3e72079a5695d4398ec5ce3f7521cc1934c",
+ "raw_ext": "html"
+}

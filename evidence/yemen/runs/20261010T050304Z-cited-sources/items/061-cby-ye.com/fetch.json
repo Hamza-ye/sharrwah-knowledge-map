@@ -1,0 +1,25 @@
+{
+ "n": 61,
+ "url": "https://cby-ye.com/news/706",
+ "dir": "items/061-cby-ye.com",
+ "fetched_at": "2026-10-10T05:03:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://cby-ye.com/news/706",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 10116,
+ "cited_in": [
+  "yemen-setup-options/report.md:52",
+  "yemen-setup-options/report.md:144",
+  "yemen-setup-options/notes/regulation_licensing.md:210",
+  "yemen-setup-options/notes/regulation_licensing.md:287",
+  "yemen-setup-options/notes/wallets_emoney.md:61",
+  "yemen-setup-options/notes/wallets_emoney.md:390",
+  "yemen-setup-options/notes/banks_exchange_cards.md:166",
+  "yemen-setup-options/notes/banks_exchange_cards.md:205"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e1217279c7ddd6b667cf039bf60900c65c5e2a709b27e4ecb159365471910698",
+ "raw_ext": "html"
+}

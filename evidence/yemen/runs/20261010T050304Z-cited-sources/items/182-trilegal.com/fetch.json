@@ -1,0 +1,18 @@
+{
+ "n": 182,
+ "url": "https://trilegal.com/knowledge-repository/rbis-guidelines-on-regulation-of-payment-aggregators-and-payment-gateways/",
+ "dir": "items/182-trilegal.com",
+ "fetched_at": "2026-10-10T05:03:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 429,
+ "final_url": "https://trilegal.com/knowledge-repository/rbis-guidelines-on-regulation-of-payment-aggregators-and-payment-gateways/",
+ "content_type": "text/html",
+ "bytes": 1168,
+ "cited_in": [
+  "yemen-setup-options/report.md:294"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "21200fdcf2fb9fb7a01ec311ca3b49dc918347f75cf3c001f5ecd70f69e121c0",
+ "raw_ext": "html"
+}

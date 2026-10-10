@@ -1,0 +1,23 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:44 GMT
+content-type: text/html; charset=utf-8
+set-cookie: _cfuvid=8zg_PMXt8mD8uYgBS0Fn33.jpJFgbGJMQalGRJ0QBVo-1791608624.7501628-1.0.1.1-KXJ3pern7rwSdEgTJtZrftq8jNhdq10GgDhS1ZzOZOA; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.mepsyemen.com
+cf-ray: a4831490aea9dff2-IAD
+cf-cache-status: HIT
+age: 160146
+content-encoding: gzip
+last-modified: Thu, 08 Oct 2026 08:34:38 GMT
+link: <https://cdn.prod.website-files.com>; rel=preconnect; crossorigin, <https://cdn.prod.website-files.com/656b13e882c1169c678acb11/css/mepsy.webflow.shared.86a2fccfb.css>; rel=preload; as=style; crossorigin; integrity="sha384-hqL8z7vjZCr4fbgWI5s+b4hsMhS/B9XuyuZOQ0vxUUffAm0cCagcKzhpwSivAiIX", <https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; rel=preconnect; crossorigin
+server: cloudflare
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+vary: accept-encoding
+content-security-policy: frame-ancestors 'self'
+surrogate-control: max-age=432000
+surrogate-key: www.mepsyemen.com 656b13e882c1169c678acb11 pageId:659db5d5321bd318c8204971
+x-frame-options: SAMEORIGIN
+x-lambda-id: 7d85f6ca-ab82-45f3-a115-cace681f0e17
+x-wf-region: us-east-1
+alt-svc: h3=":443"; ma=86400
+

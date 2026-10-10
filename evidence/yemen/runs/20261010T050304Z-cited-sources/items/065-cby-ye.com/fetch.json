@@ -1,0 +1,20 @@
+{
+ "n": 65,
+ "url": "https://cby-ye.com/pages/14",
+ "dir": "items/065-cby-ye.com",
+ "fetched_at": "2026-10-10T05:03:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://cby-ye.com/pages/14",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 8536,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:209",
+  "yemen-setup-options/notes/regulation_licensing.md:575",
+  "yemen-setup-options/notes/wallets_emoney.md:172"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cd3400e0683a21653205d48657eaed7003b530af66ca954b8b530c07f7d8a437",
+ "raw_ext": "html"
+}

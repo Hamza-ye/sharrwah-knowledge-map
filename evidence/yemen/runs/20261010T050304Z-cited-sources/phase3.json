@@ -1,0 +1,123 @@
+[
+{
+"n": 2,
+"url": "http://www.nbyemen.com/creditCard_en.html",
+"archive_error": "000  curl: (35) Recv failure: Connection reset by peer\n"
+},
+{
+"n": 15,
+"url": "https://almahrahpost.com/news/14745",
+"archive_error": "000  curl: (35) Recv failure: Connection reset by peer\n"
+},
+{
+"n": 18,
+"url": "https://almasdaronline.com/articles/295758",
+"archive_error": "000  curl: (35) Recv failure: Connection reset by peer\n"
+},
+{
+"n": 19,
+"url": "https://almasdaronline.com/articles/297946",
+"archive_error": "000  curl: (35) Recv failure: Connection reset by peer\n"
+},
+{
+"n": 20,
+"url": "https://almasdaronline.com/articles/323695",
+"archive_url": ""
+},
+{
+"n": 24,
+"url": "https://alp.unescwa.org/plans/1811",
+"archive_error": "000  curl: (35) Recv failure: Connection reset by peer\n"
+},
+{
+"n": 25,
+"url": "https://alreem.delivery/",
+"archive_error": "000  curl: (35) Recv failure: Connection reset by peer\n"
+},
+{
+"n": 130,
+"url": "https://mewayz.com/docs/payment-gateway-paytabs",
+"archive_url": ""
+},
+{
+"n": 132,
+"url": "https://newdc.qtb-bank.com:5052/PayBills",
+"archive_url": ""
+},
+{
+"n": 145,
+"url": "https://press.un.org/en/2025/sc16222.doc.htm",
+"archive_error": "000  curl: (35) Recv failure: Connection reset by peer\n"
+},
+{
+"n": 148,
+"url": "https://remittanceprices.worldbank.org/corridor/SA/YE",
+"archive_url": ""
+},
+{
+"n": 174,
+"url": "https://stcpay.com.sa/international-transfer",
+"archive_url": ""
+},
+{
+"n": 182,
+"url": "https://trilegal.com/knowledge-repository/rbis-guidelines-on-regulation-of-payment-aggregators-and-payment-gateways/",
+"archive_url": ""
+},
+{
+"n": 184,
+"url": "https://unctad.org/news/least-developed-countries-still-lag-behind-cyberlaw-reforms",
+"archive_url": ""
+},
+{
+"n": 196,
+"url": "https://www.alarabiya.net/aswaq/2024/05/30/-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A-%D9%8A%D9%88%D9%82%D9%81-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D9%85%D8%B9-%D8%A8%D9%86%D9%88%D9%83-%D9%84%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA%D9%87%D8%A7-%D8%A8%D9%80-%D8%AC%D9%85%D8%A7%D8%B9%D8%A9-%D8%A7%D8%B1%D9%87%D8%A7%D8%A8%D9%8A%D8%A9-",
+"archive_url": ""
+},
+{
+"n": 218,
+"url": "https://www.cnbc.com/2026/01/16/latest-us-sanctions-target-houthi-funding-networks-treasury-says.html",
+"archive_url": ""
+},
+{
+"n": 220,
+"url": "https://www.electronicpaymentsinternational.com/news/unionpay-partners-with-cac-to-issue-payment-cards-in-yemen-291214-4478310",
+"archive_url": ""
+},
+{
+"n": 221,
+"url": "https://www.fatf-gafi.org/content/fatf-gafi/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-june-2026.html",
+"archive_url": ""
+},
+{
+"n": 223,
+"url": "https://www.globalsecurity.org/military/library/news/2025/01/mil-250117-treasury02.htm",
+"archive_url": ""
+},
+{
+"n": 227,
+"url": "https://www.mdpi.com/2071-1050/15/18/13712",
+"archive_url": ""
+},
+{
+"n": 238,
+"url": "https://www.sabacards-rg.com/en/",
+"archive_url": ""
+},
+{
+"n": 260,
+"url": "https://www.yk-bank.com/ar/Personal/e-wallet/one-cash",
+"archive_url": ""
+},
+{
+"n": 265,
+"url": "https://yacpa.org/public/media/496/64d10bfd88673_القانون-رقم--19لسنة-1995م-بشأن-أعمال-الصرافة.pdf",
+"encoded_retry": "404 text/html; charset=UTF-8",
+"archive_url": ""
+},
+{
+"n": 266,
+"url": "https://ye.opensooq.com/ar/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%86%D9%82%D9%84-%D9%88-%D8%B4%D8%AD%D9%86",
+"archive_url": ""
+}
+]

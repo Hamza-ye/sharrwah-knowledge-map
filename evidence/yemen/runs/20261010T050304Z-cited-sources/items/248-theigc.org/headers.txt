@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:49 GMT
+content-type: application/pdf
+content-length: 1051149
+server: cloudflare
+last-modified: Tue, 10 Mar 2026 15:43:13 GMT
+etag: "69b03c11-100a0d"
+cache-control: public, max-age=31536000
+accept-ranges: bytes
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+age: 6052769
+cf-cache-status: HIT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aSkpK5xgfJYRk1ms%2FQIdKHkkI0rURrVfAxKd4mT1u68ZjEA4jNgoxnrjsDJyqdjXY1V%2F2qJussEVHbXtoZWDgXbGUDPlGAq%2BZ4uR9CuB84ImJLPA9q6GFZRw6nkHyDl8aw%3D%3D"}]}
+cf-ray: a48314acdfadc92b-IAD
+alt-svc: h3=":443"; ma=86400
+

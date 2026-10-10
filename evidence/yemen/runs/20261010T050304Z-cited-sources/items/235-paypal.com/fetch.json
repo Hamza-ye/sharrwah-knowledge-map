@@ -1,0 +1,19 @@
+{
+ "n": 235,
+ "url": "https://www.paypal.com/va/cshelp/article/why-does-my-paypal-account-have-only-send-capabilities-help1027",
+ "dir": "items/235-paypal.com",
+ "fetched_at": "2026-10-10T05:03:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.paypal.com/va/cshelp/article/why-does-my-paypal-account-have-only-send-capabilities-help1027",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 58878,
+ "cited_in": [
+  "yemen-setup-options/report.md:236",
+  "yemen-setup-options/notes/banks_exchange_cards.md:305"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "36941407c4642f1c623359c02986144d18e4020e5dad2e232b5a26a123aceb8d",
+ "raw_ext": "html"
+}

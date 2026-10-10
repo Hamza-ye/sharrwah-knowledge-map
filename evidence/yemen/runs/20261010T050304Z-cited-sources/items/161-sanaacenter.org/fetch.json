@@ -1,0 +1,27 @@
+{
+ "n": 161,
+ "url": "https://sanaacenter.org/the-yemen-review/jan-mar-2026/26962",
+ "dir": "items/161-sanaacenter.org",
+ "fetched_at": "2026-10-10T05:03:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://sanaacenter.org/the-yemen-review/jan-mar-2026/26962",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 42287,
+ "cited_in": [
+  "yemen-setup-options/report.md:90",
+  "yemen-setup-options/notes/regulation_licensing.md:303",
+  "yemen-setup-options/notes/regulation_licensing.md:381",
+  "yemen-setup-options/notes/regulation_licensing.md:564",
+  "yemen-setup-options/notes/currency_territory.md:28",
+  "yemen-setup-options/notes/currency_territory.md:35",
+  "yemen-setup-options/notes/currency_territory.md:89",
+  "yemen-setup-options/notes/currency_territory.md:90",
+  "yemen-setup-options/notes/currency_territory.md:219",
+  "yemen-setup-options/notes/currency_territory.md:221"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4dbd55f7977a7c222594629ebae76d4124cd62298e2af7a2d14981a84424012f",
+ "raw_ext": "html"
+}

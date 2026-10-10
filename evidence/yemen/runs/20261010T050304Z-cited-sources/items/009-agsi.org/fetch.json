@@ -1,0 +1,18 @@
+{
+ "n": 9,
+ "url": "https://agsi.org/ar/?p=22899",
+ "dir": "items/009-agsi.org",
+ "fetched_at": "2026-10-10T05:03:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://agsi.org/ar/analysis/%d8%a7%d9%84%d8%b1%d9%8a%d8%a7%d9%84-%d8%a7%d9%84%d9%8a%d9%85%d9%86%d9%8a-%d8%a7%d9%84%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a-%d8%aa%d8%b5%d9%88%d8%b1-%d8%b1%d9%82%d9%85%d9%8a-%d9%84%d8%b3/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44620,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:377"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "14dd553cbd1100c1635615fccd52dce7d0b6e79a53c024cd03742dc030fe6b73",
+ "raw_ext": "html"
+}

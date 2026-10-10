@@ -1,0 +1,126 @@
+Packagist
+The PHP Package Repository
+Browse
+About Packagist.org
+Submit
+Create account
+Sign in
+al-saloul/kuraimibank-payment
+
+The description
+
+Package info
+
+github.com/al-saloul/kurimibanck
+
+pkg:composer/al-saloul/kuraimibank-payment
+
+Security
+
+Advisories: 0
+
+Aikido package health analysis
+
+Transparency log
+
+Statistics
+
+Installs: 2
+
+Dependents: 0
+
+Suggesters: 0
+
+Stars: 12
+
+Open Issues: 0
+
+dev-master
+2024-07-08 05:24 UTC
+
+requires
+
+illuminate/http: ^11.14
+illuminate/routing: ^11.14
+illuminate/support: ^11
+illuminate/validation: ^11.14
+
+requires (dev)
+
+None
+
+suggests
+
+None
+
+provides
+
+None
+
+conflicts
+
+None
+
+replaces
+
+None
+
+ MIT  a43a1ad2b7377e0569f96a7344f31ad8cbfae41f
+
+ Mohammed Alsaloul <eng.alsaloul.mohammed@gmail.com>
+
+ Published on Packagist.org on 2025-09-08 07:55 UTC
+
+dev-master
+
+This package is auto-updated.
+
+Last update: 2026-10-07 19:17:26 UTC
+
+README
+
+KuraimiBank Payment Gateway
+
+The KuraimiBank-Payment Gateway is a comprehensive library designed to facilitate seamless transactions between domestic e-commerce suppliers and the Kuraimi bank applications, namely KJ and Mfloos. This API solution serves as a bridge, connecting the supplier's portal with the bank's applications, enabling efficient and secure payment processing.
+
+By leveraging the KuraimiBank-Payment Gateway, suppliers can achieve enhanced integration with their front systems and platforms through the utilization of Web API technology. This integration empowers suppliers and their partners to conduct transactions effortlessly, ensuring a smooth user experience for their customers.
+
+With its robust features and functionalities, the KuraimiBank-Payment Gateway simplifies the payment process for e-commerce suppliers. It enables them to securely manage and process payments, ensuring reliable and efficient financial transactions.
+
+Overall, the KuraimiBank-Payment Gateway serves as a vital component in Kuraimi's E-Pay API solution, offering domestic e-commerce suppliers a powerful tool to seamlessly integrate their systems with Kuraimi bank applications, ultimately enhancing their payment processing capabilities.
+
+Installation
+
+You can install the package via Composer:
+
+composer require al-saloul/kuraimibank-payment
+Usage
+
+Create these .env variables in your project:
+
+KURAIMI_USERNAME=
+KURAIMI_PASSWORD=
+KURAIMI_BASE_URL=
+KURAIMI_CURRENCY_ZONE=old # Ex: all, old, new
+KURAIMI_WEBHOOK_URL=webhooks/kuraimibank/check-user # You can add your own webhook url here which should not exist in your project routes
+KURAIMI_MODEL='\App\Models\User' # The model with namespace
+KURAIMI_COLUMN_NAME='mobile'
+
+The currency zone variable represent North Yemen Coin (old) , South Yemen Coin (new) or all Yemen coins (all).
+
+About Packagist.org
+Atom/RSS Feeds
+Statistics
+Browse Packages
+API
+Mirrors
+Status
+Dashboard
+
+ provides maintenance and hosting
+
+ provides bandwidth and CDN
+
+ provides malware detection
+
+Sponsor Packagist & Composer

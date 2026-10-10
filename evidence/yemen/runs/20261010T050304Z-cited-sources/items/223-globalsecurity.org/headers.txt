@@ -1,0 +1,16 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 402 
+date: Sat, 10 Oct 2026 05:03:43 GMT
+content-type: application/json
+content-length: 697
+cache-control: no-store
+link: <https://www.globalsecurity.org/license.xml>; rel="license"; type="application/rsl+xml"
+x-gs-gate: cloud-asn:396982
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0pHG5FHPtXsXWVbR2ZcmjXXGwO1FTooTiB%2FCkuU8ivESyD0C%2F%2B2cFx%2BzZiu0ojah7WGn7%2B0L1fCuiGD%2BLF6chLlsdU7NC4XbEkGCqDFu771qzJVz2K2RsUfjc3Zp0kcODgDmm%2BNR4qyI"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-robots-tag: bingbot: noarchive
+server: cloudflare
+cf-ray: a4831489682de5b8-IAD
+alt-svc: h3=":443"; ma=86400
+

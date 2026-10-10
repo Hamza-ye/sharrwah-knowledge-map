@@ -1,0 +1,19 @@
+{
+ "n": 122,
+ "url": "https://kuraimibank.com/ar",
+ "dir": "items/122-kuraimibank.com",
+ "fetched_at": "2026-10-10T05:03:20Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kuraimibank.com/ar",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 2258,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:67",
+  "yemen-setup-options/notes/cash_logistics_practice.md:190"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "68575577d3eff8e240e0481b9facecad4b2509854bce8d139b238a050c606e94",
+ "raw_ext": "html"
+}

@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:26 GMT
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding
+cache-control: private,public, max-age=20
+set-cookie: ASP.NET_SessionId=aco14kkxfbwp5ejgasyb5em4; path=/; secure; HttpOnly; SameSite=Lax
+set-cookie: IncPath=Includes1; expires=Sun, 10-Oct-2027 05:03:24 GMT; path=/; secure; HttpOnly; SameSite=Lax
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+permissions-policy: accelerometer=(self), camera=(), geolocation=(), microphone=()
+referrer-policy: strict-origin-when-cross-origin
+x-permitted-cross-domain-policies: none
+cross-origin-resource-policy: same-site
+cross-origin-opener-policy: same-origin
+strict-transport-security: max-age=16070400; includeSubDomains
+set-cookie: cookie=!Qn65RtfhKDbs2gVyoDujkXPTcakde5by9ffsw/8JKPNb6mraxl+WLpY2fkNmu7cjP/ZnU65NvnyE; path=/; Httponly; Secure
+set-cookie: f5_cspm=1234;;
+set-cookie: TS0178b498=01aa67fc571ce12f9a6b65dc10ced272aeb134b316f92c5ca5bbf4e659739e8e968ac1acb67e61233f4dd96332717b81912fb33d02abf7b9a83b0b7beb1b4e9e985aa81b8749aa113e55d07e980096403d01753875b1f71dd25c5787b60a49b139bb6af34cc41efb0cceffd026f02eb73047d6dbc5; Path=/; Domain=.www.rbi.org.in
+set-cookie: ASLBSA=00038cb7255e6e33fe238fd7218d39e37a475e7284ef941f0f4ea57a88e416acb2e4; Path=/; HttpOnly;
+set-cookie: ASLBSACORS=00038cb7255e6e33fe238fd7218d39e37a475e7284ef941f0f4ea57a88e416acb2e4; SameSite=none; Path=/; Secure; HttpOnly;
+x-azure-ref: 20261010T050324Z-15d65cf455ctwntchC1DTTyuqs000000124g000000008wk3
+x-fd-int-roxy-purgeid: 64236258
+x-cache: PRIVATE_NOSTORE
+content-encoding: br
+

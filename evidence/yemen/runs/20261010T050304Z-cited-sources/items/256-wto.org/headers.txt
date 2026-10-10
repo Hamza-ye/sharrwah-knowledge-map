@@ -1,0 +1,23 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:50 GMT
+content-type: application/pdf
+content-length: 121108
+cf-ray: a48314b4f98ccd01-IAD
+cf-cache-status: DYNAMIC
+accept-ranges: bytes
+access-control-allow-origin: https://eregistration.wto.org, https://rtais.wto.org
+cache-control: no-cache, no-store, must-revalidate
+etag: "d44ffb7c7e7d11:0"
+expires: 0
+last-modified: Tue, 26 Jul 2016 06:32:31 GMT
+server: cloudflare
+strict-transport-security: max-age=31536000
+pragma: no-cache
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+set-cookie: __cf_bm=I0oMx0mVFFlx1Px2KSD9TctXa6gb0xWozmAU5_vt4fc-1791608630.558203-1.0.1.1-yp54s49pmAcaItlQYxFoi5N7XPwqFHjOks6dTS3TUTDO.8dtpFQyqG9Ns2.Q_Cl7GsAkcqhDbpxoV_MgVsbglC8aELGPp3M6kUfkn.mzYLbcpoYDjZGxyNv3fLeAxXp3; HttpOnly; SameSite=None; Secure; Path=/; Domain=wto.org; Expires=Sat, 10 Oct 2026 05:33:50 GMT
+

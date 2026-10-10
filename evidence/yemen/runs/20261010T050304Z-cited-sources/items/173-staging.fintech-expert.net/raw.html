@@ -1,0 +1,456 @@
+<html lang="en" class="h-full bg-gray-50">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="28JBWeSiSE8aM7GzQAzll2HmVDcedCX9eSI8e5uy">
+    <meta name="Referrer-Policy" value="no-referrer"/>
+    <!-- Title -->
+    <title>Floosak Admin Portal Login</title>
+
+    <link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0f766e">
+<meta name="application-name" content="Floosak Portal">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Floosak">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="/pwa/icon-192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/pwa/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/pwa/icon-512.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}</style>
+
+        <style>
+    .admin-login-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 16px;
+        background: #f3f8fb;
+    }
+
+    .admin-login-card {
+        width: 100%;
+        max-width: 980px;
+        min-height: 600px;
+        display: grid;
+        grid-template-columns: 44% 56%;
+        overflow: hidden;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 24px 70px rgba(15, 23, 42, 0.14);
+    }
+
+    .admin-login-aside {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 38px;
+        overflow: hidden;
+        color: #ffffff;
+        background:
+            linear-gradient(145deg, rgba(0, 111, 158, 0.96) 0%, rgba(0, 95, 134, 0.96) 55%, rgba(3, 71, 101, 0.98) 100%);
+    }
+
+    .admin-login-aside::before {
+        position: absolute;
+        top: -120px;
+        right: -120px;
+        width: 280px;
+        height: 280px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 999px;
+        content: "";
+    }
+
+    .admin-login-aside::after {
+        position: absolute;
+        left: -90px;
+        bottom: 130px;
+        width: 230px;
+        height: 230px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        content: "";
+    }
+
+    .admin-login-aside > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    .admin-login-logo-box {
+        display: inline-flex;
+        width: fit-content;
+        max-width: 210px;
+        align-items: center;
+        border-radius: 14px;
+        background: #ffffff;
+        padding: 12px 18px;
+        box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+    }
+
+    .admin-login-logo-box img {
+        display: block;
+        width: 150px;
+        height: auto;
+    }
+
+    .admin-login-kicker {
+        margin-top: 46px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #c8ecfb;
+    }
+
+    .admin-login-title {
+        margin-top: 12px;
+        font-size: 34px;
+        line-height: 1.12;
+        font-weight: 800;
+        letter-spacing: 0;
+    }
+
+    .admin-login-copy {
+        margin-top: 18px;
+        max-width: 330px;
+        font-size: 15px;
+        line-height: 1.7;
+        color: #e5f6fc;
+    }
+
+    .admin-console-network {
+        position: absolute;
+        right: 18px;
+        bottom: 128px;
+        width: 290px;
+        height: 235px;
+        opacity: 0.42;
+        pointer-events: none;
+    }
+
+    .admin-console-line {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 118px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.62);
+        transform-origin: left center;
+    }
+
+    .admin-console-line:nth-child(1) { transform: rotate(0deg); }
+    .admin-console-line:nth-child(2) { transform: rotate(50deg); }
+    .admin-console-line:nth-child(3) { transform: rotate(108deg); }
+    .admin-console-line:nth-child(4) { transform: rotate(166deg); }
+    .admin-console-line:nth-child(5) { transform: rotate(224deg); }
+    .admin-console-line:nth-child(6) { transform: rotate(302deg); }
+
+    .admin-console-node {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.96);
+        color: #006f9e;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+        font-weight: 900;
+    }
+
+    .admin-console-node.center {
+        left: 50%;
+        top: 50%;
+        width: 78px;
+        height: 78px;
+        border: 5px solid rgba(255, 255, 255, 0.28);
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+    }
+
+    .admin-console-node.small {
+        width: 44px;
+        height: 44px;
+        font-size: 11px;
+    }
+
+    .admin-console-node.n1 { right: 10px; top: 98px; }
+    .admin-console-node.n2 { right: 54px; top: 18px; }
+    .admin-console-node.n3 { left: 96px; top: 4px; }
+    .admin-console-node.n4 { left: 20px; top: 96px; }
+    .admin-console-node.n5 { left: 82px; bottom: 8px; }
+    .admin-console-node.n6 { right: 44px; bottom: 22px; }
+
+    .admin-console-caption {
+        position: absolute;
+        right: 36px;
+        bottom: 92px;
+        color: rgba(216, 242, 251, 0.86);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .admin-login-points {
+        display: grid;
+        gap: 12px;
+        margin-top: 34px;
+    }
+
+    .admin-login-point {
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 14px 16px;
+    }
+
+    .admin-login-point strong,
+    .admin-login-point span {
+        display: block;
+    }
+
+    .admin-login-point strong {
+        font-size: 14px;
+    }
+
+    .admin-login-point span {
+        margin-top: 4px;
+        font-size: 12px;
+        color: #d8f2fb;
+    }
+
+    .admin-login-form-panel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px;
+    }
+
+    .admin-login-form {
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .admin-login-mobile-logo {
+        display: none;
+        margin-bottom: 28px;
+    }
+
+    .admin-login-mobile-logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .admin-login-form h2 {
+        margin: 0;
+        color: #0f172a;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 800;
+    }
+
+    .admin-login-form p {
+        margin-top: 12px;
+        color: #64748b;
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .admin-login-field {
+        width: 100%;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        padding: 12px 14px;
+        color: #0f172a;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .admin-login-field:focus {
+        border-color: #006f9e;
+        box-shadow: 0 0 0 4px rgba(0, 111, 158, 0.14);
+    }
+
+    .admin-login-otp-field {
+        width: 100%;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        padding: 13px 14px;
+        color: #0f172a;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.32em;
+        text-align: center;
+        outline: none;
+    }
+
+    .admin-login-otp-field:focus {
+        border-color: #006f9e;
+        box-shadow: 0 0 0 4px rgba(0, 111, 158, 0.14);
+    }
+
+    .admin-login-submit {
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        background: #006f9e;
+        padding: 13px 16px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .admin-login-submit:hover {
+        background: #005f86;
+        transform: translateY(-1px);
+    }
+
+    .admin-qr-box {
+        display: flex;
+        justify-content: center;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        background: #f8fafc;
+        padding: 18px;
+    }
+
+    @media (max-width: 900px) {
+        .admin-login-card {
+            max-width: 480px;
+            min-height: auto;
+            display: block;
+        }
+
+        .admin-login-aside {
+            display: none;
+        }
+
+        .admin-login-form-panel {
+            padding: 34px 24px;
+        }
+
+        .admin-login-mobile-logo {
+            display: block;
+        }
+    }
+</style>
+
+<body class="footer-offset" class="h-full">
+
+        <main class="admin-login-page">
+        <section class="admin-login-card">
+            <aside class="admin-login-aside">
+                <div>
+                    <div class="admin-login-logo-box">
+                        <img src="/assets/images/floosak.png" alt="Floosak">
+                    </div>
+
+                    <div class="admin-login-kicker">Admin access</div>
+                    <h1 class="admin-login-title">Floosak Admin Portal</h1>
+                    <p class="admin-login-copy">
+                        Control users, accounts, approvals, services, reports, and portal operations from one secure workspace.
+                    </p>
+                </div>
+
+                <div class="admin-console-network" aria-hidden="true">
+                    <span class="admin-console-line"></span>
+                    <span class="admin-console-line"></span>
+                    <span class="admin-console-line"></span>
+                    <span class="admin-console-line"></span>
+                    <span class="admin-console-line"></span>
+                    <span class="admin-console-line"></span>
+                    <span class="admin-console-node center">ADMIN</span>
+                    <span class="admin-console-node small n1">USR</span>
+                    <span class="admin-console-node small n2">KYC</span>
+                    <span class="admin-console-node small n3">REP</span>
+                    <span class="admin-console-node small n4">OPS</span>
+                    <span class="admin-console-node small n5">2FA</span>
+                    <span class="admin-console-node small n6">CFG</span>
+                </div>
+                <div class="admin-console-caption" aria-hidden="true">Control center</div>
+
+                <div class="admin-login-points">
+                    <div class="admin-login-point">
+                        <strong>Control center</strong>
+                        <span>Manage operational users, accounts, and approvals.</span>
+                    </div>
+                    <div class="admin-login-point">
+                        <strong>Protected access</strong>
+                        <span>Google Authenticator protects admin sessions.</span>
+                    </div>
+                    <div class="admin-login-point">
+                        <strong>Installable portal</strong>
+                        <span>Use it in browser or as a desktop app.</span>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="admin-login-form-panel">
+                <div class="admin-login-form">
+                    <div class="admin-login-mobile-logo">
+                        <img src="/assets/images/floosak.png" alt="Floosak">
+                    </div>
+
+                    <div class="text-sm font-bold uppercase tracking-wide text-floosak">Admin Portal</div>
+                    <h2 class="mt-3">Welcome back</h2>
+                    <p>Sign in with your admin credentials to manage Floosak operations.</p>
+                                            <p class="font-semibold text-floosak">test</p>
+                    
+                    <form class="mt-8 space-y-5" action="https://staging.fintech-expert.net/login" method="POST">
+                        <input type="hidden" name="_token" value="28JBWeSiSE8aM7GzQAzll2HmVDcedCX9eSI8e5uy" autocomplete="off">                        
+                        <div>
+                            <label for="username" class="block text-sm font-semibold text-slate-700">User name</label>
+                            <input id="username" value="" name="username" type="text" autocomplete="username" required autofocus
+                                class="admin-login-field mt-2"
+                                placeholder="Admin username">
+                        </div>
+
+                        <div>
+                            <label for="password" class="block text-sm font-semibold text-slate-700">Password</label>
+                            <input id="password" name="password" type="password" autocomplete="current-password" required
+                                class="admin-login-field mt-2"
+                                placeholder="Password">
+                        </div>
+
+                        <div class="flex flex-wrap items-center justify-between gap-3">
+                            <label for="remember-me" class="flex items-center gap-2 text-sm text-slate-600">
+                                <input id="remember-me" name="remember" type="checkbox" class="h-4 w-4 rounded border-slate-300 text-floosak focus:ring-[#006f9e]">
+                                Remember me
+                            </label>
+
+                            <a href="https://staging.fintech-expert.net/password/reset" class="text-sm font-semibold text-floosak hover:text-[#005f86]">
+                                Forgot password?
+                            </a>
+                        </div>
+
+                        <button type="submit" class="admin-login-submit">
+                            Sign in to admin portal
+                        </button>
+                    </form>
+
+                    <p class="mt-8 border-t border-slate-200 pt-5 text-xs">
+                        Authorized admin users only. Keep your credentials private.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/pwa-register.js" defer></script>
+
+    
+</body>
+
+</html>
+

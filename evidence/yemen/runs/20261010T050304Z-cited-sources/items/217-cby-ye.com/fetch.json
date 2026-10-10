@@ -1,0 +1,18 @@
+{
+ "n": 217,
+ "url": "https://www.cby-ye.com/pages/11",
+ "dir": "items/217-cby-ye.com",
+ "fetched_at": "2026-10-10T05:03:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.cby-ye.com/pages/11",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 8013,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:218"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "47212aef0f45b5ebe9e058fac0d6177c083809eea6ab533e4a436f6b5be7cb9c",
+ "raw_ext": "html"
+}

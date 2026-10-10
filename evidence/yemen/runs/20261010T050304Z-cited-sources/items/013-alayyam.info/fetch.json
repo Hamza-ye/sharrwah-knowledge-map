@@ -1,0 +1,20 @@
+{
+ "n": 13,
+ "url": "https://alayyam.info/news/AIOVZNTN-XIA26F-F8B0",
+ "dir": "items/013-alayyam.info",
+ "fetched_at": "2026-10-10T05:03:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://alayyam.info/news/AIOVZNTN-XIA26F-F8B0",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 30787,
+ "cited_in": [
+  "yemen-setup-options/report.md:90",
+  "yemen-setup-options/notes/currency_territory.md:36",
+  "yemen-setup-options/notes/currency_territory.md:184"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e407cf2be5f18e9f52a789398b53e849ac1277db32acfb7d40b33254df0b3534",
+ "raw_ext": "html"
+}

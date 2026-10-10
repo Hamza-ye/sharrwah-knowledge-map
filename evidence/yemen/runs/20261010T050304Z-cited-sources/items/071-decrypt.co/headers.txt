@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:14 GMT
+content-type: text/html; charset=utf-8
+content-security-policy: object-src 'none'; base-uri 'self'; frame-ancestors 'self'
+cache-control: public, s-maxage=10, stale-while-revalidate=59
+x-powered-by: Next.js
+set-cookie: __cf_bm=BTx_arEgAjDqu6gha9btLRFPA5VhdBZ8AIHhcuU18qg-1791608594.4770687-1.0.1.1-vSSb6lOEsLYO_98StqN.d13XjR3XlHIaW3FyzVSBPoaHvoh5_Zw1Ir8DY2yt8Fe7bfEALQNCIih8rPzquwXeQGCjxLqkziR65DJKeYbf4XRenQoEsxm8B9UJ59BceieI; HttpOnly; SameSite=None; Secure; Path=/; Domain=decrypt.co; Expires=Sat, 10 Oct 2026 05:33:14 GMT
+vary: Accept-Encoding
+x-varnish: 412779876
+via: 1.1 varnish (Varnish/7.0)
+x-content-type-options: nosniff
+x-cache: MISS
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+cf-cache-status: EXPIRED
+content-encoding: br
+server: cloudflare
+cf-ray: a48313d37bb010de-IAD
+

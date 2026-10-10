@@ -1,0 +1,18 @@
+{
+ "n": 34,
+ "url": "https://apps.apple.com/us/app/%D8%AC%D9%88%D8%A7%D9%84%D9%8A/id1622872097",
+ "dir": "items/034-apps.apple.com",
+ "fetched_at": "2026-10-10T05:03:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://apps.apple.com/us/app/%D8%AC%D9%88%D8%A7%D9%84%D9%8A/id1622872097",
+ "content_type": "text/html",
+ "bytes": 66346,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:65"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a5a51e7d6436489ae17afdccf860e3a699363674eba402fac01caecc9c1be520",
+ "raw_ext": "html"
+}

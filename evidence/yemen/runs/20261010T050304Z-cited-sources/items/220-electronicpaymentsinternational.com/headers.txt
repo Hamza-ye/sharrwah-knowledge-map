@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 403 
+server: Varnish
+retry-after: 0
+content-type: text/html; charset=utf-8
+accept-ranges: bytes
+via: 1.1 varnish, 1.1 varnish
+strict-transport-security: max-age=300; includeSubDomains;
+x-datadome: protected
+set-cookie: datadome=n31pDr6i8wNCn_JN2Lsp7eZzPYkYN_Lxr2NZOr72B1hf~hCeG6djkkqmP_XvCesZUEymru4eQ031TFWgkWwK_Q14QK88RTbqWtmhG3aFHWRDs0ByQTmkEP7E1hkjQ2XR; Max-Age=31536000; Domain=.electronicpaymentsinternational.com; Path=/; Secure; SameSite=Lax
+date: Sat, 10 Oct 2026 05:03:43 GMT
+x-served-by: cache-iad-kiad7000184-IAD, cache-iad-kiad7000184-IAD
+x-cache: MISS, MISS
+x-cache-hits: 0, 0
+x-timer: S1791608623.216948,VS0,VE9
+content-length: 425
+

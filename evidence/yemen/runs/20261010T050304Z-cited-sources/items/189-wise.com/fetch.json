@@ -1,0 +1,19 @@
+{
+ "n": 189,
+ "url": "https://wise.com/help/articles/2978049/what-countries-and-regions-can-i-send-money-to",
+ "dir": "items/189-wise.com",
+ "fetched_at": "2026-10-10T05:03:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://wise.com/help/articles/2978049/where-can-i-use-wise",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 19704,
+ "cited_in": [
+  "yemen-setup-options/report.md:78",
+  "yemen-setup-options/notes/banks_exchange_cards.md:304"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "568d4c809de6b86c5fcc0fa23507ba5fab3f73786c5f26019492b0b206edccaf",
+ "raw_ext": "html"
+}

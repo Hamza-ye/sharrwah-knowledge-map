@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:46 GMT
+content-type: text/html; charset=utf-8
+cf-ray: a483149979b6d65f-IAD
+cf-cache-status: DYNAMIC
+cache-control: max-age=0, no-cache, no-store, must-revalidate
+server: cloudflare
+set-cookie: enforce_policy=gdpr_v2.1; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 10 Oct 2027 05:03:46 GMT; Secure; SameSite=None
+set-cookie: nsid=s%3AlvYxjhSq6-cv0Roa1j900Rln8XbRLa67.82QyI7W%2BAb%2BYu%2FweTJsgaVaBF3Uu05R%2Fe3CotOSiTLY; Path=/; HttpOnly; Secure; SameSite=None
+set-cookie: LANG=ar_EG%3BYE; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sat, 10 Oct 2026 13:49:42 GMT; HttpOnly; Secure; SameSite=None
+set-cookie: tsrce=ppcmsnodeweb; Max-Age=259199; Domain=.paypal.com; Path=/; Expires=Tue, 13 Oct 2026 05:03:45 GMT; HttpOnly; Secure; SameSite=None
+set-cookie: x-pp-s=eyJ0IjoiMTc5MTYwODYyNjQ1MSIsImwiOiIwIiwibSI6IjEifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure; SameSite=None
+set-cookie: tsrce=mppnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 13 Oct 2026 05:03:46 GMT; HttpOnly; Secure; SameSite=None
+set-cookie: nsid=s%3AaPZPX6EW5T5PQp5f9KUa5PKP8OOvp03n.Do%2FgldXsrl5RI3QO7UfLI5vmp1zbSmXwhBdi38tqVEk; Path=/; HttpOnly; Secure; SameSite=None
+set-cookie: ts=vreXpYrS%3D1823144626%26vteXpYrS%3D1791610426%26vr%3D24321c161a1647e20c907d99ffaba736%26vt%3D24321c161a1647e20c907d99ffaba735%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sun, 10 Oct 2027 05:03:46 GMT; HttpOnly; Secure; SameSite=None
+set-cookie: ts_c=vr%3D24321c161a1647e20c907d99ffaba736%26vt%3D24321c161a1647e20c907d99ffaba735; Path=/; Domain=paypal.com; Expires=Sun, 10 Oct 2027 05:03:46 GMT; Secure; SameSite=None
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+vary: Accept-Encoding, Accept-Encoding
+accept-ch: sec-ch-ua-full, sec-ch-ua-arch, sec-ch-ua-model, sec-ch-ua-platform-version, sec-ch-ua-full-version, sec-ch-ua-full-version-list, sec-ch-ua-bitness, sec-ch-ua-wow64
+access-control-expose-headers: Server-Timing
+content-security-policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-QY6/WcUiIgWwc3XgMInkfFI8KUMLbeVmd/FuiG7QXnePLVVy' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://ad.doubleclick.net https://ade.googlesyndication.com https://adservice.google.com https://analytics.tiktok.com https://connect.facebook.net https://googleads.g.doubleclick.net https://googletagmanager.com https://pagead2.googlesyndication.com https://pypd.paypal-mktg.com https://snap.licdn.com https://tagmanager.google.com https://www.google.com https://www.googleadservices.com https://www.googletagmanager.com; img-src 'self' https: data: https://region1.analytics.google.com https://region1.google-analytics.com https://www.analytics.google.com https://www.google-analytics.com; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.company-target.com https://*.paypal.com https://*.paypalobjects.com https://www.googletagmanager.com https://www.youtube-nocookie.com https://*.qualtrics.com; frame-ancestors 'self' https://*.paypal.com; connect-src 'self' 'unsafe-inline' https://*.adsrvr.org https://*.company-target.com https://*.demandbase.com https://*.paypal.com https://*.paypalobjects.com https://ad.doubleclick.net https://ads.tiktok.com https://adservice.google.com https://analytics.tiktok.com https://browser-intake-us5-datadoghq.com https://connect.facebook.net https://dc.ads.linkedin.com https://google.com https://googleads.g.doubleclick.net https://p.adsymptotic.com https://pagead2.googlesyndication.com https://prod.uidapi.com https://px.ads.linkedin.com/wa https://px4.ads.linkedin.com https://region1.analytics.google.com https://region1.google-analytics.com https://snap.licdn.com https://www.analytics.google.com https://www.google-analytics.com https://www.google.com https://www.googleadservices.com https://www.googletagmanager.com www.facebook.com www.google.com www.googletagmanager.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; upgrade-insecure-requests;; report-uri https://www.paypal.com/csplog/api/log/csp
+dc: ccg11-origin-www-1.paypal.com
+origin-trial: AmF3SS0NWoXo3HaojgmIVVXavukRnZH597u+xZNXRCiKWzSKzfNPHw9NC32GmblY12+HXpkCEYeYGyvRBNkkJg0AAABbeyJvcmlnaW4iOiJodHRwczovL3BheXBhbC5jb206NDQzIiwiZmVhdHVyZSI6IlRwY2QiLCJleHBpcnkiOjE3MzUzNDM5OTksImlzU3ViZG9tYWluIjp0cnVlfQ==
+paypal-debug-id: ca483149979b6
+permissions-policy: ch-ua-platform-version=(self "https://c.paypal.com"),ch-ua-arch=(self "https://c.paypal.com"),ch-ua-wow64=(self "https://c.paypal.com"),ch-ua-model=(self "https://c.paypal.com"),ch-ua-bitness=(self "https://c.paypal.com"),ch-ua-full-version=(self "https://c.paypal.com"),ch-ua-full-version-list=(self "https://c.paypal.com")
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+server-timing: content-encoding;desc="",x-cdn;desc="cloudflare"
+timing-allow-origin: https://www.paypal.com,https://www.sandbox.paypal.com
+content-encoding: br
+

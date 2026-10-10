@@ -1,0 +1,442 @@
+                WFP Market Monitoring in Yemen
+I. Background
+
+Yemen's heavy dependence on food imports exposes it to external shocks, particularly
+fluctuations in the local currency and global food prices. With food expenses constituting
+a substantial portion of household budgets, Yemeni households rely heavily on market
+purchases for their sustenance. As a result, market-related factors play a crucial role in
+driving food insecurity among most of the population.
+
+To track economic and price trends in Yemeni markets, the World Food Programme (WFP)
+implemented a market monitoring system in 2009. This primary data is supplemented by
+secondary information from entities such as the Central Statistical Organization (CSO),
+Ministry of Planning and International Cooperation (MOPIC), and Ministry of Trade and
+Industry (MoTI) of Yemen. Additionally, international resources like the Food and
+Agriculture Organization (FAO) and Famine Early Warning Systems Network (FEWSNET)
+contribute to the comprehensive market analysis.
+
+II. Objectives
+
+The main objective of WFP's market monitoring is to enhance the understanding of
+market dynamics and functionality in Yemen to improve food security analysis and
+inform WFP’s programmatic decision-making process.
+
+III. Data
+
+WFP collects price data of essential food/non-food commodities, fuel, and exchange rates
+across Yemen, covering 276 districts, including 23 main-city markets. This data is
+instrumental in reporting price fluctuations in essential commodities, including the cost
+of the food basket. Normally collected through a third party, any data gaps are filled using
+key informants. Monthly aggregated prices and all the historical data archive is available
+on WFP’s data viz in a downloadable format.
+
+IV. Methodology
+
+WFP employs a systematic approach to monitor retail prices of food commodities and
+calculate the Minimum Food Basket (MFB) cost per person per month in Yemen. This
+involves monitoring essential food commodity prices in the main cities of all 22
+governorates. At least three retailers per city are surveyed to ensure data accuracy and
+mitigate outliers. Prices are then averaged by city. The MFB cost calculation uses specific
+weights for different commodities to reflect their importance in the diet. Exchange rates
+(buy rate) of Yemeni riyal (YER) against the US dollar (USD) are also monitored weekly
+and monthly in parallel markets in the main cities. Additionally, WFP tracks fuel prices,
+including petrol, diesel, and cooking fuel, obtained from fuel stations, community
+leaders, designated outlets, and the unofficial parallel market. If fuel prices are missing
+in the main cities, data collection extends to the district level of the same governorate to
+1
+ensure comprehensive coverage and accuracy. Price data collection instrument is
+annexed.
+
+V. Cleaning process
+
+WFP has developed corporate approaches and best practices for collecting, cleaning, and
+analyzing price data. Third-party monitors (TPMs) are trained in data collection and use
+standard price collection tools. Quality checks are applied to identify outliers and
+anomalies, and TPMs ensure data cleaning for consistency, quality, and coherence with
+standard prices. Any outliers, duplicates, or incorrect entries are flagged, corrected, or
+rejected before the data is synced with WFP's price monitoring database.
+
+
+
+
+2
+                                     ‫استمارة جمع بيانات االسعاراالسبوعية‬
+
+                                                   ‫‪Weekly Data collection List‬‬
+                                                                                                                                           ‫القسم ‪:1‬الباحث‪ /‬الباحثة‬
+                                                                                                                                           ‫اسم الباحث‪ /‬الباحثة‬
+                                                                                                                                                                    ‫‪1.1‬‬
+                                                                                                                                                ‫‪Name of Enum‬‬
+                                                                    ‫]____[]____[ ‪2023/ [____][____] /‬‬
+                                                                                                                    ‫‪Date of data collection‬‬   ‫‪ 1.2‬تاريخ جمع البيانات‬
+                                                                       ‫سنة‬        ‫شهر‬                ‫يوم‬
+                                                                                                                                               ‫القسم ‪ :2‬موقع السوق‬
+                                                                                                                           ‫‪Govern orate‬‬                  ‫املحافظه‬
+                                         ‫الرمز ]____[ ]____[‬                                                                                                        ‫‪2.1‬‬
+
+                                         ‫الرمز ]____[ ]____[‬                                                                                     ‫‪ 2.2‬املديريه ‪District‬‬
+
+                                                                                                                                     ‫‪ 2.3‬املدينه ‪ /‬القريه ‪City/Village‬‬
+
+                                         ‫]____[‬                   ‫‪ -2‬ريف ‪Rural‬‬       ‫‪-1‬حضر ‪Urban‬‬                            ‫‪ 2.4‬الحالة الحضرية ‪Location Status‬‬
+
+                                                                                                                               ‫‪ 2.5‬اسم السوق ‪Name of Market‬‬
+
+                                         ‫]____[‬                ‫‪ -2‬اسبوعي ‪weekly‬‬       ‫‪ -1‬يومي ‪daily‬‬                                  ‫‪ 2.6‬نوع السوق ‪Type of Market‬‬
+
+                                                               ‫القسم ‪ : 3‬أسعارسلع التجزئة ‪Retail price for Main Food Commodity‬‬
+            ‫)‪) H‬التو افر‬
+                                                      ‫السعر‬                                                          ‫السعر‪Price‬‬
+ ‫العالمة‬      ‫‪ =1‬متوفر‬
+             ‫‪ =2‬متوفر‬       ‫السعر‪Price‬‬    ‫‪ Price‬السعر‪Price‬‬       ‫السعر‪Price‬‬     ‫السعر‪Price‬‬        ‫السعر‪Price‬‬           ‫الوحدة‬
+‫التجارية‪/‬‬                                                                                                                                   ‫الصنف‬
+            ‫بشكل بسيط‬      ‫الوحدة ‪kg50‬‬   ‫الوحدة الوحدة ‪kg40‬‬     ‫الوحدة ‪kg20‬‬    ‫الوحدة ‪kg10‬‬        ‫الوحدة ‪kg5‬‬        ‫‪liter 1 /kg1‬‬                             ‫‪No‬‬
+ ‫‪Brand‬‬                                                                                                                                    ‫‪Commodity‬‬
+            ‫‪ =3‬غيرمتوفر‬         ‫)‪)G‬‬           ‫)‪)F‬‬     ‫‪kg25‬‬           ‫)‪)D‬‬            ‫)‪)C‬‬               ‫)‪(B‬‬          ‫‪/day1 /1 unit‬‬
+   ‫)‪)i‬‬      ‫‪=99‬لم يجمع‬
+                                                       ‫)‪)E‬‬                                                               ‫)‪(A‬‬
+                 ‫بيان‬
+                                                                                                                  ‫]__[]__[]__[]__[‬      ‫البرالحبوب ‪Wheat‬‬      ‫‪3.1‬‬
+                                                                                                                                      ‫الدقيق االبيض ‪Wheat‬‬
+                                                                                                                  ‫]__[]__[]__[]__[‬                            ‫‪3.2‬‬
+                                                                                                                                              ‫‪flour, white‬‬
+                                                                                                                                      ‫الدقيق االحمر ‪Wheat‬‬
+                                                                                                                  ‫]__[]__[]__[]__[‬                            ‫‪3.3‬‬
+                                                                                                                                             ‫‪flour, brown‬‬
+                                                                              ‫]__[]__[]__[]__[‬                    ‫]__[]__[]__[]__[‬          ‫السكر ‪Sugar‬‬       ‫‪3.4‬‬
+                                                                                                                                        ‫الزيت النباتي (الذرة)‬
+                                                                                                 ‫]__[]__[]__[]__[ ]__[]__[]__[]__[‬             ‫‪liter/1L-5L‬‬    ‫‪3.5‬‬
+                                                                                                                                         ‫‪)vegetable( Oil‬‬
+                                                                                                                                          ‫زيت النخيل ‪liter/‬‬
+                                                                                                 ‫]__[]__[]__[]__[ ]__[]__[]__[]__[‬                            ‫‪3.6‬‬
+                                                                                                                                      ‫)‪Oil (Palm oil‬‬
+                                                                                                                                      ‫زيت عباد الشمس ‪liter/‬‬
+                                                                                                 ‫]__[]__[]__[]__[ ]__[]__[]__[]__[‬                            ‫‪3.7‬‬
+                                                                                                                                           ‫‪Oil Sunflower‬‬
+                                                                                                                                             ‫االرز البسمتي‬
+                                                                                                 ‫]__[]__[]__[]__[ ]__[]__[]__[]__[‬                            ‫‪3.8‬‬
+                                                                                                                                          ‫‪)Basmati( Rice‬‬
+                                                                                                                                            ‫االرز التايلندي‬
+                                                                                                 ‫]__[]__[]__[]__[ ]__[]__[]__[]__[‬                            ‫‪3.9‬‬
+                                                                                                                                              ‫‪)Thai( Rice‬‬
+                                                                                                                                         ‫الفاصوليا الحمراء‬
+                                                                                                                  ‫]__[]__[]__[]__[‬    ‫‪ 3.10‬املستوردة ‪Red beans,‬‬
+                                                                                                                                               ‫‪imported,‬‬
+
+  ‫‪3‬‬
+                                                                   Retail price for Main Food Commodity ‫ أسعارسلع التجزئة‬: 3 ‫القسم‬
+            ‫ )التو افر‬H)
+                                                           ‫السعر‬                                                        Price‫السعر‬
+ ‫العالمة‬      ‫= متوفر‬1
+             ‫= متوفر‬2        Price‫السعر‬        Price‫ السعر‬Price      Price‫السعر‬        Price‫السعر‬    Price‫السعر‬           ‫الوحدة‬
+/‫التجارية‬                                                                                                                                      ‫الصنف‬
+            ‫بشكل بسيط‬       kg50 ‫الوحدة‬       kg40 ‫الوحدة الوحدة‬    kg20 ‫الوحدة‬       kg10 ‫الوحدة‬    kg5 ‫الوحدة‬        liter 1 /kg1                                  No
+ Brand                                                                                                                                       Commodity
+            ‫= غيرمتوفر‬3          )G)               )F)     kg25          )D)               )C)           (B)          /day1 /1 unit
+   )i)      ‫=لم يجمع‬99
+                                                            )E)                                                             (A)
+                 ‫بيان‬
+                                                                                                                                         ‫الفاصوليا البيضاء‬
+                                                                                                                     [__][__][__][__] White beans ‫ املستوردة‬3.11
+                                                                                                                                             imported
+                                 [__]                                                                                                 ‫العدس االحمر املستورد‬
+                                                                                                                     [__][__][__][__]                        3.12
+                           [__][__][__][__]                                                                                            Lentils red imported
+                                                                                                                                       ‫الدال االصفر املستورد‬
+                                                                                                                     [__][__][__][__]                        3.13
+                                                                                                                                        Yellow split peas imported
+                                                                                                                                                   ‫امللح‬
+                                                                                                                     [__][__][__][__]                                3.14
+                                                                                                                                         /500g- Salt (iodized)
+                                                                                                                                                 ‫البطاط‬
+                                                                                                                     [__][__][__][__]                                3.15
+                                                                                                                                                 Potato
+                                                                                                                                                ‫الطماطم‬
+                                                                                                                     [__][__][__][__]                                3.16
+                                                                                                                                                Tomato
+                                                                                                                                         Onion, ‫البصل االبيض‬
+                                                                                                                     [__][__][__][__]                                3.17
+                                                                                                                                                  white
+                                                                                                    [__][__][__][__] [__][__][__][__]            ‫البيض‬
+                                                                                                                                                                     3.18
+                                                                                                         30uint           1uint                   Eggs
+                                                                                                                                          Meat ‫اللحم البقري‬
+                                                                                                                     [__][__][__][__]                                3.19
+                                                                                                                                                 (beef)
+                                                                                                                                          Fish ( ‫السمك ا الثمد‬
+                                                                                                                     [__][__][__][__]                                3.20
+                                                                                                                                             thamad fresh)
+                                                                                                                                                 ‫الدجاج‬
+                                                                                                                     [__][__][__][__]                                3.21
+                                                                                                                                             Chicken, fresh
+                                                                                                                                          Milk ‫الحليب البودر‬
+                                                                                                                     [__][__][__][__]                                3.22
+                                                                                                                                        powder (check brands )
+                                                                                                                     [__][__][__][__]        Petrol ‫البترول‬          3.23
+                                                                                                                     [__][__][__][__]          Diesel ‫الديزل‬         3.24
+                                                                   [__][__][__][__]                                                              ‫الغاز الطبخ‬
+                                                                                                                                                                     3.25
+                                                                      Cylinder                                                                 Cooking gas
+                                                                                                                                        ‫البترول في السوق السوداء‬
+                                                                                                                     [__][__][__][__]                                3.26
+                                                                                                                                         Petrol parallel market
+                                                                                                                                        ‫الديزل في السوق السوداء‬
+                                                                                                                     [__][__][__][__]                                3.27
+                                                                                                                                         Diesel, parallel market
+                                                                                                                                          ‫الغاز الطبخ في السوق‬
+                                                                   [__][__][__][__]
+                                                                                                                                         Cooking gas, ‫السوداء‬        3.28
+                                                                      Cylinder
+                                                                                                                                              parallel market
+                                                                                                                     [__][__][__][__]     (commercial) ‫البترول‬
+                                                                                                                                                                     3.29
+                                                                                                                                               Petrol ‫تجاري‬
+                                                                                                                     [__][__][__][__]           ‫الديزل تجاري‬
+                                                                                                                                                                     3.30
+                                                                                                                                          Diesel commercial)(
+                                                                   [__][__][__][__]                                                         ‫الغاز الطبخ التجاري‬
+                                                                                                                                                                     3.31
+                                                                      Cylinder                                                          )services( Cooking gas
+                                                                                                                                          Male ‫الغنم عمر سنة‬
+                                                                                                                     [__][__][__][__]                                3.32
+                                                                                                                                             )one old( sheep
+                                                                                                                                         Male ‫الغنم عمر سنتين‬
+                                                                                                                     [__][__][__][__]                                3.33
+                                                                                                                                             )two old( sheep
+                                 [__]                                                                                                           ‫سعر الطحن‬
+                                                                                                                                                                     3.34
+                           [__][__][__][__]                                                                                                    Milling cost
+                                                                                                                                           ‫االجور العمالة املاهرة‬
+                                                                                                                     [__][__][__][__]     Wage rate for ‫للبناء‬       3.35
+                                                                                                                                          skilled labor (Build)
+                                                                                                                                            ‫االجور العمالة الغير‬
+                                                                                                                                        Wage rate ‫املاهرة للبناء‬
+                                                                                                                     [__][__][__][__]                                3.36
+                                                                                                                                            for unskilled labor
+                                                                                                                                                   (Build)
+
+
+  4
+                                                                    Retail price for Main Food Commodity ‫ أسعارسلع التجزئة‬: 3 ‫القسم‬
+             ‫ )التو افر‬H)
+                                                            ‫السعر‬                                                      Price‫السعر‬
+ ‫العالمة‬       ‫= متوفر‬1
+              ‫= متوفر‬2          Price‫السعر‬      Price‫ السعر‬Price      Price‫السعر‬     Price‫السعر‬    Price‫السعر‬            ‫الوحدة‬
+/‫التجارية‬                                                                                                                                     ‫الصنف‬
+             ‫بشكل بسيط‬         kg50 ‫الوحدة‬     kg40 ‫الوحدة الوحدة‬    kg20 ‫الوحدة‬    kg10 ‫الوحدة‬    kg5 ‫الوحدة‬         liter 1 /kg1                                  No
+ Brand                                                                                                                                      Commodity
+             ‫= غيرمتوفر‬3            )G)             )F)     kg25          )D)            )C)           (B)           /day1 /1 unit
+   )i)       ‫=لم يجمع‬99
+                                                             )E)                                                           (A)
+                  ‫بيان‬
+                                                                                                                                        ‫االجور العمالة في مجال‬
+                                                                                                                   [__][__][__][__]     Wage rate for ‫القات‬         3.37
+                                                                                                                                          skilled labor (qat)
+                                                                                                                                       Qat (type ‫سعر القات‬
+                                                                                                                   [__][__][__][__]         unit to be and
+                                                                                                                                                                    3.38
+                                                                                                                        ‫الربطة‬         determined at market
+                                                                                                                                        )level and next time
+                                                                                                                                             ‫صابون نسيم‬
+                                                                                                                   [__][__][__][__]                                 3.39
+                                                                                                                                        Nassim NFI (soap?)
+                                                                                                                                       )‫صابون بودر( كريستال‬
+                                                                                                                   [__][__][__][__]                                 3.40
+                                                                                                                                        Powder soap Crystal
+                                                                                                                                      0.75L ) ‫ماء الشرب (القارورة‬
+                                                                                                                   [__][__][__][__]                                 3.41
+                                                                                                                                         Drinking water, bottled
+                                                                                                                                        ‫ سعر‬truck Water
+                                                                                                                    __][__][__][__]                                 3.42
+                                                                                                                                             ‫الوايت املاء‬
+                                                                                                                                         $ ‫سعر الصرف الـ‬
+                                                                                                                   [__][__][__][__]     exchange rate of            3.43
+                                                                                                                                             unofficial
+                                                                                                                                          $ ‫سعر البيع الـ‬
+                                                                                                                     __][__][__][__     exchange rate of            3.44
+                                                                                                                                                selling
+                                                                                                                                      Green_Peas price_1kg
+                                                                                                                   [__][__][__][__]                                 3.45
+                                                                                                                                         ‫البازالء الخضراء‬
+                                                                                                                                      ‫ فول علب‬Beans (Cans)
+                                                                                                                   [__][__][__][__]                                 3.46
+                                                                                                                                               .400 Kg
+                                                                                                                   [__][__][__][__]           Electricity           3.47
+
+
+
+
+ In case the researcher noticed the                   :‫في حالة الحظ الباحث وجود مواد برنامج األغذية العاملي تباع بالسوق يتم تعبئة الجدول التالي‬
+ presence of WFP commodities sold in the market, the following table shall be filled
+                                                                                      WFP FOOD ASSISTANCE ‫ مواد برنامج األغذية‬:4 ‫القسم‬
+                ‫ )التو افر‬H)
+  ‫العالمة‬         ‫= متوفر‬1
+                 ‫= متوفر‬2         Price‫السعر‬        Price‫السعر‬    Price‫ السعر‬Price‫ السعر‬Price‫السعر‬      Price‫السعر‬         Price‫السعر‬
+ /‫التجارية‬                                                                                                                                      ‫الصنف‬
+                ‫بشكل بسيط‬        kg50 ‫الوحدة‬       kg40 ‫الوحدة‬   kg25 ‫ الوحدة‬kg20 ‫ الوحدة‬kg10 ‫الوحدة‬    kg5 ‫الوحدة‬         kg1 ‫الوحدة‬                               No
+  Brand                                                                                                                                       Commodity
+                ‫= غيرمتوفر‬3           )G)               )F)           )E)        )D)         )C)            (B)               (A)
+    )i)          ‫=لم يجمع‬4
+                     ‫بيان‬
+                                                                                                                                            ‫البر الحبوب‬
+                                      [__]
+                                                                                                                                            (food aid)              4.1
+                                [__][__][__][__]
+                                                                                                                                               Wheat
+                                                                                                                                           ‫الدقيق االبيض‬
+                                      [__]
+                                                                                                                                           Wheat (food              4.2
+                                [__][__][__][__]
+                                                                                                                                         flour, white aid)
+                                                                                                                                           ‫الدقيق االحمر‬
+                                      [__]                                                                                                 Wheat (food
+                                                                                                                                                                    4.3
+                                [__][__][__][__]                                                                                            flour, aid)
+                                                                                                                                               brown
+                                                                                                                                                ‫السكر‬
+                                                                                                                        [__][__][__][__]    Sugar (food             4.4
+                                                                                                                                                 aid)
+                                                                                                                                             ‫زيت النباتي‬
+                                                                                                       [__][__][__][__]                         liter/
+                                                                                                                                                                    4.5
+                                                                                                              4L                          Oil (vegetable)
+                                                                                                                                             (food aid)
+
+
+
+
+  5
+                                                                                           ‫القسم ‪ :4‬مواد برنامج األغذية ‪WFP FOOD ASSISTANCE‬‬
+            ‫)‪) H‬التو افر‬
+ ‫العالمة‬      ‫‪ =1‬متوفر‬
+             ‫‪ =2‬متوفر‬        ‫السعر‪Price‬‬         ‫السعر‪Price‬‬      ‫السعر‪ Price‬السعر‪ Price‬السعر‪Price‬‬                    ‫السعر‪Price‬‬          ‫السعر‪Price‬‬
+‫التجارية‪/‬‬                                                                                                                                                    ‫الصنف‬
+            ‫بشكل بسيط‬       ‫الوحدة ‪kg50‬‬        ‫الوحدة ‪kg40‬‬     ‫الوحدة ‪ kg10‬الوحدة ‪ kg20‬الوحدة ‪kg25‬‬                  ‫الوحدة ‪kg5‬‬          ‫الوحدة ‪kg1‬‬                            ‫‪No‬‬
+ ‫‪Brand‬‬                                                                                                                                                     ‫‪Commodity‬‬
+            ‫‪ =3‬غيرمتوفر‬          ‫)‪)G‬‬                ‫)‪)F‬‬             ‫)‪)E‬‬        ‫)‪)D‬‬         ‫)‪)C‬‬                          ‫)‪(B‬‬                ‫)‪(A‬‬
+   ‫)‪)i‬‬       ‫‪=4‬لم يجمع‬
+                 ‫بيان‬
+                                                                                                                                                          ‫)‪Rice (food aid‬‬
+                                                                                                                                       ‫]__[]__[]__[]__[‬      ‫‪Thai‬االرز (‬      ‫‪4.6‬‬
+                                                                                                                                                                ‫تيلندي‬
+                                                                                                                                                              ‫الفاصوليا‬
+                                                                                                                                                               ‫الحمراء‬
+                                                                                                                                                           ‫‪ Red‬املستوردة‬
+                                                                                                                                       ‫]__[]__[]__[]__[‬                       ‫‪4.7‬‬
+                                                                                                                                                                ‫‪beans,‬‬
+                                                                                                                                                          ‫‪imported, high‬‬
+                                                                                                                                                               ‫‪quality‬‬
+                                                                                                                                                              ‫الفاصوليا‬
+                                                                                                                                                               ‫البيضاء‬
+                                                                                                                                       ‫]__[]__[]__[]__[‬       ‫املستوردة‬       ‫‪4.8‬‬
+                                                                                                                                                            ‫‪White beans‬‬
+                                                                                                                                                             ‫‪imported‬‬
+                                                                                                                                                            ‫الدال االصفر‬
+                                                                                                                                                          ‫املستورد ‪Yellow‬‬
+                                                                                                                                       ‫]__[]__[]__[]__[‬                       ‫‪4.9‬‬
+                                                                                                                                                             ‫‪split peas‬‬
+                                                                                                                                                             ‫‪imported‬‬
+                                                                                                                                                           ‫العدس االحمر‬
+                                                                                                                                                              ‫املستورد‬
+                                                                                                                                       ‫]__[]__[]__[]__[‬                      ‫‪4.10‬‬
+                                                                                                                                                             ‫‪Lentils red‬‬
+                                                                                                                                                             ‫‪imported‬‬
+                                                                                                                                                            ‫‪Green Peas‬‬
+                                                                                                                                       ‫]__[]__[]__[]__[‬      ‫‪price_1kg‬‬       ‫‪4.11‬‬
+                                                                                                                                                          ‫البازالء الخضراء‬
+
+
+
+                                                                                                                        ‫القسم ‪ :5‬أسعارالجملة‬
+            ‫)‪)G‬التو افر‬                                                                                               ‫السعر‪Price‬‬
+   ‫‪ =1‬متوفر العالمة‬                                                                                                   ‫الوحدة ‪L 8‬‬
+                        ‫السعر‪Price‬‬             ‫السعر‪Price‬‬      ‫السعر‪Price‬‬         ‫السعر‪Price‬‬       ‫السعر‪Price‬‬                             ‫السعر‪Price‬‬
+  ‫‪ =2‬متوفر التجارية‪/‬‬                                                                                                                                        ‫الصنف‬
+            ‫الوحدة ‪ kg50‬بشكل بسيط‬             ‫الوحدة ‪kg40‬‬     ‫الوحدة ‪kg25‬‬        ‫الوحدة ‪kg20‬‬      ‫الوحدة ‪kg10‬‬                             ‫الوحدة ‪kg5‬‬                ‫‪No‬‬
+   ‫‪ =3‬غيرمتوفر ‪Brand‬‬                                                                                                                                      ‫‪Commodity‬‬
+                            ‫)‪)F‬‬                    ‫)‪)E‬‬             ‫)‪)D‬‬                ‫)‪)C‬‬              ‫)‪)B‬‬                                    ‫)‪(A‬‬
+     ‫)‪(H‬‬     ‫‪=4‬لم يجمع‬
+                 ‫بيان‬
+                                 ‫]__[‬                                                                                                                       ‫البر الحبوب‬
+                                                                                                                                                                        ‫‪5.1‬‬
+                           ‫]__[]__[]__[]__[‬                                                                                                                  ‫‪Wheat‬‬
+                                                                                                                                                             ‫الدقيق‬
+                                 ‫]__[‬                                                                                                                        ‫االبيض‬
+                                                             ‫]__[]__[]__[]__[‬                                                                                           ‫‪5.2‬‬
+                           ‫]__[]__[]__[]__[‬                                                                                                               ‫‪flour, Wheat‬‬
+                                                                                                                                                              ‫‪white‬‬
+                                                                                                                                                          ‫الدقيق االحمر‬
+                                 ‫]__[‬
+                                                             ‫]__[]__[]__[]__[‬                                                                                ‫‪Wheat‬‬      ‫‪5.3‬‬
+                           ‫]__[]__[]__[]__[‬
+                                                                                                                                                          ‫‪flour, brown‬‬
+                                 ‫]__[‬
+                                                                                                 ‫]__[]__[]__[]__[‬                       ‫‪ 5.4‬السكر ‪[__][__][__][__] Sugar‬‬
+                           ‫]__[]__[]__[]__[‬
+                                                                                                                     ‫]__[]__[]__[]__‬                       ‫زيت النخيل‬
+                                                                                                                                                              ‫‪liter/‬‬
+                                                                                ‫]__[]__[]__[]__[ ]__[]__[]__[]__[‬                                                     ‫‪5.5‬‬
+                                                                                                                                                           ‫‪Oil (Palm‬‬
+                                                                                                                                                               ‫‪)oil‬‬
+                                                                                                                                                            ‫زيت عباد‬
+                                                                                                                                                         ‫الشمس ‪liter/‬‬
+                                                                                                                                        ‫]__[]__[]__[]__[‬              ‫‪.56‬‬
+                                                                                                                                                                ‫‪Oil‬‬
+                                                                                                                                                           ‫‪Sunflower‬‬
+
+ ‫‪6‬‬
+                                                                                                    ‫القسم ‪ :5‬أسعارالجملة‬
+          ‫)‪)G‬التو افر‬                                                                              ‫السعر‪Price‬‬
+ ‫‪ =1‬متوفر العالمة‬                                                                                  ‫الوحدة ‪L 8‬‬
+                      ‫السعر‪Price‬‬        ‫السعر‪Price‬‬        ‫السعر‪Price‬‬    ‫السعر‪Price‬‬    ‫السعر‪Price‬‬                ‫السعر‪Price‬‬
+‫‪ =2‬متوفر التجارية‪/‬‬                                                                                                             ‫الصنف‬
+          ‫الوحدة ‪ kg50‬بشكل بسيط‬        ‫الوحدة ‪kg40‬‬       ‫الوحدة ‪kg25‬‬   ‫الوحدة ‪kg20‬‬   ‫الوحدة ‪kg10‬‬                ‫الوحدة ‪kg5‬‬             ‫‪No‬‬
+ ‫‪ =3‬غيرمتوفر ‪Brand‬‬                                                                                                           ‫‪Commodity‬‬
+                          ‫)‪)F‬‬               ‫)‪)E‬‬               ‫)‪)D‬‬           ‫)‪)C‬‬           ‫)‪)B‬‬                       ‫)‪(A‬‬
+   ‫)‪(H‬‬     ‫‪=4‬لم يجمع‬
+            ‫بيان‬
+                                                                                                                             ‫االرز البسمتي‬
+                                            ‫]__[‬
+                                                                                                                                   ‫‪Rice‬‬       ‫‪5.7‬‬
+                                      ‫]__[]__[]__[]__[‬
+                                                                                                                               ‫(‪)Basmati‬‬
+                                            ‫]__[‬                                                                             ‫االرز التايلندي‬
+                                                                                                                                              ‫‪.58‬‬
+                                      ‫]__[]__[]__[]__[‬                                                                        ‫‪)Thai( Rice‬‬
+                                                                                                                                ‫الفاصوليا‬
+                                                                                                                                  ‫الحمراء‬
+                         ‫]__[‬
+                                                                                                                                ‫املستوردة‬     ‫‪5.9‬‬
+                   ‫]__[]__[]__[]__[‬
+                                                                                                                               ‫‪Red beans,‬‬
+                                                                                                                               ‫‪imported,‬‬
+                                                                                                                                ‫الفاصوليا‬
+                                                                                                                                 ‫البيضاء‬
+                         ‫]__[‬
+                                                                                                                                ‫‪ 5.10‬املستوردة‬
+                   ‫]__[]__[]__[]__[‬
+                                                                                                                             ‫‪White beans‬‬
+                                                                                                                                ‫‪imported‬‬
+                                                                                                                             ‫العدس االحمر‬
+                         ‫]__[‬                                                                                                    ‫املستورد‬
+                                                                                                                                             ‫‪5.11‬‬
+                   ‫]__[]__[]__[]__[‬                                                                                            ‫‪Lentils red‬‬
+                                                                                                                                ‫‪imported‬‬
+                                                                                                                             ‫الدال االصفر‬
+                                                                                                                                 ‫املستورد‬
+                         ‫]__[‬
+                                                                                                                              ‫‪Yellow split 5.12‬‬
+                   ‫]__[]__[]__[]__[‬
+                                                                                                                                   ‫‪peas‬‬
+                                                                                                                                ‫‪imported‬‬
+                                                                                                                             ‫‪Green_Peas‬‬
+                         ‫]__[‬                                                                                                  ‫‪price_1kg‬‬
+                                                                                                                                             ‫‪5.13‬‬
+                   ‫]__[]__[]__[]__[‬                                                                                               ‫البازالء‬
+                                                                                                                                 ‫الخضراء‬
+
+
+
+
+‫‪7‬‬
+

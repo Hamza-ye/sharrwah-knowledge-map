@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://al-ain.com/article/electronic-payment-systems-houthi-money-laundering",
+ "dir": "items/011-al-ain.com",
+ "fetched_at": "2026-10-10T05:03:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://al-ain.com/article/electronic-payment-systems-houthi-money-laundering",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 16966,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:41"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "096f175efddf179b44d2fc41746175872128dd4b85cf5d6fea18e22112d41e79",
+ "raw_ext": "html"
+}

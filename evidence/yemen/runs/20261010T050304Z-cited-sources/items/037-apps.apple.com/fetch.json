@@ -1,0 +1,22 @@
+{
+ "n": 37,
+ "url": "https://apps.apple.com/us/app/id1661455867",
+ "dir": "items/037-apps.apple.com",
+ "fetched_at": "2026-10-10T05:03:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://apps.apple.com/us/app/one-cash-digital-wallet/id1661455867",
+ "content_type": "text/html",
+ "bytes": 69848,
+ "cited_in": [
+  "yemen-setup-options/report.md:68",
+  "yemen-setup-options/notes/wallets_emoney.md:108",
+  "yemen-setup-options/notes/wallets_emoney.md:132",
+  "yemen-setup-options/notes/wallets_emoney.md:219",
+  "yemen-setup-options/notes/wallets_emoney.md:435"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cd9e5bd89d99992eb2cb084a6ce1e69b226684b589bd0e016cb8005411ce1c98",
+ "raw_ext": "html"
+}

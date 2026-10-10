@@ -1,0 +1,18 @@
+{
+ "n": 206,
+ "url": "https://www.bain.com/contentassets/2b078686303045ffa1d1207130ab5d79/bain_report__ecommerce_in_mena.pdf",
+ "dir": "items/206-bain.com",
+ "fetched_at": "2026-10-10T05:03:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bain.com/contentassets/2b078686303045ffa1d1207130ab5d79/bain_report__ecommerce_in_mena.pdf",
+ "content_type": "application/pdf",
+ "bytes": 1948237,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:112"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "d136c46de2b968071c3792210613fe68b37e95c5cf5fcee9dbb637255e037bdc",
+ "raw_ext": "pdf"
+}

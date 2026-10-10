@@ -1,0 +1,33 @@
+{
+ "n": 196,
+ "url": "https://www.alarabiya.net/aswaq/2024/05/30/-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A-%D9%8A%D9%88%D9%82%D9%81-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D9%85%D8%B9-%D8%A8%D9%86%D9%88%D9%83-%D9%84%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA%D9%87%D8%A7-%D8%A8%D9%80-%D8%AC%D9%85%D8%A7%D8%B9%D8%A9-%D8%A7%D8%B1%D9%87%D8%A7%D8%A8%D9%8A%D8%A9-",
+ "rendered_at": "2026-10-10T05:10:30Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 403,
+ "final_url": "https://www.alarabiya.net/aswaq/2024/05/30/-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A-%D9%8A%D9%88%D9%82%D9%81-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D9%85%D8%B9-%D8%A8%D9%86%D9%88%D9%83-%D9%84%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA%D9%87%D8%A7-%D8%A8%D9%80-%D8%AC%D9%85%D8%A7%D8%B9%D8%A9-%D8%A7%D8%B1%D9%87%D8%A7%D8%A8%D9%8A%D8%A9-",
+ "title": "لحظة…",
+ "text_chars": 336,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "7f23cda6280aa3f93d22decd678ed7c869305ea8cd0221023aa6839a651d60b4",
+ "browser_headers": {
+  "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+  "alt-svc": "h3=\":443\"; ma=86400",
+  "cf-mitigated": "challenge",
+  "cf-ray": "a4831e79cca59c54-IAD",
+  "content-encoding": "br",
+  "content-type": "text/html; charset=UTF-8",
+  "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+  "cross-origin-embedder-policy": "require-corp",
+  "cross-origin-opener-policy": "same-origin",
+  "cross-origin-resource-policy": "same-origin",
+  "date": "Sat, 10 Oct 2026 05:10:30 GMT",
+  "origin-agent-cluster": "?1",
+  "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+  "referrer-policy": "same-origin",
+  "server": "cloudflare",
+  "server-timing": "chlray;desc=\"a4831e79cca59c54\"",
+  "vary": "accept-encoding",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "SAMEORIGIN"
+ }
+}

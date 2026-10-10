@@ -1,0 +1,18 @@
+{
+ "n": 177,
+ "url": "https://tax.gov.ye/7-2020/",
+ "dir": "items/177-tax.gov.ye",
+ "fetched_at": "2026-10-10T05:03:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://tax.gov.ye/7-2020/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 39233,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:546"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "449148010387aaec4ac45ec05dee9b2e5f45316cab458df6c98ae59c5a0c8f3c",
+ "raw_ext": "html"
+}

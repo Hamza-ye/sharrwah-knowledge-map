@@ -1,0 +1,18 @@
+{
+ "n": 190,
+ "url": "https://woocommerce.com/feature-request/we-need-paymen-in-yemen-we-have-a-huge-market-of-e-commerce-here-and-we-need-this-feature/",
+ "dir": "items/190-woocommerce.com",
+ "fetched_at": "2026-10-10T05:03:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/feature-request/we-need-paymen-in-yemen-we-have-a-huge-market-of-e-commerce-here-and-we-need-this-feature/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 37217,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:59"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "390b19b2b0f4aa81948963e4eefd9f1ff60bc72faca4b1cde431abe4059ebbcd",
+ "raw_ext": "html"
+}

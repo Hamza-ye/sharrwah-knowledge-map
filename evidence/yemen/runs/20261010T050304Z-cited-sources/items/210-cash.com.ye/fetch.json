@@ -1,0 +1,19 @@
+{
+ "n": 210,
+ "url": "https://www.cash.com.ye/en/about-us",
+ "dir": "items/210-cash.com.ye",
+ "fetched_at": "2026-10-10T05:03:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.cash.com.ye/en/about-us",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 12169,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:92",
+  "yemen-setup-options/notes/wallets_emoney.md:93"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "fea8326bb07e190a6fe115530b0c5e9197eb4a57a395acf71d8bd5baf8182a03",
+ "raw_ext": "html"
+}
