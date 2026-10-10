@@ -33,7 +33,7 @@ Questions agreed with the founder, the evidence captured to answer them, and der
 - **Not inputs to Q1.** The payments study, the Yemen setup options, the register and the model page were written before the three questions, and Q1 doesn't use them. The Q2 and Q3 files say which of them those questions may use, and how.
 - **Shopify study.** File paths such as `help/manual/...` are Help Center URL paths. The same pages are captured in observed-sh runs `20260930T003703Z-help-en-md` and `20260930T003705Z-shopify-dev-md`.
 - **Yemen sources were captured on 10 October 2026, from outside Yemen.** `evidence/yemen/` holds the copies. Some Sana'a-side sites can only be reached from inside Yemen.
-- **Sources dated before 2023 are historical.** They can show what a document said, but not 2025–2026 status.
+- **Dates.** Every source keeps its date. On 10 October 2026 the founder removed the rule that sources dated before 2023 are historical, because an older source can still be a legitimate one. Files written before then, including `evidence/yemen/`, still describe the old rule.
 - **Yemen coverage is uneven.**
   - It holds no official source from the Sana'a side; facts about that zone come from secondary sources.
   - Provider facts come from community client code, operator pages and app listings, not from providers' merchant documentation.

@@ -1,8 +1,8 @@
 # Shopify engineering evidence
 
-Copies of the engineering sources on how Shopify built payments in relation to the rest of its platform. They cover architecture talks, engineering blog posts, developer docs on the payments contract, and three open-source repositories. The rules in `evidence/yemen/README.md` apply here too: runs are never edited, each run states where it was fetched from, and sources dated before 2023 are historical.
+Copies of the engineering sources on how Shopify built payments in relation to the rest of its platform. They cover architecture talks, engineering blog posts, developer docs on the payments contract, and three open-source repositories. Runs are never edited, and each run states where it was fetched from.
 
-That date rule matters most here. The detailed write-ups of Shopify's internal payment architecture date from 2019–2022. They show how Shopify was built then. The 2023–2026 sources cover adjacent topics: the PCI DSS v4 checkout, inventory reservations, the Universal Commerce Protocol, the Packwerk retrospective, and the current provider contract.
+**Dates.** The detailed write-ups of Shopify's internal payment architecture date from 2019–2022. The 2023–2026 sources cover adjacent topics: the PCI DSS v4 checkout, inventory reservations, the Universal Commerce Protocol, the Packwerk retrospective, and the current provider contract.
 
 | Folder | What it holds |
 | --- | --- |

@@ -54,7 +54,7 @@ def age(year):
     y = int(year)
     if y >= 2025: return "2025-2026"
     if y >= 2023: return "2023-2024"
-    return "before-2023 (historical)"
+    return "before-2023"
 
 seen, rows = {}, []
 for n in sorted(p1):

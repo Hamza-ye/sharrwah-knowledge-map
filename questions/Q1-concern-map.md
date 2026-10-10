@@ -2,7 +2,7 @@
 
 **Status:** running since 10 October 2026. Q2 and Q3 work against this map, so they wait for it.
 
-The founder and the coordinating Claude Code session agreed this question on 10 October 2026. The founder accepted the text below and added the notes under "Settled before the run".
+The founder and the coordinating Claude Code session agreed this question on 10 October 2026. The founder accepted the text below and added the notes under "Settled before the run". One rule was removed afterwards; that section records it.
 
 ## The question, as agreed
 
@@ -29,7 +29,7 @@ The founder and the coordinating Claude Code session agreed this question on 10 
 > - currency and tax.
 >
 > **Rules:**
-> - **Shown or "not shown".** Every placement is either shown, with a citation to the platform's own source and its date, or written as "not shown". Inference is labelled as such and never counts as the platform's placement. Sources dated before 2023 are historical.
+> - **Shown or "not shown".** Every placement is either shown, with a citation to the platform's own source and its date, or written as "not shown". Inference is labelled as such and never counts as the platform's placement.
 > - **Derived documents only point.** Anything agents produced in this project may be used to find sources, never cited as a source.
 > - **Not used as input:** Sharrwah's registers, studies, model page, frame, decision log, the old orientation documents, or the founder's words.
 > - **No choosing.** Where platforms differ, record each. Don't choose, and write nothing about what Sharrwah should do.
@@ -42,6 +42,7 @@ The founder and the coordinating Claude Code session agreed this question on 10 
 
 ## Settled before the run
 
+- **No age rule.** On 10 October 2026, as the run started, the founder removed the rule "Sources dated before 2023 are historical": an older source can still be a legitimate one. The agents were told at once. Each source's date is still recorded.
 - **The third platform is WooCommerce.** WooCommerce itself holds no money. Woo's own payments extension, WooPayments, runs on Stripe; it is placed as an extension, not as part of WooCommerce.
 - **Open-source commerce frameworks are not references here.** Saleor, Medusa, Vendure and similar may come in later as references for how to build. They are never evidence of established product behaviour.
 - **No register rows are used.** Q3 places the rows later. Agents wrote them from an earlier, smaller evidence base, as gaps they perceived at the time. They are not Sharrwah's requirements, and their citations are not trusted.
@@ -72,7 +73,7 @@ The founder and the coordinating Claude Code session agreed this question on 10 
 ## Working rules
 
 - **Inventory level.** Take each list at the level the platform itself organizes it. An entry is an item the list names: a scope, a webhook topic, a settings page, a plan feature line, an agreement, a group in the API reference's navigation. Don't expand schemas type by type.
-- **Dates.** A source counts by the date it shows: published, last updated, effective, or released. An undated live page counts as current on the day it was read. A placement shown only by sources dated before 2023 is marked historical.
+- **Dates.** Record the date each source shows: published, last updated, effective, or released. An undated live page is recorded with the day it was read. A date alone doesn't discount a source.
 - **Quotes are verbatim.** They are copied from the text actually fetched: a `.md` endpoint, a raw file or a rendered page (`method/capture/page_text.mjs`). A summary returned by a fetching tool is not the page. Search results only find pages.
 - **Where sources disagree,** record each with its citation. Don't resolve it.
 - **Values outside the lists.** When a placement fits none of the listed values, write `other:` followed by the source's own words.
@@ -85,7 +86,7 @@ Each agent writes six files: `inventory.tsv`, `concerns.tsv`, `placements.tsv`, 
 | --- | --- |
 | `inventory.tsv` | `inv_id` · `list` (api-resources, access-scopes, webhook-topics, settings, admin-navigation, plan-features, legal-agreements, extension-points, or `other:<name>`) · `entry` (the platform's own name, verbatim) · `cite_id` (where the list shows it) · `concern_ids` · `out_of_scope_reason` (required when `concern_ids` is empty) |
 | `concerns.tsv` | `concern_id` · `concern` (in the platform's own terms where it has them) · `platform_terms` (its own words naming it, verbatim) · `inv_ids` · `split_note` (what was split from what, and why) |
-| `placements.tsv` | `concern_id` · `placement` (software, decides, legal, boundary, reason) · `value` · `status` (shown, historical, not shown) · `cite_ids` · `note` (any inference starts with "Inference:" and never counts) |
+| `placements.tsv` | `concern_id` · `placement` (software, decides, legal, boundary, reason) · `value` · `status` (shown or not shown) · `cite_ids` · `note` (any inference starts with "Inference:" and never counts) |
 | `citations.tsv` | `cite_id` · `source` (a URL, or a local path written as `observed-sh@b46731d0:<path>`, `observed-sa@145f137:<path>`, `woocommerce-11.2.1:<path>` or `sharrwah-knowledge-map:<path>`) · `locator` (the heading, anchor or line) · `quote` (verbatim, at most about 300 characters, no ellipses) · `source_date` · `date_basis` · `accessed` · `access_path` (md, raw, rendered or local) |
 | `not-reached.tsv` | `url` · `status` · `needed_for` · `what_to_look_for` |
 | `notes.md` | The lists used and their sizes; where the inventory stops; what couldn't be shown; problems with method. Nothing about what Sharrwah should do. |

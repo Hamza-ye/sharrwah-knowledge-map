@@ -38,7 +38,7 @@ This question was agreed with the founder on 10 October 2026, together with Q1. 
 - founder attestations made with `evidence/yemen/attestations/TEMPLATE.md`;
 - the Q1 map.
 
-The age rule holds: sources dated before 2023 are historical.
+Each source's date is recorded. The founder removed the rule "Sources dated before 2023 are historical" on 10 October 2026: an older source can still be a legitimate one.
 
 **Use only to find sources; never cite:**
 - `yemen-setup-options/`;
