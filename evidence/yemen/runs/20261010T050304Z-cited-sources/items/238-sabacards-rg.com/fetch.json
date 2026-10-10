@@ -1,0 +1,19 @@
+{
+ "n": 238,
+ "url": "https://www.sabacards-rg.com/en/",
+ "dir": "items/238-sabacards-rg.com",
+ "fetched_at": "2026-10-10T05:03:46Z",
+ "curl_exit": 60,
+ "curl_error": "curl: (60) SSL certificate problem: self-signed certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish ",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:245",
+  "yemen-setup-options/notes/banks_exchange_cards.md:273"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

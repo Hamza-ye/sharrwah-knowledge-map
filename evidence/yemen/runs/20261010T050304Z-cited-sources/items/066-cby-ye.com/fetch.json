@@ -1,0 +1,18 @@
+{
+ "n": 66,
+ "url": "https://cby-ye.com/pages/28",
+ "dir": "items/066-cby-ye.com",
+ "fetched_at": "2026-10-10T05:03:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://cby-ye.com/pages/28",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 8837,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:183"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7ac285c3ae6f544989215e95383f23ba041426349e339f4aec7ae5f5537f572b",
+ "raw_ext": "html"
+}

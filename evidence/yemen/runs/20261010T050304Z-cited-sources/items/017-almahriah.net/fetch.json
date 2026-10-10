@@ -1,0 +1,20 @@
+{
+ "n": 17,
+ "url": "https://almahriah.net/reports/52752",
+ "dir": "items/017-almahriah.net",
+ "fetched_at": "2026-10-10T05:03:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://almahriah.net/reports/52752",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 22028,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:111",
+  "yemen-setup-options/notes/cash_logistics_practice.md:146",
+  "yemen-setup-options/notes/cash_logistics_practice.md:241"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a7fa6f78c9bf4a245fc1318b266fa48eecfc804eb1a0ba438f6dfd724f5f1387",
+ "raw_ext": "html"
+}

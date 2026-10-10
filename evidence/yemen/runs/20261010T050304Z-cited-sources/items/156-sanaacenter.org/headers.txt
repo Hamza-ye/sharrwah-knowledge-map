@@ -1,0 +1,45 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 05:03:26 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+expires: Sat, 10 Oct 2026 06:03:26 GMT
+cache-control: max-age=3600
+x-redirect-by: redirection
+x-frame-options: SAMEORIGIN
+permissions-policy: geolocation=(), microphone=(), camera=(), fullscreen=(self "https://www.youtube.com"), payment=()
+vary: X-Forwarded-Proto
+location: /publications/perspectives-and-analyses/12004
+referrer-policy: no-referrer-when-downgrade
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UtjV92hQDohKIdPshy1cSeAu%2B%2FeqEnN7gYVhYMKrMSpnd1hqrOxqbsvy3lITn72rO3d%2FRCEsR%2BCHNbu7XIWp8fpgEUzRV5XziygNh1AvZkhiRmoV%2Ff%2BPmdyWKS2eH1Xh1oU%3D"}]}
+cf-ray: a483141a8edad667-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:26 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+expires: Sat, 10 Oct 2026 06:03:26 GMT
+pragma: public
+cache-control: max-age=3600, public
+x-frame-options: SAMEORIGIN
+permissions-policy: geolocation=(), microphone=(), camera=(), fullscreen=(self "https://www.youtube.com"), payment=()
+vary: X-Forwarded-Proto
+last-modified: Sat, 10 Oct 2026 05:03:26 GMT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TGG1Xvc%2BBl%2BlGXWtHFx%2Fn6XymXYOGq8w8ozdt5kBJTBVds2NKRjkxb49RIKHofSUmryHXqXBGiOvm3MmBKw6mAXqu5ORPTU1F3wfZi7gI0U2RiknS8kiyMy%2BGZD6vzQ8A1s%3D"}]}
+referrer-policy: no-referrer-when-downgrade
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+speculation-rules: "/cdn-cgi/speculation"
+content-encoding: zstd
+cf-ray: a483141caa09d667-IAD
+alt-svc: h3=":443"; ma=86400
+

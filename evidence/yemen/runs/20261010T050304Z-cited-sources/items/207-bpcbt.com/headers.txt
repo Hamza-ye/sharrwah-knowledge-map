@@ -1,0 +1,30 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:40 GMT
+content-type: text/html; charset=UTF-8
+set-cookie: __cf_bm=Op6uWOVn.Tn4IHEDdyC61fFcwrOQIAwROAF0onlvVwE-1791608619.9533296-1.0.1.1-ZwMe.A4YTOvGhtqPNycw0vXDx83fZJuk8RchkdqIg_EnZiwi7p3dBsjJ5_Zhy2XpdfHa6I4tNpH25in_blTA2bDTc_k8VmgLrWa8yRl4RNBtzhebKRX9jjeD3LpARspn; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.bpcbt.com; Expires=Sat, 10 Oct 2026 05:33:40 GMT
+set-cookie: _cfuvid=r8rTR77k8_rGi4ZffmzLV6Mo2FQ9FRzciuu.gTq3ouc-1791608619.9533296-1.0.1.1-9HyvHRjkPwSagmSLliDH4XDpLPJKzI.2UmtwMtu3XmM; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.bpcbt.com
+cache-control: s-maxage=36000, max-age=5
+last-modified: Wed, 30 Sep 2026 14:28:08 GMT
+link: </hs/hsstatic/jquery-libs/static-1.1/jquery/jquery-1.7.1.js>; rel=preload; as=script,<https://www.bpcbt.com/hubfs/hub_generated/template_assets/1/55661594702/1789458261319/template_main.min.css>; rel=preload; as=style,<https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css>; rel=preload; as=style,<https://www.bpcbt.com/hubfs/hub_generated/template_assets/1/67469398811/1789458242386/template_bpc22_style.min.css>; rel=preload; as=style,<https://www.bpcbt.com/hubfs/hub_generated/module_assets/1/141691576737/1741324860815/module_Header_03.min.css>; rel=preload; as=style,<https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-2712622/1790776701671/module_search_input.min.css>; rel=preload; as=style
+strict-transport-security: max-age=31536000
+content-security-policy: upgrade-insecure-requests
+edge-cache-tag: CT-47930585231,CG-6845371,P-6845371,W-160163730890370,CW-141691576737,CW-55661584056,CW-55661585566,CW-55661594950,CW-55666327107,CW-55666573188,E-125568275829,E-144661786130,E-55661594702,E-55661617812,E-55662187295,E-55662187610,E-55662191879,E-55666740256,E-67469398811,E-67472817777,E-67480212567,PGS-ALL,SW-2,B-25209903152,GC-141691451766,GC-144715938718,GC-56070338458,GC-67839177589,TS-67476161098
+referrer-policy: no-referrer-when-downgrade
+x-hs-cf-cache-status: HIT
+x-hs-cache-config: BrowserCache-5s-EdgeCache-180s
+x-hs-cache-control: s-maxage=36000, max-age=0
+x-hs-content-id: 47930585231
+x-hs-hub-id: 6845371
+x-hs-prerendered: Wed, 30 Sep 2026 14:28:08 GMT
+x-hs-cfworker-meta: {"contentType":"LANDING_PAGE","resolver":"PreRenderedContentResolver"}
+x-hs-portal-id: 6845371
+vary: accept-encoding
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Db2r4026kOr5kBLru6V7HNB%2Fq3j5RBXkTZQQTNOVaH16drGH7tOgE48s2ntRxap58Q%2BOSiy%2BvzOsgVlX7hft5GgEliodqlxXEtGjrp3XBEiP6Hp7jAiHf9kOw9HR7Ck%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+content-encoding: br
+server: cloudflare
+cf-ray: a4831472bde8c96b-IAD
+alt-svc: h3=":443"; ma=86400
+

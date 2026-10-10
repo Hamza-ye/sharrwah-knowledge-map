@@ -1,0 +1,30 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 410 
+date: Sat, 10 Oct 2026 05:03:53 GMT
+content-type: text/html; charset=utf-8
+content-length: 277608
+server: nginx
+x-powered-by: Next.js
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+set-cookie: NEXT_LOCALE=ar; Path=/; Expires=Sun, 10 Oct 2027 05:03:53 GMT; Max-Age=31536000; Domain=.opensooq.com; SameSite=lax
+set-cookie: ecountry=ye; Path=/; Expires=Sun, 10 Oct 2027 05:03:53 GMT; Max-Age=31536000; Domain=.opensooq.com; SameSite=lax
+set-cookie: source=desktop; Path=/; Expires=Sun, 10 Oct 2027 05:03:53 GMT; Max-Age=31536000; Domain=.opensooq.com; SameSite=lax
+set-cookie: NEXT_LOCALE=ar; Max-Age=31536000; Domain=.opensooq.com; Path=/; Expires=Sun, 10 Oct 2027 05:03:53 GMT; SameSite=Lax
+set-cookie: ecountry=ye; Max-Age=31536000; Domain=.opensooq.com; Path=/; Expires=Sun, 10 Oct 2027 05:03:53 GMT; SameSite=Lax
+set-cookie: source=desktop; Max-Age=31536000; Domain=.opensooq.com; Path=/; Expires=Sun, 10 Oct 2027 05:03:53 GMT; SameSite=Lax
+set-cookie: NEXT_LOCALE=ar; Domain=.opensooq.com; Path=/
+set-cookie: source=desktop; Domain=.opensooq.com; Path=/
+set-cookie: ecountry=ye; Domain=.opensooq.com; Path=/
+set-cookie: default_currency=YER; Domain=.opensooq.com; Path=/
+set-cookie: device_uuid=f99dc320-7348-474f-b847-8f4aa1d0ef0e; Domain=.opensooq.com; Path=/
+set-cookie: session=%7B%22id%22%3A%22f99dc3207348-474f9d24b643-4113-487a-822e-3e0781b4e73f%22%2C%22startedAt%22%3A1791608633437%7D; Domain=.opensooq.com; Path=/
+vary: User-Agent, Accept-Encoding
+x-current-path: /ar/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%86%D9%82%D9%84-%D9%88-%D8%B4%D8%AD%D9%86
+x-request-uri: http://ye.opensooq.com/ar/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%86%D9%82%D9%84-%D9%88-%D8%B4%D8%AD%D9%86
+cache-control: private, no-cache
+etag: "21fo8k4sye4gsh"
+access-control-allow-headers: abBucket
+

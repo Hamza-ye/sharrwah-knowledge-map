@@ -1,0 +1,139 @@
+Packagist
+The PHP Package Repository
+Browse
+About Packagist.org
+Submit
+Create account
+Sign in
+aymanalhattami/yemeni-payment-gateways
+
+Floosak, Jaib, Jawali, Cash, One Cash, Saba Cash
+
+This package's canonical repository appears to be gone and the package has been frozen as a result. Email us for help if needed.
+
+Package info
+
+github.com/aymanalhattami/yemeni-payment-gateways
+
+pkg:composer/aymanalhattami/yemeni-payment-gateways
+
+Security
+
+Advisories: 0
+
+Aikido package health analysis
+
+Transparency log
+
+Statistics
+
+Installs: 459
+
+Dependents: 0
+
+Suggesters: 0
+
+Stars: 1
+
+Open Issues: 0
+
+1.0.0
+2024-08-12 10:10 UTC
+
+requires
+
+php: ^8.0
+aymanalhattami/toolbox: dev-main
+illuminate/support: ^10.0|^11.0
+
+requires (dev)
+
+orchestra/testbench: ^9.0
+phpunit/phpunit: ^11.0
+
+suggests
+
+None
+
+provides
+
+None
+
+conflicts
+
+None
+
+replaces
+
+None
+
+ MIT  c45934794371770e9cca9e3b1dca27181578780a
+
+ Ayman Alhattami <ayman.m.alhattami@gmail.com>
+
+ aymanalhattamiyemeni-payment-gateways
+
+ Published on Packagist.org on 2024-08-12 10:10 UTC
+
+dev-main
+1.0.0
+0.0.1
+
+This package is auto-updated.
+
+Last update: 2024-12-01 10:22:20 UTC
+
+README
+
+  
+
+This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+
+Installation
+
+You can install the package via composer:
+
+composer require aymanalhattami/yemeni-payment-gateways
+Usage
+// Usage description here
+Testing
+composer test
+Changelog
+
+Please see CHANGELOG for more information what has changed recently.
+
+Contributing
+
+Please see CONTRIBUTING for details.
+
+Security
+
+If you discover any security related issues, please email ayman.m.alhattami@gmail.com instead of using the issue tracker.
+
+Credits
+Ayman Alhattami
+All Contributors
+License
+
+The MIT License (MIT). Please see License File for more information.
+
+Laravel Package Boilerplate
+
+This package was generated using the Laravel Package Boilerplate.
+
+About Packagist.org
+Atom/RSS Feeds
+Statistics
+Browse Packages
+API
+Mirrors
+Status
+Dashboard
+
+ provides maintenance and hosting
+
+ provides bandwidth and CDN
+
+ provides malware detection
+
+Sponsor Packagist & Composer

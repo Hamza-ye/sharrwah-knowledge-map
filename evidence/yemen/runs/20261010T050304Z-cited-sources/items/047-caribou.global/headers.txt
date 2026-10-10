@@ -1,0 +1,15 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 05:03:10 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+link: <https://caribou.global/wp-json/>; rel="https://api.w.org/", <https://caribou.global/wp-json/wp/v2/publication/3765>; rel="alternate"; title="JSON"; type="application/json", <https://caribou.global/?p=3765>; rel=shortlink
+cache-control: max-age=0, s-maxage=2592000
+expires: Sat, 10 Oct 2026 03:53:28 GMT
+vary: Accept-Encoding
+age: 4182
+x-cache: HIT
+content-encoding: gzip
+

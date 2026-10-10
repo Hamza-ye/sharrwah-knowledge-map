@@ -1,0 +1,26 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:25 GMT
+content-type: application/pdf
+content-length: 413129
+server: cloudflare
+x-frame-options: SAMEORIGIN
+permissions-policy: geolocation=(), microphone=(), camera=(), fullscreen=(self "https://www.youtube.com"), payment=()
+last-modified: Mon, 15 Sep 2025 16:27:09 GMT
+etag: "64dc9-63ed979a1f0ed"
+accept-ranges: bytes
+cache-control: public, max-age=31536000
+expires: Sat, 09 Oct 2027 07:05:28 GMT
+referrer-policy: no-referrer-when-downgrade
+pragma: public
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+age: 79077
+cf-cache-status: HIT
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BqJpomlMn6cE0odaXpe2Isnxsvzh0yWyyQ06%2FMkIMzyCKnP1e0naHtjSY8xmyKzw47bKXSTZeX%2FUpPjJBwI3py3RVYssw%2BXj7WLghy6LQ6V58JNagyvea%2Fn59FE5wJFqqN4%3D"}]}
+cf-ray: a4831418484c9c58-IAD
+alt-svc: h3=":443"; ma=86400
+

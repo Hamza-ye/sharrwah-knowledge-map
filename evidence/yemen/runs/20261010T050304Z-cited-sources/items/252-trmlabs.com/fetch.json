@@ -1,0 +1,18 @@
+{
+ "n": 252,
+ "url": "https://www.trmlabs.com/resources/blog/us-treasury-sanctions-houthi-financial-networks-including-eight-crypto-addresses",
+ "dir": "items/252-trmlabs.com",
+ "fetched_at": "2026-10-10T05:03:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.trmlabs.com/resources/blog/us-treasury-sanctions-houthi-financial-networks-including-eight-crypto-addresses",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 55887,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:382"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f17ef90e9548497419640f1d9f8b21287f6ffef76bc2975b903d83de378e82b4",
+ "raw_ext": "html"
+}

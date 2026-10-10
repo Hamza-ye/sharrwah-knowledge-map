@@ -1,0 +1,18 @@
+{
+ "n": 191,
+ "url": "https://www.2dec.net/rate.html",
+ "dir": "items/191-2dec.net",
+ "fetched_at": "2026-10-10T05:03:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.2dec.net/rate.html",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 11422,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:189"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5571e024ada146be40908a8104a7d150558a4891f022cee14692fdb4e7caef52",
+ "raw_ext": "html"
+}

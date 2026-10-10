@@ -1,0 +1,19 @@
+{
+ "n": 75,
+ "url": "https://e-jaib.com/pages/personal.html",
+ "dir": "items/075-e-jaib.com",
+ "fetched_at": "2026-10-10T05:03:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://e-jaib.com/pages/personal.html",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 7179,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:152",
+  "yemen-setup-options/notes/cash_logistics_practice.md:153"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9a349a0f71f4014fe0dc9276a03089e306035c34b1850263a31c6bac769a9b03",
+ "raw_ext": "html"
+}

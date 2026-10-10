@@ -1,0 +1,18 @@
+{
+ "n": 137,
+ "url": "https://packagist.org/packages/aymanalhattami/yemeni-payment-gateways",
+ "dir": "items/137-packagist.org",
+ "fetched_at": "2026-10-10T05:03:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://packagist.org/packages/aymanalhattami/yemeni-payment-gateways",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 6235,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:289"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "48a5d2ebf0550e03fc348dc3ae47dec4d2d734b7817f17e5eb1cc202a4acaf7f",
+ "raw_ext": "html"
+}

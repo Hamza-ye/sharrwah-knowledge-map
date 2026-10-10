@@ -1,0 +1,18 @@
+{
+ "n": 261,
+ "url": "https://www.ysfep.com/",
+ "dir": "items/261-ysfep.com",
+ "fetched_at": "2026-10-10T05:03:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.ysfep.com/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 4339,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:379"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5e97f5cd39c70069fd688a944e081c64425816f4605f6dea55718f311aef4886",
+ "raw_ext": "html"
+}

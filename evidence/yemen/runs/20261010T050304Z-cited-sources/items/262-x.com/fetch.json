@@ -1,0 +1,19 @@
+{
+ "n": 262,
+ "url": "https://x.com/Kuraimibank/status/1757763346227425454",
+ "dir": "items/262-x.com",
+ "fetched_at": "2026-10-10T05:03:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://x.com/Kuraimibank/status/1757763346227425454",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23279,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:206",
+  "yemen-setup-options/notes/cash_logistics_practice.md:67"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6d66d0865b79e8e5ea31573459a9dcd222072e7a03d17ec11cc4e1156e70e92e",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 205,
+ "url": "https://www.arabnews.com/node/2653743/middle-east",
+ "dir": "items/205-arabnews.com",
+ "fetched_at": "2026-10-10T05:03:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.arabnews.com/middle-east/how-the-houthis-built-a-parallel-economy-in-yemen-2653743",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 32668,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:238"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1c266be3d78ec374a320c7646d368bb25e43b1c65f63649a01a5fe0277accae7",
+ "raw_ext": "html"
+}

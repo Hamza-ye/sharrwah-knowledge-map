@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+date: Sat, 10 Oct 2026 04:59:17 GMT
+content-encoding: br
+cache-control: public, max-age=5
+te-last-update: 2026-10-09T23:15:18
+te-cache-rule: default
+te-cache-smaxage: 00:05:00
+te-rendered-at: 2026-10-10T04:57:41Z
+te-server: TEIIS2
+te-mobile: false
+te-bot: false
+vary: Accept-Encoding
+x-cache: Hit from cloudfront
+via: 1.1 a5613e7afb4b10039b3efde5527e95c2.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD61-P5
+x-amz-cf-id: PE_rtAz_l2qF8h4unrNGc7XIXewVb2id0s3ainwVsuze3NlyACmdpA==
+age: 255
+

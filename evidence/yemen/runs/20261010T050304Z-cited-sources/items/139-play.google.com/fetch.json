@@ -1,0 +1,18 @@
+{
+ "n": 139,
+ "url": "https://play.google.com/store/apps/details?id=co.ysys.floosak&hl=en_US",
+ "dir": "items/139-play.google.com",
+ "fetched_at": "2026-10-10T05:03:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=co.ysys.floosak&hl=en_US",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 191287,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:66"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9103515befff86b31100b4757c840633db5e1c6117a14a34dd182fc51ecf5af2",
+ "raw_ext": "html"
+}

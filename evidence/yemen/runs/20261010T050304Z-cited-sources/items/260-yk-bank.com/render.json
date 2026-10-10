@@ -1,0 +1,29 @@
+{
+ "n": 260,
+ "url": "https://www.yk-bank.com/ar/Personal/e-wallet/one-cash",
+ "rendered_at": "2026-10-10T05:12:13Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 403,
+ "final_url": "https://www.yk-bank.com/ar/Personal/e-wallet/one-cash",
+ "title": "Attention Required! | Cloudflare",
+ "text_chars": 688,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "b3c0e20527f058ef9856f0cbf4a66bf546c18f1b0cabf6e53013db406b6774f1",
+ "browser_headers": {
+  "alt-svc": "h3=\":443\"; ma=86400",
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "a48320fec9f268f4-IAD",
+  "content-encoding": "zstd",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Sat, 10 Oct 2026 05:12:13 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+  "referrer-policy": "same-origin",
+  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Mlb14%2Fp7BK5GIxmBmHYXdWw0W5tvLcyQYttXTgzClybSqLJ9eLffRJakuPZvQuGK1t8F%2B4JspDQDEaumycog%2FG2djQKWfk48rCVj6htoFv%2F2%2B%2BUia%2FH8BXkcpYMnuz9Iou8%3D\"}]}",
+  "server": "cloudflare",
+  "server-timing": "cfEdge;dur=4,cfOrigin;dur=0",
+  "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "SAMEORIGIN"
+ }
+}

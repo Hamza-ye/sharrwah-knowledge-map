@@ -1,0 +1,18 @@
+{
+ "n": 234,
+ "url": "https://www.payoneer.com/ar/legal/prohibited-transaction-list/",
+ "dir": "items/234-payoneer.com",
+ "fetched_at": "2026-10-10T05:03:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.payoneer.com/ar/legal/prohibited-transaction-list/",
+ "content_type": "text/html",
+ "bytes": 31186,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:308"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e10172889fc4964eed8db88d841e265e0aabbb62bd6fb1bb9133e13a41e75a23",
+ "raw_ext": "html"
+}

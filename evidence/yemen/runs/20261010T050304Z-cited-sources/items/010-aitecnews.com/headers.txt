@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:06 GMT
+content-type: text/html; charset=UTF-8
+cache-control: no-cache, private
+referrer-policy: strict-origin-when-cross-origin
+x-frame-options: deny
+x-content-type-options: nosniff
+x-powered-by: nano2soft
+platform: hostinger
+panel: hpanel
+set-cookie: aitecnews_session=eyJpdiI6Im1veUQ2amZHOVdUcjNhZjlxVWllcWc9PSIsInZhbHVlIjoiTU1wbFl1VFdBT1FUczlPZWl0NE9hVWdZZFwvXC81Tno1cTNLYjQzU3dDandweU1neVNkbkoyZEpOVjhRZk5JbjRyQ1BkZzlScFZTMGFJUW10amxjMFZKN2x6NUhjd0p6VE1jamxYZ1Q5eUk0S202THB3K0U1OFZsQUpHalVNUlBXOCIsIm1hYyI6Ijk2M2I1M2IzYmI3OTdmYmYzNWNjZWRmZmNmN2I3NTQ3NmIzMDkzYjdmNDdlZDA0M2I2NDQ3ZDJkMzgzYjY2NGYifQ%3D%3D; expires=Sat, 10-Oct-2026 07:03:06 GMT; Max-Age=7200; path=/; httponly; samesite=lax; secure
+content-encoding: br
+content-security-policy: upgrade-insecure-requests
+vary: Accept-Encoding
+server: hcdn
+alt-svc: h3=":443"; ma=86400
+x-hcdn-request-id: cfc56cf049677265f03ef98c5aef0976-srv-edge7
+x-hcdn-cache-status: DYNAMIC
+x-hcdn-upstream-rt: 0.803
+

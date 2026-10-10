@@ -1,0 +1,18 @@
+{
+ "n": 111,
+ "url": "https://help.shopify.com/en/manual/payments/manual-payments",
+ "dir": "items/111-help.shopify.com",
+ "fetched_at": "2026-10-10T05:03:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/manual-payments",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 14881,
+ "cited_in": [
+  "yemen-setup-options/report.md:118"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "00906503dcac5c0107692e2825f459fc295b9271077a03758c4ea99663baa4e9",
+ "raw_ext": "html"
+}

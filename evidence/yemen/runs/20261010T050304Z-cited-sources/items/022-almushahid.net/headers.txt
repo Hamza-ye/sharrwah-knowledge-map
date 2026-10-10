@@ -1,0 +1,26 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:09 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+vary: Accept-Encoding
+vary: Accept-Encoding
+permissions-policy: private-state-token-redemption=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com"), private-state-token-issuance=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com")
+link: <https://almushahid.net/wp-json/>; rel="https://api.w.org/", <https://almushahid.net/wp-json/wp/v2/posts/123951>; rel="alternate"; title="JSON"; type="application/json", <https://almushahid.net/?p=123951>; rel=shortlink
+expires: Thu, 19 Nov 1981 08:52:00 GMT
+cache-control: no-store, no-cache, must-revalidate
+pragma: no-cache
+cache-provider: CLOUDWAYS-CACHE-DC
+set-cookie: PHPSESSID=t5u5g2tlrhc5jov4dh3lrd39g8; path=/
+last-modified: Sat, 10 Oct 2026 05:03:08 GMT
+age: 0
+x-cache: MISS
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Gt2w7f%2Fv2%2BGZnuvs6GtWzPiQgPci9TWnJJqdbl%2BO2jPROT8hyFMbDR9HT7j%2FBK0josH7JRPzr%2BrUuQirof0abiGgQNVqlWGx%2F7%2FWUhWJY7L0wnpesWInmeoGCI5TudILtA%3D%3D"}]}
+content-encoding: zstd
+cf-ray: a48313a96bf95648-IAD
+alt-svc: h3=":443"; ma=86400
+

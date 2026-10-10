@@ -1,0 +1,18 @@
+{
+ "n": 227,
+ "url": "https://www.mdpi.com/2071-1050/15/18/13712",
+ "dir": "items/227-mdpi.com",
+ "fetched_at": "2026-10-10T05:03:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.mdpi.com/2071-1050/15/18/13712",
+ "content_type": "text/html",
+ "bytes": 403,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:228"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b2999c477df5685b9b67c2ef3ea0e631717c280db03048b8b52f6e979eb7a399",
+ "raw_ext": "html"
+}

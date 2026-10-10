@@ -7,6 +7,8 @@ Derived documents about commerce payments, written in October 2026 by Claude Cod
 
 These files are claims about that evidence, not evidence themselves. Where a claim and its source disagree, the source wins.
 
+The exception is `evidence/yemen/`, which holds raw copies of the Yemen sources themselves. Its README sets the rules for that folder.
+
 ## Contents
 
 | Folder | What it holds |
@@ -17,11 +19,13 @@ These files are claims about that evidence, not evidence themselves. Where a cla
 | `register/pay-questions.tsv` | The question register, PAY-01 to PAY-81, with evidence pointers, feeds, lane and status. |
 | `register/pay-evidence-additions.tsv` | Evidence entries the register cites that were not yet in the knowledge map's evidence list. |
 | `model/obligation-to-payout.html` | The obligation-to-payout model page: what is agreed, attempted, moved and due, the proposed questions, the Yemen setup options and the sources. Open it in a browser. |
+| `evidence/yemen/` | Raw copies of the cited Yemen sources and of the community payment-client repositories, with manifests. Also holds the list of sources that can only be fetched from inside Yemen, and the template for founder attestations. |
 
 ## Limits
 
 - **Shopify study.** File paths such as `help/manual/...` are Help Center URL paths. The same pages are captured in observed-sh runs `20260930T003703Z-help-en-md` and `20260930T003705Z-shopify-dev-md`.
-- **Yemen sources are live web links, not captured copies.** Pages can change or disappear, so a citation may stop resolving.
+- **Yemen sources were captured on 10 October 2026, from outside Yemen.** `evidence/yemen/` holds the copies. Some Sana'a-side sites can only be reached from inside Yemen.
+- **Sources dated before 2023 are historical.** They can show what a document said, but not 2025–2026 status.
 - **Yemen coverage is uneven.**
   - It holds no official source from the Sana'a side; facts about that zone come from secondary sources.
   - Provider facts come from community client code, operator pages and app listings, not from providers' merchant documentation.

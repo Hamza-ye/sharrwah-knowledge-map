@@ -1,0 +1,18 @@
+{
+ "n": 192,
+ "url": "https://www.aa.com.tr/en/middle-east/yemen-s-warring-rivals-agree-to-de-escalate-economic-conflict-un/3283264",
+ "dir": "items/192-aa.com.tr",
+ "fetched_at": "2026-10-10T05:03:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.aa.com.tr/en/middle-east/yemen-s-warring-rivals-agree-to-de-escalate-economic-conflict-un/3283264",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 52756,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:288"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5e393a95ec41a62887b291e0aa185ef40a59eac71d697941061cb3babd7fa5a7",
+ "raw_ext": "html"
+}

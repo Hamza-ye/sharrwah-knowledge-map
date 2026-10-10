@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:48 GMT
+content-type: text/html; charset=utf-8
+cache-control: public, max-age=60
+vary: Accept-Encoding
+speculation-rules: "/cdn-cgi/speculation"
+access-control-allow-headers: *
+access-control-allow-methods: *
+expires: Sat, 10 Oct 2026 05:04:48 GMT
+cf-cache-status: EXPIRED
+set-cookie: __cf_bm=xI4g7tbJ6w4Q6aSss53CQut3AExPo7uIYgAjRll6wWA-1791608628.0891037-1.0.1.1-6.EIkbmdS_mleMzJfZKrP_g2HZDAXDnOzW7I0Oj2OrtMmVCLOIee7AIHDxCyg2zCvL5w_RZV00dDzsRGLzgvHKM9cNucg9M6n9V6i8WxFsX9qnU9Zb2cqMK_pSC2MlSt; HttpOnly; SameSite=None; Secure; Path=/; Domain=spa.gov.sa; Expires=Sat, 10 Oct 2026 05:33:48 GMT
+set-cookie: _cfuvid=xo7suh2D0uHM2_X6XvNxLk2hZ44rpccK2_MApJBsri4-1791608628.0891037-1.0.1.1-eiR4mGcvYK.TTLSMNWXbgFig.tAClSu6NFGpD13ZZH0; HttpOnly; SameSite=None; Secure; Path=/; Domain=spa.gov.sa
+content-encoding: gzip
+server: cloudflare
+cf-ray: a48314a589cb08b5-RUH
+alt-svc: h3=":443"; ma=86400
+

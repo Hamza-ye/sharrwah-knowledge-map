@@ -1,0 +1,18 @@
+{
+ "n": 219,
+ "url": "https://www.daraz.pk/refund-policy/",
+ "dir": "items/219-daraz.pk",
+ "fetched_at": "2026-10-10T05:03:42Z",
+ "curl_exit": 35,
+ "curl_error": "curl: (35) Recv failure: Connection reset by peer",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "yemen-setup-options/report.md:204"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

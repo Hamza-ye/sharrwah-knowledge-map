@@ -1,0 +1,12 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Date: Sat, 10 Oct 2026 05:03:21 GMT
+Server: Apache
+Vary: accept,content-type,Accept-Encoding,User-Agent
+x-docket-cache: on; 1,175,2647
+Link: <https://matjari.online/wp-json/>; rel="https://api.w.org/", <https://matjari.online/wp-json/wp/v2/posts/340>; rel="alternate"; title="JSON"; type="application/json", <https://matjari.online/?p=340>; rel=shortlink
+Content-Encoding: gzip
+Content-Length: 34796
+Content-Type: text/html; charset=UTF-8
+

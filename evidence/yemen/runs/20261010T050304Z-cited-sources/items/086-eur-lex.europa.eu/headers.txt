@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Sat, 10 Oct 2026 05:03:17 GMT
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Set-Cookie: AWSALB=OJkz2ZLbEaUsoSw4UZkoZ6L7lbKGzMGYsEhZ16yyanSW+QeJ1N0zP42sQoFtwvhX1BCFkKw+8v0FppujINgCY444RFxEYiyjAaMZsQVgk1lTlEfPqhrNqGoIbPBg; Expires=Sat, 17 Oct 2026 05:03:16 GMT; Path=/
+Set-Cookie: AWSALBCORS=OJkz2ZLbEaUsoSw4UZkoZ6L7lbKGzMGYsEhZ16yyanSW+QeJ1N0zP42sQoFtwvhX1BCFkKw+8v0FppujINgCY444RFxEYiyjAaMZsQVgk1lTlEfPqhrNqGoIbPBg; Expires=Sat, 17 Oct 2026 05:03:16 GMT; Path=/; SameSite=None
+Set-Cookie: dtCookie=v_4_srv_54_sn_35E2149F6AE1580D2211FE47A60A6CB2_perc_100000_ol_0_mul_1_app-3A47d4c64c3b67ec69_0_rcs-3Acss_0; Path=/; Domain=.europa.eu
+Set-Cookie: ELX_SESSIONID=CVQkMamlpYBCKE_Hymb_fCCQ0XW59Bj_ZkVNbWQsjY8Cjdu_8se2!-615618348; path=/; Path=/; Secure; HttpOnly
+Set-Cookie: experimentalFeaturesActivated=false; expires=Mon, 09-Nov-2026 05:03:17 GMT; path=/
+Set-Cookie: experimentalFeaturesActivated=false; expires=Mon, 09-Nov-2026 05:03:17 GMT; path=/
+Set-Cookie: experimentalFeaturesActivated=false; expires=Mon, 09-Nov-2026 05:03:17 GMT; path=/
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Security-Policy: frame-ancestors 'self' https://efsa.maps.arcgis.com
+X-XSS-Protection: 1; mode=block
+Server-Timing: dtRpid;desc="115683749", dtSInfo;desc="0"
+X-Content-Type-Options: nosniff
+X-ORACLE-DMS-ECID: 02275ab3-57ee-48d7-924c-7d651bdf2289-00000bb0
+Content-Language: en
+X-ORACLE-DMS-RID: 0
+X-OneAgent-JS-Injection: true
+Vary: Accept-Encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 3578d122de1401ebc52a7afd35dd5d0c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD61-P10
+X-Amz-Cf-Id: zd_dKvKkH29IkSaOuNTMNGrTD72-cwFzwGdvCa-y73gTch-hQVIipg==
+

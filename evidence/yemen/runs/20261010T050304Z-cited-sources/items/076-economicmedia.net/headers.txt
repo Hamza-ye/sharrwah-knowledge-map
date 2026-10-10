@@ -1,0 +1,13 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+cache-control: max-age=31536000
+content-type: application/pdf
+last-modified: Sat, 27 Dec 2025 18:48:34 GMT
+accept-ranges: bytes
+etag: "c8679c676177dc1:0"
+server: Microsoft-IIS/10.0
+x-powered-by: ASP.NET
+date: Sat, 10 Oct 2026 05:03:14 GMT
+content-length: 2399454
+

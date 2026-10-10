@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+content-type: text/html; charset=utf-8
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+etag: W/"8e9f9-U8hGtK/9x78nOdQc+r0nY6KC1FU"
+content-encoding: gzip
+cache-control: max-age=86400, must-revalidate
+x-rq: atl2 0 10 9980
+accept-ranges: bytes
+date: Sat, 10 Oct 2026 05:03:38 GMT
+content-length: 136342
+vary: Accept-Encoding
+strict-transport-security: max-age=15768000
+

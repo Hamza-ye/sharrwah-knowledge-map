@@ -1,0 +1,18 @@
+{
+ "n": 176,
+ "url": "https://support.coingate.com/hc/en-us/articles/23236010880412-Countries-and-territories-not-supported-for-payments",
+ "dir": "items/176-support.coingate.com",
+ "fetched_at": "2026-10-10T05:03:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://support.coingate.com/hc/en-us/articles/23236010880412-Countries-and-territories-not-supported-for-payments",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3324,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:307"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "edaaef0a594e2734396486ea11ecb4a0e0fdedb5e9543bd4cb6cadfbb3a9b7ec",
+ "raw_ext": "html"
+}

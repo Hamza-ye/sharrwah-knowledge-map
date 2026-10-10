@@ -1,0 +1,18 @@
+{
+ "n": 232,
+ "url": "https://www.newarab.com/news/us-sanctions-yemen-kuwait-bank-alleging-ties-houthis",
+ "dir": "items/232-newarab.com",
+ "fetched_at": "2026-10-10T05:03:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.newarab.com/news/us-sanctions-yemen-kuwait-bank-alleging-ties-houthis",
+ "content_type": "text/html",
+ "bytes": 458,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:369"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e115025b48903c7e1f91e0e70f186097f04479e7f73ea4e24d7deed23193cb18",
+ "raw_ext": "html"
+}

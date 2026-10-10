@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:15 GMT
+content-type: text/html
+speculation-rules: "/cdn-cgi/speculation"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fhjwnQIpDf1u8QXPwUX%2FYkwY9SjFtHjyVSCOiOwIWEcgMQtLvF7bokLn%2FIbkZkkDcm76CSAz%2BINZN%2FP1kvC3v5Nt6CDPAbc9u9HVaDv3E3z%2FiE5%2Fk7MzEOLfQf3Xwh70FQ%3D%3D"}]}
+last-modified: Thu, 15 May 2025 21:12:08 GMT
+set-cookie: ARRAffinity=8343beef99a2ce0c5aaf388e41ff30e0ee6ba607e33ac77a8f62126f1d8e8c92;Path=/;HttpOnly;Secure;Domain=digibankar.com
+set-cookie: ARRAffinitySameSite=8343beef99a2ce0c5aaf388e41ff30e0ee6ba607e33ac77a8f62126f1d8e8c92;Path=/;HttpOnly;SameSite=None;Secure;Domain=digibankar.com
+vary: Accept-Encoding
+strict-transport-security: max-age=2592000
+cf-cache-status: DYNAMIC
+content-encoding: zstd
+server: cloudflare
+cf-ray: a48313d2bb912424-IAD
+alt-svc: h3=":443"; ma=86400
+

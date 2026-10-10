@@ -1,0 +1,18 @@
+{
+ "n": 15,
+ "url": "https://almahrahpost.com/news/14745",
+ "dir": "items/015-almahrahpost.com",
+ "fetched_at": "2026-10-10T05:03:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 404,
+ "final_url": "https://almahrahpost.com/news/14745",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 16578,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:73"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a8fa16253531604c0b4d936c1929049af64be8a64c248dbc6048fb5f62154d09",
+ "raw_ext": "html"
+}

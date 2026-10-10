@@ -1,0 +1,18 @@
+{
+ "n": 48,
+ "url": "https://cby-ye.com/currencyhsitory",
+ "dir": "items/048-cby-ye.com",
+ "fetched_at": "2026-10-10T05:03:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://cby-ye.com/currencyhsitory",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 9150,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:182"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2f9f56a08c095187f8a50b1cfeb652b081ab57ca845feae0d61c1d0392d42e6f",
+ "raw_ext": "html"
+}

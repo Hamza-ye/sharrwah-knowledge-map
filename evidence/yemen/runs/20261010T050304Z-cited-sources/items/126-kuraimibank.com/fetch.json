@@ -1,0 +1,22 @@
+{
+ "n": 126,
+ "url": "https://kuraimibank.com/ar/services/50",
+ "dir": "items/126-kuraimibank.com",
+ "fetched_at": "2026-10-10T05:03:20Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kuraimibank.com/ar/services/50",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 2209,
+ "cited_in": [
+  "yemen-setup-options/report.md:7",
+  "yemen-setup-options/report.md:169",
+  "yemen-setup-options/notes/wallets_emoney.md:218",
+  "yemen-setup-options/notes/wallets_emoney.md:318",
+  "yemen-setup-options/notes/wallets_emoney.md:380"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ee5da17444c0e7260d14764dd2ea0f14c56eb5bb9392c3dd31b3fcccad1565af",
+ "raw_ext": "html"
+}

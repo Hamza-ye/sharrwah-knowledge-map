@@ -1,0 +1,18 @@
+{
+ "n": 228,
+ "url": "https://www.mepsyemen.com/",
+ "dir": "items/228-mepsyemen.com",
+ "fetched_at": "2026-10-10T05:03:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.mepsyemen.com/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 24235,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:240"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b96219db29e617b188dbc303cec022cb1fbf10a0756d6094f07740c2a7433d8b",
+ "raw_ext": "html"
+}

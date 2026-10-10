@@ -1,0 +1,19 @@
+{
+ "n": 187,
+ "url": "https://wise.com/gb/currency-converter/yer-to-usd-rate",
+ "dir": "items/187-wise.com",
+ "fetched_at": "2026-10-10T05:03:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://wise.com/gb/currency-converter/yer-to-usd-rate",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 85473,
+ "cited_in": [
+  "yemen-setup-options/report.md:90",
+  "yemen-setup-options/notes/currency_territory.md:190"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8d23e32ab91d0b2ccb6c931785dee211ed270d235dbd01be27562ba74d9554ec",
+ "raw_ext": "html"
+}

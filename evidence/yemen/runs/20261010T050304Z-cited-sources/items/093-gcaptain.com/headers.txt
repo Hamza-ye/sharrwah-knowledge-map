@@ -1,0 +1,32 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:18 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+vary: Accept-Encoding
+vary: Accept-Encoding
+vary: Accept-Encoding
+vary: Accept-Encoding,Cookie
+cf-edge-cache: cache,platform=wordpress
+link: <https://gcaptain.com/wp-json/>; rel="https://api.w.org/"
+link: <https://gcaptain.com/wp-json/wp/v2/posts/226049>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://gcaptain.com/?p=226049>; rel=shortlink
+x-powered-by: WP Engine
+x-cacheable: SHORT
+cache-control: max-age=3600, must-revalidate
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=vRzAbxV6vKaEfCZsOUnQmBozCnpKYQ2hEtwDsUSv9%2Fw%2BBQVhWHcKXJgQlr%2BoU0EyTo4%2F2pO%2F6gmq%2BK%2BCuAMHyLsFK5ZMm7X98W1G7lWL2olb0RGOwkK7mnpYDt%2BEHg%3D%3D"}]}
+x-cache: MISS
+x-cache-group: normal
+last-modified: Sat, 10 Oct 2026 05:03:18 GMT
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=15552000
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+cf-apo-via: origin,miss
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: EXPIRED
+content-encoding: br
+cf-ray: a48313ea0f46fe41-IAD
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:09 GMT
+content-type: text/html; charset=UTF-8
+permissions-policy: private-state-token-redemption=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com"), private-state-token-issuance=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com")
+link: <https://alsharaeanews.com>; rel=shortlink
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-litespeed-cache: hit
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=OJcjwBtYfG1uoQCQ270cLTb2OtoAOYo6CYgu1R351ytccrynfMxFr7MUQegu3zqc4t0lo10zowyNkM2ppmJ8p%2Fx0K1Cc%2BRfxPsI7ltucarnrrwwhjNIWCUWM07XMkbs7logfHg%3D%3D"}]}
+vary: Accept-Encoding,User-Agent
+strict-transport-security: max-age=15768000;includeSubdomains
+content-security-policy: object-src 'none'
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-turbo-charged-by: LiteSpeed
+cf-cache-status: DYNAMIC
+content-encoding: zstd
+server: cloudflare
+cf-ray: a48313af5e3cc984-IAD
+alt-svc: h3=":443"; ma=86400
+

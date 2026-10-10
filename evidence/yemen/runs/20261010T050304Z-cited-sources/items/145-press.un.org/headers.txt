@@ -1,0 +1,9 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 406 
+cache-control: private, no-store
+accept-ranges: bytes
+date: Sat, 10 Oct 2026 05:03:24 GMT
+fastly-request-id: df99df0c7854cb587bfc44d6
+server-timing: PASS, fastly;desc="Edge time";dur=20
+

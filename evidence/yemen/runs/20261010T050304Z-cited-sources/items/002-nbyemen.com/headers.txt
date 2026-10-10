@@ -1,0 +1,15 @@
+HTTP/1.1 301 Moved Permanently
+date: Sat, 10 Oct 2026 05:03:04 GMT
+server: Apache
+location: https://www.nbyemen.com/creditCard_en.html
+content-length: 290
+content-type: text/html; charset=iso-8859-1
+
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 404 Not Found
+Date: Sat, 10 Oct 2026 05:03:05 GMT
+Server: Apache
+Content-Length: 355
+Content-Type: text/html; charset=iso-8859-1
+

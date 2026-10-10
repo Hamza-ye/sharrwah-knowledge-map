@@ -1,0 +1,18 @@
+{
+ "n": 128,
+ "url": "https://lendsqr.com/providers/wecash",
+ "dir": "items/128-lendsqr.com",
+ "fetched_at": "2026-10-10T05:03:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://lendsqr.com/providers/wecash",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 15012,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:100"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ddd9fa92ecc329daaa0cc0b34a2496a08b63c98293cdd331eb636c2d4101b3fe",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:24 GMT
+content-type: text/html; charset=UTF-8
+server: nginx
+vary: Accept-Encoding
+cache-control: max-age=0, must-revalidate, private
+strict-transport-security: max-age=31104000
+x-frame-options: DENY
+content-security-policy: default-src 'self'; base-uri 'none'; block-all-mixed-content; connect-src 'self' https://*.algolia.net https://*.algolianet.com; frame-src https://www.google.com/recaptcha/; img-src 'self' https: data:; object-src 'none'; script-src 'unsafe-eval' https://www.gstatic.com/recaptcha/ 'strict-dynamic' 'unsafe-inline' 'nonce-X3oZ6OwTo4f/kvys9PUeIA=='; style-src 'self' 'unsafe-inline'
+x-content-security-policy: default-src 'self'; base-uri 'none'; block-all-mixed-content; connect-src 'self' https://*.algolia.net https://*.algolianet.com; frame-src https://www.google.com/recaptcha/; img-src 'self' https: data:; object-src 'none'; script-src 'unsafe-eval' https://www.gstatic.com/recaptcha/ 'strict-dynamic' 'unsafe-inline' 'nonce-X3oZ6OwTo4f/kvys9PUeIA=='; style-src 'self' 'unsafe-inline'
+expires: Sat, 10 Oct 2026 05:03:24 GMT
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+content-encoding: gzip
+

@@ -1,0 +1,21 @@
+{
+ "n": 165,
+ "url": "https://sanctionsnews.bakermckenzie.com/us-redesignates-ansarallah-as-a-foreign-terrorist-organization/",
+ "dir": "items/165-sanctionsnews.bakermckenzie.com",
+ "fetched_at": "2026-10-10T05:03:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://sanctionsnews.bakermckenzie.com/us-redesignates-ansarallah-as-a-foreign-terrorist-organization/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 22653,
+ "cited_in": [
+  "yemen-setup-options/report.md:60",
+  "yemen-setup-options/notes/regulation_licensing.md:350",
+  "yemen-setup-options/notes/regulation_licensing.md:351",
+  "yemen-setup-options/notes/regulation_licensing.md:365"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3649c864fb0b55ab27adbc01ccb4ddfa8a0244b9119092320214427bea62f90e",
+ "raw_ext": "html"
+}

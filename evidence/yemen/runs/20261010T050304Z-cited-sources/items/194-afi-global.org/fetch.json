@@ -1,0 +1,18 @@
+{
+ "n": 194,
+ "url": "https://www.afi-global.org/opinion/central-bank-of-yemen-issues-new-mobile-banking-regulations/",
+ "dir": "items/194-afi-global.org",
+ "fetched_at": "2026-10-10T05:03:34Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://afi-global.org/opinion/central-bank-of-yemen-issues-new-mobile-banking-regulations/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 496609,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:52"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "11a7db12690c10b11069dc63e3d2fc57f2f735ec850929ff1300121ae9bb232a",
+ "raw_ext": "html"
+}

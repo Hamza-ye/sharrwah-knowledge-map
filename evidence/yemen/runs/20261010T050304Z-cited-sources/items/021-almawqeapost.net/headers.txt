@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:08 GMT
+content-type: text/html;charset=utf-8;
+server: cloudflare
+expires: Thu, 19 Nov 1981 08:52:00 GMT
+cache-control: no-store, no-cache, must-revalidate
+pragma: no-cache
+set-cookie: SESSION=c81c8fabb213086c852b8ed386254638; path=/; domain=almawqeapost.net; secure; HttpOnly; SameSite=lax
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HdlkD15G9UuZQxOIaTmYEjYKrCqXCdbAlCFcrZ%2BhRCC%2B3PMDehGsUwvNNYDC9RRdMHNSnXBN0G7kKx5r8cbGglDLfIDp3mycwPQIwENi6ceOr2%2FtG%2BN7A7bD6wPbvmKkDIn%2B"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+content-encoding: zstd
+cf-ray: a48313a919a26973-IAD
+alt-svc: h3=":443"; ma=86400
+

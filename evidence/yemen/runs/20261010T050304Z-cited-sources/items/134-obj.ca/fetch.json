@@ -1,0 +1,18 @@
+{
+ "n": 134,
+ "url": "https://obj.ca/?p=89016",
+ "dir": "items/134-obj.ca",
+ "fetched_at": "2026-10-10T05:03:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://obj.ca/ottawas-telepin-software-providing-mobile-wallet-tech-in-yemen/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 59960,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:157"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7a247cb6b67c5d3b05bcba56922b60bfc58268cdb412ffcb5d30938c5e068a5f",
+ "raw_ext": "html"
+}

@@ -1,0 +1,20 @@
+{
+ "n": 67,
+ "url": "https://classic.yarnpkg.com/en/package/@alsharie/kuraimiepay",
+ "dir": "items/067-classic.yarnpkg.com",
+ "fetched_at": "2026-10-10T05:03:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://classic.yarnpkg.com/en/package/@alsharie/kuraimiepay",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 7942,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:57",
+  "yemen-setup-options/notes/banks_exchange_cards.md:102",
+  "yemen-setup-options/notes/banks_exchange_cards.md:105"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8662406012b8826268c90ab9aee5a46f5664a1e21407b79f03cc0da428da9dce",
+ "raw_ext": "html"
+}

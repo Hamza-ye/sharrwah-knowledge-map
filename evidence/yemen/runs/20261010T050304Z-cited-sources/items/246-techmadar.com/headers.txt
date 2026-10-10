@@ -1,0 +1,16 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+x-robots-tag: all
+content-type: text/html; charset=UTF-8
+expires: Sat, 10 Oct 2026 05:03:48 GMT
+date: Sat, 10 Oct 2026 05:03:48 GMT
+cache-control: private, max-age=0
+last-modified: Wed, 07 Oct 2026 12:32:00 GMT
+etag: W/"3f17bae79d3dd0389cca0ded45052a2e0a8f51044b294e83b49583d63e8b207d"
+content-encoding: gzip
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+content-length: 77164
+server: GSE
+

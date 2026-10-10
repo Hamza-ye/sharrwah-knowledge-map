@@ -1,0 +1,20 @@
+{
+ "n": 204,
+ "url": "https://www.alnkkar.com/news25084.html",
+ "dir": "items/204-alnkkar.com",
+ "fetched_at": "2026-10-10T05:03:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.alnkkar.com/news25084.html",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 11464,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:73",
+  "yemen-setup-options/notes/wallets_emoney.md:81",
+  "yemen-setup-options/notes/wallets_emoney.md:450"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a85bf3d7af23df2dc981d6181be2e585e1a8afd54161924d52c0da1bda9c8b24",
+ "raw_ext": "html"
+}

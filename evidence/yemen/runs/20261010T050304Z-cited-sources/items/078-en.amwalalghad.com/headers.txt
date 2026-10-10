@@ -1,0 +1,25 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Sat, 10 Oct 2026 05:03:16 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+X-Pingback: https://en.amwalalghad.com/xmlrpc.php
+Expires: Sat, 10 Oct 2026 06:03:16 GMT
+Cache-Control: max-age=3600
+X-Redirect-By: WordPress
+Location: https://en.amwalalghad.com/us-sanctions-yemens-international-bank-of-yemen-for-backing-iran-aligned-houthis/
+Vary: User-Agent
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 10 Oct 2026 05:03:16 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Pingback: https://en.amwalalghad.com/xmlrpc.php
+Link: <https://en.amwalalghad.com/wp-json/>; rel="https://api.w.org/", <https://en.amwalalghad.com/wp-json/wp/v2/posts/198781>; rel="alternate"; title="JSON"; type="application/json", <https://en.amwalalghad.com/?p=198781>; rel=shortlink
+Vary: Accept-Encoding,User-Agent
+

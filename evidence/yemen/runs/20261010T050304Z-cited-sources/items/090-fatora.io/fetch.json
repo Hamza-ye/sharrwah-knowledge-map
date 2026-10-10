@@ -1,0 +1,18 @@
+{
+ "n": 90,
+ "url": "https://fatora.io/blog/online-payment-in-yemen/",
+ "dir": "items/090-fatora.io",
+ "fetched_at": "2026-10-10T05:03:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://fatora.io/blog/online-payment-in-yemen/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 22399,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:61"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b34af0806e05c5e2bacb460f15d6d45e59e521da7209af3b5e9a6a015b11fa19",
+ "raw_ext": "html"
+}

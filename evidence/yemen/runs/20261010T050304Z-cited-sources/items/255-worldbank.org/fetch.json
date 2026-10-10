@@ -1,0 +1,19 @@
+{
+ "n": 255,
+ "url": "https://www.worldbank.org/en/news/press-release/2025/06/17/world-bank-approves-us-30-million-to-support-financial-inclusion-and-education-in-yemen",
+ "dir": "items/255-worldbank.org",
+ "fetched_at": "2026-10-10T05:03:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.worldbank.org/en/news/press-release/2025/06/17/world-bank-approves-us-30-million-to-support-financial-inclusion-and-education-in-yemen",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 5091,
+ "cited_in": [
+  "yemen-setup-options/report.md:68",
+  "yemen-setup-options/notes/wallets_emoney.md:448"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7c5849b12688e8619e53ca20b6f96606264fb2c3729115b12d3e73497ed9cae6",
+ "raw_ext": "html"
+}

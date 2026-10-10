@@ -1,0 +1,19 @@
+{
+ "n": 136,
+ "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
+ "dir": "items/136-ofac.treasury.gov",
+ "fetched_at": "2026-10-10T05:03:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23760,
+ "cited_in": [
+  "yemen-setup-options/report.md:62",
+  "yemen-setup-options/notes/regulation_licensing.md:365"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "523f01f4a970c41e94f9ea8cd5b7e2492d20ac5b42b1b6055c99515a8fabe131",
+ "raw_ext": "html"
+}

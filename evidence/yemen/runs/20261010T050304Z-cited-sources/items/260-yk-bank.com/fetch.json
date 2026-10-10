@@ -1,0 +1,18 @@
+{
+ "n": 260,
+ "url": "https://www.yk-bank.com/ar/Personal/e-wallet/one-cash",
+ "dir": "items/260-yk-bank.com",
+ "fetched_at": "2026-10-10T05:03:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.yk-bank.com/ar/Personal/e-wallet/one-cash",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 2197,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:111"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f0a3eaad8f434821aa71989d0d7424b1361d0a8e3f074f874a4e51d5676cec30",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 42,
+ "url": "https://barran.press/news/topic/10727",
+ "dir": "items/042-barran.press",
+ "fetched_at": "2026-10-10T05:03:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "http://barran.press/news/10727",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 20442,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:237"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "83edf1402296b562b6e18bd17f85a4bd0c63f729253c1db80e5fd7ec8bf7db05",
+ "raw_ext": "html"
+}

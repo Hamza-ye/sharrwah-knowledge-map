@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:40 GMT
+content-type: application/pdf
+content-length: 1322699
+cf-ray: a48314713f7d7c97-IAD
+cf-cache-status: HIT
+accept-ranges: bytes
+access-control-allow-origin: *
+cache-control: s-maxage=2592000, max-age=1209600, stale-while-revalidate=900
+etag: "a354fd8ffec8c9e7cfab180e61fee141"
+last-modified: Fri, 02 Feb 2024 12:45:09 GMT
+server: cloudflare
+x-hs-portal-id: 6845371
+strict-transport-security: max-age=31536000
+vary: accept-encoding
+via: 1.1 f06f3e2649c9730da63db004d17c9560.cloudfront.net (CloudFront)
+access-control-allow-methods: GET
+edge-cache-tag: F-78349278018,FD-74024900749,P-6845371,FLS-ALL
+timing-allow-origin: d8fk70yj6xfhx.cloudfront.net
+x-amz-cf-id: kNBBrkdzEH4gDmnirOPZCAT78ruZ4DLe7TSGAhNBBSgBsVC0AVlAyA==
+x-amz-cf-pop: ORD58-P2
+x-cache: Miss from cloudfront
+x-hs-alternate-content-type: text/plain
+x-robots-tag: all
+cache-tag: F-78349278018,FD-74024900749,P-6845371,FLS-ALL
+x-hs-cfworker-meta: {"resolver":"HubFsResolver"}
+set-cookie: __cf_bm=Dz8_Bce95j2dWIFQfVntZUUh6nrloXXmTzdBtdNO0yM-1791608619.7135968-1.0.1.1-60H0ZTvlYVX1Z4qldvrbXxoZCjTFqliSMZm_el9wUTwUlePuvqbwuT2utg0xn6UD4caCJoLo3.RYR77wZ7GYi64J3SuHGj0zCy5tYwPdmUM.qpZFCPbedvIQnEHdobWp; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.bpcbt.com; Expires=Sat, 10 Oct 2026 05:33:40 GMT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EvOO8xd6ZfbpP26prByKfYEvkG%2BSNy6p4Eqo4MB0vqCjl%2Fp3xhbZqc9uSPKCL%2FaRvX%2FkqcbpyVTPMBS4BOI7QnfQjDqsOi791gvig5yj0znVvysGQ7dRjtfcx%2BUNlkE%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+alt-svc: h3=":443"; ma=86400
+

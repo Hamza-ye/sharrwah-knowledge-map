@@ -1,0 +1,14 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Date: Sat, 10 Oct 2026 05:03:40 GMT
+Server: Apache
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+X-AspNetMvc-Version: 5.2
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+

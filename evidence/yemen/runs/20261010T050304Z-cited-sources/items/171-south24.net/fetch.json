@@ -1,0 +1,18 @@
+{
+ "n": 171,
+ "url": "https://south24.net/news/newse.php?nid=4542",
+ "dir": "items/171-south24.net",
+ "fetched_at": "2026-10-10T05:03:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://south24.net/news/newse.php?nid=4542",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 9424,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:70"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ccb49adb37fa9a26d50fa498db868b8f734f1f826a1136dae2fd7b28428d8bf4",
+ "raw_ext": "html"
+}

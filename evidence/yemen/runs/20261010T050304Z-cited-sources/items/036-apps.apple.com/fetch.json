@@ -1,0 +1,18 @@
+{
+ "n": 36,
+ "url": "https://apps.apple.com/us/app/-/id6449282553",
+ "dir": "items/036-apps.apple.com",
+ "fetched_at": "2026-10-10T05:03:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://apps.apple.com/us/app/%D9%8A%D9%85%D9%86-%D9%88%D8%A7%D9%84%D8%AA/id6449282553",
+ "content_type": "text/html",
+ "bytes": 64042,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:146"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4bc2fc65d39124e3ff8b92ca67133ae85eefabb5340dd9cf41ee3eaf93bfd1db",
+ "raw_ext": "html"
+}

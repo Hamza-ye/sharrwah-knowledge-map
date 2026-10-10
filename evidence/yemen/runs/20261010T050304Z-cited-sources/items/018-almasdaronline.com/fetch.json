@@ -1,0 +1,18 @@
+{
+ "n": 18,
+ "url": "https://almasdaronline.com/articles/295758",
+ "dir": "items/018-almasdaronline.com",
+ "fetched_at": "2026-10-10T05:03:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://almasdaronline.com/articles/295758",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3433,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:286"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "624e68123c3a42651a5c780ff325c9ea3ac64aff41a4b8058a93916eebc3d7ec",
+ "raw_ext": "html"
+}

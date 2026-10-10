@@ -1,0 +1,18 @@
+{
+ "n": 213,
+ "url": "https://www.cash.com.ye/en/online-shopping",
+ "dir": "items/213-cash.com.ye",
+ "fetched_at": "2026-10-10T05:03:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.cash.com.ye/en/online-shopping",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 10791,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:199"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "62ba77199c13f8d8297b0a9e173b184b44a5061169bccdcc680cba31fd0debd0",
+ "raw_ext": "html"
+}

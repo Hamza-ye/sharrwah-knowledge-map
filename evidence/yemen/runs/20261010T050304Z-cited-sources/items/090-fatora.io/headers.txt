@@ -1,0 +1,30 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:18 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+x-powered-by: PHP/7.4.24
+cf-edge-cache: cache,platform=wordpress
+x-frame-options: SAMEORIGIN
+content-security-policy: frame-ancestors 'self';
+content-security-policy: default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; frame-src *; img-src * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' blob:; worker-src blob:; style-src * 'unsafe-inline'; font-src * data:;
+link: <https://fatora.io/wp-json/>; rel="https://api.w.org/", <https://fatora.io/wp-json/wp/v2/blog/15722>; rel="alternate"; title="JSON"; type="application/json", <https://fatora.io/?p=15722>; rel=shortlink
+vary: Accept-Encoding
+speculation-rules: "/cdn-cgi/speculation"
+access-control-allow-methods: GET,POST
+access-control-allow-headers: Content-Type, Authorization
+permissions-policy: accelerometer=(), autoplay=(self), camera=(self), cross-origin-isolated=(), display-capture=(self), encrypted-media=(), fullscreen=*, geolocation=(self), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(self), midi=(), payment=*, picture-in-picture=*, publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=*, usb=(), xr-spatial-tracking=(), gamepad=(), serial=()
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=i2Ma7%2BlK4JU8GaA4uGYxEKkhFwO8dsiZtE47oD8l3zD%2FSO9UnUbKF8o109N%2BO%2FSsczeSaZPyuVMA8zQQ7CchPYUbMPP6mcXXs6FIjZLj86%2FnSwZpYyerCLt3dA%3D%3D"}]}
+last-modified: Sat, 10 Oct 2026 05:03:18 GMT
+cache-control: max-age=31536000
+cf-cache-status: MISS
+content-encoding: br
+cf-ray: a48313e868bac95b-IAD
+alt-svc: h3=":443"; ma=86400
+

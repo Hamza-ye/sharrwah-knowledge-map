@@ -1,0 +1,21 @@
+{
+ "n": 23,
+ "url": "https://almushahid.net/131223/",
+ "dir": "items/023-almushahid.net",
+ "fetched_at": "2026-10-10T05:03:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://almushahid.net/131223/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 39108,
+ "cited_in": [
+  "yemen-setup-options/report.md:54",
+  "yemen-setup-options/notes/regulation_licensing.md:245",
+  "yemen-setup-options/notes/regulation_licensing.md:289",
+  "yemen-setup-options/notes/regulation_licensing.md:309"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8c132910b445c213d142614cc1f5567210be0efb35dd6a3e4b0e0d4d69032b44",
+ "raw_ext": "html"
+}

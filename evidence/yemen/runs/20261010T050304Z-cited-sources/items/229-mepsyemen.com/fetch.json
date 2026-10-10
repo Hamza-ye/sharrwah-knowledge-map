@@ -1,0 +1,24 @@
+{
+ "n": 229,
+ "url": "https://www.mepsyemen.com/electronic-payment-gateway",
+ "dir": "items/229-mepsyemen.com",
+ "fetched_at": "2026-10-10T05:03:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.mepsyemen.com/electronic-payment-gateway",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 12974,
+ "cited_in": [
+  "yemen-setup-options/report.md:78",
+  "yemen-setup-options/report.md:164",
+  "yemen-setup-options/notes/banks_exchange_cards.md:240",
+  "yemen-setup-options/notes/banks_exchange_cards.md:258",
+  "yemen-setup-options/notes/banks_exchange_cards.md:259",
+  "yemen-setup-options/notes/banks_exchange_cards.md:273",
+  "yemen-setup-options/notes/banks_exchange_cards.md:306"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "782917adb9098dbd7cce01a74a99aa66b5f8d958a0783cb7db25061e10492f46",
+ "raw_ext": "html"
+}

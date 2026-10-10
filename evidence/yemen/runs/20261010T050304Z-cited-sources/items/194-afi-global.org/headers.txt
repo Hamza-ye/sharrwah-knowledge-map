@@ -1,0 +1,29 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+server: nginx
+date: Sat, 10 Oct 2026 05:03:35 GMT
+content-type: text/html; charset=UTF-8
+content-length: 0
+x-powered-by: PHP/8.3.35
+vary: Accept-Encoding,Cookie,User-Agent
+permissions-policy: private-state-token-redemption=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com"), private-state-token-issuance=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com")
+expires: Sat, 10 Oct 2026 06:03:35 GMT
+cache-control: max-age=3600
+x-redirect-by: WordPress
+location: https://afi-global.org/opinion/central-bank-of-yemen-issues-new-mobile-banking-regulations/
+x-cache-status: MISS
+
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 05:03:38 GMT
+content-type: text/html; charset=UTF-8
+x-powered-by: PHP/8.3.35
+vary: Accept-Encoding,Cookie,User-Agent
+permissions-policy: private-state-token-redemption=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com"), private-state-token-issuance=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com")
+link: <https://afi-global.org/wp-json/>; rel="https://api.w.org/", <https://afi-global.org/wp-json/wp/v2/posts/9065>; rel="alternate"; title="JSON"; type="application/json", <https://afi-global.org/?p=9065>; rel=shortlink
+content-encoding: gzip
+x-cache-status: MISS
+

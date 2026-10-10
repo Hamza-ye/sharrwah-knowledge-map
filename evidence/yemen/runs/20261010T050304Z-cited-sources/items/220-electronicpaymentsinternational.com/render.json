@@ -1,0 +1,27 @@
+{
+ "n": 220,
+ "url": "https://www.electronicpaymentsinternational.com/news/unionpay-partners-with-cac-to-issue-payment-cards-in-yemen-291214-4478310",
+ "rendered_at": "2026-10-10T05:11:06Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 403,
+ "final_url": "https://www.electronicpaymentsinternational.com/news/unionpay-partners-with-cac-to-issue-payment-cards-in-yemen-291214-4478310",
+ "title": "403 Forbidden",
+ "text_chars": 123,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "1c3e66739dc5234e0a4eefe631d2f92d430253131eb3563ec98467183c41d643",
+ "browser_headers": {
+  "accept-ranges": "bytes",
+  "content-length": "425",
+  "content-type": "text/html; charset=utf-8",
+  "date": "Sat, 10 Oct 2026 05:11:06 GMT",
+  "retry-after": "0",
+  "server": "Varnish",
+  "strict-transport-security": "max-age=300; includeSubDomains;",
+  "via": "1.1 varnish, 1.1 varnish",
+  "x-cache": "MISS, MISS",
+  "x-cache-hits": "0, 0",
+  "x-datadome": "protected",
+  "x-served-by": "cache-iad-kiad7000131-IAD, cache-iad-kiad7000131-IAD",
+  "x-timer": "S1791609067.977779,VS0,VE9"
+ }
+}

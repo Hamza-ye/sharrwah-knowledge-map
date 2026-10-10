@@ -1,0 +1,21 @@
+{
+ "n": 253,
+ "url": "https://www.wamda.com/2023/02/yemens-pursuit-e-commerce-sector",
+ "dir": "items/253-wamda.com",
+ "fetched_at": "2026-10-10T05:03:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.wamda.com/2023/02/yemens-pursuit-e-commerce-sector",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 15155,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:26",
+  "yemen-setup-options/notes/cash_logistics_practice.md:32",
+  "yemen-setup-options/notes/cash_logistics_practice.md:109",
+  "yemen-setup-options/notes/cash_logistics_practice.md:240"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "58052a86471ac58ec457b95d46fb223e1a5fb8f34cbf498a5dc71e51a52d5d79",
+ "raw_ext": "html"
+}

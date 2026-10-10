@@ -1,0 +1,30 @@
+{
+ "n": 219,
+ "url": "https://www.daraz.pk/refund-policy/",
+ "rendered_at": "2026-10-10T05:11:05Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 200,
+ "final_url": "https://www.daraz.pk/refund-policy/",
+ "title": "Daraz.pk Refund Policy Explained - A Guide to Refund Success",
+ "text_chars": 3932,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "d6cd5ab3a1a298604e1584499acb6c1c528bbec81b4df97b56935743b7a9e898",
+ "browser_headers": {
+  "age": "0",
+  "cache-control": "max-age=60, s-maxage=300",
+  "content-encoding": "gzip",
+  "content-type": "text/html; charset=utf-8",
+  "date": "Sat, 10 Oct 2026 05:11:17 GMT",
+  "eagleeye-traceid": "2140e85217916090768811002e3052",
+  "etag": "W/\"52df8-4vk6aA1tp9LraFICoeSFDE/3XU0\"",
+  "realpath": "page/i/pk/help/refund-policy",
+  "server": "Tengine/Aserver",
+  "strict-transport-security": "max-age=31536000",
+  "timing-allow-origin": "*",
+  "vary": "Accept-Encoding\nAccept-Encoding\nAccept-Encoding, Ali-Detector-Type, Ali-Hng, X-Host, Accept-Encoding, Origin\nUser-Agent",
+  "via": "wormhole-cache033001038195.lazada-sg.os30[287,200-0,M], wormhole-cache033001025203.lazada-sg.os30[289,200-0,M]",
+  "x-cache": "MISS TCP_MISS dirn:-2:-2 mlen:-1",
+  "x-readtime": "282",
+  "x-server-id": "28c3d6b2523ca52c32ad72931842b19a52dd7394745a71be49d9b260456b030ffb18bb2c51009db8166e40d4a73a13ee"
+ }
+}

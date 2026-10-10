@@ -1,0 +1,18 @@
+{
+ "n": 88,
+ "url": "https://exrye.com/currency-converter",
+ "dir": "items/088-exrye.com",
+ "fetched_at": "2026-10-10T05:03:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://exrye.com/currency-converter",
+ "content_type": "text/html",
+ "bytes": 3172,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:238"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e24df8e43c837edd0d3aad7c6a3a142dfb9280b7cc0b6d4b0cbfb18d0adbab0f",
+ "raw_ext": "html"
+}

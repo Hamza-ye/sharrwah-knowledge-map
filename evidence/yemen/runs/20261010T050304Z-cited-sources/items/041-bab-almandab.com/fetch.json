@@ -1,0 +1,19 @@
+{
+ "n": 41,
+ "url": "https://bab-almandab.com/",
+ "dir": "items/041-bab-almandab.com",
+ "fetched_at": "2026-10-10T05:03:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://bab-almandab.com/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 28280,
+ "cited_in": [
+  "yemen-setup-options/report.md:90",
+  "yemen-setup-options/notes/currency_territory.md:125"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a656cda773fcab2e2890e5c7594a66743a5aef1e397be2b48f9699f74194aa63",
+ "raw_ext": "html"
+}

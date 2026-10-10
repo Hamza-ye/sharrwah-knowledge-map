@@ -1,0 +1,36 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 308 
+date: Sat, 10 Oct 2026 05:03:39 GMT
+content-type: text/html; charset=utf-8
+cache-control: public, max-age=0, must-revalidate, no-store
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+location: /middle-east/how-the-houthis-built-a-parallel-economy-in-yemen-2653743
+x-powered-by: Next.js
+speculation-rules: "/cdn-cgi/speculation"
+strict-transport-security: max-age=31536000; includeSubDomains
+cf-cache-status: EXPIRED
+link: </_next/static/media/Isento_Bold2-s.p.2d2wbsqaj6s6f.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/Isento_Book2-s.p.36de4k-66e8xm.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/Isento_Medium2-s.p.32e6xyncrvdsf.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/PlayfairDisplay.p.3u4lli0-axodc.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/chunks/1h_jgmk-99-h6.css>; rel=preload; as="style", </_next/static/chunks/31gn7vxf-pu7w.css>; rel=preload; as="style"
+set-cookie: __cf_bm=UN7rI_R1nNexE1aMnYj4EiAvz6z2Ej6OTIs5eOYjhlg-1791608619.0071454-1.0.1.1-6U9GgEOrlZwbuyO9v6f.hxuuU1Mm0xHVOcij7F9JZC4YJmuOzA3p8oQYoHDl3liImRIfSbToe5M4xXwoFTqhDTIps8b4WzTzy42XZcPIw_i5YznDYtjVVgrfmDlcN0Su; HttpOnly; SameSite=None; Secure; Path=/; Domain=arabnews.com; Expires=Sat, 10 Oct 2026 05:33:39 GMT
+server: cloudflare
+cf-ray: a483146ccb3b4160-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:40 GMT
+content-type: text/html; charset=utf-8
+set-cookie: __cf_bm=AIAbzvphL2ka4G0XC6uQfLoKVv5oZ1lRGUTzhKDBxyI-1791608619.571238-1.0.1.1-sVv_8WECZkEm2c5aB9Ye33ljCFlCU6hAUG4ULAhVT6G4almrReVfMtaN_j6jsN6KG4HrSidWw3YOHt48EJMbbAkYIydZNVk0fESrSsU3xMsCPdf5jYn6oWFLMdzjf32P; HttpOnly; SameSite=None; Secure; Path=/; Domain=arabnews.com; Expires=Sat, 10 Oct 2026 05:33:40 GMT
+cache-control: public, max-age=0, must-revalidate, no-store
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+x-nextjs-cache: MISS
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 60
+x-powered-by: Next.js
+speculation-rules: "/cdn-cgi/speculation"
+strict-transport-security: max-age=31536000; includeSubDomains
+cf-cache-status: EXPIRED
+content-encoding: br
+server: cloudflare
+cf-ray: a48314705e374160-IAD
+alt-svc: h3=":443"; ma=86400
+

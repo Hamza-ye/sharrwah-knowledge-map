@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>YETI | Yemen Economic Tracking Initiative</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Yemen Economy Tracker Initiative">
+
+
+  <link rel="stylesheet" href="/staticfiles/css/aos.css" />
+  <link rel="stylesheet" href='/staticfiles/css/global.css'>
+  <link rel="stylesheet" href='/staticfiles/css/bootstrap.css'>
+  <!-- bootstrap_mods.css has been removed -->
+  <link rel="stylesheet" href="/staticfiles/css/select2.min.css">
+
+  <script src="/staticfiles/js/aos.js"></script>
+  <script src="/staticfiles/js/jquery.min.js"></script>
+  <script src="/staticfiles/js/popper.min.js"></script>
+  <script src="/staticfiles/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/staticfiles/css/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="/staticfiles/images/favicon.ico" />
+  
+  <style>
+    @font-face {
+    font-family: 'gt_sectra_italic';
+    src: local('gt_sectra_italic'), url("/staticfiles/fonts/gt_sectra_display_regular_italic.ttf") format("truetype");
+    font-weight: normal;
+    }
+    @font-face {
+    font-family: 'gt_sectra_italic';
+    src: local('gt_sectra_italic'), url("/staticfiles/fonts/gt_sectra_display_medium_italic.ttf") format("truetype");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: 'breve_ss_italic';
+    src: local('breve_ss_italic'), url("/staticfiles/fonts/breve_sans_text_book_italic.ttf") format("truetype");
+    font-weight: normal;
+    }
+    @font-face {
+      font-family: 'breve_text_book';
+      src: local('breve_text_book'), url("/staticfiles/fonts/breve_text_book.ttf") format("truetype");
+    }
+    @font-face {
+      font-family: 'breve_news_book';
+      src: local('breve_news_book'), url("/staticfiles/fonts/breve_news_book.ttf") format("truetype");
+    }
+    @font-face {
+    font-family: 'breve_title_black';
+    src: local('breve_title_black'), url("/staticfiles/fonts/breve_title_black.ttf") format("truetype");
+    }
+    @font-face {
+      font-family: 'breve_title_book_italic';
+      src: local('breve_title_book_italic'), url("/staticfiles/fonts/breve_title_book_italic.ttf") format("truetype");
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'breve_title_italic';
+      src: local('breve_title_italic'), url("/staticfiles/fonts/breve_title_light_italic.ttf") format("truetype");
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'breve_title';
+      src: local('breve_title'), url("/staticfiles/fonts/breve_title_light.ttf") format("truetype");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'noto_naskh';
+      src: local('noto_naskh'), url("/staticfiles/fonts/noto_naskh_arabic_variable.ttf") format("truetype");
+    }
+  </style>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2D6ZG9M4S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R2D6ZG9M4S');
+  </script>
+  <script>
+    window.importTrendData = {"FUEL": {"Ras Isa": {"2026-02": 109397.0, "2025-10": 188296.0, "2025-11": 143436.0, "2026-01": 97448.0, "2026-04": 47291.0, "2026-07": 115089.0, "2025-12": 64060.0, "2026-05": 87916.0}, "Aden": {"2025-12": 56242.0, "2026-08": 15022.0, "2026-02": 28221.0, "2025-11": 58385.0, "2026-09": 40001.0, "2026-05": 4839.0, "2026-01": 34514.0, "2026-03": 11020.0, "2026-06": 33946.0, "2026-04": 21904.0, "2026-07": 43724.0, "2025-10": 10495.0}, "Al Mukalla": {"2026-03": 17789.0, "2026-09": 9448.0, "2026-06": 43829.0, "2026-05": 27993.0, "2026-08": 21584.0, "2025-12": 17634.0, "2026-02": 17531.0, "2025-10": 33323.0, "2026-01": 3619.0}}, "FOOD": {"Ras Isa": {"2025-12": 20005.0, "2025-10": 7200.0, "2026-06": 28863.0, "2026-05": 3195.0, "2025-11": 23056.0, "2026-04": 13032.0, "2026-02": 22597.0, "2026-07": 2703.0, "2026-03": 71358.0, "2026-01": 60203.0, "2026-08": 5499.0, "2026-09": 4292.0}, "Aden": {"2025-10": 122800.0, "2025-12": 137204.0, "2026-04": 91432.0, "2026-02": 77503.0, "2026-06": 128611.0, "2026-05": 97709.0, "2026-01": 150355.0, "2026-08": 100046.0, "2026-03": 158034.0, "2025-11": 84457.0, "2026-07": 84435.0, "2026-09": 40900.0, "2026-10": 13973.0}, "Saleef": {"2026-04": 378597.0, "2026-01": 453349.0, "2026-03": 396660.0, "2026-02": 292701.0, "2025-10": 378923.0, "2025-12": 436188.0, "2026-05": 188670.0, "2026-08": 331784.0, "2026-06": 403175.0, "2026-07": 296249.0, "2026-09": 390469.0, "2025-11": 427582.0}, "Hodeidah": {"2026-05": 87966.0, "2026-03": 192908.0, "2026-07": 95069.0, "2026-09": 184252.0, "2026-08": 158054.0, "2026-01": 177360.0, "2025-11": 145655.0, "2026-04": 103506.0, "2026-10": 8828.0, "2025-12": 144141.0, "2026-06": 132490.0, "2025-10": 134720.0, "2026-02": 96753.0}, "Al Mukalla": {"2026-01": 12378.0, "2025-12": 50467.0, "2025-10": 12000.0, "2026-04": 15800.0, "2026-09": 38400.0, "2026-06": 12000.0, "2026-07": 7700.0, "2026-03": 50624.0, "2025-11": 13997.0, "2026-02": 12000.0}}};
+    window.importSingleMonthData = {"FOOD": {"Hodeidah": 8828.0, "Aden": 13973.0}};
+    window.importPipelineData = {"FOOD": {"Up to 1 month": 2.0}};
+    window.importMonthlyAverages = {"FOOD": 493398.0720720721, "FUEL": 328692.0909090909};
+  </script>
+</head>
+
+<body id="whoarewe">
+  
+<header class="header shadow">
+	<div class="menu-overlay"></div>
+	<div id="site-header">
+		<nav id="main-nav" class="main-nav-overlay">
+			<ul class="overlay-content">
+				<li class="menu__item_ho"><a title="Who are we link" href="/whoarewe/#whoarewe">Who are we</a></li>
+				<li class="menu__item_ho"><a title="Our donors and partners link" href="/whoarewe/#donors">Our donors
+						and partners</a></li>
+				<li class="menu__item_ho"><a title="Our methodology link" href="/whoarewe/#methodology">Our
+						methodology</a></li>
+				<li class="menu__item_ho"><a title="Resources link" href="/resources">Datasets and reports</a></li>
+				<li class="menu__item_ho"><a title="Contact us link" href="/whoarewe/#contact">Contact us</a></li>
+				
+			</ul>
+		</nav>
+		<div class="modules-menu-dropdown">
+			<div class="container-dropdown">
+				<div class="dropdown-list">
+					<a title="page Imports link" href="/imports/">
+						<p class="drop-item">Imports</p>
+					</a>
+					<a title="page Exchange rate and commodity price link" class="has-arabic-page" href="/xr-commodities/">
+						<p class="drop-item">Exchange rate and commodity price</p>
+					</a>
+					<a title="page Interactive monitoring timeline link" href="/monitoring-timeline/">
+						<p class="drop-item">Interactive monitoring timeline</p>
+					</a>
+					<a title="page IPC food emergency analysis link" href="/ipc/">
+						<p class="drop-item">IPC food emergency analysis</p>
+					</a>
+					<a title="page Cost driver monitoring tool" href="/cost-driver/">
+						<p class="drop-item">Cost driver monitoring tool</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-inner">
+			<div class="header-item" id="site-logo">
+				<a title="home link" class="has-arabic-page" href="/">
+					<img id="yeti-logo-header" alt="YETI" src='/staticfiles/images/yeti_logo_header.svg'>
+				</a>
+			</div>
+			<div class="header-item" id="menus">
+				<div class="menu-container">
+					<div class="item">
+						<div class="item" id="language-select" style="display: none">
+							<a id="en-link" href="#"><span>EN</span></a>
+							<a id="ar-link" href="#"><span>AR</span></a>
+						</div>
+
+					</div>
+					<div class="item" id="modules-menu">
+						<button title="toggle module's menu" name="toggle module's menu" class="modules-menu-button">
+							Modules
+							<img alt="arrow down" class="arrow-icon" src='/staticfiles/images/arrow_down.svg'>
+						</button>
+					</div>
+					<div class="item" id="account">
+						
+						<a title="login link" href="/login/">
+							<img alt="Log in" id="header-user-icon" src='/staticfiles/images/header_login_icon.svg'>
+						</a>
+						
+					</div>
+
+					<div class="item burger-menu" id="burger">
+						<button title="toggle menu" name="toggle menu" id="nav-icon3" class="iconburger"
+							onclick="toggleNav()">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			// So we have arabic versions of the homepage (/) and xr-commodities (/xr-commodities/).
+			// on these pages we want to show the language select dropdown
+			// also if the user is on an arabic page, the other pages when clicked should take to the arabic version .e.g. /xr-commodities/ should take to /ar/xr-commodities/ and vice versa
+
+			const currentPath = window.location.pathname;
+			const arabicPages = ['/ar/', '/ar/xr-commodities/'];
+			const englishPages = ['/', '/xr-commodities/'];
+
+			if (arabicPages.includes(currentPath)) {
+				$('#language-select').show();
+				$('#en-link').attr('href', englishPages[arabicPages.indexOf(currentPath)]);
+				$('#ar-link').attr('href', currentPath);
+				$('#ar-link').css('color', '#000');
+
+				// if the user is on an arabic page, the other pages when clicked should take to the arabic version .e.g. /xr-commodities/ should take to /ar/xr-commodities/ and vice versa
+				$('.has-arabic-page').each(function () {
+					console.log('The elemnt', $(this));
+					const href = $(this).attr('href');
+					$(this).attr('href', '/ar' + href);
+				});
+
+			} else if (englishPages.includes(currentPath)) {
+				$('#language-select').show();
+				$('#en-link').attr('href', currentPath);
+				$('#ar-link').attr('href', arabicPages[englishPages.indexOf(currentPath)]);
+				$('#en-link').css('color', '#000');
+			}
+
+		})
+	</script>
+
+</header>
+
+  <div class="content-container module">
+    <div class="content">
+      
+	<link rel="stylesheet" href="/staticfiles/yeti_module_2_xr_commodities/css/xr_commodities.css">
+	<link rel="stylesheet" href="/staticfiles/css/nouislider.min.css" />
+	<style>
+		.select2-results__option[aria-selected="true"]:after {
+			content: "\2713"; /* Unicode for a check mark */
+			color:#212529; /* Color of the check mark */
+			padding-left: 10px;
+			right: 0;
+			position: absolute;
+		}
+	</style>
+
+	<div class="swup swup-transition-fade">
+		<div class="module-header shadow color_2 autohide" id="monitoring-timeline">
+			
+<div class="fluid-container scroll-container">
+  <div class="d-flex flex-wrap justify-content-center justify-content-md-between">
+    <div id="module-title-container">
+      <nav class="module-name-block py-2">
+        <div class="left-arrow slideaction order-1"><a title="previous module link" class="swuplink"
+            href="/imports/"><img
+              alt="arrow left" src='/staticfiles/images/arrow_left.svg'></a>
+        </div>
+        <div class="right-arrow slideaction order-3 order-md-2"><a title="next module link" class="swuplink"
+            href="/monitoring-timeline/"><img
+              alt="arrow right" src='/staticfiles/images/arrow_right.svg'></a>
+        </div>
+        <div class="name order-2 order-md-3">Exchange rate and commodity prices</div>
+      </nav>
+    </div>
+    <div id="module-number-container" class="ms-auto">
+      <div class="module-number-block">
+        <nav class="module-number-list slideaction d-flex align-items-strech">
+          <a title="imports link" class="swuplink "
+            href="/imports/"><span>1</span></a>
+          <a title="xr commodities link" class="swuplink  active "
+            href="/xr-commodities/"><span>2</span></a>
+          <a title="monitoring timeline link" class="swuplink "
+            href="/monitoring-timeline/"><span>3</span></a>
+          <a title="ipc link" class="swuplink " href="/ipc/"><span>4</span></a>
+          <a title="cost driver tool link" class="swuplink "
+            href="/cost-driver/"><span>5</span></a>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+</div>
+		</div>
+	</div>
+	
+<div id="key_indicator_button" class="key_indicator_button circle-row">
+    <div class="circle-wrapper">
+      <div class="scroll-text">
+        See key indicators 
+      </div>
+    </div>
+</div>
+<div
+  id="key_indicator_block"
+  class="key-indicators-row circle-block js-food-basket-source close"
+  data-food-basket-date="Sunday, December 22, 2024"
+  data-food-basket-sanaa="43300"
+  data-food-basket-aden="130366"
+  data-food-basket-sanaa-date="Sunday, December 22, 2024"
+  data-food-basket-aden-date="Saturday, August 22, 2026"
+  data-import-latest-date="Fuel: Tuesday, September 01, 2026 | Food: Thursday, October 01, 2026"
+  data-import-latest-food-date="Thursday, October 01, 2026"
+  data-import-latest-fuel-date="Tuesday, September 01, 2026"
+  data-import-latest-food-total="22801"
+  data-import-latest-fuel-total="49449"
+>
+  <div class="content-wrapper position-relative">
+    <div class="indicators_close bgcolor_2"><img alt="close" src='/staticfiles/images/times_light.svg'></div>
+    <div class="text-wrapper pb-2">
+      <div class="info pb-4">
+      The key indicators at a glance
+      </div>
+    </div>
+    <div class="key-indicators-wrapper ">
+      <div class="item">
+        <div class="title">Current exchange rate</div>
+        <div class="date">Thursday, October 08, 2026</div>
+        <div class="figures-container">
+          <div class="figure-detail">
+            <div class="title">Old Notes - Sana'a</div>
+            <div class="subtitle">USD / YER</div>
+            <div class="figure">533</div>
+          </div>
+          <div class="figure-detail">
+            <div class="title">New Notes - Aden</div>
+            <div class="subtitle">USD / YER</div>
+            <div class="figure">1,576</div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="title">Food Basket Price</div>
+        <div class="date">
+          <span class="js-food-basket-field" data-field="sanaaDate">Sunday, December 22, 2024</span>
+          <span> | </span>
+          <span class="js-food-basket-field" data-field="adenDate">Saturday, August 22, 2026</span>
+        </div>
+        <div class="figures-container">
+          <div class="figure-detail">
+            <div class="title">Old Notes - Sana'a</div>
+            <div class="figure js-food-basket-field" data-field="sanaa">43,300</div>
+          </div>
+          <div class="figure-detail">
+            <div class="title">New Notes - Aden</div>
+            <div class="figure js-food-basket-field" data-field="aden">130,366</div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="title">Food and Fuel Import - Monthly Volumes</div>
+        <div class="date">
+          <span class="js-import-latest-date-field" data-field="fuelDate">Tuesday, September 01, 2026</span>
+          <span> | </span>
+          <span class="js-import-latest-date-field" data-field="foodDate">Thursday, October 01, 2026</span>
+        </div>
+        <div class="figures-container">
+          <div class="figure-detail">
+            <div class="title">Fuel Import (MT)</div>
+            <div class="figure js-import-total" data-cargo-group="FUEL">49,449</div>
+          </div>
+          <div class="figure-detail">
+            <div class="title">Food Import (MT)</div>
+            <div class="figure js-import-total" data-cargo-group="FOOD">22,801</div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="title">Number of<br>Monitoring Events</div>
+        <div class="date">September 24, 2026</div>
+        <div class="figures-container noline">
+          <div class="figure-detail">
+            <div class="title"> </div>
+            <div class="figure">5,303</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">Unofficial exchange rates sourced from <br><a title="source link" href="https://telegram.me/yemensul">YemenSul, Telegram.</a></div>
+    <!-- this is hacky but it prevents the key indicator information overflowing.. -->
+    <div style="margin-bottom: 2rem;"></div>
+  </div>
+</div>
+<script src="/staticfiles/js/key_indicators.js"></script>
+
+	<div class="swup swup-transition-slide module-contents monitoring-timeline imggrid">
+		<!-- Title -->
+		<div class="top-row d-flex align-items-center borderbottom magrid imggrid">
+			<div class="container-fluid ">
+				<div class="row pb-5 pt-md-5 align-items-center">
+					<div class="page-page-description-container col-8 col-md-4 offset-3 offset-md-2 col-xl-4 order-2 order-md-1"
+						data-aos="fade-right">
+						<div class="module-number" data-aos="fade-down">2</div>
+						<h1 class="title">Exchange rate and commodity prices</h1>
+						<div class="description">
+							The exchange rate and commodity price module provides policymakers with timely, accurate,
+							and targeted information on economic trends and developments, focusing on exchange rates and
+							commodity prices to support analyses and policies that help alleviate the economic and
+							humanitarian situation in Yemen.
+						</div>
+					</div>
+					<div class="hero-image-container col-10 col-md-5 col-lg-6 col-xl-5 offset-1 offset-md-0 order-1 order-md-2 mt-5 mt-md-0"
+						data-aos="fade-left">
+						<div class="image-container">
+							<img alt="illustration header" src='/staticfiles/yeti_module_2_xr_commodities/images/commodities_1.png'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div>
+			<div class="row">
+				<div class="col-2 d-none d-xxl-block pb-5 borderright">
+					<div class="container_text_port overflow-hidden aos-init aos-animate" data-aos="fade-right">
+						<h4 class="verticaltext ports tab-pane fade show rcc-filters-vertical-text historic-tool-sidebar"
+							role="tab" id="cdmt-sidebar" style="top: 2.9px; right: 45px;"> <svg
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+								version="1.1" width="40px" height="40px" viewBox="0 0 381 385" xml:space="preserve">
+								<desc>Created with Fabric.js 5.3.0</desc>
+								<defs></defs>
+								<g transform="matrix(1 0 0 1 210.4101216814 62.3550884956) rotate(90)"
+									id="BvsZwAU030c7zABXudEBD">
+									<path style="fill: white; fill-opacity: 1;" transform=" translate(0, 0.000005)"
+										d="M 14.58656 16.00774 L -14.58656 -16.00775" stroke-linecap="round"></path>
+								</g>
+								<g transform="matrix(1 0 0 1 195.8235619469 184.6211283186) rotate(90)"
+									id="JnmGOqDsqZXYdnFil7fnO">
+									<path style="fill: white; fill-opacity: 1;"
+										transform=" translate(0.000015, 0.00001)"
+										d="M 1.91648 -137.77378 C -11.28595 -118.60896 -21.50719 -107.11005999999999 -21.50719 -107.11005999999999 L -53.02268 -76.87222999999999 L -90.92644 -46.634399999999985 L -127.97843 -24.062499999999986 L -143.31029 -15.970689999999985 L -147.56914 -13.841269999999986 L -135.21848 -3.1941499999999863 L -127.97844 7.878860000000014 L -107.11008000000001 33.006070000000015 L -99.87004000000002 47.06027000000002 L -82.40876000000002 35.13549000000002 L -65.37336000000002 23.21071000000002 L -50.04150000000002 7.8788500000000194 L -35.98730000000002 -8.304779999999981 L -41.097920000000016 47.06026000000002 L -41.097920000000016 70.90982000000002 L -41.097920000000016 109.66535000000002 L -41.097920000000016 137.77376 L 44.50495999999998 137.77376 L 44.50495999999998 109.66535000000002 L 44.50495999999998 70.90982000000002 L 44.50495999999998 47.06026000000003 L 41.523769999999985 -8.304779999999973 L 55.577969999999986 7.878850000000028 L 72.18748 23.210710000000027 L 86.66757 35.135490000000026 L 101.57354 47.060270000000024 L 113.49831999999999 33.00607000000002 L 130.9596 7.878860000000021 L 141.60672 -3.194149999999979 L 147.56911 -13.841269999999978 L 130.9596 -24.06250999999998 L 98.16646 -46.634409999999974 L 58.98504 -76.87223999999998 L 28.321319999999996 -107.11006999999998"
+										stroke-linecap="round"></path>
+								</g>
+							</svg><span class="portname cdmt-sidebar-text" id="sidebar-currency">YER</span><svg
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+								version="1.1" width="40px" height="40px" viewBox="0 0 381 385" xml:space="preserve">
+								<desc>Created with Fabric.js 5.3.0</desc>
+								<defs></defs>
+								<g transform="matrix(1 0 0 1 210.4101216814 62.3550884956) rotate(90)"
+									id="BvsZwAU030c7zABXudEBD">
+									<path style="fill: white; fill-opacity: 1;" transform=" translate(0, 0.000005)"
+										d="M 14.58656 16.00774 L -14.58656 -16.00775" stroke-linecap="round"></path>
+								</g>
+								<g transform="matrix(1 0 0 1 195.8235619469 184.6211283186) rotate(90)"
+									id="JnmGOqDsqZXYdnFil7fnO">
+									<path style="fill: white; fill-opacity: 1;"
+										transform=" translate(0.000015, 0.00001)"
+										d="M 1.91648 -137.77378 C -11.28595 -118.60896 -21.50719 -107.11005999999999 -21.50719 -107.11005999999999 L -53.02268 -76.87222999999999 L -90.92644 -46.634399999999985 L -127.97843 -24.062499999999986 L -143.31029 -15.970689999999985 L -147.56914 -13.841269999999986 L -135.21848 -3.1941499999999863 L -127.97844 7.878860000000014 L -107.11008000000001 33.006070000000015 L -99.87004000000002 47.06027000000002 L -82.40876000000002 35.13549000000002 L -65.37336000000002 23.21071000000002 L -50.04150000000002 7.8788500000000194 L -35.98730000000002 -8.304779999999981 L -41.097920000000016 47.06026000000002 L -41.097920000000016 70.90982000000002 L -41.097920000000016 109.66535000000002 L -41.097920000000016 137.77376 L 44.50495999999998 137.77376 L 44.50495999999998 109.66535000000002 L 44.50495999999998 70.90982000000002 L 44.50495999999998 47.06026000000003 L 41.523769999999985 -8.304779999999973 L 55.577969999999986 7.878850000000028 L 72.18748 23.210710000000027 L 86.66757 35.135490000000026 L 101.57354 47.060270000000024 L 113.49831999999999 33.00607000000002 L 130.9596 7.878860000000021 L 141.60672 -3.194149999999979 L 147.56911 -13.841269999999978 L 130.9596 -24.06250999999998 L 98.16646 -46.634409999999974 L 58.98504 -76.87223999999998 L 28.321319999999996 -107.11006999999998"
+										stroke-linecap="round"></path>
+								</g>
+							</svg><span class="portname cdmt-sidebar-text" id="sidebar-timelapse">MONTHLY</span><br><svg
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+								version="1.1" width="40px" height="40px" viewBox="0 0 381 385" xml:space="preserve">
+								<desc>Created with Fabric.js 5.3.0</desc>
+								<defs></defs>
+								<g transform="matrix(1 0 0 1 210.4101216814 62.3550884956) rotate(90)"
+									id="BvsZwAU030c7zABXudEBD">
+									<path style="fill: white; fill-opacity: 1;" transform=" translate(0, 0.000005)"
+										d="M 14.58656 16.00774 L -14.58656 -16.00775" stroke-linecap="round"></path>
+								</g>
+								<g transform="matrix(1 0 0 1 195.8235619469 184.6211283186) rotate(90)"
+									id="JnmGOqDsqZXYdnFil7fnO">
+									<path style="fill: white; fill-opacity: 1;"
+										transform=" translate(0.000015, 0.00001)"
+										d="M 1.91648 -137.77378 C -11.28595 -118.60896 -21.50719 -107.11005999999999 -21.50719 -107.11005999999999 L -53.02268 -76.87222999999999 L -90.92644 -46.634399999999985 L -127.97843 -24.062499999999986 L -143.31029 -15.970689999999985 L -147.56914 -13.841269999999986 L -135.21848 -3.1941499999999863 L -127.97844 7.878860000000014 L -107.11008000000001 33.006070000000015 L -99.87004000000002 47.06027000000002 L -82.40876000000002 35.13549000000002 L -65.37336000000002 23.21071000000002 L -50.04150000000002 7.8788500000000194 L -35.98730000000002 -8.304779999999981 L -41.097920000000016 47.06026000000002 L -41.097920000000016 70.90982000000002 L -41.097920000000016 109.66535000000002 L -41.097920000000016 137.77376 L 44.50495999999998 137.77376 L 44.50495999999998 109.66535000000002 L 44.50495999999998 70.90982000000002 L 44.50495999999998 47.06026000000003 L 41.523769999999985 -8.304779999999973 L 55.577969999999986 7.878850000000028 L 72.18748 23.210710000000027 L 86.66757 35.135490000000026 L 101.57354 47.060270000000024 L 113.49831999999999 33.00607000000002 L 130.9596 7.878860000000021 L 141.60672 -3.194149999999979 L 147.56911 -13.841269999999978 L 130.9596 -24.06250999999998 L 98.16646 -46.634409999999974 L 58.98504 -76.87223999999998 L 28.321319999999996 -107.11006999999998"
+										stroke-linecap="round"></path>
+								</g>
+							</svg><span class="portname cdmt-sidebar-text" id="sidebar-from-date">IRG</span><svg
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+								version="1.1" width="40px" height="40px" viewBox="0 0 381 385" xml:space="preserve">
+								<desc>Created with Fabric.js 5.3.0</desc>
+								<defs></defs>
+								<g transform="matrix(1 0 0 1 210.4101216814 62.3550884956) rotate(90)"
+									id="BvsZwAU030c7zABXudEBD">
+									<path style="fill: white; fill-opacity: 1;" transform=" translate(0, 0.000005)"
+										d="M 14.58656 16.00774 L -14.58656 -16.00775" stroke-linecap="round"></path>
+								</g>
+								<g transform="matrix(1 0 0 1 195.8235619469 184.6211283186) rotate(90)"
+									id="JnmGOqDsqZXYdnFil7fnO">
+									<path style="fill: white; fill-opacity: 1;"
+										transform=" translate(0.000015, 0.00001)"
+										d="M 1.91648 -137.77378 C -11.28595 -118.60896 -21.50719 -107.11005999999999 -21.50719 -107.11005999999999 L -53.02268 -76.87222999999999 L -90.92644 -46.634399999999985 L -127.97843 -24.062499999999986 L -143.31029 -15.970689999999985 L -147.56914 -13.841269999999986 L -135.21848 -3.1941499999999863 L -127.97844 7.878860000000014 L -107.11008000000001 33.006070000000015 L -99.87004000000002 47.06027000000002 L -82.40876000000002 35.13549000000002 L -65.37336000000002 23.21071000000002 L -50.04150000000002 7.8788500000000194 L -35.98730000000002 -8.304779999999981 L -41.097920000000016 47.06026000000002 L -41.097920000000016 70.90982000000002 L -41.097920000000016 109.66535000000002 L -41.097920000000016 137.77376 L 44.50495999999998 137.77376 L 44.50495999999998 109.66535000000002 L 44.50495999999998 70.90982000000002 L 44.50495999999998 47.06026000000003 L 41.523769999999985 -8.304779999999973 L 55.577969999999986 7.878850000000028 L 72.18748 23.210710000000027 L 86.66757 35.135490000000026 L 101.57354 47.060270000000024 L 113.49831999999999 33.00607000000002 L 130.9596 7.878860000000021 L 141.60672 -3.194149999999979 L 147.56911 -13.841269999999978 L 130.9596 -24.06250999999998 L 98.16646 -46.634409999999974 L 58.98504 -76.87223999999998 L 28.321319999999996 -107.11006999999998"
+										stroke-linecap="round"></path>
+								</g>
+							</svg><span class="portname cdmt-sidebar-text" id="sidebar-to-date">AL HODEIDAH</span>
+						</h4>
+					</div>
+				</div>
+				<div id="xr" class="col-12 col-xxl-10 m-0 p-0">
+
+					<!-- Daily exchange rate tracker -->
+					<div id="dert">
+
+						<!-- Heading component -->
+						<div class="heading-title">
+							<div>
+								<h2 class="title">Daily exchange rate tracker</h2>
+							</div>
+						</div>
+						<div class="heading top-heading">
+							<div class="de-time-slider-container">
+								<div class="de-time-slider">
+									<div
+										class="col-sm-5 d-flex align-items-center justify-content-center pl-lg-3 xr__filter-container slider-container w-100">
+										<div class="w-100">
+											<!-- column when small, row when xl or more -->
+											<div class="d-flex flex-column flex-xl-row w-100 justify-content-between">
+												<p
+													class="w-100 xr__filter-title d-flex align-items-center justify-content-center justify-content-xl-start">
+													Select a time period</p>
+												<div
+													class="d-flex flex-row time-period-container justify-content-center justify-content-xl-between">
+													<div class="d-flex flex-row xr-input align-items-center">
+														<label for="dert-time-period-from"
+															class="form-label mb-0 text-end mr-1">
+															<small class="bulky-text">From</small>
+														</label>
+														<input type="text" class="form-control time-period"
+															id="dert-time-period-from" value="2018-05-21">
+													</div>
+													<div class="d-flex flex-row xr-input align-items-center">
+														<label for="dert-time-period-to"
+															class="form-label mb-0 text-end mr-1">
+															<small class="bulky-text">To</small>
+														</label>
+														<input type="text" class="form-control time-period"
+															id="dert-time-period-to" value="2026-10-10">
+													</div>
+												</div>
+											</div>
+											<div class="mt-4" id="dert-slider"></div>
+										</div>
+									</div>
+
+								</div>
+								<div class="de-time-slider-disclaimer">
+									<div class="de-time-slider-disclaimer-text">
+										<p>
+											Unofficial exchange rates sources from YemenSul, Telegram
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="de-body">
+							<!-- Graph -->
+							<div class="de-graph-container">
+								<div class="de-graph chart-block">
+									<div
+										class="d-flex row justify-content-center flex-column flex-lg-row align-items-center align-content-center chart-block-scale">
+										<div class="graph-container col-lg-8 aos-init aos-animate" data-aos="fade"
+											data-delay="500">
+											<canvas id="line-chart"
+												style="display: block; width: 100%; height: 100%;"></canvas>
+										</div>
+										<div class="key-figures-container col-lg-4 aos-init aos-animate"
+											data-aos="fade-left" data-delay="500">
+											<div class="titles order-2 order-md-1">
+												<div class="title">Current Exchange Rate</div>
+												<div class="subtitle">
+													Thursday, October 08, 2026
+												</div>
+											</div>
+											<div class="figures-container order-3 order-md-2 mb-3">
+												<div class="figure-container">
+													<div class="heading">Old Notes - Sana'a</div>
+													<div class="figure" id="old-notes-figure">
+														533
+													</div>
+													<div id="old-notes-comparison" class="figure-comparison">
+														<span class="arrow-up"></span>
+														<span>
+															12.3%
+														</span>
+													</div>
+												</div>
+												<div class="figure-container">
+													<div class="heading">New Notes - Aden</div>
+													<div class="figure" id="new-notes-figure">
+														1,576
+													</div>
+													<div id="new-notes-comparison" class="figure-comparison">
+														<span class="arrow-down"></span>
+														<span>
+															12.3%
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="graph-legend mt-auto order-1 order-md-3">
+												<div class="legend-item">
+													<span class="dot" id="sanaa"></span>
+													<span class="label">Old Notes - Sana'a</span>
+												</div>
+												<div class="legend-item">
+													<span class="dot" id="aden"></span>
+													<span class="label">New Notes - Aden</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Content -->
+							<div class="de-content">
+								<div class="de-content-body">
+									<span class="bulky-text">
+										YEMEN TWO CURRENCY SYSTEM:
+									</span>
+									<br /><br />
+									<span>
+										In January 2020, the Central Bank of Yemen (CBY) in Sana'a banned the
+										circulation of new Yemeni rial (YER) banknotes issued by the Internationally
+										Recognized Government (IRG) controlled CBY in Aden. As a result, Yemen
+										currently
+										has two YER currency areas in place. Old banknotes are used in the de-facto
+										authority (DFA) areas in the north of Yemen (also known as the Houthis), and
+										new
+										banknotes are used in the Internationally Recognized Government (IRG)
+										controlled
+										south and east of Yemen.
+									</span><br /><br />
+									<span class="bulky-text">
+										WAGES:
+									</span>
+									<br /><br />
+									<span>
+
+										Based on interviews, the current average wage for a Yemeni teacher is YER
+										60,000
+										per month. This figure can be used to calculate purchasing power.
+									</span>
+								</div>
+								<div class="de-content-body">
+									<span class="bulky-text">
+										CONTEXT:
+									</span>
+									<br /><br />
+									<span>
+										In recent years, CBY Aden has printed new YER banknotes to finance the IRG
+										budget-deficit and to replace damaged banknotes in circulation. However, CBY
+										Aden's reliance on the issuance of new notes has created downward pressure
+										on
+										the exchange rate of YER against USD causing higher prices of goods and
+										services
+										on consumers. As a result, the value of new YER banknotes has witnessed a
+										series
+										of significant depreciation events.
+									</span>
+									<div class="de-content-body">
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div id="rcc">
+
+						<!-- Heading -->
+						<div class="heading">
+							<div>
+								<h2 class="title">Regional commodity comparison</h2>
+							</div>
+						</div>
+
+						<!-- Options -->
+						<div class="row bg-white align-items-center justify-content-center regional-filters m-0">
+							<div class="col-6 col-lg-9 z-index-0">
+								<div class="row p-0 d-flex flex-md-column flex-lg-row rcc-options-row">
+
+									<!-- Time Period -->
+									<div
+										class="col-sm-5 bg-white d-flex align-items-center border-bottom xr__filter-container w-100">
+										<!-- Date Selection -->
+										<div id="regional-time-period" class="xr__filter-box justify-content-center">
+											<div class="d-flex flex-column flex-xl-row w-100 justify-content-center">
+												<p
+													class="w-100 xr__filter-title mb-0  d-flex align-items-center justify-content-center justify-content-lg-start">
+													Select a time period</p>
+												<div
+													class="d-flex flex-row flex-wrap time-period-container justify-content-center justify-content-xl-between gap-2 ">
+													<div
+														class="d-flex flex-column flex-lg-row flex-xl-column xr-input align-items-center justify-content-center">
+														<label for="rcc-time-period-from"
+															class="form-label mb-0 text-lg-end mr-1">
+															<small class="bulky-text">From</small>
+														</label>
+														<input type="text" class="form-control time-period"
+															id="rcc-time-period-from" value="2018-05-21">
+													</div>
+
+													<div
+														class="d-flex  flex-column flex-lg-row flex-xl-column  xr-input align-items-center justify-content-center">
+														<label for="rcc-time-period-to"
+															class="form-label mb-0 text-lg-end mr-1">
+															<small class="bulky-text">To</small>
+														</label>
+														<input type="text" class="form-control time-period"
+															id="rcc-time-period-to" value="2026-10-10">
+													</div>
+												</div>
+											</div>
+											<div class="d-none d-lg-block mt-4" id="rcc-slider"></div>
+										</div>
+										<!-- Select Timelappse -->
+										<div class="d-none d-lg-flex flex-column flex-xxl-row regional-timelapse">
+											<p class="w-100 mb-3 xr__filter-title">Select a timelapse</p>
+											<select class="form-select" id="rcc-timelapse">
+												<option value="Monthly">Monthly</option>
+												<option value="Yearly">Yearly</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+								<div class="row rcc-options-row" style="height:230px">
+
+									<!-- Multi Commodity and Source -->
+									<div
+										class="col-sm-4 col-md-6 bg-white align-items-center d-flex justify-content-center pl-3 xr__filter-container commmodity-and-source-container">
+
+										<!-- Multi Commodity Selector -->
+										<div id="commodity" class="xr__filter-box w-100">
+											<div>
+												<p class="w-100 mb-0 xr__filter-title">Select commodity and source</p>
+												<p class="w-100 mb-0 xr__filter-subtitle">
+													You can select up to 3 commodities
+												</p>
+											</div>
+
+											<div
+												class="d-flex align-items-center flex-wrap w-100 justify-content-center justify-content-lg-start commodity-and-source-select">
+												<div class="mb-xl-0 mb-2 d-flex flex-column w-75 position-relative">
+													<select class="form-select" id="rcc-commodity-multi"
+														multiple="multiple">
+														<optgroup id="reach-source-internal-dropdown"
+															data-language="english" label="REACH">
+														</optgroup>
+														<optgroup id="wfp-source-internal-dropdown"
+															data-language="english" label="WFP">
+														</optgroup>
+														<optgroup id="fao-source-internal-dropdown"
+															data-language="english" label="FAO">
+														</optgroup>
+													</select>
+
+													<span class="custom-placeholder c-and-s-placeholder">Commodities +
+														source</span>
+													<span class="custom-arrow commodity-arrow"></span>
+
+												</div>
+												<div id="rcc-commodity-multi-selections"
+													class="d-flex flex-row flex-wrap justify-content-center justify-content-lg-start gap-2">
+													<div class="rcc-commodity-multi-selection" data-source="WFP">
+														<span class="close">
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+																width="50px" height="50px">
+																<path
+																	d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z">
+																</path>
+															</svg>
+														</span>
+														<span class="label">
+															Wheat
+														</span>
+													</div>
+													<div class="rcc-commodity-multi-selection" data-source="WFP">
+														<span class="close">
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+																width="50px" height="50px">
+																<path
+																	d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z">
+																</path>
+															</svg>
+														</span>
+														<span class="label">
+															Rice (imported)
+														</span>
+													</div>
+
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+									<!-- Geography -->
+									<div
+										class="col-sm-4 col-md-6 bg-white align-items-center d-none d-lg-flex justify-content-center pl-3 xr__filter-container select-a-geography" id="parentGeographyDiv">
+
+										<!-- Geography Selector -->
+										<div id="geopgraphy" class="xr__filter-box w-100">
+											<div>
+												<p class="w-100 mb-0 xr__filter-title">Select a geography</p>
+												<p class="w-100 mb-0 xr__filter-subtitle">
+													You can select up to 3 locations
+												</p>
+											</div>
+											<div
+												class="d-flex align-items-center flex-wrap w-100 justify-content-center justify-content-lg-start geography-and-source-select">
+												<div class="mb-xl-0 mb-2 d-flex flex-column w-75 position-relative">
+													<select class="form-select w-100" id="rcc-geography-multi"
+														multiple="multiple">
+														<optgroup id="AoC-source-internal-dropdown"
+															label="Actors of Control">
+															<option value="IRG">IRG</option>
+															<option value="DFA">DFA</option>
+														</optgroup>
+														<optgroup id="Gov-source-internal-dropdown" label="Governorate">
+															<option value="YE12" data-gov="Abyan">Abyan</option>
+															<option value="YE14" data-gov="Al Bayda">Al-Bayda</option>
+															<option value="YE24" data-gov="Aden">Aden</option>
+															<option value="YE29" data-gov="Amran">Amran</option>
+															<option value="YE13" data-gov="Amanat Al Asima">Amanat Al
+																Asima</option>
+															<option value="YE30" data-gov="Al Dhale'e">Al-Dhale'e
+															</option>
+															<option value="YE18" data-gov="Al Hudaydah">Al-Hudaydah
+															</option>
+															<option value="YE16" data-gov="Al Jawf">Al-Jawf</option>
+															<option value="YE28" data-gov="Al Maharah">Al-Maharah
+															</option>
+															<option value="YE27" data-gov="Al Mahwit">Al-Mahwit</option>
+															<option value="YE20" data-gov="Dhamar">Dhamar</option>
+															<option value="YE19" data-gov="Hadramaut">Hadramaut</option>
+															<option value="YE17" data-gov="Hajjah">Hajjah</option>
+															<option value="YE11" data-gov="Ibb">Ibb</option>
+															<option value="YE25" data-gov="Lahj">Lahj</option>
+															<option value="YE26" data-gov="Marib">Marib</option>
+															<option value="YE31" data-gov="Raymah">Raymah</option>
+															<option value="YE22" data-gov="Sa'ada">Sa'ada</option>
+															<option value="YE23" data-gov="Sana'a">Sana'a</option>
+															<option value="YE21" data-gov="Shabwah">Shabwah</option>
+															<option value="YE32" data-gov="Socotra">Socotra</option>
+															<option value="YE15" data-gov="Taizz">Taizz</option>
+
+															<!-- currently no data for the following for WFP - TODO: check for FAO and REACH -->
+															<!-- <option value="YE18" data-gov="Ho-Deidah">Ho-Deidah</option> -->
+															<!-- <option value="YE13" data-gov="Sana'a City">Sana'a City -->
+															<!-- </option> -->
+														</optgroup>
+													</select>
+
+													<span class="custom-placeholder a-and-g-placeholder">Area /
+														Governorate</span>
+													<span class="custom-arrow geography-arrow"></span>
+
+												</div>
+												<div id="rcc-geography-multi-selections"
+													class="d-flex flex-row flex-wrap justify-content-center justify-content-lg-start gap-2">
+													<div class="rcc-geography-multi-selection">
+														<span class="close">
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+																width="50px" height="50px">
+																<path
+																	d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z">
+																</path>
+															</svg>
+														</span>
+														<span class="label">
+															IRG
+														</span>
+													</div>
+													<div class="rcc-geography-multi-selection">
+														<span class="close">
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+																width="50px" height="50px">
+																<path
+																	d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z">
+																</path>
+															</svg>
+														</span>
+														<span class="label">
+															DFA
+														</span>
+													</div>
+
+												</div>
+											</div>
+											<!-- <div
+												class="d-flex align-items-center flex-wrap w-100 justify-content-center justify-content-lg-start gap-2">
+												<div class="mb-xl-0 mb-2 d-flex flex-column geography-selector ">
+													<label for="historic-actors-of-control" class="form-label mb-0">
+														<small class="bulky-text">Actors of Control</small>
+													</label>
+													<select class="form-select w-100 actors-of-control geography-select"
+														id="rcc-actors-of-control">
+														<option value="All">All</option>
+														<option value="IRG">IRG</option>
+														<option value="DFA">DFA</option>
+													</select>
+												</div>
+												<div class="mb-xl-0 mb-2 d-flex flex-column geography-selector">
+													<label for="governorate" class="form-label mb-0">
+														<small class="bulky-text">Governorate</small>
+													</label>
+													<select class="form-select w-100 governorate geography-select"
+														id="rcc-governorate">
+														<option value="All" data-gov="All">All</option>
+														<option value="YE12" data-gov="Abyan">Abyan</option>
+														<option value="YE14" data-gov="Al-Bayda">Al-Bayda</option>
+														<option value="YE30" data-gov="Al-Dhalea">Al-Dhalea</option>
+														<option value="YE16" data-gov="Al-Jawf">Al-Jawf</option>
+														<option value="YE28" data-gov="Al-Maharah">Al-Maharah</option>
+														<option value="YE27" data-gov="Al-Mahwit">Al-Mahwit</option>
+														<option value="YE29" data-gov="Amran">Amran</option>
+														<option value="YE20" data-gov="Dhamar">Dhamar</option>
+														<option value="YE19" data-gov="Hadramaut">Hadramaut</option>
+														<option value="YE17" data-gov="Hajjah">Hajjah</option>
+														<option value="YE18" data-gov="Ho-Deidah">Ho-Deidah</option>
+														<option value="YE11" data-gov="Ibb">Ibb</option>
+														<option value="YE25" data-gov="Lahj">Lahj</option>
+														<option value="YE26" data-gov="Marib">Marib</option>
+														<option value="YE31" data-gov="Raymah">Raymah</option>
+														<option value="YE22" data-gov="Sa'ada">Sa'ada</option>
+														<option value="YE23" data-gov="Sana'a">Sana'a</option>
+														<option value="YE13" data-gov="Sana'a City">Sana'a City</option>
+														<option value="YE21" data-gov="Shabwah">Shabwah</option>
+														<option value="YE15" data-gov="Taizz">Taizz</option>
+													</select>
+
+												</div>
+											</div> -->
+
+										</div>
+
+									</div>
+
+									<!-- Map -->
+									<div class="col-sm-3 d-none d-xl-block">
+										<div
+											class="col-12 bg-white d-flex align-items-center justify-content-center h-100">
+											<div id="rcc-map" class="d-flex d-none d-md-block">
+												
+
+<style>
+  #yemen-border svg {
+    height: 148px;
+    width: 100%;
+  }
+
+  #yemen-border .governorate-border {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  #yemen-border .governorate-border:hover {
+    fill: #dededc;
+  }
+
+  #yemen-border .goveronate-selected {
+    /* fill: #F7A89F; */
+    fill: #fccf9e;
+  }
+</style>
+
+
+<div id="yemen-border" style="height: auto; width: 100%">
+  <?xml version="1.0" encoding="utf-8"?>
+  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+  <svg version="1.1" id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" sodipodi:docbase="wikipedia"
+    inkscape:version="0.43" sodipodi:docname="Location of Hadhramaut.svg" xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    sodipodi:version="0.32" xmlns:cc="http://web.resource.org/cc/" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1205.694px" height="100%"
+    viewBox="0 0 1205.694 686.015" enable-background="new 0 0 1205.694 686.015" xml:space="preserve">
+    <path id="path3113"
+      sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      fill="#F7F5F3" class="governorate-border" governorate="Marib" stroke="#000000" d="
+	M129,230.406l-1.406,2.094v4.25l-1.781,3.188v2.844l-2.469,1.75l-4.25,3.188l-3.188,1.062l-2.812,0.719l-0.719,2.812l-1.406,2.844
+	l-3.531,1.031l-2.469,2.125l-2.469,0.719l-1.781-0.719l-1.406-1.75v3.188l0.344,4.594l2.125,7.781v7.062l2.125,6.344v2.843
+	l-1.406,4.938v7.094v5.656v2.5l4.5,5.812l4,1.5l19.5-6l6.5-2l3,1v4.5l-0.5,5.5l-3.5,3.5l0.5,3.5l2,3.5v11l0.219,1.969l5.781-0.969
+	l10.5-0.5h7l4.5,0.5l6.5,1l3-1.5l3-2l-2.5-4l1-5l4.5-1l3-0.5v-2.5l-1.5-2.5l1.5-3.5l-1.5-3l-2-4l1-12l-1.5-2h-2l-3.5,2.5l-3-0.5
+	l-1.5-1.5v-2.5l3-3.5v-1l-3-3.5l-1.5-3.5l1-3l0.5-2.5l-1-2l-2-1l-2-2l0.5-13l-1-6v-18.5h-4l-3.5-2l-4.5-1l-3.5,2l-4-0.5l-7.812-3.5
+	v0.125h-2.812l-3.531-2.094H129z" />
+    <path id="path3103" class="governorate-border" governorate="Sa'ada" fill="#F7F5F3" stroke="#000000" d="M138.188,232.375l7.812,3.5l4,0.5l3.5-2l4.5,1l3.5,2h5.5l8.5-1.5l6.5-3
+	l5-3.5h3.5l7,2.5l7,4l8,1.5l9.5-2.5l1.5-2.5v-6l4.5-5l8.5-4.5l2.5-4l4.5-2.5l2.5-4.5l1.5-4l4.5-0.5l7-4.5l5-2l7.5-1l5.5-1l7,0.5
+	l4,1.5l4.5,1.5l1-0.5l0.281-34.562l-20.875-0.562l-6.031,3.875l-2.812-0.344l-5.656-2.844l-11.312-0.688l-1.406,1.062l-3.562,0.688
+	l-5.656,1.781l-2.094,0.344l-2.125-1.406l-1.781-1.406L228,162.5l-3.188,5.656L222,168.875l-2.125-1.406l-2.844-1.062h-2.812
+	l-3.906,3.875l-1.75,1.406h-2.125l-1.406-2.812l-0.375-2.125l-0.688,0.719l-3.188,0.688L199,166.75h-1.062l-2.469,1.062
+	l-3.188-0.344l-3.875-2.125l-3.531-3.531l-3.188-2.844V156.5l-2.125-2.125l-3.188-0.344l-3.531-1.062L170,150.844l-4.219-0.719
+	h-4.25l-9.562,5.312l-6.719,3.906L140.313,165l-2.469,3.156l2.469,1.781h3.531l2.125,3.188l-1.062,3.531L142.094,177l-4.25,1.781
+	l-1.781,2.469v3.875l-2.125,2.844l-1.75,2.125v1.406l1.406,1.781l1.062,5.281l-1.062,1.781l-1.75,5.656l-0.719,1.406l1.062,2.125
+	l1.406,1.781l0.344,4.219l2.844,0.719l3.875,1.406l0.375,1.781l-1.062,2.469l-3.531,2.125l-0.375,2.125l1.062,2.125l1.062,2.469
+	V232.375z" />
+    <path id="path3108" class="governorate-border" governorate="Ho Deidah"
+      sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccssssssssscccccccccccccccccccccccccccccccccccccsssssssscsssssscccccccccccccc"
+      fill="#F7F5F3" stroke="#000000"
+      d="
+	M137,307.875l-6.5,2l-19.5,6l-4-1.5l-4.5-5.812v0.312L96.844,311l-2.125,1.406L94,318.781l-2.844,2.812l-2.094,2.844l0.688,2.125
+	l1.781,4.594v6v1.781l0.344,6l1.062,3.531l3.531,4.25l2.469,4.594v6.031v3.156l0.719,3.188l-2.125,0.344L96.469,369l-1.75-2.844
+	l-2.5-1.781l-2.094-3.531l-0.719-2.125l-1.062,1.781l-3.188,2.125l-3.188,2.812l-2.812,2.5l0.688,3.156L81.969,375l2.844,1.406
+	l1.406-2.125v-1.406l2.844-0.344L94,373.937l4.938,3.188l4.969,4.594l0.344,3.188l-0.344,4.219l0.688,3.562l3.906,4.594l1.75,3.531
+	v4.938l0.375,3.531l-1.062,1.062l-1.781-1.75l-1.062-2.844l-1.406-2.812l-0.719-1.781l-1.062,1.062l0.375,4.25l2.125,4.594
+	l2.125,4.25l2.469,1.75v2.469l0.344,3.188l3.531,2.469l-0.344,2.125l-0.719,2.469l2.469,4.625l0.719,2.094l-0.344,1.781l0.344,5.312
+	l-0.719,1.062l-1.406-0.719v-2.812l-0.344-1.438l-2.469-1.75l-1.781-3.188l-0.344-1.406l1.062-1.781l-0.375-1.062l-1.406-1.062
+	l-1.75,0.719l-1.062,2.125l1.062,2.812l3.156,2.844l0.375,3.188l2.125,2.469l1.062,4.938l1.406,6.375l2.125,2.469l2.469,5.656
+	l1.062,5.312l2.469,6l-0.719,2.844l-1.406,3.531v7.406l1.062,4.594l5.312,3.188l7.062,6.375l0.344,2.812v4.969l2.125,3.188
+	l1.75,3.844l3.125-1.719l5.5-2.5h4.5l0.5-2.5l2-3l2.5-3l0.5-3l2-1l6-0.5l6.5-1l5.5-1.5l1-1.5l-0.5-3v-1.5l2.5-1.5l3-2l0.5-2.5l2-2.5
+	l-2-2l-3.5,1H176l-5-3l-2.5-2l-4.5-1l-3.5-2.5v-1.5l2-2v-2v-3.5l-1-2l-2.5-5l-0.5-4l2.5-1.5l4.5,0.5l-0.5-2.5l-2-10.5l-1-3.5l-2.5-6
+	l-0.5-4.5l2.5-5v-2.5l-2-4v-4l1-3l2.5-1.5l3-2l4.5-2l6-1.5l1-2.5l-2.5-4l-4.5-1l-5.5-0.5l-3.5-4.5l-4-3l-1-4l-3-2.5v-3.5l-2.5-3
+	l-4-0.5l-3.5-4l-2-5.5l-2-12l-1-9v-11l-2-3.5l-0.5-3.5l3.5-3.5l0.5-5.5v-4.5L137,307.875z M60.75,319.875l0.25,3l2,1.5l6,0.25
+	l1.5-1.5l-1.25-0.5l-2.25-0.75l-3.5-1.25L60.75,319.875z M51,321.625l-0.75,2.25l2.25,3.5l0.5-1.5L51,321.625z M80,329.875l-1,1
+	l0.5,2.25l3.75-0.25l1.25-1l-2-1.5L80,329.875z M9.5,335.375l-2.5,2l1.25,2l2.75-1l0.25-1.5L9.5,335.375z M59.75,339.875l-1.25,0.75
+	v2.25l2.5,3.25l1.75,0.5l1-1.25l-3-1.75L59.75,339.875z M71.344,343.062c-0.521,0.09-2.094,1.312-2.094,1.312l0.75,1.25
+	c0,0,1.423-1.871,1.5-2.406c0-0.004-0.001-0.027,0-0.031c0-0.004,0-0.027,0-0.031c-0.001-0.003,0.001-0.027,0-0.031
+	c-0.002-0.002,0.001-0.029,0-0.031c-0.002-0.002-0.029,0.002-0.031,0c-0.003,0-0.028-0.029-0.031-0.031c-0.004,0-0.027,0-0.031,0
+	s-0.027,0-0.031,0C71.366,343.064,71.353,343.061,71.344,343.062z M83.75,347.625l-1,0.5l-3.25,2l-2.25,3v6.25l-2,3v2.25l2,0.75
+	l2,0.25l2.25-4.75l2.5-5.5l2-2.25l1.5-1l-0.5-1.75l-1-1.5L83.75,347.625z M39,383.625l-1.5,2l0.75,3.25h2.5l0.25-4L39,383.625z
+	 M90.125,482.843l-1.781,2.094l-3.188,2.5L88,492.375l2.812,2.125l0.719,1.75l1.062,1.438L94,496.968l0.719-3.188l0.344-4.938
+	l-0.344-2.469l-1.781-3.188L90.125,482.843z M96.031,500.875c-0.56,0.209-2.165,1.615-2.375,2.094
+	c-0.003,0.008-0.029,0.025-0.031,0.031c-0.001,0.004,0,0.029,0,0.031c0,0.004-0.001,0.029,0,0.031
+	c0.001,0.006,0.028,0.027,0.031,0.031c0.004,0.004,0.026,0.029,0.031,0.031c0.003,0.002,0.028,0,0.031,0
+	c0.014,0.006,0.046,0.029,0.062,0.031c0.435,0.055,1.625-0.344,1.625-0.344s0.854-1.49,0.812-1.875
+	c-0.001-0.002,0.001-0.027,0-0.031c-0.003-0.004-0.028-0.027-0.031-0.031c-0.003,0-0.029,0.002-0.031,0c-0.003,0-0.028,0-0.031,0
+	c-0.014,0.002-0.046-0.004-0.062,0C96.054,500.878,96.04,500.871,96.031,500.875z M93.656,509.875l-2.5,0.875l-3.688,2.5
+	l-1.781,3.688l-1.938,1.438L83.219,521l1.062,0.375l2.469-1.062l3.531-1.594v-1.594l3-2.844l0.906-3.344L93.656,509.875z" />
+    <path id="path3118" class="governorate-border" governorate="Amran" fill="#F7F5F3" stroke="#000000" d="M178.375,339.281l3.625,1.094l3.5,1l4-2l1.5-0.5l5,1.5l3,1l3.5-1l2-1.5
+	l2.5-0.5l3,2.5l4-2.5l5.5-4.5l1.5-4l-1-4.5l-2.5-3.5l1.5-1.5h6.5l2-3.5l-1-5.5l-2.5-5.5v-5.5l5.5-3l6-2l5.5-2.5l2-0.5l-6.5-7l2-4
+	l-1.5-2.5l-1-2.5l1.5-4.5l-1-4l1.5-3.5l-2.5-6.5l-2.5-6l2.5-4l-2-4l-12.344-8.781l-8.656,2.281l-8-1.5l-7-4l-7-2.5H187l-5,3.5
+	l-6.5,3l-8.5,1.5h-1.5v18.5l1,6l-0.5,13l2,2l2,1l1,2l-0.5,2.5l-1,3l1.5,3.5l3,3.5v1l-3,3.5v2.5l1.5,1.5l3,0.5l3.5-2.5h2l1.5,2l-1,12
+	l2,4l1.5,3l-1.5,3.5l1.5,2.5v2.5l-3,0.5l-4.5,1l-1,5l2.5,4L178.375,339.281z" />
+    <path id="path3123" class="governorate-border" governorate="Al Mahwit" fill="#F7F5F3" stroke="#000000"
+      d="M161.469,387.343l6.531-5.969v-3l0.5-7l5.5-3.5l3-1l3.5-0.5l5-2.5l3-3l3-3
+	l4-1l4.5-3l0.5-2l-1-2.5l0.5-3.5l1.5-2.5l-0.562-2.562L199,341.375l-3-1l-5-1.5l-1.5,0.5l-4,2l-3.5-1l-3.625-1.094L176,340.875
+	l-3,1.5l-6.5-1l-4.5-0.5h-7l-10.5,0.5l-5.781,0.969l0.781,7.031l2,12l2,5.5l3.5,4l4,0.5l2.5,3v3.5l3,2.5l1,4L161.469,387.343z" />
+    <path id="path3183" class="governorate-border" governorate="Shabwah" fill="#F7F5F3" stroke="#000000" d="M643.063,491.656L639,486.875c0,0-0.875-2.375-1.75-4.5
+	c-0.438-1.062-0.859-2.078-1.188-2.688c-0.164-0.305-0.311-0.494-0.406-0.562s-0.156,0-0.156,0.25s-0.025,0.322-0.094,0.281
+	s-0.164-0.211-0.281-0.469c-0.234-0.516-0.562-1.375-0.875-2.312c-0.625-1.875-1.25-4-1.25-4l-3-1l-6-4.5l-6.5-1l-13-1.5l-7-1
+	l-6-5.5l-3.5-4.5l-3-5.5v-4l-3-2l-3-1.5l-6.5-0.5l-8-1l-9-2.5l-12-5.5l-3-4v-5l-2-1.5l-5-2l-6.5-1l-2.5-2.5l4-2l11-7.5l4-3.5
+	l2.5-3.5l2-3v-3.5l-2.5-2.5l-4-3l-2-1.5l2.5-4l2-5.5l-0.5-4.5v-3l2-6.5l5-2.5l1.5-1.5l2-5l1-3.5l5-6.5l4-5.5v-7.5l-142.781,10.188
+	L357,383.375l-3.5,5.5l-1,5l-1,2.5l-2.5,3.5l-2,3l1,5l-1,2l-0.5,5v6.5l2.5,3.5v0.031l10,0.469l6.5,0.5l-1,2.5l-3,5.5l0.5,2l2.5,1
+	h1.5c0,0-0.25-0.5-0.125-0.688c0.062-0.094,0.234-0.133,0.562,0.031s0.812,0.531,1.562,1.156s1.344,1.414,1.812,2.281
+	s0.812,1.812,1.062,2.656c0.5,1.688,0.625,3.062,0.625,3.062l3,8l2,5l3,2.5h4l3.5,0.5l4,2l0.5,3.5l0.5,4l2.406,2.781l1.594-0.281h10
+	l3.5-1.5l4-4.5l3.5-1.5l5-1.5l3-1.5l3.5-0.5l3,1v8v2.5l2.5,1l0.5,2.5l1.5,2h4.5l6.5,0.5l5-3l8-4.5h13.5h6.5l6,5l7,1l9.5-0.5h5l1,3
+	l-0.5,3l-1,3v3l2.5,2.5l-3.5,1.5l-4.5,3.5l1.5,1.5l4,4.5l2.5,6.5l3,4v5l-1.5,3.5l5.094,9.594h0.062l6.344-1.062l7.438-3.531
+	l4.938-6.719l3.531-3.188l3.531-2.469l4.969-4.938l4.938-3.188l5.656-2.469l4.25-1.438l7.062-2.812l3.531-3.531l5.656-4.25
+	l7.438-1.062l6,1.062l5.656,2.469l2.125,1.781l0.719,1.75l2.125,0.375l2.125-1.781l4.219-0.344l4.25-0.375l5.312-1.031l4.25,0.688
+	l2.469,0.344l1.75,1.062l2.844-1.406l2.125-2.125l4.25-2.812L643.063,491.656z" />
+    <path id="path3133" class="governorate-border" governorate="Hajjah" fill="#F7F5F3" stroke="#000000" d="M263.781,295.031l5.219,5.844l1.5,4l2.5,11l-1.5,3.5l-2.5,3l4.5,5l7.5,7.5
+	l0.5,1.5l-2,3l-2.5,2l-5,3.5l-7.5,4l-2.5,3l1,2h3l3.5-0.5l2.5,0.5l1,2v3l1.5,4l3.5,1.5h3l2-1.5l1.5-4l2-0.5l3.5-0.5l3.5,3l2,3l2,2.5
+	l3,0.5l7.5,1.5l2,2.5l2,3l-0.5,2.5v2l1,3.5l-3,5l-4.5,0.5l-2,3.5v2.5l-4,2.5l-1,3.5l-1.5,4l0.5,8.5h3l3,2.5l3.5,1.5l0.5,2.5l-2,3.5
+	l2.5,6v6l2.5,3.5l2,5l3,0.5l4,1l2.5-4l2-1h2.5l1,1.5l1-2.5l3.5-1l4-3.5l3-0.5l2.5,1l2.5-0.5v-3.5l1-1.5l1.5,1.5l2.5-1.5l1-1.5
+	l-0.5-2l-2.5-3.5v-6.5l0.5-5l1-2l-1-5l2-3l2.5-3.5l1-2.5l1-5l3.5-5.5l64.5-43.5l47.656-54.156L379,299.375l-18.5,7.5l-7,10l-6.5,6.5
+	h-23.5l-36-28L263.781,295.031z" />
+    <path id="path3128" class="governorate-border" governorate="Al Jawf" fill="#F7F5F3" stroke="#000000" d="M263.781,295.031l23.719,0.344l36,28H347l6.5-6.5l7-10l18.5-7.5
+	l90.156-13.656L491,260.875v-50.281h-0.312l-24.406-32.531l-35.344,4.969l-70.344-8.156l-18.406-2.812l-17.312-9.906l-31.094-0.844
+	l-0.281,34.562l-1,0.5l-4.5-1.5l-4-1.5l-7-0.5l-5.5,1l-7.5,1l-5,2l-7,4.5l-4.5,0.5l-1.5,4l-2.5,4.5l-4.5,2.5l-2.5,4l-8.5,4.5l-4.5,5
+	v6l-1.5,2.5l-0.844,0.219l12.344,8.781l2,4l-2.5,4l2.5,6l2.5,6.5l-1.5,3.5l1,4l-1.5,4.5l1,2.5l1.5,2.5l-2,4l5.906,6.343l5.594,1.156
+	l3-2l10,1L263.781,295.031z" />
+    <path id="path3143" class="governorate-border" governorate="Dhamar" fill="#F7F5F3" stroke="#000000" d="M260.844,463.625l1.156-5.25h5.5l4.5-1.5l2.5-3l1.5-8l-1.5-5v-3.5l2-10l2-4
+	l6.5-5l-0.5-6l-2.5-3.5l-3.5-1.5l-1-4.5v-6.5v-3.5l-2-1.5H270l-4-0.5l-3.5-1l-2,3.5l-3,4l-3,1.5l-3.5,2.5l-3.5-1l-1-3l-3-2.5
+	l-1.5,0.5l-0.5,4l-3,3l-2.5-1.5l-5-0.5l-3.5-1l-0.5-3.5l-2.5-1l-4.5-1.5l-4.5,1l-3.5,1l-2,2.5l-6,4.5l-7.5,4.5l-4-0.5l-3-1l-3,0.5
+	l-1,4.5l2.5,4l5,3l2,3.5l4,5.5l3,3.5v2.5l-5,7.5l-7.5,4.5l-7,2l-4-1l-3.5,1.5l-4,4l-2.5,3l-3.125-2.062l0.125,0.562l-4.5-0.5
+	l-2.5,1.5l0.5,4l2.5,5l1,2v3.5v2l-2,2v1.5l3.5,2.5l4.5,1l2.5,2l5,3h4.5l1.625-0.469l2.875-3.531l0.5-4.5l1-2.5l2-4l3.5-0.5l1.5,0.5
+	v1.5l-1.5,2.5l2,2l4-0.5l2.5-3.5l1-3v-3l-2.5-3l1.5-3l3.5-1.5l5.5-5.5l2-2l2.5,0.5v3.5l1,3l5,0.5l5-1.5v-1.5l-1.5-1.5l1.5-2.5
+	l4.5,0.5l3.5,1.5v3.5l5,0.5l4,2l5.5,3l5.5,3.5l6,0.5L260.844,463.625z" />
+    <path id="path3138" class="governorate-border" governorate="Ibb" fill="#F7F5F3" stroke="#000000"
+      d="M172.531,498.718l0.969,2.656l2.5,1.5l3.5,1l4-0.5l0.5-2h1l2,1.5l2.5-1.5
+	h2.5l1,1l-0.5,2.5l1.5,2l3,0.5l1.5-1.5l1,0.5l0.5,2.5l3.5,1.5l2.5,1l3.5,2.5l3.5-1.5l4.5,2l5.5,3.5l5.5-0.5l3,1.5l2.5,0.5l2.5-1
+	l2-3.5l3-1.5l-1-3.5l3-1l1.5-1l-1.5-3l2.5-3l2,1.5l1.5-1v-3l-0.5-2.5l3-2.5l1.5-1.5l5,1h3l3-1v-2.5l-1.5-1l-2.5-3l2.5-1.5v-3.5
+	l2.5-2h3l1.5-2l-3-4l-1-3.5l-1-5l-2.5-1l-3.5-0.5l-6-0.5l-5.5-3.5l-5.5-3l-4-2l-5-0.5v-3.5l-3.5-1.5l-4.5-0.5l-1.5,2.5l1.5,1.5v1.5
+	l-5,1.5l-5-0.5l-1-3v-3.5l-2.5-0.5l-2,2l-5.5,5.5l-3.5,1.5l-1.5,3l2.5,3v3l-1,3l-2.5,3.5l-4,0.5l-2-2l1.5-2.5v-1.5l-1.5-0.5
+	l-3.5,0.5l-2,4l-1,2.5l-0.5,4.5l-2.875,3.531l1.875-0.531l2,2l-2,2.5l-0.5,2.5l-3,2l-2.5,1.5v1.5l0.5,3l-1,1.5L172.531,498.718z" />
+    <path id="path1370" class="governorate-border" governorate="Raymah"
+      sodipodi:nodetypes="cccccsssccccccccccccccccccccccccccc" fill="#F7F5F3" stroke="#000000"
+      d="M185.531,410.187
+	l-4.562-0.906l-0.688-1.75l-2.312-0.188l-4.531-6.969c0,0-1.222,1.051-2.407,0.5c-1.186-0.549-1.698-3.736-3.573-2.522
+	c-0.938,0.606,0.776,0.992-0.28,2.464s-3.47,3.852-3.47,3.852l-3.207,2.207l-1,3v4l2,4v2.5l-2.5,5l0.5,4.5l2.5,6l1,3.5l2,10.5
+	l0.375,1.938l3.125,2.062l2.5-3l4-4l3.5-1.5l4,1l7-2l7.5-4.5l5-7.5v-2.5l-3-3.5l-4-5.5l-2-3.5l-5-3l-2.5-4L185.531,410.187z" />
+    <path id="path3148" class="governorate-border" governorate="Sana'a" fill="#F7F5F3" stroke="#000000" d="M251,290.875l-3,2l-5.594-1.156l0.594,0.656l-2,0.5l-5.5,2.5l-6,2l-5.5,3
+	v5.5l2.5,5.5l1,5.5l-2,3.5H219l-1.5,1.5l2.5,3.5l1,4.5l-1.5,4l-5.5,4.5l-4,2.5l-3-2.5l-2.5,0.5l-2,1.5l-1.562,0.438l0.562,2.562
+	l-1.5,2.5l-0.5,3.5l1,2.5l-0.5,2l-4.5,3l-4,1l-3,3l-3,3l-5,2.5l-3.5,0.5l-3,1l-5.5,3.5l-0.5,7v3l-6.531,5.969l0.031,0.031l3.5,4.5
+	l5.5,0.5l4.5,1l2.5,4l-1,2.5l-3.062,0.5l4.531,6.969l2.312,0.188l0.688,1.75l4.562,0.906l0.969-4.312l3-0.5l3,1l4,0.5l7.5-4.5l6-4.5
+	l2-2.5l3.5-1l4.5-1l4.5,1.5l2.5,1l0.5,3.5l3.5,1l5,0.5l2.5,1.5l3-3l0.5-4l1.5-0.5l3,2.5l1,3l3.5,1l3.5-2.5l3-1.5l3-4l2-3.5l3.5,1
+	l4,0.5h5.5l2,1.5v3.5v6.5l1,4.5l3.5,1.5l2.5,3.5l0.5,6l-0.031,0.031l3.531,0.469l4-2.5c0,0,0.625-0.125,1.438-0.5s1.812-1,2.562-2
+	c0.332-0.443,0.996-1.195,1.656-2H297l-0.5-8.5l1.5-4l1-3.5l4-2.5v-2.5l2-3.5l4.5-0.5l3-5l-1-3.5v-2l0.5-2.5l-2-3l-2-2.5l-7.5-1.5
+	l-3-0.5l-2-2.5l-2-3l-3.5-3l-3.5,0.5l-2,0.5l-1.5,4l-2,1.5h-3l-3.5-1.5l-1.5-4v-3l-1-2l-2.5-0.5l-3.5,0.5h-3l-1-2l2.5-3l7.5-4l5-3.5
+	l2.5-2l2-3l-0.5-1.5l-7.5-7.5l-4.5-5l2.5-3l1.5-3.5l-2.5-11l-1.5-4l-8-9L251,290.875z M236.875,334.875h1.625l1.219,2.5h3.25
+	l4.062,2.5v1l-2.438,1.5l-0.812-1.5l-0.812-1l-1.219,1v2l-1.625,0.5l-2.438,2l-1.625,3.5l-1.219,3.469l0.406,4l-0.812,2.5l-3.25,0.5
+	l-2-2.5l-1.219-2l0.406-4l0.406-2.469l-1.625-4l2.438-2l3.219-1l0.812-4L236.875,334.875z" />
+    <path id="path3153" class="governorate-border" governorate="Taizz" fill="#F7F5F3" stroke="#000000"
+      d="M172.531,498.718L172,498.875l-6.5,1l-6,0.5l-2,1l-0.5,3l-2.5,3l-2,3
+	l-0.5,2.5h-4.5l-5.5,2.5l-3.125,1.719l0.031,0.031l0.688,6.375l-1.031,3.875l1.031,2.469l-1.031,2.844l-1.781,2.469l-0.719,5.656
+	l0.375,4.25l-1.062,1.75l-0.375,4.25l-0.344,5.656v4.969l1.406,6l7.438,10.969l3.188,7.062l2.469,4.25v3.156l3.875,5.312
+	l3.188,6.375l0.375,3.531l-2.125,4.25l-0.375,3.188l0.719,2.469l0.281,0.031l12.406-20.406l5.5-6.5l3.5-1l2.5-2v-3l-1-3.5l1-2.5
+	l4.5-1l1.5-1.5l4.5-2l5,1l5,2.5l4.5,3.5l1.5-1l-1-5.5l2.5-1.5l2.5,2.5l2.5,1l2-2l-0.5-4l1.5-0.5l2.5,1l2-1l-1-2.5l2.5-3l3-1l2.5,0.5
+	l3.5,1.5l5-0.5l3-3l-0.5-2.5v-6l-3.5-2.5l3-1.5l4.5-1l3,1v-3.5l-3-1l-5-2l2-3l6-4l4-1.5l4.5-3.5l1-2.5l-3-2.5l-2.5,0.5H244l-3-1.5
+	l-0.5-3l3-2l0.5-3.5l-1.5-2.5l-1.344-1.344l-2.656,1.344l-2,3.5l-2.5,1l-2.5-0.5l-3-1.5l-5.5,0.5l-5.5-3.5l-4.5-2l-3.5,1.5l-3.5-2.5
+	l-2.5-1l-3.5-1.5l-0.5-2.5l-1-0.5l-1.5,1.5l-3-0.5l-1.5-2l0.5-2.5l-1-1h-2.5l-2.5,1.5l-2-1.5h-1l-0.5,2l-4,0.5l-3.5-1l-2.5-1.5
+	L172.531,498.718z M147.031,618.25l1.062,2.469l2.125,0.344l0.344,1.406h1.781l0.688-2.094l-1.406-1.781h-2.469L147.031,618.25z" />
+    <polygon fill="#F7F5F3" class="governorate-border" governorate="test" stroke="#000000" points="310.344,593.781 291,594.875 285,599.875 278,600.875 269.5,601.375 
+	258.5,601.875 249,604.375 245.5,609.375 239.844,621.125 240.031,621.062 243.188,620 244.625,620.718 245.313,620.375 
+	246.031,618.937 249.906,615.062 257,607.625 261.219,606.562 267.25,607.281 271.125,609.406 273.594,612.218 272.906,614.343 
+	275.375,614.343 276.438,612.593 280.688,612.218 283.156,612.593 283.156,614.718 285.625,615.781 289.875,615.062 
+	291.281,614.343 291.625,612.593 290.938,611.156 289.5,611.156 287.406,610.468 287.406,609.406 290.563,608.687 292.344,606.937 
+	296.594,606.218 298.719,606.218 299.781,606.937 299.406,611.156 301.531,612.593 304.375,611.875 304.375,608.687 
+	305.781,602.687 308.969,595.25 " />
+    <path id="path3173" class="governorate-border" governorate="Al Bayda" fill="#F7F5F3" stroke="#000000"
+      d="M335.438,500.593l8.062,1.781h8.5l0.5,4l7,2.5l5-0.5l6-2.5l2.5-5.5l3-2
+	l4.5-3.5l8-2.5l1-2.5v-3.5l2.5-2.5l3-3v-2.5v-4l-3-3.5l-0.5-4l-0.5-3.5l-4-2l-3.5-0.5h-4l-3-2.5l-2-5l-3-8
+	c0,0-0.125-1.375-0.625-3.062c-0.25-0.844-0.594-1.789-1.062-2.656S368.75,438,368,437.375s-1.234-0.992-1.562-1.156
+	s-0.5-0.125-0.562-0.031c-0.125,0.188,0.125,0.688,0.125,0.688h-1.5l-2.5-1l-0.5-2l3-5.5l1-2.5l-6.5-0.5l-10-0.469l0.5,1.969l-1,1.5
+	l-2.5,1.5l-1.5-1.5l-1,1.5v3.5l-2.5,0.5l-2.5-1l-3,0.5l-4,3.5l-3.5,1l-1,2.5l-1-1.5h-2.5l-2,1l-2.5,4l-4-1l-3-0.5l-2-5l-2.5-3.5v-6
+	l-2.5-6l2-3.5l-0.5-2.5l-3.5-1.5l-3-2.5h-1.844c-0.66,0.805-1.324,1.557-1.656,2c-0.75,1-1.75,1.625-2.562,2s-1.438,0.5-1.438,0.5
+	l-4,2.5l-3.531-0.469l-6.469,4.969l-2,4l-2,10v3.5l1.5,5l-1.5,8l-2.5,3l-4.5,1.5H262l-1.156,5.25l1.656,0.25l2.5,1l1,5l1,3.5l2.25,3
+	l1.75-1l5.5-3h3.5l2.5,0.5l3-3h6l5,0.5l3,1.5l1.5,4l2.5,5l3,2.5l5,4l2,3v5.938l3.5-1.938h5l6.5-5.5l2.5-2h3l0.5,4L335.438,500.593z" />
+    <path id="path3168" class="governorate-border" governorate="Al Dhalea" fill="#F7F5F3" stroke="#000000" d="M313.5,496.312v-5.938l-2-3l-5-4l-3-2.5l-2.5-5l-1.5-4l-3-1.5l-5-0.5h-6
+	l-3,3l-2.5-0.5h-3.5l-5.5,3l-1.75,1l0.75,1l-1.5,2h-3l-2.5,2v3.5l-2.5,1.5l2.5,3l1.5,1v2.5l-3,1h-3l-5-1l-1.5,1.5l-3,2.5l0.5,2.5v3
+	l-1.5,1l-2-1.5l-2.5,3l1.5,3l-1.5,1l-3,1l1,3.5l-0.344,0.156l1.344,1.344l1.5,2.5l-0.5,3.5l-3,2l0.5,3l3,1.5h4.5l2.5-0.5l3,2.5
+	l-0.375,0.938l4.375,3.562l2,4.5l2.5,1.5l2.5-2l3-4l2-0.5l4.5-0.5l2-2.5l4,1l3,1l1-3.5l-1.5-2.5l0.5-1.5v-4l-1-1.5l1.5-3l3,1.5
+	l4.5-0.5l6.5-4l4.5-2l4-0.5l3-3.5l0.5-5l2.5-5.5L313.5,496.312z" />
+    <path id="path3163"
+      sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccsccsccccccccccccccccscccccccccccccccccccccccccccccccccccccccccc"
+      fill="#F7F5F3" class="governorate-border" governorate="Lahj" stroke="#000000" d="
+	M309.875,593.812L308,587.875l-1-11l2.5-10.5l1-6l3-7l2.5-1.5l4.5,1l3-0.5l-3-3.5l-2-3.5l-3-4l0.5-3.5l3-3l3.5-3.5l4-3.5l-2-2
+	l-8.5-2v-2.5l4.5-2l1-3.5l2-3.5h5l2-2.5v-9l5,0.5l-1-10.5l-0.5-4h-3l-2.5,2l-6.5,5.5h-5l-4.5,2.5l-2.5,5.5l-0.5,5l-3,3.5l-4,0.5
+	l-4.5,2l-6.5,4l-4.5,0.5l-3-1.5l-1.5,3l1,1.5v4l-0.5,1.5l1.5,2.5l-1,3.5l-3-1l-4-1l-2,2.5l-4.5,0.5l-2,0.5l-3,4l-2.5,2l-2.5-1.5
+	l-2-4.5l-4.375-3.562L253,531.875l-4.5,3.5l-4,1.5l-6,4l-2,3l5,2l3,1c0,0,0.75,2.875,0,3.5s-3-1-3-1l-4.5,1c0,0-3.125,0.5-3,1.5
+	s3.5,2.5,3.5,2.5v6l0.5,2.5l-3,3l-5,0.5l-3.5-1.5l-2.5-0.5l-3,1l-2.5,3l1,2.5l-2,1l-2.5-1l-1.5,0.5l0.5,4l-2,2l-2.5-1
+	c0,0-1.25-2.25-2.5-2.5s-2.5,1.5-2.5,1.5l1,5.5l-1.5,1l-4.5-3.5l-5-2.5l-5-1l-4.5,2l-1.5,1.5l-4.5,1l-1,2.5l1,3.5v3l-2.5,2l-3.5,1
+	l-5.5,6.5l-12.406,20.406l2.188,0.312l3.188-1.406l4.25-2.469l2.125-2.125H170l7.094,2.469l9.188,2.812l4.938,2.5l3.906,1.75
+	l2.125,3.531l3.531,2.125l1.75-1.406h3.531l7.438-0.344l3.188-2.125l8.844-0.375l9.875-0.688l4.438-1.719l5.656-11.75l3.5-5l9.5-2.5
+	l11-0.5l8.5-0.5l7-1l6-5L309.875,593.812z" />
+    <path class="governorate-border" governorate="Abyan" id="path3178" fill="#F7F5F3" stroke="#000000" d="M516.094,531.968L511,522.375l1.5-3.5v-5l-3-4l-2.5-6.5l-4-4.5l-1.5-1.5
+	l4.5-3.5l3.5-1.5l-2.5-2.5v-3l1-3l0.5-3l-1-3h-5l-9.5,0.5l-7-1l-6-5h-6.5H460l-8,4.5l-5,3l-6.5-0.5H436l-1.5-2l-0.5-2.5l-2.5-1v-2.5
+	v-8l-3-1l-3.5,0.5l-3,1.5l-5,1.5l-3.5,1.5l-4,4.5l-3.5,1.5h-10l-1.594,0.281l0.594,0.719v4v2.5l-3,3l-2.5,2.5v3.5l-1,2.5l-8,2.5
+	l-4.5,3.5l-3,2l-2.5,5.5l-6,2.5l-5,0.5l-7-2.5l-0.5-4h-8.5l-8.062-1.781l0.062,0.781l-5-0.5v9l-2,2.5h-5l-2,3.5l-1,3.5l-4.5,2v2.5
+	l8.5,2l2,2l-4,3.5l-3.5,3.5l-3,3l-0.5,3.5l3,4l2,3.5l3,3.5l-3,0.5l-4.5-1l-2.5,1.5l-3,7l-1,6l-2.5,10.5l1,11l1.875,5.938
+	l0.469-0.031l3.562-3.812l4.969-2.125l7.75-1.781l4.969-0.344l4.594-1.062l3.188-3.188l3.875-5.656l4.25-4.25l5.312-6l6.344-6
+	l6.375-1.438l20.844-4.594L397,552.125h8.125l9.188-0.719l7.781-0.344l4.969,0.344l9.531,0.375h7.062l5.312-2.125h3.531l5.312,0.344
+	l3.875-1.062l5.656-1.75l6.719-3.188l8.844-4.25l6.375-1.781l8.844-1.406l5.656-1.062l4.938-1.406L516.094,531.968z" />
+    <path fill="#F7F5F3" class="governorate-border" governorate="Hadramaut" stroke="#000000" d="M1100,614.375l-2,1.25l-0.5,2.5l-2.25,0.5l-2,1l-2,0.5l-1,1.75l0.25,3.75l0.25,1.5l-1,2
+	l-1.25,2l-2.5-0.25l-2,0.25c-0.008,0-0.023,0-0.031,0c-0.023,0.002-0.071-0.002-0.094,0c-0.022,0.004-0.072-0.004-0.094,0
+	c-0.85,0.199-1.281,1.5-1.281,1.5l2,2.5l6,3l8.25,4.5l5.25,4.75l4.75,3.25l7.75,1.5l5.5,1.25l7,0.25l5.5-1.75l6.5-1.25l3.5-0.25
+	l2.5,0.25l3.75-1.25l3.5-1.25l3.75,1.25l3-0.5l3.75-2.75l4.75-3.75l1.25-2l4-1l7-1.75l4.25-1.75l3-2.75l0.5-2l2.5-1.25l5.75-1v-1.25
+	l-0.75-0.5h-2.25l-1,0.75l-1.25,0.5l-1.25-1l-2.5-1.25l-7.75-1.75l-3.75-1.25l-4.75-2l-4.25-2l-3-1.25l-3.75-1.25l-2.5-1.75l-3-0.25
+	l-3.5,1.75l-3,2l-3.25,1.5h-2l-3.5,0.75l-1,1.25l-1-0.5l-0.75-1.5l-2,0.25l-2.25,2.25l-1.75,1.75l-4,0.25l-3.75-1.5l-4.25-3
+	l-3.25-2.75l-3.25-2.5l-1.5,0.75l-2.25,0.5l-3.75-0.25l-2-1.25H1100z M972.25,661.875l-2.25,0.75l-3,1.5l3.5,3.5l3.25,0.25l1.75,1
+	l6.25,0.5l2,1.75l5,1l7-0.25l0.75-3.75l-0.75-1.25h-2.5l-1.25,0.75l-1.5-0.25l-0.25-1l-7.25,0.25l-3,0.25l-1.75-1.75l-2.5-1.75
+	l-2.25-1L972.25,661.875z M1057.5,667.125l-1.75,1l-0.75,1l1.75,1l2,1l2.25,0.5l3-0.75v-2l-1-1.25l-2-0.5H1057.5z M1078.75,671.375
+	l-0.5,1l4.25,0.75l2.25,1l1.5-0.75l-1.75-1.5l-4-0.5H1078.75z M947.563,10.531L841.063,31l-57.625,7.406l-74.969,9.188
+	l-24.375,2.125l-84.875,43.844l-54.094,67.531l-12,33.938l-26.188,15.219L491,210.594v50.281l-69.5,79l-0.281,0.188L564,329.875v7.5
+	l-4,5.5l-5,6.5l-1,3.5l-2,5l-1.5,1.5l-5,2.5l-2,6.5v3l0.5,4.5l-2,5.5l-2.5,4l2,1.5l4,3l2.5,2.5v3.5l-2,3l-2.5,3.5l-4,3.5l-11,7.5
+	l-4,2l2.5,2.5l6.5,1l5,2l2,1.5v5l3,4l12,5.5l9,2.5l8,1l6.5,0.5l3,1.5l3,2v4l3,5.5l3.5,4.5l6,5.5l7,1l13,1.5l6.5,1l6,4.5l3,1
+	c0,0,0.625,2.125,1.25,4c0.312,0.938,0.641,1.797,0.875,2.312c0.117,0.258,0.213,0.428,0.281,0.469s0.094-0.031,0.094-0.281
+	s0.061-0.318,0.156-0.25s0.242,0.258,0.406,0.562c0.328,0.609,0.75,1.625,1.188,2.688c0.875,2.125,1.75,4.5,1.75,4.5l4.062,4.781
+	h5.312l2.125-2.094l4.25-3.562l2.094-2.469l2.844-1.406l2.125-2.469l2.125-4.25l0.344-2.125l1.781-1.062l3.156-1.75l1.438-2.125
+	l1.406-1.062l3.188-0.719l0.688-1.75l0.375-2.844l-0.375-1.062l0.375-3.531l3.188-5.656l3.875-4.938l3.531-0.719h4.938l3.906-4.594
+	l6-3.188l8.125-4.25l3.188-0.688l3.906-1.438l7.062-2.812l9.906-4.25l2.125-2.812l8.469-0.719l8.844-2.125l6.719-2.125l2.844-2.125
+	l6.688-1.406l1.438,0.719l1.406,3.188l3.875-0.719l3.188-2.125h4.969l2.125-0.344l2.812-3.188l5.656-3.188l4.594-0.344l2.125-2.125
+	l6-5.656l10.25-4.25l8.156-1.781l7.062-0.688L839.25,392l-9.75-22.625l-1.5-2h-5l-2.5-0.5l-3-2h-5H809l-2.5,2h-6l-5,1.5h-4l-2.5-1.5
+	l-3.5-2.5l-0.5-5l1.5-3.5l4-5.5l1-1.5v-4v-2.5l-2-1.5H785l-5-1.5l-2.5-3.5l0.5-6l4.5-4.5v-1l-1.5-2l-0.5-4l2-3.5v-4.5l3-2.5l5-12
+	l-2-3l-3.5-3.5l-3-4l0.5-4l4-5.5v-3.5v-4l4-10v-3.5v-4l-2.5-3.5l1.5-4.5l9.5-6.5l7.5-3.5l4-0.5c0,0,4-1,6-1
+	c0.5,0,1.188-0.297,1.938-0.719s1.562-0.969,2.312-1.531c1.5-1.125,2.75-2.25,2.75-2.25l3.5-4.5l0.5-6l27.5-20.5l7-1l3.5-0.5l1-3.5
+	l3.5-7l7-7.5l8-13l10.5-24l5.5-20l2.5-40l5.5-7l11-29L947.563,10.531z" />
+    <path id="path3981" fill="#F7F5F3" class="governorate-border" governorate="Al Maharah" stroke="#000000" d="M947.563,10.531L920,43.375l-11,29l-5.5,7l-2.5,40l-5.5,20l-10.5,24l-8,13
+	l-7,7.5l-3.5,7l-1,3.5l-3.5,0.5l-7,1l-27.5,20.5l-0.5,6l-3.5,4.5c0,0-1.25,1.125-2.75,2.25c-0.75,0.562-1.562,1.109-2.312,1.531
+	s-1.438,0.719-1.938,0.719c-2,0-6,1-6,1l-4,0.5l-7.5,3.5l-9.5,6.5l-1.5,4.5l2.5,3.5v4v3.5l-4,10v4v3.5l-4,5.5l-0.5,4l3,4l3.5,3.5
+	l2,3l-5,12l-3,2.5v4.5l-2,3.5l0.5,4l1.5,2v1l-4.5,4.5l-0.5,6l2.5,3.5l5,1.5h4.5l2,1.5v2.5v4l-1,1.5l-4,5.5l-1.5,3.5l0.5,5l3.5,2.5
+	l2.5,1.5h4l5-1.5h6l2.5-2h3.5h5l3,2l2.5,0.5h5l1.5,2L839.25,392l2.156-0.375l8.844-3.906l10.594-1.75l8.156-1.438l8.469-2.125
+	l7.438-3.531l11.312-3.531l5.312-1.406l8.469-4.594l5.656-2.469l7.781-0.719l1.406-2.125l-0.688-0.344l-0.375-3.188l3.531-3.531
+	l10.281-4.25l2.469,0.719l1.062,0.688l0.344-0.688l1.406-2.844l2.844-2.812l5.281-1.438l10.625-4.594l7.781-2.812l4.938-0.719
+	l1.781-2.812l1.406-2.125l-1.062-1.406L974,328.312v-7.75l0.344-3.906l-1.75-2.469h-1.062L970.469,311v-3.531l-1.438-3.188
+	l-1.062-2.125l1.062-2.469l2.125-3.188l0.719-3.875l2.125-1.406l0.688-3.906v-3.531l3.562-3.906l1.75-5.281l2.469-2.125l5.656-3.906
+	l8.844-8.469l7.062-3.531l8.844-4.25l8.5-2.125l7.406-3.531l5.312-1.781l3.188-1.75l3.531-2.844l2.844-1.062h4.938l3.875-1.406
+	l2.5-1.406l-28.656-61.531l-6.344-0.688L947.844,10.469L947.563,10.531z" />
+    <path id="path1372" class="governorate-border" governorate="Sana'a City" fill="#F7F5F3" stroke="#000000"
+      stroke-width="0.9005" d="M239.726,337.373h3.247l4.059,2.496v1l-2.436,1.498
+	l-0.812-1.498l-0.812-1l-1.218,1v1.998l-1.623,0.499l-2.436,1.998l-1.623,3.497l-1.218,3.496l0.405,3.996l-0.812,2.498l-3.246,0.499
+	l-2.029-2.497l-1.218-1.998l0.405-3.996l0.406-2.498l-1.623-3.996l2.435-1.998l3.247-0.999l0.812-3.995l3.247-2.498h1.623
+	L239.726,337.373z" />
+    <path id="path3214"
+      sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccscccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccsccsssssssssscccccccccccccccccccccccccccccccccccccsssssssssscssssssssscccccccccccccccccccccccccccsssssccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      fill="none" stroke="#000000"  stroke-width="1.75" d="
+	M947.844,10.469l-0.281,0.062L841.063,31l-57.625,7.406l-74.969,9.188l-24.375,2.125l-84.875,43.844l-54.094,67.531l-12,33.938
+	l-26.188,15.219L491,210.594h-0.312l-24.406-32.531l-35.344,4.969l-70.344-8.156l-18.406-2.812l-17.312-9.906l-31.094-0.844
+	l-20.875-0.562l-6.031,3.875l-2.812-0.344l-5.656-2.844l-11.312-0.688l-1.406,1.062l-3.562,0.688l-5.656,1.781l-2.094,0.344
+	l-2.125-1.406l-1.781-1.406L228,162.5l-3.188,5.656L222,168.875l-2.125-1.406l-2.844-1.062h-2.812l-3.906,3.875l-1.75,1.406h-2.125
+	l-1.406-2.812l-0.375-2.125l-0.688,0.719l-3.188,0.688L199,166.75h-1.062l-2.469,1.062l-3.188-0.344l-3.875-2.125l-3.531-3.531
+	l-3.188-2.844V156.5l-2.125-2.125l-3.188-0.344l-3.531-1.062L170,150.844l-4.219-0.719h-4.25l-9.562,5.312l-6.719,3.906L140.313,165
+	l-2.469,3.156l2.469,1.781h3.531l2.125,3.188l-1.062,3.531L142.094,177l-4.25,1.781l-1.781,2.469v3.875l-2.125,2.844l-1.75,2.125
+	v1.406l1.406,1.781l1.062,5.281l-1.062,1.781l-1.75,5.656l-0.719,1.406l1.062,2.125l1.406,1.781l0.344,4.219l2.844,0.719
+	l3.875,1.406l0.375,1.781l-1.062,2.469l-3.531,2.125l-0.375,2.125l1.062,2.125l1.062,2.469v1.625v0.125h-2.812l-3.531-2.094H129
+	l-1.406,2.094v4.25l-1.781,3.188v2.844l-2.469,1.75l-4.25,3.188l-3.188,1.062l-2.812,0.719l-0.719,2.812l-1.406,2.844l-3.531,1.031
+	l-2.469,2.125l-2.469,0.719l-1.781-0.719c0,0-1.055-2.109-1.406-1.75s0,3.188,0,3.188l0.344,4.594l2.125,7.781v7.062l2.125,6.344
+	v2.843l-1.406,4.938v7.094v5.656v2.5v0.312L96.844,311l-2.125,1.406L94,318.781l-2.844,2.812l-2.094,2.844l0.688,2.125l1.781,4.594
+	v6v1.781l0.344,6l1.062,3.531l3.531,4.25l2.469,4.594v6.031v3.156l0.719,3.188l-2.125,0.344L96.469,369l-1.75-2.844l-2.5-1.781
+	l-2.094-3.531l-0.719-2.125l-1.062,1.781l-3.188,2.125l-3.188,2.812l-2.812,2.5l0.688,3.156L81.969,375l2.844,1.406l1.406-2.125
+	v-1.406l2.844-0.344L94,373.937l4.938,3.188l4.969,4.594l0.344,3.188l-0.344,4.219l0.688,3.562l3.906,4.594l1.75,3.531v4.938
+	l0.375,3.531l-1.062,1.062l-1.781-1.75l-1.062-2.844l-1.406-2.812l-0.719-1.781l-1.062,1.062l0.375,4.25l2.125,4.594l2.125,4.25
+	l2.469,1.75v2.469l0.344,3.188l3.531,2.469l-0.344,2.125l-0.719,2.469l2.469,4.625l0.719,2.094l-0.344,1.781l0.344,5.312
+	l-0.719,1.062l-1.406-0.719v-2.812l-0.344-1.438l-2.469-1.75l-1.781-3.188l-0.344-1.406l1.062-1.781l-0.375-1.062l-1.406-1.062
+	l-1.75,0.719l-1.062,2.125l1.062,2.812l3.156,2.844l0.375,3.188l2.125,2.469l1.062,4.938l1.406,6.375l2.125,2.469l2.469,5.656
+	l1.062,5.312l2.469,6l-0.719,2.844l-1.406,3.531v7.406l1.062,4.594l5.312,3.188l7.062,6.375l0.344,2.812v4.969l2.125,3.188
+	l1.75,3.844l0.031,0.031l0.688,6.375l-1.031,3.875l1.031,2.469l-1.031,2.844l-1.781,2.469l-0.719,5.656l0.375,4.25l-1.062,1.75
+	l-0.375,4.25l-0.344,5.656v4.969l1.406,6l7.438,10.969l3.188,7.062l2.469,4.25v3.156l3.875,5.312l3.188,6.375l0.375,3.531
+	l-2.125,4.25l-0.375,3.188l0.719,2.469l0.281,0.031l2.188,0.312l3.188-1.406l4.25-2.469l2.125-2.125H170l7.094,2.469l9.188,2.812
+	l4.938,2.5l3.906,1.75l2.125,3.531l3.531,2.125l1.75-1.406h3.531l7.438-0.344l3.188-2.125l8.844-0.375l9.875-0.688l4.438-1.719
+	l0.188-0.062l3.156-1.062l1.438,0.719l0.688-0.344l0.719-1.438l3.875-3.875l7.094-7.438l4.219-1.062l6.031,0.719l3.875,2.125
+	l2.469,2.812l-0.688,2.125h2.469l1.062-1.75l4.25-0.375l2.469,0.375v2.125l2.469,1.062l4.25-0.719l1.406-0.719l0.344-1.75
+	l-0.688-1.438H289.5l-2.094-0.688v-1.062l3.156-0.719l1.781-1.75l4.25-0.719h2.125l1.062,0.719l-0.375,4.219l2.125,1.438
+	l2.844-0.719v-3.188l1.406-6l3.188-7.438l1.375-1.469l3.562-3.812l4.969-2.125l7.75-1.781l4.969-0.344l4.594-1.062l3.188-3.188
+	l3.875-5.656l4.25-4.25l5.312-6l6.344-6l6.375-1.438l20.844-4.594L397,552.125h8.125l9.188-0.719l7.781-0.344l4.969,0.344
+	l9.531,0.375h7.062l5.312-2.125h3.531l5.312,0.344l3.875-1.062l5.656-1.75l6.719-3.188l8.844-4.25l6.375-1.781l8.844-1.406
+	l5.656-1.062l4.938-1.406l7.375-2.125h0.062l6.344-1.062l7.438-3.531l4.938-6.719l3.531-3.188l3.531-2.469l4.969-4.938l4.938-3.188
+	l5.656-2.469l4.25-1.438l7.062-2.812l3.531-3.531l5.656-4.25l7.438-1.062l6,1.062l5.656,2.469l2.125,1.781l0.719,1.75l2.125,0.375
+	l2.125-1.781l4.219-0.344l4.25-0.375l5.312-1.031l4.25,0.688l2.469,0.344l1.75,1.062l2.844-1.406l2.125-2.125l4.25-2.812
+	l7.406,0.688h5.312l2.125-2.094l4.25-3.562l2.094-2.469l2.844-1.406l2.125-2.469l2.125-4.25l0.344-2.125l1.781-1.062l3.156-1.75
+	l1.438-2.125l1.406-1.062l3.188-0.719l0.688-1.75l0.375-2.844l-0.375-1.062l0.375-3.531l3.188-5.656l3.875-4.938l3.531-0.719h4.938
+	l3.906-4.594l6-3.188l8.125-4.25l3.188-0.688l3.906-1.438l7.062-2.812l9.906-4.25l2.125-2.812l8.469-0.719l8.844-2.125l6.719-2.125
+	l2.844-2.125l6.688-1.406l1.438,0.719l1.406,3.188l3.875-0.719l3.188-2.125h4.969l2.125-0.344l2.812-3.188l5.656-3.188l4.594-0.344
+	l2.125-2.125l6-5.656l10.25-4.25l8.156-1.781l7.062-0.688L839.25,392l2.156-0.375l8.844-3.906l10.594-1.75l8.156-1.438l8.469-2.125
+	l7.438-3.531l11.312-3.531l5.312-1.406l8.469-4.594l5.656-2.469l7.781-0.719l1.406-2.125l-0.688-0.344l-0.375-3.188l3.531-3.531
+	l10.281-4.25l2.469,0.719l1.062,0.688l0.344-0.688l1.406-2.844l2.844-2.812l5.281-1.438l10.625-4.594l7.781-2.812l4.938-0.719
+	l1.781-2.812l1.406-2.125l-1.062-1.406L974,328.312v-7.75l0.344-3.906l-1.75-2.469h-1.062L970.469,311v-3.531l-1.438-3.188
+	l-1.062-2.125l1.062-2.469l2.125-3.188l0.719-3.875l2.125-1.406l0.688-3.906v-3.531l3.562-3.906l1.75-5.281l2.469-2.125l5.656-3.906
+	l8.844-8.469l7.062-3.531l8.844-4.25l8.5-2.125l7.406-3.531l5.312-1.781l3.188-1.75l3.531-2.844l2.844-1.062h4.938l3.875-1.406
+	l2.5-1.406l-28.656-61.531l-6.344-0.688L947.844,10.469z M60.75,319.875l0.25,3l2,1.5l6,0.25l1.5-1.5l-1.25-0.5l-2.25-0.75
+	l-3.5-1.25L60.75,319.875z M51,321.625l-0.75,2.25l2.25,3.5l0.5-1.5L51,321.625z M80,329.875l-1,1l0.5,2.25l3.75-0.25l1.25-1l-2-1.5
+	L80,329.875z M9.5,335.375l-2.5,2l1.25,2l2.75-1l0.25-1.5L9.5,335.375z M59.75,339.875l-1.25,0.75v2.25l2.5,3.25l1.75,0.5l1-1.25
+	l-3-1.75L59.75,339.875z M71.281,343.062c-0.01,0.003-0.021,0.029-0.031,0.031c-0.602,0.209-2,1.281-2,1.281l0.75,1.25
+	c0,0,1.423-1.871,1.5-2.406c0-0.002,0-0.023,0-0.031c0-0.004,0-0.027,0-0.031c-0.001-0.001,0-0.023,0-0.031c0-0.002,0-0.027,0-0.031
+	c-0.004,0-0.028,0-0.031,0c-0.006-0.006-0.025-0.025-0.031-0.031c-0.004,0-0.027,0-0.031,0s-0.027,0-0.031,0
+	c-0.003,0-0.028,0-0.031,0C71.327,343.066,71.299,343.058,71.281,343.062z M83.75,347.625l-1,0.5l-3.25,2l-2.25,3v6.25l-2,3v2.25
+	l2,0.75l2,0.25l2.25-4.75l2.5-5.5l2-2.25l1.5-1l-0.5-1.75l-1-1.5L83.75,347.625z M39,383.625l-1.5,2l0.75,3.25h2.5l0.25-4
+	L39,383.625z M90.125,482.843l-1.781,2.094l-3.188,2.5L88,492.375l2.812,2.125l0.719,1.75l1.062,1.438L94,496.968l0.719-3.188
+	l0.344-4.938l-0.344-2.469l-1.781-3.188L90.125,482.843z M96,500.875c-0.555,0.23-1.998,1.506-2.312,2.031
+	c-0.01,0.018-0.025,0.049-0.031,0.062c-0.003,0.004-0.028,0.029-0.031,0.031c-0.001,0.002,0,0.025,0,0.031c0,0.002,0,0.025,0,0.031
+	c0.006,0.006,0.025,0.025,0.031,0.031c0.003,0.004,0.022,0.023,0.031,0.031c0.003,0,0.028,0,0.031,0
+	c0.01,0.006,0.051,0.025,0.062,0.031c0.007,0.002,0.023,0,0.031,0c0.465,0.027,1.594-0.344,1.594-0.344s0.731-1.281,0.812-1.781
+	c0.002-0.016-0.001-0.049,0-0.062c0-0.006,0-0.025,0-0.031c0-0.002,0-0.027,0-0.031c-0.009-0.008-0.029-0.027-0.031-0.031
+	c-0.004,0-0.028,0-0.031,0s-0.028,0-0.031,0c-0.011,0-0.052,0-0.062,0c-0.003,0-0.029,0-0.031,0
+	C96.023,500.878,96.009,500.871,96,500.875z M93.656,509.875l-2.5,0.875l-3.688,2.5l-1.781,3.688l-1.938,1.438L83.219,521
+	l1.062,0.375l2.469-1.062l3.531-1.594v-1.594l3-2.844l0.906-3.344L93.656,509.875z M1100,614.375l-2,1.25l-0.5,2.5l-2.25,0.5l-2,1
+	l-2,0.5l-1,1.75l0.25,3.75l0.25,1.5l-1,2l-1.25,2l-2.5-0.25l-2,0.25c-0.008,0-0.023,0-0.031,0c-0.012,0.002-0.045,0-0.062,0
+	c-0.004,0-0.027,0-0.031,0c-0.011,0-0.049,0.002-0.062,0c-0.004,0-0.027,0-0.031,0c-0.797,0.188-1.23,1.357-1.281,1.5l2,2.5l6,3
+	l8.25,4.5l5.25,4.75l4.75,3.25l7.75,1.5l5.5,1.25l7,0.25l5.5-1.75l6.5-1.25l3.5-0.25l2.5,0.25l3.75-1.25l3.5-1.25l3.75,1.25l3-0.5
+	l3.75-2.75l4.75-3.75l1.25-2l4-1l7-1.75l4.25-1.75l3-2.75l0.5-2l2.5-1.25l5.75-1v-1.25l-0.75-0.5h-2.25l-1,0.75l-1.25,0.5l-1.25-1
+	l-2.5-1.25l-7.75-1.75l-3.75-1.25l-4.75-2l-4.25-2l-3-1.25l-3.75-1.25l-2.5-1.75l-3-0.25l-3.5,1.75l-3,2l-3.25,1.5h-2l-3.5,0.75
+	l-1,1.25l-1-0.5l-0.75-1.5l-2,0.25l-2.25,2.25l-1.75,1.75l-4,0.25l-3.75-1.5l-4.25-3l-3.25-2.75l-3.25-2.5l-1.5,0.75l-2.25,0.5
+	l-3.75-0.25l-2-1.25H1100z M147.031,618.25l1.062,2.469l2.125,0.344l0.344,1.406h1.781l0.688-2.094l-1.406-1.781h-2.469
+	L147.031,618.25z M972.25,661.875l-2.25,0.75l-3,1.5l3.5,3.5l3.25,0.25l1.75,1l6.25,0.5l2,1.75l5,1l7-0.25l0.75-3.75l-0.75-1.25
+	h-2.5l-1.25,0.75l-1.5-0.25l-0.25-1l-7.25,0.25l-3,0.25l-1.75-1.75l-2.5-1.75l-2.25-1L972.25,661.875z M1057.5,667.125l-1.75,1
+	l-0.75,1l1.75,1l2,1l2.25,0.5l3-0.75v-2l-1-1.25l-2-0.5H1057.5z M1078.75,671.375l-0.5,1l4.25,0.75l2.25,1l1.5-0.75l-1.75-1.5
+	l-4-0.5H1078.75z" />
+    <polyline fill="none" stroke="#000000" stroke-width="2.5"
+      points="819.13,394.467 799.853,378.437 800.664,387.263 " />
+    <polyline fill="none" stroke="#000000" stroke-width="2.5"
+      points="1091.223,621.311 1110.5,637.341 1109.689,628.515 " />
+  </svg>
+</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-lg-3 p-0 border-left h-100 rcc-options-row">
+								<div class="d-flex flex-column ">
+									<div
+										class="xr__filter-container col-sm-4 bg-white d-flex align-items-center justify-content-center w-100 border-bottom d-flex flex-column p-4">
+										<p class="text-center mb-3 xr__filter-title">Select a currency</p>
+										<div class="d-flex flex-row">
+											<input type="button"
+												class="btn mr-3 xr__filter-button currency-btn rcc-currency-btn active"
+												id="currency_yer" value="YER">
+											<input type="button"
+												class="btn xr__filter-button rcc-currency-btn currency-btn"
+												id="currency_usd" value="USD">
+										</div>
+									</div>
+									<div class="xr__filter-container col-sm-4 bg-white min-height-200 align-items-center justify-content-center w-100 p-4 key-events rcc-options-row"
+										style="height:230px!important; display:flex;">
+										<div
+											class="d-lg-flex flex-column w-100 justify-content-center align-items-center d-none">
+											<p class="text-center mb-1 xr__filter-title">Key Events</p>
+											<p class="key-events-description">The events below have been highlighted by
+												ACAPS Monitoring Team as 'key
+												events'. It refers to events which have a significant impact on the
+												political, economic, social and humanitarian situation in Yemen.</p>
+										</div>
+
+										<!-- TODO: this is mobile version -->
+										<div class="xr__filter-box w-100 h-100 d-flex d-lg-none align-items-center d-flex justify-content-center">
+											<!-- Add geography for mobile here -->
+											<div class="mobile-geography-target d-none">
+												<!-- #geography will be moved here for small screens -->
+											</div>
+
+										</div>
+											<div class="mt-4">
+												<!-- Empty div to make use of flexbox space-between -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Graphs / Table -->
+						<div class="row rcc-content m-0 mb-0">
+							<div class="col-12 col-lg-6 justify-content-center leftSidebar" id="chart-parallax">
+								<div class="rcc-graph-container">
+									<div class="rcc-graph-heading">
+										<span class="title bulky-text">Commodity Price</span>
+									</div>
+
+									<div class="rcc-graph">
+										<canvas id="RCCLineChart"></canvas>
+										<div id="legend"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-6 rightSidebar">
+								<div class="rcc-table-container">
+									<!-- Heading (Associated key events) -->
+									<div class="rcc-table-heading">
+										<span class="title bulky-text">Associated key events</span>
+									</div>
+									<div class="rcc-table">
+										<div class="table-responsive">
+											<table class="table table-hover table-borderless event-table">
+												<thead>
+													<tr>
+														<th scope="col">Event Date</th>
+														<th scope="col">Headline</th>
+														<th scope="col">Source</th>
+													</tr>
+												</thead>
+												<tbody id="table-body">
+													<tr>
+														<td>
+															27 Oct 2023
+														</td>
+														<td>In publishing and graphic design,
+															Lorem ipsum is a placeholder text commonly used to
+															demonstrate the visual form</td>
+														<td>BBC</td>
+													</tr>
+													<tr>
+														<td>
+															27 Oct 2023
+														</td>
+														<td>In publishing and graphic design,
+															Lorem ipsum is a placeholder text commonly used to
+															demonstrate the visual form</td>
+														<td>Sky</td>
+													</tr>
+													<tr>
+														<td>
+															27 Oct 2023
+														</td>
+														<td>In publishing and graphic design,
+															Lorem ipsum is a placeholder text commonly used to
+															demonstrate the visual form</td>
+														<td>Le Monde</td>
+													</tr>
+													<tr>
+														<td>
+															27 Oct 2023
+														</td>
+														<td>In publishing and graphic design,
+															Lorem ipsum is a placeholder text commonly used to
+															demonstrate the visual form</td>
+														<td>BBC</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+
+										<div class="read-more-link read-more mt-4" id="xr-read-more">
+											See more
+											<svg class="right" x="0px" y="0px" width="21.76px" height="8.355px"
+												viewBox="0 0 43.926 8.355" xml:space="preserve">
+												<path fill="#8E8C96"
+													d="M16.559,0c0.03,1.086,0.347,2.775,0.98,3.775H0v1h17.548c-0.639,1-0.896,2.408-0.989,3.58   c1.42-1.748,3.089-3.333,5.201-4.178C19.647,3.295,17.901,1.805,16.559,0z" />
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<section class="container-fluid">
+			<div class="link-row row marginfooter linkbottom">
+				<div class="col-10 mx-auto module-row py-5">
+					<div class="info text-center pt-5" data-aos="fade-up">
+						<h3 class="smallertitle">Click the buttons below to access the full datasets</h3>
+
+						<a title="WFP dataset"
+							href="https://yemen.yeti.acaps.org/api/wfp_prices/?format=csv+%28non-paginated%29"
+							target="_blank" class="dowload-link manhattan bgwhite mx-3">WFP</a>
+						<a title="Telegram dataset"
+							href="https://yemen.yeti.acaps.org/api/telegram_exchange_rates/?format=csv+%28non-paginated%29"
+							target="_blank" class="dowload-link manhattan bgwhite mx-3">Telegram</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</div>
+
+<script src='/staticfiles/yeti_module_2_xr_commodities/js/resize_sensor.min.js'></script>
+<script src='/staticfiles/yeti_module_2_xr_commodities/js/theia_sticky_sidebar.min.js'></script>
+<script src="/staticfiles/js/nouislider.js"></script>
+<script src='/staticfiles/yeti_module_2_xr_commodities/js/dert_graph.js'></script>
+<script src="/staticfiles/js/number_formatters.js"></script>
+<script src='/staticfiles/yeti_module_2_xr_commodities/js/xr_utils.js'></script>
+<script src='/staticfiles/yeti_module_2_xr_commodities/js/rcc_table.js'></script>
+<script src='/staticfiles/yeti_module_2_xr_commodities/js/rcc_graph.js'></script>
+
+
+    </div>
+  </div>
+
+
+
+<div class="footer">
+  <div class="footer-wrap py-4">
+    <footer class="container-fluid">
+      <div class="footer-row d-flex justify-content-end ">
+        <div class="footer-column me-auto" id="contactfooter">
+          <div class="heading">
+            Data Privacy
+          </div>
+          <div class="heading headingcontact">
+            Contact
+            <div class="detail"><a title="contact link" class="linkfooter" href="mailto:&#121;&#097;&#104;&#105;&#110;&#102;&#111;&#064;&#097;&#099;&#097;&#112;&#115;&#046;&#111;&#114;&#103;">&#121;&#097;&#104;&#105;&#110;&#102;&#111;&#064;&#097;&#099;&#097;&#112;&#115;&#046;&#111;&#114;&#103;</a></div>
+          </div>
+        </div>
+        <div class="footer-column order-3 order-lg-2" id="copyright">
+          <div class="pb-3 pt-3 pt-md-0">Beta Version - Copyright © 2022. All rights reserved.</div>
+          <div><img alt="CC logo" style="width:4.5rem; margin-right: 10px;" src='/staticfiles/images/licence_cc_by_nc_nd_eu.png'>
+          <span style="font-size: 11px;">This work is licensed under a <a title="creative commons licence link" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" style="text-decoration: none;">Creative Commons Attribution Non Commercial No Derivatives 4.0 International license</a></span></div>
+        </div>
+        <div class="footer-column logo order-2 order-lg-3">
+          <div class="image-container text-end text-md-center" id="acaps-logo">
+            <img alt="logo ACAPS" src='/staticfiles/images/acaps_logo_footer.svg'>
+          </div>
+        </div>
+        <div class="footer-column logo order-4 order-lg-4">
+          <div class="image-container text-end text-md-center" id="mc-logo">
+<!--             <img alt="MercyCorps Logo" src='/staticfiles/images/mercy_corps_logo_footer.png'> -->
+          </div>
+        </div>
+      </div>
+      <div class="d-md-flex justify-content-end align-items-center px-4 px-sm-5 pt-3 pt-lg-0">
+       
+        </div>
+    </footer>
+  </div>
+</div>
+
+
+
+
+<script src="/staticfiles/js/select2.min.js"></script>
+<script src="/staticfiles/js/modules_menu_dropdown.js"></script>
+<script src="/staticfiles/js/main_nav_menu.js"></script>
+<script src="/staticfiles/js/home_page_scroll.js"></script>
+<script src="/staticfiles/js/slick.min.js"></script>
+<script src='/staticfiles/js/animations.js'></script>
+<script src="/staticfiles/js/moment.min.js"></script>
+<script src="/staticfiles/js/chart.min.js"></script>
+<script src="/staticfiles/js/tween_max.min.js"></script>
+<script src="/staticfiles/js/swup_umd.js"></script>
+<script src='/staticfiles/js/swup.js'></script>
+
+
+
+
+</body>
+</html>

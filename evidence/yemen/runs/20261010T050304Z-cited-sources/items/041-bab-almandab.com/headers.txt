@@ -1,0 +1,24 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 05:03:11 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+cache-control: private, must-revalidate
+pragma: no-cache
+expires: -1
+set-cookie: XSRF-TOKEN=P14mxj0ui7XCLsjvwL5DHCXxTrbCGroL3cu9h82q; expires=Sat, 10 Oct 2026 07:03:11 GMT; Max-Age=7200; path=/
+set-cookie: bab_almndb_session=DRauCHBBaVF6U5RxAd6glP320r1QLe5laAF4j72e; expires=Sat, 10 Oct 2026 07:03:11 GMT; Max-Age=7200; path=/; httponly
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-permitted-cross-domain-policies: master-only
+referrer-policy: same-origin
+content-encoding: br
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-permitted-cross-domain-policies: master-only
+referrer-policy: same-origin
+

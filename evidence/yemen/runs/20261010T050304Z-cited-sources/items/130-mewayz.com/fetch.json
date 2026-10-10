@@ -1,0 +1,18 @@
+{
+ "n": 130,
+ "url": "https://mewayz.com/docs/payment-gateway-paytabs",
+ "dir": "items/130-mewayz.com",
+ "fetched_at": "2026-10-10T05:03:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://mewayz.com/docs/payment-gateway-paytabs",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3343,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:306"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "745e786d180f3c3935a43fcadc2daba1e998e0b77e64a04090b3e6e555b0cdc6",
+ "raw_ext": "html"
+}

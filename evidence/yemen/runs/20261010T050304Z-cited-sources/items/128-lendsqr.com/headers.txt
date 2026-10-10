@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+date: Fri, 09 Oct 2026 13:08:52 GMT
+content-encoding: gzip
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: on
+x-nextjs-cache: MISS
+cache-control: s-maxage=120, stale-while-revalidate=31535880
+x-powered-by: Next.js
+etag: "10nyi33bfwo1hfk"
+vary: Accept-Encoding
+x-cache: Hit from cloudfront
+via: 1.1 ab66e6a6b8d0fd03a0b13175e22e1f7c.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD61-P15
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: VPwo4Z_2-ZelU1r2PnYBng8NA_tMdLOsJ_3o8sEehaarcelf10JkPQ==
+age: 57269
+

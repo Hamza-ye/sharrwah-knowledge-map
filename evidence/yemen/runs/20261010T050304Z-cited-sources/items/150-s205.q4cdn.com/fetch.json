@@ -1,0 +1,18 @@
+{
+ "n": 150,
+ "url": "https://s205.q4cdn.com/370993272/files/doc_financials/2025/q4/Jumia-EX-99-1-Q4-2025-2-10-2026-Final-v5.pdf",
+ "dir": "items/150-s205.q4cdn.com",
+ "fetched_at": "2026-10-10T05:03:24Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://s205.q4cdn.com/370993272/files/doc_financials/2025/q4/Jumia-EX-99-1-Q4-2025-2-10-2026-Final-v5.pdf",
+ "content_type": "application/pdf",
+ "bytes": 167042,
+ "cited_in": [
+  "yemen-setup-options/report.md:294"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "21781b3d03fb780ed16a97a7d07f82539e09b0d77f150f933b8ddf5c39f0449a",
+ "raw_ext": "pdf"
+}

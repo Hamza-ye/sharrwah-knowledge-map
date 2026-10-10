@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-Control: no-cache, private
+Date: Sat, 10 Oct 2026 05:03:21 GMT
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: XSRF-TOKEN=eyJpdiI6InhMV01HdS9uV0F5a0RjWGdZL2FOVUE9PSIsInZhbHVlIjoidElPWndEcU5HK2xRYlRpSVRqK1crL2RQV1ZFMitSbzVtenBGME9xODY0bHhMTElVc0NGUGV1Sy84dE5MRmRhRDBUandzYjdpbWtOR1dhTzVLQStxNzd5UFR3NjA5MVk5bmtjK0JUdGhMUllSSERMMzQ2ZHFaTFl1ZUpRcWs2SVAiLCJtYWMiOiIwOTQzZDViZDgwYjNkY2ZhZDUxMjI4OTQ5YWI0YzcwM2NkYTI3NTk2ZTY2NDJmNDk2YWQ1ZjEyN2VmZjgyMzNjIiwidGFnIjoiIn0%3D; expires=Sat, 10-Oct-2026 07:03:21 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+Set-Cookie: laravel_session=eyJpdiI6ImJWbi9UOVBsendKYXNnWmVwckdKVUE9PSIsInZhbHVlIjoiamttTGhVbU14bWYwV3pqWHorMnBhbitYVWhpOUt6ak1XcVVBZkZyZlUwOUhuS0hlTkFubU9QSjE0LzBuaEN1QlZpMm5LN0tkVUJVcC82NlZjUnA3NjZKaWpPaENXUE5IU3BuVktqbFVncWdRcU9vTm1HcnJRSld4QVp0SnlPNjgiLCJtYWMiOiJjOWEyYTYzYTcyYmI0YTAxNmU4M2U2ZDk4ZDg0ZTRmYTRhNjJiOTZhNjRkNGVlNDJkYWI2NmU2YjlmNWQ4N2M0IiwidGFnIjoiIn0%3D; expires=Sat, 10-Oct-2026 07:03:21 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Referrer-Policy: no-referrer
+Permissions-Policy: camera=(), microphone=(), geolocation=(), fullscreen=(self)
+Content-Encoding: gzip
+

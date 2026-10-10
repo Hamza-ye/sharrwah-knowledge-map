@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:45 GMT
+content-type: text/html; charset=UTF-8
+cache-control: no-cache, must-revalidate, max-age=0, no-store, private
+expires: Wed, 11 Jan 1984 05:00:00 GMT
+server: cloudflare
+server-timing: 
+vary: Accept-Encoding
+x-pingback: https://www.noonpost.com/xmlrpc.php
+x-proxy-cache: MISS
+x-request-id: 43cb9ad33d067cdecae866d2f5ad4898
+cf-cache-status: DYNAMIC
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=G6ueOz0TKigIvosxmFM52h%2FhhQwJ81w21F7hCkaQZU7m47KxvQ3EELHyxlBE504UcSAw1aTIcaUPRQoqfgjdXZLYxq60a8HJVcW7zPWF3EIiW%2BgoPUB7BZcUfxMfKNvt828%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+content-encoding: br
+cf-ray: a48314935f0f31bb-IAD
+alt-svc: h3=":443"; ma=86400
+

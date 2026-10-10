@@ -1,0 +1,18 @@
+{
+ "n": 169,
+ "url": "https://shopify.dev/docs/apps/build/payments/requirements",
+ "dir": "items/169-shopify.dev",
+ "fetched_at": "2026-10-10T05:03:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/payments/requirements",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 98975,
+ "cited_in": [
+  "yemen-setup-options/report.md:158"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f38bb4145e8b32954ace86ab535880bc1ac8f0a920b9a9faaf6fba4469158cd7",
+ "raw_ext": "html"
+}

@@ -1,0 +1,40 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+content-type: text/plain; charset=utf-8
+content-length: 70
+x-amz-cf-pop: IAD55-P6
+date: Sat, 10 Oct 2026 05:03:50 GMT
+location: /wipolex/en/legislation/details/9551
+x-powered-by: Express
+vary: Origin, Accept, Accept-Encoding
+access-control-allow-credentials: true
+access-control-expose-headers: Content-Range,X-Content-Range
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+permissions-policy: interest-cohort=()
+via: 1.1 9e0e9bdbb4ef473a019709a070d827d8.cloudfront.net (CloudFront), 1.1 8b49500bf8f9ec11f4fd4939e6ec97be.cloudfront.net (CloudFront)
+x-cache: Miss from cloudfront
+x-amz-cf-pop: IAD12-P5
+x-amz-cf-id: N0OakRaESpbhQJQOMaBEzhz_szRFLrCiBivpu8e4xmKHgLpi8ND6zA==
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+via: 1.1 c00b9a9d46446e53268f343cad13e4d8.cloudfront.net (CloudFront), 1.1 8b49500bf8f9ec11f4fd4939e6ec97be.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD55-P6
+date: Sat, 10 Oct 2026 05:03:50 GMT
+etag: W/"86da-wiNtad0U4m4ws7tGtaPy1CauCIE"
+content-encoding: br
+x-powered-by: Express
+vary: Origin, Accept-Encoding
+access-control-allow-credentials: true
+access-control-expose-headers: Content-Range,X-Content-Range
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+permissions-policy: interest-cohort=()
+x-cache: Miss from cloudfront
+x-amz-cf-pop: IAD12-P5
+x-amz-cf-id: i6q2QeVrH35vQgrZ_jMlnx-sV1YX59tZZ5dwE5Tz17bokVcyB6aP5w==
+

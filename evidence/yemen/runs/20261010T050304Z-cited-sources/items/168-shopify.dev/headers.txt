@@ -1,0 +1,35 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 302 
+date: Sat, 10 Oct 2026 05:03:30 GMT
+content-length: 0
+location: /docs/apps/build/payments/alternative/build-an-alternative-payment-extension?framework=remix
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BJzZ%2BCF6QzjpNFvBem4kpGaSwKROJtfzG8tfiaXYG%2FVPSDslf5f9dGayLMVZKvIVxB7FtkgLJzRWBBw8uCNkTKMHfXN90JuCUKpGcxzdw6Z4gIaFc2TclkHNsEob"}]}
+x-dc: gcp-us-east1,gcp-us-east1
+x-request-id: f5398d95-226d-45d5-9f8f-3d37c8fac19b-1791608610
+server: cloudflare
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=86400
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+cf-cache-status: BYPASS
+cf-ray: a48314379d583389-IAD
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:31 GMT
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding,Accept, Accept-Encoding
+cache-control: public, max-age=3600
+etag: W/"26a766d505dc4833"
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+content-encoding: gzip
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=046mBuxNxgSkgxI862GnrfKQi9hiiIhaYCFzeBuJJquyLpSyMuajE0kgA0%2FUjzTH73552ha5BqhFMfuZUjQ0StycMRFNQf2KA1meB9FF6OgS7WiHOnMaaLhYJF%2B%2F"}]}
+x-dc: gcp-us-east1,gcp-us-east1
+x-request-id: 43f21af7-8c8c-4157-810b-7786062c89fd-1791608610
+server: cloudflare
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=86400
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+cf-cache-status: MISS
+cf-ray: a483143989453389-IAD
+

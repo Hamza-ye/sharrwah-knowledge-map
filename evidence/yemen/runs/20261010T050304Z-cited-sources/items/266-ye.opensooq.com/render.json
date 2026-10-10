@@ -1,0 +1,28 @@
+{
+ "n": 266,
+ "url": "https://ye.opensooq.com/ar/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%86%D9%82%D9%84-%D9%88-%D8%B4%D8%AD%D9%86",
+ "rendered_at": "2026-10-10T05:12:24Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 410,
+ "final_url": "https://ye.opensooq.com/ar/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%86%D9%82%D9%84-%D9%88-%D8%B4%D8%AD%D9%86",
+ "title": "",
+ "text_chars": 1151,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "4d55c7dadc9dab26341732bdac9def29bcdfd234d23fee125989800321ad2f5a",
+ "browser_headers": {
+  "access-control-allow-headers": "abBucket",
+  "cache-control": "private, no-cache",
+  "content-length": "277615",
+  "content-type": "text/html; charset=utf-8",
+  "date": "Sat, 10 Oct 2026 05:12:25 GMT",
+  "etag": "\"rzxjhlryul4gso\"",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "server": "nginx",
+  "vary": "User-Agent, Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-current-path": "/ar/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%86%D9%82%D9%84-%D9%88-%D8%B4%D8%AD%D9%86",
+  "x-frame-options": "SAMEORIGIN",
+  "x-powered-by": "Next.js",
+  "x-request-uri": "http://ye.opensooq.com/ar/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%86%D9%82%D9%84-%D9%88-%D8%B4%D8%AD%D9%86"
+ }
+}

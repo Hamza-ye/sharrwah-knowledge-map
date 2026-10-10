@@ -1,0 +1,18 @@
+{
+ "n": 120,
+ "url": "https://jawali.com.ye/about",
+ "dir": "items/120-jawali.com.ye",
+ "fetched_at": "2026-10-10T05:03:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://jawali.com.ye/about",
+ "content_type": "text/html;charset=utf-8;",
+ "bytes": 17637,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:245"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6cd8726c1819e02e3a9ffca675c28a8aa8d144c97a5ecbfd6381a831f27f09ef",
+ "raw_ext": "html"
+}

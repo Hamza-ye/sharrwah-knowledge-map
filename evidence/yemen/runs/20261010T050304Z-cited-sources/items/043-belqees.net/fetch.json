@@ -1,0 +1,19 @@
+{
+ "n": 43,
+ "url": "https://belqees.net/locals/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%81%D9%8A-%D8%B9%D8%AF%D9%86-%D9%8A%D8%AC%D8%AA%D9%85%D8%B9-%D8%A8%D9%85%D9%85%D8%AB%D9%84%D9%8A-%D8%A7%D9%84%D8%A8%D9%86%D9%88%D9%83-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A%D8%A9-%D9%84%D8%A8%D8%AD%D8%AB-%D8%AA%D8%A7%D8%B3%D9%8A%D8%B3-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%AF%D9%81%D8%B9-%D8%A7%D9%84%D9%81%D9%88%D8%B1%D9%8A-%D9%88%D8%A7%D8%B9%D8%A7%D8%AF%D8%A9-%D9%87%D9%8A%D9%83%D9%84%D8%A9-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF%D8%A9",
+ "dir": "items/043-belqees.net",
+ "fetched_at": "2026-10-10T05:03:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://belqees.net/locals/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%81%D9%8A-%D8%B9%D8%AF%D9%86-%D9%8A%D8%AC%D8%AA%D9%85%D8%B9-%D8%A8%D9%85%D9%85%D8%AB%D9%84%D9%8A-%D8%A7%D9%84%D8%A8%D9%86%D9%88%D9%83-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A%D8%A9-%D9%84%D8%A8%D8%AD%D8%AB-%D8%AA%D8%A7%D8%B3%D9%8A%D8%B3-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%AF%D9%81%D8%B9-%D8%A7%D9%84%D9%81%D9%88%D8%B1%D9%8A-%D9%88%D8%A7%D8%B9%D8%A7%D8%AF%D8%A9-%D9%87%D9%8A%D9%83%D9%84%D8%A9-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF%D8%A9",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 36259,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:282",
+  "yemen-setup-options/notes/banks_exchange_cards.md:42"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bf2d0d427d249e7acc5b6f1d4164705bd97d9dba3b3f4e684043a9a326b2428e",
+ "raw_ext": "html"
+}

@@ -1,0 +1,25 @@
+{
+ "n": 218,
+ "url": "https://www.cnbc.com/2026/01/16/latest-us-sanctions-target-houthi-funding-networks-treasury-says.html",
+ "rendered_at": "2026-10-10T05:11:04Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 403,
+ "final_url": "https://www.cnbc.com/2026/01/16/latest-us-sanctions-target-houthi-funding-networks-treasury-says.html",
+ "title": "Access Denied",
+ "text_chars": 272,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "49fa6bfbf507ce475cc0bd7e89a22ba1e526da1989833dd59cb8d80c18d6adac",
+ "browser_headers": {
+  "akamai-grn": "0.09dfda17.1791609064.443429b8",
+  "cache-control": "max-age=0, no-cache",
+  "content-length": "492",
+  "content-security-policy": "frame-ancestors 'self' *.cnbc.com https://cnbc.zendesk.com;",
+  "content-type": "text/html",
+  "date": "Sat, 10 Oct 2026 05:11:04 GMT",
+  "expires": "Sat, 10 Oct 2026 05:11:04 GMT",
+  "mime-version": "1.0",
+  "pragma": "no-cache",
+  "server": "AkamaiGHost",
+  "vary": "User-Agent"
+ }
+}

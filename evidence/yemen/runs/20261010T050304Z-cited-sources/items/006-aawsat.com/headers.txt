@@ -1,0 +1,25 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:06 GMT
+content-type: text/html; charset=UTF-8
+x-served-by: aawsat-78d8859bd-cns6l
+cache-control: public, max-age=2678400
+x-ua-compatible: IE=edge
+content-language: ar
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-frame-options: SAMEORIGIN
+expires: Tue, 10 Nov 2026 05:03:06 GMT
+last-modified: Sat, 10 Oct 2026 05:03:04 GMT
+set-cookie: __cf_bm=A.Fqc1azBjBMtNARKEbhYPToLTN1mkGjKX3TLMWVoKc-1791608584.8748186-1.0.1.1-vyvnnQkD7roi8RsfND7nh56FiTdAWvOI6roTPoqrHuzsOF2a13JjEVAfCqQteKIqnRtzxAk6bBbXLe7lSe8qR3R52olccA_IKvImc5G3tLIJfjNpDPwes98_MgVk6bAu; HttpOnly; SameSite=None; Secure; Path=/; Domain=aawsat.com; Expires=Sat, 10 Oct 2026 05:33:06 GMT
+vary: Cookie, accept-encoding
+x-xss-protection: 1; mode=block
+srpc-html: YES
+cf-cache-status: MISS
+link: <https://aawsat.com/5219669-%D8%B4%D8%A8%D8%AD-%D8%A7%D9%84%D8%A5%D9%81%D9%84%D8%A7%D8%B3-%D9%8A%D9%84%D8%A7%D8%AD%D9%82-%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D8%B1%D8%A7%D9%81%D8%A9-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%8A%D9%86>; rel="alternate"; hreflang="ar"
+strict-transport-security: max-age=31536000; preload
+content-encoding: br
+server: cloudflare
+cf-ray: a48313977fcfd6d0-IAD
+

@@ -1,0 +1,21 @@
+{
+ "n": 155,
+ "url": "https://sanaacenter.org/files/Trade_Finance_in_Yemen_NO36_en.pdf",
+ "dir": "items/155-sanaacenter.org",
+ "fetched_at": "2026-10-10T05:03:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://sanaacenter.org/files/Trade_Finance_in_Yemen_NO36_en.pdf",
+ "content_type": "application/pdf",
+ "bytes": 896423,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:14",
+  "yemen-setup-options/notes/currency_territory.md:15",
+  "yemen-setup-options/notes/currency_territory.md:25",
+  "yemen-setup-options/notes/currency_territory.md:94"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "224152623a7cd73ac14ec14217ff94aec87a57d11bfac458f4f0973085a45577",
+ "raw_ext": "pdf"
+}

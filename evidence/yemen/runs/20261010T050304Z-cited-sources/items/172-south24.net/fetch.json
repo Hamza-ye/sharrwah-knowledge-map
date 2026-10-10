@@ -1,0 +1,25 @@
+{
+ "n": 172,
+ "url": "https://south24.net/news/newse.php?nid=4590",
+ "dir": "items/172-south24.net",
+ "fetched_at": "2026-10-10T05:03:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://south24.net/news/newse.php?nid=4590",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 13276,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:35",
+  "yemen-setup-options/notes/cash_logistics_practice.md:54",
+  "yemen-setup-options/notes/cash_logistics_practice.md:110",
+  "yemen-setup-options/notes/cash_logistics_practice.md:143",
+  "yemen-setup-options/notes/cash_logistics_practice.md:144",
+  "yemen-setup-options/notes/cash_logistics_practice.md:148",
+  "yemen-setup-options/notes/cash_logistics_practice.md:239",
+  "yemen-setup-options/notes/cash_logistics_practice.md:241"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "59b0a0b10536cd4627c14b7835e2f73859b3806a87cdd3b70d183e7b2baa9308",
+ "raw_ext": "html"
+}

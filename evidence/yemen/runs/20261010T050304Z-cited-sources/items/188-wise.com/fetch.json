@@ -1,0 +1,18 @@
+{
+ "n": 188,
+ "url": "https://wise.com/gb/hub/payment-methods/yemen",
+ "dir": "items/188-wise.com",
+ "fetched_at": "2026-10-10T05:03:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://wise.com/gb/hub/payment-methods/yemen",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 27930,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:305"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5533186a9037dbda5fc93bc9c56230d522aad042280ab1298253097d18be9083",
+ "raw_ext": "html"
+}

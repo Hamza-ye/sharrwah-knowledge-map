@@ -1,0 +1,19 @@
+{
+ "n": 275,
+ "url": "https://yemeneco.org/archives/127400",
+ "dir": "items/275-yemeneco.org",
+ "fetched_at": "2026-10-10T05:03:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemeneco.org/archives/127400",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 32415,
+ "cited_in": [
+  "yemen-setup-options/report.md:84",
+  "yemen-setup-options/notes/cash_logistics_practice.md:147"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "88a711a1536d2304d4e24c239bc18f30472e7993ded3716c7e14b625052674c6",
+ "raw_ext": "html"
+}

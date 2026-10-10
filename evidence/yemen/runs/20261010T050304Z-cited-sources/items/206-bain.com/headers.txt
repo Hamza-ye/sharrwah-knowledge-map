@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:39 GMT
+content-type: application/pdf
+content-length: 1948237
+server: cloudflare
+accept-ranges: bytes
+cache-control: public, max-age=31536000
+etag: "1d4c944f10cc24d"
+expires: Sun, 10 Oct 2027 05:03:39 GMT
+last-modified: Wed, 20 Feb 2019 17:51:44 GMT
+request-context: appId=cid-v1:76c43c12-b23b-4108-90dc-7092205c9f1e
+age: 4609787
+cf-cache-status: HIT
+vary: accept-encoding
+cf-ray: a483146ecb670242-IAD
+alt-svc: h3=":443"; ma=86400
+

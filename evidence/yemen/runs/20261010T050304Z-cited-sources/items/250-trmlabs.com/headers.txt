@@ -1,0 +1,45 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 05:03:49 GMT
+content-type: text/html
+location: /resources/blog/us-treasury-sanctions-houthi-financial-networks-including-eight-crypto-addresses
+cf-ray: a48314af58536fa4-IAD
+cf-cache-status: DYNAMIC
+cache-control: private
+server: cloudflare
+x-wf-region: us-east-1
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src * data: blob: 'unsafe-inline' 'unsafe-eval'; script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; frame-src *; img-src * data: blob:;
+o2o-cache-status: BYPASS
+x-frame-options: SAMEORIGIN
+set-cookie: _cfuvid=IgmCHuesK62Gtd1x6WmJ6qPdcRl2t0N5PCgH.IpLOaE-1791608629.6767328-1.0.1.1-RtvyJunfXL19apgzh85dY12tKD1xWV2k3lYaDlyRZvk; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.trmlabs.com
+set-cookie: __cf_bm=MFY.Lqfi9QO2RLFJGrToyB7lXJFzdMKSd7wMk_NEfd0-1791608629.6594665-1.0.1.1-ToovKNbN.19jt0HEVHoU4Sde1fMaQIs6wowZZp6xO5F.qN1l2bpeubCBbEbXiafxiVqMN8wRsnK3qAIzIwDeet3L_iIiKoxs2cRvfAgBI.WofxVpi.RrgJZ0287j8751; HttpOnly; SameSite=None; Secure; Path=/; Domain=trmlabs.com; Expires=Sat, 10 Oct 2026 05:33:49 GMT
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 103 
+link: <https://cdn.prod.website-files.com>; crossorigin; rel=preconnect, <https://cdn.prod.website-files.com/6082dc5b67056233213587a4/css/trmlabs-com-v2.webflow.shared.511a18ca1.min.css>; as=style; crossorigin; integrity=sha384-URoYyh7c6MORoxxh21YLtFhwfxd7SgDjR2N0gO8kp6/LII7q0AxNtJ+/3voHy2Z5; rel=preload, <https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; crossorigin; rel=preconnect
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:49 GMT
+content-type: text/html; charset=utf-8
+cf-ray: a48314b038ec6fa4-IAD
+cf-cache-status: DYNAMIC
+age: 26028
+last-modified: Fri, 09 Oct 2026 21:50:01 GMT
+link: <https://cdn.prod.website-files.com>; rel=preconnect; crossorigin, <https://cdn.prod.website-files.com/6082dc5b67056233213587a4/css/trmlabs-com-v2.webflow.shared.511a18ca1.min.css>; rel=preload; as=style; crossorigin; integrity="sha384-URoYyh7c6MORoxxh21YLtFhwfxd7SgDjR2N0gO8kp6/LII7q0AxNtJ+/3voHy2Z5", <https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; rel=preconnect; crossorigin
+server: cloudflare
+x-wf-region: us-east-1
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+vary: accept-encoding
+content-security-policy: default-src * data: blob: 'unsafe-inline' 'unsafe-eval'; script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; frame-src *; img-src * data: blob:;
+o2o-cache-status: HIT
+surrogate-control: max-age=432000
+surrogate-key: www.trmlabs.com 6082dc5b67056233213587a4 pageId:6372284b6df74bbbbbfbe81d 6372284b6df74b2e10fbe7d1 6372284b6df74b1a0ffbe87c 6372284b6df74b2e10fbe7d1 67c0d58e7941de834f76d9a7 67c0d28760c898706f7ab9f5 6527d2137d89b1901d42145d 67c104b612d828e3f619d96b 6372284b6df74b3bd0fbe84e 66f5afeb7267644390e16439 66f34950f1f6261ece7a943c
+x-frame-options: SAMEORIGIN
+x-lambda-id: 4005a4f8-4064-440a-80ff-3e3f1f5fd524
+set-cookie: _cfuvid=TImdKPBM5e3ysw.fnpCSn01kRhsLUJZJyk8h94uIJ.M-1791608629.8128848-1.0.1.1-S1Kbh_A1CL5ybPepiQGspUPtzUB7GgxmMUvuIM7uWDo; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.trmlabs.com
+set-cookie: __cf_bm=GdkjGv0zCQiQy3.q9X6sozbeHOAO26cN9_J.SeNt8KY-1791608629.7970264-1.0.1.1-NE62CXUeVAE7LmZqcYCEmEKFG0bw7gfMhLTK9zldmUZZGXiG5.fMpttPrCotee.r43xbLiz_k5rOam2k6ziudp5JJ0EtTnznOdin6b6niSm4XAUQ.4oBGPxrPw8TBGeI; HttpOnly; SameSite=None; Secure; Path=/; Domain=trmlabs.com; Expires=Sat, 10 Oct 2026 05:33:49 GMT
+content-encoding: gzip
+alt-svc: h3=":443"; ma=86400
+

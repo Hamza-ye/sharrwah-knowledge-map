@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Date: Sat, 10 Oct 2026 05:03:31 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.33
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1
+Cache-Control: max-age=31536000
+Content-Encoding: gzip
+Vary: Accept-Encoding,User-Agent
+Set-Cookie: cross-site-cookie=name; SameSite=None; Secure
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+

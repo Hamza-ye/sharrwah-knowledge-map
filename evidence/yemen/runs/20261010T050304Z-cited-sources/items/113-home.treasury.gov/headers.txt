@@ -1,0 +1,31 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+last-modified: Wed, 16 Sep 2026 22:56:32 GMT
+server: AmazonS3
+x-amz-server-side-encryption: aws:kms
+x-amz-server-side-encryption-aws-kms-key-id: arn:aws:kms:us-east-1:790561526680:key/62a81883-f570-437b-aa86-728882537054
+x-amz-server-side-encryption-bucket-key-enabled: true
+x-amz-meta-md5chksum: rwf0JkCLn+WkfM94v+63NQ==
+x-amz-meta-mtime: 1789597678.679128731
+x-amz-version-id: t5p.Cb8G6E5tJlKcRLqOoU35Hum_BieW
+etag: W/"87d580b8e9876df8b2dbb28daf3e71b4"
+x-xss-protection: 1; mode=block
+x-frame-options: DENY
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-amz-cf-pop: ATL59-P18
+x-amz-cf-id: KWDIIsWQGpo4zXTOpFig1xtbHtq9QouvIzB6Iq-yj8DM2OHo0ZNLwg==
+x-akamai-transformed: 9 16660 0 pmb=mRUM,1
+content-encoding: gzip
+date: Sat, 10 Oct 2026 05:03:19 GMT
+content-length: 18653
+vary: Accept-Encoding
+server-timing: cdn-cache; desc=REVALIDATE
+server-timing: edge; dur=22
+server-timing: origin; dur=140
+alt-svc: h3=":443"; ma=93600
+strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+server-timing: ak_p; desc="1791608599076_399425802_157800971_16291_11659_20_51_15";dur=1
+

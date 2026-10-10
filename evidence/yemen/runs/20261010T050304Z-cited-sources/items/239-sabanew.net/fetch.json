@@ -1,0 +1,18 @@
+{
+ "n": 239,
+ "url": "https://www.sabanew.net/story/ar/132823",
+ "dir": "items/239-sabanew.net",
+ "fetched_at": "2026-10-10T05:03:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.sabanew.net/story/ar/132823",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 8226,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:116"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ef142498a0f39045684aeff5291f3e7affe49b55df7844c4de083775421db824",
+ "raw_ext": "html"
+}

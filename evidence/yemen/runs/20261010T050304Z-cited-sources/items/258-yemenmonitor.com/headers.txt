@@ -1,0 +1,23 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:51 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+vary: Accept-Encoding
+x-pingback: https://www.yemenmonitor.com/xmlrpc.php
+link: <https://www.yemenmonitor.com/wp-json/>; rel="https://api.w.org/", <https://www.yemenmonitor.com/wp-json/wp/v2/posts/148920>; rel="alternate"; title="JSON"; type="application/json", <https://www.yemenmonitor.com/?p=148920>; rel=shortlink
+set-cookie: pll_language=en; expires=Sun, 10-Oct-2027 05:03:51 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax
+x-server-powered-by: Dimofinf INC
+x-nginx-upstream-cache-status: MISS
+access-control-allow-origin: *
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=15552000; includeSubDomains
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QkZZ3XPxg%2BFZM43MgWOYALpMs2SMl8QRe41QQMIBrjxu6NpKof7VgBOWIRMyRZiUfhSiieNVUO6u7Z6mg1R3WNYHXEq7zr4BR8ZdEaNitadgBy%2FVnjcElyKxRBMVxd318vLaHhhu2w%3D%3D"}]}
+content-encoding: zstd
+cf-ray: a48314b78b57d46a-IAD
+alt-svc: h3=":443"; ma=86400
+

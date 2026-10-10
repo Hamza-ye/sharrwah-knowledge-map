@@ -1,0 +1,36 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 05:03:22 GMT
+content-type: text/html; charset=UTF-8
+content-length: 0
+location: https://obj.ca/ottawas-telepin-software-providing-mobile-wallet-tech-in-yemen/
+server: Apache
+podium-cache-tag: site:obj.ca,post:89016,post-type:post,term:category:techopia,term:post_tag:fintech,term:post_tag:promoted,term:post_tag:yemen,term:author:cap-editorobj-ca
+expires: Sat, 10 Oct 2026 06:03:22 GMT
+cache-control: max-age=3600
+x-redirect-by: WordPress
+x-podium-id: 59e43a5d8537
+strict-transport-security: max-age=63072000; preload
+x-xss-protection: 0
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+access-control-allow-origin: *
+access-control-allow-credentials: true
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:22 GMT
+content-type: text/html; charset=UTF-8
+content-length: 59960
+server: Apache
+x-podium-id: 59e43a5d8537
+strict-transport-security: max-age=63072000; preload
+x-xss-protection: 0
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+access-control-allow-origin: *
+access-control-allow-credentials: true
+last-modified: Fri, 09 Oct 2026 21:57:23 GMT
+vary: Accept-Encoding
+content-encoding: br
+

@@ -1,0 +1,18 @@
+{
+ "n": 207,
+ "url": "https://www.bpcbt.com/case-study-wenet",
+ "dir": "items/207-bpcbt.com",
+ "fetched_at": "2026-10-10T05:03:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bpcbt.com/case-study-wenet",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 8207,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:433"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "70a23ea5dbc3f30277954b4e0e54311ed41063ba225bcce14e4a18434c09e240",
+ "raw_ext": "html"
+}

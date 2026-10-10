@@ -1,0 +1,18 @@
+{
+ "n": 158,
+ "url": "https://sanaacenter.org/publications/perspectives-and-analyses/11562",
+ "dir": "items/158-sanaacenter.org",
+ "fetched_at": "2026-10-10T05:03:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://sanaacenter.org/publications/perspectives-and-analyses/11562",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 30962,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:72"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ab07851e5355f9fecf7e3578f93804b7372990807fef7ee43aba840275974bfd",
+ "raw_ext": "html"
+}

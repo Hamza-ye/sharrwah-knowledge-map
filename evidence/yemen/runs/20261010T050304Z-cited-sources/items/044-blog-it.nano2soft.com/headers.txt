@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+content-type: text/html; charset=UTF-8
+cache-control: no-cache, private
+referrer-policy: strict-origin-when-cross-origin
+x-frame-options: deny
+x-content-type-options: nosniff
+x-powered-by: nano2soft
+platform: hostinger
+panel: hpanel
+set-cookie: blog_it_session=eyJpdiI6Im5wV1k0V3Q1Mys1enJyc3h5dHM3Qmc9PSIsInZhbHVlIjoiek5XdU9kalhyeXhmMXdWZXZ2MnJiMFJvRFdSRmtmazBNZ0RVMWxQVDI0RExjS2RcL2ZQRzVGWGtYMlRsZ05VR0REeDhKWXdaRm9tU1VIWVFEUk54Y28ydFQ1bTFwb2Q1b0ZROUd3OVhsdlpzd3p6QUxkMmIxN1JhU0dDcWZtK0pPIiwibWFjIjoiNDljNjc2M2MyZDBkNzVjZmYzMjJjZWE4MjJkYWJkYzBhNTViMGE5ZDQ3NmJkOWNlN2FiNTdlNWI2NTE2YTlmOSJ9; expires=Sat, 10-Oct-2026 07:03:11 GMT; Max-Age=7200; path=/; httponly; samesite=lax; secure
+content-encoding: br
+vary: Accept-Encoding
+date: Sat, 10 Oct 2026 05:03:11 GMT
+server: LiteSpeed
+content-security-policy: upgrade-insecure-requests
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000
+

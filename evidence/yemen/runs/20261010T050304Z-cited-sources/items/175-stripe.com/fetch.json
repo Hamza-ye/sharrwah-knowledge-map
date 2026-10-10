@@ -1,0 +1,21 @@
+{
+ "n": 175,
+ "url": "https://stripe.com/global",
+ "dir": "items/175-stripe.com",
+ "fetched_at": "2026-10-10T05:03:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://stripe.com/global",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 59427,
+ "cited_in": [
+  "yemen-setup-options/report.md:78",
+  "yemen-setup-options/report.md:218",
+  "yemen-setup-options/notes/regulation_licensing.md:396",
+  "yemen-setup-options/notes/banks_exchange_cards.md:303"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4e481bfb54299d745c207288c7e403d6f41aa88b6d483ddfb5848eb0edf5c68f",
+ "raw_ext": "html"
+}

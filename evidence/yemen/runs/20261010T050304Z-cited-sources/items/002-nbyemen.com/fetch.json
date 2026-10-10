@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "http://www.nbyemen.com/creditCard_en.html",
+ "dir": "items/002-nbyemen.com",
+ "fetched_at": "2026-10-10T05:03:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 404,
+ "final_url": "https://www.nbyemen.com/creditCard_en.html",
+ "content_type": "text/html; charset=iso-8859-1",
+ "bytes": 355,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:244"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cc0b4e42510d49c6decd464123ecf3b14ae9b47f9b4ed2ee64893e2d6520a264",
+ "raw_ext": "html"
+}

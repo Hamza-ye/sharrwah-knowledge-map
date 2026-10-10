@@ -1,0 +1,64 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+server: awselb/2.0
+date: Sat, 10 Oct 2026 05:03:30 GMT
+content-type: text/html
+content-length: 134
+location: https://www.shiprocket.in:443/blog/early-cod-by-shiprocket
+
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 05:03:31 GMT
+content-type: text/html; charset=UTF-8
+location: https://www.shiprocket.in/blog/early-cod-by-shiprocket/
+server: cloudflare
+vary: accept-encoding
+expires: Thu, 19 Nov 1981 08:52:00 GMT
+last-modified: Wed, 07 Aug 2019 11:00:49 GMT
+pragma: no-cache
+status: 301 Moved Permanently
+x-powered-by: WP Engine
+x-redirect-by: WordPress
+x-cacheable: non200
+cache-control: max-age=600, must-revalidate
+x-cache: MISS
+x-cache-group: normal
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+set-cookie: __cf_bm=ieqoHovoWqisoxYpj1HWu_4h8f6HaS0pN2FPfML_ZYA-1791608611.1943953-1.0.1.1-pQA7zHYmzbdFKdFpBfzCudIzxetWVCDqRzm.MMfJ4I0wiNtbh0B_WBcleP18p_YC75JFnq.n7F6ydlvo7d_X0cz2mrMjt4DLHX6FLj7L4QuFiHKqKaAe5dMdE0M2x1Q5; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.shiprocket.in; Expires=Sat, 10 Oct 2026 05:33:31 GMT
+cf-cache-status: EXPIRED
+cf-ray: a483143bf8be9d98-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:31 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+vary: Accept-Encoding
+vary: Accept-Encoding,Cookie
+last-modified: Wed, 07 Aug 2019 11:00:49 GMT
+link: <https://www.shiprocket.in/wp-json/>; rel="https://api.w.org/"
+link: <https://www.shiprocket.in/wp-json/wp/v2/posts/14690>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://www.shiprocket.in/?p=14690>; rel=shortlink
+x-powered-by: WP Engine
+x-cacheable: YES:15552000.000
+cache-control: max-age=15552000, must-revalidate
+x-cache: MISS
+x-cache-group: normal
+expires: Thu, 19 Nov 1981 08:52:00 GMT
+x-frame-options: SAMEORIGIN
+cf-cache-status: HIT
+set-cookie: __cf_bm=hab32fEOzQi57VQfVVjTo1DaZ9Lrq17dMFYH2AdtVNc-1791608611.7331693-1.0.1.1-EdxrMq1LC4ihOz57E5KT0lL8bHfRKU4bRPgqsuqoxpuy1ApXiZyigcbbl1S4kjidNFiZ71giZrb.LunOo9wqFc2ShRlBtbatPoXW1snd4H11CbzLG8q0xrQhE8ONgm1W; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.shiprocket.in; Expires=Sat, 10 Oct 2026 05:33:31 GMT
+access-control-allow-headers: Authorization, Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-origin: *
+content-security-policy: default-src 'self'; upgrade-insecure-requests; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com https://*.shiprocket.in https://www.google.com https://www.gstatic.com https://maps.googleapis.com https://maps.gstatic.com https://cdn.moengage.com https://bat.bing.com https://dynamic.criteo.com https://sslwidget.criteo.com https://connect.facebook.net https://cdn.branch.io https://app.link https://www.clarity.ms https://scripts.clarity.ms https://static-cdn.trackier.com https://track.omguk.com https://static-cdn.readtargeting.com https://static-event.com https://cdn.trackmyvisits.com https://googleads.g.doubleclick.net https://cdnjs.cloudflare.com https://cdn.ampproject.org; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.shiprocket.in https://cdn.ampproject.org; font-src 'self' https://fonts.gstatic.com https://*.shiprocket.in https://static2.sharepointonline.com data:; img-src 'self' data: blob: https:; media-src 'self' https://*.shiprocket.in blob: data:; connect-src 'self' https://*.shiprocket.in https://*.shiprocket.co https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://www.google.co.in https://www.googleadservices.com https://googleads.g.doubleclick.net https://ad.doubleclick.net https://stats.g.doubleclick.net https://pagead2.googlesyndication.com https://k.clarity.ms https://api2.branch.io https://static-event.com https://cdn.trackmyvisits.com https://static-cdn.readtargeting.com https://mpc2-prod-21-is5qnl632q-uc.a.run.app https://*.moengage.com https://adzeb.com https://maps.googleapis.com https://maps.gstatic.com https://cdnjs.cloudflare.com https://cdn.ampproject.org https://*.s3.ap-south-1.amazonaws.com https://*.amazonaws.com; frame-src 'self' blob: https://www.google.com https://www.googletagmanager.com https://www.facebook.com https://www.youtube.com https://gumi.criteo.com https://*.doubleclick.net https://*.fls.doubleclick.net; frame-ancestors 'self' https://*.shiprocket.in; object-src 'none'; base-uri 'self'; form-action 'self' https://*.shiprocket.in https://www.facebook.com;
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+age: 163992
+content-encoding: br
+cf-ray: a483143f5b969d98-IAD
+alt-svc: h3=":443"; ma=86400
+

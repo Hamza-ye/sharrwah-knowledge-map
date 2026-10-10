@@ -1,0 +1,27 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:05:50 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+vary: Accept-Encoding
+vary: Cookie
+cache-control: public, max-age=14400
+x-drupal-dynamic-cache: UNCACHEABLE (poor cacheability)
+content-language: en
+x-content-type-options: nosniff
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-frame-options: SAMEORIGIN
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+last-modified: Sat, 10 Oct 2026 05:05:39 GMT
+x-generator: Drupal 11 (https://www.drupal.org)
+purge-cache-tags: config:block_list config:block.block.swallow_account_menu config:block.block.swallow_views_block__header_top_news_header_top_news config:block.block.swallow_breadcrumbs config:block.block.swallow_help config:block.block.swallow_main_menu config:block.block.swallow_page_title config:block.block.swallow_syndicate config:block.block.swallow_content config:block.block.swallow_messages config:block.block.swallow_primary_admin_actions config:block.block.swallow_primary_local_tasks config:block.block.swallow_secondary_local_tasks config:block.block.swallow_site_branding config:block.block.swallow_sitebranding node:2182056 config:block.block.swallow_dfptagpopupbannersnd config:block.block.swallow_dfptagpopupbanner config:block.block.swallow_dfptagpop_up_banner_out_of_page config:block.block.swallow_dfptagpop_up_banner_snd_out_of_page config:block.block.swallow_footer config:block.block.swallow_copyrightblock config:block.block.swallow_socialmediablock config:block.block.swallow_dfpadblock config:block.block.swallow_dfpadblock_2 config:block.block.swallow_dfpadblock_3 config:block.block.swallow_dfpadblock_4 config:block.block.swallow_dfptaghomepage_bottom_sticky_hover config:block.block.swallow_stickyfooteradblock config:block.block.swallow_stickyarticlefooteradblock config:asset_injector.js.print_summary config:google_analytics.settings block_view config:dfp.settings dfp_tag_view config:system.site node_view config:core.entity_view_display.node.news.default config:views.view.related_news node_list node:4294056 node:4294061 node:4294356 node:4294571 node:4294606 user:35 user:196681 user:196096 node:2204221 node:2071709 user:34 block_content:466 block_content_view config:core.entity_view_display.block_content.basic.default config:filter.format.full_html taxonomy_term:283309 node:4293276 node:2687 node:4293096 user:196751 node:4293306 node:73438 node:4293041 node:789313 user:196711 node:4294026 node:4294001 media:619427 taxonomy_term:283513 taxonomy_term:283525 taxonomy_term:283521 taxonomy_term:283533 taxonomy_term:283717 taxonomy_term:283065 taxonomy_term:283201 taxonomy_term:21 taxonomy_term:283405 taxonomy_term:8 taxonomy_term:4 taxonomy_term:61 taxonomy_term:283721 taxonomy_term:125107 taxonomy_term:2 taxonomy_term:159361 taxonomy_term:283529 taxonomy_term:283285 taxonomy_term:609736 taxonomy_term:283325 taxonomy_term:3 taxonomy_term:36 taxonomy_term:38 taxonomy_term:283137 taxonomy_term:37 taxonomy_term:6 taxonomy_term:628 taxonomy_term:614811 taxonomy_term:287056 taxonomy_term:283269 taxonomy_term:642 taxonomy_term:283445 taxonomy_term:283449 taxonomy_term:286946 taxonomy_term:283469 taxonomy_term:283453 taxonomy_term:283461 taxonomy_term:283457 taxonomy_term:1336956 taxonomy_term:3850 taxonomy_term:686646 taxonomy_term:1336966 taxonomy_term:1336971 taxonomy_term:1336976 taxonomy_term:283197 taxonomy_term:607386 taxonomy_term:283221 taxonomy_term:607401 taxonomy_term:607406 taxonomy_term:5604 taxonomy_term:1519037 taxonomy_term:1442261 taxonomy_term:283541 taxonomy_term:90 taxonomy_term:53 taxonomy_term:530731 config:system.menu.mega-menu rendered http_response config:user.role.anonymous config:system.menu.footer node:4039228 node:4039229 node:4039230 node:4039231 node:4039232 node:4174816 config:system.menu.main taxonomy_term:128134 taxonomy_term:283261 node:4085781 config:entityqueue.entity_queue.header_top config:field.storage.node.field_featured_media config:views.view.header_top_news entity_subqueue_list entity_subqueue:header_top node:4291836 node:4291841 node:4291846 media:1485786 config:image.style.small_80x80 media:1485766 media:1485776
+x-drupal-cache: MISS
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+cf-cache-status: EXPIRED
+content-encoding: br
+cf-ray: a48314ab1a75f331-IAD
+alt-svc: h3=":443"; ma=86400
+

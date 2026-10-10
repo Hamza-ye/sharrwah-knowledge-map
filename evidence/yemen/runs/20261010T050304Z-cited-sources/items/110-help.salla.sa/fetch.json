@@ -1,0 +1,18 @@
+{
+ "n": 110,
+ "url": "https://help.salla.sa/en/article/manage-cash-on-delivery-salla-waybills/nonfrowzfu421ewhv6klylv6",
+ "dir": "items/110-help.salla.sa",
+ "fetched_at": "2026-10-10T05:03:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/en/article/manage-cash-on-delivery-salla-waybills/nonfrowzfu421ewhv6klylv6",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 109610,
+ "cited_in": [
+  "yemen-setup-options/report.md:118"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b6dce75e7b7ad1931b723dc446eafc21fdfeac4f90ab8e37932e71888e6828c5",
+ "raw_ext": "html"
+}

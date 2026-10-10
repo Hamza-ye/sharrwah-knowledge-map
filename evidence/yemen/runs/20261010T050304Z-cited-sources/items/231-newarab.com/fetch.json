@@ -1,0 +1,20 @@
+{
+ "n": 231,
+ "url": "https://www.newarab.com/news/houthis-yemeni-government-reach-financial-de-escalation-deal",
+ "dir": "items/231-newarab.com",
+ "fetched_at": "2026-10-10T05:03:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.newarab.com/news/houthis-yemeni-government-reach-financial-de-escalation-deal",
+ "content_type": "text/html",
+ "bytes": 466,
+ "cited_in": [
+  "yemen-setup-options/report.md:52",
+  "yemen-setup-options/notes/regulation_licensing.md:288",
+  "yemen-setup-options/notes/banks_exchange_cards.md:66"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9c2b00310291caa2a9c6c48637993da0aa6569daf9c9acd42554fad491138f13",
+ "raw_ext": "html"
+}

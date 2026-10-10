@@ -1,0 +1,19 @@
+{
+ "n": 221,
+ "url": "https://www.fatf-gafi.org/content/fatf-gafi/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-june-2026.html",
+ "dir": "items/221-fatf-gafi.org",
+ "fetched_at": "2026-10-10T05:03:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.fatf-gafi.org/content/fatf-gafi/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-june-2026.html",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 3489,
+ "cited_in": [
+  "yemen-setup-options/report.md:62",
+  "yemen-setup-options/notes/regulation_licensing.md:386"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "952c4c2e9afae103a948416c236b6d100b0d67620467903ce66dd3511840eb91",
+ "raw_ext": "html"
+}

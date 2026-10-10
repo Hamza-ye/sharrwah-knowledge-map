@@ -1,0 +1,24 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:33 GMT
+content-type: text/html; charset=UTF-8
+cf-edge-cache: cache,platform=wordpress
+x-pingback: https://tech-ye.com/xmlrpc.php
+link: <https://tech-ye.com/wp-json/>; rel="https://api.w.org/"
+link: <https://tech-ye.com/wp-json/wp/v2/posts/3979>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://tech-ye.com/?p=3979>; rel=shortlink
+x-frame-options: SAMEORIGIN
+vary: Accept-Encoding,User-Agent,User-Agent
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+x-turbo-charged-by: LiteSpeed
+cf-cache-status: DYNAMIC
+x-xss-protection: 1; mode=block
+speculation-rules: "/cdn-cgi/speculation"
+expect-ct: max-age=86400, enforce
+referrer-policy: same-origin
+x-content-type-options: nosniff
+content-encoding: zstd
+cf-ray: a483143fed9028a2-IAD
+

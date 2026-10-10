@@ -1,0 +1,23 @@
+{
+ "n": 7,
+ "url": "https://aawsat.com/node/5025163",
+ "dir": "items/007-aawsat.com",
+ "fetched_at": "2026-10-10T05:03:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5025163-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86%D9%8A-%D9%8A%D8%B9%D8%B2%D8%B2-%D8%B3%D9%8A%D8%B7%D8%B1%D8%AA%D9%87-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 36118,
+ "cited_in": [
+  "yemen-setup-options/report.md:74",
+  "yemen-setup-options/report.md:149",
+  "yemen-setup-options/notes/banks_exchange_cards.md:179",
+  "yemen-setup-options/notes/banks_exchange_cards.md:317",
+  "yemen-setup-options/notes/banks_exchange_cards.md:341",
+  "yemen-setup-options/notes/banks_exchange_cards.md:354"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "76f1de1df791d772a3fe15f6940646589708e6818fc8a69147f34176e6370ff2",
+ "raw_ext": "html"
+}

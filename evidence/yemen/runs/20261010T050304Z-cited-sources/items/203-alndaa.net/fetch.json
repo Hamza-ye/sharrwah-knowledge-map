@@ -1,0 +1,19 @@
+{
+ "n": 203,
+ "url": "https://www.alndaa.net/102197/central-bank-sanaa-suspends-dealings-alkuraimi-bank-gives",
+ "dir": "items/203-alndaa.net",
+ "fetched_at": "2026-10-10T05:03:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.alndaa.net/102197/central-bank-sanaa-suspends-dealings-alkuraimi-bank-gives",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 7795,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:293",
+  "yemen-setup-options/notes/wallets_emoney.md:73"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "79a6c8e3ee420b685f7906e846fc6a2bb6bc574ac6f70d6808f3f4aded910240",
+ "raw_ext": "html"
+}

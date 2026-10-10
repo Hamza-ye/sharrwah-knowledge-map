@@ -1,0 +1,19 @@
+{
+ "n": 28,
+ "url": "https://aosan.co/about-us",
+ "dir": "items/028-aosan.co",
+ "fetched_at": "2026-10-10T05:03:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://aosan.co/maintenance-mode",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 5319,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:53",
+  "yemen-setup-options/notes/cash_logistics_practice.md:94"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "30c218e05d0bb3b12c57c73729f7fe69deb03a9d7ae877cd4c66d5f03766a3d5",
+ "raw_ext": "html"
+}

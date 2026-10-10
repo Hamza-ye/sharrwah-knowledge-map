@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:44 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+cache-control: no-cache,no-store
+content-encoding: br
+expires: -1
+pragma: no-cache
+set-cookie: TiPMix=33.64232888747976; path=/; HttpOnly; Domain=www.grantthornton.global; Max-Age=3600; Secure; SameSite=None
+set-cookie: x-ms-routing-name=self; path=/; HttpOnly; Domain=www.grantthornton.global; Max-Age=3600; Secure; SameSite=None
+set-cookie: EPiNumberOfVisits=1%2C2026-10-10T05%3A03%3A44; expires=Sun, 10 Oct 2027 05:03:44 GMT; path=/; secure; httponly
+set-cookie: recentIds=2243097-en; expires=Sun, 10 Oct 2027 05:03:44 GMT; path=/; secure
+set-cookie: .AspNetCore.Mvc.CookieTempDataProvider=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; secure; samesite=lax; httponly
+set-cookie: .AspNetCore.Session=CfDJ8C%2B0oAncYnVBjZKu%2FDm75ga1hiLDj%2BNazbQcPt5ZjglNaM8DugSDTgCzBgOdtXw3gXDcErrpNpFs74gx%2Fu2jm9IoOoc7Ofh7zgZObWcspQ5%2BXm8izZ9t9I9w5W13DNRk%2BTaYre0SI%2BZPRiN2zXTtGC%2BvAStbi%2FBPxDRgady6aR0e; path=/; secure; samesite=lax; httponly
+set-cookie: ARRAffinity=c82a62038b06ec47fe28a16f41e302b9c9ca43fa7da2acf6914fb16c7055704f;Path=/;HttpOnly;Secure;Domain=www.grantthornton.global
+set-cookie: ARRAffinitySameSite=c82a62038b06ec47fe28a16f41e302b9c9ca43fa7da2acf6914fb16c7055704f;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.grantthornton.global
+vary: Accept-Encoding
+strict-transport-security: max-age=31536000; includeSubDomains
+request-context: appId=cid-v1:9b5442f9-67c2-44c6-9c50-575327979ec9
+content-security-policy: default-src 'self'; block-all-mixed-content ; base-uri 'self'; object-src 'none'; script-src  'nonce-22c129f03bb7479bb9abf4644b78cedd' 'self' https://*.onetrust.com https://cdn.optimizely.com/ https://www.grantthornton.global/ https://www.clarity.ms/ https://script.hotjar.com https://static.hotjar.com https://engage.grantthornton.global https://dl.episerver.net https://maps.googleapis.com https://www.gstatic.com https://www.google.com https://st.getsitecontrol.com/ https://widgets.getsitecontrol.com https://tagmanager.google.com/ https://www.googletagmanager.com/ https://optimize.google.com https://www.google-analytics.com https://az416426.vo.msecnd.net https://ajax.googleapis.com/ https://region1.google-analytics.com/ https://*.googletagmanager.com https://flo.uri.sh/ https://view.ceros.com/ https://*.optimizely.com https://optimizely.s3.amazonaws.com https://cdn-assets-prod.s3.amazonaws.com; img-src 'self' data: https://www.grantthornton.sx/ https://www.grantthornton.com.cw/ https://*.analytics.google.com https://*.onetrust.com https://*.google-analytics.com/ https://www.grantthornton.mx https://www.grantthornton.is/ https://px.ads.linkedin.com/ https://px.ads.linkedin.com https://px4.ads.linkedin.com https://translate.google.com/ https://c.bing.com https://app.getsitecontrol.com/ https://c.clarity.ms/ https://www.gstatic.com/ https://www.clarity.ms/ https://p.adsymptotic.com https://ws.sessioncam.com https://www.facebook.com https://b.ws.sessioncam.com https://ssl.gstatic.com/ https://syndication.twitter.com https://optimize.google.com https://platform.twitter.com https://pbs.twimg.com https://maps.gstatic.com https://maps.googleapis.com https://www.googletagmanager.com https://i.ytimg.com https://img.youtube.com https://cdn.jotfor.ms/ https://integration-emea.gtil-dxc.com/ https://analytics.marera.net https://script.hotjar.com/ https://www.grantthornton.co.za/ https://www.doanegrantthornton.ca/ https://www.grantthornton.com.vn/ https://www.grantthornton.kr/ https://www.google.com.vn https://www.grantthornton.mk/ https://www.linkedin.com/ https://www.grantthornton.com.pa/ https://*.googletagmanager.com https://cdn.optimizely.com; style-src 'self' 'unsafe-inline' https://tagmanager.google.com/ https://fonts.googleapis.com/ https://optimize.google.com https://platform.twitter.com https://cdnjs.cloudflare.com https://fonts.googleapis.com https://app-lon07.marketo.com/ https://engage.grantthornton.global/; font-src 'self' data: https://static3.avast.com https://use.typekit.net/ https://st.getsitecontrol.com/ https://fonts.gstatic.com https://script.hotjar.com/; frame-src https://www.googletagmanager.com https://www.paperturn-view.com https://vars.hotjar.com https://a10084069166.cdn.optimizely.com/ https://www.google.com/ https://platform.twitter.com https://www.youtube.com https://optimize.google.com https://w.soundcloud.com https://player.vimeo.com https://www.gstatic.com https://cdn.optimizely.com https://player.cnbc.com/ https://onlinerecruitment.exelsyslive.com/ https://view.ceros.com/ https://flo.uri.sh/ https://app-lon07.marketo.com/ https://engage.grantthornton.global/ https://www.facebook.com/ https://td.doubleclick.net https://*.optimizely.com https://a28826650685.cdn.optimizely.com https://a28826650685.cdn-pci.optimizely.com; connect-src 'self' https://vimeo.com/ https://e.clarity.ms/collect https://*.onetrust.com https://*.google.com https://*.doubleclick.net https://*.googlesyndication.com https://analytics.google.com/ https://digitalwhiskey.matomo.cloud/ https://www.facebook.com/ https://www.facebook.com/tr/ https://surveystats.hotjar.io/ https://vc.hotjar.io/ https://extreme-ip-lookup.com https://stats.g.doubleclick.net https://logx.optimizely.com https://dc.services.visualstudio.com https://az416426.vo.msecnd.net https://rum.optimizely.com/ https://www.clarity.ms/ https://b.ws.sessioncam.com https://vars.hotjar.com https://errors.client.optimizely.com https://642-sde-924.mktoresp.com https://in.hotjar.com https://ws.sessioncam.com https://magicbeanlab.com https://idx.liadm.com/ https://maps.googleapis.com/ https://*.analytics.google.com/ https://*.google-analytics.com/ https://*.googletagmanager.com wss://ws.hotjar.com/ https://content.hotjar.io/ https://metrics.hotjar.io/ https://px.ads.linkedin.com/ https://*.optimizely.com https://www.google.com/ https://northeurope-2.in.applicationinsights.azure.com; frame-ancestors https://*.optimizely.com https://*.optimizelyedit.com 'self';
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 1; mode=block
+expect-ct: max-age=0, enforce, report-uri="https://example.report-uri.com/r/d/ct/enforce"
+feature-policy: accelerometer 'none'; camera 'none'; geolocation 'self'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+permissions-policy: accelerometer=(), camera=(), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+cf-cache-status: DYNAMIC
+cf-ray: a483148b7a30d42d-IAD
+alt-svc: h3=":443"; ma=86400
+

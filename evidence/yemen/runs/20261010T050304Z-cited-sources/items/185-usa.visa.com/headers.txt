@@ -1,0 +1,24 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:33 GMT
+content-type: application/pdf
+content-length: 256314
+set-cookie: _cfuvid=v7dcGcHCazlrs0Qd41C3F26VldP3Yu_E1Yq0PrbT_II-1791608613.3104353-1.0.1.1-m7uTZH6XZJZK4tN0lLEAeJ.kjg8OdA6JSm1sBK5iafM; HttpOnly; SameSite=None; Secure; Path=/; Domain=usa.visa.com
+cf-ray: a48314492f529c16-IAD
+cf-cache-status: HIT
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 2212
+cache-control: max-age=14400
+last-modified: Mon, 07 Sep 2026 13:25:26 GMT
+server: cloudflare
+strict-transport-security: max-age=31536000; includeSubdomains;
+vary: accept-encoding
+content-security-policy: default-src 'self' *.visa.com; script-src 'self' *.visa.com *.googletagmanager.com *.stackadapt.com *.smartrecruiters.com connect.facebook.net mg.en25.com img.en25.com scripts.demandbase.com policy.cookiereports.com tags.tiqcdn.com g.3gl.net www.youtube.com ad.doubleclick.net www.facebook.com s.company-target.com www.google.com www.gstatic.com universal-editor-service.adobe.io code.jquery.com *.optimizely.com *.pulseinsights.com *.contentsquare.com *.contentsquare.net tags.tiqcdn.cn tags-eu.tiqcdn.com *.google.com *.google.co.in *.google-analytics.com *.analytics.google.com *.doubleclick.net *.g.doubleclick.net td.doubleclick.net googleads.g.doubleclick.net *.googlesyndication.com pagead2.googlesyndication.com *.googleadservices.com analytics.google.com *.youtube.com tealium.com *.tealiumiq.com collect.tealiumiq.com *.cdn.optimizely.com *.demandbase.com tag-logger.demandbase.com *.company-target.com *.rlcdn.com *.eloqua.com *.en25.com *.3gl.net static.ads-twitter.com analytics.tiktok.com snap.licdn.com www.linkedin.com *.snapchat.com *.snap.com sc-static.net accounts.snapchat.com forbusiness.snapchat.com *.o789thktrk.com s.yimg.com *.outbrain.com *.marketo.com *.rezync.com blob: 'unsafe-inline' 'unsafe-eval'; style-src 'self' *.visa.com fonts.googleapis.com 'unsafe-inline'; img-src * data:; font-src 'self' *.visa.com fonts.googleapis.com fonts.gstatic.com data:; object-src 'self' *.visa.com; connect-src *; frame-src 'self' *.visa.com www.youtube.com www.google.com experience.adobe.com s.company-target.com *.optimizely.com *.doubleclick.net www.facebook.com; frame-ancestors 'self' experience.adobe.com; base-uri 'self'; form-action 'self' www.facebook.com; upgrade-insecure-requests
+referrer-policy: strict-origin-when-cross-origin
+referrer-policy: no-referrer-when-downgrade
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+

@@ -1,0 +1,20 @@
+{
+ "n": 212,
+ "url": "https://www.cash.com.ye/en/companies-merchants-features",
+ "dir": "items/212-cash.com.ye",
+ "fetched_at": "2026-10-10T05:03:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.cash.com.ye/en/companies-merchants-features",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 11380,
+ "cited_in": [
+  "yemen-setup-options/report.md:198",
+  "yemen-setup-options/notes/wallets_emoney.md:200",
+  "yemen-setup-options/notes/wallets_emoney.md:381"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a3a1722eb801873b8184c8b93f33f75839ef08ffc815c8460a9073c44da7cb9a",
+ "raw_ext": "html"
+}

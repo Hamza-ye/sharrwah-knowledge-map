@@ -1,0 +1,18 @@
+{
+ "n": 223,
+ "url": "https://www.globalsecurity.org/military/library/news/2025/01/mil-250117-treasury02.htm",
+ "dir": "items/223-globalsecurity.org",
+ "fetched_at": "2026-10-10T05:03:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 402,
+ "final_url": "https://www.globalsecurity.org/military/library/news/2025/01/mil-250117-treasury02.htm",
+ "content_type": "application/json",
+ "bytes": 697,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:67"
+ ],
+ "raw_file": "raw.json",
+ "sha256": "fc2a08f1317e55d7f8bf52a649ec31b0cda58659fadb558a95f55f7b1e72e9d6",
+ "raw_ext": "json"
+}

@@ -1,0 +1,27 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:50 GMT
+content-type: text/html; charset=utf-8
+set-cookie: __cf_bm=z2ubR8Mxm9cE4DHoUIGl_WryOJ37yORRQr30Vj2b1oc-1791608630.2905493-1.0.1.1-C00Bi4WvnLCjuy9A6HrrOB413lawqIc8mJ52n0aIKt1VAQIaZ5LF5oM_pYLx3tNPvo00nMkcke63WJ7bUbDlzBUbSBdCW9zYsj593FKG.GldWD2LhMcqcc3qEze7Y64o; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.worldbank.org; Expires=Sat, 10 Oct 2026 05:33:50 GMT
+set-cookie: _cfuvid=.08zymJJ6tdxrRxxMVYfjsl4P4u4_4YzJMj1JxAsT38-1791608630.2905493-1.0.1.1-3Ybq3Tpmw6vKqqBXZwgIdoYPj6pMm2H5oWpATti_XGg; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.worldbank.org
+cf-ray: a48314b3495570f6-IAD
+cf-cache-status: HIT
+x-xss-protection: 1; mode=block
+cache-control: max-age=7200, must-revalidate
+wbg_ctx: 1
+last-modified: Sun, 20 Sep 2026 23:13:27 GMT
+server: cloudflare
+strict-transport-security: max-age=63072000; includeSubDomains
+vary: Accept-Encoding,X-Forwarded-Host
+via: 1.1 varnish, 1.1 varnish, 1.1 varnish
+cdn-cache-control: max-age=172800, must-revalidate
+x-cache: MISS, HIT, HIT
+x-cache-hits: 0, 1, 0
+x-cache-tag: main--externalweb-ibrd--wbgextapp,yqsNclB6XZyOPgS7,52a0faed724bf5e2e23e8c73b0d9c524e65d708f6b7c34791b7294f58e3_metadata,main--externalweb-ibrd--wbgextapp_head,52a0faed724bf5e2e23e8c73b0d9c524e65d708f6b7c34791b7294f58e3,/en/news/press-release/2025/06/17/world-bank-approves-us-30-million-to-support-financial-inclusion-and-education-in-yemen
+x-served-by: cache-iad-kjyo7100088-IAD, cache-iad-kjyo7100088-IAD, cache-lga-kjfk8660071-LGA
+x-timer: S1790071641.126007,VS0,VE0
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+content-encoding: br
+

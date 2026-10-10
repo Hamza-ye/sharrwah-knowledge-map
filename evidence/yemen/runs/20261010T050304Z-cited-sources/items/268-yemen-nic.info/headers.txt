@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Date: Sat, 10 Oct 2026 05:03:52 GMT
+Server: Apache
+X-Powered-By: PHP/5.6.40
+P3P: policyref="/bitrix/p3p.xml", CP="NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+B-Powered-By: Bitrix SM/4.0.5 (0e255506f9bab29311c42f77c52b73c5)
+Set-Cookie: PHPSESSID=4fd4d3c144376cc7664de715fb69b57f; path=/
+Set-Cookie: nic_BANNERS=1_63_1_12102026; expires=Tue, 05-Oct-2027 05:03:52 GMT; Max-Age=31104000; path=/
+Set-Cookie: nic_BANNERS=1_63_1_12102026%2C1_74_1_12102026; expires=Tue, 05-Oct-2027 05:03:52 GMT; Max-Age=31104000; path=/
+Set-Cookie: nic_BANNERS=1_63_1_12102026%2C1_74_1_12102026%2C1_39_1_12102026; expires=Tue, 05-Oct-2027 05:03:52 GMT; Max-Age=31104000; path=/
+Set-Cookie: nic_BANNERS=1_63_1_12102026%2C1_74_1_12102026%2C1_39_1_12102026%2C1_35_1_12102026; expires=Tue, 05-Oct-2027 05:03:52 GMT; Max-Age=31104000; path=/
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+

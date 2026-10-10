@@ -1,0 +1,18 @@
+{
+ "n": 141,
+ "url": "https://play.google.com/store/apps/details?id=com.jeeey.shopin",
+ "dir": "items/141-play.google.com",
+ "fetched_at": "2026-10-10T05:03:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=com.jeeey.shopin",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 189875,
+ "cited_in": [
+  "yemen-setup-options/notes/cash_logistics_practice.md:36"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f421c61a7eaca974e6cb88d51599a41fd4c1b653f7d551034cb837e899251813",
+ "raw_ext": "html"
+}

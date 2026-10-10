@@ -1,0 +1,29 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+content-type: text/html; charset=UTF-8
+cache-control: must-revalidate, no-cache, private
+x-drupal-dynamic-cache: MISS
+content-language: en
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+x-generator: Drupal 10 (https://www.drupal.org)
+x-drupal-cache: MISS
+x-request-id: v-eaf8c0f0-c467-11f1-ab02-0398db3679b2
+x-ah-environment: prod
+x-age: 0
+accept-ranges: bytes
+x-akamai-transformed: 9 10288 0 pmb=mRUM,1
+content-encoding: gzip
+date: Sat, 10 Oct 2026 05:03:23 GMT
+content-length: 11981
+vary: Accept-Encoding
+server-timing: cdn-cache; desc=REVALIDATE
+server-timing: edge; dur=163
+server-timing: origin; dur=272
+alt-svc: h3=":443"; ma=93600
+strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+server-timing: ak_p; desc="1791608602649_388045967_96080732_43467_7838_16_46_15";dur=1
+

@@ -1,0 +1,18 @@
+{
+ "n": 83,
+ "url": "https://english.cby-ye.com/news/181",
+ "dir": "items/083-english.cby-ye.com",
+ "fetched_at": "2026-10-10T05:03:15Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://english.cby-ye.com/news/181",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 7947,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:215"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "44c503d877eadcec748130101d0964fd4f853441a58d1f8760b60b8bce72d01b",
+ "raw_ext": "html"
+}

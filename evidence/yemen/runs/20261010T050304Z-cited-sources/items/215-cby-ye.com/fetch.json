@@ -1,0 +1,22 @@
+{
+ "n": 215,
+ "url": "https://www.cby-ye.com/files/64dde85e0a84f.pdf",
+ "dir": "items/215-cby-ye.com",
+ "fetched_at": "2026-10-10T05:03:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.cby-ye.com/files/64dde85e0a84f.pdf",
+ "content_type": "application/pdf",
+ "bytes": 10665487,
+ "cited_in": [
+  "yemen-setup-options/notes/wallets_emoney.md:26",
+  "yemen-setup-options/notes/wallets_emoney.md:37",
+  "yemen-setup-options/notes/wallets_emoney.md:339",
+  "yemen-setup-options/notes/wallets_emoney.md:389",
+  "yemen-setup-options/notes/wallets_emoney.md:446"
+ ],
+ "raw_file": "raw.pdf",
+ "sha256": "28d6e633bcbba69f881d0be08bba7dc71e620fce7b4558066b8ad2e6119fd99e",
+ "raw_ext": "pdf"
+}

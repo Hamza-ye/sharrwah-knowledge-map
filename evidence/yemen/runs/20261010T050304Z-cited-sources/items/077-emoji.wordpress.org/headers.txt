@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 05:03:15 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+x-olaf: ⛄
+vary: accept, content-type
+link: <https://emoji.wordpress.org/plugins/wp-json/>; rel="https://api.w.org/"
+link: <https://emoji.wordpress.org/plugins/wp-json/wp/v2/plugin/268650>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://emoji.wordpress.org/plugins/?p=268650>; rel=shortlink
+x-frame-options: SAMEORIGIN
+content-encoding: br
+alt-svc: clear
+x-nc: MISS dca 1
+

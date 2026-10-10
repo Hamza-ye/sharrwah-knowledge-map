@@ -1,0 +1,31 @@
+{
+ "n": 160,
+ "url": "https://sanaacenter.org/the-yemen-review/april-june-2026/28066",
+ "dir": "items/160-sanaacenter.org",
+ "fetched_at": "2026-10-10T05:03:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://sanaacenter.org/the-yemen-review/april-june-2026/28066",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49839,
+ "cited_in": [
+  "yemen-setup-options/report.md:17",
+  "yemen-setup-options/report.md:56",
+  "yemen-setup-options/notes/regulation_licensing.md:228",
+  "yemen-setup-options/notes/regulation_licensing.md:229",
+  "yemen-setup-options/notes/regulation_licensing.md:241",
+  "yemen-setup-options/notes/regulation_licensing.md:302",
+  "yemen-setup-options/notes/regulation_licensing.md:310",
+  "yemen-setup-options/notes/regulation_licensing.md:311",
+  "yemen-setup-options/notes/regulation_licensing.md:312",
+  "yemen-setup-options/notes/regulation_licensing.md:559",
+  "yemen-setup-options/notes/regulation_licensing.md:563",
+  "yemen-setup-options/notes/currency_territory.md:30",
+  "yemen-setup-options/notes/currency_territory.md:122",
+  "yemen-setup-options/notes/currency_territory.md:233"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3c49179148fca74b83e97f9c383497d2445c2c1b7235204a506b77519af494b8",
+ "raw_ext": "html"
+}

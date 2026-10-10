@@ -1,0 +1,18 @@
+{
+ "n": 270,
+ "url": "https://yemen-press.net/news146875.html",
+ "dir": "items/270-yemen-press.net",
+ "fetched_at": "2026-10-10T05:03:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://yemen-press.net/news146875.html",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 17140,
+ "cited_in": [
+  "yemen-setup-options/notes/currency_territory.md:119"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "69f6cdfbff62581e80e1dd99e2cb93f5df7030ec44aa63c28dca20d280602902",
+ "raw_ext": "html"
+}

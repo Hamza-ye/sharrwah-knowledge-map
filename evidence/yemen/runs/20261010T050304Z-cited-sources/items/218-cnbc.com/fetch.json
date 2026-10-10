@@ -1,0 +1,18 @@
+{
+ "n": 218,
+ "url": "https://www.cnbc.com/2026/01/16/latest-us-sanctions-target-houthi-funding-networks-treasury-says.html",
+ "dir": "items/218-cnbc.com",
+ "fetched_at": "2026-10-10T05:03:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.cnbc.com/2026/01/16/latest-us-sanctions-target-houthi-funding-networks-treasury-says.html",
+ "content_type": "text/html",
+ "bytes": 492,
+ "cited_in": [
+  "yemen-setup-options/notes/regulation_licensing.md:381"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "db83e52f723052e05563cbb1ea243f272baa3aff995bc1bd2c15ffee5aab16d9",
+ "raw_ext": "html"
+}

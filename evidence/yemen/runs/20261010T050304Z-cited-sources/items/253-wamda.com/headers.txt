@@ -1,0 +1,13 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 05:03:51 GMT
+content-type: text/html; charset=UTF-8
+content-length: 15155
+server: Apache/2.4.18 (Ubuntu)
+cache-control: no-cache, private
+set-cookie: XSRF-TOKEN=eyJpdiI6IjRxdDZmWlJMdm4wSENiakFBRkJiQmc9PSIsInZhbHVlIjoiQnhXUWlcL1dnb3oxY0UyQzlnYmszUVRGTmR5ZDFHbnNqeitcLzVNdUIwRlppdnNNdytHUGFtWU14TElERkd4MEZiSVlcL2VYXC9NcTdMajVmalJQd1VCWTNnPT0iLCJtYWMiOiIwNWMwNzI4N2M4NjBmMDA5MDIxNTIyM2JjMTkzYmQ2ZDFmYTlhZWFiZWY5YmU2NDYxZWNjNTJhMjA0MDc1MDcwIn0%3D; expires=Sat, 10-Oct-2026 07:03:51 GMT; Max-Age=7200; path=/
+set-cookie: laravel_session=eyJpdiI6ImNqa3p0WmpaNVYxSlhHOURmenRwZEE9PSIsInZhbHVlIjoiZW9LYmVVOEpSTGhtTjZ5cTU3XC91WEtLQUhMT3g0U0twdm1LQTJqQVloR1BHVmhYa0JEZkN2Q0JwUFRpSDJMZ2crY3RMdGZwT0NGU3djTFFTOXRwSGt3PT0iLCJtYWMiOiJkZWRlZGMzYTcwNjlhMjZmMzc0MTFjZjRmOGFmNTMyYmNmYjYzNjhlMzcxZmJiNzkwMjhlMWQyNzdkNzg0NmQ4In0%3D; expires=Sat, 10-Oct-2026 07:03:51 GMT; Max-Age=7200; path=/; HttpOnly
+vary: Accept-Encoding
+content-encoding: gzip
+

@@ -1,0 +1,20 @@
+{
+ "n": 116,
+ "url": "https://home.treasury.gov/news/press-releases/sb0243",
+ "dir": "items/116-home.treasury.gov",
+ "fetched_at": "2026-10-10T05:03:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://home.treasury.gov/news/press-releases/sb0243",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 23274,
+ "cited_in": [
+  "yemen-setup-options/report.md:60",
+  "yemen-setup-options/notes/regulation_licensing.md:380",
+  "yemen-setup-options/notes/regulation_licensing.md:560"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3a33dc43e91d770c79a3278ead733b9683ee05f5888f0f6ed62a58f23ed303c8",
+ "raw_ext": "html"
+}

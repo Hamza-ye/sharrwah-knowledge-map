@@ -1,0 +1,19 @@
+{
+ "n": 149,
+ "url": "https://root.packagist.org/packages/al-saloul/kuraimibank-payment",
+ "dir": "items/149-root.packagist.org",
+ "fetched_at": "2026-10-10T05:03:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://root.packagist.org/packages/al-saloul/kuraimibank-payment",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 6268,
+ "cited_in": [
+  "yemen-setup-options/notes/banks_exchange_cards.md:52",
+  "yemen-setup-options/notes/banks_exchange_cards.md:103"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "55fd805737ae19a6a68af31f7c4bd9f77908ee9be30d879993ecb739f3953711",
+ "raw_ext": "html"
+}

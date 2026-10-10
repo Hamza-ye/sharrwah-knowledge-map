@@ -1,0 +1,7 @@
+{
+ "n": 25,
+ "url": "https://alreem.delivery/",
+ "rendered_at": "2026-10-10T05:07:17Z",
+ "browser": "Chromium 141.0.7390.37",
+ "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://alreem.delivery/"
+}
