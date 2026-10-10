@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>One engine, many tools — Introducing Rubydex | Rails at Scale</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="One engine, many tools — Introducing Rubydex" />
+<meta name="author" content="Vinicius Stock" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introducing Rubydex — a portable static analysis engine powering Ruby LSP, Tapioca, Packwerk, and more. One foundation, compounding benefits for the whole ecosystem." />
+<meta property="og:description" content="Introducing Rubydex — a portable static analysis engine powering Ruby LSP, Tapioca, Packwerk, and more. One foundation, compounding benefits for the whole ecosystem." />
+<link rel="canonical" href="https://railsatscale.com/2026-05-12-one-engine-many-tools/" />
+<meta property="og:url" content="https://railsatscale.com/2026-05-12-one-engine-many-tools/" />
+<meta property="og:site_name" content="Rails at Scale" />
+<meta property="og:image" content="https://railsatscale.com/2026-05-12-one-engine-many-tools/b449b93fe463dd9234bc113dab90a1c0b6307836.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-05-12T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://railsatscale.com/2026-05-12-one-engine-many-tools/b449b93fe463dd9234bc113dab90a1c0b6307836.png" />
+<meta property="twitter:title" content="One engine, many tools — Introducing Rubydex" />
+<meta name="twitter:site" content="@shopifyeng" />
+<meta name="twitter:creator" content="@Vinicius Stock" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vinicius Stock"},"dateModified":"2026-05-12T00:00:00+00:00","datePublished":"2026-05-12T00:00:00+00:00","description":"Introducing Rubydex — a portable static analysis engine powering Ruby LSP, Tapioca, Packwerk, and more. One foundation, compounding benefits for the whole ecosystem.","headline":"One engine, many tools — Introducing Rubydex","image":"https://railsatscale.com/2026-05-12-one-engine-many-tools/b449b93fe463dd9234bc113dab90a1c0b6307836.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://railsatscale.com/2026-05-12-one-engine-many-tools/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://railsatscale.com/assets/images/ras_icon_navy.png"},"name":"Vinicius Stock"},"url":"https://railsatscale.com/2026-05-12-one-engine-many-tools/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://railsatscale.com/feed.xml" title="Rails at Scale" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-L89JYZLFTR"></script>
+<script>
+  window['ga-disable-G-L89JYZLFTR'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L89JYZLFTR');
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png?v=1">
+<link rel="manifest" href="/assets/images/site.webmanifest?v=1">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg?v=1" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/images/favicon.ico?v=1">
+<meta name="apple-mobile-web-app-title" content="Rails At Scale">
+<meta name="application-name" content="Rails At Scale">
+<meta name="theme-color" content="#ffffff">
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  await mermaid.run({ querySelector: 'pre > code.language-mermaid' });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+      <img class="logo logo-ras" src="/assets/images/ras_icon_navy.svg" alt="" aria-hidden="true">
+      <span class="site-title-text">Rails at Scale</span>
+      <span class="site-sep" aria-hidden="true"></span>
+      <img class="logo logo-shopify" src="/assets/images/shopify_glyph_black.svg" alt="Shopify">
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">One engine, many tools — Introducing Rubydex</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2026-05-12T00:00:00+00:00" itemprop="datePublished">
+        2026-05-12
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <span class="p-author h-card" itemprop="name"><a href="/authors/vinicius-stock/">Vinicius Stock</a></span></span>
+</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2 id="one-engine-many-tools">One engine, many tools</h2>
+
+<p>A few years ago, the new Ruby parser Prism was released. One of its primary goals was to unify the community since we
+had multiple implementations of Ruby parsers, each with their own bugs, differences in implementation and portability.
+By having a single parser, community investments in performance and correctness benefit every single tool built on top
+of it (including Ruby itself!).</p>
+
+<p>However, the story of repeated implementations of highly complex foundational blocks doesn’t end at the parser level.
+Move one level up the stack and the pattern repeats. Today, we have multiple tools that implement code indexing and
+related static analysis algorithms. Consider just a few examples:</p>
+
+<ul>
+  <li>
+<strong>Language servers</strong>: tools like <a href="https://github.com/Shopify/ruby-lsp">Ruby LSP</a> and
+<a href="https://github.com/castwide/solargraph">Solargraph</a> need code indexing to provide go to definition, hover, signature
+help, completion and so on</li>
+  <li>
+<strong>Type checkers</strong>: tools like <a href="https://github.com/sorbet/sorbet">Sorbet</a> and <a href="https://github.com/soutaro/steep">Steep</a>
+need code indexing for all of the previous reasons plus having the ability to type check code</li>
+  <li>
+<strong>Documentation generators</strong>: tools like <a href="https://github.com/ruby/rdoc">RDoc</a> and <a href="https://github.com/lsegal/yard">YARD</a>
+need code indexing to aggregate all declarations and their respective documentation for navigating and generating the
+static website</li>
+  <li>
+<strong>Dead code detectors</strong>: tools like <a href="https://github.com/Shopify/spoom">Spoom</a> and
+<a href="https://github.com/seattlerb/debride">debride</a> need code indexing to match declarations and references, so that they
+can identify what declarations are dead (i.e.: unused)</li>
+  <li>
+<strong>Linters</strong>: tools like <a href="https://github.com/rubocop/rubocop">RuboCop</a> and
+<a href="https://github.com/standardrb/standard">Standard</a> don’t currently use code indexing, but could provide much more
+sophisticated linting capabilities given a global knowledge of the codebase</li>
+</ul>
+
+<p>The story we have here is the same. Multiple implementations of code indexing with varying performance, implementation
+differences and correctness discrepancies. On top of that, none of them are packaged and portable as an API that any
+other project can use.</p>
+
+<p>It’s another case of our community’s efforts being diluted when we could instead have compounding benefits of working
+together in a foundational building block. We ought to do something about it.</p>
+
+<h2 id="introducing-rubydex">Introducing Rubydex</h2>
+
+<p><a href="https://github.com/Shopify/rubydex">Rubydex</a> is a new portable static analysis engine intended to provide features such
+as code indexing and type analysis through a convenient API.</p>
+
+<p>An important thing to note is that Rubydex is a framework/engine. It is not a tool by itself, but rather the core
+building block to create other tools. Despite being early in its development, Rubydex can already:</p>
+
+<ul>
+  <li>Collect all definitions in a codebase and its dependencies, including classes, modules, constants, singleton classes,
+instance variables, class variables, global variables and methods</li>
+  <li>Index RBS documents (including the bundled core and stdlib files and any RBS files in the workspace)</li>
+  <li>Resolve constant references</li>
+  <li>Track constant and instance variable references completely and method references with limitations<sup id="fnref:method-refs"><a href="#fn:method-refs" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>
+</li>
+  <li>Create declarations from the discovered definitions and constant references<sup id="fnref:declarations"><a href="#fn:declarations" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>
+</li>
+  <li>Linearize ancestor chains</li>
+  <li>Track descendants</li>
+  <li>Query the resulting graph in many ways</li>
+</ul>
+
+<h3 id="built-for-portability">Built for portability</h3>
+
+<p>One of our goals with Rubydex is portability. If someone wants to write sophisticated tooling for Ruby using a different
+language or maybe target the browser through WASM, then they should be able to!</p>
+
+<p>For this reason, Rubydex is built with Rust, C and Ruby to ship 3 distinct components:</p>
+
+<ul>
+  <li>
+<strong>The main Rust crate</strong>: this is where the entire logic is implemented. Rust allows for high performance and easy parallelism,
+which are incredibly valuable when implementing static analysis tooling where the performance constraints are intense.
+Other Rust projects can use this directly, like creating a Zed extension that can understand Ruby code or writing a
+linter in Rust.</li>
+  <li>
+<strong>A Rust FFI crate</strong>: this crate provides C compatible bindings to use the main crate’s logic, allowing other languages to
+integrate with Rubydex. Developers can use this to write tooling in other languages, like a VS Code extension that can
+analyze Ruby codebases with no Ruby runtime dependency.</li>
+  <li>
+<strong>A Ruby gem</strong>: a native extension that provides the Ruby API, which interacts with the underlying Rust implementation
+through the FFI crate. The gem ships with pre-compiled binaries for macOS (Intel and M series), Linux (x64 and ARM64)
+and Windows. For any other platforms, <code class="language-plaintext highlighter-rouge">rubydex</code> has a dependency on <code class="language-plaintext highlighter-rouge">cargo</code> (the Rust package manager) in order to
+compile correctly when installed.</li>
+</ul>
+
+<h2 id="impact-on-existing-tools">Impact on existing tools</h2>
+
+<p>As of the time of this writing, we have either completed or started migrating our existing tools to use Rubydex. The
+impact story for all of them is essentially the same: better performance, higher accuracy and a lot less code to
+maintain.</p>
+
+<h3 id="tapioca">Tapioca</h3>
+
+<p>You may know Tapioca for all of its runtime analysis, which is what allows the tool to output static RBI information for
+more accurate Sorbet type checking. However, Tapioca also consumes static information. There are two main use cases for
+static analysis in Tapioca:</p>
+
+<ul>
+  <li>Fetching documentation for a given declaration so that it can be included in RBIs. This is important so that Sorbet
+can show documentation on hover</li>
+  <li>Bootstrapping the initial analysis for generating gem RBIs. We discover the initial set of constants defined in a gem
+statically and then proceed to uncover the rest of the information by using the runtime</li>
+</ul>
+
+<p>Tapioca adopted Rubydex to <a href="https://github.com/Shopify/tapioca/pull/2524">handle documentation</a>, replacing the original
+approach which used YARD. After the change, we saw a massive performance improvement, dropping the total execution time
+for generating gem RBIs in our Core monolith from ~6 minutes to ~20 seconds, while using much less memory. We also
+replaced the <a href="https://github.com/Shopify/tapioca/pull/2607">gem RBI bootstrapping</a>.</p>
+
+<p>In addition to the performance gains, the correctness of Rubydex’s constant resolution algorithm and declaration
+handling allows comments to be attached in a more predictable way. This ensures that the comments are associated with
+the declaration they were meant to document, improving the quality of hover results for the Sorbet language server.</p>
+
+<p>You can enjoy the Rubydex improvements starting in Tapioca v0.19.0.</p>
+
+<h3 id="packwerk">Packwerk</h3>
+
+<p>Packwerk relies heavily on constant resolution to identify package violations. The problem is that constant resolution
+in Ruby is hard. The algorithm is complex and the amount of edge cases for static analysis increases the difficulty in
+getting it right. Investing the time to get it right in Rubydex means we don’t have to re-invent the wheel
+multiple times.</p>
+
+<p>In our <a href="https://github.com/Shopify/packwerk/pull/447">initial exploration</a> of replacing Packwerk’s logic with Rubydex as
+the engine, we see the power of being able to reuse battle tested algorithms:</p>
+
+<ul>
+  <li>Considerable reduction in codebase size (about -3000 lines)</li>
+  <li>Significantly more violations found thanks to correct constant resolution (about 3x more constant references resolved
+in our monolith)</li>
+  <li>Varying levels of performance improvements depending on the conditions (single-threaded vs parallel mode)</li>
+</ul>
+
+<h3 id="spoom">Spoom</h3>
+
+<p>We started prototyping the migration of Spoom’s dead code candidate detection to Rubydex. The story repeats once again.
+Faster analysis and higher accuracy thanks to being able to account for constant resolution and ancestors correctly.
+However, in the middle of the work, a question struck the team. Why not bundle this into Rubydex? It feels like dead
+code detection can be a part of the core engine, even if it’s only detecting candidates.</p>
+
+<p>For that reason, we paused the Spoom migration to explore moving it into Rubydex instead. We hope to be able to ship the
+ability to find dead code candidates directly through our API.</p>
+
+<h3 id="ruby-lsp">Ruby LSP</h3>
+
+<p>For the Ruby LSP, Rubydex replaces the entire old code indexer with a significantly more performant and correct
+implementation. Several cases that we could not handle correctly are now understood by the language server and
+performance should be better across the board. The features directly impacted by Rubydex are:</p>
+
+<ul>
+  <li>
+<strong>Go to definition, hover and signature help</strong>: better handling of nesting resolution will provide more accurate results</li>
+  <li>
+<strong>Completion</strong>: the new completion engine in Rubydex provides significantly better results than the previous implementation</li>
+  <li>
+<strong>Workspace symbol</strong>: new fuzzy search is much faster than the previous implementation</li>
+  <li>
+<strong>Type hierarchy</strong>: ancestor information is more complete and correct. Additionally, descendant tracker allows us to
+implement the sub-types feature</li>
+  <li>
+<strong>Test discovery for the explorer</strong>: faster analysis for test discovery</li>
+  <li>
+<strong>Find references and rename</strong>: fast reference finding and renaming since Rubydex automatically tracks those</li>
+  <li>
+<strong>Foundation</strong>: the previous indexer was not fast enough, so we ran indexing asynchronously in a thread. This improved
+responsiveness, but created several possible race conditions where taking an action in the editor before indexing was
+complete could result in discrepancies between the features and the actual state of the codebase. Rubydex is fast enough
+that we can simply index and manage the analysis synchronously, allowing us to eliminate the chances for race conditions
+and greatly simplifying the code in the Ruby LSP</li>
+</ul>
+
+<p>In addition to the features already migrated to Rubydex, there are other improvements we are now able to deliver that
+weren’t possible before. For example, in semantic highlighting we treat all constant references with the token
+<code class="language-plaintext highlighter-rouge">namespace</code>. The reasoning behind this was performance. Resolving every constant reference in the old indexer was slow
+and semantic highlighting runs on every keypress, which would cause the editor to grind to a halt. With Rubydex, we can
+now solve this issue and correctly classify constant references as <code class="language-plaintext highlighter-rouge">class</code>, <code class="language-plaintext highlighter-rouge">namespace</code> or <code class="language-plaintext highlighter-rouge">variable.constant</code>.</p>
+
+<p>Another possibility to explore is better test discovery. The current implementation of the test explorer relies on glob
+patterns to find test files in a performant way. With Rubydex, identifying all classes that inherit from
+<code class="language-plaintext highlighter-rouge">Minitest::Test</code> as a test group and all public methods prefixed with <code class="language-plaintext highlighter-rouge">test_</code> is a breeze. Maybe we can finally ditch
+the glob pattern and achieve higher accuracy in discovery?</p>
+
+<p>Safe to say, there are lots of opportunities for more sophisticated and correct functionality in the Ruby LSP, without
+compromising performance in any way.</p>
+
+<h4 id="add-ons">Add-ons</h4>
+
+<p>The switch to Rubydex means breaking changes for most add-ons. Please refer to the Ruby LSP’s
+<a href="https://shopify.github.io/ruby-lsp/">documentation</a> and <a href="https://github.com/Shopify/ruby-lsp/releases">release notes</a>
+for migration instructions.</p>
+
+<h2 id="mcp-server">MCP server</h2>
+
+<p>As part of Rubydex, we are also including an experimental MCP server. The purpose is to provide powerful tools for LLMs
+to explore the codebase more efficiently. Instead of reading files in their entirety and grepping based on text, the LLM
+can directly request information about declarations, definitions, references, ancestors, descendants (basically anything
+that you could query through the regular API).</p>
+
+<p>We are still working on improvements and ironing out the best way to distribute the MCP server so that it can find
+dependencies correctly, integrating with version managers and Bundler (which can mutate where dependencies are installed
+in the system, making discovering them not so straightforward). For now, the MCP server must be built from source, but
+we hope to ship it as part of the Ruby gem in a future release.</p>
+
+<p>In early testing, we’re seeing 15 to 80% reduction in token usage, cost and duration for certain LLM tasks thanks to the
+ability of quickly navigating the codebase. One example where this is easy to understand is asking the LLM to perform a
+refactor. Instead of scanning the entire codebase for usages of a class/module, it can directly ask Rubydex to get the
+information.</p>
+
+<h2 id="current-api">Current API</h2>
+
+<p>The Rubydex API is quite extensive to support all use cases in the Ruby LSP, Tapioca, Packwerk and other tools. Here are
+a few simple examples of how to use it, but please refer to the <a href="https://github.com/Shopify/rubydex">repo</a> for more
+complete API documentation.</p>
+
+<p>For this example, consider the following files present in the workspace:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># foo.rb</span>
+<span class="k">class</span> <span class="nc">Foo</span>
+  <span class="k">def</span> <span class="nf">found_me</span><span class="p">;</span> <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># bar.rb</span>
+<span class="k">class</span> <span class="nc">Bar</span> <span class="o">&lt;</span> <span class="no">Foo</span>
+  <span class="k">def</span> <span class="nf">found_me</span><span class="p">;</span> <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># qux.rb</span>
+<span class="k">module</span> <span class="nn">Zip</span>
+  <span class="k">class</span> <span class="nc">Bar::Qux</span>
+    <span class="nc">Foo</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>We can use Rubydex to ask several questions about the state of the code:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">require</span> <span class="s2">"rubydex"</span>
+
+<span class="c1"># The graph is Rubydex's representation of the codebase. It's where everything starts and where all data is stored. To</span>
+<span class="c1"># populate the graph, we first index the workspace (all .rb, .rbs files + dependencies) and then run the resolution step</span>
+<span class="c1"># to transform definition information into semantic declarations.</span>
+<span class="c1">#</span>
+<span class="c1"># Find all of the other methods for managing the state of the graph in the repository's documentation.</span>
+<span class="n">graph</span> <span class="o">=</span> <span class="no">Rubydex</span><span class="o">::</span><span class="no">Graph</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">graph</span><span class="p">.</span><span class="nf">index_workspace</span>
+<span class="n">graph</span><span class="p">.</span><span class="nf">resolve</span>
+
+<span class="c1"># Once the graph is ready, we can query it for any information we would like. This is what powers all language server's</span>
+<span class="c1"># features in the new v0.27 and forward for the Ruby LSP.</span>
+<span class="c1">#</span>
+<span class="c1"># Find all of the querying features in the repository's documentation.</span>
+<span class="n">declaration</span> <span class="o">=</span> <span class="n">graph</span><span class="p">[</span><span class="s2">"Foo"</span><span class="p">]</span>
+<span class="nb">puts</span> <span class="n">declaration</span><span class="p">.</span><span class="nf">ancestors</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:name</span><span class="p">)</span> <span class="c1"># =&gt; ["Foo", "Object", "Kernel", "BasicObject"]</span>
+<span class="nb">puts</span> <span class="n">declaration</span><span class="p">.</span><span class="nf">descendants</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:name</span><span class="p">)</span> <span class="c1"># =&gt; ["Bar"]</span>
+
+<span class="nb">puts</span> <span class="n">graph</span><span class="p">.</span><span class="nf">search</span><span class="p">(</span><span class="s2">"#found_me()"</span><span class="p">)</span> <span class="c1"># =&gt; [#&lt;Declaration name=Foo#found_me()&gt;, #&lt;Declaration name=Bar#found_me()&gt;]</span>
+
+<span class="c1"># Resolve a constant reference to `Foo` inside the `Zip, Baz::Qux` nesting</span>
+<span class="nb">puts</span> <span class="n">graph</span><span class="p">.</span><span class="nf">resolve_constant</span><span class="p">(</span><span class="s2">"Foo"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"Zip"</span><span class="p">,</span> <span class="s2">"Baz::Qux"</span><span class="p">])</span> <span class="c1"># =&gt; [#&lt;Declaration name=Foo&gt;]</span>
+</code></pre></div></div>
+
+<h2 id="future-plans">Future plans</h2>
+
+<p>This announcement marks the first iteration on Rubydex. There are a lot of interesting experiments that we want to do
+and lots to build. Here are some of the future ideas we have in our backlog.</p>
+
+<h3 id="shared-database">Shared database</h3>
+
+<p>One of the ideas we partially experimented with and are eager to build is allowing Rubydex to save the analysis into a
+database. This benefits tools in a few ways:</p>
+
+<ul>
+  <li>
+<strong>Reducing boot time</strong>: since the analysis is saved in the database, Rubydex wouldn’t have to start from scratch every
+time it is booted. This is regardless of how it gets initiated (language server, linter, MCP server)</li>
+  <li>
+<strong>Loading partial data</strong>: developers rarely interact with 100% of their codebase all at the same time. Usually, you’re
+really only working in a small subset of the codebase at a time. This is true of LLMs too, they don’t need to read every
+single file in the codebase if you’re making a targeted change. Maintaining the entire analysis data in-memory at all
+times is wasteful. A lot of the information is simply not relevant for the changes being executed. If Rubydex can trace
+all of the dependencies of a document (and we believe it’s possible), then we can load a subset of the graph into memory
+and leave the rest in the database. This approach reduces the amount of memory being used by offloading to disk and it
+makes it so that memory usage does not scale linearly with the number of tools based on Rubydex (since they can share
+the same database)</li>
+</ul>
+
+<p>If we can get this right, it would mean that you can have a language server, MCP server, linter, type checker all
+operating at the same time, reusing the same database to avoid multiple rounds of analysis and consuming little memory
+since most of the data is offloaded to disk.</p>
+
+<h3 id="semantic-linting">Semantic linting</h3>
+
+<p>Another hope we have for Rubydex is enabling semantic linting. Rubydex can already collect diagnostics such as undefined
+constants. The idea is to offer a rich set of APIs so that linting rules can be created with the multitude of data
+available across the different phases of analysis.</p>
+
+<p>The main benefits of semantic linting are reducing false positives and writing more complex rules that simple AST
+inspection cannot achieve. Here are some example rules that are possible (and even easy to write) with Rubydex, but not
+possible without a complete code indexing engine:</p>
+
+<ul>
+  <li>
+<strong>Prohibiting inheriting from a certain ancestor</strong>: Maybe you’re deprecating the use of a module or parent class and you
+want to detect all existing uses (direct or transitive)</li>
+  <li>
+<strong>Detecting potential dead code</strong>: Dead code is basically any declaration for which no references have been found. Of
+course, with meta-programming and untyped code, we can’t always be 100% sure it’s dead. However, our team has seen great
+benefit in flagging dead code candidates that then get reviewed by a developer to remove</li>
+  <li>
+<strong>Detecting invalid mocks in tests</strong>: For example, stubbing a method to return a boolean when in fact it returns a string</li>
+  <li>
+<strong>Detecting methods that are always shadowed</strong>: For example, a method in a parent class with real behaviour, but all of
+the subclasses override the method without invoking <code class="language-plaintext highlighter-rouge">super</code>
+</li>
+  <li>
+<strong>Detecting incorrectly decomposed modules</strong>: For example, a module that depends on two instance variables, but none of
+the classes that include it define both instance variables, leading to module methods that can only be invoked when
+included into specific classes</li>
+</ul>
+
+<p>And many, many others.</p>
+
+<h3 id="type-aware-analysis">Type aware analysis</h3>
+
+<p>Currently, Rubydex has no concept of types and performs no inference. This limits the framework’s ability to understand
+method calls. For example:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">var</span> <span class="o">=</span> <span class="no">Foo</span><span class="p">.</span><span class="nf">something</span>
+<span class="n">var</span><span class="p">.</span><span class="nf">other_thing</span>
+</code></pre></div></div>
+
+<p>To know what defines <code class="language-plaintext highlighter-rouge">other_thing</code>, we need to know the type of <code class="language-plaintext highlighter-rouge">var</code>, and to know the type of <code class="language-plaintext highlighter-rouge">var</code>, we need to know
+the type returned by <code class="language-plaintext highlighter-rouge">Foo.something</code>. Only by propagating types through the analysis can we know for sure which methods
+are being used (or if they exist at all). Without this, Rubydex cannot associate method references to their declarations
+like it can for constants and instance variables.</p>
+
+<p>The natural next step is to consume type annotations to improve the accuracy of the analysis. For that to work, we need
+to design the internal type system, consume annotations already used by the community (e.g.: Sorbet sigs and RBS), and
+experiment with different algorithms. The experimentation lies in the approaches we can take and understanding how well
+they can fit the Ruby language (e.g.: constraint solving vs set theoretic types).</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Prism showed what happens when the Ruby community consolidates around a shared parser: every tool got better and every
+improvement compounded. We believe the same is possible one layer up. Analyzing Ruby statically is inherently hard, but
+we don’t have to solve the same problems separately.</p>
+
+<p>Rubydex is our bet on a shared foundation. If you maintain a linter, a language server, a documentation generator, a
+type checker, a code-mod tool, or something we haven’t imagined yet, we’d love to build this with you.</p>
+
+<p>Try it through the Ruby LSP, Tapioca or Packwerk, or directly use Rubydex’s API. File bugs, open issues, send PRs, tell
+us what’s missing in the <a href="https://github.com/Shopify/rubydex">repo</a>. Every improvement made to Rubydex benefits all
+tools—even the ones that haven’t been built yet.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:method-refs">
+      <p>Tracking method references with high accuracy depends on inferring the type of the receiver, which is
+currently not supported. <a href="#fnref:method-refs" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:declarations">
+      <p>In Rubydex’s architecture, we use the definitions and declarations nomenclature to differentiate
+between two concepts. If you re-open the class <code class="language-plaintext highlighter-rouge">Foo</code> twice, then you have two <strong>definitions</strong> of that class.
+However, both definitions contribute to the same global unique concept of <code class="language-plaintext highlighter-rouge">Foo</code>. That global concept is what we
+call the <strong>declaration</strong> of <code class="language-plaintext highlighter-rouge">Foo</code>. For example:</p>
+
+      <div class="language-ruby highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1"># First definition</span>
+<span class="k">class</span> <span class="nc">Foo</span>
+  <span class="k">def</span> <span class="nf">bar</span><span class="p">;</span> <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># Second definition</span>
+<span class="k">class</span> <span class="nc">Foo</span>
+  <span class="k">def</span> <span class="nf">baz</span><span class="p">;</span> <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># Both definitions contribute to the same entity `Foo`. It does not matter how many times you re-open the</span>
+<span class="c1"># namespace, all of the methods, instance variables, class variables, constants and other members end up</span>
+<span class="c1"># associated with that global unique entity</span>
+<span class="n">instance</span> <span class="o">=</span> <span class="no">Foo</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">instance</span><span class="p">.</span><span class="nf">bar</span>
+<span class="n">instance</span><span class="p">.</span><span class="nf">baz</span>
+</code></pre></div>      </div>
+
+      <p>We won’t dive into the implementation details here, but the importance of the differentiation between definitions
+and declarations is allowing for fast updates in the analysis when the codebase is being modified. As an example
+scenario, consider two <code class="language-plaintext highlighter-rouge">Foo</code> definitions created in separate files and then one of the files gets deleted. The
+<code class="language-plaintext highlighter-rouge">Foo</code> entity still exists, but one of its definitions is now gone. Having these two concepts allows us to
+efficiently update the internal representation of <code class="language-plaintext highlighter-rouge">Foo</code>. <a href="#fnref:declarations" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</body></html>
+
+  </div><a class="u-url" href="/2026-05-12-one-engine-many-tools/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://railsatscale.com/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">Shopify Engineering</li>
+          
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>The Ruby and Rails Infrastructure team at Shopify exists to help ensure that Ruby and Rails are 100-year tools that will continue to merit being our toolchain of choice.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://twitter.com/shopifyeng" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://github.com/Shopify" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+    <div class="copyright">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+      </a>
+      <br>
+      This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+ "n": 37,
+ "url": "https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments",
+ "dir": "items/037-help.shopify.com",
+ "fetched_at": "2026-10-10T08:30:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 16998,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E037"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a9e58e46a200d750a66e2794d4bf8b809f4895ea7dc2c616a737ac8329487e7c",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://developers.googleblog.com/en/google-pay-inside-sandboxed-iframe-for-pci-dss-v4-compliance/",
+ "dir": "items/011-developers.googleblog.com",
+ "fetched_at": "2026-10-10T08:30:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://developers.googleblog.com/en/google-pay-inside-sandboxed-iframe-for-pci-dss-v4-compliance/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 10313,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E011"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0502fb8e2d03d9ce5998d667da99ad167b5990d69342e30d40747c1d6c4740d0",
+ "raw_ext": "html"
+}

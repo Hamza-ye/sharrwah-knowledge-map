@@ -1,0 +1,278 @@
+Skip to Content
+Solutions
+Start
+Start your business
+.
+Build your brand
+Create your website
+.
+Online store editor
+Customize your store
+.
+Store themes
+Find business apps
+.
+Shopify app store
+Own your site domain
+.
+Domains & hosting
+Explore free business tools
+.
+Tools to run your business
+Sell
+Sell your products
+.
+Sell online or in person
+Check out customers
+.
+World-class checkout
+Sell online
+.
+Grow your business online
+Sell across channels
+.
+Reach millions of shoppers and boost sales
+Sell globally
+.
+International sales
+Sell wholesale & direct
+.
+Business-to-business (B2B)
+Market
+Market your business
+.
+Reach & retain customers
+Market across social
+.
+Social media integrations
+Chat with customers
+.
+Shopify Inbox
+Nurture customers
+.
+Shopify Messaging
+Know your audience
+.
+Gain customer insights
+Manage
+Manage your business
+.
+Track sales, orders & analytics
+Measure your performance
+.
+Analytics and Reporting
+Manage your stock & orders
+.
+Inventory & order management
+Automate your business
+.
+Shopify Flow
+Shopify Developers
+.
+Build with Shopify's powerful APIs
+Plus
+.
+A commerce solution for growing digital brands
+All Products
+.
+Explore all Shopify products & features
+Pricing
+Resources
+Help and support
+Help and support
+.
+Get 24/7 support
+Business courses
+.
+Learn from proven experts
+Popular topics
+What is Shopify?
+.
+How our commerce platform works
+Essential tools
+Business name generator
+.
+Logo maker
+.
+Stock photography
+.
+QR code generator
+.
+What’s new
+Changelog
+.
+Your source for recent updates
+Newsroom
+.
+All company news and press releases
+Engineering Blog
+AI & Machine Learning
+Mobile
+Infrastructure
+Culture
+Latest
+More topics
+Security
+Developer Tooling
+Data Science Engineering
+Search
+BLOG|DEVELOPMENT
+Building Resilient GraphQL APIs Using Idempotency
+
+Shopify’s new Payment Service, which centralizes payment processing for certain payment methods, uses API idempotency to prevent payment issues.
+
+Engineering at Shopify
+
+We’re hiring
+
+See open roles
+
+A payment service which isn’t resilient could fail to complete a charge or even double-charge buyers. Also, the client calling the API wouldn’t be certain of the outcome in the case of errors returned from the request reducing trust in the payment methods provided by that service. Shopify’s new Payment Service, which centralizes payment processing for certain payment methods, uses API idempotency to prevent these situations from happening in the first place.
+
+
+Shopify's New Payment Service
+
+The new Payment Service is owned by the Money Infrastructure team which is responsible for the code that moves money, handles and records the interactions with various payment providers. The service provides a GraphQL interface that’s used by Shopify and our Billing system. The Billing system charges the merchants and pays Shopify Partners, based on monthly subscriptions and usage, as well as paying application developers.
+
+The Issues With Non-resilient Payment Services
+
+A payment API should offer an ‘exactly once’ model of resiliency. Payments should not happen twice, and should offer a way for clients to recover in the case of an error. When an API request can’t be re-attempted and an error happens during a payment attempt, the outcome is unknown.
+
+For example, the Payment Service has a ChargeCreate mutation which creates a payment using the buyer’s chosen payment method. If this mutation is called by the client, and that request returns an error or times-out, then without idempotency the client can’t discover what state this new payment is in.
+
+If the error occurred before the payment was completed, and the client doesn’t retry the request, then the merchant would go unpaid. If the error occurred after the Payment was completed, and the client retries the request, which would not be associated with the first attempt, then the buyer would be double charged.
+
+Possible Solutions
+
+The Money Infrastructure team chose API level idempotency to create a resilient system but there are different approaches to dealing with this:
+
+Fix manually: Ship maintenance tasks created one by one, to repair the data. This doesn’t scale.
+Automatic Reconciliation: Write code to detect cases where the payment state is unknown and repair them. This would require ongoing work since introducing new payment methods and providers would require new reconciliation work. And the results of reconciliation would require API clients to react to these corrections as well to keep their data up to date.
+What is API Idempotency?
+
+An idempotent API is one where repeated requests with the same parameters will be executed only once, no matter how many times it’s retried. This strategy gives clients the flexibility to retry API requests which may have failed due to connection issues, without causing duplication or conflicts in the API provider’s system.
+
+Creating an Idempotent API
+
+There are some requirements when creating an idempotent API. Please note that if remote service providers APIs are not idempotent, it will be very hard to implement an idempotent API.
+
+Name the Request: Use Idempotency Keys
+
+One of the parameters to every mutation is an idempotency-key, which is used to uniquely identify the request. We use a randomly generated universally unique identifier (UUID), but it could be any unique identifier.
+
+Here is an example of a mutation and input which shows the idempotency key is part of the input. The idempotency key is a ‘first class citizen’ of the API, we’re not using an HTTP header for middleware. This allows us to require the presence of the idempotency key using the same GraphQL parameter validation as the rest of the API, and return any errors in the usual way, rather than returning errors outside the GraphQL mechanism.
+
+Lock the API Call: on the ‘name’ Client + Idempotency Key to Prevent Duplicate Simultaneous Requests
+
+One way a request can fail is due to dropping network connections. If this happens after the API server has received the request and begun processing, the client can retry the request while the first attempt is still processing. To prevent the duplicate simultaneous request, a lock around the API call based on the client and idempotency key will allow the server to reject the request with an HTTP code of 409, meaning that the client may try again shortly.
+
+Track Requests: Store the Incoming Requests, Uniquely Identified By Client + Idempotency Key
+
+The Payment Service needs to keep track of these requests and stores that information in the database. The Payment Service uses a model called IncomingRequest to track information related to each request. Each model instance is uniquely identified by the client and idempotency key.
+
+The existence of the saved IncomingRequest instance can be used to determine if any request is a new request or a retry. If the IncomingRequest model instance is loaded instead of created, then we know that the request is a retry. When the request is started it can also determine if the previous request was completed or not. If the request was previously completed, the previous response can be returned immediately.
+
+Track Progress: The IncomingRequest Record Provides a Place to Track Progress for That Request
+
+The IncomingRequest model includes a column where the progress for a request is stored as it is completed. The Payment Service breaks the progress for a given mutation into named steps, or recovery points. The code in each step (sometimes called recovery points) must be structured in a specific way, otherwise any errors will leave a given request in an unknown state.
+
+Using Steps Explained
+
+Using steps is a strategy for structuring code in a way that isolates the types of side effects a given function has. This isolation allows the progress to be recorded in a stepwise fashion, so that if an error occurs, the current state is known. There are three different kinds of side effects we need to be concerned with in this design:
+
+No side effects: This step makes no http calls, or database writes. This is typically a qualifier function, ie. resolving if this handler can process these records in this way.
+Local side effects: This step only makes writes to the database, and this step will be wrapped in a database transaction so that any errors will cause a rollback.
+Remote side effects: Calls to service providers, loggers, analytics.
+
+Each step is implemented as a ‘run’ function in a handler class, possibly paired with ‘recover’ version of that function. A step may not need a recover step, for example, if the run step confirms that the handler is the appropriate handler. In the case of a recovery, if the handler made it further than that step, the qualification step would have succeeded in the original request and a recovery function does not need to do anything in the retry request.
+
+How steps are used:
+
+For each step completed in the request, record the successful completion. As the request handler successfully executes each step, the IncomingRequest record is updated to the name of that completed step.
+If the request is retrying, but was incomplete, then recover previously completed steps, and continue. If the request is retrying a request that was not completed on a previous attempt, the handler will recover the completed steps and then continue to run the reset of the steps. Every step may have both a ‘run’ and a `recover` function.
+
+
+The flow through the steps of the initial `run` and subsequent `recover` for the failed step 3
+
+This diagram shows the flow through the steps of the initial `run`, versus a subsequent `recover`, after the initial run failed on step 3.
+
+Here is the handler class implementation for the Sofort payment method. Each recovery_point is configured with a run function, an optional recover function and transactional boolean. The recovery points are configured in the order that they’re executed.
+
+Ruby makes it easy to write an internal Domain Specific Language (DSL), which results in mutation handler implementations which are straightforward and clear. Separating the steps by side-effect does force a certain coding approach, which gives a uniformity to the code.
+
+Drawbacks of API Idempotency
+
+Storing the progress of a request requires extra database writes, this will add overhead to every API call. The stepwise structure of the request handlers forces a specific coding style, which may feel awkward for developers who are new to it. It requires the developer to approach each handler implementation in a particular way, considering which type of side effects each piece of code has, and structuring it up appropriately. Our team quickly learned this new style with a combination of short teaching sessions and example code.
+
+Modifying the implementation of a mutation handler may change, add or remove recovery points. If that happens, the developer must take extra steps to ensure that the implementation can still recover from any already stored recovery points and ensure that any step can be correctly recovered from when the modified handler is deployed. We have a test suite for every handler which exercises every step, as well the different recovery situations the code must handle. This helps us ensure that any modification is correct, and will correctly recover from the different failures.
+
+Remembering the Side Effects is Fundamental
+
+When considering how to implement an idempotent API in your project, start by partitioning the code in a given API implementation into steps by the kind of side effects it has. This will let you see how the parts interact and provide an opportunity to determine how to recover each part. This is the fundamental part of implementing an idempotent API.
+
+There are always going to be trade-offs when adding idempotency to an API, both in performance, as well as ease of implementation and maintenance. We believe that using the recovery point strategy for our mutation handlers has resulted in code that’s clear, well structured and easy to maintain, which is worth the overhead of this approach.
+
+We’re always looking for awesome people of all backgrounds and experiences to join our team. Visit our Engineering career page to find out what we’re working on.
+TJ
+by
+Todd Jefferson
+Published on Aug 27, 2019
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Todd Jefferson
+Published on Aug 27, 2019
+• 7 minute read
+
+DEVELOPMENT
+Introducing Ruvy
+DEVELOPER TOOLING
+Building a ShopifyQL Code Editor
+
+APPS
+Shopify’s platform is the Web platform
+DEVELOPMENT
+The Engineering Story Behind Flex Comp
+WORK FROM ANYWHERE
+WITH SHOPIFY
+
+See our open roles and learn more about our digital by design culture.
+
+See open roles
+Shopify
+About
+Careers
+Investors
+Press and Media
+Partners
+Affiliates
+Legal
+Service status
+Support
+Merchant Support
+Shopify Help Center
+Hire a Partner
+Shopify Community
+Developers
+Shopify.dev
+API Documentation
+Dev Degree
+Products
+Shop
+Shop Pay
+Shopify for Enterprise
+Global Impact
+Sustainability
+Build Black
+Accessibility
+Research
+Solutions
+Online Store Builder
+Website Builder
+Ecommerce Website
+Terms of service
+Privacy policy
+Sitemap
+Your Privacy Choices

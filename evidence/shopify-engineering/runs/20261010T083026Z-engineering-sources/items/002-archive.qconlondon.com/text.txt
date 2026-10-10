@@ -1,0 +1,614 @@
+Shopify’s architecture
+to handle the world’s
+biggest ﬂash sales
+Bart de Water
+QCon London - April 4, 2022
+                                                  2
+
+
+
+
+Introduction
+
+
+
+
+               ●   Bart de Water
+               ●   Manager @ Shopify Payments
+               ●   󰐗➡󰎟
+               ●   https://twitter.com/bdewater
+3
+4
+                      5
+
+
+
+
+Shopify handles
+some of the largest
+ﬂash sales in the
+world
+                                                         6
+
+
+
+
++ MySQL + Redis + memcached   React (Native) + GraphQL
+
+
+
+
+      40
+      deploys per day
+                                  🌍
+                                Working fully remote
+7
+8
+                                                 9
+
+
+
+
+🏪              🧾                   💻
+Storefront     Checkout            Admin
+Read heavy     Write heavy         R/W mix
+Availability   Consistency         Consistency
+Cacheable      External services
+                     10
+
+
+
+
+  A Shopify Pod
+ contains data for
+one to many shops
+                                                 11
+
+
+
+
+Pod 1                                    Pod 2
+ Memcached   Redis   Memcached   Redis
+
+ MySQL               MySQL
+                                                          12
+
+
+
+
+Region A
+   Web worker   Job worker   Web worker   Job worker
+
+
+
+ Pod 1                                            Pod 2
+   Memcached    Redis        Memcached    Redis
+
+   MySQL                     MySQL
+                                                          13
+
+
+
+
+Region A
+   Web worker   Job worker   Web worker   Job worker
+
+
+
+ Pod 1                                            Pod 2
+
+
+
+                                     ��
+   Memcached    Redis        Memcached    Redis
+
+   MySQL                     MySQL
+                                    14
+
+
+
+
+Region A          Region B
+  Pod 1   Pod 2     Pod 1   Pod 2
+
+  Pod 3   Pod 4     Pod 3   Pod 4
+                                          15
+
+
+
+
+Domains
+
+
+
+
+          ●   Branding!
+          ●   Permanent domain:
+              cooltshirts.myshopify.com
+          ●   Custom domains:
+              tshirthero.com
+                                         16
+
+
+
+
+GET tshirthero.com/products/summer-top
+
+
+              OpenResty
+                                         17
+
+
+
+
+GET tshirthero.com/products/summer-top
+
+
+                 OpenResty
+
+
+                   routes
+host                 shop_id   pod_id
+tshirthero.com       456       1
+snowdevil.ca         1         1
+                                                         18
+
+
+
+
+GET tshirthero.com/products/summer-top
+
+
+                 OpenResty
+
+
+                   routes
+                                         Pod 1   Pod 2
+host                 shop_id   pod_id
+tshirthero.com       456       1         Pod 3   Pod 4
+
+snowdevil.ca         1         1
+                                     19
+
+
+
+
+“Monolith in Nurmijärvi, Finland.”
+by Htm licensed under CC BY 4.0.
+                                    20
+
+
+
+
+              🏷
+              Pricing
+👟                        💳
+Merchandise              Payments
+              🧾
+              Checkout
+📊                        📦
+Inventory                Shipping
+              🪙
+              Taxes
+                                                                      21
+
+
+
+
+Payment
+Card Industry   ●   Build and Maintain a Secure Network and Systems
+Data Security
+Standard        ●   Protect Cardholder Data
+                ●   Maintain a Vulnerability Management Program
+                ●   Implement Strong Access Control Measures
+                ●   Regularly Monitor and Test Networks
+                ●   Maintain an Information Security Policy
+                                                                      22
+
+
+
+
+Payment
+Card Industry   ●   Build and Maintain a Secure Network and Systems
+Data Security
+Standard        ●   Protect Cardholder Data
+                ●   Maintain a Vulnerability Management Program
+                ●   Implement Strong Access Control Measures
+                ●   Regularly Monitor and Test Networks
+                ●   Maintain an Information Security Policy
+                                                                      23
+
+
+
+
+Payment
+Card Industry   ●   Build and Maintain a Secure Network and Systems
+Data Security
+Standard        ●   Protect Cardholder Data
+                ●   Maintain a Vulnerability Management Program
+                ●   Implement Strong Access Control Measures
+                ●   Regularly Monitor and Test Networks
+                ●   Maintain an Information Security Policy
+24
+                                       25
+Network edge         Network edge
+
+
+��💻🔐
+          CardSink
+        Form post
+
+
+
+       Card token
+
+
+
+                           Form post
+                                                                     26
+Network edge                                  Network edge
+
+
+          🔐                💸                           🏦 Processor
+          CardSink         CardServer
+                Authorize + card token
+
+
+                             Get card
+
+                                         Authorize card
+
+
+                              Success
+27
+28
+               6.3B                         3.1M
+                                                                              29
+
+
+
+
+Black Friday
+Cyber Monday
+2021                USD total sales           USD sales per minute (peak)
+
+
+
+
+               32M
+               Requests per minute (peak)
+                                              11M
+                                            MySQL queries per minute (peak)
+
+
+
+
+                24B
+               Background jobs performed
+                                                42B
+                                             API calls made to partner apps
+                             30
+
+
+
+
+Tenant isolation principle
+Each shop shouldn't know
+ about any of the others
+                                                            31
+
+
+
+
+GET products/summer-top
+
+
+
+
+  Pod 1                                             Pod 2
+    tshirthero.com                        tshirthero.com
+                          MySQL   MySQL
+
+    snowdevil.ca
+                                                          32
+
+
+
+
+Pod 1                                             Pod 2
+ tshirthero.com                         tshirthero.com
+                  MySQL         MySQL
+
+ snowdevil.ca
+
+
+
+        https://github.com/Shopify/ghostferry
+                                                    33
+
+
+
+
+Pod 1                                       Pod 2
+                  Redis   Redis
+
+
+
+ tshirthero.com
+                ��                tshirthero.com
+                  MySQL   MySQL
+
+ snowdevil.ca
+                                    34
+
+
+
+
+               routes
+host             shop_id   pod_id
+tshirthero.com ��
+                456        1
+snowdevil.ca     1         1
+                                      35
+
+
+
+
+                 routes
+host               shop_id   pod_id
+tshirthero.com     456       2
+snowdevil.ca       1         1
+                                                            36
+
+
+
+
+                                  GET products/summer-top
+
+
+
+
+Pod 1                                           Pod 2
+ tshirthero.com                       tshirthero.com
+                  MySQL   MySQL
+
+ snowdevil.ca
+                                                          37
+
+
+
+
+                                GET products/summer-top
+
+
+
+
+Pod 1                                         Pod 2
+                                    tshirthero.com
+                MySQL   MySQL
+
+ snowdevil.ca
+                                                 38
+
+
+
+
+🏪              🧾                   💻
+Storefront     Checkout            Admin
+Read heavy     Write heavy         R/W mix
+Availability   Consistency         Consistency
+Cacheable      External services
+                                                 39
+
+
+
+
+🏪              🧾                   💻
+Storefront     Checkout            Admin
+Read heavy     Write heavy         R/W mix
+Availability   Consistency         Consistency
+Cacheable      External services
+                                         40
+
+
+
+
+������
+       🧾                   💻
+������ Checkout            Admin
+       Write heavy         R/W mix
+       Consistency         Consistency
+������ External services
+
+������
+                                      41
+
+
+
+
+    🧾                   💻
+    Checkout            Admin
++   Write heavy         R/W mix
+    Consistency         Consistency
+    External services
+                      42
+
+
+
+I DON’T ALWAYS TEST
+LOAD
+
+
+
+
+BUT WHEN I DO, I DO
+ IT IN PRODUCTION
+          43
+
+
+
+
+Genghis
+                                                     44
+
+
+
+
+Load testing
+setup
+
+
+
+
+                                         Benchmark
+        Genghis   Shopify   CardServer
+                                          gateway
+45
+46
+                                                                                   47
+
+
+
+
+Circuit
+breaker
+
+
+
+
+          Timeout   Timeout   Timeout   Timeout   Circuit open (raise instantly)
+                                                                                       48
+
+
+
+
+Circuit
+breaker
+
+
+
+
+          Circuit open (raising)   Half-open   Half-open   Circuit closed (all good)
+                                                                  49
+
+
+
+
+ Toxiproxy[:mysql].downstream(:timeout, timeout: 1000).apply do
+   assert(Database.unhealthy?)
+ end
+
+
+
+
+Toxiproxy[:redis].down do
+  user.get_session
+end
+
+
+
+
+             https://github.com/Shopify/toxiproxy
+                                                            50
+
+
+
+
+SEMIAN_DEFAULTS = { success_threshold: 1,
+                    error_threshold: 3,
+                    error_timeout: 10 }
+
+Semian::NetHTTP.semian_configuration = -> do |host, port|
+  SEMIAN_DEFAULTS.merge(name: "#{host}_#{port}")
+end
+                                                                           51
+
+
+
+
+Idempotent
+request
+             {
+                 "amount": {
+                    "value": 100.00,
+                    "currency": "EUR"
+                 },
+                 "clientAccountId": 1234567,
+                 "clientBuyerId": 12345,
+                 "clientTransactionId": 6789,
+                  ...
+                 "test": true,
+                 "idempotencyKey": "d0814711-91cb-4c4e-bc71-64f4f0a7d27"
+             }
+                                                                   52
+
+
+
+
+Idempotent
+action
+             class CreateCharge
+               include Resumption::Processor
+
+              def initialize(progress:, amount:, currency:); end
+
+              recovery_point run: :create_incoming_records,
+                recover: :recover_incoming_records
+              recovery_point run: :create_outgoing_records,
+                recover: :recover_outgoing_records
+              recovery_point run: :call_remote_api,
+                recover: :call_remote_api, transactional: false
+               recovery_point run: :handle_remote_response
+             end
+                                                                            53
+
+
+
+
+Resumption
+
+
+
+       idempotency_key: "d0814711-91cb-4c4e-bc71-64f4f0a7d27"
+
+
+
+       create_local_records   create_outgoing_records   call_remote_api 💥
+                                                                                                       54
+
+
+
+
+Resumption
+
+
+
+       idempotency_key: "d0814711-91cb-4c4e-bc71-64f4f0a7d27"
+
+
+
+       create_local_records
+       recover_local_records   create_outgoing_records
+                               recover_outgoing_records   call_remote_api 💥   handle_remote_response
+55
+                                                 56
+
+
+
+
+Recap
+
+
+
+        01 The story of a single checkout
+        02 Scaling for BFCM
+        03 Testing scale and failure scenarios
+                                 57
+
+
+
+
+Thanks!
+📖 https://shopify.engineering
+󰤃 https://twitter.com/bdewater
+

@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://www.shopify.com/partners/blog/checkout-compliance",
+ "dir": "items/010-shopify.com",
+ "fetched_at": "2026-10-10T08:30:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/partners/blog/checkout-compliance",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 70472,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E010"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "141b43c89dc5211557be9db4343ada5ebca9abeac02c0f61bed0fc5ed0ec4354",
+ "raw_ext": "html"
+}

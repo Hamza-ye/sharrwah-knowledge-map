@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://shopify.engineering/building-resilient-graphql-apis-using-idempotency",
+ "dir": "items/004-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/building-resilient-graphql-apis-using-idempotency",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 52924,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E004"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "58a1be4ba3e5576098349ee9cc26cfea9761ffaa756658ccc6e0460adcf3bb0e",
+ "raw_ext": "html"
+}

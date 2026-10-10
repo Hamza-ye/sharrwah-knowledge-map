@@ -1,0 +1,174 @@
+developers.googleblog.com uses cookies from Google to deliver and enhance the quality of its services and to analyze traffic. Learn more
+
+OK, got it
+COMMUNITY/EVENTS
+LEARN
+BLOG
+YOUTUBE
+Search
+PAY
+Google Pay inside sandboxed iframe for PCI DSS v4 compliance
+JUNE 10, 2025
+Dominik Mengelt
+Developer Relations Engineer
+Payments
+Matthew Class
+Senior Software Engineer
+Share
+
+If you are developing or maintaining a checkout page you might come across PCI DSS v4 which includes the following requirement under 6.4.3:
+
+All payment page scripts that are loaded and executed in the consumer’s browser are managed as follows:
+- A method is implemented to confirm that each script is authorized.
+- A method is implemented to assure the integrity of each script.
+- An inventory of all scripts is maintained with written business or technical justification as to why each is necessary.
+
+One way to comply with this requirement is to use a technique like Subresource Integrity (SRI). However, the Google Pay JavaScript (pay.js) build and release process does not allow for a long-lived, stable hash required by techniques like SRI.
+
+
+Using a sandboxed iframe
+
+Using a sandboxed iframe satisfies any concerns with compliance since scripts within the iFrame will not have access to the parent DOM. See the following illustration for an example:
+
+<iframe
+  src="https://cdn.somewhereelse.com"
+  allow="payment"
+  sandbox="allow-scripts allow-popups allow-same-origin allow-forms">
+</iframe>
+HTML
+
+In this case the domain “cdn.somewhereelse.com” would load Google Pay’s pay.js JavaScript file. After a successful transaction, the inner iframe can communicate with the parent page through mechanisms like window.postMessage() if needed.
+
+In order for Google Pay to work in all browsers we need the following 4 sandbox attribute values in addition to allow=”payment”:
+
+allow-scripts
+
+To allow the iframe to execute scripts (pay.js as an example)
+
+allow-popups
+
+Allows the embedded page to create 'child browsing contexts'. In practice, this flag enables the embedded iframe to open new tabs and windows when the user clicks a link.
+
+allow-same-origin
+
+If not set, fails on various occasions for browsers. If set, the iframe has access to the parents storage and cookies.
+
+allow-forms
+
+Allows forms such as the Google Pay login to submit the data.
+
+See this test page to see the various iframe sandbox values in action.
+
+
+Shopify successfully certified for PCI DSS v4
+
+Google Pay partnered with Shopify to implement the above solution. Shopify was able to successfully pass the PCI DSS v4 audit by using a sandboxed iframe to display the Google Pay button. Here is what Shopify has to say:
+
+We’ve built Shopify Checkout in such a way that Google Pay code executes in a secure sandboxed environment, allowing us to maintain the integrity of our checkout and comply with PCI DSS V4 requirements.
+
+– Ilya Grigorik, Distinguished Engineer at Shopify
+
+For more information on how Shopify built their checkout solution using sandboxed iframes, their “Powering Shopify’s High-Performance, PCI DSS v4 Compliant Checkout with Sandboxing” blog post has the insights.
+
+
+Conclusion
+
+Wrapping your Google Pay integration in a sandboxed iframe can help you to comply with PCI DSS v4 requirements. For more assistance with your implementation, sign in to the Google Pay & Wallet Console to create a support ticket. In addition, you can join the developer community in the #payments channel on Discord.
+
+Follow @GooglePayDevs on X for future updates. If you have questions, tag @GooglePayDevs and include #AskGooglePayDevs in your tweets.
+
+POSTED IN:
+Pay
+Web
+How-To Guides
+Best Practices
+Web payments
+Security
+Learn
+sandbox
+Shopify
+Compliance
+PREVIOUS
+NEXT
+Related Posts
+MOBILE
+WEB
+ANNOUNCEMENTS
+LEARN
+
+Bring multimodal semantic search to the edge with EmbeddingGemma 2
+
+OCT. 6, 2026
+AI
+CLOUD
+CASE STUDIES
+HOW-TO GUIDES
+
+Reproducing Olmo 3 7B Pre-training in MaxText: case study of large scale training on TPUs
+
+SEPT. 24, 2026
+PAY
+GOOGLE PAY
+MOBILE
+WEB
+ANNOUNCEMENTS
+PROBLEM-SOLVING
+
+Supercharge your integration workflow with the Google Pay & Wallet Developer MCP server
+
+MAY 28, 2026
+AI
+CLOUD
+HOW-TO GUIDES
+LEARN
+
+Autonomous LLM post-training with Tunix on TPUs
+
+SEPT. 11, 2026
+MOBILE
+WEB
+CASE STUDIES
+ANNOUNCEMENTS
+
+ML Drift: Next-Gen GPU AI/ML Inference at the Edge
+
+OCT. 8, 2026
+PAY
+MOBILE
+WEB
+TUTORIALS
+ANNOUNCEMENTS
+
+New enhancements for merchant initiated transactions with the Google Pay API
+
+APRIL 15, 2026
+Connect
+Blog
+Bluesky
+Instagram
+LinkedIn
+X (Twitter)
+YouTube
+Programs
+Google Developer Program
+Google Developer Groups
+Google Developer Experts
+Accelerators
+Women Techmakers
+Google Cloud & NVIDIA
+Developer consoles
+Google API Console
+Google Cloud Platform Console
+Google Play Console
+Firebase Console
+Actions on Google Console
+Cast SDK Developer Console
+Chrome Web Store Dashboard
+Google Home Developer Console
+Android
+Chrome
+Firebase
+Google Cloud Platform
+All products
+Terms
+Privacy

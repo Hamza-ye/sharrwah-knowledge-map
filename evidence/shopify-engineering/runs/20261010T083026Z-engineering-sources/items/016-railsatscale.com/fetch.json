@@ -1,0 +1,18 @@
+{
+ "n": 16,
+ "url": "https://railsatscale.com/2024-01-26-a-packwerk-retrospective/",
+ "dir": "items/016-railsatscale.com",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://railsatscale.com/2024-01-26-a-packwerk-retrospective/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 11390,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E016"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bcc1577a902f92f21d9dc8552bd32e2736897b7a793b75635b1be390e6bf0153",
+ "raw_ext": "html"
+}

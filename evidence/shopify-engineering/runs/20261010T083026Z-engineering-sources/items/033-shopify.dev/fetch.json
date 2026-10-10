@@ -1,0 +1,18 @@
+{
+ "n": 33,
+ "url": "https://shopify.dev/docs/api/admin-graphql/latest/enums/OrderTransactionStatus",
+ "dir": "items/033-shopify.dev",
+ "fetched_at": "2026-10-10T08:30:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/api/admin-graphql/latest/enums/OrderTransactionStatus",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 89631,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E033"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cbed80f932b545b8477fa973db7d1f9d4e94c678be602f926beda7719b41364c",
+ "raw_ext": "html"
+}

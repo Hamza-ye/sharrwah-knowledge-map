@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://shopify.engineering/shopify-made-patterns-in-our-rails-apps",
+ "dir": "items/022-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/shopify-made-patterns-in-our-rails-apps",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 54414,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E022"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "10b2524be8c287f6c60b898a292917b7c2cb13d41e2a7ba5fc9e10e7c5758ce4",
+ "raw_ext": "html"
+}
