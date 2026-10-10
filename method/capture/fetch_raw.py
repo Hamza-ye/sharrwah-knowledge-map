@@ -56,7 +56,7 @@ def fetch(it):
     json.dump(rec, open(os.path.join(d, "fetch.json"), "w"), ensure_ascii=False, indent=1)
     return rec
 
-with ThreadPoolExecutor(max_workers=6) as ex:
+with ThreadPoolExecutor(max_workers=int(os.environ.get("CAPTURE_WORKERS", "6"))) as ex:
     recs = list(ex.map(fetch, items))
 json.dump(recs, open(os.path.join(run, "phase1.json"), "w"), ensure_ascii=False, indent=0)
 ok = sum(1 for r in recs if 200 <= r["http_code"] < 300 and r["raw_file"])

@@ -19,6 +19,8 @@ These tools make the copies in `evidence/`. Each copy has its date and a sha256 
 
 A run is one folder, `evidence/<area>/runs/<UTC time>-<name>/`. It holds one `items/NNN-host/` folder per source.
 
+`run.sh ITEMS_JSON RUN_DIR` runs steps 1, 2 and 4 in order and renders every item. `CAPTURE_WORKERS` sets how many fetches and renders run at once; the defaults are 6 and 4.
+
 **1. Raw fetch.** `python3 -I fetch_raw.py ITEMS_JSON RUN_DIR`
 - **Input:** `ITEMS_JSON` is a list of `{"n": 1, "url": "...", "kind": "web", "cited_in": ["..."]}`.
 - **Per item:** the body exactly as served (`raw.<ext>`), the response headers (`headers.txt`) and the transfer facts (`fetch.json`). Facts include the HTTP status, final URL, content type, size, sha256 and time.

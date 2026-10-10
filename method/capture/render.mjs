@@ -58,7 +58,7 @@ async function one(it) {
 const out = [];
 let i = 0;
 async function worker() { while (i < list.length) { const it = list[i++]; out.push(await one(it)); } }
-await Promise.all([worker(), worker(), worker(), worker()]);
+await Promise.all(Array.from({ length: Number(process.env.CAPTURE_WORKERS || 4) }, worker));
 await browser.close();
 fs.writeFileSync(path.join(run, 'phase2.json'), JSON.stringify(out, null, 0));
 const ok = out.filter(r => !r.error && r.status && r.status < 400).length;
