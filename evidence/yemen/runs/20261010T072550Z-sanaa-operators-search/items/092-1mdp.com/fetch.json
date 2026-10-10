@@ -1,0 +1,18 @@
+{
+ "n": 92,
+ "url": "https://1mdp.com/%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D8%AF%D9%81%D8%B9/",
+ "dir": "items/092-1mdp.com",
+ "fetched_at": "2026-10-10T07:26:06Z",
+ "curl_exit": 35,
+ "curl_error": "curl: (35) Recv failure: Connection reset by peer",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B092"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

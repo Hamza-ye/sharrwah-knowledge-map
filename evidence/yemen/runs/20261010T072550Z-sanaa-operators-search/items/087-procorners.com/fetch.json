@@ -1,0 +1,18 @@
+{
+ "n": 87,
+ "url": "https://procorners.com/shein-yemen-sanaa/",
+ "dir": "items/087-procorners.com",
+ "fetched_at": "2026-10-10T07:26:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://procorners.com/shein-yemen-sanaa/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 63816,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B087"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "fdc65b7f72aca3f1b463b70bf5a4518abe952d5717a8dbbacc80a9525ad4016a",
+ "raw_ext": "html"
+}

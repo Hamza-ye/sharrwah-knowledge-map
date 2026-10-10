@@ -1,0 +1,29 @@
+{
+ "n": 35,
+ "url": "https://www.yk-bank.com/ar/e-Services/floosak",
+ "rendered_at": "2026-10-10T07:27:10Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 403,
+ "final_url": "https://www.yk-bank.com/ar/e-Services/floosak",
+ "title": "Attention Required! | Cloudflare",
+ "text_chars": 688,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "9ce5a055f5b55f601e0bd62e6c5a669a09d79cdc6d65cc62582caf430d6478e8",
+ "browser_headers": {
+  "alt-svc": "h3=\":443\"; ma=86400",
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "a483e6b4895624c8-IAD",
+  "content-encoding": "zstd",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Sat, 10 Oct 2026 07:27:12 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+  "referrer-policy": "same-origin",
+  "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nklMU%2FF1n3%2FwmcY3aEiOCkEvKqRiYgMMEpq%2F6PIps1p9bou2ebjnX50lHNLK4sXuC05WJhyoFK6cR1NA0c2PlY1ygXgJ%2FxHddVnr1GHFRDQs4pI7J1c%2F1XyYLjxrrDCN3zU%3D\"}]}",
+  "server": "cloudflare",
+  "server-timing": "cfEdge;dur=2,cfOrigin;dur=0",
+  "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "SAMEORIGIN"
+ }
+}

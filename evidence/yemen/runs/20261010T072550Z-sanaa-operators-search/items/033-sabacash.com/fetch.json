@@ -1,0 +1,18 @@
+{
+ "n": 33,
+ "url": "https://sabacash.com/ar/services/",
+ "dir": "items/033-sabacash.com",
+ "fetched_at": "2026-10-10T07:25:54Z",
+ "curl_exit": 35,
+ "curl_error": "curl: (35) Recv failure: Connection reset by peer",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B033"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

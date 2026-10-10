@@ -1,0 +1,18 @@
+{
+ "n": 28,
+ "url": "https://t.me/ONECashye/1553",
+ "dir": "items/028-t.me",
+ "fetched_at": "2026-10-10T07:25:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://t.me/ONECashye/1553",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 9296,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B028"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0023d88be04d3a3bf359f37fb659517af24338071e1b3c298b6fbef696003cfa",
+ "raw_ext": "html"
+}

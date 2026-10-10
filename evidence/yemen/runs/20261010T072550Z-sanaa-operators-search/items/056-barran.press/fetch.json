@@ -1,0 +1,18 @@
+{
+ "n": 56,
+ "url": "https://barran.press/news/topic/9910",
+ "dir": "items/056-barran.press",
+ "fetched_at": "2026-10-10T07:25:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "http://barran.press/news/9910",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 16186,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B056"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "29336663b8bdc1f75bf0cf2a274f47af3ba2dddcadee13c723e206d1cfdecd3a",
+ "raw_ext": "html"
+}

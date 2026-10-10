@@ -1,0 +1,18 @@
+{
+ "n": 77,
+ "url": "https://almahriah.net/economy/%D9%85%D8%AD%D8%A7%D9%81%D8%B8-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86",
+ "dir": "items/077-almahriah.net",
+ "fetched_at": "2026-10-10T07:26:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://almahriah.net/economy/%D9%85%D8%AD%D8%A7%D9%81%D8%B8-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 21330,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B077"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2b4ce59f81d9b2b47a99131c8d87128870b0a7b623e9eeb9f140f92f512e7dc3",
+ "raw_ext": "html"
+}

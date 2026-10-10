@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 07:26:07 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+link: <https://procorners.com/wp-json/>; rel="https://api.w.org/", <https://procorners.com/wp-json/wp/v2/posts/62723>; rel="alternate"; title="JSON"; type="application/json", <https://procorners.com/?p=62723>; rel=shortlink
+set-cookie: ads_session_fd6279ebfbae8873fd0b905cf7fbe1ce=5b58bd7beba1abba548112e165cf9813%7C%7C1791789966%7C%7C1791786366%7C%7Cf7e9d34f78b90f7157c724a9e3e85f41; expires=Mon, 09-Nov-2026 07:26:06 GMT; Max-Age=2592000; path=/
+set-cookie: AWL=eyJoYXNoIjoiNDVjMTI2NzFmMWFiYjU2MyJ9; expires=Sun, 11-Oct-2026 07:26:06 GMT; Max-Age=86400; path=/
+vary: Accept-Encoding,User-Agent
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dDsZ9ITzvnmdLsTBhZFKF2IQmiBcwR9gYZfA6CmPFvgaIP1n7cYTX4avSICH4a7xoSyzBUUEnFiLEA9LqXIRo4bq5oVeiLhhOrC6v2bDeBuoFM%2Fo4em%2Bk8FdkhB43TZS5A%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+content-encoding: zstd
+cf-ray: a483e5157b57d658-IAD
+alt-svc: h3=":443"; ma=86400
+

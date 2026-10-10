@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://ymp.ye/api/providers?type=e-wallet&perPage=50&page=1",
+ "dir": "items/001-ymp.ye",
+ "fetched_at": "2026-10-10T07:25:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://ymp.ye/api/providers?type=e-wallet&perPage=50&page=1",
+ "content_type": "application/json",
+ "bytes": 78971,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B001"
+ ],
+ "raw_file": "raw.json",
+ "sha256": "aa6884e5edb7a3cca700831024c010cadea24da1356aa585f43f05e88e9371b2",
+ "raw_ext": "json"
+}

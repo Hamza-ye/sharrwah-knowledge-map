@@ -1,0 +1,18 @@
+{
+ "n": 86,
+ "url": "https://procorners.com/alibaba-yemen/",
+ "dir": "items/086-procorners.com",
+ "fetched_at": "2026-10-10T07:26:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://procorners.com/alibaba-yemen/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 64354,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B086"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ae43f389c2c8363478573a6fe77ea4218c3cb9c9d7da78354642cbe517a9a635",
+ "raw_ext": "html"
+}

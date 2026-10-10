@@ -91,4 +91,41 @@ These no longer exist at their address. If you know where the same content lives
 
 ## 5. Wallets, couriers and seller payment pages
 
-To be added when the second search finishes.
+These come from the operators search (`finding-aids/20261010-sanaa-operators-search.tsv`).
+
+1. [ ] **SabaCash services page.** Look for the "ادفع لتاجر" (pay a merchant) steps, meaning what the buyer enters, and any fees. Bears on PAY-50 and PAY-63.
+   - https://sabacash.com/ar/services/
+2. [ ] **Yemen Kuwait Bank's Floosak page.** Save it together with the ONE Cash page in section 2, and look for merchant or point-of-sale terms and fees. Bears on PAY-46, PAY-59 and PAY-63.
+   - https://www.yk-bank.com/ar/e-Services/floosak
+3. [ ] **Yemen Post parcel service.** Also open https://post.ye/web/ and look for "بريدي تحاصيل" (collections) and any cash-on-delivery terms. Bears on PAY-68.
+   - https://www.post.ye/web/index.php/postal-services/personal/postal-parcel-service
+4. [ ] **eMahallat marketplace: shipping and payment page.** Save both the English and the Arabic versions. Look for the list of payment methods and the wording on cash on delivery in Sana'a. Bears on PAY-71.
+   - https://www.emahallat.com/en/shipping-delivery/
+5. [ ] **1MDP store payment page.** Note the city and the payment methods listed. Bears on PAY-71.
+   - https://1mdp.com/%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D8%AF%D9%81%D8%B9/
+6. [ ] **Floosak's own domain.** It may be down for everyone; lowest priority.
+   - https://floosak.com/
+
+These need an ordinary browser rather than a Yemen connection:
+
+- [ ] **Jawali merchant QR request form.** Record the fields it asks for; do not submit it. https://jawali.com.ye/apply_qr.php
+- [ ] **Kuraimi service-point finder.** Search the city "صنعاء" for each point type (branch, ATM, Kuraimi Express agent) and save what it lists. https://kuraimibank.com/ar/service-points
+- [ ] **Wallets' public Facebook pages.** Save the latest posts on merchant payments:
+  - https://www.facebook.com/jaibwallet/
+  - https://www.facebook.com/wejawali
+  - https://www.facebook.com/cashewallet
+  - https://www.facebook.com/onecashye
+
+If a page won't open, the search lists hold Wayback Machine addresses for 91 rows in all (41 in the rules search, 50 in the operators search). An archive copy shows what was published on its date, not what holds now.
+
+## 6. Status no source could establish
+
+For each of these, the searches found no 2025–2026 source. A capture or a dated screenshot would settle it; an attestation (`attestations/TEMPLATE.md`) would at least record what you have seen.
+
+- **Al-Kuraimi through exchange houses and Kuraimi Express agents in Sana'a.** The latest reports (June 2025) say these dealings were stopped. Kuraimi's own Telegram posts up to October 2026 advertise Hasib payments at named Sana'a shops.
+- **Al-Kuraimi cash pickup at Sana'a branches.**
+- **A current list of wallets licensed by the Sana'a central bank.** The only lists found date from 2019–2020.
+- **Yemen Kuwait Bank's Floosak and ONE Cash services today.**
+- **Couriers' cash-on-delivery and remittance terms for online sellers:** Tawseel One, Wagbat, On Time, and the transport offices sellers name.
+- **Yemen Post collections.**
+- **The Sana'a unified transfer network.** It was reported as planned in February 2025; no launch was found.

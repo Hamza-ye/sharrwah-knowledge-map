@@ -1,0 +1,18 @@
+{
+ "n": 35,
+ "url": "https://www.yk-bank.com/ar/e-Services/floosak",
+ "dir": "items/035-yk-bank.com",
+ "fetched_at": "2026-10-10T07:25:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 403,
+ "final_url": "https://www.yk-bank.com/ar/e-Services/floosak",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 2196,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B035"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5980c003876017093c57406c049d29cb63a44fc9a4eb28897b713cd7841cbfcc",
+ "raw_ext": "html"
+}

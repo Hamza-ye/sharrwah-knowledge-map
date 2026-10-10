@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://pmo-ye.net/post/7616",
+ "dir": "items/002-pmo-ye.net",
+ "fetched_at": "2026-10-10T07:25:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://pmo-ye.net/post/7616",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 5653,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B002"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d6d6b85523a5f1b92c4911babec857605dbe4ad88ee6836f84bd0b7ae8636769",
+ "raw_ext": "html"
+}

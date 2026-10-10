@@ -1,0 +1,18 @@
+{
+ "n": 95,
+ "url": "https://play.google.com/store/apps/details?id=com.ebda3soft.ebsEcommerce&hl=ar",
+ "dir": "items/095-play.google.com",
+ "fetched_at": "2026-10-10T07:26:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=com.ebda3soft.ebsEcommerce&hl=ar",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 177021,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B095"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "93b53540fd7b001017b703ab065b755023f5fc6015a8cd4d8a4310471d8c87e6",
+ "raw_ext": "html"
+}

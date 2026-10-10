@@ -1,0 +1,18 @@
+{
+ "n": 60,
+ "url": "https://www.almashhad.news/180488",
+ "dir": "items/060-almashhad.news",
+ "fetched_at": "2026-10-10T07:26:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.almashhad.news/news/180488",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 16395,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B060"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9d75111bab7738217ad4798a2e6a4b8f39d11befc834fe4c1bbdc420b2ba3902",
+ "raw_ext": "html"
+}

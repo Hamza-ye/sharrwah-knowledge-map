@@ -1,0 +1,43 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 103 
+link: <https://cdn.shopify.com>; rel=preconnect, <https://cdn.shopify.com>; crossorigin; rel=preconnect, <https://fonts.googleapis.com>; rel=preconnect, <//anayees.com/cdn/shop/t/89/assets/main.css?v=160921216854723613011773636724>; as=style; rel=preload, <//anayees.com/cdn/shop/t/89/assets/animate-on-scroll.css?v=135962721104954213331763840833>; as=style; rel=preload, <https://fonts.googleapis.com/css2?family=Tajawal:ital,wght@0,400&display=swap>; as=style; rel=preload, <https://fonts.googleapis.com/css2?family=Tajawal:ital,wght@0,700&display=swap>; as=style; rel=preload, <https://cdn.shopify.com/extensions/019f8ada-04ff-79e6-a3a7-9a4cb6ec76c1/font-picker-4/assets/font.css>; as=style; rel=preload
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 07:26:05 GMT
+content-type: text/html; charset=utf-8
+content-length: 35522
+x-download-options: noopen
+cf-cache-status: DYNAMIC
+set-cookie: localization=YE; path=/; expires=Sun, 10 Oct 2027 07:26:05 GMT; SameSite=Lax
+set-cookie: _shopify_essential=:AaEktGgxAAEAUBXR8ySL7pcfuaBCvsbrpkvsW7YplG8prnX5G5MY9Ndw0gGt_O-p0lVn8lKiSYwvkobTgw5MNPbw0dA:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+set-cookie: _shopify_analytics=:AaEktGiwAAEAQYxZwsXOHnzQVNvH4-nS10BYh6mnVo_syDIMgXxowk4bNyJJBy7h4CM2jKm9KmD2QXcMn4-xbJHFsdQ:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+set-cookie: _shopify_marketing=:AaEktGiwAAEAJccihg_MsT9oYHgvPvwdl44Fr6fjlDTfsG_lJhWKNAsn7v_ZVT6cHrNxh20NYT9Z92dW_LElkGR-BVQ:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+link: <https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin, <https://fonts.googleapis.com>; rel="preconnect", <//anayees.com/cdn/shop/t/89/assets/main.css?v=160921216854723613011773636724>; as="style"; rel="preload", <//anayees.com/cdn/shop/t/89/assets/animate-on-scroll.css?v=135962721104954213331763840833>; as="style"; rel="preload", <https://fonts.googleapis.com/css2?family=Tajawal:ital,wght@0,400&display=swap>; as="style"; rel="preload", <https://fonts.googleapis.com/css2?family=Tajawal:ital,wght@0,700&display=swap>; as="style"; rel="preload", <https://cdn.shopify.com/extensions/019f8ada-04ff-79e6-a3a7-9a4cb6ec76c1/font-picker-4/assets/font.css>; as="style"; rel="preload", </.well-known/ucp>; rel="ucp"; version="2026-08-25"
+etag: "page_cache:61483286770:PageDetailsController:4eced10d312bfb97d7017be1857abfe2:ef7d2a6d99fdc319c2c7494c039f4210"
+content-encoding: br
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+shopify-complexity-score: 133
+shopify-complexity-score-v2: 133
+x-frame-options: DENY
+content-security-policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+access-control-allow-origin: *
+strict-transport-security: max-age=7889238
+vary: Accept
+vary: accept-encoding
+cdn-cache-control: no-cache, no-store
+content-language: ar-YE
+accept-ch: Sec-CH-Viewport-Width
+cache-control: private, max-age=0, must-revalidate
+powered-by: Shopify
+server-timing: processing;dur=142;desc="gc:2", db;dur=37, db_async;dur=15.715, render;dur=37, asn;desc="396982", edge;desc="IAD", country;desc="US", theme;desc="156700672242", pageType;desc="page", servedBy;desc="jmh8", requestID;desc="8c8012d1-b17a-4840-8abb-fe21debc8bc9-1791617165", _y;desc="bb173d1d-4dcb-460c-8e37-709bf9af43ed", _s;desc="8da670a8-a9cb-4680-989c-a3cb18d609c5", _cmp;desc="3.AMPS_US_f_f_jG*OboxDTTWPjORkcPRqqQ", _ye;desc="1823174765", _se;desc="1791618965", compressionLevel;desc="5", compressionTime;dur=6.91, earlyhints
+x-dc: gcp-us-east1,gcp-us-east1,gcp-us-east1
+x-xss-protection: 1; mode=block
+alt-svc: h3=":443"; ma=86400
+server: cloudflare
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aZZBoMFojAlNRNj%2BisQmrzw%2FDGsxunP4lSjITEE3xA6UTwbNx7hpBJ1PACmKwxHO5gMwqCmKeqQ0buVKKViCU6swXbTbymyJ2qJmTm%2BFD1XCe8J9zbCE%2FmVjr4Et"}]}
+x-content-type-options: nosniff
+x-request-id: 8c8012d1-b17a-4840-8abb-fe21debc8bc9-1791617165
+x-permitted-cross-domain-policies: none
+cf-ray: a483e51338d29acd-IAD
+

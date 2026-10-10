@@ -1,0 +1,18 @@
+{
+ "n": 90,
+ "url": "https://www.uptownye.com/",
+ "dir": "items/090-uptownye.com",
+ "fetched_at": "2026-10-10T07:26:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.uptownye.com/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 41711,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B090"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "becf2d08f03449dcf6da80dfb5db577dd5d31c7043178643615a7d18bda03a3a",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 36,
+ "url": "https://www.ahdfinancial.com/",
+ "dir": "items/036-ahdfinancial.com",
+ "fetched_at": "2026-10-10T07:25:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.ahdfinancial.com/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 5282,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B036"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9c18b91e7e4dd44e588a779ba684ae3600749bf85f1261e4d881d0049166145f",
+ "raw_ext": "html"
+}

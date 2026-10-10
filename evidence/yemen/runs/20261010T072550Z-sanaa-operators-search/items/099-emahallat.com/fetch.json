@@ -1,0 +1,18 @@
+{
+ "n": 99,
+ "url": "https://www.emahallat.com/en/shipping-delivery/",
+ "dir": "items/099-emahallat.com",
+ "fetched_at": "2026-10-10T07:26:07Z",
+ "curl_exit": 56,
+ "curl_error": "curl: (56) CONNECT tunnel failed, response 502",
+ "http_code": 0,
+ "final_url": "",
+ "content_type": "",
+ "bytes": 0,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B099"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

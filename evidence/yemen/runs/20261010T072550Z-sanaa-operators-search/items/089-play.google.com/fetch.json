@@ -1,0 +1,18 @@
+{
+ "n": 89,
+ "url": "https://play.google.com/store/apps/details?id=com.aosan.online&hl=ar",
+ "dir": "items/089-play.google.com",
+ "fetched_at": "2026-10-10T07:26:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=com.aosan.online&hl=ar",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 174033,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B089"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c5d5f7f13ac00fc2e1a46f84f366136e68daa14f278748c6a1309c5598bf8cf3",
+ "raw_ext": "html"
+}

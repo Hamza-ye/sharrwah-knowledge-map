@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 07:25:54 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+x-sucuri-id: 17006
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+content-security-policy: upgrade-insecure-requests;
+vary: User-Agent,Accept-Encoding
+cache-control: max-age=0, public
+expires: Sat, 10 Oct 2026 07:23:51 GMT
+server: Sucuri/Cloudproxy
+x-sucuri-cache: HIT
+alt-svc: h3=":443"; ma=86400
+content-encoding: br
+

@@ -1,0 +1,18 @@
+{
+ "n": 51,
+ "url": "https://t.me/MFloosWallet/415",
+ "dir": "items/051-t.me",
+ "fetched_at": "2026-10-10T07:25:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://t.me/MFloosWallet/415",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 9236,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B051"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c390d3f6509f061817d837c0dcb3cbaba384c276d09442fb9c65c9c224ec8b24",
+ "raw_ext": "html"
+}

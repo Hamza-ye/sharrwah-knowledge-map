@@ -1,0 +1,25 @@
+{
+ "n": 34,
+ "url": "https://floosak.com/",
+ "rendered_at": "2026-10-10T07:27:06Z",
+ "browser": "Chromium 141.0.7390.37",
+ "status": 522,
+ "final_url": "https://floosak.com/",
+ "title": "floosak.com | 522: Connection timed out",
+ "text_chars": 882,
+ "browser_body": "raw-browser.html",
+ "browser_body_sha256": "8260631efebaa3f039aa27b9cc65dc3fa5927d2186c6e112690ec53c2f96cac5",
+ "browser_headers": {
+  "alt-svc": "h3=\":443\"; ma=86400",
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "a483e69c9e08ae0d-IAD",
+  "content-length": "7220",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Sat, 10 Oct 2026 07:27:27 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "referrer-policy": "same-origin",
+  "retry-after": "120",
+  "server": "cloudflare",
+  "x-frame-options": "SAMEORIGIN"
+ }
+}

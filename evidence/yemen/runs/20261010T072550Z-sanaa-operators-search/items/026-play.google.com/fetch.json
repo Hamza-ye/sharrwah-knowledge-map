@@ -1,0 +1,18 @@
+{
+ "n": 26,
+ "url": "https://play.google.com/store/apps/details?id=cac.mobilemoney.app&hl=ar",
+ "dir": "items/026-play.google.com",
+ "fetched_at": "2026-10-10T07:25:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://play.google.com/store/apps/details?id=cac.mobilemoney.app&hl=ar",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 193833,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B026"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7a7ef18e4f851a16f6bcc5489f3ebc0e1b37b5adb249a38f03454ce945045b16",
+ "raw_ext": "html"
+}

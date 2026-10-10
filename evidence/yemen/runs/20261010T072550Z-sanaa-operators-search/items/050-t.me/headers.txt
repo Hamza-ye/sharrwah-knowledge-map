@@ -1,0 +1,15 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx/1.30.1
+date: Sat, 10 Oct 2026 07:25:59 GMT
+content-type: text/html; charset=utf-8
+content-length: 9221
+set-cookie: stel_ssid=03bfd4d2d85a0c96fd_3286807441333037480; expires=Sun, 11 Oct 2026 07:25:59 GMT; path=/; samesite=None; secure; HttpOnly
+pragma: no-cache
+cache-control: no-store
+x-frame-options: ALLOW-FROM https://web.telegram.org
+content-security-policy: frame-ancestors https://web.telegram.org
+content-encoding: gzip
+strict-transport-security: max-age=35768000
+

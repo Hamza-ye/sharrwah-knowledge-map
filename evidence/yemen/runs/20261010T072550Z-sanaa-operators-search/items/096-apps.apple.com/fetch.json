@@ -1,0 +1,18 @@
+{
+ "n": 96,
+ "url": "https://apps.apple.com/ye/app/%D8%AF%D9%8A%D9%84%D9%8A-%D9%81%D8%A7%D8%B3%D8%AA-%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%B7%D8%B9%D8%A7%D9%85-%D9%88%D9%87%D8%AF%D8%A7%D9%8A%D8%A7/id6745570168",
+ "dir": "items/096-apps.apple.com",
+ "fetched_at": "2026-10-10T07:26:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://apps.apple.com/ye/app/%D8%AF%D9%8A%D9%84%D9%8A-%D9%81%D8%A7%D8%B3%D8%AA-%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%B7%D8%B9%D8%A7%D9%85-%D9%88%D9%87%D8%AF%D8%A7%D9%8A%D8%A7/id6745570168",
+ "content_type": "text/html",
+ "bytes": 66363,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B096"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e4c5211a47b5a21c3d8d330fac426e2918b4f87d1955524de5494c66cec4c132",
+ "raw_ext": "html"
+}

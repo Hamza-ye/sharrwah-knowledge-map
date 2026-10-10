@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 07:26:01 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+vary: Accept-Encoding
+link: <https://yemenat.net/wp-json/>; rel="https://api.w.org/"
+link: <https://yemenat.net/wp-json/wp/v2/posts/408754>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://yemenat.net/?p=408754>; rel=shortlink
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-permitted-cross-domain-policies: master-only
+referrer-policy: same-origin
+alt-svc: h3=":443"; ma=86400
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-frame-options: ALLOWALL
+cf-cache-status: DYNAMIC
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=a8v%2FZWSVDzLyo9H%2FUmJq7MA5J7Sw0D9Srvot1OnBNlx9SCo%2FpxAqh916AaKRpvjVhGQejG47mV9JLD8BmpMh460jnh0kYWXVkZw4wLrnRadgBQPbetW%2BoXVzX8Dr3A%3D%3D"}]}
+content-encoding: zstd
+cf-ray: a483e4f1ddbe059e-IAD
+

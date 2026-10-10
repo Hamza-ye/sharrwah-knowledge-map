@@ -1,0 +1,18 @@
+{
+ "n": 85,
+ "url": "https://anayees.com/pages/faqs",
+ "dir": "items/085-anayees.com",
+ "fetched_at": "2026-10-10T07:26:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://anayees.com/pages/faqs",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 35522,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B085"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "528f66892bea7de91605c18138f8996a9388b854456a97b6cdf593aab94b0a86",
+ "raw_ext": "html"
+}

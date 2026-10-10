@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://qc-yemen.com/services-floosak/",
+ "dir": "items/022-qc-yemen.com",
+ "fetched_at": "2026-10-10T07:25:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://qc-yemen.com/services-floosak/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 34705,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B022"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e167703efb8c121bc0bbebeda1306b86a690dc373137e248d8f0a4605ba9f37d",
+ "raw_ext": "html"
+}

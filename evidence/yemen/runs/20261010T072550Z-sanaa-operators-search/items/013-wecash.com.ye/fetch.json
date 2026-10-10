@@ -1,0 +1,18 @@
+{
+ "n": 13,
+ "url": "https://www.wecash.com.ye/about",
+ "dir": "items/013-wecash.com.ye",
+ "fetched_at": "2026-10-10T07:25:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.wecash.com.ye/about",
+ "content_type": "text/html;charset=utf-8;",
+ "bytes": 10894,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B013"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "39ef8fa95843d1e91fe40216a54081dcf5fab6f5784a241f13d7017551ceae73",
+ "raw_ext": "html"
+}

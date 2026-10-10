@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://jawali.com.ye/services/12",
+ "dir": "items/011-jawali.com.ye",
+ "fetched_at": "2026-10-10T07:25:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://jawali.com.ye/services/12",
+ "content_type": "text/html;charset=utf-8;",
+ "bytes": 19308,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B011"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a25f6001e6ecbe4aa48198a70ac863d7d1e7a74e549b2682eb354807af06b625",
+ "raw_ext": "html"
+}

@@ -1,0 +1,44 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 07:26:01 GMT
+content-type: text/html; charset=UTF-8
+location: http://www.almashhad.news/news/180488
+server: cloudflare
+cf-cache-status: DYNAMIC
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VV92e6OvZshBisLVaX9W9GUsTja9ELUTDjEmxZ4o4zJZXmBAksQUzky1iUC9YUSfVFm0NSGkpA2iQaqp81evFdNK1NeppYLND8%2FhpyJH1MfvzDTWca%2FiL7yheFwMZFor9dSw5UU%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a483e4fa8de8332e-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 301 Moved Permanently
+date: Sat, 10 Oct 2026 07:26:01 GMT
+content-type: text/html; charset=UTF-8
+location: https://www.almashhad.news/news/180488
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=7KzeVLqAao50rfEWfXKCDrR5iJLwuz0bwLXUTGKqqRLraZkQgwdrxUGExpyQh3Od2iSMwgqH2sCUbP2l36ReUZsRqp0IMgSQvr31sSV7dgWjHr2tfJLuG%2BtA8WkQ8q2Fnelq0SE%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a483e4fb8c0445d7-ORD
+alt-svc: h3=":443"; ma=86400
+transfer-encoding: chunked
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 07:26:01 GMT
+content-type: text/html; charset=utf-8
+cache-control: public, no-cache="Set-Cookie", max-age=30
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+expires: Sat, 10 Oct 2026 07:26:31 GMT
+last-modified: Sat, 10 Oct 2026 07:26:01 GMT
+vary: *
+server: cloudflare
+set-cookie: ASP.NET_SessionId=g033sscytepdd0z5aul5xclo; path=/; HttpOnly; SameSite=Lax
+x-aspnet-version: 4.0.30319
+cf-cache-status: DYNAMIC
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=eQdZ4ZGgqa48s8a38IgPmoFCk3jOPqwBjfeGRer6vW%2B%2FQg5Y3BRBGaqt2ikpIhb2aOCfWTdCdJP%2BfCkT6%2BOdTVVcGWEnZKTbhTsopS0rwE5iEfKWKj%2BgKwTYDvXOJt8ppCfoTg8%3D"}]}
+content-encoding: zstd
+cf-ray: a483e4fba8df332e-IAD
+alt-svc: h3=":443"; ma=86400
+

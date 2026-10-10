@@ -1,0 +1,18 @@
+{
+ "n": 80,
+ "url": "https://qc-yemen.com/services-ontime/",
+ "dir": "items/080-qc-yemen.com",
+ "fetched_at": "2026-10-10T07:26:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://qc-yemen.com/services-ontime/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 32242,
+ "cited_in": [
+  "evidence/yemen/finding-aids/20261010-sanaa-operators-search.tsv:B080"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d9a3c1740210658ea8ea31e309b5e0d670076680210dadfab6385779c11524af",
+ "raw_ext": "html"
+}
