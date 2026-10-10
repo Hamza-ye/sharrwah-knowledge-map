@@ -13,14 +13,16 @@ The frame types each outcome by who decides it and when, records separately how 
 | Type | Who decides, and when | Feeds |
 | --- | --- | --- |
 | **Built** | Engineering, at build time | The domain model, the feature model, decision records |
-| **Configured** | Sharrwah as platform operator, after build. It is an on/off per zone or plan, or a value such as a price, a policy or a rule. | Configuration and the entitlement matrix. Reversible, for new records only. |
+| **Configured** | Sharrwah as platform operator, after build. It is an on/off per market or plan, or a value such as a price, a policy or a rule. | Configuration and the entitlement matrix. Reversible, for new records only. |
 | **Chosen** | The merchant, while using the product | A product feature; its slot is Built |
 | **Context** | Law, regulators, partners, providers, the market | A research or monitoring entry |
+
+A **market** is where Sharrwah sells under one set of rules: a country, or a regulatory zone within one. Yemen, the first market, has two zones. Sharrwah is built for many markets (`decisions/founder.md`, F-00).
 
 Each Configured outcome carries one of three tags, which differ by owner and lifecycle:
 
 - **release:** a planned rollout by Sharrwah. It has an end and feeds the release plan.
-- **entitlement:** a standing value by plan or zone. It feeds pricing and plans.
+- **entitlement:** a standing value by plan or market. It feeds pricing and plans.
 - **operational:** a switch forced by Context, such as a partner cut off overnight. Operations flip it in minutes without a deploy, and it feeds the runbook.
 
 Each Context outcome is one of two kinds:
@@ -46,7 +48,7 @@ Every outcome carries one of three certainty values:
 | --- | --- |
 | A Built outcome | Building that part: settle it, spike it, or turn it into a slot if the options are few and known |
 | The type or the range of a slot | Building. This is the expensive case. |
-| A Configured value | Release in that zone or plan, not building |
+| A Configured value | Release in that market or plan, not building |
 | A Chosen value | Nothing. Only the default must be settled. |
 | Context | Nothing directly. It blocks what it is linked to. |
 
@@ -57,12 +59,12 @@ Every outcome carries one of three certainty values:
 3. **Containment.** Chosen fits inside Configured, which fits inside Built. Configured also fits inside what Context allows. A merchant cannot pick what Sharrwah has not switched on. Sharrwah cannot switch on what is not built, or what a zone's law forbids.
 4. **Type follows rate of change.**
    - Never varies over the platform's life → Built.
-   - Varies by zone, plan or time → Configured.
+   - Varies by market, plan or time → Configured.
    - Varies by merchant → Chosen.
    - Volatile Context may feed Configured outcomes, never Built ones: build for the range, configure the value.
 5. **Context must name what it moves.** A Context outcome that moves no Built, Configured or Chosen outcome is dropped.
 6. **Rates split in two.** A rate policy (which source governs which event) is Configured. The rate value is monitored Context, stamped on each record when used.
-7. **Configuration changes the future, never the past.** Records carry the values in force when they were made: position, rate, edition, zone. Switching something off does not undo the records made while it was on.
+7. **Configuration changes the future, never the past.** Records carry the values in force when they were made: position, rate, market, and the currency's edition where a market has more than one. Switching something off does not undo the records made while it was on.
 8. **Step 0 returns a typed answer.** A company constraint comes back from the founder either as a **boundary**, which removes options from the Built range, or as a **setting**, which is a Configured value the founder owns. Agents cannot tell which from a sentence alone.
 
 ## 4. The funnel
@@ -84,16 +86,16 @@ The rows are the worklist, not a reference. The frame is the method, not evidenc
 | Reference | Authoritative for | Where |
 | --- | --- | --- |
 | Platform evidence | How a mature platform fixes the same thing: the default type | `observed-sh`, `observed-sa`, `shopify-payments-study/`, `studies/payment-seam/notes/` (crossings S###, L### and E###), `evidence/shopify-engineering/` |
-| Yemen evidence | Whether Yemen breaks that pattern, and how fast things change there | `evidence/yemen/`. `yemen-setup-options/` holds claims about it. |
+| Market evidence | Whether a market breaks that pattern, and how fast things change there. Yemen, the first market, is the only one captured so far. | `evidence/yemen/`. `yemen-setup-options/` holds claims about it. |
 | Founder decisions and attestations | What Sharrwah wants, inside what Context allows | `decisions/founder.md`, `evidence/yemen/attestations/` |
 | The model and the seam | Where an outcome sits | `model/obligation-to-payout.html`, `studies/payment-seam/seam.md` and its rules |
 
 Each typed outcome falls into one of four cases:
 
-1. **Both platforms fix it the same way, and Yemen does not contradict them.** Adopt that type and cite both.
+1. **Both platforms fix it the same way, and the market's evidence does not contradict them.** Adopt that type and cite both.
 2. **The platforms differ.** The type is Sharrwah's choice: a Built outcome, provisional, until a decision record settles it.
-3. **Yemen breaks the platforms' pattern.** The type shifts, usually from Built to Configured or from Configured to operational. Cite the Yemen source.
-4. **Neither platform has it.** Type it from rule 4 and the Yemen evidence alone, and mark it "no platform example". These carry the most risk.
+3. **A market breaks the platforms' pattern.** The type shifts, usually from Built to Configured or from Configured to operational. Cite the market's source.
+4. **Neither platform has it.** Type it from rule 4 and the market's evidence alone, and mark it "no platform example". These carry the most risk.
 
 Further rules on references:
 

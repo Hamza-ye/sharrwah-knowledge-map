@@ -23,20 +23,20 @@ What is owed, when it falls due, and how much is still unpaid are not payments. 
 
 Directions: **core → payments** means core asks payments; **payments → core** means payments tells core; **payments ↔ core** means payments asks core.
 
-| # | Element | What crosses | Direction | Shopify | Salla | Sharrwah and Yemen notes |
+| # | Element | What crosses | Direction | Shopify | Salla | Sharrwah notes (Yemen as the first market) |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | **Offer** | For one obligation, core passes a fixed snapshot of context: amount with currency and rial edition, buyer and seller zone, delivery method, a cart summary and the channel. Payments returns the methods on offer, each with display data and its capability profile. | core → payments | S001, S008–S012 | L001, L002, L007–L011 | Payments never reads live core data while deciding; it works from the snapshot. Partner cut-offs per setup option and zone are applied inside payments, so the offer simply changes. |
+| 1 | **Offer** | For one obligation, core passes a fixed snapshot of context: amount with currency (and its edition where a market has more than one), the buyer's and seller's market, delivery method, a cart summary and the channel. Payments returns the methods on offer, each with display data and its capability profile. | core → payments | S001, S008–S012 | L001, L002, L007–L011 | Payments never reads live core data while deciding; it works from the snapshot. Partner cut-offs per setup option and market are applied inside payments, so the offer simply changes. |
 | 2 | **Attempt** | Start an attempt: attempt id (also the idempotency key), obligation reference and amount. Payments returns coarse states: in progress, buyer action needed, pending, succeeded, failed, unknown. | core → payments, then payments → core | S030–S032 | L004–L006 | The buyer's own steps, such as an OTP, PIN, voucher code or proof upload, happen inside a payments-owned checkout step. Core sees only the state. A pending or unknown state can last a long time, because Yemeni rails have no callbacks and payments has to poll them. |
-| 3 | **Outcome record** | A record posted to the order. It carries the kind (sale, authorisation, capture, refund or void), the status and the amount with its edition. It also carries the **outcome source and evidence level**: rail confirmation, rail status query, courier event, seller attestation or buyer claim. It names the custodian (who holds the money now) and the method. It ends with an opaque provider reference and the time. | payments → core | S049, S050, S051 | L017, L018, L042 | Core derives the order's payment status and the amount still owed from these records. Shopify's "mark as paid" and Salla's "under review" bank transfer are precedents for evidence levels; Yemen needs them stated outright. |
+| 3 | **Outcome record** | A record posted to the order. It carries the kind (sale, authorisation, capture, refund or void), the status and the amount with its currency and edition. It also carries the **outcome source and evidence level**: rail confirmation, rail status query, courier event, seller attestation or buyer claim. It names the custodian (who holds the money now) and the method. It ends with an opaque provider reference and the time. | payments → core | S049, S050, S051 | L017, L018, L042 | Core derives the order's payment status and the amount still owed from these records. Shopify's "mark as paid" and Salla's "under review" bank transfer are precedents for evidence levels; Yemen needs them stated outright. |
 | 4 | **Reverse money** | Requests to refund, void or capture, each with its outcome. Where a rail cannot reverse, the outcome is "manual reversal required", and the seller's attestation that they paid back closes it. | core → payments, then payments → core | Refunds S094–S105; capture S066–S070 | L031, L043–L047 | Returns and cancellations stay in core; the movement of money stays in payments. |
 | 5 | **Verdicts** | Risk holds, payments under review, and dispute status. Only the verdict crosses; core decides what it does to fulfilment. | payments → core | S045, S046, S075, S109 | L008, L076 | — |
-| 6 | **Capabilities** | What each method or setup can do: hold then capture, refund through an API, partial refund, status query, buyer action type, evidence level, currencies, editions and zones. | payments → core, read by core | S005; leaks in `notes/shopify-crossings.md` §5 | — | Core asks "can this payment do X?" and never names a wallet or bank. That stops the leaks Shopify shows, such as instalment orders that can't be edited, or upsells refused for some methods. |
+| 6 | **Capabilities** | What each method or setup can do: hold then capture, refund through an API, partial refund, status query, buyer action type, evidence level, currencies, editions and markets. | payments → core, read by core | S005; leaks in `notes/shopify-crossings.md` §5 | — | Core asks "can this payment do X?" and never names a wallet or bank. That stops the leaks Shopify shows, such as instalment orders that can't be edited, or upsells refused for some methods. |
 | 7 | **Context reads** | A check that stock and price are still valid just before the debit. Delivery events: delivered, and cash collected or refused at the door. Fulfilment and tracking evidence for disputes. | payments ↔ core | S040, S076, S134 (7 such crossings in total) | L007, L043, and about 25 such crossings in total | These are the reverse dependencies. They stay few and typed, and in Yemen the cash-on-delivery outcome comes in through this path. |
 
 **Owned by core, which the contract relies on.** Obligations: what was agreed and what is due. Terms and schedules. The amount still owed. Order states. Shopify (S051, S089) and Salla ("Partially paid") both keep these on the order.
 
 **Reserved, not built.**
-- **Stored permissions to charge later** (mandates, Shopify S086, S090, S120, S128, S129). Neither card networks nor wallets in Yemen support them today.
+- **Stored permissions to charge later** (mandates, Shopify S086, S090, S120, S128, S129). Yemen's wallets do not support them today; other markets may need them sooner.
 - **The settlement contract:** holding, netting, payouts and balance debits (Salla L028–L039; Shopify's own processor side). It is needed only when a payment setup's position involves holding or settling funds. That happens with a licensed partner settling per order (stage 2), or with Sharrwah's own reserved holder position, which needs a licence.
 
 ## What stays inside payments
@@ -49,16 +49,16 @@ Agreed by both platforms, plus Yemen. Details are in the two crossing notes, sec
 - **Settlement and payout ledgers.** Custody ledgers, such as cash held by couriers and sellers.
 - **Risk models,** dispute mechanics, and identity checks for the rails.
 - **Partner relationships, licences, and Sharrwah's position on each payment setup.**
-- **Which partners are available,** per setup option and zone. This is the operational switch for overnight cut-offs.
+- **Which partners are available,** per setup option and market. This is the operational switch for overnight cut-offs.
 - **Testing:** simulated outcomes.
 
 ## Shared foundations: not payments, settled early
 
 Agreed by both platforms (section (b) in each crossing note):
 
-- **Money and currency:** money with its currency and rial edition, minor units and rounding.
+- **Money and currency:** money with its currency, minor units and rounding, and its edition where a market's currency circulates in more than one. Yemen's old and new rials are the first case.
 - **Exchange-rate policy,** and the rate service.
-- **Zones and markets.**
+- **Markets:** each one a country, or a regulatory zone within one. Yemen has two.
 - **Parties:** customers, merchants and legal sellers, staff and permissions.
 - **Tax.**
 - **Catalogue facts.**
@@ -78,20 +78,20 @@ These defaults are proposals. In the frame's terms, each is a Built decision wit
 | Payment terms and deposits | Rich (B2B net terms, deposits) | A deferred-payment window | Minimal: a due date, plus payment on delivery |
 | The balance as a debit rail | Yes, for Shopify Payments | Yes | Left out of the contract. Only the settlement contract would need it. |
 
-## Yemen-specific crossings, with no platform example
+## Crossings first met in Yemen
 
-These carry the most risk and should be the engineer's first review.
+These are general mechanisms of the Built model that Yemen, the first market, needs from the start. Other markets switch them on or leave them unused. Two of the five have no example on either platform. They carry the most risk and should be the engineer's first review.
 
-1. **Evidence levels on every outcome:** buyer claim, seller attestation, courier event, rail status query, rail confirmation. This is contract element 3.
-2. **Long pending and unknown states, with the platform polling the rail.** Shopify never polls (Shopify note, section 6, item 10). The polling stays inside payments, but the contract has to tolerate long pending.
-3. **Courier cash custody.** Delivery and refusal events reach payments through element 7, and the custody ledger stays inside payments.
-4. **Zone and rial edition** in the offer context and on every amount. This comes from the shared foundations.
-5. **Manual reversal on rails that cannot refund** (element 4).
+1. **Evidence levels on every outcome:** buyer claim, seller attestation, courier event, rail status query, rail confirmation (element 3). This one is partly shown. Shopify's "mark as paid" and Salla's "under review" bank transfer are precedents, but neither platform names the levels.
+2. **Long pending and unknown states, with the platform polling the rail.** Neither platform shows this, and Shopify never polls (Shopify note, section 6, item 10). The polling stays inside payments, but the contract has to tolerate long pending.
+3. **Courier cash custody.** This is not new. Salla keeps a cash-on-delivery remittance ledger with its carriers (Salla note, section (a), item 7), and Shopify keeps cash custody sessions at the counter (S112). Delivery and refusal events reach payments through element 7, and the custody ledger stays inside payments.
+4. **Currency edition** in the offer context and on every amount. Neither platform shows this, though both have markets. It comes from the shared foundations.
+5. **Manual reversal on rails that cannot refund** (element 4). This is not new: Shopify records refunds made outside any provider (S103).
 
 ## What this unlocks
 
 - **The core can be built now against this contract.** That covers catalogue, cart, checkout apart from the inside of the payment step, orders, fulfilment, returns, customers, merchants and notifications.
-- **Payments for the Sana'a launch can be small.** It means record-only cash on delivery and transfer-with-proof, with outcomes from seller attestation and buyer claims, and no rail integrated. It implements the same contract.
+- **Payments for the first launch, in Yemen's Sana'a zone, can be small.** It means record-only cash on delivery and transfer-with-proof, with outcomes from seller attestation and buyer claims, and no rail integrated. It implements the same contract.
 - **Rails come later, behind the same contract.** Wallets, banks and partners plug in without changing core. Regulation, legal consultation and partner talks run in parallel.
 
 ## Limits
@@ -125,7 +125,7 @@ Two taggers tagged the 81 rows independently from the first version of this file
 
 **Offering methods**
 8. **Who customises the offer.**
-   - Payments decides which methods the buyer may use, and it enforces the platform minimum and zone availability (element 1).
+   - Payments decides which methods the buyer may use, and it enforces the platform minimum and market availability (element 1).
    - The seller's presentation rules (hide, reorder, rename, default) are seller settings that core's checkout applies to the returned list.
 9. **Methods published to outside surfaces** (marketplaces, buyer apps, agents) form an offer with no obligation attached. That offer is element 1. Credentials bound to an obligation are element 2.
 
@@ -156,9 +156,9 @@ Two taggers tagged the 81 rows independently from the first version of this file
     - Reconciling outcomes against rails, partners and custodians stays inside payments.
     - Sellers' reconciliation reports combine core and payments data through the identifiers that cross: obligation reference, attempt id, outcome id and provider reference.
 18. **Per-market values have one owner each.**
-    - Zones and markets are a foundation.
+    - Markets are a foundation.
     - Payment values per market, such as methods enabled and partner availability, stay inside payments.
-    - Other values per market, such as rial edition, rate policy, civil calendar and tax, are foundations.
+    - Other values per market, such as currency edition, rate policy, civil calendar and tax, are foundations.
     - Rail cut-offs and settlement calendars stay inside payments and build on the civil calendar.
 19. **The ledger pattern is shared.** Append-only entries, idempotent posting, and reversal instead of edit form a shared foundation used by core's order money and payments' custody and settlement ledgers. Each ledger's content belongs to its owner.
 20. **Tax on Sharrwah's own revenue** belongs to the tax foundation. Tax on rail fees stays inside payments.
@@ -184,7 +184,7 @@ Two taggers worked independently from the first version of this file. `rows-tagg
 | Tag | Rows | What it means for the order of work |
 | --- | --- | --- |
 | contract | 24: element 0 ×7, 1 ×3, 2 ×3, 3 ×4, 4 ×2, 6 ×3, 7 ×1, reserved ×1 | Settle early. Most are answerable from the Shopify and Salla evidence already held. The Yemen-specific ones are PAY-49, PAY-75 and PAY-76. |
-| foundation | 13: PAY-01, 22, 34, 38, 40, 41, 43, 48, 61, 62, 73, 74, 81 | Settle early. These cover money with its rial edition, rates, zones, calendars, verification, the ledger pattern and tax. |
+| foundation | 13: PAY-01, 22, 34, 38, 40, 41, 43, 48, 61, 62, 73, 74, 81 | Settle early. These cover money with its currency and edition, rates, markets, calendars, verification, the ledger pattern and tax. |
 | payments-internal | 42 | These move at their own pace: rails, partners, licences, custody, regulation and consultations. Nothing in core waits for them. |
 | core | 1: PAY-23 | — |
 | company | 1: PAY-44 | Step 0, for the founder. |

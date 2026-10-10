@@ -8,9 +8,10 @@ The entries record decisions, not evidence. An entry that reports something obse
 
 | Id | Decision | Kind | Given | Effect |
 | --- | --- | --- | --- | --- |
+| F-00 | Sharrwah is a Shopify-class commerce platform for many markets. Yemen is its first market, not its design target. | Boundary on the Built range | The founder's brief at the start of this work; restated 2026-10-10 | The Built model serves many markets. Yemen's two authority zones, its two rial editions, its rails and its licences are Context and Configured values for one market, not the shape of the model. |
 | F-01 | Sharrwah has no US ties. | Company fact, step 0 | 2026-10-10, in conversation | Bears on PAY-44. It narrows the sanctions exposure the earlier study assumed, but the legal entity and domicile are still open (O-01). |
-| F-02 | Sharrwah goes live in the Sana'a zone first. | Setting: Configured, release | 2026-10-10, in conversation | The Sana'a zone is switched on at launch. Aden is built but off. |
-| F-03 | Sharrwah is built as if both zones exist. | Boundary on the Built range | 2026-10-10, in conversation | Zone is a Built dimension everywhere, including money with its rial edition, offers, setups and records. Neither zone may be assumed. |
+| F-02 | In Yemen, its first market, Sharrwah goes live in the Sana'a zone first. | Setting: Configured, release | 2026-10-10, in conversation | The Sana'a zone is switched on at launch. Aden is built but off. |
+| F-03 | Within Yemen, Sharrwah is built as if both zones exist. | Boundary on the Built range | 2026-10-10, in conversation | Both of Yemen's authority zones are modelled, and neither may be assumed. This is the Yemen case of F-00: a market can contain more than one regulatory zone, and a currency can circulate in more than one edition. |
 | F-04 | Sources dated before 2023 are too old to judge 2025–2026 status. | Method rule | 2026-10-10, in conversation | Applied to all evidence through `age_class`. |
 | F-05 | The founder's words are attestations, not evidence. Agents must not reason from them as fact. | Method rule | 2026-10-10, in conversation | Observations go in `evidence/yemen/attestations/` with their limits. |
 | F-06 | The founder proposed that payments be its own concern, with its own questions, research and pace, while the rest of the platform proceeds. | Founder direction | 2026-10-10, in conversation | The seam study found this workable behind a narrow contract (`studies/payment-seam/seam.md`). |
