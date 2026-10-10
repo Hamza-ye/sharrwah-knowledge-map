@@ -1,0 +1,23 @@
+{
+ "n": 80,
+ "url": "https://woocommerce.com/page-sitemap.xml",
+ "dir": "items/080-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/page-sitemap.xml",
+ "content_type": "text/xml; charset=UTF-8",
+ "bytes": 12561,
+ "cited_in": [
+  "WC-S-0840",
+  "WC-S-0841",
+  "WC-S-0842",
+  "WC-S-0843",
+  "WC-S-0844",
+  "WC-S-0845"
+ ],
+ "raw_file": "raw.xml",
+ "sha256": "39d55782ff606dd08829a73d04feea2e20d01ebf125246a300e9248a76a6bdc8",
+ "raw_ext": "xml"
+}

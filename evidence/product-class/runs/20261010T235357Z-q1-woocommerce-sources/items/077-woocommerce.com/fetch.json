@@ -1,0 +1,21 @@
+{
+ "n": 77,
+ "url": "https://woocommerce.com/document/woopayments/stripe-capital/overview/",
+ "dir": "items/077-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/stripe-capital/overview/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46454,
+ "cited_in": [
+  "WC-S-0559",
+  "WC-S-0560",
+  "WC-S-0561",
+  "WC-S-0861"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "be776f53ecf678234f3add21c48cc179d138d0da86760f39e18a34ce2d0639a0",
+ "raw_ext": "html"
+}

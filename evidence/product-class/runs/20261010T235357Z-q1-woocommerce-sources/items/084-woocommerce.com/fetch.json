@@ -1,0 +1,22 @@
+{
+ "n": 84,
+ "url": "https://woocommerce.com/product-category/woocommerce-extensions/customer-service-2/",
+ "dir": "items/084-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/woocommerce-extensions/customer-service-2/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 48954,
+ "cited_in": [
+  "WC-S-0723",
+  "WC-S-0724",
+  "WC-S-0725",
+  "WC-S-0726",
+  "WC-S-0727"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c6117bb1fc26d31ca0452feb0cda9e1c3a1f82d69c0a2bb7775ef9bd940038c1",
+ "raw_ext": "html"
+}

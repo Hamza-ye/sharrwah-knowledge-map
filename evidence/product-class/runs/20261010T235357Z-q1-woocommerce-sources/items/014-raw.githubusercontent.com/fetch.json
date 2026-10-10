@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/address-autocomplete.md",
+ "dir": "items/014-raw.githubusercontent.com",
+ "fetched_at": "2026-10-10T23:53:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/address-autocomplete.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 3217,
+ "cited_in": [
+  "WC-S-0919"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e16ddcead136c8c38b45e7d6b9d3639c251b5ec09916f7300f1ce9dca842c291",
+ "raw_ext": "txt"
+}

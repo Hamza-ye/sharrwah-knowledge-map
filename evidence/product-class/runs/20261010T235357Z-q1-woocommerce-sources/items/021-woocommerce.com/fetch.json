@@ -1,0 +1,18 @@
+{
+ "n": 21,
+ "url": "https://woocommerce.com/do-not-sell-or-share-my-personal-information/",
+ "dir": "items/021-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/do-not-sell-or-share-my-personal-information/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 37241,
+ "cited_in": [
+  "WC-S-0832"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "83d6bca80888ef8be9dda862d471eb9c1b97b296d0df452a91fd9898d64c5068",
+ "raw_ext": "html"
+}

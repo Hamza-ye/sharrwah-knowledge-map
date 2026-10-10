@@ -1,0 +1,19 @@
+{
+ "n": 39,
+ "url": "https://woocommerce.com/document/setting-up-taxes-in-woocommerce/",
+ "dir": "items/039-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/setting-up-taxes-in-woocommerce/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46897,
+ "cited_in": [
+  "WC-S-0878",
+  "WC-S-0879"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "96941aa52d2541abb6399d62c83404bd72e59029a22a9582de0c22c0c39426bc",
+ "raw_ext": "html"
+}

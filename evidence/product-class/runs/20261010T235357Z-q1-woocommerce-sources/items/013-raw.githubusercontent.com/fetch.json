@@ -1,0 +1,18 @@
+{
+ "n": 13,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/settings-and-config/implementing-settings.md",
+ "dir": "items/013-raw.githubusercontent.com",
+ "fetched_at": "2026-10-10T23:53:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/settings-and-config/implementing-settings.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 4603,
+ "cited_in": [
+  "WC-S-0922"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "aca0dcec8d9586983f8eaaf6bfb2a3737094fed8b95ce83c5547263b1f966056",
+ "raw_ext": "txt"
+}

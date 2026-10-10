@@ -1,0 +1,20 @@
+{
+ "n": 55,
+ "url": "https://woocommerce.com/document/woopayments/compatibility/is-woopayments-required-to-take-payments/",
+ "dir": "items/055-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/compatibility/is-woopayments-required-to-take-payments/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44738,
+ "cited_in": [
+  "WC-S-0556",
+  "WC-S-0557",
+  "WC-S-0854"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d30914f2242c7744571440b18d3242c54916ac88132c407ca33ec81a59d492a8",
+ "raw_ext": "html"
+}

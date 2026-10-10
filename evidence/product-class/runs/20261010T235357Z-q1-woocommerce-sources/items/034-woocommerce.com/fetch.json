@@ -1,0 +1,18 @@
+{
+ "n": 34,
+ "url": "https://woocommerce.com/document/pci-dss-compliance-and-woocommerce/",
+ "dir": "items/034-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/pci-dss-compliance-and-woocommerce/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 39448,
+ "cited_in": [
+  "WC-S-0882"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "809e20400df8118de1e1e6f46a8328fa7eb6d12bff9f38fdf1457b50a8b5d360",
+ "raw_ext": "html"
+}

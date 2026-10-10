@@ -1,0 +1,19 @@
+{
+ "n": 62,
+ "url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/does-woopayments-use-stripe-radar/",
+ "dir": "items/062-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/does-woopayments-use-stripe-radar/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44482,
+ "cited_in": [
+  "WC-S-0864",
+  "WC-S-0865"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6d28395346016bee4896747132bc4c291d165fa7e0b4b8331255c693bb810d99",
+ "raw_ext": "html"
+}

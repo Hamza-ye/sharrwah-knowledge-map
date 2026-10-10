@@ -1,0 +1,20 @@
+{
+ "n": 70,
+ "url": "https://woocommerce.com/document/woopayments/our-policies/prohibited-and-restricted-products/",
+ "dir": "items/070-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/our-policies/prohibited-and-restricted-products/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45117,
+ "cited_in": [
+  "WC-S-0523",
+  "WC-S-0524",
+  "WC-S-0525"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "294efb0047dae59311d2d7304c24e8189ee4e8ebedf15bf2198a6b735647e728",
+ "raw_ext": "html"
+}

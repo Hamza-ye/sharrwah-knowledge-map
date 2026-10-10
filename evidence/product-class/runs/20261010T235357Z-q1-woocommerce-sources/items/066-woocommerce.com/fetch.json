@@ -1,0 +1,23 @@
+{
+ "n": 66,
+ "url": "https://woocommerce.com/document/woopayments/our-policies/",
+ "dir": "items/066-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/our-policies/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49872,
+ "cited_in": [
+  "WC-S-0516",
+  "WC-S-0517",
+  "WC-S-0518",
+  "WC-S-0519",
+  "WC-S-0520",
+  "WC-S-0857"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "eef74f9f8a2afa3b54d2c7f88c61f95946eb86f2f85ecae2ae69dee9cf704913",
+ "raw_ext": "html"
+}

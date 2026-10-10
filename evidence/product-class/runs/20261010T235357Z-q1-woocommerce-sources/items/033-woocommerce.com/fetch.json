@@ -1,0 +1,19 @@
+{
+ "n": 33,
+ "url": "https://woocommerce.com/document/order-fulfillment/",
+ "dir": "items/033-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/order-fulfillment/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 41525,
+ "cited_in": [
+  "WC-S-0896",
+  "WC-S-0897"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9c99ac0e8fa65b5df380738e7f160fd5b08c883d7e6711e2e11debcd416531dd",
+ "raw_ext": "html"
+}

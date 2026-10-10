@@ -1,0 +1,13 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 23:53:58 GMT
+content-type: text/plain;charset=utf-8
+vary: Accept-Encoding, accept, content-type
+content-encoding: br
+accept-ranges: bytes
+x-cache: STALE
+x-rq: dca5 0 40 9980
+cache-control: max-age=300, must-revalidate
+

@@ -1,0 +1,261 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Compatibility / WooPayments vs. Stripe Plugin Comparison
+WooPayments vs. Stripe Plugin Comparison
+
+Because WooPayments is built in partnership with Stripe, it can sometimes be difficult to determine whether to use WooPayments or the Stripe plugin itself. In order to help you choose between the two, we’ve highlighted some important differences here.
+
+It’s also possible to use both gateways at the same time, although this does cause a few issues to be aware of.
+
+WordPress dashboard integration
+
+WooPayments is designed to integrate closely with your WordPress website. It does this by displaying all your transaction data, payout records, Capital loan details, and other information right within your site’s dashboard. This means you don’t need to leave your site’s admin interface to perform common business tasks.
+
+Bank account payouts inside the WordPress dashboard
+
+The regular Stripe plugin is not so closely integrated with the WordPress dashboard. As a result, some tasks will require you to log into Stripe’s dashboard to complete them. (For example, reconciling your payments or challenging disputes.)
+
+Accepting multiple currencies
+
+If you sell your products to customers in multiple countries, you can use the multi-currency features in WooPayments to receive payments in various currencies. It can also give your customers a choice of currencies to pay in.
+
+Configuring which currencies to sell your products in
+
+The regular Stripe plugin does not have this built-in. Instead, you would need to install a second plugin to enable multi-currency support.
+
+In-person payments for UK and Canada
+
+WooPayments offers merchants in the U.S., UK, and Canada the option to accept in-person payments using a card reader device.
+
+Taking payment for an in-person order
+
+The Stripe plugin only offers in-person payments for U.S. merchants.
+
+Initial setup and API keys
+
+WooPayments creates a special kind of Stripe account for you during the signup process, called a Stripe Express account. This account is linked directly to your site, without you having to copy and paste any API keys. This makes the initial setup process less complex as compared to the Stripe plugin.
+
+However, because WooPayments does not make the Stripe API keys available (even after setup is complete), it may not be suitable for certain merchants. For example, if you need to integrate with a third-party accounting service which requests the Stripe API keys, the Stripe plugin would be a better fit. This is because it connects to regular Stripe accounts, which do make their API keys available to you.
+
+Fees
+
+WooPayments fees and Stripe fees may differ depending on a variety of factors, and as such they may be a consideration when deciding between the two plugins.
+
+Country availability
+
+The regular Stripe plugin supports businesses based in more countries than WooPayments at this time. You can tell us where you’d like to see WooPayments next by filling out this form.
+
+Both plugins support the following:
+
+Australia
+Austria
+Belgium
+Bulgaria
+Canada
+Croatia
+Cyprus
+Czech Republic
+Denmark
+Estonia
+Finland
+France
+Germany
+Greece
+Hong Kong
+Hungary
+Ireland
+Italy
+Japan
+Latvia
+Lithuania
+Luxembourg
+Malta
+Netherlands
+New Zealand
+Norway
+Poland
+Portugal
+Romania
+Singapore
+Slovakia
+Slovenia
+Spain
+Sweden
+Switzerland
+United Arab Emirates
+United Kingdom
+United States
+
+The Stripe plugin also supports these:
+
+Brazil
+Gibraltar
+India (Preview)
+Liechtenstein
+Malaysia
+Mexico
+Instant payout requirements
+
+Instant payouts give eligible merchants a way to receive some or all of their account balance very quickly. To help prevent abuse, both WooPayments and Stripe have requirements that must be met before merchants can enable instant payouts.
+
+WooPayments has slightly different requirements before merchants can enable Instant Payouts. Stripe’s Instant Payouts requirements are the relevant ones if you use the Stripe plugin. Here’s a comparison chart:
+
+	WOOPAYMENTS	STRIPE
+Countries	U.S.	Australia, Canada, Singapore, UK, U.S.
+Min. Account Age	90 days	60 days
+Min. Volume	$1000 in last 90 days	$5000 total
+Advanced Stripe features
+
+Though WooPayments does take advantage of some of Stripe’s features, like Radar for fraud protection or (optionally) Billing for recurring subscriptions, the overall goal is to simplify the process of taking payments for your business.
+
+If your business requires some of the more advanced features Stripe offers, you may wish to use the Stripe plugin in combination with a regular Stripe account.
+
+Multiple businesses or websites
+
+WooPayments works by connecting to a single Stripe Express account and pulling all your transaction data and payout information in the WordPress dashboard. This is very convenient and perfectly functional for most merchants.
+
+However, if you need to take payments from multiple WooCommerce websites, but view reporting for those sites all in a single place, using the standalone Stripe plugin may be better.
+
+Was this guide helpful for you?
+Related Products
+WooCommerce Subscriptions
+by
+Woo
+
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+
+Excellence verified
+Price $279 annually
+$279
+annually
+Rated 3.9 out of 5 stars
+3.9 
+(142)
+Product Add-Ons
+by
+Woo
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
+
+Price $79 annually
+$79
+annually
+Rated 3.4 out of 5 stars
+3.4 
+(49)
+ON THIS PAGE
+WordPress dashboard integration
+Accepting multiple currencies
+In-person payments for UK and Canada
+Initial setup and API keys
+Fees
+Country availability
+Instant payout requirements
+Advanced Stripe features
+Multiple businesses or websites
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+EXPERIMENT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

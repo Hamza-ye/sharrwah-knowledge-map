@@ -1,0 +1,19 @@
+{
+ "n": 8,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/README.md",
+ "dir": "items/008-raw.githubusercontent.com",
+ "fetched_at": "2026-10-10T23:53:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/README.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 3911,
+ "cited_in": [
+  "WC-S-0914",
+  "WC-S-0915"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "8454e46538382e52c8facdad4eb14e039b332f5b0cc6dd2baf0eef1d9cf2c2e0",
+ "raw_ext": "txt"
+}

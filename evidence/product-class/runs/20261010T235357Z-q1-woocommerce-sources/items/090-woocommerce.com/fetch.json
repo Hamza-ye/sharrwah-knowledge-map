@@ -1,0 +1,22 @@
+{
+ "n": 90,
+ "url": "https://woocommerce.com/product-category/woocommerce-extensions/store-content-and-customizations/",
+ "dir": "items/090-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/woocommerce-extensions/store-content-and-customizations/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 60334,
+ "cited_in": [
+  "WC-S-0740",
+  "WC-S-0741",
+  "WC-S-0742",
+  "WC-S-0743",
+  "WC-S-0744"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "da590d4c97ac18d838a1be6edb73debfbe5e3ff1207c684aef6da31a3e38b60c",
+ "raw_ext": "html"
+}

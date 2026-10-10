@@ -1,0 +1,18 @@
+{
+ "n": 29,
+ "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/what-are-woocommerce-com-subscriptions/",
+ "dir": "items/029-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/what-are-woocommerce-com-subscriptions/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44284,
+ "cited_in": [
+  "WC-S-0900"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f3fd437517ff6176503bd3a0b86a3a1b3a277641e6ab84b7e3144b6ce5ec5dce",
+ "raw_ext": "html"
+}

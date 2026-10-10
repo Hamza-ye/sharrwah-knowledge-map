@@ -1,0 +1,189 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+Documentation / Products / WooPayments / WooPayments Documentation / WooPayments: Payouts
+WooPayments: Payouts
+
+This section explains how often your WooPayments account balance is paid out as well as how to manage those payouts. For information on how to view a list of your payouts or download them, please see our Managing Money page.
+
+The Payouts page listing past payouts.
+Payout methods
+
+WooPayments can send payouts to a bank account (all countries) or a debit card (U.S. only). We recommend using a bank account in every country, including the U.S.
+
+A bank account is better than a debit card for four reasons:
+
+Debit cards do not work outside the U.S.
+Debit cards have a maximum amount of money ($9,999 USD) that can be paid out at once, whereas bank accounts have no such limit.
+Debit cards cannot be debited if your account balance goes negative, which could prevent you from issuing timely refunds to your customers.
+If your debit card expires while it’s being used for payouts, any further payouts will be paused until you update the card information in your account.
+Debit cards outside the U.S.
+
+Although Stripe, our payments partner, might allow you to add a debit card even if your account country isn’t the U.S., what they will not do is send payouts to such cards. That is only supported for U.S. accounts. Thus, if your account is not in the U.S. and you add a debit card as your default payout method, no payouts will be issued to you.
+
+If your account is not in the U.S. and you’ve added a debit card as your default payout method, your WooPayments account balance will simply and silently be held until you add a bank account and make it the default payout method.
+
+Payout timing
+
+The main page to review on payouts is our payout schedule document. It explains how often your balance will be paid out depending on your business location, as well as other important details to keep in mind when it comes to getting your money.
+
+We also have a document on why your payouts might be paused or suspended and what to do about it.
+
+Payout emails
+
+Since July 2026, WooPayments sends an account notification email whenever a payout is scheduled. The email includes a summary with up to four items:
+
+Sales is the sum of successful customer payments included in the payout.
+Refunds is the sum of funds returned to customers, if applicable. This value is deducted from the Sales figure when determining the Payout total.
+Fees and adjustments is the net total of all other deductions and credits included in the payout. It includes processing fees, and will also include other adjustments, like dispute fees and Stripe Capital loan repayments, if applicable. This value is applied to the Sales figure when determining the Payout total.
+Payout total is the amount of the payout that will settle in your bank after considering the Refunds and Fees and adjustments values.
+
+Transactions, refunds, and adjustments included in a payout can be reviewed from the Payments > Payouts menu as described on the Managing Money page.
+
+NOTE: Because Fees and adjustments combines several kinds of deductions and credits, it can represent a larger percentage of your sales than your card processing rate alone.
+
+Managing these emails
+
+Payout emails are sent to the Communications email associated with your WooPayments account, which can be updated at any time.
+
+If you’d prefer not to receive these emails, select the Unsubscribe from future payout schedule emails link at the bottom of the email.
+
+Managing payouts
+
+In some cases, it is possible to change your payout schedule to better suit the needs of your business. You can also change the bank account that payouts are routed to.
+
+If your store accepts multiple currencies, you might also be able to accept payouts in multiple currencies as well, in order to avoid currency conversion fees.
+
+NOTE: If you use Chase, PNC, or U.S. Bank, the last four digits shown for your payout account might differ from your actual bank account number. This is a normal result of those banks using tokenized account numbers (TANs).
+
+Once a payout is scheduled, the funds for it are set aside for transfer to your bank and can no longer be used for anything else, e.g. refunds.
+
+Failed payouts
+
+If a payout fails, you can click into it from the main payouts list to see the reason. You may need to contact your bank for more info, or change your payout account.
+
+Missing payouts
+
+If you suspect that a payout is missing from your bank account, you can contact them and provide the bank reference ID to see if they can help find it. It may be best to wait 5 working days before doing this, since internal bank processes may face delays.
+
+Instant payouts
+
+Instant payouts are a way of getting even faster access to your money. Our Instant Payouts guide provides an overview of the feature and who is eligible for instant payouts. Additionally, this page explains the differences between Instant Payouts and scheduled payouts.
+
+Balance report
+
+As of July 2026, WooPayments also provides a detailed breakdown of any activity that affected your account balance in a given time period. To learn more, including how to enable these reports, please see our Balance and fees reports document.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Payout methods
+Debit cards outside the U.S.
+Payout timing
+Payout emails
+Managing these emails
+Managing payouts
+Failed payouts
+Missing payouts
+Instant payouts
+Balance report
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+THINGAMAJIG
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

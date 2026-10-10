@@ -1,0 +1,20 @@
+{
+ "n": 73,
+ "url": "https://woocommerce.com/document/woopayments/payouts/",
+ "dir": "items/073-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/payouts/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44325,
+ "cited_in": [
+  "WC-S-0530",
+  "WC-S-0531",
+  "WC-S-0532"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "649a4568f69eef297195a7fb7e3aac067a227435c343db54607e37e61e2c5023",
+ "raw_ext": "html"
+}

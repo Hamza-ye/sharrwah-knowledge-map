@@ -1,0 +1,23 @@
+{
+ "n": 83,
+ "url": "https://woocommerce.com/product-category/woocommerce-extensions/conversion/",
+ "dir": "items/083-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/woocommerce-extensions/conversion/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49159,
+ "cited_in": [
+  "WC-S-0717",
+  "WC-S-0718",
+  "WC-S-0719",
+  "WC-S-0720",
+  "WC-S-0721",
+  "WC-S-0722"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "fcacca31d85846a4ad02d5043922ffab5e35b1c268b4a5d69d21eb22b2cb11c2",
+ "raw_ext": "html"
+}

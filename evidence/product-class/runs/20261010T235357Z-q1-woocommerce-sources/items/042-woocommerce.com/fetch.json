@@ -1,0 +1,19 @@
+{
+ "n": 42,
+ "url": "https://woocommerce.com/document/webhooks/",
+ "dir": "items/042-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/webhooks/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 40057,
+ "cited_in": [
+  "WC-S-0885",
+  "WC-S-0886"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "93dcc7bb5f55d3273eb8027435337125ee85b33af91472ef353eebfde0fb51d4",
+ "raw_ext": "html"
+}

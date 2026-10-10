@@ -91,8 +91,10 @@ def variants(s):
     return [("exact", n), ("markup removed", p), ("case and diacritics ignored", HARAKAT.sub("", p).casefold())]
 
 def html_text(raw):
+    # Block tags break text; inline tags (links, emphasis) vanish so the sentence they sit in stays whole.
     raw = re.sub(r"(?is)<(script|style|noscript)[^>]*>.*?</\1>", " ", raw)
-    raw = re.sub(r"(?s)<[^>]+>", " ", raw)
+    raw = re.sub(r"(?is)</?(p|div|li|ul|ol|br|hr|h[1-6]|tr|td|th|table|thead|tbody|section|article|header|footer|nav|main|aside|blockquote|pre|dd|dt|dl|figure|figcaption)\b[^>]*>", "\n", raw)
+    raw = re.sub(r"(?s)<[^>]+>", "", raw)
     return raw
 
 def json_unescaped(raw):

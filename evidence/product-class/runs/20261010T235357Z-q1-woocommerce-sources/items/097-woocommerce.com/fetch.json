@@ -1,0 +1,20 @@
+{
+ "n": 97,
+ "url": "https://woocommerce.com/wooads-policy/",
+ "dir": "items/097-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/wooads-policy/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 37187,
+ "cited_in": [
+  "WC-S-0947",
+  "WC-S-0948",
+  "WC-S-0949"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ec5df2da4af3017f93c9914350cbff51c0c13735422d5990fff15a7352eaa411",
+ "raw_ext": "html"
+}

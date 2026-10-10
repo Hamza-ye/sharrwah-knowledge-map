@@ -1,0 +1,20 @@
+{
+ "n": 48,
+ "url": "https://woocommerce.com/document/woocommerce-shipping/",
+ "dir": "items/048-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woocommerce-shipping/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 63784,
+ "cited_in": [
+  "WC-S-0904",
+  "WC-S-0905",
+  "WC-S-0906"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "49ade3c0db7acb8149c6e00ffb98253e200d9b08e66a694295eedcabddf2069f",
+ "raw_ext": "html"
+}

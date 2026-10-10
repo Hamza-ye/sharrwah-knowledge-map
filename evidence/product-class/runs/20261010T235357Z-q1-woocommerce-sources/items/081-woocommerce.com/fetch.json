@@ -1,0 +1,27 @@
+{
+ "n": 81,
+ "url": "https://woocommerce.com/product-category/business-services/",
+ "dir": "items/081-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/business-services/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49006,
+ "cited_in": [
+  "WC-S-0763",
+  "WC-S-0764",
+  "WC-S-0765",
+  "WC-S-0766",
+  "WC-S-0767",
+  "WC-S-0768",
+  "WC-S-0769",
+  "WC-S-0770",
+  "WC-S-0771",
+  "WC-S-0772"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5f1a238297b8b3ad0245d2b0a2eaa5347245ddf36a927be8862264a524adedd3",
+ "raw_ext": "html"
+}

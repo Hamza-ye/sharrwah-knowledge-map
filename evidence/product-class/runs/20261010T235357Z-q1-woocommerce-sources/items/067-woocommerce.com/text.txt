@@ -1,0 +1,188 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Our Policies / Connecting to WordPress.com with WooPayments
+Connecting to WordPress.com with WooPayments
+
+WooPayments requires a connection to WordPress.com in order to function properly. This connectivity is facilitated through the same process that the Jetpack plugin uses to connect to WordPress.com.
+
+As such, Jetpack can be a helpful tool for reconnecting WooPayments if the connection is disrupted, or changing the connected WordPress.com account entirely.
+
+NOTE: The Jetpack plugin itself is not required for WooPayments to function. It’s only used here to help configure the connection to WordPress.com.
+
+Looking for something else? If you are trying to connect your store to your WooCommerce.com account to manage extension subscriptions and receive updates, see Connect your site to WooCommerce.com instead. That process does not involve Jetpack or the steps described on this page.
+
+Setting up the connection to WordPress.com
+
+After you’ve activated WooPayments for the first time, you’ll be prompted to connect to WordPress.com. If you don’t have a WordPress.com account, one will be created for you after entering your email address. This process does not automatically install Jetpack.
+
+If you already have Jetpack installed and connected to WordPress.com, then you won’t need to connect WooPayments separately. It will simply use Jetpack’s connection. If you remove Jetpack at a later date, the WooPayments connection will not be broken.
+
+Changing the WordPress.com account you’re connected to
+
+If you want to change the WordPress.com account that your WooPayments website is connected to, you can use Jetpack to sever the connection between your site and WordPress.com, and then reconnect to an account of your choosing.
+
+This is an important step to take if you’re trying to transfer ownership of your site to someone else, or if you’re an an agency or developer that connected a client’s site to WordPress.com temporarily.
+
+To change which WordPress.com account your site is connected to, follow these steps:
+
+NOTE: After you click the Disconnect button in the steps below, WooPayments will be unable to take payments until reconnected to WordPress.com. Thus, we suggest that you reconnect to the new account as quickly as possible. If you are at all unsure of how to proceed, please contact our support for guidance.
+
+Install and activate Jetpack on your site per this document.
+It will automatically connect to whichever WordPress.com account you used during the WooPayments signup process. This is only temporary.
+If you don’t want Jetpack to auto-enable any features while you do this, you can return an empty array to the jetpack_get_default_modules filter as shown here. This snippet should be added before installing Jetpack.
+Disconnect Jetpack following these instructions.
+You will see a popup indicating that this will break WooPayments.
+Click the Disconnect button.
+Click the No thank you link.
+Jetpack and WooPayments are now disconnected from WordPress.com.
+
+NOTE: At this point, you can safely remove Jetpack from your site if you no longer wish to use it. To remove Jetpack, navigate to Plugins > Installed Plugins. Once there, deactivate Jetpack and delete it.
+
+Go to the WordPress.com profile page and click the Log Out button.
+This will log you out of WordPress.com so that, when you reconnect WooPayments, you can connect to any WordPress.com account you choose.
+Go back to the admin dashboard of your site.
+Click the Payments menu.
+Click Finish Setup.
+Connect to a WordPress.com account of your choosing.
+Once you are connected to any WordPress.com account, WooPayments will automatically be connected to the same Stripe Express account as before.
+
+NOTE: After the site is reconnected to WordPress.com, WooPayments will resume working normally. This will happen automatically without any other steps needed.
+
+Troubleshooting
+
+If you’re having trouble connecting WooPayments, please see the advice below, or contact our support team for assistance.
+
+If you’re having trouble creating a WordPress.com account or accessing that account, please contact our WordPress.com support team.
+
+Using Jetpack to troubleshoot
+
+Because WooPayments uses the same code to connect to WordPress.com as Jetpack does, Jetpack can be a useful tool for fixing connection issues you’re facing.
+
+Start by installing Jetpack and trying to connect to WordPress.com. Depending on the specific problem that Jetpack detects, you may get different errors messages. Please consult the follow Jetpack documents to help resolve the issue.
+
+Fix Jetpack issues
+Troubleshoot Jetpack connection error messages
+
+Once you’ve fixed the Jetpack connection, WooPayments should work as well.
+
+Note that, whatever the solution may be, it will need to remain in place even after you uninstall Jetpack. Otherwise, it’ll just disrupt the WooPayments connection again.
+
+Resetting the WordPress.com connection
+
+Occasionally (e.g. after restoring your site from a backup), WooPayments may become disconnected from WordPress.com. To fix this problem, you can use Jetpack to reset the connection so that it works again.
+
+To reset the connection, follow the steps above. However, instead of reconnecting your site to a different WordPress.com account, reconnect to your original account instead. WooPayments will use Jetpack’s connection to re-establish itself.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Setting up the connection to WordPress.com
+Changing the WordPress.com account you're connected to
+Troubleshooting
+Using Jetpack to troubleshoot
+Resetting the WordPress.com connection
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+BRAINCHILD
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

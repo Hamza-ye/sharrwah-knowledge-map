@@ -1,0 +1,20 @@
+{
+ "n": 16,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/README.md",
+ "dir": "items/016-raw.githubusercontent.com",
+ "fetched_at": "2026-10-10T23:53:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/README.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 4988,
+ "cited_in": [
+  "WC-S-0629",
+  "WC-S-0630",
+  "WC-S-0631"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "de8dd56e7896b9cdba70f6210d8f3796f563d1bf703503ec9e58cbe0340a2248",
+ "raw_ext": "txt"
+}

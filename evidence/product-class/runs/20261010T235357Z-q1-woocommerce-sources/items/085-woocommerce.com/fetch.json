@@ -1,0 +1,25 @@
+{
+ "n": 85,
+ "url": "https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/",
+ "dir": "items/085-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49177,
+ "cited_in": [
+  "WC-S-0755",
+  "WC-S-0756",
+  "WC-S-0757",
+  "WC-S-0758",
+  "WC-S-0759",
+  "WC-S-0760",
+  "WC-S-0761",
+  "WC-S-0762"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "568e05b889fd76f227b69345083f46e442cb8851ae108bbdeb3af84465b44bff",
+ "raw_ext": "html"
+}

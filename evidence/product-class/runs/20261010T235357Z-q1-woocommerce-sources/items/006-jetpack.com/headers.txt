@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 23:53:59 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+x-hacker: Want root?  Visit join.a8c.com/hacker and mention this header.
+host-header: WordPress.com
+link: <https://public-api.wordpress.com/wp-json/?rest_route=/sites/jetpacklive.wordpress.com>; rel="https://api.w.org/"
+x-frame-options: SAMEORIGIN
+vary: accept, content-type, cookie
+link: <https://wp.me/phmmg9-3l8>; rel=shortlink
+content-encoding: br
+x-ac: 2.dca _dca STALE
+alt-svc: clear
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+server-timing: a8c-cdn, dc;desc=dca, cache;desc=STALE;dur=3.0
+

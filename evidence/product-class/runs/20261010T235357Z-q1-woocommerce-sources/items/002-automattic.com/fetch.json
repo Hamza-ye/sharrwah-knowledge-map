@@ -1,0 +1,31 @@
+{
+ "n": 2,
+ "url": "https://automattic.com/privacy/",
+ "dir": "items/002-automattic.com",
+ "fetched_at": "2026-10-10T23:53:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://automattic.com/privacy/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45158,
+ "cited_in": [
+  "WC-S-0494",
+  "WC-S-0495",
+  "WC-S-0496",
+  "WC-S-0497",
+  "WC-S-0498",
+  "WC-S-0499",
+  "WC-S-0500",
+  "WC-S-0501",
+  "WC-S-0502",
+  "WC-S-0503",
+  "WC-S-0659",
+  "WC-S-0660",
+  "WC-S-0830",
+  "WC-S-0942"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "77622a1edddc26ba65f01eca04a8ed7aaf5099b2564c7fd4b7a90e7da9794d47",
+ "raw_ext": "html"
+}

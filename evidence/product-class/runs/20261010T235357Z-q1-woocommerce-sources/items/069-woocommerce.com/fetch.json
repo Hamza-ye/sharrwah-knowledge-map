@@ -1,0 +1,23 @@
+{
+ "n": 69,
+ "url": "https://woocommerce.com/document/woopayments/our-policies/pci-compliance/",
+ "dir": "items/069-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/our-policies/pci-compliance/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 56970,
+ "cited_in": [
+  "WC-S-0550",
+  "WC-S-0551",
+  "WC-S-0552",
+  "WC-S-0553",
+  "WC-S-0554",
+  "WC-S-0859"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6cf325b9761467614199edc12b711265e23856713fe203d9f9c7ba8f8b489245",
+ "raw_ext": "html"
+}

@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 23:53:58 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+last-modified: Sat, 10 Oct 2026 23:47:51 GMT
+cache-control: max-age=64, must-revalidate
+x-nananana: Batcache-Hit
+x-hacker: Want root?  Visit join.a8c.com/slc and mention this header.
+host-header: WordPress.com
+link: <https://public-api.wordpress.com/wp-json/?rest_route=/sites/automattic.wordpress.com>; rel="https://api.w.org/"
+link: <https://wp.me/Pe4R-d>; rel=shortlink
+x-frame-options: SAMEORIGIN
+vary: accept, content-type, cookie
+content-encoding: br
+x-ac: 3.dca _dca STALE
+alt-svc: clear
+strict-transport-security: max-age=31536000
+server-timing: a8c-cdn, dc;desc=dca, cache;desc=STALE;dur=2.0
+

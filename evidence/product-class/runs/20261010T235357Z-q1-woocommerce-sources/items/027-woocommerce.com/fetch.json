@@ -1,0 +1,18 @@
+{
+ "n": 27,
+ "url": "https://woocommerce.com/document/managing-orders/order-statuses/",
+ "dir": "items/027-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/managing-orders/order-statuses/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 51743,
+ "cited_in": [
+  "WC-S-0898"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0d3edb4cda3b91fd8089aab94008e63da228a04dac6d34949b0c220c98880137",
+ "raw_ext": "html"
+}
