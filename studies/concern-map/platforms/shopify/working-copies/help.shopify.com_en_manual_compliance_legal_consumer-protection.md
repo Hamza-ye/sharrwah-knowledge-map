@@ -1,0 +1,143 @@
+# Consumer protection laws
+
+When you sell products through Shopify, you need to comply with the consumer protection laws and regulations that apply to your business. These laws generally cover issues such as how you can advertise, how customers can return defective products, and product safety and recall standards.
+
+You can grow your business and reach new customers by selling your products internationally. When you sell globally, you need to comply with both the laws of your store's location and the laws of the places where you ship your products to. Use the information on this page to learn about some consumer protection laws that might apply to your business.
+
+Which laws apply to you depend on the region where your store is located and the regions where you sell.
+
+To ensure uninterrupted use of your Shopify store, ensure you're following consumer protection laws in any jurisdiction where you conduct business.
+
+<aside class="note note-caution"><h4>Caution</h4><p>This page provides general information to merchants regarding consumer protection as a starting point for your own research. You&#39;re responsible for reviewing this information and applying it to your business. This content doesn&#39;t contain, and isn&#39;t meant to provide, legal advice.</p>
+<p>To sell products using the Shopify platform, you must comply with the laws of the jurisdiction of your business and your customers, the <a href="https://www.shopify.com/legal/terms">Shopify Terms of Service</a>, and any other applicable policies. If you have questions about the law in your store or customer’s locations, then you may wish to consult a lawyer for advice.</p>
+</aside>
+
+## Contact information
+
+Under the [Shopify Terms of Service](https://www.shopify.com/legal/terms), you must provide current and accurate contact information on your online store. This information must include:
+
+* your business name
+* an email address and a phone number customers can use to contact you with any questions, complaints, or claims
+* the physical address for your business
+
+Your contact information needs to be public-facing and easy to access.
+
+You can [add store policies](/manual/checkout-settings/refund-privacy-tos), or you can [add a Contact Us page](/manual/online-store/themes/customizing-themes/common-customizations/add-contact-page) to your online store.
+
+You can use these free, Shopify policy generator tools and resources to easily create the following policies for your website:
+
+* [custom terms of service](https://www.shopify.com/tools/policy-generator/terms-and-conditions)
+* [privacy policy](https://www.shopify.com/tools/policy-generator)
+* [refund policy](https://www.shopify.com/tools/policy-generator/refund)
+* [shipping policy](https://www.shopify.com/blog/shipping-policy)
+
+### Contact information requirements by the European Economic Area
+
+If you're a merchant located in, or shipping to, the European Economic Area, or if you're a merchant targeting consumers in the European Economic Area, then you're required to include your company number and Value-Added Tax (VAT) number on your online store.
+
+Review the following laws relevant to selling products from, or into, the European Economic Area:
+
+* [Electronic commerce](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32000L0031) ([Directive 2000/31/EC](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32000L0031))
+* [Unfair commercial practices](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32005L0029) ([Directive 2005/29/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32005L0029))
+* [Consumer rights](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0083) ([Directive 2011/83/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0083))
+* [Conformity for goods](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0771) ([Directive 2019/771/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0771))
+
+## Refund policy
+
+Under the [Shopify Terms of Service](https://www.shopify.com/legal/terms), you must provide current, accurate, public-facing, and easy-to-access information about your refund policy on your online store.
+
+Your refund policy should include the following information:
+
+* The time in which a product must be returned.
+* The address where a return needs to be sent.
+* The cost of returning a product, and who pays for the return.
+* Information about how the time to get a refund might depend on where the customer lives in relation to your location.
+* Contact information a customer can use to contact you if they don't receive a refund in a timely manner.
+
+Learn more about [adding store policies, such as a refund, privacy, terms of service, shipping, or legal store policy, to your online store](/manual/checkout-settings/refund-privacy-tos).
+
+### Refund policy requirements in the European Economic Area
+
+If you're a merchant located in the European Economic Area, or if you're a merchant targeting consumers in the European Economic Area, then your refund policy must provide European Economic Area consumers with information about their basic rights, including the right to withdrawal and conformity of goods.
+
+Review the following laws relevant to selling products to consumers in the European Economic Area:
+
+* [Conformity of goods](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0771) ([Directive 2019/771/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0771))
+* [Consumer rights](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0083) ([Directive 2011/83/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0083))
+
+## Order fulfillment and delivery
+
+Under the [Shopify Terms of Service](https://www.shopify.com/legal/terms), you must add public-facing contact information, a refund policy, and order fulfillment timelines to your store. Before your customer completes a purchase, it should be clear to them how long it'll take for their order to arrive.
+
+You should communicate the following information to your customers:
+
+* If there's a change or delay to a customer’s order.
+* If import fees or customs charges might be imposed because you’re shipping to them from a different country.
+
+If you use [dropshipping](/manual/products/dropshipping) or another third-party service to fulfill orders, then you should tell your customers that products are shipped by a third-party from a different location.
+
+### Order fulfillment and delivery requirements in the European Economic Area
+
+The European Economic Area has laws related to order fulfillment, shipping information, and the disclosure of import or customs charges, including the following examples:
+
+* [Unfair commercial practices](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32005L0029) ([Directive 2005/29/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32005L0029))
+* [Consumer rights](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0083) ([Directive 2011/83/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0083))
+
+## Product performance, marketing, and pricing claims
+
+Shopify’s [Terms of Service](https://www.shopify.com/legal/terms) require claims that you make about the products and services you sell on your store to be true. In some jurisdictions, the law might impose stricter requirements about marketing or performance claims that you make about your products.
+
+Claims about product popularity and availability should be clear and accurate. Potentially deceptive or misleading marketing include the following examples:
+
+* limited stock notifications, such as "only [x] items left” when there are actually more items available
+* countdown timers, such as “only [x] hours left” when that claim isn’t true
+* claims about how many people bought a particular product, such as “[x] people bought this product today” when that claim isn’t true
+
+### Product performance, marketing, and pricing claim requirements in the European Economic Area
+
+If you're a merchant located in the European Economic Area, or if you're a merchant targeting consumers in the European Economic Area, then consider the following rules:
+
+* In your product performance, marketing, and pricing claims, you must include VAT and import duties in the final prices displayed for products sold through your online store.
+* If you're offering a discount or price reduction, then you must clearly indicate the previous price of the product. European law also prohibits misleading or aggressive marketing claims. Learn more about the [European Pricing Indication Directive](/manual/compliance/legal/pricing-indication-directive).
+
+Review the following laws relevant to selling products to consumers in the European Economic Area:
+
+* [Unfair commercial practices](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32005L0029)([Directive 2005/29/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32005L0029))
+* [Better enforcement and modernization of Union consumer protection rules](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32019L2161) ([Directive 2019/2161/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32019L2161))
+* [Consumer protection in the indication of the prices of products offered to consumers](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52021XC1229%2806%29&qid=1640961745514) ([Article 6(a) of Directive 98/6/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52021XC1229%2806%29&qid=1640961745514))
+
+## Product disclosures
+
+Some jurisdictions might require you to display specific warnings to customers before they purchase certain products. Examples include product types that are governed by [Proposition 65 in California](https://oehha.ca.gov/proposition-65), [CE product marking in the European Union](https://europa.eu/youreurope/business/product-requirements/labels-markings/ce-marking/index_en.htm), choking hazard notices, and battery safety information. You can add and display these required, customer-facing warnings on your product pages using the [**Disclosures** product metafield and metaobject entries](/manual/products/product-disclosures). It's your responsibility to ensure that any product disclosures you publish comply with the applicable laws in your region.
+
+## Product recalls
+
+Many countries have rules about recalled products. Products are usually recalled when they’re determined to pose a danger to a customer’s health and safety. You're responsible for adhering to legal requirements about recalls in any jurisdiction where you conduct business. Depending on your store’s location and the locations of your customers, this could mean that you need to take the following actions:
+
+* If a product that you sell, or have sold in the past, is recalled, then you must immediately remove products that were recalled from your online store.
+* If required by law, then you need to notify customers who purchased a recalled product in accordance with those laws.
+
+You can find specific information online about product recalls, such as the following government websites:
+
+* [Asia-Pacific: The Association of Southeast Asian Nations (ASEAN) Product Alerts](https://aseanconsumer.org/product-alert)
+* [European Union: European Rapid Alert System for Dangerous Products (RAPEX)](https://ec.europa.eu/safety-gate-alerts/)
+* [OECD: The Organization for Economic Co-operation and Development's (OECD) global portal on product recalls](https://globalrecalls.oecd.org/#)
+* [United States: Recalls.gov](http://recalls.gov)
+
+## Consumer protection resources
+
+You can find specific information online about a jurisdiction's consumer awareness guidelines, including the following examples:
+
+* [Australia - Competition and Consumer Commission](https://www.accc.gov.au/consumers)
+* [Canada - Office of Consumer Affairs](https://www.ic.gc.ca/eic/site/oca-bc.nsf/eng/h_ca00000.html)
+* [European Commission](https://ec.europa.eu/info/law/law-topic/consumer-protection-law_en) - [Consumer Protection Law](https://ec.europa.eu/info/law/law-topic/consumer-protection-law_en)
+* [New Zealand - Consumer Protection](https://www.consumerprotection.govt.nz/)
+* [United States - Bureau of Consumer Protection](https://www.ftc.gov/about-ftc/bureaus-offices/bureau-consumer-protection)
+
+## When European Economic Area (EEA) law applies
+
+If you're located outside of the European Economic Area (EEA), but you target customers in the EEA, then these laws might apply to you. For example, if you advertise using local media in an EEA country, use a local EEA language other than English, or if you create a website with a EEA based domain name, then these laws might apply to you.
+
+
+
+

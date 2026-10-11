@@ -1,0 +1,1121 @@
+concern_id	placement	value	status	cite_ids	note
+SH-C-001	software	core: the Shopify account that every store requires, entered at accounts.shopify.com ("Your store")	shown	SH-S-0229;SH-S-2520	
+SH-C-001	decides	merchant: the person who signs up becomes the Store Owner; Shopify may reject or cancel an account at its discretion	shown	SH-S-0019;SH-S-0017	
+SH-C-001	legal	merchant: the Store Owner is bound by the Terms and responsible for the account and for others who access it	shown	SH-S-0228;SH-S-0238	
+SH-C-001	boundary	contract: Shopify Terms of Service accepted at sign-up, with the Primary Email Address as the channel for notices	shown	SH-S-0229;SH-S-0076	
+SH-C-001	reason	not shown	not shown		
+SH-C-002	software	not shown	not shown		The sources set the contracting party by contract (Terms of Service section 13); none places it in the software.
+SH-C-002	decides	operator, per market: the Terms assign the contracting entity by the region of the store's billing address	shown	SH-S-0001;SH-S-0004;SH-S-0006	
+SH-C-002	legal	platform company: Shopify Inc., a Canadian corporation, is a contracting party where the store's billing address is in the United States or Canada	shown	SH-S-0002;SH-S-0242	
+SH-C-002	legal	separate entities of the platform: Shopify Technology (USA) Inc. alongside Shopify Inc. for the United States or Canada; Shopify Commerce Singapore Pte. Ltd for Asia Pacific billing addresses; Shopify International Limited (Ireland) for all other jurisdictions	shown	SH-S-0003;SH-S-0004;SH-S-0005;SH-S-0006;SH-S-0007;SH-S-0241;SH-S-0243	
+SH-C-002	legal	separate entity of the platform: Shopify Payment Activities Inc., for regulated payment activities in Canada	shown	SH-S-0009	
+SH-C-002	boundary	contract: Terms of Service section 13 (contracting party and forum), with Shopify Inc. as billing agent that collects and remits fees and taxes for other contracting parties in some jurisdictions	shown	SH-S-0001;SH-S-0008;SH-S-0010	
+SH-C-002	reason	not shown	not shown		The help page on contracting entities links to https://www.shopify.com/legal/country-list, which redirected to the legal index on 2026-10-10.
+SH-C-003	software	core: organization-scoped settings (Organization, Users, Billing) and an OrganizationSettings section in the admin	shown	SH-S-1481;SH-S-1589	
+SH-C-003	decides	merchant: the organization owner and organization administrators manage organization settings, users and roles	shown	SH-S-0245;SH-S-1614	
+SH-C-003	decides	operator, per plan: free expansion stores are a Plus row ("Up to 9")	shown	SH-S-1996	
+SH-C-003	legal	not shown	not shown		
+SH-C-003	boundary	setting: admin settings with scope ORGANIZATION (Organization, Users, Billing)	shown	SH-S-1481;SH-S-1485	
+SH-C-003	reason	not shown	not shown		
+SH-C-004	software	core: business details under Settings > General, and business entities under Settings > Organization	shown	SH-S-0249;SH-S-1486	
+SH-C-004	decides	merchant: the merchant adds the entity (country, Individual, Company or Non-Profit, registration details)	shown	SH-S-0248;SH-S-2505;SH-S-2506;SH-S-2507	
+SH-C-004	decides	operator: the entity cannot be changed while financial services are active, and the billing country must match an active entity	shown	SH-S-0250;SH-S-0251	
+SH-C-004	legal	merchant: the business entity is the registered business, or the individual, that the store operates as	shown	SH-S-0248	
+SH-C-004	boundary	setting: Settings > General (Business details) and Settings > Organization; each entity needs its own market	shown	SH-S-0249;SH-S-0252	
+SH-C-004	reason	the entity is used to verify the business and determines what information financial services such as Shopify Payments require	shown	SH-S-0248	
+SH-C-005	software	core: a Shopify Payments and Markets feature that runs several legal entities from one store	shown	SH-S-0254;SH-S-0255	
+SH-C-005	decides	operator, per plan: only organizations on Shopify Plus and Shopify Enterprise Commerce	shown	SH-S-0253	
+SH-C-005	decides	merchant: the merchant registers each entity and assigns it to markets, which decide which entity processes a region's transactions	shown	SH-S-0257;SH-S-1878	
+SH-C-005	legal	merchant: each of the merchant's legal entities has its own Shopify Payments account, payout currency and bank account	shown	SH-S-0258	
+SH-C-005	boundary	setting: Settings > Organization (entities), Settings > Payments (one Shopify Payments account per entity), Markets (entity per market)	shown	SH-S-0257;SH-S-0258	
+SH-C-005	reason	domestic card processing in each entity's currency, avoiding international and foreign exchange fees	shown	SH-S-0256	
+SH-C-006	software	core: a required field on the sign-up page ("I'm located in:")	shown	SH-S-2509	
+SH-C-006	decides	merchant: the merchant picks a country from a list Shopify sets (233 options on 2026-10-07)	shown	SH-S-2509	
+SH-C-006	decides	operator: individuals and businesses in unsupported countries and regions cannot create an account	shown	SH-S-0304	
+SH-C-006	legal	merchant: the merchant must keep an accurate location and update it on changing jurisdiction	shown	SH-S-0038	
+SH-C-006	boundary	other: the sign-up form at accounts.shopify.com; the same list appears on partner organization creation	shown	SH-S-2509;SH-S-2510	
+SH-C-006	reason	not shown	not shown		Observation from the lists: the sign-up list omits Russia, which the business-entity country list (237) includes; neither list names Cuba, Iran, North Korea or Syria. Inference: the omissions follow the unsupported-regions list for four of them; no source states why Russia is omitted from sign-up.
+SH-C-007	software	core: sign-in at accounts.shopify.com (email, passkey, Google, Apple, Facebook, WhatsApp) and Settings > Users > Security	shown	SH-S-2512;SH-S-1484	
+SH-C-007	decides	merchant: the merchant chooses sign-in methods	shown	SH-S-2513	
+SH-C-007	decides	operator: two-step authentication is required to use Shopify Payments	shown	SH-S-0260	
+SH-C-007	legal	merchant: the merchant is responsible for keeping the password secure	shown	SH-S-0230	
+SH-C-007	boundary	other: accounts.shopify.com sign-in and sign-up methods; setting: Settings > Users > Security	shown	SH-S-1484	
+SH-C-007	reason	without two-step authentication the account and financial information are exposed to criminal attacks	shown	SH-S-0261	
+SH-C-008	software	core: identity verification prompts in the admin (Trust and Profile Assessment sections)	shown	SH-S-1608;SH-S-1594	
+SH-C-008	decides	operator: Shopify requests verification for Shopify Payments, Capital, Credit, suspicious activity and account recovery, and may restrict features until it is complete	shown	SH-S-0264;SH-S-0265	
+SH-C-008	legal	merchant: in most cases the store owner completes the verification	shown	SH-S-0263	
+SH-C-008	boundary	other: an admin prompt or emailed secure link; government photo ID and a liveness check	shown	SH-S-0263	
+SH-C-008	reason	protects against impersonation and account takeover and helps Shopify comply with financial regulations	shown	SH-S-0262	
+SH-C-009	software	core: Settings > Users and the Account section ("Users and permissions")	shown	SH-S-1482;SH-S-1540	
+SH-C-009	decides	merchant: the Store Owner creates staff accounts and sets their permissions	shown	SH-S-0021	
+SH-C-009	decides	operator, per plan: additional staff accounts are not included on Basic and limited to 5 and 15 on Grow and Advanced	shown	SH-S-1915;SH-S-0020	
+SH-C-009	legal	merchant: the Store Owner answers for staff compliance and for any breach by employees, agents or subcontractors	shown	SH-S-0231	
+SH-C-009	boundary	setting: Settings > Users; API: the StaffMember object through scope read_users, which needs Shopify approval	shown	SH-S-1146	
+SH-C-009	reason	not shown	not shown		
+SH-C-010	software	core: Settings > Users > Roles with predefined roles and assignable permission handles	shown	SH-S-1483;SH-S-1627	
+SH-C-010	decides	merchant: administrators manage users and roles	shown	SH-S-0247	
+SH-C-010	decides	platform at build: Shopify defines the permission handles an organization can assign (124 captured)	shown	SH-S-1844	
+SH-C-010	decides	operator, per plan: custom user groups are a Plus row	shown	SH-S-2001	
+SH-C-010	legal	merchant: the Store Owner answers for the actions of staff	shown	SH-S-0231	
+SH-C-010	boundary	setting: Settings > Users > Roles; organization-assignable store permissions	shown	SH-S-1483	
+SH-C-010	reason	not shown	not shown		
+SH-C-011	software	core: collaborator access requests with section-level permissions (18 sections captured)	shown	SH-S-1613;SH-S-1632	
+SH-C-011	decides	merchant: the merchant chooses which outside parties get admin access and at what level	shown	SH-S-0239;SH-S-0246	
+SH-C-011	decides	operator, per plan: inviting collaborators is included on all plans in the public table	shown	SH-S-1916	
+SH-C-011	legal	partner: the relationship is between the merchant and the third party; Shopify is not obliged to intervene	shown	SH-S-0240	
+SH-C-011	boundary	other: the collaborator request form listing permission sections; contract: the Store Owner remains responsible for subcontractors	shown	SH-S-1632;SH-S-0231	
+SH-C-011	reason	not shown	not shown		
+SH-C-012	software	core: MerchantAuditLog section in the admin and the audit_events/admin_api_activity webhook	shown	SH-S-1581;SH-S-1157	
+SH-C-012	decides	not shown	not shown		
+SH-C-012	legal	not shown	not shown		
+SH-C-012	boundary	event: webhook audit_events/admin_api_activity; API: scope read_audit_events	shown	SH-S-1157;SH-S-0947	
+SH-C-012	reason	not shown	not shown		
+SH-C-013	software	core: Settings > General and the Store properties group of the GraphQL Admin API	shown	SH-S-1486;SH-S-0789	
+SH-C-013	decides	merchant: staff with the "Manage settings" permission	shown	SH-S-1761	
+SH-C-013	legal	merchant: the merchant must publish contact information, terms, refund and shipping policies on the store	shown	SH-S-0014	
+SH-C-013	boundary	API: GraphQL Admin API (Store properties); event: webhook shop/update; setting: Settings > General	shown	SH-S-0789;SH-S-1357	
+SH-C-013	reason	not shown	not shown		
+SH-C-014	software	core: inactive-account and store-unavailable routes in the admin ("Reactivate your store")	shown	SH-S-1571	
+SH-C-014	decides	merchant: the merchant cancels by contacting Shopify Support	shown	SH-S-0232	
+SH-C-014	decides	operator: Shopify may suspend or terminate an account for any reason, and freezes stores after unpaid fees	shown	SH-S-0074;SH-S-0035	
+SH-C-014	decides	operator: Shopify can place a store in restricted access, without prior communication, when it detects activity that might not be legitimate commerce; the storefront becomes unavailable and the merchant can appeal from the admin	shown	SH-S-0658;SH-S-0659;SH-S-0660;SH-S-0661	
+SH-C-014	legal	merchant: obligations from transactions before termination remain the merchant's	shown	SH-S-0233	
+SH-C-014	boundary	contract: Terms of Service section 14; Shopify Support; appeals under the store-termination help page	shown	SH-S-3136;SH-S-2900	
+SH-C-014	reason	not shown	not shown		
+SH-C-015	software	core: Settings > Plan and the subscription checkout in the admin	shown	SH-S-1487;SH-S-1591	
+SH-C-015	decides	operator, per plan: Shopify sets plan prices and the features each plan includes	shown	SH-S-1902;SH-S-2076	
+SH-C-015	decides	merchant: the merchant chooses a plan	shown	SH-S-1743	
+SH-C-015	legal	platform company: subscription fees are owed to the Shopify Contracting Party under the Terms	shown	SH-S-0234;SH-S-0001	
+SH-C-015	boundary	setting: Settings > Plan; other: subscription charges on the Shopify bill (charge category SUBSCRIPTION_FEE)	shown	SH-S-2114	
+SH-C-015	reason	not shown	not shown		The public pricing page lists Basic at $39 USD/mo while the admin plan table of one captured store and the store's billing-plans query list $27; Inference: plan prices vary by store or region, but no source read states the rule.
+SH-C-016	software	core: Settings > Billing (organization-scoped for organizations)	shown	SH-S-1485;SH-S-1549	
+SH-C-016	decides	operator: Shopify sets fees and may change them on 30 days' notice; bills are issued every 30 days	shown	SH-S-0075;SH-S-0034	
+SH-C-016	decides	merchant: the merchant keeps an authorized payment method on file and may choose a local billing currency where supported	shown	SH-S-0268	
+SH-C-016	legal	platform company: the Shopify Contracting Party, with Shopify Inc. acting as billing agent in some jurisdictions	shown	SH-S-0001;SH-S-0008	
+SH-C-016	boundary	other: Shopify bills and invoices (charge categories), payment methods for bills; contract: the store can be frozen after 28 days unpaid	shown	SH-S-2101;SH-S-0035	
+SH-C-016	reason	most bills are in US dollars "for accounting reasons"	shown	SH-S-0266;SH-S-0033	
+SH-C-017	software	core: the Shopify bill and its billing profile	shown	SH-S-0279	
+SH-C-017	decides	outside rules: the tax rate follows the billing address (for example 15% VAT in Saudi Arabia and 5% in the UAE)	shown	SH-S-0036;SH-S-0277	
+SH-C-017	decides	merchant: a VAT-registered merchant can enter a tax ID to be exempted where the help page allows it	shown	SH-S-0278	
+SH-C-017	legal	merchant: the merchant is responsible for taxes on Shopify's charges and self-remits where Shopify does not charge them	shown	SH-S-0235	
+SH-C-017	legal	platform company: where Shopify charges these taxes, Shopify Inc. as billing agent may collect and remit them	shown	SH-S-0008	
+SH-C-017	boundary	setting: Settings > Billing > Billing profile > Tax registration; other: charge category "Taxes" in the expense report	shown	SH-S-0279;SH-S-2122	
+SH-C-017	reason	not shown	not shown		
+SH-C-018	software	core: charged on the Shopify bill as "Transaction fees"	shown	SH-S-2119	
+SH-C-018	decides	operator, per plan: 2%, 1%, 0.6% and 0.2% on Basic, Grow, Advanced and Plus	shown	SH-S-1939;SH-S-0273	
+SH-C-018	decides	operator: not charged on Shopify Payments, Shop Pay, Shop Pay Installments, manual methods or POS orders; charged on store credit and gift card amounts for stores created on or after 12 May 2025	shown	SH-S-0274;SH-S-0276;SH-S-0275	
+SH-C-018	legal	platform company: Transaction Fees are owed to the Shopify Contracting Party under the Terms	shown	SH-S-0032	
+SH-C-018	boundary	other: the Shopify bill (charge category ORDER_COMMISSION)	shown	SH-S-2119	
+SH-C-018	reason	the fees "cover the cost for Shopify to provide a secure checkout platform and integrate with external payment providers"	shown	SH-S-0272	
+SH-C-019	software	core: Shopify's billing (Shopify App Pricing or the Billing API) adds app charges to the merchant's Shopify invoice	shown	SH-S-0281;SH-S-0269	
+SH-C-019	decides	other: the app developer sets the plans and prices "in the Partner Dashboard"; the merchant approves the charges	shown	SH-S-0285;SH-S-1772	
+SH-C-019	legal	app developer: the developer must obtain merchant consent and bill under its merchant agreement; refunds are requested from the developer	shown	SH-S-0286;SH-S-0271	
+SH-C-019	legal	platform company: Shopify collects the charge, pays out the developer's share and handles chargebacks	shown	SH-S-0282;SH-S-0283	
+SH-C-019	boundary	API: GraphQL Admin API Billing group; event: webhooks app_subscriptions/update and app_purchases_one_time/update; charge category APPLICATION_FEE; revenue share under the Partner Program Agreement	shown	SH-S-0769;SH-S-1156;SH-S-2087;SH-S-0287	
+SH-C-019	reason	Shopify App Pricing "creates a predictable, trustworthy, and standardized experience for app users"; apps on the App Store must use a Shopify billing solution	shown	SH-S-0280;SH-S-0284	
+SH-C-020	software	core: Products in the admin and the Products API	shown	SH-S-1509;SH-S-0931;SH-S-1050	
+SH-C-020	decides	merchant: the merchant creates and manages products	shown	SH-S-1665	
+SH-C-020	decides	operator, per plan: unlimited products on every plan	shown	SH-S-1908	
+SH-C-020	legal	merchant: the merchant is responsible for the goods and services it sells; Shopify keeps a licence to the merchant's Materials and may refuse or remove them	shown	SH-S-0236;SH-S-0042;SH-S-0031	
+SH-C-020	boundary	API: read_products and write_products scopes; event: products/create, products/update and products/delete webhooks; other: UCP catalog search and lookup	shown	SH-S-1051;SH-S-1319;SH-S-2535	
+SH-C-020	reason	not shown	not shown		
+SH-C-021	software	core: Collections in the admin and the Collection API	shown	SH-S-1510;SH-S-0918	
+SH-C-021	decides	merchant: the merchant builds collections	shown	SH-S-1510	
+SH-C-021	legal	not shown	not shown		
+SH-C-021	boundary	API: products and collections API; event: collections/create, update and delete webhooks	shown	SH-S-0784;SH-S-1171	
+SH-C-021	reason	not shown	not shown		
+SH-C-022	software	core: Inventory in the admin and the Inventory API; inventory management on every plan	shown	SH-S-1511;SH-S-0777;SH-S-1913	
+SH-C-022	decides	merchant: the merchant adjusts inventory, choosing from Shopify's list of adjustment reasons	shown	SH-S-1842;SH-S-2861	
+SH-C-022	legal	not shown	not shown		
+SH-C-022	boundary	API: read_inventory and write_inventory scopes; event: inventory item and inventory level webhooks	shown	SH-S-0997;SH-S-1253	
+SH-C-022	reason	not shown	not shown		
+SH-C-023	software	core: Transfers and Purchase orders under Products, with transfer and shipment APIs	shown	SH-S-1513;SH-S-1512;SH-S-0924	
+SH-C-023	decides	merchant: staff with transfer permissions manage transfers and shipments	shown	SH-S-1675	
+SH-C-023	legal	not shown	not shown		
+SH-C-023	boundary	API: inventory shipment and purchase order scopes; event: inventory_shipments webhooks	shown	SH-S-1000;SH-S-1260	
+SH-C-023	reason	not shown	not shown		
+SH-C-024	software	core: Locations in settings and the Location API; the number of inventory locations is a plan row	shown	SH-S-1493;SH-S-0925;SH-S-1914	
+SH-C-024	decides	merchant: the merchant adds and activates locations	shown	SH-S-1835	
+SH-C-024	decides	operator, per plan: the number of inventory locations is a plan row	shown	SH-S-1914	
+SH-C-024	legal	not shown	not shown		
+SH-C-024	boundary	setting: Settings > Locations; API: read_locations and write_locations; event: locations webhooks	shown	SH-S-1493;SH-S-1012;SH-S-1278	
+SH-C-024	reason	not shown	not shown		
+SH-C-025	software	core: Gift cards in the admin, sold on every plan; redeemable payment extensions let third-party gift cards be accepted	shown	SH-S-1514;SH-S-1956;SH-S-2253	
+SH-C-025	decides	merchant: the merchant issues and manages gift cards	shown	SH-S-0676	
+SH-C-025	legal	merchant: the merchant is legally responsible for issuing and managing gift cards, for handling the amounts loaded (including escrow where the law requires) and for daily funds flow; Shopify provides software only	shown	SH-S-0676;SH-S-0677;SH-S-0678	
+SH-C-025	boundary	contract: Gift Card & Store Credit Service Terms; API: gift card scopes	shown	SH-S-2156;SH-S-0995	
+SH-C-025	reason	not shown	not shown		
+SH-C-026	software	core: store credit accounts, with refund-to-store-credit permissions	shown	SH-S-1077;SH-S-1651	
+SH-C-026	decides	merchant: the merchant issues store credit	shown	SH-S-0676	
+SH-C-026	legal	merchant: the merchant is legally responsible for store credit and the amounts it represents	shown	SH-S-0676;SH-S-0677	
+SH-C-026	boundary	contract: Gift Card & Store Credit Service Terms; API: store credit account scopes	shown	SH-S-2156;SH-S-1076	
+SH-C-026	reason	not shown	not shown		For stores created on or after May 12, 2025, orders paid with store credit or gift cards carry third-party transaction fees (SH-S-0559).
+SH-C-027	software	core: Files under Content in the admin	shown	SH-S-1525;SH-S-0987	
+SH-C-027	decides	merchant: the merchant uploads and manages files	shown	SH-S-1717	
+SH-C-027	legal	not shown	not shown		
+SH-C-027	boundary	API: read_files and write_files scopes	shown	SH-S-0987;SH-S-0988	
+SH-C-027	reason	not shown	not shown		
+SH-C-028	software	core: metafields and metaobjects (Settings > Metafields and metaobjects, Content > Metaobjects)	shown	SH-S-1500;SH-S-1524;SH-S-0779	
+SH-C-028	decides	merchant: the merchant defines custom data; apps also define it	shown	SH-S-1709;SH-S-2666	
+SH-C-028	legal	not shown	not shown		
+SH-C-028	boundary	API: metaobject scopes; event: metafield definition webhooks	shown	SH-S-1026;SH-S-1286	
+SH-C-028	reason	not shown	not shown		
+SH-C-029	software	core: Online Store themes and the theme editor; themes are sold in the Theme Store	shown	SH-S-1907;SH-S-0826;SH-S-3178	
+SH-C-029	decides	merchant: the merchant chooses, edits and publishes a theme	shown	SH-S-1753;SH-S-1378	
+SH-C-029	legal	partner: theme designers keep the intellectual property and provide theme support	shown	SH-S-0052;SH-S-0053	
+SH-C-029	boundary	API: theme scopes; event: themes webhooks; other: theme fees on the Shopify bill	shown	SH-S-1078;SH-S-1376;SH-S-2118	
+SH-C-029	reason	not shown	not shown		
+SH-C-030	software	core: pages and blog posts under Content	shown	SH-S-1527;SH-S-0917	
+SH-C-030	decides	merchant: the merchant writes pages and posts	shown	SH-S-1755	
+SH-C-030	legal	not shown	not shown		
+SH-C-030	boundary	API: online store pages scopes	shown	SH-S-1030;SH-S-1031	
+SH-C-030	reason	not shown	not shown		
+SH-C-031	software	core: Menus under Content	shown	SH-S-1526	
+SH-C-031	decides	merchant: the merchant builds menus	shown	SH-S-1708	
+SH-C-031	legal	not shown	not shown		
+SH-C-031	boundary	API: online store navigation scopes	shown	SH-S-1028;SH-S-1029	
+SH-C-031	reason	not shown	not shown		
+SH-C-032	software	core: Languages settings and translation APIs; storefront translation is a plan row; translatable resources are set by Shopify	shown	SH-S-1501;SH-S-0778;SH-S-1975;SH-S-2831	
+SH-C-032	decides	merchant: the merchant adds languages from Shopify's list (136 on the list read)	shown	SH-S-2862	
+SH-C-032	legal	not shown	not shown		
+SH-C-032	boundary	setting: Settings > Languages; API: locales and translations scopes; event: locales webhooks	shown	SH-S-1501;SH-S-1083;SH-S-1274	
+SH-C-032	reason	not shown	not shown		
+SH-C-033	software	core: Domains in settings; custom domains on every plan; domain fees billed by Shopify	shown	SH-S-1497;SH-S-1944;SH-S-2090	
+SH-C-033	decides	merchant: the merchant connects or buys domains; Shopify-bought domains renew each year while the account is active	shown	SH-S-1815;SH-S-0029	
+SH-C-033	legal	not shown	not shown		
+SH-C-033	boundary	setting: Settings > Domains; event: domains webhooks	shown	SH-S-1497;SH-S-1216	
+SH-C-033	reason	not shown	not shown		
+SH-C-034	software	core: Policies in settings	shown	SH-S-1503	
+SH-C-034	decides	merchant: the merchant writes its policies; the Terms require contact information, terms of service, refund and shipping policies	shown	SH-S-0014;SH-S-1846	
+SH-C-034	legal	merchant: the store's policies are the merchant's	shown	SH-S-0014	
+SH-C-034	boundary	setting: Settings > Policies; API: legal policies scopes	shown	SH-S-1503;SH-S-1007	
+SH-C-034	reason	not shown	not shown		
+SH-C-035	software	core: storefront search and discovery API; search and filter apps also exist	shown	SH-S-0867;SH-S-0983;SH-S-2694	
+SH-C-035	decides	not shown	not shown		
+SH-C-035	legal	not shown	not shown		
+SH-C-035	boundary	API: discovery scopes	shown	SH-S-0983;SH-S-0984	
+SH-C-035	reason	not shown	not shown		
+SH-C-036	software	core: unlimited web hosting and a free SSL certificate on every plan	shown	SH-S-1943;SH-S-1945	
+SH-C-036	decides	operator, per plan: included in all plans	shown	SH-S-1943	
+SH-C-036	legal	not shown	not shown		
+SH-C-036	boundary	not shown	not shown		
+SH-C-036	reason	not shown	not shown		
+SH-C-037	software	core: Catalogs under Markets, for market and B2B price lists	shown	SH-S-1529;SH-S-2950	
+SH-C-037	decides	merchant: the merchant builds catalogs	shown	SH-S-1727	
+SH-C-037	legal	not shown	not shown		
+SH-C-037	boundary	API: B2B and catalog resources	shown	SH-S-0768	
+SH-C-037	reason	not shown	not shown		
+SH-C-038	software	core: Combined Listings, a Plus feature	shown	SH-S-1994	
+SH-C-038	decides	operator, per plan: only on Shopify Plus	shown	SH-S-1994	
+SH-C-038	legal	not shown	not shown		
+SH-C-038	boundary	not shown	not shown		
+SH-C-038	reason	not shown	not shown		
+SH-C-039	software	core: Customers in the admin and the Customers API	shown	SH-S-1515;SH-S-0775;SH-S-1947	
+SH-C-039	decides	merchant: the merchant manages customer records	shown	SH-S-1683	
+SH-C-039	legal	merchant: the merchant is controller of its customers' personal data, Shopify the processor	shown	SH-S-0186	
+SH-C-039	boundary	API: read_customers and write_customers; event: customers webhooks	shown	SH-S-0971;SH-S-1196	
+SH-C-039	reason	not shown	not shown		
+SH-C-040	software	core: Segments under Customers, with segment template extensions	shown	SH-S-1516;SH-S-2203	
+SH-C-040	decides	merchant: the merchant creates segments	shown	SH-S-1948	
+SH-C-040	legal	not shown	not shown		
+SH-C-040	boundary	event: customer.joined_segment and customer.left_segment webhooks; extension point: segment templates	shown	SH-S-1185;SH-S-2203	
+SH-C-040	reason	not shown	not shown		
+SH-C-041	software	core: customer accounts, where customers sign in to manage orders, returns and profile; the Customer Account API	shown	SH-S-0741;SH-S-1490;SH-S-0836	
+SH-C-041	decides	merchant: the merchant sets account settings and sign-in options	shown	SH-S-1490	
+SH-C-041	decides	buyer: the customer signs in with a one-time code, without a password	shown	SH-S-0743	
+SH-C-041	legal	not shown	not shown		
+SH-C-041	boundary	setting: Settings > Customer accounts; API: Customer Account API; event: customer_account_settings/update; other: UCP identity linking	shown	SH-S-1490;SH-S-1189;SH-S-2538	
+SH-C-041	reason	not shown	not shown		
+SH-C-042	software	extension point: third-party identity providers and Multipass replace the default customer sign-in	shown	SH-S-0742;SH-S-0842	
+SH-C-042	decides	operator, per plan: connecting an identity provider is for Shopify Plus	shown	SH-S-0742	
+SH-C-042	decides	merchant: the merchant manages identity providers	shown	SH-S-1839	
+SH-C-042	legal	not shown	not shown		
+SH-C-042	boundary	other: identity provider connection in customer account settings	shown	SH-S-0742	
+SH-C-042	reason	not shown	not shown		
+SH-C-043	software	core: email, SMS and WhatsApp marketing consent stored on the customer, with consent mutations	shown	SH-S-0881;SH-S-0884	
+SH-C-043	decides	buyer: the customer subscribes or unsubscribes	shown	SH-S-0882	
+SH-C-043	legal	merchant: the merchant obtains consents for tracking and marketing	shown	SH-S-0067	
+SH-C-043	boundary	event: marketing consent update webhooks	shown	SH-S-1205;SH-S-1206	
+SH-C-043	reason	not shown	not shown		
+SH-C-044	software	core: Companies under Customers and the B2B API; Shopify B2B is a plan row	shown	SH-S-1517;SH-S-0768;SH-S-1912	
+SH-C-044	decides	merchant: the merchant chooses a blended store or a B2B-only store and manages companies	shown	SH-S-0740;SH-S-1692	
+SH-C-044	legal	not shown	not shown		
+SH-C-044	boundary	API: companies scopes; event: companies webhooks	shown	SH-S-0965;SH-S-1174	
+SH-C-044	reason	not shown	not shown		
+SH-C-045	software	core: payment terms on orders and drafts (fixed, net or event-based); payment terms can also be set by the Payment Customization Function	shown	SH-S-1040;SH-S-0589	
+SH-C-045	decides	merchant: staff with permission set payment terms	shown	SH-S-1637	
+SH-C-045	legal	not shown	not shown		
+SH-C-045	boundary	API: payment terms scopes; event: payment_terms and payment_schedules/due webhooks	shown	SH-S-1041;SH-S-1304	
+SH-C-045	reason	not shown	not shown		
+SH-C-046	software	core: the cart, with Cart APIs and cart webhooks; UCP cart operations for agents	shown	SH-S-0771;SH-S-1159;SH-S-2533	
+SH-C-046	decides	merchant: cart quantity limits and cart permalinks	shown	SH-S-2877;SH-S-2882	
+SH-C-046	legal	not shown	not shown		
+SH-C-046	boundary	API: Cart API and checkout scopes; event: carts webhooks	shown	SH-S-1101;SH-S-1160	
+SH-C-046	reason	not shown	not shown		
+SH-C-047	software	core: Shopify Checkout, which the merchant must use for online store sales	shown	SH-S-0015;SH-S-1489;SH-S-1909	
+SH-C-047	decides	platform at build: orders may not be processed outside Shopify's Checkout; apps need written authorization to use an alternative checkout	shown	SH-S-0016;SH-S-0216	
+SH-C-047	decides	merchant: the merchant sets checkout form options, tipping, address collection and order processing	shown	SH-S-2871	
+SH-C-047	decides	operator, per plan: high-volume checkout is a Plus row	shown	SH-S-1993	
+SH-C-047	legal	merchant: the merchant is the seller and merchant of record for the transaction	shown	SH-S-0011;SH-S-0013	
+SH-C-047	boundary	setting: Settings > Checkout; event: checkouts webhooks; other: UCP checkout capability	shown	SH-S-1489;SH-S-1162;SH-S-2530	
+SH-C-047	reason	not shown	not shown		
+SH-C-048	software	core: checkout branding and checkout and accounts configurations	shown	SH-S-0773;SH-S-0772	
+SH-C-048	decides	merchant: the merchant customizes checkout and accounts pages in the checkout editor	shown	SH-S-2872	
+SH-C-048	decides	operator, per plan: checkout customization is a plan row	shown	SH-S-1970	
+SH-C-048	decides	other: agentic Participating Channels may customize Shopify Checkout and override the merchant's branding	shown	SH-S-0628	
+SH-C-048	legal	not shown	not shown		
+SH-C-048	boundary	API: checkout branding and configuration scopes	shown	SH-S-0961;SH-S-0960	
+SH-C-048	reason	not shown	not shown		
+SH-C-049	software	extension point: checkout UI extensions, functions, web pixels and payments extensions, built by apps	shown	SH-S-0679;SH-S-2181;SH-S-0821	
+SH-C-049	decides	merchant: the merchant places extensions in the checkout editor; Shopify can disable extensions	shown	SH-S-0069;SH-S-0070	
+SH-C-049	legal	merchant: the merchant is responsible for its own compliance when it uses checkout extensions	shown	SH-S-0070	
+SH-C-049	legal	app developer: extensions come from app developers, who are solely responsible for their applications	shown	SH-S-0217	
+SH-C-049	boundary	other: upgrade-safe checkout extensions in apps; contract: Terms of Service 9.13 Shopify Checkout Extensibility	shown	SH-S-0680;SH-S-3185	
+SH-C-049	reason	not shown	not shown		
+SH-C-050	software	core: Abandoned checkouts under Orders, with recovery on every plan	shown	SH-S-1538;SH-S-1954	
+SH-C-050	decides	merchant: the merchant manages recovery	shown	SH-S-1836	
+SH-C-050	legal	not shown	not shown		
+SH-C-050	boundary	event: checkouts webhooks	shown	SH-S-1164	
+SH-C-050	reason	not shown	not shown		
+SH-C-051	software	core: bot protection for the Online Store checkout	shown	SH-S-0745;SH-S-1556	
+SH-C-051	decides	operator, per plan: only for Shopify Plus, activated by contacting Shopify Plus Support	shown	SH-S-0744;SH-S-0746	
+SH-C-051	legal	not shown	not shown		
+SH-C-051	boundary	not shown	not shown		
+SH-C-051	reason	a fairness control so that customers can buy scarce products during flash sales	shown	SH-S-0745	
+SH-C-052	software	extension point: the Cart and Checkout Validation Function API	shown	SH-S-0853;SH-S-0681	
+SH-C-052	decides	merchant: the merchant installs and configures the function; Shopify executes it	shown	SH-S-0683	
+SH-C-052	legal	app developer: built by app developers	shown	SH-S-0683	
+SH-C-052	boundary	API: validations scopes; extension point: validation function settings	shown	SH-S-0953;SH-S-2212	
+SH-C-052	reason	not shown	not shown		
+SH-C-053	software	extension point: the Cart Transform Function API	shown	SH-S-0854;SH-S-2225	
+SH-C-053	decides	merchant: the merchant installs and configures the function; Shopify executes it	shown	SH-S-0683	
+SH-C-053	legal	app developer: built by app developers	shown	SH-S-0683	
+SH-C-053	boundary	API: cart transform scopes	shown	SH-S-0950	
+SH-C-053	reason	not shown	not shown		
+SH-C-054	software	core: Orders in the admin and the Orders API; UCP order capability for agents	shown	SH-S-1507;SH-S-0929;SH-S-2534	
+SH-C-054	decides	merchant: the merchant manages and fulfills orders	shown	SH-S-1633	
+SH-C-054	legal	merchant: the contract of sale is between the merchant and the customer; the merchant is responsible for the transaction, fulfillment, refunds and returns	shown	SH-S-0011;SH-S-0012	
+SH-C-054	boundary	API: read_orders and write_orders; event: orders webhooks	shown	SH-S-1034;SH-S-1294	
+SH-C-054	reason	not shown	not shown		
+SH-C-055	software	core: Drafts under Orders and the draftOrder API	shown	SH-S-1508;SH-S-0871	
+SH-C-055	decides	merchant: staff create and send drafts	shown	SH-S-1655	
+SH-C-055	legal	not shown	not shown		
+SH-C-055	boundary	API: draft order scopes; event: draft_orders webhooks	shown	SH-S-0985;SH-S-1219	
+SH-C-055	reason	not shown	not shown		
+SH-C-056	software	core: order editing and customer edit requests	shown	SH-S-0887;SH-S-1032	
+SH-C-056	decides	merchant: staff edit orders	shown	SH-S-1819	
+SH-C-056	decides	buyer: customers can request edits, which the merchant approves or declines	shown	SH-S-1326;SH-S-1327	
+SH-C-056	legal	not shown	not shown		
+SH-C-056	boundary	event: orders/edited and requested_order_edit webhooks	shown	SH-S-1296	
+SH-C-056	reason	not shown	not shown		
+SH-C-057	software	core: refunds to the original payment or to store credit	shown	SH-S-0932;SH-S-1649	
+SH-C-057	decides	merchant: the merchant issues refunds	shown	SH-S-1647	
+SH-C-057	legal	merchant: refunds are the merchant's responsibility; currency conversion and card fees are not returned on a refund	shown	SH-S-0012;SH-S-0554	
+SH-C-057	boundary	event: refunds/create webhook	shown	SH-S-1325	
+SH-C-057	reason	not shown	not shown		
+SH-C-058	software	core: returns and exchanges, with return reasons from a Shopify list; return apps also exist	shown	SH-S-0874;SH-S-2860;SH-S-2623	
+SH-C-058	decides	merchant: the merchant approves or declines returns	shown	SH-S-1877;SH-S-1329	
+SH-C-058	decides	buyer: customers request returns	shown	SH-S-0888	
+SH-C-058	legal	merchant: returns are the merchant's responsibility	shown	SH-S-0012	
+SH-C-058	boundary	API: returns scopes; event: returns webhooks	shown	SH-S-1061;SH-S-1329	
+SH-C-058	reason	not shown	not shown		
+SH-C-059	software	core: fraud analysis on orders; Shopify Payments can block some high-risk checkout attempts	shown	SH-S-0747;SH-S-0750;SH-S-1940	
+SH-C-059	decides	operator, per plan: fraud recommendations on Grow or higher, or with Shopify Payments	shown	SH-S-0749	
+SH-C-059	decides	merchant: the merchant reviews high-risk orders and decides whether to cancel or capture	shown	SH-S-0747	
+SH-C-059	decides	outside rules: the card-issuing bank decides whether to reverse funds, not Shopify	shown	SH-S-0748	
+SH-C-059	legal	merchant: Shopify does not cover charge reversals from banks	shown	SH-S-0748	
+SH-C-059	boundary	event: orders/risk_assessment_changed webhook; other: fraud apps in the App Store	shown	SH-S-1301;SH-S-2718	
+SH-C-059	reason	not shown	not shown		
+SH-C-060	software	core: order routing rules that assign orders to locations	shown	SH-S-0751	
+SH-C-060	software	extension point: order routing location rule functions	shown	SH-S-2237;SH-S-0858	
+SH-C-060	decides	merchant: the merchant uses the default rules or customizes them	shown	SH-S-0751	
+SH-C-060	legal	not shown	not shown		
+SH-C-060	boundary	event: fulfillment_orders/order_routing_complete webhook	shown	SH-S-1245	
+SH-C-060	reason	not shown	not shown		
+SH-C-061	software	core: packing slip templates	shown	SH-S-1037	
+SH-C-061	software	extension point: admin print actions	shown	SH-S-2196	
+SH-C-061	decides	merchant: the merchant edits templates and prints	shown	SH-S-1036	
+SH-C-061	legal	not shown	not shown		
+SH-C-061	boundary	API: packing slip template scopes	shown	SH-S-1036	
+SH-C-061	reason	not shown	not shown		
+SH-C-062	software	core: the Payment providers area of Settings > Payments, where every payment method a store accepts is activated	shown	SH-S-1488;SH-S-0319;SH-S-0374	
+SH-C-062	decides	merchant: the merchant activates or changes providers and payment methods	shown	SH-S-0319;SH-S-0374	
+SH-C-062	decides	operator, per market: which gateways a store can activate depends on its region; where Shopify Payments is supported, standalone Stripe is not offered	shown	SH-S-0584;SH-S-0383;SH-S-0384	
+SH-C-062	legal	partner: every Shopify-supported payment method relies on third-party providers, which set their own fees and product rules	shown	SH-S-0308;SH-S-0309	
+SH-C-062	boundary	setting: Settings > Payments, guarded by the payment-settings staff permission	shown	SH-S-1488;SH-S-1845	
+SH-C-062	reason	not shown	not shown		
+SH-C-063	software	core: "Shopify's integrated payments solution", described as the only payment gateway designed and operated by Shopify	shown	SH-S-0078;SH-S-0325;SH-S-0382;SH-S-1590	
+SH-C-063	decides	operator, per market: available only to businesses located in a supported country (the Designated Country); 40 country pages are listed	shown	SH-S-0323;SH-S-0088;SH-S-0107;SH-S-2971	
+SH-C-063	decides	operator: eligibility also turns on business type, products, age and the Shopify Payments terms for the country	shown	SH-S-0325;SH-S-0326;SH-S-0327;SH-S-0328	
+SH-C-063	decides	merchant: only the store owner can activate or switch to Shopify Payments; depending on location, Shopify may create the account at sign-up	shown	SH-S-0369;SH-S-0022	
+SH-C-063	legal	platform company: Shopify Inc. supplies the Payments Services where the Designated Country is Canada	shown	SH-S-0146;SH-S-0080	
+SH-C-063	legal	separate entities of the platform: Shopify Payments (USA) Inc. for the United States; Shopify International Limited (Ireland) for the European countries, Mexico, Norway, Switzerland, the United Arab Emirates and the United Kingdom; Shopify Commerce Singapore Pte. Ltd. for Australia, Hong Kong, Japan, New Zealand and Singapore; none is licensed as a bank, payment institution or money services business	shown	SH-S-0147;SH-S-0148;SH-S-0164;SH-S-0149;SH-S-0165;SH-S-0080	
+SH-C-063	boundary	contract: Shopify Payments Terms of Service (Part I global, Part II regional), with the Payment Processor Terms accepted at the same time	shown	SH-S-2129;SH-S-0124;SH-S-0144	
+SH-C-063	boundary	API: Shopify Payments resources in the GraphQL Admin API and Shopify Payments access scopes	shown	SH-S-0788;SH-S-1068	
+SH-C-063	reason	it "arranges for the financial services you need to accept payments", so the merchant does not set up a separate provider or merchant account	shown	SH-S-0078;SH-S-0320	
+SH-C-064	software	outside platform: processing and settlement of transactions are carried out by Payment Processors and their Financial Services Providers	shown	SH-S-0082;SH-S-0086;SH-S-0316	
+SH-C-064	software	core: Shopify's centralized payment service tracks payment attempts with idempotency keys so that a single request goes to financial partners (engineering post, 2022)	shown	SH-S-0452;SH-S-0453	
+SH-C-064	decides	operator: Shopify determines which Payment Processor accounts are opened and which processor handles each transaction, may change processors, and routes each payment to the processor most likely to authorize it	shown	SH-S-0084;SH-S-0085;SH-S-0389	
+SH-C-064	decides	operator, per market: the Payment Processor List names the processors and terms for each Designated Country	shown	SH-S-0143;SH-S-3153;SH-S-3154;SH-S-3155	
+SH-C-064	decides	operator: if a Payment Processor ends its terms, Shopify may offer a substitute processor integrated with the Shopify Payments Account; Shopify Payments can also be terminated at a processor's or network's request	shown	SH-S-0116;SH-S-0117	
+SH-C-064	legal	partner: Stripe entities (Stripe, Inc.; Stripe Payments Canada, Ltd.; Stripe Payments Mexico; Stripe Payments Europe, Limited; Stripe Japan, Ltd.; Stripe Payments Australia; Stripe Payments Singapore), PayPal (PayPal, Inc.; PayPal (Europe)), Adyen N.V., AIHK Markets Limited, and a Bridge entity (an affiliate of Stripe) for all regions	shown	SH-S-0152;SH-S-0154;SH-S-0155;SH-S-0158;SH-S-0159;SH-S-0161;SH-S-0162;SH-S-0163;SH-S-0153;SH-S-0157;SH-S-0156;SH-S-0160;SH-S-0151;SH-S-0383	
+SH-C-064	legal	partner: the Payment Processor Terms are between the merchant and the processor; Shopify is not a party to them, although it has agreed to indemnify the processors for some or all merchant liabilities	shown	SH-S-0083;SH-S-0105;SH-S-0120	
+SH-C-064	boundary	contract: Payment Processor Terms, accepted with the Shopify Payments Terms; Shopify acts as the merchant's agent to deliver information and instructions to the processors	shown	SH-S-0144;SH-S-0105;SH-S-0079	
+SH-C-064	boundary	other: "fine-grained Semian identifier" per merchant country on the processor endpoint, so that a local outage in one country does not affect merchants in other countries (engineering post, 2022)	shown	SH-S-0451	
+SH-C-064	reason	processor routing "can improve authorization rates without any extra setup"	shown	SH-S-0389;SH-S-0577	
+SH-C-065	software	outside platform: funds settle into Payment Processor Accounts; the processor retains responsibility for settlement and funds in a Financial Services Provider's custody are paid out under the Payment Processor Terms	shown	SH-S-0093;SH-S-0118;SH-S-0105	
+SH-C-065	decides	other: the Payment Processors may hold funds while awaiting requested information, and hold funds or data when served with legal process; a creditor hold can be removed only by the processor	shown	SH-S-0106;SH-S-0123;SH-S-0355;SH-S-0356	
+SH-C-065	decides	operator: Shopify may hold payouts in reserve and place holds during reviews (see reserves)	shown	SH-S-0112;SH-S-0332	
+SH-C-065	legal	partner: Payment Processors and their Financial Services Providers hold and settle the funds; the Shopify entities are not licensed as a bank, payment institution or money services business	shown	SH-S-0093;SH-S-0118;SH-S-0080	
+SH-C-065	legal	other: the Shopify contracting entity takes "a first priority lien and security interest" on funds processed and deposited into the merchant's designated accounts	shown	SH-S-0111	
+SH-C-065	legal	partner: for Managed Markets orders, Shopify Payments processes the transaction and holds the money in a Global-e account, and Global-e holds funds to remit cross-border costs	shown	SH-S-0565;SH-S-0566	
+SH-C-065	boundary	contract: Shopify Payments Terms Part I C (Processing Transactions and Receiving Your Funds) and the Payment Processor Terms	shown	SH-S-3142;SH-S-0118	
+SH-C-065	boundary	API: read access to Shopify Payments bank accounts	shown	SH-S-1070	
+SH-C-065	reason	not shown	not shown		
+SH-C-066	software	not shown	not shown		The Payment Facilitator Terms describe a legal role inside Shopify Payments; no source places it in separate software.
+SH-C-066	decides	operator, per market: in certain Designated Countries a Shopify affiliate acts as Payment Facilitator; Shopify may add, remove or replace the Acquirer for any Designated Country and assign the supplement to a different Acquirer	shown	SH-S-0081;SH-S-0137;SH-S-0136	
+SH-C-066	decides	outside rules: the merchant may be terminated from a Payment Network if the Payfac is de-registered or the Acquirer loses its network trademark licence	shown	SH-S-0135	
+SH-C-066	legal	separate entities of the platform: Shopify Payments EU Limited (EU / EEA) and Shopify Payments UK Limited (United Kingdom), registered as Payment Facilitator and acting as agents of the Acquirer	shown	SH-S-0139;SH-S-0140;SH-S-0129;SH-S-0130	
+SH-C-066	legal	partner: the Acquirer, Adyen N.V., provides all licensed or regulated services	shown	SH-S-0141;SH-S-0138	
+SH-C-066	boundary	contract: Shopify Payments Facilitator Terms (Account Terms, Part I global terms, Part II regional terms)	shown	SH-S-3149;SH-S-3151;SH-S-0081	
+SH-C-066	reason	not shown	not shown		
+SH-C-067	software	not shown	not shown		
+SH-C-067	decides	outside rules: payment activities regulated under the Canadian Retail Payment Activities Act	shown	SH-S-0009;SH-S-0125	
+SH-C-067	legal	separate entity of the platform: Shopify Payment Activities Inc., registered with the Bank of Canada as a Payment Service Provider, is the contracting party for those activities	shown	SH-S-0125;SH-S-0009	
+SH-C-067	boundary	contract: Terms of Service section 13 (Regulated Payment Services (Canada)) and Shopify Payments Terms Part II B (Canada)	shown	SH-S-0009;SH-S-3146	
+SH-C-067	reason	not shown	not shown		
+SH-C-068	software	core: verification and risk sections in the admin (ProfileAssessment), with a KYC access scope and a KYC update webhook	shown	SH-S-1594;SH-S-1122;SH-S-1226	
+SH-C-068	decides	operator: Shopify evaluates the business when it applies and monitors risk throughout, and may decline, deactivate or restrict the account; review covers the history of other businesses the merchant operates	shown	SH-S-0331;SH-S-0332;SH-S-0337	
+SH-C-068	decides	other: Shopify's banking partners can require more information, and processors may hold funds until it is provided	shown	SH-S-0357;SH-S-0106	
+SH-C-068	decides	outside rules: Payment Facilitator identity and KYC checks; processors must report merchants to the MATCH list under card network rules	shown	SH-S-0132;SH-S-0098	
+SH-C-068	legal	partner: each Payment Processor may process personal data as an independent controller for KYC, AML and sanctions obligations	shown	SH-S-0099;SH-S-0100	
+SH-C-068	legal	platform company: Shopify processes government-issued identification to comply with know-your-customer and anti-money-laundering laws	shown	SH-S-0180	
+SH-C-068	boundary	API: read_financial_kyc_information scope and finance_kyc_information/update webhook; setting: Shopify Payments setup in Settings > Payments	shown	SH-S-1122;SH-S-1226;SH-S-1488	
+SH-C-068	reason	the store is held to a standard higher than card network thresholds because a few harmful merchants make every merchant on the platform look less trustworthy to banks and card networks	shown	SH-S-0333;SH-S-0334	
+SH-C-069	software	core: Finance > Payouts in the admin and the Shopify Payments payouts API	shown	SH-S-1569;SH-S-1069;SH-S-0788	
+SH-C-069	decides	merchant: payout schedule (daily, weekly or monthly) and payout account (bank account or Shopify Balance)	shown	SH-S-0342;SH-S-0347	
+SH-C-069	decides	operator, per market: settlement times vary by country and risk level, minimum payout amounts apply in certain countries, and some countries limit payout options	shown	SH-S-0340;SH-S-0339;SH-S-0342	
+SH-C-069	decides	operator, per plan: Multi-Currency Payouts only on some plans; Basic, Grow and Shopify plans are paid in the domestic currency only	shown	SH-S-0365	
+SH-C-069	legal	partner: funds in the Financial Services Provider's custody are paid out subject to the Payment Processor Terms	shown	SH-S-0118	
+SH-C-069	boundary	API: read_shopify_payments_payouts scope; setting: payout schedule and bank account in Shopify Payments settings; staff permission to view payouts	shown	SH-S-1069;SH-S-1891;SH-S-0367	
+SH-C-069	reason	a change of payout destination pauses payouts for 3-5 business days "to protect your account from unauthorized access"	shown	SH-S-0345;SH-S-0578	
+SH-C-069	reason	bank timing after payout is outside Shopify's control	shown	SH-S-0341;SH-S-0314	
+SH-C-070	software	core: reserved funds are shown on the Shopify Payments payouts page	shown	SH-S-0579;SH-S-3000	
+SH-C-070	decides	operator: Shopify sets the terms of any reserve, and a risk assessment before expiry decides whether to lift, keep, reduce or raise it	shown	SH-S-0112;SH-S-0351;SH-S-0348	
+SH-C-070	decides	other: the payment processor places a creditor hold on legal notice and only the processor can remove it	shown	SH-S-0354;SH-S-0355;SH-S-0356	
+SH-C-070	legal	other: the Shopify contracting entity controls the Reserve Account; the merchant is not entitled to interest and has no right to direct the account or legal interest in the funds	shown	SH-S-0112;SH-S-0113	
+SH-C-070	boundary	contract: Shopify Payments Terms Part I C (Reserves); reserve terms are communicated by email	shown	SH-S-0112;SH-S-0349;SH-S-3142	
+SH-C-070	reason	reserves keep funds available for disputes and refunds	shown	SH-S-0350	
+SH-C-071	software	core: rates published per plan on the pricing page and charged with Shopify Payments; IC++ fees appear as a billing charge category	shown	SH-S-1930;SH-S-2094	
+SH-C-071	decides	operator, per market and plan: "Shopify Payments rates vary by plan type and market"	shown	SH-S-0378;SH-S-1932	
+SH-C-071	legal	other: Processing Fees are collected from the merchant by the Payment Processor on Shopify's behalf	shown	SH-S-0110	
+SH-C-071	boundary	contract: fee values are set in the merchant's Shopify Payments Terms of Service in the admin	shown	SH-S-0558;SH-S-0110	
+SH-C-071	reason	not shown	not shown		
+SH-C-072	software	core: Shopify Payments disputes in the admin and API, with dispute webhooks and a manage-disputes permission	shown	SH-S-1071;SH-S-1214;SH-S-1841	
+SH-C-072	decides	buyer: the cardholder opens a dispute with their bank	shown	SH-S-0395	
+SH-C-072	decides	outside rules: the card issuer reviews evidence and resolves the chargeback; network dispute resolution programs resolve some disputes automatically	shown	SH-S-0396;SH-S-0397	
+SH-C-072	decides	operator: Shopify may enroll the merchant in automated dispute resolution programs when it sees elevated risk; the merchant or Shopify may contest chargebacks	shown	SH-S-0114;SH-S-0115	
+SH-C-072	legal	merchant: the merchant is liable for refunded, reversed or charged-back transactions, and the amount is deducted from the next payout; Shopify offers no dispute rights to customers	shown	SH-S-0092;SH-S-0398;SH-S-0094	
+SH-C-072	boundary	API: dispute and dispute-evidence access scopes; event: disputes/create and disputes/update webhooks	shown	SH-S-1141;SH-S-1214;SH-S-1215	
+SH-C-072	reason	not shown	not shown		
+SH-C-073	software	core: free chargeback protection on eligible orders, with an eligibility-change webhook	shown	SH-S-0400;SH-S-1302	
+SH-C-073	decides	operator: Shopify evaluates each order authorized through Shopify Payments in its sole discretion; only Shopify Payments transactions are covered	shown	SH-S-0404;SH-S-0405;SH-S-0380	
+SH-C-073	decides	operator, per market: the merchant warrants it operates a business in the United States processing online card-not-present transactions with Shopify Payments	shown	SH-S-0403	
+SH-C-073	legal	platform company: Shopify Inc. is the warranty issuer; Shopify Protect is not insurance	shown	SH-S-0401;SH-S-0402	
+SH-C-073	boundary	contract: Shopify Protect for Shopify Payments Terms of Service; event: orders/shopify_protect_eligibility_changed	shown	SH-S-2131;SH-S-1302	
+SH-C-073	reason	not shown	not shown		
+SH-C-074	software	core: an accelerated checkout that saves customer details; the information is stored on Shopify's PCI compliant servers	shown	SH-S-0406;SH-S-0407;SH-S-0852	
+SH-C-074	decides	buyer: the customer chooses to save their information	shown	SH-S-0406;SH-S-0413	
+SH-C-074	decides	merchant: the merchant offers Shop Pay as a payment method and accepts the Shop Pay Merchant Terms by doing so	shown	SH-S-0145	
+SH-C-074	legal	platform company: Shopify Inc. and its affiliates; Shopify is not a party to the sale, Shop Pay is not a payment processing service, and the merchant resolves disputes	shown	SH-S-0411;SH-S-0408;SH-S-0409;SH-S-0410	
+SH-C-074	legal	platform company: for Shop and Shop Pay, Shopify acts as data controller toward the customer	shown	SH-S-0244	
+SH-C-074	boundary	contract: Shop Pay Merchant Terms; API: Shop Pay Wallet API; other: UCP payment handler dev.shopify.shop_pay	shown	SH-S-2125;SH-S-0852;SH-S-2542	
+SH-C-074	reason	faster, more convenient checkout for returning customers	shown	SH-S-0406	
+SH-C-075	software	core: offered at checkout through Shop Pay; orders are paid out with Shopify Payments payouts	shown	SH-S-0317;SH-S-0318;SH-S-2962	
+SH-C-075	decides	operator, per market: stores with Shopify Payments and Shop Pay and a business entity in the United States, Canada or the United Kingdom	shown	SH-S-0414;SH-S-0415	
+SH-C-075	legal	partner: Affirm, under the Merchant Agreement (Shop Pay Installments)	shown	SH-S-0126	
+SH-C-075	boundary	contract: Shop Pay Installments Terms and the Merchant Agreement with Affirm, in the regional parts of the Shopify Payments Terms; API: installments pricing scope	shown	SH-S-0126;SH-S-3148;SH-S-1112	
+SH-C-075	reason	more flexible payment options, higher conversion and average order value	shown	SH-S-0580	
+SH-C-076	software	extension point: payments extensions (five types) on Shopify's Payments Platform, using the Payments Apps API	shown	SH-S-0440;SH-S-0445;SH-S-0813	
+SH-C-076	decides	operator: only approved Partners can build them; Shopify approves each payments app and decides public listing; the required scopes are restricted	shown	SH-S-0440;SH-S-0442;SH-S-0444;SH-S-0446;SH-S-0291	
+SH-C-076	decides	operator, per plan: custom payments extensions only for eligible Shopify Plus merchants	shown	SH-S-0441	
+SH-C-076	decides	merchant: the merchant installs and activates the provider	shown	SH-S-0374	
+SH-C-076	legal	app developer: the Payments Partner, bound by the Partner Program Agreement and a revenue share agreement; a developer that stops supporting its app follows a wind-down of up to six months	shown	SH-S-0443;SH-S-0292;SH-S-0293	
+SH-C-076	boundary	API: Payments Apps API sessions (for example paymentSessionResolve) over mTLS	shown	SH-S-0906;SH-S-0450	
+SH-C-076	boundary	API: when Shopify is unreachable the app retries up to 18 times over 24 hours; when the app does not respond, Shopify retries	shown	SH-S-0447;SH-S-0448;SH-S-0449	
+SH-C-076	reason	approval exists so merchants can present a positive buyer experience	shown	SH-S-0442	
+SH-C-077	software	outside platform: PayPal Express Checkout is a Third Party Service; PayPal pays the merchant by its own methods	shown	SH-S-0023;SH-S-0311	
+SH-C-077	decides	operator: an account is created automatically at sign-up with the merchant's email, which is shared with PayPal	shown	SH-S-0416;SH-S-0417;SH-S-0022	
+SH-C-077	decides	operator, per market: in France and the United States PayPal is offered as PayPal Wallet through Shopify Payments	shown	SH-S-0312	
+SH-C-077	decides	merchant: the store owner completes or deactivates the account	shown	SH-S-0418	
+SH-C-077	legal	partner: PayPal, under its own terms	shown	SH-S-0023;SH-S-0024	
+SH-C-077	boundary	setting: Settings > Payments; contract: PayPal terms	shown	SH-S-2960;SH-S-0024	
+SH-C-077	reason	not shown	not shown		
+SH-C-078	software	outside platform: Apple Pay, Google Pay, Meta Pay and Amazon Pay are Third Party Services shown as accelerated checkout buttons	shown	SH-S-0025;SH-S-0026;SH-S-0027;SH-S-0028;SH-S-0419	
+SH-C-078	decides	merchant: the merchant activates the wallets and complies with their terms	shown	SH-S-0024;SH-S-0419	
+SH-C-078	legal	partner: each wallet provider, under terms the merchant must comply with	shown	SH-S-0024;SH-S-0025;SH-S-0026;SH-S-0027;SH-S-0028	
+SH-C-078	boundary	contract: wallet terms; other: UCP payment handler com.google.pay	shown	SH-S-0024;SH-S-2540	
+SH-C-078	reason	not shown	not shown		
+SH-C-079	software	core: manual and custom payment methods in Settings > Payments; such orders are marked unpaid until the merchant records payment	shown	SH-S-0387;SH-S-0386;SH-S-0583	
+SH-C-079	decides	merchant: the merchant chooses methods and arranges how the customer pays	shown	SH-S-0385;SH-S-0583	
+SH-C-079	decides	operator, per plan: multi-currency manual payments require Shopify Payments; no transaction fees on manual methods	shown	SH-S-0388;SH-S-0322	
+SH-C-079	legal	merchant: payment is arranged between merchant and customer outside the checkout	shown	SH-S-0385	
+SH-C-079	boundary	setting: Settings > Payments; staff permission to mark orders as paid	shown	SH-S-0387;SH-S-1851	
+SH-C-079	reason	not shown	not shown		
+SH-C-080	software	core: local payment methods run inside Shopify Payments and are paid out with it	shown	SH-S-0420;SH-S-0421;SH-S-1978	
+SH-C-080	decides	operator, per market: each method works only for customers in a supported country with an eligible currency, and the countries must be set up as markets	shown	SH-S-0582;SH-S-0422	
+SH-C-080	decides	operator: managed payment methods activate local methods automatically by region, using Shopify Network Intelligence	shown	SH-S-0424;SH-S-0425	
+SH-C-080	decides	merchant: the merchant can activate or deactivate each method	shown	SH-S-0420	
+SH-C-080	legal	not shown	not shown		The Help pages name the methods but do not name who provides each one; the Payment Processor List names the processors per Designated Country.
+SH-C-080	boundary	setting: Settings > Payments > Payment methods; payments card in Markets	shown	SH-S-0420;SH-S-2921	
+SH-C-080	reason	offer the payment options most relevant to the customer's location, which can help increase conversion	shown	SH-S-0581	
+SH-C-081	software	core: stablecoin (USD Coin) payments through Shopify Payments, using the Cryptocurrency Payment Protocol software developed by Coinbase	shown	SH-S-0430;SH-S-0423;SH-S-1937	
+SH-C-081	software	outside platform: other cryptocurrency gateways are third-party additional payment methods	shown	SH-S-0427;SH-S-0428	
+SH-C-081	decides	merchant: the merchant must verify cryptocurrency is acceptable in its region before accepting it	shown	SH-S-0426	
+SH-C-081	decides	operator, per market: the Cryptocurrency Credit Reward Program is open to Shopify Payments accounts in the United States, Canada, Mexico or Hong Kong	shown	SH-S-0433	
+SH-C-081	legal	partner: settlement into a Payment Processor Account follows the processor's terms; Coinbase is not a Payment Processor and never takes custody of the payments; a Bridge entity (an affiliate of Stripe) is listed as a processor for all regions	shown	SH-S-0432;SH-S-0087;SH-S-0431;SH-S-0151	
+SH-C-081	boundary	contract: Coinbase Payments Protocol Terms of Service, Shopify Payments Terms, Cryptocurrency Credit Reward Program terms	shown	SH-S-0430;SH-S-2132;SH-S-0434	
+SH-C-081	reason	not shown	not shown		
+SH-C-082	software	core: a rewards balance accepted automatically at checkout as a payment method	shown	SH-S-0437;SH-S-2957	
+SH-C-082	decides	operator, per market: Shopify Payments countries except Hong Kong, Mexico and the United Arab Emirates	shown	SH-S-0439	
+SH-C-082	legal	platform company: a Shopify-funded rewards program for Shop app customers; merchants are paid as for Shop Pay orders	shown	SH-S-0437;SH-S-0438	
+SH-C-082	boundary	not shown	not shown		
+SH-C-082	reason	not shown	not shown		
+SH-C-083	software	extension point: Payment Customization Function API (rename, reorder or hide payment methods, set payment terms, add a review requirement)	shown	SH-S-0589;SH-S-0859;SH-S-2236	
+SH-C-083	decides	merchant: the merchant activates up to 25 payment customization functions on a store	shown	SH-S-0590	
+SH-C-083	decides	operator, per plan: some operations only on Shopify Plus stores	shown	SH-S-0591	
+SH-C-083	legal	app developer: the function is built and delivered in an app	shown	SH-S-2236	
+SH-C-083	boundary	API: Shopify Function with write_payment_customizations scope	shown	SH-S-1043;SH-S-0859	
+SH-C-083	reason	not shown	not shown		
+SH-C-084	software	core: authorization, capture and order transactions, with transaction webhooks and capture permissions	shown	SH-S-0390;SH-S-1292;SH-S-1787	
+SH-C-084	decides	merchant: automatic or manual capture setting	shown	SH-S-0390	
+SH-C-084	decides	operator, per plan: Shopify Payments authorization period of 7 days; extended authorization periods only on Shopify Plus with Shopify Payments	shown	SH-S-0391;SH-S-0393	
+SH-C-084	decides	outside rules: authorization periods depend on the provider and card network; local regulation may require pay-on-delivery methods	shown	SH-S-0392;SH-S-0394	
+SH-C-084	legal	partner: the acquirer, a bank or financial institution, processes captured transactions on the merchant's behalf	shown	SH-S-0315	
+SH-C-084	boundary	event: order_transactions/create and orders/paid webhooks; setting: payment capture method	shown	SH-S-1292;SH-S-1299;SH-S-0390	
+SH-C-084	reason	not shown	not shown		
+SH-C-085	software	core: customer payment method APIs that store payment methods for future orders, and payment mandate scopes	shown	SH-S-0592;SH-S-1119;SH-S-1135	
+SH-C-085	decides	not shown	not shown		
+SH-C-085	legal	not shown	not shown		
+SH-C-085	boundary	API: customer payment method and payment mandate scopes; event: customer_payment_methods/create, update and revoke webhooks; staff permission to charge vaulted payment methods	shown	SH-S-1119;SH-S-1193;SH-S-1194;SH-S-1868	
+SH-C-085	reason	not shown	not shown		
+SH-C-086	software	core: Shopify Payments for in-person card payments with Shopify POS and supported card readers; card-present payments extensions exist for third parties	shown	SH-S-0436;SH-S-2248	
+SH-C-086	decides	operator, per market: only countries where Shopify Payments supports both online and in-person processing	shown	SH-S-0435	
+SH-C-086	decides	operator: if POS uses Shopify Payments, no other processor may be used concurrently and the gateway must match the online store	shown	SH-S-0047	
+SH-C-086	legal	not shown	not shown		The Payment Processor List covers Shopify Payments generally; the POS pages read do not name an in-person processor. The Shopify Payments Terms say the P2PE service for POS equipment is provided exclusively by Stripe (SH-S-0089), which concerns encryption, not processing.
+SH-C-086	boundary	other: offline card payments are stored on the POS device and are not routed to the processor until it reconnects; declined offline payments are collected by the merchant from the customer	shown	SH-S-0585;SH-S-0586;SH-S-0587;SH-S-0588	
+SH-C-086	reason	not shown	not shown		
+SH-C-087	software	core: cash tracking at POS, with read and write access scopes	shown	SH-S-0954;SH-S-0955	
+SH-C-087	decides	not shown	not shown		
+SH-C-087	legal	not shown	not shown		
+SH-C-087	boundary	API: read_cash_tracking and write_cash_tracking scopes	shown	SH-S-0954;SH-S-0955	
+SH-C-087	reason	not shown	not shown		
+SH-C-088	software	core: Shopify Balance in the admin's Finance area (Banking), part of the finance suite built into the admin	shown	SH-S-1547;SH-S-0454;SH-S-0458;SH-S-1983	
+SH-C-088	decides	operator, per market: only merchants with a physical residential address in the United States or Puerto Rico, with a US SSN or ITIN	shown	SH-S-0460;SH-S-0462	
+SH-C-088	decides	operator: eligible merchants receive an account automatically when activating Shopify Payments; the account must close if Shopify Payments is deactivated, and it needs the same information as Shopify Payments	shown	SH-S-0461;SH-S-0463;SH-S-0464	
+SH-C-088	legal	partner: Stripe Payments Company provides money transmission and account services, with funds held at Fifth Third Bank N.A., Member FDIC; "Shopify is a tech company, not a bank."	shown	SH-S-0455;SH-S-0456	
+SH-C-088	boundary	other: the Balance account serves as the Shopify Payments payout account, Shopify Capital repayments are withdrawn from it, and in some regions it pays Shopify bills	shown	SH-S-0347;SH-S-0466;SH-S-0459	
+SH-C-088	reason	manage the store's payments and transactions in one place, with payouts up to 7 days earlier than to a bank	shown	SH-S-0458;SH-S-0347	
+SH-C-089	software	core: Cards in the admin's Finance area	shown	SH-S-1552	
+SH-C-089	decides	operator: the card is for business purposes only; personal use may end the Balance account	shown	SH-S-0465	
+SH-C-089	legal	partner: Celtic Bank issues the Shopify Balance Visa Commercial cards under a licence from Visa U.S.A. Inc.; the cards are powered by Stripe	shown	SH-S-0457	
+SH-C-089	boundary	not shown	not shown		
+SH-C-089	reason	not shown	not shown		
+SH-C-090	software	core: Credit in the admin's Finance area	shown	SH-S-1559;SH-S-1985	
+SH-C-090	decides	operator: Shopify evaluates eligibility from the health of the business	shown	SH-S-0470	
+SH-C-090	legal	partner: Celtic Bank issues the Shopify Credit Visa Commercial Credit cards under a licence from Visa U.S.A. Inc.; the cards are powered by Stripe	shown	SH-S-0469	
+SH-C-090	boundary	other: a pay-in-full charge card, paid automatically each month or over 10 months by automatic debits from daily sales	shown	SH-S-0467;SH-S-0468	
+SH-C-090	reason	not shown	not shown		
+SH-C-091	software	core: Capital in the admin's Finance area, where offers appear	shown	SH-S-1551;SH-S-0474	
+SH-C-091	decides	operator: eligibility is evaluated automatically and Shopify Capital runs an underwriting review; only a store owner can apply	shown	SH-S-0474;SH-S-0480;SH-S-0475	
+SH-C-091	decides	operator, per market: offered in nine countries; the principal place of business and bank account must be in the country; in some locations Shopify Payments is mandatory	shown	SH-S-0472;SH-S-0479;SH-S-0477;SH-S-0476	
+SH-C-091	legal	partner: all funding through Shopify Capital in the United States is issued by WebBank	shown	SH-S-0483	
+SH-C-091	boundary	other: loans repaid from a daily percentage of sales	shown	SH-S-0481;SH-S-0482	
+SH-C-091	reason	not shown	not shown		
+SH-C-092	software	core: Capital in the admin's Finance area	shown	SH-S-1551;SH-S-0474	
+SH-C-092	decides	operator: automatic eligibility evaluation and underwriting review	shown	SH-S-0474;SH-S-0480	
+SH-C-092	legal	partner: YouLend issues all merchant cash advances in the United Kingdom, under a receivables purchase agreement	shown	SH-S-0484;SH-S-0485	
+SH-C-092	boundary	contract: receivables purchase agreement, remitted by Direct Debit whose notifications BACS regulations require	shown	SH-S-0484;SH-S-0486	
+SH-C-092	reason	not shown	not shown		
+SH-C-093	software	core: Capital in the admin's Finance area	shown	SH-S-1551;SH-S-0474	
+SH-C-093	decides	operator: automatic eligibility evaluation and underwriting review	shown	SH-S-0474;SH-S-0480	
+SH-C-093	legal	not shown	not shown		The Canada Help page describes loans offered by "Shopify Capital" and names no lender. The financial complaint form lists the product as "Capital - Canada Merchant Cash Advance (MCA)", while the Help page describes loans.
+SH-C-093	boundary	contract: a pre-authorized debit agreement for repayments	shown	SH-S-0487;SH-S-0488	
+SH-C-093	reason	not shown	not shown		
+SH-C-094	software	core: Capital in the admin's Finance area	shown	SH-S-1551;SH-S-0474	
+SH-C-094	decides	operator: automatic eligibility evaluation and underwriting review	shown	SH-S-0474;SH-S-0480	
+SH-C-094	legal	not shown	not shown		The Australia Help page describes loans offered by "Shopify Capital" and names no lender.
+SH-C-094	boundary	not shown	not shown		
+SH-C-094	reason	not shown	not shown		
+SH-C-095	software	core: Capital in the admin's Finance area	shown	SH-S-1551;SH-S-0474	
+SH-C-095	decides	operator: automatic eligibility evaluation and underwriting review	shown	SH-S-0474;SH-S-0480	
+SH-C-095	legal	partner: loans in France are provided by Banking Circle S.A. (a CSSF-licensed Luxembourg credit institution) with YouLend SAS	shown	SH-S-0490	
+SH-C-095	legal	separate entity of the platform: Shopify Commerce France SAS provides the application	shown	SH-S-0491	
+SH-C-095	boundary	not shown	not shown		
+SH-C-095	reason	not shown	not shown		
+SH-C-096	software	core: Capital in the admin's Finance area	shown	SH-S-1551;SH-S-0474	
+SH-C-096	decides	operator: automatic eligibility evaluation and underwriting review	shown	SH-S-0474;SH-S-0480	
+SH-C-096	legal	partner: loans in Germany are provided in cooperation with YouLend GmbH	shown	SH-S-0492	
+SH-C-096	legal	separate entity of the platform: Shopify Commerce Germany GmbH, a registered Credit Broker in Germany, makes the applications available	shown	SH-S-0493	
+SH-C-096	boundary	not shown	not shown		
+SH-C-096	reason	not shown	not shown		
+SH-C-097	software	core: Capital in the admin's Finance area	shown	SH-S-1551;SH-S-0474	
+SH-C-097	decides	operator: automatic eligibility evaluation and underwriting review	shown	SH-S-0474;SH-S-0480	
+SH-C-097	legal	partner: YouLend issues all merchant cash advances through Shopify Capital in Ireland, the Netherlands and Spain	shown	SH-S-0494;SH-S-0495;SH-S-0496	
+SH-C-097	boundary	other: merchant cash advances (purchase of receivables)	shown	SH-S-0497	
+SH-C-097	reason	not shown	not shown		
+SH-C-098	software	separate service or product line: the Shopify Bill Pay app, installed from the Shopify App Store and powered by Melio	shown	SH-S-0500;SH-S-0499	
+SH-C-098	decides	operator, per market: only merchants in the United States	shown	SH-S-0498	
+SH-C-098	legal	partner: Melio	shown	SH-S-0499	
+SH-C-098	boundary	other: an app; vendors are paid by bank transfer or check, and international bills in USD by wire transfer	shown	SH-S-0500;SH-S-0501	
+SH-C-098	reason	not shown	not shown		
+SH-C-099	software	core: Form 1099-K generated by Shopify Payments and downloaded from the admin, behind a tax-documents permission	shown	SH-S-0505;SH-S-1896	
+SH-C-099	decides	outside rules: US tax law requires Payment Settlement Entities to file Form 1099-K; in some jurisdictions Shopify may have to report sales to tax authorities	shown	SH-S-0502;SH-S-0504;SH-S-0096	
+SH-C-099	legal	other: "Payment Settlement Entities (PSEs) such as Shopify Payments" file the form; the merchant is responsible for reporting the income	shown	SH-S-0502;SH-S-0503	
+SH-C-099	boundary	other: an annual form provided to the merchant and to the IRS	shown	SH-S-0505	
+SH-C-099	reason	required by tax law	shown	SH-S-0502	
+SH-C-100	software	core: tax calculation in Settings > Taxes and duties, with default rates Shopify maintains; the tax engine is a component inside Shopify's codebase (engineering post, 2019)	shown	SH-S-1492;SH-S-0506;SH-S-0539	
+SH-C-100	decides	operator, per market: the services a store can use depend on the business location: Shopify Tax for the United States, the European Union, the United Kingdom and Canada; Basic Tax for Norway, Switzerland, Australia, New Zealand and Singapore; Manual Tax elsewhere	shown	SH-S-0508;SH-S-0509;SH-S-0510;SH-S-0511;SH-S-0513	
+SH-C-100	decides	platform at build: Shopify Tax calculates only for some destinations and order types, and falls back to registration-based calculation when it cannot calculate	shown	SH-S-0514;SH-S-0515;SH-S-0516	
+SH-C-100	decides	merchant: the merchant checks default rates and can override them	shown	SH-S-0506	
+SH-C-100	legal	merchant: the merchant is solely responsible for determining, collecting, reporting and remitting taxes, and for product tax classification; Shopify is not responsible for the merchant's tax obligations	shown	SH-S-0037;SH-S-0041;SH-S-0596;SH-S-0597	
+SH-C-100	legal	platform company: Shopify Tax is provided by Shopify Inc. and its Affiliates under the Shopify Tax Terms, with no guarantee of availability or uptime	shown	SH-S-0594;SH-S-0598;SH-S-0039	
+SH-C-100	boundary	setting: Settings > Taxes and duties; API: read_taxes and write_taxes scopes; contract: Shopify Tax Terms of Service	shown	SH-S-1492;SH-S-1144;SH-S-0595	
+SH-C-100	boundary	other: Shopify Tax fees are charged on the merchant's Shopify invoice once sales pass a threshold	shown	SH-S-0518;SH-S-0517;SH-S-0599;SH-S-2117	
+SH-C-100	reason	Shopify Tax is described as giving the highest level of sales tax compliance with the least upkeep	shown	SH-S-0513	
+SH-C-101	software	core: tax registrations and liability tracking in Settings > Taxes and duties	shown	SH-S-1492;SH-S-1989	
+SH-C-101	decides	merchant: the merchant registers with its tax authority and enters registration numbers (Basic Tax requires one)	shown	SH-S-0507;SH-S-0533	
+SH-C-101	decides	operator: under Managed Markets, Global-e provides the tax registrations in destination countries	shown	SH-S-0564	
+SH-C-101	legal	merchant: the merchant warrants that registration numbers are accurate and current	shown	SH-S-0596;SH-S-0037	
+SH-C-101	boundary	setting: Settings > Taxes and duties, behind the taxes-settings permission	shown	SH-S-1492;SH-S-1849	
+SH-C-101	reason	not shown	not shown		
+SH-C-102	software	core: VAT validation, exemptions and invoicing; business customers enter a VAT number at checkout to claim the reverse charge	shown	SH-S-1990;SH-S-0535	
+SH-C-102	decides	operator, per market: available only to stores that use Shopify Tax for the European Union or the United Kingdom	shown	SH-S-0536	
+SH-C-102	decides	buyer: the business customer enters its VAT number to claim the exemption	shown	SH-S-0535	
+SH-C-102	decides	merchant: the merchant shows or hides the Company VAT number field in checkout	shown	SH-S-0670	
+SH-C-102	legal	buyer: when the exemption applies, the customer is responsible for reporting and paying the VAT	shown	SH-S-0633	
+SH-C-102	boundary	setting: the Company VAT number field in checkout settings	shown	SH-S-0670	
+SH-C-102	reason	not shown	not shown		
+SH-C-103	software	extension point: third-party tax apps and the tax calculation extension, which replace Shopify's tax service for a store	shown	SH-S-0528;SH-S-0530;SH-S-2256;SH-S-2708	
+SH-C-103	software	outside platform: the tax provider's own service, which needs its own account	shown	SH-S-0529	
+SH-C-103	decides	merchant: the merchant chooses a tax app or Shopify's service, not both; available in all countries and regions	shown	SH-S-0530;SH-S-0512	
+SH-C-103	decides	operator: access to Shopify's tax platform for third-party tax apps	shown	SH-S-0635	
+SH-C-103	decides	platform at build: if a tax app is temporarily unavailable, the tax settings in the Shopify admin are used as backup tax collection	shown	SH-S-0531	
+SH-C-103	legal	app developer: the tax app provider, under its own account terms; B2B tax exemption data is transmitted to it	shown	SH-S-0529;SH-S-0532	
+SH-C-103	boundary	event: tax_services/create and tax_services/update webhooks; API: read_taxes and write_taxes; other: Avalara add-on fees appear as a Shopify billing charge category	shown	SH-S-1373;SH-S-1145;SH-S-2089	
+SH-C-103	reason	not shown	not shown		
+SH-C-104	software	core: automated filing integrated with the admin, using store data; closed to new enrollment and ending for sales after December 31, 2026	shown	SH-S-0524;SH-S-0521;SH-S-0525	
+SH-C-104	decides	operator, per market: only US stores that use Shopify Tax, and only for sales where the merchant is merchant of record	shown	SH-S-0522;SH-S-0523	
+SH-C-104	decides	merchant: after automated filing ends, the merchant files directly or uses a third-party filing service	shown	SH-S-0526	
+SH-C-104	legal	partner: Sovos Compliance, LLC is the Tax Service Provider that generates and submits returns, under its own terms with the merchant; Shopify delivers information and instructions on the merchant's behalf	shown	SH-S-0602;SH-S-0604;SH-S-0606;SH-S-0605	
+SH-C-104	legal	merchant: the merchant stays solely responsible for submitting returns and remitting taxes	shown	SH-S-0607;SH-S-0041	
+SH-C-104	boundary	contract: Shopify Tax Automated Filing Terms of Service and the Sovos terms; other: Automated filing appears as a Shopify billing charge category	shown	SH-S-0040;SH-S-0603;SH-S-2088	
+SH-C-104	reason	not shown	not shown		
+SH-C-105	software	core: estimate and collect duties and import taxes at checkout (a plan feature that the admin comparison marks as requiring Shopify Payments)	shown	SH-S-0538;SH-S-2060	
+SH-C-105	decides	outside rules: customs authorities set the amount from classification, origin and destination rules	shown	SH-S-0537	
+SH-C-105	decides	merchant: the merchant chooses whether to collect an estimate at checkout	shown	SH-S-0538	
+SH-C-105	legal	merchant: duties and customs charges are the merchant's responsibility, including under Shopify Shipping	shown	SH-S-0037;SH-S-0618	
+SH-C-105	legal	partner: under Managed Markets, Global-e remits duties and taxes and covers differences from the amounts shown at checkout	shown	SH-S-0564;SH-S-0571	
+SH-C-105	boundary	setting: Settings > Taxes and duties and market duty settings; other: duty and import tax transaction fees billed by Shopify	shown	SH-S-1492;SH-S-2091	
+SH-C-105	reason	collecting an estimate helps customers avoid unexpected charges on delivery	shown	SH-S-0538	
+SH-C-106	software	core: Markets in the admin and the Shopify Markets API, with market webhooks	shown	SH-S-0540;SH-S-1528;SH-S-0787	
+SH-C-106	decides	merchant: the merchant defines markets by location, customer group, retail location or channel, and customizes currency, product availability, theme content, domains, languages and taxes	shown	SH-S-0540;SH-S-0541	
+SH-C-106	legal	not shown	not shown		Managed Markets changes who is merchant of record (see Managed Markets); Markets itself leaves the merchant as merchant of record according to the Managed Markets overview.
+SH-C-106	boundary	API: read_markets and write_markets scopes; event: markets/create, markets/update, markets/delete; setting: Settings > Markets	shown	SH-S-1018;SH-S-1282;SH-S-1494	
+SH-C-106	reason	not shown	not shown		The international sales tools page also offers selling with multiple stores for teams that manage local markets independently (https://help.shopify.com/en/manual/international.md).
+SH-C-107	software	core: the store currency is used throughout the admin for pricing and reports	shown	SH-S-0361	
+SH-C-107	decides	merchant: the merchant chooses the store currency before the first sale	shown	SH-S-0671;SH-S-0361	
+SH-C-107	decides	operator: changing it after the first sale needs Shopify Support	shown	SH-S-0370	
+SH-C-107	legal	not shown	not shown		
+SH-C-107	boundary	setting: store currency in store settings	shown	SH-S-0361;SH-S-3005	
+SH-C-107	reason	not shown	not shown		
+SH-C-108	software	core: prices shown and paid in local currencies, converted automatically by default	shown	SH-S-0544;SH-S-1976	
+SH-C-108	decides	operator: only Shopify Payments or Adyen as primary gateway can process a customer's local currency; with other providers the customer is charged in the store's currency	shown	SH-S-0545;SH-S-0546;SH-S-0543;SH-S-0366	
+SH-C-108	decides	merchant: the merchant sets each market's currency and can set manual rates or fixed prices	shown	SH-S-0547;SH-S-0544	
+SH-C-108	legal	not shown	not shown		
+SH-C-108	boundary	setting: market currency in Markets	shown	SH-S-0547;SH-S-2951	
+SH-C-108	reason	not shown	not shown		
+SH-C-109	software	core: conversion at the time of each transaction (capture, refund, chargeback); store, local and payout currencies; automatic rates by default	shown	SH-S-0548;SH-S-0549;SH-S-0544	
+SH-C-109	decides	operator, per market: the conversion fee depends on the store's primary country (1.5% for the United States, 2% for France and all other Shopify Payments regions); since April 6, 2026 it is calculated on the gross order amount	shown	SH-S-0555;SH-S-0556;SH-S-0363;SH-S-0364	
+SH-C-109	decides	merchant: manual exchange rates per market with Managed Markets	shown	SH-S-0551	
+SH-C-109	legal	other: "The fee that Shopify charges (in your payout currency) to convert currencies when you capture a payment"; the rate is described as a mid-market rate without markup	shown	SH-S-0554;SH-S-0553	
+SH-C-109	legal	merchant: the merchant may gain or lose money from rate movements between transaction steps	shown	SH-S-0550	
+SH-C-109	boundary	other: fees are charged with the Shopify Payments processing fee and set in the merchant's Shopify Payments terms	shown	SH-S-0552;SH-S-0558	
+SH-C-109	reason	not shown	not shown		The sources state the rate is mid-market but do not name the source of exchange rates or the party that performs the exchange.
+SH-C-110	software	separate service or product line: Managed Markets features "powered by Global-e", run from the Shopify admin	shown	SH-S-0561	
+SH-C-110	decides	operator, per market and plan: merchants in the continental United States and certain stores in Canada and the United Kingdom, on Basic or higher with an online store and Shopify Payments	shown	SH-S-0562;SH-S-0568	
+SH-C-110	legal	partner: Global-e becomes merchant of record, holds the tax registrations, and holds the funds of Managed Markets orders; Shopify is not a party to the Managed Markets Terms	shown	SH-S-0563;SH-S-0564;SH-S-0565;SH-S-0127;SH-S-0128	
+SH-C-110	boundary	contract: Service Terms - Shopify Managed Markets with Global-e, accepted through the regional parts of the Shopify Payments Terms; a merchant-of-record disclaimer at checkout that cannot be hidden; all questions go through Shopify Support	shown	SH-S-0127;SH-S-0569;SH-S-0567	
+SH-C-110	reason	sell to customers in other countries without registering a business, registering for tax or arranging customs clearance in each destination	shown	SH-S-0634	
+SH-C-111	software	core: local domains assigned to markets	shown	SH-S-1979	
+SH-C-111	software	outside platform: geolocation apps in the App Store	shown	SH-S-2681	
+SH-C-111	decides	merchant: the merchant assigns domains and languages to markets	shown	SH-S-2953	
+SH-C-111	legal	not shown	not shown		
+SH-C-111	boundary	setting: domains and languages per market	shown	SH-S-2953	
+SH-C-111	reason	not shown	not shown		
+SH-C-112	software	core: Markets > Rollouts, scheduled changes to theme, checkout and accounts pages, discounts and catalogs	shown	SH-S-0576;SH-S-1530	
+SH-C-112	decides	merchant: the merchant schedules launches, events and experiments	shown	SH-S-0576	
+SH-C-112	legal	not shown	not shown		
+SH-C-112	boundary	API: read_rollouts scope; event: rollouts webhooks	shown	SH-S-1062;SH-S-1339	
+SH-C-112	reason	not shown	not shown		
+SH-C-113	software	core: a required setting that points to a country in an active market	shown	SH-S-0573	
+SH-C-113	decides	platform at build: customers outside every market get the backup region experience and can browse but not buy	shown	SH-S-0574	
+SH-C-113	decides	merchant: set to the home country at creation; the merchant can change it	shown	SH-S-0575	
+SH-C-113	legal	not shown	not shown		
+SH-C-113	boundary	setting: Settings > General > Backup Region; event: markets_backup_region/update	shown	SH-S-0575;SH-S-1285	
+SH-C-113	reason	not shown	not shown		
+SH-C-114	software	core: Settings > Shipping and delivery, with shipping profiles, zones and rates	shown	SH-S-1491;SH-S-0786	
+SH-C-114	decides	merchant: the merchant sets profiles, zones and rates and may pass shipping costs to customers	shown	SH-S-1840;SH-S-1322	
+SH-C-114	legal	merchant: the merchant is responsible for shipping to its customers	shown	SH-S-0012;SH-S-0613	
+SH-C-114	boundary	setting: Settings > Shipping and delivery; API: read_shipping and write_shipping; other: UCP fulfillment capability	shown	SH-S-1491;SH-S-1067;SH-S-2531	
+SH-C-114	reason	not shown	not shown		
+SH-C-115	software	outside platform: third-party calculated rates from the merchant's own carrier accounts or rate apps	shown	SH-S-1962;SH-S-2629	
+SH-C-115	decides	operator, per plan: third-party calculated rates are a plan row	shown	SH-S-1962	
+SH-C-115	decides	merchant: the merchant connects its carrier accounts	shown	SH-S-1962	
+SH-C-115	legal	partner: the carrier, under the merchant's own account	shown	SH-S-0616	
+SH-C-115	boundary	API: read_shipping and write_shipping scopes	shown	SH-S-1066	
+SH-C-115	reason	not shown	not shown		
+SH-C-116	software	core: Shopify Shipping in the admin (Orders > Shipping labels): discounted labels from supported carriers	shown	SH-S-0717;SH-S-1537;SH-S-0050	
+SH-C-116	decides	operator, per market and plan: eligibility varies by carrier and country; discounts vary by plan	shown	SH-S-0718;SH-S-0719;SH-S-0609	
+SH-C-116	decides	merchant: the merchant buys labels and chooses carriers	shown	SH-S-1785	
+SH-C-116	legal	separate entities of the platform: the Shopify Contracting Party by billing address provides Shopify Shipping	shown	SH-S-0608	
+SH-C-116	legal	partner: Third-Party Integrators (Shippo, Auctane, Easyship) and carriers provide the shipping services under their own terms; Shopify serves only as an intermediary	shown	SH-S-0610;SH-S-0611;SH-S-0612;SH-S-0613;SH-S-0614	
+SH-C-116	boundary	contract: Shopify Shipping Terms of Service and integrator and carrier terms; other: shipping fees on the Shopify invoice	shown	SH-S-0050;SH-S-0619;SH-S-2106	The Shipping Terms let Shopify modify, suspend or terminate Shopify Shipping at any time (SH-S-0620); they do not say what happens to labels if an integrator or carrier stops.
+SH-C-116	reason	save money with carrier discounts and time by avoiding trips to carrier locations	shown	SH-S-0717	
+SH-C-117	software	core: shipping insurance bought with labels, with claims from the admin	shown	SH-S-0720;SH-S-1961	
+SH-C-117	decides	operator, per market and plan: only for shipments from the United States; up to $200 included on eligible shipments for some plans with Shopify Payments or Managed Markets	shown	SH-S-0720;SH-S-0722	
+SH-C-117	legal	partner: third-party insurance providers; Shipsurance administers coverage bought through Shopify	shown	SH-S-0617;SH-S-0721	
+SH-C-117	boundary	other: insurance premiums on the Shopify bill	shown	SH-S-2095	
+SH-C-117	reason	not shown	not shown		
+SH-C-118	software	core: fulfillment orders and fulfillments, with many fulfillment webhooks	shown	SH-S-0921;SH-S-1227	
+SH-C-118	decides	merchant: staff fulfill and ship orders	shown	SH-S-1831	
+SH-C-118	legal	merchant: fulfillment is the merchant's responsibility	shown	SH-S-0012	
+SH-C-118	boundary	API: fulfillment order scopes; event: fulfillment webhooks	shown	SH-S-1022;SH-S-1229	
+SH-C-118	reason	not shown	not shown		
+SH-C-119	software	extension point: fulfillment service apps (third-party warehousing, print on demand), each with its own location	shown	SH-S-0702;SH-S-0703;SH-S-2631	
+SH-C-119	decides	merchant: the merchant sends fulfillment requests; the service accepts or rejects them	shown	SH-S-0704	
+SH-C-119	legal	app developer: the fulfillment service provider	shown	SH-S-0702	
+SH-C-119	boundary	API: assigned fulfillment order scopes; event: fulfillment request and cancellation webhooks; other: external 3PL transaction fees on the Shopify bill	shown	SH-S-0946;SH-S-1231;SH-S-2093	
+SH-C-119	reason	not shown	not shown		
+SH-C-120	software	separate service or product line: the Shopify Fulfillment Network app, which connects the merchant to third-party logistics providers	shown	SH-S-0716;SH-S-0715;SH-S-1603	
+SH-C-120	decides	merchant: the merchant installs the app and chooses a 3PL partner	shown	SH-S-0715	
+SH-C-120	legal	partner: third-party logistics providers store inventory and fulfill orders on the merchant's behalf	shown	SH-S-0715	
+SH-C-120	boundary	contract: the legal index lists Shopify Fulfillment Network Terms of Service; other: network, transportation and Shopify Logistics charges on the Shopify bill	shown	SH-S-2154;SH-S-2111;SH-S-2113	The legal index link "View fulfillment network terms" points to https://www.shopify.com/legal/terms#9-additional-services; section 9 of the Terms read on 2026-10-10 has no fulfillment network subsection (9.1 to 9.14).
+SH-C-120	reason	scale without managing a warehouse	shown	SH-S-0715	
+SH-C-121	software	core: local pickup and local delivery, with prepared-for-pickup and prepared-for-delivery events	shown	SH-S-1241;SH-S-1107	
+SH-C-121	decides	merchant: the merchant offers pickup or local delivery	shown	SH-S-2878	
+SH-C-121	legal	not shown	not shown		
+SH-C-121	boundary	event: fulfillment order pickup and local delivery webhooks	shown	SH-S-1240	
+SH-C-121	reason	not shown	not shown		
+SH-C-122	software	extension point: the Delivery Customization Function API	shown	SH-S-0855;SH-S-2226	
+SH-C-122	decides	merchant: the merchant installs and configures it; Shopify executes it	shown	SH-S-0683	
+SH-C-122	legal	app developer: built by app developers	shown	SH-S-0683	
+SH-C-122	boundary	API: delivery customization scopes	shown	SH-S-0978	
+SH-C-122	reason	not shown	not shown		
+SH-C-123	software	extension point: the Fulfillment Constraints Function API	shown	SH-S-0857;SH-S-2232	
+SH-C-123	decides	merchant: the merchant installs and configures it; Shopify executes it	shown	SH-S-0683	
+SH-C-123	legal	app developer: built by app developers	shown	SH-S-0683	
+SH-C-123	boundary	API: fulfillment constraint rule scopes	shown	SH-S-0990	
+SH-C-123	reason	not shown	not shown		
+SH-C-124	software	extension point: delivery option generator functions (local pickup, pickup points, fulfillment options)	shown	SH-S-2233;SH-S-2234	
+SH-C-124	decides	merchant: the merchant installs and configures them; Shopify executes them	shown	SH-S-0683	
+SH-C-124	legal	app developer: built by app developers	shown	SH-S-0683	
+SH-C-124	boundary	API: delivery option generator scopes	shown	SH-S-1009	
+SH-C-124	reason	not shown	not shown		
+SH-C-125	software	core: delivery promise settings	shown	SH-S-1120;SH-S-1208	
+SH-C-125	decides	not shown	not shown		
+SH-C-125	legal	not shown	not shown		
+SH-C-125	boundary	API: delivery promise scopes; event: delivery_promise_settings/update	shown	SH-S-1121;SH-S-1208	
+SH-C-125	reason	not shown	not shown		
+SH-C-126	software	core: tracking numbers with a Shopify list of tracking carriers; order tracking apps also exist	shown	SH-S-2859;SH-S-2620	
+SH-C-126	decides	operator: Shopify sets the list of supported tracking carriers (204 on the list read)	shown	SH-S-2859	
+SH-C-126	legal	not shown	not shown		
+SH-C-126	boundary	not shown	not shown		
+SH-C-126	reason	not shown	not shown		
+SH-C-127	software	core: Discounts in the admin and the discounts API; discount codes on every plan	shown	SH-S-1522;SH-S-0776;SH-S-1955	
+SH-C-127	decides	merchant: the merchant creates discounts	shown	SH-S-1636	
+SH-C-127	legal	not shown	not shown		
+SH-C-127	boundary	API: discounts scopes; event: discounts webhooks; other: UCP discount capability	shown	SH-S-0981;SH-S-1209;SH-S-2532	
+SH-C-127	reason	not shown	not shown		
+SH-C-128	software	extension point: Discount Function APIs; an app can define a new discount type that Shopify executes	shown	SH-S-0856;SH-S-2227;SH-S-0683	
+SH-C-128	decides	merchant: the merchant installs the app and creates discounts from its types	shown	SH-S-0683	
+SH-C-128	legal	app developer: built by app developers	shown	SH-S-0683	
+SH-C-128	boundary	extension point: discount function settings	shown	SH-S-2208	
+SH-C-128	reason	not shown	not shown		
+SH-C-129	software	core: Growth in the admin (Campaigns, Autopilot), marketing automations and marketing activities	shown	SH-S-1518;SH-S-1521;SH-S-1953	
+SH-C-129	software	outside platform: marketing apps in the App Store	shown	SH-S-2590	
+SH-C-129	decides	merchant: the merchant creates campaigns and automations	shown	SH-S-1701	
+SH-C-129	legal	not shown	not shown		
+SH-C-129	boundary	API: marketing events and integrated campaign scopes	shown	SH-S-1016;SH-S-1014	
+SH-C-129	reason	not shown	not shown		
+SH-C-130	software	core: Shopify Email and pay-per-send SMS campaigns in the admin, under Shopify Messaging	shown	SH-S-1949;SH-S-1950;SH-S-2821	
+SH-C-130	decides	operator: Shopify scans email content before delivery	shown	SH-S-0055	
+SH-C-130	legal	partner: email uses Third Party Providers including SendGrid (a Twilio Company); SMS uses third-party providers under Twilio's Acceptable Use Policy	shown	SH-S-0054;SH-S-0051	
+SH-C-130	boundary	contract: Terms of Service 9.5 SMS Messaging and 9.7 Shopify Email; other: Messaging charges on the Shopify bill	shown	SH-S-3177;SH-S-3179;SH-S-2097	
+SH-C-130	reason	not shown	not shown		
+SH-C-131	software	core: Attribution under Growth; extension point: order attribution configuration	shown	SH-S-1519;SH-S-2255	
+SH-C-131	decides	not shown	not shown		
+SH-C-131	legal	not shown	not shown		
+SH-C-131	boundary	extension point: Order Attribution Config	shown	SH-S-2255	
+SH-C-131	reason	not shown	not shown		
+SH-C-132	software	separate service or product line: the Shopify Audiences app, which builds audiences and exports them to ad platforms	shown	SH-S-0734;SH-S-0735	
+SH-C-132	decides	operator, per market and plan: eligible Shopify Plus stores using Shopify Payments, based in the United States or Canada; requires Shopify Network Intelligence	shown	SH-S-0733;SH-S-1995	
+SH-C-132	legal	not shown	not shown		The Terms of Service (9.12) subject Audiences to the Shopify Audiences Terms and Conditions, which are linked inside the admin (https://admin.shopify.com/apps/shopify-audiences/settings/terms) and were not read.
+SH-C-132	boundary	contract: Terms of Service 9.12 and the Shopify Audiences Terms and Conditions; other: export to the merchant's ad accounts	shown	SH-S-0068;SH-S-3184;SH-S-0735	
+SH-C-132	reason	find new customers through custom audiences for advertising platforms	shown	SH-S-0734	
+SH-C-133	software	core: Shop Campaigns, an ads program across the Shop app, Shop website, Shopify Product Network and optional third-party placements	shown	SH-S-0726;SH-S-1957	
+SH-C-133	decides	merchant: the merchant sets the average customer acquisition cost	shown	SH-S-0726	
+SH-C-133	legal	not shown	not shown		
+SH-C-133	boundary	other: Shop Campaigns charges on the Shopify bill, only when a customer converts	shown	SH-S-0726;SH-S-2107	
+SH-C-133	reason	not shown	not shown		
+SH-C-134	software	separate service or product line: the Shopify Collabs app connecting businesses and creators	shown	SH-S-0731;SH-S-2760	
+SH-C-134	decides	merchant: the merchant invites creators and sets commissions	shown	SH-S-0732	
+SH-C-134	legal	not shown	not shown		Businesses use Collabs to "send payments to their affiliates"; the sources read do not name who holds or transmits those payments.
+SH-C-134	boundary	other: Collabs commission and processing fee charges on the Shopify bill	shown	SH-S-2109;SH-S-2110	
+SH-C-134	reason	not shown	not shown		
+SH-C-135	software	core: Sales channels in the admin and channel publishing	shown	SH-S-1534;SH-S-1496;SH-S-1052	
+SH-C-135	software	extension point: sales channel apps connect the store to surfaces outside Shopify, some with their own checkout	shown	SH-S-0699;SH-S-0700;SH-S-2254	
+SH-C-135	decides	merchant: the merchant installs channels and publishes products to them	shown	SH-S-1910	
+SH-C-135	decides	operator: only parties that own and operate, or are contracted to represent, a distinct selling surface should build a sales channel	shown	SH-S-0701	
+SH-C-135	legal	app developer: the channel operator, under its own terms; Third Party Services are between the merchant and the provider	shown	SH-S-0701;SH-S-0058	
+SH-C-135	boundary	API: channels and publications scopes; event: publication webhooks	shown	SH-S-0956;SH-S-1168	
+SH-C-135	reason	not shown	not shown		
+SH-C-136	software	separate service or product line: Shop, a consumer shopping and delivery tracking app on iOS, Android and the web, installed as a sales channel	shown	SH-S-0723;SH-S-0056;SH-S-2756	
+SH-C-136	decides	operator, per market: available in countries where Shopify Payments is supported, to Eligible Merchants, and only with Shopify Network Intelligence enabled	shown	SH-S-0724;SH-S-0056;SH-S-0725	
+SH-C-136	legal	merchant: the transaction is completed on the merchant's store	shown	SH-S-0057	
+SH-C-136	legal	platform company: for Shop, Shopify is engaged directly by the customer and acts as data controller	shown	SH-S-0244	
+SH-C-136	boundary	contract: Terms of Service 9.8 Shop; API: Shop API and Shop Minis	shown	SH-S-3180;SH-S-0847	
+SH-C-136	reason	not shown	not shown		
+SH-C-137	software	separate service or product line: the Shopify Marketplace Connect app (formerly Codisto) syncs listings, orders and inventory with Amazon, eBay, Walmart and Target Plus	shown	SH-S-0727;SH-S-0728	
+SH-C-137	decides	operator, per plan: the number of synced marketplace orders per month depends on the plan	shown	SH-S-1966;SH-S-1965	
+SH-C-137	decides	merchant: the merchant connects marketplaces	shown	SH-S-0727	
+SH-C-137	legal	partner: marketplaces with their own checkout; marketplace facilitators collect and remit sales tax for their sales	shown	SH-S-0700;SH-S-0527	
+SH-C-137	boundary	API: marketplace order and fulfillment order scopes	shown	SH-S-1123;SH-S-1124	
+SH-C-137	reason	not shown	not shown		
+SH-C-138	software	core: product and collection listings for channels, and product feeds	shown	SH-S-1046;SH-S-1165;SH-S-1577	
+SH-C-138	decides	merchant: the merchant chooses what each channel lists	shown	SH-S-1049	
+SH-C-138	legal	not shown	not shown		
+SH-C-138	boundary	API: product feed and listing scopes; event: listing webhooks	shown	SH-S-1047;SH-S-1167	
+SH-C-138	reason	not shown	not shown		
+SH-C-139	software	core: Storefront API and Hydrogen, with hosting on Oxygen, Shopify's edge hosting platform	shown	SH-S-0709;SH-S-0710;SH-S-0825;SH-S-0831	
+SH-C-139	decides	merchant: the merchant or its developer builds the frontend	shown	SH-S-0709	
+SH-C-139	decides	operator, per plan: headless storefronts are a plan row	shown	SH-S-1973	
+SH-C-139	legal	not shown	not shown		
+SH-C-139	boundary	API: Storefront API with unauthenticated scopes	shown	SH-S-0825;SH-S-1100	
+SH-C-139	reason	not shown	not shown		
+SH-C-140	software	core: Agentic Storefronts, powered by Shopify Catalog, sell through AI chat channels; Shopify publishes UCP capabilities and UCP-compliant MCP servers for agents	shown	SH-S-0621;SH-S-1911;SH-S-0714;SH-S-2530	
+SH-C-140	decides	operator: Shopify decides eligibility in its sole discretion and may add Participating Channels; Participating Channels may customize Shopify Checkout	shown	SH-S-0622;SH-S-0628	
+SH-C-140	decides	merchant: the merchant disables channels it does not want	shown	SH-S-0632	
+SH-C-140	legal	merchant: the merchant remains seller of record and the transaction is completed through its store	shown	SH-S-0627	
+SH-C-140	legal	partner: Participating Channels, under their own terms (Google Merchant Center addendum, Microsoft Copilot Shopify Checkout Terms, Meta Seller Agreement addendum); Shopify is not a party to them except for channels it operates	shown	SH-S-0623;SH-S-0624;SH-S-0625;SH-S-0626	
+SH-C-140	legal	platform company: for partner-operated channels, Shopify processes customer personal information on the merchant's behalf	shown	SH-S-0630	
+SH-C-140	boundary	contract: Agentic Storefronts Supplemental Terms of Service (Terms of Service 9.14); other: per-channel transaction fees set in the admin	shown	SH-S-0071;SH-S-3186;SH-S-0629	
+SH-C-140	boundary	other: Participating Channels may stop their services at any time without notice	shown	SH-S-0631	
+SH-C-140	reason	not shown	not shown		
+SH-C-141	software	core: Shopify Collective, connecting Shopify stores to sell each other's products	shown	SH-S-0729;SH-S-1917	
+SH-C-141	decides	operator, per plan: free on all plans, subject to store eligibility	shown	SH-S-0730	
+SH-C-141	decides	merchant: retailers import supplier products; suppliers set price lists	shown	SH-S-0729	
+SH-C-141	legal	not shown	not shown		
+SH-C-141	boundary	not shown	not shown		
+SH-C-141	reason	not shown	not shown		
+SH-C-142	software	core: Shopify Point of Sale app and Retail API; POS Pro is an extra subscription per location	shown	SH-S-2757;SH-S-0785;SH-S-1923	
+SH-C-142	decides	operator, per plan: POS fees depend on the number of locations	shown	SH-S-0049;SH-S-2103	
+SH-C-142	decides	merchant: POS staff roles and permissions	shown	SH-S-1610	
+SH-C-142	legal	not shown	not shown		
+SH-C-142	boundary	contract: Terms of Service 9.3 POS Services; other: POS fees on the Shopify bill	shown	SH-S-3175;SH-S-2102	
+SH-C-142	reason	not shown	not shown		
+SH-C-143	software	outside platform: POS hardware sold under country equipment agreements	shown	SH-S-0048;SH-S-3063	
+SH-C-143	decides	operator, per market: equipment agreements and return policies by country (Canada, US, UK, Ireland, Australia, Singapore, New Zealand)	shown	SH-S-2162;SH-S-2163;SH-S-2165	
+SH-C-143	legal	not shown	not shown		
+SH-C-143	boundary	contract: POS Equipment Agreement and Return Policy for the merchant's country	shown	SH-S-0048	
+SH-C-143	reason	not shown	not shown		
+SH-C-144	software	extension point: POS UI extensions add functionality into the Shopify POS interface	shown	SH-S-0713;SH-S-2217	
+SH-C-144	decides	merchant: the merchant installs POS apps	shown	SH-S-0713	
+SH-C-144	legal	app developer: built by app developers	shown	SH-S-2217	
+SH-C-144	boundary	extension point: POS UI extension targets	shown	SH-S-0823;SH-S-2217	
+SH-C-144	reason	not shown	not shown		
+SH-C-145	software	core: Analytics, Reports and Live View in the admin, with ShopifyQL	shown	SH-S-1531;SH-S-0810;SH-S-1918	
+SH-C-145	decides	merchant: staff access to reports is set by permissions	shown	SH-S-1750	
+SH-C-145	legal	not shown	not shown		
+SH-C-145	boundary	API: read_analytics scope	shown	SH-S-0940	
+SH-C-145	reason	not shown	not shown		
+SH-C-146	software	core: Customer events settings with custom pixels; extension point: web pixel app extensions running in a sandbox	shown	SH-S-1498;SH-S-0706;SH-S-0708;SH-S-2239	
+SH-C-146	decides	merchant: the merchant adds pixels and must obtain consents for the events it tracks	shown	SH-S-0066;SH-S-0067	
+SH-C-146	decides	outside rules: where consent is required, pixel callbacks run only after consent	shown	SH-S-0707	
+SH-C-146	legal	merchant: responsible for consents from visitors and customers	shown	SH-S-0067	
+SH-C-146	boundary	setting: Settings > Customer events; API: customer events scopes; contract: Terms of Service 9.11 Shopify Pixel Manager	shown	SH-S-1498;SH-S-0948;SH-S-3183	
+SH-C-146	reason	not shown	not shown		
+SH-C-147	software	core: Shopify Network Intelligence, a privacy setting that powers Enhanced Services and features such as managed payment methods, Shop and Audiences	shown	SH-S-0045;SH-S-0425;SH-S-0725	
+SH-C-147	decides	merchant: the merchant may disable the setting, which stops further use of customer data for Enhanced Services	shown	SH-S-0045	
+SH-C-147	legal	platform company: Shopify processes the data for Enhanced Services as a controller, using customer data from the store, other merchants and Shopify	shown	SH-S-0192;SH-S-0046	
+SH-C-147	boundary	setting: Customer privacy settings; contract: Terms of Service 9.2 Enhanced Services and DPA Appendix E	shown	SH-S-3174;SH-S-0192	
+SH-C-147	reason	not shown	not shown		
+SH-C-148	software	core: Customer privacy settings, set per country and region, and the Customer Privacy API	shown	SH-S-1502;SH-S-0662;SH-S-0835	
+SH-C-148	decides	merchant: the merchant sets privacy settings for each country and region where it sells	shown	SH-S-0662	
+SH-C-148	decides	outside rules: privacy laws, which vary by region	shown	SH-S-0662	
+SH-C-148	legal	merchant: the merchant is responsible for its own compliance, including consents for pixels	shown	SH-S-0646;SH-S-0067	
+SH-C-148	boundary	setting: Settings > Customer privacy; API: privacy settings scopes and the Customer Privacy API; apps must integrate with the Consent Tracking API	shown	SH-S-1044;SH-S-0835;SH-S-0224	
+SH-C-148	reason	not shown	not shown		
+SH-C-149	software	core: Request customer data and Erase personal data in the admin; Shopify processes erasure and passes requests to apps	shown	SH-S-0666;SH-S-1825;SH-S-1203	
+SH-C-149	decides	merchant: the merchant decides how to respond to access and erasure requests under the laws that apply to it	shown	SH-S-0663	
+SH-C-149	legal	merchant: the merchant is responsible, including contacting other companies it shared data with	shown	SH-S-0663;SH-S-0665	
+SH-C-149	legal	other: Shopify erases personal data such as name and address in response to the merchant's request	shown	SH-S-0664	
+SH-C-149	boundary	event: customers/data_request and customers/redact webhooks; API: customer data erasure scopes	shown	SH-S-1197;SH-S-0974	
+SH-C-149	reason	not shown	not shown		
+SH-C-150	software	core: Settings > Notifications with Shopify's customer and staff notification templates	shown	SH-S-1499;SH-S-2764	
+SH-C-150	decides	merchant: the merchant edits templates	shown	SH-S-2762	
+SH-C-150	legal	not shown	not shown		
+SH-C-150	boundary	setting: Settings > Notifications	shown	SH-S-1499	
+SH-C-150	reason	not shown	not shown		
+SH-C-151	software	separate service or product line: Shopify Flow, a free automation app installed from the Shopify App Store; extension point: Flow triggers, actions and templates from apps	shown	SH-S-0752;SH-S-0753;SH-S-2242;SH-S-2240	
+SH-C-151	decides	merchant: the merchant builds workflows	shown	SH-S-0752	
+SH-C-151	legal	not shown	not shown		
+SH-C-151	boundary	extension point: Flow triggers and actions	shown	SH-S-2242	
+SH-C-151	reason	not shown	not shown		
+SH-C-152	software	core: Sidekick, an AI assistant in the admin that presents changes for review before applying them	shown	SH-S-0736;SH-S-0737;SH-S-1604	
+SH-C-152	decides	merchant: the merchant reviews and approves changes	shown	SH-S-0737	
+SH-C-152	legal	partner: AI subprocessors (including Anthropic PBC, Applied Compute Inc., Fireworks.ai, Microsoft Corporation and OpenAI) process personal data that is input to or included in Sidekick responses	shown	SH-S-0201	
+SH-C-152	boundary	extension point: app data and app action links that let Sidekick work with apps	shown	SH-S-2193;SH-S-2257	
+SH-C-152	reason	not shown	not shown		
+SH-C-153	software	separate service or product line: the Shopify Inbox app for customer chat	shown	SH-S-2758;SH-S-1952	
+SH-C-153	decides	merchant: the merchant chats with customers	shown	SH-S-1952	
+SH-C-153	legal	not shown	not shown		
+SH-C-153	boundary	not shown	not shown		
+SH-C-153	reason	not shown	not shown		
+SH-C-154	software	core: Reviews section in the admin; review apps in the App Store	shown	SH-S-1596;SH-S-2601	
+SH-C-154	decides	not shown	not shown		
+SH-C-154	legal	not shown	not shown		
+SH-C-154	boundary	not shown	not shown		
+SH-C-154	reason	not shown	not shown		
+SH-C-155	software	core: 24/7 support, Shopify Academy, Community and Learn	shown	SH-S-1919;SH-S-2523	
+SH-C-155	decides	not shown	not shown		
+SH-C-155	legal	not shown	not shown		
+SH-C-155	boundary	not shown	not shown		
+SH-C-155	reason	not shown	not shown		Support for third-party apps comes from the developer, and Shopify support covers apps made by Shopify (SH-S-0738, SH-S-0739).
+SH-C-156	software	extension point: apps installed from the Apps area; apps made by Shopify are supported by Shopify, third-party apps by their developers	shown	SH-S-1495;SH-S-1535;SH-S-0738;SH-S-0739	
+SH-C-156	decides	merchant: the merchant installs apps and approves their access scopes	shown	SH-S-0755;SH-S-1771	
+SH-C-156	decides	operator: Shopify may disable access to any Third Party Service at any time	shown	SH-S-0060	
+SH-C-156	legal	app developer: Third Party Services are between the merchant and the provider; the developer is solely responsible for its application and Shopify is not liable for it	shown	SH-S-0058;SH-S-0059;SH-S-0217	
+SH-C-156	boundary	contract: Terms of Service 9.9 and the Shopify API License and Terms of Use; event: app/uninstalled webhook	shown	SH-S-3181;SH-S-0214;SH-S-1153	
+SH-C-156	reason	not shown	not shown		
+SH-C-157	software	core: the Shopify App Store and the Partner Dashboard's app distribution	shown	SH-S-2753;SH-S-2852	
+SH-C-157	decides	operator: public distribution through the App Store requires Shopify's review; apps must use a Shopify billing solution and meet privacy and protected-data requirements	shown	SH-S-0284;SH-S-0698;SH-S-0694	
+SH-C-157	decides	other: the app developer chooses public or custom distribution, which cannot be changed later	shown	SH-S-0692;SH-S-0693	
+SH-C-157	legal	platform company: the Partner Program Agreement is with Shopify Inc. and Shopify Commerce Singapore Pte. Ltd.	shown	SH-S-0288	
+SH-C-157	boundary	contract: Partner Program Agreement and API License and Terms of Use	shown	SH-S-0288;SH-S-0215	
+SH-C-157	reason	Shopify App Pricing gives a predictable, trustworthy and standardized experience for app users	shown	SH-S-0280	
+SH-C-158	software	core: access scopes declared by apps and approved by merchants at install	shown	SH-S-0795;SH-S-0755	
+SH-C-158	decides	merchant: the merchant approves scopes when installing	shown	SH-S-0755	
+SH-C-158	decides	operator: scopes are granted only to public or custom apps and restricted for apps without a legitimate use	shown	SH-S-0757;SH-S-0754	
+SH-C-158	legal	app developer: developers may use merchant data only as needed to provide the app	shown	SH-S-0220	
+SH-C-158	boundary	API: access scopes; event: app/scopes_update webhook	shown	SH-S-0765;SH-S-1152	
+SH-C-158	reason	not shown	not shown		
+SH-C-159	software	core: scopes marked "Shopify approval required"	shown	SH-S-0756;SH-S-1114	
+SH-C-159	decides	operator: Shopify must approve the app for the scope before it can be declared	shown	SH-S-0756	
+SH-C-159	legal	not shown	not shown		
+SH-C-159	boundary	API: approval-gated scopes such as read_all_orders and Shopify Payments scopes	shown	SH-S-1114;SH-S-1065	
+SH-C-159	reason	not shown	not shown		
+SH-C-160	software	core: protected customer data levels and fields, requested in the Partner Dashboard	shown	SH-S-3192;SH-S-0694	
+SH-C-160	decides	operator: Shopify approves access only for the minimum data the app needs	shown	SH-S-0694	
+SH-C-160	legal	app developer: developers are bound by the Partner Program Agreement and API terms whatever API version they use, and must keep a privacy policy	shown	SH-S-0695;SH-S-0218	
+SH-C-160	boundary	other: request and review in the Partner Dashboard	shown	SH-S-0694	
+SH-C-160	reason	not shown	not shown		
+SH-C-161	software	core: mandatory compliance webhooks for data subject requests	shown	SH-S-1197;SH-S-1203;SH-S-1356	
+SH-C-161	decides	operator: App Store apps must respond to data subject requests, with the same privacy rights for all personal data wherever the person is; apps without them are rejected	shown	SH-S-0697;SH-S-0696;SH-S-0698	
+SH-C-161	legal	app developer: developers delete merchant data within 30 days of uninstall	shown	SH-S-0219	
+SH-C-161	boundary	event: customers/data_request, customers/redact and shop/redact	shown	SH-S-1203	
+SH-C-161	reason	a standardized approach to privacy rights for apps	shown	SH-S-0696	
+SH-C-162	software	core: webhook topics apps subscribe to for near-real-time events	shown	SH-S-0685;SH-S-0791	
+SH-C-162	decides	other: the app developer chooses topics, filters and delivery endpoints	shown	SH-S-0685	
+SH-C-162	legal	not shown	not shown		
+SH-C-162	boundary	event: webhook topics, HMAC-signed, versioned like the API	shown	SH-S-0686;SH-S-1153	
+SH-C-162	reason	not shown	not shown		
+SH-C-163	software	extension point: Shopify Functions inject code into Shopify's backend logic, compiled to WebAssembly and run by Shopify	shown	SH-S-0681;SH-S-0684;SH-S-0683;SH-S-0809	
+SH-C-163	decides	operator, per plan: any plan can use public App Store apps with functions; custom apps with functions need Shopify Plus	shown	SH-S-0682;SH-S-2000	
+SH-C-163	decides	merchant: the merchant installs and configures the function	shown	SH-S-0683	
+SH-C-163	legal	app developer: functions ship in apps	shown	SH-S-0683	
+SH-C-163	boundary	API: Function APIs (versioned) with defined targets, inputs and outputs	shown	SH-S-0809;SH-S-0690	
+SH-C-163	reason	not shown	not shown		
+SH-C-164	software	extension point: admin UI extensions (actions, blocks, print) and App Home	shown	SH-S-0711;SH-S-2182	
+SH-C-164	decides	merchant: the merchant installs apps that extend the admin	shown	SH-S-0711	
+SH-C-164	legal	app developer: built by app developers	shown	SH-S-0711	
+SH-C-164	boundary	extension point: admin extension targets; API: Polaris	shown	SH-S-0817;SH-S-2182	
+SH-C-164	reason	not shown	not shown		
+SH-C-165	software	extension point: customer account UI extensions, only on the new customer accounts	shown	SH-S-0712;SH-S-2186	
+SH-C-165	decides	merchant: the merchant installs apps with these extensions	shown	SH-S-0712	
+SH-C-165	legal	app developer: built by app developers	shown	SH-S-0712	
+SH-C-165	boundary	extension point: customer account targets	shown	SH-S-0822	
+SH-C-165	reason	not shown	not shown		
+SH-C-166	software	extension point: theme app extensions (app blocks, app embeds) and app proxies	shown	SH-S-0705;SH-S-2238;SH-S-0944	
+SH-C-166	decides	merchant: the merchant adds app blocks in the theme editor without editing code	shown	SH-S-0705	
+SH-C-166	legal	app developer: built by app developers	shown	SH-S-0705	
+SH-C-166	boundary	extension point: app blocks and app embeds; API: app proxy scopes	shown	SH-S-0943	
+SH-C-166	reason	not shown	not shown		
+SH-C-167	software	core: app development from the admin (Develop apps), with an App developer role	shown	SH-S-1541;SH-S-1612	
+SH-C-167	decides	merchant: staff with app development permissions build custom apps	shown	SH-S-1758	
+SH-C-167	decides	operator, per plan: custom apps with Shopify APIs are a plan row	shown	SH-S-1971	
+SH-C-167	legal	not shown	not shown		
+SH-C-167	boundary	API: Shopify APIs with scopes assigned in the admin	shown	SH-S-1971	
+SH-C-167	reason	not shown	not shown		
+SH-C-168	software	core: the Partner Dashboard and Partner API	shown	SH-S-0838;SH-S-2521	
+SH-C-168	decides	operator: developers obtain API clients by registering a Partner Account and agreeing to the Partner Program Agreement	shown	SH-S-0215	
+SH-C-168	legal	platform company: Shopify Inc. and Shopify Commerce Singapore Pte. Ltd. are the parties to the Partner Program Agreement	shown	SH-S-0288	
+SH-C-168	legal	app developer: partners warrant they are not in an Unsupported Region	shown	SH-S-0297;SH-S-0289	
+SH-C-168	boundary	contract: Partner Program Agreement, API License and Terms of Use, App Events API terms	shown	SH-S-2150;SH-S-2135	
+SH-C-168	reason	not shown	not shown		
+SH-C-169	software	core: payouts and financials in the Partner Dashboard	shown	SH-S-2855;SH-S-1897	
+SH-C-169	decides	operator: Shopify pays Partners twice per calendar month and may set off or withhold payments, including during fraud, risk and anti-money laundering reviews	shown	SH-S-0295;SH-S-0759;SH-S-0758	
+SH-C-169	legal	platform company: Shopify collects charges from merchants and pays out the developer's share	shown	SH-S-0282;SH-S-0287	
+SH-C-169	boundary	contract: Partner Program Agreement (payments and revenue share)	shown	SH-S-0295;SH-S-0287	
+SH-C-169	reason	not shown	not shown		
+SH-C-170	software	outside platform: services that partners and experts provide to merchants	shown	SH-S-2092;SH-S-2104	
+SH-C-170	decides	merchant: the merchant hires the partner	shown	SH-S-0761	
+SH-C-170	legal	other: the Partner, who is responsible for its services and for having a Merchant Agreement in place	shown	SH-S-0760;SH-S-0761	
+SH-C-170	boundary	contract: Merchant Agreement between Partner and merchant; other: expert and professional services fees on the Shopify bill	shown	SH-S-0761;SH-S-2092	
+SH-C-170	reason	not shown	not shown		
+SH-C-171	software	core: API conventions (versioning, rate limits, bulk operations)	shown	SH-S-0793;SH-S-0770;SH-S-0687	
+SH-C-171	decides	platform at build: quarterly API versions; unversioned APIs may change at any time; Shopify may temporarily reduce rate limits	shown	SH-S-0690;SH-S-0691;SH-S-0688	
+SH-C-171	decides	operator, per plan: rate limit buckets depend on the plan; Plus has higher API limits	shown	SH-S-0689;SH-S-1998	
+SH-C-171	legal	platform company: Shopify owns the platform and sets limits on merchant data use	shown	SH-S-0221	
+SH-C-171	boundary	API: GraphQL Admin API conventions; event: bulk_operations/finish	shown	SH-S-1158	
+SH-C-171	reason	rate limits keep the platform stable and fair for everyone	shown	SH-S-0687	
+SH-C-172	software	core: restricted access for a store, with a limited admin and an appeal form	shown	SH-S-0658;SH-S-0660;SH-S-0661	
+SH-C-172	decides	operator: Shopify may refuse or remove Materials, place a store in restricted access without prior communication, and suspend or terminate an account for any reason	shown	SH-S-0031;SH-S-0659;SH-S-0074	
+SH-C-172	decides	operator: enforcement gives notice and self-remediation, acts at product level first and at account level as a last resort	shown	SH-S-0173	
+SH-C-172	legal	merchant: the merchant is responsible for following the rules of the platform, its partners and the law	shown	SH-S-0166;SH-S-0167	
+SH-C-172	boundary	contract: the Acceptable Use Policy, incorporated into the Terms of Service; a report-a-merchant tool; an appeal form in the admin	shown	SH-S-0076;SH-S-2138;SH-S-0661	
+SH-C-172	reason	most product eligibility and takedown disputes originate outside Shopify, from regulators and third-party rights holders	shown	SH-S-0172	
+SH-C-173	software	not shown	not shown		
+SH-C-173	decides	operator, per market: the prohibited list varies by region; categories come from law, Payment Network rules, Shopify and the requirements of processors' Financial Services Providers	shown	SH-S-0328;SH-S-0108;SH-S-0329;SH-S-0327	
+SH-C-173	legal	partner: each Payment Processor in the Designated Country provides the prohibited and restricted categories, linked from the Payment Processor List	shown	SH-S-0109	
+SH-C-173	boundary	contract: the prohibited-businesses section of the Shopify Payments Terms for each country	shown	SH-S-0108;SH-S-2982	
+SH-C-173	reason	Shopify Payments involves an ecosystem of processors, card networks and banks, whose rules apply	shown	SH-S-0169;SH-S-0170	
+SH-C-174	software	not shown	not shown		Observation from the inventory lists: the sign-up country list (233 options) and the business-entity country list (237) do not include Cuba, Iran, North Korea or Syria. Inference: the lists follow the unsupported-regions list; no source states how screening is built into the software.
+SH-C-174	decides	outside rules: sanctions and embargoes of the United States, Canada or the European Union, and blocked or denied persons lists, for Shopify Payments; trade sanctions of any government for the Payment Facilitator Terms	shown	SH-S-0122;SH-S-0131	
+SH-C-174	decides	operator: Shopify keeps a list of unsupported countries and regions: no accounts, no access to storefronts or accounts, no products originating from them and no orders shipping to them	shown	SH-S-0298;SH-S-0299;SH-S-0300;SH-S-0301;SH-S-0302;SH-S-0303;SH-S-0304;SH-S-0305;SH-S-0306;SH-S-0307	
+SH-C-174	decides	operator: a Shopify Payments account can be put on hold for sanctions related to the business's location	shown	SH-S-0353	
+SH-C-174	legal	merchant: the merchant may not use Shopify Payments if resident in a sanctioned country or region or if blocked or denied; Partners warrant they are not in an Unsupported Region and that their apps are classified EAR99	shown	SH-S-0122;SH-S-0297;SH-S-0296	
+SH-C-174	legal	partner: Payment Processors process personal data as independent controllers for sanctions and KYC/AML obligations	shown	SH-S-0100;SH-S-0099	
+SH-C-174	boundary	contract: Shopify Payments Terms, Payment Facilitator Terms and Partner Program Agreement; the Help Center list of unsupported countries and regions	shown	SH-S-0122;SH-S-0131;SH-S-0289;SH-S-0290;SH-S-2896	
+SH-C-174	reason	"local regulatory requirements, commercial partnerships, and/or other pertinent factors"	shown	SH-S-0298;SH-S-0289	
+SH-C-175	software	not shown	not shown		The Help Center compliance pages give information only; no setting or API is described for these rules.
+SH-C-175	decides	outside rules: the laws of the jurisdictions of the business and of its customers, including import and export rules and recalls	shown	SH-S-0667;SH-S-0669	
+SH-C-175	legal	merchant: the merchant is the seller, responsible for its store, products and transactions; Shopify is not the merchant of record	shown	SH-S-0011;SH-S-0236;SH-S-0013;SH-S-0668	
+SH-C-175	boundary	contract: Terms of Service section 4 (Your Responsibilities); Help Center guides on consumer protection, alcohol, hemp and other regulated products	shown	SH-S-0012;SH-S-2889	
+SH-C-175	reason	not shown	not shown		
+SH-C-176	software	not shown	not shown		
+SH-C-176	decides	other: rights holders file copyright and trademark reports	shown	SH-S-2145;SH-S-2146	
+SH-C-176	legal	merchant: the merchant keeps ownership of its Materials and grants Shopify a licence to them	shown	SH-S-0042	
+SH-C-176	boundary	contract: Terms of Service sections 8 and 11; copyright and trademark report forms	shown	SH-S-3130;SH-S-3133	
+SH-C-176	reason	not shown	not shown		
+SH-C-177	software	not shown	not shown		
+SH-C-177	decides	outside rules: the EU Platform to Business Regulation (retained in the United Kingdom) and the Digital Services Act	shown	SH-S-0655;SH-S-0656	
+SH-C-177	legal	separate entity of the platform: Shopify International Limited is "Shopify" under the supplementary terms for EU merchants, governed by Irish law	shown	SH-S-0207;SH-S-0211	
+SH-C-177	boundary	contract: Supplementary Terms of Service for E.U. Merchants with an internal complaint-handling system; a P2B complaint form; published legal notices	shown	SH-S-0210;SH-S-0654;SH-S-2161	
+SH-C-177	reason	not shown	not shown		The legal index links a Digital Service Act page at https://www.shopify.com/legal/dsa, which returned HTTP 404 on 2026-10-10 (see not-reached.tsv).
+SH-C-178	software	core: a complaint form on shopify.com for financial products	shown	SH-S-0657	
+SH-C-178	decides	merchant: the merchant submits a complaint about a financial product	shown	SH-S-0657	
+SH-C-178	legal	not shown	not shown		The form does not name the entity that handles complaints. It lists "Capital - US Merchant Cash Advance (MCA)" and "Capital - Canada Merchant Cash Advance (MCA)", while the Help Center pages for the United States and Canada describe loans.
+SH-C-178	boundary	other: a web form whose product list is Balance, Credit, Shop Pay Installments, Capital - US loan, Capital - US MCA, Capital - UK MCA, Capital - Canada MCA and Capital - Australia	shown	SH-S-2153;SH-S-2171;SH-S-2174;SH-S-2177	
+SH-C-178	reason	not shown	not shown		
+SH-C-179	software	core: a Legal Access Request form that requires a Shopify account	shown	SH-S-0653	
+SH-C-179	decides	operator: Shopify shares identifiable information only on valid and enforceable legal process, notifies those affected unless prohibited, and sends requests about customers to the merchant first	shown	SH-S-0650;SH-S-0651;SH-S-0652;SH-S-0185	
+SH-C-179	decides	other: Payment Processors may hold funds or data as required by legal process	shown	SH-S-0123	
+SH-C-179	legal	other: requests concern "information held by Shopify"; the guidelines do not name a Shopify entity	shown	SH-S-0653	
+SH-C-179	boundary	other: the Legal Access Request form and an annual transparency report	shown	SH-S-0653;SH-S-0647	
+SH-C-179	reason	to balance Shopify's legal obligations, the requester's needs and the interests of merchants, customers and partners	shown	SH-S-0675	
+SH-C-180	software	not shown	not shown		
+SH-C-180	decides	outside rules: data protection laws such as GDPR and US state privacy laws	shown	SH-S-3050;SH-S-3052	
+SH-C-180	legal	merchant: the merchant is the Data Controller of its customers' personal data and Shopify the Data Processor	shown	SH-S-0186;SH-S-0187	
+SH-C-180	legal	platform company: Shopify acts as controller for Enhanced Services (Shopify Network Intelligence) and for its consumer services such as Shop and Shop Pay	shown	SH-S-0192;SH-S-0244;SH-S-0046	
+SH-C-180	boundary	contract: the Data Processing Addendum, incorporated into the Terms of Service, between the merchant and the Shopify Contracting Entity	shown	SH-S-0072;SH-S-0187;SH-S-2127	
+SH-C-180	reason	not shown	not shown		
+SH-C-181	software	core: storage across multiple Google Cloud Platform regions that Shopify rebalances; new merchants in Europe have store, order and customer data stored at rest in Europe by default	shown	SH-S-0636;SH-S-0638;SH-S-0195;SH-S-0196;SH-S-0198	
+SH-C-181	software	core: shops are grouped in pods on isolated datastores, each pod with an active and a recovery data center (engineering post, 2018)	shown	SH-S-0672;SH-S-0673	
+SH-C-181	decides	operator: Shopify moves data geographically to operate its services; data stored in Europe is still processed through international transfers	shown	SH-S-0637;SH-S-0639	
+SH-C-181	decides	operator, per market: European merchants get European storage by default	shown	SH-S-0638	
+SH-C-181	legal	separate entity of the platform: Shopify International Limited (Ireland) receives the data of people in the EEA, the UK and Switzerland and is the GDPR main establishment	shown	SH-S-0227;SH-S-0194;SH-S-0641	
+SH-C-181	legal	platform company: transfers to Shopify Inc. in Canada rely on the EU adequacy decision for Canada; Shopify describes itself as a Canadian company that may send data to the United States	shown	SH-S-0640;SH-S-0175;SH-S-0226	
+SH-C-181	legal	partner: hosting subprocessors such as Google Cloud Canada Corporation and Amazon Web Services process all platform data	shown	SH-S-0195;SH-S-0197;SH-S-0198	
+SH-C-181	boundary	contract: the Data Processing Addendum (data may be processed wherever Shopify, its affiliates or providers are located), Standard Contractual Clauses, and Binding Corporate Rules that took effect on July 8, 2026	shown	SH-S-0188;SH-S-0191;SH-S-0643;SH-S-0648;SH-S-0176	
+SH-C-181	reason	a reliable and scalable infrastructure that can handle unpredictable volumes	shown	SH-S-0636	
+SH-C-181	reason	isolating each shard so that a failure cannot spread into a platform outage (engineering post, 2018)	shown	SH-S-0674	
+SH-C-182	software	outside platform: third-party subprocessors for cloud hosting, content delivery, load balancing, logging, data analysis and email, among others	shown	SH-S-0184;SH-S-0645;SH-S-0199;SH-S-0197	
+SH-C-182	decides	operator: Shopify selects subprocessors and limits them to technical services; the merchant can object to a new subprocessor and terminate the affected services within 30 days	shown	SH-S-0645;SH-S-0189	
+SH-C-182	legal	partner: third-party subprocessors under data processing agreements, for whose acts Shopify is fully liable	shown	SH-S-0190;SH-S-0643	
+SH-C-182	legal	separate entities of the platform: affiliated subprocessors include Shopify Inc., Shopify Capital Inc. and Shopify Payments (USA) Inc.	shown	SH-S-0203;SH-S-0204;SH-S-0205	
+SH-C-182	boundary	contract: Data Processing Addendum (subprocessors); other: a notification sign-up for new subprocessors	shown	SH-S-0189;SH-S-0206	
+SH-C-182	reason	not shown	not shown		
+SH-C-183	software	core: a shop/redact webhook tells apps to delete shop data	shown	SH-S-1356	
+SH-C-183	decides	operator: the privacy policy says store information is kept for two years after a store closes or is terminated before deletion begins; the 2022 EU supplementary terms say personal information is deleted within 90 days of termination	shown	SH-S-0182;SH-S-0209	
+SH-C-183	decides	merchant: where Shopify processes data for the merchant, the merchant decides retention	shown	SH-S-0183	
+SH-C-183	legal	app developer: developers delete merchant data within 30 days after an app is uninstalled	shown	SH-S-0219	
+SH-C-183	boundary	event: shop/redact compliance webhook; contract: privacy policy, EU terms and API terms	shown	SH-S-1356;SH-S-0219	
+SH-C-183	reason	not shown	not shown		
+SH-C-184	software	core: Shopify stores, processes or transmits card Account Data for the merchant, and Shop Pay details are kept on Shopify's PCI compliant servers	shown	SH-S-0073;SH-S-0097;SH-S-0407	
+SH-C-184	decides	outside rules: PCI DSS	shown	SH-S-0073	
+SH-C-184	legal	other: Shopify "acknowledges that it is responsible for securing such Account Data"	shown	SH-S-0073;SH-S-0097	
+SH-C-184	legal	partner: Stripe provides the P2PE service for POS equipment	shown	SH-S-0089	
+SH-C-184	boundary	contract: Terms of Service section 12 and the data security section of the Shopify Payments Terms	shown	SH-S-0073;SH-S-0097;SH-S-3134	
+SH-C-184	reason	not shown	not shown		
+SH-C-185	software	outside platform: sourcing, dropshipping and print-on-demand apps in the App Store	shown	SH-S-2568;SH-S-2566	
+SH-C-185	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-185	legal	app developer: third-party services between the merchant and the provider; the merchant remains responsible for its products	shown	SH-S-0058;SH-S-0236	
+SH-C-185	boundary	contract: Terms of Service 9.9 Third Party Services; other: Help Center dropshipping guidance	shown	SH-S-3181;SH-S-2890	
+SH-C-185	reason	not shown	not shown		
+SH-C-186	software	core: selling plan and subscription contract APIs; extension point: subscription apps build the experience	shown	SH-S-0763;SH-S-0762;SH-S-0892;SH-S-2657	
+SH-C-186	decides	operator: selling subscriptions requires Shopify Payments as the primary payment gateway; on POS too	shown	SH-S-0764;SH-S-0593	
+SH-C-186	decides	merchant: the merchant installs a subscription app and offers selling plans	shown	SH-S-0763	
+SH-C-186	legal	merchant: the subscription contract is between the customer and the merchant	shown	SH-S-0762	
+SH-C-186	boundary	API: purchase option scopes; event: selling plan and subscription contract webhooks	shown	SH-S-1055;SH-S-1351	
+SH-C-186	reason	not shown	not shown		
+SH-C-187	software	outside platform: loyalty, rewards, wishlist and donation apps	shown	SH-S-2581;SH-S-2583	
+SH-C-187	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-187	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-187	boundary	contract: Terms of Service 9.9 Third Party Services	shown	SH-S-3181	
+SH-C-187	reason	not shown	not shown		
+SH-C-188	software	outside platform: upsell, bundle and pre-order apps; extension point: product configuration extensions	shown	SH-S-2604;SH-S-2207	
+SH-C-188	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-188	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-188	boundary	extension point: product configuration; API: bundles scope	shown	SH-S-2207;SH-S-1100	
+SH-C-188	reason	not shown	not shown		
+SH-C-189	software	outside platform: custom product and product option apps	shown	SH-S-2644	
+SH-C-189	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-189	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-189	boundary	contract: Terms of Service 9.9 Third Party Services	shown	SH-S-3181	
+SH-C-189	reason	not shown	not shown		
+SH-C-190	software	outside platform: digital goods, event and token-gating apps; a Blockchain section exists in the admin router	shown	SH-S-2648;SH-S-1550	
+SH-C-190	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-190	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-190	boundary	contract: Terms of Service 9.9 Third Party Services	shown	SH-S-3181	
+SH-C-190	reason	not shown	not shown		
+SH-C-191	software	outside platform: accounting and ERP apps	shown	SH-S-2706;SH-S-2613	
+SH-C-191	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-191	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-191	boundary	contract: Terms of Service 9.9 Third Party Services	shown	SH-S-3181	
+SH-C-191	reason	not shown	not shown		
+SH-C-192	software	outside platform: helpdesk, chat and FAQ apps	shown	SH-S-2721;SH-S-2723	
+SH-C-192	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-192	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-192	boundary	contract: Terms of Service 9.9 Third Party Services	shown	SH-S-3181	
+SH-C-192	reason	not shown	not shown		
+SH-C-193	software	outside platform: page builder, content, media, pop-up and SEO apps	shown	SH-S-2662	
+SH-C-193	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-193	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-193	boundary	extension point: theme app extensions	shown	SH-S-0705	
+SH-C-193	reason	not shown	not shown		
+SH-C-194	software	outside platform: advertising and affiliate apps	shown	SH-S-2573	
+SH-C-194	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-194	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-194	boundary	contract: Terms of Service 9.9 Third Party Services	shown	SH-S-3181	
+SH-C-194	reason	not shown	not shown		
+SH-C-195	software	outside platform: mobile app builder apps, with mobile platform application scopes	shown	SH-S-2701;SH-S-1128	
+SH-C-195	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-195	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-195	boundary	API: mobile platform application scopes	shown	SH-S-1129	
+SH-C-195	reason	not shown	not shown		
+SH-C-196	software	outside platform: security, anti-theft and legal apps	shown	SH-S-2715;SH-S-2719	
+SH-C-196	decides	merchant: the merchant installs the apps	shown	SH-S-0755	
+SH-C-196	legal	app developer: third-party services between the merchant and the provider	shown	SH-S-0058	
+SH-C-196	boundary	contract: Terms of Service 9.9 Third Party Services	shown	SH-S-3181	
+SH-C-196	reason	not shown	not shown		

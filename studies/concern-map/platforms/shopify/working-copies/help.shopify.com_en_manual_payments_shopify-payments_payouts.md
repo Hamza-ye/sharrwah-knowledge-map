@@ -1,0 +1,27 @@
+# Getting paid with Shopify Payments
+
+After a customer pays for an order using Shopify Payments and [specific accelerated checkouts](/manual/payments/getting-paid#how-you-get-paid), the funds are transferred to the payout bank account that you [set up with Shopify Payments](/manual/payments/shopify-payments/onboarding).
+
+The following types of accounts can accept Shopify Payments payouts:
+
+* a checking account that meets the bank account requirements for Shopify Payments in [your country](/manual/payments/shopify-payments/supported-countries)
+* a [Shopify Balance account](/manual/finance/shopify-balance)
+
+In certain countries, there's a minimum payout amount for Shopify Payments. To check whether your country has a minimum payout amount, review the **Minimum payout amounts** section of the [Shopify Payments country where your store is based](/manual/payments/shopify-payments/supported-countries).
+
+With Shopify Payments, you can [receive payouts in a different currency than the currency that you sell in](/manual/payments/shopify-payments/store-currency/payouts-in-multiple-currencies).
+
+You can use the [Shopify Payments activity report](/manual/payments/shopify-payments/payouts/payouts-activity-report) to review a breakdown of your Shopify Payments transactions, fees, and payouts for a selected date range and currency.
+
+### In this section
+
+- [Understanding Shopify Payments payout timing](/en/manual/payments/shopify-payments/payouts/payout-timing)
+- [Viewing and exporting your Shopify Payments payout details](/en/manual/payments/shopify-payments/payouts/view-details)
+- [Viewing your Shopify Payments payout fees](/en/manual/payments/shopify-payments/payouts/pay-periods-and-fees)
+- [Shopify Payments activity report](/en/manual/payments/shopify-payments/payouts/payouts-activity-report)
+- [Scheduling your Shopify Payments payouts](/en/manual/payments/shopify-payments/payouts/schedule-payouts)
+- [Failed Shopify Payments payouts](/en/manual/payments/shopify-payments/payouts/failed-payouts)
+- [Navigating your Shopify Payments payouts to resolve lower or missing payouts](/en/manual/payments/shopify-payments/payouts/lower-or-missing-payouts)
+- [Shopify Payments refunds](/en/manual/payments/shopify-payments/payouts/refunds)
+- [Overview of reserves in Shopify Payments](/en/manual/payments/shopify-payments/payouts/reserves)
+- [Shopify Payments account holds](/en/manual/payments/shopify-payments/payouts/account-holds)

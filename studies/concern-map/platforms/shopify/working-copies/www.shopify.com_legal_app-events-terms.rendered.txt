@@ -1,0 +1,219 @@
+Skip to Content
+Why Shopify
+
+Get started fast
+
+You could be selling by tomorrow.
+
+Switch to Shopify
+
+Get more customers. Make more sales.
+
+Trusted by enterprise brands
+
+No matter your size, complexity, or ambition.
+
+BUILT INTO EVERY STORE
+
+World's best checkout
+
+Proven to convert better.
+
+Sidekick
+
+Your commerce-obsessed AI assistant.
+
+Products
+
+BUILD YOUR WEBSITE
+
+Website Builder
+Themes
+Domains
+Customer Accounts
+Sidekick
+
+SELL ANYWHERE
+
+Online
+AI Chats
+Point of Sale
+Shop App
+Social & Marketplaces
+Global
+B2B
+Across Markets
+
+MARKETING & ANALYTICS
+
+Advertising & Campaigns
+Email & Customer Chat
+Discounts
+Analytics
+Test & Launch
+
+RUN YOUR BUSINESS
+
+Orders & Inventory
+Shipping
+Finances & Funding
+Workflow Automation
+
+GET PAID
+
+Checkout
+Payments
+Taxes
+CUSTOMIZE & EXTEND SHOPIFY
+
+Commerce for Agents
+
+Build with our agent tools
+
+Shopify App Store
+
+Largest commerce ecosystem
+
+Shopify.dev
+
+Dev docs, CLI, and more
+
+NON-STOP INNOVATION
+
+Shopify Editions
+
+150+ updates to Shopify, twice a year.
+
+LATEST UPDATES
+
+Agentic Storefronts
+Campaign Autopilot
+Shopify AI Toolkit for devs
+Pricing
+Enterprise
+Log in
+Start for free
+App Events API Terms of Service
+TABLE OF CONTENTS
+1. Eligibility and Access
+2. Using the API
+3. Content Restrictions
+4. Intellectual Property
+5. Security
+6. Modifications
+7. Suspension and Termination
+8. Disclaimer, Indemnity, and Limitation of Liability
+9. General
+
+Last Updated: April 27, 2026
+
+By accessing or using the App Events API ("App Events API"), you agree to these terms below and any accompanying App Events API documentation and policies (together, the "App Events API Terms").
+
+If you access or use the App Events API as a Partner, the Partner Program Agreement ("PPA") is incorporated by reference and applies to your access to and use of the App Events API. If you access or use the App Events API as a Merchant, the Shopify Terms of Service ("TOS") is incorporated by reference and applies to your access to and use of the App Events API. In each case, the disclaimers, indemnities, and limitations of liability in the applicable agreement and outlined below in Section 8 apply to your access to and use of the App Events API.
+
+In the event of any conflict or inconsistency between the App Events API Terms and the PPA or the TOS, these App Events API Terms will control with respect to the App Events API. Capitalized terms not defined here have the meanings given in the PPA or the TOS.
+
+1. Eligibility and Access
+
+1.1 App Events API Access. The App Events API allows partners and merchants to transmit events to Shopify (collectively, "Event Data"). "App" means the software application, website, interface, integration or any other means you use to access the Shopify API using the API Credentials, including but not limited to a Custom Application or a Public Application.
+
+1.2 API Credentials. You are responsible for maintaining the confidentiality and security of any credentials, tokens, or keys issued to you to access the App Events API. You must notify Shopify immediately, and in no event later than twenty-four (24) hours, after becoming aware of any actual or suspected unauthorized access to your API credentials or to Event Data you have submitted to Shopify.
+
+2. Using the API
+
+2.1 Permitted Access. You will only access (or attempt to access) the App Events API by the means described in the App Events API documentation.
+
+2.2 API Prohibitions. When using the App Events API, you may not (or allow those acting on your behalf to):
+
+Perform an action with the intent of introducing to Shopify any viruses, worms, defects, Trojan horses, malware, or any items of a destructive nature.
+Interfere with or disrupt the APIs or the servers or networks providing the APIs.
+Remove, obscure, or alter any Shopify terms of service or any links to or notices of those terms.
+
+2.3 Limitations. Shopify may impose and enforce limitations on use of the App Events API or on Event Data (e.g., limits on the number of parameters, field character lengths, data types). You agree to, and will not attempt to circumvent, such limitations or otherwise place an unreasonable burden on Shopify's systems.
+
+3. Content Restrictions
+
+3.1 App Registration. You may only submit Event Data in connection with an App that has an associated Client ID. You must submit Event Data in a format specified in the App Events API documentation. For more information, see the App Events API documentation.
+
+3.2 No Personal Information. The App Events API does not support the processing of Personal Information. You must not submit Personal Information through the App Events API. "Personal Information" means any information relating to a natural person who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, a phone number, an email address, an identification number, location data, an online identifier, or any other information specific to that natural person.
+
+3.3 Your Responsibility. You remain responsible for: (1) ensuring the information you submit through the App Events API does not contain Personal Information, and (2) implementing technical and organizational measures to prevent Personal Information from being sent to Shopify. Laws vary across countries and because the App Events API can be used in different ways, consult an attorney if you are in doubt whether certain information might constitute Personal Information.
+
+3.4 Accuracy. You must only submit Event Data that accurately reflects genuine events within your App. You must not submit Event Data that is fabricated, manipulated, inflated, or otherwise misleading, including for the purpose of affecting billing calculations or usage metrics. You represent and warrant that all Event Data you submit is accurate in all material respects.
+
+3.5 Lawfulness. You represent and warrant that you have all rights necessary (including from your end users or merchants) to submit Event Data to Shopify, including any rights required with respect to data about your merchants' stores and business events.
+
+3.6 Additional Prohibitions. You must not use the App Events API to submit content that is unlawful, harmful (e.g., malware, viruses, malicious code), threatening, abusive, defamatory, or otherwise objectionable as determined by Shopify in its sole discretion.
+
+4. Intellectual Property
+
+4.1 License to Shopify. As between you and Shopify, you retain ownership of any proprietary rights you hold in the underlying Event Data you submit, subject to the license you grant under these App Events API Terms. By submitting Event Data through the App Events API, you grant Shopify a worldwide, non-exclusive, royalty-free, transferable license to receive, store, process, analyze, and display Event Data to provide the App Events API, improve and enhance the App Events API and Shopify's services. This license continues for as long as we retain the Event Data in accordance with our data retention practices.
+
+4.2 API License. Shopify owns the App Events API, the Dev Dashboard, and all software, infrastructure, and interfaces used to operate them. Nothing in the App Events API Terms transfers any ownership of these assets to you. Subject to your compliance with these App Events API Terms and all other applicable terms and policies, Shopify grants you a limited, non-exclusive, non-sublicensable, non-transferable, non-assignable license to use the App Events API for internal business purposes, but only to the extent permitted in these App Events API Terms and the App Events API documentation. You will not sell, transfer, assign, or sublicense any rights granted by the App Events API to anyone. Except as expressly licensed herein, you will not use, access, integrate with, modify, translate, create derivative works of, reverse engineer, or otherwise exploit the App Events API or any aspect thereof. Shopify reserves all rights, title, and interest (including the right to enforce any such rights) not expressly granted in these App Events API Terms.
+
+4.3 Open Source Software. Some of the software required by or included in our APIs may be offered under an open source license. Open source software licenses constitute separate written agreements. For certain APIs, open source software is listed in the documentation.
+
+4.4 Feedback. If you provide Shopify with feedback, suggestions, or ideas relating to the App Events API, you assign to Shopify all right, title, and interest in that feedback, and Shopify may use it without restriction or compensation to you.
+
+5. Security
+
+5.1 Your Obligations. You must implement and maintain reasonable and appropriate technical and organizational security measures to protect the security of your systems, API credentials, and any data processed in connection with your use of the App Events API.
+
+5.2 Shopify's Monitoring. Shopify may monitor or audit API usage to ensure system integrity, detect fraud or abuse, or verify compliance with the App Events API Terms.
+
+6. Modifications
+
+6.1 API Changes. Shopify reserves the right to modify, limit, or discontinue any feature or functionality of the App Events API at any time. Shopify shall not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the App Events API.
+
+6.2 Terms Changes. Shopify may update these App Events API Terms at any time. We may provide additional notice, such as messaging via email or the Dev Dashboard of significant changes. Your continued use of the App Events API following a change constitutes acceptance of the change.
+
+7. Suspension and Termination
+
+7.1 Suspension. Shopify expressly reserves the right, in its sole discretion, without notice or liability, to suspend, terminate, limit, or throttle your account or access to and availability of the App Events API or the Shopify platform.
+
+7.2 Termination. You may stop using the App Events API at any time. Shopify reserves the right to terminate the App Events API Terms with you or discontinue the App Events API or any portion or feature or your access thereto for any reason and at any time without liability or other obligation to you. Upon termination: (a) all licenses granted to you under these App Events API Terms immediately cease; (b) you must destroy or return any Shopify Confidential Information in your possession; and (c) Shopify may retain Event Data you have submitted in accordance with its standard data retention practices.
+
+8. Disclaimer, Indemnity, and Limitation of Liability
+
+8.1 Indemnity. If Shopify receives any notice or claim that any Event Data hereunder infringes or violates the rights of a third party or any applicable law (a "Claim"), you will indemnify, defend and hold Shopify harmless from all liability, damages, settlements, attorney fees and other costs and expenses in connection with any such Claim.
+
+8.2 Disclaimers. Shopify does not represent or warrant that the App Events API is free of inaccuracies, errors, bugs, or interruptions, or is reliable, accurate, or complete. The App Events API is provided "as is" with no warranty, express or implied, of any kind. Shopify expressly disclaims any and all warranties and conditions, including any implied warranty of merchantability, fitness for a particular purpose, availability, security, title, and non-infringement.
+
+9. General
+
+9.1 Confidentiality. Your API credentials, any non-public features of the App Events API, and any non-public information Shopify designates as confidential or that would normally be considered confidential under the circumstances are Shopify's Confidential Information. Shopify's communications to you and our APIs may contain Shopify Confidential Information.
+
+9.2 Survival. Those terms that by their nature are intended to continue indefinitely will continue to apply, including but not limited to: Sections 1.2 (API Credentials), 2.2 (API Prohibitions), 3.4 (Accuracy), 3.5 (Lawfulness), 4.1 (License to Shopify), 4.4 (Feedback), 7.2 (Termination), 8 (Disclaimer, Indemnity, and Limitation of Liability), and 9 (General).
+
+9.3 Entire Agreement. These App Events API Terms, together with the PPA and the TOS, and any terms incorporated by reference, constitute the entire agreement between you and Shopify with respect to the App Events API and supersede all prior agreements and understandings on that subject.
+
+Shopify
+What is Shopify?
+Shopify Editions
+Careers
+Investors
+Newsroom
+Sustainability
+Ecosystem
+Developer Docs
+Theme Store
+App Store
+Partners
+Affiliates
+Resources
+Blog
+Compare Shopify
+Guides
+Free Tools
+Changelog
+Support
+Shopify Help Center
+Community Forum
+Hire a Partner
+Service Status
+USA | English
+Terms of Service
+Legal
+Privacy Policy
+Sitemap
+Your Privacy Choices

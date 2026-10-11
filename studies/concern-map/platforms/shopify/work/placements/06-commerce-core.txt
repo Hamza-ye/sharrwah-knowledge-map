@@ -1,0 +1,309 @@
+# Families C-E: catalog, customers and B2B, checkout and orders
+concern: cat.products
+software: core: Products in the admin and the Products API || cites: inv:admin-navigation|Products|Main navigation, inv:api-resources|Product, inv:access-scopes|read_products
+decides: merchant: the merchant creates and manages products || cites: inv:other:staff-permissions|Products > View
+decides: operator, per plan: unlimited products on every plan || cites: inv:plan-features|Sell unlimited products|Public pricing
+legal: merchant: the merchant is responsible for the goods and services it sells; Shopify keeps a licence to the merchant's Materials and may refuse or remove them || cites: tos_merchant_store, tos_materials_license, tos_refuse_materials
+boundary: API: read_products and write_products scopes; event: products/create, products/update and products/delete webhooks; other: UCP catalog search and lookup || cites: inv:access-scopes|write_products, inv:webhook-topics|products/create, inv:other:ucp|dev.ucp.shopping.catalog.search
+reason: not shown
+
+concern: cat.collections
+software: core: Collections in the admin and the Collection API || cites: inv:admin-navigation|Collections|Main navigation, inv:api-resources|Collection
+decides: merchant: the merchant builds collections || cites: inv:admin-navigation|Collections|Main navigation
+legal: not shown
+boundary: API: products and collections API; event: collections/create, update and delete webhooks || cites: inv:api-resources|Products and collections, inv:webhook-topics|collections/create
+reason: not shown
+
+concern: cat.inventory
+software: core: Inventory in the admin and the Inventory API; inventory management on every plan || cites: inv:admin-navigation|Inventory|Main navigation, inv:api-resources|Inventory, inv:plan-features|Inventory management|Public pricing
+decides: merchant: the merchant adjusts inventory, choosing from Shopify's list of adjustment reasons || cites: inv:other:staff-permissions|MANAGE_INVENTORY, inv:other:value-lists|Inventory adjustment reasons (7 options)
+legal: not shown
+boundary: API: read_inventory and write_inventory scopes; event: inventory item and inventory level webhooks || cites: inv:access-scopes|write_inventory, inv:webhook-topics|inventory_items/create
+reason: not shown
+
+concern: cat.inventory_transfers
+software: core: Transfers and Purchase orders under Products, with transfer and shipment APIs || cites: inv:admin-navigation|Transfers|Main navigation, inv:admin-navigation|Purchase orders|Main navigation, inv:api-resources|InventoryTransfer
+decides: merchant: staff with transfer permissions manage transfers and shipments || cites: inv:other:staff-permissions|Products > Inventory > Manage transfers
+legal: not shown
+boundary: API: inventory shipment and purchase order scopes; event: inventory_shipments webhooks || cites: inv:access-scopes|write_inventory_shipments, inv:webhook-topics|inventory_shipments/create
+reason: not shown
+
+concern: cat.locations
+software: core: Locations in settings and the Location API; the number of inventory locations is a plan row || cites: inv:settings|Locations, inv:api-resources|Location, inv:plan-features|Inventory locations|Public pricing
+decides: merchant: the merchant adds and activates locations || cites: inv:other:staff-permissions|LOCATIONS
+decides: operator, per plan: the number of inventory locations is a plan row || cites: inv:plan-features|Inventory locations|Public pricing
+legal: not shown
+boundary: setting: Settings > Locations; API: read_locations and write_locations; event: locations webhooks || cites: inv:settings|Locations, inv:access-scopes|write_locations, inv:webhook-topics|locations/create
+reason: not shown
+
+concern: cat.gift_cards
+software: core: Gift cards in the admin, sold on every plan; redeemable payment extensions let third-party gift cards be accepted || cites: inv:admin-navigation|Gift cards|Main navigation, inv:plan-features|Sell gift cards|Public pricing, inv:extension-points|Redeemable (redeemable_payments)
+decides: merchant: the merchant issues and manages gift cards || cites: gc_merchant_responsible
+legal: merchant: the merchant is legally responsible for issuing and managing gift cards, for handling the amounts loaded (including escrow where the law requires) and for daily funds flow; Shopify provides software only || cites: gc_merchant_responsible, gc_escrow, gc_funds_flow
+boundary: contract: Gift Card & Store Credit Service Terms; API: gift card scopes || cites: inv:legal-agreements|Shopify Gift Card and Store Credit Terms, inv:access-scopes|read_gift_cards
+reason: not shown
+
+concern: cat.store_credit
+software: core: store credit accounts, with refund-to-store-credit permissions || cites: inv:access-scopes|read_store_credit_accounts, inv:other:staff-permissions|Orders > Returns and refunds > Refund to store credit
+decides: merchant: the merchant issues store credit || cites: gc_merchant_responsible
+legal: merchant: the merchant is legally responsible for store credit and the amounts it represents || cites: gc_merchant_responsible, gc_escrow
+boundary: contract: Gift Card & Store Credit Service Terms; API: store credit account scopes || cites: inv:legal-agreements|Shopify Gift Card and Store Credit Terms, inv:access-scopes|write_store_credit_account_transactions
+reason: not shown || note: For stores created on or after May 12, 2025, orders paid with store credit or gift cards carry third-party transaction fees (fees_store_credit_gift).
+
+concern: cat.files
+software: core: Files under Content in the admin || cites: inv:admin-navigation|Files|Main navigation, inv:access-scopes|read_files
+decides: merchant: the merchant uploads and manages files || cites: inv:other:staff-permissions|Content > Files
+legal: not shown
+boundary: API: read_files and write_files scopes || cites: inv:access-scopes|read_files, inv:access-scopes|write_files
+reason: not shown
+
+concern: cat.custom_data
+software: core: metafields and metaobjects (Settings > Metafields and metaobjects, Content > Metaobjects) || cites: inv:settings|Metafields and metaobjects, inv:admin-navigation|Metaobjects|Main navigation, inv:api-resources|Metafields
+decides: merchant: the merchant defines custom data; apps also define it || cites: inv:other:staff-permissions|Content > Metaobject definitions, inv:other:app-store-categories|Metafield apps
+legal: not shown
+boundary: API: metaobject scopes; event: metafield definition webhooks || cites: inv:access-scopes|read_metaobjects, inv:webhook-topics|metafield_definitions/create
+reason: not shown
+
+concern: cat.themes
+software: core: Online Store themes and the theme editor; themes are sold in the Theme Store || cites: inv:plan-features|Themes and templates|Public pricing, inv:api-resources|Liquid, inv:legal-agreements|9.6 Theme Store
+decides: merchant: the merchant chooses, edits and publishes a theme || cites: inv:other:staff-permissions|Online store > Themes, inv:webhook-topics|themes/publish
+legal: partner: theme designers keep the intellectual property and provide theme support || cites: tos_theme_designer, tos_theme_support
+boundary: API: theme scopes; event: themes webhooks; other: theme fees on the Shopify bill || cites: inv:access-scopes|write_theme_code, inv:webhook-topics|themes/create, inv:other:billing-charge-categories|Theme fees
+reason: not shown
+
+concern: cat.pages_blogs
+software: core: pages and blog posts under Content || cites: inv:admin-navigation|Blog posts|Main navigation, inv:api-resources|Blog
+decides: merchant: the merchant writes pages and posts || cites: inv:other:staff-permissions|Online store > Blog posts and pages
+legal: not shown
+boundary: API: online store pages scopes || cites: inv:access-scopes|read_online_store_pages, inv:access-scopes|write_online_store_pages
+reason: not shown
+
+concern: cat.navigation
+software: core: Menus under Content || cites: inv:admin-navigation|Menus|Main navigation
+decides: merchant: the merchant builds menus || cites: inv:other:staff-permissions|Content > Menus
+legal: not shown
+boundary: API: online store navigation scopes || cites: inv:access-scopes|read_online_store_navigation, inv:access-scopes|write_online_store_navigation
+reason: not shown
+
+concern: cat.translations
+software: core: Languages settings and translation APIs; storefront translation is a plan row; translatable resources are set by Shopify || cites: inv:settings|Languages, inv:api-resources|Localizations, inv:plan-features|Translate your storefront|Public pricing, inv:other:translatable-resources|Products
+decides: merchant: the merchant adds languages from Shopify's list (136 on the list read) || cites: inv:other:value-lists|Add language (136 languages)
+legal: not shown
+boundary: setting: Settings > Languages; API: locales and translations scopes; event: locales webhooks || cites: inv:settings|Languages, inv:access-scopes|read_translations, inv:webhook-topics|locales/create
+reason: not shown
+
+concern: cat.domains
+software: core: Domains in settings; custom domains on every plan; domain fees billed by Shopify || cites: inv:settings|Domains, inv:plan-features|Custom domain name|Public pricing, inv:other:billing-charge-categories|Domain fees
+decides: merchant: the merchant connects or buys domains; Shopify-bought domains renew each year while the account is active || cites: inv:other:staff-permissions|DOMAINS, tos_domains_renew
+legal: not shown
+boundary: setting: Settings > Domains; event: domains webhooks || cites: inv:settings|Domains, inv:webhook-topics|domains/create
+reason: not shown
+
+concern: cat.policies
+software: core: Policies in settings || cites: inv:settings|Policies
+decides: merchant: the merchant writes its policies; the Terms require contact information, terms of service, refund and shipping policies || cites: tos_policies_required, inv:other:staff-permissions|MANAGE_POLICIES
+legal: merchant: the store's policies are the merchant's || cites: tos_policies_required
+boundary: setting: Settings > Policies; API: legal policies scopes || cites: inv:settings|Policies, inv:access-scopes|write_legal_policies
+reason: not shown
+
+concern: cat.search
+software: core: storefront search and discovery API; search and filter apps also exist || cites: inv:api-resources|Search, inv:access-scopes|read_discovery, inv:other:app-store-categories|Search and filter apps
+decides: not shown
+legal: not shown
+boundary: API: discovery scopes || cites: inv:access-scopes|read_discovery, inv:access-scopes|write_discovery
+reason: not shown
+
+concern: cat.hosting
+software: core: unlimited web hosting and a free SSL certificate on every plan || cites: inv:plan-features|Unlimited web hosting|Public pricing, inv:plan-features|Free SSL certificate|Public pricing
+decides: operator, per plan: included in all plans || cites: inv:plan-features|Unlimited web hosting|Public pricing
+legal: not shown
+boundary: not shown
+reason: not shown
+
+concern: cat.catalogs
+software: core: Catalogs under Markets, for market and B2B price lists || cites: inv:admin-navigation|Catalogs|Main navigation, inv:other:help-center-sections|Creating catalogs for markets
+decides: merchant: the merchant builds catalogs || cites: inv:other:staff-permissions|Markets > Catalogs
+legal: not shown
+boundary: API: B2B and catalog resources || cites: inv:api-resources|B2B
+reason: not shown
+
+concern: cat.combined_listings
+software: core: Combined Listings, a Plus feature || cites: inv:plan-features|Merchandise with Shopify Combined Listings|Public pricing
+decides: operator, per plan: only on Shopify Plus || cites: inv:plan-features|Merchandise with Shopify Combined Listings|Public pricing
+legal: not shown
+boundary: not shown
+reason: not shown
+
+concern: cust.customers
+software: core: Customers in the admin and the Customers API || cites: inv:admin-navigation|Customers|Main navigation, inv:api-resources|Customers, inv:plan-features|Unlimited contacts|Public pricing
+decides: merchant: the merchant manages customer records || cites: inv:other:staff-permissions|Customers > View
+legal: merchant: the merchant is controller of its customers' personal data, Shopify the processor || cites: dpa_roles
+boundary: API: read_customers and write_customers; event: customers webhooks || cites: inv:access-scopes|read_customers, inv:webhook-topics|customers/create
+reason: not shown
+
+concern: cust.segments
+software: core: Segments under Customers, with segment template extensions || cites: inv:admin-navigation|Segments|Main navigation, inv:extension-points|Customer segment template (customer_segment_template)
+decides: merchant: the merchant creates segments || cites: inv:plan-features|Create customer segments|Public pricing
+legal: not shown
+boundary: event: customer.joined_segment and customer.left_segment webhooks; extension point: segment templates || cites: inv:webhook-topics|customer.joined_segment, inv:extension-points|Customer segment template (customer_segment_template)
+reason: not shown
+
+concern: cust.accounts
+software: core: customer accounts, where customers sign in to manage orders, returns and profile; the Customer Account API || cites: ca_def, inv:settings|Customer accounts, inv:api-resources|Customer Account API
+decides: merchant: the merchant sets account settings and sign-in options || cites: inv:settings|Customer accounts
+decides: buyer: the customer signs in with a one-time code, without a password || cites: ca_passwordless
+legal: not shown
+boundary: setting: Settings > Customer accounts; API: Customer Account API; event: customer_account_settings/update; other: UCP identity linking || cites: inv:settings|Customer accounts, inv:webhook-topics|customer_account_settings/update, inv:other:ucp|dev.ucp.common.identity_linking
+reason: not shown
+
+concern: cust.identity_providers
+software: extension point: third-party identity providers and Multipass replace the default customer sign-in || cites: ca_idp_plus, inv:api-resources|Third-party identity providers
+decides: operator, per plan: connecting an identity provider is for Shopify Plus || cites: ca_idp_plus
+decides: merchant: the merchant manages identity providers || cites: inv:other:staff-permissions|MANAGE_CUSTOMER_IDENTITY_PROVIDERS
+legal: not shown
+boundary: other: identity provider connection in customer account settings || cites: ca_idp_plus
+reason: not shown
+
+concern: cust.marketing_consent
+software: core: email, SMS and WhatsApp marketing consent stored on the customer, with consent mutations || cites: inv:api-resources|customerEmailMarketingSubscribe, inv:api-resources|customerWhatsAppMarketingConsentUpdate
+decides: buyer: the customer subscribes or unsubscribes || cites: inv:api-resources|customerEmailMarketingUnsubscribe
+legal: merchant: the merchant obtains consents for tracking and marketing || cites: tos_pixel_consents
+boundary: event: marketing consent update webhooks || cites: inv:webhook-topics|customers_email_marketing_consent/update, inv:webhook-topics|customers_marketing_consent/update
+reason: not shown
+
+concern: b2b.companies
+software: core: Companies under Customers and the B2B API; Shopify B2B is a plan row || cites: inv:admin-navigation|Companies|Main navigation, inv:api-resources|B2B, inv:plan-features|Shopify B2B|Public pricing
+decides: merchant: the merchant chooses a blended store or a B2B-only store and manages companies || cites: b2b_store_choice, inv:other:staff-permissions|Customers > Companies
+legal: not shown
+boundary: API: companies scopes; event: companies webhooks || cites: inv:access-scopes|read_companies, inv:webhook-topics|companies/create
+reason: not shown
+
+concern: b2b.payment_terms
+software: core: payment terms on orders and drafts (fixed, net or event-based); payment terms can also be set by the Payment Customization Function || cites: inv:access-scopes|read_payment_terms, pcfn_capabilities
+decides: merchant: staff with permission set payment terms || cites: inv:other:staff-permissions|Orders > Set payment terms
+legal: not shown
+boundary: API: payment terms scopes; event: payment_terms and payment_schedules/due webhooks || cites: inv:access-scopes|write_payment_terms, inv:webhook-topics|payment_schedules/due
+reason: not shown
+
+concern: chk.cart
+software: core: the cart, with Cart APIs and cart webhooks; UCP cart operations for agents || cites: inv:api-resources|Cart, inv:webhook-topics|carts/create, inv:other:ucp|dev.ucp.shopping.cart
+decides: merchant: cart quantity limits and cart permalinks || cites: inv:other:help-center-sections|Set a limit to the maximum quantity of items per cart, inv:other:help-center-sections|Cart permalinks
+legal: not shown
+boundary: API: Cart API and checkout scopes; event: carts webhooks || cites: inv:access-scopes|unauthenticated_write_checkouts, inv:webhook-topics|carts/update
+reason: not shown
+
+concern: chk.checkout
+software: core: Shopify Checkout, which the merchant must use for online store sales || cites: tos_use_shopify_checkout, inv:settings|Checkout, inv:plan-features|World's best-converting checkout|Public pricing
+decides: platform at build: orders may not be processed outside Shopify's Checkout; apps need written authorization to use an alternative checkout || cites: tos_no_circumvent_checkout, api_no_alt_checkout
+decides: merchant: the merchant sets checkout form options, tipping, address collection and order processing || cites: inv:other:help-center-sections|Editing the checkout form options
+decides: operator, per plan: high-volume checkout is a Plus row || cites: inv:plan-features|High volume checkout|Public pricing
+legal: merchant: the merchant is the seller and merchant of record for the transaction || cites: tos_not_marketplace, tos_not_mor
+boundary: setting: Settings > Checkout; event: checkouts webhooks; other: UCP checkout capability || cites: inv:settings|Checkout, inv:webhook-topics|checkouts/create, inv:other:ucp|dev.ucp.shopping.checkout
+reason: not shown
+
+concern: chk.checkout_branding
+software: core: checkout branding and checkout and accounts configurations || cites: inv:api-resources|Checkout branding, inv:api-resources|Checkout and accounts configurations
+decides: merchant: the merchant customizes checkout and accounts pages in the checkout editor || cites: inv:other:help-center-sections|Customizing and editing your checkout and accounts pages
+decides: operator, per plan: checkout customization is a plan row || cites: inv:plan-features|Checkout customization|Public pricing
+decides: other: agentic Participating Channels may customize Shopify Checkout and override the merchant's branding || cites: agt_channel_checkout
+legal: not shown
+boundary: API: checkout branding and configuration scopes || cites: inv:access-scopes|read_checkout_branding_settings, inv:access-scopes|write_checkout_and_accounts_configurations
+reason: not shown
+
+concern: chk.checkout_ui_ext
+software: extension point: checkout UI extensions, functions, web pixels and payments extensions, built by apps || cites: dev_checkout_extend, inv:extension-points|Checkout UI (checkout_ui), inv:api-resources|Checkout
+decides: merchant: the merchant places extensions in the checkout editor; Shopify can disable extensions || cites: tos_checkout_extensibility, tos_checkout_ext_responsible
+legal: merchant: the merchant is responsible for its own compliance when it uses checkout extensions || cites: tos_checkout_ext_responsible
+legal: app developer: extensions come from app developers, who are solely responsible for their applications || cites: api_developer_responsible
+boundary: other: upgrade-safe checkout extensions in apps; contract: Terms of Service 9.13 Shopify Checkout Extensibility || cites: dev_checkout_upgrade_safe, inv:legal-agreements|9.13 Shopify Checkout Extensibility
+reason: not shown
+
+concern: chk.abandoned
+software: core: Abandoned checkouts under Orders, with recovery on every plan || cites: inv:admin-navigation|Abandoned checkouts|Main navigation, inv:plan-features|Abandoned checkout recovery|Public pricing
+decides: merchant: the merchant manages recovery || cites: inv:other:staff-permissions|MANAGE_ABANDONED_CHECKOUTS
+legal: not shown
+boundary: event: checkouts webhooks || cites: inv:webhook-topics|checkouts/update
+reason: not shown
+
+concern: chk.bot_protection
+software: core: bot protection for the Online Store checkout || cites: bot_fairness, inv:admin-navigation|CommerceProtection
+decides: operator, per plan: only for Shopify Plus, activated by contacting Shopify Plus Support || cites: bot_plus, bot_contact_support
+legal: not shown
+boundary: not shown
+reason: a fairness control so that customers can buy scarce products during flash sales || cites: bot_fairness
+
+concern: chk.validation_fn
+software: extension point: the Cart and Checkout Validation Function API || cites: inv:api-resources|Cart and Checkout Validation, dev_fn_backend
+decides: merchant: the merchant installs and configures the function; Shopify executes it || cites: dev_fn_shopify_executes
+legal: app developer: built by app developers || cites: dev_fn_shopify_executes
+boundary: API: validations scopes; extension point: validation function settings || cites: inv:access-scopes|write_validations, inv:extension-points|Cart and checkout validation function settings (validation_settings_ui)
+reason: not shown
+
+concern: chk.cart_transform_fn
+software: extension point: the Cart Transform Function API || cites: inv:api-resources|Cart Transform, inv:extension-points|Cart transformer (cart_transform)
+decides: merchant: the merchant installs and configures the function; Shopify executes it || cites: dev_fn_shopify_executes
+legal: app developer: built by app developers || cites: dev_fn_shopify_executes
+boundary: API: cart transform scopes || cites: inv:access-scopes|write_cart_transforms
+reason: not shown
+
+concern: ord.orders
+software: core: Orders in the admin and the Orders API; UCP order capability for agents || cites: inv:admin-navigation|Orders|Main navigation, inv:api-resources|Order, inv:other:ucp|dev.ucp.shopping.order
+decides: merchant: the merchant manages and fulfills orders || cites: inv:other:staff-permissions|Orders > View
+legal: merchant: the contract of sale is between the merchant and the customer; the merchant is responsible for the transaction, fulfillment, refunds and returns || cites: tos_not_marketplace, tos_merchant_responsible_transactions
+boundary: API: read_orders and write_orders; event: orders webhooks || cites: inv:access-scopes|read_orders, inv:webhook-topics|orders/create
+reason: not shown
+
+concern: ord.draft_orders
+software: core: Drafts under Orders and the draftOrder API || cites: inv:admin-navigation|Drafts|Main navigation, inv:api-resources|draftOrder
+decides: merchant: staff create and send drafts || cites: inv:other:staff-permissions|Drafts > View
+legal: not shown
+boundary: API: draft order scopes; event: draft_orders webhooks || cites: inv:access-scopes|write_draft_orders, inv:webhook-topics|draft_orders/create
+reason: not shown
+
+concern: ord.order_editing
+software: core: order editing and customer edit requests || cites: inv:api-resources|orderRequestEdit, inv:access-scopes|write_order_edits
+decides: merchant: staff edit orders || cites: inv:other:staff-permissions|EDIT_ORDERS
+decides: buyer: customers can request edits, which the merchant approves or declines || cites: inv:webhook-topics|requested_order_edit/created, inv:webhook-topics|requested_order_edit/declined
+legal: not shown
+boundary: event: orders/edited and requested_order_edit webhooks || cites: inv:webhook-topics|orders/edited
+reason: not shown
+
+concern: ord.refunds
+software: core: refunds to the original payment or to store credit || cites: inv:api-resources|Refund, inv:other:staff-permissions|Orders > Returns and refunds > Refund to original payment
+decides: merchant: the merchant issues refunds || cites: inv:other:staff-permissions|Orders > Returns and refunds
+legal: merchant: refunds are the merchant's responsibility; currency conversion and card fees are not returned on a refund || cites: tos_merchant_responsible_transactions, fx_fee_shopify_charges
+boundary: event: refunds/create webhook || cites: inv:webhook-topics|refunds/create
+reason: not shown
+
+concern: ord.returns
+software: core: returns and exchanges, with return reasons from a Shopify list; return apps also exist || cites: inv:api-resources|return, inv:other:value-lists|Return reasons (10 options), inv:other:app-store-categories|Returns and exchanges apps
+decides: merchant: the merchant approves or declines returns || cites: inv:other:staff-permissions|RETURN_ORDERS, inv:webhook-topics|returns/approve
+decides: buyer: customers request returns || cites: inv:api-resources|orderRequestReturn
+legal: merchant: returns are the merchant's responsibility || cites: tos_merchant_responsible_transactions
+boundary: API: returns scopes; event: returns webhooks || cites: inv:access-scopes|write_returns, inv:webhook-topics|returns/approve
+reason: not shown
+
+concern: ord.risk
+software: core: fraud analysis on orders; Shopify Payments can block some high-risk checkout attempts || cites: fraud_review, fraud_sp_blocks, inv:plan-features|Built-in fraud analysis*|Public pricing
+decides: operator, per plan: fraud recommendations on Grow or higher, or with Shopify Payments || cites: fraud_plan
+decides: merchant: the merchant reviews high-risk orders and decides whether to cancel or capture || cites: fraud_review
+decides: outside rules: the card-issuing bank decides whether to reverse funds, not Shopify || cites: fraud_bank_decides
+legal: merchant: Shopify does not cover charge reversals from banks || cites: fraud_bank_decides
+boundary: event: orders/risk_assessment_changed webhook; other: fraud apps in the App Store || cites: inv:webhook-topics|orders/risk_assessment_changed, inv:other:app-store-categories|Fraud apps
+reason: not shown
+
+concern: ord.order_routing
+software: core: order routing rules that assign orders to locations || cites: routing_def
+software: extension point: order routing location rule functions || cites: inv:extension-points|Order routing location rule (order_routing_location_rule), inv:api-resources|Order Routing Location Rule
+decides: merchant: the merchant uses the default rules or customizes them || cites: routing_def
+legal: not shown
+boundary: event: fulfillment_orders/order_routing_complete webhook || cites: inv:webhook-topics|fulfillment_orders/order_routing_complete
+reason: not shown
+
+concern: ord.printing
+software: core: packing slip templates || cites: inv:access-scopes|read_packing_slip_templates
+software: extension point: admin print actions || cites: inv:extension-points|Admin print action (admin_print)
+decides: merchant: the merchant edits templates and prints || cites: inv:access-scopes|write_packing_slip_templates
+legal: not shown
+boundary: API: packing slip template scopes || cites: inv:access-scopes|write_packing_slip_templates
+reason: not shown

@@ -1,0 +1,335 @@
+key: staxt_parties
+source: https://www.shopify.com/legal/shopify-tax-terms
+locator: introduction
+quote: “Shopify” means Shopify Inc. and its Affiliates
+date: 2024-08-01
+basis: last updated (page states "Last updated: August 1, 2024")
+access: rendered
+
+key: staxt_all_regions
+source: https://www.shopify.com/legal/shopify-tax-terms
+locator: introduction
+quote: which are applicable to all regions where Shopify Tax is made available
+date: 2024-08-01
+basis: last updated (page states "Last updated: August 1, 2024")
+access: rendered
+
+key: staxt_merchant_responsible
+source: https://www.shopify.com/legal/shopify-tax-terms
+locator: 2. Merchant Obligations
+quote: You are solely responsible for all aspects of tax compliance and obligations related to your Store, including without limitation, the determination, collection, withholding, reporting, and remittance of Sales Taxes in an accurate and timely manner.
+date: 2024-08-01
+basis: last updated (page states "Last updated: August 1, 2024")
+access: rendered
+
+key: staxt_classification
+source: https://www.shopify.com/legal/shopify-tax-terms
+locator: 2. Merchant Obligations
+quote: You are solely responsible for the classification of products you sell and determining the appropriate Sales Tax treatment of such products.
+date: 2024-08-01
+basis: last updated (page states "Last updated: August 1, 2024")
+access: rendered
+
+key: staxt_no_uptime
+source: https://www.shopify.com/legal/shopify-tax-terms
+locator: 2. Merchant Obligations
+quote: Shopify makes no guarantees to you in relation to the availability or uptime of Shopify Tax
+date: 2024-08-01
+basis: last updated (page states "Last updated: August 1, 2024")
+access: rendered
+
+key: staxt_fees_invoice
+source: https://www.shopify.com/legal/shopify-tax-terms
+locator: 2. Merchant Obligations
+quote: All Fees will be added to your next Shopify invoice.
+date: 2024-08-01
+basis: last updated (page states "Last updated: August 1, 2024")
+access: rendered
+
+key: staxt_share_info
+source: https://www.shopify.com/legal/shopify-tax-terms
+locator: 2. Merchant Obligations
+quote: You agree to share with Shopify all of the information necessary to allow Shopify to provide the Shopify Tax services.
+date: 2024-08-01
+basis: last updated (page states "Last updated: August 1, 2024")
+access: rendered
+
+key: staxt_definition
+source: https://www.shopify.com/legal/shopify-tax-terms
+locator: 1. Shopify Tax Services
+quote: Shopify’s tax compliance tools (“Shopify Tax”) help Merchants calculate or estimate Sales Taxes, and where applicable, generate invoices, reports or insights that aid in Sales Taxes compliance.
+date: 2024-08-01
+basis: last updated (page states "Last updated: August 1, 2024")
+access: rendered
+
+key: staxf_sovos
+source: https://www.shopify.com/legal/shopify-tax-filing-terms
+locator: 1. Tax Filing Services
+quote: The “Tax Service Provider” is Sovos Compliance, LLC, together with Sovos Affiliates.
+date: 2025-04-22
+basis: last updated (page states "Last updated: April 22, 2025")
+access: rendered
+
+key: staxf_access_provider
+source: https://www.shopify.com/legal/shopify-tax-filing-terms
+locator: 1. Tax Filing Services
+quote: is a sales tax filing service that is made available through Shopify and allows you to access and use the Tax Service Provider’s services to generate and submit sales tax returns
+date: 2025-04-22
+basis: last updated (page states "Last updated: April 22, 2025")
+access: rendered
+
+key: staxf_sovos_terms
+source: https://www.shopify.com/legal/shopify-tax-filing-terms
+locator: 1. Tax Filing Services
+quote: which is a legal agreement between you and the Tax Service Provider (the “Tax Service Provider Terms”)
+date: 2025-04-22
+basis: last updated (page states "Last updated: April 22, 2025")
+access: rendered
+
+key: staxf_agent
+source: https://www.shopify.com/legal/shopify-tax-filing-terms
+locator: 1. Tax Filing Services
+quote: When you use the Tax Filing Services, you authorize us to deliver information and instructions on your behalf to the Tax Service Provider including, without limitation, information generated through Shopify Tax.
+date: 2025-04-22
+basis: last updated (page states "Last updated: April 22, 2025")
+access: rendered
+
+key: staxf_provider_files
+source: https://www.shopify.com/legal/shopify-tax-filing-terms
+locator: 2. Use of Tax Filing Services
+quote: The Tax Service Provider is responsible for the generation and submission of Sales Tax Returns, including the sharing of your Bank Account for remittance purposes to the appropriate Tax Authorities in the United States
+date: 2025-04-22
+basis: last updated (page states "Last updated: April 22, 2025")
+access: rendered
+
+key: staxf_merchant_responsible
+source: https://www.shopify.com/legal/shopify-tax-filing-terms
+locator: 2. Use of Tax Filing Services
+quote: You are solely responsible for all aspects of tax compliance and obligations related to your online storefront(s) (“Store(s)”) and business, including without limitation, the submission of Sales Tax Returns and the remittance of sales taxes in an accurate, timely and complete manner.
+date: 2025-04-22
+basis: last updated (page states "Last updated: April 22, 2025")
+access: rendered
+
+key: ship_party
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: introduction
+quote: “Shopify” means the applicable Shopify Contracting Party depending on the billing address of your Store
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_third_party_services
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: A. Shopify Shipping
+quote: Depending on your location, Shopify Shipping provides you with access to purchase third-party shipping services
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_shippo
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: A. Shopify Shipping
+quote: Popout, Inc., d.b.a Shippo (“Shippo”) is a Third-Party Integrator that allows for the purchase of Third-Party Shipping Services from certain Third-Party Shipping Providers
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_auctane
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: A. Shopify Shipping
+quote: Auctane, Inc. (“Auctane”) is a Third-Party Integrator
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_easyship
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: A. Shopify Shipping
+quote: Easyship Fulfillment Services Ltd. (“Easyship”) is a Third-Party Integrator
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_intermediary
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: B. Your Responsibilities
+quote: Shopify serves only as an intermediary between you and the applicable Third-Party Integrator or Third-Party Shipping Provider, allowing you to purchase postage and print shipping labels (“Labels”).
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_not_responsible
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: B. Your Responsibilities
+quote: Shopify is not responsible in any event for picking up, transporting, delivering, or otherwise handling your shipments, or providing customer service to your customers.
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_share_data
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: A. Shopify Shipping
+quote: you acknowledge and agree that Shopify may share with Third-Party Integrators and Third-Party Shipping Providers certain information regarding your Store
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_own_account
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: B. Your Responsibilities
+quote: Certain Shopify subscription plans may allow you to connect your own Third-Party Shipping Provider account with Shopify Shipping
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_insurance
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: B. Your Responsibilities
+quote: Depending on your location, Shopify provides you with access to purchase third-party shipping insurance ("Third-Party Shipping Insurance") administered by certain third-party insurance providers
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_customs_merchant
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: B. Your Responsibilities
+quote: Shopify is not responsible or liable for any local customs charges, import taxes, duties, or other similar charges associated with your shipments.
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_fees_invoice
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: D. Fees
+quote: The Shipping Fees will be added to your next Shopify invoice, which will appear on the account page in your Shopify Admin.
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: ship_modify
+source: https://www.shopify.com/legal/terms-shipping-global
+locator: E. General Terms
+quote: Shopify reserves the right to modify, suspend, or terminate Shopify Shipping or your ability to use Shopify Shipping at any time, for any reason, either with or without notice to you.
+date: 2025-03-03
+basis: last updated (page states "Last updated on: March 3, 2025")
+access: rendered
+
+key: agt_channels
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 1. Agentic Storefronts
+quote: enables buyers to discover and purchase products from eligible merchants from the user interface of certain channels operated by Shopify or third party Shopify partners ("Participating Channels").
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_eligibility
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 2. Eligibility
+quote: Shopify may determine, in its sole discretion, whether you or your Store are eligible to use Agentic Storefronts or any Participating Channels.
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_channel_terms
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 3. Participating Channel Terms Incorporation
+quote: Addendum to the Google Merchant Center Terms of Service for Shopify Merchants
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_copilot
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 3. Participating Channel Terms Incorporation
+quote: Microsoft Copilot Shopify Checkout Terms
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_meta
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 3. Participating Channel Terms Incorporation
+quote: Addendum to the Meta Seller Agreement
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_not_party
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 3. Participating Channel Terms Incorporation
+quote: other than the terms related to Participating Channels directly operated by Shopify, Shopify is not a party to any of the Participating Channel Terms
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_seller_of_record
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 4. Merchant Obligations and Authorizations
+quote: the transaction is completed through your Shopify Store. You remain the seller of record
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_channel_checkout
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 4. Merchant Obligations and Authorizations
+quote: This includes, but is not limited to, the ability of a Participating Channel to customize Shopify Checkout to match the branding and style of its user interface
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_fees
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 6.1 Fees
+quote: For certain Participating Channels, Shopify may, in its discretion, assess a fee on transactions that occur as a result of your participation in Agentic Storefronts.
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_data_processor
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 7. Data and Customer Relationships
+quote: For Participating Channels operated by Shopify partners, Shopify will process the personal information of your customers on your behalf
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_channel_terminate
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 8. Termination
+quote: Participating Channels may terminate the provision of their services in connection with Agentic Storefronts at any time without notice to you.
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: agt_merchant_disable
+source: https://www.shopify.com/legal/terms-agentic-storefronts
+locator: 8. Termination
+quote: it is your responsibility to disable the features for that Participating Channel for your Shopify Store in your Shopify Admin.
+date: 2026-10-06
+basis: last updated (page states "Last updated: October 6, 2026")
+access: rendered
+
+key: vat_customer_responsible
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md
+locator: introduction
+quote: When the exemption applies, VAT is removed from the order and the customer is responsible for reporting and paying VAT on their own tax return.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_reason
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: introduction
+quote: You can use Managed Markets to sell to customers in other countries without registering a business, registering for tax, or arranging customs clearance in each destination.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: taxapp_platform_access
+source: https://help.shopify.com/en/manual/taxes/tax-apps.md
+locator: introduction
+quote: Learn more about gaining access to Shopify's tax platform and using third-party tax apps
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md

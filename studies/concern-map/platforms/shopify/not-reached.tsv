@@ -1,0 +1,5 @@
+url	status	needed_for	what_to_look_for
+https://www.shopify.com/legal/dsa	HTTP 404 (curl, 2026-10-10); linked from the Shopify Legal index as "Digital Service Act"	SH-C-177 leg.eu_platform_rules (legal, boundary)	Which Shopify entity acts as the Digital Services Act provider, the point of contact, and notice-and-action routes
+https://www.shopify.com/legal/country-list	HTTP 200 after redirect to https://www.shopify.com/legal; the Shopify Contracting Party country list was not served (2026-10-10)	SH-C-002 acct.contracting_party (legal, reason)	The country-by-country list of Shopify Contracting Parties that the contracting-entities Help page links to
+https://admin.shopify.com/shopify-payments/terms	not attempted: requires a signed-in Shopify admin session	SH-C-071 pay.fees (decides, boundary); SH-C-109 mkt.fx (decides)	Processing fee and currency conversion fee values in the merchant's own Shopify Payments terms
+https://admin.shopify.com/apps/shopify-audiences/settings/terms	not attempted: requires a signed-in Shopify admin session	SH-C-132 mktg.audiences (legal, boundary)	Shopify Audiences Terms and Conditions: contracting party, data roles, ad platform transfers

@@ -1,0 +1,287 @@
+key: dt_gcp_regions
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: Data hosting locations
+quote: Shopify dynamically rebalances storage between multiple Google Cloud Platform regions to ensure that we can offer a reliable and scalable infrastructure that can handle unpredictable volumes across our entire merchant database.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_move_data
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: Data hosting locations
+quote: We need to be able to move data geographically in order to operate our services, and we have mechanisms in place to do so in accordance with applicable laws and regulations, including GDPR.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_europe_default
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: Data hosting locations
+quote: New merchants in Europe automatically avail of this new infrastructure and now have their store data, order data and customer personal data stored at rest in Europe by default.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_europe_transfers
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: Data hosting locations
+quote: Even where merchant customer personal data is stored in Europe, we will rely on international data transfers for processing that personal data.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_adequacy_canada
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: How Shopify meets the GDPR requirements for international data transfers
+quote: Shopify relies on the European Commission’s adequacy decision for Canada when Shopify International Limited transfers personal data to its Canadian-registered corporate parent Shopify Inc.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_sil_main_establishment
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: Onward transfers of personal data from the EEA and the UK
+quote: International Limited also acts as Shopify’s main establishment for General Data Protection Regulation (GDPR) purposes.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_bcr_pending
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: How Shopify meets the GDPR requirements for international data transfers
+quote: We are in the final stages of this application and expect that it will be approved soon.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_sccs
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: How Shopify meets the GDPR requirements for international data transfers
+quote: Shopify also employs comprehensive data transfer and processing agreements (DPAs) incorporating the latest version of the Standard Contractual Clauses (SCCs) approved by the European Commission to govern:
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_other_regions
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: Onward transfers of personal data from all other regions
+quote: include appropriate protections to ensure compliance with privacy laws in Canada, the United States (US), and Singapore, as applicable.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_subprocessor_scope
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md
+locator: How Shopify chooses its Subprocessors
+quote: We limit the use of our subprocessors to technical services: cloud hosting, error logging, load balancing, content delivery, mapping delivery, data analysis, and internal logging (log files).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_merchant_gdpr
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/configuration-options.md
+locator: Configuration options
+quote: Using Shopify alone doesn't guarantee that a merchant complies with the General Data Protection Regulation (GDPR).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dt_transparency
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/configuration-options.md
+locator: Shopify Transparency Report and handling requests from public authorities
+quote: If a legal access request is made from public authorities, then Shopify follows a [set of guidelines](https://www.shopify.com/legal/gvtaccesspolicy) on how those requests are handled.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bcr_effective
+source: https://www.shopify.com/legal/binding-corporate-rules
+locator: introduction
+quote: The links below reflect our most recent BCRs, which took effect on July 8, 2026.
+date: 2026-07-08
+basis: states BCRs "took effect on July 8, 2026"; page otherwise undated
+access: rendered
+
+key: bcr_approved
+source: https://www.shopify.com/legal/binding-corporate-rules
+locator: introduction
+quote: The approval of Shopify’s BCRs by these authorities confirms Shopify’s commitment to data protection and provides an appropriate framework for our global data transfers and privacy compliance program.
+date: 2026-07-08
+basis: states BCRs "took effect on July 8, 2026"; page otherwise undated
+access: rendered
+
+key: gvt_valid_process
+source: https://www.shopify.com/legal/gvtaccesspolicy
+locator: Our Principles
+quote: we will only share this information in response to valid and enforceable legal process
+date: 2024-04-26
+basis: last updated (page states "Last updated: April 26, 2024")
+access: rendered
+
+key: gvt_notify
+source: https://www.shopify.com/legal/gvtaccesspolicy
+locator: Our Principles
+quote: We will notify affected individuals and entities before we produce information about them unless we are legally prohibited from doing so.
+date: 2024-04-26
+basis: last updated (page states "Last updated: April 26, 2024")
+access: rendered
+
+key: gvt_customers_to_merchant
+source: https://www.shopify.com/legal/gvtaccesspolicy
+locator: Our Principles
+quote: When a third party requests information about a Merchant’s Customers, we will first instruct the requestor to obtain that information directly from the Merchant, unless:
+date: 2024-04-26
+basis: last updated (page states "Last updated: April 26, 2024")
+access: rendered
+
+key: gvt_form
+source: https://www.shopify.com/legal/gvtaccesspolicy
+locator: introduction
+quote: All legal access requests from third parties seeking information held by Shopify should be properly filed through the Legal Access Request form.
+date: 2024-04-26
+basis: last updated (page states "Last updated: April 26, 2024")
+access: rendered
+
+key: p2b_categories
+source: https://www.shopify.com/legal/p2b/legal-notices
+locator: Platform to Business Regulation, P2B Complaint Handling Annual Report
+quote: The P2B complaint form allows Shopify merchants to submit complaints through the P2B Form in the following categories:
+date: 2026-10-10
+basis: undated live page (reports January to December 2025 and February 18 to August 17, 2026); read 2026-10-10
+access: rendered
+
+key: p2b_uk_retained
+source: https://www.shopify.com/legal/p2b/legal-notices
+locator: Platform to Business Regulation
+quote: The laws established by this regulation have been retained by the United Kingdom following its exit from the European Union.
+date: 2026-10-10
+basis: undated live page (reports January to December 2025 and February 18 to August 17, 2026); read 2026-10-10
+access: rendered
+
+key: dsa_below_vlop
+source: https://www.shopify.com/legal/p2b/legal-notices
+locator: Digital Services Act
+quote: the average number of monthly active recipients of those services in the EU was well below the 45 million user threshold for being designated as VLOPs.
+date: 2026-10-10
+basis: undated live page (reports January to December 2025 and February 18 to August 17, 2026); read 2026-10-10
+access: rendered
+
+key: fincomplaint_intro
+source: https://www.shopify.com/legal/tools/report-an-issue/financial-complaint
+locator: introduction
+quote: If you are dissatisfied with one of our Financial product offerings, please let us know below.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: term_restricted
+source: https://help.shopify.com/en/manual/compliance/legal/handling-store-termination.md
+locator: introduction
+quote: When Shopify detects activity that might not be a legitimate commerce practice, your store might be placed in restricted access.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: term_no_notice
+source: https://help.shopify.com/en/manual/compliance/legal/handling-store-termination.md
+locator: Common reasons for restricted access
+quote: Stores may be placed in restricted access without prior communication.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: term_storefront_unavailable
+source: https://help.shopify.com/en/manual/compliance/legal/handling-store-termination.md
+locator: What you can do from your Shopify admin during restricted access
+quote: While your store is in restricted access, your storefront is unavailable to customers, but you retain limited access to your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: term_appeal
+source: https://help.shopify.com/en/manual/compliance/legal/handling-store-termination.md
+locator: How to submit an appeal
+quote: Complete the appeal form with explanations and any supporting documents that demonstrate your store's compliance with Shopify's policies.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cps_per_region
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings.md
+locator: introduction
+quote: Because privacy laws and regulations vary across different regions, the **Customer privacy** settings lets you customize your privacy settings for each country and region where you sell to.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cdr_merchant_responsible
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/processing-customer-data-requests.md
+locator: introduction
+quote: As a Shopify merchant, you're responsible for complying with the privacy and data protection laws and regulations that apply to your business.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cdr_shopify_erases
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/processing-customer-data-requests.md
+locator: Erasing a customer's personal data
+quote: In response to a request to erase, Shopify erases personal data, such as your customer's name and address.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cdr_contact_others
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/processing-customer-data-requests.md
+locator: Erasing a customer's personal data
+quote: It's your responsibility to contact any other companies that you've shared the customer's personal data with.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cdr_processed_for_you
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/processing-customer-data-requests.md
+locator: Processing erasure requests
+quote: When you submit a request to erase a customer's personal data from their profile, Shopify processes the request for you.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: comp_jurisdictions
+source: https://help.shopify.com/en/manual/compliance/legal.md
+locator: introduction
+quote: You also need to consider the implications of selling in different jurisdictions, including researching the relevant import and export laws and regulations, and knowing the current legal status of the products you sell in every region you sell them.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: comp_regulated
+source: https://help.shopify.com/en/manual/compliance/legal.md
+locator: introduction
+quote: Shopify can set you up for success, but there are also steps that you need to take, especially if you plan to sell regulated products.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: comp_recalls
+source: https://help.shopify.com/en/manual/compliance/legal/consumer-protection.md
+locator: product recalls
+quote: You're responsible for adhering to legal requirements about recalls in any jurisdiction where you conduct business.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: vat_field_customers
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md
+locator: Activate VAT validation in checkout
+quote: field [in your checkout](/manual/checkout-settings/checkout-form-options#customer-information) for customers to enter their VAT number and apply the reverse charge exemption for eligible EU or UK cross-border orders.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: setup_currency_first_sale
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md
+locator: introduction
+quote: before making your first sale. It’s the currency that will be used throughout your Shopify admin, for pricing your products and viewing your reports.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md

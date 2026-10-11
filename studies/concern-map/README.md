@@ -10,9 +10,16 @@ The answer to `questions/Q1-concern-map.md` as it is being built. The work is pa
 | --- | --- | --- | --- |
 | WooCommerce | Complete and checked. | 118 | 963 of 963 found |
 | Salla | Complete and checked. A split pass is paused before it began. | 148 | 2,828 of 2,828 found |
-| Shopify | Paused mid-run. Its `notes.md` ends with "Where this run stopped". | see its files | its pages are not captured yet |
+| Shopify | Paused at a consistent point. All 24 of its lists are inventoried (2,428 entries) and every concern has all five placements. Its `notes.md` ends with "Where this run stopped". | 196 | 2,322 local quotes found; the 870 web quotes (152 pages) wait for its capture |
 
 **Salla's split pass.** 100 of Salla's placements name two parties in one value, usually "merchant; operator per plan". Under the question's rule, a concern whose parts sit with different parties is split. WooCommerce has no such values. The rows are listed in `checks/salla-multi-party.tsv`, and Salla's `notes.md` says the pass hasn't changed any of them yet.
+
+**What Shopify's run still has to do:**
+- apply the one-party rule to the 93 shown values that name more than one party;
+- read the two Shopify Credit terms pages;
+- run its final checks.
+
+The checker also lists 118 Shopify placements with more than one row, where its sources differ or the concern needs splitting, and 92 citations that no row uses.
 
 **Not started yet:**
 - the capture of Shopify's cited pages and the check of its quotes;
@@ -30,7 +37,7 @@ The captured web pages are in `evidence/product-class/runs/`, one run per platfo
 
 ## How to resume
 
-1. **Shopify.** In the same session, send its agent "continue". Otherwise, start a new agent with `questions/Q1-concern-map.md`, the files in `platforms/shopify/` and the "Where this run stopped" section of its `notes.md`. The run must also apply the one-party rule: a shown `software`, `decides` or `legal` value names one party or place.
+1. **Shopify.** In the same session, send its agent "continue". When a value names two parties, the rule splits the *concern* into parts, each with its own five placements. It doesn't split the placement row into one row per party, which is how the agent's own next-step note reads. Otherwise, start a new agent with `questions/Q1-concern-map.md`, the files in `platforms/shopify/` and the "Where this run stopped" section of its `notes.md`. The run must also apply the one-party rule: a shown `software`, `decides` or `legal` value names one party or place.
 2. **Salla.** Resume the split pass from the "Where this run stopped" section of its `notes.md`.
 3. **Check, capture and check again,** per platform. `RUN` is a folder holding one folder per platform.
    ```

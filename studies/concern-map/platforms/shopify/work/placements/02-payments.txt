@@ -1,0 +1,224 @@
+# Family F: payments
+concern: pay.providers
+software: core: the Payment providers area of Settings > Payments, where every payment method a store accepts is activated || cites: inv:settings|Payments, pay_methods_activated, tpp_activate
+decides: merchant: the merchant activates or changes providers and payment methods || cites: pay_methods_activated, tpp_activate
+decides: operator, per market: which gateways a store can activate depends on its region; where Shopify Payments is supported, standalone Stripe is not offered || cites: pga_region, pga_stripe_partner, pga_no_stripe_alternative
+legal: partner: every Shopify-supported payment method relies on third-party providers, which set their own fees and product rules || cites: gp_third_party, gp_provider_rules
+boundary: setting: Settings > Payments, guarded by the payment-settings staff permission || cites: inv:settings|Payments, inv:other:staff-permissions|MANAGE_PAYMENTS_SETTINGS
+reason: not shown
+
+concern: pay.shopify_payments
+software: core: "Shopify's integrated payments solution", described as the only payment gateway designed and operated by Shopify || cites: spt_role, elig_integrated, pga_only_gateway, inv:admin-navigation|Payments
+decides: operator, per market: available only to businesses located in a supported country (the Designated Country); 40 country pages are listed || cites: spc_located, spt_designated_country_role, spt_designated_country, inv:other:help-center-sections|Supported countries for Shopify Payments
+decides: operator: eligibility also turns on business type, products, age and the Shopify Payments terms for the country || cites: elig_integrated, elig_age, elig_legal_unsupported, elig_varies_region
+decides: merchant: only the store owner can activate or switch to Shopify Payments; depending on location, Shopify may create the account at sign-up || cites: setup_owner_only, tos_paypal_sp_accounts
+legal: platform company: Shopify Inc. supplies the Payments Services where the Designated Country is Canada || cites: spt_entity_ca, spt_not_licensed
+legal: separate entities of the platform: Shopify Payments (USA) Inc. for the United States; Shopify International Limited (Ireland) for the European countries, Mexico, Norway, Switzerland, the United Arab Emirates and the United Kingdom; Shopify Commerce Singapore Pte. Ltd. for Australia, Hong Kong, Japan, New Zealand and Singapore; none is licensed as a bank, payment institution or money services business || cites: spt_entity_us, spt_entity_eu, spt_entity_eu_countries, spt_entity_apac, spt_entity_apac_countries, spt_not_licensed
+boundary: contract: Shopify Payments Terms of Service (Part I global, Part II regional), with the Payment Processor Terms accepted at the same time || cites: inv:legal-agreements|Shopify Payments Terms of Service, spt_regional_parts, ppl_accept_terms
+boundary: API: Shopify Payments resources in the GraphQL Admin API and Shopify Payments access scopes || cites: inv:api-resources|Shopify Payments, inv:access-scopes|read_shopify_payments_accounts
+reason: it "arranges for the financial services you need to accept payments", so the merchant does not set up a separate provider or merchant account || cites: spt_role, sp_no_merchant_account
+
+concern: pay.processing
+software: outside platform: processing and settlement of transactions are carried out by Payment Processors and their Financial Services Providers || cites: spt_processor_list, spt_processor_role, gp_processing_by_provider
+software: core: Shopify's centralized payment service tracks payment attempts with idempotency keys so that a single request goes to financial partners (engineering post, 2022) || cites: eng_payment_service, eng_single_request
+decides: operator: Shopify determines which Payment Processor accounts are opened and which processor handles each transaction, may change processors, and routes each payment to the processor most likely to authorize it || cites: spt_shopify_chooses_processor, spt_change_processors, auth_routing
+decides: operator, per market: the Payment Processor List names the processors and terms for each Designated Country || cites: ppl_intro, inv:legal-agreements|B. North America, inv:legal-agreements|C. EMEA, inv:legal-agreements|D. Asia-Pacific
+decides: operator: if a Payment Processor ends its terms, Shopify may offer a substitute processor integrated with the Shopify Payments Account; Shopify Payments can also be terminated at a processor's or network's request || cites: spt_substitute_processor, spt_termination_on_processor_request
+legal: partner: Stripe entities (Stripe, Inc.; Stripe Payments Canada, Ltd.; Stripe Payments Mexico; Stripe Payments Europe, Limited; Stripe Japan, Ltd.; Stripe Payments Australia; Stripe Payments Singapore), PayPal (PayPal, Inc.; PayPal (Europe)), Adyen N.V., AIHK Markets Limited, and a Bridge entity (an affiliate of Stripe) for all regions || cites: ppl_us_stripe, ppl_ca_stripe, ppl_mx_stripe, ppl_at_stripe, ppl_ae_stripe, ppl_jp_stripe, ppl_au_stripe, ppl_sg_stripe, ppl_us_paypal, ppl_at_paypal, ppl_at_adyen, ppl_cn_aihk, ppl_bridge, pga_stripe_partner
+legal: partner: the Payment Processor Terms are between the merchant and the processor; Shopify is not a party to them, although it has agreed to indemnify the processors for some or all merchant liabilities || cites: spt_not_party_processor, spt_registration_processor_accounts, spt_indemnify_processors
+boundary: contract: Payment Processor Terms, accepted with the Shopify Payments Terms; Shopify acts as the merchant's agent to deliver information and instructions to the processors || cites: ppl_accept_terms, spt_registration_processor_accounts, spt_agent
+boundary: other: "fine-grained Semian identifier" per merchant country on the processor endpoint, so that a local outage in one country does not affect merchants in other countries (engineering post, 2022) || cites: eng_country_circuit
+reason: processor routing "can improve authorization rates without any extra setup" || cites: auth_routing, auth_rates
+
+concern: pay.funds
+software: outside platform: funds settle into Payment Processor Accounts; the processor retains responsibility for settlement and funds in a Financial Services Provider's custody are paid out under the Payment Processor Terms || cites: spt_processor_settlement, spt_funds_custody, spt_registration_processor_accounts
+decides: other: the Payment Processors may hold funds while awaiting requested information, and hold funds or data when served with legal process; a creditor hold can be removed only by the processor || cites: spt_verification_underwriting, spt_legal_process, hold_processor_required, hold_shopify_cant_remove
+decides: operator: Shopify may hold payouts in reserve and place holds during reviews (see reserves) || cites: spt_reserves, abp_actions
+legal: partner: Payment Processors and their Financial Services Providers hold and settle the funds; the Shopify entities are not licensed as a bank, payment institution or money services business || cites: spt_processor_settlement, spt_funds_custody, spt_not_licensed
+legal: other: the Shopify contracting entity takes "a first priority lien and security interest" on funds processed and deposited into the merchant's designated accounts || cites: spt_security_interest
+legal: partner: for Managed Markets orders, Shopify Payments processes the transaction and holds the money in a Global-e account, and Global-e holds funds to remit cross-border costs || cites: mm_flow_of_funds, mm_globale_holds
+boundary: contract: Shopify Payments Terms Part I C (Processing Transactions and Receiving Your Funds) and the Payment Processor Terms || cites: inv:legal-agreements|C. Processing Transactions and Receiving Your Funds, spt_funds_custody
+boundary: API: read access to Shopify Payments bank accounts || cites: inv:access-scopes|read_shopify_payments_bank_accounts
+reason: not shown
+
+concern: pay.payfac
+software: not shown || note: The Payment Facilitator Terms describe a legal role inside Shopify Payments; no source places it in separate software.
+decides: operator, per market: in certain Designated Countries a Shopify affiliate acts as Payment Facilitator; Shopify may add, remove or replace the Acquirer for any Designated Country and assign the supplement to a different Acquirer || cites: spt_payfac, payfac_amend_acquirer, payfac_assign_acquirer
+decides: outside rules: the merchant may be terminated from a Payment Network if the Payfac is de-registered or the Acquirer loses its network trademark licence || cites: payfac_deregistered
+legal: separate entities of the platform: Shopify Payments EU Limited (EU / EEA) and Shopify Payments UK Limited (United Kingdom), registered as Payment Facilitator and acting as agents of the Acquirer || cites: payfac_eu, payfac_uk, payfac_registered, payfac_agent_of_acquirer
+legal: partner: the Acquirer, Adyen N.V., provides all licensed or regulated services || cites: payfac_acquirer_adyen, payfac_licensed_by_acquirer
+boundary: contract: Shopify Payments Facilitator Terms (Account Terms, Part I global terms, Part II regional terms) || cites: inv:legal-agreements|Account Terms|Facilitator, inv:legal-agreements|Part II — Regional Terms, spt_payfac
+reason: not shown
+
+concern: pay.rpaa_canada
+software: not shown
+decides: outside rules: payment activities regulated under the Canadian Retail Payment Activities Act || cites: tos_rpaa_canada, spt_ca_rpaa
+legal: separate entity of the platform: Shopify Payment Activities Inc., registered with the Bank of Canada as a Payment Service Provider, is the contracting party for those activities || cites: spt_ca_rpaa, tos_rpaa_canada
+boundary: contract: Terms of Service section 13 (Regulated Payment Services (Canada)) and Shopify Payments Terms Part II B (Canada) || cites: tos_rpaa_canada, inv:legal-agreements|B. Canada|Shopify Payments Terms
+reason: not shown
+
+concern: pay.kyc
+software: core: verification and risk sections in the admin (ProfileAssessment), with a KYC access scope and a KYC update webhook || cites: inv:admin-navigation|ProfileAssessment, inv:access-scopes|read_financial_kyc_information, inv:webhook-topics|finance_kyc_information/update
+decides: operator: Shopify evaluates the business when it applies and monitors risk throughout, and may decline, deactivate or restrict the account; review covers the history of other businesses the merchant operates || cites: abp_evaluated, abp_actions, abp_history_other
+decides: other: Shopify's banking partners can require more information, and processors may hold funds until it is provided || cites: hold_banking_partners, spt_verification_underwriting
+decides: outside rules: Payment Facilitator identity and KYC checks; processors must report merchants to the MATCH list under card network rules || cites: payfac_kyc, spt_match_list
+legal: partner: each Payment Processor may process personal data as an independent controller for KYC, AML and sanctions obligations || cites: spt_processor_independent_controller, spt_processor_sanctions_controller
+legal: platform company: Shopify processes government-issued identification to comply with know-your-customer and anti-money-laundering laws || cites: priv_kyc_basis
+boundary: API: read_financial_kyc_information scope and finance_kyc_information/update webhook; setting: Shopify Payments setup in Settings > Payments || cites: inv:access-scopes|read_financial_kyc_information, inv:webhook-topics|finance_kyc_information/update, inv:settings|Payments
+reason: the store is held to a standard higher than card network thresholds because a few harmful merchants make every merchant on the platform look less trustworthy to banks and card networks || cites: abp_higher_standard, abp_platform_trust
+
+concern: pay.payouts
+software: core: Finance > Payouts in the admin and the Shopify Payments payouts API || cites: inv:admin-navigation|Finances, inv:access-scopes|read_shopify_payments_payouts, inv:api-resources|Shopify Payments
+decides: merchant: payout schedule (daily, weekly or monthly) and payout account (bank account or Shopify Balance) || cites: timing_schedule, timing_balance_7days
+decides: operator, per market: settlement times vary by country and risk level, minimum payout amounts apply in certain countries, and some countries limit payout options || cites: timing_vary, payouts_min, timing_schedule
+decides: operator, per plan: Multi-Currency Payouts only on some plans; Basic, Grow and Shopify plans are paid in the domestic currency only || cites: mcp_plans
+legal: partner: funds in the Financial Services Provider's custody are paid out subject to the Payment Processor Terms || cites: spt_funds_custody
+boundary: API: read_shopify_payments_payouts scope; setting: payout schedule and bank account in Shopify Payments settings; staff permission to view payouts || cites: inv:access-scopes|read_shopify_payments_payouts, inv:other:staff-permissions|VIEW_PAYOUTS, bank_types
+reason: a change of payout destination pauses payouts for 3-5 business days "to protect your account from unauthorized access" || cites: timing_dest_pause, timing_pause_reason
+reason: bank timing after payout is outside Shopify's control || cites: timing_bank_control, gp_bank_delay
+
+concern: pay.reserves
+software: core: reserved funds are shown on the Shopify Payments payouts page || cites: res_track, inv:other:help-center-sections|Overview of reserves in Shopify Payments
+decides: operator: Shopify sets the terms of any reserve, and a risk assessment before expiry decides whether to lift, keep, reduce or raise it || cites: spt_reserves, res_risk_assessment, res_definition
+decides: other: the payment processor places a creditor hold on legal notice and only the processor can remove it || cites: hold_creditor_processors, hold_processor_required, hold_shopify_cant_remove
+legal: other: the Shopify contracting entity controls the Reserve Account; the merchant is not entitled to interest and has no right to direct the account or legal interest in the funds || cites: spt_reserves, spt_reserve_no_interest
+boundary: contract: Shopify Payments Terms Part I C (Reserves); reserve terms are communicated by email || cites: spt_reserves, res_email, inv:legal-agreements|C. Processing Transactions and Receiving Your Funds
+reason: reserves keep funds available for disputes and refunds || cites: res_reason
+
+concern: pay.fees
+software: core: rates published per plan on the pricing page and charged with Shopify Payments; IC++ fees appear as a billing charge category || cites: inv:plan-features|Online standard card rates|Public pricing, inv:other:billing-charge-categories|IC++ fees
+decides: operator, per market and plan: "Shopify Payments rates vary by plan type and market" || cites: spw_premium, inv:plan-features|Online international rates|Public pricing
+legal: other: Processing Fees are collected from the merchant by the Payment Processor on Shopify's behalf || cites: spt_processing_fees
+boundary: contract: fee values are set in the merchant's Shopify Payments Terms of Service in the admin || cites: fees_terms_admin, spt_processing_fees
+reason: not shown
+
+concern: pay.disputes
+software: core: Shopify Payments disputes in the admin and API, with dispute webhooks and a manage-disputes permission || cites: inv:access-scopes|read_shopify_payments_disputes, inv:webhook-topics|disputes/create, inv:other:staff-permissions|MANAGE_DISPUTES
+decides: buyer: the cardholder opens a dispute with their bank || cites: cb_bank_takes
+decides: outside rules: the card issuer reviews evidence and resolves the chargeback; network dispute resolution programs resolve some disputes automatically || cites: cb_issuer_decides, cb_network_programs
+decides: operator: Shopify may enroll the merchant in automated dispute resolution programs when it sees elevated risk; the merchant or Shopify may contest chargebacks || cites: spt_dispute_programs, spt_contest_chargebacks
+legal: merchant: the merchant is liable for refunded, reversed or charged-back transactions, and the amount is deducted from the next payout; Shopify offers no dispute rights to customers || cites: spt_merchant_chargebacks, cb_deducted_payout, spt_no_dispute_rights
+boundary: API: dispute and dispute-evidence access scopes; event: disputes/create and disputes/update webhooks || cites: inv:access-scopes|write_shopify_payments_dispute_evidences, inv:webhook-topics|disputes/create, inv:webhook-topics|disputes/update
+reason: not shown
+
+concern: pay.protect
+software: core: free chargeback protection on eligible orders, with an eligibility-change webhook || cites: prot_free, inv:webhook-topics|orders/shopify_protect_eligibility_changed
+decides: operator: Shopify evaluates each order authorized through Shopify Payments in its sole discretion; only Shopify Payments transactions are covered || cites: prot_evaluate, prot_enrolled_sp, spw_protect_only_sp
+decides: operator, per market: the merchant warrants it operates a business in the United States processing online card-not-present transactions with Shopify Payments || cites: prot_us_business
+legal: platform company: Shopify Inc. is the warranty issuer; Shopify Protect is not insurance || cites: prot_issuer, prot_not_insurance
+boundary: contract: Shopify Protect for Shopify Payments Terms of Service; event: orders/shopify_protect_eligibility_changed || cites: inv:legal-agreements|View Shopify Protect terms, inv:webhook-topics|orders/shopify_protect_eligibility_changed
+reason: not shown
+
+concern: pay.shop_pay
+software: core: an accelerated checkout that saves customer details; the information is stored on Shopify's PCI compliant servers || cites: shoppay_saves, shoppay_storage, inv:api-resources|Shop Pay Wallet API
+decides: buyer: the customer chooses to save their information || cites: shoppay_saves, spmt_collects
+decides: merchant: the merchant offers Shop Pay as a payment method and accepts the Shop Pay Merchant Terms by doing so || cites: tos_shop_pay_terms
+legal: platform company: Shopify Inc. and its affiliates; Shopify is not a party to the sale, Shop Pay is not a payment processing service, and the merchant resolves disputes || cites: spmt_shopify_inc, spmt_not_party, spmt_not_processing, spmt_disputes
+legal: platform company: for Shop and Shop Pay, Shopify acts as data controller toward the customer || cites: help_consumer_services_controller
+boundary: contract: Shop Pay Merchant Terms; API: Shop Pay Wallet API; other: UCP payment handler dev.shopify.shop_pay || cites: inv:legal-agreements|View Shop Pay merchant terms, inv:api-resources|Shop Pay Wallet API, inv:other:ucp|dev.shopify.shop_pay
+reason: faster, more convenient checkout for returning customers || cites: shoppay_saves
+
+concern: pay.installments
+software: core: offered at checkout through Shop Pay; orders are paid out with Shopify Payments payouts || cites: gp_spi_in_payouts, gp_spi_no_collect, inv:other:help-center-sections|Shop Pay Installments
+decides: operator, per market: stores with Shopify Payments and Shop Pay and a business entity in the United States, Canada or the United Kingdom || cites: spi_countries, spi_requires
+legal: partner: Affirm, under the Merchant Agreement (Shop Pay Installments) || cites: spt_spi_affirm
+boundary: contract: Shop Pay Installments Terms and the Merchant Agreement with Affirm, in the regional parts of the Shopify Payments Terms; API: installments pricing scope || cites: spt_spi_affirm, inv:legal-agreements|D. United States|Shopify Payments Terms, inv:access-scopes|unauthenticated_read_shop_pay_installments_pricing
+reason: more flexible payment options, higher conversion and average order value || cites: spi_reason
+
+concern: pay.payments_apps
+software: extension point: payments extensions (five types) on Shopify's Payments Platform, using the Payments Apps API || cites: dev_pay_approved, dev_pay_types, inv:api-resources|Payments Apps API
+decides: operator: only approved Partners can build them; Shopify approves each payments app and decides public listing; the required scopes are restricted || cites: dev_pay_approved, dev_pay_approval, dev_pay_listing, dev_pay_restricted, ppa_payments_approval
+decides: operator, per plan: custom payments extensions only for eligible Shopify Plus merchants || cites: dev_pay_plus_custom
+decides: merchant: the merchant installs and activates the provider || cites: tpp_activate
+legal: app developer: the Payments Partner, bound by the Partner Program Agreement and a revenue share agreement; a developer that stops supporting its app follows a wind-down of up to six months || cites: dev_pay_revshare, ppa_payments_revshare, ppa_payments_wind_down
+boundary: API: Payments Apps API sessions (for example paymentSessionResolve) over mTLS || cites: inv:api-resources|paymentSessionResolve, dev_pay_mtls
+boundary: API: when Shopify is unreachable the app retries up to 18 times over 24 hours; when the app does not respond, Shopify retries || cites: dev_pay_retry, dev_pay_unreachable, dev_pay_inbound_retry
+reason: approval exists so merchants can present a positive buyer experience || cites: dev_pay_approval
+
+concern: pay.paypal
+software: outside platform: PayPal Express Checkout is a Third Party Service; PayPal pays the merchant by its own methods || cites: tos_paypal_third_party, gp_own_methods
+decides: operator: an account is created automatically at sign-up with the merchant's email, which is shared with PayPal || cites: paypal_auto, paypal_email_shared, tos_paypal_sp_accounts
+decides: operator, per market: in France and the United States PayPal is offered as PayPal Wallet through Shopify Payments || cites: gp_paypal_wallet_sp
+decides: merchant: the store owner completes or deactivates the account || cites: paypal_owner_only
+legal: partner: PayPal, under its own terms || cites: tos_paypal_third_party, tos_wallet_accounts
+boundary: setting: Settings > Payments; contract: PayPal terms || cites: inv:other:help-center-sections|PayPal Express Checkout, tos_wallet_accounts
+reason: not shown
+
+concern: pay.wallets
+software: outside platform: Apple Pay, Google Pay, Meta Pay and Amazon Pay are Third Party Services shown as accelerated checkout buttons || cites: tos_apple_pay, tos_google_pay, tos_meta_pay, tos_amazon_pay, acc_providers
+decides: merchant: the merchant activates the wallets and complies with their terms || cites: tos_wallet_accounts, acc_providers
+legal: partner: each wallet provider, under terms the merchant must comply with || cites: tos_wallet_accounts, tos_apple_pay, tos_google_pay, tos_meta_pay, tos_amazon_pay
+boundary: contract: wallet terms; other: UCP payment handler com.google.pay || cites: tos_wallet_accounts, inv:other:ucp|com.google.pay
+reason: not shown
+
+concern: pay.manual
+software: core: manual and custom payment methods in Settings > Payments; such orders are marked unpaid until the merchant records payment || cites: man_settings, man_unpaid, man_custom
+decides: merchant: the merchant chooses methods and arranges how the customer pays || cites: man_arrange, man_custom
+decides: operator, per plan: multi-currency manual payments require Shopify Payments; no transaction fees on manual methods || cites: man_multi_currency, sp_manual_no_fees
+legal: merchant: payment is arranged between merchant and customer outside the checkout || cites: man_arrange
+boundary: setting: Settings > Payments; staff permission to mark orders as paid || cites: man_settings, inv:other:staff-permissions|MARK_ORDERS_AS_PAID
+reason: not shown
+
+concern: pay.local_methods
+software: core: local payment methods run inside Shopify Payments and are paid out with it || cites: lpm_with_sp, lpm_payouts, inv:plan-features|Accept local payment methods*|Public pricing
+decides: operator, per market: each method works only for customers in a supported country with an eligible currency, and the countries must be set up as markets || cites: lpm_region_currency, lpm_markets
+decides: operator: managed payment methods activate local methods automatically by region, using Shopify Network Intelligence || cites: mpm_auto, mpm_sni
+decides: merchant: the merchant can activate or deactivate each method || cites: lpm_with_sp
+legal: not shown || note: The Help pages name the methods but do not name who provides each one; the Payment Processor List names the processors per Designated Country.
+boundary: setting: Settings > Payments > Payment methods; payments card in Markets || cites: lpm_with_sp, inv:other:help-center-sections|Payments|international.md
+reason: offer the payment options most relevant to the customer's location, which can help increase conversion || cites: mpm_reason
+
+concern: pay.crypto
+software: core: stablecoin (USD Coin) payments through Shopify Payments, using the Cryptocurrency Payment Protocol software developed by Coinbase || cites: spt_crypto_protocol, lpm_usdc, inv:plan-features|USDC rates
+software: outside platform: other cryptocurrency gateways are third-party additional payment methods || cites: crypto_gateways, crypto_support_channel
+decides: merchant: the merchant must verify cryptocurrency is acceptable in its region before accepting it || cites: crypto_verify_region
+decides: operator, per market: the Cryptocurrency Credit Reward Program is open to Shopify Payments accounts in the United States, Canada, Mexico or Hong Kong || cites: ccr_regions
+legal: partner: settlement into a Payment Processor Account follows the processor's terms; Coinbase is not a Payment Processor and never takes custody of the payments; a Bridge entity (an affiliate of Stripe) is listed as a processor for all regions || cites: spt_crypto_settlement, spt_coinbase, spt_coinbase_no_custody, ppl_bridge
+boundary: contract: Coinbase Payments Protocol Terms of Service, Shopify Payments Terms, Cryptocurrency Credit Reward Program terms || cites: spt_crypto_protocol, inv:legal-agreements|View Cryptocurrency Credit Reward Program terms, ccr_stablecoin
+reason: not shown
+
+concern: pay.shop_cash
+software: core: a rewards balance accepted automatically at checkout as a payment method || cites: shopcash_funded, inv:other:help-center-sections|Shop Cash
+decides: operator, per market: Shopify Payments countries except Hong Kong, Mexico and the United Arab Emirates || cites: shopcash_availability
+legal: platform company: a Shopify-funded rewards program for Shop app customers; merchants are paid as for Shop Pay orders || cites: shopcash_funded, shopcash_paid_as_shoppay
+boundary: not shown
+reason: not shown
+
+concern: pay.customization_fn
+software: extension point: Payment Customization Function API (rename, reorder or hide payment methods, set payment terms, add a review requirement) || cites: pcfn_capabilities, inv:api-resources|Payment Customization, inv:extension-points|Payment customization (payment_customization)
+decides: merchant: the merchant activates up to 25 payment customization functions on a store || cites: pcfn_max
+decides: operator, per plan: some operations only on Shopify Plus stores || cites: pcfn_plus
+legal: app developer: the function is built and delivered in an app || cites: inv:extension-points|Payment customization (payment_customization)
+boundary: API: Shopify Function with write_payment_customizations scope || cites: inv:access-scopes|write_payment_customizations, inv:api-resources|Payment Customization
+reason: not shown
+
+concern: pay.transactions
+software: core: authorization, capture and order transactions, with transaction webhooks and capture permissions || cites: auth_default, inv:webhook-topics|order_transactions/create, inv:other:staff-permissions|CAPTURE_PAYMENTS_FOR_ORDERS
+decides: merchant: automatic or manual capture setting || cites: auth_default
+decides: operator, per plan: Shopify Payments authorization period of 7 days; extended authorization periods only on Shopify Plus with Shopify Payments || cites: auth_7_days, auth_extended_plus
+decides: outside rules: authorization periods depend on the provider and card network; local regulation may require pay-on-delivery methods || cites: auth_provider_period, auth_local_regulation
+legal: partner: the acquirer, a bank or financial institution, processes captured transactions on the merchant's behalf || cites: gp_acquirer
+boundary: event: order_transactions/create and orders/paid webhooks; setting: payment capture method || cites: inv:webhook-topics|order_transactions/create, inv:webhook-topics|orders/paid, auth_default
+reason: not shown
+
+concern: pay.vaulting
+software: core: customer payment method APIs that store payment methods for future orders, and payment mandate scopes || cites: subs_cpm_api, inv:access-scopes|read_customer_payment_methods, inv:access-scopes|write_payment_mandate
+decides: not shown
+legal: not shown
+boundary: API: customer payment method and payment mandate scopes; event: customer_payment_methods/create, update and revoke webhooks; staff permission to charge vaulted payment methods || cites: inv:access-scopes|read_customer_payment_methods, inv:webhook-topics|customer_payment_methods/create, inv:webhook-topics|customer_payment_methods/revoke, inv:other:staff-permissions|PAY_ORDERS_BY_VAULTED_CARD
+reason: not shown
+
+concern: pay.pos_payments
+software: core: Shopify Payments for in-person card payments with Shopify POS and supported card readers; card-present payments extensions exist for third parties || cites: pos_card_reader, inv:extension-points|Card present (card_present_payments)
+decides: operator, per market: only countries where Shopify Payments supports both online and in-person processing || cites: pos_sp_countries
+decides: operator: if POS uses Shopify Payments, no other processor may be used concurrently and the gateway must match the online store || cites: tos_pos_same_processor
+legal: not shown || note: The Payment Processor List covers Shopify Payments generally; the POS pages read do not name an in-person processor. The Shopify Payments Terms say the P2PE service for POS equipment is provided exclusively by Stripe (spt_stripe_p2pe), which concerns encryption, not processing.
+boundary: other: offline card payments are stored on the POS device and are not routed to the processor until it reconnects; declined offline payments are collected by the merchant from the customer || cites: offline_optional, offline_not_routed, offline_collect_declined, offline_interac
+reason: not shown
+
+concern: pay.cash
+software: core: cash tracking at POS, with read and write access scopes || cites: inv:access-scopes|read_cash_tracking, inv:access-scopes|write_cash_tracking
+decides: not shown
+legal: not shown
+boundary: API: read_cash_tracking and write_cash_tracking scopes || cites: inv:access-scopes|read_cash_tracking, inv:access-scopes|write_cash_tracking
+reason: not shown

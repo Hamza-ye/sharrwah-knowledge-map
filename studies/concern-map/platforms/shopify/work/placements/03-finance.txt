@@ -1,0 +1,88 @@
+# Family G: finance product lines
+concern: fin.balance
+software: core: Shopify Balance in the admin's Finance area (Banking), part of the finance suite built into the admin || cites: inv:admin-navigation|Banking, fin_suite_admin, bal_definition, inv:plan-features|Manage money with Shopify Balance¹|Public pricing
+decides: operator, per market: only merchants with a physical residential address in the United States or Puerto Rico, with a US SSN or ITIN || cites: bal_us_only, bal_ssn
+decides: operator: eligible merchants receive an account automatically when activating Shopify Payments; the account must close if Shopify Payments is deactivated, and it needs the same information as Shopify Payments || cites: bal_auto_with_sp, bal_close_with_sp, bal_same_info_as_sp
+legal: partner: Stripe Payments Company provides money transmission and account services, with funds held at Fifth Third Bank N.A., Member FDIC; "Shopify is a tech company, not a bank." || cites: fin_not_bank, fin_stripe_fifth_third
+boundary: other: the Balance account serves as the Shopify Payments payout account, Shopify Capital repayments are withdrawn from it, and in some regions it pays Shopify bills || cites: timing_balance_7days, bal_capital_withdrawn, bal_pay_bills
+reason: manage the store's payments and transactions in one place, with payouts up to 7 days earlier than to a bank || cites: bal_definition, timing_balance_7days
+
+concern: fin.balance_cards
+software: core: Cards in the admin's Finance area || cites: inv:admin-navigation|Cards
+decides: operator: the card is for business purposes only; personal use may end the Balance account || cites: bal_business_only
+legal: partner: Celtic Bank issues the Shopify Balance Visa Commercial cards under a licence from Visa U.S.A. Inc.; the cards are powered by Stripe || cites: fin_balance_card_celtic
+boundary: not shown
+reason: not shown
+
+concern: fin.credit
+software: core: Credit in the admin's Finance area || cites: inv:admin-navigation|Credit, inv:plan-features|Shopify Credit pay-in-full Visa® card³|Public pricing
+decides: operator: Shopify evaluates eligibility from the health of the business || cites: cred_eligibility
+legal: partner: Celtic Bank issues the Shopify Credit Visa Commercial Credit cards under a licence from Visa U.S.A. Inc.; the cards are powered by Stripe || cites: cred_issuer
+boundary: other: a pay-in-full charge card, paid automatically each month or over 10 months by automatic debits from daily sales || cites: cred_charge_card, cred_repay_sales
+reason: not shown
+
+concern: fin.capital_us
+software: core: Capital in the admin's Finance area, where offers appear || cites: inv:admin-navigation|Capital, cap_elig_auto
+decides: operator: eligibility is evaluated automatically and Shopify Capital runs an underwriting review; only a store owner can apply || cites: cap_elig_auto, cap_underwriting, cap_owner
+decides: operator, per market: offered in nine countries; the principal place of business and bank account must be in the country; in some locations Shopify Payments is mandatory || cites: cap_countries, cap_principal_place, cap_sp_mandatory, cap_sp_or_third
+legal: partner: all funding through Shopify Capital in the United States is issued by WebBank || cites: cap_us_webbank
+boundary: other: loans repaid from a daily percentage of sales || cites: cap_us_loans, cap_us_daily
+reason: not shown
+
+concern: fin.capital_uk
+software: core: Capital in the admin's Finance area || cites: inv:admin-navigation|Capital, cap_elig_auto
+decides: operator: automatic eligibility evaluation and underwriting review || cites: cap_elig_auto, cap_underwriting
+legal: partner: YouLend issues all merchant cash advances in the United Kingdom, under a receivables purchase agreement || cites: cap_uk_youlend_partner, cap_uk_issued
+boundary: contract: receivables purchase agreement, remitted by Direct Debit whose notifications BACS regulations require || cites: cap_uk_youlend_partner, cap_uk_bacs
+reason: not shown
+
+concern: fin.capital_ca
+software: core: Capital in the admin's Finance area || cites: inv:admin-navigation|Capital, cap_elig_auto
+decides: operator: automatic eligibility evaluation and underwriting review || cites: cap_elig_auto, cap_underwriting
+legal: not shown || note: The Canada Help page describes loans offered by "Shopify Capital" and names no lender. The financial complaint form lists the product as "Capital - Canada Merchant Cash Advance (MCA)", while the Help page describes loans.
+boundary: contract: a pre-authorized debit agreement for repayments || cites: cap_ca_loans, cap_ca_pad
+reason: not shown
+
+concern: fin.capital_au
+software: core: Capital in the admin's Finance area || cites: inv:admin-navigation|Capital, cap_elig_auto
+decides: operator: automatic eligibility evaluation and underwriting review || cites: cap_elig_auto, cap_underwriting
+legal: not shown || note: The Australia Help page describes loans offered by "Shopify Capital" and names no lender.
+boundary: not shown
+reason: not shown
+
+concern: fin.capital_fr
+software: core: Capital in the admin's Finance area || cites: inv:admin-navigation|Capital, cap_elig_auto
+decides: operator: automatic eligibility evaluation and underwriting review || cites: cap_elig_auto, cap_underwriting
+legal: partner: loans in France are provided by Banking Circle S.A. (a CSSF-licensed Luxembourg credit institution) with YouLend SAS || cites: cap_fr_banking_circle
+legal: separate entity of the platform: Shopify Commerce France SAS provides the application || cites: cap_fr_shopify_france
+boundary: not shown
+reason: not shown
+
+concern: fin.capital_de
+software: core: Capital in the admin's Finance area || cites: inv:admin-navigation|Capital, cap_elig_auto
+decides: operator: automatic eligibility evaluation and underwriting review || cites: cap_elig_auto, cap_underwriting
+legal: partner: loans in Germany are provided in cooperation with YouLend GmbH || cites: cap_de_youlend
+legal: separate entity of the platform: Shopify Commerce Germany GmbH, a registered Credit Broker in Germany, makes the applications available || cites: cap_de_broker
+boundary: not shown
+reason: not shown
+
+concern: fin.capital_mca_eu
+software: core: Capital in the admin's Finance area || cites: inv:admin-navigation|Capital, cap_elig_auto
+decides: operator: automatic eligibility evaluation and underwriting review || cites: cap_elig_auto, cap_underwriting
+legal: partner: YouLend issues all merchant cash advances through Shopify Capital in Ireland, the Netherlands and Spain || cites: cap_ie_youlend, cap_nl_youlend, cap_es_youlend
+boundary: other: merchant cash advances (purchase of receivables) || cites: cap_ie_mca
+reason: not shown
+
+concern: fin.bill_pay
+software: separate service or product line: the Shopify Bill Pay app, installed from the Shopify App Store and powered by Melio || cites: bp_app, bp_melio
+decides: operator, per market: only merchants in the United States || cites: bp_us_only
+legal: partner: Melio || cites: bp_melio
+boundary: other: an app; vendors are paid by bank transfer or check, and international bills in USD by wire transfer || cites: bp_app, bp_international
+reason: not shown
+
+concern: fin.tax_documents
+software: core: Form 1099-K generated by Shopify Payments and downloaded from the admin, behind a tax-documents permission || cites: k1099_generated, inv:other:staff-permissions|VIEW_TAX_DOCUMENTS
+decides: outside rules: US tax law requires Payment Settlement Entities to file Form 1099-K; in some jurisdictions Shopify may have to report sales to tax authorities || cites: k1099_pse, k1099_jurisdiction, spt_tax_reports
+legal: other: "Payment Settlement Entities (PSEs) such as Shopify Payments" file the form; the merchant is responsible for reporting the income || cites: k1099_pse, k1099_merchant_responsible
+boundary: other: an annual form provided to the merchant and to the IRS || cites: k1099_generated
+reason: required by tax law || cites: k1099_pse

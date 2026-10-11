@@ -1,0 +1,331 @@
+level	file	id	issue
+warning	placements	SH-C-002/legal	value 'separate entities of the platform: Shopify Technology (USA) Inc. alongside Shopi' matches no agreed value and doesn't start with other:
+review	placements	SH-C-011/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-014/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-019/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-019/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-039/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-045/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-056/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+warning	placements	SH-C-063/legal	value 'separate entities of the platform: Shopify Payments (USA) Inc. for the United St' matches no agreed value and doesn't start with other:
+warning	placements	SH-C-064/software	value 'outside platform: processing and settlement of transactions are carried out by P' matches no agreed value and doesn't start with other:
+review	placements	SH-C-064/legal	value names partner, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-065/software	value 'outside platform: funds settle into Payment Processor Accounts; the processor re' matches no agreed value and doesn't start with other:
+review	placements	SH-C-066/decides	value names merchant, outside rules: split the concern if its parts sit with different parties
+warning	placements	SH-C-066/legal	value 'separate entities of the platform: Shopify Payments EU Limited (EU / EEA) and Sh' matches no agreed value and doesn't start with other:
+review	placements	SH-C-068/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-068/decides	value names merchant, outside rules: split the concern if its parts sit with different parties
+review	placements	SH-C-072/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-073/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-074/legal	value names platform company, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-075/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-076/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-076/legal	value names partner, app developer: split the concern if its parts sit with different parties
+warning	placements	SH-C-077/software	value 'outside platform: PayPal Express Checkout is a Third Party Service; PayPal pays ' matches no agreed value and doesn't start with other:
+review	placements	SH-C-077/decides	value names operator, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-078/software	value 'outside platform: Apple Pay, Google Pay, Meta Pay and Amazon Pay are Third Party' matches no agreed value and doesn't start with other:
+review	placements	SH-C-078/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-079/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-080/decides	value names operator, buyer: split the concern if its parts sit with different parties
+warning	placements	SH-C-081/software	value 'outside platform: other cryptocurrency gateways are third-party additional payme' matches no agreed value and doesn't start with other:
+review	placements	SH-C-082/legal	value names platform company, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-084/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-088/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-088/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-092/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-097/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-098/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-098/decides	value names operator, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-103/software	value 'outside platform: the tax provider's own service, which needs its own account' matches no agreed value and doesn't start with other:
+review	placements	SH-C-104/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-104/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-106/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-108/decides	value names operator, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-110/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-110/legal	value names partner, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-111/software	value 'outside platform: geolocation apps in the App Store' matches no agreed value and doesn't start with other:
+review	placements	SH-C-113/decides	value names platform at build, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-114/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+warning	placements	SH-C-115/software	value 'outside platform: third-party calculated rates from the merchant's own carrier a' matches no agreed value and doesn't start with other:
+review	placements	SH-C-115/legal	value names partner, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-116/legal	value 'separate entities of the platform: the Shopify Contracting Party by billing addr' matches no agreed value and doesn't start with other:
+review	placements	SH-C-120/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-120/legal	value names partner, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-129/software	value 'outside platform: marketing apps in the App Store' matches no agreed value and doesn't start with other:
+review	placements	SH-C-131/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-132/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-133/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-133/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-134/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-135/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-136/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-136/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-137/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-139/decides	value names merchant, app developer: split the concern if its parts sit with different parties
+review	placements	SH-C-140/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-140/legal	value names platform company, partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-142/software	value names core, extension point: split the concern if its parts sit with different parties
+warning	placements	SH-C-143/software	value 'outside platform: POS hardware sold under country equipment agreements' matches no agreed value and doesn't start with other:
+review	placements	SH-C-146/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-147/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-147/legal	value names platform company, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-151/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-153/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-153/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-154/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-156/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-157/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-157/legal	value names platform company, partner: split the concern if its parts sit with different parties
+review	placements	SH-C-158/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-160/legal	value names partner, app developer: split the concern if its parts sit with different parties
+review	placements	SH-C-161/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-167/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SH-C-168/decides	value names operator, app developer: split the concern if its parts sit with different parties
+review	placements	SH-C-168/legal	value names platform company, partner: split the concern if its parts sit with different parties
+review	placements	SH-C-168/legal	value names partner, app developer: split the concern if its parts sit with different parties
+review	placements	SH-C-169/legal	value names platform company, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-170/software	value 'outside platform: services that partners and experts provide to merchants' matches no agreed value and doesn't start with other:
+review	placements	SH-C-171/legal	value names platform company, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-172/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-173/decides	value names operator, outside rules: split the concern if its parts sit with different parties
+review	placements	SH-C-174/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-175/decides	value names buyer, outside rules: split the concern if its parts sit with different parties
+review	placements	SH-C-177/legal	value names separate entity, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-179/decides	value names operator, merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SH-C-181/decides	value names operator, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-182/software	value 'outside platform: third-party subprocessors for cloud hosting, content delivery,' matches no agreed value and doesn't start with other:
+review	placements	SH-C-182/decides	value names operator, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-182/legal	value 'separate entities of the platform: affiliated subprocessors include Shopify Inc.' matches no agreed value and doesn't start with other:
+review	placements	SH-C-183/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-185/software	value 'outside platform: sourcing, dropshipping and print-on-demand apps in the App Sto' matches no agreed value and doesn't start with other:
+review	placements	SH-C-185/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-186/software	value names core, extension point: split the concern if its parts sit with different parties
+warning	placements	SH-C-187/software	value 'outside platform: loyalty, rewards, wishlist and donation apps' matches no agreed value and doesn't start with other:
+review	placements	SH-C-187/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-188/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-189/software	value 'outside platform: custom product and product option apps' matches no agreed value and doesn't start with other:
+review	placements	SH-C-189/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-190/software	value 'outside platform: digital goods, event and token-gating apps; a Blockchain secti' matches no agreed value and doesn't start with other:
+review	placements	SH-C-190/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-191/software	value 'outside platform: accounting and ERP apps' matches no agreed value and doesn't start with other:
+review	placements	SH-C-191/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-192/software	value 'outside platform: helpdesk, chat and FAQ apps' matches no agreed value and doesn't start with other:
+review	placements	SH-C-192/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-193/software	value 'outside platform: page builder, content, media, pop-up and SEO apps' matches no agreed value and doesn't start with other:
+review	placements	SH-C-193/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-194/software	value 'outside platform: advertising and affiliate apps' matches no agreed value and doesn't start with other:
+review	placements	SH-C-194/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-195/software	value 'outside platform: mobile app builder apps, with mobile platform application scop' matches no agreed value and doesn't start with other:
+review	placements	SH-C-195/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+warning	placements	SH-C-196/software	value 'outside platform: security, anti-theft and legal apps' matches no agreed value and doesn't start with other:
+review	placements	SH-C-196/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SH-C-091/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-042/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-104/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-104/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-135/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-135/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-116/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-116/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-157/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-084/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-019/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-062/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-014/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-180/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-168/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-107/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-113/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-136/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-108/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-102/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-007/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-076/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-076/boundary	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-010/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-018/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-069/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-069/reason	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-109/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-109/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-156/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-068/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-068/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-083/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-049/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-009/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-181/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-181/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-181/legal	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-181/reason	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-066/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-066/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-005/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-103/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-103/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-041/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-101/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-017/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-017/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-004/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-142/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-020/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-006/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-056/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-149/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-061/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-003/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-047/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-172/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-167/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-100/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-100/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-100/boundary	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-059/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-002/legal	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-079/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-048/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-141/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-171/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-016/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-137/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-139/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-060/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-163/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-011/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-179/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-182/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-088/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-024/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-070/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-105/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-105/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-080/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-096/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-140/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-140/legal	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-140/boundary	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-111/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-174/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-174/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-115/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-129/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-184/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-073/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-015/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-086/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-058/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-183/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-065/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-065/legal	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-065/boundary	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-063/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-063/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-063/boundary	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-077/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-074/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-074/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-146/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-186/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-081/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-081/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-148/decides	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-095/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-064/software	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-064/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-064/legal	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-064/boundary	2 rows: sources differ or the concern needs splitting
+review	placements	SH-C-072/decides	3 rows: sources differ or the concern needs splitting
+review	placements	SH-C-158/decides	2 rows: sources differ or the concern needs splitting
+warning	citations	SH-S-0018	not used by any inventory entry or placement
+warning	citations	SH-S-0030	not used by any inventory entry or placement
+warning	citations	SH-S-0043	not used by any inventory entry or placement
+warning	citations	SH-S-0044	not used by any inventory entry or placement
+warning	citations	SH-S-0061	not used by any inventory entry or placement
+warning	citations	SH-S-0062	not used by any inventory entry or placement
+warning	citations	SH-S-0063	not used by any inventory entry or placement
+warning	citations	SH-S-0064	not used by any inventory entry or placement
+warning	citations	SH-S-0065	not used by any inventory entry or placement
+warning	citations	SH-S-0077	not used by any inventory entry or placement
+warning	citations	SH-S-0090	not used by any inventory entry or placement
+warning	citations	SH-S-0091	not used by any inventory entry or placement
+warning	citations	SH-S-0095	not used by any inventory entry or placement
+warning	citations	SH-S-0101	not used by any inventory entry or placement
+warning	citations	SH-S-0102	not used by any inventory entry or placement
+warning	citations	SH-S-0103	not used by any inventory entry or placement
+warning	citations	SH-S-0104	not used by any inventory entry or placement
+warning	citations	SH-S-0119	not used by any inventory entry or placement
+warning	citations	SH-S-0121	not used by any inventory entry or placement
+warning	citations	SH-S-0133	not used by any inventory entry or placement
+warning	citations	SH-S-0134	not used by any inventory entry or placement
+warning	citations	SH-S-0142	not used by any inventory entry or placement
+warning	citations	SH-S-0150	not used by any inventory entry or placement
+warning	citations	SH-S-0168	not used by any inventory entry or placement
+warning	citations	SH-S-0171	not used by any inventory entry or placement
+warning	citations	SH-S-0174	not used by any inventory entry or placement
+warning	citations	SH-S-0177	not used by any inventory entry or placement
+warning	citations	SH-S-0178	not used by any inventory entry or placement
+warning	citations	SH-S-0179	not used by any inventory entry or placement
+warning	citations	SH-S-0181	not used by any inventory entry or placement
+warning	citations	SH-S-0193	not used by any inventory entry or placement
+warning	citations	SH-S-0200	not used by any inventory entry or placement
+warning	citations	SH-S-0202	not used by any inventory entry or placement
+warning	citations	SH-S-0208	not used by any inventory entry or placement
+warning	citations	SH-S-0212	not used by any inventory entry or placement
+warning	citations	SH-S-0213	not used by any inventory entry or placement
+warning	citations	SH-S-0222	not used by any inventory entry or placement
+warning	citations	SH-S-0223	not used by any inventory entry or placement
+warning	citations	SH-S-0225	not used by any inventory entry or placement
+warning	citations	SH-S-0237	not used by any inventory entry or placement
+warning	citations	SH-S-0259	not used by any inventory entry or placement
+warning	citations	SH-S-0267	not used by any inventory entry or placement
+warning	citations	SH-S-0270	not used by any inventory entry or placement
+warning	citations	SH-S-0294	not used by any inventory entry or placement
+warning	citations	SH-S-0310	not used by any inventory entry or placement
+warning	citations	SH-S-0313	not used by any inventory entry or placement
+warning	citations	SH-S-0321	not used by any inventory entry or placement
+warning	citations	SH-S-0324	not used by any inventory entry or placement
+warning	citations	SH-S-0330	not used by any inventory entry or placement
+warning	citations	SH-S-0335	not used by any inventory entry or placement
+warning	citations	SH-S-0336	not used by any inventory entry or placement
+warning	citations	SH-S-0338	not used by any inventory entry or placement
+warning	citations	SH-S-0343	not used by any inventory entry or placement
+warning	citations	SH-S-0344	not used by any inventory entry or placement
+warning	citations	SH-S-0346	not used by any inventory entry or placement
+warning	citations	SH-S-0352	not used by any inventory entry or placement
+warning	citations	SH-S-0358	not used by any inventory entry or placement
+warning	citations	SH-S-0359	not used by any inventory entry or placement
+warning	citations	SH-S-0360	not used by any inventory entry or placement
+warning	citations	SH-S-0362	not used by any inventory entry or placement
+warning	citations	SH-S-0368	not used by any inventory entry or placement
+warning	citations	SH-S-0371	not used by any inventory entry or placement
+warning	citations	SH-S-0372	not used by any inventory entry or placement
+warning	citations	SH-S-0373	not used by any inventory entry or placement
+warning	citations	SH-S-0375	not used by any inventory entry or placement
+warning	citations	SH-S-0376	not used by any inventory entry or placement
+warning	citations	SH-S-0377	not used by any inventory entry or placement
+warning	citations	SH-S-0379	not used by any inventory entry or placement
+warning	citations	SH-S-0381	not used by any inventory entry or placement
+warning	citations	SH-S-0399	not used by any inventory entry or placement
+warning	citations	SH-S-0412	not used by any inventory entry or placement
+warning	citations	SH-S-0429	not used by any inventory entry or placement
+warning	citations	SH-S-0471	not used by any inventory entry or placement
+warning	citations	SH-S-0473	not used by any inventory entry or placement
+warning	citations	SH-S-0478	not used by any inventory entry or placement
+warning	citations	SH-S-0489	not used by any inventory entry or placement
+warning	citations	SH-S-0519	not used by any inventory entry or placement
+warning	citations	SH-S-0520	not used by any inventory entry or placement
+warning	citations	SH-S-0534	not used by any inventory entry or placement
+warning	citations	SH-S-0542	not used by any inventory entry or placement
+warning	citations	SH-S-0557	not used by any inventory entry or placement
+warning	citations	SH-S-0559	not used by any inventory entry or placement
+warning	citations	SH-S-0560	not used by any inventory entry or placement
+warning	citations	SH-S-0570	not used by any inventory entry or placement
+warning	citations	SH-S-0572	not used by any inventory entry or placement
+warning	citations	SH-S-0600	not used by any inventory entry or placement
+warning	citations	SH-S-0601	not used by any inventory entry or placement
+warning	citations	SH-S-0615	not used by any inventory entry or placement
+warning	citations	SH-S-0620	not used by any inventory entry or placement
+warning	citations	SH-S-0642	not used by any inventory entry or placement
+warning	citations	SH-S-0644	not used by any inventory entry or placement
+warning	citations	SH-S-0649	not used by any inventory entry or placement

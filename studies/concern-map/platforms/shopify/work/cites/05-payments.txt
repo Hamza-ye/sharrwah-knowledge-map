@@ -1,0 +1,1167 @@
+key: gp_third_party
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: introduction
+quote: All Shopify-supported payment methods rely on third-party providers to process your transactions.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_provider_rules
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: introduction
+quote: These providers might charge extra fees and enforce rules about what products you can sell using their service.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_no_payout_info
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: How you get paid
+quote: If customers pay using third-party payment gateways, then you can't view payout information in your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_own_methods
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: How you get paid
+quote: have their own methods of transferring funds from your customer to you.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_paypal_wallet_sp
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: payment providers table, row PayPal Wallet, column How you get paid
+quote: Through Shopify Payments for only France and the United States
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_txn_fees_not_brokered
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: How you get paid
+quote: If you don't activate Shopify Payments as your payment provider, then you're charged third-party transaction fees for all orders that aren't brokered financially by Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_bank_delay
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: How often you get paid with Shopify Payments
+quote: Shopify doesn't control the length of time between payouts arriving at your bank and your bank moving those funds into your account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_acquirer
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: How a credit card payment gets processed, Capture
+quote: Capturing a payment sends the transaction details to the acquirer, which is a bank or financial institution that processes credit card transactions on behalf of your business.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_processing_by_provider
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: How a credit card payment gets processed
+quote: Credit card processing is done for you by your payment provider.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_spi_in_payouts
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: Shop Pay Installments
+quote: Payouts for these orders are included with your Shopify Payments payouts.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: gp_spi_no_collect
+source: https://help.shopify.com/en/manual/payments/getting-paid.md
+locator: Shop Pay Installments
+quote: You don't have to collect payments from your customers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pay_methods_activated
+source: https://help.shopify.com/en/manual/payments.md
+locator: introduction
+quote: When a customer checks out, they can choose to pay for their order using any of the methods that you've activated in the
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sp_no_merchant_account
+source: https://help.shopify.com/en/manual/payments/shopify-payments.md
+locator: introduction
+quote: It eliminates the hassle of setting up a third-party payment provider or merchant account and having to enter the credentials into Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sp_auto_setup
+source: https://help.shopify.com/en/manual/payments/shopify-payments.md
+locator: introduction
+quote: With Shopify Payments you're automatically set up to accept all major payment methods as soon as you create your Shopify store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sp_manual_no_fees
+source: https://help.shopify.com/en/manual/payments/shopify-payments.md
+locator: transaction fees paragraph
+quote: and you aren't charged transaction fees on manual payment methods such as cash, cash on delivery (COD), and bank transfers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spc_located
+source: https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md
+locator: introduction
+quote: You can use Shopify Payments to accept payments at checkout if your business is located in one of the supported countries listed on this page.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spc_not_listed
+source: https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md
+locator: introduction
+quote: If your country isn't listed, or if Shopify Payments doesn't support your business category, then you need to use a
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: elig_integrated
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+locator: introduction
+quote: Shopify Payments is an integrated payment gateway offered by Shopify. Only eligible merchants can use Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: elig_age
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+locator: eligibility criteria
+quote: You must be at least 18 years old to set up a Shopify Payments account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: elig_legal_unsupported
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+locator: Prohibited businesses and products
+quote: There are certain business models that, while legal, Shopify Payments can't support.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: elig_varies_region
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+locator: Prohibited businesses and products
+quote: The list of prohibited products and services isn't exhaustive and it varies depending on your region.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: elig_financial_products
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+locator: Prohibited businesses and products, high-level categories
+quote: Financial products and services: Products or services related to money transfers, virtual currencies and cryptocurrencies, check cashing, or credit repair services.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: elig_third_party
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+locator: eligibility criteria
+quote: If you aren't eligible for Shopify Payments, then you can add a
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: abp_evaluated
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+locator: introduction
+quote: Your business is evaluated when you first apply for Shopify Payments, and risk is continuously monitored throughout your use of the platform.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: abp_actions
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+locator: introduction
+quote: If a review identifies practices that create elevated risk or undermine customer trust, then your account might be declined, deactivated, or subject to restrictions such as payout holds, reserves, or payout delays.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: abp_higher_standard
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+locator: Shopify Payments risk standards and card network thresholds
+quote: Although payment networks such as Visa and Mastercard publish chargeback thresholds, your store is evaluated against a higher standard to maintain merchant and customer trust across the Shopify ecosystem.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: abp_platform_trust
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+locator: Shopify Payments risk standards and card network thresholds
+quote: A small number of merchants who harm customers make every other merchant on the platform look less trustworthy to banks and card networks.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: abp_payout_schedule
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+locator: Account actions for elevated risk, Adjusting payout schedules
+quote: A custom payout schedule might be imposed for higher-risk businesses, resulting in longer waiting periods before you receive payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: abp_suspend
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+locator: Account actions for elevated risk, Suspending payouts or deactivating charges
+quote: In severe circumstances where risks aren't adequately resolved, your payouts might be suspended or your ability to process charges through Shopify Payments might be deactivated.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: abp_history_other
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+locator: Review criteria, Transaction and operational patterns
+quote: Historical patterns across any businesses that you operate.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: abp_continue_third_party
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+locator: Declined or deactivated accounts
+quote: to continue processing transactions in your store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: payouts_min
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts.md
+locator: introduction
+quote: In certain countries, there's a minimum payout amount for Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_vary
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: introduction
+quote: Payout settlement times vary by country and risk level.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_bank_control
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: introduction
+quote: After funds are paid out, they might take an additional 1-3 days to display in your bank account. This depends on your bank's processing time and is out of Shopify’s control.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_schedule
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: Payout schedule
+quote: You can choose daily, weekly, or monthly payouts based on your business needs. Some countries, such as Japan, have requirements that limit available payout options.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_utc
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: introduction
+quote: The date and time that a customer's payment is captured is recorded in Coordinated Universal Time (UTC).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_financial_partners
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: Troubleshooting payout delays, Account reviews and holds
+quote: Fraud or compliance investigations by our financial partners
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_dest_pause
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: Troubleshooting payout delays, Payout destination change
+quote: When you change your payout destination to a new external bank account, or add a new payout bank account more than 24 hours after completing your Shopify Payments setup, your payouts are temporarily paused for 3-5 business days.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_tax_ids
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: Troubleshooting payout delays, Issues with your tax details
+quote: Financial regulations require Shopify to verify appropriate tax identification numbers and other business details.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_balance_7days
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: Payouts with Shopify Balance
+quote: This means that using your main Balance account lets you receive money from your Shopify sales up to 7 days earlier than a bank.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: res_definition
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md
+locator: Understanding reserves in Shopify Payments
+quote: A reserve is a temporary hold on a portion, in some cases a full amount, of transactions processed through Shopify Payments for a specified period.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: res_email
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md
+locator: Understanding reserves in Shopify Payments
+quote: The terms of reserves are communicated to you using email.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: res_reason
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md
+locator: Reasons for using reserves in Shopify Payments
+quote: Shopify Payments requires reserves to ensure that funds are available to handle disputes and refunds that might occur
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: res_risk_assessment
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md
+locator: Extending, appealing, and removing reserves
+quote: Each reserve has an expiry date, and a risk assessment decides whether to lift, maintain, reduce, or increase the reserve.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: res_appeal
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md
+locator: Extending, appealing, and removing reserves
+quote: To appeal a reserve, reply to the email detailing the reserve terms within the specified timeframe. Some reserves can't be appealed.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: hold_sanctions
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md
+locator: Reasons for account holds
+quote: Sanctions: your business might be subject to sanctions related to your location.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: hold_creditor_processors
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md
+locator: Reasons for account holds, Creditor or legal action
+quote: The payment processors that support Shopify Payments (such as Stripe, PayPal, or Adyen, depending on your region) might receive legal notices from third-party creditors.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: hold_processor_required
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md
+locator: Reasons for account holds, Creditor or legal action
+quote: When this happens, the processor is legally required to place a hold on your payout account for the amount specified in the notice.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: hold_shopify_cant_remove
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md
+locator: Reasons for account holds, Creditor or legal action
+quote: Shopify can't remove this type of hold. Only the payment processor can remove it after receiving a release directly from your creditor.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: hold_banking_partners
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md
+locator: Account holds after receiving orders
+quote: However, if Shopify's banking partners require more information for your business, then your Shopify Payments account is put on hold until your details can be verified.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: hold_standard_review
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md
+locator: Account holds after receiving orders
+quote: Every store that sets up an account on Shopify Payments is legally subject to the standard review process, which happens throughout the account's lifespan.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: hold_store_owner_only
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md
+locator: Staff member permissions
+quote: Only the store owner is authorized to access Shopify Payments account details, and therefore the only one who can resolve a hold on the account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: hold_checkout_continues
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md
+locator: Customer checkout during holds
+quote: In most cases, your customers can still check out if your payouts are on hold, however, you won't be paid out for the orders until the hold is resolved.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cur_store_currency
+source: https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/understanding-store-and-payout-currencies.md
+locator: Store currency
+quote: Your store currency is the currency used within your Shopify admin for pricing products and running reports.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cur_payout_country
+source: https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/understanding-store-and-payout-currencies.md
+locator: Payout currency
+quote: This depends on the location of your store, and your bank account must generally be in the same country as your store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cur_conversion_change
+source: https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/currency-conversion-calculation.md
+locator: introduction
+quote: On April 6, 2026, the calculation for currency conversion fees and Multi-Currency Payout fees on Shopify Payments orders is changing.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cur_conversion_gross
+source: https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/currency-conversion-calculation.md
+locator: New currency calculation method
+quote: Starting on April 6, 2026, currency conversion fees and Multi-Currency Payout fees on Shopify Payments orders are calculated directly on the gross order amount.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mcp_plans
+source: https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/payouts-in-multiple-currencies.md
+locator: Requirements for Multi-Currency Payouts, Plan requirements
+quote: If your store is on the Basic, Grow, or Shopify plan, then you aren't eligible for Multi-Currency Payouts.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mc_requires_sp
+source: https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/multi-currency.md
+locator: introduction
+quote: To sell in multiple currencies, you need to use Shopify Payments in your online store and activate
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bank_types
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-account-requirements.md
+locator: introduction
+quote: To be eligible, a bank account must be a checking account or current account that can receive transfers and is eligible to receive payouts in a currency that Shopify supports for your country.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bank_unsupported
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-account-requirements.md
+locator: introduction
+quote: Savings accounts, flex-currency accounts, and money-transferring services that mimic bank accounts aren't supported by Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: setup_owner_only
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md
+locator: Switch to Shopify Payments, staff permissions note
+quote: Only the store owner can activate or switch to Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: setup_currency_support
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md
+locator: introduction
+quote: If you need to change your store currency after making your first sale, then contact Shopify Support.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tpp_over_100
+source: https://help.shopify.com/en/manual/payments/third-party-providers.md
+locator: introduction
+quote: To accept credit cards through a provider other than Shopify Payments, choose from over 100
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tpp_direct_external
+source: https://help.shopify.com/en/manual/payments/third-party-providers.md
+locator: introduction
+quote: Shopify supports two different types of credit card payment providers: **direct providers** and **external providers**.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tpp_external_hosted
+source: https://help.shopify.com/en/manual/payments/third-party-providers.md
+locator: introduction
+quote: If you're using an **external provider**, then your customers must complete their purchases on a checkout page that's hosted outside of your online store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tpp_activate
+source: https://help.shopify.com/en/manual/payments/third-party-providers.md
+locator: introduction
+quote: You can activate or change a payment provider from the **Payments** page of your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spw_routing
+source: https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md
+locator: Payment method routing
+quote: When you use Shopify Payments alongside a third-party provider, each payment method is routed to a specific provider.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spw_recover
+source: https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md
+locator: introduction
+quote: You can also use Shopify Payments to recover failed card transactions from your third-party provider, helping to reduce lost sales.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spw_one_direct
+source: https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md
+locator: Considerations
+quote: You can use only one direct third-party payment provider alongside Shopify Payments at a time.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spw_premium
+source: https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md
+locator: Pricing and fees
+quote: Transactions processed through Shopify Payments, such as Shop Pay and local payment methods, are charged at standard Shopify Payments rates plus a 1.25% premium. Shopify Payments rates vary by plan type and market.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spw_multi_entity
+source: https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md
+locator: Requirements
+quote: Only Shopify Payments can be used as a direct provider in multi-entity setups.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spw_protect_only_sp
+source: https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md
+locator: Considerations
+quote: covers only transactions processed through Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spw_plus_contracts
+source: https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md
+locator: Requirements
+quote: Merchants on the Shopify Plus plan with signed contracts, including new merchants and merchants renewing their contracts, aren't eligible to use Shopify Payments alongside a third-party provider at this time.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pga_only_gateway
+source: https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md
+locator: Stripe availability in Shopify Payments regions
+quote: Shopify Payments is the only payment gateway designed and operated by Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pga_stripe_partner
+source: https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md
+locator: Stripe availability in Shopify Payments regions
+quote: This is because Stripe is Shopify Payments' banking partner, and all payment reporting and management takes place in your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pga_no_stripe_alternative
+source: https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md
+locator: Stripe availability in Shopify Payments regions
+quote: then standalone Stripe isn't available as an alternative.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: man_arrange
+source: https://help.shopify.com/en/manual/payments/manual-payments.md
+locator: introduction
+quote: When your customers use a manual payment method, you can arrange to receive their payment in a way that works best for them.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: man_unpaid
+source: https://help.shopify.com/en/manual/payments/manual-payments.md
+locator: introduction
+quote: Orders that accept manual payments are marked as unpaid on the **Orders** page.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: man_settings
+source: https://help.shopify.com/en/manual/payments/manual-payments.md
+locator: Use a suggested manual payment method
+quote: You can choose from a list of suggested manual payment methods on the **Payment providers** settings page in your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: man_multi_currency
+source: https://help.shopify.com/en/manual/payments/manual-payments.md
+locator: Multi-currency support
+quote: To accept manual payments in multiple currencies, you need to use [Shopify Payments](/manual/payments/shopify-payments/) and activate the [international sales tools](/manual/international/).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: auth_routing
+source: https://help.shopify.com/en/manual/payments/payment-authorization.md
+locator: introduction
+quote: If you use Shopify Payments, then it automatically routes each payment to the processor most likely to authorize it.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: auth_default
+source: https://help.shopify.com/en/manual/payments/payment-authorization.md
+locator: introduction
+quote: By default, credit card payments and some additional methods of payment are captured automatically, but if it suits your business better, then you can change your store setting to capture payments manually.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: auth_7_days
+source: https://help.shopify.com/en/manual/payments/payment-authorization.md
+locator: What is a credit card authorization period?
+quote: provides an authorization period of 7 days.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: auth_provider_period
+source: https://help.shopify.com/en/manual/payments/payment-authorization.md
+locator: What is a credit card authorization period?
+quote: The length of the authorization period depends on your credit card payment provider.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: auth_extended_plus
+source: https://help.shopify.com/en/manual/payments/payment-authorization.md
+locator: Extended authorization periods, plan requirement
+quote: Extended authorization periods are available only to stores on the Shopify Plus plan that use Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: auth_local_regulation
+source: https://help.shopify.com/en/manual/payments/payment-authorization.md
+locator: introduction, reasons for manual capture
+quote: Complying with a local regulation that prescribes online merchants must offer at least one payment method that allows your customer to pay for the order upon delivery.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cb_bank_takes
+source: https://help.shopify.com/en/manual/payments/chargebacks.md
+locator: introduction
+quote: If the cardholder's bank makes a _chargeback_, then the bank takes the disputed amount from you right away.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cb_issuer_decides
+source: https://help.shopify.com/en/manual/payments/chargebacks.md
+locator: introduction
+quote: Often, the company that issued the cardholder's credit card reviews any evidence, and then resolves the chargeback in either your favor or the cardholder's favor.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cb_network_programs
+source: https://help.shopify.com/en/manual/payments/chargebacks.md
+locator: introduction
+quote: Some disputes are resolved automatically. If your store is enrolled in a network dispute resolution program, then disputes are
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cb_deducted_payout
+source: https://help.shopify.com/en/manual/payments/chargebacks.md
+locator: introduction
+quote: If you're using Shopify Payments and you're issued a chargeback, then the amount is deducted from your next available payout.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cb_fee_refund
+source: https://help.shopify.com/en/manual/payments/chargebacks.md
+locator: introduction
+quote: If you win the chargeback, then you get the disputed amount back, and Shopify might refund the chargeback fee depending on your country or region.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: prot_free
+source: https://help.shopify.com/en/manual/payments/shop-pay/shopify-protect.md
+locator: introduction
+quote: This feature is available for free and helps protect eligible orders against fraudulent and unrecognized chargebacks.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: prot_issuer
+source: https://www.shopify.com/legal/terms-shopify-protect
+locator: introduction
+quote: the warranty issuer, Shopify Inc.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: prot_not_insurance
+source: https://www.shopify.com/legal/terms-shopify-protect
+locator: 2.6 Not Insurance
+quote: Shopify Protect does not constitute insurance and is offered as an add-on to the general Shopify Payments services. Shopify and its affiliates are not insurers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: prot_us_business
+source: https://www.shopify.com/legal/terms-shopify-protect
+locator: representations and warranties
+quote: you operate a business in the United States selling goods and services using Shopify Payments to process online card-not-present transactions
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: prot_evaluate
+source: https://www.shopify.com/legal/terms-shopify-protect
+locator: 2. Shopify Protect Warranty Service
+quote: Shopify will evaluate each Customer order authorized through Shopify Payments to determine whether such order represents a significant fraud risk, as determined in Shopify's sole discretion.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: prot_enrolled_sp
+source: https://www.shopify.com/legal/terms-shopify-protect
+locator: term and eligibility
+quote: You must be actively enrolled in Shopify Payments to be eligible for Shopify Protect.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: shoppay_saves
+source: https://help.shopify.com/en/manual/payments/shop-pay.md
+locator: introduction
+quote: It allows customers to save their email address, payment method, and shipping and billing information, making the checkout process faster and more convenient.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: shoppay_storage
+source: https://help.shopify.com/en/manual/payments/shop-pay.md
+locator: benefits and features, Secure data storage
+quote: The customer’s shipping and billing information is securely stored on
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spmt_not_party
+source: https://www.shopify.com/legal/shop-pay-merchant-terms
+locator: 2. Merchant Obligations and Shopify’s role
+quote: Shopify is not a party to these transactions, and only enables payment processing through the sharing of payment credentials;
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spmt_not_processing
+source: https://www.shopify.com/legal/shop-pay-merchant-terms
+locator: 2. Merchant Obligations and Shopify’s role
+quote: Shop Pay is not a payment processing service.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spmt_disputes
+source: https://www.shopify.com/legal/shop-pay-merchant-terms
+locator: 2. Merchant Obligations and Shopify’s role
+quote: You are solely responsible for investigating and resolving disputes with a Customer and Shopify will not be a party to or responsible for any disputes;
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spmt_shopify_inc
+source: https://www.shopify.com/legal/shop-pay-merchant-terms
+locator: introduction
+quote: means Shopify Inc., and its Affiliates
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spmt_availability
+source: https://www.shopify.com/legal/shop-pay-merchant-terms
+locator: 2. Merchant Obligations and Shopify’s role
+quote: Shop Pay may not be available in all languages or in all countries
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spmt_collects
+source: https://www.shopify.com/legal/shop-pay-merchant-terms
+locator: 1. Accelerated Checkout (Shop Pay)
+quote: Shopify will collect and store certain personal information from the Customer
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spi_countries
+source: https://help.shopify.com/en/manual/payments/shop-pay-installments.md
+locator: availability note
+quote: Shop Pay Installments is available to eligible stores in the United States, Canada, and the United Kingdom.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spi_requires
+source: https://help.shopify.com/en/manual/payments/shop-pay-installments.md
+locator: introduction
+quote: have both Shopify Payments and Shop Pay activated, and have a business entity in one of the following countries:
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: paypal_auto
+source: https://help.shopify.com/en/manual/payments/paypal.md
+locator: introduction
+quote: When you create your Shopify store, you automatically receive a PayPal Express Checkout account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: paypal_email_shared
+source: https://help.shopify.com/en/manual/payments/paypal.md
+locator: introduction
+quote: Shopify asks for your email to set up this account, which is then shared with PayPal.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: paypal_owner_only
+source: https://help.shopify.com/en/manual/payments/paypal.md
+locator: introduction
+quote: For security, only the store owner can edit your store's PayPal Express information.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: acc_providers
+source: https://help.shopify.com/en/manual/payments/accelerated-checkouts.md
+locator: introduction
+quote: You can activate accelerated checkout buttons on your Shopify Checkout for Shop Pay and for other payment providers that offer the options, including Apple Pay, Google Pay, Amazon Pay, and PayPal.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lpm_with_sp
+source: https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+locator: introduction
+quote: You can activate local payment methods with Shopify Payments to offer customers region-specific ways to pay at checkout.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lpm_payouts
+source: https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+locator: introduction
+quote: Orders paid using local payment methods are included in your Shopify Payments payouts alongside credit and debit card transactions.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lpm_markets
+source: https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+locator: caution note
+quote: To offer local payment methods in countries outside your business location, ensure those countries are set up as markets.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lpm_usdc
+source: https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+locator: In this section
+quote: [USD Coin (USDC)](/en/manual/payments/shopify-payments/local-payment-methods/usdc-payments)
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mpm_auto
+source: https://help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md
+locator: introduction
+quote: Instead of manually activating payment methods in your settings, eligible payment methods are activated based on the regions where you sell.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mpm_sni
+source: https://help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md
+locator: Requirements for using managed payment methods
+quote: Managed payment methods uses SNI to understand customer payment preferences and personalize checkout.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: crypto_verify_region
+source: https://help.shopify.com/en/manual/payments/additional-payment-methods/cryptocurrency.md
+locator: Considerations for accepting cryptocurrencies
+quote: You need to verify that cryptocurrencies are acceptable as a form of payment in your region before accepting them.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: crypto_gateways
+source: https://help.shopify.com/en/manual/payments/additional-payment-methods/cryptocurrency.md
+locator: Accepting cryptocurrencies in your Shopify checkout
+quote: To accept cryptocurrencies, activate one or more of the following
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: crypto_support_channel
+source: https://help.shopify.com/en/manual/payments/additional-payment-methods/cryptocurrency.md
+locator: Accepting cryptocurrencies in your Shopify checkout
+quote: If you have issues with registration or payments for a cryptocurrency gateway, then you can contact the support channel for that cryptocurrency gateway.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: crypto_no_auto_refunds
+source: https://help.shopify.com/en/manual/payments/additional-payment-methods/cryptocurrency.md
+locator: Considerations for accepting cryptocurrencies
+quote: There are no automatic refunds for cryptocurrency payments through Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spt_crypto_protocol
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Cryptocurrency Payments
+quote: receive cryptocurrency payments directly from your customers via on-chain transfers using certain software
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_coinbase_no_custody
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Cryptocurrency Payments
+quote: Coinbase does not at any time take custody of, or otherwise store, any cryptocurrency payments sent to you by your customers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_crypto_settlement
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Cryptocurrency Payments
+quote: When you receive settlement via the Cryptocurrency Payment Protocol into a Payment Processor Account, the legal terms of the applicable Payment Processor will apply.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ccr_regions
+source: https://www.shopify.com/legal/terms-cryptocurrency-credit-reward-program
+locator: 1.1 Eligibility
+quote: Your Shopify Payments account must be open in one of the following eligible regions: United States, Canada, Mexico, or Hong Kong.
+date: 2025-08-28
+basis: last updated (page states "Last updated: August 28, 2025")
+access: rendered
+
+key: ccr_stablecoin
+source: https://www.shopify.com/legal/terms-cryptocurrency-credit-reward-program
+locator: 2.1 Earning and Calculating Credits
+quote: Some Credits may be paid in cryptocurrencies called stablecoins, such as USD Coin.
+date: 2025-08-28
+basis: last updated (page states "Last updated: August 28, 2025")
+access: rendered
+
+key: pos_sp_countries
+source: https://help.shopify.com/en/manual/sell-in-person/getting-started/setup-payment-method/shopify-payments-pos.md
+locator: Supported countries and regions
+quote: Only countries where Shopify Payments supports both online and in-person processing are available.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pos_card_reader
+source: https://help.shopify.com/en/manual/sell-in-person/getting-started/setup-payment-method/shopify-payments-pos.md
+locator: introduction
+quote: After you set up Shopify Payments in your Shopify admin, your customers can make payment card payments in your store with Shopify POS and a
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: shopcash_funded
+source: https://help.shopify.com/en/manual/payments/shop-cash.md
+locator: introduction
+quote: Shop Cash is a Shopify-funded rewards program for Shop app customers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: shopcash_paid_as_shoppay
+source: https://help.shopify.com/en/manual/payments/shop-cash.md
+locator: Getting paid with Shop Cash
+quote: You get paid for orders made using Shop Cash the same way that you're paid for
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: shopcash_availability
+source: https://help.shopify.com/en/manual/payments/shop-cash.md
+locator: introduction
+quote: with the exception of Hong Kong, Mexico, and the United Arab Emirates (UAE).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_approved
+source: https://shopify.dev/docs/apps/build/payments.md
+locator: Extensions for payments, introduction
+quote: Only approved Partners can build payments extensions on Shopify's Payments Platform.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_plus_custom
+source: https://shopify.dev/docs/apps/build/payments.md
+locator: Extensions for payments, note
+quote: The option to build a custom payment extensions is limited to eligible Shopify Plus Merchants only.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_approval
+source: https://shopify.dev/docs/apps/build/payments.md
+locator: Considerations table, Approval process
+quote: To make sure merchants can present a positive buyer experience, payments apps must be approved by Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_revshare
+source: https://shopify.dev/docs/apps/build/payments.md
+locator: Considerations table, Payments Partner requirements
+quote: Payments extensions must adhere to all Payments Partner requirements, including revenue share agreements.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_listing
+source: https://shopify.dev/docs/apps/build/payments.md
+locator: Considerations table, Making your app discoverable
+quote: Shopify reviews and determines whether the payments extension is approved for public listing.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_types
+source: https://shopify.dev/docs/apps/build/payments.md
+locator: Build options
+quote: There are five types of payments extensions:
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_restricted
+source: https://shopify.dev/docs/apps/build/payments/considerations.md
+locator: Requirements
+quote: These are restricted scopes, and you need to
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_retry
+source: https://shopify.dev/docs/apps/build/payments/considerations.md
+locator: Retry policy, Outbound
+quote: If there's a Shopify service disruption (or if 5xx status codes are being returned), then requests must be retried according to the following incremental strategy, up to a total of 18 retries over 24h.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_unreachable
+source: https://shopify.dev/docs/apps/build/payments/considerations.md
+locator: Retry policy, Outbound
+quote: Their payment is processed, but Shopify is unreachable.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_inbound_retry
+source: https://shopify.dev/docs/apps/build/payments/considerations.md
+locator: Retry policy, Inbound
+quote: If your endpoint doesn't respond in time, Shopify retries the request several times.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pay_mtls
+source: https://shopify.dev/docs/apps/build/payments/considerations.md
+locator: mTLS configuration
+quote: Using mTLS in these scenarios allows payments apps to verify that the client initiating the request is Shopify and that the traffic between Shopify and the payments app is trusted and secure.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: eng_country_circuit
+source: sharrwah-knowledge-map:evidence/shopify-engineering/runs/20261010T083026Z-engineering-sources/items/003-shopify.engineering/text.txt
+locator: 10 Tips for Building Resilient Payment Systems, 2. Install Circuit Breakers
+quote: For Shopify Payments credit card transactions, we add the merchant's country code to the endpoint host and port to create a more fine-grained Semian identifier, so an open circuit due to an local outage in one country doesn’t affect transactions for merchants in other countries.
+date: 2022-07-28
+basis: published (page states "Published on Jul 28, 2022")
+access: local
+
+key: eng_payment_service
+source: sharrwah-knowledge-map:evidence/shopify-engineering/runs/20261010T083026Z-engineering-sources/items/003-shopify.engineering/text.txt
+locator: 10 Tips for Building Resilient Payment Systems, idempotency
+quote: Our centralized payment service can track attempts, which consists of at least one or more (retried) identical API requests, by sending an idempotency key that’s unique for each one.
+date: 2022-07-28
+basis: published (page states "Published on Jul 28, 2022")
+access: local
+
+key: eng_single_request
+source: sharrwah-knowledge-map:evidence/shopify-engineering/runs/20261010T083026Z-engineering-sources/items/003-shopify.engineering/text.txt
+locator: 10 Tips for Building Resilient Payment Systems, idempotency
+quote: makes sure we send only a single request to our financial partners
+date: 2022-07-28
+basis: published (page states "Published on Jul 28, 2022")
+access: local

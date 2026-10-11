@@ -1,0 +1,1323 @@
+# Shopify Terms of Service (rendered 2026-10-10; page states "Last updated on: August 1, 2026")
+key: tos_contracting
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum
+quote: Contracting Party. You are contracting with the Shopify Contracting Party or Parties below, based on the billing address of your Store.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_party_us_ca
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum, table row "United States or Canada"
+quote: Shopify Inc., a Canadian corporation
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_party_us_tech
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum, table row "United States or Canada"
+quote: Shopify Technology (USA) Inc., a Nevada corporation
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_party_apac
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum, table row "Asia Pacific"
+quote: Asia Pacific (including Australia, New Zealand, China, Japan, and Singapore)
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_party_apac_entity
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum, table row "Asia Pacific"
+quote: Shopify Commerce Singapore Pte. Ltd, a corporation formed under the laws of Singapore
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_party_other
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum, table row "All other jurisdictions"
+quote: All other jurisdictions (including EMEA, Europe, the Middle East, Africa, South America, the Caribbean, and Mexico)
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_party_other_entity
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum, table row "All other jurisdictions"
+quote: Shopify International Limited, a private company limited by shares incorporated in Ireland under registration number 560279
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_billing_agent
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum, Billing and Collection
+quote: Billing and Collection. Shopify Inc. may act as the billing agent for Shopify Technology (USA) Inc. and/or another Shopify Contracting Party, including to collect and remit Fees and remit taxes in some jurisdictions, as applicable.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_rpaa_canada
+source: https://www.shopify.com/legal/terms
+locator: 13. Shopify Contracting Party and Forum, Regulated Payment Services (Canada)
+quote: Regulated Payment Services (Canada). The Shopify Contracting Party shall be Shopify Payment Activities Inc., solely with respect to any aspect of the Services that are payment activities regulated under the Canadian Retail Payment Activities Act ("Regulated Payment Services").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_governing_law
+source: https://www.shopify.com/legal/terms
+locator: 16. General Conditions
+quote: The Terms of Service will be governed by and interpreted in accordance with the laws of the Province of Ontario and the laws of Canada applicable therein, without regard to principles of conflicts of laws.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_not_marketplace
+source: https://www.shopify.com/legal/terms
+locator: 4. Your Responsibilities
+quote: You acknowledge and agree that the Services are not a marketplace, and any contract of sale made through the Services is directly and only between you and the customer. You are the seller or merchant of record for all sales through the Services.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_merchant_responsible_transactions
+source: https://www.shopify.com/legal/terms
+locator: 4. Your Responsibilities
+quote: This includes, but is not limited to, authorizing the charge to the customer in respect of the customer's purchase, determining and collecting taxes, refunds, returns, fulfilling any sales or customer service, fraudulent transactions, required legal disclosures, regulatory compliance
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_not_mor
+source: https://www.shopify.com/legal/terms
+locator: 4. Your Responsibilities
+quote: For the avoidance of doubt, Shopify is not the seller or merchant of record and has no responsibility for your Store, your Materials, the goods or services you may sell through the Services, or any aspect of the transaction between you and your customer(s).
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_policies_required
+source: https://www.shopify.com/legal/terms
+locator: 4. Your Responsibilities (summary)
+quote: You acknowledge and agree to provide public-facing contact information, terms of service, a refund policy, and shipping policies (including order fulfilment timelines) on your Shopify Store.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_use_shopify_checkout
+source: https://www.shopify.com/legal/terms
+locator: 4. Your Responsibilities
+quote: You agree to use Shopify Checkout for any sales associated with your online store.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_no_circumvent_checkout
+source: https://www.shopify.com/legal/terms
+locator: 1. Account Terms
+quote: You agree not to work around, bypass, or circumvent any of the technical limitations of the Services, including to process orders outside Shopify's Checkout
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_account_registration
+source: https://www.shopify.com/legal/terms
+locator: 1. Account Terms
+quote: To complete your Account registration, you must provide us with your full legal name, business address, phone number, a valid email address, and any other information indicated as required. Shopify may reject your application for an Account, or cancel an existing Account, for any reason, at our sole discretion.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_business_purpose
+source: https://www.shopify.com/legal/terms
+locator: 1. Account Terms
+quote: You confirm that you are receiving any Services provided by Shopify for the purposes of carrying on a business activity and not for any personal, household or family purpose.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_store_owner
+source: https://www.shopify.com/legal/terms
+locator: 2.1 Store Owner
+quote: the person signing up for the Service by opening an Account will be the contracting party ("Store Owner") for the purposes of our Terms of Service
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_staff_accounts
+source: https://www.shopify.com/legal/terms
+locator: 2.2 Staff Accounts
+quote: Based on your Shopify pricing plan, you can create one or more staff accounts ("Staff Accounts") allowing other people to access the Account.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_staff_responsibility
+source: https://www.shopify.com/legal/terms
+locator: 2.2 Staff Accounts
+quote: With Staff Accounts, the Store Owner can set permissions and let other people work in their Account while determining the level of access by Staff Accounts to specific business information
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_paypal_sp_accounts
+source: https://www.shopify.com/legal/terms
+locator: 2.3 PayPal Express Checkout and Shopify Payments Accounts
+quote: Upon completion of sign up for the Service, Shopify will create a PayPal Express Checkout account on your behalf, using your Primary Email Address. Depending on your location, Shopify may also create a Shopify Payments account on your behalf.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_paypal_third_party
+source: https://www.shopify.com/legal/terms
+locator: 2.3 PayPal Express Checkout and Shopify Payments Accounts
+quote: For the avoidance of doubt, PayPal Express Checkout is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_wallet_accounts
+source: https://www.shopify.com/legal/terms
+locator: 2. Account Activation (summary)
+quote: We automatically create certain accounts for you to accept payments. You are responsible for activating and deactivating these accounts and complying with their terms, which may be with various third parties, including but not limited to PayPal, Apple Pay, Google Payment and Shop Pay.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_shop_pay_terms
+source: https://www.shopify.com/legal/terms
+locator: 2.4 Shop Pay
+quote: By using Shop Pay on your Shopify Store, you agree to be bound by the Shop Pay Merchant Terms of Service, as they may be amended by Shopify from time to time.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_apple_pay
+source: https://www.shopify.com/legal/terms
+locator: 2.5 Apple Pay for Safari Account
+quote: For the avoidance of doubt, Apple Pay is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_google_pay
+source: https://www.shopify.com/legal/terms
+locator: 2.6 Google Pay
+quote: For the avoidance of doubt, Google Pay is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_meta_pay
+source: https://www.shopify.com/legal/terms
+locator: 2.7 Meta Pay
+quote: For the avoidance of doubt, Meta Pay is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_amazon_pay
+source: https://www.shopify.com/legal/terms
+locator: 2.8 Amazon Pay
+quote: For the avoidance of doubt, Amazon Pay is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_domains_renew
+source: https://www.shopify.com/legal/terms
+locator: 2.9 Domain Names
+quote: Upon purchasing a domain name through Shopify, domain registration will be preset to automatically renew each year so long as your Shopify Account remains active
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_availability_jurisdiction
+source: https://www.shopify.com/legal/terms
+locator: 3. Shopify Rights
+quote: Not all Services or features will be available to all Merchants at all times and we are under no obligation to make any Services or features available in any jurisdiction.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_refuse_materials
+source: https://www.shopify.com/legal/terms
+locator: 3. Shopify Rights
+quote: It is in Shopify's sole discretion to refuse or remove any Materials from any part of the Services, including if we determine in our sole discretion that the goods or services that you offer through the Services, or the Materials uploaded or posted to the Services, violate our AUP or these Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_fees_defined
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: including but not limited to applicable fees relating to the value of sales made through your Store when using all payment providers other than Shopify Payments ("Transaction Fees")
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_fees_usd
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: Unless otherwise indicated, all Fees and other charges are in U.S. dollars, and all payments will be in U.S. currency.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_billing_30_days
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: Subscription Fees are paid in advance and will be billed in 30 day intervals (each such date, a "Billing Date").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_freeze_unpaid
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: If we are unable to successfully process payment of Fees using an Authorized Payment Method within 28 days of our initial attempt, we may suspend and revoke access to your Account and the Services.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_fee_taxes_billing_address
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: To the extent that Shopify charges these Taxes, they are calculated using the tax rates that apply based on the billing address you provide to us.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_merchant_taxes
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: You are solely responsible for determining, collecting, withholding, reporting, and remitting applicable taxes, duties, fees, surcharges and additional charges that arise from or as a result of any sale on your Shopify Store or your use of the Services.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_location_accurate
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: You must maintain an accurate location in the administrative console of your Shopify Store. If you change jurisdictions you must promptly update your location in the administrative console.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_shopify_tax_terms
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: Your access to and use of any tools that Shopify offers to you that help you calculate or estimate taxes that arise from or as a result of a sale on your Store ("Shopify Tax") is subject to the Shopify Tax Terms of Service
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_shopify_tax_filing_terms
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: or that help you file such taxes ("Shopify Tax Automated Filing") is subject to the Shopify Tax Automated Filing Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_no_tax_liability
+source: https://www.shopify.com/legal/terms
+locator: 7. Limitation of Liability and Indemnification
+quote: Shopify is not responsible for any of your tax obligations or liabilities related to the use of Shopify's Services.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_materials_license
+source: https://www.shopify.com/legal/terms
+locator: 8.1 Your Materials
+quote: We do not take ownership of the Materials that you provide to Shopify; however, we do require a license to your Materials.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_additional_services
+source: https://www.shopify.com/legal/terms
+locator: 9.1 Scope
+quote: Shopify may make available certain services, products, applications and tools, in addition to the Services, including but not limited to, Shopify Payments, Shopify Capital, Shopify Shipping, point-of-sale (POS) services and equipment, and the services outlined in this Section 9 (collectively, "Additional Services").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_additional_service_terms
+source: https://www.shopify.com/legal/terms
+locator: 9.1 Scope
+quote: Your use of, and access to, any Additional Services is subject to these Terms or, in some cases, may be subject to additional and separate fees, terms, and policies (the "Additional Service Terms").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_network_intelligence
+source: https://www.shopify.com/legal/terms
+locator: 9.2 Enhanced Services
+quote: You may disable the setting that powers Enhanced Services ("Shopify Network Intelligence") here, which prevents us from using additional customer Personal Data for Enhanced Services going forward.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_enhanced_services_data
+source: https://www.shopify.com/legal/terms
+locator: 9.2 Enhanced Services
+quote: To provide the Enhanced Services, Shopify can use Personal Data from your customers' interactions and transactions with Your Store, with other Merchants, and with Shopify.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_pos_same_processor
+source: https://www.shopify.com/legal/terms
+locator: 9.3 POS Services
+quote: If your POS Services are enabled with Shopify Payments, you cannot concurrently use any other payment processing service. The payment gateway used for your POS Services must be the same as that used for your Online Services, if applicable.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_pos_equipment
+source: https://www.shopify.com/legal/terms
+locator: 9.3 POS Services
+quote: Purchase of the POS Equipment is subject to the POS Equipment Agreement, POS Equipment Agreement and Return Policy, applicable to your country.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_pos_fees_locations
+source: https://www.shopify.com/legal/terms
+locator: 9.3 POS Services
+quote: The Fees for POS Services will be determined based on the number of locations at which you are using the POS Services.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_shipping_terms
+source: https://www.shopify.com/legal/terms
+locator: 9.4 Shopify Shipping
+quote: You can purchase shipping labels from within your Shopify administrative console ("Shopify Shipping") for delivery of goods purchased from you. Your use of Shopify Shipping is subject to the Shopify Shipping Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_sms_twilio
+source: https://www.shopify.com/legal/terms
+locator: 9.5 SMS Messaging
+quote: The SMS Services use third party providers, and your use is subject to Twilio's Acceptable Use Policy, which may be amended from time to time.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_theme_designer
+source: https://www.shopify.com/legal/terms
+locator: 9.6 Theme Store
+quote: The intellectual property rights of the Theme remain the property of the designer.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_theme_support
+source: https://www.shopify.com/legal/terms
+locator: 9.6 Theme Store
+quote: Technical support for a Theme is the responsibility of the designer, and Shopify accepts no responsibility to provide such support.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_email_sendgrid
+source: https://www.shopify.com/legal/terms
+locator: 9.7 Shopify Email
+quote: Shopify's Email Services utilize Third Party Providers, including SendGrid (a Twilio Company).
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_email_content_scanning
+source: https://www.shopify.com/legal/terms
+locator: 9.7 Shopify Email
+quote: Shopify employs certain controls to scan the content of emails you deliver using the Email Services prior to delivery ("Content Scanning").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_shop_app
+source: https://www.shopify.com/legal/terms
+locator: 9.8 Shop
+quote: Shop is a Shopify application that is available to Eligible Merchants (defined below) ("Shop", more details here) to engage with customers that use Shop (each, a "Shop User").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_shop_transaction_on_store
+source: https://www.shopify.com/legal/terms
+locator: 9.8 Shop
+quote: While Shop enables Shop Users to shop natively, the transaction is completed on your Shopify Store.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_third_party_services
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_third_party_no_control
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: You acknowledge that Shopify has no control over Third Party Services or Third Party Providers and will not be responsible or liable to you or anyone else for such Third Party Services or Third Party Providers.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_third_party_disable
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: Shopify does not guarantee the availability of Third Party Services and you acknowledge that Shopify may disable access to any Third Party Services at any time in its sole discretion and without notice to you.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_third_party_data_share
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: If you install or enable a Third Party Service for use with the Services, you grant us permission to share on your behalf, or allow the applicable Third Party Provider to access your data and other Materials
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_tax_calculators_reference
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: In particular, tax calculators should be used for reference only and not as a substitute for independent tax advice
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_google_maps
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: Google Maps is a Third Party Service that is used within the Services.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_revenue_share
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: In some instances, Shopify may receive a revenue share from Third Party Providers that Shopify recommends to you or that you otherwise engage.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_beta
+source: https://www.shopify.com/legal/terms
+locator: 9.10 Beta Services
+quote: Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Shopify will provide to you prior to your use of the Beta Services.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_pixel_manager
+source: https://www.shopify.com/legal/terms
+locator: 9.11 Shopify Pixel Manager
+quote: Shopify allows you to add pixels to your Shopify Store to enable you or a third party to track customer events (the "Shopify Pixel Manager").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_pixel_consents
+source: https://www.shopify.com/legal/terms
+locator: 9.11 Shopify Pixel Manager (summary)
+quote: If you use the Shopify Pixel Manager, you are responsible for obtaining all necessary consents from store visitors and customers whose events you track.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_audiences
+source: https://www.shopify.com/legal/terms
+locator: 9.12 Audiences
+quote: If you use Shopify Audiences, your use is subject to the Shopify Audiences Terms and Conditions.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_checkout_extensibility
+source: https://www.shopify.com/legal/terms
+locator: 9.13 Shopify Checkout Extensibility
+quote: Shopify allows you to use extensions to customize your checkout ("Shopify Checkout Extensibility").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_checkout_ext_responsible
+source: https://www.shopify.com/legal/terms
+locator: 9.13 Shopify Checkout Extensibility (summary)
+quote: If you use Checkout Extensions, you're responsible for your own compliance, which could include getting all necessary consents from your customers and website visitors. Shopify can disable extensions at any time
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_agentic_storefronts
+source: https://www.shopify.com/legal/terms
+locator: 9.14 Agentic Storefronts
+quote: If you use Shopify Agentic Storefronts, your use is subject to the Agentic Storefronts Supplemental Terms of Service.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_privacy_customer_data
+source: https://www.shopify.com/legal/terms
+locator: 12. Privacy and Data Protection
+quote: Shopify's collection, use, disclosure and processing of Your Customer Personal Data (as defined in the Data Processing Addendum) is subject to these Terms, our Data Processing Addendum, and our Consumer Privacy Policy.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_pci
+source: https://www.shopify.com/legal/terms
+locator: 12. Privacy and Data Protection
+quote: Where the Services involve Shopify storing, processing or transmitting "Account Data" (as defined under PCI DSS) on your behalf, Shopify acknowledges that it is responsible for securing such Account Data in accordance with the applicable PCI DSS requirements.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_suspend_any_reason
+source: https://www.shopify.com/legal/terms
+locator: 14. Term and Termination
+quote: Without limiting any other remedies, we may suspend or terminate your Account or the Terms of Service for any reason, without notice and at any time (unless otherwise required by law)
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_fee_change_notice
+source: https://www.shopify.com/legal/terms
+locator: 15. Modifications
+quote: Shopify may change the Fees for the Services from time-to-time. We will provide you with 30 days advanced notice prior to any changes in Fees
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_incorporates
+source: https://www.shopify.com/legal/terms
+locator: preamble
+quote: including Shopify's Acceptable Use Policy ("AUP") and Privacy Policy, and, if applicable, the Supplementary Terms of Service for E.U. Merchants ("EU Terms"), the Shopify API License and Terms of Use ("API Terms") and the Shopify Data Processing Addendum ("DPA")
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_platform_scope
+source: https://www.shopify.com/legal/terms
+locator: preamble
+quote: Shopify provides a complete commerce platform that enables merchants to unify their commerce activities.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+# Shopify Payments Terms of Service (rendered 2026-10-10; no date shown on the page)
+key: spt_role
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Shopify Payments Service, Our Role
+quote: The Shopify Payments service ("Shopify Payments" or the "Payments Services") is Shopify's integrated payments solution that arranges for the financial services you need to accept payments
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_agent
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Shopify Payments Service, Our Role
+quote: You hereby appoint us as your agent to deliver information and instructions on your behalf to one or more payment processors that provide such financial services (each a "Payment Processor") or other service providers
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_entity_ca
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Designated Country / Shopify Entity table, row Canada
+quote: Shopify Inc., a Canadian corporation
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_entity_us
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Designated Country / Shopify Entity table, row United States
+quote: Shopify Payments (USA) Inc., organized under the laws of Delaware
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_entity_eu
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Designated Country / Shopify Entity table, row Austria ... United Kingdom
+quote: Shopify International Limited, organized under the laws of Ireland
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_entity_apac
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Designated Country / Shopify Entity table, row Australia ... Singapore
+quote: Shopify Commerce Singapore Pte. Ltd., organized under the laws of Singapore
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_not_licensed
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Shopify Payments Service
+quote: None of the Shopify entities listed above are licensed as a bank, payment institution, or money services business, but are instead, respectively, a supplier of the Payments Services under this Agreement.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_payfac
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Shopify Payments Service
+quote: In certain Designated Countries, pursuant to separate Payment Facilitator Terms, a Shopify affiliate acts as a Payment Facilitator (as defined in the Payment Facilitator Terms) to facilitate your acceptance of Transactions (as defined below).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_processor_list
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Payment Processor
+quote: The processing and settlement of Transactions ("Payment Processing") is carried out by one or more Payment Processors and any of its Financial Services Providers under the separate terms of service identified in the Payment Processor List (the "Payment Processor Terms").
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_not_party_processor
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Payment Processor
+quote: Shopify is not a party to any of the Payment Processor Terms and is not liable to you in respect thereof.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_shopify_chooses_processor
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Payment Processor
+quote: You authorize Shopify to determine which Payment Processor Account(s) we will facilitate opening on your behalf, and where you have multiple Payment Processor Accounts, which Payment Processor shall perform Payment Processing services for each Transaction.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_change_processors
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Payment Processor
+quote: We reserve the right to change the Payment Processors, subject to the terms of our agreement with each Payment Processor.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_processor_role
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. The Payment Processor
+quote: The Payment Processor's role in relation to the Payments Services is to accept and process payment transactions, and/or to settle funds (which for purposes of this Agreement includes cryptocurrency) from payment transactions
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_coinbase
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Cryptocurrency Payments
+quote: Coinbase is not a Payment Processor, and agreeing to the Coinbase Terms does not result in the creation of a Payment Processor Account or any custodial customer relationship with Coinbase.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_designated_country_role
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Your Role
+quote: Your Role. To utilize the Payments Services, you must be a business located in your Designated Country.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_stripe_p2pe
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. POS Equipment
+quote: This P2PE Service is provided, managed, and processed exclusively by Stripe and is designed to encrypt cardholder data at the point of interaction.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_payment_methods_toggle
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Payment Methods
+quote: You may enable or disable Payment Methods available through Shopify Payments at any time through your Shopify Admin. Shopify or the Payment Processor may add or remove support for one or more types of Payment Networks or Payment Methods, in their sole discretion, at any time.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_managed_payment_features
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Payment Methods
+quote: The Payments Services may include features that manage your customer's checkout experience for you ("Managed Payment Features").
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_merchant_chargebacks
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Payment Methods
+quote: and (v) all refunded, reversed or charged back transactions regardless of the reason for, or timing of the refund, reversal, chargeback or other dispute.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_processor_settlement
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Customer Service
+quote: The Payment Processor retains sole and exclusive responsibility for Payment Processing, including the settlement of funds
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_no_dispute_rights
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Customer Service
+quote: Shopify does not offer any dispute rights to your customers and will not facilitate the resolution of disputes, including without limitation by accepting, investigating, or resolving your customers' disputes over Transactions.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_taxes_merchant
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Taxes
+quote: You have sole and exclusive responsibility to determine what, if any, taxes apply to the sale of your goods and services and/or the payments you receive in connection with your use of the Payments Services ("Taxes").
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_tax_reports
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Taxes
+quote: Shopify retains the right, but not the obligation, at its sole discretion, to complete and file tax or related reports with tax authorities regarding Transactions in those jurisdictions where Shopify deems such reporting necessary.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_pci
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Data Security
+quote: Where the Payments Services involve Shopify storing, processing or transmitting "Account Data", as defined under Payment Card Industry Data Security Standards ("PCI DSS"), on your behalf, Shopify acknowledges that it is responsible for securing such Account Data
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_match_list
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Privacy
+quote: You acknowledge that the Payment Processors are required to report your business name and the name of your principals to the Member Alert to Control High-Risk merchants list of MasterCard ("MATCH List")
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_processor_independent_controller
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Privacy
+quote: Each Payment Processor may also process your personal data or Customer Payment Data as an independent controller, for example, to comply with their own regulatory and legal obligations, including know your customer "KYC" and anti-money laundering "AML" processes
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_processor_sanctions_controller
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Privacy of Others
+quote: the applicable Payment Processor may also process personal data as an independent controller for certain processing activities, including but not limited to complying with KYC/AML, sanctions, and other legal obligations
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_eu_data_sil
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Privacy
+quote: Where a data subject is located in the U.K. or the European Economic Area, that data subject's personal data will be processed by Shopify International Limited in accordance with our Privacy Policy.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_data_transfer_ca_us
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Privacy
+quote: As part of providing the Payments Services, this personal data may be transferred to other regions, including to Canada and the United States.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_no_aggregator
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Restricted Use
+quote: (iii) act as a payment intermediary or aggregator or otherwise resell the Payments Services on behalf of any third party
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_registration_business
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, B. Registration
+quote: The Payments Services are only made available to persons in the Designated Country that operate a business selling goods and services.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_registration_processor_accounts
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, B. Registration
+quote: You understand that by registering for a Shopify Payments Account, you are also registering for one or more Payment Processor Account(s) under the Payment Processor Terms
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_verification_underwriting
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, B. Verification and Underwriting
+quote: The Payment Processors may hold funds in your Shopify Payments Account while awaiting the information requested above.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_designated_country
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, B. Designated Country
+quote: The Payments Services and Shopify Payments Account may only be used in the Designated Country.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_prohibited_businesses
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, B. Prohibited and Restricted Businesses
+quote: Prohibited Business and Restricted Business categories may be imposed by law or through the Payment Network Rules, by Shopify or the requirements of a Payment Processor's Financial Services Providers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_prohibited_lists_by_processor
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, B. Prohibited and Restricted Businesses
+quote: The types of business categories and business practices that are considered Prohibited Businesses or Restricted Businesses are provided by each Payment Processor in your Designated Country and can be located at the links found in the Payment Processor List.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_processing_fees
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, C. Shopify Payments Fees
+quote: Processing Fees shall be collected from you by the applicable Payment Processor on our behalf in accordance with the Payment Processor Terms.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_security_interest
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, C. Security Interest
+quote: As security for performance of your obligations under this Agreement, you grant us a first priority lien and security interest on all funds processed and deposited into all bank accounts, cryptocurrency wallets, or other financial accounts designated in your Shopify Admin
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_reserves
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, C. Reserves
+quote: We, in our discretion, will set the terms of any Reserve Account and notify you of such terms, which may require that a certain amount (including the full amount) of the funds received for a Transaction are held for a period of time
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_reserve_no_interest
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, C. Reserves
+quote: (i) you are not entitled to any interest or other compensation associated with the funds held in the Reserve Account; (ii) you have no right to direct that account; (iii) you have no legal interest in those funds or that account
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_dispute_programs
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, C. Contesting Chargebacks and Disputes
+quote: We may enroll you in automated dispute resolution programs, including those offered by Payment Networks, if we determine, in our sole discretion, that there is an elevated risk of chargebacks or disputes associated with your Payment Processing Account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_contest_chargebacks
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, C. Contesting Chargebacks and Disputes
+quote: You or Shopify may elect to contest chargebacks or other disputes assessed to your account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_substitute_processor
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. Termination
+quote: If a Payment Processor terminates its Payment Processor Terms or indicates its intention to do so, or if you elect to cease processing with such Payment Processor, we have the right, but not the obligation, to offer you a substitute payment processor that is integrated with the Shopify Payments Account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_termination_on_processor_request
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. Termination
+quote: or, (iii) upon request of the Payment Network, a Payment Processor, or a provider of Payment Methods including a Card issuer.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_funds_custody
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. Effects of Termination
+quote: Any funds in the Financial Services Provider's custody will be paid out to you subject to the Payment Processor Terms.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_platform_terms_survive
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. Effects of Termination
+quote: Termination of this Agreement will not necessarily terminate your Shopify Platform Terms, unless Shopify determines otherwise.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_indemnify_processors
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. Your Liability and Indemnification Concerning Liabilities
+quote: Shopify has agreed to indemnify and hold the Payment Processors harmless for some, and, in some cases, all of your liabilities occurring under the Payment Processor Terms
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_facilities_ca_us
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. (after limitation of liability)
+quote: The Payments Services are controlled and operated from facilities in Canada and the United States.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_sanctions
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. (after limitation of liability)
+quote: You may not use the Payments Services if you are a resident of a sanctioned country or region embargoed by the United States, Canada, or the European Union, or are a person or entity blocked or denied by the governments of the United States, Canada or the European Union.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_law_us
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. Disputes, Choice of Law, table row United States
+quote: The laws of the State of Delaware.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_legal_process
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, D. Disputes, Choice of Law, Jurisdiction, Venue and Miscellaneous
+quote: Such Payment Processor or any applicable Financial Services Provider may deliver or hold any funds or any Data as required under such Legal Process, even if you are receiving funds or Data on behalf of other parties.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_regional_parts
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: introduction
+quote: Part II (Regional Terms) contains region-specific terms that apply to merchants based on their Designated Country (as defined in Part I, Section B4).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_ca_rpaa
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part II, B. Canada, Regulated Payment Services
+quote: Shopify Payment Activities Inc. is registered with the Bank of Canada as a Payment Service Provider under the Retail Payment Activities Act.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_spi_affirm
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part II, A. Australia / B. Canada / C. United Kingdom / D. United States, Shop Pay Installments
+quote: By using Shop Pay Installments, you accept and agree to be bound by the Shop Pay Installments Terms and the Merchant Agreement (Shop Pay Installments) with Affirm.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_managed_markets_globale
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part II, B. Canada / C. United Kingdom / D. United States, Managed Markets
+quote: you are also accepting and agreeing to be bound by the Service Terms - Shopify Managed Markets (the "Managed Markets Terms") with Global-e, the merchant of record service provider for Managed Markets.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_managed_markets_not_party
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part II, Managed Markets
+quote: Shopify is not a party to the Managed Markets Terms and we do not assume any liability for Global-e's determination of eligibility, enablement of Managed Markets, or your use of Managed Markets.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+# Payment Facilitator Terms (rendered; "Last modified: September 22, 2026")
+key: payfac_registered
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, A. Our role as Payment Facilitator
+quote: Our role as Payment Facilitator. Shopify is registered as a Payment Facilitator. Shopify is not licensed as a bank or Acquirer, but is instead a supplier of the services described in this Supplement.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_agent_of_acquirer
+source: https://www.shopify.com/legal/terms-payfac
+locator: Account Terms
+quote: We are acting on behalf of and as agents of the Acquirer.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_sanctions
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, A. Onboarding, KYC and underwriting
+quote: Neither you nor your legal representatives, authorized representatives, ultimate beneficial owners, or controlling owners may be subject to trade sanctions imposed by any government or national authority.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_kyc
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, A. Onboarding, KYC and underwriting
+quote: Before you can use the Payment Services, you need to pass our identity and KYC checks.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_no_cross_border
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, B. Designated Country
+quote: You agree not to accept or process any cross-border or out-of-jurisdiction transactions except to the extent expressly permitted by us and in accordance with applicable Payment Networks Rules.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_settlement_hold
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, C. Settlement
+quote: Payouts from your sales may be held until you pass all of our onboarding, identity and KYC checks.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_deregistered
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, D. Termination and suspension
+quote: You may also be terminated from a Payment Network if the Payfac is de-registered, the Acquirer loses Payment Network trademark license, or Acquirer ceases to be a customer of the applicable Payment Network.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_assign_acquirer
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, D. Assignment and Amendment
+quote: You agree and authorize the assignment of this Supplement, without additional approval, to a different Acquirer as determined by us in our sole discretion.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_amend_acquirer
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, D. Assignment and Amendment
+quote: We may amend Part II at any time, in our sole discretion, including to add, remove, or replace an Acquirer for any Designated Country, or to add a new Designated Country.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_licensed_by_acquirer
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part II — Regional Terms
+quote: All licensed/regulated services are provided by the Acquirer listed in the respective jurisdiction as outlined below.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_eu
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part II, A. EU / EEA
+quote: Payment Facilitator entity: Shopify Payments EU Limited
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_uk
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part II, B. United Kingdom
+quote: Payment Facilitator entity: Shopify Payments UK Limited
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_acquirer_adyen
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part II, A. EU / EEA and B. United Kingdom
+quote: Acquirer: Adyen N.V.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+key: payfac_liability_losses
+source: https://www.shopify.com/legal/terms-payfac
+locator: Part I, C. Liability for losses
+quote: As between you and Shopify, you bear the risk of any fraudulent, unauthorized, or disputed Transactions you submit.
+date: 2026-09-22
+basis: last modified (page states "Last modified: September 22, 2026")
+access: rendered
+
+# Payment Processor List (rendered; undated)
+key: ppl_intro
+source: https://www.shopify.com/legal/processor-list
+locator: introduction
+quote: The following tables identify, for each Designated Country, (a) the Payment Processor(s), and (b) the agreements and documents that comprise the Payment Processor Terms.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_bridge
+source: https://www.shopify.com/legal/processor-list
+locator: A. Global
+quote: The Bridge entity (an affiliate of Stripe) that applies based on your location.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_us_stripe
+source: https://www.shopify.com/legal/processor-list
+locator: B. North America, row United States
+quote: Stripe, Inc.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_us_paypal
+source: https://www.shopify.com/legal/processor-list
+locator: B. North America, row United States
+quote: PayPal, Inc.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_ca_stripe
+source: https://www.shopify.com/legal/processor-list
+locator: B. North America, row Canada
+quote: Stripe Payments Canada, Ltd.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_mx_stripe
+source: https://www.shopify.com/legal/processor-list
+locator: B. North America, row Mexico
+quote: Stripe Payments Mexico, S. de RL de CV.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_at_adyen
+source: https://www.shopify.com/legal/processor-list
+locator: C. EMEA, row Austria
+quote: Adyen N.V.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_at_paypal
+source: https://www.shopify.com/legal/processor-list
+locator: C. EMEA, row Austria
+quote: PayPal (Europe) S.à r.l. et Cie, S.C.A.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_at_stripe
+source: https://www.shopify.com/legal/processor-list
+locator: C. EMEA, row Austria
+quote: Stripe Payments Europe, Limited.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_ae_stripe
+source: https://www.shopify.com/legal/processor-list
+locator: C. EMEA, row United Arab Emirates
+quote: Stripe Payments Europe, Limited, organized under the laws of Ireland
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_cn_aihk
+source: https://www.shopify.com/legal/processor-list
+locator: D. Asia-Pacific, row China (Mainland)
+quote: AIHK Markets Limited
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_jp_stripe
+source: https://www.shopify.com/legal/processor-list
+locator: D. Asia-Pacific, row Japan
+quote: Stripe Japan, Ltd.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_au_stripe
+source: https://www.shopify.com/legal/processor-list
+locator: D. Asia-Pacific, row Australia
+quote: Stripe Payments Australia Pty Ltd.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_sg_stripe
+source: https://www.shopify.com/legal/processor-list
+locator: D. Asia-Pacific, row Singapore
+quote: Stripe Payments Singapore Pte. Ltd.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: ppl_accept_terms
+source: https://www.shopify.com/legal/processor-list
+locator: introduction
+quote: By accepting the Shopify Payments Terms of Service, you accept and agree to be bound by the Payment Processor Terms identified for your Designated Country.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_entity_eu_countries
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Designated Country / Shopify Entity table, first cell of the Shopify International Limited row
+quote: Malta, Mexico, Netherlands, Norway, Poland, Portugal, Romania, Slovenia, Spain, Sweden, Switzerland, United Arab Emirates, United Kingdom
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: spt_entity_apac_countries
+source: https://www.shopify.com/legal/terms-shopify-payments
+locator: Part I, A. Designated Country / Shopify Entity table, first cell of the Shopify Commerce Singapore row
+quote: Australia, Hong Kong, Japan, New Zealand, Singapore,
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
