@@ -12,6 +12,7 @@
 #   woocommerce-11.2.1:<path>           $WOO_RELEASE (default /home/user/woocommerce-release/11.2.1/woocommerce)
 #   sharrwah-knowledge-map:<path>       $SKM (default: this repository)
 import csv, html, json, os, re, subprocess, sys, unicodedata
+import collections
 from collections import Counter, defaultdict
 
 csv.field_size_limit(10**9)
@@ -33,6 +34,12 @@ HEADERS = {
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "accessed", "access_path"],
     "not-reached.tsv": ["url", "status", "needed_for", "what_to_look_for"],
 }
+NEW_HEADERS = {  # the reshaped placement step (questions/Q1-concern-map.md, "Changed on 11 October 2026")
+    "statements.tsv": ["concern_id", "placement", "structure", "identifier", "statement", "scope", "cite_ids", "note"],
+    "gaps.tsv": ["concern_id", "placement", "what_would_show_it", "means", "who_can", "route", "why_not_held"],
+}
+NEW_PLACEMENTS = ["where", "decides", "responsible", "boundary", "reason"]
+WHO_CAN = {"agent", "founder", "either"}
 LISTS = {"api-resources", "access-scopes", "webhook-topics", "settings", "admin-navigation", "plan-features",
          "legal-agreements", "extension-points"}
 PLACEMENTS = ["software", "decides", "legal", "boundary", "reason"]
@@ -59,8 +66,9 @@ def read_tsv(path, name):
     if not rows:
         return None, [], [f"{name}: empty file"]
     head, body, issues = rows[0], rows[1:], []
-    if head != HEADERS[name]:
-        issues.append(f"{name}: header is {head}, expected {HEADERS[name]}")
+    expected = HEADERS.get(name) or NEW_HEADERS[name]
+    if head[:len(expected)] != expected:
+        issues.append(f"{name}: header is {head}, expected {expected}")
     recs = []
     for i, row in enumerate(body, start=2):
         if not any(c.strip() for c in row):
@@ -105,8 +113,22 @@ def html_text(raw):
     raw = re.sub(r"(?s)<[^>]+>", "", raw)
     return raw
 
+def json_strings(o, out):
+    if isinstance(o, dict):
+        for v in o.values(): json_strings(v, out)
+    elif isinstance(o, list):
+        for v in o: json_strings(v, out)
+    elif isinstance(o, str):
+        out.append(o)
+    return out
+
 def json_unescaped(raw):
     out = []
+    for line in raw.splitlines():
+        try:
+            out.append("\n".join(json_strings(json.loads(line), [])))
+        except Exception:
+            pass
     for line in raw.splitlines():
         try:
             out.append(json.dumps(json.loads(line), ensure_ascii=False))
@@ -330,6 +352,52 @@ for plat, pfx in PLATFORMS.items():
         result, why, share = check_quote(r["quote"], r["source"]) if r["quote"] and r["source"] else ("unresolved", "no quote or source", "")
         quotes.append((cid, result, why, share, r["source"], r["quote"][:200]))
 
+    st_path, gp_path = os.path.join(d, "statements.tsv"), os.path.join(d, "gaps.tsv")
+    if os.path.exists(st_path) or os.path.exists(gp_path):
+        st = read_tsv(st_path, "statements.tsv")[1] if os.path.exists(st_path) else []
+        gp = read_tsv(gp_path, "gaps.tsv")[1] if os.path.exists(gp_path) else []
+        cover = collections.defaultdict(lambda: [0, 0])
+        cit_src = {x["cite_id"]: x["source"] for x in cit}
+        for r in st:
+            key = f"{r['concern_id']}/{r['placement']}"
+            if r["concern_id"] not in con_ids:
+                issues.append(("error", "statements", key, "concern not in concerns"))
+            if r["placement"] not in NEW_PLACEMENTS:
+                issues.append(("error", "statements", key, f"placement '{r['placement']}' is not one of {NEW_PLACEMENTS}"))
+            if not r["statement"] or not r["identifier"]:
+                issues.append(("error", "statements", key, "statement or identifier is empty"))
+            cs = split_ids(r["cite_ids"])
+            if not cs:
+                issues.append(("error", "statements", key, "no citation"))
+            for c in cs:
+                if c not in cit_ids:
+                    issues.append(("error", "statements", key, f"cite_id '{c}' not in citations"))
+                used_cites.add(c)
+            if cs and cs[0] in cit_ids and r["statement"]:
+                src = cit_src[cs[0]]
+                res, why, share = check_quote(r["statement"], src)
+                if not res.startswith("found"):
+                    issues.append(("error", "statements", key, f"statement not found verbatim in {cs[0]}'s source ({res}{'; ' + why if why else ''})"))
+            cover[(r["concern_id"], r["placement"])][0] += 1
+        for r in gp:
+            key = f"{r['concern_id']}/{r['placement']}"
+            if r["concern_id"] not in con_ids:
+                issues.append(("error", "gaps", key, "concern not in concerns"))
+            if r["placement"] not in NEW_PLACEMENTS:
+                issues.append(("error", "gaps", key, f"placement '{r['placement']}' is not one of {NEW_PLACEMENTS}"))
+            if r["who_can"] not in WHO_CAN:
+                issues.append(("error", "gaps", key, f"who_can '{r['who_can']}' is not agent, founder or either"))
+            for col in ("what_would_show_it", "means", "route", "why_not_held"):
+                if not r[col]:
+                    issues.append(("error", "gaps", key, f"{col} is empty"))
+            cover[(r["concern_id"], r["placement"])][1] += 1
+        for c in con_ids:
+            for p in NEW_PLACEMENTS:
+                n_st, n_gp = cover.get((c, p), [0, 0])
+                if not n_st and not n_gp:
+                    issues.append(("error", "coverage", f"{c}/{p}", "no statement and no gap"))
+        summary.append(f"{plat} re-pass: statements {len(st)}, gaps {len(gp)}; concern x placement cells with a statement: "
+                       f"{sum(1 for v in cover.values() if v[0])} of {len(con_ids) * len(NEW_PLACEMENTS)}")
     with open(os.path.join(OUT, f"{plat}-issues.tsv"), "w", encoding="utf-8") as f:
         f.write("level\tfile\tid\tissue\n")
         for lv, fl, i, x in issues:
