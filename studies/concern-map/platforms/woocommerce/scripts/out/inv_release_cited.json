@@ -1,0 +1,4097 @@
+[
+{
+"list": "settings",
+"entry": "General",
+"path": "includes/admin/settings/class-wc-settings-general.php",
+"line": 47,
+"quote": "$this->label = __( 'General', 'woocommerce' );",
+"note": "settings tab id: general",
+"cite_id": "WC-S-0001"
+},
+{
+"list": "settings",
+"entry": "Products",
+"path": "includes/admin/settings/class-wc-settings-products.php",
+"line": 31,
+"quote": "$this->label = __( 'Products', 'woocommerce' );",
+"note": "settings tab id: products",
+"cite_id": "WC-S-0002"
+},
+{
+"list": "settings",
+"entry": "Tax",
+"path": "includes/admin/settings/class-wc-settings-tax.php",
+"line": 27,
+"quote": "$this->label = __( 'Tax', 'woocommerce' );",
+"note": "settings tab id: tax",
+"cite_id": "WC-S-0003"
+},
+{
+"list": "settings",
+"entry": "Shipping",
+"path": "includes/admin/settings/class-wc-settings-shipping.php",
+"line": 29,
+"quote": "$this->label = __( 'Shipping', 'woocommerce' );",
+"note": "settings tab id: shipping",
+"cite_id": "WC-S-0004"
+},
+{
+"list": "settings",
+"entry": "Payments",
+"path": "includes/admin/settings/class-wc-settings-payment-gateways.php",
+"line": 51,
+"quote": "$this->label = esc_html_x( 'Payments', 'Settings tab label', 'woocommerce' );",
+"note": "settings tab",
+"cite_id": "WC-S-0005"
+},
+{
+"list": "settings",
+"entry": "Accounts & Privacy",
+"path": "includes/admin/settings/class-wc-settings-accounts.php",
+"line": 27,
+"quote": "$this->label = __( 'Accounts &amp; Privacy', 'woocommerce' );",
+"note": "settings tab id: account",
+"cite_id": "WC-S-0006"
+},
+{
+"list": "settings",
+"entry": "Emails",
+"path": "includes/admin/settings/class-wc-settings-emails.php",
+"line": 37,
+"quote": "$this->label = __( 'Emails', 'woocommerce' );",
+"note": "settings tab id: email",
+"cite_id": "WC-S-0007"
+},
+{
+"list": "settings",
+"entry": "Integration",
+"path": "includes/admin/settings/class-wc-settings-integrations.php",
+"line": 25,
+"quote": "$this->label = __( 'Integration', 'woocommerce' );",
+"note": "settings tab id: integration",
+"cite_id": "WC-S-0008"
+},
+{
+"list": "settings",
+"entry": "Site visibility",
+"path": "includes/admin/settings/class-wc-settings-site-visibility.php",
+"line": 27,
+"quote": "$this->label = __( 'Site visibility', 'woocommerce' );",
+"note": "settings tab id: site-visibility",
+"cite_id": "WC-S-0009"
+},
+{
+"list": "settings",
+"entry": "Point of Sale",
+"path": "includes/admin/settings/class-wc-settings-point-of-sale.php",
+"line": 28,
+"quote": "$this->label = __( 'Point of Sale', 'woocommerce' );",
+"note": "settings tab id: point-of-sale",
+"cite_id": "WC-S-0010"
+},
+{
+"list": "settings",
+"entry": "Advanced",
+"path": "includes/admin/settings/class-wc-settings-advanced.php",
+"line": 30,
+"quote": "$this->label = __( 'Advanced', 'woocommerce' );",
+"note": "settings tab id: advanced",
+"cite_id": "WC-S-0011"
+},
+{
+"list": "settings",
+"entry": "Products > General",
+"path": "includes/admin/settings/class-wc-settings-products.php",
+"line": 60,
+"quote": "''             => __( 'General', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0012"
+},
+{
+"list": "settings",
+"entry": "Products > Inventory",
+"path": "includes/admin/settings/class-wc-settings-products.php",
+"line": 61,
+"quote": "'inventory'    => __( 'Inventory', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0013"
+},
+{
+"list": "settings",
+"entry": "Products > Downloadable products",
+"path": "includes/admin/settings/class-wc-settings-products.php",
+"line": 62,
+"quote": "'downloadable' => __( 'Downloadable products', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0014"
+},
+{
+"list": "settings",
+"entry": "Tax > Tax options",
+"path": "includes/admin/settings/class-wc-settings-tax.php",
+"line": 82,
+"quote": "''         => __( 'Tax options', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0015"
+},
+{
+"list": "settings",
+"entry": "Tax > Standard rates",
+"path": "includes/admin/settings/class-wc-settings-tax.php",
+"line": 83,
+"quote": "'standard' => __( 'Standard rates', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0016"
+},
+{
+"list": "settings",
+"entry": "Shipping > Shipping zones",
+"path": "includes/admin/settings/class-wc-settings-shipping.php",
+"line": 58,
+"quote": "''        => __( 'Shipping zones', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0017"
+},
+{
+"list": "settings",
+"entry": "Shipping > Shipping settings",
+"path": "includes/admin/settings/class-wc-settings-shipping.php",
+"line": 59,
+"quote": "'options' => __( 'Shipping settings', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0018"
+},
+{
+"list": "settings",
+"entry": "Shipping > Classes",
+"path": "includes/admin/settings/class-wc-settings-shipping.php",
+"line": 60,
+"quote": "'classes' => __( 'Classes', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0019"
+},
+{
+"list": "settings",
+"entry": "Shipping > Shipping providers",
+"path": "includes/admin/settings/class-wc-settings-shipping.php",
+"line": 64,
+"quote": "$sections['fulfillment-providers'] = __( 'Shipping providers', 'woocommerce' );",
+"note": "settings section",
+"cite_id": "WC-S-0020"
+},
+{
+"list": "settings",
+"entry": "Emails > Email options",
+"path": "includes/admin/settings/class-wc-settings-emails.php",
+"line": 69,
+"quote": "'' => __( 'Email options', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0021"
+},
+{
+"list": "settings",
+"entry": "Advanced > Page setup",
+"path": "includes/admin/settings/class-wc-settings-advanced.php",
+"line": 50,
+"quote": "''     => __( 'Page setup', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0022"
+},
+{
+"list": "settings",
+"entry": "Advanced > REST API keys",
+"path": "includes/admin/settings/class-wc-settings-advanced.php",
+"line": 51,
+"quote": "'keys' => __( 'REST API keys', 'woocommerce' ),",
+"note": "settings section",
+"cite_id": "WC-S-0023"
+},
+{
+"list": "settings",
+"entry": "Advanced > REST API caching",
+"path": "includes/admin/settings/class-wc-settings-advanced.php",
+"line": 56,
+"quote": "$sections['rest_api_caching'] = __( 'REST API caching', 'woocommerce' );",
+"note": "settings section",
+"cite_id": "WC-S-0024"
+},
+{
+"list": "settings",
+"entry": "Advanced > Webhooks",
+"path": "includes/admin/settings/class-wc-settings-advanced.php",
+"line": 59,
+"quote": "$sections['webhooks'] = __( 'Webhooks', 'woocommerce' );",
+"note": "settings section",
+"cite_id": "WC-S-0025"
+},
+{
+"list": "settings",
+"entry": "Advanced > Legacy API",
+"path": "includes/admin/settings/class-wc-settings-advanced.php",
+"line": 62,
+"quote": "$sections['legacy_api'] = __( 'Legacy API', 'woocommerce' );",
+"note": "settings section",
+"cite_id": "WC-S-0026"
+},
+{
+"list": "settings",
+"entry": "Advanced > WooCommerce.com",
+"path": "includes/admin/settings/class-wc-settings-advanced.php",
+"line": 65,
+"quote": "$sections['woocommerce_com'] = __( 'WooCommerce.com', 'woocommerce' );",
+"note": "settings section",
+"cite_id": "WC-S-0027"
+},
+{
+"list": "settings",
+"entry": "Advanced > Blueprint (beta)",
+"path": "includes/admin/settings/class-wc-settings-advanced.php",
+"line": 68,
+"quote": "$sections['blueprint'] = __( 'Blueprint (beta)', 'woocommerce' );",
+"note": "settings section",
+"cite_id": "WC-S-0028"
+},
+{
+"list": "settings",
+"entry": "Payments > main",
+"path": "includes/admin/settings/class-wc-settings-payment-gateways.php",
+"line": 26,
+"quote": "const MAIN_SECTION_NAME    = 'main';",
+"note": "settings section (React page)",
+"cite_id": "WC-S-0029"
+},
+{
+"list": "settings",
+"entry": "Payments > offline",
+"path": "includes/admin/settings/class-wc-settings-payment-gateways.php",
+"line": 27,
+"quote": "const OFFLINE_SECTION_NAME = 'offline';",
+"note": "settings section (React page)",
+"cite_id": "WC-S-0030"
+},
+{
+"list": "settings",
+"entry": "Payments > cod",
+"path": "includes/admin/settings/class-wc-settings-payment-gateways.php",
+"line": 28,
+"quote": "const COD_SECTION_NAME     = 'cod';  // Cash on delivery.",
+"note": "settings section (React page)",
+"cite_id": "WC-S-0031"
+},
+{
+"list": "settings",
+"entry": "Payments > bacs",
+"path": "includes/admin/settings/class-wc-settings-payment-gateways.php",
+"line": 29,
+"quote": "const BACS_SECTION_NAME    = 'bacs';  // Direct bank transfer.",
+"note": "settings section (React page)",
+"cite_id": "WC-S-0032"
+},
+{
+"list": "settings",
+"entry": "Payments > cheque",
+"path": "includes/admin/settings/class-wc-settings-payment-gateways.php",
+"line": 30,
+"quote": "const CHEQUE_SECTION_NAME  = 'cheque';  // Cheque payments.",
+"note": "settings section (React page)",
+"cite_id": "WC-S-0033"
+},
+{
+"list": "settings",
+"entry": "Tax > Reduced rate rates",
+"path": "includes/class-wc-install.php",
+"line": 1286,
+"quote": "WC_Tax::create_tax_class( __( 'Reduced rate', 'woocommerce' ) );",
+"note": "tax class created on install; the Tax tab lists '%s rates' per class",
+"cite_id": "WC-S-0034"
+},
+{
+"list": "settings",
+"entry": "Tax > Zero rate rates",
+"path": "includes/class-wc-install.php",
+"line": 1287,
+"quote": "WC_Tax::create_tax_class( __( 'Zero rate', 'woocommerce' ) );",
+"note": "tax class created on install; the Tax tab lists '%s rates' per class",
+"cite_id": "WC-S-0035"
+},
+{
+"list": "admin-navigation",
+"entry": "Status > System status",
+"path": "includes/admin/views/html-admin-page-status.php",
+"line": 12,
+"quote": "'status' => __( 'System status', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0036"
+},
+{
+"list": "admin-navigation",
+"entry": "Status > Tools",
+"path": "includes/admin/views/html-admin-page-status.php",
+"line": 13,
+"quote": "'tools'  => __( 'Tools', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0037"
+},
+{
+"list": "admin-navigation",
+"entry": "Status > Logs",
+"path": "includes/admin/views/html-admin-page-status.php",
+"line": 14,
+"quote": "'logs'   => __( 'Logs', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0038"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce",
+"path": "includes/admin/class-wc-admin-menus.php",
+"line": 95,
+"quote": "add_menu_page( __( 'WooCommerce', 'woocommerce' ), __( 'WooCommerce', 'woocommerce' ), 'edit_others_shop_orders', 'woocommerce', null, $woocommerce_icon, '55.5' );",
+"note": "",
+"cite_id": "WC-S-0039"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Home",
+"path": "src/Internal/Admin/Homescreen.php",
+"line": 192,
+"quote": "'title'      => __( 'Home', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0040"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Orders",
+"path": "includes/class-wc-post-types.php",
+"line": 456,
+"quote": "'menu_name'             => _x( 'Orders', 'Admin menu name', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0041"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Customers",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 714,
+"quote": "'title'  => __( 'Customers', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0042"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Reports",
+"path": "includes/admin/class-wc-admin-menus.php",
+"line": 111,
+"quote": "add_submenu_page( 'woocommerce', __( 'Reports', 'woocommerce' ), __( 'Reports', 'woocommerce' ), 'view_woocommerce_reports', 'wc-reports', array( $this, 'reports_page' ) );",
+"note": "",
+"cite_id": "WC-S-0043"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Settings",
+"path": "includes/admin/class-wc-admin-menus.php",
+"line": 126,
+"quote": "__( 'Settings', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0044"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Status",
+"path": "includes/admin/class-wc-admin-menus.php",
+"line": 224,
+"quote": "$status_page = add_submenu_page( 'woocommerce', __( 'WooCommerce status', 'woocommerce' ), __( 'Status', 'woocommerce' ), 'manage_woocommerce', 'wc-status', array( $this, 'status_page' ) );",
+"note": "",
+"cite_id": "WC-S-0045"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Extensions",
+"path": "src/Internal/Admin/Marketplace.php",
+"line": 63,
+"quote": "'title'      => __( 'Extensions', 'woocommerce' ) . $this->badge(),",
+"note": "",
+"cite_id": "WC-S-0046"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Notifications",
+"path": "src/Internal/StockNotifications/Admin/MenusController.php",
+"line": 54,
+"quote": "__( 'Stock Notifications', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0047"
+},
+{
+"list": "admin-navigation",
+"entry": "WooCommerce > Coupons",
+"path": "src/Internal/Admin/Coupons.php",
+"line": 63,
+"quote": "__( 'Coupons', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0048"
+},
+{
+"list": "admin-navigation",
+"entry": "Products",
+"path": "includes/class-wc-post-types.php",
+"line": 376,
+"quote": "'menu_name'             => _x( 'Products', 'Admin menu name', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0049"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > All Products",
+"path": "includes/class-wc-post-types.php",
+"line": 375,
+"quote": "'all_items'             => __( 'All Products', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0050"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > Add New",
+"path": "includes/class-wc-post-types.php",
+"line": 377,
+"quote": "'add_new'               => __( 'Add New', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0051"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > Categories",
+"path": "includes/class-wc-post-types.php",
+"line": 112,
+"quote": "'menu_name'             => _x( 'Categories', 'Admin menu name', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0052"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > Tags",
+"path": "includes/class-wc-post-types.php",
+"line": 156,
+"quote": "'menu_name'                  => _x( 'Tags', 'Admin menu name', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0053"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > Brands",
+"path": "includes/class-wc-brands.php",
+"line": 297,
+"quote": "'menu_name'         => __( 'Brands', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0054"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > Attributes",
+"path": "includes/admin/class-wc-admin-menus.php",
+"line": 101,
+"quote": "add_submenu_page( 'edit.php?post_type=product', __( 'Attributes', 'woocommerce' ), __( 'Attributes', 'woocommerce' ), 'manage_product_terms', 'product_attributes', array( $this, 'attributes_page' ) );",
+"note": "",
+"cite_id": "WC-S-0055"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > Reviews",
+"path": "src/Internal/Admin/ProductReviews/Reviews.php",
+"line": 84,
+"quote": "__( 'Reviews', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0056"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > Product Import",
+"path": "includes/admin/class-wc-admin-importers.php",
+"line": 50,
+"quote": "'name'       => __( 'Product Import', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0057"
+},
+{
+"list": "admin-navigation",
+"entry": "Products > Product Export",
+"path": "includes/admin/class-wc-admin-exporters.php",
+"line": 46,
+"quote": "'name'       => __( 'Product Export', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0058"
+},
+{
+"list": "admin-navigation",
+"entry": "Payments",
+"path": "src/Internal/Admin/Settings/PaymentsController.php",
+"line": 69,
+"quote": "$menu_title = esc_html__( 'Payments', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0059"
+},
+{
+"list": "admin-navigation",
+"entry": "Marketing",
+"path": "src/Internal/Admin/Marketing.php",
+"line": 88,
+"quote": "'title'      => 'Marketing',",
+"note": "",
+"cite_id": "WC-S-0060"
+},
+{
+"list": "admin-navigation",
+"entry": "Marketing > Overview",
+"path": "src/Internal/Admin/Marketing.php",
+"line": 143,
+"quote": "'title'  => __( 'Overview', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0061"
+},
+{
+"list": "admin-navigation",
+"entry": "Marketing > Coupons",
+"path": "includes/class-wc-post-types.php",
+"line": 509,
+"quote": "'menu_name'             => _x( 'Coupons', 'Admin menu name', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0062"
+},
+{
+"list": "admin-navigation",
+"entry": "Setup Wizard",
+"path": "src/Admin/PageController.php",
+"line": 538,
+"quote": "'title'  => __( 'Setup Wizard', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0063"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 643,
+"quote": "'title'    => __( 'Analytics', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0064"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Overview",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 654,
+"quote": "'title'  => __( 'Overview', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0065"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Products",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 660,
+"quote": "'title'  => __( 'Products', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0066"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Revenue",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 666,
+"quote": "'title'  => __( 'Revenue', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0067"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Orders",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 672,
+"quote": "'title'  => __( 'Orders', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0068"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Variations",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 678,
+"quote": "'title'  => __( 'Variations', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0069"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Categories",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 684,
+"quote": "'title'  => __( 'Categories', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0070"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Coupons",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 690,
+"quote": "'title'  => __( 'Coupons', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0071"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Taxes",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 696,
+"quote": "'title'  => __( 'Taxes', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0072"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Downloads",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 702,
+"quote": "'title'  => __( 'Downloads', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0073"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Stock",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 708,
+"quote": "'title'  => __( 'Stock', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0074"
+},
+{
+"list": "admin-navigation",
+"entry": "Analytics > Settings",
+"path": "src/Internal/Admin/Analytics.php",
+"line": 720,
+"quote": "'title'  => __( 'Settings', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0075"
+},
+{
+"list": "api-resources",
+"entry": "wc/v1",
+"path": "includes/rest-api/Server.php",
+"line": 77,
+"quote": "'wc/v1'        => wc_rest_should_load_namespace( 'wc/v1' ) ? $this->get_v1_controllers() : array(),",
+"note": "",
+"cite_id": "WC-S-0076"
+},
+{
+"list": "api-resources",
+"entry": "wc/v2",
+"path": "includes/rest-api/Server.php",
+"line": 78,
+"quote": "'wc/v2'        => wc_rest_should_load_namespace( 'wc/v2' ) ? $this->get_v2_controllers() : array(),",
+"note": "",
+"cite_id": "WC-S-0077"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3",
+"path": "includes/rest-api/Server.php",
+"line": 79,
+"quote": "'wc/v3'        => wc_rest_should_load_namespace( 'wc/v3' ) ? $this->get_v3_controllers() : array(),",
+"note": "",
+"cite_id": "WC-S-0078"
+},
+{
+"list": "api-resources",
+"entry": "wc-telemetry",
+"path": "includes/rest-api/Server.php",
+"line": 80,
+"quote": "'wc-telemetry' => wc_rest_should_load_namespace( 'wc-telemetry' ) ? $this->get_telemetry_controllers() : array(),",
+"note": "",
+"cite_id": "WC-S-0079"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4",
+"path": "includes/rest-api/Server.php",
+"line": 84,
+"quote": "$namespaces['wc/v4'] = $this->get_v4_controllers();",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0080"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1",
+"path": "src/StoreApi/RoutesController.php",
+"line": 93,
+"quote": "$this->register_routes( 'v1', self::$api_namespace . '/v1' );",
+"note": "",
+"cite_id": "WC-S-0081"
+},
+{
+"list": "api-resources",
+"entry": "wc/private",
+"path": "src/StoreApi/RoutesController.php",
+"line": 94,
+"quote": "$this->register_routes( 'private', 'wc/private' );",
+"note": "",
+"cite_id": "WC-S-0082"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin",
+"path": "src/Admin/API/Init.php",
+"line": 63,
+"quote": "if ( wc_rest_should_load_namespace( 'wc-admin' ) ) {",
+"note": "",
+"cite_id": "WC-S-0083"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics",
+"path": "src/Admin/API/Init.php",
+"line": 68,
+"quote": "$rest_api_util->lazy_load_namespace( 'wc-analytics', array( $this, 'rest_api_init_wc_analytics' ) );",
+"note": "",
+"cite_id": "WC-S-0084"
+},
+{
+"list": "api-resources",
+"entry": "wccom-site/v3",
+"path": "includes/wccom-site/rest-api/endpoints/abstract-wc-rest-wccom-site-controller.php",
+"line": 30,
+"quote": "protected $namespace = 'wccom-site/v3';",
+"note": "",
+"cite_id": "WC-S-0085"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > coupons",
+"path": "includes/rest-api/Server.php",
+"line": 174,
+"quote": "'coupons'                  => 'WC_REST_Coupons_Controller',",
+"note": "",
+"cite_id": "WC-S-0086"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > customer-downloads",
+"path": "includes/rest-api/Server.php",
+"line": 175,
+"quote": "'customer-downloads'       => 'WC_REST_Customer_Downloads_Controller',",
+"note": "",
+"cite_id": "WC-S-0087"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > customers",
+"path": "includes/rest-api/Server.php",
+"line": 176,
+"quote": "'customers'                => 'WC_REST_Customers_Controller',",
+"note": "",
+"cite_id": "WC-S-0088"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > network-orders",
+"path": "includes/rest-api/Server.php",
+"line": 177,
+"quote": "'network-orders'           => 'WC_REST_Network_Orders_Controller',",
+"note": "",
+"cite_id": "WC-S-0089"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > order-notes",
+"path": "includes/rest-api/Server.php",
+"line": 178,
+"quote": "'order-notes'              => 'WC_REST_Order_Notes_Controller',",
+"note": "",
+"cite_id": "WC-S-0090"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > order-refunds",
+"path": "includes/rest-api/Server.php",
+"line": 179,
+"quote": "'order-refunds'            => 'WC_REST_Order_Refunds_Controller',",
+"note": "",
+"cite_id": "WC-S-0091"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > orders",
+"path": "includes/rest-api/Server.php",
+"line": 180,
+"quote": "'orders'                   => 'WC_REST_Orders_Controller',",
+"note": "",
+"cite_id": "WC-S-0092"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > product-attribute-terms",
+"path": "includes/rest-api/Server.php",
+"line": 181,
+"quote": "'product-attribute-terms'  => 'WC_REST_Product_Attribute_Terms_Controller',",
+"note": "",
+"cite_id": "WC-S-0093"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > product-attributes",
+"path": "includes/rest-api/Server.php",
+"line": 182,
+"quote": "'product-attributes'       => 'WC_REST_Product_Attributes_Controller',",
+"note": "",
+"cite_id": "WC-S-0094"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > product-categories",
+"path": "includes/rest-api/Server.php",
+"line": 183,
+"quote": "'product-categories'       => 'WC_REST_Product_Categories_Controller',",
+"note": "",
+"cite_id": "WC-S-0095"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > product-custom-fields",
+"path": "includes/rest-api/Server.php",
+"line": 184,
+"quote": "'product-custom-fields'    => 'WC_REST_Product_Custom_Fields_Controller',",
+"note": "",
+"cite_id": "WC-S-0096"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > product-reviews",
+"path": "includes/rest-api/Server.php",
+"line": 185,
+"quote": "'product-reviews'          => 'WC_REST_Product_Reviews_Controller',",
+"note": "",
+"cite_id": "WC-S-0097"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > product-shipping-classes",
+"path": "includes/rest-api/Server.php",
+"line": 186,
+"quote": "'product-shipping-classes' => 'WC_REST_Product_Shipping_Classes_Controller',",
+"note": "",
+"cite_id": "WC-S-0098"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > product-tags",
+"path": "includes/rest-api/Server.php",
+"line": 187,
+"quote": "'product-tags'             => 'WC_REST_Product_Tags_Controller',",
+"note": "",
+"cite_id": "WC-S-0099"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > products",
+"path": "includes/rest-api/Server.php",
+"line": 188,
+"quote": "'products'                 => 'WC_REST_Products_Controller',",
+"note": "",
+"cite_id": "WC-S-0100"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > product-variations",
+"path": "includes/rest-api/Server.php",
+"line": 189,
+"quote": "'product-variations'       => 'WC_REST_Product_Variations_Controller',",
+"note": "",
+"cite_id": "WC-S-0101"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > refunds",
+"path": "includes/rest-api/Server.php",
+"line": 190,
+"quote": "'refunds'                  => 'WC_REST_Refunds_Controller',",
+"note": "",
+"cite_id": "WC-S-0102"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > reports-sales",
+"path": "includes/rest-api/Server.php",
+"line": 191,
+"quote": "'reports-sales'            => 'WC_REST_Report_Sales_Controller',",
+"note": "",
+"cite_id": "WC-S-0103"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > reports-top-sellers",
+"path": "includes/rest-api/Server.php",
+"line": 192,
+"quote": "'reports-top-sellers'      => 'WC_REST_Report_Top_Sellers_Controller',",
+"note": "",
+"cite_id": "WC-S-0104"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > reports-orders-totals",
+"path": "includes/rest-api/Server.php",
+"line": 193,
+"quote": "'reports-orders-totals'    => 'WC_REST_Report_Orders_Totals_Controller',",
+"note": "",
+"cite_id": "WC-S-0105"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > reports-products-totals",
+"path": "includes/rest-api/Server.php",
+"line": 194,
+"quote": "'reports-products-totals'  => 'WC_REST_Report_Products_Totals_Controller',",
+"note": "",
+"cite_id": "WC-S-0106"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > reports-customers-totals",
+"path": "includes/rest-api/Server.php",
+"line": 195,
+"quote": "'reports-customers-totals' => 'WC_REST_Report_Customers_Totals_Controller',",
+"note": "",
+"cite_id": "WC-S-0107"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > reports-coupons-totals",
+"path": "includes/rest-api/Server.php",
+"line": 196,
+"quote": "'reports-coupons-totals'   => 'WC_REST_Report_Coupons_Totals_Controller',",
+"note": "",
+"cite_id": "WC-S-0108"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > reports-reviews-totals",
+"path": "includes/rest-api/Server.php",
+"line": 197,
+"quote": "'reports-reviews-totals'   => 'WC_REST_Report_Reviews_Totals_Controller',",
+"note": "",
+"cite_id": "WC-S-0109"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > reports",
+"path": "includes/rest-api/Server.php",
+"line": 198,
+"quote": "'reports'                  => 'WC_REST_Reports_Controller',",
+"note": "",
+"cite_id": "WC-S-0110"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > settings",
+"path": "includes/rest-api/Server.php",
+"line": 199,
+"quote": "'settings'                 => 'WC_REST_Settings_Controller',",
+"note": "",
+"cite_id": "WC-S-0111"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > settings-options",
+"path": "includes/rest-api/Server.php",
+"line": 200,
+"quote": "'settings-options'         => 'WC_REST_Setting_Options_Controller',",
+"note": "",
+"cite_id": "WC-S-0112"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > shipping-zones",
+"path": "includes/rest-api/Server.php",
+"line": 201,
+"quote": "'shipping-zones'           => 'WC_REST_Shipping_Zones_Controller',",
+"note": "",
+"cite_id": "WC-S-0113"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > shipping-zone-locations",
+"path": "includes/rest-api/Server.php",
+"line": 202,
+"quote": "'shipping-zone-locations'  => 'WC_REST_Shipping_Zone_Locations_Controller',",
+"note": "",
+"cite_id": "WC-S-0114"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > shipping-zone-methods",
+"path": "includes/rest-api/Server.php",
+"line": 203,
+"quote": "'shipping-zone-methods'    => 'WC_REST_Shipping_Zone_Methods_Controller',",
+"note": "",
+"cite_id": "WC-S-0115"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > tax-classes",
+"path": "includes/rest-api/Server.php",
+"line": 204,
+"quote": "'tax-classes'              => 'WC_REST_Tax_Classes_Controller',",
+"note": "",
+"cite_id": "WC-S-0116"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > taxes",
+"path": "includes/rest-api/Server.php",
+"line": 205,
+"quote": "'taxes'                    => 'WC_REST_Taxes_Controller',",
+"note": "",
+"cite_id": "WC-S-0117"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > variations",
+"path": "includes/rest-api/Server.php",
+"line": 206,
+"quote": "'variations'               => 'WC_REST_Variations_Controller',",
+"note": "",
+"cite_id": "WC-S-0118"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > webhooks",
+"path": "includes/rest-api/Server.php",
+"line": 207,
+"quote": "'webhooks'                 => 'WC_REST_Webhooks_Controller',",
+"note": "",
+"cite_id": "WC-S-0119"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > system-status",
+"path": "includes/rest-api/Server.php",
+"line": 208,
+"quote": "'system-status'            => 'WC_REST_System_Status_Controller',",
+"note": "",
+"cite_id": "WC-S-0120"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > system-status-tools",
+"path": "includes/rest-api/Server.php",
+"line": 209,
+"quote": "'system-status-tools'      => 'WC_REST_System_Status_Tools_Controller',",
+"note": "",
+"cite_id": "WC-S-0121"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > shipping-methods",
+"path": "includes/rest-api/Server.php",
+"line": 210,
+"quote": "'shipping-methods'         => 'WC_REST_Shipping_Methods_Controller',",
+"note": "",
+"cite_id": "WC-S-0122"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > payment-gateways",
+"path": "includes/rest-api/Server.php",
+"line": 211,
+"quote": "'payment-gateways'         => 'WC_REST_Payment_Gateways_Controller',",
+"note": "",
+"cite_id": "WC-S-0123"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > data",
+"path": "includes/rest-api/Server.php",
+"line": 212,
+"quote": "'data'                     => 'WC_REST_Data_Controller',",
+"note": "",
+"cite_id": "WC-S-0124"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > data-continents",
+"path": "includes/rest-api/Server.php",
+"line": 213,
+"quote": "'data-continents'          => 'WC_REST_Data_Continents_Controller',",
+"note": "",
+"cite_id": "WC-S-0125"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > data-countries",
+"path": "includes/rest-api/Server.php",
+"line": 214,
+"quote": "'data-countries'           => 'WC_REST_Data_Countries_Controller',",
+"note": "",
+"cite_id": "WC-S-0126"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > data-currencies",
+"path": "includes/rest-api/Server.php",
+"line": 215,
+"quote": "'data-currencies'          => 'WC_REST_Data_Currencies_Controller',",
+"note": "",
+"cite_id": "WC-S-0127"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > paypal-standard",
+"path": "includes/rest-api/Server.php",
+"line": 216,
+"quote": "'paypal-standard'          => 'WC_REST_Paypal_Standard_Controller',",
+"note": "",
+"cite_id": "WC-S-0128"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > paypal-webhooks",
+"path": "includes/rest-api/Server.php",
+"line": 217,
+"quote": "'paypal-webhooks'          => 'WC_REST_Paypal_Webhooks_Controller',",
+"note": "",
+"cite_id": "WC-S-0129"
+},
+{
+"list": "api-resources",
+"entry": "wc/v3 > paypal-buttons",
+"path": "includes/rest-api/Server.php",
+"line": 218,
+"quote": "'paypal-buttons'           => 'WC_REST_Paypal_Buttons_Controller',",
+"note": "",
+"cite_id": "WC-S-0130"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > fulfillments",
+"path": "includes/rest-api/Server.php",
+"line": 229,
+"quote": "'fulfillments'              => FulfillmentsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0131"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > products",
+"path": "includes/rest-api/Server.php",
+"line": 230,
+"quote": "'products'                  => ProductsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0132"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > customers",
+"path": "includes/rest-api/Server.php",
+"line": 231,
+"quote": "'customers'                 => CustomersController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0133"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > order-notes",
+"path": "includes/rest-api/Server.php",
+"line": 232,
+"quote": "'order-notes'               => OrderNotesController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0134"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > shipping-zones",
+"path": "includes/rest-api/Server.php",
+"line": 233,
+"quote": "'shipping-zones'            => ShippingZonesController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0135"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > shipping-zone-method",
+"path": "includes/rest-api/Server.php",
+"line": 234,
+"quote": "'shipping-zone-method'      => ShippingZoneMethodController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0136"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > orders",
+"path": "includes/rest-api/Server.php",
+"line": 235,
+"quote": "'orders'                    => OrdersController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0137"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > refunds",
+"path": "includes/rest-api/Server.php",
+"line": 236,
+"quote": "'refunds'                   => RefundsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0138"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > offline-payment-methods",
+"path": "includes/rest-api/Server.php",
+"line": 237,
+"quote": "'offline-payment-methods'   => OfflinePaymentMethodsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0139"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > settings-general",
+"path": "includes/rest-api/Server.php",
+"line": 238,
+"quote": "'settings-general'          => GeneralSettingsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0140"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > settings-email",
+"path": "includes/rest-api/Server.php",
+"line": 239,
+"quote": "'settings-email'            => EmailSettingsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0141"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > settings-emails",
+"path": "includes/rest-api/Server.php",
+"line": 240,
+"quote": "'settings-emails'           => EmailsSettingsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0142"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > settings-products",
+"path": "includes/rest-api/Server.php",
+"line": 241,
+"quote": "'settings-products'         => SettingsProductsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0143"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > settings-payment-gateways",
+"path": "includes/rest-api/Server.php",
+"line": 242,
+"quote": "'settings-payment-gateways' => PaymentGatewaysController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0144"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > settings-tax",
+"path": "includes/rest-api/Server.php",
+"line": 243,
+"quote": "'settings-tax'              => TaxSettingsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0145"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > settings-account",
+"path": "includes/rest-api/Server.php",
+"line": 244,
+"quote": "'settings-account'          => AccountSettingsController::class,",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0146"
+},
+{
+"list": "api-resources",
+"entry": "wc/v4 > settings",
+"path": "includes/rest-api/Server.php",
+"line": 246,
+"quote": "'settings'                  => 'WC_REST_Settings_V4_Controller',",
+"note": "feature flag rest-api-v4",
+"cite_id": "WC-S-0147"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /batch",
+"path": "src/StoreApi/Routes/V1/Batch.php",
+"line": 18,
+"quote": "const IDENTIFIER = 'batch';",
+"note": "Store API route batch",
+"cite_id": "WC-S-0148"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart",
+"path": "src/StoreApi/Routes/V1/Cart.php",
+"line": 13,
+"quote": "const IDENTIFIER = 'cart';",
+"note": "Store API route cart",
+"cite_id": "WC-S-0149"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/add-item",
+"path": "src/StoreApi/Routes/V1/CartAddItem.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-add-item';",
+"note": "Store API route cart-add-item",
+"cite_id": "WC-S-0150"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/apply-coupon",
+"path": "src/StoreApi/Routes/V1/CartApplyCoupon.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-apply-coupon';",
+"note": "Store API route cart-apply-coupon",
+"cite_id": "WC-S-0151"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/coupons",
+"path": "src/StoreApi/Routes/V1/CartCoupons.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-coupons';",
+"note": "Store API route cart-coupons",
+"cite_id": "WC-S-0152"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/coupons/(?P<code>[\\w-]+)",
+"path": "src/StoreApi/Routes/V1/CartCouponsByCode.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-coupons-by-code';",
+"note": "Store API route cart-coupons-by-code",
+"cite_id": "WC-S-0153"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/extensions",
+"path": "src/StoreApi/Routes/V1/CartExtensions.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-extensions';",
+"note": "Store API route cart-extensions",
+"cite_id": "WC-S-0154"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/items",
+"path": "src/StoreApi/Routes/V1/CartItems.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-items';",
+"note": "Store API route cart-items",
+"cite_id": "WC-S-0155"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/items/(?P<key>[\\w-]{32})",
+"path": "src/StoreApi/Routes/V1/CartItemsByKey.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-items-by-key';",
+"note": "Store API route cart-items-by-key",
+"cite_id": "WC-S-0156"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/remove-coupon",
+"path": "src/StoreApi/Routes/V1/CartRemoveCoupon.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-remove-coupon';",
+"note": "Store API route cart-remove-coupon",
+"cite_id": "WC-S-0157"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/remove-item",
+"path": "src/StoreApi/Routes/V1/CartRemoveItem.php",
+"line": 18,
+"quote": "const IDENTIFIER = 'cart-remove-item';",
+"note": "Store API route cart-remove-item",
+"cite_id": "WC-S-0158"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/select-shipping-rate",
+"path": "src/StoreApi/Routes/V1/CartSelectShippingRate.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'cart-select-shipping-rate';",
+"note": "Store API route cart-select-shipping-rate",
+"cite_id": "WC-S-0159"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/update-item",
+"path": "src/StoreApi/Routes/V1/CartUpdateItem.php",
+"line": 13,
+"quote": "const IDENTIFIER = 'cart-update-item';",
+"note": "Store API route cart-update-item",
+"cite_id": "WC-S-0160"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /cart/update-customer",
+"path": "src/StoreApi/Routes/V1/CartUpdateCustomer.php",
+"line": 19,
+"quote": "const IDENTIFIER = 'cart-update-customer';",
+"note": "Store API route cart-update-customer",
+"cite_id": "WC-S-0161"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /checkout",
+"path": "src/StoreApi/Routes/V1/Checkout.php",
+"line": 24,
+"quote": "const IDENTIFIER = 'checkout';",
+"note": "Store API route checkout",
+"cite_id": "WC-S-0162"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /checkout/(?P<id>[\\d]+)",
+"path": "src/StoreApi/Routes/V1/CheckoutOrder.php",
+"line": 22,
+"quote": "const IDENTIFIER = 'checkout-order';",
+"note": "Store API route checkout-order",
+"cite_id": "WC-S-0163"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /order/(?P<id>[\\d]+)",
+"path": "src/StoreApi/Routes/V1/Order.php",
+"line": 21,
+"quote": "const IDENTIFIER = 'order';",
+"note": "Store API route order",
+"cite_id": "WC-S-0164"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/attributes",
+"path": "src/StoreApi/Routes/V1/ProductAttributes.php",
+"line": 13,
+"quote": "const IDENTIFIER = 'product-attributes';",
+"note": "Store API route product-attributes",
+"cite_id": "WC-S-0165"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/attributes/(?P<id>[\\d]+)",
+"path": "src/StoreApi/Routes/V1/ProductAttributesById.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'product-attributes-by-id';",
+"note": "Store API route product-attributes-by-id",
+"cite_id": "WC-S-0166"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/attributes/(?P<attribute_id>[\\d]+)/terms",
+"path": "src/StoreApi/Routes/V1/ProductAttributeTerms.php",
+"line": 17,
+"quote": "const IDENTIFIER = 'product-attribute-terms';",
+"note": "Store API route product-attribute-terms",
+"cite_id": "WC-S-0167"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/categories",
+"path": "src/StoreApi/Routes/V1/ProductCategories.php",
+"line": 13,
+"quote": "const IDENTIFIER = 'product-categories';",
+"note": "Store API route product-categories",
+"cite_id": "WC-S-0168"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/categories/(?P<id>[\\d]+)",
+"path": "src/StoreApi/Routes/V1/ProductCategoriesById.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'product-categories-by-id';",
+"note": "Store API route product-categories-by-id",
+"cite_id": "WC-S-0169"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/brands",
+"path": "src/StoreApi/Routes/V1/ProductBrands.php",
+"line": 15,
+"quote": "const IDENTIFIER = 'product-brands';",
+"note": "Store API route product-brands",
+"cite_id": "WC-S-0170"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/brands/(?P<identifier>[\\w-]+)",
+"path": "src/StoreApi/Routes/V1/ProductBrandsById.php",
+"line": 17,
+"quote": "const IDENTIFIER = 'product-brands-by-id';",
+"note": "Store API route product-brands-by-id",
+"cite_id": "WC-S-0171"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/collection-data",
+"path": "src/StoreApi/Routes/V1/ProductCollectionData.php",
+"line": 18,
+"quote": "const IDENTIFIER = 'product-collection-data';",
+"note": "Store API route product-collection-data",
+"cite_id": "WC-S-0172"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/reviews",
+"path": "src/StoreApi/Routes/V1/ProductReviews.php",
+"line": 17,
+"quote": "const IDENTIFIER = 'product-reviews';",
+"note": "Store API route product-reviews",
+"cite_id": "WC-S-0173"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/tags",
+"path": "src/StoreApi/Routes/V1/ProductTags.php",
+"line": 13,
+"quote": "const IDENTIFIER = 'product-tags';",
+"note": "Store API route product-tags",
+"cite_id": "WC-S-0174"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products",
+"path": "src/StoreApi/Routes/V1/Products.php",
+"line": 23,
+"quote": "const IDENTIFIER = 'products';",
+"note": "Store API route products",
+"cite_id": "WC-S-0175"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/(?P<id>[\\d]+)",
+"path": "src/StoreApi/Routes/V1/ProductsById.php",
+"line": 18,
+"quote": "const IDENTIFIER = 'products-by-id';",
+"note": "Store API route products-by-id",
+"cite_id": "WC-S-0176"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /products/(?P<slug>[\\S]+)",
+"path": "src/StoreApi/Routes/V1/ProductsBySlug.php",
+"line": 18,
+"quote": "const IDENTIFIER = 'products-by-slug';",
+"note": "Store API route products-by-slug",
+"cite_id": "WC-S-0177"
+},
+{
+"list": "api-resources",
+"entry": "wc/private > /patterns",
+"path": "src/StoreApi/Routes/V1/Patterns.php",
+"line": 24,
+"quote": "const IDENTIFIER = 'patterns';",
+"note": "Store API route patterns",
+"cite_id": "WC-S-0178"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /shopper-lists",
+"path": "src/StoreApi/Routes/V1/ShopperLists.php",
+"line": 17,
+"quote": "const IDENTIFIER = 'shopper-lists';",
+"note": "Store API route shopper-lists (shopper lists feature)",
+"cite_id": "WC-S-0179"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+)",
+"path": "src/StoreApi/Routes/V1/ShopperListsBySlug.php",
+"line": 18,
+"quote": "const IDENTIFIER = 'shopper-lists-by-slug';",
+"note": "Store API route shopper-lists-by-slug (shopper lists feature)",
+"cite_id": "WC-S-0180"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+)/items",
+"path": "src/StoreApi/Routes/V1/ShopperListItems.php",
+"line": 25,
+"quote": "const IDENTIFIER = 'shopper-list-items';",
+"note": "Store API route shopper-list-items (shopper lists feature)",
+"cite_id": "WC-S-0181"
+},
+{
+"list": "api-resources",
+"entry": "wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+)/items/(?P<key>[\\w-]{32})",
+"path": "src/StoreApi/Routes/V1/ShopperListItemsByKey.php",
+"line": 21,
+"quote": "const IDENTIFIER = 'shopper-list-items-by-key';",
+"note": "Store API route shopper-list-items-by-key (shopper lists feature)",
+"cite_id": "WC-S-0182"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > notice (Notice)",
+"path": "src/Admin/API/Init.php",
+"line": 82,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Notice',",
+"note": "controller Notice",
+"cite_id": "WC-S-0183"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > features (Features)",
+"path": "src/Admin/API/Init.php",
+"line": 83,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Features',",
+"note": "controller Features",
+"cite_id": "WC-S-0184"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > experiments (Experiments)",
+"path": "src/Admin/API/Init.php",
+"line": 84,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Experiments',",
+"note": "controller Experiments",
+"cite_id": "WC-S-0185"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > marketing (Marketing)",
+"path": "src/Admin/API/Init.php",
+"line": 85,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Marketing',",
+"note": "controller Marketing",
+"cite_id": "WC-S-0186"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > marketing/overview (MarketingOverview)",
+"path": "src/Admin/API/Init.php",
+"line": 86,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\MarketingOverview',",
+"note": "controller MarketingOverview",
+"cite_id": "WC-S-0187"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > marketing/recommendations (MarketingRecommendations)",
+"path": "src/Admin/API/Init.php",
+"line": 87,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\MarketingRecommendations',",
+"note": "controller MarketingRecommendations",
+"cite_id": "WC-S-0188"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > marketing/channels (MarketingChannels)",
+"path": "src/Admin/API/Init.php",
+"line": 88,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\MarketingChannels',",
+"note": "controller MarketingChannels",
+"cite_id": "WC-S-0189"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > marketing/campaigns (MarketingCampaigns)",
+"path": "src/Admin/API/Init.php",
+"line": 89,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\MarketingCampaigns',",
+"note": "controller MarketingCampaigns",
+"cite_id": "WC-S-0190"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > marketing/campaign-types (MarketingCampaignTypes)",
+"path": "src/Admin/API/Init.php",
+"line": 90,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\MarketingCampaignTypes',",
+"note": "controller MarketingCampaignTypes",
+"cite_id": "WC-S-0191"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > options (Options)",
+"path": "src/Admin/API/Init.php",
+"line": 91,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Options',",
+"note": "controller Options",
+"cite_id": "WC-S-0192"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > payment-gateway-suggestions (PaymentGatewaySuggestions)",
+"path": "src/Admin/API/Init.php",
+"line": 92,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\PaymentGatewaySuggestions',",
+"note": "controller PaymentGatewaySuggestions",
+"cite_id": "WC-S-0193"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > themes (Themes)",
+"path": "src/Admin/API/Init.php",
+"line": 93,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Themes',",
+"note": "controller Themes",
+"cite_id": "WC-S-0194"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > plugins (Plugins)",
+"path": "src/Admin/API/Init.php",
+"line": 94,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Plugins',",
+"note": "controller Plugins",
+"cite_id": "WC-S-0195"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > onboarding/free-extensions (OnboardingFreeExtensions)",
+"path": "src/Admin/API/Init.php",
+"line": 95,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\OnboardingFreeExtensions',",
+"note": "controller OnboardingFreeExtensions",
+"cite_id": "WC-S-0196"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > onboarding/product-types (OnboardingProductTypes)",
+"path": "src/Admin/API/Init.php",
+"line": 96,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\OnboardingProductTypes',",
+"note": "controller OnboardingProductTypes",
+"cite_id": "WC-S-0197"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > onboarding/profile (OnboardingProfile)",
+"path": "src/Admin/API/Init.php",
+"line": 97,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\OnboardingProfile',",
+"note": "controller OnboardingProfile",
+"cite_id": "WC-S-0198"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > onboarding/tasks (OnboardingTasks)",
+"path": "src/Admin/API/Init.php",
+"line": 98,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\OnboardingTasks',",
+"note": "controller OnboardingTasks",
+"cite_id": "WC-S-0199"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > onboarding/themes (OnboardingThemes)",
+"path": "src/Admin/API/Init.php",
+"line": 99,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\OnboardingThemes',",
+"note": "controller OnboardingThemes",
+"cite_id": "WC-S-0200"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > onboarding/plugins (OnboardingPlugins)",
+"path": "src/Admin/API/Init.php",
+"line": 100,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\OnboardingPlugins',",
+"note": "controller OnboardingPlugins",
+"cite_id": "WC-S-0201"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > onboarding (OnboardingProducts)",
+"path": "src/Admin/API/Init.php",
+"line": 101,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\OnboardingProducts',",
+"note": "controller OnboardingProducts",
+"cite_id": "WC-S-0202"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > mobile-app (MobileAppMagicLink)",
+"path": "src/Admin/API/Init.php",
+"line": 102,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\MobileAppMagicLink',",
+"note": "controller MobileAppMagicLink",
+"cite_id": "WC-S-0203"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > mobile-app (MobileAppQRLogin)",
+"path": "src/Admin/API/Init.php",
+"line": 103,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\MobileAppQRLogin',",
+"note": "controller MobileAppQRLogin",
+"cite_id": "WC-S-0204"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > shipping-partner-suggestions (ShippingPartnerSuggestions)",
+"path": "src/Admin/API/Init.php",
+"line": 104,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\ShippingPartnerSuggestions',",
+"note": "controller ShippingPartnerSuggestions",
+"cite_id": "WC-S-0205"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > admin/notes (Notes)",
+"path": "src/Admin/API/Init.php",
+"line": 142,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Notes',",
+"note": "controller Notes",
+"cite_id": "WC-S-0206"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > NoteActions",
+"path": "src/Admin/API/Init.php",
+"line": 143,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\NoteActions',",
+"note": "controller NoteActions",
+"cite_id": "WC-S-0207"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > Coupons",
+"path": "src/Admin/API/Init.php",
+"line": 144,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Coupons',",
+"note": "controller Coupons",
+"cite_id": "WC-S-0208"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > Data",
+"path": "src/Admin/API/Init.php",
+"line": 145,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Data',",
+"note": "controller Data",
+"cite_id": "WC-S-0209"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > DataCountries",
+"path": "src/Admin/API/Init.php",
+"line": 146,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\DataCountries',",
+"note": "controller DataCountries",
+"cite_id": "WC-S-0210"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > data/download-ips (DataDownloadIPs)",
+"path": "src/Admin/API/Init.php",
+"line": 147,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\DataDownloadIPs',",
+"note": "controller DataDownloadIPs",
+"cite_id": "WC-S-0211"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > Orders",
+"path": "src/Admin/API/Init.php",
+"line": 148,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Orders',",
+"note": "controller Orders",
+"cite_id": "WC-S-0212"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > Products",
+"path": "src/Admin/API/Init.php",
+"line": 149,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Products',",
+"note": "controller Products",
+"cite_id": "WC-S-0213"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > ProductAttributes",
+"path": "src/Admin/API/Init.php",
+"line": 150,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\ProductAttributes',",
+"note": "controller ProductAttributes",
+"cite_id": "WC-S-0214"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > ProductAttributeTerms",
+"path": "src/Admin/API/Init.php",
+"line": 151,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\ProductAttributeTerms',",
+"note": "controller ProductAttributeTerms",
+"cite_id": "WC-S-0215"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > ProductCategories",
+"path": "src/Admin/API/Init.php",
+"line": 152,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\ProductCategories',",
+"note": "controller ProductCategories",
+"cite_id": "WC-S-0216"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > ProductVariations",
+"path": "src/Admin/API/Init.php",
+"line": 153,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\ProductVariations',",
+"note": "controller ProductVariations",
+"cite_id": "WC-S-0217"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > ProductReviews",
+"path": "src/Admin/API/Init.php",
+"line": 154,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\ProductReviews',",
+"note": "controller ProductReviews",
+"cite_id": "WC-S-0218"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > ProductsLowInStock",
+"path": "src/Admin/API/Init.php",
+"line": 155,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\ProductsLowInStock',",
+"note": "controller ProductsLowInStock",
+"cite_id": "WC-S-0219"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > activity-panel/counts (ActivityPanelCounts)",
+"path": "src/Admin/API/Init.php",
+"line": 156,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\ActivityPanelCounts',",
+"note": "controller ActivityPanelCounts",
+"cite_id": "WC-S-0220"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > SettingOptions",
+"path": "src/Admin/API/Init.php",
+"line": 157,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\SettingOptions',",
+"note": "controller SettingOptions",
+"cite_id": "WC-S-0221"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > Taxes",
+"path": "src/Admin/API/Init.php",
+"line": 158,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Taxes',",
+"note": "controller Taxes",
+"cite_id": "WC-S-0222"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > customers (Customers)",
+"path": "src/Admin/API/Init.php",
+"line": 164,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Customers',",
+"note": "controller Customers",
+"cite_id": "WC-S-0223"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > leaderboards (Leaderboards)",
+"path": "src/Admin/API/Init.php",
+"line": 165,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Leaderboards',",
+"note": "controller Leaderboards",
+"cite_id": "WC-S-0224"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > Reports/Controller",
+"path": "src/Admin/API/Init.php",
+"line": 166,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Controller',",
+"note": "controller Reports/Controller",
+"cite_id": "WC-S-0225"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/import (Reports/Import/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 167,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Import\\Controller',",
+"note": "controller Reports/Import/Controller",
+"cite_id": "WC-S-0226"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/(?P<type>[a-z]+)/export (Reports/Export/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 168,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Export\\Controller',",
+"note": "controller Reports/Export/Controller",
+"cite_id": "WC-S-0227"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/products (Reports/Products/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 169,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Controller',",
+"note": "controller Reports/Products/Controller",
+"cite_id": "WC-S-0228"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/variations (Reports/Variations/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 170,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Controller',",
+"note": "controller Reports/Variations/Controller",
+"cite_id": "WC-S-0229"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/products/stats (Reports/Products/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 171,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Stats\\Controller',",
+"note": "controller Reports/Products/Stats/Controller",
+"cite_id": "WC-S-0230"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/variations/stats (Reports/Variations/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 172,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Stats\\Controller',",
+"note": "controller Reports/Variations/Stats/Controller",
+"cite_id": "WC-S-0231"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/revenue/stats (Reports/Revenue/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 173,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Revenue\\Stats\\Controller',",
+"note": "controller Reports/Revenue/Stats/Controller",
+"cite_id": "WC-S-0232"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/orders (Reports/Orders/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 174,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Orders\\Controller',",
+"note": "controller Reports/Orders/Controller",
+"cite_id": "WC-S-0233"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/orders/stats (Reports/Orders/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 175,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Orders\\Stats\\Controller',",
+"note": "controller Reports/Orders/Stats/Controller",
+"cite_id": "WC-S-0234"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/categories (Reports/Categories/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 176,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Categories\\Controller',",
+"note": "controller Reports/Categories/Controller",
+"cite_id": "WC-S-0235"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/taxes (Reports/Taxes/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 177,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Controller',",
+"note": "controller Reports/Taxes/Controller",
+"cite_id": "WC-S-0236"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/taxes/stats (Reports/Taxes/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 178,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Stats\\Controller',",
+"note": "controller Reports/Taxes/Stats/Controller",
+"cite_id": "WC-S-0237"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/coupons (Reports/Coupons/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 179,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Controller',",
+"note": "controller Reports/Coupons/Controller",
+"cite_id": "WC-S-0238"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/coupons/stats (Reports/Coupons/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 180,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Stats\\Controller',",
+"note": "controller Reports/Coupons/Stats/Controller",
+"cite_id": "WC-S-0239"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/stock (Reports/Stock/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 181,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Stock\\Controller',",
+"note": "controller Reports/Stock/Controller",
+"cite_id": "WC-S-0240"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/stock/stats (Reports/Stock/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 182,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Stock\\Stats\\Controller',",
+"note": "controller Reports/Stock/Stats/Controller",
+"cite_id": "WC-S-0241"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/downloads (Reports/Downloads/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 183,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Controller',",
+"note": "controller Reports/Downloads/Controller",
+"cite_id": "WC-S-0242"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/downloads/stats (Reports/Downloads/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 184,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Stats\\Controller',",
+"note": "controller Reports/Downloads/Stats/Controller",
+"cite_id": "WC-S-0243"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/customers (Reports/Customers/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 185,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Customers\\Controller',",
+"note": "controller Reports/Customers/Controller",
+"cite_id": "WC-S-0244"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/customers/stats (Reports/Customers/Stats/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 186,
+"quote": "'Automattic\\WooCommerce\\Admin\\API\\Reports\\Customers\\Stats\\Controller',",
+"note": "controller Reports/Customers/Stats/Controller",
+"cite_id": "WC-S-0245"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > imports (AnalyticsImports)",
+"path": "src/Admin/API/Init.php",
+"line": 192,
+"quote": "$analytics_controllers[] = 'Automattic\\WooCommerce\\Admin\\API\\AnalyticsImports';",
+"note": "controller AnalyticsImports",
+"cite_id": "WC-S-0246"
+},
+{
+"list": "api-resources",
+"entry": "wc-analytics > reports/performance-indicators (Reports/PerformanceIndicators/Controller)",
+"path": "src/Admin/API/Init.php",
+"line": 195,
+"quote": "$analytics_controllers[] = 'Automattic\\WooCommerce\\Admin\\API\\Reports\\PerformanceIndicators\\Controller';",
+"note": "controller Reports/PerformanceIndicators/Controller",
+"cite_id": "WC-S-0247"
+},
+{
+"list": "api-resources",
+"entry": "wc-admin > launch-your-store",
+"path": "src/Admin/API/Init.php",
+"line": 70,
+"quote": "$controller        = 'Automattic\\WooCommerce\\Admin\\API\\LaunchYourStore';",
+"note": "controller LaunchYourStore",
+"cite_id": "WC-S-0248"
+},
+{
+"list": "api-resources",
+"entry": "wccom-site/v3 > connection",
+"path": "includes/wccom-site/rest-api/endpoints/class-wc-rest-wccom-site-connection-controller.php",
+"line": 29,
+"quote": "protected $rest_base = 'connection';",
+"note": "",
+"cite_id": "WC-S-0249"
+},
+{
+"list": "api-resources",
+"entry": "wccom-site/v3 > installer",
+"path": "includes/wccom-site/rest-api/endpoints/class-wc-rest-wccom-site-installer-controller.php",
+"line": 27,
+"quote": "protected $rest_base = 'installer';",
+"note": "",
+"cite_id": "WC-S-0250"
+},
+{
+"list": "api-resources",
+"entry": "wccom-site/v3 > ssr",
+"path": "includes/wccom-site/rest-api/endpoints/class-wc-rest-wccom-site-ssr-controller.php",
+"line": 25,
+"quote": "protected $rest_base = 'ssr';",
+"note": "",
+"cite_id": "WC-S-0251"
+},
+{
+"list": "api-resources",
+"entry": "wccom-site/v3 > status",
+"path": "includes/wccom-site/rest-api/endpoints/class-wc-rest-wccom-site-status-controller.php",
+"line": 26,
+"quote": "protected $rest_base = 'status';",
+"note": "",
+"cite_id": "WC-S-0252"
+},
+{
+"list": "api-resources",
+"entry": "wc-telemetry > tracker",
+"path": "includes/rest-api/Controllers/Telemetry/class-wc-rest-telemetry-controller.php",
+"line": 33,
+"quote": "protected $rest_base = 'tracker';",
+"note": "",
+"cite_id": "WC-S-0253"
+},
+{
+"list": "webhook-topics",
+"entry": "coupon.created",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 71,
+"quote": "'coupon.created'    => __( 'Coupon created', 'woocommerce' ),",
+"note": "Coupon created",
+"cite_id": "WC-S-0254"
+},
+{
+"list": "webhook-topics",
+"entry": "coupon.updated",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 72,
+"quote": "'coupon.updated'    => __( 'Coupon updated', 'woocommerce' ),",
+"note": "Coupon updated",
+"cite_id": "WC-S-0255"
+},
+{
+"list": "webhook-topics",
+"entry": "coupon.deleted",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 73,
+"quote": "'coupon.deleted'    => __( 'Coupon deleted', 'woocommerce' ),",
+"note": "Coupon deleted",
+"cite_id": "WC-S-0256"
+},
+{
+"list": "webhook-topics",
+"entry": "coupon.restored",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 74,
+"quote": "'coupon.restored'   => __( 'Coupon restored', 'woocommerce' ),",
+"note": "Coupon restored",
+"cite_id": "WC-S-0257"
+},
+{
+"list": "webhook-topics",
+"entry": "customer.created",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 75,
+"quote": "'customer.created'  => __( 'Customer created', 'woocommerce' ),",
+"note": "Customer created",
+"cite_id": "WC-S-0258"
+},
+{
+"list": "webhook-topics",
+"entry": "customer.updated",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 76,
+"quote": "'customer.updated'  => __( 'Customer updated', 'woocommerce' ),",
+"note": "Customer updated",
+"cite_id": "WC-S-0259"
+},
+{
+"list": "webhook-topics",
+"entry": "customer.deleted",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 77,
+"quote": "'customer.deleted'  => __( 'Customer deleted', 'woocommerce' ),",
+"note": "Customer deleted",
+"cite_id": "WC-S-0260"
+},
+{
+"list": "webhook-topics",
+"entry": "order.created",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 78,
+"quote": "'order.created'     => __( 'Order created', 'woocommerce' ),",
+"note": "Order created",
+"cite_id": "WC-S-0261"
+},
+{
+"list": "webhook-topics",
+"entry": "order.updated",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 79,
+"quote": "'order.updated'     => __( 'Order updated', 'woocommerce' ),",
+"note": "Order updated",
+"cite_id": "WC-S-0262"
+},
+{
+"list": "webhook-topics",
+"entry": "order.deleted",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 80,
+"quote": "'order.deleted'     => __( 'Order deleted', 'woocommerce' ),",
+"note": "Order deleted",
+"cite_id": "WC-S-0263"
+},
+{
+"list": "webhook-topics",
+"entry": "order.restored",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 81,
+"quote": "'order.restored'    => __( 'Order restored', 'woocommerce' ),",
+"note": "Order restored",
+"cite_id": "WC-S-0264"
+},
+{
+"list": "webhook-topics",
+"entry": "product.created",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 82,
+"quote": "'product.created'   => __( 'Product created', 'woocommerce' ),",
+"note": "Product created",
+"cite_id": "WC-S-0265"
+},
+{
+"list": "webhook-topics",
+"entry": "product.updated",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 83,
+"quote": "'product.updated'   => __( 'Product updated', 'woocommerce' ),",
+"note": "Product updated",
+"cite_id": "WC-S-0266"
+},
+{
+"list": "webhook-topics",
+"entry": "product.deleted",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 84,
+"quote": "'product.deleted'   => __( 'Product deleted', 'woocommerce' ),",
+"note": "Product deleted",
+"cite_id": "WC-S-0267"
+},
+{
+"list": "webhook-topics",
+"entry": "product.restored",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 85,
+"quote": "'product.restored'  => __( 'Product restored', 'woocommerce' ),",
+"note": "Product restored",
+"cite_id": "WC-S-0268"
+},
+{
+"list": "webhook-topics",
+"entry": "product.published",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 86,
+"quote": "'product.published' => __( 'Product published', 'woocommerce' ),",
+"note": "Product published",
+"cite_id": "WC-S-0269"
+},
+{
+"list": "webhook-topics",
+"entry": "action",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 87,
+"quote": "'action'            => __( 'Action', 'woocommerce' ),",
+"note": "Action",
+"cite_id": "WC-S-0270"
+},
+{
+"list": "access-scopes",
+"entry": "customer",
+"path": "includes/class-wc-install.php",
+"line": 2345,
+"quote": "'customer',",
+"note": "",
+"cite_id": "WC-S-0271"
+},
+{
+"list": "access-scopes",
+"entry": "shop_manager",
+"path": "includes/class-wc-install.php",
+"line": 2354,
+"quote": "'shop_manager',",
+"note": "",
+"cite_id": "WC-S-0272"
+},
+{
+"list": "access-scopes",
+"entry": "manage_woocommerce",
+"path": "includes/class-wc-install.php",
+"line": 2418,
+"quote": "'manage_woocommerce',",
+"note": "",
+"cite_id": "WC-S-0273"
+},
+{
+"list": "access-scopes",
+"entry": "create_customers",
+"path": "includes/class-wc-install.php",
+"line": 2419,
+"quote": "'create_customers',",
+"note": "",
+"cite_id": "WC-S-0274"
+},
+{
+"list": "access-scopes",
+"entry": "view_woocommerce_reports",
+"path": "includes/class-wc-install.php",
+"line": 2420,
+"quote": "'view_woocommerce_reports',",
+"note": "",
+"cite_id": "WC-S-0275"
+},
+{
+"list": "access-scopes",
+"entry": "product, shop_order, shop_coupon",
+"path": "includes/class-wc-install.php",
+"line": 2423,
+"quote": "$capability_types = array( 'product', 'shop_order', 'shop_coupon' );",
+"note": "each type gets edit_/read_/delete_/publish_ and term capabilities from the template that follows",
+"cite_id": "WC-S-0276"
+},
+{
+"list": "access-scopes",
+"entry": "Read",
+"path": "includes/admin/settings/views/html-keys-edit.php",
+"line": 75,
+"quote": "'read'       => __( 'Read', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0277"
+},
+{
+"list": "access-scopes",
+"entry": "Write",
+"path": "includes/admin/settings/views/html-keys-edit.php",
+"line": 76,
+"quote": "'write'      => __( 'Write', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0278"
+},
+{
+"list": "access-scopes",
+"entry": "Read/Write",
+"path": "includes/admin/settings/views/html-keys-edit.php",
+"line": 77,
+"quote": "'read_write' => __( 'Read/Write', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0279"
+},
+{
+"list": "other:core-payment-gateways",
+"entry": "Direct bank transfer",
+"path": "includes/gateways/bacs/class-wc-gateway-bacs.php",
+"line": 63,
+"quote": "$this->method_title       = __( 'Direct bank transfer', 'woocommerce' );",
+"note": "WC_Gateway_BACS",
+"cite_id": "WC-S-0280"
+},
+{
+"list": "other:core-payment-gateways",
+"entry": "Check payments",
+"path": "includes/gateways/cheque/class-wc-gateway-cheque.php",
+"line": 48,
+"quote": "$this->method_title       = _x( 'Check payments', 'Check payment method', 'woocommerce' );",
+"note": "WC_Gateway_Cheque",
+"cite_id": "WC-S-0281"
+},
+{
+"list": "other:core-payment-gateways",
+"entry": "Cash on delivery",
+"path": "includes/gateways/cod/class-wc-gateway-cod.php",
+"line": 89,
+"quote": "$this->method_title       = __( 'Cash on delivery', 'woocommerce' );",
+"note": "WC_Gateway_COD",
+"cite_id": "WC-S-0282"
+},
+{
+"list": "other:core-payment-gateways",
+"entry": "PayPal Standard",
+"path": "includes/gateways/paypal/class-wc-gateway-paypal.php",
+"line": 163,
+"quote": "$this->method_title      = __( 'PayPal Standard', 'woocommerce' );",
+"note": "WC_Gateway_Paypal",
+"cite_id": "WC-S-0283"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "Flat rate (flat_rate)",
+"path": "includes/shipping/flat-rate/class-wc-shipping-flat-rate.php",
+"line": 45,
+"quote": "$this->method_title       = __( 'Flat rate', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0284"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "Free shipping (free_shipping)",
+"path": "includes/shipping/free-shipping/class-wc-shipping-free-shipping.php",
+"line": 56,
+"quote": "$this->method_title       = __( 'Free shipping', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0285"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "Flat rate (legacy) (legacy_flat_rate)",
+"path": "includes/shipping/legacy-flat-rate/class-wc-shipping-legacy-flat-rate.php",
+"line": 57,
+"quote": "$this->method_title = __( 'Flat rate (legacy)', 'woocommerce' );",
+"note": "legacy method, loaded only if enabled before 2.6",
+"cite_id": "WC-S-0286"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "Free shipping (legacy) (legacy_free_shipping)",
+"path": "includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php",
+"line": 44,
+"quote": "$this->method_title = __( 'Free shipping (legacy)', 'woocommerce' );",
+"note": "legacy method, loaded only if enabled before 2.6",
+"cite_id": "WC-S-0287"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "International flat rate (legacy) (legacy_international_delivery)",
+"path": "includes/shipping/legacy-international-delivery/class-wc-shipping-legacy-international-delivery.php",
+"line": 28,
+"quote": "$this->method_title = __( 'International flat rate (legacy)', 'woocommerce' );",
+"note": "legacy method, loaded only if enabled before 2.6",
+"cite_id": "WC-S-0288"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "Local delivery (legacy) (legacy_local_delivery)",
+"path": "includes/shipping/legacy-local-delivery/class-wc-shipping-legacy-local-delivery.php",
+"line": 44,
+"quote": "$this->method_title = __( 'Local delivery (legacy)', 'woocommerce' );",
+"note": "legacy method, loaded only if enabled before 2.6",
+"cite_id": "WC-S-0289"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "Local pickup (legacy) (legacy_local_pickup)",
+"path": "includes/shipping/legacy-local-pickup/class-wc-shipping-legacy-local-pickup.php",
+"line": 35,
+"quote": "$this->method_title = __( 'Local pickup (legacy)', 'woocommerce' );",
+"note": "legacy method, loaded only if enabled before 2.6",
+"cite_id": "WC-S-0290"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "Local pickup (local_pickup)",
+"path": "includes/shipping/local-pickup/class-wc-shipping-local-pickup.php",
+"line": 41,
+"quote": "$this->method_title       = __( 'Local pickup', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0291"
+},
+{
+"list": "other:core-shipping-methods",
+"entry": "Local pickup (pickup_location)",
+"path": "src/Blocks/Shipping/PickupLocation.php",
+"line": 31,
+"quote": "$this->method_title       = __( 'Local pickup', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0292"
+},
+{
+"list": "other:core-integrations",
+"entry": "MaxMind Geolocation",
+"path": "includes/integrations/maxmind-geolocation/class-wc-integration-maxmind-geolocation.php",
+"line": 34,
+"quote": "$this->method_title       = __( 'MaxMind Geolocation', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0293"
+},
+{
+"list": "other:emails",
+"entry": "New order (WC_Email_New_Order)",
+"path": "includes/emails/class-wc-email-new-order.php",
+"line": 33,
+"quote": "$this->title          = __( 'New order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0294"
+},
+{
+"list": "other:emails",
+"entry": "Cancelled order (WC_Email_Cancelled_Order)",
+"path": "includes/emails/class-wc-email-cancelled-order.php",
+"line": 33,
+"quote": "$this->title          = __( 'Cancelled order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0295"
+},
+{
+"list": "other:emails",
+"entry": "Cancelled order (WC_Email_Customer_Cancelled_Order)",
+"path": "includes/emails/class-wc-email-customer-cancelled-order.php",
+"line": 34,
+"quote": "$this->title          = __( 'Cancelled order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0296"
+},
+{
+"list": "other:emails",
+"entry": "Failed order (WC_Email_Failed_Order)",
+"path": "includes/emails/class-wc-email-failed-order.php",
+"line": 33,
+"quote": "$this->title          = __( 'Failed order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0297"
+},
+{
+"list": "other:emails",
+"entry": "Failed order (WC_Email_Customer_Failed_Order)",
+"path": "includes/emails/class-wc-email-customer-failed-order.php",
+"line": 32,
+"quote": "$this->title          = __( 'Failed order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0298"
+},
+{
+"list": "other:emails",
+"entry": "Order on-hold (WC_Email_Customer_On_Hold_Order)",
+"path": "includes/emails/class-wc-email-customer-on-hold-order.php",
+"line": 32,
+"quote": "$this->title          = __( 'Order on-hold', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0299"
+},
+{
+"list": "other:emails",
+"entry": "Processing order (WC_Email_Customer_Processing_Order)",
+"path": "includes/emails/class-wc-email-customer-processing-order.php",
+"line": 33,
+"quote": "$this->title          = __( 'Processing order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0300"
+},
+{
+"list": "other:emails",
+"entry": "Completed order (WC_Email_Customer_Completed_Order)",
+"path": "includes/emails/class-wc-email-customer-completed-order.php",
+"line": 32,
+"quote": "$this->title          = __( 'Completed order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0301"
+},
+{
+"list": "other:emails",
+"entry": "Refunded order (WC_Email_Customer_Refunded_Order)",
+"path": "includes/emails/class-wc-email-customer-refunded-order.php",
+"line": 49,
+"quote": "$this->title          = __( 'Refunded order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0302"
+},
+{
+"list": "other:emails",
+"entry": "Order details (WC_Email_Customer_Invoice)",
+"path": "includes/emails/class-wc-email-customer-invoice.php",
+"line": 38,
+"quote": "$this->title          = __( 'Order details', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0303"
+},
+{
+"list": "other:emails",
+"entry": "Customer note (WC_Email_Customer_Note)",
+"path": "includes/emails/class-wc-email-customer-note.php",
+"line": 39,
+"quote": "$this->title          = __( 'Customer note', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0304"
+},
+{
+"list": "other:emails",
+"entry": "Reset password (WC_Email_Customer_Reset_Password)",
+"path": "includes/emails/class-wc-email-customer-reset-password.php",
+"line": 70,
+"quote": "$this->title       = __( 'Reset password', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0305"
+},
+{
+"list": "other:emails",
+"entry": "New account (WC_Email_Customer_New_Account)",
+"path": "includes/emails/class-wc-email-customer-new-account.php",
+"line": 75,
+"quote": "$this->title           = __( 'New account', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0306"
+},
+{
+"list": "other:emails",
+"entry": "Payment gateway enabled (WC_Email_Admin_Payment_Gateway_Enabled)",
+"path": "includes/emails/class-wc-email-admin-payment-gateway-enabled.php",
+"line": 60,
+"quote": "$this->title          = __( 'Payment gateway enabled', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0307"
+},
+{
+"list": "other:emails",
+"entry": "POS completed order (WC_Email_Customer_POS_Completed_Order)",
+"path": "includes/emails/class-wc-email-customer-pos-completed-order.php",
+"line": 38,
+"quote": "$this->title          = __( 'POS completed order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0308"
+},
+{
+"list": "other:emails",
+"entry": "POS refunded order (WC_Email_Customer_POS_Refunded_Order)",
+"path": "includes/emails/class-wc-email-customer-pos-refunded-order.php",
+"line": 52,
+"quote": "$this->title          = __( 'POS refunded order', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0309"
+},
+{
+"list": "other:emails",
+"entry": "Fulfillment created (WC_Email_Customer_Fulfillment_Created)",
+"path": "includes/emails/class-wc-email-customer-fulfillment-created.php",
+"line": 40,
+"quote": "$this->title          = __( 'Fulfillment created', 'woocommerce' );",
+"note": "feature-gated",
+"cite_id": "WC-S-0310"
+},
+{
+"list": "other:emails",
+"entry": "Fulfillment updated (WC_Email_Customer_Fulfillment_Updated)",
+"path": "includes/emails/class-wc-email-customer-fulfillment-updated.php",
+"line": 47,
+"quote": "$this->title          = __( 'Fulfillment updated', 'woocommerce' );",
+"note": "feature-gated",
+"cite_id": "WC-S-0311"
+},
+{
+"list": "other:emails",
+"entry": "Fulfillment deleted (WC_Email_Customer_Fulfillment_Deleted)",
+"path": "includes/emails/class-wc-email-customer-fulfillment-deleted.php",
+"line": 40,
+"quote": "$this->title          = __( 'Fulfillment deleted', 'woocommerce' );",
+"note": "feature-gated",
+"cite_id": "WC-S-0312"
+},
+{
+"list": "other:emails",
+"entry": "Review request (WC_Email_Customer_Review_Request)",
+"path": "includes/emails/class-wc-email-customer-review-request.php",
+"line": 52,
+"quote": "$this->title          = __( 'Review request', 'woocommerce' );",
+"note": "feature-gated",
+"cite_id": "WC-S-0313"
+},
+{
+"list": "other:emails",
+"entry": "Order withdrawal request received (WC_Email_Customer_Order_Withdrawal_Requested)",
+"path": "includes/emails/class-wc-email-customer-order-withdrawal-requested.php",
+"line": 50,
+"quote": "$this->title          = __( 'Order withdrawal request received', 'woocommerce' );",
+"note": "feature-gated",
+"cite_id": "WC-S-0314"
+},
+{
+"list": "other:emails",
+"entry": "Order withdrawal request (WC_Email_Order_Withdrawal_Requested)",
+"path": "includes/emails/class-wc-email-order-withdrawal-requested.php",
+"line": 71,
+"quote": "$this->title          = __( 'Order withdrawal request', 'woocommerce' );",
+"note": "feature-gated",
+"cite_id": "WC-S-0315"
+},
+{
+"list": "other:emails",
+"entry": "Partially refunded order (WC_Email_Customer_Partially_Refunded_Order)",
+"path": "includes/emails/class-wc-email-customer-partially-refunded-order.php",
+"line": 45,
+"quote": "$this->title          = __( 'Partially refunded order', 'woocommerce' );",
+"note": "feature-gated",
+"cite_id": "WC-S-0316"
+},
+{
+"list": "other:order-statuses",
+"entry": "Pending payment",
+"path": "includes/wc-order-functions.php",
+"line": 106,
+"quote": "OrderInternalStatus::PENDING    => _x( 'Pending payment', 'Order status', 'woocommerce' ),",
+"note": "OrderInternalStatus::PENDING",
+"cite_id": "WC-S-0317"
+},
+{
+"list": "other:order-statuses",
+"entry": "Processing",
+"path": "includes/wc-order-functions.php",
+"line": 107,
+"quote": "OrderInternalStatus::PROCESSING => _x( 'Processing', 'Order status', 'woocommerce' ),",
+"note": "OrderInternalStatus::PROCESSING",
+"cite_id": "WC-S-0318"
+},
+{
+"list": "other:order-statuses",
+"entry": "On hold",
+"path": "includes/wc-order-functions.php",
+"line": 108,
+"quote": "OrderInternalStatus::ON_HOLD    => _x( 'On hold', 'Order status', 'woocommerce' ),",
+"note": "OrderInternalStatus::ON_HOLD",
+"cite_id": "WC-S-0319"
+},
+{
+"list": "other:order-statuses",
+"entry": "Completed",
+"path": "includes/wc-order-functions.php",
+"line": 109,
+"quote": "OrderInternalStatus::COMPLETED  => _x( 'Completed', 'Order status', 'woocommerce' ),",
+"note": "OrderInternalStatus::COMPLETED",
+"cite_id": "WC-S-0320"
+},
+{
+"list": "other:order-statuses",
+"entry": "Cancelled",
+"path": "includes/wc-order-functions.php",
+"line": 110,
+"quote": "OrderInternalStatus::CANCELLED  => _x( 'Cancelled', 'Order status', 'woocommerce' ),",
+"note": "OrderInternalStatus::CANCELLED",
+"cite_id": "WC-S-0321"
+},
+{
+"list": "other:order-statuses",
+"entry": "Refunded",
+"path": "includes/wc-order-functions.php",
+"line": 111,
+"quote": "OrderInternalStatus::REFUNDED   => _x( 'Refunded', 'Order status', 'woocommerce' ),",
+"note": "OrderInternalStatus::REFUNDED",
+"cite_id": "WC-S-0322"
+},
+{
+"list": "other:order-statuses",
+"entry": "Failed",
+"path": "includes/wc-order-functions.php",
+"line": 112,
+"quote": "OrderInternalStatus::FAILED     => _x( 'Failed', 'Order status', 'woocommerce' ),",
+"note": "OrderInternalStatus::FAILED",
+"cite_id": "WC-S-0323"
+},
+{
+"list": "other:order-statuses",
+"entry": "Draft (checkout-draft)",
+"path": "src/Blocks/Domain/Services/DraftOrders.php",
+"line": 99,
+"quote": "$statuses[ self::DB_STATUS ] = _x( 'Draft', 'Order status', 'woocommerce' );",
+"note": "",
+"cite_id": "WC-S-0324"
+},
+{
+"list": "other:features",
+"entry": "WooCommerce Analytics",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 320,
+"quote": "'name'                         => __( 'WooCommerce Analytics', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0325"
+},
+{
+"list": "other:features",
+"entry": "Product gallery videos",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 330,
+"quote": "'name'                         => __( 'Product gallery videos', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0326"
+},
+{
+"list": "other:features",
+"entry": "Cart & Checkout Blocks",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 340,
+"quote": "'name'                         => __( 'Cart & Checkout Blocks', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0327"
+},
+{
+"list": "other:features",
+"entry": "Rate limit Checkout",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 347,
+"quote": "'name'                         => __( 'Rate limit Checkout', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0328"
+},
+{
+"list": "other:features",
+"entry": "Marketplace",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 360,
+"quote": "'name'                         => __( 'Marketplace', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0329"
+},
+{
+"list": "other:features",
+"entry": "Order withdrawal",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 374,
+"quote": "'name'                         => __( 'Order withdrawal', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0330"
+},
+{
+"list": "other:features",
+"entry": "Order Attribution",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 385,
+"quote": "'name'                         => __( 'Order Attribution', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0331"
+},
+{
+"list": "other:features",
+"entry": "Site visibility badge",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 397,
+"quote": "'name'                         => __( 'Site visibility badge', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0332"
+},
+{
+"list": "other:features",
+"entry": "HPOS Full text search indexes",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 410,
+"quote": "'name'                         => __( 'HPOS Full text search indexes', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0333"
+},
+{
+"list": "other:features",
+"entry": "HPOS Data Caching",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 422,
+"quote": "'name'                         => __( 'HPOS Data Caching', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0334"
+},
+{
+"list": "other:features",
+"entry": "Remote Logging",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 435,
+"quote": "'name'                         => __( 'Remote Logging', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0335"
+},
+{
+"list": "other:features",
+"entry": "Deferred emails",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 470,
+"quote": "'name'                         => __( 'Deferred emails', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0336"
+},
+{
+"list": "other:features",
+"entry": "Customer review request (beta)",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 480,
+"quote": "'name'                         => __( 'Customer review request (beta)', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0337"
+},
+{
+"list": "other:features",
+"entry": "Email improvements",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 492,
+"quote": "'name'                         => __( 'Email improvements', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0338"
+},
+{
+"list": "other:features",
+"entry": "Blueprint (beta)",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 512,
+"quote": "'name'                         => __( 'Blueprint (beta)', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0339"
+},
+{
+"list": "other:features",
+"entry": "Block Email Editor (alpha)",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 533,
+"quote": "'name'                         => __( 'Block Email Editor (alpha)', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0340"
+},
+{
+"list": "other:features",
+"entry": "Variation gallery",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 553,
+"quote": "'name'                         => __( 'Variation gallery', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0341"
+},
+{
+"list": "other:features",
+"entry": "Color swatches for attributes",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 564,
+"quote": "'name'                         => __( 'Color swatches for attributes', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0342"
+},
+{
+"list": "other:features",
+"entry": "Point of Sale",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 577,
+"quote": "'name'                         => __( 'Point of Sale', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0343"
+},
+{
+"list": "other:features",
+"entry": "POS staff",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 591,
+"quote": "'name'                         => __( 'POS staff', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0344"
+},
+{
+"list": "other:features",
+"entry": "Order Fulfillments",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 605,
+"quote": "'name'                         => __( 'Order Fulfillments', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0345"
+},
+{
+"list": "other:features",
+"entry": "WooCommerce MCP",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 616,
+"quote": "'name'                         => __( 'WooCommerce MCP', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0346"
+},
+{
+"list": "other:features",
+"entry": "Clear Customer Sessions When Empty",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 625,
+"quote": "'name'                         => __( 'Clear Customer Sessions When Empty', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0347"
+},
+{
+"list": "other:features",
+"entry": "Push Notifications",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 636,
+"quote": "'name'                         => __( 'Push Notifications', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0348"
+},
+{
+"list": "other:features",
+"entry": "REST API Caching",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 650,
+"quote": "'name'                         => __( 'REST API Caching', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0349"
+},
+{
+"list": "other:features",
+"entry": "Save for Later in Cart",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 664,
+"quote": "'name'                         => __( 'Save for Later in Cart', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0350"
+},
+{
+"list": "other:features",
+"entry": "Wishlists",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 677,
+"quote": "'name'                         => __( 'Wishlists', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0351"
+},
+{
+"list": "other:features",
+"entry": "Cache Product Objects",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 688,
+"quote": "'name'                         => __( 'Cache Product Objects', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0352"
+},
+{
+"list": "other:features",
+"entry": "Back in Stock Notifications",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 699,
+"quote": "'name'                         => __( 'Back in Stock Notifications', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0353"
+},
+{
+"list": "other:features",
+"entry": "Unified block editor assets",
+"path": "src/Internal/Features/FeaturesController.php",
+"line": 711,
+"quote": "'name'                         => __( 'Unified block editor assets', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0354"
+},
+{
+"list": "other:features",
+"entry": "High-Performance order storage",
+"path": "src/Internal/DataStores/Orders/CustomOrdersTableController.php",
+"line": 625,
+"quote": "__( 'High-Performance order storage', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0355"
+},
+{
+"list": "other:features",
+"entry": "Cost of Goods Sold",
+"path": "src/Internal/CostOfGoodsSold/CostOfGoodsSoldController.php",
+"line": 65,
+"quote": "__( 'Cost of Goods Sold', 'woocommerce' ),",
+"note": "",
+"cite_id": "WC-S-0356"
+},
+{
+"list": "other:privacy-exporters-erasers",
+"entry": "add_exporter: WooCommerce Customer Data",
+"path": "includes/class-wc-privacy.php",
+"line": 65,
+"quote": "$this->add_exporter( 'woocommerce-customer-data', __( 'WooCommerce Customer Data', 'woocommerce' ), array( 'WC_Privacy_Exporters', 'customer_data_exporter' ) );",
+"note": "",
+"cite_id": "WC-S-0357"
+},
+{
+"list": "other:privacy-exporters-erasers",
+"entry": "add_exporter: WooCommerce Customer Orders",
+"path": "includes/class-wc-privacy.php",
+"line": 66,
+"quote": "$this->add_exporter( 'woocommerce-customer-orders', __( 'WooCommerce Customer Orders', 'woocommerce' ), array( 'WC_Privacy_Exporters', 'order_data_exporter' ) );",
+"note": "",
+"cite_id": "WC-S-0358"
+},
+{
+"list": "other:privacy-exporters-erasers",
+"entry": "add_exporter: WooCommerce Customer Downloads",
+"path": "includes/class-wc-privacy.php",
+"line": 67,
+"quote": "$this->add_exporter( 'woocommerce-customer-downloads', __( 'WooCommerce Customer Downloads', 'woocommerce' ), array( 'WC_Privacy_Exporters', 'download_data_exporter' ) );",
+"note": "",
+"cite_id": "WC-S-0359"
+},
+{
+"list": "other:privacy-exporters-erasers",
+"entry": "add_exporter: WooCommerce Customer Payment Tokens",
+"path": "includes/class-wc-privacy.php",
+"line": 68,
+"quote": "$this->add_exporter( 'woocommerce-customer-tokens', __( 'WooCommerce Customer Payment Tokens', 'woocommerce' ), array( 'WC_Privacy_Exporters', 'customer_tokens_exporter' ) );",
+"note": "",
+"cite_id": "WC-S-0360"
+},
+{
+"list": "other:privacy-exporters-erasers",
+"entry": "add_eraser: WooCommerce Customer Data",
+"path": "includes/class-wc-privacy.php",
+"line": 71,
+"quote": "$this->add_eraser( 'woocommerce-customer-data', __( 'WooCommerce Customer Data', 'woocommerce' ), array( 'WC_Privacy_Erasers', 'customer_data_eraser' ) );",
+"note": "",
+"cite_id": "WC-S-0361"
+},
+{
+"list": "other:privacy-exporters-erasers",
+"entry": "add_eraser: WooCommerce Customer Orders",
+"path": "includes/class-wc-privacy.php",
+"line": 72,
+"quote": "$this->add_eraser( 'woocommerce-customer-orders', __( 'WooCommerce Customer Orders', 'woocommerce' ), array( 'WC_Privacy_Erasers', 'order_data_eraser' ) );",
+"note": "",
+"cite_id": "WC-S-0362"
+},
+{
+"list": "other:privacy-exporters-erasers",
+"entry": "add_eraser: WooCommerce Customer Downloads",
+"path": "includes/class-wc-privacy.php",
+"line": 73,
+"quote": "$this->add_eraser( 'woocommerce-customer-downloads', __( 'WooCommerce Customer Downloads', 'woocommerce' ), array( 'WC_Privacy_Erasers', 'download_data_eraser' ) );",
+"note": "",
+"cite_id": "WC-S-0363"
+},
+{
+"list": "other:privacy-exporters-erasers",
+"entry": "add_eraser: WooCommerce Customer Payment Tokens",
+"path": "includes/class-wc-privacy.php",
+"line": 74,
+"quote": "$this->add_eraser( 'woocommerce-customer-tokens', __( 'WooCommerce Customer Payment Tokens', 'woocommerce' ), array( 'WC_Privacy_Erasers', 'customer_tokens_eraser' ) );",
+"note": "",
+"cite_id": "WC-S-0364"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "airwallex",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 24,
+"quote": "const AIRWALLEX         = 'airwallex';",
+"note": "const AIRWALLEX",
+"cite_id": "WC-S-0365"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "antom",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 25,
+"quote": "const ANTOM             = 'antom';",
+"note": "const ANTOM",
+"cite_id": "WC-S-0366"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "mercado_pago",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 26,
+"quote": "const MERCADO_PAGO      = 'mercado_pago';",
+"note": "const MERCADO_PAGO",
+"cite_id": "WC-S-0367"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "mollie",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 27,
+"quote": "const MOLLIE            = 'mollie';",
+"note": "const MOLLIE",
+"cite_id": "WC-S-0368"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "payfast",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 28,
+"quote": "const PAYFAST           = 'payfast';",
+"note": "const PAYFAST",
+"cite_id": "WC-S-0369"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "paymob",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 29,
+"quote": "const PAYMOB            = 'paymob';",
+"note": "const PAYMOB",
+"cite_id": "WC-S-0370"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "paypal_full_stack",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 30,
+"quote": "const PAYPAL_FULL_STACK = 'paypal_full_stack';",
+"note": "const PAYPAL_FULL_STACK",
+"cite_id": "WC-S-0371"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "paypal_wallet",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 31,
+"quote": "const PAYPAL_WALLET     = 'paypal_wallet';",
+"note": "const PAYPAL_WALLET",
+"cite_id": "WC-S-0372"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "payoneer",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 32,
+"quote": "const PAYONEER          = 'payoneer';",
+"note": "const PAYONEER",
+"cite_id": "WC-S-0373"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "paystack",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 33,
+"quote": "const PAYSTACK          = 'paystack';",
+"note": "const PAYSTACK",
+"cite_id": "WC-S-0374"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "paytrail",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 34,
+"quote": "const PAYTRAIL          = 'paytrail';",
+"note": "const PAYTRAIL",
+"cite_id": "WC-S-0375"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "payu_india",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 35,
+"quote": "const PAYU_INDIA        = 'payu_india';",
+"note": "const PAYU_INDIA",
+"cite_id": "WC-S-0376"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "razorpay",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 36,
+"quote": "const RAZORPAY          = 'razorpay';",
+"note": "const RAZORPAY",
+"cite_id": "WC-S-0377"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "square",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 37,
+"quote": "const SQUARE            = 'square';",
+"note": "const SQUARE",
+"cite_id": "WC-S-0378"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "stripe",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 38,
+"quote": "const STRIPE            = 'stripe';",
+"note": "const STRIPE",
+"cite_id": "WC-S-0379"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "tilopay",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 39,
+"quote": "const TILOPAY           = 'tilopay';",
+"note": "const TILOPAY",
+"cite_id": "WC-S-0380"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "viva_wallet",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 40,
+"quote": "const VIVA_WALLET       = 'viva_wallet';",
+"note": "const VIVA_WALLET",
+"cite_id": "WC-S-0381"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "woopayments",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 41,
+"quote": "const WOOPAYMENTS       = 'woopayments';",
+"note": "const WOOPAYMENTS",
+"cite_id": "WC-S-0382"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "amazon_pay",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 42,
+"quote": "const AMAZON_PAY        = 'amazon_pay';",
+"note": "const AMAZON_PAY",
+"cite_id": "WC-S-0383"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "affirm",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 43,
+"quote": "const AFFIRM            = 'affirm';",
+"note": "const AFFIRM",
+"cite_id": "WC-S-0384"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "afterpay",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 44,
+"quote": "const AFTERPAY          = 'afterpay';",
+"note": "const AFTERPAY",
+"cite_id": "WC-S-0385"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "clearpay",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 45,
+"quote": "const CLEARPAY          = 'clearpay';",
+"note": "const CLEARPAY",
+"cite_id": "WC-S-0386"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "klarna",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 46,
+"quote": "const KLARNA            = 'klarna';",
+"note": "const KLARNA",
+"cite_id": "WC-S-0387"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "kustom_checkout",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 47,
+"quote": "const KUSTOM_CHECKOUT   = 'kustom_checkout';",
+"note": "const KUSTOM_CHECKOUT",
+"cite_id": "WC-S-0388"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "helcim",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 48,
+"quote": "const HELCIM            = 'helcim';",
+"note": "const HELCIM",
+"cite_id": "WC-S-0389"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "komoju",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 49,
+"quote": "const KOMOJU            = 'komoju';",
+"note": "const KOMOJU",
+"cite_id": "WC-S-0390"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "monei",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 50,
+"quote": "const MONEI             = 'monei';",
+"note": "const MONEI",
+"cite_id": "WC-S-0391"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "coinbase",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 51,
+"quote": "const COINBASE          = 'coinbase';",
+"note": "const COINBASE",
+"cite_id": "WC-S-0392"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "billie",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 52,
+"quote": "const BILLIE            = 'billie';",
+"note": "const BILLIE",
+"cite_id": "WC-S-0393"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "bolt_checkout",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 53,
+"quote": "const BOLT              = 'bolt_checkout';",
+"note": "const BOLT",
+"cite_id": "WC-S-0394"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "authorize_net",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 54,
+"quote": "const AUTHORIZE_NET     = 'authorize_net';",
+"note": "const AUTHORIZE_NET",
+"cite_id": "WC-S-0395"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "depay",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 55,
+"quote": "const DEPAY             = 'depay';",
+"note": "const DEPAY",
+"cite_id": "WC-S-0396"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "elavon",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 56,
+"quote": "const ELAVON            = 'elavon';",
+"note": "const ELAVON",
+"cite_id": "WC-S-0397"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "eway",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 57,
+"quote": "const EWAY              = 'eway';",
+"note": "const EWAY",
+"cite_id": "WC-S-0398"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "fortis",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 58,
+"quote": "const FORTISPAY         = 'fortis';",
+"note": "const FORTISPAY",
+"cite_id": "WC-S-0399"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "gocardless",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 59,
+"quote": "const GOCARDLESS        = 'gocardless';",
+"note": "const GOCARDLESS",
+"cite_id": "WC-S-0400"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "nexi_checkout",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 60,
+"quote": "const NEXI_CHECKOUT     = 'nexi_checkout';",
+"note": "const NEXI_CHECKOUT",
+"cite_id": "WC-S-0401"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "paypal_zettle",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 61,
+"quote": "const PAYPAL_ZETTLE     = 'paypal_zettle';",
+"note": "const PAYPAL_ZETTLE",
+"cite_id": "WC-S-0402"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "rapyd",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 62,
+"quote": "const RAPYD             = 'rapyd';",
+"note": "const RAPYD",
+"cite_id": "WC-S-0403"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "paypal_braintree",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 63,
+"quote": "const PAYPAL_BRAINTREE  = 'paypal_braintree';",
+"note": "const PAYPAL_BRAINTREE",
+"cite_id": "WC-S-0404"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "visa_as",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 64,
+"quote": "const VISA              = 'visa_as';",
+"note": "const VISA",
+"cite_id": "WC-S-0405"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "ngenius",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 65,
+"quote": "const NGENIUS           = 'ngenius';",
+"note": "const NGENIUS",
+"cite_id": "WC-S-0406"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "mastercard",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 66,
+"quote": "const MASTERCARD        = 'mastercard';",
+"note": "const MASTERCARD",
+"cite_id": "WC-S-0407"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "evergreen",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 67,
+"quote": "const EVERGREEN         = 'evergreen';",
+"note": "const EVERGREEN",
+"cite_id": "WC-S-0408"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "mypos",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 68,
+"quote": "const MYPOS             = 'mypos';",
+"note": "const MYPOS",
+"cite_id": "WC-S-0409"
+},
+{
+"list": "other:payment-extension-suggestions",
+"entry": "heliopay",
+"path": "src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php",
+"line": 77,
+"quote": "const HELIOPAY = 'heliopay';",
+"note": "const HELIOPAY",
+"cite_id": "WC-S-0410"
+},
+{
+"list": "other:shipping-partner-suggestions",
+"entry": "ShipStation",
+"path": "src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php",
+"line": 49,
+"quote": "'name'                    => 'ShipStation',",
+"note": "",
+"cite_id": "WC-S-0411"
+},
+{
+"list": "other:shipping-partner-suggestions",
+"entry": "Skydropx",
+"path": "src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php",
+"line": 96,
+"quote": "'name'                    => 'Skydropx',",
+"note": "",
+"cite_id": "WC-S-0412"
+},
+{
+"list": "other:shipping-partner-suggestions",
+"entry": "Envia",
+"path": "src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php",
+"line": 113,
+"quote": "'name'                    => 'Envia',",
+"note": "",
+"cite_id": "WC-S-0413"
+},
+{
+"list": "other:shipping-partner-suggestions",
+"entry": "Easyship",
+"path": "src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php",
+"line": 129,
+"quote": "'name'                    => 'Easyship',",
+"note": "",
+"cite_id": "WC-S-0414"
+},
+{
+"list": "other:shipping-partner-suggestions",
+"entry": "Packlink",
+"path": "src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php",
+"line": 173,
+"quote": "'name'                    => 'Packlink',",
+"note": "",
+"cite_id": "WC-S-0415"
+},
+{
+"list": "other:shipping-partner-suggestions",
+"entry": "WooCommerce Shipping",
+"path": "src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php",
+"line": 223,
+"quote": "'name'                    => 'WooCommerce Shipping',",
+"note": "",
+"cite_id": "WC-S-0416"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Set up additional payment options",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/AdditionalPayments.php",
+"line": 43,
+"quote": "'Set up additional payment options',",
+"note": "AdditionalPayments",
+"cite_id": "WC-S-0417"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Choose your theme",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/Appearance.php",
+"line": 40,
+"quote": "return __( 'Choose your theme', 'woocommerce' );",
+"note": "Appearance",
+"cite_id": "WC-S-0418"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Customize your store",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/CustomizeStore.php",
+"line": 89,
+"quote": "return __( 'Customize your store', 'woocommerce' );",
+"note": "CustomizeStore",
+"cite_id": "WC-S-0419"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Get your products shipped",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/ExperimentalShippingRecommendation.php",
+"line": 29,
+"quote": "return __( 'Get your products shipped', 'woocommerce' );",
+"note": "ExperimentalShippingRecommendation",
+"cite_id": "WC-S-0420"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Enhance your store with extensions",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/ExtendStore.php",
+"line": 26,
+"quote": "return __( 'Enhance your store with extensions', 'woocommerce' );",
+"note": "ExtendStore",
+"cite_id": "WC-S-0421"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Get the free WooCommerce mobile app",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/GetMobileApp.php",
+"line": 27,
+"quote": "return __( 'Get the free WooCommerce mobile app', 'woocommerce' );",
+"note": "GetMobileApp",
+"cite_id": "WC-S-0422"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Launch your store",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/LaunchYourStore.php",
+"line": 55,
+"quote": "return __( 'Launch your store', 'woocommerce' );",
+"note": "LaunchYourStore",
+"cite_id": "WC-S-0423"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Grow your business",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/Marketing.php",
+"line": 82,
+"quote": "return __( 'Grow your business', 'woocommerce' );",
+"note": "Marketing",
+"cite_id": "WC-S-0424"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Set up payments",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/Payments.php",
+"line": 60,
+"quote": "return __( 'Set up payments', 'woocommerce' );",
+"note": "Payments",
+"cite_id": "WC-S-0425"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Import your products",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/Products.php",
+"line": 105,
+"quote": "return __( 'Import your products', 'woocommerce' );",
+"note": "Products",
+"cite_id": "WC-S-0426"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Review shipping options",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/ReviewShippingOptions.php",
+"line": 26,
+"quote": "return __( 'Review shipping options', 'woocommerce' );",
+"note": "ReviewShippingOptions",
+"cite_id": "WC-S-0427"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Select your shipping options",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/Shipping.php",
+"line": 65,
+"quote": "return __( 'Select your shipping options', 'woocommerce' );",
+"note": "Shipping",
+"cite_id": "WC-S-0428"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "You created %s",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/StoreCreation.php",
+"line": 29,
+"quote": "return sprintf( __( 'You created %s', 'woocommerce' ), get_bloginfo( 'name' ) );",
+"note": "StoreCreation",
+"cite_id": "WC-S-0429"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "You added store details",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/StoreDetails.php",
+"line": 47,
+"quote": "return __( 'You added store details', 'woocommerce' );",
+"note": "StoreDetails",
+"cite_id": "WC-S-0430"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Collect sales tax",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/Tax.php",
+"line": 88,
+"quote": "return __( 'Collect sales tax', 'woocommerce' );",
+"note": "Tax",
+"cite_id": "WC-S-0431"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Discover ways of extending your store with a tour of the Woo Marketplace",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/TourInAppMarketplace.php",
+"line": 27,
+"quote": "'Discover ways of extending your store with a tour of the Woo Marketplace',",
+"note": "TourInAppMarketplace",
+"cite_id": "WC-S-0432"
+},
+{
+"list": "other:onboarding-tasks",
+"entry": "Get paid with WooPayments",
+"path": "src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php",
+"line": 62,
+"quote": "return sprintf( __( 'Get paid with %s', 'woocommerce' ), 'WooPayments' );",
+"note": "WooCommercePayments",
+"cite_id": "WC-S-0433"
+},
+{
+"list": "extension-points",
+"entry": "WC_Payment_Gateway",
+"path": "includes/abstracts/abstract-wc-payment-gateway.php",
+"line": 31,
+"quote": "abstract class WC_Payment_Gateway extends WC_Settings_API {",
+"note": "",
+"cite_id": "WC-S-0434"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_payment_gateways",
+"path": "includes/class-wc-payment-gateways.php",
+"line": 92,
+"quote": "$load_gateways = apply_filters( 'woocommerce_payment_gateways', $load_gateways );",
+"note": "",
+"cite_id": "WC-S-0435"
+},
+{
+"list": "extension-points",
+"entry": "WC_Payment_Gateway_CC",
+"path": "includes/gateways/class-wc-payment-gateway-cc.php",
+"line": 20,
+"quote": "class WC_Payment_Gateway_CC extends WC_Payment_Gateway {",
+"note": "",
+"cite_id": "WC-S-0436"
+},
+{
+"list": "extension-points",
+"entry": "WC_Payment_Gateway_ECheck",
+"path": "includes/gateways/class-wc-payment-gateway-echeck.php",
+"line": 20,
+"quote": "class WC_Payment_Gateway_ECheck extends WC_Payment_Gateway {",
+"note": "",
+"cite_id": "WC-S-0437"
+},
+{
+"list": "extension-points",
+"entry": "WC_Payment_Token",
+"path": "includes/abstracts/abstract-wc-payment-token.php",
+"line": 28,
+"quote": "abstract class WC_Payment_Token extends WC_Legacy_Payment_Token {",
+"note": "",
+"cite_id": "WC-S-0438"
+},
+{
+"list": "extension-points",
+"entry": "WC_Shipping_Method",
+"path": "includes/abstracts/abstract-wc-shipping-method.php",
+"line": 24,
+"quote": "abstract class WC_Shipping_Method extends WC_Settings_API {",
+"note": "",
+"cite_id": "WC-S-0439"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_shipping_methods",
+"path": "includes/class-wc-shipping.php",
+"line": 152,
+"quote": "return apply_filters( 'woocommerce_shipping_methods', $shipping_methods );",
+"note": "",
+"cite_id": "WC-S-0440"
+},
+{
+"list": "extension-points",
+"entry": "WC_Integration",
+"path": "includes/abstracts/abstract-wc-integration.php",
+"line": 27,
+"quote": "abstract class WC_Integration extends WC_Settings_API {",
+"note": "",
+"cite_id": "WC-S-0441"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_integrations",
+"path": "includes/class-wc-integrations.php",
+"line": 36,
+"quote": "$load_integrations = apply_filters( 'woocommerce_integrations', $load_integrations );",
+"note": "",
+"cite_id": "WC-S-0442"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_email_classes",
+"path": "includes/class-wc-emails.php",
+"line": 339,
+"quote": "$this->emails = apply_filters( 'woocommerce_email_classes', $this->emails );",
+"note": "",
+"cite_id": "WC-S-0443"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_get_settings_pages",
+"path": "includes/admin/class-wc-admin-settings.php",
+"line": 64,
+"quote": "self::$settings = apply_filters( 'woocommerce_get_settings_pages', $settings );",
+"note": "",
+"cite_id": "WC-S-0444"
+},
+{
+"list": "extension-points",
+"entry": "WC_Address_Provider",
+"path": "includes/abstracts/abstract-wc-address-provider.php",
+"line": 17,
+"quote": "abstract class WC_Address_Provider {",
+"note": "",
+"cite_id": "WC-S-0445"
+},
+{
+"list": "extension-points",
+"entry": "WC_Log_Handler",
+"path": "includes/abstracts/abstract-wc-log-handler.php",
+"line": 19,
+"quote": "abstract class WC_Log_Handler implements WC_Log_Handler_Interface {",
+"note": "",
+"cite_id": "WC-S-0446"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_webhook_topics",
+"path": "includes/admin/settings/views/html-webhooks-edit.php",
+"line": 68,
+"quote": "'woocommerce_webhook_topics',",
+"note": "",
+"cite_id": "WC-S-0447"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_rest_api_get_rest_namespaces",
+"path": "includes/rest-api/Server.php",
+"line": 93,
+"quote": "return apply_filters( 'woocommerce_rest_api_get_rest_namespaces', $namespaces );",
+"note": "",
+"cite_id": "WC-S-0448"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_admin_rest_controllers",
+"path": "src/Admin/API/Init.php",
+"line": 119,
+"quote": "$controllers = apply_filters( 'woocommerce_admin_rest_controllers', $controllers );",
+"note": "",
+"cite_id": "WC-S-0449"
+},
+{
+"list": "extension-points",
+"entry": "wc_admin_register_page",
+"path": "includes/react-admin/page-controller-functions.php",
+"line": 27,
+"quote": "function wc_admin_register_page( $options ) {",
+"note": "",
+"cite_id": "WC-S-0450"
+},
+{
+"list": "extension-points",
+"entry": "IntegrationInterface",
+"path": "src/Blocks/Integrations/IntegrationInterface.php",
+"line": 9,
+"quote": "interface IntegrationInterface {",
+"note": "",
+"cite_id": "WC-S-0451"
+},
+{
+"list": "extension-points",
+"entry": "AbstractPaymentMethodType",
+"path": "src/Blocks/Payments/Integrations/AbstractPaymentMethodType.php",
+"line": 11,
+"quote": "abstract class AbstractPaymentMethodType implements PaymentMethodTypeInterface {",
+"note": "",
+"cite_id": "WC-S-0452"
+},
+{
+"list": "extension-points",
+"entry": "ExtendSchema",
+"path": "src/StoreApi/Schemas/ExtendSchema.php",
+"line": 20,
+"quote": "final class ExtendSchema {",
+"note": "",
+"cite_id": "WC-S-0453"
+},
+{
+"list": "extension-points",
+"entry": "woocommerce_register_additional_checkout_field",
+"path": "src/Blocks/Domain/Services/functions.php",
+"line": 13,
+"quote": "function woocommerce_register_additional_checkout_field( $options ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore",
+"note": "",
+"cite_id": "WC-S-0454"
+},
+{
+"list": "extension-points",
+"entry": "FeaturesUtil::declare_compatibility",
+"path": "src/Utilities/FeaturesUtil.php",
+"line": 87,
+"quote": "public static function declare_compatibility( string $feature_id, string $plugin_file, bool $positive_compatibility = true ): bool {",
+"note": "",
+"cite_id": "WC-S-0455"
+}
+]

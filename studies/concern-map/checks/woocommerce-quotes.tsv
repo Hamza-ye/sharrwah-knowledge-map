@@ -1,0 +1,964 @@
+cite_id	result	why	share_of_6-word_runs_found	source	quote_start
+WC-S-0001	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	$this->label = __( 'General', 'woocommerce' );
+WC-S-0002	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-products.php	$this->label = __( 'Products', 'woocommerce' );
+WC-S-0003	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-tax.php	$this->label = __( 'Tax', 'woocommerce' );
+WC-S-0004	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-shipping.php	$this->label = __( 'Shipping', 'woocommerce' );
+WC-S-0005	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-payment-gateways.php	$this->label = esc_html_x( 'Payments', 'Settings tab label', 'woocommerce' );
+WC-S-0006	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-accounts.php	$this->label = __( 'Accounts &amp; Privacy', 'woocommerce' );
+WC-S-0007	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-emails.php	$this->label = __( 'Emails', 'woocommerce' );
+WC-S-0008	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-integrations.php	$this->label = __( 'Integration', 'woocommerce' );
+WC-S-0009	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-site-visibility.php	$this->label = __( 'Site visibility', 'woocommerce' );
+WC-S-0010	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-point-of-sale.php	$this->label = __( 'Point of Sale', 'woocommerce' );
+WC-S-0011	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-advanced.php	$this->label = __( 'Advanced', 'woocommerce' );
+WC-S-0012	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-products.php	''             => __( 'General', 'woocommerce' ),
+WC-S-0013	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-products.php	'inventory'    => __( 'Inventory', 'woocommerce' ),
+WC-S-0014	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-products.php	'downloadable' => __( 'Downloadable products', 'woocommerce' ),
+WC-S-0015	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-tax.php	''         => __( 'Tax options', 'woocommerce' ),
+WC-S-0016	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-tax.php	'standard' => __( 'Standard rates', 'woocommerce' ),
+WC-S-0017	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-shipping.php	''        => __( 'Shipping zones', 'woocommerce' ),
+WC-S-0018	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-shipping.php	'options' => __( 'Shipping settings', 'woocommerce' ),
+WC-S-0019	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-shipping.php	'classes' => __( 'Classes', 'woocommerce' ),
+WC-S-0020	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-shipping.php	$sections['fulfillment-providers'] = __( 'Shipping providers', 'woocommerce' );
+WC-S-0021	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-emails.php	'' => __( 'Email options', 'woocommerce' ),
+WC-S-0022	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-advanced.php	''     => __( 'Page setup', 'woocommerce' ),
+WC-S-0023	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-advanced.php	'keys' => __( 'REST API keys', 'woocommerce' ),
+WC-S-0024	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-advanced.php	$sections['rest_api_caching'] = __( 'REST API caching', 'woocommerce' );
+WC-S-0025	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-advanced.php	$sections['webhooks'] = __( 'Webhooks', 'woocommerce' );
+WC-S-0026	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-advanced.php	$sections['legacy_api'] = __( 'Legacy API', 'woocommerce' );
+WC-S-0027	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-advanced.php	$sections['woocommerce_com'] = __( 'WooCommerce.com', 'woocommerce' );
+WC-S-0028	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-advanced.php	$sections['blueprint'] = __( 'Blueprint (beta)', 'woocommerce' );
+WC-S-0029	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-payment-gateways.php	const MAIN_SECTION_NAME    = 'main';
+WC-S-0030	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-payment-gateways.php	const OFFLINE_SECTION_NAME = 'offline';
+WC-S-0031	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-payment-gateways.php	const COD_SECTION_NAME     = 'cod';  // Cash on delivery.
+WC-S-0032	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-payment-gateways.php	const BACS_SECTION_NAME    = 'bacs';  // Direct bank transfer.
+WC-S-0033	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-payment-gateways.php	const CHEQUE_SECTION_NAME  = 'cheque';  // Cheque payments.
+WC-S-0034	found			woocommerce-11.2.1:includes/class-wc-install.php	WC_Tax::create_tax_class( __( 'Reduced rate', 'woocommerce' ) );
+WC-S-0035	found			woocommerce-11.2.1:includes/class-wc-install.php	WC_Tax::create_tax_class( __( 'Zero rate', 'woocommerce' ) );
+WC-S-0036	found			woocommerce-11.2.1:includes/admin/views/html-admin-page-status.php	'status' => __( 'System status', 'woocommerce' ),
+WC-S-0037	found			woocommerce-11.2.1:includes/admin/views/html-admin-page-status.php	'tools'  => __( 'Tools', 'woocommerce' ),
+WC-S-0038	found			woocommerce-11.2.1:includes/admin/views/html-admin-page-status.php	'logs'   => __( 'Logs', 'woocommerce' ),
+WC-S-0039	found			woocommerce-11.2.1:includes/admin/class-wc-admin-menus.php	add_menu_page( __( 'WooCommerce', 'woocommerce' ), __( 'WooCommerce', 'woocommerce' ), 'edit_others_shop_orders', 'woocommerce', null, $woocommerce_icon, '55.5' );
+WC-S-0040	found			woocommerce-11.2.1:src/Internal/Admin/Homescreen.php	'title'      => __( 'Home', 'woocommerce' ),
+WC-S-0041	found			woocommerce-11.2.1:includes/class-wc-post-types.php	'menu_name'             => _x( 'Orders', 'Admin menu name', 'woocommerce' ),
+WC-S-0042	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Customers', 'woocommerce' ),
+WC-S-0043	found			woocommerce-11.2.1:includes/admin/class-wc-admin-menus.php	add_submenu_page( 'woocommerce', __( 'Reports', 'woocommerce' ), __( 'Reports', 'woocommerce' ), 'view_woocommerce_reports', 'wc-reports', array( $this, 'reports_page' ) );
+WC-S-0044	found			woocommerce-11.2.1:includes/admin/class-wc-admin-menus.php	__( 'Settings', 'woocommerce' ),
+WC-S-0045	found			woocommerce-11.2.1:includes/admin/class-wc-admin-menus.php	$status_page = add_submenu_page( 'woocommerce', __( 'WooCommerce status', 'woocommerce' ), __( 'Status', 'woocommerce' ), 'manage_woocommerce', 'wc-status', array( $this, 'status_page' ) );
+WC-S-0046	found			woocommerce-11.2.1:src/Internal/Admin/Marketplace.php	'title'      => __( 'Extensions', 'woocommerce' ) . $this->badge(),
+WC-S-0047	found			woocommerce-11.2.1:src/Internal/StockNotifications/Admin/MenusController.php	__( 'Stock Notifications', 'woocommerce' ),
+WC-S-0048	found			woocommerce-11.2.1:src/Internal/Admin/Coupons.php	__( 'Coupons', 'woocommerce' ),
+WC-S-0049	found			woocommerce-11.2.1:includes/class-wc-post-types.php	'menu_name'             => _x( 'Products', 'Admin menu name', 'woocommerce' ),
+WC-S-0050	found			woocommerce-11.2.1:includes/class-wc-post-types.php	'all_items'             => __( 'All Products', 'woocommerce' ),
+WC-S-0051	found			woocommerce-11.2.1:includes/class-wc-post-types.php	'add_new'               => __( 'Add New', 'woocommerce' ),
+WC-S-0052	found			woocommerce-11.2.1:includes/class-wc-post-types.php	'menu_name'             => _x( 'Categories', 'Admin menu name', 'woocommerce' ),
+WC-S-0053	found			woocommerce-11.2.1:includes/class-wc-post-types.php	'menu_name'                  => _x( 'Tags', 'Admin menu name', 'woocommerce' ),
+WC-S-0054	found			woocommerce-11.2.1:includes/class-wc-brands.php	'menu_name'         => __( 'Brands', 'woocommerce' ),
+WC-S-0055	found			woocommerce-11.2.1:includes/admin/class-wc-admin-menus.php	add_submenu_page( 'edit.php?post_type=product', __( 'Attributes', 'woocommerce' ), __( 'Attributes', 'woocommerce' ), 'manage_product_terms', 'product_attributes', array( $this, 'attributes_page' ) );
+WC-S-0056	found			woocommerce-11.2.1:src/Internal/Admin/ProductReviews/Reviews.php	__( 'Reviews', 'woocommerce' ),
+WC-S-0057	found			woocommerce-11.2.1:includes/admin/class-wc-admin-importers.php	'name'       => __( 'Product Import', 'woocommerce' ),
+WC-S-0058	found			woocommerce-11.2.1:includes/admin/class-wc-admin-exporters.php	'name'       => __( 'Product Export', 'woocommerce' ),
+WC-S-0059	found			woocommerce-11.2.1:src/Internal/Admin/Settings/PaymentsController.php	$menu_title = esc_html__( 'Payments', 'woocommerce' );
+WC-S-0060	found			woocommerce-11.2.1:src/Internal/Admin/Marketing.php	'title'      => 'Marketing',
+WC-S-0061	found			woocommerce-11.2.1:src/Internal/Admin/Marketing.php	'title'  => __( 'Overview', 'woocommerce' ),
+WC-S-0062	found			woocommerce-11.2.1:includes/class-wc-post-types.php	'menu_name'             => _x( 'Coupons', 'Admin menu name', 'woocommerce' ),
+WC-S-0063	found			woocommerce-11.2.1:src/Admin/PageController.php	'title'  => __( 'Setup Wizard', 'woocommerce' ),
+WC-S-0064	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'    => __( 'Analytics', 'woocommerce' ),
+WC-S-0065	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Overview', 'woocommerce' ),
+WC-S-0066	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Products', 'woocommerce' ),
+WC-S-0067	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Revenue', 'woocommerce' ),
+WC-S-0068	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Orders', 'woocommerce' ),
+WC-S-0069	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Variations', 'woocommerce' ),
+WC-S-0070	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Categories', 'woocommerce' ),
+WC-S-0071	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Coupons', 'woocommerce' ),
+WC-S-0072	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Taxes', 'woocommerce' ),
+WC-S-0073	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Downloads', 'woocommerce' ),
+WC-S-0074	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Stock', 'woocommerce' ),
+WC-S-0075	found			woocommerce-11.2.1:src/Internal/Admin/Analytics.php	'title'  => __( 'Settings', 'woocommerce' ),
+WC-S-0076	found			woocommerce-11.2.1:includes/rest-api/Server.php	'wc/v1'        => wc_rest_should_load_namespace( 'wc/v1' ) ? $this->get_v1_controllers() : array(),
+WC-S-0077	found			woocommerce-11.2.1:includes/rest-api/Server.php	'wc/v2'        => wc_rest_should_load_namespace( 'wc/v2' ) ? $this->get_v2_controllers() : array(),
+WC-S-0078	found			woocommerce-11.2.1:includes/rest-api/Server.php	'wc/v3'        => wc_rest_should_load_namespace( 'wc/v3' ) ? $this->get_v3_controllers() : array(),
+WC-S-0079	found			woocommerce-11.2.1:includes/rest-api/Server.php	'wc-telemetry' => wc_rest_should_load_namespace( 'wc-telemetry' ) ? $this->get_telemetry_controllers() : array(),
+WC-S-0080	found			woocommerce-11.2.1:includes/rest-api/Server.php	$namespaces['wc/v4'] = $this->get_v4_controllers();
+WC-S-0081	found			woocommerce-11.2.1:src/StoreApi/RoutesController.php	$this->register_routes( 'v1', self::$api_namespace . '/v1' );
+WC-S-0082	found			woocommerce-11.2.1:src/StoreApi/RoutesController.php	$this->register_routes( 'private', 'wc/private' );
+WC-S-0083	found			woocommerce-11.2.1:src/Admin/API/Init.php	if ( wc_rest_should_load_namespace( 'wc-admin' ) ) {
+WC-S-0084	found			woocommerce-11.2.1:src/Admin/API/Init.php	$rest_api_util->lazy_load_namespace( 'wc-analytics', array( $this, 'rest_api_init_wc_analytics' ) );
+WC-S-0085	found			woocommerce-11.2.1:includes/wccom-site/rest-api/endpoints/abstract-wc-rest-wccom-site-controller.php	protected $namespace = 'wccom-site/v3';
+WC-S-0086	found			woocommerce-11.2.1:includes/rest-api/Server.php	'coupons'                  => 'WC_REST_Coupons_Controller',
+WC-S-0087	found			woocommerce-11.2.1:includes/rest-api/Server.php	'customer-downloads'       => 'WC_REST_Customer_Downloads_Controller',
+WC-S-0088	found			woocommerce-11.2.1:includes/rest-api/Server.php	'customers'                => 'WC_REST_Customers_Controller',
+WC-S-0089	found			woocommerce-11.2.1:includes/rest-api/Server.php	'network-orders'           => 'WC_REST_Network_Orders_Controller',
+WC-S-0090	found			woocommerce-11.2.1:includes/rest-api/Server.php	'order-notes'              => 'WC_REST_Order_Notes_Controller',
+WC-S-0091	found			woocommerce-11.2.1:includes/rest-api/Server.php	'order-refunds'            => 'WC_REST_Order_Refunds_Controller',
+WC-S-0092	found			woocommerce-11.2.1:includes/rest-api/Server.php	'orders'                   => 'WC_REST_Orders_Controller',
+WC-S-0093	found			woocommerce-11.2.1:includes/rest-api/Server.php	'product-attribute-terms'  => 'WC_REST_Product_Attribute_Terms_Controller',
+WC-S-0094	found			woocommerce-11.2.1:includes/rest-api/Server.php	'product-attributes'       => 'WC_REST_Product_Attributes_Controller',
+WC-S-0095	found			woocommerce-11.2.1:includes/rest-api/Server.php	'product-categories'       => 'WC_REST_Product_Categories_Controller',
+WC-S-0096	found			woocommerce-11.2.1:includes/rest-api/Server.php	'product-custom-fields'    => 'WC_REST_Product_Custom_Fields_Controller',
+WC-S-0097	found			woocommerce-11.2.1:includes/rest-api/Server.php	'product-reviews'          => 'WC_REST_Product_Reviews_Controller',
+WC-S-0098	found			woocommerce-11.2.1:includes/rest-api/Server.php	'product-shipping-classes' => 'WC_REST_Product_Shipping_Classes_Controller',
+WC-S-0099	found			woocommerce-11.2.1:includes/rest-api/Server.php	'product-tags'             => 'WC_REST_Product_Tags_Controller',
+WC-S-0100	found			woocommerce-11.2.1:includes/rest-api/Server.php	'products'                 => 'WC_REST_Products_Controller',
+WC-S-0101	found			woocommerce-11.2.1:includes/rest-api/Server.php	'product-variations'       => 'WC_REST_Product_Variations_Controller',
+WC-S-0102	found			woocommerce-11.2.1:includes/rest-api/Server.php	'refunds'                  => 'WC_REST_Refunds_Controller',
+WC-S-0103	found			woocommerce-11.2.1:includes/rest-api/Server.php	'reports-sales'            => 'WC_REST_Report_Sales_Controller',
+WC-S-0104	found			woocommerce-11.2.1:includes/rest-api/Server.php	'reports-top-sellers'      => 'WC_REST_Report_Top_Sellers_Controller',
+WC-S-0105	found			woocommerce-11.2.1:includes/rest-api/Server.php	'reports-orders-totals'    => 'WC_REST_Report_Orders_Totals_Controller',
+WC-S-0106	found			woocommerce-11.2.1:includes/rest-api/Server.php	'reports-products-totals'  => 'WC_REST_Report_Products_Totals_Controller',
+WC-S-0107	found			woocommerce-11.2.1:includes/rest-api/Server.php	'reports-customers-totals' => 'WC_REST_Report_Customers_Totals_Controller',
+WC-S-0108	found			woocommerce-11.2.1:includes/rest-api/Server.php	'reports-coupons-totals'   => 'WC_REST_Report_Coupons_Totals_Controller',
+WC-S-0109	found			woocommerce-11.2.1:includes/rest-api/Server.php	'reports-reviews-totals'   => 'WC_REST_Report_Reviews_Totals_Controller',
+WC-S-0110	found			woocommerce-11.2.1:includes/rest-api/Server.php	'reports'                  => 'WC_REST_Reports_Controller',
+WC-S-0111	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings'                 => 'WC_REST_Settings_Controller',
+WC-S-0112	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings-options'         => 'WC_REST_Setting_Options_Controller',
+WC-S-0113	found			woocommerce-11.2.1:includes/rest-api/Server.php	'shipping-zones'           => 'WC_REST_Shipping_Zones_Controller',
+WC-S-0114	found			woocommerce-11.2.1:includes/rest-api/Server.php	'shipping-zone-locations'  => 'WC_REST_Shipping_Zone_Locations_Controller',
+WC-S-0115	found			woocommerce-11.2.1:includes/rest-api/Server.php	'shipping-zone-methods'    => 'WC_REST_Shipping_Zone_Methods_Controller',
+WC-S-0116	found			woocommerce-11.2.1:includes/rest-api/Server.php	'tax-classes'              => 'WC_REST_Tax_Classes_Controller',
+WC-S-0117	found			woocommerce-11.2.1:includes/rest-api/Server.php	'taxes'                    => 'WC_REST_Taxes_Controller',
+WC-S-0118	found			woocommerce-11.2.1:includes/rest-api/Server.php	'variations'               => 'WC_REST_Variations_Controller',
+WC-S-0119	found			woocommerce-11.2.1:includes/rest-api/Server.php	'webhooks'                 => 'WC_REST_Webhooks_Controller',
+WC-S-0120	found			woocommerce-11.2.1:includes/rest-api/Server.php	'system-status'            => 'WC_REST_System_Status_Controller',
+WC-S-0121	found			woocommerce-11.2.1:includes/rest-api/Server.php	'system-status-tools'      => 'WC_REST_System_Status_Tools_Controller',
+WC-S-0122	found			woocommerce-11.2.1:includes/rest-api/Server.php	'shipping-methods'         => 'WC_REST_Shipping_Methods_Controller',
+WC-S-0123	found			woocommerce-11.2.1:includes/rest-api/Server.php	'payment-gateways'         => 'WC_REST_Payment_Gateways_Controller',
+WC-S-0124	found			woocommerce-11.2.1:includes/rest-api/Server.php	'data'                     => 'WC_REST_Data_Controller',
+WC-S-0125	found			woocommerce-11.2.1:includes/rest-api/Server.php	'data-continents'          => 'WC_REST_Data_Continents_Controller',
+WC-S-0126	found			woocommerce-11.2.1:includes/rest-api/Server.php	'data-countries'           => 'WC_REST_Data_Countries_Controller',
+WC-S-0127	found			woocommerce-11.2.1:includes/rest-api/Server.php	'data-currencies'          => 'WC_REST_Data_Currencies_Controller',
+WC-S-0128	found			woocommerce-11.2.1:includes/rest-api/Server.php	'paypal-standard'          => 'WC_REST_Paypal_Standard_Controller',
+WC-S-0129	found			woocommerce-11.2.1:includes/rest-api/Server.php	'paypal-webhooks'          => 'WC_REST_Paypal_Webhooks_Controller',
+WC-S-0130	found			woocommerce-11.2.1:includes/rest-api/Server.php	'paypal-buttons'           => 'WC_REST_Paypal_Buttons_Controller',
+WC-S-0131	found			woocommerce-11.2.1:includes/rest-api/Server.php	'fulfillments'              => FulfillmentsController::class,
+WC-S-0132	found			woocommerce-11.2.1:includes/rest-api/Server.php	'products'                  => ProductsController::class,
+WC-S-0133	found			woocommerce-11.2.1:includes/rest-api/Server.php	'customers'                 => CustomersController::class,
+WC-S-0134	found			woocommerce-11.2.1:includes/rest-api/Server.php	'order-notes'               => OrderNotesController::class,
+WC-S-0135	found			woocommerce-11.2.1:includes/rest-api/Server.php	'shipping-zones'            => ShippingZonesController::class,
+WC-S-0136	found			woocommerce-11.2.1:includes/rest-api/Server.php	'shipping-zone-method'      => ShippingZoneMethodController::class,
+WC-S-0137	found			woocommerce-11.2.1:includes/rest-api/Server.php	'orders'                    => OrdersController::class,
+WC-S-0138	found			woocommerce-11.2.1:includes/rest-api/Server.php	'refunds'                   => RefundsController::class,
+WC-S-0139	found			woocommerce-11.2.1:includes/rest-api/Server.php	'offline-payment-methods'   => OfflinePaymentMethodsController::class,
+WC-S-0140	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings-general'          => GeneralSettingsController::class,
+WC-S-0141	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings-email'            => EmailSettingsController::class,
+WC-S-0142	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings-emails'           => EmailsSettingsController::class,
+WC-S-0143	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings-products'         => SettingsProductsController::class,
+WC-S-0144	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings-payment-gateways' => PaymentGatewaysController::class,
+WC-S-0145	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings-tax'              => TaxSettingsController::class,
+WC-S-0146	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings-account'          => AccountSettingsController::class,
+WC-S-0147	found			woocommerce-11.2.1:includes/rest-api/Server.php	'settings'                  => 'WC_REST_Settings_V4_Controller',
+WC-S-0148	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/Batch.php	const IDENTIFIER = 'batch';
+WC-S-0149	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/Cart.php	const IDENTIFIER = 'cart';
+WC-S-0150	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartAddItem.php	const IDENTIFIER = 'cart-add-item';
+WC-S-0151	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartApplyCoupon.php	const IDENTIFIER = 'cart-apply-coupon';
+WC-S-0152	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartCoupons.php	const IDENTIFIER = 'cart-coupons';
+WC-S-0153	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartCouponsByCode.php	const IDENTIFIER = 'cart-coupons-by-code';
+WC-S-0154	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartExtensions.php	const IDENTIFIER = 'cart-extensions';
+WC-S-0155	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartItems.php	const IDENTIFIER = 'cart-items';
+WC-S-0156	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartItemsByKey.php	const IDENTIFIER = 'cart-items-by-key';
+WC-S-0157	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartRemoveCoupon.php	const IDENTIFIER = 'cart-remove-coupon';
+WC-S-0158	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartRemoveItem.php	const IDENTIFIER = 'cart-remove-item';
+WC-S-0159	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartSelectShippingRate.php	const IDENTIFIER = 'cart-select-shipping-rate';
+WC-S-0160	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartUpdateItem.php	const IDENTIFIER = 'cart-update-item';
+WC-S-0161	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CartUpdateCustomer.php	const IDENTIFIER = 'cart-update-customer';
+WC-S-0162	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/Checkout.php	const IDENTIFIER = 'checkout';
+WC-S-0163	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/CheckoutOrder.php	const IDENTIFIER = 'checkout-order';
+WC-S-0164	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/Order.php	const IDENTIFIER = 'order';
+WC-S-0165	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductAttributes.php	const IDENTIFIER = 'product-attributes';
+WC-S-0166	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductAttributesById.php	const IDENTIFIER = 'product-attributes-by-id';
+WC-S-0167	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductAttributeTerms.php	const IDENTIFIER = 'product-attribute-terms';
+WC-S-0168	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductCategories.php	const IDENTIFIER = 'product-categories';
+WC-S-0169	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductCategoriesById.php	const IDENTIFIER = 'product-categories-by-id';
+WC-S-0170	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductBrands.php	const IDENTIFIER = 'product-brands';
+WC-S-0171	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductBrandsById.php	const IDENTIFIER = 'product-brands-by-id';
+WC-S-0172	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductCollectionData.php	const IDENTIFIER = 'product-collection-data';
+WC-S-0173	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductReviews.php	const IDENTIFIER = 'product-reviews';
+WC-S-0174	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductTags.php	const IDENTIFIER = 'product-tags';
+WC-S-0175	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/Products.php	const IDENTIFIER = 'products';
+WC-S-0176	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductsById.php	const IDENTIFIER = 'products-by-id';
+WC-S-0177	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ProductsBySlug.php	const IDENTIFIER = 'products-by-slug';
+WC-S-0178	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/Patterns.php	const IDENTIFIER = 'patterns';
+WC-S-0179	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ShopperLists.php	const IDENTIFIER = 'shopper-lists';
+WC-S-0180	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ShopperListsBySlug.php	const IDENTIFIER = 'shopper-lists-by-slug';
+WC-S-0181	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ShopperListItems.php	const IDENTIFIER = 'shopper-list-items';
+WC-S-0182	found			woocommerce-11.2.1:src/StoreApi/Routes/V1/ShopperListItemsByKey.php	const IDENTIFIER = 'shopper-list-items-by-key';
+WC-S-0183	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Notice',
+WC-S-0184	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Features',
+WC-S-0185	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Experiments',
+WC-S-0186	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Marketing',
+WC-S-0187	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\MarketingOverview',
+WC-S-0188	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\MarketingRecommendations',
+WC-S-0189	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\MarketingChannels',
+WC-S-0190	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\MarketingCampaigns',
+WC-S-0191	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\MarketingCampaignTypes',
+WC-S-0192	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Options',
+WC-S-0193	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\PaymentGatewaySuggestions',
+WC-S-0194	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Themes',
+WC-S-0195	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Plugins',
+WC-S-0196	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions',
+WC-S-0197	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\OnboardingProductTypes',
+WC-S-0198	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\OnboardingProfile',
+WC-S-0199	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\OnboardingTasks',
+WC-S-0200	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\OnboardingThemes',
+WC-S-0201	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\OnboardingPlugins',
+WC-S-0202	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\OnboardingProducts',
+WC-S-0203	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\MobileAppMagicLink',
+WC-S-0204	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\MobileAppQRLogin',
+WC-S-0205	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\ShippingPartnerSuggestions',
+WC-S-0206	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Notes',
+WC-S-0207	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\NoteActions',
+WC-S-0208	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Coupons',
+WC-S-0209	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Data',
+WC-S-0210	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\DataCountries',
+WC-S-0211	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\DataDownloadIPs',
+WC-S-0212	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Orders',
+WC-S-0213	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Products',
+WC-S-0214	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\ProductAttributes',
+WC-S-0215	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\ProductAttributeTerms',
+WC-S-0216	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\ProductCategories',
+WC-S-0217	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\ProductVariations',
+WC-S-0218	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\ProductReviews',
+WC-S-0219	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\ProductsLowInStock',
+WC-S-0220	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\ActivityPanelCounts',
+WC-S-0221	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\SettingOptions',
+WC-S-0222	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Taxes',
+WC-S-0223	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Customers',
+WC-S-0224	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Leaderboards',
+WC-S-0225	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Controller',
+WC-S-0226	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Import\Controller',
+WC-S-0227	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Export\Controller',
+WC-S-0228	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Products\Controller',
+WC-S-0229	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Variations\Controller',
+WC-S-0230	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Products\Stats\Controller',
+WC-S-0231	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Variations\Stats\Controller',
+WC-S-0232	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Revenue\Stats\Controller',
+WC-S-0233	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Orders\Controller',
+WC-S-0234	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\Controller',
+WC-S-0235	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Categories\Controller',
+WC-S-0236	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Taxes\Controller',
+WC-S-0237	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\Controller',
+WC-S-0238	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Coupons\Controller',
+WC-S-0239	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\Controller',
+WC-S-0240	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Stock\Controller',
+WC-S-0241	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\Controller',
+WC-S-0242	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Downloads\Controller',
+WC-S-0243	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\Controller',
+WC-S-0244	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Customers\Controller',
+WC-S-0245	found			woocommerce-11.2.1:src/Admin/API/Init.php	'Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\Controller',
+WC-S-0246	found			woocommerce-11.2.1:src/Admin/API/Init.php	$analytics_controllers[] = 'Automattic\WooCommerce\Admin\API\AnalyticsImports';
+WC-S-0247	found			woocommerce-11.2.1:src/Admin/API/Init.php	$analytics_controllers[] = 'Automattic\WooCommerce\Admin\API\Reports\PerformanceIndicators\Controller';
+WC-S-0248	found			woocommerce-11.2.1:src/Admin/API/Init.php	$controller        = 'Automattic\WooCommerce\Admin\API\LaunchYourStore';
+WC-S-0249	found			woocommerce-11.2.1:includes/wccom-site/rest-api/endpoints/class-wc-rest-wccom-site-connection-controller.php	protected $rest_base = 'connection';
+WC-S-0250	found			woocommerce-11.2.1:includes/wccom-site/rest-api/endpoints/class-wc-rest-wccom-site-installer-controller.php	protected $rest_base = 'installer';
+WC-S-0251	found			woocommerce-11.2.1:includes/wccom-site/rest-api/endpoints/class-wc-rest-wccom-site-ssr-controller.php	protected $rest_base = 'ssr';
+WC-S-0252	found			woocommerce-11.2.1:includes/wccom-site/rest-api/endpoints/class-wc-rest-wccom-site-status-controller.php	protected $rest_base = 'status';
+WC-S-0253	found			woocommerce-11.2.1:includes/rest-api/Controllers/Telemetry/class-wc-rest-telemetry-controller.php	protected $rest_base = 'tracker';
+WC-S-0254	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'coupon.created'    => __( 'Coupon created', 'woocommerce' ),
+WC-S-0255	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'coupon.updated'    => __( 'Coupon updated', 'woocommerce' ),
+WC-S-0256	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'coupon.deleted'    => __( 'Coupon deleted', 'woocommerce' ),
+WC-S-0257	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'coupon.restored'   => __( 'Coupon restored', 'woocommerce' ),
+WC-S-0258	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'customer.created'  => __( 'Customer created', 'woocommerce' ),
+WC-S-0259	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'customer.updated'  => __( 'Customer updated', 'woocommerce' ),
+WC-S-0260	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'customer.deleted'  => __( 'Customer deleted', 'woocommerce' ),
+WC-S-0261	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'order.created'     => __( 'Order created', 'woocommerce' ),
+WC-S-0262	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'order.updated'     => __( 'Order updated', 'woocommerce' ),
+WC-S-0263	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'order.deleted'     => __( 'Order deleted', 'woocommerce' ),
+WC-S-0264	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'order.restored'    => __( 'Order restored', 'woocommerce' ),
+WC-S-0265	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'product.created'   => __( 'Product created', 'woocommerce' ),
+WC-S-0266	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'product.updated'   => __( 'Product updated', 'woocommerce' ),
+WC-S-0267	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'product.deleted'   => __( 'Product deleted', 'woocommerce' ),
+WC-S-0268	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'product.restored'  => __( 'Product restored', 'woocommerce' ),
+WC-S-0269	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'product.published' => __( 'Product published', 'woocommerce' ),
+WC-S-0270	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'action'            => __( 'Action', 'woocommerce' ),
+WC-S-0271	found			woocommerce-11.2.1:includes/class-wc-install.php	'customer',
+WC-S-0272	found			woocommerce-11.2.1:includes/class-wc-install.php	'shop_manager',
+WC-S-0273	found			woocommerce-11.2.1:includes/class-wc-install.php	'manage_woocommerce',
+WC-S-0274	found			woocommerce-11.2.1:includes/class-wc-install.php	'create_customers',
+WC-S-0275	found			woocommerce-11.2.1:includes/class-wc-install.php	'view_woocommerce_reports',
+WC-S-0276	found			woocommerce-11.2.1:includes/class-wc-install.php	$capability_types = array( 'product', 'shop_order', 'shop_coupon' );
+WC-S-0277	found			woocommerce-11.2.1:includes/admin/settings/views/html-keys-edit.php	'read'       => __( 'Read', 'woocommerce' ),
+WC-S-0278	found			woocommerce-11.2.1:includes/admin/settings/views/html-keys-edit.php	'write'      => __( 'Write', 'woocommerce' ),
+WC-S-0279	found			woocommerce-11.2.1:includes/admin/settings/views/html-keys-edit.php	'read_write' => __( 'Read/Write', 'woocommerce' ),
+WC-S-0280	found			woocommerce-11.2.1:includes/gateways/bacs/class-wc-gateway-bacs.php	$this->method_title       = __( 'Direct bank transfer', 'woocommerce' );
+WC-S-0281	found			woocommerce-11.2.1:includes/gateways/cheque/class-wc-gateway-cheque.php	$this->method_title       = _x( 'Check payments', 'Check payment method', 'woocommerce' );
+WC-S-0282	found			woocommerce-11.2.1:includes/gateways/cod/class-wc-gateway-cod.php	$this->method_title       = __( 'Cash on delivery', 'woocommerce' );
+WC-S-0283	found			woocommerce-11.2.1:includes/gateways/paypal/class-wc-gateway-paypal.php	$this->method_title      = __( 'PayPal Standard', 'woocommerce' );
+WC-S-0284	found			woocommerce-11.2.1:includes/shipping/flat-rate/class-wc-shipping-flat-rate.php	$this->method_title       = __( 'Flat rate', 'woocommerce' );
+WC-S-0285	found			woocommerce-11.2.1:includes/shipping/free-shipping/class-wc-shipping-free-shipping.php	$this->method_title       = __( 'Free shipping', 'woocommerce' );
+WC-S-0286	found			woocommerce-11.2.1:includes/shipping/legacy-flat-rate/class-wc-shipping-legacy-flat-rate.php	$this->method_title = __( 'Flat rate (legacy)', 'woocommerce' );
+WC-S-0287	found			woocommerce-11.2.1:includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php	$this->method_title = __( 'Free shipping (legacy)', 'woocommerce' );
+WC-S-0288	found			woocommerce-11.2.1:includes/shipping/legacy-international-delivery/class-wc-shipping-legacy-international-delivery.php	$this->method_title = __( 'International flat rate (legacy)', 'woocommerce' );
+WC-S-0289	found			woocommerce-11.2.1:includes/shipping/legacy-local-delivery/class-wc-shipping-legacy-local-delivery.php	$this->method_title = __( 'Local delivery (legacy)', 'woocommerce' );
+WC-S-0290	found			woocommerce-11.2.1:includes/shipping/legacy-local-pickup/class-wc-shipping-legacy-local-pickup.php	$this->method_title = __( 'Local pickup (legacy)', 'woocommerce' );
+WC-S-0291	found			woocommerce-11.2.1:includes/shipping/local-pickup/class-wc-shipping-local-pickup.php	$this->method_title       = __( 'Local pickup', 'woocommerce' );
+WC-S-0292	found			woocommerce-11.2.1:src/Blocks/Shipping/PickupLocation.php	$this->method_title       = __( 'Local pickup', 'woocommerce' );
+WC-S-0293	found			woocommerce-11.2.1:includes/integrations/maxmind-geolocation/class-wc-integration-maxmind-geolocation.php	$this->method_title       = __( 'MaxMind Geolocation', 'woocommerce' );
+WC-S-0294	found			woocommerce-11.2.1:includes/emails/class-wc-email-new-order.php	$this->title          = __( 'New order', 'woocommerce' );
+WC-S-0295	found			woocommerce-11.2.1:includes/emails/class-wc-email-cancelled-order.php	$this->title          = __( 'Cancelled order', 'woocommerce' );
+WC-S-0296	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-cancelled-order.php	$this->title          = __( 'Cancelled order', 'woocommerce' );
+WC-S-0297	found			woocommerce-11.2.1:includes/emails/class-wc-email-failed-order.php	$this->title          = __( 'Failed order', 'woocommerce' );
+WC-S-0298	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-failed-order.php	$this->title          = __( 'Failed order', 'woocommerce' );
+WC-S-0299	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-on-hold-order.php	$this->title          = __( 'Order on-hold', 'woocommerce' );
+WC-S-0300	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-processing-order.php	$this->title          = __( 'Processing order', 'woocommerce' );
+WC-S-0301	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-completed-order.php	$this->title          = __( 'Completed order', 'woocommerce' );
+WC-S-0302	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-refunded-order.php	$this->title          = __( 'Refunded order', 'woocommerce' );
+WC-S-0303	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-invoice.php	$this->title          = __( 'Order details', 'woocommerce' );
+WC-S-0304	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-note.php	$this->title          = __( 'Customer note', 'woocommerce' );
+WC-S-0305	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-reset-password.php	$this->title       = __( 'Reset password', 'woocommerce' );
+WC-S-0306	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-new-account.php	$this->title           = __( 'New account', 'woocommerce' );
+WC-S-0307	found			woocommerce-11.2.1:includes/emails/class-wc-email-admin-payment-gateway-enabled.php	$this->title          = __( 'Payment gateway enabled', 'woocommerce' );
+WC-S-0308	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-pos-completed-order.php	$this->title          = __( 'POS completed order', 'woocommerce' );
+WC-S-0309	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-pos-refunded-order.php	$this->title          = __( 'POS refunded order', 'woocommerce' );
+WC-S-0310	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-fulfillment-created.php	$this->title          = __( 'Fulfillment created', 'woocommerce' );
+WC-S-0311	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-fulfillment-updated.php	$this->title          = __( 'Fulfillment updated', 'woocommerce' );
+WC-S-0312	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-fulfillment-deleted.php	$this->title          = __( 'Fulfillment deleted', 'woocommerce' );
+WC-S-0313	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-review-request.php	$this->title          = __( 'Review request', 'woocommerce' );
+WC-S-0314	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-order-withdrawal-requested.php	$this->title          = __( 'Order withdrawal request received', 'woocommerce' );
+WC-S-0315	found			woocommerce-11.2.1:includes/emails/class-wc-email-order-withdrawal-requested.php	$this->title          = __( 'Order withdrawal request', 'woocommerce' );
+WC-S-0316	found			woocommerce-11.2.1:includes/emails/class-wc-email-customer-partially-refunded-order.php	$this->title          = __( 'Partially refunded order', 'woocommerce' );
+WC-S-0317	found			woocommerce-11.2.1:includes/wc-order-functions.php	OrderInternalStatus::PENDING    => _x( 'Pending payment', 'Order status', 'woocommerce' ),
+WC-S-0318	found			woocommerce-11.2.1:includes/wc-order-functions.php	OrderInternalStatus::PROCESSING => _x( 'Processing', 'Order status', 'woocommerce' ),
+WC-S-0319	found			woocommerce-11.2.1:includes/wc-order-functions.php	OrderInternalStatus::ON_HOLD    => _x( 'On hold', 'Order status', 'woocommerce' ),
+WC-S-0320	found			woocommerce-11.2.1:includes/wc-order-functions.php	OrderInternalStatus::COMPLETED  => _x( 'Completed', 'Order status', 'woocommerce' ),
+WC-S-0321	found			woocommerce-11.2.1:includes/wc-order-functions.php	OrderInternalStatus::CANCELLED  => _x( 'Cancelled', 'Order status', 'woocommerce' ),
+WC-S-0322	found			woocommerce-11.2.1:includes/wc-order-functions.php	OrderInternalStatus::REFUNDED   => _x( 'Refunded', 'Order status', 'woocommerce' ),
+WC-S-0323	found			woocommerce-11.2.1:includes/wc-order-functions.php	OrderInternalStatus::FAILED     => _x( 'Failed', 'Order status', 'woocommerce' ),
+WC-S-0324	found			woocommerce-11.2.1:src/Blocks/Domain/Services/DraftOrders.php	$statuses[ self::DB_STATUS ] = _x( 'Draft', 'Order status', 'woocommerce' );
+WC-S-0325	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'WooCommerce Analytics', 'woocommerce' ),
+WC-S-0326	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Product gallery videos', 'woocommerce' ),
+WC-S-0327	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Cart & Checkout Blocks', 'woocommerce' ),
+WC-S-0328	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Rate limit Checkout', 'woocommerce' ),
+WC-S-0329	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Marketplace', 'woocommerce' ),
+WC-S-0330	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Order withdrawal', 'woocommerce' ),
+WC-S-0331	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Order Attribution', 'woocommerce' ),
+WC-S-0332	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Site visibility badge', 'woocommerce' ),
+WC-S-0333	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'HPOS Full text search indexes', 'woocommerce' ),
+WC-S-0334	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'HPOS Data Caching', 'woocommerce' ),
+WC-S-0335	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Remote Logging', 'woocommerce' ),
+WC-S-0336	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Deferred emails', 'woocommerce' ),
+WC-S-0337	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Customer review request (beta)', 'woocommerce' ),
+WC-S-0338	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Email improvements', 'woocommerce' ),
+WC-S-0339	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Blueprint (beta)', 'woocommerce' ),
+WC-S-0340	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Block Email Editor (alpha)', 'woocommerce' ),
+WC-S-0341	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Variation gallery', 'woocommerce' ),
+WC-S-0342	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Color swatches for attributes', 'woocommerce' ),
+WC-S-0343	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Point of Sale', 'woocommerce' ),
+WC-S-0344	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'POS staff', 'woocommerce' ),
+WC-S-0345	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Order Fulfillments', 'woocommerce' ),
+WC-S-0346	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'WooCommerce MCP', 'woocommerce' ),
+WC-S-0347	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Clear Customer Sessions When Empty', 'woocommerce' ),
+WC-S-0348	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Push Notifications', 'woocommerce' ),
+WC-S-0349	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'REST API Caching', 'woocommerce' ),
+WC-S-0350	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Save for Later in Cart', 'woocommerce' ),
+WC-S-0351	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Wishlists', 'woocommerce' ),
+WC-S-0352	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Cache Product Objects', 'woocommerce' ),
+WC-S-0353	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Back in Stock Notifications', 'woocommerce' ),
+WC-S-0354	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'name'                         => __( 'Unified block editor assets', 'woocommerce' ),
+WC-S-0355	found			woocommerce-11.2.1:src/Internal/DataStores/Orders/CustomOrdersTableController.php	__( 'High-Performance order storage', 'woocommerce' ),
+WC-S-0356	found			woocommerce-11.2.1:src/Internal/CostOfGoodsSold/CostOfGoodsSoldController.php	__( 'Cost of Goods Sold', 'woocommerce' ),
+WC-S-0357	found			woocommerce-11.2.1:includes/class-wc-privacy.php	$this->add_exporter( 'woocommerce-customer-data', __( 'WooCommerce Customer Data', 'woocommerce' ), array( 'WC_Privacy_Exporters', 'customer_data_exporter' ) );
+WC-S-0358	found			woocommerce-11.2.1:includes/class-wc-privacy.php	$this->add_exporter( 'woocommerce-customer-orders', __( 'WooCommerce Customer Orders', 'woocommerce' ), array( 'WC_Privacy_Exporters', 'order_data_exporter' ) );
+WC-S-0359	found			woocommerce-11.2.1:includes/class-wc-privacy.php	$this->add_exporter( 'woocommerce-customer-downloads', __( 'WooCommerce Customer Downloads', 'woocommerce' ), array( 'WC_Privacy_Exporters', 'download_data_exporter' ) );
+WC-S-0360	found			woocommerce-11.2.1:includes/class-wc-privacy.php	$this->add_exporter( 'woocommerce-customer-tokens', __( 'WooCommerce Customer Payment Tokens', 'woocommerce' ), array( 'WC_Privacy_Exporters', 'customer_tokens_exporter' ) );
+WC-S-0361	found			woocommerce-11.2.1:includes/class-wc-privacy.php	$this->add_eraser( 'woocommerce-customer-data', __( 'WooCommerce Customer Data', 'woocommerce' ), array( 'WC_Privacy_Erasers', 'customer_data_eraser' ) );
+WC-S-0362	found			woocommerce-11.2.1:includes/class-wc-privacy.php	$this->add_eraser( 'woocommerce-customer-orders', __( 'WooCommerce Customer Orders', 'woocommerce' ), array( 'WC_Privacy_Erasers', 'order_data_eraser' ) );
+WC-S-0363	found			woocommerce-11.2.1:includes/class-wc-privacy.php	$this->add_eraser( 'woocommerce-customer-downloads', __( 'WooCommerce Customer Downloads', 'woocommerce' ), array( 'WC_Privacy_Erasers', 'download_data_eraser' ) );
+WC-S-0364	found			woocommerce-11.2.1:includes/class-wc-privacy.php	$this->add_eraser( 'woocommerce-customer-tokens', __( 'WooCommerce Customer Payment Tokens', 'woocommerce' ), array( 'WC_Privacy_Erasers', 'customer_tokens_eraser' ) );
+WC-S-0365	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const AIRWALLEX         = 'airwallex';
+WC-S-0366	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const ANTOM             = 'antom';
+WC-S-0367	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const MERCADO_PAGO      = 'mercado_pago';
+WC-S-0368	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const MOLLIE            = 'mollie';
+WC-S-0369	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYFAST           = 'payfast';
+WC-S-0370	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYMOB            = 'paymob';
+WC-S-0371	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYPAL_FULL_STACK = 'paypal_full_stack';
+WC-S-0372	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYPAL_WALLET     = 'paypal_wallet';
+WC-S-0373	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYONEER          = 'payoneer';
+WC-S-0374	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYSTACK          = 'paystack';
+WC-S-0375	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYTRAIL          = 'paytrail';
+WC-S-0376	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYU_INDIA        = 'payu_india';
+WC-S-0377	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const RAZORPAY          = 'razorpay';
+WC-S-0378	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const SQUARE            = 'square';
+WC-S-0379	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const STRIPE            = 'stripe';
+WC-S-0380	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const TILOPAY           = 'tilopay';
+WC-S-0381	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const VIVA_WALLET       = 'viva_wallet';
+WC-S-0382	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const WOOPAYMENTS       = 'woopayments';
+WC-S-0383	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const AMAZON_PAY        = 'amazon_pay';
+WC-S-0384	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const AFFIRM            = 'affirm';
+WC-S-0385	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const AFTERPAY          = 'afterpay';
+WC-S-0386	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const CLEARPAY          = 'clearpay';
+WC-S-0387	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const KLARNA            = 'klarna';
+WC-S-0388	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const KUSTOM_CHECKOUT   = 'kustom_checkout';
+WC-S-0389	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const HELCIM            = 'helcim';
+WC-S-0390	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const KOMOJU            = 'komoju';
+WC-S-0391	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const MONEI             = 'monei';
+WC-S-0392	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const COINBASE          = 'coinbase';
+WC-S-0393	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const BILLIE            = 'billie';
+WC-S-0394	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const BOLT              = 'bolt_checkout';
+WC-S-0395	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const AUTHORIZE_NET     = 'authorize_net';
+WC-S-0396	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const DEPAY             = 'depay';
+WC-S-0397	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const ELAVON            = 'elavon';
+WC-S-0398	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const EWAY              = 'eway';
+WC-S-0399	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const FORTISPAY         = 'fortis';
+WC-S-0400	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const GOCARDLESS        = 'gocardless';
+WC-S-0401	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const NEXI_CHECKOUT     = 'nexi_checkout';
+WC-S-0402	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYPAL_ZETTLE     = 'paypal_zettle';
+WC-S-0403	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const RAPYD             = 'rapyd';
+WC-S-0404	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const PAYPAL_BRAINTREE  = 'paypal_braintree';
+WC-S-0405	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const VISA              = 'visa_as';
+WC-S-0406	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const NGENIUS           = 'ngenius';
+WC-S-0407	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const MASTERCARD        = 'mastercard';
+WC-S-0408	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const EVERGREEN         = 'evergreen';
+WC-S-0409	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const MYPOS             = 'mypos';
+WC-S-0410	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const HELIOPAY = 'heliopay';
+WC-S-0411	found			woocommerce-11.2.1:src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php	'name'                    => 'ShipStation',
+WC-S-0412	found			woocommerce-11.2.1:src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php	'name'                    => 'Skydropx',
+WC-S-0413	found			woocommerce-11.2.1:src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php	'name'                    => 'Envia',
+WC-S-0414	found			woocommerce-11.2.1:src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php	'name'                    => 'Easyship',
+WC-S-0415	found			woocommerce-11.2.1:src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php	'name'                    => 'Packlink',
+WC-S-0416	found			woocommerce-11.2.1:src/Admin/Features/ShippingPartnerSuggestions/DefaultShippingPartners.php	'name'                    => 'WooCommerce Shipping',
+WC-S-0417	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/AdditionalPayments.php	'Set up additional payment options',
+WC-S-0418	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/Appearance.php	return __( 'Choose your theme', 'woocommerce' );
+WC-S-0419	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/CustomizeStore.php	return __( 'Customize your store', 'woocommerce' );
+WC-S-0420	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/ExperimentalShippingRecommendation.php	return __( 'Get your products shipped', 'woocommerce' );
+WC-S-0421	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/ExtendStore.php	return __( 'Enhance your store with extensions', 'woocommerce' );
+WC-S-0422	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/GetMobileApp.php	return __( 'Get the free WooCommerce mobile app', 'woocommerce' );
+WC-S-0423	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/LaunchYourStore.php	return __( 'Launch your store', 'woocommerce' );
+WC-S-0424	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/Marketing.php	return __( 'Grow your business', 'woocommerce' );
+WC-S-0425	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/Payments.php	return __( 'Set up payments', 'woocommerce' );
+WC-S-0426	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/Products.php	return __( 'Import your products', 'woocommerce' );
+WC-S-0427	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/ReviewShippingOptions.php	return __( 'Review shipping options', 'woocommerce' );
+WC-S-0428	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/Shipping.php	return __( 'Select your shipping options', 'woocommerce' );
+WC-S-0429	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/StoreCreation.php	return sprintf( __( 'You created %s', 'woocommerce' ), get_bloginfo( 'name' ) );
+WC-S-0430	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/StoreDetails.php	return __( 'You added store details', 'woocommerce' );
+WC-S-0431	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/Tax.php	return __( 'Collect sales tax', 'woocommerce' );
+WC-S-0432	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/TourInAppMarketplace.php	'Discover ways of extending your store with a tour of the Woo Marketplace',
+WC-S-0433	found			woocommerce-11.2.1:src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php	return sprintf( __( 'Get paid with %s', 'woocommerce' ), 'WooPayments' );
+WC-S-0434	found			woocommerce-11.2.1:includes/abstracts/abstract-wc-payment-gateway.php	abstract class WC_Payment_Gateway extends WC_Settings_API {
+WC-S-0435	found			woocommerce-11.2.1:includes/class-wc-payment-gateways.php	$load_gateways = apply_filters( 'woocommerce_payment_gateways', $load_gateways );
+WC-S-0436	found			woocommerce-11.2.1:includes/gateways/class-wc-payment-gateway-cc.php	class WC_Payment_Gateway_CC extends WC_Payment_Gateway {
+WC-S-0437	found			woocommerce-11.2.1:includes/gateways/class-wc-payment-gateway-echeck.php	class WC_Payment_Gateway_ECheck extends WC_Payment_Gateway {
+WC-S-0438	found			woocommerce-11.2.1:includes/abstracts/abstract-wc-payment-token.php	abstract class WC_Payment_Token extends WC_Legacy_Payment_Token {
+WC-S-0439	found			woocommerce-11.2.1:includes/abstracts/abstract-wc-shipping-method.php	abstract class WC_Shipping_Method extends WC_Settings_API {
+WC-S-0440	found			woocommerce-11.2.1:includes/class-wc-shipping.php	return apply_filters( 'woocommerce_shipping_methods', $shipping_methods );
+WC-S-0441	found			woocommerce-11.2.1:includes/abstracts/abstract-wc-integration.php	abstract class WC_Integration extends WC_Settings_API {
+WC-S-0442	found			woocommerce-11.2.1:includes/class-wc-integrations.php	$load_integrations = apply_filters( 'woocommerce_integrations', $load_integrations );
+WC-S-0443	found			woocommerce-11.2.1:includes/class-wc-emails.php	$this->emails = apply_filters( 'woocommerce_email_classes', $this->emails );
+WC-S-0444	found			woocommerce-11.2.1:includes/admin/class-wc-admin-settings.php	self::$settings = apply_filters( 'woocommerce_get_settings_pages', $settings );
+WC-S-0445	found			woocommerce-11.2.1:includes/abstracts/abstract-wc-address-provider.php	abstract class WC_Address_Provider {
+WC-S-0446	found			woocommerce-11.2.1:includes/abstracts/abstract-wc-log-handler.php	abstract class WC_Log_Handler implements WC_Log_Handler_Interface {
+WC-S-0447	found			woocommerce-11.2.1:includes/admin/settings/views/html-webhooks-edit.php	'woocommerce_webhook_topics',
+WC-S-0448	found			woocommerce-11.2.1:includes/rest-api/Server.php	return apply_filters( 'woocommerce_rest_api_get_rest_namespaces', $namespaces );
+WC-S-0449	found			woocommerce-11.2.1:src/Admin/API/Init.php	$controllers = apply_filters( 'woocommerce_admin_rest_controllers', $controllers );
+WC-S-0450	found			woocommerce-11.2.1:includes/react-admin/page-controller-functions.php	function wc_admin_register_page( $options ) {
+WC-S-0451	found			woocommerce-11.2.1:src/Blocks/Integrations/IntegrationInterface.php	interface IntegrationInterface {
+WC-S-0452	found			woocommerce-11.2.1:src/Blocks/Payments/Integrations/AbstractPaymentMethodType.php	abstract class AbstractPaymentMethodType implements PaymentMethodTypeInterface {
+WC-S-0453	found			woocommerce-11.2.1:src/StoreApi/Schemas/ExtendSchema.php	final class ExtendSchema {
+WC-S-0454	found			woocommerce-11.2.1:src/Blocks/Domain/Services/functions.php	function woocommerce_register_additional_checkout_field( $options ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.R
+WC-S-0455	found			woocommerce-11.2.1:src/Utilities/FeaturesUtil.php	public static function declare_compatibility( string $feature_id, string $plugin_file, bool $positive_compatibility = true ): bool {
+WC-S-0456	found			https://wordpress.com/tos/	Please note that Woo-related products and services are intended for commercial use and you acknowledge that your use is that of a representative of a business (as defined by applicable law) and not th
+WC-S-0457	found			https://wordpress.com/tos/	We use the term “Designated Countries” to refer to Australia, Canada, Japan, Mexico, New Zealand, Russia, and all countries located in Europe.
+WC-S-0458	found			https://wordpress.com/tos/	Woo services include WooCommerce, WooPayments, WooCommerce Shipping, WooCommerce Tax, MailPoet, and other products or services available at WooCommerce.com.
+WC-S-0459	found			https://wordpress.com/tos/	If you reside outside of the Designated Countries: WooCommerce, Inc.
+WC-S-0460	found			https://wordpress.com/tos/	If you reside in the Designated Countries: WooCommerce Ireland Ltd.
+WC-S-0461	found			https://wordpress.com/tos/	We refer to Automattic Inc., Aut O’Mattic A8C Ireland Ltd., WooCommerce, Inc., and WooCommerce Ireland Ltd. collectively as “Automattic,” “us,” or “we” throughout these Terms.
+WC-S-0462	found			https://wordpress.com/tos/	You’re responsible for paying all applicable Taxes relating to your use of our Services, your payments, or your purchases.
+WC-S-0463	found			https://wordpress.com/tos/	Woo is an open source, customizable ecommerce platform.
+WC-S-0464	found			https://wordpress.com/tos/	Your use of certain Services offered via Woo, like those related to tax calculation, payment, and shipping, may require a Jetpack connection to function.
+WC-S-0465	found			https://wordpress.com/tos/	Extensions may have their own requirements (like requiring a connection to their servers in order to provide their services) and terms that apply.
+WC-S-0466	found			https://wordpress.com/tos/	We’re not involved in your relationships or transactions with any customer or potential customer, and you’re solely responsible for all of your ecommerce activities.
+WC-S-0467	found			https://wordpress.com/tos/	are responsible for payment of all applicable Taxes relating to your ecommerce activities and your use of Ecommerce Services. You must collect, report, and/or pay the correct amounts to the appropriat
+WC-S-0468	found			https://wordpress.com/tos/	are responsible for acquiring appropriate consent to process customer transactions, giving customers confirmation or receipts for each charge, verifying customers’ identities, and determining a custom
+WC-S-0469	found			https://wordpress.com/tos/	are responsible for all questions, complaints, disputes (including chargebacks), refunds, reversals, or fines that arise from your use of Ecommerce Services.
+WC-S-0470	found			https://wordpress.com/tos/	are solely responsible for ensuring that your transactions with customers comply with applicable export, import, and sanctions laws and regulations, including obtaining any required licenses or other 
+WC-S-0471	found			https://wordpress.com/tos/	must comply with Payment Card Industry Data Security Standard (PCI DSS) if applicable to you.
+WC-S-0472	found			https://wordpress.com/tos/	We may terminate your access to our Services or force refunds (where possible) to your subscribers and customers without notice to you if we determine (in our sole discretion) that your use violates t
+WC-S-0473	found			https://wordpress.com/tos/	While some Ecommerce Services allow you to include sales taxes in transactions — for example, tax calculations may be provided by Taxamo — you shouldn’t rely solely on these features.
+WC-S-0474	found			https://wordpress.com/tos/	we can’t guarantee that tax calculations you receive through or in connection with our Services are complete and accurate.
+WC-S-0475	found			https://wordpress.com/tos/	If you use WooPayments or any third-party services, some of your — and your customers’ — data may be submitted directly to or passed to the respective third party, and the respective third party’s ter
+WC-S-0476	found			https://wordpress.com/tos/	As part of WooPayments, we may use certain third parties to fulfill our obligations to you, including integrating with payment processing third parties.
+WC-S-0477	found			https://wordpress.com/tos/	If we use another third party to fulfill these services, you authorize us to share your payment method information with an alternative third-party payment processor that is or will be integrated into 
+WC-S-0478	found			https://wordpress.com/tos/	We may refuse, condition, or suspend any transaction or account (including your use of WooPayments) if we believe you have violated the Agreement or that your activities or transactions expose you, us
+WC-S-0479	found			https://wordpress.com/tos/	We acknowledge responsibility for the security of cardholder data we store, process, or transmit on behalf of WooPayments users, where that data is within our possession or control, and subject to the
+WC-S-0480	found			https://wordpress.com/tos/	You authorize us to share data relating to WooPayments with the applicable payment processing third party for their use in accordance with their privacy policy.
+WC-S-0481	found			https://wordpress.com/tos/	These POS terminals are manufactured by third parties and are provided “as-is” and “with all faults.”
+WC-S-0482	found			https://wordpress.com/tos/	You acknowledge and agree that we are not and do not become a party to the transaction between you and your customer as a result of the use of WooPay
+WC-S-0483	found			https://wordpress.com/tos/	We’re only an intermediary between you and these third parties; we aren’t involved in any way with your product or its shipment.
+WC-S-0484	found			https://wordpress.com/tos/	You’re solely responsible for compliance with all applicable rules and regulations, including domestic and international shipping and customs regulations and any regulations imposed by the mailing ser
+WC-S-0485	found			https://wordpress.com/tos/	In addition, you’re solely responsible for customs charges, import taxes or duties, and any other charges related to your shipments.
+WC-S-0486	found			https://wordpress.com/tos/	We may offer features that incorporate artificial intelligence (AI) that enable you to use AI to help set up or operate your website or store.
+WC-S-0487	found			https://wordpress.com/tos/	Third-Party Services aren’t vetted, endorsed, or controlled by Automattic.
+WC-S-0488	found			https://wordpress.com/tos/	the Agreement and any access to or use of our Services will be governed by the laws of the state of California, U.S.A., excluding its conflict of law provisions
+WC-S-0489	found			https://wordpress.com/tos/	the proper venue for any disputes arising out of or relating to the Agreement and any access to or use of our Services will be the state and federal courts located in San Francisco County, California,
+WC-S-0490	found			https://wordpress.com/tos/	You agree that our ability to provide our Services to you is subject to compliance with US sanctions that restrict or prohibit who or from where our Services can be accessed.
+WC-S-0491	found			https://wordpress.com/tos/	(i) are not located or residing in any country or territory subject to comprehensive US sanctions (currently Cuba, Crimea, Iran, North Korea, Donetsk People’s Republic, Luhansk People’s Republic, and 
+WC-S-0492	found			https://wordpress.com/tos/	(iii) shall not use or allow access by any of your customers or potential customers (if applicable) to the Services in any manner that may cause Automattic to violate US export controls and sanctions.
+WC-S-0493	found			https://wordpress.com/tos/	We reserve the right to restrict or block your access, or access by any of your customers or potential customers (if applicable), to the Services and/or to terminate the Agreement at any time without 
+WC-S-0494	found			https://automattic.com/privacy/	Generally, the “controller” is the Automattic company that entered into the contract with you under the Terms of Service for the product or service you use.
+WC-S-0495	found			https://automattic.com/privacy/	Different Automattic companies are the controller (or co-controller) of personal information, which means that they are the company responsible for processing that information, based on the particular
+WC-S-0496	found			https://automattic.com/privacy/	60 29th Street #343
+WC-S-0497	found			https://automattic.com/privacy/	Automattic Inc. and WooCommerce, Inc. are also the joint controllers for some of the processing activities related to Services provided by WooCommerce Ireland Ltd.
+WC-S-0498	found			https://automattic.com/privacy/	Automattic Inc. is also the controller for some of the processing activities related to Services provided by WooCommerce, Inc.
+WC-S-0499	found			https://automattic.com/privacy/	These measures include entering into European Commission or UK government approved standard contractual arrangements with entities based in countries outside the EEA or the UK.
+WC-S-0500	found			https://automattic.com/privacy/	Our WooCommerce Usage Tracker also tracks information like your email address, WooCommerce settings, and PHP settings, along with information about your online store, like the aggregate number of orde
+WC-S-0501	found			https://automattic.com/privacy/	If you use WooPayments, we’ll receive information relating to your Stripe account, such as your email address and phone number.
+WC-S-0502	found			https://automattic.com/privacy/	We also process information about visitors to our users’ websites, on behalf of our users and in accordance with our user agreements.
+WC-S-0503	found			https://automattic.com/privacy/	and your hosting provider if your site is not hosted by Automattic
+WC-S-0504	found			https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/	When you sign up for WooPayments, you verify your personal and business information with Stripe. This creates a Stripe Express account that is connected to the WooPayments service.
+WC-S-0505	found			https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/	Although our support staff should always be your initial contact, we may sometimes refer you to Stripe support when needed.
+WC-S-0506	found			https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/	WooPayments accounts do not have access to the Stripe Dashboard provided to standard Stripe accounts.
+WC-S-0507	found			https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/	Occasionally, Stripe may update their Connected Account Agreement, which contains the terms you agreed to during the WooPayments signup process.
+WC-S-0508	found			https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/	In short, opting out will effectively end your usage of WooPayments immediately.
+WC-S-0509	found			https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/	Although your remaining account balance will still be paid out as per your usual schedule, you will not be able to:
+WC-S-0510	found			https://woocommerce.com/document/woopayments/compatibility/countries/	If you are an individual or business based in one of our supported countries, you can sign up as a merchant with WooPayments.
+WC-S-0511	found			https://woocommerce.com/document/woopayments/compatibility/countries/	WooPayments is available for individuals and businesses in:
+WC-S-0512	found			https://woocommerce.com/document/woopayments/compatibility/countries/	NOTE: If you’re using WooPayments for a business, the relevant country is the one where your business is registered — not the one in which you personally live.
+WC-S-0513	found			https://woocommerce.com/document/woopayments/compatibility/countries/	Some countries do not have access to all account types because our partner (Stripe) strictly adheres to the laws and regulations of the country each account is based in.
+WC-S-0514	found			https://woocommerce.com/document/woopayments/compatibility/countries/	Engaging in any commercial activities typically requires a trade license or permit in the UAE. Therefore, only the Business account type is available for the UAE.
+WC-S-0515	found			https://woocommerce.com/document/woopayments/compatibility/countries/	We prioritize new countries and currencies based on a number of factors, including the number of requests by WooCommerce store owners in that country.
+WC-S-0516	found			https://woocommerce.com/document/woopayments/our-policies/	Because the payments sector is heavily regulated, we must gather certain information from you before you’ll be able to use WooPayments.
+WC-S-0517	found			https://woocommerce.com/document/woopayments/our-policies/	WooPayments requires a WordPress.com account to connect your site to the WooPayments server.
+WC-S-0518	found			https://woocommerce.com/document/woopayments/our-policies/	Our payments partner, Stripe, has found other issues with your account.
+WC-S-0519	found			https://woocommerce.com/document/woopayments/our-policies/	Because WooPayments is built in partnership with Stripe, they make the final determination on whether or not to temporarily withhold some (or all) of your payouts based on perceived risk factors.
+WC-S-0520	found			https://woocommerce.com/document/woopayments/our-policies/	By clicking the “Finish setup” button in WooPayments, you agree to the Terms of Service.
+WC-S-0521	found			https://woocommerce.com/document/woopayments/our-policies/know-your-customer/	We follow the same regulations as other financial institutions so that we can ensure we operate in an ethical and trustworthy manner.
+WC-S-0522	found			https://woocommerce.com/document/woopayments/our-policies/know-your-customer/	We’ll do our best to work with Stripe to confirm your identity as quickly as we can.
+WC-S-0523	found			https://woocommerce.com/document/woopayments/our-policies/prohibited-and-restricted-products/	Due to restrictions put in place by card networks, our payment processors, and their financial service providers, some business types and product types are not allowed to transact using WooPayments.
+WC-S-0524	found			https://woocommerce.com/document/woopayments/our-policies/prohibited-and-restricted-products/	If we become aware of prohibited activity, we may restrict or shut down the account.
+WC-S-0525	found			https://woocommerce.com/document/woopayments/our-policies/prohibited-and-restricted-products/	Merchants selling CBD must use Square or Viva Wallet.
+WC-S-0526	found			https://woocommerce.com/document/woopayments/our-policies/reserves/	Because WooPayments is built in partnership with Stripe, they make the final decision on whether or not to temporarily withhold some or all of your balance based on perceived risk factors.
+WC-S-0527	found			https://woocommerce.com/document/woopayments/our-policies/reserves/	Reserves are meant to protect the payments processor (Stripe, in this case) against losses arising from future refunds and disputes.
+WC-S-0528	found			https://woocommerce.com/document/woopayments/our-policies/reserves/	Our visibility into reserves is very limited. We cannot see why one was applied, nor appeal it on your behalf.
+WC-S-0529	found			https://woocommerce.com/document/woopayments/payouts/deposits-and-payouts/	After you receive an order via WooPayments, the payment amount (minus our fees) will be added to your account balance. This balance is regularly transferred to your bank account or debit card.
+WC-S-0530	found			https://woocommerce.com/document/woopayments/payouts/	your WooPayments account balance will simply and silently be held until you add a bank account and make it the default payout method.
+WC-S-0531	found			https://woocommerce.com/document/woopayments/payouts/	It explains how often your balance will be paid out depending on your business location, as well as other important details to keep in mind when it comes to getting your money.
+WC-S-0532	found			https://woocommerce.com/document/woopayments/payouts/	Although Stripe, our payments partner, might allow you to add a debit card even if your account country isn’t the U.S., what they will not do is send payouts to such cards.
+WC-S-0533	found			https://woocommerce.com/document/woopayments/payouts/why-payouts-suspended/	Stripe, our payments partner, has found other issues with your account.
+WC-S-0534	found			https://woocommerce.com/document/woopayments/payouts/why-payouts-suspended/	To try to recover the negative balance, WooPayments may debit your bank account.
+WC-S-0535	found			https://woocommerce.com/document/woopayments/payouts/payout-currencies/	If you take a payment in a currency that doesn’t match the currency of one of your bank accounts, it will be converted into your default currency and paid out into the default account.
+WC-S-0536	found			https://woocommerce.com/document/woopayments/payouts/payout-currencies/	If your country only has a single currency listed, that means you can only accept payouts in that currency, and those payouts can only be sent to banks in your country.
+WC-S-0537	found			https://woocommerce.com/document/woopayments/fees/	The exact fees we charge differ based on various factors, such as:
+WC-S-0538	found			https://woocommerce.com/document/woopayments/fees/	Instead, our fees are deducted directly from each payment made via WooPayments.
+WC-S-0539	found			https://woocommerce.com/document/woopayments/fees/fee-currency/	If the currency in which the customer paid does not match the currency of any bank account on file, the order total is converted to the default currency and the fees are subtracted from that.
+WC-S-0540	found			https://woocommerce.com/document/woopayments/fees/currency-conversion-fees/	When the currency of a customer payment differs from the currency of any bank account you have on file, WooPayments charges a currency conversion fee as part of the transaction.
+WC-S-0541	found			https://woocommerce.com/document/woopayments/currencies/currencies-overview/	Using WooPayments’ built-in multi-currency functions, the customer currency can be changed.
+WC-S-0542	found			https://woocommerce.com/document/woopayments/currencies/currencies-overview/	By default, the customer currency will be the same as the store currency in your WooCommerce settings.
+WC-S-0543	found			https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/	By default, exchange rates are regularly retrieved from the WooPayments server.
+WC-S-0544	found			https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/	If you wish, you can also switch to a manually-defined exchange rate. If and while set, these will be used at all times and not automatically updated.
+WC-S-0545	found			https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/	NOTE: Geolocation is not always 100% accurate and can be incorrect due to customer use of VPNs and other such factors.
+WC-S-0546	found			https://woocommerce.com/document/woopayments/taxes/	WooPayments itself does not contain any functionality related to charging tax on customer purchases.
+WC-S-0547	found			https://woocommerce.com/document/woopayments/taxes/	WooPayments is required to issue a Form 1099-K to U.S. persons if their total payments exceeds a specific minimum threshold.
+WC-S-0548	found			https://woocommerce.com/document/woopayments/taxes/	NOTE: After September 2, 2025 we will be adding VAT/GST/CT on all fees we charge for WooPayments services.
+WC-S-0549	found			https://woocommerce.com/document/woopayments/taxes/documents/	If your business is based in a country where you may need tax invoices, you can receive a monthly invoice showing our fees and the relevant tax (VAT/GST/CT) on those fees.
+WC-S-0550	found			https://woocommerce.com/document/woopayments/our-policies/pci-compliance/	Yes, WooPayments is PCI DSS compliant as a Level 1 service provider.
+WC-S-0551	found			https://woocommerce.com/document/woopayments/our-policies/pci-compliance/	While WooPayments handles payment processing in a PCI DSS–validated environment, your site still plays a role in presenting the checkout experience and must meet certain PCI requirements — especially 
+WC-S-0552	found			https://woocommerce.com/document/woopayments/our-policies/pci-compliance/	These fields are served securely from our payment partner’s PCI DSS–validated environment.
+WC-S-0553	found			https://woocommerce.com/document/woopayments/our-policies/pci-compliance/	WooCommerce stores non-payment details such as the customer’s name, address, and country in your site’s WordPress database.
+WC-S-0554	found			https://woocommerce.com/document/woopayments/our-policies/pci-compliance/	These tokens are stored by our payment partner and requested through your site’s connection to WordPress.com.
+WC-S-0555	found			https://woocommerce.com/document/woopayments/our-policies/connection/	WooPayments requires a connection to WordPress.com in order to function properly.
+WC-S-0556	found			https://woocommerce.com/document/woopayments/compatibility/is-woopayments-required-to-take-payments/	WooPayments is not required for your WooCommerce site to take payments. WooPayments is only one of many payment gateways available for WooCommerce.
+WC-S-0557	found			https://woocommerce.com/document/woopayments/compatibility/is-woopayments-required-to-take-payments/	WooPayments is the only payment gateway designed by Woo for Woo.
+WC-S-0558	found			https://woocommerce.com/document/woopayments/account-management/delete-account/	WooPayments accounts contain information that we must retain for tax and compliance purposes.
+WC-S-0559	found			https://woocommerce.com/document/woopayments/stripe-capital/overview/	WooCommerce has partnered with Stripe to offer eligible businesses access to fast, flexible financing through the Stripe Capital program.
+WC-S-0560	found			https://woocommerce.com/document/woopayments/stripe-capital/overview/	Loans issued by Celtic Bank, a Utah-Chartered Industrial Bank Member FDIC.
+WC-S-0561	found			https://woocommerce.com/document/woopayments/stripe-capital/overview/	WooCommerce businesses are automatically reviewed for eligibility on a daily basis, and you will be contacted via email if your business qualifies for an offer.
+WC-S-0563	found			https://wordpress.com/support/restricted-businesses-and-activities/	You may not use WooCommerce Payments to enable any person (including you) to benefit from
+WC-S-0564	found			https://woocommerce.com/document/privacy-payments/	If you choose to accept payments via a payment gateway like Stripe or PayPal, some of your — and your customers’ — data will be passed to the respective third party.
+WC-S-0565	found			https://woocommerce.com/document/privacy-payments/	When using a payment gateway, you are not sharing this information with WooCommerce.com.
+WC-S-0566	found			https://woocommerce.com/document/privacy-shipping/	Using a shipping extension shares data with the shipping provider, not with WooCommerce.com.
+WC-S-0567	found			https://woocommerce.com/document/privacy-shipping/	WooCommerce Shipping requires Jetpack to connect with other services and provide live shipping rates, discounted labels, and other features.
+WC-S-0568	found			https://woocommerce.com/document/marketplace-privacy/	By using an extension or theme from the WooCommerce.com Marketplace, you are generally not sharing information about your customers with WooCommerce.com.
+WC-S-0569	found			https://woocommerce.com/document/marketplace-privacy/	When you make a purchase on WooCommerce.com and connect your account, we will know which sites you are using the subscription on.
+WC-S-0570	found			https://woocommerce.com/usage-tracking/	Usage tracking is turned off by default for stores using the core WooCommerce plugin downloaded from WordPress.org.
+WC-S-0571	found			https://woocommerce.com/usage-tracking/	When you enable usage tracking, this data is sent automatically to our servers.
+WC-S-0572	found			https://woocommerce.com/usage-tracking/	If you choose to enable usage tracking, the collected data will help us improve WooCommerce and develop features to support your business growth.
+WC-S-0573	found			https://woocommerce.com/woocommerce-analytics-data-syncing/	To use WooCommerce Analytics, you must connect your store to our service and authorize us to collect the information about your store that is necessary for us to provide you with the WooCommerce Analy
+WC-S-0574	found			https://woocommerce.com/woocommerce-analytics-data-syncing/	In order to sync this data between your store and WooCommerce Analytics we make use of Jetpack Sync, which collects and stores additional information about your site
+WC-S-0575	found			https://woocommerce.com/woocommerce-analytics-data-syncing/	We do not share this data with any third-party service or product.
+WC-S-0576	found			https://woocommerce.com/woo-vendor-agreement/	This Marketplace Vendor Agreement (“Agreement”) is entered into between the third party offering Products on the Marketplaces (“you” or “Partner”), Automattic Inc. (“Automattic”), and/or WooCommerce, 
+WC-S-0577	found			https://woocommerce.com/woo-vendor-agreement/	1.1.3. The Product must be GPL compatible and shall be licensed under the GPL.
+WC-S-0578	found			https://woocommerce.com/woo-vendor-agreement/	1.2.10. ensure the Product is not a solution for processing or enabling payment transactions (“Payments Solution”). In order to make a Payments Solution available to Users of the Marketplace(s), Partn
+WC-S-0579	found			https://woocommerce.com/woo-vendor-agreement/	Partner must enter into a separate agreement with Automattic and/or WooCommerce for any revenue collection related to Total Payments Volume.
+WC-S-0580	found			https://woocommerce.com/woo-vendor-agreement/	2.2. For Products listed on the Woo Marketplace, WooCommerce will pay Partner 70% of the Product Net Revenue that WooCommerce collects in connection with a User’s purchase of the Product from the Woo 
+WC-S-0581	found			https://woocommerce.com/woo-vendor-agreement/	2.3. Partner shall be responsible and liable for all amounts relating to Taxes. We will be responsible for facilitating any User requests or claims related to returns, cancellations, refunds, and/or f
+WC-S-0582	found			https://woocommerce.com/woo-vendor-agreement/	1.1.11. For Products listed on the Woo Marketplace, Partner shall provide Product support to Users in accordance with the Woo Support Guidelines, and Partner must use WooCommerce’s support system to p
+WC-S-0583	found			https://woocommerce.com/woo-vendor-agreement/	we reserve the right to suspend or remove a Product from the Marketplace(s) and/or a User’s Website at any time at our discretion
+WC-S-0584	found			https://woocommerce.com/woo-vendor-agreement/	5.3. The Parties acknowledge that User Data is our Confidential Information.
+WC-S-0585	found			woocommerce-11.2.1:readme.txt	[WooCommerce](https://woocommerce.com/woocommerce/) is the open-source ecommerce platform for WordPress.
+WC-S-0586	found			woocommerce-11.2.1:readme.txt	The freedom of open-source means you retain full ownership of your store’s content and data forever.
+WC-S-0587	found			woocommerce-11.2.1:readme.txt	With [WooCommerce](https://woocommerce.com/woocommerce/), your data belongs to you. Always.
+WC-S-0588	found			woocommerce-11.2.1:readme.txt	Unlike hosted ecommerce solutions, WooCommerce store data is future-proof; you’re free to export all your content and take your site to any platform you choose. No restrictions.
+WC-S-0589	found			woocommerce-11.2.1:readme.txt	License: GPLv3
+WC-S-0590	found			woocommerce-11.2.1:readme.txt	(Available in the U.S., U.K., Ireland, Australia, New Zealand, Canada, Spain, France, Germany, and Italy)
+WC-S-0591	found			woocommerce-11.2.1:readme.txt	Print USPS labels right from your dashboard and even schedule a pickup with
+WC-S-0592	found			woocommerce-11.2.1:readme.txt	(U.S.-only)
+WC-S-0593	found			woocommerce-11.2.1:readme.txt	to make automated calculations a reality.
+WC-S-0594	found			woocommerce-11.2.1:readme.txt	WooCommerce is developed and supported by Automattic, the creators of WordPress.com and Jetpack.
+WC-S-0595	found			woocommerce-11.2.1:readme.txt	You can connect your store to [WooCommerce.com](https://woocommerce.com/) to manage your subscriptions on WooCommerce Marketplace and receive product updates without leaving WordPress admin.
+WC-S-0596	found			woocommerce-11.2.1:readme.txt	Our developers [vet each new extension]
+WC-S-0597	found			woocommerce-11.2.1:license.txt	THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+WC-S-0598	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'desc'     => __( 'This controls what currency prices are listed at in the catalog and which currency gateways will take payments in.', 'woocommerce' ),
+WC-S-0599	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'desc'  => __( 'This is where your business is located. Tax rates and shipping rates will use this address.', 'woocommerce' ),
+WC-S-0600	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'desc'     => __( 'This option lets you limit which countries you are willing to sell to.', 'woocommerce' ),
+WC-S-0601	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'desc'     => __( 'Enable tax rates and calculations', 'woocommerce' ),
+WC-S-0602	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'desc_tip' => __( 'This option determines a customers default location. The MaxMind GeoLite Database will be periodically downloaded to your wp-content directory if using geolocation.', 'woocommerce' 
+WC-S-0603	found			woocommerce-11.2.1:includes/gateways/bacs/class-wc-gateway-bacs.php	$this->method_description = __( 'Take payments in person via BACS. More commonly known as direct bank/wire transfer.', 'woocommerce' );
+WC-S-0604	found			woocommerce-11.2.1:includes/gateways/bacs/class-wc-gateway-bacs.php	$order->update_status( $process_payment_status, __( 'Awaiting BACS payment.', 'woocommerce' ) );
+WC-S-0605	found			woocommerce-11.2.1:includes/gateways/cod/class-wc-gateway-cod.php	$this->method_description = __( 'Let your shoppers pay upon delivery — by cash or other methods of payment.', 'woocommerce' );
+WC-S-0606	found			woocommerce-11.2.1:includes/gateways/cheque/class-wc-gateway-cheque.php	$this->method_description = __( 'Take payments in person via checks. This offline gateway can also be useful to test purchases.', 'woocommerce' );
+WC-S-0607	found			woocommerce-11.2.1:includes/gateways/paypal/class-wc-gateway-paypal.php	$this->method_description = __( 'PayPal Standard redirects customers to PayPal to enter their payment information.', 'woocommerce' );
+WC-S-0608	found			woocommerce-11.2.1:includes/gateways/paypal/class-wc-gateway-paypal.php	* By default PayPal Standard isn't loaded on new installs or on existing sites which haven't set up the gateway.
+WC-S-0609	found			woocommerce-11.2.1:includes/class-wc-tracker.php	private static $api_url = 'https://tracking.woocommerce.com/v1/';
+WC-S-0610	found			woocommerce-11.2.1:includes/tracks/class-wc-tracks-client.php	const PIXEL = 'https://pixel.wp.com/t.gif';
+WC-S-0611	found			woocommerce-11.2.1:src/Internal/Logging/RemoteLogger.php	const LOG_ENDPOINT             = 'https://public-api.wordpress.com/rest/v1.1/logstash';
+WC-S-0612	found			woocommerce-11.2.1:includes/class-wc-geolocation.php	'ipify'  => 'https://api64.ipify.org',
+WC-S-0613	found			woocommerce-11.2.1:includes/class-wc-geolocation.php	'ipinfo.io'  => 'https://ipinfo.io/%s/json',
+WC-S-0614	found			woocommerce-11.2.1:includes/class-wc-geolocation.php	shuffle( $ip_lookup_services_keys );
+WC-S-0615	found			woocommerce-11.2.1:includes/integrations/maxmind-geolocation/class-wc-integration-maxmind-database-service.php	'https://download.maxmind.com/app/geoip_download'
+WC-S-0616	found			woocommerce-11.2.1:src/Admin/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php	* Gets a list of fallback methods if remote fetching is disabled.
+WC-S-0617	found			woocommerce-11.2.1:src/Admin/Features/PaymentGatewaySuggestions/Init.php	if ( false === $specs || ! is_array( $specs ) || 0 === count( $specs ) ) {
+WC-S-0618	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	* The payment extension list for each country.
+WC-S-0619	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	* The order is important as it will be used to determine the priority of the suggestions.
+WC-S-0620	found			woocommerce-11.2.1:src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php	const TAG_MADE_IN_WOO       = 'made_in_woo'; // For extensions developed by Woo.
+WC-S-0621	found			woocommerce-11.2.1:src/Internal/Admin/Settings/PaymentsController.php	// When the WooPayments account is onboarded, WooPayments will own the Payments menu item since it is the native Woo payments solution.
+WC-S-0622	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'description'                  => __( 'Enable WooCommerce Analytics to track your store\'s key metrics and view them in a detailed dashboard. All data stays within your store.', 'woocommerce' ),
+WC-S-0623	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md	Payment gateways in WooCommerce are class based and can be added through traditional plugins.
+WC-S-0624	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md	This is where the user must click a button on a form that then redirects them to the payment processor on the gateway's own website.
+WC-S-0625	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md	**Offline** - No online payment is made.
+WC-S-0626	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md	Direct gateways, however, require server security to be implemented
+WC-S-0627	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md	Payment gateways should be created as additional plugins that hook into WooCommerce.
+WC-S-0628	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/shipping/shipping-method-api.md	WooCommerce has a Shipping Method API which plugins can use to add their own rates.
+WC-S-0629	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/README.md	WooCommerce has traditionally stored store orders and related order information (like refunds) as custom WordPress post types or post meta records. This comes with performance issues.
+WC-S-0630	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/README.md	is officially released under the stable flag and will be enabled by default for new installations.
+WC-S-0631	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/README.md	High-Performance Order Storage introduces dedicated tables for data like orders and order addresses and thus dedicated indexes which results in fewer read/write operations and fewer busy tables.
+WC-S-0632	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/best-practices/data-management/data-storage.md	The Options API is a simple and standardized way of storing data in the wp_options table in the WordPress database.
+WC-S-0633	found			https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/	WooCommerce Tax calculates sales tax at checkout using your store address and the customer’s address. It does not file returns, remit tax, or determine where your business has a tax obligation.
+WC-S-0634	found			https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/	The connection is required to authenticate the site with the WooCommerce Tax service.
+WC-S-0635	found			https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/	Automated tax calculations are available to stores based in the United States, Canada, Australia, the United Kingdom, and these European Union countries:
+WC-S-0636	found			https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/	It calculates automated rates for that location; it does not discover or maintain every state where your business may have a tax obligation.
+WC-S-0637	found			https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/	We are not tax professionals; our advice only applies to how to use our software.
+WC-S-0638	found			https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/	If the status page shows Not connected to WordPress.com, return to the WooCommerce Tax connection notice and select Connect.
+WC-S-0639	found			https://woocommerce.com/document/woocommerce-shipping-and-tax/	WooCommerce Tax is designed to remove the work of building and updating custom tax rate tables by automating tax calculations for supported countries.
+WC-S-0640	found			https://woocommerce.com/document/maxmind-geolocation-integration/	To determine this, WooCommerce integrates with MaxMind GeoLite2 geolocation data.
+WC-S-0641	found			https://woocommerce.com/document/maxmind-geolocation-integration/	The free, core WooCommerce plugin enables store owners to automatically geolocate customers to display tax rates and shipping methods specific to their location.
+WC-S-0642	found			https://woocommerce.com/document/server-requirements/	Use it to verify that your hosting environment meets the minimum specifications for WordPress and WooCommerce to function correctly and securely.
+WC-S-0643	found			https://wordpress.com/tos/	These Terms govern your access to and use of the software, applications, extensions, and other products and services we provide through or for WordPress.com, WooCommerce.com, WooPay,
+WC-S-0644	found			https://wordpress.com/tos/	Some of our Services are offered for a fee, like certain WordPress.com plans or Woo themes or extensions (collectively, “Paid Services”).
+WC-S-0645	found			https://wordpress.com/tos/	The software in the extensions available in the Woo Marketplace is licensed under the GNU General Public License (“GPL“).
+WC-S-0646	found			https://wordpress.com/tos/	When you purchase Paid Services from WooCommerce.com, you’ll receive access to any necessary downloads along with updates and support (as described in our Support Policy) for those Paid Services for a
+WC-S-0647	found			https://wordpress.com/tos/	We offer Services via Woo, WordPress.com, and Jetpack that enable you to sell items (goods, content, services, etc.), receive payments on your website, or otherwise earn money, like WooPayments, WooPa
+WC-S-0648	found			https://wordpress.com/tos/	Ecommerce Services cannot be used in, from, by, or for the benefit of a country, organization, entity, or person embargoed or blocked by any government, including those on sanctions lists identified b
+WC-S-0649	found			https://wordpress.com/tos/	As another example, if you use WooPayments, there are transaction fees and dispute fees.
+WC-S-0650	found			https://wordpress.com/tos/	If you have a negative account balance (for example because of fraud, chargebacks, or other operational issues) or we’re obligated to pay or collect any fees relating to your ecommerce activities or y
+WC-S-0651	found			https://wordpress.com/tos/	You may decide to use third-party services, like Stripe or PayPal to collect payment or EasyPost to manage shipping. Please note that WooPayments is powered by Stripe.
+WC-S-0652	found			https://wordpress.com/tos/	While we may license you relevant extensions, we’re not involved in any third-party services tied to those extensions.
+WC-S-0653	found			https://wordpress.com/tos/	In particular, you cannot use WooPayments to enable any person (including you) to benefit from restricted businesses or activities.
+WC-S-0654	found			https://wordpress.com/tos/	WooPay is a service that facilitates faster checkouts on sites using Woo, by enabling you to save some of your information, such as shipping and payment information, for future purchases.
+WC-S-0655	found			https://wordpress.com/tos/	Our shipping Services allow you to check shipping rates or buy shipping labels from certain mailing services, like DHL, FedEx, UPS, USPS, and Canada Post.
+WC-S-0656	found			https://wordpress.com/tos/	Unless we have indicated that Automattic is providing support for it, any use of a Third-Party Service is at your own risk, and we won’t be responsible or liable to you or anyone else for Third-Party 
+WC-S-0657	found			https://wordpress.com/tos/	(ii) are not listed on any United States list of prohibited or restricted parties, such as OFAC’s Specially Designated Nationals and Persons List
+WC-S-0658	found			https://wordpress.com/tos/	If you need a data processing agreement (DPA) with us for the GDPR requirements that apply to us as a data processor for your website, please follow these instructions.
+WC-S-0659	found			https://automattic.com/privacy/	the information about you that we process when you use the Services in the EU or the UK may be used, stored, and/or accessed by individuals operating outside the European Economic Area (EEA) or the UK
+WC-S-0660	found			https://automattic.com/privacy/	If you’d like to use third-party plugins or embeds, WooPayments (powered by Stripe), Woo extensions that enable services provided by third parties, or other third-party software or services, please ke
+WC-S-0661	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	Introduction
+WC-S-0662	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	WooCommerce includes two ways to authenticate with the WP REST API.
+WC-S-0663	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	Index
+WC-S-0664	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The coupons API allows you to create, view, update, and delete individual, or a batch, of coupon codes.
+WC-S-0665	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The customer API allows you to create, view, update, and delete individual, or a batch, of customers.
+WC-S-0666	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The orders API allows you to create, view, update, and delete individual, or a batch, of orders.
+WC-S-0667	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The order actions API allows you to perform specific actions with existing orders like you can from the Edit Order screen in the web app.
+WC-S-0668	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The order notes API allows you to create, view, and delete individual order notes.
+WC-S-0669	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The order refunds API allows you to create, view, and delete individual refunds, based on an existing order.
+WC-S-0670	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The products API allows you to create, view, update, and delete individual, or a batch, of products.
+WC-S-0671	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The product variations API allows you to create, view, update, and delete individual, or a batch, of product variations.
+WC-S-0672	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The product attributes API allows you to create, view, update, and delete individual, or a batch, of product attributes.
+WC-S-0673	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The product attribute terms API allows you to create, view, update, and delete individual, or a batch, of attribute terms.
+WC-S-0674	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The product categories API allows you to create, view, update, and delete individual, or a batch, of categories.
+WC-S-0675	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The product custom fields API allows you to view the custom field names that have been recorded.
+WC-S-0676	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The product shipping class API allows you to create, view, update, and delete individual, or a batch, of shipping classes.
+WC-S-0677	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The product tags API allows you to create, view, update, and delete individual, or a batch, of product tags.
+WC-S-0678	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The product reviews API allows you to create, view, update, and delete individual, or a batch, of product reviews.
+WC-S-0679	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The reports API allows you to view all types of reports available.
+WC-S-0680	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The refunds API is a simple, read-only endpoint that allows you to retrieve a list of refunds outside the context of an existing order.
+WC-S-0681	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The taxes API allows you to create, view, update, and delete individual tax rates, or a batch of tax rates.
+WC-S-0682	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The tax classes API allows you to create, view, and delete individual tax classes.
+WC-S-0683	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The webhooks API allows you to create, view, update, and delete individual, or a batch, of webhooks.
+WC-S-0684	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The settings API allows you to view all groups of settings available.
+WC-S-0685	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	Setting options
+WC-S-0686	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The payment gateways API allows you to view, and update individual payment gateways.
+WC-S-0687	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The shipping zones API allows you to create, view, update, and delete individual shipping zones.
+WC-S-0688	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The shipping zone locations API allows you to view and batch update locations of a shipping zone.
+WC-S-0689	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The shipping zone methods API allows you to create, view, update, and delete individual methods of a shipping zone.
+WC-S-0690	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The shipping methods API allows you to view individual shipping methods.
+WC-S-0691	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The system status API allows you to view all system status items.
+WC-S-0692	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The system status tools API allows you to view and run tools from system status.
+WC-S-0693	found			https://woocommerce.github.io/woocommerce-rest-api-docs/	The data API allows you to view all types of data available.
+WC-S-0694	found			https://woocommerce.com/products/	Extensions
+WC-S-0695	found			https://woocommerce.com/products/	Themes
+WC-S-0696	found			https://woocommerce.com/products/	Business services
+WC-S-0697	found			https://woocommerce.com/product-category/woocommerce-extensions/	Developed by Woo
+WC-S-0698	found			https://woocommerce.com/product-category/woocommerce-extensions/	Official payments
+WC-S-0699	found			https://woocommerce.com/product-category/woocommerce-extensions/	Shipping, delivery and fulfillment
+WC-S-0700	found			https://woocommerce.com/product-category/woocommerce-extensions/	Conversion
+WC-S-0701	found			https://woocommerce.com/product-category/woocommerce-extensions/	Customer service
+WC-S-0702	found			https://woocommerce.com/product-category/woocommerce-extensions/	Merchandising
+WC-S-0703	found			https://woocommerce.com/product-category/woocommerce-extensions/	Store content and customizations
+WC-S-0704	found			https://woocommerce.com/product-category/woocommerce-extensions/	Store management
+WC-S-0705	found			https://woocommerce.com/product-category/woocommerce-extensions/	Marketing
+WC-S-0706	found			https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/	Processors & gateways
+WC-S-0707	found			https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/	Wallets & express checkouts
+WC-S-0708	found			https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/	Buy now pay later
+WC-S-0709	found			https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/	Crypto payments
+WC-S-0710	found			https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/	B2B payments
+WC-S-0711	found			https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/	In-person payments
+WC-S-0712	found			https://woocommerce.com/product-category/woocommerce-extensions/shipping-delivery-and-fulfillment/	Delivery options and enhancements
+WC-S-0713	found			https://woocommerce.com/product-category/woocommerce-extensions/shipping-delivery-and-fulfillment/	Fulfillment and dropshipping
+WC-S-0714	found			https://woocommerce.com/product-category/woocommerce-extensions/shipping-delivery-and-fulfillment/	Inventory and order management
+WC-S-0715	found			https://woocommerce.com/product-category/woocommerce-extensions/shipping-delivery-and-fulfillment/	Label printing
+WC-S-0716	found			https://woocommerce.com/product-category/woocommerce-extensions/shipping-delivery-and-fulfillment/	Shipping rates at checkout
+WC-S-0717	found			https://woocommerce.com/product-category/woocommerce-extensions/conversion/	Customer feedback
+WC-S-0718	found			https://woocommerce.com/product-category/woocommerce-extensions/conversion/	Promotions
+WC-S-0719	found			https://woocommerce.com/product-category/woocommerce-extensions/conversion/	Recovering orders
+WC-S-0720	found			https://woocommerce.com/product-category/woocommerce-extensions/conversion/	Rewards and loyalty
+WC-S-0721	found			https://woocommerce.com/product-category/woocommerce-extensions/conversion/	Store alerts
+WC-S-0722	found			https://woocommerce.com/product-category/woocommerce-extensions/conversion/	Upsells and cross-sells
+WC-S-0723	found			https://woocommerce.com/product-category/woocommerce-extensions/customer-service-2/	Customer Accounts
+WC-S-0724	found			https://woocommerce.com/product-category/woocommerce-extensions/customer-service-2/	Live chat
+WC-S-0725	found			https://woocommerce.com/product-category/woocommerce-extensions/customer-service-2/	Managing customers
+WC-S-0726	found			https://woocommerce.com/product-category/woocommerce-extensions/customer-service-2/	Post-purchase services
+WC-S-0727	found			https://woocommerce.com/product-category/woocommerce-extensions/customer-service-2/	Support
+WC-S-0728	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Memberships
+WC-S-0729	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Additional purchases
+WC-S-0730	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	B2B
+WC-S-0731	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Bookings and appointments
+WC-S-0732	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Bundles
+WC-S-0733	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Gifts
+WC-S-0734	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Order options
+WC-S-0735	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Pricing
+WC-S-0736	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Product display
+WC-S-0737	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Product options
+WC-S-0738	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Product variations
+WC-S-0739	found			https://woocommerce.com/product-category/woocommerce-extensions/merchandising/	Subscriptions
+WC-S-0740	found			https://woocommerce.com/product-category/woocommerce-extensions/store-content-and-customizations/	Cart and checkout features
+WC-S-0741	found			https://woocommerce.com/product-category/woocommerce-extensions/store-content-and-customizations/	International and localization
+WC-S-0742	found			https://woocommerce.com/product-category/woocommerce-extensions/store-content-and-customizations/	Product images and media
+WC-S-0743	found			https://woocommerce.com/product-category/woocommerce-extensions/store-content-and-customizations/	Search and navigation
+WC-S-0744	found			https://woocommerce.com/product-category/woocommerce-extensions/store-content-and-customizations/	Store page enhancements
+WC-S-0745	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Payment management
+WC-S-0746	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Business insights
+WC-S-0747	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Import and export
+WC-S-0748	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Merchant financing
+WC-S-0749	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Order management
+WC-S-0750	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Policy and security
+WC-S-0751	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Sales tax and duties
+WC-S-0752	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Admin and notifications
+WC-S-0753	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Point of sale
+WC-S-0754	found			https://woocommerce.com/product-category/woocommerce-extensions/operations/	Accounting
+WC-S-0755	found			https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/	Advertising and promotions
+WC-S-0756	found			https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/	Automation
+WC-S-0757	found			https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/	CRM
+WC-S-0758	found			https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/	Reporting and analytics
+WC-S-0759	found			https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/	Sales channels
+WC-S-0760	found			https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/	SEO and SEM
+WC-S-0761	found			https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/	Email
+WC-S-0762	found			https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/	Social
+WC-S-0763	found			https://woocommerce.com/product-category/business-services/	Insurance
+WC-S-0764	found			https://woocommerce.com/product-category/business-services/	Business Formation
+WC-S-0765	found			https://woocommerce.com/product-category/business-services/	Communication
+WC-S-0766	found			https://woocommerce.com/product-category/business-services/	Compliance
+WC-S-0767	found			https://woocommerce.com/product-category/business-services/	Developer Services
+WC-S-0768	found			https://woocommerce.com/product-category/business-services/	Finance
+WC-S-0769	found			https://woocommerce.com/product-category/business-services/	Law
+WC-S-0770	found			https://woocommerce.com/product-category/business-services/	Other
+WC-S-0771	found			https://woocommerce.com/product-category/business-services/	Productivity
+WC-S-0772	found			https://woocommerce.com/product-category/business-services/	Support
+WC-S-0773	found			https://developer.woocommerce.com/llms.txt	[Extending the Store API](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/README.md)
+WC-S-0774	found			https://developer.woocommerce.com/llms.txt	[Available extensible endpoints](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/available-endpoints-to-extend.md)
+WC-S-0775	found			https://developer.woocommerce.com/llms.txt	[Adding fields and passing values](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/extend-store-api-add-custom-fields.md)
+WC-S-0776	found			https://developer.woocommerce.com/llms.txt	[Exposing your data](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/extend-store-api-add-data.md)
+WC-S-0777	found			https://developer.woocommerce.com/llms.txt	[Available Formatters](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/extend-store-api-formatters.md)
+WC-S-0778	found			https://developer.woocommerce.com/llms.txt	[Marking a cart item as a child of another cart item](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/extend-store-api-parent-item.md)
+WC-S-0779	found			https://developer.woocommerce.com/llms.txt	[Updating the cart on-demand](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/extend-store-api-update-cart.md)
+WC-S-0780	found			https://developer.woocommerce.com/llms.txt	[Getting started with Cart and Checkout extensibility](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/README.md)
+WC-S-0781	found			https://developer.woocommerce.com/llms.txt	[Additional checkout fields](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/additional-checkout-fields.md)
+WC-S-0782	found			https://developer.woocommerce.com/llms.txt	[Available slots](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/available-slot-fills.md)
+WC-S-0783	found			https://developer.woocommerce.com/llms.txt	[Checkout flow and events](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/checkout-payment-methods/checkout-flow-and-
+WC-S-0784	found			https://developer.woocommerce.com/llms.txt	[Filtering payment methods in the Checkout block](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/checkout-payment-met
+WC-S-0785	found			https://developer.woocommerce.com/llms.txt	[Payment method integration](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/checkout-payment-methods/payment-method-i
+WC-S-0786	found			https://developer.woocommerce.com/llms.txt	[Checkout Utilities](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/checkout-utilities.md)
+WC-S-0787	found			https://developer.woocommerce.com/llms.txt	[DOM events](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/dom-events.md)
+WC-S-0788	found			https://developer.woocommerce.com/llms.txt	[Available Filters](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/README.md)
+WC-S-0789	found			https://developer.woocommerce.com/llms.txt	[Inner block types](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/additional-cart-check
+WC-S-0790	found			https://developer.woocommerce.com/llms.txt	[Cart line items](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/cart-line-items.md)
+WC-S-0791	found			https://developer.woocommerce.com/llms.txt	[Checkout and place order button](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/checkou
+WC-S-0792	found			https://developer.woocommerce.com/llms.txt	[Coupons](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/coupons.md)
+WC-S-0793	found			https://developer.woocommerce.com/llms.txt	[Order summary items](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/order-summary-items
+WC-S-0794	found			https://developer.woocommerce.com/llms.txt	[Totals footer item](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/totals-footer-item.m
+WC-S-0795	found			https://developer.woocommerce.com/llms.txt	[How the checkout block processes an order](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/how-checkout-processes-an-
+WC-S-0796	found			https://developer.woocommerce.com/llms.txt	[Removing checkout fields](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/removing-checkout-fields.md)
+WC-S-0797	found			https://developer.woocommerce.com/llms.txt	[Product collection block](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/product-collection-block/README.md)
+WC-S-0798	found			https://developer.woocommerce.com/llms.txt	[DOM events sent from product collection block](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/product-collection-block/dom-events.md)
+WC-S-0799	found			https://developer.woocommerce.com/llms.txt	[Registering custom collections in product collection block](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/product-collection-block/register-
+WC-S-0800	found			https://developer.woocommerce.com/llms.txt	[On-Sale Badge block](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/product-sale-badge-block/README.md)
+WC-S-0801	found			https://woocommerce.com/document/woopayments/	Account Management
+WC-S-0802	found			https://woocommerce.com/document/woopayments/	Compatibility
+WC-S-0803	found			https://woocommerce.com/document/woopayments/	Currencies
+WC-S-0804	found			https://woocommerce.com/document/woopayments/	Customization and Translation
+WC-S-0805	found			https://woocommerce.com/document/woopayments/	Fees and Debits
+WC-S-0806	found			https://woocommerce.com/document/woopayments/	Fraud and Disputes
+WC-S-0807	found			https://woocommerce.com/document/woopayments/	In-Person Payments
+WC-S-0808	found			https://woocommerce.com/document/woopayments/	Managing Money and Refunds
+WC-S-0809	found			https://woocommerce.com/document/woopayments/	Our Policies
+WC-S-0810	found			https://woocommerce.com/document/woopayments/	Payment Failures / Declines
+WC-S-0811	found			https://woocommerce.com/document/woopayments/	Payment Methods
+WC-S-0812	found			https://woocommerce.com/document/woopayments/	Payouts
+WC-S-0813	found			https://woocommerce.com/document/woopayments/	Stripe Capital
+WC-S-0814	found			https://woocommerce.com/document/woopayments/	Subscriptions
+WC-S-0815	found			https://woocommerce.com/document/woopayments/	Taxes and Documents
+WC-S-0816	found			https://woocommerce.com/document/woopayments/	Testing and Troubleshooting
+WC-S-0817	found			https://wordpress.org/plugins/woocommerce/	Create beautiful, enticing storefronts with themes suited to your brand and industry.
+WC-S-0818	found			https://wordpress.org/plugins/woocommerce/	Increase revenue with an optimized shopping cart experience that converts.
+WC-S-0819	found			https://wordpress.org/plugins/woocommerce/	Customize product pages in minutes using modular product blocks.
+WC-S-0820	found			https://wordpress.org/plugins/woocommerce/	Showcase physical and digital goods, product variations, custom configurations, instant downloads, and affiliate items.
+WC-S-0821	found			https://wordpress.org/plugins/woocommerce/	Sell subscriptions, bookings, or memberships, with our developer-vetted extensions.
+WC-S-0822	found			https://wordpress.org/plugins/woocommerce/	Rise to the top of search results by leveraging WordPress’ SEO advantage.
+WC-S-0823	found			https://wordpress.org/plugins/woocommerce/	Build on a platform that scales. Get flexible ecommerce for high-volume stores.
+WC-S-0824	found			https://wordpress.org/plugins/woocommerce/	Choose how you want to get paid. Conveniently manage payments from the comfort of your store with WooPayments
+WC-S-0825	found			https://wordpress.org/plugins/woocommerce/	Configure your shipping options. Print USPS labels right from your dashboard and even schedule a pickup with WooCommerce Shipping (U.S.-only).
+WC-S-0826	found			https://wordpress.org/plugins/woocommerce/	Simplify sales tax. Add WooCommerce Tax or similar integrated services to make automated calculations a reality.
+WC-S-0827	found			https://wordpress.org/plugins/woocommerce/	Grow your business, add features, and monitor your store on the go
+WC-S-0828	found			https://wordpress.org/plugins/woocommerce/	Own and control your store data – forever
+WC-S-0829	found			https://wordpress.org/plugins/woocommerce/	Connection to WooCommerce.com
+WC-S-0830	found			https://automattic.com/privacy/	Your privacy is critically important to us.
+WC-S-0831	found			https://woocommerce.com/products/	Privacy Notice for California Users
+WC-S-0832	found			https://woocommerce.com/do-not-sell-or-share-my-personal-information/	Do not sell or share my personal information
+WC-S-0833	found			https://woocommerce.com/support-policy/	We support products sold on WooCommerce.com (the “Products”), which may be developed by WooCommerce or a third-party developer.
+WC-S-0834	found			https://woocommerce.com/refund-policy/	For extensions and themes purchased from our Marketplace, we offer a full refund within 30 days of your date of purchase.
+WC-S-0835	found			https://woocommerce.com/products/	Woo trademark guidelines
+WC-S-0836	found			https://woocommerce.com/products/	Brand and logo guidelines
+WC-S-0837	found			https://wordpress.com/tos/	If you’re using Ecommerce Services to sell CBD and other hemp-derived products using Woo, you must follow the Woo Guidelines for CBD and Other Hemp-Derived Products.
+WC-S-0838	found			https://wordpress.com/tos/	Please see our AI Guidelines for the policies you must comply with when you use AI features
+WC-S-0839	found			https://woocommerce.com/tracking-and-opt-outs/	You can also find details about the cookies we use on WooCommerce.com in our Cookie Policy
+WC-S-0840	found			https://woocommerce.com/page-sitemap.xml	https://woocommerce.com/customer-research-agreement/
+WC-S-0841	found			https://woocommerce.com/page-sitemap.xml	https://woocommerce.com/code-of-conduct/
+WC-S-0842	found			https://woocommerce.com/page-sitemap.xml	https://woocommerce.com/wooads-policy/
+WC-S-0843	found			https://woocommerce.com/page-sitemap.xml	https://woocommerce.com/terms-conditions/woopayments-promotion/
+WC-S-0844	found			https://woocommerce.com/page-sitemap.xml	https://woocommerce.com/terms-conditions/woopayments-mid-2025-promotional-offer-terms-and-conditions/
+WC-S-0845	found			https://woocommerce.com/page-sitemap.xml	https://woocommerce.com/terms-conditions/woopayments-action-promotion-2023/
+WC-S-0846	found			https://en.support.wordpress.com/store-guidelines/	Store guidelines
+WC-S-0847	found			https://en.support.wordpress.com/automattic-gdpr/data-processing-agreements/	The Data Processing Agreement is an amendment to our Terms of Service and is available to all WordPress.com site owners.
+WC-S-0848	found			https://wordpress.com/tos/	You have control over your store, and with great power comes great responsibility.
+WC-S-0849	found			https://wordpress.com/tos/	When you use WooPayments, WooPay may be available as a checkout option on your checkout page unless you remove it from your checkout options through your administrative controls.
+WC-S-0850	found			https://wordpress.com/tos/	(b) the Stripe Terminal Services Terms and Stripe Terminal Purchase Terms as applicable
+WC-S-0851	found			https://wordpress.com/tos/	If you enable those features, the Jetpack-specific terms also apply.
+WC-S-0852	found			https://wordpress.com/tos/	While using the Services, you may enable, use, or purchase services, products, software, embeds, or applications (like themes, extensions, plugins, blocks, or point-of-sale terminals) provided or manu
+WC-S-0853	found			https://wordpress.com/tos/	You’re responsible for your Input, the use of any Output, and for complying with any applicable laws, so you must review all Output before using or publishing it.
+WC-S-0854	found			https://woocommerce.com/document/woopayments/compatibility/is-woopayments-required-to-take-payments/	It integrates into your site’s admin dashboard so that you can manage your payments and orders from one place.
+WC-S-0855	found			https://woocommerce.com/document/woopayments/our-policies/reserves/	Because Stripe, not WooPayments, applies and manages reserves, they are the best ones to contact about it.
+WC-S-0856	found			https://woocommerce.com/document/woopayments/our-policies/reserves/	The email Stripe sends you will tell you which one applies to your account.
+WC-S-0857	found			https://woocommerce.com/document/woopayments/our-policies/	The WordPress.com account is used to ensure that requests from your site (e.g., payments, refunds, etc.) are securely and correctly attributed to your store.
+WC-S-0858	found			https://woocommerce.com/document/woopayments/our-policies/connection/	WooPayments will be unable to take payments until
+WC-S-0859	found			https://woocommerce.com/document/woopayments/our-policies/pci-compliance/	Because sensitive payment information is never handled by your site or stored on your server, WooPayments helps reduce your PCI compliance scope significantly.
+WC-S-0860	found			https://woocommerce.com/document/woopayments/taxes/	In the U.S., a Form 1099-K is an information filing required by the Internal Revenue Service (IRS).
+WC-S-0861	found			https://woocommerce.com/document/woopayments/stripe-capital/overview/	You’ll automatically repay the financing over time through a percentage of your transactions according to your repayment rate.
+WC-S-0862	found			https://woocommerce.com/document/woopayments/fraud-and-disputes/fraud-protection/	WooPayments offers configurable fraud protection rules for merchants.
+WC-S-0863	found			https://woocommerce.com/document/woopayments/fraud-and-disputes/fraud-protection/	Blocked: The customer’s payment method is not charged, and the order is set to the Pending Payment status.
+WC-S-0864	found			https://woocommerce.com/document/woopayments/fraud-and-disputes/does-woopayments-use-stripe-radar/	Yes, WooPayments utilizes Stripe Radar. This provides merchants with protection against risky transactions via Stripe’s machine learning technology.
+WC-S-0865	found			https://woocommerce.com/document/woopayments/fraud-and-disputes/does-woopayments-use-stripe-radar/	Most of the Radar rules for WooPayments accounts are managed by our team and cannot be modified by merchants.
+WC-S-0866	found			https://woocommerce.com/document/woopayments/fraud-and-disputes/managing-disputes/	A dispute (also called a “chargeback”) occurs when a cardholder contests a payment made with their card.
+WC-S-0867	found			https://woocommerce.com/document/woopayments/fraud-and-disputes/managing-disputes/	But not responding to disputes would be worse, because it can lead to fines and/or being prohibited from charging certain types of cards.
+WC-S-0868	found			https://woocommerce.com/document/woopayments/in-person-payments/	With WooPayments’ In-Person Payments feature, your customers can pay via tap, swipe, chip card, or mobile wallet payments, all using our mobile app and a simple card reader or a device that supports T
+WC-S-0869	found			https://woocommerce.com/document/woopayments/in-person-payments/	In-Person Payments is available to qualified merchants based in Australia, Canada, Finland, Ireland, Luxembourg, the Netherlands, New Zealand, Singapore, the United Kingdom, and the United States
+WC-S-0870	found			https://woocommerce.com/document/woopayments/in-person-payments/	Card readers and Tap to Pay on iPhone/Android can only collect payments in the default currency for each country.
+WC-S-0871	found			https://woocommerce.com/document/woopayments/payment-methods/local-payment-methods/	By default, WooPayments accepts payments via credit and debit cards.
+WC-S-0872	found			https://woocommerce.com/document/woopayments/compatibility/woopayments-vs-stripe-plugin-comparison/	The regular Stripe plugin is not so closely integrated with the WordPress dashboard.
+WC-S-0873	found			https://woocommerce.com/document/woopayments/account-management/existing-stripe-account/	No, it is not possible to use an existing Stripe account with WooPayments.
+WC-S-0874	found			https://woocommerce.com/document/shop-currency/	WooCommerce only allows for one base currency per store.
+WC-S-0875	found			https://woocommerce.com/document/shop-currency/	If you’d like to display products in different currencies (or allow customers to pay in a currency that differs from your shop’s base currency), you will need to add a multi-currency extension/plugin.
+WC-S-0876	found			https://woocommerce.com/document/shop-currency/	Each WooCommerce store can set one base currency. WooCommerce uses it to display product prices and record new orders.
+WC-S-0877	found			https://woocommerce.com/document/shop-currency/	Changing your base currency changes which currency your store displays and charges in. It does not convert any amounts for you.
+WC-S-0878	found			https://woocommerce.com/document/setting-up-taxes-in-woocommerce/	This documentation covers how to set up tax rates in WooCommerce, as well as how the platform handles taxes/VAT/GST based on these settings — not when or what to charge.
+WC-S-0879	found			https://woocommerce.com/document/setting-up-taxes-in-woocommerce/	We are not tax professionals; our advice only applies to how to use our software.
+WC-S-0880	found			https://woocommerce.com/document/configuring-woocommerce-settings/general/	From your store’s general settings page, you can enter your business address, define the regions you will sell and ship orders to, enable tax calculations and coupons, and select the currency your sho
+WC-S-0881	found			https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/	Use these settings to enable or disable guest checkout, control customer account creation, decide how your store retains or removes personal data, and set your privacy policy notices.
+WC-S-0882	found			https://woocommerce.com/document/pci-dss-compliance-and-woocommerce/	If you store, process, or transmit cardholder data as defined in the PCI SSC glossary, then PCI-DSS applies to you.
+WC-S-0883	found			https://woocommerce.com/document/roles-capabilities/	WooCommerce adds two user roles—Customer and Shop Manager—and extends the existing Administrator role with store management capabilities.
+WC-S-0884	found			https://woocommerce.com/document/roles-capabilities/	To assign roles, go to Users > All Users in the WordPress admin, select a user, and choose a role from the Role dropdown.
+WC-S-0885	found			https://woocommerce.com/document/webhooks/	Webhooks let your WooCommerce store send automatic event notifications to a URL of your choice.
+WC-S-0886	found			https://woocommerce.com/document/webhooks/	Webhooks are useful for integrating your store with third-party services or other external APIs that support them.
+WC-S-0887	found			https://woocommerce.com/document/woocommerce-rest-api/	The WooCommerce REST API connects your store to external systems and services.
+WC-S-0888	found			https://woocommerce.com/document/woocommerce-rest-api/	Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection.
+WC-S-0889	found			https://woocommerce.com/document/woocommerce-analytics/	The Analytics and Sales Reports include detailed report views, advanced filtering and segmenting tools, CSV downloads, and a customizable dashboard for monitoring key store metrics.
+WC-S-0890	found			https://woocommerce.com/document/order-attribution-tracking/	It allows you to attribute orders to traffic sources, providing an understanding of the effectiveness of various marketing efforts.
+WC-S-0891	found			https://woocommerce.com/document/configuring-woocommerce-settings/coming-soon-mode/	Coming soon mode controls who can visit your site while you prepare it for launch.
+WC-S-0892	found			https://woocommerce.com/document/woo-mobile-app-point-of-sale-mode/	POS mode turns a supported tablet or phone into a digital cash register
+WC-S-0893	found			https://woocommerce.com/document/woo-mobile-app-point-of-sale-mode/	Your store address must be in one of the supported countries.
+WC-S-0894	found			https://woocommerce.com/document/woo-mobile-app-point-of-sale-mode/	You must be using that country’s native currency as the store currency.
+WC-S-0895	found			https://woocommerce.com/document/woo-mobile-app-point-of-sale-mode/	All sales sync with your existing WooCommerce site.
+WC-S-0896	found			https://woocommerce.com/document/order-fulfillment/	The WooCommerce Fulfillments system provides a comprehensive solution for managing the order fulfillment processes.
+WC-S-0897	found			https://woocommerce.com/document/order-fulfillment/	This system includes both a user-friendly interface and a robust API for integration with your favorite shipping tools and providers.
+WC-S-0898	found			https://woocommerce.com/document/managing-orders/order-statuses/	Every order in WooCommerce has a status that indicates its current state.
+WC-S-0899	found			https://woocommerce.com/document/managing-woocommerce-com-subscriptions/connect-your-site-to-woocommerce-com/	Connecting your WooCommerce store to your WooCommerce.com account enables you to install extensions automatically, receive product updates and support, and manage your subscriptions directly from your
+WC-S-0900	found			https://woocommerce.com/document/managing-woocommerce-com-subscriptions/what-are-woocommerce-com-subscriptions/	When you purchase an extension or theme from the WooCommerce.com Marketplace, you receive a WooCommerce.com subscription.
+WC-S-0901	found			https://woocommerce.com/document/stripe/	NOTE: The fees for each transaction are determined exclusively by Stripe themselves.
+WC-S-0902	found			https://woocommerce.com/document/woocommerce-square/	The WooCommerce Square Extension bridges the gap between your WooCommerce store and Square.
+WC-S-0903	found			https://woocommerce.com/document/eu-vat-number/	Collect and validate EU VAT numbers at checkout.
+WC-S-0904	found			https://woocommerce.com/document/woocommerce-shipping/	With WooCommerce Shipping, you can create ready-to-print labels for UPS®, USPS, DHL Express, and FedEx directly in WooCommerce and use discounted commercial rates.
+WC-S-0905	found			https://woocommerce.com/document/woocommerce-shipping/	WooCommerce Shipping is currently available to stores based in the United States, including U.S. territories, that use U.S. dollars.
+WC-S-0906	found			https://woocommerce.com/document/woocommerce-shipping/	It does not provide live shipping rates at checkout.
+WC-S-0907	found			https://woocommerce.com/document/installing-uninstalling-woocommerce/	New menu items, custom post types, and taxonomies for orders, products, and more
+WC-S-0908	found			https://woocommerce.com/document/maxmind-geolocation-integration/	Generating a MaxMind license key.
+WC-S-0909	found			https://woocommerce.com/products/	WooPayments by Woo The only payment solution fully integrated with WooCommerce.
+WC-S-0910	found			https://woocommerce.com/products/	Stripe by Stripe Maximize revenue with the new checkout from Stripe.
+WC-S-0911	found			https://woocommerce.com/products/	PayPal Payments by PayPal The official, all-in-one checkout solution
+WC-S-0912	found			https://woocommerce.com/products/	Square by Woo Woo's preferred POS partner, Square,
+WC-S-0913	found			https://woocommerce.com/product-category/woocommerce-extensions/	Country All Countries
+WC-S-0914	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/README.md	The Store API provides public Rest API endpoints for the development of customer-facing cart, checkout, and product functionality.
+WC-S-0915	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/README.md	In contrast to the WooCommerce REST API, the Store API is unauthenticated and does not provide access to sensitive store data or other customer information.
+WC-S-0916	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/README.md	Your application can change the way the Store API works by extending certain endpoints.
+WC-S-0917	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/README.md	This document is a high-level overview of the moving parts required to extend the Cart and Checkout blocks.
+WC-S-0918	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/mcp/README.md	WooCommerce includes native support for the Model Context Protocol (MCP), enabling AI assistants and tools to interact directly with WooCommerce stores through a standardized protocol.
+WC-S-0919	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/address-autocomplete.md	The WooCommerce Address Autocomplete system allows third-party services to provide address suggestions as customers type in their billing and shipping addresses during checkout.
+WC-S-0920	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/best-practices/data-management/logging.md	You can view the entries created by the logger by going to **WooCommerce > Status > Logs**.
+WC-S-0921	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/rest-api/authentication.mdx	Pre-generated keys can be used to authenticate use of the REST API endpoints.
+WC-S-0922	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/settings-and-config/implementing-settings.md	One of the easiest ways to create a settings page is by taking advantage of the [`WC_Integration` class]
+WC-S-0923	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/getting-started.md	The WooCommerce.com Marketplace connects trusted developers and merchants worldwide to create powerful and flexible online stores.
+WC-S-0924	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'id'       => 'woocommerce_allowed_countries',
+WC-S-0925	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'id'       => 'woocommerce_ship_to_countries',
+WC-S-0926	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'id'       => 'woocommerce_currency',
+WC-S-0927	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-general.php	'name'    => __( 'Preferred address autocomplete provider', 'woocommerce' ),
+WC-S-0928	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-accounts.php	'desc'          => __( 'Enable guest checkout (recommended)', 'woocommerce' ),
+WC-S-0929	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-accounts.php	'title' => __( 'Personal data retention', 'woocommerce' ),
+WC-S-0930	found			woocommerce-11.2.1:includes/gateways/bacs/class-wc-gateway-bacs.php	<?php esc_html_e( 'Account details:', 'woocommerce' ); ?>
+WC-S-0931	found			woocommerce-11.2.1:includes/class-wc-webhook.php	$http_args['headers']['X-WC-Webhook-Signature']   = $this->generate_signature( $http_args['body'] );
+WC-S-0932	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	__( 'Enables rate limiting for Checkout place order and Store API /checkout endpoint. To further control this, refer to <a href="%s" target="_blank">rate limiting documentation</a>.', 'woocommerce' ),
+WC-S-0933	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'New, faster way to find extensions and themes for your WooCommerce store',
+WC-S-0934	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'description'                  => __( 'Enable the public order withdrawal feature for customer requests.', 'woocommerce' ),
+WC-S-0935	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'Enable this feature to track and credit channels and campaigns that contribute to orders on your site',
+WC-S-0936	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	__( 'Allow WooCommerce to send error logs and non-sensitive diagnostic data to help improve WooCommerce. This feature requires %1$susage tracking%2$s to be enabled.', 'woocommerce' ),
+WC-S-0937	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'Enable Point of Sale functionality in the WooCommerce mobile apps.',
+WC-S-0938	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'Enable the Order Fulfillments feature to manage order fulfillment and shipping.',
+WC-S-0939	found			woocommerce-11.2.1:src/Internal/Features/FeaturesController.php	'Enable push notifications for the WooCommerce mobile apps to receive order notifications and store updates.',
+WC-S-0940	found			woocommerce-11.2.1:src/Internal/CostOfGoodsSold/CostOfGoodsSoldController.php	'description'                  => __( 'Allows entering cost of goods sold information for products.', 'woocommerce' ),
+WC-S-0941	found			woocommerce-11.2.1:src/StoreApi/RoutesController.php	private static $api_namespace = 'wc/store';
+WC-S-0942	found			https://automattic.com/privacy/	Because Automattic’s Services are offered worldwide, the information about you that we process when you use the Services in the EU or the UK may be used, stored
+WC-S-0943	found			https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-token-api.md	WooCommerce 2.6 introduced an API for storing and managing payment tokens for gateways. Users can also manage these tokens from their account settings and choose from saved payment tokens on checkout.
+WC-S-0944	found			https://woocommerce.com/products/	MailPoet – Newsletters, Email Marketing, and Automation
+WC-S-0945	found			woocommerce-11.2.1:readme.txt	to modify or create functionality.
+WC-S-0946	found			woocommerce-11.2.1:readme.txt	with our developer-vetted extensions.
+WC-S-0947	found			https://woocommerce.com/wooads-policy/	To use WooAds, you authorize us to access the data from your ad platform APIs about your ad campaigns that is necessary for us to provide you with the WooAds service.
+WC-S-0948	found			https://woocommerce.com/wooads-policy/	We do not share this data with any third-party service or product.
+WC-S-0949	found			https://woocommerce.com/wooads-policy/	In order to sync this data between your store and WooAds, we make use of a data sync module from Jetpack.
+WC-S-0950	found			woocommerce-11.2.1:includes/admin/settings/class-wc-settings-products.php	'desc'            => __( 'Reviews can only be left by "verified owners"', 'woocommerce' ),
+WC-S-0951	found			https://en.support.wordpress.com/store-guidelines/	For example, you may not sell (or facilitate the sale of) any of the following in (or through) the e-commerce services on your site:
+WC-S-0952	found			https://en.support.wordpress.com/store-guidelines/	the use of e-commerce services on your WordPress.com site—such as a WooCommerce store or Payments block—must not violate our WordPress.com User Guidelines
+WC-S-0953	found			https://jetpack.com/support/what-data-does-jetpack-sync/	As part of the required connection to WordPress.com, Jetpack caches your site’s data to WordPress.com servers (which power all of Jetpack’s functionality).
+WC-S-0954	found			https://jetpack.com/support/what-data-does-jetpack-sync/	Jetpack syncs all the data needed for all of its features, whether activated or not, to Automattic’s servers.
+WC-S-0955	found			https://jetpack.com/support/what-data-does-jetpack-sync/	We sync any data related to your site’s orders, with the following exceptions:
+WC-S-0956	found			https://jetpack.com/support/what-data-does-jetpack-sync/	WooCommerce Tax uses Automattic’s servers and a connection to our partners to enable useful features for your store.
+WC-S-0957	found			https://jetpack.com/support/what-data-does-jetpack-sync/	Tax Calculations are provided by TaxJar.
+WC-S-0958	found			https://jetpack.com/support/what-data-does-jetpack-sync/	are passed to our partners, EasyPost, and the respective mailing service, such as USPS or Canada Post. This is done via Automattic’s servers.
+WC-S-0959	found			https://jetpack.com/support/what-data-does-jetpack-sync/	Regarding data handling, we validate (but do not store) the data you send to us and then pass that data on to our partners.
+WC-S-0960	found			https://jetpack.com/support/what-data-does-jetpack-sync/	Please note that if you use Stripe, they provide us with access to your payment data and account activity. We do not store this data.
+WC-S-0961	found			https://jetpack.com/support/what-data-does-jetpack-sync/	the JSON API module can expose live site data, including full WooCommerce order details that contain personally identifiable information (PII).
+WC-S-0962	found			https://automattic.com/privacy-notice/	This Privacy Notice explains how we, at Automattic, process information about the visitors of our users’ websites in connection with the services we provide through WordPress.com, Jetpack (including W
+WC-S-0963	found			https://woocommerce.com/document/eu-vat-number/	EU VAT Number by Woo
+WC-S-0964	found			https://woocommerce.com/document/eu-vat-number/	EU VAT Number settings in WooCommerce > Settings > Tax.

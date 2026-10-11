@@ -1,0 +1,1395 @@
+[
+{
+"list": "api-resources",
+"entry": "Introduction",
+"key": "api_nav_introduction",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0661"
+},
+{
+"list": "api-resources",
+"entry": "Authentication",
+"key": "api_nav_authentication",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0662"
+},
+{
+"list": "api-resources",
+"entry": "Index",
+"key": "api_nav_index",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0663"
+},
+{
+"list": "api-resources",
+"entry": "Coupons",
+"key": "api_nav_coupons",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0664"
+},
+{
+"list": "api-resources",
+"entry": "Customers",
+"key": "api_nav_customers",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0665"
+},
+{
+"list": "api-resources",
+"entry": "Orders",
+"key": "api_nav_orders",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0666"
+},
+{
+"list": "api-resources",
+"entry": "Order actions",
+"key": "api_nav_order-actions",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0667"
+},
+{
+"list": "api-resources",
+"entry": "Order notes",
+"key": "api_nav_order-notes",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0668"
+},
+{
+"list": "api-resources",
+"entry": "Order refunds",
+"key": "api_nav_order-refunds",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0669"
+},
+{
+"list": "api-resources",
+"entry": "Products",
+"key": "api_nav_products",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0670"
+},
+{
+"list": "api-resources",
+"entry": "Product variations",
+"key": "api_nav_product-variations",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0671"
+},
+{
+"list": "api-resources",
+"entry": "Product attributes",
+"key": "api_nav_product-attributes",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0672"
+},
+{
+"list": "api-resources",
+"entry": "Product attribute terms",
+"key": "api_nav_product-attribute-terms",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0673"
+},
+{
+"list": "api-resources",
+"entry": "Product categories",
+"key": "api_nav_product-categories",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0674"
+},
+{
+"list": "api-resources",
+"entry": "Product custom fields",
+"key": "api_nav_product-custom-fields",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0675"
+},
+{
+"list": "api-resources",
+"entry": "Product shipping classes",
+"key": "api_nav_product-shipping-classes",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0676"
+},
+{
+"list": "api-resources",
+"entry": "Product tags",
+"key": "api_nav_product-tags",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0677"
+},
+{
+"list": "api-resources",
+"entry": "Product reviews",
+"key": "api_nav_product-reviews",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0678"
+},
+{
+"list": "api-resources",
+"entry": "Reports",
+"key": "api_nav_reports",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0679"
+},
+{
+"list": "api-resources",
+"entry": "Refunds",
+"key": "api_nav_refunds",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0680"
+},
+{
+"list": "api-resources",
+"entry": "Tax rates",
+"key": "api_nav_tax-rates",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0681"
+},
+{
+"list": "api-resources",
+"entry": "Tax classes",
+"key": "api_nav_tax-classes",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0682"
+},
+{
+"list": "api-resources",
+"entry": "Webhooks",
+"key": "api_nav_webhooks",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0683"
+},
+{
+"list": "api-resources",
+"entry": "Settings",
+"key": "api_nav_settings",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0684"
+},
+{
+"list": "api-resources",
+"entry": "Setting options",
+"key": "api_nav_setting-options",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0685"
+},
+{
+"list": "api-resources",
+"entry": "Payment gateways",
+"key": "api_nav_payment-gateways",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0686"
+},
+{
+"list": "api-resources",
+"entry": "Shipping zones",
+"key": "api_nav_shipping-zones",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0687"
+},
+{
+"list": "api-resources",
+"entry": "Shipping zone locations",
+"key": "api_nav_shipping-zone-locations",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0688"
+},
+{
+"list": "api-resources",
+"entry": "Shipping zone methods",
+"key": "api_nav_shipping-zone-methods",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0689"
+},
+{
+"list": "api-resources",
+"entry": "Shipping methods",
+"key": "api_nav_shipping-methods",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0690"
+},
+{
+"list": "api-resources",
+"entry": "System status",
+"key": "api_nav_system-status",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0691"
+},
+{
+"list": "api-resources",
+"entry": "System status tools",
+"key": "api_nav_system-status-tools",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0692"
+},
+{
+"list": "api-resources",
+"entry": "Data",
+"key": "api_nav_data",
+"note": "REST API reference navigation group",
+"cite_id": "WC-S-0693"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions",
+"key": "mkt_top_extensions",
+"note": "",
+"cite_id": "WC-S-0694"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Themes",
+"key": "mkt_top_themes",
+"note": "",
+"cite_id": "WC-S-0695"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services",
+"key": "mkt_top_business_services",
+"note": "",
+"cite_id": "WC-S-0696"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Developed by Woo",
+"key": "mkt_cat_developed_by_woo",
+"note": "",
+"cite_id": "WC-S-0697"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Official payments",
+"key": "mkt_cat_official_payments",
+"note": "",
+"cite_id": "WC-S-0698"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Shipping, delivery and fulfillment",
+"key": "mkt_cat_shipping_delivery_and_fulfillment",
+"note": "",
+"cite_id": "WC-S-0699"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Conversion",
+"key": "mkt_cat_conversion",
+"note": "",
+"cite_id": "WC-S-0700"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Customer service",
+"key": "mkt_cat_customer_service",
+"note": "",
+"cite_id": "WC-S-0701"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising",
+"key": "mkt_cat_merchandising",
+"note": "",
+"cite_id": "WC-S-0702"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store content and customizations",
+"key": "mkt_cat_store_content_and_customizations",
+"note": "",
+"cite_id": "WC-S-0703"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management",
+"key": "mkt_cat_store_management",
+"note": "",
+"cite_id": "WC-S-0704"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing",
+"key": "mkt_cat_marketing",
+"note": "",
+"cite_id": "WC-S-0705"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Official payments > Processors & gateways",
+"key": "mkt_sub_official_payments_processors_gateways",
+"note": "",
+"cite_id": "WC-S-0706"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Official payments > Wallets & express checkouts",
+"key": "mkt_sub_official_payments_wallets_express_checkouts",
+"note": "",
+"cite_id": "WC-S-0707"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Official payments > Buy now pay later",
+"key": "mkt_sub_official_payments_buy_now_pay_later",
+"note": "",
+"cite_id": "WC-S-0708"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Official payments > Crypto payments",
+"key": "mkt_sub_official_payments_crypto_payments",
+"note": "",
+"cite_id": "WC-S-0709"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Official payments > B2B payments",
+"key": "mkt_sub_official_payments_b_b_payments",
+"note": "",
+"cite_id": "WC-S-0710"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Official payments > In-person payments",
+"key": "mkt_sub_official_payments_in_person_payments",
+"note": "",
+"cite_id": "WC-S-0711"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Shipping, delivery and fulfillment > Delivery options and enhancements",
+"key": "mkt_sub_shipping_delivery_and_fulfillment_delivery_options_and_enhancements",
+"note": "",
+"cite_id": "WC-S-0712"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Shipping, delivery and fulfillment > Fulfillment and dropshipping",
+"key": "mkt_sub_shipping_delivery_and_fulfillment_fulfillment_and_dropshipping",
+"note": "",
+"cite_id": "WC-S-0713"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Shipping, delivery and fulfillment > Inventory and order management",
+"key": "mkt_sub_shipping_delivery_and_fulfillment_inventory_and_order_management",
+"note": "",
+"cite_id": "WC-S-0714"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Shipping, delivery and fulfillment > Label printing",
+"key": "mkt_sub_shipping_delivery_and_fulfillment_label_printing",
+"note": "",
+"cite_id": "WC-S-0715"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Shipping, delivery and fulfillment > Shipping rates at checkout",
+"key": "mkt_sub_shipping_delivery_and_fulfillment_shipping_rates_at_checkout",
+"note": "",
+"cite_id": "WC-S-0716"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Conversion > Customer feedback",
+"key": "mkt_sub_conversion_customer_feedback",
+"note": "",
+"cite_id": "WC-S-0717"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Conversion > Promotions",
+"key": "mkt_sub_conversion_promotions",
+"note": "",
+"cite_id": "WC-S-0718"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Conversion > Recovering orders",
+"key": "mkt_sub_conversion_recovering_orders",
+"note": "",
+"cite_id": "WC-S-0719"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Conversion > Rewards and loyalty",
+"key": "mkt_sub_conversion_rewards_and_loyalty",
+"note": "",
+"cite_id": "WC-S-0720"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Conversion > Store alerts",
+"key": "mkt_sub_conversion_store_alerts",
+"note": "",
+"cite_id": "WC-S-0721"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Conversion > Upsells and cross-sells",
+"key": "mkt_sub_conversion_upsells_and_cross_sells",
+"note": "",
+"cite_id": "WC-S-0722"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Customer service > Customer Accounts",
+"key": "mkt_sub_customer_service_customer_accounts",
+"note": "",
+"cite_id": "WC-S-0723"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Customer service > Live chat",
+"key": "mkt_sub_customer_service_live_chat",
+"note": "",
+"cite_id": "WC-S-0724"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Customer service > Managing customers",
+"key": "mkt_sub_customer_service_managing_customers",
+"note": "",
+"cite_id": "WC-S-0725"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Customer service > Post-purchase services",
+"key": "mkt_sub_customer_service_post_purchase_services",
+"note": "",
+"cite_id": "WC-S-0726"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Customer service > Support",
+"key": "mkt_sub_customer_service_support",
+"note": "",
+"cite_id": "WC-S-0727"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Memberships",
+"key": "mkt_sub_merchandising_memberships",
+"note": "",
+"cite_id": "WC-S-0728"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Additional purchases",
+"key": "mkt_sub_merchandising_additional_purchases",
+"note": "",
+"cite_id": "WC-S-0729"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > B2B",
+"key": "mkt_sub_merchandising_b_b",
+"note": "",
+"cite_id": "WC-S-0730"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Bookings and appointments",
+"key": "mkt_sub_merchandising_bookings_and_appointments",
+"note": "",
+"cite_id": "WC-S-0731"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Bundles",
+"key": "mkt_sub_merchandising_bundles",
+"note": "",
+"cite_id": "WC-S-0732"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Gifts",
+"key": "mkt_sub_merchandising_gifts",
+"note": "",
+"cite_id": "WC-S-0733"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Order options",
+"key": "mkt_sub_merchandising_order_options",
+"note": "",
+"cite_id": "WC-S-0734"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Pricing",
+"key": "mkt_sub_merchandising_pricing",
+"note": "",
+"cite_id": "WC-S-0735"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Product display",
+"key": "mkt_sub_merchandising_product_display",
+"note": "",
+"cite_id": "WC-S-0736"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Product options",
+"key": "mkt_sub_merchandising_product_options",
+"note": "",
+"cite_id": "WC-S-0737"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Product variations",
+"key": "mkt_sub_merchandising_product_variations",
+"note": "",
+"cite_id": "WC-S-0738"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Merchandising > Subscriptions",
+"key": "mkt_sub_merchandising_subscriptions",
+"note": "",
+"cite_id": "WC-S-0739"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store content and customizations > Cart and checkout features",
+"key": "mkt_sub_store_content_and_customizations_cart_and_checkout_features",
+"note": "",
+"cite_id": "WC-S-0740"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store content and customizations > International and localization",
+"key": "mkt_sub_store_content_and_customizations_international_and_localization",
+"note": "",
+"cite_id": "WC-S-0741"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store content and customizations > Product images and media",
+"key": "mkt_sub_store_content_and_customizations_product_images_and_media",
+"note": "",
+"cite_id": "WC-S-0742"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store content and customizations > Search and navigation",
+"key": "mkt_sub_store_content_and_customizations_search_and_navigation",
+"note": "",
+"cite_id": "WC-S-0743"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store content and customizations > Store page enhancements",
+"key": "mkt_sub_store_content_and_customizations_store_page_enhancements",
+"note": "",
+"cite_id": "WC-S-0744"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Payment management",
+"key": "mkt_sub_store_management_payment_management",
+"note": "",
+"cite_id": "WC-S-0745"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Business insights",
+"key": "mkt_sub_store_management_business_insights",
+"note": "",
+"cite_id": "WC-S-0746"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Import and export",
+"key": "mkt_sub_store_management_import_and_export",
+"note": "",
+"cite_id": "WC-S-0747"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Merchant financing",
+"key": "mkt_sub_store_management_merchant_financing",
+"note": "",
+"cite_id": "WC-S-0748"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Order management",
+"key": "mkt_sub_store_management_order_management",
+"note": "",
+"cite_id": "WC-S-0749"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Policy and security",
+"key": "mkt_sub_store_management_policy_and_security",
+"note": "",
+"cite_id": "WC-S-0750"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Sales tax and duties",
+"key": "mkt_sub_store_management_sales_tax_and_duties",
+"note": "",
+"cite_id": "WC-S-0751"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Admin and notifications",
+"key": "mkt_sub_store_management_admin_and_notifications",
+"note": "",
+"cite_id": "WC-S-0752"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Point of sale",
+"key": "mkt_sub_store_management_point_of_sale",
+"note": "",
+"cite_id": "WC-S-0753"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Store management > Accounting",
+"key": "mkt_sub_store_management_accounting",
+"note": "",
+"cite_id": "WC-S-0754"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing > Advertising and promotions",
+"key": "mkt_sub_marketing_advertising_and_promotions",
+"note": "",
+"cite_id": "WC-S-0755"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing > Automation",
+"key": "mkt_sub_marketing_automation",
+"note": "",
+"cite_id": "WC-S-0756"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing > CRM",
+"key": "mkt_sub_marketing_crm",
+"note": "",
+"cite_id": "WC-S-0757"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing > Reporting and analytics",
+"key": "mkt_sub_marketing_reporting_and_analytics",
+"note": "",
+"cite_id": "WC-S-0758"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing > Sales channels",
+"key": "mkt_sub_marketing_sales_channels",
+"note": "",
+"cite_id": "WC-S-0759"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing > SEO and SEM",
+"key": "mkt_sub_marketing_seo_and_sem",
+"note": "",
+"cite_id": "WC-S-0760"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing > Email",
+"key": "mkt_sub_marketing_email",
+"note": "",
+"cite_id": "WC-S-0761"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Extensions > Marketing > Social",
+"key": "mkt_sub_marketing_social",
+"note": "",
+"cite_id": "WC-S-0762"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Insurance",
+"key": "mkt_bs_insurance",
+"note": "",
+"cite_id": "WC-S-0763"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Business Formation",
+"key": "mkt_bs_business_formation",
+"note": "",
+"cite_id": "WC-S-0764"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Communication",
+"key": "mkt_bs_communication",
+"note": "",
+"cite_id": "WC-S-0765"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Compliance",
+"key": "mkt_bs_compliance",
+"note": "",
+"cite_id": "WC-S-0766"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Developer Services",
+"key": "mkt_bs_developer_services",
+"note": "",
+"cite_id": "WC-S-0767"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Finance",
+"key": "mkt_bs_finance",
+"note": "",
+"cite_id": "WC-S-0768"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Law",
+"key": "mkt_bs_law",
+"note": "",
+"cite_id": "WC-S-0769"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Other",
+"key": "mkt_bs_other",
+"note": "",
+"cite_id": "WC-S-0770"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Productivity",
+"key": "mkt_bs_productivity",
+"note": "",
+"cite_id": "WC-S-0771"
+},
+{
+"list": "other:marketplace-categories",
+"entry": "Business services > Support",
+"key": "mkt_bs_support",
+"note": "",
+"cite_id": "WC-S-0772"
+},
+{
+"list": "extension-points",
+"entry": "Extending the Store API",
+"key": "llms_apis_store_api_extending_store_api_readme_md",
+"note": "apis/store-api/extending-store-api/README.md",
+"cite_id": "WC-S-0773"
+},
+{
+"list": "extension-points",
+"entry": "Available extensible endpoints",
+"key": "llms_apis_store_api_extending_store_api_available_endpoints_to_extend_md",
+"note": "apis/store-api/extending-store-api/available-endpoints-to-extend.md",
+"cite_id": "WC-S-0774"
+},
+{
+"list": "extension-points",
+"entry": "Adding fields and passing values",
+"key": "llms_apis_store_api_extending_store_api_extend_store_api_add_custom_fields_md",
+"note": "apis/store-api/extending-store-api/extend-store-api-add-custom-fields.md",
+"cite_id": "WC-S-0775"
+},
+{
+"list": "extension-points",
+"entry": "Exposing your data",
+"key": "llms_apis_store_api_extending_store_api_extend_store_api_add_data_md",
+"note": "apis/store-api/extending-store-api/extend-store-api-add-data.md",
+"cite_id": "WC-S-0776"
+},
+{
+"list": "extension-points",
+"entry": "Available Formatters",
+"key": "llms_apis_store_api_extending_store_api_extend_store_api_formatters_md",
+"note": "apis/store-api/extending-store-api/extend-store-api-formatters.md",
+"cite_id": "WC-S-0777"
+},
+{
+"list": "extension-points",
+"entry": "Marking a cart item as a child of another cart item",
+"key": "llms_apis_store_api_extending_store_api_extend_store_api_parent_item_md",
+"note": "apis/store-api/extending-store-api/extend-store-api-parent-item.md",
+"cite_id": "WC-S-0778"
+},
+{
+"list": "extension-points",
+"entry": "Updating the cart on-demand",
+"key": "llms_apis_store_api_extending_store_api_extend_store_api_update_cart_md",
+"note": "apis/store-api/extending-store-api/extend-store-api-update-cart.md",
+"cite_id": "WC-S-0779"
+},
+{
+"list": "extension-points",
+"entry": "Getting started with Cart and Checkout extensibility",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_readme_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/README.md",
+"cite_id": "WC-S-0780"
+},
+{
+"list": "extension-points",
+"entry": "Additional checkout fields",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_additional_checkout_fields_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/additional-checkout-fields.md",
+"cite_id": "WC-S-0781"
+},
+{
+"list": "extension-points",
+"entry": "Available slots",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_available_slot_fills_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/available-slot-fills.md",
+"cite_id": "WC-S-0782"
+},
+{
+"list": "extension-points",
+"entry": "Checkout flow and events",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_checkout_payment_methods_checkout_flow_and_events_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/checkout-payment-methods/checkout-flow-and-events.md",
+"cite_id": "WC-S-0783"
+},
+{
+"list": "extension-points",
+"entry": "Filtering payment methods in the Checkout block",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_checkout_payment_methods_filtering_payment_methods_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/checkout-payment-methods/filtering-payment-methods.md",
+"cite_id": "WC-S-0784"
+},
+{
+"list": "extension-points",
+"entry": "Payment method integration",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_checkout_payment_methods_payment_method_integration_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/checkout-payment-methods/payment-method-integration.md",
+"cite_id": "WC-S-0785"
+},
+{
+"list": "extension-points",
+"entry": "Checkout Utilities",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_checkout_utilities_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/checkout-utilities.md",
+"cite_id": "WC-S-0786"
+},
+{
+"list": "extension-points",
+"entry": "DOM events",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_dom_events_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/dom-events.md",
+"cite_id": "WC-S-0787"
+},
+{
+"list": "extension-points",
+"entry": "Available Filters",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_filters_in_cart_and_checkout_readme_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/README.md",
+"cite_id": "WC-S-0788"
+},
+{
+"list": "extension-points",
+"entry": "Inner block types",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_filters_in_cart_and_checkout_additional_cart_checkout_inner_block_types_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/additional-cart-checkout-inner-block-types.md",
+"cite_id": "WC-S-0789"
+},
+{
+"list": "extension-points",
+"entry": "Cart line items",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_filters_in_cart_and_checkout_cart_line_items_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/cart-line-items.md",
+"cite_id": "WC-S-0790"
+},
+{
+"list": "extension-points",
+"entry": "Checkout and place order button",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_filters_in_cart_and_checkout_checkout_and_place_order_button_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/checkout-and-place-order-button.md",
+"cite_id": "WC-S-0791"
+},
+{
+"list": "extension-points",
+"entry": "Coupons",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_filters_in_cart_and_checkout_coupons_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/coupons.md",
+"cite_id": "WC-S-0792"
+},
+{
+"list": "extension-points",
+"entry": "Order summary items",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_filters_in_cart_and_checkout_order_summary_items_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/order-summary-items.md",
+"cite_id": "WC-S-0793"
+},
+{
+"list": "extension-points",
+"entry": "Totals footer item",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_filters_in_cart_and_checkout_totals_footer_item_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/filters-in-cart-and-checkout/totals-footer-item.md",
+"cite_id": "WC-S-0794"
+},
+{
+"list": "extension-points",
+"entry": "How the checkout block processes an order",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_how_checkout_processes_an_order_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/how-checkout-processes-an-order.md",
+"cite_id": "WC-S-0795"
+},
+{
+"list": "extension-points",
+"entry": "Removing checkout fields",
+"key": "llms_block_development_extensible_blocks_cart_and_checkout_blocks_removing_checkout_fields_md",
+"note": "block-development/extensible-blocks/cart-and-checkout-blocks/removing-checkout-fields.md",
+"cite_id": "WC-S-0796"
+},
+{
+"list": "extension-points",
+"entry": "Product collection block",
+"key": "llms_block_development_extensible_blocks_product_collection_block_readme_md",
+"note": "block-development/extensible-blocks/product-collection-block/README.md",
+"cite_id": "WC-S-0797"
+},
+{
+"list": "extension-points",
+"entry": "DOM events sent from product collection block",
+"key": "llms_block_development_extensible_blocks_product_collection_block_dom_events_md",
+"note": "block-development/extensible-blocks/product-collection-block/dom-events.md",
+"cite_id": "WC-S-0798"
+},
+{
+"list": "extension-points",
+"entry": "Registering custom collections in product collection block",
+"key": "llms_block_development_extensible_blocks_product_collection_block_register_product_collection_md",
+"note": "block-development/extensible-blocks/product-collection-block/register-product-collection.md",
+"cite_id": "WC-S-0799"
+},
+{
+"list": "extension-points",
+"entry": "On-Sale Badge block",
+"key": "llms_block_development_extensible_blocks_product_sale_badge_block_readme_md",
+"note": "block-development/extensible-blocks/product-sale-badge-block/README.md",
+"cite_id": "WC-S-0800"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Account Management",
+"key": "wpd_topic_account_management",
+"note": "",
+"cite_id": "WC-S-0801"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Compatibility",
+"key": "wpd_topic_compatibility",
+"note": "",
+"cite_id": "WC-S-0802"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Currencies",
+"key": "wpd_topic_currencies",
+"note": "",
+"cite_id": "WC-S-0803"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Customization and Translation",
+"key": "wpd_topic_customization_and_translation",
+"note": "",
+"cite_id": "WC-S-0804"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Fees and Debits",
+"key": "wpd_topic_fees_and_debits",
+"note": "",
+"cite_id": "WC-S-0805"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Fraud and Disputes",
+"key": "wpd_topic_fraud_and_disputes",
+"note": "",
+"cite_id": "WC-S-0806"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "In-Person Payments",
+"key": "wpd_topic_in_person_payments",
+"note": "",
+"cite_id": "WC-S-0807"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Managing Money and Refunds",
+"key": "wpd_topic_managing_money_and_refunds",
+"note": "",
+"cite_id": "WC-S-0808"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Our Policies",
+"key": "wpd_topic_our_policies",
+"note": "",
+"cite_id": "WC-S-0809"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Payment Failures / Declines",
+"key": "wpd_topic_payment_failures_declines",
+"note": "",
+"cite_id": "WC-S-0810"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Payment Methods",
+"key": "wpd_topic_payment_methods",
+"note": "",
+"cite_id": "WC-S-0811"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Payouts",
+"key": "wpd_topic_payouts",
+"note": "",
+"cite_id": "WC-S-0812"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Stripe Capital",
+"key": "wpd_topic_stripe_capital",
+"note": "",
+"cite_id": "WC-S-0813"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Subscriptions",
+"key": "wpd_topic_subscriptions",
+"note": "",
+"cite_id": "WC-S-0814"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Taxes and Documents",
+"key": "wpd_topic_taxes_and_documents",
+"note": "",
+"cite_id": "WC-S-0815"
+},
+{
+"list": "other:woopayments-doc-topics",
+"entry": "Testing and Troubleshooting",
+"key": "wpd_topic_testing_and_troubleshooting",
+"note": "",
+"cite_id": "WC-S-0816"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Create beautiful, enticing storefronts",
+"key": "pp_create_beautiful_enticing_storefronts",
+"note": "",
+"cite_id": "WC-S-0817"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Increase revenue",
+"key": "pp_increase_revenue",
+"note": "",
+"cite_id": "WC-S-0818"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Customize product pages in minutes",
+"key": "pp_customize_product_pages_in_minutes",
+"note": "",
+"cite_id": "WC-S-0819"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Showcase physical and digital goods",
+"key": "pp_showcase_physical_and_digital_goods",
+"note": "",
+"cite_id": "WC-S-0820"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Sell subscriptions, bookings, or memberships",
+"key": "pp_sell_subscriptions_bookings_or_memberships",
+"note": "",
+"cite_id": "WC-S-0821"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Rise to the top of search results",
+"key": "pp_rise_to_the_top_of_search_results",
+"note": "",
+"cite_id": "WC-S-0822"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Build on a platform that scales",
+"key": "pp_build_on_a_platform_that_scales",
+"note": "",
+"cite_id": "WC-S-0823"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Choose how you want to get paid",
+"key": "pp_choose_how_you_want_to_get_paid",
+"note": "",
+"cite_id": "WC-S-0824"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Configure your shipping options",
+"key": "pp_configure_your_shipping_options",
+"note": "",
+"cite_id": "WC-S-0825"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Simplify sales tax",
+"key": "pp_simplify_sales_tax",
+"note": "",
+"cite_id": "WC-S-0826"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Grow your business, add features, and monitor your store on the go",
+"key": "pp_grow_your_business_add_features_and_monitor_your_store_on_the_go",
+"note": "",
+"cite_id": "WC-S-0827"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Own and control your store data – forever",
+"key": "pp_own_and_control_your_store_data_forever",
+"note": "",
+"cite_id": "WC-S-0828"
+},
+{
+"list": "other:plugin-page-features",
+"entry": "Connection to WooCommerce.com",
+"key": "pp_connection_to_woocommerce_com",
+"note": "",
+"cite_id": "WC-S-0829"
+},
+{
+"list": "other:tos-woo-services",
+"entry": "WooCommerce",
+"key": "tos_woo_services",
+"note": "",
+"cite_id": "WC-S-0458"
+},
+{
+"list": "other:tos-woo-services",
+"entry": "WooPayments",
+"key": "tos_woo_services",
+"note": "",
+"cite_id": "WC-S-0458"
+},
+{
+"list": "other:tos-woo-services",
+"entry": "WooCommerce Shipping",
+"key": "tos_woo_services",
+"note": "",
+"cite_id": "WC-S-0458"
+},
+{
+"list": "other:tos-woo-services",
+"entry": "WooCommerce Tax",
+"key": "tos_woo_services",
+"note": "",
+"cite_id": "WC-S-0458"
+},
+{
+"list": "other:tos-woo-services",
+"entry": "MailPoet",
+"key": "tos_woo_services",
+"note": "",
+"cite_id": "WC-S-0458"
+},
+{
+"list": "legal-agreements",
+"entry": "Terms of Service",
+"key": "tos_scope",
+"note": "woocommerce.com/terms-conditions/ redirects to wordpress.com/tos/",
+"cite_id": "WC-S-0643"
+},
+{
+"list": "legal-agreements",
+"entry": "Privacy Policy",
+"key": "legal_privacy_title",
+"note": "",
+"cite_id": "WC-S-0830"
+},
+{
+"list": "legal-agreements",
+"entry": "Privacy Notice for California Users",
+"key": "legal_ca_notice",
+"note": "",
+"cite_id": "WC-S-0831"
+},
+{
+"list": "legal-agreements",
+"entry": "Do not sell or share my personal information",
+"key": "legal_dnsmpi",
+"note": "",
+"cite_id": "WC-S-0832"
+},
+{
+"list": "legal-agreements",
+"entry": "WooCommerce Support Policy",
+"key": "legal_support_policy",
+"note": "",
+"cite_id": "WC-S-0833"
+},
+{
+"list": "legal-agreements",
+"entry": "Refund Policy",
+"key": "legal_refund_policy",
+"note": "",
+"cite_id": "WC-S-0834"
+},
+{
+"list": "legal-agreements",
+"entry": "Woo trademark guidelines",
+"key": "legal_trademark",
+"note": "",
+"cite_id": "WC-S-0835"
+},
+{
+"list": "legal-agreements",
+"entry": "Brand and logo guidelines",
+"key": "legal_brand",
+"note": "",
+"cite_id": "WC-S-0836"
+},
+{
+"list": "legal-agreements",
+"entry": "Marketplace Vendor Agreement",
+"key": "va_parties",
+"note": "",
+"cite_id": "WC-S-0576"
+},
+{
+"list": "legal-agreements",
+"entry": "Store guidelines",
+"key": "legal_store_guidelines",
+"note": "referenced by the Terms for Ecommerce Services",
+"cite_id": "WC-S-0846"
+},
+{
+"list": "legal-agreements",
+"entry": "Restricted businesses and activities",
+"key": "restricted_stripe_list",
+"note": "referenced by the Terms for WooPayments",
+"cite_id": "WC-S-0563"
+},
+{
+"list": "legal-agreements",
+"entry": "Request a data processing agreement",
+"key": "legal_dpa_page",
+"note": "referenced by Terms section 19",
+"cite_id": "WC-S-0847"
+},
+{
+"list": "legal-agreements",
+"entry": "Connected Account Agreement",
+"key": "wp_caa",
+"note": "accepted at WooPayments signup, per the WooPayments docs",
+"cite_id": "WC-S-0507"
+},
+{
+"list": "legal-agreements",
+"entry": "Woo Guidelines for CBD and Other Hemp-Derived Products",
+"key": "legal_cbd",
+"note": "",
+"cite_id": "WC-S-0837"
+},
+{
+"list": "legal-agreements",
+"entry": "AI Guidelines",
+"key": "legal_ai_guidelines",
+"note": "",
+"cite_id": "WC-S-0838"
+},
+{
+"list": "legal-agreements",
+"entry": "Cookie Policy",
+"key": "legal_cookie",
+"note": "",
+"cite_id": "WC-S-0839"
+},
+{
+"list": "legal-agreements",
+"entry": "WooCommerce usage tracking",
+"key": "ut_off_default",
+"note": "",
+"cite_id": "WC-S-0570"
+},
+{
+"list": "legal-agreements",
+"entry": "WooCommerce Analytics data syncing",
+"key": "wca_sync",
+"note": "",
+"cite_id": "WC-S-0573"
+},
+{
+"list": "legal-agreements",
+"entry": "customer-research-agreement",
+"key": "legal_ps_customer_research_agreement",
+"note": "page sitemap entry",
+"cite_id": "WC-S-0840"
+},
+{
+"list": "legal-agreements",
+"entry": "code-of-conduct",
+"key": "legal_ps_code_of_conduct",
+"note": "page sitemap entry",
+"cite_id": "WC-S-0841"
+},
+{
+"list": "legal-agreements",
+"entry": "wooads-policy",
+"key": "legal_ps_wooads_policy",
+"note": "page sitemap entry",
+"cite_id": "WC-S-0842"
+},
+{
+"list": "legal-agreements",
+"entry": "terms-conditions/woopayments-promotion",
+"key": "legal_ps_terms_conditions_woopayments_promotion",
+"note": "page sitemap entry",
+"cite_id": "WC-S-0843"
+},
+{
+"list": "legal-agreements",
+"entry": "terms-conditions/woopayments-mid-2025-promotional-offer-terms-and-conditions",
+"key": "legal_ps_terms_conditions_woopayments_mid_2025_promotional_offer_terms_and_conditions",
+"note": "page sitemap entry",
+"cite_id": "WC-S-0844"
+},
+{
+"list": "legal-agreements",
+"entry": "terms-conditions/woopayments-action-promotion-2023",
+"key": "legal_ps_terms_conditions_woopayments_action_promotion_2023",
+"note": "page sitemap entry",
+"cite_id": "WC-S-0845"
+},
+{
+"list": "legal-agreements",
+"entry": "GPLv3",
+"key": "readme_license",
+"note": "release readme.txt and license.txt",
+"cite_id": "WC-S-0589"
+}
+]

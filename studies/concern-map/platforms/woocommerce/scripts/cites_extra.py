@@ -1,0 +1,35 @@
+# Third set of citations (found while writing concern specs).
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from webcite import web as W, rel as R
+GH = "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/"
+W("priv_transfer_reason", "https://automattic.com/privacy/", "Because Automattic’s Services are offered worldwide, the information about you that we process when you use the Services in the EU or the UK may be used, stored", "Transferring Information")
+W("dev_tokens", GH + "features/payments/payment-token-api.md", "WooCommerce 2.6 introduced an API for storing and managing payment tokens for gateways. Users can also manage these tokens from their account settings and choose from saved payment tokens on checkout.", "WooCommerce Payment Token API")
+W("mkt_mailpoet", "https://woocommerce.com/products/", "MailPoet – Newsletters, Email Marketing, and Automation", "Marketing", method="rendered")
+R("readme_hooks", "readme.txt", "to modify or create functionality.")
+R("readme_vetted_ext", "readme.txt", "with our developer-vetted extensions.")
+print("extra citations registered")
+WA = "https://woocommerce.com/wooads-policy/"
+W("wooads_access", WA, "To use WooAds, you authorize us to access the data from your ad platform APIs about your ad campaigns that is necessary for us to provide you with the WooAds service.", "Information and data we collect from your store")
+W("wooads_no_share", WA, "We do not share this data with any third-party service or product.", "Information and data we collect from your store")
+W("wooads_jetpack", WA, "In order to sync this data between your store and WooAds, we make use of a data sync module from Jetpack.", "Information and data we collect from your store")
+R("code_reviews_verified", "includes/admin/settings/class-wc-settings-products.php", "'desc'            => __( 'Reviews can only be left by \"verified owners\"', 'woocommerce' ),")
+print("extra citations (2) registered")
+W("sg_list", "https://en.support.wordpress.com/store-guidelines/", "For example, you may not sell (or facilitate the sale of) any of the following in (or through) the e-commerce services on your site:", "Store guidelines")
+W("sg_scope", "https://en.support.wordpress.com/store-guidelines/", "the use of e-commerce services on your WordPress.com site—such as a WooCommerce store or Payments block—must not violate our WordPress.com User Guidelines", "Store guidelines")
+print("extra citations (3) registered")
+JP = "https://jetpack.com/support/what-data-does-jetpack-sync/"
+W("jp_sync_servers", JP, "As part of the required connection to WordPress.com, Jetpack caches your site’s data to WordPress.com servers (which power all of Jetpack’s functionality).", "What data does Jetpack sync?")
+W("jp_sync_all", JP, "Jetpack syncs all the data needed for all of its features, whether activated or not, to Automattic’s servers.", "What data does Jetpack sync?")
+W("jp_orders_sync", JP, "We sync any data related to your site’s orders, with the following exceptions:", "WooCommerce: Orders")
+W("jp_wctax_servers", JP, "WooCommerce Tax uses Automattic’s servers and a connection to our partners to enable useful features for your store.", "WooCommerce")
+W("jp_taxjar", JP, "Tax Calculations are provided by TaxJar.", "WooCommerce: Tax Calculations")
+W("jp_easypost", JP, "are passed to our partners, EasyPost, and the respective mailing service, such as USPS or Canada Post. This is done via Automattic’s servers.", "WooCommerce: Shipping Rates and Labels")
+W("jp_validate_not_store", JP, "Regarding data handling, we validate (but do not store) the data you send to us and then pass that data on to our partners.", "WooCommerce: Shipping Rates and Labels")
+W("jp_stripe_access", JP, "Please note that if you use Stripe, they provide us with access to your payment data and account activity. We do not store this data.", "WooCommerce: Payments")
+W("jp_rest_proxy", JP, "the JSON API module can expose live site data, including full WooCommerce order details that contain personally identifiable information (PII).", "JSON API (REST API proxy)")
+W("pn_scope", "https://automattic.com/privacy-notice/", "This Privacy Notice explains how we, at Automattic, process information about the visitors of our users’ websites in connection with the services we provide through WordPress.com, Jetpack (including WooCommerce Shipping & Tax), IntenseDebate, Crowdsignal.com, and Akismet.", "Privacy Notice (opening)")
+print("extra citations (4) registered")
+W("doc_euvat_by_woo", "https://woocommerce.com/document/eu-vat-number/", "EU VAT Number by Woo", "product card", method="rendered")
+W("doc_euvat_settings", "https://woocommerce.com/document/eu-vat-number/", "EU VAT Number settings in WooCommerce > Settings > Tax.", "Settings", method="rendered")
+print("extra citations (5) registered")
