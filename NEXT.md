@@ -2,7 +2,7 @@
 
 Each item says what it decides and what it needs. Items lower down depend on the ones above.
 
-## 1. Q1, the concern map (running)
+## 1. Q1, the concern map (paused before the matching pass)
 
 **Question.** How does the product class (Shopify, Salla, WooCommerce) divide a commerce platform into concerns, and where does it place each one? The full question, rules and output format are in `questions/Q1-concern-map.md`.
 
@@ -10,6 +10,8 @@ Each item says what it decides and what it needs. Items lower down depend on the
 - the cited pages are captured;
 - citations and quotes are checked;
 - concerns are matched across platforms only where the platforms' own terms clearly match.
+
+**Where it stands.** WooCommerce and Salla are complete and checked: every quote is found in its source. Shopify is paused mid-run. `studies/concern-map/README.md` gives each platform's state and how to resume.
 
 **What the founder will be asked for:**
 - the salla.com and salla.sa pages the Salla agent lists, saved with SingleFile;

@@ -1,0 +1,101 @@
+concern_id	placement	value	parties_or_places_named
+SA-C-001	decides	merchant; operator per plan	operator, merchant
+SA-C-002	decides	merchant; operator per plan	operator, merchant
+SA-C-003	decides	merchant; operator per plan	operator, merchant
+SA-C-004	decides	operator per market; merchant chooses a plan	operator, merchant
+SA-C-005	decides	merchant (tops up and withdraws); operator (withdrawals paid each Tuesday; withdrawal needs verification and no open complaint)	operator, merchant
+SA-C-006	decides	operator per market (documents asked depend on the store's country); outside rules (government documents); Salla's team reviews	operator, outside rules
+SA-C-007	decides	merchant; operator per plan	operator, merchant
+SA-C-008	decides	merchant; operator per plan	operator, merchant
+SA-C-009	decides	merchant; operator per plan	operator, merchant
+SA-C-010	decides	merchant; operator per plan	operator, merchant
+SA-C-011	decides	merchant; operator per plan	operator, merchant
+SA-C-012	decides	merchant; operator per plan	operator, merchant
+SA-C-020	decides	merchant; operator per plan	operator, merchant
+SA-C-021	decides	merchant; operator per plan	operator, merchant
+SA-C-022	decides	merchant; operator per plan	operator, merchant
+SA-C-023	decides	merchant; operator per plan	operator, merchant
+SA-C-024	decides	merchant; operator per plan	operator, merchant
+SA-C-025	decides	merchant; operator per plan	operator, merchant
+SA-C-026	decides	merchant; operator per plan	operator, merchant
+SA-C-027	decides	merchant; operator per plan	operator, merchant
+SA-C-028	decides	merchant; operator per plan	operator, merchant
+SA-C-029	decides	merchant; operator per plan	operator, merchant
+SA-C-030	decides	merchant; operator per plan	operator, merchant
+SA-C-031	decides	merchant; operator per plan	operator, merchant
+SA-C-032	decides	merchant; operator per plan	operator, merchant
+SA-C-033	decides	merchant; operator per plan	operator, merchant
+SA-C-040	decides	merchant; operator per plan	operator, merchant
+SA-C-041	decides	merchant; operator per plan	operator, merchant
+SA-C-042	decides	merchant; operator per plan	operator, merchant
+SA-C-043	decides	merchant; operator per plan	operator, merchant
+SA-C-044	decides	merchant; operator per plan	operator, merchant
+SA-C-045	decides	merchant; operator per plan	operator, merchant
+SA-C-047	decides	merchant; operator per plan	operator, merchant
+SA-C-048	decides	merchant; operator per plan	operator, merchant
+SA-C-060	decides	merchant; operator per plan	operator, merchant
+SA-C-061	decides	merchant; operator per plan	operator, merchant
+SA-C-062	decides	merchant; operator per plan	operator, merchant
+SA-C-063	software	core API that works only when Salla's Customer Wallet app is installed	core, extension point
+SA-C-063	decides	merchant; operator per plan	operator, merchant
+SA-C-064	decides	merchant; operator per plan	operator, merchant
+SA-C-065	decides	merchant; operator per plan	operator, merchant
+SA-C-066	decides	merchant; outside rules (Saudi Personal Data Protection Law)	merchant, outside rules
+SA-C-070	decides	merchant; operator per plan	operator, merchant
+SA-C-071	decides	merchant; operator per plan	operator, merchant
+SA-C-072	decides	merchant; operator per plan	operator, merchant
+SA-C-073	decides	merchant; operator per plan	operator, merchant
+SA-C-074	decides	merchant; operator per plan	operator, merchant
+SA-C-075	decides	merchant; operator per plan	operator, merchant
+SA-C-076	decides	merchant; operator per plan	operator, merchant
+SA-C-077	decides	merchant; operator per plan	operator, merchant
+SA-C-078	decides	merchant; operator per plan	operator, merchant
+SA-C-079	decides	merchant; operator per plan	operator, merchant
+SA-C-081	decides	merchant; operator per plan	operator, merchant
+SA-C-082	decides	merchant; operator per plan	operator, merchant
+SA-C-090	decides	merchant; operator per plan	operator, merchant
+SA-C-091	decides	app developer (theme developer); merchant picks and customises the theme	merchant, app developer
+SA-C-093	decides	merchant; operator per plan	operator, merchant
+SA-C-094	decides	merchant; operator per plan	operator, merchant
+SA-C-095	decides	merchant; operator per plan	operator, merchant
+SA-C-096	decides	merchant; operator per plan	operator, merchant
+SA-C-097	decides	merchant; operator per plan	operator, merchant
+SA-C-110	decides	operator per market (methods); operator per plan; Salla's team activates; merchant switches methods on	operator, merchant
+SA-C-111	decides	operator per market (Saudi: minimum 100 SAR, cycle chosen by the merchant within plan limits; UAE: weekly on Thursday above 250 AED; Kuwait: next working day); operator per plan; merchant picks the cycle	operator, merchant
+SA-C-112	decides	merchant (through verification); operator per market (UAE: a UAE bank account in AED; Kuwait: a Kuwaiti commercial account in KWD)	operator, merchant
+SA-C-113	decides	operator: fees set by the payment services contract signed at verification; operator per plan (Special plan: flexible gateway fees); outside rules (VAT 15% on fees)	operator, outside rules
+SA-C-115	decides	operator (carriers supporting it, 1000 SAR ceiling, COD hidden under 20 SAR, payout on Sundays and Wednesdays); merchant (rules and COD fee he charges); operator per market (not yet in the UAE)	operator, merchant
+SA-C-117	decides	merchant (adds the accounts); buyer (chooses to pay by transfer)	merchant, buyer
+SA-C-118	decides	operator per market (which providers); merchant activates and opens an account with the provider	operator, merchant
+SA-C-120	decides	merchant (uses its own gateway account and credentials); operator (a connected Tap blocks Salla Payments)	operator, merchant
+SA-C-121	decides	merchant; operator per plan	operator, merchant
+SA-C-123	decides	merchant; operator per plan	operator, merchant
+SA-C-124	decides	app developer (a dropshipping app withholds an amount from the merchant's wallet)	merchant, app developer
+SA-C-140	decides	operator (carriers, label prices and tiers); operator per market (listed as a key feature only on the Saudi plans page); merchant chooses	operator, merchant
+SA-C-142	decides	merchant; operator per plan	operator, merchant
+SA-C-143	decides	merchant; operator per plan	operator, merchant
+SA-C-144	decides	merchant; operator per plan	operator, merchant
+SA-C-146	decides	operator (Salla's international shipping gateway fee, added to the buyer); outside rules (HS codes required by carriers); operator per market (Saudi stores only)	operator, buyer, outside rules
+SA-C-146	legal	buyer pays the gateway fee; the merchant bears none of it	merchant, buyer
+SA-C-150	decides	merchant; operator per plan	operator, merchant
+SA-C-160	decides	merchant (creates a tax record per market and enters the official rate); outside rules (the rate in force in each country)	merchant, outside rules
+SA-C-161	decides	operator per market (Saudi stores only); operator per plan (Pro and Special); outside rules (ZATCA registration)	operator, outside rules
+SA-C-163	decides	merchant (available currencies); buyer (chooses a currency); platform (default display currency by the buyer's location; automatic prices by the current exchange rate in markets)	merchant, buyer
+SA-C-165	decides	merchant (creates a market per country, region or city with its currency, language, domain and shipping); operator per plan (Special plan)	operator, merchant
+SA-C-176	legal	platform company and the partner	platform company, partner
+SA-C-179	decides	merchant; operator per plan	operator, merchant
+SA-C-190	legal	app developer and merchant	app developer, merchant
+SA-C-191	decides	app developer requests scopes; merchant authorizes	merchant, app developer
+SA-C-192	decides	app developer (registers topics and conditions); operator per plan (Pro and Special for the merchant's own webhooks)	operator, merchant, app developer
+SA-C-194	software	separate service or product line (the App Store, an app marketplace)	separate service, extension point
+SA-C-194	decides	operator (Salla reviews, accepts or rejects apps); merchant installs	operator, merchant
+SA-C-194	legal	app developer and merchant	app developer, merchant
+SA-C-195	decides	operator (Salla takes a share of app subscriptions; developer dues paid after a guarantee period of usually 15 days)	operator, app developer
+SA-C-196	decides	app developer; platform at build (synchronous events must answer within milliseconds); operator (free of charge during beta)	platform at build, operator, app developer
+SA-C-199	decides	app developer (defines the settings); merchant fills them in	merchant, app developer
+SA-C-200	decides	merchant (uses its own provider accounts, sender IDs and templates); app developer (routing)	merchant, app developer
+SA-C-205	decides	merchant; operator per plan	operator, merchant
+SA-C-220	decides	merchant; operator per plan	operator, merchant
+SA-C-231	decides	outside rules (merchant licences and the Saudi Business Center certificate); operator (Salla decides which UAE licence types it accepts); outside rules (Saudi law named for apps and partners; e-commerce law requires customer-service details per market)	operator, merchant, buyer, outside rules
+SA-C-231	legal	merchant (holds its own licence); partner (must be licensed)	partner, merchant
+SA-C-232	decides	operator (Salla records store violations and may suspend the store; hides COD from customers banned in other Salla stores; may suspend apps)	operator, buyer

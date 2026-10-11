@@ -1,0 +1,105 @@
+level	file	id	issue
+review	concerns	SA-C-101	not in the platform's lists; it comes from Salla's status page (status.salla.sa), which lists Store APIs as a component. The storefront API lists held in observed-sa name their endpoints on
+review	concerns	SA-C-114	not in the platform's lists; it comes from the question's list of architecture concerns (holding money; licences and regulated activity). Split from Salla Payments as a product: the product
+review	concerns	SA-C-164	not in the platform's lists; it comes from the question's list of architecture concerns (currency and tax). Split from store currencies: Salla's help pages fix the currency Salla Payments r
+review	concerns	SA-C-233	not in the platform's lists; it comes from the question's list of architecture concerns (where data lives).
+review	placements	SA-C-001/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-002/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-003/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-004/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-005/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-006/decides	value names operator, outside rules: split the concern if its parts sit with different parties
+review	placements	SA-C-007/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-008/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-009/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-010/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-011/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-012/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-020/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-021/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-022/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-023/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-024/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-025/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-026/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-027/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-028/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-029/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-030/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-031/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-032/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-033/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-040/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-041/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-042/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-043/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-044/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-045/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-047/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-048/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-060/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-061/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-062/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-063/software	value names core, extension point: split the concern if its parts sit with different parties
+review	placements	SA-C-063/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-064/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-065/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-066/decides	value names merchant, outside rules: split the concern if its parts sit with different parties
+review	placements	SA-C-070/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-071/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-072/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-073/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-074/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-075/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-076/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-077/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-078/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-079/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-081/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-082/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-090/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-091/decides	value names merchant, app developer: split the concern if its parts sit with different parties
+review	placements	SA-C-093/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-094/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-095/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-096/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-097/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-110/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-111/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-112/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-113/decides	value names operator, outside rules: split the concern if its parts sit with different parties
+review	placements	SA-C-115/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-117/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SA-C-118/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-120/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-121/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-123/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-124/decides	value names merchant, app developer: split the concern if its parts sit with different parties
+review	placements	SA-C-140/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-142/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-143/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-144/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-146/decides	value names operator, buyer, outside rules: split the concern if its parts sit with different parties
+review	placements	SA-C-146/legal	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SA-C-150/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-160/decides	value names merchant, outside rules: split the concern if its parts sit with different parties
+review	placements	SA-C-161/decides	value names operator, outside rules: split the concern if its parts sit with different parties
+review	placements	SA-C-163/decides	value names merchant, buyer: split the concern if its parts sit with different parties
+review	placements	SA-C-165/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-176/legal	value names platform company, partner: split the concern if its parts sit with different parties
+review	placements	SA-C-179/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-190/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-191/decides	value names merchant, app developer: split the concern if its parts sit with different parties
+review	placements	SA-C-192/decides	value names operator, merchant, app developer: split the concern if its parts sit with different parties
+review	placements	SA-C-194/software	value names separate service, extension point: split the concern if its parts sit with different parties
+review	placements	SA-C-194/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-194/legal	value names app developer, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-195/decides	value names operator, app developer: split the concern if its parts sit with different parties
+review	placements	SA-C-196/decides	value names platform at build, operator, app developer: split the concern if its parts sit with different parties
+review	placements	SA-C-199/decides	value names merchant, app developer: split the concern if its parts sit with different parties
+review	placements	SA-C-200/decides	value names merchant, app developer: split the concern if its parts sit with different parties
+review	placements	SA-C-205/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-220/decides	value names operator, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-231/decides	value names operator, merchant, buyer, outside rules: split the concern if its parts sit with different parties
+review	placements	SA-C-231/legal	value names partner, merchant: split the concern if its parts sit with different parties
+review	placements	SA-C-232/decides	value names operator, buyer: split the concern if its parts sit with different parties
