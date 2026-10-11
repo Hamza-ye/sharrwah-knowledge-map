@@ -2,25 +2,17 @@
 
 Each item says what it decides and what it needs. Items lower down depend on the ones above.
 
-## 1. Q1, the concern map (placement step being reshaped)
+## 1. Q1, the concern map (built; the founder's review is next)
 
 **Question.** How does the product class (Shopify, Salla, WooCommerce) divide a commerce platform into concerns, and where does it place each one? The full question, rules and output format are in `questions/Q1-concern-map.md`.
 
-**Where it stands.**
-- **What stands:** the inventories, the concern names in the platforms' own words, and the checked citations.
-- **What is not carried forward:** the placement labels. They put the platforms into our vocabulary, while the platforms state these things in their own structures (`studies/concern-map/measurements-2026-10-11.md`).
+**Where it stands.** All three platforms are re-passed: what each states, in its own words, for every concern and placement, or a gap. The matching pass is done, with 88 matches and 84 unclear candidates, and the side-by-side map is in `studies/concern-map/map/`. Detail is in `studies/concern-map/README.md`.
 
-**Next, in order** (detail in `studies/concern-map/README.md`):
-1. Capture Shopify's cited pages and check its quotes. Done: all 3,192 quotes are found.
-2. The founder decides how Q1's placement step is reshaped: each placement recorded as what the platform states in its own structures, with no fixed value lists.
-3. A Shopify re-pass against observed-sh at `e49840729`, joined on Shopify's own identifiers first.
-4. Salla and WooCommerce re-passes, with the same step against their own structures.
-5. The matching pass across the three platforms.
-
-**What the founder will be asked for:**
-- the decision in step 2;
-- the salla.com and salla.sa pages listed in `evidence/product-class/to-save-from-browser.md`, saved with SingleFile;
-- a ruling on each unclear cross-platform match.
+**What the founder is asked for:**
+- rulings on the 84 unclear matches (`studies/concern-map/unclear-matches.tsv`);
+- a look at matches M-070 and M-064;
+- whether an agreement a platform's terms incorporate (such as Stripe's under WooPayments and Shopify Payments) may be read;
+- the gaps only the founder can close (`studies/concern-map/gaps-to-close.md`): the salla.com pages, the journeys, a paid Plus store, questions to the platforms.
 
 ## 2. Q2, the Yemen stress test
 

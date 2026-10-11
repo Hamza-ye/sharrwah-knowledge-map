@@ -1,0 +1,441 @@
+match_id	placement	shopify_stated	salla_stated	woocommerce_stated	shopify_gap_kind	salla_gap_kind	woocommerce_gap_kind
+M-001	where	0	0	0	searched, not found	observation needed	searched, not found
+M-001	decides	1	0	2		observation needed	
+M-001	responsible	10	11	8			
+M-001	boundary	0	0	0	searched, not found	observation needed	searched, not found
+M-001	reason	0	0	0	searched, not found	observation needed	searched, not found
+M-002	where	2	6				
+M-002	decides	1	6				
+M-002	responsible	3	0			observation needed	
+M-002	boundary	2	3				
+M-002	reason	0	0		searched, not found	searched, not found	
+M-003	where	2	2	2			
+M-003	decides	7	11	2			
+M-003	responsible	3	0	0		observation needed	page not read
+M-003	boundary	7	3	1			
+M-003	reason	2	2	2			
+M-004	where	3	5	1			
+M-004	decides	25	9	4			
+M-004	responsible	2	0	0		observation needed	stated only in general terms
+M-004	boundary	7	1	1			
+M-004	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-005	where	2	3				
+M-005	decides	4	8				
+M-005	responsible	0	0		stated only in general terms	observation needed	
+M-005	boundary	3	0			searched, not found	
+M-005	reason	0	1		searched, not found		
+M-006	where	2	5				
+M-006	decides	1	16				
+M-006	responsible	1	0			observation needed	
+M-006	boundary	2	3				
+M-006	reason	0	0		searched, not found	searched, not found	
+M-007	where	7	1				
+M-007	decides	8	7				
+M-007	responsible	2	1				
+M-007	boundary	2	1				
+M-007	reason	0	1		searched, not found		
+M-008	where	5	3				
+M-008	decides	16	12				
+M-008	responsible	2	0			observation needed	
+M-008	boundary	0	2		searched, not found		
+M-008	reason	1	0			searched, not found	
+M-009	where	2		1			
+M-009	decides	3		1			
+M-009	responsible	2		2			
+M-009	boundary	0		1	searched, not found		
+M-009	reason	0		0	searched, not found		searched, not found
+M-010	where	8	6				
+M-010	decides	12	3				
+M-010	responsible	4	2				
+M-010	boundary	5	3				
+M-010	reason	1	1				
+M-011	where	9	19	11			
+M-011	decides	11	67	1			
+M-011	responsible	2	0	0		observation needed	stated only in general terms
+M-011	boundary	13	28	39			
+M-011	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-012	where	5	9	2			
+M-012	decides	18	20	3			
+M-012	responsible	0	0	0	stated only in general terms	observation needed	stated only in general terms
+M-012	boundary	7	3	3			
+M-012	reason	0	1	0	searched, not found		searched, not found
+M-013	where	3	10				
+M-013	decides	6	14				
+M-013	responsible	3	0			observation needed	
+M-013	boundary	6	3				
+M-013	reason	0	1		searched, not found		
+M-014	where	1	5	3			
+M-014	decides	6	26	0			searched, not found
+M-014	responsible	2	2	0			stated only in general terms
+M-014	boundary	11	12	4			
+M-014	reason	0	1	0	searched, not found		searched, not found
+M-015	where	5	10				
+M-015	decides	8	19				
+M-015	responsible	0	0		stated only in general terms	observation needed	
+M-015	boundary	15	1				
+M-015	reason	0	1		searched, not found		
+M-016	where	2	5				
+M-016	decides	3	7				
+M-016	responsible	0	0		stated only in general terms	observation needed	
+M-016	boundary	12	3				
+M-016	reason	1	1				
+M-017	where	2	5				
+M-017	decides	9	10				
+M-017	responsible	2	1				
+M-017	boundary	1	3				
+M-017	reason	0	0		searched, not found	searched, not found	
+M-018	where	6	5	5			
+M-018	decides	13	26	3			
+M-018	responsible	1	0	0		observation needed	stated only in general terms
+M-018	boundary	43	4	11			
+M-018	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-019	where	3	2				
+M-019	decides	3	4				
+M-019	responsible	0	0		stated only in general terms	observation needed	
+M-019	boundary	3	1				
+M-019	reason	0	0		searched, not found	searched, not found	
+M-020	where	3		1			
+M-020	decides	17		1			
+M-020	responsible	0		0	stated only in general terms		stated only in general terms
+M-020	boundary	10		1			
+M-020	reason	0		0	searched, not found		searched, not found
+M-021	where	2	4	1			
+M-021	decides	10	4	1			
+M-021	responsible	2	0	0		observation needed	stated only in general terms
+M-021	boundary	11	3	8			
+M-021	reason	1	1	0			searched, not found
+M-022	where	3		1			
+M-022	decides	2		1			
+M-022	responsible	2		0			stated only in general terms
+M-022	boundary	2		33			
+M-022	reason	1		0			searched, not found
+M-023	where	7	15	1			
+M-023	decides	6	78	2			
+M-023	responsible	2	0	0		observation needed	stated only in general terms
+M-023	boundary	30	29	14			
+M-023	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-024	where	5	1	2			
+M-024	decides	4	5	1			
+M-024	responsible	2	0	2		observation needed	
+M-024	boundary	15	6	5			
+M-024	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-025	where	7	2	18			
+M-025	decides	13	15	3			
+M-025	responsible	4	1	6			
+M-025	boundary	13	1	13			
+M-025	reason	2	0	0		observation needed	searched, not found
+M-026	where	7	4	6			
+M-026	decides	16	34	12			
+M-026	responsible	5	1	4			
+M-026	boundary	6	3	4			
+M-026	reason	2	1	5			
+M-027	where	4	2	2			
+M-027	decides	9	21	5			
+M-027	responsible	1	2	1			
+M-027	boundary	3	6	2			
+M-027	reason	2	0	1		observation needed	
+M-028	where	1		1			
+M-028	decides	6		2			
+M-028	responsible	1		0			page not read
+M-028	boundary	1		2			
+M-028	reason	1		1			
+M-029	where	3	1	1			
+M-029	decides	4	5	3			
+M-029	responsible	1	1	2			
+M-029	boundary	1	1	2			
+M-029	reason	0	0	1	searched, not found	observation needed	
+M-030	where	3		2			
+M-030	decides	10		3			
+M-030	responsible	2		2			
+M-030	boundary	9		2			
+M-030	reason	0		2	searched, not found		
+M-031	where	2	1				
+M-031	decides	2	12				
+M-031	responsible	3	1				
+M-031	boundary	5	1				
+M-031	reason	1	0			observation needed	
+M-032	where	2	2	2			
+M-032	decides	7	8	3			
+M-032	responsible	2	1	1			
+M-032	boundary	2	1	5			
+M-032	reason	0	0	0	searched, not found	observation needed	searched, not found
+M-033	where	2	4	11			
+M-033	decides	6	21	3			
+M-033	responsible	0	2	0	stated only in general terms		stated only in general terms
+M-033	boundary	1	4	5			
+M-033	reason	0	1	0	searched, not found		searched, not found
+M-034	where	1	2				
+M-034	decides	4	6				
+M-034	responsible	1	0			observation needed	
+M-034	boundary	2	3				
+M-034	reason	1	0			observation needed	
+M-035	where	1		3			
+M-035	decides	3		2			
+M-035	responsible	0		2	stated only in general terms		
+M-035	boundary	12		5			
+M-035	reason	0		0	searched, not found		searched, not found
+M-036	where	3		1			
+M-036	decides	6		2			
+M-036	responsible	0		2	stated only in general terms		
+M-036	boundary	2		1			
+M-036	reason	0		0	searched, not found		searched, not found
+M-037	where	4		1			
+M-037	decides	6		6			
+M-037	responsible	17		2			
+M-037	boundary	5		3			
+M-037	reason	1		0			searched, not found
+M-038	where	33	1	2			
+M-038	decides	48	2	1			
+M-038	responsible	13	3	1			
+M-038	boundary	7	1	1			
+M-038	reason	0	0	1	searched, not found	observation needed	
+M-039	where	4		2			
+M-039	decides	6		2			
+M-039	responsible	2		1			
+M-039	boundary	1		1			
+M-039	reason	1		1			
+M-040	where	3	5	10			
+M-040	decides	14	13	5			
+M-040	responsible	6	1	7			
+M-040	boundary	12	4	8			
+M-040	reason	1	0	1		searched, not found	
+M-041	where	2		2			
+M-041	decides	3		2			
+M-041	responsible	1		1			
+M-041	boundary	1		1			
+M-041	reason	0		1	searched, not found		
+M-042	where	3	1	2			
+M-042	decides	3	1	1			
+M-042	responsible	4	0	2		observation needed	
+M-042	boundary	1	1	1			
+M-042	reason	1	1	1			
+M-043	where	4	3				
+M-043	decides	7	10				
+M-043	responsible	1	0			observation needed	
+M-043	boundary	12	2				
+M-043	reason	0	0		searched, not found	searched, not found	
+M-044	where	3	3	3			
+M-044	decides	19	11	12			
+M-044	responsible	2	0	0		observation needed	page not read; stated only in general terms
+M-044	boundary	3	3	3			
+M-044	reason	0	0	1	searched, not found	searched, not found	
+M-045	where	3	4	16			
+M-045	decides	3	19	2			
+M-045	responsible	1	0	0		observation needed	stated only in general terms
+M-045	boundary	7	4	16			
+M-045	reason	0	0	0	searched, not found	observation needed	searched, not found
+M-046	where	2	1				
+M-046	decides	2	1				
+M-046	responsible	0	0		stated only in general terms	observation needed	
+M-046	boundary	4	1				
+M-046	reason	0	0		searched, not found	observation needed	
+M-047	where	4	4	1			
+M-047	decides	8	9	3			
+M-047	responsible	6	3	1			
+M-047	boundary	2	1	5			
+M-047	reason	0	1	0	searched, not found		searched, not found
+M-048	where	2		4			
+M-048	decides	11		2			
+M-048	responsible	1		0			stated only in general terms
+M-048	boundary	15		2			
+M-048	reason	0		0	searched, not found		searched, not found
+M-049	where	1	1				
+M-049	decides	1	1				
+M-049	responsible	0	0		stated only in general terms	observation needed	
+M-049	boundary	6	1				
+M-049	reason	0	0		searched, not found	observation needed	
+M-050	where		5	3			
+M-050	decides		21	2			
+M-050	responsible		0	0		observation needed	stated only in general terms
+M-050	boundary		4	13			
+M-050	reason		0	0		searched, not found	searched, not found
+M-051	where	5	5	12			
+M-051	decides	5	13	2			
+M-051	responsible	0	0	0	stated only in general terms	observation needed	stated only in general terms
+M-051	boundary	4	1	7			
+M-051	reason	0	0	0	searched, not found	observation needed	searched, not found
+M-052	where	1		2			
+M-052	decides	3		2			
+M-052	responsible	2		3			
+M-052	boundary	1		2			
+M-052	reason	0		1	searched, not found		
+M-053	where	2		2			
+M-053	decides	1		2			
+M-053	responsible	0		0	stated only in general terms		stated only in general terms
+M-053	boundary	1		1			
+M-053	reason	0		1	searched, not found		
+M-054	where	5	2				
+M-054	decides	8	3				
+M-054	responsible	1	0			observation needed	
+M-054	boundary	9	3				
+M-054	reason	0	1		searched, not found		
+M-055	where	7	4				
+M-055	decides	7	14				
+M-055	responsible	1	0			observation needed; stated only in general terms	
+M-055	boundary	17	67				
+M-055	reason	0	1		searched, not found		
+M-056	where	5	1	2			
+M-056	decides	1	0	1		searched, not found	
+M-056	responsible	0	0	0	stated only in general terms	stated only in general terms	stated only in general terms
+M-056	boundary	19	1	44			
+M-056	reason	1	1	0			searched, not found
+M-057	where	3	3	7			
+M-057	decides	5	31	3			
+M-057	responsible	1	2	0			stated only in general terms
+M-057	boundary	1	1	1			
+M-057	reason	1	2	1			
+M-058	where	3	8	14			
+M-058	decides	6	78	3			
+M-058	responsible	0	0	0	stated only in general terms	observation needed	stated only in general terms
+M-058	boundary	11	1	50			
+M-058	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-059	where	4	1	2			
+M-059	decides	8	5	2			
+M-059	responsible	6	2	1			
+M-059	boundary	10	1	8			
+M-059	reason	1	1	0			searched, not found
+M-060	where	0	1	1	searched, not found		
+M-060	decides	1	0	2		observation needed	
+M-060	responsible	5	1	7			
+M-060	boundary	1	0	1		observation needed	
+M-060	reason	0	0	1	searched, not found	observation needed	
+M-061	where	6		1			
+M-061	decides	3		0			searched, not found
+M-061	responsible	8		1			
+M-061	boundary	5		0			searched, not found
+M-061	reason	2		1			
+M-062	where	0		3	searched, not found		
+M-062	decides	1		3			
+M-062	responsible	4		5			
+M-062	boundary	0		3	searched, not found		
+M-062	reason	0		2	searched, not found		
+M-063	where	3	3				
+M-063	decides	2	13				
+M-063	responsible	0	0		stated only in general terms	observation needed	
+M-063	boundary	0	0		searched, not found	searched, not found	
+M-063	reason	0	0		searched, not found	searched, not found	
+M-064	where	1	3				
+M-064	decides	1	1				
+M-064	responsible	0	0		stated only in general terms	observation needed	
+M-064	boundary	0	1		searched, not found		
+M-064	reason	0	0		searched, not found	observation needed	
+M-065	where	1	8	3			
+M-065	decides	0	20	3	searched, not found		
+M-065	responsible	1	0	0		observation needed	stated only in general terms
+M-065	boundary	1	4	4			
+M-065	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-066	where	1	2	1			
+M-066	decides	2	5	1			
+M-066	responsible	0	0	2	stated only in general terms	observation needed	
+M-066	boundary	0	1	2	searched, not found		
+M-066	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-067	where	8	7	1			
+M-067	decides	11	34	3			
+M-067	responsible	6	6	6			
+M-067	boundary	4	2	1			
+M-067	reason	1	0	0		searched, not found	searched, not found
+M-068	where	1	1				
+M-068	decides	51	1				
+M-068	responsible	1	0			stated only in general terms	
+M-068	boundary	358	24				
+M-068	reason	0	1		searched, not found		
+M-069	where	2	4	1			
+M-069	decides	1	5	1			
+M-069	responsible	1	0	0		stated only in general terms	stated only in general terms
+M-069	boundary	3	5	22			
+M-069	reason	0	1	1	searched, not found		
+M-070	where	3	3				
+M-070	decides	3	3				
+M-070	responsible	1	0			stated only in general terms	
+M-070	boundary	1	79				
+M-070	reason	0	1		searched, not found		
+M-071	where	2	11				
+M-071	decides	1	4				
+M-071	responsible	2	2				
+M-071	boundary	1	16				
+M-071	reason	0	1		searched, not found		
+M-072	where	2	5				
+M-072	decides	0	12		observation needed		
+M-072	responsible	2	2				
+M-072	boundary	1	1				
+M-072	reason	0	1		searched, not found		
+M-073	where	2	1	4			
+M-073	decides	6	3	2			
+M-073	responsible	1	0	0		stated only in general terms	stated only in general terms
+M-073	boundary	1	4	18			
+M-073	reason	1	2	0			searched, not found
+M-074	where	2	1	2			
+M-074	decides	5	3	1			
+M-074	responsible	1	0	0		stated only in general terms	stated only in general terms
+M-074	boundary	14	7	1			
+M-074	reason	0	0	0	searched, not found	searched, not found	searched, not found
+M-075	where	2	8				
+M-075	decides	1	6				
+M-075	responsible	1	0			observation needed	
+M-075	boundary	1	2				
+M-075	reason	0	0		searched, not found	searched, not found	
+M-076	where	3	2				
+M-076	decides	2	6				
+M-076	responsible	1	0			observation needed	
+M-076	boundary	1	1				
+M-076	reason	0	0		searched, not found	observation needed	
+M-077	where	2	3				
+M-077	decides	1	7				
+M-077	responsible	1	0			stated only in general terms	
+M-077	boundary	1	1				
+M-077	reason	0	0		searched, not found	searched, not found	
+M-078	where	1	6				
+M-078	decides	1	14				
+M-078	responsible	1	1				
+M-078	boundary	4	1				
+M-078	reason	0	1		searched, not found		
+M-079	where		2	1			
+M-079	decides		8	1			
+M-079	responsible		0	0		observation needed	stated only in general terms
+M-079	boundary		1	3			
+M-079	reason		0	0		observation needed	searched, not found
+M-080	where		2	1			
+M-080	decides		5	1			
+M-080	responsible		0	0		observation needed	stated only in general terms
+M-080	boundary		2	2			
+M-080	reason		1	0			searched, not found
+M-081	where		2	1			
+M-081	decides		4	1			
+M-081	responsible		0	0		observation needed	stated only in general terms
+M-081	boundary		1	2			
+M-081	reason		1	0			searched, not found
+M-082	where		1	1			
+M-082	decides		0	1		searched, not found	
+M-082	responsible		0	0		observation needed	stated only in general terms
+M-082	boundary		5	6			
+M-082	reason		0	0		searched, not found	searched, not found
+M-083	where		8	3			
+M-083	decides		24	2			
+M-083	responsible		0	0		observation needed	stated only in general terms
+M-083	boundary		2	2			
+M-083	reason		0	0		searched, not found	searched, not found
+M-084	where	0		0	observation needed		searched, not found
+M-084	decides	14		6			
+M-084	responsible	4		2			
+M-084	boundary	0		0	observation needed		searched, not found
+M-084	reason	2		1			
+M-085	where	0		2	searched, not found		
+M-085	decides	5		6			
+M-085	responsible	0		2	searched, not found		
+M-085	boundary	0		1	searched, not found		
+M-085	reason	2		1			
+M-086	where	1		0			searched, not found
+M-086	decides	1		1			
+M-086	responsible	6		4			
+M-086	boundary	0		0	searched, not found		searched, not found
+M-086	reason	0		1	searched, not found		
+M-087	where	1		3			
+M-087	decides	1		3			
+M-087	responsible	0		0	stated only in general terms		searched, not found
+M-087	boundary	1		3			
+M-087	reason	1		1			
+M-088	where		1	1			
+M-088	decides		3	1			
+M-088	responsible		1	0			stated only in general terms
+M-088	boundary		1	1			
+M-088	reason		1	1			
