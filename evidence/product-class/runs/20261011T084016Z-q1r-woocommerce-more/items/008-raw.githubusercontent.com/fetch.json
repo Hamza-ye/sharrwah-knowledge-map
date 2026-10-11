@@ -1,0 +1,21 @@
+{
+ "n": 8,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/products/product-customs-data.md",
+ "dir": "items/008-raw.githubusercontent.com",
+ "fetched_at": "2026-10-11T08:40:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/products/product-customs-data.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 2100,
+ "cited_in": [
+  "WC-S-5383",
+  "WC-S-5384",
+  "WC-S-5385",
+  "WC-S-5386"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e854f9c9e206608b641e21661b91fd0c612f83faa75f4b74c03a851e11ca078c",
+ "raw_ext": "txt"
+}

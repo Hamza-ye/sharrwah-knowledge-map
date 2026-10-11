@@ -1,0 +1,19 @@
+{
+ "n": 15,
+ "url": "https://woocommerce.com/document/subscriptions/",
+ "dir": "items/015-woocommerce.com",
+ "fetched_at": "2026-10-11T08:40:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/subscriptions/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45311,
+ "cited_in": [
+  "WC-S-5350",
+  "WC-S-5351"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "73cb596855c07dd8e98045aab52e8331723ba2f59597201734a7866cb8c9cba3",
+ "raw_ext": "html"
+}

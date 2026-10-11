@@ -1,0 +1,19 @@
+{
+ "n": 13,
+ "url": "https://woocommerce.com/document/introduction-to-woocommerce-bookings/",
+ "dir": "items/013-woocommerce.com",
+ "fetched_at": "2026-10-11T08:40:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/introduction-to-woocommerce-bookings/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46104,
+ "cited_in": [
+  "WC-S-5352",
+  "WC-S-5353"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c908d5e4f6f7e66bdc1d8c6a8126909474f24f502dae345274b23d61fc13844d",
+ "raw_ext": "html"
+}

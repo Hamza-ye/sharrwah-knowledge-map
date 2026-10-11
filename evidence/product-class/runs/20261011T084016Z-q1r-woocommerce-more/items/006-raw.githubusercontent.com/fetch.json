@@ -1,0 +1,20 @@
+{
+ "n": 6,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/email/customer-review-request.md",
+ "dir": "items/006-raw.githubusercontent.com",
+ "fetched_at": "2026-10-11T08:40:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/email/customer-review-request.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 5429,
+ "cited_in": [
+  "WC-S-5390",
+  "WC-S-5391",
+  "WC-S-5392"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c53cf899580cd7f63bb25c405b18fee0228772ecf21f390d9c13a8b9cd463d9d",
+ "raw_ext": "txt"
+}

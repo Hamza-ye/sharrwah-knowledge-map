@@ -1,0 +1,19 @@
+{
+ "n": 3,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/best-practices/data-management/data-stores.md",
+ "dir": "items/003-raw.githubusercontent.com",
+ "fetched_at": "2026-10-11T08:40:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/best-practices/data-management/data-stores.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 4646,
+ "cited_in": [
+  "WC-S-5364",
+  "WC-S-5365"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "cd661bc18fbd9389896572b7f6e21f66ebf7d99eee558564b7ef731cfaa4c526",
+ "raw_ext": "txt"
+}

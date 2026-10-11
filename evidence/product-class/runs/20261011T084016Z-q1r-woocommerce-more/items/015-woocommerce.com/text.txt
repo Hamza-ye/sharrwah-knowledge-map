@@ -1,0 +1,240 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce Subscriptions
+Introduction to Subscriptions
+Store Manager Guide
+Expand
+Subscriptions Management
+Expand
+Testing and Troubleshooting
+Subscriptions Use Cases
+Subscriptions Developer Docs
+FAQs and Roadmap
+Subscriptions Add-ons
+WooCommerce Subscriptions / Documentation / Introduction to Subscriptions / Introduction to WooCommerce Subscriptions
+Introduction to WooCommerce Subscriptions
+
+WooCommerce Subscriptions is a premium extension that allows you to sell products and services with recurring payments. The content linked below aims to teach you how to use WooCommerce Subscriptions.
+
+Requirements
+
+Whenever we ship a new version of WooCommerce Subscriptions, it will generally support the most recent version of WooCommerce, as well as the previous version. For example:
+
+If the current version of WooCommerce is 15.4.2, we ignore the final part of the version number and concentrate on the first two numbers (15.4).
+In that example, to use the latest version of WooCommerce Subscriptions, you would need to use at minimum WooCommerce 15.3.0.
+
+Additionally, Subscriptions inherits the same requirements and server recommendations as WooCommerce.
+
+Compatibility
+WooCommerce Subscriptions is compatible with High-Performance Order Storage (HPOS).
+WooCommerce Subscription is compatible with WordPress Multisite, but please keep in mind that each extension subscription will only be associated with the site on which it was purchased. User accounts (subscribers) created from using the extension will also only exist on the associated site. If you want to share a user account with other sites in your network, try the third-party Multisite User Management plugin.
+Contents
+Getting started
+Subscriptions General Settings: Explains all the settings you’ll find in WooCommerce > Settings > Subscriptions.
+Creating a Subscription Product: How to create a subscription product.
+How Subscriptions Manages Stock: A reference guide to how stock/inventory is reduced for subscriptions.
+Guide to Billing Date Alignment: Reference guide for billing date alignment and how it works.
+Creating an Aligned Subscription Product: How to create a subscription product with aligned billing dates.
+Understanding the Subscription Renewal Process: How the subscription renewal process works.
+Turning On/Off Automatic Renewals: How to turn on/off automatic renewals.
+Subscriptions vs. Subscriptions Products: Understanding the difference between subscriptions themselves and subscription products.
+Orders Related to Subscriptions: A guide to the different order types for WooCommerce Subscriptions.
+Subscriptions Reports: A reference guide for the different reports available in this extension.
+Migrating Subscribers to WooCommerce Subscriptions: A general guide to best practices for migrating subscribers to WooCommerce Subscriptions.
+WooCommerce Subscriptions Snippets and Plugins: Additional snippets and mini plugins you can use to customize the appearance and functionality of WooCommerce Subscriptions.
+Payments and payment gateway guides
+Subscription Payment Gateway Guide: A guide to Subscriptions-compatible payment gateways.
+Failed Recurring Payment Retry System: A reference guide to the automatic failed payment retry system in WooCommerce Subscriptions.
+Testing the Payment Retry System: How to test the automatic failed payment retry system.
+Subscriptions management
+Store Manager Settings: This section includes reference guides and instructions on how to manage subscriptions for store managers/admin. 
+Manually Adding or Importing a New Subscription: How to add or import subscriptions to your store.
+Editing an Existing Subscription: How to edit existing subscriptions and process renewal payments through admin.
+Sort, Search, and Filter Subscriptions: How to find subscriptions quickly by using the sort, search, and filter actions in the WooCommerce > Subscriptions menu.
+Change a Subscription from Automatic to Manual Payments
+Subscription Status Guide: A reference guide to Subscription statuses.
+Subscriptions Resubscribe Guide: Guide to the subscription resubscribe process.
+Managing Expired Subscriptions
+Guide to Early Renewal Settings and Management
+Subscription Switching Guide: A guide to subscription switch settings, including understanding how the switching process works, how it handles price changes due to switches, how coupons are impacted, and how customers can change quantities of a subscription product as part of a switch. 
+Guide to Subscription Emails
+Subscriptions Coupons: There are two new coupon discount types introduced with WooCommerce Subscriptions: the recurring product discount and the signup fee discount. Recurring product discounts can be used to create limited subscription payment coupons that only apply to a predetermined amount of payments.
+Subscriptions Health Check – A diagnostic tool that scans your store for subscriptions needing attention—such as manual-renewal subscriptions that could renew automatically, or subscriptions with missing or overdue renewal dates—and lets you fix flagged issues directly from the results table by clicking Resolve and confirming.
+Subscriber’s View: This section outlines the different subscription management tools that your customers have access to in the Subscriptions section of their “My Account” page. It includes information about switching subscriptions, canceling/suspending subscriptions, resubscribing, managing payment methods, renewal payments, and accessing subscription information on the “View Subscriptions” page.
+Restoring Subscriptions site from backup
+Subscriptions testing and troubleshooting
+Testing Subscription Renewal Payments
+Subscriptions Scheduled Action Errors
+Disabling Subscriptions
+Subscriptions Logs
+Subscriptions Health Check
+Translating WooCommerce Subscriptions and Troubleshooting Translation Issues
+General Troubleshooting Framework for WooCommerce Subscriptions
+Common Issues and Error Messages for WooCommerce Subscriptions
+Troubleshooting Framework for PayPal Standard Subscriptions
+Subscriptions FAQ
+Subscriptions use cases
+
+Below you’ll find links to a few different use cases for WooCommerce Subscriptions. Some use cases only require WooCommerce Subscriptions, while others may implement other extensions. Requirements for each are explained at the beginning of each use case.
+
+Update Subscription Prices for Existing Subscribers
+Variable Subscriptions – Monthly Coffee Subscription
+Charging a One Time Fee/Signup Fee after a Free Trial
+
+We have a range of extensions available from the WooCommerce.com Marketplace to help expand the capability of WooCommerce Subscriptions, including adding a subscription option to existing products, updating prices for existing subscribers, minimum periods, and more.
+
+WooCommerce Subscriptions extensions in our Marketplace
+Subscriptions developer guides
+
+The following is developer-level documentation and provides explanations of the data structures, filters, and functions for Subscriptions. An advanced understanding of PHP and WordPress development is required.
+
+Please note that we are unable to provide support for any customizations made to the default functionality of Subscriptions under our Support Policy. If you need to further customize a snippet or extend its functionality, we highly recommend Codeable.
+
+Developer Documentation is the main landing page for Subscriptions’ developer guides. For quick reference, here are a few of the most commonly used documents:
+Subscriptions Data Structure & Storage
+Payment Gateway Integration Guide
+Action Reference
+Filter Reference
+Function Reference
+Subscription Caches
+Subscription Product Function Reference
+Subscriptions Management Function Reference
+Subscription Order & Cart Function Reference
+Guide to Multiple Subscriptions
+How Subscriptions Handles Staging Sites and Migrations
+Professional Configuration Available
+
+Want a hands-off setup? Our trusted partners at Codeable can configure this extension for you, so it works exactly the way your business needs it to.
+
+Get started →
+
+Was this guide helpful for you?
+Related Products
+WooCommerce Memberships
+by
+SkyVerge
+
+Power your membership association, online magazine, elearning sites, and more with access control to...
+
+Excellence verified
+Price $199 annually
+$199
+annually
+Rated 4 out of 5 stars
+4 
+(152)
+Product Add-Ons
+by
+Woo
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
+
+Price $79 annually
+$79
+annually
+Rated 3.4 out of 5 stars
+3.4 
+(49)
+ON THIS PAGE
+Requirements
+Compatibility
+Contents
+Getting started
+Payments and payment gateway guides
+Subscriptions management
+Subscriptions testing and troubleshooting
+Subscriptions use cases
+Subscriptions developer guides
+Professional Configuration Available
+WooCommerce Subscriptions
+by Woo
+Price $23.25
+$23.25
+Per month
+ monthly
+ Billed annually at $279
+Buy now
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+RUCKUS
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

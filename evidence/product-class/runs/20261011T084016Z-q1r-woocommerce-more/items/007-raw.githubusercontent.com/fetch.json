@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/enable-hpos.md",
+ "dir": "items/007-raw.githubusercontent.com",
+ "fetched_at": "2026-10-11T08:40:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/enable-hpos.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 935,
+ "cited_in": [
+  "WC-S-5367"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "59f14b9b86e1847f518ab07cba6f6b45ed6a2a0e54978b86bf0183ac41c82b5d",
+ "raw_ext": "txt"
+}

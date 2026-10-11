@@ -1,0 +1,20 @@
+{
+ "n": 1,
+ "url": "https://automattic.com/ai-guidelines",
+ "dir": "items/001-automattic.com",
+ "fetched_at": "2026-10-11T08:40:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://automattic.com/ai-guidelines/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 28505,
+ "cited_in": [
+  "WC-S-5347",
+  "WC-S-5348",
+  "WC-S-5349"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a55349ae8963840615024bc4d6502adfc1a273949e1c32a3d82d83dcfb14b884",
+ "raw_ext": "html"
+}

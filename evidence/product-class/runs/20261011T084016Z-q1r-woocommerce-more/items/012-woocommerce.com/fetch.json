@@ -1,0 +1,19 @@
+{
+ "n": 12,
+ "url": "https://woocommerce.com/document/high-performance-order-storage/",
+ "dir": "items/012-woocommerce.com",
+ "fetched_at": "2026-10-11T08:40:24Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/high-performance-order-storage/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 43312,
+ "cited_in": [
+  "WC-S-5366",
+  "WC-S-5368"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "86a93901c7e8d263992ec00001d08f23fc026e20ade022ac5c707953bc9a05dc",
+ "raw_ext": "html"
+}
