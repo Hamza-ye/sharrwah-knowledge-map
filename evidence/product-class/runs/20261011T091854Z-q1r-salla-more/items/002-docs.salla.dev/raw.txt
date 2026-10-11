@@ -1,0 +1,53 @@
+# Overview
+
+
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/377080/image-preview)
+
+# Overview
+
+The Checkout APIs provide RESTful endpoints to manage cart state programmatically: create a cart, retrieve it, manage line items, apply/remove coupons, and assign cart ownership.
+
+This collection focuses on **cart operations that feed checkout**. It does not include payment submission or full checkout-step orchestration endpoints in this module.
+
+### Who is this for?
+
+This API collection is designed for developers building integrations that need to control cart and checkout-entry flows outside of the standard storefront, including:
+
+- **Headless storefronts** — Custom front-end implementations that manage their own cart and checkout UI
+- **Mobile applications** — Native iOS and Android apps with in-app purchasing flows
+- **Mini-apps** — Lightweight embedded experiences (e.g. social commerce, chat-based shopping)
+- **Third-party integrations** — Merchant tools, POS systems, and partner platforms that interact with the store's cart pipeline
+- **Internal services** — Backend systems that orchestrate cart creation, synchronization, and checkout handoff
+
+### What can you do?
+
+| Capability | Description |
+|---|---|
+| **Cart lifecycle** | Create, retrieve, and manage shopping carts scoped to a specific store |
+| **Line items** | Add, update, and remove products using flexible identifiers (product ID, variant ID, or SKU) |
+| **Coupons & discounts** | Apply and remove promotional coupon codes with real-time total recalculation |
+| **Ownership** | Assign guest carts to authenticated users when transitioning from guest to logged-in state |
+| **Product options** | Configure items with size, color, and other variant selections, plus notes and bundle payloads |
+
+### Design principles
+
+- **Store-scoped** — Every request is scoped to a single store via the `Store-Identifier` header, ensuring clear multi-tenancy
+- **Stateful responses** — Every mutating operation returns the updated cart, so the client can remain synchronized without extra reads
+- **Flexible identification** — Products can be referenced by ID, variant ID, or SKU, reducing the need for preliminary lookups
+- **Consistent error handling** — All errors follow a uniform envelope format with machine-readable codes and field-level validation details
+- **Guest + auth aware** — Cart generation supports both guest and authenticated contexts; guest carts can be assigned later when needed
+
+### Authentication
+
+The `Store-Identifier` header is required on all requests. Bearer token authentication is optional for guest cart operations and required for user-scoped operations like assigning a cart. See the [Authentication](./01-authentication.md) guide for details.
+
+---
+
+## Documentation Index
+
+| Document | Description |
+|---|---|
+| [Authentication](./01-authentication.md) | Auth headers and security scheme |
+| [Key Concepts](./02-key-concepts.md) | Product identification, response structure, ownership, and errors |
+| [Usage Flows](./03-usage-flows.md) | Typical integration patterns and error recovery |
+

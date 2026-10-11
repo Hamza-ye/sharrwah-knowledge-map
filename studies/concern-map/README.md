@@ -7,7 +7,7 @@ The answer to `questions/Q1-concern-map.md` as it is being built. This file says
 | Platform | Inventory and concerns | Quotes checked against their sources |
 | --- | --- | --- |
 | WooCommerce | 654 entries, 118 concerns. The re-pass is done: 1,499 statements and 182 gaps, with 408 of 590 cells stated | 1,466 of 1,466 found |
-| Salla | 2,620 entries, 148 concerns | 2,828 of 2,828 found |
+| Salla | 2,627 entries, 152 concerns. The re-pass is done: 2,560 statements and 230 gaps, with 530 of 760 cells stated | 2,982 of 2,982 found |
 | Shopify | 2,610 entries, 198 concerns. The re-pass is done: 3,005 statements and 249 gaps, with 741 of 990 cells stated | 5,055 of 5,055 found |
 
 **What stands:**
@@ -39,7 +39,7 @@ None of them changed any file.
      - concern to API resources, then to access lines;
      - concern to help pages, through `help-admin-links`.
    - Then the agent reads the text sources (terms, help) for responsibility and stated reasons, quoting them word for word.
-4. **Salla and WooCommerce re-passes, with the same step against their own structures.**
+4. **Salla and WooCommerce re-passes, with the same step against their own structures.** Done.
    - **Salla:** the dashboard feature registry with its plan lists, staff permission groups, app scopes and settings.
    - **WooCommerce:** the 11.2.1 release's capabilities, settings, hooks and extension APIs.
 5. **The matching pass across the three platforms.** It matches only on the platforms' own terms. Unclear matches go to the founder.

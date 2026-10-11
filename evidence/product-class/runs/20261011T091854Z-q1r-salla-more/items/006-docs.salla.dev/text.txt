@@ -1,0 +1,727 @@
+# App Events
+
+This walkthrough is to introduce you to the partner portal events, where you can easily interact with the portal using webhooks and get real-time updates about the apps you develop using Salla Partner Portal.
+
+
+| Event Name                  | Description                                                                                                   |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [`app.store.authorize`](#app-store-authorize)       | This event is triggered whenever an App scope is authorized by the store.                                     |
+| [`app.installed`](#app-installed)             | This event is triggered whenever an app is installed on a merchant store.                                     |
+| [`app.updated`](#app-updated)               | This event is triggered whenever an app is updated.                                                           |
+| [`app.uninstalled`](#app-unistalled)           | This event is triggered whenever an app is uninstalled from a merchant store.                                 |
+| [`app.trial.started`](#app-trial-started)         | This event is triggered whenever an app's trial starts in a merchant's store.                                 |
+| [`app.trial.expired`](#app-trial-expired)         | This event is triggered whenever an app's trial subscription expires in a merchant's store.                   |
+| [`app.trial.canceled`](#app-trial-canceled)        | This event is triggered whenever an app's trial subscription is cancelled in a merchant's store.              |
+| [`app.subscription.started`](#app-subscription-started)  | This event is triggered whenever a subscription starts on the merchant’s store for an app or an app addon.    |
+| [`app.subscription.expired`](#app-subscription.expired)  | This event is triggered whenever a subscription ends on the merchant’s store for an app or an app addon.      |
+| [`app.subscription.canceled`](#app-subscription-canceled) | This event is triggered whenever a subscription is canceled on the merchant’s store for an app or an app addon. |
+| [`app.subscription.renewed`](#app-subscription-renewed)  | This event is triggered whenever a subscription is renewed on the merchant’s store for an app or an app addon. |
+| [`app.feedback.created`](#app-feedback-created)      | This event is triggered whenever an App feedback is created by a merchant.                                    |
+| [`app.settings.updated`](#app-settings-updated)      | This event is triggered whenever a merchant activates and/or updates an app's settings in a merchant's store. |
+
+
+:::tip[Test App Events]
+To test the app events in demo stores, save the app as a draft after setting the [app price(s)](https://salla.dev/blog/ultimate-app-pricing-strategies-guide/). You can then proceed to test the app events in your demo stores as shown below:
+
+
+![photo_2024-10-09 15.18.30.jpg](https://api.apidog.com/api/v1/projects/451700/resources/345872/image-preview)
+:::
+
+## App Store Authorize
+
+Once a merchant installs an application on a store, the event - [`app.store.authorize`](#app-store-authorize) - will be triggered. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+```json
+{
+  "event": "app.store.authorize",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "access_token": "KGsnBcNNkR2AgHnrd0U9lCIjrUiukF_-Fb8OjRiEcog.NuZv_mJaB46jA2OHaxxxx",
+    "expires": 1634819484,
+    "refresh_token": "fWcceFWF9eFH4yPVOCaYHy-UolnU7iJNDH-dnZwakUE.bpSNQCNjbNg6hTxxxx",
+    "scope": "settings.read branches.read offline_access",
+    "token_type": "bearer"
+  }
+}
+```
+
+## App Installation
+
+Once a merchant installs an app, the event - `app.installed` - will be triggered. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+``` json
+{
+  "event": "app.installed",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "app_name": "Shipping app",
+    "description": "App Description"
+    "app_type": "app",
+    "app_scopes": [
+      "settings.read",
+      "customers.read_write",
+      "orders.read_write",
+      "carts.read",
+      "branches.read_write",
+      "categories.read_write",
+      "brands.read_write",
+      "products.read_write",
+      "webhooks.read_write",
+      "payments.read",
+      "taxes.read_write",
+      "specialoffers.read_write",
+      "countries.read",
+      "metadata.read_write",
+      "offline_access"
+    ],
+    "installation_date": "2021-09-28 06:06:56",
+    "store_type": "development"
+  }
+}    
+```
+
+## App Update
+
+Once the developer updates the app, the event - `app.updated` - will be triggered. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+```json
+{
+  "event": "app.updated",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "app_name": "Shipping app",
+    "description": "App Description"
+    "app_type": "app",
+    "categories": [
+      "Accounting & Finance"
+    ],
+    "app_scopes": [
+      "settings.read",
+      "branches.read",
+      "offline_access"
+    ],
+    "installation_date": "2021-10-06 16:16:49",
+    "update_date": "2021-10-07 12:31:24",
+    "store_type": "demo"
+  }
+}
+```
+
+## App Uninstall
+
+Once a merchant uninstalls an app, the event - `app.uninstalled` - will be triggered. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+```json
+{
+  "event": "app.uninstalled",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "app_name": "Cool app",
+    "app_description": "This App provides a seamless, on-the-go shipping experience for businesses and individuals.",
+    "app_type": "shipping",
+    "categories": [
+      "Shipping and Delivery"
+    ],
+    "installation_date": "2021-10-06 16:16:49",
+    "uninstallation_date": "2021-10-07 12:46:07",
+    "refunded": false,
+    "store_type": "live"
+  }
+}
+```
+
+## App Trial Start
+
+Once a merchant starts using an app in its trial version, the event - `app.trial.started` - will be triggered. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+```json
+{
+  "event": "app.trial.started",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "app_name": "Shipping app",
+    "app_description": "App Description"
+   "app_type": "app",
+    "categories": [
+      "Accounting & Finance"
+    ],
+    "plan_name": "Diamond Plan",
+    "plan_type": "one_time",
+    "start_date": "2023-07-27",
+    "end_date": "2023-07-28",
+    "created_at": "2023-07-27 12:23:19",
+    "features": [],
+    "store_type": "development"
+  }
+}
+```
+
+## App Trial Expire
+
+Once a merchant uses an app in its trial version has expired, the event - `app.trial.expired` - will be triggered. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+```json
+{
+  "event": "app.trial.expired",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "app_name": "Shipping app",
+    "description": "App Description"
+    "app_type": "app",
+    "categories": [
+      "Accounting & Finance"
+    ],
+    "plan_name": "Diamond Plan",
+    "plan_type": "one_time",
+    "start_date": "2021-10-06T21:00:00.000000Z",
+    "end_date": "2021-10-07T21:00:00.000000Z",
+    "store_type": "demo"
+  }
+}
+```
+
+## App Trial Canceled
+
+Once a merchant cancels the usage of an app in its trial version, the event - `app.trial.started` - will be triggered. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+```json
+{
+  "event": "app.trial.canceled",
+  "merchant": 74955415,
+  "created_at": "2023-07-27 12:32:17",
+  "data": {
+    "id": 2114981050,
+    "app_name": "Shipping App",
+    "app_description": "App Description",
+    "app_type": "public",
+    "categories": [
+      "Accounting & Finance"
+    ],
+    "plan_type": "recurring",
+    "plan_name": null,
+    "start_date": "2023-07-27",
+    "end_date": "2023-07-28",
+    "subscription_at": "2023-07-27 12:13:58",
+    "created_at": "2023-07-27 12:32:17",
+    "features": [],
+    "store_type": "live"
+  }
+}
+```
+
+# Subscription Events
+
+## App Subscription Start
+
+Once a merchant’s subscription starts using an app or an app addon, the event - `app.subscription.started` - will be triggered.  
+Partners must use `item_type=plan` for app subscription events, and `item_type=addon` for addon subscription events (when the app supports addon purchases).
+
+### Payload (App subscription)
+
+```json
+{
+  "event": "app.subscription.started",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "subscription_id": 1510766049,
+    "item_type": "plan",
+    "item_slug": null,
+    "quantity": 1,
+    "app_name": "Shipping app",
+    "description": "App Description",
+    "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "plan_type": "recurring",
+    "plan_name": null,
+    "plan_period": "1",
+    "start_date": "2021-10-09T21:00:00.000000Z",
+    "end_date": "2022-10-09T21:00:00.000000Z",
+    "coupon": {
+      "name": "SPZGRDFS",
+      "amount": "0.15"
+    },
+    "initialization_cost": 10,
+    "price_before_discount": 5,
+    "price": "20.00",
+    "tax": "0.15",
+    "tax_value": "3.00",
+    "total": "23.00",
+    "subscription_balance": "null",
+    "features": [
+      {
+        "key": "Feature1",
+        "quantity": 1
+      },
+      {
+        "key": "Feature3",
+        "quantity": 5
+      }
+    ],
+    "store_type": "development",
+    "promotion": {
+      "id": 98784255,
+      "requirement": 1,
+      "reward": 1
+    }
+  }
+}
+```
+
+### Payload (Addon subscription)
+
+```json
+{
+  "event": "app.subscription.started",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "subscription_id": 1510766049,
+    "item_type": "addon",
+    "item_slug": "addon_chat_support",
+    "quantity": 3,
+    "app_name": "Shipping app",
+    "description": "App Description",
+    "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "plan_type": "one_time",
+    "plan_name": "Addon Chat Support",
+    "plan_period": null,
+    "start_date": null,
+    "end_date": null,
+    "coupon": {
+      "name": "SPZGRDFS",
+      "amount": "0.15"
+    },
+    "initialization_cost": 10,
+    "price_before_discount": null,
+    "price": "20.00",
+    "tax": "0.15",
+    "tax_value": "3.00",
+    "total": "23.00",
+    "subscription_balance": "null",
+    "features": [
+      {
+        "key": "Feature1",
+        "quantity": 1
+      },
+      {
+        "key": "Feature3",
+        "quantity": 5
+      }
+    ],
+    "store_type": "development"
+  }
+}
+```
+
+---
+
+## App Subscription Canceled
+
+Once a merchant’s subscription is canceled for an app or an app addon, the event - `app.subscription.canceled` - will be triggered.  
+Partners must use `item_type=plan` for app subscription events, and `item_type=addon` for addon subscription events (when the app supports addon purchases).
+
+### Payload (App subscription)
+
+```json
+{
+  "event": "app.subscription.canceled",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "subscription_id": 1510766049,
+    "item_type": "plan",
+    "item_slug": null,
+    "quantity": 1,
+    "app_name": "Shipping app",
+    "description": "App Description",
+    "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "plan_type": "recurring",
+    "plan_name": null,
+    "plan_period": "1",
+    "start_date": "2021-10-09T21:00:00.000000Z",
+    "end_date": "2021-11-09T21:00:00.000000Z",
+    "coupon": {
+      "name": "SPZGRDFS",
+      "amount": "0.15"
+    },
+    "initialization_cost": 10,
+    "price_before_discount": 5,
+    "price": "20.00",
+    "tax": "0.15",
+    "tax_value": "3.00",
+    "total": "23.00",
+    "subscription_balance": "null",
+    "features": [
+      {
+        "key": "Feature1",
+        "quantity": 1
+      },
+      {
+        "key": "Feature3",
+        "quantity": 5
+      }
+    ],
+    "store_type": "demo"
+  }
+}
+```
+
+### Payload (Addon subscription)
+
+```json
+{
+  "event": "app.subscription.canceled",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "subscription_id": 1510766049,
+    "item_type": "addon",
+    "item_slug": "addon_chat_support",
+    "quantity": 3,
+    "app_name": "Shipping app",
+    "description": "App Description",
+    "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "plan_type": "one_time",
+    "plan_name": "Addon Chat Support",
+    "plan_period": null,
+    "start_date": null,
+    "end_date": null,
+    "coupon": {
+      "name": "SPZGRDFS",
+      "amount": "0.15"
+    },
+    "initialization_cost": 10,
+    "price_before_discount": null,
+    "price": "20.00",
+    "tax": "0.15",
+    "tax_value": "3.00",
+    "total": "23.00",
+    "subscription_balance": "null",
+    "features": [
+      {
+        "key": "Feature1",
+        "quantity": 1
+      },
+      {
+        "key": "Feature3",
+        "quantity": 5
+      }
+    ],
+    "store_type": "demo"
+  }
+}
+```
+
+---
+
+## App Subscription Expire
+
+Once a merchant’s subscription expires for an app or an app addon, the event - `app.subscription.expired` - will be triggered.  
+Partners must use `item_type=plan` for app subscription events, and `item_type=addon` for addon subscription events (when the app supports addon purchases).
+
+### Payload (App subscription)
+
+```json
+{
+  "event": "app.subscription.expired",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "subscription_id": 1510766049,
+    "item_type": "plan",
+    "item_slug": null,
+    "quantity": 1,
+    "app_name": "Shipping app",
+    "description": "App Description",
+    "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "plan_type": "recurring",
+    "plan_name": null,
+    "plan_period": "1",
+    "start_date": "2021-10-09T21:00:00.000000Z",
+    "end_date": "2021-11-09T21:00:00.000000Z",
+    "coupon": {
+      "name": "SPZGRDFS",
+      "amount": "0.15"
+    },
+    "initialization_cost": 10,
+    "price_before_discount": 5,
+    "price": "20.00",
+    "tax": "0.15",
+    "tax_value": "3.00",
+    "total": "23.00",
+    "subscription_balance": "null",
+    "features": [
+      {
+        "key": "Feature1",
+        "quantity": 1
+      },
+      {
+        "key": "Feature3",
+        "quantity": 5
+      }
+    ],
+    "store_type": "live"
+  }
+}
+```
+
+### Payload (Addon subscription)
+
+```json
+{
+  "event": "app.subscription.expired",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "subscription_id": 1510766049,
+    "item_type": "addon",
+    "item_slug": "addon_chat_support",
+    "quantity": 3,
+    "app_name": "Shipping app",
+    "description": "App Description",
+    "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "plan_type": "recurring",
+    "plan_name": "Addon Chat Support",
+    "plan_period": "1",
+    "start_date": "2021-10-09T21:00:00.000000Z",
+    "end_date": "2021-12-09T21:00:00.000000Z",
+    "coupon": {
+      "name": "SPZGRDFS",
+      "amount": "0.15"
+    },
+    "initialization_cost": 10,
+    "price_before_discount": null,
+    "price": "20.00",
+    "tax": "0.15",
+    "tax_value": "3.00",
+    "total": "23.00",
+    "subscription_balance": "null",
+    "features": [
+      {
+        "key": "Feature1",
+        "quantity": 1
+      },
+      {
+        "key": "Feature3",
+        "quantity": 5
+      }
+    ],
+    "store_type": "live"
+  }
+}
+```
+
+---
+
+## App Subscription Renew
+
+Once a merchant’s subscription is renewed for an app or an app addon, the event - `app.subscription.renewed` - will be triggered.  
+Partners must use `item_type=plan` for app subscription events, and `item_type=addon` for addon subscription events (when the app supports addon purchases).
+
+### Payload (App subscription)
+
+```json
+{
+  "event": "app.subscription.renewed",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "subscription_id": 1510766049,
+    "item_type": "plan",
+    "item_slug": null,
+    "quantity": 1,
+    "app_name": "Shipping app",
+    "description": "App Description",
+    "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "plan_type": "recurring",
+    "plan_name": null,
+    "plan_period": "1",
+    "start_date": "2021-10-09T21:00:00.000000Z",
+    "renew_date": "2021-11-09T21:00:00.000000Z",
+    "end_date": "2021-12-09T21:00:00.000000Z",
+    "coupon": {
+      "name": "SPZGRDFS",
+      "amount": "0.15"
+    },
+    "initialization_cost": 10,
+    "price_before_discount": 5,
+    "price": "20.00",
+    "tax": "0.15",
+    "tax_value": "3.00",
+    "total": "23.00",
+    "subscription_balance": "null",
+    "features": [
+      {
+        "key": "Feature1",
+        "quantity": 1
+      },
+      {
+        "key": "Feature3",
+        "quantity": 5
+      }
+    ],
+    "store_type": "development"
+  }
+}
+```
+
+### Payload (Addon subscription)
+
+```json
+{
+  "event": "app.subscription.renewed",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "subscription_id": 1510766049,
+    "item_type": "addon",
+    "item_slug": "addon_chat_support",
+    "quantity": 3,
+    "app_name": "Shipping app",
+    "description": "App Description",
+    "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "plan_type": "recurring",
+    "plan_name": "Addon Chat Support",
+    "plan_period": "1",
+    "start_date": "2021-10-09T21:00:00.000000Z",
+    "renew_date": "2021-11-09T21:00:00.000000Z",
+    "end_date": "2021-12-09T21:00:00.000000Z",
+    "coupon": {
+      "name": "SPZGRDFS",
+      "amount": "0.15"
+    },
+    "initialization_cost": 10,
+    "price_before_discount": null,
+    "price": "20.00",
+    "tax": "0.15",
+    "tax_value": "3.00",
+    "total": "23.00",
+    "subscription_balance": "null",
+    "features": [
+      {
+        "key": "Feature1",
+        "quantity": 1
+      },
+      {
+        "key": "Feature3",
+        "quantity": 5
+      }
+    ],
+    "store_type": "development"
+  }
+}
+```
+
+## App Feedback Created
+
+Once a merchant writes a review for an application, the event - `app.feedback.created` - will be triggered. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+```json
+{
+  "event": "app.feedback.created",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "app_name": "Shipping app",
+    "description": "App Description"
+   "app_type": "app",
+    "categories": [
+      "Marketing"
+    ],
+    "rating": "5",
+    "rated_by": "الإخلاص-تعديل",
+    "comment": "No Comments"
+  }
+}
+```
+## App Settings Updated
+
+Once a merchant either activates and/or updates your applciation's settings on a store, the event - `app.settings.updated` - will be triggered. You can customize the variables below using the drag & drop functionality on your app's settings. Afterward, you will receive a similar payload to the following:
+
+### Payload
+
+```json
+{
+  "event": "app.settings.updated",
+  "merchant": 1234509876,
+  "created_at": "2022-12-31 12:31:25",
+  "data": {
+    "id": 6789012345,
+    "app_name": "Shipping app",
+    "app_description": "App Description",
+    "app_type": "public",
+    "settings": {
+      "name": "Mohammed",
+      "email": "Mohammed@Gmail.com",
+      "subscription_num": 375853796,
+      "door_to_door": true,
+      "pickup_time": "09:00:00",
+      "box_size": [
+        "25x25",
+        "10x10"
+      ],
+      "ads_activated": "true"
+    }
+  }
+}
+```

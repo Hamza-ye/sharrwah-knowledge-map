@@ -1,0 +1,19 @@
+{
+ "n": 22,
+ "url": "https://help.salla.sa/article/إدارة-قائمة-المتاجر-المرتبطة/t9z4bp7g0vo1rcdvq4h4k9b3",
+ "dir": "items/022-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:24Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/إدارة-قائمة-المتاجر-المرتبطة/t9z4bp7g0vo1rcdvq4h4k9b3",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 138390,
+ "cited_in": [
+  "SA-S-5150",
+  "SA-S-5151"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "95714b35dc4ab79ba0062006f09cf75871e05385ecef2c80da3f6bfd5b67a3e8",
+ "raw_ext": "html"
+}

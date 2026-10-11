@@ -1,0 +1,18 @@
+{
+ "n": 37,
+ "url": "https://help.salla.sa/article/تسجيل-الدخول-السريع-للمتجر-باستخدام-ال-passkey/u7o5nn9xqsl4y2urj30n034d",
+ "dir": "items/037-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/تسجيل-الدخول-السريع-للمتجر-باستخدام-ال-passkey/u7o5nn9xqsl4y2urj30n034d",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 137542,
+ "cited_in": [
+  "SA-S-5018"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "405baf27a6da9f0d2013fda1e066524199931a927325eb51e373f9be5ae66eec",
+ "raw_ext": "html"
+}

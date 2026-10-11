@@ -1,0 +1,20 @@
+{
+ "n": 56,
+ "url": "https://partners.salla.com/legal/influencer",
+ "dir": "items/056-partners.salla.com",
+ "fetched_at": "2026-10-11T09:20:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://partners.salla.com/legal/influencer",
+ "content_type": "text/html",
+ "bytes": 38700,
+ "cited_in": [
+  "SA-S-5025",
+  "SA-S-5102",
+  "SA-S-5103"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "296eb49a00fa3db70e8edce609c0c18b4365faf49bdb5d4ab4122886998cffea",
+ "raw_ext": "html"
+}

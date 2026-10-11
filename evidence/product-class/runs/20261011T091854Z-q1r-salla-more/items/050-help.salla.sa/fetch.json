@@ -1,0 +1,19 @@
+{
+ "n": 50,
+ "url": "https://help.salla.sa/article/طلب-مواد-التغليف-من-شركات-شحن-بوليصات-سلة/eyeqtkxf1stsm77vzgjil56h",
+ "dir": "items/050-help.salla.sa",
+ "fetched_at": "2026-10-11T09:20:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/طلب-مواد-التغليف-من-شركات-شحن-بوليصات-سلة/eyeqtkxf1stsm77vzgjil56h",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 140840,
+ "cited_in": [
+  "SA-S-5068",
+  "SA-S-5069"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "37e96ed5496394f5a42d7513c4a8f43ebc3079415603aa07fd4dd851a3237603",
+ "raw_ext": "html"
+}

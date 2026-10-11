@@ -1,0 +1,19 @@
+{
+ "n": 58,
+ "url": "https://partners.salla.com/legal/service-provider",
+ "dir": "items/058-partners.salla.com",
+ "fetched_at": "2026-10-11T09:20:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://partners.salla.com/legal/service-provider",
+ "content_type": "text/html",
+ "bytes": 39119,
+ "cited_in": [
+  "SA-S-5008",
+  "SA-S-5100"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a86e6113f4882889ee5232ab29ac8049f43963096f28cc1ccce4c0155931640a",
+ "raw_ext": "html"
+}

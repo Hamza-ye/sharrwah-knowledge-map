@@ -1,0 +1,159 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Bundle Publish Requirements
+
+To help standardize component bundle development and streamline reviews, please follow the requirements below when submitting your component for publishing in Salla Themes Marketplace.
+
+## UI / UX Review &lt;Icon icon="material-outline-fact_check"/&gt;
+To fulfill the UI/UX review follow the below requirements list:
+| # | Category        | Requirement |
+|---|----------------|-------------|
+| 1 | Structure      | The bundle must contain at **least 1 component** and **at most 15 components**. |
+| 2 | Restrictions   | Bundles do **not support global components** such as Header or Footer.  |
+| 3 | Validation     | Each component **type must be unique** within the same bundle; duplicates are not allowed.|
+| 4 | Compatibility  | All components in the bundle **must be compatible** with the theme structure.  |
+| 5 | Standards      | Components must follow [Salla’s standard component guidelines](https://docs.google.com/document/u/0/d/1jbqur1vfs6fQHckm4ahO-UCPUFw5luyNsir_JYEeGGc/mobilebasic).|
+| 6 | Performance    | The bundle **must not negatively impact** the theme’s performance.|
+| 7 | Usability      | Each component in the bundle **must be usable independently**.|
+| 8 | Responsiveness | Components **must be responsive** and work properly on all screen sizes.  |
+| 9 | Maintainability| Bundles **should support future updates** without affecting existing themes.|
+
+### UX/UI Review for Landing Page Template &lt;Icon icon="material-outline-palette"/ &gt;
+
+
+| Category                 | Requirement                                                                                                                                                                            |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Conversion Goal**      | The landing page must have **one clear conversion goal**, such as purchase, signup, or lead generation. It should not promote multiple primary actions.                                |
+| **Hero Section**         | The first screen must clearly communicate the **value proposition**, a **supporting description**, and a **primary Call-to-Action (CTA)**.                                             |
+| **Conversion Flow**      | The page should follow a logical conversion flow that guides users from introduction to action.                                                                                        |
+| **Recommended Sections** | **1.** Hero&lt;br&gt;**2.** Problem / Pain Point&lt;br&gt;**3.** Solution / Features&lt;br&gt;**4.** Benefits&lt;br&gt;**5.** Social Proof (Testimonials, Reviews, or Customer Logos)&lt;br&gt;**6.** FAQ (optional) |
+| **Primary CTA**          | Every landing page must contain at least one prominent **primary CTA**.                                                                                                                |
+| **CTA Consistency**      | The primary CTA should remain visually consistent throughout the page and may be repeated in strategic sections.                                                                       |
+| **Storytelling**         | Components must be arranged in a logical sequence that progressively builds trust and encourages conversion.                                                                           |
+| **Distractions**         | Minimize distractions by avoiding unrelated sections or competing primary actions.                                                                                                     |
+| **Section Relevance**    | Each section should contribute directly to the landing page's conversion objective.                                                                                                    |
+| **Visual Hierarchy**     | The visual hierarchy should prioritize the **headline**, **supporting content**, and **CTA**.                                                                                          |
+
+
+## Technical Review &lt;Icon icon="material-outline-toc"/&gt;
+The Technical review covers seven areas explained below:
+
+
+&lt;CardGroup cols={2}&gt;
+  &lt;Card title="Theme Design Quality" Icon icon="material-outline-design_services"&gt;
+    - Bundles should follow Salla coding standards; code must be well-structured and readable.
+    - Bundle size should be optimized and not affect performance.
+    - Use localization instead of static strings.
+    - Ensure all components are compatible with the current bundle version.
+    &lt;/Card&gt;
+  &lt;Card title="Performance" Icon icon="material-outline-settings"&gt;
+Bundles should not negatively impact theme loading speed or network requests.
+  &lt;/Card&gt;
+  &lt;Card title="Responsiveness" Icon icon="material-outline-space_dashboard"&gt;
+All bundle components must display correctly on all screen sizes and devices.
+  &lt;/Card&gt;
+  &lt;Card title="Cross-Browser Compatibility" Icon icon="material-outline-language"&gt;
+Bundle components must function correctly across popular web browsers (Chrome, Firefox, Safari, Edge).
+  &lt;/Card&gt;
+    
+&lt;Card title="Security" Icon icon="material-outline-lock"&gt;
+No custom HTML or elements that may compromise security are allowed.
+&lt;/Card&gt;
+
+&lt;Card title="Functionality Testing" Icon icon="material-outline-miscellaneous_services"&gt;
+Test all components to ensure they work as intended and are bug-free.
+
+&lt;/Card&gt;
+
+&lt;/CardGroup&gt;
+&lt;Card title="Bundle Updates" Icon icon="material-outline-update"&gt;
+Track future updates for bundle components to ensure compatibility with themes.
+&lt;/Card&gt;
+
+## Metadata Review &lt;Icon icon="material-outline-settings_ethernet"/&gt;
+
+Reviewing metadata is looking through and rating the metadata related to websites, digital information, or certain parts of a website. Descriptive information or tags that give context and specifics about the material are referred to as metadata.This helps search engines and people alike better comprehend and access the content. In this step, Salla team will review the Theme Name, Support, Pricing, Screenshots, Description and ChangeLog.
+
+
+:::tip[]
+**Salla** advises to only share relevant information and abstain from sharing inappropriate information.
+
+:::
+
+
+
+&lt;AccordionGroup&gt;
+  &lt;Accordion title="1.0 Bundle Name" defaultOpen={true}&gt;
+Follow these name style guidelines:
+| No. | Requirement |
+|------------|-------------|
+| 1.1 | Bundle and style names should stand apart from Salla Products, Events, or Branded content. |
+| 1.2 | They should also differ from Partner names. |
+| 1.3 | Avoid overlap with website, e-commerce, or SEO-related terms; for instance, steer clear of names like Performance, Mobile, or Sales for your Bundle. |
+| 1.4 | Ensure unique names not resembling industry or collection names from the Theme Store, such as Fashion, Electronics, or Jewelry. |
+| 1.5 | Keep names clear and hint at the purpose of the Bundle. |
+| 1.6 | Communicate what merchants can expect from the Bundle , encompassing core concepts and the intended audience. |
+| 1.7 | Opt for noun-based or adjective-based names. |
+| 1.8 | Choose easily pronounceable names to aid in recall and searching for merchants. |
+| 1.9 | Consider different dialects and regional meanings; consult an idiom dictionary if needed. |
+| 1.10 | Avoid using the same name on other platforms. |
+| 1.11 | Name should be short, and not more than 3 words without emojis, spaces, or special characters in the Bundle or style name. |
+  &lt;/Accordion&gt;
+  &lt;Accordion title="2.0. Bundle Support"&gt;
+Merchants using the Bundle are advised to address any concerns they may have with the bundle developer. 
+
+:::warning[]
+It is not Salla's responsibility to manage bundle support.
+:::
+      
+You need to provide all of the following fields:
+
+| No. | Title | Details |
+|------------|--------|---------|
+| 2.1 | Support Email | Active Email that is dedicated to getting inquiries and issues related to the bundle. |
+| 2.2 | Support Website | Company, Personal website or social media where Merchants can get more information about you. |
+| 2.3 | Support Phone | Active Mobile / Office number for getting inquiries and issues related to the bundle. |
+| 2.4 | Live Chat | Active live chat link could be Telegram , WhatsApp or any other chat services. The response timeframe expected is within few hours . |
+| 2.5 | Documentation Link | Each theme should have it's own blog or article that explains how the Bundle works. Example: https://help.salla.sa/article/1991456782 |
+| 2.6 | Support Service | An optional field you can use in case you would like to provide extra support services. |
+
+
+:::info[]
+Customer support inquiries must be answered within two business days. Insufficient support may lead to poor reviews, low sales, or removal from the Salla Marketplace.
+:::
+      
+    &lt;/Accordion&gt;
+  &lt;Accordion title="3.0. Bundle Pricing"&gt;
+
+Salla allows you to charge Merchants a one-time payment for your Bundle. You are free to set the Bundle price as you see fit as long as it is a minimum 100 SAR for Public bundle and 250 SAR for Private bundle. 
+Calculate the price of your Bundle based on a number of parameters:
+
+| Parameters        | Details |
+|----------------|---------|
+| Design quality | Size of the catalog it is intended for, and |
+| Production time | When figuring out how much to charge for your bundle, don't forget to include in the expense of offering first-rate support. It will be required of you to address bugs and respond to inquiries regarding your bundle. Merchants' evaluation of your bundle may be influenced by the level of help and support you offer. |
+  &lt;/Accordion&gt;
+    
+&lt;Accordion title="4.0. Bundle Screenshots" &gt;
+Providing bundle screenshots provide a detailed glimpse of how the Bundle would look like once applied to the store. 
+
+Follow the below rules when uploading bundle screenshots for publishing:
+| No.| Requirement |
+|------------|-------------|
+| 4.1 | Well-designed screenshots are required. |
+| 4.2 | Screenshots should be provided in images or YouTube video formats. |
+| 4.3 | Videos should be short and informative, 2 minutes maximum length is required. |
+| 4.4 | Each Screenshot should have a unique title and description. |
+| 4.5 | The title for each screenshot should reflect the bundle features for Merchants, for example, Smooth animations, Optimized performance, Easy setup with 20+ sections, etc. |
+| 4.6 | The screenshot's title and description should be in Arabic and English. |
+| 4.7 | A minimum of 4 screenshots of the bundle should be provided. |
+| 4.8 | Screenshots should reflect all bundle features. |
+| 4.9 | Screenshot images should not contain any texts or logos at all. |
+&lt;/Accordion&gt;
+
+&lt;Accordion title="5.0. Bundle ChangeLog"&gt;
+Your bundle should have a change log, a change log is a record that lists updates, fixes, and improvements made to the Bundle. It includes version numbers, release dates, and brief descriptions of changes such as new features, bug fixes, security updates, and performance enhancements. It helps users understand what's changed in each version and assists developers in tracking modifications and progress. 
+
+&lt;/Accordion&gt;
+
+&lt;/AccordionGroup&gt;
+
+</pre></body></html>

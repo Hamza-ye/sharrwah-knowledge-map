@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://docs.salla.dev/report-builder/overview.md",
+ "dir": "items/007-docs.salla.dev",
+ "fetched_at": "2026-10-11T09:19:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/report-builder/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 890,
+ "cited_in": [
+  "SA-S-5146"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "87020eac0584ecdb5ad9e28fe6c535b626a316dc85eec30792acf06c07b0c458",
+ "raw_ext": "txt"
+}

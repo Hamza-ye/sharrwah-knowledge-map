@@ -1,0 +1,19 @@
+{
+ "n": 6,
+ "url": "https://docs.salla.dev/partner-apis/app-events.md",
+ "dir": "items/006-docs.salla.dev",
+ "fetched_at": "2026-10-11T09:19:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/partner-apis/app-events.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2989,
+ "cited_in": [
+  "SA-S-5093",
+  "SA-S-5094"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "9578284041e68184927d3c96b3cd2dd2578fcf32d9198a084a6ad7cf64319ef8",
+ "raw_ext": "txt"
+}

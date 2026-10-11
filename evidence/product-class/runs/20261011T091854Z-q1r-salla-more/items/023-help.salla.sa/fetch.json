@@ -1,0 +1,19 @@
+{
+ "n": 23,
+ "url": "https://help.salla.sa/article/إدارة-وجرد-المخزون/xzpw5e46wflnxg611caz0aem",
+ "dir": "items/023-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/إدارة-وجرد-المخزون/xzpw5e46wflnxg611caz0aem",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 143893,
+ "cited_in": [
+  "SA-S-5011",
+  "SA-S-5145"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c6a78ee03816ed7128ce179c2433b9d6e526a79843c6061c25e291b8ad5c5a6a",
+ "raw_ext": "html"
+}

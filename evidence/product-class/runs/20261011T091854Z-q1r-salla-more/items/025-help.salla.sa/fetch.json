@@ -1,0 +1,18 @@
+{
+ "n": 25,
+ "url": "https://help.salla.sa/article/إعداد-إصدار-فواتير-الطلبات/iz5t4pco8lhfu41usey0u53z",
+ "dir": "items/025-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/إعداد-إصدار-فواتير-الطلبات/iz5t4pco8lhfu41usey0u53z",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 136689,
+ "cited_in": [
+  "SA-S-5015"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cad71e30f6f7a8de23d4458261022bb56077277365cb46309a7c9f39c1575ca3",
+ "raw_ext": "html"
+}

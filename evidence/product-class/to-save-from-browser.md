@@ -212,3 +212,19 @@ The Q1 Salla agent needs these pages, but salla.com and salla.sa answer this ses
 - **Needed for:** SA-C-230 legal entities
 - **Look for:** No specific page is needed beyond the salla.com pages above; listed because the host refuses this session.
 - [ ] single page: https://salla.sa/
+
+## Added by the re-pass (11 October 2026)
+
+Lower priority than the pages above. Each of the salla.com pages below is Salla's own page for a product, and it is wanted only for a stated reason, which product pages may or may not give. The partners page was read, but its FAQ answers are collapsed. Save it with the answers opened.
+
+- [ ] https://salla.com/ads: SA-C-073 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/affiliate-marketing: SA-C-072 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/branch_pickup: SA-C-148 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/digital-cards: SA-C-024 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/influencers: SA-C-076 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/marketing: SA-C-075 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/marketing-tools: SA-C-074 reason, SA-C-077 reason, SA-C-082 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/moshamer-ai: SA-C-012 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/salla-chat: SA-C-099 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://salla.com/souq-eljomla: SA-C-098 reason; Salla's own statement of who answers for the concern, the reason it is offered as it is, and any terms it links to
+- [ ] https://partners.salla.com/global-selling-program: SA-C-304 decides; The answers to 'من يمكنه التسجيل كشريك؟', 'هل لازم أكون في السعودية؟' and 'هل التسجيل عليه رسوم او التزام؟'

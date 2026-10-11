@@ -1,0 +1,19 @@
+{
+ "n": 10,
+ "url": "https://docs.salla.dev/twilight-sdk/overview.md",
+ "dir": "items/010-docs.salla.dev",
+ "fetched_at": "2026-10-11T09:19:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/twilight-sdk/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3473,
+ "cited_in": [
+  "SA-S-5140",
+  "SA-S-5141"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "2c6ca68b6c046754410d9b31e68f97251c0b449490c905d4b943654933e71134",
+ "raw_ext": "txt"
+}

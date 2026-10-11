@@ -1,0 +1,19 @@
+{
+ "n": 1,
+ "url": "https://docs.salla.dev/authorization.md",
+ "dir": "items/001-docs.salla.dev",
+ "fetched_at": "2026-10-11T09:18:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/authorization.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 9624,
+ "cited_in": [
+  "SA-S-5090",
+  "SA-S-5091"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "4f69fd563b5c59e70dd64366e63a6977602f710a702186a8fb95531d7594f181",
+ "raw_ext": "txt"
+}

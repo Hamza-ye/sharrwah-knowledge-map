@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+alt-svc: h3=":443"; ma=2592000
+cache-control: public, max-age=0, must-revalidate
+content-encoding: br
+content-type: text/html
+date: Sun, 11 Oct 2026 09:20:18 GMT
+etag: "9d5ce4db6c21a3349920db4c079a6f6c"
+framer-site-id: 6dc25950b37a03b4c0594695ea590f4fd06f19da104a0dee03402ce3c8ca6975
+last-modified: Mon, 28 Sep 2026 06:55:17 GMT
+link: <https://framerusercontent.com>; rel="preconnect", <https://framerusercontent.com>; rel="preconnect"; crossorigin=""
+server: Framer/26fa766
+server-timing: region;desc="us-east-1", cache;desc="not-cached", ssg-status;desc="optimized", version;desc="26fa766", instance;desc="6ca2671", route;dur=1;desc="id=z3paY4gdH&locale=default&var.gLveOiPvJ=%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AC%D8%B1-%D9%85%D9%86-%D9%85%D9%86%D8%B5%D8%A7%D8%AA-%D8%A3%D8%AE%D8%B1%D9%89-%D8%A5%D9%84%D9%89-%D9%85%D9%86%D8%B5%D8%A9-%D8%B3%D9%84%D8%A9", country;desc="US", ss-only-routes
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding, Accept
+x-content-type-options: nosniff
+content-length: 39115
+

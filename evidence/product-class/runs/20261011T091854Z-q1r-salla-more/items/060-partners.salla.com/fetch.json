@@ -1,0 +1,21 @@
+{
+ "n": 60,
+ "url": "https://partners.salla.com/legal/شروط-وأحكام-خدمة-انتقال-المتاجر-من-منصات-أخرى-إلى-منصة-سلة",
+ "dir": "items/060-partners.salla.com",
+ "fetched_at": "2026-10-11T09:20:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://partners.salla.com/legal/شروط-وأحكام-خدمة-انتقال-المتاجر-من-منصات-أخرى-إلى-منصة-سلة",
+ "content_type": "text/html",
+ "bytes": 39115,
+ "cited_in": [
+  "SA-S-5120",
+  "SA-S-5121",
+  "SA-S-5122",
+  "SA-S-5123"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "86c372b9e6cc3184dcca5067c4c610643340bbeaa5923e6d3ef1363574170421",
+ "raw_ext": "html"
+}

@@ -1,0 +1,20 @@
+{
+ "n": 30,
+ "url": "https://help.salla.sa/article/الأسئلة-الشائعة-حول-منصة-محلي-1/i6552boeb92lhuug905exq0i",
+ "dir": "items/030-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:36Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/الأسئلة-الشائعة-حول-منصة-محلي-1/i6552boeb92lhuug905exq0i",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 138853,
+ "cited_in": [
+  "SA-S-5043",
+  "SA-S-5044",
+  "SA-S-5045"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d06f9726089498df8bcd848eb95b76d4da76cc96104f397c5be7e55beb313158",
+ "raw_ext": "html"
+}
