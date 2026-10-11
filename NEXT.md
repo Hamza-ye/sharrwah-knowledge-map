@@ -2,24 +2,31 @@
 
 Each item says what it decides and what it needs. Items lower down depend on the ones above.
 
-## 1. Q1, the concern map (paused before the matching pass)
+## 1. Q1, the concern map (placement step being reshaped)
 
 **Question.** How does the product class (Shopify, Salla, WooCommerce) divide a commerce platform into concerns, and where does it place each one? The full question, rules and output format are in `questions/Q1-concern-map.md`.
 
-**Run.** One agent per platform, each working without seeing the others' work. Then:
-- the cited pages are captured;
-- citations and quotes are checked;
-- concerns are matched across platforms only where the platforms' own terms clearly match.
+**Where it stands.**
+- **What stands:** the inventories, the concern names in the platforms' own words, and the checked citations.
+- **What is not carried forward:** the placement labels. They put the platforms into our vocabulary, while the platforms state these things in their own structures (`studies/concern-map/measurements-2026-10-11.md`).
 
-**Where it stands.** WooCommerce and Salla are complete and checked: every quote is found in its source. Shopify is paused mid-run. `studies/concern-map/README.md` gives each platform's state and how to resume.
+**Next, in order** (detail in `studies/concern-map/README.md`):
+1. Capture Shopify's cited pages and check its quotes (running).
+2. The founder decides how Q1's placement step is reshaped: each placement recorded as what the platform states in its own structures, with no fixed value lists.
+3. A Shopify re-pass against observed-sh at `e49840729`, joined on Shopify's own identifiers first.
+4. Salla and WooCommerce re-passes, with the same step against their own structures.
+5. The matching pass across the three platforms.
 
 **What the founder will be asked for:**
-- the salla.com and salla.sa pages the Salla agent lists, saved with SingleFile;
+- the decision in step 2;
+- the salla.com and salla.sa pages listed in `evidence/product-class/to-save-from-browser.md`, saved with SingleFile;
 - a ruling on each unclear cross-platform match.
 
 ## 2. Q2, the Yemen stress test
 
 Tests the map against the market, case by case, using only Yemen evidence. See `questions/Q2-yemen-stress-test.md`.
+
+Since 11 October, observed-sh's admin answers come from stores registered in Yemen (country `YE`, currency `YER`). They are direct evidence of how Shopify treats such a store.
 
 **Waits for:** item 1 and the founder's go.
 
