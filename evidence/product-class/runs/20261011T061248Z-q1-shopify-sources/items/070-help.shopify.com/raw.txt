@@ -1,0 +1,77 @@
+# Overview of reserves in Shopify Payments
+
+In Shopify Payments, reserves are designed to protect against potential losses stemming from disputes and refunds.
+
+<aside class="note"><h4>Note</h4><p>Your payouts page might differ from the guidance on this page during the release of a new payouts view in the Shopify admin. If you need help managing payouts in the new view, then <a href="/en/manual/your-account/contact-shopify-support">contact Shopify Support</a>.</p>
+</aside>
+
+## Understanding reserves in Shopify Payments
+
+A reserve is a temporary hold on a portion, in some cases a full amount, of transactions processed through Shopify Payments for a specified period. Reserves serve as a protective measure against potential losses that might arise from processing activities, such as chargebacks and refund volumes. Reserves generally don't stop you from accepting payments through Shopify Payments, unless explicitly communicated otherwise. The terms of reserves are communicated to you using email.
+
+## Reasons for using reserves in Shopify Payments
+
+Shopify Payments requires reserves to ensure that funds are available to handle disputes and refunds that might occur, such as instances where you accept payments from customers but your products don't meet their expectations. This could include scenarios such as unfulfilled orders, damaged products received by the customer, or failure to process a refund request.
+
+In the event that a customer opens a dispute with their bank, the payment amount and any relevant dispute fees are deducted from your account.
+
+At the end of the reserve period, the remaining reserve funds that are no longer required to address future refunds or disputes are returned in full.
+
+## Factors leading to reserve implementation on an account {#risk-factors}
+
+A reserve might be initiated on an account following an assessment that identifies an increased level of risk associated with your business. This evaluation considers various risk indicators, including but not limited to the following indicators:
+
+* **Businesses with extended billing cycles**: These types of businesses are particularly vulnerable to disputes from customers discontinuing services or altering purchase decisions. For example, annual subscriptions.
+* **Elevated chargeback activity**: Chargebacks can occur for multiple reasons, such as transaction disputes, unrecognized transactions, delayed product delivery, or customer dissatisfaction.
+* **Increased refund rate**: Indicates challenges in order fulfillment or issues with product quality, such as damaged goods or sizing discrepancies.
+* **Industries with extended delivery timelines**: Higher risk due to potential delays or disruptions in fulfilling orders. For example, event organizers, custom orders, and pre-orders.
+* **Significant volume surges**: Difficulty in managing customer demand effectively, potentially indicating fraudulent activities.
+
+## Types of reserves in Shopify Payments
+
+Reserves established for an account can be classified as either fixed amount reserves or percentage-based reserves:
+
+* **Fixed amount reserve**: Involves setting aside a specific sum for a defined duration. For instance, $1000.00 USD might be reserved for 120 days to ensure that funds are available to address potential chargebacks or refunds following a period of increased sales volume.
+* **Percentage-based reserve**: Withholds a certain percentage of transactions for a specified period. For example, maintaining a 10% reserve for 120 days means that 10% of each transaction processed through Shopify Payments is held in reserve for the subsequent 120 days from the reserve's establishment, and the remaining 90% is disbursed as part of the regular payouts during this period.
+
+## Calculating reserve amount in Shopify Payments
+
+The reserve amount calculation is based on the risk level associated with your business, focusing on potential losses from disputes or refund volumes exceeding what you can manage based on your sales volume.
+
+Learn more about ways that you can [prevent different types of chargeback and inquiries](/manual/payments/chargebacks/preventing-chargebacks).
+
+## Monitor the status of a reserve
+
+You can track the value of your reserved funds from the [Shopify Payments payouts page](/manual/payments/shopify-payments/payouts). The page displays 2 key components:
+
+* **Payout balance**: Funds that have been captured but not yet added to a scheduled payout, not including reserved funds.
+* **Reserved funds**: Money that's temporarily held and that can't be accessed until the reserve period ends.
+
+Your total balance is the sum of your **Payout balance** and **Reserved funds** amounts. For example, if your **Payout balance** shows $2,000 USD and your **Reserved funds** shows $8,000 USD, then your total balance is $10,000 USD. The $2,000 USD is the non-reserved portion of your balance available for upcoming payouts, while the $8,000 USD remains on hold.
+
+Transactions for reserve funds can be tied to specific orders. However, adjustments in reserve amounts, early releases, and fixed amount reserves might not have associated orders.
+
+### View your reserve transactions
+
+#### Steps:
+
+1. From your Shopify admin, go to **Finance** > [**Payouts**](https://admin.shopify.com/payments/payouts).
+
+2. Click **View order transactions**.
+3. Export the order transactions for the time range of interest.
+4. Filter for reserve funds transactions.
+
+### Reserve funds in Payouts
+
+When a reserve applies to your account, Shopify Payments records two types of **Reserved funds** transactions in your payouts:
+
+* **Negative reserve transactions**: Represent the portion of your payouts that are placed in reserve. This reduces the amount you receive in a payout to account for the portion that's in reserve.
+* **Positive reserve transactions**: Represent the funds that are held in reserve and become available for payout after the reserve is complete.
+
+## Extending, appealing, and removing reserves
+
+Before a reserve expires, your account is reviewed to determine whether to keep, reduce, or raise the reserve based on [risks, such as chargebacks or refunds](/manual/payments/shopify-payments/payouts/reserves). To appeal a reserve, reply to the email detailing the reserve terms within the specified timeframe. Some reserves can't be appealed. If your reserve email lists specific requirements for the reserve to be removed instead of inviting you to appeal, then the reserve can't be appealed by reply. After you meet the listed requirements, the reserve is removed automatically.
+
+Each reserve has an expiry date, and a risk assessment decides whether to lift, maintain, reduce, or increase the reserve. When you reach the reserve expiry date, and if no extension is required, then the reserve amount is included in upcoming payouts. It might take several business days for the reserved funds to be processed for payout.
+
+If a reserve is released early, then you might receive a bulk positive reserve transaction. When the reserve's original expiration date arrives, the original positive reserve transactions are paid out with equal negative reserve transactions to account for the early release of funds.

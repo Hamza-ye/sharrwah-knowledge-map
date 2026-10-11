@@ -1,0 +1,19 @@
+{
+ "n": 18,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-capital/germany.md",
+ "dir": "items/018-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-capital/germany.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3687,
+ "cited_in": [
+  "SH-S-0492",
+  "SH-S-0493"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b561cbb9459471d50835ef9708d2b75f24b009e55e5c54bde9ff4cfc4a6a2184",
+ "raw_ext": "txt"
+}

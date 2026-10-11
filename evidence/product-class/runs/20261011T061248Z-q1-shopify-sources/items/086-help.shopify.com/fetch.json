@@ -1,0 +1,20 @@
+{
+ "n": 86,
+ "url": "https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md",
+ "dir": "items/086-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 920,
+ "cited_in": [
+  "SH-S-0733",
+  "SH-S-0734",
+  "SH-S-0735"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "59ae247599664aece4d9db1498f36b773b429fdf014cc013aefff7d758fe6bb0",
+ "raw_ext": "txt"
+}

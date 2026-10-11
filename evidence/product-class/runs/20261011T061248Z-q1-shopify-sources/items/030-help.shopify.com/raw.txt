@@ -1,0 +1,19 @@
+# Order routing
+
+You can set up order routing to automatically assign orders to fulfillment locations based on configured rules. Order routing applies rules in sequence to prioritize locations and determine where to fulfill each order.
+
+Order routing requires 2 or more active [locations](/manual/inventory-and-locations/locations/). The [default order routing strategy](/manual/fulfillment/setup/order-routing/understanding-order-routing) includes rules to do the following:
+
+* Minimize split fulfillments by choosing locations that can fulfill all items
+* Stay within the destination market when possible
+* Ship from the closest location to reduce delivery times
+
+You can use the default configuration or [customize your routing rules](/manual/fulfillment/setup/order-routing/setting-up-order-routing) based on your business needs. For advanced prioritization, you can also create rules based on [location metafields](/manual/fulfillment/setup/order-routing/location-metafields) such as warehouse capacity or fulfillment speed.
+
+You might use custom order routing when you want to prioritize specific warehouses, balance inventory across locations, or optimize fulfillment costs for your business model.
+
+### In this section
+
+- [Understanding order routing](/en/manual/fulfillment/setup/order-routing/understanding-order-routing)
+- [Setting up order routing](/en/manual/fulfillment/setup/order-routing/setting-up-order-routing)
+- [Setting up location metafields for order routing](/en/manual/fulfillment/setup/order-routing/location-metafields)

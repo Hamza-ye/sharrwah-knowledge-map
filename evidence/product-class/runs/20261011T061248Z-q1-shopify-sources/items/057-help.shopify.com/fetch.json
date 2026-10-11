@@ -1,0 +1,19 @@
+{
+ "n": 57,
+ "url": "https://help.shopify.com/en/manual/payments/shop-pay.md",
+ "dir": "items/057-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shop-pay.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1627,
+ "cited_in": [
+  "SH-S-0406",
+  "SH-S-0407"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a9fa1aafcef2b6ab1f2842e3467de20c37d14f98aad46e3eedc03ede5f0a0068",
+ "raw_ext": "txt"
+}

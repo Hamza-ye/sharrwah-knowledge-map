@@ -1,0 +1,19 @@
+{
+ "n": 46,
+ "url": "https://help.shopify.com/en/manual/online-sales-channels/shopify-collective.md",
+ "dir": "items/046-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/online-sales-channels/shopify-collective.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 414,
+ "cited_in": [
+  "SH-S-0729",
+  "SH-S-0730"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c94e88e4bee6c77de477de0bbc0882d641ce4a77d0592a3577afd52eb80629b5",
+ "raw_ext": "txt"
+}

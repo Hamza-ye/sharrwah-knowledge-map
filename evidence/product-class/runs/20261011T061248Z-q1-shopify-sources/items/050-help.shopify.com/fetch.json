@@ -1,0 +1,22 @@
+{
+ "n": 50,
+ "url": "https://help.shopify.com/en/manual/payments/chargebacks.md",
+ "dir": "items/050-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/chargebacks.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1108,
+ "cited_in": [
+  "SH-S-0395",
+  "SH-S-0396",
+  "SH-S-0397",
+  "SH-S-0398",
+  "SH-S-0399"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "2264f7179a632c251af776e8b88735f0cd6fbee0bab527187efe3e21059a8b9e",
+ "raw_ext": "txt"
+}

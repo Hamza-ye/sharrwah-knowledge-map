@@ -8,7 +8,7 @@ The answer to `questions/Q1-concern-map.md` as it is being built. This file says
 | --- | --- | --- |
 | WooCommerce | 654 entries, 118 concerns | 963 of 963 found |
 | Salla | 2,620 entries, 148 concerns | 2,828 of 2,828 found |
-| Shopify | 2,428 entries, 196 concerns (run paused) | 2,322 local quotes found; its 152 cited web pages are being captured |
+| Shopify | 2,428 entries, 196 concerns (run paused) | 3,192 of 3,192 found (2,322 in observed-sh, 870 in its 152 captured pages) |
 
 **What stands:**
 - the inventories, built from the platforms' own lists;
@@ -31,7 +31,7 @@ None of them changed any file.
 
 ## Next, in order
 
-1. **Capture Shopify's cited pages and check its quotes.** This is mechanical, and it is running now.
+1. **Capture Shopify's cited pages and check its quotes.** Done: all 152 pages are captured, and all 3,192 quotes are found.
 2. **The founder decides how Q1's placement step is reshaped.** The proposal: each concern's placement is recorded as what the platform states in its own structures, with no fixed value lists. Examples are a route's stated permissions and entitlements, each store's values for them, a plan line, an access line, or a clause in the terms, each quoted with its identifiers.
 3. **Shopify re-pass, against observed-sh at `e49840729`.**
    - First, joins by script on Shopify's own identifiers:
@@ -52,7 +52,7 @@ None of them changed any file.
 
 | Path | What it holds |
 | --- | --- |
-| `platforms/<platform>/` | Each run's six files, notes, scripts and fetch log. Shopify's folder also holds its working files (`work/`) and its working copies of pages (`working-copies/`). Working copies are not evidence; they are kept until Shopify's cited pages are captured. |
+| `platforms/<platform>/` | Each run's six files, notes, scripts and fetch log. Shopify's folder also holds its working files (`work/`) and its working copies of pages (`working-copies/`). Working copies are not evidence. Shopify's cited pages are now captured, so these copies can go once the founder agrees. |
 | `checks/` | The checker's output per platform, Shopify's list of pages to capture, and `salla-multi-party.tsv`. |
 | `measurements-2026-10-11.md` | The measurements behind the reshaping. |
 

@@ -1,0 +1,19 @@
+{
+ "n": 5,
+ "url": "https://help.shopify.com/en/manual/compliance/legal.md",
+ "dir": "items/005-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/compliance/legal.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1388,
+ "cited_in": [
+  "SH-S-0667",
+  "SH-S-0668"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "55aa4679a0e05045cc7e6238b5444a2a77b8c6c013f8c0e046a0e9a99f8aa89e",
+ "raw_ext": "txt"
+}

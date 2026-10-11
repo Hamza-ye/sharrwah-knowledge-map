@@ -1,0 +1,24 @@
+{
+ "n": 66,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md",
+ "dir": "items/066-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5759,
+ "cited_in": [
+  "SH-S-0253",
+  "SH-S-0254",
+  "SH-S-0255",
+  "SH-S-0256",
+  "SH-S-0257",
+  "SH-S-0258",
+  "SH-S-0259"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a41a1ed274400a192e6d5909441d4a4550c359faacaf04731af688f6b56e0187",
+ "raw_ext": "txt"
+}

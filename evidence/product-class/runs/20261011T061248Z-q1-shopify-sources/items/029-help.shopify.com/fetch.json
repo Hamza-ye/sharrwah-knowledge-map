@@ -1,0 +1,19 @@
+{
+ "n": 29,
+ "url": "https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md",
+ "dir": "items/029-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2219,
+ "cited_in": [
+  "SH-S-0752",
+  "SH-S-0753"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1d52efafbbd6c0b79247fe4d99e0e59fab86c30f18bef6017d7d8729f32ec993",
+ "raw_ext": "txt"
+}

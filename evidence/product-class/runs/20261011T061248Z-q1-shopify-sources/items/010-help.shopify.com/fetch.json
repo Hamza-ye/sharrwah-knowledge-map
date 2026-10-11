@@ -1,0 +1,19 @@
+{
+ "n": 10,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-balance.md",
+ "dir": "items/010-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-balance.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 770,
+ "cited_in": [
+  "SH-S-0458",
+  "SH-S-0459"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "24f51e68e765c1921dd1e23471e215d5988d9d438d9e89583b57b7e80dc7d430",
+ "raw_ext": "txt"
+}

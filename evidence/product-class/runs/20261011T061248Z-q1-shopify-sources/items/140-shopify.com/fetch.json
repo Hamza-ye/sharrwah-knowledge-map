@@ -1,0 +1,23 @@
+{
+ "n": 140,
+ "url": "https://www.shopify.com/legal/shop-pay-merchant-terms",
+ "dir": "items/140-shopify.com",
+ "fetched_at": "2026-10-11T06:13:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/shop-pay-merchant-terms",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 70145,
+ "cited_in": [
+  "SH-S-0408",
+  "SH-S-0409",
+  "SH-S-0410",
+  "SH-S-0411",
+  "SH-S-0412",
+  "SH-S-0413"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "109c96479213074480601be69d109bdad86483b1a4f662b1ec2153d00239e19c",
+ "raw_ext": "html"
+}

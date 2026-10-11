@@ -1,0 +1,20 @@
+{
+ "n": 109,
+ "url": "https://shopify.dev/docs/api/functions/latest/payment-customization.md",
+ "dir": "items/109-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/api/functions/latest/payment-customization.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 21840,
+ "cited_in": [
+  "SH-S-0589",
+  "SH-S-0590",
+  "SH-S-0591"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b407f86e650a5cdf906ddf512e4b414032b4b8d92043ee91622f88a8b6a11412",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 1,
+ "url": "https://help.shopify.com/en/manual/ai-powered-tools/sidekick.md",
+ "dir": "items/001-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/ai-powered-tools/sidekick.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1205,
+ "cited_in": [
+  "SH-S-0736",
+  "SH-S-0737"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "390785666e04c1d13994e33d20bd8b4275b31c7b92de03d0842499b62fc8b89e",
+ "raw_ext": "txt"
+}

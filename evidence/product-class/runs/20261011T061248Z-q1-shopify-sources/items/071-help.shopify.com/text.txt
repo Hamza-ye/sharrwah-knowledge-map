@@ -1,0 +1,31 @@
+# Currency conversion fee calculation for Shopify Payments orders
+
+On April 6, 2026, the calculation for currency conversion fees and Multi-Currency Payout fees on Shopify Payments orders is changing. This makes them easier to understand and reconcile with your payouts and reports.
+
+## Old currency conversion calculation method
+
+When a customer pays with Shopify Payments, the currency conversion fee is calculated using the following formula:
+
+(Gross order − Shopify Payments fees) × Currency conversion fee rate ÷ (1 + Currency conversion fee rate).
+
+This means the fee is calculated on the net order amount, after other applicable fees are deducted. Your effective currency conversion rate is lower than your stated rate.
+
+### Example: Old currency conversion calculation method
+
+The following example demonstrates how the old calculation method applies to an order from a Canadian customer, for a US shop with a 1.5% currency conversion fee rate:
+
+1. A customer places a $100 CAD order.  
+2. Assuming your Shopify Payments (SP) fees are $3 CAD, that is deducted, resulting in a net order amount of $97 CAD.  
+3. Your effective currency conversion rate on the gross order is lower than the stated 1.5%.
+
+## New currency calculation method
+
+Starting on April 6, 2026, currency conversion fees and Multi-Currency Payout fees on Shopify Payments orders are calculated directly on the gross order amount. You might notice small differences in these fees as this change takes effect.
+
+### Example: New currency conversion calculation method
+
+With this update, the currency conversion fee is now calculated directly on the gross order amount, without deducting any fees first. The following example demonstrates the updated method for a typical order for a US shop with a 1.5% currency conversion fee rate:
+
+1. A customer places a $100 CAD order.  
+2. The currency conversion fee is calculated directly on the gross amount: $100 CAD × 1.5%  
+3. Your effective currency conversion rate matches exactly your stated rate of 1.5%.

@@ -1,0 +1,20 @@
+{
+ "n": 111,
+ "url": "https://shopify.dev/docs/api/usage/limits.md",
+ "dir": "items/111-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/api/usage/limits.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5232,
+ "cited_in": [
+  "SH-S-0687",
+  "SH-S-0688",
+  "SH-S-0689"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3e62fc6bb4086cdc22e3e369015659be0bf92d74904117ac6bf71214436b49be",
+ "raw_ext": "txt"
+}

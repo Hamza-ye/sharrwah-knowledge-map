@@ -1,0 +1,26 @@
+{
+ "n": 151,
+ "url": "https://www.shopify.com/legal/tools/report-an-issue/financial-complaint",
+ "dir": "items/151-shopify.com",
+ "fetched_at": "2026-10-11T06:13:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/tools/report-an-issue/financial-complaint",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 56578,
+ "cited_in": [
+  "SH-S-0657",
+  "SH-S-2171",
+  "SH-S-2172",
+  "SH-S-2173",
+  "SH-S-2174",
+  "SH-S-2175",
+  "SH-S-2176",
+  "SH-S-2177",
+  "SH-S-2178"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "30a97008b3ca82df457ddfd2e320f26c973adadbeeeee4f7be2514aabbb778a7",
+ "raw_ext": "html"
+}

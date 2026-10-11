@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://help.shopify.com/en/manual/b2b/getting-started.md",
+ "dir": "items/003-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/b2b/getting-started.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 499,
+ "cited_in": [
+  "SH-S-0740"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "dc79e17777fbfe48e8e28da81f89e380c25a08ad64a294ef0465ba3281b9267e",
+ "raw_ext": "txt"
+}

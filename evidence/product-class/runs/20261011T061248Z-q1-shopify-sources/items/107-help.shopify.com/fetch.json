@@ -1,0 +1,30 @@
+{
+ "n": 107,
+ "url": "https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md",
+ "dir": "items/107-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/subprocessors.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1722,
+ "cited_in": [
+  "SH-S-0194",
+  "SH-S-0195",
+  "SH-S-0196",
+  "SH-S-0197",
+  "SH-S-0198",
+  "SH-S-0199",
+  "SH-S-0200",
+  "SH-S-0201",
+  "SH-S-0202",
+  "SH-S-0203",
+  "SH-S-0204",
+  "SH-S-0205",
+  "SH-S-0206"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "dbf6be3c25e3aec61efa1ef9d96b99f56aeb94df7f1186493d4c6dc38c2b6dd2",
+ "raw_ext": "txt"
+}

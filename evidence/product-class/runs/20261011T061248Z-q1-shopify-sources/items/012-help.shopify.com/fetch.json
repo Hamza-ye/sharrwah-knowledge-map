@@ -1,0 +1,21 @@
+{
+ "n": 12,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-bill-pay.md",
+ "dir": "items/012-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-bill-pay.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1121,
+ "cited_in": [
+  "SH-S-0498",
+  "SH-S-0499",
+  "SH-S-0500",
+  "SH-S-0501"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "597c07ac5fb4f34764810fcfe651a1872d01e22f26c4b496b05c32d1d7f70049",
+ "raw_ext": "txt"
+}

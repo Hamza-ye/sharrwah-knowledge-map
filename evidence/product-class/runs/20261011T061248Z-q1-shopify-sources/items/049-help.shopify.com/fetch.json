@@ -1,0 +1,21 @@
+{
+ "n": 49,
+ "url": "https://help.shopify.com/en/manual/payments/additional-payment-methods/cryptocurrency.md",
+ "dir": "items/049-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/additional-payment-methods/cryptocurrency.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2063,
+ "cited_in": [
+  "SH-S-0426",
+  "SH-S-0427",
+  "SH-S-0428",
+  "SH-S-0429"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5e0ef825bf899e1aefa8fb99653fe7e5f22e65bdd754b6d3b07b63b22ee65a1f",
+ "raw_ext": "txt"
+}

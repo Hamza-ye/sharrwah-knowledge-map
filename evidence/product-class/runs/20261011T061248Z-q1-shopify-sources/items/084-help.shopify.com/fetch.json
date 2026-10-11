@@ -1,0 +1,21 @@
+{
+ "n": 84,
+ "url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/processing-customer-data-requests.md",
+ "dir": "items/084-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/processing-customer-data-requests.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1957,
+ "cited_in": [
+  "SH-S-0663",
+  "SH-S-0664",
+  "SH-S-0665",
+  "SH-S-0666"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c2a077ba61afcd1b3117162ef105047a922b0491ab514603f7c4b72aab06652e",
+ "raw_ext": "txt"
+}

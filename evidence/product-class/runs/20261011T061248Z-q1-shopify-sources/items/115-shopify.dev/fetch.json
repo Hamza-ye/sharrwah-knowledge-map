@@ -1,0 +1,20 @@
+{
+ "n": 115,
+ "url": "https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance.md",
+ "dir": "items/115-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 8912,
+ "cited_in": [
+  "SH-S-0696",
+  "SH-S-0697",
+  "SH-S-0698"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "ea9dee13304ca6cef50f83e94bac56afde96022db9ae7a7109fe1fcfe25624ee",
+ "raw_ext": "txt"
+}

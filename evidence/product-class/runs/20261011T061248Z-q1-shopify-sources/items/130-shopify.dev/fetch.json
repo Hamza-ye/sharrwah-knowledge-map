@@ -1,0 +1,19 @@
+{
+ "n": 130,
+ "url": "https://shopify.dev/docs/storefronts/headless.md",
+ "dir": "items/130-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/storefronts/headless.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4437,
+ "cited_in": [
+  "SH-S-0709",
+  "SH-S-0710"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "9135b890a2bed6e9a633501647e1b48737225f3d0493a3884aa51340ccb6d2bc",
+ "raw_ext": "txt"
+}

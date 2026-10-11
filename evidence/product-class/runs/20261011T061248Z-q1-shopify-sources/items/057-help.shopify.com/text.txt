@@ -1,0 +1,30 @@
+# Shop Pay accelerated checkout for fast, secure payments
+
+Shop Pay is an accelerated checkout option designed to enhance the shopping experience for customers on your Shopify store and on Shop. It allows customers to save their email address, payment method, and shipping and billing information, making the checkout process faster and more convenient. By activating Shop Pay, you can provide a seamless and efficient checkout experience for your customers, especially those who have already opted in to Shop Pay on any Shopify store. Shop Pay is included as part of [Shopify Payments](/manual/payments/shopify-payments), and transactions are processed at your Shopify Payments rates.
+
+A customer needs to enter an email address at checkout in order to save their payment information. Customers who only enter a phone number in the contact field aren't prompted to save their information. Learn more about [accelerated checkouts](/manual/payments/accelerated-checkouts).
+
+You can use Shop Pay to offer your customers the following benefits and features:
+
+* **Time-saving checkout**: Shop Pay saves your customers' email address, payment method, and shipping and billing information, eliminating the need for them to enter these details every time they make a purchase. This significantly speeds up the checkout process, leading to higher conversion rates and improved customer satisfaction. Check out the [Shop Pay is the best-converting accelerated checkout on the internet blog](https://www.shopify.com/ca/blog/shop-pay-checkout) for more details on the performance of Shop Pay.
+* **Shop Pay for in-person sales**: You can offer Shop Pay as a payment option on Shopify POS. Customers can scan a QR code on your POS device and complete payment on the Shop website. Learn more about [accepting Shop Pay on Shopify POS](/manual/payments/shop-pay/shop-pay#in-store).
+* **Support for pickup in store or local delivery**: If your store offers [pickup in store or local delivery](/manual/fulfillment/setup/delivery-methods), then customers can choose that option during checkout when using Shop Pay. This feature provides convenience and flexibility for customers who prefer to collect their orders locally.
+* **Secure data storage**: The customer’s shipping and billing information is securely stored on [Shopify’s PCI compliant servers](https://www.shopify.com/security). This information is only shared with your store when an order is placed, ensuring the privacy and security of your customers' data. If your customers have questions about how Shop Pay works, or how their data is stored, then you can refer them to the [Shop Help Center](https://help.shop.app/en/shop/shop-pay) page.
+* **Flexible payment options**: Give customers convenient and easy ways to pay. Customers can pay with credit and debit cards, as well as [local payment methods processed by Shopify Payments](/manual/payments/shop-pay/shop-pay#supported-payment-methods). Eligible United States stores can also offer [health savings account (HSA) and flexible spending account (FSA) payments with Shop Pay](/manual/payments/shop-pay/hsa-fsa-payments) for qualifying products.
+
+
+Activating Shop Pay also adds the following [Shop](/manual/online-sales-channels/shop) features to your store when eligible:
+
+* [Sell with Shop](/manual/online-sales-channels/shop/setup#sell-with-shop) is automatically activated on stores using Shop Pay that meet all [Shop channel eligibility requirements](/manual/online-sales-channels/shop/eligibility/requirements). This feature displays your eligible products in the [Shop app](https://shop.app/) for customers to discover and purchase.
+* [Sign in with Shop](/manual/online-sales-channels/shop/sign-in-features) is automatically activated on stores using Shop Pay and [customer accounts](/manual/customers/customer-accounts). This feature lets customers sign in to your online store using their Shop account for a more personalized shopping experience and one-tap checkout.
+
+
+### In this section
+
+- [Activating Shop Pay](/en/manual/payments/shop-pay/activating-shop-pay)
+- [Deactivating Shop Pay](/en/manual/payments/shop-pay/deactivating-shop-pay)
+- [Shopify Protect for Shop Pay](/en/manual/payments/shop-pay/shopify-protect)
+- [Using Shop Pay — Customer experience](/en/manual/payments/shop-pay/shop-pay)
+- [Accepting HSA and FSA payments with Shop Pay](/en/manual/payments/shop-pay/hsa-fsa-payments)
+- [Shop Pay on any platform](/en/manual/payments/shop-pay/shop-pay-on-any-platform)
+- [Guidelines for using “Buy with Shop”](/en/manual/payments/shop-pay/assets)

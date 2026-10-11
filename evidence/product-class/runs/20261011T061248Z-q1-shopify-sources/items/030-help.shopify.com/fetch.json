@@ -1,0 +1,18 @@
+{
+ "n": 30,
+ "url": "https://help.shopify.com/en/manual/fulfillment/setup/order-routing.md",
+ "dir": "items/030-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/fulfillment/setup/order-routing.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 582,
+ "cited_in": [
+  "SH-S-0751"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "fea6fbe18e208e54bf3ce01c4ee188ef682cb79f5ab5854e017767af588c6a95",
+ "raw_ext": "txt"
+}

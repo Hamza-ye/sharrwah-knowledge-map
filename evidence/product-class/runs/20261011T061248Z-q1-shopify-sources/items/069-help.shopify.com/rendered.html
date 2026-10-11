@@ -1,0 +1,368 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Understanding Shopify Payments payout timing
+
+Shopify Payments payout timing determines when funds from your sales are available in your bank account. Payout settlement times vary by country and risk level. 
+
+Settlement time refers to the amount of time between when a customer's payment is captured and those funds are available to be paid out to your bank account. The date and time that a customer's payment is captured is recorded in Coordinated Universal Time (UTC). Funds from payments that are captured on Friday, Saturday, and Sunday are grouped and sent together as one payout.
+
+The minimum settlement time depends on your region, risk level, and the payment method used. Some transactions, such as refunds and chargebacks, can settle faster than charges, and reduce your payout amount. 
+
+After funds are paid out, they might take an additional 1-3 days to display in your bank account. This depends on your bank's processing time and is out of Shopify’s control.
+
+If you're experiencing a payout delay that exceeds what you expect, then begin troubleshooting by checking your Shopify admin for any alerts, banners, or notifications related to your account status. Additionally, check the store owner email address for any correspondence from Shopify regarding payout issues. If you can’t identify the problem, then reach out to Shopify Support. Shopify Support can help you understand the status of your account and provide guidance on how to resolve any issues that might be delaying your payouts.
+
+## Payout schedule
+
+Your payout schedule determines when funds from sales are transferred to your bank account. You can choose daily, weekly, or monthly payouts based on your business needs. Some countries, such as Japan, have requirements that limit available payout options. Learn more about [scheduling your Shopify Payments payouts](/manual/payments/shopify-payments/payouts/schedule-payouts).
+
+## Cutoff times for processing payouts
+
+Payout schedules use business days only. Weekends and holidays don't count toward your settlement time. For example, if you receive an order on Friday (day 0) and your settlement time is three business days, then your payout processes on Wednesday.
+
+### Example: Calculating payout timing for a Friday charge
+
+Review the following example that demonstrates how business days are counted when a charge occurs on a Friday with a three business day settlement time.
+
+* **Friday** : Day 0 (charge date)
+* **Saturday and Sunday** : Non-business days (not counted)
+* **Monday** : Day 1
+* **Tuesday** : Day 2
+* **Wednesday** : Day 3, the payout is processed.
+
+Charges from Saturday and Sunday are also processed on Wednesday, because weekend days count as Day 0.
+
+## Regional settlement times {#settlement-times-by-country-shopify-payments}
+
+Settlement times vary by country, risk level, and the transaction type. For countries with a minimum payout threshold, if there's a payout for less than this amount, then the payout stays in a pending state until more funds are available to pay out. 
+
+Payments with automated clearing house (ACH) direct debit can take up to 4 business days to settle and don't follow the same settlement timing of other transactions. After the payment settles, the funds are paid out according to your set payout schedule. Learn more about [ACH Direct Debit payments](/manual/payments/shopify-payments/local-payment-methods/ach).
+
+The following table explains the settlement times for when a charge is processed for selected regions.
+
+&lt;div&gt;
+&lt;table&gt;
+   &lt;caption&gt;Shopify Payments payout information by country.&lt;/caption&gt;
+   &lt;thead&gt;
+       &lt;tr&gt;
+           &lt;th scope="col"&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/th&gt;
+           &lt;th scope="col"&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/th&gt;
+           &lt;th scope="col"&gt;&lt;b&gt;Minimum settlement time&lt;/b&gt;&lt;/th&gt;
+           &lt;th scope="col"&gt;&lt;b&gt;Minimum payout amount&lt;/b&gt;&lt;/th&gt;
+           &lt;th scope="col"&gt;&lt;b&gt;Relevant Shopify Payments help article&lt;/b&gt;&lt;/th&gt;
+       &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Australia&lt;/th&gt;
+           &lt;td&gt;AUD, CAD, CHF, DKK, EUR, GBP, HKD, JPY, NOK, NZD, SEK, SGD, USD&lt;/td&gt;
+           &lt;td&gt;2 business days&lt;/td&gt;
+           &lt;td&gt;None&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/australia/"&gt;Shopify Payments for Australia&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Austria&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/austria/"&gt;Shopify Payments for Austria&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Belgium&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/belgium/"&gt;Shopify Payments for Belgium&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Canada&lt;/th&gt;
+           &lt;td&gt;CAD ($) or USD ($)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;None&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/canada/"&gt;Shopify Payments for Canada&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Croatia&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/croatia/"&gt;Shopify Payments for Croatia&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Cyprus&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/cyprus/"&gt;Shopify Payments for Cyprus&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Czechia&lt;/th&gt;
+           &lt;td&gt;EUR (€) or CZK (Kč)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 or 30 Kč&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/czechia/"&gt;Shopify Payments for Czechia&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Denmark&lt;/th&gt;
+           &lt;td&gt;EUR (€) or DKK (kr)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 or 20 kr&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/denmark/"&gt;Shopify Payments for Denmark&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Finland&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/finland/"&gt;Shopify Payments for Finland&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;France&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€10 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/france/"&gt;Shopify Payments for France&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Germany&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/germany/"&gt;Shopify Payments for Germany&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Hong Kong SAR&lt;/th&gt;
+           &lt;td&gt;HKD&lt;/td&gt;
+           &lt;td&gt;4 business days&lt;/td&gt;
+           &lt;td&gt;10 HKD&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/hong-kong"&gt;Shopify Payments for Hong Kong SAR&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Ireland&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/ireland/"&gt;Shopify Payments for Ireland&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+           &lt;th scope="row"&gt;Italy&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/italy/"&gt;Shopify Payments for Italy&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Japan&lt;/th&gt;
+           &lt;td&gt;JPY (￥)&lt;/td&gt;
+           &lt;td&gt;5 business days&lt;/td&gt;
+           &lt;td&gt;5 JPY&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/japan"&gt;Shopify Payments for Japan&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Latvia&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€3 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/latvia/"&gt;Shopify Payments for Latvia&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Lithuania&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/lithuania/"&gt;Shopify Payments for Lithuania&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Malta&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/malta/"&gt;Shopify Payments for Malta&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Mexico&lt;/th&gt;
+           &lt;td&gt;MXN&lt;/td&gt;
+           &lt;td&gt;7 business days&lt;/td&gt;
+           &lt;td&gt;10 MXN&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/mexico/"&gt;Shopify Payments for Mexico&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Netherlands&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/netherlands/"&gt;Shopify Payments for Netherlands&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;New Zealand&lt;/th&gt;
+           &lt;td&gt;NZD&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;None&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/new-zealand"&gt;Shopify Payments for New Zealand&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Norway&lt;/th&gt;
+           &lt;td&gt;EUR (€) or NOK&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR or 20 NOK&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/norway/"&gt;Shopify Payments for Norway&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Poland&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/poland/"&gt;Shopify Payments for Poland&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Portugal&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/portugal/"&gt;Shopify Payments for Portugal&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Romania&lt;/th&gt;
+           &lt;td&gt;EUR (€) or RON&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR or 5 RON&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/romania"&gt;Shopify Payments for Romania&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Singapore&lt;/th&gt;
+           &lt;td&gt;SGD&lt;/td&gt;
+           &lt;td&gt;4 business days&lt;/td&gt;
+           &lt;td&gt;1 SGD&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/singapore/"&gt;Shopify Payments for Singapore&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Slovenia&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/slovenia/"&gt;Shopify Payments for Slovenia&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Spain&lt;/th&gt;
+           &lt;td&gt;EUR (€)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/spain/"&gt;Shopify Payments for Spain&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Sweden&lt;/th&gt;
+           &lt;td&gt;EUR (€) or SEK (kr)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR or 20 SEK&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/sweden/"&gt;Shopify Payments for Sweden&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;Switzerland&lt;/th&gt;
+           &lt;td&gt;EUR (€) or CHF (Fr)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;€1 EUR or 5 CHF&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/switzerland"&gt;Shopify Payments for Switzerland&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;United Arab Emirates&lt;/th&gt;
+           &lt;td&gt;AED&lt;/td&gt;
+           &lt;td&gt;5 business days&lt;/td&gt;
+           &lt;td&gt;20 AED&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/united-arab-emirates/"&gt;Shopify Payments for the United Arab Emirates&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;United Kingdom (UK)&lt;/th&gt;
+           &lt;td&gt;GBP (£)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;£1 GBP&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/united-kingdom"&gt;Shopify Payments for United Kingdom (UK)&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+        &lt;tr&gt;
+           &lt;th scope="row"&gt;United States (U.S)&lt;/th&gt;
+           &lt;td&gt;USD ($)&lt;/td&gt;
+           &lt;td&gt;3 business days&lt;/td&gt;
+           &lt;td&gt;None&lt;/td&gt;
+           &lt;td&gt;&lt;a href="/manual/payments/shopify-payments/supported-countries/united-states/"&gt;Shopify Payments for United States (U.S)&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+      &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+### Payouts with Shopify Balance
+
+After you sign up for a Shopify Balance account, your main Balance account is automatically set as your Shopify Payments payout account. This means that using your main Balance account lets you receive money from your Shopify sales up to 7 days earlier than a bank.
+
+Payouts from Shopify Payments can arrive in your Shopify Balance account within 1 business day from the transaction processing date. In some cases, payouts for new merchants can take up to 5 business days. Learn more about [payouts from Shopify Payments arriving in your Shopify Balance account](/manual/finance/shopify-balance/payouts/payout-accounts). 
+
+## Troubleshooting payout delays
+
+If your payouts take longer than expected after fulfilling orders for a few weeks, then multiple factors can contribute to the delay. Check your Shopify admin for alerts, banners, or notifications about your account status. Also check your store owner email for correspondence from Shopify. If you can't identify the issue, contact Shopify Support. Review the following common causes for payout delays.
+
+### Account reviews and holds
+
+Payouts can be temporarily held while your account undergoes review. This review can be influenced by several factors, including the following examples:
+
+* Chargeback disputes
+* Compliance checks or potential violations of [Shopify Payments Terms of Service for your country](https://www.shopify.com/ca/legal) 
+* Customer complaints
+* [High-risk orders](/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis#fraud-recommendations) 
+* Fraud or compliance investigations by our financial partners
+* Fulfillment issues
+* Onboarding processes that require additional documentation or verification
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;The store owner receives notifications in their Shopify admin or by email when a payout hold is placed on your account. Review your &lt;a href="/en/manual/your-account/users/roles/permissions/store-permissions#finance-permissions"&gt;store role permissions&lt;/a&gt; to ensure that the correct users in your business also receive payout-related notifications in their Shopify admin.&lt;/p&gt;
+&lt;/aside&gt;
+
+### Payout destination change
+
+When you change your payout destination to a new external bank account, or add a new payout bank account more than 24 hours after completing your Shopify Payments setup, your payouts are temporarily paused for 3-5 business days. This pause is intended to protect your account from unauthorized access while Shopify verifies the new account.
+
+This pause doesn't apply when you switch your Shopify Payments payout destination to your Shopify Balance account. Other account reviews or security holds can still affect payout timing.
+
+If you use Multi-Currency Payouts, then adding or replacing a bank account for one currency can pause payouts to all of your payout accounts, not only payouts to the bank account that you added or changed.
+
+After the pause is lifted, pending payouts start processing to your new bank account according to your regular [payout schedule](/manual/payments/shopify-payments/payouts/schedule-payouts). For example, if your settlement time is 2 business days, then your next payout is scheduled within 2 business days after the pause ends.
+
+### Failed payouts
+
+A payout can fail due to incorrect bank account information or problems such as a currency mismatch. If this happens, then you might not receive future payouts until you resolve the payout failure by following the instructions provided in the failed payout message. Always check your Shopify admin for notifications regarding failed payouts and follow provided instructions to resolve the issue, such as updating your bank account details.
+
+### Bank account issues
+
+Ensure that your bank account complies with [Shopify Payments’ requirements for your region](/manual/payments/shopify-payments/supported-countries). Problems such as an invalid account type or mismatched currency can lead to further delays.
+
+If you recently [updated your bank account details](/manual/payments/shopify-payments/payouts/lower-or-missing-payouts) and haven't received your payout, then it could be due to the following factors:
+
+* Processing time
+* Pending payouts
+* Errors in new bank account details
+* Account review
+* Minimum payout threshold
+* Account currency mismatch with the new bank account 
+
+### Issues with your tax details
+
+Financial regulations require Shopify to verify appropriate tax identification numbers and other business details. If there are issues with your business information or tax identification numbers, then a hold on your payouts might be applied. Respond to any requests for updated information that you receive as notifications in your Shopify admin or in your store owner email.
+
+### Reserves in Shopify Payments
+
+When you use Shopify Payments, a portion of your funds might be held as a [reserve](/manual/payments/shopify-payments/payouts/reserves) to cover potential losses from disputes or refunds. While reserves allow you to continue accepting payments, they can affect the timing of when you receive the full amount of your earnings.
+
+### Custom payout schedules
+
+Your account might be placed on a custom payout schedule, which can result in extended payout periods ranging from 5 to 20 business days for [accounts that are deemed higher risk](/manual/payments/shopify-payments/onboarding/acceptable-business-practices#risk-standards-and-network-thresholds).
+
+### Other factors affecting payout timing
+
+The following are examples of other factors that can contribute to payout delays:
+
+* **Adjusting your payout schedule:** If you change your payout frequency, such as changing it from daily to weekly, then pending payouts might be delayed until the next scheduled payout date.
+* **Bank processing times:** After a payout is issued by the payment processor, banks need approximately 1-3 business days to process and transfer the funds to your account.
+* **Weekends and public holidays:** Payouts aren't processed on weekends or public holidays. If your payout is scheduled during these times, then it's processed on the next business day.
+* **Incomplete Shopify Payments setup:** Delays occur if you haven't completed the entire Shopify Payments setup, such as not adding a bank account. 
+* **Negative balances:** If your account has a negative **Payout balance** amount due to refunds or chargebacks, then payouts are delayed until this balance is offset by future sales, or if applicable, until your bank account can cover the negative amount.
+
+## Managing Shopify Payments payouts after deactivating your store
+
+If you [deactivate your store](/manual/your-account/manage-orgs-and-stores/manage-pricing-plan/deactivate-store), then any pending Shopify Payments payouts are sent to your linked bank account according to your [preferred payout schedule](/manual/payments/shopify-payments/payouts/schedule-payouts). However, if a payout fails, then you can't troubleshoot the issue or change your payout settings, because you can't access your Shopify admin when your store is deactivated. To make any adjustments to your Shopify Payments settings or resolve failed payouts, you need to [reactivate your store](/manual/your-account/manage-orgs-and-stores/manage-pricing-plan/deactivate-store#reactivate-store).
+
+Additionally, you [can't respond to chargebacks after your store is closed](/manual/payments/chargebacks/chargebacks-in-admin).
+</pre></body></html>

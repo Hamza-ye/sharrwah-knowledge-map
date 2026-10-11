@@ -1,0 +1,29 @@
+{
+ "n": 144,
+ "url": "https://www.shopify.com/legal/terms-agentic-storefronts",
+ "dir": "items/144-shopify.com",
+ "fetched_at": "2026-10-11T06:13:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/terms-agentic-storefronts",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 70949,
+ "cited_in": [
+  "SH-S-0621",
+  "SH-S-0622",
+  "SH-S-0623",
+  "SH-S-0624",
+  "SH-S-0625",
+  "SH-S-0626",
+  "SH-S-0627",
+  "SH-S-0628",
+  "SH-S-0629",
+  "SH-S-0630",
+  "SH-S-0631",
+  "SH-S-0632"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bccd73f4a6d2caad0be3296bc96dfb99cb27e9784155fba895c017793bb0f515",
+ "raw_ext": "html"
+}

@@ -1,0 +1,24 @@
+{
+ "n": 53,
+ "url": "https://help.shopify.com/en/manual/payments/payment-authorization.md",
+ "dir": "items/053-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/payment-authorization.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4469,
+ "cited_in": [
+  "SH-S-0389",
+  "SH-S-0390",
+  "SH-S-0391",
+  "SH-S-0392",
+  "SH-S-0393",
+  "SH-S-0394",
+  "SH-S-0577"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "96287add182e982645fd816d573cf4bb67eb1ccf980f06ff4567a57c7c78ddbf",
+ "raw_ext": "txt"
+}

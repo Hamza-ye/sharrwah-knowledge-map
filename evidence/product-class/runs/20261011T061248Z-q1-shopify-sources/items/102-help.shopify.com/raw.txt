@@ -1,0 +1,138 @@
+# Identity verification on Shopify
+
+Identity verification protects your business from impersonation, account takeovers, and fraudulent activities. This process helps Shopify comply with financial regulations and keeps your business and customers safe.
+
+## Identity verification requirements {#requirements}
+
+Identity verification helps confirm the correct person or business is involved. This includes information about who completes verification, what documents are needed, and how data is protected.
+
+### Who needs to complete the identity verification request
+
+In most cases, [the store owner](/manual/your-account/users/roles/roles-managed-by-shopify#owner-roles) is required to complete the identity verification request. A reverification might be requested when account details change or during periodic reviews.
+
+An identity verification request might be sent to a specific individual outside of the store's administrators. This occurs when submitting certain forms, such as [reporting a merchant](https://www.shopify.com/legal/tools/report-an-issue/report-a-merchant), or when an individual has requested an update to the details on their account.
+
+### Items needed for identity verification request
+
+To complete the identity verification process, the following items are required:
+
+* A valid, government‑issued photo ID such as a passport, driver’s license, or national identification card.
+* A selfie or short liveness check using your device’s camera.
+* A device with a working camera, good lighting, and a stable internet connection.
+
+### When identity verification is required {#when-required}
+
+Identity verification might be requested in the following situations:
+
+- Setting up or updating your [Shopify Payments account](/manual/payments/shopify-payments/onboarding/account-setup)
+- Applying for Shopify Capital or Credit
+- Signing up for the [Agentic plan](/manual/online-sales-channels/agentic-storefronts/agentic-plan-setup#verify)
+- When [suspicious activity](/manual/finance/shopify-balance/managing-account/account#suspicious-movement) is detected
+- Recovering access to your account when you've lost your two-step authentication method or access to your email
+
+If you're recovering access to your account, then identity verification might be requested to confirm that you're the legitimate account holder before Shopify can make changes to your account security settings. This can be required even if you started the recovery request yourself.
+
+<aside class="note"><h4>Note</h4><p>For hacked or compromised accounts, <a href="/en/manual/your-account/contact-shopify-support">contact Shopify Support</a> immediately. Account recovery identity verification is for cases where you&#39;ve lost access and don&#39;t think someone else has accessed your account.</p>
+</aside>
+
+If you need a new verification session during account recovery, then restart account recovery from [accounts.shopify.com](https://accounts.shopify.com) and follow the prompts. Shopify Support can't send a separate identity verification link for that recovery session.
+
+## Complete identity verification request {#idv-request}
+
+Identity verification takes a few minutes but can take longer when manual review of the information is required. Any requests for additional information are communicated through the Shopify admin or by email. Certain Shopify account features might be restricted until verification is complete.
+
+#### Steps:
+
+1. From your Shopify admin, click the identity verification prompt to start the verification process. Alternatively, click the secure link in the verification email.
+2. Review the information in the “Verify your identity” window, then click **Agree and continue**.
+3. Continue with the verification process on your mobile device or choose **Other options** to use another device.
+3. Photograph your original physical ID document. Scans, photocopies, or screen images aren't accepted. Ensure all four corners are displayed and no fingers cover any information.
+4. If your document has two sides, then photograph both the front and back.
+5. Complete the selfie or liveness check by following the on-screen instructions. Keep your face well-lit and remove hats, masks, or tinted glasses.
+6. After all photos are captured, the verification is automatically submitted and the request is complete.
+
+## Document upload recommendations {#documents}
+
+Follow these recommendations when uploading documents:
+
+* **Document quality:**
+  * Use a valid, unexpired document.
+  * Use bright, indirect lighting to avoid glare, shadows, and reflections.
+  * Place the ID on a flat, contrasting background and clean the camera lens before capturing the image.
+  * Make sure the image is sharp, not blurry, with all edges fully displayed.
+* **Information consistency:**
+  * The name on the document must exactly match the name on the Shopify account.
+  * The date of birth on the document must also match account details.
+  * For verification requests tied to a specific individual, their name will display in the first stage of the process. Ensure the documentation matches that name.
+* **Device, browser, and network:**
+  * Confirm camera permissions are activated in the browser or mobile device settings.
+  * Use an up-to-date version of Chrome, Safari, or Firefox. If desktop verification fails, then try using a mobile device.
+  * Deactivate VPNs or proxies and ensure a stable internet connection during the upload.
+
+## Troubleshooting IDV requests {#troubleshooting}
+
+<div class="accordion-troubleshooting">
+  <details>
+    <summary id="verification-flow-issues">Troubleshooting the IDV flow</summary>
+
+If you can't open the verification flow, then try these troubleshooting steps:
+
+1. Sign out and back into your Shopify admin. If you're having trouble logging in, then review the [troubleshooting login guide](/manual/your-account/logging-in/troubleshooting-login).
+2. Try incognito mode or another device.
+3. Clear your browser cache and cookies.
+4. Verify the browser isn't set to block all cookies.
+5. Try using mobile data or another internet connection.
+6. Verify your browser is up to date.
+7. Verify you aren't using a Virtual Private Network (VPN) or have a firewall activated that blocks Shopify.
+
+  </details>
+
+  <details>
+    <summary id="camera-issues">Troubleshoot your camera</summary>
+
+If your camera can't be detected or is blocked, then try the following troubleshooting steps:
+
+1. Check and allow camera permissions in your browser settings:
+   * Most browsers display a camera icon or lock icon in the address bar
+   * Find the camera permissions in your browser's site settings
+   * Make sure Shopify is granted access in the camera permissions
+2. Verify camera permissions in your operating system settings:
+   * Check your system's privacy or security settings
+   * Search for camera or media permissions
+   * Ensure your browser is allowed to access the camera
+3. Close any other applications that might be using the camera.
+4. Refresh the verification page and try again.
+
+  </details>
+
+  <details>
+    <summary id="document-rejection">Troubleshoot your documents</summary>
+
+If your document is continuously rejected, then try these troubleshooting steps:
+
+1. Use a different valid government ID (passports are widely accepted).
+2. Ensure good lighting when taking the photo.
+3. Remove any cases or holders from the document.
+4. Display the full document in the frame.
+5. Confirm the selected document type and country match your actual document.
+
+  </details>
+
+  <details>
+    <summary id="verification-attempts">Troubleshoot verification attempts or error message "We couldn't verify you"</summary>
+
+If you run out of attempts or receive the error “We couldn’t verify you”, then try these troubleshooting steps:
+
+1. Wait for some time before trying again.
+2. Check your email for any messages about this issue.
+3. If the issue persists, then contact Shopify Support.
+
+  </details>
+
+  <details>
+    <summary id="name-mismatch">Troubleshoot different name on document</summary>
+
+If your documents don't match the name on the verification request, then contact Shopify Support. They can help update your Shopify Payments representative details.
+
+  </details>
+</div>

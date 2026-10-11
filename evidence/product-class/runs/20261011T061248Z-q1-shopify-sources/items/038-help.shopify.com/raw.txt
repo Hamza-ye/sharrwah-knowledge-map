@@ -1,0 +1,146 @@
+# Currency conversions and exchange rates
+
+Currency conversion occurs at the time of a transaction, such as when you capture a payment, you issue a refund, or when there is a chargeback. The foreign exchange rate used is always the rate at the time of the transaction.
+
+You can view the breakdown of a transaction in an order's timeline.
+
+You can [view a breakdown](/manual/markets/customizations/catalogs) of how each product price is calculated for each market.
+
+## Currency definitions and conversions
+
+Your store has three types of currencies:
+
+* **Store currency** - The currency of your Shopify admin. This is the currency that you use to set prices for your products and product variants in your Primary market, and it's the currency that displays in your reports.
+* **Local currency** (also referred to as the customer or presentment currency) - The currency that displays to the customer in your store and the currency that the customer uses when they pay for their orders at checkout.
+* **Payout currency** - The currency that Shopify uses when depositing money in your bank account.
+
+## Currency conversion risks
+
+Currency rates are always fluctuating. Whenever there is a time delay in processing payments or refunds, there is a possibility that you might lose or gain money because of currency conversions.
+
+You can lose or gain money in the following situations:
+
+* [When you use fixed pricing for markets](/manual/markets/customizations/catalogs)
+* [When you manually capture payments](/manual/international/pricing/exchange-rates#manual-payments)
+* [When you refund orders](/manual/international/pricing/exchange-rates#refunds)
+* [When you're issued a chargeback](/manual/international/pricing/exchange-rates#chargebacks)
+
+<aside class="note"><h4>Note</h4><p>If you sell subscription products and sell in multiple currencies, then the currency conversion rate stays the same as the first order that your customer places. To learn more about subscriptions, refer to <a href="/en/manual/products/purchase-options/subscriptions"><em>Subscriptions</em></a>.</p>
+</aside>
+
+## Automatic exchange rate conversions {#auto-convert}
+
+When you sell in markets with local currencies, your online store prices are converted to your customer's currency. The prices in your store change automatically with market exchange rates.
+
+<aside class="note"><h4>Note</h4><p>When you fulfill a local currency order, line item prices are converted into your store&#39;s currency. Because these amounts are approximate conversions from your customer’s currency and can fluctuate based on the exchange market, they might differ from the total amount captured.</p>
+</aside>
+
+Your prices are converted by multiplying the product price by the currency conversion rate, adding the [conversion fee](/manual/international/pricing/fees), and then applying the [rounding rules](/manual/international/pricing/rounding) for that currency if applicable. Your converted prices include your currency conversion costs. For example, when a $10.00 USD product is converted to Euros, the converted price of &euro;8.81 includes the currency conversion rate and conversion fee.
+
+      (**Product price** x **currency conversion rate**) x (**1** + **currency conversion fee**)</br>
+      <br>($10.00 USD x 0.867519) x (1 + .015) = &euro;8.81</br>
+
+If you have [rounding rules](/manual/international/pricing/rounding) active, then the converted price is rounded up to &euro;8.85.
+
+## Manual exchange rate conversions {#manual-exchange-rate-conversions}
+
+With Managed Markets, you can set the currency exchange rate manually for each of your markets. This allows you to stabilize your prices per market, as opposed to your prices fluctuating with automatic exchange rates.
+
+When using manual exchange rate conversions, you might gain or lose money depending on the difference between your manual exchange rate and the current market exchange rate.
+
+A [conversion fee](/manual/international/pricing/fees) applies to your currency conversion. If you want to include this fee in your manual rate, then multiply your rate by the conversion fee for your store's country. For example, a USD to EUR exchange rate with a 1.5% conversion fee might look like this: 0.90867 x 1.015 = 0.9223.
+
+You can set a manual conversion rate for markets that aren't your [primary market](/manual/markets/getting-started/managing-markets). These rates are based off of your store’s base currency in **Settings** > [**General**](https://admin.shopify.com/settings/general), even for markets where you've set a base currency that's different from your store's currency.
+
+<aside class="note"><h4>Note</h4><p><a href="/en/manual/markets/customizations/catalogs">International fixed prices</a> will always take precedence over a manual conversion rate. The manual rate applies only to products within a market that don&#39;t already have an international price set.</p>
+</aside>
+
+You can use [price adjustments](/manual/markets/customizations/catalogs) together with manual exchange rates. For example, if you have a product priced at 20.00 in your store currency of USD and price rounding is on to the nearest 1.00 for all markets, then you can control the pricing for your Canada market in any of the following ways:
+
+* You can set a manual exchange rate of 1.3 to stabilize the CAD price, and then apply a price adjustment of 20%. The price is calculated as 20.00 x 1.3 x 1.2 = 32.00 CAD.
+* You can set a manual exchange rate of 1, and then apply an adjustment of 50% to control the CAD price using only the price adjustment. The price is calculated as 20.00 x 1 x 1.5 = 30.00 CAD.
+* You can select automatic exchange rates and apply a price adjustment of 50% to the CAD prices. The price is calculated as 20.00 x [current exchange rate] x 1.5. The price fluctuates based on current exchange rates with the 50% price adjustment added on top.
+
+If the base currency of a market is changed, or if manual conversion rates are switched to automatic, then the manual rate is deactivated but not deleted. This means that if the original market currency is restored, or if manual conversion rates are turned on again, then the manual conversion rate becomes active again.
+
+## Activate a manual exchange rate
+
+From your **Markets** page, you can set up manual conversion rates for single-country markets or multi-country markets with [local currencies](/manual/markets/getting-started/overview) turned off. You should create single-country markets for every country or region that you want to use a manual conversion rate for.
+
+Manual conversion rates can’t be applied to your [primary market](/manual/markets/getting-started/managing-markets).
+
+#### Steps:
+
+1. From your Shopify admin, go to [**Markets**](https://admin.shopify.com/markets).
+
+
+2. Click the market that you want to add a manual exchange rate for.
+3. In the **Currency** selector, click the market's currency to display the currency options.
+4. In the **Exchange rate (FX)** section, select **Manual**.
+5. Enter the exchange rate.
+6. Click **Done**.
+
+## Manually captured payments {#manual-payments}
+
+When you sell in local currencies, the amount that you receive as payment is based on the currency rate at the time that you charge the customer's credit card. If you [capture payments manually](/manual/payments/payment-authorization#set-up-manual-payment-capture), then your customer's credit card is charged when you process their order, and not when the customer submits the order. The currency exchange rate might change between the time of authorization and the time you capture your funds manually, and this can result in a small discrepancy.
+
+In your Shopify admin, orders in different currencies are converted to your store currency so that it's easier for you to report your sales. Until you charge the customer for their order, the converted values are estimates.
+
+For example, your store's currency is USD and you sell in USD and EUR. Your customer creates an order for a &euro;90 bookshelf. When they submit their order, $1 USD is equal to &euro;0.90 EUR.
+
+<table>
+  <caption>Comparative table of store and customer currency prices before payment capture example.</caption>
+  <thead>
+  <tr>
+    <th scope="col">Store currency price</th>
+    <th scope="col">Customer's currency price</th>
+    <th scope="col">Estimated order amount</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td scope="row">$100 USD</td>
+    <td>&euro;90 EUR</td>
+    <th>$100 USD</td>
+  </tr>
+  </tbody>
+</table>
+
+A few days later the currency rate changes and $1 USD is now equal to &euro;0.85 EUR. You charge your customer's credit card for &euro;90 EUR. Because the currency conversion rate changed and $1 USD = &euro;0.85 EURO, the &euro;90 converts to $98 USD. You receive $98 USD.
+
+<table>
+  <caption>Payment capture amounts in store currency after currency fluctuation example.</caption>
+  <thead>
+  <tr>
+    <th scope="col">Store currency price</th>
+    <th scope="col">Customer's currency price</th>
+    <th scope="col">Captured amount converted to store currency</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td scope="row">$100 USD</td>
+    <td>&euro;90 EUR</td>
+    <td>$98 USD</td>
+  </tr>
+  </tbody>
+</table>
+
+## Refunds {#refunds}
+
+There is often a time gap between when a customer creates an order and when they make a return. As a result, the converted amount that you receive for the order usually doesn't equal the converted amount that you give back in the refund. We recommend that you refund the full amount that the customer paid in their local currency. This means that you might lose or gain money due to currency conversions. Learn about [refunding](/manual/international/pricing/refunds) orders when selling in local currencies.
+
+## Chargebacks {#chargebacks}
+
+When a cardholder initiates a chargeback, currency conversions are applied using the conversion rate at the time of the transfer of funds and not the conversion rate at the time of the order.
+
+Shopify converts the amount being refunded, credits the disputed amount to the cardholder, and then pays the fee to the cardholder's bank on your behalf, subtracting the amount being refunded from your next payout. You're not charged a conversion fee for this currency conversion.
+
+If you dispute the chargeback and it's resolved in your favor, then the amount disputed in the chargeback is refunded to you and you are refunded the chargeback fee based on the current conversion rate.
+
+Learn more about how [chargebacks](/manual/payments/chargebacks) are processed.
+
+## Selling and settling in different currencies and selling in local currencies
+
+Most currency conversions occur between your customer's local currency and the currency of your store. If [your store currency is different from your payout currency](/manual/payments/shopify-payments/store-currency/supported-payout-currencies), then currency conversions occur between the customer's local currency and your payout currency.
+

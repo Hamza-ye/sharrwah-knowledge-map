@@ -1,0 +1,37 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 307 
+date: Sun, 11 Oct 2026 06:13:07 GMT
+location: /en/manual/privacy-and-security/privacy/subprocessors.md
+vary: Accept
+set-cookie: _merchant_essential=:AaEpl_WPAAEAWhNUPPfyWgXkbLQttwZRTCm70AmTcXZ6ffV8Un_w0hpvGPZJvmpRXoFEBJ5eS_qT4uJpYW2HyrjYRVMBeMVQ3Tu4WcgKIwT_pbyMRWMZqPriA3pt7_0T_uTIv3wvyQEM7_2LOgRk9cmWrB9Jdz1oxqJGbrXZjlsKoEnt77_QX-6wA5F1nsI-5sXKez1-7tjmOqUYECfO3e2ctOifpbXMJf9G5eCT7PExTb0UEJZMgpQj:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+set-cookie: _merchant_analytics=:AaEpl_WPAAEA_6g7T2bYBa7rWV8gldae8HtYSq2zPd7bF_zssPTyh6O6HhV6kXo745Ke-yL4aXtnYxp_SFjwd5ZtVS2bb0l536Ebor6jtoJRZu0gu3Gpfl760A:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-central1
+x-request-id: 01a12997-f4ec-7f62-89aa-be8862664688-1791699186
+server: envoy
+x-shopify-gclb-trace-timing: 1791699186.924
+via: 1.1 google
+content-length: 0
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 06:13:07 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: max-age=900, must-revalidate
+etag: 2_a-PCXjrsYe-h752WuZ9WrrlN9_EYZJPUxtw4wrbdI-markdown
+vary: Accept, Accept-Encoding
+x-remix-response: yes
+set-cookie: _merchant_essential=:AaEpl_XfAAEAmSPDga9thsTM1XO6QPsSS7Dm76ZZJP6khs5T-xC5PcPhw0Obwx7Fa0xs6XxiQjbW56Dc2u26NLBGEr4eLxO0vRw3kx56voQoTiuOK0GA7zeDZROATo1nqDRebc4RmSyGCesh-hVN4PpFdo9Bheo7VgkC3Db1n6wgjeQZJS6h17lRqBz1qgRbl85SxeKq6CRD_kFHKvD-DVBh0QbHrxt0JB47bOi5fG0cAgUk1ZKMHLkMMiQu8lKUIO8GCL6c:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+set-cookie: _merchant_analytics=:AaEpl_XgAAEAZcp-Uen7HCAOIobH-WihnTP1O7vXPyaaLBZ6luB1NpT4ePa9VJ071rexM-AL5dz0LHvRms-SHNFzeqAGmxD-fUt4pGB6nz-T8-07yY9Wd_MgHw:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+content-encoding: br
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-central1
+x-request-id: 01a12997-f5cb-72b4-9795-b00748014007-1791699187
+server: envoy
+x-shopify-gclb-trace-timing: 1791699187.147
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+

@@ -1,0 +1,20 @@
+{
+ "n": 13,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-capital.md",
+ "dir": "items/013-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-capital.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 876,
+ "cited_in": [
+  "SH-S-0471",
+  "SH-S-0472",
+  "SH-S-0473"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a76362257fdf9df57bd991a7145289fc10effa67fb325700548c6ff1f672f0c8",
+ "raw_ext": "txt"
+}

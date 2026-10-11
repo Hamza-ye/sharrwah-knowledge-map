@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 06:13:09 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: public, max-age=3600, stale-while-revalidate=82800
+etag: W/"50a2a9f2199d3b33"
+link: <https://shopify.dev/docs/apps/build/webhooks>; rel="canonical"
+vary: Accept, Accept-Encoding
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=8F7BC6Zc2cWQGo43mFdNvwQH4XSbhyc8LckbEByaVdPcs9LIkP8y9vxoGl9gojjjJzhNFw1edJAR%2BqCOisjJRgYMU5OghtNS1XQVl20EXKM3KwZMTa0YxlIyCfXU"}]}
+x-dc: gcp-us-east1,gcp-us-east1
+x-request-id: cd6f0bb2-2b25-435e-9260-3e99c9c831b5-1791699189
+server: cloudflare
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: MISS
+content-encoding: br
+cf-ray: a48bb79e4bbac92c-IAD
+

@@ -1,0 +1,25 @@
+{
+ "n": 68,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md",
+ "dir": "items/068-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1951,
+ "cited_in": [
+  "SH-S-0353",
+  "SH-S-0354",
+  "SH-S-0355",
+  "SH-S-0356",
+  "SH-S-0357",
+  "SH-S-0358",
+  "SH-S-0359",
+  "SH-S-0360"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e8937b6d128d504e8912e390ee9f3068ff139b1dbb63f86aad44a9c79685d791",
+ "raw_ext": "txt"
+}

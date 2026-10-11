@@ -1,0 +1,19 @@
+{
+ "n": 114,
+ "url": "https://shopify.dev/docs/apps/build/checkout.md",
+ "dir": "items/114-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/checkout.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 15800,
+ "cited_in": [
+  "SH-S-0679",
+  "SH-S-0680"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "26e1c756373320307b61b21bb5da766cadb89f877536bc1d542c18d6ddb0c1f5",
+ "raw_ext": "txt"
+}

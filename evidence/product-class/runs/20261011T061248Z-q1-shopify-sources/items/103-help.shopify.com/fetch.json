@@ -1,0 +1,20 @@
+{
+ "n": 103,
+ "url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md",
+ "dir": "items/103-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 620,
+ "cited_in": [
+  "SH-S-0277",
+  "SH-S-0278",
+  "SH-S-0279"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1bf194901846c592712e81d844586cd32bee53d8e6736e574b17390577d22531",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,24 @@
+{
+ "n": 77,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md",
+ "dir": "items/077-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2948,
+ "cited_in": [
+  "SH-S-0375",
+  "SH-S-0376",
+  "SH-S-0377",
+  "SH-S-0378",
+  "SH-S-0379",
+  "SH-S-0380",
+  "SH-S-0381"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5fe3da33fa5a75d5adacafe45fd1d1f4f22419cb75f566f7e05d179795f11f5a",
+ "raw_ext": "txt"
+}

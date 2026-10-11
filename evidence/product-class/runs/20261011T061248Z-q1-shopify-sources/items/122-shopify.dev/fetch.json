@@ -1,0 +1,22 @@
+{
+ "n": 122,
+ "url": "https://shopify.dev/docs/apps/build/payments/considerations.md",
+ "dir": "items/122-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/payments/considerations.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4696,
+ "cited_in": [
+  "SH-S-0446",
+  "SH-S-0447",
+  "SH-S-0448",
+  "SH-S-0449",
+  "SH-S-0450"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "88b299322a214e9fb61a5b965f3e819b6f7592ab53bcc594c1657bf7d087be06",
+ "raw_ext": "txt"
+}

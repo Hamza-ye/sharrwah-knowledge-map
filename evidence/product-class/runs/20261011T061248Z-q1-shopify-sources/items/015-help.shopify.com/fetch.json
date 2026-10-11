@@ -1,0 +1,19 @@
+{
+ "n": 15,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-capital/canada.md",
+ "dir": "items/015-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-capital/canada.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4044,
+ "cited_in": [
+  "SH-S-0487",
+  "SH-S-0488"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3d64cd5734e54ae3a802487ede429c747eb1a780cde261f60fa4e22a8e6dcc80",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,20 @@
+{
+ "n": 24,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-credit.md",
+ "dir": "items/024-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-credit.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 939,
+ "cited_in": [
+  "SH-S-0467",
+  "SH-S-0468",
+  "SH-S-0469"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "eef37139add98c96120b3287d732f56d7676716a88cc8de825d55cae1ed79b57",
+ "raw_ext": "txt"
+}

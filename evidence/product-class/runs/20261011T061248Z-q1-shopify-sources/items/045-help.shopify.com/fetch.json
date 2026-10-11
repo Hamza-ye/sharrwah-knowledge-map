@@ -1,0 +1,18 @@
+{
+ "n": 45,
+ "url": "https://help.shopify.com/en/manual/online-sales-channels/shop/shop-campaigns.md",
+ "dir": "items/045-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/online-sales-channels/shop/shop-campaigns.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 788,
+ "cited_in": [
+  "SH-S-0726"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "daf3e6c59b561f0bf74b2a5767f5a8b22ae53bb9ba67b8407a82dfd5642e8a39",
+ "raw_ext": "txt"
+}

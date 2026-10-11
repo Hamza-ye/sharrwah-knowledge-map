@@ -1,0 +1,20 @@
+{
+ "n": 36,
+ "url": "https://help.shopify.com/en/manual/international/payments.md",
+ "dir": "items/036-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/international/payments.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1630,
+ "cited_in": [
+  "SH-S-0545",
+  "SH-S-0546",
+  "SH-S-0547"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b1056d86d04153abe2a2b3d9101023d69c55f3af75ee0a6704f309ca4cd9d5f1",
+ "raw_ext": "txt"
+}

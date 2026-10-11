@@ -1,0 +1,11 @@
+# Shopify Protect for Shop Pay
+
+[Shopify Protect for Shop Pay (Shopify Protect)](https://shopify.com/protect?utm_source=dotcom&utm_medium=helpdoc) offers chargeback protection from fraud for Shopify merchants. This feature is available for free and helps protect eligible orders against fraudulent and unrecognized chargebacks. In this section, you can explore the various aspects of using Shopify Protect and how it can benefit your business.
+
+### In this section
+
+- [Addressing chargebacks with Shopify Protect](/en/manual/payments/shop-pay/shopify-protect/addressing-chargebacks)
+- [Filtering orders by protection status](/en/manual/payments/shop-pay/shopify-protect/filter-orders-by-protection-status)
+- [Protecting an order with Shopify Protect](/en/manual/payments/shop-pay/shopify-protect/protect-order-with-shopify-protect)
+- [Switching from Fraud Protect to Shopify Protect](/en/manual/payments/shop-pay/shopify-protect/fraud-vs-shopify-protect)
+

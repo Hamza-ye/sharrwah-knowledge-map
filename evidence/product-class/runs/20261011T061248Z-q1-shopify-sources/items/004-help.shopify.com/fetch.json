@@ -1,0 +1,20 @@
+{
+ "n": 4,
+ "url": "https://help.shopify.com/en/manual/checkout-settings/bot-protection.md",
+ "dir": "items/004-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/checkout-settings/bot-protection.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2263,
+ "cited_in": [
+  "SH-S-0744",
+  "SH-S-0745",
+  "SH-S-0746"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a3676db70bbc8a7dfae3895eb5c5192ca952a630c7557d236c66fe4cc7926782",
+ "raw_ext": "txt"
+}

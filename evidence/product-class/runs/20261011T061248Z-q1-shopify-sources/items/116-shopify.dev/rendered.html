@@ -1,0 +1,143 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">---
+title: Building apps for customer accounts
+description: &gt;-
+  Learn how you can customize customer accounts pages for viewing order history,
+  checking order statuses, and more.
+source_url:
+  html: 'https://shopify.dev/docs/apps/build/customer-accounts'
+  md: 'https://shopify.dev/docs/apps/build/customer-accounts.md'
+api_name: customer-account-ui-extensions
+---
+
+# Building apps for customer accounts
+
+Merchants use customer accounts to enable their customers to view their order history, check order statuses, edit their profile, and take actions related to their order. You build customer account extensions with [Polaris](https://shopify.dev/docs/api/polaris), Shopify's unified system for building app interfaces. Polaris provides [targets](https://shopify.dev/docs/api/customer-account-ui-extensions/latest/targets) that define where your extension appears, [target APIs](https://shopify.dev/docs/api/customer-account-ui-extensions/latest/target-apis) that give your extension access to customer account data and functionality, and [web components](https://shopify.dev/docs/api/customer-account-ui-extensions/latest/web-components) that render the UI.
+
+Customer account UI extensions are only supported on the new version of customer accounts. Legacy customer accounts don't support customer account UI extensions. Learn more about [customer accounts](https://help.shopify.com/en/manual/customers/customer-accounts).
+
+**Tip:**
+
+Determine the customer account version that a merchant's using by querying the [`CustomerAccountsV2`](https://shopify.dev/docs/api/admin-graphql/latest/objects/CustomerAccountsV2) object.
+
+***
+
+## How it works
+
+Customers can navigate to their account from the online store, from order notification emails, or any custom entrypoint placed by the merchant.
+
+If the customer isn't already logged in, clicking a link from an order notification email to view their order brings them to the pre-authenticated **Order status** page. From there, if the customer tries to navigate to another page in their account, or tries to take an action, then Shopify prompts them to log in. After the customer logs in, they can access all customer account pages. Learn more about [Order status page authentication states](https://shopify.dev/docs/apps/build/customer-accounts/order-status-page#authentication-states).
+
+**Note:**
+
+If you're building an app that directs customers to the pre-authenticated **Order status** page, then you need to [obtain level 2 permission for protected customer data](https://shopify.dev/docs/apps/launch/protected-customer-data). If you're sending transactional SMS on behalf of merchants, then you should include the customer's order number alongside any links to the Order status page.
+
+Using customer account UI extensions, apps can extend the functionality of existing customer account pages, as well as create new pages (full-page extensions).
+
+![A diagram showing that a customer can navigate to their account from the online store, or from order notifications. Developers can build extensions for all customer account pages, and create full-page extensions to create new pages.](https://shopify.dev/assets/assets/images/apps/customer-accounts/how-it-works/how-it-works-UP21ZEVz.png)
+
+You can extend the following pages in customer accounts at defined [targets](https://shopify.dev/docs/api/customer-account-ui-extensions/latest/targets):
+
+| Page | Description | Example use cases |
+| - | - | - |
+| **Order index** | The page that customers land on when they log in to their account. Provides a list of all the customer's orders, including draft orders that they've been invoiced for.Customers can take action on an order from this page, such as requesting a return. | Order actions, product suggestions based on order history, loyalty discount offers. |
+| **Order status** | The page where customers can view, track, and manage a specific order.Customers can take action on an order from this page, such as requesting a return. | Order actions, product reviews, surveys, order tracking, loyalty points earned. |
+| **Profile** | The page where customers can manage their personal information, such as name and addresses.For B2B customers, this page also includes company information. | Membership level, loyalty point balance, customer metafields. |
+| **New pages** | Apps can create new pages using full-page extensions, to support use cases that aren't suited to native pages. | Wishlist, subscriptions, rewards, offers. |
+
+### Order index
+
+![The Order index page showing a list of apparel orders with fulfillment statuses and order actions, such as Buy again and Return.](https://shopify.dev/assets/assets/images/apps/customer-accounts/how-it-works/order-index-CYnaJnBu.png)
+
+### Order status
+
+![The Order status page showing order actions, delivery updates, an order summary, contact information, shipping details, and payment information.](https://shopify.dev/assets/assets/images/apps/customer-accounts/how-it-works/order-status-CuNf6tto.png)
+
+### Profile
+
+![The Profile page showing the customer's contact information, addresses, payment methods, marketing preferences, and sign-out actions.](https://shopify.dev/assets/assets/images/apps/customer-accounts/how-it-works/profile-GGr9dt8e.png)
+
+***
+
+## Build for customer accounts
+
+The following guides walk through common use cases for customer account UI extensions. For the full reference, see [customer account UI extensions](https://shopify.dev/docs/api/customer-account-ui-extensions).
+
+### Extension types
+
+[Build an order status extension\
+\
+](https://shopify.dev/docs/apps/build/customer-accounts/inline-extensions/build-order-status)
+
+[Add custom content to the Order status page where customers view, track, and manage a specific order.](https://shopify.dev/docs/apps/build/customer-accounts/inline-extensions/build-order-status)
+
+[Build an order action extension\
+\
+](https://shopify.dev/docs/apps/build/customer-accounts/order-action-extensions/build-for-order-action-menus)
+
+[Add actions like requesting a return or leaving a review to order action menus.](https://shopify.dev/docs/apps/build/customer-accounts/order-action-extensions/build-for-order-action-menus)
+
+[Build a profile extension\
+\
+](https://shopify.dev/docs/apps/build/customer-accounts/inline-extensions/build-profile)
+
+[Extend the Profile page with custom content, such as membership level or loyalty balance.](https://shopify.dev/docs/apps/build/customer-accounts/inline-extensions/build-profile)
+
+[Build a full-page extension\
+\
+](https://shopify.dev/docs/apps/build/customer-accounts/full-page-extensions/build-new-pages)
+
+[Create new pages for use cases that aren't suited to native pages, like wishlists, subscriptions, and rewards.](https://shopify.dev/docs/apps/build/customer-accounts/full-page-extensions/build-new-pages)
+
+### Purchase options
+
+Let customers manage subscriptions and deferred purchase options from their account. See all [purchase options guides](https://shopify.dev/docs/apps/build/purchase-options).
+
+[Build a customer portal\
+\
+](https://shopify.dev/docs/apps/build/purchase-options/customer-portal/create-customer-portal)
+
+[Let customers view and manage their active subscriptions and deferred purchase agreements.](https://shopify.dev/docs/apps/build/purchase-options/customer-portal/create-customer-portal)
+
+### Orders and fulfillment
+
+Let customers take self-serve actions on their orders. See all [orders and fulfillment guides](https://shopify.dev/docs/apps/build/orders-fulfillment).
+
+[Build self-serve returns\
+\
+](https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps/build-self-serve-returns)
+
+[Let customers request returns directly from their account.](https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps/build-self-serve-returns)
+
+***
+
+## Next steps
+
+* [Start building for customer accounts](https://shopify.dev/docs/apps/build/customer-accounts/start-building) to set up your development environment and scaffold your first extension.
+* Explore the [customer account UI extensions reference](https://shopify.dev/docs/api/customer-account-ui-extensions) for available targets, target APIs, and web components.
+
+***
+
+## Product roadmap
+
+As of February 26, 2026, legacy customer accounts are deprecated. They're no longer available to new stores, and existing stores that weren't using them no longer have access. All merchants must upgrade to the latest version of customer accounts. The following customer account features are on our roadmap with estimated launch dates:
+
+**Note:**
+
+This roadmap is being shared for informational purposes and is subject to change. Bug fixes and improvements will be added as we hear from the community. Share your feedback or request new features by creating a new issue in the [Shopify developer community forum](https://community.shopify.dev/).
+
+| Feature | Target release |
+| - | - |
+| [Customer account web component for storefronts](https://shopify.dev/docs/storefronts/themes/customer-engagement/account-component) | February 2026 (shipped) |
+| [365-day sign-in duration](https://help.shopify.com/en/manual/customers/customer-accounts) | March 2026 (shipped) |
+| [Collect marketing consent on the customer sign-in page](https://shopify.dev/changelog/collect-marketing-consent-on-the-customer-sign-in-page) | March 2026 (shipped) |
+| [Automatically sync customer data from your identity provider](https://help.shopify.com/en/manual/customers/customer-accounts/sign-in-options/identity-provider/sync-customer-data) | March 2026 (shipped) |
+| [Checkout and Accounts Configuration API for greater control over branding across checkout, customer accounts, and sign-in](https://shopify.dev/docs/api/admin-graphql/latest/mutations/checkoutAndAccountsConfigurationUpdate) | May 2026 (shipped) |
+| [Sign-in page now customizable in the checkout &amp; accounts editor](https://shopify.dev/changelog/draft-unified-branding-customization-across-checkout-and-customer-accounts) | May 2026 (shipped) |
+| [Customer account design improvements](https://changelog.shopify.com/posts/customer-accounts-get-a-design-uplift) | June 2026 (shipped) |
+| Sign in with Apple | Q3 2026 |
+| Support for customer state and first sign-in detection | Q4 2026 |
+| Collect customer fields after sign-in | Q4 2026 |
+| Social sign-in configuration APIs | Q1 2027 |
+
+***
+</pre></body></html>

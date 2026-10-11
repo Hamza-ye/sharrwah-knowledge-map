@@ -1,0 +1,18 @@
+{
+ "n": 25,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-credit/getting-started.md",
+ "dir": "items/025-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-credit/getting-started.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4857,
+ "cited_in": [
+  "SH-S-0470"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "f1670225df2f062ae6a3ea0e8a59f57200353c6b88517f34b615f712faed58a1",
+ "raw_ext": "txt"
+}

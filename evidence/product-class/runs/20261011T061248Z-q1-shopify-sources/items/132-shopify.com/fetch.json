@@ -1,0 +1,26 @@
+{
+ "n": 132,
+ "url": "https://www.shopify.com/legal/aup",
+ "dir": "items/132-shopify.com",
+ "fetched_at": "2026-10-11T06:13:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/aup",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 62774,
+ "cited_in": [
+  "SH-S-0166",
+  "SH-S-0167",
+  "SH-S-0168",
+  "SH-S-0169",
+  "SH-S-0170",
+  "SH-S-0171",
+  "SH-S-0172",
+  "SH-S-0173",
+  "SH-S-0174"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "68ff7214bae38f143c69bb1461f9f908cce2c21b4aa955edf28af4dbb37d5665",
+ "raw_ext": "html"
+}

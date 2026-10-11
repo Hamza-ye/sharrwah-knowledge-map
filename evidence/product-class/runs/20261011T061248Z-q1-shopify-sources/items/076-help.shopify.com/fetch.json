@@ -1,0 +1,21 @@
+{
+ "n": 76,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md",
+ "dir": "items/076-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5695,
+ "cited_in": [
+  "SH-S-0502",
+  "SH-S-0503",
+  "SH-S-0504",
+  "SH-S-0505"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "755884fa61fda950f7a3d93691100d381291e23874ef9bd1cc8eb788bacf974f",
+ "raw_ext": "txt"
+}

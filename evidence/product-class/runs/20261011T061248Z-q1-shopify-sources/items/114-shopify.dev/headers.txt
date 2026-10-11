@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 06:13:07 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: public, max-age=3600, stale-while-revalidate=82800
+cache-tag: shopifydev-txt,host-shopify.dev
+etag: W/"9274315a5703be50"
+link: <https://shopify.dev/docs/apps/build/checkout>; rel="canonical"
+vary: Accept, Accept-Encoding
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-east1
+x-request-id: 01a12997-f870-7adc-a54c-a7ed6f9a43ed-1791699187
+server: envoy
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+alt-svc: h3=":443"; ma=2592000
+x-shopify-gclb-trace-timing: 1791699187.824
+via: 1.1 google
+

@@ -1,0 +1,18 @@
+{
+ "n": 48,
+ "url": "https://help.shopify.com/en/manual/payments/accelerated-checkouts.md",
+ "dir": "items/048-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/accelerated-checkouts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 947,
+ "cited_in": [
+  "SH-S-0419"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "f15961d2e28e7e3e6919cb83fe9fdf6be94a155baa58f01ebb15b2c686dea7e4",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,28 @@
+{
+ "n": 51,
+ "url": "https://help.shopify.com/en/manual/payments/getting-paid.md",
+ "dir": "items/051-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/getting-paid.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2300,
+ "cited_in": [
+  "SH-S-0308",
+  "SH-S-0309",
+  "SH-S-0310",
+  "SH-S-0311",
+  "SH-S-0312",
+  "SH-S-0313",
+  "SH-S-0314",
+  "SH-S-0315",
+  "SH-S-0316",
+  "SH-S-0317",
+  "SH-S-0318"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "950961414e0fc203c8f870f5fbb9a70ea4e3d0fb7dd90ac1792208de8c2e14a5",
+ "raw_ext": "txt"
+}

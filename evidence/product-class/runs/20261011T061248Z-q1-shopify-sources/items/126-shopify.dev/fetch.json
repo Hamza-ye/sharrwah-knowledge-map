@@ -1,0 +1,19 @@
+{
+ "n": 126,
+ "url": "https://shopify.dev/docs/apps/build/webhooks.md",
+ "dir": "items/126-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/webhooks.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2242,
+ "cited_in": [
+  "SH-S-0685",
+  "SH-S-0686"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "787e1c048b2ca188348e79a236d7f1a8ec6dc9ce3ead27c0271389817be42a9e",
+ "raw_ext": "txt"
+}

@@ -11,7 +11,7 @@ Each item says what it decides and what it needs. Items lower down depend on the
 - **What is not carried forward:** the placement labels. They put the platforms into our vocabulary, while the platforms state these things in their own structures (`studies/concern-map/measurements-2026-10-11.md`).
 
 **Next, in order** (detail in `studies/concern-map/README.md`):
-1. Capture Shopify's cited pages and check its quotes (running).
+1. Capture Shopify's cited pages and check its quotes. Done: all 3,192 quotes are found.
 2. The founder decides how Q1's placement step is reshaped: each placement recorded as what the platform states in its own structures, with no fixed value lists.
 3. A Shopify re-pass against observed-sh at `e49840729`, joined on Shopify's own identifiers first.
 4. Salla and WooCommerce re-passes, with the same step against their own structures.

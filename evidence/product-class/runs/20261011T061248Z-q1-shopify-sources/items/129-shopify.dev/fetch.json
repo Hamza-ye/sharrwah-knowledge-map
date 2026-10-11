@@ -1,0 +1,19 @@
+{
+ "n": 129,
+ "url": "https://shopify.dev/docs/apps/launch/protected-customer-data.md",
+ "dir": "items/129-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/launch/protected-customer-data.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5204,
+ "cited_in": [
+  "SH-S-0694",
+  "SH-S-0695"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a3b2a674474756a0ef5d867a48427f8f6953a84fb4d254a616d86c6c7dbcfc0c",
+ "raw_ext": "txt"
+}

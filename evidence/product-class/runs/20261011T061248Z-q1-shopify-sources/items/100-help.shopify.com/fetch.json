@@ -1,0 +1,22 @@
+{
+ "n": 100,
+ "url": "https://help.shopify.com/en/manual/your-account/business-entities.md",
+ "dir": "items/100-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/your-account/business-entities.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 6791,
+ "cited_in": [
+  "SH-S-0248",
+  "SH-S-0249",
+  "SH-S-0250",
+  "SH-S-0251",
+  "SH-S-0252"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "52fc78889594e70d884a6a5876c1aab2786ff272c74ae058787fbf60108d2126",
+ "raw_ext": "txt"
+}

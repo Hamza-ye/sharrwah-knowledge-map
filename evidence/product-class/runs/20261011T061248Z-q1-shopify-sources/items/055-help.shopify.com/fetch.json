@@ -1,0 +1,20 @@
+{
+ "n": 55,
+ "url": "https://help.shopify.com/en/manual/payments/shop-cash.md",
+ "dir": "items/055-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shop-cash.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2070,
+ "cited_in": [
+  "SH-S-0437",
+  "SH-S-0438",
+  "SH-S-0439"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "cdfe1d79cdae92559a3f55c1af70dda17b391c23a376de82e045933ee0c65838",
+ "raw_ext": "txt"
+}

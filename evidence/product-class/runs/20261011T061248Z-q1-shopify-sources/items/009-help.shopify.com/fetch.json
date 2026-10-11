@@ -1,0 +1,21 @@
+{
+ "n": 9,
+ "url": "https://help.shopify.com/en/manual/finance.md",
+ "dir": "items/009-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 832,
+ "cited_in": [
+  "SH-S-0454",
+  "SH-S-0455",
+  "SH-S-0456",
+  "SH-S-0457"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "453a40bfbf1f40ed54e9ec30eaa7966cafb00aefde1856f133fe617e2ffdbbbd",
+ "raw_ext": "txt"
+}

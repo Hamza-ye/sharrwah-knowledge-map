@@ -1,0 +1,19 @@
+{
+ "n": 37,
+ "url": "https://help.shopify.com/en/manual/international/pricing.md",
+ "dir": "items/037-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/international/pricing.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 899,
+ "cited_in": [
+  "SH-S-0543",
+  "SH-S-0544"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "4d8b28df517c4eb92fac7acf1f15a9e2104a95e39a0731f8506896b6607f49e3",
+ "raw_ext": "txt"
+}

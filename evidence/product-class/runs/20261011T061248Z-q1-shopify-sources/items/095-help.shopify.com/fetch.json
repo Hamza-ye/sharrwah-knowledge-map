@@ -1,0 +1,19 @@
+{
+ "n": 95,
+ "url": "https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md",
+ "dir": "items/095-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2689,
+ "cited_in": [
+  "SH-S-0525",
+  "SH-S-0526"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "301d3eccf7125fb6078c12f31ba7a76093e627895fc40c4f32ace167221ff8d3",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 133,
+ "url": "https://www.shopify.com/legal/binding-corporate-rules",
+ "dir": "items/133-shopify.com",
+ "fetched_at": "2026-10-11T06:13:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/binding-corporate-rules",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 65261,
+ "cited_in": [
+  "SH-S-0648",
+  "SH-S-0649"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ecffd6eca2d23fd28253522ad1cd7e8f22095e07f841d91a2b4fee1ee14a05ff",
+ "raw_ext": "html"
+}

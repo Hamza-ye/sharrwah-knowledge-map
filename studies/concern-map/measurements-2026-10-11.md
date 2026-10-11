@@ -123,4 +123,5 @@ Every recording store's own answers state country `YE` and currency `YER`, inclu
 
 - **What observed-sh holds.** It holds what has been observed, not the platform's full limits. A key or value absent from it is "not shown", never "does not exist".
 - **Store values are as observed.** Values come from the recording stores at the times recorded.
+- **Most stores are development stores.** Most recording stores are partner development stores on a plan's development edition, marked `partnerDevelopment` true; examples are "Grow App Development" and "Shopify Plus App Development". The paid store on Advanced (`fake-demo-sharrwah`) and the trial stores are the exceptions. A development store's entitlements may differ from a paid store's on the same plan.
 - **The router's eligibility is as stated.** Neither observed-sh nor these measurements evaluate it.
