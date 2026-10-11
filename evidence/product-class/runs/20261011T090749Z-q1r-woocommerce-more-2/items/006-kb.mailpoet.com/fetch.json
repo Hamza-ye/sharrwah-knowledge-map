@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://kb.mailpoet.com/article/385-adding-an-opt-in-checkbox-to-the-woocommerce-checkout-page",
+ "dir": "items/006-kb.mailpoet.com",
+ "fetched_at": "2026-10-11T09:07:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kb.mailpoet.com/article/385-adding-an-opt-in-checkbox-to-the-woocommerce-checkout-page",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24136,
+ "cited_in": [
+  "WC-S-5500"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0efa636c9e45111eca4e1386909817fe700c60aab6067fdbdf34d4573fd1e86c",
+ "raw_ext": "html"
+}

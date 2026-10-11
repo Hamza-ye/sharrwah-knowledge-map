@@ -1,0 +1,18 @@
+{
+ "n": 20,
+ "url": "https://woocommerce.com/products/woocommerce-checkout-field-editor/",
+ "dir": "items/020-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/products/woocommerce-checkout-field-editor/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 55094,
+ "cited_in": [
+  "WC-S-5485"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "34bfd660c132905fd7b29c3d07c9b3636ac45b2d66ef487a31fd82dfb568caad",
+ "raw_ext": "html"
+}

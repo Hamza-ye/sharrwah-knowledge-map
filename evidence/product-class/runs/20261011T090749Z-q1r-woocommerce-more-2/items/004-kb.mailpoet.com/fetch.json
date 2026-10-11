@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://kb.mailpoet.com/article/349-mailpoet-plans-and-limits-explained",
+ "dir": "items/004-kb.mailpoet.com",
+ "fetched_at": "2026-10-11T09:07:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kb.mailpoet.com/article/349-mailpoet-plans-and-limits-explained",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27044,
+ "cited_in": [
+  "WC-S-5499"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "64e5a2975cdffab6f8d6e96fef801a4c4461f3438d1802ef67315b5b7bce9810",
+ "raw_ext": "html"
+}

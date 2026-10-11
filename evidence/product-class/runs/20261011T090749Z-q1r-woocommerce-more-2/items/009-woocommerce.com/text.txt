@@ -1,0 +1,646 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Extensions
+Pre-Sales Support
+Stripe
+WooCommerce Square
+PayPal Braintree
+AutomateWoo
+Expand
+Product CSV Import Suite
+Order/Customer CSV Export
+Facebook for WooCommerce
+WooCommerce Subscriptions
+Expand
+WooCommerce Memberships
+Expand
+WooCommerce Bookings
+Expand
+Product Bundles
+Expand
+Use Cases
+Product Recommendations
+Expand
+Composite Products
+Expand
+Smart Coupons
+Cashier for WooCommerce
+Affiliate For WooCommerce
+Mix and Match Products
+Google Product Feed
+Groups WooCommerce
+Gift Cards
+API Manager
+Table Rate Shipping
+Advanced Shipping Packages
+Name Your Price
+Order Delivery
+WooCommerce Zapier Integration
+Expand
+Klarna
+Expand
+Product Vendors
+PDF Invoice
+Pre-orders
+Force Sells
+Google for WooCommerce
+Expand
+Import Export Suite for WooCommerce
+Bulk Updater for WooCommerce Subscriptions
+Expand
+Enhancer for WooCommerce Subscriptions
+Expand
+Product Add-ons
+Expand
+Xero
+Expand
+Buy One Get One Free
+WooCommerce Sales Analysis
+Conditional Shipping and Payments
+WooCommerce Shipping & Tax
+Email Customizer Pro
+Back In Stock Notifications
+WooCommerce Smart Refunder
+Saved Addresses For WooCommerce
+Chained Products
+Volume Discount Coupons
+Sensei
+Expand
+WooCommerce Product Search
+Expand
+Photography
+Expand
+Opayo
+Advanced Bulk Edit
+Smart Stock & Inventory Manager
+Flexi BOGO
+Flexi Custom Order Status
+Product Input Fields
+Product Feed Manager
+Payment Gateway Based Fees and Discounts
+Abandoned Cart Pro
+Order Delivery Date
+Currency per product
+Call for Price Pro
+Product Prices by User Role
+Flexi Custom Order Numbers
+Flexi Product Delivery Date
+Flexi Booking and Appointment
+Delivery and Pickup Scheduler
+SensAI
+All-in-one PDF Invoice and Packing Slips Suite
+Expand
+Easy Subscriptions
+Smart Product Designer
+WooCommerce Anti-Fraud
+Shipment Tracking
+Expand
+EU VAT Number
+Documentation / Products / Extensions / Product Bundles / REST API Reference
+REST API Reference
+
+This document is written for WooCommerce developers looking to extend or customize WooCommerce Product Bundles. It requires an advanced understanding of PHP and WordPress development.
+
+WooCommerce 2.6 added support for REST API endpoints based on the WordPress REST API infrastructure.
+
+Product Bundles extends the /products/ and /orders/ endpoint responses with 2 new properties: bundled_by and bundled_items.
+
+In product context, bundled_by lists all product bundle IDs that a product has been added to, while bundled_items lists the bundled item data associated with a product of the bundle type.
+In order context, bundled_by is applicable to bundled order items and references the order item ID of their parent, while bundled_items is applicable to bundle parent items and lists the associated bundled line item IDs.
+
+Additionally, Product Bundles 8.3.0 added support for Store API cart/add-item, cart/update-item and cart/remove-item endpoints to allow updating cart via Store API programmatically.
+
+Products
+Product Properties
+ATTRIBUTE	TYPE	CONTEXT	DESCRIPTION
+bundled_by	array	read	List of product bundle IDs that contain this product.
+bundle_virtual	boolean	read write	Forces all contents of this bundle to be treated as virtual.
+bundle_layout	string	read write	Single-product details page layout. Applicable for bundle-type products only.
+
+Values: default, tabular.
+bundle_add_to_cart_form_location	string	read write	Controls the form location of the product in the single-product page. Applicable to bundle-type products.
+
+Values: default, after_summary.
+bundle_editable_in_cart	boolean	read write	Controls whether the configuration of this product can be modified from the cart page. Applicable to bundle-type products.
+bundle_item_grouping	string	read write	Controls the display of bundle container/child items in cart/order templates. Applicable for bundle-type products only.
+
+Values: parent, noindent, none.
+bundle_min_size	integer	read write	Min bundle size. Applicable for bundle-type products only.
+bundle_max_size	integer	read write	Max bundle size. Applicable for bundle-type products only.
+bundle_stock_status	string	read	Stock status of this bundle, taking bundled product quantity requirements and limitations into account. Applicable for bundle-type products only. Read only.
+
+Values: instock, outofstock, insufficientstock.
+bundle_stock_quantity	integer	read	Quantity of bundles left in stock, taking bundled product quantity requirements into account. Applicable for bundle-type products only. Read only.
+bundled_items	array	read write 1	List of bundled items contained in this product. See Bundled Item Properties.
+1 write context requires WooCommerce v3.0+ and Product Bundles v5.2+.
+Bundled Item Properties
+ATTRIBUTE	TYPE	CONTEXT	DESCRIPTION
+id	integer	read	Bundled item ID.
+delete	boolean	write 1	Set to true to delete the bundled item with the specified ID.
+product_id	integer	read write 1	Bundled product ID.
+menu_order	integer	read write 1	Bundled item menu order.
+quantity_min	integer	read write 1	Minimum bundled item quantity.
+quantity_max	integer	read write 1	Maximum bundled item quantity.
+priced_individually	boolean	read write 1	Indicates whether the price of this bundled item is added to the base price of the bundle.
+shipped_individually	boolean	read write 1	Indicates whether the bundled product is shipped separately from the bundle.
+override_title	boolean	read write 1	Indicates whether the title of the bundled product is overridden in front-end and e-mail templates.
+title	string	read write 1	Title of the bundled product to display instead of the original product title, if overridden.
+override_description	boolean	read write 1	Indicates whether the short description of the bundled product is overridden in front-end templates.
+description	string	read write 1	Short description of the bundled product to display instead of the original product short description, if overridden.
+optional	boolean	read write 1	Indicates whether the bundled item is optional.
+hide_thumbnail	boolean	read write 1	Indicates whether the bundled product thumbnail is hidden in the single-product template.
+discount	string	read write 1	Discount applied to the bundled product, applicable when the Priced Individually option is enabled.
+override_variations	boolean	read write 1	Indicates whether variations filtering is active, applicable for variable bundled products only.
+allowed_variations	array	read write 1	List of enabled variation IDs, applicable when variations filtering is active.
+override_default_variation_attributes	boolean	read write 1	Indicates whether the default variation attribute values are overridden, applicable for variable bundled products only.
+default_variation_attributes	array	read write 1	Overridden default variation attribute values, if applicable. See Default Attribute Properties.
+single_product_visibility	string	read write 1	Indicates whether the bundled product is visible in the single-product template. Values: visible, hidden.
+cart_visibility	string	read write 1	Indicates whether the bundled product is visible in cart templates. Values: visible, hidden.
+order_visibility	string	read write 1	Indicates whether the bundled product is visible in order/e-mail templates. Values: visible, hidden.
+single_product_price_visibility	string	read write 1	Indicates whether the bundled product price is visible in the single-product template. Applicable when the Priced Individually option is enabled. Values: visible, hidden.
+cart_price_visibility	string	read write 1	Indicates whether the bundled product price is visible in cart templates. Applicable when the Priced Individually option is enabled. Values: visible, hidden.
+order_price_visibility	string	read write 1	Indicates whether the bundled product price is visible in order/e-mail templates. Applicable when the Priced Individually option is enabled. Values: visible, hidden.
+stock_status	string	read	Stock status of the bundled item, taking minimum quantity into account. Values: in_stock, on_backorder, out_of_stock.
+1 write context requires WooCommerce v3.0+ and Product Bundles v5.2+.
+Default Attribute Properties
+ATTRIBUTE	TYPE	CONTEXT	DESCRIPTION
+id	integer	read write 1	Attribute ID.
+name	string	read write 1	Attribute name.
+option	string	read write 1	Selected attribute term name.
+1 write context requires WooCommerce v3.0+ and Product Bundles v5.2+.
+Working with Products: Examples
+Create Bundle
+	curl -X POST https://example.com/wp-json/wc/v1/products \
+	    -u consumer_key:consumer_secret \
+	    -H "Content-Type: application/json" \
+	    -d '{
+	        "name": "Happy Ninja Bundle",
+	        "type": "bundle",
+	        "regular_price": "53.0",
+	        "sale_price": "37.0",
+	        "description": "In pretium enim justo, at ornare libero aliquam quis. Nullam imperdiet rutrum volutpat. Suspendisse aliquet ex in ex volutpat vestibulum. Curabitur ultrices convallis condimentum.",
+	        "short_description": "In pretium enim justo, at ornare libero aliquam quis.",
+	        "categories": [
+	            {
+	                "id": 9
+	            }
+	        ],
+	        "images": [
+	            {
+	                "src": "http://somewherewarm.net/pb/wp-content/uploads/2016/09/Ninja_bundle.jpg",
+	               "position": 0
+	            },
+	            {
+	                "src": "http://somewherewarm.net/pb/wp-content/uploads/2013/06/hoodie_4_front.jpg",
+	                "position": 1
+	            },
+	            {
+	                "src": "http://somewherewarm.net/pb/wp-content/uploads/2013/06/hoodie_4_back.jpg",
+	                "position": 2
+	            },
+	            {
+	                "src": "http://somewherewarm.net/pb/wp-content/uploads/2013/06/T_7_front.jpg",
+	                "position": 3
+	            },
+	            {
+	                "src": "http://somewherewarm.net/pb/wp-content/uploads/2013/06/T_7_back.jpg",
+	                "position": 4
+	            }
+	        ],
+	        "bundled_items": [
+	            { 
+	                "product_id": 53,
+	                "quantity_min": 1,
+	                "quantity_max": 1,
+	                "priced_individually": false,
+	                "shipped_individually": false,
+	                "optional": false,
+	                "override_title": true,
+	                "title": "Happy Ninja T-Shirt"
+	            },
+	            { 
+	                "product_id": 37,
+	                "quantity_min": 1,
+	                "quantity_max": 1,
+	                "priced_individually": false,
+	                "shipped_individually": false,
+	                "optional": false,
+	                "override_title": true,
+	                "title": "Happy Ninja Hoodie"
+	            }
+	        ],
+	        "bundle_layout": "default"
+	    }'
+view raw
+pb-rest-api-create-bundle.txt hosted with  by GitHub
+Add Bundled Item
+	
+
+	    curl -X PUT https://example.com/wp-json/wc/v1/products/133 \
+	    -u consumer_key:consumer_secret \
+	    -H "Content-Type: application/json" \
+	    -d '{
+	        "bundled_items": [
+	            { 
+	                "product_id": 70,
+	                "quantity_min": 1,
+	                "quantity_max": 1,
+	                "priced_individually": true,
+	                "shipped_individually": true,
+	                "discount": "50.0",
+	                "optional": true,
+	                "override_title": true,
+	                "title": "Flying Ninja Poster"
+	            }
+	        ]
+	    }'
+view raw
+pb-rest-api-add-bundled-item.txt hosted with  by GitHub
+Modify Bundled Item
+	curl -X PUT https://example.com/wp-json/wc/v1/products/133 \
+	    -u consumer_key:consumer_secret \
+	    -H "Content-Type: application/json" \
+	    -d '{
+	        "bundled_items": [
+	            { 
+	                "bundled_item_id": 70,
+	                "product_id" : 35, 
+	                "quantity_max": 10,
+	                "title": "Flying Ninja Posters"
+	            }
+	        ]
+	    }' 
+view raw
+pb-rest-api-modify-bundled-item.txt hosted with  by GitHub
+Delete Bundled Item
+	curl -X PUT https://example.com/wp-json/wc/v1/products/133 \
+	    -u consumer_key:consumer_secret \
+	    -H "Content-Type: application/json" \
+	    -d '{
+	        "bundled_items": [
+	            { 
+	                "bundled_item_id": 70,
+	                "product_id" : 35, 
+	                "delete": true
+	            }
+	        ]
+	    }' 
+view raw
+pb-rest-api-delete-bundled-item.txt hosted with  by GitHub
+Orders
+Line Item Properties
+ATTRIBUTE	TYPE	CONTEXT	DESCRIPTION
+bundled_by	string	read	Item ID of parent line item, applicable if the item is part of a bundle.
+bundled_items	array	read	Item IDs of bundled line items, applicable if the item is a bundle container item.
+bundled_item_title	string	read write 1	Title of the bundled product to display in order/e-mail templates instead of the original product title.
+bundle_configuration	string	write 1	Bundle configuration array. Must be defined when adding a bundle-type line item to an order, to ensure bundled line items are added to the order as well. See Bundle Configuration Properties.
+1 write context requires WooCommerce v3.0+ and Product Bundles v5.2+.
+Bundle Configuration Properties
+ATTRIBUTE	TYPE	CONTEXT	DESCRIPTION
+bundled_item_id	integer	write 1	Bundled item ID.
+product_id	integer	write 1	Bundled product ID.
+quantity	integer	write 1	Bundled product quantity.
+title	string	write 1	Title of the bundled product to display in e-mail/order templates instead of the original product title, if overridden.
+optional_selected	boolean	write 1	Indicates whether the bundled product is selected. Applicable to optional bundled items.
+variation_id	integer	write 1	Chosen variation ID, if applicable.
+attributes	array	write 1	Chosen variation attributes, if applicable. See Variation Attribute Properties.
+args	object	write 1	Additional arguments to pass into WC_Order::add_product, if applicable.
+1 write context requires WooCommerce v3.0+ and Product Bundles v5.2+.
+Variation Attribute Properties
+ATTRIBUTE	TYPE	CONTEXT	DESCRIPTION
+name	string	write 1	Variation attribute name or slug.
+option	string	write 1	Selected variation attribute option name.
+1 write context requires WooCommerce v3.0+ and Product Bundles v5.2+.
+Working with Orders: Examples
+Add Bundle to Order
+	curl -X PUT https://example.com/wp-json/wc/v1/orders/199 \
+	    -u consumer_key:consumer_secret \
+	    -H "Content-Type: application/json" \
+	    -k \
+	    -d '{
+	        "line_items": [
+	            {
+	                "product_id": 30,
+	                "quantity": 1,
+	                "bundle_configuration": [
+	                    {
+	                        "bundled_item_id": 313,
+	                        "product_id": 8,
+	                        "quantity": 3
+	                    },
+	                    {
+	                        "bundled_item_id": 339,
+	                        "product_id": 114,
+	                        "quantity": 1,
+	                        "optional_selected": true,
+	                        "variation_id": 115,
+	                        "attributes": [
+	                            { 
+	                                "name": "Property A", 
+	                                "option": "Value A1"     
+	                            },
+	                            { 
+	                                "name": "Property B", 
+	                                "option": "Value B1"     
+	                            }
+	                        ]
+	                    }
+	                ]
+	            }
+	        ]
+	    }'
+view raw
+pb-rest-api-add-bundle-to-order.txt hosted with  by GitHub
+Store API
+
+Product Bundles 8.3.0 added support for Store API cart/add-item, cart/update-item and cart/remove-item endpoints to allow updating cart via Store API programmatically.
+
+To support these endpoints, Product Bundles 8.5.0 extended the products Store API endpoint‘s extensions property to include all the essential product bundles information, including the bundle_item_id.
+
+	"extensions": {
+	    "bundles": {
+	      "bundle_stock_status": "instock",
+	      "bundle_stock_quantity": 15,
+	      "bundle_virtual": false,
+	      "bundle_layout": "default",
+	      "bundle_add_to_cart_form_location": "default",
+	      "bundle_editable_in_cart": true,
+	      "bundle_sold_individually_context": "product",
+	      "bundle_item_grouping": "parent",
+	      "bundle_min_size": "",
+	      "bundle_max_size": "",
+	      "bundle_price": {
+	        "price": {
+	          "min": {
+	            "incl_tax": "5640",
+	            "excl_tax": "4700"
+	          },
+	          "max": {
+	            "incl_tax": "34800",
+	            "excl_tax": "29000"
+	          }
+	        },
+	        "regular_price": {
+	          "min": {
+	            "incl_tax": "5640",
+	            "excl_tax": "4700"
+	          },
+	          "max": {
+	            "incl_tax": "38040",
+	            "excl_tax": "31700"
+	          }
+	        },
+	        "currency_code": "DKK",
+	        "currency_symbol": "kr.",
+	        "currency_minor_unit": 2,
+	        "currency_decimal_separator": ",",
+	        "currency_thousand_separator": ".",
+	        "currency_prefix": "",
+	        "currency_suffix": " kr."
+	      },
+	      "bundled_items": [
+	        {
+	          "bundled_item_id": 1,
+	          "product_id": 133,
+	          "menu_order": 0,
+	          "quantity_min": 3,
+	          "quantity_max": 9,
+	          "quantity_default": 3,
+	          "priced_individually": true,
+	          "shipped_individually": false,
+	          "override_title": false,
+	          "title": "Peanuts",
+	          "override_description": false,
+	          "description": "",
+	          "optional": true,
+	          "hide_thumbnail": false,
+	          "discount": "10",
+	          "override_variations": false,
+	          "allowed_variations": [],
+	          "override_default_variation_attributes": false,
+	          "default_variation_attributes": [],
+	          "single_product_visibility": "visible",
+	          "cart_visibility": "visible",
+	          "order_visibility": "visible",
+	          "single_product_price_visibility": "visible",
+	          "cart_price_visibility": "visible",
+	          "order_price_visibility": "visible",
+	          "stock_status": "in_stock"
+	        },
+	        {
+	          "bundled_item_id": 2,
+	          "product_id": 136,
+	          "menu_order": 1,
+	          "quantity_min": 2,
+	          "quantity_max": 8,
+	          "quantity_default": 4,
+	          "priced_individually": false,
+	          "shipped_individually": false,
+	          "override_title": false,
+	          "title": "Almonds",
+	          "override_description": false,
+	          "description": "",
+	          "optional": false,
+	          "hide_thumbnail": false,
+	          "discount": "",
+	          "override_variations": true,
+	          "allowed_variations": [
+	            139,
+	            140
+	          ],
+	          "override_default_variation_attributes": false,
+	          "default_variation_attributes": [],
+	          "single_product_visibility": "visible",
+	          "cart_visibility": "visible",
+	          "order_visibility": "visible",
+	          "single_product_price_visibility": "visible",
+	          "cart_price_visibility": "visible",
+	          "order_price_visibility": "visible",
+	          "stock_status": "in_stock"
+	        },
+	        {
+	          "bundled_item_id": 3,
+	          "product_id": 134,
+	          "menu_order": 2,
+	          "quantity_min": 1,
+	          "quantity_max": 10,
+	          "quantity_default": 2,
+	          "priced_individually": false,
+	          "shipped_individually": false,
+	          "override_title": false,
+	          "title": "Cashews",
+	          "override_description": false,
+	          "description": "",
+	          "optional": false,
+	          "hide_thumbnail": false,
+	          "discount": "",
+	          "override_variations": false,
+	          "allowed_variations": [],
+	          "override_default_variation_attributes": false,
+	          "default_variation_attributes": [],
+	          "single_product_visibility": "visible",
+	          "cart_visibility": "visible",
+	          "order_visibility": "visible",
+	          "single_product_price_visibility": "visible",
+	          "cart_price_visibility": "visible",
+	          "order_price_visibility": "visible",
+	          "stock_status": "in_stock"
+	        }
+	      ]
+	    }
+	  }
+view raw
+response.txt hosted with  by GitHub
+Add Item
+	curl -X POST –location "https://example.com/wp-json/wc/store/v1/cart/add-item" \
+	    -u customer_key:customer_secret \
+	    -H "Accept: application/json" \
+	    -H "nonce: deadbeef" \
+	    -H "Content-Type: application/json" \
+	    -d '{
+	          "id": 138,
+	          "quantity": 2,
+	          "bundle_configuration": [
+	            {
+	              "bundled_item_id": 123,
+	              "quantity"       : 2
+	            },
+	            {
+	              "bundled_item_id": 124,
+	              "quantity"       : 1
+	            },
+	            {
+	              "bundled_item_id": 125,
+	              "variation_id"   : 256,
+	              "quantity"       : 2,
+	              "attributes"     : [
+	                {
+	                  "name"  : "pa_size",
+	                  "option": "small"
+	                },
+	                {
+	                  "name"  : "pa_colour",
+	                  "option": "blue"
+	                }
+	              ]
+	            }
+	          ]
+	        }'
+	    
+view raw
+pb-store-api-cart-add-item.sh hosted with  by GitHub
+Update Item
+	curl -X POST –location "https://example.com/wp-json/wc/store/v1/cart/update-item" \
+	    -u consumer_key:consumer_secret \
+	    -H "Accept: application/json" \
+	    -H "nonce: deadbeef" \
+	    -H "Content-Type: application/json" \
+	    -d '{
+	          "key": "e3ead8396bb9598bf7092a1e78446b9f",
+	          "quantity": 2
+	        
+	        }'
+	    
+view raw
+pb-store-api-cart-update-item.sh hosted with  by GitHub
+Questions & Support
+
+Have a question before you buy? Please fill out this pre-sales form.
+Already purchased and need assistance? Get in touch with us via the Help Desk!
+
+Was this guide helpful for you?
+ON THIS PAGE
+Products
+Product Properties
+Working with Products: Examples
+Orders
+Line Item Properties
+Working with Orders: Examples
+Store API
+Add Item
+Update Item
+Questions & Support
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+PRODUCTION
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

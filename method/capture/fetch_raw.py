@@ -23,7 +23,21 @@ def ext_for(ctype):
     if "image/" in c: return c.split("image/")[1].split(";")[0].strip() or "img"
     return "bin"
 
+# At most one request per host per CAPTURE_DELAY seconds (default 1), however many workers run.
+import threading, time
+DELAY = float(os.environ.get("CAPTURE_DELAY", "1"))
+_host_lock, _host_next = threading.Lock(), {}
+
+def wait_turn(url):
+    host = urllib.parse.urlparse(url).netloc.lower()
+    with _host_lock:
+        now = time.monotonic()
+        start = max(now, _host_next.get(host, now))
+        _host_next[host] = start + DELAY
+    time.sleep(max(0.0, start - now))
+
 def fetch(it):
+    wait_turn(it["url"])
     d = os.path.join(run, "items", slug(it))
     os.makedirs(d, exist_ok=True)
     body, hdr = os.path.join(d, "raw.body"), os.path.join(d, "headers.txt")

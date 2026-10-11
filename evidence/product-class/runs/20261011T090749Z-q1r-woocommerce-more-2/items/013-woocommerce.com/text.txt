@@ -1,0 +1,728 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Pre-Sales Support
+Stripe
+WooCommerce Square
+PayPal Braintree
+AutomateWoo
+Expand
+Product CSV Import Suite
+Order/Customer CSV Export
+Facebook for WooCommerce
+WooCommerce Subscriptions
+Expand
+WooCommerce Memberships
+Expand
+WooCommerce Bookings
+Expand
+Product Bundles
+Expand
+Product Recommendations
+Expand
+Composite Products
+Expand
+Smart Coupons
+Cashier for WooCommerce
+Affiliate For WooCommerce
+Mix and Match Products
+Google Product Feed
+Groups WooCommerce
+Gift Cards
+API Manager
+Table Rate Shipping
+Advanced Shipping Packages
+Name Your Price
+Order Delivery
+WooCommerce Zapier Integration
+Expand
+Klarna
+Expand
+Product Vendors
+PDF Invoice
+Pre-orders
+Force Sells
+Google for WooCommerce
+Expand
+Import Export Suite for WooCommerce
+Bulk Updater for WooCommerce Subscriptions
+Expand
+Enhancer for WooCommerce Subscriptions
+Expand
+Product Add-ons
+Expand
+Xero
+Expand
+Buy One Get One Free
+WooCommerce Sales Analysis
+Conditional Shipping and Payments
+WooCommerce Shipping & Tax
+Email Customizer Pro
+Back In Stock Notifications
+WooCommerce Smart Refunder
+Saved Addresses For WooCommerce
+Chained Products
+Volume Discount Coupons
+Sensei
+Expand
+WooCommerce Product Search
+Expand
+Photography
+Expand
+Opayo
+Advanced Bulk Edit
+Smart Stock & Inventory Manager
+Flexi BOGO
+Flexi Custom Order Status
+Product Input Fields
+Product Feed Manager
+Payment Gateway Based Fees and Discounts
+Abandoned Cart Pro
+Order Delivery Date
+Currency per product
+Call for Price Pro
+Product Prices by User Role
+Flexi Custom Order Numbers
+Flexi Product Delivery Date
+Flexi Booking and Appointment
+Delivery and Pickup Scheduler
+SensAI
+All-in-one PDF Invoice and Packing Slips Suite
+Expand
+Easy Subscriptions
+Smart Product Designer
+WooCommerce Anti-Fraud
+Shipment Tracking
+Expand
+EU VAT Number
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooCommerce Purchase Order Gateway / Documentation / Purchase Order Gateway: Developer Reference
+Purchase Order Gateway: Developer Reference
+Introduction
+
+Use this reference to customize WooCommerce Purchase Order Gateway. It describes the hooks, order data, checkout fields, settings, and public identifiers in version 1.5.12. For installation and store setup, see the merchant guide.
+
+Use the WC_Order API to read and update orders. It works with both legacy order storage and High-Performance Order Storage (HPOS), which the gateway supports.
+
+Note:
+
+This is a Developer level doc. If you are unfamiliar working with code and resolving potential conflicts, we recommend you work with a Woo Agency Partner for larger projects, or find a WooCommerce developer on Codeable for smaller customizations. We are unable to provide support for customizations under our Support Policy.
+
+Before you begin
+
+Customization code belongs in one of two places:
+
+A child theme’s functions.php file
+A site-specific plugin
+
+Both survive extension updates. Edits made to the extension’s own files are overwritten the next time it updates, and they are lost without warning.
+
+Test one customization at a time on a staging site with WooCommerce and Purchase Order Gateway active. The callback-removal examples run on init or wp, after extension initialization. Retrieve gateway instances from WooCommerce’s payment gateway registry; the gateway class is loaded when that registry is initialized. Remove the customization to restore the default behavior, and repeat the relevant test after extension or WooCommerce updates.
+
+Hooks and filters
+
+In version 1.5.12, the extension does not call apply_filters() or do_action() to expose its own hooks. The hooks below are supplied by WordPress, WooCommerce, or the named integration.
+
+Its extensibility surface is made up of the core hooks it attaches to, the order meta key it writes, the checkout field name it reads, the settings option it stores, and the public classes and functions it publishes. Each is documented in the sections that follow.
+
+Core hooks used by the extension
+
+The extension attaches callbacks to the following hooks. Each callback is a public method or a named global function, so third parties can detach any of them with remove_action or remove_filter.
+
+plugins_loaded
+
+Callback: woocommerce_gateway_purchase_order_init
+Priority: 10
+Args: 1
+Registered by: Main plugin file
+
+plugins_loaded
+
+Callback: woocommerce_gateway_purchase_order_load_textdomain
+Priority: 10
+Args: 1
+Registered by: Main plugin file
+
+before_woocommerce_init
+
+Callback: woocommerce_gateway_purchase_order_declare_woocommerce_feature_compatibility
+Priority: 10
+Args: 1
+Registered by: Main plugin file
+
+woocommerce_blocks_loaded
+
+Callback: woocommerce_gateway_purchase_order_block_support
+Priority: 10
+Args: 1
+Registered by: Main plugin file
+
+woocommerce_payment_gateways
+
+Callback: woocommerce_gateway_purchase_order_register_gateway
+Priority: 10
+Args: 1
+Registered by: woocommerce_gateway_purchase_order_init()
+
+init
+
+Callback: woocommerce_gateway_purchase_order_privacy_init
+Priority: 10
+Args: 1
+Registered by: woocommerce_gateway_purchase_order_init()
+
+woocommerce_update_options_payment_gateways_woocommerce_gateway_purchase_order
+
+Callback: Woocommerce_Gateway_Purchase_Order::process_admin_options
+Priority: 10
+Args: 1
+Registered by: Gateway constructor
+
+woocommerce_thankyou_woocommerce_gateway_purchase_order
+
+Callback: Woocommerce_Gateway_Purchase_Order::thank_you
+Priority: 10
+Args: 1
+Registered by: Gateway constructor
+
+woocommerce_admin_order_data_after_order_details
+
+Callback: Woocommerce_Gateway_Purchase_Order_Admin::display_purchase_order_number
+Priority: 10
+Args: 1
+Registered by: Admin constructor
+
+woocommerce_email_after_order_table
+
+Callback: Woocommerce_Gateway_Purchase_Order_Admin::display_purchase_order_number
+Priority: 10
+Args: 1
+Registered by: Admin constructor
+
+woocommerce_order_details_after_order_table
+
+Callback: Woocommerce_Gateway_Purchase_Order_Admin::display_purchase_order_number
+Priority: 10
+Args: 1
+Registered by: Admin constructor
+
+wc_pip_after_body
+
+Callback: Woocommerce_Gateway_Purchase_Order_Admin::add_po_number_to_pip
+Priority: 10
+Args: 4
+Registered by: Admin constructor
+
+woocommerce_process_shop_order_meta
+
+Callback: Woocommerce_Gateway_Purchase_Order_Admin::update_po_number_from_transaction_id
+Priority: 99
+Args: 1
+Registered by: Admin constructor
+
+wc_pip_after_body belongs to the WooCommerce Print Invoices and Packing Lists extension. The callback runs only when that extension is active, and it returns early for any document type other than invoice.
+
+The block checkout integration is registered separately on woocommerce_blocks_payment_method_type_registration through an anonymous callback. Removing the PHP gateway alone leaves that integration registered. Use both parts of the gateway-removal example below to remove the method from both checkouts.
+
+Detach the purchase order number display
+
+The same callback is attached to three separate display hooks, so removal must name the specific hook. The admin class is a singleton created during plugins_loaded at priority 10, and remove_action must match the instance that was attached. The accessor function Woocommerce_Gateway_Purchase_Order_Admin() returns that instance.
+
+This example stops the purchase order number appearing in order emails, and leaves the admin and customer order screens untouched. Place it in a child theme’s functions.php or a site-specific plugin.
+
+add_action(
+	'init',
+	function () {
+		if ( ! function_exists( 'Woocommerce_Gateway_Purchase_Order_Admin' ) ) {
+			return;
+		}
+		remove_action(
+			'woocommerce_email_after_order_table',
+			array( Woocommerce_Gateway_Purchase_Order_Admin(), 'display_purchase_order_number' )
+		);
+	}
+);
+
+Verify: Create a Purchase Order test order and preview an order email. Confirm the PO number is absent from the email and still present in the order admin and customer order details.
+
+Detach the transaction ID sync
+
+This callback is attached at priority 99, so remove_action must pass 99 explicitly. Removing it stops edits to the Transaction ID field on the order edit screen from writing back to the purchase order number.
+
+add_action(
+	'init',
+	function () {
+		if ( ! function_exists( 'Woocommerce_Gateway_Purchase_Order_Admin' ) ) {
+			return;
+		}
+		remove_action(
+			'woocommerce_process_shop_order_meta',
+			array( Woocommerce_Gateway_Purchase_Order_Admin(), 'update_po_number_from_transaction_id' ),
+			99
+		);
+	}
+);
+
+Verify: On a test order, change the Transaction ID and save. Reload the order and confirm that its purchase order number retains the previous value. Remove this customization before testing the default sync again.
+
+Detach the order confirmation message
+
+The thank_you callback is attached by the gateway instance, which WooCommerce creates when it loads payment gateways. Retrieve that instance from the payment gateways registry rather than constructing a new one.
+
+add_action(
+	'wp',
+	function () {
+		if ( ! function_exists( 'WC' ) ) {
+			return;
+		}
+		$gateways = WC()->payment_gateways()->payment_gateways();
+		if ( isset( $gateways['woocommerce_gateway_purchase_order'] ) ) {
+			remove_action(
+				'woocommerce_thankyou_woocommerce_gateway_purchase_order',
+				array( $gateways['woocommerce_gateway_purchase_order'], 'thank_you' )
+			);
+		}
+	}
+);
+
+Verify: Place a Purchase Order test order. Confirm that the configured Order Confirmation Message is absent from its order-received page; the order and PO number should still be recorded.
+
+Remove the gateway entirely
+
+This example removes the PHP gateway from WooCommerce’s registry and unregisters its block checkout integration. It also removes the gateway from WooCommerce > Settings > Payments. If you only need to stop accepting purchase orders, disable the gateway in its settings instead. This customization does not remove existing order data or saved settings.
+
+add_filter(
+	'woocommerce_payment_gateways',
+	function ( $gateways ) {
+		return array_filter(
+			$gateways,
+			function ( $gateway ) {
+				return 'Woocommerce_Gateway_Purchase_Order' !== $gateway;
+			}
+		);
+	},
+	20
+);
+
+add_action(
+	'woocommerce_blocks_payment_method_type_registration',
+	function ( $registry ) {
+		if ( $registry->is_registered( 'woocommerce_gateway_purchase_order' ) ) {
+			$registry->unregister( 'woocommerce_gateway_purchase_order' );
+		}
+	},
+	20
+);
+
+Verify: After applying both callbacks, confirm that Purchase Order is absent from classic checkout, block checkout, and Payments settings. Check the site’s error log for missing-gateway warnings. Remove both callbacks to restore registration.
+
+Order data
+The _po_number meta key
+
+The purchase order number is stored on the order in the _po_number meta key. Woocommerce_Gateway_Purchase_Order::process_payment() writes it during checkout, passing the submitted value through esc_attr().
+
+With a WC_Order object in $order, read the number through the order API. This works with both legacy post storage and HPOS:
+
+$po_number = $order->get_meta( '_po_number', true );
+
+This example adds a PO Number column to the HPOS order list at WooCommerce > Orders. It uses HPOS screen hooks and does not add a column to the legacy post-based order list. It assumes the callback receives a WC_Order object.
+
+add_filter(
+	'manage_woocommerce_page_wc-orders_columns',
+	function ( $columns ) {
+		$columns['po_number'] = __( 'PO Number', 'example-plugin' );
+		return $columns;
+	}
+);
+
+add_action(
+	'manage_woocommerce_page_wc-orders_custom_column',
+	function ( $column, $order ) {
+		if ( 'po_number' !== $column ) {
+			return;
+		}
+		echo esc_html( $order->get_meta( '_po_number', true ) );
+	},
+	10,
+	2
+);
+
+Verify: With HPOS enabled, open WooCommerce > Orders and confirm that the new column shows the PO number on a Purchase Order test order and is empty on an order without that meta key.
+
+The transaction ID duplicate
+
+The purchase order number is deliberately stored twice. Alongside the _po_number meta, process_payment() calls $order->set_transaction_id(), which stores the same value as WooCommerce’s transaction ID. Both writes happen in the same call.
+
+Woocommerce_Gateway_Purchase_Order_Admin::update_po_number_from_transaction_id() keeps the pair aligned in one direction. When an order is saved from the order edit screen with woocommerce_gateway_purchase_order as its payment method, the callback copies the submitted Transaction ID into _po_number if the two differ. There is no sync in the opposite direction: code that writes _po_number directly leaves the transaction ID holding the previous value.
+
+Custom code that reads the purchase order number should read _po_number, which is the value every display path in the extension uses.
+
+Privacy erasure
+
+The extension registers a personal data exporter and eraser, both under the identifier woocommerce-gateway-purchase-order-order-data. Both select orders with wc_get_orders() filtered to the woocommerce_gateway_purchase_order payment method, in pages of 10.
+
+The eraser deletes _po_number. It does not clear the transaction ID, so the same value remains on the order in _transaction_id after erasure completes. Stores that treat the purchase order number as personal data should clear both.
+
+Checkout field contract
+
+The checkout field is named po_number_field on both checkouts. It is required, and an order cannot be placed through this gateway without a value.
+
+Classic checkout
+
+Woocommerce_Gateway_Purchase_Order::payment_fields() renders a text input with both id and name set to po_number_field. The browser posts it with the rest of the checkout form. During an AJAX checkout refresh, the method repopulates the field from the serialized post_data request parameter so the entered value survives the refresh.
+
+validate_fields() rejects an empty value with the notice “Please enter your PO Number.”
+
+Block checkout
+
+The block integration renders a ValidatedTextInput with the id po_number_field. On payment processing, it returns the value as paymentMethodData:
+
+const paymentMethodData = { po_number_field: poNumber };
+
+The Store API receives it as payment_data on the checkout request.
+
+Server data reaches the block script through the woocommerce_gateway_purchase_order_data settings key, which carries title, description, label, and supports. The script handle is wc-woocommerce_gateway_purchase_order-blocks-integration.
+
+How both checkouts reach the same code
+
+Block checkout orders run through the same gateway methods as classic checkout orders. WooCommerce’s Automattic\WooCommerce\StoreApi\Legacy::process_legacy_payment() replaces the $_POST superglobal with the request’s payment data, calls validate_fields() and then process_payment(), and restores the original $_POST afterward.
+
+Two consequences matter for custom code:
+
+$_POST['po_number_field'] is populated inside process_payment() on both checkouts.
+On block checkout, $_POST contains only the payment data keys for the duration of that call. Other checkout fields present on classic checkout, such as billing fields, are absent.
+
+Custom code running inside process_payment() should therefore read order data from the WC_Order object rather than from $_POST.
+
+Settings reference
+
+Settings are stored in the woocommerce_woocommerce_gateway_purchase_order_settings array option. The gateway loads that option through WooCommerce’s Settings API; the admin display and block integration also read the stored option.
+
+KEY	TYPE	DEFAULT	ADMIN LABEL
+enabled	yes or no	no	Enable/Disable
+title	Text	Purchase Order	Payment Method Title
+field_label	Text	Purchase Order Number	Purchase Order Field Label
+description	Textarea	Please enter your PO Number.	Checkout Instructions
+instructions	Textarea	Thank you for your order. We have received your Purchase Order and will process it shortly.	Order Confirmation Message
+
+The table lists the defaults defined by the gateway. Reading the database option directly does not fill in missing keys. Supply a fallback when a store has never saved its settings or its saved array lacks a key added by a later release.
+
+description contains the instructions above the checkout field. instructions contains the message on the order-received page.
+
+To read the stored field label, supply a fallback for a missing key:
+
+$settings = get_option( 'woocommerce_woocommerce_gateway_purchase_order_settings', array() );
+$label    = isset( $settings['field_label'] ) ? $settings['field_label'] : __( 'Purchase Order Number', 'example-plugin' );
+Classes, functions, and constants
+
+The extension declares no namespaces. Every class and function below ships in the global namespace.
+
+Classes
+
+Woocommerce_Gateway_Purchase_Order
+
+Extends: WC_Payment_Gateway
+Notes: Declared final. Gateway ID woocommerce_gateway_purchase_order. Inherits the default supports value of array( 'products' ).
+
+Woocommerce_Gateway_Purchase_Order_Admin
+
+Extends: None
+Notes: Declared final. Singleton, reached through Woocommerce_Gateway_Purchase_Order_Admin() or ::instance().
+
+Woocommerce_Gateway_Purchase_Order_Blocks_Support
+
+Extends: AbstractPaymentMethodType
+Notes: Declared final. Added in 1.4.0. Loads only when WooCommerce Blocks is present.
+
+Woocommerce_Gateway_Purchase_Order_Privacy
+
+Extends: WC_Abstract_Privacy
+Notes: Instantiated on init. Loads only when WC_Abstract_Privacy exists.
+Functions
+
+woocommerce_gateway_purchase_order_init()
+
+Since: 1.0.0
+Purpose: Registers the gateway filter and loads the admin class.
+
+woocommerce_gateway_purchase_order_register_gateway( $methods )
+
+Since: 1.0.0
+Purpose: Appends the gateway class to the WooCommerce gateways array.
+
+woocommerce_gateway_purchase_order_privacy_init()
+
+Since: 1.5.6
+Purpose: Loads the privacy class.
+
+woocommerce_gateway_purchase_order_declare_woocommerce_feature_compatibility()
+
+Since: 1.4.6
+Purpose: Declares HPOS and product block editor compatibility.
+
+woocommerce_gateway_purchase_order_block_support()
+
+Since: Not stated in source
+Purpose: Registers the block checkout integration.
+
+woocommerce_gateway_purchase_order_load_textdomain()
+
+Since: Not stated in source
+Purpose: Loads the plugin text domain.
+
+Woocommerce_Gateway_Purchase_Order_Admin()
+
+Since: 1.0.0
+Purpose: Returns the admin singleton.
+Constants
+CONSTANT	VALUE
+WC_GATEWAY_PURCHASE_ORDER_VERSION	The plugin version
+WC_GATEWAY_PURCHASE_ORDER_URL	Plugin directory URL, derived from plugins_url(), no trailing slash
+WC_GATEWAY_PURCHASE_ORDER_PATH	Plugin directory path, derived from plugin_dir_path(), no trailing slash
+
+Build paths and URLs from these constants rather than assembling them from the site root. Installations that relocate wp-content, run WordPress in a subdirectory, or sit behind a reverse proxy break hand-built paths.
+
+Identifiers
+IDENTIFIER	VALUE
+Gateway ID	woocommerce_gateway_purchase_order
+Settings option	woocommerce_woocommerce_gateway_purchase_order_settings
+Order meta key	_po_number
+Checkout field name	po_number_field
+Block script handle	wc-woocommerce_gateway_purchase_order-blocks-integration
+Block settings key	woocommerce_gateway_purchase_order_data
+Privacy exporter and eraser ID	woocommerce-gateway-purchase-order-order-data
+Text domain	woocommerce-gateway-purchase-order
+
+The gateway ID is stored as the payment method on every order paid through this gateway, and the settings option name, the woocommerce_thankyou_ hook suffix, and the privacy order query all derive from it.
+
+Implementation details
+
+These implementation details are not customization entry points. A public method or class in this reference describes the current implementation; it does not guarantee an unchanged API across future releases.
+
+Woocommerce_Gateway_Purchase_Order::get_post() is private.
+Woocommerce_Gateway_Purchase_Order_Admin::get_field_label(), render_block_theme_po_number(), and render_classic_theme_po_number() are private.
+Woocommerce_Gateway_Purchase_Order_Privacy::get_po_orders() and maybe_handle_order() are protected.
+Woocommerce_Gateway_Purchase_Order_Admin::META_KEY_PO_NUMBER is a private class constant. Use the documented _po_number string when reading order meta; the private constant is not accessible to custom code.
+In version 1.5.12, the gateway’s public $version property contains the hard-coded value 1.1.5. Use WC_GATEWAY_PURCHASE_ORDER_VERSION for the installed extension version; do not infer it from that property or a historical database option.
+Woocommerce_Gateway_Purchase_Order blocks cloning and unserialization through __clone() and __wakeup(), each of which triggers _doing_it_wrong().
+Troubleshooting
+Checkout fields are missing inside process_payment()
+
+Problem: Custom code hooked into the payment flow reads a checkout field from $_POST and works on the classic checkout, but the value is empty on the block checkout.
+
+Cause: WooCommerce replaces the entire $_POST superglobal with the Store API’s payment data for the duration of the gateway call. Only payment data keys are present, so po_number_field resolves, and every other checkout field does not.
+
+Solution: Read order data from the WC_Order object, which is populated on both checkouts.
+
+Take the order with wc_get_order( $order_id ).
+Read billing and shipping values through the order getters, such as $order->get_billing_email().
+Reserve $_POST reads for the payment fields the gateway itself renders.
+remove_action does not stop the PO number display
+
+Problem: A call to remove_action targeting display_purchase_order_number runs without error, and the purchase order number still appears.
+
+Cause: This could be one of the following three things. The callback is attached to three separate hooks, so removing it from one leaves the other two in place. The admin class is a singleton, so a removal passing a newly constructed object does not match what was attached. The class is created during plugins_loaded at priority 10, so a removal that runs earlier has nothing to remove.
+
+Solution:
+
+Name the specific hook to detach from, not the callback alone.
+Pass the singleton, retrieved with Woocommerce_Gateway_Purchase_Order_Admin().
+Run the removal on init, or on plugins_loaded at a priority above 10.
+remove_action does not stop transaction ID sync
+
+Problem: A removal targeting update_po_number_from_transaction_id does nothing, and transaction ID edits still overwrite the purchase order number.
+
+Cause: The callback is attached at priority 99. remove_action defaults to priority 10, and a removal only matches when the priority matches.
+
+Solution: Pass 99 as the third argument to remove_action.
+
+Orders created in the admin have no PO number
+
+Problem: An order created through WooCommerce > Orders > Add order with Purchase Order as its payment method has no value in _po_number, and the number is missing from emails and invoices.
+
+Cause: Creating an order in the admin does not run checkout’s process_payment() method. The extension can still write _po_number when its admin transaction-ID sync callback runs on save.
+
+Solution: Select Purchase Order as the payment method, enter the number in the Transaction ID field, and save the order. Reload it and confirm that the purchase order number appears. This requires the default transaction-ID sync callback to remain attached.
+
+The PO number remains after privacy erasure
+
+Problem: A personal data erasure request completes and reports the purchase order data erased, but the number is still readable on the order.
+
+Cause: The eraser deletes the _po_number meta key only. The same value is also stored as the order’s transaction ID, and that copy remains.
+
+Solution: For stores that treat the purchase order number as personal data, clear the transaction ID alongside the erasure.
+
+After the erasure, load each affected Purchase Order order with wc_get_order( $order_id ) in your controlled follow-up routine. Check that an order was returned and that its payment method is woocommerce_gateway_purchase_order.
+Call $order->set_transaction_id( '' ) and $order->save() on each.
+Reload each order. Confirm that $order->get_meta( '_po_number', true ) and $order->get_transaction_id() are empty before reporting the follow-up complete.
+Related resources
+WooCommerce Payment Gateway API
+Introduction to Hooks: Actions and Filters
+Purchase Order Gateway documentation
+Was this guide helpful for you?
+Related Products
+Table Rate Shipping
+by
+Woo
+
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class...
+
+Excellence verified
+Price $119 annually
+$119
+annually
+Rated 3.5 out of 5 stars
+3.5 
+(19)
+Conditional Shipping and Payments
+by
+Woo
+
+Use conditional logic to restrict the shipping and payment options available on your store.
+
+Excellence verified
+Price $109 annually
+$109
+annually
+Rated 4.6 out of 5 stars
+4.6 
+(52)
+ON THIS PAGE
+Introduction
+Before you begin
+Hooks and filters
+Core hooks used by the extension
+Detach the purchase order number display
+Detach the transaction ID sync
+Detach the order confirmation message
+Remove the gateway entirely
+Order data
+The _po_number meta key
+The transaction ID duplicate
+Privacy erasure
+Checkout field contract
+Classic checkout
+Block checkout
+How both checkouts reach the same code
+Settings reference
+Classes, functions, and constants
+Classes
+Functions
+Constants
+Identifiers
+Implementation details
+Troubleshooting
+Checkout fields are missing inside process_payment()
+remove_action does not stop the PO number display
+remove_action does not stop transaction ID sync
+Orders created in the admin have no PO number
+The PO number remains after privacy erasure
+Related resources
+WooCommerce Purchase Order Gateway
+by Woo
+Price $4.09
+$4.09
+Per month
+ monthly
+ Billed annually at $49
+Buy now
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+MEDLEY
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

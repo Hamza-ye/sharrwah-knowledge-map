@@ -43,3 +43,30 @@ Gap kinds:
 | SH-C-174 Sanctions and unsupported countries and regions | where it lives | Where the platform applies the restriction: sign-up, storefront access, Shopify Payments onboarding, checkout | sign-up at accounts.shopify.com/signup (the 'I'm located in:' list) and storefront and admin access from an unsupported region |
 | SH-C-202 Shopify Magic for product descriptions and blog posts | how it meets the rest | The API, intent or extension through which Shopify Magic generates text in the product and blog editors | admin products/new and articles/new on any held store (store owner role), recording the operations the editor calls when 'Generate' is used |
 
+## WooCommerce
+
+182 gaps: 4 observation needed, 9 page not read, 63 stated only in general terms, 106 searched, not found. Who can close them: 0 an agent, 103 either, 79 the founder.
+
+### Read a page (founder, 9)
+
+| Concern | Placement | What would show it | Route |
+| --- | --- | --- | --- |
+| WC-C-008 WooPayments reserves (funds withheld for risk) | who is legally responsible | A source that states who is legally responsible for WooPayments reserves (funds withheld for risk). | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507) |
+| WC-C-009 WooPayments know-your-customer verification | who is legally responsible | A source that states who is legally responsible for WooPayments know-your-customer verification. | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507) |
+| WC-C-010 WooPayments availability by country | who is legally responsible | A source that states who is legally responsible for WooPayments availability by country. | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507) |
+| WC-C-020 Licence under which WooPayments funds are held and moved | where it lives | A source that states where Licence under which WooPayments funds are held and moved sits (product, host, page or code path). | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507) |
+| WC-C-020 Licence under which WooPayments funds are held and moved | who decides | A source that states what turns Licence under which WooPayments funds are held and moved on or off, limits it, or sets its value. | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507) |
+| WC-C-020 Licence under which WooPayments funds are held and moved | how it meets the rest | A source that names the API, event, setting or contract at the boundary of Licence under which WooPayments funds are held and moved. | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507) |
+| WC-C-020 Licence under which WooPayments funds are held and moved | stated reason | A source that states why Licence under which WooPayments funds are held and moved is placed as it is. | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507) |
+| WC-C-051 WooPayments payout currency and currency conversion | who is legally responsible | A source that states who is legally responsible for WooPayments payout currency and currency conversion. | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507) |
+| WC-C-115 Stripe Radar screening on WooPayments accounts | who is legally responsible | A source that states who is legally responsible for Stripe Radar screening on WooPayments accounts. | Stripe's Connected Account Agreement (stripe.com/connect-account/legal), which the merchant accepts at WooPayments signup (WC-S-0507); Stripe's Radar terms |
+
+### Record a journey (founder, 4)
+
+| Concern | Placement | What would show it | Route |
+| --- | --- | --- | --- |
+| WC-C-010 WooPayments availability by country | where it lives | A source that states where WooPayments availability by country sits (product, host, page or code path). | WooPayments onboarding on a test store: WP Admin > Payments > set up WooPayments (country and account type steps) |
+| WC-C-010 WooPayments availability by country | how it meets the rest | A source that names the API, event, setting or contract at the boundary of WooPayments availability by country. | WooPayments onboarding on a test store: WP Admin > Payments > set up WooPayments; the release's WooPayments onboarding REST routes (src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php) are the store side |
+| WC-C-051 WooPayments payout currency and currency conversion | where it lives | A source that states where WooPayments payout currency and currency conversion sits (product, host, page or code path). | A store with WooPayments: Payments > Settings (payout and currency sections) and the Stripe Express dashboard |
+| WC-C-115 Stripe Radar screening on WooPayments accounts | how it meets the rest | A source that names the API, event, setting or contract at the boundary of Stripe Radar screening on WooPayments accounts. | A store with WooPayments: Payments > Settings > Fraud protection, and a test transaction blocked by Radar |
+

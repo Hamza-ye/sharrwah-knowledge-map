@@ -1,0 +1,19 @@
+{
+ "n": 13,
+ "url": "https://woocommerce.com/document/woocommerce-purchase-order-gateway/purchase-order-gateway-developer-reference/",
+ "dir": "items/013-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woocommerce-purchase-order-gateway/purchase-order-gateway-developer-reference/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 58360,
+ "cited_in": [
+  "WC-S-5471",
+  "WC-S-5473"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0f2dfe6ef3cb8ed9c1a57826cc107acfdc2c42c1936afcbbf2ba8b264c1124e8",
+ "raw_ext": "html"
+}

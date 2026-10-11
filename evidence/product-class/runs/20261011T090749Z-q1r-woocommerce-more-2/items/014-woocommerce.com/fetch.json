@@ -1,0 +1,19 @@
+{
+ "n": 14,
+ "url": "https://woocommerce.com/document/xero/",
+ "dir": "items/014-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/xero/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 58993,
+ "cited_in": [
+  "WC-S-5489",
+  "WC-S-5491"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "61d926d01c15780fd3bd3cb1ed23b509df4858aa1852a6faad726b5501c0dc36",
+ "raw_ext": "html"
+}

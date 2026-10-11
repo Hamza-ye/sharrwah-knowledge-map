@@ -1,0 +1,18 @@
+{
+ "n": 17,
+ "url": "https://woocommerce.com/products/google-listings-and-ads/",
+ "dir": "items/017-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/products/google-listings-and-ads/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 58071,
+ "cited_in": [
+  "WC-S-5493"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e68a8906309bfa51e396ebeccacc913e04b1050eb3fa6d5363b2e4120e1e19c0",
+ "raw_ext": "html"
+}

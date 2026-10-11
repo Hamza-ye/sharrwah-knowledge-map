@@ -6,7 +6,7 @@ The answer to `questions/Q1-concern-map.md` as it is being built. This file says
 
 | Platform | Inventory and concerns | Quotes checked against their sources |
 | --- | --- | --- |
-| WooCommerce | 654 entries, 118 concerns | 963 of 963 found |
+| WooCommerce | 654 entries, 118 concerns. The re-pass is done: 1,499 statements and 182 gaps, with 408 of 590 cells stated | 1,466 of 1,466 found |
 | Salla | 2,620 entries, 148 concerns | 2,828 of 2,828 found |
 | Shopify | 2,610 entries, 198 concerns. The re-pass is done: 3,005 statements and 249 gaps, with 741 of 990 cells stated | 5,055 of 5,055 found |
 

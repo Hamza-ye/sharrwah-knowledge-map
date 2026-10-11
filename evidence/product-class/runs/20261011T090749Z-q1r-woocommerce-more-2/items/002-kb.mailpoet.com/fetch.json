@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://kb.mailpoet.com/article/274-list-of-filters-and-actions",
+ "dir": "items/002-kb.mailpoet.com",
+ "fetched_at": "2026-10-11T09:07:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kb.mailpoet.com/article/274-list-of-filters-and-actions",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24191,
+ "cited_in": [
+  "WC-S-5502"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "42c584ec78faa49de9671824ba553be859fa0b769cd5f133cc9daf228a71b018",
+ "raw_ext": "html"
+}

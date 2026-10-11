@@ -1,0 +1,18 @@
+{
+ "n": 18,
+ "url": "https://woocommerce.com/products/product-bundles/",
+ "dir": "items/018-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/products/product-bundles/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 59031,
+ "cited_in": [
+  "WC-S-5475"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7c5ff4e47b2cf34930789a534cf6f48b6513de1726b997cf10e7b39cbb93de15",
+ "raw_ext": "html"
+}

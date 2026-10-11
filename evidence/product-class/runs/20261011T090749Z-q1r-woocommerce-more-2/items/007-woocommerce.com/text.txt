@@ -1,0 +1,356 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Pre-Sales Support
+Stripe
+WooCommerce Square
+PayPal Braintree
+AutomateWoo
+Expand
+Product CSV Import Suite
+Order/Customer CSV Export
+Facebook for WooCommerce
+WooCommerce Subscriptions
+Expand
+WooCommerce Memberships
+Expand
+WooCommerce Bookings
+Expand
+Product Bundles
+Expand
+Product Recommendations
+Expand
+Composite Products
+Expand
+Smart Coupons
+Cashier for WooCommerce
+Affiliate For WooCommerce
+Mix and Match Products
+Google Product Feed
+Groups WooCommerce
+Gift Cards
+API Manager
+Table Rate Shipping
+Advanced Shipping Packages
+Name Your Price
+Order Delivery
+WooCommerce Zapier Integration
+Expand
+Klarna
+Expand
+Product Vendors
+PDF Invoice
+Pre-orders
+Force Sells
+Google for WooCommerce
+Expand
+Import Export Suite for WooCommerce
+Bulk Updater for WooCommerce Subscriptions
+Expand
+Enhancer for WooCommerce Subscriptions
+Expand
+Product Add-ons
+Expand
+Xero
+Expand
+Buy One Get One Free
+WooCommerce Sales Analysis
+Conditional Shipping and Payments
+WooCommerce Shipping & Tax
+Email Customizer Pro
+Back In Stock Notifications
+WooCommerce Smart Refunder
+Saved Addresses For WooCommerce
+Chained Products
+Volume Discount Coupons
+Sensei
+Expand
+WooCommerce Product Search
+Expand
+Photography
+Expand
+Opayo
+Advanced Bulk Edit
+Smart Stock & Inventory Manager
+Flexi BOGO
+Flexi Custom Order Status
+Product Input Fields
+Product Feed Manager
+Payment Gateway Based Fees and Discounts
+Abandoned Cart Pro
+Order Delivery Date
+Currency per product
+Call for Price Pro
+Product Prices by User Role
+Flexi Custom Order Numbers
+Flexi Product Delivery Date
+Flexi Booking and Appointment
+Delivery and Pickup Scheduler
+SensAI
+All-in-one PDF Invoice and Packing Slips Suite
+Expand
+Easy Subscriptions
+Smart Product Designer
+WooCommerce Anti-Fraud
+Shipment Tracking
+Expand
+EU VAT Number
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+Advanced Notifications / Documentation
+Advanced Notifications
+
+The Advanced Notifications extension for WooCommerce lets you set up order and stock notifications for users other than the admin user. These can be used for anything; notifying staff and users of sales, sending stock notices to suppliers, or even sending new orders to drop shippers.
+
+To get started, go to WooCommerce > Notifications and click on the “Add notification” button:
+
+Creating a Notification
+
+When creating an advanced notification, the first section asks for information about the recipient:
+
+Play animation
+
+The name of the recipient will be displayed in the emails the recipient receives.
+
+The email addresses (which can be comma-separated if multiple addresses should be used) will receive the notifications.
+
+Below those fields you can add some additional details such as telephone and address; these are not used by the plugin but may be useful for your reference.
+
+In the next section, you can choose what notifications your recipient should receive, and in what format.
+
+The following options are available:
+
+Email format
+
+Choose plain text or HTML emails (default). Some users may prefer plain text, as they might be less likely to get caught in spam filters.
+
+Enable notifications
+
+Choose from:
+
+Purchases – Sent when an order has been purchased, not when the original order is created (uses pending_to_processing, pending_to_completed, failed_to_processing, failed_to_completed). These notifications contain order and customer details.
+Low stock – Sent when an item is getting low is stock (based on the threshold set in WC settings). These emails contain stock and product information.
+Out of stock – Sent when an item is out of stock. These emails contain stock and product information.
+Backorders – Sent when an item is backordered (stock < 0 ). These emails contain stock and product information.
+Refunds – Sent when a refund is issued.
+On hold – not enabled by default, needs to be activated via filter.
+
+These are the types of notifications this recipient will receive.
+
+Include all items
+
+Select if you would like to include all order items in the email.
+
+Include prices
+
+Choose whether or not prices for products will be hidden in the email.
+
+Include order totals
+
+Choose whether or not order totals for products will be hidden in the email.
+
+Notification triggers
+
+Triggers determine which products and orders trigger notifications to be sent. You may select the below from the drop-down:
+
+All purchases – Any order item will trigger a notification
+Product categories – Purchases of products in the product category will trigger a notification.
+Product shipping classes – Purchases of products in the product shipping class will trigger a notification.
+
+Depending on how you set up your triggers, it is possible to send multiple people an email regarding a single customer’s purchase (whether it be one product or multiple).
+
+You can leave this blank if you want to use per-product trigger (see below). When using this, only the matching trigger’s product will be displayed in the notification – this keeps other products hidden and private.
+
+If you choose All purchases, all products will be included in the email.
+
+Assigning per-product triggers to notifications
+
+After setting up a notification with per-product triggers, you can set up notifications to apply to selected products only. To do this, edit the product itself and look for the notifications box:
+
+Choose the recipients who should get notifications for the product. This will apply to all of the recipients configured notifications.
+
+Note, this box will only be displayed if you have a per-product triggered notification setup in advance.
+
+The Recipients List
+
+After adding your recipient they will be listed on the main notifications screen shown below.
+
+Edit or delete the recipient by hovering over their name in the list under the Recipient column.
+
+The Email Template
+Changing the email template
+
+The following email templates for this plugin are in the email folder:
+
+new-order.php
+new-order-plain.php
+refunds.php
+refunds-plain.php
+
+You can override these templates and customize by placing them inside your theme folder using this structure, for example:
+
+yourtheme/woocommerce-advanced-notifications/emails/new-order.php
+
+Other notification emails use the default WooCommerce email template, and there are no specific template override files for them.
+
+Additional Notifications via Filters
+
+Previously, when Purchases notifications were enabled, a notification would also be sent when an order changed status from Pending Payment to On Hold by using pending_to_on-hold. Since 1.2.33, this is no longer the case.
+
+To re-enable this functionality, add the filter below to a custom plugin, or via a code snippets plugin (it will currently not work when added to the functions.php file of a theme).
+
+add_filter( 'woocommerce_advanced_notifications_purchase_pending_to_on-hold', '__return_true' );
+Questions & Support
+
+Have a question before you buy? Please fill out this pre-sales form.
+
+Already purchased and need some assistance? Get in touch with a Happiness Engineer via the Help Desk.
+
+Was this guide helpful for you?
+Related Products
+Checkout Field Editor
+by
+Woo
+
+Optimize your checkout process by adding, removing, or editing fields to suit your needs.
+
+Price $49 annually
+$49
+annually
+Rated 2.7 out of 5 stars
+2.7 
+(19)
+WooCommerce Subscriptions
+by
+Woo
+
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+
+Excellence verified
+Price $279 annually
+$279
+annually
+Rated 3.9 out of 5 stars
+3.9 
+(142)
+ON THIS PAGE
+Creating a Notification
+Email format
+Enable notifications
+Include all items
+Include prices
+Include order totals
+Notification triggers
+Assigning per-product triggers to notifications
+The Recipients List
+The Email Template
+Changing the email template
+Additional Notifications via Filters
+Questions & Support
+Advanced Notifications
+by Woo
+Price $3.25
+$3.25
+Per month
+ monthly
+ Billed annually at $39
+Buy now
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+OPUS
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all
