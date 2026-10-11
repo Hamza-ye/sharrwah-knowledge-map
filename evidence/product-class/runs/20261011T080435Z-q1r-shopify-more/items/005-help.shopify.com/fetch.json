@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://help.shopify.com/en/manual/custom-data/overview.md",
+ "dir": "items/005-help.shopify.com",
+ "fetched_at": "2026-10-11T08:04:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/custom-data/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2123,
+ "cited_in": [
+  "SH-S-7480"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d1e7ee2aeef1e29a6e600ad2909bdbd3f592e1c4d630db95a66e9029ef478269",
+ "raw_ext": "txt"
+}

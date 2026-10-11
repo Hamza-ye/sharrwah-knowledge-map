@@ -1,0 +1,144 @@
+# Getting paid on the Shopify Collective sales channel
+
+After a customer places an order on the retailer's store, the retailer receives the full amount paid for the order. The retailer then owes you a portion of the money. This amount is dependent on the [cost price](/manual/online-sales-channels/shopify-collective/suppliers/price-lists#cost-price) of the product sold, and the [shipping costs](/manual/online-sales-channels/shopify-collective/suppliers/shipping) that you set up.
+
+## Shopify Collective automatic payments {#automatic-payments}
+
+If you meet [Collective's eligibility requirements](/manual/online-sales-channels/shopify-collective/suppliers/requirements-and-considerations), then automatic payments are turned on when you install Shopify Collective. It's the recommended way to get paid by retailers, unless you're moving money between two stores in the same organization.
+
+When you and your retailer have automatic payments turned on in Shopify Collective, then the amount that your retailer owes you will be automatically debited from the retailer's Shopify Payments balance, if they have sufficient funds. After you ship the order to the customer, funds collected from the retailer transfer to your balance automatically.
+
+When you and your retailer have automatic payments turned off in Shopify Collective, then you need to both agree on how they'll pay you, and on what terms. For example, you can manage payments by [sending an invoice](/manual/shopify-flow/reference/actions/send-order-invoice), or by direct bank transfer.
+
+<aside class="note note-information"><h4>Tip</h4><p>To minimize customer service and payment issues, ship orders promptly when they&#39;re marked as <strong>Paid</strong>. Don&#39;t ship orders that are in <strong>Payment pending</strong> status.</p>
+</aside>
+
+## Requirements for using automatic payments with connected retailers {#requirements}
+
+To use automatic payments with a new connection, they must also be eligible for the feature. You and your retailer must both meet the following criteria:
+
+* Both stores must be based in the [same supported country and be using the same supported currency](/manual/online-sales-channels/shopify-collective/suppliers/requirements-and-considerations#supported-countries-currencies).
+* Both stores must have Shopify Payments configured in the same region as their store's country.
+* Both stores must have a Shopify Payments account for the same country as the country that their store's located in.
+
+## Considerations for using automatic payments in Shopify Collective between stores you own {#considerations-stores-you-own}
+
+If you use Shopify Collective as both a supplier and a retailer, then you can use automatic payments to get paid for orders placed on the retail store that you own. To receive all the funds (minus payment fees), set a discount of 0%, or add a different percentage discount to receive a percentage of the funds.
+
+In the same way that payments work with a retail store you don't own, funds will be collected immediately and held until the order is shipped. You can turn off automatic payments between stores you own so that no funds are deducted from your retail store to pay your supplier store, and payment isn't put on hold pending shipment.
+
+## Turn automatic payments off with a retailer {#auto-payments-off}
+
+You can turn off automatic payments with a retailer directly from your Collective: Supplier sales channel, and the retailer will be notified by email. It's your responsibility to then agree with each retailer what manual payment method they should use to pay you, and on what terms.
+
+#### Steps:
+
+
+  
+      
+    
+
+
+1. From your Shopify admin, go to **Sales channels** > [**Collective: Supplier**](https://admin.shopify.com/apps/merchant-to-merchant-1).
+
+
+2. Click **Retailers**, then **Connected**.
+3. In the **Automatic payments** column, view whether automatic payments are on or off with each retailer.
+4. To turn off automatic payments with a retailer, click the relevant retailer, and then click the dropdown in the automatic payments section and select **Off**.
+5. Click **Turn off**.
+
+## Turn automatic payments on with a retailer {#auto-payments-on}
+
+Only retailers can turn on automatic payments. Contact them directly to request this.
+
+## Order payment status {#order-payment-status}
+
+After an order with Shopify Collective products is placed on a retailer's store, an order is also created in your Shopify admin. Your order's payment status can vary depending on the money flow and whether you have automatic payments turned on.
+
+If automatic payments are off in Shopify Collective, then your order payment status is always displayed as **Payment pending**.
+
+If automatic payments are on in Shopify Collective, then your order payment status is displayed as **Payment pending**, or **Paid**. Review the following table to learn more about these statuses:
+
+<table>
+  <caption>Shopify Collective order payment statuses</caption>
+  <thead>
+     <tr>
+        <th scope="col">Status</th>
+        <th scope="col">Description</th>
+     </tr>
+  </thead>
+  <tbody>
+     <tr>
+        <td scope="row">Payment pending</td>
+        <td>Money hasn't yet been debited from the retailer's Shopify Payments balance.</td>
+     </tr>
+     <tr>
+        <td scope="row">Paid</td>
+        <td>Money has been debited from the retailer's Shopify Payments balance and will be credited to your Shopify Payments balance after you fulfill the order.</td>
+     </tr>
+  </tbody>
+</table>
+
+Note that when a Shopify Collective order is marked as **Paid**, funds don't transfer to your Shopify Payments balance until after you fulfill the order. After funds are transferred to you, the order remains marked as paid. To ensure money has been debited from the retailer, don't fulfill orders that are in **Payment pending** status.
+
+## View your Shopify Collective payments {#viewing-payments}
+
+You can view your Shopify Collective payments from the **Transactions** page in your Shopify admin. Payments are only displayed for fulfilled orders.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Finance** > [**Payouts**](https://admin.shopify.com/payments/payouts).
+
+2. Click **View transactions**.
+3. Click **More filters**.
+4. Click **Type**, and then select **Shopify Collective**.
+
+You can view the following information about your Shopify Collective payments:
+
+* payment date
+* order number
+* retailer that paid you
+* payment status
+* amount that was transferred to the supplier for the product and shipping
+
+You can also view all Shopify Collective payments, with a product cost and shipping breakdown, on the **Payments** page of the Shopify Collective sales channel:
+
+#### Steps:
+
+
+  
+      
+    
+
+
+1. From your Shopify admin, go to **Sales channels** > [**Collective: Supplier**](https://admin.shopify.com/apps/merchant-to-merchant-1).
+
+
+2. Click **Payments**.
+3. In the **Order payments** section, view Shopify Collective payments.
+
+## View unfulfilled Shopify Collective orders {#viewing-unfulfilled-orders}
+
+There are several ways you can view your unfulfilled Shopify Collective orders. From the **Transactions** page in your Shopify admin, click the 'View unfulfilled orders' button on the yellow banner, or click the banner on the **Payments** page in your Collective: Supplier sales channel.
+
+You can also filter and view all unfulfilled Shopify Collective orders from the **Orders** page.
+
+#### Steps:
+
+1. From your Shopify admin, go to [**Orders**](https://admin.shopify.com/orders).
+
+
+2. Click the <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/SearchIcon.svg" alt="search" class="admin-icon" /><img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/FilterIcon.svg" alt="filter" class="admin-icon" /> icon.
+3. Click **Add filter**, and then select **Channel** > **Shopify Collective**.
+4. Click **Add filter**,and then select **Payment status** > **Paid** and **Partially paid**.
+5. Click **Add filter**, and then select **Fulfillment status** > **Unfulfilled** and **Partially fulfilled**.
+
+## Insufficient funds {#insufficient-funds}
+
+Shopify Collective will continuously try to collect funds to refund retailers until successful, but sometimes there are insufficient funds in your Shopify Payments account. Insufficient funds can occur when customers pay you using alternative payment methods such as PayPal, when your payouts are frequent, or when you have a high number of refunds after a payout.
+
+To avoid future issues, consider these options:
+
+* Use Shopify Payments as your only payment method at checkout.
+* Set your payout schedule to weekly or monthly to help ensure that you have a positive Shopify Payments balance for Shopify Collective to debit from, and pay your retailers.
+* Find ways to minimize refunds and chargebacks

@@ -1,0 +1,15 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 08:04:36 GMT
+content-type: text/html; charset=utf-8
+cf-ray: a48c5adf7c08d659-IAD
+cf-cache-status: HIT
+set-cookie: __cf_bm=t0iXsaI25heVo6xHsSeIVur9lHZhTOFt7u2b.cWqo9k-1791705876.3994043-1.0.1.1-mXFYCp1i_ZH6COtBWpslj0sGMZMLlRAgVZChcVWw8gg7vYNceGd7bQmZxFZyyDOu86RDYvVpHP.37sgmyksD5bCydn58heGpRjI4077gMfAuzBJrCcRM8.5WCr_zv2KU; HttpOnly; SameSite=None; Secure; Path=/; Domain=collabs.shopify.com; Expires=Sun, 11 Oct 2026 08:34:36 GMT
+age: 17764
+server: cloudflare
+dbg-cfpc: 1
+vary: accept-encoding
+content-encoding: br
+alt-svc: h3=":443"; ma=86400
+

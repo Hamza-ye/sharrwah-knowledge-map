@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://help.shopify.com/en/manual/shopify-admin/productivity-tools/file-uploads.md",
+ "dir": "items/010-help.shopify.com",
+ "fetched_at": "2026-10-11T08:04:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/shopify-admin/productivity-tools/file-uploads.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 8412,
+ "cited_in": [
+  "SH-S-7484"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1d9266548ec0fbcc7638aa7fb2941fbe18a879f30f76ff556770cd2c8d058549",
+ "raw_ext": "txt"
+}

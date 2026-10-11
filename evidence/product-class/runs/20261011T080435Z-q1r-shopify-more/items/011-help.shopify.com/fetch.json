@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://help.shopify.com/en/manual/your-account/users/security/collaborator-accounts.md",
+ "dir": "items/011-help.shopify.com",
+ "fetched_at": "2026-10-11T08:04:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/your-account/users/security/collaborator-accounts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4460,
+ "cited_in": [
+  "SH-S-7481"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "f8cc2065dcd9d203e0ede5a40bb1e50857350e6e2c645bcb10f840cc17ed794a",
+ "raw_ext": "txt"
+}

@@ -2427,3 +2427,185 @@ SH-I-2425	access-scopes	Subscription APIs permissions	SH-S-3189	SH-C-158;SH-C-15
 SH-I-2426	access-scopes	Shopify Payments dispute evidence permissions	SH-S-3190	SH-C-072;SH-C-158;SH-C-159	
 SH-I-2427	access-scopes	Theme permissions	SH-S-3191	SH-C-029;SH-C-158;SH-C-159	
 SH-I-2428	access-scopes	Protected customer data permissions	SH-S-3192	SH-C-158;SH-C-160	
+SH-I-2429	other:admin-operation-areas	organizations	SH-S-7306	SH-C-003;SH-C-004;SH-C-009;SH-C-010	
+SH-I-2430	other:admin-operation-areas	destinations	SH-S-7184	SH-C-001;SH-C-003	
+SH-I-2431	other:admin-operation-areas	capital	SH-S-7183	SH-C-090;SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097	
+SH-I-2432	other:admin-operation-areas	banking	SH-S-7181	SH-C-088;SH-C-089;SH-C-090	
+SH-I-2433	other:admin-operation-areas	contractmanagement	SH-S-7176	SH-C-201	
+SH-I-2434	other:admin-operation-areas	completeness_engine	SH-S-7178	SH-C-004	
+SH-I-2435	other:admin-operation-areas	profile_assessment	SH-S-7180	SH-C-008;SH-C-068	
+SH-I-2436	other:admin-operation-areas	server_intents	SH-S-7307	SH-C-009;SH-C-010;SH-C-020;SH-C-021;SH-C-023;SH-C-024;SH-C-028;SH-C-030;SH-C-037;SH-C-039;SH-C-044;SH-C-055;SH-C-106;SH-C-112;SH-C-114;SH-C-127	
+SH-I-2437	other:staff-permissions	VIEW_INVENTORY_PURCHASE_ORDERS	SH-S-7156	SH-C-010;SH-C-023	
+SH-I-2438	other:staff-permissions	CREATE_AND_EDIT_INVENTORY_PURCHASE_ORDERS	SH-S-7157	SH-C-010;SH-C-023	
+SH-I-2439	other:staff-permissions	VIEW_INVENTORY_COUNTS	SH-S-7158	SH-C-010;SH-C-022	
+SH-I-2440	other:staff-permissions	MANAGE_INVENTORY_COUNTS	SH-S-7159	SH-C-010;SH-C-022	
+SH-I-2441	other:staff-permissions	PERFORM_INVENTORY_COUNTS	SH-S-7160	SH-C-010;SH-C-022	
+SH-I-2442	other:staff-permissions	MANAGE_AUTOMATIONS	SH-S-7161	SH-C-010;SH-C-151	
+SH-I-2443	other:staff-permissions	MANAGE_AUTOMATION_SETTINGS	SH-S-7162	SH-C-010;SH-C-151	
+SH-I-2444	other:staff-permissions	MANAGE_STAFF_PERMISSIONS	SH-S-7163	SH-C-009;SH-C-010	
+SH-I-2445	other:staff-permissions	ADD_REMOVE_STAFF	SH-S-7164	SH-C-009;SH-C-010	
+SH-I-2446	other:staff-permissions	AUTHENTICATION_MANAGEMENT	SH-S-7165	SH-C-007;SH-C-010	
+SH-I-2447	other:staff-permissions	STAFF_API_PERMISSION_MANAGEMENT	SH-S-7166	SH-C-010	
+SH-I-2448	other:staff-permissions	MANAGE_COLLABORATORS	SH-S-7167	SH-C-010;SH-C-011	
+SH-I-2449	other:staff-permissions	VIEW_BALANCE_BANK_ACCOUNTS	SH-S-7168	SH-C-010;SH-C-088	
+SH-I-2450	other:staff-permissions	VIEW_ALL_SHOPIFY_CREDIT_TRANSACTIONS	SH-S-7169	SH-C-010;SH-C-090	
+SH-I-2451	other:staff-permissions	VIEW_BILLING_DETAILS	SH-S-7170	SH-C-010;SH-C-016	
+SH-I-2452	other:staff-permissions	BILLING_PAY_INVOICES	SH-S-7171	SH-C-010;SH-C-016	
+SH-I-2453	access-scopes	read_images	SH-S-5985	SH-C-027	
+SH-I-2454	access-scopes	read_quick_sale	SH-S-5985	SH-C-142	
+SH-I-2455	access-scopes	write_customer_payment_methods	SH-S-6182	SH-C-085	
+SH-I-2456	access-scopes	write_quick_sale	SH-S-6197	SH-C-142	
+SH-I-2457	access-scopes	write_images	SH-S-6199	SH-C-027	
+SH-I-2458	access-scopes	write_marketplace_fulfillment_orders	SH-S-6302	SH-C-118;SH-C-137	
+SH-I-2459	access-scopes	write_inventory_purchase_orders	SH-S-6221	SH-C-023	
+SH-I-2460	access-scopes	write_pos_staff_member_event_attribution_overrides	SH-S-6229	SH-C-131;SH-C-142	
+SH-I-2461	access-scopes	write_shopify_payments_tooling	SH-S-7308	SH-C-069	
+SH-I-2462	access-scopes	read_shop_promise_program	SH-S-6116	SH-C-125	
+SH-I-2463	access-scopes	read_point_of_sale_devices	SH-S-6036	SH-C-142	
+SH-I-2464	access-scopes	read_shopify_payments_legal_entities	SH-S-7309	SH-C-005;SH-C-063	
+SH-I-2465	access-scopes	read_capital	SH-S-7310	SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097	
+SH-I-2466	access-scopes	read_shopify_payments_tooling	SH-S-7311	SH-C-069	
+SH-I-2467	access-scopes	customer_write_pre_authenticated	SH-S-7312	SH-C-041	
+SH-I-2468	access-scopes	customer_read_payment_instrument_authenticated	SH-S-7313	SH-C-041	
+SH-I-2469	access-scopes	customer_read_unauthenticated	SH-S-7314	SH-C-041	
+SH-I-2470	access-scopes	customer_read_pre_authenticated	SH-S-7314	SH-C-041	
+SH-I-2471	access-scopes	read_buyer_membership_orders	SH-S-7315	SH-C-054	
+SH-I-2472	access-scopes	read_customer_email	SH-S-7316	SH-C-146;SH-C-160	
+SH-I-2473	access-scopes	read_customer_name	SH-S-7317	SH-C-146;SH-C-160	
+SH-I-2474	access-scopes	read_customer_personal_data	SH-S-7318	SH-C-146;SH-C-160	
+SH-I-2475	access-scopes	read_customer_phone	SH-S-7319	SH-C-146;SH-C-160	
+SH-I-2476	access-scopes	read_customer_address	SH-S-7320	SH-C-146;SH-C-160	
+SH-I-2477	access-scopes	customer_payment_methods	SH-S-7321	SH-C-085	
+SH-I-2478	access-scopes	customer_merge	SH-S-7322	SH-C-039	
+SH-I-2479	access-scopes	write_webhooks	SH-S-7323	SH-C-162	
+SH-I-2480	access-scopes	write_payment_session_modals	SH-S-7324	SH-C-076	
+SH-I-2481	access-scopes	read_payment_session_modals	SH-S-7324	SH-C-076	
+SH-I-2482	access-scopes	write_cart_wallet_payments	SH-S-7325	SH-C-078	
+SH-I-2483	access-scopes	write_mobile_payments	SH-S-7326	SH-C-078	
+SH-I-2484	access-scopes	read_mobile_payments	SH-S-7326	SH-C-078	
+SH-I-2485	access-scopes	read_billing	SH-S-7327	SH-C-071	
+SH-I-2486	other:app-store-built-in-features	Abandoned checkout recovery	SH-S-7328	SH-C-050	
+SH-I-2487	other:app-store-built-in-features	Automated privacy settings	SH-S-7329	SH-C-148	
+SH-I-2488	other:app-store-built-in-features	B2B	SH-S-7330	SH-C-044	
+SH-I-2489	other:app-store-built-in-features	Customer accounts	SH-S-7331	SH-C-041	
+SH-I-2490	other:app-store-built-in-features	Customer segmentation	SH-S-7332	SH-C-040	
+SH-I-2491	other:app-store-built-in-features	Domains	SH-S-7333	SH-C-033	
+SH-I-2492	other:app-store-built-in-features	Draft orders	SH-S-7334	SH-C-055	
+SH-I-2493	other:app-store-built-in-features	Gift cards	SH-S-7335	SH-C-025	
+SH-I-2494	other:app-store-built-in-features	Inventory management	SH-S-7336	SH-C-022	
+SH-I-2495	other:app-store-built-in-features	Shopify Magic for blog posts	SH-S-7337	SH-C-202	
+SH-I-2496	other:app-store-built-in-features	Shopify Magic for product descriptions	SH-S-7338	SH-C-202	
+SH-I-2497	other:app-store-built-in-features	Managed Markets	SH-S-7339	SH-C-110	
+SH-I-2498	other:app-store-built-in-features	Shopify Markets	SH-S-7340	SH-C-106	
+SH-I-2499	other:app-store-built-in-features	Metafields and metaobjects	SH-S-7341	SH-C-028	
+SH-I-2500	other:app-store-built-in-features	Order tracking	SH-S-7342	SH-C-126	
+SH-I-2501	other:app-store-built-in-features	Payments	SH-S-7343	SH-C-062	
+SH-I-2502	other:app-store-built-in-features	Product variants	SH-S-7344	SH-C-020	
+SH-I-2503	other:app-store-built-in-features	Shop Pay	SH-S-7345	SH-C-074	
+SH-I-2504	other:app-store-built-in-features	Shop Pay Installments	SH-S-7346	SH-C-075	
+SH-I-2505	other:app-store-built-in-features	Shopify Balance	SH-S-7347	SH-C-088	
+SH-I-2506	other:app-store-built-in-features	Shopify Capital	SH-S-7348	SH-C-091	
+SH-I-2507	other:app-store-built-in-features	Shopify Payments	SH-S-7349	SH-C-063	
+SH-I-2508	other:app-store-built-in-features	Shipping	SH-S-7350	SH-C-116	
+SH-I-2509	other:app-store-built-in-features	Shopify Tax	SH-S-7351	SH-C-100	
+SH-I-2510	other:app-store-built-in-features	Shopify Tax	SH-S-7352	SH-C-100	
+SH-I-2511	other:app-store-built-in-features	Shopify Tax	SH-S-7353	SH-C-100	
+SH-I-2512	other:app-store-built-in-features	Shopify Theme Store	SH-S-7354	SH-C-029	
+SH-I-2513	other:app-store-built-in-features	Sidekick, your AI cofounder	SH-S-7355	SH-C-152	
+SH-I-2514	other:app-store-built-in-features	Store credit	SH-S-7356	SH-C-026	
+SH-I-2515	other:merchant-legal-entities	My Store - entity	SH-S-7357	SH-C-004	
+SH-I-2516	other:merchant-legal-entities	Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NjQyMjY3MA	SH-S-7358	SH-C-004;SH-C-005	
+SH-I-2517	other:merchant-legal-entities	Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NjQyMzc4OQ	SH-S-7359	SH-C-004;SH-C-005	
+SH-I-2518	other:merchant-legal-entities	Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NzUyNTQ1Mg	SH-S-7360	SH-C-004	
+SH-I-2519	other:store-resource-limits	maxProductOptions	SH-S-7361		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2520	other:store-resource-limits	maxProductVariants	SH-S-7362		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2521	other:store-entitlements	ignoreReviewModalCooldown	SH-S-7363		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2522	other:store-entitlements	accountManagement	SH-S-7364	SH-C-032	
+SH-I-2523	other:store-entitlements	b2b	SH-S-7365	SH-C-037;SH-C-044	
+SH-I-2524	other:store-entitlements	sellsOnShopifyPlatforms	SH-S-7366	SH-C-033;SH-C-037	
+SH-I-2525	other:store-entitlements	shopPayExternalApi	SH-S-7367		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2526	other:store-entitlements	abandonedCartRecovery	SH-S-7368	SH-C-050	
+SH-I-2527	other:store-entitlements	productsCollections	SH-S-7369	SH-C-021	
+SH-I-2528	other:store-entitlements	discountCodes	SH-S-7370	SH-C-127	
+SH-I-2529	other:store-entitlements	products	SH-S-7371	SH-C-020;SH-C-021;SH-C-022;SH-C-023;SH-C-025	
+SH-I-2530	other:store-entitlements	inventory	SH-S-7372	SH-C-022;SH-C-023	
+SH-I-2531	other:store-entitlements	support	SH-S-7373		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2532	other:store-entitlements	checkoutExtensibility	SH-S-7374		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2533	other:store-entitlements	webCheckout	SH-S-7375	SH-C-047;SH-C-048	
+SH-I-2534	other:store-entitlements	customerSegmentation	SH-S-7376	SH-C-040	
+SH-I-2535	other:store-entitlements	giftCards	SH-S-7377	SH-C-025	
+SH-I-2536	other:store-entitlements	customers	SH-S-7378	SH-C-041	
+SH-I-2537	other:store-entitlements	partialOrderPayments	SH-S-7379		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2538	other:store-entitlements	policies	SH-S-7380	SH-C-034	
+SH-I-2539	other:store-entitlements	markets	SH-S-7381	SH-C-037;SH-C-044	
+SH-I-2540	other:store-entitlements	maximumLocations	SH-S-7382	SH-C-024	
+SH-I-2541	other:store-entitlements	metaobjects	SH-S-7383	SH-C-027;SH-C-028;SH-C-030;SH-C-031	
+SH-I-2542	other:store-entitlements	storefront	SH-S-7384	SH-C-029;SH-C-030;SH-C-031;SH-C-055;SH-C-129;SH-C-145;SH-C-146;SH-C-148	
+SH-I-2543	other:store-entitlements	customDomains	SH-S-7385	SH-C-033	
+SH-I-2544	other:store-entitlements	selfHostedDomain	SH-S-7386		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2545	other:store-entitlements	persistedSelfHostedDomain	SH-S-7387		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2546	other:store-entitlements	shipping	SH-S-7388	SH-C-114;SH-C-116;SH-C-121	
+SH-I-2547	other:store-entitlements	draftOrders	SH-S-7389		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2548	other:store-entitlements	dutiesAndImportTaxes	SH-S-7390		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2549	other:store-entitlements	taxPlatform	SH-S-7391		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2550	other:store-entitlements	shopifyTax	SH-S-7392	SH-C-100;SH-C-101;SH-C-103	
+SH-I-2551	other:store-entitlements	appDevelopment	SH-S-7393		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2552	other:store-entitlements	retail	SH-S-7394		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2553	other:store-entitlements	rollouts	SH-S-7395	SH-C-112	
+SH-I-2554	other:store-entitlements	shopifyFinance	SH-S-7396	SH-C-088;SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097;SH-C-098	
+SH-I-2555	other:store-entitlements	upsell	SH-S-7397		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2556	other:store-features	hasInitiatedOnboardingToBanking	SH-S-7398	SH-C-088;SH-C-099	
+SH-I-2557	other:store-features	hasEverOnboardedToBanking	SH-S-7399	SH-C-088	
+SH-I-2558	other:store-features	rbacEnabled	SH-S-7400	SH-C-009;SH-C-010;SH-C-012	
+SH-I-2559	other:store-features	argusConnect	SH-S-7401		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2560	other:store-features	avalaraAvatax	SH-S-7402		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2561	other:store-features	balanceCheckDepositEnabled	SH-S-7403	SH-C-088	
+SH-I-2562	other:store-features	balanceUsCashVoucherEnabled	SH-S-7404	SH-C-088	
+SH-I-2563	other:store-features	b2bDiscountsEligibilityEnabled	SH-S-7405		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2564	other:store-features	b2bEnabled	SH-S-7406	SH-C-044	
+SH-I-2565	other:store-features	bankAccountChangesLocked	SH-S-7407		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2566	other:store-features	canAccessBillPay	SH-S-7408	SH-C-098	
+SH-I-2567	other:store-features	centralLegalEntitiesEnabled	SH-S-7409	SH-C-004	
+SH-I-2568	other:store-features	customerAccountsMultipass	SH-S-7410		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2569	other:store-features	customerAuthenticationThirdParty	SH-S-7411		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2570	other:store-features	eligibleForAlertsFeedRollout	SH-S-7412		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2571	other:store-features	eligibleForEditionsLaunch	SH-S-7413		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2572	other:store-features	eligibleForMultiproviderPayoutUxUplift	SH-S-7414		Unplaced: no Shopify source held ties this key to a concern (routes naming it: payouts-next, payouts:details, payouts:list, which no concern's statements cover); values per store in notes.md, Unplaced keys
+SH-I-2573	other:store-features	eligibleForShopifyTax	SH-S-7415		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2574	other:store-features	existingMerchantEligibleForBanking	SH-S-7416	SH-C-088	
+SH-I-2575	other:store-features	preShopifyPaymentsEligibleForBalance	SH-S-7417		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2576	other:store-features	financesOverview	SH-S-7418	SH-C-059;SH-C-072	
+SH-I-2577	other:store-features	growthAgentEnabled	SH-S-7419		Unplaced: no Shopify source held ties this key to a concern (routes naming it: growth-configuration, growth:autopilot, which no concern's statements cover); values per store in notes.md, Unplaced keys
+SH-I-2578	other:store-features	landedCostIncoterms	SH-S-7420		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2579	other:store-features	perMarketIncoterms	SH-S-7421		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2580	other:store-features	hasInitiatedOnboardingToCredit	SH-S-7422	SH-C-090	
+SH-I-2581	other:store-features	hasOrgSettings	SH-S-7423	SH-C-003;SH-C-004;SH-C-009;SH-C-010;SH-C-016	
+SH-I-2582	other:store-features	multiCurrencyGatewayEnabled	SH-S-7424		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2583	other:store-features	multipass	SH-S-7425		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2584	other:store-features	netNewMerchantEligibleForBanking	SH-S-7426	SH-C-088	
+SH-I-2585	other:store-features	onboardedToBanking	SH-S-7427	SH-C-088	
+SH-I-2586	other:store-features	posEnabled	SH-S-7428		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2587	other:store-features	catalogRolloutsEnabled	SH-S-7429		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2588	other:store-features	catalogStatusOverrideChangesetsEnabled	SH-S-7430		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2589	other:store-features	productProtection	SH-S-7431	SH-C-051	
+SH-I-2590	other:store-features	shopPayProcessedByPartners	SH-S-7432		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2591	other:store-features	fulfillmentBatchingEligible	SH-S-7433	SH-C-061;SH-C-118	
+SH-I-2592	other:store-features	reports	SH-S-7434		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2593	other:store-features	reportsEditing	SH-S-7435		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2594	other:store-features	sellsSubscriptions	SH-S-7436		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2595	other:store-features	sidekickEnabled	SH-S-7437		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2596	other:store-features	shopifyPaymentsEnabled	SH-S-7438		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2597	other:store-features	storefront	SH-S-7439		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2598	other:store-features	tagsPerProductLimitEnabled	SH-S-7440		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2599	other:store-features	threeDSecureEligibilityForCountry	SH-S-7441		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2600	other:store-features	usingMarketsPro	SH-S-7442		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2601	other:store-features	managedMarkets	SH-S-7443		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2602	other:store-features	appliedSpellcastingEnabled	SH-S-7444		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2603	other:store-features	volumePricingEnabled	SH-S-7445		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2604	other:store-features	marketsHome	SH-S-7446		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2605	other:store-features	newMarketsPermissions	SH-S-7447		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2606	other:store-features	taxFilingEnabled	SH-S-7448	SH-C-104	
+SH-I-2607	other:store-features	sandbox	SH-S-7449		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2608	other:store-features	marketDrivenShipping	SH-S-7450	SH-C-106;SH-C-114	
+SH-I-2609	other:store-features	subCountryMarketsEnabled	SH-S-7451		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+SH-I-2610	other:store-features	marketDeliveryProfiles	SH-S-7452		Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys

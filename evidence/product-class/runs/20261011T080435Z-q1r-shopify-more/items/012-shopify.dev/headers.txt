@@ -1,0 +1,37 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 302 
+date: Sun, 11 Oct 2026 08:04:40 GMT
+content-length: 0
+location: /docs/api/admin-extensions/latest.md
+set-cookie: user-preferences=eyJhcGlfdmVyc2lvbl90ZW1wbGF0ZWRfY2FsdmVyIjoiMjAyNi0wNyJ9; Max-Age=31536000; Path=/; SameSite=Lax
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9cvOYIUO7MYcDHjl0vO30PjYNt1XierQrA%2Fk3y9XXYMBLw%2FkKe5QQtBkqUyi6xZ%2B18%2B4HIFSUYkBbU4sU2Hu05s6iWdyJ0pYGAM7lTdqw%2FxIvKgpLkuvX8ZVY%2BmW"}]}
+x-dc: gcp-us-east1,gcp-us-east1
+x-request-id: ecebb558-eca5-4f0d-9ed3-eda02261f795-1791705880
+server: cloudflare
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: BYPASS
+cf-ray: a48c5af64e9105c1-IAD
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 08:04:40 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: public, max-age=3600, stale-while-revalidate=82800
+etag: W/"93d9df91f9d3a107"
+link: <https://shopify.dev/docs/api/admin-extensions/latest>; rel="canonical"
+vary: Accept, Accept-Encoding
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9t9GygYHsLcVPAXx8NZLTWomNmadS%2BkHzD1xjhST1WBd869wVrlfmXNSNUttcop7McNCjmzryzPOIZcwbj7xIEwBHHx8dRVA9SAHBTo1mCuWI3J0PEYz58T%2BJM4t"}]}
+x-dc: gcp-us-east1,gcp-us-east1
+x-request-id: 4086cecd-42d7-4f69-b47a-00bbba955a85-1791705880
+server: cloudflare
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: MISS
+content-encoding: br
+cf-ray: a48c5af72f3405c1-IAD
+

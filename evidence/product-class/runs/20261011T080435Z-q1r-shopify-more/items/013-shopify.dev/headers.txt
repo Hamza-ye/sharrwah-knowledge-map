@@ -1,0 +1,35 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 302 
+date: Sun, 11 Oct 2026 08:04:40 GMT
+content-length: 0
+location: /docs/api/pos-ui-extensions/latest.md
+set-cookie: user-preferences=eyJhcGlfdmVyc2lvbl90ZW1wbGF0ZWRfY2FsdmVyIjoiMjAyNi0wNyJ9; Max-Age=31536000; Path=/; SameSite=Lax
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-east1
+x-request-id: 01a129fe-1759-74d0-ad21-d0135e736413-1791705880
+server: envoy
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+x-shopify-gclb-trace-timing: 1791705880.409
+via: 1.1 google
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 08:04:40 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: public, max-age=3600, stale-while-revalidate=82800
+cache-tag: shopifydev-txt,host-shopify.dev
+etag: W/"4013413ebb64ebdd"
+link: <https://shopify.dev/docs/api/pos-ui-extensions/latest>; rel="canonical"
+vary: Accept, Accept-Encoding
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-east1
+x-request-id: 01a129fe-1824-7237-83ad-eb01be72c701-1791705880
+server: envoy
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+x-shopify-gclb-trace-timing: 1791705880.612
+via: 1.1 google
+

@@ -1,0 +1,37 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 307 
+date: Sun, 11 Oct 2026 08:04:37 GMT
+location: /en/manual/apps/about-apps.md
+vary: Accept
+set-cookie: _merchant_essential=:AaEp_gv5AAEAXicfhM4W4PlY87TT9pBYZECWlY70oKKXhsp8OBYDwurAUe1SC6k8VwiEXm1rq8KDNIeBT5UzKdd6DdYYvK8DeHDGkeLOHGGqvAMrUy30MSzgxRDjaGOczdJ5fYTbO49OicNUfNzNu5oY2fQA2hnldAbNpBugC1pxmeJ35rW1RoPdktU7aK1SxqxuJiH86O2VD0cwvlYEzs7wC7THFixkaz1QCehC-u3Rmg:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+set-cookie: _merchant_analytics=:AaEp_gv6AAEAdPKWZsEeBsfCHGqKpBtKft_-rGlmfS4B1sNVtVu4F6ui-M51BNfDIBc-NPfbH4fJRd2zjj60kuJHOe9xadYAJvdTLTOoSpOkp2zS3nUzV_Ijww:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-central1
+x-request-id: 01a129fe-0b12-7324-b54c-7a5f6430f65f-1791705877
+server: envoy
+x-shopify-gclb-trace-timing: 1791705877.266
+via: 1.1 google
+content-length: 0
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 08:04:37 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: max-age=900, must-revalidate
+etag: H3JExD-dhFQnvl5Inhv_Rm7Ai034WW6HgutKHbzyLpI-markdown
+vary: Accept, Accept-Encoding
+x-remix-response: yes
+set-cookie: _merchant_essential=:AaEp_gxiAAEAQgk2jkvcNe6mJ17X6boWNi7zTTE90UR1n893NrYQT-4mLl67fWH98FrnQdd1JVWTHiGUKQoVlvRAd4DSP22L383DvcdRUurnlA1yhzvZ7_zMM4Hgymt-65VcOIwuVyMyMjGcbe-v0T84DP4L-N8LkWP3Ln0svi9DlS6GIjjgT9uKgLnSNAMXuIpKuYy0B1SmXv7zMBAMwT8glwmEEmU:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+set-cookie: _merchant_analytics=:AaEp_gxnAAEAw-DiQpUC47hz83jMvHYNeZC_uAEqb66Yj0ccpogs7qmLCzUO1CUwe9p7d9Jb6UmvdpluouPHyegVWRfByuMCkP2INXRVK3nO03omBp-RqGVmcw:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+content-encoding: br
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-central1
+x-request-id: 01a129fe-0c49-71db-b4b6-868cc238c68c-1791705877
+server: envoy
+x-shopify-gclb-trace-timing: 1791705877.577
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+

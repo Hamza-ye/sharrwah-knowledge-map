@@ -1,0 +1,202 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Collaborator accounts
+
+Collaborators are [Shopify Partners](/manual/your-account/working_with_Shopify_Partners) who you've allowed to access your store or organization. Collaborator accounts are similar to regular user accounts, but offer additional benefits. For example, Shopify Partners have access to training courses, Shopify's product roadmap, and other resources to help you run your business. Collaborators can log in to your store from their Dev Dashboard or from the Shopify mobile app. Collaborator access to your store can be managed and removed from your Shopify admin. Collaborators don't count towards your store's [user limit](/manual/your-account/users/users-plan-requirements).
+
+Only [eligible users](/manual/your-account/users/users-plan-requirements) can access and manage collaborator accounts.
+
+## Considerations for collaborator accounts
+
+Review the following considerations for adding collaborator accounts to your store or organization.
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;To help ensure the security of your store, Partners must activate &lt;a href="/en/manual/your-account/logging-in/secure-sign-in"&gt;two-step authentication&lt;/a&gt; to use a collaborator account. Two-step authentication helps prevent security breaches that can lead to unauthorized store access. Without two-step authentication activated, collaborators cannot log in to your store.&lt;/p&gt;
+&lt;/aside&gt;
+
+### Collaborators accounts for both stores and organizations
+
+* You can [create roles](/manual/your-account/users/roles/manage-roles) for collaborators with the permissions that they require. For example, if a collaborator requires access to your shipping profiles, then you need to create a role with the **View products** and **Manage settings** permissions. Collaborators can request and be given all available permissions in your store. Carefully consider which permissions a collaborator needs to complete their tasks. Learn more about [store-level permissions for roles](/manual/your-account/users/roles/permissions/store-permissions).
+* You must provide the collaborator with [a request code](/manual/your-account/users/security/collaborator-accounts#collaborator-codes). The collaborator must enter this code when they submit a collaborator request. Only the Partners who you share the code with can request access to your store. You can also [generate a new access code](/manual/your-account/users/security/collaborator-accounts#change-code), so that anyone with an outdated access code can no longer request access to your store.
+* Collaborators don't have access to the Shopify POS app or the Point of Sales channel in the admin.
+* You can't transfer store or organization ownership to a collaborator.
+* On the **Users** index page of your Shopify admin, filter by **User type** &gt; **Collaborators** filter to display all the collaborator accounts on your store or organization.
+* If a collaborator user hasn't logged into your store within 90 days, then their access will automatically expire. You can reinstate access for a collaborator user on the **Users and permissions** page by clicking on the user account, clicking on Actions and **Reactivate user**.
+
+### Collaborators accounts for organizations
+
+* Organization owners as well as users with the **Organization administrator** organization role can edit and accept the auto-generated collaborator user role, or assign existing roles to a collaborator.
+* Store owners and users with the **Store user administrator** organization role can only assign existing roles to a collaborator, but not edit or accept the auto-generated user role.
+* Users with the **Organization user administrator** organization role can only assign existing roles to a collaborator, but not edit or accept the auto-generated user role.
+* You can't assign all roles to collaborators. Roles for collaborator accounts have the following restrictions:
+  * You can't assign organization roles to collaborators.
+  * You can't assign the **Store user administrator** organization role to collaborators. Learn more about [administrator roles](/manual/your-account/users/roles/roles-managed-by-shopify#administrator).
+* If your organization is on the Shopify Plus plan, then you can't assign collaborators to [groups](/manual/your-account/users/groups).
+* Collaborator accounts are created per store based on the store access requests from the collaborators. The same collaborator can request access to multiple stores in your organization from their Dev Dashboard.
+  * If you approve collaborator requests for multiple stores in your organization, then you'll have multiple collaborator accounts with the same name in your user index.
+  * You can't grant collaborators access to multiple stores.
+  * You can bulk assign the same user role to all of the collaborator user accounts across your organization.
+
+### Collaborator accounts for single stores
+
+* Only the following types of users can view collaborator access requests or grant collaborator access to a single store:
+  * The store owner.
+  * Users with the **Administrator** store role.
+* You can't assign the **Administrator** store role to collaborators.
+
+## Manage collaborator requests {#manage-collaborator-requests}
+
+After a Shopify Partner submits a request to access your store, you receive an email about the request and a notification on your Shopify Home. You can manage collaborator requests in the **Users** section of your Shopify admin by [filtering users with the **Requests** status](/manual/your-account/users/searching-and-filtering-users).
+
+After a collaborator has been added to your store, you can change their assigned role at any time using the same steps as managing roles for other users. Learn more about [managing roles](/manual/your-account/users/roles/manage-roles).
+
+Each collaborator request has an auto-generated user role based on the permissions requested by the collaborator. By default, the auto-generated role uses a `&lt;Collaborator name&gt;x&lt;Store name&gt;` naming convention. You can rename this role.
+
+You can accept or reject the request.
+
+If a collaborator user hasn't logged into your store within 90 days, then their access will automatically expire. You can reinstate access for a collaborator user on the **Users and permissions** page by clicking on the user account, clicking on Actions and **Reactivate user**.
+
+### Review partner details on a collaborator request {#review-partner-details}
+
+When a Shopify Partner requests collaborator access to your store, additional details about the partner and their request might be displayed. These details give you context to help you decide whether to accept the request and which permissions to grant.
+
+The following details might be displayed:
+
+* **Partner since**: The month and year that the partner's Shopify Partner account was created.
+* **Active collaborations**: The approximate range of merchants that the partner actively collaborates with.
+* **Signed up from**: The country where the partner signed up for their Shopify Partner account.
+* **Request sent from**: The country that the collaborator request was sent from. If the request was sent from an IP address that's associated with a virtual private network (VPN) or a similar service, then **(possible VPN)** is displayed after the country name.
+
+Some details might not be available for every request.
+
+When **(possible VPN)** is displayed, the country that the request was sent from might not be the country where the partner is located. Partners use VPNs for legitimate reasons, such as connecting to a company network.
+
+Before you accept a request, take the following steps:
+
+* Confirm that you recognize the partner and expected the request.
+* Review the permissions that the partner requested.
+* Contact the partner directly if any details are unexpected.
+* Grant only the permissions that the partner needs for their work.
+
+Partner details don't guarantee a partner's identity, work quality, or intent, and the decision to accept a request is always yours. An unexpected location, a missing detail, or a possible VPN doesn't necessarily mean that a request is unsafe, but it's a reason to confirm the request with the partner before you accept it.
+
+### Accept a collaborator request
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;If an error message displays with the text &amp;quot;The role name already exists&amp;quot; when you accept a collaborator request, then you can remove the auto-generated role and assign one or more existing roles to the collaborator to grant them access.&lt;/p&gt;
+&lt;/aside&gt;
+
+To accept a collaborator request, the collaborator must have an assigned user role. Before you accept the request, you can review and edit permissions for the auto-generated user role, or assign one or more existing roles, and then remove the auto-generated role.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Users**](https://admin.shopify.com/settings/organization-account).
+
+2. On the **Users** index page, click the **Requests** status to filter open collaborator requests.
+3. Click the collaborator request that you want to manage.
+4. In the **Roles** section, manage the roles for the collaborator:
+  * Review the auto-generated user role. You can edit any permissions that you want to adjust, and change the name of the user role.
+  * Assign one or more existing roles to the collaborator.
+  * Create a new user role and assign it to the collaborator.
+5. Click **Accept request**.
+
+### Reject a collaborator request
+
+If you reject a collaborator request, then the auto-generated user role for the collaborator is also removed.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Users**](https://admin.shopify.com/settings/organization-account).
+
+2. On the **Users** index page, click the **Requests** status to filter open collaborator requests.
+3. Click the collaborator request that you want to manage.
+4. Click **Reject request**.
+
+## Collaborator access code {#collaborator-codes}
+
+You can assign a collaborator code in the [**Security**](https://admin.shopify.com/settings/organization-account/security) section of your **Users** page in your Shopify admin.
+
+After the Partner, freelancer, or agency submits their collaborator request, you can [accept or reject the request](/manual/your-account/users/security/collaborator-accounts#manage-collaborator-requests) on the **Users** page of your Shopify admin.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Users**](https://admin.shopify.com/settings/organization-account).
+
+2. Do one of the following:
+   * If your store is part of an organization, then click **Users**.
+   * If your store is not part of an organization, then click **Users &amp; permissions**.
+3. Click **Security**.
+4. Click the 4-digit code to copy it to your clipboard.
+5. Provide the 4-digit code to your collaborator.
+
+## Change collaborator access code {#change-code}
+
+You can change your collaborator request code at any time by generating a new code. After you generate a new collaborator request code, any old codes no longer work.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Users**](https://admin.shopify.com/settings/organization-account).
+
+2. Click **Security**.
+3. In the **Collaborators** section, click **Generate new code**.
+
+## Remove a collaborator account {#remove-collaborators}
+
+You can permanently remove a collaborator account from your store. You can't undo this action.
+
+If you want to give a collaborator access again, then the collaborator needs to resend their collaborator request.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Users**](https://admin.shopify.com/settings/organization-account).
+
+2. Do one of the following:
+   * If your store is part of an organization, then click **Users**.
+   * If your store is not part of an organization, then click **Users &amp; permissions**.
+3. Click the collaborator's name.
+4. Do one of the following:
+   * If your store is part of an organization, then click **Actions** &gt; **Remove**.
+   * If your store is not part of an organization, then in the **Remove collaborator account** section, click **Remove *collaborator name***.
+5. In the confirmation dialog, click **Remove**.
+
+The collaborator account is removed permanently from your store, and is no longer available from your Shopify admin. The collaborator's name and actions are still listed in any relevant timelines, such as the [store activity log](/manual/shopify-admin/activity-logs#store-activity-log) and [order timeline](/manual/fulfillment/managing-orders/managing-order-details#view-an-orders-timeline).
+
+## Collaborator FAQs {#collaborator-FAQs}
+
+* [What permissions should I give the freelancer or agency?](/manual/your-account/users/security/collaborator-accounts#what-permissions-should-i-give)
+* [Can I control a collaborator's access to specific apps and channels?](/manual/your-account/users/security/collaborator-accounts#can-i-control-a-collaborators-access)
+* [Can a freelancer use a collaborator permission to log in to the Shopify app?](/manual/your-account/users/security/collaborator-accounts#can-a-freelancer-use-a-collaborator-account)
+* [I accidentally rejected a request from a freelancer or agency, how can I get it back?](/manual/your-account/users/security/collaborator-accounts#accidentally-rejected-a-request)
+* [What should I do when I'm finished working with a collaborator?](/manual/your-account/users/security/collaborator-accounts#i-m-finished-working-with-a-collaborator)
+* [How do I report an issue with a freelancer or agency?](/manual/your-account/users/security/collaborator-accounts#how-do-i-report-an-issue)
+* [I got an email from a freelancer or agency that I don't know or don't want to work with, what should I do?](/manual/your-account/users/security/collaborator-accounts#email-from-a-freelancer-or-agency-that-i-don-t-know)
+* [How do I reactivate an expired collaborator?](/manual/your-account/users/security/collaborator-accounts#reactivate-expired-collaborator)
+* [I got an email from a freelancer or agency that I don't know or don't want to work with, what should I do?](/manual/your-account/users/security/collaborator-accounts#email-from-a-freelancer-or-agency-that-i-don-t-know)
+
+### What permissions should I give the freelancer or agency? {#what-permissions-should-i-give}
+
+Give only the permissions that you feel comfortable giving. If a freelancer or agency asks for certain permissions, then there might be a good reason. If you aren't sure, then ask the freelancer or agency why they need the permissions.
+
+### Can I control a collaborator's access to specific apps and channels? {#can-i-control-a-collaborators-access}
+
+Yes. When you approve access, you can [assign permissions for specific apps and channels](/manual/your-account/users/roles/permissions/store-permissions#apps-and-channels-permissions) to give a collaborator access to only certain apps and channels.
+
+### Can a freelancer use a collaborator account to log in to the Shopify app? {#can-a-freelancer-use-a-collaborator-account}
+
+Yes. However, collaborators must log in to your store at least one time through the **Stores** page in their Dev Dashboard before they can log in using the [Shopify app](https://www.shopify.com/install/detect).
+
+### I accidentally rejected a request from a freelancer or agency, how can I get it back? {#accidentally-rejected-a-request}
+
+Ask the freelancer or agency to contact Partner Support. Partner Support will adjust the Partner's account so the Partner can send you another request.
+
+### What should I do when I'm finished working with a collaborator? {#i-m-finished-working-with-a-collaborator}
+
+If you no longer need help from the collaborator, then [remove their account](/manual/your-account/users/security/collaborator-accounts#remove-collaborators). Otherwise, if a collaborator user hasn't logged into your store within 90 days, then their access will automatically expire.
+
+### How do I reactivate an expired collaborator? {#reactivate-expired-collaborator}
+You can reinstate access for a collaborator user via the **Users and permissions** page within your Admin settings, by clicking on the user account, clicking on Actions and **Reactivate user**.
+
+### How do I report an issue with a freelancer or agency? {#how-do-i-report-an-issue}
+
+First, make sure that the problem isn't because of a communication issue or mismatched expectations. Shopify isn't directly responsible for issues with freelancers or agencies. However, if you believe that a Shopify Partner isn't following the [Partner Program Agreement](https://www.shopify.ca/partners/terms), then fill out the [Report a Partner violation form](https://www.shopify.com/legal/tools/report-an-issue/report-a-partner-violation).
+
+### I got an email from a freelancer or agency that I don't know or don't want to work with, what should I do? {#email-from-a-freelancer-or-agency-that-i-don-t-know}
+
+Review the request and confirm that you don't want to work with them. If you aren't expecting a request, or if you don't recognize the sender, then you shouldn't accept their request.
+</pre></body></html>

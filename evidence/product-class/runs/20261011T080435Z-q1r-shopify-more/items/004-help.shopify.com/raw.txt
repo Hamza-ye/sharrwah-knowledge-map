@@ -1,0 +1,69 @@
+# Set a limit to the maximum quantity of items per cart
+
+When a customer tries to add more items to their cart than you have in stock, the cart automatically reduces the quantity to match your available inventory. This helps prevent overselling, but it can also unintentionally disclose how much stock you have to your customers.
+
+To protect your inventory information, you can set a limit on how many of each product a customer can add to their cart in one order.
+
+The maximum quantity applies to each product's variants independently, not to the product or cart as a whole. For example, if you sell a t-shirt in multiple colors (red, blue, and green) and set a maximum limit of 30, then customers can order up to 30 t-shirts in each color variant. This means that they could potentially buy 30 red, 30 blue, and 30 green t-shirts in one order, as each color is treated separately.
+
+## Recommended quantity limits for your store
+
+A recommended limit for your store displays in the **Add-to-cart limit** setting with a suggested maximum quantity limit based on your sales history:
+
+* **More than 250 sales**: If you've made over 250 sales, then the recommended limit for your store is calculated based on your store's order data. This limit includes a surplus to account for orders with higher-than-average quantities.
+* **Fewer than 250 sales**: If you've made less than 250 sales, then the default recommended limit for your store is set to 50.
+
+The recommended limit is periodically updated as more data becomes available in your store.
+
+You can choose to set a limit that's higher or lower than the recommended amount. However, setting a limit that's too low can negatively impact your sales.
+
+## Exceptions to the add-to-cart limit
+
+The add-to-cart limit applies to all products, all customers, and all carts, except in the following scenarios:
+
+* When the cart is created in the [Shopify POS](/manual/sell-in-person).
+* When the cart is created as a [draft order](/manual/fulfillment/managing-orders/create-orders).
+* When the cart contains products in [B2B catalogs](/manual/b2b/catalogs) that have specific [quantity rules](/manual/b2b/catalogs/quantity-pricing).
+* When the customer is logged in with a [B2B customer profile](/manual/b2b/companies-and-customers/adding-customers).
+* When the product or variant has the [**Inventory tracked** setting](/manual/inventory-and-locations/setup/initial-inventory-setup) deactivated.
+* When the product or variant has the [**Continue selling when out of stock** setting](/manual/inventory-and-locations/setup/selling-when-out-of-stock) activated.
+
+## Set an add-to-cart limit
+
+The maximum quantity per item setting is active by default. You can deactivate or reactivate the maximum limit and modify the maximum value at any time.
+
+#### Steps:
+
+<div class="sections"><details open><summary id="desktop">Desktop</summary><ol>
+<li><p>From your Shopify admin, go to <strong>Settings</strong> &gt; <a href="https://admin.shopify.com/settings/checkout"><strong>Checkout</strong></a>.</p>
+</li>
+<li><p>In the <strong>Advanced preferences</strong> section, click <strong>Add-to-cart limit</strong>.</p>
+</li>
+<li><p>In the <strong>Add-to-cart limit</strong> dialog, configure your add-to-cart limit settings:</p>
+<ol>
+<li>Activate the <strong>Set a maximum quantity per item that can be added to a cart</strong> option.</li>
+<li>In the <strong>Limit</strong> field, enter the maximum quantity per item. This must be a whole number. The recommended limit displays beneath the <strong>Limit</strong> field.</li>
+<li>Click <strong>Done</strong>.</li>
+</ol>
+</li>
+<li><p>Click <strong>Save</strong>.</p>
+</li>
+</ol>
+</details><details><summary id="mobile">Mobile</summary><ol>
+<li><p>From the <a href="https://www.shopify.com/install/detect">Shopify app</a>, tap <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" />, and then tap <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/SettingsIcon.svg" alt="Settings" class="admin-icon" /> <strong>Settings</strong>.</p>
+</li>
+<li><p>In the <strong>Store settings</strong> section, tap <strong>Checkout</strong>.</p>
+</li>
+<li><p>In the <strong>Advanced preferences</strong> section, tap <strong>Add-to-cart limit</strong>.</p>
+</li>
+<li><p>In the <strong>Add-to-cart limit</strong> dialog, configure your add-to-cart limit settings:</p>
+<ol>
+<li>Activate the <strong>Set a maximum quantity per item that can be added to a cart</strong> option.</li>
+<li>In the <strong>Limit</strong> field, enter the maximum quantity per item. This must be a whole number. The recommended limit displays beneath the <strong>Limit</strong> field.</li>
+<li>Tap <strong>Done</strong>.</li>
+</ol>
+</li>
+<li><p>Tap <strong>Save</strong> or <strong>&#10003;</strong>.</p>
+</li>
+</ol>
+</details></div>

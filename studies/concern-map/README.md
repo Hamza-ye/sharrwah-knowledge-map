@@ -8,7 +8,7 @@ The answer to `questions/Q1-concern-map.md` as it is being built. This file says
 | --- | --- | --- |
 | WooCommerce | 654 entries, 118 concerns | 963 of 963 found |
 | Salla | 2,620 entries, 148 concerns | 2,828 of 2,828 found |
-| Shopify | 2,428 entries, 196 concerns (run paused) | 3,192 of 3,192 found (2,322 in observed-sh, 870 in its 152 captured pages) |
+| Shopify | 2,610 entries, 198 concerns. The re-pass is done: 3,005 statements and 249 gaps, with 741 of 990 cells stated | 5,055 of 5,055 found |
 
 **What stands:**
 - the inventories, built from the platforms' own lists;
@@ -33,7 +33,7 @@ None of them changed any file.
 
 1. **Capture Shopify's cited pages and check its quotes.** Done: all 152 pages are captured, and all 3,192 quotes are found.
 2. **The founder decides how Q1's placement step is reshaped.** The proposal: each concern's placement is recorded as what the platform states in its own structures, with no fixed value lists. Examples are a route's stated permissions and entitlements, each store's values for them, a plan line, an access line, or a clause in the terms, each quoted with its identifiers.
-3. **Shopify re-pass, against observed-sh at `e49840729`.**
+3. **Shopify re-pass, against observed-sh at `e49840729`.** Done. `gaps-to-close.md` lists the gaps that someone can close.
    - First, joins by script on Shopify's own identifiers:
      - concern to router sections and routes, then to stated eligibility, then to store values;
      - concern to API resources, then to access lines;

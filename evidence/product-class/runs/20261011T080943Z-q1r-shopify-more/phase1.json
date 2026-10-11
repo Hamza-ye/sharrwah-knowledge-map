@@ -1,0 +1,34 @@
+[
+{
+"n": 1,
+"url": "https://help.shopify.com/en/manual/compliance/intellectual-property/copyright-policy.md",
+"dir": "items/001-help.shopify.com",
+"fetched_at": "2026-10-11T08:09:43Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.shopify.com/en/manual/compliance/intellectual-property/copyright-policy.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2167,
+"cited_in": [],
+"raw_file": "raw.txt",
+"sha256": "f6f6803584dcf0209eece66a33e7fcc26a063bb608615e0bc865f59e7a60c7d1",
+"raw_ext": "txt"
+},
+{
+"n": 2,
+"url": "https://www.shopify.com/legal/compliance/reports",
+"dir": "items/002-shopify.com",
+"fetched_at": "2026-10-11T08:09:44Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://www.shopify.com/legal/compliance/reports",
+"content_type": "text/html; charset=utf-8",
+"bytes": 54855,
+"cited_in": [],
+"raw_file": "raw.html",
+"sha256": "ec912065a38cbb5cc187553a0927b343853da7b885ecd52ca6efb91c41402808",
+"raw_ext": "html"
+}
+]

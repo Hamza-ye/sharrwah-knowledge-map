@@ -1,0 +1,20 @@
+{
+ "n": 1,
+ "url": "https://collabs.shopify.com/terms",
+ "dir": "items/001-collabs.shopify.com",
+ "fetched_at": "2026-10-11T08:04:35Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://collabs.shopify.com/terms",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 6875,
+ "cited_in": [
+  "SH-S-7467",
+  "SH-S-7468",
+  "SH-S-7473"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0c5776b7bbbabe3af86f5abfb706ee3706524600fca28edab5d8aa871cc77799",
+ "raw_ext": "html"
+}

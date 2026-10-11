@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "url": "https://help.shopify.com/en/manual/online-sales-channels/shopify-collective/suppliers/payments.md",
+ "dir": "items/008-help.shopify.com",
+ "fetched_at": "2026-10-11T08:04:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/online-sales-channels/shopify-collective/suppliers/payments.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2772,
+ "cited_in": [
+  "SH-S-7469"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "ce9e4207ef725395e68d3d2fdede6b6ff8778e7c48427d92541a5c87f9294c02",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://help.shopify.com/en/manual/checkout-settings/add-to-cart-limit.md",
+ "dir": "items/004-help.shopify.com",
+ "fetched_at": "2026-10-11T08:04:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/checkout-settings/add-to-cart-limit.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1607,
+ "cited_in": [
+  "SH-S-7479"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "0dfc88763d21ad97e7e23875873e1d1cbeffa9677b714c24ff57c20b16deaf7d",
+ "raw_ext": "txt"
+}

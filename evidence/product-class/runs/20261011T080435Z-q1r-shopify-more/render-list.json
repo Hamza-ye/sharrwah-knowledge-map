@@ -1,0 +1,86 @@
+[
+{
+"n": 1,
+"url": "https://collabs.shopify.com/terms",
+"dir": "items/001-collabs.shopify.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://help.shopify.com/en/manual/ai-powered-tools/shopify-magic.md",
+"dir": "items/002-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://help.shopify.com/en/manual/apps/app-types/custom-apps.md",
+"dir": "items/003-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://help.shopify.com/en/manual/checkout-settings/add-to-cart-limit.md",
+"dir": "items/004-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://help.shopify.com/en/manual/custom-data/overview.md",
+"dir": "items/005-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://help.shopify.com/en/manual/international/localization-and-translation.md",
+"dir": "items/006-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/shop/product-reviews.md",
+"dir": "items/007-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/shopify-collective/suppliers/payments.md",
+"dir": "items/008-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://help.shopify.com/en/manual/sell-in-person/hardware/cash-drawer.md",
+"dir": "items/009-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://help.shopify.com/en/manual/shopify-admin/productivity-tools/file-uploads.md",
+"dir": "items/010-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://help.shopify.com/en/manual/your-account/users/security/collaborator-accounts.md",
+"dir": "items/011-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://shopify.dev/docs/api/admin-extensions.md",
+"dir": "items/012-shopify.dev",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://shopify.dev/docs/api/pos-ui-extensions.md",
+"dir": "items/013-shopify.dev",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://www.shopify.com/legal/shop-campaigns-merchant-terms",
+"dir": "items/014-shopify.com",
+"keep_body": false
+}
+]
