@@ -38,6 +38,14 @@ LISTS = {"api-resources", "access-scopes", "webhook-topics", "settings", "admin-
 PLACEMENTS = ["software", "decides", "legal", "boundary", "reason"]
 STATUSES = {"shown", "not shown"}
 ACCESS = {"md", "raw", "rendered", "local"}
+PARTIES = {  # more than one of these in one value suggests the concern has parts placed differently
+    "decides": {"platform at build": r"platform at build|at build", "operator": r"\boperator\b", "merchant": r"\bmerchant",
+                "buyer": r"\bbuyer|\bcustomer", "outside rules": r"outside rules|\blaw\b|regulat", "app developer": r"app developer|developer"},
+    "legal": {"platform company": r"platform company", "separate entity": r"separate entity", "partner": r"\bpartner",
+              "app developer": r"app developer", "merchant": r"\bmerchant", "buyer": r"\bbuyer"},
+    "software": {"core": r"\bcore\b", "separate service": r"separate service|product line",
+                 "extension point": r"extension point|\bapp\b|function|provider slot", "outside": r"outside the platform"},
+}
 VOCAB = {  # key words of the agreed values; anything else must start with "other:"
     "software": ["core", "separate service", "product line", "extension point", "outside the platform"],
     "decides": ["platform at build", "operator", "merchant", "buyer", "outside rules"],
@@ -287,6 +295,9 @@ for plat, pfx in PLATFORMS.items():
             v = r["value"].lower()
             if not any(k in v for k in VOCAB[r["placement"]]):
                 issues.append(("warning", "placements", key, f"value '{r['value'][:80]}' matches no agreed value and doesn't start with other:"))
+            named = [k for k, rx in PARTIES[r["placement"]].items() if re.search(rx, v)]
+            if len(named) > 1:
+                issues.append(("review", "placements", key, f"value names {', '.join(named)}: split the concern if its parts sit with different parties"))
     for c in con_ids:
         for p in PLACEMENTS:
             rows = per.get((c, p), [])
