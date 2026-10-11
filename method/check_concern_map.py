@@ -36,8 +36,9 @@ HEADERS = {
 }
 NEW_HEADERS = {  # the reshaped placement step (questions/Q1-concern-map.md, "Changed on 11 October 2026")
     "statements.tsv": ["concern_id", "placement", "structure", "identifier", "statement", "scope", "cite_ids", "note"],
-    "gaps.tsv": ["concern_id", "placement", "what_would_show_it", "means", "who_can", "route", "why_not_held"],
+    "gaps.tsv": ["concern_id", "placement", "what_would_show_it", "means", "who_can", "route", "why_not_held", "gap_kind"],
 }
+GAP_KINDS = {"page not read", "observation needed", "searched, not found", "stated only in general terms"}
 NEW_PLACEMENTS = ["where", "decides", "responsible", "boundary", "reason"]
 WHO_CAN = {"agent", "founder", "either"}
 LISTS = {"api-resources", "access-scopes", "webhook-topics", "settings", "admin-navigation", "plan-features",
@@ -320,37 +321,16 @@ for plat, pfx in PLATFORMS.items():
             named = [k for k, rx in PARTIES[r["placement"]].items() if re.search(rx, v)]
             if len(named) > 1:
                 issues.append(("review", "placements", key, f"value names {', '.join(named)}: split the concern if its parts sit with different parties"))
+    repass = os.path.exists(os.path.join(d, "statements.tsv")) or os.path.exists(os.path.join(d, "gaps.tsv"))
     for c in con_ids:
         for p in PLACEMENTS:
             rows = per.get((c, p), [])
+            if repass:
+                continue  # placements.tsv is a record of the first run once the re-pass exists
             if not rows:
                 issues.append(("error", "placements", f"{c}/{p}", "no row for this placement"))
             elif len([x for x in rows if x["status"] == "shown"]) > 1:
                 issues.append(("review", "placements", f"{c}/{p}", f"{len(rows)} rows: sources differ or the concern needs splitting"))
-
-    quotes = []
-    for r in cit:
-        cid = r["cite_id"]
-        if not r["source"]:
-            issues.append(("error", "citations", cid, "source is empty"))
-        if not r["quote"]:
-            issues.append(("error", "citations", cid, "quote is empty"))
-        if "..." in r["quote"] or "…" in r["quote"]:
-            issues.append(("warning", "citations", cid, "quote contains an ellipsis"))
-        if len(r["quote"]) > 400:
-            issues.append(("warning", "citations", cid, f"quote is {len(r['quote'])} characters"))
-        if r["access_path"] not in ACCESS:
-            issues.append(("error", "citations", cid, f"access_path '{r['access_path']}' is not md, raw, rendered or local"))
-        if not r["source_date"]:
-            issues.append(("error", "citations", cid, "source_date is empty"))
-        if not r["accessed"]:
-            issues.append(("warning", "citations", cid, "accessed is empty"))
-        if cid not in used_cites:
-            issues.append(("warning", "citations", cid, "not used by any inventory entry or placement"))
-        if re.match(r"^https?://", r["source"]):
-            urls[r["source"].split("#")[0]].add(cid)
-        result, why, share = check_quote(r["quote"], r["source"]) if r["quote"] and r["source"] else ("unresolved", "no quote or source", "")
-        quotes.append((cid, result, why, share, r["source"], r["quote"][:200]))
 
     st_path, gp_path = os.path.join(d, "statements.tsv"), os.path.join(d, "gaps.tsv")
     if os.path.exists(st_path) or os.path.exists(gp_path):
@@ -387,6 +367,8 @@ for plat, pfx in PLATFORMS.items():
                 issues.append(("error", "gaps", key, f"placement '{r['placement']}' is not one of {NEW_PLACEMENTS}"))
             if r["who_can"] not in WHO_CAN:
                 issues.append(("error", "gaps", key, f"who_can '{r['who_can']}' is not agent, founder or either"))
+            if r.get("gap_kind", "") not in GAP_KINDS:
+                issues.append(("error", "gaps", key, f"gap_kind '{r.get('gap_kind', '')}' is not one of {sorted(GAP_KINDS)}"))
             for col in ("what_would_show_it", "means", "route", "why_not_held"):
                 if not r[col]:
                     issues.append(("error", "gaps", key, f"{col} is empty"))
@@ -398,6 +380,30 @@ for plat, pfx in PLATFORMS.items():
                     issues.append(("error", "coverage", f"{c}/{p}", "no statement and no gap"))
         summary.append(f"{plat} re-pass: statements {len(st)}, gaps {len(gp)}; concern x placement cells with a statement: "
                        f"{sum(1 for v in cover.values() if v[0])} of {len(con_ids) * len(NEW_PLACEMENTS)}")
+    quotes = []
+    for r in cit:
+        cid = r["cite_id"]
+        if not r["source"]:
+            issues.append(("error", "citations", cid, "source is empty"))
+        if not r["quote"]:
+            issues.append(("error", "citations", cid, "quote is empty"))
+        if "..." in r["quote"] or "…" in r["quote"]:
+            issues.append(("warning", "citations", cid, "quote contains an ellipsis"))
+        if len(r["quote"]) > 400:
+            issues.append(("warning", "citations", cid, f"quote is {len(r['quote'])} characters"))
+        if r["access_path"] not in ACCESS:
+            issues.append(("error", "citations", cid, f"access_path '{r['access_path']}' is not md, raw, rendered or local"))
+        if not r["source_date"]:
+            issues.append(("error", "citations", cid, "source_date is empty"))
+        if not r["accessed"]:
+            issues.append(("warning", "citations", cid, "accessed is empty"))
+        if cid not in used_cites:
+            issues.append(("warning", "citations", cid, "not used by any inventory entry, placement or statement"))
+        if re.match(r"^https?://", r["source"]):
+            urls[r["source"].split("#")[0]].add(cid)
+        result, why, share = check_quote(r["quote"], r["source"]) if r["quote"] and r["source"] else ("unresolved", "no quote or source", "")
+        quotes.append((cid, result, why, share, r["source"], r["quote"][:200]))
+
     with open(os.path.join(OUT, f"{plat}-issues.tsv"), "w", encoding="utf-8") as f:
         f.write("level\tfile\tid\tissue\n")
         for lv, fl, i, x in issues:

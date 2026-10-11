@@ -77,7 +77,12 @@ The measurements are in `studies/concern-map/measurements-2026-10-11.md`. The in
    - the means: fetch or read a page, record a journey, open a store on a plan, save a page from a browser, or ask the platform;
    - who can do it: an agent, the founder, or either;
    - the route: the URL, page, journey, plan or account;
-   - why it isn't held yet.
+   - why it isn't held yet;
+   - its kind, which says whether it can be closed:
+     - `page not read`: a named page or file that would likely state it hasn't been read yet;
+     - `observation needed`: a journey, a store on a plan, a saved page, or a question to the platform would show it;
+     - `searched, not found`: the likely pages and structures were read, and none states it;
+     - `stated only in general terms`: the platform's terms speak only of its services in general. Applying such a clause to one concern would be inference, so it isn't recorded as a statement.
 
    The founder can then see which gaps someone could close, and how.
 5. **Nothing inferred.** No inference goes into a statement. A note may hold inference marked as such, and it never counts.
@@ -88,7 +93,7 @@ The measurements are in `studies/concern-map/measurements-2026-10-11.md`. The in
 | File | Columns |
 | --- | --- |
 | `statements.tsv` | `concern_id` · `placement` (where, decides, responsible, boundary, reason) · `structure` (the platform's structure or document as held, e.g. `structures/shopify/admin-router`, `derived/eligibility-by-store.tsv`, the Terms of Service) · `identifier` (the platform's own identifier) · `statement` (a verbatim excerpt of the first cited source) · `scope` (where it holds, as stated) · `cite_ids` · `note` |
-| `gaps.tsv` | `concern_id` · `placement` · `what_would_show_it` · `means` · `who_can` (agent, founder, either) · `route` · `why_not_held` |
+| `gaps.tsv` | `concern_id` · `placement` · `what_would_show_it` · `means` · `who_can` (agent, founder, either) · `route` · `why_not_held` · `gap_kind` (page not read, observation needed, searched, not found, stated only in general terms) |
 
 **Sources.** The re-pass cites observed-sh at `e49840729` for Shopify. New citations go in `citations.tsv` as before.
 

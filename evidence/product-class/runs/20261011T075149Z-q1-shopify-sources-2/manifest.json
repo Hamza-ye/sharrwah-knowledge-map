@@ -1,0 +1,42 @@
+[
+{
+"n": 1,
+"url": "https://www.shopify.com/legal/shopify-credit-program-terms",
+"dir": "items/001-shopify.com",
+"fetched_at": "2026-10-11T07:51:49Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://www.shopify.com/legal/shopify-credit-program-terms",
+"content_type": "text/html; charset=utf-8",
+"cited_in": "Q1 Shopify re-pass",
+"note": "",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "6150ded8c7526a642a1e5e8c8fb69eb1378d6b627856ae8b6ba705931db9d74c",
+"bytes": 450893,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+},
+{
+"n": 2,
+"url": "https://www.shopify.com/legal/shopify-credit-issuing-bank-terms",
+"dir": "items/002-shopify.com",
+"fetched_at": "2026-10-11T07:51:49Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://www.shopify.com/legal/shopify-credit-issuing-bank-terms",
+"content_type": "text/html; charset=utf-8",
+"cited_in": "Q1 Shopify re-pass",
+"note": "",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "7639352c4d74e3e5b8f2890c2ee8b373d16e3a72712a70bdfb0969135ab45037",
+"bytes": 616359,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+}
+]

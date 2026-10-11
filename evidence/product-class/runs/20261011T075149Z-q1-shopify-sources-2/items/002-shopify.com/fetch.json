@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://www.shopify.com/legal/shopify-credit-issuing-bank-terms",
+ "dir": "items/002-shopify.com",
+ "fetched_at": "2026-10-11T07:51:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/shopify-credit-issuing-bank-terms",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 90005,
+ "cited_in": [
+  "Q1 Shopify re-pass"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7639352c4d74e3e5b8f2890c2ee8b373d16e3a72712a70bdfb0969135ab45037",
+ "raw_ext": "html"
+}
