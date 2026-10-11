@@ -225,7 +225,7 @@ for c, pages in concern_pages.items():
                 continue
             done.add((page, r["admin_path"]))
             cid = f"WEB:{page}|{md}"
-            add(c, "where", page, r["admin_path"], md, "", [cid], "help-links",
+            add(c, "where", page, r["admin_path"] or r["address"], md, "", [cid], "help-links",
                 f"admin route(s) {r['route_ids'] or 'not matched'}; heading {r['heading'] or '(none)'}")
 
 # ---- first run ----
