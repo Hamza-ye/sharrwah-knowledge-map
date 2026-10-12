@@ -15,12 +15,11 @@ Each step has a brief in `<subject>/briefs/`. A separate agent inspects every br
 | 1B, second pass | `B-variation-points.md` | the same agent as 1B | updates `variants.tsv` |
 | 1C. Cause, coexistence, what follows | `C-analysis.md` | one agent | `analysis.tsv`, `notes-c.md` |
 | 2. The subject in each Yemen case | `D-yemen-marks.md` | one agent | `yemen-marks.tsv`, `notes-d.md` |
-| 3. The existing rows | `E-rows.md` | one agent | `rows.tsv`, `notes-e.md` |
-| 4. The register entry | none | the coordinator | `entry.md`, in the decision-item form of `PLAN.md` section 5 |
-| 5. Independent review | `F-review.md` | one agent that produced none of it | `review.md` |
-| 6. Method report | none | the coordinator | `method-report.md`: what broke and what changed |
+| 3. The register entry | none | the coordinator | `entry.md`, in the decision-item form of `PLAN.md` section 5 |
+| 4. Independent review | `F-review.md` | one agent that produced none of it | `review.md` |
+| 5. Method report | none | the coordinator | `method-report.md`: what broke and what changed |
 
-Step 2 needs Stage 1's `studies/yemen-cases/`.
+Step 2 needs Stage 1's `studies/yemen-cases/`. Q3, placing the existing rows, runs once at close-out (`PLAN.md` section 11), so no subject places them.
 
 ## Checking
 

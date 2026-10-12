@@ -1,5 +1,7 @@
 # Brief: S-01, the existing question rows on this subject (pilot, step 3)
 
+**Held for Stage 5.** Since 12 October 2026, Q3 runs once, at close-out (`PLAN.md` section 11), so this brief does not run in the pilot. It will be adapted to the whole register then.
+
 This is `PLAN.md` Stage 2, the pilot. It carries out Q3 for one subject. You are one agent with one task.
 
 **Read only this brief and:**

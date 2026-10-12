@@ -26,7 +26,7 @@ Then the design of the first build starts, under its own plan: a thin slice for 
 - **Q1's question stands, but "done" changes.** Done no longer means every concern on every placement on every platform. It means every subject in scope. The five platforms' inventories, concerns and 8,191 statements stay as they are and become the index the subjects draw from. Known practice scopes analysis by what will be built and by risk (Schmid 2002; Clements & Northrop 2001).
 - **The test form becomes the main instrument.** It runs per subject, with matching and gap-closing inside the subject. It no longer waits for a full re-match.
 - **Q2 splits.** Its first step, Yemen's axes and cases, runs early because scoping needs it. Its marks run per subject.
-- **Q3 runs per subject.** At the end it lists the rows no subject took and the subjects no row asks about.
+- **Q3 runs once, at close-out.** It reconciles the existing rows against the finished register (Stage 5). The rows never feed a subject's analysis.
 - **Retired:** the 84 unclear matches, unreviewed. The 88 matches stay only as hints for scoping.
 - **Gaps** are closed only where a subject needs them. Before a gap goes to anyone, its route is checked against what is held.
 
@@ -118,10 +118,9 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 **Steps:**
 1. Run the test form across the five references, with matching and gap-closing inside it.
 2. Mark it against every Yemen case (Q2).
-3. Place the existing rows that touch it (Q3).
-4. Write its decision-register entry.
-5. Have it reviewed independently.
-6. Write a method report: what broke and what changed.
+3. Write its decision-register entry.
+4. Have it reviewed independently.
+5. Write a method report: what broke and what changed.
 
 **Done when** there is one register entry the founder can decide from, or a clear account of why not.
 
@@ -152,7 +151,7 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 
 ### Stage 4. The subjects, in batches, riskiest first
 
-- Each subject goes through the pilot's six steps. Its files go in `studies/subjects/<id>/`.
+- Each subject goes through the pilot's five steps. Its files go in `studies/subjects/<id>/`.
 - Each batch of three to five subjects ends with:
   - a commit;
   - an update to `STATE.md`;
@@ -163,7 +162,12 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 ### Stage 5. Close-out
 
 - **Interactions.** Subjects that touch each other, such as currency, payments and tax, are checked for bindings that conflict (Calder et al. 2003).
-- **Q3's step 3.** List the rows no subject took, and the subjects no row asks about.
+- **Q3, once.** Reconcile the existing rows against the register:
+  - place each row, and flag its time bombs;
+  - list the rows the register doesn't cover;
+  - list the register's decisions no row asked about.
+
+  A row the register doesn't cover enters scope only if the evidence, not the row, shows it is expensive to change. Before starting, the coordinator decides again whether reconciling is worth its cost.
 - **A last sweep** of the inventory's remaining concerns, for anything expensive to change that the subject list missed.
 - **Gate G4, the safe shore.** The founder accepts the register, and the design of the first build starts under its own plan.
 
@@ -267,7 +271,7 @@ A partial overlap is split into variation points and recorded. It doesn't go to 
 
 ### Q3's rows
 
-Both sets are placed, subject by subject: the 81 payment rows and the Knowledge Map's 179 questions. Rows no subject takes are listed at close-out. *This one is the founder's choice. The coordinator recommends both, because placing them per subject makes it cheap.*
+Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 179 questions (`register/README.md`). They are reconciled once, at close-out, and read only for their `id`, `question`, `needed_by` and `lane`. A row never adds a variation point, a variant or a cause.
 
 ## 7. Risks, and what happens when one shows
 
@@ -346,3 +350,12 @@ Both sets are placed, subject by subject: the 81 payment rows and the Knowledge 
   - Coexistence can be `unknown`.
   - `no difference` gives "a commonality, carried as the references carry it".
   - The four time-bomb types are decided by stated rules on the rows' `lane` and `needed_by`.
+- **12 October 2026,** Q3 moves to close-out, by the coordinator's engineering decision. The founder delegated this decision, asking that it not rest on the rows merely existing.
+  - **Why the rows are worth reconciling at all.** They are agent-written beliefs, already circulating, that would return as false requirements. That is the time bombs Q3 was agreed for.
+  - **Why once, at close-out, and not per subject.** Read inside each subject, they would anchor the analysis. Reconciled once against a register built from evidence, they cost less and can't steer it.
+  - **What changes.** The pilot drops its rows step. `briefs/E-rows.md` waits for Stage 5.
+- **12 October 2026,** Stage 1's method, after its first run stopped at the axis cap having read 23 of 262 items:
+  - every source is read before any axis is formed;
+  - conditions are recorded first, and then grouped into axes;
+  - the cap becomes a stop for review after grouping.
+  `studies/yemen-cases/first-run-stopped/` keeps that first run as a record.

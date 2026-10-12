@@ -110,7 +110,9 @@ The axis count before the stop is the same either way.
 3. **The reach of rule 10 is unclear.**
    - "Don't continue past it" could stop the whole step (reading, constants, cases) or only stop adding axes. I stopped everything, but built YC-00 because the checker reports its absence as an error.
    - The brief does not say whether the 16th axis is recorded. The checker treats more than 15 axes as an error, so it is reported here and not recorded.
-4. **Place names (rule 4) keep stale states in `today`.** The same area named differently becomes separate places: عدن and Aden; صنعاء and مناطق سيطرة الحوثيين.
+4. **Place names (rule 4) keep stale states in `today`.** The same area named differently becomes separate places.
+   - YA-07: the April 2026 rate for مناطق الحكومة الشرعية stays in `today` beside the September 2026 rate for عدن.
+   - YA-08: one ban is recorded twice, for المناطق التي يسيطرون عليها and for مناطق سيطرة الحوثيين.
 5. **Rule 6 lets any later whole-market state erase older place-bound states,** even on another aspect of the axis.
    - YA-08: a 2024 Aden withdrawal order removes the 2020 Sana'a-side ban from `today`.
    - YA-14: a 2025 general remark removes the city/rural contrast.
@@ -118,6 +120,6 @@ The axis count before the stop is the same either way.
 7. **Precision ties.** Comparing at the coarser precision makes a market quote and an official rate "disputed" (YA-11).
 8. **Ties within one source.** Rule 6's "disputed" needs two sources. Two states from one source on the same date (YA-15, both 2020) need that source's own order, which the brief does not mention.
 9. **Exchange rates.** Every quoted rate is a state, so the rate axes grow with every source, and rule 8 would add one case per quote.
-10. **Practices that coexist.** Different sellers using different practices at the same time (paying in advance or on delivery) are forced into a single `today`.
+10. **Practices that coexist.** In items read past the stop, different sellers use different practices at the same time (paying in advance or on delivery). Rule 6 would force these into a single `today`.
 11. **Constants depend on what was read.** "No source shows another state" can only be checked against sources read. With an early stop, the constants are provisional.
 12. **The brief says each run has a `manifest.tsv` with a `text_file` column.** The community-clients run has `clients.tsv` instead, with no `text_file` column.

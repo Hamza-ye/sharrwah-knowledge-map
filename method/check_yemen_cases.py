@@ -14,19 +14,20 @@ os.makedirs(OUT, exist_ok=True)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = Sources({"sharrwah-knowledge-map": SKM})
 HEADERS = {
-    "axes.tsv": ["axis_id", "axis", "what_varies", "states", "today", "today_cite_ids", "note"],
-    "constants.tsv": ["constant_id", "condition", "cite_ids", "note"],
+    "conditions.tsv": ["condition_id", "condition", "state", "place", "held_at", "date_basis", "cite_ids", "note"],
+    "axes.tsv": ["axis_id", "axis", "what_varies", "condition_ids", "states", "today", "today_cite_ids", "note"],
+    "constants.tsv": ["constant_id", "condition", "condition_ids", "cite_ids", "note"],
     "cases.tsv": ["case_id", "name", "axis_states", "basis", "cite_ids", "note"],
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "fetched_from", "url"],
     "unknowns.tsv": ["about", "what_would_show_it", "who_can", "route", "read", "why_not_held"],
 }
-IDS = {"axes.tsv": ("axis_id", r"^YA-\d{2}$"), "constants.tsv": ("constant_id", r"^YK-\d{2}$"),
+IDS = {"conditions.tsv": ("condition_id", r"^YQ-\d{3}$"), "axes.tsv": ("axis_id", r"^YA-\d{2}$"), "constants.tsv": ("constant_id", r"^YK-\d{2}$"),
        "cases.tsv": ("case_id", r"^YC-\d{2}$"), "citations.tsv": ("cite_id", r"^YE-\d{3}$")}
 BASES = {"today", "in force", "occurred", "provided for"}
 FETCHED = {"inside Yemen", "outside Yemen", "attestation"}
 WHO = {"agent", "founder", "reader"}
 SOURCE = re.compile(r"^sharrwah-knowledge-map@[0-9a-f]{7,40}:evidence/yemen/(runs|blocked-evidence-founder|derived|attestations)/")
-MAX_AXES = 15
+MAX_AXES = 20
 issues = []
 
 def err(f, i, x, level="error"):
@@ -58,7 +59,7 @@ def ids(s):
     return [x for x in re.split(r"[,\s;]+", s or "") if x]
 
 data = {n: read(n) for n in HEADERS}
-axes, consts, cases, cits, unk = (data[n] for n in HEADERS)
+conds, axes, consts, cases, cits, unk = (data[n] for n in HEADERS)
 if not os.path.exists(os.path.join(study, "notes.md")):
     err("notes.md", "", "file missing")
 for name, (key, pat) in IDS.items():
@@ -82,9 +83,30 @@ def cites(f, i, s, need=True):
     return cs
 
 if len(axes) > MAX_AXES:
-    err("axes.tsv", "", f"{len(axes)} axes: the brief says stop and report past {MAX_AXES}")
+    err("axes.tsv", "", f"{len(axes)} axes: the brief stops for review past {MAX_AXES}", "review")
+    if cases:
+        err("cases.tsv", "", f"cases were built past the {MAX_AXES}-axis stop for review")
+cond_ids = {c["condition_id"] for c in conds}
+for c in conds:
+    if not c["condition"] or not c["state"]:
+        err("conditions.tsv", c["condition_id"], "condition or state is empty")
+    if not c["held_at"] or not c["date_basis"]:
+        err("conditions.tsv", c["condition_id"], "held_at or date_basis is empty")
+    cites("conditions.tsv", c["condition_id"], c["cite_ids"])
+placed = Counter(x for r in axes + consts for x in ids(r["condition_ids"]))
+for x, n in placed.items():
+    if x not in cond_ids:
+        err("axes.tsv", x, "a condition_id that conditions.tsv doesn't hold")
+    elif n > 1:
+        err("axes.tsv", x, f"condition on {n} axes or constants; each sits on exactly one")
+for x in cond_ids - set(placed):
+    err("conditions.tsv", x, "on no axis and no constant")
 unknown_about = {u["about"] for u in unk}
 labels, today = {}, {}
+
+def part_ok(aid, x):
+    x = x.strip()
+    return x in labels.get(aid, []) or x == "unknown" or x == "disputed" or x.startswith("disputed @ ")
 for a in axes:
     aid = a["axis_id"]
     parts = [p.strip() for p in a["states"].split(" | ") if p.strip()]
@@ -102,15 +124,18 @@ for a in axes:
         if n > 1:
             err("axes.tsv", aid, f"state '{k[:40]}' listed {n} times")
     t = today[aid] = a["today"]
-    if t not in ("disputed", "unknown") and not all(x in labels[aid] for x in t.split(" + ")):
-        err("axes.tsv", aid, f"today '{t[:50]}' is not its state labels (joined by ' + '), 'disputed' or 'unknown'")
-    if t == "unknown":
-        if aid not in unknown_about:
-            err("axes.tsv", aid, "today is unknown, but unknowns.tsv has no row about it")
-    else:
+    if not all(part_ok(aid, x) for x in t.split(" + ")):
+        err("axes.tsv", aid, f"today '{t[:50]}' is not its state labels joined by ' + ', with 'disputed' or 'unknown' parts")
+    if "unknown" in [x.strip() for x in t.split(" + ")] and aid not in unknown_about:
+        err("axes.tsv", aid, "today has an unknown part, but unknowns.tsv has no row about it")
+    if t != "unknown":
         cites("axes.tsv", f"{aid} today", a["today_cite_ids"])
+    if not ids(a["condition_ids"]):
+        err("axes.tsv", aid, "condition_ids is empty")
 for k in consts:
     cites("constants.tsv", k["constant_id"], k["cite_ids"])
+    if not ids(k["condition_ids"]):
+        err("constants.tsv", k["constant_id"], "condition_ids is empty")
 case_ids = {c["case_id"] for c in cases}
 if "YC-00" not in case_ids:
     err("cases.tsv", "YC-00", "today's case is missing")
@@ -134,10 +159,7 @@ for c in cases:
         elif v == "unknown":
             if cid not in unknown_about and ax not in unknown_about:
                 err("cases.tsv", cid, f"{ax} is unknown, but unknowns.tsv has no row about it")
-        elif v == "disputed":
-            if today[ax] != "disputed":
-                err("cases.tsv", cid, f"{ax} is 'disputed', but that axis's today is not")
-        elif not all(x in labels[ax] for x in v.split(" + ")):
+        elif not all(part_ok(ax, x) for x in v.split(" + ")):
             err("cases.tsv", cid, f"{ax}='{v[:50]}' is not that axis's state labels")
     for ax in given:
         if ax not in labels:
@@ -195,5 +217,5 @@ with open(os.path.join(OUT, "yemen-cases-quotes.tsv"), "w", encoding="utf-8") as
     f.write("cite_id\tresult\twhy\tshare_of_6-word_runs_found\tsource\tquote_start\n")
     for q in quotes:
         f.write("\t".join(str(v).replace("\t", " ").replace("\n", " ") for v in q) + "\n")
-print(f"axes {len(axes)}, constants {len(consts)}, cases {len(cases)}, citations {len(cits)}, unknowns {len(unk)} | "
+print(f"conditions {len(conds)}, axes {len(axes)}, constants {len(consts)}, cases {len(cases)}, citations {len(cits)}, unknowns {len(unk)} | "
       f"issues: {dict(Counter(i[0] for i in issues))} | quotes: {dict(Counter(q[1].split(' (')[0] for q in quotes))}")

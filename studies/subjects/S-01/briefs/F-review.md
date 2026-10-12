@@ -17,7 +17,7 @@ This is `PLAN.md` Stage 2, the pilot. You review what other agents and the coord
 1. **Readings.** Does each cause reading in `analysis.tsv` follow from the statements it cites? Read the statements, and their sources where the excerpt is short.
 2. **Coexistence and what follows.** Do they follow from the cited statements, and is every rule in `follows` one that applies under the rule table in `briefs/C-analysis.md`, with none missing?
 3. **Marks.** Do the two pieces of evidence for each mark in `yemen-marks.tsv` show what the mark claims?
-4. **Rows.** Does each placement and time-bomb flag in `rows.tsv` follow from the ids it cites?
+4. **Rows.** Q3 runs at close-out, not in the pilot, so there is nothing to check here.
 5. **The register entry, `entry.md`.**
    - Does every claim trace to the files?
    - Is every recommendation marked as the coordinator's?
