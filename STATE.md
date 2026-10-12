@@ -68,8 +68,13 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 
 ## If the work was interrupted
 
-**Agents running when last checked (12 October 2026):**
-- **Pilot phase A:** five agents, one per platform, on `studies/subjects/S-01/briefs/A-one-platform.md`. Each writes `studies/subjects/S-01/<platform>/`.
+**The usage limit stopped every running agent at about 09:50 UTC on 12 October 2026.** All ten were restarted at 10:10 UTC, each continuing from its files, as below. BigCommerce's phase A had already finished.
+
+**Agents running when last checked (12 October 2026, 10:10 UTC):**
+- **Pilot phase A:** four agents on `studies/subjects/S-01/briefs/A-one-platform.md`, each writing `studies/subjects/S-01/<platform>/`.
+  - Salla and WooCommerce are finishing: checker and fixes.
+  - Shopify and Zid are starting fresh, because nothing had been written.
+  - BigCommerce is done.
 - **Stage 1 pass 1:** six agents, parts A to F, on `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
 
 **To resume:**
