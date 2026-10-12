@@ -44,7 +44,7 @@ Then the design of the first build starts, under its own plan: a thin slice for 
    - attestations.
 6. **The gates** in section 5.
 
-Nothing reaches the founder without a decision attached. Each item comes with its evidence, its options and the coordinator's recommendation, marked as such.
+Nothing reaches the founder without a decision attached. Each item comes with its evidence, its options and the coordinator's recommendation, marked as such. Section 5 says when each is needed and what an item looks like.
 
 **Not the founder's to settle.** These follow from evidence and rule, or are the coordinator's engineering calls. The founder may challenge any of them.
 - what a platform states, and whether two platforms' concepts match (section 6);
@@ -177,6 +177,29 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 | G3 | After each batch | The decisions the batch raised that are genuinely the founder's |
 | G4 | At close-out | Accept the register, and start the design |
 
+**When the founder is needed:**
+- **Now, at G0:** the go on this plan, and Q3's rows.
+- **Stages 0 and 1:** no decisions. The founder may get a capture list: what only the founder can capture, each item with why. Capturing is optional, and whatever isn't captured stays unknown.
+- **At G1, after the pilot:** whether the pilot's entry lets the founder decide, and the decisions the pilot raised.
+- **At G2:** business scope, marked on the subject list as won't do or must do.
+- **At G3, after each batch:** that batch's decisions.
+- **At G4:** accepting the register.
+
+**What a decision item looks like.** It takes the form of an architecture decision record (Nygard 2011):
+- the question in one line, and why it is the founder's;
+- the evidence: each platform's statement, quoted and cited, and Q2's marks for the Yemen cases;
+- the options, each with what it needs built and what it needs from outside, such as a licence, a partner or money;
+- the coordinator's recommendation and its reason;
+- the answer: an option, or **defer**. Defer is always allowed. The variation point stays open and is set per market, at the build cost the item states.
+
+**Standing decisions.** The founder can state a decision once as a rule that settles every later item of its kind, such as a default business model.
+- It is recorded in `founder-decisions.tsv` like any decision.
+- Items it settles don't reach the founder. Each settled item names the rule that settled it.
+
+**Spending** means money paid for evidence or advice the work needs: a store on a paid plan, a lawyer's or accountant's consultation, or an official record.
+- Each request says what it buys, which decision depends on it, the cost if known, and what happens without it: the item stays unknown or open.
+- Building and running Sharrwah are not part of this plan.
+
 ## 6. The rules this plan adopts
 
 These rules are settled, each from the source named, unless the founder objects at G0.
@@ -300,6 +323,7 @@ Both sets are placed, subject by subject: the 81 payment rows and the Knowledge 
 - IEEE 1012, Standard for System, Software, and Hardware Verification and Validation. Independent review.
 - Kang, K., Cohen, S., Hess, J., Novak, W., Peterson, A. (1990). *Feature-Oriented Domain Analysis (FODA) Feasibility Study.* CMU/SEI-90-TR-21. Domain analysis from existing systems, which is what Q1 is.
 - Mill, J. S. (1843). *A System of Logic.* The methods of agreement and difference.
+- Nygard, M. (2011). Documenting architecture decisions. Cognitect blog. The form of a decision item.
 - Parnas, D. (1972). On the criteria to be used in decomposing systems into modules. *Communications of the ACM* 15(12). Each decision likely to change behind its own module.
 - Pohl, K., Böckle, G., van der Linden, F. (2005). *Software Product Line Engineering.* Springer. One platform, many products.
 - Poppendieck, M., Poppendieck, T. (2003). *Lean Software Development: An Agile Toolkit.* Addison-Wesley. Deciding at the last responsible moment.
@@ -310,3 +334,4 @@ Both sets are placed, subject by subject: the 81 payment rows and the Knowledge 
 ## 11. Changes
 
 - **12 October 2026:** proposed by the coordinating session. It waits for G0.
+- **12 October 2026,** after the founder's questions: section 5 now says when the founder is needed, what a decision item looks like, how standing decisions work, and what spending covers.
