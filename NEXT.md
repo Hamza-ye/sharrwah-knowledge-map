@@ -14,6 +14,14 @@ Each item says what it decides and what it needs. Items lower down depend on the
 - whether an agreement a platform's terms incorporate (such as Stripe's under WooPayments and Shopify Payments) may be read;
 - the gaps only the founder can close (`studies/concern-map/gaps-to-close.md`): the salla.com pages, the journeys, a paid Plus store, questions to the platforms.
 
+**How the founder's evidence closes gaps.** The founder closes the gaps that name them by capturing the evidence into observed-sh or observed-sa, in those repositories' own format: saved pages, journeys, store runs. When the founder says it has landed:
+1. Fetch the new commit and list what is new against the commits the map cites.
+2. Match the new evidence to open gaps by their routes (URL, admin path and role, plan).
+3. Run a gap-closing pass per platform. An agent reads only the new evidence, as its own read. It turns a gap into a statement where the evidence states something, quoted verbatim and cited at the new commit. It updates `why_not_held` for every gap still open.
+4. Check, commit, and regenerate `gaps-to-close.md`. The pass reports what is still not closed.
+
+The founder's words are never evidence. What the founder captures from the platforms is.
+
 ## 2. Q2, the Yemen stress test
 
 Tests the map against the market, case by case, using only Yemen evidence. See `questions/Q2-yemen-stress-test.md`.

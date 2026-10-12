@@ -2,7 +2,7 @@
 
 The Q1 Salla agent needs these pages, but salla.com and salla.sa answer this session with HTTP 403 and a bot-challenge page ("Just a moment..."). The run does not get around the challenge, so these are for the founder to save.
 
-**How to save.** Use SingleFile from a normal browser, as was done for Yemen. Put the files in `evidence/product-class/blocked-evidence-founder/`. SingleFile writes the URL and save time at the top of each file, so the names can stay as SingleFile makes them.
+**How to save.** Use SingleFile from a normal browser, as was done for Yemen. Put the files in observed-sa, in its own format (agreed on 12 October 2026), or else in `evidence/product-class/blocked-evidence-founder/`. SingleFile writes the URL and save time at the top of each file, so the names can stay as SingleFile makes them.
 
 **What's here.** The agent took every URL from Salla's own sitemaps, held in observed-sa. Most pages exist in four market versions. The legal and money pages come first, because the merchant terms, privacy policy and payments page are the only sources that can show who is legally responsible for most concerns. On those pages the market versions may name different entities, so each version is listed.
 
