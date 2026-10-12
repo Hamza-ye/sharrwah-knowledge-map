@@ -91,8 +91,9 @@ Its statements were already checked verbatim against their sources, and its gaps
      - `stated only in general terms`: the terms speak only of the platform's services in general.
    - `who_can`: `agent`, `founder` or `either`.
    - Before you give a gap `founder` or `either`, run `method/held_index.py` on each address in its route. If the page is held and readable, read it instead.
-9. **No inference, anywhere.** Notes record what was read, what couldn't be read, and problems. They never record inference.
-10. **Stop and report** past 150 statements.
+9. **Credentials.** Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. Never skip, withhold or mask a file because of them. They come from synthetic environments the founder rotates.
+10. **No inference, anywhere.** Notes record what was read, what couldn't be read, and problems. They never record inference.
+11. **Stop and report** past 150 statements.
 
 ## Quotes and citations
 

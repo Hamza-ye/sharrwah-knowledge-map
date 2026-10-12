@@ -83,6 +83,7 @@ This is Q2's first step, as agreed with the founder:
 - **`locator`** is the heading, or the line number, in the cited file.
 - **`fetched_from`** is `inside Yemen` or `outside Yemen`, from the run's README, or `attestation`.
 - **Disagreements.** Where sources disagree, record each with its citation.
+- **Credentials.** Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. Never skip, withhold or mask a file because of them. They come from synthetic environments the founder rotates.
 - **Inference** never goes into an axis, state, constant or case. A note may hold inference, starting with "Inference:", and it never counts.
 
 ## Unknowns
