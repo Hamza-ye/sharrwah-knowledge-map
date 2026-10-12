@@ -2,7 +2,7 @@
 
 Questions agreed with the founder, the evidence captured to answer them, and derived documents written in October 2026 by Claude Code agents.
 
-**Where the work stands.** The three questions in `questions/` drive the work now. `NEXT.md` gives their order.
+**Where the work stands.** The three questions in `questions/` drive the work now. `NEXT.md` gives their order. `PLAN.md` proposes to re-centre them on the decisions that are expensive to change. It waits for the founder's go, and `STATE.md` says where the work is.
 
 **What the documents draw on.** The derived documents draw on two kinds of source:
 

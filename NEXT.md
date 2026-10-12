@@ -1,5 +1,7 @@
 # Open work, in order
 
+**A replacement is proposed.** `PLAN.md` proposes to re-centre the work on the decisions that are expensive to change, with gates for the founder and a risk register. It waits for the founder's go (gate G0). Until then, this list stands. `STATE.md` says where the work is.
+
 Each item says what it decides and what it needs. Items lower down depend on the ones above.
 
 ## 1. Q1, the concern map (built; the founder's review is next)
