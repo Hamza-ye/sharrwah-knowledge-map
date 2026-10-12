@@ -44,3 +44,5 @@ Each line: item, file read, what it is, conditions recorded from it.
 - 033 sabacash.com: not readable. Blocked from here (connection reset); no page content was captured.
 - 034 floosak.com: not readable. `text.txt` is Cloudflare's error 522 page (the origin server timed out); no content of the site.
 - 035 yk-bank.com (its Floosak page): not readable. `text.txt` is Cloudflare's block page (HTTP 403); no content of the site.
+- 036 ahdfinancial.com, `text.txt`: AHD Financial Services' site (live page): founded 2022, Jaib wallet launched March 2023, aims. Read in full; no condition stated.
+- 037 yemeneco.org, `text.txt`: Yemen Eco news item of 24 November 2024 on the launch in Sana'a of the MB wallet, under a live ticker of headlines. Read in full; 4 conditions, 1 from an undated ticker headline (road levies in Lahj). The other headlines are about other countries, or name gold and exchange-rate reports without their figures.
