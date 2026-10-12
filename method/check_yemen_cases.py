@@ -16,14 +16,14 @@ SRC = Sources({"sharrwah-knowledge-map": SKM})
 HEADERS = {
     "axes.tsv": ["axis_id", "axis", "what_varies", "states", "today", "today_cite_ids", "note"],
     "constants.tsv": ["constant_id", "condition", "cite_ids", "note"],
-    "cases.tsv": ["case_id", "name", "axis_states", "basis", "place", "cite_ids", "note"],
+    "cases.tsv": ["case_id", "name", "axis_states", "basis", "cite_ids", "note"],
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "fetched_from", "url"],
     "unknowns.tsv": ["about", "what_would_show_it", "who_can", "route", "read", "why_not_held"],
 }
 IDS = {"axes.tsv": ("axis_id", r"^YA-\d{2}$"), "constants.tsv": ("constant_id", r"^YK-\d{2}$"),
-       "cases.tsv": ("case_id", r"^YC-\d{2}[a-z]?$"), "citations.tsv": ("cite_id", r"^YE-\d{3}$")}
+       "cases.tsv": ("case_id", r"^YC-\d{2}$"), "citations.tsv": ("cite_id", r"^YE-\d{3}$")}
 BASES = {"today", "in force", "occurred", "provided for"}
-FETCHED = {"inside Yemen", "outside Yemen"}
+FETCHED = {"inside Yemen", "outside Yemen", "attestation"}
 WHO = {"agent", "founder", "reader"}
 SOURCE = re.compile(r"^sharrwah-knowledge-map@[0-9a-f]{7,40}:evidence/yemen/(runs|blocked-evidence-founder|derived|attestations)/")
 MAX_AXES = 15
@@ -102,8 +102,8 @@ for a in axes:
         if n > 1:
             err("axes.tsv", aid, f"state '{k[:40]}' listed {n} times")
     t = today[aid] = a["today"]
-    if t not in labels[aid] and t not in ("disputed", "unknown"):
-        err("axes.tsv", aid, f"today '{t[:50]}' is not one of its states, 'disputed' or 'unknown'")
+    if t not in ("disputed", "unknown") and not all(x in labels[aid] for x in t.split(" + ")):
+        err("axes.tsv", aid, f"today '{t[:50]}' is not its state labels (joined by ' + '), 'disputed' or 'unknown'")
     if t == "unknown":
         if aid not in unknown_about:
             err("axes.tsv", aid, "today is unknown, but unknowns.tsv has no row about it")
@@ -112,20 +112,14 @@ for a in axes:
 for k in consts:
     cites("constants.tsv", k["constant_id"], k["cite_ids"])
 case_ids = {c["case_id"] for c in cases}
-today_cases = sorted(c for c in case_ids if re.match(r"^YC-00[a-z]?$", c))
-if not today_cases:
+if "YC-00" not in case_ids:
     err("cases.tsv", "YC-00", "today's case is missing")
-elif "YC-00" in today_cases and len(today_cases) > 1:
-    err("cases.tsv", "YC-00", "today is either one case, YC-00, or split by place into YC-00a, YC-00b…, not both")
 for c in cases:
     cid = c["case_id"]
-    is_today = cid in today_cases
     if c["basis"] not in BASES:
         err("cases.tsv", cid, f"basis '{c['basis']}' is not one of {sorted(BASES)}")
-    if is_today != (c["basis"] == "today"):
-        err("cases.tsv", cid, "basis 'today' belongs to today's case(s) only")
-    if (cid != "YC-00" and is_today) != bool(c["place"]):
-        err("cases.tsv", cid, "place is given for today's split cases, and only for them")
+    if (cid == "YC-00") != (c["basis"] == "today"):
+        err("cases.tsv", cid, "basis 'today' belongs to YC-00 only")
     given = {}
     for part in [p.strip() for p in c["axis_states"].split(";") if p.strip()]:
         ax, _, val = part.partition("=")
@@ -140,8 +134,11 @@ for c in cases:
         elif v == "unknown":
             if cid not in unknown_about and ax not in unknown_about:
                 err("cases.tsv", cid, f"{ax} is unknown, but unknowns.tsv has no row about it")
-        elif v not in labels[ax] and not (is_today and v == "disputed"):
-            err("cases.tsv", cid, f"{ax}='{v[:50]}' is not one of that axis's state labels")
+        elif v == "disputed":
+            if today[ax] != "disputed":
+                err("cases.tsv", cid, f"{ax} is 'disputed', but that axis's today is not")
+        elif not all(x in labels[ax] for x in v.split(" + ")):
+            err("cases.tsv", cid, f"{ax}='{v[:50]}' is not that axis's state labels")
     for ax in given:
         if ax not in labels:
             err("cases.tsv", cid, f"{ax} is not an axis")
@@ -149,15 +146,18 @@ for c in cases:
         for ax in labels:
             if given.get(ax) not in (today[ax], None):
                 err("cases.tsv", cid, f"{ax} differs from that axis's today")
-    elif not is_today:
-        if "YC-00" in today_cases:
-            changed = {ax for ax in labels if given.get(ax) not in (None, today[ax])}
-            named = {p.split("=")[0].strip() for p in c["name"].split(";") if "=" in p}
-            if not changed:
-                err("cases.tsv", cid, "the same as today's case")
-            elif named != changed:
-                err("cases.tsv", cid, f"name lists {sorted(named)}, but the states that differ from today are {sorted(changed)}")
+    else:
+        changed = {ax for ax in labels if given.get(ax) not in (None, today[ax])}
+        named = {p.split("=")[0].strip() for p in c["name"].split(";") if "=" in p}
+        if not changed:
+            err("cases.tsv", cid, "the same as today's case")
+        elif named != changed:
+            err("cases.tsv", cid, f"name lists {sorted(named)}, but the states that differ from today are {sorted(changed)}")
     cites("cases.tsv", cid, c["cite_ids"])
+dupes = Counter(c["axis_states"] for c in cases)
+for st, n in dupes.items():
+    if n > 1:
+        err("cases.tsv", "", f"{n} cases have the same states: {st[:80]}")
 for u in unk:
     if u["about"] not in labels and u["about"] not in case_ids:
         err("unknowns.tsv", u["about"], "not an axis_id or case_id")
@@ -177,7 +177,7 @@ for c in cits:
     if len(c["quote"]) > 300:
         err("citations.tsv", cid, f"quote is {len(c['quote'])} characters; the brief allows 300")
     if c["fetched_from"] not in FETCHED:
-        err("citations.tsv", cid, f"fetched_from '{c['fetched_from']}' is not inside Yemen or outside Yemen")
+        err("citations.tsv", cid, f"fetched_from '{c['fetched_from']}' is not one of {sorted(FETCHED)}")
     for col in ("locator", "source_date", "date_basis"):
         if not c[col]:
             err("citations.tsv", cid, f"{col} is empty")

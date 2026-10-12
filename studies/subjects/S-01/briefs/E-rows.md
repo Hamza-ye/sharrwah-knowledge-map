@@ -1,0 +1,47 @@
+# Brief: S-01, the existing question rows on this subject (pilot, step 3)
+
+This is `PLAN.md` Stage 2, the pilot. It carries out Q3 for one subject. You are one agent with one task.
+
+**Read only this brief and:**
+- `register/pay-questions.tsv`, and in it only the columns `id`, `question`, `needed_by` and `lane`. The other columns hold citations that are not trusted: don't use them.
+- `studies/subjects/S-01/variation-points.tsv`, `variants.tsv`, `analysis.tsv` and `yemen-marks.tsv`.
+
+## What the rows are
+
+Agents wrote these rows earlier, from a smaller evidence base, as gaps they perceived at the time. They are not Sharrwah's requirements. They are inputs to place.
+
+## The task
+
+For each row:
+1. **Say whether it touches the subject:** `yes`, `no` or `unclear`.
+   - A row touches the subject when its question asks who or what fills one of the subject's variation points, or asks something a variation point's variants, analysis or marks answer.
+   - Rows that don't touch it are listed with `no`, and nothing more.
+2. **For each row that touches it,** record:
+   - the variation points it belongs to;
+   - **who answers it:**
+     - `platform evidence`;
+     - `Yemen evidence`;
+     - `founder decision`, when the analysis gives the founder a decision on it;
+     - `partner`;
+     - `regulator`;
+   - **when** it must be answered: `before build`, `before release`, or `later`. This comes from what the variation point's analysis says follows.
+3. **Flag each time bomb** in it, by Q3's four types:
+   - `bundles`: it bundles variation points that are placed differently;
+   - `wrong party`: it is asked of a party other than the one that answers it;
+   - `wrong time`: its `needed_by` treats it as blocking the build when it only blocks release, or the reverse;
+   - `market fact`: it phrases a market fact as a product question.
+4. **Leave unclear rows unresolved,** with what would settle them. Nothing gets settled that the evidence didn't settle.
+
+## Rules
+
+- Every placement and flag cites the ids it rests on: `vp_id`, or `vp_id` plus `case_id`.
+- No inference beyond the placement. A note may hold inference, starting with "Inference:", and it never counts.
+
+## Output, in `studies/subjects/S-01/`
+
+The `.tsv` file is tab-separated, with a header row and no quoting. Tabs and newlines never appear inside a field.
+
+| File | Columns |
+| --- | --- |
+| `rows.tsv` | `row_id` · `touches` · `vp_ids` · `who_answers` · `when` · `time_bombs` (`;`-separated, or empty) · `basis` (the ids each answer rests on) · `what_would_settle_it` (for `unclear`) · `note` |
+| `notes-e.md` | Rows that were hard to place, and why; problems with the method. |

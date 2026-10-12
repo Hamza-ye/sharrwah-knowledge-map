@@ -23,12 +23,21 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **Noted, not asked:** observed-sh's 70 fetch archives aren't in git. A page held only there is readable from this repository only if a subject needs it and the founder commits the archive.
 
 **Running: Stage 1, Yemen's axes and cases.**
-- The brief (`studies/yemen-cases/brief.md`) was inspected by a separate agent: 11 must-fix and 3 optional findings, all addressed. It is being re-inspected before the run.
-- Then:
-  - one agent reads `evidence/yemen/`;
-  - `method/check_yemen_cases.py` checks the output;
-  - a separate agent reviews it;
+- **Brief:** `studies/yemen-cases/brief.md`. Each inspection was by a separate agent:
+  - first: 11 must-fix and 3 optional findings;
+  - second: 8 must-fix and 1 optional;
+  - all were addressed, and a third, focused check is running.
+- **Checker:** `method/check_yemen_cases.py`, self-tested.
+- **Next:**
+  - the run;
+  - the checker;
+  - an independent review;
   - the coordinator compares Q2's example axes with what the evidence showed, and logs any example it didn't show as an unknown.
+
+**Prepared: Stage 2, the pilot (S-01).**
+- **Briefs** in `studies/subjects/S-01/briefs/`, A to F. A to C are under inspection by a separate agent; D to F follow.
+- **Checker:** `method/check_subject.py`, self-tested.
+- **Phase A** doesn't depend on Stage 1, so it may start as soon as its brief passes. Step 2, the Yemen marks, waits for Stage 1.
 
 **Evidence heads:**
 - **observed-sa `4ca2e896`.** It now holds items 6, 7, 9, 10 and 11:

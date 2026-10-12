@@ -15,38 +15,41 @@ This is Q2's first step, as agreed with the founder:
 
 **Only step 1.** Later steps are done elsewhere, and moves are not cases: don't record them.
 
-**Nothing about what Sharrwah does or should do.** Practices of stores, banks, wallets and other parties in Yemen are market evidence. Record them like any other.
+**Nothing about what Sharrwah does or should do.** Practices of any party in Yemen are market evidence. Record them like any other.
 
 ## Definitions and rules for building
 
-1. **Candidate.** One thing a source says differs: by date, by place, or by legal text.
+1. **Candidate.** One thing whose state differs, between sources or within one, by date, by place or by legal text.
 2. **Axis.** A candidate the evidence shows in at least two states.
    - Merge two candidates into one axis only when every source that gives a state of one also gives the other's matching state.
    - List each merge in `notes.md`.
-3. **Constant.** A condition the evidence shows in one state only. It goes in `constants.tsv`, not on an axis.
-4. **State labels.** A state is a short label in English, with the source's own words in parentheses where it has them. Use the same label everywhere it appears.
-5. **The date of a source,** in this order:
-   - its effective date;
-   - otherwise its published date;
-   - otherwise the date it shows.
+3. **Constant.** A condition a source states for the whole market, shown in no other state. It goes in `constants.tsv`, not on an axis.
+4. **State labels.** A state is a short label in English, with the source's own words in parentheses where it has them.
+   - **A place.** When a source ties a state to a place, the label ends with ` @ <place>`, naming the place in the source's own words. A state with no place holds for the whole market.
+   - **Same label everywhere.** Use the same label everywhere it appears.
+5. **When a state held.** Date each state by when its source says it held, or by the source's date if it doesn't say.
+   - **A source's date,** in this order:
+     - its effective date;
+     - otherwise its published date;
+     - otherwise the date it shows.
+   - **A live page** is a page in which a party describes its own current service or rule. An undated live page takes its capture date.
+   - **Other undated sources** come last.
+   - **`date_basis`** says which applies.
+   - **Age.** A source's age never discounts it.
+6. **Today.** An axis's `today` is the state with the latest date.
+   - **Places.** When the latest states hold in different places at the same time, `today` lists each of them, joined by ` + `.
+   - **Disputed.** Two sources with the same latest date that give different states for the same place make `today` read `disputed`. Record both, and don't resolve them.
+7. **Today's case, `YC-00`,** puts every axis at its `today`. It is the one anchor case.
+8. **Further cases** are built in two ways and no others:
+   - **One case per non-today state** of each axis, with every other axis at today's state. When an axis is `disputed`, each of its disputed states counts as non-today.
+   - **One case per combination** of states that a single source shows holding at one time. The axes that source doesn't give stay at today's state.
 
-   An undated live page takes its capture date. Other undated sources come last. `date_basis` says which applies. A source's age never discounts it.
-6. **Today.** An axis's `today` is the state given by its latest-dated source, however old that source is.
-   - Two sources of the same latest date that give different states make `today` read `disputed`. Record both, and don't resolve them.
-   - When the sources tie states to places, record the place with the state, in the sources' own words.
-7. **Today's case.**
-   - **If no axis is in different states in different places today,** today's case is `YC-00`.
-   - **If one is,** today is split into one case per place the sources name: `YC-00a`, `YC-00b` and so on. Each holds only states shown for that place or for the whole market, and names its place.
-8. **Further cases,** built in two ways and no others:
-   - **One case per non-today state** of each axis, with every other axis at today's state.
-   - **One case per combination of states that a single source shows** holding at one time and place.
-
-   A case's `name` lists only the states that differ from today, for example `YA-03=<label>`.
+   Skip a case that duplicates another. A case's `name` lists only the states that differ from today, for example `YA-03=<label>`.
 9. **Basis** of a further case, the first that applies:
    - `in force`: the state holds now, somewhere in the market;
    - `occurred`: it held at some time;
    - `provided for`: an enacted law or an issued decision provides for it.
-10. **Stop and report** if you find more than 15 axes. Don't continue past that.
+10. **Stop** when, after merges, a 16th axis appears. Say so in `notes.md`, and don't continue past it.
 
 ## Inputs
 
@@ -57,10 +60,10 @@ This is Q2's first step, as agreed with the founder:
 - **`evidence/yemen/blocked-evidence-founder/`.** Pages the founder saved from inside Yemen on 10 October 2026, as single-file HTML, with a `manifest.tsv`.
 - **`evidence/yemen/derived/`.** OCR text of scanned PDFs. When you quote one:
   - cite the OCR text file;
-  - name the PDF in `locator`;
+  - name the PDF and its run in `locator`;
   - give the PDF's address in `url`;
-  - give the PDF's run in `fetched_from`.
-- **`evidence/yemen/attestations/`,** for any attestation besides `TEMPLATE.md`.
+  - give that run's `fetched_from`.
+- **`evidence/yemen/attestations/`,** for any attestation besides `TEMPLATE.md`. Cite it with `fetched_from` `attestation`, its date as `source_date`, and an empty `url`.
 
 **Don't open:**
 - `evidence/yemen/README.md` and `evidence/yemen/finding-aids/`;
@@ -73,7 +76,7 @@ This is Q2's first step, as agreed with the founder:
 - **How the checker matches.** It collapses whitespace, removes HTML tags and decodes entities, on both the quote and the source.
 - **`source`** is `sharrwah-knowledge-map@<commit>:<path>`, where `<commit>` is the output of `git rev-parse HEAD` when you start.
 - **`locator`** is the heading, or the line number, in the cited file.
-- **`fetched_from`** is `inside Yemen` or `outside Yemen`, from the run's README.
+- **`fetched_from`** is `inside Yemen` or `outside Yemen`, from the run's README, or `attestation`.
 - **Disagreements.** Where sources disagree, record each with its citation.
 - **Inference** never goes into an axis, state, constant or case. A note may hold inference, starting with "Inference:", and it never counts.
 
@@ -94,9 +97,9 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 
 | File | Columns |
 | --- | --- |
-| `axes.tsv` | `axis_id` (YA-01…) · `axis` (a short name, with the sources' own term in parentheses where they have one) · `what_varies` (one sentence) · `states` (`label [YE-001, YE-007] \| label [YE-010]`: every state with its own citations) · `today` (a state label, `disputed`, or `unknown`) · `today_cite_ids` · `note` |
+| `axes.tsv` | `axis_id` (YA-01…) · `axis` (a short name, with the sources' own term in parentheses where they have one) · `what_varies` (one sentence) · `states` (`label [YE-001, YE-007] \| label @ place [YE-010]`: every state with its own citations) · `today` (a state label, several joined by ` + `, `disputed`, or `unknown`) · `today_cite_ids` · `note` |
 | `constants.tsv` | `constant_id` (YK-01…) · `condition` · `cite_ids` · `note` |
-| `cases.tsv` | `case_id` (YC-00, or YC-00a…, then YC-01…) · `name` · `axis_states` (`YA-01=<label>; YA-02=<label>; …`, every axis, using the labels in `axes.tsv`, or `unknown`) · `basis` (`today`, `in force`, `occurred`, or `provided for`) · `place` (today's split cases only; otherwise empty) · `cite_ids` · `note` |
+| `cases.tsv` | `case_id` (YC-00, then YC-01…) · `name` · `axis_states` (`YA-01=<label>; YA-02=<label>; …`, every axis, using the labels in `axes.tsv`, joined by ` + ` where `today` joins them, or `disputed` or `unknown`) · `basis` (`today`, `in force`, `occurred`, or `provided for`) · `cite_ids` · `note` |
 | `citations.tsv` | `cite_id` (YE-001…) · `source` · `locator` · `quote` · `source_date` · `date_basis` · `fetched_from` · `url` (the source's own address, from the manifest) |
 | `unknowns.tsv` | `about` (an axis_id or case_id) · `what_would_show_it` · `who_can` (`agent`, `founder` or `reader`) · `route` · `read` (each path read looking for it, `; `-separated) · `why_not_held` |
 | `notes.md` | What you read, with counts per run; the merges; what couldn't be read; disagreements; problems with the method. |
