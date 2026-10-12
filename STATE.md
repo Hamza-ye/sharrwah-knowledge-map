@@ -106,6 +106,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript.
 
 **Agents running when last checked (12 October 2026, 18:53 UTC):**
+- **Stage 1 pass 2, second inspection:** agent `a813c69e893cc2926`. It writes no file. If it was stopped, run it again.
 - **Pilot phase B:** one agent (`a9e10fcc19233f104`), on `studies/subjects/S-01/briefs/B-variation-points.md`, writing `variation-points.tsv`, `variants.tsv` and `notes-b.md`.
 - **Stage 1 pass 1:** parts D and E. Parts A, B, C and F are done.
   - Agents: D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`.
