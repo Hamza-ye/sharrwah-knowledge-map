@@ -37,3 +37,5 @@ One line per item: `n`, folder, what was read, and the rows it gave.
 - 141 `141-play.google.com` (jeeey shopping app): read (`text.txt`). Live page. Conditions YQ-E031 to YQ-E033; citations YE-E043 to YE-E045.
 - 142 `142-play.google.com` (ONE Cash agent and merchant app): read (`text.txt`). Live page. Conditions YQ-E034 to YQ-E039; citations YE-E046 to YE-E055.
 - 143 `143-play.google.com` (ONE Cash customer app, Arabic): read (`text.txt`). Live page; reviews carry their own dates. Conditions YQ-E040 to YQ-E057; citations YE-E056 to YE-E075.
+- 144 `144-play.google.com` (ONE Cash customer app, English): read (`text.txt`). Live page. Conditions YQ-E058 to YQ-E073; citations YE-E076 to YE-E094.
+- 145 `145-press.un.org`: not readable. The run's result is "blocked from here" (HTTP 406; the browser failed too); the folder has no text file. 0 conditions.
