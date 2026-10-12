@@ -23,11 +23,15 @@ This is Q2's first step, as agreed with the founder:
 2. **Axis.** A candidate the evidence shows in at least two states.
    - Merge two candidates into one axis only when every source that gives a state of one also gives the other's matching state.
    - List each merge in `notes.md`.
-3. **Constant.** A condition a source states for the whole market, shown in no other state. It goes in `constants.tsv`, not on an axis.
+3. **Constant.** A condition a source states, in the words you quote, for Yemen as a whole, and that no source shows in another state. It goes in `constants.tsv`, not on an axis.
 4. **State labels.** A state is a short label in English, with the source's own words in parentheses where it has them.
-   - **A place.** When a source ties a state to a place, the label ends with ` @ <place>`, naming the place in the source's own words. A state with no place holds for the whole market.
+   - **A place.** When a source ties a state to a place, the label ends with ` @ <place>`, naming the place in the source's own words. An axis state with no place holds for the whole market.
+   - **Same place.** Two places are the same only when they are named identically.
    - **Same label everywhere.** Use the same label everywhere it appears.
 5. **When a state held.** Date each state by when its source says it held, or by the source's date if it doesn't say.
+   - **Still holds.** A state the source says still holds takes the source's date.
+   - **A range.** A state given for a range of dates takes the range's end.
+   - **Precision.** Dates of different precision are compared at the coarser one, so 2024 and March 2024 tie.
    - **A source's date,** in this order:
      - its effective date;
      - otherwise its published date;
@@ -36,12 +40,13 @@ This is Q2's first step, as agreed with the founder:
    - **Other undated sources** come last.
    - **`date_basis`** says which applies.
    - **Age.** A source's age never discounts it.
-6. **Today.** An axis's `today` is the state with the latest date.
-   - **Places.** When the latest states hold in different places at the same time, `today` lists each of them, joined by ` + `.
+6. **Today.** An axis's `today` joins, with ` + `, the latest-dated state of each place.
+   - **No place.** States with no place count as one more place: the whole market.
+   - **A later state with no place** supersedes older states for named places.
    - **Disputed.** Two sources with the same latest date that give different states for the same place make `today` read `disputed`. Record both, and don't resolve them.
 7. **Today's case, `YC-00`,** puts every axis at its `today`. It is the one anchor case.
 8. **Further cases** are built in two ways and no others:
-   - **One case per non-today state** of each axis, with every other axis at today's state. When an axis is `disputed`, each of its disputed states counts as non-today.
+   - **One case per non-today state** of each axis, with every other axis at today's state. When an axis is `disputed`, each of its disputed states counts as non-today. On an axis whose `today` joins places, a state for a place replaces only that place's part.
    - **One case per combination** of states that a single source shows holding at one time. The axes that source doesn't give stay at today's state.
 
    Skip a case that duplicates another. A case's `name` lists only the states that differ from today, for example `YA-03=<label>`.

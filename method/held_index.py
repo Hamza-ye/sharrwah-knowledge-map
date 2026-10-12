@@ -164,3 +164,20 @@ class Held:
 def describe(h):
     where = f"{h['repo']}@{h['commit'][:8]}:" if h["commit"] else f"{h['repo']}:"
     return f"{where}{h['location']} ({h['kind']}, {h['status']})"
+
+if __name__ == "__main__":
+    # Usage: python3 -I method/held_index.py URL [URL ...]
+    # Prints where each address is held, best readable form first. A "warc" location is read with
+    # python3 -I method/warc_text.py <repository root> <location> --text
+    import sys
+    here = os.path.dirname(os.path.abspath(__file__))
+    skm = os.path.dirname(here)
+    held = Held({"observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
+                 "observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
+                 "sharrwah-knowledge-map": skm},
+                sorted(glob.glob(os.path.join(skm, "evidence/product-class/runs/*"))))
+    for u in sys.argv[1:]:
+        hs = held.lookup(u)
+        print(u)
+        for h in hs or [None]:
+            print("   not held" if h is None else f"   {'readable' if h['readable'] else 'not readable'}: {describe(h)}")
