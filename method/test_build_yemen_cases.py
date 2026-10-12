@@ -1,6 +1,6 @@
 # Tests method/build_yemen_cases.py against the rules of studies/yemen-cases/brief.md ("The build"), on a small
 # made-up study: each test names the rule it checks. Run: python3 -I method/test_build_yemen_cases.py
-import os, sys, tempfile
+import hashlib, os, sys, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_yemen_cases as B
 
@@ -40,8 +40,22 @@ ROWS = {
     "YQ-A024": ("G1", "banned", "East", "2021-03-01 09:30", "held", "", "s21"),
     "YQ-A025": ("G3", "fee 5%", "West", "no date", "held", "", "s22"),
     "YQ-A026": ("G1", "allowed", "West", "no date", "held", "", "s22"),
+    # G7: an across-Yemen state at a tie (2026 against 2026-10-10) doesn't override a place's own state;
+    # a later one does
+    "YQ-A027": ("G7", "widely used", "across Yemen", "2026", "held", "", "s23"),
+    "YQ-A028": ("G7", "not offered", "Bank A's service", "2026-10-10", "held", "", "s24"),
+    "YQ-A029": ("G7", "offered", "Bank B's service", "2025-06", "held", "", "s25"),
+    # G8: a place whose latest state ended is unknown; the ended state builds a case that occurred
+    "YQ-A030": ("G8", "suspended", "X's service", "2019", "ended", "", "s26"),
+    "YQ-A031": ("G8", "operating", "Y's service", "2024", "held", "", "s27"),
+    # G9: a constant lists only the places where its state is held; the rest go in its note
+    "YQ-A032": ("G9", "required", "North", "2025", "held", "", "s28"),
+    "YQ-A033": ("G9", "required", "South", "2027", "provided for", "", "s29"),
+    # G10: every part disputed: today's case still cites the rows its parts rest on
+    "YQ-A034": ("G10", "yes", "Q", "2025", "held", "", "s30"),
+    "YQ-A035": ("G10", "no", "Q", "2025", "held", "", "s31"),
 }
-GROUPS = ["G1", "G2", "G3", "G4", "G5", "G6"]
+GROUPS = ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"]
 
 def make(study):
     with open(os.path.join(study, "conditions.tsv"), "w") as f:
@@ -72,7 +86,8 @@ def main():
         axes = {r[1]: r for r in out["axes.tsv"]}
         consts = {r[1]: r for r in out["constants.tsv"]}
         cases = out["cases.tsv"]
-        check("axis or constant", (sorted(axes), sorted(consts)), (["G1", "G2", "G3", "G4", "G5"], ["G6"]))
+        check("axis or constant", (sorted(axes), sorted(consts)),
+              (["G1", "G10", "G2", "G3", "G4", "G5", "G7", "G8"], ["G6", "G9"]))
         check("G1 today: latest per place; 2024 and 2024-05 tie, so Coast is disputed",
               axes["G1"][5], "disputed @ Coast + banned @ East + old only @ North + allowed @ South + allowed @ West")
         check("G2 today: a later across-Yemen state supersedes South and North and the undated place; East's later one stands",
@@ -86,6 +101,18 @@ def main():
         check("G6: one shown label is a constant, with the proposed one in its note",
               (consts["G6"][2], consts["G6"][3], consts["G6"][6]),
               ("available", "North; South", "proposed: withdrawn @ South [YE-A022]"))
+        check("G7 today: an across-Yemen state at a tie leaves Bank A's own state; it supersedes Bank B's older one",
+              axes["G7"][5], "widely used + not offered @ Bank A's service")
+        check("G8 today: a place whose latest state ended is unknown", axes["G8"][5],
+              "unknown @ X's service + operating @ Y's service")
+        check("G8: the ended state builds a case that occurred",
+              [c[3] for c in cases if "suspended @ X's service" in c[1]], ["occurred"])
+        check("G9: a constant's place is where it is held; the provided-for state goes in its note",
+              (consts["G9"][3], consts["G9"][6]), ("North", "provided for: required @ South [YE-A033]"))
+        check("G10 today: both states at one date are a dispute", axes["G10"][5], "disputed @ Q")
+        check("today's case cites the rows behind a disputed part",
+              all(x in cases[0][4] for x in ("YE-A034", "YE-A035")), True)
+        check("the axis note gives each part's date", axes["G7"][7].startswith("as of across Yemen: 2026; Bank A's service: 2026-10-10"), True)
         check("G4 lists its proposed state, tagged", "licence and bond @ South (proposed)" in axes["G4"][4], True)
         names = [c[1] for c in cases]
         ax = {r[1]: r[0] for r in out["axes.tsv"]}
@@ -111,7 +138,11 @@ def main():
         check("past the cap, no cases until review-axes.md exists", (len(out2["cases.tsv"]), "stops for review" in summary2), (0, True))
         open(os.path.join(study, "review-axes.md"), "w").write("reviewed")
         out3, _ = B.build(study)
-        check("after the review, the cases are built", len(out3["cases.tsv"]) == len(cases), True)
+        check("a review that doesn't name this axes.tsv's sha256 builds no cases", len(out3["cases.tsv"]), 0)
+        sha = hashlib.sha256(B.render(out2["axes.tsv"], B.HEADS["axes.tsv"]).encode("utf-8")).hexdigest()
+        open(os.path.join(study, "review-axes.md"), "w").write(f"axes.tsv sha256: {sha}\n")
+        out4, _ = B.build(study)
+        check("after the review, the cases are built", len(out4["cases.tsv"]) == len(cases), True)
     print(summary)
     if failures:
         print(f"{len(failures)} failed:\n  " + "\n  ".join(failures))

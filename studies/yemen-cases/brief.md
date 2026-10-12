@@ -14,7 +14,7 @@ This is `PLAN.md` Stage 1. Read only this brief and the evidence named under "In
   Each reads every source in its part, and nothing else. It writes `pass1/conditions-<part>.tsv` and `pass1/citations-<part>.tsv`, numbering its rows `YQ-<part>001…` and `YE-<part>001…`, and `pass1/notes-<part>.md`.
 - **Pass 2** starts after the coordinator has joined pass 1's files into `conditions.tsv` and `citations.tsv`. It adds no citation: what pass 1 didn't find goes in `unknowns.tsv`.
   - Step 2a, one agent: `groups.tsv` and `places.tsv`.
-  - Step 2b, several agents, each given a range of groups: `pass2/states-<k>.tsv` and `pass2/notes-<k>.md`. The coordinator joins the states into `states.tsv`.
+  - Step 2b, several agents, each given a range of groups: `pass2/states-<k>.tsv` and `pass2/notes-<k>.md`, and `pass2/places-<k>.tsv` for any place it adds. The coordinator joins them with `method/join_pass2.py`.
   - The build, run by the coordinator, writes `axes.tsv`, `constants.tsv` and `cases.tsv`.
   - Step 2c, the step 2a agent: `unknowns.tsv` and `notes.md`.
 
@@ -85,37 +85,44 @@ Read `conditions.tsv`, `pass2/wordings.tsv` and the six `pass1/notes-<part>.md`.
    Every pass 1 row is in exactly one group. List each identification across parts in `notes.md`.
 4. **Places.** A state's place is the scope its source gives it. List each place in `places.tsv`, with its `kind`:
    - **`authority`:** `<authority>'s area`, where a rule an authority sets holds. An authority is a body that sets rules: a government and its organs, such as its central bank, ministries and tax authority; or a foreign or international body, for the rules it sets. One governing body has one area, taking in each organ a cited source says belongs to it.
-   - **`service`:** `<party>'s service`, where what a party says of its own service holds.
+   - **`service`:** `<party>'s service`, where what a source says of a named party's own service holds. List one for each party whose service a row describes.
    - **`area`:** an area a source names, such as a city, a governorate, or the areas a side controls.
-5. **Grouping.** Every place pass 1 gives goes in `places.tsv`. Its `grouped` names the place it is one with, or itself, and `why` says why:
-   - **`variant`:** the same name in another form or language, such as a translation or a spelling;
+5. **Grouping.** Every place pass 1 gives goes in `places.tsv`. Its `grouped` names the place it is one with, or itself. A grouping joins places of one kind. `why` says why:
+   - **`variant`:** the same words respelled, reordered, abbreviated or translated. Any other name needs `source`.
    - **`source`:** a single source uses both names for the same area. Cite those citations in `basis`.
-   - **`rule`:** "Yemen", "the Republic" and their variants are `place not stated`. A rule an authority sets takes that authority's area instead (step 2b).
+   - **`rule`:** "Yemen", "the Republic" and their variants, and pass 1's `across Yemen`, are `place not stated`. A rule an authority sets takes that authority's area instead (step 2b).
 
-   Groupings chain, with one exception: a name that sources use for different areas never groups or chains, and stays its own place. One example is a central bank's name without its seat.
+   Groupings chain, with two limits:
+   - **Seat or side.** A body or area named without its seat or side, such as a central bank or a tax authority, groups only on a source that gives its seat or side.
+   - **One area.** A name that sources use for different areas never groups or chains, and stays its own place.
+
+   A rule set by a body whose seat or side no source gives, such as a law of the unified Republic, takes `<body>'s area` and joins neither side.
 
 ### Step 2b: states (several agents, each given a range of groups)
 
 For every row of its groups, an agent writes one line of `pass2/states-<k>.tsv`, with these columns.
 
 **`label`:** the state, short and in English.
-- Rows that state the same thing share one label, word for word.
-- The source's own words, and what a row names inside the state, such as which wallets or which banks, go in `note`.
+- Rows that state the same thing share one label, word for word. Rows that state different things get different labels. When the parties named are what differs, such as which banks may do something, the label names them, or the list that names them.
+- The source's own words go in `note`.
 - Leave the place out: the build adds it.
 - A label never contains `;`, `|`, `[`, `]`, ` + ` or ` @ `.
 
 **`place`:** the first that applies:
 - a rule an authority sets: that authority's area, whatever area its text names;
-- what a party says of its own service: that party's service;
+- what a source says of a named party's own service: that party's service;
 - `across Yemen`: a state that no authority sets and no party says of its own service, whose source says it holds in all of Yemen. Quote those words in `note`;
 - otherwise, the row's place as `places.tsv` groups it.
 
+If an authority's area or a party's service you need isn't in `places.tsv`, add it to `pass2/places-<k>.tsv`, with the same columns, grouped with itself. Step 2c groups variants among the added places.
+
 **`holds`:**
-- **`held`:** a source says or shows that the state held or holds. A rule holds from when its law or decision takes effect.
-- **`provided for`:** an enacted law or issued decision provides for the state, but it hadn't taken effect by its source's date or by 10 October 2026.
+- **`held`:** a source says or shows that the state held or holds. A rule holds once its effective date is on or before its source's date, or a source shows it in effect.
+- **`provided for`:** an enacted law or issued decision provides for the state, its effective date is after its source's date, and no source shows it in effect.
+- **`ended`:** a source says the state held and then ended, such as a suspension lifted or a rule repealed.
 - **`proposed`:** a draft, plan or announcement, not enacted or issued. It is listed on its axis, but is never today and builds no case.
 
-**`now`:** `yes` on the state a source presents as current, when the same source gives an earlier state for the same place with the same `held_at`. Otherwise it is empty.
+**`now`:** `yes` on the state a source presents as current, when the same source gives an earlier state for the same place dated the same at the coarser precision. Otherwise it is empty.
 
 Each agent also writes `pass2/notes-<k>.md`, recording:
 - rows that were hard to label, and why;
@@ -124,25 +131,26 @@ Each agent also writes `pass2/notes-<k>.md`, recording:
 
 ### The build
 
-The coordinator joins the states files into `states.tsv` and runs `python3 -I method/build_yemen_cases.py studies/yemen-cases`. The build writes `axes.tsv`, `constants.tsv` and `cases.tsv`, and nobody edits them by hand. `method/test_build_yemen_cases.py` tests its rules. They are:
+The coordinator runs `python3 -I method/join_pass2.py studies/yemen-cases` after step 2b, and again after step 2c has grouped the added places. It adds step 2b's places to `places.tsv`, and joins the states into `states.tsv`, taking each row to the place it is grouped with. Then it runs `python3 -I method/build_yemen_cases.py studies/yemen-cases`. The build writes `axes.tsv`, `constants.tsv` and `cases.tsv`, and nobody edits them by hand. `method/test_build_yemen_cases.py` tests its rules. They are:
 
 1. **Axis or constant.**
-   - An axis is a condition whose `held` or `provided for` rows carry at least two labels. Its `condition_ids` list every row it rests on.
-   - Any other condition is a constant. It takes its one label, with each place it holds at.
+   - An axis is a condition whose `held`, `ended` or `provided for` rows carry at least two labels. Its `condition_ids` list every row it rests on.
+   - Any other condition is a constant. It takes its one label, with each place where it is `held`. Its `note` lists its other rows.
 2. **State labels** carry ` @ <place>` when they hold for a place.
 3. **Dates.**
-   - A `held_at` that isn't a date counts as undated.
+   - A `held_at` that isn't a date counts as undated. A time of day is ignored, so states on one day tie.
    - No source attests a state after 10 October 2026, when the evidence was captured, so a later date counts as that day.
 4. **Today.** For each axis, `today` joins the latest-dated `held` state of each place with ` + `. `place not stated` counts as one more place.
    - **Overlap.** Parts may overlap: an authority's area, a party's service and a named area can cover the same ground. A part for one place says nothing about another.
-   - **Supersession.** A later `across Yemen` state supersedes older states at every place. No other state supersedes a state at another place.
+   - **Supersession.** An `across Yemen` state supersedes a place's state only when it is strictly later. At a tie, the place's own state stands. No other state supersedes a state at another place.
    - **The `across Yemen` part** stands for the places the axis doesn't name. It is there only when an `across Yemen` state is held.
    - **Precision.** Dates of different precision are compared at the coarser one, so 2024 and March 2024 tie.
    - **Undated.** An undated state can be the latest only where its place has no dated state.
    - **One source, two states.** A source's `now` state replaces that source's other states.
    - **Disputed.** Two different states for the same place at the same latest date make that place's part `disputed @ <place>`. The axis's `note` records both, unresolved.
-   - **Unknown.** A place with no `held` state takes `unknown @ <place>`.
-5. **Stop for review** past 20 axes. The build writes `axes.tsv` and `constants.tsv` and builds no cases until the coordinator has reviewed the axes, in `review-axes.md`. The review changes nothing itself: it may only return groups to step 2a, naming the rule each one breaks.
+   - **Unknown.** A place with no `held` state, or whose latest state `ended`, takes `unknown @ <place>`.
+   - The axis's `note` gives each part's date.
+5. **Stop for review** past 20 axes. The build writes `axes.tsv` and `constants.tsv` and builds no cases until the coordinator has reviewed the axes. The review is recorded in `review-axes.md`, which names the sha256 of the `axes.tsv` it reviewed. The review changes nothing itself: it may only return groups to step 2a, naming the rule each one breaks.
 6. **Today's case, `YC-00`,** puts every axis at its `today`. It is the one anchor case.
 7. **Further cases** are built in two ways and no others:
    - **One per non-today state** of each axis, with every other axis at today's state.
@@ -150,15 +158,15 @@ The coordinator joins the states files into `states.tsv` and runs `python3 -I me
      - A disputed state counts as non-today.
    - **One per combination of `held` states that a single source shows at one dated time.** The axes it doesn't give stay at today's state.
 
-   A `proposed` state builds no case. A case that duplicates another or today's is skipped. A case's `name` lists only the states that differ from today, for example `YA-03=<label>`.
+   A `proposed` state builds no case. A case that duplicates another or today's is skipped. A case's `name` lists only the axes that differ from today, each with its value, for example `YA-03=<label>`.
 8. **Basis** of a further case comes from the states that differ from today. Take the first that applies:
    - `in force`: they all hold now at their place (a disputed state counts);
-   - `occurred`: they all held at some time;
+   - `occurred`: they all held at some time, including states that ended;
    - `provided for`: otherwise.
 
 ### Step 2c: unknowns and notes (the step 2a agent)
 
-After the build, write `unknowns.tsv`, as below, and complete `notes.md`.
+Before the build, group variants among the places step 2b added (`pass2/places-<k>.tsv`). After it, write `unknowns.tsv`, as below, and complete `notes.md`.
 
 ## Inputs
 

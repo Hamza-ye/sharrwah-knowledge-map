@@ -1,14 +1,16 @@
 # Builds Stage 1's axes.tsv, constants.tsv and cases.tsv (studies/yemen-cases/brief.md, "The build") from pass 2's
 # judgments, so that the brief's mechanical rules are applied the same way everywhere:
-#   - a group whose held or provided-for rows carry two or more labels is an axis; otherwise it is a constant;
-#   - today is the latest held state of each place (supersession, precision, disputes and `now` as the brief says);
+#   - a group whose held, ended or provided-for rows carry two or more labels is an axis; otherwise a constant;
+#   - today is the latest held state of each place (supersession, precision, disputes, `now` and ended states
+#     as the brief says);
 #   - the further cases are one per non-today state, then one per combination a single source shows holding at
 #     one time; a proposed state is listed on its axis but is never today and builds no case.
 # Inputs in STUDY_DIR: conditions.tsv and citations.tsv (pass 1, joined), groups.tsv and states.tsv (pass 2).
-# Past MAX_AXES axes it writes no cases (cases.tsv keeps only its header) until review-axes.md exists.
+# Past MAX_AXES axes it writes no cases (cases.tsv keeps only its header) until review-axes.md names the sha256
+# of the axes.tsv it reviewed.
 #
 # Usage: python3 -I method/build_yemen_cases.py STUDY_DIR
-import csv, os, re, sys
+import csv, hashlib, os, re, sys
 from collections import OrderedDict, defaultdict
 
 ACROSS, NOT_STATED = "across Yemen", "place not stated"
@@ -31,7 +33,7 @@ def ids(s):
     return [x for x in re.split(r"[,\s;]+", s or "") if x]
 
 def when(s):
-    """A held_at as (year[, month[, day]]); anything that isn't a date is undated (None)."""
+    """A held_at as (year[, month[, day]]), ignoring any time of day; anything that isn't a date is undated (None)."""
     m = re.match(r"^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?(?:[ T]\d{1,2}:\d{2}(?::\d{2})?)?$", (s or "").strip())
     if not m:
         return None
@@ -59,19 +61,29 @@ def latest(rs):
         return list(rs)                     # an undated state is the latest only where no state is dated
     return [r for r in dated if not any(later(o["when"], r["when"]) for o in dated)]
 
-def settle(rs, place):
-    """The part a place takes: (value, rows it rests on, labels that hold now there)."""
-    held = [r for r in rs if r["holds"] == "held"]
-    if not held:
-        return f"unknown @ {place}", [], set()
-    top = latest(held)
-    # One source, two states: where a source marks one of its states `now`, its other states give way to it.
+def beats(a, b):
+    """Row a is strictly later than row b; a dated row is later than an undated one."""
+    if a["when"] and b["when"]:
+        return later(a["when"], b["when"])
+    return bool(a["when"]) and not b["when"]
+
+def pick(rs):
+    """The latest of the rows that held or ended, after each source's `now` state replaces its others."""
+    top = latest([r for r in rs if r["holds"] in ("held", "ended")])
     nows = [r for r in top if r["now"]]
-    top = [r for r in top if r["now"] or not any(n["sources"] & r["sources"] for n in nows)]
-    if len({r["label"] for r in top}) == 1:
-        own = [r for r in top if r["place"] != ACROSS]
-        return (own or top)[0]["full"], top, {r["full"] for r in top}
-    return f"disputed @ {place}", top, {r["full"] for r in top}
+    return [r for r in top if r["now"] or not any(n["sources"] & r["sources"] for n in nows)]
+
+def settle(own, across, place):
+    """The part a place takes: (value, rows it rests on, labels that hold now there)."""
+    top, acr = pick(own), pick(across)
+    if acr and (not top or all(beats(a, o) for a in acr for o in top)):
+        top = acr                            # an across-Yemen state supersedes only when strictly later
+    held = [r for r in top if r["holds"] == "held"]
+    if not held:                             # nothing held, or the latest state ended
+        return f"unknown @ {place}", top, set()
+    if len({r["label"] for r in held}) == 1:
+        return held[0]["full"], held, {r["full"] for r in held}
+    return f"disputed @ {place}", held, {r["full"] for r in held}
 
 def joined(parts):
     return " + ".join(uniq(parts.values()))
@@ -89,7 +101,7 @@ def build(study):
         cites = ids(c["cite_ids"])
         by_group[s["group_id"]].append({
             "id": s["condition_id"], "label": s["label"], "place": s["place"], "full": full(s["label"], s["place"]),
-            "holds": s["holds"], "now": s["now"] == "yes", "when": when(c["held_at"]),
+            "holds": s["holds"], "now": s["now"] == "yes", "when": when(c["held_at"]), "at": c["held_at"],
             "cites": cites, "sources": frozenset(source[x] for x in cites if x in source)})
     axes, consts = [], []
     for g in groups:
@@ -97,30 +109,32 @@ def build(study):
         if rs:
             shown = {r["label"] for r in rs if r["holds"] != "proposed"}
             (axes if len(shown) > 1 else consts).append((g, rs))
+    cite = lambda rr: ", ".join(uniq(x for r in rr for x in r["cites"]))
 
     out = {"axes.tsv": [], "constants.tsv": [], "cases.tsv": []}
     for n, (g, rs) in enumerate(consts, start=1):
         shown = [r for r in rs if r["holds"] != "proposed"]
-        state = shown[0]["label"] if shown else f"proposed: {rs[0]['label']}"
-        proposed = uniq(f"{r['full']} [{', '.join(r['cites'])}]" for r in rs if r["holds"] == "proposed")
-        out["constants.tsv"].append([f"YK-{n:02d}", g["condition"], state,
-                                     "; ".join(place_order({r["place"] for r in (shown or rs)})),
-                                     ", ".join(r["id"] for r in rs), ", ".join(uniq(x for r in rs for x in r["cites"])),
-                                     ("proposed: " + " | ".join(proposed)) if shown and proposed else ""])
+        held = [r for r in shown if r["holds"] == "held"]
+        others = [f"{r['holds']}: {r['full']} [{', '.join(r['cites'])}]" for r in rs if r["holds"] != "held"]
+        out["constants.tsv"].append([f"YK-{n:02d}", g["condition"], shown[0]["label"] if shown else "proposed",
+                                     "; ".join(place_order({r["place"] for r in held})) or "none held",
+                                     ", ".join(r["id"] for r in rs), cite(rs), "; ".join(uniq(others))])
     info = OrderedDict()
     for n, (g, rs) in enumerate(axes, start=1):
         aid = f"YA-{n:02d}"
         places = place_order({r["place"] for r in rs})
         across = [r for r in rs if r["place"] == ACROSS]
-        parts, rests, live, notes = OrderedDict(), [], set(), []
+        parts, rests, live, notes, dates = OrderedDict(), [], set(), [], []
         for p in places:
             if p == ACROSS:
                 if not any(r["holds"] == "held" for r in across):
                     continue                 # the part for places the axis doesn't name exists only when held
-                v, top, now = settle(across, p)
+                v, top, now = settle(across, [], p)
             else:
-                v, top, now = settle([r for r in rs if r["place"] == p] + across, p)
+                v, top, now = settle([r for r in rs if r["place"] == p], across, p)
             parts[p], rests, live = v, rests + top, live | now
+            if top:
+                dates.append(f"{p}: {', '.join(uniq(r['at'] for r in top))}")
             if v.startswith("disputed @ "):
                 notes.append(f"{v}: " + " / ".join(uniq(r["full"] for r in top)))
         order = sorted(uniq(r["full"] for r in rs),
@@ -129,13 +143,16 @@ def build(study):
         tag = lambda f: " (proposed)" if all(r["holds"] == "proposed" for r in rs if r["full"] == f) else ""
         states_col = " | ".join(f"{f}{tag(f)} [{', '.join(uniq(x for r in rs if r['full'] == f for x in r['cites']))}]"
                                 for f in order)
-        info[aid] = {"rows": rs, "parts": parts, "order": order, "live": live}
+        info[aid] = {"rows": rs, "parts": parts, "order": order, "live": live, "rests": rests}
         out["axes.tsv"].append([aid, g["condition"], g["what_varies"], ", ".join(r["id"] for r in rs), states_col,
-                                joined(parts), ", ".join(uniq(x for r in rests for x in r["cites"])), "; ".join(notes)])
+                                joined(parts), cite(rests), "; ".join(["as of " + "; ".join(dates)] + notes)])
 
-    reviewed = os.path.exists(os.path.join(study, "review-axes.md"))
+    sha = hashlib.sha256(render(out["axes.tsv"], HEADS["axes.tsv"]).encode("utf-8")).hexdigest()
+    review = os.path.join(study, "review-axes.md")
+    reviewed = os.path.exists(review) and sha in open(review, encoding="utf-8").read()
     if len(axes) > MAX_AXES and not reviewed:
-        return out, f"{len(axes)} axes: past {MAX_AXES}, the brief stops for review. No cases were built."
+        return out, (f"{len(axes)} axes: past {MAX_AXES}, the brief stops for review. No cases were built. "
+                     f"A review of this axes.tsv names its sha256 {sha} in review-axes.md.")
 
     today = OrderedDict((aid, joined(i["parts"])) for aid, i in info.items())
     cases, seen = [], {tuple(today.values())}
@@ -159,7 +176,8 @@ def build(study):
         new = [(a, f) for a in changed for f in st[a].split(" + ") if f not in today[a].split(" + ")]
         if all(f in info[a]["live"] for a, f in new):
             basis = "in force"
-        elif all(f in info[a]["live"] or any(r["holds"] == "held" for r in info[a]["rows"] if r["full"] == f) for a, f in new):
+        elif all(f in info[a]["live"] or any(r["holds"] in ("held", "ended") for r in info[a]["rows"] if r["full"] == f)
+                 for a, f in new):
             basis = "occurred"
         else:
             basis = "provided for"
@@ -195,8 +213,7 @@ def build(study):
             add(changes, cites, f"shown together by {s}, held at {'-'.join(f'{x:02d}' for x in w)}")
 
     out["cases.tsv"].append(["YC-00", "today", "; ".join(f"{a}={v}" for a, v in today.items()), "today",
-                             ", ".join(uniq(x for i in info.values() for r in i["rows"] for x in r["cites"]
-                                            if r["full"] in set(i["parts"].values()))), ""])
+                             cite(r for i in info.values() for r in i["rests"]), ""])
     for n, c in enumerate(cases, start=1):
         out["cases.tsv"].append([f"YC-{n:02d}"] + c)
     return out, f"{len(axes)} axes, {len(consts)} constants, {len(cases)} further cases"
