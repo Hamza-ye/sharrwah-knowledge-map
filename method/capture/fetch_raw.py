@@ -18,6 +18,7 @@ def ext_for(ctype):
     if "pdf" in c: return "pdf"
     if "html" in c: return "html"
     if "json" in c: return "json"
+    if "javascript" in c or "ecmascript" in c: return "js"
     if "xml" in c: return "xml"
     if c.startswith("text/"): return "txt"
     if "image/" in c: return c.split("image/")[1].split(";")[0].strip() or "img"

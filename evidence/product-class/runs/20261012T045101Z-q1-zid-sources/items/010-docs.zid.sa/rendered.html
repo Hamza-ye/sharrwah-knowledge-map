@@ -1,0 +1,231 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Authorization
+
+OAuth 2.0 is the industry-standard protocol for authorizing apps, allowing secure access to resources without exposing sensitive data like passwords. It differs from authentication, which verifies the identity of the user or app. 
+
+&lt;Video src="https://app-market.s3.eu-west-1.amazonaws.com/ZAM-Oauth-2-intro.mov"&gt;&lt;/Video&gt;
+
+## Understanding OAuth 2.0 at Zid
+
+At Zid, we use the [**authorization code grant**](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1) type, which is ideal for confidential clients. This method involves redirecting the user to an authorization server, where they grant permissions to your app. Your server-side app must handle this process, as it requires securely managing the Client Secret.
+
+## Key Concepts in Zid’s OAuth 2.0 Flow
+
+- **Authorization Token**: This token grants your app access to the Zid API.
+- **X-MANAGER-TOKEN**: This token allows access to a specific store on the Zid platform. It adds an extra layer of security, particularly when interacting with store-specific resources.
+- **Access-Token**: Used interchangeably with X-MANAGER-TOKEN in Product component API endpoints for technical reasons.
+
+## **Important Requirements:**
+
+&gt; 💡Your app must run server-side because it needs to securely store the Client Secret during this process.
+
+&gt; 💡All API requests into our system require the call to be authorized, usally by sending `Authorization` &amp; `X-Manager-Token` headers
+
+#### What's the difference between Authorization token and X-MANAGER-TOKEN?
+
+Authorization token permits you to access Zid API, while X-MANAGER-TOKEN permits you to access a particular store.
+
+#### What's the difference between X-MANAGER-TOKEN and Access-Token?
+
+There is no difference between them, but we use Access-Token with Product component API endpoints for technical reasons.
+
+## Base URIs
+
+When developing apps on Zid, you’ll work with two main URIs:
+
+1. **Base API URL**: Use this to interact with various resources like orders, products, and coupons.
+    - `https://api.zid.sa/v1`
+2. **Base OAuth Server URL**: This URL is for handling app authentication.
+    - `https://oauth.zid.sa`
+
+&gt; 💡 Please note that the latest version of our API is v1. Older versions are deprecated and should not be used.
+
+### Benefits of Using OAuth 2.0 with Zid
+
+- **Secure Access**: OAuth 2.0 ensures that your app accesses Zid resources securely without exposing sensitive information like passwords.
+- **Scoped Permissions**: Define specific access levels through scopes, allowing merchants to control what data your app can access.
+- **Token-Based Authentication**: Tokens are time-limited, reducing the risk of unauthorized access if a token is compromised. Merchants can revoke access at any time.
+---
+## Implement OAuth 2.0 in your app
+
+### 1- Generate Client ID and Client Secret
+The first step is to retrieve an API id and API secret key, which you get when you create an app. These API credentials identify your app during the authorization process.
+
+- Log in to your [Partner Dashboard.](https://partner.zid.sa/login?redirect=%2F)
+- Click Apps.
+- Choose the type of app that you want to create.
+- Click Create app.
+- Enter the app name, app URL, and allowed redirection URLs for your app.
+- Click Create App.
+- Scroll to API Keys to view your API key and API secret key.
+
+
+
+### 2- Redirect (Ask for merchant permission)
+
+![Screen Shot 2022-02-22 at 4.47.26 PM.png](https://stoplight.io/api/v1/projects/cHJqOjExNjU3OQ/images/ezjn8BoVRAc)
+
+
+The installation process starts with your application via the redirection url, followed by these scenarios:
+
+- Browser redirects to the Authorize endpoint of the OAuth Server (Zid AppMarket)
+- If the merchant isn’t authenticated, the OAuth Server redirects to the Login page 
+- The merchant authenticates, and is redirected back to the OAuth Server
+- The merchant will see the scopes that your application is requesting and approve (or decline)
+- The OAuth Server issues a one time token called an Authorization Code which will be sent to your application in the next step
+
+Here is a code example (PHP/Laravel) of this method:
+
+
+```php
+public function redirect()
+{
+    $queries = http_build_query([
+        'client_id' =&gt; 'your application clint id here ',
+        'redirect_uri' =&gt; 'http://client.test/oauth/callback',
+        'response_type' =&gt; 'code'
+    ]);
+    return redirect('https://oauth.zid.sa' . '/oauth/authorize?' . $queries);
+}
+```
+
+you will construct an API call to our OAuth server along with some required parameters as follows:
+
+```json
+client_id =&gt; your application clinet id from the partner dashboard
+redirect_uri =&gt; an endpoint your application must implemnt (see step 2)
+response_type =&gt; OAuth2 flow to be used
+```
+
+Zid AppMarket supports many scopes to be requested from the merchant; you can select the needed scopes for your application via your application page in the Partner Dashboard 
+
+![App Scopes.png](https://stoplight.io/api/v1/projects/cHJqOjEzODgzMw/images/Gd4VnS6i7IA)
+
+
+### 3- Callback Method (Get the tokens)
+![Screen Shot 2022-02-22 at 4.51.40 PM.png](https://stoplight.io/api/v1/projects/cHJqOjExNjU3OQ/images/u2hauft2ok8)
+
+- Our OAuth server will send the code to your pre-defined method (the callback method)
+- Your app backend makes a POST request to the Token endpoint with the Authorization Code and Client Credentials
+- The OAuth Server validates the code and the credentials, and returns an access token and optionally a refresh token if configured on the client
+- Your App will save the returned token to be used in the future
+
+
+
+Here are code examples of this method.
+
+```PHP
+public function callback(Request $request)
+{
+    $response = Http::post('https://oauth.zid.sa' . '/oauth/token', [
+        'grant_type' =&gt; 'authorization_code',
+        'client_id' =&gt; 48,
+        'client_secret' =&gt; 'LsswUNyWTjyKT9AsXnpsv3FnG4glSNZQ5SM3YRnD',
+        'redirect_uri' =&gt; 'http://client.test/oauth/callback',
+        'code' =&gt; $request-&gt;code // grant code
+    ]);
+    ...
+    // Handle the OAuth server response here
+    ...
+}
+```
+```Python
+import requests
+
+def callback(code):
+    payload = {
+        'grant_type': 'authorization_code',
+        'client_id': 48,
+        'client_secret': 'LsswUNyWTjyKT9AsXnpsv3FnG4glSNZQ5SM3YRnD',
+        'redirect_uri': 'http://client.test/oauth/callback', # Your Application's Callback URI
+        'code': code  # grant code
+    }
+    response = requests.post('https://oauth.zid.sa/oauth/token', data=payload)
+    return response.json()
+```
+```cURL
+curl -X POST https://oauth.zid.sa/oauth/token \
+     -d "grant_type=authorization_code" \
+     -d "client_id=48" \
+     -d "client_secret=LsswUNyWTjyKT9AsXnpsv3FnG4glSNZQ5SM3YRnD" \
+     -d "redirect_uri=http://client.test/oauth/callback" \
+     -d "code=your_authorization_code_here"
+```
+
+&gt; **Note:** In all examples, the payload is sent in the request body, not as query parameters.
+
+the `$response` variable will hold all the needed data to be authenticated into that merchant store; the payload will be as follows:
+```json
+access_token: to be sent with each request
+Authorization: to be sent with each request
+refresh_token: to refresh the token once it is expired
+expires_in: the expiry date for this token (1 year)
+```
+
+#### Authorization token
+Authorization token can be generated directly through our OAuth 2.0 server (once a merchant install your application, you will get this token via the callback method). This token will be used in your outgoing request as the authorization header.
+&lt;!-- theme: warning --&gt;
+&gt; All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
+
+#### X-Manager-Token (access_token)
+This token represnt an extra layer of security, and it is required to send it with `Authorization` token, to illustrate how your api call should look like, take a look on this sample cURL:
+
+```bash
+curl -X GET "https://api.zid.dev/app/v1/managers/account/profile" -H "accept: application/json" -H "X-MANAGER-TOKEN: manger token goes here" -H "Accept-Language: ar" -H "Authorization: Bearer Auth token goes here"
+```
+
+&lt;!-- theme: info --&gt;
+
+&gt; You will need to pass the content of `access_token` under the name `X-Manager-Token`, and `Authorization` for every request.
+
+&lt;!-- theme: warning --&gt;
+
+&gt; Please consider that the manager token expires in 1 year.
+
+&lt;!-- theme: danger --&gt;
+
+&gt; The data returned in this endpoint must be kept in a secure storage, abusing token might block your app.
+
+### 4- Refresh
+
+
+Sooner or later your tokens will expire; in order to refresh them, you build a small method to it as follows:
+
+&lt;!-- theme: danger --&gt;
+
+&gt; Please consider that Refresh Tokens will expire in 1 year so you have to run this function before the year runs out let’s say 10 months or so.
+
+```php
+$response = Http::post("https://oauth.zid.sa/" . 'oauth/token', [
+    'grant_type' =&gt; 'refresh_token',
+    'refresh_token' =&gt; $request-&gt;user()-&gt;token-&gt;refresh_token, // your merchant refresh token
+    'client_id' =&gt; '4', //application client id
+    'client_secret' =&gt; "efefewgfwdyhtrewyutg" ,
+    'redirect_uri' =&gt; 'http://client.test/oauth/callback',
+]);
+```
+---
+## Handling Errors
+While you are testing and developing your application, you could face some issues in the integration or during the OAuth2.0 process. We have listed the most common errors and how to solve them.
+
+![Screen Shot 2022-02-22 at 4.56.20 PM.png](https://stoplight.io/api/v1/projects/cHJqOjExNjU3OQ/images/Xf2nd6XP2lc)
+
+&lt;!-- theme: info --&gt;
+
+&gt; When the merchant uninstall your app, we will send you a webhook with this event and the tokens you have will be invalid.
+
+## Security and Best Practices
+
+- **X-MANAGER-TOKEN**: Ensure this token is kept secure as it provides access to specific store resources.
+- **Secure Storage**: Store all tokens securely to prevent unauthorized access.
+- **Token Expiry**: Monitor token expiry dates and refresh them in a timely manner to maintain uninterrupted access.
+
+Got it! Here's a refined, merged version that sticks strictly to the given information while maintaining clarity:
+
+---
+## Sample Oauth Clients
+We have developed a sample starter app to help you kick-start your integration:
+
+1. Larvel App Sample [Here](https://github.com/zidsa/laravel-sample-app).
+2. Node JS with Express App Sample [Here](https://github.com/zidsa/express-sample-app)
+
+</pre></body></html>

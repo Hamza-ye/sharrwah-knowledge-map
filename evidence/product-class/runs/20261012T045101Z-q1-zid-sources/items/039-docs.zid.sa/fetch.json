@@ -1,0 +1,20 @@
+{
+ "n": 39,
+ "url": "https://docs.zid.sa/list-of-orders.md",
+ "dir": "items/039-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/list-of-orders.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 300881,
+ "cited_in": [
+  "ZD-S-0905",
+  "ZD-S-0906",
+  "ZD-S-0995"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "ae76724cf8910af3588edac612b28b33895fab2762beba0cf0ecad4905ba0445",
+ "raw_ext": "txt"
+}

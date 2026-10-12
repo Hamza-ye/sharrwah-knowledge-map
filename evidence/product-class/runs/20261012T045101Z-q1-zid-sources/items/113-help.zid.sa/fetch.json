@@ -1,0 +1,20 @@
+{
+ "n": 113,
+ "url": "https://help.zid.sa/export-request/",
+ "dir": "items/113-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/export-request/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26220,
+ "cited_in": [
+  "ZD-S-0803",
+  "ZD-S-0804",
+  "ZD-S-0805"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b159cc8b9e41a12e7768dc5a813217182874cf1b3cc30d935a29c73dd42edc63",
+ "raw_ext": "html"
+}

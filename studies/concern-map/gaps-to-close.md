@@ -237,6 +237,43 @@ Gap kinds:
 | WC-C-051 WooPayments payout currency and currency conversion | where it lives | A source that states where WooPayments payout currency and currency conversion sits (product, host, page or code path). | A store with WooPayments: Payments > Settings (payout and currency sections) and the Stripe Express dashboard |
 | WC-C-115 Stripe Radar screening on WooPayments accounts | how it meets the rest | A source that names the API, event, setting or contract at the boundary of Stripe Radar screening on WooPayments accounts. | A store with WooPayments: Payments > Settings > Fraud protection, and a test transaction blocked by Radar |
 
+## Zid
+
+156 gaps: 18 observation needed, 41 stated only in general terms, 97 searched, not found. Who can close them: 0 an agent, 138 either, 18 the founder.
+
+### Ask Zid (the question is not answered on its public pages) (founder, 9)
+
+| Concern | Placement | What would show it | Route |
+| --- | --- | --- | --- |
+| ZD-C-001 Zid Pay activation / تفعيل زد باي | stated reason | Zid's stated reason for having payment gateways approve Zid Pay accounts | help.zid.sa/payment-requirements/; zid.sa/ar/legal/zidpay-terms-conditions-sa/ |
+| ZD-C-003 Zid Pay deposits and account statement / الإيداعات وكشف الحساب | who is legally responsible | Which licensed entity or bank holds collected Zid Pay funds between collection and deposit, and under which licence | zid.sa/ar/legal/zidpay-terms-conditions-sa/; zid.sa/ar/legal/terms-conditions/ (زد باي); help.zid.sa/deposits_zidpay/ |
+| ZD-C-010 Zid Payments Open APIs for payment service providers | who is legally responsible | The agreement between Zid and a payment service provider that implements the Open APIs (parties, liability, licences) | docs.zid.sa/overview-1340225m0.md (no agreement linked) |
+| ZD-C-015 COD collection through Zid shipping / تحصيل الدفع عند الاستلام | who is legally responsible | Which licensed entity or account holds COD amounts that Zid collects before they reach the merchant's wallet | zid.sa/ar/legal/terms-conditions/ (زد شب, خدمة الدفع عند الاستلام (COD)) |
+| ZD-C-017 Zid Wallet (merchant wallet) / محفظة زد | who is legally responsible | Which bank or licensed entity holds the funds behind the wallet's IBAN, and under which licence the wallet operates | zid.sa/ar/legal/terms-conditions/ (محفظة زد); help.zid.sa/zid-wallet/ |
+| ZD-C-037 Zid Pay prohibited activities and sanctions / الأنشطة المحظورة | who is legally responsible | Who screens merchants and buyers against the named sanctions lists (Zid Pay or the payment service provider), and with which tool | zid.sa/ar/legal/zidpay-terms-conditions-sa/; zid.sa/ar/legal/zidpay-terms-conditions-kw/ |
+| ZD-C-041 Cross-border data transfer / نقل البيانات عبر الحدود | where it lives | Where Zid stores merchant and customer data, and in which country or region | zid.sa/en/legal/privacy-policy/ (Data Protection Officer) |
+| ZD-C-060 Zid Logistics and direct shipping / زد لوجستيات وزد شب | who is legally responsible | The names of the carriers behind the 35-carrier contract and which party contracts with each carrier | zid.sa/en/solutions/shipping/; zid.sa/ar/legal/terms-conditions/ (زد شب) |
+| ZD-C-108 Zid POS / زد كاشير | who is legally responsible | Which acquirer or payment provider settles card payments taken on Zid POS payment devices | help.zid.sa/connect-payment-device/; zid.sa/ar/legal/terms-conditions/ (زد كاشير) |
+
+### Open a store with Egypt as its country and record which services the dashboard offers (founder, 1)
+
+| Concern | Placement | What would show it | Route |
+| --- | --- | --- | --- |
+| ZD-C-031 Zid Egypt / زد مصر | who decides | Which Zid services (payments, shipping, plans) a store registered in Egypt can turn on | zid.sa/en/egypt/; dashboard registration for an Egyptian store |
+
+### Record a journey in a store's dashboard on each plan, and with a staff role (founder, 8)
+
+| Concern | Placement | What would show it | Route |
+| --- | --- | --- | --- |
+| ZD-C-062 Store shipping methods / طرق الشحن | who decides | Which plans or staff permissions turn custom shipping methods on | dashboard: لوحة التحكم > اللوجستيات > طرق الشحن |
+| ZD-C-092 Customer self-service portal / بوابة خدمة العملاء الذاتية | who decides | Which plans or settings turn the self-service portal on for a store | help.zid.sa article بوابة خدمة العملاء الذاتيه (لوحة التحكم الجديدة); dashboard |
+| ZD-C-099 Checkout page settings / إعدادات صفحة إتمام عملية الشراء | who decides | Which plans or permissions turn checkout options on | dashboard: لوحة التحكم > الاعدادات (صفحة إتمام الشراء) |
+| ZD-C-101 Gifting / خاصية الإهداء | who decides | Which plans or staff permissions turn it on | help.zid.sa/gift-feature/ |
+| ZD-C-102 URL redirects / خاصية إعادة توجيه الروابط | who decides | Which plans or staff permissions turn it on | help.zid.sa/settings-url-redirects/ |
+| ZD-C-103 Google Maps / تفعيل Google maps | who decides | Which plans or staff permissions turn it on | help.zid.sa/google-maps-2/ |
+| ZD-C-104 Working hours / اوقات العمل الرسمية | who decides | Which plans or staff permissions turn it on | help.zid.sa/working-hours/ |
+| ZD-C-115 Zid Growth / زد نمو | who is legally responsible | The terms shown for each Zid Growth service and the partner named as its provider | Zid merchant dashboard: النمو > خدمات النمو (a service's details before purchase) |
+
 ## BigCommerce
 
 161 gaps: 16 page not read, 59 stated only in general terms, 86 searched, not found. Who can close them: 145 an agent, 0 either, 16 the founder.

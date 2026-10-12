@@ -1,0 +1,18 @@
+{
+ "n": 142,
+ "url": "https://help.zid.sa/orders-properties/",
+ "dir": "items/142-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/orders-properties/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27226,
+ "cited_in": [
+  "ZD-S-0962"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e2c8bedbfb078796ef0b1973bc5e851431eda0cc3d6652510aa452de0b1b22dd",
+ "raw_ext": "html"
+}

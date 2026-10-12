@@ -1,0 +1,24 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 04:53:48 GMT
+content-type: text/html; charset=UTF-8
+strict-transport-security: max-age=0; includeSubDomains
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=FrDexLPPSN0mjY4vDNR0KEqL%2BhW9dYJhaw4iQ2K5oT%2BxQOGvsu7T8yzC7I0p%2FLwziGSIFPHU3M8tVRI%2F%2FuuqYrQMuTKJxgfHETkfuJb6Al2JwsKec1kgigHLZrxh"}]}
+cf-cache-status: DYNAMIC
+set-cookie: __cf_bm=BNBp0J7GT8g0a0iYAPG9gZ31xMm_ztO5oaLrKmSN.ZU-1791780827.618706-1.0.1.1-qh6GzLLYCweZeLQQ5fCCCEIrf2T0gn3TIlBK3A.2KRcsbJ0PbUWZsOUhYAhSJMwHphGZSB.T7xaBkBLOEIGLKi30gocXV4nzgkBJOsdu4zNlwSv_nkHVRf4PcVgu0AQi; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Mon, 12 Oct 2026 05:23:48 GMT
+set-cookie: _cfuvid=deZ4PlcQLVFtTgsCNbmG7j0yxTGs4i_KznLcTgJLT4Q-1791780827.618706-1.0.1.1-DrSTNXSoLb_wywdqS6Q0UlFaTGdxmCmGMm__H1d7rZg; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+link: <https://help.zid.sa/wp-json/>; rel="https://api.w.org/", <https://help.zid.sa/wp-json/wp/v2/zid-faqs/4240>; rel="alternate"; title="JSON"; type="application/json", <https://help.zid.sa/?p=4240>; rel=shortlink
+server: cloudflare
+vary: Accept-Encoding
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+ki-edge-o2o: yes
+x-content-type-options: nosniff
+x-edge-location-klb: 1
+ki-cache-type: None
+ki-edge: v=28.5.1;mv=99.9.9
+ki-origin: g1p
+x-kinsta-cache: MISS
+content-encoding: gzip
+cf-ray: a49380bc9d34820f-IAD
+

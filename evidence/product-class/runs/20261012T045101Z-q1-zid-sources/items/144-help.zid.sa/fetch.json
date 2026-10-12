@@ -1,0 +1,21 @@
+{
+ "n": 144,
+ "url": "https://help.zid.sa/payment-constraints/",
+ "dir": "items/144-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/payment-constraints/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26374,
+ "cited_in": [
+  "ZD-S-0857",
+  "ZD-S-0858",
+  "ZD-S-0859",
+  "ZD-S-0860"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ec581fdc53c4333cb314835b6126d2a77816a443cd5324fbb6dd2e384641e3de",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 171,
+ "url": "https://help.zid.sa/whatsapp/",
+ "dir": "items/171-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/whatsapp/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27164,
+ "cited_in": [
+  "ZD-S-1050"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d4632c919f1d26c039b155a16437ecab2cf946cda4a41b659b003bd9f2f7bb40",
+ "raw_ext": "html"
+}

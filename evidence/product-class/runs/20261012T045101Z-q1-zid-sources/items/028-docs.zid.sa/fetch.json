@@ -1,0 +1,19 @@
+{
+ "n": 28,
+ "url": "https://docs.zid.sa/get-order-credit-notes.md",
+ "dir": "items/028-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/get-order-credit-notes.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 64776,
+ "cited_in": [
+  "ZD-S-0833",
+  "ZD-S-0834"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "abe4564700b1159c25d757c1fe8c4a97a17dc8dd4faf499f0d799993e3d047e2",
+ "raw_ext": "txt"
+}

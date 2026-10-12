@@ -1,0 +1,3801 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Create Order
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/drafts:
+    post:
+      summary: Create Order
+      deprecated: false
+      description: &gt;-
+        This endpoint allows Partners to create orders on behalf of merchants,
+        including products with required customizable fields. 
+
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+
+
+        `third_create_order` - Full read &amp; write access to orders
+         
+        &lt;/Accordion&gt;
+
+
+
+
+
+        :::note[]
+
+        **Note:** If the payment method is set to a payment link, the
+        `payment_link_configs`  must be included inside the `payment_method`
+        object:
+
+
+        ```json
+
+        {
+
+        ...
+          "payment_method": {
+            "id": 636256,
+            "payment_link_configs": {
+              "expiryDateTime": "2026-07-29T22:00:27.901Z"
+            }
+          }
+        }
+
+        ```
+
+        :::
+
+
+        This guide provides a complete process for setting up orders with the
+        correct payment methods and adding customizable fields like text inputs,
+        dropdowns, and checkboxes.
+
+
+        ### **Guide**
+
+
+        1. **Obtain Necessary Scope**: Ensure you have the `order_create` scope
+        enabled in your app via the Partner Dashboard.
+
+        2. **Retrieve Payment Methods**: Use the [List of Payment
+        Methods](https://docs.zid.sa/list-of-payment-method) endpoint to
+        identify available payment methods.
+            - Locate the payment method with the code `"payment_link.zidpay"`:
+                
+                ```json
+                {
+                    "id": 239951,
+                    "enabled": true,
+                    "code": "payment_link.zidpay",
+                    "fees": 0,
+                    "fees_string": "0.00 SAR",
+                    "type": "payment_link",
+                    "name": "إرسال رابط دفع",
+                    "icons": ["&lt;https://media.zid.store/static/paymentLink.svg&gt;"]
+                }
+                
+                ```
+                
+            - Copy the `id` of this ZidPay option for use in the `payment_method` field during order creation.
+        3. **Create the Order**: Follow the instructions below to use the Create
+        Order endpoint.
+      tags:
+        - Default module/Apps/Merchant APIs/Orders
+      parameters:
+        - name: Authorization
+          in: header
+          description: &gt;-
+            Bearer token for API authentication. This token must be obtained via
+            OAuth and should include the necessary scopes.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-MANAGER-TOKEN
+          in: header
+          description: &gt;-
+            Unique manager token used to authorize requests at a manager level,
+            specific to each partner.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept
+          in: header
+          description: &gt;-
+            Specifies the media type that is acceptable for the response, which
+            should be JSON.
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: Specifies the language for the response. Use "ar" for Arabic.
+          required: false
+          example: en
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              description: Request body used to create an order draft.
+              properties:
+                currency_code:
+                  type: string
+                  description: Currency code used for the order.
+                coupon_code:
+                  type: 'null'
+                  description: Coupon code applied to the order, if any.
+                customer:
+                  type: object
+                  description: Customer information for the order.
+                  properties:
+                    full_name:
+                      type: string
+                      description: Customer full name.
+                    mobile_country_code:
+                      type: string
+                      description: Customer mobile country code without the plus sign.
+                    mobile_number:
+                      type: string
+                      description: Customer mobile number.
+                    email:
+                      type: string
+                      description: Customer email address.
+                  required:
+                    - full_name
+                    - mobile_country_code
+                    - mobile_number
+                    - email
+                  x-apidog-orders:
+                    - full_name
+                    - mobile_country_code
+                    - mobile_number
+                    - email
+                  x-apidog-ignore-properties: []
+                consignee:
+                  type: object
+                  description: Consignee contact and delivery address information.
+                  properties:
+                    contact:
+                      type: object
+                      description: Consignee contact information.
+                      properties:
+                        full_name:
+                          type: string
+                          description: Consignee full name.
+                        mobile_country_code:
+                          type: string
+                          description: Consignee mobile country code without the plus sign.
+                        mobile_number:
+                          type: string
+                          description: Consignee mobile number.
+                        email:
+                          type: string
+                          description: Consignee email address.
+                      required:
+                        - full_name
+                        - mobile_country_code
+                        - mobile_number
+                        - email
+                      x-apidog-orders:
+                        - full_name
+                        - mobile_country_code
+                        - mobile_number
+                        - email
+                      x-apidog-ignore-properties: []
+                    address:
+                      type: object
+                      description: Consignee delivery address.
+                      properties:
+                        line_1:
+                          type: string
+                          description: Primary address line.
+                        line_2:
+                          type: string
+                          description: Secondary address line.
+                        city_name:
+                          type: string
+                          description: City name.
+                        country_code:
+                          type: string
+                          description: Country code in ISO 3166-1 alpha-2 format.
+                        lat:
+                          type: 'null'
+                          description: Latitude of the delivery location.
+                        lng:
+                          type: 'null'
+                          description: Longitude of the delivery location.
+                        short_address:
+                          type: 'null'
+                          description: Short address value, if available.
+                        meta:
+                          type: object
+                          description: Additional address metadata.
+                          properties:
+                            postcode:
+                              type: string
+                              description: Postal code of the address.
+                            building_number:
+                              type: string
+                              description: Building number.
+                            additional_number:
+                              type: string
+                              description: Additional address number.
+                            city_name:
+                              type: string
+                              description: City name in the address metadata.
+                          x-apidog-orders:
+                            - postcode
+                            - building_number
+                            - additional_number
+                            - city_name
+                          required:
+                            - postcode
+                            - building_number
+                            - additional_number
+                            - city_name
+                          x-apidog-ignore-properties: []
+                      required:
+                        - line_1
+                        - line_2
+                        - city_name
+                        - country_code
+                        - lat
+                        - lng
+                        - short_address
+                        - meta
+                      x-apidog-orders:
+                        - line_1
+                        - line_2
+                        - city_name
+                        - country_code
+                        - lat
+                        - lng
+                        - short_address
+                        - meta
+                      x-apidog-ignore-properties: []
+                  required:
+                    - contact
+                    - address
+                  x-apidog-orders:
+                    - contact
+                    - address
+                  x-apidog-ignore-properties: []
+                is_gift:
+                  type: boolean
+                  description: Indicates whether the order is a gift.
+                is_gifted_consignee_notifiable:
+                  type: boolean
+                  description: &gt;-
+                    Indicates whether the gift consignee should receive
+                    notifications.
+                products:
+                  type: array
+                  description: List of products included in the order.
+                  items:
+                    type: object
+                    properties:
+                      sku:
+                        type: string
+                        description: Product SKU.
+                      quantity:
+                        type: integer
+                        description: Product quantity.
+                    x-apidog-orders:
+                      - sku
+                      - quantity
+                    x-apidog-ignore-properties: []
+                shipping_method:
+                  type: object
+                  description: Selected shipping method.
+                  properties:
+                    type:
+                      type: string
+                      description: Shipping method type.
+                    id:
+                      type: integer
+                      description: Shipping method ID.
+                  required:
+                    - type
+                    - id
+                  x-apidog-orders:
+                    - type
+                    - id
+                  x-apidog-ignore-properties: []
+                payment_method:
+                  type: object
+                  description: Selected payment method.
+                  properties:
+                    id:
+                      type: integer
+                      description: Payment method ID.
+                    payment_link_configs:
+                      type: object
+                      properties:
+                        expiryDateTime:
+                          type: string
+                          description: (datetime, future).
+                          x-apidog-mock: '{{$date.future}}'
+                          examples:
+                            - '"2026-07-29T22:00:27.901Z"'
+                      x-apidog-orders:
+                        - expiryDateTime
+                      description: Required when payment_method.type is payment_link.
+                      x-apidog-ignore-properties: []
+                  required:
+                    - id
+                  x-apidog-orders:
+                    - id
+                    - payment_link_configs
+                  x-apidog-ignore-properties: []
+                customer_comment:
+                  type: 'null'
+                  description: Optional comment added by the customer.
+                created_by:
+                  type: string
+                  description: &gt;-
+                    Identifier of the user or system that created the draft
+                    order.
+                  examples:
+                    - api
+              required:
+                - currency_code
+                - coupon_code
+                - customer
+                - consignee
+                - is_gift
+                - is_gifted_consignee_notifiable
+                - products
+                - shipping_method
+                - payment_method
+                - customer_comment
+                - created_by
+              x-apidog-orders:
+                - currency_code
+                - coupon_code
+                - customer
+                - consignee
+                - is_gift
+                - is_gifted_consignee_notifiable
+                - products
+                - shipping_method
+                - payment_method
+                - customer_comment
+                - created_by
+              x-apidog-ignore-properties: []
+            example:
+              currency_code: SAR
+              coupon_code: null
+              customer:
+                full_name: John Doe
+                mobile_country_code: '966'
+                mobile_number: '500000005'
+                email: john.doe@example.com
+              consignee:
+                contact:
+                  full_name: John Doe
+                  mobile_country_code: '966'
+                  mobile_number: '500000005'
+                  email: john.doe@example.com
+                address:
+                  line_1: King Fahd Road
+                  line_2: Building 12
+                  city_name: Riyadh
+                  country_code: SA
+                  lat: null
+                  lng: null
+                  short_address: null
+                  meta:
+                    postcode: 89846-6258
+                    building_number: '86'
+                    additional_number: '21'
+                    city_name: Riyad
+              is_gift: false
+              is_gifted_consignee_notifiable: true
+              products:
+                - sku: Z.217795.169603646831188
+                  quantity: 1
+              shipping_method:
+                type: delivery
+                id: 432480
+              payment_method:
+                id: 555224
+                payment_link_configs:
+                  expiryDateTime: '2026-07-29T22:00:27.901Z'
+              customer_comment: null
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Response status indicator.
+                    examples:
+                      - object
+                  order:
+                    $ref: '#/components/schemas/DefaultOrderSerializer'
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        examples:
+                          - object
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    description: Additional response metadata.
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - order
+                  - message
+                description: Response returned after successfully creating a draft order.
+                x-apidog-orders:
+                  - status
+                  - order
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '2':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '3':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '404':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Coupon not found
+        '422':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                      validations:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            field:
+                              type: string
+                            errors:
+                              type: array
+                              items:
+                                type: string
+                          required:
+                            - field
+                            - errors
+                          x-apidog-orders:
+                            - field
+                            - errors
+                          x-apidog-ignore-properties: []
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - validations
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - validations
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Validation Errors
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Orders
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-20612055-run
+components:
+  schemas:
+    DefaultOrderSerializer:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique identifier of the draft order.
+          examples:
+            - 63945643
+        invoice_number:
+          type: integer
+          description: Invoice number generated for the draft order.
+          examples:
+            - 63945643
+        code:
+          type: string
+          description: Public order code.
+          examples:
+            - 4lF4p7HluM
+        store_id:
+          type: integer
+          description: Store identifier where the order was created.
+          examples:
+            - 3
+        order_url:
+          type: string
+          description: Public URL to view the draft order invoice.
+          examples:
+            - https://osama.zid.store/o/4lF4p7HluM/inv
+        store_name:
+          type: string
+          description: Store display name.
+          examples:
+            - متجر أسامة.
+        shipping_method_code:
+          type: string
+          description: Shipping method code applied to the draft order.
+          examples:
+            - custom
+        store_url:
+          type: string
+          description: Public URL of the store.
+          examples:
+            - https://osama.zid.store/
+        currency_code:
+          type: string
+          description: Currency used for the order.
+          examples:
+            - SAR
+          nullable: true
+        order_status:
+          $ref: '#/components/schemas/OrderStatus'
+          description: &gt;-
+            Represents the current internal status of the order (used for system
+            workflows and processing logic).
+        display_status:
+          $ref: '#/components/schemas/OrderDisplayStatus'
+          description: &gt;-
+            Represents the user-facing status of the order, typically shown in
+            the UI.
+        customer:
+          $ref: '#/components/schemas/DefaultOrderCustomerSerializer'
+          description: Contains details of the customer who placed the order.
+        has_different_consignee:
+          type: integer
+          enum:
+            - 0
+            - 1
+          x-apidog-enum:
+            - value: 0
+              name: ''
+              description: ''
+            - value: 1
+              name: ''
+              description: ''
+          description: &gt;-
+            Indicates whether the consignee (receiver) is different from the
+            customer.
+          nullable: true
+        is_guest_customer:
+          type: integer
+          enum:
+            - 0
+            - 1
+          x-apidog-enum:
+            - value: 0
+              name: ''
+              description: ''
+            - value: 1
+              name: ''
+              description: ''
+          description: &gt;-
+            Indicates whether the order was placed by a guest (not logged-in
+            user).
+
+            Values:
+
+            1 → guest customer
+
+            0 → registered customer
+          nullable: true
+        is_gift_order:
+          type: integer
+          enum:
+            - 0
+            - 1
+          x-apidog-enum:
+            - value: 0
+              name: ''
+              description: ''
+            - value: 1
+              name: ''
+              description: ''
+          description: |-
+            Indicates whether the order is a gift order.
+            Values:
+            1 → gift order
+            0 → regular order
+        gift_card_details:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: |-
+            Contains gift card–related details if the order is marked as a gift.
+            Present only when is_gift_order = 1.
+          x-apidog-ignore-properties: []
+          nullable: true
+        consignee:
+          $ref: '#/components/schemas/DefaultOrderConsigneeSerializer'
+          description: &gt;-
+            Details of the person receiving the order.
+
+            May differ from the customer in case of gift orders or alternate
+            delivery.
+        is_quick_checkout_order:
+          type: boolean
+          description: Indicates whether the order was placed using a quick checkout flow.
+        order_total:
+          type: string
+          description: Raw order total value.
+        order_total_string:
+          type: string
+          description: Formatted order total including currency.
+          examples:
+            - 201.86 SAR
+        has_different_transaction_currency:
+          type: boolean
+          description: &gt;-
+            Indicates whether the transaction currency differs from the store
+            currency.
+        transaction_reference:
+          type: string
+          description: Unique reference identifier for the payment transaction.
+          nullable: true
+        transaction_amount:
+          type: number
+          description: Transaction amount calculated for the draft order.
+          examples:
+            - 201.85999896568
+        transaction_amount_string:
+          type: string
+          description: Formatted transaction amount.
+          examples:
+            - 201.86 SAR
+        issue_date:
+          type: string
+          description: Date and time when the order was created or issued.
+        payment_status:
+          type: string
+          description: |-
+            Current payment status of the order.
+            Common values:
+            - pending
+            - paid
+            - failed
+            - refunded
+          examples:
+            - pending
+          enum:
+            - pending
+            - paid
+            - refunded
+            - voided
+          x-apidog-enum:
+            - value: pending
+              name: ''
+              description: ''
+            - value: paid
+              name: ''
+              description: ''
+            - value: refunded
+              name: ''
+              description: ''
+            - value: voided
+              name: ''
+              description: ''
+          nullable: true
+        is_potential_fraud:
+          type: boolean
+          description: Indicates whether the order is flagged as potentially fraudulent.
+        source:
+          type: string
+          description: |-
+            Source from which the order was created.
+            Examples:
+            - web
+            - mobile_app
+            - pos
+            - api
+        source_code:
+          type: string
+          description: Internal code representing the order source.
+          nullable: true
+        is_reseller_transaction:
+          type: boolean
+          description: &gt;-
+            Indicates whether the order is placed as part of a reseller
+            transaction.
+        created_at:
+          type: string
+          description: Timestamp when the draft order was created.
+          examples:
+            - '2026-01-26 10:21:08'
+        updated_at:
+          type: string
+          description: Timestamp of the last update to the draft order.
+          examples:
+            - '2026-01-26 10:21:08'
+        is_on_demand:
+          type: boolean
+          description: &gt;-
+            Indicates whether the order is created as an on-demand order (e.g.,
+            generated manually or via specific workflows rather than standard
+            checkout).
+        import_id:
+          type: string
+          description: &gt;-
+            Identifier used when the order is imported from an external system
+            or integration.
+          nullable: true
+        store_logo:
+          type: string
+          description: URL of the store’s logo associated with the order.
+          nullable: true
+        store_uuid:
+          type: string
+          description: Unique identifier of the store in UUID format.
+          nullable: true
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderTagPresenter'
+          description: List of tags assigned to the order for categorization and filtering.
+        marketing_source:
+          type: object
+          properties:
+            utm_id: &amp;ref_4
+              type: string
+              description: &gt;-
+                UTM campaign ID captured from the customer's visit. Returns an
+                empty string when the value is not available.
+              examples:
+                - ''
+              nullable: true
+            utm_source: &amp;ref_5
+              type: string
+              description: &gt;-
+                UTM source captured from the customer's visit. It identifies the
+                traffic source or advertising platform.
+              examples:
+                - ''
+              nullable: true
+            utm_medium: &amp;ref_6
+              type: string
+              description: &gt;-
+                UTM medium captured from the customer's visit. It identifies the
+                marketing medium used for the visit.
+              examples:
+                - ''
+              nullable: true
+            utm_campaign: &amp;ref_7
+              type: string
+              description: UTM campaign name captured from the customer's visit.
+              examples:
+                - ''
+              nullable: true
+            utm_term: &amp;ref_8
+              type: string
+              description: &gt;-
+                UTM term captured from the customer's visit. Commonly used to
+                identify paid search keywords.
+              examples:
+                - ''
+              nullable: true
+            utm_content: &amp;ref_9
+              type: string
+              description: &gt;-
+                UTM content captured from the customer's visit. Commonly used to
+                differentiate ads, links, or creatives within the same campaign.
+              examples:
+                - ''
+              nullable: true
+            referer: &amp;ref_10
+              type: string
+              description: &gt;-
+                Referrer value captured for the visit. It may indicate the
+                source type or referring page.
+              examples:
+                - organic
+              nullable: true
+            platform: &amp;ref_11
+              type: string
+              description: Platform detected for the customer's visit.
+              examples:
+                - unknown
+              nullable: true
+            device_type: &amp;ref_12
+              type: string
+              description: Device type detected for the customer's visit.
+              examples:
+                - unknown
+              nullable: true
+            browser: &amp;ref_13
+              type: string
+              description: Browser detected for the customer's visit, if available.
+              examples:
+                - null
+              nullable: true
+            os: &amp;ref_14
+              type: string
+              description: &gt;-
+                Operating system detected for the customer's visit, if
+                available.
+              examples:
+                - null
+              nullable: true
+            ip: &amp;ref_15
+              type: string
+              description: IP address captured for the customer's visit, if available.
+              examples:
+                - 192.168.162.93
+              nullable: true
+            ip_country: &amp;ref_16
+              type: string
+              description: Country detected from the captured IP address, if available.
+              examples:
+                - null
+              nullable: true
+            ip_content: &amp;ref_17
+              type: string
+              description: &gt;-
+                Additional IP-based content or location metadata returned by the
+                API, if available.
+              examples:
+                - null
+              nullable: true
+            ip_city: &amp;ref_18
+              type: string
+              description: City detected from the captured IP address, if available.
+              examples:
+                - null
+              nullable: true
+            ip_region: &amp;ref_19
+              type: string
+              description: Region detected from the captured IP address, if available.
+              examples:
+                - null
+              nullable: true
+            ip_timezone: &amp;ref_20
+              type: string
+              description: Timezone detected from the captured IP address, if available.
+              examples:
+                - null
+              nullable: true
+          x-apidog-orders:
+            - 01KX392KBNBMAHC3EDHEGY7HK6
+          x-apidog-refs:
+            01KX392KBNBMAHC3EDHEGY7HK6:
+              $ref: '#/components/schemas/MarketingChannelSource_Order'
+          description: &gt;-
+            Contains marketing attribution details for the order, including
+            campaign, referrer, device, browser, operating system, and
+            location-related source data.
+          required:
+            - utm_id
+            - utm_source
+            - utm_medium
+            - utm_campaign
+            - utm_term
+            - utm_content
+            - referer
+            - platform
+            - device_type
+            - browser
+            - os
+            - ip
+            - ip_country
+            - ip_content
+            - ip_city
+            - ip_region
+            - ip_timezone
+          x-apidog-ignore-properties:
+            - utm_id
+            - utm_source
+            - utm_medium
+            - utm_campaign
+            - utm_term
+            - utm_content
+            - referer
+            - platform
+            - device_type
+            - browser
+            - os
+            - ip
+            - ip_country
+            - ip_content
+            - ip_city
+            - ip_region
+            - ip_timezone
+        requires_shipping:
+          type: boolean
+          description: |-
+            Indicates whether the order requires shipping.
+            Values:
+            true → shipping required
+            false → digital or pickup order
+        should_merchant_set_shipping_method:
+          type: boolean
+          description: &gt;-
+            Indicates whether the merchant needs to manually assign a shipping
+            method.
+
+            Values:
+
+            true → merchant must select shipping method
+
+            false → shipping method already assigned or auto-selected
+        shipping:
+          type: object
+          properties:
+            method:
+              $ref: '#/components/schemas/OrderShippingMethodPresenter'
+            address:
+              $ref: '#/components/schemas/DefaultOrderShippingAddressSerializer'
+          required:
+            - method
+            - address
+          x-apidog-orders:
+            - method
+            - address
+          description: Contains shipping-related details for the order.
+          x-apidog-ignore-properties: []
+        payment:
+          type: object
+          properties:
+            method:
+              $ref: '#/components/schemas/DefaultOrderPaymentMethodSerializer'
+            invoice:
+              type: array
+              items:
+                $ref: '#/components/schemas/DefaultOrderInvoiceItemSerializer'
+            split_payments:
+              type: array
+              items:
+                $ref: '#/components/schemas/SplitPayments'
+          required:
+            - method
+            - invoice
+          x-apidog-orders:
+            - method
+            - invoice
+            - split_payments
+          description: Details of the shipping method used for the order.
+          x-apidog-ignore-properties: []
+        cod_confirmed:
+          type: boolean
+          description: |-
+            Indicates whether a Cash on Delivery (COD) order has been confirmed.
+            Values:
+            true → COD confirmed
+            false → COD not confirmed
+        reverse_order_label_request: &amp;ref_0
+          $ref: '#/components/schemas/OrderReversePresenter'
+          description: &gt;-
+            Contains details of a single reverse order label request (e.g.,
+            return shipment).
+        reverse_order_label_requests:
+          type: array
+          items: *ref_0
+          description: List of all reverse order label requests associated with the order.
+        customer_note:
+          type: string
+          description: &gt;-
+            Note or special instructions provided by the customer during
+            checkout.
+        gift_message:
+          type: string
+          description: Message included with the order if it is marked as a gift.
+          nullable: true
+        payment_link:
+          type: string
+          description: URL that allows the customer to complete payment for the order.
+          nullable: true
+        service_fee_invoice_link:
+          type: string
+          description: If service fee was applied to the order
+          nullable: true
+        weight:
+          type: integer
+          description: Total weight of the order (typically in grams or configured unit).
+          nullable: true
+        weight_cost_details:
+          type: array
+          items:
+            type: string
+          description: Breakdown of weight-based cost calculations applied to the order.
+        currency:
+          $ref: '#/components/schemas/DefaultOrderCurrencySerializer'
+          description: Currency details used for the order, including exchange rates.
+        coupon:
+          anyOf:
+            - $ref: '#/components/schemas/DefaultOrderCouponSerializer'
+            - type: 'null'
+          description: Coupon applied to the order, if any.
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/DefaultOrderProductSerializer'
+          description: List of products included in the draft order.
+        products_count:
+          type: integer
+          description: Total number of products in the draft order.
+          examples:
+            - 1
+        products_sum_total_string:
+          type: string
+          description: &gt;-
+            Formatted total price of all products in the order (excluding
+            shipping, taxes, or additional fees).
+        language:
+          type: string
+          description: |-
+            Language code used for the order.
+            Examples:
+            en → English
+            ar → Arabic
+        histories:
+          type: array
+          items:
+            $ref: '#/components/schemas/DefaultOrderHistorySerializer'
+          description: History log of actions performed on the draft order.
+        product_ids:
+          type: array
+          items:
+            type: string
+          description: List of product identifiers included in the order.
+          nullable: true
+        is_reactivated:
+          type: boolean
+          description: &gt;-
+            Indicates whether the order has been reactivated after being
+            canceled or paused.
+        return_policy:
+          type: string
+          description: Return policy applicable to the order.
+          nullable: true
+        packages_count:
+          type: integer
+          description: Number of packages used to fulfill the order.
+        inventory_address:
+          anyOf:
+            - $ref: '#/components/schemas/InventoryLocationLegacyAdaptorSerializer'
+            - $ref: '#/components/schemas/DefaultInventoryAddressSerializer'
+            - type: 'null'
+          description: |-
+            Inventory location(s) associated with the order.
+            Can be:
+            a single object → one fulfillment location
+            an array → multiple fulfillment locations
+        expected_shipping_method_type:
+          type: string
+          description: |-
+            Expected shipping method type for the order.
+            Examples:
+            delivery
+            pickup
+            express
+          nullable: true
+        reseller_meta:
+          type: array
+          items:
+            type: string
+          description: Additional metadata related to reseller transactions.
+          nullable: true
+        zidship_ticket_number:
+          type: string
+          description: &gt;-
+            Ticket or reference number associated with ZidShip for tracking or
+            support purposes.
+          nullable: true
+        edits_count:
+          type: integer
+          description: Number of times the order has been modified after creation.
+        delivered_at:
+          type: string
+          description: Timestamp indicating when the order was successfully delivered.
+          nullable: true
+        is_marketplace_order:
+          type: boolean
+          description: &gt;-
+            Indicates whether the order was placed through a marketplace
+            integration.
+
+            Values:
+
+            true → marketplace order
+
+            false → direct store order
+        marketplace_commission:
+          $ref: '#/components/schemas/MarketplaceCommission'
+          description: &gt;-
+            Contains commission details deducted by the marketplace for this
+            order.
+
+
+            💡 Present only when is_marketplace_order = true
+        pos_invoice_number:
+          type: string
+          description: Invoice number generated from a POS (Point of Sale) system.
+          nullable: true
+        return_invoice_number:
+          type: string
+          description: Invoice number associated with a return or refund transaction.
+          nullable: true
+        invoice_link:
+          type: string
+          description: URL to download or view the order invoice.
+          nullable: true
+        payment_network:
+          type: string
+          description: |-
+            Name of the payment network used for the transaction.
+            Examples:
+            - visa
+            - mada
+            - mastercard
+            - apple_pay
+          nullable: true
+        digital_products_access_token:
+          type: string
+          description: |-
+            oken used to grant access to digital products included in the order.
+
+            💡 Typically used for:
+
+            - downloadable products
+            - digital content access links
+            - license-based delivery systems
+          nullable: true
+      required:
+        - id
+        - invoice_number
+        - code
+        - store_id
+        - order_url
+        - store_name
+        - shipping_method_code
+        - store_url
+        - currency_code
+        - order_status
+        - display_status
+        - customer
+        - has_different_consignee
+        - is_guest_customer
+        - is_gift_order
+        - gift_card_details
+        - is_quick_checkout_order
+        - order_total
+        - order_total_string
+        - has_different_transaction_currency
+        - transaction_reference
+        - transaction_amount
+        - transaction_amount_string
+        - issue_date
+        - payment_status
+        - is_potential_fraud
+        - source
+        - source_code
+        - is_reseller_transaction
+        - created_at
+        - updated_at
+        - is_on_demand
+        - import_id
+        - tags
+        - marketing_source
+        - requires_shipping
+        - should_merchant_set_shipping_method
+        - shipping
+        - payment
+        - cod_confirmed
+        - reverse_order_label_request
+        - reverse_order_label_requests
+        - customer_note
+        - gift_message
+        - payment_link
+        - weight
+        - weight_cost_details
+        - currency
+        - coupon
+        - products
+        - products_count
+        - products_sum_total_string
+        - language
+        - histories
+        - is_reactivated
+        - return_policy
+        - packages_count
+        - inventory_address
+        - expected_shipping_method_type
+        - reseller_meta
+        - zidship_ticket_number
+        - edits_count
+        - delivered_at
+        - is_marketplace_order
+        - invoice_link
+        - payment_network
+      description: Draft order object that has been created.
+      x-apidog-orders:
+        - id
+        - invoice_number
+        - code
+        - store_id
+        - order_url
+        - store_name
+        - shipping_method_code
+        - store_url
+        - currency_code
+        - order_status
+        - display_status
+        - customer
+        - has_different_consignee
+        - is_guest_customer
+        - is_gift_order
+        - gift_card_details
+        - consignee
+        - is_quick_checkout_order
+        - order_total
+        - order_total_string
+        - has_different_transaction_currency
+        - transaction_reference
+        - transaction_amount
+        - transaction_amount_string
+        - issue_date
+        - payment_status
+        - is_potential_fraud
+        - source
+        - source_code
+        - is_reseller_transaction
+        - created_at
+        - updated_at
+        - is_on_demand
+        - import_id
+        - store_logo
+        - store_uuid
+        - tags
+        - marketing_source
+        - requires_shipping
+        - should_merchant_set_shipping_method
+        - shipping
+        - payment
+        - cod_confirmed
+        - reverse_order_label_request
+        - reverse_order_label_requests
+        - customer_note
+        - gift_message
+        - payment_link
+        - service_fee_invoice_link
+        - weight
+        - weight_cost_details
+        - currency
+        - coupon
+        - products
+        - products_count
+        - products_sum_total_string
+        - language
+        - histories
+        - product_ids
+        - is_reactivated
+        - return_policy
+        - packages_count
+        - inventory_address
+        - expected_shipping_method_type
+        - reseller_meta
+        - zidship_ticket_number
+        - edits_count
+        - delivered_at
+        - is_marketplace_order
+        - marketplace_commission
+        - pos_invoice_number
+        - return_invoice_number
+        - invoice_link
+        - payment_network
+        - digital_products_access_token
+      x-apidog-refs: {}
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    MarketplaceCommission:
+      type: object
+      properties:
+        commission_percentage:
+          type: number
+        commision_amount:
+          type: string
+        tax_percentage:
+          type: integer
+        tax_amount:
+          type: string
+        total:
+          type: string
+      x-apidog-orders:
+        - commission_percentage
+        - commision_amount
+        - tax_percentage
+        - tax_amount
+        - total
+      required:
+        - commission_percentage
+        - commision_amount
+        - tax_percentage
+        - tax_amount
+        - total
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+    DefaultInventoryAddressSerializer:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique identifier of the inventory address.
+        name:
+          type: string
+          description: Name of the inventory address or location.
+        city: &amp;ref_1
+          $ref: '#/components/schemas/CityPresenter'
+          description: City associated with the inventory address.
+        street:
+          type: string
+          description: Street address of the inventory location.
+          nullable: true
+        district:
+          type: string
+          description: District or neighborhood where the inventory location is situated.
+          nullable: true
+        postal_code:
+          type: string
+          description: Postal or ZIP code of the inventory location.
+          nullable: true
+        coordinates:
+          type: object
+          properties:
+            lat:
+              type: number
+              description: Latitude of the location.
+              nullable: true
+            lon:
+              type: number
+              description: Longitude of the location.
+              nullable: true
+          x-apidog-orders:
+            - lat
+            - lon
+          required:
+            - lat
+            - lon
+          description: Geographic coordinates of the inventory address.
+          x-apidog-ignore-properties: []
+        cop_enabled:
+          type: boolean
+          description: Indicates whether Cash on Pickup (COP) is enabled at this location.
+        is_pickup_option:
+          type: boolean
+          description: &gt;-
+            Indicates whether this location is available as a customer pickup
+            point.
+        is_zidship_default:
+          type: boolean
+          description: &gt;-
+            Indicates whether this is the default inventory location used by
+            ZidShip.
+        working_hours:
+          anyOf:
+            - &amp;ref_2
+              $ref: '#/components/schemas/WorkingHours'
+            - type: 'null'
+          description: Defines the operating hours of the inventory location.
+        extra_data:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: &gt;-
+            Additional metadata related to the inventory address. Structure may
+            vary depending on system configuration or integrations.
+          x-apidog-ignore-properties: []
+      x-apidog-orders:
+        - id
+        - name
+        - city
+        - street
+        - district
+        - postal_code
+        - coordinates
+        - cop_enabled
+        - is_pickup_option
+        - is_zidship_default
+        - working_hours
+        - extra_data
+      required:
+        - id
+        - name
+        - city
+        - street
+        - district
+        - postal_code
+        - coordinates
+        - cop_enabled
+        - is_pickup_option
+        - is_zidship_default
+        - working_hours
+        - extra_data
+      description: &gt;-
+        Represents an inventory address such as a warehouse, store, or
+        fulfillment location.
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    WorkingHours:
+      type: object
+      properties:
+        day_name:
+          type: string
+          description: Name of the day.
+        time_from:
+          type: string
+          description: Opening time of the location.
+        time_to:
+          type: string
+          description: Closing time of the location.
+      x-apidog-orders:
+        - day_name
+        - time_from
+        - time_to
+      required:
+        - day_name
+        - time_from
+        - time_to
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+    CityPresenter:
+      type: object
+      properties:
+        name:
+          type: string
+          description: &gt;-
+            Name of the city, written in the language specified by the
+            _Accept-Language_ header parameter; defaults to Arabic if
+            _Accept-Language_ is not specified. (Always "Other" if
+            is_marketplace_order is true)
+          examples:
+            - Other
+        id:
+          type: integer
+          description: Unique identifier of the city
+          examples:
+            - 1
+        national_id:
+          type: integer
+          description: National identifier of the city.
+          examples:
+            - 3
+          nullable: true
+        priority:
+          type: integer
+          description: Priority of the city. Higher number indicates higher priority.
+          examples:
+            - 10
+        country_id:
+          type: integer
+          description: Unique identifier of the country the city is located in
+          examples:
+            - 184
+        country_name:
+          type: string
+          description: Name of the country the city is located in (in Arabic)
+          examples:
+            - السعودية
+          nullable: true
+        country_code:
+          type: string
+          description: Two-letter country code according to ISO 3166-1 alpha-2
+          examples:
+            - SA
+          nullable: true
+        ar_name:
+          type: string
+          description: Name of the city in Arabic
+          examples:
+            - الرياض
+        en_name:
+          type: string
+          description: Name of the city in English
+          examples:
+            - Riyadh
+      required:
+        - name
+        - id
+        - priority
+        - country_id
+        - country_name
+        - country_code
+        - ar_name
+        - en_name
+      x-stoplight:
+        id: 58nkno2i3bgh0
+      x-apidog-orders:
+        - name
+        - id
+        - national_id
+        - priority
+        - country_id
+        - country_name
+        - country_code
+        - ar_name
+        - en_name
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    InventoryLocationLegacyAdaptorSerializer:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the inventory location.
+        name:
+          type: string
+          description: Name of the inventory location.
+        city: *ref_1
+        street:
+          type: string
+          description: Street address of the location.
+          nullable: true
+        district:
+          type: string
+          description: District or neighborhood of the location.
+          nullable: true
+        postal_code:
+          type: string
+          description: Postal or ZIP code of the location.
+          nullable: true
+        coordinates:
+          type: object
+          properties:
+            lat:
+              type: number
+              description: Latitude of the location.
+            lon:
+              type: number
+              description: Longitude of the location.
+          x-apidog-orders:
+            - lat
+            - lon
+          required:
+            - lat
+            - lon
+          description: Geographic coordinates of the inventory location.
+          x-apidog-ignore-properties: []
+        cop_enabled:
+          type: boolean
+          description: Indicates whether Cash on Pickup (COP) is enabled at this location.
+        is_pickup_option:
+          type: boolean
+          description: &gt;-
+            Indicates whether this location can be used as a customer pickup
+            point.
+        is_zidship_default:
+          type: boolean
+          description: &gt;-
+            Indicates whether this is the default location for ZidShip
+            operations.
+        working_hours:
+          type: array
+          items: *ref_2
+          description: Defines the operating hours of the location.
+        full_address:
+          type: string
+          description: Complete formatted address of the location.
+          nullable: true
+        short_address:
+          type: string
+          description: Short, simplified version of the address for quick display.
+          nullable: true
+      x-apidog-orders:
+        - id
+        - name
+        - city
+        - street
+        - district
+        - postal_code
+        - coordinates
+        - cop_enabled
+        - is_pickup_option
+        - is_zidship_default
+        - working_hours
+        - full_address
+        - short_address
+      required:
+        - id
+        - name
+        - city
+        - street
+        - district
+        - postal_code
+        - coordinates
+        - cop_enabled
+        - is_pickup_option
+        - is_zidship_default
+        - working_hours
+        - full_address
+        - short_address
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderHistorySerializer:
+      type: object
+      properties:
+        order_status_id:
+          type: integer
+          description: &gt;-
+            Unique identifier of the order status at the time of this history
+            entry.
+          nullable: true
+        order_status_name:
+          type: string
+          examples:
+            - New
+          description: Human-readable name of the order status.
+        changed_by_id:
+          type: integer
+          description: &gt;-
+            Identifier of the entity (user, system, or service) that made the
+            change.
+          nullable: true
+        changed_by_type:
+          type: string
+          description: Type of entity that performed the action.
+          enum:
+            - Admin
+            - Customer
+            - System
+            - Integration
+          x-apidog-enum:
+            - value: Admin
+              name: ''
+              description: ''
+            - value: Customer
+              name: ''
+              description: ''
+            - value: System
+              name: ''
+              description: ''
+            - value: Integration
+              name: ''
+              description: ''
+          nullable: true
+        changed_by_details:
+          type: object
+          properties:
+            action:
+              type: string
+              description: The action performed on the order.
+            by:
+              type: string
+              description: Name or identifier of the entity who performed the action.
+            comment:
+              type: string
+              description: Comment or note associated with the action.
+          required:
+            - action
+            - by
+            - comment
+          x-apidog-orders:
+            - action
+            - by
+            - comment
+          description: Detailed information about the action performed on the order.
+          x-apidog-ignore-properties: []
+        comment:
+          type: string
+          examples:
+            - Order has been created.
+          nullable: true
+        created_at:
+          type: string
+          examples:
+            - '2026-01-26 10:21:10'
+          description: Timestamp indicating when the history entry was created.
+        humanized_created_at:
+          type: string
+          examples:
+            - 1 second ago
+          description: Human-readable representation of the creation time.
+      x-apidog-orders:
+        - order_status_id
+        - order_status_name
+        - changed_by_id
+        - changed_by_type
+        - changed_by_details
+        - comment
+        - created_at
+        - humanized_created_at
+      required:
+        - order_status_id
+        - order_status_name
+        - changed_by_id
+        - changed_by_type
+        - changed_by_details
+        - comment
+        - created_at
+        - humanized_created_at
+      description: &gt;-
+        Represents a single event in the order lifecycle, including status
+        changes and actions performed on the order.
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderProductSerializer:
+      type: object
+      properties:
+        id:
+          type: string
+          examples:
+            - 003140e2-9d8e-462d-b823-373407746871
+          description: Unique identifier of the product (variant-level).
+          nullable: true
+        order_product_id:
+          type: integer
+          description: Unique identifier of the product within the order.
+        parent_id:
+          type: string
+          description: ID of the parent product (for variants).
+          nullable: true
+        parent_name:
+          type: string
+          description: Name of the parent product.
+          nullable: true
+        review_url:
+          type: string
+          description: &gt;-
+            URL of the storefront page where the customer can submit a review
+            for this product. Returned when the order status is delivered and
+            product reviews are enabled for the store; otherwise, null. The
+            customer must be signed in to the storefront to submit the review.
+          examples:
+            - 'null'
+          nullable: true
+        product_class:
+          type: string
+          description: Product classification (e.g., simple, variable, digital).
+          nullable: true
+        name:
+          type: string
+          description: Product name.
+          examples:
+            - طقم سفر للحواجب سوبرستار من بنفت
+        short_description:
+          type: object
+          properties:
+            ar:
+              type: string
+              description: Arabic description
+            en:
+              type: string
+              description: English description
+          x-apidog-orders:
+            - ar
+            - en
+          required:
+            - ar
+            - en
+          description: Localized short description.
+          x-apidog-ignore-properties: []
+          nullable: true
+        sku:
+          type: string
+          description: Product Stock Keeping Unit.
+          examples:
+            - Z.217795.169603646831188
+          nullable: true
+        barcode:
+          type: string
+          description: Product barcode (EAN/UPC).
+          nullable: true
+        custom_fields:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductCustomFieldsSerializer'
+          description: Custom fields attached to the product.
+        quantity:
+          type: integer
+          description: Quantity of the product in the draft order.
+          examples:
+            - 1
+        weight:
+          anyOf:
+            - $ref: '#/components/schemas/ProductWeight'
+            - type: 'null'
+          description: Product weight details.
+        is_taxable:
+          type: boolean
+          description: Indicates whether tax applies.
+        is_discounted:
+          type: boolean
+          description: Indicates if product has discount applied.
+        vouchers:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductVouchersSerializer'
+          description: Voucher details for digital products.
+        downloadables:
+          type: array
+          items: &amp;ref_3
+            properties:
+              download_url:
+                type: string
+              download_limit:
+                type: integer
+                nullable: true
+              download_requests_count:
+                type: integer
+                nullable: true
+              expiration_period:
+                type: integer
+                nullable: true
+              is_external:
+                type: boolean
+              display_name:
+                type: string
+            x-apidog-orders:
+              - download_url
+              - download_limit
+              - download_requests_count
+              - expiration_period
+              - is_external
+              - display_name
+            required:
+              - download_url
+              - download_limit
+              - download_requests_count
+              - expiration_period
+              - is_external
+              - display_name
+            $ref: '#/components/schemas/ProductDownloadablesSerializer'
+          description: Downloadable files linked to the product.
+        downloadables_zipped:
+          type: array
+          items: *ref_3
+          description: Same structure as downloadables, but provided as compressed bundle.
+        meta:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: Additional product metadata.
+          x-apidog-ignore-properties: []
+          nullable: true
+        is_external_product:
+          type: boolean
+          description: Indicates if product is externally managed.
+        discounts:
+          anyOf:
+            - type: array
+              items:
+                type: string
+            - type: object
+              properties:
+                coupon:
+                  $ref: '#/components/schemas/ProductCouponDiscout'
+                  description: Coupon details applied to the product.
+              x-apidog-orders:
+                - coupon
+              x-apidog-ignore-properties: []
+          description: &gt;-
+            Discount breakdown applied to the product. The structure varies
+            depending on the discount type.
+        net_price_with_additions:
+          type: number
+          description: &gt;-
+            Product price excluding tax, including any additional charges (e.g.,
+            options, add-ons).
+        net_price_with_additions_string:
+          type: string
+          description: Formatted version of net_price_with_additions.
+        price_with_additions:
+          type: number
+          description: Product price including tax and additional charges.
+        price_with_additions_string:
+          type: string
+          description: Formatted version of price_with_additions.
+        net_price:
+          anyOf:
+            - type: string
+            - type: number
+          description: Product price excluding tax.
+        net_price_string:
+          type: string
+          description: Formatted net price.
+        net_sale_price:
+          type: string
+          description: Discounted net price.
+          nullable: true
+        net_sale_price_string:
+          type: string
+          description: Formatted version of net_sale_price.
+          nullable: true
+        net_additions_price:
+          type: integer
+          description: Additions excluding tax.
+          nullable: true
+        net_additions_price_string:
+          type: string
+          description: Formatted version of net_additions_price
+          nullable: true
+        gross_price:
+          type: number
+          description: Price including tax.
+        gross_price_string:
+          type: string
+          description: Discounted gross price.
+        gross_sale_price:
+          type: string
+          description: Discounted price including tax (gross) after applying all discounts.
+          nullable: true
+        gross_sale_price_string:
+          type: string
+          description: ormatted version of gross_sale_price for display.
+          nullable: true
+        price_before:
+          type: number
+          description: Original unit price before discount.
+          nullable: true
+        price_before_string:
+          type: string
+          description: Formatted version of the original unit price.
+          nullable: true
+        total_before:
+          type: number
+          description: Total before discount.
+          nullable: true
+        total_before_string:
+          type: string
+          description: Additions including tax.
+          nullable: true
+        gross_additions_price:
+          type: integer
+          description: &gt;-
+            Total additional charges including tax (e.g., add-ons,
+            customization).
+          nullable: true
+        gross_additions_price_string:
+          type: string
+          description: Formatted version of gross_additions_price.
+          nullable: true
+        discount_percentage:
+          type: number
+          description: Percentage discount applied to the product.
+        tax_percentage:
+          type: number
+          description: Tax percentage applied to the product.
+          examples:
+            - 0.15
+        tax_amount:
+          anyOf:
+            - type: string
+              nullable: true
+            - type: number
+              nullable: true
+          description: Total tax amount.
+        tax_amount_string:
+          type: string
+          description: Formatted tax amount.
+          examples:
+            - 26.03 SAR
+          nullable: true
+        tax_amount_string_per_item:
+          type: string
+          description: Tax per item (formatted).
+        discounted_tax_amount:
+          type: number
+          description: Tax amount after applying discounts.
+        discounted_tax_amount_string:
+          type: string
+          description: Formatted version of discounted tax.
+        discounted_tax_amount_string_per_item:
+          type: string
+          description: Discounted tax per item (formatted).
+        price:
+          type: number
+          description: Unit price including VAT.
+          examples:
+            - 199.55999896568
+        price_string:
+          type: string
+          description: Formatted unit price.
+          examples:
+            - 199.56 SAR
+        additions_price:
+          type: number
+          description: Additional charges (e.g., options).
+        additions_price_string:
+          type: string
+          description: &gt;-
+            Formatted value of additional charges applied to the product (e.g.,
+            options or add-ons).
+        total:
+          type: number
+          description: Total price (price × quantity).
+        total_string:
+          type: string
+          description: Formatted total.
+        discounted_total:
+          type: number
+          description: Final total price after applying all discounts.
+        discounted_total_string:
+          type: string
+          description: Formatted version of the discounted total.
+        images:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                description: Unique identifier of the image.
+              origin:
+                type: string
+                description: URL of the original image.
+              thumbs:
+                type: object
+                properties:
+                  fullSize:
+                    type: string
+                    description: URL of the full-size image.
+                  thumbnail:
+                    type: string
+                    description: URL of the thumbnail-sized image.
+                  small:
+                    type: string
+                    description: URL of the small-sized image.
+                  medium:
+                    type: string
+                    description: URL of the medium-sized image.
+                  large:
+                    type: string
+                    description: URL of the large-sized image.
+                required:
+                  - fullSize
+                  - thumbnail
+                  - small
+                  - medium
+                  - large
+                x-apidog-orders:
+                  - fullSize
+                  - thumbnail
+                  - small
+                  - medium
+                  - large
+                description: Object containing multiple resized versions of the image.
+                x-apidog-ignore-properties: []
+            x-apidog-orders:
+              - id
+              - origin
+              - thumbs
+            x-apidog-ignore-properties: []
+          description: List of product images.
+        options:
+          type: array
+          items:
+            type: string
+          description: Selected product options (e.g., size, color).
+      x-apidog-orders:
+        - id
+        - order_product_id
+        - parent_id
+        - parent_name
+        - review_url
+        - product_class
+        - name
+        - short_description
+        - sku
+        - barcode
+        - custom_fields
+        - quantity
+        - weight
+        - is_taxable
+        - is_discounted
+        - vouchers
+        - downloadables
+        - downloadables_zipped
+        - meta
+        - is_external_product
+        - discounts
+        - net_price_with_additions
+        - net_price_with_additions_string
+        - price_with_additions
+        - price_with_additions_string
+        - net_price
+        - net_price_string
+        - net_sale_price
+        - net_sale_price_string
+        - net_additions_price
+        - net_additions_price_string
+        - gross_price
+        - gross_price_string
+        - gross_sale_price
+        - gross_sale_price_string
+        - price_before
+        - price_before_string
+        - total_before
+        - total_before_string
+        - gross_additions_price
+        - gross_additions_price_string
+        - discount_percentage
+        - tax_percentage
+        - tax_amount
+        - tax_amount_string
+        - tax_amount_string_per_item
+        - discounted_tax_amount
+        - discounted_tax_amount_string
+        - discounted_tax_amount_string_per_item
+        - price
+        - price_string
+        - additions_price
+        - additions_price_string
+        - total
+        - total_string
+        - discounted_total
+        - discounted_total_string
+        - images
+        - options
+      required:
+        - id
+        - order_product_id
+        - parent_id
+        - parent_name
+        - review_url
+        - product_class
+        - name
+        - short_description
+        - sku
+        - custom_fields
+        - quantity
+        - weight
+        - is_taxable
+        - is_discounted
+        - meta
+        - discounts
+        - net_price_with_additions
+        - net_price_with_additions_string
+        - price_with_additions
+        - price_with_additions_string
+        - net_price
+        - net_price_string
+        - net_sale_price
+        - net_sale_price_string
+        - net_additions_price
+        - net_additions_price_string
+        - gross_price
+        - gross_price_string
+        - gross_sale_price
+        - gross_sale_price_string
+        - price_before
+        - price_before_string
+        - total_before
+        - total_before_string
+        - gross_additions_price
+        - gross_additions_price_string
+        - tax_percentage
+        - tax_amount
+        - tax_amount_string
+        - tax_amount_string_per_item
+        - discounted_tax_amount
+        - discounted_tax_amount_string
+        - discounted_tax_amount_string_per_item
+        - price
+        - price_string
+        - additions_price
+        - additions_price_string
+        - total
+        - total_string
+        - discounted_total
+        - discounted_total_string
+        - images
+        - options
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductCouponDiscout:
+      type: object
+      properties:
+        amount:
+          type: number
+          description: Total discount amount applied to the product.
+        percentage:
+          type: number
+          description: Discount percentage applied to the product.
+        unit_amount:
+          type: number
+          description: Discount amount applied per unit of the product.
+      x-apidog-orders:
+        - amount
+        - percentage
+        - unit_amount
+      required:
+        - amount
+        - percentage
+        - unit_amount
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductDownloadablesSerializer:
+      type: object
+      properties:
+        download_url:
+          type: string
+          description: File URL
+        download_limit:
+          type: integer
+          description: Max downloads allowed
+          nullable: true
+        download_requests_count:
+          type: integer
+          description: Current usage
+          nullable: true
+        expiration_period:
+          type: integer
+          description: Expiry in days
+          nullable: true
+        is_external:
+          type: boolean
+          description: External link flag
+        display_name:
+          type: string
+          description: File name
+      x-apidog-orders:
+        - download_url
+        - download_limit
+        - download_requests_count
+        - expiration_period
+        - is_external
+        - display_name
+      required:
+        - download_url
+        - download_limit
+        - download_requests_count
+        - expiration_period
+        - is_external
+        - display_name
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductVouchersSerializer:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Voucher ID
+        product_id:
+          type: string
+          description: Related product ID
+        status:
+          type: string
+          description: Voucher status
+        order:
+          type: integer
+          description: Order ID
+          nullable: true
+        serial_number:
+          type: string
+          description: Unique serial
+          nullable: true
+        key:
+          type: string
+          description: Activation key
+        pin_code:
+          type: string
+          description: PIN (if applicable)
+          nullable: true
+        expires_at:
+          type: string
+          description: Expiry timestamp
+          nullable: true
+        updated_at:
+          type: string
+          description: updated timestamps
+        created_at:
+          type: string
+          description: created timestamps
+        expires_at_formatted:
+          type: string
+          description: expiry timestamps
+          nullable: true
+      x-apidog-orders:
+        - id
+        - product_id
+        - status
+        - order
+        - serial_number
+        - key
+        - pin_code
+        - expires_at
+        - updated_at
+        - created_at
+        - expires_at_formatted
+      required:
+        - id
+        - product_id
+        - status
+        - order
+        - serial_number
+        - key
+        - pin_code
+        - expires_at
+        - updated_at
+        - created_at
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductWeight:
+      type: object
+      description: Weight of the product.
+      properties:
+        value:
+          type: number
+          description: The numerical value of the weight.
+          examples:
+            - 1.2
+        unit:
+          type: string
+          description: The unit of measurement for the weight.
+          examples:
+            - kg
+      x-stoplight:
+        id: kkyu2p7mpw77s
+      x-apidog-orders:
+        - value
+        - unit
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductCustomFieldsSerializer:
+      type: object
+      properties:
+        type:
+          type: string
+          description: &gt;-
+            Defines the data type of the custom field value. This determines how
+            the value should be interpreted and displayed.
+        value:
+          type: string
+          description: &gt;-
+            Raw value of the custom field as stored in the system. This value is
+            typically unformatted and should be used for logic or processing.
+        formatted_value:
+          type: string
+          description: &gt;-
+            Human-readable version of the value, formatted for display in UI.
+            May include localization, labels, or formatting applied based on the
+            field type.
+
+            Example:
+        name:
+          type: string
+          description: &gt;-
+            Internal name or key of the custom field. Used for system-level
+            identification and integrations.
+          nullable: true
+        label:
+          type: string
+          description: Display label of the custom field shown to end users.
+          nullable: true
+      x-apidog-orders:
+        - type
+        - value
+        - formatted_value
+        - name
+        - label
+      required:
+        - type
+        - value
+        - formatted_value
+        - name
+        - label
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderCouponSerializer:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: &gt;-
+            Unique identifier of the coupon applied to the order. Used
+            internally to reference the coupon.
+          nullable: true
+        code:
+          type: string
+          description: Coupon code entered by the customer during checkout.
+        name:
+          type: string
+          description: &gt;-
+            Display name of the coupon. This may be shown in the UI or order
+            summary.
+        discount:
+          type: string
+          description: &gt;-
+            Raw discount value applied by the coupon. Typically represents a
+            numeric amount or percentage, returned as a string for consistency.
+        discount_string:
+          type: string
+          description: &gt;-
+            Formatted version of the discount value for display purposes.
+            Includes currency symbols or percentage formatting.
+      x-apidog-orders:
+        - id
+        - code
+        - name
+        - discount
+        - discount_string
+      required:
+        - id
+        - code
+        - name
+        - discount
+        - discount_string
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderCurrencySerializer:
+      type: object
+      properties:
+        order_currency:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the currency.
+            code:
+              type: string
+              description: ISO currency code (e.g., SAR, USD, AED).
+            exchange_rate:
+              type: number
+              description: &gt;-
+                Exchange rate applied to the order currency relative to the
+                store currency.
+              nullable: true
+          required:
+            - id
+            - code
+            - exchange_rate
+          x-apidog-orders:
+            - id
+            - code
+            - exchange_rate
+          description: Represents the currency in which the order was placed and paid.
+          x-apidog-ignore-properties: []
+        order_store_currency:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the store currency.
+            code:
+              type: string
+              description: ISO currency code of the store.
+            exchange_rate:
+              type: number
+              description: &gt;-
+                Exchange rate of the store currency relative to the order
+                currency. Typically 1 when both currencies are the same.
+              nullable: true
+          required:
+            - id
+            - code
+            - exchange_rate
+          x-apidog-orders:
+            - id
+            - code
+            - exchange_rate
+          description: Represents the store’s base currency.
+          x-apidog-ignore-properties: []
+      required:
+        - order_currency
+        - order_store_currency
+      x-apidog-orders:
+        - order_currency
+        - order_store_currency
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderReversePresenter:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the reverse order label request.
+        store_id:
+          type: string
+          description: &gt;-
+            Unique identifier of the store associated with the reverse label
+            request.
+        order_id:
+          type: integer
+          description: Unique identifier of the related order.
+        is_partial:
+          type: integer
+          description: Indicates whether the reverse request is for a partial order return.
+        consignee_name:
+          type: string
+          description: Name of the consignee associated with the reverse shipment request.
+        consignee_mobile:
+          type: string
+          description: &gt;-
+            Mobile number of the consignee associated with the reverse shipment
+            request.
+        consignee_city:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: &gt;-
+            City information of the consignee associated with the reverse
+            shipment request.
+          x-apidog-ignore-properties: []
+          nullable: true
+        consignee_address_1:
+          type: string
+          description: Primary address line of the consignee (customer).
+        consignee_address_2:
+          type: string
+          description: &gt;-
+            Secondary address line of the consignee (customer). Typically used
+            for apartment numbers, building names, or additional location
+            details.
+        inventory_address_id:
+          type: integer
+          description: &gt;-
+            Unique identifier of the inventory address from which the return
+            will be processed.
+          nullable: true
+        inventory_location_id:
+          type: string
+          description: &gt;-
+            Identifier of the specific inventory location (warehouse, branch, or
+            fulfillment center) handling the reverse order.
+          nullable: true
+        inventory:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: &gt;-
+            Object containing inventory-related details for the reverse process.
+            This may include stock adjustments, warehouse metadata, or internal
+            handling info depending on implementation.
+          x-apidog-ignore-properties: []
+          nullable: true
+        reason:
+          type: array
+          items:
+            type: string
+          description: &gt;-
+            List of reasons provided for returning the order or products.
+            Multiple reasons can be included if applicable.
+        shipping_method:
+          type: string
+          description: &gt;-
+            The shipping method used for the reverse order (return shipment).
+            This should match supported shipping methods configured in the
+            system.
+          nullable: true
+        waybill:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: &gt;-
+            Object containing shipment tracking and logistics details for the
+            return.
+          x-apidog-ignore-properties: []
+          nullable: true
+        products:
+          type: array
+          items:
+            type: object
+            properties: {}
+            x-apidog-orders: []
+            x-apidog-ignore-properties: []
+          description: &gt;-
+            List of products included in the reverse order. Each object
+            represents a product being returned, including quantity and
+            identifiers.
+      x-apidog-orders:
+        - id
+        - store_id
+        - order_id
+        - is_partial
+        - consignee_name
+        - consignee_mobile
+        - consignee_city
+        - consignee_address_1
+        - consignee_address_2
+        - inventory_address_id
+        - inventory_location_id
+        - inventory
+        - reason
+        - shipping_method
+        - waybill
+        - products
+      required:
+        - id
+        - store_id
+        - order_id
+        - is_partial
+        - consignee_name
+        - consignee_mobile
+        - consignee_city
+        - consignee_address_1
+        - consignee_address_2
+        - inventory_address_id
+        - inventory_location_id
+        - inventory
+        - reason
+        - shipping_method
+        - waybill
+        - products
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+    SplitPayments:
+      type: object
+      properties:
+        name:
+          type: string
+        code:
+          type: string
+        amount:
+          type: number
+        amount_string:
+          type: string
+        near_pay_transaction_uuid:
+          type: string
+        near_pay_transaction_details:
+          type: string
+      x-apidog-orders:
+        - name
+        - code
+        - amount
+        - amount_string
+        - near_pay_transaction_uuid
+        - near_pay_transaction_details
+      required:
+        - name
+        - code
+        - amount
+        - amount_string
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderInvoiceItemSerializer:
+      type: object
+      properties:
+        code:
+          type: string
+          description: &gt;-
+            Internal identifier for the invoice item. Used to categorize or
+            reference the type of charge or value (e.g., subtotal, tax,
+            discount).
+          nullable: true
+        value:
+          type: string
+          description: &gt;-
+            Raw value of the invoice item. Typically represents a numeric amount
+            but returned as a string for consistency.
+        value_string:
+          type: string
+          description: &gt;-
+            Formatted version of the value for display purposes, including
+            currency symbols or localization.
+        title:
+          type: string
+          description: &gt;-
+            Human-readable label for the invoice item, typically used in UI or
+            invoices.
+      required:
+        - code
+        - value
+        - value_string
+        - title
+      x-apidog-orders:
+        - code
+        - value
+        - value_string
+        - title
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderPaymentMethodSerializer:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Display name of the payment method used for the order.
+          nullable: true
+        code:
+          type: string
+          enum:
+            - hyperpay
+            - payfort
+            - paytabs
+            - payfort_fort_sadad
+            - payfort_visa_master_mada
+            - gate2play_visa_master_mada
+            - moyasar
+            - moyasar_visa_master_mada
+            - zidpay
+            - payment_link.zidpay
+            - gate2play
+            - zid_sadad
+            - prepaid_stcpay
+            - tap
+            - tap_visa_master_mada
+            - tamara
+            - tabby
+            - mispay
+            - zid_bank_transfer
+            - bank_transfer
+            - zid_cod
+            - zid_cop
+            - pos-cash
+            - pos-terminal
+            - pos
+            - pos-cc
+            - pos-nearpay
+            - pos-split
+            - pos-terminal-surepay
+            - pos-pm
+            - prepaid_mazeed
+            - pp_standard
+            - free_checkout
+            - pos-tamara
+            - emkan
+            - pos-payment-link
+            - prepaid_amazon
+            - madfu
+            - pos-tabby
+            - prepaid_trendyol
+            - prepaid_import
+            - prepaid_subscription
+            - payfort_fort
+            - cod
+          x-apidog-enum:
+            - value: hyperpay
+              name: Hyperpay
+              description: ''
+            - value: payfort
+              name: Payfort
+              description: ''
+            - value: paytabs
+              name: PayTabs
+              description: ''
+            - value: payfort_fort_sadad
+              name: Payfort
+              description: ''
+            - value: payfort_visa_master_mada
+              name: Payfort
+              description: ''
+            - value: gate2play_visa_master_mada
+              name: Hyperpay
+              description: ''
+            - value: moyasar
+              name: Moyasar
+              description: ''
+            - value: moyasar_visa_master_mada
+              name: Moyasar
+              description: ''
+            - value: zidpay
+              name: ZidPay
+              description: ''
+            - value: payment_link.zidpay
+              name: ZidPay
+              description: ''
+            - value: gate2play
+              name: Hyperpay
+              description: ''
+            - value: zid_sadad
+              name: zid Sadad
+              description: ''
+            - value: prepaid_stcpay
+              name: prepaid_stcpay
+              description: ''
+            - value: tap
+              name: Tap
+              description: ''
+            - value: tap_visa_master_mada
+              name: Tap
+              description: ''
+            - value: tamara
+              name: Tamara
+              description: ''
+            - value: tabby
+              name: Tabby
+              description: ''
+            - value: mispay
+              name: Mispay
+              description: ''
+            - value: zid_bank_transfer
+              name: Bank Transfer
+              description: ''
+            - value: bank_transfer
+              name: bank_transfer
+              description: ''
+            - value: zid_cod
+              name: Cash on Delivery
+              description: ''
+            - value: zid_cop
+              name: Cash on Pickup
+              description: ''
+            - value: pos-cash
+              name: POS-CASH
+              description: ''
+            - value: pos-terminal
+              name: POS TERMINAL
+              description: ''
+            - value: pos
+              name: POS
+              description: ''
+            - value: pos-cc
+              name: POS CC
+              description: ''
+            - value: pos-nearpay
+              name: POS nearpay
+              description: ''
+            - value: pos-split
+              name: POS Split
+              description: ''
+            - value: pos-terminal-surepay
+              name: POS Terminal Surepay
+              description: ''
+            - value: pos-pm
+              name: POS-PM
+              description: ''
+            - value: prepaid_mazeed
+              name: prepaid_mazeed
+              description: ''
+            - value: pp_standard
+              name: pp_standard
+              description: ''
+            - value: free_checkout
+              name: free_checkout
+              description: ''
+            - value: pos-tamara
+              name: POS TAMARA
+              description: ''
+            - value: emkan
+              name: Emkan
+              description: ''
+            - value: pos-payment-link
+              name: Pos Payment Link
+              description: ''
+            - value: prepaid_amazon
+              name: Prepaid Amazon
+              description: ''
+            - value: madfu
+              name: Madfu
+              description: ''
+            - value: pos-tabby
+              name: Pos Tabby
+              description: ''
+            - value: prepaid_trendyol
+              name: Prepaid Trendyol
+              description: ''
+            - value: prepaid_import
+              name: Prepaid Import
+              description: ''
+            - value: prepaid_subscription
+              name: Prepaid Subscription
+              description: ''
+            - value: payfort_fort
+              name: Payfort
+              description: ''
+            - value: cod
+              name: COD
+              description: ''
+          description: &gt;-
+            Internal code representing the payment method. Used for integrations
+            and system-level identification.
+        type:
+          type: string
+          description: Type/category of the payment method.
+        cart_payment_request_token:
+          type: string
+          description: If showing a single order and the payment method is online payment
+          nullable: true
+        transaction_status:
+          type: string
+          description: if order payment method is a banck transfer
+        transaction_status_name:
+          type: string
+          description: if order payment method is a banck transfer
+        transaction_bank:
+          type: string
+          description: if order payment method is a banck transfer
+          nullable: true
+        transaction_slip:
+          type: string
+          description: if order payment method is a banck transfer
+          nullable: true
+        transaction_sender_name:
+          type: string
+          description: if order payment method is a banck transfer
+          nullable: true
+        updated_at:
+          type: string
+          description: if order payment method is a banck transfer
+          nullable: true
+      required:
+        - name
+        - code
+        - type
+      x-apidog-orders:
+        - name
+        - code
+        - type
+        - cart_payment_request_token
+        - transaction_status
+        - transaction_status_name
+        - transaction_bank
+        - transaction_slip
+        - transaction_sender_name
+        - updated_at
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderShippingAddressSerializer:
+      type: object
+      properties:
+        formatted_address:
+          type: string
+          description: Formatted full shipping address.
+          nullable: true
+        street:
+          type: string
+          description: Street name or primary address line.
+        district:
+          type: string
+          description: District or area of the shipping address.
+        lat:
+          type: number
+          description: Latitude coordinate of the shipping address.
+          nullable: true
+        lng:
+          type: number
+          description: &gt;-
+            Longitude coordinate of the shipping address location. Used for
+            mapping, delivery routing, and logistics optimization.
+          nullable: true
+        short_address:
+          type: string
+          description: &gt;-
+            A concise, human-readable version of the shipping address. Typically
+            used for quick display in UI or summaries.
+          nullable: true
+        meta:
+          type: object
+          properties:
+            building_number:
+              type: string
+              description: Building number of the shipping address.
+              nullable: true
+            postcode:
+              type: string
+              description: Postal or ZIP code of the address.
+              nullable: true
+            additional_number:
+              type: string
+              description: &gt;-
+                Additional number used in certain national addressing systems
+                (e.g., Saudi address system).
+              nullable: true
+            city_name:
+              type: string
+              description: Name of the city as provided in the address metadata.
+              nullable: true
+          x-apidog-orders:
+            - building_number
+            - postcode
+            - additional_number
+            - city_name
+          description: &gt;-
+            Additional structured address details, typically aligned with
+            national addressing systems (e.g., Saudi National Address).
+          x-apidog-ignore-properties: []
+          nullable: true
+        city:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the city.
+            name:
+              type: string
+              description: Name of the city.
+              nullable: true
+          required:
+            - id
+            - name
+          x-apidog-orders:
+            - id
+            - name
+          description: Object representing the city associated with the shipping address.
+          x-apidog-ignore-properties: []
+        country:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the country.
+            name:
+              type: string
+              description: Name of the country.
+              nullable: true
+          required:
+            - id
+            - name
+          x-apidog-orders:
+            - id
+            - name
+          description: Object representing the country of the shipping address.
+          x-apidog-ignore-properties: []
+      required:
+        - formatted_address
+        - street
+        - district
+        - lat
+        - lng
+        - city
+        - country
+      x-apidog-orders:
+        - formatted_address
+        - street
+        - district
+        - lat
+        - lng
+        - short_address
+        - meta
+        - city
+        - country
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderShippingMethodPresenter:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique identifier of the shipping method.
+          nullable: true
+        name:
+          type: string
+          description: Display name of the shipping method.
+          nullable: true
+        code:
+          type: string
+          description: &gt;-
+            Internal code representing the shipping method. Used for
+            integrations and system-level identification.
+          nullable: true
+        estimated_delivery_time:
+          type: string
+          description: Estimated delivery duration for the shipment.
+          nullable: true
+        icon:
+          type: string
+          description: URL or identifier for the shipping method icon.
+        is_system_option:
+          type: boolean
+          description: &gt;-
+            Indicates whether the shipping method is a predefined system option
+            or a custom method.
+        waybill:
+          type: string
+          description: Waybill number associated with the shipment.
+          nullable: true
+        had_errors_while_fetching_waybill:
+          type: boolean
+          description: &gt;-
+            Indicates whether there were errors while retrieving the waybill
+            from the shipping provider.
+        waybill_tracking_id:
+          type: string
+          description: Tracking identifier used by the shipping provider.
+          nullable: true
+        has_waybill_and_packing_list:
+          type: boolean
+          description: Indicates whether both the waybill and packing list are available.
+        tracking:
+          type: object
+          properties:
+            number:
+              type: string
+              description: Shipment tracking number.
+              nullable: true
+            status:
+              type: string
+              description: Current status of the shipment.
+              nullable: true
+            url:
+              type: string
+              description: URL to track the shipment externally.
+              nullable: true
+          required:
+            - number
+            - status
+            - url
+          x-apidog-orders:
+            - number
+            - status
+            - url
+          description: Object containing shipment tracking details.
+          x-apidog-ignore-properties: []
+        order_shipping_status:
+          type: string
+          description: High-level shipping status of the order.
+          nullable: true
+        inventory_address:
+          anyOf:
+            - type: array
+              items:
+                type: string
+              nullable: true
+            - type: object
+              properties:
+                street:
+                  type: string
+                  nullable: true
+                lat:
+                  type: number
+                  nullable: true
+                lng:
+                  type: number
+                  nullable: true
+              x-apidog-orders:
+                - street
+                - lat
+                - lng
+              required:
+                - street
+                - lat
+                - lng
+              x-apidog-ignore-properties: []
+          description: |-
+            Represents the inventory address associated with the shipment.
+            Can either be:
+            - A list of address lines, or
+            - A structured object containing location details.
+        courier:
+          $ref: '#/components/schemas/ShippingMethodCourier'
+          description: Information about the courier service provider.
+        return_shipment:
+          type: array
+          items:
+            type: string
+          description: List of return shipment identifiers or references.
+          nullable: true
+        packages_count:
+          type: integer
+          description: Number of packages included in the shipment.
+          nullable: true
+      required:
+        - id
+        - name
+        - code
+        - estimated_delivery_time
+        - icon
+        - is_system_option
+        - waybill
+        - had_errors_while_fetching_waybill
+        - waybill_tracking_id
+        - has_waybill_and_packing_list
+        - tracking
+        - courier
+        - return_shipment
+        - packages_count
+      x-apidog-orders:
+        - id
+        - name
+        - code
+        - estimated_delivery_time
+        - icon
+        - is_system_option
+        - waybill
+        - had_errors_while_fetching_waybill
+        - waybill_tracking_id
+        - has_waybill_and_packing_list
+        - tracking
+        - order_shipping_status
+        - inventory_address
+        - courier
+        - return_shipment
+        - packages_count
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ShippingMethodCourier:
+      type: object
+      properties:
+        name:
+          type: object
+          properties:
+            ar:
+              type: string
+              nullable: true
+            en:
+              type: string
+              nullable: true
+          x-apidog-orders:
+            - ar
+            - en
+          description: Localized name of the courier.
+          x-apidog-ignore-properties: []
+          nullable: true
+        code:
+          type: string
+          description: Internal courier code.
+          nullable: true
+        logo:
+          type: string
+          description: URL of the courier logo.
+          nullable: true
+        identifier:
+          type: string
+          description: Unique identifier of the courier in the system.
+          nullable: true
+      x-apidog-orders:
+        - name
+        - code
+        - logo
+        - identifier
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+    MarketingChannelSource_Order:
+      type: object
+      properties:
+        utm_id: *ref_4
+        utm_source: *ref_5
+        utm_medium: *ref_6
+        utm_campaign: *ref_7
+        utm_term: *ref_8
+        utm_content: *ref_9
+        referer: *ref_10
+        platform: *ref_11
+        device_type: *ref_12
+        browser: *ref_13
+        os: *ref_14
+        ip: *ref_15
+        ip_country: *ref_16
+        ip_content: *ref_17
+        ip_city: *ref_18
+        ip_region: *ref_19
+        ip_timezone: *ref_20
+      required:
+        - utm_id
+        - utm_source
+        - utm_medium
+        - utm_campaign
+        - utm_term
+        - utm_content
+        - referer
+        - platform
+        - device_type
+        - browser
+        - os
+        - ip
+        - ip_country
+        - ip_content
+        - ip_city
+        - ip_region
+        - ip_timezone
+      x-apidog-orders:
+        - utm_id
+        - utm_source
+        - utm_medium
+        - utm_campaign
+        - utm_term
+        - utm_content
+        - referer
+        - platform
+        - device_type
+        - browser
+        - os
+        - ip
+        - ip_country
+        - ip_content
+        - ip_city
+        - ip_region
+        - ip_timezone
+      description: &gt;-
+        Marketing source details captured for the order, including UTM
+        parameters, referrer, platform, device, browser, operating system, IP
+        address, and IP-based location metadata.
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderTagPresenter:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the tag.
+        name:
+          type: string
+          description: Name of the tag used to label orders.
+        store_id:
+          type: string
+          description: Identifier of the store to which this tag belongs.
+        user_id:
+          type: string
+          description: Identifier of the user who created or owns the tag.
+        orders:
+          type: array
+          items:
+            type: string
+          description: List of order identifiers associated with this tag.
+          nullable: true
+      x-apidog-orders:
+        - id
+        - name
+        - store_id
+        - user_id
+        - orders
+      required:
+        - id
+        - name
+        - store_id
+        - user_id
+        - orders
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderConsigneeSerializer:
+      type: object
+      properties:
+        name:
+          type: string
+          description: &gt;-
+            Full name of the consignee (customer) receiving the order. This
+            should match the name used for delivery and verification purposes.
+        email:
+          type: string
+          description: &gt;-
+            Email address of the consignee. Used for order notifications,
+            updates, and communication related to the delivery or return
+            process.
+        mobile:
+          type: string
+          description: &gt;-
+            Mobile phone number of the consignee, including country code if
+            applicable. This is used by shipping providers for delivery
+            coordination and contact.
+      x-apidog-orders:
+        - name
+        - email
+        - mobile
+      required:
+        - name
+        - email
+        - mobile
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderCustomerSerializer:
+      type: object
+      properties:
+        id:
+          type: integer
+          examples:
+            - 1441
+          description: Unique identifier of the customer.
+        name:
+          type: string
+          examples:
+            - John Doe
+          description: Full name of the customer.
+        email:
+          type: string
+          examples:
+            - test@mail.com
+          description: Email address of the customer.
+          nullable: true
+        mobile:
+          type: string
+          examples:
+            - '966123456789'
+          description: Mobile phone number of the customer.
+          nullable: true
+        note:
+          type: string
+          examples:
+            - ''
+          description: &gt;-
+            Additional notes or instructions provided by the customer during
+            checkout.
+        verified:
+          type: integer
+          description: &gt;-
+            Indicates whether the customer is verified, 1 means customer is
+            verified, 0 means is not verified
+          enum:
+            - 1
+            - 0
+          x-apidog-enum:
+            - value: 1
+              name: verified
+              description: ''
+            - value: 0
+              name: unverified
+              description: ''
+        type:
+          type: string
+          description: Type of customer.
+          examples:
+            - individual
+          enum:
+            - individual
+            - business
+          x-apidog-enum:
+            - value: individual
+              name: ''
+              description: ''
+            - value: business
+              name: ''
+              description: ''
+          nullable: true
+        business_name:
+          type: string
+          description: &gt;-
+            Business name of the customer. Only applicable when type =
+            "business".
+          nullable: true
+        tax_number:
+          type: string
+          description: &gt;-
+            Tax identification number of the customer. Applicable for business
+            customers.
+          nullable: true
+        commercial_registration:
+          type: string
+          description: &gt;-
+            Commercial registration number of the business. Applicable when type
+            = "business".
+          nullable: true
+      required:
+        - id
+        - name
+        - email
+        - mobile
+        - note
+        - type
+      description: Customer information associated with the draft order.
+      x-apidog-orders:
+        - id
+        - name
+        - email
+        - mobile
+        - note
+        - verified
+        - type
+        - business_name
+        - tax_number
+        - commercial_registration
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderDisplayStatus:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Display status identifier.
+          examples:
+            - 1
+        code:
+          type: string
+          description: Display status code.
+          examples:
+            - new
+        color:
+          type: string
+          description: Hex color used for displaying status in UI.
+          examples:
+            - '#3498db'
+          nullable: true
+        name:
+          type: string
+          description: Display name of the status.
+          examples:
+            - جديد
+          nullable: true
+      required:
+        - id
+        - code
+        - color
+        - name
+      description: Display configuration for the order status.
+      x-apidog-orders:
+        - id
+        - code
+        - color
+        - name
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderStatus:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Human-readable order status.
+          examples:
+            - جديد
+        code:
+          type: string
+          description: Order status code.
+          examples:
+            - new
+      required:
+        - name
+        - code
+      description: Current status of the draft order.
+      x-apidog-orders:
+        - name
+        - code
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

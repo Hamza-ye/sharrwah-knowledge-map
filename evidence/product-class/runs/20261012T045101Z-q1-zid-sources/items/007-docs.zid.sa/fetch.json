@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://docs.zid.sa/app-management-3013257f0.md",
+ "dir": "items/007-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/app-management-3013257f0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 375,
+ "cited_in": [
+  "ZD-S-0683"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5fe5a1908c9e6623e2dfbf8d26b08b09386625a052b4dd696fb930cadfa292f0",
+ "raw_ext": "txt"
+}

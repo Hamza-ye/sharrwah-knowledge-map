@@ -1,0 +1,772 @@
+# Validate Order Request
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/drafts/validate:
+    post:
+      summary: Validate Order Request
+      deprecated: false
+      description: >-
+        This endpoint allows Partners to validate an order request details
+        before submitting the order to the create order endpoint. 
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+
+
+        `third_create_order` - Full read & write access to orders
+         
+        </Accordion>
+
+
+        :::note[]
+
+        **Note:** Please note that if the payment method is set to a `payment
+        link`, the following configuration must be added:
+
+
+        ```json
+
+        "payment_link_configs": {
+           "expiryDateTime": "2024-12-10T13:00:49.947Z"
+        }
+
+        ```
+
+        :::
+
+
+        This guide provides a complete process for setting up orders with the
+        correct payment methods and adding customizable fields like text inputs,
+        dropdowns, and checkboxes.
+
+
+        ### **Guide**
+
+
+        1. **Obtain Necessary Scope**: Ensure you have the `order_create` scope
+        enabled in your app via the Partner Dashboard.
+
+        2. **Retrieve Payment Methods**: Use the [List of Payment
+        Methods](https://docs.zid.sa/list-of-payment-method) endpoint to
+        identify available payment methods.
+            - Locate the payment method with the code `"payment_link.zidpay"`:
+                
+                ```json
+                {
+                    "id": 239951,
+                    "enabled": true,
+                    "code": "payment_link.zidpay",
+                    "fees": 0,
+                    "fees_string": "0.00 SAR",
+                    "type": "payment_link",
+                    "name": "إرسال رابط دفع",
+                    "icons": ["<https://media.zid.store/static/paymentLink.svg>"]
+                }
+                
+                ```
+                
+            - Copy the `id` of this ZidPay option for use in the `payment_method` field during order creation.
+        3. **Create the Order**: Follow the instructions below to use the Create
+        Order endpoint.
+      tags:
+        - Default module/Apps/Merchant APIs/Orders
+      parameters:
+        - name: Authorization
+          in: header
+          description: >-
+            Bearer token for API authentication. This token must be obtained via
+            OAuth and should include the necessary scopes.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-MANAGER-TOKEN
+          in: header
+          description: >-
+            Unique manager token used to authorize requests at a manager level,
+            specific to each partner.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept
+          in: header
+          description: >-
+            Specifies the media type that is acceptable for the response, which
+            should be JSON.
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: Specifies the language for the response. Use "ar" for Arabic.
+          required: false
+          example: en
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                currency_code:
+                  type: string
+                  description: >-
+                    The currency code used for the order amount. Use a valid ISO
+                    currency code.
+                  examples:
+                    - SAR
+                coupon_code:
+                  type: string
+                  description: >-
+                    The coupon code applied to the order. Set to null if no
+                    coupon is applied.
+                  examples:
+                    - null
+                  nullable: true
+                created_by:
+                  type: string
+                  description: Identifies the source or user that created the order.
+                  examples:
+                    - api
+                customer:
+                  type: object
+                  description: Customer information for the person placing the order.
+                  properties:
+                    full_name:
+                      type: string
+                      description: The full name of the customer.
+                      examples:
+                        - John Doe
+                    mobile_country_code:
+                      type: string
+                      description: The customer mobile country code without the plus sign.
+                      examples:
+                        - '966'
+                    mobile_number:
+                      type: string
+                      description: The customer mobile number without the country code.
+                      examples:
+                        - '500000005'
+                    email:
+                      type: string
+                      description: >-
+                        The customer email address. Set to null if not
+                        available.
+                      examples:
+                        - john.doe@example.com
+                      nullable: true
+                  required:
+                    - full_name
+                    - mobile_country_code
+                    - mobile_number
+                  x-apidog-orders:
+                    - full_name
+                    - mobile_country_code
+                    - mobile_number
+                    - email
+                  x-apidog-ignore-properties: []
+                consignee:
+                  type: object
+                  description: Consignee information for the person receiving the order.
+                  properties:
+                    contact:
+                      type: object
+                      description: Contact details of the consignee.
+                      properties:
+                        full_name:
+                          type: string
+                          description: The full name of the consignee.
+                          examples:
+                            - John Doe
+                        mobile_country_code:
+                          type: string
+                          description: >-
+                            The consignee mobile country code without the plus
+                            sign.
+                          examples:
+                            - '966'
+                        mobile_number:
+                          type: string
+                          description: >-
+                            The consignee mobile number without the country
+                            code.
+                          examples:
+                            - '500000005'
+                        email:
+                          type: string
+                          description: >-
+                            The consignee email address. Set to null if not
+                            available.
+                          examples:
+                            - john.doe@example.com
+                          nullable: true
+                      required:
+                        - full_name
+                        - mobile_country_code
+                        - mobile_number
+                      x-apidog-orders:
+                        - full_name
+                        - mobile_country_code
+                        - mobile_number
+                        - email
+                      x-apidog-ignore-properties: []
+                    address:
+                      type: object
+                      description: Shipping address details for the consignee.
+                      properties:
+                        line_1:
+                          type: string
+                          description: >-
+                            The first line of the shipping address, such as
+                            street name or main address details.
+                          examples:
+                            - King Fahd Road
+                        line_2:
+                          type: string
+                          description: >-
+                            The second line of the shipping address, such as
+                            building, apartment, or additional address details.
+                          examples:
+                            - Building 12
+                        city_name:
+                          type: string
+                          description: The city name of the shipping address.
+                          examples:
+                            - Riyadh
+                        country_code:
+                          type: string
+                          description: The country code of the shipping address.
+                          examples:
+                            - SA
+                        lat:
+                          type: number
+                          description: >-
+                            The latitude coordinate of the shipping address. Set
+                            to null if not available.
+                          examples:
+                            - null
+                          nullable: true
+                        lng:
+                          type: number
+                          description: >-
+                            The longitude coordinate of the shipping address.
+                            Set to null if not available.
+                          examples:
+                            - null
+                          nullable: true
+                        short_address:
+                          type: string
+                          description: >-
+                            The short address code or shortened address value.
+                            Set to null if not available.
+                          examples:
+                            - null
+                          nullable: true
+                        meta:
+                          type: object
+                          description: >-
+                            Additional structured address metadata. Set to null
+                            if not available.
+                          properties:
+                            postcode:
+                              type: string
+                              description: The postal code of the shipping address.
+                              examples:
+                                - 89846-6258
+                              nullable: true
+                            building_number:
+                              type: string
+                              description: The building number of the shipping address.
+                              examples:
+                                - '86'
+                              nullable: true
+                            additional_number:
+                              type: string
+                              description: The additional address number, if available.
+                              examples:
+                                - '21'
+                              nullable: true
+                            city_name:
+                              type: string
+                              description: The city name inside the address metadata.
+                              examples:
+                                - Riyadh
+                              nullable: true
+                          x-apidog-orders:
+                            - postcode
+                            - building_number
+                            - additional_number
+                            - city_name
+                          x-apidog-ignore-properties: []
+                          nullable: true
+                      required:
+                        - line_1
+                        - line_2
+                        - city_name
+                        - country_code
+                      x-apidog-orders:
+                        - line_1
+                        - line_2
+                        - city_name
+                        - country_code
+                        - lat
+                        - lng
+                        - short_address
+                        - meta
+                      x-apidog-ignore-properties: []
+                  required:
+                    - contact
+                    - address
+                  x-apidog-orders:
+                    - contact
+                    - address
+                  x-apidog-ignore-properties: []
+                is_gift:
+                  type: boolean
+                  description: Indicates whether the order is a gift.
+                  examples:
+                    - false
+                is_gifted_consignee_notifiable:
+                  type: boolean
+                  description: >-
+                    Indicates whether the consignee should be notified when the
+                    order is marked as a gift.
+                  examples:
+                    - true
+                products:
+                  type: array
+                  description: List of products included in the order.
+                  items:
+                    type: object
+                    properties:
+                      sku:
+                        type: string
+                        description: The SKU of the product to be added to the order.
+                        examples:
+                          - Z.217795.169603646831188
+                      quantity:
+                        type: integer
+                        description: The quantity of the product to be ordered.
+                        examples:
+                          - 1
+                    x-apidog-orders:
+                      - sku
+                      - quantity
+                    x-apidog-ignore-properties: []
+                shipping_method:
+                  type: object
+                  description: Shipping method selected for the order.
+                  properties:
+                    type:
+                      type: string
+                      description: The type of shipping method selected.
+                      examples:
+                        - delivery
+                    id:
+                      type: integer
+                      description: The unique identifier of the selected shipping method.
+                      examples:
+                        - 432480
+                  required:
+                    - type
+                    - id
+                  x-apidog-orders:
+                    - type
+                    - id
+                  x-apidog-ignore-properties: []
+                payment_method:
+                  type: object
+                  description: Payment method selected for the order.
+                  properties:
+                    id:
+                      type: integer
+                      description: The unique identifier of the selected payment method.
+                      examples:
+                        - 555224
+                  required:
+                    - id
+                  x-apidog-orders:
+                    - id
+                  x-apidog-ignore-properties: []
+                customer_comment:
+                  type: string
+                  description: >-
+                    Optional comment added by the customer. Set to null if there
+                    is no comment.
+                  examples:
+                    - null
+                  nullable: true
+              required:
+                - currency_code
+                - created_by
+                - customer
+                - consignee
+                - is_gift
+                - is_gifted_consignee_notifiable
+                - products
+                - shipping_method
+                - payment_method
+              x-apidog-orders:
+                - currency_code
+                - coupon_code
+                - created_by
+                - customer
+                - consignee
+                - is_gift
+                - is_gifted_consignee_notifiable
+                - products
+                - shipping_method
+                - payment_method
+                - customer_comment
+              x-apidog-ignore-properties: []
+            example:
+              currency_code: SAR
+              coupon_code: null
+              customer:
+                full_name: John Doe
+                mobile_country_code: '966'
+                mobile_number: '500000005'
+                email: john.doe@example.com
+              consignee:
+                contact:
+                  full_name: John Doe
+                  mobile_country_code: '966'
+                  mobile_number: '500000005'
+                  email: john.doe@example.com
+                address:
+                  line_1: King Fahd Road
+                  line_2: Building 12
+                  city_name: Riyadh
+                  country_code: SA
+                  lat: null
+                  lng: null
+                  short_address: null
+                  meta:
+                    postcode: 89846-6258
+                    building_number: '86'
+                    additional_number: '21'
+                    city_name: Riyad
+              is_gift: false
+              is_gifted_consignee_notifiable: true
+              products:
+                - sku: Z.217795.169603646831188
+                  quantity: 1
+              shipping_method:
+                type: delivery
+                id: 432480
+              payment_method:
+                id: 555224
+              customer_comment: null
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: Response returned after successfully creating a draft order.
+                properties:
+                  code:
+                    type: string
+                    description: >-
+                      The response status code that indicates the result of the
+                      request.
+                    examples:
+                      - SUCCESS_WITHOUT_PAYLOAD
+                  message:
+                    type: string
+                    description: >-
+                      A human-readable message describing the result of the
+                      request.
+                    examples:
+                      - This Request is valid
+                required:
+                  - code
+                  - message
+                x-apidog-orders:
+                  - code
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                code: SUCCESS_WITHOUT_PAYLOAD
+                message: This Request is valid
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '3':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '4':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '5':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '422':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                      validations:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            field:
+                              type: string
+                            errors:
+                              type: array
+                              items:
+                                type: string
+                          required:
+                            - field
+                            - errors
+                          x-apidog-orders:
+                            - field
+                            - errors
+                          x-apidog-ignore-properties: []
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - validations
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - validations
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: validation_error
+                message:
+                  type: validation_errors
+                  code: ERROR_POPUP_OK
+                  name: Inputs
+                  description: Input errors!
+                  validations:
+                    - field: coupon_code
+                      errors:
+                        - The selected coupon code is invalid.
+          headers: {}
+          x-apidog-name: Validation Errors
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Orders
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-36477334-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

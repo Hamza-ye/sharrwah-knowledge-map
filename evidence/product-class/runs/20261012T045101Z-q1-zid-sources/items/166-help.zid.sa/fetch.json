@@ -1,0 +1,18 @@
+{
+ "n": 166,
+ "url": "https://help.zid.sa/transactions/",
+ "dir": "items/166-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/transactions/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26436,
+ "cited_in": [
+  "ZD-S-0537"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "599b8da3404c87b91caf23f95e30fc181087d30a5b5b799edd98055f83d2d2fb",
+ "raw_ext": "html"
+}

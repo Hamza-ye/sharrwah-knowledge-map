@@ -1,0 +1,18 @@
+{
+ "n": 101,
+ "url": "https://help.zid.sa/create-category/",
+ "dir": "items/101-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/create-category/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26296,
+ "cited_in": [
+  "ZD-S-1020"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8e99d7d65e309f89176eabde78049f58cacf86f94a518aa5e73a162bd79984f1",
+ "raw_ext": "html"
+}

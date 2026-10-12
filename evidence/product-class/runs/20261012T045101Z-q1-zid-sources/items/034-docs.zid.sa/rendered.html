@@ -1,0 +1,755 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># List Carts
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/abandoned-carts:
+    get:
+      summary: List Carts
+      deprecated: false
+      description: &gt;
+        Retrieves a list of abandoned carts for a given store. 
+
+        Each entry in the list provides a brief overview of the abandoned cart, 
+
+        including essential details such as the cart ID, customer information,
+        total value, and a unique URL for retargeting.
+
+
+        Abandoned carts are identified when a user adds products to their online
+        shopping cart but 
+
+        does not proceed to checkout and complete the purchase within **10
+        minutes** of inactivity. 
+
+
+        For **retargeting** purposes, each abandoned cart object includes a
+        `url` field, which is the direct link 
+
+        to the specific abandoned cart. This URL, along with customer name and
+        contact details provided in the response, 
+
+        facilitates effective retargeting strategies by merchants.
+
+
+        You can filter the list by date, phase, and the total number of carts.
+
+
+        For a detailed view of a specific cart, including product details 
+
+        and additional customer information, refer to the 
+
+        [Get Abandoned Cart
+        Details](../reference/merchant-api.yaml/paths/~1managers~1store~1abandoned-carts~1{cart-id}/get) 
+
+        endpoint using the cart's unique ID.
+
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+        `abandoned_carts.read` - Abandoned Carts Read
+         
+        &lt;/Accordion&gt;
+      operationId: get-abandoned-carts
+      tags:
+        - Default module/Apps/Merchant APIs/Abandoned Carts
+        - Abandoned Carts
+      parameters:
+        - name: page
+          in: query
+          description: pagination, number of page for every call.
+          required: true
+          example: 1
+          schema:
+            type: number
+            examples:
+              - 5
+        - name: page_size
+          in: query
+          description: number of records for every page with max 100 records.
+          required: true
+          example: 15
+          schema:
+            type: number
+            examples:
+              - 10
+        - name: phase
+          in: query
+          description: The ordering phase in which the cart was abandoned.
+          required: false
+          schema:
+            type: string
+            enum:
+              - new
+              - login
+              - shipping_address
+              - shipping_method
+              - payment_method
+              - verification
+              - completed
+            examples:
+              - new
+        - name: search_term
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: customer_id
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: products_count
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: number
+        - name: has_reminders
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: boolean
+        - name: country_id
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: integer
+        - name: city_id
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: integer
+        - name: currency_code
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: date_from
+          in: query
+          description: 'example: ''2021-01-01'''
+          required: false
+          schema:
+            type: string
+        - name: date_to
+          in: query
+          description: 'example: ''2021-01-01'''
+          required: false
+          schema:
+            type: string
+        - name: cart_total
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: number
+        - name: filter_order_by
+          in: query
+          description: ''
+          required: false
+          example: created_at
+          schema:
+            type: string
+        - name: filter_sort_by
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: string
+            enum:
+              - ASC
+              - DESC
+            x-apidog-enum:
+              - value: ASC
+                name: ''
+                description: ''
+              - value: DESC
+                name: ''
+                description: ''
+        - name: customer_type
+          in: query
+          description: ''
+          required: false
+          schema:
+            type: string
+            enum:
+              - individual
+              - business
+            x-apidog-enum:
+              - value: individual
+                name: ''
+                description: ''
+              - value: business
+                name: ''
+                description: ''
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: &gt;-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: false
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: &gt;-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Response wrapper type.
+                    examples:
+                      - object
+                  abandoned-carts:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/DefaultAbandonedCartSerializer'
+                    description: List of abandoned shopping carts.
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                        description: Current page number.
+                        examples:
+                          - 1
+                      page_size:
+                        type: integer
+                        description: Number of records per page.
+                        examples:
+                          - 2
+                      next_page:
+                        type: integer
+                        description: Next page number if available.
+                        examples:
+                          - 2
+                      last_page:
+                        type: integer
+                        description: Last available page number.
+                        examples:
+                          - 243
+                      result_count:
+                        type: integer
+                        description: Total number of abandoned carts.
+                        examples:
+                          - 485
+                    required:
+                      - page
+                      - page_size
+                      - next_page
+                      - last_page
+                      - result_count
+                    x-apidog-orders:
+                      - page
+                      - page_size
+                      - next_page
+                      - last_page
+                      - result_count
+                    description: Pagination details for abandoned carts listing.
+                    x-apidog-ignore-properties: []
+                  message: &amp;ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - abandoned-carts
+                  - pagination
+                  - message
+                x-apidog-orders:
+                  - status
+                  - abandoned-carts
+                  - pagination
+                  - message
+                description: Response returned when listing abandoned carts.
+                x-apidog-ignore-properties: []
+              example:
+                status: object
+                abandoned-carts:
+                  - id: b978fcc2-ccd0-45f6-81a7-7ab1f3b8f85d
+                    store_id: d297fb8b-c322-412e-a2f4-ffa96dc57022
+                    session_id: 3:694ff0d8df6032a7697a3849
+                    url: &gt;-
+                      https://osama.zid.store/checkout/fromBasket/3:694ff0d8df6032a7697a3849
+                    cart_id: 3:694ff0d8df6032a7697a3849
+                    order_id: null
+                    phase: payment_method
+                    customer_id: 15141670
+                    customer_name: mahmoud aaaa
+                    customer_email: a.alkallas@zid.sa
+                    customer_mobile: '966500000005'
+                    city_id: 5354
+                    products_count: 1
+                    reminders_count: 2
+                    cart_total: 509.8254
+                    cart_total_string: 509.83 ج.م
+                    whatsapp_message: Hello What'sapp
+                    currency_code: EGP
+                    created_at: '2025-12-27T14:45:44.000000Z'
+                    updated_at: '2025-12-28T14:53:39.000000Z'
+                    source: catalog
+                  - id: 88537913-f12a-468b-8b03-5a10ada7eb3d
+                    store_id: d297fb8b-c322-412e-a2f4-ffa96dc57022
+                    session_id: 3:69473e9254de8076e8311e0c
+                    url: &gt;-
+                      https://osama.zid.store/checkout/fromBasket/3:69473e9254de8076e8311e0c
+                    cart_id: 3:69473e9254de8076e8311e0c
+                    order_id: null
+                    phase: payment_method
+                    customer_id: 15141670
+                    customer_name: mahmoud aaaa
+                    customer_email: test@zid.sa
+                    customer_mobile: '966500000005'
+                    city_id: 1
+                    products_count: 1
+                    reminders_count: 4
+                    cart_total: 13.35
+                    cart_total_string: 13.35 SAR
+                    whatsapp_message: Hello What'sapp
+                    currency_code: SAR
+                    created_at: '2025-12-21T00:26:39.000000Z'
+                    updated_at: '2025-12-22T00:37:53.000000Z'
+                    source: catalog
+                pagination:
+                  page: 1
+                  page_size: 2
+                  next_page: 2
+                  last_page: 243
+                  result_count: 485
+                message:
+                  type: object
+                  code: null
+                  name: null
+                  description: null
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Abandoned Carts
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148590-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultAbandonedCartSerializer:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the abandoned cart.
+          examples:
+            - b978fcc2-ccd0-45f6-81a7-7ab1f3b8f85d
+        store_id:
+          type: string
+          description: Store UUID where the cart belongs.
+          examples:
+            - d297fb8b-c322-412e-a2f4-ffa96dc57022
+        session_id:
+          type: string
+          description: Checkout session identifier.
+          examples:
+            - 3:694ff0d8df6032a7697a3849
+        url:
+          type: string
+          description: Checkout URL to resume the abandoned cart.
+          examples:
+            - &gt;-
+              https://osama.zid.store/checkout/fromBasket/3:694ff0d8df6032a7697a3849
+        cart_id:
+          type: string
+          description: Internal cart identifier.
+          examples:
+            - 3:694ff0d8df6032a7697a3849
+          nullable: true
+        order_id:
+          type: integer
+          nullable: true
+        phase:
+          type: string
+          description: Checkout step where the cart was abandoned.
+          examples:
+            - payment_method
+        customer_id:
+          type: integer
+          description: Customer identifier.
+          examples:
+            - 15141670
+        customer_name:
+          type: string
+          description: Customer full name.
+          examples:
+            - mahmoud aaaa
+        customer_email:
+          type: string
+          description: Customer email address.
+          examples:
+            - a.alkallas@zid.sa
+          nullable: true
+        customer_mobile:
+          type: string
+          description: Customer mobile number.
+          examples:
+            - '966500000005'
+          nullable: true
+        city_id:
+          type: integer
+          description: City identifier associated with the cart.
+          examples:
+            - 5354
+          nullable: true
+        products_count:
+          type: integer
+          description: Number of products in the cart.
+          examples:
+            - 1
+        reminders_count:
+          type: integer
+          description: Number of reminder messages sent for this cart.
+          examples:
+            - 2
+        cart_total:
+          type: number
+          description: Numeric total value of the cart.
+          examples:
+            - 509.8254
+        cart_total_string:
+          type: string
+          description: Formatted cart total including currency.
+          examples:
+            - 509.83 ج.م
+        whatsapp_message:
+          type: string
+          description: WhatsApp reminder message content.
+          examples:
+            - Hello What'sapp
+        currency_code:
+          type: string
+          description: ISO currency code.
+          examples:
+            - EGP
+        source:
+          type: string
+          description: Source channel where the cart originated.
+          examples:
+            - catalog
+          enum:
+            - catalog
+            - md
+            - mazeed_marketplace
+            - mazeed_channels
+            - mazeed
+            - pos
+            - mobile_app
+            - api
+          x-apidog-enum:
+            - value: catalog
+              name: ''
+              description: ''
+            - value: md
+              name: ''
+              description: ''
+            - value: mazeed_marketplace
+              name: ''
+              description: ''
+            - value: mazeed_channels
+              name: ''
+              description: ''
+            - value: mazeed
+              name: ''
+              description: ''
+            - value: pos
+              name: ''
+              description: ''
+            - value: mobile_app
+              name: ''
+              description: ''
+            - value: api
+              name: ''
+              description: ''
+        created_at:
+          type: string
+          description: Timestamp when the cart was created.
+          examples:
+            - '2025-12-27T14:45:44.000000Z'
+        updated_at:
+          type: string
+          description: Timestamp when the cart was last updated.
+          examples:
+            - '2025-12-28T14:53:39.000000Z'
+      required:
+        - id
+        - store_id
+        - session_id
+        - url
+        - cart_id
+        - order_id
+        - phase
+        - customer_id
+        - customer_name
+        - customer_email
+        - customer_mobile
+        - city_id
+        - products_count
+        - reminders_count
+        - cart_total
+        - cart_total_string
+        - whatsapp_message
+        - currency_code
+        - source
+        - created_at
+        - updated_at
+      x-apidog-orders:
+        - id
+        - store_id
+        - session_id
+        - url
+        - cart_id
+        - order_id
+        - phase
+        - customer_id
+        - customer_name
+        - customer_email
+        - customer_mobile
+        - city_id
+        - products_count
+        - reminders_count
+        - cart_total
+        - cart_total_string
+        - whatsapp_message
+        - currency_code
+        - source
+        - created_at
+        - updated_at
+      description: Abandoned cart summary.
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

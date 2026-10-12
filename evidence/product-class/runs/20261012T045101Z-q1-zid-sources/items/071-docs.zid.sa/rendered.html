@@ -1,0 +1,296 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Zid App Activation &amp; OAuth Policy
+
+- **Audience:** Zid App Market partners and application teams  
+- **Applies to:** All new apps submitted to Zid App Market  
+- **Updated:** 9 September 2026
+
+
+:::highlight purple 🔐
+**Standard apps begin OAuth immediately when the merchant selects Activate in Zid**. Any required app-plan payment is completed through Zid before activation becomes available. After OAuth, the merchant may complete account linking, configuration or other onboarding; the app must not require an additional partner-side payment.
+:::
+
+
+:::highlight yellow 🕠
+**Partner-managed setup requires prior written approval from Zid**. Approved apps may complete their agreed service prerequisites before OAuth through a dedicated setup journey. A free listing, no Zid plans or external billing does not automatically grant this approval. The OAuth and security requirements below apply to both models.
+:::
+
+## Quick reference
+
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/383131/image-preview)
+Two approved paths: standard OAuth-first activation and prior-approved Partner-managed setup.
+
+1. **Standard:** Zid plan payment, if required → Activate → Zid OAuth → account setup → partner service ready.
+2. **Approved Partner-managed setup:** dedicated setup → agreed prerequisites → Zid OAuth → verified store binding → partner service ready.
+
+
+&lt;aside&gt;
+🔐
+
+**Standard apps begin OAuth immediately when the merchant selects Activate in Zid.** Any required app-plan payment is completed through Zid before activation becomes available. After OAuth, the merchant may complete account linking, configuration or other onboarding; the app must not require an additional partner-side payment.
+
+&lt;/aside&gt;
+
+&lt;aside&gt;
+🧭
+
+**Partner-managed setup requires prior written approval from Zid.** Approved apps may complete their agreed service prerequisites before OAuth through a dedicated setup journey. A free listing, no Zid plans or external billing does not automatically grant this approval. The OAuth and security requirements below apply to both models.
+
+&lt;/aside&gt;
+
+
+
+## 1. Purpose and scope
+
+This policy defines the activation, onboarding, account-linking and OAuth requirements for new apps distributed through Zid App Market. It covers external and embedded apps, including activation from the Zid Merchant Dashboard.
+
+Standard activation is the default. Use the Partner-managed setup path only when Zid has explicitly agreed that path for your app.
+
+Private or custom integrations may use a partner-initiated connection when agreed with the merchant. They must still follow the security and credential-handling requirements. Being private or custom does not itself approve a Partner-managed commercial arrangement.
+
+## 2. Standard activation sequence
+
+**Before activation:** the merchant purchases any required paid app plan through Zid. The **Activate** action becomes available after the required payment. A free app has no paid-plan step.
+
+1. The merchant selects **Activate** in Zid.
+2. Your app immediately starts Zid's OAuth Authorization Code flow.
+3. Zid requests consent when required. A valid previous authorization may allow this step to be skipped.
+4. On approval, Zid redirects to your registered OAuth callback.
+5. Your server validates the OAuth `state` and exchanges the authorization code securely.
+6. Your app identifies the authorized Zid store and records its connection. Zid records the installation during token exchange.
+7. The merchant completes any required partner-account linking, configuration or other onboarding, without an additional partner-side payment.
+8. Your app shows **Service ready** only when the required setup is complete and the service can operate.
+
+Preserve the verified Zid store throughout post-OAuth setup. Do not make the merchant restart activation or type store identifiers to recover the connection.
+
+If authorization is denied or cancelled, the successful sequence stops. Zid may handle denial without redirecting to your callback. A safe restart must not create an incorrect or duplicate connection.
+
+## 3. Accepted standard activation flows
+
+### A. OAuth-first with automatic provisioning — preferred
+
+After OAuth, create the necessary partner workspace automatically when your service can do so from verified Zid information. Continue to essential configuration and show a clear completion state.
+
+Automatically creating a new workspace must not silently attach the store to an existing external account based only on a matching email address.
+
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/383132/image-preview)
+Standard automatic provisioning: OAuth and secure callback before workspace creation and onboarding.
+
+
+:::highlight purple 💡
+**Flow:** Activate → OAuth → secure callback → create workspace → finish setup → partner service ready. Any required Zid plan has already been paid.
+:::
+
+
+### B. OAuth-first with account linking
+
+After OAuth, the merchant may register, sign in or link an external account when that account is essential to the service.
+
+Disclose the account requirement in your listing. Authenticate the external account and obtain explicit confirmation of the store-to-account association. Preserve the verified store and return the merchant to the same setup step.
+
+An external account requirement alone does not permit moving signup or login before OAuth. If essential service preparation must happen first, request approval for Partner-managed setup.
+
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/383133/image-preview)
+Standard account linking: authenticate and confirm the partner account after the OAuth callback.
+
+:::highlight purple 💡
+**Flow:** Activate → OAuth → secure callback → authenticated account linking → configuration → partner service ready. No additional partner payment is required.
+:::
+
+
+
+### C. “Connect Zid” from an existing partner account
+
+An existing customer may sign in to your platform, select **Connect Zid** and complete Zid OAuth. Confirm the actual authorized store before binding it to the signed-in partner account.
+
+For standard public apps, this is a secondary entry point. Your Zid-started activation must still follow the standard OAuth-first sequence. Approved Partner-managed apps follow their agreed dedicated Zid entry.
+
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/383134/image-preview)
+Secondary entry: connect Zid from an existing partner account and confirm the correct store.
+
+:::highlight purple 💡
+**Flow:** partner integrations → Connect Zid → OAuth → secure callback → confirm store and account → partner service ready.
+:::
+
+
+## 4. Rejected activation flows
+
+### A. Signup or login before OAuth for standard apps
+
+When activation starts from Zid, a standard app must not put partner registration or login ahead of OAuth.
+
+**Required correction:** start OAuth immediately and complete necessary account linking after the secure callback. Approved Partner-managed setup follows the separately agreed path in section 11.
+
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/383135/image-preview)
+Rejected standard-app flow: a signup gate delays Zid OAuth.
+
+:::highlight purple 💡
+**Rejected for standard apps:** Activate → signup gate → manually find the integration → OAuth.
+:::
+
+
+
+### B. Generic homepage or manual integration discovery
+
+Neither model may send the merchant to a generic homepage, marketing page or settings area where they must search for the Zid integration. A login screen must remain part of the applicable dedicated journey and preserve progress.
+
+**Required correction:** open OAuth directly for standard apps, or the approved dedicated Partner-managed setup journey.
+
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/383136/image-preview)
+Rejected in both models: a generic homepage forces the merchant to discover the integration.
+
+:::highlight purple 💡
+**Rejected for both models:** Activate → generic website → search for settings → find Zid → connect.
+:::
+
+
+### C. Manual credentials or manual store identification
+
+Never ask merchants to paste Zid access or refresh tokens, manager tokens, API keys, client secrets or Zid passwords into your app.
+
+Use OAuth to identify the store automatically during activation. Do not require the merchant to type a Zid Store ID or store URL to establish the connection. These are identifiers, not passwords or secrets.
+
+**Required correction:** use the supported Authorization Code flow, exchange the code on your server and retrieve the authorized store identity securely.
+
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/383137/image-preview)
+Rejected in both models: manually collecting Zid credentials or copied tokens.
+
+:::highlight purple 💡
+**Rejected for both models:** setup forms that collect Zid secrets or rely on copied credentials.
+:::
+
+
+## 5. Connection integrity and prohibited behavior
+
+Your app must not:
+
+- Switch or lose the verified Zid store during signup, login, configuration or account linking.
+- Attach a store to an existing external account without authenticated access and explicit merchant confirmation.
+- Link accounts solely because email addresses match.
+- Expose access tokens, refresh tokens or client secrets in page content, URLs, client-side storage, analytics or logs.
+- Log or expose authorization codes, or forward callback codes into other URLs.
+- Describe the partner service as ready while mandatory setup remains incomplete.
+- Start normal synchronization or background service processing before required terms and setup are complete.
+- Require an unnecessary separate login for an embedded app.
+
+The authorization code is expected to arrive through the registered OAuth callback URL. Process it on the server, exchange it promptly and remove it before onward navigation. This intended callback delivery does not permit displaying, logging or otherwise propagating the code.
+
+## 6. External account and onboarding requirements
+
+When a separate partner account is essential:
+
+- Explain the requirement in the App Market listing and at the relevant setup step.
+- Disclose applicable eligibility, country, contract or verification prerequisites before the merchant invests effort in setup.
+- For standard apps, keep app charges within the applicable Zid plans; account linking must not introduce another partner-side payment.
+- Preserve setup progress and, after OAuth, the verified Zid store connection.
+- Offer **Create account** and **Link existing account** where both are supported.
+- Authenticate access to an existing account and confirm which account and store will be linked.
+- Return automatically to the correct step after registration, login or a retry.
+- Provide a clear disconnect or change-account option where supported, with appropriate authentication and confirmation.
+- Give the Zid review team complete instructions and dedicated test accounts when the external service requires them. Do not request live merchant credentials for review.
+
+Collect only information needed for the service and approved setup path. A separate account must not be an artificial gate that delays standard OAuth.
+
+## 7. Embedded applications
+
+Embedded apps should open inside the Zid Merchant Dashboard without an unnecessary separate partner login.
+
+Use the embedded authentication mechanism supported by Zid for your integration. Validate it securely before identifying the store or serving protected content. Do not assume that an arbitrary store identifier in a launch URL authenticates the merchant.
+
+A separate login is acceptable only when an external account is essential, disclosed and accepted during app review. It must follow the applicable standard or approved Partner-managed setup order.
+
+## 8. OAuth and security requirements — both models
+
+Partners must:
+
+- Use Zid's supported OAuth 2.0 Authorization Code flow.
+- Use HTTPS for production launch, callback, onboarding and API endpoints.
+- Generate a random, one-time, short-lived `state`, bind it to the initiating session and validate it before accepting the callback.
+- Use PKCE where supported for the chosen client configuration, and wherever required by Zid.
+- Exchange authorization codes promptly on a secure server. Never retain a code while waiting for provisioning or other long-running setup.
+- Keep client secrets out of browsers, mobile apps, public repositories and client-side code.
+- Request only the scopes needed for the app's documented functionality.
+- Store tokens securely on the server and restrict access to them.
+- Keep the authorized store isolated from every other store and partner account.
+- Handle denied, cancelled, expired, invalid and replayed authorization attempts safely.
+- Support token renewal, reauthorization, reinstall and permission changes without creating duplicate or cross-store connections.
+- Stop processing and remove or revoke the applicable access after uninstall or authorization revocation, using the supported lifecycle mechanisms.
+
+The callback must process the OAuth result before continuing the journey. It must not act only as a generic homepage or unrelated login page.
+
+Use the technical documentation for supported endpoint parameters and client configuration. This policy describes the required merchant experience and security outcomes; it does not redefine OAuth token lifetimes or error responses.
+
+## 9. Partner connection and service status
+
+Distinguish **Zid installation/authorization** from **your service's readiness**. Zid records the installation during token exchange; partner onboarding may still be incomplete at that point. Do not assume that a partner setup screen can postpone Zid's installation record.
+
+The following are partner-facing meanings, not required Zid dashboard labels:
+
+| Status | Meaning |
+| --- | --- |
+| **Setup in progress** | Approved Partner-managed prerequisites are underway; Zid OAuth may not yet be complete. |
+| **Connected — setup required** | OAuth succeeded, but account linking or required service configuration remains. |
+| **Service ready** | Valid authorization, confirmed account association and mandatory setup are complete; the service can operate. |
+| **Disconnected / reconnect required** | Authorization was revoked, the app was uninstalled or the connection is no longer valid. |
+
+Show the remaining action when setup is incomplete, and let the merchant resume safely.
+
+
+:::check[]
+## 10. App Review Checklist
+
+Before submitting a new app, test and document the applicable journey:
+
+- [ ]  A new merchant can complete activation from Zid through the approved entry path.
+- [ ]  A standard app starts OAuth immediately after Activate; any required Zid-plan payment precedes activation, and no additional partner-side payment is requested.
+- [ ]  An approved Partner-managed app follows its agreed prerequisite and OAuth sequence.
+- [ ]  OAuth denial, cancellation, expired or invalid responses and retries do not create incorrect connections.
+- [ ]  Account registration/linking failures can be retried without losing progress or changing the store.
+- [ ]  An existing customer can connect the correct store to the authenticated partner account.
+- [ ]  Reauthorization, token renewal and reinstall do not create duplicate connections.
+- [ ]  Multiple stores remain isolated where the app supports them.
+- [ ]  Uninstall or revocation stops processing and removes the applicable access.
+- [ ]  Zid installation/authorization and partner service readiness are checked separately.
+- [ ]  Embedded entry works with the supported authentication mechanism, where applicable.
+
+The listing, screenshots, instructions and review video must match the implemented journey. Supply test accounts only for the services and scenarios that need them.
+
+:::
+
+
+## 11. Approved Partner-managed setup
+
+This path is for apps whose service may require meaningful preparation before a Zid store can be connected—for example, creating or selecting an operational tenant, provisioning a carrier account, completing contractual checks or configuring an existing business platform.
+
+**Prior written approval from Zid is required.** Agree the app's setup order, merchant disclosures, commercial arrangement and review journey before implementing or submitting this path. Do not assume that an app can enable it simply by removing its Zid plans.
+
+Use a dedicated setup entry, preserve progress, request only necessary prerequisites and offer **Connect Zid** as soon as the merchant can proceed. After OAuth, verify the actual Zid store and confirm its association with the correct partner account.
+
+
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/383138/image-preview)
+Approved Partner-managed setup: necessary prerequisites before OAuth, followed by verified store binding.
+
+:::highlight purple 💡
+**Flow:** dedicated setup → necessary prerequisites → Zid OAuth → secure callback → confirmed store binding → partner service ready.
+:::
+
+For suitable services, account preparation, billing disclosures, resumption and review scenarios, see Partner-managed Setup for Approved Connectivity Apps.
+
+This is a setup-path approval, not a relaxation of OAuth security. Availability and any partner-managed billing arrangement must be confirmed separately with Zid.
+
+## 12. Review and enforcement
+
+Zid reviews the app against its applicable standard or approved Partner-managed path and the shared security requirements.
+
+Apps that do not comply may be returned for correction, rejected during review, suspended until corrected or removed when the flow creates material security, privacy, usability or merchant-trust risk.
+
+Changes to the agreed setup or billing model must be reviewed with Zid before they are introduced to merchants.
+
+
+:::info[]
+## Related resources
+
+- [Zid OAuth technical documentation](https://docs.zid.sa/authorization)
+:::
+
+
+</pre></body></html>

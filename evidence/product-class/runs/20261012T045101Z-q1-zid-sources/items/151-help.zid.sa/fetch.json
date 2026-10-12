@@ -1,0 +1,18 @@
+{
+ "n": 151,
+ "url": "https://help.zid.sa/saudi-merchants/",
+ "dir": "items/151-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/saudi-merchants/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26118,
+ "cited_in": [
+  "ZD-S-0752"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b5ab8de0b36d5ac0446eaaf708ab07dd1942f061038b491ea05966583868e395",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://docs.zid.sa/availability-notification-stats.md",
+ "dir": "items/011-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/availability-notification-stats.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 12113,
+ "cited_in": [
+  "ZD-S-0925"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "411d76bd7360a2ecb646858c7098fa3aa5b146357dd0e12616044573def0cdcd",
+ "raw_ext": "txt"
+}

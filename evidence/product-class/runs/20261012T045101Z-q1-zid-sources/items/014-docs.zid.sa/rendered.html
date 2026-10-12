@@ -1,0 +1,689 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Create Webhook
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/webhooks:
+    post:
+      summary: Create Webhook
+      deprecated: false
+      description: &gt;-
+
+        &lt;Embed
+        src="https://app-market.s3.eu-west-1.amazonaws.com/creating_webhooks.mp4"
+        /&gt;
+
+
+        Webhooks enable your application to receive real-time notifications when
+        specific events occur. For supported events, you can define trigger
+        conditions to control when webhook notifications are sent, allowing you
+        to receive only the data that matches your business requirements.
+
+
+        ## [Supported Webhook
+        Events](../docs/webhooks-overview.md#supported-webhook-events)
+
+        For more details on available events and their conditions, 
+
+        please refer to the [Supported Webhook
+        Events](https://docs.zid.sa/webhooks) page.
+
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+        `third_webhook_write` - Webhooks Read &amp; Write
+         
+        &lt;/Accordion&gt;
+
+
+
+        :::info[]
+
+        ## **Authentication**
+
+        If `username` and `password` are provided when creating a webhook, Zid
+        will include a `Basic Authentication` header when sending webhook
+        requests.
+
+
+        The values are combined in the format:
+
+
+        ```js
+
+        username:password
+
+        ```
+
+        This string is then `Base64` encoded and sent in the Authorization
+        header.
+
+
+        Example
+
+
+        If the webhook was created with:
+
+
+        ```
+
+        username = user
+
+        password = secret
+
+        ```
+
+        The encoded value will be:
+
+
+        ```js
+
+        base64encode('user:secret') = dXNlcjpzZWNyZXQ=
+
+        ```
+
+        Zid will send webhook requests with the following header:
+
+
+        ```js
+
+        Authorization: Basic dXNlcjpzZWNyZXQ=
+
+        ```
+
+        This allows partners to verify that the webhook request is coming from
+        Zid.
+
+        :::
+      operationId: create-a-webhook
+      tags:
+        - Default module/Apps/Webhooks/APIs
+        - WebHook
+      parameters:
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: &gt;-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: &gt;-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              x-apidog-refs: {}
+              x-apidog-orders:
+                - event
+                - target_url
+                - original_id
+                - conditions
+                - username
+                - password
+              properties:
+                event:
+                  type: string
+                  description: &gt;
+                    The event that the webhook will subscribe to. It represents
+                    the type of event that will trigger the webhook.
+                  examples:
+                    - order.status.update
+                target_url:
+                  type: string
+                  description: &gt;
+                    The URL to which Zid will send a payload when the subscribed
+                    event triggers. This is the endpoint that will receive the
+                    webhook data.
+                  examples:
+                    - http://zid.sa
+                original_id:
+                  type: string
+                  description: A unique identifier for the app that created this webhook.
+                conditions:
+                  type: object
+                  description: &gt;
+                    Additional conditions that can be specified for the webhook
+                    subscription. 
+
+                    This field allows filtering the webhook events based on
+                    specific criteria. 
+
+                    For example, you may want to be notified **only** when an
+                    order's status is 'delivered' 
+
+                    or if the payment method is 'Cash On Delivery'.
+
+
+                    **Supported Events: `order.create` and
+                    `order.status.update`**
+
+
+                    | Key | Type | Description |
+
+                    | --- | ---- | ----------- |
+
+                    | delivery_option_id | integer | The delivery option ID in
+                    Zid. |
+
+                    | status | string | One of these statuses: [new, preparing,
+                    ready, inDelivery, delivered, cancelled]. |
+
+                    | payment_method | string | One of these methods: [Cash On
+                    Delivery, Credit Card, Bank Transfer].  
+                  properties:
+                    status:
+                      type: string
+                      description: The order status. Optional.
+                      enum:
+                        - new
+                        - preparing
+                        - ready
+                        - inDelivery
+                        - delivered
+                        - cancelled
+                      examples:
+                        - new
+                    delivery_option_id:
+                      type: integer
+                      description: The delivery option ID in Zid. Optional.
+                      examples:
+                        - 55
+                    payment_method:
+                      type: string
+                      description: The payment method. Optional.
+                      enum:
+                        - Cash On Delivery
+                        - Credit Card
+                        - Bank Transfer
+                      examples:
+                        - Cash On Delivery
+                  x-apidog-orders:
+                    - status
+                    - delivery_option_id
+                    - payment_method
+                  x-apidog-ignore-properties: []
+                  nullable: true
+                username:
+                  type: string
+                  description: &gt;-
+                    Username used for Basic Auth verification when sending
+                    webhook requests.
+                  examples:
+                    - user
+                password:
+                  type: string
+                  description: &gt;-
+                    Password used for Basic Auth verification when sending
+                    webhook requests.
+                  examples:
+                    - secret
+              required:
+                - event
+                - target_url
+                - original_id
+              x-apidog-ignore-properties: []
+            example:
+              event: order.status.update
+              target_url: https://webhook.site/b1590566-c28c-4c82-b948-8f8027e84335
+              original_id: 2404
+              conditions: {}
+              username: user
+              password: secret
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the type of response object returned by the API.
+                    examples:
+                      - object
+                  id:
+                    type: string
+                    description: Unique identifier of the webhook.
+                    examples:
+                      - e0384523-5601-48cd-af67-8b4188692ff6
+                  event:
+                    type: string
+                    description: The event that triggers the webhook.
+                    examples:
+                      - category.create
+                  target_url:
+                    type: string
+                    description: The destination URL where webhook requests will be sent.
+                    examples:
+                      - &gt;-
+                        https://webhook.site/79b40fa4-ace1-4589-882d-d30f16281f20
+                  store_id:
+                    type: string
+                    description: A unique identifier for the app that created this webhook.
+                    examples:
+                      - d297fb8b-c322-412e-a2f4-ffa96dc57022
+                  conditions:
+                    type: array
+                    items:
+                      type: string
+                    description: &gt;-
+                      Optional conditions used to filter when the webhook should
+                      be triggered.
+                    examples:
+                      - []
+                  original_id:
+                    type: string
+                    description: Identifier of the related resource for the webhook event.
+                    examples:
+                      - '2404'
+                  subscriber:
+                    type: string
+                    description: &gt;-
+                      Zid's Unique identifier representing the app that
+                      registered the webhook.
+                    examples:
+                      - 8208974663db80265e9bfe7b222dcb18
+                  active:
+                    type: boolean
+                    description: &gt;-
+                      Indicates whether the webhook is currently active and able
+                      to receive events.
+                    examples:
+                      - true
+                  doc:
+                    type: string
+                    description: &gt;-
+                      Markdown string representing documentation for the webhook
+                      event. May be null if documentation is not available.
+                    examples:
+                      - null
+                    nullable: true
+                  message: &amp;ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                x-apidog-refs: {}
+                x-apidog-orders:
+                  - status
+                  - id
+                  - event
+                  - target_url
+                  - store_id
+                  - conditions
+                  - original_id
+                  - subscriber
+                  - active
+                  - doc
+                  - message
+                required:
+                  - status
+                  - id
+                  - event
+                  - target_url
+                  - store_id
+                  - conditions
+                  - original_id
+                  - subscriber
+                  - active
+                  - doc
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: object
+                data:
+                  id: e307483e-795b-4e9c-8f36-a06cb1cf54bf
+                  event: order.status.update
+                  target_url: https://webhook.site/b1590566-c28c-4c82-b948-8f8027e84335
+                  store_id: d297fb8b-c322-412e-a2f4-ffa96dc57022
+                  store_name: متجر أسامة.
+                  store_url: https://osama.zid.store/
+                  conditions: []
+                  original_id: '2404'
+                  subscriber: 8208974663db80265e9bfe7b222dcb18
+                  active: true
+                  health_status: null
+                  consecutive_failures: null
+                  last_failed_at: null
+                  last_success_at: null
+                  broken_at: null
+                  doc: null
+                message:
+                  type: object
+                  code: null
+                  name: null
+                  description: null
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+        x-200:OK:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  data:
+                    $ref: '#/components/schemas/WebhookPresenter'
+                  message: *ref_0
+                required:
+                  - status
+                  - data
+                  - message
+                x-apidog-orders:
+                  - status
+                  - data
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: OK
+      security: []
+      x-apidog-folder: Default module/Apps/Webhooks/APIs
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148615-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    WebhookPresenter:
+      type: object
+      properties:
+        id:
+          type: string
+        event:
+          type: string
+        target_url:
+          type: string
+        store_id:
+          type: string
+        store_name:
+          type: string
+        store_url:
+          type: string
+        conditions:
+          type: array
+          items:
+            type: string
+        original_id:
+          type: string
+        subscriber:
+          type: string
+        active:
+          type: boolean
+        health_status:
+          type: string
+          nullable: true
+        consecutive_failures:
+          type: integer
+          nullable: true
+        last_failed_at:
+          type: string
+          nullable: true
+        last_success_at:
+          type: string
+          nullable: true
+        broken_at:
+          type: string
+          nullable: true
+        doc:
+          type: string
+          nullable: true
+      required:
+        - id
+        - event
+        - target_url
+        - store_id
+        - store_name
+        - store_url
+        - conditions
+        - original_id
+        - subscriber
+        - active
+        - health_status
+        - consecutive_failures
+        - last_failed_at
+        - last_success_at
+        - broken_at
+        - doc
+      x-apidog-orders:
+        - id
+        - event
+        - target_url
+        - store_id
+        - store_name
+        - store_url
+        - conditions
+        - original_id
+        - subscriber
+        - active
+        - health_status
+        - consecutive_failures
+        - last_failed_at
+        - last_success_at
+        - broken_at
+        - doc
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

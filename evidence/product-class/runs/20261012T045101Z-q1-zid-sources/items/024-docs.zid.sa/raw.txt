@@ -1,0 +1,91 @@
+# Embedded Payment
+
+## <span style="color:#5D4EC3;"> Load JS library script</span>
+
+### Description
+
+A JavaScript library will be needed for embedding the provider payment form in the checkout page. 
+
+**Expected Library path**
+`{ProviderUrl}/payment/embedded/credit-card.js `
+
+
+![Card payments sequence diagram.png](https://api.apidog.com/api/v1/projects/613905/resources/366932/image-preview)
+
+### **Initializing the form**
+`this.embeddedPaymentForm.init(embeddedFormConfig);`
+
+## <span style="color:#5D4EC3;"> Config params:</span>
+
+| Property          | Type   | Description                                                                 |
+|-------------------|--------|-----------------------------------------------------------------------------|
+| publishableApiKey |        | Merchant public key                                                         |
+| cardViewId        | string | Element which the provider form will be appended to                        |
+| supportedNetworks | string | Networks to be displayed<br>Example:<br>"visa,mada,amex"                    |
+| style             | Object | Styling object for the form<br>Sample Code                                  |
+
+## <span style="color:#5D4EC3;"> Style Sample Code</span>
+
+
+```
+{
+            hideCardIcons: true,
+            direction: "ltr",
+            cardHeight: 225,
+            input: {
+                color: "rgb(66, 67, 71)",
+                fontSize: "13px",
+                fontFamily: "inherit",
+                inputHeight: "32px",
+                inputMargin: "10px",
+                borderColor: "c7c7c7",
+                borderWidth: "1px",
+                borderRadius: "0px",
+                boxShadow: "",
+                placeHolder: {
+                    holderName: " ",
+                    cardNumber: " ",
+                    expiryDate: "شهر / سنة",
+                    securityCode: " ",
+                }
+            },
+            label: {
+                display: true,
+                color: formStyle && formStyle.fontColor ? formStyle.fontColor : "rgb(66, 67, 71)",
+                fontSize: formStyle && formStyle.fontSize ? formStyle.fontSize : "14px",
+                fontFamily: formStyle && formStyle.fontFamily ? formStyle.fontFamily : "inherit",
+                fontWeight: formStyle && formStyle.fontWeight ? formStyle.fontWeight : "500",
+                text: {
+                    holderName: "الاسم على البطاقة:",
+                    cardNumber: "رقم البطاقة:",
+                    expiryDate: "تاريخ انتهاء البطاقة:",
+                    securityCode: "الرمز الأمني (CVV):",
+                },
+            },
+            error: {
+                borderColor: "red",
+                borderRadius: "8px",
+                boxShadow: "0px",
+            },
+}
+
+
+```
+
+## <span style="color:#5D4EC3;"> Submitting the form </span>
+
+We will call a submit function in the JS library to get the payment form fields submitted.
+`this.embeddedPaymentForm.submit();`
+
+### Expected function return
+| Property   | Type     | Description                                                       |
+|------------|----------|-------------------------------------------------------------------|
+| token      | string   |                                                                   |
+| brand      | string   | Card type, types:<br>• visa<br>• master<br>• mada<br>• amex       |
+| funding    | string   | Types:<br>• Credit<br>• debit                                     |
+| network    | string   | Network that the payment is going to be processed on<br>Types:<br>• visa<br>• master<br>• mada<br>• amex |
+| country    | string   | Card country                                                      |
+| cardBin    | function | Bank Identification Number                       |
+| lastFour   | string   | Last four digits                                                  |
+
+

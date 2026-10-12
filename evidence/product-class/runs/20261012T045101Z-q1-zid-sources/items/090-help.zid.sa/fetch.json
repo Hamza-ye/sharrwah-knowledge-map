@@ -1,0 +1,25 @@
+{
+ "n": 90,
+ "url": "https://help.zid.sa/bnpl-2/",
+ "dir": "items/090-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/bnpl-2/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 28167,
+ "cited_in": [
+  "ZD-S-0621",
+  "ZD-S-0622",
+  "ZD-S-0623",
+  "ZD-S-0624",
+  "ZD-S-0625",
+  "ZD-S-0626",
+  "ZD-S-0627",
+  "ZD-S-0628"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bfda8589c7815d5e665d03b14a3c710c7c2ffc114ed44d067f9e60adcb431a76",
+ "raw_ext": "html"
+}

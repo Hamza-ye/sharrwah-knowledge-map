@@ -1,0 +1,18 @@
+{
+ "n": 34,
+ "url": "https://docs.zid.sa/list-abandoned-carts.md",
+ "dir": "items/034-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/list-abandoned-carts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 24102,
+ "cited_in": [
+  "ZD-S-0095"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c4b878a9c44d4ea801044e8da2550b6c6031f9dc4c877155fa67c44c3448ff83",
+ "raw_ext": "txt"
+}

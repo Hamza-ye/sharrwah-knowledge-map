@@ -1,0 +1,18 @@
+{
+ "n": 84,
+ "url": "https://help.zid.sa/activate-mazeed/",
+ "dir": "items/084-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/activate-mazeed/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25487,
+ "cited_in": [
+  "ZD-S-0985"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "767fbf8614fc41a19b558d222b0582da2fe89c10fc0522761eeac1ffa57a572d",
+ "raw_ext": "html"
+}

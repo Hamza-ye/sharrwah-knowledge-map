@@ -1,0 +1,19 @@
+{
+ "n": 133,
+ "url": "https://help.zid.sa/legal-pages/",
+ "dir": "items/133-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/legal-pages/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25482,
+ "cited_in": [
+  "ZD-S-0779",
+  "ZD-S-0780"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c45175386c700f3e1599467753ce853c0f132bb0b2cc82bfa77cb8babe0f8147",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 109,
+ "url": "https://help.zid.sa/defaulting/",
+ "dir": "items/109-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/defaulting/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24108,
+ "cited_in": [
+  "ZD-S-0701"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a988f0d043bb3adb8bd4ff1d0857c2137df29ebfcfeb34830027c5a8fcc80218",
+ "raw_ext": "html"
+}

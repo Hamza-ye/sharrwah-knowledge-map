@@ -1,0 +1,18 @@
+{
+ "n": 111,
+ "url": "https://help.zid.sa/discounts/",
+ "dir": "items/111-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/discounts/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24461,
+ "cited_in": [
+  "ZD-S-1030"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "690e59c280e00a99f8037e6954ea5578fc33662aa42f14f3c2c576ab3ed3342f",
+ "raw_ext": "html"
+}

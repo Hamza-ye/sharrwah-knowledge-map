@@ -1,0 +1,21 @@
+{
+ "n": 200,
+ "url": "https://zid.sa/en/zid-assurance/",
+ "dir": "items/200-zid.sa",
+ "fetched_at": "2026-10-12T04:54:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/zid-assurance/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 42939,
+ "cited_in": [
+  "ZD-S-0997",
+  "ZD-S-0998",
+  "ZD-S-0999",
+  "ZD-S-1000"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9575fb8d5600f26037dfe54862f4a07281ec95f692b0e9e9e35108a1351f9d90",
+ "raw_ext": "html"
+}

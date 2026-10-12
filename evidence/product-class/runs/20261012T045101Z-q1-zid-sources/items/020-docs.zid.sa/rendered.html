@@ -1,0 +1,1466 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Create Reverse Orders
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/reverse-orders:
+    post:
+      summary: Create Reverse Orders
+      deprecated: false
+      description: |-
+        Creates an order reverse  request.
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+          `orders.read_write `- Orders Read &amp; Write
+         
+        &lt;/Accordion&gt;
+      operationId: post-managers-store-reverse-orders
+      tags:
+        - Default module/Apps/Merchant APIs/Reverse Orders
+        - Reverse Orders
+      parameters:
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-MANAGER-TOKEN
+          in: header
+          description: &gt;-
+            Unique manager token used to authorize requests at a manager level,
+            specific to each partner.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: Language preference.
+          required: true
+          example: en
+          schema:
+            type: string
+            default: ar
+            enum:
+              - ar
+              - en
+            x-apidog-enum:
+              - value: ar
+                name: ''
+                description: ''
+              - value: en
+                name: ''
+                description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                order_id:
+                  type: integer
+                  description: The ID of the order to reverse.
+                  examples:
+                    - 554348
+                consignee_name:
+                  type: string
+                  description: Name of the consignee.
+                  examples:
+                    - '"علي أحمد"'
+                consignee_mobile:
+                  type: string
+                  description: Mobile number of the consignee.
+                  examples:
+                    - '"966500000001"'
+                consignee_city_id:
+                  type: integer
+                  description: City ID of the consignee.
+                  examples:
+                    - 1
+                consignee_address_1:
+                  type: string
+                  description: Address line 1 of the consignee.
+                  examples:
+                    - '"شارع الملك فهد"'
+                consignee_address_2:
+                  type: string
+                  description: Address line 2 of the consignee.
+                  examples:
+                    - '"المبنى رقم 101"'
+                inventory_location_id:
+                  type: string
+                  description: Inventory location ID for multi-inventory stores.
+                  examples:
+                    - '" "'
+                reason:
+                  type: array
+                  description: Reasons for reverse order.
+                  items:
+                    anyOf:
+                      - type: string
+                      - type: object
+                        properties:
+                          id:
+                            type: string
+                          name:
+                            type: string
+                        x-apidog-orders:
+                          - id
+                          - name
+                        required:
+                          - id
+                          - name
+                        x-apidog-ignore-properties: []
+              x-apidog-refs: {}
+              x-apidog-orders:
+                - order_id
+                - consignee_name
+                - consignee_mobile
+                - consignee_city_id
+                - consignee_address_1
+                - consignee_address_2
+                - inventory_location_id
+                - reason
+              required:
+                - order_id
+                - consignee_name
+                - consignee_mobile
+                - consignee_city_id
+                - consignee_address_1
+                - consignee_address_2
+                - inventory_location_id
+                - reason
+              x-apidog-ignore-properties: []
+            example:
+              order_id: 64086815
+              is_partial: false
+              inventory_location_id: 8ee590fe-d02d-4c50-9184-f628bb8b115a
+              refund_payment_method: bank_transfer
+              consignee_name: Jane Smith
+              consignee_mobile: '+966500000005'
+              consignee_city_id: 1
+              consignee_address_1: 456 Commerce Avenue
+              consignee_address_2: Suite 301
+              reason:
+                - name: Customer canceled
+                  id: ebcfd40a-7c2f-4ed4-b30f-3fd142388ad7
+              products: []
+              packages_count: null
+              shipping_method: null
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  order_reverse:
+                    $ref: '#/components/schemas/OrderReversePresenter'
+                  message: &amp;ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - order_reverse
+                  - message
+                x-apidog-orders:
+                  - status
+                  - order_reverse
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: object
+                order_reverse:
+                  id: cb86fa22-29a3-4169-8106-149591f5f512
+                  store_id: d297fb8b-c322-412e-a2f4-ffa96dc57022
+                  order_id: 64086815
+                  is_partial: false
+                  consignee_name: Jane Smith
+                  consignee_mobile: '+966500000005'
+                  consignee_city:
+                    id: 1
+                    country_id: 184
+                    zone_id: 2879
+                    name: Riyadh
+                    ar_name: الرياض
+                    code: null
+                    status: 1
+                    priority: 10
+                    created_at: null
+                    updated_at: '2021-05-26T13:04:05.000000Z'
+                    deleted_at: null
+                    national_address_city_id: 3
+                    governorate_ar_name: امارة منطقة الرياض
+                    governorate_en_name: Riyadh Principality
+                    region_id: 1
+                    region_ar_name: الرياض
+                    region_en_name: Riyadh
+                    country:
+                      id: 184
+                      name: Saudi Arabia
+                      ar_name: السعودية
+                      country_code: '+966'
+                      iso_code_2: SA
+                      iso_code_3: SAU
+                      address_format: ''
+                      postcode_required: 0
+                      status: 1
+                      currency_code: SAR
+                      tax_percentage: null
+                      is_supported_by_zid: 1
+                      priority: 1
+                      created_at: '2019-09-25T18:43:01.000000Z'
+                      updated_at: '2019-09-25T18:43:01.000000Z'
+                  consignee_address_1: 456 Commerce Avenue
+                  consignee_address_2: Suite 301
+                  inventory_address_id: null
+                  inventory_location_id: 8ee590fed02d4c509184f628bb8b115a
+                  inventory:
+                    deleted: null
+                    id: 8ee590fed02d4c509184f628bb8b115a
+                    created_at: '2023-09-21T10:11:10.135964Z'
+                    updated_at: '2025-10-13T14:55:15.609712Z'
+                    name:
+                      ar: الرياض - فرع عبد العزيز
+                    type: PHYSICAL
+                    coordinates:
+                      type: Point
+                      coordinates:
+                        - 46.66803359985352
+                        - 24.77208405941104
+                    is_default: 0
+                    is_private: 0
+                    is_enabled: 1
+                    fulfillment_priority: 9
+                    meta: null
+                    city_id: 1
+                    store_id: d297fb8b-c322-412e-a2f4-ffa96dc57022
+                    full_address: &gt;-
+                      6137 King Abdul Aziz Branch Rd, An Nafal, Riyadh 13312,
+                      Saudi Arabia
+                    channels:
+                      - pos
+                      - catalog
+                    district: King Abdul Aziz
+                    street: نفال
+                    short_address: null
+                  reason:
+                    - name: Customer canceled
+                      id: ebcfd40a-7c2f-4ed4-b30f-3fd142388ad7
+                  shipping_method: null
+                  waybill: null
+                  products:
+                    - id: 2ddecb80-348d-4880-be98-fdc756e47912
+                      order_reverse_id: cb86fa22-29a3-4169-8106-149591f5f512
+                      order_product_id: 110168319
+                      product_uuid: 003140e29d8e462db823373407746871
+                      quantity: 1
+                      reversed_quantity: 1
+                      received_quantity: 0
+                      not_received_quantity: 0
+                      damaged_quantity: 0
+                      product:
+                        id: 003140e29d8e462db823373407746871
+                        structure: standalone
+                        store_id: 3
+                        name: طقم سفر للحواجب سوبرستار من بنفت
+                        quantity: null
+                        is_infinite: true
+                        slug: طقم-سفر-للحواجب-سوبرستار-من-بنفت
+                        sku: Z.217795.169603646831188
+                        price: '199.5600'
+                        sale_price: null
+                        parent_id: null
+                        is_published: 1
+                        is_draft: 0
+                        old_id: null
+                        upc: null
+                        rating: null
+                        revision: 1
+                        product_class_id: null
+                        display_order: 32766
+                        has_been_modified: 1
+                        created_at: '2025-04-03T00:11:39.826154Z'
+                        updated_at: '2025-04-03T00:11:39.826193Z'
+                        deleted: null
+                        popularity_order: null
+                        cost: '0.0000'
+                        weight: null
+                        popularity_points: 26
+                        requires_shipping: 1
+                        weight_display_unit: kg
+                        is_taxable: true
+                        purchase_restrictions:
+                          max_quantity_per_cart: null
+                          min_quantity_per_cart: null
+                          sale_price_period_end: null
+                          availability_period_end: null
+                          sale_price_period_start: null
+                          availability_period_start: null
+                        meta: null
+                        short_description: '{"ar": "&lt;p&gt;&lt;br&gt;&lt;/p&gt;", "en": "&lt;p&gt;&lt;br&gt;&lt;/p&gt;"}'
+                        badge: null
+                        related_products_settings: AUTO_GENERATED
+                        related_products_title: null
+                        barcode: null
+                        product_class: null
+                      product_class: null
+                      order_product:
+                        id: 110168319
+                        order_id: 64086815
+                        reseller_meta: null
+                        product_id: 0
+                        product_uuid: 003140e29d8e462db823373407746871
+                        sku: Z.217795.169603646831188
+                        name: طقم سفر للحواجب سوبرستار من بنفت
+                        custom_fields: null
+                        model: ''
+                        quantity: 1
+                        requires_shipping: 1
+                        weight: null
+                        cost: 0
+                        price: '199.55999896568000'
+                        additions_price: '0.00000000000000'
+                        total: '199.55999896568000'
+                        net_price: '173.53043388320000'
+                        net_sale_price: null
+                        net_additions_price: '0.00000000000000'
+                        gross_sale_price: null
+                        gross_additions_price: '0.00000000000000'
+                        gross_price: '199.55999896568000'
+                        tax_percentage: '0.15000000000000'
+                        tax_amount: '26.02956508248000'
+                        is_taxable: true
+                        is_discounted: false
+                        meta: null
+                        reward: 0
+                        created_at: '2026-01-28T16:52:59.000000Z'
+                        updated_at: '2026-01-28T16:52:59.000000Z'
+                        deleted_at: null
+                        external_product_id: null
+                        is_external_product: false
+                        net_unit_price: '173.53043388320000'
+                        gross_unit_price: '199.55999896568000'
+                        undiscounted_net_unit_price: '173.53'
+                        undiscounted_gross_unit_price: '199.56'
+                        undiscounted_net_total: '173.53'
+                        undiscounted_gross_total: '199.56'
+                        unit_discount_amount: '0.00000000000000'
+                        unit_discount_percentage: '0.00000000000000'
+                        subtotal_discounts: []
+                      created_at: '2026-01-31T12:15:40.000000Z'
+                      updated_at: '2026-01-31T12:15:40.000000Z'
+                  reverse_total: 199.56
+                  refund_total: 199.56
+                  refund: null
+                  available_refund_payment_methods:
+                    - name: Bank Transfer
+                      code: zid_bank_transfer
+                  shipment_status: null
+                message:
+                  type: object
+                  code: null
+                  name: null
+                  description: null
+          headers: {}
+          x-apidog-name: OK
+        '400':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Bad Request
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Reverse Orders
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148651-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderReversePresenter:
+      type: object
+      properties:
+        id:
+          type: string
+        store_id:
+          type: string
+        order_id:
+          type: integer
+        is_partial:
+          type: boolean
+        consignee_name:
+          type: string
+        consignee_mobile:
+          type: string
+        consignee_city:
+          type: object
+          properties:
+            id:
+              type: integer
+            country_id:
+              type: integer
+            zone_id:
+              type: integer
+            name:
+              type: string
+            ar_name:
+              type: string
+            code:
+              type: 'null'
+            status:
+              type: integer
+            priority:
+              type: integer
+            created_at:
+              type: 'null'
+            updated_at:
+              type: string
+            deleted_at:
+              type: 'null'
+            national_address_city_id:
+              type: integer
+            governorate_ar_name:
+              type: string
+            governorate_en_name:
+              type: string
+            region_id:
+              type: integer
+            region_ar_name:
+              type: string
+            region_en_name:
+              type: string
+            country:
+              type: object
+              properties:
+                id:
+                  type: integer
+                name:
+                  type: string
+                ar_name:
+                  type: string
+                country_code:
+                  type: string
+                iso_code_2:
+                  type: string
+                iso_code_3:
+                  type: string
+                address_format:
+                  type: string
+                postcode_required:
+                  type: integer
+                status:
+                  type: integer
+                currency_code:
+                  type: string
+                tax_percentage:
+                  type: 'null'
+                is_supported_by_zid:
+                  type: integer
+                priority:
+                  type: integer
+                created_at:
+                  type: string
+                updated_at:
+                  type: string
+              required:
+                - id
+                - name
+                - ar_name
+                - country_code
+                - iso_code_2
+                - iso_code_3
+                - address_format
+                - postcode_required
+                - status
+                - currency_code
+                - tax_percentage
+                - is_supported_by_zid
+                - priority
+                - created_at
+                - updated_at
+              x-apidog-orders:
+                - id
+                - name
+                - ar_name
+                - country_code
+                - iso_code_2
+                - iso_code_3
+                - address_format
+                - postcode_required
+                - status
+                - currency_code
+                - tax_percentage
+                - is_supported_by_zid
+                - priority
+                - created_at
+                - updated_at
+              x-apidog-ignore-properties: []
+          required:
+            - id
+            - country_id
+            - zone_id
+            - name
+            - ar_name
+            - code
+            - status
+            - priority
+            - created_at
+            - updated_at
+            - deleted_at
+            - national_address_city_id
+            - governorate_ar_name
+            - governorate_en_name
+            - region_id
+            - region_ar_name
+            - region_en_name
+            - country
+          x-apidog-orders:
+            - id
+            - country_id
+            - zone_id
+            - name
+            - ar_name
+            - code
+            - status
+            - priority
+            - created_at
+            - updated_at
+            - deleted_at
+            - national_address_city_id
+            - governorate_ar_name
+            - governorate_en_name
+            - region_id
+            - region_ar_name
+            - region_en_name
+            - country
+          x-apidog-ignore-properties: []
+        consignee_address_1:
+          type: string
+        consignee_address_2:
+          type: string
+        inventory_address_id:
+          type: integer
+          nullable: true
+        inventory_location_id:
+          type: string
+        inventory:
+          type: object
+          properties:
+            deleted:
+              type: 'null'
+            id:
+              type: string
+            created_at:
+              type: string
+            updated_at:
+              type: string
+            name:
+              type: object
+              properties:
+                ar:
+                  type: string
+              required:
+                - ar
+              x-apidog-orders:
+                - ar
+              x-apidog-ignore-properties: []
+            type:
+              type: string
+            coordinates:
+              type: object
+              properties:
+                type:
+                  type: string
+                coordinates:
+                  type: array
+                  items:
+                    type: number
+              required:
+                - type
+                - coordinates
+              x-apidog-orders:
+                - type
+                - coordinates
+              x-apidog-ignore-properties: []
+            is_default:
+              type: integer
+            is_private:
+              type: integer
+            is_enabled:
+              type: integer
+            fulfillment_priority:
+              type: integer
+            meta:
+              type: 'null'
+            city_id:
+              type: integer
+            store_id:
+              type: string
+            full_address:
+              type: string
+            channels:
+              type: array
+              items:
+                type: string
+            district:
+              type: string
+            street:
+              type: string
+            short_address:
+              type: 'null'
+          required:
+            - deleted
+            - id
+            - created_at
+            - updated_at
+            - name
+            - type
+            - coordinates
+            - is_default
+            - is_private
+            - is_enabled
+            - fulfillment_priority
+            - meta
+            - city_id
+            - store_id
+            - full_address
+            - channels
+            - district
+            - street
+            - short_address
+          x-apidog-orders:
+            - deleted
+            - id
+            - created_at
+            - updated_at
+            - name
+            - type
+            - coordinates
+            - is_default
+            - is_private
+            - is_enabled
+            - fulfillment_priority
+            - meta
+            - city_id
+            - store_id
+            - full_address
+            - channels
+            - district
+            - street
+            - short_address
+          x-apidog-ignore-properties: []
+        reason:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              id:
+                type: string
+            x-apidog-orders:
+              - name
+              - id
+            x-apidog-ignore-properties: []
+        shipping_method:
+          type: string
+          nullable: true
+        waybill:
+          type: array
+          items:
+            type: string
+          nullable: true
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderReverseProductPresenter'
+        reverse_total:
+          type: number
+        refund_total:
+          type: number
+        refund:
+          $ref: '#/components/schemas/OrderReverseRefundPresenter'
+        available_refund_payment_methods:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              code:
+                type: string
+            x-apidog-orders:
+              - name
+              - code
+            x-apidog-ignore-properties: []
+        shipment_status:
+          type: string
+          nullable: true
+      required:
+        - id
+        - store_id
+        - order_id
+        - is_partial
+        - consignee_name
+        - consignee_mobile
+        - consignee_city
+        - consignee_address_1
+        - consignee_address_2
+        - inventory_address_id
+        - inventory_location_id
+        - inventory
+        - reason
+        - shipping_method
+        - waybill
+        - products
+        - reverse_total
+        - refund_total
+        - refund
+        - available_refund_payment_methods
+        - shipment_status
+      x-apidog-orders:
+        - id
+        - store_id
+        - order_id
+        - is_partial
+        - consignee_name
+        - consignee_mobile
+        - consignee_city
+        - consignee_address_1
+        - consignee_address_2
+        - inventory_address_id
+        - inventory_location_id
+        - inventory
+        - reason
+        - shipping_method
+        - waybill
+        - products
+        - reverse_total
+        - refund_total
+        - refund
+        - available_refund_payment_methods
+        - shipment_status
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderReverseRefundPresenter:
+      type: object
+      properties:
+        id:
+          type: string
+        amount:
+          type: string
+        payment_method:
+          type: string
+          nullable: true
+        reference:
+          type: string
+          nullable: true
+        notes:
+          type: string
+          nullable: true
+        receipt_link:
+          type: string
+          nullable: true
+        created_at:
+          type: string
+        updated_at:
+          type: string
+      x-apidog-orders:
+        - id
+        - amount
+        - payment_method
+        - reference
+        - notes
+        - receipt_link
+        - created_at
+        - updated_at
+      required:
+        - id
+        - amount
+        - payment_method
+        - reference
+        - notes
+        - receipt_link
+        - created_at
+        - updated_at
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderReverseProductPresenter:
+      type: object
+      properties:
+        id:
+          type: string
+        order_reverse_id:
+          type: string
+        order_product_id:
+          type: integer
+        product_uuid:
+          type: string
+        quantity:
+          type: integer
+        reversed_quantity:
+          type: integer
+        received_quantity:
+          type: integer
+        not_received_quantity:
+          type: integer
+        damaged_quantity:
+          type: integer
+        product:
+          type: object
+          properties:
+            id:
+              type: string
+            structure:
+              type: string
+            store_id:
+              type: integer
+            name:
+              type: string
+            quantity:
+              type: integer
+              nullable: true
+            is_infinite:
+              type: boolean
+            slug:
+              type: string
+            sku:
+              type: string
+            price:
+              type: string
+            sale_price:
+              type: number
+              nullable: true
+            parent_id:
+              type: string
+              nullable: true
+            is_published:
+              type: integer
+            is_draft:
+              type: integer
+            old_id:
+              type: string
+              nullable: true
+            upc:
+              type: string
+              nullable: true
+            rating:
+              type: number
+              nullable: true
+            revision:
+              type: integer
+            product_class_id:
+              type: string
+              nullable: true
+            display_order:
+              type: integer
+            has_been_modified:
+              type: integer
+            created_at:
+              type: string
+            updated_at:
+              type: string
+            deleted:
+              type: string
+              nullable: true
+            popularity_order:
+              type: integer
+              nullable: true
+            cost:
+              type: string
+            weight:
+              type: number
+              nullable: true
+            popularity_points:
+              type: integer
+            requires_shipping:
+              type: integer
+            weight_display_unit:
+              type: string
+            is_taxable:
+              type: boolean
+            purchase_restrictions:
+              type: object
+              properties:
+                max_quantity_per_cart:
+                  type: integer
+                  nullable: true
+                min_quantity_per_cart:
+                  type: integer
+                  nullable: true
+                sale_price_period_end:
+                  type: number
+                  nullable: true
+                availability_period_end:
+                  type: number
+                  nullable: true
+                sale_price_period_start:
+                  type: number
+                  nullable: true
+                availability_period_start:
+                  type: number
+                  nullable: true
+              required:
+                - max_quantity_per_cart
+                - min_quantity_per_cart
+                - sale_price_period_end
+                - availability_period_end
+                - sale_price_period_start
+                - availability_period_start
+              x-apidog-orders:
+                - max_quantity_per_cart
+                - min_quantity_per_cart
+                - sale_price_period_end
+                - availability_period_end
+                - sale_price_period_start
+                - availability_period_start
+              x-apidog-ignore-properties: []
+            meta:
+              type: object
+              properties: {}
+              x-apidog-orders: []
+              x-apidog-ignore-properties: []
+              nullable: true
+            short_description:
+              type: string
+              nullable: true
+            badge:
+              type: string
+              nullable: true
+            related_products_settings:
+              type: string
+              nullable: true
+            related_products_title:
+              type: string
+              nullable: true
+            barcode:
+              type: string
+              nullable: true
+            product_class:
+              type: string
+              nullable: true
+          required:
+            - id
+            - structure
+            - store_id
+            - name
+            - quantity
+            - is_infinite
+            - slug
+            - sku
+            - price
+            - sale_price
+            - parent_id
+            - is_published
+            - is_draft
+            - old_id
+            - upc
+            - rating
+            - revision
+            - product_class_id
+            - display_order
+            - has_been_modified
+            - created_at
+            - updated_at
+            - deleted
+            - popularity_order
+            - cost
+            - weight
+            - popularity_points
+            - requires_shipping
+            - weight_display_unit
+            - is_taxable
+            - purchase_restrictions
+            - meta
+            - short_description
+            - badge
+            - related_products_settings
+            - related_products_title
+            - barcode
+            - product_class
+          x-apidog-orders:
+            - id
+            - structure
+            - store_id
+            - name
+            - quantity
+            - is_infinite
+            - slug
+            - sku
+            - price
+            - sale_price
+            - parent_id
+            - is_published
+            - is_draft
+            - old_id
+            - upc
+            - rating
+            - revision
+            - product_class_id
+            - display_order
+            - has_been_modified
+            - created_at
+            - updated_at
+            - deleted
+            - popularity_order
+            - cost
+            - weight
+            - popularity_points
+            - requires_shipping
+            - weight_display_unit
+            - is_taxable
+            - purchase_restrictions
+            - meta
+            - short_description
+            - badge
+            - related_products_settings
+            - related_products_title
+            - barcode
+            - product_class
+          x-apidog-ignore-properties: []
+        product_class:
+          type: string
+          nullable: true
+        order_product:
+          type: object
+          properties:
+            id:
+              type: integer
+            order_id:
+              type: integer
+            reseller_meta:
+              type: object
+              properties: {}
+              x-apidog-orders: []
+              x-apidog-ignore-properties: []
+              nullable: true
+            product_id:
+              type: integer
+            product_uuid:
+              type: string
+            sku:
+              type: string
+            name:
+              type: string
+            custom_fields:
+              type: object
+              properties: {}
+              x-apidog-orders: []
+              x-apidog-ignore-properties: []
+              nullable: true
+            model:
+              type: string
+            quantity:
+              type: integer
+            requires_shipping:
+              type: integer
+            weight:
+              type: 'null'
+            cost:
+              type: integer
+            price:
+              type: string
+            additions_price:
+              type: string
+            total:
+              type: string
+            net_price:
+              type: string
+            net_sale_price:
+              type: number
+              nullable: true
+            net_additions_price:
+              type: string
+            gross_sale_price:
+              type: number
+              nullable: true
+            gross_additions_price:
+              type: string
+              nullable: true
+            gross_price:
+              type: string
+            tax_percentage:
+              type: string
+            tax_amount:
+              type: string
+            is_taxable:
+              type: boolean
+            is_discounted:
+              type: boolean
+            meta:
+              type: object
+              properties: {}
+              x-apidog-orders: []
+              x-apidog-ignore-properties: []
+              nullable: true
+            reward:
+              type: integer
+            created_at:
+              type: string
+            updated_at:
+              type: string
+            deleted_at:
+              type: string
+              nullable: true
+            external_product_id:
+              type: string
+              nullable: true
+            is_external_product:
+              type: boolean
+              nullable: true
+            net_unit_price:
+              type: string
+            gross_unit_price:
+              type: string
+            undiscounted_net_unit_price:
+              type: string
+            undiscounted_gross_unit_price:
+              type: string
+            undiscounted_net_total:
+              type: string
+            undiscounted_gross_total:
+              type: string
+            unit_discount_amount:
+              type: string
+            unit_discount_percentage:
+              type: string
+            subtotal_discounts:
+              type: array
+              items:
+                type: string
+          required:
+            - id
+            - order_id
+            - reseller_meta
+            - product_id
+            - product_uuid
+            - sku
+            - name
+            - custom_fields
+            - model
+            - quantity
+            - requires_shipping
+            - weight
+            - cost
+            - price
+            - additions_price
+            - total
+            - net_price
+            - net_sale_price
+            - net_additions_price
+            - gross_sale_price
+            - gross_additions_price
+            - gross_price
+            - tax_percentage
+            - tax_amount
+            - is_taxable
+            - is_discounted
+            - meta
+            - reward
+            - created_at
+            - updated_at
+            - deleted_at
+            - external_product_id
+            - is_external_product
+            - net_unit_price
+            - gross_unit_price
+            - undiscounted_net_unit_price
+            - undiscounted_gross_unit_price
+            - undiscounted_net_total
+            - undiscounted_gross_total
+            - unit_discount_amount
+            - unit_discount_percentage
+            - subtotal_discounts
+          x-apidog-orders:
+            - id
+            - order_id
+            - reseller_meta
+            - product_id
+            - product_uuid
+            - sku
+            - name
+            - custom_fields
+            - model
+            - quantity
+            - requires_shipping
+            - weight
+            - cost
+            - price
+            - additions_price
+            - total
+            - net_price
+            - net_sale_price
+            - net_additions_price
+            - gross_sale_price
+            - gross_additions_price
+            - gross_price
+            - tax_percentage
+            - tax_amount
+            - is_taxable
+            - is_discounted
+            - meta
+            - reward
+            - created_at
+            - updated_at
+            - deleted_at
+            - external_product_id
+            - is_external_product
+            - net_unit_price
+            - gross_unit_price
+            - undiscounted_net_unit_price
+            - undiscounted_gross_unit_price
+            - undiscounted_net_total
+            - undiscounted_gross_total
+            - unit_discount_amount
+            - unit_discount_percentage
+            - subtotal_discounts
+          x-apidog-ignore-properties: []
+        created_at:
+          type: string
+        updated_at:
+          type: string
+      x-apidog-orders:
+        - id
+        - order_reverse_id
+        - order_product_id
+        - product_uuid
+        - quantity
+        - reversed_quantity
+        - received_quantity
+        - not_received_quantity
+        - damaged_quantity
+        - product
+        - product_class
+        - order_product
+        - created_at
+        - updated_at
+      required:
+        - id
+        - order_reverse_id
+        - order_product_id
+        - product_uuid
+        - quantity
+        - reversed_quantity
+        - received_quantity
+        - not_received_quantity
+        - damaged_quantity
+        - product_class
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

@@ -1,0 +1,20 @@
+{
+ "n": 136,
+ "url": "https://help.zid.sa/markets/",
+ "dir": "items/136-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/markets/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27000,
+ "cited_in": [
+  "ZD-S-0748",
+  "ZD-S-0749",
+  "ZD-S-0750"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e28ea290a028c1d4bf87b221ccdc10f75361ab42c1a5aefa3182c4fb90c34bca",
+ "raw_ext": "html"
+}

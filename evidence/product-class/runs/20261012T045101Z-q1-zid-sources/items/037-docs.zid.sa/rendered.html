@@ -1,0 +1,677 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># List Customer Tags
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/customer-tags:
+    get:
+      summary: List Customer Tags
+      deprecated: false
+      description: &gt;-
+        This endpoint retrieves the details of a certain customer using the
+        Customer's ID.
+
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+        `third_customers_read` - Customers Read
+         
+        &lt;/Accordion&gt;
+      operationId: get-customer-by-id
+      tags:
+        - Default module/Apps/Merchant APIs/Customers/Customer Tags
+        - Customers
+      parameters:
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: &gt;-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: &gt;-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                name:
+                  description: Search with Tag Name (Optional)
+                  example: ''
+                  type: string
+            examples: {}
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  customer:
+                    $ref: '#/components/schemas/DefaultCustomerStorePresenter'
+                  message: &amp;ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - customer
+                  - message
+                x-apidog-orders:
+                  - status
+                  - customer
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: object
+                customer_tags:
+                  - id: a1cf3175-7587-45ed-a0fa-489b6d7990e8
+                    name: test
+                    store_id: d297fb8b-c322-412e-a2f4-ffa96dc57022
+                message:
+                  type: object
+                  code: null
+                  name: null
+                  description: null
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '404':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                x-examples:
+                  Example 1:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_POPUP_BACK
+                      name: Sorry
+                      description: Customer not found
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Not Found
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Customers/Customer Tags
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-35929844-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultCustomerStorePresenter:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique identifier of the customer.
+        name:
+          type: string
+          description: Full name of the customer.
+        email:
+          type: string
+          description: Customer’s email address.
+          nullable: true
+        mobile:
+          type: string
+          description: Customer’s mobile phone number.
+        gender:
+          type: string
+          description: Customer’s gender, if available.
+          nullable: true
+        birth_date:
+          type: string
+          description: Customer’s date of birth, if available.
+          nullable: true
+        verified:
+          type: boolean
+          description: &gt;-
+            Indicates whether the customer’s account or information has been
+            verified.
+        is_active:
+          type: boolean
+          description: Indicates whether the customer account is currently active.
+        is_cod_enabled:
+          type: boolean
+          description: Indicates whether Cash on Delivery is enabled for the customer.
+        type:
+          type: string
+          description: &gt;-
+            Type of customer, such as individual or business, depending on the
+            store configuration.
+        business_name:
+          type: string
+          description: &gt;-
+            Business name associated with the customer, if the customer is
+            registered as a business.
+          nullable: true
+        tax_number:
+          type: string
+          description: &gt;-
+            Tax identification number associated with the customer, if
+            available.
+          nullable: true
+        commercial_registration:
+          type: string
+          description: &gt;-
+            Commercial registration number associated with the customer’s
+            business, if available.
+          nullable: true
+        source:
+          type: string
+          description: &gt;-
+            Source from which the customer was created or registered, such as
+            storefront, dashboard, or another channel.
+          nullable: true
+        points:
+          anyOf:
+            - type: integer
+            - $ref: '#/components/schemas/LoyalityPlayer'
+          description: Loyalty or reward points currently associated with the customer.
+        order_total_payments:
+          type: string
+          description: Total amount paid by the customer across their orders.
+        last_order_date:
+          type: string
+          description: Date and time of the customer’s most recent order.
+          nullable: true
+        created_at:
+          type: string
+          description: Date and time when the customer record was created.
+        updated_at:
+          type: string
+          description: Date and time when the customer record was last updated.
+        city:
+          anyOf:
+            - $ref: '#/components/schemas/CityPresenter'
+            - type: 'null'
+          description: City information associated with the customer.
+        nickname:
+          type: string
+          description: Customer’s nickname or alternative display name, if available.
+        pivotEmail:
+          type: string
+          description: &gt;-
+            Email value associated with the customer through a related pivot
+            record, if applicable.
+          nullable: true
+        pivotMobile:
+          type: string
+          description: &gt;-
+            Mobile number associated with the customer through a related pivot
+            record, if applicable.
+        order_counts:
+          type: integer
+          description: Total number of orders placed by the customer.
+      required:
+        - id
+        - name
+        - email
+        - mobile
+        - gender
+        - birth_date
+        - verified
+        - is_active
+        - is_cod_enabled
+        - type
+        - business_name
+        - tax_number
+        - commercial_registration
+        - source
+        - points
+        - order_total_payments
+        - last_order_date
+        - created_at
+        - updated_at
+        - city
+        - order_counts
+      x-apidog-orders:
+        - id
+        - name
+        - email
+        - mobile
+        - gender
+        - birth_date
+        - verified
+        - is_active
+        - is_cod_enabled
+        - type
+        - business_name
+        - tax_number
+        - commercial_registration
+        - source
+        - points
+        - order_total_payments
+        - last_order_date
+        - created_at
+        - updated_at
+        - city
+        - nickname
+        - pivotEmail
+        - pivotMobile
+        - order_counts
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    CityPresenter:
+      type: object
+      properties:
+        name:
+          type: string
+          description: &gt;-
+            Name of the city, written in the language specified by the
+            _Accept-Language_ header parameter; defaults to Arabic if
+            _Accept-Language_ is not specified. (Always "Other" if
+            is_marketplace_order is true)
+          examples:
+            - Other
+        id:
+          type: integer
+          description: Unique identifier of the city
+          examples:
+            - 1
+        national_id:
+          type: integer
+          description: National identifier of the city.
+          examples:
+            - 3
+          nullable: true
+        priority:
+          type: integer
+          description: Priority of the city. Higher number indicates higher priority.
+          examples:
+            - 10
+        country_id:
+          type: integer
+          description: Unique identifier of the country the city is located in
+          examples:
+            - 184
+        country_name:
+          type: string
+          description: Name of the country the city is located in (in Arabic)
+          examples:
+            - السعودية
+          nullable: true
+        country_code:
+          type: string
+          description: Two-letter country code according to ISO 3166-1 alpha-2
+          examples:
+            - SA
+          nullable: true
+        ar_name:
+          type: string
+          description: Name of the city in Arabic
+          examples:
+            - الرياض
+        en_name:
+          type: string
+          description: Name of the city in English
+          examples:
+            - Riyadh
+      required:
+        - name
+        - id
+        - priority
+        - country_id
+        - country_name
+        - country_code
+        - ar_name
+        - en_name
+      x-stoplight:
+        id: 58nkno2i3bgh0
+      x-apidog-orders:
+        - name
+        - id
+        - national_id
+        - priority
+        - country_id
+        - country_name
+        - country_code
+        - ar_name
+        - en_name
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    LoyalityPlayer:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the loyalty player record.
+        external_id:
+          type: string
+          description: &gt;-
+            External identifier of the loyalty player in the connected loyalty
+            provider system.
+        store_id:
+          type: string
+          description: Unique identifier of the store associated with the loyalty player.
+        customer_id:
+          type: integer
+          description: &gt;-
+            Unique identifier of the customer associated with the loyalty
+            player.
+        loyalty_provider:
+          type: string
+          description: Name or identifier of the loyalty provider linked to the customer.
+        points:
+          type: integer
+          description: Current available loyalty points balance for the player.
+        pending_points:
+          type: integer
+          description: Loyalty points that are pending and not yet available for use.
+        total_positive_points:
+          type: integer
+          description: &gt;-
+            Total number of loyalty points earned or added to the player’s
+            account.
+        total_negative_points:
+          type: integer
+          description: &gt;-
+            Total number of loyalty points deducted, redeemed, or removed from
+            the player’s account.
+        created_at:
+          type: string
+          description: Date and time when the loyalty player record was created.
+        updated_at:
+          type: string
+          description: Date and time when the loyalty player record was last updated.
+        deleted_at:
+          type: string
+          description: &gt;-
+            Date and time when the loyalty player record was deleted, if
+            applicable. Returns null if the record has not been deleted.
+          nullable: true
+        pending_negative_points:
+          type: integer
+          description: &gt;-
+            Loyalty points scheduled or pending to be deducted from the player’s
+            account.
+        status:
+          type: integer
+          description: &gt;-
+            Current status of the loyalty player record. The value depends on
+            the loyalty provider or platform configuration.
+      x-apidog-orders:
+        - id
+        - external_id
+        - store_id
+        - customer_id
+        - loyalty_provider
+        - points
+        - pending_points
+        - total_positive_points
+        - total_negative_points
+        - created_at
+        - updated_at
+        - deleted_at
+        - pending_negative_points
+        - status
+      required:
+        - id
+        - external_id
+        - store_id
+        - customer_id
+        - loyalty_provider
+        - points
+        - pending_points
+        - total_positive_points
+        - total_negative_points
+        - created_at
+        - updated_at
+        - deleted_at
+        - pending_negative_points
+        - status
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

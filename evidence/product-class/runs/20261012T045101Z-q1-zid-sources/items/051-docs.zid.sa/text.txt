@@ -1,0 +1,391 @@
+# OneSignal Store Settings
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/settings/one-signal:
+    get:
+      summary: OneSignal Store Settings
+      deprecated: false
+      description: >-
+        Returns all OneSignal push-notification settings for the store where the
+        partner app is installed.
+
+
+        This endpoint is hard-scoped to the one_signal settings namespace. The
+        namespace cannot be changed using query parameters or request body
+        fields. No other store settings can be read through this endpoint.
+
+
+        The target store is resolved from the OAuth access token. There is no
+        store ID in the URL.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+        `third_one_signal_write` - OneSignal Notifications
+         
+        </Accordion>
+
+
+
+        :::note[]
+
+        ## **Note**
+
+        - This scope covers both reading and writing OneSignal settings.
+
+        - Tokens issued before this scope was granted will receive 403 Forbidden
+        until the store re-authorizes the app.
+
+
+        **Behavior**
+
+        - Returns all settings stored under the one_signal namespace for the
+        store.
+
+        - If the store does not have any OneSignal settings yet, the endpoint
+        returns an empty payload array.
+
+        :::
+
+
+
+        :::info[]
+
+        ## Important
+
+        - This endpoint only reads settings under the one_signal namespace.
+
+        - The namespace is fixed server-side and cannot be changed.
+
+        - The store is resolved from the OAuth access token.
+
+        No store ID is required in the URL.
+
+        :::
+      tags:
+        - Default module/Apps/Merchant APIs/Store Settings
+      parameters:
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: false
+          example: Bearer {access_token}
+          schema:
+            type: string
+        - name: Accept
+          in: header
+          description: >-
+            Specifies the Media Types acceptable for the client. In this case,
+            it signals that the client expects a response in the JSON format.
+          required: false
+          example: application/json
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: >-
+                      Response status indicator. For this endpoint, it returns
+                      `object`.
+                    examples:
+                      - object
+                  payload:
+                    type: array
+                    description: >-
+                      List of OneSignal settings stored under the `one_signal`
+                      namespace for the store resolved from the access token.
+                      Returns an empty array if the store does not have
+                      OneSignal settings yet.
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          description: Unique identifier of the store setting record.
+                          examples:
+                            - 1024551
+                        code:
+                          type: string
+                          description: >-
+                            Settings namespace code. For this endpoint, this
+                            value is always `one_signal` because the endpoint is
+                            hard-scoped to the OneSignal settings namespace.
+                          examples:
+                            - one_signal
+                        key:
+                          type: string
+                          description: >-
+                            OneSignal setting key, such as `app_id`, `app_key`,
+                            `android_package_name`, or `ios_app_id`.
+                          examples:
+                            - app_id
+                        value:
+                          type: string
+                          description: >-
+                            Stored value for the OneSignal setting key.
+                            Encrypted values may be returned as encrypted or
+                            masked values depending on response handling.
+                          examples:
+                            - 8a3f1c2e-...
+                      required:
+                        - id
+                        - code
+                        - key
+                        - value
+                      x-apidog-orders:
+                        - id
+                        - code
+                        - key
+                        - value
+                      x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - payload
+                x-apidog-orders:
+                  - status
+                  - payload
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: object
+                    payload:
+                      - id: 1024551
+                        code: one_signal
+                        key: app_id
+                        value: 8a3f1c2e-...
+                      - id: 1024552
+                        code: one_signal
+                        key: app_key
+                        value: os_v2_app_...
+                      - id: 1024553
+                        code: one_signal
+                        key: android_package_name
+                        value: sa.zid.store
+                      - id: 1024554
+                        code: one_signal
+                        key: ios_app_id
+                        value: '1234567890'
+                '2':
+                  summary: Example 2
+                  value:
+                    status: object
+                    payload: []
+          headers: {}
+          x-apidog-name: Success
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '3':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '4':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '5':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Store Settings
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-39420053-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

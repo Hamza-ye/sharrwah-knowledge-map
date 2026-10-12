@@ -1,0 +1,20 @@
+{
+ "n": 157,
+ "url": "https://help.zid.sa/store-design/",
+ "dir": "items/157-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/store-design/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26935,
+ "cited_in": [
+  "ZD-S-1072",
+  "ZD-S-1073",
+  "ZD-S-1075"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a46e3bc512f360dd6e1fcc9844627d86912e1fabd6cc59d1030cfa87e47fa78b",
+ "raw_ext": "html"
+}

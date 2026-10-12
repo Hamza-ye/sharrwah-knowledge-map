@@ -1,0 +1,18 @@
+{
+ "n": 108,
+ "url": "https://help.zid.sa/dashboard-analytics/",
+ "dir": "items/108-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/dashboard-analytics/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25114,
+ "cited_in": [
+  "ZD-S-1047"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "689190f87183f2de72ca196a42d0618d37a5b8eb5edac214c77d0ef3c1999932",
+ "raw_ext": "html"
+}

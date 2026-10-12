@@ -1,0 +1,18 @@
+{
+ "n": 56,
+ "url": "https://docs.zid.sa/retrieve-a-list-of-products.md",
+ "dir": "items/056-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/retrieve-a-list-of-products.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 131397,
+ "cited_in": [
+  "ZD-S-0098"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c6b008903616a09fddd74dc2b5e2447051ae2fb4bdef736fdd6cfede71b17c6f",
+ "raw_ext": "txt"
+}

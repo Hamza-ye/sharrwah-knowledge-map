@@ -1,0 +1,18 @@
+{
+ "n": 32,
+ "url": "https://docs.zid.sa/health-summary-37247358e0.md",
+ "dir": "items/032-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/health-summary-37247358e0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 10558,
+ "cited_in": [
+  "ZD-S-0120"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3ce546451733d816f3e7118abc5b05e9ae3029bdbc5ca6d2fa1cea8f95469a32",
+ "raw_ext": "txt"
+}

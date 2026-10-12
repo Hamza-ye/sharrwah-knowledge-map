@@ -1,0 +1,20 @@
+{
+ "n": 96,
+ "url": "https://help.zid.sa/channels-online-store-blog/",
+ "dir": "items/096-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/channels-online-store-blog/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27341,
+ "cited_in": [
+  "ZD-S-1040",
+  "ZD-S-1042",
+  "ZD-S-1044"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "805dedd2597d1e8f626b241e2d5a3774a500530e4e638d45b69fc15bc432a0b4",
+ "raw_ext": "html"
+}

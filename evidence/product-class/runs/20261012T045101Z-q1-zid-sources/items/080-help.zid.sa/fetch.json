@@ -1,0 +1,22 @@
+{
+ "n": 80,
+ "url": "https://help.zid.sa/about-zid-egypt/",
+ "dir": "items/080-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/about-zid-egypt/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23828,
+ "cited_in": [
+  "ZD-S-0735",
+  "ZD-S-0737",
+  "ZD-S-0738",
+  "ZD-S-0739",
+  "ZD-S-0740"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ffea0afbb5f2a2e09849e4c0a5e6fbb9a0eb966717c473b021ce838b2769642e",
+ "raw_ext": "html"
+}

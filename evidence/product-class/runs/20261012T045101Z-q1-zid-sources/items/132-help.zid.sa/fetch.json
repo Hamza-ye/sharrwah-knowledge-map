@@ -1,0 +1,19 @@
+{
+ "n": 132,
+ "url": "https://help.zid.sa/jahez/",
+ "dir": "items/132-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/jahez/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24986,
+ "cited_in": [
+  "ZD-S-1063",
+  "ZD-S-1065"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ae9f707625e93b08a2c7331a730af58ed96f0b61effbb53109dab670b6c72b5b",
+ "raw_ext": "html"
+}

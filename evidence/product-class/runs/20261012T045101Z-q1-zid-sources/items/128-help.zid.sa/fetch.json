@@ -1,0 +1,20 @@
+{
+ "n": 128,
+ "url": "https://help.zid.sa/gcc-merchants/",
+ "dir": "items/128-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/gcc-merchants/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26062,
+ "cited_in": [
+  "ZD-S-0610",
+  "ZD-S-0614",
+  "ZD-S-0747"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "338444518dce0305d722d2660dcd872307280e1d857fbd273fae384ee57608af",
+ "raw_ext": "html"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 153,
+ "url": "https://help.zid.sa/settings-url-redirects/",
+ "dir": "items/153-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/settings-url-redirects/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24975,
+ "cited_in": [
+  "ZD-S-0967",
+  "ZD-S-0968"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "51ee864812c547e195a75752937743d54a3afe692e0e571bfb674d38a584f77c",
+ "raw_ext": "html"
+}

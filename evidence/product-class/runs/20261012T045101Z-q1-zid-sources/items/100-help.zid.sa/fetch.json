@@ -1,0 +1,20 @@
+{
+ "n": 100,
+ "url": "https://help.zid.sa/create-app/",
+ "dir": "items/100-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/create-app/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24149,
+ "cited_in": [
+  "ZD-S-1080",
+  "ZD-S-1085",
+  "ZD-S-1086"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c222ba3e71a3adce47b9222afa097d391d5d516a595ef7ae67ae91f396872feb",
+ "raw_ext": "html"
+}

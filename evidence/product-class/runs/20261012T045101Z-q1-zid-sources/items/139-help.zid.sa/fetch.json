@@ -1,0 +1,19 @@
+{
+ "n": 139,
+ "url": "https://help.zid.sa/meta-restriction/",
+ "dir": "items/139-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/meta-restriction/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25008,
+ "cited_in": [
+  "ZD-S-1051",
+  "ZD-S-1052"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4377eca6cd8c340d72445f8fc57949f9177b806b2d5b4ad64001c5c8c8e81756",
+ "raw_ext": "html"
+}

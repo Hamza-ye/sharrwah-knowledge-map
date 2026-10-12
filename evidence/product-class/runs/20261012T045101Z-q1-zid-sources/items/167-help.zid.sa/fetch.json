@@ -1,0 +1,19 @@
+{
+ "n": 167,
+ "url": "https://help.zid.sa/unpublished-app/",
+ "dir": "items/167-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/unpublished-app/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24229,
+ "cited_in": [
+  "ZD-S-0888",
+  "ZD-S-0890"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2b00b79fde371aff19a1b68ab96175e7ce083d5f67029fdf1b7a142c232540a0",
+ "raw_ext": "html"
+}

@@ -1,0 +1,29 @@
+{
+ "n": 25,
+ "url": "https://docs.zid.sa/events-878234m0.md",
+ "dir": "items/025-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/events-878234m0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 15820,
+ "cited_in": [
+  "ZD-S-0073",
+  "ZD-S-0074",
+  "ZD-S-0075",
+  "ZD-S-0076",
+  "ZD-S-0077",
+  "ZD-S-0078",
+  "ZD-S-0079",
+  "ZD-S-0080",
+  "ZD-S-0081",
+  "ZD-S-0082",
+  "ZD-S-0083",
+  "ZD-S-0084"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "7870974f0b6e13b3b2f60de472c31aa3c166aa528799f01cbfa0db7c9903da7f",
+ "raw_ext": "txt"
+}

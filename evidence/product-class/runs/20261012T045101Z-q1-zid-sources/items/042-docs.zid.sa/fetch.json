@@ -1,0 +1,18 @@
+{
+ "n": 42,
+ "url": "https://docs.zid.sa/list-store-delivery-options.md",
+ "dir": "items/042-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/list-store-delivery-options.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 436561,
+ "cited_in": [
+  "ZD-S-0102"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "0f7508c86110736c34e8a4fbace74aadea1d3ee43744f85948ce75f76974e9c4",
+ "raw_ext": "txt"
+}
