@@ -112,11 +112,12 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 
 ## If the work was interrupted
 
-**The usage limit has stopped the running agents twice on 12 October 2026:**
+**The usage limit has stopped the running agents three times on 12 October 2026:**
 - at about 09:50 UTC, when all ten restarted at 10:10 UTC as new agents continuing from their files;
-- at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript.
+- at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript;
+- at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript.
 
-**Agents running when last checked (12 October 2026, 18:53 UTC):**
+**Agents running when last checked (12 October 2026, 23:58 UTC):**
 - **Stage 1 pass 2, third inspection:** agent `a358c7011c8386469`. It writes no file. If it was stopped, run it again.
 - **Pilot phase B:** one agent (`a9e10fcc19233f104`), on `studies/subjects/S-01/briefs/B-variation-points.md`, writing `variation-points.tsv`, `variants.tsv` and `notes-b.md`.
 - **Stage 1 pass 1:** part E. Parts A to D and F are done.
