@@ -88,6 +88,8 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - Agents: B `a3e994da3bb31bdea`, C `ae62ffcdd5d9f5670`, D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`, F `aa29284ecad1cbef0`.
   - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
 
+**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
+
 **To resume:**
 1. Commit whatever files are on disk, as an unchecked checkpoint.
 2. An agent whose final reply never came didn't finish. Resume it by sending a message to its agent id: it continues from its own transcript. Tell it that the limit stopped it, that its files hold its work, and that it should check its last rows are complete and not redo rows already written.
