@@ -65,3 +65,17 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - The 81 payment rows are in `register/pay-questions.tsv`.
 - The Knowledge Map's 179 questions are in `register/km-questions.tsv`, copied from the founder's artifact with `KM-` ids.
 - `register/README.md` says what the rows are and why they need care.
+
+## If the work was interrupted
+
+**Agents running when last checked (12 October 2026):**
+- **Pilot phase A:** five agents, one per platform, on `studies/subjects/S-01/briefs/A-one-platform.md`. Each writes `studies/subjects/S-01/<platform>/`.
+- **Stage 1 pass 1:** six agents, parts A to F, on `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
+
+**To resume:**
+1. Commit whatever files are on disk, as an unchecked checkpoint.
+2. For each platform or part, run its checker:
+   - for a platform: `python3 -I method/check_subject.py studies/subjects/S-01 OUT`, reading the lines for `<platform>/`;
+   - for a part: `python3 -I method/check_yemen_cases.py studies/yemen-cases OUT --pass1 <part>`.
+3. An agent whose final reply never came didn't finish. Start a new agent with the same prompt as before, adding: "Your files already hold part of the work. Read them, continue from where they stop, and don't redo rows already written."
+4. Then go on from the "Next" lists above.
