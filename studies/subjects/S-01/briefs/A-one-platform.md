@@ -12,7 +12,7 @@ This is `PLAN.md` Stage 2, the pilot. You are one agent with one task, for one p
 
 If it names no payout, record that. If it names several, record each: each one bounds the interval.
 
-**What bears on the subject:** any statement by your platform, or by an agreement its terms incorporate, that says one of these about the merchant's money between the two ends:
+**What bears on the subject:** any statement by your platform, or by an agreement its terms incorporate (one its terms name as binding on the merchant), that says one of these about the merchant's money between the two ends:
 - **(a)** who or what holds or controls it;
 - **(b)** under whose account, licence or terms it is held;
 - **(c)** when, or on what conditions, it is released to the merchant or held back;
@@ -37,7 +37,7 @@ Its statements were already checked verbatim against their sources, and its gaps
 | --- | --- | --- |
 | shopify | observed-sh at `e4984072995bf730a98292a1903de1a49390229a`: `structures/shopify/` and committed text under `raw/runs/` | help.shopify.com, shopify.dev, shopify.com/legal |
 | salla | observed-sa at `4ca2e896a729215f422a137a364e7e9488610ba3`: `structures/salla/`, including `help-articles/{ar,en}/texts.jsonl`, `com-policies/` and `partners-legal/` | docs.salla.dev |
-| woocommerce | WooCommerce 11.2.1 release files, cited as `woocommerce-11.2.1:<path>` | woocommerce.com docs and legal pages |
+| woocommerce | WooCommerce 11.2.1 release files in `/home/user/woocommerce-release/11.2.1/woocommerce`, cited as `woocommerce-11.2.1:<path>` relative to that folder | woocommerce.com docs and legal pages |
 | zid | none | docs.zid.sa, zid.sa and Zid's help pages |
 | bigcommerce | none | docs.bigcommerce.com, bigcommerce.com and its legal pages, support.bigcommerce.com where it can be read |
 
@@ -79,13 +79,15 @@ Its statements were already checked verbatim against their sources, and its gaps
    - quote the platform's own definition where it gives one;
    - where the platform gives its own translation of the term, such as an Arabic and an English page for the same thing, quote that too.
 7. **Bullets.** Give each statement every bullet it fits, such as `a;c`.
-   - A statement under (e) names, in `conditions`, the `stmt_id`s of the (a) to (c) statements whose arrangement it conditions.
+   - **Conditions.** A statement under (e) names, in `conditions`, the `stmt_id`s of the (a) to (c) statements whose arrangement it conditions. If none exists, write `none stated`, and name the arrangement in `identifier`.
+   - **Lists.** Record a list under (e) in full, as one statement, such as the countries where an arrangement is offered. Cite each item, or each run of items. Also cite the words that present the list as complete, if there are any. A statement may run past 300 characters; only quotes are capped.
+   - **The two ends.** A statement naming the buyer's payment takes `end-payment`, and one naming the merchant's payout takes `end-payout`.
 8. **Absences.** Absence counts only from a complete list your platform publishes, whose own words present it as the full set. Record such an absence in `absences.tsv` under the bullet it bears on, citing:
    - the list;
    - the words that make it complete.
 
    Anything else your platform doesn't state is a gap.
-9. **Gaps.** Make one gap for each of (a), (b), (c) and (e) that your platform doesn't state, and one for each end it doesn't name. Bullet (d) needs no gap.
+9. **Gaps.** Make one gap for each of (a), (b), (c) and (e) that your platform doesn't state, and one for each end it doesn't name (`end-payment`, `end-payout`). Bullet (d) needs no gap.
    - `read`: list what you read looking for it. Write held paths with their commit, and live URLs with the date you read them.
    - `gap_kind`, as Q1 defines them:
      - `page not read`: a named page or file that would likely state it hasn't been read yet;
@@ -115,10 +117,10 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 
 | File | Columns |
 | --- | --- |
-| `statements.tsv` | `stmt_id` (S01-XX-001…) · `bullet` (every bullet it fits, `;`-separated: `a`–`e`, or `end` for a statement naming an end) · `placement` · `identifier` · `statement` · `scope` · `marker` · `conditions` (for (e): the stmt_ids it conditions) · `cite_ids` · `from` (`index:<concern_id>:<index cite_id>`, or `new`) · `note` |
+| `statements.tsv` | `stmt_id` (S01-XX-001…) · `bullet` (every bullet it fits, `;`-separated: `a`–`e`, `end-payment`, `end-payout`) · `placement` · `identifier` · `statement` · `scope` · `marker` · `conditions` (for (e): the stmt_ids it conditions, or `none stated`) · `cite_ids` · `from` (`index:<concern_id>:<index cite_id>`, or `new`) · `note` |
 | `terms.tsv` | `term` · `translation` (verbatim, or empty) · `definition` (verbatim, or empty) · `cite_ids` |
 | `absences.tsv` | `absence_id` (S01-XX-N01…) · `bullet` · `what_is_absent` · `list_cite_ids` · `complete_cite_ids` · `note` |
-| `gaps.tsv` | `gap_id` (S01-XX-G01…) · `bullet` (`a`, `b`, `c`, `e` or `end`) · `what_is_missing` · `read` · `gap_kind` · `who_can` · `route` |
+| `gaps.tsv` | `gap_id` (S01-XX-G01…) · `bullet` (`a`, `b`, `c`, `e`, `end-payment` or `end-payout`) · `what_is_missing` · `read` · `gap_kind` · `who_can` · `route` |
 | `citations.tsv` | `cite_id` (S01-XX-C001…) · `source` · `locator` · `quote` · `source_date` · `date_basis` · `accessed` · `access_path` (`md`, `raw`, `rendered` or `local`) |
 | `notes.md` | What you read; what you couldn't read; problems with the method. |
 

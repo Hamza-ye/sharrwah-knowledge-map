@@ -27,8 +27,8 @@ ROOTS = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
 SRC = Sources(ROOTS, CAPTURES)
 HELD = Held(ROOTS, sorted(glob.glob(os.path.join(SKM, "evidence/product-class/runs/*"))) + CAPTURES)
 PLATFORMS = {"shopify": "SH", "salla": "SA", "woocommerce": "WC", "zid": "ZD", "bigcommerce": "BC"}
-BULLETS = {"a", "b", "c", "d", "e", "end"}
-GAP_BULLETS = {"a", "b", "c", "e", "end"}
+BULLETS = {"a", "b", "c", "d", "e", "end-payment", "end-payout"}
+GAP_BULLETS = {"a", "b", "c", "e", "end-payment", "end-payout"}
 PLACEMENTS = {"where", "decides", "responsible", "boundary", "reason"}
 GAP_KINDS = {"page not read", "observation needed", "searched, not found", "stated only in general terms"}
 WHO = {"agent", "founder", "either"}
@@ -138,7 +138,7 @@ for plat, code in PLATFORMS.items():
         bl = [b.strip() for b in r["bullet"].split(";") if b.strip()]
         r["bullets"] = set(bl)
         if not bl or any(b not in BULLETS for b in bl):
-            err(f, sid, f"bullet '{r['bullet']}' is not one or more of a, b, c, d, e or end")
+            err(f, sid, f"bullet '{r['bullet']}' is not one or more of a, b, c, d, e, end-payment or end-payout")
         stmts[sid] = dict(r, platform=plat)
         if r["placement"] not in PLACEMENTS:
             err(f, sid, f"placement '{r['placement']}' is not one of {sorted(PLACEMENTS)}")
@@ -192,7 +192,7 @@ for plat, code in PLATFORMS.items():
         gid, f = g["gap_id"], f"{plat}/gaps.tsv"
         gaps[gid] = dict(g, platform=plat)
         if g["bullet"] not in GAP_BULLETS:
-            err(f, gid, f"bullet '{g['bullet']}' is not one of a, b, c, e or end")
+            err(f, gid, f"bullet '{g['bullet']}' is not one of a, b, c, e, end-payment or end-payout")
         if g["gap_kind"] not in GAP_KINDS:
             err(f, gid, f"gap_kind '{g['gap_kind']}' is not one of {sorted(GAP_KINDS)}")
         if g["who_can"] not in WHO:
@@ -230,8 +230,8 @@ for plat, code in PLATFORMS.items():
         quotes.append((cid, res, why, share, src, c["quote"][:200]))
 for sid, r in stmts.items():
     if "e" in r["bullets"]:
-        cs = ids(r["conditions"])
-        if not cs:
+        cs = [] if r["conditions"] == "none stated" else ids(r["conditions"])
+        if not cs and r["conditions"] != "none stated":
             err(f"{r['platform']}/statements.tsv", sid, "a statement under (e) names the statements it conditions")
         for c in cs:
             if c not in stmts or stmts[c]["platform"] != r["platform"] or not (stmts[c]["bullets"] & {"a", "b", "c"}):
@@ -246,10 +246,9 @@ for plat in PLATFORMS:
     for b in ("a", "b", "c", "e"):
         if b not in stated and b not in gapped:
             err(f"{plat}/gaps.tsv", b, f"bullet ({b}) is neither stated nor recorded as a gap")
-    ends = sum(1 for r in stmts.values() if r["platform"] == plat and "end" in r["bullets"]) + \
-        sum(1 for g in gaps.values() if g["platform"] == plat and g["bullet"] == "end")
-    if ends < 2:
-        err(f"{plat}/statements.tsv", "end", "the two ends are each named by a statement or recorded as a gap")
+    for end in ("end-payment", "end-payout"):
+        if end not in stated and end not in gapped:
+            err(f"{plat}/statements.tsv", end, f"{end} is neither named by a statement nor recorded as a gap")
 if stmts:
     with open(os.path.join(subj, "kinds.tsv"), "w", encoding="utf-8") as f:
         f.write("stmt_id\tkind\trule\n")
