@@ -20,7 +20,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - `method/held_index.py` (what is held, by address);
   - `method/warc_text.py` (reads a record in a fetch archive);
   - `method/quote_check.py` (the shared verbatim check).
-- **Noted, not asked:** observed-sh's 70 fetch archives aren't in git. A page held only there is readable from this repository only if a subject needs it and the founder commits the archive.
+- **observed-sh's 70 fetch archives** weren't in git at Stage 0. The founder is pushing them now.
 
 **Running: Stage 1, Yemen's axes and cases.**
 - **Brief:** `studies/yemen-cases/brief.md`. Each inspection was by a separate agent:
@@ -45,7 +45,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - the help centre's 2,938 articles as text;
   - the eleven pages about Salla's terms as text;
   - the fetch archives in git, except five over GitHub's size limit.
-- **observed-sh `e49840729`.** Its fetch archives aren't in git.
+- **observed-sh `e49840729`.** Its 70 fetch archives, mostly online docs, are being pushed by the founder (12 October). When the founder says they have landed: fetch, check that the held index reads them, and re-run `method/q1_held_check.py`.
 - **The map's citations** are at observed-sa `145f137` and observed-sh `b46731d0` / `e49840729`.
 
 **Open for the founder:** Q3's rows, both sets or one, needed at the pilot's step 3. The 81 payment rows are in `register/pay-questions.tsv`. The Knowledge Map's 179 questions are in no repository this work holds, so the founder will be asked where they are when the pilot reaches step 3.
