@@ -26,10 +26,11 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **Brief:** `studies/yemen-cases/brief.md`. Each inspection was by a separate agent:
   - first: 11 must-fix and 3 optional findings;
   - second: 8 must-fix and 1 optional;
-  - all were addressed, and a third, focused check is running.
+  - third, focused: 4 must-fix and 1 optional, on places and dates;
+  - all were addressed.
+- **The run started** on 12 October 2026: one agent reading `evidence/yemen/`.
 - **Checker:** `method/check_yemen_cases.py`, self-tested.
 - **Next:**
-  - the run;
   - the checker;
   - an independent review;
   - the coordinator compares Q2's example axes with what the evidence showed, and logs any example it didn't show as an unknown.
