@@ -37,7 +37,7 @@ BASES = {"term", "identifiers", "definition", "answers"}
 KINDS = {"observed", "shipped", "stated", "official page"}
 CAUSES = ["no difference", "market, named rule", "maturity", "business model", "market, pattern", "vendor choice", "unknown"]
 LETTERS = {"A", "B", "C", "D", "unknown"}
-RULES = {"the platform carries all the variants at once",
+RULES = {"a commonality, carried as the references carry it", "the platform carries all the variants at once",
          "a variation point behind one interface, bound per market, store or plan",
          "bound per product", "a variation point bound per market",
          "a decision for the founder, on a recommendation", "left to the build",
@@ -54,7 +54,7 @@ HEAD = {
     "absences.tsv": ["absence_id", "bullet", "what_is_absent", "list_cite_ids", "complete_cite_ids", "note"],
     "gaps.tsv": ["gap_id", "bullet", "what_is_missing", "read", "gap_kind", "who_can", "route"],
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "accessed", "access_path"],
-    "a2.tsv": ["vp_id", "stmt_ids", "gap_ids", "read"],
+    "a2.tsv": ["vp_id", "stmt_ids", "gap_ids", "absence_ids", "read"],
     "variation-points.tsv": ["vp_id", "bullet", "question", "x_words", "raised_by", "note"],
     "variants.tsv": ["variant_id", "vp_id", "platform", "variant", "stmt_ids", "basis", "basis_evidence", "kind", "scope",
                      "gap_ids", "absence_ids", "note"],
@@ -309,12 +309,21 @@ if var is not None:
             for a in ids(r["absence_ids"]):
                 if absences.get(a, {}).get("platform") != plat:
                     err("variants.tsv", i, f"absence {a} is not one of {plat}'s absences")
+                elif r["vp_id"] in vp and absences[a]["bullet"] != vp[r["vp_id"]]["bullet"]:
+                    err("variants.tsv", i, f"absence {a} is under bullet {absences[a]['bullet']}, not the variation point's")
+                else:
+                    lk = sorted({kind_of(cit_all[c]["source"], ROOTS)[0] for c in ids(absences[a]["list_cite_ids"]) if c in cit_all})
+                    if lk and sorted(k.strip() for k in r["kind"].split(";") if k.strip()) != lk:
+                        err("variants.tsv", i, f"kind '{r['kind']}' is not its list's kind {';'.join(lk)}")
         elif r["variant"] != "not covered":
             bs = [b.strip() for b in r["basis"].split(";") if b.strip()]
             if not bs or any(b not in BASES for b in bs):
                 err("variants.tsv", i, f"basis '{r['basis']}' is not one or more of {sorted(BASES)}")
             if not r["basis_evidence"]:
                 err("variants.tsv", i, "basis_evidence is empty")
+            if any(stmts.get(x, {}).get("bullets", set()) & {"d"} and not stmts[x]["bullets"] & {"a", "b", "c"}
+                   for x in ids(r["stmt_ids"])) and bs != ["answers"]:
+                err("variants.tsv", i, "a variant resting on a (d) statement takes the basis 'answers'")
             sids = ids(r["stmt_ids"])
             if not sids:
                 err("variants.tsv", i, "no stmt_ids")
@@ -347,6 +356,9 @@ for plat in PLATFORMS:
         for g in ids(r["gap_ids"]):
             if g not in gaps:
                 err(f"{plat}/a2.tsv", r["vp_id"], f"{g} is not a gap")
+        for a in ids(r["absence_ids"]):
+            if a not in absences:
+                err(f"{plat}/a2.tsv", r["vp_id"], f"{a} is not an absence")
         if not r["read"]:
             err(f"{plat}/a2.tsv", r["vp_id"], "read is empty")
 
@@ -411,9 +423,22 @@ if marks is not None:
         if r["mark"] != "unknown":
             if not ids(r["condition_stmt_ids"]) or not ids(r["case_evidence"]):
                 err("yemen-marks.tsv", key, "a mark other than unknown cites both the variant's condition and the case's evidence")
+            vstmts = set()
+            for x in (var or []):
+                if x["variant_id"] == r["variant_id"]:
+                    vstmts = set(ids(x["stmt_ids"]))
             for s in ids(r["condition_stmt_ids"]):
                 if s not in stmts:
                     err("yemen-marks.tsv", key, f"condition {s} is not a statement")
+                elif vstmts and s not in vstmts:
+                    st = stmts[s]
+                    linked = "e" in st["bullets"] and (
+                        set(ids(st["conditions"])) & vstmts or
+                        (st["conditions"] == "none stated" and st["identifier"] and
+                         any(st["identifier"] in stmts[v]["statement"] or st["identifier"] in stmts[v]["identifier"]
+                             for v in vstmts if v in stmts)))
+                    if not linked:
+                        err("yemen-marks.tsv", key, f"condition {s} is neither the variant's statement nor an (e) statement linked to it")
             for y in ids(r["case_evidence"]):
                 if y not in ye:
                     err("yemen-marks.tsv", key, f"case evidence {y} is not a Stage 1 id")
@@ -424,7 +449,19 @@ if marks is not None:
                 err("yemen-marks.tsv", key, "no placement is written as a product gap")
             if not r["founder_item"]:
                 err("yemen-marks.tsv", key, "no placement raises a design decision for the founder in founder_item")
-            listed = {x.split(":")[0].strip() for x in r["per_variant"].split(";") if ":" in x}
+            listed = set()
+            for entry in [x for x in r["per_variant"].split(";") if ":" in x]:
+                vid, _, rest = entry.partition(":")
+                listed.add(vid.strip())
+                cond, _, evid = rest.partition("/")
+                if not ids(cond) or not ids(evid):
+                    err("yemen-marks.tsv", key, f"per_variant entry for {vid.strip()} gives a condition and case evidence, as 'id: stmt_ids / case ids'")
+                for c in ids(cond):
+                    if c not in stmts:
+                        err("yemen-marks.tsv", key, f"per_variant condition {c} is not a statement")
+                for y in ids(evid):
+                    if y not in ye:
+                        err("yemen-marks.tsv", key, f"per_variant evidence {y} is not a Stage 1 id")
             answers = {x["variant_id"] for x in (var or []) if x["vp_id"] == r["vp_id"] and x["variant"] not in NON_ANSWERS}
             if answers - listed:
                 err("yemen-marks.tsv", key, f"no placement shows no failure for {', '.join(sorted(answers - listed))}")

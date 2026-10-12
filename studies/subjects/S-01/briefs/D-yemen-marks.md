@@ -28,7 +28,10 @@ Go down the list, and take the first mark that holds for any reference's variant
 ## Rules
 
 1. **Two pieces of evidence.** A mark other than `unknown` cites both:
-   - **the variant's condition:** the `stmt_ids` of the platform's own statement of what the variant needs or where it holds. This is either a statement under bullet (e) whose `conditions` names the variant's statements, or the scope of the variant's own statements;
+   - **the variant's condition:** the `stmt_ids` of the platform's own statement of what the variant needs or where it holds. It is one of three:
+     - a statement under bullet (e) whose `conditions` names the variant's statements;
+     - a statement under (e) marked `none stated`, whose `identifier` appears in the variant's statements;
+     - the scope of the variant's own statements;
    - **the case's evidence:** the Stage 1 ids showing whether the case meets that condition, which are `YA` states, `YK` constants or `YE` citations.
 
    Without both, the mark is `unknown`. Say what would show it.

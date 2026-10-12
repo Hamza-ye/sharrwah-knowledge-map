@@ -19,13 +19,14 @@ Take each row of `variants.tsv` for your platform whose `variant` is `gap` or `n
 ## Output
 
 **In your platform's phase A files:**
-- add the new statements, citations and gaps there;
+- add the new statements, citations, absences and gaps there;
 - don't change existing rows.
 
 **`a2.tsv`** in `studies/subjects/S-01/<platform>/`, one row per variation point you worked on. Columns:
 - `vp_id`;
 - `stmt_ids` (the statements you added for it);
 - `gap_ids` (the gaps that remain for it);
+- `absence_ids` (the absences you recorded for it);
 - `read` (each path at its commit, and each URL with the date you read it).
 
 The file is tab-separated, with a header row and no quoting.

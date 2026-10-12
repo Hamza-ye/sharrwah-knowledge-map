@@ -26,7 +26,7 @@ Don't read `notes*.md` files or any `note` column.
 
 Go down this list and take the first tag that applies *(the order is the coordinator's own)*. Compare by Mill's methods of agreement and difference.
 
-1. `no difference` *(the coordinator's own)*: no variant is `gap`, `not covered` or `absent`; at least two platforms answer; and every variant names the same who or what, shown by a quoted term or identifier in `basis_evidence`.
+1. `no difference` *(the coordinator's own)*: no variant is `gap`, `not covered` or `absent`; at least two platforms answer; and every `variant` excerpt names the same who or what.
 2. `market, named rule`: a cited statement names a law, regulator or rule as the reason for, or the condition of, a variant.
 3. `maturity`: a variant that differs from the others has a statement carrying a release marker, recorded in `marker`.
 4. `business model` *(this test is the coordinator's own)*: WooCommerce differs from the four hosted platforms, which agree among themselves, and a cited WooCommerce statement says what it does or doesn't provide.
@@ -36,7 +36,7 @@ Go down this list and take the first tag that applies *(the order is the coordin
 
 **Rules for comparing:**
 - **Like with like.** Compare declarations (`stated`, `official page`, `shipped`) with declarations, and `observed` with `observed`, as Q1's 12 October rule does. A cause resting on a declaration set against an observation is `unknown`, with why.
-- **Scopes.** Compare variants whose scopes overlap: the same country, or general. Record the scopes compared in `scopes_compared`.
+- **Scopes** *(the coordinator's own)*. Compare variants whose scopes overlap: the same country, or general. Record the scopes compared in `scopes_compared`.
 - **Absence** counts only from an `absent` variant, which rests on a complete list. A `gap` is not absence. Absence ids (`S01-XX-N…`) may be cited wherever statements are.
 - **A cause is a reading.** Write it as one sentence beginning "Reading:". It never becomes a platform statement.
 
@@ -47,16 +47,17 @@ Give one letter for each platform, by how the platform binds its variants:
 - `B`: one per store, market or plan, set by configuration;
 - `C`: one per product, so one store can hold several;
 - `D`: the platform offers only one. Cite either a statement saying so or an `absent` variant.
-- `unknown`: the statements don't show which.
+- `unknown` *(the coordinator's own)*: the statements don't show which.
 
 **Generality.** When one variant is a restricted form of another, and the general one can reach it by configuration, name the general one's `variant_id`.
 
 ## Step 5: what follows by rule
 
-List every rule below that applies, each in exactly the words of the right-hand column, separated by `;`. If none applies, write `none applies`. A letter's row applies when at least one platform has that letter.
+List every rule below that applies, each in exactly the words of the right-hand column, separated by `;`. If none applies, write `none applies`. A letter's row applies when at least one platform has that letter *(the coordinator's own)*.
 
 | Result | What follows |
 | --- | --- |
+| no difference *(the coordinator's own)* | a commonality, carried as the references carry it |
 | A | the platform carries all the variants at once |
 | B | a variation point behind one interface, bound per market, store or plan |
 | C | bound per product |

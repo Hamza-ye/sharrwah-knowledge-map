@@ -4,7 +4,7 @@ This is `PLAN.md` Stage 2, the pilot. You review what other agents and the coord
 
 **Read only this brief and:**
 - everything in `studies/subjects/S-01/`, and of `briefs/` only `C-analysis.md`, for its rule table;
-- `register/pay-questions.tsv`, only the columns `id`, `question`, `needed_by` and `lane`;
+- the row files E placed: `register/pay-questions.tsv` (only the columns `id`, `question`, `needed_by` and `lane`), and the 179 questions if E placed them;
 - Stage 1's output in `studies/yemen-cases/`;
 - the sources those files cite, to check them.
 
@@ -21,7 +21,7 @@ This is `PLAN.md` Stage 2, the pilot. You review what other agents and the coord
 5. **The register entry, `entry.md`.**
    - Does every claim trace to the files?
    - Is every recommendation marked as the coordinator's?
-   - Does every founder item come from the rule table?
+   - Does every founder item come from the rule table, or from a `no placement` mark?
    - Is anything decided there that is the founder's to decide?
 6. **Coverage.** Is any statement in the platforms' phase A outputs that bears on the subject left out of every variation point?
 7. **Matching.** Does each variant's `basis_evidence` show the bases it claims? Is any variant placed under a variation point that names a different X?

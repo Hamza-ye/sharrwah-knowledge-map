@@ -4,7 +4,7 @@ This is `PLAN.md` Stage 2, the pilot. It carries out Q3 for one subject. You are
 
 **Read only this brief and:**
 - `register/pay-questions.tsv`, and in it only the columns `id`, `question`, `needed_by` and `lane`. The other columns hold citations that are not trusted: don't use them.
-- the Knowledge Map's 179 questions, if the coordinator's message gives you their path. Otherwise say in `notes-e.md` that they weren't placed.
+- the row files the coordinator's message names, as the founder chose at Q3. That is the 81 payment rows, the Knowledge Map's 179 questions, or both.
 - `studies/subjects/S-01/variation-points.tsv`, `variants.tsv`, `analysis.tsv` and `yemen-marks.tsv`.
 
 Don't read `notes*.md` files or any `note` column.
@@ -30,15 +30,20 @@ For each row:
    - **when** it must be answered. This comes from the variation point's `follows` in `analysis.tsv`, by this mapping, which is the coordinator's own:
      - **`before build`:** when `follows` includes "a decision for the founder, on a recommendation", or a mark gives a `founder_item`;
      - **`before release`:** when it includes "kept open as a variation point until evidence settles it", "a variation point behind one interface, bound per market, store or plan" or "a variation point bound per market";
-     - **`later`:** when it holds only "the platform carries all the variants at once", "bound per product" or "left to the build";
+     - **`later`:** when it holds only "the platform carries all the variants at once", "bound per product", "a commonality, carried as the references carry it" or "left to the build";
      - **`unclear`:** when it reads `none applies`.
 
      Where a row's variation points give different times, take the earliest.
-3. **Flag each time bomb** in it, by Q3's four types:
-   - `bundles`: it bundles variation points that are placed differently;
-   - `wrong party`: it is asked of a party other than the one that answers it;
-   - `wrong time`: its `needed_by` treats it as blocking the build when it only blocks release, or the reverse;
-   - `market fact`: it phrases a market fact as a product question.
+3. **Flag each time bomb** in it, by Q3's four types, as these rules decide *(the rules are the coordinator's own)*:
+   - `bundles`: its variation points' `follows` differ.
+   - `wrong party`: either of these:
+     - its `lane` is `founder`, and `who_answers` has no `founder decision`;
+     - its `lane` is `analyst`, `researcher` or `spike`, and `who_answers` holds only `founder decision`, `partner` or `regulator`.
+   - `wrong time`: its `needed_by` and its `when` disagree, reading `needed_by` this way:
+     - `model`, `spine` and `slice` mean before build;
+     - `launch` means before release;
+     - `later` means later.
+   - `market fact`: `who_answers` is only `Yemen evidence`, yet the question asks what the product should do.
 4. **Leave unclear rows unresolved,** with what would settle them. Nothing gets settled that the evidence didn't settle.
 
 ## Rules

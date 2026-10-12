@@ -342,3 +342,7 @@ Both sets are placed, subject by subject: the 81 payment rows and the Knowledge 
   - In step 5, a letter's row applies when any platform has that letter.
   - A source's kind (observed, shipped, stated, official page) is assigned by rule, in `method/source_kinds.py`.
   - When a question row must be answered is mapped from what follows, in `studies/subjects/S-01/briefs/E-rows.md`.
+  - Causes compare variants whose scopes overlap.
+  - Coexistence can be `unknown`.
+  - `no difference` gives "a commonality, carried as the references carry it".
+  - The four time-bomb types are decided by stated rules on the rows' `lane` and `needed_by`.

@@ -31,9 +31,9 @@ Statements under (e) are conditions, not variants. Phase D reads them.
    - Its question takes the form "who or what fills X", with X quoted from one of the statements in `raised_by`.
    - `x_words` lists each raising platform's own words for X.
    - **Merging.** Two variation points answered by exactly the same statements are merged. List each merge in `notes-b.md`.
-3. **Variants.** For each variation point and each platform, give one row per distinct answer the platform gives, with its own `variant_id`. Two answers are distinct when they name a different who or what, shown by a quoted term or identifier. A row takes one of four forms:
+3. **Variants.** For each variation point and each platform, give one row per distinct answer the platform gives, with its own `variant_id`. An answer's `variant` excerpt names the who or what that fills X. Two answers are distinct when their excerpts name a different who or what. A row takes one of four forms:
    - **an answer:** `variant` is an excerpt of one of its statements, verbatim;
-   - **`absent`:** the platform's `absences.tsv` shows it absent from a complete list, with those `absence_ids`;
+   - **`absent`:** the platform's `absences.tsv` shows it absent from a complete list, under the variation point's bullet, with those `absence_ids`. Its `kind` is the kind of the list's citation;
    - **`gap`:** the platform's gaps under the same bullet cover it, with those `gap_ids`;
    - **`not covered`:** the platform has none of these. These rows go back to that platform for gap-closing (phase A2). List them in `notes-b.md`.
 
@@ -55,6 +55,7 @@ Statements under (e) are conditions, not variants. Phase D reads them.
 
 When the coordinator says phase A2 is done, revisit every row that was `gap` or `not covered`. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`.
 - replace it with variants from the statements A2 added, under the rules above;
+- or make it `absent`, with A2's `absence_ids`;
 - or keep it as `gap`, with A2's `gap_ids`.
 
 Record what changed in `notes-b.md`.
