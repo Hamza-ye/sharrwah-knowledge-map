@@ -53,3 +53,5 @@ One line per item: `n`, folder, what was read, and the rows it gave.
 - 157 `157-sanaacenter.org` (Sana'a Center, "Currency War Threatens to Deepen Yemen's Monetary Rift", 18 July 2025): read in full (`text.txt`). Conditions YQ-E314 to YQ-E321; citations YE-E389 to YE-E396.
 - 158 `158-sanaacenter.org` (Sana'a Center Economic Bulletin, 9 September 2020): read in full (`text.txt`). Conditions YQ-E322 to YQ-E330; citations YE-E397 to YE-E404.
 - 159 `159-sanaacenter.org` (The Yemen Review, April-June 2025, the economy section, 22 July 2025): read in full (`text.txt`). Conditions YQ-E331 to YQ-E360; citations YE-E405 to YE-E441.
+- 160 `160-sanaacenter.org` (The Yemen Review, April-June 2026, the economy section, 31 July 2026): read in full (`text.txt`). Conditions YQ-E361 to YQ-E391; citations YE-E442 to YE-E482.
+- 161 `161-sanaacenter.org` (The Yemen Review, January-March 2026, the economy section, 24 April 2026): read in full (`text.txt`). Conditions YQ-E392 to YQ-E410; citations YE-E483 to YE-E505.
