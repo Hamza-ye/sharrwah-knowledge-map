@@ -19,3 +19,28 @@ Each line: item, file read, what it is, conditions recorded from it.
 - 011 jawali.com.ye, `text.txt`: Jawali service page on transfers through local networks (live page). Read in full; 4 conditions.
 - 012 jawali.com.ye, `text.txt`: Jawali service page on purchases and online shopping (live page). Read in full; 2 conditions.
 - 013 wecash.com.ye, `text.txt`: WeCash's "about" page (live page). Read in full; 1 condition.
+- 014 play.google.com, `text.txt`: Play listing of the Jawali app (live description, plus dated user reviews). Read in full; 15 conditions, 4 of them from two users' reviews.
+- 015 play.google.com, `text.txt`: Play listing of the Cash app (Tamkeen). Read in full; 16 conditions, 1 from a 2023 review. It says cash is available around the clock; the same wallet's terms (item 008) say within official working hours; both are recorded.
+- 016 play.google.com, `text.txt`: Play listing of Cash Mughtarib, the Cash wallet for customers outside Yemen. Read in full; 2 conditions. Its reviews report only app faults.
+- 017 play.google.com, `text.txt`: Play listing of the SabaCash app. Read in full; 6 conditions. Its reviews are praise only.
+- 018 play.google.com, `text.txt`: Play listing of the Jaib app (AHD Financial). Read in full; 11 conditions, 2 from users' reviews.
+- 019 onecashye.com, `text.txt`: ONE Cash's join page for payment points and agents (page metadata: published 2020-08-31, modified 2023-03-23). Read in full; 4 conditions.
+- 020 onecashye.com, `text.txt`: ONE Cash's home page (published 2020-08-31, modified 2025-06-04). Read in full; 13 conditions.
+- 021 onecashye.com, `text.txt` and `raw.html`: ONE Cash's FAQ (published 2020-06-03, modified 2024-04-16). The text file holds only the customer questions; the answers sit collapsed in the page, so `raw.html` was read too and cited for them. 18 conditions.
+- 022 qc-yemen.com, `text.txt`: Quality Connect's page on the Floosak wallet (published 2020-05-27, modified 2025-02-16). Read in full; 6 conditions.
+- 023 qc-yemen.com, `text.txt` and `raw.html`: the Floosak FAQ on Quality Connect's site (published 2020-05-27, modified 2025-02-07). The text file holds only the questions; the answers were read in `raw.html` and cited from it. 25 conditions.
+- Dating of items 019 to 023: these are the providers' own pages describing their current services, still served when captured, so the live-page rule gives them the capture date. Their metadata dates (published 2020, modified 2023 to 2025) are kept in each citation's `date_basis`. News items, announcements, posts and reviews keep their own dates.
+- Check for hidden text: each item's `raw.html` was compared with its text file for visible text missing from the text file. Where it held statements (accordion answers in 009, 021 and 023; a menu label in 008), `raw.html` is cited. Other differences were menus, titles and footers.
+- 024 yemen-wallet.ye, `text.txt` and `raw.html`: Yemen Wallet's home page (live page; metadata published 2026-04-28), with dated news snippets. Its services list is only in `raw.html` and is cited from it. 13 conditions, 1 from a news snippet dated 28 April 2026.
+- 025 yemen-wallet.ye, `text.txt` and `raw.html`: Yemen Wallet's "about us" (live page; metadata modified 2026-04-16). 2 conditions. It says the wallet is provided by the General Authority for Post and Postal Savings; providers' identities are kept in notes, not recorded as conditions, here and elsewhere.
+- 026 play.google.com, `text.txt`: Play listing of the Mobile Money app (CAC Bank), with reviews and the provider's replies. Read in full; 19 conditions, 3 from a review and the provider's reply to it.
+- 027 play.google.com, `text.txt`: Play listing of the Mobile Money Business app (CAC Bank) for companies and merchants. Read in full; 12 conditions, 2 from a business user's review.
+- 028 t.me (ONE Cash, posted 2026-10-04), `embed-text.txt`: invitation to the Yemen Health 2026 exhibition in Sana'a. Read; no condition stated.
+- 029 t.me (ONE Cash, 2026-10-03), `embed-text.txt`: local transfers in three currencies. 1 condition.
+- 030 t.me (ONE Cash, 2026-09-23), `embed-text.txt`: use by SMS without internet. 1 condition.
+- 031 t.me (SabaCash, 2026-08-23), `embed-text.txt`: cashback for buyers and commission for merchants from 24 August 2026. 2 conditions.
+- 032 t.me (SabaCash, 2026-09-22), `embed-text.txt`: partnership slogan with CAC Islamic bank. Read; no condition stated.
+- Telegram items: `text.txt` holds only the page's buttons; the post text is in `embed-text.txt`, which is the manifest's `text_file` and was read for every post.
+- 033 sabacash.com: not readable. Blocked from here (connection reset); no page content was captured.
+- 034 floosak.com: not readable. `text.txt` is Cloudflare's error 522 page (the origin server timed out); no content of the site.
+- 035 yk-bank.com (its Floosak page): not readable. `text.txt` is Cloudflare's block page (HTTP 403); no content of the site.
