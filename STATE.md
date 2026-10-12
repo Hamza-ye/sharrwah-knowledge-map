@@ -31,7 +31,8 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   The cap is now a stop for review. The change is recorded in `PLAN.md` section 11. A focused inspection found 7 must-fix items, all fixed.
 - **Pass 1 is split across six agents by part** (A to F), so that every source is read. It started on 12 October 2026 at commit `9d0de52`.
   - Part A is done: 54 conditions and 112 citations, every quote found.
-  - Parts B to F had written about 1,500 rows when last checked.
+  - Part F is done: 150 conditions and 393 citations, every quote found. It notes that the Aden and Sana'a central banks' texts both name their area "Republic of Yemen". Pass 2's authority rule keeps the two apart.
+  - Parts B to E are running.
 - **Pass 2 is reworked before it runs**, given pass 1's size (`PLAN.md` section 11, brief's pass 2).
   - Agents make the judgments: step 2a groups conditions and places, and step 2b labels states, several agents by range of groups.
   - `method/build_yemen_cases.py` applies the rules and writes axes, constants and cases.
@@ -84,8 +85,8 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 
 **Agents running when last checked (12 October 2026, 18:53 UTC):**
 - **Pilot:** the third inspection of briefs B, A2, C, D and F (agent `a5d58b590e05e29e5`). It writes no file. If it was stopped, run it again.
-- **Stage 1 pass 1:** parts B to F. Part A is done.
-  - Agents: B `a3e994da3bb31bdea`, C `ae62ffcdd5d9f5670`, D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`, F `aa29284ecad1cbef0`.
+- **Stage 1 pass 1:** parts B to E. Parts A and F are done.
+  - Agents: B `a3e994da3bb31bdea`, C `ae62ffcdd5d9f5670`, D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`. Part F is done.
   - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
