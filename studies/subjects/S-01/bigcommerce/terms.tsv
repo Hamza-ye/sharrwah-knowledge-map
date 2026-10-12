@@ -3,9 +3,10 @@ payout			S01-BC-C020;S01-BC-C021;S01-BC-C013
 balance			S01-BC-C020;S01-BC-C022
 Money Dashboard			S01-BC-C020
 Settlement Currency		The currency the merchant gets paid out to their bank account.	S01-BC-C014
-settles			S01-BC-C023;S01-BC-C027;S01-BC-C015
-Transactional Currency		Comprised of the currency and amount, the transactional currency is what BigCommerce passes to the payment provider and what is charged to a shopper's bank account.	S01-BC-C045
-funds			S01-BC-C025;S01-BC-C027
+settles			S01-BC-C023;S01-BC-C028;S01-BC-C015
+Transactional Currency		Comprised of the currency and amount, the transactional currency is what BigCommerce passes to the payment provider and what is charged to a shopper's bank account.	S01-BC-C046
+settlements			S01-BC-C027
+funds			S01-BC-C025;S01-BC-C028
 PayPal business account			S01-BC-C025
 payment provider			S01-BC-C016
 payment gateway			S01-BC-C001;S01-BC-C002

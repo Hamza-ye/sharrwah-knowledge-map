@@ -13,7 +13,7 @@ Read on 2026-10-12, following `studies/subjects/S-01/briefs/A-one-platform.md`.
 - payment providers and checkout: `/payment-providers/stripe/integrating-stripe-adaptive-pricing.md`, `/checkout-and-cart/integrated-fastlane-by-pay-pal.md`, `/checkout-and-cart/overview.md`, `/open-checkout/pciguide.md`, `/payments/stored-instruments.md`, `/storefront/headless/pci-compliance.md`;
 - courses: `/learn/courses/checkout-orders-rest-api/management-api/payments.md`, `/transactions-api/transactions-api.md`, `/transactions-api/refunds.md`, `/learn/courses/b2b-graphql/orders-invoices/payments.md`, `/b2b-graphql/company/credit-payment.md`, `/learn/courses/b2b-core/purchasing/rest-orders-payments.md`.
 
-**bigcommerce.com pages,** both as raw HTML and rendered through `method/capture/page_text.mjs`:
+**bigcommerce.com pages,** as raw HTML. Every page cited was also rendered through `method/capture/page_text.mjs`.
 - BigCommerce Payments: `/payments/bigcommerce-payments/` (also on bigcommerce.co.uk and bigcommerce.com.au), `/payments/bigcommerce-payments-treatment/` and `/bigcommerce-payments-trial/`;
 - payments and providers: `/payments/`, `/payments/embedded-payment-providers/`, `/payments/gateways/` and `/payments/gateways/united-states/`, `/payments/paypal/` (also on bigcommerce.co.uk and bigcommerce.com.au), `/partners/stripe/payments/`;
 - products and pricing: `/pricing/`, `/product/`, `/product/checkout/`, `/product/consumer-financing/`, `/product/stored-credit-cards/`, `/product/pos/`, `/product/mobile-wallets/`, `/product/agentic-commerce/`, `/product/paypal-agentic-commerce-beta/`;
@@ -39,19 +39,20 @@ Read on 2026-10-12, following `studies/subjects/S-01/briefs/A-one-platform.md`.
 
 ## Problems
 
-- **Partly stated bullets.** The brief asks for one gap for each bullet the platform doesn't state. Bullets (a), (b) and (c) are each stated for some arrangements but not for BigCommerce Payments, nor for providers other than PayPal and Stripe:
+- **Partly stated bullets.** The brief asks for one gap for each bullet the platform doesn't state. None of bullets (a), (b) and (c) is stated for BigCommerce Payments, and each is stated for only some providers:
   - (a) for the merchant's payment provider, BitPay, PayPal and Stripe;
   - (b) for PayPal and Stripe;
   - (c) for PayPal, Pay Later and the consumer financing integrations.
 
   I recorded one gap per bullet, G01 to G03, for what is not stated. The checker would accept no gap at all for these bullets.
-- **Two pages differ on where BigCommerce Payments is offered.** The bigcommerce.com and bigcommerce.com.au pages say "available only to US-based merchants" (S01-BC-027). The bigcommerce.co.uk page says "US- and UK-based merchants" (S01-BC-028). Both are recorded.
-- **Two pages differ on the number of countries.** The payments page says providers cover "more than 150 countries" (S01-BC-034). The checkout page says "65+ payment providers across 100+ countries" (S01-BC-035). Both are recorded.
+- **Two pages differ on where BigCommerce Payments is offered.** The bigcommerce.com and bigcommerce.com.au pages say "available only to US-based merchants" (S01-BC-028). The bigcommerce.co.uk page says "US- and UK-based merchants" (S01-BC-029). Both are recorded.
+- **Two pages differ on the number of countries.** The payments page says providers cover "more than 150 countries" (S01-BC-035). The checkout page says "65+ payment providers across 100+ countries" (S01-BC-036). Both are recorded.
 - **Text that appears only in the raw HTML:**
   - The BigCommerce Payments page's FAQ answers are in the raw HTML. The rendered page shows the questions collapsed.
-  - The payment gateways page shows one region at a time when rendered. Its raw HTML holds every region, so S01-BC-036 cites the raw page.
+  - The payment gateways page shows one region at a time when rendered. Its raw HTML holds every region, so S01-BC-037 cites the raw page.
 - **A footnote marker inside a sentence.** The PayPal page puts footnote marker 3, between invisible characters, inside its Pay Later sentence. The statement keeps it as the checker's normalization reads it: "Pay Monthly3" (S01-BC-024).
 - **The Incorporated Terms list.** The Master Services Agreement's list names no payments agreement. Its own words don't present it as the full set: the Agreement also incorporates "any additional guidelines or rules applicable to such Services or features that may be posted from time to time". So no absence is recorded, and `absences.tsv` has its header only.
 - **The Unified Billing terms** are left out. They speak of Commerce collecting amounts from the merchant, and distributing or remitting them, for the merchant's purchases from Unified Billing Partners. They say nothing of buyers' payments.
 - **Translations.** No translation is recorded. The docs and the pages cited are in English, and I did not look at the German, French or other localized sites.
 - **Quotes that span paragraphs.** A statement made of a question and its answer cites each paragraph separately. A quote stays within one paragraph, while the statement runs across both, so the checker can find it whole on the page.
+- **The checker writes outside this folder.** Running `method/check_subject.py` as instructed writes `studies/subjects/S-01/kinds.tsv`. I left that file in place.
