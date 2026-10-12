@@ -35,10 +35,22 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - an independent review;
   - the coordinator compares Q2's example axes with what the evidence showed, and logs any example it didn't show as an unknown.
 
-**Prepared: Stage 2, the pilot (S-01).**
-- **Briefs** in `studies/subjects/S-01/briefs/`, A to F. A to C are under inspection by a separate agent; D to F follow.
-- **Checker:** `method/check_subject.py`, self-tested.
-- **Phase A** doesn't depend on Stage 1, so it may start as soon as its brief passes. Step 2, the Yemen marks, waits for Stage 1.
+**Running: Stage 2, the pilot (S-01).**
+- **Briefs:** `studies/subjects/S-01/briefs/`.
+  - Brief A was inspected three times, with all findings fixed.
+  - Briefs B to F and A2 were inspected twice. A third check follows before B runs.
+  - The method fixes this needed are recorded in `PLAN.md` section 11.
+- **Phase A started on 12 October 2026:** five agents, one per platform, each blind to the others.
+- **Next:**
+  - capture the URLs phase A cites;
+  - check, with `kinds.tsv`;
+  - B, A2, B's second pass, C;
+  - D, after Stage 1;
+  - E;
+  - the entry;
+  - F;
+  - the method report;
+  - G1.
 
 **Evidence heads:**
 - **observed-sa `4ca2e896`.** It now holds items 6, 7, 9, 10 and 11:
