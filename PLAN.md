@@ -359,3 +359,8 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - conditions are recorded first, and then grouped into axes;
   - the cap becomes a stop for review after grouping.
   `studies/yemen-cases/first-run-stopped/` keeps that first run as a record.
+- **12 October 2026,** Stage 1's pass 2, before it runs, given pass 1's size (over 1,500 rows):
+  - Its judgments are split from its rules. Agents group the rows into conditions and places, and label each row's state. `method/build_yemen_cases.py` applies the rules for axes, today and cases, and the checker compares its output.
+  - A condition's states are alternatives: only one holds at a place and time.
+  - A state an authority sets holds for that authority's area. Only a state whose source says it holds across all of Yemen supersedes states at other places.
+  - No source attests a state after the evidence was captured.

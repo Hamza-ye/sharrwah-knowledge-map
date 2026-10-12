@@ -12,7 +12,11 @@ This is `PLAN.md` Stage 1. Read only this brief and the evidence named under "In
   - F: the community clients, and the OCR text in `derived/`.
 
   Each reads every source in its part, and nothing else. It writes `pass1/conditions-<part>.tsv` and `pass1/citations-<part>.tsv`, numbering its rows `YQ-<part>001…` and `YE-<part>001…`, and `pass1/notes-<part>.md`.
-- **Pass 2** is one agent. It starts after the coordinator has joined pass 1's files into `conditions.tsv` and `citations.tsv`, and it writes everything else. It adds no citation: what pass 1 didn't find goes in `unknowns.tsv`.
+- **Pass 2** starts after the coordinator has joined pass 1's files into `conditions.tsv` and `citations.tsv`. It adds no citation: what pass 1 didn't find goes in `unknowns.tsv`.
+  - Step 2a, one agent: `groups.tsv` and `places.tsv`.
+  - Step 2b, several agents, each given a range of groups: `pass2/states-<k>.tsv` and `pass2/notes-<k>.md`. The coordinator joins the states into `states.tsv`.
+  - The build, run by the coordinator, writes `axes.tsv`, `constants.tsv` and `cases.tsv`.
+  - Step 2c, the step 2a agent: `unknowns.tsv` and `notes.md`.
 
 A first run stopped early: its cap on axes fired before the evidence was read. This brief therefore works in two passes. Pass 1 reads every source and records its conditions. Only then does pass 2 form axes.
 
@@ -64,29 +68,88 @@ Don't skip a source because it seems minor.
 
   `date_basis` says which applies.
 
-## Pass 2: axes, constants and cases
+## Pass 2: from conditions to axes and cases
 
-1. **Axis.** A condition the evidence shows in at least two states. Its `condition_ids` list every pass 1 row it rests on.
-2. **Constant.** A condition shown in one state only. It goes in `constants.tsv`, with its place.
-3. **Stop for review** if pass 2 gives more than 20 axes. Write `axes.tsv` and `constants.tsv`, say so in `notes.md`, and build no cases.
-4. **Today.** For each axis, `today` joins the latest-dated state of each place with ` + `. `place not stated` counts as one more place.
-   - **Supersession.** A later whole-market state supersedes older place-bound states only when its source says it applies across Yemen.
+Pass 2's agents make three judgments: which rows are one condition, which place names are one place, and each row's state. The build then applies the rules below to them, the same way for every axis.
+
+### Step 2a: conditions and places (one agent)
+
+Read `conditions.tsv`, `pass2/wordings.tsv` and the six `pass1/notes-<part>.md`. Open a source only to settle what its rows and quotes leave open.
+
+1. **One condition.** Rows whose states answer the same question are one condition, whatever their part. The question is about an act or an availability, for example who may do A, or whether B is available. Name it at that level, not per institution.
+2. **States are alternatives.** At one place and time, only one state of a condition holds. If two rows' states can hold together at one place and time, either they state the same thing, or they belong to different conditions. Size each condition so that this holds.
+3. **`groups.tsv`.** Write each condition there:
+   - its rows in `condition_ids`;
+   - what differs between their states in `what_varies`.
+
+   Every pass 1 row is in exactly one group. List each identification across parts in `notes.md`.
+4. **Places.** Every place pass 1 gives goes in `places.tsv`, with `grouped` set to the place it is one with, or to itself.
+   - **Grouping.** Two place names are one place only when a single source uses both for the same area. In `basis`, cite the citations from that source that use them.
+   - **Chaining.** Groupings chain: a name grouped with a second, which is grouped with a third, is one place with both.
+   - **Authorities.** For every authority that sets a state, also list `<authority>'s area` (see step 2b).
+   - **`across Yemen`** is never a grouping. Step 2b gives it per state.
+
+### Step 2b: states (several agents, each given a range of groups)
+
+For every row of its groups, an agent writes one line of `pass2/states-<k>.tsv`, with these columns.
+
+**`label`:** the state, short and in English.
+- Give the source's own words in parentheses where it has them.
+- Leave the place out: the build adds it.
+- Rows that state the same thing share one label, word for word.
+- What a row names inside the state, such as which wallets or which banks, goes in `note`.
+- A label never contains `;`, `|`, `[`, `]`, ` + ` or ` @ `.
+
+**`place`:** the row's place as `places.tsv` groups it, with two exceptions.
+- **A state an authority sets** holds for that authority's area, `<authority>'s area`, whatever area its text names.
+- **`across Yemen`** is for a state no authority sets, whose source says it holds across all of Yemen. "Yemen" or "the Republic" alone is not enough.
+
+**`holds`:**
+- `held`: a source says or shows that it held or holds;
+- `provided for`: a source shows only that an enacted law or issued decision provides for it, including one that starts after 10 October 2026.
+
+**`now`:** `yes` when one source gives two states for the same place at once and says this one holds now. Otherwise it is empty.
+
+Each agent also writes `pass2/notes-<k>.md`, recording:
+- rows that were hard to label, and why;
+- disagreements between sources;
+- problems with the method.
+
+### The build
+
+The coordinator joins the states files into `states.tsv` and runs `python3 -I method/build_yemen_cases.py studies/yemen-cases`. The build writes `axes.tsv`, `constants.tsv` and `cases.tsv`, and nobody edits them by hand. Its rules:
+
+1. **Axis or constant.**
+   - An axis is a condition whose rows carry at least two labels. Its `condition_ids` list every row it rests on.
+   - A constant is a condition with one label, with each place it holds at.
+2. **State labels** carry ` @ <place>` when they hold for a place.
+3. **Dates.**
+   - A `held_at` that isn't a date counts as undated.
+   - No source attests a state after 10 October 2026, when the evidence was captured, so a later date counts as that day.
+4. **Today.** For each axis, `today` joins the latest-dated `held` state of each place with ` + `. `place not stated` counts as one more place.
+   - **Supersession.** A later `across Yemen` state supersedes older states at every place. No other state supersedes a state at another place.
    - **Precision.** Dates of different precision are compared at the coarser one, so 2024 and March 2024 tie.
-   - **Disputed.** Two different states for the same place at the same latest date make that place's part `disputed`. Record both, and don't resolve them.
-   - **One source, two states.** When one source gives two states for the same place at once, take the one it says holds now. If it says neither, that place's part is `disputed`.
-5. **Today's case, `YC-00`,** puts every axis at its `today`. It is the one anchor case.
-6. **Further cases** are built in two ways and no others:
+   - **Undated.** An undated state can be the latest only where its place has no dated state.
+   - **Disputed.** Two different states for the same place at the same latest date make that place's part `disputed @ <place>`. The axis's `note` records both, unresolved.
+   - **One source, two states.** When one source gives both, the one marked `now` is taken. If neither is marked, the part is `disputed @ <place>`.
+   - **Unknown.** A place with no `held` state takes `unknown @ <place>`.
+5. **Stop for review** past 20 axes. The build writes `axes.tsv` and `constants.tsv` and builds no cases until the coordinator has reviewed the axes, in `review-axes.md`.
+6. **Today's case, `YC-00`,** puts every axis at its `today`. It is the one anchor case.
+7. **Further cases** are built in two ways and no others:
    - **One per non-today state** of each axis, with every other axis at today's state.
-     - On an axis whose `today` joins places, a state for a place replaces only that place's part. A state that a source says applies across Yemen replaces every part.
+     - On an axis whose `today` joins places, a state for a place replaces only that place's part. An `across Yemen` state replaces every part.
      - A disputed state counts as non-today.
-   - **One per combination of states that a single source shows holding at one time.** The axes it doesn't give stay at today's state.
+   - **One per combination of states that a single source shows holding at one time,** meaning with the same `held_at`. The axes it doesn't give stay at today's state.
 
-   Skip a case that duplicates another. A case's `name` lists only the states that differ from today, for example `YA-03=<label>`.
-7. **Basis** of a further case, the first that applies:
-   - `in force`: it holds now, somewhere in the market;
-   - `occurred`: it held at some time;
-   - `provided for`: an enacted law or an issued decision provides for it.
-8. **State labels.** A label is short and in English, with the source's own words in parentheses where it has them, and ` @ <place>` when it holds for a place. Use the same label everywhere.
+   A case that duplicates another or today's is skipped. A case's `name` lists only the states that differ from today, for example `YA-03=<label>`.
+8. **Basis** of a further case comes from the states that differ from today. Take the first that applies:
+   - `in force`: they all hold now somewhere in the market (a disputed state counts);
+   - `occurred`: they all held at some time;
+   - `provided for`: otherwise.
+
+### Step 2c: unknowns and notes (the step 2a agent)
+
+After the build, write `unknowns.tsv`, as below, and complete `notes.md`.
 
 ## Inputs
 
@@ -141,12 +204,15 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 | File | Columns |
 | --- | --- |
 | `conditions.tsv` | `condition_id` (YQ-A001…, by part) · `condition` · `state` · `place` · `held_at` · `date_basis` · `cite_ids` · `note` |
-| `axes.tsv` | `axis_id` (YA-01…) · `axis` · `what_varies` · `condition_ids` · `states` (`label [YE-001, YE-007] \| label @ place [YE-010]`) · `today` (state labels joined by ` + `, with `disputed` or `unknown` where they apply) · `today_cite_ids` · `note` |
-| `constants.tsv` | `constant_id` (YK-01…) · `condition` · `place` · `condition_ids` · `cite_ids` · `note` |
-| `cases.tsv` | `case_id` (YC-00, then YC-01…) · `name` · `axis_states` (`YA-01=<label>; …` for every axis, joined by ` + ` where `today` joins them, or `disputed` or `unknown`) · `basis` · `cite_ids` · `note` |
+| `groups.tsv` | `group_id` (YG-001…) · `condition` · `what_varies` · `condition_ids` · `note` |
+| `places.tsv` | `place` (as pass 1 gives it, or `<authority>'s area`) · `grouped` · `basis` (cite_ids from one source using both names) · `note` |
+| `states.tsv` | `condition_id` · `group_id` · `label` · `place` · `holds` · `now` · `note` (step 2b writes `pass2/states-<k>.tsv`) |
+| `axes.tsv` | Written by the build: `axis_id` (YA-01…) · `axis` · `what_varies` · `condition_ids` · `states` (`label [YE-001, YE-007] \| label @ place [YE-010]`) · `today` (state labels joined by ` + `, with `disputed @ <place>` or `unknown @ <place>` where they apply) · `today_cite_ids` · `note` |
+| `constants.tsv` | Written by the build: `constant_id` (YK-01…) · `condition` · `state` · `place` · `condition_ids` · `cite_ids` · `note` |
+| `cases.tsv` | Written by the build: `case_id` (YC-00, then YC-01…) · `name` · `axis_states` (`YA-01=<label>; …` for every axis, joined by ` + ` where `today` joins them, or `disputed` or `unknown`) · `basis` · `cite_ids` · `note` |
 | `citations.tsv` | `cite_id` (YE-A001…, by part) · `source` · `locator` · `quote` · `source_date` · `date_basis` · `fetched_from` · `url` |
 | `unknowns.tsv` | `about` · `what_would_show_it` · `who_can` · `route` · `read` · `why_not_held` |
-| `notes.md` | Pass 2: identifications across parts, and place groupings; disagreements; problems with the method. Pass 1 writes its own `pass1/notes-<part>.md`: what was read, with counts; identifications and place groupings within the part; what couldn't be read. |
+| `notes.md` | Pass 2: identifications across parts, and place groupings; disagreements; problems with the method. Step 2b writes `pass2/notes-<k>.md`. Pass 1 writes its own `pass1/notes-<part>.md`: what was read, with counts; identifications and place groupings within the part; what couldn't be read. |
 
 **Done when:**
 - every source has been read, or listed as unreadable;

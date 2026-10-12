@@ -2,39 +2,51 @@
 # files and columns, ids, that every state is cited, that every case gives every axis one of that axis's states,
 # that today's case matches each axis's "today", that every unknown is listed with what was read, that only
 # Yemen evidence is cited at a pinned commit, and that every quote is found verbatim in the file it cites.
+# Pass 2's judgments (groups.tsv, places.tsv, states.tsv) are checked for completeness, and axes.tsv,
+# constants.tsv and cases.tsv must be exactly what method/build_yemen_cases.py gives from them.
 #
-# Usage: python3 -I method/check_yemen_cases.py STUDY_DIR OUT [--pass1 PART]
+# Usage: python3 -I method/check_yemen_cases.py STUDY_DIR OUT [--pass1 PART | --groups | --states FILE]
+#   --pass1 PART   one part of pass 1: pass1/conditions-<PART>.tsv and pass1/citations-<PART>.tsv
+#   --groups       step 2a: groups.tsv and places.tsv
+#   --states FILE  step 2b: one agent's states file (e.g. pass2/states-1.tsv), for the groups it covers
 import csv, os, re, sys
 from collections import Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quote_check import Sources
+import build_yemen_cases as B
 
-study, OUT = sys.argv[1], sys.argv[2]
+study, OUT = sys.argv[1].rstrip("/"), sys.argv[2]
 os.makedirs(OUT, exist_ok=True)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = Sources({"sharrwah-knowledge-map": SKM})
 HEADERS = {
     "conditions.tsv": ["condition_id", "condition", "state", "place", "held_at", "date_basis", "cite_ids", "note"],
-    "axes.tsv": ["axis_id", "axis", "what_varies", "condition_ids", "states", "today", "today_cite_ids", "note"],
-    "constants.tsv": ["constant_id", "condition", "place", "condition_ids", "cite_ids", "note"],
-    "cases.tsv": ["case_id", "name", "axis_states", "basis", "cite_ids", "note"],
+    "groups.tsv": ["group_id", "condition", "what_varies", "condition_ids", "note"],
+    "places.tsv": ["place", "grouped", "basis", "note"],
+    "states.tsv": ["condition_id", "group_id", "label", "place", "holds", "now", "note"],
+    "axes.tsv": B.HEADS["axes.tsv"],
+    "constants.tsv": B.HEADS["constants.tsv"],
+    "cases.tsv": B.HEADS["cases.tsv"],
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "fetched_from", "url"],
     "unknowns.tsv": ["about", "what_would_show_it", "who_can", "route", "read", "why_not_held"],
 }
-IDS = {"conditions.tsv": ("condition_id", r"^YQ-[A-F]\d{3}$"), "axes.tsv": ("axis_id", r"^YA-\d{2}$"), "constants.tsv": ("constant_id", r"^YK-\d{2}$"),
-       "cases.tsv": ("case_id", r"^YC-\d{2}$"), "citations.tsv": ("cite_id", r"^YE-[A-F]\d{3}$")}
+IDS = {"conditions.tsv": ("condition_id", r"^YQ-[A-F]\d{3}$"), "groups.tsv": ("group_id", r"^YG-\d{3,}$"),
+       "axes.tsv": ("axis_id", r"^YA-\d{2,}$"), "constants.tsv": ("constant_id", r"^YK-\d{2,}$"),
+       "cases.tsv": ("case_id", r"^YC-\d{2,}$"), "citations.tsv": ("cite_id", r"^YE-[A-F]\d{3}$")}
 BASES = {"today", "in force", "occurred", "provided for"}
 FETCHED = {"inside Yemen", "outside Yemen", "attestation"}
 WHO = {"agent", "founder", "reader"}
+HOLDS = {"held", "provided for"}
 SOURCE = re.compile(r"^sharrwah-knowledge-map@[0-9a-f]{7,40}:evidence/yemen/(runs|blocked-evidence-founder|derived|attestations)/")
-MAX_AXES = 20
+LABEL_BAD = re.compile(r"[;|\[\]]| \+ | @ ")
+MAX_AXES = B.MAX_AXES
 issues = []
 
 def err(f, i, x, level="error"):
     issues.append((level, f, i, x))
 
 def read(name, key=None):
-    key = key or name
+    key = key or os.path.basename(name)
     p = os.path.join(study, name)
     if not os.path.exists(p):
         err(name, "", "file missing")
@@ -58,6 +70,34 @@ def read(name, key=None):
 
 def ids(s):
     return [x for x in re.split(r"[,\s;]+", s or "") if x]
+
+def write_issues(name):
+    with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:
+        f.write("level\tfile\tid\tissue\n")
+        for row in issues:
+            f.write("\t".join(str(v).replace("\t", " ").replace("\n", " ") for v in row) + "\n")
+
+def check_quotes(cits, fname, used):
+    quotes = []
+    for c in cits:
+        cid, src = c["cite_id"], c["source"]
+        if not SOURCE.match(src):
+            err(fname, cid, f"source '{src[:90]}' is not Yemen evidence at a pinned commit")
+        if not c["quote"]:
+            err(fname, cid, "quote is empty")
+        if "..." in c["quote"] or "…" in c["quote"]:
+            err(fname, cid, "quote contains an ellipsis")
+        if len(c["quote"]) > 300:
+            err(fname, cid, f"quote is {len(c['quote'])} characters; the brief allows 300")
+        if c["fetched_from"] not in FETCHED:
+            err(fname, cid, f"fetched_from '{c['fetched_from']}' is not one of {sorted(FETCHED)}")
+        if used is not None and cid not in used:
+            err(fname, cid, "not used", "warning")
+        res, why, share = SRC.check_quote(c["quote"], src, c["locator"]) if c["quote"] and src else ("unresolved", "no quote or source", "")
+        if not res.startswith("found"):
+            err(fname, cid, f"quote {res}{'; ' + why if why else ''}{'; best 6-word share ' + share if share else ''}")
+        quotes.append((cid, res, why, share, src, c["quote"][:200]))
+    return quotes
 
 if "--pass1" in sys.argv:
     # Pass 1 of one part: its conditions and citations, with the part's ids, and every quote verbatim.
@@ -84,43 +124,133 @@ if "--pass1" in sys.argv:
             used.add(x)
             if x not in cid_set:
                 err("conditions", c["condition_id"], f"cite_id {x} not in citations")
-    quotes = []
-    for c in cits:
-        cid, src = c["cite_id"], c["source"]
-        if not SOURCE.match(src):
-            err("citations", cid, f"source '{src[:90]}' is not Yemen evidence at a pinned commit")
-        if "..." in c["quote"] or "\u2026" in c["quote"]:
-            err("citations", cid, "quote contains an ellipsis")
-        if len(c["quote"]) > 300:
-            err("citations", cid, f"quote is {len(c['quote'])} characters; the brief allows 300")
-        if c["fetched_from"] not in FETCHED:
-            err("citations", cid, f"fetched_from '{c['fetched_from']}' is not one of {sorted(FETCHED)}")
-        if cid not in used:
-            err("citations", cid, "not used by any condition", "warning")
-        res, why, share = SRC.check_quote(c["quote"], src, c["locator"]) if c["quote"] and src else ("unresolved", "no quote or source", "")
-        if not res.startswith("found"):
-            err("citations", cid, f"quote {res}{'; ' + why if why else ''}")
-        quotes.append((cid, res))
-    with open(os.path.join(OUT, f"pass1-{part}-issues.tsv"), "w", encoding="utf-8") as f:
-        f.write("level\tfile\tid\tissue\n")
-        for row in issues:
-            f.write("\t".join(str(v).replace("\t", " ").replace("\n", " ") for v in row) + "\n")
+    quotes = check_quotes(cits, "citations", used)
+    write_issues(f"pass1-{part}-issues.tsv")
     print(f"part {part}: conditions {len(conds)}, citations {len(cits)} | issues: {dict(Counter(i[0] for i in issues))} | "
           f"quotes: {dict(Counter(q[1].split(' (')[0] for q in quotes))}")
     sys.exit(0)
 
-data = {n: read(n) for n in HEADERS}
-conds, axes, consts, cases, cits, unk = (data[n] for n in HEADERS)
+# Pass 2. Its judgments first: groups and places (step 2a), then states (step 2b).
+conds = read("conditions.tsv")
+cits = read("citations.tsv")
+cond = {c["condition_id"]: c for c in conds}
+cit_ids = {c["cite_id"] for c in cits}
+cit_source = {c["cite_id"]: c["source"].split(":", 1)[-1] for c in cits}
+
+def check_groups():
+    groups, places = read("groups.tsv"), read("places.tsv")
+    for k, n in Counter(g["group_id"] for g in groups).items():
+        if n > 1:
+            err("groups.tsv", k, f"id used {n} times")
+    member = {}
+    for g in groups:
+        if not re.match(IDS["groups.tsv"][1], g["group_id"]):
+            err("groups.tsv", g["group_id"], "id doesn't match YG-001…")
+        if not g["condition"]:
+            err("groups.tsv", g["group_id"], "condition is empty")
+        if not ids(g["condition_ids"]):
+            err("groups.tsv", g["group_id"], "condition_ids is empty")
+        for x in ids(g["condition_ids"]):
+            if x not in cond:
+                err("groups.tsv", g["group_id"], f"{x} is not a pass 1 row")
+            elif x in member:
+                err("groups.tsv", g["group_id"], f"{x} is also in {member[x]}; each row is in exactly one group")
+            member[x] = g["group_id"]
+    for x in cond:
+        if x not in member:
+            err("groups.tsv", x, "a pass 1 row in no group")
+    names = Counter(p["place"] for p in places)
+    grouped = {p["place"]: p["grouped"] for p in places}
+    for k, n in names.items():
+        if n > 1:
+            err("places.tsv", k, f"listed {n} times")
+    for p in places:
+        if not p["grouped"]:
+            err("places.tsv", p["place"], "grouped is empty")
+        elif p["grouped"] != p["place"]:
+            if grouped.get(p["grouped"]) != p["grouped"]:
+                err("places.tsv", p["place"], f"grouped with '{p['grouped'][:50]}', which isn't listed as a place grouped with itself")
+            if not ids(p["basis"]):
+                err("places.tsv", p["place"], "grouped with another place, but basis cites no source using both names")
+        for x in ids(p["basis"]):
+            if x not in cit_ids:
+                err("places.tsv", p["place"], f"basis {x} is not a citation")
+        if len({cit_source[x] for x in ids(p["basis"]) if x in cit_source}) > 1:
+            err("places.tsv", p["place"], "basis cites more than one source; a grouping rests on one source using both names")
+        if p["grouped"] == B.ACROSS or p["place"] == B.ACROSS:
+            err("places.tsv", p["place"], f"'{B.ACROSS}' is set per state in states.tsv, not by grouping")
+    for c in conds:
+        if c["place"] not in grouped:
+            err("places.tsv", c["place"][:60], f"a place pass 1 gives ({c['condition_id']}) that places.tsv doesn't list")
+    return groups, member, {v for v in grouped.values()}
+
+def check_states(states, fname, member, place_set, whole=True):
+    seen = Counter(s["condition_id"] for s in states)
+    for k, n in seen.items():
+        if n > 1:
+            err(fname, k, f"row given {n} times")
+    for s in states:
+        cid = s["condition_id"]
+        if cid not in cond:
+            err(fname, cid, "not a pass 1 row")
+            continue
+        if member.get(cid) != s["group_id"]:
+            err(fname, cid, f"group_id {s['group_id']}, but groups.tsv puts it in {member.get(cid)}")
+        if not s["label"]:
+            err(fname, cid, "label is empty")
+        elif LABEL_BAD.search(s["label"]):
+            err(fname, cid, "label contains ';', '|', '[', ']', ' + ' or ' @ ', which the axes and cases files use as separators")
+        if s["place"] != B.ACROSS and s["place"] not in place_set:
+            err(fname, cid, f"place '{s['place'][:50]}' is neither a grouped place in places.tsv nor '{B.ACROSS}'")
+        if s["holds"] not in HOLDS:
+            err(fname, cid, f"holds '{s['holds']}' is not one of {sorted(HOLDS)}")
+        if s["now"] not in ("", "yes"):
+            err(fname, cid, "now is 'yes' or empty")
+    covered = {s["group_id"] for s in states}
+    for x, g in member.items():
+        if (whole or g in covered) and x not in seen:
+            err(fname, x, f"a row of {g} with no state")
+
+if "--groups" in sys.argv:
+    groups, member, place_set = check_groups()
+    write_issues("pass2-groups-issues.tsv")
+    print(f"groups {len(groups)} over {len(member)} rows, grouped places {len(place_set)} | "
+          f"issues: {dict(Counter(i[0] for i in issues))}")
+    sys.exit(0)
+
+if "--states" in sys.argv:
+    fname = sys.argv[sys.argv.index("--states") + 1]
+    groups, member, place_set = check_groups()
+    issues.clear()                                   # step 2a's own issues are reported by --groups
+    states = read(fname, "states.tsv")
+    check_states(states, fname, member, place_set, whole=False)
+    write_issues(f"pass2-{os.path.basename(fname)}-issues.tsv")
+    print(f"{fname}: states {len(states)} over {len({s['group_id'] for s in states})} groups | "
+          f"issues: {dict(Counter(i[0] for i in issues))}")
+    sys.exit(0)
+
+groups, member, place_set = check_groups()
+states = read("states.tsv")
+check_states(states, "states.tsv", member, place_set)
+data = {n: read(n) for n in ("axes.tsv", "constants.tsv", "cases.tsv", "unknowns.tsv")}
+axes, consts, cases, unk = (data[n] for n in ("axes.tsv", "constants.tsv", "cases.tsv", "unknowns.tsv"))
 if not os.path.exists(os.path.join(study, "notes.md")):
     err("notes.md", "", "file missing")
-for name, (key, pat) in IDS.items():
-    for k, n in Counter(r[key] for r in data[name]).items():
+if not [i for i in issues if i[0] == "error"]:
+    built, summary = B.build(study)
+    for name, rows in built.items():
+        with open(os.path.join(study, name), encoding="utf-8") as f:
+            if f.read() != B.render(rows, B.HEADS[name]):
+                err(name, "", "differs from what method/build_yemen_cases.py gives: run it, and don't edit the file by hand")
+for name in ("conditions.tsv", "axes.tsv", "constants.tsv", "cases.tsv", "citations.tsv"):
+    key, pat = IDS[name]
+    rows = {"conditions.tsv": conds, "citations.tsv": cits}.get(name) or data[name]
+    for k, n in Counter(r[key] for r in rows).items():
         if n > 1:
             err(name, k, f"id used {n} times")
-    for r in data[name]:
+    for r in rows:
         if not re.match(pat, r[key]):
             err(name, r[key], f"id doesn't match {pat}")
-cit_ids = {c["cite_id"] for c in cits}
 used = set()
 
 def cites(f, i, s, need=True):
@@ -133,11 +263,13 @@ def cites(f, i, s, need=True):
             err(f, i, f"cite_id {c} not in citations")
     return cs
 
+reviewed = os.path.exists(os.path.join(study, "review-axes.md"))
+stopped = len(axes) > MAX_AXES and not reviewed
 if len(axes) > MAX_AXES:
-    err("axes.tsv", "", f"{len(axes)} axes: the brief stops for review past {MAX_AXES}", "review")
-    if cases:
+    err("axes.tsv", "", f"{len(axes)} axes: the brief stops for review past {MAX_AXES}"
+        + ("; reviewed in review-axes.md" if reviewed else ""), "review")
+    if stopped and cases:
         err("cases.tsv", "", f"cases were built past the {MAX_AXES}-axis stop for review")
-cond_ids = {c["condition_id"] for c in conds}
 for c in conds:
     if not c["condition"] or not c["state"]:
         err("conditions.tsv", c["condition_id"], "condition or state is empty")
@@ -146,18 +278,18 @@ for c in conds:
     cites("conditions.tsv", c["condition_id"], c["cite_ids"])
 placed = Counter(x for r in axes + consts for x in ids(r["condition_ids"]))
 for x, n in placed.items():
-    if x not in cond_ids:
+    if x not in cond:
         err("axes.tsv", x, "a condition_id that conditions.tsv doesn't hold")
     elif n > 1:
         err("axes.tsv", x, f"condition on {n} axes or constants; each sits on exactly one")
-for x in cond_ids - set(placed):
+for x in set(cond) - set(placed):
     err("conditions.tsv", x, "on no axis and no constant")
 unknown_about = {u["about"] for u in unk}
 labels, today = {}, {}
 
 def part_ok(aid, x):
     x = x.strip()
-    return x in labels.get(aid, []) or x == "unknown" or x == "disputed" or x.startswith("disputed @ ")
+    return x in labels.get(aid, []) or x in ("unknown", "disputed") or x.startswith(("disputed @ ", "unknown @ "))
 for a in axes:
     aid = a["axis_id"]
     parts = [p.strip() for p in a["states"].split(" | ") if p.strip()]
@@ -174,12 +306,14 @@ for a in axes:
     for k, n in Counter(labels[aid]).items():
         if n > 1:
             err("axes.tsv", aid, f"state '{k[:40]}' listed {n} times")
+    if not a["what_varies"]:
+        err("axes.tsv", aid, "what_varies is empty: groups.tsv says what differs between the states")
     t = today[aid] = a["today"]
     if not all(part_ok(aid, x) for x in t.split(" + ")):
         err("axes.tsv", aid, f"today '{t[:50]}' is not its state labels joined by ' + ', with 'disputed' or 'unknown' parts")
-    if "unknown" in [x.strip() for x in t.split(" + ")] and aid not in unknown_about:
+    if any(x.strip().startswith("unknown") for x in t.split(" + ")) and aid not in unknown_about:
         err("axes.tsv", aid, "today has an unknown part, but unknowns.tsv has no row about it")
-    if t != "unknown":
+    if not t.startswith("unknown") or " + " in t:
         cites("axes.tsv", f"{aid} today", a["today_cite_ids"])
     if not ids(a["condition_ids"]):
         err("axes.tsv", aid, "condition_ids is empty")
@@ -187,8 +321,10 @@ for k in consts:
     cites("constants.tsv", k["constant_id"], k["cite_ids"])
     if not ids(k["condition_ids"]):
         err("constants.tsv", k["constant_id"], "condition_ids is empty")
+    if not k["state"]:
+        err("constants.tsv", k["constant_id"], "state is empty")
 case_ids = {c["case_id"] for c in cases}
-if "YC-00" not in case_ids:
+if not stopped and "YC-00" not in case_ids:
     err("cases.tsv", "YC-00", "today's case is missing")
 for c in cases:
     cid = c["case_id"]
@@ -238,35 +374,16 @@ for u in unk:
         err("unknowns.tsv", u["about"], f"who_can '{u['who_can']}' is not one of {sorted(WHO)}")
     if not u["read"]:
         err("unknowns.tsv", u["about"], "read is empty: list each path read looking for it")
-quotes = []
 for c in cits:
-    cid, src = c["cite_id"], c["source"]
-    if not SOURCE.match(src):
-        err("citations.tsv", cid, f"source '{src[:90]}' is not Yemen evidence at a pinned commit")
-    if not c["quote"]:
-        err("citations.tsv", cid, "quote is empty")
-    if "..." in c["quote"] or "…" in c["quote"]:
-        err("citations.tsv", cid, "quote contains an ellipsis")
-    if len(c["quote"]) > 300:
-        err("citations.tsv", cid, f"quote is {len(c['quote'])} characters; the brief allows 300")
-    if c["fetched_from"] not in FETCHED:
-        err("citations.tsv", cid, f"fetched_from '{c['fetched_from']}' is not one of {sorted(FETCHED)}")
     for col in ("locator", "source_date", "date_basis"):
         if not c[col]:
-            err("citations.tsv", cid, f"{col} is empty")
-    if cid not in used:
-        err("citations.tsv", cid, "not used by any state, today, constant or case", "warning")
-    res, why, share = SRC.check_quote(c["quote"], src, c["locator"]) if c["quote"] and src else ("unresolved", "no quote or source", "")
-    if not res.startswith("found"):
-        err("citations.tsv", cid, f"quote {res}{'; ' + why if why else ''}{'; best 6-word share ' + share if share else ''}")
-    quotes.append((cid, res, why, share, src, c["quote"][:200]))
-with open(os.path.join(OUT, "yemen-cases-issues.tsv"), "w", encoding="utf-8") as f:
-    f.write("level\tfile\tid\tissue\n")
-    for row in issues:
-        f.write("\t".join(str(v).replace("\t", " ").replace("\n", " ") for v in row) + "\n")
+            err("citations.tsv", c["cite_id"], f"{col} is empty")
+quotes = check_quotes(cits, "citations.tsv", used)
+write_issues("yemen-cases-issues.tsv")
 with open(os.path.join(OUT, "yemen-cases-quotes.tsv"), "w", encoding="utf-8") as f:
     f.write("cite_id\tresult\twhy\tshare_of_6-word_runs_found\tsource\tquote_start\n")
     for q in quotes:
         f.write("\t".join(str(v).replace("\t", " ").replace("\n", " ") for v in q) + "\n")
-print(f"conditions {len(conds)}, axes {len(axes)}, constants {len(consts)}, cases {len(cases)}, citations {len(cits)}, unknowns {len(unk)} | "
-      f"issues: {dict(Counter(i[0] for i in issues))} | quotes: {dict(Counter(q[1].split(' (')[0] for q in quotes))}")
+print(f"conditions {len(conds)}, groups {len(groups)}, axes {len(axes)}, constants {len(consts)}, cases {len(cases)}, "
+      f"citations {len(cits)}, unknowns {len(unk)} | issues: {dict(Counter(i[0] for i in issues))} | "
+      f"quotes: {dict(Counter(q[1].split(' (')[0] for q in quotes))}")

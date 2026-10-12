@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 12 October 2026.
+**Updated:** 12 October 2026, 18:55 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -30,22 +30,32 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 
   The cap is now a stop for review. The change is recorded in `PLAN.md` section 11. A focused inspection found 7 must-fix items, all fixed.
 - **Pass 1 is split across six agents by part** (A to F), so that every source is read. It started on 12 October 2026 at commit `9d0de52`.
+  - Part A is done: 54 conditions and 112 citations, every quote found.
+  - Parts B to F had written about 1,500 rows when last checked.
+- **Pass 2 is reworked before it runs**, given pass 1's size (`PLAN.md` section 11, brief's pass 2).
+  - Agents make the judgments: step 2a groups conditions and places, and step 2b labels states, several agents by range of groups.
+  - `method/build_yemen_cases.py` applies the rules and writes axes, constants and cases.
+  - The checker has `--groups` and `--states` modes and compares the build's output.
+  - Part A's four notes on the brief are settled there:
+    - a `held_at` that isn't a date is undated;
+    - dates after the capture count as the capture date;
+    - the "same role" conflict is settled by "states are alternatives";
+    - the commit given in the agents' prompts is the one cited.
 - **Next:**
-  - join the parts' files into `conditions.tsv` and `citations.tsv`;
-  - pass 2, one agent: axes, constants, cases;
-  - the checker;
-  - an independent review;
-  - compare with Q2's example axes.
+  - when B to F finish: `python3 -I method/join_pass1.py studies/yemen-cases`;
+  - step 2a (one agent), then step 2b (four agents by range of groups), then join the states and build;
+  - the review stop if past 20 axes (`review-axes.md`), then cases;
+  - step 2c, the checker, an independent review, and a comparison with Q2's example axes.
 
 **Running: Stage 2, the pilot (S-01).**
 - **Briefs:** `studies/subjects/S-01/briefs/`.
   - Brief A was inspected three times, with all findings fixed.
   - Briefs B to F and A2 were inspected twice. A third check follows before B runs.
   - The method fixes this needed are recorded in `PLAN.md` section 11.
-- **Phase A started on 12 October 2026:** five agents, one per platform, each blind to the others.
+- **Phase A is done** on all five platforms: 588 statements and 16 gaps. With every capture run, the checker finds all 1,125 quotes and reports no issues.
+  - The pages phase A cites were captured in `evidence/product-class/runs/20261012T104936Z-s01-sources/` (130) and `20261012T190225Z-s01-sources-zid/` (1).
 - **Next:**
-  - capture the URLs phase A cites;
-  - check, with `kinds.tsv`;
+  - the third inspection of briefs B, A2, C, D and F, which is running, and its fixes;
   - B, A2, B's second pass, C;
   - D, after Stage 1;
   - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
@@ -68,19 +78,21 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 
 ## If the work was interrupted
 
-**The usage limit stopped every running agent at about 09:50 UTC on 12 October 2026.** All ten were restarted at 10:10 UTC, each continuing from its files, as below. BigCommerce's phase A had already finished.
+**The usage limit has stopped the running agents twice on 12 October 2026:**
+- at about 09:50 UTC, when all ten restarted at 10:10 UTC as new agents continuing from their files;
+- at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript.
 
-**Agents running when last checked (12 October 2026, 10:10 UTC):**
-- **Pilot phase A:** four agents on `studies/subjects/S-01/briefs/A-one-platform.md`, each writing `studies/subjects/S-01/<platform>/`.
-  - Salla and WooCommerce are finishing: checker and fixes.
-  - Shopify and Zid are starting fresh, because nothing had been written.
-  - BigCommerce is done.
-- **Stage 1 pass 1:** six agents, parts A to F, on `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
+**Agents running when last checked (12 October 2026, 18:53 UTC):**
+- **Pilot:** the third inspection of briefs B, A2, C, D and F (agent `a5d58b590e05e29e5`). It writes no file. If it was stopped, run it again.
+- **Stage 1 pass 1:** parts B to F. Part A is done.
+  - Agents: B `a3e994da3bb31bdea`, C `ae62ffcdd5d9f5670`, D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`, F `aa29284ecad1cbef0`.
+  - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
 
 **To resume:**
 1. Commit whatever files are on disk, as an unchecked checkpoint.
-2. For each platform or part, run its checker:
+2. An agent whose final reply never came didn't finish. Resume it by sending a message to its agent id: it continues from its own transcript. Tell it that the limit stopped it, that its files hold its work, and that it should check its last rows are complete and not redo rows already written.
+3. If the id no longer resumes, start a new agent with the same prompt as before, adding: "Your files already hold part of the work. Read them, continue from where they stop, and don't redo rows already written."
+4. To check a platform or part, run its checker:
    - for a platform: `python3 -I method/check_subject.py studies/subjects/S-01 OUT`, reading the lines for `<platform>/`;
    - for a part: `python3 -I method/check_yemen_cases.py studies/yemen-cases OUT --pass1 <part>`.
-3. An agent whose final reply never came didn't finish. Start a new agent with the same prompt as before, adding: "Your files already hold part of the work. Read them, continue from where they stop, and don't redo rows already written."
-4. Then go on from the "Next" lists above.
+5. Then go on from the "Next" lists above.
