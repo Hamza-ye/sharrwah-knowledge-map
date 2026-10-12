@@ -2,6 +2,8 @@
 
 The answer to `questions/Q1-concern-map.md` as it is being built. This file says where each part stands and what comes next.
 
+**Since 12 October 2026 the map is the index for `PLAN.md`'s subjects, and it is frozen.** No new concerns, statements or gaps go in unless a subject needs them. Stage 0 checked every gap against what is held and re-routed 215 of them (`held-check.tsv`). `STATE.md` at the repository root says where the work is.
+
 ## Where it stands (11 October 2026)
 
 **All three re-passes and the matching pass are done.** What remains is the founder's review.
@@ -26,7 +28,7 @@ The answer to `questions/Q1-concern-map.md` as it is being built. This file says
 **For the founder:**
 - **Rule on the unclear matches.** 19 of them name the statement or source that would settle them, and 6 put a specific question.
 - **Check two matches.** The matching agent flagged M-070 (Shopify Functions and Salla's App Functions) and M-064 (chat with customers and Salla Chat). Both rest on a shared main word.
-- **Close the gaps you can.** `gaps-to-close.md` lists them: salla.com pages to save, journeys, a paid Plus store, and questions to the platforms.
+- **Gaps.** `gaps-to-close.md` is now a reference, not a list of tasks. Under `PLAN.md`, a gap is closed only inside a subject that needs it.
 - **Decide on incorporated agreements.** Should an agreement a platform's terms incorporate be read, such as Stripe's Connected Account Agreement under the WooPayments and Shopify Payments terms? 9 WooCommerce gaps wait on that.
 
 **What was not carried forward:** the first runs' placement labels. `measurements-2026-10-11.md` gives the reasons, and each platform's `placements.tsv` keeps them as a record.
@@ -38,7 +40,8 @@ The answer to `questions/Q1-concern-map.md` as it is being built. This file says
 | `platforms/<platform>/` | Each platform's files: `inventory.tsv`, `concerns.tsv`, `citations.tsv`, `statements.tsv`, `gaps.tsv`, `not-reached.tsv`, `review-log.tsv` and `notes.md`. It also holds `placements.tsv` (the first run's record), scripts and fetch logs. Shopify's folder also keeps the first run's working copies of pages. |
 | `map/` | The combined map: `side-by-side.md`, `stated-or-gap.tsv`, `single-platform.tsv` and `out-of-scope.tsv`. |
 | `matches.tsv`, `unclear-matches.tsv`, `matching-notes.md`, `matching-scripts/` | The matching pass. |
-| `gaps-to-close.md` | The gaps someone can close, and how. |
+| `gaps-to-close.md` | The open gaps, who could close them, and how (a reference). |
+| `held-check.tsv` | Stage 0's re-routing of gaps whose page or corpus is held, one row per change, with its rule. |
 | `checks/` | The checker's output per platform. |
 | `measurements-2026-10-11.md` | Why the placement step was reshaped. |
 
