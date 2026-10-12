@@ -28,7 +28,14 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - every source is read first, recording conditions at the size of an act or availability;
   - axes come after.
 
-  The cap is now a stop for review. The change is recorded in `PLAN.md` section 11. A focused inspection is running, and the run follows.
+  The cap is now a stop for review. The change is recorded in `PLAN.md` section 11. A focused inspection found 7 must-fix items, all fixed.
+- **Pass 1 is split across six agents by part** (A to F), so that every source is read. It started on 12 October 2026 at commit `9d0de52`.
+- **Next:**
+  - join the parts' files into `conditions.tsv` and `citations.tsv`;
+  - pass 2, one agent: axes, constants, cases;
+  - the checker;
+  - an independent review;
+  - compare with Q2's example axes.
 
 **Running: Stage 2, the pilot (S-01).**
 - **Briefs:** `studies/subjects/S-01/briefs/`.
