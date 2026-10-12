@@ -3,7 +3,7 @@
 # that today's case matches each axis's "today", that every unknown is listed with what was read, that only
 # Yemen evidence is cited at a pinned commit, and that every quote is found verbatim in the file it cites.
 #
-# Usage: python3 -I method/check_yemen_cases.py STUDY_DIR OUT
+# Usage: python3 -I method/check_yemen_cases.py STUDY_DIR OUT [--pass1 PART]
 import csv, os, re, sys
 from collections import Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -33,7 +33,8 @@ issues = []
 def err(f, i, x, level="error"):
     issues.append((level, f, i, x))
 
-def read(name):
+def read(name, key=None):
+    key = key or name
     p = os.path.join(study, name)
     if not os.path.exists(p):
         err(name, "", "file missing")
@@ -44,8 +45,8 @@ def read(name):
         err(name, "", "empty file")
         return []
     head = rows[0]
-    if head != HEADERS[name]:
-        err(name, "", f"header is {head}, expected {HEADERS[name]}")
+    if head != HEADERS[key]:
+        err(name, "", f"header is {head}, expected {HEADERS[key]}")
     out = []
     for n, row in enumerate(rows[1:], start=2):
         if not any(c.strip() for c in row):
@@ -57,6 +58,56 @@ def read(name):
 
 def ids(s):
     return [x for x in re.split(r"[,\s;]+", s or "") if x]
+
+if "--pass1" in sys.argv:
+    # Pass 1 of one part: its conditions and citations, with the part's ids, and every quote verbatim.
+    part = sys.argv[sys.argv.index("--pass1") + 1]
+    conds = read(f"pass1/conditions-{part}.tsv", "conditions.tsv") or []
+    cits = read(f"pass1/citations-{part}.tsv", "citations.tsv") or []
+    cid_set = {c["cite_id"] for c in cits}
+    for name, recs, key, pat in (("conditions", conds, "condition_id", rf"^YQ-{part}\d{{3}}$"),
+                                 ("citations", cits, "cite_id", rf"^YE-{part}\d{{3}}$")):
+        for k, n in Counter(r[key] for r in recs).items():
+            if n > 1:
+                err(name, k, f"id used {n} times")
+        for r in recs:
+            if not re.match(pat, r[key]):
+                err(name, r[key], f"id doesn't match {pat}")
+    used = set()
+    for c in conds:
+        for col in ("condition", "state", "held_at", "date_basis"):
+            if not c[col]:
+                err("conditions", c["condition_id"], f"{col} is empty")
+        if not ids(c["cite_ids"]):
+            err("conditions", c["condition_id"], "no citation")
+        for x in ids(c["cite_ids"]):
+            used.add(x)
+            if x not in cid_set:
+                err("conditions", c["condition_id"], f"cite_id {x} not in citations")
+    quotes = []
+    for c in cits:
+        cid, src = c["cite_id"], c["source"]
+        if not SOURCE.match(src):
+            err("citations", cid, f"source '{src[:90]}' is not Yemen evidence at a pinned commit")
+        if "..." in c["quote"] or "\u2026" in c["quote"]:
+            err("citations", cid, "quote contains an ellipsis")
+        if len(c["quote"]) > 300:
+            err("citations", cid, f"quote is {len(c['quote'])} characters; the brief allows 300")
+        if c["fetched_from"] not in FETCHED:
+            err("citations", cid, f"fetched_from '{c['fetched_from']}' is not one of {sorted(FETCHED)}")
+        if cid not in used:
+            err("citations", cid, "not used by any condition", "warning")
+        res, why, share = SRC.check_quote(c["quote"], src) if c["quote"] and src else ("unresolved", "no quote or source", "")
+        if not res.startswith("found"):
+            err("citations", cid, f"quote {res}{'; ' + why if why else ''}")
+        quotes.append((cid, res))
+    with open(os.path.join(OUT, f"pass1-{part}-issues.tsv"), "w", encoding="utf-8") as f:
+        f.write("level\tfile\tid\tissue\n")
+        for row in issues:
+            f.write("\t".join(str(v).replace("\t", " ").replace("\n", " ") for v in row) + "\n")
+    print(f"part {part}: conditions {len(conds)}, citations {len(cits)} | issues: {dict(Counter(i[0] for i in issues))} | "
+          f"quotes: {dict(Counter(q[1].split(' (')[0] for q in quotes))}")
+    sys.exit(0)
 
 data = {n: read(n) for n in HEADERS}
 conds, axes, consts, cases, cits, unk = (data[n] for n in HEADERS)
