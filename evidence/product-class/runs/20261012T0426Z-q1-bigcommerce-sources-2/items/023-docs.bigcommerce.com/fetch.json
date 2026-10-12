@@ -1,0 +1,18 @@
+{
+ "n": 23,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/overview.md",
+ "dir": "items/023-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 656,
+ "cited_in": [
+  "BC-S-0238"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1baa54f3494bd16486495f426b9298d4ab461bcdd68a8a44867b70329e83ebc8",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,25 @@
+{
+ "n": 100,
+ "url": "https://www.bigcommerce.com/payments/bigcommerce-payments/",
+ "dir": "items/100-bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/payments/bigcommerce-payments/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 171020,
+ "cited_in": [
+  "BC-S-0118",
+  "BC-S-0119",
+  "BC-S-0121",
+  "BC-S-0123",
+  "BC-S-0124",
+  "BC-S-0125",
+  "BC-S-0126",
+  "BC-S-0128"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "26cba1af8ce1f283c69b7515f28215618923f2b5192a89ad988e2765afa110dd",
+ "raw_ext": "html"
+}

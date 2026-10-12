@@ -1,0 +1,50 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Customer Segmentation API Overview
+
+> **Note**
+>
+> * Create manual segments with the API - leverage externally-defined customer segments using third-party tools and quickly transfer this data into and out of BigCommerce.
+> * Add a shopper to multiple segments - shoppers, or registered customers, can belong to up to 1000 segments, meaning you can target a registered customer with multiple promotional experiences.
+> * Use segments with the Promotions API - apply a promotion to target multiple segments of shoppers, and exclude shoppers within a segment from receiving this promotion.
+
+## Introduction
+
+A **customer segment** is a collection of shoppers that share specific characteristics. Segmentation defines groups of shoppers that a merchant wants to target with a [Promotion](/developer/docs/admin/customers/customer-segmentation/definitions-and-relationships#promotion), or dedicated value proposition.
+
+As a BigCommerce merchant, agency, and/or tech partner needing to improve a merchant store’s personalization strategy, the Customer Segmentation API enables the creation of externally defined segments that you can target within a promotion.
+
+Manual segments created with the Segmentation API will be visible within the Promotions standard editor control panel UI Targeting section.
+
+![Promotion targeting segment.png](/_fern-img/2658138b4c5dd775a86f11ab4ff811595797e80314e25ac48f6065d67730e20f.webp)
+
+For participants using the Promotions API, manual segments created with the Segmentation API will also be available to be targeted within the Promotions API.
+
+> **Note**
+>
+> #### Exclusive enterprise feature
+>
+> The Customer Segmentation API is available to enterprise customers. If you would like to become an enterprise customer, please contact your BigCommerce Customer Service Manager or our support team.
+
+## Segments and shopper profiles
+
+This API introduces two new objects that are both high-level entities with a many-to-many relationship: [segments](/developer/docs/admin/customers/customer-segmentation/definitions-and-relationships#segment) and [shopper profiles](/developer/docs/admin/customers/customer-segmentation/definitions-and-relationships#shopper-profile).
+
+![Screen Shot 2021-08-06 at 3.50.00 pm.png](/_fern-img/059752cb5277bcf22bb781bd14fb77cc94951475b6551fff3fba1496ef529895.webp)
+
+## Resources
+
+### Articles
+
+* [Customer Segmentation API Guide](/developer/docs/admin/customers/customer-segmentation/user-guide)
+* [Definitions and Logical Relationships](/developer/docs/admin/customers/customer-segmentation/definitions-and-relationships)
+* [Promotions API](/developer/docs/admin/customers/customer-segmentation/promotions-api)
+* [Promotions standard editor](https://support.bigcommerce.com/s/article/Advanced-Promotions#creating) (Support Center)
+
+### Endpoints
+
+* [Customer Segmentation V3 API Reference Overview](/developer/api-reference/rest/admin/management/customer-segmentation)

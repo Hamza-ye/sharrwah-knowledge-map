@@ -1,0 +1,134 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Email Templates Overview
+
+This article provides an overview of BigCommerce's transactional email templates and API.
+
+## Editing
+
+To edit transactional email templates in a store's control panel, [log in](https://support.bigcommerce.com/s/article/Logging-Into-Your-Store) and navigate to **Marketing** › [**Transactional Emails**](http://login.bigcommerce.com/deep-links/manage/transactional-emails).
+
+Use [Handlebars expressions](/developer/docs/admin/store-configuration/emails/email-object-reference/global-email-object) to localize email templates and access dynamic data (like a customer's first name in an order email).
+
+**`Combined order status email template`**
+
+```handlebars title="Combined order status email template" showLineNumbers={false}
+<p>{{ lang 'hello' name=order.customer_name }}. Below are the products you ordered.</p>
+
+{{#each order.products}}
+<tr>
+    <td style="padding:5px; font-size:12px; border-bottom:solid 1px #CACACA"><strong>{{ name }}</strong></td>
+    <td style="padding:5px; font-size:12px; border-bottom:solid 1px #CACACA" width="100" align="center">{{#if sku }}{{ sku }}{{else}}&nbsp;{{/if}}</td>
+    <td style="padding:5px; font-size:12px; border-bottom:solid 1px #CACACA" width="100" align="center">{{ quantity }}</td>
+</tr>
+{{/each}}
+```
+
+[Learn how to edit, test, and preview transactional email templates in the control panel](https://support.bigcommerce.com/s/article/Customizing-Emails).
+
+> **Note**
+>
+> Saving an email template that exceeds 65,536 characters returns an "Email body too large" error message and truncates extra characters.
+
+## API
+
+To manage transactional email templates programmatically, use the [Email Templates API](/developer/api-reference/rest/admin/content/email-templates). For example, to [get a list of email templates](/developer/api-reference/rest/admin/content/abandoned-cart-emails/get-abandoned-cart-email-templates), send a `GET` request to `/v3/marketing/email-templates`.
+
+#### Request
+
+**`Example request: Get email templates`**
+
+```http title="Example request: Get email templates"
+GET https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/marketing/email-templates
+X-Auth-Token: {{ACCESS_TOKEN}}
+Accept: application/json
+```
+
+#### Response
+
+**`Example response: Get email templates`**
+
+```json title="Example response: Get email templates"
+{
+  "data": [
+    {
+      "type_id": "account_reset_password_email",
+      "body": "<!DOCTYPE html> <html lang=\"en\"> <head>     <meta charset=\"UTF-8\">     <title>Title</title> </head> <body> <p>     {{lang \"reset_password\" name=store.name}} </p> <br /> <br /> <a href='{{account.reset_password_link}}'>     {{account.reset_password_link}} </a>  </body> </html>",
+      "translations": [...],
+      "subject": "Reset your password at {{store.name}}"
+    }
+  ],
+  "meta": {...}
+}
+```
+
+To [update an email template](/developer/api-reference/rest/admin/content/abandoned-cart-emails/update-abandoned-cart-email-template), send a `PUT` request to `/v3/marketing/email-templates/{template-name}`.
+
+**`Example request: Update an email template`**
+
+```http title="Example request: Update an email template" showLineNumbers={false}
+PUT /stores/{{STORE_HASH}}/v3/marketing/email-templates/account_reset_password_email
+Host: api.bigcommerce.com
+X-Auth-Token: {{ACCESS_TOKEN}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "type_id": "account_reset_password_email",
+  "body": "<!DOCTYPE html> <html lang=\"en\"> <head>     <meta charset=\"UTF-8\">     <title>Title</title> </head> <body> <p>     {{lang \"reset_password\" name=store.name}} </p> <br /> <br /> <a href='{{account.reset_password_link}}'>     {{account.reset_password_link}} </a>  </body> </html>",
+  "translations": [
+    {
+      "locale": "en",
+      "keys": {
+        "reset_password": "To change your customer account password at {name} please click this link or copy and paste it into your browser:"
+      }
+    }
+  ],
+  "subject": "Reset your password at {{store.name}}"
+}
+```
+
+> **Note**
+>
+> You can translate each email template into a maximum of 20 locales per channel. The `translations` array accepts up to 20 locale objects for each template in each channel. To manage a template for a specific channel, see [Overrides](#overrides).
+
+## Overrides
+
+Pass in a [channel's](/developer/api-reference/rest/admin/management/channels) ID using the `?channel_id=` query parameter to create a channel-specific override for a transactional email template.
+
+**`Example request: Update an email template`**
+
+```http title="Example request: Update an email template" showLineNumbers={false}
+PUT https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/marketing/email-templates?channel_id=123
+X-Auth-Token: {{ACCESS_TOKEN}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "type_id": "account_reset_password_email",
+  "body": "<!DOCTYPE html> <html lang=\"fr\"> <head>     <meta charset=\"UTF-8\">     <title>Title</title> </head> <body> <p>     {{lang \"reset_password\" name=store.name}} </p> <br /> <br /> <a href='{{account.reset_password_link}}'>     {{account.reset_password_link}} </a>  </body> </html>",
+  "translations": [
+    {
+      "locale": "fr",
+      "keys": {
+        "reset_password": "Pour modifier le mot de passe de votre compte client à {name}, veuillez cliquer sur ce lien ou le copier et le coller dans votre navigateur:"
+      }
+    }
+  ],
+  "subject": "Réinitialisez votre mot de passe sur {{store.name}}"
+}
+```
+
+> **Note**
+>
+> Omit `?channel_id` to interact with global email templates.
+
+## Resources
+
+* [Email Template API Reference](/developer/api-reference/rest/admin/content/email-templates)
+* [Email object reference](/developer/docs/admin/store-configuration/emails/email-object-reference/global-email-object)
+* [Customizing Email Templates](https://support.bigcommerce.com/s/article/Customizing-Emails)

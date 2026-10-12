@@ -1,0 +1,21 @@
+{
+ "n": 93,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/deployment/native-hosting/overview.md",
+ "dir": "items/093-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:48Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/deployment/native-hosting/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4113,
+ "cited_in": [
+  "BC-S-0255",
+  "BC-S-0256",
+  "BC-S-0257",
+  "BC-S-0258"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "fedae413ba00d923cd5a70fc34c6c7a9ac135c8bbd642637de7186097a1b5d7e",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/overview.md",
+ "dir": "items/006-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1126,
+ "cited_in": [
+  "BC-S-0259"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "edb02f819c5cdd9191ce45b3e440b77e522a52854d07bb86728a90be4ac31452",
+ "raw_ext": "txt"
+}

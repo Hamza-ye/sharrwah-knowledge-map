@@ -1,0 +1,139 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Filter wallet shipping options
+
+&gt; Configure a custom checkout-js implementation to filter the shipping options shown in Apple Pay, Google Pay, and Stripe Link V2.
+
+A custom checkout based on [checkout-js](https://github.com/bigcommerce/checkout-js) can control which shipping options shoppers see in the Apple Pay, Google Pay, and Stripe Link V2 wallet interfaces. Pass the Checkout SDK's `filterAvailableShippingOptions` callback from your custom wallet components to exclude rates that the wallet flow doesn't support.
+
+The callback only filters the options displayed in the wallet interface. It doesn't remove shipping methods from your store or filter the shipping options shown in the standard checkout shipping step. The default checkout-js implementation doesn't pass this callback.
+
+## Requirements
+
+Your custom checkout-js implementation must use `@bigcommerce/checkout-sdk` version `1.978.0` or later.
+
+## Define the filter
+
+The callback receives the current consignment's complete `availableShippingOptions` array and returns a promise containing the options to display. The following callback removes pickup-in-store options:
+
+**`Filter pickup-in-store shipping options`**
+
+```typescript title="Filter pickup-in-store shipping options" showLineNumbers={false}
+import { type ShippingOption } from '@bigcommerce/checkout-sdk';
+
+const filterAvailableShippingOptions = (
+    shippingOptions: ShippingOption[],
+): Promise&lt;ShippingOption[]&gt; =&gt;
+    Promise.resolve(
+        shippingOptions.filter((option) =&gt; option.type !== 'shipping_pickupinstore'),
+    );
+```
+
+You can filter by other `ShippingOption` properties to match your checkout requirements.
+
+&gt; **Warning**
+&gt;
+&gt; Always return at least one shipping option. Returning an empty array leaves the wallet without a usable shipping rate and can prevent the shopper from completing checkout.
+
+## Update the Apple Pay component
+
+In `packages/apple-pay-integration/src/ApplePayButton.tsx`, import `ShippingOption`, define the callback, and add it to `additionalInitializationOptions`:
+
+**`Configure Apple Pay shipping options`**
+
+```typescript title="Configure Apple Pay shipping options"
+import { type ShippingOption } from '@bigcommerce/checkout-sdk';
+
+const filterAvailableShippingOptions = (
+    shippingOptions: ShippingOption[],
+): Promise&lt;ShippingOption[]&gt; =&gt;
+    Promise.resolve(
+        shippingOptions.filter((option) =&gt; option.type !== 'shipping_pickupinstore'),
+    );
+
+const additionalInitializationOptions = {
+    shippingLabel: language.translate('cart.shipping_text'),
+    subtotalLabel: language.translate('cart.subtotal_text'),
+    onPaymentAuthorize: navigateToOrderConfirmation,
+    onError: onUnhandledError,
+    filterAvailableShippingOptions,
+};
+```
+
+The `CheckoutButton` component passes `additionalInitializationOptions` to the Apple Pay customer strategy when it initializes the wallet.
+
+## Update the Google Pay component
+
+In `packages/google-pay-integration/src/GooglePayButton.tsx`, import `ShippingOption`, define the same callback, and pass it to `CheckoutButton`:
+
+**`Configure Google Pay shipping options`**
+
+```typescript title="Configure Google Pay shipping options"
+import { type ShippingOption } from '@bigcommerce/checkout-sdk';
+
+const filterAvailableShippingOptions = (
+    shippingOptions: ShippingOption[],
+): Promise&lt;ShippingOption[]&gt; =&gt;
+    Promise.resolve(
+        shippingOptions.filter((option) =&gt; option.type !== 'shipping_pickupinstore'),
+    );
+
+return (
+    &lt;CheckoutButton
+        {...props}
+        additionalInitializationOptions={{ filterAvailableShippingOptions }}
+        integrations={integrations}
+    /&gt;
+);
+```
+
+## Update the Stripe Link V2 component
+
+In `packages/stripe-integration/src/stripe-ocs/StripeLinkV2Button.tsx`, import `ShippingOption`, define the callback, and add it to `additionalInitializationOptions`:
+
+**`Configure Stripe Link V2 shipping options`**
+
+```typescript title="Configure Stripe Link V2 shipping options"
+import { type ShippingOption } from '@bigcommerce/checkout-sdk';
+
+const filterAvailableShippingOptions = (
+    shippingOptions: ShippingOption[],
+): Promise&lt;ShippingOption[]&gt; =&gt;
+    Promise.resolve(
+        shippingOptions.filter((option) =&gt; option.type !== 'shipping_pickupinstore'),
+    );
+
+const additionalInitializationOptions = {
+    onComplete: navigateToOrderConfirmation,
+    loadingContainerId: 'checkout-app',
+    methodId: 'optimized_checkout',
+    gatewayId: 'stripeocs',
+    filterAvailableShippingOptions,
+};
+```
+
+## Handle selection and errors
+
+The Checkout SDK keeps the wallet interface and the BigCommerce consignment synchronized after filtering:
+
+* If the selected shipping option remains in the filtered array, it stays selected.
+* If the filter removes the selected option, the SDK selects the recommended option or the first remaining option.
+* If the callback throws an error or rejects its promise, the SDK logs the error and displays the unfiltered options.
+* If you don't provide the callback, the wallet displays the same options as the default checkout-js implementation.
+
+## Test the filter
+
+Test each wallet that your custom checkout supports:
+
+1. Configure at least one delivery option and one option that your callback filters.
+2. Add a physical product to the cart and open the custom checkout.
+3. Open the wallet interface and enter a shipping address.
+4. Confirm that the wallet displays the expected shipping options.
+5. Select an option, change the address, and confirm that the selected option stays synchronized with the checkout.
+6. Make the callback reject in a development environment and confirm that the wallet displays the unfiltered options.
+
+For implementation details, see the Checkout SDK changes for [Apple Pay and Google Pay](https://github.com/bigcommerce/checkout-sdk-js/pull/3398) and [Stripe Link V2](https://github.com/bigcommerce/checkout-sdk-js/pull/3331).</pre></body></html>

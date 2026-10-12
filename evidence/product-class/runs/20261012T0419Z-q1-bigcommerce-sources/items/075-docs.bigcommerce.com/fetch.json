@@ -1,0 +1,19 @@
+{
+ "n": 75,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/store-configuration.md",
+ "dir": "items/075-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/store-configuration.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3167,
+ "cited_in": [
+  "BC-S-0233",
+  "BC-S-0237"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1a01513b45efd8e3cd8b6b5b5f6ad68ce5d59d57059a2dc405dd4236433bcd6e",
+ "raw_ext": "txt"
+}

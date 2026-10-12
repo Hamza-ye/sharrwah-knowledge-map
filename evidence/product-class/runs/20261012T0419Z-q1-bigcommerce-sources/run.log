@@ -1,0 +1,5 @@
+fetched 120; 2xx with body 104; other 16
+rendered 120; status<400 120; other 0
+Counter({'captured': 120})
+Counter({'undated (live page on capture date)': 120})
+exit 0

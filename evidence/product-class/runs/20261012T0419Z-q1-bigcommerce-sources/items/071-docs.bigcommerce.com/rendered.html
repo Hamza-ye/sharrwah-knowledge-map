@@ -1,0 +1,118 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Transactions API
+
+The [Transactions API](/developer/api-reference/rest/admin/payments/transactions) allows you to create transaction records in BigCommerce for payments that were processed externally. This enables merchants to use BigCommerce for post-order actions such as capture, void, and refund on transactions that originated outside of BigCommerce.
+
+## Supported providers
+
+Initially, this API supports importing transactions from the following payment providers:
+
+* Adyen
+* Authorize.net
+* BigCommerce Payments
+* Braintree
+* PayPal Commerce Platform
+* Stripe
+
+Before using this API, these providers must first be configured on the merchant's store using the same credentials as those being used to process payments externally.
+
+## Supported payment methods
+
+The following payment methods are supported:
+
+* ACH (Adyen, Braintree, and Stripe only)
+* Apple Pay
+* Credit Card
+* Google Pay
+* iDEAL
+* PayPal (BigCommerce Payments, Braintree, and PayPal Commerce Platform only)
+
+## Prerequisites
+
+To perform post-order actions such as capture or void on a transaction, the payment provider used to process the payment outside of BigCommerce must already be configured within BigCommerce at the time the transaction is created. The payment provider must be enabled and configured with the same channel and currency that the order is placed against.
+
+This is because the payment provider ID is stored against the transaction at time of creation.
+
+&gt; **Warning**
+&gt;
+&gt; #### Provider configuration required
+&gt;
+&gt; If the payment provider is not configured in BigCommerce when the transaction is created, no provider ID will be stored
+&gt; against the transaction. This means BigCommerce will not know which provider to call when attempting to capture or void the transaction.
+
+### Example scenario
+
+Consider the following scenario:
+
+1. A payment is authorized externally through Stripe.
+2. The transaction is POSTed to BigCommerce using the `/v3/payments/transactions/authorizations` endpoint.
+3. Stripe is **not yet configured** within BigCommerce for the currency and channel the order was created against.
+
+In this case, when an attempt is made to capture the authorized transaction within BigCommerce, BigCommerce does not know which provider to call to capture the transaction.
+
+## Endpoints
+
+Individual endpoints are available for creating single transactions:
+
+| Endpoint                                        | Description                         |
+| ----------------------------------------------- | ----------------------------------- |
+| `POST /v3/payments/transactions/authorizations` | Create an authorization transaction |
+| `POST /v3/payments/transactions/purchases`      | Create a purchase transaction       |
+
+&gt; **Info**
+&gt;
+&gt; #### Future endpoints
+&gt;
+&gt; The following endpoints are planned for future phases:
+&gt;
+&gt; * `/v3/payments/transactions/captures`
+&gt; * `/v3/payments/transactions/voids`
+&gt; * `/v3/payments/transactions/refunds`
+
+## Batch processing
+
+These endpoints do not currently support batch processing. Support for batch processing may be provided in a future phase.
+
+## Security
+
+These endpoints are secured in the same way as other BigCommerce REST endpoints as described in [Authentication](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts).
+
+&gt; **Info**
+&gt;
+&gt; #### Required OAuth scopes
+&gt;
+&gt; The OAuth2 scope required for these endpoints is `store_v2_transactions`, the same scope that the [Order Transactions](/developer/api-reference/rest/admin/management/order-operations/get-order-transactions) and refund endpoints use.
+&gt;
+&gt; This scope can be granted when creating a store-level API account in the control panel.
+
+## Payload notes
+
+### AVS and CVV results
+
+The `avs_result` and `cvv_result` fields must either:
+
+* Be omitted entirely
+* Be `null`
+* Have all property values (such as `code` and `message`) set to `null`
+
+### Provider data
+
+The `provider_data` field varies by provider and payment instrument. Accepted keys are filtered server-side based on the provider.
+
+For example, depending on the payment instrument, the `provider_data` keys for Stripe might include:
+
+* `mandate_method_id`
+* `override_method_id`
+
+## Related resources
+
+### Articles
+
+* [Payments API](/developer/docs/admin/checkout-and-cart/payments)
+* [Transactions API Reference](/developer/api-reference/rest/admin/payments/transactions)
+* [Available Payment Gateways (Help Center)](https://support.bigcommerce.com/s/article/Available-Payment-Gateways)</pre></body></html>

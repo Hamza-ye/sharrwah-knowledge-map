@@ -1,0 +1,202 @@
+[
+{
+"n": 1,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-adjustments.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0031",
+"BC-S-0036"
+]
+},
+{
+"n": 2,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/pricing/price-lists.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0050",
+"BC-S-0052"
+]
+},
+{
+"n": 3,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/products-overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0023"
+]
+},
+{
+"n": 4,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/promotions/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0057",
+"BC-S-0059",
+"BC-S-0060",
+"BC-S-0061"
+]
+},
+{
+"n": 5,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/wallets/filter-wallet-shipping-options.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0164"
+]
+},
+{
+"n": 6,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/customers/customer-segmentation/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0208",
+"BC-S-0210"
+]
+},
+{
+"n": 7,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/emails/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0259"
+]
+},
+{
+"n": 8,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/metafields/store-metafields.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0277"
+]
+},
+{
+"n": 9,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/shipping/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0378"
+]
+},
+{
+"n": 10,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/checkout-extensions/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0101",
+"BC-S-0102"
+]
+},
+{
+"n": 11,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-documentation.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0361",
+"BC-S-0362"
+]
+},
+{
+"n": 12,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/product-recommendations/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0076",
+"BC-S-0078",
+"BC-S-0079",
+"BC-S-0080",
+"BC-S-0081"
+]
+},
+{
+"n": 13,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/analytics-with-bodl.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0340",
+"BC-S-0341"
+]
+},
+{
+"n": 14,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0047"
+]
+},
+{
+"n": 15,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0283"
+]
+},
+{
+"n": 16,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0295"
+]
+},
+{
+"n": 17,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/products-and-catalog/product-reviews.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0072",
+"BC-S-0074"
+]
+},
+{
+"n": 18,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/abandoned-carts.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0089"
+]
+},
+{
+"n": 19,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/carts.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0205"
+]
+},
+{
+"n": 20,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/customers.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0206"
+]
+},
+{
+"n": 21,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/products/faceted-textual-search.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0069",
+"BC-S-0070"
+]
+},
+{
+"n": 22,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/site-content.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0256",
+"BC-S-0257"
+]
+},
+{
+"n": 23,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/overview.md",
+"kind": "web",
+"cited_in": [
+"BC-S-0238"
+]
+}
+]

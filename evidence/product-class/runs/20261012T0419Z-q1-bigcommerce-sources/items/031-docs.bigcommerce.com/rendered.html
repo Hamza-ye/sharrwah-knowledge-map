@@ -1,0 +1,46 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Orders V2
+
+Manage order coupons, messages, products, shipping addresses, statuses, taxes, shipments, and shipping address quotes.
+
+## Order
+
+The Order object contains a record of the purchase agreement between a shopper and a merchant. To learn more about creating orders, see [Orders API Guide](/developer/docs/admin/checkout-and-cart/orders).
+
+### Currency Fields
+
+The **default** currency refers to the transactional currency which is the currency the shopper pays in.
+
+The **display** currency refers to the presentational currency used to present prices to the shopper on the storefront.
+
+* `currency_id` - the display currency ID. Depending on the currency selected, the value may be different from the transactional currency.
+* `currency_code` - the currency code of the display currency used to present prices to the shopper on the storefront. Depending on the currency selected, the value may be different from the transactional currency.
+* `currency_exchange_rate` - the exchange rate between the store’s default currency and the display currency. For orders created using the V2 endpoints, this value is always 1 (only in the storefront this value can be different to 1).
+* `default_currency_id` - the transactional currency ID.
+* `default_currency_code` - the currency code of the transactional currency the shopper pays in.
+
+The following additional fields are returned on orders when Multi-Currency is enabled on the store:
+
+* `store_default_currency_code` - the currency code of the store’s default currency.
+* `store_default_to_transactional_exchange_rate` - the exchange rate between the store’s default currency and the transactional currency used in the order.
+
+**Example:**
+
+```json
+{
+  ...
+  "currency_id": 4,
+  "currency_code": "EUR",
+  "currency_exchange_rate": 1,
+  "default_currency_id": 4,
+  "default_currency_code": "EUR",
+  "store_default_currency_code": "USD",
+  "store_default_to_transactional_exchange_rate": "100.0000000000"
+  ...
+}
+```</pre></body></html>

@@ -11,6 +11,7 @@ The answer to `questions/Q1-concern-map.md` as it is being built. This file says
 | Shopify | 2,610 entries, 198 concerns | 3,005 | 249 | 741 of 990 | 5,055 of 5,055 |
 | Salla | 2,627 entries, 152 concerns | 2,560 | 230 | 530 of 760 | 2,982 of 2,982 |
 | WooCommerce | 654 entries, 118 concerns | 1,499 | 182 | 408 of 590 | 1,466 of 1,466 |
+| BigCommerce (declaration level, no accounts) | 569 entries, 88 concerns | 473 | 161 | 286 of 440 | 481 of 481 |
 
 **The question's three outputs:**
 1. **The table of concerns, with their placements and citations.** Each platform's `statements.tsv` and `gaps.tsv` give these in the platform's own words. `map/side-by-side.md` sets the 88 matched concerns side by side.

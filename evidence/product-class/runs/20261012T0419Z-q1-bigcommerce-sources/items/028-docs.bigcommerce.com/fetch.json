@@ -1,0 +1,18 @@
+{
+ "n": 28,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/infrastructure-hosting.md",
+ "dir": "items/028-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/infrastructure-hosting.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 941,
+ "cited_in": [
+  "BC-S-0254"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5b0a89bbc0fc14722d9b88f5b9f5a514f437265f70c96205eb3dc93914ce6f27",
+ "raw_ext": "txt"
+}

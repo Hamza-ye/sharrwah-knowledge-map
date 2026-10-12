@@ -1,0 +1,140 @@
+[
+{
+"n": 1,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-adjustments.md",
+"dir": "items/001-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/pricing/price-lists.md",
+"dir": "items/002-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/products-overview.md",
+"dir": "items/003-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/promotions/overview.md",
+"dir": "items/004-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/wallets/filter-wallet-shipping-options.md",
+"dir": "items/005-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/customers/customer-segmentation/overview.md",
+"dir": "items/006-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/emails/overview.md",
+"dir": "items/007-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/metafields/store-metafields.md",
+"dir": "items/008-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/shipping/overview.md",
+"dir": "items/009-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/checkout-extensions/overview.md",
+"dir": "items/010-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-documentation.md",
+"dir": "items/011-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/product-recommendations/overview.md",
+"dir": "items/012-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/analytics-with-bodl.md",
+"dir": "items/013-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview.md",
+"dir": "items/014-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/overview.md",
+"dir": "items/015-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/overview.md",
+"dir": "items/016-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/products-and-catalog/product-reviews.md",
+"dir": "items/017-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/abandoned-carts.md",
+"dir": "items/018-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/carts.md",
+"dir": "items/019-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 20,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/customers.md",
+"dir": "items/020-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 21,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/products/faceted-textual-search.md",
+"dir": "items/021-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 22,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/site-content.md",
+"dir": "items/022-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 23,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/overview.md",
+"dir": "items/023-docs.bigcommerce.com",
+"keep_body": false
+}
+]

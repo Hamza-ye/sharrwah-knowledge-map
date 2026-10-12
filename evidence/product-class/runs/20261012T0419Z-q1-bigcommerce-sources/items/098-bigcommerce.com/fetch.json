@@ -1,0 +1,18 @@
+{
+ "n": 98,
+ "url": "https://www.bigcommerce.com/llms.txt",
+ "dir": "items/098-bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/llms.txt",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 1370,
+ "cited_in": [
+  "BC-S-0251"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b06981b2792d51d0aa1c8f675c6622fd776435a6919a88b73a8554b6f3555c4a",
+ "raw_ext": "txt"
+}

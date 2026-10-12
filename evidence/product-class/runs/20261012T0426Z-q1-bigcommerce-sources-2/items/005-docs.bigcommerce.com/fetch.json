@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/wallets/filter-wallet-shipping-options.md",
+ "dir": "items/005-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/wallets/filter-wallet-shipping-options.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1885,
+ "cited_in": [
+  "BC-S-0164"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a3e793641ac00b54a37d301666f0d91a40c6d6fda540e1563f9d4bc76f31d41c",
+ "raw_ext": "txt"
+}

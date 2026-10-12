@@ -237,3 +237,28 @@ Gap kinds:
 | WC-C-051 WooPayments payout currency and currency conversion | where it lives | A source that states where WooPayments payout currency and currency conversion sits (product, host, page or code path). | A store with WooPayments: Payments > Settings (payout and currency sections) and the Stripe Express dashboard |
 | WC-C-115 Stripe Radar screening on WooPayments accounts | how it meets the rest | A source that names the API, event, setting or contract at the boundary of Stripe Radar screening on WooPayments accounts. | A store with WooPayments: Payments > Settings > Fraud protection, and a test transaction blocked by Radar |
 
+## BigCommerce
+
+161 gaps: 16 page not read, 59 stated only in general terms, 86 searched, not found. Who can close them: 145 an agent, 0 either, 16 the founder.
+
+### Save a page from a browser (founder, 16)
+
+| Concern | Placement | What would show it | Route |
+| --- | --- | --- | --- |
+| BC-C-002 Brands | who decides | A Help Center article or control panel settings page stating who turns Brands on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/ (Help Center search for the concern's name) |
+| BC-C-006 Pickup (buy online, pick up in store) | who decides | A Help Center article or control panel settings page stating who turns Pickup (buy online, pick up in store) on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/ (Help Center search for the concern's name) |
+| BC-C-008 Storefront pricing | who decides | A Help Center article or control panel settings page stating who turns Storefront pricing on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/article/Pricing |
+| BC-C-018 Orders | who decides | A Help Center article or control panel settings page stating who turns Orders on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/article/Order-Statuses ; https://support.bigcommerce.com/s/article/Creating-a-Manual-Order |
+| BC-C-019 Order fulfillment and shipments | who decides | A Help Center article or control panel settings page stating who turns Order fulfillment and shipments on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/ (Help Center search for the concern's name) |
+| BC-C-021 Refunds | who decides | A Help Center article or control panel settings page stating who turns Refunds on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/article/Processing-Refunds ; https://support.bigcommerce.com/s/article/Processing-Returns |
+| BC-C-025 BigCommerce Payments | who is legally responsible | A BigCommerce page or agreement naming who collects and holds shoppers' funds for BigCommerce Payments (BigCommerce, PayPal or another entity), under which licence, and who the merchant contracts with for it | https://support.bigcommerce.com/s/ (Help Center search: BigCommerce Payments; the product page refers to "BigCommerce documentation") ; the activation flow in a US store's control panel |
+| BC-C-026 Payment providers: Embedded and Open Payment Providers | who decides | A BigCommerce statement of what a store's checkout does when a connected payment provider is unavailable or fails | https://support.bigcommerce.com/s/article/Available-Payment-Gateways |
+| BC-C-032 Customers | who decides | A Help Center article or control panel settings page stating who turns Customers on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/article/Editing-Form-Fields ; https://support.bigcommerce.com/s/article/Customer-Groups |
+| BC-C-033 Customer login (SSO) and current customer | who decides | A Help Center article or control panel settings page stating who turns Customer login (SSO) and current customer on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/ (Help Center search for the concern's name) |
+| BC-C-035 Subscribers | who decides | A Help Center article or control panel settings page stating who turns Subscribers on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/article/Collecting-Newsletter-Subscriptions |
+| BC-C-036 Wishlists | who decides | A Help Center article or control panel settings page stating who turns Wishlists on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/article/Wishlists |
+| BC-C-040 Sites and routes | who decides | A Help Center article or control panel settings page stating who turns Sites and routes on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/article/The-Headless-Approach |
+| BC-C-041 Redirects | who decides | A Help Center article or control panel settings page stating who turns Redirects on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/article/301-Redirects |
+| BC-C-060 System logs and store logs | who decides | A Help Center article or control panel settings page stating who turns System logs and store logs on or off, limits it or sets its values, by plan or setting | https://support.bigcommerce.com/s/ (Help Center search for the concern's name) |
+| BC-C-082 Data transfer and storage location | who decides | A statement of which region a store's data is stored in, and whether a merchant can choose it | https://security.bigcommerce.com/ |
+

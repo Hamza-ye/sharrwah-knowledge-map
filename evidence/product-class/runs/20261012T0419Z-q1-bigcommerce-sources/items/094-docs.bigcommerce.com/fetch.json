@@ -1,0 +1,19 @@
+{
+ "n": 94,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/features/cookie-consent.md",
+ "dir": "items/094-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/features/cookie-consent.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3586,
+ "cited_in": [
+  "BC-S-0190",
+  "BC-S-0191"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "22bf07f77422ad72d781f8c331ca4f43f08de03fa2357452b5e565b962074662",
+ "raw_ext": "txt"
+}

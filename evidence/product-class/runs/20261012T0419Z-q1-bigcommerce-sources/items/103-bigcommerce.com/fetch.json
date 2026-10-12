@@ -1,0 +1,33 @@
+{
+ "n": 103,
+ "url": "https://www.bigcommerce.com/product/",
+ "dir": "items/103-bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/product/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 102153,
+ "cited_in": [
+  "BC-S-0014",
+  "BC-S-0042",
+  "BC-S-0055",
+  "BC-S-0083",
+  "BC-S-0095",
+  "BC-S-0138",
+  "BC-S-0140",
+  "BC-S-0172",
+  "BC-S-0301",
+  "BC-S-0310",
+  "BC-S-0312",
+  "BC-S-0313",
+  "BC-S-0329",
+  "BC-S-0332",
+  "BC-S-0337",
+  "BC-S-0373"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "da1492655ccf3f776182879bcba5bb3605fb09454bf95f2132d34f69fca7c6e4",
+ "raw_ext": "html"
+}

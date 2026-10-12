@@ -1,0 +1,288 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Update Tax Settings
+
+PUT https://api.bigcommerce.com/stores/{store_hash}/v3/tax/settings
+Content-Type: application/json
+
+Updates global-level tax settings.
+
+Reference: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-settings/update-tax-settings
+
+## Authentication
+
+- `X-Auth-Token` header (required) — ### OAuth scopes | UI Name | Permission | Parameter | |:--------|:-----------|:----------| | Information &amp; Settings | modify | `store_v2_information` | | Information &amp; Settings | read-only | `store_v2_information_read_only` | ### Authentication header | Header | Argument | Description | |:-------|:---------|:------------| | `X-Auth-Token` | `access_token` | For more about API accounts that generate `access_token`s, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts). | ### Further reading For example requests and more information about authenticating BigCommerce APIs, see [Authentication and Example Requests](/developer/docs/overview/api-fundamentals/api-accounts#x-auth-token-header-example-requests). For more about BigCommerce OAuth scopes, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes). For a list of API status codes, see [API Status Codes](/developer/api-reference/rest/overview#rest-http-status-codes).
+
+## Request
+
+### Path parameters
+
+- `store_hash` (string, required) — Permanent ID of the BigCommerce store.
+
+### Headers
+
+- `Accept` (string, required, default: application/json) — The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the response body.
+
+### Body (application/json)
+
+This endpoint expects a Tax_Settings.
+
+- `tax_entered_with_prices` (boolean, optional) — Whether prices entered on this store include a tax component or not.
+- `price_display_settings` (TaxSettingsPriceDisplaySettings, optional) — Settings that describe how prices display at the global level.
+- `fallback_strategy` (enum, optional, default: FIXED) — Describes the fallback behavior that applies when a tax provider produces an error. A merchant may decide to use a flat 10% fallback tax rate, their basic tax settings, or to block the transaction until they achieve a successful result.
+  - Allowed values: `FIXED`, `BASIC`, `DISABLE`
+- `should_subtract_store_tax` (boolean, optional, default: true) — This setting applies only if a merchant enters tax-inclusive prices. When enabled, the store subtracts the itemʼs store tax rate before calculating tax using the shopperʼs tax zone. The tax-exclusive amount will be the same across all tax zones. When disabled, the tax-inclusive price remains the same across all tax zones; only the tax amount will vary based on the shopperʼs location. The tax-exclusive amount may vary among tax zones. These calculations are relevant for tax pricing and tax quotations that use basic tax.
+- `should_use_geolocation_to_determine_guest_shopper_tax_zone` (boolean, optional, default: false) — This setting determines which tax zone a store uses to estimate tax for guest shoppers. When enabled, the store identifies a country-level tax zone based on the geolocation of a guest shopper. The store then applies the corresponding tax zone to estimate taxes. When disabled, the store identifies the zone using the provided `guest_shopper_tax_zone_id` field instead. Only the tax zones you configure can be matched to the guest shopper's geolocation.
+- `guest_shopper_tax_zone_id` (integer, optional, default: 1) — ID for the tax zone a store uses when estimating tax for guest shoppers. The store uses this zone if you disable `should_use_geolocation_to_determine_guest_shopper_tax_zone`. The store also uses this zone if there is no matching country-level tax zone for the geolocation.
+- `store_tax_zone_id` (integer, optional, default: 1) — ID for the tax zone a store uses when subtracting store tax. This setting applies only if a merchant enters tax-inclusive prices and subtracts store tax before tax calculation.
+- `document_submission_strategy` (enum, optional, default: ON_PAYMENT_CAPTURE) — This setting determines whether BigCommerce submits tax documents to third-party tax providers when orders are created or when payments are captured online.
+  - Allowed values: `ON_PAYMENT_CAPTURE`, `ON_ORDER_CREATION`
+- `rounding_strategy` (enum, optional, default: RATE_RESULT_ROUNDING) — This setting affects the rounding behavior of tax amounts calculated by the basic tax provider. The NO_ROUNDING option offers a high accuracy total tax amount for orders. The RATE_RESULT_ROUNDING option means every resulting tax rate amount has been rounded based on the active currency's precision settings. The UNIT_LEVEL_ROUNDING option means we calculate the rounded amount per unit, and then multiply this amount by the line item quantity. Note that tax is always calculated on the line item amount after discounts.
+  - Allowed values: `NO_ROUNDING`, `RATE_RESULT_ROUNDING`, `UNIT_LEVEL_ROUNDING`
+
+## Response
+
+### 200
+
+OK
+
+- `data` (Tax_Settings, optional)
+- `meta` (MetaOpen, optional) — Response metadata.
+
+## Errors
+
+### 422 Unprocessable Entity Error
+
+The request body does not meet the specification.
+
+- `any`
+
+## Types
+
+### TaxSettingsPriceDisplaySettings
+
+Settings that describe how prices display at the global level.
+
+- `control_panel_price_display_strategy` (enum, optional) — Whether to show prices as tax inclusive or tax exclusive in the BigCommerce control panel, or use the order's tax zone for price display.
+  - Allowed values: `ZONE`, `INCLUSIVE`, `EXCLUSIVE`
+- `invoice_price_display_strategy` (enum, optional, default: ZONE) — Whether to show prices as tax inclusive or tax exclusive across all invoices, or use the shopperʼs tax zone for price display on invoices.
+  - Allowed values: `ZONE`, `INCLUSIVE`, `EXCLUSIVE`
+
+### Tax_Settings
+
+- `tax_entered_with_prices` (boolean, optional) — Whether prices entered on this store include a tax component or not.
+- `price_display_settings` (TaxSettingsPriceDisplaySettings, optional) — Settings that describe how prices display at the global level.
+- `fallback_strategy` (enum, optional, default: FIXED) — Describes the fallback behavior that applies when a tax provider produces an error. A merchant may decide to use a flat 10% fallback tax rate, their basic tax settings, or to block the transaction until they achieve a successful result.
+  - Allowed values: `FIXED`, `BASIC`, `DISABLE`
+- `should_subtract_store_tax` (boolean, optional, default: true) — This setting applies only if a merchant enters tax-inclusive prices. When enabled, the store subtracts the itemʼs store tax rate before calculating tax using the shopperʼs tax zone. The tax-exclusive amount will be the same across all tax zones. When disabled, the tax-inclusive price remains the same across all tax zones; only the tax amount will vary based on the shopperʼs location. The tax-exclusive amount may vary among tax zones. These calculations are relevant for tax pricing and tax quotations that use basic tax.
+- `should_use_geolocation_to_determine_guest_shopper_tax_zone` (boolean, optional, default: false) — This setting determines which tax zone a store uses to estimate tax for guest shoppers. When enabled, the store identifies a country-level tax zone based on the geolocation of a guest shopper. The store then applies the corresponding tax zone to estimate taxes. When disabled, the store identifies the zone using the provided `guest_shopper_tax_zone_id` field instead. Only the tax zones you configure can be matched to the guest shopper's geolocation.
+- `guest_shopper_tax_zone_id` (integer, optional, default: 1) — ID for the tax zone a store uses when estimating tax for guest shoppers. The store uses this zone if you disable `should_use_geolocation_to_determine_guest_shopper_tax_zone`. The store also uses this zone if there is no matching country-level tax zone for the geolocation.
+- `store_tax_zone_id` (integer, optional, default: 1) — ID for the tax zone a store uses when subtracting store tax. This setting applies only if a merchant enters tax-inclusive prices and subtracts store tax before tax calculation.
+- `document_submission_strategy` (enum, optional, default: ON_PAYMENT_CAPTURE) — This setting determines whether BigCommerce submits tax documents to third-party tax providers when orders are created or when payments are captured online.
+  - Allowed values: `ON_PAYMENT_CAPTURE`, `ON_ORDER_CREATION`
+- `rounding_strategy` (enum, optional, default: RATE_RESULT_ROUNDING) — This setting affects the rounding behavior of tax amounts calculated by the basic tax provider. The NO_ROUNDING option offers a high accuracy total tax amount for orders. The RATE_RESULT_ROUNDING option means every resulting tax rate amount has been rounded based on the active currency's precision settings. The UNIT_LEVEL_ROUNDING option means we calculate the rounded amount per unit, and then multiply this amount by the line item quantity. Note that tax is always calculated on the line item amount after discounts.
+  - Allowed values: `NO_ROUNDING`, `RATE_RESULT_ROUNDING`, `UNIT_LEVEL_ROUNDING`
+
+### MetaOpen
+
+Response metadata.
+
+## Examples
+
+**Request**
+
+```json
+{}
+```
+
+**Response**
+
+```json
+{
+  "data": {
+    "tax_entered_with_prices": true,
+    "price_display_settings": {
+      "control_panel_price_display_strategy": "ZONE",
+      "invoice_price_display_strategy": "ZONE"
+    },
+    "fallback_strategy": "FIXED",
+    "should_subtract_store_tax": true,
+    "should_use_geolocation_to_determine_guest_shopper_tax_zone": false,
+    "guest_shopper_tax_zone_id": 1,
+    "store_tax_zone_id": 1,
+    "document_submission_strategy": "ON_PAYMENT_CAPTURE",
+    "rounding_strategy": "RATE_RESULT_ROUNDING"
+  },
+  "meta": {}
+}
+```
+
+**SDK Code**
+
+```python
+import requests
+
+url = "https://api.bigcommerce.com/stores/store_hash/v3/tax/settings"
+
+payload = {}
+headers = {
+    "Accept": "application/json",
+    "X-Auth-Token": "&lt;apiKey&gt;",
+    "Content-Type": "application/json"
+}
+
+response = requests.put(url, json=payload, headers=headers)
+
+print(response.json())
+```
+
+```javascript
+const url = 'https://api.bigcommerce.com/stores/store_hash/v3/tax/settings';
+const options = {
+  method: 'PUT',
+  headers: {
+    Accept: 'application/json',
+    'X-Auth-Token': '&lt;apiKey&gt;',
+    'Content-Type': 'application/json'
+  },
+  body: '{}'
+};
+
+try {
+  const response = await fetch(url, options);
+  const data = await response.json();
+  console.log(data);
+} catch (error) {
+  console.error(error);
+}
+```
+
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+	"net/http"
+	"io"
+)
+
+func main() {
+
+	url := "https://api.bigcommerce.com/stores/store_hash/v3/tax/settings"
+
+	payload := strings.NewReader("{}")
+
+	req, _ := http.NewRequest("PUT", url, payload)
+
+	req.Header.Add("Accept", "application/json")
+	req.Header.Add("X-Auth-Token", "&lt;apiKey&gt;")
+	req.Header.Add("Content-Type", "application/json")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := io.ReadAll(res.Body)
+
+	fmt.Println(res)
+	fmt.Println(string(body))
+
+}
+```
+
+```ruby
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.bigcommerce.com/stores/store_hash/v3/tax/settings")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Put.new(url)
+request["Accept"] = 'application/json'
+request["X-Auth-Token"] = '&lt;apiKey&gt;'
+request["Content-Type"] = 'application/json'
+request.body = "{}"
+
+response = http.request(request)
+puts response.read_body
+```
+
+```java
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+
+HttpResponse&lt;String&gt; response = Unirest.put("https://api.bigcommerce.com/stores/store_hash/v3/tax/settings")
+  .header("Accept", "application/json")
+  .header("X-Auth-Token", "&lt;apiKey&gt;")
+  .header("Content-Type", "application/json")
+  .body("{}")
+  .asString();
+```
+
+```php
+&lt;?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client-&gt;request('PUT', 'https://api.bigcommerce.com/stores/store_hash/v3/tax/settings', [
+  'body' =&gt; '{}',
+  'headers' =&gt; [
+    'Accept' =&gt; 'application/json',
+    'Content-Type' =&gt; 'application/json',
+    'X-Auth-Token' =&gt; '&lt;apiKey&gt;',
+  ],
+]);
+
+echo $response-&gt;getBody();
+```
+
+```csharp
+using RestSharp;
+
+var client = new RestClient("https://api.bigcommerce.com/stores/store_hash/v3/tax/settings");
+var request = new RestRequest(Method.PUT);
+request.AddHeader("Accept", "application/json");
+request.AddHeader("X-Auth-Token", "&lt;apiKey&gt;");
+request.AddHeader("Content-Type", "application/json");
+request.AddParameter("application/json", "{}", ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+```
+
+```swift
+import Foundation
+
+let headers = [
+  "Accept": "application/json",
+  "X-Auth-Token": "&lt;apiKey&gt;",
+  "Content-Type": "application/json"
+]
+let parameters = [] as [String : Any]
+
+let postData = JSONSerialization.data(withJSONObject: parameters, options: [])
+
+let request = NSMutableURLRequest(url: NSURL(string: "https://api.bigcommerce.com/stores/store_hash/v3/tax/settings")! as URL,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                    timeoutInterval: 10.0)
+request.httpMethod = "PUT"
+request.allHTTPHeaderFields = headers
+request.httpBody = postData as Data
+
+let session = URLSession.shared
+let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -&gt; Void in
+  if (error != nil) {
+    print(error as Any)
+  } else {
+    let httpResponse = response as? HTTPURLResponse
+    print(httpResponse)
+  }
+})
+
+dataTask.resume()
+```</pre></body></html>

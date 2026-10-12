@@ -1,0 +1,22 @@
+{
+ "n": 12,
+ "url": "https://docs.bigcommerce.com/developer/docs/beta/product-recommendations/overview.md",
+ "dir": "items/012-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/beta/product-recommendations/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1989,
+ "cited_in": [
+  "BC-S-0076",
+  "BC-S-0078",
+  "BC-S-0079",
+  "BC-S-0080",
+  "BC-S-0081"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3d138f56640b2c8854cb71d8b58dba7d9eb17e888e66bbe6ee6fea64ca074487",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,432 @@
+[
+{
+"n": 1,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-adjustments.md",
+"dir": "items/001-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:26:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-adjustments.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 5022,
+"cited_in": [
+"BC-S-0031",
+"BC-S-0036"
+],
+"raw_file": "raw.txt",
+"sha256": "f5d671115ad6793a756122905fba26b22f1ae03a6ab34a084c63018f20796897",
+"raw_ext": "txt"
+},
+{
+"n": 2,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/pricing/price-lists.md",
+"dir": "items/002-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:26:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/pricing/price-lists.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2249,
+"cited_in": [
+"BC-S-0050",
+"BC-S-0052"
+],
+"raw_file": "raw.txt",
+"sha256": "9ee6ba4d91f22550f47e92de1fd59054e3c0e98e35ec96ea0afc58e2630cc466",
+"raw_ext": "txt"
+},
+{
+"n": 3,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/products-overview.md",
+"dir": "items/003-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:26:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/products-overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 8883,
+"cited_in": [
+"BC-S-0023"
+],
+"raw_file": "raw.txt",
+"sha256": "2ab60bddeca7040f770770aa9542e3e9b7edf9925c040f56847113109e3f7140",
+"raw_ext": "txt"
+},
+{
+"n": 4,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/promotions/overview.md",
+"dir": "items/004-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:26:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/promotions/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 8759,
+"cited_in": [
+"BC-S-0057",
+"BC-S-0059",
+"BC-S-0060",
+"BC-S-0061"
+],
+"raw_file": "raw.txt",
+"sha256": "3d90e8817ed5994b3d65e8d9c095ff0f47e817b65bf3945c73607ec6d2e5d389",
+"raw_ext": "txt"
+},
+{
+"n": 5,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/wallets/filter-wallet-shipping-options.md",
+"dir": "items/005-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/wallets/filter-wallet-shipping-options.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1885,
+"cited_in": [
+"BC-S-0164"
+],
+"raw_file": "raw.txt",
+"sha256": "a3e793641ac00b54a37d301666f0d91a40c6d6fda540e1563f9d4bc76f31d41c",
+"raw_ext": "txt"
+},
+{
+"n": 6,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/customers/customer-segmentation/overview.md",
+"dir": "items/006-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/customers/customer-segmentation/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1300,
+"cited_in": [
+"BC-S-0208",
+"BC-S-0210"
+],
+"raw_file": "raw.txt",
+"sha256": "6b6ade192182dd1d8a121698ed3f2b714c904149fce68c01beed723d70dabf67",
+"raw_ext": "txt"
+},
+{
+"n": 7,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/emails/overview.md",
+"dir": "items/007-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/emails/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1977,
+"cited_in": [
+"BC-S-0259"
+],
+"raw_file": "raw.txt",
+"sha256": "d3b4e4c554141dc61bbe438dec45a2037c5a26e7e1727ac9fd2dabfea7ff6df3",
+"raw_ext": "txt"
+},
+{
+"n": 8,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/metafields/store-metafields.md",
+"dir": "items/008-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/metafields/store-metafields.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1000,
+"cited_in": [
+"BC-S-0277"
+],
+"raw_file": "raw.txt",
+"sha256": "7ef5903cd07c1e0bd211a428af3181a4819e28bcc62b5f95ecf1252ff967464c",
+"raw_ext": "txt"
+},
+{
+"n": 9,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/shipping/overview.md",
+"dir": "items/009-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:04Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/shipping/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1344,
+"cited_in": [
+"BC-S-0378"
+],
+"raw_file": "raw.txt",
+"sha256": "1994eb310d1864ee7adf4c7deaac6a394326c109048339dcd0f38cdcc34738b7",
+"raw_ext": "txt"
+},
+{
+"n": 10,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/checkout-extensions/overview.md",
+"dir": "items/010-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/beta/checkout-extensions/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 5492,
+"cited_in": [
+"BC-S-0101",
+"BC-S-0102"
+],
+"raw_file": "raw.txt",
+"sha256": "f4ebc633878e184ef1335c5eae581cbfdf03464ae69fa716c0861b1ce72d3d12",
+"raw_ext": "txt"
+},
+{
+"n": 11,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-documentation.md",
+"dir": "items/011-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-documentation.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 5571,
+"cited_in": [
+"BC-S-0361",
+"BC-S-0362"
+],
+"raw_file": "raw.txt",
+"sha256": "05b5d1918066571464acca7e70ad7e1bc085dca5ae596712b54ab930af6d9702",
+"raw_ext": "txt"
+},
+{
+"n": 12,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/product-recommendations/overview.md",
+"dir": "items/012-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:07Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/beta/product-recommendations/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1989,
+"cited_in": [
+"BC-S-0076",
+"BC-S-0078",
+"BC-S-0079",
+"BC-S-0080",
+"BC-S-0081"
+],
+"raw_file": "raw.txt",
+"sha256": "3d138f56640b2c8854cb71d8b58dba7d9eb17e888e66bbe6ee6fea64ca074487",
+"raw_ext": "txt"
+},
+{
+"n": 13,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/analytics-with-bodl.md",
+"dir": "items/013-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:08Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/analytics-with-bodl.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 6113,
+"cited_in": [
+"BC-S-0340",
+"BC-S-0341"
+],
+"raw_file": "raw.txt",
+"sha256": "8f41c8b791439e7e66dc87977c61c3185d99032d38f29af7d8645807ff212914",
+"raw_ext": "txt"
+},
+{
+"n": 14,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview.md",
+"dir": "items/014-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:09Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 3881,
+"cited_in": [
+"BC-S-0047"
+],
+"raw_file": "raw.txt",
+"sha256": "f569316c54a09169408f0af2ae25bfbb44853792883c3e5688f0e2bdad9314c3",
+"raw_ext": "txt"
+},
+{
+"n": 15,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/overview.md",
+"dir": "items/015-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:10Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2566,
+"cited_in": [
+"BC-S-0283"
+],
+"raw_file": "raw.txt",
+"sha256": "ab7a537533e58d24d8667c0d62a70bbb21132bee0f1437978fece1e4a83ef3f9",
+"raw_ext": "txt"
+},
+{
+"n": 16,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/overview.md",
+"dir": "items/016-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:11Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 7561,
+"cited_in": [
+"BC-S-0295"
+],
+"raw_file": "raw.txt",
+"sha256": "c78338a023aeee2b36a5151ed43d442a1f68d16525341a0ad27dd91e9df489cd",
+"raw_ext": "txt"
+},
+{
+"n": 17,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/products-and-catalog/product-reviews.md",
+"dir": "items/017-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:12Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/products-and-catalog/product-reviews.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1825,
+"cited_in": [
+"BC-S-0072",
+"BC-S-0074"
+],
+"raw_file": "raw.txt",
+"sha256": "a666db5bc00d3a4477627f21a43ba58445b310b51834fed161c1eea997687685",
+"raw_ext": "txt"
+},
+{
+"n": 18,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/abandoned-carts.md",
+"dir": "items/018-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:13Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/abandoned-carts.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 3796,
+"cited_in": [
+"BC-S-0089"
+],
+"raw_file": "raw.txt",
+"sha256": "279d4647ef8db3019e585c9c8e111458f0733744f3c2a3a73390d60afeabe3d3",
+"raw_ext": "txt"
+},
+{
+"n": 19,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/carts.md",
+"dir": "items/019-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:14Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/carts.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 3508,
+"cited_in": [
+"BC-S-0205"
+],
+"raw_file": "raw.txt",
+"sha256": "349c4138f82a2666024485a20827b4162e46d2e99214889c69696423a406b9bc",
+"raw_ext": "txt"
+},
+{
+"n": 20,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/customers.md",
+"dir": "items/020-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:15Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/customers.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 3714,
+"cited_in": [
+"BC-S-0206"
+],
+"raw_file": "raw.txt",
+"sha256": "842bc28ec7e6a0ad0e4a58b4c72b854191f516a689e8a0b97036e878f01544fd",
+"raw_ext": "txt"
+},
+{
+"n": 21,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/products/faceted-textual-search.md",
+"dir": "items/021-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:16Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/products/faceted-textual-search.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 7507,
+"cited_in": [
+"BC-S-0069",
+"BC-S-0070"
+],
+"raw_file": "raw.txt",
+"sha256": "7d0f806b7809af0842930d65fadfa34bcbc219eba3a32406bccec8a13d21ae18",
+"raw_ext": "txt"
+},
+{
+"n": 22,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/site-content.md",
+"dir": "items/022-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:17Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/site-content.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 6094,
+"cited_in": [
+"BC-S-0256",
+"BC-S-0257"
+],
+"raw_file": "raw.txt",
+"sha256": "ca8ed83da72c179ee08cb6f99f583730cf5829b4d13f1ff4f7df64e423dca109",
+"raw_ext": "txt"
+},
+{
+"n": 23,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/overview.md",
+"dir": "items/023-docs.bigcommerce.com",
+"fetched_at": "2026-10-12T04:27:18Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 656,
+"cited_in": [
+"BC-S-0238"
+],
+"raw_file": "raw.txt",
+"sha256": "1baa54f3494bd16486495f426b9298d4ab461bcdd68a8a44867b70329e83ebc8",
+"raw_ext": "txt"
+}
+]

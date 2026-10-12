@@ -1,0 +1,22 @@
+{
+ "n": 22,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/channels.md",
+ "dir": "items/022-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/channels.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1534,
+ "cited_in": [
+  "BC-S-0193",
+  "BC-S-0194",
+  "BC-S-0200",
+  "BC-S-0331",
+  "BC-S-0334"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "0aad4850ea7f4e0d61a174a8280dc0bc0e960258ada4a0a8e6e999c5a6e8ee52",
+ "raw_ext": "txt"
+}

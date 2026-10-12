@@ -1,0 +1,9 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# System Logs
+
+Retrieve and filter store logs. Use the System Logs endpoint to access log entries for debugging, auditing, and monitoring store activity. Use the Staff Action Logs endpoint to audit the actions staff users performed in the store's control panel over a specific time window.

@@ -1,0 +1,115 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Translations Overview
+
+&gt; Use the Translations Admin GraphQL API to translate store content such as products, categories, checkout settings, and more into multiple languages for multilingual storefronts.
+
+# Translations Admin GraphQL API
+
+The Translations Admin GraphQL API is available on any storefront type – Stencil, Catalyst or any other headless. This API enables merchants to translate a single website into multiple languages.
+
+With a single storefront setup, the shopper's experience remains consistent, but the content is displayed in their preferred language. This use case is particularly common in multilingual countries like Canada and for customers selling cross-border, where the same storefront serves shoppers in multiple languages without altering the overall user experience.
+
+The API currently supports translations for the following resource types, and more are expected in the future:
+
+* [Products](/developer/docs/admin/store-configuration/translations/products)
+  * Common Fields
+  * Product Options
+  * Custom Fields
+* [Product Modifiers](/developer/docs/admin/store-configuration/translations/product-modifiers)
+* [Product Listings](/developer/docs/admin/store-configuration/translations/product-listings)
+  * Categories
+  * Brands
+* [Product Filters](/developer/docs/admin/store-configuration/translations/product-filters)
+* [Product URLs](/developer/docs/admin/store-configuration/translations/product-urls)
+* [Brand URLs](/developer/docs/admin/store-configuration/translations/brand-urls)
+* [Category URLs](/developer/docs/admin/store-configuration/translations/category-urls)
+* [Locations](/developer/docs/admin/store-configuration/translations/locations)
+* [Shipping Methods](/developer/docs/admin/store-configuration/translations/shipping-methods)
+* [Tax Rates](/developer/docs/admin/store-configuration/translations/tax-rates)
+* [Order Statuses](/developer/docs/admin/store-configuration/translations/order-statuses)
+* [Promotions](/developer/docs/admin/store-configuration/translations/promotions)
+* [Payment Methods](/developer/docs/admin/store-configuration/translations)
+* [Address Form Fields](/developer/docs/admin/store-configuration/translations/address-form-fields)
+* [Customer Form Fields](/developer/docs/admin/store-configuration/translations/customer-form-fields)
+* [Checkout Settings](/developer/docs/admin/store-configuration/translations/checkout-settings)
+
+## Other shopper-facing translations
+
+The Translations Admin GraphQL API covers store content such as products, categories, and checkout settings. Other shopper-facing strings require different tools depending on where they appear:
+
+* **Stencil theme files** — Translate static strings in Stencil themes using the localization file workflow. See [Localizing theme files](/developer/docs/storefront/stencil/themes/localization/stores#localizing-theme-files).
+* **Catalyst theme files** — Manage static translations for Catalyst storefronts through the built-in internationalization framework. See [Static translations](/developer/docs/storefront/catalyst/features/localization/static-translations).
+* **Optimized one-page checkout** — Localize checkout field labels and messages for the optimized one-page checkout. See [Checkout localization](/developer/docs/admin/checkout-and-cart/localization).
+* **Transactional email templates** — Customize email content per language using the Email Templates API. See [Update an email template](/developer/api-reference/rest/admin/content/email-templates/update-email-template).
+* **Abandoned cart email templates** — Translate abandoned cart recovery emails using the Abandoned Cart Emails API. See [Update an abandoned cart email template](/developer/api-reference/rest/admin/content/abandoned-cart-emails/update-abandoned-cart-email-template).
+
+Refer to the [Error Handling](/developer/docs/admin/store-configuration/translations/error-handling) guide for understanding and handling errors while managing translations.
+
+&gt; **Note**
+&gt;
+&gt; Translation API allows users to add content translations to any non-default channel locale. In order to update content on a default channel language, please use respective management API.
+
+## How does this API work?
+
+### Core Concepts
+
+When using the GraphQL Admin API to manage translations, the following fields are used to identify the relevant channel, locale, and resource so that all data is assigned properly.
+
+* **resourceType**: The type of entity being translated (PRODUCTS, CATEGORIES, BRANDS, etc.)
+* **resourceId**: The specific entity ID (format varies by type, e.g. `bc/store/category/{id}`)
+* **channelId**: The channel context (format: `bc/store/channel/{id}`)
+* **localeId**: The target language (format: `bc/store/locale/{locale_code}`)
+
+### Authentication
+
+Access to the Translations Admin GraphQL API requires valid API credentials. GraphQL Admin API endpoints use the X-Auth-Token header to authenticate to BigCommerce servers. To make a call to the Admin GraphQL, use an API client tool such as [Postman](https://www.postman.com/). Ensure authentication tokens are included in requests.
+
+#### OAuth scopes
+
+| Name               | Permission | Description                         |
+| :----------------- | :--------- | :---------------------------------- |
+| Store Translations | read-only  | View translation details            |
+| Store Translations | modify     | View and modify translation details |
+
+For more information on OAuth Scopes, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes).
+
+### Behavior Notes
+
+* Adding a translation to a default locale will result in unexpected behavior. Do **not** attempt to add translations to a channel's default locale.
+* Across all translatable resources, the API will return the default values for any field that doesn't have an existing translation in the requested locale.
+* With translations enabled, the API will automatically return translated fields, whenever possible, based on the requested locale.
+* For more complex translation requests (e.g. product listing pages with many products), the use of pagination is required. Currently, the Translations API supports up to 50 results per request.
+
+## Limitations
+
+* Rate limits apply
+* Can only translate non-default channel locales
+
+## Best Practices
+
+* Cache translations to minimize API calls
+* Check existing translations before creating duplicates
+* Use pagination effectively for large translation sets
+* Validate resourceIds match resourceType format requirements
+
+## Resources
+
+* [Product Translations](/developer/docs/admin/store-configuration/translations/products)
+* [Product Modifiers Translations](/developer/docs/admin/store-configuration/translations/product-modifiers)
+* [Product Listing Page Translations](/developer/docs/admin/store-configuration/translations/product-listings)
+* [Product Filter Translations](/developer/docs/admin/store-configuration/translations/product-filters)
+* [Inventory Locations Translations](/developer/docs/admin/store-configuration/translations/locations)
+* [Shipping Methods Translations](/developer/docs/admin/store-configuration/translations/shipping-methods)
+* [Tax Rates Translations](/developer/docs/admin/store-configuration/translations/tax-rates)
+* [Order Status Translations](/developer/docs/admin/store-configuration/translations/order-statuses)
+* [Promotions Translations](/developer/docs/admin/store-configuration/translations/promotions)
+* [Payment Methods Translations](/developer/docs/admin/store-configuration/translations)
+* [Address Form Fields Translations](/developer/docs/admin/store-configuration/translations/address-form-fields)
+* [Customer Form Fields Translations](/developer/docs/admin/store-configuration/translations/customer-form-fields)
+* [Checkout Settings Translations](/developer/docs/admin/store-configuration/translations/checkout-settings)
+* [Error Handling Reference](/developer/docs/admin/store-configuration/translations/error-handling)</pre></body></html>

@@ -1,0 +1,70 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Catalyst
+
+&gt; Catalyst is BigCommerce's composable, fully customizable headless ecommerce storefront framework, built with Next.js and the GraphQL Storefront API.
+
+**Catalyst** is the composable, fully customizable headless ecommerce storefront framework for [BigCommerce](https://www.bigcommerce.com/). We've built Catalyst with [Next.js](https://nextjs.org/), [React](https://react.dev/) storefront components, and our [GraphQL Storefront API](/developer/docs/storefront/guides/graphql-storefront-api).
+
+When you use Catalyst, you can create a fully functional storefront using our CLI and get to work without wiring up APIs or building ecommerce components from scratch that are optimized for SEO, accessibility, and performance. Catalyst is designed to take care of the essentials so you can focus your efforts on building your brand. When you're ready to launch, you can host your storefront directly on BigCommerce with [Native Hosting](/developer/docs/storefront/catalyst/deployment/native-hosting/overview) (currently in closed beta), with no separate hosting account to manage, or deploy it to Vercel or any other provider that supports Next.js.
+
+You can find a demo version of Catalyst at [https://catalyst-demo.site/](https://catalyst-demo.site/).
+
+## Ecommerce functionality
+
+Catalyst has a production-ready business-to-consumer (B2C) ecommerce funnel, including the following features:
+
+* Home page
+* Faceted search on product listing pages (PLPs) which are dynamically created for each category and brand
+* Full-text search
+* Product detail pages (PDPs) which are dynamically created for each product and published to the Catalyst storefront channel
+* Shopping cart
+* Secure redirected headless checkout page, which can be themed to match the styling of the core Catalyst storefront
+* Accounts for logged-in customers, including address management and customer account settings
+
+## Default state of Catalyst
+
+Out of the box, Catalyst has the following capabilities you can use to further build your storefront:
+
+### Brand or retailer experience
+
+* **Platform feature support**. Users' changes made from the BigCommerce store control panel or through APIs appear on the storefront as expected.
+* **Complex catalog support**. Catalyst supports product catalogs of any size, complexity, or update frequency.
+
+### Developer experience
+
+* **Scalable GraphQL implementation**. Catalyst features scalable implementation of the GraphQL Storefront API.
+* **Flexible hosting**. Catalyst is a standard Next.js application. Deploy it to Native Hosting, BigCommerce's own hosting infrastructure (currently in closed beta), or to [Vercel](/developer/docs/storefront/catalyst/deployment/vercel). You can also deploy to [other providers](/developer/docs/storefront/catalyst/deployment/overview#other-hosting-providers) that support the Next.js features Catalyst relies on.
+* **Current Next.js features**. Catalyst uses [React server components](https://nextjs.org/docs/app/getting-started/server-and-client-components) and [Suspense](https://react.dev/reference/react/Suspense) boundaries.
+* **Components**. Catalyst provides *functionally* complete ecommerce components and a pre-optimized site architecture for performance, SEO, and accessibility.
+* **Unopinionated visual design**. Visually, Catalyst is a "blank sheet of paper" that you style to match your brand. Catalyst components use [Tailwind CSS](https://tailwindcss.com/) to accelerate development.
+
+### Shopper experience
+
+* **Optimized shopping experiences**. Catalyst gives guest shoppers a browsing experience optimized for speed, and supports the dynamic experiences that matter to signed-in customers, such as viewing orders and managing their accounts.
+* **Secure checkout**. Catalyst uses an optimized one-page redirected checkout on our hosted SaaS environment to simplify PCI compliance. By default, your headless storefront never collects or transmits personally identifiable information (PII) such as credit card numbers.
+
+### Configuration recommendations
+
+We expect you will prioritize some of these features over others as you make Catalyst your own. We recommend exploring the following configurations as you build:
+
+* **Optimized caching performance**. Catalyst's [`withRoutes` proxy](/developer/docs/storefront/catalyst/development/middleware#with-routes) caches route data in a KV store.
+  * On Native Hosting, each project gets its own Cloudflare Workers KV namespace, bound to the deployment automatically.
+  * On Vercel, route caching uses the Vercel Runtime Cache automatically, with no extra setup.
+  * On other hosts, configure an external KV store such as [Upstash](https://upstash.com/). Without one, route data is cached only in memory, which isn't shared across server instances.
+* **Using microservices**. Externally hosted databases and third-party APIs can expand the feature set and data persistence available to Catalyst storefronts.
+* **Evaluating the proxy chain**. Assess the costs and benefits of the [default Catalyst proxies](/developer/docs/storefront/catalyst/development/middleware). You may tailor individual proxies for your use case or remove ones you don't need.
+* **Additional catalog optimization**. You can tune Catalyst's performance based on your store's catalog size, complexity, and update frequency. For example, a catalog with a small number of products and infrequent updates may be able to take advantage of static generation, whereas a large catalog with frequent changes may lean into an aggressive caching strategy that relies on webhooks.
+
+## Resources
+
+* [🤗 BigCommerce Developer Community](https://support.bigcommerce.com/s/community)
+* [💬 GitHub Discussions](https://github.com/bigcommerce/catalyst/discussions)
+* [GraphQL Storefront API Playground](https://gql-playground.bigcommerce.com/)
+* [GraphQL Storefront API Explorer](https://gql-playground.bigcommerce.com/explorer)
+* [BigCommerce Developer Center](/developer/docs/overview/quick-start)
+* [MIT license](https://github.com/bigcommerce/catalyst/blob/canary/LICENSE)</pre></body></html>

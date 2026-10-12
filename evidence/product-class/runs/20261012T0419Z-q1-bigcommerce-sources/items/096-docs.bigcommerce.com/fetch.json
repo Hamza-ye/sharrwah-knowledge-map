@@ -1,0 +1,26 @@
+{
+ "n": 96,
+ "url": "https://docs.bigcommerce.com/developer/llms.txt",
+ "dir": "items/096-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/llms.txt",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 62015,
+ "cited_in": [
+  "BC-S-0001",
+  "BC-S-0003",
+  "BC-S-0061",
+  "BC-S-0080",
+  "BC-S-0219",
+  "BC-S-0250",
+  "BC-S-0252",
+  "BC-S-0322",
+  "BC-S-0324"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "47ba5205a928d0098da4facd0a53a39ab00f20693f92812ce65ed8dfc74db19d",
+ "raw_ext": "txt"
+}

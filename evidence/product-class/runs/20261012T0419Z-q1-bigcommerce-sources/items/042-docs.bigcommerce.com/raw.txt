@@ -1,0 +1,124 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Sites
+
+Create and manage [sites](#sites) and [routes](#site-routes) for [headless storefront](https://support.bigcommerce.com/s/article/The-Headless-Approach#what-mean) sales [channels](/developer/api-reference/rest/admin/management/channels).
+
+**Note:** For the "urls" object, we no longer modify the `www` prefix of the primary URL. The API returns URLs exactly as the customer enters them, similar to the "url" field.
+
+* If the customer saves a URL with `www`, the API returns it with `www`.
+* If the customer saves a URL without `www`, the API returns it without `www`.
+
+## [Sites](/developer/api-reference/rest/admin/management/sites)
+
+Sites link [headless storefronts](/developer/docs/storefront/headless) to sales [channels](/developer/api-reference/rest/admin/management/channels). To [create a site](/developer/api-reference/rest/admin/management/sites/create-site), send a `POST` request to `/stores/{{STORE_HASH}}/v3/sites`.
+
+```http
+POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/sites
+X-Auth-Token: {{ACCESS_TOKEN}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "url": "http://store.example.com/",
+  "channel_id": 5
+}
+```
+
+**Response**
+
+```json
+{
+  "id": 1,
+  "url": "http://store.example.com/",
+  "channel_id": 5,
+  "created_at": "2022-01-04T04:15:50.000Z",
+  "updated_at": "2022-01-04T04:15:50.000Z"
+}
+```
+
+To [get a list of sites](/developer/api-reference/rest/admin/management/sites/get-sites), send a `GET` request to `/stores/{{STORE_HASH}}/v3/sites`.
+
+```http
+GET https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/sites
+X-Auth-Token: {{ACCESS_TOKEN}}
+Accept: application/json
+```
+
+## Site routes
+
+[Site routes](/developer/api-reference/rest/admin/management/sites/site-routes) tell BigCommerce how to link to pages on a [headless storefront](/developer/docs/storefront/headless). To [create a route](/developer/api-reference/rest/admin/management/sites/site-routes/create-site-route) for a [site](#sites), send a `POST` request to `/stores/{{STORE_HASH}}/v3/sites/{site_id}/routes`.
+
+```http
+POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/sites/{site_id}/routes
+X-Auth-Token: {{ACCESS_TOKEN}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "type": "product",
+  "matching": "12",
+  "route": "/en/product?id=12"
+}
+```
+
+## Route types
+
+The following route types are supported.
+
+| Type                     | Description                                                           |
+| ------------------------ | --------------------------------------------------------------------- |
+| `product`                | Route for product details pages                                       |
+| `brand`                  | Route to brand pages                                                  |
+| `category`               | Route to category pages                                               |
+| `blog`                   | Route to blog page                                                    |
+| `home`                   | Route to storefront homepage                                          |
+| `cart`                   | Route to shopper’s cart                                               |
+| `checkout`               | Route to checkout page                                                |
+| `search`                 | Route to store search page                                            |
+| `account`                | Route to account profile page                                         |
+| `login`                  | Route to account login page                                           |
+| `returns`                | Route for return policy page                                          |
+| `static`                 | Route to a static page                                                |
+| `create_account`         | Route to create new shopper account page                              |
+| `forgot_password`        | Route to shopper forgot password page                                 |
+| `account_order_status`   | Route for order status page                                           |
+| `account_new_return`     | Route for product returns page                                        |
+| `recover_abandoned_cart` | Route for URL in emails for a shopper to recover their abandoned cart |
+
+## Route variables
+
+The following route variables are supported.
+
+| Variable | Description                                                                                      |
+| -------- | ------------------------------------------------------------------------------------------------ |
+| `{id}`   | The **ID** of the requested item                                                                 |
+| `{slug}` | The **slug** for the requested item (if available). Note: the `slug` value may contain `/` slash |
+| `{lang}` | The **language** string that the client is using                                                 |
+
+**Example:**
+
+```http
+POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/sites/{site_id}/routes
+X-Auth-Token: {{ACCESS_TOKEN}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "type": "product",
+  "matching": "*",
+  "route": "/{lang}/{slug}?id={id}"
+}
+```
+
+## Additional Information
+
+### Related resources
+
+* [Channels and Listings Reference](/developer/api-reference/rest/admin/management/channels)
+* [Channels Overview](/developer/docs/integrations/channels)
+* [Building Headless Storefronts Guide](/developer/docs/storefront/headless)

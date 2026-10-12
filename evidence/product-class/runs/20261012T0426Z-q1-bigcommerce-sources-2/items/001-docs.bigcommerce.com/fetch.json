@@ -1,0 +1,19 @@
+{
+ "n": 1,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-adjustments.md",
+ "dir": "items/001-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:26:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-adjustments.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5022,
+ "cited_in": [
+  "BC-S-0031",
+  "BC-S-0036"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "f5d671115ad6793a756122905fba26b22f1ae03a6ab34a084c63018f20796897",
+ "raw_ext": "txt"
+}

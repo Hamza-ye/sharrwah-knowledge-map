@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/emails/overview.md",
+ "dir": "items/007-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/emails/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1977,
+ "cited_in": [
+  "BC-S-0259"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d3b4e4c554141dc61bbe438dec45a2037c5a26e7e1727ac9fd2dabfea7ff6df3",
+ "raw_ext": "txt"
+}

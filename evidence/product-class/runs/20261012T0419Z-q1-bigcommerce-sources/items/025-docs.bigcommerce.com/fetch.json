@@ -1,0 +1,19 @@
+{
+ "n": 25,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/customer-segmentation.md",
+ "dir": "items/025-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/customer-segmentation.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1384,
+ "cited_in": [
+  "BC-S-0183",
+  "BC-S-0185"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "7839a60be8724b2e55858db54e95ebdc7a40d91ece183791bf8e29564cfd854d",
+ "raw_ext": "txt"
+}

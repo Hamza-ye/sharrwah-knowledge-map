@@ -1,0 +1,20 @@
+{
+ "n": 71,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payments/transactions-api.md",
+ "dir": "items/071-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payments/transactions-api.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1830,
+ "cited_in": [
+  "BC-S-0090",
+  "BC-S-0091",
+  "BC-S-0094"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "451693b1eaa3b064b0e080af5089226ddf8999660103408cfbae007bc1688882",
+ "raw_ext": "txt"
+}

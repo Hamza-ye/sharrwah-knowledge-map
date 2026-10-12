@@ -1,0 +1,19 @@
+{
+ "n": 72,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/overview.md",
+ "dir": "items/072-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2461,
+ "cited_in": [
+  "BC-S-0196",
+  "BC-S-0204"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "804a11236a9ce8f2c76580f3fcc3e4c167135d6ca73cd8ccbf5c10d0ded97641",
+ "raw_ext": "txt"
+}

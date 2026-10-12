@@ -1,0 +1,16 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const [url] = process.argv.slice(2);
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+const browser = await chromium.launch();
+const ctx = await browser.newContext({ userAgent: UA, extraHTTPHeaders: { 'Accept-Language': 'en,ar;q=0.8' } });
+const page = await ctx.newPage();
+const seen = [];
+page.on('requestfailed', r => seen.push('FAIL ' + r.failure()?.errorText + ' ' + r.url().slice(0, 140)));
+page.on('response', r => { if (r.status() >= 300 || /aura|sfsites|webruntime/.test(r.url())) seen.push(r.status() + ' ' + r.url().slice(0, 140)); });
+page.on('console', m => { if (m.type() === 'error') seen.push('CONSOLE ' + m.text().slice(0, 200)); });
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+await page.waitForTimeout(15000);
+console.log(seen.slice(0, 60).join('\n'));
+await browser.close();

@@ -1,0 +1,29 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Pages V3
+
+## Overview
+
+A **page** appears on a **site** that is associated with a **channel**.
+
+Some pages, such as blog pages, contact forms, and plain-text or HTML pages, are web pages in the traditional sense. They contain markup (a `body`) and load at a relative page location on the site itself (the `url`). Other pages, such as link pages, make external or non-visual content available from the menu of a parent page or by direct link.
+
+### Bulk operations
+
+All endpoints without a `pageId` path parameter support bulk operations.
+
+### Page types
+
+The following table describes the types of pages that the Pages API can manage:
+
+| Page Type      | Description                                                                                                                                                                                                                                                                                                                                                                     | Body             |
+| :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------- |
+| `page`         | A user-defined plain-text page.                                                                                                                                                                                                                                                                                                                                                 | text             |
+| `contact_form` | A user-customizable page that contains a contact form.                                                                                                                                                                                                                                                                                                                          | HTML             |
+| `raw`          | A user-defined page that contains HTML markup or other stringified code.                                                                                                                                                                                                                                                                                                        | HTML, other code |
+| `blog`         | A page that contains blog posts. Use caution; `blog`-type pages can only be created in the store control panel, but you may be able to change the type of a blog page to something else with this API. Use the [blog feature of the REST Content API](/developer/api-reference/rest/admin/content/store-content/blog-posts/create-blog-posts) to work with blog posts and tags. | empty string     |
+| `link`         | A link to an external absolute URL that follows [RFC 3986 standards](https://www.rfc-editor.org/rfc/rfc3986). Displays in the menu of other pages that contain markup.                                                                                                                                                                                                          | —                |</pre></body></html>

@@ -1,0 +1,51 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Shipping
+
+You can create shipments from orders, and it is possible to create multiple shipments from a single order. A [shipment](/developer/api-reference/rest/admin/management/orders/order-shipments/create-order-shipments) represents a grouping of order line items that you can ship to a customer.
+
+The V2 Shipping API allows you to manage shipping zones, shipping methods, and shipping carrier connections.
+
+The Order Shipments resource creates a shipment for an order. You can specify the shipping provider, tracking number, and shipping address ID when creating a shipment.
+
+## Checkout APIs
+
+The [REST Storefront Checkout API](/developer/api-reference/rest/storefront/checkouts), [GraphQL Storefront](/developer/docs/admin/checkout-and-cart/custom-checkouts/graphql-storefront), and [REST Management Checkouts API](/developer/api-reference/rest/admin/management/checkouts) provide methods for managing a checkout up until the point when you finalize it into an order. Because you can only create shipments from finalized orders, you cannot create a shipment from Checkout API endpoints.
+
+However, all of the listed APIs provide methods for creating a consignment that specifies the line items that should ship to a particular address. Creating a consignment corresponds with the actions that a shopper might take when filling out the storefront checkout page and assigning the items in their basket to their respective shipping destinations.
+
+A checkout will always have one consignment assigned to it, which is the first shipping address. A consignment supports multiple shipping addresses, with each address having its own line items.
+
+## Order shipping addresses
+
+The [Order Shipping Addresses](/developer/api-reference/rest/admin/management/orders) endpoint allows you to view the shipping addresses on an order. An order can have more than one shipping address.
+
+## Shipping zone and shipping methods
+
+You can configure [shipping zones](/developer/api-reference/rest/admin/management/shipping/v2/shipping-zones/) in the control panel or use the API to designate where a merchant ships their products and with which [shipping methods](/developer/api-reference/rest/admin/management/shipping/v2/shipping-method/) should be available in each geographic region.
+
+An example of a shipping zone might be North America. Within that shipping zone, the shipping methods might be Free Shipping, Ship-by-Weight, and USPS.
+
+## Real-time carriers
+
+BigCommerce offers native integrations with many real-time shipping carriers such as UPS, FedEx, and USPS. The [Shipping Carrier Connection](/developer/api-reference/rest/admin/management/shipping/v3) resource allows you to connect an account for one of our natively supported shipping carrier integrations.
+
+For a list of all supported carriers, see [Real-Time Quote Providers](https://support.bigcommerce.com/s/article/Setting-Up-a-Real-Time-Shipping-Quote-Shipping-Method?language=en_US#providers).
+
+## Related resources
+
+### Articles
+
+* [Orders API Overview](/developer/docs/admin/checkout-and-cart/orders)
+
+### Endpoints
+
+* [REST Storefront Checkout API](/developer/api-reference/rest/storefront/checkouts)
+* [REST Management Checkouts API](/developer/api-reference/rest/admin/management/checkouts)
+* [GraphQL Storefront Carts and Checkout](/developer/docs/admin/checkout-and-cart/custom-checkouts/graphql-storefront)
+* [Order Shipping Addresses](/developer/api-reference/rest/admin/management/orders)
+* [Shipping v2](/developer/api-reference/rest/admin/management/shipping/v2)</pre></body></html>

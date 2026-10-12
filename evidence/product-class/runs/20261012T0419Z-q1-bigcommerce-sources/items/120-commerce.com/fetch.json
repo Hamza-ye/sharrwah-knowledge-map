@@ -1,0 +1,20 @@
+{
+ "n": 120,
+ "url": "https://www.commerce.com/terms/us-uk-ca-merchant-unified-billing/",
+ "dir": "items/120-commerce.com",
+ "fetched_at": "2026-10-12T04:21:05Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/terms/us-uk-ca-merchant-unified-billing/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0153",
+  "BC-S-0154",
+  "BC-S-0160"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

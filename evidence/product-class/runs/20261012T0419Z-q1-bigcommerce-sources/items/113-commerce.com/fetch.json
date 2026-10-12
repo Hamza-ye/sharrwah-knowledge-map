@@ -1,0 +1,19 @@
+{
+ "n": 113,
+ "url": "https://www.commerce.com/terms/in-merchant-unified-billing/",
+ "dir": "items/113-commerce.com",
+ "fetched_at": "2026-10-12T04:20:58Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/terms/in-merchant-unified-billing/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0155",
+  "BC-S-0156"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

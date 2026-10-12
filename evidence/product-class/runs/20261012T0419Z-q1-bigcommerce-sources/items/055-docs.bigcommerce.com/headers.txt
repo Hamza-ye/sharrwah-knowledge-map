@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 04:20:10 GMT
+content-type: text/markdown; charset=utf-8
+age: 14596
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-IAD
+x-vercel-id: iad1::xlqnp-1791778810572-bc1496f04787
+content-encoding: br
+etag: W/"a1cac87d03cdd913de36832cc929098e"
+link: </developer/api-reference/rest/b2b/management/overview.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/b2b/management/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=704XFnvzIwxMYpy6yPu1U%2BLZF%2BZiz0zTYsUGWHvY7kw9sUsTpV0AJS0XIQmyVer1Kl%2BFkoCTq1QXplzNskkTQNa%2B6pAdQ9v4GvjRcNJ%2BKpboRkI80DQoxaRlUYbOPbe8rGf9fKfNW5auwQ%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=prYrbaKeFVRMD973en4DdOfK6acoyFN2edzlPKXmT_0-1791778810.557142-1.0.1.1-cMY0PENVrZ4rp7KvRq7zHcc92wgiywOf5RWBCRxH.bs.YaF3m.4A.f4kv4zcakPq8KTjQOjk5qGTKhE61qkIxbpqML4.eTsfuNEzNfP0L1VgC7TkwrlYjSD1Ay59Fh5G; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 12 Oct 2026 04:50:10 GMT
+bc-ray: 1
+cf-ray: a4934f7df8b5f2a5-IAD
+alt-svc: h3=":443"; ma=86400
+

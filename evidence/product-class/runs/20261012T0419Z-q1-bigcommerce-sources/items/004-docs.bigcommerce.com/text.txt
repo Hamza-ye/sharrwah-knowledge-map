@@ -1,0 +1,24 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Current Customer
+
+Identify signed-in customers securely by requesting and decoding a BigCommerce-generated JWT.
+
+## Authentication
+
+Authentication consists of two parts; first, send the client ID of an app-level API account as a query parameter with your request. No scopes are required. When you receive a response, use the same API account's client secret to decode the JWT that BigCommerce returns.
+
+[Learn more about the Current Customer API](/developer/docs/storefront/guides/customer-authentication/current-customer).
+
+For info about API accounts, see our [Guide to API accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts).
+
+For info about authenticating BigCommerce APIs, see [Authentication and example requests](/developer/docs/overview/api-fundamentals/api-accounts#client-id).
+
+> **Note**
+>
+> * Substitute your storefront domain for `yourstore.example.com`.
+> * The Send a Test Request feature is not currently supported for this endpoint.

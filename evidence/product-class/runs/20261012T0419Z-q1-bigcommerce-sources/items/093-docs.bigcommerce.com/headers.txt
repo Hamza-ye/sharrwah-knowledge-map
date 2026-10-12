@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 04:20:48 GMT
+content-type: text/markdown; charset=utf-8
+age: 14641
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-IAD
+x-vercel-id: iad1::6lpg9-1791778848578-83f2c04b1a70
+content-encoding: br
+etag: W/"378b175162112265125c2c5e2e8a4056"
+link: </developer/docs/storefront/catalyst/deployment/native-hosting/overview.md>; rel="alternate"; type="text/markdown", </developer/docs/storefront/catalyst/deployment/native-hosting/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bSf5UJ2Qzz1wu1JMUblJi5htBR8Kzkni8oo4d4nnf6kZp9fL4Eb2P0pXIwfKTGq7wXCYcd%2FgTsgLEltjEw3%2Fd5j2VT48%2FVQkquGmApHN6tstT1w%2BYtqPKxcbMW%2Fg%2BXpGL3g%2F4SvmkGnbnA%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=yAblcVCBeXUObYsnQzkgnp._imn7jwXUTcVDvDELjos-1791778848.562443-1.0.1.1-5sKqUU7o_daofzfFVO7zr7wiJ1MdX2_egqMxK5aFmbciiG7eB30nYudZ6RFjdHO5COIT2JKP9PZWPDGBmhfmdgw2bR4sHiOyLhaPU1tR_y8PEYrdaoNDcqN71axAJ.Jy; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 12 Oct 2026 04:50:48 GMT
+bc-ray: 1
+cf-ray: a493506b8b3fabe9-IAD
+alt-svc: h3=":443"; ma=86400
+

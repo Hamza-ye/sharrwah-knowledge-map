@@ -1,0 +1,977 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# GraphQL Account API overview
+
+## Introduction
+
+The GraphQL Account API's users feature lets you create, edit, and delete BigCommerce control panel users. This highly requested feature is primarily useful for Enterprise merchants who need to audit existing users or integrate with third-party user management systems.
+
+## What is a user
+
+A user is an account that can sign in to the BigCommerce control panel for an account or store. A user corresponds with one email address.
+
+## Prerequisites
+
+Before getting started with the GraphQL Account API's users feature, make sure you have the following:
+
+* BigCommerce store
+* A valid access token from an account-level API account that has sufficient permissions to make the desired requests.
+
+To learn more about making requests, see the next section on [Getting Started](#getting-started).
+
+## Rate limits
+
+Account-based rate limiting applies to all endpoints that begin with `/accounts`, including the GraphQL Account API.
+
+Each account can make up to 2,000 requests per hour, which works out to approximately 30 requests per minute. The per-minute allowance is enforced with a sliding window, so requests need to be spread evenly over time rather than sent in bursts. Sending a batch of requests in quick succession can return a `429 Too Many Requests` response even when you're well under the hourly limit.
+
+To stay within the limit, distribute requests evenly and keep to roughly 2–3 requests every 5 seconds. Automated processes should add a short delay between calls instead of sending them synchronously.
+
+&gt; **Info**
+&gt;
+&gt; The `/accounts` endpoints don't return rate limit response headers, so you can't read your remaining quota from the response. Pace requests proactively and back off when you receive a `429 Too Many Requests` response.
+
+Refer to our [API Rate Limit Best Practices Documentation](/developer/docs/overview/api-fundamentals/rate-limits) to help you manage your API usage effectively.
+
+## OAuth scopes
+
+GraphQL schemas don't carry per-operation OAuth scope metadata the way OpenAPI does, so individual mutation and query pages can't render a required-scope block. Use the table below to map each operation to the scope it requires.
+
+| Name           | Permission | Description                                | Used by                                        |
+| :------------- | :--------- | :----------------------------------------- | :--------------------------------------------- |
+| Account        | read-only  | View account details                       | `account`, `account.accountInfo`               |
+| Account Stores | read       | View the stores associated with an account | `account.stores`                               |
+| Account Apps   | read       | View the apps associated with an account   | `account.apps`                                 |
+| Account Users  | read       | View the users associated with an account  | `account.users`, `account.stores[].users`      |
+| Account Users  | write      | Create and update users                    | `addUserToAccount`, `addUserToStore`           |
+| Account Users  | delete     | Remove users                               | `removeUserFromAccount`, `removeUserFromStore` |
+
+For more information on these OAuth scopes, see the [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#account-resource-scopes).
+
+For more information on access token authentication, see [Authentication and Example Requests](/developer/docs/overview/api-fundamentals/api-accounts#access-tokens).
+
+## Getting started
+
+The GraphQL Account API's users feature introduces a new way to manage control panel users. Using an OAuth-based API account, you can integrate our platform with your current system to better serve the store or account's needs.
+
+Begin with the following steps to get started:
+
+1. Request an access token in the **Settings** &gt; **Account-level API accounts** menu in the store control panel. Note that this is different from a store-level API account.
+2. Use a GraphQL client such as [Altair](https://altairgraphql.dev/) to test the API.
+3. In the client, set the request URL to `https://api.bigcommerce.com/accounts/{account_uuid}/graphql`.
+4. You can obtain the Account UUID identifier when creating the token or copy it from the API Path field.
+5. Send an `X-Auth-Token` request header with the access token as its value.
+6. Use the request body to send the GraphQL query or mutation you want to perform.
+
+## Example requests
+
+This section contains examples of GraphQL Account API users queries and mutations that you can send with the following HTTP configuration:
+
+**`GraphQL Account API HTTP configuration`**
+
+```http title="GraphQL Account API HTTP configuration" showLineNumbers={false}
+POST https://api.bigcommerce.com/accounts/{{account_uuid}}/graphql
+X-Auth-Token: {{access_token}}
+Accept: application/json
+Content-Type: application/json
+```
+
+### Account details
+
+The following query returns details about an account:
+
+#### Request
+
+**`Example query: Get account details`**
+
+```graphql title="Example query: Get account details"
+query {
+  account {
+    id
+    accountInfo {
+      name
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example query: Get account details`**
+
+```json title="Example query: Get account details"
+{
+  "data": {
+    "account": {
+      "id": "bc/account/account/{account_uuid}",
+      "accountInfo": {
+        "name": "Jane Doe"
+      }
+    }
+  }
+}
+```
+
+### Account users
+
+The following query returns details about an account's users. Note that a standard cursor-based pagination is supported.
+
+#### Request
+
+**`Example query: Get account users`**
+
+```graphql title="Example query: Get account users"
+query {
+  account {
+    id
+    users {
+      edges {
+        node {
+          id
+          email
+          firstName
+          lastName
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example query: Get account users`**
+
+```json title="Example query: Get account users"
+{
+  "data": {
+    "account": {
+      "id": "bc/account/account/{account_uuid}",
+      "users": {
+        "edges": [
+          {
+            "node": {
+              "id": "bc/account/user/{user_id}",
+              "email": "jane.doe@example.com",
+              "firstName": "Jane",
+              "lastName": "Doe"
+            }
+          },
+          {
+            "node": {
+              "id": "bc/account/user/{user_id}",
+              "email": "jane.doe@example.com",
+              "firstName": "Jane",
+              "lastName": "Doe"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+### Account stores users
+
+The following query returns details about the users of an account's stores:
+
+#### Request
+
+**`Example query: Get account stores users`**
+
+```graphql title="Example query: Get account stores users"
+query {
+  account {
+    id
+    stores {
+      edges {
+        node {
+          id
+          name
+          storeHash
+          users {
+              collectionInfo {
+                totalItems
+              }
+            edges {
+              node {
+                id
+                email
+                firstName
+                lastName
+                locale
+                lastLoginAt
+                permissions
+                status
+                updatedAt
+                apps {
+                  edges {
+                    node {
+                      id
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+          apps {
+            edges {
+              node {
+                id
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example query: Get account stores users`**
+
+```json title="Example query: Get account stores users"
+{
+  "data": {
+    "account": {
+      "id": "bc/account/account/{account_uuid}",
+      "stores": {
+        "edges": [
+          {
+            "node": {
+              "id": "bc/account/account/{account_uuid}",
+              "name": "Plant Market",
+              "storeHash": "{store_hash}",
+              "users": {
+                "collectionInfo": {
+                  "totalItems": 4
+                },
+                "edges": [
+                  {
+                    "node": {
+                      "id": "bc/account/user/{user_id}",
+                      "email": "jane.doe@example.com",
+                      "firstName": "Jane",
+                      "lastName": "Doe",
+                      "locale": "en-US",
+                      "lastLoginAt": "2023-04-12T15:17:25Z",
+                      "permissions": [
+                        "Manage_Products",
+                        "Create_Product",
+                        "Edit_Products",
+                        "Delete_Products",
+                        "Export_Products",
+                        "Import_Products",
+                        "Manage_Reviews",
+                        "Edit_Reviews",
+                        "Delete_Reviews",
+                        "Approve_Reviews",
+                        "Manage_Categories",
+                        "Create_Category",
+                        "Edit_Categories",
+                        "Delete_Categories",
+                        "Manage_Orders",
+                        "Edit_Orders",
+                        "Delete_Orders",
+                        "Export_Orders",
+                        "Add_Orders",
+                        "Import_Order_Tracking_Numbers",
+                        "Undelete_Orders",
+                        "Purge_Orders",
+                        "Refund_Orders",
+                        "Capture_Funds",
+                        "Customize_Order_Statuses",
+                        "Manage_Customers",
+                        "Add_Customer",
+                        "Edit_Customers",
+                        "Delete_Customers",
+                        "Export_Customers",
+                        "Import_Customers",
+                        "Manage_Store_Credit",
+                        "Manage_News",
+                        "Manage_Coupons",
+                        "Add_Coupons",
+                        "Edit_Coupons",
+                        "Delete_Coupons",
+                        "Newsletter_Subscribers",
+                        "Export_Froogle",
+                        "Manage_Settings",
+                        "Statistics_Overview",
+                        "Manage_Users",
+                        "Add_User",
+                        "Edit_Users",
+                        "Delete_Users",
+                        "Manage_Templates",
+                        "Manage_Pages",
+                        "Add_Pages",
+                        "Edit_Pages",
+                        "Delete_Pages",
+                        "Manage_Banners",
+                        "Manage_Brands",
+                        "Add_Brands",
+                        "Edit_Brands",
+                        "Delete_Brands",
+                        "Design_Mode",
+                        "Order_Messages",
+                        "Manage_Logs",
+                        "Manage_Returns",
+                        "Manage_GiftCertificates",
+                        "Manage_Addons",
+                        "Manage_ProductAttributes",
+                        "Customer_Groups",
+                        "Statistics_Products",
+                        "Statistics_Orders",
+                        "Statistics_Customers",
+                        "Statistics_Search",
+                        "Statistics_AbandonedCarts",
+                        "Statistics_JirafeOverview",
+                        "Statistics_JirafeRealTime",
+                        "Statistics_JirafeMerchandising",
+                        "Statistics_JirafeMarketing",
+                        "Statistics_JirafeOrders",
+                        "Statistics_JirafeCustomers",
+                        "Statistics_JirafePurchaseFunnel",
+                        "Statistics_JirafeAbandonedCarts",
+                        "Statistics_JirafeInsights",
+                        "Statistics_JirafeCarts",
+                        "Statistics_JirafeIntegrations",
+                        "Manage_ExportTemplates",
+                        "Manage_FormFields",
+                        "Add_FormFields",
+                        "Edit_FormFields",
+                        "Delete_FormFields",
+                        "Manage_Images",
+                        "View_XMLSitemap",
+                        "Manage_EmailAccounts",
+                        "Manage_DNS_Records",
+                        "See_Store_During_Maintenance",
+                        "Manage_Redirects",
+                        "Ebay_Selling",
+                        "Manage_EmailMarketing",
+                        "Facebook_Selling",
+                        "Shopping_Comparison",
+                        "Google_Adwords",
+                        "Yahoo_Search_Marketing",
+                        "Manage_AbandonedCartNotifications",
+                        "IntegratedApps_LoadApp",
+                        "IntegratedApps_InstallApp",
+                        "IntegratedApps_UninstallApp",
+                        "Manage_Payments",
+                        "Manage_Shipping",
+                        "Manage_Tax",
+                        "Manage_Promotions",
+                        "Add_Promotions",
+                        "Edit_Promotions",
+                        "Delete_Promotions",
+                        "Manage_PriceLists",
+                        "Manage_Scripts",
+                        "Purchase_Theme",
+                        "Manage_Order_Settings",
+                        "Manage_Customer_Settings",
+                        "Manage_Abandoned_Cart_Settings",
+                        "Manage_Cart_Settings",
+                        "Create_Channels",
+                        "Read_Channels",
+                        "Edit_Channels",
+                        "Delete_Channels",
+                        "Manage_Web_Analytics",
+                        "Manage_Data_Warehouses",
+                        "Manage_Customer_Data_Platforms",
+                        "Create_Locations",
+                        "Edit_Locations",
+                        "Delete_Locations",
+                        "Manage_Inventory",
+                        "Read_Locations",
+                        "Grant_High_Risk_Store_Permissions",
+                        "Create_Store_API_Tokens",
+                        "List_Store_API_Tokens",
+                        "Delete_Store_API_Tokens",
+                        "No_Permission_Required"
+                      ],
+                      "status": "ACTIVE",
+                      "updatedAt": "2023-04-12T17:46:27Z",
+                      "apps": {
+                        "edges": [
+                          {
+                            "node": {
+                              "id": "bc/account/app/4869",
+                              "name": "ShipperHQ"
+                            }
+                          },
+                          {
+                            "node": {
+                              "id": "bc/account/app/6824",
+                              "name": "Mailchimp"
+                            }
+                          },
+                          {
+                            "node": {
+                              "id": "bc/account/app/7488",
+                              "name": "Buy Buttons"
+                            }
+                          },
+                          {
+                            "node": {
+                              "id": "bc/account/app/13108",
+                              "name": "Abandoned Cart Recovery by Chated.io"
+                            }
+                          },
+                          {
+                            "node": {
+                              "id": "bc/account/app/14282",
+                              "name": "BigCommerce for WordPress"
+                            }
+                          },
+                          {
+                            "node": {
+                              "id": "bc/account/app/32120",
+                              "name": "Avalara AvaTax"
+                            }
+                          },
+                          {
+                            "node": {
+                              "id": "bc/account/app/31621",
+                              "name": "developer-app"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/user/{user_id}",
+                      "email": "jane.smith@example.com",
+                      "firstName": "Jane",
+                      "lastName": "Smith",
+                      "locale": "en",
+                      "lastLoginAt": "2022-11-19T09:10:25Z",
+                      "permissions": [
+                        "Manage_Orders",
+                        "Edit_Orders",
+                        "Add_Orders",
+                        "Manage_Returns",
+                        "Capture_Funds",
+                        "Refund_Orders",
+                        "Manage_Customers",
+                        "Edit_Customers",
+                        "Manage_Reviews",
+                        "Edit_Reviews",
+                        "Delete_Reviews",
+                        "Approve_Reviews",
+                        "Manage_Coupons",
+                        "Edit_Coupons",
+                        "Add_Coupons",
+                        "Delete_Coupons",
+                        "Manage_Promotions",
+                        "Edit_Promotions",
+                        "Add_Promotions",
+                        "Delete_Promotions",
+                        "Read_Channels",
+                        "Manage_Pages",
+                        "Add_Pages",
+                        "Edit_Pages",
+                        "Delete_Pages",
+                        "Manage_Banners",
+                        "Manage_GiftCertificates",
+                        "Manage_Images",
+                        "Create_Product",
+                        "Edit_Products",
+                        "Delete_Products",
+                        "Export_Products",
+                        "Manage_ProductAttributes",
+                        "Manage_Categories",
+                        "Create_Category",
+                        "Edit_Categories",
+                        "Delete_Categories",
+                        "Export_Orders",
+                        "Delete_Orders",
+                        "Purge_Orders",
+                        "Undelete_Orders",
+                        "Order_Messages",
+                        "Add_Customer",
+                        "Delete_Customers",
+                        "Manage_Store_Credit",
+                        "Export_Customers",
+                        "Manage_News",
+                        "Export_Froogle",
+                        "View_XMLSitemap",
+                        "Manage_Brands",
+                        "Add_Brands",
+                        "Edit_Brands",
+                        "Delete_Brands",
+                        "Newsletter_Subscribers",
+                        "Statistics_Overview",
+                        "Statistics_Products",
+                        "Statistics_AbandonedCarts",
+                        "Statistics_Orders",
+                        "Statistics_Customers",
+                        "Statistics_Search",
+                        "Manage_ExportTemplates",
+                        "Ebay_Selling",
+                        "Manage_EmailMarketing",
+                        "Manage_AbandonedCartNotifications",
+                        "Facebook_Selling",
+                        "Shopping_Comparison",
+                        "Statistics_JirafeCarts",
+                        "Create_Channels",
+                        "Edit_Channels",
+                        "Delete_Channels",
+                        "Statistics_JirafeOverview",
+                        "Statistics_JirafeRealTime",
+                        "Statistics_JirafeMerchandising",
+                        "Statistics_JirafeMarketing",
+                        "Statistics_JirafeOrders",
+                        "Statistics_JirafeCustomers",
+                        "Statistics_JirafePurchaseFunnel",
+                        "Statistics_JirafeAbandonedCarts",
+                        "Statistics_JirafeInsights",
+                        "Manage_PriceLists",
+                        "Add_User",
+                        "Edit_Users",
+                        "Delete_Users",
+                        "Manage_FormFields",
+                        "Add_FormFields",
+                        "Edit_FormFields",
+                        "Delete_FormFields",
+                        "Manage_Settings",
+                        "Manage_Payments",
+                        "Manage_Shipping",
+                        "Manage_Tax",
+                        "Manage_Order_Settings",
+                        "Manage_Customer_Settings",
+                        "Manage_Abandoned_Cart_Settings",
+                        "Manage_Cart_Settings",
+                        "Import_Products",
+                        "Import_Customers",
+                        "Import_Order_Tracking_Numbers",
+                        "Manage_Templates",
+                        "Design_Mode",
+                        "Manage_Logs",
+                        "Customer_Groups",
+                        "See_Store_During_Maintenance",
+                        "Manage_Redirects",
+                        "Manage_DNS_Records",
+                        "Customize_Order_Statuses",
+                        "Manage_Web_Analytics",
+                        "Manage_Data_Warehouses",
+                        "Manage_Customer_Data_Platforms",
+                        "Manage_Scripts",
+                        "Manage_Brands",
+                        "Manage_ProductAttributes",
+                        "IntegratedApps_LoadApp",
+                        "Create_Locations",
+                        "Edit_Locations",
+                        "Delete_Locations",
+                        "Manage_Inventory",
+                        "Read_Locations",
+                        "No_Permission_Required"
+                      ],
+                      "status": "ACTIVE",
+                      "updatedAt": "2021-11-03T15:09:49Z",
+                      "apps": {
+                        "edges": []
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/account/{account_uuid}",
+                      "email": "john.doe@example.com",
+                      "firstName": "John",
+                      "lastName": "Doe",
+                      "locale": "en-US",
+                      "lastLoginAt": "2023-04-08T21:58:03Z",
+                      "permissions": [
+                        "Manage_Orders",
+                        "Edit_Orders",
+                        "Add_Orders",
+                        "Manage_Returns",
+                        "Capture_Funds",
+                        "Refund_Orders",
+                        "Manage_Customers",
+                        "Edit_Customers",
+                        "Manage_Reviews",
+                        "Edit_Reviews",
+                        "Delete_Reviews",
+                        "Approve_Reviews",
+                        "Manage_Coupons",
+                        "Edit_Coupons",
+                        "Add_Coupons",
+                        "Delete_Coupons",
+                        "Manage_Promotions",
+                        "Edit_Promotions",
+                        "Add_Promotions",
+                        "Delete_Promotions",
+                        "Read_Channels",
+                        "Manage_Pages",
+                        "Add_Pages",
+                        "Edit_Pages",
+                        "Delete_Pages",
+                        "Manage_Banners",
+                        "Manage_GiftCertificates",
+                        "Manage_Images",
+                        "IntegratedApps_LoadApp",
+                        "Read_Locations",
+                        "No_Permission_Required"
+                      ],
+                      "status": "ACTIVE",
+                      "updatedAt": "2023-04-08T21:58:03Z",
+                      "apps": {
+                        "edges": []
+                      }
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/account/{account_uuid}",
+                      "email": "john.citizen@example.com",
+                      "firstName": "John",
+                      "lastName": "Citizen",
+                      "locale": "en-US",
+                      "lastLoginAt": null,
+                      "permissions": [
+                        "No_Permission_Required",
+                        "No_Permission_Required"
+                      ],
+                      "status": "ACTIVE",
+                      "updatedAt": "2023-01-30T16:21:20Z",
+                      "apps": {
+                        "edges": []
+                      }
+                    }
+                  }
+                ]
+              },
+              "apps": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "bc/account/app/4869",
+                      "name": "ShipperHQ"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/app/6824",
+                      "name": "Mailchimp"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/app/7488",
+                      "name": "Buy Buttons"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/app/13108",
+                      "name": "Abandoned Cart Recovery by Chated.io"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/app/14282",
+                      "name": "BigCommerce for WordPress"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/app/32120",
+                      "name": "Avalara AvaTax"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "bc/account/app/44010",
+                      "name": "Store Rewards App"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+### Account apps
+
+The following query returns details about an account's apps:
+
+#### Request
+
+**`Example query: Get account apps`**
+
+```graphql title="Example query: Get account apps"
+query {
+  account {
+    id
+    apps {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example query: Get account apps`**
+
+```json title="Example query: Get account apps"
+{
+  "data": {
+    "account": {
+      "id": "bc/account/account/{account_uuid}",
+      "apps": {
+        "edges": []
+      }
+    }
+  }
+}
+```
+
+### Add user to account
+
+The following mutation adds a user to an account:
+
+#### Request
+
+**`Example mutation: Add user to account`**
+
+```graphql title="Example mutation: Add user to account"
+mutation {
+  account {
+    addUserToAccount(
+      input: {
+        email: "jane.doe@example.com"
+      }
+    ) {
+      account {
+        accountInfo {
+          name
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example mutation: Add user to account`**
+
+```json title="Example mutation: Add user to account"
+{
+  "data": {
+    "account": {
+      "addUserToAccount": {
+        "account": {
+          "accountInfo": {
+            "name": "Jane Doe"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### Remove user from account
+
+The following mutation removes a user from an account:
+
+#### Request
+
+**`Example mutation: Remove user from account`**
+
+```graphql title="Example mutation: Remove user from account"
+mutation {
+  account {
+    removeUserFromAccount(
+      input: {
+        email: "jane.doe@example.com"
+      }
+    ) {
+      accountId,
+      userId
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example mutation: Remove user from account`**
+
+```json title="Example mutation: Remove user from account"
+{
+  "data": {
+    "account": {
+      "removeUserFromAccount": {
+        "accountId": "bc/account/account/{account_uuid}",
+        "userId": "bc/account/user/{user_id}"
+      }
+    }
+  }
+}
+```
+
+### Add user to store
+
+The following mutations add a user to a store:
+
+Example using the user's ID to add the user to the store, the user in this case must be part of the account:
+
+#### Request
+
+**`Example mutation: Add user to store`**
+
+```graphql title="Example mutation: Add user to store"
+mutation {
+  user {
+    addUserToStore(
+      input: {
+        user: {
+          id: "bc/account/user/{user_id}"
+        },
+        storeId:"bc/account/store/{store_id}"
+      }
+    ) {
+      storeId
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example mutation: Add user to store`**
+
+```json title="Example mutation: Add user to store"
+{
+  "data": {
+    "user": {
+      "addUserToStore": {
+        "storeId": "bc/account/store/{store_hash}"
+      }
+    }
+  }
+}
+```
+
+Example using the user's email to add the user to the store:
+
+#### Request
+
+**`Example mutation: Add user to store`**
+
+```graphql title="Example mutation: Add user to store"
+mutation {
+  user {
+    addUserToStore(
+      input: {
+        user: {
+          email: "bc/account/user/{user_email}"
+        },
+        storeId:"bc/account/store/{store_id}"
+      }
+    ) {
+      storeId
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example mutation: Add user to store`**
+
+```json title="Example mutation: Add user to store"
+{
+  "data": {
+    "user": {
+      "addUserToStore": {
+        "storeId": "bc/account/store/{store_hash}"
+      }
+    }
+  }
+}
+```
+
+### Remove user from store
+
+The following mutation removes a user from a store:
+
+#### Request
+
+**`Example mutation: Remove user from store`**
+
+```graphql title="Example mutation: Remove user from store"
+mutation {
+  user {
+    removeUserFromStore(
+      input: {
+        storeId: "bc/account/store/{store_hash}"
+        userId: "bc/account/user/{user_id}"
+      }
+    ) {
+      storeId,
+      user {
+        id
+        email
+        firstName
+        lastName
+        locale
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example mutation: Remove user from store`**
+
+```json title="Example mutation: Remove user from store"
+{
+  "data": {
+    "user": {
+      "removeUserFromStore": {
+        "storeId": "bc/account/store/{store_hash}",
+        "user": {
+          "id": "bc/account/user/{user_id}",
+          "email": "jane.doe@example.com",
+          "firstName": "Jane",
+          "lastName": "Doe",
+          "locale": "en"
+        }
+      }
+    }
+  }
+}
+```
+
+## Resources
+
+### Articles
+
+* [Authentication and example requests](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts)
+* [Guide to API accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts)</pre></body></html>

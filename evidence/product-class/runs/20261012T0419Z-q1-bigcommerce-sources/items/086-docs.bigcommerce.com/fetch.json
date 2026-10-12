@@ -1,0 +1,19 @@
+{
+ "n": 86,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/b2b-edition.md",
+ "dir": "items/086-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/b2b-edition.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2671,
+ "cited_in": [
+  "BC-S-0007",
+  "BC-S-0321"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c2ddf7a5392315e5e26af676c5478a810c343b8bf4e81a320b605a1f4c9c0d9b",
+ "raw_ext": "txt"
+}

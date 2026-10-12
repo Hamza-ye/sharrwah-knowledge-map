@@ -1,0 +1,25 @@
+{
+ "n": 85,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/tax-providers.md",
+ "dir": "items/085-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/tax-providers.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5616,
+ "cited_in": [
+  "BC-S-0297",
+  "BC-S-0336",
+  "BC-S-0350",
+  "BC-S-0351",
+  "BC-S-0353",
+  "BC-S-0354",
+  "BC-S-0355",
+  "BC-S-0358"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "47a0d4858b6a406298e13c791ee1e33b2b0f58c1fa7595a3fae54fb5499433b4",
+ "raw_ext": "txt"
+}

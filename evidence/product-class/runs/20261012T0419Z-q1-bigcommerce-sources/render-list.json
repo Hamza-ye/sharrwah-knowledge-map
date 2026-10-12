@@ -1,0 +1,722 @@
+[
+{
+"n": 1,
+"url": "https://docs.bigcommerce.com/developer/api-reference/graphql/account/overview.md",
+"dir": "items/001-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://docs.bigcommerce.com/developer/api-reference/graphql/overview.md",
+"dir": "items/002-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview.md",
+"dir": "items/003-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/current-customer/overview.md",
+"dir": "items/004-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/customer-login-api/overview.md",
+"dir": "items/005-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/overview.md",
+"dir": "items/006-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/brands.md",
+"dir": "items/007-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/categories.md",
+"dir": "items/008-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/category-trees.md",
+"dir": "items/009-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/products.md",
+"dir": "items/010-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/abandoned-cart-emails.md",
+"dir": "items/011-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/custom-template-associations.md",
+"dir": "items/012-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/email-templates.md",
+"dir": "items/013-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/marketing.md",
+"dir": "items/014-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/page-widgets.md",
+"dir": "items/015-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/pages.md",
+"dir": "items/016-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/store-content.md",
+"dir": "items/017-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/themes.md",
+"dir": "items/018-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/widgets.md",
+"dir": "items/019-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 20,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts.md",
+"dir": "items/020-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 21,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/carts.md",
+"dir": "items/021-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 22,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/channels.md",
+"dir": "items/022-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 23,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/checkouts.md",
+"dir": "items/023-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 24,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/currencies.md",
+"dir": "items/024-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 25,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/customer-segmentation.md",
+"dir": "items/025-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 26,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/customers/v3.md",
+"dir": "items/026-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 27,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/geography.md",
+"dir": "items/027-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 28,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/infrastructure-hosting.md",
+"dir": "items/028-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 29,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/inventory.md",
+"dir": "items/029-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 30,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/order-operations.md",
+"dir": "items/030-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 31,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/orders.md",
+"dir": "items/031-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 32,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/pickup.md",
+"dir": "items/032-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 33,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/pickup/pickup-methods.md",
+"dir": "items/033-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 34,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/price-lists.md",
+"dir": "items/034-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 35,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/pricing.md",
+"dir": "items/035-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 36,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/promotion-settings.md",
+"dir": "items/036-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 37,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/promotions.md",
+"dir": "items/037-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 38,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/redirects.md",
+"dir": "items/038-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 39,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/scripts.md",
+"dir": "items/039-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 40,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings.md",
+"dir": "items/040-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 41,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/shipping.md",
+"dir": "items/041-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 42,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/sites.md",
+"dir": "items/042-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 43,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/store-information/v2.md",
+"dir": "items/043-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 44,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/store-information/v3.md",
+"dir": "items/044-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 45,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/subscribers.md",
+"dir": "items/045-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 46,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/system-logs.md",
+"dir": "items/046-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 47,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax.md",
+"dir": "items/047-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 48,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-settings/update-tax-settings.md",
+"dir": "items/048-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 49,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/wishlists.md",
+"dir": "items/049-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 50,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments.md",
+"dir": "items/050-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 51,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/methods.md",
+"dir": "items/051-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 52,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/stored-instruments.md",
+"dir": "items/052-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 53,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/transactions.md",
+"dir": "items/053-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 54,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/invoice-management.md",
+"dir": "items/054-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 55,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/overview.md",
+"dir": "items/055-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 56,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/payment.md",
+"dir": "items/056-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 57,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/overview.md",
+"dir": "items/057-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 58,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/overview.md",
+"dir": "items/058-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 59,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/shipping-provider.md",
+"dir": "items/059-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 60,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/tax-provider.md",
+"dir": "items/060-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 61,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/webhooks.md",
+"dir": "items/061-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 62,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/storefront/carts.md",
+"dir": "items/062-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 63,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/storefront/checkouts.md",
+"dir": "items/063-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 64,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/storefront/consent.md",
+"dir": "items/064-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 65,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/storefront/customers.md",
+"dir": "items/065-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 66,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-locations.md",
+"dir": "items/066-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 67,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/open-checkout/pciguide.md",
+"dir": "items/067-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 68,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/orders/refunds.md",
+"dir": "items/068-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 69,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/stripe/integrating-stripe-adaptive-pricing.md",
+"dir": "items/069-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 70,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payments/overview.md",
+"dir": "items/070-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 71,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payments/transactions-api.md",
+"dir": "items/071-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 72,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/overview.md",
+"dir": "items/072-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 73,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md",
+"dir": "items/073-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 74,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/locales-configuration.md",
+"dir": "items/074-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 75,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/store-configuration.md",
+"dir": "items/075-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 76,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/tax/tax-settings.md",
+"dir": "items/076-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 77,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/translations/overview.md",
+"dir": "items/077-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 78,
+"url": "https://docs.bigcommerce.com/developer/docs/beta.md",
+"dir": "items/078-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 79,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements.md",
+"dir": "items/079-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 80,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps.md",
+"dir": "items/080-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 81,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/unified-billing/overview.md",
+"dir": "items/081-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 82,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/staging-with-staging-pro.md",
+"dir": "items/082-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 83,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/scripts.md",
+"dir": "items/083-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 84,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/shipping-providers.md",
+"dir": "items/084-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 85,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/tax-providers.md",
+"dir": "items/085-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 86,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/b2b-edition.md",
+"dir": "items/086-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 87,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/channel-events.md",
+"dir": "items/087-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 88,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/events.md",
+"dir": "items/088-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 89,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/inventory-and-location-events.md",
+"dir": "items/089-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 90,
+"url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/overview.md",
+"dir": "items/090-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 91,
+"url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts.md",
+"dir": "items/091-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 92,
+"url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/rate-limits.md",
+"dir": "items/092-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 93,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/deployment/native-hosting/overview.md",
+"dir": "items/093-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 94,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/features/cookie-consent.md",
+"dir": "items/094-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 95,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/pci-compliance.md",
+"dir": "items/095-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 96,
+"url": "https://docs.bigcommerce.com/developer/llms.txt",
+"dir": "items/096-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 97,
+"url": "https://www.bigcommerce.com/apps/",
+"dir": "items/097-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 98,
+"url": "https://www.bigcommerce.com/llms.txt",
+"dir": "items/098-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 99,
+"url": "https://www.bigcommerce.com/payments/",
+"dir": "items/099-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 100,
+"url": "https://www.bigcommerce.com/payments/bigcommerce-payments/",
+"dir": "items/100-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 101,
+"url": "https://www.bigcommerce.com/payments/gateways/",
+"dir": "items/101-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 102,
+"url": "https://www.bigcommerce.com/pricing/",
+"dir": "items/102-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 103,
+"url": "https://www.bigcommerce.com/product/",
+"dir": "items/103-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 104,
+"url": "https://www.bigcommerce.com/product/secure-web-hosting/",
+"dir": "items/104-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 105,
+"url": "https://www.commerce.com/privacy/",
+"dir": "items/105-commerce.com",
+"keep_body": true
+},
+{
+"n": 106,
+"url": "https://www.commerce.com/privacy/data-processing-addendum/",
+"dir": "items/106-commerce.com",
+"keep_body": true
+},
+{
+"n": 107,
+"url": "https://www.commerce.com/privacy/data-processors/",
+"dir": "items/107-commerce.com",
+"keep_body": true
+},
+{
+"n": 108,
+"url": "https://www.commerce.com/terms/",
+"dir": "items/108-commerce.com",
+"keep_body": true
+},
+{
+"n": 109,
+"url": "https://www.commerce.com/terms/acceptable-use-policy/",
+"dir": "items/109-commerce.com",
+"keep_body": true
+},
+{
+"n": 110,
+"url": "https://www.commerce.com/terms/ai-features-addendum/",
+"dir": "items/110-commerce.com",
+"keep_body": true
+},
+{
+"n": 111,
+"url": "https://www.commerce.com/terms/api-terms/",
+"dir": "items/111-commerce.com",
+"keep_body": true
+},
+{
+"n": 112,
+"url": "https://www.commerce.com/terms/fees-and-billing/",
+"dir": "items/112-commerce.com",
+"keep_body": true
+},
+{
+"n": 113,
+"url": "https://www.commerce.com/terms/in-merchant-unified-billing/",
+"dir": "items/113-commerce.com",
+"keep_body": true
+},
+{
+"n": 114,
+"url": "https://www.commerce.com/terms/infringing-materials-protocol/",
+"dir": "items/114-commerce.com",
+"keep_body": true
+},
+{
+"n": 115,
+"url": "https://www.commerce.com/terms/jurisdiction-specific-terms/",
+"dir": "items/115-commerce.com",
+"keep_body": true
+},
+{
+"n": 116,
+"url": "https://www.commerce.com/terms/merchant-client-terms/",
+"dir": "items/116-commerce.com",
+"keep_body": true
+},
+{
+"n": 117,
+"url": "https://www.commerce.com/terms/merchant-unified-billing/",
+"dir": "items/117-commerce.com",
+"keep_body": true
+},
+{
+"n": 118,
+"url": "https://www.commerce.com/terms/mobile-app-terms/",
+"dir": "items/118-commerce.com",
+"keep_body": true
+},
+{
+"n": 119,
+"url": "https://www.commerce.com/terms/store-terms/",
+"dir": "items/119-commerce.com",
+"keep_body": true
+},
+{
+"n": 120,
+"url": "https://www.commerce.com/terms/us-uk-ca-merchant-unified-billing/",
+"dir": "items/120-commerce.com",
+"keep_body": true
+}
+]

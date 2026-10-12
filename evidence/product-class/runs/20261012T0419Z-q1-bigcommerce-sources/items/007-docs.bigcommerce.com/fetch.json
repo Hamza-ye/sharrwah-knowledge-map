@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/brands.md",
+ "dir": "items/007-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/brands.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 763,
+ "cited_in": [
+  "BC-S-0023"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "9cd2ff7d7522d9db1edf9188644181ec183500ecec3d311dfd4e26120f1d52e2",
+ "raw_ext": "txt"
+}

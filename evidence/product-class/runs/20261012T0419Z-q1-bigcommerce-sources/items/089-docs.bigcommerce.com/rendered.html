@@ -1,0 +1,126 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Inventory and Location Webhooks
+
+*Buy Online, Pick up in Store* allows merchants to distribute inventory among locations. Developers might need notification when inventories or locations change. This notification helps them perform downstream actions required to manage inventory at multiple locations.
+To this end, developers can subscribe to webhook events for changes to inventory or location. \
+\
+
+This page is a reference for inventory and location webhooks for *Buy Online, Pick up in Store*. This article assumes that you're familiar with webhooks.
+For a general introduction to webhooks, see [Webhooks Overview](/developer/docs/integrations/webhooks).
+
+&gt; **Note**
+&gt;
+&gt; Storefront channels share the inventory for a product or variant. A product or variant's inventory settings apply to *all* storefront channels. The `*` in the scope indicates that you subscribe to inventory events across *all* storefront channels. An inventory change fires a *single* webhook event.
+&gt;
+&gt; You can track inventory changes at *any* location. A product or variant's inventory levels and settings apply to a specific location. When you update inventory, the callback returns the location for the inventory.
+
+## Creating a webhook
+
+To create a webhook, send a request to the [Create a webhook](/developer/api-reference/rest/integrations/webhooks/create-webhooks) endpoint. Follow the process described in the [Webhooks Overview](/developer/docs/integrations/webhooks#creating-a-webhook).
+
+The following example creates a webhook that subscribes to changes in inventory settings.
+
+**`Example request: Create a webhook`**
+
+```http title="Example request: Create a webhook" showLineNumbers={false}
+POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/hooks
+X-Auth-Token: {{ACCESS_TOKEN}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "scope": "store/channel/*/inventory/product/settings_changed", // The `*` indicates that you subscribe to events across all storefront channels
+  "destination": "https://your-server.example.com/api/incoming/webhooks", // replace with your HTTPS endpoint URL
+  "is_active": true
+}
+```
+
+&gt; **Note**
+&gt;
+&gt; * The `destination` URL must be served on port **443**; custom ports are not currently supported.
+&gt; * It can take up to one minute for a newly created webhook to work.
+
+For information on creating a webhook, consult the [creating a webhook section of the Webhooks Overview](/developer/docs/integrations/webhooks#creating-a-webhook).
+
+## Callback structure
+
+For webhook callback structure reference, see [Webhook Events](/developer/docs/integrations/webhooks/event-reference#callback-structure).
+
+## Inventory
+
+The following inventory webhook events fire in response to changes in inventory for a product or variant. \
+\
+
+You can track inventory changes for products or variants. The `*` in the scope indicates that you subscribe to inventory events across *all* storefront channels. An inventory change fires a *single* webhook event.
+
+Storefront channels share the inventory for a product or variant. For order-related events, the webhook fires a single event in response to a change from *any* storefront channel. For example, placing an order from any channel can trigger one webhook event.
+
+A store's [inventory settings](/developer/api-reference/rest/admin/management/settings/inventory/get-settings-inventory) affect *when* stock levels change through an order. For example, stock levels can change when you either place or complete/ship an order. Stock levels can also change when you refund or cancel an order. Global settings apply when inventory changes through a [manual order](https://support.bigcommerce.com/s/article/Creating-a-Manual-Order?language=en_US). Settings for a channel apply when inventory changes through an order in a channel.
+
+| Name / Scope                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| :------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `store/channel/*/inventory/product/stock_changed`        | Fires when a product or variant stock level changes at a location. For example, stock levels can change by manual merchant adjustments in the control panel or API. The corresponding endpoint is [Absolute adjustment](/developer/api-reference/rest/admin/management/inventory#absolute-adjustment).                                                                                                                             |
+| `store/channel/*/inventory/product/low_stock_reached`    | Fires when a product or variant stock level is lower or equal to the low-stock value at a location. Stock levels must change through an order.                                                                                                                                                                                                                                                                                     |
+| `store/channel/*/inventory/product/out_of_stock_reached` | Fires when a product or variant stock level is zero at a location. Stock levels must change through an order.                                                                                                                                                                                                                                                                                                                      |
+| `store/channel/*/inventory/product/settings_changed`     | Fires when a product's safety stock, `is_in_stock` flag, or warning level changes at a location. A product or variant's inventory settings apply to all storefront channels. Changing a product or variant's inventory settings triggers one webhook event. The corresponding endpoint is [Update inventory settings for a location](/developer/api-reference/rest/admin/management/inventory/items/put-location-inventory-items). |
+
+Inventory payload objects take the form that follows:
+
+**`Example stock changed payload object`**
+
+```json title="Example stock changed payload object" showLineNumbers={false}
+{
+  "producer": "stores/{store_hash}",
+  "hash": "996ea203c939d05ca667a515ef2f029976d6df80",
+  "created_at": 1682624640,
+  "store_id": "1234567890",
+  "scope": "store/channel/*/inventory/product/stock_changed",
+  "data": {
+    "variant_id": 127,
+    "product_id": 113,
+    "location_id": 2
+  }
+}
+```
+
+The channel does not have to be active or visible for you to track changes.
+
+## Locations
+
+The following location webhook events fire in response to actions that affect a location. You can track changes for *any* location.
+
+| Name / Scope                       | Description                                                                                                                                                                                                          |
+| :--------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `store/inventory/location/created` | Fires when a location is created. The corresponding endpoint is [Create locations](/developer/api-reference/rest/admin/management/inventory/locations/create-locations).                                             |
+| `store/inventory/location/updated` | Fires when a location is updated, including enabling or disabling a location. The corresponding endpoint is [Update locations](/developer/api-reference/rest/admin/management/inventory/locations/update-locations). |
+| `store/inventory/location/deleted` | Fires when a location is deleted. The corresponding endpoint is [Delete locations](/developer/api-reference/rest/admin/management/inventory/locations/delete-locations).                                             |
+
+Location payload objects take the form that follows:
+
+**`Example location created payload object`**
+
+```json title="Example location created payload object" showLineNumbers={false}
+{
+  "producer": "stores/{store_hash}",
+  "hash": "f23133c2b4caa5a8763b678fed2e3b643348599d",
+  "created_at": 1682627509,
+  "store_id": "1234567890",
+  "scope": "store/inventory/location/created",
+  "data": {
+    "location_id": 2
+  }
+}
+```
+
+## Resources
+
+* [Webhooks Overview](/developer/docs/integrations/webhooks)
+* [Webhooks Tutorial](/developer/docs/integrations/webhooks/tutorial)
+* [Webhooks Events](/developer/docs/integrations/webhooks/event-reference)
+* [Channel Webhook Events](/developer/docs/integrations/webhooks/event-reference/channel-events)
+* [Webhooks Reference](/developer/docs/integrations/webhooks)</pre></body></html>

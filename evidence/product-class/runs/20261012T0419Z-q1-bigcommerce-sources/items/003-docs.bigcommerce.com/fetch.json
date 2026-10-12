@@ -1,0 +1,21 @@
+{
+ "n": 3,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview.md",
+ "dir": "items/003-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2391,
+ "cited_in": [
+  "BC-S-0305",
+  "BC-S-0306",
+  "BC-S-0307",
+  "BC-S-0308"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "04f61da397c3678d06b22351df49ca86522cdd7f1ae05f43d206d627f2223c42",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 9,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/category-trees.md",
+ "dir": "items/009-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:24Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/category-trees.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 955,
+ "cited_in": [
+  "BC-S-0026"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "79858b6570704c5e49ba8ed79bb28c3989f6be678c47ed3a35ff19d6f18ed833",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 79,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements.md",
+ "dir": "items/079-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:34Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2869,
+ "cited_in": [
+  "BC-S-0290"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "6e0b752c88a113e6e82f6e59a28db46f3f3873df33e83bbef56a2d456ad8bcb4",
+ "raw_ext": "txt"
+}

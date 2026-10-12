@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/products-overview.md",
+ "dir": "items/003-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:26:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/products-overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 8883,
+ "cited_in": [
+  "BC-S-0023"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "2ab60bddeca7040f770770aa9542e3e9b7edf9925c040f56847113109e3f7140",
+ "raw_ext": "txt"
+}

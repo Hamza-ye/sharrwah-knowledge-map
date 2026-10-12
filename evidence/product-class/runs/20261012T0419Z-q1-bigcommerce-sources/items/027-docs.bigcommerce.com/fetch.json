@@ -1,0 +1,18 @@
+{
+ "n": 27,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/geography.md",
+ "dir": "items/027-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/geography.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 278,
+ "cited_in": [
+  "BC-S-0372"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "798361898b48d9cb18c7c04698efa3a3f377e21df28a3ea1e21502aff1209fee",
+ "raw_ext": "txt"
+}

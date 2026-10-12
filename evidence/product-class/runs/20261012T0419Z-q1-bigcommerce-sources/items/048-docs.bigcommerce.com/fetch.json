@@ -1,0 +1,20 @@
+{
+ "n": 48,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-settings/update-tax-settings.md",
+ "dir": "items/048-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-settings/update-tax-settings.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3805,
+ "cited_in": [
+  "BC-S-0345",
+  "BC-S-0352",
+  "BC-S-0357"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "fad34eb855223c72c43aef075e159727ffb23808bbfd246354f1c478c428482c",
+ "raw_ext": "txt"
+}

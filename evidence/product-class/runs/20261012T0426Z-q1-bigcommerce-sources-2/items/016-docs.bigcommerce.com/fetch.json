@@ -1,0 +1,18 @@
+{
+ "n": 16,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/overview.md",
+ "dir": "items/016-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 7561,
+ "cited_in": [
+  "BC-S-0295"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c78338a023aeee2b36a5151ed43d442a1f68d16525341a0ad27dd91e9df489cd",
+ "raw_ext": "txt"
+}

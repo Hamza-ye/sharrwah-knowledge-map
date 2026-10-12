@@ -1,0 +1,181 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Scripts API
+
+The BigCommerce Scripts API gives developers the ability to deploy scripts on storefront pages programmatically. Scripts are [channel-aware](/developer/docs/integrations/apps/optimizing-multi-storefront-apps).
+
+This article explains the benefits and limitations of the Scripts API, then works through different strategies you might employ to migrate an existing app's script management mechanism from the control panel to the API. It assumes you're familiar with the BigCommerce app installation process. For more information on the app installation process from the merchant perspective, see our Help Center article on [Installing Apps](https://support.bigcommerce.com/s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel#installing). For information on responding to app installation callbacks, see our article on [Implementing OAuth](/developer/docs/integrations/apps/guide/auth).
+
+## Scripts API and Script Manager
+
+The control panel counterpart of the Scripts API is the Script Manager, which is available in the channel settings for the subject storefront on non-[Blueprint](#blueprint-themes) stores. Scripts that you install with the Scripts API appear in the storefront's Script Manager, but can only be modified by the [API account](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts) that created them. However, authorized control panel users can change the consent category or entirely delete any script using Script Manager, including scripts created using the API. To learn more, see our Help Center article on [Script Manager](https://support.bigcommerce.com/s/article/Using-Script-Manager).
+
+Similarly, scripts added manually are visible to all control panel users. When you use the API to [Get all scripts](/developer/api-reference/rest/admin/management/scripts/get-scripts), [Get a script](/developer/api-reference/rest/admin/management/scripts/get-script), [Update a script](/developer/api-reference/rest/admin/management/scripts/update-script), or [Delete a script](/developer/api-reference/rest/admin/management/scripts/delete-script), you can only retrieve, modify, and delete scripts added by the [API account](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts) you use to make the request. The Scripts API can’t update or delete scripts added using the control panel Script Manager.
+
+After a merchant installs your app, the app can freely update its own scripts. All the app's scripts are available in the Script Manager for the merchant to inspect.
+
+The following list gives examples of the kinds of scripts you can add and manage using the Scripts API:
+
+* Analytics scripts
+* Single-click app scripts
+* Live chat and support plugins
+* Theme extensions or connector apps
+
+You can use the Scripts API to associate a script with a channel, including a React or other compiled JavaScript framework bundle.
+
+Before installing any scripts using the Scripts API, we highly recommend checking a combination of the [Get store information](/developer/api-reference/rest/admin/management/store-information/v3) and [Get all channels](/developer/api-reference/rest/admin/management/channels/get-channels) endpoints to determine Stencil or headless support for the subject storefront or storefronts.
+
+We also recommend leaving the `auto_uninstall` flag set to true, so that your app has the option of garbage collecting on uninstallation.
+
+These steps can help prevent unexpected behavior.
+
+### Limits
+
+* Each app can have 10 API-created scripts
+* Each channel can have 50 control panel-created scripts
+* If you use inline scripts, you can include up to five `&lt;script&gt;` tags
+* On a BigCommerce-hosted storefront, new or updated scripts take 20 seconds to cache
+
+## Stencil themes
+
+You can associate scripts with a Stencil template page or headless storefront location. On Stencil, you can specify whether scripts are added to the header object as `{{head.scripts}}` or the footer object as `{{footer.scripts}}`.
+
+&gt; **Note**
+&gt;
+&gt; When you are using Stencil CLI to develop a theme locally, scripts added with the Scripts API will not render.
+
+The following table describes the locations you can associate with Scripts API or Script Manager scripts on headless or Stencil storefronts:
+
+| Script scope / template | Storefront page                                                                                                                                                                                                                             |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `all_pages`             | Add Wishlist  Blog List  Blog Post  Brand Pages  All Brands Page  Cart  Category  Checkout  My Account  Product Compare  Order Confirmation  Page  Payment Methods  Login  Contact Form  Product  Search  All Wishlist  Wish List  404 page |
+| `storefront`            | Add Wishlist  Blog List  Blog Post  Brand Pages  All Brands Page  Cart  Category  Product Compare  Page  Contact Form  Product  Search  All Wishlist  Wish List  404 page                                                                   |
+| `checkout`              | Checkout                                                                                                                                                                                                                                    |
+| `order_confirmation`    | Order Confirmation                                                                                                                                                                                                                          |
+
+To associate scripts with a checkout page, you need the [Modify Checkout Content OAuth scope](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes).
+
+## Creating scripts for Catalyst storefronts
+
+Catalyst is BigCommerce's modern storefront framework built on Next.js. When creating scripts for Catalyst storefronts, there are several important considerations that differ from traditional Stencil themes.
+
+### No Handlebars support
+
+Scripts in Catalyst do not support Handlebars templating. While you can use inline scripts, they must contain static content and cannot use Handlebars helpers or access theme context variables that are available in Stencil themes. Any dynamic content must be handled through JavaScript after the script loads.
+
+### Client-side navigation considerations
+
+Catalyst storefronts are built on Next.js, which supports client-side navigation. This means that scripts are not guaranteed to fire on every page navigation, unlike traditional page loads. When users navigate between pages, the browser may not reload the entire page, which can prevent scripts from executing as expected.
+
+If you need your script to execute on each navigation, you should hook into client-side events to detect page changes. You can listen for Next.js router events or use other client-side navigation detection methods to ensure your script runs when needed.
+
+### Deferred script loading
+
+Scripts on Catalyst are loaded using Next.js's `next/script` component, which loads scripts in a deferred manner. Your script should be designed to support asynchronous loading and should not rely on firing immediately like a traditional `&lt;script&gt;` tag baked into HTML would.
+
+This means your script should:
+
+* Handle being loaded after the initial page render
+* Not assume the DOM is in a specific state when it executes
+* Use appropriate event listeners or checks to ensure required elements are available
+
+For more information about how Next.js handles script loading, see the [Next.js Script component documentation](https://nextjs.org/docs/pages/api-reference/components/script) and the [Next.js Scripts guide](https://nextjs.org/docs/app/guides/scripts).
+
+### Version requirements
+
+Script support was added to Catalyst in version 1.1. Catalyst storefronts running versions prior to 1.1 do not render scripts added through the Scripts API. Before deploying scripts, verify that the target Catalyst storefront is running version 1.1 or later.
+
+## Blueprint themes
+
+Storefront-wise, all stores have access to Stencil themes and headless storefronts. In addition to those two frameworks, older stores may use our legacy theme engine, Blueprint, which does not support rendering scripts inserted using the Scripts API or the Script manager.
+
+For more on checking which theme engine a storefront is using, see this article's section on [Scripts API and Script Manager](#scripts-api-and-script-manager).
+
+## Managing scripts using single-click app callbacks
+
+If you're using an [app-level API account](/developer/docs/overview/api-fundamentals/api-accounts#app-level-api-accounts), we recommend inserting your scripts immediately following completion of the [auth callback](/developer/docs/integrations/apps/guide/auth). The app can use the [uninstall callback](/developer/docs/integrations/apps/guide/handling-callbacks) to remove its scripts when a merchant uninstalls it, and the [remove\_user callback](/developer/docs/integrations/apps/guide/handling-callbacks) to remove any scripts related to a particular user when they lose access privileges.
+
+Your implementation may use a [store-level API account](/developer/docs/overview/api-fundamentals/api-accounts#store-level-api-accounts) to authenticate. If so, any references to app callbacks do not apply to your code.
+
+## Subresource integrity
+
+[Subresource integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is a security feature browsers use to verify that attackers have not manipulated external hosted resources, including scripts.
+
+All scripts on the checkout page need at least one SRI hash to meet [PCI 4.0 - 6.4.3 requirements](https://pcipolicies.com/blogs/news/how-to-comply-with-the-new-pci-dss-requirement-6-4-3).
+
+You can [generate SRI hashes](https://www.srihash.org/) or work with a script provider or host to generate a hash. We support all the hashing algorithms the SRI standard allows, including SHA-256, SHA-384, and SHA-512.
+The hash corresponds to the contents of the script. If you modify the contents of your script at its original location, you must generate a new hash.
+
+You can add SRI hashes through the [Script Manager](https://support.bigcommerce.com/s/article/Using-Script-Manager) or using the REST Management API's [scripts feature](/developer/api-reference/rest/admin/management/scripts).\
+For *external SRC scripts*, BigCommerce will use the provided hashes within the `integrity` attribute when we generate the `script` tag from your external SRC script. BigCommerce will also set the `crossorigin` attribute of the script to `anonymous`. This is because SRI requires that browsers don't include any credentials (like cookies or HTTP authentication) in the request when fetching the resource.
+
+A hash becomes invalid when the contents of a script change, and the script will fail to execute.
+To prevent this from happening, we support multiple hashes so that a script can always have a valid hash while the script provider updates the script.
+You should supply another hash before the contents of the script change. The browser will check each hash to see if any of them match a corresponding script.
+You can add up to five SRI hashes and remove hashes when they are no longer valid. The browser will typically check hashes starting from the leftmost hash in the `integrity` attribute and proceed to the right until it finds a match. For this reason, you can use the allotted five hashes to sort hashes in decreasing algorithmic strength so that browsers use the strongest available hash.
+
+&gt; **Note**
+&gt;
+&gt; If there is a change to the host script, you must update or add a valid hash. If no hashes match the contents of the script, the browser console will show an error that the script failed to execute.
+
+## Troubleshooting
+
+Your app installation may find itself unexpectedly missing one or more scripts. Below are some possible causes of this issue.
+
+**The merchant deleted your script**
+
+Merchants receive a warning when they attempt to delete a script belonging to an app, but they can.
+
+To determine whether the expected scripts are present, we recommend you check the [Get all scripts](/developer/api-reference/rest/admin/management/scripts/get-scripts) endpoint when your app receives the [load callback](/developer/docs/integrations/apps/guide/handling-callbacks). If they are not, you can prompt the user to click a button to repair their installation automatically.
+
+It's best practice to request the user’s permission rather than doing this automatically, as they may have had a good reason for deleting the missing script.
+
+**The merchant's theme is not set up correctly**
+
+Stencil templates must have the Handlebars expressions `{{head.scripts}}` and `{{footer.scripts}}` in the pages to render scripts. If either of these is absent, scripts on that page with location set to head or footer, respectively, will not render.
+
+To ensure your app is compatible with as many themes as possible, we recommend `{{footer.scripts}}` over `{{head.scripts}}` for the `checkout`, `order_confirmation`, and `all_pages` contexts.
+
+Read more about the [head object](/developer/docs/storefront/stencil/themes/context/object-reference/schemas#head) and [footer object](/developer/docs/storefront/stencil/themes/context/object-reference/schemas#footer).
+
+**Scripts do not render in the checkout or order confirmation contexts**
+
+To render scripts, the store must have BigCommerce’s [Optimized One-Page Checkout](https://support.bigcommerce.com/articles/Public/Optimized-Single-Page-Checkout) enabled. This is the default checkout type for all new Stencil stores. Existing stores have to change the checkout type manually. To [change the checkout type](http://login.bigcommerce.com/deep-links/manage/settings/checkout), visit the store control panel.
+
+Stencil themes from the marketplace support [Optimized One-Page Checkout (Help Center)](https://support.bigcommerce.com/articles/Public/Optimized-Single-Page-Checkout). However, there could be instances where the merchant maintains their private theme without the ability to support the optimized one-page checkout. In this case, the merchant must add the theme support, following the steps to customize [optimized one-page checkout](/developer/docs/admin/checkout-and-cart/optimized-one-page-checkout).
+
+## Resources
+
+### Endpoint and theme reference
+
+* [Scripts](/developer/api-reference/rest/admin/management/scripts)
+* [Get store information](/developer/api-reference/rest/admin/management/store-information/v3)
+* [Get all channels](/developer/api-reference/rest/admin/management/channels/get-channels)
+* [Stencil head object](/developer/docs/storefront/stencil/themes/context/object-reference/schemas#head)
+* [Stencil footer object](/developer/docs/storefront/stencil/themes/context/object-reference/schemas#footer)
+
+### Articles
+
+* [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts)
+* [OAuth Scopes](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes)
+* [Optimized One-Page Checkout](/developer/docs/admin/checkout-and-cart/optimized-one-page-checkout)
+* [Apps Guide](/developer/docs/integrations/getting-started)
+* [Apps Guide: Auth Flow](/developer/docs/integrations/apps/guide/auth)
+* [Apps Guide: Callbacks](/developer/docs/integrations/apps/guide/handling-callbacks)
+* [Multi-Storefront App Compatibility](/developer/docs/integrations/apps/optimizing-multi-storefront-apps)
+* [Subresource Integrity - SRI hashes (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
+* [PCI 4.0 - 6.4.3 requirements](https://pcipolicies.com/blogs/news/how-to-comply-with-the-new-pci-dss-requirement-6-4-3)
+
+### Help center
+
+* [Installing Apps (Help Center)](https://support.bigcommerce.com/s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel?language=en_US#installing)
+* [Optimized One-Page Checkout (Help Center)](https://support.bigcommerce.com/articles/Public/Optimized-Single-Page-Checkout#signup)
+* [Script Manager (Help Center)](https://support.bigcommerce.com/s/article/Using-Script-Manager)
+
+### Tools
+
+* [SRI Hash Generator](https://www.srihash.org/)</pre></body></html>

@@ -1,0 +1,19 @@
+{
+ "n": 56,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/payment.md",
+ "dir": "items/056-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/payment.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4437,
+ "cited_in": [
+  "BC-S-0171",
+  "BC-S-0173"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d23a7f6c5c6e218daab836bf5a4707094a3e42feb379723763ede530f564e221",
+ "raw_ext": "txt"
+}

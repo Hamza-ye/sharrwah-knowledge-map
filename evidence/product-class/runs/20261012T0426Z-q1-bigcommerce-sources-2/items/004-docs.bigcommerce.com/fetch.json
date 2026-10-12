@@ -1,0 +1,21 @@
+{
+ "n": 4,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/promotions/overview.md",
+ "dir": "items/004-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:26:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/promotions/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 8759,
+ "cited_in": [
+  "BC-S-0057",
+  "BC-S-0059",
+  "BC-S-0060",
+  "BC-S-0061"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3d90e8817ed5994b3d65e8d9c095ff0f47e817b65bf3945c73607ec6d2e5d389",
+ "raw_ext": "txt"
+}

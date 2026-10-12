@@ -1,0 +1,62 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Price Lists
+
+Populate different versions of catalog pricing and assign them to different [customer groups](/developer/api-reference/rest/admin/management/customers/v2/customer-groups) at the variant level.
+
+## Price Lists
+
+You can associate a Price List with a customer group either through the control panel or by using the [Customer Groups API](/developer/api-reference/rest/admin/management/customers/v2/customer-groups).
+
+You can create [Price List Assignments](/developer/api-reference/rest/admin/management/price-lists/price-lists-assignments/create-price-list-assignments) to assign Price Lists to a specific [channel](/developer/api-reference/rest/admin/management/channels/listings). Price Lists assigned to a channel apply to all shoppers on that channel, unless there are more specific assignments or customer group discounts set up for the shopper's customer group.
+
+If an active Price List does not contain prices for a variant, the catalog pricing will be used.
+Price Lists provide overridden price values to the Stencil storefront. You can further customize the final price display using Stencil's [handlebars objects](/developer/docs/storefront/stencil/themes/context/object-reference/schemas).
+
+To learn more about Price Lists, see [Price Lists API](/developer/docs/admin/catalog-and-inventory/pricing/price-lists).
+
+## Price Lists Assignments
+
+### Order of operations
+
+**IF** Price List assigned to current customer group **AND** Price List assigned to current channel:
+
+* Use this Price List -- any prices not found fall back to the catalog price (or in the case of multi-currency, auto-converted prices)
+
+**ELSE IF** Price List assigned to current customer group:
+
+* Use this Price List -- any prices not found fall back to the catalog price (or in the case of multi-currency, auto-converted prices)
+
+**ELSE IF** Customer group discounts:
+
+* Use them -- any prices not found fall back to the catalog price (or in the case of multi-currency, auto-converted prices)
+
+**ELSE IF** Channel has a default Price List:
+
+* Use this Price List -- any prices not found fall back to the catalog price (or in the case of multi-currency, auto-converted prices)
+
+**ELSE**:
+
+* Fall back to the catalog price (or in the case of multi-currency, auto-converted prices)
+
+## Usage notes
+
+* You cannot assign Price Lists to a customer group with customer group discounts -- You must delete the customer group discounts first.
+* Bulk pricing Tiers can additionally be associated with a price record to indicate different pricing as the quantity in the cart increases.
+* If a variant has a Price Record, any existing product-level bulk pricing will not apply to the cart. For variants without Price Records, any existing product bulk pricing will apply.
+* [Price Lists Records](/developer/api-reference/rest/admin/management/price-lists/price-lists-records) accepts bulk upsert. You can only do one bulk upsert at a time. Running more than one bulk upsert in parallel on the **same store** will cause a `429` error and the request will fail.
+* There are webhooks available for Price Lists assignments. The price list assignment webhook fires when a price list assignment is assigned, reassigned, or unassigned. Note that since Price Lists **do not** directly relate to products, neither product nor SKU webhooks are going to fire for corresponding changes, such as pricing.
+
+## Additional information
+
+### Webhooks
+
+* [Price list assignments](/developer/docs/integrations/webhooks/event-reference/channel-events#price-list-assignments)
+
+### Related endpoints
+
+* [Get All Price Lists](/developer/api-reference/rest/admin/management/price-lists/get-price-lists)</pre></body></html>

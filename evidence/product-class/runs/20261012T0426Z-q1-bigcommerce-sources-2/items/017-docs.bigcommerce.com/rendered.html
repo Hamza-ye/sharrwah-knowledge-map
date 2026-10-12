@@ -1,0 +1,182 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Product Reviews with the GraphQL Storefront API
+
+BigCommerce's GraphQL Storefront API allows you to create and query [product reviews](https://support.bigcommerce.com/s/article/Managing-Reviews) through the built-in comment system.
+
+## Store settings
+
+There are a few store settings to consider when creating a product review:
+
+* [Overall enable product reviews](https://support.bigcommerce.com/s/article/Managing-Reviews?language=en_US#enable)
+* [Only accept product reviews from past customers](https://support.bigcommerce.com/s/article/Managing-Reviews?language=en_US#enable)
+* [Enable reCAPTCHA](https://support.bigcommerce.com/s/article/Updating-Themes-with-reCAPTCHA-v2)
+
+**Overall enable product reviews**
+
+The merchant must enable this overall setting for the review submission process. Turning off this setting cancels any attempts to submit reviews.
+
+**Only accept product reviews from past customers**
+
+When the merchant enables the 'Only accept product reviews from past customers' setting, only logged-in customers (not guest shoppers) can submit a review, and they must have at least one previous order placed in the store.
+This setting ensures the merchant has a genuine customer to contact if needed. You can use the [login mutation](/developer/docs/storefront/guides/graphql-storefront-api#customer-login) to log in a customer.
+After a purchase, customers can review any item in the store. The order doesn't have to include the reviewed product.
+
+When the merchant turns off the setting, guest shoppers can also submit reviews, but they must provide an email. Since guests do not log in, they must supply the email in the request as an input parameter.
+Logged-in customers don't need to provide the email through the input parameter, as the system will use the email from the customer's account.
+If the logged-in customer provides an email as input, BigCommerce will validate the email against the email associated with the shopper's account. If the email doesn't match, the submission will fail.
+
+In all cases, you can create only one review per product an email address.
+
+**Enable reCAPTCHA**
+
+If a merchant enables the [reCAPTCHA setting](https://support.bigcommerce.com/s/article/Updating-Themes-with-reCAPTCHA-v2) on the storefront, you need to send a reCAPTCHA token with the request.
+
+## Mutation
+
+The following mutation creates a product review for a store.
+
+#### Request
+
+**`Example request: Create a product review`**
+
+```graphql title="Example request: Create a product review" showLineNumbers={false}
+mutation {
+  catalog {
+    addProductReview (
+      reCaptchaV2: "12345"
+      input: {
+        productEntityId: 81
+          review: {
+            title: "Great product"
+            text: "Would recommend"
+            author: "example author"
+            rating: 4  # integer value between 1 and 5
+            email: "name@example.com"
+        }
+      }
+    ){
+      errors {
+        ...on NotAuthorizedToAddProductReviewError {
+          message
+        }
+        ...on CustomerAlreadyReviewedProductError {
+          message
+        }
+        ...on ProductIdNotFoundError {
+          message
+        }
+        ...on InvalidInputFieldsError {
+          message fields
+        }
+        ...on Error{
+          message
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example success response: Create a product review`**
+
+```json title="Example success response: Create a product review" showLineNumbers={false}
+{
+  "data": {
+    "catalog": {
+      "addProductReview": {
+        "errors": []
+      }
+    }
+  }
+}
+```
+
+## Query
+
+You can query the product review with the `products` GraphQL node.
+
+#### Request
+
+**`Example request: Query a product review`**
+
+```graphql title="Example request: Query a product review" showLineNumbers={false}
+query {
+  site {
+    products (entityIds: [81]) {
+      edges {
+        node {
+          reviews {
+            edges {
+              node {
+                entityId
+                author {
+                  name
+                }
+                title
+                text
+                rating
+                createdAt {
+                  utc
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example response: Query a product review`**
+
+```json title="Example response: Query a product review" showLineNumbers={false}
+{
+  "data": {
+    "site": {
+      "products": {
+        "edges": [
+          {
+            "node": {
+              "reviews": {
+                "edges": [
+                  {
+                    "node": {
+                      "entityId": 3,
+                      "author": {
+                        "name": "example author"
+                      },
+                      "title": "Great product",
+                      "text": "Would recommend",
+                      "rating": 4,
+                      "createdAt": {
+                        "utc": "2024-05-15T15:16:30Z"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+## Resources
+
+* [GraphQL Storefront Playground](/developer/docs/storefront/guides/graphql-storefront-api/overview)
+* [Product Reviews (Support Article)](https://support.bigcommerce.com/s/article/Managing-Reviews)
+* [Enabling reCAPTCHA (Support Article)](https://support.bigcommerce.com/s/article/Updating-Themes-with-reCAPTCHA-v2)
+* [GraphQL Storefront API Overview - Login mutation](/developer/docs/storefront/guides/graphql-storefront-api#customer-login)</pre></body></html>

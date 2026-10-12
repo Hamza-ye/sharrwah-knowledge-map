@@ -1,0 +1,21 @@
+{
+ "n": 116,
+ "url": "https://www.commerce.com/terms/merchant-client-terms/",
+ "dir": "items/116-commerce.com",
+ "fetched_at": "2026-10-12T04:21:01Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/terms/merchant-client-terms/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0434",
+  "BC-S-0435",
+  "BC-S-0436",
+  "BC-S-0437"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

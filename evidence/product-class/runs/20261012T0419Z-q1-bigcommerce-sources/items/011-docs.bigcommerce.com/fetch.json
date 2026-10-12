@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/abandoned-cart-emails.md",
+ "dir": "items/011-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/abandoned-cart-emails.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 243,
+ "cited_in": [
+  "BC-S-0069"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "26b996055e60e841e53c20cd01cc1e3dd5b412b538866079ea06e423739e3771",
+ "raw_ext": "txt"
+}

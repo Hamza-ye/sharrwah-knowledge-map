@@ -1,0 +1,18 @@
+{
+ "n": 47,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax.md",
+ "dir": "items/047-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 327,
+ "cited_in": [
+  "BC-S-0343"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "df7303fa2d1f22f8c25068f4856070e77ca7a67d734d1ecf250f507c88a751f3",
+ "raw_ext": "txt"
+}

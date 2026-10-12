@@ -1,0 +1,18 @@
+{
+ "n": 101,
+ "url": "https://www.bigcommerce.com/payments/gateways/",
+ "dir": "items/101-bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/payments/gateways/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 24130,
+ "cited_in": [
+  "BC-S-0130"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5424cab76471e1dd826e43647bfeb4af1c885168e99eab76b04d70ef43e00be8",
+ "raw_ext": "html"
+}

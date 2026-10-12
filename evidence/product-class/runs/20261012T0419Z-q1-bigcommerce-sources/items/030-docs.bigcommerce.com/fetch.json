@@ -1,0 +1,18 @@
+{
+ "n": 30,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/order-operations.md",
+ "dir": "items/030-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/order-operations.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 353,
+ "cited_in": [
+  "BC-S-0082"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "dc10df0251ba6488d1a61bb0326891f1f9f0e5758aa668592fcb320d8dc27690",
+ "raw_ext": "txt"
+}

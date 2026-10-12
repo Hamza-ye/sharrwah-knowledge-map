@@ -1,0 +1,19 @@
+{
+ "n": 104,
+ "url": "https://www.bigcommerce.com/product/secure-web-hosting/",
+ "dir": "items/104-bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/product/secure-web-hosting/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 43416,
+ "cited_in": [
+  "BC-S-0381",
+  "BC-S-0415"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7cced49013ed7ee3b4d76177277c5ec8d4af7c0b2254927e4b8f94c72d5ed606",
+ "raw_ext": "html"
+}

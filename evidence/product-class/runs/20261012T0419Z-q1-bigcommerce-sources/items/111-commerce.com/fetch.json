@@ -1,0 +1,19 @@
+{
+ "n": 111,
+ "url": "https://www.commerce.com/terms/api-terms/",
+ "dir": "items/111-commerce.com",
+ "fetched_at": "2026-10-12T04:20:56Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/terms/api-terms/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0270",
+  "BC-S-0278"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

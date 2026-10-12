@@ -3,7 +3,7 @@
 import csv, collections, os, sys
 
 study = sys.argv[1]
-NAMES = {"shopify": "Shopify", "salla": "Salla", "woocommerce": "WooCommerce"}
+NAMES = {"shopify": "Shopify", "salla": "Salla", "woocommerce": "WooCommerce", "zid": "Zid", "bigcommerce": "BigCommerce"}
 PLACEMENT = {"where": "where it lives", "decides": "who decides", "responsible": "who is legally responsible",
              "boundary": "how it meets the rest", "reason": "stated reason"}
 KIND_ORDER = ["observation needed", "page not read", "stated only in general terms", "searched, not found"]
@@ -24,7 +24,7 @@ out = ["# Gaps to close (Q1)", "",
        "- **page not read**: a named page would likely state it, and an agent can read it.",
        "- **stated only in general terms**: the platform's terms speak only of its services in general. The clause is cited in the gap. Applying it to one concern would be inference, so it is not a statement.",
        "- **searched, not found**: the likely pages and structures were read, and none states it. Stated reasons are the most common case, because platforms rarely say why.", ""]
-for plat in ("shopify", "salla", "woocommerce"):
+for plat in ("shopify", "salla", "woocommerce", "zid", "bigcommerce"):
     gp = os.path.join(study, "platforms", plat, "gaps.tsv")
     if not os.path.exists(gp):
         continue
