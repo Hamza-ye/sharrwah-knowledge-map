@@ -9,21 +9,25 @@ import gzip, hashlib, html, os, re, sys, zlib
 
 def read_record(path, offset):
     with open(path, "rb") as f:
-        f.seek(offset)
-        d = zlib.decompressobj(16 + zlib.MAX_WBITS)   # one gzip member holds one WARC record
-        out = b""
-        while not d.eof:
-            chunk = f.read(65536)
-            if not chunk:
-                break
-            out += d.decompress(chunk)
+        return read_record_fp(f, offset)
+
+def read_record_fp(f, offset):
+    """The record at offset in a seekable fetch archive: (WARC headers, HTTP status line, HTTP headers, body)."""
+    f.seek(offset)
+    d = zlib.decompressobj(16 + zlib.MAX_WBITS)   # one gzip member holds one WARC record
+    out = b""
+    while not d.eof:
+        chunk = f.read(65536)
+        if not chunk:
+            break
+        out += d.decompress(chunk)
     head, _, rest = out.partition(b"\r\n\r\n")
     warc = dict(l.split(": ", 1) for l in head.decode("utf-8", "replace").split("\r\n")[1:] if ": " in l)
     http_head, _, body = rest.partition(b"\r\n\r\n")
     hh = http_head.decode("iso-8859-1").split("\r\n")
     headers = {l.split(":", 1)[0].strip().lower(): l.split(":", 1)[1].strip() for l in hh[1:] if ":" in l}
     if "chunked" in headers.get("transfer-encoding", "").lower():
-        body, rest, out = b"", body, None
+        body, rest = b"", body
         while True:
             size_line, _, rest = rest.partition(b"\r\n")
             size = int(size_line.split(b";")[0] or b"0", 16)
@@ -34,7 +38,7 @@ def read_record(path, offset):
     if enc == "gzip":
         body = gzip.decompress(body)
     elif enc == "br":
-        sys.exit("the body is brotli-encoded; install brotli to read it")
+        raise ValueError("the body is brotli-encoded; install brotli to read it")
     return warc, hh[0], headers, body
 
 def html_text(raw):

@@ -276,7 +276,7 @@ for plat, pfx in PLATFORMS.items():
             issues.append(("warning", "citations", cid, "not used by any inventory entry, placement or statement"))
         if re.match(r"^https?://", r["source"]):
             urls[r["source"].split("#")[0]].add(cid)
-        result, why, share = check_quote(r["quote"], r["source"]) if r["quote"] and r["source"] else ("unresolved", "no quote or source", "")
+        result, why, share = check_quote(r["quote"], r["source"], r["locator"]) if r["quote"] and r["source"] else ("unresolved", "no quote or source", "")
         quotes.append((cid, result, why, share, r["source"], r["quote"][:200]))
 
     with open(os.path.join(OUT, f"{plat}-issues.tsv"), "w", encoding="utf-8") as f:

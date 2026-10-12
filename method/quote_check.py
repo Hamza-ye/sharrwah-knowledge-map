@@ -3,7 +3,8 @@
 # <repo>[@<commit>]:<path> for a repository named in roots (observed-sh, observed-sa, woocommerce-11.2.1,
 # sharrwah-knowledge-map). Matching tries the text exactly, then with markup removed, then ignoring case and
 # Arabic diacritics, after Unicode and whitespace normalization.
-import csv, html, json, os, re, subprocess, unicodedata
+import csv, html, io, json, os, re, subprocess, sys, unicodedata
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 csv.field_size_limit(10**9)
 
@@ -83,12 +84,14 @@ class Sources:
                 for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
                     self.manifest.setdefault(r["url"].split("#")[0], (cap, r))
 
-    def local_texts(self, source):
+    def local_texts(self, source, locator=""):
         m = re.match(r"^([a-z0-9.-]+)(?:@([0-9a-f]{6,40}))?:(.+)$", source)
         if not m or m.group(1) not in self.roots:
             return None, "not a known local source"
         root, commit, rel = self.roots[m.group(1)], m.group(2), m.group(3).strip().lstrip("/")
         rel = re.sub(r"[#:]L?\d+(-L?\d+)?$", "", rel)  # a trailing line locator is not part of the path
+        if rel.endswith(".warc.gz"):
+            return self.warc_texts(root, commit, rel, locator)
         if commit:
             p = subprocess.run(["git", "-C", root, "show", f"{commit}:{rel}"], capture_output=True)
             if p.returncode != 0:
@@ -105,6 +108,30 @@ class Sources:
         if rel.endswith((".html", ".htm", ".mhtml")):
             texts.append(html_text(raw))
         return texts, ""
+
+    def warc_texts(self, root, commit, rel, locator):
+        """A record of a fetch archive, at the offset the citation's locator gives."""
+        from warc_text import read_record_fp, html_text as warc_html_text
+        off = re.search(r"(\d{3,})", locator or "")
+        if not off:
+            return None, "a fetch archive is cited with its record's offset as the locator"
+        if commit:
+            p = subprocess.run(["git", "-C", root, "show", f"{commit}:{rel}"], capture_output=True)
+            if p.returncode != 0:
+                return None, f"git show {commit}:{rel} failed in {root}"
+            fp = io.BytesIO(p.stdout)
+        else:
+            path = os.path.join(root, rel)
+            if not os.path.isfile(path):
+                return None, f"no file {path}"
+            fp = open(path, "rb")
+        try:
+            warc, status, headers, body = read_record_fp(fp, int(off.group(1)))
+        except Exception as e:
+            return None, f"no readable record at offset {off.group(1)}: {e}"
+        cs = re.search(r"charset=([\w-]+)", headers.get("content-type", ""))
+        text = body.decode(cs.group(1) if cs else "utf-8", "replace")
+        return [text, html_text(text), warc_html_text(text)], ""
 
     def web_texts(self, url):
         key = url.split("#")[0]
@@ -129,17 +156,18 @@ class Sources:
             return None, f"captured as '{r['result']}' with no readable text"
         return texts, ""
 
-    def texts(self, source):
-        if source in self.cache:
-            return self.cache[source]
-        res = self.web_texts(source) if re.match(r"^https?://", source) else self.local_texts(source)
+    def texts(self, source, locator=""):
+        key = (source, locator if source.endswith(".warc.gz") else "")
+        if key in self.cache:
+            return self.cache[key]
+        res = self.web_texts(source) if re.match(r"^https?://", source) else self.local_texts(source, locator)
         if res[0] is not None:
             res = ([v for t in res[0] for v in variants(t)], res[1])
-        self.cache[source] = res
+        self.cache[key] = res
         return res
 
-    def check_quote(self, quote, source):
-        texts, why = self.texts(source)
+    def check_quote(self, quote, source, locator=""):
+        texts, why = self.texts(source, locator)
         if texts is None:
             return "unresolved", why, ""
         qv = variants(quote)

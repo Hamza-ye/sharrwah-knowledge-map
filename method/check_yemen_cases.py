@@ -97,7 +97,7 @@ if "--pass1" in sys.argv:
             err("citations", cid, f"fetched_from '{c['fetched_from']}' is not one of {sorted(FETCHED)}")
         if cid not in used:
             err("citations", cid, "not used by any condition", "warning")
-        res, why, share = SRC.check_quote(c["quote"], src) if c["quote"] and src else ("unresolved", "no quote or source", "")
+        res, why, share = SRC.check_quote(c["quote"], src, c["locator"]) if c["quote"] and src else ("unresolved", "no quote or source", "")
         if not res.startswith("found"):
             err("citations", cid, f"quote {res}{'; ' + why if why else ''}")
         quotes.append((cid, res))
@@ -256,7 +256,7 @@ for c in cits:
             err("citations.tsv", cid, f"{col} is empty")
     if cid not in used:
         err("citations.tsv", cid, "not used by any state, today, constant or case", "warning")
-    res, why, share = SRC.check_quote(c["quote"], src) if c["quote"] and src else ("unresolved", "no quote or source", "")
+    res, why, share = SRC.check_quote(c["quote"], src, c["locator"]) if c["quote"] and src else ("unresolved", "no quote or source", "")
     if not res.startswith("found"):
         err("citations.tsv", cid, f"quote {res}{'; ' + why if why else ''}{'; best 6-word share ' + share if share else ''}")
     quotes.append((cid, res, why, share, src, c["quote"][:200]))

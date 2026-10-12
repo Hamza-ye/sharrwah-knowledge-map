@@ -20,6 +20,12 @@ Subject: who holds the merchant's funds between the buyer's payment and the merc
 
 **Live**, read 2026-10-12: https://docs.salla.dev/1973350f0.md (Settlements; same descriptions as the held operations).
 
+**Second run, 2026-10-12, after an interruption.** `method/check_subject.py` reported no error for `salla/`; the 36 unresolved quotes are live URLs awaiting capture (35 on help.salla.sa, copied from the index, and docs.salla.dev/1973350f0.md). For the gaps (brief rule 9):
+- `method/held_index.py https://s.salla.sa/payments/kyc` (G01's route): not held. G02's route names no address.
+- Read at the brief's commit, for G02: `dashboard-countries/merchant@ar` and `real-merchant@en` `items.jsonl` (242 countries; fields id, name, name_en, code, mobile_code, capital, position); `portal-countries/partner@en/items.jsonl` (240 countries; id, code, mobile_code, name, position); `settings-center/merchant@ar` `payments.json`, `payments~payment-restrictions.json`, `wallet.json` (feature `customer-wallet`) and `billing.json`; `showcase-store-payments/com-en-sa/items.jsonl` (payment-method slugs shown on merchants' storefronts).
+- Searched: `com-plans` and `com-specialplan` (ar-sa, ar-ae, en-sa, en-ae); `settings-center`, `dashboard-restrictions` and `com-llms`; all of `structures/salla` for Salla Payments, مدفوعات سلة, salla_payments and sallapay (hits in help-articles, dashboard-translations, com-policies, help-sitemaps, help-embedded-tree, docs-index, twilight-components, dashboard-importmap).
+- `dashboard-translations/{ar,en}/payments.json`, key `payment_limits`, titled حدود الدفع الإلكتروني / Transaction limits: a table with columns الدولة, منتجات ملموسة, منتجات رقمية and rows المملكة العربية السعودية, الإمارات العربية المتحدة, الكويت, البحرين, عمان, قطر, باقي الدول. No statement was taken from it.
+
 ## What I couldn't read
 
 - The answers to the four FAQ questions on salla.com/payments, among them «متى يتم تحويل المدفوعات من لوحة تحكم متجري إلى حسابي البنكي؟». They are collapsed: they are not in the held text, and the archived record holds the questions without the answers. salla.com is not among the live sources the brief allows for salla.

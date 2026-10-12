@@ -1,1 +1,35 @@
 condition_id	condition	state	place	held_at	date_basis	cite_ids	note
+YQ-C001	Buyer: bank account required to use a mobile e-wallet	not required	place not stated	2026-10-10	capture date (live page)	YE-C001	BYES e-wallet (Al-Amal Bank), on ymp.ye's e-wallet list
+YQ-C002	Buyer: pay for purchases from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C001	BYES e-wallet (Al-Amal Bank), on ymp.ye's e-wallet list
+YQ-C003	Buyer: send money transfers from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C001	BYES e-wallet (Al-Amal Bank), on ymp.ye's e-wallet list
+YQ-C004	Buyer: pay from a mobile e-wallet by SMS	available	place not stated	2026-10-10	capture date (live page)	YE-C002	BYES e-wallet (Al-Amal Bank): through the service application or via SMS
+YQ-C005	E-wallet provider: authority licensing mobile e-wallet services	Central Bank of Yemen	Central Bank of Yemen's area	2026-10-10	capture date (live page)	YE-C003	Shamil Money (Yemen Bahrain Shamil Bank) says it is provided under the Central Bank of Yemen's license
+YQ-C006	Buyer: pay for purchases from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C003	Shamil Money (Yemen Bahrain Shamil Bank)
+YQ-C007	Merchant: receive payment for sales into a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C003	Shamil Money (Yemen Bahrain Shamil Bank): pay and receive payments, the value of purchases
+YQ-C008	Buyer: send money transfers from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C003	Shamil Money (Yemen Bahrain Shamil Bank)
+YQ-C009	Buyer: pay bills and fees from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C003	Shamil Money (Yemen Bahrain Shamil Bank): utility bills
+YQ-C010	Buyer: bank account required to use a mobile e-wallet	not required	place not stated	2026-10-10	capture date (live page)	YE-C004	Shamil Money (Yemen Bahrain Shamil Bank)
+YQ-C011	Buyer: pay for purchases from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C005	Mobile Money (CAC Bank): Merchant Payments
+YQ-C012	Buyer: pay from a mobile e-wallet by SMS	available	place not stated	2026-10-10	capture date (live page)	YE-C006	Mobile Money (CAC Bank): SMS with the service command to 6464 from all networks
+YQ-C013	Buyer: bank account required to use a mobile e-wallet	not required	place not stated	2026-10-10	capture date (live page)	YE-C007	Mobile Money (CAC Bank): without needing to open a bank account, through the mobile number
+YQ-C014	Buyer: use e-wallet agents and points of sale	available	all parts of the Republic of Yemen (كافة أنحاء الجمهورية اليمنية)	2026-10-10	capture date (live page)	YE-C008	Mobile Money (CAC Bank): a wide network of points of sale and agents
+YQ-C015	Buyer: transfer money from one provider's e-wallet to another provider's e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C009	Mobile Money (CAC Bank): W2W transfers to other wallets
+YQ-C016	Buyer: deposit and withdraw cash to and from a mobile e-wallet through agents or branches	available	across the country	2026-10-10	capture date (live page)	YE-C010	Mobile Money (CAC Bank): network of agents and CAC Bank branches
+YQ-C017	Buyer: pay bills and fees from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C011	BYES e-wallet (Al-Amal Bank): phone, internet, water and electricity bills
+YQ-C018	Buyer: move money between a mobile e-wallet and a bank account	available	place not stated	2026-10-10	capture date (live page)	YE-C012	Shamil Money (Yemen Bahrain Shamil Bank): link a bank account at the bank to the wallet
+YQ-C019	Buyer: send money transfers from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C013	Mobile Money (CAC Bank): P2P
+YQ-C020	Buyer: send money from a mobile e-wallet to a phone number not registered with the wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C013	Mobile Money (CAC Bank): to any other phone number, registered or not
+YQ-C021	Buyer: move money between a mobile e-wallet and a bank account	available	place not stated	2026-10-10	capture date (live page)	YE-C014	Mobile Money (CAC Bank): W2B, and vice versa
+YQ-C022	Buyer: pay bills and fees from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C015	Mobile Money (CAC Bank): mobile, landline, internet, water, electricity, prepaid recharge
+YQ-C023	Buyer: pay bills and fees from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C016	Mobile Money (CAC Bank): university fees in Yemeni public and private universities
+YQ-C024	Buyer: withdraw cash from a mobile e-wallet at ATMs	available	place not stated	2026-10-10	capture date (live page)	YE-C017	Mobile Money (CAC Bank): cardless withdrawal at CAC Bank ATMs, by app or SMS
+YQ-C025	Buyer: use a mobile e-wallet from a basic (non-smart) phone	available	place not stated	2026-10-10	capture date (live page)	YE-C018	Mobile Money (CAC Bank): any type of mobile phone (smart or ordinary)
+YQ-C026	Business: pay salaries and bulk disbursements into mobile e-wallets	available	place not stated	2026-10-10	capture date (live page)	YE-C019	Mobile Money (CAC Bank): a means to receive salaries
+YQ-C027	Buyer: bank account required to use a mobile e-wallet	not required	place not stated	2026-10-10	capture date (live page)	YE-C020	Jawali (WeCash)
+YQ-C028	Buyer: send money transfers from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C021	Jawali (WeCash)
+YQ-C029	Business: pay salaries and bulk disbursements into mobile e-wallets	available	place not stated	2026-10-10	capture date (live page)	YE-C021	Jawali (WeCash): collective payments such as salaries and benefits
+YQ-C030	Buyer: pay for purchases from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C021	Jawali (WeCash)
+YQ-C031	Merchant: receive payment for sales into a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C021	Jawali (WeCash): collect the value of sales and dues
+YQ-C032	Buyer: pay bills and fees from a mobile e-wallet	available	place not stated	2026-10-10	capture date (live page)	YE-C021	Jawali (WeCash): mobile balance, internet, landline, fees
+YQ-C033	Buyer: deposit and withdraw cash to and from a mobile e-wallet through agents or branches	available	throughout Yemen	2026-10-10	capture date (live page)	YE-C022	Jawali (WeCash): any authorized agent, or branches of partners Al-Najm, Al-Imtiaz, Yemen Express
+YQ-C034	Buyer: documents required to open a mobile e-wallet	an active mobile number and a valid ID card (Yemenis), or a valid passport and residency (non-Yemenis)	place not stated	2026-10-10	capture date (live page)	YE-C023	Jawali (WeCash): conditions for subscribing

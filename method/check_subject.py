@@ -161,7 +161,7 @@ for plat, code in PLATFORMS.items():
                 if (ic["source"], ic["quote"]) != (nc["source"], nc["quote"]):
                     err(f, sid, f"the copied citation {cs[0]} changed the index citation {m.group(2)}'s source or quote")
         if cs and cs[0] in cit and r["statement"]:
-            res, why, share = SRC.check_quote(r["statement"], cit[cs[0]]["source"])
+            res, why, share = SRC.check_quote(r["statement"], cit[cs[0]]["source"], cit[cs[0]]["locator"])
             if not res.startswith("found"):
                 err(f, sid, f"statement not found verbatim in {cs[0]}'s source ({res}{'; ' + why if why else ''})",
                     "pending capture" if res == "unresolved" and re.match(r"^https?://", cit[cs[0]]["source"]) else "error")
@@ -223,7 +223,7 @@ for plat, code in PLATFORMS.items():
             err(f, cid, "not used by any statement, term or absence", "warning")
         if re.match(r"^https?://", src):
             urls[src.split("#")[0]].add(cid)
-        res, why, share = SRC.check_quote(c["quote"], src) if c["quote"] and src else ("unresolved", "no quote or source", "")
+        res, why, share = SRC.check_quote(c["quote"], src, c["locator"]) if c["quote"] and src else ("unresolved", "no quote or source", "")
         if not res.startswith("found"):
             err(f, cid, f"quote {res}{'; ' + why if why else ''}",
                 "pending capture" if res == "unresolved" and re.match(r"^https?://", src) else "error")
