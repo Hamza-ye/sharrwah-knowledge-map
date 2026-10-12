@@ -10,13 +10,14 @@ This is `PLAN.md` Stage 2, the pilot. You are one agent with one task, for one p
 - what your platform calls the buyer's payment, and where it says that happens;
 - what it calls the merchant's payout, and where it says that happens.
 
-If it names no payout, or several, record what it names.
+If it names no payout, record that. If it names several, record each: each one bounds the interval.
 
 **What bears on the subject:** any statement by your platform, or by an agreement its terms incorporate, that says one of these about the merchant's money between the two ends:
 - **(a)** who or what holds or controls it;
 - **(b)** under whose account, licence or terms it is held;
 - **(c)** when, or on what conditions, it is released to the merchant or held back;
-- **(d)** that your platform has no part in it.
+- **(d)** that your platform has no part in it;
+- **(e)** where, or for whom, an arrangement under (a) to (c) is offered: the countries, plans, business types or other conditions the platform states.
 
 **Your task:** collect everything your platform states that bears on the subject, in its own words, and record what it doesn't state. Don't compare it with any other platform, and don't judge it.
 
@@ -53,7 +54,7 @@ Its statements were already checked verbatim against their sources, and its gaps
 
 ## Rules
 
-1. **A statement** is your platform's own words or data, copied verbatim. It carries the platform's identifiers where it has them, such as a key, scope, route, plan name or section heading. Never use a category name of ours.
+1. **A statement** is your platform's own words or data, or those of an agreement its terms incorporate, copied verbatim. It carries the platform's identifiers where it has them, such as a key, scope, route, plan name or section heading. Never use a category name of ours.
 2. **Placement.** Give each statement the one question it answers:
    - `where`: where the platform puts it in its own organization;
    - `decides`: what turns it on or off, limits it, or sets its value;
@@ -77,12 +78,14 @@ Its statements were already checked verbatim against their sources, and its gaps
 6. **Terms.** Record each word your platform uses for the money, for who holds it, and for the two ends:
    - quote the platform's own definition where it gives one;
    - where the platform gives its own translation of the term, such as an Arabic and an English page for the same thing, quote that too.
-7. **Absences.** Absence counts only from a complete list your platform publishes, whose own words present it as the full set. Record such an absence in `absences.tsv`, citing:
+7. **Bullets.** Give each statement every bullet it fits, such as `a;c`.
+   - A statement under (e) names, in `conditions`, the `stmt_id`s of the (a) to (c) statements whose arrangement it conditions.
+8. **Absences.** Absence counts only from a complete list your platform publishes, whose own words present it as the full set. Record such an absence in `absences.tsv` under the bullet it bears on, citing:
    - the list;
    - the words that make it complete.
 
    Anything else your platform doesn't state is a gap.
-8. **Gaps.** Make one gap for each of (a) to (d) that your platform doesn't state, and one for each end it doesn't name.
+9. **Gaps.** Make one gap for each of (a), (b), (c) and (e) that your platform doesn't state, and one for each end it doesn't name. Bullet (d) needs no gap.
    - `read`: list what you read looking for it. Write held paths with their commit, and live URLs with the date you read them.
    - `gap_kind`, as Q1 defines them:
      - `page not read`: a named page or file that would likely state it hasn't been read yet;
@@ -91,9 +94,9 @@ Its statements were already checked verbatim against their sources, and its gaps
      - `stated only in general terms`: the terms speak only of the platform's services in general.
    - `who_can`: `agent`, `founder` or `either`.
    - Before you give a gap `founder` or `either`, run `method/held_index.py` on each address in its route. If the page is held and readable, read it instead.
-9. **Credentials.** Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. Never skip, withhold or mask a file because of them. They come from synthetic environments the founder rotates.
-10. **No inference, anywhere.** Notes record what was read, what couldn't be read, and problems. They never record inference.
-11. **Stop and report** past 150 statements.
+10. **Credentials.** Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. Never skip, withhold or mask a file because of them. They come from synthetic environments the founder rotates.
+11. **No inference, anywhere.** Notes record what was read, what couldn't be read, and problems. They never record inference.
+12. **Stop and report** past 150 statements.
 
 ## Quotes and citations
 
@@ -112,10 +115,10 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 
 | File | Columns |
 | --- | --- |
-| `statements.tsv` | `stmt_id` (S01-XX-001…) · `bullet` (`a`–`d`, or `end` for a statement naming an end) · `placement` · `identifier` · `statement` · `scope` · `marker` · `cite_ids` · `from` (`index:<concern_id>:<index cite_id>`, or `new`) · `note` |
+| `statements.tsv` | `stmt_id` (S01-XX-001…) · `bullet` (every bullet it fits, `;`-separated: `a`–`e`, or `end` for a statement naming an end) · `placement` · `identifier` · `statement` · `scope` · `marker` · `conditions` (for (e): the stmt_ids it conditions) · `cite_ids` · `from` (`index:<concern_id>:<index cite_id>`, or `new`) · `note` |
 | `terms.tsv` | `term` · `translation` (verbatim, or empty) · `definition` (verbatim, or empty) · `cite_ids` |
-| `absences.tsv` | `absence_id` (S01-XX-N01…) · `what_is_absent` · `list_cite_ids` · `complete_cite_ids` · `note` |
-| `gaps.tsv` | `gap_id` (S01-XX-G01…) · `bullet` (`a`–`d` or `end`) · `what_is_missing` · `read` · `gap_kind` · `who_can` · `route` |
+| `absences.tsv` | `absence_id` (S01-XX-N01…) · `bullet` · `what_is_absent` · `list_cite_ids` · `complete_cite_ids` · `note` |
+| `gaps.tsv` | `gap_id` (S01-XX-G01…) · `bullet` (`a`, `b`, `c`, `e` or `end`) · `what_is_missing` · `read` · `gap_kind` · `who_can` · `route` |
 | `citations.tsv` | `cite_id` (S01-XX-C001…) · `source` · `locator` · `quote` · `source_date` · `date_basis` · `accessed` · `access_path` (`md`, `raw`, `rendered` or `local`) |
 | `notes.md` | What you read; what you couldn't read; problems with the method. |
 
