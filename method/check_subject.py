@@ -1,14 +1,18 @@
 # Checks a subject's files (PLAN.md Stages 2 and 4) against its briefs in studies/subjects/<id>/briefs/:
-# phase A per platform (statements, terms, gaps, citations), phase B (variation points, variants), phase C
-# (analysis), step 2 (Yemen marks) and step 3 (rows), as far as they exist. It checks files and columns, ids and
-# the ids each file cites, and that every statement and quote is found verbatim in its cited source. It also lists
-# the cited URLs that need capturing.
+# phase A per platform (statements, terms, absences, gaps, citations), phase A2 (a2.tsv), phase B (variation
+# points, variants), phase C (analysis), step 2 (Yemen marks) and step 3 (rows), as far as they exist.
+# It checks files and columns, ids and every id a file cites, that statements and quotes are verbatim in their
+# sources, that a variant is an excerpt of its statements, that copied index citations are unchanged, and that no
+# gap goes to the founder for a page that is held. It writes the subject's kinds.tsv (each statement's kind, by
+# rule: method/source_kinds.py) and lists the cited URLs that need capturing.
 #
 # Usage: python3 -I method/check_subject.py SUBJECT_DIR OUT [CAPTURE_RUN ...]
-import csv, json, os, re, sys
+import csv, glob, json, os, re, sys
 from collections import Counter, defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from quote_check import Sources
+from quote_check import Sources, variants as text_variants
+from source_kinds import kind_of
+from held_index import Held, describe, names_a_source, urls_in
 
 subj, OUT = sys.argv[1].rstrip("/"), sys.argv[2]
 CAPTURES = sys.argv[3:]
@@ -21,25 +25,39 @@ ROOTS = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
          "woocommerce-11.2.1": os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce"),
          "sharrwah-knowledge-map": SKM}
 SRC = Sources(ROOTS, CAPTURES)
+HELD = Held(ROOTS, sorted(glob.glob(os.path.join(SKM, "evidence/product-class/runs/*"))) + CAPTURES)
 PLATFORMS = {"shopify": "SH", "salla": "SA", "woocommerce": "WC", "zid": "ZD", "bigcommerce": "BC"}
+BULLETS = {"a", "b", "c", "d", "end"}
 PLACEMENTS = {"where", "decides", "responsible", "boundary", "reason"}
 GAP_KINDS = {"page not read", "observation needed", "searched, not found", "stated only in general terms"}
+WHO = {"agent", "founder", "either"}
 ACCESS = {"md", "raw", "rendered", "local"}
 BASES = {"term", "identifiers", "definition", "answers"}
 KINDS = {"observed", "shipped", "stated", "official page"}
-CAUSES = {"market, named rule", "market, pattern", "vendor choice", "maturity", "business model", "unknown"}
+CAUSES = ["no difference", "market, named rule", "maturity", "business model", "market, pattern", "vendor choice", "unknown"]
+LETTERS = {"A", "B", "C", "D", "unknown"}
+RULES = {"the platform carries all the variants at once",
+         "a variation point behind one interface, bound per market, store or plan",
+         "bound per product", "a variation point bound per market",
+         "a decision for the founder, on a recommendation", "left to the build",
+         "kept open as a variation point until evidence settles it"}
+FOUNDER_RULE = "a decision for the founder, on a recommendation"
 MARKS = {"carried unchanged", "carried with configuration", "carried only with a partner", "no placement", "unknown"}
+WHEN = {"before build", "before release", "later", "unclear"}
 HEAD = {
-    "statements.tsv": ["stmt_id", "placement", "identifier", "statement", "scope", "cite_ids", "from", "note"],
-    "terms.tsv": ["term", "definition", "cite_ids"],
-    "gaps.tsv": ["gap_id", "what_is_missing", "read", "gap_kind", "who_can", "route"],
+    "statements.tsv": ["stmt_id", "bullet", "placement", "identifier", "statement", "scope", "marker", "cite_ids", "from", "note"],
+    "terms.tsv": ["term", "translation", "definition", "cite_ids"],
+    "absences.tsv": ["absence_id", "what_is_absent", "list_cite_ids", "complete_cite_ids", "note"],
+    "gaps.tsv": ["gap_id", "bullet", "what_is_missing", "read", "gap_kind", "who_can", "route"],
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "accessed", "access_path"],
-    "variation-points.tsv": ["vp_id", "question", "raised_by", "note"],
-    "variants.tsv": ["vp_id", "platform", "variant", "stmt_ids", "basis", "kind", "scope", "gap_ids", "note"],
-    "analysis.tsv": ["vp_id", "cause", "cause_basis", "cause_reading", "coexistence", "coexistence_basis",
+    "a2.tsv": ["vp_id", "stmt_ids", "gap_ids", "read"],
+    "variation-points.tsv": ["vp_id", "bullet", "question", "x_words", "raised_by", "note"],
+    "variants.tsv": ["variant_id", "vp_id", "platform", "variant", "stmt_ids", "basis", "basis_evidence", "kind", "scope",
+                     "gap_ids", "note"],
+    "analysis.tsv": ["vp_id", "cause", "cause_basis", "scopes_compared", "cause_reading", "coexistence", "coexistence_basis",
                      "general_variant", "follows", "expensive_because", "founder_item", "note"],
-    "yemen-marks.tsv": ["vp_id", "case_id", "mark", "variant_used", "condition_stmt_ids", "case_evidence",
-                        "product_gap", "moves", "what_would_show_it", "note"],
+    "yemen-marks.tsv": ["vp_id", "case_id", "mark", "variant_id", "condition_stmt_ids", "case_evidence", "product_gap",
+                        "moves", "what_would_show_it", "note"],
     "rows.tsv": ["row_id", "touches", "vp_ids", "who_answers", "when", "time_bombs", "basis", "what_would_settle_it", "note"],
 }
 issues, quotes, urls = [], [], defaultdict(set)
@@ -62,7 +80,7 @@ def read(path, name, check_head=True):
     for n, row in enumerate(rows[1:], start=2):
         if not any(c.strip() for c in row):
             continue
-        if len(row) != len(head):
+        if check_head and len(row) != len(head):
             err(name, f"line {n}", f"{len(row)} fields, header has {len(head)}")
         out.append({h: (row[k].strip() if k < len(row) else "") for k, h in enumerate(head)})
     return out
@@ -78,8 +96,13 @@ def unique(name, recs, key, pat):
         if not re.match(pat, r[key]):
             err(name, r[key], f"id doesn't match {pat}")
 
+def contained(part, whole):
+    """Is part a verbatim excerpt of whole, after the same normalization quotes get?"""
+    pv, wv = text_variants(part), text_variants(whole)
+    return any(p[1] and p[1] in w[1] for p, w in zip(pv, wv))
+
 # ---------- phase A, per platform ----------
-stmts, gaps, terms_of = {}, {}, {}
+stmts, gaps, cit_all, kinds = {}, {}, {}, {}
 for plat, code in PLATFORMS.items():
     d = os.path.join(subj, plat)
     if not os.path.isdir(d):
@@ -87,153 +110,237 @@ for plat, code in PLATFORMS.items():
     pre = f"{SID}-{code}"
     st = read(os.path.join(d, "statements.tsv"), f"{plat}/statements.tsv") or []
     tm = read(os.path.join(d, "terms.tsv"), f"{plat}/terms.tsv") or []
+    ab = read(os.path.join(d, "absences.tsv"), f"{plat}/absences.tsv")
     gp = read(os.path.join(d, "gaps.tsv"), f"{plat}/gaps.tsv") or []
     ct = read(os.path.join(d, "citations.tsv"), f"{plat}/citations.tsv") or []
+    if ab is None:
+        err(f"{plat}/absences.tsv", "", "file missing (a header row alone is fine)")
+        ab = []
     unique(f"{plat}/statements.tsv", st, "stmt_id", rf"^{pre}-\d{{3}}$")
     unique(f"{plat}/gaps.tsv", gp, "gap_id", rf"^{pre}-G\d{{2}}$")
+    unique(f"{plat}/absences.tsv", ab, "absence_id", rf"^{pre}-N\d{{2}}$")
     unique(f"{plat}/citations.tsv", ct, "cite_id", rf"^{pre}-C\d{{3,4}}$")
     if not os.path.exists(os.path.join(d, "notes.md")):
         err(f"{plat}/notes.md", "", "file missing")
     cit = {c["cite_id"]: c for c in ct}
-    index = os.path.join(SKM, "studies/concern-map/platforms", plat, "concerns.tsv")
-    concerns = {r["concern_id"] for r in (read(index, "concerns.tsv", False) or [])} if os.path.exists(index) else set()
+    cit_all.update(cit)
+    qdir = os.path.join(SKM, "studies/concern-map/platforms", plat)
+    concerns = {r["concern_id"] for r in (read(os.path.join(qdir, "concerns.tsv"), "concerns.tsv", False) or [])}
+    index_cits = {r["cite_id"]: r for r in (read(os.path.join(qdir, "citations.tsv"), "citations.tsv", False) or [])}
     used = set()
     for r in st:
         sid = r["stmt_id"]
         stmts[sid] = dict(r, platform=plat)
+        f = f"{plat}/statements.tsv"
+        if r["bullet"] not in BULLETS:
+            err(f, sid, f"bullet '{r['bullet']}' is not one of a, b, c, d or end")
         if r["placement"] not in PLACEMENTS:
-            err(f"{plat}/statements.tsv", sid, f"placement '{r['placement']}' is not one of {sorted(PLACEMENTS)}")
+            err(f, sid, f"placement '{r['placement']}' is not one of {sorted(PLACEMENTS)}")
         if not r["statement"]:
-            err(f"{plat}/statements.tsv", sid, "statement is empty")
-        frm = r["from"]
-        if frm != "new" and not (frm.startswith("index:") and frm[6:] in concerns):
-            err(f"{plat}/statements.tsv", sid, f"from '{frm}' is neither 'new' nor index:<a concern of the Q1 index>")
+            err(f, sid, "statement is empty")
         cs = ids(r["cite_ids"])
         if not cs:
-            err(f"{plat}/statements.tsv", sid, "no citation")
+            err(f, sid, "no citation")
         for c in cs:
             used.add(c)
             if c not in cit:
-                err(f"{plat}/statements.tsv", sid, f"cite_id {c} not in citations")
+                err(f, sid, f"cite_id {c} not in citations")
+        frm = r["from"]
+        if frm != "new":
+            m = re.match(r"^index:([^:]+):([^:]+)$", frm)
+            if not m or m.group(1) not in concerns or m.group(2) not in index_cits:
+                err(f, sid, f"from '{frm}' is neither 'new' nor index:<concern_id>:<index cite_id> of the Q1 index")
+            elif cs and cs[0] in cit:
+                ic, nc = index_cits[m.group(2)], cit[cs[0]]
+                if (ic["source"], ic["quote"]) != (nc["source"], nc["quote"]):
+                    err(f, sid, f"the copied citation {cs[0]} changed the index citation {m.group(2)}'s source or quote")
         if cs and cs[0] in cit and r["statement"]:
             res, why, share = SRC.check_quote(r["statement"], cit[cs[0]]["source"])
             if not res.startswith("found"):
-                err(f"{plat}/statements.tsv", sid, f"statement not found verbatim in {cs[0]}'s source ({res}{'; ' + why if why else ''})")
+                err(f, sid, f"statement not found verbatim in {cs[0]}'s source ({res}{'; ' + why if why else ''})",
+                    "pending capture" if res == "unresolved" and re.match(r"^https?://", cit[cs[0]]["source"]) else "error")
+        ks = sorted({kind_of(cit[c]["source"], ROOTS)[0] for c in cs if c in cit})
+        kinds[sid] = (";".join(ks), "; ".join(kind_of(cit[c]["source"], ROOTS)[1] for c in cs[:1] if c in cit))
+        if "unknown" in ks:
+            err(f, sid, "a citation's kind is unknown under method/source_kinds.py", "review")
     for t in tm:
-        for c in ids(t["cite_ids"]):
+        cs = ids(t["cite_ids"])
+        if not cs:
+            err(f"{plat}/terms.tsv", t["term"][:30], "no citation")
+        for c in cs:
             used.add(c)
             if c not in cit:
                 err(f"{plat}/terms.tsv", t["term"][:30], f"cite_id {c} not in citations")
-        if not ids(t["cite_ids"]):
-            err(f"{plat}/terms.tsv", t["term"][:30], "no citation")
-    terms_of[plat] = tm
+    for a in ab:
+        for col in ("list_cite_ids", "complete_cite_ids"):
+            if not ids(a[col]):
+                err(f"{plat}/absences.tsv", a["absence_id"], f"{col} is empty")
+            for c in ids(a[col]):
+                used.add(c)
+                if c not in cit:
+                    err(f"{plat}/absences.tsv", a["absence_id"], f"cite_id {c} not in citations")
     for g in gp:
-        gaps[g["gap_id"]] = dict(g, platform=plat)
+        gid, f = g["gap_id"], f"{plat}/gaps.tsv"
+        gaps[gid] = dict(g, platform=plat)
+        if g["bullet"] not in BULLETS:
+            err(f, gid, f"bullet '{g['bullet']}' is not one of a, b, c, d or end")
         if g["gap_kind"] not in GAP_KINDS:
-            err(f"{plat}/gaps.tsv", g["gap_id"], f"gap_kind '{g['gap_kind']}' is not one of {sorted(GAP_KINDS)}")
-        if g["who_can"] not in ("agent", "founder"):
-            err(f"{plat}/gaps.tsv", g["gap_id"], f"who_can '{g['who_can']}' is not agent or founder")
+            err(f, gid, f"gap_kind '{g['gap_kind']}' is not one of {sorted(GAP_KINDS)}")
+        if g["who_can"] not in WHO:
+            err(f, gid, f"who_can '{g['who_can']}' is not one of {sorted(WHO)}")
         if not g["read"]:
-            err(f"{plat}/gaps.tsv", g["gap_id"], "read is empty: list each path or URL read")
+            err(f, gid, "read is empty: list each path or URL read")
+        if g["gap_kind"] == "searched, not found" and not names_a_source(g["read"]):
+            err(f, gid, "a 'searched, not found' names what it read")
+        if g["who_can"] in ("founder", "either"):
+            for u in urls_in(g["route"]):
+                held = [h for h in HELD.lookup(u) if h["readable"]]
+                if held:
+                    err(f, gid, f"{u} is held at {describe(held[0])}: read it instead of routing it to the founder")
     for c in ct:
-        cid, src = c["cite_id"], c["source"]
+        cid, src, f = c["cite_id"], c["source"], f"{plat}/citations.tsv"
         if c["access_path"] not in ACCESS:
-            err(f"{plat}/citations.tsv", cid, f"access_path '{c['access_path']}' is not one of {sorted(ACCESS)}")
+            err(f, cid, f"access_path '{c['access_path']}' is not one of {sorted(ACCESS)}")
         if re.match(r"^(observed-sh|observed-sa)(?!@[0-9a-f]{7,40}:)", src):
-            err(f"{plat}/citations.tsv", cid, "a local source names its repository at a commit")
+            err(f, cid, "a local source names its repository at a commit")
         if "..." in c["quote"] or "…" in c["quote"]:
-            err(f"{plat}/citations.tsv", cid, "quote contains an ellipsis")
+            err(f, cid, "quote contains an ellipsis")
         if len(c["quote"]) > 300:
-            err(f"{plat}/citations.tsv", cid, f"quote is {len(c['quote'])} characters; the brief allows 300")
-        for col in ("source_date", "date_basis", "accessed"):
+            err(f, cid, f"quote is {len(c['quote'])} characters; the brief allows 300", "warning")
+        for col in ("locator", "source_date", "date_basis", "accessed"):
             if not c[col]:
-                err(f"{plat}/citations.tsv", cid, f"{col} is empty")
+                err(f, cid, f"{col} is empty")
         if cid not in used:
-            err(f"{plat}/citations.tsv", cid, "not used by any statement or term", "warning")
+            err(f, cid, "not used by any statement, term or absence", "warning")
         if re.match(r"^https?://", src):
             urls[src.split("#")[0]].add(cid)
         res, why, share = SRC.check_quote(c["quote"], src) if c["quote"] and src else ("unresolved", "no quote or source", "")
         if not res.startswith("found"):
-            err(f"{plat}/citations.tsv", cid, f"quote {res}{'; ' + why if why else ''}",
-                "error" if res == "not found" or not re.match(r"^https?://", src) else "pending capture")
+            err(f, cid, f"quote {res}{'; ' + why if why else ''}",
+                "pending capture" if res == "unresolved" and re.match(r"^https?://", src) else "error")
         quotes.append((cid, res, why, share, src, c["quote"][:200]))
+if stmts:
+    with open(os.path.join(subj, "kinds.tsv"), "w", encoding="utf-8") as f:
+        f.write("stmt_id\tkind\trule\n")
+        for sid, (k, why) in kinds.items():
+            f.write(f"{sid}\t{k}\t{why}\n")
 
 # ---------- phase B ----------
 vps = read(os.path.join(subj, "variation-points.tsv"), "variation-points.tsv")
 var = read(os.path.join(subj, "variants.tsv"), "variants.tsv")
-vp_ids = set()
+vp = {}
 if vps is not None:
     unique("variation-points.tsv", vps, "vp_id", rf"^{SID}-VP-\d{{2}}$")
-    vp_ids = {v["vp_id"] for v in vps}
+    vp = {v["vp_id"]: v for v in vps}
     if len(vps) > 25:
         err("variation-points.tsv", "", f"{len(vps)} variation points: the brief says stop and report past 25")
     for v in vps:
+        i = v["vp_id"]
+        if v["bullet"] not in ("a", "b", "c"):
+            err("variation-points.tsv", i, f"bullet '{v['bullet']}' is not a, b or c")
         if not re.match(r"(?i)^(who|what)\b", v["question"]):
-            err("variation-points.tsv", v["vp_id"], "the question doesn't take the form 'who or what fills X'", "warning")
+            err("variation-points.tsv", i, "the question doesn't take the form 'who or what fills X'")
+        if not v["x_words"]:
+            err("variation-points.tsv", i, "x_words is empty")
         if not ids(v["raised_by"]):
-            err("variation-points.tsv", v["vp_id"], "raised_by is empty")
+            err("variation-points.tsv", i, "raised_by is empty")
         for s in ids(v["raised_by"]):
             if s not in stmts:
-                err("variation-points.tsv", v["vp_id"], f"raised_by {s} is not a statement")
+                err("variation-points.tsv", i, f"raised_by {s} is not a statement")
+            elif stmts[s]["bullet"] != v["bullet"]:
+                err("variation-points.tsv", i, f"raised_by {s} is under bullet {stmts[s]['bullet']}, not {v['bullet']}")
 if var is not None:
+    unique("variants.tsv", var, "variant_id", rf"^{SID}-V-\d{{3}}$")
     seen = set()
     for r in var:
-        key = f"{r['vp_id']}/{r['platform']}"
-        seen.add((r["vp_id"], r["platform"]))
-        if r["vp_id"] not in vp_ids:
-            err("variants.tsv", key, "vp_id not in variation-points.tsv")
-        if r["platform"] not in PLATFORMS:
-            err("variants.tsv", key, "platform is not one of the five")
+        i, plat = r["variant_id"], r["platform"]
+        seen.add((r["vp_id"], plat))
+        if r["vp_id"] not in vp:
+            err("variants.tsv", i, "vp_id not in variation-points.tsv")
+        if plat not in PLATFORMS:
+            err("variants.tsv", i, "platform is not one of the five")
         if r["variant"] == "gap":
             if not ids(r["gap_ids"]):
-                err("variants.tsv", key, "a gap variant names its gap_ids")
+                err("variants.tsv", i, "a gap variant names its gap_ids")
             for g in ids(r["gap_ids"]):
-                if gaps.get(g, {}).get("platform") != r["platform"]:
-                    err("variants.tsv", key, f"gap {g} is not one of {r['platform']}'s gaps")
+                if gaps.get(g, {}).get("platform") != plat:
+                    err("variants.tsv", i, f"gap {g} is not one of {plat}'s gaps")
+                elif r["vp_id"] in vp and gaps[g]["bullet"] != vp[r["vp_id"]]["bullet"]:
+                    err("variants.tsv", i, f"gap {g} is under bullet {gaps[g]['bullet']}, not the variation point's")
         elif r["variant"] != "not covered":
-            if r["basis"] not in BASES:
-                err("variants.tsv", key, f"basis '{r['basis']}' is not one of {sorted(BASES)}")
-            for k in [x.strip() for x in r["kind"].split(";") if x.strip()] or [""]:
-                if k not in KINDS:
-                    err("variants.tsv", key, f"kind '{k}' is not one of {sorted(KINDS)}")
-            if not ids(r["stmt_ids"]):
-                err("variants.tsv", key, "no stmt_ids")
-            for s in ids(r["stmt_ids"]):
-                if stmts.get(s, {}).get("platform") != r["platform"]:
-                    err("variants.tsv", key, f"{s} is not one of {r['platform']}'s statements")
-    for v in vp_ids:
+            bs = [b.strip() for b in r["basis"].split(";") if b.strip()]
+            if not bs or any(b not in BASES for b in bs):
+                err("variants.tsv", i, f"basis '{r['basis']}' is not one or more of {sorted(BASES)}")
+            if not r["basis_evidence"]:
+                err("variants.tsv", i, "basis_evidence is empty")
+            sids = ids(r["stmt_ids"])
+            if not sids:
+                err("variants.tsv", i, "no stmt_ids")
+            for s in sids:
+                if stmts.get(s, {}).get("platform") != plat:
+                    err("variants.tsv", i, f"{s} is not one of {plat}'s statements")
+            if sids and all(s in stmts for s in sids) and not any(contained(r["variant"], stmts[s]["statement"]) for s in sids):
+                err("variants.tsv", i, "the variant is not a verbatim excerpt of any of its statements")
+            want = sorted({k for s in sids if s in kinds for k in kinds[s][0].split(";") if k})
+            got = sorted({k.strip() for k in r["kind"].split(";") if k.strip()})
+            if want and got != want:
+                err("variants.tsv", i, f"kind '{r['kind']}' differs from kinds.tsv's {';'.join(want)}")
+    for v in vp:
         for p in PLATFORMS:
             if os.path.isdir(os.path.join(subj, p)) and (v, p) not in seen:
                 err("variants.tsv", f"{v}/{p}", "no row for this variation point and platform")
     placed = {s for r in var for s in ids(r["stmt_ids"])}
-    unplaced = [s for s in stmts if s not in placed]
+    unplaced = [s for s in stmts if s not in placed and stmts[s]["bullet"] in ("a", "b", "c", "d")]
     if unplaced:
-        err("variants.tsv", "", f"{len(unplaced)} phase A statements are under no variation point: {', '.join(unplaced[:12])}", "review")
+        err("variants.tsv", "", f"{len(unplaced)} statements under bullets a to d are under no variation point: "
+                                f"{', '.join(unplaced[:12])}", "review")
+for plat in PLATFORMS:
+    a2 = read(os.path.join(subj, plat, "a2.tsv"), f"{plat}/a2.tsv")
+    for r in a2 or []:
+        if r["vp_id"] not in vp:
+            err(f"{plat}/a2.tsv", r["vp_id"], "not a variation point")
+        for s in ids(r["stmt_ids"]):
+            if s not in stmts:
+                err(f"{plat}/a2.tsv", r["vp_id"], f"{s} is not a statement")
+        for g in ids(r["gap_ids"]):
+            if g not in gaps:
+                err(f"{plat}/a2.tsv", r["vp_id"], f"{g} is not a gap")
+        if not r["read"]:
+            err(f"{plat}/a2.tsv", r["vp_id"], "read is empty")
 
 # ---------- phase C ----------
 ana = read(os.path.join(subj, "analysis.tsv"), "analysis.tsv")
+variant_ids = {r["variant_id"] for r in (var or [])}
 founder_items = []
 if ana is not None:
     for k, n in Counter(r["vp_id"] for r in ana).items():
         if n > 1:
             err("analysis.tsv", k, f"{n} rows for one variation point")
-    for v in vp_ids - {r["vp_id"] for r in ana}:
+    for v in set(vp) - {r["vp_id"] for r in ana}:
         err("analysis.tsv", v, "no analysis row")
     for r in ana:
         v = r["vp_id"]
         if r["cause"] not in CAUSES:
-            err("analysis.tsv", v, f"cause '{r['cause']}' is not one of {sorted(CAUSES)}")
-        if r["cause"] != "unknown" and not r["cause_reading"].startswith("Reading:"):
+            err("analysis.tsv", v, f"cause '{r['cause']}' is not one of {CAUSES}")
+        if r["cause"] not in ("unknown", "no difference") and not r["cause_reading"].startswith("Reading:"):
             err("analysis.tsv", v, "cause_reading doesn't start with 'Reading:'")
         for col in ("cause_basis", "coexistence_basis"):
             for s in ids(r[col]):
-                if s not in stmts:
-                    err("analysis.tsv", v, f"{col} {s} is not a statement")
-        co = r["coexistence"]
-        if not (co in ("A", "B", "C", "D") or all(re.match(r"^\s*\w+\s*=\s*[ABCD]\s*$", x) for x in co.split(";") if x.strip())):
-            err("analysis.tsv", v, f"coexistence '{co}' is not A–D, or per platform as 'shopify=B; salla=D'")
-        if bool(r["founder_item"]) != ("founder" in r["follows"]):
-            err("analysis.tsv", v, "a founder_item is given exactly when what follows is a decision for the founder")
+                if s not in stmts and s not in variant_ids:
+                    err("analysis.tsv", v, f"{col} {s} is not a statement or variant")
+        parts = [x.strip() for x in r["coexistence"].split(";") if x.strip()]
+        if not parts or not all(re.match(r"^(\w+)\s*=\s*(A|B|C|D|unknown)$", x) and x.split("=")[0].strip() in PLATFORMS
+                                for x in parts):
+            err("analysis.tsv", v, f"coexistence '{r['coexistence']}' is not one letter per platform, as 'shopify=B; salla=D'")
+        if r["general_variant"] and r["general_variant"] not in variant_ids:
+            err("analysis.tsv", v, f"general_variant {r['general_variant']} is not a variant")
+        fol = [x.strip() for x in r["follows"].split(";") if x.strip()]
+        if fol != ["none applies"] and (not fol or any(x not in RULES for x in fol)):
+            err("analysis.tsv", v, "follows is not 'none applies' or rules in exactly the table's words")
+        if bool(r["founder_item"]) != (FOUNDER_RULE in fol):
+            err("analysis.tsv", v, "a founder_item is given exactly when a decision for the founder follows")
+        if not r["expensive_because"]:
+            err("analysis.tsv", v, "expensive_because is empty")
         if r["founder_item"]:
             founder_items.append((v, r["founder_item"]))
 
@@ -241,22 +348,20 @@ if ana is not None:
 marks = read(os.path.join(subj, "yemen-marks.tsv"), "yemen-marks.tsv")
 if marks is not None:
     yc = os.path.join(SKM, "studies/yemen-cases")
-    cases = {r["case_id"] for r in (read(os.path.join(yc, "cases.tsv"), "yemen-cases/cases.tsv", False) or [])} \
-        if os.path.exists(os.path.join(yc, "cases.tsv")) else set()
+    cases = {r["case_id"] for r in (read(os.path.join(yc, "cases.tsv"), "cases.tsv", False) or [])}
     ye = set()
     for name, key in (("axes.tsv", "axis_id"), ("constants.tsv", "constant_id"), ("citations.tsv", "cite_id")):
-        p = os.path.join(yc, name)
-        if os.path.exists(p):
-            with open(p, encoding="utf-8", newline="") as f:
-                ye |= {r[key] for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE)}
+        ye |= {r[key] for r in (read(os.path.join(yc, name), name, False) or [])}
     for r in marks:
         key = f"{r['vp_id']}/{r['case_id']}"
-        if r["vp_id"] not in vp_ids:
+        if r["vp_id"] not in vp:
             err("yemen-marks.tsv", key, "vp_id not in variation-points.tsv")
         if r["case_id"] not in cases:
             err("yemen-marks.tsv", key, "case_id not in studies/yemen-cases/cases.tsv")
         if r["mark"] not in MARKS:
             err("yemen-marks.tsv", key, f"mark '{r['mark']}' is not one of {sorted(MARKS)}")
+        if r["mark"] not in ("unknown", "no placement") and r["variant_id"] not in variant_ids:
+            err("yemen-marks.tsv", key, "the mark names the variant it used by variant_id")
         if r["mark"] != "unknown":
             if not ids(r["condition_stmt_ids"]) or not ids(r["case_evidence"]):
                 err("yemen-marks.tsv", key, "a mark other than unknown cites both the variant's condition and the case's evidence")
@@ -273,7 +378,7 @@ if marks is not None:
         if re.search(r"(?i)yemen|اليمن|يمني", r["product_gap"]):
             err("yemen-marks.tsv", key, "the product gap names Yemen")
     have = {(r["vp_id"], r["case_id"]) for r in marks}
-    for v in vp_ids:
+    for v in vp:
         for c in cases:
             if (v, c) not in have:
                 err("yemen-marks.tsv", f"{v}/{c}", "no mark for this variation point and case")
@@ -289,10 +394,10 @@ if rows is not None:
             if not ids(r["vp_ids"]):
                 err("rows.tsv", rid, "a row that touches the subject names its variation points")
             for v in ids(r["vp_ids"]):
-                if v not in vp_ids:
+                if v not in vp:
                     err("rows.tsv", rid, f"{v} is not a variation point")
-            if r["when"] not in ("before build", "before release", "later"):
-                err("rows.tsv", rid, f"when '{r['when']}' is not before build, before release or later")
+            if r["when"] not in WHEN:
+                err("rows.tsv", rid, f"when '{r['when']}' is not one of {sorted(WHEN)}")
         if r["touches"] == "unclear" and not r["what_would_settle_it"]:
             err("rows.tsv", rid, "an unclear row says what would settle it")
         for t in [x.strip() for x in r["time_bombs"].split(";") if x.strip()]:
@@ -310,6 +415,6 @@ with open(os.path.join(OUT, "subject-quotes.tsv"), "w", encoding="utf-8") as f:
         f.write("\t".join(str(v).replace("\t", " ").replace("\n", " ") for v in q) + "\n")
 items = [{"n": n, "url": u, "kind": "web", "cited_in": sorted(c)} for n, (u, c) in enumerate(sorted(urls.items()), start=1)]
 json.dump(items, open(os.path.join(OUT, "urls-to-capture.json"), "w"), ensure_ascii=False, indent=0)
-print(f"statements {len(stmts)}, gaps {len(gaps)}, variation points {len(vp_ids)}, founder items {len(founder_items)} | "
+print(f"statements {len(stmts)}, gaps {len(gaps)}, variation points {len(vp)}, founder items {len(founder_items)} | "
       f"issues: {dict(Counter(i[0] for i in issues))} | quotes: {dict(Counter(q[1].split(' (')[0] for q in quotes))} | "
       f"web sources to capture: {len(items)}")

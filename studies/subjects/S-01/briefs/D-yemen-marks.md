@@ -8,6 +8,8 @@ This is `PLAN.md` Stage 2, the pilot. It carries out Q2's marks for one subject.
   - `variation-points.tsv`, `variants.tsv` and `analysis.tsv`;
   - the five platforms' phase A outputs in `<platform>/`.
 
+Don't read `notes*.md` files or any `note` column.
+
 ## The subject
 
 > Who holds the merchant's funds between the buyer's payment and the merchant's payout?
@@ -21,7 +23,7 @@ For each variation point and each Yemen case, give one mark. The marks are Q2's,
 - `no placement`: no reference's variant works in the case;
 - `unknown`: the evidence can't show which of the above.
 
-Take the first mark that holds for any reference's variant. Name the variant you used.
+Go down the list, and take the first mark that holds for any reference's variant. Name that variant by its `variant_id`.
 
 ## Rules
 
@@ -32,7 +34,7 @@ Take the first mark that holds for any reference's variant. Name the variant you
    Without both, the mark is `unknown`. Say what would show it.
 2. **No placement** is written a second time as a product gap, so that it still makes sense with Yemen's name removed. This is Q2's rule 3.
 3. **Moves.** Where the evidence names a consultation, partnership, licence or regulator's action that would change a mark, record it in `moves`, with its citation. Otherwise leave `moves` empty.
-4. **Nothing about what Sharrwah should do.** No inference beyond the mark. A note may hold inference, starting with "Inference:", and it never counts.
+4. **Nothing about what Sharrwah should do.** No inference beyond the mark, anywhere, including notes.
 
 ## Output, in `studies/subjects/S-01/`
 
@@ -40,5 +42,5 @@ The `.tsv` file is tab-separated, with a header row and no quoting. Tabs and new
 
 | File | Columns |
 | --- | --- |
-| `yemen-marks.tsv` | `vp_id` · `case_id` · `mark` · `variant_used` (`<platform>: <stmt_ids>`) · `condition_stmt_ids` · `case_evidence` (YA, YK or YE ids) · `product_gap` (for `no placement`) · `moves` · `what_would_show_it` (for `unknown`) · `note` |
+| `yemen-marks.tsv` | `vp_id` · `case_id` · `mark` · `variant_id` (the variant used) · `condition_stmt_ids` · `case_evidence` (YA, YK or YE ids) · `product_gap` (for `no placement`) · `moves` · `what_would_show_it` (for `unknown`) · `note` |
 | `notes-d.md` | Marks that were hard to give, and why; problems with the method. |

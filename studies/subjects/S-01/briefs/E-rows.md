@@ -6,6 +6,8 @@ This is `PLAN.md` Stage 2, the pilot. It carries out Q3 for one subject. You are
 - `register/pay-questions.tsv`, and in it only the columns `id`, `question`, `needed_by` and `lane`. The other columns hold citations that are not trusted: don't use them.
 - `studies/subjects/S-01/variation-points.tsv`, `variants.tsv`, `analysis.tsv` and `yemen-marks.tsv`.
 
+Don't read `notes*.md` files or any `note` column.
+
 ## What the rows are
 
 Agents wrote these rows earlier, from a smaller evidence base, as gaps they perceived at the time. They are not Sharrwah's requirements. They are inputs to place.
@@ -24,7 +26,13 @@ For each row:
      - `founder decision`, when the analysis gives the founder a decision on it;
      - `partner`;
      - `regulator`;
-   - **when** it must be answered: `before build`, `before release`, or `later`. This comes from what the variation point's analysis says follows.
+   - **when** it must be answered. This comes from the variation point's `follows` in `analysis.tsv`, by this mapping, which is the coordinator's own:
+     - **`before build`:** when `follows` includes "a decision for the founder, on a recommendation";
+     - **`before release`:** when it includes "kept open as a variation point until evidence settles it", "a variation point behind one interface, bound per market, store or plan" or "a variation point bound per market";
+     - **`later`:** when it holds only "the platform carries all the variants at once", "bound per product" or "left to the build";
+     - **`unclear`:** when it reads `none applies`.
+
+     Where a row's variation points give different times, take the earliest.
 3. **Flag each time bomb** in it, by Q3's four types:
    - `bundles`: it bundles variation points that are placed differently;
    - `wrong party`: it is asked of a party other than the one that answers it;
@@ -35,7 +43,7 @@ For each row:
 ## Rules
 
 - Every placement and flag cites the ids it rests on: `vp_id`, or `vp_id` plus `case_id`.
-- No inference beyond the placement. A note may hold inference, starting with "Inference:", and it never counts.
+- No inference beyond the placement, anywhere, including notes.
 
 ## Output, in `studies/subjects/S-01/`
 
