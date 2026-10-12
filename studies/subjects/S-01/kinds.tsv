@@ -1,4 +1,4 @@
-stmt_id	kind	rule
+id	kind	rule
 S01-SH-001	official page	the address is a terms, policy, legal or pricing page
 S01-SH-002	official page	the address is a terms, policy, legal or pricing page
 S01-SH-003	official page	the address is a terms, policy, legal or pricing page
@@ -142,6 +142,8 @@ S01-SH-140	stated	the address is a docs, help or other page
 S01-SH-141	official page	the address is a terms, policy, legal or pricing page
 S01-SH-142	official page	the address is a terms, policy, legal or pricing page
 S01-SH-143	stated	the address is a docs, help or other page
+S01-SH-N01	stated	the address is a docs, help or other page
+S01-SH-N02	official page	the address is a terms, policy, legal or pricing page
 S01-SA-001	stated	the address is a docs, help or other page
 S01-SA-002	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-SA-003	stated	the address is a docs, help or other page
@@ -275,6 +277,7 @@ S01-SA-130	observed	structures/salla/dashboard-translations is built from a reco
 S01-SA-131	observed	structures/salla/dashboard-translations is built from a recorded session
 S01-SA-132	observed	structures/salla/dashboard-features is built from a recorded session
 S01-SA-133	stated	structures/salla/com-policies holds https://salla.com/marketing-tools: the address is a docs, help or other page
+S01-SA-N01	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-WC-001	official page	the address is a terms, policy, legal or pricing page
 S01-WC-002	official page	the address is a terms, policy, legal or pricing page
 S01-WC-003	official page	the address is a terms, policy, legal or pricing page
@@ -404,6 +407,7 @@ S01-WC-126	official page	the address is a terms, policy, legal or pricing page
 S01-WC-127	official page	the address is a terms, policy, legal or pricing page
 S01-WC-128	official page	the address is a terms, policy, legal or pricing page
 S01-WC-129	official page	the address is a terms, policy, legal or pricing page
+S01-WC-N01	stated	the address is a docs, help or other page
 S01-ZD-001	official page	the address is a terms, policy, legal or pricing page
 S01-ZD-002	official page	the address is a terms, policy, legal or pricing page
 S01-ZD-003	official page	the address is a terms, policy, legal or pricing page
@@ -549,6 +553,10 @@ S01-ZD-142	shipped	the address is code or a schema the platform ships
 S01-ZD-143	stated	the address is a docs, help or other page
 S01-ZD-144	stated	the address is a docs, help or other page
 S01-ZD-145	stated	the address is a docs, help or other page
+S01-ZD-N01	stated	the address is a docs, help or other page
+S01-ZD-N02	stated	the address is a docs, help or other page
+S01-ZD-N03	stated	the address is a docs, help or other page
+S01-ZD-N04	stated	the address is a docs, help or other page
 S01-BC-001	stated	the address is a docs, help or other page
 S01-BC-002	stated	the address is a docs, help or other page
 S01-BC-003	stated	the address is a docs, help or other page

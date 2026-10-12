@@ -60,6 +60,7 @@ HEAD = {
                      "gap_ids", "absence_ids", "note"],
     "analysis.tsv": ["vp_id", "cause", "cause_basis", "scopes_compared", "cause_reading", "coexistence", "coexistence_basis",
                      "general_variant", "follows", "expensive_because", "founder_item", "note"],
+    "bears-on.tsv": ["vp_id", "axis_ids", "constant_ids", "basis", "note"],
     "yemen-marks.tsv": ["vp_id", "case_id", "mark", "variant_id", "condition_stmt_ids", "case_evidence", "per_variant",
                         "product_gap", "founder_item", "moves", "what_would_show_it", "note"],
     "rows.tsv": ["row_id", "touches", "vp_ids", "who_answers", "when", "time_bombs", "basis", "what_would_settle_it", "note"],
@@ -179,6 +180,10 @@ for plat, code in PLATFORMS.items():
                 err(f"{plat}/terms.tsv", t["term"][:30], f"cite_id {c} not in citations")
     for a in ab:
         absences[a["absence_id"]] = dict(a, platform=plat)
+        lcs = [c for c in ids(a["list_cite_ids"]) if c in cit]
+        if lcs:                                  # an absence's kind is its list's, by the same rules
+            kinds[a["absence_id"]] = (";".join(sorted({kind_of(cit[c]["source"], ROOTS)[0] for c in lcs})),
+                                      kind_of(cit[lcs[0]]["source"], ROOTS)[1])
         if a["bullet"] not in ("a", "b", "c", "e"):
             err(f"{plat}/absences.tsv", a["absence_id"], f"bullet '{a['bullet']}' is not a, b, c or e")
         for col in ("list_cite_ids", "complete_cite_ids"):
@@ -251,7 +256,7 @@ for plat in PLATFORMS:
             err(f"{plat}/statements.tsv", end, f"{end} is neither named by a statement nor recorded as a gap")
 if stmts:
     with open(os.path.join(subj, "kinds.tsv"), "w", encoding="utf-8") as f:
-        f.write("stmt_id\tkind\trule\n")
+        f.write("id\tkind\trule\n")
         for sid, (k, why) in kinds.items():
             f.write(f"{sid}\t{k}\t{why}\n")
 
@@ -403,14 +408,35 @@ if ana is not None:
             founder_items.append((v, r["founder_item"]))
 
 # ---------- step 2: Yemen marks ----------
+bears = read(os.path.join(subj, "bears-on.tsv"), "bears-on.tsv")
 marks = read(os.path.join(subj, "yemen-marks.tsv"), "yemen-marks.tsv")
-if marks is not None:
+if marks is not None or bears is not None:
     yc = os.path.join(SKM, "studies/yemen-cases")
-    cases = {r["case_id"] for r in (read(os.path.join(yc, "cases.tsv"), "cases.tsv", False) or [])}
-    ye = set()
-    for name, key in (("axes.tsv", "axis_id"), ("constants.tsv", "constant_id"), ("citations.tsv", "cite_id")):
-        ye |= {r[key] for r in (read(os.path.join(yc, name), name, False) or [])}
-    for r in marks:
+    cases = {r["case_id"]: r for r in (read(os.path.join(yc, "cases.tsv"), "cases.tsv", False) or [])}
+    axes_y = {r["axis_id"]: r for r in (read(os.path.join(yc, "axes.tsv"), "axes.tsv", False) or [])}
+    consts_y = {r["constant_id"]: r for r in (read(os.path.join(yc, "constants.tsv"), "constants.tsv", False) or [])}
+    ye = set(axes_y) | set(consts_y) | {r["cite_id"] for r in (read(os.path.join(yc, "citations.tsv"), "citations.tsv", False) or [])}
+    # What each variation point bears on: a case that changes none of its axes carries YC-00's mark.
+    bear = {}
+    for b in (bears or []):
+        v, ax, ks = b["vp_id"], set(ids(b["axis_ids"])), set(ids(b["constant_ids"]))
+        if v not in vp:
+            err("bears-on.tsv", v, "vp_id not in variation-points.tsv")
+        for a in ax - set(axes_y):
+            err("bears-on.tsv", v, f"{a} is not an axis in studies/yemen-cases/axes.tsv")
+        for k in ks - set(consts_y):
+            err("bears-on.tsv", v, f"{k} is not a constant in studies/yemen-cases/constants.tsv")
+        if (ax or ks) and not b["basis"]:
+            err("bears-on.tsv", v, "basis is empty: quote each condition and the state labels it is checked against")
+        own = {y for a in ax & set(axes_y) for y in ids(re.sub(r"[^\[\]]*\[([^\]]*)\]", r"\1 ", axes_y[a]["states"]))}
+        own |= {y for a in ax & set(axes_y) for y in ids(axes_y[a]["today_cite_ids"])}
+        own |= {y for k in ks & set(consts_y) for y in ids(consts_y[k]["cite_ids"])}
+        bear[v] = (ax, ax | ks | own)
+    if marks is not None:
+        for v in vp:
+            if v not in bear:
+                err("bears-on.tsv", v, "no row for this variation point: list the axes and constants its variants' conditions bear on")
+    for r in (marks or []):
         key = f"{r['vp_id']}/{r['case_id']}"
         if r["vp_id"] not in vp:
             err("yemen-marks.tsv", key, "vp_id not in variation-points.tsv")
@@ -420,6 +446,13 @@ if marks is not None:
             err("yemen-marks.tsv", key, f"mark '{r['mark']}' is not one of {sorted(MARKS)}")
         if r["mark"] not in ("unknown", "no placement") and r["variant_id"] not in variant_ids:
             err("yemen-marks.tsv", key, "the mark names the variant it used by variant_id")
+        allowed = bear.get(r["vp_id"], (set(), None))[1]
+        evidence = ids(r["case_evidence"]) + [y for e in r["per_variant"].split(";") for y in ids(e.partition("/")[2])]
+        for y in evidence:
+            if y not in ye:
+                err("yemen-marks.tsv", key, f"case evidence {y} is not a Stage 1 id")
+            elif allowed is not None and y not in allowed:
+                err("yemen-marks.tsv", key, f"case evidence {y} is not among the axes and constants bears-on.tsv lists for {r['vp_id']}, or their citations")
         if r["mark"] != "unknown":
             if not ids(r["condition_stmt_ids"]) or not ids(r["case_evidence"]):
                 err("yemen-marks.tsv", key, "a mark other than unknown cites both the variant's condition and the case's evidence")
@@ -427,21 +460,18 @@ if marks is not None:
             for x in (var or []):
                 if x["variant_id"] == r["variant_id"]:
                     vstmts = set(ids(x["stmt_ids"]))
-            for s in ids(r["condition_stmt_ids"]):
-                if s not in stmts:
-                    err("yemen-marks.tsv", key, f"condition {s} is not a statement")
-                elif vstmts and s not in vstmts:
-                    st = stmts[s]
+            for s_ in ids(r["condition_stmt_ids"]):
+                if s_ not in stmts:
+                    err("yemen-marks.tsv", key, f"condition {s_} is not a statement")
+                elif vstmts and s_ not in vstmts:
+                    st = stmts[s_]
                     linked = "e" in st["bullets"] and (
                         set(ids(st["conditions"])) & vstmts or
                         (st["conditions"] == "none stated" and st["identifier"] and
-                         any(st["identifier"] in stmts[v]["statement"] or st["identifier"] in stmts[v]["identifier"]
-                             for v in vstmts if v in stmts)))
+                         any(st["identifier"] in stmts[v_]["statement"] or st["identifier"] in stmts[v_]["identifier"]
+                             for v_ in vstmts if v_ in stmts)))
                     if not linked:
-                        err("yemen-marks.tsv", key, f"condition {s} is neither the variant's statement nor an (e) statement linked to it")
-            for y in ids(r["case_evidence"]):
-                if y not in ye:
-                    err("yemen-marks.tsv", key, f"case evidence {y} is not a Stage 1 id")
+                        err("yemen-marks.tsv", key, f"condition {s_} is neither the variant's statement nor an (e) statement linked to it")
         elif not r["what_would_show_it"]:
             err("yemen-marks.tsv", key, "an unknown mark says what would show it")
         if r["mark"] == "no placement":
@@ -459,19 +489,19 @@ if marks is not None:
                 for c in ids(cond):
                     if c not in stmts:
                         err("yemen-marks.tsv", key, f"per_variant condition {c} is not a statement")
-                for y in ids(evid):
-                    if y not in ye:
-                        err("yemen-marks.tsv", key, f"per_variant evidence {y} is not a Stage 1 id")
             answers = {x["variant_id"] for x in (var or []) if x["vp_id"] == r["vp_id"] and x["variant"] not in NON_ANSWERS}
             if answers - listed:
                 err("yemen-marks.tsv", key, f"no placement shows no failure for {', '.join(sorted(answers - listed))}")
         if YEMEN_NAMES.search(r["product_gap"]):
             err("yemen-marks.tsv", key, "the product gap names Yemen or a place in it")
-    have = {(r["vp_id"], r["case_id"]) for r in marks}
-    for v in vp:
-        for c in cases:
-            if (v, c) not in have:
-                err("yemen-marks.tsv", f"{v}/{c}", "no mark for this variation point and case")
+    if marks is not None:
+        have = {(r["vp_id"], r["case_id"]) for r in marks}
+        for v in vp:
+            ax = bear.get(v, (set(), None))[0]
+            for c, row in cases.items():
+                named = {p_.split("=")[0].strip() for p_ in row["name"].split(";") if "=" in p_}
+                if (c == "YC-00" or named & ax) and (v, c) not in have:
+                    err("yemen-marks.tsv", f"{v}/{c}", "no mark for this variation point and case: it is YC-00, or changes an axis bears-on.tsv lists")
 
 # ---------- step 3: rows ----------
 rows = read(os.path.join(subj, "rows.tsv"), "rows.tsv")
