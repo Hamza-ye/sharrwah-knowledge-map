@@ -1,0 +1,18 @@
+{
+ "n": 112,
+ "url": "https://www.bigcommerce.com/product/checkout/",
+ "dir": "items/112-bigcommerce.com",
+ "fetched_at": "2026-10-12T10:51:20Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/product/checkout/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 78854,
+ "cited_in": [
+  "S01-BC-C038"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6fb23cb7ffed16d62543ce50bc40f9ebd074ab650f64a85e588f3c30086d61fd",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 93,
+ "url": "https://woocommerce.com/document/woopayments/payment-methods/buy-now-pay-later/",
+ "dir": "items/093-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/payment-methods/buy-now-pay-later/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 56951,
+ "cited_in": [
+  "S01-WC-C059"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "95ab66eb1825d08f344f2d6e994e9ad0fb0738da8c969aab59214ca8c74aeda8",
+ "raw_ext": "html"
+}

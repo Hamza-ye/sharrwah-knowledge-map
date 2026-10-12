@@ -1,0 +1,33 @@
+{
+ "n": 72,
+ "url": "https://help.zid.sa/zid-wallet/",
+ "dir": "items/072-help.zid.sa",
+ "fetched_at": "2026-10-12T10:50:48Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/zid-wallet/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27427,
+ "cited_in": [
+  "S01-ZD-C114",
+  "S01-ZD-C115",
+  "S01-ZD-C116",
+  "S01-ZD-C117",
+  "S01-ZD-C118",
+  "S01-ZD-C119",
+  "S01-ZD-C120",
+  "S01-ZD-C121",
+  "S01-ZD-C122",
+  "S01-ZD-C123",
+  "S01-ZD-C124",
+  "S01-ZD-C125",
+  "S01-ZD-C126",
+  "S01-ZD-C127",
+  "S01-ZD-C128",
+  "S01-ZD-C129"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cf75e8a281f984e0dc2c5eaada51415d814da1a2f5e6dbbfa2dd6c822cf69333",
+ "raw_ext": "html"
+}

@@ -1,0 +1,636 @@
+Products
+Businesses we serve
+About
+Resources
+Pricing
+Contact us
+Contact us
+Legal
+Terms and Conditions
+Sales Day Payout Terms of Service
+Prohibited and Restricted Products and Services
+Payment Device Terms of Service
+Additional Services Terms
+General Conditions for Advancements
+Adyen for Platforms (AfP) Sales Day Payout Terms of Service
+List of Adyen Sub-processors
+US Legal Orders
+Adyen Supplier Code of Conduct
+Adyen Security and IT Requirements - Vendors v2.1
+Adyen Security and IT Requirements - Vendors v2.2
+On this page
+1 Definitions
+2 Description of Services
+3 User Obligations and Restrictions
+4 Integration
+5 User Communications
+6 Service Levels
+7 Chargebacks and Refunds
+8 Property Rights
+9 Confidentiality, Privacy, and Compliance
+10 Duration and Termination
+11 Liability
+12 Indemnification
+13 Governing Law and Dispute Resolution
+14 Miscellaneous
+15 Local Requirements
+Adyen For Platforms Terms and Conditions
+
+Effective from: October 2025.
+
+Adyen for Platforms Terms and Conditions October 2025
+1 Definitions
+
+In these Adyen for Platforms Terms and Conditions (the “Terms and Conditions”), the following definitions will apply:
+
+Acquirer 
+
+A financial or payments institution (which may be a third party) that processes Transactions on behalf of User by (i) routing Transactions to and from the Scheme Owners or Issuing Banks and (ii) Settling to Users.
+
+Acquiring or Acquiring Services
+
+Use of a Payment Method via Processor where Processor acts as the Acquirer or Processor contracts with the relevant third-party Acquirer on behalf of a User to enable User’s use of such Payment Method, as further detailed in these Terms and Conditions.
+
+Applicable Law
+
+Any law, statute, regulation, rule, ordinance, subordinate legislation, and any implementing regulations applicable to the relevant obligation, activity, or status of the relevant party or to the provision of the Services in the relevant region that is made or given by a regulatory authority of any national, federal, commonwealth, state, provincial, or local jurisdiction.
+
+Authorisation
+
+The process of confirming that a Shopper has a valid account, and if the relevant Payment Method allows for it, that a Shopper has sufficient credit or funds in such account to cover the relevant Transaction amount before Capture. “Authorize” or “Authorized” will have the corresponding meaning.
+
+Capture
+
+The instruction to charge the account of Shopper for the relevant Transaction amount. Prior Authorization may be required by the Scheme Owner. “Captured” and “Capturing” will have corresponding meanings.
+
+Capture Period
+
+The period during which Capture may occur following an Authorization. The Capture Period varies per Payment Method. 
+
+Card
+
+Any form of card (including a credit card or debit card), which may be used by a Shopper to carry out a Transaction on such Shopper’s Card account.
+
+Chargeback
+
+A Transaction that is successfully charged back on request of Shopper or the Issuer pursuant to the relevant Scheme Rules, resulting in a cancellation of a Transaction for which a User has been paid or was due to be paid and an obligation to refund the relevant amount of the Transaction to Shopper. Any additional Chargeback for the same Transaction will be considered a separate Chargeback (e.g., if a Chargeback defense is unsuccessful). 
+
+Claim
+
+Any claim by a third party or assertion by a third party, expressly including investigations by governmental authorities or claims from Scheme Owners and Acquirers for payment of Fines. A party’s affiliated entities will not be considered third parties for the purpose of this definition.
+
+Fine
+
+Any fine, assessment, uplifted service fee or other additional payment as imposed by the Scheme Owners, regulatory or governmental authorities and/or Acquirers.
+
+Fraud Control Tool
+
+The fraud control tool set made available by Processor as part of the Services, which assigns a fraud score to Transactions indicating the likelihood of the Transaction being fraudulent and enables Platform (on behalf of User) to automatically reject Transaction based on threshold values set by Platform on behalf of User.
+
+Fulfillment Date
+
+The date on which the complete User Products and Services is delivered to the Shopper who paid for the corresponding Transaction.
+
+Indemnified Losses
+
+Any and all liabilities, costs and expenses, including reasonable legal fees, settlements, equitable relief, judgments, offsets, or damages based on or resulting from any Claim.
+
+Insolvency 
+
+Any of the following events: (i) any bankruptcy, insolvency, moratorium, winding up, liquidation, cessation of business operations, judicial reorganization proceeding, dissolution, receivership, administration, or other similar proceeding by or against a party, or (ii) if a party commences negotiations for or enters into an agreement to any assignment for the benefit of creditors.
+
+Issuer or Issuing Bank
+
+An institution that issues or otherwise makes available accounts and/or Payment Methods to a Shopper and whose name appears on the Card or account statement as the Issuer.
+
+Order Currency
+
+The currency in which the Transaction is originally presented to a Shopper by User.
+
+Payment Details
+
+The information which makes up a Transaction message which needs to be submitted to the Payment Interface to enable the processing of the Transaction by Processor and to perform fraud checks.
+
+Payment Interface
+
+An electronic connection method provided by Processor to Platform and/or User for providing the Payment Details for individual Transactions.
+
+Payment Method
+
+A method of enabling payments by Shoppers to Users (which includes, but is not limited to, Cards, online and offline bank transfers, and direct debits).
+
+PCI DSS
+
+The security standards for transmitting, processing or storing Card data / payment details required to be observed under the Scheme Rules of Card Scheme Owners (available at www.pcisecuritystandards.org).
+
+Personal Data
+
+Data and/or information, including personal information, related to an individual person as such meanings are interpreted in accordance with relevant data protection laws and regulations.
+
+Platform
+
+The platform offering the Platform System through which User connects with Shoppers.
+
+Platform System 
+
+The e-commerce platform made available by Platform for use by User.
+
+Privacy Statement
+
+A description of how Processor and its group companies collect and process Personal Data, as amended from time to time. The Privacy Statement is available at https://www.adyen.com/privacy-policy. 
+
+Processor
+
+Except in the jurisdictions set out in paragraph (b), Adyen N.V., a company registered in Amsterdam under number 34259528 and having its seat at Simon Carmiggeltstraat 6-50, 1011 DJ in Amsterdam, the Netherlands and/or any of its local affiliates (each separately and together referred to as “Processor”) where required for the provision of Services in accordance with local laws and Scheme Rules as further provided below. Processor does not require local affiliates in the European Union. Processor operates in the United Kingdom with its London branch office at 12-13 Wells Mews, London W1T 3HE, United Kingdom, and in the United States operates with its San Francisco branch office at 505 Brannan Street, San Francisco, CA 94107.
+
+In those jurisdictions where Processor requires a local Processor entity to be included as an additional party to the relevant User Agreement, Processor will also mean the relevant local Processor entity below, in each case together with Adyen N.V.:
+
+For Users whose legal entity is registered in Canada, Adyen Canada Ltd. a company registered under company number C1239120 whose registered office is at Suite 2600, Three Bentall Centre, 595 Burrard Street, P.O. BOX 49314 Vancouver BC, V7X 1L3, Canada.
+
+For Users whose legal entity is registered in Australia, Adyen Australia Pty Limited a company registered in Australia under company number ABN 55 162 682 411 whose registered office is at 10-14 Waterloo Street, Level 1, Surry Hills, NSW 2010, Sydney, Australia.
+
+For Users whose legal entity is registered in New Zealand, Adyen New Zealand Limited a company registered in New Zealand under company number NZBN 9429042218128 whose registered office is at Simpson Grierson, 88 Shortland Street, Auckland, 1010, New Zealand.
+
+For Users whose legal entity is registered in Singapore, Adyen Singapore Pte Ltd. a company registered in Singapore under company number 201210678M whose registered office is at 109 North Bridge Road #10-22, Funan, 179097 Singapore.
+
+For Users whose legal entity is registered in Hong Kong, Adyen Hong Kong Limited a company registered in Hong Kong under business registration number 60437706 whose registered office is at Room 10102, 10/F, YF Life Tower, 33 Lockhart Road, Wan Chai, Hong Kong.
+
+When a Processor local entity is additionally included as Processor, pursuant to the above, the local Processor entity will be responsible to fulfill all obligations locally under these Terms and Conditions unless Adyen N.V. is required by law to fulfill the obligation.
+
+Prohibited and Restricted Products and Services List
+
+The list of User Products and Services that are prohibited or restricted for use with the Services, as amended from time to time. The Prohibited and Restricted Products and Services List is available at https://www.adyen.com/legal/list-restricted-prohibited. 
+
+Refund
+
+The reversal (whether partial or in full) of a Transaction whereby the funds are reimbursed to a Shopper by Processor at User’s request.
+
+Reserve Level
+
+The minimum level of Rolling Reserve as may be required for User from time to time pursuant to these Terms and Conditions.
+
+Rolling Reserve(s)
+
+A sum of money withheld from Settlement by Processor as security for Chargebacks, Fines and other potential fees due to Processor.
+
+Scheme Owner
+
+The party offering and/or regulating the relevant Payment Method.
+
+Scheme Rules
+
+The collective set of bylaws, rules, operating regulations, requirements, procedures and/or waivers issued by the Scheme Owners that User agrees to comply with by enabling or using a Payment Method. If any third party (e.g., third-party Acquirer or technical service provider) is used in connection with a Payment Method, any additional or deviating rules set by such third party will be considered part of the Scheme Rules for that Payment Method. Scheme Rules may be amended or supplemented by Scheme Owners or third parties from time to time.
+
+Service(s)
+
+The collective set of payment processing, fraud control, reconciliation, Settlement and/or additional services as may be provided by Processor to User, via Platform, to enable User to use Payment Methods to receive payment from Shoppers.
+
+Settlement
+
+The transmission of funds by Processor to User that Processor has received from Acquirers, Scheme Owners, and/or Issuers, as applicable, in connection with Transactions minus any amounts payable to Processor or paid by Processor on behalf of User, and (if applicable) any amounts needed to keep the Rolling Reserve at the then current Reserve Level. “Settle” and “Settled” will have the corresponding meanings.
+
+Shopper
+
+An individual person or legal entity purchasing a good or service from User for which a Transaction is submitted to Processor for processing. Also referred to as “Cardholder” or “Account Holder”.
+
+Software
+
+The collective set of programs and data developed and/or operated by Processor as needed to provide the Service to its Users, including the Payment Interface.
+
+Taxes
+
+Any and all federal, state, local and foreign taxes, assessments and other governmental charges, duties, impositions and liabilities relating to such taxes, including any and all taxes based on or measured by gross receipts, income, profits, sales, use and occupation, and value added, ad valorem, transfer, franchise, withholding, payroll, digital service, recapture, employment, excise and property taxes, as well as public imposts, fees, health insurance, unemployment insurance, workers’ compensation insurance, pension insurance, and other social security charges, together with all interest, penalties and additions imposed with respect to such amounts.
+
+Terms and Conditions
+
+The current version of these terms and conditions of Processor.
+
+Transaction
+
+The processing, in whole or in part, of any instruction for Authorization, Capture, and/or Settlement of Shopper funds to User via Processor. 
+
+Uncompleted Order Amount
+
+The total amount of Authorised, Captured and/or Settled Transactions for User on any point in time, for which the User Products and Services have not been delivered to the relevant Shoppers at that time and/or for which the return rights or order cancellation rights of Shopper under the terms and conditions of User and/or Applicable Law have not yet lapsed.
+
+User
+
+The party entering into a User Agreement with Processor and for which Processor processes Transactions related to the User Products and Services of User.
+
+User Agreement
+
+These Terms and Conditions as agreed to in the application process as well as the terms of any other documents agreed or referred to in the application process (including the Prohibited and Restricted Products and Services List) that comprise the agreement entered into between Processor and User for the provision of the Services to User, including all Schedules and other documents appended to it by reference.
+
+User Products and Services
+
+Products and/or services provided by User for which Transactions are processed via Processor.
+
+2 Description of Services
+2.1 Payment Processing
+
+User will be using the Services via the Platform System and authorizes Processor to process and submit Transactions on its behalf. Platform will represent User with respect to User’s use of the Services and Processor is entitled to rely on the fact that Platform is authorised and mandated by User to use the Services and submit Transactions on behalf of the User in accordance with User’s permissions and instructions.
+
+User will submit any and all Payment Details that Processor reasonably deems necessary and requests from User as part of the Transaction, including those Payment Details necessary to perform fraud checks and/or comply with Applicable Law. Processor may revise the required data needed to conduct fraud checks and process Transactions from time to time by providing notice to User via Platform. Failure to submit any required data with a Transaction may prevent the Transaction from being processed. If User continues to fail to provide the required data, despite request(s) from Processor to do so, Processor may be forced under the Scheme Rules to suspend Transaction processing and/or Transactions may be refused by the relevant Scheme Owners or Acquirers, and Processor may terminate the User Agreement in its sole discretion.
+
+2.2 Processor Services
+
+Processor delivers real time, or near real time, processing and related Services in accordance with Applicable Law and Scheme Rules. The Services may be enabled/disabled, in whole or in part, at Platform’s request where supported by Processor, and generally include the following:
+
+a. gateway services (i.e., routing of Transaction messages on behalf of User to and from supported Scheme Owners or Acquirers);
+
+b. Acquiring services;
+
+c. reconciliation services (i.e., reconciling processed Transactions with settlements received from the relevant Acquirers, Scheme Owners and/or Issuing Banks); and
+
+d. any additional service enabled by Platform.
+
+More specifically, Acquiring Services include the following:
+
+a. accepting Transactions from Users and routing the same to the relevant Acquirer, Scheme Owner or Issuing Bank;
+
+b. collecting and Settling the resulting funds to User; and
+
+c. reconciliation services for Transactions Acquired and Shopper funds Settled via Processor, reconciling processed Transactions with settlements received from the relevant Acquirers, Scheme Owners and Issuing Banks.
+
+The processes for authentication, Authorization, Acquiring, clearing and Settlement are controlled by and are the responsibility of the relevant Acquirers, Scheme Owners and Issuing Banks, and subject to the Scheme Rules set by the applicable Scheme Owner. Processor acts in its own name and does not have primary responsibility for services provided by any third parties and does not control the services provided by a third-party Acquirer, Issuing Bank or Scheme Owner.
+
+Within the context of the overall Services provided to User, the Acquiring Services are to be seen as a distinct service from the services performed by Scheme Owners and other connected parties (e.g., third-party Acquirers and/or Issuing Banks), as determined by the applicable Scheme Rules. The Acquiring Services allow User to use the Scheme Owners’ networks and services for User’s benefit.
+
+Processor’s acceptance of User as a user of the Services and the relevant Payment Methods is strictly personal to User and limited to the use by User of the Services in order to obtain payment for its User Products and Services. User may not use the Services to facilitate the payment for products or services sold by third parties or resell the Services to third parties, unless otherwise approved by Processor. User will only use the Services in the pursuit of its trade, business, craft or profession.
+
+2.3 Payment Method and Currency Support
+
+Supported Payment Methods and currencies as part of the Services may change from time to time. Processor will give at least one (1) month notice to User (via Platform) of any discontinuation of or change in support for any Payment Method or currency, unless this is not reasonably possible given the cause for this change. Processor will use commercially reasonable efforts to offer an alternative for any discontinued Payment Method or currency to User.
+
+User understands that Acquirers and/or Scheme Owners might suspend their offering to User, cancel certain Payment Methods, change the characteristics thereof and/or change the acceptance criteria under which they make such Payment Methods available. Following any such decisions of the relevant Acquirer and/or Scheme Owner, Processor may be forced to block User from further use of a Payment Method or impose additional restrictions or conditions on User’s continued use of such Payment Method. Where possible, Processor will use commercially reasonable efforts to give User prior notice (via Platform) of any such change, restriction, condition or cancellation with respect to a Payment Method.
+
+2.4 Fraud Control
+
+All Transactions processed as part of the Services will be screened by Processor’s Fraud Control Tool, which performs a number of checks on a Transaction and attaches a resulting total score to the Transaction, which represents the likelihood of the Transaction being fraudulent. The Fraud Control Tool does not guarantee the prevention of fraudulent Transactions, nor against resulting Chargebacks or Fines. Regardless of the resulting total score, Transactions may be fraudulent or non-fraudulent. Platform will technically manage the settings of the Fraud Control Tool on behalf of User. In addition, Processor reserves the right to cancel Transactions that it has reasonable grounds to suspect to be fraudulent or involving other criminal activities, even if the Fraud Control Tool failed to block the Transaction.
+
+2.5 Additional Services
+
+In accordance with Applicable Law, Processor may use automated decision-making, including profiling, to determine whether a User is eligible for additional services and products offered by Processor. If such a decision would produce legal effects or otherwise similarly significantly affect User, User has the right to obtain human intervention, express its point of view, opt-out of the automated decision-making, or to contest the ultimate decision based solely on automated processing. Please see the Privacy Statement for more information about your rights with respect to automated decision-making.
+
+2.6 Settlement
+
+Processor will Settle Shopper funds to User for validly processed Transaction subject to: (i) such funds having been settled to Processor by the applicable Issuing Bank, Acquirer, and/or Scheme Owner, together with all relevant information necessary to Settle such funds to User and (ii) User’s Rolling Reserve being at the applicable Reserve Level, if applicable. Processor will Settle received funds directly to User, withholding from the received funds the fees agreed between Platform and User. User is the creditor of the received funds and holds sole power of disposition over such funds. The Settlement frequency is based on User’s binding instructions, which are submitted by Platform on behalf of the User via the Platform System. Platform is under no circumstances entitled to make any individual instructions towards Processor regarding the Settlement of the funds.
+
+If an Acquirer, Scheme Owner or Issuing Bank does not settle funds to Processor correctly or in a timely manner, then User acknowledges that Processor does not have any control over timely settlement or correction of incorrect settlement by such Scheme Owner or third-party Acquirer. It is User's responsibility to evaluate if the conditions imposed by the Payment Methods for settlement (as communicated from time to time through Platform) are acceptable to User. This is specifically relevant for certain Payment Methods that are not monitored and regulated by governmental financial services authorities, such as but not limited to non-Card Scheme related prepaid cards and SMS and IVR payments. User acknowledges and agrees that Processor will not compensate User for late performance, non-performance, or Insolvency of an Issuing Bank, third-party Acquirer or Scheme Owner that results in Processor and/or User receiving late Settlement, or not receiving Settlement.
+
+Processor reserves the right to withhold Settlement of Transactions if they are Captured, but (i) suspected to be fraudulent, (ii) related to illegal activities, (iii) are otherwise anomalous, or (iv) likely to become subject to a Chargeback by Processor and/or the relevant Acquirer and/or Scheme Owner, until satisfactory completion of Processor's investigation, that of the relevant Acquirer or Scheme Owner or that of a third party nominated by any of these parties. User will give its full co-operation to any such investigation.
+
+No interest will be due over amounts held by Processor prior to Settlement of such funds to User, except in the case that Settlement is delayed for a period of more than thirty (30) days due to the intent or gross negligence of Processor. In such case interest will be due by Processor for the late Settled amount at the rate of the three (3) month EURIBOR rate +2%.
+
+If Processor receives a third party legal attachment or other legally binding order that requires Processor to withhold Settlements and/or payouts, Processor will act in accordance with Applicable Law.
+
+2.7 Set-Off
+
+Without prejudice to any right to set-off which Processor may be entitled to as a matter of law, User agrees that Processor may, at any time, set-off and/or withhold any and all fees and other amounts due to Processor from any and all amounts Processor owes User under the User Agreement, including those amounts required to (i) cover Chargebacks, Refunds, Fines, or any negative balances; and/or (ii) satisfy the then-current applicable Rolling Reserve Level requirements, regardless of whether these amounts are in different currencies or if any Insolvency is initiated by or against User. Processor may exercise the aforementioned right by (i) withholding such amounts from User’s Settlement amounts; (ii) requiring the immediate payment of such amounts; and/or (iii) offsetting such amounts against any amounts Processor owes User.
+
+2.8 Rolling Reserve
+
+Processor reserves the right to apply a Rolling Reserve to User’s account. The Rolling Reserve is a sum of funds retained up to the applicable variable Reserve Level (as such Reserve Level is determined by Processor) from funds to be Settled to User to cover for potential Refunds, Chargebacks, Fines, paid but not yet fully delivered User Products and Services and other potential financial obligations of User towards Processor, Acquirers and Scheme Owners. The Rolling Reserve needs to be at the relevant Reserve Level in order for User to receive Settlement. The Rolling Reserve will be calculated and withheld from Settlements in accordance with Clauses 2.9 and 2.10 of these Terms and Conditions.
+
+Processor reserves the right to change User’s Reserve Level in the event that, in Processor’s reasonable discretion, User’s risk profile materially changes (for example due to substantial growth of Transaction volume, new types of User Products and Services with increased risk, or increased Chargeback ratios on User’s account). User will be notified (via Platform) if Processor applies or removes a Rolling Reserve and informed of the applicable Reserve Level.
+
+2.9 Reserve Level Calculation
+
+Processor may set a Reserve Level to be applied by Processor to account for and cover for the potential indebtedness of User for fees, Fines and Chargebacks payable by User, based on Processor’s reasonably assessed then current estimate of the Uncompleted Order Amount, potential Fine exposure and other potential liabilities. Processor has the right to adjust the Reserve Level in its discretion from time-to-time to bring it in line with its then current estimates. Upon User’s first request, Processor will inform User via Platform of the information, estimations and assumptions and calculations used by Processor to establish the then current Reserve Level. The decision by Processor to not apply a Rolling Reserve at a particular time where it is entitled to do so under this clause does not constitute a waiver of Processor’s right to apply a Rolling Reserve at a later date.
+
+2.10 Rolling Reserve Release
+
+Processor will establish and keep the Rolling Reserve at the Reserve Level by deducting funds from or adding funds to each Settlement. If at any point in time the Rolling Reserve is insufficient, Processor may require User to immediately transfer such funds to the account of Processor as is necessary to bring the Rolling Reserve in line with the then current Reserve Level. Upon the earlier of (i) termination of the User Agreement (ii) after the processing of Transactions is stopped or (iii) a Rolling Reserve is no longer required, the Rolling Reserve will be released by the Processor in monthly steps to User to account for the decrease in Uncompleted Order Amount, fraud exposure and/or Fine exposure until the full Rolling Reserve is released to User or, where applicable, in part or in whole applied by Processor to pay for Chargebacks, cover Fines or fraud claims or pay for unpaid fees due by User. The Rolling Reserve will as standard be fully released to User six (6) months after processing of Transactions for User has stopped unless specifically identified potential liabilities still exist at that point in time.
+
+3 User Obligations and Restrictions
+3.1 User Registration and KYC Check
+
+In order to comply with anti-terrorism, financial services and other Applicable Laws and Know Your Customer (“KYC”) requirements imposed by Scheme Owners and Acquirers, User must, when entering into the User Agreement and thereafter on Processor’s first request, provide certain information about itself and its activities, including, as may be applicable, its directors, authorized signatories, shareholders and ultimate beneficial owner(s) (such information, the “Registration Information”). User warrants unconditionally that all Registration Information it provides is correct and up to date. Processor will, in its sole discretion, approve or reject User’s submission for approval via the onboarding process applying its standard acceptance policies drafted in accordance with Applicable Law and Scheme Rules. User agrees that Processor may make such Registration Information available to Platform.
+
+User will provide Processor with at least three (3) business days prior written notice via Platform of any change of the Registration Information. User will on first request from Processor provide such additional information and supporting documentation as Processor may reasonably determine to need to ensure compliance with Applicable Law, Scheme Owner and Acquirer KYC requirements. User agrees that Processor may share Registration Information with, and run business credit reports by, contracting and consulting with relevant third party screening tools and public resources, including public registers and judicial or governmental authorities. Processor will process User’s Registration Information in accordance with its Privacy Statement.
+
+Support for each Payment Method is subject to acceptance by the relevant Scheme Owner or Acquirer used by the Scheme Owner, which such Acquirer or Scheme Owner may withhold or withdraw in its discretion at any time. User hereby authorizes Processor to submit Registration Information received from User to the relevant Scheme Owners and Acquirers to obtain permission for providing access to their Payment Methods for User.
+
+3.2 Permitted User Products and Services
+
+User wishes to obtain the Services via Platform with respect to payments for the User Products and Services, as agreed between Processor and Platform. User must ask prior written approval via Platform for any change or addition to the User Products and Services prior to submitting payment requests for such User Products and Services.
+
+User will ensure the User Products and Services sold are compliant with Scheme Rules, Applicable Law, and the Prohibited and Restricted Products and Services List. If Processor in its reasonable discretion determines that there is a significant risk that the User Products and Services are not, or are no longer, compliant with Applicable Law and/or are in violation of applicable Scheme Rules, Processor has the right to terminate its Services.
+
+3.3 User Obligations and Restrictions
+
+User may only use the Services for payment of those User Products and Services which User agreed with Platform to be offered through the Platform System. User will not use the Services for the payment of User Products and Services (i) where it is illegal to offer or provide these to or from the relevant country and/or (ii) as prohibited by the Prohibited and Restricted Products and Services List. This list may be updated in Processor’s discretion where needed to ensure compliance with Applicable Law and Scheme Rules, prevent high levels of Chargebacks and/or to reduce exposure to potentially fraudulent or illegal transactions. User will be informed of such updates by Platform. Where a published change affects a significant portion of the User’s Product or Services, User may terminate the User Agreement by giving written notice to Processor (via Platform). Processor’s acceptance of User as customer should not be interpreted as an advice or opinion of Processor as to the legality of User’s Products and Services and/or of User’s intended use of the Services.
+
+User will not use the Services (and Transactions may not be submitted for processing) for prepaying User Products and Services for which the Fulfillment Date is in part or in whole more than twelve (12) months after the date the Transaction is submitted for processing.
+
+3.4 User Responsibilities
+
+User will cooperate in (i) the provision and/or auditing of records requested in relation to inquiries by Processor, Acquirers, and/or Scheme Owners with respect to Chargebacks or suspected fraud, (ii) requests for information from a Scheme Owner or Acquirer received by Processor (forwarded by Processor to Platform in electronic form) about a specific Transaction, (iii) requests for information from Processor to facilitate a review of Platform’s internal processes and controls (x) made pursuant to Applicable Law, (y) as recommended by Scheme Owners or regulatory authorities, or (z) in accordance with Processor’s compliance policies, including but not limited to the Prohibited and Restricted Products and Services List, or (iv) requests for information from tax or other governmental authorities pursuant to Applicable Law.
+
+User must maintain a copy of all electronic and other records related to the Transaction and the ordering and delivery of User Products and Services for the greater of (i) two (2) years subsequent to the Transaction being processed, (ii) the applicable warranty period of the delivered User Products and Services, or (iii) the relevant period required under Applicable Law and Scheme Rules. The copy of the records will include, but will not be limited to (i) shipping details (if relevant), (ii) invoices for the delivered User Products and Services, and (iii) all contacts with a Shopper.
+
+3.5 Required Data
+
+User will, upon Processor’s request (made via Platform), provide all required information regarding the then current actual or expected Fulfillment Dates for processed Transactions and estimates for the average time between Capture and the related Fulfillment Date. Further, User will provide Processor upon request (made via Platform) with all requested information on User’s financial stability and/or its then-current ability to provide the User Products and Services. Processor may use this information to estimate the likely Uncompleted Order Amount as used to determine the Reserve Level (if applicable).
+
+3.6 Violation of Scheme Rules
+
+User must comply at all times with the Scheme Rules applicable to the Payment Methods it uses. For violations of certain key requirements under the Scheme Rules, Scheme Owners can levy significant Fines and/or per-Transaction surcharges. The Scheme Owners impose such Fines to protect parties such as Shoppers, Users and providers of the Payment Methods collectively against misuse, fraud, illegal activities, breaches of Applicable Law, reputational damage and excessive costs.
+
+Examples of Scheme Rules which are subject to such Fines include, but are not limited to: (i) using the Payment Method for User Products and Services other than those for which User received express authorisation to use it; (ii) using the Payment Method for User Products and Services which violate Applicable Law; (iii) using the Payment Method for selling User Products and Services for which the Scheme Owner explicitly prohibited its use (e.g., adult content, drugs, arms, counterfeit goods); (iv) using the Payment Method for the benefit of a third party (i.e., reselling the use of the Payment Method to a third party) as the authorisation for User to use a Payment Method is strictly personal); (v) the percentage of Transactions subject to a Chargeback is above the applicable acceptable level as determined by the Scheme Owner (vi) excessive retries of failed Transactions, (vii) non-compliance with merchant location rules; (viii) breaches of security and confidentiality obligations with respect to Payment Details; and (ix) fraudulent, misleading activities impacting Shoppers.
+
+User is strongly advised to regularly review the Scheme Rules (made available via Platform and/or via the websites of the Scheme Owners) and relevant changes to Applicable Law as applicable to the User Products and Services and business practices to ensure its compliance.
+
+3.7 Potential Scheme Fines
+
+Where Processor becomes aware of and/or receives any notice of a potential exposure to a Fine related to any User behaviour, User will, on first request, provide (via Platform) all reasonable cooperation to help investigate the relevant circumstances and remedy the relevant violation, notwithstanding all other rights and remedies of Processor in such situation pursuant to these Terms and Conditions. Where possible, Processor will share the relevant feedback received from User (via Platform) with the relevant Acquirer or Scheme Owner handling the potential Fine so that it may be taken into consideration by said Acquirer or Scheme Owner.
+
+4 Integration
+4.1 Integration via Platform
+
+User will integrate with the systems of Platform to connect to the Payment Interface of Processor. Processor is not responsible for such integration but will ensure the Payment Interface is available for use by Platform for such purpose and will where needed provide third line support for such integration via Platform.
+
+4.2 Changes to Software
+
+Processor reserves the right to change or amend the Software and the interface to it at any time, to provide the User with a new version thereof, and/or to change the functionalities and characteristics of the Software. No changes will be implemented by Processor which materially reduce functionality of the Services, except where this is made necessary by (i) the need to follow generally accepted changes in industry standards, (ii) changes in Applicable Law or Scheme Rules, (iii) a need for increased security due to security risks identified by Processor or (iv) other reasonable grounds which warrant the reduction of functionality. If User is significantly impacted by a material reduction of functionality due to a change in the Software, it may terminate the User Agreement by giving written notice to Processor within one (1) month of the change.
+
+4.3 Security of Payment Details
+
+User will not copy, capture, or intercept Payment Details such as credit card numbers, card verification or “CVM” codes, or “PIN” codes that are provided by Shopper for Transactions. This rule is imposed by Scheme Owners to protect shoppers against misuse of their Payment Details (like credit card numbers) and is strictly enforced by the Scheme Owners. A violation of this rule can lead to the application of high Fines by the Schemes Owners. If Processor has reason to believe User is copying, capturing, or intercepting any Payment Details, Processor has the right to immediately suspend processing of Transactions and/or Settlement. User will fully indemnify and hold Processor harmless from any losses, claims (including applied Fines by the Scheme Owners), costs or damage Processor incurs as a result of User’s breach of this obligation.
+
+5 User Communications
+
+All first line communications regarding the use of the Services, including any relevant changes in applicable Scheme Rules or Applicable Law will be provided to User via Platform.
+
+6 Service Levels
+6.1 Payment Interface Uptime Commitment
+
+The Payment Interface is the part of Processor’s payment platform which handles the processing of Transactions when a Shopper initiates a payment to User. Platform will connect User to the Payment Interface and User will submit Transactions via the Payment Interface. Processor will use commercially reasonable efforts and to setup its systems in a manner to enable an average minimum uptime of 99.9% (measured on a monthly basis) of the Payment Interface, to receive Transaction requests, excluding from uptime calculation downtime of the Payment Interface caused by acts or omissions of User, Acquirers, Platform, or Scheme Owners, changes implemented on specific User request, general internet failures (including DDOS attacks), failures of individual Payment Methods, or force majeure events. User is obliged to immediately notify Processor via Platform of any downtime of the Payment Interface which it experiences and to provide all reasonably requested cooperation in investigating and resolving any such downtime.
+
+Processor uses all reasonable efforts to avoid having to take the Payment Interface offline for executing planned maintenance. Should such maintenance prove necessary under exceptional circumstances, Processor will provide as much notice as practically possible and plan such maintenance in a manner and on a date and time to minimize the potential number of affected potential Transactions for all its Users. Should, under emergency situations (e.g., in case of force majeure event or terrorist attack) unplanned maintenance be necessary to the Payment Interface necessitating it to be taken offline, Processor will use all available resources to keep the required downtime to the absolute minimum.
+
+6.2 Security and Compliance
+
+Processor will maintain adequate measures to provide a secure payment system and will keep the relevant systems used to provide the Services PCI DSS certified where required to do so under the applicable Scheme Rules.
+
+7 Chargebacks and Refunds
+7.1 Chargebacks
+
+User will take all reasonable steps to ensure that, in order to avoid Chargebacks, the User Products and Services are delivered in accordance with Applicable Law and the orders placed by Shopper. In case Processor has reasons to suspect that User is not delivering its User Products and Services on or prior to the Fulfillment Dates used to calculate the Uncompleted Order Amount and/or if Processor has reason to suspect that the User Products and Services for which Processor processes Transactions are (i) based on fraud, (ii) likely to cause high Chargeback volumes, or (iii) illegal, Processor has the right to suspend Settlement of all related Transactions and/or block Authorisations of such Transactions until Processor has been given assurances to its reasonable satisfaction that the relevant User Products and Services are actually delivered in accordance with Applicable Law and orders placed by Shoppers.
+
+7.2 Refunds
+
+Refunds will be charged as a Transaction by Processor and a Refund fee can be applied by Processor as agreed between Processor and Platform. Processor will not execute a Refund (i.e., the relevant sum will not be returned by Processor to Shopper) in case the funds for this Refund cannot be subtracted from the next Settlement or are not otherwise funded. Refunds will not be funded by Processor from its own means.
+
+8 Property Rights
+8.1 Property Rights
+
+The property rights, including intellectual property rights, in the Software and other materials related to the Services are owned by Processor and its licensors. The User Agreement does not transfer any intellectual property rights to User, but rather provides User with a limited, non-exclusive and non-transferable licence to use the Software and all other materials made available by Processor to User solely for the purpose of using the Services in accordance with the User Agreement and the applicable usage instructions communicated to User via Platform or Processor’s website from time to time.
+
+8.2 Use of Name and Logo
+
+User may refer to Processor as its payment service provider and include an internet link to Processor’s website in the section “frequently asked questions,” or in a similar informational section, on User’s website to explain to its Shoppers that this is why the name “Adyen” may appear on those Shoppers’ bank statements; provided, however, User may not mention Processor on the home page of User’s website. If User includes Processor on its website pursuant to this clause, User must also clearly state on its website that User’s Shoppers may not contact Processor for support or other questions regarding Transactions processed by Processor for User.
+
+User may not use the logo of Processor anywhere on User’s website or create and/or distribute any advertising, promotion, marketing, or similar materials referencing Processor or the Services without the prior express written approval of Processor, which Processor may refuse or withdraw in its discretion.
+
+9 Confidentiality, Privacy, and Compliance
+9.1 Confidentiality
+
+All information relating to User or to Processor which is designated as being confidential or should reasonably be deemed confidential by reason of its nature or content is considered “Confidential Information”. All financial data, user manuals, guides and any Software relating to Processor’s products and services are to be considered Confidential Information. Each party remains the owner of all data made available to the other party. Each party undertakes to take all necessary steps to protect the confidential nature of all Confidential Information of the other party, agreeing, in particular:
+
+a. to share Confidential Information solely with personnel and representatives of the parties (including Platform) which have a need to have access to such information in order to exercise rights and obligations under the User Agreement; and
+
+b. to refrain from making any Confidential Information available to any third party without the prior written consent of the other party except for Processor where necessary to perform the Services.
+
+The obligation to maintain confidentiality does not apply to information:
+
+a. available to the general public;
+
+b. disclosed to one of the parties by a third party without any obligation of confidentiality;
+
+c. already in the possession of or known to one of the parties at the time of disclosure;
+
+d. developed independently of the Confidential Information by the other party; or
+
+e. if and to the extent that one of the parties and/or their employees are obliged under an act or by decision of a court or administrative authority to disclose such information.
+
+The obligation of confidentiality as described in this clause will remain in effect also following the termination of the User Agreement, regardless of the grounds for termination.
+
+The recipient of the Confidential Information may only use the Confidential Information to perform activities related to the User Agreement. Processor, Platform and User may use de-identified and/or aggregate transaction-related data for various purposes, including but not limited to analysing, tracking, and comparing transaction and other data to develop and provide insights for Platform, User and/or others as well as for developing, marketing, maintaining and/or improving such party’s products and services.
+
+9.2 Privacy
+
+Where Processor acts under the instructions of User and/or Platform, Processor processes Personal Data while performing the Services as data processor or sub-processor under the direction and responsibility of the User and/or Platform in accordance with applicable data protection laws, including the EU General Data Protection Regulation 2016/679, and any successor thereof.
+
+Processor acts as a data controller where Processor sets its own purpose and means of processing, such as for the provision of Acquiring Services and processing Personal Data for KYC and compliance purposes, in accordance with the Privacy Statement, as amended from time to time.
+
+User will comply with Applicable Law governing Personal Data of User’s country of origin and of those countries in which the User offers the User Products and Services from time to time, in particular when processing and sending Personal Data to Processor in the context of using the Services and submitting transactions. Both Processor and User will implement appropriate measures to protect Personal Data against misuse.
+
+Processor may use Transaction data for the purpose of providing insights, optimizing payment performance and improving Processor’s products and services, including, but not limited to, fraud prevention and risk assessment. The processing of any Personal Data for these purposes will be in accordance with the Privacy Statement, as amended from time to time.
+
+9.3 Use of Services
+
+In accordance with Applicable Law on hacking and computer crime, User will only use the Services for the purposes as agreed in the User Agreement and will specifically not perform, or allow to be performed, any actions detrimental to the security or performance of the Services.
+
+10 Duration and Termination
+10.1 Duration
+
+The User Agreement is entered into for an indefinite period from the moment it is accepted by User. User may terminate the User Agreement by providing at least one (1) month prior written notice to Processor. Processor may terminate the User Agreement by providing at least two (2) months’ prior written notice to User, or such longer notice period as required by Applicable Law. Such notices may be given via Platform by either party.
+
+10.2 Termination
+
+User has the right to terminate the User Agreement immediately if:
+
+a. the Service availability in any given calendar month is less than 95%; or
+
+b. the uptime commitments set out in Article 6 of these Terms and Conditions are not met during three (3) consecutive months.
+
+Processor may terminate the User Agreement and/or suspend the Services, including Settlement, immediately for User (in whole or in part) if:
+
+a. the provision of User Products and Services for which Processor provides the Service is reasonably suspected by Processor to be in breach of Applicable Law;
+
+b. User has materially changed the type of User Products and Services without obtaining Processor’s prior written permission to use the Services for the new or changed types of User Products and Services;
+
+c. User materially breaches any of the terms of the User Agreement, the Scheme Rules and/or Applicable Law in the context of using the Services;
+
+d. an Acquirer or Scheme Owner demands Processor to stop or suspend providing Services to User with respect to Payment Methods made available by such Acquirer or Scheme Owner to Processor;
+
+e. Processor finds that an Insolvency has been initiated by or against User, or is likely to be initiated by or against User, and/or User is unable to provide a material part of the User Products and Services;
+
+f. the agreement the User has entered into with Platform for the use of the services of Platform has been terminated or has otherwise expired and/or an event permitting a termination by Platform under any such agreement occurs; or
+
+g. the agreement the Platform has entered into with Processor for the use of the Services of Processor has been terminated or has otherwise expired.
+
+11 Liability
+
+11.1 No Liability for Scheme Owners and Third-Party Acquirers
+
+Processor will only be liable for its own acts or omissions and not for the acts or omissions of third parties or for events or activities originating outside Processor’s systems. This exclusion expressly applies to acts or omissions of Issuing Banks, Scheme Owners, and third-party Acquirers, except if such acts or omissions were caused by the intentional misconduct or willful misconduct of Processor.
+
+11.2 Limitation of Liability
+
+The total liability of Processor under the User Agreement towards User for breach of contract, tort, or under any other legal theory in any calendar year is limited to 10,000 Euro. Processor will not be liable for any loss of profit, business, contracts, revenues or anticipated savings, or damage to good name, or for any other special, indirect, or consequential damages, whether resulting from breach of contract, tort, or under any other legal theory.
+
+Neither Processor, User, nor any other party to the User Agreement excludes or limits its liability under the User Agreement for intent, gross negligence, death, fraud or personal injury.
+
+12 Indemnification
+12.1 Indemnification
+
+To the extent allowed under Applicable Law, Processor will indemnify, defend, and hold User harmless from and against any and all Indemnified Losses incurred by User as a result of any Claim asserting intellectual property rights over Processor’s Software and/or systems.
+
+To the extent allowed under Applicable Law, User will indemnify, defend, and hold Processor harmless from and against any Indemnified Losses incurred by Processor in connection with any Claim based on any of the following: (i) User’s acts or omissions which constitute a breach of the terms of the User Agreement, Applicable Law, and/or the Scheme Rules (including PCI DSS requirements); (ii) User’s use of Processor’s marks; or (iii) the gross negligence, fraud, or willful misconduct of User. Notwithstanding the foregoing, User will not be obligated to indemnify Processor against any Indemnified Losses to the extent that such Indemnified Losses result from Processor’s (i) failure to comply with Applicable Law, or (ii) wilful misconduct, fraud, or gross negligence.
+
+12.2 Taxes
+
+User agrees to indemnity, defend, and hold Processor harmless from and against any taxes, including penalties, interests, surcharges due on any product or service of User or Platform (including but not limited to any Transactions, User Products and Services) and costs or damages related to such taxes. If withholding of any type of taxes or levies is, or was, legally due on any product or service of Platform or User, Processor will be entitled to withhold such taxes at the expense of User. User will (i) apply all reasonable efforts to ensure that Processor cannot be held liable for any taxes and costs or damages related to such taxes, (ii) promptly inform Processor of any such liability, and (iii) provide Processor with all relevant information and documentation in that respect. Furthermore, User and Platform will be jointly and severally liable towards Processor for any such taxes and costs or damages related to such taxes.
+
+13 Governing Law and Dispute Resolution
+13.1 Governing Law
+
+The User Agreement and these Terms and Conditions are solely governed by Dutch law, excluding the Convention on Contracts for the International Sale of Goods.
+
+13.2 Dispute Resolution and Jurisdiction
+
+The parties agree to take all steps necessary to reach an amicable agreement to any dispute or claim arising in relation to the validity, interpretation or fulfilment of the User Agreement. If a dispute cannot be settled amicably within thirty (30) days from the date on which either party has provided written notice of the dispute, then the parties will be bound by the dispute resolution procedure set out in the remainder of this Article 13.
+
+All disputes arising out of or in connection with the User Agreement and these Terms and Conditions, including their validity, interpretation, enforceability, or fulfillment, will be finally settled in a confidential manner in accordance with the Rules of Arbitration of the International Chamber of Commerce (“ICC”) before a tribunal of one (1) or three (3) arbitrators appointed in accordance with said Rules (the “Arbitral Tribunal”). The arbitration will take place in Amsterdam, the Netherlands and will be in the English language.
+
+The decision by the Arbitral Tribunal will be final and binding on the parties and its execution may be presented in any court of competent jurisdiction, including any court with jurisdiction over any party or its property. No party to the User Agreement will challenge the decision or jurisdiction of the Arbitral Tribunal, nor the venue provisions as provided in this clause. Notwithstanding the foregoing, this Article 13 is without prejudice to a party's right to seek interim relief, including provisional or injunctive relief, through the competent courts to protect its rights and interests before, during, or after the arbitration.
+
+14 Miscellaneous
+14.1 Transfer by Processor
+
+Processor will be entitled, at any time, to assign, novate or otherwise transfer the User Agreement to another company in the Processor corporate group (i.e., a company with at least 50% the same shareholders) without the prior consent of User by providing written notice to User (which may be delivered via Platform) of such transfer.
+
+14.2 Transfer by User
+
+Any receivable, including any Settlement amounts, arising under or in connection with the User Agreement is not capable of being pledged or assigned and User is not entitled to otherwise transfer the User Agreement or any receivables thereunder to any third party without Processor’s consent.
+
+14.3 Null Provisions
+
+In the event that any provision in the User Agreement (including these Terms and Conditions) is declared null and void or inapplicable, said provision will be deemed non-existent, and all other provisions of the User Agreement will remain applicable. The parties undertake to take all steps to eliminate the provision declared null and void and/or inapplicable and to replace the same with a provision approaching, insofar as possible, the economic and legal objective of the provision declared null and/or inapplicable.
+
+14.4 Entire Agreement
+
+The User Agreement, including any amendments to it, contains all the commitments between the parties and replaces all other prior contractual commitments between the parties. No representation, warranty or undertaking given by any of the parties to any of the other parties under the User Agreement will be of any force or effect unless expressly reduced to writing and repeated in the User Agreement, and all implied or prior representations, warranties and undertakings are, save to the extent expressly set out in the User Agreement, expressly excluded to the fullest extent permitted by law.
+
+14.5 Changes to the Terms and Conditions
+
+Processor may revise these Terms and Conditions from time to time by giving at least thirty (30) days’ prior written notice to User via Platform, or such longer notice period as required by Applicable Law. If the change has a material adverse impact on User and User does not agree to the change, User may terminate the User Agreement by giving at least one (1) month’s written notice to Processor (such termination notice to be sent at the latest ninety (90) days after User received notice of the change). User is not entitled to object to and will not have the rights set out in this clause for any change which Processor implements in order to comply with Applicable Law, Scheme Rules, or requirements imposed by the relevant Acquirers, Scheme Owners, or financial regulators. For such imposed changes, shorter notice periods may be applied by Processor as is needed to comply with the relevant requirement.
+
+14.6 Written Confirmation of Online Contracting
+
+If these Terms and Conditions are accepted electronically, Processor may at any time request that User confirm its acceptance of the Terms and Conditions by means of a written document signed by an authorised representative of User. If User does not comply with such request within fifteen (15) business days after receiving a request by Processor to do so (which request may be issued to User via the contact email address submitted by User when accepting the User Agreement or via Platform), Processor reserves the right to suspend its provision of part or all of the Services until User has complied with such request.
+
+14.7 Translations
+
+Any translations of the User Agreement which are made available in any languages other than English are provided for convenience purposes only, do not form part of the User Agreement, and have no legally binding effect. In case of any discrepancy between the English version and any translated version of the User Agreement, the English version will prevail as the sole governing version. User agrees not to rely on any translation for interpreting or enforcing the User Agreement. Any disputes will be resolved based on the original English text.
+
+15 Local Requirements
+15.1 EEA Local Requirements
+
+The terms of this Clause 15.1. will only be applicable to Users located in the European Economic Area and, in case of conflict, will prevail over other provisions contained in the User Agreement with respect to said Users.
+
+15.1.1 Applicability of Payment Services Directive
+
+Title 7B of Book 7 of the Dutch Civil Code (Burgerlijk Wetboek) and other laws and regulations implementing Directive (EU) 2015/2366 (“PSD2”) or its predecessor, Directive 2007/64/EC ("PSD"), are not applicable to the extent it is permitted to deviate from relevant provisions in relationships with non-consumers, in accordance with Article 38 and 61 PSD2 (or Article 30 and 41 PSD).
+
+Where Processor provides payment services to User within the European Economic Area ("EEA")and where Shopper's payment service provider is located in the EEA, the parties hereby agree and confirm in accordance with Article 62(2) of PSD2 that User will pay the charges levied by Processor and Shopper will pay the charges levied by their payment service provider (i.e., the “SHA” (Shared) principle).
+
+15.2 United Kingdom Local Requirements
+
+The terms of this Clause 15.2 will only be applicable to Users located in the United Kingdom and, in case of conflict, will prevail over other provisions contained in the User Agreement with respect to said Users.
+
+15.2.1 Applicability of Payment Services Regulations 2017
+
+Part 6 (Information requirements) and Part 7 (Rights and Obligations) of the Payment Services Regulations 2017 (SI 2017/752) (“PSRs 2017”), are not applicable to the extent it is permitted to deviate from relevant provisions in a relationship where User is not a consumer, a micro‑enterprise or a charity, in accordance with Regulation 40(7) and Regulation 63(5) of the PSRs 2017.
+
+Where Processor provides payment services to User within the United Kingdom and where Shopper's payment service provider is located in the United Kingdom, the parties hereby agree and confirm in accordance with Regulation 66(1) PSRs 2017 that User will pay the charges levied by Processor and Shopper will pay the charges levied by their payment service provider (i.e., the “SHA” (Shared) principle).
+
+15.2.2 Complaints
+
+Users that are eligible to do so pursuant to Applicable Law may submit a complaint to the Financial Ombudsman Service via https://www.financial-ombudsman.org.uk/businesses/resolving-complaint/ordering-leaflet/leaflet.
+
+15.3 Ireland Local Requirements
+
+The terms of this Clause 15.3 will only be applicable to Users located in Ireland and, in case of conflict, will prevail over other provisions contained in the User Agreement with respect to said Users.
+
+15.3.1 Regulatory Compliance
+
+Processor is licensed as a credit institution by De Nederlandsche Bank. This includes the ability to provide cross-border services in the European Economic Area. Processor is subject to and complies with the Central Bank of Ireland codes of conduct and Central Bank of Ireland regulations, which can be found at https://www.centralbank.ie/.
+
+15.3.2 Conflict of Interest Policy
+
+Processor maintains and complies with a policy on the identification and management of conflicts of interest to support Processor and its employees in the prevention, identification, management, and documentation of actual or potential conflicts of interest.
+
+15.3.3 Complaints
+
+Users that are eligible to do so pursuant to Applicable Law may submit a complaint to Processor via https://www.adyen.com/contact/complaint.
+
+15.4 Canada Local Requirements
+15.4.1 Regulatory Disclosures
+
+The mandatory Canadian regulatory disclosures under this agreement are available at https://www.adyen.com/licenses/canada-information-summary-box.
+
+15.4.2 English Language
+
+This agreement is available in both French and English language versions. You hereby confirm that you have agreed that this agreement and all related documents be drafted in English, that you have been provided with a French language version of this agreement and that you have agreed to be bound by the English language version of this agreement. La présente convention est disponible en français et en anglais. Vous confirmez par la présente que vous avez accepté que la présente convention et tous les documents y étant afférents soient rédigés en anglais, que vous avez reçu une version française de la présente convention et que vous avez accepté d'être lié par la version anglaise de la présente convention.
+
+15.5 Australia Local Requirements
+
+The terms of this Clause 15.5 will only be applicable to Users located in Australia and, in case of conflict, will prevail over other provisions contained in the User Agreement with respect to said Users.
+
+15.5.1 Regulatory Disclosures
+
+User is advised to read and consider the Combined Financial Services Guide and Product Disclosure Statement available at https://www.adyen.com/legal/combined-financial-services-guide before acquiring or using the Services.
+
+15.5.2 Surcharging
+
+Users in Australia will not impose a surcharge or any other fee on the relevant Payment Methods that exceeds the amount said User pays for that Payment Method as a percentage of the total price.
+
+15.6 Singapore Local Requirements
+
+The terms of this Clause 15.6 will only be applicable to Users located in Singapore and, in case of conflict, will prevail over other provisions contained in the User Agreement with respect to said Users.
+
+15.6.1 Safeguarding
+
+Services that are regulated under the Singapore Payment Services Act 2019 will be provided by Adyen Singapore Pte Ltd. only. Funds received by Adyen Singapore Pte Ltd. from relevant (third-party) Acquirers, Scheme Owners, and/or Issuers, as applicable, in connection with User’s Transactions that are not Settled to User by the end of the same business day (the "Relevant Funds") will be deposited in bank accounts maintained with a licensed bank in Singapore (the “Bank”) and held in the name of Adyen Singapore Pte Ltd. on trust for and on behalf of User (each, a “Trust Account”). Relevant Funds held in such Trust Accounts are (i) segregated from Adyen Singapore Pte Ltd.’s own funds, (ii) commingled with similar funds belonging to other merchants, and (iii) held on an omnibus basis. The risks of such commingling include that any shortfall in such Trust Accounts will be shared amongst all merchants of Adyen Singapore Pte Ltd. on a pro rata basis. Adyen Singapore Pte Ltd. will remain responsible to Settle the Relevant Funds to User in accordance with the User Agreement. If the Bank becomes insolvent, in accordance with Applicable Law in Singapore, Adyen Singapore Pte Ltd. (in its capacity as Trust Account holder) will rank as an unsecured creditor for any amounts owing to it, and to the extent that Adyen Singapore Pte Ltd. is unable to recover the full amount owing to it, this may have a negative impact on the amount that Adyen Singapore Pte Ltd. holds on trust for its merchants.
+
+ABOUT
+Press & media
+Careers
+Investor Relations
+Partner with us
+Contact
+PRODUCTS
+Unified Payments
+Risk management
+Authentication
+Issuing
+Pricing
+RESOURCES
+Documentation
+Academy
+Knowledge Hub
+Newsletter
+PLATFORM
+Infrastructure
+Licenses
+Legal
+Terms & Conditions
+Responsible disclosure policy
+Service Status
+SUBSCRIBE TO OUR NEWSLETTER
+Subscribe to our newsletter
+Subscribe to our newsletter
+PRIVACY
+COOKIES
+DISCLAIMER
+© 2026 ADYEN
+Global (English)
+Global (English)
+Cookie Policy
+This website uses cookies and other tracking technologies to enhance user experience and to analyze performance and traffic on our website. We also share information about your use of our site with our social media, advertising and analytics partners. If we have detected an opt-out preference signal then it will be honored. Further information is available in our Privacy Statement.
+Accept Cookies
+Reject All
+Cookie settings

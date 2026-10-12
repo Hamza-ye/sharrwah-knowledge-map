@@ -1,0 +1,23 @@
+{
+ "n": 34,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md",
+ "dir": "items/034-help.shopify.com",
+ "fetched_at": "2026-10-12T10:50:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1705,
+ "cited_in": [
+  "S01-SH-C153",
+  "S01-SH-C154",
+  "S01-SH-C155",
+  "S01-SH-C156",
+  "S01-SH-C157",
+  "S01-SH-C158"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a264f4c093143a1f1a079fc46d745e1d3a9989cd85d2cd805539ae1e1f0fbb67",
+ "raw_ext": "txt"
+}

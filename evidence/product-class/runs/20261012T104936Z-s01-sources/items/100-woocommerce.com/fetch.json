@@ -1,0 +1,20 @@
+{
+ "n": 100,
+ "url": "https://woocommerce.com/document/woopayments/payouts/why-payouts-suspended/",
+ "dir": "items/100-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/payouts/why-payouts-suspended/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46171,
+ "cited_in": [
+  "S01-WC-C054",
+  "S01-WC-C055",
+  "S01-WC-C056"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4cbb1641bb01bec0af368dd8a2683e725a76e20b0884edb7ba8300c846733d1a",
+ "raw_ext": "html"
+}

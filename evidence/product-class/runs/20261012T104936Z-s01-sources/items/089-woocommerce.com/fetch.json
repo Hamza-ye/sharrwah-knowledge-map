@@ -1,0 +1,18 @@
+{
+ "n": 89,
+ "url": "https://woocommerce.com/document/woopayments/in-person-payments/",
+ "dir": "items/089-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/in-person-payments/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 41304,
+ "cited_in": [
+  "S01-WC-C095"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b422bbff8dfcf4b7f354ff25e02a427fa1b7fe6a34c92cee00151e23ffb9dd60",
+ "raw_ext": "html"
+}

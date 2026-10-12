@@ -1,0 +1,26 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 10:51:15 GMT
+content-type: text/html; charset=utf-8
+age: 2540
+cache-control: public, max-age=0, must-revalidate
+content-encoding: br
+content-security-policy: frame-ancestors 'self' app.makeswift.com
+document-policy: js-profiling
+etag: W/"it73lguautycgq"
+referrer-policy: no-referrer-when-downgrade
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-matched-path: /en-GB/[[...path]]
+x-powered-by: Next.js
+x-vercel-cache: HIT
+x-vercel-id: iad1::iad1::q9qn4-1791802275031-dc07465d1b5f
+cf-cache-status: DYNAMIC
+vary: accept-encoding
+set-cookie: c_consent=%7B%22anonymousId%22%3A%22241779c8-21b0-48b2-ab90-635105934004%22%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Tue, 12 Oct 2027 10:51:15 GMT; Domain=bigcommerce.co.uk; SameSite=lax
+set-cookie: originUrl=www.bigcommerce.co.uk; Path=/; Expires=Tue, 12 Oct 2027 10:51:15 GMT; Domain=bigcommerce.co.uk; SameSite=lax
+set-cookie: __cf_bm=50k91Grw4OmamnFfbsygNKWsJdvRAwJevOY3gIb.ngE-1791802275.0194237-1.0.1.1-0wL8AOIG.aywe6kLdqg.DYsPhBaSpiBqYTFSsybRlJ4LQEIvE0w4dRz1ClEP9ZEvwNJ6OeECmqRxcB3VBJFsGwr4PNusxMGJH5kYSeWwfnqxXz20RbTg6X.YVNEikTqW; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.co.uk; Expires=Mon, 12 Oct 2026 11:21:15 GMT
+cf-ray: a4958c5adb8fac05-IAD
+alt-svc: h3=":443"; ma=86400
+

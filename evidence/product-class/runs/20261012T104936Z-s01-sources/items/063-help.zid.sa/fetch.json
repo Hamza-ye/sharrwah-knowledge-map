@@ -1,0 +1,18 @@
+{
+ "n": 63,
+ "url": "https://help.zid.sa/mazeed-settlement-2/",
+ "dir": "items/063-help.zid.sa",
+ "fetched_at": "2026-10-12T10:50:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/mazeed-settlement-2/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25096,
+ "cited_in": [
+  "S01-ZD-C170"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "736812061ebc5278acfcc7f35305c779b6b97af9ede4b20c3cacde480279a695",
+ "raw_ext": "html"
+}

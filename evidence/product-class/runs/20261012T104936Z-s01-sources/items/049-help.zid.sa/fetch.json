@@ -1,0 +1,18 @@
+{
+ "n": 49,
+ "url": "https://help.zid.sa/bank-accounts/",
+ "dir": "items/049-help.zid.sa",
+ "fetched_at": "2026-10-12T10:50:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/bank-accounts/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26037,
+ "cited_in": [
+  "S01-ZD-C144"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3d9fa8c5c47499477f90b0155b3025a97de46d4e30d2d5bb9831045d08632d6b",
+ "raw_ext": "html"
+}

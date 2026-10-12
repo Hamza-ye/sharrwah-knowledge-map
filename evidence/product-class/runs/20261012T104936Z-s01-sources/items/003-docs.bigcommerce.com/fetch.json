@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/orders/overview.md",
+ "dir": "items/003-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T10:49:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/orders/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 6459,
+ "cited_in": [
+  "S01-BC-C006"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d060aa3237d3554b153947aa3a98391039b165a0f5280f9bc945f3b206601e9d",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 17,
+ "url": "https://help.salla.sa/article/-محفظة-المتجر/pywwgwsmrn1xs94esdv4ce67",
+ "dir": "items/017-help.salla.sa",
+ "fetched_at": "2026-10-12T10:49:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/-محفظة-المتجر/pywwgwsmrn1xs94esdv4ce67",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 139636,
+ "cited_in": [
+  "S01-SA-C026",
+  "S01-SA-C127"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c81b43fafe9780e3f9a73ff10350937bcc02a38d6b4f7351161213726bc2f258",
+ "raw_ext": "html"
+}

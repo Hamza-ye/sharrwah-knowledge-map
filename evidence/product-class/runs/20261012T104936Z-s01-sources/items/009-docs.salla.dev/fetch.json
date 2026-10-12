@@ -1,0 +1,18 @@
+{
+ "n": 9,
+ "url": "https://docs.salla.dev/1973350f0.md",
+ "dir": "items/009-docs.salla.dev",
+ "fetched_at": "2026-10-12T10:49:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/1973350f0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 334,
+ "cited_in": [
+  "S01-SA-C134"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5d35cdcf8062152b3a97c590451217a924397d80ce31a35be441358ba7f69c05",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,114 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Navigating your Shopify Payments payouts to resolve lower or missing payouts
+
+As a Shopify merchant, understanding how to find your Shopify Payments payouts, troubleshooting delays, and clarifying discrepancies is important when managing your business finances. This article guides you through viewing your payout details, exploring common reasons for lower payouts, and provides steps to take if you can’t locate your payout.
+
+If you need to compare Shopify Payments balance activity across a date range with your financial records or bank deposits, then use the [Shopify Payments activity report](/manual/payments/shopify-payments/payouts/payouts-activity-report).
+
+## View your Shopify Payments payouts
+
+You can access your payout balance and payout schedule directly from your Shopify admin. Payouts are synchronized with your orders, making it easy to view how much you earned per transaction.
+
+On the **Payouts** page, you can find your payout statuses and you can track any notifications or alerts related to your payouts.
+
+#### Steps:
+
+&lt;div class="sections"&gt;&lt;details open&gt;&lt;summary id="desktop"&gt;Desktop&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;From your &lt;a href="https://www.shopify.com/login?ui_locales=en"&gt;Shopify admin&lt;/a&gt;, go to &lt;strong&gt;Finance&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Payout balance&lt;/strong&gt; section, click &lt;strong&gt;View payouts&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;details&gt;&lt;summary id="mobile"&gt;Mobile&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From the &lt;a href="https://www.shopify.com/install/detect"&gt;Shopify app&lt;/a&gt;, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" /&gt; icon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap &lt;strong&gt;Finance&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Payout balance&lt;/strong&gt; section, tap &lt;strong&gt;View payouts&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;/div&gt;
+
+&lt;aside class="note note-information"&gt;&lt;h4&gt;Tip&lt;/h4&gt;&lt;p&gt;If you use &lt;a href="/en/manual/finance/shopify-balance/index"&gt;Shopify Balance&lt;/a&gt;, then you can also &lt;a href="/en/manual/finance/shopify-balance/payouts/payout-accounts#view-shopify-payments-payouts-in-your-balance-account"&gt;view your Shopify Payments payouts in your Balance account&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+
+## Understanding Shopify Payments payout statuses
+
+On the **Payouts** page, you can find the current status of each payout in the **All payouts** section. The following is a breakdown of the payout statuses you might encounter:
+
+* **Scheduled**: The payout is being processed and has been batched together with other transactions. It’s on its way to your bank account and will be sent shortly. The batching process allows multiple transactions to be combined into one payout, making the transfer more efficient. The payout is being processed and will be sent to your bank account soon.
+* **Deposited**: The payout has been sent to your bank. It might take your bank 1 to 3 business days to process and deposit the funds into your bank account.
+* **Failed**: The payout couldn't be processed due to issues with your bank account. You receive prompts in your Shopify admin with information on how to resolve this. Learn more about [failed Shopify Payments payouts](/manual/payments/shopify-payments/payouts/failed-payouts).
+
+### What to do if your payout status is Deposited but funds haven't arrived
+
+If your payout status is **Deposited** but you haven't yet received the funds in your bank account, then the payout is already on its way to your account, but it might take some time for your bank to process and display it. In these cases, you can check the **Bank reference**, contact your bank with the correct details, and give the payout some time to display on your statement.
+
+#### Steps:
+
+1. **Check your payout status**: Confirm that your payout status is **Deposited**. This means that the payout has been processed, but it doesn’t always mean that the funds are in your bank account immediately.
+2. **Use the Bank reference**: If your payout status isn’t **Failed**, then you can try using the Bank reference when contacting your bank. This number can help them find the transaction. However, not all banks use this reference, so if they don’t have it, it doesn’t mean that the payout hasn’t been received.
+3. **Contact your bank**: If you still can’t find your payout funds, then you can reach out to your bank’s Automated Clearing House (ACH) or Transfers department, as they can search for specific transactions. When you call, be ready to provide the following information to them:
+   * The settlement date
+   * The payout amount
+   * The currency used
+4. **Be patient**: It’s common for funds to display on your statement shortly after the payout is marked as **Deposited**. Consider waiting a couple of business days to give your bank some time to process and display the funds on your statement.
+
+## Common reasons for lower Shopify Payment payouts
+
+Understanding why your payout might be lower than expected can help you manage your finances more effectively. The following are some common reasons for lower payouts and how to investigate them:
+
+* **Review payout details**: Begin by [reviewing the payout details](/manual/payments/shopify-payments/payouts/view-details) in your Shopify admin. You can find specific notifications regarding chargebacks or refunds and a breakdown of transaction fees.
+* **Export transaction data**: To gain a clearer view of your earnings, [export the transactions for a specific payout](/manual/payments/shopify-payments/payouts/view-details#export-a-payout). The CSV file includes columns for **Amount**, **Fee**, and **Net**.
+* **Compare balance activity over time**: Use the [Shopify Payments activity report](/manual/payments/shopify-payments/payouts/payouts-activity-report) to review transactions, fees, refunds, chargebacks, adjustments, and payouts for a selected date range and payout currency.
+
+### Potential reasons for lower Shopify Payments payouts
+
+If you notice that your payout is less than expected, then there are several reasons why this could occur:
+
+* **Adjustments**: Your payout overview might include adjustments, which could either increase or decrease the final amount. The specific nature of these adjustments would be detailed in the payout breakdown. Examples of adjustments include chargeback_fee, chargeback_protection, shopify_collective_debit, shopify_collective_credit, seller_protection, and tax_adjustment.
+* **Chargebacks**: If any customers initiated a dispute or chargeback, then the payment amount and any associated dispute fees are deducted from your account. This deduction would result in a lower payout.
+* **Currency conversion**: If you receive payouts in a different currency than the currency you sell in, then the payout amount is subject to currency conversion, and fees might apply.
+* **Negative balance**: If your account has a negative balance due to past fees or refunds exceeding your earnings, then your payout might be reduced to cover this balance.
+* **Payout holds**: Although a payout hold usually delays the entire payout, in some cases, a portion of the funds might be held back and the rest is paid out if the hold is related to a specific issue with certain transactions.
+* **Refunds**: If you processed any refunds since your last payout, then the refunded amounts are deducted from your next available payout. This would directly reduce the total amount you receive.
+* **Reserves**: A [reserve](/manual/payments/shopify-payments/payouts/reserves) might be temporarily established to protect against potential losses from disputes.
+* **Shopify Payments processing fees**: Each transaction incurs processing fees that are deducted from your earnings before the payout is sent. The fee amount depends on your Shopify plan. Learn more about [payout fees and how to view your Shopify Payments credit card rate](/manual/payments/shopify-payments/payouts/pay-periods-and-fees).
+* **Taxes on fees**: In certain regions, applicable taxes might be deducted from your processing fees. Learn more about [tax assessment on Shopify Payments fees](/manual/payments/shopify-payments/payouts/pay-periods-and-fees).
+
+## Understanding missing Shopify Payments payouts after updating your bank account
+
+If you recently updated your bank account details and haven’t received your payout, then consider the following possibilities for a missing payout.
+
+### Account currency mismatch with new bank
+
+Ensure that the currency of your new bank account is supported for Shopify Payments payouts in your region. An account currency mismatch can lead to payout failures.
+
+### Account review
+
+After changing your bank account details, a review or verification of the new account might be required. This process can temporarily hold payouts until the review is complete. To stay informed, regularly check your Merchant Alerts in your Shopify admin and your store owner email for any notifications related to account verification.
+
+### Errors in new account details
+
+Ensure that you’ve entered your new bank account information correctly. Common errors include incorrect account or routing numbers, or selecting the wrong type of account. If there are discrepancies, then this may lead to payout failures.
+
+In such cases, you receive an email notification from Shopify indicating a problem. The [**Payouts**](https://admin.shopify.com/payments/payouts) page of your Shopify admin also displays a **Failed** status.
+
+To resolve this, you need to update your bank account information again and possibly retry the payout.
+
+### Updating your bank account information while having scheduled Shopify Payments payouts
+
+If you change your bank account details after a payout is already in transit, then that payout still goes to your old bank account. Future payouts go to your new bank account.
+
+Updating your bank account only affects payouts that haven’t been initiated yet. Usually, updating your account details doesn’t affect your payout schedule. You need to check with your old bank account to find out if the funds arrive there or if they're returned.
+
+## What to do if your Shopify Payments payout is missing
+
+There are various reasons why your payout might not have arrived as expected. Here’s a checklist of steps to troubleshoot the issue:
+
+1. **Review the payout status**: In your Shopify admin, check the status of your payout. If it displays as **Deposited**, then the payout is on its way to your account.
+2. **Check bank processing times**: After a payout is marked as **Deposited**, allow 1 to 3 business days for your bank to process it. Remember, banks don’t process transactions on weekends or holidays.
+3. **Verify bank account information**: Ensure that your bank account details are accurate and match the information that you provided in your Shopify admin. An incorrect account number or mismatched account type can lead to delays.
+4. **Inspect for holds**: Temporary holds might occur during account reviews or due to other compliance-related issues. Check for any notifications in your Shopify admin.
+5. **Review email notifications**: Check any emails from Shopify about payout issues, bank account updates, or requests for additional information.
+6. **Contact your bank**: If the payout is marked as **Deposited** and you haven't received it, then share the bank reference number, also known as the Trace ID, with your bank for further assistance.
+
+Learn more about [payout delays](/manual/payments/shopify-payments/payouts/payout-timing).
+</pre></body></html>

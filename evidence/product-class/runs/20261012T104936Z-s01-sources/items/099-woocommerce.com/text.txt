@@ -1,0 +1,259 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Payouts / When will I receive payouts for my WooPayments account balance?
+When will I receive payouts for my WooPayments account balance?
+
+Money that you’ve made with WooPayments must flow through your WooPayments account balance before it’s paid out into your bank account.
+
+This page provides details about when payouts will occur and how certain factors, like the timing of specific transactions, can impact when a payout is processed.
+
+Balance information
+
+There are two figures shown on the Payments > Overview page:
+
+The Total Balance figure represents all the money you’ve earned via WooPayments that has not yet been paid out to your bank account.
+The Available Funds figure is the portion of the total balance that is available for the next scheduled payout, whenever that occurs.
+
+Although it’s not shown in the chart, there is a third figure called the Pending Funds. This is simply the portion of the total balance that is not available to be paid out yet. In other words, the three balances are calculated like so:
+
+Total Balance = Pending Funds + Available Funds
+
+See the sections below for more information on each bucket of funds.
+
+Pending funds
+
+When a WooPayments transaction occurs on your site, the money from that transaction takes some time to process before it becomes available to be paid out. During this time, the money is “pending” and is included in the Pending Funds amount.
+
+The time those funds take to flow through your account is called the “pending period”, and its length depends on your WooPayments account country.
+
+This chart shows our standard pending periods.
+
+COUNTRY	PENDING PERIOD
+Australia, United States	2 business days
+Japan, New Zealand	4 business days
+United Arab Emirates	5 business days
+Hong Kong, Singapore	7 calendar days
+All other countries	3 business days
+
+To illustrate how this works, consider the following examples:
+
+A U.S. merchant makes a sale on a Friday. Their pending period is 2 business days, so the merchant can expect the funds in their bank account on the following Tuesday.
+A merchant in Singapore takes a payment on Thursday. Their pending period is 7 calendar days, so they can expect the funds a week later: the following Thursday.
+
+NOTE: Most banks deposit incoming funds into your bank account as soon as they receive it, but some might take a few extra days to make it available. So while the chart above shows the usual rolling delays, we cannot guarantee those timelines in every case.
+
+Available funds
+
+Once the pending period described above is complete, the money will move from the Pending funds balance to the Available funds balance. This means that the funds are now ready to be paid out to your bank account!
+
+Any funds in the Available funds balance will be paid out according to your payout schedule. This could could be daily, weekly, or monthly.
+
+Total balance
+
+The Total balance is simply the total of your Available funds plus your Pending funds. This means you can expect the Total balance and Available funds values to differ if you’ve had any recent payments activity on your site.
+
+Sometimes, your Total balance value may be less than the Available funds balance:
+
+This is almost always temporary, and can occur from time to time when your Pending balance is reduced. This may happen when you:
+
+Refund a customer
+Receive a dispute
+Request an instant payout
+Daily cutoff time
+
+For the purposes of payout timing, new days start at 00:00 UTC for most accounts. Any payments taken after that time will face an additional delay before they’re paid out.
+
+As an example, consider a store owner in Los Angeles who makes sales throughout the day on Tuesday. Any orders placed before 00:00 UTC (5:00pm their time) will be paid out 2 business days later: on Thursday. However, a sale made at 5:19pm will have missed the end-of-day cutoff time. The funds from that sale will arrive on Friday.
+
+Accounts in the Asia-Pacific region work differently. If your WooPayments account is in Australia, Hong Kong, Japan, New Zealand, or Singapore, each day starts at midnight in your local time zone instead of at 00:00 UTC.
+
+Historical behavior
+
+Before July 15, 2026, accounts in the Asia-Pacific region used the midnight UTC cutoff as well, just like all other accounts. Thus, if you are reviewing your payouts from before July 15, 2026, expect them to follow the 00:00 UTC cutoff explained above.
+
+Non-business day payments
+
+Payments processed on a non-business day (such as a weekend day or a holiday in your country) will have their pending period start on the next business day.
+
+For example, if a U.S. store makes a sale on Saturday, the customer is charged right away, but the pending period doesn’t start until Monday. Since the U.S. pending period is 2 business days, the merchant will get those funds on the following Wednesday.
+
+Payout schedules
+
+The chart and examples above assume that your site is on a daily payout schedule, which is the default for almost all accounts. However, it is possible to change your payout schedule to weekly or monthly. This will of course affect the payout timing.
+
+For example, consider a merchant in New Zealand with their payout schedule set to weekly on Fridays. If a customer orders from their store on Thursday, 4 business days after that would be the following Wednesday.
+
+However, due to their “weekly on Fridays” payout schedule, the funds remain in their account for 2 more days, and are paid out on the following Friday.
+
+NOTE: Changing your payout schedule might not be possible if your payouts are suspended or if your schedule has been manually set by us.
+
+New account waiting period
+
+The first payout for all new accounts is sent after a 7 day waiting period. This delay is necessary for risk mitigation and cannot be waived under any circumstances.
+
+The new account waiting period starts after the first successful payment is processed on your account, not when the account is created.
+
+After the 7 day waiting period is over, the first payout will be sent according to the pending period chart and the payout schedule set on the account.
+
+For example, consider a new U.S. merchant who creates their account on Monday and makes their first sale on Wednesday. Their 7 day waiting period ends on the following Wednesday. Only then does the two business day pending period begin. As such, the money from their first sale would land in their bank account the following Friday.
+
+Minimum payout amounts
+
+Depending on your payout currency, there may be a minimum account balance required before a payout can be sent. These are detailed below.
+
+Currencies not listed in the chart have no minimum payout amount.
+
+CURRENCY	MINIMUM PAYOUT
+AED	2.00
+CHF	5.00
+CZK	30.00
+DKK	20.00
+EUR	1.00
+GBP	1.00
+HUF	360.00
+JPY	1
+NOK	20.00
+PLN	5.00
+RON	5.00
+SEK	20.00
+SGD	1.00
+Maximum payout amounts
+
+If you’re using a bank account to receive payouts, there is no maximum payout amount.
+
+If your store is in the U.S. and you’re using a debit card to receive payouts, the maximum that can be paid out at once is $9,999 USD. If you’re due to receive a payout larger than this, your payouts may be suspended until you add a bank account.
+
+As such, we strongly suggest adding a bank account instead of a debit card.
+
+Currency-specific notes
+
+Payouts issued in Hungarian forint (HUF) are always rounded down to the nearest whole number. The remaining fillérs will be kept in your account balance and continuously “rolled over” as you make more sales.
+
+For example, if you receive payouts in HUF and take a single payment for 12.34 Ft, the resulting payout for that would be 12.00 Ft. The remaining 0.34 Ft would be added to future HUF funds you receive, which would be rounded down again and paid out.
+
+Missing payouts
+
+If you suspect that a payout is missing from your bank account, you can contact the bank and provide the bank reference ID to see if they can find it. It may be best to wait 5 business days before doing this, since bank processes may face delays.
+
+
+Was this guide helpful for you?
+ON THIS PAGE
+Balance information
+Pending funds
+Available funds
+Total balance
+Daily cutoff time
+Historical behavior
+Non-business day payments
+Payout schedules
+New account waiting period
+Minimum payout amounts
+Maximum payout amounts
+Currency-specific notes
+Missing payouts
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+RUCKUS
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

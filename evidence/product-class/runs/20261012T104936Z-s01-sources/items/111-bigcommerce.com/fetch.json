@@ -1,0 +1,21 @@
+{
+ "n": 111,
+ "url": "https://www.bigcommerce.com/payments/paypal/",
+ "dir": "items/111-bigcommerce.com",
+ "fetched_at": "2026-10-12T10:51:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/payments/paypal/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 45512,
+ "cited_in": [
+  "S01-BC-C025",
+  "S01-BC-C026",
+  "S01-BC-C027",
+  "S01-BC-C034"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d750eb5a7f7004d982a9b44c8a43e1d35b6ac712722038ae9c29705c48528b51",
+ "raw_ext": "html"
+}

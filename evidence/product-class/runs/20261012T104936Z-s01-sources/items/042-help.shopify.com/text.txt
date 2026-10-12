@@ -1,0 +1,216 @@
+# Viewing and exporting your Shopify Payments payout details
+
+The [**Payouts**](https://admin.shopify.com/payments/payouts) page of your Shopify admin displays your previous payouts, any scheduled payouts, and the **Payout balance** amount. The **Payout balance** amount represents the funds that have been captured but not yet added to a scheduled payout, not including reserved funds. You can also export your transactions as a CSV file to view the total fees for each payout and pending transaction, or [export the transactions for a specific payout](#export-a-payout).
+
+<aside class="note"><h4>Note</h4><p>Your payouts page might differ from the guidance on this page during the release of a new payouts view in the Shopify admin. If you need help managing payouts in the new view, then <a href="/en/manual/your-account/contact-shopify-support">contact Shopify Support</a>.</p>
+</aside>
+
+To reconcile balance activity across a date range, you can use the [Shopify Payments activity report](/manual/payments/shopify-payments/payouts/payouts-activity-report) from **Finance** > [**Documents**](https://admin.shopify.com/finance/documents) in your Shopify admin.
+
+## Using the new payouts view
+
+<aside class="note note-beta"><h4>Early access</h4><p>The new payouts view is in early access and is available only to some merchants.</p>
+</aside>
+
+In the new payouts view, payouts are grouped by payout date. For each payout date, you can review the total amount paid or expected, individual payouts for that date, and the transactions and adjustments that make up the amount.
+
+The new payouts view can include the following details:
+
+* Payout status
+* Payout ID
+* Payout amount
+* The bank account where the payout is being sent
+* The transfer reference number, when available
+* A breakdown of charges, refunds, adjustments, fees, and reserves
+* Transactions included in the payout
+
+Pending payout amounts and payout dates are estimates. The final payout amount can change before funds are sent to your bank account because of refunds, chargebacks, reserves, adjustments, or processing updates.
+
+If your store receives payouts in multiple currencies, then payout and transaction details can be separated by currency. To learn more, refer to [payouts in multiple currencies](/manual/payments/shopify-payments/store-currency/payouts-in-multiple-currencies).
+
+## View your payouts
+
+You can view your scheduled payouts, payout balance, and previous payouts from the Shopify admin. Payments are synced with their orders. This makes it easy to review the amount of funds that you receive for an individual order.
+
+<div class="sections"><details open><summary id="desktop">Desktop</summary><ol>
+<li>From your <a href="https://www.shopify.com/login?ui_locales=en">Shopify admin</a>, go to <strong>Finance</strong>.</li>
+<li>In the <strong>Payouts</strong> section, click <strong>View payouts</strong>.</li>
+</ol>
+</details><details><summary id="mobile">Mobile</summary><ol>
+<li><p>From the <a href="https://www.shopify.com/install/detect">Shopify app</a>, tap the <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" /> icon.</p>
+</li>
+<li><p>Tap <strong>Finance</strong>.</p>
+</li>
+<li><p>In the <strong>Payouts</strong> section, tap <strong>View payouts</strong>.</p>
+</li>
+</ol>
+</details></div>
+
+
+## Filtering transactions
+
+You can use the following filters to review your transactions:
+
+* **Transaction type**: Filter by specific transaction types.
+* **Payout status**: View transactions by their payout status.
+* **Payment method**: Filter by payment method used.
+* **Credit card**: Filter by specific credit card types.
+* **Transaction date**: Filter by date range when transactions occurred.
+* **Payout date**: Filter by when transactions were paid out.
+* **Currency**: Filter by transaction currency.
+
+You can save filtered searches for future use. For example, you can create a saved view that displays only transactions in CAD currency, which is useful if you're selling in multiple currencies.
+
+## Payout status {#payout-status}
+
+The **All payouts** section of the **Payouts** page lists all of your payouts and their current status:
+
+<div>
+<table>
+  <caption>This table outlines the different payout statuses and provides a description for each status.</caption>
+  <thead>
+     <tr>
+        <th scope="col"><b>Status</b></th>
+        <th scope="col"><b>Description</b></th>
+     </tr>
+  </thead>
+  <tbody>
+     <tr>
+        <th scope="row">Scheduled</th>
+        <td>The payout is in the process of being sent to your bank account.</td>
+     </tr>
+     <tr>
+        <th scope="row">Deposited</th>
+        <td>The payout was sent to your bank. This doesn't mean that you have the funds in your bank account. Your bank might still need to process and deposit the funds into your account, which typically takes between 1-3 business days depending on your bank.</td>
+     </tr>
+     <tr>
+        <th scope="row">Failed</th>
+        <td>Your bank <a href="/manual/payments/shopify-payments/payouts/failed-payouts">failed to successfully process the payout</a>, and the funds weren't deposited. You should follow the prompts in your Shopify admin to learn about next steps.</td>
+     </tr>
+     <tr>
+        <th scope="row">Withdrawn</th>
+        <td>The withdrawal request was sent to your bank. This doesn't mean that the funds have been removed from your bank account. Your bank might still need to process the request, which typically takes between 1-3 business days depending on your bank. This status only applies in regions where Shopify Payments debits negative balances.</td>
+     </tr>
+  </tbody>
+</table>
+</div>
+
+## View a specific payout {#view-a-payout}
+
+You can navigate to the [**Finance**](https://admin.shopify.com/finance) > [**Payouts**](https://admin.shopify.com/payments/payouts) page of your Shopify admin to review the details of a specific payout by clicking the Payout date in the Payout transactions table.
+
+The **Overview** section displays the following information about the payout:
+
+* The total amount of the payout.
+* The payout status.
+* The bank account that the payout is transferring to.
+* The transfer reference number (where available).
+* A breakdown of the charges, refunds, adjustments, and reserves.
+
+The **Transactions** section shows the details of each transaction included in the payout.
+
+For more information about the status of a specific payout, you can reach out to the bank connected to your Shopify Payments account and provide them with the payout's transfer reference number.
+
+## View all transactions
+
+Clicking **View order transactions** on the **Payouts** page lists all transactions associated with all of your payouts.
+
+Transactions share the same [status](/manual/payments/shopify-payments/payouts/view-details) as payouts with the addition of the **Pending** status. Transactions marked as **Pending** are for sales that you've made, but that haven't been added to a payout and sent to your bank account yet. The Payout Date for pending transactions is an estimate only.
+
+## Export your transactions {#export-transactions}
+
+The total fees for each payout and pending transaction are displayed in the **Transactions** table. You can export the transactions for a specific payout, or export all of your transactions, to a CSV file. Both exports contain the same [CSV file columns](#csv-file-columns).
+
+<aside class="note"><h4>Note</h4><p>Exported CSV files are emailed to you and the Shopify store owner.</p>
+</aside>
+
+### Export a specific payout {#export-a-payout}
+
+You can export only the transactions that are included in a specific payout. Use this export when you need to reconcile one payout or bank deposit.
+
+<div class="sections"><details open><summary id="new-payouts-view">New payouts view</summary><ol>
+<li>From your Shopify admin, go to <a href="https://admin.shopify.com/finance"><strong>Finance</strong></a> &gt; <a href="https://admin.shopify.com/payments/payouts"><strong>Payouts</strong></a>.</li>
+<li>Click the payout date, and then click the payout that you want to export.</li>
+<li>Optional: To export only some of the payout&#39;s transactions, search or filter the transactions in the payout details.</li>
+<li>In the payout details, click the <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/ExportIcon.svg" alt="Export" class="admin-icon" /> icon.</li>
+<li>Click <strong>Export payout transactions</strong>.</li>
+</ol>
+</details><details><summary id="original-payouts-view">Original payouts view</summary><ol>
+<li>From your Shopify admin, go to <a href="https://admin.shopify.com/finance"><strong>Finance</strong></a> &gt; <a href="https://admin.shopify.com/payments/payouts"><strong>Payouts</strong></a>.</li>
+<li>Click the date of the payout that you want to export. If you have more than one payout on the same day, then click the specific payout that you need the transaction breakdown for.</li>
+<li>Click <strong>Export</strong>.</li>
+<li>Click <strong>Export payout transactions</strong>.</li>
+</ol>
+</details></div>
+
+### Export all transactions {#export-all-transactions}
+
+You can export all of your transactions, or the transactions within a date range.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** > [**Payments**](https://admin.shopify.com/settings/payments).
+
+
+2. Click **View payouts**.
+3. Click **View Transactions**.
+4. Click **Export**.
+5. Select the range of transactions that you want to export and the type of CSV file, and then click **Export balance transactions**.
+
+### CSV file columns {#csv-file-columns}
+
+The CSV file contains the following information:
+
+<div>
+<table class="varlist">
+<caption>Shopify Payments payouts CSV file columns and descriptions</caption>
+<tbody>
+  <col style="width:33%">
+  <col style="width:67%">
+  <tr>
+    <td scope="row" translate="no"><strong>Transaction Date</strong></td>
+    <td>The date and time that the transaction occurred, including the time zone. Example: <code>2017-06-20 11:26:40 -0400</code></td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Type</strong></td>
+    <td>The type of transaction. Example: <code>adjustment</code> or <code>refund</code></td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Order</strong></td>
+    <td>The number associated with the order.</td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Card Brand</strong></td>
+    <td>The type of card used for the transaction. Example: <code>visa</code></td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Card Source</strong></td>
+    <td>The method by which the card was charged. Example: <code>swiped</code></td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Payout Status</strong></td>
+    <td>The payout status of the transaction. Example: <code>pending</code></td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Payout Date</strong></td>
+    <td>The date of the payout.</td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Available On</strong></td>
+    <td>The date that the payout will be available.</td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Amount</strong></td>
+    <td>The amount of the transaction.</td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Fee</strong></td>
+    <td>The fee applied to the transaction.</td>
+  </tr>
+  <tr>
+    <td scope="row" translate="no"><strong>Net</strong></td>
+    <td>The difference between the amount and the fee.</td>
+  </tr>
+</tbody>
+</table>
+</div>

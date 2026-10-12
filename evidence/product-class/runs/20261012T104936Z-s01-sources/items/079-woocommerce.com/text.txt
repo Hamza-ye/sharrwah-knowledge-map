@@ -1,0 +1,164 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce
+Getting started
+Migrating to WooCommerce
+Products
+Expand
+Taxes
+Shipping
+Expand
+Payments
+Orders
+Data and reporting
+Customers
+Marketing
+Site administration
+Expand
+Store design
+Expand
+Mobile App
+Expand
+Get help
+Expand
+Documentation / WooCommerce / Payments / Direct Bank Transfer (BACS)
+Direct Bank Transfer (BACS)
+
+Direct Bank Transfer, which might also be referred to as Bank Account Clearing System (BACS), is a payment method that lets your customers pay you directly via their bank account. This is an offline payment method, meaning that the payment process is manual and happens outside your WooCommerce powered store.
+
+It’s important to be clear that when a customer chooses to pay with Direct Bank Transfer, it is up to them to initiate this payment via their bank. The order is set to “On hold” in WooCommerce, as you the store owner must check your bank account for this incoming deposit before processing their order. It’s essential to verify that you’ve been paid, and the transaction has cleared and is in your account before shipping an order and marking it as Processing or Completed. For more information, see Managing Orders.
+
+Setup and Configuration
+
+Follow the steps below to activate and setup Direct Bank Transfer (BACS) on your store:
+
+Go to WooCommerce > Settings > Payments > Take offline payments.
+Use the Enable button for Direct Bank Transfer.
+After enabling, use the Manage button to access the Direct Bank Transfer (BACS) settings.
+Configure your Direct Bank Transfer settings:
+Enable/Disable – Enable to use. Disable to turn off.
+Title – Choose the title shown to customers during checkout.
+Description – Add info shown to customers if they choose Direct Bank Transfer.
+Instructions – Explain how to make payment to your bank account(s).
+Account details – View, edit, delete or re-order bank account information. The Account Details column will display either the IBAN or Account Number.
+Add account –  Enter account name and number, bank name, routing number, IBAN and/or SWIFT/BIC numbers shown to customers on the Order Received page and in Order emails after checking out.
+Save changes.
+
+Bank account details will show on both the Order Received page and the order email sent to the customer:
+
+How a payment processed with BACS looks on the “Order Received” page.
+How an order processed with BACS looks in an order email.
+Guidance for Merchants: Handling delayed customer bank transfers.
+
+If a customer selected Direct Bank Transfer (BACS) for payment and you, as the merchant, have not received the funds within the expected timeframe, here’s what you can do:
+
+Initiate contact with the customer: Inquire whether they have initiated the bank transfer and request a transaction reference number to help track the payment.
+Reach out to your banking institution to inquire about the status of the incoming payment. Give them the reference number provided by your customer, if available.
+
+Important Note:
+
+WooPayments does not possess the capability to interface with the BACS processing system. Consequently, the WooPayments support staff cannot aid in tracing BACS payments that have not been received. It is upon merchants to directly engage with their customers and banking institution to resolve any payment discrepancies.
+
+Questions and support
+
+Do you still have questions and need assistance? 
+
+This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you’ll often find that your question has been asked and answered before.
+
+If you haven’t created a WordPress.org account to use the forums, here’s how.
+
+If you’re looking to extend the core functionality shown here, we recommend reviewing available extensions in the WooCommerce Marketplace.
+Need ongoing advanced support or a customization built for WooCommerce? Hire a Woo Agency Partner.
+Are you a developer building your own WooCommerce integration or extension? Check our Developer Resources.
+
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Setup and Configuration
+Guidance for Merchants: Handling delayed customer bank transfers.
+Questions and support
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+OPUS
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

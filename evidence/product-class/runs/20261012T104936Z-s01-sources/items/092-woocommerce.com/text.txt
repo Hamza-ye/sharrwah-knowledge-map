@@ -1,0 +1,227 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+Documentation / Products / WooPayments / WooPayments Documentation / WooPayments: Our Policies / WooPayments: Reserves
+WooPayments: Reserves
+
+Because WooPayments is built in partnership with Stripe, they make the final decision on whether or not to temporarily withhold some or all of your balance based on perceived risk factors. This is called a “reserve.”
+
+Reserves are meant to protect the payments processor (Stripe, in this case) against losses arising from future refunds and disputes. Funds that are withheld as part of a reserve will, in time, be paid out into your bank account as normal once the reserve has ended, minus any refunds or disputes of course.
+
+NOTE: Because Stripe, not WooPayments, applies and manages reserves, they are the best ones to contact about it. Our visibility into reserves is very limited. We cannot see why one was applied, nor appeal it on your behalf. Thus, if you have questions about your reserve, please contact Stripe directly.
+
+Why is there a reserve on my account?
+
+A reserve may be implemented if Stripe thinks that your business represents a higher than acceptable level of risk. This can be due to a number of reasons, such as:
+
+Your industry’s delivery window is longer than average.
+Your business has an increased risk of non-fulfillment.
+Your account’s dispute activity is higher than normal.
+There’s an unexplainable sharp increase in processing volume.
+
+The size of a reserve is based on the level of risk Stripe associates with your account. To determine the reserve size, Stripe considers a variety of factors, including industry conditions, payment activity, dispute rate, refund rate, and financial stability.
+
+What types of reserves are there?
+
+Stripe uses two types of reserve: fixed and rolling. Either one can also include a balance transfer. The email Stripe sends you will tell you which one applies to your account.
+
+Fixed reserve
+
+With a fixed reserve, a specific percentage of funds from each new sale is held until a future release date. On that date, all the funds are returned to your available balance.
+
+The example below is a 25% fixed reserve with a release date 60 days in the future.
+
+DAY	WHAT HAPPENS
+1	Sale of $100. You receive $96 after fees. Of that, $72 goes to your available balance to be paid out and $24 is held in reserve.
+8	Sale of $300. You receive $288 after fees. Of that, $216 goes to your available balance to be paid out and $72 is held in reserve.
+60	The release date. All $96 held in reserve ($24 from day 1 plus $72 from day 8) moves to your available balance to be paid out.
+Rolling reserve
+
+With a rolling reserve, a percentage of funds from each new sale is held back for a set length of time, measured from the date of that sale. Each reserved amount is released on its own schedule, such that money flows in and out of the reserve continuously.
+
+In the example below, a 25% rolling reserve has been applied with a 30-day window to release. The sales are the same as in the previous example.
+
+DAY	WHAT HAPPENS
+1	Sale of $100. You receive $96 after fees. Of that, $72 goes to your available balance to be paid out and $24 is held in reserve.
+8	Sale of $300. You receive $288 after fees. Of that, $216 goes to your available balance to be paid out and $72 is held in reserve.
+31	The $24 from day 1 has been held for 30 days. It now moves to your available balance and is paid out on your next payout date.
+38	The $72 from day 8 has been held for 30 days. It now moves to your available balance and is paid out on your next payout date.
+Reserve plus balance transfer
+
+Because both a fixed and a rolling reserve only affect new sales, they take time to build up the reserved amount. To cover that gap, Stripe may also move a percentage of your balance into reserve when the reserve is initially applied.
+
+For example, an account holding $10,000 in available funds with a 25% balance transfer would see $2,500 held in reserve, with the remaining $7,500 paid out as normal. This is in addition to the percentage held back from each new sale.
+
+Will I lose money? Is this a fine?
+
+No. A reserve is not a fee or a fine, and you do not lose the money. Stripe simply sets a portion of your funds aside for a time instead of paying it out right away.
+
+In almost all cases, the entire amount being held in reserve will eventually be paid out to your bank account. See the When will the reserve end? section for more details.
+
+What happens if I get a refund or dispute during a reserve?
+
+If a sale is refunded or disputed while its funds are being held in reserve, those reserved funds are released and used to help cover it. This is exactly what a reserve is for.
+
+This also explains why the full amount held in reserve is not always equal to the amount eventually released, since some of it will have been “used up” by refunds and such.
+
+How will I be notified of a reserve?
+
+Stripe will email you directly. That email is your main source of information about the reserve. It includes: the portion of your funds subject to the reserve, the length of the reserve, and a link where you can appeal the reserve.
+
+Information about the reserve is not shown in your WordPress dashboard. The balance on your Payments > Overview page covers only pending, available, and instant funds, and there is no reserve line in your Balance and fees reports.
+
+In payout emails, reserved funds are included in the “Fees and adjustments” line.
+
+Can I still take payments?
+
+Yes. Reserves do not prevent you from charging customers, so your ability to continue taking new orders will not be affected.
+
+Can I appeal a reserve with Stripe?
+
+Yes. The email you receive about the reserve will include a link to appeal.
+
+If you decide to appeal, it’s best to:
+
+Provide as much detail as possible when responding to Stripe’s questions.
+Include any relevant business documentation that you have.
+
+The more information Stripe receives, the faster the appeal process will go.
+
+When will the reserve end?
+
+Reserves usually last 30 to 90 days, but Stripe’s email will contain the specific length of your reserve. Keep in mind that the timeline given in the email is not a guarantee that the reserve will end at that time.
+
+A few days before the reserve ends, Stripe will review your account and decide whether to remove the reserve or adjust it. This decision depends on many factors, including:
+
+The overall financial health of your business
+The number of refunds on your account
+Your account’s dispute activity
+
+Although rare, there are some cases in which a reserve may be extended indefinitely.
+
+How can I avoid a reserve?
+
+There are a number of methods you can use to avoid being subject to a reserve:
+
+Keep customer disputes to a minimum if possible.
+Respond to any disputes quickly after they are filed.
+Protect your business against unauthorized charges.
+Keep detailed business and shipping records.
+Make your store policies easy for customers to find.
+Provide an easy way for customers to contact you.
+Communicate any fulfillment delays to customers.
+Was this guide helpful for you?
+ON THIS PAGE
+Why is there a reserve on my account?
+What types of reserves are there?
+Fixed reserve
+Rolling reserve
+Reserve plus balance transfer
+Will I lose money? Is this a fine?
+What happens if I get a refund or dispute during a reserve?
+How will I be notified of a reserve?
+Can I still take payments?
+Can I appeal a reserve with Stripe?
+When will the reserve end?
+How can I avoid a reserve?
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+JOINT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 10:49:43 GMT
+content-type: text/markdown; charset=utf-8
+age: 37954
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-IAD
+x-vercel-id: iad1::lm86h-1791802182644-b55126836592
+content-encoding: br
+etag: W/"6ff37374bff1c123bb01f50813d0f452"
+link: </developer/learn/courses/b2b-core/purchasing/rest-orders-payments.md>; rel="alternate"; type="text/markdown", </developer/learn/courses/b2b-core/purchasing/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HMsVik6IznU%2BdR7csqWFgxLugUhMdos%2BjrdrjCUAHJjVyK8oCH%2FCmFdlTRipHocRzuAhKJvO6t1CwTyJyj8k6q%2Fl97woL3TZD7484xIBCBit4TE7slMHzDqaGM1wHrjdFvCT2iaZkCaeMA%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=4PYtMTiCb83H0tNFOhG_j.7vGQ2S9ObbGxguv_vgJoc-1791802182.6314297-1.0.1.1-8B_6iT8YHCsVpII6ISlD1RfHd8uCsL_Q6r7fasBQmMyGccz.YiocutGvvRRrwrbi3lB77G0XxVWoR7T6rrIsZ5Lx8K0UvBueAVhm0cJplBQOdO_d4muO3OHARq143jwS; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 12 Oct 2026 11:19:43 GMT
+bc-ray: 1
+cf-ray: a4958a197dcd8aaa-IAD
+alt-svc: h3=":443"; ma=86400
+

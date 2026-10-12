@@ -1,0 +1,19 @@
+{
+ "n": 71,
+ "url": "https://help.zid.sa/zid-faqs/%d9%87%d9%84-%d9%8a%d8%b4%d8%aa%d8%b1%d8%b7-%d9%88%d8%ac%d9%88%d8%af-%d8%b3%d8%ac%d9%84-%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%84%d9%84%d8%aa%d8%b3%d8%ac%d9%8a%d9%84-%d9%81%d9%8a-%d8%b2%d8%af-%d9%88%d8%a7/",
+ "dir": "items/071-help.zid.sa",
+ "fetched_at": "2026-10-12T10:50:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/zid-faqs/%d9%87%d9%84-%d9%8a%d8%b4%d8%aa%d8%b1%d8%b7-%d9%88%d8%ac%d9%88%d8%af-%d8%b3%d8%ac%d9%84-%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%84%d9%84%d8%aa%d8%b3%d8%ac%d9%8a%d9%84-%d9%81%d9%8a-%d8%b2%d8%af-%d9%88%d8%a7/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23127,
+ "cited_in": [
+  "S01-ZD-C287",
+  "S01-ZD-C288"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e841df04e936a071b924d9d2037a117af203329215d96938463282092e66d5bf",
+ "raw_ext": "html"
+}

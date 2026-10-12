@@ -1,0 +1,307 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# REST API - Orders, Invoices, and Payments
+
+Plan: B2B Developer
+
+Lesson 14 of 19 · 30 min
+
+## Orders
+
+### GET Orders
+
+This API request allows you to get a list of orders placed in B2B Edition. There are many different parameters you can add to the request URL to filter the list of orders. The example below uses the *companyId* parameter, but see the [B2B Edition List Orders API reference](/developer/api-reference/rest/b2b/management/orders/get-orders) to see all the possible parameters.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+GET https://api-b2b.bigcommerce.com/api/v3/io/orders?companyId={company_id}
+```
+
+The request above will return a list of orders for the specified company. Remove the `{company_id}`parameter to get a list of all B2B Edition orders.
+
+### GET an Order
+
+This API request uses the BigCommerce order ID, *not* the B2B Edition order ID, to return order details.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+GET https://api-b2b.bigcommerce.com/api/v3/io/orders/{bcOrderId}
+```
+
+The response will include all order details for the specified order.
+
+### GET Order Products
+
+This request also uses the `bcOrderId` instead of the B2B Edition order ID to return product detail for the specified order.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+GET https://api-b2b.bigcommerce.com/api/v3/io/orders/{bcOrderId}/products
+```
+
+### Update an Order
+
+Use this API request to update an order's `poNumber` and `extraFields`. At least one of these fields must be passed in the request body.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+PUT https://api-b2b.bigcommerce.com/api/v3/io/orders/{bcOrderId}
+```
+
+**Example Body:**
+
+```json showLineNumbers={false}
+{
+    "poNumber": "ah21",
+    "status": "Complete"
+}
+```
+
+### Update a Customer's BigCommerce Orders
+
+The following API request will convert a BigCommerce customer's individual order to a company-level order. This API is used when a customer places an order either as a guest or in an individual account. The order will need to be converted to a B2B Company-level order via the API.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+PUT https://api-b2b.bigcommerce.com/api/v3/io/customers/{customerId}/orders/b2b
+```
+
+You will need to include the customers BigCommerce `customerId` in the request URL.
+
+### Create an Order
+
+A B2B order record will automatically be created for all orders placed in BigCommerce, so the explicit use of the Create an Order endpoint is not usually necessary. If, however, you have a need for populating extra information on the B2B record, you can preempt this automatic process with your own webhook and call this endpoint, as long as this is within 10 seconds of order creation.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+POST https://api-b2b.bigcommerce.com/api/v3/io/orders
+```
+
+The required fields for the request body include:
+
+* `bcOrderId` - the order ID in BigCommerce
+* `customerId` - the customer ID of the order creater
+
+You can also include the poNumber and extra fields in the body request depending on the needs of your store. The example body below includes the two required fields plus the `poNumber` field.
+
+**Example Body:**
+
+```json showLineNumbers={false}
+{
+  "bcOrderId": 0,
+  "customerId": 0,
+  "poNumber": "bc156"
+}
+```
+
+## Invoices
+
+### Create an Invoice from an Order
+
+This API request will create an invoice from an order that has already been placed. The only requirement is the B2B Edition `orderId`.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+POST https://api-b2b.bigcommerce.com/api/v3/io/ip/orders/{orderId}/invoices
+```
+
+### Create an Invoice
+
+This request URL will create an invoice in B2B Edition. This endpoint is useful to manually create full invoice details if they cannot be inferred from an order.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+POST https://api-b2b.bigcommerce.com/api/v3/io/ip/invoices
+```
+
+There are a few required fields that are needed in the request body in order to correctly create an invoice with the B2B Edition API. Those required fields include:
+
+* `invoiceNumber` - a string value that specifies the invoice number
+* `originalBalance` - the original balance of the invoice. There are two required sub-fields: code and value
+* `openBalance` - the amount still owed on the invoice, when it is less than or equal to 0 the invoice status will be automatically set to completed. There are two required sub-fields: code and value
+* `customerId` - the B2B Edition company ID
+* `channelId` - the BigCommerce channel ID
+
+For a full list of request body fields, see the [Create an Invoice API reference](/developer/api-reference/rest/b2b/management/invoice-management/invoice/post-invoices). Note that `externalID` refers to an ERP Invoice ID that was created outside of B2B Edition and BigCommerce.
+
+**Example Body:**
+
+```json showLineNumbers={false}
+{
+  "invoiceNumber": "0000003",
+  "originalBalance": {
+    "code": "USD",
+    "value": 500
+  },
+  "openBalance": {
+    "code": "USD",
+    "value": 100
+  },
+  "customerId": "{customer_Id}",
+  "channelId": 1
+}
+```
+
+### Get Invoices
+
+This API request will return a list of invoices that have been created in B2B Edition.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+GET https://api-b2b.bigcommerce.com/api/v3/io/ip/invoices
+```
+
+For a full list of query parameters, see the [Get Invoices API Reference](/developer/api-reference/rest/b2b/management/invoice-management/invoice/get-invoices). Note that `customerId` refers to the company ID, not a B2B Edition user ID.
+
+### Update an Invoice
+
+This API request can be used to update information for an invoice. You will need to include the `invoiceID` as a parameter in the request as shown in the example below.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+PUT https://api-b2b.bigcommerce.com/api/v3/io/ip/invoices/{invoiceId}
+```
+
+For a full list of fields you are able to update with this request, see the [Update an invoice API reference](/developer/api-reference/rest/b2b/management/invoice-management/invoice/put-invoices-invoice-id). One thing to note is that the status can be updated with this API request even if the open balance does not reflect the updated status.
+
+### Export an Invoice as a PDF
+
+Use the endpoint below to create a downloadable PDF that contains invoice details. The response will include a link, which will download a PDF when clicked.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+GET  https://api-b2b.bigcommerce.com/api/v3/io/ip/invoices/{invoiceId}/download-pdf
+```
+
+### Delete an Invoice
+
+This API request will delete an invoice. You must include the `invoiceId` as a request parameter.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+DELETE https://api-b2b.bigcommerce.com/api/v3/io/ip/invoices/{invoiceId}
+```
+
+## Payments
+
+### Get a List of Payments
+
+This API request will return a list of invoice payments.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+GET https://api-b2b.bigcommerce.com/api/v3/io/ip/payments
+```
+
+There are many query parameters that can be used with this type of request. The list below contains some commonly used parameters, but a full list can be found in the [Get Payments API reference](/developer/api-reference/rest/b2b/management/invoice-management/payments/get-payments).
+
+* `customerName` - a B2B Edition company name
+* `invoiceId` - payments are associated with an invoice by `lineItems`, one payment can be associated with multiple invoices
+* `processingStatus` - this is the payment processing status. 0 = Incomplete, 1 = Awaiting Processing, 2 = Processing, 3 = Completed, and 4 = Refunded
+
+This query will return a list of all online and offline payments. Online payments are made through BigCommerce checkout, usually by providing credit card information and then processed online. Offline payments refer to check or money orders that have to be manually recorded.
+
+### Update Payment Processing Status
+
+This API request will update a payment processing status for the provided `paymentId`. This is only relevant for offline payments.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+PUT https://api-b2b.bigcommerce.com/api/v3/io/ip/payments/{paymentId}/processing-status
+```
+
+The new processing status will be specified in the request body. Statuses can be updated to one of the following:
+
+* 1 = Awaiting Processing
+* 2 = Processing
+* 3 = Completed
+* 4 = Refunded
+
+**Example Body:**
+
+```json showLineNumbers={false}
+{
+  "processingStatus": 3
+}
+```
+
+## Payment Methods
+
+### GET Payment Methods
+
+This API request will return a list of available payment methods based on the query parameters.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+GET  https://api-b2b.bigcommerce.com/api/v3/io/company-payment-methods
+```
+
+You can use filter and search parameters to filter by `companyId` or find specific company payment methods with pagination.
+
+### GET Company Payments
+
+This API request will return a list of payment methods associated with the `companyId` that is specified in the request URL.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+GET https://api-b2b.bigcommerce.com/api/v3/io/companies/{companyId}/payments
+```
+
+### Update Company Payments
+
+This API request is used to update a company's payment methods. You can enable or disable payment methods for a company account in batch.
+
+**Example Request:**
+
+```http showLineNumbers={false}
+PUT https://api-b2b.bigcommerce.com/api/v3/io/companies/{companyId}/payments
+```
+
+The request body will contain an array of payment methods that will be updated.
+
+**Example Body:**
+
+```json showLineNumbers={false}
+{
+  "payments": [
+    {
+      "code": "cheque",
+      "isEnabled": true
+    },
+    {
+      "code": "braintree",
+      "isEnabled": true
+    },
+    {
+      "code": "authorizenet",
+      "isEnabled": false
+    }
+  ]
+}
+```
+
+## Resources
+
+* [Orders](/developer/api-reference/rest/b2b/management/orders)
+* [Invoice Management](/developer/api-reference/rest/b2b/management/invoice-management/invoice)
+* [Payments](/developer/api-reference/rest/b2b/management/payment)</pre></body></html>

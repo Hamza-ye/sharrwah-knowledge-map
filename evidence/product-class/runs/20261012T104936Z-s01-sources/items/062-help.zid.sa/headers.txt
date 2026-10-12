@@ -1,0 +1,29 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 10:50:38 GMT
+content-type: text/html; charset=UTF-8
+strict-transport-security: max-age=0; includeSubDomains
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TSnIQkuSShXl%2BqkUT4J9AnzZGfIfZp7C1d3tY7laFMj%2B9ReYWqZlBI8lPGStioxs2a0J538Ny9TRlmZfMNlddXn%2BZb3QWe5mXR6Vb2reqUNqw3nbqDfDXgqJJI13"}]}
+cf-cache-status: DYNAMIC
+age: 1637
+cache-control: public, max-age=0, s-maxage=3600
+last-modified: Mon, 12 Oct 2026 10:23:21 GMT
+link: <https://help.zid.sa/wp-json/>; rel="https://api.w.org/", <https://help.zid.sa/wp-json/wp/v2/posts/10420>; rel="alternate"; title="JSON"; type="application/json", <https://help.zid.sa/?p=10420>; rel=shortlink
+server: cloudflare
+vary: Accept-Encoding
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+ki-cf-cache-status: HIT
+ki-edge-o2o: yes
+x-content-type-options: nosniff
+x-edge-location-klb: 1
+ki-cache-tag: b4027344-7675-4ef5-ad4d-28ab662313dd,2d9e84a56c79418b3af2002abecd66d3bf795e5cc6e0230e2a1ac40740993542
+ki-cache-type: Edge
+ki-edge: v=28.5.1;mv=99.9.9
+ki-origin: g1p
+x-kinsta-cache: HIT
+set-cookie: __cf_bm=8Lj.QyxyAZUTHahtpWm8Au8xZDn3TUsHfSYvs1WJcto-1791802238.6096387-1.0.1.1-SGM.TSWNxcnlTvCRtiz4PN9dxNhq2x_4gEdJ9UryLx3BMouNER_y.T5I4n12ICaWJoFsTWTbD2Ctxh4slwWz3Xp8xdlSBJxLmFLJIrktgclxf_blkO62wKx61vsjeJJn; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Mon, 12 Oct 2026 11:20:38 GMT
+set-cookie: _cfuvid=p9Yi923yIH9H28ZEPZIQjUcbii7bMtC5E..DOrMKvx8-1791802238.6096387-1.0.1.1-Mo0vOmSGbeKvkz3IkS7oa.6RqVg5iUA_ifBcUT4_zCI; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+content-encoding: gzip
+cf-ray: a4958b7749736665-IAD
+

@@ -1,0 +1,313 @@
+# Payment Paid Event
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /api/webhook/v1/thirdpartywebhook:
+    post:
+      summary: Payment Paid Event
+      deprecated: false
+      description: >-
+        The "Payment Paid Event" is used to notify Zid Payments system of any
+        updates regarding the status of a payment, whether it is successful or
+        failed. This ensures that Zid Payments is informed about the payment
+        status and can update its records accordingly.
+      tags:
+        - Default module/Payment API/Webhooks
+      parameters:
+        - name: Authorization
+          in: header
+          description: >-
+            All secured endpoints require an Authorization header using Basic
+            Authentication. The value should be the secret key provided by the
+            payment provider during merchant onboarding.
+          required: false
+          example: 'Authorization: Basic secret_key'
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              title: PaymentStatusChangedDto
+              description: Webhook payload for notifying ZidPay of a payment status update.
+              properties:
+                type:
+                  type: string
+                  description: Type of the webhook event.
+                  examples:
+                    - payment_paid
+                thirdPartyId:
+                  type: integer
+                  description: Unique ID assigned to the payment provider by ZidPay.
+                  examples:
+                    - 1
+                merchantId:
+                  type: string
+                  description: Merchant's ID on the provider side.
+                  examples:
+                    - 45cb5978-c6cd-4e34-bd93-de6bee9b3cae
+                data:
+                  type: object
+                  description: Payment status update details.
+                  properties:
+                    id:
+                      type: string
+                      description: Payment ID on the provider side.
+                      examples:
+                        - pay_abc123xyz
+                    paymentReferenceId:
+                      type: string
+                      description: >-
+                        PaymentReferenceId sent in metadata in execute payment
+                        API
+                    status:
+                      type: string
+                      description: Status of the payment.
+                      enum:
+                        - paid
+                        - failed
+                      examples:
+                        - paid
+                  required:
+                    - id
+                    - paymentReferenceId
+                    - status
+                  x-apidog-orders:
+                    - id
+                    - paymentReferenceId
+                    - status
+                  x-apidog-ignore-properties: []
+              required:
+                - type
+                - thirdPartyId
+                - merchantId
+                - data
+              x-apidog-orders:
+                - type
+                - thirdPartyId
+                - merchantId
+                - data
+              x-apidog-ignore-properties: []
+            example:
+              type: object
+              example:
+                type: payment_paid
+                thirdPartyId: 1
+                merchantId: 45cb5978-c6cd-4e34-bd93-de6bee9b3cae
+                data:
+                  id: pay_abc123xyz
+                  paymentReferenceId: '123456'
+                  status: paid
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+                x-apidog-orders: []
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Success
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '2':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '3':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Payment API/Webhooks
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-17956148-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

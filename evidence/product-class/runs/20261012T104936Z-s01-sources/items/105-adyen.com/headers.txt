@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+accept-ranges: bytes
+age: 0
+cache-control: public,max-age=0,must-revalidate
+cache-status: "Netlify Edge"; fwd=stale; fwd-status=200; stored
+content-encoding: gzip
+content-security-policy: object-src 'none'; base-uri 'none'; script-src 'nonce-EvOecxOlCvseM148fpNUYHgd6SgPLqvg' 'strict-dynamic' 'self'; report-uri /.netlify/functions/__csp-violations
+content-type: text/html; charset=UTF-8
+date: Mon, 12 Oct 2026 10:51:14 GMT
+etag: W/"22c6c6555fcff064891719ae7122f8bc-ssl-df"
+referrer-policy: strict-origin
+server: Netlify
+strict-transport-security: max-age=31536000; includeSubDomains
+vary: Accept-Encoding
+x-content-type-options: nosniff
+x-debug-csp-nonce: invoked
+x-frame-options: SAMEORIGIN
+x-nf-request-id: 01M4QVSWQJQ96DZTFHKG6YBA9J
+

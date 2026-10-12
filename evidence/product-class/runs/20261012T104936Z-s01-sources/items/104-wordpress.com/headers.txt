@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Mon, 12 Oct 2026 10:51:14 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+last-modified: Mon, 12 Oct 2026 10:50:38 GMT
+cache-control: max-age=264, must-revalidate
+x-nananana: Batcache-Hit
+x-hacker: Want root?  Visit join.a8c.com/hacker and mention this header.
+host-header: WordPress.com
+link: <https://public-api.wordpress.com/wp-json/?rest_route=/sites/wordpress.com>; rel="https://api.w.org/"
+link: <https://wp.me/P1-4c>; rel=shortlink
+x-frame-options: SAMEORIGIN
+vary: accept, content-type, cookie
+content-encoding: br
+x-ac: 2.dca _dca BYPASS
+alt-svc: clear
+strict-transport-security: max-age=31536000; preload
+server-timing: a8c-cdn, dc;desc=dca, cache;desc=BYPASS;dur=15.0
+

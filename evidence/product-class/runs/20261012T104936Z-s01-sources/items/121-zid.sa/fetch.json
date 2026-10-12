@@ -1,0 +1,22 @@
+{
+ "n": 121,
+ "url": "https://zid.sa/ar/legal/logistics-t-and-cs/",
+ "dir": "items/121-zid.sa",
+ "fetched_at": "2026-10-12T10:51:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/legal/logistics-t-and-cs/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 33714,
+ "cited_in": [
+  "S01-ZD-C294",
+  "S01-ZD-C295",
+  "S01-ZD-C296",
+  "S01-ZD-C297",
+  "S01-ZD-C298"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a47c7ee61e50d3d5578221cbebcc0de124fbe36b1a0454c53a87cc10939de726",
+ "raw_ext": "html"
+}

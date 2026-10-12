@@ -1,0 +1,211 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Integrating Stripe Adaptive Pricing
+
+> How to enable Stripe Adaptive Pricing in a custom BigCommerce checkout — render the currency selector, react to currency changes, and filter payment methods on the Stripe OCS Checkout Session method.
+
+[Stripe Adaptive Pricing](https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing?payment-ui=embedded-components) lets shoppers pay in their local presentment currency while you continue to settle in your store's default currency. Stripe detects the shopper's currency, handles the FX conversion (24-hour rate guarantee), and renders a currency selector next to the payment methods. The shopper absorbs the FX spread; you pay 0% on conversion.
+
+Stores using the BigCommerce reference [checkout-js](https://github.com/bigcommerce/checkout-js) support Adaptive Pricing out of the box. If your storefront uses a custom checkout built on top of [checkout-sdk-js](https://github.com/bigcommerce/checkout-sdk-js), follow this guide to surface the feature to your shoppers.
+
+> **Note**
+>
+> Adaptive Pricing is available only on the Stripe OCS **Checkout Session** payment method (`gateway: 'stripeocs'`, `methodId: 'checkout_session'`). The legacy Stripe `optimized_checkout` method does not support it.
+
+## How it works
+
+When Adaptive Pricing is enabled for a store:
+
+1. The Stripe OCS payment method returns `initializationData.adaptivePricingEnabled = true`.
+2. The checkout-sdk passes `adaptivePricing.allowed = true` to Stripe Elements and mounts a [`CurrencySelectorElement`](https://docs.stripe.com/payments/checkout/adaptive-pricing) into a host `<div>` that you render above your payment methods list.
+3. When the shopper picks a currency other than the store's default, Stripe re-fetches the Payment Element in that currency, and the checkout-sdk flips `paymentProviderCustomer.isCustomerCurrencySelected` to `true`. The cart total is recalculated in the presentment currency.
+4. Your custom checkout listens for that flag and narrows the payment methods list to **only** the Stripe OCS Checkout Session method, because other gateways cannot settle in the presentment currency.
+5. On submit, the order is created in the presentment currency and Stripe settles the funds in your account's default currency.
+
+## Requirements
+
+* Your store has the Stripe OCS Checkout Session payment method enabled.
+* A store administrator has enabled the **Adaptive Pricing** toggle for Stripe in the store control panel under **Settings → Payments**.
+* Your custom checkout uses `@bigcommerce/checkout-sdk` version `1.948.1` or later.
+* The Stripe OCS Checkout Session is already initialized in your payment step. See [Getting started with Checkout SDK](/developer/docs/admin/checkout-and-cart/checkout-sdk) if you have not integrated Stripe OCS yet.
+
+## Check that Adaptive Pricing is enabled (Optional)
+
+Adaptive Pricing is gated per store via the `initializationData.adaptivePricingEnabled` flag returned with the Stripe OCS payment method. **You do not need to check this flag in your checkout code.** The SDK reads it internally and only mounts the currency selector when the flag is `true`; if the flag is `false`, passing `currencySelectorContainerId` is a no-op and rendering the host container has no visible effect.
+
+The BigCommerce reference checkout follows this pattern — it always renders the container and always passes `currencySelectorContainerId`, regardless of whether Adaptive Pricing is enabled for the store.
+
+Read the flag explicitly only when you want to conditionally render surrounding UI (for example, a heading or helper text that only makes sense when the selector is visible):
+
+**`Check whether Adaptive Pricing is enabled`**
+
+```js title="Check whether Adaptive Pricing is enabled" showLineNumbers={false}
+const paymentMethod = checkoutService
+    .getState().data
+    .getPaymentMethod('checkout_session', 'stripeocs');
+
+const isAdaptivePricingEnabled = Boolean(
+    paymentMethod?.initializationData?.adaptivePricingEnabled,
+);
+```
+
+## Integration steps
+
+### Step 1: Render the currency selector container
+
+Add an empty container element above your payment methods list. Stripe will mount the currency selector into this `<div>`. The id is yours to choose, but it must be unique on the page and present in the DOM before you initialize the payment step.
+
+**`Currency selector host container`**
+
+```html title="Currency selector host container" showLineNumbers={false}
+<div id="stripe-currency-selector"></div>
+<!-- your payment methods list renders below -->
+```
+
+> **Note**
+>
+> Place the container **above** the payment methods list, so the shopper sees the currency selector before choosing a payment method.
+
+See the [Checkout JS repository](https://github.com/bigcommerce/checkout-js/blob/master/packages/core/src/app/payment/ProvidersSectionOnTopOfPaymentsList/ProvidersSectionOnTopOfPaymentsList.tsx) for the reference implementation, introduced in [PR #2944](https://github.com/bigcommerce/checkout-js/pull/2944).
+
+### Step 2: Initialize the payment method with `currencySelectorContainerId`
+
+Pass `currencySelectorContainerId` in the `stripeocs` options when you call `checkoutService.initializePayment`. The SDK uses this id to mount the Stripe `CurrencySelectorElement`.
+
+**`Initialize Stripe OCS with the currency selector`**
+
+```js title="Initialize Stripe OCS with the currency selector" showLineNumbers={false}
+await checkoutService.initializePayment({
+    gateway: 'stripeocs',
+    methodId: 'checkout_session',
+    stripeocs: {
+        containerId: 'stripe-payment-element',
+        currencySelectorContainerId: 'stripe-currency-selector',
+        appearance: {
+            // see Step 3
+        },
+        render: () => {
+            // your render callback
+        },
+        onError: (error) => {
+            // surface the error in your UI
+        },
+    },
+});
+```
+
+You can always pass `currencySelectorContainerId` — when Adaptive Pricing is not enabled for the store, the SDK ignores it and the host container stays empty. The one constraint is that when the flag **is** enabled, `currencySelectorContainerId` must be set; otherwise the SDK throws a `NotInitializedError`. Always passing it (and always rendering the container) is the simplest correct pattern.
+
+See [`StripeOCSPaymentMethod.tsx`](https://github.com/bigcommerce/checkout-js/blob/master/packages/stripe-integration/src/stripe-ocs/StripeOCSPaymentMethod.tsx) in the Checkout JS repository for the reference implementation ([PR #2949](https://github.com/bigcommerce/checkout-js/pull/2949)). The corresponding SDK changes landed in [checkout-sdk-js PR #3218](https://github.com/bigcommerce/checkout-sdk-js/pull/3218).
+
+### Step 3: Style the currency selector to match your storefront
+
+The currency selector is a Stripe Element, so it is styled through the [Stripe Appearance API](https://docs.stripe.com/elements/appearance-api?api-integration=paymentintents). Pass the same `appearance` object you use for the Payment Element; Stripe applies it to the selector too.
+
+**`Pass an appearance object`**
+
+```js title="Pass an appearance object" showLineNumbers={false}
+stripeocs: {
+    containerId: 'stripe-payment-element',
+    currencySelectorContainerId: 'stripe-currency-selector',
+    appearance: {
+        variables: {
+            colorPrimary: '#0066ff',
+            colorText: '#1a1a1a',
+            colorBackground: '#ffffff',
+            borderRadius: '4px',
+            fontFamily: 'Inter, system-ui, sans-serif',
+        },
+        rules: {
+            '.ToggleItem': {
+                border: '1px solid #d4d4d8',
+            },
+            '.ToggleItem--selected': {
+                borderColor: '#0066ff',
+                color: '#0066ff',
+            },
+        },
+    },
+    // ...
+}
+```
+
+The `.ToggleItem` and `.ToggleItem--selected` rules above target the currency selector specifically. See Stripe's [supported CSS selectors](https://docs.stripe.com/elements/appearance-api?api-integration=paymentintents#supported-css-selectors) for the full list.
+
+For an example of how to derive the appearance object from the active BigCommerce storefront theme, see [`getStripeOCSStyles.ts`](https://github.com/bigcommerce/checkout-js/blob/master/packages/stripe-integration/src/stripe-ocs/getStripeOCSStyles.ts) in the Checkout JS repository ([PR #3009](https://github.com/bigcommerce/checkout-js/pull/3009)).
+
+### Step 4: React to currency changes
+
+When the shopper picks a currency other than the store's default, the SDK calls `updatePaymentProviderCustomer` with `isCustomerCurrencySelected: true` and the selected currency code. Subscribe to checkout state to react to that change.
+
+**`Subscribe to currency selection changes`**
+
+```js title="Subscribe to currency selection changes" showLineNumbers={false}
+const unsubscribe = checkoutService.subscribe((state) => {
+    const providerCustomer = state.data.getPaymentProviderCustomer();
+    const isPresentmentCurrencyActive = Boolean(
+        providerCustomer?.isCustomerCurrencySelected,
+    );
+    const presentmentCurrency = providerCustomer?.customerCurrency;
+
+    // Re-render your payment methods list when this changes.
+    updatePaymentMethodsUi({ isPresentmentCurrencyActive, presentmentCurrency });
+});
+```
+
+Remember to call the returned `unsubscribe` function when your component unmounts.
+
+### Step 5: Filter the payment methods list when a non-store-default currency is active
+
+While `isCustomerCurrencySelected` is `true`, your checkout must hide every payment method other than Stripe OCS Checkout Session. No other gateway in the BigCommerce checkout can settle a transaction in the shopper's presentment currency, and letting the shopper pick one would cause the payment to fail at submit time.
+
+**`Filter payment methods by Adaptive Pricing state`**
+
+```js title="Filter payment methods by Adaptive Pricing state" showLineNumbers={false}
+const visiblePaymentMethods = paymentMethods.filter((method) => {
+    if (!isPresentmentCurrencyActive) {
+        return true;
+    }
+
+    return method.gateway === 'stripeocs' && method.id === 'checkout_session';
+});
+```
+
+When the shopper switches back to the store's default currency, the SDK sets `isCustomerCurrencySelected` to `false` and your full payment methods list should reappear.
+
+The reference checkout implements this filter as a dedicated `stripeMethodsFiltering` function — see [`stripeMethodsFiltering.ts`](https://github.com/bigcommerce/checkout-js/blob/master/packages/stripe-utils/src/stripeMethodsFiltering.ts) in the Checkout JS repository ([PR #2948](https://github.com/bigcommerce/checkout-js/pull/2948)).
+
+### Step 6: De-initialize on unmount
+
+Call `checkoutService.deinitializePayment` when the payment step is closed or your component unmounts. The SDK unmounts and destroys the currency selector along with the Payment Element.
+
+**`De-initialize Stripe OCS`**
+
+```js title="De-initialize Stripe OCS" showLineNumbers={false}
+await checkoutService.deinitializePayment({
+    gateway: 'stripeocs',
+    methodId: 'checkout_session',
+});
+```
+
+## Testing your integration
+
+* Use one of [Stripe's test currencies](https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing#testing) to confirm that the selector renders and the totals recalculate.
+* In a sandbox store, toggle **Adaptive Pricing** off in the control panel and reload the checkout. The selector should disappear and your normal payment methods list should render.
+* Switch to a currency other than the store's default in the selector and confirm that only the Stripe OCS Checkout Session method remains in your UI, then switch back and confirm that other methods reappear.
+* Place a test order in a currency other than the store's default and confirm that the order in the BigCommerce control panel shows the presentment currency, while your Stripe dashboard shows the settled amount in your account currency.
+
+## Troubleshooting
+
+**The currency selector does not appear.**
+Check that all three preconditions are met: the store has the Adaptive Pricing toggle on, `initializationData.adaptivePricingEnabled` is `true` for the `checkout_session` method, and the host `<div>` referenced by `currencySelectorContainerId` exists in the DOM before `initializePayment` is called.
+
+**`NotInitializedError` is thrown during `initializePayment`.**
+This usually means `adaptivePricingEnabled` is `true` but you did not pass `currencySelectorContainerId`. Set the option whenever you call `initializePayment` for `stripeocs` / `checkout_session`.
+
+**Other payment methods stay visible after the shopper switches to a currency other than the store's default, or do not come back after switching to the store's default currency.**
+Your payment methods list is not reacting to currency changes. Confirm that you have subscribed to `checkoutService.subscribe` and that your filter reads `paymentProviderCustomer.isCustomerCurrencySelected` on every render (see Steps 4 and 5). When the flag is `true`, your UI must show only the Stripe OCS Checkout Session method; when it flips back to `false`, your full payment methods list must be restored.

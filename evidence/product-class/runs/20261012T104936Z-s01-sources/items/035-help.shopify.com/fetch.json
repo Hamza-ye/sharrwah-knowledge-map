@@ -1,0 +1,19 @@
+{
+ "n": 35,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts.md",
+ "dir": "items/035-help.shopify.com",
+ "fetched_at": "2026-10-12T10:50:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 748,
+ "cited_in": [
+  "S01-SH-C082",
+  "S01-SH-C083"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "6052bea3931d8cac82a49e75682ea6405a88cb18cbc675faf865d04d1ee6ff2f",
+ "raw_ext": "txt"
+}

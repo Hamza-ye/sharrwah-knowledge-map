@@ -1,0 +1,18 @@
+{
+ "n": 101,
+ "url": "https://woocommerce.com/document/woopayments/startup-guide/",
+ "dir": "items/101-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/startup-guide/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 54525,
+ "cited_in": [
+  "S01-WC-C170"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2a077cac46f27abf7a3bef90843a65e8767c46ad521bc3e6b3288da8e7963387",
+ "raw_ext": "html"
+}

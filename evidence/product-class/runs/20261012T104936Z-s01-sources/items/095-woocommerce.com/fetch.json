@@ -1,0 +1,20 @@
+{
+ "n": 95,
+ "url": "https://woocommerce.com/document/woopayments/payouts/change-payout-schedule/",
+ "dir": "items/095-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/payouts/change-payout-schedule/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 47984,
+ "cited_in": [
+  "S01-WC-C042",
+  "S01-WC-C043",
+  "S01-WC-C044"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "eb8a9ff02a4bfe167edb4c1eb9795e6445bfaffed045824cc7ac485a9ebf9514",
+ "raw_ext": "html"
+}

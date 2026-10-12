@@ -1,0 +1,19 @@
+{
+ "n": 88,
+ "url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/managing-disputes/",
+ "dir": "items/088-woocommerce.com",
+ "fetched_at": "2026-10-12T10:50:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/managing-disputes/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 55534,
+ "cited_in": [
+  "S01-WC-C060",
+  "S01-WC-C061"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "dc009512536e90710498f182edcf5de61f703c9c367bd74305f85289bf830363",
+ "raw_ext": "html"
+}

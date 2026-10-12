@@ -1,0 +1,32 @@
+{
+ "n": 99,
+ "url": "https://woocommerce.com/document/woopayments/payouts/payout-schedule/",
+ "dir": "items/099-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/payouts/payout-schedule/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 48798,
+ "cited_in": [
+  "S01-WC-C024",
+  "S01-WC-C031",
+  "S01-WC-C032",
+  "S01-WC-C033",
+  "S01-WC-C034",
+  "S01-WC-C035",
+  "S01-WC-C036",
+  "S01-WC-C037",
+  "S01-WC-C038",
+  "S01-WC-C039",
+  "S01-WC-C040",
+  "S01-WC-C041",
+  "S01-WC-C162",
+  "S01-WC-C163",
+  "S01-WC-C164"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b28c059f978257e490cf0f762dd8ea8e265090a29f3a96ce0064d3af47b4830c",
+ "raw_ext": "html"
+}

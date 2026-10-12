@@ -1,0 +1,22 @@
+{
+ "n": 97,
+ "url": "https://woocommerce.com/document/woopayments/payouts/instant-payouts/",
+ "dir": "items/097-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/payouts/instant-payouts/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49709,
+ "cited_in": [
+  "S01-WC-C045",
+  "S01-WC-C046",
+  "S01-WC-C047",
+  "S01-WC-C048",
+  "S01-WC-C049"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9c0bd0b2929202f5ee5e9d53f00b2168d29ae445c079e89dadd6607d64f23bbd",
+ "raw_ext": "html"
+}

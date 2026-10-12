@@ -1,0 +1,26 @@
+{
+ "n": 86,
+ "url": "https://woocommerce.com/document/woopayments/compatibility/countries/",
+ "dir": "items/086-woocommerce.com",
+ "fetched_at": "2026-10-12T10:50:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/compatibility/countries/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46530,
+ "cited_in": [
+  "S01-WC-C085",
+  "S01-WC-C086",
+  "S01-WC-C087",
+  "S01-WC-C088",
+  "S01-WC-C089",
+  "S01-WC-C090",
+  "S01-WC-C091",
+  "S01-WC-C092",
+  "S01-WC-C093"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d96be30d6055ffa8a043867901397b822f383b11c449417bfcb16c8f6787458f",
+ "raw_ext": "html"
+}

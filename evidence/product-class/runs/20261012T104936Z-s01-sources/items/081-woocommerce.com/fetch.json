@@ -1,0 +1,20 @@
+{
+ "n": 81,
+ "url": "https://woocommerce.com/document/cheque/",
+ "dir": "items/081-woocommerce.com",
+ "fetched_at": "2026-10-12T10:50:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/cheque/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 38641,
+ "cited_in": [
+  "S01-WC-C102",
+  "S01-WC-C173",
+  "S01-WC-C174"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "921e66306214daec5a8197859a37669a4731e989e9f72763cd501399fbc7049f",
+ "raw_ext": "html"
+}

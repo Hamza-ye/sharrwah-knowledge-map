@@ -1,0 +1,198 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Payouts / Instant payouts with WooPayments
+Instant payouts with WooPayments
+
+WooPayments provides a way for eligible accounts to request an instant payout of some or all of the account balance. After requesting an instant payout, the money will arrive within minutes instead of days. Instant payouts can be initiated at any time.
+
+Instant payouts are subject to additional fees. Review our fees.
+
+NOTE: Participation in optional WooPayments features, such as instant payouts, is at the sole discretion of the WooCommerce team. Your account’s eligibility may differ from the below requirements.
+
+Eligibility requirements
+
+To be eligible to request an instant payout, your account must meet the following criteria:
+
+Based in the U.S.
+More than 90 days old.
+Processed more than $1000 during the last 90 days.
+Under 1% of transactions disputed in the last 90 days.
+Use either of the following to receive payouts:
+A verified bank account, or
+A debit card
+
+When you first meet the eligibility requirements for instant payouts, you will receive an email notification from us about it.
+
+NOTE: The requirements above are evaluated on an ongoing basis. Thus, it’s possible to become eligible, but then later become ineligible. If this applies to you, we’ll show a notice about it in your dashboard. To remain eligible, do your best to continuously meet the requirements stated above.
+
+Request an instant payout
+
+To request an instant payout:
+
+In your store’s WP Admin dashboard, go to Payments > Overview.
+Click the Get [amount] now button in the top section.
+View details about your instant payout, such as:
+The amount you have available for instant payout.
+What the net payout amount will be after instant payout fees are deducted.
+Click Pay out now to initiate the instant payout.
+
+If the Pay out available funds button is visible in Payments > Overview but appears disabled, then the balance may not be within the payout limits explained below.
+
+NOTE: Instant payouts are defined by the payout amount and are not linked to specific transactions. As a result, transaction details for instant payouts are unavailable.
+
+Payout limits
+
+Unlike scheduled payouts, there is both a minimum and maximum amount that can be processed through an instant payout.
+
+The minimum instant payout amount is $50 USD.
+The maximum instant payout amount can be up to $1,000 USD.
+
+If the minimum instant payout amount has not been reached, or if the maximum limit has been exceeded, the Payout available funds button will be disabled.
+
+NOTE: Only one instant payout can be requested every 24 hours.
+
+Instant payout accounts
+
+Instant payouts can be made to a verified bank account or a debit card. This section focuses on how to add these payout methods to your WooPayments account.
+
+NOTE: If multiple accounts are in use for payouts, instant payouts will only be paid out to the default account.
+
+Add a verified bank account
+
+Merchants who are otherwise eligible can add a verified bank account to receive instant payouts. Bank account verification uses a combination of automated and manual processes to confirm that the bank account is tied to the individual or organization that owns the WooPayments account.
+
+To add a verified bank account, follow these instructions. When you go to enter your bank account information, you must use the direct bank connection feature — entering your account details manually will not verify your bank account.
+
+If verification of your bank account cannot be completed, you may be asked to provide one of the following documents to help verify it:
+
+A bank account statement
+A bank letterhead
+A voided check
+
+Once this information is provided, it will be manually reviewed by our partners at Stripe to ensure that the bank details match those on the WooPayments account. This process may take several days.
+
+Add a debit card
+
+To add a debit card, follow these instructions to change your payout method, being sure to use a debit card instead of a bank account.
+
+Bank support of instant payouts
+
+Nearly 6,000 banks in the US support instant payouts. You can find information about bank support for instant payouts below.
+
+List of banks that support instant payouts to verified bank accounts
+List of banks that do not support instant payouts to debit cards
+Was this guide helpful for you?
+ON THIS PAGE
+Eligibility requirements
+Request an instant payout
+Payout limits
+Instant payout accounts
+Add a verified bank account
+Add a debit card
+Bank support of instant payouts
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+CONTRAPTION
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

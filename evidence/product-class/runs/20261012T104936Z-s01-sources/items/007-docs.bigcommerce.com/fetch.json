@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://docs.bigcommerce.com/developer/learn/courses/b2b-core/purchasing/rest-orders-payments.md",
+ "dir": "items/007-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T10:49:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/learn/courses/b2b-core/purchasing/rest-orders-payments.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2983,
+ "cited_in": [
+  "S01-BC-C011"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "9c644487910d0e21511ccffeded02e021d7adba39bf8f68a6f220e428714602f",
+ "raw_ext": "txt"
+}

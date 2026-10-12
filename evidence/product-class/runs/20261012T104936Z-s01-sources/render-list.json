@@ -1,0 +1,782 @@
+[
+{
+"n": 1,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments.md",
+"dir": "items/001-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/transactions.md",
+"dir": "items/002-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/orders/overview.md",
+"dir": "items/003-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/stripe/integrating-stripe-adaptive-pricing.md",
+"dir": "items/004-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payments/overview.md",
+"dir": "items/005-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md",
+"dir": "items/006-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://docs.bigcommerce.com/developer/learn/courses/b2b-core/purchasing/rest-orders-payments.md",
+"dir": "items/007-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://docs.bigcommerce.com/developer/learn/courses/checkout-orders-rest-api/transactions-api/refunds.md",
+"dir": "items/008-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://docs.salla.dev/1973350f0.md",
+"dir": "items/009-docs.salla.dev",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://docs.zid.sa/merchant-activation.md",
+"dir": "items/010-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://docs.zid.sa/overview-1340608m0.md",
+"dir": "items/011-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://docs.zid.sa/payment-paid-event-17956148e0.md",
+"dir": "items/012-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://docs.zid.sa/webhooks.md",
+"dir": "items/013-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://help.salla.sa/article/-\u0625\u062f\u0627\u0631\u0629-\u0637\u0631\u0642-\u0627\u0644\u062f\u0641\u0639-\u0648\u062a\u0641\u0639\u064a\u0644-\u0627\u0644\u0645\u062f\u0641\u0648\u0639\u0627\u062a-\u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629/dtdojcntv3f4lwqzj4h0jvij",
+"dir": "items/014-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://help.salla.sa/article/-\u0625\u0639\u062f\u0627\u062f-\u0627\u0644\u062d\u0633\u0627\u0628-\u0627\u0644\u0628\u0646\u0643\u064a/bhrrwm3oexjhzqjibwnic7dg",
+"dir": "items/015-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://help.salla.sa/article/-\u0627\u0644\u0631\u0628\u0637-\u0645\u0639-stc-pay-\u0636\u0645\u0646-\u0645\u062f\u0641\u0648\u0639\u0627\u062a-\u0633\u0644\u0629/h2u9kwhe0r2olfld1ks9e74k",
+"dir": "items/016-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://help.salla.sa/article/-\u0645\u062d\u0641\u0638\u0629-\u0627\u0644\u0645\u062a\u062c\u0631/pywwgwsmrn1xs94esdv4ce67",
+"dir": "items/017-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://help.salla.sa/article/\u062a\u062d\u0648\u064a\u0644\u0627\u062a-\u0645\u062f\u0641\u0648\u0639\u0627\u062a-\u0633\u0644\u0629-\u0648\u0627\u0644\u062a\u0633\u0648\u064a\u0627\u062a-\u0641\u064a-\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a-\u0633\u0644\u0629/nvs6bt51hvlweulqzayp3o76",
+"dir": "items/018-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://help.salla.sa/article/\u062a\u062d\u0648\u064a\u0644\u0627\u062a-\u0645\u062f\u0641\u0648\u0639\u0627\u062a-\u0633\u0644\u0629-\u0648\u0627\u0644\u062a\u0633\u0648\u064a\u0627\u062a-\u0641\u064a-\u0627\u0644\u0643\u0648\u064a\u062a-\u0633\u0644\u0629/oklj5eoidm82h73hfra94dv2",
+"dir": "items/019-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 20,
+"url": "https://help.salla.sa/article/\u062a\u0641\u0639\u064a\u0644-\u0627\u0644\u062f\u0641\u0639-\u0628\u0627\u0644\u0628\u0637\u0627\u0642\u0629-\u0641\u064a-\u0633\u0644\u0629-\u0628\u0648\u064a\u0646\u062a/hy4mv5r6yqoyjifiy7659nzk",
+"dir": "items/020-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 21,
+"url": "https://help.salla.sa/article/\u062a\u0641\u0639\u064a\u0644-\u0627\u0644\u0645\u062f\u0641\u0648\u0639\u0627\u062a-\u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629/ppros5gh7uqhilhqddqnjgbd",
+"dir": "items/021-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 22,
+"url": "https://help.salla.sa/article/\u062a\u0641\u0639\u064a\u0644-\u0637\u0631\u0642-\u0627\u0644\u062f\u0641\u0639-\u0641\u064a-\u0627\u0644\u0645\u062a\u062c\u0631-\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a/z2mys3spo71u3yovhs7lhii4",
+"dir": "items/022-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 23,
+"url": "https://help.salla.sa/article/\u062a\u0641\u0639\u064a\u0644-\u0648\u0625\u062f\u0627\u0631\u0629-\u0627\u0644\u062f\u0641\u0639-\u0639\u0646\u062f-\u0627\u0644\u0627\u0633\u062a\u0644\u0627\u0645-\u0645\u0639-\u0628\u0648\u0644\u064a\u0635\u0627\u062a-\u0633\u0644\u0629/koda8pykc6pdhylg7zb2iu0g",
+"dir": "items/023-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 24,
+"url": "https://help.salla.sa/article/\u062a\u0648\u062b\u064a\u0642-\u0645\u062a\u062c\u0631\u0643-\u0627\u0644\u062c\u062f\u064a\u062f-\u0641\u064a-\u0627\u0644\u0643\u0648\u064a\u062a-\u0643\u0634\u0631\u0643\u0629-\u0645\u0645\u0644\u0648\u0643-\u0644\u0641\u0631\u062f/ff6snmt0dx2w0j6ki594ik7l",
+"dir": "items/024-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 25,
+"url": "https://help.salla.sa/article/\u062a\u0648\u062b\u064a\u0642-\u0645\u062a\u062c\u0631\u0643-\u0641\u064a-\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a-\u0633\u0644\u0629/itmpqrf58xz73g2yyxfnllbz",
+"dir": "items/025-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 26,
+"url": "https://help.salla.sa/article/\u062f\u0648\u0631\u0629-\u062a\u062d\u0648\u064a\u0644-\u0627\u0644\u0645\u062f\u0641\u0648\u0639\u0627\u062a-\u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629/k6l988az2r60ucvfsfnpvlhn",
+"dir": "items/026-help.salla.sa",
+"keep_body": false
+},
+{
+"n": 27,
+"url": "https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md",
+"dir": "items/027-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 28,
+"url": "https://help.shopify.com/en/manual/international/managed-markets/overview.md",
+"dir": "items/028-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 29,
+"url": "https://help.shopify.com/en/manual/payments/chargebacks.md",
+"dir": "items/029-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 30,
+"url": "https://help.shopify.com/en/manual/payments/getting-paid.md",
+"dir": "items/030-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 31,
+"url": "https://help.shopify.com/en/manual/payments/manual-payments.md",
+"dir": "items/031-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 32,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md",
+"dir": "items/032-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 33,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-account-requirements.md",
+"dir": "items/033-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 34,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md",
+"dir": "items/034-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 35,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts.md",
+"dir": "items/035-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 36,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md",
+"dir": "items/036-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 37,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/lower-or-missing-payouts.md",
+"dir": "items/037-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 38,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md",
+"dir": "items/038-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 39,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/refunds.md",
+"dir": "items/039-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 40,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md",
+"dir": "items/040-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 41,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/schedule-payouts.md",
+"dir": "items/041-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 42,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/view-details.md",
+"dir": "items/042-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 43,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md",
+"dir": "items/043-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 44,
+"url": "https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md",
+"dir": "items/044-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 45,
+"url": "https://help.zid.sa/%d8%a7%d9%84%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d8%a6%d8%b9%d8%a9/",
+"dir": "items/045-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 46,
+"url": "https://help.zid.sa/about-zid-financing/",
+"dir": "items/046-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 47,
+"url": "https://help.zid.sa/about_zidpay/",
+"dir": "items/047-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 48,
+"url": "https://help.zid.sa/activate-online-payments/",
+"dir": "items/048-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 49,
+"url": "https://help.zid.sa/bank-accounts/",
+"dir": "items/049-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 50,
+"url": "https://help.zid.sa/bnpl-2/",
+"dir": "items/050-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 51,
+"url": "https://help.zid.sa/cod/",
+"dir": "items/051-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 52,
+"url": "https://help.zid.sa/deposits_zidpay/",
+"dir": "items/052-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 53,
+"url": "https://help.zid.sa/faqs/%d9%81%d9%8a-%d8%ad%d8%a7%d9%84-%d8%aa%d9%85-%d8%aa%d8%b9%d8%b7%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%87%d9%84-%d9%8a%d8%aa%d9%85-%d8%aa%d8%ad%d9%88%d9%8a%d9%84-%d8%b1%d8%b5%d9%8a%d8%af/",
+"dir": "items/053-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 54,
+"url": "https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81-%d8%b7%d8%b1%d9%8a%d9%82%d8%a9-%d8%a7%d9%84%d8%aa%d8%ad%d8%b5%d9%8a%d9%84%d8%9f-%d9%88%d9%83%d9%85-%d8%a7%d9%84%d9%86%d8%b3%d8%a8%d8%a9-%d9%85%d8%b9-%d8%ac%d8%a7%d9%87%d8%b2-%d8%9f/",
+"dir": "items/054-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 55,
+"url": "https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81-%d9%8a%d8%aa%d9%85-%d8%aa%d8%ad%d8%b5%d9%8a%d9%84-%d8%a3%d9%85%d9%88%d8%a7%d9%84-%d8%b4%d8%ad%d9%86%d8%a7%d8%aa-%d9%85%d8%a8%d8%a7%d9%84%d8%ba-%d8%a7%d9%84%d8%af%d9%81%d8%b9-%d8%b9/",
+"dir": "items/055-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 56,
+"url": "https://help.zid.sa/faqs/%d9%85%d8%a7%d9%87%d9%8a-%d8%a7%d9%84%d8%a8%d9%86%d9%88%d9%83-%d8%a7%d9%84%d8%aa%d9%8a-%d8%aa%d8%af%d8%b9%d9%85%d9%87%d8%a7-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%84%d8%aa%d8%ad%d8%b5%d9%8a%d9%84-%d8%a7/",
+"dir": "items/056-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 57,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d8%a5%d9%85%d9%83%d8%a7%d9%86%d9%8a-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%85%d8%b9-%d8%a3%d9%8a-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-%d8%af%d9%81%d8%b9/",
+"dir": "items/057-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 58,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d8%a5%d9%85%d9%83%d8%a7%d9%86%d9%8a-%d9%83%d8%aa%d8%a7%d8%ac%d8%b1-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%81%d9%8a-%d9%85%d8%aa%d8%ac%d8%b1%d9%8a-%d9%81/",
+"dir": "items/058-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 59,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84%d8%af%d9%81%d8%b9-%d9%81%d9%8a-%d9%85%d8%b2%d9%8a%d8%af-%d9%85%d9%85%d8%a7%d8%ab%d9%84%d8%a9-%d9%84%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84/",
+"dir": "items/059-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 60,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d9%85%d8%b2%d9%8a%d8%af-%d9%85%d8%aa%d8%a7%d8%ad-%d9%84%d8%aa%d8%ac%d8%a7%d8%b1-%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%ac%d8%9f/",
+"dir": "items/060-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 61,
+"url": "https://help.zid.sa/jahez/",
+"dir": "items/061-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 62,
+"url": "https://help.zid.sa/mazeed-financial-collection/",
+"dir": "items/062-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 63,
+"url": "https://help.zid.sa/mazeed-settlement-2/",
+"dir": "items/063-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 64,
+"url": "https://help.zid.sa/nafath_verification/",
+"dir": "items/064-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 65,
+"url": "https://help.zid.sa/payment-gateways/",
+"dir": "items/065-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 66,
+"url": "https://help.zid.sa/payment-requirements/",
+"dir": "items/066-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 67,
+"url": "https://help.zid.sa/refund-requests/",
+"dir": "items/067-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 68,
+"url": "https://help.zid.sa/tap-gateway/",
+"dir": "items/068-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 69,
+"url": "https://help.zid.sa/transactions/",
+"dir": "items/069-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 70,
+"url": "https://help.zid.sa/wallet-split/",
+"dir": "items/070-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 71,
+"url": "https://help.zid.sa/zid-faqs/%d9%87%d9%84-%d9%8a%d8%b4%d8%aa%d8%b1%d8%b7-%d9%88%d8%ac%d9%88%d8%af-%d8%b3%d8%ac%d9%84-%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%84%d9%84%d8%aa%d8%b3%d8%ac%d9%8a%d9%84-%d9%81%d9%8a-%d8%b2%d8%af-%d9%88%d8%a7/",
+"dir": "items/071-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 72,
+"url": "https://help.zid.sa/zid-wallet/",
+"dir": "items/072-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 73,
+"url": "https://help.zid.sa/zidpay-paymentpage/",
+"dir": "items/073-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 74,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md",
+"dir": "items/074-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 75,
+"url": "https://s3.global-e.com/policies/shopify/ww-merchant-terms-v3.html",
+"dir": "items/075-s3.global-e.com",
+"keep_body": false
+},
+{
+"n": 76,
+"url": "https://stripe.com/legal/connect-account",
+"dir": "items/076-stripe.com",
+"keep_body": false
+},
+{
+"n": 77,
+"url": "https://stripe.com/legal/ssa",
+"dir": "items/077-stripe.com",
+"keep_body": false
+},
+{
+"n": 78,
+"url": "https://stripe.com/legal/ssa-service-terms",
+"dir": "items/078-stripe.com",
+"keep_body": false
+},
+{
+"n": 79,
+"url": "https://woocommerce.com/document/bacs/",
+"dir": "items/079-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 80,
+"url": "https://woocommerce.com/document/cash-on-delivery/",
+"dir": "items/080-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 81,
+"url": "https://woocommerce.com/document/cheque/",
+"dir": "items/081-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 82,
+"url": "https://woocommerce.com/document/paypal-standard/",
+"dir": "items/082-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 83,
+"url": "https://woocommerce.com/document/stripe/",
+"dir": "items/083-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 84,
+"url": "https://woocommerce.com/document/woopayments/account-management/",
+"dir": "items/084-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 85,
+"url": "https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/",
+"dir": "items/085-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 86,
+"url": "https://woocommerce.com/document/woopayments/compatibility/countries/",
+"dir": "items/086-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 87,
+"url": "https://woocommerce.com/document/woopayments/fees/account-showing-negative-balance/",
+"dir": "items/087-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 88,
+"url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/managing-disputes/",
+"dir": "items/088-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 89,
+"url": "https://woocommerce.com/document/woopayments/in-person-payments/",
+"dir": "items/089-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 90,
+"url": "https://woocommerce.com/document/woopayments/managing-money/",
+"dir": "items/090-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 91,
+"url": "https://woocommerce.com/document/woopayments/our-policies/",
+"dir": "items/091-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 92,
+"url": "https://woocommerce.com/document/woopayments/our-policies/reserves/",
+"dir": "items/092-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 93,
+"url": "https://woocommerce.com/document/woopayments/payment-methods/buy-now-pay-later/",
+"dir": "items/093-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 94,
+"url": "https://woocommerce.com/document/woopayments/payouts/",
+"dir": "items/094-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 95,
+"url": "https://woocommerce.com/document/woopayments/payouts/change-payout-schedule/",
+"dir": "items/095-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 96,
+"url": "https://woocommerce.com/document/woopayments/payouts/deposits-and-payouts/",
+"dir": "items/096-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 97,
+"url": "https://woocommerce.com/document/woopayments/payouts/instant-payouts/",
+"dir": "items/097-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 98,
+"url": "https://woocommerce.com/document/woopayments/payouts/payout-currencies/",
+"dir": "items/098-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 99,
+"url": "https://woocommerce.com/document/woopayments/payouts/payout-schedule/",
+"dir": "items/099-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 100,
+"url": "https://woocommerce.com/document/woopayments/payouts/why-payouts-suspended/",
+"dir": "items/100-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 101,
+"url": "https://woocommerce.com/document/woopayments/startup-guide/",
+"dir": "items/101-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 102,
+"url": "https://woocommerce.com/document/woopayments/stripe-capital/overview/",
+"dir": "items/102-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 103,
+"url": "https://woocommerce.com/woo-vendor-agreement/",
+"dir": "items/103-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 104,
+"url": "https://wordpress.com/tos/",
+"dir": "items/104-wordpress.com",
+"keep_body": false
+},
+{
+"n": 105,
+"url": "https://www.adyen.com/legal/adyen-for-platforms-terms-and-conditions",
+"dir": "items/105-adyen.com",
+"keep_body": false
+},
+{
+"n": 106,
+"url": "https://www.bigcommerce.co.uk/payments/bigcommerce-payments/",
+"dir": "items/106-bigcommerce.co.uk",
+"keep_body": false
+},
+{
+"n": 107,
+"url": "https://www.bigcommerce.com/bigcommerce-payments-trial/",
+"dir": "items/107-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 108,
+"url": "https://www.bigcommerce.com/payments/",
+"dir": "items/108-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 109,
+"url": "https://www.bigcommerce.com/payments/bigcommerce-payments/",
+"dir": "items/109-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 110,
+"url": "https://www.bigcommerce.com/payments/gateways/",
+"dir": "items/110-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 111,
+"url": "https://www.bigcommerce.com/payments/paypal/",
+"dir": "items/111-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 112,
+"url": "https://www.bigcommerce.com/product/checkout/",
+"dir": "items/112-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 113,
+"url": "https://www.bigcommerce.com/product/consumer-financing/",
+"dir": "items/113-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 114,
+"url": "https://www.bigcommerce.com/product/paypal-agentic-commerce-beta/",
+"dir": "items/114-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 115,
+"url": "https://www.bigcommerce.com/solutions/cryptocurrency-payments/",
+"dir": "items/115-bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 116,
+"url": "https://www.shopify.com/legal/processor-list",
+"dir": "items/116-shopify.com",
+"keep_body": false
+},
+{
+"n": 117,
+"url": "https://www.shopify.com/legal/terms",
+"dir": "items/117-shopify.com",
+"keep_body": false
+},
+{
+"n": 118,
+"url": "https://www.shopify.com/legal/terms-payfac",
+"dir": "items/118-shopify.com",
+"keep_body": false
+},
+{
+"n": 119,
+"url": "https://www.shopify.com/legal/terms-shopify-payments",
+"dir": "items/119-shopify.com",
+"keep_body": false
+},
+{
+"n": 120,
+"url": "https://zid.sa/_next/static/chunks/2501-f29c20b24ab64821.js",
+"dir": "items/120-zid.sa",
+"keep_body": false
+},
+{
+"n": 121,
+"url": "https://zid.sa/ar/legal/logistics-t-and-cs/",
+"dir": "items/121-zid.sa",
+"keep_body": false
+},
+{
+"n": 122,
+"url": "https://zid.sa/ar/legal/terms-conditions/",
+"dir": "items/122-zid.sa",
+"keep_body": false
+},
+{
+"n": 123,
+"url": "https://zid.sa/ar/legal/zidpay-terms-conditions-kw/",
+"dir": "items/123-zid.sa",
+"keep_body": false
+},
+{
+"n": 124,
+"url": "https://zid.sa/ar/legal/zidpay-terms-conditions-sa/",
+"dir": "items/124-zid.sa",
+"keep_body": false
+},
+{
+"n": 125,
+"url": "https://zid.sa/ar/paymob/",
+"dir": "items/125-zid.sa",
+"keep_body": false
+},
+{
+"n": 126,
+"url": "https://zid.sa/ar/solutions/payments/",
+"dir": "items/126-zid.sa",
+"keep_body": false
+},
+{
+"n": 127,
+"url": "https://zid.sa/en/legal/terms-conditions/",
+"dir": "items/127-zid.sa",
+"keep_body": false
+},
+{
+"n": 128,
+"url": "https://zid.sa/en/legal/zidpay-terms-conditions-sa/",
+"dir": "items/128-zid.sa",
+"keep_body": false
+},
+{
+"n": 129,
+"url": "https://zid.sa/en/pricing/",
+"dir": "items/129-zid.sa",
+"keep_body": false
+},
+{
+"n": 130,
+"url": "https://zid.sa/en/solutions/payments/",
+"dir": "items/130-zid.sa",
+"keep_body": false
+}
+]

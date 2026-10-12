@@ -1,0 +1,18 @@
+{
+ "n": 83,
+ "url": "https://woocommerce.com/document/stripe/",
+ "dir": "items/083-woocommerce.com",
+ "fetched_at": "2026-10-12T10:50:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/stripe/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49741,
+ "cited_in": [
+  "S01-WC-C022"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3b65c50377d5d04a5474088ce43594738ba1e6c9baab1c277538123d0b348909",
+ "raw_ext": "html"
+}

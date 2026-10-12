@@ -1,0 +1,25 @@
+{
+ "n": 6,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md",
+ "dir": "items/006-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T10:49:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3548,
+ "cited_in": [
+  "S01-BC-C007",
+  "S01-BC-C014",
+  "S01-BC-C015",
+  "S01-BC-C016",
+  "S01-BC-C017",
+  "S01-BC-C018",
+  "S01-BC-C019",
+  "S01-BC-C046"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "7bc34331a3faed70ccaee66c23ff94a6e9d6f37638171a3e9ccb55781514ae9a",
+ "raw_ext": "txt"
+}

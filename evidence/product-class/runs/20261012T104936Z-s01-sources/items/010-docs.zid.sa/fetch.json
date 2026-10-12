@@ -1,0 +1,19 @@
+{
+ "n": 10,
+ "url": "https://docs.zid.sa/merchant-activation.md",
+ "dir": "items/010-docs.zid.sa",
+ "fetched_at": "2026-10-12T10:49:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/merchant-activation.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1779,
+ "cited_in": [
+  "S01-ZD-C011",
+  "S01-ZD-C012"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3b6dfcee255d92380c2a19266eb0ce60ab8804ff29d78f0d523247d1a98c7297",
+ "raw_ext": "txt"
+}

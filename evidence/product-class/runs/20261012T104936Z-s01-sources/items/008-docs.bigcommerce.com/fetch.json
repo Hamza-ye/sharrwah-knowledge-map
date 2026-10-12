@@ -1,0 +1,19 @@
+{
+ "n": 8,
+ "url": "https://docs.bigcommerce.com/developer/learn/courses/checkout-orders-rest-api/transactions-api/refunds.md",
+ "dir": "items/008-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T10:49:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/learn/courses/checkout-orders-rest-api/transactions-api/refunds.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1062,
+ "cited_in": [
+  "S01-BC-C009",
+  "S01-BC-C010"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "490e689212295f4779d80b64bc9c62c98a3cd3e288a683537dc00856ff04858a",
+ "raw_ext": "txt"
+}

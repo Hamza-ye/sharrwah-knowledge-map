@@ -1,0 +1,18 @@
+{
+ "n": 80,
+ "url": "https://woocommerce.com/document/cash-on-delivery/",
+ "dir": "items/080-woocommerce.com",
+ "fetched_at": "2026-10-12T10:50:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/cash-on-delivery/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 38730,
+ "cited_in": [
+  "S01-WC-C103"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e8673b2608fd33def514b342788d7ecd727f2a7eaad8b1fc709b75c05e1f918b",
+ "raw_ext": "html"
+}

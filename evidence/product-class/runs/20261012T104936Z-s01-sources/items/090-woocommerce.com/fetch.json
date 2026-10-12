@@ -1,0 +1,20 @@
+{
+ "n": 90,
+ "url": "https://woocommerce.com/document/woopayments/managing-money/",
+ "dir": "items/090-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/managing-money/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 58479,
+ "cited_in": [
+  "S01-WC-C025",
+  "S01-WC-C171",
+  "S01-WC-C172"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "65a9062867f812daddb14d5abab318c8f3d6e8f46c277b752b9d27e60a86526e",
+ "raw_ext": "html"
+}

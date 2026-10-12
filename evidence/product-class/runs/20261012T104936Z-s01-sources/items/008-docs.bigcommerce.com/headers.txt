@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 10:49:43 GMT
+content-type: text/markdown; charset=utf-8
+age: 37954
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-IAD
+x-vercel-id: iad1::msmbl-1791802183611-6b2459c07f47
+content-encoding: br
+etag: W/"c0fd2d0c52b29c18b9efa802bba6241d"
+link: </developer/learn/courses/checkout-orders-rest-api/transactions-api/refunds.md>; rel="alternate"; type="text/markdown", </developer/learn/courses/checkout-orders-rest-api/transactions-api/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WuCUYJ76Mqm7AkzG8qHBVmALiiMHabmcoivKV292NUCUA3r116z80aucuOoiw75fjO%2FTSSHXqimqTBqamGT2EtKd2wJyACz88A2WD1JaoIq7uWrIXQdHOBVSWq3wtOKSWpzt8L3uoT8ANA%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=lSqqgM_YtIJSpsuwvdQ_NVV.b7ARtjfL_vo71pCHEVc-1791802183.5889513-1.0.1.1-ux9locvaIvxmQ9I5W7w2.iY_8KuJgLKMuN4_JuJpgTAF2FcO7LvqQIttUPw7pOh7ycm3O7VnX2W14IGo3qZ7ZvwzfAK0Bl7vqZmSPeS4uSNGGL82n0jrSe4yH.iGkcZC; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 12 Oct 2026 11:19:43 GMT
+bc-ray: 1
+cf-ray: a4958a1f68fd57fc-IAD
+alt-svc: h3=":443"; ma=86400
+

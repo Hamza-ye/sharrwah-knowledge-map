@@ -1,0 +1,21 @@
+{
+ "n": 103,
+ "url": "https://woocommerce.com/woo-vendor-agreement/",
+ "dir": "items/103-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/woo-vendor-agreement/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45621,
+ "cited_in": [
+  "S01-WC-C082",
+  "S01-WC-C083",
+  "S01-WC-C084",
+  "S01-WC-C175"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6e169c1ad929d1bf746f6ba4edb73976097cb8ad2a320501456fa16327c58991",
+ "raw_ext": "html"
+}
