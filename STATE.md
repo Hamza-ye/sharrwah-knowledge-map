@@ -44,7 +44,11 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
       - the undated sales tax booklet (066) takes 2020, the latest amendment it names;
       - the commercial register law "as amended" (041) takes its 1991 decree date.
   - Part C is done: 590 conditions and 705 citations, every quote found. Six pages couldn't be fetched (005, 033, 092, 034, 035, 099).
-  - Parts D and E are running.
+  - Part D is done: 635 conditions and 999 citations, every quote found.
+    - It read 96 of its 115 items. Its scanned PDFs' OCR is part F's.
+    - It couldn't read 2, 15, 18–20, 24, 25, 28, 75 and 130 (404s, Cloudflare checks, TLS, maintenance).
+    - It records US dollar and Saudi riyal exchange rates: a long series of states, so many cases.
+  - Part E is running.
 - **Pass 2 is reworked before it runs**, given pass 1's size (`PLAN.md` section 11, brief's pass 2).
   - Its first inspection found 12 must-fix items, all fixed. The place model changed most:
     - places are scopes: an authority's area, a party's service, or a named area;
@@ -108,8 +112,8 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 **Agents running when last checked (12 October 2026, 18:53 UTC):**
 - **Stage 1 pass 2, second inspection:** agent `a813c69e893cc2926`. It writes no file. If it was stopped, run it again.
 - **Pilot phase B:** one agent (`a9e10fcc19233f104`), on `studies/subjects/S-01/briefs/B-variation-points.md`, writing `variation-points.tsv`, `variants.tsv` and `notes-b.md`.
-- **Stage 1 pass 1:** parts D and E. Parts A, B, C and F are done.
-  - Agents: D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`.
+- **Stage 1 pass 1:** part E. Parts A to D and F are done.
+  - Agent: E `aa722ff96ec8f64a4`.
   - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
