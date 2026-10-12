@@ -37,8 +37,12 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
       - centralbank.gov.ye (001–010, connection reset or 503);
       - saba.ye (011, 021–023, 035, 037, 061; 403);
       - scans whose OCR is part F's.
-    - Six more were OCR'd on 12 October 2026 (`evidence/yemen/derived/README.md`), and part F is reading them: three photographs of documents (016, 026, 030) and three PDFs with a shifted font encoding (041, 047, 066).
-  - Part F is done: 150 conditions and 393 citations, every quote found. It notes that the Aden and Sana'a central banks' texts both name their area "Republic of Yemen". Pass 2's authority rule keeps the two apart.
+    - Six more were OCR'd on 12 October 2026 (`evidence/yemen/derived/README.md`), and part F has read them: three photographs of documents (016, 026, 030) and three PDFs with a shifted font encoding (041, 047, 066).
+  - Part F is done, including those six: 166 conditions and 482 citations, every quote found.
+    - It notes that the Aden and Sana'a central banks' texts both name their area "Republic of Yemen". Pass 2's authority rule keeps the two apart.
+    - Two dates to check in pass 2's review:
+      - the undated sales tax booklet (066) takes 2020, the latest amendment it names;
+      - the commercial register law "as amended" (041) takes its 1991 decree date.
   - Parts C to E are running.
 - **Pass 2 is reworked before it runs**, given pass 1's size (`PLAN.md` section 11, brief's pass 2).
   - Agents make the judgments: step 2a groups conditions and places, and step 2b labels states, several agents by range of groups.
@@ -98,8 +102,8 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 **Agents running when last checked (12 October 2026, 18:53 UTC):**
 - **Pilot phase B:** one agent (`a9e10fcc19233f104`), on `studies/subjects/S-01/briefs/B-variation-points.md`, writing `variation-points.tsv`, `variants.tsv` and `notes-b.md`.
 - **Stage 1 pass 2 inspection:** agent `af5cdd05bf3cf235c`. It writes no file. If it was stopped, run it again.
-- **Stage 1 pass 1:** parts C to E, and part F reading six new OCR files. Parts A and B are done.
-  - Agents: C `ae62ffcdd5d9f5670`, D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`, F `aa29284ecad1cbef0`.
+- **Stage 1 pass 1:** parts C to E. Parts A, B and F are done.
+  - Agents: C `ae62ffcdd5d9f5670`, D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`.
   - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
