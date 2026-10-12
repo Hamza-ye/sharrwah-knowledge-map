@@ -56,6 +56,13 @@ One line per item, in the run's order: the item, its date, and the rows it gave.
 - 059 yemeneco.org, published 2025-04-12: read, 140 lines; condition YQ-B148, citations YE-B270–YE-B271.
 - 060 yemeneco.org, published 2026-04-25: read, 97 lines (a one-line news item); condition YQ-B149, citation YE-B272.
 - 061 (saba.ye): not readable; see below.
+- 062 26sep.net, the Sana'a government's one-year report (Saba), dated 12 August 2025 in the article (line 54; the manifest's hint, 2026-10-05, comes from elsewhere on the page): read, 1032 lines; conditions YQ-B150–YQ-B159, citations YE-B273–YE-B290. Planned or draft items (a draft e-commerce law and other draft laws sent to the Cabinet, line 245; the planned 'Mu'tamad' e-store platform for productive families and 'Yemen Barcode', line 247; a payment platform for government and e-commerce in preparation, line 267) were read and not recorded, as they are moves, not conditions.
+- 063 yemeneco.org, published 2025-05-01: read, 134 lines, including its related-headlines block (headlines only); conditions YQ-B160–YQ-B161, citations YE-B291–YE-B292. The planned e-marketing platform for productive families (lines 59-61) is a move and wasn't recorded.
+- 064 yemeneco.org, published 2026-07-27: read, 97 lines (a one-line news item); no condition: it announces the coming launch of the 'Mu'tamad' platform for marketing local products, linked to e-wallets and bank payment (line 55), which is a move.
+- 065 yemeneco.org, published 2025-07-21: read, 130 lines; conditions YQ-B162–YQ-B163, citations YE-B293–YE-B295.
+- 066 tax.gov.ye PDF, general sales tax law 19 of 2001 as amended by law 42 of 2005 (line 77; footnotes at lines 650 and 668 cite law 7 of 2020 for some articles): read, 1092 lines; conditions YQ-B164–YQ-B166, citations YE-B296–YE-B303. Only arts. 8-12 (lines 201-254) and a few headings are legible; see Problems.
+- 067 tax.gov.ye/salestaxes, the Tax Authority's live page of sales-tax decisions (capture date 2026-10-10): read, 90 lines; conditions YQ-B167–YQ-B168, citations YE-B304–YE-B306. It lists decisions by title only; titles that don't state a rule (e.g. decision 86 of 2005 on cash registers for retail sales, decision 108 of 2002 on sales invoices) weren't recorded as conditions.
+- 068–071 (tax.gov.ye PDFs: sales-tax decisions and the records-and-invoices guide): scans with no text layer; see below.
 
 ## Same condition: identifications within the part
 
@@ -76,6 +83,8 @@ One line per item, in the run's order: the item, its date, and the rows it gave.
 - "Whether government taxes and fees can be paid electronically": YQ-B054 (item 032), YQ-B126 (item 053).
 - Commercial registration (items 041, 053-055): "When an individual merchant must apply for entry in the commercial register": YQ-B071 (item 041, law), YQ-B129 (item 054). "When a company must apply for entry in the commercial register": YQ-B132 (item 041), YQ-B134 (item 055). "Whether a merchant can apply online for the ministry's registrations": YQ-B125, YQ-B130, YQ-B138 (items 053, 054, 055), same state. "Whether a commercial-registration applicant must attend in person": YQ-B140, YQ-B141 (items 053, 054), same state. "Whether government taxes and fees can be paid electronically": also YQ-B131, YQ-B139 (items 054, 055). "Whether a merchant needs a fixed place of business": YQ-B069 (item 041), YQ-B135 (item 055). Items 053 and 054 serve different applicants (individuals in general; individual trading establishments by category), so their document requirements are two conditions (YQ-B124, YQ-B127); the law's deadlines are split the same way by applicant (individual, company, foreign branch: YQ-B071, YQ-B132, YQ-B133).
 - "Who may act as a commercial agent of a foreign company": YQ-B102 (item 045, law 23 of 1997), YQ-B142 (item 056). "Whether a merchant can apply online for the ministry's registrations" also YQ-B144, and the e-wallet payment condition also YQ-B145 (item 056).
+- Item 062 adds to: "Whether interest-bearing (usurious) transactions are allowed" (YQ-B063, YQ-B157); "How available cash banknotes are" (YQ-B052, YQ-B159); "Which electronic money services are available to pay with" (YQ-B155); "Whether government taxes and fees can be paid electronically" (YQ-B154); "Whether a merchant can apply online for the ministry's registrations" (YQ-B153).
+- "What fees small producers and productive families pay": YQ-B152 (item 062), YQ-B160 (item 063), YQ-B162 (item 065).
 
 ## Place groupings within the part
 
@@ -92,6 +101,7 @@ One line per item, in the run's order: the item, its date, and the rows it gave.
 - 016, 026, 030 (yemeneco.org): JPEG images with no text_file in the manifest; no readable text to quote.
 - Scanned PDFs with no text layer: 042, 046, 051, 069, 070, 071 (text.txt empty), 050 (text.txt holds only the title, قانون الاستثمار 2025م-1446هـ), 068 (page numbers only), 057 (PDF not stored; text.txt empty). The run's README says their OCR text is in evidence/yemen/derived/, which the brief gives to part F; part B didn't read it.
 - 047 (moit.gov.ye PDF, trade names law): the text layer of every article is in a fully shifted font encoding (e.g. م for a space, ؼ for ي, ظ for ل), the same as the unreadable parts of 041; only the title and chapter headings are clean. A reader with the PDF (or OCR of it) could close it.
+- 066 (tax.gov.ye PDF, sales tax law): all but arts. 8-12 (blank or shifted encoding); see Problems.
 
 ## Problems
 
@@ -99,3 +109,4 @@ One line per item, in the run's order: the item, its date, and the rows it gave.
 - Item 041 (commercial register law): the PDF's text layer is damaged in three ways. Art. 11 (lines 104-110) is clean. Arts. 3-9 (lines 36-96) render some letters wrongly (e.g. ل for و, ط for ب, د for ق) but stay legible; part B quotes them as in the file and gives its reading in the state. Arts. 1-2, 6, 10, 12-15 and 20-28 (lines 1-34, 78-82, 98-103, 113-131, 154-184) are in a fully shifted encoding, and arts. 16-19 (penalties, lines 133-153) drop letters and their digits are unreliable; part B didn't record conditions from these. Among them is art. 12(2) (lines 119-120), which appears to bar bodies dealing with merchants from processing their business without proof of registration; a reader of the PDF itself could confirm it.
 - Item 044 (consumer protection regulation): its issue dates are illegible in the text layer, so its rows take the year 2010 from the ministry's own listing of the file (item 040, line 103: the same title, 357.09 KB), with date_basis 'source date: shown'.
 - Item 045 (agencies law): the whole text layer swaps letters (see What was read); it stays legible, and part B's reading of each quote is in the state. The file carries two editorial notes (lines 129 and 262, ملاحظة), one saying art. 17(b) isn't enforced in practice; part B kept that in YQ-B104's note.
+- Item 066 (sales tax law): apart from arts. 8-12 and some headings, the text layer is either blank (lines holding only dots) or in the same fully shifted encoding as 041 and 047, so the tax rates, registration threshold, returns and penalties can't be read from it. A reader of the PDF (or OCR) could close that.

@@ -46,3 +46,11 @@ Each line: item, file read, what it is, conditions recorded from it.
 - 035 yk-bank.com (its Floosak page): not readable. `text.txt` is Cloudflare's block page (HTTP 403); no content of the site.
 - 036 ahdfinancial.com, `text.txt`: AHD Financial Services' site (live page): founded 2022, Jaib wallet launched March 2023, aims. Read in full; no condition stated.
 - 037 yemeneco.org, `text.txt`: Yemen Eco news item of 24 November 2024 on the launch in Sana'a of the MB wallet, under a live ticker of headlines. Read in full; 4 conditions, 1 from an undated ticker headline (road levies in Lahj). The other headlines are about other countries, or name gold and exchange-rate reports without their figures.
+- 038 kuraimibank.com, `text.txt`: Kuraimi Bank's page on Hasseb points for merchants (live page). Its tabs are empty in the capture. 1 condition.
+- 039 kuraimibank.com, `text.txt`: Kuraimi Bank's page on paying through Hasseb points, with a list of related services. 4 conditions.
+- 040 kuraimibank.com, `raw.json`: the bank site's JSON for the M Floos service: Hasseb terms for merchants and customers, and an FAQ. Read in full; 13 conditions.
+- 041 kuraimibank.com, `text.txt`: Kuraimi Bank's M Floos page. 3 conditions.
+- 042 kuraimibank.com, `text.txt`: Kuraimi Bank's internal transfers page, with a list of related services. 3 conditions. It gives 4,000 M Floos agents; item 040 gives 12,000; both recorded.
+- 043 kuraimibank.com, `raw.json`: the bank site's JSON for its API linking service for online sellers. Read in full; 5 conditions.
+- 044 to 048 t.me (Kuraimi Bank channel, posted 2026-08-22, 2026-03-03, 2026-02-22, 2025-11-12, 2026-07-13), `embed-text.txt`: posts on Hasseb. Read in full; 1, 2, 5, 2 and 1 conditions.
+- 049 to 053 t.me (M Floos channel, posted 2026-02-01, 2026-08-09, 2026-05-19, 2026-10-08, 2026-10-08), `embed-text.txt`: offers for paying through Hasseb and free transfers. Read in full; 2, 1, 1, 1 and 1 conditions.

@@ -55,3 +55,5 @@ One line per item: `n`, folder, what was read, and the rows it gave.
 - 159 `159-sanaacenter.org` (The Yemen Review, April-June 2025, the economy section, 22 July 2025): read in full (`text.txt`). Conditions YQ-E331 to YQ-E360; citations YE-E405 to YE-E441.
 - 160 `160-sanaacenter.org` (The Yemen Review, April-June 2026, the economy section, 31 July 2026): read in full (`text.txt`). Conditions YQ-E361 to YQ-E391; citations YE-E442 to YE-E482.
 - 161 `161-sanaacenter.org` (The Yemen Review, January-March 2026, the economy section, 24 April 2026): read in full (`text.txt`). Conditions YQ-E392 to YQ-E410; citations YE-E483 to YE-E505.
+- 162 `162-sanaacenter.org` (The Yemen Review, July-September 2025, the economy section, 28 October 2025): read in full (`text.txt`). Conditions YQ-E411 to YQ-E439; citations YE-E506 to YE-E539. It dates the Houthi ban on American (and Israeli) products to 25 April 2025, where item 159 gives 23 April; both are recorded.
+- 163 `163-sanaacenter.org` (The Yemen Review, July-September 2024, the economy section, 16 October 2024): read in full (`text.txt`). Conditions YQ-E440 to YQ-E469; citations YE-E540 to YE-E579.
