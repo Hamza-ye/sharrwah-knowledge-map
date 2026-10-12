@@ -1,6 +1,6 @@
 # Pass 1, part F: notes
 
-Source commit in every `source`: 9d0de523f1852ebf7716f0da01b6b619edc5e8fc. The `evidence/` tree is unchanged between that commit and the working tree.
+Source commit in every `source`: 9d0de523f1852ebf7716f0da01b6b619edc5e8fc. The files part F cites, under `evidence/yemen/derived/` and the three runs named below, are unchanged between that commit and the working tree (`git diff` against it lists changes only under `evidence/product-class/`).
 
 ## What was read
 
@@ -26,7 +26,7 @@ Run facts used in every citation of this run: `README.md` says it was fetched fr
 
 ### OCR text in `evidence/yemen/derived/`
 
-Read: the 18 `ocr.txt` files of scanned PDFs, 9 from the cited-sources run (items 049, 050, 051, 052, 053, 055, 056, 058, 059) and 9 from the Sana'a rules run (items 042, 046, 050, 051, 057, 068, 069, 070, 071), plus `derived/README.md`; to name, address and date each PDF, its row in the run's `manifest.tsv`, and item 057's `not-stored.txt`. Page images in `derived/<run>/<item>/pages/` were viewed where the OCR garbles what a row relies on; the entries below name them. Both runs' READMEs say they were fetched from "a Claude Code cloud container outside Yemen", so `fetched_from` is `outside Yemen`. Each citation names the PDF and its run in `locator` and gives the PDF's address from the run's `manifest.tsv` in `url`. Quotes are copied from the OCR text as it stands, OCR errors included.
+Read: the 18 `ocr.txt` files of scanned PDFs, 9 from the cited-sources run, `runs/20261010T050304Z-cited-sources/` (items 049, 050, 051, 052, 053, 055, 056, 058, 059), and 9 from the Sana'a rules run, `runs/20261010T061420Z-sanaa-rules-search/` (items 042, 046, 050, 051, 057, 068, 069, 070, 071), plus `derived/README.md`; to name, address and date each PDF, its row in the run's `manifest.tsv`, and item 057's `not-stored.txt`. Page images in `derived/<run>/<item>/pages/` were viewed where the OCR garbles what a row relies on; the entries below name them. Both runs' READMEs say they were fetched from "a Claude Code cloud container outside Yemen", so `fetched_from` is `outside Yemen`. Each citation names the PDF and its run in `locator` and gives the PDF's address from the run's `manifest.tsv` in `url`. Quotes are copied from the OCR text as it stands, OCR errors included.
 
 Not part F: `derived/blocked-evidence-founder/F01` to `F15/text.txt` are text of the founder's saved pages (part A's source), not OCR of a scanned PDF in a run; only their first lines were looked at, to tell what they are.
 

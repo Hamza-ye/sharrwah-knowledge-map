@@ -74,6 +74,7 @@ One line per item, in the run's order: the item, its date, and the rows it gave.
 - 080 yemen-nic.info, a news item dated 14 May 2018 (lines 33-35; live page): read, 95 lines; no condition: it reports decision 53 of 2018 of the head of the Supreme Political Council establishing the General Zakat Authority and lists only the decision's chapter titles (line 36), without saying what the authority requires of merchants.
 - 081 althawrah.ye, an interview published 7 May 2019 (line 8): read, 125 lines; condition YQ-B188, citations YE-B411–YE-B416. The planned unified zakat accounting guide (lines 39-42) is a move and wasn't recorded; revenue figures, disbursements and the penalty for extorting collectors (line 56) weren't recorded as conditions.
 - 082 26sep.net, a report dated 30 September 2026 (line 54): read, 187 lines; condition YQ-B189, citations YE-B417–YE-B419. The rest of the page is the site's menus and lists of other headlines. The manifest's date hint (2026-10-05) is not the article's date; see Problems.
+- 083 yemeneco.org, published 2026-05-17: read, 97 lines (a one-line news item, line 55; the ticker as in 013; no related-headlines block); condition YQ-B190, citation YE-B420.
 
 ## Same condition: identifications within the part
 
