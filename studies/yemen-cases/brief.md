@@ -1,6 +1,18 @@
 # Brief: Yemen's axes and cases (Q2, step 1)
 
-This is `PLAN.md` Stage 1. You are one agent with one task. Read only this brief and the evidence named under "Inputs".
+This is `PLAN.md` Stage 1. Read only this brief and the evidence named under "Inputs".
+
+**Who does what.** The message that started you names your role.
+- **Pass 1** is done by six agents, one per part:
+  - A: the founder's pages and any attestations;
+  - B: the Sana'a rules run;
+  - C: the operators run;
+  - D: the cited-sources run, items 1 to 131;
+  - E: the cited-sources run, items 132 to 262;
+  - F: the community clients, and the OCR text in `derived/`.
+
+  Each reads every source in its part, and nothing else. It writes `pass1/conditions-<part>.tsv` and `pass1/citations-<part>.tsv`, numbering its rows `YQ-<part>001…` and `YE-<part>001…`, and `pass1/notes-<part>.md`.
+- **Pass 2** is one agent. It starts after the coordinator has joined pass 1's files into `conditions.tsv` and `citations.tsv`, and it writes everything else. It adds no citation: what pass 1 didn't find goes in `unknowns.tsv`.
 
 A first run stopped early: its cap on axes fired before the evidence was read. This brief therefore works in two passes. Pass 1 reads every source and records its conditions. Only then does pass 2 form axes.
 
@@ -21,7 +33,7 @@ This is Q2's first step, as agreed with the founder:
 
 ## Pass 1: conditions, from every source
 
-**Read every source,** in this order:
+**Read every source in your part.** The parts, in this order:
 1. the founder's pages from inside Yemen, `evidence/yemen/blocked-evidence-founder/`;
 2. any attestation in `evidence/yemen/attestations/` besides `TEMPLATE.md`;
 3. the Sana'a rules run, `runs/20261010T061420Z-sanaa-rules-search/`;
@@ -128,13 +140,13 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 
 | File | Columns |
 | --- | --- |
-| `conditions.tsv` | `condition_id` (YQ-001…) · `condition` · `state` · `place` · `held_at` · `date_basis` · `cite_ids` · `note` |
+| `conditions.tsv` | `condition_id` (YQ-A001…, by part) · `condition` · `state` · `place` · `held_at` · `date_basis` · `cite_ids` · `note` |
 | `axes.tsv` | `axis_id` (YA-01…) · `axis` · `what_varies` · `condition_ids` · `states` (`label [YE-001, YE-007] \| label @ place [YE-010]`) · `today` (state labels joined by ` + `, with `disputed` or `unknown` where they apply) · `today_cite_ids` · `note` |
 | `constants.tsv` | `constant_id` (YK-01…) · `condition` · `place` · `condition_ids` · `cite_ids` · `note` |
 | `cases.tsv` | `case_id` (YC-00, then YC-01…) · `name` · `axis_states` (`YA-01=<label>; …` for every axis, joined by ` + ` where `today` joins them, or `disputed` or `unknown`) · `basis` · `cite_ids` · `note` |
-| `citations.tsv` | `cite_id` (YE-001…) · `source` · `locator` · `quote` · `source_date` · `date_basis` · `fetched_from` · `url` |
+| `citations.tsv` | `cite_id` (YE-A001…, by part) · `source` · `locator` · `quote` · `source_date` · `date_basis` · `fetched_from` · `url` |
 | `unknowns.tsv` | `about` · `what_would_show_it` · `who_can` · `route` · `read` · `why_not_held` |
-| `notes.md` | What you read, with counts per run and folder; identifications and place groupings; what couldn't be read; disagreements; problems with the method. |
+| `notes.md` | Pass 2: identifications across parts, and place groupings; disagreements; problems with the method. Pass 1 writes its own `pass1/notes-<part>.md`: what was read, with counts; identifications and place groupings within the part; what couldn't be read. |
 
 **Done when:**
 - every source has been read, or listed as unreadable;

@@ -21,8 +21,8 @@ HEADERS = {
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "fetched_from", "url"],
     "unknowns.tsv": ["about", "what_would_show_it", "who_can", "route", "read", "why_not_held"],
 }
-IDS = {"conditions.tsv": ("condition_id", r"^YQ-\d{3}$"), "axes.tsv": ("axis_id", r"^YA-\d{2}$"), "constants.tsv": ("constant_id", r"^YK-\d{2}$"),
-       "cases.tsv": ("case_id", r"^YC-\d{2}$"), "citations.tsv": ("cite_id", r"^YE-\d{3}$")}
+IDS = {"conditions.tsv": ("condition_id", r"^YQ-[A-F]\d{3}$"), "axes.tsv": ("axis_id", r"^YA-\d{2}$"), "constants.tsv": ("constant_id", r"^YK-\d{2}$"),
+       "cases.tsv": ("case_id", r"^YC-\d{2}$"), "citations.tsv": ("cite_id", r"^YE-[A-F]\d{3}$")}
 BASES = {"today", "in force", "occurred", "provided for"}
 FETCHED = {"inside Yemen", "outside Yemen", "attestation"}
 WHO = {"agent", "founder", "reader"}
