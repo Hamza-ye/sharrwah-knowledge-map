@@ -28,11 +28,15 @@ Go down the list, and take the first mark that holds for any reference's variant
 ## Rules
 
 1. **Two pieces of evidence.** A mark other than `unknown` cites both:
-   - **the variant's condition:** the `stmt_ids` of the platform's own statement of what the variant needs or where it holds, such as its scope, eligibility, countries, partners or licence;
+   - **the variant's condition:** the `stmt_ids` of the platform's own statement of what the variant needs or where it holds. This is either a statement under bullet (e) whose `conditions` names the variant's statements, or the scope of the variant's own statements;
    - **the case's evidence:** the Stage 1 ids showing whether the case meets that condition, which are `YA` states, `YK` constants or `YE` citations.
 
    Without both, the mark is `unknown`. Say what would show it.
-2. **No placement** is written a second time as a product gap, so that it still makes sense with Yemen's name removed. This is Q2's rule 3.
+2. **No placement** is a claim about every variant of the variation point.
+   - In `per_variant`, give each variant's condition and the case evidence that it fails, as `<variant_id>: <condition stmt_ids> / <case evidence ids>`, separated by `;`.
+   - If any variant's failure can't be shown, the mark is `unknown`.
+   - Write it a second time as a product gap, in a way that still makes sense with Yemen's name removed. This is Q2's rule 3.
+   - Write the founder's design decision it raises in `founder_item`, as `PLAN.md` section 6 says.
 3. **Moves.** Where the evidence names a consultation, partnership, licence or regulator's action that would change a mark, record it in `moves`, with its citation. Otherwise leave `moves` empty.
 4. **Nothing about what Sharrwah should do.** No inference beyond the mark, anywhere, including notes.
 
@@ -42,5 +46,5 @@ The `.tsv` file is tab-separated, with a header row and no quoting. Tabs and new
 
 | File | Columns |
 | --- | --- |
-| `yemen-marks.tsv` | `vp_id` · `case_id` · `mark` · `variant_id` (the variant used) · `condition_stmt_ids` · `case_evidence` (YA, YK or YE ids) · `product_gap` (for `no placement`) · `moves` · `what_would_show_it` (for `unknown`) · `note` |
+| `yemen-marks.tsv` | `vp_id` · `case_id` · `mark` · `variant_id` (the variant used) · `condition_stmt_ids` · `case_evidence` (YA, YK or YE ids) · `per_variant` (for `no placement`) · `product_gap` (for `no placement`) · `founder_item` (for `no placement`) · `moves` · `what_would_show_it` (for `unknown`) · `note` |
 | `notes-d.md` | Marks that were hard to give, and why; problems with the method. |

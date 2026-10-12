@@ -12,28 +12,32 @@ Don't read `notes.md` files or any `note` column.
 
 > Who holds the merchant's funds between the buyer's payment and the merchant's payout?
 
-Phase A collected what each platform states about the merchant's money between the two ends, under four bullets:
+Phase A collected what each platform states about the merchant's money between the two ends, under five bullets:
 - **(a)** who or what holds or controls it;
 - **(b)** under whose account, licence or terms it is held;
 - **(c)** when, or on what conditions, it is released to the merchant or held back;
-- **(d)** that the platform has no part in it.
+- **(d)** that the platform has no part in it;
+- **(e)** where, or for whom, an arrangement under (a) to (c) is offered.
+
+Statements under (e) are conditions, not variants. Phase D reads them.
 
 **Your task:** split the subject into variation points, and place each platform's statements under them as variants. Don't judge the variants, and don't give causes; a later phase does that.
 
 ## Rules
 
-1. **Candidates.** Each statement that says who or what fills some X under bullets (a) to (c) gives one candidate. Its X is quoted from that statement.
+1. **Candidates.** Each statement that says who or what fills some X under bullets (a) to (c) gives one candidate for each of those bullets it carries. Its X is quoted from that statement.
 2. **Variation points.** Candidates from different statements are one variation point when their X matches on one of the bases in rule 4.
    - Each variation point keeps the bullet of its statements.
    - Its question takes the form "who or what fills X", with X quoted from one of the statements in `raised_by`.
    - `x_words` lists each raising platform's own words for X.
    - **Merging.** Two variation points answered by exactly the same statements are merged. List each merge in `notes-b.md`.
-3. **Variants.** For each variation point and each platform, give one row per distinct answer the platform gives, with its own `variant_id`:
+3. **Variants.** For each variation point and each platform, give one row per distinct answer the platform gives, with its own `variant_id`. Two answers are distinct when they name a different who or what, shown by a quoted term or identifier. A row takes one of four forms:
    - **an answer:** `variant` is an excerpt of one of its statements, verbatim;
-   - **`gap`:** when the platform's gaps under the same bullet cover it, with those `gap_ids`;
-   - **`not covered`:** when the platform has neither. These rows go back to that platform for gap-closing (phase A2). List them in `notes-b.md`.
+   - **`absent`:** the platform's `absences.tsv` shows it absent from a complete list, with those `absence_ids`;
+   - **`gap`:** the platform's gaps under the same bullet cover it, with those `gap_ids`;
+   - **`not covered`:** the platform has none of these. These rows go back to that platform for gap-closing (phase A2). List them in `notes-b.md`.
 
-   A bullet (d) statement, that the platform has no part, is the platform's variant for each variation point it applies to.
+   A bullet (d) statement, that the platform has no part, is the platform's variant for each variation point it applies to, with the basis `answers`.
 4. **Matching.** Compare each statement with a statement in the variation point's `raised_by`. Record every basis that holds, with the words that show it in `basis_evidence`:
    - `term`: the same term, including a platform's own translation from `terms.tsv`. It fails when the two platforms' definitions in `terms.tsv` differ.
    - `identifiers`: the same key, scope, topic or entitlement;
@@ -49,7 +53,7 @@ Phase A collected what each platform states about the merchant's money between t
 
 ## Second pass, after phase A2
 
-When the coordinator says phase A2 is done, revisit every row that was `gap` or `not covered`:
+When the coordinator says phase A2 is done, revisit every row that was `gap` or `not covered`. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`.
 - replace it with variants from the statements A2 added, under the rules above;
 - or keep it as `gap`, with A2's `gap_ids`.
 
@@ -62,7 +66,7 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 | File | Columns |
 | --- | --- |
 | `variation-points.tsv` | `vp_id` (S01-VP-01…) · `bullet` · `question` · `x_words` · `raised_by` (stmt_ids) · `note` |
-| `variants.tsv` | `variant_id` (S01-V-001…) · `vp_id` · `platform` · `variant` · `stmt_ids` · `basis` (every basis that holds, `;`-separated) · `basis_evidence` · `kind` · `scope` · `gap_ids` · `note` |
+| `variants.tsv` | `variant_id` (S01-V-001…) · `vp_id` · `platform` · `variant` (an excerpt, `absent`, `gap` or `not covered`) · `stmt_ids` · `basis` (every basis that holds, `;`-separated) · `basis_evidence` · `kind` · `scope` · `gap_ids` · `absence_ids` · `note` |
 | `notes-b.md` | Merges; partial overlaps that were split; `not covered` rows; problems with the method. |
 
 Write the files as you go: if you are interrupted, the next run continues from them.

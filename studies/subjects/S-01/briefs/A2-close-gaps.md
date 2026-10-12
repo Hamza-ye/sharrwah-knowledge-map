@@ -14,7 +14,7 @@ This is `PLAN.md` Stage 2, the pilot: the gap-closing inside the subject. It run
 Take each row of `variants.tsv` for your platform whose `variant` is `gap` or `not covered`. For each variation point it belongs to:
 1. Read the held or live sources likely to state who or what fills it on your platform. Run `method/held_index.py` on an address before you fetch it live.
 2. Record what you find as new statements, continuing your `stmt_id`s and `cite_id`s, under phase A's rules.
-3. Where nothing states it, record or update a gap, listing what you read.
+3. Where a complete list shows it absent, record an absence. Where nothing states it, record a new gap, listing what you read. Don't change existing rows.
 
 ## Output
 

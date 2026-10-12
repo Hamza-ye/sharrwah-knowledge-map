@@ -336,3 +336,9 @@ Both sets are placed, subject by subject: the 81 payment rows and the Knowledge 
 - **12 October 2026:** proposed by the coordinating session.
 - **12 October 2026,** after the founder's questions: section 5 now says when the founder is needed, what a decision item looks like, how standing decisions work, and what spending covers.
 - **12 October 2026:** the founder's go (G0).
+- **12 October 2026,** method fixes within the plan, from inspecting the pilot's briefs. They are for the founder at G1:
+  - The test form's step 3 takes its tags in a set order. `no difference` comes first, and `business model` has a defined test.
+  - Step 5 adds "maturity or unknown, cheap to change: left to the build".
+  - In step 5, a letter's row applies when any platform has that letter.
+  - A source's kind (observed, shipped, stated, official page) is assigned by rule, in `method/source_kinds.py`.
+  - When a question row must be answered is mapped from what follows, in `studies/subjects/S-01/briefs/E-rows.md`.

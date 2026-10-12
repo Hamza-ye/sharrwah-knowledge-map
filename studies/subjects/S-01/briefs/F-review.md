@@ -3,7 +3,8 @@
 This is `PLAN.md` Stage 2, the pilot. You review what other agents and the coordinator produced for one subject. You did not produce any of it. You change nothing; you report.
 
 **Read only this brief and:**
-- everything in `studies/subjects/S-01/` except `briefs/`;
+- everything in `studies/subjects/S-01/`, and of `briefs/` only `C-analysis.md`, for its rule table;
+- `register/pay-questions.tsv`, only the columns `id`, `question`, `needed_by` and `lane`;
 - Stage 1's output in `studies/yemen-cases/`;
 - the sources those files cite, to check them.
 
@@ -24,6 +25,7 @@ This is `PLAN.md` Stage 2, the pilot. You review what other agents and the coord
    - Is anything decided there that is the founder's to decide?
 6. **Coverage.** Is any statement in the platforms' phase A outputs that bears on the subject left out of every variation point?
 7. **Matching.** Does each variant's `basis_evidence` show the bases it claims? Is any variant placed under a variation point that names a different X?
+8. **Kinds.** For the statements the analysis cites, is the rule `kinds.tsv` gives for each one right for that source?
 
 ## Output
 

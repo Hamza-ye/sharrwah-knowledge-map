@@ -4,6 +4,7 @@ This is `PLAN.md` Stage 2, the pilot. It carries out Q3 for one subject. You are
 
 **Read only this brief and:**
 - `register/pay-questions.tsv`, and in it only the columns `id`, `question`, `needed_by` and `lane`. The other columns hold citations that are not trusted: don't use them.
+- the Knowledge Map's 179 questions, if the coordinator's message gives you their path. Otherwise say in `notes-e.md` that they weren't placed.
 - `studies/subjects/S-01/variation-points.tsv`, `variants.tsv`, `analysis.tsv` and `yemen-marks.tsv`.
 
 Don't read `notes*.md` files or any `note` column.
@@ -20,14 +21,14 @@ For each row:
    - Rows that don't touch it are listed with `no`, and nothing more.
 2. **For each row that touches it,** record:
    - the variation points it belongs to;
-   - **who answers it:**
-     - `platform evidence`;
-     - `Yemen evidence`;
-     - `founder decision`, when the analysis gives the founder a decision on it;
-     - `partner`;
-     - `regulator`;
+   - **who answers it,** every one that applies:
+     - `founder decision`: when `analysis.tsv` or `yemen-marks.tsv` gives a `founder_item` on it;
+     - `partner`: when a mark on it is `carried only with a partner`;
+     - `regulator`: when its cause is `market, named rule`, or a mark's `moves` names a regulator;
+     - `Yemen evidence`: when its marks answer it;
+     - `platform evidence`: when its variants answer it;
    - **when** it must be answered. This comes from the variation point's `follows` in `analysis.tsv`, by this mapping, which is the coordinator's own:
-     - **`before build`:** when `follows` includes "a decision for the founder, on a recommendation";
+     - **`before build`:** when `follows` includes "a decision for the founder, on a recommendation", or a mark gives a `founder_item`;
      - **`before release`:** when it includes "kept open as a variation point until evidence settles it", "a variation point behind one interface, bound per market, store or plan" or "a variation point bound per market";
      - **`later`:** when it holds only "the platform carries all the variants at once", "bound per product" or "left to the build";
      - **`unclear`:** when it reads `none applies`.

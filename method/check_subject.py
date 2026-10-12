@@ -45,6 +45,9 @@ RULES = {"the platform carries all the variants at once",
 FOUNDER_RULE = "a decision for the founder, on a recommendation"
 MARKS = {"carried unchanged", "carried with configuration", "carried only with a partner", "no placement", "unknown"}
 WHEN = {"before build", "before release", "later", "unclear"}
+ANSWERERS = {"founder decision", "partner", "regulator", "Yemen evidence", "platform evidence"}
+YEMEN_NAMES = re.compile(r"(?i)yemen|\baden\b|sana'?a|\byer\b|اليمن|يمني|عدن|صنعاء|ريال يمني")
+NON_ANSWERS = {"absent", "gap", "not covered"}
 HEAD = {
     "statements.tsv": ["stmt_id", "bullet", "placement", "identifier", "statement", "scope", "marker", "conditions", "cite_ids", "from", "note"],
     "terms.tsv": ["term", "translation", "definition", "cite_ids"],
@@ -54,11 +57,11 @@ HEAD = {
     "a2.tsv": ["vp_id", "stmt_ids", "gap_ids", "read"],
     "variation-points.tsv": ["vp_id", "bullet", "question", "x_words", "raised_by", "note"],
     "variants.tsv": ["variant_id", "vp_id", "platform", "variant", "stmt_ids", "basis", "basis_evidence", "kind", "scope",
-                     "gap_ids", "note"],
+                     "gap_ids", "absence_ids", "note"],
     "analysis.tsv": ["vp_id", "cause", "cause_basis", "scopes_compared", "cause_reading", "coexistence", "coexistence_basis",
                      "general_variant", "follows", "expensive_because", "founder_item", "note"],
-    "yemen-marks.tsv": ["vp_id", "case_id", "mark", "variant_id", "condition_stmt_ids", "case_evidence", "product_gap",
-                        "moves", "what_would_show_it", "note"],
+    "yemen-marks.tsv": ["vp_id", "case_id", "mark", "variant_id", "condition_stmt_ids", "case_evidence", "per_variant",
+                        "product_gap", "founder_item", "moves", "what_would_show_it", "note"],
     "rows.tsv": ["row_id", "touches", "vp_ids", "who_answers", "when", "time_bombs", "basis", "what_would_settle_it", "note"],
 }
 issues, quotes, urls = [], [], defaultdict(set)
@@ -103,7 +106,7 @@ def contained(part, whole):
     return any(p[1] and p[1] in w[1] for p, w in zip(pv, wv))
 
 # ---------- phase A, per platform ----------
-stmts, gaps, cit_all, kinds = {}, {}, {}, {}
+stmts, gaps, cit_all, kinds, absences = {}, {}, {}, {}, {}
 for plat, code in PLATFORMS.items():
     d = os.path.join(subj, plat)
     if not os.path.isdir(d):
@@ -175,6 +178,7 @@ for plat, code in PLATFORMS.items():
             if c not in cit:
                 err(f"{plat}/terms.tsv", t["term"][:30], f"cite_id {c} not in citations")
     for a in ab:
+        absences[a["absence_id"]] = dict(a, platform=plat)
         if a["bullet"] not in ("a", "b", "c", "e"):
             err(f"{plat}/absences.tsv", a["absence_id"], f"bullet '{a['bullet']}' is not a, b, c or e")
         for col in ("list_cite_ids", "complete_cite_ids"):
@@ -269,6 +273,12 @@ if vps is not None:
             err("variation-points.tsv", i, "the question doesn't take the form 'who or what fills X'")
         if not v["x_words"]:
             err("variation-points.tsv", i, "x_words is empty")
+        quoted = re.findall(r'"([^"]+)"|“([^”]+)”|«([^»]+)»', v["question"])
+        spans = [next(x for x in q if x) for q in quoted]
+        if not spans:
+            err("variation-points.tsv", i, "the question quotes no X")
+        elif not any(contained(x, stmts[s]["statement"]) for x in spans for s in ids(v["raised_by"]) if s in stmts):
+            err("variation-points.tsv", i, "the question's quoted X is not from a raised_by statement")
         if not ids(v["raised_by"]):
             err("variation-points.tsv", i, "raised_by is empty")
         for s in ids(v["raised_by"]):
@@ -294,6 +304,12 @@ if var is not None:
                     err("variants.tsv", i, f"gap {g} is not one of {plat}'s gaps")
                 elif r["vp_id"] in vp and gaps[g]["bullet"] != vp[r["vp_id"]]["bullet"]:
                     err("variants.tsv", i, f"gap {g} is under bullet {gaps[g]['bullet']}, not the variation point's")
+        elif r["variant"] == "absent":
+            if not ids(r["absence_ids"]):
+                err("variants.tsv", i, "an absent variant names its absence_ids")
+            for a in ids(r["absence_ids"]):
+                if absences.get(a, {}).get("platform") != plat:
+                    err("variants.tsv", i, f"absence {a} is not one of {plat}'s absences")
         elif r["variant"] != "not covered":
             bs = [b.strip() for b in r["basis"].split(";") if b.strip()]
             if not bs or any(b not in BASES for b in bs):
@@ -353,12 +369,16 @@ if ana is not None:
             err("analysis.tsv", v, "cause_reading doesn't start with 'Reading:'")
         for col in ("cause_basis", "coexistence_basis"):
             for s in ids(r[col]):
-                if s not in stmts and s not in variant_ids:
-                    err("analysis.tsv", v, f"{col} {s} is not a statement or variant")
+                if s not in stmts and s not in variant_ids and s not in absences:
+                    err("analysis.tsv", v, f"{col} {s} is not a statement, variant or absence")
         parts = [x.strip() for x in r["coexistence"].split(";") if x.strip()]
         if not parts or not all(re.match(r"^(\w+)\s*=\s*(A|B|C|D|unknown)$", x) and x.split("=")[0].strip() in PLATFORMS
                                 for x in parts):
             err("analysis.tsv", v, f"coexistence '{r['coexistence']}' is not one letter per platform, as 'shopify=B; salla=D'")
+        present = {p for p in PLATFORMS if os.path.isdir(os.path.join(subj, p))}
+        named = {x.split("=")[0].strip() for x in parts if "=" in x}
+        if present - named:
+            err("analysis.tsv", v, f"coexistence leaves out {', '.join(sorted(present - named))}")
         if r["general_variant"] and r["general_variant"] not in variant_ids:
             err("analysis.tsv", v, f"general_variant {r['general_variant']} is not a variant")
         fol = [x.strip() for x in r["follows"].split(";") if x.strip()]
@@ -400,10 +420,17 @@ if marks is not None:
                     err("yemen-marks.tsv", key, f"case evidence {y} is not a Stage 1 id")
         elif not r["what_would_show_it"]:
             err("yemen-marks.tsv", key, "an unknown mark says what would show it")
-        if r["mark"] == "no placement" and not r["product_gap"]:
-            err("yemen-marks.tsv", key, "no placement is written as a product gap")
-        if re.search(r"(?i)yemen|اليمن|يمني", r["product_gap"]):
-            err("yemen-marks.tsv", key, "the product gap names Yemen")
+        if r["mark"] == "no placement":
+            if not r["product_gap"]:
+                err("yemen-marks.tsv", key, "no placement is written as a product gap")
+            if not r["founder_item"]:
+                err("yemen-marks.tsv", key, "no placement raises a design decision for the founder in founder_item")
+            listed = {x.split(":")[0].strip() for x in r["per_variant"].split(";") if ":" in x}
+            answers = {x["variant_id"] for x in (var or []) if x["vp_id"] == r["vp_id"] and x["variant"] not in NON_ANSWERS}
+            if answers - listed:
+                err("yemen-marks.tsv", key, f"no placement shows no failure for {', '.join(sorted(answers - listed))}")
+        if YEMEN_NAMES.search(r["product_gap"]):
+            err("yemen-marks.tsv", key, "the product gap names Yemen or a place in it")
     have = {(r["vp_id"], r["case_id"]) for r in marks}
     for v in vp:
         for c in cases:
@@ -425,6 +452,26 @@ if rows is not None:
                     err("rows.tsv", rid, f"{v} is not a variation point")
             if r["when"] not in WHEN:
                 err("rows.tsv", rid, f"when '{r['when']}' is not one of {sorted(WHEN)}")
+            who = [x.strip() for x in r["who_answers"].split(";") if x.strip()]
+            if not who or any(x not in ANSWERERS for x in who):
+                err("rows.tsv", rid, f"who_answers '{r['who_answers']}' is not one or more of {sorted(ANSWERERS)}")
+            if ana is not None:
+                fol = {v: [x.strip() for x in a["follows"].split(";")] for v, a in ((a["vp_id"], a) for a in ana)}
+                marked = {m["vp_id"] for m in (marks or []) if m["founder_item"]}
+                def when_of(v):
+                    f = fol.get(v, [])
+                    if FOUNDER_RULE in f or v in marked:
+                        return 0, "before build"
+                    if any(x in f for x in ("kept open as a variation point until evidence settles it",
+                                            "a variation point behind one interface, bound per market, store or plan",
+                                            "a variation point bound per market")):
+                        return 1, "before release"
+                    if f and f != ["none applies"]:
+                        return 2, "later"
+                    return 3, "unclear"
+                expect = min((when_of(v) for v in ids(r["vp_ids"]) if v in vp), default=(3, "unclear"))[1]
+                if r["when"] != expect:
+                    err("rows.tsv", rid, f"when is '{r['when']}', but the mapping from follows gives '{expect}'")
         if r["touches"] == "unclear" and not r["what_would_settle_it"]:
             err("rows.tsv", rid, "an unclear row says what would settle it")
         for t in [x.strip() for x in r["time_bombs"].split(";") if x.strip()]:
