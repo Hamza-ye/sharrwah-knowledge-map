@@ -118,6 +118,7 @@ One line per item, in the run's order: the item, its date, and the rows it gave.
 - Scanned PDFs with no text layer: 042, 046, 051, 069, 070, 071 (text.txt empty), 050 (text.txt holds only the title, قانون الاستثمار 2025م-1446هـ), 068 (page numbers only), 057 (PDF not stored; text.txt empty). The run's README says their OCR text is in evidence/yemen/derived/, which the brief gives to part F; part B didn't read it.
 - 047 (moit.gov.ye PDF, trade names law): the text layer of every article is in a fully shifted font encoding (e.g. م for a space, ؼ for ي, ظ for ل), the same as the unreadable parts of 041; only the title and chapter headings are clean. A reader with the PDF (or OCR of it) could close it.
 - 066 (tax.gov.ye PDF, sales tax law): all but arts. 8-12 (blank or shifted encoding); see Problems.
+- 041 (moit.gov.ye PDF, commercial register law): arts. 1-2, 6, 10, 12-15 and 20-28 (shifted encoding) and arts. 16-19 (dropped letters, unreliable digits); see Problems.
 
 ## Problems
 
