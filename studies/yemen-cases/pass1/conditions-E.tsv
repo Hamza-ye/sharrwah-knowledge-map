@@ -1,2 +1,10 @@
 condition_id	condition	state	place	held_at	date_basis	cite_ids	note
-YQ-E001	Legal status of cryptoassets as a means of payment	not legal tender	Yemen	2026-05-01	source date (shown)	YE-E001	
+YQ-E001	Legal status of cryptoassets as a means of payment	not legal tender	Yemen	2026-07-09	source date: published	YE-E001	
+YQ-E002	Crypto exchanges available to users in Yemen	Binance, OKX, Kraken and Changelly (listed as Bitcoin exchanges "available in Yemen")	Yemen	2026-07-09	source date: published	YE-E002, YE-E003	
+YQ-E003	Peer-to-peer crypto trading in Yemeni rial	Binance has advertised YER P2P support	Yemen	2026-07-09	source date: published	YE-E004	Same sentence: users worry Yemen residence can trigger account blocking or freezing.
+YQ-E004	Main means of payment	mostly cash-based society	Yemen	2020-01-21	source date: published	YE-E005	
+YQ-E005	Buyers' access to bank accounts	largely "underbanked": citizens do not have widespread access to bank accounts	Yemen	2020-01-21	source date: published	YE-E006	
+YQ-E006	Mobile-wallet services available to buyers	National Wallet Company wallet built with Telepin, being launched: on mobile phones without internet access; receive, load and send money	Yemen	2020-01-21	source date: published	YE-E007, YE-E008	Deal announced; "well on our way towards launching".
+YQ-E007	Whether parties may deal with Ansarallah (Houthis)	Ansarallah on the SDN List as [FTO] [SDGT] (previously [SDGT]); secondary sanctions risk under EO 13224	OFAC's area	2025-03-05	stated by source (release date)	YE-E009	
+YQ-E008	Transactions involving Ansarallah authorized by general license	authorized: noncommercial personal remittances (GL 24A); agricultural commodities, medicine, medical devices, parts and software updates (GL 22A)	OFAC's area	2025-03-05	stated by source (release date)	YE-E010, YE-E011	The same release also issued GL 23A, 25A, 26A and 28A.
+YQ-E009	Integration code for merchants to accept Yemeni wallet payments	PHP package "yemeni-payment-gateways" (Floosak, Jaib, Jawali, Cash, One Cash, Saba Cash): canonical repository gone, package frozen	place not stated	2026-10-10	capture date (live page)	YE-E012, YE-E013, YE-E014	Published on Packagist 2024-08-12.

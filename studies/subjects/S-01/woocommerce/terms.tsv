@@ -1,0 +1,47 @@
+term	translation	definition	cite_ids
+payouts		Payouts are when some or all of your account balance is sent to your bank account or debit card.	S01-WC-C025;S01-WC-C160
+deposits		Prior to WooPayments version 8.5.0 (released on Nov 14, 2024), payouts used to be referred to as “deposits.”	S01-WC-C161
+WooPayments account balance			S01-WC-C024;S01-WC-C030;S01-WC-C023
+Total Balance		The Total Balance figure represents all the money you’ve earned via WooPayments that has not yet been paid out to your bank account.	S01-WC-C162
+Available Funds		The Available Funds figure is the portion of the total balance that is available for the next scheduled payout, whenever that occurs.	S01-WC-C163
+Pending Funds		This is simply the portion of the total balance that is not available to be paid out yet.	S01-WC-C164
+pending period		The time those funds take to flow through your account is called the “pending period”, and its length depends on your WooPayments account country.	S01-WC-C032
+new account waiting period		The first payout for all new accounts is sent after a 7 day waiting period.	S01-WC-C037
+Payout total		Payout total is the amount of the payout that will settle in your bank after considering the Refunds and Fees and adjustments values.	S01-WC-C165
+instant payout		WooPayments provides a way for eligible accounts to request an instant payout of some or all of the account balance.	S01-WC-C045
+reserve		Because WooPayments is built in partnership with Stripe, they make the final decision on whether or not to temporarily withhold some or all of your balance based on perceived risk factors. This is called a “reserve.”	S01-WC-C166
+fixed reserve		With a fixed reserve, a specific percentage of funds from each new sale is held until a future release date.	S01-WC-C070
+rolling reserve		With a rolling reserve, a percentage of funds from each new sale is held back for a set length of time, measured from the date of that sale.	S01-WC-C071
+balance transfer			S01-WC-C069;S01-WC-C072
+future refunds or disputes (FROD) balance		In brief, the future refunds or disputes (FROD) balance is a special bucket of funds inside your WooPayments account.	S01-WC-C167
+Stripe Express account		This means that, during the signup process for WooPayments, a special kind of Stripe account will be created for you, called a Stripe Express account.	S01-WC-C168;S01-WC-C169;S01-WC-C019
+payments partner			S01-WC-C170;S01-WC-C054
+Charge		Charge: The customer paid for their order using their credit or debit card.	S01-WC-C171
+Payment		Payment: The customer paid using a non-card method (e.g. Bancontact).	S01-WC-C172
+Repayment rate		Repayment rate: the percentage of your daily card transactions processed through WooCommerce that will be withheld to repay the total amount owed.	S01-WC-C077
+Ecommerce Services		We offer Services via Woo, WordPress.com, and Jetpack that enable you to sell items (goods, content, services, etc.), receive payments on your website, or otherwise earn money, like WooPayments, WooPay, and the Payments feature (collectively, “Ecommerce Services”).	S01-WC-C001
+Woo services		Woo services include WooCommerce, WooPayments, WooCommerce Shipping, WooCommerce Tax, MailPoet, and other products or services available at WooCommerce.com.	S01-WC-C011
+Designated Countries		We use the term “Designated Countries” to refer to Australia, Canada, Japan, Mexico, New Zealand, Russia, and all countries located in Europe.	S01-WC-C014
+Direct bank transfer		Direct Bank Transfer, which might also be referred to as Bank Account Clearing System (BACS), is a payment method that lets your customers pay you directly via their bank account.	S01-WC-C099
+Check payments		Check payments is a built-in WooCommerce payment gateway that allows customers to place orders and pay offline by check.	S01-WC-C173;S01-WC-C174
+Cash on Delivery		Cash on Delivery (COD) is a payment gateway that lets you take payments at the time of delivery of your customer’s ordered products.	S01-WC-C103
+Offline		**Offline** - No online payment is made.	S01-WC-C096
+Product Net Revenue		“Product Net Revenue” means the amount paid by Users for subscribing to and/or purchasing the Product or features within the Product on the WP Marketplace or Woo Marketplace less any amounts for Affiliate Costs, refunds, reversals, payment processing fees, and Taxes.	S01-WC-C175
+Partner			S01-WC-C083
+Connected Account Agreement		This Stripe Connected Account Agreement (“Connected Account Agreement”) governs Connected Accounts’ use of Stripe Connect Services, and describes how Connected Accounts and their third-party platform provider(s) may use the Stripe Connect Services.	S01-WC-C176;S01-WC-C020
+Stripe Connect Platform		This Connected Account Agreement governs User’s rights and obligations when User’s Stripe Account is enrolled with a third-party platform provider using Stripe Connect Services (“Stripe Connect Platform”).	S01-WC-C111
+Stripe		“Stripe” means the entity specified below for User's Stripe Account Country.	S01-WC-C116
+Stripe Account		“Stripe Account” means a Stripe account through which User accesses the Services.	S01-WC-C177
+Stripe Account Country		“Stripe Account Country” means the country or region User selected when opening User’s Stripe Account and is the country or region where User's business address, as reflected in User’s account details, is located, or, in the case of an individual, the country or region where User is doing business.	S01-WC-C178
+User Bank Account		“User Bank Account” means a bank or other financial institution account User designates to Stripe.	S01-WC-C179
+Financial Provider		“Financial Provider” means an entity that provides financial services and with which a Stripe Entity interacts to provide the Services.	S01-WC-C180
+Reserve		“Reserve” means collateral funds which Stripe holds and controls to satisfy any liabilities or potential liabilities User incurs under this Agreement, including any funds described as “Reserve” amounts in the Reserve Notice, the Stripe Dashboard or in any other communications to User.	S01-WC-C181
+Transaction		“Transaction” means a Payment Method transaction request initiated via the Stripe Technology through which Stripe is directed to capture funds for or from a payer’s associated account with respect to a payment from a Customer to User, and includes the authorization, settlement, and if applicable, Disputes, Refunds, and Reversals with respect to that Payment Method transaction request.	S01-WC-C182;S01-WC-C183
+Reserve Account		“Reserve Account” means one or more pooled accounts established by Stripe to hold amounts designated as Reserves.	S01-WC-C184
+Stripe Payments Services		“Stripe Payments Services” means the Services that enable User to accept and refund Customer payments, perform related financial transactions, and manage Customer Disputes.	S01-WC-C185
+SPC		Stripe’s Affiliate, Stripe Payments Company (“SPC”)	S01-WC-C132
+Stripe PSP		Stripe Technology Europe, Limited (“Stripe PSP”) is an additional party to this Agreement solely for the purposes of (a) providing Regulated Financial Services; and (b) acting as a Payment Method Acquirer.	S01-WC-C136
+Stripe PSP		Stripe Payments UK Ltd (“Stripe PSP”) is an additional party to this Agreement solely for the purposes of (a) providing Regulated Financial Services; and (b) acting as a Payment Method Acquirer.	S01-WC-C138
+Pooled Account		“Pooled Account” means a pooled account to which Transaction settlement funds are credited.	S01-WC-C186
+Payout Schedule		“Payout Schedule” means the schedule that User selects in the Stripe Dashboard (e.g. daily, weekly, monthly) to pay out Transaction settlement funds to a User Bank Account after those funds become available in User’s Stripe Account based on the Payout Speed.	S01-WC-C187
+Payout Speed		"Payout Speed" means the number of days following the Transaction that it takes for the Transaction settlement funds to become available in User’s Stripe Account as stated in the Documentation.	S01-WC-C188
