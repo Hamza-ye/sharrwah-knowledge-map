@@ -4,7 +4,7 @@ Subject: who holds the merchant's funds between the buyer's payment and the merc
 
 Agent run of 2026-10-12. An earlier run was interrupted before writing anything; this run started from an empty folder. That run left scratch files (page copies and scripts) in the session scratchpad; they were not used.
 
-Counts: 144 statements, 4 absences, 9 gaps, 44 term rows, 364 citations.
+Counts: 145 statements, 4 absences, 9 gaps, 44 term rows, 365 citations.
 
 ## What was read
 
