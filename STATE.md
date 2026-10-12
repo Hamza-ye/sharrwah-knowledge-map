@@ -23,17 +23,12 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **observed-sh's 70 fetch archives** weren't in git at Stage 0. The founder is pushing them now.
 
 **Running: Stage 1, Yemen's axes and cases.**
-- **Brief:** `studies/yemen-cases/brief.md`. Each inspection was by a separate agent:
-  - first: 11 must-fix and 3 optional findings;
-  - second: 8 must-fix and 1 optional;
-  - third, focused: 4 must-fix and 1 optional, on places and dates;
-  - all were addressed.
-- **The run started** on 12 October 2026: one agent reading `evidence/yemen/`.
-- **Checker:** `method/check_yemen_cases.py`, self-tested.
-- **Next:**
-  - the checker;
-  - an independent review;
-  - the coordinator compares Q2's example axes with what the evidence showed, and logs any example it didn't show as an unknown.
+- **First run: stopped by its brief.** It hit the cap on axes after reading 23 of 262 items, and never reached the other runs or the founder's pages. It is kept in `studies/yemen-cases/first-run-stopped/` as a record.
+- **The brief is reworked** into two passes:
+  - every source is read first, recording conditions at the size of an act or availability;
+  - axes come after.
+
+  The cap is now a stop for review. The change is recorded in `PLAN.md` section 11. A focused inspection is running, and the run follows.
 
 **Running: Stage 2, the pilot (S-01).**
 - **Briefs:** `studies/subjects/S-01/briefs/`.
@@ -46,8 +41,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - check, with `kinds.tsv`;
   - B, A2, B's second pass, C;
   - D, after Stage 1;
-  - E;
-  - the entry;
+  - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
   - F;
   - the method report;
   - G1.
