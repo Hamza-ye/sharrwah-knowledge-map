@@ -26,7 +26,7 @@ ROOTS = {
     "woocommerce-11.2.1": os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce"),
     "sharrwah-knowledge-map": os.environ.get("SKM", os.path.dirname(HERE)),
 }
-PLATFORMS = {"shopify": "SH", "salla": "SA", "woocommerce": "WC"}
+PLATFORMS = {"shopify": "SH", "salla": "SA", "woocommerce": "WC", "zid": "ZD", "bigcommerce": "BC"}
 HEADERS = {
     "inventory.tsv": ["inv_id", "list", "entry", "cite_id", "concern_ids", "out_of_scope_reason"],
     "concerns.tsv": ["concern_id", "concern", "platform_terms", "inv_ids", "split_note"],
@@ -243,6 +243,9 @@ for plat, pfx in PLATFORMS.items():
     for name in HEADERS:
         p = os.path.join(d, name)
         if not os.path.exists(p):
+            if name == "placements.tsv" and os.path.exists(os.path.join(d, "statements.tsv")):
+                data[name] = []   # platforms that started from the reshaped step have no first-run placements
+                continue
             issues.append(("error", name, "", "file missing"))
             data[name] = []
             continue

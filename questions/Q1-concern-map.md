@@ -97,6 +97,28 @@ The measurements are in `studies/concern-map/measurements-2026-10-11.md`. The in
 
 **Sources.** The re-pass cites observed-sh at `e49840729` for Shopify. New citations go in `citations.tsv` as before.
 
+## Added on 12 October 2026: Zid and BigCommerce
+
+**Two more references.** The founder added two platforms. Both are read at declaration level only: docs, help centres, API references, and legal and pricing pages, with no accounts.
+
+- **Zid**, a Saudi platform, tells market causes from vendor causes:
+  - where Shopify differs from Salla and Zid matches Salla, the market is the likely cause;
+  - where Zid matches Shopify, Salla's difference is Salla's own choice.
+- **BigCommerce**, a global SaaS platform independent of Shopify, is a third known use for designs outside the Saudi market.
+
+**WooCommerce stays.** Its run is done, and it carries a different contrast: self-hosted software that holds no money.
+
+**How the two run.** They start from the reshaped placement step:
+1. Inventory from each platform's own lists.
+2. Concerns.
+3. Statements and gaps, with citations verbatim and captured.
+
+Each runs without seeing the others' work and stops before matching. Ids are prefixed `ZD` and `BC`.
+
+**Comparing like with like.** A platform's declaration is compared with another platform's declaration. A statement drawn from observed behaviour (observed-sh, observed-sa) stays marked as observed, using its citation's source.
+
+**Attribution comes later.** Reading a difference as a market cause or a vendor's choice is a later step, with its own rules, agreed with the founder before it runs. Its results are readings, labelled as such. They never become platform statements.
+
 ## How the run works
 
 1. **One agent per platform, each working without seeing the others' work.** Each builds its inventory from its platform's own lists and places every concern on the five placements, marking each one shown or not shown.
