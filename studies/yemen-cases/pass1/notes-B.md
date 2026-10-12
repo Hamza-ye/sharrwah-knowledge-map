@@ -17,6 +17,7 @@ One line per item, in the run's order: the item, its date, and the rows it gave.
 - 017 yemeneco.org, published 2025-12-08: read, 127 lines; condition YQ-B015, citation YE-B021.
 - 018 yemeneco.org, published 2026-03-14: read, 129 lines; condition YQ-B016, citations YE-B022–YE-B023.
 - 019 yemeneco.org, published 2026-01-21: read, 138 lines; conditions YQ-B017–YQ-B018, citations YE-B024–YE-B026.
+- 020 yemeneco.org, published 2026-03-17: read, 130 lines; conditions YQ-B019–YQ-B021, citations YE-B027–YE-B029.
 
 ## Same condition: identifications within the part
 
