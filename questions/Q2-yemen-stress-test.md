@@ -1,6 +1,6 @@
 # Q2. The Yemen stress test
 
-**Status:** waits for Q1, the concern map, and for the founder's go after reviewing it.
+**Status:** waits for Q1, the concern map, and for the founder's go after reviewing it. Since 12 October 2026, `PLAN.md` runs step 1 on its own (Stage 1) and the marks per subject.
 
 This question was agreed with the founder on 10 October 2026, together with Q1. It runs against the map that Q1 produces.
 

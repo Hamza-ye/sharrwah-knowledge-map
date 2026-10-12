@@ -1,6 +1,6 @@
 # Q1. The concern map
 
-**Status:** running since 10 October 2026. On 11 October the placement step was reshaped, as described under "Changed on 11 October 2026" below. Q2 and Q3 work against this map, so they wait for it.
+**Status:** running since 10 October 2026. On 11 October the placement step was reshaped, as described under "Changed on 11 October 2026" below. Q2 and Q3 work against this map, so they wait for it. Since 12 October 2026, `PLAN.md` sets how it runs: per subject, with the map as the index.
 
 The founder and the coordinating Claude Code session agreed this question on 10 October 2026. The founder accepted the text below and added the notes under "Settled before the run". One rule was removed afterwards; that section records it. The founder agreed the change to the placement step on 11 October 2026.
 

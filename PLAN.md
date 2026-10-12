@@ -1,6 +1,6 @@
 # Plan: from the evidence to the decisions that are expensive to change
 
-**Status: proposed on 12 October 2026. It waits for the founder's go (gate G0).** Until then `NEXT.md` stands and nothing runs.
+**Status: agreed by the founder on 12 October 2026 (gate G0).** `STATE.md` says where the work is.
 
 The coordinating session wrote this plan after the founder asked who would manage the work until it reaches a safe shore, with the right engineering, sequence and framing, leaving the founder only what is genuinely theirs to decide. Where a rule comes from known practice, it names its source, and section 10 lists the sources. A rule without a source is the coordinator's own.
 
@@ -333,5 +333,6 @@ Both sets are placed, subject by subject: the 81 payment rows and the Knowledge 
 
 ## 11. Changes
 
-- **12 October 2026:** proposed by the coordinating session. It waits for G0.
+- **12 October 2026:** proposed by the coordinating session.
 - **12 October 2026,** after the founder's questions: section 5 now says when the founder is needed, what a decision item looks like, how standing decisions work, and what spending covers.
+- **12 October 2026:** the founder's go (G0).

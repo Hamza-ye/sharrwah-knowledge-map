@@ -1,6 +1,6 @@
 # Open work, in order
 
-**A replacement is proposed.** `PLAN.md` proposes to re-centre the work on the decisions that are expensive to change, with gates for the founder and a risk register. It waits for the founder's go (gate G0). Until then, this list stands. `STATE.md` says where the work is.
+**Superseded on 12 October 2026.** The founder agreed `PLAN.md` (gate G0). It sets the order of work, and `STATE.md` says where the work is. The list below is kept as a record.
 
 Each item says what it decides and what it needs. Items lower down depend on the ones above.
 
