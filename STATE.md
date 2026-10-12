@@ -20,7 +20,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - `method/held_index.py` (what is held, by address);
   - `method/warc_text.py` (reads a record in a fetch archive);
   - `method/quote_check.py` (the shared verbatim check).
-- **observed-sh's 70 fetch archives** weren't in git at Stage 0. The founder is pushing them now.
+- **observed-sh's 70 fetch archives** weren't in git at Stage 0. They landed later the same day, at `36a6319e`.
 
 **Running: Stage 1, Yemen's axes and cases.**
 - **First run: stopped by its brief.** It hit the cap on axes after reading 23 of 262 items, and never reached the other runs or the founder's pages. It is kept in `studies/yemen-cases/first-run-stopped/` as a record.
@@ -58,7 +58,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - the help centre's 2,938 articles as text;
   - the eleven pages about Salla's terms as text;
   - the fetch archives in git, except five over GitHub's size limit.
-- **observed-sh `e49840729`.** Its 70 fetch archives, mostly online docs, are being pushed by the founder (12 October). When the founder says they have landed: fetch, check that the held index reads them, and re-run `method/q1_held_check.py`.
+- **observed-sh `36a6319e`.** Its 70 fetch archives, mostly online docs, landed on 12 October. The held index reads them. Re-running `method/q1_held_check.py` changed no gap, because none had been routed to the founder for a page they hold. The Shopify phase A agent was told it may cite them.
 - **The map's citations** are at observed-sa `145f137` and observed-sh `b46731d0` / `e49840729`.
 
 **Q3's rows:** both sets, by the founder's answer (`founder-decisions.tsv`).

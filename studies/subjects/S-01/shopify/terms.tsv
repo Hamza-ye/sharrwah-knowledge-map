@@ -1,1 +1,22 @@
 term	translation	definition	cite_ids
+Payment Processor		one or more payment processors that provide such financial services (each a "Payment Processor")	S01-SH-C001
+Financial Services Provider		Each Payment Processor may offer their services as an agent of one or more financial institutions (each, a "Financial Services Provider").	S01-SH-C007
+Payment Processing		The processing and settlement of Transactions ("Payment Processing") is carried out by one or more Payment Processors and any of its Financial Services Providers	S01-SH-C008
+Payment Processor Terms		the separate terms of service identified in the Payment Processor List (the "Payment Processor Terms")	S01-SH-C008
+Payment Processor Account		financial accounts and/or cryptocurrency wallets with one or more Payment Processors for Payment Processing (each a "Payment Processor Account")	S01-SH-C011
+Shopify Payments Account		the account(s) you have established through the Shopify Platform Services and the Payments Services established under this Agreement. Shopify will refer to such accounts together in this Agreement as the "Shopify Payments Account".	S01-SH-C029
+Payout Account		bank accounts, cryptocurrency wallets, or other financial accounts designated in your Shopify Admin to receive funds from the settlement of Transactions (the "Payout Account")	S01-SH-C032
+Reserve Account		Funds held in reserves are amounts set aside to cover chargebacks, refunds, disputes, or other payment obligations under this Agreement (the "Reserve Account").	S01-SH-C038
+Transactions		(together with Card Present Transactions and all other transactions referred to in this section, "Transactions")	S01-SH-C019;S01-SH-C016
+Payment Methods		credit cards, debit cards and other types of cards (collectively "Cards"), cryptocurrency wallets, and other payment methods as provided under this Agreement (collectively with Cards, "Payment Methods")	S01-SH-C016
+Shopify Payments; Payments Services		The Shopify Payments service ("Shopify Payments" or the "Payments Services") is Shopify's integrated payments solution that arranges for the financial services you need to accept payments	S01-SH-C062
+Payout balance		The Payout balance amount represents the funds that have been captured but not yet added to a scheduled payout, not including reserved funds.	S01-SH-C114
+Reserved funds		Reserved funds: Money that's temporarily held and that can't be accessed until the reserve period ends.	S01-SH-C127
+total balance		Your total balance is the sum of your Payout balance and Reserved funds amounts.	S01-SH-C128
+reserve		A reserve is a temporary hold on a portion, in some cases a full amount, of transactions processed through Shopify Payments for a specified period.	S01-SH-C121
+Pending (transactions)		Transactions marked as Pending are for sales that you've made, but that haven't been added to a payout and sent to your bank account yet.	S01-SH-C120
+settlement time		Settlement time refers to the amount of time between when a customer's payment is captured and those funds are available to be paid out to your bank account.	S01-SH-C086
+payout schedule		Your payout schedule determines when funds from sales are transferred to your bank account.	S01-SH-C090
+Acquirer		"Acquirer" — means a financial institution that is registered with the applicable Payment Networks to acquire payment card transactions and that sponsors a Shopify entity's registration as a Payment Facilitator (or equivalent designation) with those Payment Networks.	S01-SH-C180
+Payment Facilitator		"Payment Facilitator" — an entity registered with the Payment Networks under an Acquirer's sponsorship and in accordance with the Payment Network Rules that contracts with Merchants to facilitate the Merchant's acceptance of payment transactions.	S01-SH-C181
+Settlement (Payment Facilitator Terms)		Settlement of your valid Transactions, net of fees, refunds, chargebacks, reserves, and other amounts owed, will be paid to your Payout Account.	S01-SH-C168

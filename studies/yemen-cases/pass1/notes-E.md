@@ -39,3 +39,11 @@ One line per item: `n`, folder, what was read, and the rows it gave.
 - 143 `143-play.google.com` (ONE Cash customer app, Arabic): read (`text.txt`). Live page; reviews carry their own dates. Conditions YQ-E040 to YQ-E057; citations YE-E056 to YE-E075.
 - 144 `144-play.google.com` (ONE Cash customer app, English): read (`text.txt`). Live page. Conditions YQ-E058 to YQ-E073; citations YE-E076 to YE-E094.
 - 145 `145-press.un.org`: not readable. The run's result is "blocked from here" (HTTP 406; the browser failed too); the folder has no text file. 0 conditions.
+- 146 `146-radar2.net` (exchange rates in Aden and Sana'a, 26 December 2025): read (`text.txt`). It gives no figures. Conditions YQ-E074, YQ-E075; citations YE-E095, YE-E096.
+- 147 `147-rbi.org.in` (Reserve Bank of India, Master Directions on Prepaid Payment Instruments): read (`text.txt`, headings and a search). It sets rules for India and does not mention Yemen. 0 conditions.
+- 148 `148-remittanceprices.worldbank.org`: not readable. The run's result is "blocked from here" (HTTP 403); `text.txt` holds only Cloudflare's bot-check page. 0 conditions.
+- 149 `149-root.packagist.org` (PHP package for Kuraimi Bank's E-Pay API): read (`text.txt`). Conditions YQ-E076 to YQ-E078; citations YE-E097 to YE-E101.
+- 150 `150-s205.q4cdn.com` (Jumia's fourth-quarter 2025 results, PDF text): read (`text.txt`, opening and a search). It reports on Jumia's African markets and does not mention Yemen. 0 conditions.
+- 151 `151-sahafah24.net` (exchange rates in Sana'a and Aden, 4 October 2026): read (`text.txt`). Conditions YQ-E079, YQ-E080; citations YE-E102 to YE-E104.
+- 152 `152-sahafahonline.net` (women's e-commerce, Shein resellers): read (`text.txt`). The page shows only "منذ سنة"; its `raw.html` gives `date_added` 2025-05-14, used as the published date. Conditions YQ-E081 to YQ-E089; citations YE-E105 to YE-E124.
+- 153 `153-sanaacenter.org` (Sana'a Center, "Fostering Opportunities for E-Commerce Growth in Yemen", 15 September 2025, PDF text): read in full (`text.txt`). Conditions YQ-E090 to YQ-E147; citations YE-E125 to YE-E191. Where `pdftotext -layout` broke a word across lines (e.g. "bank-" / "led"), the quote was split at the break.

@@ -1,4 +1,114 @@
 stmt_id	kind	rule
+S01-SH-001	official page	the address is a terms, policy, legal or pricing page
+S01-SH-002	official page	the address is a terms, policy, legal or pricing page
+S01-SH-003	official page	the address is a terms, policy, legal or pricing page
+S01-SH-004	official page	the address is a terms, policy, legal or pricing page
+S01-SH-005	official page	the address is a terms, policy, legal or pricing page
+S01-SH-006	official page	the address is a terms, policy, legal or pricing page
+S01-SH-007	official page	the address is a terms, policy, legal or pricing page
+S01-SH-008	official page	the address is a terms, policy, legal or pricing page
+S01-SH-009	official page	the address is a terms, policy, legal or pricing page
+S01-SH-010	official page	the address is a terms, policy, legal or pricing page
+S01-SH-011	official page	the address is a terms, policy, legal or pricing page
+S01-SH-012	official page	the address is a terms, policy, legal or pricing page
+S01-SH-013	official page	the address is a terms, policy, legal or pricing page
+S01-SH-014	official page	the address is a terms, policy, legal or pricing page
+S01-SH-015	official page	the address is a terms, policy, legal or pricing page
+S01-SH-016	official page	the address is a terms, policy, legal or pricing page
+S01-SH-017	official page	the address is a terms, policy, legal or pricing page
+S01-SH-018	official page	the address is a terms, policy, legal or pricing page
+S01-SH-019	official page	the address is a terms, policy, legal or pricing page
+S01-SH-020	official page	the address is a terms, policy, legal or pricing page
+S01-SH-021	official page	the address is a terms, policy, legal or pricing page
+S01-SH-022	official page	the address is a terms, policy, legal or pricing page
+S01-SH-023	official page	the address is a terms, policy, legal or pricing page
+S01-SH-024	official page	the address is a terms, policy, legal or pricing page
+S01-SH-025	official page	the address is a terms, policy, legal or pricing page
+S01-SH-026	official page	the address is a terms, policy, legal or pricing page
+S01-SH-027	official page	the address is a terms, policy, legal or pricing page
+S01-SH-028	official page	the address is a terms, policy, legal or pricing page
+S01-SH-029	official page	the address is a terms, policy, legal or pricing page
+S01-SH-030	official page	the address is a terms, policy, legal or pricing page
+S01-SH-031	official page	the address is a terms, policy, legal or pricing page
+S01-SH-032	official page	the address is a terms, policy, legal or pricing page
+S01-SH-033	official page	the address is a terms, policy, legal or pricing page
+S01-SH-034	official page	the address is a terms, policy, legal or pricing page
+S01-SH-035	official page	the address is a terms, policy, legal or pricing page
+S01-SH-036	official page	the address is a terms, policy, legal or pricing page
+S01-SH-037	official page	the address is a terms, policy, legal or pricing page
+S01-SH-038	official page	the address is a terms, policy, legal or pricing page
+S01-SH-039	official page	the address is a terms, policy, legal or pricing page
+S01-SH-040	official page	the address is a terms, policy, legal or pricing page
+S01-SH-041	official page	the address is a terms, policy, legal or pricing page
+S01-SH-042	official page	the address is a terms, policy, legal or pricing page
+S01-SH-043	official page	the address is a terms, policy, legal or pricing page
+S01-SH-044	official page	the address is a terms, policy, legal or pricing page
+S01-SH-045	official page	the address is a terms, policy, legal or pricing page
+S01-SH-046	official page	the address is a terms, policy, legal or pricing page
+S01-SH-047	official page	the address is a terms, policy, legal or pricing page
+S01-SH-048	stated	the address is a docs, help or other page
+S01-SH-049	stated	the address is a docs, help or other page
+S01-SH-050	stated	the address is a docs, help or other page
+S01-SH-051	stated	the address is a docs, help or other page
+S01-SH-052	stated	the address is a docs, help or other page
+S01-SH-053	stated	the address is a docs, help or other page
+S01-SH-054	stated	the address is a docs, help or other page
+S01-SH-055	stated	the address is a docs, help or other page
+S01-SH-056	stated	the address is a docs, help or other page
+S01-SH-057	stated	the address is a docs, help or other page
+S01-SH-058	stated	the address is a docs, help or other page
+S01-SH-059	stated	the address is a docs, help or other page
+S01-SH-060	stated	the address is a docs, help or other page
+S01-SH-061	stated	the address is a docs, help or other page
+S01-SH-062	stated	the address is a docs, help or other page
+S01-SH-063	stated	the address is a docs, help or other page
+S01-SH-064	stated	the address is a docs, help or other page
+S01-SH-065	stated	the address is a docs, help or other page
+S01-SH-066	stated	the address is a docs, help or other page
+S01-SH-067	stated	the address is a docs, help or other page
+S01-SH-068	stated	the address is a docs, help or other page
+S01-SH-069	stated	the address is a docs, help or other page
+S01-SH-070	stated	the address is a docs, help or other page
+S01-SH-071	stated	the address is a docs, help or other page
+S01-SH-072	stated	the address is a docs, help or other page
+S01-SH-073	stated	the address is a docs, help or other page
+S01-SH-074	stated	the address is a docs, help or other page
+S01-SH-075	stated	the address is a docs, help or other page
+S01-SH-076	stated	the address is a docs, help or other page
+S01-SH-077	stated	the address is a docs, help or other page
+S01-SH-078	stated	the address is a docs, help or other page
+S01-SH-079	stated	the address is a docs, help or other page
+S01-SH-080	stated	the address is a docs, help or other page
+S01-SH-081	stated	the address is a docs, help or other page
+S01-SH-082	stated	the address is a docs, help or other page
+S01-SH-083	stated	the address is a docs, help or other page
+S01-SH-084	stated	the address is a docs, help or other page
+S01-SH-085	stated	the address is a docs, help or other page
+S01-SH-086	stated	the address is a docs, help or other page
+S01-SH-087	stated	the address is a docs, help or other page
+S01-SH-088	stated	the address is a docs, help or other page
+S01-SH-089	stated	the address is a docs, help or other page
+S01-SH-090	stated	the address is a docs, help or other page
+S01-SH-091	stated	the address is a docs, help or other page
+S01-SH-092	stated	the address is a docs, help or other page
+S01-SH-093	stated	the address is a docs, help or other page
+S01-SH-094	stated	the address is a docs, help or other page
+S01-SH-095	stated	the address is a docs, help or other page
+S01-SH-096	stated	the address is a docs, help or other page
+S01-SH-097	stated	the address is a docs, help or other page
+S01-SH-098	stated	the address is a docs, help or other page
+S01-SH-099	stated	the address is a docs, help or other page
+S01-SH-100	stated	the address is a docs, help or other page
+S01-SH-101	stated	the address is a docs, help or other page
+S01-SH-102	stated	the address is a docs, help or other page
+S01-SH-103	stated	the address is a docs, help or other page
+S01-SH-104	official page	the address is a terms, policy, legal or pricing page
+S01-SH-105	official page	the address is a terms, policy, legal or pricing page
+S01-SH-106	official page	the address is a terms, policy, legal or pricing page
+S01-SH-107	official page	the address is a terms, policy, legal or pricing page
+S01-SH-108	official page	the address is a terms, policy, legal or pricing page
+S01-SH-109	official page	the address is a terms, policy, legal or pricing page
+S01-SH-110	official page	the address is a terms, policy, legal or pricing page
 S01-SA-001	stated	the address is a docs, help or other page
 S01-SA-002	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-SA-003	stated	the address is a docs, help or other page
@@ -261,6 +371,12 @@ S01-WC-126	official page	the address is a terms, policy, legal or pricing page
 S01-WC-127	official page	the address is a terms, policy, legal or pricing page
 S01-WC-128	official page	the address is a terms, policy, legal or pricing page
 S01-WC-129	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-001	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-002	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-003	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-004	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-005	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-006	stated	the address is a docs, help or other page
 S01-BC-001	stated	the address is a docs, help or other page
 S01-BC-002	stated	the address is a docs, help or other page
 S01-BC-003	stated	the address is a docs, help or other page
