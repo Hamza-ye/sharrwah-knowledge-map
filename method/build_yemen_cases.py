@@ -1,8 +1,9 @@
 # Builds Stage 1's axes.tsv, constants.tsv and cases.tsv (studies/yemen-cases/brief.md, "The build") from pass 2's
 # judgments, so that the brief's mechanical rules are applied the same way everywhere:
-#   - a group whose rows carry two or more labels is an axis; a group with one label is a constant;
+#   - a group whose held or provided-for rows carry two or more labels is an axis; otherwise it is a constant;
 #   - today is the latest held state of each place (supersession, precision, disputes and `now` as the brief says);
-#   - the further cases are one per non-today state, then one per combination a single source shows at one time.
+#   - the further cases are one per non-today state, then one per combination a single source shows holding at
+#     one time; a proposed state is listed on its axis but is never today and builds no case.
 # Inputs in STUDY_DIR: conditions.tsv and citations.tsv (pass 1, joined), groups.tsv and states.tsv (pass 2).
 # Past MAX_AXES axes it writes no cases (cases.tsv keeps only its header) until review-axes.md exists.
 #
@@ -59,18 +60,17 @@ def latest(rs):
     return [r for r in dated if not any(later(o["when"], r["when"]) for o in dated)]
 
 def settle(rs, place):
-    """The part a place takes: (value, rows it rests on, labels in force there)."""
-    held = [r for r in rs if r["held"]]
+    """The part a place takes: (value, rows it rests on, labels that hold now there)."""
+    held = [r for r in rs if r["holds"] == "held"]
     if not held:
         return f"unknown @ {place}", [], set()
     top = latest(held)
+    # One source, two states: where a source marks one of its states `now`, its other states give way to it.
+    nows = [r for r in top if r["now"]]
+    top = [r for r in top if r["now"] or not any(n["sources"] & r["sources"] for n in nows)]
     if len({r["label"] for r in top}) == 1:
         own = [r for r in top if r["place"] != ACROSS]
         return (own or top)[0]["full"], top, {r["full"] for r in top}
-    shared = frozenset.intersection(*[r["sources"] for r in top])
-    now = uniq(r["full"] for r in top if r["now"])
-    if shared and len(now) == 1:                 # one source, two states: the one it says holds now
-        return now[0], [r for r in top if r["now"]], {now[0]}
     return f"disputed @ {place}", top, {r["full"] for r in top}
 
 def joined(parts):
@@ -89,38 +89,46 @@ def build(study):
         cites = ids(c["cite_ids"])
         by_group[s["group_id"]].append({
             "id": s["condition_id"], "label": s["label"], "place": s["place"], "full": full(s["label"], s["place"]),
-            "held": s["holds"] == "held", "now": s["now"] == "yes", "at": c["held_at"], "when": when(c["held_at"]),
+            "holds": s["holds"], "now": s["now"] == "yes", "when": when(c["held_at"]),
             "cites": cites, "sources": frozenset(source[x] for x in cites if x in source)})
     axes, consts = [], []
     for g in groups:
         rs = by_group.get(g["group_id"], [])
-        if not rs:
-            continue
-        (axes if len({r["label"] for r in rs}) > 1 else consts).append((g, rs))
+        if rs:
+            shown = {r["label"] for r in rs if r["holds"] != "proposed"}
+            (axes if len(shown) > 1 else consts).append((g, rs))
 
     out = {"axes.tsv": [], "constants.tsv": [], "cases.tsv": []}
     for n, (g, rs) in enumerate(consts, start=1):
-        out["constants.tsv"].append([f"YK-{n:02d}", g["condition"], rs[0]["label"],
-                                     "; ".join(place_order({r["place"] for r in rs})),
-                                     ", ".join(r["id"] for r in rs), ", ".join(uniq(x for r in rs for x in r["cites"])), ""])
+        shown = [r for r in rs if r["holds"] != "proposed"]
+        state = shown[0]["label"] if shown else f"proposed: {rs[0]['label']}"
+        proposed = uniq(f"{r['full']} [{', '.join(r['cites'])}]" for r in rs if r["holds"] == "proposed")
+        out["constants.tsv"].append([f"YK-{n:02d}", g["condition"], state,
+                                     "; ".join(place_order({r["place"] for r in (shown or rs)})),
+                                     ", ".join(r["id"] for r in rs), ", ".join(uniq(x for r in rs for x in r["cites"])),
+                                     ("proposed: " + " | ".join(proposed)) if shown and proposed else ""])
     info = OrderedDict()
     for n, (g, rs) in enumerate(axes, start=1):
         aid = f"YA-{n:02d}"
         places = place_order({r["place"] for r in rs})
         across = [r for r in rs if r["place"] == ACROSS]
-        parts, rests, live = OrderedDict(), [], set()
+        parts, rests, live, notes = OrderedDict(), [], set(), []
         for p in places:
-            v, top, now = settle(across if p == ACROSS else [r for r in rs if r["place"] == p] + across, p)
+            if p == ACROSS:
+                if not any(r["holds"] == "held" for r in across):
+                    continue                 # the part for places the axis doesn't name exists only when held
+                v, top, now = settle(across, p)
+            else:
+                v, top, now = settle([r for r in rs if r["place"] == p] + across, p)
             parts[p], rests, live = v, rests + top, live | now
+            if v.startswith("disputed @ "):
+                notes.append(f"{v}: " + " / ".join(uniq(r["full"] for r in top)))
         order = sorted(uniq(r["full"] for r in rs),
                        key=lambda f: (places.index(next(r["place"] for r in rs if r["full"] == f)),
                                       min((r["when"] or (0,)) for r in rs if r["full"] == f)))
-        states_col = " | ".join(f"{f} [{', '.join(uniq(x for r in rs if r['full'] == f for x in r['cites']))}]" for f in order)
-        notes = []
-        for p, v in parts.items():
-            if v.startswith("disputed @ "):
-                notes.append(f"{v}: " + " / ".join(uniq(r["full"] for r in rs if r["full"] in live and
-                                                        (r["place"] == p or r["place"] == ACROSS))))
+        tag = lambda f: " (proposed)" if all(r["holds"] == "proposed" for r in rs if r["full"] == f) else ""
+        states_col = " | ".join(f"{f}{tag(f)} [{', '.join(uniq(x for r in rs if r['full'] == f for x in r['cites']))}]"
+                                for f in order)
         info[aid] = {"rows": rs, "parts": parts, "order": order, "live": live}
         out["axes.tsv"].append([aid, g["condition"], g["what_varies"], ", ".join(r["id"] for r in rs), states_col,
                                 joined(parts), ", ".join(uniq(x for r in rests for x in r["cites"])), "; ".join(notes)])
@@ -137,7 +145,7 @@ def build(study):
         parts = {aid: OrderedDict(info[aid]["parts"]) for aid in {a for a, _, _ in changes}}
         for aid, p, f in sorted(changes, key=lambda c: c[1] != ACROSS):
             if p == ACROSS:
-                parts[aid] = OrderedDict((k, f) for k in parts[aid])
+                parts[aid] = OrderedDict((k, f) for k in parts[aid]) or OrderedDict([(ACROSS, f)])
             else:
                 parts[aid][p] = f
         st = OrderedDict(today)
@@ -151,7 +159,7 @@ def build(study):
         new = [(a, f) for a in changed for f in st[a].split(" + ") if f not in today[a].split(" + ")]
         if all(f in info[a]["live"] for a, f in new):
             basis = "in force"
-        elif all(any(r["held"] for r in info[a]["rows"] if r["full"] == f) or f in info[a]["live"] for a, f in new):
+        elif all(f in info[a]["live"] or any(r["holds"] == "held" for r in info[a]["rows"] if r["full"] == f) for a, f in new):
             basis = "occurred"
         else:
             basis = "provided for"
@@ -161,18 +169,18 @@ def build(study):
     for aid, i in info.items():                               # one per non-today state
         now_parts = set(i["parts"].values())
         for f in i["order"]:
-            if f in now_parts:
+            rs = [r for r in i["rows"] if r["full"] == f and r["holds"] != "proposed"]
+            if f in now_parts or not rs:
                 continue
-            rs = [r for r in i["rows"] if r["full"] == f]
             add([(aid, rs[0]["place"], f)], [x for r in rs for x in r["cites"]], "")
-    combos = defaultdict(list)                                # one per combination a single source shows at once
+    combos = defaultdict(list)                                # one per combination a single source shows holding at once
     for aid, i in info.items():
         for r in i["rows"]:
-            for s in r["sources"]:
-                combos[(s, r["at"])].append((aid, r))
-    for (s, at), rs in sorted(combos.items()):
-        changes, cites = [], []
-        slots = OrderedDict()
+            if r["holds"] == "held" and r["when"]:
+                for s in r["sources"]:
+                    combos[(s, r["when"])].append((aid, r))
+    for (s, w), rs in sorted(combos.items()):
+        changes, cites, slots = [], [], OrderedDict()
         for aid, r in rs:
             slots.setdefault((aid, r["place"]), []).append(r)
         for (aid, p), rr in slots.items():
@@ -184,7 +192,7 @@ def build(study):
             changes.append((aid, p, labels[0]))
             cites += [x for r in rr if r["full"] == labels[0] for x in r["cites"]]
         if changes:                                           # add() skips today and duplicates
-            add(changes, cites, f"shown together by {s}, held at {at or 'no date'}")
+            add(changes, cites, f"shown together by {s}, held at {'-'.join(f'{x:02d}' for x in w)}")
 
     out["cases.tsv"].append(["YC-00", "today", "; ".join(f"{a}={v}" for a, v in today.items()), "today",
                              ", ".join(uniq(x for i in info.values() for r in i["rows"] for x in r["cites"]

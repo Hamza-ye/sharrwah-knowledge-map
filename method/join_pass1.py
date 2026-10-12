@@ -38,6 +38,9 @@ def main(study):
         joined[kind] = out
     cite_ids = {r[0] for r in joined["citations"]}
     for r in joined["conditions"]:
+        for k, col in ((1, "condition"), (2, "state"), (4, "held_at"), (5, "date_basis")):
+            if not r[k].strip():
+                problems.append(f"conditions: {r[0]} has an empty {col}; run the part's --pass1 check")
         for x in re.split(r"[,\s;]+", r[6]):
             if x and x not in cite_ids:
                 problems.append(f"conditions: {r[0]} cites {x}, which no part holds")

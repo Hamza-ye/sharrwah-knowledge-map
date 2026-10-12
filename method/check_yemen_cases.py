@@ -8,7 +8,8 @@
 # Usage: python3 -I method/check_yemen_cases.py STUDY_DIR OUT [--pass1 PART | --groups | --states FILE]
 #   --pass1 PART   one part of pass 1: pass1/conditions-<PART>.tsv and pass1/citations-<PART>.tsv
 #   --groups       step 2a: groups.tsv and places.tsv
-#   --states FILE  step 2b: one agent's states file (e.g. pass2/states-1.tsv), for the groups it covers
+#   --states FILE [FIRST LAST]  step 2b: one agent's states file (e.g. pass2/states-1.tsv), for the groups it
+#                  covers, or for every group from FIRST to LAST (e.g. YG-001 YG-080)
 import csv, os, re, sys
 from collections import Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -22,7 +23,7 @@ SRC = Sources({"sharrwah-knowledge-map": SKM})
 HEADERS = {
     "conditions.tsv": ["condition_id", "condition", "state", "place", "held_at", "date_basis", "cite_ids", "note"],
     "groups.tsv": ["group_id", "condition", "what_varies", "condition_ids", "note"],
-    "places.tsv": ["place", "grouped", "basis", "note"],
+    "places.tsv": ["place", "grouped", "kind", "why", "basis", "note"],
     "states.tsv": ["condition_id", "group_id", "label", "place", "holds", "now", "note"],
     "axes.tsv": B.HEADS["axes.tsv"],
     "constants.tsv": B.HEADS["constants.tsv"],
@@ -36,7 +37,9 @@ IDS = {"conditions.tsv": ("condition_id", r"^YQ-[A-F]\d{3}$"), "groups.tsv": ("g
 BASES = {"today", "in force", "occurred", "provided for"}
 FETCHED = {"inside Yemen", "outside Yemen", "attestation"}
 WHO = {"agent", "founder", "reader"}
-HOLDS = {"held", "provided for"}
+HOLDS = {"held", "provided for", "proposed"}
+KINDS = {"area", "authority", "service"}
+WHYS = {"variant", "source", "rule"}
 SOURCE = re.compile(r"^sharrwah-knowledge-map@[0-9a-f]{7,40}:evidence/yemen/(runs|blocked-evidence-founder|derived|attestations)/")
 LABEL_BAD = re.compile(r"[;|\[\]]| \+ | @ ")
 MAX_AXES = B.MAX_AXES
@@ -161,30 +164,48 @@ def check_groups():
             err("groups.tsv", x, "a pass 1 row in no group")
     names = Counter(p["place"] for p in places)
     grouped = {p["place"]: p["grouped"] for p in places}
+    kind = {p["place"]: p["kind"] for p in places}
     for k, n in names.items():
         if n > 1:
             err("places.tsv", k, f"listed {n} times")
     for p in places:
         if not p["grouped"]:
             err("places.tsv", p["place"], "grouped is empty")
-        elif p["grouped"] != p["place"]:
-            if grouped.get(p["grouped"]) != p["grouped"]:
-                err("places.tsv", p["place"], f"grouped with '{p['grouped'][:50]}', which isn't listed as a place grouped with itself")
+        if p["grouped"] == B.ACROSS or p["place"] == B.ACROSS:
+            err("places.tsv", p["place"], f"'{B.ACROSS}' is set per state in states.tsv, not in places.tsv")
+        if p["kind"] not in KINDS:
+            err("places.tsv", p["place"], f"kind '{p['kind']}' is not one of {sorted(KINDS)}")
+        if p["grouped"] == p["place"]:
+            if p["why"]:
+                err("places.tsv", p["place"], "why is for a place grouped with another; leave it empty")
+            continue
+        if p["grouped"] == B.NOT_STATED:
+            if p["why"] != "rule":
+                err("places.tsv", p["place"], "a name taken as 'place not stated' has why 'rule' (Yemen or the Republic, no authority)")
+        elif grouped.get(p["grouped"]) != p["grouped"]:
+            err("places.tsv", p["place"], f"grouped with '{p['grouped'][:50]}', which isn't listed as a place grouped with itself")
+        if p["why"] not in WHYS:
+            err("places.tsv", p["place"], f"why '{p['why']}' is not one of {sorted(WHYS)}")
+        if p["why"] == "source":
             if not ids(p["basis"]):
-                err("places.tsv", p["place"], "grouped with another place, but basis cites no source using both names")
+                err("places.tsv", p["place"], "grouped on a source, but basis cites none")
+            if len({cit_source[x] for x in ids(p["basis"]) if x in cit_source}) > 1:
+                err("places.tsv", p["place"], "basis cites more than one source; a grouping rests on one source using both names")
         for x in ids(p["basis"]):
             if x not in cit_ids:
                 err("places.tsv", p["place"], f"basis {x} is not a citation")
-        if len({cit_source[x] for x in ids(p["basis"]) if x in cit_source}) > 1:
-            err("places.tsv", p["place"], "basis cites more than one source; a grouping rests on one source using both names")
-        if p["grouped"] == B.ACROSS or p["place"] == B.ACROSS:
-            err("places.tsv", p["place"], f"'{B.ACROSS}' is set per state in states.tsv, not by grouping")
     for c in conds:
-        if c["place"] not in grouped:
+        if c["place"] not in grouped and c["place"] not in (B.ACROSS, B.NOT_STATED):
             err("places.tsv", c["place"][:60], f"a place pass 1 gives ({c['condition_id']}) that places.tsv doesn't list")
-    return groups, member, {v for v in grouped.values()}
+    global place_kind, place_of
+    place_kind = dict(kind)
+    place_of = {c["condition_id"]: (B.NOT_STATED if c["place"] == B.NOT_STATED else
+                                    B.ACROSS if c["place"] == B.ACROSS else grouped.get(c["place"])) for c in conds}
+    return groups, member, {v for v in grouped.values()} | {B.NOT_STATED}
 
-def check_states(states, fname, member, place_set, whole=True):
+place_kind, place_of = {}, {}
+
+def check_states(states, fname, member, place_set, whole=True, span=None):
     seen = Counter(s["condition_id"] for s in states)
     for k, n in seen.items():
         if n > 1:
@@ -200,16 +221,34 @@ def check_states(states, fname, member, place_set, whole=True):
             err(fname, cid, "label is empty")
         elif LABEL_BAD.search(s["label"]):
             err(fname, cid, "label contains ';', '|', '[', ']', ' + ' or ' @ ', which the axes and cases files use as separators")
-        if s["place"] != B.ACROSS and s["place"] not in place_set:
+        if s["place"] == B.ACROSS:
+            if not s["note"]:
+                err(fname, cid, f"'{B.ACROSS}' quotes in note the source's words saying the state holds in all of Yemen")
+        elif s["place"] not in place_set:
             err(fname, cid, f"place '{s['place'][:50]}' is neither a grouped place in places.tsv nor '{B.ACROSS}'")
+        elif s["place"] != place_of.get(cid) and place_kind.get(s["place"]) not in ("authority", "service"):
+            err(fname, cid, f"place '{s['place'][:50]}' is neither the row's place as places.tsv groups it "
+                            f"('{(place_of.get(cid) or '')[:40]}') nor an authority's area or a party's service")
         if s["holds"] not in HOLDS:
             err(fname, cid, f"holds '{s['holds']}' is not one of {sorted(HOLDS)}")
         if s["now"] not in ("", "yes"):
             err(fname, cid, "now is 'yes' or empty")
     covered = {s["group_id"] for s in states}
     for x, g in member.items():
-        if (whole or g in covered) and x not in seen:
+        if (whole or g in covered or (span and span[0] <= g <= span[1])) and x not in seen:
             err(fname, x, f"a row of {g} with no state")
+    # `now` marks the current one of two states a source gives for one place at one date: it needs its pair.
+    src_of = {c["cite_id"]: c["source"].split(":", 1)[-1] for c in cits}
+    srcs = {s["condition_id"]: {src_of.get(x) for x in ids(cond[s["condition_id"]]["cite_ids"])} - {None}
+            for s in states if s["condition_id"] in cond}
+    for s in states:
+        if s["now"] == "yes" and s["condition_id"] in cond:
+            c = cond[s["condition_id"]]
+            pair = [o for o in states if o is not s and o["group_id"] == s["group_id"] and o["place"] == s["place"]
+                    and o["label"] != s["label"] and o["condition_id"] in cond
+                    and cond[o["condition_id"]]["held_at"] == c["held_at"] and srcs[o["condition_id"]] & srcs[s["condition_id"]]]
+            if not pair:
+                err(fname, s["condition_id"], "now is 'yes', but the same source gives no other state for this place and held_at")
 
 if "--groups" in sys.argv:
     groups, member, place_set = check_groups()
@@ -219,11 +258,13 @@ if "--groups" in sys.argv:
     sys.exit(0)
 
 if "--states" in sys.argv:
-    fname = sys.argv[sys.argv.index("--states") + 1]
+    i = sys.argv.index("--states")
+    fname = sys.argv[i + 1]
+    span = tuple(sys.argv[i + 2:i + 4]) if len(sys.argv) >= i + 4 else None
     groups, member, place_set = check_groups()
     issues.clear()                                   # step 2a's own issues are reported by --groups
     states = read(fname, "states.tsv")
-    check_states(states, fname, member, place_set, whole=False)
+    check_states(states, fname, member, place_set, whole=False, span=span)
     write_issues(f"pass2-{os.path.basename(fname)}-issues.tsv")
     print(f"{fname}: states {len(states)} over {len({s['group_id'] for s in states})} groups | "
           f"issues: {dict(Counter(i[0] for i in issues))}")
@@ -313,7 +354,7 @@ for a in axes:
         err("axes.tsv", aid, f"today '{t[:50]}' is not its state labels joined by ' + ', with 'disputed' or 'unknown' parts")
     if any(x.strip().startswith("unknown") for x in t.split(" + ")) and aid not in unknown_about:
         err("axes.tsv", aid, "today has an unknown part, but unknowns.tsv has no row about it")
-    if not t.startswith("unknown") or " + " in t:
+    if any(not x.strip().startswith("unknown") for x in t.split(" + ")):
         cites("axes.tsv", f"{aid} today", a["today_cite_ids"])
     if not ids(a["condition_ids"]):
         err("axes.tsv", aid, "condition_ids is empty")

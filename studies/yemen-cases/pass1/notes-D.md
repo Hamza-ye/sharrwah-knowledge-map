@@ -4,7 +4,7 @@ Part D is the cited-sources run, `evidence/yemen/runs/20261010T050304Z-cited-sou
 
 ## Status
 
-In progress. Items read so far, in order: 1 to 93. (The table below is regenerated from the files at the end.)
+In progress. Items read so far, in order: 1 to 131 (all). (The table below is regenerated from the files at the end.)
 
 ## The part
 
