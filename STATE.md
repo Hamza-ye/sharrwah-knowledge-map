@@ -54,7 +54,14 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
     - places are scopes: an authority's area, a party's service, or a named area;
     - name variants are one place, but an ambiguous name never groups;
     - today's parts may overlap.
-  - The build bugs it found are fixed, and `method/test_build_yemen_cases.py` now tests every rule. A second inspection follows before step 2a runs.
+  - The build bugs it found are fixed, and `method/test_build_yemen_cases.py` now tests every rule.
+  - The second inspection found 12 more, all fixed:
+    - the `ended` state;
+    - an across-Yemen state supersedes only when strictly later;
+    - labels name the parties when they are what differs;
+    - a body named without its seat groups only on a source;
+    - `method/join_pass2.py` joins step 2b's files.
+  - A third and last inspection is running (agent `a358c7011c8386469`).
   - Agents make the judgments: step 2a groups conditions and places, and step 2b labels states, several agents by range of groups.
   - `method/build_yemen_cases.py` applies the rules and writes axes, constants and cases.
   - The checker has `--groups` and `--states` modes and compares the build's output.
@@ -110,7 +117,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript.
 
 **Agents running when last checked (12 October 2026, 18:53 UTC):**
-- **Stage 1 pass 2, second inspection:** agent `a813c69e893cc2926`. It writes no file. If it was stopped, run it again.
+- **Stage 1 pass 2, third inspection:** agent `a358c7011c8386469`. It writes no file. If it was stopped, run it again.
 - **Pilot phase B:** one agent (`a9e10fcc19233f104`), on `studies/subjects/S-01/briefs/B-variation-points.md`, writing `variation-points.tsv`, `variants.tsv` and `notes-b.md`.
 - **Stage 1 pass 1:** part E. Parts A to D and F are done.
   - Agent: E `aa722ff96ec8f64a4`.
