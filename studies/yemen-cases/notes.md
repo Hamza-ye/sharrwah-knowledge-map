@@ -85,7 +85,7 @@ These are judgments, since the brief does not define "one thing".
 | YA-13 | How the rate is set | item 16, line 107 |
 | YA-14 | Use of electronic payment | item 23, line 34 |
 | YA-15 | Who may provide e-payment services | item 23, line 40 |
-| YA-16 | Internet availability | item 23, line 73 (stop) |
+| (16th, not recorded) | Internet availability | item 23, line 73: the stop |
 
 ## Merges
 
@@ -106,8 +106,10 @@ The axis count before the stop is the same either way.
 ## Problems with the method
 
 1. **The stop depends on reading order.** No order is given, and manifest order is alphabetical by host. The 16th axis came at item 23 of 262 in the first run. The Sana'a rules run, the operators run, the community clients and the founder's pages were never reached. Those pages include the Sana'a central bank's own list of payment companies (F02).
-2. **"One thing" is undefined, so the axis count depends on granularity.** A coarser first pass counted 15 axes by item 49; a consistent finer reading reaches 16 by item 23. The merge test (every source gives both) almost never holds for related candidates, so it cannot hold the count down.
-3. **The reach of rule 10 is unclear.** "Don't continue past it" could stop the whole step (reading, constants, cases) or only stop adding axes. I stopped everything, but built YC-00 because the checker reports its absence as an error.
+2. **"One thing" is undefined, so the axis count depends on granularity.** A coarser first pass counted 15 axes by item 49; a consistent finer reading reaches a 16th by item 23. The merge test (every source gives both) almost never holds for related candidates, so it cannot hold the count down.
+3. **The reach of rule 10 is unclear.**
+   - "Don't continue past it" could stop the whole step (reading, constants, cases) or only stop adding axes. I stopped everything, but built YC-00 because the checker reports its absence as an error.
+   - The brief does not say whether the 16th axis is recorded. The checker treats more than 15 axes as an error, so it is reported here and not recorded.
 4. **Place names (rule 4) keep stale states in `today`.** The same area named differently becomes separate places: عدن and Aden; صنعاء and مناطق سيطرة الحوثيين.
 5. **Rule 6 lets any later whole-market state erase older place-bound states,** even on another aspect of the axis.
    - YA-08: a 2024 Aden withdrawal order removes the 2020 Sana'a-side ban from `today`.
