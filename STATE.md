@@ -62,9 +62,14 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - The method fixes this needed are recorded in `PLAN.md` section 11.
 - **Phase A is done** on all five platforms: 588 statements and 16 gaps. With every capture run, the checker finds all 1,125 quotes and reports no issues.
   - The pages phase A cites were captured in `evidence/product-class/runs/20261012T104936Z-s01-sources/` (130) and `20261012T190225Z-s01-sources-zid/` (1).
+- **Briefs B, A2, C, D and F: third inspection done.** It found 14 must-fix items, all fixed. The main ones:
+  - the matching words "same" and "agree" are defined;
+  - "market, pattern" follows `PLAN.md` section 6 as written;
+  - D marks only the cases that change an axis a variation point bears on (`bears-on.tsv`). Every other case carries today's mark.
+- **Phase B started** on 12 October 2026, with one agent (`a9e10fcc19233f104`).
 - **Next:**
-  - the third inspection of briefs B, A2, C, D and F, which is running, and its fixes;
-  - B, A2, B's second pass, C;
+  - test the checker's step 2 (marks) on D's first rows before D runs on;
+  - B, A2, capture and kinds again, B's second pass, C;
   - D, after Stage 1;
   - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
   - F;
@@ -91,7 +96,8 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript.
 
 **Agents running when last checked (12 October 2026, 18:53 UTC):**
-- **Pilot:** the third inspection of briefs B, A2, C, D and F (agent `a5d58b590e05e29e5`). It writes no file. If it was stopped, run it again.
+- **Pilot phase B:** one agent (`a9e10fcc19233f104`), on `studies/subjects/S-01/briefs/B-variation-points.md`, writing `variation-points.tsv`, `variants.tsv` and `notes-b.md`.
+- **Stage 1 pass 2 inspection:** agent `af5cdd05bf3cf235c`. It writes no file. If it was stopped, run it again.
 - **Stage 1 pass 1:** parts C to E, and part F reading six new OCR files. Parts A and B are done.
   - Agents: C `ae62ffcdd5d9f5670`, D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`, F `aa29284ecad1cbef0`.
   - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
