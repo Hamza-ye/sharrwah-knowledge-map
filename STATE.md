@@ -60,4 +60,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **observed-sh `e49840729`.** Its 70 fetch archives, mostly online docs, are being pushed by the founder (12 October). When the founder says they have landed: fetch, check that the held index reads them, and re-run `method/q1_held_check.py`.
 - **The map's citations** are at observed-sa `145f137` and observed-sh `b46731d0` / `e49840729`.
 
-**Open for the founder:** Q3's rows, both sets or one, needed at the pilot's step 3. The 81 payment rows are in `register/pay-questions.tsv`. The Knowledge Map's 179 questions are in no repository this work holds, so the founder will be asked where they are when the pilot reaches step 3.
+**Q3's rows:** both sets, by the founder's answer (`founder-decisions.tsv`).
+- The 81 payment rows are in `register/pay-questions.tsv`.
+- The Knowledge Map's 179 questions are in `register/km-questions.tsv`, copied from the founder's artifact with `KM-` ids.
+- `register/README.md` says what the rows are and why they need care.

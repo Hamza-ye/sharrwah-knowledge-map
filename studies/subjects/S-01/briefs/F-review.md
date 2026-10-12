@@ -4,7 +4,7 @@ This is `PLAN.md` Stage 2, the pilot. You review what other agents and the coord
 
 **Read only this brief and:**
 - everything in `studies/subjects/S-01/`, and of `briefs/` only `C-analysis.md`, for its rule table;
-- the row files E placed: `register/pay-questions.tsv` (only the columns `id`, `question`, `needed_by` and `lane`), and the 179 questions if E placed them;
+- the row files E placed, `register/pay-questions.tsv` and `register/km-questions.tsv`, only the columns `id`, `question`, `needed_by` and `lane`;
 - Stage 1's output in `studies/yemen-cases/`;
 - the sources those files cite, to check them.
 
