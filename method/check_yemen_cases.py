@@ -16,7 +16,7 @@ SRC = Sources({"sharrwah-knowledge-map": SKM})
 HEADERS = {
     "conditions.tsv": ["condition_id", "condition", "state", "place", "held_at", "date_basis", "cite_ids", "note"],
     "axes.tsv": ["axis_id", "axis", "what_varies", "condition_ids", "states", "today", "today_cite_ids", "note"],
-    "constants.tsv": ["constant_id", "condition", "condition_ids", "cite_ids", "note"],
+    "constants.tsv": ["constant_id", "condition", "place", "condition_ids", "cite_ids", "note"],
     "cases.tsv": ["case_id", "name", "axis_states", "basis", "cite_ids", "note"],
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "fetched_from", "url"],
     "unknowns.tsv": ["about", "what_would_show_it", "who_can", "route", "read", "why_not_held"],

@@ -22,47 +22,50 @@ This is Q2's first step, as agreed with the founder:
 ## Pass 1: conditions, from every source
 
 **Read every source,** in this order:
-1. the founder's pages from inside Yemen;
-2. the Sana'a rules run;
-3. the operators run;
-4. the cited-sources run;
-5. the community clients;
-6. the OCR text of any scanned PDF in those runs.
+1. the founder's pages from inside Yemen, `evidence/yemen/blocked-evidence-founder/`;
+2. any attestation in `evidence/yemen/attestations/` besides `TEMPLATE.md`;
+3. the Sana'a rules run, `runs/20261010T061420Z-sanaa-rules-search/`;
+4. the operators run, `runs/20261010T072550Z-sanaa-operators-search/`;
+5. the cited-sources run, `runs/20261010T050304Z-cited-sources/`;
+6. the community clients, `runs/20261010T051708Z-community-clients/`;
+7. the OCR text in `evidence/yemen/derived/` of any scanned PDF in those runs.
 
 Don't skip a source because it seems minor.
 
 **Record each condition** a source states in `conditions.tsv`, one row per source statement.
 - **A condition** is something that a merchant, a buyer, or a party serving them can or must do, or has available, when selling or paying in Yemen.
-- **Its size.** Name it at the level of the act or the availability, not of one institution. One institution's position is a state of the condition. For example, the condition is "who may issue e-money", and one state is "Bank X, licensed by Y".
-- **The same condition.** Two rows are the same condition when they name the same act or availability for the same party. Give them the same `condition` wording, and list each such identification in `notes.md`.
+- **Its size.** Name it at the level of the act or the availability, not of one institution. In the abstract: the condition is "who may do A"; its states are such as "only P" or "P and Q". Positions that hold at one time and place are one state.
+- **The same condition.** Two rows are the same condition when they name the same act or availability for the same role. Give them the same `condition` wording, and list each such identification in `notes.md`.
 - **The state,** as the source gives it.
 - **The place.**
-  - A state an authority sets holds for the area that authority governs, as the source names it.
+  - A state an authority sets holds for the area that authority governs, as the source names that area. If the source names only the authority, the place is `<authority>'s area`.
   - It holds for the whole market only when a source says so.
+  - A state with no place, and no authority setting it, has the place `place not stated`.
   - Two place names are one place only when a single source uses both for the same area. List each such grouping in `notes.md`.
 - **When it held:**
   - when the source says it held;
   - for a state the source says still holds, the source's date;
   - for a state given for a range, the range's end;
   - if the source doesn't say, the source's date: effective, otherwise published, otherwise shown;
-  - for a live page, one in which a party describes its own current service or rule, its capture date when undated.
+  - for a live page, one in which a party describes its own current service or rule: the state it presents as current takes the capture date;
+  - for any other undated source: no date. An undated state can be the latest only where its place has no dated state.
 
   `date_basis` says which applies.
 
 ## Pass 2: axes, constants and cases
 
 1. **Axis.** A condition the evidence shows in at least two states. Its `condition_ids` list every pass 1 row it rests on.
-2. **Constant.** A condition shown in one state only, which a source states for Yemen as a whole. It goes in `constants.tsv`.
+2. **Constant.** A condition shown in one state only. It goes in `constants.tsv`, with its place.
 3. **Stop for review** if pass 2 gives more than 20 axes. Write `axes.tsv` and `constants.tsv`, say so in `notes.md`, and build no cases.
-4. **Today.** For each axis, `today` joins the latest-dated state of each place with ` + `. States with no place count as one more place: the whole market.
+4. **Today.** For each axis, `today` joins the latest-dated state of each place with ` + `. `place not stated` counts as one more place.
    - **Supersession.** A later whole-market state supersedes older place-bound states only when its source says it applies across Yemen.
    - **Precision.** Dates of different precision are compared at the coarser one, so 2024 and March 2024 tie.
    - **Disputed.** Two different states for the same place at the same latest date make that place's part `disputed`. Record both, and don't resolve them.
-   - **One source, two states.** When one source gives two states for the same place at once, take the one it says holds now.
+   - **One source, two states.** When one source gives two states for the same place at once, take the one it says holds now. If it says neither, that place's part is `disputed`.
 5. **Today's case, `YC-00`,** puts every axis at its `today`. It is the one anchor case.
 6. **Further cases** are built in two ways and no others:
    - **One per non-today state** of each axis, with every other axis at today's state.
-     - On an axis whose `today` joins places, a state for a place replaces only that place's part.
+     - On an axis whose `today` joins places, a state for a place replaces only that place's part. A state that a source says applies across Yemen replaces every part.
      - A disputed state counts as non-today.
    - **One per combination of states that a single source shows holding at one time.** The axes it doesn't give stay at today's state.
 
@@ -127,7 +130,7 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 | --- | --- |
 | `conditions.tsv` | `condition_id` (YQ-001…) · `condition` · `state` · `place` · `held_at` · `date_basis` · `cite_ids` · `note` |
 | `axes.tsv` | `axis_id` (YA-01…) · `axis` · `what_varies` · `condition_ids` · `states` (`label [YE-001, YE-007] \| label @ place [YE-010]`) · `today` (state labels joined by ` + `, with `disputed` or `unknown` where they apply) · `today_cite_ids` · `note` |
-| `constants.tsv` | `constant_id` (YK-01…) · `condition` · `condition_ids` · `cite_ids` · `note` |
+| `constants.tsv` | `constant_id` (YK-01…) · `condition` · `place` · `condition_ids` · `cite_ids` · `note` |
 | `cases.tsv` | `case_id` (YC-00, then YC-01…) · `name` · `axis_states` (`YA-01=<label>; …` for every axis, joined by ` + ` where `today` joins them, or `disputed` or `unknown`) · `basis` · `cite_ids` · `note` |
 | `citations.tsv` | `cite_id` (YE-001…) · `source` · `locator` · `quote` · `source_date` · `date_basis` · `fetched_from` · `url` |
 | `unknowns.tsv` | `about` · `what_would_show_it` · `who_can` · `route` · `read` · `why_not_held` |
