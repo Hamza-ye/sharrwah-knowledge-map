@@ -97,7 +97,14 @@ Agents started earlier keep their effort.
   - the matching words "same" and "agree" are defined;
   - "market, pattern" follows `PLAN.md` section 6 as written;
   - D marks only the cases that change an axis a variation point bears on (`bears-on.tsv`). Every other case carries today's mark.
-- **Phase B started** on 12 October 2026, with one agent (`a9e10fcc19233f104`).
+- **Phase B's first pass is done** (agent `a9e10fcc19233f104`). The checker reports no issues.
+  - 23 variation points: 10 under (a), 3 under (b) and 10 under (c).
+  - 531 variants: 491 answers, 2 absent, 28 gaps and 10 not covered.
+  - Its notes led to brief changes:
+    - A2 also takes the arrangements a platform leaves unanswered: who settles Salla Payments funds, and BigCommerce's payouts beyond BitPay;
+    - B matches against another platform's statement;
+    - B may rest an answer on its own translation, marked as its own.
+- **A2 started** on 13 October 2026 at `medium` effort, for Salla, WooCommerce, Zid and BigCommerce. Shopify has no gap.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
   - B, A2, capture and kinds again, B's second pass, C;
@@ -128,7 +135,7 @@ Agents started earlier keep their effort.
 - at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript.
 
 **Agents running when last checked (12 October 2026, 23:58 UTC):**
-- **Pilot phase B:** one agent (`a9e10fcc19233f104`), on `studies/subjects/S-01/briefs/B-variation-points.md`, writing `variation-points.tsv`, `variants.tsv` and `notes-b.md`.
+- **Pilot A2:** one agent per platform on `studies/subjects/S-01/briefs/A2-close-gaps.md`, adding to `studies/subjects/S-01/<platform>/` and writing its `a2.tsv`. Agents: Salla `a92dbea8578aa9b2b`, WooCommerce `ab2f2d0581429efb0`, Zid `a5878c46f612c28d8`, BigCommerce `a3036ef0ce778c6b2`. Phase B's agent `a9e10fcc19233f104` is resumed for the second pass after A2.
 - **Stage 1 pass 1:** part E, restoring trimmed quotes and reading items 263–280. Parts A to D and F are done.
   - Agent: E `aa722ff96ec8f64a4`.
   - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
