@@ -85,3 +85,16 @@ Brief `briefs/A2-close-gaps.md`, for S01-VP-02 (who settles مدفوعات سل�
 
 - عقد خدمات الدفع and the dashboard's verification page, as before. No held help article carries the agreement's text or parties.
 - en 145 (Billing settings | UAE) has the heading "Bank account for receiving payouts" with no text under it in the held copy. No Arabic version of en 145 is held.
+
+## Phase A2, second run, continued (2026-10-13)
+
+The brief's step 2 now asks for everything found that bears on the subject, with the scope the source states. From the same sweep and the same held copies (observed-sa `4ca2e896a729215f422a137a364e7e9488610ba3`, `help-articles/{ar,en}/texts.jsonl`), I added S01-SA-140 to 177 (citations S01-SA-C194 to C275). The previous section's list "Held but not recorded" is now recorded:
+- Kuwait (ar line 755, en line 1047): minimum payout in both languages (S01-SA-140 English "KWD 1", S01-SA-141 held Arabic "لايوجد حد أدنى للحوالات"; they disagree, as S01-SA-061 and 062 already did, and neither is resolved), schedule, balance, bank account, fees under the payment services agreement, wallet tracking (marker قادم قريبًا) and COD tracking; verification bank step (ar 927, en 1223).
+- UAE (ar line 754, en line 1242): schedule and AED 250 minimum in both languages, the held copy of S01-SA-051's sentence, bank account change, fees, wallet tracking; verification bank step and the account types by licence (ar 929, en 1225).
+- Saudi Arabia, as the English titles state it (en 1241, en 144): funds of unverified stores pending until verification, verification required for transfers, invoice frequency by plan, SAR/AED 100 minimum, the payout bank account and its review; from the Arabic صفحة المحفظة (ar 664), withdrawal timing and the net amount after fees; ar 1502 / en 808: SAR 100 minimum and payments received in SAR.
+- Waybill costs and international customs fees taken from the wallet balance (ar 1310, en 1051).
+- IBAN-certificate articles for بنك البحرين, بنك الخليج, بنك الكويت, Emirates NBD and Mashreq (ar 1192, 1195, 1198, 1190, 1199), and their account-name notice. They name the bank, not a country; the scope is the bank as named. The 11 articles for Saudi banks (ar 1186 to 1201) open with the same sentence and are not recorded one by one.
+
+Statements now added in phase A2: 44 (S01-SA-134 to 177), within the cap.
+
+Not recorded: customer-wallet and cashback articles (the customer's balance, not the merchant's sales money), affiliate commissions, Salla Ads billing, subscription refunds to رصيد المتجر, and transaction limits (they concern the buyer's payment, not the merchant's funds).
