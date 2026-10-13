@@ -27,6 +27,7 @@ Statements under (e) are conditions, not variants. Phase D reads them.
 ## Rules
 
 0. **Same.** In these rules, two things are the same when they use the same words, or a platform's own translation of them in `terms.tsv`, or name the same party or identifier. Quote what shows it. Two platforms agree on a variation point when their sets of answers are the same.
+   - **Without the platform's translation,** `answers` may rest on your translation of the platform's words. Quote them, and mark the translation as yours in `basis_evidence`.
 1. **Candidates.** Each statement that says who or what fills some X under bullets (a) to (c) gives one candidate for each of those bullets it carries. Under (c), the time or condition a statement gives is what fills its X. Its X is quoted from that statement.
 2. **Variation points.** Candidates from different statements under the same bullet are one variation point when their X matches on one of the bases in rule 4.
    - Each variation point keeps the bullet of its statements.
@@ -40,7 +41,7 @@ Statements under (e) are conditions, not variants. Phase D reads them.
    - **`not covered`:** the platform has none of these. These rows go back to that platform for gap-closing (phase A2). List them in `notes-b.md`.
 
    A bullet (d) statement, that the platform has no part, is the platform's variant for each variation point it applies to, with the basis `answers`.
-4. **Matching.** Compare each statement with a statement in the variation point's `raised_by`. Record every basis that holds, with the words that show it in `basis_evidence`:
+4. **Matching.** Compare each statement with a statement in the variation point's `raised_by` from another platform, where there is one. Record every basis that holds, with the words that show it in `basis_evidence`:
    - `term`: the same term, including a platform's own translation from `terms.tsv`. It fails when the two platforms' definitions in `terms.tsv` differ.
    - `identifiers`: the same key, scope, topic or entitlement;
    - `definition`: the same definition, with both quoted;
@@ -49,13 +50,13 @@ Statements under (e) are conditions, not variants. Phase D reads them.
    A statement goes under a variation point only if at least one basis holds. When it only partly matches, split the variation point rather than force the match.
 5. **Kind and scope.**
    - `kind` is copied from `kinds.tsv` for each statement of the variant. If they differ, list each, `;`-separated.
-   - `scope` is as the statements give it.
+   - `scope` is as the statements give it. If they differ, list each scope with its `stmt_ids`, `;`-separated.
 6. **No inference,** no ranking and no causes, anywhere, including notes.
 7. **Stop and report** past 25 variation points.
 
 ## Second pass, after phase A2
 
-When the coordinator says phase A2 is done, read each platform's `a2.tsv` and revisit every row that was `gap` or `not covered`. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`.
+When the coordinator says phase A2 is done, read each platform's `a2.tsv` and revisit every row that was `gap` or `not covered`, and each arrangement A2 was given. Recheck, under rule 4 as it now reads, any row you compared with a statement of its own platform. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`.
 - replace it with variants from the statements A2 added, under the rules above;
 - or make it `absent`, with A2's `absence_ids`;
 - or keep it as `gap`, with A2's `gap_ids`.
