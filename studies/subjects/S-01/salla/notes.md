@@ -98,3 +98,29 @@ The brief's step 2 now asks for everything found that bears on the subject, with
 Statements now added in phase A2: 44 (S01-SA-134 to 177), within the cap.
 
 Not recorded: customer-wallet and cashback articles (the customer's balance, not the merchant's sales money), affiliate commissions, Salla Ads billing, subscription refunds to رصيد المتجر, and transaction limits (they concern the buyer's payment, not the merchant's funds).
+
+## Absence audit
+
+Phase A3, 2026-10-13, brief `briefs/A3-absence-audit.md` (with the coordinator's additions of the result `partly contradicted` and of fetch-archive search). Seven claims audited: S01-SA-G01 to G06 (no gap is of kind `page not read`) and S01-SA-N01. One row each in `absence-audit.tsv`, with every `corpus_search` command and every document read. Added S01-SA-178 to 189 (12 statements) and S01-SA-C276 to C290, and two terms (لحساب المتجر; الطرف الذي حُصّل المبلغ لحسابه). No existing row was changed.
+
+**What I found**
+- G01 (entity, licence or account), partly contradicted. Two shopper-facing articles, held in both languages, say payments are collected for the store's account: 'المبالغ تُحصَّل لحساب المتجر' / 'Payments are collected for the store's account' (S01-SA-178) and the store is 'الطرف الذي حُصّل المبلغ لحسابه' (S01-SA-179). Neither names مدفوعات سلة or a payment method. The entity holding Salla Payments funds, its licence, and the text and parties of عقد خدمات الدفع are still unstated; `held_index.py` again reports the route page https://s.salla.sa/payments/kyc not held. Also recorded from these searches: the dashboard's chargeback metric, 'payments held by the issuing bank due to disputes' (S01-SA-180, 181).
+- Paylink: the salla.com blog posts in the fetch archives say Salla acquired Paylink, a company 'مرخصة من البنك المركزي السعودي لتقديم خدمات مدفوعات التجارة الإلكترونية'. No record read says that Salla Payments funds are processed, settled or held by Paylink or under its licence. Nothing was recorded from them.
+- G02 (complete country list), confirmed. Added without closing it: a help article held only in a fetch archive (توثيق متجرك في قطر | سلة, run 20261009T034955Z-help-sitemap-missing) names 'تحويلات مدفوعات سلة والتسويات في قطر' and a Qatari payout account in QAR (S01-SA-182 to 186). The sign-up text 'منصة سلة متاحة حاليًا في السعودية والإمارات فقط' (S01-SA-189) is a list presented as complete. It covers the platform, not Salla Payments, and it disagrees with the Kuwait and Qatar articles. Not resolved.
+- G03 (who settles), partly contradicted, with no new statement. The English 'Electronic payments is a Salla service that processes payments in your store directly, settling transactions with banks ...' (S01-SA-139, added in phase A2 after the gap was written) names a Salla service as settling with banks. No source names the entity that settles the funds before transfer to the merchant.
+- G04 and G06 (reserve), confirmed. G05 (security interest), partly contradicted: صندوق سلة's page says its investment is given 'بلا أوراق ولا ضمانات' (S01-SA-187), repaid as a share of sales (S01-SA-188). For Salla Payments balances in general, no source states a security interest, lien, pledge or set-off, or that none is taken.
+- N01 (wallet tabs), confirmed. Every held or captured source that lists the merchant wallet's sections gives the same three, including the wallet FAQ held only in a fetch archive.
+
+**Searches too broad to read in full, and how I narrowed them**
+- Country names alone (السعودية 233 ar documents, Saudi 232 en; الإمارات 47, الكويت 32; plus fetch-archive records): I read the payment, payout, wallet, verification and billing articles among them. For the rest I ran combined searches (`--all` with عقد, agreement, payment services, تسوية, المدفوعات الإلكترونية, مدفوعات سلة, فقط, only).
+- Partner names and plan names alone (929 Arabic documents, because تاب and مدفوع match inside other words; 232 and 385 for plan words): narrowed with `--all` on ترخيص, licensed, البنك المركزي and central bank, and on المحفظة or wallet with each partner.
+- تسوية/settle (147 ar, 123 en): about 220 are carrier articles whose settlement answer is the carrier's own COD schedule. I read them by title and snippet. The rest I read at the matching paragraphs.
+- تبويب/tabs (658 ar): narrowed to المحفظة or wallet with رصيد or balance, and to each partner.
+- Fetch archives (1,315 records across the re-run searches): I grouped them by URL. salla.com navigation and footers, help.salla.sa category pages, app listings and cdn.translations copies of the held translation files were read by URL and snippet. Terms pages, payment, Capital and GCC pages, payment-related blog posts and the two help articles missing from `help-articles` were read with `method/warc_text.py`.
+
+**Problems with the method**
+- `corpus_search.py` changed twice during this run. Some matching moved to whole words, so earlier hits such as SAMA inside "samaritan" are gone. Then it began searching observed-sa's fetch archives. I re-ran every logged search after the second change and compared the results. Some matches disappeared and fetch-archive records were added. Nothing else changed.
+- The default listing caps at 40 documents per source, so the hit counts in the summary line exceed what is listed. I re-ran the narrow searches with `--max 500` to list every fetch-archive hit.
+- For G03, the statement that partly contradicts the claim was already recorded (S01-SA-139), but the brief defines `stmt_ids` as the statements the auditor added. The checker requires a contradicted gap to name a statement, so the row names S01-SA-139 and the note says it was added in phase A2.
+- The phase A cap of 150 statements had been passed before this phase (177 statements). The coordinator said A3's cap counts only the statements added here, which is 12.
+- Quotes cited to fetch-archive records (S01-SA-C282 to C288) were checked by `check_subject.py` and resolved.

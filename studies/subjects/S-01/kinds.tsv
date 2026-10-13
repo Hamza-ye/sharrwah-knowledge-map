@@ -343,6 +343,14 @@ S01-SA-178	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/
 S01-SA-179	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-SA-180	observed	structures/salla/dashboard-translations is built from a recorded session
 S01-SA-181	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-182	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-183	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-184	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-185	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-186	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-187	stated	run 20261006T030341Z-com-toplevel fetched pages
+S01-SA-188	stated	run 20261006T030341Z-com-toplevel fetched pages
+S01-SA-189	observed	structures/salla/dashboard-translations is built from a recorded session
 S01-SA-N01	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-WC-001	official page	the address is a terms, policy, legal or pricing page
 S01-WC-002	official page	the address is a terms, policy, legal or pricing page
