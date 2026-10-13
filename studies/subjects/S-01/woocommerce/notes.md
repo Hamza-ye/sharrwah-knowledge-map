@@ -139,3 +139,36 @@ Variation point S01-VP-12 ("licensed"), from variant S01-V-219 (gap S01-WC-G01).
 1. G01 cannot be changed under the A2 brief. Its route pages have now been read, and G03 records what remains. `a2.tsv` lists G03 as the gap that remains.
 2. The Acquirer Disclosure and the Acquirer Terms are admitted on the chain Connected Account Agreement → Stripe Services Agreement → Stripe Payments 3.2, which says User "agrees to the Acquirer Terms for the applicable Payment Method Acquirers, if any, listed on the Acquirer Disclosure" (S01-WC-130).
 3. All new live citations were checked against the working copies made by `method/capture/page_text.mjs` on 2026-10-13; those copies are not evidence, and the coordinator captures the cited URLs.
+
+# Absence audit (phase A3), 13 October 2026
+
+Claims audited: S01-WC-G02, S01-WC-G03 and S01-WC-N01. S01-WC-G01 is of kind `page not read` and was not audited. One row per claim is in `absence-audit.tsv`, with every search run and every document read. Statements S01-WC-154 to S01-WC-172, citations S01-WC-C226 to S01-WC-C250 and four terms were added. No existing row was changed.
+
+## What was found
+
+- **S01-WC-G02 (c, PayPal Standard and third-party extensions): contradicted.** The PayPal Standard documentation, under "Payment pending (unilateral). Order status changed from Pending payment to On hold", says that the receiver email needs a PayPal account, and that "the transaction will then complete" (S01-WC-154). This page is in the gap's `read`. Nothing read states when money paid through the Stripe or Square extensions is released or held back. The Stripe extension documentation says Woo is "unable to assist with Stripe account issues (including but not limited to payouts, disputes, and account verification)" (S01-WC-158). The other statements added from these pages are S01-WC-155 to S01-WC-157, S01-WC-159 and S01-WC-160.
+- **S01-WC-G03 (b, a regulator for Australia, Japan, New Zealand, Singapore and the United Arab Emirates): confirmed.** The Regional Terms for these countries in the Stripe Financial Services Terms, Stripe Payments Terms, Stripe Connect Terms and Stripe Managed Payments Terms name no regulator. Neither do the Network International, SMCC and JCB terms, nor the Acquirer Disclosure. One other statement on the subject was found in the Know Your Customer page (S01-WC-161).
+- **S01-WC-N01 (e, WooPayments outside the Supported countries list): confirmed.** The WooPayments vs. Stripe plugin comparison lists the same 38 countries for both plugins, and six more for the Stripe plugin only (S01-WC-162, S01-WC-163). The release file list `get_wcpay_countries()` has those 38 and PR (S01-WC-172). The countries page puts Puerto Rico under U.S. businesses (S01-WC-087), and the Fees page says "Puerto Rico-based merchants are charged the same rates shown below." The countries page also names French overseas regions supported as French businesses (S01-WC-166). Statements S01-WC-164, S01-WC-165 and S01-WC-167 to S01-WC-171 were added from these pages.
+
+## Searches too broad to read in full, and how they were narrowed
+
+- `corpus_search.py` lists at most 40 documents by default; every search was run with `--max 1000`, so every listing is complete.
+- Single words (PayPal, Square, licence, regulated) match the woocommerce.com navigation menu, which names Stripe, WooCommerce Square and PayPal Braintree on every documentation page. The searches were narrowed with `--all`, pairing each partner or country with one money or licence word. Only listed documents whose snippet or title could bear on the claim were opened. In the others, only the lines matching the search words were read; the `read` column says so for each.
+- "ASIC" matches inside other words, such as "basic", in 19 documents. Only the Service Terms match bore on the claim, and its lines were read.
+- The Service Terms (6,688 lines) were not read in full. Its Regional Terms for the five countries were read in full, and the rest by the lines matching the licence and regulator words.
+- The release files are not in `corpus_search.py`'s corpus. They were searched with grep: the PayPal gateway folders for G02, and the WooPayments country lists for N01.
+
+## What couldn't be read
+
+- G03's route: https://www.smbc-card.com/kamei/kiyaku/responsive/pdf/smbc-card_kiyaku_tsuhan.pdf and the SMCC PDF that the Acquirer Disclosure links, https://www.smbc-card.com/content/dam/smcc/jp/ja/kamei/kiyaku/smbc-card_kiyaku_shop.pdf, both returned HTTP 403 "Access Denied", to curl and to `method/capture/page_text.mjs`, on 2026-10-13.
+- G03's route also names "the JCB 加盟店規約 linked from the Acquirer Disclosure". The Acquirer Disclosure's Japan Credit Bureau entry links only https://stripe.com/jp/legal/jcb. That page names the JCB通信販売加盟店規約 without linking it.
+- https://www.paypal.com/us/legal/useragreement-full redirected to the PayPal home page. The User Agreement was read at https://www.paypal.com/us/legalhub/paypal/useragreement-full.
+- Not opened: the page "Regional Regulatory Disclosures & Policies", linked from the header of the Stripe legal pages. It is neither held nor in a route.
+
+## Problems with the method
+
+1. **Third-party agreements in a route.** G02's route names PayPal's and Square's terms. They were read: the PayPal User Agreement has a section "Holds, Limitations, and Reserves". Nothing was recorded from them, because no WooCommerce terms read name them as binding on the merchant; the Terms say only that a third party's terms "may apply" (S01-WC-003). The A3 brief asks for the route to be read but doesn't say what to do when a route page is not admitted under phase A's rules.
+2. **Held captures as sources.** The new citations from captures cite the capture's `text.txt` at commit a041738770887dd218075c8a7622fb28c825279b, the commit `corpus_search.py` printed when the run began, with `access_path` `local` and a line number as locator. The page's JSON-LD dateModified is given as `source_date`.
+3. **The brief changed during the run.** The coordinator added to step 3 that anything else the documents read state on the subject is recorded too. The message arrived while G02's documents were being read, before any row was written. S01-WC-155 to S01-WC-160 were recorded under the addition.
+4. **What "contradicted" covers.** G02 joins PayPal Standard and the third-party extensions in one gap. A statement for PayPal Standard alone makes the whole row `contradicted`, while the Stripe and Square extensions still have no statement on (c). The brief has no partial result.
+5. **Conditions.** The brief allows new stmt_ids to be added to an existing (e) statement's `conditions`. It wasn't done. S01-WC-161 and S01-WC-165 are statements about WooPayments, and the (e) statements S01-WC-081 to S01-WC-088 condition WooPayments.

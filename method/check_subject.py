@@ -256,9 +256,11 @@ for plat in PLATFORMS:
             err(f, r["claim_id"], "searches lists the corpus_search.py commands run")
         if not r["read"]:
             err(f, r["claim_id"], "read is empty: list each document read")
-        if r["result"] not in ("confirmed", "contradicted"):
-            err(f, r["claim_id"], f"result '{r['result']}' is not confirmed or contradicted")
-        if r["result"] == "contradicted":
+        if r["result"] not in ("confirmed", "partly contradicted", "contradicted"):
+            err(f, r["claim_id"], f"result '{r['result']}' is not confirmed, partly contradicted or contradicted")
+        if r["result"] == "partly contradicted" and not r["note"]:
+            err(f, r["claim_id"], "a partly contradicted claim says in note what part still stands")
+        if r["result"] in ("contradicted", "partly contradicted"):
             if not ids(r["stmt_ids"]) and r["claim_id"] not in absences:
                 err(f, r["claim_id"], "a contradicted gap names the statements that state it")
             for x in ids(r["stmt_ids"]):
