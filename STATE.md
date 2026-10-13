@@ -38,27 +38,13 @@ Agents started earlier keep their effort.
 
   The cap is now a stop for review. The change is recorded in `PLAN.md` section 11. A focused inspection found 7 must-fix items, all fixed.
 - **Pass 1 is split across six agents by part** (A to F), so that every source is read. It started on 12 October 2026 at commit `9d0de52`.
-  - Part A is done: 54 conditions and 112 citations, every quote found.
-  - Part B is done: 190 conditions and 420 citations, every quote found.
-    - It read 61 of its 83 items.
-    - Not readable:
-      - centralbank.gov.ye (001–010, connection reset or 503);
-      - saba.ye (011, 021–023, 035, 037, 061; 403);
-      - scans whose OCR is part F's.
-    - Six more were OCR'd on 12 October 2026 (`evidence/yemen/derived/README.md`), and part F has read them: three photographs of documents (016, 026, 030) and three PDFs with a shifted font encoding (041, 047, 066).
-  - Part F is done, including those six: 166 conditions and 482 citations, every quote found.
-    - It notes that the Aden and Sana'a central banks' texts both name their area "Republic of Yemen". Pass 2's authority rule keeps the two apart.
-    - Two dates to check in pass 2's review:
-      - the undated sales tax booklet (066) takes 2020, the latest amendment it names;
-      - the commercial register law "as amended" (041) takes its 1991 decree date.
-  - Part C is done: 590 conditions and 705 citations, every quote found. Six pages couldn't be fetched (005, 033, 092, 034, 035, 099).
-  - Part D is done: 635 conditions and 999 citations, every quote found.
-    - It read 96 of its 115 items. Its scanned PDFs' OCR is part F's.
-    - It couldn't read 2, 15, 18–20, 24, 25, 28, 75 and 130 (404s, Cloudflare checks, TLS, maintenance).
-    - It records US dollar and Saudi riyal exchange rates: a long series of states, so many cases.
-  - Part E is done for items 132 to 262: 847 conditions and 995 citations, every quote found. Two problems were the coordinator's, and both are being put right:
-    - **The cap.** The checker's three-digit ids capped a part at 999 citations. Part E trimmed 1,246 to fit, so details were lost. The checker now takes four-digit ids, and part E is restoring what it trimmed. Part D ends at exactly 999 by coincidence and lost nothing.
-    - **The split.** Items 263 to 280 were in no part, because the run's numbering skips. Part E is reading them now.
+  - **Pass 1 is done and joined**, 13 October 2026, 00:40 UTC. All six parts check clean: 2,532 conditions and 4,052 citations, every quote found. `method/join_pass1.py` wrote `conditions.tsv`, `citations.tsv` and `pass2/wordings.tsv` (870 condition wordings).
+    - **Parts:** A 54 conditions, B 190, C 590, D 635, E 897, F 166. Each part's `pass1/notes-<part>.md` lists what it read and couldn't read.
+    - **Coordinator errors put right:**
+      - Part E restored the 206 quotes the three-digit cap had cut.
+      - Part E read items 263 to 280, which no part held.
+      - Six held items part B couldn't read were OCR'd, and part F read them.
+    - **Dates to check in pass 2's review:** the undated sales tax booklet (F, item 066) takes 2020; the commercial register law "as amended" (F, item 041) takes 1991.
 - **Pass 2 is reworked before it runs**, given pass 1's size (`PLAN.md` section 11, brief's pass 2).
   - Its first inspection found 12 must-fix items, all fixed. The place model changed most:
     - places are scopes: an authority's area, a party's service, or a named area;
@@ -81,8 +67,7 @@ Agents started earlier keep their effort.
     - the "same role" conflict is settled by "states are alternatives";
     - the commit given in the agents' prompts is the one cited.
 - **Next:**
-  - when B to F finish: `python3 -I method/join_pass1.py studies/yemen-cases`;
-  - step 2a (one agent), then step 2b (four agents by range of groups), then join the states and build;
+  - step 2a (one agent, `max`), then step 2b (four agents by range of groups, `high`), then `method/join_pass2.py` and the build;
   - the review stop if past 20 axes (`review-axes.md`), then cases;
   - step 2c, the checker, an independent review, and a comparison with Q2's example axes.
 
