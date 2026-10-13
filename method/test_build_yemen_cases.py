@@ -54,8 +54,20 @@ ROWS = {
     # G10: every part disputed: today's case still cites the rows its parts rest on
     "YQ-A034": ("G10", "yes", "Q", "2025", "held", "", "s30"),
     "YQ-A035": ("G10", "no", "Q", "2025", "held", "", "s31"),
+    # G11: a source's `now` state drops its other state dated the same before the latest is found
+    "YQ-A036": ("G11", "fee 2%", "North", "2025", "held", "", "s32"),
+    "YQ-A037": ("G11", "fee 1%", "North", "2025-03", "held", "yes", "s32"),
+    "YQ-A038": ("G11", "fee 3%", "North", "2025-06", "held", "", "s33"),
+    # G12: a constant whose state ended at a place isn't placed there
+    "YQ-A039": ("G12", "licences suspended", "CBY-Aden's area", "2024-05", "held", "", "s34"),
+    "YQ-A040": ("G12", "licences suspended", "CBY-Aden's area", "2024-07", "ended", "", "s35"),
+    "YQ-A041": ("G12", "licences suspended", "CBY-Sana'a's area", "2024-06", "held", "", "s36"),
+    # G13: `after D` counts as D; a state dated only `before` a date is never today
+    "YQ-A042": ("G13", "YER 215", "Sana'a", "before the war", "held", "", "s37"),
+    "YQ-A043": ("G13", "SWIFT cut", "Coast", "after 2018-10", "held", "", "s38"),
+    "YQ-A044": ("G13", "SWIFT open", "Coast", "2018-06", "held", "", "s39"),
 }
-GROUPS = ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"]
+GROUPS = ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12", "G13"]
 
 def make(study):
     with open(os.path.join(study, "conditions.tsv"), "w") as f:
@@ -87,7 +99,7 @@ def main():
         consts = {r[1]: r for r in out["constants.tsv"]}
         cases = out["cases.tsv"]
         check("axis or constant", (sorted(axes), sorted(consts)),
-              (["G1", "G10", "G2", "G3", "G4", "G5", "G7", "G8"], ["G6", "G9"]))
+              (["G1", "G10", "G11", "G13", "G2", "G3", "G4", "G5", "G7", "G8"], ["G12", "G6", "G9"]))
         check("G1 today: latest per place; 2024 and 2024-05 tie, so Coast is disputed",
               axes["G1"][5], "disputed @ Coast + banned @ East + old only @ North + allowed @ South + allowed @ West")
         check("G2 today: a later across-Yemen state supersedes South and North and the undated place; East's later one stands",
@@ -112,6 +124,12 @@ def main():
         check("G10 today: both states at one date are a dispute", axes["G10"][5], "disputed @ Q")
         check("today's case cites the rows behind a disputed part",
               all(x in cases[0][4] for x in ("YE-A034", "YE-A035")), True)
+        check("G11 today: the `now` state drops its pair first, and the later source stands",
+              axes["G11"][5], "fee 3% @ North")
+        check("G12: a constant isn't placed where its state ended", (consts["G12"][3], "ended: licences suspended @ CBY-Aden's area" in consts["G12"][6]),
+              ("CBY-Sana'a's area", True))
+        check("G13 today: after 2018-10 is later than 2018-06; a state dated only before is never today",
+              axes["G13"][5], "SWIFT cut @ Coast + unknown @ Sana'a")
         check("the axis note gives each part's date", axes["G7"][7].startswith("as of across Yemen: 2026; Bank A's service: 2026-10-10"), True)
         check("G4 lists its proposed state, tagged", "licence and bond @ South (proposed)" in axes["G4"][4], True)
         names = [c[1] for c in cases]

@@ -39,6 +39,8 @@ FETCHED = {"inside Yemen", "outside Yemen", "attestation"}
 WHO = {"agent", "founder", "reader"}
 HOLDS = {"held", "provided for", "ended", "proposed"}
 KINDS = {"area", "authority", "service"}
+SEATS = re.compile(r"(?i)\baden\b|sana'?a|عدن|صنعاء")
+ALL_OF = re.compile(r"(?i)\b(all|every|throughout|across|nationwide|whole|entire)\b|كل|جميع|كافة|أنحاء|عموم")
 WHYS = {"variant", "source", "rule"}
 SOURCE = re.compile(r"^sharrwah-knowledge-map@[0-9a-f]{7,40}:evidence/yemen/(runs|blocked-evidence-founder|derived|attestations)/")
 LABEL_BAD = re.compile(r"[;|\[\]]| \+ | @ ")
@@ -195,6 +197,8 @@ def check_groups():
             err("places.tsv", p["place"], f"grouped with '{p['grouped'][:50]}', which isn't listed as a place grouped with itself")
         if p["why"] not in WHYS:
             err("places.tsv", p["place"], f"why '{p['why']}' is not one of {sorted(WHYS)}")
+        if p["why"] == "variant" and set(m.lower() for m in SEATS.findall(p["place"])) != set(m.lower() for m in SEATS.findall(p["grouped"])):
+            err("places.tsv", p["place"], "a variant neither adds nor drops a seat: grouping on a seat needs a source")
         if p["why"] == "source":
             if not ids(p["basis"]):
                 err("places.tsv", p["place"], "grouped on a source, but basis cites none")
@@ -208,8 +212,8 @@ def check_groups():
             err("places.tsv", c["place"][:60], f"a place pass 1 gives ({c['condition_id']}) that places.tsv doesn't list")
     global place_kind, place_of
     place_kind = dict(kind)
-    place_of = {c["condition_id"]: (B.NOT_STATED if c["place"] == B.NOT_STATED else
-                                    None if c["place"] == B.ACROSS else grouped.get(c["place"])) for c in conds}
+    place_of = {c["condition_id"]: (B.NOT_STATED if c["place"] in (B.NOT_STATED, B.ACROSS) else grouped.get(c["place"]))
+                for c in conds}
     return groups, member, {v for v in grouped.values()} | {B.NOT_STATED}
 
 place_kind, place_of = {}, {}
@@ -239,15 +243,15 @@ def check_states(states, fname, member, place_set, whole=True, span=None):
         elif LABEL_BAD.search(s["label"]):
             err(fname, cid, "label contains ';', '|', '[', ']', ' + ' or ' @ ', which the axes and cases files use as separators")
         if s["place"] == B.ACROSS:
-            said = re.findall(r'"([^"]+)"|\u201c([^\u201d]+)\u201d|\u00ab([^\u00bb]+)\u00bb', s["note"])
+            said = [w for m in re.findall(r'"([^"]+)"|\u201c([^\u201d]+)\u201d|\u00ab([^\u00bb]+)\u00bb', s["note"]) for w in m if w]
             quotes = [variants(cits_by_id[x]["quote"])[2][1] for x in ids(cond[cid]["cite_ids"]) if x in cits_by_id]
-            if not any(variants(w)[2][1] in q for m in said for w in m if w for q in quotes):
-                err(fname, cid, f"'{B.ACROSS}' quotes in note, in double quotes, the words of its citations that say the state holds in all of Yemen")
+            if not any(variants(w)[2][1] in q and ALL_OF.search(w) for w in said for q in quotes):
+                err(fname, cid, f"'{B.ACROSS}' quotes in note, in double quotes, its citations' words saying the state holds in all of Yemen (all, throughout, كل, جميع…)")
+            if place_kind.get(place_of.get(cid)) in ("authority", "service"):
+                err(fname, cid, f"a rule an authority sets, or what is said of a party's service, is never '{B.ACROSS}'")
         elif s["place"] not in place_set:
             err(fname, cid, f"place '{s['place'][:50]}' is neither a grouped place in places.tsv nor '{B.ACROSS}'")
-        elif place_of.get(cid) is None and s["place"] != B.NOT_STATED:
-            err(fname, cid, f"pass 1 placed this row '{B.ACROSS}': it is '{B.ACROSS}' or '{B.NOT_STATED}'")
-        elif place_of.get(cid) is not None and s["place"] != place_of.get(cid) and place_kind.get(s["place"]) not in ("authority", "service"):
+        elif s["place"] != place_of.get(cid) and place_kind.get(s["place"]) not in ("authority", "service"):
             err(fname, cid, f"place '{s['place'][:50]}' is neither the row's place as places.tsv groups it "
                             f"('{(place_of.get(cid) or '')[:40]}') nor an authority's area or a party's service")
         if s["holds"] not in HOLDS:

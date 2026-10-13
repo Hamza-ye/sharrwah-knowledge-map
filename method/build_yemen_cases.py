@@ -33,8 +33,10 @@ def ids(s):
     return [x for x in re.split(r"[,\s;]+", s or "") if x]
 
 def when(s):
-    """A held_at as (year[, month[, day]]), ignoring any time of day; anything that isn't a date is undated (None)."""
-    m = re.match(r"^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?(?:[ T]\d{1,2}:\d{2}(?::\d{2})?)?$", (s or "").strip())
+    """A held_at as (year[, month[, day]]), ignoring any time of day; `after <date>` counts as that date;
+    anything else that isn't a date is undated (None)."""
+    s = re.sub(r"^after\s+", "", (s or "").strip(), flags=re.I)
+    m = re.match(r"^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?(?:[ T]\d{1,2}:\d{2}(?::\d{2})?)?$", s)
     if not m:
         return None
     w = tuple(int(x) for x in m.groups() if x)
@@ -67,11 +69,18 @@ def beats(a, b):
         return later(a["when"], b["when"])
     return bool(a["when"]) and not b["when"]
 
+def tie(a, b):
+    """Two rows are dated the same: both undated, or neither later at the coarser precision."""
+    if not a["when"] or not b["when"]:
+        return not a["when"] and not b["when"]
+    return not later(a["when"], b["when"]) and not later(b["when"], a["when"])
+
 def pick(rs):
-    """The latest of the rows that held or ended, after each source's `now` state replaces its others."""
-    top = latest([r for r in rs if r["holds"] in ("held", "ended")])
-    nows = [r for r in top if r["now"]]
-    return [r for r in top if r["now"] or not any(n["sources"] & r["sources"] for n in nows)]
+    """The latest of the rows that held or ended. First, a source's `now` state replaces that source's other states
+    dated the same; and a state dated only `before` a date is never today's."""
+    rs = [r for r in rs if r["holds"] in ("held", "ended") and not r["before"]]
+    nows = [r for r in rs if r["now"]]
+    return latest([r for r in rs if r["now"] or not any(n["sources"] & r["sources"] and tie(n, r) for n in nows)])
 
 def settle(own, across, place):
     """The part a place takes: (value, rows it rests on, labels that hold now there)."""
@@ -102,6 +111,7 @@ def build(study):
         by_group[s["group_id"]].append({
             "id": s["condition_id"], "label": s["label"], "place": s["place"], "full": full(s["label"], s["place"]),
             "holds": s["holds"], "now": s["now"] == "yes", "when": when(c["held_at"]), "at": c["held_at"],
+            "before": bool(re.match(r"^before\b", c["held_at"].strip(), re.I)),
             "cites": cites, "sources": frozenset(source[x] for x in cites if x in source)})
     axes, consts = [], []
     for g in groups:
@@ -114,10 +124,13 @@ def build(study):
     out = {"axes.tsv": [], "constants.tsv": [], "cases.tsv": []}
     for n, (g, rs) in enumerate(consts, start=1):
         shown = [r for r in rs if r["holds"] != "proposed"]
-        held = [r for r in shown if r["holds"] == "held"]
-        others = [f"{r['holds']}: {r['full']} [{', '.join(r['cites'])}]" for r in rs if r["holds"] != "held"]
+        # a place is listed where its latest held-or-ended state (as today takes it) is held
+        holding = [p for p in place_order({r["place"] for r in rs})
+                   if any(r["holds"] == "held" for r in pick([r for r in rs if r["place"] == p]))]
+        others = [f"{r['holds']}: {r['full']} [{', '.join(r['cites'])}]" for r in rs
+                  if r["holds"] != "held" or r["place"] not in holding]
         out["constants.tsv"].append([f"YK-{n:02d}", g["condition"], shown[0]["label"] if shown else "proposed",
-                                     "; ".join(place_order({r["place"] for r in held})) or "none held",
+                                     "; ".join(holding) or "none held",
                                      ", ".join(r["id"] for r in rs), cite(rs), "; ".join(uniq(others))])
     info = OrderedDict()
     for n, (g, rs) in enumerate(axes, start=1):

@@ -39,7 +39,7 @@ def main(study):
                 places.append(r)
                 listed.add(r[0])
                 added += 1
-    grouped = {r[0]: r[1] for r in places}
+    grouped = {r[0]: r[1] for r in places if r[0] != "across Yemen"}   # a state's across Yemen is never regrouped
     states, seen = [], set()
     for path in sorted(glob.glob(os.path.join(study, "pass2", "states-*.tsv"))):
         h, rows = read(path)

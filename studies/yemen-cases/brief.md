@@ -93,7 +93,7 @@ Read `conditions.tsv`, `pass2/wordings.tsv` and the six `pass1/notes-<part>.md`.
    - **`rule`:** "Yemen", "the Republic" and their variants, and pass 1's `across Yemen`, are `place not stated`. A rule an authority sets takes that authority's area instead (step 2b).
 
    Groupings chain, with two limits:
-   - **Seat or side.** A body or area named without its seat or side, such as a central bank or a tax authority, groups only on a source that gives its seat or side.
+   - **Seat or side.** A body or area named without its seat or side, such as a central bank or a tax authority, groups only on a source that gives its seat or side. Spellings of one seatless name group as `variant`, and stay seatless.
    - **One area.** A name that sources use for different areas never groups or chains, and stays its own place.
 
    A rule set by a body whose seat or side no source gives, such as a law of the unified Republic, takes `<body>'s area` and joins neither side.
@@ -110,7 +110,7 @@ For every row of its groups, an agent writes one line of `pass2/states-<k>.tsv`,
 
 **`place`:** the first that applies:
 - a rule an authority sets: that authority's area, whatever area its text names;
-- what a source says of a named party's own service: that party's service;
+- what a source says of one named party's own service: that party's service. A row about several parties' services keeps its grouped place, and its label names the parties;
 - `across Yemen`: a state that no authority sets and no party says of its own service, whose source says it holds in all of Yemen. Quote those words in `note`;
 - otherwise, the row's place as `places.tsv` groups it.
 
@@ -138,7 +138,7 @@ The coordinator runs `python3 -I method/join_pass2.py studies/yemen-cases` after
    - Any other condition is a constant. It takes its one label, with each place where it is `held`. Its `note` lists its other rows.
 2. **State labels** carry ` @ <place>` when they hold for a place.
 3. **Dates.**
-   - A `held_at` that isn't a date counts as undated. A time of day is ignored, so states on one day tie.
+   - A `held_at` that isn't a date counts as undated. A time of day is ignored, so states on one day tie. `after <date>` counts as that date. A state dated only `before <date>` is never today.
    - No source attests a state after 10 October 2026, when the evidence was captured, so a later date counts as that day.
 4. **Today.** For each axis, `today` joins the latest-dated `held` state of each place with ` + `. `place not stated` counts as one more place.
    - **Overlap.** Parts may overlap: an authority's area, a party's service and a named area can cover the same ground. A part for one place says nothing about another.
@@ -166,7 +166,7 @@ The coordinator runs `python3 -I method/join_pass2.py studies/yemen-cases` after
 
 ### Step 2c: unknowns and notes (the step 2a agent)
 
-Before the build, group variants among the places step 2b added (`pass2/places-<k>.tsv`). After it, write `unknowns.tsv`, as below, and complete `notes.md`.
+Before the build, group the places step 2b added (`pass2/places-<k>.tsv`) as variants among themselves or of any listed place. After it, write `unknowns.tsv`, as below, and complete `notes.md`.
 
 ## Inputs
 
