@@ -89,7 +89,9 @@ Agents started earlier keep their effort.
     - A2 also takes the arrangements a platform leaves unanswered: who settles Salla Payments funds, and BigCommerce's payouts beyond BitPay;
     - B matches against another platform's statement;
     - B may rest an answer on its own translation, marked as its own.
-- **A2 started** on 13 October 2026 at `medium` effort, for Salla, WooCommerce, Zid and BigCommerce. Shopify has no gap.
+- **A2 is done** for Salla, WooCommerce, Zid and BigCommerce, at `medium` effort. Shopify had no gap. The four platforms added 72 statements in all.
+  - **A miss.** The founder pointed at Salla's help articles on payout settlement. One of them ("Salla Payments Kuwait payouts settlement") is held, but neither phase A nor A2 read it. Salla's A2 is re-running at `high`, with a sweep of every held help article in both languages that uses Salla's own words for the subject. This follows the effort policy's re-run rule.
+  - **Captured:** the live pages A2 cites (run `20261013T003518Z-s01-a2-sources`), with BigCommerce's unread Help Center pages tried in a browser.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
   - B, A2, capture and kinds again, B's second pass, C;
@@ -120,10 +122,8 @@ Agents started earlier keep their effort.
 - at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript.
 
 **Agents running when last checked (12 October 2026, 23:58 UTC):**
-- **Pilot A2:** one agent per platform on `studies/subjects/S-01/briefs/A2-close-gaps.md`, adding to `studies/subjects/S-01/<platform>/` and writing its `a2.tsv`. Agents: Salla `a92dbea8578aa9b2b`, WooCommerce `ab2f2d0581429efb0`, Zid `a5878c46f612c28d8`, BigCommerce `a3036ef0ce778c6b2`. Phase B's agent `a9e10fcc19233f104` is resumed for the second pass after A2.
-- **Stage 1 pass 1:** part E, restoring trimmed quotes and reading items 263–280. Parts A to D and F are done.
-  - Agent: E `aa722ff96ec8f64a4`.
-  - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
+- **Pilot A2, Salla's re-run:** agent `ad85e03ee6e56e170` (`high`). Phase B's agent `a9e10fcc19233f104` is resumed for the second pass after it.
+- **Stage 1 pass 2, step 2a:** one agent (`a4a6021a9605c1efe`, `max`), writing `groups.tsv`, `places.tsv` and `notes.md` in `studies/yemen-cases/`. It is resumed later for step 2c.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
 
