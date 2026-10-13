@@ -71,3 +71,15 @@ These go back to the platform for phase A2: bigcommerce 6, salla 3, zid 1, shopi
     - S01-SA-083 (no responsibility for late performance by payment gateways or banks): S01-VP-18;
     - S01-BC-014 and S01-BC-017 (conversion fee and rate outside BigCommerce's scope): S01-VP-19 and S01-VP-23.
 11. **Statements placed as "reason".** S01-SH-071, S01-SH-079, S01-WC-062, S01-WC-076 and S01-ZD-067 give no time or condition of their own. Each is in the row of the statement it accompanies, except S01-WC-062, which has its own row.
+
+# Second pass, after phases A2 and A3
+
+Read, in addition to the first pass: each platform's `a2.tsv` and `absence-audit.tsv` (without its `note` column), the statements, terms and gaps that phases A2 and A3 added, and the brief as it now reads. No variation point was added, split or merged.
+
+Before this pass there were 531 rows: 491 answers, 2 `absent`, 28 `gap` and 10 `not covered`.
+
+Format changes applied to every row:
+- `scope`: when the statements of a row give different scopes, each scope is now followed by its `stmt_ids`, and the scopes are `;`-separated (rule 5). A statement with no scope still adds nothing.
+
+## What changed, by variation point
+
