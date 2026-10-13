@@ -1,0 +1,22 @@
+[
+{
+"n": 1,
+"url": "https://help.zid.sa/zidpay-digitalproducts/",
+"dir": "items/001-help.zid.sa",
+"fetched_at": "2026-10-13T01:50:32Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://help.zid.sa/zidpay-digitalproducts/",
+"content_type": "text/html; charset=UTF-8",
+"cited_in": "S01-ZD-C386 S01-ZD-C387 S01-ZD-C388",
+"note": "",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "55028046d42bfb658045a0cff676f8d6bb278967e7be346bc1fd4e0642a667ef",
+"bytes": 154478,
+"date_hint": "2023-07-15",
+"date_source": "meta:published",
+"age_class": "2023-2024",
+"text_file": "text.txt"
+}
+]
