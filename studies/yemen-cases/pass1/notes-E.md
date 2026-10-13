@@ -1,20 +1,20 @@
 # Pass 1, part E: notes
 
-**Part E** is the cited-sources run, `evidence/yemen/runs/20261010T050304Z-cited-sources/`, items whose `n` in its `manifest.tsv` is 132 to 262. Its `README.md` says it was fetched from a container outside Yemen on 10 October 2026, so every citation here has `fetched_from` = `outside Yemen`. Each item was read from the file named in its `text_file` column.
+**Part E** is the cited-sources run, `evidence/yemen/runs/20261010T050304Z-cited-sources/`, items whose `n` in its `manifest.tsv` is 132 to 280. Its `README.md` says it was fetched from a container outside Yemen on 10 October 2026, so every citation here has `fetched_from` = `outside Yemen`. Each item was read from the file named in its `text_file` column and, where the reading log says so, from its raw HTML.
 
 **Commit** in every `source`: `9d0de523f1852ebf7716f0da01b6b619edc5e8fc`.
 
 **Resumed work.** An earlier agent wrote YQ-E001 to YQ-E009 and YE-E001 to YE-E014 (items 133 to 137) and was interrupted before writing these notes. Those rows were kept as written; the rows from item 138 on, and these notes, were written after the restart.
 
-**Numbering of the manifest.** The `n` column has no rows 29, 30, 94 to 107, 186 or 244, and runs to 280. So part E holds 129 rows (`n` 132 to 262, without 186 and 244), and items 263 to 280 are in neither part D (1 to 131) nor part E. They were not read here.
+**Numbering of the manifest.** The `n` column has no rows 29, 30, 94 to 107, 186 or 244, and runs to 280. Part E first held items 132 to 262; on 13 October 2026 the coordinator added items 263 to 280, the run's last, so part E holds 147 rows (`n` 132 to 280, without 186 and 244). Items 263 to 280 gave conditions YQ-E848 to YQ-E897 and citations YE-E1203 to YE-E1334.
 
-**Counts.** Part E has 129 items. 112 were read: 95 gave conditions, and 17 gave none, because they state nothing about selling or paying in Yemen or repeat another item. 17 could not be read (listed below). The part gives 847 conditions (YQ-E001 to YQ-E847) and 1202 citations (YE-E001 to YE-E1202).
+**Counts.** Part E has 147 items. 128 were read: 110 gave conditions, and 18 gave none, because they state no condition of selling or paying in Yemen, or repeat another item. 19 could not be read (listed below). The part gives 897 conditions (YQ-E001 to YQ-E897) and 1334 citations (YE-E001 to YE-E1334).
 
 **Citations restored.** Part E's reading first gave 1,246 citations. The checker then took only three-digit numbers, so part E was cut to 995 citations, renumbered YE-E001 to YE-E995: quotes from one paragraph were joined, other secondary quotes were dropped, and states were cut back to what the kept quotes said. Now that the checker takes four-digit numbers, the 206 dropped quotes are back, as YE-E996 to YE-E1201, each cited again by the conditions it supported, and those 150 conditions have their states, dates and notes as before the cut. Each restored state was checked against its quotes: where it said more than they do, the extra words were dropped (for example "no automated clearing house", YQ-E231), and one quote was added to support a restored state (YE-E1202, item 208). The 45 quotes that had been joined into another quote of the same paragraph stay joined; the joined quote holds their words. The numbers YE-E001 to YE-E995 are unchanged.
 
 ## Identifications within the part
 
-Rows given the same `condition` wording because they name the same act or availability for the same role (135 wordings, each shared by two or more of 783 rows):
+Rows given the same `condition` wording because they name the same act or availability for the same role (135 wordings, each shared by two or more of 826 rows):
 
 - 4G mobile internet available (4 rows): YQ-E129, YQ-E130, YQ-E240, YQ-E827.
 - Access of banks in Yemen to international banking (8 rows): YQ-E246, YQ-E285, YQ-E313, YQ-E594, YQ-E662, YQ-E763, YQ-E812, YQ-E813.
@@ -28,7 +28,7 @@ Rows given the same `condition` wording because they name the same act or availa
 - Buyers' access to mobile phones (4 rows): YQ-E097, YQ-E235, YQ-E710, YQ-E820.
 - Buyers' access to the internet (9 rows): YQ-E121, YQ-E122, YQ-E236, YQ-E351, YQ-E534, YQ-E706, YQ-E707, YQ-E821, YQ-E826.
 - Buyers' use of digital payments at merchants (3 rows): YQ-E106, YQ-E226, YQ-E804.
-- Buyers' use of mobile wallets (10 rows): YQ-E098, YQ-E100, YQ-E166, YQ-E212 to YQ-E214, YQ-E223, YQ-E546, YQ-E762, YQ-E830.
+- Buyers' use of mobile wallets (11 rows): YQ-E098, YQ-E100, YQ-E166, YQ-E212 to YQ-E214, YQ-E223, YQ-E546, YQ-E762, YQ-E830, YQ-E877.
 - Buying assets seized from banks (2 rows): YQ-E388, YQ-E503.
 - Buying from foreign online stores for delivery in Yemen (3 rows): YQ-E026, YQ-E083, YQ-E568.
 - Cancelling a money transfer already sent (2 rows): YQ-E046, YQ-E065.
@@ -38,27 +38,27 @@ Rows given the same `condition` wording because they name the same act or availa
 - Cost of internet access (3 rows): YQ-E125, YQ-E233, YQ-E237.
 - Cost of sending money to Yemen from abroad (6 rows): YQ-E595, YQ-E596, YQ-E764, YQ-E815 to YQ-E817.
 - Currencies a mobile wallet holds (4 rows): YQ-E042, YQ-E061, YQ-E556, YQ-E672.
-- Currencies used in everyday dealings (2 rows): YQ-E075, YQ-E405.
+- Currencies used in everyday dealings (3 rows): YQ-E075, YQ-E405, YQ-E869.
 - Currency circulating outside the banking system (5 rows): YQ-E292, YQ-E293, YQ-E407, YQ-E606, YQ-E761.
-- Currency domestic transactions must use (5 rows): YQ-E393, YQ-E426, YQ-E480, YQ-E631, YQ-E730.
+- Currency domestic transactions must use (8 rows): YQ-E393, YQ-E426, YQ-E480, YQ-E631, YQ-E730, YQ-E848, YQ-E867, YQ-E889.
 - Currency in which domestic money transfers are priced (2 rows): YQ-E329, YQ-E776.
 - Currency in which online platforms price goods (2 rows): YQ-E140, YQ-E536.
-- Customs duties on goods brought into Yemen (3 rows): YQ-E089, YQ-E482, YQ-E828.
+- Customs duties on goods brought into Yemen (4 rows): YQ-E089, YQ-E482, YQ-E828, YQ-E875.
 - Data banks must give the central bank (5 rows): YQ-E303, YQ-E304, YQ-E308 to YQ-E310.
-- Delivery charges for online orders (3 rows): YQ-E032, YQ-E569, YQ-E573.
-- Delivery of goods to buyers (4 rows): YQ-E135, YQ-E145, YQ-E537, YQ-E562.
+- Delivery charges for online orders (4 rows): YQ-E032, YQ-E569, YQ-E573, YQ-E852.
+- Delivery of goods to buyers (6 rows): YQ-E135, YQ-E145, YQ-E537, YQ-E562, YQ-E850, YQ-E851.
 - Digital payments across the lines of control (3 rows): YQ-E092, YQ-E384, YQ-E561.
 - Due diligence foreign institutions apply to Yemen (2 rows): YQ-E518, YQ-E814.
 - Electricity supply (16 rows): YQ-E126, YQ-E239, YQ-E340, YQ-E366, YQ-E378, YQ-E379, YQ-E397 to YQ-E399, YQ-E436, YQ-E451, YQ-E454, YQ-E492, YQ-E494, YQ-E495, YQ-E819.
 - Electronic payments between different financial institutions (3 rows): YQ-E382, YQ-E555, YQ-E663.
 - Exchange rate used to assess customs duties (3 rows): YQ-E347, YQ-E377, YQ-E485.
 - Fees charged on goods moved by road (9 rows): YQ-E342, YQ-E348, YQ-E376, YQ-E400, YQ-E484, YQ-E486, YQ-E497, YQ-E508, YQ-E653.
-- Fees for money transfers between the two currency zones (4 rows): YQ-E330, YQ-E613, YQ-E811, YQ-E832.
+- Fees for money transfers between the two currency zones (5 rows): YQ-E330, YQ-E613, YQ-E811, YQ-E832, YQ-E872.
 - Foreign currency available to importers (19 rows): YQ-E251, YQ-E263, YQ-E266, YQ-E270, YQ-E271, YQ-E275, YQ-E290, YQ-E298, YQ-E301, YQ-E307, YQ-E328, YQ-E345, YQ-E394, YQ-E421, YQ-E448, YQ-E478, YQ-E611, YQ-E690, YQ-E727.
 - Fuel supply (14 rows): YQ-E136, YQ-E364, YQ-E365, YQ-E371, YQ-E386, YQ-E387, YQ-E401, YQ-E414, YQ-E415, YQ-E461, YQ-E462, YQ-E471, YQ-E475, YQ-E496.
-- Goods exempt from the general sales tax (2 rows): YQ-E544, YQ-E841.
+- Goods exempt from the general sales tax (3 rows): YQ-E544, YQ-E841, YQ-E863.
 - How businesses pay employees (3 rows): YQ-E104, YQ-E675, YQ-E681.
-- How buyers pay for online orders (13 rows): YQ-E025, YQ-E031, YQ-E084, YQ-E102, YQ-E144, YQ-E533, YQ-E572, YQ-E679, YQ-E709, YQ-E718, YQ-E752, YQ-E833, YQ-E847.
+- How buyers pay for online orders (14 rows): YQ-E025, YQ-E031, YQ-E084, YQ-E102, YQ-E144, YQ-E533, YQ-E572, YQ-E679, YQ-E709, YQ-E718, YQ-E752, YQ-E833, YQ-E847, YQ-E849.
 - How importers pay for imports (13 rows): YQ-E249, YQ-E250, YQ-E256, YQ-E267, YQ-E268, YQ-E277, YQ-E279, YQ-E282, YQ-E291, YQ-E423, YQ-E424, YQ-E629, YQ-E773.
 - How public-sector salaries are paid (7 rows): YQ-E197, YQ-E198, YQ-E242, YQ-E385, YQ-E416, YQ-E491, YQ-E640.
 - Identity verification of mobile-wallet users (2 rows): YQ-E016, YQ-E017.
@@ -68,10 +68,10 @@ Rows given the same `condition` wording because they name the same act or availa
 - Instant transfers between banks (3 rows): YQ-E227, YQ-E657, YQ-E659.
 - Integration code for merchants to accept Yemeni wallet payments (2 rows): YQ-E009, YQ-E077.
 - Interbank switch for cards and payments (7 rows): YQ-E247, YQ-E248, YQ-E550, YQ-E656, YQ-E658, YQ-E712, YQ-E798.
-- International payment services available for payments from or to Yemen (8 rows): YQ-E542, YQ-E543, YQ-E579 to YQ-E581, YQ-E728, YQ-E729, YQ-E846.
+- International payment services available for payments from or to Yemen (9 rows): YQ-E542, YQ-E543, YQ-E579 to YQ-E581, YQ-E728, YQ-E729, YQ-E846, YQ-E897.
 - Internet and telecoms providers available (3 rows): YQ-E127, YQ-E128, YQ-E745.
 - Internet speed available (2 rows): YQ-E123, YQ-E124.
-- Legal framework for electronic payment service providers (3 rows): YQ-E167, YQ-E687, YQ-E808.
+- Legal framework for electronic payment service providers (4 rows): YQ-E167, YQ-E687, YQ-E808, YQ-E881.
 - Legal protection for merchants and consumers in e-commerce (5 rows): YQ-E087, YQ-E120, YQ-E538 to YQ-E540.
 - Limit on the e-money one institution may issue (4 rows): YQ-E117, YQ-E118, YQ-E190, YQ-E191.
 - Limits on exchanging foreign currency for rials (3 rows): YQ-E404, YQ-E408, YQ-E601.
@@ -79,15 +79,15 @@ Rows given the same `condition` wording because they name the same act or availa
 - Loading money into a mobile wallet (7 rows): YQ-E014, YQ-E022, YQ-E036, YQ-E040, YQ-E056, YQ-E058, YQ-E737.
 - Main means of payment (10 rows): YQ-E004, YQ-E093, YQ-E101, YQ-E148, YQ-E244, YQ-E406, YQ-E552, YQ-E575, YQ-E664, YQ-E708.
 - Merchants accepting mobile-wallet payment (2 rows): YQ-E119, YQ-E187.
-- Mobile-wallet agents and points of sale (5 rows): YQ-E215, YQ-E669, YQ-E686, YQ-E692, YQ-E744.
-- Mobile-wallet services available to buyers (16 rows): YQ-E006, YQ-E010, YQ-E018, YQ-E051, YQ-E070, YQ-E557, YQ-E577, YQ-E668, YQ-E682, YQ-E691, YQ-E733, YQ-E734, YQ-E750, YQ-E805 to YQ-E807.
+- Mobile-wallet agents and points of sale (6 rows): YQ-E215, YQ-E669, YQ-E686, YQ-E692, YQ-E744, YQ-E878.
+- Mobile-wallet services available to buyers (17 rows): YQ-E006, YQ-E010, YQ-E018, YQ-E051, YQ-E070, YQ-E557, YQ-E577, YQ-E668, YQ-E682, YQ-E691, YQ-E733, YQ-E734, YQ-E750, YQ-E805 to YQ-E807, YQ-E876.
 - Mobile-wallet services available to merchants (2 rows): YQ-E034, YQ-E680.
-- Monetary authority over banks and payments (8 rows): YQ-E109, YQ-E177, YQ-E253, YQ-E592, YQ-E630, YQ-E646, YQ-E724, YQ-E755.
-- Money exchange outlets available (3 rows): YQ-E171, YQ-E172, YQ-E770.
+- Monetary authority over banks and payments (9 rows): YQ-E109, YQ-E177, YQ-E253, YQ-E592, YQ-E630, YQ-E646, YQ-E724, YQ-E755, YQ-E874.
+- Money exchange outlets available (4 rows): YQ-E171, YQ-E172, YQ-E770, YQ-E895.
 - Moving money between a mobile wallet and bank accounts (7 rows): YQ-E035, YQ-E047, YQ-E066, YQ-E217, YQ-E673, YQ-E683, YQ-E742.
-- Moving money between a mobile wallet and money-transfer networks (4 rows): YQ-E011, YQ-E019, YQ-E068, YQ-E743.
+- Moving money between a mobile wallet and money-transfer networks (5 rows): YQ-E011, YQ-E019, YQ-E068, YQ-E743, YQ-E879.
 - Moving money between different mobile wallets (9 rows): YQ-E024, YQ-E048, YQ-E067, YQ-E216, YQ-E548, YQ-E660, YQ-E674, YQ-E684, YQ-E714.
-- Networks for domestic money transfers (12 rows): YQ-E441, YQ-E442, YQ-E523, YQ-E524, YQ-E615, YQ-E616, YQ-E636, YQ-E639, YQ-E652, YQ-E748, YQ-E795, YQ-E796.
+- Networks for domestic money transfers (15 rows): YQ-E441, YQ-E442, YQ-E523, YQ-E524, YQ-E615, YQ-E616, YQ-E636, YQ-E639, YQ-E652, YQ-E748, YQ-E795, YQ-E796, YQ-E890 to YQ-E892.
 - Online payment gateways available to merchants (6 rows): YQ-E076, YQ-E582, YQ-E676, YQ-E711, YQ-E717, YQ-E829.
 - Paying customs and public revenue electronically (2 rows): YQ-E196, YQ-E241.
 - Paying for foreign digital services and game credit (2 rows): YQ-E052, YQ-E071.
@@ -100,14 +100,14 @@ Rows given the same `condition` wording because they name the same act or availa
 - Ports importers use (2 rows): YQ-E455, YQ-E483.
 - Prices on delivery apps compared with shop prices (2 rows): YQ-E028, YQ-E029.
 - Providers licensed for mobile e-money services (6 rows): YQ-E162, YQ-E163, YQ-E186, YQ-E195, YQ-E228, YQ-E229.
-- Rates at which foreign currency is exchanged for rials (62 rows): YQ-E074, YQ-E079, YQ-E080, YQ-E139, YQ-E252, YQ-E260, YQ-E261, YQ-E264, YQ-E265, YQ-E276, YQ-E278, YQ-E321 to YQ-E323, YQ-E333, YQ-E343, YQ-E344, YQ-E362, YQ-E390 to YQ-E392, YQ-E396, YQ-E409, YQ-E418 to YQ-E420, YQ-E427, YQ-E446, YQ-E447, YQ-E476, YQ-E477, YQ-E481, YQ-E525, YQ-E571, YQ-E574, YQ-E584, YQ-E585, YQ-E593, YQ-E599, YQ-E600, YQ-E618, YQ-E619, YQ-E624 to YQ-E626, YQ-E642 to YQ-E645, YQ-E704, YQ-E726, YQ-E749, YQ-E756 to YQ-E759, YQ-E772, YQ-E783 to YQ-E786, YQ-E844.
-- Receiving humanitarian cash through mobile wallets (2 rows): YQ-E245, YQ-E716.
+- Rates at which foreign currency is exchanged for rials (66 rows): YQ-E074, YQ-E079, YQ-E080, YQ-E139, YQ-E252, YQ-E260, YQ-E261, YQ-E264, YQ-E265, YQ-E276, YQ-E278, YQ-E321 to YQ-E323, YQ-E333, YQ-E343, YQ-E344, YQ-E362, YQ-E390 to YQ-E392, YQ-E396, YQ-E409, YQ-E418 to YQ-E420, YQ-E427, YQ-E446, YQ-E447, YQ-E476, YQ-E477, YQ-E481, YQ-E525, YQ-E571, YQ-E574, YQ-E584, YQ-E585, YQ-E593, YQ-E599, YQ-E600, YQ-E618, YQ-E619, YQ-E624 to YQ-E626, YQ-E642 to YQ-E645, YQ-E704, YQ-E726, YQ-E749, YQ-E756 to YQ-E759, YQ-E772, YQ-E783 to YQ-E786, YQ-E844, YQ-E870, YQ-E871, YQ-E882, YQ-E883.
+- Receiving humanitarian cash through mobile wallets (3 rows): YQ-E245, YQ-E716, YQ-E880.
 - Receiving international money transfers (5 rows): YQ-E637, YQ-E774, YQ-E775, YQ-E803, YQ-E810.
 - Receiving international money transfers into a mobile wallet (3 rows): YQ-E043, YQ-E055, YQ-E062.
 - Receiving money from abroad by bank wire (2 rows): YQ-E312, YQ-E800.
 - Receiving remittances in foreign currency (3 rows): YQ-E334, YQ-E790, YQ-E791.
-- Registration for the general sales tax (2 rows): YQ-E694, YQ-E839.
-- Sales tax returns (2 rows): YQ-E697, YQ-E842.
+- Registration for the general sales tax (3 rows): YQ-E694, YQ-E839, YQ-E857.
+- Sales tax returns (3 rows): YQ-E697, YQ-E842, YQ-E859.
 - Satellite internet (Starlink) available to users (7 rows): YQ-E133, YQ-E134, YQ-E349, YQ-E350, YQ-E468, YQ-E469, YQ-E818.
 - Security of road transport of goods (5 rows): YQ-E372, YQ-E403, YQ-E453, YQ-E493, YQ-E498.
 - Seizure of merchants' businesses and assets (2 rows): YQ-E389, YQ-E507.
@@ -115,12 +115,12 @@ Rows given the same `condition` wording because they name the same act or availa
 - Settlement of payments between banks and e-wallets (2 rows): YQ-E194, YQ-E380.
 - Shipping costs for imports (4 rows): YQ-E367, YQ-E466, YQ-E473, YQ-E654.
 - Shipping goods into Yemen (2 rows): YQ-E361, YQ-E567.
-- Supervision of money exchange outlets (8 rows): YQ-E395, YQ-E422, YQ-E479, YQ-E612, YQ-E617, YQ-E689, YQ-E765, YQ-E777.
-- Supply of usable rial banknotes (10 rows): YQ-E182, YQ-E288, YQ-E289, YQ-E602 to YQ-E604, YQ-E622, YQ-E647, YQ-E665, YQ-E719.
-- Taxes merchants must pay (12 rows): YQ-E353, YQ-E360, YQ-E363, YQ-E460, YQ-E463, YQ-E464, YQ-E506, YQ-E541, YQ-E545, YQ-E649, YQ-E693, YQ-E838.
+- Supervision of money exchange outlets (10 rows): YQ-E395, YQ-E422, YQ-E479, YQ-E612, YQ-E617, YQ-E689, YQ-E765, YQ-E777, YQ-E866, YQ-E893.
+- Supply of usable rial banknotes (11 rows): YQ-E182, YQ-E288, YQ-E289, YQ-E602 to YQ-E604, YQ-E622, YQ-E647, YQ-E665, YQ-E719, YQ-E886.
+- Taxes merchants must pay (13 rows): YQ-E353, YQ-E360, YQ-E363, YQ-E460, YQ-E463, YQ-E464, YQ-E506, YQ-E541, YQ-E545, YQ-E649, YQ-E693, YQ-E838, YQ-E855.
 - Trade between the two currency zones (2 rows): YQ-E262, YQ-E627.
 - Trading foreign currency (4 rows): YQ-E325, YQ-E346, YQ-E519, YQ-E845.
-- Transactions involving Ansarallah authorized by general license (3 rows): YQ-E008, YQ-E514, YQ-E705.
+- Transactions involving Ansarallah authorized by general license (4 rows): YQ-E008, YQ-E514, YQ-E705, YQ-E854.
 - Transfers between users of the same mobile wallet (2 rows): YQ-E044, YQ-E063.
 - US sanctions bearing on commerce in Yemen (3 rows): YQ-E088, YQ-E824, YQ-E825.
 - Using a mobile wallet without internet access (5 rows): YQ-E054, YQ-E073, YQ-E238, YQ-E670, YQ-E741.
@@ -128,7 +128,7 @@ Rows given the same `condition` wording because they name the same act or availa
 - What a buyer must provide to open a mobile-wallet account (10 rows): YQ-E013, YQ-E021, YQ-E060, YQ-E202, YQ-E205, YQ-E219, YQ-E547, YQ-E553, YQ-E735, YQ-E751.
 - What a customer must give for a money transfer or exchange (3 rows): YQ-E520, YQ-E610, YQ-E787.
 - What a recipient must present to collect a money transfer in cash (2 rows): YQ-E039, YQ-E220.
-- What a tax invoice must show (2 rows): YQ-E698, YQ-E840.
+- What a tax invoice must show (3 rows): YQ-E698, YQ-E840, YQ-E858.
 - Where banks keep their headquarters (19 rows): YQ-E112, YQ-E269, YQ-E299, YQ-E300, YQ-E305, YQ-E319, YQ-E320, YQ-E339, YQ-E356, YQ-E443, YQ-E445, YQ-E526, YQ-E528, YQ-E558, YQ-E633, YQ-E635, YQ-E747, YQ-E792, YQ-E801.
 - Where banks may operate (3 rows): YQ-E311, YQ-E444, YQ-E530.
 - Where buyers can register for a mobile wallet (3 rows): YQ-E038, YQ-E041, YQ-E206.
@@ -137,19 +137,19 @@ Rows given the same `condition` wording because they name the same act or availa
 - Whether banks and exchangers may deal in the e-rial (2 rows): YQ-E199, YQ-E204.
 - Whether fuel prices are regulated (11 rows): YQ-E373, YQ-E374, YQ-E402, YQ-E411, YQ-E429 to YQ-E432, YQ-E452, YQ-E489, YQ-E490.
 - Whether interest-based transactions are allowed (5 rows): YQ-E294, YQ-E337, YQ-E417, YQ-E450, YQ-E802.
-- Whether parties may deal with Ansarallah (Houthis) (7 rows): YQ-E007, YQ-E111, YQ-E295, YQ-E509 to YQ-E512.
+- Whether parties may deal with Ansarallah (Houthis) (8 rows): YQ-E007, YQ-E111, YQ-E295, YQ-E509 to YQ-E512, YQ-E853.
 - Which authority collects taxes and customs (2 rows): YQ-E487, YQ-E488.
-- Which banks financial institutions may deal with (7 rows): YQ-E354, YQ-E632, YQ-E634, YQ-E641, YQ-E722, YQ-E723, YQ-E793.
+- Which banks financial institutions may deal with (8 rows): YQ-E354, YQ-E632, YQ-E634, YQ-E641, YQ-E722, YQ-E723, YQ-E793, YQ-E865.
 - Which businesses may operate (2 rows): YQ-E375, YQ-E650.
-- Which e-wallet companies banks and exchangers may work with (2 rows): YQ-E440, YQ-E527.
+- Which e-wallet companies banks and exchangers may work with (3 rows): YQ-E440, YQ-E527, YQ-E888.
 - Which goods may be imported and sold (6 rows): YQ-E358, YQ-E359, YQ-E370, YQ-E438, YQ-E459, YQ-E655.
-- Which rial banknotes are used for payment (28 rows): YQ-E099, YQ-E180, YQ-E181, YQ-E183 to YQ-E185, YQ-E201, YQ-E258, YQ-E259, YQ-E287, YQ-E306, YQ-E314 to YQ-E316, YQ-E318, YQ-E324, YQ-E326, YQ-E434, YQ-E435, YQ-E551, YQ-E605, YQ-E614, YQ-E620, YQ-E621, YQ-E623, YQ-E648, YQ-E720, YQ-E769.
+- Which rial banknotes are used for payment (31 rows): YQ-E099, YQ-E180, YQ-E181, YQ-E183 to YQ-E185, YQ-E201, YQ-E258, YQ-E259, YQ-E287, YQ-E306, YQ-E314 to YQ-E316, YQ-E318, YQ-E324, YQ-E326, YQ-E434, YQ-E435, YQ-E551, YQ-E605, YQ-E614, YQ-E620, YQ-E621, YQ-E623, YQ-E648, YQ-E720, YQ-E769, YQ-E873, YQ-E884, YQ-E885.
 - Who delivers online orders to buyers (2 rows): YQ-E142, YQ-E143.
 - Who may provide e-money and mobile payment services (11 rows): YQ-E113 to YQ-E116, YQ-E151 to YQ-E153, YQ-E175, YQ-E189, YQ-E588, YQ-E809.
 - Who may take deposits (2 rows): YQ-E170, YQ-E211.
 - Who supplies fuel (3 rows): YQ-E341, YQ-E433, YQ-E651.
 - Withdrawing cash from a mobile wallet (9 rows): YQ-E015, YQ-E023, YQ-E037, YQ-E049, YQ-E069, YQ-E222, YQ-E678, YQ-E685, YQ-E738.
-- Withdrawing cash from bank accounts (10 rows): YQ-E161, YQ-E243, YQ-E286, YQ-E338, YQ-E355, YQ-E470, YQ-E591, YQ-E760, YQ-E781, YQ-E782.
+- Withdrawing cash from bank accounts (12 rows): YQ-E161, YQ-E243, YQ-E286, YQ-E338, YQ-E355, YQ-E470, YQ-E591, YQ-E760, YQ-E781, YQ-E782, YQ-E894, YQ-E896.
 - Yemen's standing with the FATF (3 rows): YQ-E284, YQ-E517, YQ-E778.
 
 ## Place groupings within the part
@@ -163,7 +163,7 @@ Not grouped: item 248 uses `IRG areas` and `HC areas` (YQ-E758, YQ-E759) and als
 
 ## Not readable
 
-17 items, each logged below with what the run holds for it:
+19 items, each logged below with what the run holds for it:
 
 - 132 `132-newdc.qtb-bank.com`: not fetched by the run (a live payment endpoint); no text file.
 - 145 `145-press.un.org`: blocked (HTTP 406; the browser failed too); no text file.
@@ -182,6 +182,8 @@ Not grouped: item 248 uses `IRG areas` and `HC areas` (YQ-E758, YQ-E759) and als
 - 243 `243-talabat-aden.com`: a script application; `text.txt` is empty and `raw.html` holds only a title and a meta description, which cannot be quoted once tags are removed.
 - 259 `259-yemenss.com`: gone; the domain shows a sale page.
 - 260 `260-yk-bank.com`: blocked (HTTP 403); its files hold only Cloudflare's block page.
+- 265 `265-yacpa.org`: gone (HTTP 404, and no archived copy); no text file, and `raw.html` is a "404 Not Found" page.
+- 266 `266-ye.opensooq.com`: gone (HTTP 410); `text.txt` holds only the site's "page not found" page and menus.
 
 ## Reading log
 
@@ -333,3 +335,4 @@ One line per item: `n`, folder, what was read, and the rows it gave.
 - 277 `277-yemeneco.org` (Yemen Eco, the central bank in Aden bans dealings with unlicensed e-payment entities and wallets, 26 June 2024, Arabic): read in full (`text.txt`; the related headlines were passed over). Condition YQ-E888; citations YE-E1311 to YE-E1314.
 - 278 `278-yemenfuture.net` (Yemen Future, the Ministry of Justice bans dealing in foreign currencies, 18 August 2025; the manifest calls it undated, but the page shows the date; Arabic): read in full (`text.txt`; the latest-news headlines were passed over). Condition YQ-E889; citations YE-E1315 to YE-E1318.
 - 279 `279-yeniyemen.net` (Yeni Yemen, from Al-Masdar Online, "The unified transfer network: what is it?", 9 July 2024; the manifest calls it undated, but the page shows the date; Arabic): read in full (`text.txt`; the author's forecasts, the aims he gives for the network and his account of the import trade are not recorded, and the site's other headlines were passed over). Conditions YQ-E890 to YQ-E896; citations YE-E1319 to YE-E1331.
+- 280 `280-zid.sa` (Zid, "Terms and Conditions for Zed Pay – Kuwait", live page): read in full (`text.txt`). Its other terms set rules for merchants using Zid Pay in Kuwait and do not mention Yemen. Condition YQ-E897; citations YE-E1332 to YE-E1334.
