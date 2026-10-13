@@ -36,7 +36,7 @@ YG-034	Currency in which government fees are charged	the currency of the fee	YQ-
 YG-035	Which currencies buyers and sellers use in everyday dealings	the rial, or foreign currencies such as the Saudi riyal and the US dollar	YQ-D046, YQ-E075, YQ-E869	Joins parts D and E.
 YG-036	Main foreign currency of exchange transactions	the currency most traded on the money market	YQ-D063, YQ-E405	Joins parts D and E.
 YG-037	Currency used in trade between areas held by different parties	the currency	YQ-D423	
-YG-038	Whether the electronic rial may be used for payment	available and for what, or warned against for banks, exchangers and businesses	YQ-D038, YQ-D039, YQ-D209, YQ-D381, YQ-E199, YQ-E204	Joins parts D and E: the e-rial's use where it is offered and the Aden central bank's warnings against dealing in it.
+YG-038	Whether the electronic rial may be used for payment	available and for what, or warned against for banks, exchangers and businesses	YQ-D038, YQ-D039, YQ-D209, YQ-D381, YQ-E187, YQ-E199, YQ-E204	Joins parts D and E: the e-rial's use where it is offered and the Aden central bank's warnings against dealing in it. YQ-E187 says e-rials were not widely accepted in 2019.
 YG-039	Whether electronic balances trade at par with cash	at par, or priced apart	YQ-D448	
 YG-040	Amount of currency circulating outside the banking system	the amount	YQ-E292, YQ-E293, YQ-E407, YQ-E606, YQ-E761	
 YG-041	Which banks parties may deal with	which banks are barred (the list each decision or designation names), for which parties, or that the bans were cancelled	YQ-A001, YQ-A015, YQ-A021, YQ-A033, YQ-A043, YQ-A045, YQ-B001, YQ-B002, YQ-B007, YQ-B011, YQ-C368, YQ-C369, YQ-C372, YQ-C381, YQ-D055, YQ-D083, YQ-D295, YQ-D460, YQ-D470, YQ-D494, YQ-D495, YQ-D536, YQ-D537, YQ-D538, YQ-D539, YQ-D548, YQ-D549, YQ-E274, YQ-E296, YQ-E336, YQ-E354, YQ-E443, YQ-E445, YQ-E530, YQ-E531, YQ-E586, YQ-E587, YQ-E632, YQ-E634, YQ-E641, YQ-E721, YQ-E722, YQ-E723, YQ-E725, YQ-E793, YQ-E794, YQ-E822, YQ-E823, YQ-E865	Joins parts A to E: the central banks' decisions in Sana'a and Aden to stop dealing with named banks, their cancellation in July 2024, and the US designations of Yemeni banks, which bar US persons from dealing with them. Part A's 'Banks a party may deal with' is kept whole; the barred parties are named in each state. YQ-E823 also names US-sanctioned exchange companies, and YQ-E274 also bars traders from the Aden central bank's auctions. Also the suspension and revocation of the six Sana'a-headquartered banks' licences in July 2024, the Sana'a central bank's suspension of 13 Aden banks (YQ-E530), and the agreement of 23 July 2024 cancelling both sides' measures (YQ-E587, YQ-E721, YQ-E794). Sources date the measures against the six banks to May, 3 July and 10 July 2024.
@@ -53,7 +53,7 @@ YG-051	Whether US sanctions allow trade with the Yemeni people	the stated scope 
 YG-052	Whether sending money to Yemen is lawful under US rules	allowed, and for which recipients	YQ-D306	
 YG-053	Whether US sanctions limit e-commerce in Yemen	a limit, or not	YQ-E088	
 YG-054	What financial institutions must do when serving customers to counter money laundering	the due-diligence duties	YQ-B064	
-YG-055	What financial institutions must do with a suspicious transaction	the reporting duty	YQ-B065	
+YG-055	What financial institutions must do with a suspicious transaction	the reporting duty	YQ-B065, YQ-C125	Also a wallet provider's terms on reporting suspected activity (YQ-C125).
 YG-056	Whether banks and exchange companies must screen customers against sanctions lists	required, which lists, and what to do on a match	YQ-D290, YQ-F118	Joins parts D and F: both rest on the Aden central bank's circular No. 4 of 2025.
 YG-057	Yemen's standing with the FATF	on the grey list or not	YQ-E284, YQ-E517, YQ-E778	
 YG-058	Due diligence foreign financial institutions apply to Yemen	risk-based, enhanced, or transactions ceased	YQ-E518, YQ-E814	
@@ -90,7 +90,7 @@ YG-088	Whether banks and money exchangers must have audited financial statements
 YG-089	Who sets interest rates on deposits	who sets them	YQ-D291	
 YG-090	Whether nonbank lenders are regulated	regulated or not	YQ-D311	
 YG-091	Which laws govern banking and money exchange	the laws	YQ-D322	
-YG-092	Whether buyers can use the apps of banks that moved their head offices to Aden	usable, or blocked	YQ-C385, YQ-C386	The same article gives both accounts.
+YG-092	Whether buyers can use a bank's or wallet's mobile app	working, stopped for technical reasons, or blocked	YQ-C384, YQ-C385, YQ-C386, YQ-C387	Part C: the Kuraimi apps' stoppages, and the blocking of the apps of banks that moved their head offices to Aden. The same article gives both accounts of January 2026 (blocked, YQ-C385; a technical fault, YQ-C386).
 YG-093	Whether a merchant can send and receive international commercial transfers through a bank	available or not	YQ-C399	
 YG-094	Whether a business can run its bank account through electronic services	available or not	YQ-C427	
 YG-095	Whether banks run one system across the government-held and Houthi-held areas	one system, or separate systems for each area	YQ-C452, YQ-C465	
@@ -118,12 +118,12 @@ YG-116	How exchange companies settle transfers between areas	the currency of set
 YG-117	How much may be sent in one money transfer through exchangers and agents	the ceiling per transfer, per customer or between governorates, or none	YQ-D360, YQ-E609, YQ-F122	Joins parts D, E and F.
 YG-118	Who may pay out remittances from abroad	which banks, exchange companies and agents are allowed	YQ-C393, YQ-D031, YQ-D032, YQ-E810	Joins parts C, D and E: the Aden central bank's decision of May 2024 (YQ-D031, YQ-D032), its 2024 resolution (YQ-E810) and the Sana'a central bank's circular of March 2024 (YQ-C393).
 YG-119	Currency in which remittances from abroad are paid out	in the currency sent, in rials, in Saudi riyals, or not in US dollars	YQ-D033, YQ-D034, YQ-E334, YQ-E790, YQ-E791	Joins parts D and E.
-YG-120	Whether a buyer can send and receive international money transfers through a service	available or not at the service named, and through which transfer companies (Western Union, MoneyGram, Ria, stablecoins)	YQ-A008, YQ-C350, YQ-C400, YQ-C432, YQ-D303, YQ-D305, YQ-D343, YQ-D606, YQ-E637	Joins parts A, C, D and E: each provider's own service, and the corridor's transfer companies (YQ-A008).
+YG-120	Whether a buyer can send and receive international money transfers through a service	available or not at the service named, and through which transfer companies (Western Union, MoneyGram, Ria, stablecoins)	YQ-A008, YQ-C041, YQ-C054, YQ-C169, YQ-C254, YQ-C350, YQ-C400, YQ-C432, YQ-D303, YQ-D305, YQ-D343, YQ-D606, YQ-E043, YQ-E055, YQ-E062, YQ-E637	Joins parts A, C, D and E: each provider's own service, and the corridor's transfer companies (YQ-A008). Also wallets' receipt of transfers from abroad (parts C and E). The Cash wallet's pages disagree: a possible future addition (YQ-C041) and available (YQ-C169).
 YG-121	Whether banks can receive wire transfers from abroad	direct, through intermediaries, costlier or slower	YQ-E312, YQ-E800	
 YG-122	How readily remittances from abroad reach each area	the share of inflows, access to formal services, cost and speed, and whether banks can pay out	YQ-D529, YQ-E774, YQ-E775, YQ-E782	Joins parts D and E.
 YG-123	Cost of sending money to Yemen from abroad	the cost (an average, a corridor's, a channel's or a provider's)	YQ-A009, YQ-D229, YQ-D304, YQ-E595, YQ-E596, YQ-E764, YQ-E815, YQ-E816, YQ-E817	Joins parts A, D and E. Its rows give averages, channel ranges and provider figures from different surveys.
 YG-124	Currencies of transfers into Yemen through banks	the currencies	YQ-D363	
-YG-125	Whether international payment services can be used for payments from or to Yemen	available, send only, or unavailable at the service named	YQ-D542, YQ-D544, YQ-D634, YQ-E542, YQ-E543, YQ-E579, YQ-E580, YQ-E581, YQ-E728, YQ-E729, YQ-E846, YQ-E897	Joins parts D and E. Wise's two pages disagree on Wise (YQ-E580, YQ-E581), and sources differ on PayPal (YQ-D634, YQ-E579, YQ-E728).
+YG-125	Whether international payment services can be used for payments from or to Yemen	available, send only, or unavailable at the service named	YQ-D542, YQ-D544, YQ-D634, YQ-E542, YQ-E543, YQ-E579, YQ-E580, YQ-E581, YQ-E582, YQ-E728, YQ-E729, YQ-E846, YQ-E897	Joins parts D and E. Wise's two pages disagree on Wise (YQ-E580, YQ-E581), and sources differ on PayPal (YQ-D634, YQ-E579, YQ-E728). YQ-E582 is a request, open on the capture date, to add WooPayments for Yemeni businesses.
 YG-126	Whether and how an exchange business must renew its licence	renewal required, by when and through which channel	YQ-B041, YQ-B042, YQ-F152	Joins parts B and F; all rest on the Sana'a central bank's announcement of early 2026.
 YG-127	Which exchange businesses are licensed to operate	the licensed list, or only those on it	YQ-D292, YQ-F120	Joins parts D and F.
 YG-128	Who may obtain an exchange licence	the capital required and limits on new licences and branches by area	YQ-D339, YQ-D354, YQ-D355, YQ-D452, YQ-E777	Joins parts D and E.
@@ -145,3 +145,156 @@ YG-143	Whether exchange firms may charge a commission for paying out in cash	all
 YG-144	Whether a buyer can send money within Yemen through a transfer network	available or not at the service named	YQ-C348, YQ-C417, YQ-D605	Joins parts C and D.
 YG-145	Whether buyers have digital transfers available	available or not, and to whom	YQ-D022	
 YG-146	What a bank's transfer agencies offer customers	the services offered	YQ-C429	
+YG-147	Whether a buyer can pay for purchases at shops from a phone wallet or bank app	available or not at the service named (how: points of sale, store codes, QR)	YQ-C002, YQ-C006, YQ-C011, YQ-C030, YQ-C035, YQ-C045, YQ-C051, YQ-C056, YQ-C059, YQ-C146, YQ-C149, YQ-C160, YQ-C165, YQ-C170, YQ-C186, YQ-C191, YQ-C212, YQ-C223, YQ-C239, YQ-C257, YQ-C277, YQ-C284, YQ-C324, YQ-C330, YQ-C337, YQ-C345, YQ-C353, YQ-C357, YQ-C408, YQ-C415, YQ-C423, YQ-D144, YQ-D151, YQ-D163, YQ-D563, YQ-D571, YQ-D619, YQ-E012, YQ-E020, YQ-E050, YQ-E059, YQ-E207, YQ-E671, YQ-E740	Joins parts C, D and E: each wallet's or bank app's payments at merchants (Hasseb, merchant payments, points of sale). Online purchases, bills and transfers to persons are separate conditions, since a service can offer one and not another; rows listing a wallet's whole range of services are in the condition on which services a wallet offers.
+YG-148	Whether a buyer can pay for online purchases from a phone wallet or bank app	available, coming later, or not, at the wallet or at the online store named (and which wallets the store accepts)	YQ-C039, YQ-C053, YQ-C082, YQ-C147, YQ-C150, YQ-C156, YQ-C291, YQ-C358, YQ-C431, YQ-C472, YQ-C496, YQ-C498, YQ-C520, YQ-C539, YQ-C552, YQ-C574, YQ-C578, YQ-C583, YQ-C590, YQ-D123, YQ-D147, YQ-D183, YQ-D299, YQ-D599, YQ-D613, YQ-D618, YQ-E682	Joins parts C, D and E: wallets' online payment and online stores' acceptance of wallets. Also part D's rows on buyers paying online stores through a wallet or Haseb, and stores accepting them.
+YG-149	Whether a buyer can pay bills and fees from a phone wallet or bank app	available or not at the service named (the bills named are detail)	YQ-A012, YQ-C009, YQ-C017, YQ-C022, YQ-C023, YQ-C032, YQ-C036, YQ-C047, YQ-C052, YQ-C058, YQ-C063, YQ-C148, YQ-C154, YQ-C171, YQ-C187, YQ-C195, YQ-C210, YQ-C224, YQ-C240, YQ-C260, YQ-C278, YQ-C286, YQ-C327, YQ-C346, YQ-C407, YQ-C414, YQ-C419, YQ-C420, YQ-C421, YQ-C425, YQ-C440, YQ-C565, YQ-D573	Joins parts A, C and D, including SabaCard's bill payments (YQ-A012) and billers' acceptance of wallets (YQ-C440, YQ-C565).
+YG-150	Whether a buyer can send money to another person from a phone wallet or bank app	available or not at the service named	YQ-C003, YQ-C008, YQ-C019, YQ-C028, YQ-C046, YQ-C048, YQ-C057, YQ-C155, YQ-C167, YQ-C185, YQ-C192, YQ-C211, YQ-C221, YQ-C237, YQ-C251, YQ-C276, YQ-C285, YQ-C403, YQ-C410, YQ-C418	
+YG-151	Whether a buyer can use a phone wallet without internet or a smartphone	available by SMS or USSD or on basic phones, or the app needs internet	YQ-C004, YQ-C012, YQ-C025, YQ-C060, YQ-C064, YQ-C180, YQ-C188, YQ-C190, YQ-C208, YQ-C250, YQ-C262, YQ-C294, YQ-C316, YQ-C338, YQ-C356, YQ-D124, YQ-D149, YQ-D565, YQ-D579, YQ-E054, YQ-E073, YQ-E238, YQ-E670, YQ-E741	Joins parts C, D and E: part C's paying by SMS, paying without internet and use from a basic phone, which are the same availability.
+YG-152	Whether a buyer can transfer money between different providers' wallets	available or not, and through which link (WeNet, Wasel), at the service named or across the market	YQ-C015, YQ-C117, YQ-C176, YQ-C235, YQ-C269, YQ-C293, YQ-D104, YQ-D134, YQ-D140, YQ-D146, YQ-D162, YQ-E024, YQ-E048, YQ-E067, YQ-E216, YQ-E548, YQ-E660, YQ-E674, YQ-E684, YQ-E714	Joins parts C, D and E.
+YG-153	Whether a buyer can send money from a phone wallet to someone without one	available or not, and how the recipient collects	YQ-C020, YQ-C216, YQ-C236, YQ-C252, YQ-C281, YQ-C288, YQ-C335, YQ-C347, YQ-C406, YQ-C413, YQ-E739	Joins parts C and E.
+YG-154	What happens to a wallet transfer to someone without a wallet that is not collected	returned or suspended, and after how long	YQ-C233, YQ-E045, YQ-E064	Joins parts C and E. ONE Cash's FAQ gives 30 days (YQ-C233), its app listings 14 days (YQ-E045, YQ-E064).
+YG-155	Whether a buyer can put cash into and take cash out of a phone wallet at agents, branches or partner networks	available or not, where (agents, branches, exchange networks, post offices), and restrictions such as working hours	YQ-C016, YQ-C033, YQ-C037, YQ-C049, YQ-C061, YQ-C103, YQ-C127, YQ-C153, YQ-C173, YQ-C178, YQ-C189, YQ-C197, YQ-C205, YQ-C213, YQ-C222, YQ-C255, YQ-C279, YQ-C289, YQ-C336, YQ-C349, YQ-C405, YQ-C412, YQ-C428, YQ-D125, YQ-D141, YQ-D145, YQ-D153, YQ-D154, YQ-D160, YQ-D161, YQ-D165, YQ-D166, YQ-D561, YQ-D562, YQ-D580, YQ-D591, YQ-D592, YQ-D601, YQ-D602, YQ-D631, YQ-D632, YQ-E014, YQ-E022, YQ-E036, YQ-E037, YQ-E040, YQ-E049, YQ-E056, YQ-E058, YQ-E069, YQ-E222, YQ-E685, YQ-E737, YQ-E738, YQ-F104	Joins parts C to F: part D's 'how buyers fund an e-wallet' and 'how e-wallet users withdraw cash', part E's loading money into and withdrawing cash from a wallet, and the Aden central bank's rule that e-money is redeemable in cash (YQ-F104). The Cash wallet's terms say cash is available within official working hours (YQ-C127), its app listing around the clock (YQ-C178).
+YG-156	Whether a buyer can withdraw cash from a phone wallet at ATMs	available or not, with or without a card	YQ-C024, YQ-C050, YQ-C290, YQ-C320, YQ-E015, YQ-E023	Joins parts C and E.
+YG-157	How large a phone wallet's network of agents and points of sale is	the number of agents and points of sale, or how widely they are spread	YQ-C014, YQ-C044, YQ-C065, YQ-C179, YQ-C218, YQ-C220, YQ-C333, YQ-E119, YQ-E215, YQ-E669, YQ-E686, YQ-E692, YQ-E744, YQ-E878	Joins parts C and E: part C's use of e-wallet agents and points of sale, which its rows state as the network's reach. YQ-E119 counts ONE Cash's retail outlets and corporations accepting it.
+YG-158	Whether a buyer can move money between a phone wallet and a bank account	available or not at the service named, and with which banks	YQ-C018, YQ-C021, YQ-C062, YQ-C116, YQ-C175, YQ-C214, YQ-C225, YQ-C270, YQ-C292, YQ-C319, YQ-C339, YQ-C404, YQ-C411, YQ-C422, YQ-C469, YQ-E047, YQ-E066, YQ-E217, YQ-E673, YQ-E683, YQ-E742	Joins parts C and E.
+YG-159	Whether a buyer can send and receive transfers between a phone wallet and local transfer networks	available or not at the service named, and through which networks	YQ-C145, YQ-C159, YQ-C168, YQ-C198, YQ-C238, YQ-C253, YQ-C271, YQ-C315, YQ-C321, YQ-D131, YQ-D143, YQ-D560, YQ-D572, YQ-E011, YQ-E019, YQ-E068, YQ-E743, YQ-E879	Joins parts C, D and E.
+YG-160	Which phone wallets are available to buyers, and how many	the wallets or providers named, or their number, or that wallets are emerging, limited or fragmented	YQ-A003, YQ-A048, YQ-B023, YQ-B057, YQ-B155, YQ-C444, YQ-C445, YQ-C461, YQ-C462, YQ-D036, YQ-D045, YQ-D051, YQ-D093, YQ-D094, YQ-D178, YQ-D277, YQ-D342, YQ-D379, YQ-E577, YQ-E750, YQ-E805, YQ-E806, YQ-E807, YQ-F069	Joins parts A to F: lists and counts of wallets and of the banks and companies offering them. Sources of 11 July 2026 disagree on the number (YQ-C444, YQ-C445, YQ-C461, YQ-C462).
+YG-161	Which phone wallets buyers use most	the wallets named as leading or most used	YQ-B055, YQ-C468, YQ-D114	Joins parts B, C and D.
+YG-162	Which companies and banks provide a wallet service	the provider and its partner banks	YQ-D577, YQ-D629	
+YG-163	Which services a phone wallet offers buyers	the range of services the wallet lists (transfers, purchases, bills, top-ups, cash in and out, salaries and others)	YQ-A049, YQ-B059, YQ-D091, YQ-D092, YQ-D126, YQ-D135, YQ-D138, YQ-D156, YQ-D522, YQ-D564, YQ-D578, YQ-D589, YQ-D600, YQ-D633, YQ-D635, YQ-E006, YQ-E010, YQ-E018, YQ-E051, YQ-E070, YQ-E557, YQ-E668, YQ-E691, YQ-E733, YQ-E734, YQ-E876, YQ-F070	Joins parts A, B, D, E and F: rows that list a wallet's services together. Rows on a single service are in that service's condition, since a list and a single service hold together.
+YG-164	Which services a licensed payment or e-money provider may offer	the services the central bank's rules allow	YQ-F082, YQ-F094	
+YG-165	Whether a buyer needs a bank account to pay by phone	not needed, or a bank account required, at the service named or under the rules	YQ-C001, YQ-C010, YQ-C013, YQ-C027, YQ-C157, YQ-C206, YQ-C249, YQ-C287, YQ-C424, YQ-D103, YQ-D130, YQ-D520, YQ-D574, YQ-D588, YQ-D630, YQ-E202, YQ-E205, YQ-E547, YQ-E553	Joins parts C, D and E, including part E's rows on a bank account as a requirement for a wallet and part C's requirement for a bank's payment app (YQ-C424).
+YG-166	What a buyer must provide to open a phone wallet	the documents and data required	YQ-A050, YQ-C034, YQ-C066, YQ-C226, YQ-C243, YQ-C296, YQ-C334, YQ-D521, YQ-D566, YQ-D586, YQ-D593, YQ-E013, YQ-E021, YQ-E219, YQ-E735, YQ-E751, YQ-F091	Joins parts A, C, D, E and F.
+YG-167	What a buyer must do to activate a phone wallet	the verification steps (ID photos, a selfie, a visit to an agent, SMS codes)	YQ-C164, YQ-C200, YQ-C229, YQ-C246, YQ-E016, YQ-E017, YQ-E060	Joins parts C and E, including part E's identity verification of wallet users.
+YG-168	Whether a buyer can transact from a wallet before it is activated	which transactions work	YQ-C163, YQ-C228	
+YG-169	Whether a buyer can open a wallet or bank account remotely	yes in the app or by electronic know-your-customer, partly (registration only), or only at an agent	YQ-C067, YQ-C143, YQ-C227, YQ-C245, YQ-C297, YQ-C402, YQ-D139, YQ-D287, YQ-D567, YQ-D575, YQ-D594, YQ-D607, YQ-E041, YQ-F112	Joins parts C to F, including the Aden central bank's electronic know-your-customer rules (YQ-D287, YQ-F112) and remote bank account opening (YQ-D607).
+YG-170	Where a buyer can open a phone wallet	at agents, branches or offices	YQ-C401, YQ-C409, YQ-E038, YQ-E206	Joins parts C and E.
+YG-171	Who may open a phone wallet	the persons and bodies allowed	YQ-C109, YQ-C267	
+YG-172	Minimum age to open a phone wallet	the age	YQ-C111	
+YG-173	How many wallet accounts one customer may hold	the maximum	YQ-C112, YQ-C231, YQ-C263, YQ-F093	Joins parts C and F.
+YG-174	Fee to open a phone wallet	free or the fee	YQ-C174, YQ-C219	
+YG-175	How long opening a phone wallet takes	the time	YQ-D168	
+YG-176	Whether a buyer can register a wallet on a phone number in someone else's name	allowed or not, and on what condition	YQ-C230, YQ-C247	
+YG-177	Whether a buyer can use an alias number instead of the phone number for a wallet	available or not	YQ-C181	
+YG-178	Which mobile operators' subscribers can use a phone wallet	the operators	YQ-C295	
+YG-179	Which currencies a phone wallet account can hold	the rial only, or also foreign currencies (which)	YQ-C101, YQ-C158, YQ-C172, YQ-C194, YQ-D150, YQ-D155, YQ-D167, YQ-D581, YQ-E042, YQ-E061, YQ-E556, YQ-E672, YQ-F089, YQ-F115	Joins parts C to F: providers' services and the Aden central bank's rules (rial only in 2023, foreign currencies allowed from July 2025).
+YG-180	Limits on a phone wallet's balance and transactions	the ceilings (per transaction, day, month, balance) or that ceilings apply	YQ-C104, YQ-C108, YQ-C298, YQ-C331, YQ-D568, YQ-E218, YQ-E736, YQ-F090, YQ-F116	Joins parts C to F, including part C's ceiling on cash withdrawal (YQ-C104).
+YG-181	How much a bank customer may transact through a mobile banking app	the ceilings	YQ-D604	
+YG-182	Who may set ceilings on payment instruments	the authority	YQ-F087	
+YG-183	Limit on the e-money one institution may issue	a ceiling tied to capital, or no limit	YQ-E117, YQ-E118, YQ-E190, YQ-E191	
+YG-184	Fee for withdrawing cash from a phone wallet	a commission, or free	YQ-C105, YQ-C273	
+YG-185	Fee for putting money into a phone wallet	commissions, or free	YQ-C118, YQ-C274	
+YG-186	Fees a phone wallet charges for payments and transactions	none, low or 'reasonable', may apply, or set by the provider at will	YQ-C120, YQ-C217, YQ-C265, YQ-C283, YQ-C352, YQ-C354, YQ-D569, YQ-D583	Joins parts C and D.
+YG-187	Fee for sending money from a phone wallet	free, free within limits or during a campaign, or varying with the amount	YQ-C272, YQ-C275, YQ-C340, YQ-C367, YQ-E044, YQ-E063	Joins parts C and E, including part E's transfers between users of the same wallet.
+YG-188	Fee on a declined payment by a wallet's card	the fee	YQ-C300, YQ-C301	
+YG-189	How wallet commissions are charged	percentage, fixed amount, or both	YQ-C131	
+YG-190	Whether a buyer sees the fee before confirming a wallet payment	shown or not	YQ-C129	
+YG-191	How a payment or financial service provider must disclose its fees	where and how far in advance fees and changes are published	YQ-C128, YQ-F084, YQ-F100, YQ-F106	Joins parts C and F.
+YG-192	Whether a phone wallet balance earns interest or incentives	none, or allowed	YQ-C102, YQ-F095	Joins parts C and F.
+YG-193	What happens to an unused wallet account	dormant after how long, and where the balance goes	YQ-C115, YQ-D584	Joins parts C and D.
+YG-194	How quickly a payment or financial service provider must handle a complaint	the acknowledgment and decision deadlines, and the right to refer to the central bank	YQ-C140, YQ-F098, YQ-F105	Joins parts C and F.
+YG-195	Where a wallet holder can take an unresolved complaint	the body	YQ-C141	
+YG-196	Which forum hears disputes over a wallet account	the forum	YQ-C142	
+YG-197	Terms for ending a financial service agreement	notice the provider must give, and the customer's freedom to end or switch	YQ-C135, YQ-F111	Joins parts C and F.
+YG-198	When a provider may suspend or close a wallet without notice	the grounds	YQ-C136	
+YG-199	When a provider may suspend a wallet at any time	the grounds	YQ-C137	
+YG-200	How changes to a wallet's terms take effect	the notice period and the holder's options	YQ-C138	
+YG-201	Language of a wallet's contract and correspondence	the language	YQ-C139	
+YG-202	Who bears the loss from an unauthorized, failed or defrauded payment	the provider, unless the customer's negligence or fraud caused it, or the customer	YQ-C132, YQ-D007, YQ-D585, YQ-F086, YQ-F101, YQ-F102, YQ-F110	Joins parts C, D and F: providers' terms, Law No. 40 of 2006, and the Aden central bank's instructions.
+YG-203	Deadline to claim back an unauthorized or mistaken wallet payment	the deadline and condition	YQ-C114	
+YG-204	Whether a buyer can recover a wallet payment sent to the wrong account	the provider helps, or no recovery route	YQ-C133, YQ-C234	
+YG-205	Whether a buyer can reverse a wallet payment made to a merchant	accepted or not	YQ-C121	
+YG-206	Whether a buyer can dispute a wallet cash withdrawal made at an ATM	allowed or not	YQ-C134	
+YG-207	Whether a buyer can let a third party operate a wallet account	allowed, and on what condition	YQ-C107	
+YG-208	Whether a wallet account is a bank account	a bank account or not	YQ-C106	
+YG-209	What notice a wallet user gets of each transaction	the notice required	YQ-F099	
+YG-210	Whether a buyer can link an international card to a phone wallet	available, coming, or not	YQ-C040	
+YG-211	Whether a phone wallet issues a payment card to buyers	a virtual or prepaid card available, on which platforms, or not	YQ-C268, YQ-C299, YQ-D148, YQ-D157, YQ-E053, YQ-E072	Joins parts C and D. Also ONE Cash's Visa cards issued through the wallet (part E).
+YG-212	Whether a buyer gets discounts or cashback for paying by phone	the offer, where and for how long	YQ-C317, YQ-C361, YQ-C362, YQ-C364, YQ-C365, YQ-C366, YQ-C430, YQ-C433, YQ-C434	
+YG-213	Whether phone payments can be made by NFC (contactless)	available to buyers or merchants, coming, or not	YQ-C043, YQ-C302, YQ-C351, YQ-C416	Joins buyers' NFC payment and merchants' NFC acceptance (YQ-C416).
+YG-214	Whether a buyer can pay for games and foreign digital subscriptions from a phone wallet	available or not, and for which services	YQ-C162, YQ-C199, YQ-C241, YQ-C261, YQ-E052, YQ-E071	Joins parts C and E.
+YG-215	Whether a buyer outside Yemen can use a Yemeni phone wallet or payment service to pay in Yemen	available or not, and on what condition	YQ-C183, YQ-C184, YQ-C232, YQ-C264, YQ-C326, YQ-C580, YQ-D615, YQ-E746	Joins parts C, D and E.
+YG-216	Whether organisations can pay salaries, aid and other bulk payments into phone wallets	available or not at the service named	YQ-C026, YQ-C029, YQ-C038, YQ-C094, YQ-C209, YQ-C256, YQ-C305, YQ-E245, YQ-E716, YQ-E880	Joins parts C and E, including part E's humanitarian cash through wallets.
+YG-217	Whether a buyer can move money between a phone wallet and a postal account	available or not	YQ-C280	
+YG-218	What a buyer must confirm to withdraw cash from a phone wallet	the confirmation required	YQ-C110, YQ-C166	
+YG-219	How long a network transfer takes to reach a phone wallet	the time	YQ-C182	
+YG-220	Which wallets and banks are connected to a shared bill-payment platform	the partners	YQ-C441	
+YG-221	Which goods may not be bought or sold with wallet payments	the goods barred	YQ-C124	
+YG-222	Who may provide e-money and electronic payment services	banks only (bank-led), or also licensed non-bank institutions (non-bank-led), and whether exchange companies may	YQ-B056, YQ-D089, YQ-D090, YQ-D116, YQ-D117, YQ-E113, YQ-E114, YQ-E115, YQ-E116, YQ-E151, YQ-E152, YQ-E153, YQ-E175, YQ-E189, YQ-E588, YQ-E809, YQ-F079, YQ-F088	Joins parts B, D, E and F: Circular No. 11 of 2014, the Sana'a central bank's 2020 decision, and the Aden central bank's 2022 and 2023 instructions.
+YG-223	Which authority must license e-money and e-payment services	the central bank (which seat), and whether other bodies may license	YQ-B058, YQ-C069, YQ-D050	Joins parts B, C and D.
+YG-224	Which providers are licensed to offer e-money services, and by which central bank	the providers licensed, and the licensing central bank	YQ-C005, YQ-C098, YQ-C152, YQ-C248, YQ-E162, YQ-E163, YQ-E186, YQ-E195, YQ-E228, YQ-E229	Joins parts C and E: providers' own statements that the Central Bank of Yemen licenses them, and sources' lists. Part C's notes say the Aden central bank's circular lists Jawali and Floosak as unlicensed (YQ-C069, in the licensing-authority condition).
+YG-225	Which regulations govern e-money and payment services	the laws, circulars and decisions in force, or that none is ratified	YQ-B051, YQ-C055, YQ-C072, YQ-C099, YQ-D288, YQ-D376, YQ-E167, YQ-E589, YQ-E687, YQ-E808, YQ-E881	Joins parts B to E.
+YG-226	Whether financial consumers are protected by rules	rules in force or not	YQ-D289, YQ-D321	
+YG-227	What a payment service provider licence requires	the legal form and minimum capital	YQ-D119, YQ-F080	Joins parts D and F; both rest on the Aden central bank's instructions of September 2022.
+YG-228	What a licensed bank needs to provide payment services	the approval required	YQ-D118	
+YG-229	What e-money must be backed by	pre-funded and held in a pooled trust account at a settlement bank, in which currencies	YQ-C100, YQ-D582, YQ-E203, YQ-E549, YQ-F081, YQ-F103, YQ-F117	Joins parts C to F, including part C's where customers' e-money deposits are held.
+YG-230	Whether payment providers from one area may operate in the other	allowed, or only with separate infrastructure	YQ-D380	
+YG-231	How long payment providers keep customer records	the period	YQ-D587	
+YG-232	Whether a payment service provider may run cross-border payment services	allowed, or only with approval	YQ-F083	
+YG-233	What a payment service provider may not do	the activities barred	YQ-F085	
+YG-234	Whether a financial service provider may make exclusive arrangements with banks, telecom companies, agents or merchants	allowed or not	YQ-F096, YQ-F107	
+YG-235	What a wallet agent may do, and who may be one	the activities allowed and the agent's qualifications	YQ-F097	
+YG-236	Whether payment providers' systems must work with each other	required or approved, or not	YQ-D281, YQ-F108, YQ-F109	Joins parts D and F: the Aden central bank's rules and its board's approval of linking e-wallets.
+YG-237	Whether a merchant can take online payments through a wallet's or bank's payment API	available or not at the provider named (its gateway or API), and whether integration code exists	YQ-C081, YQ-C242, YQ-C341, YQ-D096, YQ-D523, YQ-D620, YQ-E009, YQ-E076, YQ-E077, YQ-E583, YQ-E676, YQ-F028, YQ-F034, YQ-F035, YQ-F036, YQ-F037, YQ-F038, YQ-F042, YQ-F046, YQ-F055, YQ-F062, YQ-F071, YQ-F078	Joins parts C to F: providers' own pages on linking stores and apps, part E's integration code, and part F's 'wallet or bank payment gateways a merchant can call through an API'.
+YG-238	Whether online card-payment gateways are available to merchants	available, lacking, or stopped	YQ-D180, YQ-E711, YQ-E717, YQ-E829	Joins parts D and E.
+YG-239	Whether a merchant can receive buyers' payments at the point of sale through a wallet or bank	available or not at the service named	YQ-C007, YQ-C031, YQ-C090, YQ-C202, YQ-C258, YQ-C303, YQ-C323, YQ-C359, YQ-D590, YQ-D603, YQ-D614, YQ-D616	Joins parts C and D.
+YG-240	How a merchant takes wallet payments at the point of sale	by QR code, point-of-sale number, phone number or card	YQ-C042, YQ-C144, YQ-C196, YQ-C215, YQ-C312, YQ-D133, YQ-D142, YQ-D152, YQ-D159, YQ-D164, YQ-D576	Joins parts C and D: part C's acceptance by QR code and part D's 'how merchants receive e-wallet payments'.
+YG-241	Which services a phone wallet offers merchants	the range of merchant services listed	YQ-E034, YQ-E680	
+YG-242	What a merchant needs to take a provider's online payments	the accounts, site or app, and agreements required	YQ-C083, YQ-C344, YQ-D597, YQ-E677	Joins parts C, D and E.
+YG-243	What a merchant needs to open a merchant account or payment point	the documents, accounts and equipment required	YQ-C113, YQ-C244, YQ-C332, YQ-D617	Joins parts C and D.
+YG-244	Who starts a payment to a merchant through a provider's API	the merchant's request, or the buyer from the provider's app or own wallet	YQ-D293, YQ-F001, YQ-F006, YQ-F013, YQ-F021, YQ-F029, YQ-F048, YQ-F049, YQ-F056, YQ-F066, YQ-F072	Joins parts D and F. The Kuraimi E-Pay client's readme gives two ways a payment starts (YQ-F048, YQ-F049).
+YG-245	How a payment to a merchant through a provider's API is authorised and completed	the buyer's one-time code, PIN, voucher, or own transfer verified by the merchant	YQ-F002, YQ-F007, YQ-F015, YQ-F023, YQ-F030, YQ-F039, YQ-F043, YQ-F050, YQ-F058, YQ-F073	
+YG-246	What a buyer gives a merchant to start a payment through a provider's API	phone number, payment code or PIN	YQ-F003, YQ-F009, YQ-F014, YQ-F022, YQ-F031, YQ-F051, YQ-F057, YQ-F074	
+YG-247	Currencies a merchant can request payment in through a provider's API	rial only, or also the Saudi riyal and US dollar, or by currency zone	YQ-E078, YQ-F004, YQ-F010, YQ-F016, YQ-F052, YQ-F059, YQ-F063, YQ-F067, YQ-F075	Joins parts E and F: part E's YQ-E078 gives Kuraimi's payment API's currency zones (old, new or all).
+YG-248	What a merchant must hold to use a provider's payment API	the credentials and equipment required	YQ-F005, YQ-F011, YQ-F017, YQ-F024, YQ-F025, YQ-F032, YQ-F040, YQ-F044, YQ-F053, YQ-F060, YQ-F065, YQ-F076	The Floosak PHP client gives two credential sets (YQ-F024, YQ-F025).
+YG-249	How long a merchant has to complete an API payment after requesting it	the time	YQ-F008	
+YG-250	Whether a merchant can check an API payment's status	available or not	YQ-F012, YQ-F018, YQ-F027, YQ-F041, YQ-F045, YQ-F061	
+YG-251	Whether a buyer's wallet must be allowed to pay online	allowed or refused	YQ-F019	
+YG-252	Limits on the amount of an API payment to a merchant	the limit, or that one applies	YQ-F020	
+YG-253	Whether a merchant can refund or reverse a buyer's wallet or API payment	available or not, and who may do it	YQ-C086, YQ-C306, YQ-C329, YQ-F026, YQ-F033, YQ-F054, YQ-F068	Joins parts C and F.
+YG-254	Whether a merchant must host an API that the bank calls to verify its customers	required or not	YQ-D294, YQ-F047, YQ-F064	Joins parts D and F; all concern Kuraimi Bank's E-Pay API.
+YG-255	Whether a merchant can withdraw wallet balance as cash	available or not, and where	YQ-C084, YQ-C095, YQ-E678	Joins parts C and E.
+YG-256	How fast an electronic payment reaches the merchant	the time	YQ-C085, YQ-C343	
+YG-257	Whether a merchant can issue invoices that buyers pay from a wallet	available or not	YQ-C088	
+YG-258	Whether a wallet holder can exchange between currencies inside the wallet	available or not	YQ-C089, YQ-C259	Joins part C's merchant and buyer rows.
+YG-259	Exchange rate for currency conversion in a wallet	the rate used and notice of changes	YQ-C130	
+YG-260	Whether a merchant can run offers for buyers through a wallet	available or not	YQ-C091	
+YG-261	Whether a merchant can advertise through a wallet's app	available or not	YQ-C092	
+YG-262	Whether a merchant can link branches or points of sale to one wallet account	available or not	YQ-C093, YQ-C311	
+YG-263	Whether a merchant can send and receive transfers from a wallet within Yemen and abroad	available or not	YQ-C097	
+YG-264	Limits on what a merchant's wallet can receive	a ceiling applies, or raised	YQ-C119, YQ-C314	
+YG-265	Limit on a merchant's cash withdrawal from a wallet	the ceiling	YQ-C096	
+YG-266	Whether a wallet payment a merchant receives is final	final, or reversible	YQ-C122	
+YG-267	Fee a merchant pays to receive wallet payments	commissions or none	YQ-C123	
+YG-268	Who is responsible for the legality of goods sold for wallet payment	the account holder or the provider	YQ-C126	
+YG-269	Whether a merchant's wallet may be restricted because of a payment received	occurred or not	YQ-C201	
+YG-270	Whether a merchant can sign up to accept electronic payments remotely	online or in the app, or only at a branch or agent	YQ-C203, YQ-C310, YQ-C360, YQ-C426	
+YG-271	Whether a merchant can pay suppliers and other businesses from a business wallet	available or not	YQ-C304	
+YG-272	Whether a merchant can move money between a business wallet, bank accounts and other wallets	available or not, and the fee	YQ-C307, YQ-C328, YQ-E035	Joins parts C and E.
+YG-273	Whether a merchant can pay the Yemen Petroleum Company for fuel from a business wallet	available or not	YQ-C309	
+YG-274	Whether a business wallet can receive transfers from other providers' wallets	available, or not yet	YQ-C313	
+YG-275	Whether a merchant earns a commission on wallet payments received	offered or not	YQ-C318	
+YG-276	How wallet agents are paid	the commissions	YQ-C204	
+YG-277	Which QR code standard financial institutions must use	the standard	YQ-D280	
+YG-278	Which payment cards buyers can get, and from whom	the card brands and types issued (Visa, Mastercard, UnionPay; debit, credit, prepaid) and by which bank or company	YQ-A010, YQ-A017, YQ-D097, YQ-D543, YQ-D598, YQ-E193, YQ-E666, YQ-E702, YQ-E713, YQ-E731	Joins parts A, D and E, including part A's international card brands issued to cardholders in Yemen. Wallet-issued cards are a separate condition.
+YG-279	How many payment cards are in issue	the number of active debit, credit and prepaid cards	YQ-D264, YQ-D270, YQ-E158, YQ-E159, YQ-E160, YQ-E164	Joins parts D and E.
+YG-280	What a buyer must provide to obtain a payment card	the documents, accounts and collateral required	YQ-E667, YQ-E703, YQ-E732	
+YG-281	Fees and limits on payment cards	the fees, commissions and limits	YQ-E699	
+YG-282	Whether merchants can accept card payments	acquiring available or not, and for which cards	YQ-A011, YQ-A018	
+YG-283	Whether a buyer can pay online stores by card	accepted or not at the store named	YQ-C579, YQ-D182	Joins parts C and D.
+YG-284	Whether an interbank switch links banks' cards, ATMs and points of sale	operating or not, and who runs it	YQ-A013, YQ-E247, YQ-E248, YQ-E550, YQ-E656, YQ-E658, YQ-E712, YQ-E798	Joins parts A and E, including SabaCard's switching for banks (YQ-A013). Sources differ on whether a national switch operates (YQ-E798 against YQ-E656, YQ-E658, YQ-E712).
+YG-285	Who may operate ATMs	who may	YQ-D005	
+YG-286	How many ATMs are available	the number or density of ATMs	YQ-D261, YQ-D268, YQ-D372, YQ-D609	
+YG-287	Which currencies can be withdrawn at ATMs	the currencies	YQ-D262, YQ-D274	
+YG-288	How much merchants take by card at points of sale	the value of card payments	YQ-D263	
+YG-289	Where ATMs are concentrated	the governorates and shares	YQ-D269	
+YG-290	How many card terminals merchants have	the number of POS terminals	YQ-D271, YQ-D371	
+YG-291	Whether an instant payment and real-time settlement system is available	absent, planned or under development, or operating (and whose)	YQ-D175, YQ-D282, YQ-D377, YQ-E107, YQ-E176, YQ-E200, YQ-E227, YQ-E230, YQ-E381, YQ-E383, YQ-E554, YQ-E560, YQ-E657, YQ-E659, YQ-E797, YQ-E799, YQ-E836	Joins parts D and E, including part E's instant transfers between banks (WeNet's scheme).
+YG-292	Whether payments can move electronically between different banks and institutions	possible, or limited to cash, cheques, SWIFT orders and payments within one institution	YQ-B050, YQ-E231, YQ-E382, YQ-E555, YQ-E663	Joins parts B and E, including part E's clearing and settlement between banks.
+YG-293	Who settles payments between banks and e-wallets	the company authorized, and by which central bank	YQ-E194, YQ-E380	
+YG-294	Whether cheques are cleared through the central bank	cleared or not, and how many	YQ-D266	
+YG-295	Whether banks transfer through SWIFT within Yemen	used or not, and how much	YQ-D267	
+YG-296	Who provides payment services	banks, money exchangers, the post	YQ-D316, YQ-D344	
+YG-297	Which payment services the post office offers	the services	YQ-E168	
+YG-298	Whether payment providers can use mobile networks' USSD and voice channels	available or refused	YQ-E234	
+YG-299	Whether a buyer can cancel a money transfer already sent	allowed, and within what time	YQ-E046, YQ-E065	
