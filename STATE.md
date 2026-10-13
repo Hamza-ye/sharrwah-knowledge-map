@@ -98,6 +98,17 @@ Agents started earlier keep their effort.
   - `method/corpus_search.py` searches a platform's held corpora in every language they hold. Its first run found the UAE and Kuwait settlement articles held since Q1's capture of 10 October.
   - An agent that made none of the claims audits every gap and absence.
   - A "searched, not found" must show its corpus search. The checker enforces both.
+- **A3 is done for all five platforms**, at `high`.
+  - Results: Shopify 2 confirmed; WooCommerce 2 confirmed and 1 partly contradicted; Zid 23 confirmed; BigCommerce 9 confirmed and 2 contradicted; Salla 4 confirmed and 3 partly contradicted.
+  - A2 and A3 together added 157 statements (588 to 745). Every quote is found (1,390).
+  - `corpus_search.py` also reads raw pages (zid.sa keeps its content there) and the fetch archives, through a text cache in `~/.cache/sharrwah-corpus`.
+  - The Paylink lead (from the founder's search) isn't supported by held evidence: the held Paylink posts tie its licence to no Salla Payments funds.
+- **For the founder:** `evidence/product-class/to-save-for-s01.md`, raised in chat on 13 October 2026. It asks for:
+  - eight BigCommerce Help Center articles (HTTP 400 to automated browsers);
+  - Salla's payment services contract;
+  - Zid Pay's provider and the wallet's bank.
+
+  Until they're saved, those gaps stand as recorded.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
   - B, A2, capture and kinds again, B's second pass, C;
@@ -133,8 +144,7 @@ Agents started earlier keep their effort.
   - It added S01-SA-137 to 177, all scoped by country or bank.
   - Who settles Salla Payments funds is still not stated, and the payment services agreement isn't held.
   - Kuwait's minimum payout differs between the English and Arabic articles. Both are recorded, unresolved.
-- **Pilot A3, absence audits:** one agent per platform (`high`), none of whom made the claims. Shopify `a173380272d4ca839`, WooCommerce `a3328139ad72099a3`, Zid `a009ce5ff1f1df173`, BigCommerce `a8e8664707525d3d1`, Salla `a210a6231aa83e30e`.
-- **Then:** phase B's agent `a9e10fcc19233f104` is resumed for the second pass.
+- **Pilot phase B, second pass:** agent `a9e10fcc19233f104`, resumed after A2 and A3.
 - **Stage 1 pass 2, step 2a:** one agent (`a4a6021a9605c1efe`, `max`), writing `groups.tsv`, `places.tsv` and `notes.md` in `studies/yemen-cases/`. It is resumed later for step 2c.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
