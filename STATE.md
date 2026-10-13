@@ -128,8 +128,12 @@ Agents started earlier keep their effort.
 - at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript.
 
 **Agents running when last checked (12 October 2026, 23:58 UTC):**
-- **Pilot A2, Salla's re-run:** agent `ad85e03ee6e56e170` (`high`). It sweeps every held help article, in both languages and by country (Kuwait, UAE).
-- **Pilot A3, absence audits:** one agent per platform (`high`), none of whom made the claims. Shopify `a173380272d4ca839`, WooCommerce `a3328139ad72099a3`, Zid `a009ce5ff1f1df173`, BigCommerce `a8e8664707525d3d1`. Salla's audit runs after its A2 re-run.
+- **Pilot A2, Salla's re-run: done** (`high`).
+  - The sweep listed 597 held articles; 564 had never been cited.
+  - It added S01-SA-137 to 177, all scoped by country or bank.
+  - Who settles Salla Payments funds is still not stated, and the payment services agreement isn't held.
+  - Kuwait's minimum payout differs between the English and Arabic articles. Both are recorded, unresolved.
+- **Pilot A3, absence audits:** one agent per platform (`high`), none of whom made the claims. Shopify `a173380272d4ca839`, WooCommerce `a3328139ad72099a3`, Zid `a009ce5ff1f1df173`, BigCommerce `a8e8664707525d3d1`, Salla `a210a6231aa83e30e`.
 - **Then:** phase B's agent `a9e10fcc19233f104` is resumed for the second pass.
 - **Stage 1 pass 2, step 2a:** one agent (`a4a6021a9605c1efe`, `max`), writing `groups.tsv`, `places.tsv` and `notes.md` in `studies/yemen-cases/`. It is resumed later for step 2c.
 
