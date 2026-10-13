@@ -13,7 +13,7 @@ This is `PLAN.md` Stage 2, the pilot: the gap-closing inside the subject. It run
 
 Take each row of `variants.tsv` for your platform whose `variant` is `gap` or `not covered`. Also take each arrangement that the message that started you names: one your platform's statements name, left without an answer under a variation point where your platform answers for its other arrangements. For each variation point these belong to:
 1. Read the held or live sources likely to state who or what fills it on your platform. Run `method/held_index.py` on an address before you fetch it live.
-2. Record what you find as new statements, continuing your `stmt_id`s and `cite_id`s, under phase A's rules.
+2. Record what you find as new statements, continuing your `stmt_id`s and `cite_id`s, under phase A's rules. Record everything you find that bears on the subject, even when it fits a variation point your platform already answers, such as a schedule or limit stated for another country. Give it the scope the source states.
 3. Where a complete list shows it absent, record an absence. Where nothing states it, record a new gap, listing what you read.
 4. Don't change existing rows, with one exception. Under phase A's rule for (e), you may add your new statements' `stmt_id`s to an existing (e) statement's `conditions`. If that column is `none stated`, the ids replace it.
 

@@ -25,7 +25,7 @@ For each claim:
    Read the titles and snippets it lists.
 2. **Read every listed document** that could state what is claimed missing, and the pages in the gap's `route`.
 3. **Settle the claim:**
-   - If a source states it, record new statements and citations under phase A's rules, continuing your platform's ids. The result is `contradicted`.
+   - If a source states it, record new statements and citations under phase A's rules, continuing your platform's ids. The result is `contradicted`. Record too anything else the documents you read state on the subject, with the scope they give it.
    - If a source shows that an absence's list isn't complete, the result is `contradicted`.
    - Otherwise the result is `confirmed`.
 4. **Don't change existing rows,** with one exception. Under phase A's rule for (e), you may add your new statements' `stmt_id`s to an existing (e) statement's `conditions`.
