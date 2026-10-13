@@ -277,6 +277,9 @@ S01-SA-130	observed	structures/salla/dashboard-translations is built from a reco
 S01-SA-131	observed	structures/salla/dashboard-translations is built from a recorded session
 S01-SA-132	observed	structures/salla/dashboard-features is built from a recorded session
 S01-SA-133	stated	structures/salla/com-policies holds https://salla.com/marketing-tools: the address is a docs, help or other page
+S01-SA-134	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-135	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-136	observed	structures/salla/dashboard-translations is built from a recorded session
 S01-SA-N01	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-WC-001	official page	the address is a terms, policy, legal or pricing page
 S01-WC-002	official page	the address is a terms, policy, legal or pricing page
@@ -595,3 +598,13 @@ S01-BC-035	stated	the address is a docs, help or other page
 S01-BC-036	stated	the address is a docs, help or other page
 S01-BC-037	stated	the address is a docs, help or other page
 S01-BC-038	stated	the address is a docs, help or other page
+S01-BC-039	stated	the address is a docs, help or other page
+S01-BC-040	stated	the address is a docs, help or other page
+S01-BC-041	stated	the address is a docs, help or other page
+S01-BC-042	stated	the address is a docs, help or other page
+S01-BC-043	stated	the address is a docs, help or other page
+S01-BC-044	stated	the address is a docs, help or other page
+S01-BC-045	stated	the address is a docs, help or other page
+S01-BC-046	stated	the address is a docs, help or other page
+S01-BC-047	stated	the address is a docs, help or other page
+S01-BC-048	stated	the address is a docs, help or other page

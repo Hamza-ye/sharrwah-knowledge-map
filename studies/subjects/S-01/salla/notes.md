@@ -44,3 +44,15 @@ About 200 carrier articles (120 in the Arabic section مقالات قديمة, 7
 - Some held statements disagree with each other. Each is recorded with a note and not resolved: the Kuwait minimum payout (KWD 1, and "لا يوجد حد أدنى للتحويل" on the same page); moving amounts from رصيد المدفوعات الإلكترونية to رصيد المتجر (allowed in تفعيل المدفوعات الإلكترونية, not allowed in the older - محفظة المتجر); when a suspicious order's amount reaches the e-payments balance (on completion by the merchant, or recorded before confirmation).
 - Statements copied from the index keep their index citations: several are help.salla.sa pages read rendered on 2026-10-10 and cited by live URL, which wait for the coordinator's capture. The same articles are held in `help-articles` at the brief's commit; new statements from them cite the held copy.
 - Statements from articles in the help centre's مقالات قديمة section carry a note saying so.
+
+## Phase A2, 2026-10-13
+
+Worked on S01-VP-02 (who settles Salla Payments funds), and on the rows left as gap or not covered: S01-VP-07, 10, 11, 12, 13, 17. What was read for each is in `a2.tsv`.
+
+- Read at observed-sa `4ca2e896a729215f422a137a364e7e9488610ba3`: `help-articles/{ar,en}/texts.jsonl` searched by pattern (settlement, reserve, security interest, licence, central bank, account, contract words); أسئلة شائعة حول توثيق المتجر (ar, en) read for the verification answers; `dashboard-translations/{ar,en}` all namespaces searched, `settings.json` keys `payments#settlement-cycle` and `billing#bank-account` read; `com-policies/terms`, `com-policies/payments`, `partners-legal`, `com-llms/llms-full-txt`, `com-plans`, `com-specialplan`, `kyc-schema`, `settings-center/merchant@ar` (`payments.json`, `wallet.json`), `docs-operations`, `docs-index` searched.
+- `method/held_index.py https://s.salla.sa/payments/kyc` and `https://s.salla.sa/settings/payments`: not held.
+- No held text names who settles Salla Payments funds, a reserve, a security interest, or the entity, licence or account under which the funds are held. G01 stays open for S01-VP-11, 12 and 13.
+
+## What I couldn't read (A2)
+
+- The payment services contract (عقد خدمات الدفع) and the merchant dashboard pages, as in phase A.
