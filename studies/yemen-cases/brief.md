@@ -8,7 +8,7 @@ This is `PLAN.md` Stage 1. Read only this brief and the evidence named under "In
   - B: the Sana'a rules run;
   - C: the operators run;
   - D: the cited-sources run, items 1 to 131;
-  - E: the cited-sources run, items 132 to 262;
+  - E: the cited-sources run, items 132 to 280 (the run's last);
   - F: the community clients, and the OCR text in `derived/`.
 
   Each reads every source in its part, and nothing else. It writes `pass1/conditions-<part>.tsv` and `pass1/citations-<part>.tsv`, numbering its rows `YQ-<part>001…` and `YE-<part>001…`, and `pass1/notes-<part>.md`.

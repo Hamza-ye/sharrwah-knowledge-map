@@ -48,7 +48,9 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
     - It read 96 of its 115 items. Its scanned PDFs' OCR is part F's.
     - It couldn't read 2, 15, 18–20, 24, 25, 28, 75 and 130 (404s, Cloudflare checks, TLS, maintenance).
     - It records US dollar and Saudi riyal exchange rates: a long series of states, so many cases.
-  - Part E is running.
+  - Part E is done for items 132 to 262: 847 conditions and 995 citations, every quote found. Two problems were the coordinator's, and both are being put right:
+    - **The cap.** The checker's three-digit ids capped a part at 999 citations. Part E trimmed 1,246 to fit, so details were lost. Part D ends at exactly 999. The checker now takes four-digit ids. Part E is restoring what it trimmed, and part D was asked whether it trimmed anything.
+    - **The split.** Items 263 to 280 were in no part, because the run's numbering skips. Part E is reading them now.
 - **Pass 2 is reworked before it runs**, given pass 1's size (`PLAN.md` section 11, brief's pass 2).
   - Its first inspection found 12 must-fix items, all fixed. The place model changed most:
     - places are scopes: an authority's area, a party's service, or a named area;
@@ -120,8 +122,8 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 **Agents running when last checked (12 October 2026, 23:58 UTC):**
 - **Stage 1 pass 2, third inspection:** agent `a358c7011c8386469`. It writes no file. If it was stopped, run it again.
 - **Pilot phase B:** one agent (`a9e10fcc19233f104`), on `studies/subjects/S-01/briefs/B-variation-points.md`, writing `variation-points.tsv`, `variants.tsv` and `notes-b.md`.
-- **Stage 1 pass 1:** part E. Parts A to D and F are done.
-  - Agent: E `aa722ff96ec8f64a4`.
+- **Stage 1 pass 1:** part E (restoring trimmed quotes, reading items 263–280) and part D (checking for trimmed quotes). Parts A, B, C and F are done.
+  - Agents: D `abae382b0c0ccac78`, E `aa722ff96ec8f64a4`.
   - Brief: `studies/yemen-cases/brief.md`. Each writes `studies/yemen-cases/pass1/{conditions,citations,notes}-<part>.*`, using the commit `9d0de523f1852ebf7716f0da01b6b619edc5e8fc` in every `source`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.

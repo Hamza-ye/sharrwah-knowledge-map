@@ -31,5 +31,6 @@ These go back to the platform for phase A2.
 | S01-V-170 | S01-VP-10 "security interest" | salla |
 | S01-V-171 | S01-VP-10 "security interest" | zid |
 | S01-V-172 | S01-VP-10 "security interest" | bigcommerce |
+| S01-V-394 | S01-VP-17 "reserve" | salla |
 
 ## Problems with the method

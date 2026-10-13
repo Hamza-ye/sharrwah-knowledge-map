@@ -31,9 +31,9 @@ HEADERS = {
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "fetched_from", "url"],
     "unknowns.tsv": ["about", "what_would_show_it", "who_can", "route", "read", "why_not_held"],
 }
-IDS = {"conditions.tsv": ("condition_id", r"^YQ-[A-F]\d{3}$"), "groups.tsv": ("group_id", r"^YG-\d{3,}$"),
+IDS = {"conditions.tsv": ("condition_id", r"^YQ-[A-F]\d{3,}$"), "groups.tsv": ("group_id", r"^YG-\d{3,}$"),
        "axes.tsv": ("axis_id", r"^YA-\d{2,}$"), "constants.tsv": ("constant_id", r"^YK-\d{2,}$"),
-       "cases.tsv": ("case_id", r"^YC-\d{2,}$"), "citations.tsv": ("cite_id", r"^YE-[A-F]\d{3}$")}
+       "cases.tsv": ("case_id", r"^YC-\d{2,}$"), "citations.tsv": ("cite_id", r"^YE-[A-F]\d{3,}$")}
 BASES = {"today", "in force", "occurred", "provided for"}
 FETCHED = {"inside Yemen", "outside Yemen", "attestation"}
 WHO = {"agent", "founder", "reader"}
@@ -108,8 +108,8 @@ if "--pass1" in sys.argv:
     conds = read(f"pass1/conditions-{part}.tsv", "conditions.tsv") or []
     cits = read(f"pass1/citations-{part}.tsv", "citations.tsv") or []
     cid_set = {c["cite_id"] for c in cits}
-    for name, recs, key, pat in (("conditions", conds, "condition_id", rf"^YQ-{part}\d{{3}}$"),
-                                 ("citations", cits, "cite_id", rf"^YE-{part}\d{{3}}$")):
+    for name, recs, key, pat in (("conditions", conds, "condition_id", rf"^YQ-{part}\d{{3,}}$"),
+                                 ("citations", cits, "cite_id", rf"^YE-{part}\d{{3,}}$")):
         for k, n in Counter(r[key] for r in recs).items():
             if n > 1:
                 err(name, k, f"id used {n} times")
