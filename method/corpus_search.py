@@ -4,10 +4,13 @@
 # audit re-runs. Matching ignores case, Arabic diacritics and tatweel, and the spelling variants of alef, ta
 # marbuta and alef maqsura.
 #
+# The observed repositories' fetch archives (WARC) are searched too. Their text is extracted once per commit into a
+# cache outside the repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
+#
 # Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N]
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
 #   (every TERM with --all). At most N documents per corpus are listed (default 40).
-import csv, glob, json, os, re, subprocess, sys, unicodedata
+import csv, glob, gzip, json, os, re, subprocess, sys, unicodedata, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quote_check import norm, HARAKAT, html_text
 
@@ -21,6 +24,9 @@ HOSTS = {  # captured pages in this repository's runs, by the host they came fro
     "zid": r"(^|\.)zid\.(sa|dev)$",
     "bigcommerce": r"(^|\.)(bigcommerce\.com|commerce\.com|bitpay\.com)$",
 }
+ARCHIVES = {"salla": "observed-sa", "shopify": "observed-sh"}   # whose fetch archives each platform's search reads
+CACHE = os.path.join(os.path.expanduser("~"), ".cache", "sharrwah-corpus")
+TEXTUAL = re.compile(r"(?i)text/html|application/xhtml|text/plain|text/markdown|application/json|text/x-markdown")
 HELD = {  # text corpora held in the observed repositories: (repository, path glob, format)
     "salla": [("observed-sa", "structures/salla/help-articles/ar/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/help-articles/en/texts.jsonl", "articles"),
@@ -45,6 +51,94 @@ def git_files(repo, pattern):
         if rx.match(n):
             yield commit, n, subprocess.run(["git", "-C", root, "show", f"{commit}:{n}"],
                                             capture_output=True).stdout.decode("utf-8", "replace")
+
+def members(path):
+    """(offset, bytes) of each gzip member of a fetch archive: one WARC record each."""
+    with open(path, "rb") as f:
+        offset, buf = 0, b""
+        while True:
+            if not buf:
+                buf = f.read(1 << 20)
+                if not buf:
+                    return
+            d, out, start = zlib.decompressobj(16 + zlib.MAX_WBITS), [], offset
+            while True:
+                out.append(d.decompress(buf))
+                if d.eof:
+                    used = len(buf) - len(d.unused_data)
+                    offset += used
+                    buf = d.unused_data
+                    break
+                offset += len(buf)
+                buf = f.read(1 << 20)
+                if not buf:
+                    return
+            yield start, b"".join(out)
+
+def record_text(raw):
+    """(target URI, text) of a 2xx textual response record, or None."""
+    head, _, rest = raw.partition(b"\r\n\r\n")
+    warc = dict(l.split(": ", 1) for l in head.decode("utf-8", "replace").split("\r\n")[1:] if ": " in l)
+    if warc.get("WARC-Type") != "response":
+        return None
+    http_head, _, body = rest.partition(b"\r\n\r\n")
+    hh = http_head.decode("iso-8859-1", "replace").split("\r\n")
+    if not re.match(r"^HTTP/\S+ 2\d\d", hh[0] if hh else ""):
+        return None
+    headers = {l.split(":", 1)[0].strip().lower(): l.split(":", 1)[1].strip() for l in hh[1:] if ":" in l}
+    ctype = headers.get("content-type", "")
+    if not TEXTUAL.search(ctype):
+        return None
+    try:
+        if "chunked" in headers.get("transfer-encoding", "").lower():
+            out, rest2 = b"", body
+            while True:
+                size_line, _, rest2 = rest2.partition(b"\r\n")
+                size = int(size_line.split(b";")[0] or b"0", 16)
+                if size == 0:
+                    break
+                out, rest2 = out + rest2[:size], rest2[size + 2:]
+            body = out
+        if headers.get("content-encoding", "").lower() == "gzip":
+            body = gzip.decompress(body)
+        elif headers.get("content-encoding", "").lower() == "br":
+            return None
+    except Exception:
+        return None
+    cs = re.search(r"charset=([\w-]+)", ctype)
+    text = body.decode(cs.group(1) if cs else "utf-8", "replace")
+    if re.search(r"html", ctype, re.I):
+        text = html_text(text)
+    return warc.get("WARC-Target-URI", ""), text[:400000]
+
+def archive_documents(repo):
+    """Documents of a repository's fetch archives, from the cache for its current commit, built if missing."""
+    root = REPOS[repo]
+    commit = subprocess.run(["git", "-C", root, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
+    cache = os.path.join(CACHE, f"{repo}-{commit}.jsonl.gz")
+    if not os.path.exists(cache):
+        os.makedirs(CACHE, exist_ok=True)
+        names = [n for n in subprocess.run(["git", "-C", root, "ls-files"], capture_output=True, text=True).stdout.split("\n")
+                 if n.endswith(".warc.gz")]
+        tmp = f"{cache}.{os.getpid()}.part"           # each builder writes its own file; the last finished wins
+        with gzip.open(tmp, "wt", encoding="utf-8") as out:
+            for n in names:
+                p = os.path.join(root, n)
+                if not os.path.isfile(p):
+                    continue
+                print(f"building the archive text cache: {n}", file=sys.stderr)
+                try:
+                    for off, raw in members(p):
+                        got = record_text(raw)
+                        if got and got[1].strip():
+                            out.write(json.dumps({"path": n, "offset": off, "uri": got[0], "text": got[1]}, ensure_ascii=False) + "\n")
+                except Exception as e:
+                    print(f"  stopped reading {n}: {e}", file=sys.stderr)
+        os.replace(tmp, cache)
+    with gzip.open(cache, "rt", encoding="utf-8") as f:
+        for line in f:
+            o = json.loads(line)
+            yield (f"{repo} fetch archives", f"{repo}@{commit}:{o['path']}@{o['offset']}", o["uri"], "", o["text"])
 
 def documents(platform):
     """(corpus, locator, url, title, text) for every held document of the platform."""
@@ -72,6 +166,8 @@ def documents(platform):
                     yield (f"{repo}:{name}", f"{repo}@{commit}:{name} line {i}", "", "", line)
             else:
                 yield (f"{repo}:{name}", f"{repo}@{commit}:{name}", "", "", raw)
+    if platform in ARCHIVES:
+        yield from archive_documents(ARCHIVES[platform])
     head = subprocess.run(["git", "-C", SKM, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
     for mf in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/runs/*/manifest.tsv"))):
         run = os.path.dirname(mf)
