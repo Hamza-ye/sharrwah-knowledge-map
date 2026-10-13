@@ -91,7 +91,13 @@ Agents started earlier keep their effort.
     - B may rest an answer on its own translation, marked as its own.
 - **A2 is done** for Salla, WooCommerce, Zid and BigCommerce, at `medium` effort. Shopify had no gap. The four platforms added 72 statements in all.
   - **A miss.** The founder pointed at Salla's help articles on payout settlement. One of them ("Salla Payments Kuwait payouts settlement") is held, but neither phase A nor A2 read it. Salla's A2 is re-running at `high`, with a sweep of every held help article in both languages that uses Salla's own words for the subject. This follows the effort policy's re-run rule.
-  - **Captured:** the live pages A2 cites (run `20261013T003518Z-s01-a2-sources`), with BigCommerce's unread Help Center pages tried in a browser.
+  - **Captured:** the live pages A2 cites (run `20261013T003518Z-s01-a2-sources`). With them, all 1,209 quotes are found.
+    - BigCommerce's Help Center pages render empty even in a browser.
+    - The held index now counts an empty capture as held but not readable, so the reader must be extended there.
+- **Claims of absence are audited** (step A3, `PLAN.md` section 11), after the founder's note: "agents need to pay attention to what they think isn't there".
+  - `method/corpus_search.py` searches a platform's held corpora in every language they hold. Its first run found the UAE and Kuwait settlement articles held since Q1's capture of 10 October.
+  - An agent that made none of the claims audits every gap and absence.
+  - A "searched, not found" must show its corpus search. The checker enforces both.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
   - B, A2, capture and kinds again, B's second pass, C;
@@ -122,7 +128,9 @@ Agents started earlier keep their effort.
 - at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript.
 
 **Agents running when last checked (12 October 2026, 23:58 UTC):**
-- **Pilot A2, Salla's re-run:** agent `ad85e03ee6e56e170` (`high`). Phase B's agent `a9e10fcc19233f104` is resumed for the second pass after it.
+- **Pilot A2, Salla's re-run:** agent `ad85e03ee6e56e170` (`high`). It sweeps every held help article, in both languages and by country (Kuwait, UAE).
+- **Pilot A3, absence audits:** one agent per platform (`high`), none of whom made the claims. Shopify `a173380272d4ca839`, WooCommerce `a3328139ad72099a3`, Zid `a009ce5ff1f1df173`, BigCommerce `a8e8664707525d3d1`. Salla's audit runs after its A2 re-run.
+- **Then:** phase B's agent `a9e10fcc19233f104` is resumed for the second pass.
 - **Stage 1 pass 2, step 2a:** one agent (`a4a6021a9605c1efe`, `max`), writing `groups.tsv`, `places.tsv` and `notes.md` in `studies/yemen-cases/`. It is resumed later for step 2c.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
