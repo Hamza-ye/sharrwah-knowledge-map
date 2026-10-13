@@ -28,7 +28,7 @@ YG-026	Whether the new 50- and 100-rial coins and 200-rial notes may be used for
 YG-027	Whether the central bank in Aden is issuing new banknotes	whether new notes are being printed or a new issue approved, and how much	YQ-E604, YQ-E886	
 YG-028	Whether worn or damaged banknotes are accepted in payment	accepted, or refused by merchants and in daily trade	YQ-B053, YQ-C451, YQ-D021, YQ-E057	Joins parts B to E.
 YG-029	How much of the cash in circulation is usable	the share of notes that are sound or damaged, and which denominations are affected	YQ-C450, YQ-C464, YQ-E182, YQ-E288, YQ-E289	Joins parts C and E. Part C's YQ-C450 and YQ-C464 were worded with the problems of paying in banknotes; they give the share of sound notes.
-YG-030	Problems of paying in cash	the problems named (damaged notes, change, counting, sorting, moving and the risks of carrying cash)	YQ-C177, YQ-C193, YQ-C266, YQ-C325, YQ-C355	Drawbacks of cash that payment providers name on their own pages.
+YG-030	Problems of paying in cash	the problems named (damaged notes, change, counting, sorting, moving and the risks of carrying cash)	YQ-C177, YQ-C193, YQ-C266, YQ-C325, YQ-C342, YQ-C355	Drawbacks of cash that payment providers name on their own pages. YQ-C342 names the risks of cash on delivery.
 YG-031	How available rial cash is	ample, short or in crisis, and in which notes	YQ-B052, YQ-B159, YQ-C207, YQ-C443, YQ-C457, YQ-D066, YQ-D100, YQ-D283, YQ-D328, YQ-D483, YQ-E602, YQ-E603, YQ-E665	Joins parts B to E. Sources disagree for Aden in February 2026 (YQ-D066, YQ-E602, YQ-E603).
 YG-032	Whether one currency and one central bank serve the whole country	one currency and central bank, or two (with notes accepted only in part of the country and two exchange rates)	YQ-D192, YQ-D206, YQ-D225, YQ-D308, YQ-D422, YQ-D527, YQ-D540, YQ-E109, YQ-E177, YQ-E201, YQ-E253, YQ-E551, YQ-E592, YQ-E593, YQ-E630, YQ-E646, YQ-E724, YQ-E755, YQ-E874	Joins parts D and E. Also part E's 'Monetary authority over banks and payments' and part D's YQ-D206, which state the same split of the central bank; YQ-E724 and YQ-D540 report it in the same words.
 YG-033	Currency in which domestic sales and contracts must be paid	the rial only, or whether a seller may require or a buyer may use foreign currency, and the exceptions	YQ-A019, YQ-A020, YQ-B097, YQ-D401, YQ-E393, YQ-E426, YQ-E480, YQ-E631, YQ-E730, YQ-E848, YQ-E867, YQ-E889	Joins parts A, B, D and E. YQ-A019, YQ-A020, YQ-E730 and YQ-E848 report the Council of Ministers decision No. 13 of 2025 under different place names; YQ-E631 and YQ-E889 its implementation by the Ministry of Justice.
@@ -146,7 +146,7 @@ YG-144	Whether a buyer can send money within Yemen through a transfer network	av
 YG-145	Whether buyers have digital transfers available	available or not, and to whom	YQ-D022	
 YG-146	What a bank's transfer agencies offer customers	the services offered	YQ-C429	
 YG-147	Whether a buyer can pay for purchases at shops from a phone wallet or bank app	available or not at the service named (how: points of sale, store codes, QR)	YQ-C002, YQ-C006, YQ-C011, YQ-C030, YQ-C035, YQ-C045, YQ-C051, YQ-C056, YQ-C059, YQ-C146, YQ-C149, YQ-C160, YQ-C165, YQ-C170, YQ-C186, YQ-C191, YQ-C212, YQ-C223, YQ-C239, YQ-C257, YQ-C277, YQ-C284, YQ-C324, YQ-C330, YQ-C337, YQ-C345, YQ-C353, YQ-C357, YQ-C408, YQ-C415, YQ-C423, YQ-D144, YQ-D151, YQ-D163, YQ-D563, YQ-D571, YQ-D619, YQ-E012, YQ-E020, YQ-E050, YQ-E059, YQ-E207, YQ-E671, YQ-E740	Joins parts C, D and E: each wallet's or bank app's payments at merchants (Hasseb, merchant payments, points of sale). Online purchases, bills and transfers to persons are separate conditions, since a service can offer one and not another; rows listing a wallet's whole range of services are in the condition on which services a wallet offers.
-YG-148	Whether a buyer can pay for online purchases from a phone wallet or bank app	available, coming later, or not, at the wallet or at the online store named (and which wallets the store accepts)	YQ-C039, YQ-C053, YQ-C082, YQ-C147, YQ-C150, YQ-C156, YQ-C291, YQ-C358, YQ-C431, YQ-C472, YQ-C496, YQ-C498, YQ-C520, YQ-C539, YQ-C552, YQ-C574, YQ-C578, YQ-C583, YQ-C590, YQ-D123, YQ-D147, YQ-D183, YQ-D299, YQ-D599, YQ-D613, YQ-D618, YQ-E682	Joins parts C, D and E: wallets' online payment and online stores' acceptance of wallets. Also part D's rows on buyers paying online stores through a wallet or Haseb, and stores accepting them.
+YG-148	Whether a buyer can pay for online purchases from a phone wallet or bank app	available, coming later, or not, at the wallet or at the online store named (and which wallets the store accepts)	YQ-C039, YQ-C053, YQ-C082, YQ-C147, YQ-C150, YQ-C156, YQ-C291, YQ-C358, YQ-C431, YQ-C472, YQ-C496, YQ-C498, YQ-C520, YQ-C539, YQ-C552, YQ-C574, YQ-C578, YQ-C583, YQ-C590, YQ-D123, YQ-D147, YQ-D183, YQ-D299, YQ-D599, YQ-D613, YQ-D618, YQ-E682, YQ-E847	Joins parts C, D and E: wallets' online payment and online stores' acceptance of wallets. Also part D's rows on buyers paying online stores through a wallet or Haseb, and stores accepting them. YQ-E847 is Al-Kuraimi's post on paying in shopping apps through Hasib.
 YG-149	Whether a buyer can pay bills and fees from a phone wallet or bank app	available or not at the service named (the bills named are detail)	YQ-A012, YQ-C009, YQ-C017, YQ-C022, YQ-C023, YQ-C032, YQ-C036, YQ-C047, YQ-C052, YQ-C058, YQ-C063, YQ-C148, YQ-C154, YQ-C171, YQ-C187, YQ-C195, YQ-C210, YQ-C224, YQ-C240, YQ-C260, YQ-C278, YQ-C286, YQ-C327, YQ-C346, YQ-C407, YQ-C414, YQ-C419, YQ-C420, YQ-C421, YQ-C425, YQ-C440, YQ-C565, YQ-D573	Joins parts A, C and D, including SabaCard's bill payments (YQ-A012) and billers' acceptance of wallets (YQ-C440, YQ-C565).
 YG-150	Whether a buyer can send money to another person from a phone wallet or bank app	available or not at the service named	YQ-C003, YQ-C008, YQ-C019, YQ-C028, YQ-C046, YQ-C048, YQ-C057, YQ-C155, YQ-C167, YQ-C185, YQ-C192, YQ-C211, YQ-C221, YQ-C237, YQ-C251, YQ-C276, YQ-C285, YQ-C403, YQ-C410, YQ-C418	
 YG-151	Whether a buyer can use a phone wallet without internet or a smartphone	available by SMS or USSD or on basic phones, or the app needs internet	YQ-C004, YQ-C012, YQ-C025, YQ-C060, YQ-C064, YQ-C180, YQ-C188, YQ-C190, YQ-C208, YQ-C250, YQ-C262, YQ-C294, YQ-C316, YQ-C338, YQ-C356, YQ-D124, YQ-D149, YQ-D565, YQ-D579, YQ-E054, YQ-E073, YQ-E238, YQ-E670, YQ-E741	Joins parts C, D and E: part C's paying by SMS, paying without internet and use from a basic phone, which are the same availability.
@@ -236,7 +236,7 @@ YG-234	Whether a financial service provider may make exclusive arrangements with
 YG-235	What a wallet agent may do, and who may be one	the activities allowed and the agent's qualifications	YQ-F097	
 YG-236	Whether payment providers' systems must work with each other	required or approved, or not	YQ-D281, YQ-F108, YQ-F109	Joins parts D and F: the Aden central bank's rules and its board's approval of linking e-wallets.
 YG-237	Whether a merchant can take online payments through a wallet's or bank's payment API	available or not at the provider named (its gateway or API), and whether integration code exists	YQ-C081, YQ-C242, YQ-C341, YQ-D096, YQ-D523, YQ-D620, YQ-E009, YQ-E076, YQ-E077, YQ-E583, YQ-E676, YQ-F028, YQ-F034, YQ-F035, YQ-F036, YQ-F037, YQ-F038, YQ-F042, YQ-F046, YQ-F055, YQ-F062, YQ-F071, YQ-F078	Joins parts C to F: providers' own pages on linking stores and apps, part E's integration code, and part F's 'wallet or bank payment gateways a merchant can call through an API'.
-YG-238	Whether online card-payment gateways are available to merchants	available, lacking, or stopped	YQ-D180, YQ-E711, YQ-E717, YQ-E829	Joins parts D and E.
+YG-238	Whether online card-payment gateways are available to merchants	available, lacking, or stopped	YQ-D180, YQ-E711, YQ-E717, YQ-E718, YQ-E829	Joins parts D and E. YQ-E718 is MEPS Yemen's e-invoicing card payment links.
 YG-239	Whether a merchant can receive buyers' payments at the point of sale through a wallet or bank	available or not at the service named	YQ-C007, YQ-C031, YQ-C090, YQ-C202, YQ-C258, YQ-C303, YQ-C323, YQ-C359, YQ-D590, YQ-D603, YQ-D614, YQ-D616	Joins parts C and D.
 YG-240	How a merchant takes wallet payments at the point of sale	by QR code, point-of-sale number, phone number or card	YQ-C042, YQ-C144, YQ-C196, YQ-C215, YQ-C312, YQ-D133, YQ-D142, YQ-D152, YQ-D159, YQ-D164, YQ-D576	Joins parts C and D: part C's acceptance by QR code and part D's 'how merchants receive e-wallet payments'.
 YG-241	Which services a phone wallet offers merchants	the range of merchant services listed	YQ-E034, YQ-E680	
@@ -298,3 +298,135 @@ YG-296	Who provides payment services	banks, money exchangers, the post	YQ-D316, 
 YG-297	Which payment services the post office offers	the services	YQ-E168	
 YG-298	Whether payment providers can use mobile networks' USSD and voice channels	available or refused	YQ-E234	
 YG-299	Whether a buyer can cancel a money transfer already sent	allowed, and within what time	YQ-E046, YQ-E065	
+YG-300	Whether a buyer can pay cash on delivery for an online order	available or not at the seller or app named	YQ-C471, YQ-C478, YQ-C485, YQ-C494, YQ-C499, YQ-C519, YQ-C540, YQ-C557, YQ-C560, YQ-C563, YQ-C569, YQ-C575, YQ-C584, YQ-C589, YQ-D121, YQ-D129, YQ-D137, YQ-D297, YQ-E533, YQ-E849	Joins parts C, D and E.
+YG-301	Which payment method online buyers mostly use	cash on delivery or electronic payment, and their shares	YQ-D176, YQ-E102, YQ-E572, YQ-E709, YQ-E752	Joins parts D and E.
+YG-302	Which payment methods an online seller, app or courier accepts	the methods listed (cash on delivery, wallets, bank, cards, in-app wallet)	YQ-C486, YQ-E025, YQ-E031, YQ-E144, YQ-E563, YQ-E833	Joins parts C and E: rows that list a seller's methods together. Single methods are in their own conditions.
+YG-303	Whether a buyer can pay an online seller by money transfer	available or not, by exchange-company or bank transfer, and in advance	YQ-C497, YQ-C500, YQ-D073, YQ-D177, YQ-D298, YQ-D300, YQ-E084	Joins parts C, D and E.
+YG-304	How a buyer proves payment to an online seller	the proof sent	YQ-D301	
+YG-305	Whether a buyer can pay an online order from a wallet topped up in the seller's app	available or not	YQ-C585	
+YG-306	What a buyer must give to authorize an online wallet payment	the codes and numbers required	YQ-C087, YQ-C566, YQ-E679	Joins parts C and E.
+YG-307	Whether a buyer can order deliveries through a delivery app	available or not at the app named, and what it delivers	YQ-C363, YQ-C470, YQ-C474, YQ-C475, YQ-C476, YQ-C477, YQ-C483, YQ-C484, YQ-C487, YQ-C576, YQ-C581, YQ-C588, YQ-D127, YQ-D136, YQ-E030	Joins parts C, D and E, including part E's list of delivery apps (YQ-E030).
+YG-308	Whether online orders are delivered to the buyer's door	delivered or not, by the seller, an app or a delivery company, and where	YQ-C562, YQ-C573, YQ-D048, YQ-D122, YQ-D181, YQ-D184, YQ-E850, YQ-E851	Joins parts C, D and E, including part C's ordering from a seller's own site for delivery.
+YG-309	Who delivers online orders to buyers	the seller's own fleet, the buyer, or logistics companies	YQ-E142, YQ-E143	
+YG-310	How easily goods can be delivered to buyers	constrained by roads, fuel, logistics, closures, or not	YQ-E135, YQ-E145, YQ-E537	
+YG-311	Whether a buyer can order a delivery by phone call when the internet is slow	available or not	YQ-C480, YQ-C587, YQ-E027	Joins parts C and E.
+YG-312	Whether a buyer can order from several stores in one basket	available or not	YQ-C481, YQ-C482	A review asks for it (YQ-C481); the later feature list says it was added (YQ-C482).
+YG-313	Whether prices on delivery apps match shop prices	the same, or higher	YQ-E028, YQ-E029	The app's claim and a user's review disagree.
+YG-314	Delivery fee for an online order	free, by zone, by distance and weight, or high	YQ-C479, YQ-C556, YQ-C564, YQ-C586, YQ-E032, YQ-E569, YQ-E573, YQ-E852	Joins parts C and E.
+YG-315	Delivery time for an online order within Yemen	the time, by destination	YQ-C502, YQ-C503, YQ-C524, YQ-C525, YQ-C544, YQ-C545, YQ-C546, YQ-C559, YQ-E562	Joins parts C and E, including a courier's delivery times (YQ-E562).
+YG-316	Whether online sellers ship orders to other governorates	available or not, and through which carriers	YQ-C495, YQ-C561, YQ-C568, YQ-D047, YQ-D067	Joins parts C and D, including part D's shipping of goods between governorates.
+YG-317	Whether delivery services through online platforms are regulated	regulated or not	YQ-B156	
+YG-318	Whether a buyer or merchant can send goods by parcel post	available or not, and where	YQ-C488	
+YG-319	Whether a parcel sent by post can be insured	the insurance offered	YQ-C489	
+YG-320	Whether a parcel sent by post can be tracked online	available or not	YQ-C491	
+YG-321	Fee to send a parcel by post	how it is set	YQ-C492	
+YG-322	Delivery time for a parcel sent by post	the time, by destination	YQ-C493	
+YG-323	Whether a buyer can pay for, collect or return an online order at the seller's shop	available or not	YQ-C501	
+YG-324	Whether a buyer can return or exchange an online purchase	allowed or not, within what time, and on what conditions	YQ-C504, YQ-C522, YQ-C543, YQ-C558, YQ-C570, YQ-D075, YQ-E033	Joins parts C, D and E.
+YG-325	What a buyer must do to return an online purchase	the steps	YQ-C571	
+YG-326	When a buyer is refunded for a returned online purchase	the time and method	YQ-C572	
+YG-327	Whether a buyer gets money back for an order the seller cancels	refunded, or problems	YQ-C473	
+YG-328	Whether a buyer can try and inspect a product before buying it	available or not	YQ-C505	
+YG-329	How a buyer can raise a problem with an online order	the channels	YQ-C507	
+YG-330	Whether a buyer can have the seller supply a product on request	available or not	YQ-C508, YQ-C577	
+YG-331	Whether a buyer can buy from foreign online stores for delivery in Yemen	available or not, through which intermediary, app, courier or reseller, and for which stores	YQ-C509, YQ-C526, YQ-C527, YQ-C528, YQ-C530, YQ-C547, YQ-C548, YQ-C554, YQ-C555, YQ-C582, YQ-D074, YQ-D128, YQ-E026, YQ-E083, YQ-E568	Joins parts C, D and E.
+YG-332	Whether foreign online stores ship to Yemen	ship directly or not, and for which products	YQ-C549, YQ-E082	Joins parts C and E.
+YG-333	Whether a merchant can order wholesale from a foreign online store through an intermediary	available or not	YQ-C517, YQ-C536	
+YG-334	How goods bought abroad are carried into Yemen	the carrier and who bears breakage	YQ-E086	
+YG-335	Whether a buyer can pay foreign online stores	possible or not, and with which card, bank or wallet	YQ-C161, YQ-D098, YQ-D102, YQ-D132, YQ-D158, YQ-E085	Joins parts C, D and E.
+YG-336	Whether a buyer can pay for foreign purchases in rials	available or not, through whom	YQ-C510, YQ-C529, YQ-C532	
+YG-337	What a buyer must do to buy from a foreign store through an intermediary	the steps	YQ-C511, YQ-C533, YQ-C550	
+YG-338	Whether a buyer can get photos of goods bought abroad before shipping	available or not	YQ-C512	
+YG-339	Whether a buyer can have goods bought abroad inspected	available or not, and the fee	YQ-C513	
+YG-340	What a buyer pays for an order bought abroad through an intermediary	the price, delivery and customs costs charged, or free delivery	YQ-C514, YQ-C531, YQ-C538	The same post's heading offers free delivery (YQ-C531) while its text adds delivery and customs costs (YQ-C538).
+YG-341	Whether a buyer is refunded if an order from abroad does not arrive	guaranteed or not	YQ-C515, YQ-C534	
+YG-342	Delivery time for an order from abroad	the time	YQ-C516, YQ-C523, YQ-C535, YQ-C551	
+YG-343	How an order bought abroad is delivered within Yemen	where and when it is delivered	YQ-C518, YQ-C542, YQ-C553	
+YG-344	Whether a buyer can pay part of an order from abroad on arrival	the split	YQ-C521, YQ-C541	
+YG-345	Whether a buyer can negotiate the price of an order through an intermediary	possible or not	YQ-C537	
+YG-346	Currency in which online sellers price goods	the rial, the US dollar, the Saudi riyal or other foreign currencies	YQ-D169, YQ-E140, YQ-E536	Joins parts D and E.
+YG-347	Channels through which merchants sell online	social media, WhatsApp, or specialised platforms	YQ-D072, YQ-E081, YQ-E090, YQ-E138, YQ-E532, YQ-E753, YQ-E834	Joins parts D and E.
+YG-348	Whether merchants can sell through an online marketplace	available or not, and the fee	YQ-D170	
+YG-349	Whether online stores need a government licence or approval	approved, licensed, or rules under consideration	YQ-D171, YQ-E535	Joins parts D and E.
+YG-350	How buyers find online sellers they trust	the means	YQ-E091	
+YG-351	Whether paying online sellers in advance carries a risk of fraud	the risk reported	YQ-E887	
+YG-352	Whether a courier collects payment on delivery for merchants	available or not	YQ-E564	
+YG-353	What a merchant must provide to open a business account with a courier	the details required	YQ-E565	
+YG-354	What a customer must provide to open a courier account	the details required	YQ-E566	
+YG-355	Whether an online store can be linked to a courier	available, or being developed	YQ-E570	
+YG-356	Which delivery destinations a merchant can offer at checkout	the destinations	YQ-F077	
+YG-357	Whether a merchant can buy stock from a supplier through an app	available or not, and how it pays	YQ-C567	
+YG-358	Whether a merchant must be entered in the commercial register to trade	required or not, and for whom	YQ-B068, YQ-F123, YQ-F155	Joins parts B and F: the commercial register law of 1991 (YQ-B068 and YQ-F155 read the same article from the text layer and from OCR) and its 2019 executive regulation (YQ-F123).
+YG-359	When an individual merchant must apply for entry in the commercial register	the deadline	YQ-B071, YQ-B129	
+YG-360	When a company must apply for entry in the commercial register	the deadline	YQ-B132, YQ-B134	The law gives sixty days (YQ-B132), the ministry's page thirty (YQ-B134).
+YG-361	When a foreign company's branch or agency must apply for entry in the commercial register	the deadline	YQ-B133	
+YG-362	Which merchants are exempt from the commercial register	who is exempt	YQ-B070	
+YG-363	Whether a merchant needs a fixed place of business	required, and any exception	YQ-B069, YQ-B135, YQ-F125, YQ-F157	Joins parts B and F: the commercial register law (YQ-B069, YQ-F157, the same article), its 2019 regulation (YQ-F125) and the ministry's page (YQ-B135).
+YG-364	How long a commercial register entry lasts before it must be renewed	the period, the renewal fee and the late fine	YQ-B072, YQ-F124, YQ-F156	Joins parts B and F; YQ-B072 and YQ-F156 read the same article.
+YG-365	What a merchant must show on its business correspondence and shopfront	the details required	YQ-B073, YQ-F126, YQ-F158, YQ-F161	Joins parts B and F: the commercial register law, its regulation and the trade names law.
+YG-366	Whether a merchant may let another person use its commercial register entry	allowed or not	YQ-F127	
+YG-367	Whether a merchant must register its trade name to trade	required, by when and where	YQ-F159	
+YG-368	What trade name a merchant may register	the names allowed and barred	YQ-F160	
+YG-369	How long a trade-name reservation lasts	the period	YQ-B137	
+YG-370	Who may act as a commercial agent of a foreign company	the agent's nationality, residence, register and company ownership	YQ-B102, YQ-B142	
+YG-371	Whether a commercial agency for a foreign company must be licensed and registered	required, from whom and by when	YQ-B103, YQ-F128	Joins parts B and F: the agencies law of 1997 and its 2000 executive regulation.
+YG-372	What registering a commercial agency requires	the documents and conditions	YQ-B143	
+YG-373	Whether commercial agencies whose licences were revoked or struck off can be restored	restorable within a grace period, or not	YQ-B149, YQ-E369	Joins parts B and E.
+YG-374	Whether goods needing maintenance may be imported without a registered agency	allowed or not	YQ-B104	
+YG-375	What an agent selling foreign vehicles, machinery or appliances must provide	the after-sales duties	YQ-F129	
+YG-376	Whether goods under a registered agency may be imported other than through the agent	allowed, and when	YQ-B105	
+YG-377	In which fields a foreign company may operate through a branch in Yemen	the fields allowed	YQ-B106, YQ-F130	Joins parts B and F: the agencies law and its regulation.
+YG-378	What a foreign company's branch needs before operating in Yemen	the licence and registration required	YQ-B110	
+YG-379	Whether a foreign business needs a Yemeni partner	required or not	YQ-D194	
+YG-380	Which legal forms a commercial company may take	the forms	YQ-B107	
+YG-381	Who may be a general partner in a partnership company	the qualifications	YQ-B108	
+YG-382	How many shareholders and how much capital a joint-stock company needs	the minimums	YQ-B109	
+YG-383	Who must make up the majority of a joint-stock company's board	the requirement	YQ-B111	
+YG-384	How many partners a limited-liability company may have	the range	YQ-B112	
+YG-385	What minimum capital a limited-liability company needs	the minimum	YQ-B113	
+YG-386	Who licenses a limited-liability company, and how fast	the body and the deadline	YQ-B114	
+YG-387	Who may found a commercial company, and how many founders it needs	the founders' number and qualifications	YQ-B136	
+YG-388	Whether a merchant can apply online for the ministry's registrations	yes through the e-portal, or online then at the office	YQ-B125, YQ-B130, YQ-B138, YQ-B144, YQ-B147, YQ-B148, YQ-B153, YQ-F133	Joins parts B and F. Sources give 76 (YQ-B148) and 72 (YQ-B153) as the number of services offered online.
+YG-389	Whether a commercial-registration applicant must attend in person	in person or by proxy, or not	YQ-B140, YQ-B141	
+YG-390	What an individual needs to enter the commercial register	the documents and time	YQ-B124	
+YG-391	What an individual trading establishment needs to enter the commercial register	the documents and time	YQ-B127	
+YG-392	Whether a foreigner may enter the commercial register as an individual merchant	allowed, with what permits	YQ-B128	
+YG-393	What form a commercial register takes	paper or electronic	YQ-B146	
+YG-394	Whether a merchant needs other authorities' licences besides the commercial register before trading	required or not	YQ-F134	
+YG-395	What government fees small producers and small projects pay	exempt, or the fees	YQ-B152, YQ-B160, YQ-B161, YQ-B162	Part B, including the free trade-name registration for productive families (YQ-B161).
+YG-396	How quickly a small project's permit application must be decided	the deadline	YQ-B163	
+YG-397	Whether investors may transfer profits and capital abroad	allowed, and on what condition	YQ-D197, YQ-F148	Joins parts D and F: the 2010 investment law as a source describes it, and the 2025 law.
+YG-398	Whether a trading business can get the investment law's guarantees and incentives	covered or excluded	YQ-F147	
+YG-399	Whether an investment project must run its finances through a licensed bank	required or not	YQ-F149	
+YG-400	How an exporting project must bring in export proceeds to get export incentives	the requirement	YQ-F150	
+YG-401	Whether American and Israeli goods may be imported and sold	banned or allowed, the grace period, and enforcement	YQ-B067, YQ-B122, YQ-B123, YQ-E358, YQ-E438, YQ-F131	Joins parts B, E and F: the Prime Minister's decision No. 10 of 1446 and the directives around it. Sources date the directive to 23 and 25 April 2025.
+YG-402	Which other goods may not be imported	the goods banned or restricted (local-product protection, health and other bans)	YQ-B151, YQ-D201, YQ-D530, YQ-E359, YQ-E370, YQ-E459	Joins parts B, D and E.
+YG-403	Whether petroleum may be imported through Houthi-controlled ports under US rules	allowed, or banned and enforced	YQ-D400, YQ-D559, YQ-E335	Joins parts D and E.
+YG-404	Whether consumer-protection rules cover online sales	covered or not	YQ-B074, YQ-D500	Joins parts B and D: the same article of law No. 46 of 2008.
+YG-405	What a label on goods offered for sale must show	the data required and the language	YQ-B075, YQ-D501	Joins parts B and D: the same article of law No. 46 of 2008.
+YG-406	Whether goods are sold with accurate labels	accurate, or relabelled	YQ-E504	
+YG-407	In what language a seller must give product and service details	the language	YQ-B076	
+YG-408	What a seller must show on the documents it issues to consumers	the data required	YQ-B077, YQ-B090, YQ-D505	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-409	How a seller must show prices	written on the goods, displayed, or advertised	YQ-B078, YQ-B116, YQ-D502	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation. Also the internal trade law of 2007 (YQ-B116).
+YG-410	Whether a seller may refuse a sale, impose other purchases or charge above the announced price	allowed or not	YQ-B079, YQ-B098, YQ-D503	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-411	Whether a seller must give the buyer an invoice	required on request or not, and what it shows	YQ-B080, YQ-B091, YQ-D504	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-412	Whether importers, wholesalers and producers must invoice every sale	required or not	YQ-B117	
+YG-413	What a seller must disclose before an instalment sale	the details required	YQ-B081, YQ-B092, YQ-D506	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-414	What warranty a seller owes on goods and services	the warranty and its period	YQ-B082, YQ-B095, YQ-D507	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-415	Whether a buyer can return defective goods for a refund or exchange	allowed, within what time, and the exceptions	YQ-B083, YQ-B096, YQ-C506, YQ-D508	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation. Also a store's own guarantee of money back for defective goods (YQ-C506).
+YG-416	Whether a seller of goods sold by weight or measure must use approved instruments	required or not	YQ-B084, YQ-D509	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-417	Whether counterfeit or non-conforming goods may be sold	allowed or not	YQ-B085	
+YG-418	Whether a seller may announce discounts or prizes	only under the authorities' rules, or freely	YQ-B086, YQ-D510	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-419	What a seller may advertise	the claims and goods barred	YQ-B087, YQ-D511	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-420	Whether unfair terms in a consumer contract bind the consumer	void or binding	YQ-B088, YQ-B099, YQ-D512	Joins parts B and D: the consumer protection law No. 46 of 2008 (part B from the ministry's PDF, part D from FAOLEX) and part B's executive regulation.
+YG-421	Penalty for breaching consumer protection rules	the penalty	YQ-D514	
+YG-422	Whether the authorities cap prices of basic goods	may cap (a legal power), caps in force, or free market prices	YQ-B089, YQ-B101, YQ-B115, YQ-D195, YQ-D391, YQ-D513, YQ-E428	Joins parts B, D and E: the consumer protection and internal trade laws and reports of caps in force.
+YG-423	How merchants must or do set their prices	on import costs and the daily exchange rate under official rules, or as traders choose	YQ-D060, YQ-D061, YQ-D628, YQ-E843	Joins parts D and E. YQ-D061 and YQ-E843 report the Prime Minister's directives of 2 August 2025; YQ-D060 is his account of traders' practice.
+YG-424	Whether a seller must take and settle consumer complaints	required or not	YQ-B093	
+YG-425	What a seller must do on finding a harmful defect in goods it sells	the duties and deadline	YQ-B094	
+YG-426	Whether sellers may monopolise a market	banned or not	YQ-B100, YQ-B118	Part B: the consumer protection regulation and the internal trade law.
+YG-427	Whether spoiled, damaged or expired goods may be sold	allowed or not, and the penalty	YQ-B119	
+YG-428	Whether prohibited or smuggled goods may be sold	allowed or not, and the penalty	YQ-B120	
+YG-429	Whether pharmacies and private facilities may sell tuberculosis drugs	allowed or not	YQ-B158	
+YG-430	Which consumer protection law is in force	the law	YQ-E505, YQ-E835	
+YG-431	Whether e-commerce has its own legal protection	specific legislation, general commercial laws, or none	YQ-E087, YQ-E120, YQ-E538, YQ-E539, YQ-E540	Sources disagree for April 2025 (YQ-E538, YQ-E539, YQ-E540).
