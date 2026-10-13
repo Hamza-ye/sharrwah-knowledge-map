@@ -53,3 +53,6 @@ pooled merchant funds accounts			S01-WC-C210
 Payout Account			S01-WC-C211
 立替払金		「立替払金」とは、お客様が会員に対する通信販売により取得した売上債権につき、JCBが、会員に代わって、立替払いする金員をいうものとします。	S01-WC-C223;S01-WC-C221
 代理受領			S01-WC-C221
+Unilateral		Unilateral means that the receiver isn’t an existing PayPal account.	S01-WC-C227
+Capture funds			S01-WC-C228;S01-WC-C229
+Instant Payment Notifications (IPN)			S01-WC-C231
