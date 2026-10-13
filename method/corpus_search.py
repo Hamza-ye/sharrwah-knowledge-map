@@ -14,12 +14,12 @@ from quote_check import norm, HARAKAT
 csv.field_size_limit(10**9)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPOS = {"observed-sa": "/home/user/observed-sa", "observed-sh": "/home/user/observed-sh"}
-HOSTS = {  # captured pages in this repository's runs, by the host they came from
-    "shopify": r"shopify\.(com|dev)$|shopify\.com\.|stripe\.com$",
-    "salla": r"salla\.(sa|com|dev)$",
-    "woocommerce": r"woocommerce\.com$|wordpress\.org$|stripe\.com$|woo\.com$",
-    "zid": r"zid\.(sa|dev)$",
-    "bigcommerce": r"bigcommerce\.com$|commerce\.com$|bitpay\.com$",
+HOSTS = {  # captured pages in this repository's runs, by the host they came from (a whole host or its subdomain)
+    "shopify": r"(^|\.)(shopify\.(com|dev)|stripe\.com)$",
+    "salla": r"(^|\.)salla\.(sa|com|dev)$",
+    "woocommerce": r"(^|\.)(woocommerce\.com|wordpress\.org|stripe\.com|woo\.com)$",
+    "zid": r"(^|\.)zid\.(sa|dev)$",
+    "bigcommerce": r"(^|\.)(bigcommerce\.com|commerce\.com|bitpay\.com)$",
 }
 HELD = {  # text corpora held in the observed repositories: (repository, path glob, format)
     "salla": [("observed-sa", "structures/salla/help-articles/ar/texts.jsonl", "articles"),
@@ -97,13 +97,16 @@ def main():
         sys.exit(f"usage: corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N]; PLATFORM is one of {sorted(HOSTS)}")
     platform, terms = args[0], args[1:]
     want = [fold(t) for t in terms]
+    # A term in Latin letters matches whole words; an Arabic term matches inside words, which carry prefixes.
+    pats = [re.compile(r"(?<![a-z0-9])" + re.escape(w) + r"(?![a-z0-9])") if re.search(r"[a-z]", w) else None
+            for w in want]
     shown, total, seen = {}, {}, set()
     for corpus, loc, url, title, text in documents(platform):
         key = (url or loc)
         if key in seen:
             continue
         body = fold(title + "\n" + url + "\n" + text)
-        hits = [w for w in want if w in body]
+        hits = [w for w, p in zip(want, pats) if (p.search(body) if p else w in body)]
         if not hits or (every and len(hits) < len(want)):
             continue
         seen.add(key)
@@ -111,7 +114,8 @@ def main():
         if shown.get(corpus, 0) >= cap:
             continue
         shown[corpus] = shown.get(corpus, 0) + 1
-        i = body.find(hits[0])
+        p0 = pats[want.index(hits[0])]
+        i = p0.search(body).start() if p0 else body.find(hits[0])
         snippet = re.sub(r"\s+", " ", body[max(0, i - 80):i + 160]).strip()
         print(f"{loc}\n    {url}\n    title: {title}\n    matched: {', '.join(terms[want.index(h)] for h in hits)}\n    …{snippet}…")
     print(f"\nsearched {platform} for {terms} ({'every' if every else 'any'} term):",

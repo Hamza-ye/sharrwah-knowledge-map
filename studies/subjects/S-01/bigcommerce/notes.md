@@ -82,3 +82,46 @@ Read on 2026-10-13, following `studies/subjects/S-01/briefs/A2-close-gaps.md`. S
 - **Conditions added to phase A rows.** As the A2 brief allows, I added new stmt_ids to the `conditions` of S01-BC-028, S01-BC-029 and S01-BC-030 (replacing `none stated`) and of S01-BC-034.
 - **A footnote checked and not used.** On the PayPal page, footnote 11 ("Availability may vary depending on merchant’s integration method and geographic location.") sits on "Local payment methods used around the world", not on "Funds credit immediately…", in the raw HTML, so it is not recorded as conditioning S01-BC-023.
 - **Shared scratchpad.** Other agents write to the same scratchpad directory; a helper script of mine was overwritten once by another agent's file of the same name before it ran. Nothing was written to this folder by it; my work then moved to its own subfolder.
+
+# Absence audit
+
+Phase A3, read on 2026-10-13, following `studies/subjects/S-01/briefs/A3-absence-audit.md`. Statements S01-BC-062 to S01-BC-065, citations S01-BC-C080 to S01-BC-C084, two terms and `absence-audit.tsv` are from this phase.
+
+## What I found
+
+- **Claims audited:** eleven gaps, every gap not of kind `page not read`: G02, G08, G09, G10, G12, G14, G15, G19, G20, G22 and G23. `absences.tsv` has no rows.
+- **Contradicted: G02 and G15.** They rest on one held page, the pricing page (`https://www.bigcommerce.com/pricing/`, captured 2026-10-12, which is in G02's own `read`). Its footnote "To qualify for the PayPal Braintree rate" names:
+  - a "PayPal Braintree account", trial and then full;
+  - a "Pricing Contract" the merchant is emailed to sign after approval.
+
+  These are recorded as S01-BC-062 (b). The page's conditions are recorded as S01-BC-063 ("Eligibility requires that you must be a United States-based business.") and S01-BC-064 ("Application for a PayPal Braintree account does not guarantee approval."), both (e) and conditioning S01-BC-062. The page names no licence. It does not say where funds are held.
+- **Confirmed:** G08, G09, G10, G12, G14, G19, G20, G22 and G23. No held document speaks of:
+  - an agent collecting or holding the shopper's payment;
+  - a reserve, withholding, hold or suspension of funds or payouts;
+  - a lien, security interest or set-off;
+  - a licence to hold or transmit funds;
+  - what happens to funds on termination;
+  - refunds to shoppers when a store closes.
+- **Also recorded, as the brief now asks.** S01-BC-065 (end-payout): the BigCommerce Payments page's step "2 Configure", "Add your bank account and set payment preferences."
+- **Read and not recorded.** The UK post's "For full details, see PayPal Merchant Fees." refers BigCommerce Payments' rates to a PayPal fee schedule. It names no terms for holding funds.
+- **Sources.** Every new citation is to a held capture in this repository at commit `7611d459e3e09c1503a27d4f02f57850e82e9ffb` (`access_path` `local`). I did not fetch any live page.
+- **The routes:**
+  - The Help Center articles are held, but `text.txt` is empty and `raw.html` is the application shell ("Loading", "Sorry to interrupt", "CSS Error").
+  - `http://login.bigcommerce.com/deep-links/manage/balance` is not held and was not opened.
+
+## Searches too large to read in full
+
+- `corpus_search.py` matches substrings, and its bigcommerce host pattern `commerce\.com$` also takes in woocommerce.com captures. "terms of service" (122 documents), "refund" (144), "lien" (135, from "client"), "Enterprise" (147), the plan names (88) and "hold" (54) were mostly woocommerce.com pages or matches inside other words. I set the woocommerce.com documents aside as not BigCommerce's.
+- For the remaining 178 held records of the bigcommerce hosts, I read:
+  - each listed snippet;
+  - every passage matching the claim words (reserve, withhold, hold, held, suspend, pause, freeze, delay, agent, behalf, lien, security interest, set-off, licence, regulated, money transmitter, terms, agreement, contract, termination, refund, payout, settle, funds, disburse, deduct, chargeback).
+- I read the payment, marketing, blog and press pages in full, and the legal pages' payment, agency, suspension and termination passages. I read the developer docs (121 pages) only by these passages.
+
+## Problems with the method
+
+- **The host pattern.** `method/corpus_search.py`'s pattern for bigcommerce (`bigcommerce\.com$|commerce\.com$|bitpay\.com$`) matches woocommerce.com, so bigcommerce searches list WooCommerce documents.
+- **Substring matching.** Terms match inside words: "lien" in "client", "reserve" in "preserved", "hold" in "holdings". Short terms list many documents that do not use the word.
+- **G02 and G15 overlap with G13,** a `page not read` gap outside this audit, on the account for providers other than BigCommerce Payments, PayPal and Stripe. S01-BC-062 bears on G13 too. G13 is left unchanged.
+- **Accounts versus funds.** G02 was written in phase A, before A2 recorded S01-BC-051 and S01-BC-055, which name the BigCommerce Payments account. I count a provider account the merchant holds as (b), as A2 did for S01-BC-061 ("Connect or create your Stripe account"). The pricing page names the account and contract only in the steps to a processing rate.
+- **The brief changed while I worked.** It added the instruction to record anything else on the subject in the documents read. I applied it from then on. It produced S01-BC-065.
+- **The checker writes outside this folder.** It writes `studies/subjects/S-01/kinds.tsv`, as noted in phase A.
