@@ -119,7 +119,7 @@ Stripe agreements, rendered (see problem 2):
 
 # Phase A2, 13 October 2026
 
-Variation point S01-VP-12 ("licensed"), from variant S01-V-219 (gap S01-WC-G01). Statements S01-WC-130 to S01-WC-150 and gap S01-WC-G03 were added. S01-WC-108's `conditions` gained S01-WC-131 and S01-WC-132, and S01-WC-119's gained S01-WC-133. No other existing row was changed.
+Variation point S01-VP-12 ("licensed"), from variant S01-V-219 (gap S01-WC-G01). Statements S01-WC-130 to S01-WC-153 and gap S01-WC-G03 were added. S01-WC-108's `conditions` gained S01-WC-131 and S01-WC-132, and S01-WC-119's gained S01-WC-133. No other existing row was changed.
 
 ## What was read
 
