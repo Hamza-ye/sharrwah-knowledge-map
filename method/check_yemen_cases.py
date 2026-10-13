@@ -39,7 +39,10 @@ FETCHED = {"inside Yemen", "outside Yemen", "attestation"}
 WHO = {"agent", "founder", "reader"}
 HOLDS = {"held", "provided for", "ended", "proposed"}
 KINDS = {"area", "authority", "service"}
-SEATS = re.compile(r"(?i)\baden\b|sana'?a|عدن|صنعاء")
+SEATS = {"aden": re.compile(r"(?i)\baden\b|عدن"), "sanaa": re.compile(r"(?i)sana'?a|صنعاء")}   # one seat, either language
+
+def seats(name):
+    return {k for k, rx in SEATS.items() if rx.search(name)}
 ALL_OF = re.compile(r"(?i)\b(all|every|throughout|across|nationwide|whole|entire)\b|كل|جميع|كافة|أنحاء|عموم")
 WHYS = {"variant", "source", "rule"}
 SOURCE = re.compile(r"^sharrwah-knowledge-map@[0-9a-f]{7,40}:evidence/yemen/(runs|blocked-evidence-founder|derived|attestations)/")
@@ -193,11 +196,11 @@ def check_groups():
         if p["grouped"] == B.NOT_STATED:
             if p["why"] != "rule":
                 err("places.tsv", p["place"], "a name taken as 'place not stated' has why 'rule' (Yemen or the Republic, no authority)")
-        elif grouped.get(p["grouped"]) != p["grouped"]:
-            err("places.tsv", p["place"], f"grouped with '{p['grouped'][:50]}', which isn't listed as a place grouped with itself")
+        elif p["grouped"] not in grouped:
+            err("places.tsv", p["place"], f"grouped with '{p['grouped'][:50]}', which places.tsv doesn't list")
         if p["why"] not in WHYS:
             err("places.tsv", p["place"], f"why '{p['why']}' is not one of {sorted(WHYS)}")
-        if p["why"] == "variant" and set(m.lower() for m in SEATS.findall(p["place"])) != set(m.lower() for m in SEATS.findall(p["grouped"])):
+        if p["why"] == "variant" and seats(p["place"]) != seats(p["grouped"]):
             err("places.tsv", p["place"], "a variant neither adds nor drops a seat: grouping on a seat needs a source")
         if p["why"] == "source":
             if not ids(p["basis"]):
@@ -207,14 +210,25 @@ def check_groups():
         for x in ids(p["basis"]):
             if x not in cit_ids:
                 err("places.tsv", p["place"], f"basis {x} is not a citation")
+    # Groupings chain: a place grouped with one that is grouped with a third is one place with both. Each link
+    # has its own basis; the place a chain ends at is the place the rows take.
+    def root(x, seen=()):
+        g = grouped.get(x, x)
+        if g == x or g == B.NOT_STATED:
+            return g
+        if x in seen:
+            err("places.tsv", x, "its groupings form a cycle")
+            return x
+        return root(g, seen + (x,))
+    roots = {x: root(x) for x in grouped}
     for c in conds:
         if c["place"] not in grouped and c["place"] not in (B.ACROSS, B.NOT_STATED):
             err("places.tsv", c["place"][:60], f"a place pass 1 gives ({c['condition_id']}) that places.tsv doesn't list")
     global place_kind, place_of
     place_kind = dict(kind)
-    place_of = {c["condition_id"]: (B.NOT_STATED if c["place"] in (B.NOT_STATED, B.ACROSS) else grouped.get(c["place"]))
+    place_of = {c["condition_id"]: (B.NOT_STATED if c["place"] in (B.NOT_STATED, B.ACROSS) else roots.get(c["place"]))
                 for c in conds}
-    return groups, member, {v for v in grouped.values()} | {B.NOT_STATED}
+    return groups, member, {r for r in roots.values()} | {B.NOT_STATED}
 
 place_kind, place_of = {}, {}
 cits_by_id = {c["cite_id"]: c for c in cits}

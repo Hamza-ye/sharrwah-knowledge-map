@@ -92,7 +92,7 @@ Read `conditions.tsv`, `pass2/wordings.tsv` and the six `pass1/notes-<part>.md`.
    - **`source`:** a single source uses both names for the same area. Cite those citations in `basis`.
    - **`rule`:** "Yemen", "the Republic" and their variants, and pass 1's `across Yemen`, are `place not stated`. A rule an authority sets takes that authority's area instead (step 2b).
 
-   Groupings chain, with two limits:
+   Groupings chain: `grouped` may name a place that is itself grouped with another, and each link needs its own `why` and `basis`. The rows take the place the chain ends at. Chaining has two limits:
    - **Seat or side.** A body or area named without its seat or side, such as a central bank or a tax authority, groups only on a source that gives its seat or side. Spellings of one seatless name group as `variant`, and stay seatless.
    - **One area.** A name that sources use for different areas never groups or chains, and stays its own place.
 
@@ -110,7 +110,7 @@ For every row of its groups, an agent writes one line of `pass2/states-<k>.tsv`,
 
 **`place`:** the first that applies:
 - a rule an authority sets: that authority's area, whatever area its text names;
-- what a source says of one named party's own service: that party's service. A row about several parties' services keeps its grouped place, and its label names the parties;
+- what a source says of one named party's own service: that party's service. Where the party offers several products and the row names one, the place is that product's, `<product> (<party>)'s service`. A row about several parties' services keeps its grouped place, and its label names the parties;
 - `across Yemen`: a state that no authority sets and no party says of its own service, whose source says it holds in all of Yemen. Quote those words in `note`;
 - otherwise, the row's place as `places.tsv` groups it.
 
