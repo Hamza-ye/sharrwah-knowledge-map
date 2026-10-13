@@ -1,0 +1,235 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+Quick Start
+Starting a Trial
+Logging In
+2FA
+Control Panel
+Previewing Store
+Platform Limits
+Backing Up Your Store
+The App Marketplace
+Requirements
+Installing
+Viewing and Launching
+Rating and Reviewing
+Updating
+Uninstalling
+FAQ
+Migrating Your Store
+Getting Help
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Using the App Marketplace
+What We'll Cover
+Requirements
+Installing an app
+Viewing and launching installed apps
+Rating and reviewing
+Updating an app
+Uninstalling an app
+FAQ
+
+Apps are integrations that can be used to extend the core functionality of BigCommerce. They can give you extra analytics, integrate with other platforms, help you run marketing, and a host of other features.
+
+The App Marketplace allows you to easily search for apps and install them with a single click. Each listing provides you with features so you can determine if an app is right for your store. Although some apps may require a subscription to use, many offer a free trial period or they may be entirely free.
+
+ 
+Requirements
+To install or update apps and leave reviews, you must be the store owner or have the Install applications permission enabled on your user account.
+To launch apps, you must be the store owner, have the Launch applications permission, or have been granted access to a multi-user Single Click App.
+To uninstall apps or cancel an app installation, you must have the Uninstall applications permission enabled.
+ 
+Installing an App
+ 
+
+Do not install apps in a private or incognito window. These browsing methods are designed to block third-party cookies, which can cause installation issues.
+
+On the App Marketplace, you can browse apps using the category drop-down, or search by keyword or the name of a specific app.
+
+When you find an app you are interested in installing, click on the app card to view the app's landing page. Landing pages contain details such as app features, pricing, screenshots, videos, and reviews.
+
+To install the app, click the Get This App button.
+
+You'll be redirected to the login screen where you will select the store that will install the app. Click the Log in button under Existing BigCommerce store.
+
+After logging in, you'll be taken to the app install page. Click Install.
+
+The next page outlines the data the app will access and the permissions the app needs before being installed.
+
+When you're ready to finalize the install, check the box, then click Confirm. Depending on the app, you may also need to fill out a form or connect an existing account.
+
+ 
+Viewing and Launching Installed Apps
+
+View a searchable list of your installed apps by going to Apps › My apps in the control panel. From the list, you can access app details, apply updates, and uninstall apps.
+
+To launch an app from the list, click on its entry or select View details from its Action menu (⋯), then click the Launch button. If the app requires an update, you will need to perform that first.
+
+Apps can also be launched directly from the left navigation menu. Click Apps to expand the list, then click the app name below My apps.
+
+ 
+
+Having trouble with an app? App developers are responsible for technical and billing support of their product. Use the Contact Partner button on the app’s landing page to reach out to their team. Our support staff cannot access apps installed on your store to troubleshoot issues.
+
+ 
+Rating and Reviewing
+
+Help out your fellow merchants by rating and reviewing apps that you've tried. Note that an app must be currently installed in your store to leave a review or rating.
+
+To leave a review, go to Apps › My apps and select View details from the app’s Action menu (⋯). On the app details page, click the Review this app link.
+
+In the pop-up window, select a rating by clicking on the desired number of stars. Fill out the review form and click Submit when finished. You can go back to edit your rating and review at any time.
+
+ 
+Updating an App
+
+App developers incorporate new functionality and fix known issues to their apps in the form of updates. While most app updates occur automatically, you must manually approve any updates that change the app’s permissions.
+
+When one or more of your installed apps has an update available, you will receive a notification in the dashboard of your control panel.
+
+Apps with pending updates display an Update Available banner in Apps › My apps.
+
+To apply the update, click on the app or select Update from the app’s Action menu (⋯). Review the app’s new permissions, then click Update or Confirm.
+
+ 
+Uninstalling an App
+
+To uninstall an app, go to Apps › My apps and select Uninstall from the app’s Action menu (⋯). Alternatively, you can select View details and, then click the Uninstall button.
+
+Click Confirm to begin the process of uninstalling the app.
+
+The app will be removed from the My apps section and the Apps bar in your control panel.
+
+If the app previously added any scripts to your store’s Script Manager automatically, uninstalling the app automatically removes them from your store. However, if you manually added any scripts to enable the app’s functionality on your storefront, you must remove those yourself after uninstalling.
+
+Note that uninstalling an app will not cancel an app subscription. Contact the app developer for assistance. You can locate their contact information by clicking Contact Partner on the app’s landing page in the App Marketplace.
+
+If the app is using Unified Billing, you can cancel a subscription from the app by going to Apps › My apps, clicking on the app, and navigating to its account or subscription section.
+
+ 
+
+Need billing support? App developers are responsible for technical and billing support of their product. Use the Contact Partner button on the app’s landing page to reach out to their team. Our support staff cannot access apps installed on your store to troubleshoot issues.
+
+ 
+FAQ
+General
+Billing
+Troubleshooting
+GENERAL
+
+What do the "Partner Tier" badges represent?
+
+These badges represent the partnership level each partner has achieved with regard to the policies of the BigCommerce Partner Program. Partners' integrations are held to a rigorous standard where our best integrations are eligible for badges and tiers.
+
+What is the Develop page in the Apps menu?
+
+The Apps › Develop area of the control panel is where you can access unpublished apps that were either developed by your team or shared with you by a partner. You can search for specific draft apps in the list, open them, and edit them from the list. It also includes a link to your Developer Portal for advanced app management.
+
+BILLING
+ 
+
+Need billing support? App developers are responsible for technical and billing support of their product. Use the Contact Partner button on the app’s landing page to reach out to their team. Our support staff cannot access apps installed on your store to troubleshoot issues.
+
+What does it mean that an app is “Compatible with Unified Billing”?
+
+BigCommerce partners participating in Unified Billing use BigCommerce Payment APIs to charge for app purchases and subscriptions.
+
+This allows app purchases and subscriptions to be charged to the payment method on file in your Account Dashboard, using BigCommerce’s PCI compliant payment system.
+
+While payments are processed using BigCommerce’s payment systems, you should still contact the app developer if you have any questions or need troubleshooting assistance. You can find their contact information by clicking Contact Partner on the app’s listing page in the App Marketplace.
+
+I cancelled my app subscription after a free trial period, why do I have a prorated charge on my invoice?
+
+For app subscriptions charged via Unified Billing, if you cancel a subscription after a free trial period ends, you will be charged a prorated amount for the time between the trial end date and cancellation date. This prorated charge will appear on the next invoice following your store’s billing cycle.
+
+For example, if an app’s free trial period ends on 1/15, but the subscription was cancelled on 1/17, a prorated charge for two days would be applied to the store’s next invoice.
+
+TROUBLESHOOTING
+ 
+
+Need technical support? App developers are responsible for technical and billing support of their product. Use the Contact Partner button on the app’s landing page to reach out to their team. Our support staff cannot access apps installed on your store to troubleshoot issues.
+
+How do I resolve a "Failed to install application" error?
+
+The "Failed to install application" error occurs if your user account does not have the necessary permissions enabled. Ensure that you have the Install applications permission enabled on your user account.
+
+What do I do if an app installation is stuck?
+
+If an app installation doesn't complete, click the Cancel installation button.
+
+Go to your browser’s settings and ensure that third-party cookies are allowed or enabled, and then try to install the app again. If you are still experiencing installation issues after enabling cross-site cookies, try the install in a different browser or from a different device. Alternatively, you can try logging out of your store , completely clearing your browser’s cache and cookies, and logging back in before re-attempting installation.
+
+If the app installation is still stuck, generate a HAR file in your browser and contact our support team so that we can troubleshoot the errors.
+
+Why are some elements of an app appearing on my storefront after I uninstalled it?
+
+If the app requires you to manually add scripts to your store’s Script Manager, those scripts are not automatically deleted when you uninstall the app. You must delete them from Script Manager to remove the remaining code from your storefront.
+
+Do this in my store
+
+GO TO APP MARKETPLACE IN MY STORE
+
+Additional Resources
+Integrating Apps with Stencil Themes
+Store Owner User Role and Permissions
+User Roles and Permissions
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Using the App Marketplace

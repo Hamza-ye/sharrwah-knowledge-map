@@ -1,0 +1,5 @@
+fetched 52; 2xx with body 51; other 1
+rendered 52; status<400 51; other 1
+Counter({'captured': 51, 'blocked from here': 1})
+Counter({'undated (live page on capture date)': 51, 'undated': 1})
+exit 0

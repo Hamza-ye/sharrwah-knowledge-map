@@ -1,0 +1,227 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+SEO
+Discounts And Coupons
+Email Marketing
+Email Marketing Settings
+Abandoned Cart Saver
+How It Works
+Requirements
+Notification Settings
+Managing Emails
+FAQ
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Using the Abandoned Cart Saver
+What We'll Cover
+How it works
+Requirements
+Abandoned cart notification settings
+Managing Abandoned Cart Saver emails
+FAQ
+
+The Abandoned Cart Saver is a built-in tool that sends an email invitation to customers who have added items to their cart but have not completed checkout. The emails are customizable and can be combined with coupons to entice shoppers to complete their purchase. Learn more about how the Abandoned Cart Saver can help add revenue by winning back buyers and increasing conversions.
+
+ 
+How It Works
+
+A cart is considered abandoned if it is not converted into an order and receives no activity for one hour. When the Abandoned Cart Saver is enabled on your store, it will trigger when the following criteria is met:
+
+a shopper has one or more items in their cart
+there is no cart activity (adding or removing items or attempting payment) for one hour
+the shopper is logged into their storefront account or is a guest that has entered their email address on the checkout page
+
+At specific intervals, shoppers that are opted in to receive abandoned cart emails are sent up to three notifications encouraging them to complete their order. By default, these are sent 1 hour, 1 day, and 2 days from the time the cart is considered abandoned.
+
+There is no limit to the number of email templates you can have; however, a maximum of three templates per storefront can be active at a time. When editing your templates, you can manage the email's contents, specify when it should be sent, and include coupons for enticing your customers to complete their order.
+
+Note that a cart is not considered abandoned if the shopper returns and either deletes its contents or completes checkout within one hour of their last activity.
+
+To stay informed about when carts are abandoned or when abandoned carts are “saved” and converted into orders, you can enable automatic notifications to be sent to your email address.
+
+For a deeper look at your store’s cart performance, view details such as abandoned cart rates, converted cart values, and commonly abandoned products in the Carts report.
+
+ 
+Requirements
+To use the Abandoned Cart Saver, your store must be on a Growth plan or higher.
+To manage abandoned cart notification settings, you must have the Manage Settings and Manage Abandoned Cart Settings permissions enabled on your user account.
+To create, edit, and delete abandoned cart emails, you must have the Manage Channels and Manage Abandoned Cart Notifications permissions enabled.
+To attach coupon codes or coupon promotions to abandoned cart email templates, you must have the Manage Legacy Coupons and Manage Promotions permissions enabled.
+ 
+Abandoned Cart Notification Settings
+
+Abandoned cart notification settings can be located by going to Settings › Miscellaneous.
+
+ 
+
+Localized Store Experiences: Abandoned and converted cart email notifications for merchants are available for all of our supported languages. For more information on the default language store setting, see Store Profile Settings.
+
+Require Consent — determines whether checkboxes appear on the checkout and customer account registration pages, allowing customers to opt in to receive abandoned cart emails and other marketing emails. Recommended for GDPR compliance.
+When enabled, this setting overrides the Tick Newsletter Checkbox toggle in your store's newsletter settings.
+Abandoned Cart Emails
+Email me when a shopper abandons their cart and leaves my store — determines whether you are sent an email when a customer abandons a cart. If enabled, the following settings appear below:
+Email me every time X carts are abandoned* — enter the number of abandoned carts to be included in each email. Maximum 10 carts per email.
+Email me every time a cart is abandoned — a notification email will be sent for each abandoned cart. Not recommended for larger stores.
+Stop sending when the shopper clicks "Complete Order" link in the email — when checked, customers will not receive additional Abandoned Cart Saver emails once they click the Complete order link
+Converted Cart Emails — determines whether you are sent an email any time a customer returns to complete a purchase after receiving an abandoned cart email
+Send Emails To — determines what email address merchant-facing abandoned and converted cart emails are sent to
+
+*If you have opted to receive abandoned cart notifications, the email will be sent once the number of abandoned carts reaches the number entered in this setting. Each cart will also display up to 15 products.
+
+ 
+Managing Abandoned Cart Saver Emails
+Enabling or disabling individual templates
+Adding and editing templates
+
+Abandoned Cart Saver email templates are located under Marketing › Abandoned cart emails.
+
+From this page you can view your existing email templates, their attached coupon codes, see how many times a template has been sent, toggle abandoned cart emails and templates on and off, and create new or edit existing templates.
+
+ 
+
+Localized Store Experiences: This feature is available for all of our supported languages. For more information on the default language store setting, see Store Profile Settings.
+
+Enable or disable sending Abandoned Cart Saver emails to your customers by clicking the Send abandoned cart emails toggle.
+
+Note that disabling Abandoned Cart Saver emails also prevents the merchant-facing notifications from being sent. If you still want to receive notifications when carts are abandoned or saved, disable the individual templates globally or for a specific channel.
+
+If you have more than one storefront or channel, you can choose to use your store’s default global templates and settings, or you can enable and customize templates individually per channel by selecting it from the drop-down list.
+
+With a storefront channel selected, toggle off Use global to customize the abandoned cart saver emails for that channel. Toggling Use global back on will overwrite the templates with their global versions and any customizations will be lost.
+
+Note that a channel must interact with the storefront cart to trigger abandoned cart saver emails. For example, a marketplace channel that bypasses the storefront would not trigger the Abandoned Cart Saver.
+
+ENABLING OR DISABLING INDIVIDUAL TEMPLATES
+
+To enable or disable individual templates, click the Action menu (⋯) next to the template and select either Enable or Disable from the drop-down list.
+
+Templates can also be enabled, disabled, and deleted from the drop-down Action menu at the top of the page when editing the specific template.
+
+You can have up to three templates enabled at a time. If you have more than three templates, you will first need to disable an active template before you can enable a different one.
+
+ 
+
+Be careful! If you toggle off Use global and disable all templates for a storefront channel, Abandoned Cart Saver emails will not be sent for that channel even if your global default templates are enabled
+
+ADDING AND EDITING TEMPLATES
+
+Create a new template by clicking + Add template at the bottom of the template list.
+
+You can also create a copy of an existing template by selecting Duplicate, or make updates by selecting Edit Template from the template’s Action menu (⋯) drop-down list. Select Delete to remove the template entirely.
+
+On the template edit page, you can manage how soon the email is sent after a cart is abandoned, apply an optional coupon code, and customize the email subject and body contents.
+
+Under the Settings section, use the Send in drop-down to set when the email will be sent to the shopper. You can select from one hour up to 10 days after the cart is considered abandoned.
+
+Optionally add a Coupon code to the email to encourage shoppers to complete their order. Enter a code directly into the field or click Browse Coupon Codes to select from any coupon codes and coupon promotions you've created.
+
+Under the Template section, you can customize the email subject and body content. For more information about editing templates, see Customizing Transactional Emails.
+
+ 
+FAQ
+
+When is a cart considered abandoned?
+
+A cart is not considered abandoned until it has had no activity for one hour. This means that if your first abandoned cart email is scheduled to be sent one hour after the cart is abandoned, then it would be two hours after the shopper last updated their cart before they would receive the notification.
+
+Does the Abandoned Cart Saver affect stock levels?
+
+No, stock levels are not affected until payment is attempted. If a payment method is attempted, the cart is not considered abandoned.
+
+How long do abandoned carts stay saved?
+
+By default, when a customer adds products to their cart, it is saved in their browser’s cache for seven days. This cart is only accessible from the same device and browser during that span. If your store has Persistent Cart enabled, customers who are logged in to their storefront account can instead access their cart from any device and browser for 30 days.
+
+Why do some shoppers get abandoned cart emails after they have completed their order?
+
+If the customer completes their order using the Complete Order link in the email, they may continue to receive abandoned cart emails depending on your Abandoned Cart Emails settings. This can also occur if the shopper completes the purchase of the order very close to the timing of the scheduled email.
+
+If a shopper adds products to a cart on one device but creates a new cart and checks out on a different device, the first cart would be considered abandoned. If your store has Persistent Cart enabled, customers who are logged in to their storefront account can access their cart from any device and browser.
+
+Can I use a third-party integration for abandoned cart emails?
+
+Yes. Apps such as Mailchimp and Klaviyo allow you to send abandoned cart emails. You can find these apps and more in our App Marketplace.
+
+Can I receive abandoned cart notifications without sending Abandoned Cart Saver emails to my customers?
+
+In order to receive notifications when a customer abandons their cart, Send abandoned cart emails must be toggled on globally or for the specific channel. However, you can disable your individual email templates in order to prevent customers from receiving emails.
+
+What format does the abandoned cart URL use?
+
+By default, your abandoned cart emails include a Complete Your Order button, which uses the notifications.checkout_link object to generate a link to the customer’s cart contents. The URL uses the following format: https://[domain]/cart.php?action=RecoverAbandonedCart&t=[cart-token]&couponCode=[coupon-code].
+
+Your store supplies the following information in the placeholders of the URL:
+
+domain — Your store’s domain, like mybcstore.com.
+cart-token — A system-generated token that identifies the customer’s abandoned cart.
+coupon-code — If you added a coupon code to your abandoned cart email template, it is automatically applied to the cart when the customer clicks the link.
+Do this in my store
+
+GO TO ABANDONED CART EMAILS IN MY STORE
+
+Additional Resources
+Coupon Promotions
+Customizing Transactional Emails
+Ecommerce Analytics Report | Carts Report
+Persistent Cart
+Using Coupon Codes
+Email Templates Overview (Developer Docs)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Using the Abandoned Cart Saver

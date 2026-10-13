@@ -1,0 +1,1023 @@
+[
+{
+"n": 1,
+"url": "https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?language=en_US",
+"dir": "items/001-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:39:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190825,
+"cited_in": [
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G07",
+"S01-BC-G08",
+"S01-BC-G09",
+"S01-BC-G10",
+"S01-BC-G11",
+"S01-BC-G12",
+"S01-BC-G13",
+"S01-BC-G14",
+"S01-BC-G15",
+"S01-BC-G16",
+"S01-BC-G17",
+"S01-BC-G18",
+"S01-BC-G19",
+"S01-BC-G20",
+"S01-BC-G21",
+"S01-BC-G22",
+"S01-BC-G23"
+],
+"raw_file": "raw.html",
+"sha256": "6b686bb66efca86249668850c6b12b65b311d403891fee9efd375007f64fddf4",
+"raw_ext": "html"
+},
+{
+"n": 2,
+"url": "https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US",
+"dir": "items/002-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:39:51Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190837,
+"cited_in": [
+"S01-BC-G01",
+"S01-BC-G02",
+"S01-BC-G03",
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G07",
+"S01-BC-G08",
+"S01-BC-G09",
+"S01-BC-G10",
+"S01-BC-G11",
+"S01-BC-G12",
+"S01-BC-G13",
+"S01-BC-G14",
+"S01-BC-G15",
+"S01-BC-G16",
+"S01-BC-G17",
+"S01-BC-G18",
+"S01-BC-G19",
+"S01-BC-G20",
+"S01-BC-G21",
+"S01-BC-G22",
+"S01-BC-G23",
+"BC-C-022",
+"BC-C-023",
+"BC-C-026"
+],
+"raw_file": "raw.html",
+"sha256": "a0d25879d66eeeff914695771869ffeae4eee453db7a9700af0442747b7bb3a4",
+"raw_ext": "html"
+},
+{
+"n": 3,
+"url": "https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US",
+"dir": "items/003-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:39:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190830,
+"cited_in": [
+"S01-BC-G01",
+"S01-BC-G02",
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G16"
+],
+"raw_file": "raw.html",
+"sha256": "ef147dae9217a5fddf134396f7653780d1e7cf8b500c6424fe771d0a19e7d3d8",
+"raw_ext": "html"
+},
+{
+"n": 4,
+"url": "https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en_US",
+"dir": "items/004-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:39:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190837,
+"cited_in": [
+"S01-BC-G03",
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G16",
+"S01-BC-G17"
+],
+"raw_file": "raw.html",
+"sha256": "4f8308d4e5a7181c747ab2367a8336828922616de3efed4e1312b493d9d94b5e",
+"raw_ext": "html"
+},
+{
+"n": 5,
+"url": "https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_US",
+"dir": "items/005-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:39:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190827,
+"cited_in": [
+"S01-BC-G03"
+],
+"raw_file": "raw.html",
+"sha256": "4dc7da1cf8acd2bfd5650faea73034580835c67bf2149512ab37c91dfe114a6c",
+"raw_ext": "html"
+},
+{
+"n": 6,
+"url": "https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US",
+"dir": "items/006-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:39:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190830,
+"cited_in": [
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G07",
+"S01-BC-G08",
+"S01-BC-G09",
+"S01-BC-G10",
+"S01-BC-G11",
+"S01-BC-G12",
+"S01-BC-G13",
+"S01-BC-G14",
+"S01-BC-G15",
+"S01-BC-G16",
+"S01-BC-G17",
+"S01-BC-G18",
+"S01-BC-G19",
+"S01-BC-G20",
+"S01-BC-G21",
+"S01-BC-G22",
+"S01-BC-G23",
+"BC-C-023"
+],
+"raw_file": "raw.html",
+"sha256": "769be8cc8a2f5ce51aae29719800f341d5b367eb79b43e282f4ba67cca1e5fa2",
+"raw_ext": "html"
+},
+{
+"n": 7,
+"url": "https://support.bigcommerce.com/s/article/Processing-Refunds",
+"dir": "items/007-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:39:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Processing-Refunds?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190828,
+"cited_in": [
+"S01-BC-G07",
+"S01-BC-G23",
+"BC-C-021"
+],
+"raw_file": "raw.html",
+"sha256": "2b4e801da14c6963c251a6b281396a28d18c02769c5d4017f4ac9bf90b5757db",
+"raw_ext": "html"
+},
+{
+"n": 8,
+"url": "https://support.bigcommerce.com/s/article/Manually-Capturing-Transactions-Authorize-Only?language=en_US",
+"dir": "items/008-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Manually-Capturing-Transactions-Authorize-Only?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190823,
+"cited_in": [
+"S01-BC-G03"
+],
+"raw_file": "raw.html",
+"sha256": "ac5dd6cd9b31144824df1d7e9e2fe90ad60a9e822381cfabf8dde35331aef647",
+"raw_ext": "html"
+},
+{
+"n": 9,
+"url": "https://support.bigcommerce.com/s/",
+"dir": "items/009-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190829,
+"cited_in": [],
+"raw_file": "raw.html",
+"sha256": "c6544d0694af9d22e74b776e7cfb3d1bb0a648fbb72a430924e57cdaca805663",
+"raw_ext": "html"
+},
+{
+"n": 10,
+"url": "https://security.bigcommerce.com/",
+"dir": "items/010-security.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 403,
+"final_url": "https://security.bigcommerce.com/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 3198,
+"cited_in": [
+"BC-C-028",
+"BC-C-082",
+"BC-C-083"
+],
+"raw_file": "raw.html",
+"sha256": "b2b1507e5541287c24a3ac8c19b9ad202d1b2480f46da6a2916579e152932c2e",
+"raw_ext": "html"
+},
+{
+"n": 11,
+"url": "https://support.bigcommerce.com/s/article/301-Redirects",
+"dir": "items/011-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/MSF-301-Redirects?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190824,
+"cited_in": [
+"BC-C-041"
+],
+"raw_file": "raw.html",
+"sha256": "0b764413123395d734009196c9f867ceecfe3c65e8f34fd584893e5cecc42e0c",
+"raw_ext": "html"
+},
+{
+"n": 12,
+"url": "https://support.bigcommerce.com/s/article/Automatic-Tax-Setup",
+"dir": "items/012-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Automatic-Tax-Setup?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190824,
+"cited_in": [
+"BC-C-073"
+],
+"raw_file": "raw.html",
+"sha256": "79478286943cbd74a6bb6e88d703e1f510c72644c11637701149d84bde79d9ba",
+"raw_ext": "html"
+},
+{
+"n": 13,
+"url": "https://support.bigcommerce.com/s/article/B2B-Edition-Settings",
+"dir": "items/013-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/B2B-Edition-Settings?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190821,
+"cited_in": [
+"BC-C-031",
+"BC-C-065"
+],
+"raw_file": "raw.html",
+"sha256": "af1998bf47bdc58ed397b044c5908d4109ab59e7e8056f940c1dfcb06cd2342b",
+"raw_ext": "html"
+},
+{
+"n": 14,
+"url": "https://support.bigcommerce.com/s/article/B2B-Edition-User-Roles-and-Permissions",
+"dir": "items/014-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:08Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/B2B-Edition-User-Roles-and-Permissions?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190821,
+"cited_in": [
+"BC-C-065"
+],
+"raw_file": "raw.html",
+"sha256": "ddfac60d59644021e19a689327194c96866e2e41f1433807fbb7f84c124e25de",
+"raw_ext": "html"
+},
+{
+"n": 15,
+"url": "https://support.bigcommerce.com/s/article/BigCommerce-Inventory-Functionality",
+"dir": "items/015-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:09Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Inventory-Tracking?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190826,
+"cited_in": [
+"BC-C-004",
+"BC-C-005"
+],
+"raw_file": "raw.html",
+"sha256": "4da6e80fcbe670f62b6da5e44bd376b617c2117f8dd9b83de1666154b2678818",
+"raw_ext": "html"
+},
+{
+"n": 16,
+"url": "https://support.bigcommerce.com/s/article/Checkout-Settings",
+"dir": "items/016-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:11Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Optimized-Single-Page-Checkout?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190825,
+"cited_in": [
+"BC-C-016"
+],
+"raw_file": "raw.html",
+"sha256": "565486717cfc2ff09c60c1c6640c5feae8ef7403708c3374a942afc3d8ff40ae",
+"raw_ext": "html"
+},
+{
+"n": 17,
+"url": "https://support.bigcommerce.com/s/article/Collecting-Newsletter-Subscriptions",
+"dir": "items/017-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:12Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Collecting-Newsletter-Subscriptions?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190828,
+"cited_in": [
+"BC-C-035"
+],
+"raw_file": "raw.html",
+"sha256": "e4a05fa83f157a18be1a8c3c75e53128255320e8a583c6010eec20b21ff927fb",
+"raw_ext": "html"
+},
+{
+"n": 18,
+"url": "https://support.bigcommerce.com/s/article/Companies-and-Customer-Groups",
+"dir": "items/018-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:14Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Companies-and-Customer-Groups?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190819,
+"cited_in": [
+"BC-C-034"
+],
+"raw_file": "raw.html",
+"sha256": "049f6ca9767aca7d69d813e89a788daa729846df1224cb9770b2cd74b3123e7e",
+"raw_ext": "html"
+},
+{
+"n": 19,
+"url": "https://support.bigcommerce.com/s/article/Creating-a-Manual-Order",
+"dir": "items/019-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:15Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Creating-a-Manual-Order?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190818,
+"cited_in": [
+"BC-C-018"
+],
+"raw_file": "raw.html",
+"sha256": "8597184b21289d348526690642f8b05aa27919c54f8befd02aa1f3c86d4808e2",
+"raw_ext": "html"
+},
+{
+"n": 20,
+"url": "https://support.bigcommerce.com/s/article/Customer-Groups",
+"dir": "items/020-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:17Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Customer-Groups?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190822,
+"cited_in": [
+"BC-C-032",
+"BC-C-034"
+],
+"raw_file": "raw.html",
+"sha256": "5f411d00b0443c9985f3583c5f8772f97c20e917a577dd62215f36be3413818f",
+"raw_ext": "html"
+},
+{
+"n": 21,
+"url": "https://support.bigcommerce.com/s/article/Customer-Order-Notifications",
+"dir": "items/021-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:18Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Customer-Order-Notifications?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190828,
+"cited_in": [
+"BC-C-046"
+],
+"raw_file": "raw.html",
+"sha256": "cab01abb89d86e16be46ad3cd028c526ed24515e90f1cee5f876635ab00ab921",
+"raw_ext": "html"
+},
+{
+"n": 22,
+"url": "https://support.bigcommerce.com/s/article/Customizing-Emails",
+"dir": "items/022-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:20Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Customizing-Emails?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190828,
+"cited_in": [
+"BC-C-046"
+],
+"raw_file": "raw.html",
+"sha256": "91807d4723ab97291da753e272946d30cae228fb22e7a79fb578497ac6a37e6c",
+"raw_ext": "html"
+},
+{
+"n": 23,
+"url": "https://support.bigcommerce.com/s/article/Date-and-Timezone-Settings",
+"dir": "items/023-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:21Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Date-and-Timezone-Settings?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190829,
+"cited_in": [
+"BC-C-047"
+],
+"raw_file": "raw.html",
+"sha256": "aaf25e9161aa327cd4d2861776e1968b70c8cfe6c3d82d9e211571ce11db6330",
+"raw_ext": "html"
+},
+{
+"n": 24,
+"url": "https://support.bigcommerce.com/s/article/Editing-Form-Fields",
+"dir": "items/024-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:23Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Editing-Form-Fields?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190835,
+"cited_in": [
+"BC-C-032"
+],
+"raw_file": "raw.html",
+"sha256": "8706413f22d068fd8d2865bd4795a064f7269127a658851ba59cda4c4f55f54e",
+"raw_ext": "html"
+},
+{
+"n": 25,
+"url": "https://support.bigcommerce.com/s/article/Enabling-Stored-Credit-Cards",
+"dir": "items/025-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:24Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Enabling-Stored-Payment-Methods?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190828,
+"cited_in": [
+"BC-C-024"
+],
+"raw_file": "raw.html",
+"sha256": "586fdb67b9cd569f00fcdb0e10771f578d00701be80314123146faa07b828c57",
+"raw_ext": "html"
+},
+{
+"n": 26,
+"url": "https://support.bigcommerce.com/s/article/Fastlane-by-PayPal",
+"dir": "items/026-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:26Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Fastlane-by-PayPal?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190828,
+"cited_in": [
+"BC-C-027"
+],
+"raw_file": "raw.html",
+"sha256": "7d0dcc83e23db1655101b861f3fe4e6b8fae8ba7aabd26de33ba3fe78342861c",
+"raw_ext": "html"
+},
+{
+"n": 27,
+"url": "https://support.bigcommerce.com/s/article/Getting-Started-Channels",
+"dir": "items/027-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:27Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Getting-Started-Channels?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190825,
+"cited_in": [
+"BC-C-038",
+"BC-C-068",
+"BC-C-069"
+],
+"raw_file": "raw.html",
+"sha256": "78678dfb280abbb2c446ccedc09c58542e133c684ce6adea65ff245ed77b3886",
+"raw_ext": "html"
+},
+{
+"n": 28,
+"url": "https://support.bigcommerce.com/s/article/Getting-Started-Payments",
+"dir": "items/028-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:29Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Getting-Started-Payments?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190829,
+"cited_in": [
+"BC-C-022"
+],
+"raw_file": "raw.html",
+"sha256": "ee7afe1f39282113abfa65d0efccdddff2ee94f5798a25ec96bed97954144d42",
+"raw_ext": "html"
+},
+{
+"n": 29,
+"url": "https://support.bigcommerce.com/s/article/Getting-Started-with-Localization-on-Multi-Storefronts",
+"dir": "items/029-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:30Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Getting-Started-with-Localization-on-Multi-Storefronts?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190826,
+"cited_in": [
+"BC-C-048"
+],
+"raw_file": "raw.html",
+"sha256": "2d777d70f8c2346d116f998361fb7e1f20c0c61fe82324145e40d23215ae1ddd",
+"raw_ext": "html"
+},
+{
+"n": 30,
+"url": "https://support.bigcommerce.com/s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel",
+"dir": "items/030-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:32Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190832,
+"cited_in": [
+"BC-C-059"
+],
+"raw_file": "raw.html",
+"sha256": "d01d0d1c32b7f13719251ffae9be4b916f80ea027ddb9b44513179e000956fdb",
+"raw_ext": "html"
+},
+{
+"n": 31,
+"url": "https://support.bigcommerce.com/s/article/Implementing-CCPA-with-BigCommerce",
+"dir": "items/031-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:33Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Implementing-CCPA-with-BigCommerce?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190829,
+"cited_in": [
+"BC-C-037"
+],
+"raw_file": "raw.html",
+"sha256": "866743ffa4778a313c92a3a208b1de33c6429b086bc08923426368d2bb1f26b0",
+"raw_ext": "html"
+},
+{
+"n": 32,
+"url": "https://support.bigcommerce.com/s/article/Intro-to-APMs",
+"dir": "items/032-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:35Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Intro-to-APMs?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190829,
+"cited_in": [
+"BC-C-026"
+],
+"raw_file": "raw.html",
+"sha256": "1fb7df42b0d53f07cab3f5d19cf775633b83784223862150cbb1078a29ce31cb",
+"raw_ext": "html"
+},
+{
+"n": 33,
+"url": "https://support.bigcommerce.com/s/article/Managing-Currencies",
+"dir": "items/033-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:36Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Managing-Currencies?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190829,
+"cited_in": [
+"BC-C-074"
+],
+"raw_file": "raw.html",
+"sha256": "1ed6eb661686c75ac470e37970c86d126b932cc8feb8d53d6e818bba73b19786",
+"raw_ext": "html"
+},
+{
+"n": 34,
+"url": "https://support.bigcommerce.com/s/article/Manual-Tax-Setup",
+"dir": "items/034-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:38Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Manual-Tax-Setup?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190831,
+"cited_in": [
+"BC-C-072"
+],
+"raw_file": "raw.html",
+"sha256": "a3c9f993f10a90322173b69ba3ffc6e5abf4b2ad11cd1ba9408eec8068c1e9e9",
+"raw_ext": "html"
+},
+{
+"n": 35,
+"url": "https://support.bigcommerce.com/s/article/Multi-Storefront",
+"dir": "items/035-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:39Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Multi-Storefront?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190832,
+"cited_in": [
+"BC-C-039"
+],
+"raw_file": "raw.html",
+"sha256": "bf9c05676c4f6f96457a6191da092fc27e6dd85b25f7a333eae4d650922fa47e",
+"raw_ext": "html"
+},
+{
+"n": 36,
+"url": "https://support.bigcommerce.com/s/article/Order-Statuses",
+"dir": "items/036-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:41Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Order-Statuses?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190828,
+"cited_in": [
+"BC-C-018"
+],
+"raw_file": "raw.html",
+"sha256": "5aeade17bd5109ff9e81479dd03f4521a3a3d3ccb88ed32f69d75856da54e6e6",
+"raw_ext": "html"
+},
+{
+"n": 37,
+"url": "https://support.bigcommerce.com/s/article/PCI-Compliance",
+"dir": "items/037-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:42Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/PCI-Compliance?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190830,
+"cited_in": [
+"BC-C-028"
+],
+"raw_file": "raw.html",
+"sha256": "08e599b02a57f33450804cd19bfea008f08e7b1286d18bdedbde1dc533209cc2",
+"raw_ext": "html"
+},
+{
+"n": 38,
+"url": "https://support.bigcommerce.com/s/article/Platform-Limits",
+"dir": "items/038-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:44Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Platform-Limits?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190830,
+"cited_in": [
+"BC-C-057"
+],
+"raw_file": "raw.html",
+"sha256": "e9e2e81bba388fe6854de4948035f128b9d9683fac005bdabcde864c423179f0",
+"raw_ext": "html"
+},
+{
+"n": 39,
+"url": "https://support.bigcommerce.com/s/article/Price-Lists",
+"dir": "items/039-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Price-Lists?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190826,
+"cited_in": [
+"BC-C-007"
+],
+"raw_file": "raw.html",
+"sha256": "4ee0780c155895282dc81f2afb0e87f39d77db971913527b1dfa870be0a23a37",
+"raw_ext": "html"
+},
+{
+"n": 40,
+"url": "https://support.bigcommerce.com/s/article/Pricing",
+"dir": "items/040-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Pricing?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190824,
+"cited_in": [
+"BC-C-008"
+],
+"raw_file": "raw.html",
+"sha256": "1db411388edf4e3edfa96c80abb31d60056035717dc9ed265634183d75d1907c",
+"raw_ext": "html"
+},
+{
+"n": 41,
+"url": "https://support.bigcommerce.com/s/article/Processing-Returns",
+"dir": "items/041-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:48Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Processing-Returns?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190826,
+"cited_in": [
+"BC-C-021"
+],
+"raw_file": "raw.html",
+"sha256": "ccde1758686ccfd4ed35409a495ae7381815506c2dd9ae422d3eb01c275032bc",
+"raw_ext": "html"
+},
+{
+"n": 42,
+"url": "https://support.bigcommerce.com/s/article/SEO-Fields",
+"dir": "items/042-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/SEO-Fields?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190832,
+"cited_in": [
+"BC-C-047"
+],
+"raw_file": "raw.html",
+"sha256": "4925f540aa60a48d6f1be83e79c09f9c58fc0ecbad99a9410658d36b47f21ed7",
+"raw_ext": "html"
+},
+{
+"n": 43,
+"url": "https://support.bigcommerce.com/s/article/Security-and-Privacy-Settings",
+"dir": "items/043-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:51Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Security-and-Privacy-Settings?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190829,
+"cited_in": [
+"BC-C-037",
+"BC-C-047",
+"BC-C-078"
+],
+"raw_file": "raw.html",
+"sha256": "3c2b36ad2243321b99d5ce74a42a25de65fe5f86fd76b129a87b0261d24e2827",
+"raw_ext": "html"
+},
+{
+"n": 44,
+"url": "https://support.bigcommerce.com/s/article/Store-API-Accounts",
+"dir": "items/044-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190832,
+"cited_in": [
+"BC-C-053",
+"BC-C-054",
+"BC-C-056"
+],
+"raw_file": "raw.html",
+"sha256": "6e8cde0781d59eeec75cc02f888bba70a57c2135079ea68fc20015d23122958f",
+"raw_ext": "html"
+},
+{
+"n": 45,
+"url": "https://support.bigcommerce.com/s/article/Tax-Overview",
+"dir": "items/045-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Tax-Overview?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190834,
+"cited_in": [
+"BC-C-072"
+],
+"raw_file": "raw.html",
+"sha256": "34c916a2e8f1b2a50b7e66d5bfb3c3d5357f138c212e1bc2e1ce791041314866",
+"raw_ext": "html"
+},
+{
+"n": 46,
+"url": "https://support.bigcommerce.com/s/article/Testing-Shipping-Tax-and-Payment-Settings",
+"dir": "items/046-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Testing-Shipping-Tax-and-Payment-Settings?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190821,
+"cited_in": [
+"BC-C-070"
+],
+"raw_file": "raw.html",
+"sha256": "812dd441e4824f9d0d5ab1c4b89fde3302740ff088c2e01bc45e9ec44dfaabae",
+"raw_ext": "html"
+},
+{
+"n": 47,
+"url": "https://support.bigcommerce.com/s/article/The-Headless-Approach",
+"dir": "items/047-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/The-Headless-Approach?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190827,
+"cited_in": [
+"BC-C-040"
+],
+"raw_file": "raw.html",
+"sha256": "2033523c8c0c77ade928f2a62fe172ddc9ead35deeeb7c999127e1d6c5540768",
+"raw_ext": "html"
+},
+{
+"n": 48,
+"url": "https://support.bigcommerce.com/s/article/Unified-Billing-for-Partners",
+"dir": "items/048-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:40:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Unified-Billing-for-Partners?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190826,
+"cited_in": [
+"BC-C-029"
+],
+"raw_file": "raw.html",
+"sha256": "4bebe69a25d09f9f16ce124ff263ec25be810622af6bc0426c15e680841c2590",
+"raw_ext": "html"
+},
+{
+"n": 49,
+"url": "https://support.bigcommerce.com/s/article/Using-Multiple-Currencies",
+"dir": "items/049-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:41:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Using-Multiple-Currencies?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190825,
+"cited_in": [
+"BC-C-074"
+],
+"raw_file": "raw.html",
+"sha256": "4105667c085be8bb3829252c977c66f2b0563bfbe31796bf927c8780b00d33de",
+"raw_ext": "html"
+},
+{
+"n": 50,
+"url": "https://support.bigcommerce.com/s/article/Using-Script-Manager",
+"dir": "items/050-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:41:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Using-Script-Manager?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190821,
+"cited_in": [
+"BC-C-044"
+],
+"raw_file": "raw.html",
+"sha256": "b85bf9cbb234c080008f58282f1463c6b63c2300c84ce33ae979a2786e2abba5",
+"raw_ext": "html"
+},
+{
+"n": 51,
+"url": "https://support.bigcommerce.com/s/article/Using-the-Abandoned-Cart-Saver",
+"dir": "items/051-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:41:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Using-the-Abandoned-Cart-Saver?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190833,
+"cited_in": [
+"BC-C-015"
+],
+"raw_file": "raw.html",
+"sha256": "25563190976ff783fbeb74b7c852986e964ac48b4ea20e40c7fbc8110ca2dacf",
+"raw_ext": "html"
+},
+{
+"n": 52,
+"url": "https://support.bigcommerce.com/s/article/Wishlists",
+"dir": "items/052-support.bigcommerce.com",
+"fetched_at": "2026-10-13T05:41:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://support.bigcommerce.com/s/article/Wishlists?language=en_US",
+"content_type": "text/html;charset=UTF-8",
+"bytes": 190828,
+"cited_in": [
+"BC-C-036"
+],
+"raw_file": "raw.html",
+"sha256": "c6004b92e94504eabaf759eb2f81e6320f88ce8c4c0da85756ef761a3c76772f",
+"raw_ext": "html"
+}
+]

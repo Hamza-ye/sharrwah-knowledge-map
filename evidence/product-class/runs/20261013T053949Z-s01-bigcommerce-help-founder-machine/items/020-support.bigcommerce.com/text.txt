@@ -1,0 +1,330 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+Mobile App
+Orders
+Customers
+Managing Customers
+Customer Accounts
+Guest Customers
+Customer Groups
+How It Works
+Requirements
+Viewing
+Creating and Editing
+Group Details
+Pricing and Discounts
+Defaults
+Assigning Customers
+Wholesale and Retail
+Member-only Content
+FAQ
+Store Credit
+Importing/Exporting
+Wish Lists
+BigCommerce For WordPress
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Customer Groups
+What We'll Cover
+How it works
+Requirements
+Viewing customer groups
+Creating and editing customer groups
+Group detail settings
+Pricing and discounts
+Managing default customer groups
+Assigning customers to groups
+Wholesale and retail groups
+Member-only content
+FAQ
+
+You can classify customers into different groups by using the Customer Groups feature. Customer groups allow you to organize your customers, give them discounts, and restrict access to specific products or categories.
+
+With Customer Groups, you can:
+
+set up a loyalty group —sell specific products or categories at discounted rates to select customers
+set up a tax-exempt group — offer tax exemption to those that are eligible (such as government agencies, nonprofit organizations)
+set up a wholesale group — provide access to select categories of products hidden from retail customers, or give a discount for bulk purchases
+set up a members-only group — control access to content or products by requiring visitors to register an account to browse the store
+ 
+How it Works
+
+Customer groups define which product categories are visible to visitors on your storefront, and they allow you to establish storewide pricing rules for different customer segments. Guest shoppers and customers with storefront accounts automatically get access to the categories and pricing from their respective default groups, but you can also create distinct groups for different types of customers, such as retailers or VIP members.
+
+In addition to configuring catalog and pricing rules for customer groups, you can:
+
+Configure tax zones for customers with special tax requirements.
+Build promotions that provide discounts to certain customer groups.
+Create customer group-specific Price Lists with advanced pricing logic.
+This feature is only available in stores on a Performance plan.
+ 
+
+Using B2B Edition? Customer groups interact uniquely with your B2B buyers and their Company accounts. See Companies for more information.
+
+ 
+Requirements
+Customer groups are only available for stores on a Growth plan or higher.
+In order to manage customer groups, the Customer Groups, Manage Categories, Manage Customers, and Manage Customer Privacy Settings permissions must be enabled in your user account.
+ 
+Viewing Customer Groups
+
+To view and manage your customer groups, go to Customers › Customer groups.
+
+On the list, you can see each group, the number of category and product discounts, and the number of registered customers assigned to the group. To view the customer accounts assigned to the group, select View customers from the Action menu (⋯) next to the group.
+
+Search for groups by name or partial name using the search bar at the top of the page.
+
+DELETING CUSTOMER GROUPS
+
+To delete a customer group, select Delete from the Action menu (⋯) next to the group. You can also delete one or more groups by checking the box next to the desired group, then clicking the Delete button.
+
+ 
+Creating and Editing Customer Groups
+
+To create a customer group, click the Create new button.
+
+Edit an existing group by clicking its name or selecting Edit from the Action menu (⋯). You can make a duplicate of a group by using the Copy action.
+
+While creating or editing groups, you can enter a name, configure category visibility, and set any discounts that are available to group members.
+
+ 
+Group Details Settings
+
+In the Group details section, name your customer group and set customer category visibility.
+
+Group Name — The name of the customer group you are creating. This name is not visible to customers.
+Group Access — Enable Customers in this group can see products in all categories across all channels to allow the group access to all visible categories.
+Uncheck this setting to choose which storefront channels and categories the group can and cannot access by using the category selector.
+Customers cannot view or search for products in hidden categories unless those products are also assigned to visible categories.
+Customer groups must have at least one category selected as accessible.
+
+When configuring your group access settings, selecting a parent category does not automatically select its child categories. You must click on the parent category to expand and display all of its child categories, and then select any child categories to be included.
+
+Adding a high number of categories to a customer group may affect control panel load times. We recommend using our API if you plan on assigning hundreds of categories to your customer groups. See the BigCommerce Developer Docs for more information.
+
+ 
+
+Did you know? If a customer group has limited category visibility, where not all categories are visible to the group, newly created categories are automatically not visible to the group. New category visibility must be enabled in the customer group settings.
+
+ 
+Pricing and Discounts
+Customer group discount considerations
+Category-level discounts
+Product-level discounts
+Storewide price adjustment
+
+Growth, Scale, and Performance stores can use customer group discounts, which includes category, product, and storewide discounts. Additionally, you can set a storewide markup to increase product prices for a specific customer group.
+
+Stores on a Performance plan can use price lists to provide custom pricing for customer groups. Keep in mind that price lists and customer group discounts are exclusive and cannot be combined on individual customer groups — if you wish to use customer group discounts on a group currently assigned to a price list, you will need to first unassign the price list.
+
+CUSTOMER GROUP DISCOUNT CONSIDERATIONS
+
+If you have multiple channels enabled on your store, you can view and select product categories and products in all of your channels, allowing for greater customization of product discounts between storefront channels.
+
+Customer group discounts overwrite product default pricing, as such, products with a customer group discount applied do not display the default price with a strikethrough. Customers in the corresponding group only see the discounted price on the storefront. However, price lists assigned to customer groups do display strikethroughs on products with unique MSRP or sale pricing. 
+
+Coupon codes will stack with customer group discounts. If a customer in a group which has a discount chooses to use a coupon code, they will be able to combine both to receive a larger discount.
+
+However, discounts do not double up if multiple category discounts are in place. When a customer is eligible for multiple customer group pricing rules, the storefront applies the most specific rule. For example, if you have both a storewide discount and a category discount, only the category discount will apply to the order.
+
+ 
+
+Pro Tip! Coupon promotions can be restricted to specific customer groups, allowing you to limit the discount to groups such as wholesale, high-value, or new customers. For further information, see our article on Automatic and Coupon Promotions (Standard Editor).
+
+For more information on how customer groups interact with other pricing rules, see Price Order of Operations in the Developer Docs.
+
+CATEGORY-LEVEL DISCOUNTS
+
+To create discounts that apply to entire categories, click Add category-level discount.
+
+Click the category selector to choose a category from a popup window. Check the box next to Include sub-categories for the discount to also apply to its child categories.
+
+Set a Price discount or Percentage discount to reduce all product prices in the category by the selected amount, or Fixed price to set all product prices to the entered value. The value must be greater than 0 for all discount types.
+
+To create discounts for other categories, click Add category-level discount. Click the trash can icon to the right of a discount line to remove it.
+
+When more than one category-level discount applies to the same product, the larger discount is applied and the other is ignored. See the FAQ about multiple category-level discounts for more information.
+
+PRODUCT LEVEL DISCOUNTS
+
+To create discounts that only apply to specific products, click Add product-level discount.
+
+Click the product selector to assign a product. In the pop-up window, search for a product by its name or SKU, or manually select it from the product list.
+
+Set a Price discount or Percentage discount to reduce the product price by the selected amount, or Fixed price to set the product price to the entered value. Note that the value must be greater than 0 for all discount types.
+
+To create discounts for other products, click Add product-level discount. Click the trash can icon to the right of a discount line to remove it.
+
+STOREWIDE PRICE ADJUSTMENTS
+
+You can set pricing rules for a customer group that affect all products in the storefront. Under Storewide price adjustments, select the type of rule to apply and enter the value to adjust in the field next to it.
+
+The following pricing rules are available:
+
+Percentage discounts — Reduce product prices by a percentage value.
+Price discounts — Reduce product prices by a specific amount in your store's default currency.
+Percentage markups — Increase product prices by a percentage value.
+Price markups — Increase product prices by a specific amount in your default currency.
+Fixed price — Set a single price for all products in your default currency.
+ 
+
+You cannot enable category- or product-level customer group discounts if storewide markup is enabled. You must remove an existing markup rule to apply discount rules to a customer group and vice versa.
+
+Set the value to 0 to remove the existing pricing rule from the customer group.
+
+ 
+Managing Default Customer Groups
+
+Use this setting to manage the default groups that apply to guest customers and new customers who have created an account.
+
+Go to Customers › Customer Groups and click Manage default customer groups.
+
+Click the drop-down list to set a default group for both visitors and brand new customer accounts. A maximum of 10,000 customer groups can be displayed in the list.
+
+When a customer creates a new storefront account, it is automatically assigned to the group set under Registered Customers. Shoppers without storefront accounts and those who are not logged in use the category visibility and discount rules for the group set under Guest Customers.
+
+If you have multiple channels, first specify the All Storefronts (Global) groups for guests and registered customers. Then configure each of your channels to either use the global groups, or uncheck the box next to Use global to specify channel-specific default groups.
+
+ 
+Assigning Customers to Groups
+
+To assign customers to customer groups, go to Customers › All customers.
+
+For the desired customer, select a customer group from the Group drop-down list. The change will be saved automatically.
+
+To remove customers from a previously assigned group, select No group from the list.
+
+You can also assign customer groups while adding or editing customers.
+
+ 
+
+Assigning customers in bulk? Customer groups can also be assigned to groups via a CSV import or using the API.
+
+ 
+Wholesale and Retail Groups
+
+Wholesale customers usually have access to products or bundles of products not available to retail customers, and they often have a discount on the products they buy. Both of these can be set up by using the Customer Groups feature.
+
+To restrict wholesale products from retail customers, you will first need to create a category specifically for those products.
+
+Then, segment your customers by creating a Wholesale customer group and selecting the Wholesale category under Group access.
+
+Don't forget to set up any discounts that your Wholesale group may need.
+
+After you have set up your wholesale products and customers, you then need to segment your retail customers so that they only see your retail products. When creating your Retail customer group, check all of your categories, except for the Wholesale category.
+
+Once the customer groups are finished, click Manage default customer groups and select your Retail group for both Registered customers and Guest customers.
+
+After a shopper creates a storefront account and you've confirmed them as a wholesale buyer, you can manually move their account to your Wholesale customer group.
+
+ 
+Member-Only Content
+
+The ability to have "member-only" content is not a native feature of BigCommerce. However, the customer groups feature can be used to require customers to register for and log in to their accounts before they can access particular content. For example, if you sell exclusively to wholesalers, you will need to block the general public from being able to order from your store without first signing up for an account.
+
+You will first need to create a category with instructions for accessing your content.
+
+Next, create a non-member customer group for guests and anyone not logged into their storefront account. Restrict Group access to only the category that you just made.
+
+Then, create a member-only customer group which grants members access to view all other product categories.
+
+Once the customer groups are finished, click Manage default customer groups and select your members-only group for Registered customers and your non-member group for Guest customers.
+
+ 
+FAQ
+
+Why can't I see some of my customer groups while assigning default groups for registered and guest customers?
+
+If you have more than 10,000 customer groups, any groups after the first 10,000 will not appear when selecting default customer groups from the drop-down menus. If you want to assign a default customer group that doesn't appear in the list, you can do so via the API.
+
+Can I add a customer to more than one customer group?
+
+No, you can only assign a customer to a single group. If your store is on an Enterprise plan, you can assign a customer to multiple customer segments via the API. You can include or exclude multiple segments in promotions created with the standard editor; however, segments do not define a customer’s product availability and pricing on the storefront like customer groups do.
+
+Can I add customer group markup pricing to a subset of my products?
+
+No, markup pricing is only available at the storewide level for customer groups. However, you can increase the price of select products with a price list assigned to a specific customer group.
+
+Why can’t I enable certain pricing rules on a customer group?
+
+If you have enabled product- or category-level discounts on a customer group, you cannot also enable storewide markup. Similarly, if your customer group has storewide markup enabled, you cannot enable any discounts.
+
+If you have any existing category or product discounts enabled on a customer group, you must first delete them before you can enable storewide markup for that group.
+
+What happens when multiple category-level discounts apply to the same product?
+
+When more than one category-level discount applies to the same product, the largest applicable discount takes priority (the one that results in the lowest price). For example, let’s say you have a product with a price of $49.98 that is both in a category that has a 50% percentage discount, and in another category or subcategory that has a fixed-price discount that sets the price to $25. In this case, the percentage discount would take priority because its resulting price would be lower ($24.99 using the percentage discount, versus $25 using the fixed-price discount).
+
+Why can customers see products in categories that are hidden from their customer group?
+
+If a product is assigned to multiple categories, it remains visible to a customer group as long as at least one of those categories is accessible to them, even if other assigned categories are hidden.
+
+To completely hide a product from a specific customer group, ensure it is removed from every category that group has permission to view.
+
+Additional Resources
+Automatic and Coupon Promotions (Standard Editor)
+Importing and Exporting Customers
+Making Customers Tax-Exempt
+Price Lists
+Product Categories
+Customer Groups (Developer Docs)
+Customer Segmentation API Guide (Developer Docs)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Customer Groups

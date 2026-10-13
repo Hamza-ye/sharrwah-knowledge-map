@@ -1,0 +1,251 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+Mobile App
+Orders
+Troubleshooting Orders
+VIEWING ORDERS
+Order Statuses
+Requirements
+Order Statuses
+Changing an Order Status
+Status Change Notifications
+Customizing an Order Status Label
+FAQ
+Order IDs
+Viewing Orders
+MANAGING ORDERS
+Backorders
+Draft Orders
+Manual Orders
+Editing Orders
+Invoices
+Importing and Exporting Orders
+Capturing Funds
+Order Actions
+Packing Slips
+Refunds
+Returns
+Shipments
+Shipping Labels
+ORDER NOTIFICATIONS
+Order Notifications
+Customer Order Notifications
+Customers
+BigCommerce For WordPress
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Order Statuses
+What We'll Cover
+Requirements
+Order statuses
+Changing an order status
+Status change notifications
+Customizing an order status label
+FAQ
+
+Most order statuses are applied as a result of store user or customer action, but some must be manually changed. Order statuses can help you decide what actions need to be taken for a particular order, such as whether the order needs to be packaged or shipped.
+
+The default order view enables you to quickly and easily find orders you're looking for based on a specific order status, such as Awaiting Shipment, Awaiting Payment, and more. This helps you to fulfill orders and communicate with your customers in a timely manner, leading to higher satisfaction and return business.
+
+ 
+Requirements
+To view and manage orders, you must have the Manage Orders permission enabled on your user account.
+To customize order status labels, you must have the Customize Order Statuses permission enabled.
+ 
+Order Statuses
+
+Here is the list of the built-in order statuses that can be applied to orders. By default, new orders that have been paid for will have a status of "Awaiting Fulfillment" (physical products) or "Completed" (digital products), but this can vary based on the payment gateway and method used.
+
+Pre-orders use the same statuses listed here to represent if the order is pending, awaiting payment, or awaiting fulfillment. You can access your pre-orders from the View Orders screen.
+
+Pending — The checkout process was not fully completed.
+Incomplete orders are assigned a Pending status and can be found under the More tab on the View orders page.
+Orders can be placed in this status even if your gateway received payment from the customer.
+See the “Additional Payment Step Notices” section of Understanding Checkout Errors for more details.
+Awaiting Payment — Customer has completed the checkout process, but payment has yet to be confirmed.
+Authorize only transactions that are not yet captured have this status.
+Awaiting Fulfillment — Customer has completed the checkout process and payment has been confirmed.
+Awaiting Shipment — Order has been pulled and packaged and is awaiting collection from a shipping provider.
+Awaiting Pickup — Order has been packaged and is awaiting customer pickup from a seller-specified location.
+Partially Shipped — Only some items in the order have been shipped.
+Completed — Order has been shipped/picked up, and receipt is confirmed; client has paid for their digital product, and their file(s) are available for download.
+Shipped — Order has been shipped, but receipt has not been confirmed; seller has used the Ship Items action.
+A listing of all orders with a Shipped status can be found under the More tab on the View orders page.
+Cancelled — Seller has cancelled an order, due to a stock inconsistency or other reasons.
+Stock levels will automatically update depending on your Inventory Settings. Cancelling an order will not refund the order.
+This status is triggered automatically when an order using an authorize-only payment gateway is voided in the control panel before capturing payment.
+Declined — Seller has marked the order as declined.
+Refunded — Seller has used the Refund action to refund the whole order.
+A listing of all orders with a Refunded status can be found under the More tab on the View orders page.
+Disputed — Customer has initiated a dispute resolution process for the PayPal transaction that paid for the order or the seller has marked the order as a fraudulent order.
+Manual Verification Required — Order on hold while some aspect, such as tax-exempt documentation, is manually confirmed.
+Note that orders with this status must be updated manually.
+Capturing funds or other order actions will not automatically update the status of an order marked Manual Verification Required.
+Partially Refunded — Seller has partially refunded the order.
+
+Certain order statuses are associated with a paid or unpaid status. If you are using an automatic tax provider, this may affect tax document submission such as moving an order from a paid status into an unpaid status.
+
+An order status is considered paid when the status is any of the following:
+
+Captured
+Awaiting Fulfillment
+Awaiting Pickup
+Awaiting Shipment
+Completed
+Refunded
+Partially Refunded
+Partially Shipped
+Shipped
+
+An order status is considered unpaid when the status is any of the following:
+
+Pending*
+Awaiting Payment
+Declined
+
+*Your payment gateway may have recorded the payment, but if the completion was not successfully relayed to BigCommerce at the time of the order, it would be considered unpaid and the order placed in Pending status. We recommend checking your gateway’s dashboard for captured funds before fulfilling the order.
+
+See our Tax Overview article for more information on how these order statuses affect tax document submission.
+
+ 
+Changing an Order Status
+
+Some order statuses are applied when a particular control panel action is performed, while others need to be manually applied. For example, shipping items will change an order's status to Shipped, whereas a Cancelled or Declined order status has to be manually applied.
+
+To manually change an order status, select it from the Order Status drop-down on Orders › All orders.
+
+When an order's status has been changed, an email can be sent to the customer automatically to notify them.
+
+ 
+
+Be careful! Depending on your store settings, changing order statuses can affect product stock levels. See the FAQ for more details.
+
+ 
+Status Change Notifications
+
+You can select which order statuses trigger an email notification to your customers by editing your order notification settings. This is in addition to the Order email (also known as the Invoice email), which is sent automatically. You can customize the email templates for both the order confirmation and status update messages from Settings › Order notifications in the control panel.
+
+Order status notifications are universal and apply to all customers. For example, you can't specify that a particular customer group doesn't get a particular status notification. Note that customized order statuses will be reflected in email notifications sent from your store.
+
+ 
+Customizing an Order Status Label
+
+You can customize the order status labels to something more specific to your business. For example, you could update the Awaiting Shipment status (which represents that an order has been pulled and packaged, and is awaiting collection from a shipping provider) to Package ready to be picked up by FedEx. This will not give it any additional functionality, but can be used to provide more specifics for your customers or fulfillment team.
+
+ 
+
+How will changing a label affect my analytics? Analytics will continue to utilize the original order statuses as it did before the name change. For example, renaming "Completed" to "Not completed" would still count as "Completed" for analytics.
+
+To rename an order status, go to Settings › Statuses, then click Edit. The fields will become editable text fields, and you can customize your order status labels up to 200 characters in length.
+
+To return to the original status name, click the ellipses and select Restore to Default.
+
+Once you are satisfied with your changes, click Save. Your changes will be updated throughout the control panel. For example, on the View orders page, you will see that the filters and statuses have been updated to your new values.
+
+If your label is longer than 30 characters, it will be trimmed in the control panel but will show as full length to your customers.
+
+ 
+FAQ
+
+What are incomplete orders?
+
+An incomplete order happens when a shopper reached the payment page but did not complete the transaction. Incomplete orders can be the result of:
+
+A failed payment attempt such as a declined credit card.
+The shopper left the payment page before completing the order.
+The shopper never completed the transaction by returning to checkout from a hosted payment gateway.
+The shopper never completes required payment verification, such as 3D Secure.
+A communication issue between BigCommerce and your payment gateway.
+
+Incomplete orders have an order status of Pending and can be found under the More tab on the View orders page.
+
+For more information about why some orders may be considered incomplete, see the “Additional Payment Step Notices” section of Understanding Checkout Errors.
+
+Incomplete orders are often mistaken as abandoned carts, but they are not the same. An abandoned cart is a cart that has items in it, but the visitor left without attempting payment. To learn how to recover these carts, see Using the Abandoned Cart Saver.
+
+Can I change the default orders status for new orders?
+
+No. The default order status cannot be changed.
+
+Can I create or delete order statuses?
+
+No, but you can rename them.
+
+Why are my product stock levels affected by order status changes?
+
+If you track inventory on products, stock levels can be set to automatically adjust based on order status changes.
+
+Depending on your settings, stock levels can update when orders are placed into Completed, Shipped, Refunded, and Cancelled statuses.
+
+See “Inventory Settings” in Inventory Tracking for more information.
+
+Do this in my store
+
+GO TO ORDER STATUSES IN MY STORE
+
+Additional Resources
+Online Payment Methods
+Viewing Orders
+Inventory Tracking
+Processing Refunds
+Using Order Actions
+Customer Order Notifications
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Order Statuses

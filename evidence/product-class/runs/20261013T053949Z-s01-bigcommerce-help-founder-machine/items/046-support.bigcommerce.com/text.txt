@@ -1,0 +1,182 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Recurring Billing
+Test Orders
+Shipping and Tax Settings
+Payment Gateway Settings
+Viewing the Test Order
+FAQ
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Creating a Test Order
+What We'll Cover
+Shipping and tax settings
+Payment gateway settings
+Viewing the test order
+FAQ
+
+Before you launch your store, or after you've changed your checkout settings, it's a good idea to place a test order from your storefront. This allows you to ensure everything functions as you intend and can provide insight into your customers’ shopping experience.
+
+These instructions assume you have already connected a payment gateway, set up shipping, and set up your taxes. Additionally, you'll need to use an existing product or create a test product. We recommend creating a $1 test product if you plan on testing a live payment gateway.
+
+ 
+Shipping and Tax Settings
+
+To create a test order, you will need to visit your storefront and place an order as if you were a shopper. If you're in the control panel, click View Storefront to go directly to your storefront.
+
+If you have multiple storefronts, click View Storefronts and select which storefront to view from the pop-up window.
+
+Navigate to your test product and add it to your cart. View your cart and click Add Info next to Shipping. Enter your shipping information, then click Estimate Shipping to populate your shipping options.
+
+Select an option and click Update shipping cost to ensure the appropriate shipping methods and taxes are being calculated correctly. If you received an error, see the Troubleshooting section below.
+
+When you are ready, click Check out to continue the order and test your payment gateway settings.
+
+TROUBLESHOOTING SHIPPING
+
+If you are seeing any of the symptoms below, there may be a problem with how your shipping methods are set up.
+
+You receive "Unfortunately one or more items in your cart can't be shipped to your location. Please choose a different delivery address." when checking out.
+You do not see a shipping quote that should show up, such as no USPS quotes.
+Clicking "Get quote" when testing a shipping method in the control panel does not do anything.
+
+These symptoms occur when the shopping cart cannot find a working shipping method for the combination of products and shipping address you've entered. Read through Checkout Errors to determine what is causing the error and how to resolve it. If you are experiencing issues with real-time shipping quotes, see our Troubleshooting article for common sources of missing or inaccurate quotes.
+
+ 
+Payment Gateway Settings
+
+You can complete a test order with either the BigCommerce Test Payment Gateway (which will process the order without charging a card) or with one of our payment gateway integrations (which will process a real transaction). We recommend creating a $1 test product if you plan on testing a live payment gateway.
+
+BIGCOMMERCE TEST PAYMENT GATEWAY
+
+The BigCommerce test payment gateways allows you to complete a checkout without using a live payment method or entering real credit card information. To enable test payments, go to Settings › Payments in your control panel and check the box next to Enable test credit card payments, found at the bottom of the page.
+
+To create an order through the test payment gateway, navigate to your test product and add it to your cart if you have not done so already. When you reach the checkout page, complete the checkout steps as a guest and use a real address to ensure that shipping and tax are calculated correctly.
+
+When you reach the Payment section, select the Test Payment Provider payment method. Use 4111 1111 1111 1111 for the card number and success for the cardholder name. The expiration and CVV fields do not require specific values, but you must enter a future date.
+
+Click Place Order to complete the test order. This takes you to the order confirmation page, indicating that you can now view the order in your control panel.
+
+ 
+
+Disable the test payment gateway after placing your test order! Customers may potentially use the test payment gateway at checkout, resulting in an order placed without capturing funds.
+
+PAYMENT GATEWAY INTEGRATION
+
+To test an active payment gateway, navigate to your test product and add it to your cart if you have not done so already. When you reach the checkout page, complete the checkout steps as a guest and use a real address to ensure that shipping and tax are calculated correctly.
+
+When you reach the Payment section, enter your credit card details. Click Place Order to complete the test order. If the payment was unsuccessful, check the System Log in your Store Logs for details on why the transaction failed.
+
+If you did not receive an error, view the test order in your control panel to refund it.
+
+ 
+Viewing the Test Order
+
+Go to Orders › View. Successful order have a status of Awaiting Fulfillment (physical products) or Complete (digital products).
+
+After locating the order, you can refund it if you used a live payment gateway, or change the status to Cancelled if you used the test payment gateway.
+
+ 
+FAQ
+
+Can I simulate checkout errors using the test payment gateway?
+When you use success for the cardholder name in the test payment gateway, it will generate a successful order in the control panel. However, you can enter other values in the cardholder name field to generate different errors at checkout and in your Store Logs.
+
+See the list below for supported values and their corresponding errors.
+
+transaction_declined — the test transaction fails due to declined payment
+three_d_secure_declined — the test transaction fails due to an invalid 3D Secure password
+three_d_secure_failed — 3D Secure validation fails before the transaction is completed
+incorrect_cvc — the test transaction fails due to a missing or incorrect Card Verification Code (CVC)
+invalid_cvc — the test transaction fails due to the CVC having the incorrect number of digits for the card type
+Additional Resources
+Available Payment Gateways
+Online Payment Methods
+Shipping Setup
+Tax Overview
+Order Statuses
+Processing Refunds
+Checkout Errors
+Using Store Logs
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Creating a Test Order

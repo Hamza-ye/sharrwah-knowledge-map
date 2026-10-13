@@ -1,0 +1,18 @@
+{
+ "n": 48,
+ "url": "https://support.bigcommerce.com/s/article/Unified-Billing-for-Partners",
+ "dir": "items/048-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Unified-Billing-for-Partners?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190826,
+ "cited_in": [
+  "BC-C-029"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4bebe69a25d09f9f16ce124ff263ec25be810622af6bc0426c15e680841c2590",
+ "raw_ext": "html"
+}

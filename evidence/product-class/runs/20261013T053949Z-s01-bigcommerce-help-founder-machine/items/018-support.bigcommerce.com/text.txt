@@ -1,0 +1,278 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+B2B Edition
+B2B Edition
+B2B Edition User Guide
+B2B Edition Settings
+User Roles and Permissions
+Buyer Roles and Permissions
+B2B Emails
+Importing and Exporting
+Companies and Customer Groups
+Requirements
+How It Works
+Assigning
+FAQ
+B2B Edition for Headless Storefronts
+Managing Sales Quotes
+Account Hierarchy
+B2B Ninja
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Companies and Customer Groups in B2B Edition
+What We'll Cover
+Requirements
+How it works
+Assigning a customer group to Company accounts
+FAQ
+
+Company accounts in your B2B Edition control panel interact with customer groups in your BigCommerce control panel to provide your B2B buyers with curated storefront features, such as negotiated pricing, client-specific products, and preferred payment methods.
+
+Independent Companies behavior removes the necessity of a dedicated customer group for each Company account, allowing you to assign a single customer group to multiple Companies, and to set a default customer group for new Companies.
+
+ 
+Requirements
+
+Independent Companies behavior is only available for stores using the B2B Edition Buyer Portal experience.
+To manage customer group assignment for individual Company accounts, you must have the following permissions enabled in your B2B Edition system user account:
+
+View Companies
+View Company Detail
+View Company Super Admins
+View Company Sales Staff
+View Basic Info
+Update Basic Info
+
+To specify a default customer group for new Company accounts, you must have the following permissions enabled:
+
+View Settings
+Update Settings
+
+To update customer group assignments via CSV import, you must have the following permissions enabled:
+
+View Companies
+Export Company CSV
+Import Companies
+
+The following CSV fields are required to successfully import your changes:
+
+Company ID
+Customer Group ID
+Company Name
+Company Phone Number
+Company Email Address
+Company User Email
+Company User First Name
+Company User Last Name
+Any Company or Company User extra fields that you’ve marked as required
+
+To learn more about the requirements for configuring category display, see Customer Groups. For more information about the requirements for assigning a Price List to a Company account, see Using Price Lists.
+
+ 
+How It Works
+
+B2B Edition Companies establish a business account for each of your B2B clients, and define how their users can interact with the storefront and manage their Buyer Portal. Each Company user has a corresponding customer account in your BigCommerce control panel, which is assigned to a customer group. Customer groups allow you to specify unique pricing for the Company, restrict access to certain product categories, and configure tax zones with Company-specific rates.
+
+Before Independent Companies, creating or approving a new Company account in your B2B Edition control panel automatically generated a new customer group which was applied to all Company users. However, once assigned, Companies and their associated buyers could not be reassigned to a different customer group.
+With independent Companies, Company accounts do not automatically generate customer groups. This allows you to:
+
+Assign an existing customer group during Company creation
+Reassign Company accounts to a different customer group
+Create a single customer group and assign it to multiple Company accounts to manage their catalog access and pricing structure in one place
+Set a default customer group for new Company accounts
+Update customer group assignments in bulk via CSV import
+Provide a Company with your storefront’s default catalog and pricing by unassigning the customer group
+
+The independent Companies data model establishes each customer and Company record type as the “source of truth” for certain information. This ensures data consistency between your B2B Edition control panel and BigCommerce control panel, and mitigates the risk of mismatched information.
+
+ 
+
+Changes are automatically overwritten if they are not made on the source of truth for the information. For example, the Company account is the only record type that defines a Company user’s customer group, and it automatically corrects the customer account if you assign a different customer group from there.
+
+See the table below to learn more about which record types are the source of truth for specific customer and Company attributes. Note that B2C customers who are not associated with a Company account only use the customer account and customer group record types for their storefront information.
+
+Customer Account	Customer Group	Company Account	Company User
+
+Store credit
+Abandoned cart saver and product review email consent
+Account password and password reset
+Tax exempt code
+Account signup form fields
+Data collection consent
+	
+Storefront-specific Price Lists*
+Category access
+Customer group-targeted rules for basic tax zones and promotions
+	
+Assigned customer group
+Assigned Company users
+Super Admins
+Sales Staff
+Payments and credit
+Saved billing and shipping addresses
+File attachments
+	
+Storefront channel access
+Basic user information like name and email address
+Assigned buyer role
+Company user extra fields
+
+* Customer groups are assigned to Price Lists by editing the Price List itself, but the customer group relays its pricing information to the Company account and its users. See the FAQ for more information.
+
+ 
+Assigning a Customer Group to Company Accounts
+
+Independent Companies behavior allows you to update a Company’s customer group assignment at any time. There are several different methods you can use to assign customer groups:
+
+Assigning during Company account creation
+Updating an existing Company
+Setting a default customer group
+Assigning in bulk via CSV import
+ASSIGNING DURING COMPANY ACCOUNT CREATION
+
+While creating a Company account in your B2B Edition control panel, use the Customer group field to specify which customer group the Company will use.
+
+Select the customer group from the drop-down list, or type the customer group name in the field to narrow your results. If you’ve configured a default customer group, it is preselected in the field.
+
+If you want buyers in the Company account to use your storefront’s default pricing and product category availability, select No customer group.
+
+UPDATING AN EXISTING COMPANY
+
+To change the customer group for an existing Company account, go to the Companies area of the B2B Edition control panel. Click the Company’s name to view its details, then click the Change customer group field in the Basic Information tab to open the selection pop-up.
+
+The customer groups in the list display their assigned Price List for each storefront. As with new Companies, you can search for specific customer groups by using the search bar, or assign the Company to No customer group.
+
+ 
+
+Pro Tip! Assign pending Company accounts to a specific customer group before approving them to provide buyers with the correct catalog and pricing information from the first time they access their Buyer Portal.
+
+SETTING A DEFAULT CUSTOMER GROUP
+
+Depending on your business model, you may want to specify a customer group for new Companies. This is especially helpful if you’ve enabled automatic approval for Company account applications submitted by prospective buyers.
+
+To assign a default customer group, go to Settings › General in the B2B Edition control panel and locate the Default customer group dropdown. Select your desired customer group from the list, or select No customer group to provide new Companies with basic storefront products and pricing.
+
+ASSIGNING IN BULK VIA CSV IMPORT
+
+CSV import is the quickest and most efficient way to update Company information in bulk. Importing Company data can expedite certain reformatting tasks like assigning multiple Companies to a newly-created customer group.
+
+To update customer group assignments in bulk, export your Companies to a CSV file and open it in your preferred spreadsheet program. While making changes, take note of the following considerations regarding the required fields:
+
+Company ID — This is used to identify existing Company accounts, and must correspond with the correct Company row in the CSV file for a successful update. If you are creating a new Company in your CSV file, remove this field.
+Customer Group ID — Use this field to assign a customer group to new and existing Companies.
+To assign Companies to a specific customer group, enter its ID in the field. You can locate the ID by going to the customer group in the BigCommerce control panel and copying the number found in this part of the URL: https://store-xxxxxx.mybigcommerce.com/manage/customers/groups/#/edit
+To assign Companies to no customer group, enter 0 in the field.
+To assign Companies to the default customer group, leave the field blank.
+Other required fields — See Importing and Exporting in B2B Edition for formatting requirements.
+
+After updating customer group assignments and making any other desired changes, import your CSV to the Companies area. Make sure to check the Company Upload Summary Notification in the Dashboard area for any issues that may have occurred during import.
+
+ 
+FAQ
+
+Can I request independent Companies behavior in my B2B Edition store?
+
+Yes, you can contact BigCommerce support to have independent Companies behavior enabled. Note that your store must use the Buyer Portal experience in order to be eligible.
+
+ 
+
+Once independent Companies behavior is enabled on your store, you cannot revert to the previous behavior. Independent Companies behavior changes how Company accounts and customer groups interact with each other in your store, and reverting to dependent Companies behavior would cause data issues and disrupt storefront and Buyer Portal functionality for buyers.
+
+Does independent Companies behavior affect the Masquerade function for Super Admins?
+
+No, Super Admins experience no changes to how they view the Buyer Portal of their assigned Company accounts.
+
+If I’m using an integration that connects with B2B Edition, does independent Companies behavior affect how it interacts with my store?
+
+Third-party integrations, such as ERPs and CRMs, may require modifications to support the data model for independent Companies, depending on the store data they consume. Contact your integration provider to determine if any updates are needed.
+
+How do I assign a Price List to a Company account?
+
+To designate a Price List for a Company, you must edit the Price List in your BigCommerce control panel. Go to Products › Price Lists and click the Price List’s name, then go to the Assignments tab to assign the Company’s customer group to it for the desired storefronts.
+
+If I select “No customer group” for a Company, does it use the default customer group for guest shoppers?
+
+The No customer group option prevents a Company account from using any customer group, meaning that Company users will see the product categories and pricing visible by default in your store. If you have configured a customer group for guest shoppers and want a Company to use its configurations, assign the Company to that customer group directly.
+
+Can I assign specific buyers in a Company account to a separate customer group by editing their customer account?
+
+No, the customer group assignment in the Company account automatically overwrites any changes made to the customer account in the BigCommerce control panel or via the API.
+
+If I delete a Company’s assigned customer group, does it also delete the Company account?
+
+No, deleting a customer group automatically transfers its assigned Company accounts to No customer group. Similarly, deleting a Company account has no effect on its assigned customer group.
+
+Can I use dedicated customer groups for each Company account?
+
+Yes. If you want to provide a unique Price List and catalog availability to each of your B2B clients, create a new customer group in the BigCommerce control panel and assign it to its corresponding Company account in the B2B Edition control panel.
+
+How does independent Companies behavior affect the Company account application experience?
+
+After submission, Company users with a pending application cannot log in to the Buyer Portal until you approve or reject them. See the “Applying for a Company Account” section of Companies to learn more.
+
+Additional Resources
+Companies
+Customer Groups
+Importing and Exporting in B2B Edition
+B2B Edition Settings
+Using Price Lists
+Create a Company (Dev Center)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Companies and Customer Groups in B2B Edition

@@ -1,0 +1,18 @@
+{
+ "n": 35,
+ "url": "https://support.bigcommerce.com/s/article/Multi-Storefront",
+ "dir": "items/035-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Multi-Storefront?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190832,
+ "cited_in": [
+  "BC-C-039"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bf9c05676c4f6f96457a6191da092fc27e6dd85b25f7a333eae4d650922fa47e",
+ "raw_ext": "html"
+}

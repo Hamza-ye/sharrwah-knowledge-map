@@ -1,0 +1,278 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+QUICKSTART
+GETTING STARTED
+V3 PRODUCTS
+PROMOTIONS
+B2B EDITION
+HEADLESS COMMERCE
+MULTI-STOREFRONT
+SITE SPEED
+SEO
+KEYWORD RESEARCH
+GOOGLE ANALYTICS
+ECOMMERCE ANALYTICS REPORTS
+ECOMMERCE INSIGHTS
+CATALOG IMPORT/EXPORT (MODERN)
+CATALOG IMPORT/EXPORT (LEGACY)
+BIGTOOLS
+BIGAI: PREDICTIVE ANALYTICS (LTV)
+BIGAI: PREDICTIVE ANALYTICS (INVENTORY)
+ALTERNATIVE PAYMENT METHODS (APMS)
+LATAM PAYMENTS
+CRYPTOCURRENCY
+ORDER FULFILLMENT
+ORDER MANAGEMENT
+PHISHING ATTEMPTS
+FRAUD PREVENTION
+ACCESSIBILITY AND ADA COMPLIANCE
+CCPA
+Intro To CCPA
+Understanding The CCPA
+Implementing CCPA With BigCommerce
+How do I make sure I'm compliant
+Compliance checklist
+Customer Privacy Settings
+Do No Sell My Personal Information
+Privacy Policy
+Handling requests
+Conclusion
+BIGCOMMERCE FOR WORDPRESS
+PINTEREST
+DOMAIN & DNS
+REVERSE PROXIES
+INVENTORY MANAGEMENT
+CUSTOMER MANAGEMENT
+SHIPPING
+EMAIL
+CHANGING THEMES
+TROUBLESHOOTING IMAGES
+STORE TRANSFER
+MIGRATING FROM SHOPIFY
+MIGRATING FROM WOOCOMMERCE
+MIGRATING FROM MAGENTO
+B2B NINJA
+DATA LEVELS
+V3 CATALOG MIGRATION
+V2 PRODUCTS
+Guide to CCPA
+CHAPTER 3:
+Implementing CCPA with BigCommerce
+ 
+How do I make sure my BigCommerce store is compliant?
+
+Your first step should be determining whether your store or business is subject to the CCPA. See Who does the CCPA apply to in the first chapter of this guide.
+
+ 
+Compliance Checklist
+
+If you’ve determined the CCPA does apply to you, here’s a checklist of requirements, processes, and best practices you should have in place.
+
+1. Establish who is responsible for privacy/data protection within your organization. Ideally, this person will ensure your website, privacy policy, data practices, and rights request processes are in compliance with CCPA. This is not required by the CCPA, but is recommended as a best practice.
+
+2. Create an internal data map for all information collected about consumers. Determine what categories of data are stored in which systems. For example, in BigCommerce, information regarding what products a customer has purchased can be easily accessed via the orders management section, and a customer’s stored shipping addresses can be accessed in the customer management area.
+
+3. Create a tracking system for tracking and responding to rights requests, and to demonstrate compliance when and if requested.
+
+4. Train and assign a member of your staff to be responsible for understanding the business’s obligations under the CCPA, knowing how to properly handle CCPA rights requests, and knowing how to explain CCPA rights to consumers.
+
+5. Document internally all the third-parties with whom you share consumer personal information, the manner in which it is shared, and for what purpose. BigCommerce itself would be included in this list, as well as any apps or other third-party integrations connected to your store. This information will help inform the content of your public privacy policy.
+
+6. Ensure that your site’s publicly available privacy policy is up to date. We’ll go into more detail about what needs to be in your privacy policy in the next section.
+
+7. If you sell consumers’ personal information as defined by CCPA, then your site’s homepage and privacy policy must have a clear and conspicuous link titled “Do Not Sell My Personal Information”.
+
+8. If you sell consumers’ personal information, you must obtain prior consent from minors aged 13-16 before selling their data. For minors younger than 13, you must obtain consent from their legal guardian before selling their data. The CCPA doesn’t technically specify what “consent” entails, but the regulations (which are not yet final) will address this.  If your business is used by minors, you may need to implement an age-gating mechanism in order to identify and obtain consent from them.
+
+ 
+Customer Privacy Settings
+
+BigCommerce has some built-in tools that can help you to keep your shoppers informed of the data you’re collecting about them and give them the opportunity to opt-out of certain categories of information if they so desire.
+
+In the Security & Privacy settings of your control panel, you have the option of enabling a cookie tracking consent banner that automatically appears on the storefront whenever a new shopper visits your site. The shopper can accept all cookies or selectively choose which categories of cookies to allow.
+
+Cookies are delivered via scripts. Third-party scripts (like those added by some marketplace apps) and custom scripts are administered in your store’s Script Manager.
+
+Using Script Manager, you can specify the category for each script that your store loads.
+
+Essential — These cookies are essential for the site for the site to function and for any requested services to work, but do not perform any additional or secondary function. Shoppers cannot opt-out of these cookies.
+Analytics — These cookies provide statistical information on site usage so the store owner can improve the website over time.
+Functional — These cookies enable enhanced functionality, such as videos and live chat. If a shopper does not allow these, then some or all of these functions may not work properly.
+Targeting; Advertising — These cookies are used to create profiles or personalize content to enhance the user’s shopping experience.
+ 
+
+Legacy Footer Scripts: If you have scripts saved in the legacy Footer Scripts box, you should move each script into Script Manager so they can be categorized and used by the cookie consent banner.
+
+ 
+“Do Not Sell My Personal Information” Link
+
+This link should also be included in your privacy policy (as well as your website homepage). The linked page must inform consumers of their right to opt-out of the sale of their personal information, and provide a means for them to make such a request. You cannot require a consumer to create an account in order to use this link or opt-out. The CCPA already stipulates that you must provide two methods of contact for consumers to make rights requests, so you may be able to use these same methods to facilitate opt-out requests.
+
+In BigCommerce, there are several ways to add a link to your homepage:
+
+Use the built-in web page builder to create a new page or link to an existing page. Most BigCommerce themes display web page links in the header or footer of the homepage. Some themes may vary, so check with your theme developer if you’re unsure about your theme.
+Use the built-in marketing banners feature to add a link to the top or bottom of your homepage.
+If you are familiar with HTML, you can also edit your theme’s template files directly to add a link.
+Some third-party apps also allow you to add content to your homepage.
+ 
+Privacy Policy
+
+Ensure that your privacy policy includes all of the following:
+
+The categories of personal information you collect about consumers. A category of personal information is something like “customer name” or “email address”.
+In BigCommerce, information is collected when a user:
+visits any page on your store
+creates an account
+places an order
+signs up using the built-in newsletter
+submits the built-in contact form
+The sources from which personal information is collected. In BigCommerce, information is collected about a visitor through such sources as browser cookies, interactive web forms, and network data (like a visitor’s geographic IP address).
+If you sell consumers’ personal information to third parties, include a statement stating so. Describe the categories of information sold.
+If you disclose consumers’ personal information to third parties for a business purpose, include a statement stating so. Describe the categories of information disclosed.
+The purpose(s) for which you collect personal information. In BigCommerce, personal information is collected about a shopper in order to perform certain business functions on behalf of the merchant, like transacting payments and shipping orders.
+The categories of any third-parties with whom you share consumers’ personal information. You are not required to specifically name the third-party companies or services you do business with, just their “category”. For instance, BigCommerce would be categorized as an “ecommerce provider”.
+A description detailing California consumers’ rights relating to personal information:
+right to access
+right to change
+right to delete
+right to request additional information about data collection
+right to request information about sales and disclosures
+right not to be discriminated against for exercising CCPA rights
+At least 2 methods by which consumers can submit a rights request. At a minimum, the CCPA requires that you provide a toll-free telephone number and a web site address. If your privacy policy includes an email address where consumers can submit requests, that would satisfy half of this requirement (the web site address).
+The method(s) by which you verifying the identity of a consumer making a rights request.
+
+Keep an eye on the CCPA regulations - once they are final, they may contain additional requirements.
+
+ 
+Handling CCPA Rights Requests
+
+To comply with CCPA, your business will need to:
+
+provide a way for a consumer to contact you for a rights request
+verify their identity
+respond to the request within 45 days (up to 90 days if notice is provided in the first 45 days)
+collect the requested information within the scope that you are obligated to (information collected up to 12 months prior to the request)
+deliver the information to the consumer in an easily accessible and portable format
+CONTACT METHODS
+
+You must provide at least 2 methods for consumers to make requests. At a minimum, you must have a web site address (a web page with a contact form or email address) and in some cases, you may need a toll-free telephone number. A business cannot force a consumer to create an account in order to submit a request.
+
+See Creating a Contact Form for more information on creating a web page with a built-in contact form.
+
+VERIFIABLE CONSUMER REQUESTS
+
+A business can only provide the requested information after verifying that the person making the request is the same consumer the information is about or is someone authorized to make such a request on the consumer’s behalf.
+
+The CCPA regulations (once they are finalized) will provide specifics on what constitutes a verifiable request.  The CCPA  suggests that a consumer already logged into a service can be deemed verified. This means if a consumer demonstrates they have access to a customer account on your BigCommerce store, their identity can be considered verified. Similarly, if they can check the email address associated with a customer account, they should be able to reset the account password, thus enabling access to the account.
+
+SCOPE OF INFORMATION
+
+Businesses are not required to provide the requested information more than twice within a 12 month period, and the information provided only needs to encompass the preceding 12 months prior to the request.
+
+In BigCommerce, you can search, sort, and export customer and order information by date.
+
+RESPONSE WINDOW
+
+Businesses must respond to verified consumer requests within 45 days. If a business needs additional time, this can be extended an additional 45 days after notifying the consumer.
+
+DELIVERY METHOD
+
+If the consumer has an account with the business, the requested information can be delivered via that account. If not, it can be delivered by mail or electronically at the consumer’s option.
+
+In BigCommerce, creating a customer account or placing an order requires an email address, which would be one means of delivering personal information. Customers who create a store account can also send and receive order messages via the BigCommerce storefront.
+
+PORTABILITY
+
+The information must be provided in a format that is readily available to use, and can be easily transmitted to another entity.
+
+In BigCommerce, customer and order data can be exported in CSV or XML formats. Both of these formats can be readily accessed and/or converted to other formats using free online tools like Google Sheets.
+
+DELETING PERSONAL INFORMATION
+
+The CCPA does not (yet) define what constitutes deletion. If you receive a validated request to delete personal information, you can use your control panel or the API to perform the required actions.
+
+In BigCommerce, customers can be edited and/or deleted from the customer management area. Deleting a customer record does not automatically remove the customer’s personal information they may have shared as part of any orders. That data will need to be addressed separately.
+
+Newsletter subscribers who signed up using the native newsletter feature can be deleted in a store’s email marketing settings. Keep in mind that if you’ve connected any email marketing apps (like MailChimp or Klaviyo), you will need to delete the requested information from those systems as well.
+
+Orders can be edited from the control panel. You can edit an order to anonymize the personal information associated with it, like the customer’s name, email address, and billing/shipping addresses.
+
+Archiving an order does not remove the personal information associated with it, and will remove the order’s value from analytic calculations, so this is not recommended in response to a deletion request.
+
+“Deleting” an order via the BigCommerce Orders API only archives it as described above.
+
+When responding to consumer rights requests to delete data, remember that the scope of the CCPA only pertains to up to 12 months prior to the time of the request. If the information requested is older than 12 months, it is not covered by the CCPA.
+
+EXCEPTIONS
+
+The CCPA describes exceptions in which a business may deny certain rights requests.
+
+Perhaps the most obvious exception is situations in which a business must comply with other local, state, or federal laws. For example, a business would be exempt from honoring a consumer’s rights request to delete personal information if that specific information represented evidence as part of an official investigation by legal authorities.
+
+The CCPA does not apply to certain medical and health information governed by other California medical and health information laws. If your business model includes the collection or administration of personal medical information, you’ll want to review the CCPA’s exception language on this topic closely.
+
+The law also explains that a business can refuse a rights request if it has responded within the applicable time frame with the reason for not taking action and providing information on any rights the consumer may have to appeal. A business can also refuse a request if it is “manifestly unfounded or excessive” and notifies the requester as such.
+
+ 
+Conclusion
+
+The CCPA is designed to protect the privacy rights of Californians, but affects online merchants in all states, and could potentially end up serving as a model for other states or the federal government. To that end, even if you are not subject to the CCPA today, you should still stay informed of online privacy trends so you’re not caught off-guard if or when new legislation is brought forward.
+
+If your business is subject to the CCPA, keep in mind that it will take a significant amount of time to actually plan and implement changes. Making your site CCPA-compliant is not something you can do by simply copying and pasting new language into your privacy policy. It has real-world implications that will require you and your staff to be informed and trained appropriately.
+
+Above all, consult with your own legal counsel about your obligations regarding the CCPA. The information covered in this guide is to give you an overview of the law and help you plan for potential actions you may have to take with your BigCommerce store. Since every store/business is different, you’ll want personalized recommendations on what, if any, specific actions you need to take.
+
+All Chapters
+Intro to CCPA
+Understanding the CCPA
+Implementing CCPA with BigCommerce
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Implementing CCPA with BigCommerce

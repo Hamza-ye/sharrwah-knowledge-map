@@ -1,0 +1,18 @@
+{
+ "n": 49,
+ "url": "https://support.bigcommerce.com/s/article/Using-Multiple-Currencies",
+ "dir": "items/049-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:41:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Using-Multiple-Currencies?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190825,
+ "cited_in": [
+  "BC-C-074"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4105667c085be8bb3829252c977c66f2b0563bfbe31796bf927c8780b00d33de",
+ "raw_ext": "html"
+}

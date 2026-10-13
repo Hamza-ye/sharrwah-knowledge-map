@@ -1,0 +1,23 @@
+{
+ "n": 3,
+ "url": "https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US",
+ "dir": "items/003-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:39:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190830,
+ "cited_in": [
+  "S01-BC-G01",
+  "S01-BC-G02",
+  "S01-BC-G04",
+  "S01-BC-G05",
+  "S01-BC-G06",
+  "S01-BC-G16"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ef147dae9217a5fddf134396f7653780d1e7cf8b500c6424fe771d0a19e7d3d8",
+ "raw_ext": "html"
+}

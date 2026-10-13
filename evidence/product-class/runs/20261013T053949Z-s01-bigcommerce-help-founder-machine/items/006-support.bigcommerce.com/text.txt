@@ -1,0 +1,216 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+Setup
+Bank Deposit
+Cash on Delivery
+Check
+Money Order
+Pay in Store
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Offline Payment Methods
+What We'll Cover
+How it works
+Requirements
+Enabling offline payment methods
+Configuring offline payment methods
+FAQ
+
+Offline payment methods are ways to pay for orders that do not require a credit card or a traditional payment gateway. These can be helpful alternatives to make payments attainable for shoppers. Unlike most online payment methods, such as through a payment gateway, collecting payment is not immediate in these methods.
+
+ 
+
+What is an Open Payment Provider fee? For stores on self-serve plans, orders processed using offline payment methods and payment providers that are not on our Embedded Payment Provider list are assessed an Open Payment Provider fee. Orders processed through Embedded Payment Providers and Performance plan stores operating under contracted terms are not subject to this fee.
+
+ 
+How It Works
+
+Once enabled, shoppers will see your offline method as an available payment method at checkout.
+
+After the customer places their order, they will be shown the information and instructions you configured during setup in their email invoice and on the order confirmation page.
+
+Orders placed using an offline payment method are placed in Awaiting Payment order status. After receiving the payment, you can manually set the order to the Awaiting Fulfillment or another order status as you process the order.
+
+ 
+Requirements
+Your store’s checkout type must be Optimized One-Page Checkout or Custom Checkout.
+To set up and manage payment methods, the Manage Payments and Manage Settings permissions must be enabled on your user account.
+ 
+Enabling Offline Payment Methods
+
+To set up an offline payment method, go to Settings › Payments and select a currency from the drop-down list. Click the Open tab, and expand Offline Payment Methods.
+
+Click the Set up button next to the offline method that you want to use.
+
+On the next page, configure your selected payment method.
+
+ 
+Configuring Offline Payment Methods
+Bank deposit
+Cash on delivery
+Check
+Money order
+Pay in store
+BANK DEPOSIT
+
+You can set up your store to allow your customers to make a payment directly into your bank account by setting up a Bank Deposit payment method. This payment method displays your bank account information and instructions to your customer after their order is complete.
+
+In the Bank Deposit tab, enter your preferences in the fields below.
+
+Display Name — Enter what will your customers see this option called during checkout.
+Available Countries — Check the box for the countries where this payment method is available at checkout.
+Account Information — Enter all the bank account information necessary for the shopper to make a bank deposit payment.
+This text will appear on the order confirmation page and in the confirmation email sent to the shopper.
+ 
+
+Want to add the order number to your bank deposit instructions? You can add the variable %%OrderID%% to add the order ID to these details. This variable will be replaced with the Order ID when viewed by a customer. Note that this is only supported in the Bank Deposit payment method.
+
+CASH ON DELIVERY
+
+You can set up your online store to allow your customers to pay you with cash by setting up a Cash on Delivery payment method.
+
+Specify an address for the shopper to send the payment as well as other preferences in the fields under the Cash on Delivery tab.
+
+Display Name — Enter what will your customers see this option called during checkout.
+Available Countries — Check the box for the countries where this payment method is available at checkout.
+Delivery Information — Enter any information necessary for the shopper to complete the payment
+This information will be displayed on the order confirmation page and in the confirmation email.
+CHECK
+
+You can set up your online store to allow your customers to pay you by check by setting up a Check payment method. This payment method displays your mailing address and instructions for sending the check when your customer completes their order.
+
+Enter your information in the fields under the Check tab.
+
+Display Name — Enter what will your customers see this option called during checkout.
+Available Countries — Check the box for the countries where this payment method is available at checkout.
+Payment Information — Enter your mailing address, who customers should make the check out to, and any additional instructions.
+This information will be displayed on the order confirmation page and in the confirmation email.
+MONEY ORDER
+
+You can set up your online store to allow your customers to pay you via money order by setting up a Money Order payment method. When a customer completes their order, they will be shown the information and mailing instructions you provide.
+
+In the Money Order tab, fill in the following fields:
+
+Display Name — Enter what will your customers see this option called during checkout.
+Available Countries — Check the box for the countries where this payment method is available at checkout.
+Account Information — Enter your mailing address and any additional instructions.
+This information will be displayed on the order confirmation page and in the confirmation email.
+PAY IN STORE
+
+The final offline method is Pay in Store, which has your customers make payments at your physical store location.
+
+Enter payment instructions and other information in the fields within the Pay in Store tab.
+
+Display Name — Enter what will your customers see this option called during checkout.
+Available Countries — Check the box for the countries where this payment method is available at checkout.
+Payment Information — Enter your store's physical address and any additional instructions for how to handle in-store payments.
+This information will be displayed on the order confirmation page and in the confirmation email.
+ 
+
+Interested in Buy Online, Pick up in Store (BOPIS)? Use our BOPIS APIs to create a custom pickup experience in your store. We also support several third-party solutions in the App Marketplace.
+
+ 
+FAQ
+
+Can I set up a Purchase Order (PO) payment method?
+
+To set up a Purchase Order payment method, enable one of the built-in offline payment methods and enter “Purchase Order” in the Display Name field.
+
+If you are using B2B Edition, the Check offline payment method is used to enable the Purchase Order (PO) payment method.
+
+ 
+ 
+Do this in my store
+
+Go to Payments in my store
+
+ 
+ 
+Additional Resources
+Available Payment Gateways
+Order Statuses
+Buy Online Pickup In Store (App Marketplace)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Offline Payment Methods

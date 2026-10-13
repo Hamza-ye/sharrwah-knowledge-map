@@ -1,0 +1,18 @@
+{
+ "n": 28,
+ "url": "https://support.bigcommerce.com/s/article/Getting-Started-Payments",
+ "dir": "items/028-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Getting-Started-Payments?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190829,
+ "cited_in": [
+  "BC-C-022"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ee7afe1f39282113abfa65d0efccdddff2ee94f5798a25ec96bed97954144d42",
+ "raw_ext": "html"
+}

@@ -1,0 +1,319 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+Themes Overview
+Design Basics
+Content Pages
+Blog
+Files And Images
+Customizing Themes
+Script Manager
+Cornerstone Theme Manual
+Customizing Emails
+How It Works
+Requirements
+Email Templates
+Managing Email Templates
+Editing Phrases
+Editing Code
+Previewing Changes
+Languages
+Global Objects
+FAQ
+Stencil Themes
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Customizing Transactional Emails
+What We'll Cover
+How it works
+Requirements
+Email templates
+Managing email templates
+Editing template phrases
+Editing template code
+Previewing your changes
+Configuring language-specific templates
+Table of global objects
+FAQ
+
+Customizing your store email templates allows you to tailor their content and appearance to fit your brand, adding to the customer experience. With Transactional Emails, you can edit text, add custom code, and enable or disable specific email templates.
+
+ 
+How It Works
+
+Your store uses the email templates located in Marketing › Transactional Emails to automatically send emails when shoppers perform certain actions, such as signing up for a customer account or placing an order. All email templates are enabled in your store by default, but you can disable a template at any time to prevent customers from receiving an email when they perform the corresponding action.
+
+ 
+
+Using a third-party app to manage customer emails? You may want to disable some or all of your store’s built-in email templates to prevent your customers from receiving multiple emails.
+
+While editing your emails, you can customize the global template, or create unique templates for each of your native or headless storefronts as well as non-storefront channels. Email template customization settings are broken up into the following tabs:
+
+Phrases — specify the text in the email’s subject and body
+Code — customize the HTML and CSS coding of the email template to fine-tune its appearance and add content like images, links, and Buy Buttons
+Preview — view an example of the email template before going live with your changes
+
+Email templates can use variables that reference objects in the code which automatically supply relevant information, such as the customer’s name or their order number. Some objects can be used in all email templates, while others are only supported in particular templates.
+
+While editing a template, you can revert all phrases and code back to their default values. Click the Action menu (⋯), then select Reset to system default from the drop-down menu. You can also Enable or Disable the template from the drop-down.
+
+ 
+Requirements
+To view and edit Transactional Email templates, you must have the Store Design permission enabled on your user account.
+To enable or disable Transactional Email templates, you must have the Manage Settings permission enabled on your user account.
+ 
+Email Templates
+
+The following email templates are available for editing:
+
+Abandoned Cart* — sent when a customer abandons a shopping cart
+Account Settings Edited — sent when a customer makes a change to their account email address or password
+Password Reset — sent when a password reset for a customer’s storefront account has been requested or forced
+Order Status Update — sent when an order's status is changed
+Order Email — sent when a customer places an order
+Guest Account Created — sent when a customer checks out as a guest and has an account automatically created for them
+Gift Certificate Recipient — sent to the recipient of a gift certificate
+Sign-in Link Request — sent when an existing customer requests to use passwordless login while checking out
+Order Notification — sent when a message is added to an order
+Product Review Request — sent after an order has been placed, asking a customer to review the items they purchased
+Return Requested — sent when a customer submits a return request
+Account Created — sent when a customer creates a storefront account
+Return Status Change — sent when a customer's return request status is updated
+Order ready for pickup — sent when an order placed using Buy Online, Pick up in Store APIs is marked as ready for pickup
+
+*The content and settings for Abandoned Cart emails are managed in Marketing › Abandoned Cart Emails.
+
+ 
+Managing Email Templates
+
+To view your email templates, go to Marketing › Transactional Emails. This page lists your store’s default global templates, along with a label to show if they are currently enabled or disabled.
+
+ 
+
+Localized Store Experiences: This feature is available for all of our supported languages. For more information on the default language store setting, see Store Profile Settings.
+
+To edit a template, click the Action menu (⋯) next to the template, then select Edit Template from the drop-down menu. You can also Disable or Enable the template from the drop-down.
+
+ 
+
+How do I disable the Password Reset and Sign-in Link Request email templates? Please contact our support team to enable this functionality.
+
+If you have more than one storefront or channel, you can enable and customize templates individually or use the default global templates. Switch between global and storefront or channel templates using the drop-down list at the top of the page.
+
+To edit a storefront or channel template, uncheck the box next to Use Global. If you go back to using the default global template by checking the box next to Use Global, your saved changes to the storefront template are saved but hidden.
+
+To edit and preview a language-specific template, select a language from the drop-down menu under the Email template tabs.
+
+ 
+Editing Template Phrases
+
+Under the Phrases tab, you can customize the text used in the template. The Phrase name is an identifier used in the template code that outputs a string of text in the resulting email, called the Phrase value. The Phrase name is not visible to shoppers.
+
+You can change the Phrase name and Phrase value of existing phrases, or you can create custom phrases by clicking the + Add new button at the bottom of the page.
+
+Delete phrases by clicking the Action menu (⋯) next to a phrase and selecting Delete phrase.
+
+Phrase values can contain variables that reference objects in the code which pull information from your store, such as a customer’s name or email address. Some objects can be used in all email templates, while others are only supported in specific templates.
+
+Variables added in a Phrase value are wrapped in single curly brackets ({ }). For example, in the Order Email template, the subject phrase contains the {store} and {id} variables.
+
+These variables are included in Handlebars expressions within the Code tab.
+
+ 
+Editing Template Code
+
+The Code tab is where you can customize an email template by editing the underlying HTML and Handlebars code. This includes CSS styling and adding custom phrases from the Phrases tab.
+
+ 
+
+Editing code? We recommend saving a backup copy of your template in a plain text editor such as Notepad or TextEdit.
+
+The Code tab is divided into two sections. An email template’s subject line is edited in the Subject field and can contain plain text and Handlebars expressions. The email template body is edited in the Content field and can contain plain text, CSS styling, HTML, and Handlebars expressions. We recommend making edits by copying the template code into a text editor and pasting the edited version back into the Content box.
+
+If you have created or edited a phrase on the Phrases tab, include them within Handlebars expressions and define any added variables. For example, in the Order Email template, the Subject contains the expression {{{ lang 'subject' store=store.name id=order.id }}}. This outputs the subject phrase Your {store} Order Confirmation (#{id}), which contains the {store} and {id} variables. Within the expression, the variables are mapped to the store.name and order.id objects, which are available globally and specific to the Invoice email.
+
+For examples of how you can customize your email template code, see our developer documentation.
+
+ 
+Previewing Your Changes
+
+Under the Preview tab, you can see a sample of the email that would be generated from a template. This allows you to review your changes and you can go back to the Phrases or Code tabs to make further updates as necessary.
+
+When previewing an email template, it will display randomly-generated example content, such as order details in the Order Status Update template, or a product review link in the Product Review Request template. This content does not correspond to any actual store data, and it is replaced with information relevant to your customer when they receive an actual email.
+
+When you are done making changes, click Save on the bottom right of the page.
+
+You can also send a sample of the email that would be generated from a template directly to the inbox of your user account email address by clicking the Send test email button in the upper right of the page. Like the Preview tab content, this email will also contain example details.
+
+ 
+Configuring Language-specific Templates
+
+When you add a language to your storefront, you can customize the phrases in your transactional emails for that language. Your store uses the shopper’s selected language on the storefront to determine the template language for their emails.
+
+If you are using a supported language, the email’s default content, excluding custom phrases, is translated automatically. For unsupported languages, the template’s phrases are in English and you can add translated content manually. To see which languages support automatic translation, review the “FAQ” section of Localization Settings.
+
+Additionally, any new phrases or existing phrases with edited text do not translate automatically. You must manually translate any custom content.
+
+To customize language-specific content for an email, open the template, select your desired storefront and language, and uncheck Use Global.
+
+In the Phrases tab, you can update your phrase values with translated content or customize the automatically-translated text. Since the language-specific templates share the same template code, you cannot make language-specific code customizations like changing the formatting and styling or adding content that is displayed in some languages but hidden in others.
+
+ 
+
+Do not translate phrase names or template variables. These are universal values used by your template, and translating them prevents your store from rendering content properly in your emails.
+
+From the Preview tab, you can select a language to view an example of how the email will appear to shoppers. However, the Send test email button can only send emails in your storefront’s default language.
+
+ 
+Table of Global Objects
+
+Below is a table of global objects that can be used in Handlebars expressions on all email templates. For a list of objects that can only be used in specific templates, see our developer documentation.
+
+Object	Corresponds to:	Output example
+store.name	your store's name	"Thanks for Registering at My BC Store"
+store.domain_name	your store's domain name	"Your mybcstore.com account details have changed"
+store.logo.title	your store's logo text (used as alt text for your logo image)	My BC Store
+store.logo.url	your store's logo image URL	https://cdn11.bigcommerce.com/s-xyz123/product_images/storelogo.jpg
+store.ssl_path	your stores HTTPS URL	"Your https://mybcstore.com account details have changed"
+store.cdn_path	your store's content delivery network path URL	https://cdn11.bigcommerce.com/s-xyz123
+store.image_directory	the image directory URL tail in your store's CDN path	{{ store.cdn_path }}/{{ store.image_directory }} = https://cdn11.bigcommerce.com/s-xyz123/product_images
+store.path_normal	your store's HTTPS URL (used as link at the bottom of some emails)	"My BC Store https://mybcstore.com"
+store.path	your store's HTTPS URL (used as link in the logo and "go shopping" button)	https://mybcstore.com
+store.address	your store's physical address	"My BC Store 110 Inner Campus Drive Austin, TX 78750 United States of America"
+store.language.code	the language file used by your store's theme	If your theme is using en.json, then {{ store.language.code }} will be en
+store.language.direction	the direction that the text in your store is read	If the text in your store is read left-to-right, then {{ store.language.directory }} will be ltr
+customer.first_name	The customer's first name	"Hello, John,"
+customer.full_name	The customer's full name	"Hello, John Smith,"
+customer.email	The customer's email address	"Email Address: john.s@example.com"
+customer.group.name	The name of the customer group associated with the customer’s storefront account	Wholesale
+misc.year	The current year	"© 2023 My BC Store"
+ 
+FAQ
+
+Is there a native or built-in way to add your own tracking links for emails sent by BigCommerce?
+
+No, you must supply the carrier code and tracking number. BigCommerce uses that information to generate the tracking link (or just the carrier name and tracking number if it's not a supported tracking carrier).
+
+If you want to make your own tracking links, it's best to look outside of BigCommerce to send those notification emails. For example, this is ShipStation's documentation on Customer Notification Settings.
+
+Can I change the sending email address for my store’s emails?
+
+Yes, your store’s email address is located in Settings › Store profile. See Store Profile Settings for additional information about changing your store’s email address.
+
+ 
+
+Using Multi-Storefront? Each storefront's email address is located in the storefront-specific Contact information settings within Channel Manager. See Single-Storefront vs. Multi-Storefront for more information.
+
+Why are my emails showing raw HTML instead of the phrases or variables I added to the template?
+
+A custom variable or phrase added to the Code section of your email template can appear as raw HTML if it is contained within two curly brackets instead of three. For example, {{ lang 'yourcustomphrase' }} will display as raw HTML, but {{{ lang 'yourcustomphrase' }}} will properly display your custom phrase.
+
+Can I display product brands in my emails?
+
+Yes. Although brands are not included by default, they can be added as a variable in the following email templates:
+
+Order Status Update
+Order Email
+Order ready for pickup
+
+Is there a Subject line character limit for email templates?
+
+The maximum character count for template Subject lines is 255 characters. A template will not be able to be saved unless the count is reduced to 255 characters or less.
+
+Can I use custom fonts in my emails?
+
+Yes, you can add custom fonts to the Code section of email templates. However, if the font is not supported by the recipient’s email client, a default font will be displayed instead.
+
+To include a custom font, locate the font’s publicly available URLs and add them into the email template <head> section. Then, enter the font name at the beginning of the font-family list. If the recipient’s email client supports the font, it will now display in the mail body.
+
+BigCommerce technical support is unable to directly assist with editing code. See the BigCommerce Design Policy for more information. If you need assistance adding custom fonts to your email templates, you can locate a developer using the BigCommerce Partner Directory.
+
+How do I set the default language for my email templates?
+
+Since email templates use a shopper’s language selection on the storefront, they will use the template associated with the default language in your storefront’s localization settings until the shopper changes their language.
+
+Which languages support automatic translation of email template phrases?
+
+For a full list of supported languages, see the “FAQ” section of Localization Settings. If your storefront has unsupported languages enabled, the email templates will use the phrase values in your default language until you manually add translated content.
+
+Why doesn’t the email template in a newly-enabled language match the template in my default language?
+
+If you have customized your template, a newly-enabled language uses the template’s phrases from the default language. You must either translate the content manually or reset the template to get pre-translated default phrases in supported languages.
+
+Whenever you create a new phrase, change the Phrase name of an existing one, or delete one from the template, the change syncs across all language-specific templates. However, you must manually translate the new Phrase value in each of your templates.
+
+Why are emails not being sent for my non-storefront channels?
+
+Store events, such as updating an order’s status or a customer resetting their storefront account password, trigger transactional email notifications. If a non-storefront channel does not perform the event associated with a template, an email will not be sent.
+
+For example, if a marketplace channel does not update order statuses within BigCommerce, the Order Status Update email template will not be triggered.
+
+Do this in my store
+
+GO TO TRANSACTIONAL EMAILS IN MY STORE
+
+Additional Resources
+Customer Order Notifications
+Using the Abandoned Cart Saver
+Store Profile Settings
+Email Templates Overview (Developer Docs)
+Email Templates Code Examples (Developer Docs)
+Email Template Objects (Developer Docs)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Customizing Transactional Emails

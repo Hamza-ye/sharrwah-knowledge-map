@@ -1,0 +1,324 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+Users
+Billing
+Pricing
+BigCommerce Plans
+Understanding Pricing
+Eligible Orders
+Viewing Sales Volume
+Viewing OPP Summary
+Calculating Sales Volume
+FAQ
+Account Dashboard
+Changing Plans
+About Invoices
+Cancelling
+TD BANK
+About BigCommerce Pricing
+What We'll Cover
+BigCommerce store plans
+Understanding BigCommerce pricing
+Eligible orders
+Viewing sales volume
+Viewing your Open Payment Provider fee summary
+Manually calculating your sales volume
+FAQ
+
+When you create your store, you can select a subscription plan based on your desired feature set and anticipated sales volume. BigCommerce offers plans that scale to fit your business's needs, whether you're just starting out or are ready for advanced features like stored payment methods, product filtering, or price lists.
+
+BigCommerce pricing is designed to grow predictably with your business. GMV thresholds for each plan reflect the size of businesses within each tier, and moving into a higher-tier plan comes with access to additional features. Overage fees increase linearly, so costs remain proportional as your sales grow.
+
+ 
+BigCommerce Store Plans
+
+BigCommerce offers several store subscription plans, sized to fit your store’s sales volume or feature needs.
+
+Our first three plans, which also offer self-service upgrades or downgrades, can be billed monthly or annually. Our Performance plan is a custom-priced plan designed for larger stores with more complex needs.
+
+For more information on plans, pricing, and features, see BigCommerce Pricing and Plan Information.
+
+Plan Name	Monthly Billing	Annual Billing*
+Core	$39 per month	$29 per month, billed annually
+Growth	$105 per month	$79 per month, billed annually
+Scale	$399 per month	$299 per month, billed annually
+Performance	N/A	Custom pricing starting at $1,499 per month, billed annually
+
+*Annual billing includes a 25% discount from the monthly plan price.
+
+ 
+Understanding BigCommerce Pricing
+
+BigCommerce uses Inclusive GMV, which is your gross order value after a 10% reduction, for self-serve plan placement, determining Open Payment Provider fees, and calculating overage rates. Plan placement is evaluated on a trailing 12-month basis, so your current standing reflects your sales volume over the past year.
+
+Trailing 12-month sales volume is updated on the first day of each month. For example, if the current month is June, BigCommerce's usage metric measurements will include data between May 31 of the current year and June 1 of the previous year.
+
+As sales volume for Inclusive GMV differs from your raw order totals, BigCommerce calculations will not match your own records or payment provider reports. You can view your store's official sales volume in the Account Dashboard. You can also manually calculate your GMV to compare with the official value.
+
+For more information on plans, pricing, and features, see BigCommerce Pricing and Plan Information.
+
+PLAN THRESHOLDS AND AUTOMATIC UPGRADES
+
+Each self-serve plan has a GMV threshold designed to reflect the size of business it supports. When your trailing 12-month Inclusive GMV exceeds your current plan’s threshold, your plan is automatically upgraded.
+
+Automatic upgrades take effect at the start of your next billing cycle, either monthly or annually. Notice of the automatic upgrade is sent to the billing contact specific in the Account Dashboard.
+
+OVERAGE FEES
+
+Scale and Performance plans apply an overage fee on Inclusive GMV above their monthly threshold, charged at a flat percentage rate. The fee applies only to GMV exceeding the threshold, not your total GMV for the month. This means costs scale predictably with your sales volume, which is particularly useful for businesses with seasonal variability. Fees are billed monthly in arrears (after the service period) as a separate line item on your invoice.
+
+Core and Growth plans automatically upgrade when you reach their GMV threshold, so there are no overage charges on these plans.
+
+OPEN PAYMENT PROVIDER FEES
+
+On self-serve plans, an Open Payment Provider fee is applied to orders, both online and offline, that are not processed through providers on the Embedded Payment Providers list. The fee is determined at the order level, meaning each order is attributed to the provider that processed it. Stores on a contracted Performance plan and orders processed through an Embedded Payment Provider are not subject to the fee.
+
+Orders processed externally to the BigCommerce platform are also subject to the fee. This includes orders placed using offline payment methods, orders originating from marketplaces like eBay or Etsy, orders processed through a point-of-sale (POS) app, and orders created via the API. Note that custom integrations to processors on the Embedded Payment Provider list, including those connected via third-party apps, will also incur Open Payment Provider fees.
+
+Fees are billed monthly in arrears (after the service period) as a separate line item on your invoice. Merchants using a mix of providers will see both fee-exposed and fee-free GMV on their invoice. A summary of your GMV, including the GMV subject to the Open Payment Provider fee and a breakdown by provider, can also be viewed in the Account Dashboard.
+
+ 
+
+Note: The Open Provider Fee is charged to you by BigCommerce and must not be passed through to shoppers at checkout. Many payment network rules and local laws restrict surcharges on end-user transactions. You are responsible for your own compliance.
+
+ 
+Eligible Orders
+
+BigCommerce counts GMV from most orders processed through your store, but some order types are excluded.
+
+The following order types are included in GMV calculations:
+
+orders processed through your storefront
+orders processed manually in the control panel
+orders processed with offline payment methods
+orders with the captured payment status
+orders created via API, including by apps and integrations
+orders with the status of:
+Awaiting Fulfillment
+Awaiting Payment
+Awaiting Pickup
+Awaiting Shipment
+Cancelled
+Completed
+Disputed
+Manual Verification Required
+Partially Refunded
+Partially Shipped
+Refunded
+Shipped
+
+The following order types are excluded:
+
+orders processed through the Test Payment Gateway
+orders with the status of:
+Declined
+Incomplete
+Pending
+ 
+Viewing Sales Volume
+
+Store owners can see the official Inclusive GMV sales volume, order count, previous month’s sales volume, and surchargeable sales in the Account Dashboard.
+
+Keep in mind that as sales volume for Inclusive GMV differs from your raw order totals, BigCommerce calculations will not match your own records or payment provider reports.
+
+In the control panel, click your store name and select Manage store account from the drop-down menu or navigate directly to manage.bigcommerce.com.
+
+Once logged into the Account Dashboard, click on your store name.
+
+Your store’s trailing 12-month sales volume and other statistics can be found under Store history.
+
+Trailing 12-month sales volume is updated on the first day of each month, with the date for the current period listed next to Trailing 12 months.
+
+Sales volume — Your Inclusive GMV value for the trailing 12 months.
+Inclusive GMV sales volume is calculated as gross order value minus 10%.
+Order count — Total number of orders counted towards Inclusive GMV.
+
+Your store’s prior month values are also listed, including Open Payment Provider fee details.
+
+Sales volume — Sales volume for the previous month.
+Open Payment Provider (OPP) GMV — Sales subject to Open Payment Provider fees.
+Click See details to view a breakdown of your GMV subject to the OPP fee.
+Opp plan rate — Your current plan’s Open Payment Provider fee rate.
+ 
+Viewing your Open Payment Provider Fee Summary
+
+To view a breakdown of GMV processed through each payment method, including any revenue subject to the Open Payment Provider fee, click Account and select OPP Summary from the drop-down menu.
+
+On the summary page, you’ll see a listing of any stores that are subject to the Open Payment Provider fee. Note that stores that are not subject to the Open Payment Provider fee will not display breakdown information and may not appear on the list. See the FAQ for more details.
+
+For each applicable store, the summary line shows the store’s inclusive GMV, minus GMV processed through Embedded providers, multiplied by your plan’s rate. To see a breakdown of GMV per payment processor, expand the payment module details by clicking See payment module details.
+
+ 
+
+Note: The Open Payment Provider fee shown on the summary page is an approximation and may not exactly match the amount on your invoice. View your store’s sales volume for the official total.
+
+ 
+Manually Calculating Your Sales Volume
+
+To calculate and review your Sales Volume manually to compare against the official values, you will need to export your orders from the corresponding time frame. The below steps will cover how to properly filter your data and perform the calculations.
+
+Inclusive GMV and overage fees
+Open Payment Provider fee
+INCLUSIVE GMV AND OVERAGE FEES
+
+To calculate Inclusive GMV or the sales volume subject to a plan overage fee:
+
+1. Prepare your orders for export by going to the Orders page and click Search to filter orders by your desired period.
+
+Under Search by date, select Custom period for the Date range and enter the trailing 12-month period for Inclusive GMV or the previous month for plan overages. Select Order date for the Date type, then click Search.
+
+Inclusive GMV — If the current month is June, your search date should be between June 1 of the previous year and May 31 of the current year.
+Plan overage fee — If the current month is June, your search date should be between May 1 and May 31.
+
+2. Click Export all to export your date-filtered orders.
+
+3. Next, open the CSV file in a spreadsheet tool and remove orders that do not count towards Inclusive GMV. Sort the sheet by Order Status and delete any rows with the status of Pending, Incomplete, and Declined.
+
+You must also sort the sheet by Payment Method and delete any rows with a value of Test Payment Provider.
+
+4. For orders processed in currencies other than USD, the value in the Order Total (inc tax) column must first be converted into USD using the daily average conversion for the day the order was placed.
+
+5. Once any currency conversions are complete, sum the values in the Order Total (inc tax) column. Apply a 10% reduction to the summed Order Total (inc tax) to calculate your Inclusive GMV.
+
+This value can now be compared against the official trailing 12-month sales volume. For example, if your summed value is $160,000, your Inclusive GMV is $144,000 (160,000 x 0.90).
+
+6. If you are calculating overage fees, after applying the 10% reduction, subtract your plan’s monthly threshold value from the previous month’s calculated sales volume to see the portion of your sales that are subject to the fee. For example, on a Scale plan with a $54,000 sales volume (60,000 x .090), the actual sales volume subject to the monthly overage fee is $20,667 (54,000 - 33,333).
+
+The overage fee is the GMV value multiplied by the plan’s overage fee of 0.9%. In this example, the total overage fee is $186.00 (20,667 x 0.009).
+
+OPEN PAYMENT PROVIDER FEE
+
+To calculate the sales volume subject to the Open Payment Provider fee:
+
+1. Prepare your orders for export by going to the Orders page and click Search to filter orders by your desired period.
+
+2. Under Search by date, select Custom period for the Date range and enter the previous month. Select Order date for the Date type, then click Search. For example, if the current month is June, your search date should be between May 1 and May 31.
+
+3. Click Export all to export your date filtered orders.
+
+4. Next, open the CSV file in a spreadsheet tool and remove orders that do not count towards Inclusive GMV. Sort the sheet by Order Status and delete any rows with the of Pending, Incomplete, and Declined.
+
+5. You must also sort the sheet by Payment Method and delete rows with orders processed through Embedded Payment Providers or the Test Payment Provider. This will leave only orders processed through Open Payment Providers.
+
+6. For orders processed in currencies other than USD, the value in the Order Total (inc tax) column must first be converted into USD using the daily average conversion for the day the order was placed.
+
+7. Once any currency conversions are complete, sum the values in the Order Total (inc tax) column. Apply a 10% reduction to the summed Order Total (inc tax) to calculate sales volume. For example, if your summed value is $6,000, your sales volume subject to the Open Payment Provider fee is $5,400 (6,000 x 0.90).
+
+8. Multiply the sales volume by your plan’s fee rate. In this example, a store on the Scale plan would have an Open Payment Provider fee of $32.40 (5,400 x 0.006).
+
+ 
+FAQ
+
+How does BigCommerce calculate GMV for stores transacting in non-USD currencies?
+
+To calculate Inclusive GMV, we first take the store's non-USD order values, and convert it to USD. From there, GMV is calculated by using the USD-converted values. Order values are converted daily to ensure accuracy.
+
+How do I prevent historical orders from counting in GMV calculations?
+
+When migrating past orders from another platform via API, enter M-MIG in the external_source field to exclude these orders from affecting your store's trailing 12-month sales volume.
+
+Note that these orders do not deduct product stock and will bypass quantity requirements.
+
+When do manual plan upgrades take effect?
+
+While automatic plan upgrades occur at the start of your next billing cycle, manual upgrades to your store’s plan take effect immediately.
+
+As the immediate upgrade occurs in between billing cycles, a prorated charge is applied to your invoice. See the “FAQ” section of About Your BigCommerce Invoice to learn more.
+
+What does the "Open payment Provider fees are not applicable on your plan" message mean?
+
+Stores on contracted Performance plans are not subject to Open Payment Provider fees and will not see the breakdown of payment details.
+
+What does the "No Open Payment Provider data available or applicable. Please check back later or if you believe this is incorrect, contact us." message mean?
+
+This message indicates that GMV, payment module, or Open Payment Provider fee data is still being processed for this store. If the message persists after several days, contact our support team.
+
+What does the “Open Payment Provider fees are not applicable on Legacy Plans.” message mean?
+
+Stores with plan billing cycles that started prior to June 1, 2026, are not subject to the Open Payment Provider fee at this time. Your plan will update at the start of your next billing cycle, at which time your store will be subject to the OPP fee. To locate your cycle, see “Locating Your Billing Cycle” on Changing Your Store's Plan.
+
+For more information on our plan and pricing changes, see the “FAQ” on BigCommerce Plan & Pricing Updates.
+
+Why is one of my stores not appearing on the OPP Summary page?
+
+Stores on trial plans or with plan billing cycles that started prior to June 1, 2026, are not subject to the Open Payment Provider fee and are not displayed on the summary page. Your plan will update at the start of your next billing cycle, at which time your store will be subject to the OPP fee. For information on purchasing a paid plan or locating your billing cycle, see Changing Your Store's Plan.
+
+For more information on our plan and pricing changes, see the “FAQ” on BigCommerce Plan & Pricing Updates.
+
+Why are overage and Open Payment Provider fees from last month on my invoice?
+
+Overage and Open Payment Provider fees are calculated after the end of each month. As these fees are billed in arrears (after the service period), they are applied to the following month’s invoice as a separate line item. If you are billed monthly, you will still receive invoices for any charges that are billed monthly.
+
+For more information about invoices and line items, see About Your BigCommerce Invoice
+
+Why am I being charged an Open Payment Provider fee when using a processor on the Embedded Payment Provider list?
+
+Processing payments through BigCommerce gateway integrations on the Embedded Payment Provider list do not incur Open Payment Provider fees. However, custom integrations to processors on the Embedded Payment Provider list, including those connected via third-party apps, will incur Open Payment Provider fees.
+
+Additional Resources
+About Your BigCommerce Invoice
+Changing Your Store's Plan
+Store Owner User Role and Permissions
+BigCommerce Embedded Payment Providers (bigcommerce.com)
+BigCommerce Pricing and Plan Information (bigcommerce.com)
+Fees and Billing (commerce.com)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+About BigCommerce Pricing

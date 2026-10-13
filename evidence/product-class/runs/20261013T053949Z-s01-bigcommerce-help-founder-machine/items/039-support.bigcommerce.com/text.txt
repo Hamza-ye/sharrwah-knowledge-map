@@ -1,0 +1,379 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Using Price Lists
+What We'll Cover
+Requirements
+Catalog pricing vs. price list pricing
+Managing price lists
+Creating price lists
+Editing price lists
+Configuring currency-specific pricing in price lists
+Activating a price list
+Assigning fallback layers
+Deleting price lists
+FAQ
+
+Price lists let you offer advanced variant-level price overrides based on storefronts and customer groups. For example, a wholesale merchant might offer standard (retail) pricing to all visitors and special discounted pricing that only selected customer groups can see and access.
+
+Multi-storefront is another use case for price lists. Use the same catalog and assign different pricing to different storefronts.
+
+ 
+
+Note: Pricing changes can take up to 10 minutes to appear on the storefront. See the "FAQ" section of Adding Products (v3) for more information.
+
+ 
+Requirements
+To use price lists, your store must be on a Performance plan.
+Your storefront cannot use a legacy Blueprint theme.
+To manage price lists, the following permissions must be enabled on your user account:
+Manage Customers
+Customer Groups
+Manage Products
+Manage Categories
+Manage Brands
+Price Lists
+ 
+Catalog Pricing vs. Price List Pricing
+
+Price lists work by overriding the catalog price defined in your regular BigCommerce catalog.
+
+ 
+
+What is catalog price? In price lists, catalog price is the price of the product or variant as seen on the storefront before any price list data has been applied. It takes into account sale price and any price adjustment rules that are applicable to the product or variant.
+
+Entering data for a product or variant in a price list creates a new "price record". That means this price list value will override the catalog price for that product/variant.
+
+Since some prices are calculated relative to another value, a price list will use a product or variant’s catalog price to generate the missing value when necessary.
+
+For instance, if you create a new price record by adding a percentage discount bulk price tier to a product, the list will automatically use the product's catalog price to generate a New Price. Since there is no variant-level bulk pricing in the regular BigCommerce catalog, variant-level bulk price tiers will use the catalog price of the variant's parent product to generate a variant-level new price.
+
+For more information on how different product prices are weighted, see Price Order of Operations in our Developer Docs.
+
+ 
+Managing Price Lists
+
+Go to Products › Price lists. This will display all of your price lists, a list of assigned customer groups in each of your storefronts, and whether they are Active or Inactive on the storefront.
+
+From here, you can perform management tasks like creating new price lists, searching for and editing existing ones, activating or deactivating price lists, or deleting them. Note the following considerations:
+
+There is no limit to the number of price lists you can have*.
+A single price list can be applied to multiple customer groups across multiple storefronts; however, any customer group-storefront combination can only be assigned to a single price list at a time.
+
+*Note that maintaining a large amount of individual price lists, price overrides, or bulk pricing tiers can result in performance issues. You may experience some slow down while viewing and editing price lists in the control panel or when managing price lists via API.
+
+ 
+Creating a Price List
+
+To add a price list to your store, go to Products › Price lists and click Create new.
+
+In the New price list name field, enter a name to use for internal reference. Next, click your new price list’s name, go to the Assignment tab, and click Add assignment.
+
+This is where you will select which storefronts and/or customer groups this price list will apply to. You can change assignments at any time.
+
+Click Assign when you’re done. This only saves the assignment settings; your new price list remains inactive until you set it to active. See Activating a Price List to learn more.
+
+ 
+Editing a Price List
+
+In a price list, products are displayed in columns and rows, like a spreadsheet. Each row is a product, and variants are grouped together.
+
+Use the plus button (+) to expand variant rows or use the minus button (-) to collapse them.
+
+Use the Search bar and Filters button to narrow the products in the list based on your queries.
+
+Columns display name, variation, SKU, and pricing information about each product or variant. Use the Edit columns drop-down to show or hide columns.
+
+The following columns are available:
+
+Product Name (read-only) — This is the name of the product. If it’s a variant, this will show which option values comprise the variation (e.g. Black / Medium).
+SKU (read-only) — The product/variant SKU.
+Cost (read-only) — This is the product’s cost.
+Markup (read-only) — This is the difference between Cost and Catalog Price, as a percentage.
+Catalog Price (read-only) — This is the price of the product or variant as seen on the storefront. It takes into account Sale Price and any price adjustment rules that are applicable to a variant.
+Discount — This is the difference between the price in your catalog and the price in this list, as a percentage. You can also edit the percentage in this box to calculate a new price.
+New Price — The new, calculated price that will be shown on the storefront for customers that belong to any customer group this price list is applied to. You can edit the price in this box, and the percentage under Discount will update automatically to reflect it. If applied at the variant level, it will override New Price values set on the parent/base product.
+New Sale Price — This will override the catalog sale price for a product or variant. If applied at the variant level, it will override New Sale Price set on the parent/base product.
+New MSRP — This will override the catalog retail price of a product or variant.
+Bulk Pricing — This field provides a table for bulk pricing (discounts based on quantity). There are three bulk pricing types.
+% Discount — This is a percentage discount that is relative to New Price (or Sale Price if active). Conversely, you can enter the Unit Price to calculate the % Discount value.
+$ Off/Unit — This represents a dollar amount off per unit relative to New Price (or Sale Price if active). Conversely, you can enter the Unit Price to calculate the $ Off/Unit value.
+$ Fixed Amount — This sets the Unit Price for each quantity tier to an absolute, fixed value. This type does not consider any other pricing (like New Price or Sale Price).
+Pricing Summary (read-only) — This field displays the full range of pricing for a product, including all sale, variant, and bulk pricing (as well as bulk pricing on variants).
+ 
+Configuring Currency-Specific Pricing in Price Lists
+
+By default, price lists display and adjust product pricing in your store’s default currency. While editing a price list, you can enter unique prices for your enabled currencies by selecting a currency from the View currencies menu.
+
+Both display and transactional currencies are selectable when editing a price list; however, only transactional currencies apply to product prices on the storefront. When a shopper selects a display currency on the storefront, the price list pricing for your default currency is used instead and then adjusted based on the display currency’s conversion rate.
+
+Price lists for transactional currencies use the price adjustments as entered and are not subject to currency conversion. See the following example:
+
+Your default currency is USD, and you have an additional transactional currency set up for CAD. After selecting the CAD currency while editing the price list, you set the price of your product to $10.
+
+Since CAD is a transactional currency, the storefront uses the $10 CAD price for the product without applying the conversion rate from USD.
+
+Price adjustments applied after price lists in the order of operations, such as modifier rules, are subject to currency conversion.
+
+Using the above example, consider a modifier rule added to the product that increases the price by $5. Since product modifier rules are entered in the store’s default currency, this begins as $5 USD and is converted whenever a shopper selects a different transactional currency.
+
+If a shopper selects CAD as their currency, the storefront uses the price list price of $10 for the base product. When they select the modifier on the product,, the price list price is not converted, but the rule is. It's $10 CAD + [$5 USD x (the USD-to-CAD exchange rate)].
+
+If the USD-to-CAD exchange rate is $1 USD to $1.10 CAD, then the converted value of the rule is $5.50 CAD, and the actual price charged at checkout is $15.50 CAD ($10 CAD + $5.50 CAD).
+
+ 
+Activating a Price List
+
+To make a price list active, select Make active from the list’s Action menu (⋯). New price lists are inactive by default.
+
+ 
+Assigning Fallback Layers
+
+You can assign other price lists as fallback layers to a given price list. Fallback price lists supply product pricing when the current price list does not have a unique price record for a product. You can assign up to five layers to a price list from the Fallback tab.
+
+To learn more about using fallback layers, see Cascading Price Lists.
+
+ 
+Deleting a Price List
+
+To delete a price list, select Delete from the list’s Action menu (⋯).
+
+ 
+FAQ
+General
+Display
+Pricing features
+Customer groups
+Import and export
+GENERAL
+
+Can I change the number of decimal places in prices?
+
+You can change your storewide currency settings under Settings › Currencies. Edit a currency and you can choose the number of decimal places. You can use up to 6 decimal places.
+
+Can I add a markup to prices?
+
+Yes, you can add a markup by putting a negative number in the discount column, which will generate a higher new price.
+
+Can price lists be added, edited, or deleted by API?
+
+Yes, see our API documentation in our Developer Docs.
+
+How are products sorted in a price list?
+
+Products show up in price lists in the same order they appear in the product list page, which is in order of product ID. Product ID is generated when a product is created so they will be in numerical/chronological order (newest first).
+
+Will price lists be slower with a lot of products?
+
+Price lists have been pressure tested with very large catalogs and we have not seen any drastic performance issues based on catalog size.
+
+How do you handle multi-currency?
+
+Select a currency using the currency dropdown selector. Prices can be set for each of your transactional currencies. Non-visible and display-only currencies can also be edited here so you can update prices offline before enabling them for the storefront. To learn more about using price lists for multiple currencies, see Managing Currencies.
+
+How are tax zones represented here?
+
+The storefront works in one tax zone at a time. If we are given information at checkout that indicates that a different tax zone should be displayed, then any tax displayed at that time will be updated to match the new tax zone.
+
+If a customer group needs a specific tax rate assigned, such as for tax-exempt customers, you can associate the group with a basic tax zone or add the appropriate tax code from your automatic tax provider. See Making Customers Tax-Exempt for more information.
+
+How does this work with Amazon, Instagram, and other channels?
+
+Price lists override your catalog price on your storefront and do not affect any of the prices that show up on Amazon or other channels. Those must be updated individually.
+
+Do I need SKUs to use price lists?
+
+No. However, we believe it is best practice to have a product identifier (other than your product name) that you can use for external channels and other ecommerce practices.
+
+Why are my products not reflecting the price list pricing on storefront listing pages?
+
+The list below displays several factors that can cause your products to not display the pricing entered in your price lists when viewing them in category, brand, or search pages.
+
+If your price list is hidden, any unique pricing will not appear on the storefront.
+If you are not logged into a storefront account belonging to the customer group or channel associated with your price list, you will not see its pricing.
+Check your product display settings for the default display price for products with pre-selected variants that don't correspond to a price.
+Check your product's default variant values to confirm they correspond to your desired default variant.
+DISPLAY
+
+What is the shopper experience? Will they see the discount percentage?
+
+Only the New Price, New Sale Price, New MSRP, and Bulk Pricing column values will display on your storefront using Cornerstone or any Stencil theme that is built to use these values. The Discount percentage column, and all other columns, are not displayed on the storefront; they are there for your convenience.
+
+How do products with a price range appear on the storefront?
+
+In order to display price ranges for products with differently-priced variants, your theme has to support the feature, and it must be enabled in the theme's settings. In Cornerstone, it can be found under the Global › Pricing menu of Page Builder.
+
+How do products with a New MSRP, New Price, and New Sale Price appear on the storefront?
+
+It depends on your theme. Cornerstone and other updated themes are capable of showing two levels of crossed-out prices, so it will show both the New MSRP and New Price crossed out with the New Sale Price below. See Using Sale Pricing to learn more about how sale pricing appears on the storefront.
+
+Some older themes may show the New MSRP crossed out with New Sale Price below it and a message showing how much “You Save”. New Price is ignored on the storefront in this instance.
+
+Will the price for products with options always show up as a range in price lists in the control panel?
+
+Not always. Options can be added to a product without producing a price range on the storefront. A price range will only be involved if there are different product prices available on different variants coming from a SKU price.
+
+For example, price adjustment rules on the product could mean that some option selections offer a different final price than others. Similarly, if variants are created on the product, then you can set different prices per variant as well as within a price list. All of these factors are considered when determining if there is a “price range” available.
+
+Will the price for products with options always show up as a range on my storefront?
+
+Not always. The Stencil theme being used must be set up to display the price as a range if that data is sent. Most themes will be set to display only a single product price even if a range is available. In this case, the lowest variant price will be displayed. Additionally, in Cornerstone, there is a theme setting to enable or disable price range display.
+
+What if my Stencil template was purchased from a third-party theme developer?
+
+If you are using Stencil, you will not need to change anything to utilize price list pricing. If you apply price lists to your store, then you will see those prices on the storefront. However, by default, you will likely be missing out on some new pricing behavior related to displaying “sale price”, price ranges, or possibly even an MSRP.
+
+You can consult with your theme developer to make an update to utilize the new pricing values you can set using price lists. Alternatively, you can modify your template yourself by making a copy of it from the Storefront › Themes page. This requires knowledge of Stencil and customizing HTML templates.
+
+ 
+
+Using Multi-Storefront? To access the theme of a particular storefront, go to Channels › Channel Manager, click on the name of your storefront, and navigate to Themes.
+
+Why isn't the Price filter showing on the storefront?
+
+This is a known feature of using price lists. Shoppers will be able to use other product filters, such as categories and brands.
+
+Do the ascending and descending price sort types use price list pricing?
+
+No, the Price: Ascending and Price: Descending sort types on storefront product listing pages use your catalog’s default pricing to arrange products.
+
+PRICING FEATURES
+
+How do I add bulk pricing in a price list?
+
+Enable the Bulk Pricing column by clicking Edit columns and checking the box.
+
+What happens if you have bulk pricing in catalog and then have price list price overrides – what does the shopper get?
+
+Once new prices or new bulk prices have been entered into a price list, all catalog bulk pricing tiers are now ignored. The shopper will be given the price list pricing for variants that have a new price created, and catalog bulk pricing will be ignored for those variants. Bulk pricing must be created in the price list for it to affect variants that have a price list New Price.
+
+Do you support MAP pricing?
+
+We do not currently support MAP pricing on the storefront in Cornerstone. We do, however, support it on the API, meaning we can store this data. We have not yet added it to our Cornerstone theme, but you could add it yourself. MAP pricing can be set on a variant using a price list and that value will be sent to the storefront when the associated variant is selected. Your template needs to be updated to read the value and display it as you see fit.
+
+Are price lists compatible with automatic and coupon promotions?
+
+Yes, automatic and coupon promotions can be used in conjunction with price lists. See Price Order of Operations for more information on how pricing is calculated.
+
+Can I create a category discount?
+
+We currently don’t support category-level discounts in price lists; however, you may use filtering to sort by category and apply discounts individually to products in that category. Alternatively, you can use customer group discounts to apply reduced pricing to products in a category.
+
+Can I edit the cost price in the price list?
+
+Not at this time. This column is informational only.
+
+How do I create a storewide discount?
+
+We currently do not support a storewide discount in price lists; however, you may copy and paste a discount across all of your products in a price list, or drag the handle to replicate a price value. Alternatively, you can create a storewide customer group discount or an automatic promotion that targets one or more customer groups.
+
+CUSTOMER GROUPS
+
+How are price lists different from customer group discounts?
+
+Price lists and customer group discounts differ in the following ways:
+
+price lists allow variant/SKU-level pricing.
+price lists can be saved in an unpublished draft state.
+price lists are searchable.
+
+Why do some customer groups appear greyed out when creating a new price list?
+
+Greyed-out customer groups are either already assigned to another price list, or are currently using customer group discounts. Customer groups can only be assigned to one price list at a time, and cannot be assigned to a price list and use customer group discounts at the same time (it can use one or the other, but not both).
+
+Can I create a price list for guest shoppers?
+
+Yes. Select the default customer group for guest shoppers when you create your price list to set pricing for visitors without a customer account. See the “Managing Default Customer Groups” section of Customer Groups to learn more about assigning a default group for guests.
+
+Can a price list be for a single customer?
+
+Yes, you can create a customer group with that single customer in it, then associate it with a price list.
+
+How would price lists work with customer group discounts?
+You cannot use both customer group discounts and a price list at the same time for a customer group. If you would like to use customer group discounts on a customer group currently using a price list, you will need to unassign the group from the price list first.
+
+IMPORT AND EXPORT
+
+Can I import my price lists?
+
+Yes. The Price List Importer/Exporter App will allow you to bulk edit your existing price lists or create new ones. If you have enabled multiple currencies on your store, you can also edit and create price lists in those currencies.
+
+You can also transfer a price list from one store to another as long as both have the same products and currencies. For more information, see our guide on Transferring Products.
+
+Can I export price lists as a PDF?
+
+Not at this time.
+
+Do this in my store
+
+GO TO PRICE LISTS IN MY STORE
+
+Additional Resources
+Bulk Pricing
+Cascading Price Lists
+Customer Groups
+Managing Currencies
+Product Options (v3)
+Using Sale Pricing
+Price List API (Developer Docs)
+Price Order of Operations (Developer Docs)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Using Price Lists

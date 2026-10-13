@@ -1,0 +1,259 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Security and Privacy Settings
+What We'll Cover
+Requirements
+Security and privacy settings
+Advanced security settings
+FAQ
+
+Creating a secure storefront is one of the most important factors in building trust with your shoppers. The security settings in the control panel allow you to control various aspects of your store such as shopper password complexity, inactivity thresholds, reCAPTCHA, and advanced security policies.
+
+ 
+Requirements
+To manage security and privacy settings, you must have the Manage Settings permission enabled on your user account.
+To manage storefront specific settings, you must have the Manage Channels permission enabled.
+ 
+Security and Privacy Settings
+
+Security settings can be accessed by going to Settings › Security & Privacy.
+
+Shopper password complexity
+Inactive shopper logout
+Control panel timeout
+Storefront reCAPTCHA
+Failed login lockout
+Your customers' privacy
+SHOPPER PASSWORD COMPLEXITY
+ 
+
+B2B Edition stores do not support shopper password complexity settings. The personal and business registration forms require passwords at least seven characters in length, with at least one letter and one number.
+
+Configure complexity of the shoppers password allows you to specify the requirements for passwords on storefront accounts.
+
+A minimum of seven characters is required when changing minimum password length. The following special characters are allowed for password creation: ! ' " # $ % & \ ( ) * + , . / : ; < > = ? @ [ ] ^ - _ ` { } | ~. Spaces are also allowed.
+
+ 
+
+Pro Tip! Existing customer passwords will not be forced to conform to current, stricter requirements until they next update their passwords. As a best security practice, we recommend forcing customers to reset their password on their next login.
+
+INACTIVE SHOPPER LOGOUT
+ 
+
+B2B Edition stores do not support inactive shopper logout settings. Customers and Company users are logged out of the Buyer Portal after 24 hours of inactivity.
+
+The Inactive shopper logout setting allows you to control when your shoppers will be automatically logged out of their storefront account. You can use the default seven days, or you can set a custom duration.
+
+You can allow storefront activity to extend the inactive logout time with the Shopper activity extends logout duration setting. When this setting is enabled, activity on the storefront, such as clicking on a product, restarts the Inactive shopper logout timer.
+
+CONTROL PANEL TIMEOUT
+
+For security purposes, users are automatically logged out of the control panel if they are inactive for a specified amount of time. The Control Panel Inactivity Timeout setting can be configured from 20 minutes to a maximum of two hours. As it is a security feature, the inactivity timeout cannot be disabled.
+
+Five minutes before automatically logging you out, a pop-up warning with a countdown timer will appear in the control panel. To keep working, you can click the Dismiss button or perform an action in the control panel during the countdown.
+
+Actions such as clicking to edit a product, navigating the control panel, and saving changes are recognized as activity. Simply typing in a field, in and of itself, is not recognized as activity. To prevent losing your work by being automatically logged out, we recommend saving your progress periodically.
+
+STOREFRONT RECAPTCHA
+
+Check the box next to Enable reCAPTCHA on storefront to help prevent bot spam submissions of contact forms, product reviews, account sign-up forms, and customer account password reset requests. When enabled, a reCAPTCHA will prompt shoppers to check a box before they can submit a storefront form.
+
+ 
+
+Note: The reCAPTCHA settings in Security & Privacy do not enable reCAPTCHA for the checkout page. If you would like to enable reCAPTCHA for checkout, see General Checkout Settings.
+
+If you would like to see reCAPTCHA data in Google Admin Console, create a reCAPTCHA API key pair and enter it into the reCAPTCHA Site Key and reCAPTCHA Secret Key fields. If these optional keys are not specified, the default BigCommerce reCAPTCHA keys will be used instead.
+
+If your store has not launched yet, you can add a reCAPTCHA prompt to your store preview landing page by checking the box next to Enable reCAPTCHA on a storefront pre-launch login page.
+
+FAILED LOGIN LOCKOUT
+
+The Failed Login Lockout setting allows you to set the number of seconds a customer is locked out of their storefront account after failed login attempts. The maximum lockout time allowed is 3600 seconds (one hour).
+
+If a visitor enters an incorrect password for a customer account four times, a banner will appear informing them of the lockout period.
+
+YOUR CUSTOMERS' PRIVACY
+
+The settings under Your customer's privacy can help you comply with local privacy laws such as GDPR and CCPA by giving shoppers the ability to opt out of certain cookie and script categories.
+
+ 
+
+Localized Store Experiences: This cookie consent tracking banner can be displayed in any of our supported languages. For more information on the default language store setting, see Store Profile Settings.
+
+Cookie consent tracking — displays a banner on your storefront, prompting shoppers for their consent to use cookies and other similar technologies while visiting your storefront. This setting is disabled by default.
+BigCommerce respects shopper preferences when loading analytics features, as well as any scripts added in Script Manager.
+If your customers are covered by privacy regulations, such as GDPR, it is suggested that you enable Cookie consent tracking.
+Privacy Policy URL — Enter your fully qualified privacy policy URL (for example, https://mystore.com/privacy). This can be linked in your store's navigation and at checkout.
+Collect data for my business — If enabled, this setting determines how we track your customers' behaviors for your Ecommerce Analytics reports.
+Off — No data is collected, and events and analytics in your BigCommerce control panel are not available. Cookie consent tracking does not affect this behavior.
+On with no limits to data collected — This is selected by default for new stores. Data is collected, and events and analytics are available in your BigCommerce control panel.
+On with moderate limits to data collected (Legacy*) — If this is selected, and cookie consent is not granted by the shopper, we do not collect data for customer_id, shopper_visit_started, product_page_viewed, and page_view. Also, visit_id and visitor_id are not tracked for cart, order_created and order_updated. Cookie consent tracking must be enabled to use this option.
+On with strict limits to data collected — If this is selected, and cookie consent is not granted by the shopper, the only data collected is for order_created and order_updated events. Cookie consent tracking must be enabled to use this option.
+ 
+
+*Planned deprecation: The On with moderate limits to data collected setting for Collect data for my business will be deprecated on October 20, 2025. If you are currently using this setting, you should switch to another setting.
+
+Stores with cookie consent turned on that have not updated their setting by the deprecation date will be automatically set to On with strict limits on data collected.
+Stores with cookie consent turned off that have not updated their setting by the deprecation date will be automatically set to On with no limits to data collected.
+ 
+
+Did you know? If Collect data for my business is disabled, you will not receive Ecommerce Analytics reports for your store. Turning it on will not recover the missed data.
+
+If you have more than one storefront, you can manage the cookie consent banner and privacy policy URL individually per storefront.
+
+Go to Channel Manager and click Edit storefront settings for your storefront, then click Customers' privacy. Uncheck the box next to Use global and adjust your desired settings.
+
+ 
+Advanced Security Settings
+
+The settings in the Storefront section allow you to configure advanced security policies for your storefront. These settings can improve the security of your storefront by adding additional layers of protection.
+
+HTTP strict transport security (HSTS)
+Content security policy (CSP)
+Nonce-based script security
+Dynamic script execution
+X-frame options
+HTTP STRICT TRANSPORT SECURITY (HSTS)
+
+Review your storefront before enabling HSTS. Changing these settings can have severe consequences for your storefront if done incorrectly. Ensure that there is no HTTP content on your storefront, such as image assets. This includes any listed subdomains as well, such as blog.domain.com.
+
+HSTS tells browsers that they should only interact with your store using HTTPS connections and never via the insecure HTTP protocol. When enabled, you can choose to apply HSTS to your subdomains and specify the max-age for the HSTS headers.
+
+The max-age is the time during which web browsers can cache the HSTS headers, allowing HTTPS only communication. You can set the duration to five minutes or one year, or disable HSTS entirely by setting it to zero (not recommended). To ensure that your storefront does not have any issues with HTTP content, we recommend setting it to five minutes for testing purposes before enabling HSTS for one year.
+
+As enabling Apply Preload requires the max-age to be set to 12 months and to include subdomains, it is extremely important that your entire site and all of your subdomains (such as blog.store.com or mail.store.com) are ready to be served exclusively over HTTPS.
+
+Pages loaded over HTTP will fail until the max-age has expired! If you have set the max-age for one year, any page that fails will be inaccessible until the cache expires after a year. Lowering the max-age or disabling it will not affect pages already cached.
+
+CONTENT SECURITY POLICY (CSP)
+
+CSP helps to detect and prevent certain types of attacks such as cross-site scripting (XSS), clickjacking, and other data injection attacks.
+
+Use the default CSP header or select Specify my own CSP header to enter your custom policy. The Content Security Policy Header Value field allows a maximum of 1,000 characters.
+
+See MDN's Content Security Policy (CSP) for more information, common use cases, and how to write a policy.
+
+NONCE-BASED SCRIPT SECURITY
+
+Nonce-based authorization uses a one-time-use, random unique code to confirm whether a script is authorized to run on a payment page or should be blocked.
+
+When enabled, a random nonce value is generated for every page request and is added to the Content-Security Policy header of pages that can contain payment information, such as checkout and account pages.
+
+The generated nonce value is added to scripts that contain the nonce attribute. When a browser loads a page containing scripts, if the nonce values do not match, it blocks the script from running. If you are using a custom CSP with an existing script directive, the more restrictive policy (the nonce, in this case) will take precedence.
+
+For example, if you have a custom CSP with a script-src ‘self' directive, this would have previously allowed any scripts from the same host origin. However, this rule will now be ignored in favor of the more restrictive policy, a matching nonce, in order to execute.
+
+Scripts added via Script Manager, web analytics scripts, payment integration scripts, and checkout scripts automatically include a nonce attribute in their script tags. For custom themes, you will need to manually add the nonce handlebar {{nonce}} to your script tags.
+
+Nonce script attributes are supported by Cornerstone version 6.16.1 or newer. Capacity 6.0.1, Fortune 4.0.1, Merchant 6.0.1, and Peak 5.0.1 also support nonce-based authorization, however these themes require that dynamic script execution is also enabled.
+
+For all other themes, contact your theme developer to confirm nonce support.
+
+ 
+
+Did you know? Nonce-based authorization helps meet the PCI DSS 4.0 requirements that all scripts on payment pages must have a method implemented to confirm that each script is authorized.
+
+DYNAMIC SCRIPT EXECUTION
+
+Enabling nonce-based authorization will restrict the execution of scripts to only those with an approved nonce. However, even with an approved nonce, if your store relies on dynamically generated JavaScript, such as eval( ) functions, these scripts will not execute under this stricter policy. This usually results in a “Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive” error in console.
+
+If possible, you should update your scripts to avoid dynamic code execution or use safer alternatives like event handlers and pre-defined functions. If this is not possible, you can enable the checkbox next to Allow dynamic script execution. This allows dynamically generated JavaScript to work by adding ‘unsafe-eval' as an allowed script source in your CSP.
+
+X-FRAME OPTIONS
+
+The X-Frame-Options header is used to avoid click-jacking attacks by indicating whether or not a browser should be allowed to render a page in a frame, iframe, embed, or object HTML element. If enabled, the following options are available:
+
+Deny — The page cannot be displayed in a frame, regardless of the site attempting to do so.
+Same Origin — The page can only be displayed in a frame on the same origin as the page itself.
+Allow from url — The page can only be displayed in a frame on the specified origin.
+
+For more information, see MDN's X-Frame-Options.
+
+ 
+FAQ
+
+If I change the Inactive shopper logout duration while customers are on the storefront, will they be logged out of their accounts?
+
+No. Customers will remain logged into their accounts on the storefront. The logout timer starts after the customer's last storefront activity. For example, if you have set a 24 hour duration, that 24 hour period will start with the customer's last activity.
+
+When my customer is automatically logged out, will they lose the content of their carts?
+
+No. Customer carts are independent of the Inactive shopper logout setting. Carts expire automatically after seven days.
+
+Stores on Growth, Scale, or Performance plans can enable Persistent Cart, allowing customers logged into their storefront account to access their cart from any device and browser for 30 days.
+
+Where can I find more information about security in BigCommerce?
+
+The Platform Trust Center provides comprehensive information about BigCommerce platform security, including statements of compliance, policy links, and a feed for security updates.
+
+Additional Resources
+Managing Customer Accounts
+Enabling reCAPTCHA
+Creating a Privacy Policy
+Using Script Manager
+PCI Compliance
+Platform Trust Center (BigCommerce)
+reCAPTCHA Developer's Guide (Google)
+Content Security Policy (CSP) (MDN)
+X-Frame Options (MDN)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Security and Privacy Settings

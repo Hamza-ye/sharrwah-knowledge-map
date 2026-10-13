@@ -1,0 +1,281 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+SEO
+OPTIMIZING CONTENT
+SEO Fields
+OPTIMIZING SITE
+CDN
+Sitemap
+Optimizing Images
+Robots.txt
+SEARCH ENGINES
+Google
+Bing
+Discounts And Coupons
+Email Marketing
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+SEO Fields
+What We'll Cover
+Requirements
+Metadata
+Homepage SEO Fields
+Product and category description
+Keywords
+URL structure
+FAQ
+
+Throughout the BigCommerce control panel, there are areas to enter content specifically for Search Engine Optimization (SEO) purposes to help shoppers discover your products on search engines such as Google and Bing. Page titles, descriptions, and keywords can be filled in for content pages, category pages, product pages, blog posts, and brands.
+
+This article will detail where you can enter SEO-related metadata and best practices to maximize your SEO impact.
+
+ 
+Requirements
+
+Depending on the SEO field's location in the control panel, you must have the following permissions enabled on your user account:
+
+For updating store settings, you will need Manage Settings enabled.
+For editing products, you will need Manage Products, Edit Products, Product Options, and Manage Brands enabled.
+For editing categories, you will need Manage Categories and Edit Categories enabled.
+For editing web pages, you will need Store Design, Manage Pages, and Edit Pages enabled.
+For editing blog posts, you will need Manage News enabled.
+ 
+Metadata
+
+Metadata refers to information included on the meta tag on a webpage. Search engines can use metadata to find relevant information to display in search results. Metadata includes items such as the page title, the meta description, and any keywords.
+
+Metadata fields can be found in the following locations in the control panel:
+
+Homepage — Settings › Website › Search Engine Optimization section
+Category pages — Products › Product Categories › Edit › Search Engine Optimization section
+Product Pages — Edit any product or add a product › SEO
+Web Content Pages — Storefront › Web Pages › Edit › Advanced Options section
+Blog Posts — Storefront › Blog › Edit › SEO section
+
+If you have more than one storefront, some metadata can be customized per storefront channel.
+
+Page title
+Meta descriptions
+PAGE TITLE
+
+Page titles are often used as the title link in search engine results, so it is important to craft a meaningful and branded page title. These can be added to content pages, products, blogs, and category pages.
+
+Every page should have a unique title tag, preferably starting with a relevant keyword, and have less than 60 characters. An example of a good page title is "Blue T-Shirts at Discounted Prices for Sale | BunchOfTshirts".
+
+This kind of page title is preferable because it utilizes keywords that are found on the product's page, as well as the store's name. For further help on crafting SEO-friendly page titles, see Guide to SEO.
+
+META DESCRIPTIONS
+
+Meta descriptions display in search engine results as a short descriptive blurb. They are usually only a couple sentences long.
+
+ 
+
+Google search results may not use your meta descriptions. In some cases, Google search results may favor your product description over your meta description. It is still recommended that you fill out both product descriptions and meta descriptions. See Google's Help Documentation for more information.
+
+It is best practice to add meta descriptions to every page of your store, including products, content pages, blog posts, category pages, and the home page. If you are targeting specific keywords, make sure to include them at the beginning of the description tag. A meta description tag should be well composed, compelling, and informative.
+
+Think of it as an advertisement. A well-composed meta description tag will most likely increase your website's Click-Through Rate (CTR). The CTR is calculated as the number of times your link is clicked divided by the number of impressions. Impressions are the number of times your link is displayed on the search engine result pages each time a specific search is performed by a user.
+
+ 
+Homepage SEO Fields
+
+The metadata fields for your store’s homepage can be found in Settings › Website. If you have more than one storefront, you can customize metadata fields for each channel in their Storefront settings.
+
+Home Page Title — the page title for the homepage of your store. If left blank, the store name found in Settings › Store profile, will be used.
+Meta Keywords — keywords that describe the content on your homepage. This field is strictly optional, as keywords have been deprecated by all major search engines.
+Meta Description — a brief description of your store and homepage. It is also frequently displayed alongside the store name on search engine results.
+WWW/No WWW Redirect — determines whether or not your store’s URL will begin with www. If set to Redirect no WWW to WWW, when a customer goes to your site by typing yourdomain.com without www, the www will automatically be added to your store’s URL when the page loads. This setting only applies to stores with a custom domain, and does not apply to stores using the shared mybigcommerce.com domain (such as mystore.mybigcommerce.com).
+ 
+
+Did you know? Your sitemap displays URLs with or without the www based on the selection of your store or channel’s WWW/No WWW Redirect setting.
+
+ 
+Product and Category Description
+
+Descriptive text on product and category pages helps search engines crawling the site to find terms for search results. It's advisable to utilize your keyword strategy when writing your descriptions.
+
+Product descriptions can be managed when adding or editing a product.
+
+Some best practices for writing a description include:
+
+Know your typical shopper. This will help with what information is most important to them.
+Make the description easy to read. Break up large chunks of information with sub-headings, bullet lists or images.
+Don't use the exact same content on two or more products. Duplicate information is detrimental to SEO.
+When using images in the description, add the image description in the WYSIWYG editor.
+
+For more advice on best practices for writing descriptions, see our Guide to SEO.
+
+Category descriptions have a similar strategy to product descriptions. These are managed when adding or editing a category.
+
+Many of the same best practices from product descriptions can be applied to category descriptions. They should be easy to read, catered to the audience/shopper, and utilize keywords. It's also a useful place to highlight or link to deeper subcategories, entry-level products, or higher-end products.
+
+ 
+Keywords
+
+Keywords are words and phrases in your descriptions and metadata that are relevant to the content on a page and are an essential part of your organic SEO and paid marketing campaigns.
+
+There is a section to place meta keywords on pages. However, this method is slowly becoming obsolete: it is better to include keywords into descriptions and categories.
+
+https://storage.googleapis.com/bigcommerce-production-dev-center/Knowledge%20Base/SEO/SEOFields/keywords.jfif
+
+(Keywords are words and phrases in the description relevant to page content.)
+
+There are a few pitfalls when it comes to including keywords. One of the easiest to fall into is called "keyword stuffing." This means overloading your page with as many keywords as possible.
+
+For more resources for keyword research and generating keyword ideas, see our Guide to Keyword Research. This guide goes over the basics of how keywords work, research tools, and how to track keyword success.
+
+ 
+URL Structure
+
+Having descriptive URLs can help with SEO and improve your store's ranking in search engines. URL structures can be adjusted for products, web pages, and categories. By default, it uses an SEO friendly structure, but you can customize the formatting of the URL structure to suit your business needs.
+
+ 
+
+Be careful! Incorrectly modifying your store’s URLs can have a drastic impact on your SEO. If you are at all unsure about whether or not you should use custom URL formats, we highly recommend leaving them set to SEO Optimized (Short).
+
+URL structure settings can be accessed in Settings › URL Structure.
+
+URL structure settings
+Changing the URL structure
+Configuring custom URL formats
+Placeholder types
+URL STRUCTURE SETTINGS
+
+The product URL setting determines the structure of the URL when viewing an individual product page.
+
+SEO Optimized (Short) — uses the product's name in the URL, using the format yourdomain.com/product-name
+SEO Optimized (Long) — adds the word "products" before the product's name, in the format yourdomain.com/products/product-name
+SEO Optimized (Category) — uses the first category the product is placed in and the product's name, in the format yourdomain.com/category/product-name
+Custom — allows you to configure the product URL structure by using placeholders
+
+The category URL setting determines the structure of the URL when viewing an individual category page.
+
+SEO Optimized (Short) — uses the category name in the URL, using the format yourdomain.com/category-name
+SEO Optimized (Long) — adds the word "categories" before the category's name, in the format yourdomain.com/categories/category-name
+Custom — allows you to configure the category URL structure by using placeholders
+
+The web page URL setting determines the structure of the URL when viewing an individual web content page.
+
+SEO Optimized (Short) — uses the web page title in the URL, in the format yourdomain.com/page-name
+SEO Optimized (Long) — adds the word "pages" before the web page's name, in the format yourdomain.com/pages/page-name
+Custom — allows you to configure the web page URL structure by using placeholders
+CHANGING THE URL STRUCTURE
+
+Under URL structure settings, you can apply changes to product, category, and web content page URLs.
+When you have decided which option best suits your business, select it from the list and click Save. If you select Custom, see our instructions below on Configuring custom URLs.
+
+Once saved, click the Update button under the URL type you changed.
+
+You can choose to update only URLs you have not customized or all URLs, including those you have already customized. Check the box if you want to create 301 redirects for the old URLs.
+
+Click Update URLs. Once the updates are complete, click Close, then check your storefront pages to confirm that the URL changes have taken effect.
+
+CONFIGURING CUSTOM URL STRUCTURE
+
+You can use Custom URL structures to include placeholders that are not included in the default URL structure options, such as product SKUs. Incorrectly modifying your store’s URLs can have an impact on your SEO.
+
+ 
+
+Be careful! If you are at all unsure about whether or not you should use custom URL formats, we highly recommend leaving them set to SEO Optimized (Short).
+
+Select Custom, then enter the custom URL format using a combination of the available placeholders separated by forward slashes (/). The custom URL string should also begin with a forward slash (/).
+
+Once you have entered the custom URL format, click Save, then click the Update button and follow the prompts.
+
+PLACEHOLDER TYPES
+
+Each page type has a list of placeholders that are available to use. You can arrange them in any order.
+Product Pages
+
+%productname% — the name of the product
+%category% — the first category this product appears in
+%sku% — the product code/SKU
+%upc% — the product UPC (Universal Product Code)
+ 
+
+Can I show all the categories that contain the product? The Category placeholder will only show the first main category the product is listed in.
+
+Categories
+
+%categoryname% — the name of the category
+%parent% — the name of the parent category
+
+Web Pages
+
+%pagename% — the name of the page
+%parent% — the name of the parent page
+ 
+FAQ
+
+What happens if I don't fill out the information in the SEO sections?
+
+If left blank, the page will use the metadata entered in the homepage SEO fields. Additionally, search engines may use any relevant, readable text on the page in the description.
+
+Is there a way to enter SEO metadata in bulk?
+
+Some areas can have SEO metadata entered in bulk. For products, you can use CSV import to enter in keywords, page titles, and meta descriptions. Be mindful of duplicate text, since that could negatively impact your SEO.
+
+Additional Resources
+Guide to SEO
+Guide to Keyword Research
+301 Redirects
+Influencing your title links in search results (Google Search Central)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+SEO Fields

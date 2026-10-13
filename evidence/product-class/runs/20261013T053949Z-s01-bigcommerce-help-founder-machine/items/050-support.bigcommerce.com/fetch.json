@@ -1,0 +1,18 @@
+{
+ "n": 50,
+ "url": "https://support.bigcommerce.com/s/article/Using-Script-Manager",
+ "dir": "items/050-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:41:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Using-Script-Manager?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190821,
+ "cited_in": [
+  "BC-C-044"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b85bf9cbb234c080008f58282f1463c6b63c2300c84ce33ae979a2786e2abba5",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 19,
+ "url": "https://support.bigcommerce.com/s/article/Creating-a-Manual-Order",
+ "dir": "items/019-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:15Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Creating-a-Manual-Order?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190818,
+ "cited_in": [
+  "BC-C-018"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8597184b21289d348526690642f8b05aa27919c54f8befd02aa1f3c86d4808e2",
+ "raw_ext": "html"
+}

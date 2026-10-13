@@ -1,0 +1,237 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Unified Billing for Partners
+What We'll Cover
+How Unified Billing works
+Requirements and limitations
+Benefits of Unified Billing
+Customer experience
+Recommended practices
+FAQ
+
+Unified Billing allows Technology Partners to process app charges via API, using the BigCommerce payment system.
+
+When a BigCommerce customer wants to purchase a subscription to a third-party app from the BigCommerce App Marketplace, they are often required to enter their payment information for each app subscription. They are also typically required to enter into a separate billing relationship with each individual app partner that they do business with. This adds tedious work for the merchant customer, on top of managing an already growing business, which can result in hindered or delayed adoption of your app.
+
+Additionally, partners who are responsible for the billing of their own app can suffer from low conversion rates and see lower margins due to credit card transaction rates and higher risk due to chargebacks and fraud. In some cases, partners have a high barrier to entry into the App Marketplace, given the need to build a PCI-compliant payment system for their app.
+
+With Unified Billing, the billing responsibility for your app is transferred from you, the partner, over to BigCommerce. Instead of worrying about billing, you can focus on what you do best — providing great service to your customers by enabling them to focus on growing their business instead of being burdened with a cumbersome payment process.
+
+ 
+
+Not an app developer? See Using the App Marketplace for more information about installing, reviewing, and updating apps.
+
+ 
+How Unified Billing Works
+
+Tech partners that meet the requirements can process app charges via the Unified Billing APIs by using the BigCommerce payment system.
+
+Apps using Unified Billing direct customers through the BigCommerce checkout flow for purchases and upgrades. This allows customers to check out directly through the BigCommerce control panel.
+
+Unified Billing supports the following billing options:
+
+One-time charge
+customer pays a one-time charge upfront
+ability to offer a trial period before the one-time charge happens
+Fixed recurring charge
+customers pay a fixed amount upfront on a recurring basis (monthly, annual, quarterly, or semiannually)
+ability to offer a trial period before the recurring charge starts
+Plan adjustments such as upgrades, downgrades, and cancellations
+cancellations will process at the end of the agreed upon billing cycle. For example, if a customer is on a monthly billing cycle, their subscription will be cancelled at the end of the month.
+updates to an existing charge require the customer’s approval (the customer must proceed through the checkout flow)
+ 
+Requirements and Limitations
+
+To be eligible for Unified Billing:
+
+You must have a Technology Partner account, with up to date Partner Portal login credentials.
+You must sign the Commerce Partner Agreement (CPA) or, prior to September 1, 2025, have signed the Technology Partner Program Agreement (TPPA).
+Your business must be based in the US, UK, CA, or IN.
+Your app must be a Single-Click App.
+Your billing model must support fixed recurring rates or fixed one-time rates.
+A trial period can be included, but is optional.
+SUPPORTED BILLING MODELS
+
+The following billing models, or a combination of the models, are supported:
+
+Tiered pricing model — customers are offered a selection of different package levels or “tiers”. Base tiers generally include “must-have” features, with each successive tier including the previous tier and additional features for a higher price.
+Freemium model — basic services are provided at no cost. Advanced features can be added to the package for a premium.
+Flat-rate model — customers pay a single, fixed fee for a product or service
+LIMITATIONS
+
+The following features are not supported:
+
+Issuing refunds or credits through the API
+Store credits
+storing and applying credits to a plan
+Webhooks that notify the partner of the billing status
+Scheduled cancellations
+Restoring app subscriptions
+voiding an app subscription cancellation that has not yet been processed
+Store transfers
+app subscriptions do not transfer along with a store that is transferred from one BigCommerce billing account to another
+Usage-based billing
+ 
+Benefits of Unified Billing
+
+Unified Billing provides your customers with a seamless purchase experience and an all-in-one invoice, while also driving app adoption and relieving unnecessary overhead.
+
+Save time — spend less time building and maintaining a billing integration, giving you valuable time back to focus on new product and feature development
+Strengthen partnerships — increase your exposure by being featured in our launch announcements and case studies, as well as other announcements related to Unified Billing
+Increase recognition — earn the Unified Billing badge for your app
+Reduce operational costs — no more chasing customers for payment
+Accelerate growth — offer customers an improved purchase experience by having the charge included on their BigCommerce invoice
+ 
+Customer Experience
+
+Customers of participating apps can now purchase products and subscriptions directly through BigCommerce, streamlining both the purchasing and billing process.
+
+With Unified Billing, when a customer installs an app and selects a plan, they are redirected to the BigCommerce hosted checkout. They can pay with their existing BigCommerce payment method or they can add a new method. Subscriptions are created and associated with the customer’s billing account.
+
+Note: only the Store Owner can purchase app products or subscriptions using Unified Billing.
+
+ 
+Recommended Practices
+CHOOSING YOUR FIRST APP TO IMPLEMENT UNIFIED BILLING
+
+We recommend that you implement Unified Billing first with your most utilized app to reduce the resources spent in managing its billing process.
+
+STORE SUSPENSIONS
+
+When the store billing is in suspended status, we recommend partners continue providing app service to the customer, and only suspend service of the app when the billing is in canceled status.
+
+Some customers rely heavily on installed apps functioning in order for their store to run successfully. When a customer is behind on billing, it can result in the customer’s account and any stores under their account being temporarily suspended.
+
+Once their bill is paid, their account and its associated stores move from suspended to reactivated again. If there is a delay from the time their store gets reactivated and when their app service resumes, it could cause their store to be available to shoppers but not be working correctly.
+
+ 
+FAQ
+General
+Billing and payment
+GENERAL
+
+Do I have to participate in Unified Billing?
+
+No, participation is optional.
+
+Do I need to opt in to use Unified Billing?
+
+No. By signing the Commerce Partner Agreement (or the Technology Partner Program Agreement (TPPA) prior to September 1, 2025), you are eligible to charge customers for your apps using Unified Billing.
+
+If I participate in Unified Billing, do all of my customers need to use it?
+
+No, it’s possible for you to maintain more than one billing provider and flow for your app, and give your customers the option of which billing provider and flow they can use. As the app developer, you would be responsible for building and maintaining those flows, as well as managing all customer migrations.
+
+While using Unified Billing, can customers sign up for services through my website?
+
+To participate in Unified Billing, customers must sign up for products and subscriptions via the App Marketplace.
+
+BILLING AND PAYMENT
+
+What type of reporting will I get from BigCommerce?
+
+Once you have data available, you can access your Current Month Commissions report in the Partner Portal. This data can be used as an estimate or approximation for upcoming App Payments, Adjustments, refunds, credits, cancellation, etc., all of which could affect your app payment earnings.
+
+What happens if my account gets suspended for non-payment of other BigCommerce services?
+
+If your account is suspended for non-payment, the billing for your app will be suspended as well.
+
+Can partners charge customers monthly based on storefronts, stores, or other variables?
+
+It is up to the partner to determine what amount to charge. See Welcome to BigCommerce on our Dev Center for developer documentation and tools.
+
+Can billing responsibility be moved from BigCommerce to third-party billing?
+
+No, if you are a delegated billing franchise, your customer will be billed by BigCommerce on behalf of the App Partner.
+
+Will payments by customers to BigCommerce be made in advance or arrears?
+
+BigCommerce will bill customers in advance, but customers will pay based on the payment terms established on their account (net payment terms).
+
+Will payments by BigCommerce to partners be made in advance or arrears?
+
+BigCommerce will pay partners in arrears within 45 days of month close. For example, Unified Billing app revshare earned in May 2025 will be processed and paid out in July 2025.
+
+For partners who wish to be paid via Wire Transfer, payment will be made when their revshare balance is $100 or greater. Any unpaid closed balance will accrue monthly until it reaches the $100 threshold.
+
+How do we retrieve the billing status?
+
+The Unified Billing API can be called to retrieve the billing status. Additionally, the partner portal Product Payment Earnings report will show billing information.
+
+What happens to the app billing when a store plan is paused?
+
+The customer will continue to be billed for the app when their store’s plan is paused. The customer may need to configure things within their store’s control panel in preparation for the selling season, before their store returns to active status.
+
+API calls cannot be made from a store that is paused. However, as a partner, you can still call the Unified Billing API to manage app subscriptions on a paused store.
+
+How are app refunds and credits handled?
+
+Customers should contact the partner directly to request refunds or credits. Once the partner has reviewed the request, they can submit a case through the Partner Portal for BigCommerce support to process.
+
+Additional Resources
+Using the App Marketplace
+Unified Billing Overview (Dev Center)
+Introducing BigCommerce’s Unified Billing (Dev Center)
+Becoming a Partner (Dev Center)
+Partner Portal (Bigcommerce.com)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Unified Billing for Partners
