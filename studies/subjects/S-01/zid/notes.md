@@ -41,3 +41,14 @@ Read rendered through `method/capture/page_text.mjs` (help.zid.sa): deposits_zid
 - Sources differ and are recorded as found: Zid Pay deposit days in Saudi Arabia (Sunday, Tuesday, Thursday in S01-ZD-016, S01-ZD-032, S01-ZD-040; daily Sunday to Thursday in S01-ZD-038, S01-ZD-039); COD transfer timing (S01-ZD-069 twice a month to the wallet; S01-ZD-071, dated 2023, within two working weeks); Mazeed collections (S01-ZD-085 and S01-ZD-088 monthly with a 500 SAR minimum; S01-ZD-089 weekly on Tuesdays with no minimum). The English Terms (January 2025) are older than the Arabic Terms (August 2026), which state that the Arabic version prevails.
 - The Kuwait Zid Pay text gives a period as x يوم (S01-ZD-022); recorded as found and as gap G08.
 - Statement S01-ZD-072 (COD under تفعيل الحسابات, a third party's service) and S01-ZD-069 (COD under زد شب, collected by Zid) are two parts of the same Terms; both are recorded.
+
+## Phase A2 (2026-10-13)
+
+Brief `briefs/A2-close-gaps.md`, on the zid rows of `variants.tsv` marked gap (S01-VP-01, 02, 03, 04, 11, 12, 13, 15, 21, 22: gaps G01 to G09) or not covered (S01-VP-10). Added: statements S01-ZD-146 and S01-ZD-147, citations S01-ZD-C366 and S01-ZD-C367, one term row (بوابات الدفع), gaps S01-ZD-G10 to S01-ZD-G19, and `a2.tsv`. S01-ZD-146 was added to the `conditions` of S01-ZD-144. No absence was found. G01 to G09 are left unchanged; G10 to G18 restate them with the A2 reading, and G19 is the gap for S01-VP-10.
+
+What was read is listed in each gap's `read` and in `a2.tsv`. Held copies were read from this repository's capture runs `20261012T045101Z-q1-zid-sources`, `20261012T104936Z-s01-sources` and `20261012T190225Z-s01-sources-zid` (raw HTML, tags removed for reading, because the zid.sa `text.txt` files hold only an error message). Pages not held were fetched raw on 2026-10-13 (help.zid.sa articles and FAQs found through https://help.zid.sa/sitemap_index.xml and its post and faqs sitemaps; zid.sa partner and campaign pages listed in the held zid.sa sitemap; docs.zid.sa payment-provider `.md` pages listed in the held llms.txt).
+
+Problems:
+- This repository is not a git checkout here, so held paths are cited as `sharrwah-knowledge-map:<path>` without a commit.
+- S01-ZD-147 is cited from the held raw HTML of https://help.zid.sa/category/zid-pay/; the category page shows no date, so its source_date is the capture date.
+- The step list on https://help.zid.sa/zid-pos-app/ (S01-ZD-146) appears twice in the raw HTML; one copy lies inside an HTML comment.

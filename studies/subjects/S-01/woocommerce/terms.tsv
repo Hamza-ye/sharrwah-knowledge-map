@@ -45,3 +45,11 @@ Stripe PSP		Stripe Payments UK Ltd (“Stripe PSP”) is an additional party to 
 Pooled Account		“Pooled Account” means a pooled account to which Transaction settlement funds are credited.	S01-WC-C186
 Payout Schedule		“Payout Schedule” means the schedule that User selects in the Stripe Dashboard (e.g. daily, weekly, monthly) to pay out Transaction settlement funds to a User Bank Account after those funds become available in User’s Stripe Account based on the Payout Speed.	S01-WC-C187
 Payout Speed		"Payout Speed" means the number of days following the Transaction that it takes for the Transaction settlement funds to become available in User’s Stripe Account as stated in the Documentation.	S01-WC-C188
+Payment Method Acquirer		“Payment Method Acquirer” means an entity that a Payment Method Provider has authorized to (a) sponsor or submit Transactions at the request of merchants to the Payment Method Provider for authorization and clearing; and (b) receive and remit settlement funds for authorized and cleared Transactions.	S01-WC-C191;S01-WC-C196;S01-WC-C197;S01-WC-C198;S01-WC-C199
+Payment Facilitator			S01-WC-C200;S01-WC-C201
+Independent Sales Organization (ISO)			S01-WC-C202;S01-WC-C212
+Settlement Funds		Network International receives funds from the Networks for User’s Charges ("Settlement Funds"),	S01-WC-C207
+pooled merchant funds accounts			S01-WC-C210
+Payout Account			S01-WC-C211
+立替払金		「立替払金」とは、お客様が会員に対する通信販売により取得した売上債権につき、JCBが、会員に代わって、立替払いする金員をいうものとします。	S01-WC-C223;S01-WC-C221
+代理受領			S01-WC-C221

@@ -116,3 +116,26 @@ Stripe agreements, rendered (see problem 2):
 6. **Which merchant.** The brief doesn't say which merchant it means. In the Marketplace Vendor Agreement (S01-WC-078 to S01-WC-080), the merchant is the Partner, "the third party offering Products on the Marketplaces" (S01-WC-079). It is recorded because its section 2.2 names both ends for that Partner (S01-WC-078). Its statements carry the scope "Products listed on the Woo Marketplace" or "Partner Products on the Marketplaces".
 
 7. **The live host for the terms.** The brief's table gives woocommerce.com for WooCommerce's live legal pages. The Terms of Service are at https://wordpress.com/tos/. The WooPayments "Our Policies" page, the source of S01-WC-015, links its words "Terms of Service" to that URL, and the Q1 index cites the same URL.
+
+# Phase A2, 13 October 2026
+
+Variation point S01-VP-12 ("licensed"), from variant S01-V-219 (gap S01-WC-G01). Statements S01-WC-130 to S01-WC-150 and gap S01-WC-G03 were added. S01-WC-108's `conditions` gained S01-WC-131 and S01-WC-132, and S01-WC-119's gained S01-WC-133. No other existing row was changed.
+
+## What was read
+
+- The held capture of https://stripe.com/legal/ssa-service-terms (`evidence/product-class/runs/20261012T104936Z-s01-sources/items/078-stripe.com/text.txt`): the Regional Terms for Australia, New Zealand, Japan, Singapore and the United Arab Emirates in the Stripe Financial Services Terms (section 5) and the Stripe Payments Terms (section 15), and Stripe Payments 3.2 Acquirer Terms. The Financial Services Terms have no United Arab Emirates section.
+- The country versions of the Stripe Services Agreement that G01's route names, rendered on 2026-10-13: https://stripe.com/au/legal/ssa, /jp/legal/ssa, /nz/legal/ssa, /en-sg/legal/ssa, /ae/legal/ssa, and the same five countries' /legal/ssa-service-terms. Between "Last modified" and the first "Back to Top", the text of each matches the held captures of https://stripe.com/legal/ssa and https://stripe.com/legal/ssa-service-terms line for line, apart from the language-selector lines on the Japanese General Terms page. Citations therefore use the global URLs.
+- https://stripe.com/au/fsg-pds, which served a PDF (Combined Financial Services Guide and Product Disclosure Statement, effective 14 July 2023), read with pdftotext. Nothing is cited from it: it covers the Top Up and Payout Services, which it says "are only available to Platforms with a Stripe Account", and no agreement read names it as binding on the merchant.
+- https://stripe.com/legal/acquirer-disclosure, which Stripe Payments 3.2 names (S01-WC-130). The page shows no date.
+- The Acquirer Terms it links for the five countries: https://stripe.com/ae/legal/network-international-acquirer-terms, https://stripe.com/jp/legal/smcc and https://stripe.com/jp/legal/jcb. The Australia, New Zealand and Singapore entries link no Acquirer Terms.
+
+## What couldn't be read, or wasn't
+
+- https://stripe.com/ae/legal/network-international, the URL Stripe Payments 15.1 (United Arab Emirates) names, returned HTTP 404, as did https://stripe.com/legal/network-international and https://stripe.com/en-ae/legal/network-international. The page cited for the Network International terms is the one the Acquirer Disclosure links.
+- Not read: the SMCC 加盟店規約 and JCB 加盟店規約 PDFs that the Japanese Acquirer Terms incorporate (G03's route).
+
+## Problems
+
+1. G01 cannot be changed under the A2 brief. Its route pages have now been read, and G03 records what remains. `a2.tsv` lists G03 as the gap that remains.
+2. The Acquirer Disclosure and the Acquirer Terms are admitted on the chain Connected Account Agreement → Stripe Services Agreement → Stripe Payments 3.2, which says User "agrees to the Acquirer Terms for the applicable Payment Method Acquirers, if any, listed on the Acquirer Disclosure" (S01-WC-130).
+3. All new live citations were checked against the working copies made by `method/capture/page_text.mjs` on 2026-10-13; those copies are not evidence, and the coordinator captures the cited URLs.
