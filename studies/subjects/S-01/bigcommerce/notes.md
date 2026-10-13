@@ -56,3 +56,29 @@ Read on 2026-10-12, following `studies/subjects/S-01/briefs/A-one-platform.md`.
 - **Translations.** No translation is recorded. The docs and the pages cited are in English, and I did not look at the German, French or other localized sites.
 - **Quotes that span paragraphs.** A statement made of a question and its answer cites each paragraph separately. A quote stays within one paragraph, while the statement runs across both, so the checker can find it whole on the page.
 - **The checker writes outside this folder.** Running `method/check_subject.py` as instructed writes `studies/subjects/S-01/kinds.tsv`. I left that file in place.
+
+# Phase A2: closing gaps on the variation points
+
+Read on 2026-10-13, following `studies/subjects/S-01/briefs/A2-close-gaps.md`. Statements S01-BC-039 to S01-BC-061, citations S01-BC-C047 to S01-BC-C079, gaps S01-BC-G04 to S01-BC-G23 and `a2.tsv` are from this phase. No absence was recorded.
+
+## What I read
+
+- **Commerce press releases** (rendered): "Commerce Introduces BigCommerce Payments Powered by PayPal" (October 20, 2025), "Commerce Delivers BigCommerce Payments by PayPal…" (May 6, 2026) and the Commerce Live 2026 release.
+- **bigcommerce.com blog posts** (rendered; dates from each page's datePublished): the BigCommerce Payments announcement, UK expansion, playbook and closed beta posts; the Stripe Adaptive Pricing, Stripe OCS upgrade and Stripe on BigCommerce posts; the PayPal payment gateway and PayPal funding posts.
+- **bigcommerce.com pages** (raw HTML): BigCommerce Payments on .com, .co.uk and .com.au, its trial and treatment pages, `/payments/`, `/payments/embedded-payment-providers/`, `/payments/paypal/`, `/partners/stripe/payments/`, `/partners/stripe/`, `/affirm/`, `/square-offer/`, `/product/consumer-financing/`, `/solutions/cryptocurrency-payments/`, `/payments/recurring/`, and the 32 country pages under `/payments/gateways/`.
+- **Legal pages** (rendered), searched again for agency, reserves, withholding, set-off, security interests, payouts and funds: the Master Services Agreement, Store Terms, Fees and Billing, Jurisdiction-Specific Terms, Acceptable Use Policy.
+- **Developer docs:** the 348 `.md` pages of `docs.bigcommerce.com/developer/llms.txt` whose addresses name payments, orders, refunds, checkout, currencies, PayPal, Stripe, wallets, transactions, captures, voids or B2B invoices, searched for payout, settle, funds, disburse, reserve, withhold and "on hold"; the matching passages were read.
+- **Indexes,** used only to find pages: `www.bigcommerce.com/robots.txt` and the blog, press, articles and glossary sitemaps; `www.commerce.com/sitemap.xml`.
+
+## What I couldn't read
+
+- **The Help Center** still renders no text (0 characters) for `Connecting-with-BigCommerce-Payments`, `Available-Payment-Gateways` and `Offline-Payment-Methods`, and `support.bigcommerce.com/llms.txt` still redirects to a login page. The BigCommerce Payments announcement and UK posts link `Connecting-with-BigCommerce-Payments` as the knowledge-base article; it is in the routes of G04 to G23. `method/held_index.py` reports none of the routes' addresses as held.
+- **The control panel** (Money Dashboard, BigCommerce Payments activation) needs a store login and was not opened.
+
+## Problems
+
+- **Press releases and blog posts as sources.** The statements about the BigCommerce Payments account, the merchant's relationship with PayPal and the Money dashboard come from Commerce press releases and bigcommerce.com blog posts, not from a product or legal page. S01-BC-039 to S01-BC-041 come from the October 2025 release, written before launch in the future tense.
+- **Plan and region differ between sources.** The May 2026 release says "Retail plans in the United States" (S01-BC-046); the March 2026 announcement says "US customers on Core, Growth, and Scale plans" (S01-BC-054); the UK post says "UK and EMEA customers on Core, Growth, and Scale plans" (S01-BC-057); the closed beta post says "Standard, Plus, or Pro plan" (S01-BC-060). All are recorded.
+- **Conditions added to phase A rows.** As the A2 brief allows, I added new stmt_ids to the `conditions` of S01-BC-028, S01-BC-029 and S01-BC-030 (replacing `none stated`) and of S01-BC-034.
+- **A footnote checked and not used.** On the PayPal page, footnote 11 ("Availability may vary depending on merchant’s integration method and geographic location.") sits on "Local payment methods used around the world", not on "Funds credit immediately…", in the raw HTML, so it is not recorded as conditioning S01-BC-023.
+- **Shared scratchpad.** Other agents write to the same scratchpad directory; a helper script of mine was overwritten once by another agent's file of the same name before it ran. Nothing was written to this folder by it; my work then moved to its own subfolder.
