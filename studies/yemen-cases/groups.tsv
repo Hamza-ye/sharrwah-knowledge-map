@@ -9,9 +9,9 @@ YG-007	How the rial's exchange rate is moving	stable, fluctuating, falling or im
 YG-008	Whether the market exchange rate differs from the official rate	whether, and how far, the market rate diverges from the official rate	YQ-D349, YQ-E074	Joins parts D and E.
 YG-009	Whether every exchanger deals at the same rate	the same rate everywhere, or rates that differ from shop to shop	YQ-D189	
 YG-010	Rial rate of the US dollar that international data providers quote	the quoted rate	YQ-E571, YQ-E574, YQ-E704	Data providers' quotes (Trading Economics, Wise) whose sources say neither where nor by whom the rate is used; they are far from the market prices of the same days, so they are a separate condition.
-YG-011	How the central bank supplies foreign currency for imports	the mechanism (financing from reserves, the substitution mechanism, Saudi-deposit letters of credit, currency auctions, the import committee's approvals) and whether it is running, curtailed or suspended	YQ-A053, YQ-D226, YQ-D235, YQ-D323, YQ-D332, YQ-D333, YQ-D404, YQ-D436, YQ-D468, YQ-D526, YQ-E251, YQ-E263, YQ-E266, YQ-E270, YQ-E275, YQ-E290, YQ-E301, YQ-E307, YQ-E328, YQ-E345, YQ-E394, YQ-E421, YQ-E448, YQ-E478, YQ-E690	Joins parts A, D and E, including part D's 'how imports are regulated and financed' (the National Committee for Regulating and Financing Imports). YQ-D235 and YQ-E690 are the same undated headline.
+YG-011	How the central bank supplies foreign currency for imports	the mechanism (financing from reserves, the substitution mechanism, Saudi-deposit letters of credit, currency auctions, the import committee's approvals) and whether it is running, curtailed or suspended	YQ-A053, YQ-D226, YQ-D235, YQ-D323, YQ-D332, YQ-D333, YQ-D404, YQ-D436, YQ-D468, YQ-D526, YQ-E251, YQ-E263, YQ-E266, YQ-E270, YQ-E275, YQ-E290, YQ-E301, YQ-E307, YQ-E328, YQ-E345, YQ-E394, YQ-E421, YQ-E448, YQ-E478, YQ-E690, YQ-E773	Joins parts A, D and E, including part D's 'how imports are regulated and financed' (the National Committee for Regulating and Financing Imports). YQ-D235 and YQ-E690 are the same undated headline. YQ-E773 gives import financing through commercial banks under the Aden central bank's committee.
 YG-012	What foreign currency bought at the central bank's auctions may be used for	the uses allowed	YQ-A040	
-YG-013	Whether banks and importers may take part in the Aden central bank's currency auctions	allowed or banned	YQ-E271	
+YG-013	Which import-financing mechanisms banks and importers may or must use	letters of credit and the import committee's approval required, or banks barred from the other side's mechanisms (auctions, letters of credit, SWIFT, the committee)	YQ-E267, YQ-E268, YQ-E271, YQ-E277, YQ-E279, YQ-E280, YQ-E282, YQ-E291, YQ-E423, YQ-E424	Joins part E's rules on import financing from both sides: the Aden central bank's and its committee's requirements, and the Sana'a central bank's bans on using them.
 YG-014	Where importers obtain foreign currency	the main source: banks and the central bank, money exchangers, the parallel market, or remittances	YQ-D216, YQ-D361, YQ-D439, YQ-D445, YQ-D463, YQ-D465, YQ-E727	Joins parts D and E. The central bank's own supply mechanism is a separate condition, since both hold together.
 YG-015	How available foreign currency is	ample, scarce or severely short	YQ-D217, YQ-D464, YQ-E298	Joins parts D and E. Part D's capped access to foreign currency (YQ-D402) is a limit, in the condition on buying foreign currency.
 YG-016	Whether exchange businesses may buy and sell foreign currency	allowed, barred from selling to merchants or importers, or suspended	YQ-E325, YQ-E346, YQ-E611	
@@ -106,7 +106,7 @@ YG-104	What a business needs to open a bank account	the documents	YQ-D612
 YG-105	Whether one may buy assets seized from banks	valid, or invalid and sanctionable	YQ-E388, YQ-E503	
 YG-106	Which transfer networks exchange companies and banks may or must use for domestic transfers	the unified network (UNMONEY) required, allowed or barred; the companies' and banks' own networks allowed or closed; Kuraimi Express barred	YQ-A029, YQ-A030, YQ-A031, YQ-A032, YQ-A034, YQ-C370, YQ-C382, YQ-D027, YQ-D028, YQ-D029, YQ-D276, YQ-D278, YQ-D357, YQ-D450, YQ-D474, YQ-D477, YQ-D486, YQ-E441, YQ-E442, YQ-E523, YQ-E524, YQ-E615, YQ-E616, YQ-E795, YQ-E796, YQ-E890, YQ-E891, YQ-E892	Joins parts A, C, D and E: the Aden central bank's network rules, the Sana'a side's bans on the unified network and on Kuraimi Express, and part D's 'how domestic money transfers can be made' for its rows stating these rules. Sources date the unified network's mandate to February 2024, June 2024 and July 2024.
 YG-107	Who takes part in the unified money transfer network	the banks, exchange companies and e-wallets linked to it, its owners, and whether it is running, planned or being restructured	YQ-C389, YQ-C390, YQ-C435, YQ-D120, YQ-D279, YQ-D284, YQ-D451, YQ-D475, YQ-E748	Joins parts C, D and E. YQ-C435 is the Sana'a side's planned network.
-YG-108	Through which channels money is moved within Yemen in practice	the main channels (exchange and hawala networks, Kuraimi Express, banks) and how far they are supervised	YQ-D447, YQ-D449, YQ-D476, YQ-E165, YQ-E210, YQ-E232, YQ-E576, YQ-E636, YQ-E639, YQ-E652, YQ-E766	Joins parts D and E, including part E's 'Informal money transfer (hawala) available'.
+YG-108	Through which channels money is moved within Yemen in practice	the main channels (exchange and hawala networks, Kuraimi Express, banks) and how far they are supervised	YQ-D447, YQ-D449, YQ-D476, YQ-E165, YQ-E209, YQ-E210, YQ-E232, YQ-E576, YQ-E636, YQ-E639, YQ-E652, YQ-E766	Joins parts D and E, including part E's 'Informal money transfer (hawala) available'. E209 says people prefer money exchange outlets for payments and transfers.
 YG-109	Through which channels remittances from abroad reach Yemen	the main channels (banks, international transfer companies, exchange companies, hawala, informal networks) and their shares	YQ-D362, YQ-D441, YQ-D443, YQ-D444, YQ-D545, YQ-E590, YQ-E754, YQ-E803	Joins parts D and E.
 YG-110	Whether money can be sent between areas held by different parties	possible or stopped, and through whom	YQ-C388, YQ-D215, YQ-D350	Joins parts C and D.
 YG-111	Whether cash and foreign currency may be moved from one side's area to the other	allowed, limited or banned	YQ-D334, YQ-E327	Joins parts D and E.
@@ -145,7 +145,7 @@ YG-143	Whether exchange firms may charge a commission for paying out in cash	all
 YG-144	Whether a buyer can send money within Yemen through a transfer network	available or not at the service named	YQ-C348, YQ-C417, YQ-D605	Joins parts C and D.
 YG-145	Whether buyers have digital transfers available	available or not, and to whom	YQ-D022	
 YG-146	What a bank's transfer agencies offer customers	the services offered	YQ-C429	
-YG-147	Whether a buyer can pay for purchases at shops from a phone wallet or bank app	available or not at the service named (how: points of sale, store codes, QR)	YQ-C002, YQ-C006, YQ-C011, YQ-C030, YQ-C035, YQ-C045, YQ-C051, YQ-C056, YQ-C059, YQ-C146, YQ-C149, YQ-C160, YQ-C165, YQ-C170, YQ-C186, YQ-C191, YQ-C212, YQ-C223, YQ-C239, YQ-C257, YQ-C277, YQ-C284, YQ-C324, YQ-C330, YQ-C337, YQ-C345, YQ-C353, YQ-C357, YQ-C408, YQ-C415, YQ-C423, YQ-D144, YQ-D151, YQ-D163, YQ-D563, YQ-D571, YQ-D619, YQ-E012, YQ-E020, YQ-E050, YQ-E059, YQ-E207, YQ-E671, YQ-E740	Joins parts C, D and E: each wallet's or bank app's payments at merchants (Hasseb, merchant payments, points of sale). Online purchases, bills and transfers to persons are separate conditions, since a service can offer one and not another; rows listing a wallet's whole range of services are in the condition on which services a wallet offers.
+YG-147	Whether a buyer can pay for purchases at shops from a phone wallet or bank app	available or not at the service named (how: points of sale, store codes, QR)	YQ-C002, YQ-C006, YQ-C011, YQ-C030, YQ-C035, YQ-C045, YQ-C051, YQ-C056, YQ-C059, YQ-C146, YQ-C149, YQ-C160, YQ-C165, YQ-C170, YQ-C186, YQ-C191, YQ-C212, YQ-C223, YQ-C239, YQ-C257, YQ-C277, YQ-C284, YQ-C324, YQ-C330, YQ-C337, YQ-C345, YQ-C353, YQ-C357, YQ-C408, YQ-C415, YQ-C423, YQ-C442, YQ-C460, YQ-D105, YQ-D144, YQ-D151, YQ-D163, YQ-D563, YQ-D571, YQ-D619, YQ-E012, YQ-E020, YQ-E050, YQ-E059, YQ-E207, YQ-E671, YQ-E740	Joins parts C, D and E: each wallet's or bank app's payments at merchants (Hasseb, merchant payments, points of sale). Online purchases, bills and transfers to persons are separate conditions, since a service can offer one and not another; rows listing a wallet's whole range of services are in the condition on which services a wallet offers. Part C's rows C442 and C460, which pass 1 gave this wording, say phone payment is in use in markets, stores and shops in Sana'a and other cities. D105 says retailers accept electronic payment easily.
 YG-148	Whether a buyer can pay for online purchases from a phone wallet or bank app	available, coming later, or not, at the wallet or at the online store named (and which wallets the store accepts)	YQ-C039, YQ-C053, YQ-C082, YQ-C147, YQ-C150, YQ-C156, YQ-C291, YQ-C358, YQ-C431, YQ-C472, YQ-C496, YQ-C498, YQ-C520, YQ-C539, YQ-C552, YQ-C574, YQ-C578, YQ-C583, YQ-C590, YQ-D123, YQ-D147, YQ-D183, YQ-D299, YQ-D599, YQ-D613, YQ-D618, YQ-E682, YQ-E847	Joins parts C, D and E: wallets' online payment and online stores' acceptance of wallets. Also part D's rows on buyers paying online stores through a wallet or Haseb, and stores accepting them. YQ-E847 is Al-Kuraimi's post on paying in shopping apps through Hasib.
 YG-149	Whether a buyer can pay bills and fees from a phone wallet or bank app	available or not at the service named (the bills named are detail)	YQ-A012, YQ-C009, YQ-C017, YQ-C022, YQ-C023, YQ-C032, YQ-C036, YQ-C047, YQ-C052, YQ-C058, YQ-C063, YQ-C148, YQ-C154, YQ-C171, YQ-C187, YQ-C195, YQ-C210, YQ-C224, YQ-C240, YQ-C260, YQ-C278, YQ-C286, YQ-C327, YQ-C346, YQ-C407, YQ-C414, YQ-C419, YQ-C420, YQ-C421, YQ-C425, YQ-C440, YQ-C565, YQ-D573	Joins parts A, C and D, including SabaCard's bill payments (YQ-A012) and billers' acceptance of wallets (YQ-C440, YQ-C565).
 YG-150	Whether a buyer can send money to another person from a phone wallet or bank app	available or not at the service named	YQ-C003, YQ-C008, YQ-C019, YQ-C028, YQ-C046, YQ-C048, YQ-C057, YQ-C155, YQ-C167, YQ-C185, YQ-C192, YQ-C211, YQ-C221, YQ-C237, YQ-C251, YQ-C276, YQ-C285, YQ-C403, YQ-C410, YQ-C418	
@@ -214,16 +214,16 @@ YG-212	Whether a buyer gets discounts or cashback for paying by phone	the offer,
 YG-213	Whether phone payments can be made by NFC (contactless)	available to buyers or merchants, coming, or not	YQ-C043, YQ-C302, YQ-C351, YQ-C416	Joins buyers' NFC payment and merchants' NFC acceptance (YQ-C416).
 YG-214	Whether a buyer can pay for games and foreign digital subscriptions from a phone wallet	available or not, and for which services	YQ-C162, YQ-C199, YQ-C241, YQ-C261, YQ-E052, YQ-E071	Joins parts C and E.
 YG-215	Whether a buyer outside Yemen can use a Yemeni phone wallet or payment service to pay in Yemen	available or not, and on what condition	YQ-C183, YQ-C184, YQ-C232, YQ-C264, YQ-C326, YQ-C580, YQ-D615, YQ-E746	Joins parts C, D and E.
-YG-216	Whether organisations can pay salaries, aid and other bulk payments into phone wallets	available or not at the service named	YQ-C026, YQ-C029, YQ-C038, YQ-C094, YQ-C209, YQ-C256, YQ-C305, YQ-E245, YQ-E716, YQ-E880	Joins parts C and E, including part E's humanitarian cash through wallets.
+YG-216	Whether organisations can pay salaries, aid and other bulk payments into phone wallets	available or not at the service named	YQ-C026, YQ-C029, YQ-C038, YQ-C094, YQ-C209, YQ-C256, YQ-C305, YQ-E245, YQ-E675, YQ-E681, YQ-E716, YQ-E880	Joins parts C and E, including part E's humanitarian cash through wallets. E675 and E681 are part E's salaries paid through the CASH wallet.
 YG-217	Whether a buyer can move money between a phone wallet and a postal account	available or not	YQ-C280	
 YG-218	What a buyer must confirm to withdraw cash from a phone wallet	the confirmation required	YQ-C110, YQ-C166	
 YG-219	How long a network transfer takes to reach a phone wallet	the time	YQ-C182	
 YG-220	Which wallets and banks are connected to a shared bill-payment platform	the partners	YQ-C441	
 YG-221	Which goods may not be bought or sold with wallet payments	the goods barred	YQ-C124	
 YG-222	Who may provide e-money and electronic payment services	banks only (bank-led), or also licensed non-bank institutions (non-bank-led), and whether exchange companies may	YQ-B056, YQ-D089, YQ-D090, YQ-D116, YQ-D117, YQ-E113, YQ-E114, YQ-E115, YQ-E116, YQ-E151, YQ-E152, YQ-E153, YQ-E175, YQ-E189, YQ-E588, YQ-E809, YQ-F079, YQ-F088	Joins parts B, D, E and F: Circular No. 11 of 2014, the Sana'a central bank's 2020 decision, and the Aden central bank's 2022 and 2023 instructions.
-YG-223	Which authority must license e-money and e-payment services	the central bank (which seat), and whether other bodies may license	YQ-B058, YQ-C069, YQ-D050	Joins parts B, C and D.
+YG-223	Which authority must license e-money and e-payment services	the central bank (which seat), and whether other bodies may license	YQ-B058, YQ-C069, YQ-D008, YQ-D050	Joins parts B, C and D. D008 is Law No. 40 of 2006, Art. 30: the Central Bank approves electronic payment means.
 YG-224	Which providers are licensed to offer e-money services, and by which central bank	the providers licensed, and the licensing central bank	YQ-C005, YQ-C098, YQ-C152, YQ-C248, YQ-E162, YQ-E163, YQ-E186, YQ-E195, YQ-E228, YQ-E229	Joins parts C and E: providers' own statements that the Central Bank of Yemen licenses them, and sources' lists. Part C's notes say the Aden central bank's circular lists Jawali and Floosak as unlicensed (YQ-C069, in the licensing-authority condition).
-YG-225	Which regulations govern e-money and payment services	the laws, circulars and decisions in force, or that none is ratified	YQ-B051, YQ-C055, YQ-C072, YQ-C099, YQ-D288, YQ-D376, YQ-E167, YQ-E589, YQ-E687, YQ-E808, YQ-E881	Joins parts B to E.
+YG-225	Which regulations govern e-money and payment services	the laws, circulars and decisions in force, or that none is ratified	YQ-A051, YQ-A052, YQ-B051, YQ-C055, YQ-C072, YQ-C099, YQ-D288, YQ-D376, YQ-E167, YQ-E589, YQ-E687, YQ-E808, YQ-E881	Joins parts B to E. A051 and A052 are part A's Law No. 40 of 2006 among the laws a Sana'a central bank resolution rests on.
 YG-226	Whether financial consumers are protected by rules	rules in force or not	YQ-D289, YQ-D321	
 YG-227	What a payment service provider licence requires	the legal form and minimum capital	YQ-D119, YQ-F080	Joins parts D and F; both rest on the Aden central bank's instructions of September 2022.
 YG-228	What a licensed bank needs to provide payment services	the approval required	YQ-D118	
@@ -429,4 +429,134 @@ YG-427	Whether spoiled, damaged or expired goods may be sold	allowed or not, and
 YG-428	Whether prohibited or smuggled goods may be sold	allowed or not, and the penalty	YQ-B120	
 YG-429	Whether pharmacies and private facilities may sell tuberculosis drugs	allowed or not	YQ-B158	
 YG-430	Which consumer protection law is in force	the law	YQ-E505, YQ-E835	
-YG-431	Whether e-commerce has its own legal protection	specific legislation, general commercial laws, or none	YQ-E087, YQ-E120, YQ-E538, YQ-E539, YQ-E540	Sources disagree for April 2025 (YQ-E538, YQ-E539, YQ-E540).
+YG-431	Whether e-commerce has its own legal protection	specific legislation, general commercial laws, or none	YQ-E087, YQ-E120, YQ-E146, YQ-E538, YQ-E539, YQ-E540	Sources disagree for April 2025 (YQ-E538, YQ-E539, YQ-E540). E146 says rules for digital transactions and intellectual property are absent.
+YG-432	Whether taxes, fees and other government payments can be paid electronically	possible or not, through which wallets, banks or platforms, and for which payments	YQ-B054, YQ-B126, YQ-B131, YQ-B139, YQ-B145, YQ-B154, YQ-B184, YQ-C308, YQ-D111, YQ-D233, YQ-E196, YQ-E241, YQ-F132	Joins parts B to F: payment of commercial-registration fees through Mobile Money (YQ-B126, YQ-B131, YQ-B139, YQ-B145, YQ-F132), electronic tax collection, and a business wallet's government payments (YQ-C308). For the Sana'a side, YQ-E196 and YQ-E241 come from the same report and differ.
+YG-433	Whether taxpayers can use the Tax Authority's services electronically	available or not, and for which services (e-services app, refunds, returns)	YQ-B168, YQ-B179, YQ-B183	
+YG-434	General sales tax rate	the general rate, and the rates on particular items	YQ-D010, YQ-E693, YQ-E838, YQ-E855, YQ-F162	Joins parts D, E and F: the General Sales Tax Law No. 19 of 2001 as issued (part E), as amended by Law No. 42 of 2005 (parts D and E) and as consolidated to 2020 (part F). The 2001 law gives 10 percent (YQ-E855); the amended law 5 percent.
+YG-435	Services exempt from the general sales tax	the services exempt	YQ-D013, YQ-E864	Joins parts D and E: the General Sales Tax Law No. 19 of 2001 as issued (part E), as amended by Law No. 42 of 2005 (parts D and E) and as consolidated to 2020 (part F).
+YG-436	Goods exempt from the general sales tax	the goods exempt	YQ-D014, YQ-E544, YQ-E841, YQ-E863	Joins parts D and E: the General Sales Tax Law No. 19 of 2001 as issued (part E), as amended by Law No. 42 of 2005 (parts D and E) and as consolidated to 2020 (part F), and Law No. 7 of 2020 (YQ-E544).
+YG-437	Sales tax rate on exported goods and services	the rate	YQ-D015	
+YG-438	Sales tax rates on specific goods and services	the rates	YQ-D016	
+YG-439	How sales tax on imported goods and services is paid	when and by whom	YQ-D017, YQ-E860, YQ-F166	Joins parts D, E and F: the General Sales Tax Law No. 19 of 2001 as issued (part E), as amended by Law No. 42 of 2005 (parts D and E) and as consolidated to 2020 (part F).
+YG-440	Sales tax obligations of non-resident sellers	the obligation	YQ-E695	
+YG-441	Whether digital services sold to consumers in Yemen by non-residents are taxed	specific rules or none	YQ-E696	
+YG-442	Whether registered sellers may deduct input tax from the sales tax due	the rule	YQ-E862	
+YG-443	How sales tax on qat is collected	the method	YQ-D018	
+YG-444	Which goods bear the production and consumption tax instead of sales tax	the goods	YQ-E856	
+YG-445	On what value sales tax is charged	the value	YQ-B164	
+YG-446	When a seller must register for general sales tax	the sales threshold and deadline, and importers' registration	YQ-B169, YQ-D011, YQ-E694, YQ-E839, YQ-E857, YQ-F135, YQ-F163	Joins parts B, D, E and F: the General Sales Tax Law No. 19 of 2001 as issued (part E), as amended by Law No. 42 of 2005 (parts D and E) and as consolidated to 2020 (part F), the 2002 registration decision as amended (YQ-F135) and the Tax Authority's 2022 guide (YQ-B169).
+YG-447	How often and by when a seller must file a sales tax return	the period and deadline	YQ-B180, YQ-D012, YQ-E697, YQ-E859, YQ-F165	Joins parts B, D, E and F: the General Sales Tax Law No. 19 of 2001 as issued (part E), as amended by Law No. 42 of 2005 (parts D and E) and as consolidated to 2020 (part F).
+YG-448	Penalty for late payment of sales tax	the penalty	YQ-E842	
+YG-449	What sales invoice a sales-tax registered seller must issue, and what it shows	one invoice per sale, its copies, and the data it must show	YQ-B165, YQ-E698, YQ-E840, YQ-E858, YQ-F138, YQ-F142, YQ-F164	Joins parts B, E and F: the law's invoice article, the Tax Authority's decision No. 108 of 2002 and its invoices guide.
+YG-450	Whether a sales-tax registered seller must show its tax number on its documents	required or not	YQ-F137	
+YG-451	Whether a sales-tax registered seller must display its registration certificate	required or not	YQ-F136	
+YG-452	How a sales-tax registered seller must state an invoice issued in a foreign currency	the rial value and which exchange rate	YQ-F139, YQ-F143	Two texts of the Tax Authority differ: the prevailing rate (YQ-F139) and the official rate on the date of the sale (YQ-F143).
+YG-453	In what language a sales-tax invoice must be	the language	YQ-F144	
+YG-454	Whether a sales-tax registered seller may issue invoices electronically	allowed, and on what conditions	YQ-F140, YQ-F146	
+YG-455	Whether a retail seller may record cash sales on cash registers instead of issuing an invoice for each sale	allowed, and on what conditions	YQ-F141, YQ-F145	
+YG-456	What records a sales-tax registered seller must keep	the books and records, and where	YQ-B166, YQ-E861	Joins parts B and E.
+YG-457	What a seller needs to bid in government tenders	the certificate required	YQ-B167	
+YG-458	Whether a business needs a tax card to contract, trade or renew licences	required or not	YQ-B170	
+YG-459	When a business must notify the tax administration that it has started trading	the deadline	YQ-B171	
+YG-460	What a business needs to obtain a tax number	the documents and time	YQ-B172	
+YG-461	What guarantee a business must give the Tax Authority to import	the guarantee	YQ-B173	
+YG-462	When a business must notify the tax administration of a new activity or changed data	the deadline	YQ-B174	
+YG-463	Whether a small business pays profits tax	exempt or not, and which businesses	YQ-B175	
+YG-464	What suspends a business's tax number	the grounds	YQ-B176	
+YG-465	When a business can reclaim tax it paid	the conditions and time limits	YQ-B177	
+YG-466	How a business receives a tax refund	the method	YQ-B178	
+YG-467	What a small business must do to get a tax-exemption certificate	the steps and terms	YQ-B181, YQ-B182	
+YG-468	What zakat a business must pay on goods it holds for sale	the rate and base	YQ-B185	
+YG-469	What zakat certain service businesses must pay on their income	the rate and base	YQ-B186	
+YG-470	How a business must declare and pay zakat, and to whom	the declaration, the payee and who may collect	YQ-B187, YQ-B188	
+YG-471	Whether a business must pay zakat for past years	required or not	YQ-B189	
+YG-472	What a merchant gets for declaring and paying zakat	the privileges	YQ-B190	
+YG-473	What levies and extra charges businesses must pay beyond ordinary taxes	the levies, bribes, extra taxes and donations demanded	YQ-D191, YQ-D228, YQ-D555, YQ-E353, YQ-E360, YQ-E363, YQ-E506, YQ-E608, YQ-E649	Joins parts D and E, including part E's 'Taxes merchants must pay' for its rows on levies beyond the ordinary taxes, and bribes demanded of transport companies (YQ-E608).
+YG-474	How heavily taxes and fees weigh on an online store	the burden	YQ-E541	
+YG-475	Whether the authorities seize merchants' property and bank accounts	seizures reported or not, and by whom	YQ-D193, YQ-D227, YQ-D341, YQ-D473, YQ-D551, YQ-D554, YQ-E389, YQ-E507	Joins parts D and E.
+YG-476	Which authority collects customs and taxes	the authority, and whether local authorities keep revenue	YQ-A041, YQ-E482, YQ-E487, YQ-E488	Joins parts A and E.
+YG-477	Whether goods are taxed or cleared through customs more than once	once, or more than once	YQ-D198, YQ-E828	Joins parts D and E.
+YG-478	Customs duties and levies on imported goods	the duties, and whether raised	YQ-E089, YQ-E460, YQ-E463, YQ-E464, YQ-E875	
+YG-479	Whether local drug manufacturers owe sales tax on production inputs	owed or relieved	YQ-E545	
+YG-480	How importers pay their foreign suppliers in practice	through banks and letters of credit, exchange companies, or hawala and other unregulated networks	YQ-D302, YQ-D446, YQ-E249, YQ-E250, YQ-E256, YQ-E629	Joins parts D and E. D302 is a Houthi procurement network paying for imports in USDT through Tron wallets.
+YG-481	Whether foreign suppliers accept digital payment from Yemeni importers	accepted or refused	YQ-D107	
+YG-482	Who controls imports into Yemen	the coalition, or the Houthis through their ports	YQ-D203, YQ-D204, YQ-D558	
+YG-483	Who may import goods and obtain trade licences	nationals only, those loyal to the authorities, or a monopoly	YQ-D199, YQ-D200, YQ-E458, YQ-E650	Joins parts D and E.
+YG-484	Which trade agreements cover Yemen's trade	the agreements	YQ-D202	
+YG-485	Which outside trade hubs Yemeni merchants use	the hubs	YQ-D205	
+YG-486	What tolls and levies goods transport pays on the roads	the tolls, levies and checkpoint charges, or official fees, and whether they are being removed	YQ-B010, YQ-C322, YQ-E342, YQ-E348, YQ-E376, YQ-E400, YQ-E484, YQ-E486, YQ-E497, YQ-E508, YQ-E653	Joins parts B, C and E. YQ-B010 and YQ-C322 are the same undated Yemen Eco headline.
+YG-487	Whether roads between areas are open for goods transport	open, reopened, or closed	YQ-C374, YQ-C375, YQ-D173, YQ-D232	Joins parts C and D.
+YG-488	How secure road transport of goods is	disrupted by clashes, blockades or detentions, or not	YQ-E372, YQ-E403, YQ-E453, YQ-E493, YQ-E498	
+YG-489	Whether goods may move freely between governorates	free, or barred by an authority's order	YQ-B121, YQ-E499	Joins parts B and E.
+YG-490	Whether goods may be traded between areas held by different parties	traded freely, burdened with extra fees, restricted, or banned	YQ-D424, YQ-D425, YQ-E262, YQ-E627, YQ-E655	Joins parts D and E.
+YG-491	How much fuel is imported through each side's ports	the change in fuel imports	YQ-E364, YQ-E365, YQ-E414, YQ-E415, YQ-E461, YQ-E462, YQ-E471, YQ-E475	
+YG-492	Whether fuel and cooking gas are in short supply	a shortage or crisis, or not	YQ-E136, YQ-E371, YQ-E386, YQ-E401, YQ-E496	
+YG-493	Whether fuel sold is of sound quality	sound, or contaminated	YQ-E387	
+YG-494	Who supplies fuel	the companies or authorities that control fuel supply	YQ-E341, YQ-E433, YQ-E651	
+YG-495	How cooking gas prices are set, and at what level	an official or subsidized price, liberalized, or above the cap	YQ-E373, YQ-E374, YQ-E402, YQ-E431, YQ-E432	
+YG-496	How petrol and diesel prices are set, and at what level	an official or subsidized price, or liberalized	YQ-E411, YQ-E429, YQ-E430, YQ-E452, YQ-E489, YQ-E490	
+YG-497	Where buyers can buy fuel	the outlets	YQ-D532	
+YG-498	Whether imports can get through Yemen's ports	ports operating, damaged, slowed or blocked, and their capacity	YQ-D174, YQ-D399, YQ-D418, YQ-D531, YQ-E137, YQ-E331, YQ-E332, YQ-E361, YQ-E456, YQ-E457, YQ-E500	Joins parts D and E, including part E's port facilities for imports and shipping into Yemen.
+YG-499	Which ports importers use, and which are open to them	the ports used, closed or favoured	YQ-C380, YQ-E455, YQ-E483	Joins parts C and E.
+YG-500	Cost of shipping and insuring imports	the freight, insurance and surcharges, and whether rising	YQ-C455, YQ-D285, YQ-D419, YQ-E367, YQ-E466, YQ-E473, YQ-E654	Joins parts C, D and E.
+YG-501	Whether a courier offers international shipping to and from Yemen	available or not, and how long	YQ-E567	
+YG-502	How much food is imported through each side's ports	the change in food imports, and whether markets are supplied	YQ-E368, YQ-E412, YQ-E413, YQ-E465, YQ-E472, YQ-E474	
+YG-503	Whether goods are in supply in a city's markets	supplied, or a supply crisis	YQ-C376	
+YG-504	Whether merchants can get their inputs	supplied, or cut off	YQ-C456	
+YG-505	Whether vehicle gas-conversion workshops may operate	allowed or ordered closed	YQ-E375	
+YG-506	How customs duties on parcels from abroad are collected	the procedure and exemptions	YQ-C490	
+YG-507	How far payments in Yemen are made in cash	how far cash dominates payment, and alongside what	YQ-B047, YQ-D115, YQ-D307, YQ-D393, YQ-D405, YQ-E004, YQ-E093, YQ-E101, YQ-E148, YQ-E244, YQ-E406, YQ-E552, YQ-E575, YQ-E664, YQ-E708	Joins parts B, D and E. The condition is the share of payment made in cash, not whether any other means is available.
+YG-508	How widely buyers use electronic payment	how widely, and by whom, electronic payment is used or known	YQ-D082, YQ-D086, YQ-D087, YQ-D113, YQ-D212, YQ-D515, YQ-E106, YQ-E226, YQ-E804	Joins parts D and E. D082 states it as how many know how to deal electronically. Kept apart: where electronic payment means are available, what share of payments e-money carries, and phone wallets' use.
+YG-509	Whether electronic payment means are available, and where	limited, or only in cities	YQ-D049, YQ-D516	Part D.
+YG-510	What share of payments by value is made with e-money	the share	YQ-E225	Part E.
+YG-511	How widely buyers use phone wallets	how widely, by whom and for what wallets are used	YQ-E100, YQ-E166, YQ-E214, YQ-E223, YQ-E546, YQ-E762, YQ-E830	Part E. E166, E214 and E223 give the same date.
+YG-512	How many e-money accounts and wallet subscribers there are	the count, in all or at one wallet	YQ-B049, YQ-D265, YQ-D272, YQ-D375, YQ-D570, YQ-E098, YQ-E212, YQ-E213, YQ-E877	Joins parts B, D and E. D570 and E877 give Jawali's own count.
+YG-513	What share of people hold a financial or bank account	the share, and which accounts it counts	YQ-B048, YQ-D043, YQ-D088, YQ-D099, YQ-D213, YQ-D312, YQ-D365, YQ-E005, YQ-E095, YQ-E096, YQ-E149, YQ-E154, YQ-E155, YQ-E208, YQ-E283, YQ-E559, YQ-E598, YQ-E661, YQ-E767, YQ-E768, YQ-E837	Joins parts B, D and E, including part E's 'Buyers' access to bank accounts'. Kept apart: women's share (E156), the gap between men and women (D112), and counts of accounts (D273).
+YG-514	What share of women hold a financial account	the share	YQ-E156	Part E.
+YG-515	How far account holding differs between men and women	the gap	YQ-D112	Part D.
+YG-516	How many bank accounts there are	the count	YQ-D273	Part D.
+YG-517	How many active microfinance depositors there are	the count	YQ-E357	Part E.
+YG-518	What share of firms hold a bank account	the share, by kind of firm	YQ-D367, YQ-D384, YQ-D385	Part D.
+YG-519	Which financial intermediaries firms mainly use	the intermediaries and their shares	YQ-D374, YQ-D387	Part D. D374 gives formal firms' shares, D387 all firms' shares from a question allowing several answers; both give exchange companies first.
+YG-520	How businesses pay their staff	cash, cash transfer or bank	YQ-D214, YQ-E104	Joins parts D and E. D214 also says it of payments to suppliers. Salaries paid through a wallet's bulk-payment service are in the group on bulk payments into wallets.
+YG-521	How businesses pay their suppliers and wholesalers	cash, exchange-company transfer or bank, and what wholesalers prefer	YQ-D106, YQ-E103	Part E. D106 says wholesalers prefer cash.
+YG-522	Through which channel public-sector salaries are paid	cash at tellers, exchange houses or post, the e-payment system, or a named bank	YQ-D370, YQ-E197, YQ-E198, YQ-E385, YQ-E640	Joins parts D and E.
+YG-523	Whether public-sector salaries are being paid	paid, in arrears, unpaid or suspended	YQ-E242, YQ-E416, YQ-E491	Part E.
+YG-524	Where buyers pay utility bills	at post or exchange outlets, or through an e-billing platform	YQ-E224, YQ-E715	Part E.
+YG-525	Whether air tickets bought in Sana'a or Houthi-controlled areas are issued and honoured	issued and accepted or not, and through which channels	YQ-E352, YQ-E467	Part E.
+YG-526	Whether buyers hold a national identity card	how many hold one, and how hard it is to get	YQ-E221	Part E. Which documents a transaction requires is a separate group.
+YG-527	Where online buyers are	the areas	YQ-E141	Part E.
+YG-528	How far women take part in online selling and buying	how far, and where	YQ-E147	Part E.
+YG-529	Whether buyers use international payment cards	used or not	YQ-E831	Part E. Which cards banks issue is a separate group.
+YG-530	Whether public employees can pay food merchants with vouchers	a voucher system, and its exchange rate	YQ-E188	Part E.
+YG-531	Where money exchangers' services reach	the areas and groups reached	YQ-E173	Part E. Where banks' services reach is a separate group.
+YG-532	Whether goods and services are bartered	how common barter is	YQ-E578	Part E.
+YG-533	Whether households buy on credit	how many buy food or medicine on credit	YQ-D196	Part D.
+YG-534	What customer identity records transport businesses must give the authorities	the records and when	YQ-E607	Part E.
+YG-535	Whether a cybercrime law is in force	a bill awaiting approval	YQ-A007	Part A.
+YG-536	Whether electronic funds transfer is an accepted means of payment	accepted or not	YQ-D002, YQ-D095	Part D: Law No. 40 of 2006, Art. 26, from the law's text (D002) and as a report states it (D095).
+YG-537	Whether electronic records and signatures have the legal effect of written ones	the same effect, and on what conditions	YQ-D003, YQ-E174, YQ-F113	Joins parts D, E and F: Law No. 40 of 2006, Art. 10 (D003, E174), and the Aden central bank's 2023 electronic know-your-customer instructions (F113).
+YG-538	Whether an offer or acceptance may be made by electronic message	accepted or not	YQ-D004	Part D: Law No. 40 of 2006, Art. 15(a).
+YG-539	What institutions providing electronic funds transfer must do	the duties	YQ-D006	Part D: Law No. 40 of 2006, Art. 27.
+YG-540	Who may issue electronic-signature certificates or provide electronic-signature services	the entities	YQ-D009	Part D: Law No. 40 of 2006, Art. 43.
+YG-541	Whether people may deal with network and pyramid marketing companies	barred or warned against, and which companies are named	YQ-B045, YQ-B046, YQ-F153	Joins parts B and F: the central bank's warnings on QNet and similar companies.
+YG-542	How a buyer can check whether a financial or investment entity is licensed	the channel	YQ-F154	Part F.
+YG-543	Which areas a phone wallet serves	the areas	YQ-C151, YQ-C282	Part C.
+YG-544	Fare for a ride within a city	the fare	YQ-C446, YQ-C447	Part C.
+YG-545	Whether banks, exchange companies and payment providers may deal in virtual assets	barred or not, and which dealings	YQ-D286, YQ-F119	Joins parts D and F: the Aden central bank's circular No. 1 of 2026, by its title (D286) and its text (F119).
+YG-546	Whether crypto-assets are legal tender	legal tender or not	YQ-E001	Part E.
+YG-547	Whether crypto trading is used to move funds in the parallel market	used or not, and for what	YQ-D435	Part D.
+YG-548	Which crypto exchanges are available to users in Yemen	the exchanges	YQ-E002	Part E.
+YG-549	Whether crypto can be traded peer to peer in Yemeni rials	available or not	YQ-E003, YQ-E701	Part E.
+YG-550	How users in Yemen can fund crypto purchases	the funding methods	YQ-E700	Part E.
+YG-551	What share of people have internet access	the share, or how widely available the internet is	YQ-E121, YQ-E122, YQ-E236, YQ-E534, YQ-E706, YQ-E707, YQ-E821, YQ-E826	Part E. E706 and E707 come from one source on one date and disagree.
+YG-552	How reliable internet access is, and where it reaches	cuts, coverage gaps and how far service functions	YQ-D044, YQ-D101, YQ-D179, YQ-D190, YQ-D517, YQ-E351	Joins parts D and E, including part E's E351, which pass 1 gave the wording on access to the internet.
+YG-553	Mobile data speed	the download speed	YQ-E123	Part E. Fixed broadband speed is a separate group.
+YG-554	Fixed broadband speed	the download speed	YQ-E124	Part E.
+YG-555	Cost of internet access	how costly, against income or the region	YQ-D518, YQ-E125, YQ-E233, YQ-E237	Joins parts D and E.
+YG-556	Who provides internet and telecom services	the providers, and who controls them	YQ-D230, YQ-E127, YQ-E128, YQ-E745	Joins parts D and E. D231, on Starlink, is in the Starlink group.
+YG-557	Whether 4G mobile internet is available	launched or not, by which operator, and where	YQ-E129, YQ-E130, YQ-E240, YQ-E827	Part E. E129 and E240 state the same.
+YG-558	Which websites and social media can be reached	what is blocked	YQ-E131, YQ-E132	Part E.
+YG-559	Whether Starlink satellite internet may be sold and used, and is available	banned, or sold and available, and through whom	YQ-B060, YQ-B061, YQ-B062, YQ-D231, YQ-E133, YQ-E134, YQ-E349, YQ-E350, YQ-E468, YQ-E469, YQ-E818	Joins parts B, D and E, including part D's D231, which pass 1 gave the wording on who provides internet access.
+YG-560	What share of people have a mobile phone	the users, subscriptions or penetration	YQ-E097, YQ-E235, YQ-E710, YQ-E820	Part E.
+YG-561	How reliable the electricity supply is	hours of supply and outages, and how many have access	YQ-E126, YQ-E239, YQ-E340, YQ-E366, YQ-E378, YQ-E379, YQ-E397, YQ-E398, YQ-E399, YQ-E436, YQ-E451, YQ-E454, YQ-E492, YQ-E494, YQ-E495, YQ-E819	Part E.
