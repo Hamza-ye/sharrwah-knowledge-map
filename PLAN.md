@@ -366,3 +366,8 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - Only a state whose source says it holds in all of Yemen supersedes states at other places.
   - No source attests a state after the evidence was captured. A proposed state is never today and builds no case.
   - The review past 20 axes changes nothing itself: it may only return groups to step 2a, naming the rule each breaks.
+- **13 October 2026,** agents' effort by step, delegated by the founder. On Anthropic's guidance, research work loses little at `medium`, intelligence-sensitive work needs at least `high`, and failures can be re-run higher.
+  - `max`: inspections of a method; Stage 1's step 2a; the pilot's B, C and D; review F.
+  - `high`: Stage 1's step 2b, labelling states.
+  - `medium`: reading and recording evidence (phase A, A2 and similar), where the checker verifies every quote. A part whose check or review shows gaps is re-run at `high`.
+  - `low`: one-off mechanical questions.

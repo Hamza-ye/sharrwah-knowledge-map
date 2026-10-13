@@ -6,6 +6,14 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
+**Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
+- `max`: inspections, Stage 1's step 2a, and the pilot's B, C, D and F;
+- `high`: step 2b;
+- `medium`: reading and recording evidence, re-run at `high` where checks or review show gaps;
+- `low`: one-off mechanical questions.
+
+Agents started earlier keep their effort.
+
 **Stage 0, repair and freeze: done on 12 October 2026.**
 - **Gaps re-routed** by `method/q1_held_check.py` (`studies/concern-map/held-check.tsv`): 215, none closed.
   - Salla, 206:
