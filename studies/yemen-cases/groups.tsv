@@ -58,3 +58,49 @@ YG-056	Whether banks and exchange companies must screen customers against sancti
 YG-057	Yemen's standing with the FATF	on the grey list or not	YQ-E284, YQ-E517, YQ-E778	
 YG-058	Due diligence foreign financial institutions apply to Yemen	risk-based, enhanced, or transactions ceased	YQ-E518, YQ-E814	
 YG-059	Which companies parties may deal with under the Houthi authorities' own sanctions	the parties the Houthi authorities sanction	YQ-E439	
+YG-060	Whether banks must move their head offices to Aden	required or not, the deadline and the penalty, and whether the measures were withdrawn	YQ-A023, YQ-A047, YQ-C436, YQ-C437, YQ-D035, YQ-D053, YQ-D085, YQ-D207, YQ-D456, YQ-E269, YQ-E300, YQ-E319, YQ-E528, YQ-E792	Joins parts A, C, D and E: the Aden central bank's directives. Where banks' head offices actually are is a separate condition, since both hold together.
+YG-061	Where banks' head offices and operations are	in Sana'a or in Aden, and which banks have moved, decided to move or refused	YQ-C383, YQ-D001, YQ-D397, YQ-D461, YQ-D471, YQ-D488, YQ-D489, YQ-D492, YQ-D493, YQ-D533, YQ-D552, YQ-E112, YQ-E299, YQ-E305, YQ-E320, YQ-E339, YQ-E356, YQ-E526, YQ-E558, YQ-E633, YQ-E635, YQ-E747, YQ-E801	Joins parts C, D and E, including part D's 'where financial institutions are based' (YQ-D397), which part D kept apart.
+YG-062	Whether banks' branches are open to customers	open and serving as usual, closed or ordered to cease by an authority, reopened, or closed by the bank, for the banks named	YQ-C371, YQ-C373, YQ-C394, YQ-C395, YQ-E311, YQ-E444, YQ-E501, YQ-E502	Joins parts C and E.
+YG-063	How many branches a bank has, and where	the number of branches and agents and the cities named	YQ-C397, YQ-D608, YQ-E638	Joins parts C, D and E. YQ-C397 is the page of the bank its footer names Kuraimi Islamic Bank (kibanks.com); YQ-D608 and YQ-E638 name Kuraimi Bank and Al-Kuraimi.
+YG-064	Bank branch opening hours	the hours	YQ-C398	
+YG-065	What it took a bank to reopen branches the authorities closed	what was paid or agreed	YQ-C396	
+YG-066	Where formal banking services are available	concentrated in cities or reaching rural areas, the main centres, and how dense branches and service points are	YQ-D310, YQ-D335, YQ-D398, YQ-D499, YQ-D519, YQ-E094, YQ-E108, YQ-E150, YQ-E157	Joins parts D and E.
+YG-067	Businesses' access to a functioning bank branch	the share of firms with access	YQ-E105	
+YG-068	How many banks operate	the number and kinds of banks	YQ-D338, YQ-E169, YQ-E771	Joins parts D and E.
+YG-069	Whether depositors can draw their bank deposits	free to draw, frozen (for deposits made before the split or at a named bank), partly repaid, or banks unable to pay	YQ-A037, YQ-B150, YQ-D024, YQ-D313, YQ-D315, YQ-D329, YQ-D330, YQ-D541, YQ-E161, YQ-E243, YQ-E286, YQ-E338, YQ-E591, YQ-E760, YQ-E894	Joins parts A, B, D and E. YQ-A037 and YQ-E894 report the same article.
+YG-070	How much cash a bank customer can withdraw a day	the daily ceiling, or that withdrawals are restricted	YQ-C449, YQ-C463, YQ-D019, YQ-D394, YQ-E470	Joins parts C, D and E. Kept apart from frozen deposits: a daily ceiling on new withdrawals holds together with frozen old deposits.
+YG-071	Whether depositors are rushing to withdraw from banks	a rush of withdrawals, or not	YQ-D442, YQ-E355, YQ-E781	Joins parts D and E.
+YG-072	Where merchants and households keep their savings	in banks, with exchange companies, or in gold	YQ-A038, YQ-D025, YQ-D325	Joins parts A and D.
+YG-073	Whether banks can draw their balances at the central bank	free or restricted	YQ-D440	
+YG-074	Whether banks can pay the salaries of organisations and companies they serve	able or unable	YQ-A042, YQ-E896	Joins parts A and E; both report the same article.
+YG-075	Whether interest-bearing transactions are allowed	allowed, or banned by law (and from when, and how far applied)	YQ-B063, YQ-B157, YQ-D208, YQ-D318, YQ-D340, YQ-E294, YQ-E337, YQ-E417, YQ-E450, YQ-E802	Joins parts B, D and E. Sources date the Sana'a side's law to 2022 (YQ-E802) and 2023; YQ-B063 reports the bill's passage by the House of Representatives in Sana'a.
+YG-076	Whether banks can reach SWIFT	connected, cut off or non-functional, for the central bank or the banks named	YQ-D345, YQ-D472, YQ-D534, YQ-D550, YQ-E110, YQ-E178, YQ-E179, YQ-E254, YQ-E255, YQ-E257, YQ-E281, YQ-E302, YQ-E449, YQ-E529, YQ-E779, YQ-E780	Joins parts D and E.
+YG-077	Whether bank accounts in Yemen use IBAN	in use, or not	YQ-E688	
+YG-078	Whether the central bank takes part in the Buna regional payment platform	joined, or refuses	YQ-E597, YQ-E788, YQ-E789	YQ-E597 also says IBAN was activated.
+YG-079	Whether Yemeni banks have correspondent banking relationships	kept, limited, or severed, and with whom	YQ-D346, YQ-D396, YQ-D437, YQ-E246, YQ-E285, YQ-E313, YQ-E594, YQ-E662, YQ-E763, YQ-E812, YQ-E813	Joins parts D and E.
+YG-080	What banks must do to keep access to international payments	the requirement (SWIFT Scope, proof of relocation to Aden, compliance with the Aden central bank)	YQ-D331, YQ-D457, YQ-D490, YQ-E272	Joins parts D and E. YQ-D490 dates the US designation of the Houthis to 3 March 2025.
+YG-081	Which banks a central bank treats as compliant	the lists each central bank issues	YQ-E273	
+YG-082	Which central bank's licence and rules banks are subject to	the Sana'a central bank's, the Aden central bank's, or both	YQ-A002, YQ-A044, YQ-C071, YQ-D309, YQ-D319, YQ-D320	Joins parts A, C and D.
+YG-083	Which central bank banks must report their data to	the Aden central bank, or barred from reporting to it	YQ-E303, YQ-E304, YQ-E308, YQ-E309, YQ-E310	
+YG-084	Minimum capital a commercial bank must hold	the amount	YQ-D455, YQ-E192	Joins parts D and E.
+YG-085	Minimum capital a microfinance bank must hold	the amount	YQ-D453	
+YG-086	Whether exchange and microfinance activities may be combined	allowed or prohibited	YQ-D454	
+YG-087	How much a microfinance bank may lend to one borrower	the ceiling	YQ-D383	
+YG-088	Whether banks and money exchangers must have audited financial statements	required or not	YQ-D326	
+YG-089	Who sets interest rates on deposits	who sets them	YQ-D291	
+YG-090	Whether nonbank lenders are regulated	regulated or not	YQ-D311	
+YG-091	Which laws govern banking and money exchange	the laws	YQ-D322	
+YG-092	Whether buyers can use the apps of banks that moved their head offices to Aden	usable, or blocked	YQ-C385, YQ-C386	The same article gives both accounts.
+YG-093	Whether a merchant can send and receive international commercial transfers through a bank	available or not	YQ-C399	
+YG-094	Whether a business can run its bank account through electronic services	available or not	YQ-C427	
+YG-095	Whether banks run one system across the government-held and Houthi-held areas	one system, or separate systems for each area	YQ-C452, YQ-C465	
+YG-096	Who performs banking tasks	banks, or exchange companies	YQ-D210, YQ-D317	
+YG-097	What services banks mainly offer	the services	YQ-D336	
+YG-098	Whether firms can get bank credit	available or scarce, and on what terms	YQ-D337, YQ-D366, YQ-D395, YQ-D610	
+YG-099	What collateral lenders require	the collateral	YQ-D386, YQ-D611	
+YG-100	Cost of bank credit	the lending rate	YQ-D369	
+YG-101	Cost of microfinance credit	the interest rate	YQ-D382	
+YG-102	Whether lenders can check borrowers' credit history	the depth of credit information	YQ-D368	
+YG-103	Whether SME loans can be guaranteed	whether a guarantee scheme operates	YQ-D373	
+YG-104	What a business needs to open a bank account	the documents	YQ-D612	
+YG-105	Whether one may buy assets seized from banks	valid, or invalid and sanctionable	YQ-E388, YQ-E503	

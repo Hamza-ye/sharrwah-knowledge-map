@@ -30,3 +30,5 @@ merchant balance			S01-SA-C012
 أرباحك			S01-SA-C023
 عمليات الدفع والسداد	Payment and settlement operations		S01-SA-C184;S01-SA-C185
 الحساب البنكي لاستلام المدفوعات	Bank Account for Payment Settlements		S01-SA-C188;S01-SA-C189
+لحساب المتجر	for the store's account		S01-SA-C276;S01-SA-C277
+الطرف الذي حُصّل المبلغ لحسابه	the party the payment was collected for		S01-SA-C278;S01-SA-C279

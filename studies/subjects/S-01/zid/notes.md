@@ -52,3 +52,22 @@ Problems:
 - This repository is not a git checkout here, so held paths are cited as `sharrwah-knowledge-map:<path>` without a commit.
 - S01-ZD-147 is cited from the held raw HTML of https://help.zid.sa/category/zid-pay/; the category page shows no date, so its source_date is the capture date.
 - The step list on https://help.zid.sa/zid-pos-app/ (S01-ZD-146) appears twice in the raw HTML; one copy lies inside an HTML comment.
+
+## Absence audit
+
+Phase A3, 2026-10-13, brief `briefs/A3-absence-audit.md` (with the two additions sent during the run: record anything else the documents read state on the subject, and the result `partly contradicted`). Repository at `a920665d3307544df27207fd40905340d9eaadfe` when the run started; held files are cited at that commit. Rows are in `absence-audit.tsv`.
+
+What was found:
+- 23 claims audited: the 4 absences (N01 to N04) and the 19 gaps (G01 to G19; none is of kind `page not read`). All 23 are `confirmed`; none is contradicted or partly contradicted. No held document names Zid Pay's payment service provider or its licence, the bank or holder behind the wallet IBAN, the account or licence under which Zid holds COD amounts, the Mazeed gateway, who settles SurePay payments, who holds funds for Paymob, amwal pay or Tap, when the instalment providers pay, the Kuwait period (still x يوم), who holds Amazon proceeds, or any lien, رهن or set-off right; none offers Zid Pay, الاستقطاع للمحفظة or تمويل زد outside the lists in N01 to N04.
+- Recorded under the added rule: S01-ZD-148 (store-language: مدفوعات زد متاحة لتجار السعودية و الكويت, and the buyer pays in the store's base currency), S01-ZD-149 (Egypt page, Starter plan: Basic payment methods (bank transfer, cash on delivery)), S01-ZD-150 (wallet withdrawal limit, fees, 2 to 5 working days, and amounts that cannot be withdrawn), with citations S01-ZD-C368 to S01-ZD-C377. S01-ZD-150 was added to the `conditions` of S01-ZD-121 and S01-ZD-122.
+- Not recorded, because phase A's rule 12 stops recording past 150 statements and the folder now holds 150: the wallet page's note that تجار دول الخليج must zero the wallet before moving a store between countries; the Zid Pay terms' يجوز لزد باي ومزودو الخدمة باقتطاع رسوم رمزية على إجمالي العملية; activate-mazeed's ويتم إضافة اسم البنك ، اسم المستفيد، ورقم الايبان لتحويل المستحقات المالية; the plan data's الدفع بالتقسيط / Installment Payments line (launch, growth, pro; not starter); and the Trendyol FAQ's two lines on commission deducted from deposits (الإيداعات ستتضمن المبالغ بعد استقطاع العمولة, and commission on returned orders returned in the next deposit). All are in held files named in the rows' `read`.
+
+Searches too broad to read in full, and how they were narrowed:
+- Words that sit in every help page's menu (زد باي, تمويل زد, زد كاشير, نقاط البيع, زد لوجيستك, منصات البيع, مزيد) and words that are parts of other words (مدفوع in مدفوعات, إمكان in بإمكانك, COD in code, tap, lien in clients, offset in CSS, SAMA in osama) matched 78 to 174 documents. Each listing was narrowed to the documents that matched a more specific word of the same search (named in each row's note), to paragraphs naming both the arrangement and a country, or to the article text between آخر تحديث and the page footer.
+- The docs.zid.sa order and coupon schemas match many names (Moyasar, Tabby, SurePay, Mazeed) only as code values; one copy (list-of-orders) was read for those lists.
+
+Problems with the method:
+- `corpus_search.py` does not search the zid.sa pages: their `text.txt` holds only the site's error message, so the Terms, the Zid Pay terms, the privacy policies, the payments, Paymob and Egypt pages and the shipping terms never match (for example مبلغ احتياطي returns no document). Their raw HTML was searched and read with a scratch script that strips tags, so those searches are not in the `searches` column; each row's note says so.
+- The brief's rule 12 (150 statements) and the added rule conflict here: the folder held 147 statements before this phase, so only three could be added. The rest are listed above.
+- The Zid Pay category page (held) lists an article المنتجات الرقمية و إيداع المبالغ that is not held and that no brief points to; it was not read.
+- HEAD moved from a920665 to a041738 during the run (a change to STATE.md only); citations use a920665 as instructed.

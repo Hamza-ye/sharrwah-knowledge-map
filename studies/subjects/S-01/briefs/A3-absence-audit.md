@@ -6,7 +6,7 @@ This is `PLAN.md` Stage 2, the pilot. It runs after phase A2 and before B's seco
 
 **Read only:**
 - this brief;
-- `briefs/A-one-platform.md`, whose inputs and rules you follow for anything you record;
+- `briefs/A-one-platform.md`, whose inputs and rules you follow for anything you record. Its cap of 150 statements counts only the statements you add;
 - your platform's files in `studies/subjects/S-01/<platform>/`;
 - `studies/subjects/S-01/variation-points.tsv`;
 - the held and live sources you are pointed to below.

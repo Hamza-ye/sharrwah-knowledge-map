@@ -9,7 +9,7 @@
 #   (every TERM with --all). At most N documents per corpus are listed (default 40).
 import csv, glob, json, os, re, subprocess, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from quote_check import norm, HARAKAT
+from quote_check import norm, HARAKAT, html_text
 
 csv.field_size_limit(10**9)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -81,11 +81,16 @@ def documents(platform):
                 host = host[4:] if host.startswith("www.") else host
                 if not re.search(HOSTS[platform], host) or not r.get("text_file"):
                     continue
-                tp = os.path.join(run, r["dir"], r["text_file"])
+                d = os.path.join(run, r["dir"])
+                tp = os.path.join(d, r["text_file"])
                 if os.path.isfile(tp):
+                    # The visible text, and the raw page's text too: some sites keep their content only in the
+                    # raw HTML, and render an error or an empty shell (zid.sa, for one).
+                    text = open(tp, encoding="utf-8", errors="replace").read()
+                    for raw in sorted(glob.glob(os.path.join(d, "raw*.html"))):
+                        text += "\n" + html_text(open(raw, encoding="utf-8", errors="replace").read())
                     rel = os.path.relpath(tp, SKM)
-                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel}", r["url"], "",
-                           open(tp, encoding="utf-8", errors="replace").read())
+                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it)", r["url"], "", text)
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
