@@ -1,0 +1,21 @@
+{
+ "n": 4,
+ "url": "https://stripe.com/jp/legal/smcc",
+ "dir": "items/004-stripe.com",
+ "fetched_at": "2026-10-13T00:35:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://stripe.com/jp/legal/smcc",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 21431,
+ "cited_in": [
+  "S01-WC-C216",
+  "S01-WC-C217",
+  "S01-WC-C218",
+  "S01-WC-C219"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f69f113905ad5e3a3076b9bbdab2db2e53a6670d4999868ed1a05f73f92a91d0",
+ "raw_ext": "html"
+}

@@ -55,6 +55,7 @@ HEAD = {
     "gaps.tsv": ["gap_id", "bullet", "what_is_missing", "read", "gap_kind", "who_can", "route"],
     "citations.tsv": ["cite_id", "source", "locator", "quote", "source_date", "date_basis", "accessed", "access_path"],
     "a2.tsv": ["vp_id", "stmt_ids", "gap_ids", "absence_ids", "read"],
+    "absence-audit.tsv": ["claim_id", "searches", "read", "result", "stmt_ids", "note"],
     "variation-points.tsv": ["vp_id", "bullet", "question", "x_words", "raised_by", "note"],
     "variants.tsv": ["variant_id", "vp_id", "platform", "variant", "stmt_ids", "basis", "basis_evidence", "kind", "scope",
                      "gap_ids", "absence_ids", "note"],
@@ -233,6 +234,42 @@ for plat, code in PLATFORMS.items():
             err(f, cid, f"quote {res}{'; ' + why if why else ''}",
                 "pending capture" if res == "unresolved" and re.match(r"^https?://", src) else "error")
         quotes.append((cid, res, why, share, src, c["quote"][:200]))
+# ---------- phase A3: every claim of absence is audited by an agent that didn't make it ----------
+for plat in PLATFORMS:
+    d = os.path.join(subj, plat)
+    if not os.path.isdir(d):
+        continue
+    audit = read(os.path.join(d, "absence-audit.tsv"), "absence-audit.tsv")
+    claims = [g for g, r in gaps.items() if r["platform"] == plat and r["gap_kind"] != "page not read"] + \
+             [a for a, r in absences.items() if r["platform"] == plat]
+    f = f"{plat}/absence-audit.tsv"
+    if audit is None:
+        if claims:
+            err(f, "", f"{len(claims)} claims of absence not yet audited (phase A3)", "review")
+        continue
+    done = {}
+    for r in audit:
+        done[r["claim_id"]] = r
+        if r["claim_id"] not in gaps and r["claim_id"] not in absences:
+            err(f, r["claim_id"], "not a gap or absence of this platform")
+        if "corpus_search.py" not in r["searches"]:
+            err(f, r["claim_id"], "searches lists the corpus_search.py commands run")
+        if not r["read"]:
+            err(f, r["claim_id"], "read is empty: list each document read")
+        if r["result"] not in ("confirmed", "contradicted"):
+            err(f, r["claim_id"], f"result '{r['result']}' is not confirmed or contradicted")
+        if r["result"] == "contradicted":
+            if not ids(r["stmt_ids"]) and r["claim_id"] not in absences:
+                err(f, r["claim_id"], "a contradicted gap names the statements that state it")
+            for x in ids(r["stmt_ids"]):
+                if stmts.get(x, {}).get("platform") != plat:
+                    err(f, r["claim_id"], f"{x} is not one of {plat}'s statements")
+    for c in claims:
+        if c not in done:
+            g = gaps.get(c, {})
+            if not (g.get("gap_kind") == "searched, not found" and "corpus_search.py" in g.get("read", "")):
+                err(f, c, "a claim of absence that the audit doesn't settle")
+
 for sid, r in stmts.items():
     if "e" in r["bullets"]:
         cs = [] if r["conditions"] == "none stated" else ids(r["conditions"])

@@ -1,0 +1,18 @@
+{
+ "n": 15,
+ "url": "https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US",
+ "dir": "items/015-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T00:35:35Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190824,
+ "cited_in": [
+  "bigcommerce gap route"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3154d1ed5d99668394844cc981fee7098f1ccc4d28616939285d2630ae3e0473",
+ "raw_ext": "html"
+}

@@ -280,6 +280,9 @@ S01-SA-133	stated	structures/salla/com-policies holds https://salla.com/marketin
 S01-SA-134	observed	structures/salla/dashboard-translations is built from a recorded session
 S01-SA-135	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-SA-136	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-137	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-138	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-139	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-SA-N01	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-WC-001	official page	the address is a terms, policy, legal or pricing page
 S01-WC-002	official page	the address is a terms, policy, legal or pricing page

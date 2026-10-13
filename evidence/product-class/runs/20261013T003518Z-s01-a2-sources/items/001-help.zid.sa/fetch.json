@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://help.zid.sa/zid-pos-app/",
+ "dir": "items/001-help.zid.sa",
+ "fetched_at": "2026-10-13T00:35:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/zid-pos-app/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26719,
+ "cited_in": [
+  "S01-ZD-C366"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2df462f258576f54214e10c505cbfb27ab2d6fef95a86b04423bfadcdeaf4f93",
+ "raw_ext": "html"
+}

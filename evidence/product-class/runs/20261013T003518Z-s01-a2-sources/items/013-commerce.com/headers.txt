@@ -1,0 +1,151 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:33 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::5jw2v-1791851733503-a327f281a6f5
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%229eb57a42-e357-4efa-81a7-235c6b5e0369%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Wed, 13 Oct 2027 00:35:33 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Wed, 13 Oct 2027 00:35:33 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=y73sln.shsyI3NTTzhzhFwwysVNmOhIkRzH.sn3Hitw-1791851733.4836292-1.0.1.1-AYYUwhyBboZ5d2z4om1oN29ZZ.PRYBDjorytlhWscM80Y15nEA5m5wGxW5D7q7LfWjC1BaHdCw1s9B7PXYW9oXPPFuY3pCRPtBVEOqeNO_WybneDE.QU.Rf71yBsOKWp; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:33 GMT
+cf-ray: a49a43d64c08c95b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:33 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::5jw2v-1791851733763-f6be93ba544f
+cf-cache-status: DYNAMIC
+set-cookie: NEXT_LOCALE=en-US; Path=/
+set-cookie: __cf_bm=GpUgm7nMSNHfSUHO5RmTZ6ExP324v7cMVMd75aS1fQE-1791851733.7321231-1.0.1.1-lsVc79wQkP_b4MQP3EhZuaepFiPwsDuDUTprgeFwh7SEKRChdwwjVUafDyClHtdnxfMcKKYK2Ry9JfpCRyktM7EyOxKUG.Nqi2BeM0pxPu1lZR8HpOP5VtIf8..4bUWd; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:33 GMT
+cf-ray: a49a43d7d816c95b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:34 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::kbg5m-1791851733833-3fd722247b8c
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%220dd7625b-6396-4f9b-b01e-8488d55757d2%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Wed, 13 Oct 2027 00:35:33 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Wed, 13 Oct 2027 00:35:33 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=6Tb.GSRzJxvf2bopVVNkuEgC3LGU__deCwJ8y__Rcm4-1791851733.827822-1.0.1.1-I5chSo46wkZIohlXGIZ6JBrfB_xE14fN9Z34_ES9LAG8gSPDttPABKLINNQtD8YZCmUqZ0zba7975hleSe0tvmg.VXH08D7B3iM6azg50WETSEERhmxdruIrP4jTgKLY; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:34 GMT
+cf-ray: a49a43d8698ec95b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:34 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::5zn5q-1791851734094-c39a409cd07b
+cf-cache-status: DYNAMIC
+set-cookie: NEXT_LOCALE=en-US; Path=/
+set-cookie: __cf_bm=DKwonCWGQAcUQzDWIhtpXVpTQTMqpU5yRinylWyCcvU-1791851734.0820975-1.0.1.1-31N53HhQ.673ElvBBzjWz_tJZzHPeU1XKEzpkc5KQY9DE48IJeely.iE5ScJKokF3P77eML4FnzV0vY0mAAGY.1m_GvkMEw5vy.lbmXfOiKwT1ryK3D1jqeS4IF4kBMW; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:34 GMT
+cf-ray: a49a43da0d71c95b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:34 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::dmzsg-1791851734174-a4d67f667f97
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%2283fc5bcb-1ed8-4b51-8254-6a3bb199a398%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Wed, 13 Oct 2027 00:35:34 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Wed, 13 Oct 2027 00:35:34 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=QJi7QjbxuWBL2wHlrcYGU0gFVs1UXF4SOgv8ZgShS.Q-1791851734.1601348-1.0.1.1-dn0JJ3iGw.IzRSfrdH5MByKb9ju52NueRdYqsvBR5ZLyrTSFXOalU2WFwnUF7lY2d92TB.SuZziKu8CArK6CVVR23UesZESqNH5djsxcL53xC9SYFYG2DN3fD5kgChpH; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:34 GMT
+cf-ray: a49a43da7ed1c95b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:34 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::pwp5j-1791851734397-0ebae023ade4
+cf-cache-status: DYNAMIC
+set-cookie: NEXT_LOCALE=en-US; Path=/
+set-cookie: __cf_bm=4Kbswcm4pVgX.JyZ8zm9raJQSsdu0h6AGDdffIOfIvQ-1791851734.3898263-1.0.1.1-9p12FuIAfJFchvx72mhuw3HT74IfZW1CwtUlUYWOg6Xc6QlqcTS59vwpN660EhdvQbPVahioK_OnWvm2WYyNUvZ22aZrkq.J4cnisU2tU6avqVbWGrcYYuF4M.vA9bV0; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:34 GMT
+cf-ray: a49a43dbea8ac95b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:34 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::58cpj-1791851734489-53073d9e68f1
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%229a859886-f3d0-45a3-b4a7-71425eb91bc8%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Wed, 13 Oct 2027 00:35:34 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Wed, 13 Oct 2027 00:35:34 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=6_EsrMtZdrcXxMjwwUCMYbX47GZT9FiYmhPUdasGwdE-1791851734.4859087-1.0.1.1-jFfxEufgPAjvj_cZwfO7Dv2vATzefw8bJ6fXpQQ6KssfmydHwS8P2nDbrPN1w3UdKUT.BGyhrtjoTBXtIddWpZXBNth4kniYMisVs4XGyfbEoQlfEatmahWakAxxTCBM; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:34 GMT
+cf-ray: a49a43dc8c31c95b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:34 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::slw62-1791851734791-063dc8bc456b
+cf-cache-status: DYNAMIC
+set-cookie: NEXT_LOCALE=en-US; Path=/
+set-cookie: __cf_bm=4MaWP8ky7CqDrDUd6JkjXcDhixy8Xv8rn57NKpDaV40-1791851734.7831419-1.0.1.1-sGPi6LEPARKsZd.JN4ZAS_6XkZVXOLIkUWE1k2kiWRkuT19zf.bjdRuqpyQxemAIWq9sfbgx72LnI7MaRQuGS2Ch5JGRCWmiD5k1RerEx6whEsl1Pr0xeYA6DQrD8mSk; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:34 GMT
+cf-ray: a49a43de68d9c95b-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Tue, 13 Oct 2026 00:35:35 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::5jw2v-1791851734874-1157521c2708
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%22b8804efd-4d34-4e19-bf22-7d7217080f5d%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Wed, 13 Oct 2027 00:35:35 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Wed, 13 Oct 2027 00:35:35 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=5yOFNfDvc9ye9xa4xQywxUvfBs.IPNM7SMnvbX4254Q-1791851734.8711376-1.0.1.1-CpAU6VvrZGpjebiYbMAsN2TiPnZDFK9Q63.6TeT10c7CfwOwn5SU2sr3V5XUxRXJSqYFcDnTMpUJ0dxCfELCJbYS4_0uTPuws9D7Do_HF_ATbMQkd7inD4LFSSHeXXev; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Tue, 13 Oct 2026 01:05:35 GMT
+cf-ray: a49a43deea46c95b-IAD
+alt-svc: h3=":443"; ma=86400
+

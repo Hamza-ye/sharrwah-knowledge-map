@@ -92,7 +92,11 @@ Its statements were already checked verbatim against their sources, and its gaps
    - `gap_kind`, as Q1 defines them:
      - `page not read`: a named page or file that would likely state it hasn't been read yet;
      - `observation needed`: a journey, a store on a plan, a page saved from a browser, or a question to the platform would show it;
-     - `searched, not found`: the likely pages and structures were read, as `read` lists, and none states it. An index or a sitemap doesn't count as reading the pages it lists. A held collection of the platform's pages that you didn't search rules this kind out.
+     - `searched, not found`: the likely pages and structures were read, as `read` lists, and none states it. An index or a sitemap doesn't count as reading the pages it lists. A held collection of the platform's pages that you didn't search rules this kind out. Before recording one, run `python3 -I method/corpus_search.py <platform> <terms>`:
+       - with your platform's own words for what is missing, in every language it uses;
+       - with each country, plan or arrangement your statements name.
+
+       Read each listed document that could state it, and give the commands and the documents in `read`.
      - `stated only in general terms`: the terms speak only of the platform's services in general.
    - `who_can`: `agent`, `founder` or `either`.
    - Before you give a gap `founder` or `either`, run `method/held_index.py` on each address in its route. If the page is held and readable, read it instead.

@@ -56,7 +56,7 @@ Statements under (e) are conditions, not variants. Phase D reads them.
 
 ## Second pass, after phase A2
 
-When the coordinator says phase A2 is done, read each platform's `a2.tsv` and revisit every row that was `gap` or `not covered`, and each arrangement A2 was given. Recheck, under rule 4 as it now reads, any row you compared with a statement of its own platform. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`.
+When the coordinator says phases A2 and A3 are done, read each platform's `a2.tsv` and `absence-audit.tsv`. Revisit every row that was `gap`, `absent` or `not covered`, and each arrangement A2 was given. Recheck, under rule 4 as it now reads, any row you compared with a statement of its own platform. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`.
 - replace it with variants from the statements A2 added, under the rules above;
 - or make it `absent`, with A2's `absence_ids`;
 - or keep it as `gap`, with A2's `gap_ids`.

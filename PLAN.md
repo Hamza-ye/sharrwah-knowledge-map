@@ -371,3 +371,7 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - `high`: Stage 1's step 2b, labelling states.
   - `medium`: reading and recording evidence (phase A, A2 and similar), where the checker verifies every quote. A part whose check or review shows gaps is re-run at `high`.
   - `low`: one-off mechanical questions.
+- **13 October 2026,** claims of absence, after the founder found held Salla articles on settlement in Kuwait and the UAE that phase A and A2 had recorded as missing:
+  - A new pilot step, A3, has an agent that made none of the claims audit every gap and absence.
+  - A "searched, not found" must show the corpus search behind it: `method/corpus_search.py`, run in every language the platform uses, and by each country, plan and arrangement it names.
+  - The checker enforces both.

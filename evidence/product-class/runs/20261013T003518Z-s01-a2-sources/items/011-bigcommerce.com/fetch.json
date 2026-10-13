@@ -1,0 +1,19 @@
+{
+ "n": 11,
+ "url": "https://www.bigcommerce.com/payments/embedded-payment-providers/",
+ "dir": "items/011-bigcommerce.com",
+ "fetched_at": "2026-10-13T00:35:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/payments/embedded-payment-providers/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 44467,
+ "cited_in": [
+  "S01-BC-C061",
+  "S01-BC-C062"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c53cfd5178bd4adaca3e4a1add91bd532f71d32ce88e4a3c2d38d85f868eb68f",
+ "raw_ext": "html"
+}

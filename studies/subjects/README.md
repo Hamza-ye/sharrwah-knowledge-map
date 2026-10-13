@@ -12,7 +12,8 @@ Each step has a brief in `<subject>/briefs/`. A separate agent inspects every br
 | Capture and kinds | none | the coordinator | captures the cited URLs with `method/capture/run.sh`; the checker writes `kinds.tsv` |
 | 1B. Variation points and variants | `B-variation-points.md` | one agent | `variation-points.tsv`, `variants.tsv`, `notes-b.md` |
 | 1A2. Gap-closing on the variation points | `A2-close-gaps.md` | one agent per platform | `<platform>/a2.tsv`, with additions to the phase A files |
-| Capture and kinds, again | none | the coordinator | captures the URLs A2 cites; the checker rewrites `kinds.tsv` |
+| 1A3. Absence audit | `A3-absence-audit.md` | one agent per platform, none of whom made the claims | `<platform>/absence-audit.tsv`, with any statements it finds |
+| Capture and kinds, again | none | the coordinator | captures the URLs A2 and A3 cite; the checker rewrites `kinds.tsv` |
 | 1B, second pass | `B-variation-points.md` | the same agent as 1B | updates `variants.tsv` |
 | 1C. Cause, coexistence, what follows | `C-analysis.md` | one agent | `analysis.tsv`, `notes-c.md` |
 | 2. The subject in each Yemen case | `D-yemen-marks.md` | one agent | `bears-on.tsv`, `yemen-marks.tsv`, `notes-d.md` |

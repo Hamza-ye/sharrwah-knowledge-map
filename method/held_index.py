@@ -134,6 +134,9 @@ class Held:
             for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
                 status = r.get("http_browser") or r.get("http_raw") or ""
                 ok = r.get("result") == "captured" and bool(r.get("text_file") or r.get("primary_file"))
+                if ok and r.get("text_file"):     # a capture whose text came out empty is held but not readable
+                    tp = os.path.join(run, r.get("dir", ""), r["text_file"])
+                    ok = os.path.isfile(tp) and bool(open(tp, encoding="utf-8", errors="replace").read(4096).strip())
                 h = {"repo": "sharrwah-knowledge-map", "commit": "", "kind": "capture", "status": status, "redirect": "",
                      "location": f"{rel}/{r.get('dir', '')}/{r.get('text_file') or r.get('primary_file')}",
                      "readable": ok and status.startswith("2")}

@@ -1,0 +1,23 @@
+{
+ "n": 13,
+ "url": "https://www.commerce.com/press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/",
+ "dir": "items/013-commerce.com",
+ "fetched_at": "2026-10-13T00:35:32Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/press/commerce-delivers-bigcommerce-payments-by-paypal-to-simplify-payments-and-accelerate-merchant-growth/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "S01-BC-C055",
+  "S01-BC-C056",
+  "S01-BC-C057",
+  "S01-BC-C058",
+  "S01-BC-C059",
+  "S01-BC-C060"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}
