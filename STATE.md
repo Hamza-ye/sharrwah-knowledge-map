@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 08:13 UTC.
+**Updated:** 17 October 2026, 08:27 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -87,7 +87,11 @@ Agents started earlier keep their effort.
 - **Next:**
   - step 2c grouped the places step 2b added; the join and build stop for review at 253 axes, 28 with a disputed part (commit `40a11e7`);
   - **the first axes review returned 128 of 253 groups to step 2a** (142 returns: rule 2 96, rule 1 19, rule 4 14, the label rule 11, rule 5 2). It is recorded in `review-axes.md`, with the drafts in `review/`. Most states add up rather than replace each other, so today dropped facts that still hold, such as earlier bans and designations. Two rulings from rule 2 are in the brief and `PLAN.md` section 11;
-  - step 2a's fix round (running), then the join, the build, and a second review of the changed groups;
+  - **step 2a's fix round is done** (commit `71ab056`). 86 groups split into 167 new conditions (YG-562 to 728), and 157 labels and 25 places changed. The returns it didn't follow are reasoned in `notes.md`.
+    - Now 728 groups, 241 axes and 487 constants. Disputed parts of today fall from 34 to 11.
+    - Checked clean. `axes.tsv` has sha256 `0b7ef7ad…03aa`.
+    - A trial build past the review gives 379 cases: today's, 27 `in force` and 351 `occurred`. Most change one axis.
+  - **the second review is running** on the 116 axes that rest on returned groups, by the two first reviewers (71 and 45). If it returns nothing that breaks a rule, `review-axes.md` names this `axes.tsv` in full and the build writes the cases;
   - the review stop if past 20 axes (`review-axes.md`), then cases;
   - step 2c, the checker, an independent review, and a comparison with Q2's example axes.
 
@@ -199,8 +203,10 @@ Agents started earlier keep their effort.
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
 - **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
 - **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
-- **Stage 1 step 2a, the fix round for the 128 returned groups:** agent `a4a6021a9605c1efe` (`max`). It edits `groups.tsv`, `places.tsv`, and the returned rows in `pass2/states-<k>.tsv`. It is resumed later for `unknowns.tsv`.
-- **The axes reviewers,** done, can be resumed for the second review: YA-01 to YA-126 `ac1ab6f9db5c9443e`; YA-127 to YA-253 `a9826e37d14145ed2`.
+- **Stage 1, the second axes review,** both at `max`, writing `returns-<k>b.tsv` and a "Second review" section in `review-notes-<k>.md`, in the scratchpad's `y-review/`:
+  - the 71 changed axes from YG-001 to 223: agent `ac1ab6f9db5c9443e`;
+  - the 45 from YG-224 to 561: agent `a9826e37d14145ed2`.
+- **Stage 1 step 2a's agent,** `a4a6021a9605c1efe`, is done with the fix round. It is resumed for any second returns, then for `unknowns.tsv`.
 - **Stage 1 step 2b's agents,** done. They can be resumed for their ranges: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
