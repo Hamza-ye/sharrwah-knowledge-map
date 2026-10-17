@@ -391,3 +391,8 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - a faithfulness pass over every axis.
 
   Until then, for the pilot, the axes S-01 bears on are checked against their quotes before phase D marks on, and phase D reads each part of `today` with its date.
+- **17 October 2026,** the pilot's independent review (`studies/subjects/S-01/review.md`) found 14 must-fix items. Two rulings follow, each marked in its brief as the coordinator's own:
+  - **`answers` in phase B rests on what a statement says, not on shared words.** Its own words must name the party or thing that takes the variation point's role in the subject's flow, and `basis_evidence` says which role. This is what matching basis 4 above exists for: "matching on names alone fails on synonyms". Rule 0's "same" governs comparing answers between platforms. Variants that name something outside the flow, such as a wallet for buying the platform's services, are re-placed.
+  - **A bullet (d) variant that says a party has no part names no one filling X,** so it doesn't break phase C's test 1.
+
+  The other must-fix items are corrections under the rules as they stand: phase B's misplaced variants, phase C's VP-08, the source-kinds rules, Stage 1's YA-102 and YA-105, and the register entry.

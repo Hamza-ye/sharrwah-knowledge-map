@@ -27,6 +27,7 @@ Don't read `notes*.md` files or any `note` column.
 Go down this list and take the first tag that applies *(the order is the coordinator's own)*. Compare by Mill's methods of agreement and difference.
 
 1. `no difference` *(the coordinator's own)*: no variant is `gap`, `not covered` or `absent`; at least two platforms answer; and every `variant` excerpt names the same who or what.
+   - *(The coordinator's own, 17 October 2026:)* a variant that names a party only to say it has no part, a bullet (d) statement, names no one filling X. Test 1 compares who or what fills X.
 2. `market, named rule`: a cited statement names a law or a regulator's rule as the reason for, or the condition of, a variant that differs from the others. *(The coordinator's own:)* it names a particular law, or a particular regulator with its rule. Generic wording such as "applicable law" or "a regulatory authority" doesn't count.
 3. `maturity`: a variant that differs from the others has a statement carrying a release marker, recorded in `marker`.
 4. `business model` *(this test is the coordinator's own)*: WooCommerce differs from the four hosted platforms, which agree among themselves, and a cited WooCommerce statement says what it does or doesn't provide.
