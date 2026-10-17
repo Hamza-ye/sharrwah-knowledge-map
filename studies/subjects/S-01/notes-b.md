@@ -562,3 +562,205 @@ Read: BigCommerce's new statements and terms; its `a2.tsv` as it now reads; its 
 **Problems with the brief, follow-up:**
 - A2's `a2.tsv` lists statements under variation points of a bullet they do not carry, and statements of bullet (e) or the payout end only. The brief does not say whether those entries should be read as placements.
 - A gap that A2 no longer gives may still describe a part of the arrangement that has no answer, as S01-BC-G04, G06, G07 and G13 did. I followed `a2.tsv` and changed those rows to the answers.
+
+# After the independent review
+
+This pass applies the coordinator's ruling on `answers` (17 October 2026, now in the brief's rule 4) to every row of `variants.tsv`, with the review's findings 25, 26, 27, 8 and 16 (`review.md`). It also copies the new kinds from finding 28. No variation point was added, split or merged.
+
+## How the ruling was applied
+
+`answers` now holds only when the statement's own words name the party or thing in X's role, between the buyer's payment and the payout. Shared words no longer decide it; rule 0 still governs the comparison with another platform's statement.
+
+Every `answers` part of `basis_evidence` (574 rows) now begins "answers (role: …):", naming the role, and quotes the words that name it. The clause "the words differ (…)" is gone. For bullet (c), the role is the time, condition, amount or currency the statement gives (rule 1).
+
+| Variation point | Role named in `basis_evidence` |
+| --- | --- |
+| S01-VP-01 "holds the funds" | the holder of the merchant's funds between the buyer's payment and the payout |
+| S01-VP-02 "settlement of funds" | the party that settles the funds to the merchant |
+| S01-VP-03 "payouts" | the party that sends the payout to the merchant |
+| S01-VP-04 "collect payment" | the party that collects or processes the buyer's payment |
+| S01-VP-05 "pay you directly" | the merchant, or the merchant's own account, receiving the buyer's payment directly |
+| S01-VP-06 "agent" | the party acting for the merchant in collecting or holding the payment |
+| S01-VP-07 "Reserve" | the party that sets or holds a reserve on the merchant's funds |
+| S01-VP-08 "withhold" | the party that holds back the merchant's funds |
+| S01-VP-09 "deduct" | the party that takes amounts from the merchant's funds |
+| S01-VP-10 "security interest" | the holder of a security interest in the merchant's funds |
+| S01-VP-11 "account" | the account under which the funds are held |
+| S01-VP-12 "licensed" | the licence or legal status under which the funds are held |
+| S01-VP-13 "terms of service" | the terms under which the funds are held |
+| S01-VP-14 "payout schedule" | the schedule on which payouts are made |
+| S01-VP-15 "payout timing" | the time until the funds reach or are available to the merchant |
+| S01-VP-16 "Minimum payout amount" | the minimum amount for a payout |
+| S01-VP-17 "reserve" | the condition on which a reserve is kept or released |
+| S01-VP-18 "held" | the condition on which the funds are held back |
+| S01-VP-19 "deducted" | what is taken from the funds before payout |
+| S01-VP-20 "Termination" | what happens to the funds when the account or service ends |
+| S01-VP-21 "refunded to your customers" | the condition on which the funds go back to the buyers |
+| S01-VP-22 "pay in installments" | when the merchant is paid under an instalment or pay-later arrangement |
+| S01-VP-23 "currency" | the currency in which the funds are paid out or settled |
+
+## Rows rewritten
+
+- **The review's rows that stay (118).** Findings 26 and 27 point to 146 rows: the `answers`-only rows whose `basis_evidence` said the words differ or showed no shared word, and the rows finding 27 names. 118 of them keep their place, with the role named:
+  - by variation point: S01-VP-01 8, S01-VP-02 1, S01-VP-03 13, S01-VP-04 6, S01-VP-05 3, S01-VP-08 3, S01-VP-09 2, S01-VP-11 1, S01-VP-12 2, S01-VP-13 3, S01-VP-14 22, S01-VP-15 10, S01-VP-16 1, S01-VP-18 10, S01-VP-19 14, S01-VP-20 6, S01-VP-21 3, S01-VP-22 7, S01-VP-23 3.
+  - S01-V-331 (S01-VP-15), S01-V-350 (S01-VP-16) and S01-V-525 (S01-VP-23) took the table's header as excerpt (finding 27). Each now takes the table's rows, from "Australia AUD" on, which give the times, minimum amounts and currencies; `basis_evidence` quotes the cells.
+  - S01-V-536 (S01-VP-03) stays: S01-WC-158 carries bullet (d) and is WooCommerce's own statement, so rule 3 makes it WooCommerce's variant.
+- **The other `answers` rows (452)** now name the role too. Their placement, excerpt and comparison are unchanged.
+- **New comparison.** S01-V-046 to S01-V-049 (S01-VP-03) were compared with S01-WC-078, which is no longer placed. They are now compared with "WooPayments can send payouts" (S01-WC-026).
+- **On `term` only.** These name something outside the flow, so `answers` no longer holds; `term` still holds, so they stay:
+  - S01-V-143 (S01-VP-08) and S01-V-421 (S01-VP-18): S01-WC-080, WooCommerce withholding "revenue from all Partner Products", the vendors of Woo Marketplace products;
+  - S01-V-149 (S01-VP-08) and S01-V-434 (S01-VP-18): S01-SA-120, S01-SA-121 and S01-SA-123, money an app partner withholds "from the Merchant's wallet" until it is "transfered to the Partner".
+- **Statements dropped from a row.** S01-V-435 (S01-VP-18) drops S01-SA-125, label amounts held "من رصيدك في المحفظة" (my translation: "from your wallet balance"). It keeps S01-SA-126, label values held "من رصيد المدفوعات الإلكترونية" (my translation: "from the Electronic Payments Balance").
+- **Longer excerpt.** S01-V-601 (S01-VP-19) now takes the whole of S01-SA-170, including "فسيتم الخصم من المدفوعات الإلكترونية" (my translation: "the deduction will be made from the electronic payments").
+- S01-V-106 and S01-V-309 take the statements moved in (below).
+
+## Rows moved (3)
+
+- **S01-V-007 (S01-VP-01) into S01-V-106 (S01-VP-05).** S01-SH-017 says the customers' crypto payments are "sent to you", and that Coinbase does not hold them. S01-V-106 is "receive cryptocurrency payments directly from your customers" (S01-SH-015). S01-SH-016 stays in S01-V-174.
+- **S01-V-360 (S01-VP-16) into S01-V-309 (S01-VP-14).** S01-SA-013 gives no minimum. It says small amounts can be moved to the wallet and withdrawn "متى شاء" (my translation: "whenever he wishes"), next to S01-SA-014's "at any time".
+- **S01-V-606 (S01-VP-23) to the new S01-V-654 (S01-VP-19).** S01-BC-048 names no currency. It says Stripe absorbs the rate risk "so the seller doesn’t have to manage the difference".
+
+## Rows removed (39)
+
+In each, the statement's words name no party or thing in X's role, or name something outside the flow.
+
+- **S01-VP-01:**
+  - S01-V-017: Salla's store wallet (finding 27). Salla says it is for "اشتراكات سلة وخدماتها ومشترياتها" (S01-SA-056; my translation: "Salla's subscriptions, services and purchases"), and S01-SA-015 says the same.
+  - S01-V-019: S01-SA-034 says where the dues go "وفق دورة التحويل المعتمدة" (my translation: "according to the approved transfer cycle"), not who holds them.
+  - S01-V-024: Zid's wallet (findings 8, 16 and 26). S01-ZD-057 describes a wallet the merchant adds balance to, for buying "المنتجات، أو الخدمات المعروضة في منصة زد" (my translation: "the products or services offered on the Zid platform") or transferring out.
+  - S01-V-007: moved.
+- **S01-VP-02:** S01-V-043. S01-BC-015 says where the merchant sets the settlement currency, not who settles.
+- **S01-VP-03:**
+  - S01-V-051: S01-WC-027 names who will not send payouts to some debit cards (finding 27).
+  - S01-V-054: WooCommerce paying the vendors of Woo Marketplace products (S01-WC-078, finding 27).
+- **S01-VP-06:** S01-V-123. S01-SA-124 and S01-SA-125 authorise Salla to pay app partners and carriers from the store wallet.
+- **S01-VP-08:**
+  - S01-V-140: S01-SH-088 names who asks for more information, not who holds.
+  - S01-V-150: S01-SA-125, label amounts held from the store wallet to pay the carrier.
+- **S01-VP-09:**
+  - S01-V-154: S01-SH-143, a debit of the merchant's bank account.
+  - S01-V-164: S01-SA-127, Salla's commission on what it settles with the carrier.
+- **S01-VP-10:** S01-V-550 (finding 25). S01-SA-187 is about collateral for صندوق سلة's financing.
+- **S01-VP-11:** S01-V-192. S01-ZD-046 names the party in whose name a verification request is made.
+- **S01-VP-13:**
+  - S01-V-251: the Marketplace Vendor Agreement (S01-WC-079), between WooCommerce and Woo Marketplace vendors;
+  - S01-V-273: Shopify's own agreement with its processors (S01-SH-011).
+- **S01-VP-14:**
+  - S01-V-284: Woo Marketplace vendors (S01-WC-078);
+  - S01-V-305: S01-SA-093, which orders an invoice covers;
+  - S01-V-310: S01-SA-030, "بعد ذلك" (my translation: "after that"), which names no time.
+- **S01-VP-15:** S01-V-521. S01-WC-024 gives no time.
+- **S01-VP-16:** S01-V-360, moved.
+- **S01-VP-18:**
+  - S01-V-429: S01-SA-049 says the order, not the funds, stays pending;
+  - S01-V-430 to S01-V-432 and S01-V-590: the payout bank account's country, currency and type (finding 27);
+  - S01-V-433: S01-SA-026, no transfer between the two Salla balances;
+  - S01-V-584 to S01-V-586, S01-V-589, S01-V-593 and S01-V-594: other requirements on the payout bank account. None says funds are held;
+  - S01-V-645: an authorisation hold on the shopper's card until capture (S01-BC-122, finding 27).
+- **S01-VP-19:**
+  - S01-V-469: Woo Marketplace vendors (S01-WC-078);
+  - S01-V-602: S01-SA-171, international label fees settled from the store wallet;
+  - S01-V-648: S01-BC-100, a fee applied to the order's purchase price;
+  - S01-V-649: S01-BC-123 and S01-BC-124, a fee BigCommerce bills on its invoice.
+- **S01-VP-23:** S01-V-606, moved.
+
+## Row added
+
+S01-V-655 is a `not covered` row for Salla under S01-VP-06. Without S01-V-123, Salla has no answer to "agent", and no Salla gap or absence covers it. It goes back to Salla for phase A2.
+
+## `raised_by` and `x_words`
+
+`raised_by` was recomputed from the placed rows.
+- **Dropped:**
+  - S01-VP-01: S01-SH-016, S01-SH-017, S01-SA-027, S01-SA-029, S01-SA-033, S01-SA-034, S01-ZD-057, S01-ZD-059, S01-ZD-065;
+  - S01-VP-02: S01-BC-015;
+  - S01-VP-03: S01-WC-027, S01-WC-078;
+  - S01-VP-06: S01-SA-124, S01-SA-125;
+  - S01-VP-08: S01-SH-088, S01-SA-125;
+  - S01-VP-09: S01-SH-143, S01-SA-127;
+  - S01-VP-10: S01-SA-187;
+  - S01-VP-11: S01-ZD-046;
+  - S01-VP-13: S01-WC-079, S01-SH-011;
+  - S01-VP-14: S01-WC-078, S01-SA-093, S01-SA-030;
+  - S01-VP-15: S01-WC-024;
+  - S01-VP-16: S01-SA-013;
+  - S01-VP-18: S01-SA-049, S01-SA-060, S01-SA-065, S01-SA-066, S01-SA-026, S01-SA-185, S01-SA-146, S01-SA-155, S01-SA-169, S01-SA-159, S01-SA-177, S01-SA-184, S01-SH-153, S01-SH-156, S01-BC-122, S01-SA-125;
+  - S01-VP-19: S01-WC-078, S01-BC-100, S01-BC-123, S01-BC-124, S01-SA-171;
+  - S01-VP-23: S01-BC-048.
+- **Added:** S01-SH-017 to S01-VP-05; S01-SA-013 to S01-VP-14; S01-BC-048 to S01-VP-19.
+
+Each question's X is still quoted from a statement in its `raised_by`.
+
+`x_words` lost the words of statements no longer placed there:
+- S01-VP-01, zid: "حفظ وإدارة المبالغ";
+- S01-VP-02, bigcommerce: "settlement currency";
+- S01-VP-03, woocommerce: "will pay Partner";
+- S01-VP-06: Salla's part;
+- S01-VP-08: shopify "put on hold", salla "بحجز مبالغ";
+- S01-VP-09, shopify: "debit your account";
+- S01-VP-10: Salla's part;
+- S01-VP-13, woocommerce: "Marketplace Vendor Agreement";
+- S01-VP-18, bigcommerce: "holds the funds until they are captured";
+- S01-VP-23, bigcommerce: "that rate is guaranteed".
+
+## Statements now under no variation point
+
+25 more statements are under no variation point, 36 in all. None names a party or thing in a variation point's role, between the buyer's payment and the payout:
+- S01-SA-027, S01-SA-029 and S01-SA-033: Salla's store wallet, "يُستخدم لإدارة الأموال ... مثل تجديد باقة المتجر، إصدار البوليصات" (S01-SA-027; my translation: "used to manage funds ... such as renewing the store plan, issuing shipping labels").
+- S01-SA-030: amounts can then be moved to رصيد المتجر; "بعد ذلك" names no time.
+- S01-SA-066, S01-SA-146, S01-SA-155, S01-SA-159, S01-SA-169, S01-SA-177 and S01-SA-185: requirements on the payout bank account (its type, its name, how to change it). None says funds are held.
+- S01-SA-093: which orders a cash on delivery invoice covers.
+- S01-SA-124, S01-SA-125, S01-SA-127 and S01-SA-171: payments to app partners and carriers from the store wallet, and Salla's commission on them. S01-SA-124's bullet (d) part disclaims dealings between the merchant and the partner, which no variation point asks about.
+- S01-SA-187: collateral for صندوق سلة's financing (finding 25).
+- S01-WC-078 and S01-WC-079: WooCommerce and the vendors of Woo Marketplace products.
+- S01-ZD-046: the name on a verification request.
+- S01-ZD-057: Zid's wallet, for buying Zid's products and services or transferring out.
+- S01-BC-015: where the settlement currency is set.
+- S01-BC-122: an authorisation hold on the shopper's card before capture.
+- S01-BC-123 and S01-BC-124: a fee BigCommerce charges and bills on its invoice.
+
+The 11 named in the earlier sections stay as they were. Finding 24 noted that S01-V-017 was placed on "إدارة" while S01-BC-058 and S01-WC-161 were not. Now none of the three is placed.
+
+## Kinds (finding 28)
+
+The checker rewrote `kinds.tsv`. 32 rows had `stated` (S01-V-158 had `official page;stated`) and now copy `official page`:
+- S01-V-087, S01-V-109, S01-V-147, S01-V-148, S01-V-158, S01-V-220;
+- S01-V-255, S01-V-257, S01-V-258, S01-V-275, S01-V-307;
+- S01-V-422, S01-V-423, S01-V-436, S01-V-472, S01-V-495, S01-V-504;
+- S01-V-545, S01-V-547, S01-V-553, S01-V-566;
+- S01-V-568 to S01-V-572, S01-V-582, S01-V-583;
+- S01-V-599, S01-V-600, S01-V-605, S01-V-623.
+
+## Variation points whose set of answers changed
+
+Phases C and D should revisit these 15: S01-VP-01, -02, -03, -06, -08, -09, -10, -11, -13, -14, -15, -16, -18, -19 and -23. Among them:
+- **S01-VP-01:** Zid's rows are now S01-V-023 (the Zid Pay balance) and the gap S01-V-025. Salla's wallet rows are gone.
+- **S01-VP-06:** Salla is `not covered`.
+- **S01-VP-10:** Salla has only the gap S01-V-170.
+
+S01-VP-05 has one more statement for an answer it already had (S01-V-106). S01-VP-04, -05, -07, -12, -17, -20, -21 and -22 have the same answers as before.
+
+## Result and checker
+
+There are 616 rows: 578 answers, 35 `gap`, 2 `absent` and 1 `not covered`.
+
+`s01-check-b4` reports no error in `variants.tsv` or `variation-points.tsv`. Its review line lists the 36 statements under no variation point, all named in these notes.
+
+Its errors are all in `yemen-marks.tsv`, phase D's file, which this pass does not change:
+- Six marks for S01-VP-01 (YC-00, YC-120 to YC-123 and YC-155) name the removed S01-V-024.
+- The other 51 errors say a variation point has no mark for a case in `studies/yemen-cases/cases.tsv`, which another session rebuilt during this pass.
+
+## Problems with the ruling
+
+1. **`term` still places statements outside the flow.** The ruling covers `answers` only, and rule 4 places a statement when any basis holds. So S01-V-143, S01-V-421, S01-V-149 and S01-V-434 stay under S01-VP-08 and S01-VP-18 on `term` alone. Their statements are about Woo Marketplace vendors' revenue and money withheld from Salla's store wallet for app partners.
+2. **Wallets that hold both top-ups and sales amounts.**
+   - **Salla.** The ruling's example fits Salla's store wallet, which is for Salla's "اشتراكات ... وخدماتها ومشترياتها" (S01-SA-056). But sales amounts can be moved into it and withdrawn (S01-SA-030, S01-SA-013, S01-SA-014).
+   - **Zid.** The example fits Zid's wallet, which the merchant tops up (S01-ZD-057). But it also receives Zid Ship's cash on delivery dues (S01-ZD-069) and a share of order payments (S01-ZD-066).
+   - **Where I drew the line.** I removed rows that rest on the wallet as a services wallet, or on paying for a service from it. I kept rows on holds, deductions and withdrawals of the wallet's funds, for example S01-V-160, S01-V-194, S01-V-307, S01-V-309, S01-V-318, S01-V-343, S01-V-445, S01-V-446, S01-V-448, S01-V-472 to S01-V-474, S01-V-480 to S01-V-485, S01-V-528, S01-V-579 and S01-V-601.
+   - **What the ruling leaves open.** It does not say where the flow ends in such a wallet. S01-ZD-069 calls Zid's transfer into the wallet a transfer "إلى التاجر" (my translation: "to the merchant"), and S01-V-061 and S01-V-318 place it as the payout. The rows on wallet withdrawals place the withdrawal to the bank as a payout too.
+3. **Bullet (c).** For a (c) variation point, the role is a time, condition, amount or currency, not a party. I read "names the party or thing" as naming that time or condition, as rule 1 does.
+4. **Statements that name who does not take the role.** The ruling does not say whether these answer.
+   - Following finding 27, I removed S01-V-051 and moved S01-SH-017 out of S01-V-007, because neither is the platform's own (d) statement.
+   - I kept S01-V-536, which is.
+   - Rows that name the role and say no one, or no account, fills it remain: S01-V-168, S01-V-174, S01-V-183, S01-V-188 and S01-V-256.
+5. **Bank-account requirements and holds.** I removed the payout bank account's requirements from S01-VP-18. Rows whose own words tie a requirement to a delay, pause or hold of transfers stay: S01-V-424, S01-V-587, S01-V-588 and S01-V-592. The line is mine; the ruling does not draw it.
