@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 07:06 UTC.
+**Updated:** 17 October 2026, 07:17 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -145,7 +145,11 @@ Agents started earlier keep their effort.
     - It found two faults in `corpus_search.py`, both fixed:
       - an address held more than once showed its first copy, so an empty older capture hid the founder's full one;
       - the founder's saves (`blocked-evidence-founder/<platform>/`) weren't searched. They are now, including PDFs through `pdftotext`.
-  - **Phase B's follow-up for BigCommerce is running:** it places S01-BC-066 to 128.
+  - **Phase B's follow-up for BigCommerce is done.** BigCommerce's rows go from 46 to 88: 72 answers and 16 gaps.
+    - All platforms now have 653 variants: 616 answers, 2 `absent` and 35 `gap`.
+    - Four BigCommerce rows changed from `gap` to an answer, where A2 left the variation point no gap. They rest on a general statement, S01-BC-088: "You will control and direct funds in your merchant account with your merchant service provider". Its scope is general, so C's scope rule applies.
+    - The checker's one review line is the 11 statements that fit no variation point. All 1,528 quotes are found.
+- **Phase C is running** (`max`), on the 653 variants.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
   - **B's second pass is done.** It placed the statements A2 and A3 added, up to S01-BC-065 for BigCommerce.
@@ -153,7 +157,7 @@ Agents started earlier keep their effort.
     - It rechecked the first pass's comparisons against another platform's statement, and 106 rows changed basis.
     - Ten statements fit no variation point. All are peripheral, such as where to track cash-on-delivery amounts or a dashboard's name, so no variation point is missing.
     - Its notes on the brief: different words in one language, empty definitions, partly contradicted gaps, and the scope separator. They go to the method report. The B brief's reading list now names `absence-audit.tsv`.
-  - C, at `max`;
+  - C, at `max` (running), then the coordinator's recommendation for any founder item;
   - D, after Stage 1;
   - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
   - F;
@@ -182,7 +186,8 @@ Agents started earlier keep their effort.
 - on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript.
 
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
-- **Pilot phase B, the follow-up for BigCommerce (S01-BC-066 to 128):** agent `a9e10fcc19233f104`.
+- **Pilot phase C:** agent `adc0057894ed0a4d9` (`max`), writing `analysis.tsv` and `notes-c.md` in `studies/subjects/S-01/`.
+- **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
 - **Stage 1, the axes review,** two agents at `max` drafting returns to step 2a for the `axes.tsv` with sha256 `cad03aa3…`, into the scratchpad's `y-review/` (`returns-<k>.tsv`, `review-notes-<k>.md`):
   - YA-01 to YA-126: agent `ac1ab6f9db5c9443e`;
   - YA-127 to YA-253: agent `a9826e37d14145ed2`.
