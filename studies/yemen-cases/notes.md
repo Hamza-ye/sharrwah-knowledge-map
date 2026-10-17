@@ -10,7 +10,7 @@
 
 ### Counts
 
-- `groups.tsv`: 561 groups over all 2,532 rows; each row is in exactly one group.
+- `groups.tsv`: 561 groups over all 2,532 rows; each row is in exactly one group. The review round raised this to 728 (see its counts, at the end).
 - 213 groups join rows from more than one part, bringing together 644 pass 1 wordings (listed below).
 - 84 pass 1 wordings have their rows split between two or more groups, under rule 2 (listed below).
 - `places.tsv`: 346 places: the 283 places pass 1 gives, 61 parties' services, and two authority areas added for step 2b (the European Union's area; the unified Republic's area).
@@ -468,3 +468,195 @@ Step 2b added 46 places (59 rows in `pass2/places-1.tsv` to `places-4.tsv`, as r
 ### Unknowns
 
 To follow after the build and its review.
+
+## Review round: groups returned to step 2a
+
+### What was read
+
+- `review/returns-1.tsv` and `review/returns-2.tsv` (142 rows on 128 groups), `review/review-notes-1.md` and `review-notes-2.md`, and `review-axes.md`.
+- The brief's new rulings: rule 2's lists that grow, instruments in force together and parts of one source, and step 2b's line on one state at different detail.
+
+### How the fixes were made
+
+- **Splits.** A split keeps the group's id for one part, and each other part takes a new id, from YG-562 to YG-728 (167 new groups). Under rule 2's new sub-bullets:
+  - **lists that grow:** each decision, circular or designation that names only what it adds is its own condition, named by its source and what it adds (YG-024, YG-041, YG-044, YG-046, YG-047, YG-224, YG-402);
+  - **instruments in force together:** each law, regulation, circular or instruction is its own condition, unless one states the other's rule at more detail (YG-080, YG-191, YG-194, YG-202, YG-225, YG-236, YG-371, YG-408, YG-414, YG-415, YG-422, YG-446);
+  - **parts of one source:** a party's pages that state different facts on one date are split where each row states one of them (YG-166).
+- **Labels.** Rows that state one thing at different detail take the label of what both state, and the rest goes in `note`. Where a party's pages, or one source's rows, each list their own items, lists that hold together, the rows take one label and each list stays in `note` (for example YG-030, YG-163, YG-212, YG-243, YG-280, YG-331).
+- **Places.** A row's place was changed only where step 2b's place rule allows it: to an authority's area for a rule that authority sets, or to a named party's service. The edits are in `pass2/states-<k>.tsv`, and each row's `group_id` equals its group in `groups.tsv`.
+- **One group per row.** Where a suggested split would put one row in two conditions, because the row names several problems, requirements or facts, the row stays with its main statement and the rest goes in its `note`. Each case is given under its group.
+
+### Fixes, by group
+
+- **YG-001.** Followed both returns. Averages over a stated period (YQ-D187, YQ-D406 to D417, YQ-D524, YQ-E392, YQ-E447) split to YG-562. The Sana'a rows giving 531 buying, 533 selling (YQ-D068, D185, E080, E870) take the label 'YER 533' of the single figure (YQ-E882, E642, C454, C467), with the pair in note. The 2025 tie at place not stated (YQ-D056, D458, E644) stands: different rates in one year.
+- **YG-006.** Followed both returns. YQ-E757, E784 and E645 ('held steady by strict foreign-exchange controls') take the label 'fixed and enforced' of YQ-D466, D390 and E626, as one controlled rate at different detail. The place 'the old-rial zone' is grouped with Houthi-controlled areas on item 155 (YE-E266, YE-E267), so YQ-E260 joins that part. The February 2026 dispute at the IRG's area (fixed against floating) stands: the sources make it.
+- **YG-007.** Not followed. YQ-E749 (the currency 'improved markedly', per the Aden governor) stays at the IRG's area, the place pass 1 gave it (CBY-Aden's area) as `places.tsv` groups it. Why: see 'Returns not followed' below.
+- **YG-011.** Followed all three returns. Split: whether the supply is curtailed, suspended or tightened (YQ-E266, E290, E307, E275, D526) to YG-563; the mechanism stays. YQ-D436, E251 and E301 share the label 'essential imports financed by the central bank at the official rate'; YQ-E251 and E301 move to Central Bank of Yemen's area with YQ-D436, and YQ-E270 and E773, the Aden central bank's own acts, to the IRG's area. YQ-E345 and E421 take 'currency auctions', with their take-up in note.
+- **YG-013.** Followed. Split by mechanism: letters of credit, SWIFT and auctions stay in YG-013 (YQ-E267, E268, E271); the import committee's mechanism to YG-564 (YQ-E277, E280, E423, E279, E424); the mandate to finance Houthi-aligned companies to YG-565 (YQ-E282); YQ-E291 moves to the banknote condition, YG-024.
+- **YG-014.** Followed. Split: where the currency comes from (YQ-E727, D465, remittances) to YG-566; the channel importers use (money exchangers, the parallel market) stays in YG-014.
+- **YG-020.** Followed. YQ-E425 takes YQ-D402's label 'capped' (one August 2025 measure, with and without its figure); the figure stays in note. The group becomes a constant.
+- **YG-022.** Followed. The May 2026 rate for luxury and non-essential goods (YQ-E377) splits to YG-567; the general rate (YQ-E347, E485) stays, with the sources' disagreement (750 against 700).
+- **YG-024.** Followed in part. Split (rule 1): which notes circulate to YG-568 (YQ-E258, C458, E180, C459, D426, D623, E181, E259, E885, B033); issuance (YQ-B034, B035, C076) to YG-027. Lists that grow: the 2017 and 2018 bans that name only what they add become their own conditions: the 500-rial note (YG-569: YQ-B025, B026), the 1,000-rial note (YG-570: YQ-B027), banks and exchange firms (YG-571: YQ-B031, B028, B032, E185, A025, E291), and importers, wholesalers, malls and fuel stations (YG-572: YQ-B029). The general bans (decision No. 57 of 2018 and after) stay as the whole list. Not followed: one label per list of parties (return on YQ-B028, B031, B032, E185); the condition is sized to banks and exchange firms, which all four name, so they share 'barred', with the other parties in note. YQ-E291 joins from YG-013.
+- **YG-026.** Followed: issuance (YQ-A005, and Sana'a's coin and note issues A026, D224, E318, C448, D172, E314, E434, E622, E647, E719) moves to YG-027, so YG-026 keeps whether the coins and notes may be used, and the dispute at Central Bank of Yemen's area (YQ-A004 against A005) goes.
+- **YG-027.** Followed: renamed at the act, whether a central bank is issuing new banknotes or coins, with the issuer as the place; joins the issuance rows of YG-024 (YQ-B034, B035, C076) and YG-026. All take one label, 'new notes or coins issued', with the coin or note and the amount in note, so successive issues don't replace one another.
+- **YG-030.** Followed the second fix. One label, 'problems of handling cash', for all six rows, with each page's list in note. The split by problem can't be made: YQ-C177, C266 and C342 each name several problems, and a row goes in one group only. The group becomes a constant.
+- **YG-031.** Not followed. YQ-D066 and D283 stay at the IRG's area and YQ-B159 at Houthis' area, their pass 1 places (the Central Bank in Aden's and the Government of Change and Building's areas) as `places.tsv` groups them. Items 013, 063 and 062, opened for this, name no area for the shortage, so no other area is open either. Why: see 'Returns not followed' below.
+- **YG-040.** Not followed. YQ-E606 stays at Aden, the place pass 1 gave it. Why: see 'Returns not followed' below.
+- **YG-041.** Followed all three returns, and split the rest of the group by the brief's lists that grow. Places: YQ-D537 to the IRG's area, as YQ-E722; YQ-C369 to Houthis' area, as YQ-C368; and YQ-A021, whose source tags the decision 'المركزي اليمني - عدن' (YE-A060), to the IRG's area. Labels: YQ-B002, E822, E443 and E586 take YQ-A045's '6 Sana'a-based banks barred' (one measure, with or without its list, or stated as the licences revoked or suspended), and YQ-C369 takes 'Kuraimi Islamic Microfinance Bank barred'. YG-041 keeps the two central banks' 2024 bans, each a whole list at its own area, and the July 2024 agreement cancelling both. Split: the June 2025 Kuraimi circular (YG-573); the US designations of Yemen Kuwait Bank (YG-574), International Bank of Yemen (YG-575, relabelled 'International Bank of Yemen designated') and two unnamed banks (YG-576, YQ-D460); the licensing rule (YG-577, YQ-A033); the Houthi authorities' 2023 bar on four banks (YG-578, YQ-E274); and banks' practice towards Kuraimi (YG-579, YQ-E641).
+- **YG-042.** Followed the first fix: YQ-B008 and B012 share 'liquidate within 15 days', one decision stated with and without the duty to report the balances, which stays in YQ-B008's note.
+- **YG-044.** Followed: split by the brief's lists that grow, one condition per decision, circular or designation, each named by its source and what it adds. YG-044 keeps the Aden central bank's revocations of speculators' licences, which name no business (YQ-D403, D462, E422, E479). New: Sana'a's 21 companies (YG-580), the association's circulars on the Al-Haddad firms (YG-581), Al-Qasimi (YG-582), seven firms (YG-583) and five firms (YG-584); the two unnamed restorations (YG-585, YG-586), tied to no ban since their sources name no firm; the Aden central bank's June and July 2024 suspensions, one condition because item 080 gives the whole list (YG-587); decisions 14, 15, 17 and 18 (YG-588); the unnamed suspension of 26 September 2026 (YG-589); and the US designations of Nabco and Al Rawda (YG-590), of Al-Omgy and Swaid & Sons as item 073 lists them (YG-591), and of Swaid and Sons as the January 2025 release names it (YG-592), kept apart so that neither drops the other.
+- **YG-046.** Followed in substance, by the brief's lists that grow rather than either suggested form. The rows naming only the FTO designation added in 2025 (YQ-E295, E111, E509) split to YG-593; the rows giving the whole set of designations (FTO and SDGT, SDGT not FTO, revoked) stay as alternatives in YG-046. A split into an FTO and an SDGT condition can't hold the rows naming both, and one label 'FTO' for YQ-D535 and D553 would set them apart from YQ-D557 and E007, which state the same.
+- **YG-047.** Followed: one condition per designation, each named by its date and what it adds. YG-047 keeps December 2024 (YQ-E825); April 2025's crypto addresses to YG-594, September 2025 to YG-595, January 2026 to YG-596.
+- **YG-049.** Followed the first fix: split by the transactions concerned. YG-049 keeps significant transactions for designated persons (YQ-A016); transactions a US person could do without a specific licence go to YG-597 (YQ-E516).
+- **YG-060.** Followed: YQ-C436, E300 and E269 share 'move to Aden', one relocation requirement at different detail (the penalty, and what must move, in note).
+- **YG-061.** Followed the first fix: IBY's refusal (YQ-D471, D533) moves to International Bank of Yemen's service, as Kuraimi's move is at Kuraimi's.
+- **YG-062.** Followed: the authorities' acts split off, the Sana'a central bank's November 2020 order to cease operations in Aden (YG-598, YQ-E311) and the Houthis' July 2024 closure of the six banks' branches (YG-599, YQ-E444), as two measures that hold together. Kuraimi's closure and reopening (YQ-C394, C395) move to Kuraimi's service, beside its own statements.
+- **YG-066.** Followed: how dense branches and service points are (YQ-E157) splits to YG-600; YG-066 keeps where formal services are concentrated, with YQ-D310's density in its note.
+- **YG-069.** Followed all three parts. Access to deposits made after the split (YQ-D329, D330) splits to YG-601, so YG-069 keeps the freeze and repayment of other deposits; International Bank of Yemen's own payouts (YQ-E338) move to its service; Yemenia's dispute over its funds (YQ-D541) splits to YG-602.
+- **YG-072.** Followed: YQ-A038 takes 'exchange companies', the label of YQ-D025 and D325, its gold in note.
+- **YG-076.** Followed both returns. The central banks' own SWIFT access splits to YG-603; YG-076 keeps commercial banks' access, with each named bank at its own service as before. YQ-E779 takes 'CBY-Sana'a cut off' and moves to Houthis' area, with YQ-E254 and E178; YQ-E281 takes 'CBY-Aden connected' and moves to the IRG's area, with YQ-E257 from the same source and date.
+- **YG-078.** Followed: YQ-E788 moves to the IRG's area and YQ-E789 to Houthis' area, as the authorities' own acts.
+- **YG-079.** Followed: YQ-E285, E763, E594, E313, E246, E662 and D346 share 'Severely restricted', the same isolation at different detail.
+- **YG-080.** Followed: one condition per requirement. YG-080 keeps SWIFT Scope (YQ-D331, E272); proof of relocation to YG-604 (YQ-D457); compliance with the Aden central bank to YG-605 (YQ-D490).
+- **YG-083.** Followed: YQ-E303 (the regular statements the law requires) moves to a new condition on what data banks must report, YG-606; YG-137 is on money exchangers, so it was not joined.
+- **YG-098.** Followed: the share of firms with a loan or credit line (YQ-D366) splits to YG-607; YG-098 keeps how much credit firms can get.
+- **YG-106.** Followed in part. Split off: Kuraimi Express (YG-608), the Sana'a branch's dealings with major exchange firms (YG-609, YQ-D027), the Aden rule for banks (YG-610, YQ-E615) and the deadline on pending balances (YG-611, YQ-E523). The fix's split between whether UNMONEY is required and whether own networks may run was not made: from 26 June 2024 the rows state both in one rule ('UNMONEY only, own networks closed'), so YG-106 keeps the network rules for exchange companies, as successive states. YQ-E795 (the launch) moved to YG-612, and YQ-C435 (Sana'a's planned network) joined YG-106 as a proposed state, as YG-107's second return allows.
+- **YG-107.** Followed both returns, the first in part: who is linked to the network stays in YG-107; who owns and leads it and whether it is running or restructured split to YG-612, as one condition because its rows state both (YQ-E748, D120, D284); YQ-C435 moved to YG-106.
+- **YG-109.** Followed: YQ-D545 leaves the condition, to YG-613, a condition on the Sa'id al-Jamal network's scheme. It was not joined to the December 2023 designation (now YG-590), since its state is a scheme, not a designation.
+- **YG-110.** Followed: how difficult it is (YQ-D215) splits to YG-614; YG-110 keeps whether and through whom money can be sent.
+- **YG-111.** Followed: moving rial cash (YQ-D334) splits to YG-615; YG-111 keeps moving foreign currency (YQ-E327).
+- **YG-113.** Followed in part: split by direction. YG-113 keeps transfers from government-held to Houthi-held areas; from Sana'a to Aden goes to YG-616 (YQ-D622, the reverse figure in note); direction not stated to YG-617 (YQ-E811). The rows were not moved off the routes: pass 1 gave them those places, step 2b's rule takes a row that is no authority's rule and no party's service to that place as `places.tsv` groups it, and rule 5 joins a route to no area (it is neither a respelling of one nor named for the same area by one source). So within each direction the parts stay by the places pass 1 gave.
+- **YG-114.** Not followed. YQ-D478 stays at Houthis' area: pass 1 placed it at the Houthi group's area, which `places.tsv` groups with Houthis' area. Why: see 'Returns not followed' below.
+- **YG-117.** Followed: split by the party bound; remote-area agents' ceiling (YQ-F122) to YG-618, exchange companies and networks stay in YG-117.
+- **YG-120.** Not followed. YQ-A008 stays at 'Saudi Arabia to Yemen (corridor)', the place pass 1 gave it; rule 5 joins the corridor to no area, as it is neither a respelling of one nor named for the same area by one source. Why: see 'Returns not followed' below.
+- **YG-122.** Followed: each area's share of inflows (YQ-E774, labelled 'Most inflows', its access in note) to YG-619; whether banks can pay out (YQ-E782) to YG-620; YG-122 keeps access to formal services, cost and speed (YQ-D529, E775).
+- **YG-123.** Followed the first return, the second in part. Split: the overall average stays in YG-123 (YQ-E595, E764); the Saudi Arabia-Yemen corridor to YG-621 (YQ-A009, and YQ-E816 relabelled '2.4%', its US and UAE figures in note); the US and UAE corridors to YG-622 (YQ-E596); channels and providers to YG-623 (YQ-D304, E817, E815); costs rising to YG-624 (YQ-D229). YQ-A009 stays at the corridor, the place pass 1 gave it. Why: see 'Returns not followed' below.
+- **YG-127.** Followed: YQ-D292 takes YQ-F120's label, the same 2026 list with and without its counts.
+- **YG-130.** Followed the first fix: YQ-D469 (what the parallel market comprises) leaves the counts, to YG-625. YQ-D080 ('many unlicensed among dozens of new shops') stays, as a count at lower detail.
+- **YG-134.** Followed: whether they do so in practice (YQ-D023, D434, E211, relabelled 'some take deposits', the rule in note) splits to YG-626; YG-134 keeps the rule.
+- **YG-138.** Followed: YQ-A036 (the Aden central bank's oversight 'disabled') moves to the IRG's area, with the group's other rows on that bank's oversight.
+- **YG-140.** Followed: split into which documents are accepted (YG-140: YQ-B013, F151), whether expired cards are accepted (YG-627: YQ-B014, B015, B016), what data must be recorded (YG-628: YQ-E520, and YQ-E610's ID copy and phone number above $3,000), and, since it holds beside YQ-E520, the strengthened checks for international transfers (YG-629: YQ-E787).
+- **YG-141.** Followed: YQ-E220 (Circular No. 11 of 2014) moves to Central Bank of Yemen's area, with that circular's other rows.
+- **YG-147.** Followed in part: YQ-C442 and C460 (wallets in use in markets, shops and for transport fares) moved to what buyers use phone wallets for (YG-630), split from YG-511 in the same round. YQ-D105 (retailers accept electronic payment easily) went to its own condition (YG-635) rather than YG-508: how readily retailers accept it holds together with how widely buyers pay, so in YG-508 it would break rule 2 again. Also moved YQ-C165 (one user's refused shop payment at Jawali, not returned) to YG-637 with YQ-C425: it holds together with Jawali's shop payments, the same breach review note 1 (section 8) describes.
+- **YG-149.** Followed: one user's failed payment of fibre bundles in Kuraimi Jawal (YQ-C425) splits to YG-637, a condition on users' reports of failed wallet payments.
+- **YG-155.** Followed: the hours (YQ-C127, C178) split to YG-638, where the Cash wallet's two pages still disagree, a dispute its sources make; YG-155 keeps whether cash in and out is available.
+- **YG-157.** Followed: merchants accepting payment (YQ-E119) split to YG-639; YQ-E692 takes 'Wide network across Yemen', ONE Cash's agent network with and without its figure.
+- **YG-160.** Followed: split into which wallets or providers are named (YG-160), how many there are (YG-640; YQ-D093 relabelled '15') and how developed the market is (YG-641). YQ-D094 is relabelled for the banks it names.
+- **YG-162.** Followed: YQ-D629 takes YQ-D577's label, Jawali's provider with and without its partner banks.
+- **YG-163.** Followed: Floosak's lists (YQ-D564, E010, E018) and ONE Cash's (YQ-E691 with YQ-A049, E051, E070) take one label per wallet, 'Transfers, purchases and bills, among others', as step 2b gave Jawali's, each list in note.
+- **YG-164.** Followed: the payments mobile e-money may be used for (YQ-F094) split to YG-642; YG-164 keeps the services a payment service provider may offer (YQ-F082).
+- **YG-165.** Followed both returns: YQ-E202 moves to Central Bank of Yemen's area with Circular No. 11's other rows; YQ-D520, D103 and E553 share 'Not needed for some wallets', the wallets named in note.
+- **YG-166.** Followed both suggested fixes where each fits. By the brief's parts of one source, the forms and verification (Jawali's know-your-customer form, YQ-D586; Floosak's phone number and verification, YQ-E013, E021) split to YG-643, leaving each wallet's documents in YG-166. Where one service's pages give the documents at different detail on 10 October 2026, they share one label: M Floos 'an ID document' (YQ-C066, C334), ONE Cash 'an ID card and personal data' (YQ-A050, C226).
+- **YG-167.** Followed: YQ-C229 and E060 share 'the account verified before use'. Also split YQ-E016 (one user's report of no identity check at Floosak, named in review note 1's section 8) to YG-644, since it holds together with Floosak's own steps.
+- **YG-169.** Followed: ONE Cash's YQ-C227 and E041 share 'registration in the app' (what both state; the agent steps in note), and Floosak's YQ-D567 takes YQ-C245's 'registration in the app, activation at an agent'.
+- **YG-179.** Followed: one label per service for its pages of 10 October 2026, 'more than one currency', what all state, for Cash (YQ-C101, C172, E672) and Jawali (YQ-C158, D150, D581), the currencies named in note.
+- **YG-186.** Followed: YQ-D569 takes YQ-C265's 'reasonable fees'; the missing fee schedule stays in its note, as it bears on disclosure (YG-191).
+- **YG-187.** Followed: transfers within one wallet (YQ-C367, E044, E063) split to YG-645; YG-187 keeps the fee for transfers generally.
+- **YG-188.** Followed: YQ-C301 takes YQ-C300's label, one fee with and without its figure.
+- **YG-191.** Followed: split by instrument: the payment service provider instructions stay (YQ-F084, with Cash's own terms, YQ-C128); the e-money instructions to YG-646 (YQ-F100); the consumer protection instructions to YG-647 (YQ-F106).
+- **YG-194.** Followed the first fix: split by instruction; the consumer protection instructions (YQ-F105) to YG-648; the e-money instructions (YQ-F098) stay with the Cash wallet's terms (YQ-C140).
+- **YG-202.** Followed: split into who answers for transactions made with the customer's credentials (YG-649: YQ-F101, and Jawali's terms, YQ-D585), who bears partners' failures (YG-650: YQ-F102) and who bears losses from fraud or negligence (YG-202: YQ-C132, D007, F110). The 2022 payment service provider instructions (YQ-F086) went to YG-651, as an instrument in force beside the 2023 consumer protection instructions with a different rule.
+- **YG-212.** Followed: Hasseb's offers (YQ-C361, C362, C364, C365, C366, C430, C433, C434) share 'discounts or cashback at named merchants', each offer in note.
+- **YG-222.** Followed both suggested fixes: YQ-F079, D116, E809 and F088 share 'banks and licensed non-bank institutions', and the bar on exchange companies (YQ-D117) splits to YG-652.
+- **YG-224.** Followed both returns, the first by its second option, split. By the brief's lists that grow, each decision that names only what it adds is its own condition: CBY-Sana'a's January 2021 licences (YG-654, YQ-E163), the early 2021 permissions (YG-655, YQ-E195), and ONE Cash's licence, with CBY-Aden's refusal of its request (YG-656, YQ-E228, E229); item 154's 2019 list is its own condition (YG-653, YQ-E162). Cumulative labels were not used: no row states the whole list at each date. The platforms that may exchange new notes for e-rials (YQ-E186) split to YG-657. YG-224 keeps the providers' own statements at their services.
+- **YG-225.** Followed: split by instrument, Law No. 40 of 2006 (YG-658), Circular No. 11 of 2014 (YG-659), the 2014 mobile banking regulations (YG-660), Decision No. 1 of 2020 (YG-661), Resolution No. 720/CBY/2022 (YG-662) and the Aden central bank's instructions (YG-663); the providers' own lists at their services (YG-664); YG-225 keeps whether a legal framework exists (YQ-E167, D376, B051).
+- **YG-229.** Followed: the currencies e-money may be issued against (YQ-F081, F117) split to YG-665; YG-229 keeps where its funds must be held.
+- **YG-236.** Followed: split into what each instrument requires of a provider's systems, the e-money instructions (YG-236, YQ-F109) and the consumer protection instructions (YG-666, YQ-F108), and whether the central bank has approved linking e-wallets (YG-667, YQ-D281).
+- **YG-237.** Followed: community integration code (fifteen rows) splits to YG-668; YG-237 keeps whether a provider offers merchants an online payment API. In the new condition, the three rows naming several providers at place not stated (YQ-E009, E583, F078) share 'community code for several providers', their lists in note, since they hold together.
+- **YG-240.** Followed: which account a wallet purchase is paid into (YQ-D133) splits to YG-669; YG-240 keeps how a merchant takes wallet payments.
+- **YG-243.** Followed in another form. The split by requirement can't be made: each of YQ-C332 and D617 lists several requirements, and a row goes in one group only. Instead the two Hasseb pages share 'an account at the bank, among other requirements', what both state, each list in note, so they no longer tie as a dispute.
+- **YG-244.** Followed: whether the buyer starts it from an app (YQ-D293, F048, F072) splits to YG-670; YG-244 keeps whether the merchant can start it through the API.
+- **YG-247.** Followed: which rial zone's customers the API accepts (YQ-E078, F063) splits to YG-671; YG-247 keeps the currency a merchant's request names.
+- **YG-255.** Followed: YQ-E678 takes 'available', with YQ-C084 and C095, the agents in note; YQ-C084, the Arabic of YQ-E678's sentence on the Cash Pay page (item 006), moves to Cash Pay (Cash e-wallet)'s service, where step 2b put item 006's other rows. YQ-C095 (item 007) stays at the Cash e-wallet's service.
+- **YG-256.** Followed: YQ-C085 ('seconds') and C343 share 'immediately'; the group becomes a constant.
+- **YG-278.** Followed: YQ-E702, a page of CAC Bank's site naming part of its cards, takes YQ-E666's label for the list the site gives.
+- **YG-279.** Followed: split into active debit cards (YG-279: YQ-E159, E160, E164), credit cards (YG-672: YQ-E158), all cards in issue (YG-673: YQ-D270) and the change in cards issued (YG-674: YQ-D264).
+- **YG-280.** Followed the first fix: YQ-E667 and E703, two pages of CAC Bank's site, share 'cash collateral for credit cards, among other requirements', what both state, each list in note.
+- **YG-286.** Followed: ATMs per inhabitant (YQ-D372) splits to YG-675; YG-286 keeps the number of ATMs.
+- **YG-291.** Followed: YQ-D175 takes 'under development', with YQ-E836, D282 and E554, the meeting in note.
+- **YG-310.** Followed in part: delivery points, closures and absent customers (YQ-E537) split to YG-676. Roads and fuel were not split from transport links: YQ-E135 and E145 each state all three, and a row goes in one group only.
+- **YG-331.** Followed the first fix: Procorners's nine posts share 'available', the stores each names in note.
+- **YG-342.** Followed the first fix: split by the foreign store, Alibaba (YG-677), SHEIN (YG-678) and Noon (YG-679); YG-342 keeps Procorners's general shipping policy (YQ-C523).
+- **YG-343.** Followed: YQ-C542 takes YQ-C518's label, the same next-day delivery.
+- **YG-346.** Followed: YQ-E536 moves to the EB store's service, added to `places.tsv` as a party's service grouped with itself, since the store's owner states its own practice (YE-E575).
+- **YG-347.** Followed: specialised platforms (YQ-E138, E532) split to YG-680, and YG-347 keeps social media; YQ-E090, which the same source pairs with YQ-E138, is relabelled 'social media'.
+- **YG-371.** Followed: the registration deadline (YQ-F128) splits to YG-681; YG-371 keeps the law's prior licence (YQ-B103).
+- **YG-388.** Followed: whether registration must be completed in person (YQ-F133) splits to YG-682; YG-388 keeps whether a merchant can apply online.
+- **YG-395.** Followed: YQ-B161 takes 'exempt from government fees', with YQ-B160, the free registration in note.
+- **YG-401.** Followed the first fix: YQ-F131 and E438 take 'American goods banned', what all five rows state, with the Israeli goods in note.
+- **YG-402.** Followed: one condition per banned good or class: goods with a local equivalent (YG-402, YQ-B151), alcohol and the like (YG-683), wheat flour (YG-684), the June 2025 list (YG-685), frozen chicken (YG-686); imported medicines replaced on the market (YQ-E370) to YG-687.
+- **YG-408.** Followed: split by instrument; the law (YQ-B077, D505) stays, the regulation (YQ-B090) goes to YG-688.
+- **YG-414.** Followed: split by instrument; the law (YQ-B082, D507) stays, the regulation (YQ-B095) goes to YG-689.
+- **YG-415.** Followed: split by instrument; the law's ten-day refund or exchange (YQ-B083, D508) stays, with the store's own guarantee (YQ-C506) at its service; the regulation's remedy within the warranty period (YQ-B096) goes to YG-690.
+- **YG-422.** Followed: each law's power to cap prices is its own condition, the 2007 internal trade law (YG-691, YQ-B115) and the 2008 consumer protection law with its regulation (YG-692, YQ-B089, D513, B101); YG-422 keeps whether caps are in force (YQ-D195, D391, E428).
+- **YG-423.** Followed: the pricing rules the government sets or proposes (YQ-D061, E843) split to YG-693; YG-423 keeps how traders set prices (YQ-D060, D628).
+- **YG-431.** Followed: YQ-E087, E120, E146, E538, E539 and E540 share 'no specific law', what applies instead in note.
+- **YG-432.** Followed: split by payment, commercial-registration fees (YG-694), taxes (YG-695), a business wallet's government payments (YG-696), and public revenue generally (YG-432).
+- **YG-439.** Followed: imported services (YQ-F166) split to YG-697; YG-439 keeps imported goods, where YQ-E860, which states both, is relabelled 'before customs release', its services clause in note.
+- **YG-446.** Followed in part: the threshold split by instrument, the law (YG-446: YQ-D011, E839, E857, F163) and the Minister's decision (YG-698: YQ-F135); the guides stating the threshold with importers' registration (YQ-B169, E694) to YG-699. Importers' registration was not split as its own condition: every row stating it also states a threshold, and a row goes in one group only.
+- **YG-473.** Followed: split by levy, the 20 percent levy (YG-700), state and war-effort taxes and donations (YG-701), the airport tax campaign (YG-702), levies on imports and surplus profits (YG-703), bribes and extra fees officials demand (YG-704), and fees for the intelligence service (YG-705); YG-473 keeps the general accounts of the regime (YQ-E360, E649).
+- **YG-475.** Followed the second form: all eight rows share 'seizures reported', who seized in note, so courts and the Houthis no longer tie as a dispute.
+- **YG-478.** Followed: 'the north' (YQ-E875, item 271's 'في الشمال') is grouped with 'the North' as a variant, the same word respelled and translated, and so chains to Houthi-controlled areas; no cited source uses either name for another area.
+- **YG-480.** Followed: split by channel, exchange companies (YG-480: YQ-D446, E256), banks and letters of credit (YG-706), hawala and other unregulated networks (YG-707), a Houthi network's USDT payments (YG-708); YQ-E629 to a condition on opening letters of credit (YG-709).
+- **YG-483.** Followed: split into who may import poultry (YG-710, YQ-E458), whether importing is restricted to Yemeni nationals (YG-711, YQ-D200), and who may obtain import and trade licences (YG-483, YQ-D199, E650).
+- **YG-486.** Followed: split into tolls and levies charged on the roads, by place (YG-486), the government's freight fees to Houthi-held areas (YG-712, YQ-E348) and measures to remove illegal checkpoints (YG-713, YQ-E376, E484).
+- **YG-490.** Followed: Marib's gas (YQ-E655) splits to YG-714; YG-490 keeps whether goods may be traded between the two sides' areas.
+- **YG-492.** Followed: split by fuel, cooking gas (YG-492: YQ-E371, E401, E496), aviation fuel (YG-715: YQ-E386) and road fuel (YG-716: YQ-E136).
+- **YG-502.** Followed in part: wheat imports (YQ-E465) split to YG-717; YG-502 keeps the change in food imports. Whether markets are supplied was not made its own condition: the two rows stating it (YQ-E368, E465) also state the change in imports, so it went into their notes and their labels give the change only ('up 21 percent', 'down 54 percent').
+- **YG-508.** Followed in part: split into how widely buyers pay electronically (YG-508), who uses it (YG-633: YQ-D113) and how many know how (YG-634: YQ-D082, relabelled 'most do not know how'). YQ-E226 (bills and purchases, 1 percent of e-money value) went to its own condition, YG-636, not to YG-510: e-money's share of all payments (YQ-E225) is a different measure on the same date, so the two would hold together in one condition.
+- **YG-509.** Followed: where they reach (YQ-D516) splits to YG-718; YG-509 keeps how widely they are available (YQ-D049).
+- **YG-511.** Followed: split into how widely phone wallets are used (YG-511: YQ-E100, E166, E214, E762), what they are used for (YG-630: YQ-E223, with YQ-C442 and C460 from YG-147), who uses them (YG-631: YQ-E546) and whether use is growing (YG-632: YQ-E830).
+- **YG-513.** Followed both returns. The rows without a figure on whether formal financial services are accessible (YQ-E005, E149, E559, E598, E837, D213, D099) split to YG-719; YQ-D312 moves beside the women's share, YG-514 (not returned; the fix needs it), relabelled '1 percent', the men's 10 percent in note; YQ-E096 takes YQ-E768's '12 percent of adults'.
+- **YG-520.** Followed: YQ-E104 takes YQ-D214's 'almost all in cash or cash transfer', its figures in note.
+- **YG-521.** Followed: how wholesalers prefer to be paid (YQ-D106) splits to YG-720; YG-521 keeps how businesses pay their suppliers (YQ-E103).
+- **YG-525.** Followed: split into whether Yemenia issues tickets in Houthi-controlled areas (YG-525, YQ-E467) and whether it honours tickets its Sana'a office issued (YG-721, YQ-E352).
+- **YG-551.** Followed: split into the share with internet access (YG-551), the share with mobile internet (YG-723, YQ-E236), and how available connectivity is (YQ-E706, E707), joined with coverage split from YG-552 (YG-722), as the fix suggests.
+- **YG-552.** Followed: coverage (YQ-D101, D179, D517) splits to YG-722; YG-552 keeps reliability (YQ-D044, D190, E351), cost staying with YG-555.
+- **YG-555.** Followed: the cost of data as a share of income (YQ-E125) splits to YG-724; YG-555 keeps how costly access is.
+- **YG-556.** Followed: split into which providers operate (YG-556, YQ-E745), who controls the sector (YG-725, YQ-D230, E128) and how many providers may operate (YG-726, YQ-E127).
+- **YG-560.** Followed: subscriptions per 100 people (YQ-E235, E710, E820) split to YG-727; YG-560 keeps the share of people who use a mobile phone (YQ-E097).
+- **YG-561.** Followed: access to electricity (YQ-E239, E819) splits to YG-728; YG-561 keeps how reliable supply is, where YQ-E436 takes YQ-E126's 'prolonged outages', its figure in note.
+
+### The Central Bank of Yemen's area (review note 1, section 4)
+
+- Review note 1 asks whether YE-E668 gives the seat for YQ-E599, E600, E601 and E604 (item 197). It gives the side of item 197's bank: its measures began with banks 'في عدن ومناطق إدارة الحكومة المعترف بها دولياً' buying currency. The name 'Central Bank of Yemen's area' still can't be grouped: it holds 23 rows from many sources, sources use the name for both banks and tell them apart only by seat (item 073: 'the Central Bank of Yemen in Sana'a', 'the Central Bank of Yemen in Aden', YE-D422), and YE-E668 gives the side for item 197's bank only. So the four rows take the IRG's area themselves, as a rule an authority sets. YQ-E599 and E600 are in YG-003 and YQ-E601 in YG-019, groups not returned: the fix needs them, and their labels already match the IRG's rows (YQ-E409, E408).
+
+### Groups changed that were not returned
+
+- **YG-003** (YQ-E599, E600) and **YG-019** (YQ-E601): these rows moved to the IRG's area, under review note 1's question on YE-E668 (above).
+- **YG-514** (women's share of accounts): it took YQ-D312 from YG-513, as YG-513's fix asks, relabelled '1 percent'.
+- Rows also moved between returned groups: YQ-E291 from YG-013 to YG-024 (now in YG-571); the issuance rows of YG-024 and YG-026 to YG-027; YQ-C435 from YG-107 to YG-106; YQ-E795 from YG-106 to YG-612; YQ-C442 and C460 from YG-147 to YG-630, split from YG-511; YQ-C165 from YG-147 to YG-637; YQ-E706 and E707 from YG-551 to YG-722, split from YG-552.
+
+### Returns not followed
+
+- **Place not stated (YG-007, YG-031, YG-040, YG-114).** These returns ask to move a market fact to place not stated. Pass 1 placed each of these rows at an authority's area or at a named area. Step 2b's place rule gives such a row, which is neither an authority's rule nor a party's own service, its pass 1 place as `places.tsv` groups it, and the checker refuses any other area for it. Place not stated is open only to rows that pass 1 placed nowhere, or in Yemen as a whole. So YQ-E749, D066 and D283 stay at the IRG's area, YQ-B159 and D478 at Houthis' area, and YQ-E606 at Aden.
+- **Routes and the corridor (YG-113, YG-120, YG-123).** Rule 5 joins a route to no area: it is not a respelling of one, and no source names it for the same area. Pass 1 gave the routes as places, so their rows stay at them. YG-113 and YG-123 are split as their returns ask.
+- **Followed in part:** YG-024 (no label per list of parties), YG-046 (lists that grow, in place of either suggested form), YG-106 and YG-107 (UNMONEY's rule and the closure of own networks are one rule from June 2024), YG-147 (YQ-D105 to its own condition), YG-243 and YG-310 (rows naming several requirements or obstacles), YG-446 (importers' registration), YG-502 (market supply), and YG-508 (YQ-E226 to its own condition, not YG-510). The reasons are under each group.
+
+### Places
+
+- `the old-rial zone` → `Houthi-controlled areas` (source, YE-E266, YE-E267: item 155), under YG-006.
+- `the north` → `the North` (variant), under YG-478. It chains to `Houthi-controlled areas`.
+- `EB store's service` added (service, grouped with itself), under YG-346.
+- `places.tsv` now lists 393 places.
+
+### Sources opened in the review round
+
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/013-alayyam.info/text.txt`, `.../063-cby-ye.com/text.txt` and `evidence/yemen/runs/20261010T061420Z-sanaa-rules-search/items/062-26sep.net/text.txt` (YG-031): to see whether they name an area for the cash shortage of YQ-D066, D283 and B159. None does; item 013 is datelined Aden.
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/197-alaraby.co.uk/text.txt` (review note 1's question): to read how item 197 names the central bank whose measures YE-E668 reports.
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/192-aa.com.tr/text.txt` (YG-041): to see whether item 192 gives the seat of the central bank that suspended the six banks' licences (YQ-E586). It does not, so the row stays at `Central Bank of Yemen's area`.
+
+### Problems with the brief
+
+- Step 2b's place rule can't correct pass 1's place for a row that is no rule and no party's own service. A market fact placed at an authority's area stays there (YG-007, YG-031, YG-114), and so does a route (YG-113, YG-120, YG-123, and `Aden to Sana'a` in YG-477, which was not returned).
+- A row can't be split. So a row stating several facts can follow neither the brief's parts of one source nor a split by item: it stays with one fact, and the rest goes in its `note` (YG-030, YG-243, YG-310, YG-446, YG-502). YQ-D359 gives two US designations (2016 and 2021) in one row, so it is its own condition (YG-591), and Swaid & Sons' designation also has a condition from another source (YG-592).
+
+### Counts after the round
+
+- `groups.tsv`: 728 groups over all 2,532 rows.
+- The build: 241 axes and 487 constants. It is past 20 axes, so the build stops for review.
+- Today has 11 disputed parts:
+  - the precision tie at YA-01's place not stated, which stands;
+  - nine that the review left alone as made by the sources: the fixed rate at the IRG's area (YA-05), Aden's cash (YA-20), the payout rules at Houthis' area (YA-60), Cash's international transfers (YA-61), Wise's two pages (YA-63), the counts at Aden and at Sana'a (YA-66, two parts), ONE Cash's 30 against 14 days (YA-74), and Cash's hours (YA-225);
+  - the wallet counts of 11 July 2026 (YA-226): two articles each give 8 to 10 and, from an interviewee, possibly over 15.
+- Today has 5 unknown parts, each at a place whose only row is proposed or ended, as before the round (YA-40, YA-80, YA-91, YA-103, YA-176).
