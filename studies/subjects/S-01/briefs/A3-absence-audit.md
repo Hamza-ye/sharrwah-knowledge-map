@@ -38,7 +38,7 @@ For each claim:
 - `searches`: each corpus_search command you ran, `;`-separated;
 - `read`: each document you read, at its commit or with the date you read it;
 - `result`: `confirmed`, `partly contradicted` or `contradicted`;
-- `stmt_ids`: for either kind of contradiction, the statements you added;
+- `stmt_ids`: for either kind of contradiction, the statements that show it: those you added, or ones already recorded;
 - `note`.
 
 Add a section headed "Absence audit" to `notes.md`, covering:
