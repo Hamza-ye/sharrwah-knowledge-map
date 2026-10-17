@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 11:56 UTC.
+**Updated:** 17 October 2026, 12:29 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -93,7 +93,10 @@ Agents started earlier keep their effort.
     - A trial build past the review gives 379 cases: today's, 27 `in force` and 351 `occurred`. Most change one axis.
   - **the second review returned 38 rows on 37 axes** (21 label, 11 rule 2, 3 rule 1, 2 rule 4, 1 rule 5). Every first-round return was followed or reasoned. Two disputed parts that no source makes are among them: Cash's hours and the wallet counts of 11 July 2026. Recorded in `review-axes.md`;
   - **step 2a's second fix round is done** (commit `f3ed2df`): 739 groups, 227 axes, 512 constants. `axes.tsv` has sha256 `02850db5…2375`. The 10 disputed parts in today are each made by their sources, or a tie under the precision rule. Checked clean;
-  - **the third review is running** on the 24 axes the round changed (15 and 9). When a review returns nothing, `review-axes.md` names that `axes.tsv` in full, and the build writes the cases;
+  - **the third review let the axes through** (commit `42c392c`). It returned one label, which the coordinator checked once fixed. `review-axes.md` names `axes.tsv` sha256 `47b5c642…c735` in full;
+  - **the build wrote 350 cases:** today's, 23 `in force` and 326 `occurred`. 227 axes and 512 constants. 21 part D citations with an empty `source_date` take "no date", as the others do;
+  - **step 2c is done** (commit `e894f8d`). `unknowns.tsv` has 5 rows: 4 `agent`, and 1 `founder` (YA-40, the anti-usury law; saba.ye answers 403 from outside Yemen). The full check is clean, with all 4,052 quotes found;
+  - **Stage 1's independent review is running** (`max`). It writes `review-independent.md`, including the comparison with Q2's example axes;
   - the review stop if past 20 axes (`review-axes.md`), then cases;
   - step 2c, the checker, an independent review, and a comparison with Q2's example axes.
 
@@ -175,7 +178,7 @@ Agents started earlier keep their effort.
     - Ten statements fit no variation point. All are peripheral, such as where to track cash-on-delivery amounts or a dashboard's name, so no variation point is missing.
     - Its notes on the brief: different words in one language, empty definitions, partly contradicted gaps, and the scope separator. They go to the method report. The B brief's reading list now names `absence-audit.tsv`.
   - C is done; its 12 founder items wait for the register entry, after D;
-  - D, after Stage 1;
+  - **D is running** (`max`), in parallel with Stage 1's independent review. It stops after `bears-on.tsv` and YC-00's marks, so the coordinator can test the checker's step 2 on its first rows;
   - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
   - F;
   - the method report;
@@ -206,8 +209,9 @@ Agents started earlier keep their effort.
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
 - **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
 - **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
-- **Stage 1, the third axes review,** writing `returns-<k>c.tsv` in the scratchpad's `y-review/`: YG-001 to 223's 15 axes, agent `ac1ab6f9db5c9443e`; YG-224 to 561's 9, agent `a9826e37d14145ed2`.
-- **Stage 1 step 2a's agent,** `a4a6021a9605c1efe`, is done with the second fix round. It is resumed for any third returns, then for `unknowns.tsv`.
+- **Stage 1, the independent review:** agent `a0755eeb78b50b2c8` (`max`), writing `studies/yemen-cases/review-independent.md`.
+- **Pilot phase D:** agent `a279f7e700e54e76b` (`max`), writing `bears-on.tsv`, `yemen-marks.tsv` and `notes-d.md` in `studies/subjects/S-01/`. It stops at a checkpoint after YC-00's marks.
+- **Done, and resumable:** Stage 1 step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`.
 - **Stage 1 step 2b's agents,** done. They can be resumed for their ranges: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
