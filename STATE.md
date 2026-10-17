@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 08:00 UTC.
+**Updated:** 17 October 2026, 06:40 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -167,7 +167,7 @@ Agents started earlier keep their effort.
 - at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript;
 - on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript.
 
-**Agents running when last checked (17 October 2026, 06:50 UTC):**
+**Agents running when last checked (17 October 2026, 06:40 UTC):**
 - **Pilot phase B, second pass:** agent `a9e10fcc19233f104`. It places BigCommerce statements only up to S01-BC-065, and gets a follow-up for the rest.
 - **Pilot A2, BigCommerce's re-run on the Help Center capture:** agent `a78ea1ca9dfa9e408` (`medium`).
 - **Stage 1 step 2c, grouping step 2b's places:** agent `a4a6021a9605c1efe`, the step 2a agent.
