@@ -85,7 +85,7 @@ Agents started earlier keep their effort.
 
     These break rule 2 (states are alternatives). The review stop returns them to step 2a, as the brief provides.
 - **Next:**
-  - step 2c groups the places step 2b added (running), then the join again and the build;
+  - step 2c grouped the places step 2b added; the join and build stop for review at 253 axes, 28 with a disputed part (commit `40a11e7`);
   - the review of the axes: an agent at `max` drafts it, and the coordinator decides which groups go back to step 2a, naming the rule each breaks;
   - the review stop if past 20 axes (`review-axes.md`), then cases;
   - step 2c, the checker, an independent review, and a comparison with Q2's example axes.
@@ -170,7 +170,10 @@ Agents started earlier keep their effort.
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
 - **Pilot phase B, second pass:** agent `a9e10fcc19233f104`. It places BigCommerce statements only up to S01-BC-065, and gets a follow-up for the rest.
 - **Pilot A2, BigCommerce's re-run on the Help Center capture:** agent `a78ea1ca9dfa9e408` (`medium`).
-- **Stage 1 step 2c, grouping step 2b's places:** agent `a4a6021a9605c1efe`, the step 2a agent.
+- **Stage 1, the axes review,** two agents at `max` drafting returns to step 2a for the `axes.tsv` with sha256 `cad03aa3…`, into the scratchpad's `y-review/` (`returns-<k>.tsv`, `review-notes-<k>.md`):
+  - YA-01 to YA-126: agent `ac1ab6f9db5c9443e`;
+  - YA-127 to YA-253: agent `a9826e37d14145ed2`.
+- **Stage 1 step 2a's agent,** `a4a6021a9605c1efe`: done with step 2c's places (158 grouped). It is resumed for the returned groups, and then for `unknowns.tsv`.
 - **Stage 1 step 2b's agents,** done. They can be resumed for their ranges: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
