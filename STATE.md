@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 06:40 UTC.
+**Updated:** 17 October 2026, 07:06 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -139,10 +139,20 @@ Agents started earlier keep their effort.
     - G01, G04, G06, G07 and G13 close in full, and eight more gaps in part. G24 to G40 record what is still not stated.
     - BigCommerce Payments holds funds in "a brand new PayPal platform account" that "will handle all settlement". A new account's initial payments are held up to 21 days. The service is offered in the UK as well as the US, which contradicts S01-BC-028 ("only US").
     - The checker reports no error in BigCommerce's files, and all 1,521 quotes are found.
-  - **A3 is auditing its 14 new claims of absence** (`high`), with the agreements BigCommerce's terms incorporate among its sources. Phase B then places the new statements in a follow-up.
+  - **A3 audited its 14 new claims of absence** (`high`): 11 confirmed, 3 partly contradicted (G25, G28, G38). It added S01-BC-125 to 128, all from held captures.
+    - BigCommerce's terms name no PayPal agreement as binding, so none was read.
+    - The Master Services Agreement says no agency is created by it or by using the Services (S01-BC-128). The first audit of G08, on the same question, missed it, so the coordinator corrected G08's row to `partly contradicted` and said so in its note.
+    - It found two faults in `corpus_search.py`, both fixed:
+      - an address held more than once showed its first copy, so an empty older capture hid the founder's full one;
+      - the founder's saves (`blocked-evidence-founder/<platform>/`) weren't searched. They are now, including PDFs through `pdftotext`.
+  - **Phase B's follow-up for BigCommerce is running:** it places S01-BC-066 to 128.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
-  - B's second pass, now running: it places the 157 statements A2 and A3 added under the existing variation points, and revisits every gap, absence and row not covered;
+  - **B's second pass is done.** It placed the statements A2 and A3 added, up to S01-BC-065 for BigCommerce.
+    - There are 611 variants: 571 answers, 2 `absent`, 38 `gap` and none `not covered`.
+    - It rechecked the first pass's comparisons against another platform's statement, and 106 rows changed basis.
+    - Ten statements fit no variation point. All are peripheral, such as where to track cash-on-delivery amounts or a dashboard's name, so no variation point is missing.
+    - Its notes on the brief: different words in one language, empty definitions, partly contradicted gaps, and the scope separator. They go to the method report. The B brief's reading list now names `absence-audit.tsv`.
   - C, at `max`;
   - D, after Stage 1;
   - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
@@ -172,8 +182,7 @@ Agents started earlier keep their effort.
 - on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript.
 
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
-- **Pilot phase B, second pass:** agent `a9e10fcc19233f104`. It places BigCommerce statements only up to S01-BC-065, and gets a follow-up for the rest.
-- **Pilot A3, BigCommerce's new claims of absence (G24 to G31, G35 to G40):** agent `acdad5f7116bb6e5c` (`high`).
+- **Pilot phase B, the follow-up for BigCommerce (S01-BC-066 to 128):** agent `a9e10fcc19233f104`.
 - **Stage 1, the axes review,** two agents at `max` drafting returns to step 2a for the `axes.tsv` with sha256 `cad03aa3…`, into the scratchpad's `y-review/` (`returns-<k>.tsv`, `review-notes-<k>.md`):
   - YA-01 to YA-126: agent `ac1ab6f9db5c9443e`;
   - YA-127 to YA-253: agent `a9826e37d14145ed2`.
