@@ -6,6 +6,8 @@
 
 ## 1. BigCommerce Help Center: eight public articles, no account needed
 
+**Done, 13 October 2026.** The founder captured all eight, and 43 more Help Center addresses, from their own machine with `method/capture/run.sh`: run `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/`. The Trust Center (`security.bigcommerce.com`) still served Cloudflare's check. Its page and public documents are saved in `blocked-evidence-founder/bigcommerce/`.
+
 **Why you.** The Help Center answers an automated browser with HTTP 400. Getting around that would mean evading a bot check, which the briefs forbid. It closes twelve "page not read" gaps on BigCommerce Payments, PayPal, Stripe and offline payments: who holds the funds, payout timing, holds, deductions, and under whose account.
 
 - https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?language=en_US

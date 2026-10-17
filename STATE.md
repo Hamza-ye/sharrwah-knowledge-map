@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 06:30 UTC.
+**Updated:** 17 October 2026, 06:50 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -71,10 +71,10 @@ Agents started earlier keep their effort.
     - groupings may chain, each link with its own basis, and the rows take the place the chain ends at;
     - a seat named in either language is one seat.
   - `method/join_pass2.py` follows a chain through every link and refuses a cycle. The build reads places only from the joined `states.tsv`.
-  - Its agent is now adding the chains and translated names it held back.
+  - Its agent then added the chains and translated names it had held back: 155 of the 346 places are grouped, so the rows fall in 191. The checker reports no issues.
+- **Step 2b is running,** from 17 October 2026, 06:35 UTC: four agents at `high`, by range of groups. The ranges are YG-001 to 076 (633 rows), 077 to 165 (650), 166 to 331 (637) and 332 to 561 (612).
 - **Next:**
-  - step 2b once 2a's chains are in: four agents at `high`, by range of groups, YG-001 to 076 (633 rows), 077 to 165 (650), 166 to 331 (637) and 332 to 561 (612), recounted if 2a changes the groups;
-  - then `method/join_pass2.py` and the build;
+  - `method/join_pass2.py`, step 2c's grouping of the places step 2b adds, the join again, then the build;
   - the review stop if past 20 axes (`review-axes.md`), then cases;
   - step 2c, the checker, an independent review, and a comparison with Q2's example axes.
 
@@ -114,11 +114,16 @@ Agents started earlier keep their effort.
   - `corpus_search.py` also reads raw pages (zid.sa keeps its content there) and the fetch archives, through a text cache in `~/.cache/sharrwah-corpus`.
   - The Paylink lead (from the founder's search) isn't supported by held evidence: the held Paylink posts tie its licence to no Salla Payments funds.
 - **For the founder:** `evidence/product-class/to-save-for-s01.md`, raised in chat on 13 October 2026. It asks for:
-  - eight BigCommerce Help Center articles (HTTP 400 to automated browsers);
+  - eight BigCommerce Help Center articles (HTTP 400 to automated browsers): **done**;
   - Salla's payment services contract;
   - Zid Pay's provider and the wallet's bank.
 
   Until they're saved, those gaps stand as recorded.
+- **BigCommerce's Help Center is held,** captured by the founder from their own machine on 13 October 2026 with `method/capture/run.sh`. It holds 51 of 52 addresses, including the pilot's eight articles: run `20261013T053949Z-s01-bigcommerce-help-founder-machine`, merged on 17 October.
+  - It made 21 BigCommerce gaps' pages readable, and the checker reported 42 routes to the founder for pages now held.
+  - The checker now counts such a page as read once A2 or A3 names its held copy in `read`. An address alone doesn't count, because BigCommerce's first A2 listed the addresses it was refused.
+  - A "page not read" gap left open after every page it waited on was read is an error.
+  - BigCommerce's A2 is re-running on the capture (`medium`), from S01-BC-066. Phase B places those statements in a follow-up, then A3 audits any new claim of absence.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
   - B's second pass, now running: it places the 157 statements A2 and A3 added under the existing variation points, and revisits every gap, absence and row not covered;
@@ -150,9 +155,15 @@ Agents started earlier keep their effort.
 - at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript;
 - on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript.
 
-**Agents running when last checked (17 October 2026, 06:20 UTC):**
-- **Pilot phase B, second pass:** agent `a9e10fcc19233f104`.
-- **Stage 1 pass 2, step 2a, the chains:** agent `a4a6021a9605c1efe` (`max`), writing `places.tsv` and `notes.md` in `studies/yemen-cases/`. It is resumed later for step 2c.
+**Agents running when last checked (17 October 2026, 06:50 UTC):**
+- **Pilot phase B, second pass:** agent `a9e10fcc19233f104`. It places BigCommerce statements only up to S01-BC-065, and gets a follow-up for the rest.
+- **Pilot A2, BigCommerce's re-run on the Help Center capture:** agent `a78ea1ca9dfa9e408` (`medium`).
+- **Stage 1 step 2b,** four agents at `high`, each writing `pass2/states-<k>.tsv`, `pass2/notes-<k>.md` and any `pass2/places-<k>.tsv`:
+  - range 1, YG-001 to 076: agent `a2697a25622282d23`;
+  - range 2, YG-077 to 165: agent `afd16cf2925a43e1f`;
+  - range 3, YG-166 to 331: agent `a1c52ff4913f2ba6c`;
+  - range 4, YG-332 to 561: agent `abfbdaaac8cd9a9b3`.
+- **Stage 1 step 2a's agent,** `a4a6021a9605c1efe`, is done, and is resumed for step 2c.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
 
