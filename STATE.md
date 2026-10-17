@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 18:00 UTC.
+**Updated:** 17 October 2026, 19:30 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -249,7 +249,14 @@ Agents started earlier keep their effort.
       - **Salla's A2 on "agent"** (commit `0b59a65`): S01-SA-190 to 201, and gap S01-SA-G07: no held source says in what capacity Salla holds buyers' payments;
       - **the entry, rewritten** (draft, commits `90fa73b` and `28828a4`): 14 decisions, each with its own answer line, and the links between them marked as the coordinator's reading;
       - **the method report** (draft, commit `50e031f`): F's findings and what changed, what a subject costs, and the proposed changes before more subjects;
-    - **Next, in order:** A3 audits S01-SA-G07 (running); phase B places S01-SA-190 to 201 and S01-VP-06's row; phase C re-applies steps 3 to 5 under the two rulings; phase D re-marks the variation points whose variants changed; the coordinator updates the entry; F re-checks; the method report is completed; G1;
+    - **Done since** (18:00 to 19:30 UTC):
+      - A3 confirmed S01-SA-G07, and added S01-SA-202 (commit `a884d3a`);
+      - phase B placed S01-SA-190 to 202: Salla now answers S01-VP-06 with S01-V-660 and the gap (commit `4fff36c`);
+      - phase D re-marked the six variation points whose rows changed: S01-VP-04 is now carried with a partner through S01-V-091 (commit `2f42203`);
+      - phase C's fourth run: no cause or founder item changed; 55 letters became `A+B`, and 15 rows gained a `follows` row (commit `44e09ab`). So `follows` now separates the variation points by cause only (notes-c problem 18), which goes to the method report;
+      - the entry takes these results (commit `4685b61`);
+      - the method report's proposals were rewritten after the founder's question on cost (commit `3b59fe3`). It is a draft for G1;
+    - **Next:** F re-checks the fixes (running); then the method report is completed, and G1 goes to the founder;
   - **D's first checkpoint** (commit `2786cb4`):
     - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
     - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
@@ -284,11 +291,11 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (17 October 2026, 18:00 UTC):**
+**Agents running when last checked (17 October 2026, 19:30 UTC):**
 - **Running:**
-  - pilot A3 for Salla's gap S01-SA-G07: `a1fbfec156e90bb84` (`high`).
+  - pilot F, re-checking the fixes: `a349d058600a20b3a` (`max`).
 - **Done, and resumable:**
-  - pilot F `a349d058600a20b3a`, to re-check the fixes; phase B `a9e10fcc19233f104`, to place what A2 adds; phase C `adc0057894ed0a4d9` and phase D `a279f7e700e54e76b`, for the rulings and S01-VP-06; Salla's A2 `aa3fbffb0ec8e81cc`;
+  - phase B `a9e10fcc19233f104`, to place what A2 adds; phase C `adc0057894ed0a4d9` and phase D `a279f7e700e54e76b`, for the rulings and S01-VP-06; Salla's A2 `aa3fbffb0ec8e81cc`;
   - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
   - Stage 1 step 2b, by range: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
