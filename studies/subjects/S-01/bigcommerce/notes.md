@@ -125,3 +125,65 @@ Phase A3, read on 2026-10-13, following `studies/subjects/S-01/briefs/A3-absence
 - **Accounts versus funds.** G02 was written in phase A, before A2 recorded S01-BC-051 and S01-BC-055, which name the BigCommerce Payments account. I count a provider account the merchant holds as (b), as A2 did for S01-BC-061 ("Connect or create your Stripe account"). The pricing page names the account and contract only in the steps to a processing rate.
 - **The brief changed while I worked.** It added the instruction to record anything else on the subject in the documents read. I applied it from then on. It produced S01-BC-065.
 - **The checker writes outside this folder.** It writes `studies/subjects/S-01/kinds.tsv`, as noted in phase A.
+
+# Phase A2 re-run: the founder's Help Center capture
+
+Read on 2026-10-17, following `studies/subjects/S-01/briefs/A2-close-gaps.md` and the coordinator's message. The new evidence is the run `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/` (commit `7f7fdb3999568148dd5edb59912d3c47b3cd1b69`), captured from the founder's machine on 2026-10-13. Statements S01-BC-066 to S01-BC-124, citations S01-BC-C085 to S01-BC-C215, 18 terms, gaps S01-BC-G24 to S01-BC-G40 and the updated `a2.tsv` are from this re-run. No absence was recorded, and no phase A, A2 or A3 row was changed.
+
+## What I read
+
+- **In full, from each item's `text.txt`** (after the Help Center's menus):
+  - item 1, Connecting with BigCommerce Payments;
+  - item 2, Available Payment Gateways;
+  - item 3, Connecting with PayPal;
+  - item 4, Connecting with Stripe OCS;
+  - item 5, Connecting with Braintree;
+  - item 6, Offline Payment Methods;
+  - item 7, Processing Refunds;
+  - item 8, Manually Capturing Transactions (Authorize Only);
+  - item 9, the Help Center's front page.
+- **By the passages the searches matched,** in the same run: items 14, 15, 16, 19, 21, 25, 26, 28, 30, 32, 33, 36, 37, 38, 40 (About BigCommerce Pricing: its Open Payment Provider fee section, recorded as S01-BC-123 and S01-BC-124), 41, 43, 46, 48 and 49.
+- **Searches:** `python3 -I method/corpus_search.py bigcommerce <term>` for each gap's words and for each arrangement, country and plan the statements name. Each gap's `read` lists its commands.
+- Every citation is to a held capture (`access_path` `local`). The articles show no date, so `source_date` is the capture date, 2026-10-13. I fetched no live page.
+
+## Gaps settled
+
+- **Closed by the articles:** G01, G04, G06, G07, G11 (in part), G13, and the parts of G02, G03, G05, G16, G17, G20 and G21 that the articles state. `a2.tsv` no longer lists any of G01 to G23.
+  - **(a) who holds the funds:**
+    - For BigCommerce Payments, the article names "a brand new PayPal platform account dedicated to your BigCommerce store", which "will handle all settlement" (S01-BC-068 to S01-BC-070).
+    - For the standalone PayPal gateway, "Funds are deposited immediately into your PayPal account" (S01-BC-090).
+    - For any gateway: "You will control and direct funds in your merchant account with your merchant service provider" (S01-BC-088).
+  - **Offline methods:** the merchant's own bank account, address or store (S01-BC-115 to S01-BC-119).
+- **Remaining, `searched, not found`:** G24 to G31 and G35 to G40, one per variation point.
+- **Remaining, `page not read`:** G32 (a), G33 (b) and G34 (c), for the Embedded and Open Payment Providers other than BigCommerce Payments, PayPal, Stripe OCS and Braintree. Their Help Center articles are not held.
+
+## What changes an answer already given
+
+- **S01-BC-023,** "Funds credit immediately into your PayPal business account", is from the PayPal product page.
+  - The Help Center says the same of the standalone PayPal gateway (S01-BC-090).
+  - Under BigCommerce Payments, the funds sit in a separate PayPal platform account, the "BigCommerce Payments balance". Automatic payouts go from there to the PayPal account or a bank (S01-BC-073).
+  - "For new BigCommerce Payments accounts, initial payments are held for up to 21 days before being available for payout" (S01-BC-082).
+- **Where BigCommerce Payments is offered.**
+  - The Help Center says United Kingdom and United States stores, on Core, Growth or Scale plans, with select Performance plan stores (S01-BC-067, S01-BC-086).
+  - This agrees with S01-BC-029 (.co.uk), not with S01-BC-028 ("only to US-based merchants").
+- **The dashboard's name.** The Help Center calls it the "Balance dashboard" (Finance › BigCommerce Payments). Earlier sources call it the "Money Dashboard" or "Money dashboard" (S01-BC-018, S01-BC-040, S01-BC-052).
+
+## Read and not recorded
+
+- **Transaction rates.** Item 1 gives BigCommerce Payments' US and UK rates. It does not say the rates are deducted from the funds. G28 and G38 note this.
+- **Lists.** Not recorded:
+  - the gateway tables in item 2;
+  - the currency lists in items 1, 4 and 5;
+  - the APM tables in item 32.
+
+  They name payment methods and currencies, not who holds funds or on what conditions.
+- **Repeats.** "Why did my refund fail?" (item 1) repeats S01-BC-075 and S01-BC-087.
+- **Items 25 and 26** (stored payment methods, Fastlane) name gateways and accounts, and nothing about funds.
+
+## Problems
+
+- **Old gaps left in place.** The brief forbids changing existing rows, so G01 to G23 stay in `gaps.tsv` with their founder routes. The checker clears the routes through `a2.tsv`'s `read`.
+- **`variants.tsv` points to settled gaps.** It still points to G02, G03 and G04 to G23, which `a2.tsv` now settles. That file is phase B's.
+- **`corpus_search.py` matches whole words now.** Phase A3 noted substring matches. Partial words such as "licen" and "terminat" find nothing, so I searched with full word forms.
+- **The same words in several articles.** The Pay Later sentence is in three articles, and the 21-day note three times in item 1. Each such statement quotes the first occurrence and cites the others.
+- **The checker writes outside this folder.** It writes `studies/subjects/S-01/kinds.tsv` again.
