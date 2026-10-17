@@ -337,3 +337,74 @@ Format changes applied to every row:
   - The Shopify Help Center rows keep `term` against Zid's "مبلغ احتياطي" (S01-ZD-020). Shopify's own Arabic for "reserve" in `terms.tsv` is "الاحتياطي", and Zid gives no definition. Those rows are S01-V-366, S01-V-367 and S01-V-371 to S01-V-374.
 - **Translations:** S01-V-393 now marks its translation as mine.
 
+### S01-VP-18 "held"
+
+- **Gap rows:** S01-V-449 (bigcommerce) stays `gap`, now with A2's S01-BC-G20.
+- **New statements placed:** all of A2's Salla statements for this variation point are placed.
+  - S01-SA-145 joins S01-V-424.
+  - S01-SA-185 joins S01-V-432 (commercial accounts only, قطر).
+  - New rows:
+    - S01-V-584: S01-SA-146 and S01-SA-155, a change of bank account;
+    - S01-V-585: S01-SA-169;
+    - S01-V-586: S01-SA-159;
+    - S01-V-587: S01-SA-160, S01-SA-161 and S01-SA-135, store verification;
+    - S01-V-588: S01-SA-172 to S01-SA-176, an approved IBAN certificate;
+    - S01-V-589: S01-SA-177;
+    - S01-V-590: S01-SA-184, قطر;
+    - S01-V-591: S01-SA-181 and S01-SA-180.
+  - Shopify: S01-SH-157 (S01-V-592), S01-SH-153 (S01-V-593) and S01-SH-156 (S01-V-594).
+  - S01-WC-154, which the audit gives against S01-WC-G02 (PayPal Standard), is S01-V-595.
+  - S01-ZD-157 is S01-V-596.
+- **Not placed:** S01-ZD-151 says that Gulf merchants moving their store to another country must first empty the wallet ("تصفير رصيد المحفظة"). It states no time or condition on which funds are released or held, and fits no variation point.
+- **Rechecked against another platform:** S01-V-396 (X is quoted from it) to S01-V-421.
+  - Shopify rows now compare with WooCommerce's "held", "paused", "suspended", "withhold" and "delay", and WooCommerce rows with Shopify's.
+  - Rows whose condition shares no word with the other platform keep `answers` only.
+- **Translations:** the Arabic rows S01-V-422 to S01-V-433 and S01-V-435 to S01-V-448 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-19 "deducted"
+
+- **Gap rows:** S01-V-490 (bigcommerce) stays `gap`, now with A2's S01-BC-G21. A2's BigCommerce statements for this variation point are new rows: S01-BC-049 (S01-V-597, cross-border fees) and S01-BC-050 (S01-V-598, "you pay 0% on conversion"). S01-BC-048 says Stripe "absorbs the risk" of a rate shift; it is under S01-VP-23 only.
+- **New statements placed:**
+  - S01-SA-165 joins S01-V-470.
+  - S01-SA-188 joins S01-V-475 (صندوق سلة).
+  - S01-ZD-150 joins S01-V-480 (withdrawal fees).
+  - New rows:
+    - S01-V-599: S01-SH-149;
+    - S01-V-600: S01-SH-150;
+    - S01-V-601: S01-SA-170;
+    - S01-V-602: S01-SA-171;
+    - S01-V-603: S01-ZD-156;
+    - S01-V-604: S01-ZD-155.
+- **Rechecked against another platform:** S01-V-450 (X is quoted from it) to S01-V-469, S01-V-488 and S01-V-489.
+  - Shopify rows now compare with WooCommerce's "deducted", "deduct", "net of" and "withheld", and WooCommerce rows with Shopify's.
+- **Translations:** the Arabic rows S01-V-470 to S01-V-487 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-20 "Termination" and S01-VP-21 "refunded to your customers"
+
+- **Gap rows:**
+  - S01-V-501 (bigcommerce, S01-VP-20) stays `gap`, now with A2's S01-BC-G22.
+  - S01-V-511 (bigcommerce, S01-VP-21) stays `gap`, now with A2's S01-BC-G23.
+  - S01-V-509 (zid, S01-VP-21) stays `gap`, now with A2's S01-ZD-G18.
+- **New statements placed:** S01-SH-161 is S01-V-605 (S01-VP-20).
+- **Rechecked against another platform:**
+  - S01-V-491 to S01-V-493 now compare with S01-WC-010's "terminate". S01-V-492 keeps `identifiers` through its identifier "Effects of Termination".
+  - S01-V-502 (X is quoted from it) now compares with S01-WC-010's "refunds ... to your subscribers and customers".
+- **Translations:** the Arabic rows S01-V-495 to S01-V-500, S01-V-504 to S01-V-508 and S01-V-510 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-22 "pay in installments" and S01-VP-23 "currency"
+
+- **Changed form:** S01-V-531 (bigcommerce, S01-VP-23) changed from `gap` (S01-BC-G03) to an answer from S01-BC-050: "you continue to settle in your store's default currency". A2 gave no gap for this variation point.
+- **Gap rows:** S01-V-520 (zid, S01-VP-22) stays `gap`, now with A2's S01-ZD-G17.
+- **New statements placed** (S01-VP-23):
+  - S01-V-606: S01-BC-048;
+  - S01-V-607: S01-SH-153;
+  - S01-V-608: S01-SH-156;
+  - S01-V-609: S01-SA-167;
+  - S01-V-610: S01-SA-184.
+
+  S01-BC-056, which A2 gave for this variation point, carries only the payout end.
+- **Rechecked against another platform:**
+  - S01-V-512 (X is quoted from it), S01-V-513 and S01-V-515.
+  - S01-V-522 (X is quoted from it), S01-V-523 and S01-V-524. S01-V-523 and S01-V-524 lost the `identifiers` they shared only with S01-WC-048. S01-V-524 now shares `identifiers` with S01-SH-067: currencies by country.
+- **Translations:** the Arabic rows S01-V-516 to S01-V-519 and S01-V-526 to S01-V-528 now mark the translations that `answers` rests on as mine.
+
