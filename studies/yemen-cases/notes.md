@@ -467,6 +467,8 @@ Step 2b added 46 places (59 rows in `pass2/places-1.tsv` to `places-4.tsv`, as r
 
 ### Unknowns
 
+The fix round for the independent review closed YA-40's unknown and removed its row; see the end of these notes.
+
 `unknowns.tsv` has five rows, one for each axis whose `today` has an `unknown` part. Each part is at a place whose only row is `proposed` or `ended`. The same five parts have been in today since the first build (see the counts after each review round).
 
 - **By who could close them:**
@@ -798,7 +800,7 @@ As in the review round: the reviewers' fixes are advice, and each was decided un
 
 ### Disputed parts in today
 
-Each part's states, with their rows and citations. Each axis's `note` records the states, unresolved.
+As built at commit `42c392c`; the fix round for the independent review changes them (see the end of these notes). Each part's states, with their rows and citations. Each axis's `note` records the states, unresolved.
 
 - **YA-01 (YG-001), place not stated.** YER 2,000 (YQ-D056 [YE-D061], 2 August 2025), YER 3,000 (YQ-D458 [YE-D656, YE-D657], 2025) and YER 2,065 (YQ-E644 [YE-E719], 2025). Three sources' rates tie under the precision rule; the review round left the tie (Fixes, YG-001).
 - **YA-05 (YG-006), the internationally recognized government's area.** Fixed and enforced (YQ-D065 [YE-D067], 13 February 2026), against floating (YQ-E756 [YE-E893], YQ-E783 [YE-E923], February 2026). It is in the list under step 2a (Disagreements).
@@ -835,3 +837,163 @@ The list's group ids are step 2a's. The review rounds changed some of its entrie
 - one review-level note: the 227 axes pass the brief's stop at 20, and were reviewed in `review-axes.md`;
 - all 4,052 quotes are found in the files they cite;
 - `axes.tsv`, `constants.tsv` and `cases.tsv` are what the build gives.
+
+## Fix round for the independent review
+
+### What was read
+
+- `review-independent.md`: its "What must be fixed before phase D", the findings its items point to (1, 3, 5, 6, 7 and 8), and what it says can follow.
+- The coordinator's message: fix items 1 to 5 and 7. The coordinator settles items 6 and 8.
+
+### Fixes, by item
+
+**1. YA-25, YG-041 (finding 1).**
+- YQ-E586 is `ended`. Its own source, item 192, reports the agreement of 23 July 2024, which cancelled all recent decisions and procedures against banks by both rivals (YE-E654). Its twins YQ-D537 and YQ-E722 were already `ended`.
+- YQ-E793's date was `2024`, and it is now `after 2024-04`. Item 249 gives the ban 'In response' to the April 2024 relocation notification (YE-E932, YE-E933), and no other date. As a year, it tied with the cancellation of 23 July 2024.
+- The agreement's three rows now stand each at one side's area. Each is in the condition of the ban it ends: YG-041 holds both bans, each a whole list at its own authority's area. Each is labelled by the ban it ends:
+  - YQ-D539 (item 108): 'the bar on the 13 Aden-based banks cancelled', at Houthis' area;
+  - YQ-E721 (item 231): 'the bar on the 6 Sana'a-based banks cancelled', at the internationally recognized government's area;
+  - YQ-E587 (item 192): the same label, at Central Bank of Yemen's area. Item 192 gives the suspension to the Central Bank of Yemen without seat (YQ-E586, kept seatless in the review round), so the cancellation stands where the suspension does. Otherwise that place's latest state would be YQ-E586's ended one, and today would show the place as unknown.
+
+  Each of the three sources states both sides' cancellation, so each side's ban is ended by a source that states it.
+- Left as they were, since the message names the three rows above: YQ-E445 (item 163, both sides' measures reversed, at `place not stated`, from pass 1's "Yemen") and YQ-E794 (item 249, some restrictions partly reversed, at `IRG and HC areas`).
+- Today now shows each ban cancelled at every place that showed it barred.
+
+**2. YA-15, YG-024 (finding 3).**
+- YQ-B003 and YQ-D054 are `provided for`. The Aden bank's decision of late May 2024 gave sixty days to hand in the old notes:
+  - item 012 of the rules run, line 34: 'خلال ستين يوما';
+  - F12, line 64;
+  - item 022 of the cited-sources run, line 35: 'في غضون شهرين'.
+
+  Both rows' sources (1 June and 30 June 2024) are dated inside that window, and no source shows the withdrawal in effect.
+- Today at the internationally recognized government's area is now YQ-C070: the Aden bank's notice of 26 February 2020 that all notes, new and old, are legal tender.
+- **Other decisions with a deadline.** I searched every `held` row's state, notes and quotes for deadline and effective-date wording (154 rows), and for dates later than the row's source. None has the same fault. The decisions with a deadline stay `held`, because what the row records held from the decision's issue, or a later source shows it in effect:
+  - duties with a deadline, in force from their decisions:
+    - handing in pre-2016 notes within 60 days (YG-025);
+    - moving head offices to Aden within 60 days (YG-060);
+    - liquidating balances within 15 days or two weeks (YG-042, YG-573, YG-611);
+  - Aden's ban on the six banks, implemented from 2 June 2024 (YQ-A045): items 108 and 231 show it in effect (YQ-D537, E722);
+  - the Houthis' ban on new notes of December 2019, with a month to exchange them: item 156 gives it 'implemented in January 2020' (YQ-E306);
+  - the ban on American goods (YG-401): decision 10 of 1446 applies from its issue (YE-F323). Item 162 (28 October 2025) gives inspections and seizures beginning 5 October 2025 (YQ-E438);
+  - the Starlink ban (YQ-B060): the source gives the terminals as banned. Its deadline of 1 May 2025 is for handing them in;
+  - the transfer-network decision of 26 June 2024 (YG-106): it applies from its issue (YE-D365), with banks' own networks allowed alongside until 30 July 2024 (YE-D366). YQ-D278 (22 January 2026) shows the networks cancelled;
+  - two circulars that apply from their issue: circular No. 17 of 1447 on identity documents (YQ-F151), and the Ministry of Justice's circular (YQ-E889).
+
+  Time-limited measures shown as standing (finding 9) are among the items that can follow.
+
+**3. Finding 7.**
+- **YA-59, YG-119.** YQ-E790 is dated February 2024 and YQ-E791 March 2024, in item 249's own sequence (YE-E929, YE-E930).
+  - Both had been dated to the report (February 2026), on its 'These practices have persisted' (YE-E931). That sentence follows both rules and what they forced on households, so it dates neither.
+  - Today at Houthis' area is now YQ-D034, 'Not in US dollars' (28 May 2024). Houthi-controlled areas show the same (YQ-E334, 2025).
+- **YA-60, YG-120.** YQ-C041 is `proposed`, as YQ-C043 is. The listing names international transfers through MoneyGram or Western Union among services the wallet may add in future, in the paragraph that names NFC. Today at Cash's service is YQ-C169, 'Available'.
+- **YA-64, YG-131.** Neither axis now has a disputed part.
+  - The counts of items 073 and 076 are relabelled '415 money exchangers' (YQ-D351, D431) and '91 money exchangers' (YQ-D352, D432), as item 073 gives them (YE-D478). Item 076 gives the same counts and years as 'exchange companies' (YE-D613), so the rows share one label.
+  - The licensed and registered counts (YQ-D347, D348, D429, D430) split to YG-740, 'How many exchange businesses a central bank has licensed or registered'. Item 073 gives both measures (YE-D475, YE-D478), so they can hold at once and are separate conditions. YG-740 is a new axis, YA-228.
+
+**4. YA-62, YG-125 (finding 5).**
+- **PayPal.** Today now cites send-only (YE-D997).
+  - YQ-E728 is labelled by what PayPal's Yemen page shows: paying and sending from Yemen.
+  - YQ-D634 was undated, and now takes its capture date as a live page. Matjari Online describes there the payment methods its own platform connects, PayPal among them, and the run's manifest gives the page as live on its capture date.
+  - The two rows both state sending from Yemen, YQ-D634 at more detail ('only'). So they share the label of what both state, 'Sending from Yemen', and 'send only' stays in YQ-D634's note and citation.
+  - 'Send only' as YQ-E728's label would add what its page doesn't state. Two different labels would make a dispute that no source makes.
+- **Wise.** YQ-E580 is relabelled 'listed among the best payment options for use in Yemen', what Wise's guide states (YE-E635, YE-E636).
+  - It states no availability, so it isn't a state of YG-125's question. As one, it would set the listing against Wise's terms.
+  - It split to YG-741, 'Which payment options a guide lists for use in Yemen', a constant (YK-513).
+  - Today at Wise's service is YQ-E581, 'Unavailable'.
+
+**5. YA-05, YG-006 (finding 6).** The row the message calls 'YQ-E427' is YQ-E409, whose citation is YE-E427 (item 161, 24 April 2026).
+- It moved from YG-003 (YA-03) to YG-006, labelled 'fixed': the source states a fixed exchange rate policy, not how it is enforced.
+- Today at the internationally recognized government's area is now 'fixed' (24 April 2026), and the dispute there is gone.
+- YA-03 keeps 'fixed at YER 1,558' at that area through YQ-E599, now dated 15 February 2026.
+
+**7. YA-40, YG-075 (finding 8).**
+- Added to pass 1, part D: YQ-D636, citing YE-D1000 (item 073, lines 7226-7228, verbatim).
+  - condition: 'whether banks may deal in interest';
+  - state: a 2023 anti-usury law issued by the Sana'a parliament, in light of which the source runs its stress test;
+  - place: 'Sana'a parliament's area';
+  - date: 5 April 2024, the source's date.
+
+  Pass 1 was rejoined with `method/join_pass1.py`: 2,533 conditions and 4,053 citations.
+- `places.tsv`: 'Sana'a parliament's area' groups with 'House of Representatives in Sana'a's area (مجلس النواب بصنعاء)' as `variant`, translated. This follows the review, which reads 'Sana'a parliament' as the English of مجلس النواب بصنعاء. No held source uses both names, so the grouping rests on that translation.
+- YQ-D636 is in YG-075, labelled 'banned by law', `held`. Today at the House's area is now 'banned by law' (5 April 2024), no longer unknown.
+- `unknowns.tsv`: YA-40's row is removed, so the founder needn't be asked for it.
+
+**Pass 1 changes in this round:**
+- new held_at and date_basis for YQ-E790, E791 and E793 (`pass1/conditions-E.tsv`), and for YQ-D634 (`pass1/conditions-D.tsv`);
+- YQ-D636 and YE-D1000 are new.
+
+### Unknowns after the round
+
+- Four rows, all `agent`: YA-77, YA-88, YA-99 and YA-169. Their axis ids are unchanged.
+- Each row's `why_not_held` no longer counts cases, since the build now stops for review and writes none. The counts under step 2c are those of the build at commit `42c392c`.
+
+### Disagreements after the round
+
+- No longer disputed in today:
+  - YA-05: at the IRG's area, the April 2026 statement is later than both sides;
+  - YA-59: one source's two rules, now dated;
+  - YA-60: a plan against an availability;
+  - YA-62: Wise's guide's listing against Wise's terms;
+  - YA-64: two measures, now two conditions.
+- Of the list under step 2a:
+  - 'Cash e-wallet and transfers from abroad (YG-120)' sets a plan against an availability: YQ-C041 is now `proposed`;
+  - 'Wise and Yemen (YG-125)' sets a guide's listing, now in YG-741, against Wise's terms;
+  - 'Money exchangers in 2023 (YG-131)' gives two measures, now in YG-131 and YG-740;
+  - 'PayPal and Yemen (YG-125)' stands for YQ-E579 ('Yes, PayPal is accepted in Yemen', undated), against YQ-D634's send-only.
+- Today's disputed parts are now four:
+  - YA-01 and YA-227, ties under the precision rule;
+  - YA-20, Aden's cash;
+  - YA-71, ONE Cash's 30 against 14 days.
+
+### Sources opened in this round
+
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/249-theigc.org/text.txt`, lines 1298-1331: to date YQ-E790, E791 and E793 by the source's own sequence.
+- To check the sixty-day window the review cites for YQ-B003 and D054:
+  - `evidence/yemen/runs/20261010T061420Z-sanaa-rules-search/items/012-althawrah.ye/text.txt`, lines 30-36;
+  - `evidence/yemen/derived/blocked-evidence-founder/F12/text.txt`, lines 62-64;
+  - `evidence/yemen/runs/20261010T050304Z-cited-sources/items/022-almushahid.net/text.txt`, lines 33-37;
+  - the cited-sources manifest's rows for items 11, 12 and 22.
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/236-paypal.com/text.txt`: to label YQ-E728 by what PayPal's page shows.
+- To find a date for YQ-D634:
+  - `evidence/yemen/runs/20261010T050304Z-cited-sources/items/129-matjari.online/text.txt` (lines 1-30 and 90-100) and its `raw.html`'s metadata;
+  - the cited-sources manifest's rows for items 129, 188, 189 and 236.
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/188-wise.com/text.txt`, lines 105-130: to read what Wise's guide states of Wise (YQ-E580).
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/073-documents1.worldbank.org/text.txt` at commit `9d0de52`, lines 7224-7230: to copy YE-D1000 verbatim.
+- A search of the 826 readable files (see Unknowns, under step 2c) for 'البرلمان' and 'parliament' with 'House of Representatives': to see whether a source uses both names. None does.
+
+### Counts after the round
+
+- `conditions.tsv` 2,533 rows; `citations.tsv` 4,053; `groups.tsv` 741 groups; `places.tsv` 394 places.
+- The build: 228 axes and 513 constants. It stops for review, since `axes.tsv` changed (sha256 `ef7e2d6c70aae0e46218cc95c1dd9e14c15a8beec43428f7fe1e69d1f4837f06`), and it writes no cases.
+- The axes changed: YA-03, YA-05, YA-15, YA-25, YA-40, YA-59, YA-60, YA-62 and YA-64, and the new YA-228. No axis id moved.
+- Today has 4 disputed parts and 4 unknown parts.
+
+### The full check
+
+`python3 -I method/check_yemen_cases.py studies/yemen-cases <out>`, with no flag:
+- one error: today's case is missing. The build writes no cases until a review names this `axes.tsv`'s sha256;
+- one review-level note: the 228 axes pass the stop at 20;
+- all 4,053 quotes are found in the files they cite;
+- `--groups` and `--states states.tsv` report no issues.
+
+### Open: what the review says can follow
+
+- Finding 2: today keeps stale parts for overlapping place names and for `place not stated`. It needs a method change.
+- The rest of finding 8:
+  - YA-55's later evidence on transfers between the zones (item 249, lines 1028-1030 and 1304-1305);
+  - the internet shutdowns of 2020 and January 2022 (item 153, lines 430-431; item 154, lines 1742-1745).
+- Finding 9: time-limited measures shown as standing (YA-210's expired ID cards, YA-65's twenty days).
+- Finding 10: inference in labels:
+  - YA-40's 'allowed' at the IRG's area;
+  - YA-190's '1 percent' and YA-227's '10 percent';
+  - YA-160's fuel rate;
+  - YA-05's 'fixed and enforced' for YQ-E645, E757 and E784.
+- Finding 11: YA-105, where a news report's figure overrides its instrument's.
+- Finding 12: YA-75's 2019 list of wallets beside the 2026 list on YA-214, and YQ-A003's seat.
+- Finding 13: axes whose states don't vary (YA-30, YA-85, YA-95, YA-155, YA-165, YA-170, YA-205).
+- Finding 14: places:
+  - kibanks.com's two places;
+  - the seatless Central Bank of Yemen's area;
+  - the House of Representatives' place, which YQ-D636 now answers.
+- Finding 15: part B's quotes that are not byte-verbatim, and the dates of YQ-C207 and YQ-C080.
+- Items 6 (the `in force` basis of the precision-tie cases) and 8 (how markers read `today`) are the coordinator's.

@@ -154,10 +154,10 @@ YQ-E810	YG-118	Only banks and exchange companies the Aden central bank approves	
 YQ-D033	YG-119	In the currency sent, or as the beneficiary decides	the internationally recognized government's area	held		in the currency received, without conversion, or as the beneficiary decides
 YQ-D034	YG-119	Not in US dollars	Houthis' area	held		not in US dollars: the Houthis banned paying out remittances in dollars
 YQ-E334	YG-119	Not in US dollars	Houthi-controlled areas	held		not in US dollars: exchange shops refuse dollar remittances with very few exceptions; paid in rials, or in Saudi riyals with a conversion fee of up to YR1,000 per US$100
-YQ-E790	YG-119	In the currency sent	Houthis' area	held		remittances paid out in the currency sent, such as US dollars, not converted to rials (rule of February 2024, which the source says has persisted)
-YQ-E791	YG-119	In Saudi riyals	Houthis' area	held		all transfers paid out in Saudi riyals (HC-CB rule of March 2024, which the source says has persisted)
+YQ-E790	YG-119	In the currency sent	Houthis' area	held		remittances paid out in the currency sent, such as US dollars, not converted to rials: the Sana'a-based Yemeni Money Exchange Association's rule of February 2024 (YE-E929). Dated by the source's own sequence: in March 2024 HC-CB 'further restricted' payouts to Saudi riyals (YE-E930, YQ-E791). Both were dated to the report (February 2026), which tied them (independent review, finding 7).
+YQ-E791	YG-119	In Saudi riyals	Houthis' area	held		all transfers paid out in Saudi riyals: HC-CB's rule of March 2024, which 'further restricted' the February rule (YE-E930). Dated by the source's own sequence; the report's 'These practices have persisted' (YE-E931) follows both rules and what they forced on households, so it dates neither (independent review, finding 7).
 YQ-A008	YG-120	MoneyGram, STC Pay, Fawri and Western Union priced in the corridor	Saudi Arabia to Yemen (corridor)	held		Money transfer operators priced in the corridor: MoneyGram, STC Pay, Fawri, Western Union
-YQ-C041	YG-120	Named as a possibility, through MoneyGram or Western Union	Cash e-wallet's service	held		possible future addition
+YQ-C041	YG-120	Named as a possibility, through MoneyGram or Western Union	Cash e-wallet's service	proposed		possible future addition Proposed: the listing names international transfers through MoneyGram or Western Union among the services the wallet may add in future, in the same paragraph as NFC (YQ-C043, proposed) (independent review, finding 7).
 YQ-C054	YG-120	Available	Mahfathati (Tadhamon Bank)'s service	held		available
 YQ-C169	YG-120	Available	Cash e-wallet's service	held		available
 YQ-C254	YG-120	Available	Floosak's service	held		available
@@ -190,14 +190,14 @@ YQ-E817	YG-623	Fawri 2.07%, MoneyGram 3.90%, Western Union 4.41%	place not state
 YQ-D363	YG-124	Mostly US dollars, then Saudi riyals, euros and UAE dirhams	place not stated	held		mostly US dollars, then Saudi riyals, euros and UAE dirhams; US$4.9 billion in and US$5.6 billion out through banks in 2022
 YQ-D542	YG-125	Available	Mellow's service	held		yes, through Mellow: payouts to Yemeni bank cards in EUR, converted by the issuing bank as needed; successful payouts recorded to Mastercard cards of Al-Kuraimi Bank (BIN 5262 16) and CSCBANK SAL (BIN 5444 83)
 YQ-D544	YG-125	Unavailable	Wallex's service	held		not Wallex (M-DAQ): Yemen is on its list of prohibited countries, to or from which it cannot send or receive money
-YQ-D634	YG-125	Send only	PayPal's service	held		PayPal: from Yemen, money can only be sent, not received
+YQ-D634	YG-125	Sending from Yemen	PayPal's service	held		Send only: from Yemen, money can only be sent, not received (YE-D997). It states sending from Yemen at more detail than YQ-E728, so the two share the label of what both state, and 'only' stays here. Dated by the capture date, as a live page (independent review, finding 5).
 YQ-E542	YG-125	Unavailable	CoinGate's service	held		CoinGate: not available; payments from or to Yemen not permitted, payouts to wallets there blocked, Binance Pay payments from there returned
 YQ-E543	YG-125	Unavailable	Stripe's service	held		Stripe: businesses can use it only in the listed countries and regions; Yemen is not among them
 YQ-E579	YG-125	Available	PayPal's service	held		PayPal: accepted in Yemen (Wise's guide)
-YQ-E580	YG-125	Available	Wise's service	held		Wise: listed among the payment options for use in Yemen (Wise's guide)
+YQ-E580	YG-741	listed among the best payment options for use in Yemen	Wise's service	held		Wise's guide lists Wise among 'the most popular and best payment options for you to use in Yemen' (YE-E635, YE-E636). It states no availability, so it isn't a state of YG-125's question: relabelled from 'Available' and split from YG-125 (independent review, finding 5). Wise's own terms give Yemen among the places where it doesn't offer its services (YQ-E581).
 YQ-E581	YG-125	Unavailable	Wise's service	held		Wise: not offered; money cannot be sent to or received from Yemen, and no one there can log in, register or use a Wise card
 YQ-E582	YG-125	Not available, a request to add it open	WooPayments's service	held		WooPayments: a user's request of 20 December 2021 to add it for Yemeni businesses, shown as open
-YQ-E728	YG-125	Available	PayPal's service	held		PayPal (its Yemen site): shopping with PayPal, a wallet loaded with debit cards, credit cards and bank accounts, payments sent almost anywhere; an account needed to send and receive; fees for currency conversion and for sending to an account in another country
+YQ-E728	YG-125	Sending from Yemen	PayPal's service	held		PayPal's Yemen site shows paying and sending: 'تسوق ... باستخدام PayPal' (YE-E1151), 'أرسل المدفوعات بسرعة وأمان إلى أي مكان تقريبا' (YE-E1152), titled 'إرسال مدفوعات وتسوق وإدارة المدفوعات' (YE-E843). Its footnote, an account is needed to send and receive payments (YE-E842), is general and doesn't say an account in Yemen can receive. Relabelled from 'Available' (independent review, finding 5). It shares its label with YQ-D634, which states the same at more detail.
 YQ-E729	YG-125	Unavailable	Rho's service	held		Rho: all payments to and from Yemen unsupported, owners from Yemen ineligible for an account, and card transactions from or to merchants there not permitted
 YQ-E846	YG-125	Available	Yemeni Store for E-Payment's service	held		an intermediary (the Yemeni Store for E-Payment) for depositing with and withdrawing from forex brokers while in Yemen, through payment methods including Al-Najm money transfers
 YQ-E897	YG-125	Unavailable	Zid Pay's service	held		Zid Pay (the Zid store platform's payment service; its terms for Kuwait): merchants may not use it for activities directly or indirectly involving countries under international sanctions, Yemen among them
@@ -219,15 +219,15 @@ YQ-D428	YG-130	many unlicensed	place not stated	held		nearly 800 of the 1,350 mo
 YQ-D469	YG-625	Unlicensed companies part of the parallel market	place not stated	held		the parallel currency market includes unlicensed or non-compliant money exchange companies, as well as currency speculators and war profiteers
 YQ-E770	YG-130	many unlicensed	place not stated	held		about 1,350 licensed exchange houses and an estimated 800 unlicensed operators, up from 462 licensed exchange houses in 2015 Label shared across the group (second review, YA-65): the rows state many exchange businesses working without a licence at different detail; each source's count, and the licensed count where it gives one, are in its words above.
 YQ-A039	YG-131	Thousands	place not stated	held		Estimated in the thousands (يُقدر عددها بالآلاف); exchange companies became safer than banks (أكثر أمانًا من البنوك)
-YQ-D347	YG-131	96 companies, 233 institutions and 68 agencies registered	the internationally recognized government's area	held		96 companies, 233 institutions and 68 agencies registered with the central bank in Aden
-YQ-D348	YG-131	Over 170 companies registered	Houthis' area	held		over 170 companies registered with the central bank in Sana'a
-YQ-D351	YG-131	415 companies	Sana'a	held		415, up from 179 in 2014
-YQ-D352	YG-131	91 companies	Aden	held		91, up from 34 in 2014
+YQ-D347	YG-740	96 companies, 233 institutions and 68 agencies registered	the internationally recognized government's area	held		96 companies, 233 institutions and 68 agencies registered with the central bank in Aden
+YQ-D348	YG-740	Over 170 companies registered	Houthis' area	held		over 170 companies registered with the central bank in Sana'a
+YQ-D351	YG-131	415 money exchangers	Sana'a	held		415, up from 179 in 2014. Item 073: 'The number of money exchangers in Sana’a rose from 179 in 2014 to 415 in 2023' (YE-D478). Relabelled from '415 companies', which set this count against the licensed companies (independent review, finding 7).
+YQ-D352	YG-131	91 money exchangers	Aden	held		91, up from 34 in 2014. Item 073: 'while the number in Aden rose from 34 to 91' (YE-D478). Relabelled from '91 companies' (independent review, finding 7).
 YQ-D427	YG-131	1,350 outlets and companies	place not stated	held		1,350 money exchange outlets and companies (517 in 2011, 565 in 2012, 600 in 2014)
-YQ-D429	YG-131	332 outlets, 96 companies and 86 agents licensed	Aden	held		332 licensed individual money exchange outlets, 96 money exchange companies and 86 money transfer agents
-YQ-D430	YG-131	Over 170 companies licensed	Sana'a	held		more than 170 licensed money exchange companies
-YQ-D431	YG-131	415 companies	Sana'a	held		415 exchange companies, up from 179 in 2014
-YQ-D432	YG-131	91 companies	Aden	held		91 exchange companies, up from 34 in 2014
+YQ-D429	YG-740	332 outlets, 96 companies and 86 agents licensed	Aden	held		332 licensed individual money exchange outlets, 96 money exchange companies and 86 money transfer agents
+YQ-D430	YG-740	Over 170 companies licensed	Sana'a	held		more than 170 licensed money exchange companies
+YQ-D431	YG-131	415 money exchangers	Sana'a	held		415 exchange companies, up from 179 in 2014 (YE-D613). Item 076 gives the same count and years as item 073's money exchangers (YQ-D351), so the two share one label.
+YQ-D432	YG-131	91 money exchangers	Aden	held		91 exchange companies, up from 34 in 2014 (YE-D613). Item 076 gives the same count and years as item 073's money exchangers (YQ-D352), so the two share one label.
 YQ-E171	YG-131	876 companies and shops	place not stated	held		876 money exchange companies and shops
 YQ-E172	YG-131	3,244 companies and shops	place not stated	held		3,244 money exchange companies and shops
 YQ-E895	YG-131	Thousands	place not stated	held		thousands of exchange companies, seen as safer than banks

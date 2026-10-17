@@ -81,3 +81,15 @@ This file names an `axes.tsv` in full by its sha256 only when the review lets it
   - **6, precision ties.** They stay disputes, as the brief says. Phase D marks a disputed part `unknown`, so no false mark follows. The cases that rest on such a tie aren't treated as in force for marking.
   - **8, stale parts.** Parts for overlapping place names can keep old states in `today`. Until the method changes, phase D reads each part's date in the axis's `note`, and treats a part as stale where a later part names the same ground.
   - **The method change, before Stage 4:** a `within` relation between places, each link on a source, so that a strictly later state supersedes the states at places inside its own. It extends the `across Yemen` rule.
+
+## The fixes from the independent review, checked by the coordinator, 17 October 2026
+
+Step 2a made fixes 1 to 5 and 7. The coordinator diffed the result against the `axes.tsv` let through above, and read each changed `today`.
+- **What changed:** axes YA-03, 05, 15, 25, 40, 59, 60, 62 and 64; one new axis, YA-228; one new constant, YK-513. No other axis or constant changed or moved. The join, `--groups` and `--states` run clean.
+- **YA-25.** Each side's 2024 ban is now ended at its own area by the July 2024 agreement row that ends it.
+- **YA-62.** PayPal reads "Sending from Yemen". The source's "only" stays in YQ-D634's `note` and its quote, under the label rule. Wise is `Unavailable`, no longer disputed.
+- **YA-05.** The government's area reads "fixed", from the April 2026 statement.
+- **YA-15.** The withdrawal of pre-2016 notes is `provided for`, so the government's area keeps "all notes, new and old, legal tender".
+- **YA-40.** The founder unknown is closed from held evidence (YQ-D636, YE-D1000), and its `unknowns.tsv` row is gone.
+
+The coordinator lets this `axes.tsv` through, at sha256 ef7e2d6c70aae0e46218cc95c1dd9e14c15a8beec43428f7fe1e69d1f4837f06.
