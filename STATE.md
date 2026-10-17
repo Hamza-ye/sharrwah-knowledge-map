@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 19:30 UTC.
+**Updated:** 17 October 2026, 18:50 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -249,7 +249,7 @@ Agents started earlier keep their effort.
       - **Salla's A2 on "agent"** (commit `0b59a65`): S01-SA-190 to 201, and gap S01-SA-G07: no held source says in what capacity Salla holds buyers' payments;
       - **the entry, rewritten** (draft, commits `90fa73b` and `28828a4`): 14 decisions, each with its own answer line, and the links between them marked as the coordinator's reading;
       - **the method report** (draft, commit `50e031f`): F's findings and what changed, what a subject costs, and the proposed changes before more subjects;
-    - **Done since** (18:00 to 19:30 UTC):
+    - **Done since** (18:00 to 18:50 UTC):
       - A3 confirmed S01-SA-G07, and added S01-SA-202 (commit `a884d3a`);
       - phase B placed S01-SA-190 to 202: Salla now answers S01-VP-06 with S01-V-660 and the gap (commit `4fff36c`);
       - phase D re-marked the six variation points whose rows changed: S01-VP-04 is now carried with a partner through S01-V-091 (commit `2f42203`);
@@ -291,7 +291,7 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (17 October 2026, 19:30 UTC):**
+**Agents running when last checked (17 October 2026, 18:50 UTC):**
 - **Running:**
   - pilot F, re-checking the fixes: `a349d058600a20b3a` (`max`).
 - **Done, and resumable:**
