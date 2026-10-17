@@ -606,3 +606,74 @@ The other new findings, 33 to 37, are optional.
 | 7. Matching | 614 variants: the 46 removed and 7 added, and all 576 answer rows' roles. In full, the rows the marks, readings and entry name | 0 | 2 |
 | 8. Kinds | the 32 changed and 13 new rows of `kinds.tsv`, and every variant's kind against its statements' | 0 | 0 |
 | 9. What each variation point bears on | the ids added since the review, against findings 30 and 31 | 0 | 0 |
+
+## Second re-check
+
+**17 October 2026.** At the coordinator's request, a check limited to the coordinator's edits since the re-check, in commit `978e7a9`. Those edits are to:
+- `entry.md` and `method-report.md`;
+- the new entry in `PLAN.md` section 11;
+- the new marked line in `briefs/B-variation-points.md`.
+
+Between `4685b61` and `978e7a9`, the only other changes are to `STATE.md` and this review's own re-check. I checked every new claim and quote against the files with scripts run with `python3 -I`. I ran nothing from inside `evidence/` or the observed repositories, and changed no file but this one.
+
+### Verdict
+
+**Yes: the entry now lets the founder decide.** Finding 32 is fixed, and so are the optional findings 33, 34, 35 and 37.
+
+There is no must-fix finding. The new findings, 38 to 40, are optional:
+- 38: two new evidence lines go against the same-party rule, and a third calls a sales channel a payment method's provider;
+- 39: a Stage 1 citation and a gloss are imprecise;
+- 40: the PLAN.md entry records only part of the wallet ruling.
+
+### What I checked
+
+- **Finding 32: fixed.**
+  - Option B now needs "A processor that serves merchants in Yemen and holds their funds in accounts opened through Sharrwah":
+    - the international processors fail on YA-62 and YK-514;
+    - the local providers serve merchants (YA-107, YK-131, YK-161);
+    - so "this need is unsettled, not unmet".
+  - The recommendation says the card acquirer's variant "doesn't say whose account holds the funds, so it can serve under B or C". That agrees with Decisions 2 and 4.
+  - "In short", "Processors" and "What would change this entry" say the same.
+  - YA-107 and YK-131 are marked unchecked in two places.
+  - The quotes match YA-107's `today` (both parts; YE-D187 dates the second to 2025), YK-131's state and places, and YE-E765.
+- **The other entry edits.**
+  - **Quotes and ids.** The commit adds 24 quoted strings, 17 variant ids and 10 Stage 1 ids, and removes none.
+    - Every quote matches its source.
+    - Every variant is under its decision's variation point.
+    - The scopes the entry gives match the variants': "in Europe and the UK" for V-033, the UAE and Kuwait for V-341, Zid's point of sale for V-346, and the standalone PayPal gateway for V-348.
+  - **Finding 33.** Each statement it named is now quoted.
+  - **Finding 34.** All seven points are taken. ONE Cash's "March 2022" is YE-E235's date.
+  - **Decision 14.** The new mark line quotes S01-ZD-121 word for word. The Kuraimi quote is YE-E082's, word for word. Stage 1 records the client as community-written (YQ-F063, al-saloul/kurimibanck).
+- **The method report.**
+  - The table's values match the files: 821 statements; 69 gaps; 614 variants (576 answers, 36 `gap`, 2 `absent`); 1,561 quotes; 14 founder items; and 183 marks (90, 35, 52 and 6).
+  - The account of finding 26 now matches what that finding said. The counts are "added 7" and "614", and proposal 1 is now "in the coordinator's reading".
+  - Sections 5, 6 and 8 are as finding 35 asked.
+  - The re-check paragraph and the "still open" list match this review, findings 36 and 29 included. "21 of 23" matches `analysis.tsv`.
+- **Finding 37: fixed.** `PLAN.md` section 11 has a dated entry, and the B brief marks the ruling as the coordinator's own. Both agree with the answer phase B recorded in `notes-b.md`.
+
+### Findings
+
+38. **`entry.md`, Decisions 2, 3 and 4: how three new evidence lines are grouped.** `optional`
+    - **Problem.** Two new lines put a platform's own payment product under "a processor".
+      - Decision 2 puts "Your new BigCommerce Payments account is what processes and settles all transactions ..." (S01-V-613) under "a processor or acquirer". Its `basis_evidence` names "Your new BigCommerce Payments account".
+      - Decision 3 puts "WooPayments can send payouts ..." (S01-V-050) under "a processor". Yet in the same decision, Zid Pay (S01-V-060) is under "the platform itself".
+      - Under phase C's same-party rule, both are the platform itself. The entry applies that rule in "What the references do": "Each puts the funds in a balance or account under its own name or its payment product's".
+    - **A third line.** Decision 4 puts Trendyol, "يتم الدفع إلى ترينديول" (S01-V-099), under "the provider of each payment method". Trendyol is a sales channel. Phase C's question for Decision 4 names no sales channel; Decision 3's does.
+    - **Evidence.** The variants' `basis_evidence` and the two founder items, as quoted. No option or recommendation depends on these lines.
+    - **Fix:** put V-613 and V-050 under "the platform itself", noting the processor behind each (PayPal, Stripe). Call Trendyol a sales channel.
+
+39. **`entry.md`, Decision 14's Kuraimi line, "What this entry rests on", and the YA-102 gloss.** `optional`
+    - **The Kuraimi line.** It cites "YE-E082, cited under YK-131".
+      - YK-131 cites that quote only for the API being available.
+      - The Stage 1 item that records the fact the line uses is constant YK-452, "Which rial zone's customers a provider's payment API accepts": "by currency zone, old, new or all", at Kuraimi's E-Pay (YQ-E078, YQ-F063; YE-E082, YE-E083, YE-F086, YE-F087).
+      - YK-452 was in neither of Stage 1's checks. Cite it, and list it, rather than YE-E082, among the unchecked items.
+    - **The YA-102 gloss.** "'unknown @ place not stated' is where the sources give no place" leaves out why that part is unknown. Stage 1's `unknowns.tsv` row says both rows that name no place give banks only as a past framework: before 2014 (YQ-E151), and until 2020 (YQ-D089).
+
+40. **`PLAN.md` section 11, the new entry on wallets.** `optional`
+    - **Problem.** The B brief's marked line has four sentences, and the PLAN entry gives two of them. It leaves out:
+      - "Where the wallet itself is the answer, the statement must say so";
+      - "A time, condition, fee or deduction acting on an in-flow wallet's funds answers as usual".
+    - **Evidence.**
+      - The second of these is what keeps the variants behind the six marks carried through Zid's wallet (finding 37).
+      - Both sentences are phase B's application of the coordinator's answer (`notes-b.md`, "I applied these as follows"), which the brief now marks as the coordinator's own.
+    - **Fix:** add both sentences to the entry, so that section 11 records the whole ruling.
