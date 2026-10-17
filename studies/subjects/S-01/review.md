@@ -357,3 +357,252 @@ The marked cases are right. Each variation point has `YC-00` and every case whos
 | 7. Matching | 653 variants (616 answers). I read every excerpt against its variation point's X and scanned every `basis_evidence` for its bases. In full, I read the variants that the marks, readings and entry name, and all of VP-10's | 2 | 1 |
 | 8. Kinds | 235 statements the analysis cites, each traced to its citation's address: through the run manifest for captured copies, and `observed-sa`'s `meta.json` for Salla's structures | 1 | 1 |
 | 9. What each variation point bears on | 23 rows. Each variation point's answer-variant scopes and (e) conditions I grouped by topic, and compared with the listed ids and with Stage 1's 228 axes and 514 constants | 0 | 2 |
+
+## Re-check
+
+**17 October 2026.** At the coordinator's request, a re-check of the fixes made after this review, under `briefs/F-review.md` and the severity scale above. It covers the must-fix findings, what is new in the entry and the method report, and the rows that changed where a finding or a new ruling bears on them. I didn't re-review unchanged rows.
+
+- **Re-checked:** the repository at `4685b61`. It is now at `baf353f`, whose two later commits change only `STATE.md`. Of the pilot's files, only `entry.md` changed after `44e09ab`, and Stage 1's files are unchanged since `4e3f3dd`, as the entry's header says.
+- **What I read:**
+  - every file in `studies/subjects/S-01/` against its state at `c15b44f`, and the new marked lines in the B and C briefs;
+  - the two new entries in `PLAN.md` section 11, with their four rulings;
+  - in `studies/yemen-cases/`: the "Check of the S-01 entry's axes" in `review-independent.md`; the last two sections of `review-axes.md`; and the axes, constants, cases and citations that the entry and the marks cite, or that bear on what they claim.
+- **How I checked:** as before, with scripts of my own run with `python3 -I`. I ran nothing from inside `evidence/` or the observed repositories, and changed no file but this one.
+
+### Verdict
+
+**Yes, once finding 32 is fixed.** Thirteen of the 14 must-fix findings are fixed. The fourteenth, 15, is fixed for what it named.
+- The entry now gives each of its 14 decisions:
+  - the question as phase C or D wrote it;
+  - why it is the founder's;
+  - its Yemen mark as `yemen-marks.tsv` gives it;
+  - options with what each needs;
+  - a recommendation headed as the coordinator's;
+  - an answer line.
+- The links between decisions are marked as the coordinator's reading. They are offered as a standing decision that the founder may take or not.
+- Every quotation in the entry matches its source.
+
+One thing still stands in the founder's way, and it is on the root decision.
+- Option B, a processor holding the funds, is said to need "A processor that serves merchants in Yemen", and "None that Stage 1 covers does".
+- Stage 1 shows local gateways, a card acquirer and payment APIs that serve merchants in Yemen (YA-107, YK-131, YK-161).
+- What Stage 1 doesn't show is whether any of them would hold funds in an account opened through a platform. So B's outside need is unsettled, not unmet (32).
+
+The other new findings, 33 to 37, are optional.
+
+**Must fix:** 32.
+
+### The must-fix findings
+
+- **1. Fixed.** VP-08's cause is now `unknown`.
+  - Its reading applies the same-party rule. Salla's, Zid's and WooCommerce's declarations name only the platform itself as withholding, so V-148 doesn't differ from the others and test 2 doesn't apply. BigCommerce is gap-only, so no later test can be shown.
+  - V-149 and V-150 are gone under the role test.
+  - `follows` now adds "kept open as a variation point until evidence settles it". The entry's row matches, and `unknown` gives no founder item.
+- **2. Fixed, by ruling.** A bullet (d) variant, and then any statement that a party has no part, names no one filling X (`PLAN.md` section 11; `C-analysis.md`, test 1 and "A party said to have no part", marked).
+  - VP-05's reading applies it to V-105, to the second part of V-109, and to Coinbase's S01-SH-017, now in V-106.
+  - The cause stays `no difference`, so `follows` and the entry's row stand.
+- **12. Fixed.** The table gives every rule of each row's `follows`, and all nine rows match `analysis.tsv`. VP-12's and VP-17's rows now give the B row, not the D row.
+- **13. Fixed.**
+  - Stage 1's reviewer checked the axes the entry rested on ("Check of the S-01 entry's axes"). Step 2a fixed YA-44, 102, 105, 106 and 129, and the coordinator checked the result (`review-axes.md`).
+  - The entry now says which facts were checked, names the axes phase D added later that weren't, and lists the cases that vary the facts behind the options. Each list and status matches the rebuilt `cases.tsv`:
+    - YA-102 in YC-184, YC-185 and YC-311;
+    - YA-26 in six cases;
+    - YA-44 in YC-146 and YC-342;
+    - YA-86 in YC-178 and YC-285;
+    - all of these `occurred`, YC-101 `provided for`, and YC-53, YC-54 and YC-57 `in force`;
+    - none for YA-103, YA-106, YA-109 or YA-217.
+  - "No mark rests on them" holds for YA-28, YA-120, YA-122, YA-124 and YA-125. The marks' case evidence cites only `Q2`, YA-62, YA-131, YK-161, YK-203 and their citations.
+  - The two claims I quoted are gone from the entry. One survives in the method report (35).
+- **14. Fixed.** YA-102's `today` now gives "banks and licensed non-bank institutions @ the internationally recognized government's area", from the Aden bank's 2022 and 2023 instruments, and the entry quotes it.
+  - Option A now needs "A licence, or a licensed partner that holds the money for Sharrwah". In the government's area, that means YK-515's joint-stock company and capital, the Aden bank's licence (YA-102, YA-103) and the funds held at a bank (YA-106).
+  - YK-515 gives the instrument's 750 million for a system operator. The two lines no longer contradict each other.
+- **15. Partly fixed.**
+  - What it named is fixed:
+    - "In short" and "What Yemen shows" now say that none of the references' processors that Stage 1 covers serves a merchant in Yemen, and name those Stage 1 has nothing on, BitPay among them;
+    - BitPay is under "What would change this entry";
+    - V-003 to V-005, V-008, V-011, V-026 and V-532 are under "can't be shown either way".
+  - But option B and the recommendation now say that no processor Stage 1 covers serves merchants in Yemen. That overreaches the other way (32).
+- **16. Fixed.** V-024 is removed: S01-ZD-057 describes a wallet the merchant tops up to buy Zid's services, which the role test puts outside the flow.
+  - Option A2 is gone.
+  - Zid's row in "What the references do" is now Zid Pay's balance (V-023), and the wallet only as where Zid Ship's cash on delivery goes (V-656). The entry gives that one's mark as unsettled.
+  - Nothing in the entry now says Zid holds funds abroad.
+- **17. Fixed.** The three-way split of the platforms is gone.
+  - The entry says every platform names the platform itself, that three name processors behind it, and that "the options below aren't groups of platforms".
+  - The grouping into options is marked as the coordinator's.
+  - Zid's cash on delivery now sits with Zid (V-656, V-658), not with couriers.
+  - Phase C's letters are quoted as recorded.
+- **18. Fixed,** for what it named.
+  - The recommendation no longer says B is what phase D shows, and no mark is said to rest on a phone wallet.
+  - Wallet licences are qualified by YA-217 and YA-26. "Stage 1 shows no non-bank wallet licensed by the Aden central bank" is marked as the reviewer's reading.
+  - Where the recommendation now places the card acquirer is part of 32.
+- **19. Fixed.** Each of the 14 decisions has its own answer line and its own recommendation.
+  - What Decision 1 implies for Decisions 2 to 12 is a table that gives each item's answer under all four options, marked as the coordinator's reading.
+  - The founder may adopt it as a standing decision (`PLAN.md` section 5) or answer each item.
+- **20. Fixed.**
+  - Decision 9 gives V-480's 9 riyals inside Saudi Arabia, with the 50 riyals as another clause of S01-ZD-058.
+  - Decision 13, formerly 11, lists which installment variants fail and which can't be shown, as VP-22's `YC-00` row does.
+- **25. Fixed.** V-550 is removed.
+  - VP-10's mark is `no placement` in all six of its cases, with the product gap and founder item the D brief asks for. The entry carries it as Decision 12 and quotes the product gap.
+  - The cause stays `unknown`, now with Salla, Zid and BigCommerce all gap-only.
+- **26. Fixed, by ruling.** `answers` rests on the role a statement's own words name, whatever its basis (`PLAN.md` section 11; the B brief's rule 4, marked).
+  - All 576 answer rows now name the role and quote the words that name it. None still says "the words differ".
+  - Rows outside the flow are removed, and the marks and readings were re-derived. VP-01's mark is now `unknown`.
+  - How the ruling applies to wallets isn't recorded with the rulings (37).
+- **28. Fixed.** `method/source_kinds.py` now takes a captured copy's address from its run's manifest, and a Salla structure's address from the nearest `meta.json`.
+  - Every statement the finding named is now `official page`.
+  - 32 kinds changed in all: 31 to `official page`, and S01-ZD-154, a script chunk, to `shipped`.
+  - Every variant's kind matches its statements'.
+
+**The optional findings** were mostly taken up too:
+- 3 to 7, 9, 10, 21 to 24, 27, 30 and 31 are fixed;
+- 8 and 11 are carried in the marks' notes and the entry's wording, though phase D gives reasons for not reading S01-SA-189 as a condition;
+- 29 waits for a ruling.
+
+### What is new in the entry and the method report
+
+**What I checked:**
+- **Quotations.** The entry's 182 quoted strings:
+  - 128 against the statement, variant or Stage 1 id they cite;
+  - 8 Stage 1 states against `today`, where the id is on the line before;
+  - 32 against `analysis.tsv`, `yemen-marks.tsv` and the C brief's rule table, among them the 14 questions, which are phase C's `founder_item` or phase D's, word for word;
+  - 2 against Q2;
+  - and 12 that name sections, files or variation points.
+- **Ids.** The 187 S01 ids all exist. Every variant cited under a decision is under that decision's variation point. The exceptions are S01-V-612 and S01-V-038, VP-02's, which Decision 1 uses as illustrations.
+- **Stage 1.** Each of the 43 Stage 1 ids gives what the entry quotes, as a part of `today` or as a constant's state.
+- **Founder items.** 13 come from the rule table and one from the `no placement` mark.
+- **Recommendations.** Every recommendation is headed as the coordinator's. Nothing is decided for the founder: the implication table is offered, not applied.
+- **The method report.** Its new sections 10 and 11 and its proposals, against the files. Section 12's token counts I can't check.
+
+**Findings:**
+
+32. **`entry.md`, Decision 1: option B's "What it needs from outside", and the recommendation.** `must fix`
+    - **Problem.** Two lines say that no processor Stage 1 covers serves merchants in Yemen, and a third assumes it:
+      - option B's row: "A processor that serves merchants in Yemen. None that Stage 1 covers does (YA-62, YK-514)";
+      - the recommendation: "B needs a processor that serves merchants in Yemen. None that Stage 1 covers does, and Stage 1 has nothing on the rest";
+      - "What would change this entry": "A processor that serves merchants in Yemen would open option B".
+
+      YA-62 and YK-514 cover only international services. Stage 1 also covers local ones that serve merchants in Yemen, listed under Evidence below.
+    - **A second problem.** The recommendation counts "A card acquirer pays out (Decision 3)" as C's arrangement. Yet Decisions 2 and 4 put "a payment processor or acquirer" under B. The variant behind that mark, S01-V-059, names Salla Point's "مزود الخدمة مثل جيديا" (the service provider, such as Geidea), Salla's own partner. Nothing in it says whose account the funds sit in.
+    - **Evidence.**
+      - **YK-131,** "Whether a merchant can take online payments through a wallet's or bank's payment API": "available" at Cash Pay, Kuraimi's E-Pay, Fatora, Floosak, Kuraimi and Shamil Money.
+        - Cash: "As soon as the customer clicks “Pay via Cash Pay”, the amount is deducted from their account and added to your Cash Wallet account" (YE-E765).
+        - Kuraimi's gateway offers "domestic e-commerce suppliers a powerful tool to seamlessly integrate their systems with Kuraimi bank applications" (YE-E081).
+      - **YA-107,** "Whether online card-payment gateways are available to merchants": "available through banks, for local and international cards @ e-payment gateway (MEPS Yemen)'s service", beside "lacking @ place not stated" (2025).
+      - **YK-161,** SabaCard's card acquiring, which the entry cites itself.
+      - **What Stage 1 doesn't show.** It doesn't say whether any of these opens accounts for merchants through a platform, which is what B needs as the entry defines it ("in an account the merchant opens through Sharrwah"). As far as Stage 1 shows, each serves the merchant through the merchant's own account with it, which is C.
+      - So B's outside need is unsettled rather than unmet. C has Stage 1 support the entry doesn't cite.
+      - YA-107 and YK-131 were in neither of Stage 1's checks. The "Check of S-01's axes" lists both as left out of S-01's list, so cite them as unchecked.
+    - **Fix:**
+      - Say that the international processors Stage 1 covers don't serve Yemen.
+      - Say that local gateways, an acquirer and payment APIs serve merchants there, through the merchant's own account (C).
+      - Say that Stage 1 doesn't show whether any of them would hold funds in an account opened through Sharrwah (B).
+      - Put the card acquirer under the same option in Decision 1's recommendation as in Decisions 2 and 4, or say that it can serve under either.
+
+33. **`entry.md`, Decisions 2 to 14, "The evidence".** `optional`
+    - **Problem.** `PLAN.md` section 5 asks a decision item for "each platform's statement, quoted and cited".
+      - The rewritten items quote statements by option instead, and some leave out platforms that answer.
+      - Some also leave out the statements that phase C's `cause_basis` rests on for "vendor choice", which is why the item is the founder's.
+    - **Evidence.**
+      - Decision 2 leaves out the acquirer (S01-SH-058) and BitPay (S01-BC-021), on which VP-02's reading rests. It quotes no WooCommerce or BigCommerce statement.
+      - Decision 3 leaves out BitPay, and quotes no WooCommerce statement.
+      - Decision 4 leaves out ترينديول (S01-ZD-097) and Braintree (S01-BC-104), the two differences VP-04's reading rests on. It quotes no WooCommerce or BigCommerce statement.
+      - Decision 7 leaves out Shopify's Global-e account and BigCommerce's Braintree account (S01-SH-098, S01-BC-105), on which VP-11's reading rests.
+      - Decision 8 leaves out the statements VP-15's reading rests on (S01-SA-032, S01-SA-050, S01-ZD-104, S01-BC-023), and quotes no Salla statement.
+      - Decision 14 quotes no BigCommerce statement (V-529 to V-531).
+      - No option or recommendation depends on these. But the founder can't check "Why it is yours" from the item.
+
+34. **`entry.md`, smaller points.** `optional`
+    - "Stripe's pooled accounts (S01-V-008, S01-V-011)": only V-011 names pooled accounts. V-008 is "funds held by Stripe or an applicable Affiliate".
+    - Option A's "One area's licence hasn't carried to the other (YA-217)" rests on one company, ONE Cash. As of March 2022, CBY-Aden "has not yet accepted its request" (YE-E235).
+    - "In short" says "couriers collect it for business accounts". YK-203 names one courier, Torod, and the body says "A courier".
+    - "What Yemen shows" says each state "was fixed where it was wrong". Two of the check's minor items weren't applied, though neither is a state the entry quotes:
+      - YA-68's YQ-C039 is still `held`, so `today` keeps "Not yet available, coming later @ Cash e-wallet's service";
+      - YA-103's "Council of Ministers' area" still names no seat.
+    - YA-102: the entry explains "A third part", but `today` has a fourth, "unknown @ place not stated".
+    - "What this entry rests on" names the axes phase D added after the checks, but not the constants that neither check covered: YK-127, YK-335, YK-350, YK-352 to YK-354 and YK-392. No mark rests on these either.
+    - "What the references do" quotes S01-V-612, "will handle all settlement", in the column "What its words say holds the funds". It is VP-02's variant, about settlement.
+
+35. **`method-report.md`.** `optional`
+    - **Section 11's account of finding 26.** It says phase B "placed 83 variants on meaning, where their own words named no one in the variation point's role".
+      - Finding 26 said those rows' `basis_evidence` showed no shared word, which the rules then asked for.
+      - Under the ruling, most of them name the role. Of the 146 rows findings 26 and 27 pointed to, 118 kept their place (`notes-b.md`, "Rows rewritten"), as section 11 says further down.
+    - **Section 11's counts** stop before Salla's follow-up: "added 6, so the variants went from 653 to 613". S01-V-660 makes it 7 and 614 (`notes-b.md`, "Result").
+    - **Proposal 1** says "one decision settles 11 of them".
+      - In the entry's own table, under option A, Decision 5 is decided "with the licence" and Decisions 10 to 12 apply on their own.
+      - So the eleven follow only under the other options, and the entry marks the links as the coordinator's reading.
+    - **The unchanged parts are now stale:**
+      - "Where the pilot stands". There are now 821 statements, 69 gaps and 1,561 quotes. There are 614 variants: 576 answers, 36 `gap` and 2 `absent`. Phase C gives 13 founder items and phase D one more. Of the 183 marks, 90 are carried unchanged, 35 only with a partner, 52 `unknown` and 6 `no placement`.
+      - Sections 5 and 6 list as "still open" two problems that the rulings settled: different words for one thing, and one coexistence letter per platform.
+      - Section 8 still says "Yemen's variation across places and time doesn't move this subject", the claim finding 13 asked the entry to drop. The entry now limits it to the axes the variation points bear on.
+
+### Rows changed since the review
+
+**What I checked:**
+- **`analysis.tsv`.**
+  - All 23 `follows` cells hold every rule the rule table gives for their cause, cost and letters, joined letters included, and no other.
+  - There are 13 founder items.
+  - The ten changed readings (VP-04, 05, 06, 08, 09, 10, 12, 16, 21 and 22) follow from their statements under the two new rulings. Two notes:
+    - VP-09's reading reads Salla's no-part statement, which is about refunds of Tamara orders (S01-SA-106), as keeping the platform itself out of Salla's whole set. Phase C records the scope question itself (`notes-c.md`, problem 19), and the cause holds without it.
+    - VP-22's founder item now rests on "after capture" and "up front" being different words (problem 16). The entry recommends defer, so nothing turns on it.
+- **`variants.tsv`.**
+  - 614 rows: 46 removed and 7 added.
+  - All 576 answer rows name a role and quote the words that name it.
+  - I read the seven new rows, the rows that the marks, readings and entry name, and the removed rows against `notes-b.md`'s reasons.
+- **`yemen-marks.tsv`.**
+  - 183 rows. Each variation point has `YC-00` and every case of the rebuilt `cases.tsv` that changes an axis it bears on, with none extra.
+  - Every row outside `YC-00` equals `YC-00` in every field but `note`.
+  - I read `YC-00`'s 23 in full. VP-01, 04, 10 and 11 changed. VP-04's mark moved from V-093 to V-091, which gained S01-SA-198 and is the lower id (`notes-d.md`). The mark now names who collects, where V-093 said only that Salla doesn't.
+- **`bears-on.tsv`.** It adds what findings 30 and 31 asked for:
+  - YA-27 and YA-28 on the seven variation points named;
+  - YA-120, YA-122 and YA-124 on VP-03;
+  - YA-125 on VP-05, 11 and 13;
+  - the crypto constants.
+- **`kinds.tsv`.** The 32 changed and 13 new rows, as under 28.
+- **Coverage.** 46 of the 616 statements under bullets (a) to (d) are under no variation point.
+  - `notes-b.md` names each of the 35 new ones with a reason, and the reasons hold: outside the flow, a wallet for the platform's services, no time or party named, or a bank account's requirements.
+  - Two are close calls. Neither would change an answer set:
+    - S01-SA-201: cash-on-delivery settlement "تختلف ... بحسب سياسة شركة الشحن" (differs by the shipping company's policy);
+    - S01-SA-093: the orders a cash-on-delivery invoice covers, those completed "خلال الأسبوع السابق" (during the previous week).
+
+**Findings:**
+
+36. **`variants.tsv`, S01-V-528, and S01-VP-23 in `analysis.tsv` and `yemen-marks.tsv`.** `optional`
+    - **Problem.** V-528 names the four Gulf currencies in which wallet amounts "لا يمكن سحب" (can't be withdrawn). Its `basis_evidence` names the role "the currency in which the funds are paid out or settled".
+      - So its words name currencies kept out of that role. This is the case phase B's problem 4 left open (`notes-b.md`, "Problems with the ruling"). The no-part rulings cover phase C's comparisons, not placements or marks.
+      - Yet VP-23's reading rests on it: "Zid names the Gulf currencies whose wallet balances cannot be withdrawn", against Salla's set. V-528 is Zid's only VP-23 variant.
+      - VP-23's mark is `carried unchanged` through it, and the entry gives that as Decision 14's Yemen mark.
+    - **Evidence.**
+      - For a merchant in the Yemeni market the four currencies don't arise. S01-ZD-121 gives the wallet of a merchant outside the Kingdom "بالريال السعودي كعملة أساسية" (in Saudi riyals, as the base currency); only merchants in the Gulf states use their own currency. The mark's note says so; the entry doesn't.
+      - **If V-528 names no currency in the role,** Zid has no answer.
+        - The reading would rest on the global pair: Shopify's "a currency that Shopify supports for your country" (V-607), against BigCommerce's "settle in your store's default currency" (V-531). It would likely stay `vendor choice`.
+        - The mark would have no variant shown to work, and would likely become `unknown`.
+      - **If V-528 names the currency the wallet holds,** it answers, since the founder item asks where the funds are held too ("hold and pay out"). But its role should then say so.
+      - V-654 (VP-19) is of the same kind: Stripe absorbs the rate risk "so the seller doesn’t have to manage the difference". Nothing depends on it.
+    - **Fix:**
+      - Rule, for phases B and D, on variants that name only what doesn't fill X, or widen V-528's role to the currency held.
+      - In the entry, say what the mark carries for a merchant in the Yemeni market: a wallet in Saudi riyals.
+
+37. **`PLAN.md` section 11 and `briefs/B-variation-points.md`: the ruling on wallets.** `optional`
+    - **Problem.** Phase B applied an answer of the coordinator's that isn't recorded where the pilot's other rulings are (`notes-b.md`, "Follow-up: the role test on every basis, and wallets"):
+      - "A wallet statement answers when its words say the wallet holds the merchant's sales proceeds";
+      - "The flow ends at the payout to the merchant's own bank account".
+
+      The brief's marked line gives only the other side, "a wallet for buying the platform's own services". `method-report.md` lists three rulings, "each recorded in `PLAN.md` section 11 and marked in its brief". This one is in neither.
+    - **Evidence.** It decides placements and marks the entry rests on:
+      - V-656 and V-657 in VP-01, and V-194's removal from VP-11;
+      - S01-ZD-069's transfer into the wallet no longer counting as a payout: V-061 and V-318 moved to V-658 and V-659;
+      - the six marks carried through Zid's wallet (VP-09, 14, 15, 18, 19 and 23), whose variants stay because the wallet is in the flow.
+    - **Fix:** record it as the coordinator's own, dated, in `PLAN.md` section 11 and the B brief.
+
+### Items re-checked under each heading
+
+| Heading | Items re-checked | Must fix | Optional |
+| --- | --- | --- | --- |
+| 1. Readings | The 10 changed readings, against their cited statements and the two new C rulings; VP-23's, which the no-part ruling bears on | 0 | 0 |
+| 2. Coexistence and what follows | 23 rows: 21 changed letter cells, all 23 `follows` cells against the rule table with joined letters, and 13 founder items | 0 | 0 |
+| 3. Marks | 183 marks (122 at the review): case coverage against `bears-on.tsv` and the rebuilt `cases.tsv`. The 23 at `YC-00` I read in full, 4 of them changed; the 160 others I compared field by field with `YC-00` | 0 | 0 |
+| 4. Rows | none: Q3 runs at close-out | 0 | 0 |
+| 5. The register entry, with the method report | 14 decisions and the implication table; 182 quoted strings, 187 S01 ids, 43 Stage 1 ids and `Q2`; every recommendation; the case lists. The method report's new sections 10 and 11 and its proposals | 1 | 3 |
+| 6. Coverage | 616 statements under (a) to (d), and the 35 newly under no variation point against `notes-b.md`'s reasons | 0 | 0 |
+| 7. Matching | 614 variants: the 46 removed and 7 added, and all 576 answer rows' roles. In full, the rows the marks, readings and entry name | 0 | 2 |
+| 8. Kinds | the 32 changed and 13 new rows of `kinds.tsv`, and every variant's kind against its statements' | 0 | 0 |
+| 9. What each variation point bears on | the ids added since the review, against findings 30 and 31 | 0 | 0 |
