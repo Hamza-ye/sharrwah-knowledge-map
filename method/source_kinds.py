@@ -6,7 +6,7 @@
 # Each answer carries the rule that gave it, so a reader can challenge the rule rather than the agent.
 #
 # Usage as a command: python3 -I method/source_kinds.py SOURCE [SOURCE ...]
-import glob, json, os, re
+import csv, glob, json, os, re
 
 OFFICIAL = re.compile(r"/(legal|terms|tos|policies|policy|privacy|pricing|plans|agreements?)\b|terms[-_]?of[-_]?service|"
                       r"acceptable[-_]use|/conditions|/الشروط|/سياسة", re.I)
@@ -14,6 +14,8 @@ SHIPPED = re.compile(r"\.(m?js|map)(\?|$)|importmap|/bundles?/|/chunks?/|/assets
 SESSION_KEYS = {"trace", "bodies", "operation", "run_files", "steps", "dumps_sha256", "html_file", "step", "run_ids",
                 "captured", "element"}
 _meta_cache = {}
+_manifest_cache = {}
+SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def kind_of_url(u):
     if OFFICIAL.search(u):
@@ -22,7 +24,17 @@ def kind_of_url(u):
         return "shipped", "the address is code or a schema the platform ships"
     return "stated", "the address is a docs, help or other page"
 
-def _structure_meta(root, structure_dir):
+def _structure_meta(root, structure_dir, path=""):
+    """The meta.json nearest the cited file, from its own folder up to the structure's; else the structure's first."""
+    d = os.path.dirname(path)
+    while path and len(d) > len(structure_dir) and d.startswith(structure_dir + "/"):
+        m = os.path.join(root, d, "meta.json")
+        if os.path.isfile(m):
+            try:
+                return json.load(open(m, encoding="utf-8"))
+            except Exception:
+                break
+        d = os.path.dirname(d)
     key = (root, structure_dir)
     if key not in _meta_cache:
         metas = sorted(glob.glob(os.path.join(root, structure_dir, "**", "meta.json"), recursive=True))
@@ -34,6 +46,22 @@ def _structure_meta(root, structure_dir):
             except Exception:
                 continue
     return _meta_cache[key]
+
+def _captured_url(path):
+    """The address a captured copy in this repository was fetched from, by its run's manifest."""
+    m = re.match(r"^(evidence/.+?/runs/[^/]+)/(items/[^/]+)/", path)
+    if not m:
+        return ""
+    run, item = m.group(1), m.group(2)
+    if run not in _manifest_cache:
+        rows = {}
+        mf = os.path.join(SKM, run, "manifest.tsv")
+        if os.path.isfile(mf):
+            with open(mf, encoding="utf-8", newline="") as f:
+                for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
+                    rows[r.get("dir", "")] = r.get("url") or r.get("final_url") or ""
+        _manifest_cache[run] = rows
+    return _manifest_cache[run].get(item, "")
 
 def kind_of(source, roots):
     """(kind, rule) for a citation's source, or ("unknown", why)."""
@@ -47,8 +75,9 @@ def kind_of(source, roots):
     repo, path = m.group(1), m.group(2).strip().lstrip("/")
     if repo == "sharrwah-knowledge-map":
         if path.startswith("evidence/"):
-            k, why = kind_of_url(path)
-            return k, f"a captured copy in this repository: {why}"
+            url = _captured_url(path)
+            k, why = kind_of_url(url or path)
+            return k, (f"a captured copy of {url[:80]}: {why}" if url else f"a captured copy in this repository: {why}")
         return "unknown", "a file of this repository outside evidence/ is not a platform source"
     if path.startswith("raw/runs/"):
         run = path.split("/")[2] if len(path.split("/")) > 2 else ""
@@ -65,7 +94,7 @@ def kind_of(source, roots):
     if path.startswith("structures/"):
         parts = path.split("/")
         sdir = "/".join(parts[:3])
-        meta = _structure_meta(roots.get(repo, ""), sdir) or {}
+        meta = _structure_meta(roots.get(repo, ""), sdir, path) or {}
         src = meta.get("source") if isinstance(meta, dict) else None
         if not isinstance(src, dict):
             return "unknown", f"{sdir} has no readable meta.json"
