@@ -146,7 +146,7 @@ Decisions 13 (installments) and 14 (currency) don't follow from Decision 1.
 
 ## Decisions 2 to 12
 
-Each takes the form of Decision 1. Under every one, "defer" is also open, and each option needs what Decision 1's option of the same letter needs.
+Each takes the form of Decision 1. Under every one, "defer" is also open. Where an option carries a letter, it needs what Decision 1's option of that letter needs.
 
 ### 2. Who settles the funds to the merchant (S01-VP-02)
 
@@ -196,7 +196,7 @@ Each takes the form of Decision 1. Under every one, "defer" is also open, and ea
   - WooCommerce's Stripe terms: "User appoints Stripe as User’s agent for the limited purpose of directing, receiving, holding and settling funds" (S01-V-117);
   - Zid's own English, for Saudi Arabia: "Merchants authorize Zid to execute payment processes on their behalf upon using the service." (S01-V-122, S01-ZD-007);
   - BigCommerce: "No agency, partnership, joint venture or employment relationship is created by this Agreement or your use of the Services" (S01-V-623, S01-BC-128).
-- **Yemen's mark: `unknown`.** Stripe's variants fail on YA-62, and Adyen's and Shopify's processors' on Q2. Shopify's appointment of itself, WooCommerce's Stripe clause and BigCommerce's "No agency" state no condition (S01-V-112, S01-V-117, S01-V-120, S01-V-623). Zid's (S01-V-122) turns on its courier service's conditions, which nothing settles.
+- **Yemen's mark: `unknown`.** Stripe's variants fail on YA-62, and Adyen's and Shopify's processors' on Q2. Shopify's appointment of itself (S01-V-112), WooCommerce's Stripe clauses (S01-V-117, S01-V-120) and BigCommerce's "No agency" (S01-V-623) state no condition in some or all of their statements. Zid's (S01-V-122) turns on its courier service's conditions, which nothing settles.
 - **The options:**
   - act as the merchant's agent. This needs a legal structure in which Sharrwah receives, holds or instructs on the merchant's funds on the merchant's behalf, set with the licence or the processor;
   - take no agency role, and leave agency to the processor or provider. This needs nothing from outside.
@@ -267,7 +267,7 @@ Each takes the form of Decision 1. Under every one, "defer" is also open, and ea
   - paid out: Zid's answer on turning Zid Pay off, "نعم يتم تحويل المبلغ المتوفر في رصيد التاجر إلى الحساب البنكي" (yes, the amount in the merchant's balance is transferred to the bank account; S01-V-496). Shopify: "Any funds in the Financial Services Provider's custody will be paid out to you subject to the Payment Processor Terms." (S01-V-492);
   - held: Shopify, "a Payment Processor may elect to continue to hold any funds deemed necessary, pending resolution of any other terms or obligations defined in this Agreement" (S01-V-491). Zid, for its مزيد service, "يحق لشركة زد احتجاز الأموال ليتم تسوية العمليات المعلقة" (Zid may hold the funds so that pending operations are settled; S01-V-498);
   - returned to the buyers: Salla, "إعادة أي مبالغ معلقة في المدفوعات الإلكترونية للمستهلكين" (returning any pending electronic payments to the consumers; S01-V-495).
-- **Yemen's mark: `unknown`.** Zid Pay's variants fail on Q2 and YA-62, and Adyen's and Shopify's reserve terms (S01-V-493, S01-V-605) on Q2. Shopify's and Salla's others state no condition (S01-V-491, S01-V-492, S01-V-495). WooCommerce's (S01-V-494) and Zid's مزيد (S01-V-498) turn on conditions nothing settles.
+- **Yemen's mark: `unknown`.** Zid Pay's variants fail on Q2 and YA-62, and Adyen's and Shopify's payment facilitator terms (S01-V-493, S01-V-605) on Q2. Shopify's and Salla's others state no condition (S01-V-491, S01-V-492, S01-V-495). WooCommerce's (S01-V-494) and Zid's مزيد (S01-V-498) turn on conditions nothing settles.
 - **The options:** pay the funds to the merchant's bank account; hold them until refunds, chargebacks and fees are settled; or return them to the buyers. They arise for Sharrwah only under Decision 1's A. Under B or C, the processor's or provider's terms apply.
 - **The coordinator's recommendation:** under C, Sharrwah holds nothing at the end, and its terms say each provider's terms apply. Under A: hold what pending refunds, chargebacks and fees need, and pay the rest to the merchant's bank account, as Shopify's terms do (S01-V-491, S01-V-492).
 - **Your answer:** pay out, hold until settled, return to the buyers, or defer.
