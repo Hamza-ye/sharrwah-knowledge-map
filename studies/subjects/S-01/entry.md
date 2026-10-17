@@ -1,6 +1,6 @@
 # S-01 register entry: who holds the merchant's funds between the buyer's payment and the payout
 
-**For the founder, at G1.** Written by the coordinator on 17 October 2026, and rewritten the same day after the independent review (`review.md`). It rests on the pilot's files in this folder and on Stage 1's in `studies/yemen-cases/` at commit `4e3f3dd`.
+**For the founder, at G1.** Written by the coordinator on 17 October 2026, and rewritten the same day after the independent review (`review.md`). It rests on the pilot's files in this folder at commit `44e09ab`, and on Stage 1's in `studies/yemen-cases/` at commit `4e3f3dd`.
 
 **The ids:**
 - `S01-SA`, `S01-ZD`, `S01-SH`, `S01-WC` and `S01-BC` are statements of Salla, Zid, Shopify, WooCommerce and BigCommerce;
@@ -39,7 +39,7 @@
 - **Phase C reads the cause as vendor choice.** Salla and Zid both name the platform itself, and Zid's gap stops them being shown to agree. Shopify names Global-e and BigCommerce a PayPal business account, each missing from the other's set.
 - **Every platform names the platform itself.** Each puts the funds in a balance or account under its own name or its payment product's. Phase C's rule for "same" counts all of these as one party, the platform itself.
 - **Three also name who holds behind it:** Stripe, Adyen, Global-e, PayPal, and pooled accounts at financial providers. For Salla and Zid, who holds behind the balance is not stated. The pages that would say so are with you (see the last section).
-- **So the options below aren't groups of platforms.** They are where the money sits, and the references combine them: phase C gives Salla, Zid and Shopify letter `A` (their holders coexist in one store), and BigCommerce and WooCommerce `B` (one per market, store or plan).
+- **So the options below aren't groups of platforms.** They are where the money sits, and the references combine them. Phase C's letters: Salla and Zid `A`, their holders together in one store; BigCommerce `B`, one per market, store or plan; Shopify and WooCommerce `A+B`, some holders together in one store and others bound per market.
 
 ## What Yemen shows
 
@@ -146,7 +146,7 @@ Decisions 13 (installments) and 14 (currency) don't follow from Decision 1.
 
 ## Decisions 2 to 12
 
-Each takes the form of Decision 1. Under every one, "defer" is also open. Where an option carries a letter, it needs what Decision 1's option of that letter needs.
+Each takes the form of Decision 1. Under every one, "defer" is also open. Where an option carries a letter, it needs what Decision 1's option of that letter needs. As in Decision 1, a Yemen mark is about the arrangement, not the platform that describes it.
 
 ### 2. Who settles the funds to the merchant (S01-VP-02)
 
@@ -182,7 +182,7 @@ Each takes the form of Decision 1. Under every one, "defer" is also open. Where 
   - the platform itself: "خدمة تقدمها سلة لمعالجة المدفوعات في متجرك بشكل مباشر" (a service Salla provides to process your store's payments directly; S01-V-085). For its courier service, Zid: "حيث تقوم زد بتحصيل المبلغ نيابة عن التاجر من العميل عند التسليم" (where Zid collects the amount from the customer on delivery, on the merchant's behalf; S01-V-096, S01-ZD-069);
   - a processor: "The Payment Processor's role in relation to the Payments Services is to accept and process payment transactions" (S01-V-069). "All Shopify-supported payment methods rely on third-party providers to process your transactions" (S01-V-068);
   - the provider of each payment method: "تُحصّل المدفوعات التي تتم عبر تابي من خلال تابي وليس من خلال مدفوعات سلة" (payments made through Tabby are collected through Tabby, not through Salla Payments; S01-V-088, S01-SA-101). For a courier outside Salla's shipping labels, "لا تتولى سلة تحصيل مبالغ الدفع عند الاستلام في هذه الحالة" (Salla doesn't collect cash on delivery amounts in this case; S01-V-093, S01-SA-090).
-- **Yemen's mark: carried only with a partner,** through S01-V-093: the courier collects, and in Yemen Torod does so for business accounts (YK-203).
+- **Yemen's mark: carried only with a partner,** through S01-V-091. Salla's cash on delivery is collected "عبر شركة الشحن أو من خلال مندوبك الخاص" (through the shipping company or your own courier; S01-SA-097), and the courier may be "مندوب محلي أو شركة شحن خارجية غير مرتبطة مباشرة بسلة" (a local courier or an outside shipping company not directly tied to Salla; S01-SA-198). In Yemen, Torod collects for business accounts (YK-203).
 - **The options:** A. Sharrwah's own payment service; B. a payment processor or acquirer; C. the provider of each payment method.
 - **The coordinator's recommendation: C.** The wallet, the courier, or the merchant's own bank account collects.
 - **Your answer:** A, B, C or defer.
@@ -195,8 +195,9 @@ Each takes the form of Decision 1. Under every one, "defer" is also open. Where 
   - Shopify: "You hereby appoint us as your agent to deliver information and instructions on your behalf to one or more payment processors" (S01-V-112, S01-SH-001);
   - WooCommerce's Stripe terms: "User appoints Stripe as User’s agent for the limited purpose of directing, receiving, holding and settling funds" (S01-V-117);
   - Zid's own English, for Saudi Arabia: "Merchants authorize Zid to execute payment processes on their behalf upon using the service." (S01-V-122, S01-ZD-007);
+  - Salla's own English, for charities only: "By connecting your {{name}} account, you'll authorize Salla to use it for payment processing." (S01-V-660, S01-SA-195). For Salla's own payment service, no held source says in what capacity Salla, or another party, receives or holds the buyers' payments (gap S01-SA-G07, confirmed by the audit);
   - BigCommerce: "No agency, partnership, joint venture or employment relationship is created by this Agreement or your use of the Services" (S01-V-623, S01-BC-128).
-- **Yemen's mark: `unknown`.** Stripe's variants fail on YA-62, and Adyen's and Shopify's processors' on Q2. Shopify's appointment of itself (S01-V-112), WooCommerce's Stripe clauses (S01-V-117, S01-V-120) and BigCommerce's "No agency" (S01-V-623) state no condition in some or all of their statements. Zid's (S01-V-122) turns on its courier service's conditions, which nothing settles.
+- **Yemen's mark: `unknown`.** Stripe's variants fail on YA-62, and Adyen's and Shopify's processors' on Q2. Shopify's appointment of itself (S01-V-112), WooCommerce's Stripe clauses (S01-V-117, S01-V-120) and BigCommerce's "No agency" (S01-V-623) state no condition in some or all of their statements. Zid's (S01-V-122) turns on its courier service's conditions, and Salla's (S01-V-660) on its charity conditions, which nothing settles.
 - **The options:**
   - act as the merchant's agent. This needs a legal structure in which Sharrwah receives, holds or instructs on the merchant's funds on the merchant's behalf, set with the licence or the processor;
   - take no agency role, and leave agency to the processor or provider. This needs nothing from outside.
@@ -339,15 +340,17 @@ Phase C's rule table settles these. "What follows" gives every rule each one tak
 
 | Variation point | Cause | What follows | Yemen's mark (phase D) |
 | --- | --- | --- | --- |
-| S01-VP-05, "pay you directly" | no difference | a commonality, carried as the references carry it; the platform carries all the variants at once | carried unchanged, by direct bank transfer into the merchant's own account (S01-V-102, YA-131) |
-| S01-VP-07, "Reserve" | unknown | a variation point behind one interface, bound per market, store or plan; kept open as a variation point until evidence settles it | unknown |
-| S01-VP-08, "withhold" | unknown | the platform carries all the variants at once; kept open as a variation point until evidence settles it | unknown |
-| S01-VP-12, "licensed" | market, named rule | a variation point behind one interface, bound per market, store or plan | unknown |
+| S01-VP-05, "pay you directly" | no difference | a commonality, carried as the references carry it; the platform carries all the variants at once | carried unchanged, by direct bank transfer into the merchant's own account (S01-V-102, YA-131). Transfers between banks are limited (YA-126), so not every buyer can pay this way |
+| S01-VP-07, "Reserve" | unknown | the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan; kept open as a variation point until evidence settles it | unknown |
+| S01-VP-08, "withhold" | unknown | the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan; kept open as a variation point until evidence settles it | unknown |
+| S01-VP-12, "licensed" | market, named rule | the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan | unknown |
 | S01-VP-13, "terms of service" | maturity | the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan; kept open as a variation point until evidence settles it | carried unchanged, through WooCommerce, Inc. for residents outside its Designated Countries (S01-V-244) |
-| S01-VP-14, "payout schedule" | vendor choice, cheap to change | a variation point behind one interface, bound per market, store or plan; left to the build | carried unchanged, through Zid's wallet (S01-V-579), on its own conditions only |
-| S01-VP-16, "Minimum payout amount" | vendor choice, cheap to change | a variation point behind one interface, bound per market, store or plan; left to the build | unknown |
-| S01-VP-17, "reserve" | market, named rule | a variation point behind one interface, bound per market, store or plan | unknown |
-| S01-VP-18, "held" | market, named rule | the platform carries all the variants at once | carried unchanged, through Zid's wallet (S01-V-445), on its own conditions only |
+| S01-VP-14, "payout schedule" | vendor choice, cheap to change | the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan; left to the build | carried unchanged, through Zid's wallet (S01-V-579), on its own conditions only |
+| S01-VP-16, "Minimum payout amount" | vendor choice, cheap to change | the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan; left to the build | unknown |
+| S01-VP-17, "reserve" | market, named rule | the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan | unknown |
+| S01-VP-18, "held" | market, named rule | the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan | carried unchanged, through Zid's wallet (S01-V-445), on its own conditions only |
+
+*(The coordinator's reading.)* Since a platform may now carry both letters, nearly every variation point takes both rules: several variants at once, behind one interface bound per market. That is what the money flow must support, whatever you decide.
 
 ## What this entry rests on, and what would change it
 
