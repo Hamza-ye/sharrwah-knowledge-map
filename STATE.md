@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 08:27 UTC.
+**Updated:** 17 October 2026, 11:02 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -194,11 +194,12 @@ Agents started earlier keep their effort.
 
 ## If the work was interrupted
 
-**The usage limit has stopped the running agents four times:**
+**The usage limit has stopped the running agents five times:**
 - at about 09:50 UTC, when all ten restarted at 10:10 UTC as new agents continuing from their files;
 - at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript;
 - at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript;
-- on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript.
+- on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript;
+- on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript.
 
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
 - **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
