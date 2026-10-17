@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 16:03 UTC.
+**Updated:** 17 October 2026, 17:02 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -228,10 +228,19 @@ Agents started earlier keep their effort.
     - phase B's `answers` rests on what a statement says: its own words must name the party or thing in X's role in the subject's flow (matching basis 4);
     - a bullet (d) "no part" variant names no one filling X, for test 1.
   - **The source-kinds rules are fixed** (commit `94e973d`): a structure's file takes its nearest `meta.json`, and a captured copy takes its manifest's address.
-  - **The fix round is running:**
-    - phase B re-checks its variants under the ruling, including V-024 (Zid's wallet) and V-550, and brings `kind` into line with `kinds.tsv`;
-    - Stage 1's reviewer checks the facts the entry cites (YA-102, YA-105 and others);
-    - then phase C re-derives the causes, phase D re-marks the changed variation points, the coordinator rewrites the entry, and F re-checks;
+  - **The fix round:**
+    - **Phase B re-checked its variants under the ruling** (commits `7e82f57` and `5abebde`). The ruling now holds whatever a variant's basis, since shared words can be homonyms.
+      - Every `answers` row names the role its words fill.
+      - 45 variants are removed, among them S01-V-024 (Zid's wallet, which names no sales proceeds) and S01-V-550.
+      - Zid's and Salla's wallet holders are added to VP-01, where their words say the wallet holds sales proceeds.
+      - The answer sets changed on 15 variation points, and 32 kinds are now `official page`.
+    - **Stage 1's facts behind the entry are fixed** (commit `4e3f3dd`):
+      - YA-102's government area reads "banks and licensed non-bank institutions";
+      - the provider licence is constant YK-515 at 750 million;
+      - YA-105's id now names "Which model e-money services follow".
+
+      Now 228 axes, 515 constants and 345 cases.
+    - **Running:** phase C re-derives every cause, and phase D redoes `bears-on.tsv` and every mark, in parallel. Then the coordinator rewrites the entry, and F re-checks;
   - **D's first checkpoint** (commit `2786cb4`):
     - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
     - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
@@ -270,10 +279,9 @@ Agents started earlier keep their effort.
 - **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
 - **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
 - **Done, and resumable for Stage 1:** the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`.
-- **Pilot phase B, re-check after F:** agent `a9e10fcc19233f104` (`max`).
-- **Stage 1's independent reviewer, checking the facts the entry cites:** agent `a0755eeb78b50b2c8` (`max`).
-- **Pilot F's agent,** `a349d058600a20b3a`, is done. It is resumed to re-check the fixes.
-- **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done. It is resumed to re-derive the causes.
+- **Pilot phase C, third run:** agent `adc0057894ed0a4d9` (`max`).
+- **Pilot phase D, redoing the marks:** agent `a279f7e700e54e76b` (`max`).
+- **Done, and resumable:** pilot F `a349d058600a20b3a`, resumed to re-check; phase B `a9e10fcc19233f104`; Stage 1's reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`.
 - **Pilot phase D's agent,** `a279f7e700e54e76b`, is done, and is resumed for any marks F finds wrong.
 - **Done, and resumable:** the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`.
 - **Stage 1 step 2b's agents,** done. They can be resumed for their ranges: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
