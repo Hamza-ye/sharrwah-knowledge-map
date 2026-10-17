@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 07:58 UTC.
+**Updated:** 17 October 2026, 08:13 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -155,7 +155,12 @@ Agents started earlier keep their effort.
   - Causes: vendor choice 14, market named rule 4, unknown 3, maturity 1, no difference 1. 12 founder items.
   - Its notes showed why vendor choice dominated. The rule for "same" named the merchant as one party everywhere, but each platform's own name as a different party, so two platforms that each name themselves "differed".
   - The brief now counts the merchant, the buyer and the platform itself (its name, payment product or company) as one party on every platform. "Names a law" means a particular law or regulator. Both are marked as the coordinator's own and recorded in `PLAN.md` section 11.
-  - **Phase C is re-applying steps 3 to 5** under the amended rule.
+  - **Phase C's second run, under the amended rule, is done** (checkpoint `803b19f`, verified at `3815d46`). It moved the readings of nine variation points, but no cause, letter, rule or founder item. The differences come from third parties only some platforms name (Global-e, BitPay, Tamara, Trendyol), or from gaps. So the 12 founder items stand on the evidence:
+    - 01 who holds the funds before payout; 02 who settles; 03 who sends payouts; 04 who collects;
+    - 06 whether to act as the merchant's agent; 09 who deducts; 11 which accounts merchants hold;
+    - 15 one payout timing of its own, or each provider's settlement time; 19 deduct before payout, or bill separately;
+    - 20 what happens to held funds at termination; 22 who pays up front for installments; 23 which payout currency.
+  - **They reach the founder in the register entry** (pilot step 3), after D marks the subject against Yemen's cases. Each comes with its evidence, options and the coordinator's recommendation (`PLAN.md` section 4).
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
   - **B's second pass is done.** It placed the statements A2 and A3 added, up to S01-BC-065 for BigCommerce.
@@ -163,7 +168,7 @@ Agents started earlier keep their effort.
     - It rechecked the first pass's comparisons against another platform's statement, and 106 rows changed basis.
     - Ten statements fit no variation point. All are peripheral, such as where to track cash-on-delivery amounts or a dashboard's name, so no variation point is missing.
     - Its notes on the brief: different words in one language, empty definitions, partly contradicted gaps, and the scope separator. They go to the method report. The B brief's reading list now names `absence-audit.tsv`.
-  - C's second run (running), then the coordinator's recommendation for each founder item, raised to the founder;
+  - C is done; its 12 founder items wait for the register entry, after D;
   - D, after Stage 1;
   - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
   - F;
@@ -192,7 +197,7 @@ Agents started earlier keep their effort.
 - on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript.
 
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
-- **Pilot phase C, second run under the amended same rule:** agent `adc0057894ed0a4d9` (`max`), updating `analysis.tsv` and `notes-c.md` in `studies/subjects/S-01/`.
+- **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
 - **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
 - **Stage 1 step 2a, the fix round for the 128 returned groups:** agent `a4a6021a9605c1efe` (`max`). It edits `groups.tsv`, `places.tsv`, and the returned rows in `pass2/states-<k>.tsv`. It is resumed later for `unknowns.tsv`.
 - **The axes reviewers,** done, can be resumed for the second review: YA-01 to YA-126 `ac1ab6f9db5c9443e`; YA-127 to YA-253 `a9826e37d14145ed2`.
