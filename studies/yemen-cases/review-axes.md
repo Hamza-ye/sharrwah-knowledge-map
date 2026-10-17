@@ -70,3 +70,14 @@ This file names an `axes.tsv` in full by its sha256 only when the review lets it
   - against the reviewed file, only YA-200's `states` and `today` change, by that label.
 - **Disputed parts left in today: 10.** Each is made by its sources, or is a tie under the precision rule (YA-01, and YA-227's 8.8 against 10 percent of the population in 2022).
 - **The coordinator's decision:** the review lets this `axes.tsv` through, at sha256 47b5c642765d2e25db20f0795fceebbce3e175a6ffdfa884271f005dadf8c735.
+
+## The independent review, 17 October 2026
+
+`review-independent.md`, by an agent that produced none of Stage 1, read a sample of 45 axes against their quotes.
+
+- **What it found.** 12 of the 45 have an error that changes `today` or a case, and 6 of the 23 `in force` cases aren't in force. The rule-based reviews above couldn't see these: wrong `holds` values, a cancellation placed where it supersedes neither side, a later statement left on another axis, and evidence held but not recorded.
+- **Its fixes 1 to 5 and 7** go back to step 2a. The coordinator checks the axes they change before the build writes cases again.
+- **The coordinator's decisions on the rest:**
+  - **6, precision ties.** They stay disputes, as the brief says. Phase D marks a disputed part `unknown`, so no false mark follows. The cases that rest on such a tie aren't treated as in force for marking.
+  - **8, stale parts.** Parts for overlapping place names can keep old states in `today`. Until the method changes, phase D reads each part's date in the axis's `note`, and treats a part as stale where a later part names the same ground.
+  - **The method change, before Stage 4:** a `within` relation between places, each link on a source, so that a strictly later state supersedes the states at places inside its own. It extends the `across Yemen` rule.
