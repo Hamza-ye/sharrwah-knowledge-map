@@ -375,3 +375,8 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - A new pilot step, A3, has an agent that made none of the claims audit every gap and absence.
   - A "searched, not found" must show the corpus search behind it: `method/corpus_search.py`, run in every language the platform uses, and by each country, plan and arrangement it names.
   - The checker enforces both.
+- **17 October 2026,** Stage 1's axes review, after step 2b. Of 253 axes, 128 groups go back to step 2a. Most break rule 2: their states add up rather than replace each other, so the build's latest state drops facts that still hold. Bans and designations that each name only the parties they add are the clearest case. Two rulings follow from rule 2, and are added to the brief:
+  - lists that grow, instruments in force together, and parts of one source: each addition, instrument or fact is its own condition;
+  - rows that state one thing at different detail share one label, with the rest in `note`.
+
+  The record is `studies/yemen-cases/review-axes.md`. It names an `axes.tsv` in full only when the review lets it through.

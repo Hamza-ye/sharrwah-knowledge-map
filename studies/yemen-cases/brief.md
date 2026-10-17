@@ -78,6 +78,9 @@ Read `conditions.tsv`, `pass2/wordings.tsv` and the six `pass1/notes-<part>.md`.
 
 1. **One condition.** Rows whose states answer the same question are one condition, whatever their part. The question is about an act or an availability, for example who may do A, or whether B is available. Name it at that level, not per institution: an institution's own service is a place (rule 4).
 2. **States are alternatives.** At one place and time, only one state of a condition holds. If two rows' states can hold together at one place and time, either they state the same thing, or they belong to different conditions. Size each condition so that this holds.
+   - **Lists that grow.** Where each source names only what it adds, such as the parties a decision bars or a requirement a circular adds, the additions hold together. Each addition is then its own condition, named by its source and what it adds, so that its states, such as barred and restored, are alternatives. A source that gives the whole list gives one condition for it.
+   - **Instruments in force together.** A law and its regulation, or two instruments in force at once, hold together. Each is its own condition, unless one states the other's rule at more detail, when they state the same thing.
+   - **Parts of one source.** A party's pages, or the parts of one source, that each state a different fact on one date hold together too: each fact is its own condition.
 3. **`groups.tsv`.** Write each condition there:
    - its rows in `condition_ids`;
    - what differs between their states in `what_varies`.
@@ -104,6 +107,7 @@ For every row of its groups, an agent writes one line of `pass2/states-<k>.tsv`,
 
 **`label`:** the state, short and in English.
 - Rows that state the same thing share one label, word for word. Rows that state different things get different labels. When the parties named are what differs, such as which banks may do something, the label names them, or the list that names them.
+- Rows that state one thing at different detail state the same thing. Examples are a figure and the buying-and-selling pair that includes it, or a measure with and without its figure or list. They share the label of what both state, and the rest goes in `note`.
 - The source's own words go in `note`.
 - Leave the place out: the build adds it.
 - A label never contains `;`, `|`, `[`, `]`, ` + ` or ` @ `.
