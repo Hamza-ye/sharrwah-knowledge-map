@@ -404,3 +404,147 @@ These are findings 2 (places), 7 (disputes no source makes), 9 (dates of time-li
 ### Anything else
 
 `bears-on.tsv` still quotes YA-62's old labels, "Available @ PayPal's service" (today) and "Send only @ PayPal's service". The rebuild replaced both, so its basis needs redoing against `900c24a`.
+
+## Check of the S-01 entry's axes
+
+**Checked, 17 October 2026,** at commit `b9928d9`:
+- `axes.tsv` sha256 `5e2efc31910483b7732065d96bf88306d0194cdee34014746185532c346581f4`;
+- `cases.tsv` sha256 `eeb0a6e9a589e962ca1d9dbac0e155dfabf9067f89462434b712c38855eeae8c`.
+
+**What.** The Stage 1 items that `studies/subjects/S-01/review.md` (findings 13, 14 and 18) says the register entry rests on unchecked:
+- axes YA-01, YA-15, YA-26, YA-44, YA-68, YA-86, YA-102, YA-103, YA-105, YA-106, YA-109, YA-116, YA-118, YA-126, YA-129 and YA-217;
+- constant YK-87.
+
+**How.** For each item I read every row's pass-1 state, label, place, `holds`, date and quotes. I opened the source where a quote left a question. For YA-102 and YA-105 that meant the page images of the Aden bank's instructions (item 049, page 5; item 050, page 6), because their quotes are OCR. Then I listed every case that varies each axis.
+
+**Result.**
+- Two faults change what the entry says, YA-102 and YA-105. Both follow finding 11's pattern: a report's later date beats the instrument it describes.
+- Three labels that the entry quotes say more than their quotes: YA-129, YA-44 and YA-106.
+- The rest say what their quotes say. Each `today` part is the latest the evidence shows for its place, apart from the stale parts finding 2 describes (YA-01, YA-102).
+
+### Must fix
+
+1. **YA-102: `today` says "banks only" in the government's area, but the Aden bank's own instruments license non-bank companies.**
+   - **What `today` says:** "banks only @ the internationally recognized government's area", dated 15 September 2025. That part is YQ-E116, the Sana'a Center's account of how the 2020 dispute came out. YE-E126: "the non-bank model in Houthi-controlled areas and the bank- led model in government-controlled areas". The source names a model of the market. The label turns it into a rule on who may be licensed.
+   - **What the instruments say.** The rows from the instruments, and from reports of them, read "banks and licensed non-bank institutions". They are older than YQ-E116, so they lose:
+     - YQ-F079, the payment service provider instructions of 13 September 2022. YE-F129: "لايجوز لأي شخص في الجمهورية العمل كمقدم لخدمات الدفع و/أو مشغل /مدير لنظام الدفع بدون الحصول على ترخيص بذلك ساري المفعول صادر عن البنك المركزي بموجب هذه التعليمات." Banks need only the bank's approval (YE-F130). Exchange institutions may apply only if they convert wholly (YE-F132, YE-F133).
+     - YQ-F088, the e-money instructions of 8 August 2023. YE-F242 gives their title: "التعليمات المنظمة لتقديم خدمات النقود الإلكترونية عبر الهاتف المحمول من قبل المؤسسات المالية غير البنكية". YE-F157: "لا مُسمح بتقديم خدمة النقود الإلكترونية عبر الهاتف المحمول إلا عن طريق مقدم خدمات الدفع المرخص له من قبل البنك المركزي". YE-F159 requires a non-bank financial institution first to be licensed as a payment service provider. The OCR garbles the words for non-bank financial and for the central bank there, and the page 6 image shows both.
+     - YQ-D116, the news report of the 2022 instruments. YE-D114: "وحدد الجهات التي يمكنها العمل على تقديم وتشغيل أنظمة وخدمات الدفع، ممثلة بالبنوك المرخص لها بالعمل، والشركات المتخصصة في هذا المجال."
+     - YQ-E809. YE-E950: "Resolution No. 547/CBY/2023: Regulated the provision of mobile money services by non-banking financial institutions, aiming to promote financial inclusion while ensuring compliance with AML laws."
+   - **Later evidence that the instruments stand:**
+     - YQ-F115 (on YA-86): the Aden bank's decision No. 4 of 9 July 2025 amends the 2023 instructions (YE-F242).
+     - Item 249 (IGC, February 2026), line 1539, lists the 2023 resolution among the measures that "Government CBY has introduced". YQ-E809 is dated 2023, its resolution's year. YQ-E116 was dated by its report.
+     - YQ-F112 (on YA-82): the Aden bank's eKYC instructions of 9 November 2023 apply to banks and to the payment service providers it licenses for mobile e-money. YE-F228: "خدمات الدفع المرخص لم من قبل البنك المركزي تقديم خدمة النقود الإلكترونية عبر الهاتف المحمول".
+     - YQ-D379 (on YA-214): the World Bank, as of December 2023. YE-D519: "Non-bank PSPs are actively participating, with three in advanced stages, and two from Sana’a applying to provide e-wallets in Aden."
+     - YK-87 lists e-money among the services a licensed provider may offer. YE-F144: "إصدار النقود الإلكترونية وإدارة وتنفيذ عمليات الدفع الإلكتروني الدائنة والمدينة التي تشملها."
+   - **Fix.** Both changes are needed. The first also keeps a 2025 "banks only" out of the cases.
+     - Move YQ-E115 and YQ-E116, the 2025 report's two models, to a condition of their own, "which model e-money follows". A bank-led market and the licensing of non-banks hold together, so under rule 2 they are not alternatives. YA-102's `what_varies` should then drop "(bank-led)" and "(non-bank-led)".
+     - Date YQ-E809 by its report, February 2026, as YQ-E116 was dated by its own.
+   - **After the fix:**
+     - the government's area reads "banks and licensed non-bank institutions";
+     - "banks only" there becomes an `occurred` case: YQ-E153, March 2022, before the instruments;
+     - exchange companies stay barred unless they convert (YQ-D117).
+   - **A rule for the method:** a later report supersedes an instrument only where it reports a change to the instrument. That rule would also have prevented fault 2.
+   - **Two more `today` parts are stale.** Both read "banks only":
+     - "banks only @ Central Bank of Yemen's area" is the pre-split bank's 2014 rules (YQ-E113, E175, E588). Both areas' later rules supersede them (finding 2).
+     - "banks only @ place not stated" is YQ-E151. Its quote puts it in the past: "was the legal framework prior to 2014" (YE-E156). At the same place, YQ-D089 is already `ended`. YE-D091: "وكانت خدمة الدفع الإلكتروني مقتصرةً فقط على البنوك باليمن. وفي عام 2020 سمح البنك المركزي في صنعاء للمؤسسات المالية من غير البنوك بتقديم خدمات الدفع الإلكتروني." Make YQ-E151 `ended` as well.
+   - **The entry** rests on this part three times:
+     - line 23: "reserved to banks in the government's area";
+     - line 47: "banks only" in the government's area;
+     - line 78: "banks only in the government's area".
+     
+     After the fix, option A needs a payment service provider licence, which a non-bank joint-stock company may hold (YA-105), or else a bank.
+   - **Cases.** YC-183, YC-283 and YC-284 give "banks and licensed non-bank institutions" as `occurred`. After the fix that state is `today`, so YC-183 varies nothing.
+2. **YA-105: `today` still gives the news report's 700 million, against the instrument's 750 million (finding 11).**
+   - **What `today` says:** "a joint-stock company with paid-up capital of at least 500 million rials, 700 million for a system operator". That part is YQ-D119, a news report of 21 September 2022. YE-D117: "ولا يقل رأس المال المدفوع لمقدم خدمات الدفع عن 500 مليون ريال. ولمشغل نظام الدفع عن 700 مليون ريال."
+   - **What the instrument says.** YQ-F080, the instructions of 13 September 2022. YE-F135: "ولمشغل/مدير نظام الدفع عن سبعمائة وخمسون". The page 5 image of item 049 reads the same, followed by the words for million Yemeni rials.
+   - **The report is of that instrument.** YE-D113: "أصدر البنك المركزي اليمني في عدن، اليوم الأربعاء، لائحة وتعليمات جديدة منظمة لأعمال مقدمي ومشغلي أنظمة وخدمات الدفع الإلكتروني للأموال." It is the latest row only because it was published eight days after the instrument.
+   - **Fix:** the instrument's words govern a report of them, by the rule under 1. `today` takes YQ-F080's state. YQ-D119's 700 is the report's error, not a later state; record it in its note.
+   - **The entry** quotes only the 500 million (lines 48 and 78), which both sources give.
+   - **Cases.** YC-185 and YC-283 give the 750 million as `occurred`. After the fix that state is `today`:
+     - YC-185 varies nothing;
+     - after fix 1 as well, neither does YC-283;
+     - YC-284 keeps YA-86 and YA-87.
+
+### Should fix: labels the entry quotes
+
+3. **YA-129: the label makes a convenience sample of one shop's customers into Aden's buyers.**
+   - YQ-E572 reads "cash on delivery, preferred by 74 percent @ Aden", and the entry quotes it on line 52.
+   - YE-E622: "Cash on delivery was the preferred payment method for 74.44% of respondents, compared with 25.56% for electronic".
+   - The respondents are Bazzarry's customers: "The study focuses on Bazzarry customers in Aden, Yemen," (YE-E623) and "The study targeted Bazzarry users and used convenience" (YE-E624). Pass 1's state names them: "180 surveyed Bazzarry users".
+   - **Fix:** "cash on delivery, preferred by 74 percent of 180 Bazzarry users surveyed".
+   - **Smaller.** YQ-E102's label, "mostly cash on delivery", merges cash with cash on delivery:
+     - YE-E113 counts cash: "including 61.9 percent of those made online";
+     - YE-E114 says only "Cash-on-delivery options are popular for e-commerce in Yemen".
+4. **YA-44: the label adds "only" to the World Bank's words, though the same report says both central banks supervise banks.**
+   - YQ-D319 reads "The Aden central bank's only @ the internationally recognized government's area" (April 2024). It is `today`.
+   - YE-D435: "The Central Bank of Yemen in Aden regulates and supervises private banks and money exchangers."
+   - The "only" belongs to YQ-C071, the Aden bank's own claim of 2020. YE-C049: "فإن الجهة الوحيدة المخولة دستورياً وقانونياً بإدارة وتوجيه أعمال البنك المركزي".
+   - Further on, the World Bank's report says: "The banking sector is currently supervised by both the CBY-Aden and CBY-Sanaa." (YE-D437).
+   - **Fix:** label YQ-D319 "The Aden central bank's". YQ-C071's "only" then becomes an `occurred` case.
+   - **The entry's** line 50, "Banks answer to the Sana'a or the Aden central bank, by area", leaves out `today`'s third part, "Both central banks' @ place not stated". YE-D423: "financial institutions with nationwide operations are subject to the authority of both."
+5. **YA-106: the shared label says more than two of its rows' quotes.**
+   - The label, "pre-funded and held in a pooled account at a settlement bank", is what the entry quotes on line 49.
+   - YQ-C100 (Cash's terms) gives a pooled account but nothing on pre-funding. YE-C081: "الحساب المجمع: ويعني الحساب المصرفي المفتوح لدى بنك التسوية المعتمد والذي يتم فيه تجميع جميع إيداعات العملاء المشتركين في الخدمة."
+   - YQ-E549 (a tech blog, 2021) gives cash cover at the service bank but no pooled account. YE-E597: "كل ما هو موجود في محفظتك الإلكترونية له غطاء من الكاش لدى بنك الخدمة".
+   - The whole label holds only for the Aden bank's 2023 rule (YQ-F103: YE-F203 to F205) and the 2014 circular (YQ-E203).
+   - **Fix:** as with YA-126's "difficult", give the rows the label all their quotes state, such as "backed by funds held at the settlement bank". Put "pre-funded" and "pooled" in the notes of the rows that state them. The entry's words hold as the government's area's 2023 rule.
+
+### Minor
+
+- **YA-68.** YQ-C039 and YQ-C040 cite one quote, YE-C027: "in addition to the possibility of adding many services to the Wallet in future like ( online shopping ,electronic commerce )".
+  - YQ-C040 is `proposed`, and finding 7 made YQ-C041 `proposed` for the same paragraph. YQ-C039 is `held`, as "Not yet available, coming later".
+  - **Fix:** make YQ-C039 `proposed`.
+  - `today` keeps its Cash part: YQ-E682, from Cash's own page, supports it (YE-E772: "home / Online Shopping Online Shopping SOON..").
+  - Beside that part, "Available @ Cash Pay (Cash e-wallet)'s service" is the payment service Cash offers merchants' stores. YE-C062: "وفرت محفظة كاش خدمة الدفع الإلكتروني كاش باي (Cash Pay) لأصحاب المتاجر الإلكترونية والتطبيقات".
+- **YA-103.** YQ-B058's place, "Council of Ministers' area (مجلس الوزراء)", names no seat.
+  - Its article places the launch "بمقر شركة يمن موبايل بصنعاء" (item 033, line 51) and names the Council's head, bin Habtoor (line 23).
+  - As placed, `today` has no part at the Houthis' area. The entry's "licensed by two central banks" (line 23) still holds, through YA-102's YQ-E114 and through YA-217.
+
+### What the evidence says of wallet licences (`review.md` finding 18)
+
+The entry's "licensed local wallets" (line 24) and "licensed wallets" (line 80) rest on YA-26 and YA-217. Both are faithful, and each `today` part is the latest the evidence shows:
+- **YA-217.** CBY-Sana'a licensed ONE Cash: an initial licence in July 2020 and a final one in early 2022. For the government's area the latest row is from March 2022. YE-E235: "CBY-Aden has not yet accepted its request to obtain the license." Nothing later says that it did.
+  - The central bank's list of 10 October 2026 (YQ-A003, on YA-214) names "شركة المحفظة الوطنية الإلكترونية ون كاش" under "Electronic payment services companies".
+  - The row keeps that list seatless (finding 12).
+- **YA-26.** The June 2024 circular named Cash, Jawali, Floosak, Jaib, Mobile Money and seven others as unlicensed (YQ-F114).
+  - `today` is the reversal: YE-D107, "ليتراجع البنك لاحقا عن هذا القرار بعد ضغوط سعودية على الحكومة في عدن".
+  - The reversal lifts the ban on dealing with these wallets. It does not say that the Aden bank licensed them.
+- **YK-121.** The providers' own pages claim a licence from "the Central Bank of Yemen", without naming a seat.
+
+So in the government's area, Stage 1 shows no non-bank wallet licensed by the Aden bank. The entry's two phrases need that qualifier.
+
+### Faithful
+
+- **YA-01.** The entry's "factor of about three" holds on the latest parts: "YER 1,562 buying, 1,567 selling @ Aden" (10 October 2026) and "YER 533 @ Sana'a" (8 October 2026). YE-E1285 says it in words: "يُسجل الدولار الأمريكي اليوم في عدن ما يقارب ثلاثة أضعاف قيمته في صنعاء". The rest of `today` is as finding 2 and fix 6 describe:
+  - five more parts for the government's side, going back to June 2024;
+  - "disputed @ place not stated", made of 2025 rates.
+- **YA-15.** After fix 2, it says what the entry gives. The Houthi side carries one state under two names, "Houthi-controlled areas" (2020) and "Houthis' area" (2026).
+- **YA-86, YA-109, YA-118, YA-126 and YK-87.** They say what their quotes say.
+- **YA-116.** It says what its quotes say. Its Floosak and Kuraimi E-Pay parts rest on community-written clients, and their notes say "not the provider's documentation". Read them as indirect.
+
+### Cases that vary each item
+
+- **YA-01: 80 cases.** Each gives an earlier rate at one place name. All are `occurred` except YC-53, YC-54 and YC-57, which are `in force` (finding 4, fix 6). By place name:
+  - Aden: YC-01 to YC-17 (YER 682 to 2,905);
+  - "Aden and areas under the Yemeni government's control": YC-18 (YER 1,676);
+  - Houthi-controlled areas: YC-19 to YC-24 (YER 530 to 539);
+  - Sana'a: YC-25 to YC-30 (YER 466 to 605, and "half the Aden price of over YER 1,000");
+  - government-controlled areas: YC-31 to YC-37 (YER 1,550 to 2,903);
+  - the new-rial zone: YC-38 to YC-41 (YER 1,573 to 2,900);
+  - place not stated: YC-42 to YC-57 (YER 215 to 3,000).
+  
+  Combinations of one source and date: YC-285, 289, 290, 293, 302, 303, 310 to 314, 316, 317, 319 to 322, 324, 328 to 330, 333 and 338. Ten of them pair a government-side rate with a Houthi-side rate. Fifteen also vary other axes.
+- **YA-15:** YC-101, "notes printed before 2016 withdrawn @ the internationally recognized government's area", `provided for`.
+- **YA-26:** all `occurred`, at the government's area.
+  - YC-118: "Mobile Money warned against as unlicensed" (2020).
+  - YC-119, YC-287, YC-291 and YC-326: "licensed ones only, 12 named wallets barred" (June 2024). YC-287 also varies YA-32 and YA-214, YC-291 varies YA-32, and YC-326 varies YA-25.
+- **YA-68:** YC-163, YC-340 and YC-341, "Accepted: Hasseb, Jawali and Floosak @ Procorners's service" (2022), `occurred`. YC-340 also varies YA-145 and YA-147. YC-341 varies YA-145, YA-147 and YA-148.
+- **YA-86:** YC-177 and YC-284, "the rial only @ the internationally recognized government's area" (the 2023 instructions), `occurred`. YC-284 also varies YA-87 and YA-102.
+- **YA-102:** YC-183, YC-283 and YC-284, "banks and licensed non-bank institutions @ the internationally recognized government's area", `occurred`. YC-283 also varies YA-105. Fix 1 makes this state `today`.
+- **YA-105:** YC-185 and YC-283, "750 million for a system operator", `occurred`. Fix 2 makes this state `today`.
+- **YA-126:** all `occurred`.
+  - YC-200 and YC-309: "none, cheques by hand and SWIFT orders for large payments @ place not stated" (March 2022). YC-309 also varies nine other axes.
+  - YC-201 and YC-339: "almost none between banks and wallets @ place not stated" (February 2026). YC-339 also varies YA-18 and YA-20.
+- **YA-129:** YC-202, "cash on delivery, preferred by many @ place not stated" (2025), `occurred`.
+- **No cases** vary YA-44, YA-103, YA-106, YA-109, YA-116, YA-118 or YA-217. After fix 4, YQ-C071's "The Aden central bank's only" (2020) would vary YA-44. YK-87 is a constant.
