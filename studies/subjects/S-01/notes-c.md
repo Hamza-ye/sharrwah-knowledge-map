@@ -12,25 +12,25 @@ For the third run, as the coordinator asked, I also read the independent review'
 
 ## How the brief's rules were applied
 
-These readings are mine where the brief leaves room. Each one is also listed under "Problems with the method" below. They describe the third run, which follows the brief as amended on 17 October 2026.
+These readings are mine where the brief leaves room. Each one is also listed under "Problems with the method" below. They describe the fourth run, which follows the brief with the two rulings added later on 17 October 2026.
 
 - **Answer.** A variant's answer is the who or what its excerpt puts in the variation point's role. Phase B's `basis_evidence` now names that role on every VP ("answers (role: …)"), and I took the answer from it:
   - a party, an account, an agreement or a licence on VP-01 to VP-13;
   - a schedule (VP-14), a time (VP-15), an amount (VP-16), a condition (VP-17, VP-18, VP-21), what is taken (VP-19), what happens to the funds (VP-20), when the merchant is paid (VP-22) or a currency (VP-23).
 
-  A platform's set of answers is the answers of its variants that are not `gap` or `not covered`. An `absent` variant is an answer: it rests on a complete list. As the brief now says under test 1, a bullet (d) statement names no one filling the role; phase B marks these in `basis_evidence`. V-623 rests on a statement recorded under bullet (a), so I counted it as an answer (problem 15).
+  A platform's set of answers is the answers of its variants that are not `gap` or `not covered`. An `absent` variant is an answer: it rests on a complete list. As the brief now says, a variant that says a party has no part names no one filling the role, whatever bullet its statement carries. It also shows that the party is not in its platform's set, so that platform's gap can't hold it. Phase B marks the bullet (d) ones in `basis_evidence`; I found the others by reading (see the fourth run).
 - **Same.** As the brief now reads, two answers are the same when they use the same words, or one is the platform's own translation of the other in `terms.tsv`, or they name the same party or identifier (an amount or a currency code counts as an identifier). The merchant, the buyer and the platform itself are each one party on every platform. I counted as the platform itself:
   - its name (سلة, زد, Shopify, BigCommerce, WooCommerce or Woo, and "we" or "us" in its own pages);
   - its own payment product, with that product's balances, wallets and accounts (مدفوعات سلة and رصيد المدفوعات الإلكترونية; زد باي and محفظة زد; Shopify Payments; BigCommerce Payments; WooPayments);
   - its own company (for example شركة زد, the Shopify entities, WooCommerce, Inc.).
 
   Every other party is the same only by name, so Stripe, Stripe PSP and SPC are three names, and so are "Payment Processor" and "payment provider". Two role terms in partners' agreements refer to the platform in context but are none of the three things above: "Stripe Connect Platform" (S01-SH-131, S01-WC-104) and "Platform" (S01-SH-125). I counted them only by those names. As the brief now says, the rule compares platforms in step 3 and does not merge one platform's own variants in step 4.
-- **Gaps.** When a platform has a `gap` variant, its set is incomplete. A difference counts as shown only when one platform has an answer that the other's set lacks *and* that other platform has no gap. Agreement is never shown while either side has a gap. A `not covered` variant (V-655, Salla on VP-06) is read the same way as a gap.
+- **Gaps.** When a platform has a `gap` variant, its set is incomplete. A difference counts as shown only when one platform has an answer that the other's set lacks *and* that other platform has no gap. Agreement is never shown while either side has a gap. A `not covered` variant is read the same way as a gap. Since the fourth run there is none: V-655, Salla on VP-06, is now a gap.
 - **Like with like.** Declarations (`stated`, `official page`, `shipped`) are compared with declarations, and `observed` with `observed`. A variant whose `kind` holds both counts in both classes.
 - **Scopes.** I count two scopes as overlapping when they name the same country, or when at least one names no country. A scope naming only a product, provider, plan or order type (for example "تمارا", "WooPayments", "باقة بلس") names no country, so I treat it as general for this test.
 - **Test 2 ("names a law or a regulator's rule").** The brief now states the reading I used in the first run: a particular law, or a particular regulator with its rule. I counted the Retail Payment Activities Act and the Personal Property Securities Act 2009 (Cth). I also counted the Saudi Central Bank with the Ministry of Commerce and Investment, the Bank of Canada, the Central Bank of Ireland and the UK Financial Conduct Authority, each with its restriction, authority or authorisation. The statement must also present the law or rule as the reason for the variant or its condition. Generic wording did not count: "Law", "applicable law", "to the extent permitted by law", "legally required", "Legal Process", "financial regulations", "a regulatory authority", "the laws of the Kingdom of Saudi Arabia", "U.S. Law", or a country's unnamed "requirements" (S01-SH-065).
 - **Test 3.** Of the eleven statements with a `marker`, only S01-BC-059 (`beta`) is cited by a variant, V-567 in VP-13.
-- **Coexistence letters.** The brief allows one letter per platform, but many platforms bind their variants in two ways at once: some per market, store or plan, and several of them together in one store. I gave the letter for the binding that governs most of the platform's variants on that VP, citing the statements that show it, and wrote the other binding in the `note` column. `B` needs a statement that ties the variants to the market, store settings or plan. `A` needs a statement that shows two or more of them in force in one store. I read `C` ("one per product") as one per catalog product, and no variant was bound that way. `D` needs a statement saying the platform offers only one, or an `absent` variant, and none qualified. I gave `unknown` in three cases: the platform has a single variant that answers; it has only a gap or is not covered; or the statements do not show how its variants bind (for example, Salla's تابي and تمارا on VP-22). Letters bind a platform's own variants as `variants.tsv` records them, as the brief now says. Since the third run, no BigCommerce letter rests on S01-BC-001 and S01-BC-047 alone: they describe a store's gateways in general and show no two of its variants together (review finding 6). Each BigCommerce letter now cites statements about the variants it binds.
+- **Coexistence letters.** Since the fourth run a platform carries `A+B` where its statements show both bindings, as the brief now allows. `coexistence_basis` cites the statements for both letters, and the `note` column says which statements carry which letter. `B` needs a statement that ties a variant to a market, a plan or a store setting. A statement whose scope is one market counts. `A` needs a statement, or statements that each apply in the same store, showing two or more variants in force there. I read `C` ("one per product") as one per catalog product, and no variant was bound that way. `D` needs a statement saying the platform offers only one, or an `absent` variant, and none qualified. I gave `unknown` in three cases: the platform has a single variant that answers; it has only a gap or is not covered; or the statements do not show how its variants bind (for example, Salla's تابي and تمارا on VP-22). Letters bind a platform's own variants as `variants.tsv` records them, as the brief now says. That includes a variant that names no one filling X, since the no-part rule sits in step 3 (problem 20). Since the third run, no BigCommerce letter rests on S01-BC-001 and S01-BC-047 alone: they describe a store's gateways in general and show no two of its variants together (review finding 6). Each BigCommerce letter now cites statements about the variants it binds.
 - **Expensive to change.** I filled `expensive_because` on every row, including rows whose cause selects no expensive/cheap rule (market causes, no difference), so that every VP has the same columns.
 
 ## Second run, after the same rule changed
@@ -151,7 +151,86 @@ Founder items: 12 before, 13 after.
   S01-BC-124 stays in VP-19's `expensive_because`, where it is cited for fees billed apart, not as a variant.
 - **VP-07, VP-11, VP-17, VP-20 and VP-23.** Phase B's changes there (removed variants on VP-11 and VP-23, and `stated` turned to `official page`, which stays a declaration) leave cause, basis and reading as they were.
 
-**Review finding 5, not applied.** It asks for a ruling on VP-03, VP-11, VP-18 and VP-19. On each, every letter given is `A`, while some variants bind per market (problem 6). The brief gives one letter per platform, so the letters and `follows` stay as the brief gives them until the coordinator rules.
+**Review finding 5, not applied.** It asks for a ruling on VP-03, VP-11, VP-18 and VP-19. On each, every letter given is `A`, while some variants bind per market (problem 6). The brief gives one letter per platform, so the letters and `follows` stay as the brief gives them until the coordinator rules. (Applied in the fourth run, after the ruling.)
+
+## Fourth run, after two rulings and Salla's new rows
+
+Since the third run:
+- **Two rulings were added to the brief**, both the coordinator's own:
+  - a variant that says a party has no part in X names no one filling X, whatever bullet its statement carries. It also shows that the party isn't in its platform's set, so that platform's gap can't hold it, and the platform differs from any platform that names the same party as filling X;
+  - a platform may carry more than one letter, joined by "+", where its statements show more than one binding.
+- **Phase B placed Salla's new statements.** On VP-06, Salla now has V-660 (observed), and V-655 is a gap (S01-SA-G07). Seven rows gained statements for answers they already had: V-055, V-085, V-091, V-187, V-256, V-475 and V-601.
+
+**Rows revisited, and why.**
+- **VP-06:** Salla's new rows, and V-623 under the first ruling.
+- **The second ruling, on every row where a platform's statements show both bindings:** VP-01 to VP-04, VP-06 to VP-21 and VP-23.
+  - The review named VP-03, VP-11, VP-18 and VP-19. My notes recorded a second binding on most of the other rows too. Where they didn't, the statements show one, mostly through variants whose statements are scoped to one market.
+  - I used the same test as before: `B` needs a statement that ties a variant to a market, plan or store setting; `A` needs statements that show two or more variants in force in one store.
+  - Every changed letter went from one letter to `A+B`. Platforms whose statements show one binding keep one letter, for example BigCommerce on VP-01 (`B`, review finding 6) and on VP-14 (`B`), and Salla on VP-16 (`B`).
+- **The first ruling, on rows with a no-part statement under a bullet other than (d):**
+  - VP-05: Coinbase in V-106 (S01-SH-017, bullet a);
+  - VP-06: V-623 (S01-BC-128, bullet a);
+  - VP-07: V-129 (S01-SH-030, bullets a;b);
+  - VP-08: S01-SH-087 in V-139 (bullets a;c);
+  - VP-09: S01-SA-106 in V-165 (bullets a;b);
+  - VP-10: V-168 (S01-SH-135, bullets a;end-payout);
+  - VP-11: V-174, V-179, V-188, V-555, V-556 and part of V-183 (bullets a, b, e);
+  - VP-13: V-256 (S01-SA-073, S01-SA-202) and V-575 (bullets a, b, e);
+  - VP-19: V-651 (S01-BC-126, bullet c), which also names the provider's fees as taken.
+
+  I read VP-12's statements that a party is "not licensed" or "not a bank" (V-206, V-207, V-212, V-218) as statuses, which are what VP-12 asks for, so the first ruling doesn't reach them.
+- **The seven rows with new statements.** No cell rested on what changed:
+  - V-055, V-085, V-187 and V-256 keep their answers and their general statements; the new Saudi or charity scopes sit beside them;
+  - V-091, V-475 and V-601 gained statements for the same answers;
+  - VP-19's general variant still holds: V-474 reaches V-601, whose carrier-app statements (S01-SA-190 to S01-SA-192) are another configuration.
+- **VP-22 was not revisited.** No ruling bears on it, and none of its rows changed.
+
+**Causes: none changed.** Before and after: vendor choice 15, market named rule 3, unknown 3, maturity 1, no difference 1.
+- **VP-06** stays `vendor choice`, now on the first ruling instead of on counting V-623 as an answer (old problem 15).
+  - Shopify names the platform itself as the merchant's agent (S01-SH-001).
+  - V-623 shows that the platform itself is not in BigCommerce's set, so BigCommerce's gap (V-124) can't hold it, and the global pair differs.
+  - Salla's new answer (V-660) is an observation, and its declarations are only a gap (V-655), so Salla and Zid are still not compared.
+- **The other no-part rows:** each statement names no one filling X, and none changes a test.
+  - VP-05: Coinbase fills nothing, so every filler is still the merchant.
+  - VP-08: S01-SH-087 shows that the platform itself is not in Shopify's set, but BigCommerce is still gap only, so tests 4 to 6 still can't be shown.
+  - VP-09: S01-SA-106 shows that the platform itself is not in Salla's set, while Zid names it (S01-ZD-010, S01-ZD-023). That adds to the difference the third run found.
+  - VP-07, VP-10, VP-11, VP-13 and VP-19: no other platform names the parties said to have no part as filling X. VP-13's cause rests on test 3 in any case.
+- The readings of VP-05, VP-06, VP-08, VP-09 and VP-10 now say this; the others say it in `note`.
+
+**Letters: 55 changed on 21 rows, each to `A+B`:**
+
+| VP | Third run → fourth run |
+| --- | --- |
+| 01 | shopify A → A+B; woocommerce B → A+B |
+| 02 | shopify A → A+B; bigcommerce A → A+B; woocommerce B → A+B |
+| 03 | zid A → A+B; shopify A → A+B; woocommerce A → A+B |
+| 04 | salla A → A+B; zid A → A+B; shopify B → A+B; bigcommerce A → A+B |
+| 06 | shopify B → A+B; woocommerce B → A+B |
+| 07 | shopify B → A+B; woocommerce B → A+B |
+| 08 | zid A → A+B; shopify A → A+B |
+| 09 | shopify A → A+B; woocommerce A → A+B |
+| 10 | shopify A → A+B |
+| 11 | zid, shopify, bigcommerce and woocommerce A → A+B |
+| 12 | shopify B → A+B; woocommerce B → A+B |
+| 13 | salla A → A+B; shopify B → A+B; bigcommerce A → A+B; woocommerce B → A+B |
+| 14 | salla, zid, shopify and woocommerce B → A+B |
+| 15 | shopify B → A+B; bigcommerce A → A+B; woocommerce B → A+B |
+| 16 | zid B → A+B; woocommerce B → A+B |
+| 17 | shopify B → A+B; woocommerce B → A+B |
+| 18 | all five A → A+B |
+| 19 | salla, zid, shopify and bigcommerce A → A+B |
+| 20 | zid A → A+B; shopify A → A+B |
+| 21 | zid A → A+B |
+| 23 | salla B → A+B |
+
+Each row's `note` says which statements carry which letter.
+
+**`follows`: 15 rows gained a row.**
+- VP-03, VP-08, VP-09, VP-11, VP-18, VP-19, VP-20 and VP-21 gained "a variation point behind one interface, bound per market, store or plan".
+- VP-06, VP-07, VP-12, VP-14, VP-16, VP-17 and VP-23 gained "the platform carries all the variants at once".
+- The rows that come from causes are unchanged: "a decision for the founder, on a recommendation", "kept open as a variation point until evidence settles it", "left to the build" and "a commonality, carried as the references carry it".
+
+**Founder items: none changed.** There are still 13.
 
 ## Causes recorded as `unknown`, with why
 
@@ -161,8 +240,9 @@ Founder items: 12 before, 13 after.
   - V-148's statement names the Saudi Central Bank's restrictions (S01-SA-089), but V-148 does not differ from the others, so test 2 does not apply.
   - Salla's other answer, the issuing bank (V-546, S01-SA-181), is an observation, and Zid has none, so like with like cannot set it against Zid.
   - BigCommerce's only variant is a gap (V-151), so tests 4 and 5 and Shopify against BigCommerce cannot be shown.
+  - Since the fourth run, Shopify's S01-SH-087 ("Shopify can't remove this type of hold") shows that the platform itself is not in Shopify's set. That separates Shopify from Salla and Zid, but test 5 still needs BigCommerce, which is gap only.
   - No cited statement carries a marker.
-- **S01-VP-10 (the holder of a security interest).** Salla's, Zid's and BigCommerce's only variants are gaps (V-170, V-171, V-172), since Salla's one answer (V-550) is gone in the third run. So neither pair can be compared, and tests 4 and 5 cannot be shown. No named law and no marker.
+- **S01-VP-10 (the holder of a security interest).** Salla's, Zid's and BigCommerce's only variants are gaps (V-170, V-171, V-172), since Salla's one answer (V-550) is gone in the third run. So neither pair can be compared, and tests 4 and 5 cannot be shown. No named law and no marker. Since the fourth run, Shopify's V-168, which only bars a lien to any third party (S01-SH-135), names no one filling X. It changes no comparison.
 
 S01-VP-21 was `unknown` in the first and second runs. In the third run it is `vendor choice` (see above).
 
@@ -173,11 +253,11 @@ S01-VP-21 was `unknown` in the first and second runs. In the third run it is `ve
 3. **One marked statement decides VP-13.** The cause there is `maturity` because V-567 cites S01-BC-059 (`beta`). The difference itself is about which agreement governs the merchant's payments, not about a release stage.
 4. **Settled by the amended brief (third run).** *Test 1 and "doesn't" answers.* On VP-05, V-105 names WooPayments only to say it has no part in BACS, as part of V-109 says of Salla. In the first two runs I read these as naming no other holder, a reading of my own. The brief now says a bullet (d) statement names no one filling X, and VP-05 stays `no difference` on that line.
 5. **Strict set equality hides shared answers.** On VP-16, Salla and Zid name the same minimums for Saudi Arabia (100 riyals) and Kuwait (1 dinar). Their sets still differ, since the third run only through Zid's 500-riyal minimum for مزيد (S01-ZD-088), because Salla's move of small amounts to the wallet (V-360) is no longer a variant. The rule therefore reads "vendor choice". This is also what separates the Saudi pair on VP-03 and VP-04: both name the platform itself, and only Zid's ترينديول answers differ.
-6. **One letter per platform** cannot carry a platform that binds some variants per market and runs several in one store. The second binding is only in `note`, and the `follows` rows are built from letters only. The review's finding 5 asks the coordinator to rule on this for VP-03, VP-11, VP-18 and VP-19, three of which carry founder items. I have not applied it.
+6. **Settled by the amended brief (fourth run).** *One letter per platform* could not carry a platform that binds some variants per market and runs several in one store, so the second binding sat only in `note`. The brief now allows joined letters, and 55 letters on 21 rows became `A+B` (see the fourth run, and problem 18).
 7. **`general_variant` holds one id per VP.** On VP-14, three platforms each have a general, configurable variant (Salla V-292, Shopify V-286, WooCommerce V-276).
 8. **"Product" in letter C** can mean a catalog item or a payment product (WooPayments, Salla Payments). I took the first.
 9. **Scopes without a country** (a provider, a plan, an order type) are not covered by "the same country, or general". I treated them as general.
-10. **Gap contents are outside the reading list.** I could not check whether a gap could hold another platform's answer, so I assumed it could.
+10. **Gap contents are outside the reading list.** I could not check whether a gap could hold another platform's answer, so I assumed it could. Since the fourth run there is one exception: a no-part statement on the same platform, which shows that its gap can't hold that party (VP-06).
 11. **Market causes have no expensive/cheap row.** For VP-12, VP-17 and VP-18, `follows` comes from letters alone, and no row asks for a decision.
 12. **New with the same rule: a product's name decides the party.** Some products the platforms name as their own are, in their own words, powered or processed by another party:
     - BigCommerce Payments is "powered by PayPal", with "the merchant's payment relationship ... directly with PayPal" (S01-BC-066, S01-BC-039);
@@ -187,12 +267,9 @@ S01-VP-21 was `unknown` in the first and second runs. In the third run it is `ve
     - صندوق سلة runs "بالشراكة مع تنامي" (S01-SA-130).
 
     Each such product now counts as the platform itself, and the partner as a second party in the same set. So the set of a platform whose own product a partner powers holds two parties for that product, where another platform's holds one.
-13. **New with the same rule: role terms are not covered.** "Stripe Connect Platform" (S01-SH-131, S01-WC-104) and "Platform" in the Adyen terms (S01-SH-125) mean the platform in context, but they are not its name, payment product or company. I counted them by name. No cause in the second or third run depends on them (VP-06, VP-09, VP-19 rest on other answers).
-14. **Settled by the amended brief (third run).** *Whether the same rule applies inside one platform.* The brief now says it does not merge one platform's own variants in step 4, which is how I had applied it. So the letters this problem listed stay as recorded: Zid on VP-01, BigCommerce on VP-05, and Zid on VP-08 and VP-21.
-15. **New in the third run: a "no part" statement under bullet (a).**
-    - V-623 (VP-06) rests on S01-BC-128, recorded under bullet (a): "No agency, partnership, joint venture or employment relationship is created by this Agreement". It names the platform's own company ("Commerce") only to say it is not the merchant's agent, as a bullet (d) statement would.
-    - Test 1's new line speaks of bullet (d) statements only, so I counted V-623 as an answer. VP-06 is `vendor choice`, with a founder item.
-    - Read as naming no one, V-623 would leave BigCommerce only a gap (V-124), with Salla not covered (V-655). VP-06 would then be `unknown`, and "kept open as a variation point until evidence settles it" would replace the founder item.
+13. **New with the same rule: role terms are not covered.** "Stripe Connect Platform" (S01-SH-131, S01-WC-104) and "Platform" in the Adyen terms (S01-SH-125) mean the platform in context, but they are not its name, payment product or company. I counted them by name. No cause in the second, third or fourth run depends on them (VP-06, VP-09, VP-19 rest on other answers).
+14. **Settled by the amended brief (third run).** *Whether the same rule applies inside one platform.* The brief now says it does not merge one platform's own variants in step 4, which is how I had applied it. So the letters this problem listed stay as recorded: Zid on VP-01, BigCommerce on VP-05, and Zid on VP-08 and VP-21 (the last two are now `A+B`).
+15. **Settled by the amended brief (fourth run).** *A "no part" statement under bullet (a).* V-623 (VP-06) rests on S01-BC-128, recorded under bullet (a), and names the platform's own company ("Commerce") only to say it is not the merchant's agent. The brief now says such a variant names no one filling X, whatever its bullet, and shows that the party is not in its platform's set. So VP-06 stays `vendor choice`, now because Shopify names the platform itself as agent and BigCommerce's gap can't hold it. In the third run I noted that reading V-623 as naming no one would make VP-06 `unknown`. The ruling's second part, that the party isn't in its platform's set, keeps the difference.
 16. **New in the third run: VP-22's difference rests on wording.**
     - Shopify's merchant receives "full payment" "After you capture the payment" (S01-SH-054). BigCommerce's merchant gets "paid up front" (S01-BC-024) and "always get paid" (S01-BC-094).
     - Under "the same words", these are different answers, so the global pair differs and VP-22 is a founder item.
@@ -201,3 +278,19 @@ S01-VP-21 was `unknown` in the first and second runs. In the third run it is `ve
     - On VP-08, Salla's only answer other than the platform itself is observed (V-546), and Zid has no observed variant.
     - Like with like therefore leaves the Saudi pair agreeing on declarations, with the observation set against nothing.
     - So an answer a platform has only by observation cannot separate it from a platform with no observations.
+    - VP-06 now shows the same: Salla's only answer is observed (V-660), so it can't be set against Zid's declaration (V-122).
+18. **New in the fourth run: joined letters leave `follows` with little to tell apart.**
+    - With `A+B` allowed, 21 of the 23 rows now carry both "the platform carries all the variants at once" and "a variation point behind one interface, bound per market, store or plan". Only VP-05 and VP-22 don't.
+    - The two rows no longer separate one VP from another. What separates them is in the letters per platform and in `note`.
+    - Most of the new `B` letters rest on a variant whose statement is scoped to one market or plan; most of the new `A` letters on two statements that each apply in the same store.
+19. **New in the fourth run: a no-part statement can be narrower than the platform's set.**
+    - On VP-11, S01-SH-030 says the merchant has no legal interest in the Reserve Account (V-179), while V-177 and V-178 name the merchant's own accounts.
+    - On VP-08, S01-SH-087 speaks of one type of hold, and on VP-09, S01-SA-106 of refunds of Tamara orders.
+    - I read "isn't in its platform's set" within the statement's own scope. No cause depends on that reading: on VP-09, Salla's only variant is V-165, and on VP-08 the cause is `unknown` either way.
+20. **New in the fourth run: letters still count variants that name no one.**
+    - The no-part rule sits in step 3. In step 4 I kept binding every recorded variant, as the brief's step 4 says ("how it binds its variants").
+    - One letter depends on this: Shopify's `A+B` on VP-10 rests on V-167 beside V-168, which names no one filling X.
+    - If such variants didn't count, Shopify would have a single answer there, its letter would be `unknown`, and VP-10's `follows` would lose "the platform carries all the variants at once".
+21. **New in the fourth run: a statement scoped to one market binds per market without saying what applies elsewhere.**
+    - For example, Zid's V-145 (VP-08) rests on S01-ZD-026, from the Saudi terms. The Kuwaiti terms recorded say nothing either way.
+    - I counted such a scope as a `B` binding, as the letter rule above says. Read strictly, `B` would need a statement that names the other market's arrangement too, and some of the new `B` letters would fall back to `A`, such as Zid's on VP-08.
