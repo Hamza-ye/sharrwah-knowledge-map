@@ -1,6 +1,6 @@
 # S-01 method report: what broke and what changed
 
-**Draft, 17 October 2026.** Written by the coordinator through phase C. It is completed after phase D, the register entry and the independent review (F).
+**Draft, 17 October 2026.** Written by the coordinator through phase D and the register entry. It is completed after the independent review (F).
 
 ## Where the pilot stands
 
@@ -13,6 +13,7 @@
 | Quotes | 1,528, all found verbatim |
 | Cited web pages | 146, all captured |
 | Founder items from phase C | 12 |
+| Yemen marks (phase D) | 122: 62 carried unchanged, 20 carried only with a partner, 40 unknown, no `no placement` |
 
 ## What broke, and what changed
 
@@ -84,8 +85,30 @@ Each of these faults made an agent think something was missing, or readable, whe
 - **The weekly usage limit** stopped every agent from 13 to 17 October. Each one resumed from its own transcript. The two-hourly check-in couldn't act before the reset.
 - **A coordinator's ruling worded too broadly.** In Stage 1, a ruling that forecasts are `proposed` took in estimates too, and had to be narrowed.
 
+### 8. Phase D: marking the subject in Yemen's cases
+
+- **A condition nobody could check.** No Stage 1 id says where the merchant is. So a variant whose condition names only countries, such as "merchants outside the Kingdom", could never be shown met or failed. `no placement` was then impossible on 22 variation points.
+  - **What changed:** every case shares Q2's frame, that the merchant sells in the Yemeni market. A country condition is checked against it, and cited as `Q2`. This is marked as the coordinator's own in the D brief and `PLAN.md` section 11.
+- **A variant with no stated condition still blocks `no placement`.** The brief requires every answer variant's failure to be shown. A variant whose statements give no scope can't be shown to fail. The mark is then `unknown`, which is honest but uninformative. It needs settling before Stage 4.
+- **Marks rest on Stage 1's states, so Stage 1's errors become wrong marks.** At D's first checkpoint, nine marks were "carried unchanged" through PayPal, on YA-62's "Available". The independent review of Stage 1 showed Yemen is send-only. Once fixed, PayPal fails, and those marks moved to Zid's wallet or to a partner.
+  - **Lesson:** the axes a subject bears on are checked against their quotes before its marks. The pilot did this as a targeted check.
+- **The result.** No case changes any mark from today's. Yemen's variation across places and time doesn't move this subject.
+
+### 9. Stage 1, as it bears on the pilot
+
+- **Rule-based reviews missed faithfulness.** Three rounds of review against step 2a's rules settled 142, then 38, then 1 returns. They couldn't see that a state misread its quote. An independent review that read 45 sampled axes against their quotes found an error in `today` or a case on 12 of them.
+- **One cause is in the method:** `today` takes the latest state per place name, and sources name the same ground many ways. So old states survive under other names.
+  - **The fix:** a `within` relation between places, so a later state supersedes the places inside its own. It is planned before Stage 4, with a faithfulness pass over every axis (`PLAN.md` section 11).
+- **The label rule can hide what matters.** "Rows that state one thing at different detail share the label of what both state" turned PayPal's "send only" into "Sending from Yemen", and "only" went to the note. The targeted check caught it: receiving became its own condition (YK-514). An exclusion, such as "only", states a second fact, and needs its own condition.
+
+### 10. The register entry
+
+- **Twelve founder items aren't twelve decisions.** Phase C's founder items each came from one variation point. But who holds the funds (S01-VP-01) decides most of the others: who settles, who pays out, who collects, the agency, deductions, accounts, timing, netting and termination.
+  - **What changed:** the entry presents one root decision with options A, A2, B, C and defer, and gives each dependent item the answer each option implies.
+  - **For later subjects:** phase C should mark the dependencies between founder items, so the entry needn't find them.
+- **The options' outside needs come from Stage 1.** Yemen's licensing for holding others' funds (YA-102, YA-103, YA-105, YA-106), and the processors' unavailability (YA-62, YK-514), are what make the options decidable.
+
 ## To complete
 
-- Phase D, on Stage 1's cases, and what it shows about the method.
-- The register entry, and whether the founder can decide from it (G1).
-- The independent review's findings.
+- The independent review's findings (F), and what changed after them.
+- Whether the founder can decide from the entry (G1).
