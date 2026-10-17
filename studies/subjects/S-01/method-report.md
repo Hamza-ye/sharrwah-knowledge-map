@@ -6,14 +6,14 @@
 
 | Measure | Value |
 | --- | --- |
-| Statements | 808 |
-| Gaps | 68 |
+| Statements | 821 |
+| Gaps | 69 |
 | Variation points | 23 |
-| Variants | 653: 616 answers, 35 `gap`, 2 `absent` |
-| Quotes | 1,528, all found verbatim |
+| Variants | 614: 576 answers, 36 `gap`, 2 `absent` |
+| Quotes | 1,561, all found verbatim |
 | Cited web pages | 146, all captured |
-| Founder items from phase C | 12 |
-| Yemen marks (phase D) | 122: 62 carried unchanged, 20 carried only with a partner, 40 unknown, no `no placement` |
+| Founder items | 14: 13 from phase C, and 1 from phase D's `no placement` |
+| Yemen marks (phase D) | 183: 90 carried unchanged, 35 carried only with a partner, 52 `unknown`, 6 `no placement` |
 
 ## What broke, and what changed
 
@@ -57,8 +57,8 @@ Each of these faults made an agent think something was missing, or readable, whe
 ### 5. Phase B: placing statements under variation points
 
 - **Comparisons.** The second pass compared each answer with another platform's statement where one exists, and 106 rows changed basis.
-- **Problems it recorded, still open:**
-  - different English words for one thing ("custody" for "holds");
+- **Problems it recorded:**
+  - different English words for one thing ("custody" for "holds"). The role test settled this after the review (section 11);
   - a term one platform lists with an empty definition;
   - comparisons that depend on the order statements are placed;
   - partly contradicted gaps;
@@ -71,9 +71,9 @@ Each of these faults made an agent think something was missing, or readable, whe
 - **What broke.** The rule for "same" treated the merchant as one party everywhere, but each platform's own name as a different party. So two platforms that each name themselves "differed".
 - **What changed.** The merchant, the buyer and the platform itself (its name, payment product or company) are one party on every platform. "Names a law" means a particular law or regulator. Both are marked as the coordinator's own, in the brief and in `PLAN.md` section 11.
 - **Result.** The second run changed no cause, letter, rule or founder item. The differences come from third parties only some platforms name (Global-e, BitPay, Tamara, Trendyol), or from gaps.
-- **Problems still open:**
+- **Problems recorded:**
   - strict set equality hides shared answers. On VP-16, Salla and Zid share minimums for Saudi Arabia and Kuwait;
-  - one coexistence letter per platform can't hold mixed binding;
+  - one coexistence letter per platform couldn't hold mixed binding. A ruling after the review settled this (section 11);
   - `general_variant` takes one id;
   - "product" in letter C is ambiguous;
   - scopes without a country aren't covered;
@@ -92,7 +92,7 @@ Each of these faults made an agent think something was missing, or readable, whe
 - **A variant with no stated condition still blocks `no placement`.** The brief requires every answer variant's failure to be shown. A variant whose statements give no scope can't be shown to fail. The mark is then `unknown`, which is honest but uninformative. It needs settling before Stage 4.
 - **Marks rest on Stage 1's states, so Stage 1's errors become wrong marks.** At D's first checkpoint, nine marks were "carried unchanged" through PayPal, on YA-62's "Available". The independent review of Stage 1 showed Yemen is send-only. Once fixed, PayPal fails, and those marks moved to Zid's wallet or to a partner.
   - **Lesson:** the axes a subject bears on are checked against their quotes before its marks. The pilot did this as a targeted check.
-- **The result.** No case changes any mark from today's. Yemen's variation across places and time doesn't move this subject.
+- **The result.** No case changes any mark from today's. So, on the axes the variation points bear on, Yemen's variation across places and time doesn't move this subject.
 
 ### 9. Stage 1, as it bears on the pilot
 
@@ -112,7 +112,7 @@ Each of these faults made an agent think something was missing, or readable, whe
 
 - **What it found.** Its verdict was "Not yet": 31 findings, 14 of them must-fix (`review.md`). Each option of the entry's root decision rested on a claim the files didn't support. By where each fault began:
   - **The method's rules, 5 findings:**
-    - phase B placed 83 variants on meaning, where their own words named no one in the variation point's role, and one under a different question (findings 26 and 25);
+    - phase B rested 83 variants on meaning alone, with no word shared with the other platform, which its rules then asked for; and it placed one under a different question (findings 26 and 25);
     - phase C applied its same-party rule to some readings and not others, and its test 1 had no rule for a statement that a party has no part (1 and 2);
     - the source-kinds rules filed terms pages as `stated` (28).
   - **Stage 1's facts behind the entry, 2 findings (13 and 14).** The facts the entry cited beyond `bears-on.tsv` had never been checked against their quotes. Two were wrong, each because a later report overrode the instrument it described: "banks only" for who may provide e-money in the government's area, and 700 million rials for a system operator's capital.
@@ -128,7 +128,7 @@ Each of these faults made an agent think something was missing, or readable, whe
     - phase B's `answers` rests on what a statement's own words name in the variation point's role, whatever its basis;
     - a statement that a party has no part names no one filling the role, whatever its bullet, and shows that the party isn't in its platform's set;
     - a platform may carry more than one coexistence letter.
-  - **Phase B re-checked every variant.** It rewrote 118, removed or merged 46 and added 6, so the variants went from 653 to 613. The answer sets changed on 15 variation points.
+  - **Phase B re-checked every variant.** It rewrote 118, removed or merged 46 and added 7, so the variants went from 653 to 614. The answer sets changed on 15 variation points.
   - **The source-kinds rules were fixed,** and 32 variants' kinds became `official page`.
   - **Stage 1's independent reviewer checked every Yemen fact the entry cites** against its quotes. Step 2a fixed the two faults and three labels, and the coordinator checked the result (`studies/yemen-cases/review-axes.md`).
   - **Salla's row on "agent",** left with no answer by phase B's re-check, went back to A2 and A3.
@@ -140,6 +140,13 @@ Each of these faults made an agent think something was missing, or readable, whe
 - **Lessons:**
   - **The coordinator's own work needs the agents' checks.** The entry's faults were the coordinator's. For later subjects, every Yemen fact an entry cites is checked against its quotes before review, and every grouping of evidence is marked as a reading.
   - **Rules that let a judgment rest on meaning drift.** Matching on meaning in phase B, and naming parties in phase C, both had to be re-ruled. Each ruling ties the judgment to what a statement's own words say.
+
+**The re-check** (`review.md`, "Re-check"). Thirteen of the 14 must-fix findings were fixed. The rewrite of the entry overreached the other way on option B. It said no processor Stage 1 covers serves merchants in Yemen, but Stage 1 shows local gateways, a card acquirer and payment APIs that do. What it doesn't show is whether any would hold funds in an account opened through a platform. The coordinator fixed this (finding 32), and the reviewer's optional findings 33, 34, 35 and 37 too.
+
+**Still open after the re-check:**
+- **A variant that names only what doesn't fill the role** (finding 36). Zid's S01-V-528 names the Gulf currencies that can't be withdrawn from its wallet, yet the currency question's reading and Yemen mark rest on it. The "no part" ruling covers phase C's comparisons, not phase B's placements or phase D's marks. This needs a ruling before the next subject. The entry says what the mark carries for a merchant in Yemen: a wallet in Saudi riyals.
+- **`follows` no longer separates the variation points by binding.** Once letters can be joined, 21 of 23 variation points take both the `A` and `B` rows (`notes-c.md`, problem 18). That is what the evidence shows: several variants at once, bound per market. But the rule table's letter rows now tell the build little that one sentence wouldn't.
+- **Whether WooCommerce's policy pages are terms** (finding 29) waits for a ruling.
 
 ### 12. What a subject costs
 
@@ -165,7 +172,7 @@ Each of these faults made an agent think something was missing, or readable, whe
 **Why.** Very roughly half of the pilot's cost was one-time or rework: restarts after usage limits, new tools, and re-runs after the review found faults in the method. But a subject run cleanly this way would still cost about a billion tokens, very roughly a fifth to a quarter of a week's limit. The method protects against the right faults: unsupported claims, missed evidence, and anchoring. Its cost doesn't scale. The coordinator didn't measure cost until the pilot's end, and should have.
 
 **The coordinator's proposals,** for the founder at G1:
-1. **Scope each subject to its decisions first.** The pilot split one subject into 23 variation points, one per word the platforms use. They gave 14 founder items, and one decision settles 11 of them. Every later phase multiplied by 23. A subject should first name its few root decisions, from the platforms' own top-level statements. Then its variation points should be the facets that can change one of them. The rest stay as notes.
+1. **Scope each subject to its decisions first.** The pilot split one subject into 23 variation points, one per word the platforms use. They gave 14 founder items, and in the coordinator's reading one decision settles most of the others. Every later phase multiplied by 23. A subject should first name its few root decisions, from the platforms' own top-level statements. Then its variation points should be the facets that can change one of them. The rest stay as notes.
 2. **Reuse what is recorded.** Each subject re-reads the same platform documents. Record each platform's statements once, tagged by subject, so later subjects start from them.
 3. **Keep each agent's run short.** An agent re-reads its whole history on every turn, so cost grows with the length of the run. Some ran for 800 to 1,400 turns. Give agents smaller tasks with fresh contexts, and give the mechanical steps to scripts.
 4. **Set a budget per subject,** measured on the first one, and stop to review when a phase runs past it.

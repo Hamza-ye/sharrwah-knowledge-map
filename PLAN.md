@@ -401,3 +401,6 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - **A platform may carry more than one coexistence letter,** joined by `+`, where its statements show more than one way: some variants together in one store, others bound per market. The review found binding per market on four variation points that one letter per platform couldn't carry (`review.md`, finding 5). Each letter's row in step 5 then applies, as before.
 
   Phase C re-applies steps 3 to 5 under both. Phase B's rows don't change.
+- **17 October 2026,** recorded after the independent review's re-check (`studies/subjects/S-01/review.md`, finding 37). The coordinator gave phase B this ruling the same day, with the role test, and it is now marked in `briefs/B-variation-points.md`:
+  - the subject's flow ends at the payout to the merchant's own bank account;
+  - a wallet is in the flow when its own words say it holds the merchant's sales proceeds before that payout. One whose words say only that it holds top-ups for the platform's services is outside it.
