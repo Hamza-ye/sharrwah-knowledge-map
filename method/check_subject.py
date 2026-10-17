@@ -444,9 +444,9 @@ if ana is not None:
                 if s not in stmts and s not in variant_ids and s not in absences:
                     err("analysis.tsv", v, f"{col} {s} is not a statement, variant or absence")
         parts = [x.strip() for x in r["coexistence"].split(";") if x.strip()]
-        if not parts or not all(re.match(r"^(\w+)\s*=\s*(A|B|C|D|unknown)$", x) and x.split("=")[0].strip() in PLATFORMS
+        if not parts or not all(re.match(r"^(\w+)\s*=\s*((A|B|C)(\+(A|B|C))*|D|unknown)$", x) and x.split("=")[0].strip() in PLATFORMS
                                 for x in parts):
-            err("analysis.tsv", v, f"coexistence '{r['coexistence']}' is not one letter per platform, as 'shopify=B; salla=D'")
+            err("analysis.tsv", v, f"coexistence '{r['coexistence']}' is not letters per platform, as 'shopify=A+B; salla=D'")
         present = {p for p in PLATFORMS if os.path.isdir(os.path.join(subj, p))}
         named = {x.split("=")[0].strip() for x in parts if "=" in x}
         if present - named:

@@ -396,3 +396,8 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - **A bullet (d) variant that says a party has no part names no one filling X,** so it doesn't break phase C's test 1.
 
   The other must-fix items are corrections under the rules as they stand: phase B's misplaced variants, phase C's VP-08, the source-kinds rules, Stage 1's YA-102 and YA-105, and the register entry.
+- **17 October 2026,** the pilot's phase C, after its third run raised two questions (`studies/subjects/S-01/notes-c.md`, problems 6 and 15). Two rulings follow, each marked in `briefs/C-analysis.md` as the coordinator's own:
+  - **A statement that a party has no part in X** names no one filling X, whatever bullet phase A gave it, so it doesn't break test 1. It does show that the party isn't in its platform's set, so that platform's gap can't hold it. Where another platform names the same party as filling X, the two differ. Phase A filed some such statements under bullet (a), such as BigCommerce's "No agency ... relationship is created" (S01-BC-128).
+  - **A platform may carry more than one coexistence letter,** joined by `+`, where its statements show more than one way: some variants together in one store, others bound per market. The review found binding per market on four variation points that one letter per platform couldn't carry (`review.md`, finding 5). Each letter's row in step 5 then applies, as before.
+
+  Phase C re-applies steps 3 to 5 under both. Phase B's rows don't change.

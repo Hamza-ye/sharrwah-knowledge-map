@@ -27,7 +27,7 @@ Don't read `notes*.md` files or any `note` column.
 Go down this list and take the first tag that applies *(the order is the coordinator's own)*. Compare by Mill's methods of agreement and difference.
 
 1. `no difference` *(the coordinator's own)*: no variant is `gap`, `not covered` or `absent`; at least two platforms answer; and every `variant` excerpt names the same who or what.
-   - *(The coordinator's own, 17 October 2026:)* a variant that names a party only to say it has no part, a bullet (d) statement, names no one filling X. Test 1 compares who or what fills X.
+   - *(The coordinator's own, 17 October 2026:)* a variant that names a party only to say it has no part names no one filling X, whatever bullet phase A gave its statement. Test 1 compares who or what fills X.
 2. `market, named rule`: a cited statement names a law or a regulator's rule as the reason for, or the condition of, a variant that differs from the others. *(The coordinator's own:)* it names a particular law, or a particular regulator with its rule. Generic wording such as "applicable law" or "a regulatory authority" doesn't count.
 3. `maturity`: a variant that differs from the others has a statement carrying a release marker, recorded in `marker`.
 4. `business model` *(this test is the coordinator's own)*: WooCommerce differs from the four hosted platforms, which agree among themselves, and a cited WooCommerce statement says what it does or doesn't provide.
@@ -38,6 +38,7 @@ Go down this list and take the first tag that applies *(the order is the coordin
 **Rules for comparing:**
 - **Same, agree, differ.** Two things are the same when they use the same words, or a platform's own translation of them in `terms.tsv`, or name the same party or identifier. Two platforms agree on a variation point when their sets of answers are the same; otherwise they differ.
   - *(The coordinator's own:)* the parties to the subject are one party on every platform: the merchant, the buyer, and the platform itself. The platform itself includes its own name, its own payment product, and its own company. So Salla naming Salla and Zid naming Zid name the same party. Any other party, such as Stripe or PayPal, is the same only by name. This rule compares platforms in step 3. It doesn't merge one platform's own variants in step 4.
+- **A party said to have no part** *(the coordinator's own, 17 October 2026)*. A variant that says a party has no part in X shows that this party isn't in its platform's set. So that platform's gap can't hold it. Where another platform names the same party as filling X, the two platforms differ.
 - **Like with like.** Compare declarations (`stated`, `official page`, `shipped`) with declarations, and `observed` with `observed`, as Q1's 12 October rule does. A cause resting on a declaration set against an observation is `unknown`, with why.
 - **Scopes** *(the coordinator's own)*. Compare variants whose scopes overlap: the same country, or general. Record the scopes compared in `scopes_compared`.
 - **Absence** counts only from an `absent` variant, which rests on a complete list. A `gap` is not absence. Absence ids (`S01-XX-N…`) may be cited wherever statements are.
@@ -45,7 +46,7 @@ Go down this list and take the first tag that applies *(the order is the coordin
 
 ## Step 4: coexistence
 
-Give one letter for each platform, by how the platform binds its variants:
+Give each platform the letter for how it binds its variants. *(The coordinator's own, 17 October 2026:)* where its statements show more than one way, give each letter, joined by `+`, as `shopify=A+B`, and cite each letter's statements in `coexistence_basis`. A platform can run some variants together in one store and bind others per market. `D` and `unknown` stand alone. The letters:
 - `A`: they coexist in one store;
 - `B`: one per store, market or plan, set by configuration;
 - `C`: one per product, so one store can hold several;
