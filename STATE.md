@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 14:36 UTC.
+**Updated:** 17 October 2026, 16:03 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -209,7 +209,29 @@ Agents started earlier keep their effort.
     - for Yemen now, the provider of each payment method holds and Sharrwah holds none, behind one interface that can carry a Sharrwah-held balance where a licence allows;
     - installments: defer;
     - currency: several per merchant, with the rial's two editions apart.
-  - **F, the independent review, is running** (`max`). It writes `review.md`. Then the method report is completed, and G1 goes to the founder;
+  - **F, the independent review: not yet** (`review.md`, commit `cda5e6b`). Its 14 must-fix items:
+    - upstream:
+      - phase C's causes for VP-08 (the same-party rule) and VP-05 (test 1);
+      - S01-V-550 misplaced. Without it, VP-10 becomes `no placement`, which brings a founder item;
+      - 83 variants rest on meaning rather than shared words. Strictly, VP-01's Yemen mark would be `unknown`;
+      - the source-kinds rules filed terms pages as `stated`;
+    - in the entry:
+      - Stage 1 facts not checked against their quotes, and varied by cases;
+      - YA-102's "banks only" against Stage 1's own instruments;
+      - "no reference processor serves Yemen" (BitPay unsettled);
+      - A2 unsupported;
+      - the three-way split, which goes against the same-party rule;
+      - B's support misstated;
+      - no answer lines for items 2 to 12;
+      - two misquoted Yemen lines.
+  - **The coordinator's rulings, in the briefs and `PLAN.md` section 11:**
+    - phase B's `answers` rests on what a statement says: its own words must name the party or thing in X's role in the subject's flow (matching basis 4);
+    - a bullet (d) "no part" variant names no one filling X, for test 1.
+  - **The source-kinds rules are fixed** (commit `94e973d`): a structure's file takes its nearest `meta.json`, and a captured copy takes its manifest's address.
+  - **The fix round is running:**
+    - phase B re-checks its variants under the ruling, including V-024 (Zid's wallet) and V-550, and brings `kind` into line with `kinds.tsv`;
+    - Stage 1's reviewer checks the facts the entry cites (YA-102, YA-105 and others);
+    - then phase C re-derives the causes, phase D re-marks the changed variation points, the coordinator rewrites the entry, and F re-checks;
   - **D's first checkpoint** (commit `2786cb4`):
     - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
     - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
@@ -236,18 +258,22 @@ Agents started earlier keep their effort.
 
 ## If the work was interrupted
 
-**The usage limit has stopped the running agents five times:**
+**The usage limit has stopped the running agents six times:**
 - at about 09:50 UTC, when all ten restarted at 10:10 UTC as new agents continuing from their files;
 - at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript;
 - at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript;
 - on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript;
-- on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript.
+- on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
+- on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
 - **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
 - **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
 - **Done, and resumable for Stage 1:** the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`.
-- **Pilot F, the independent review:** agent `a349d058600a20b3a` (`max`), writing `studies/subjects/S-01/review.md`.
+- **Pilot phase B, re-check after F:** agent `a9e10fcc19233f104` (`max`).
+- **Stage 1's independent reviewer, checking the facts the entry cites:** agent `a0755eeb78b50b2c8` (`max`).
+- **Pilot F's agent,** `a349d058600a20b3a`, is done. It is resumed to re-check the fixes.
+- **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done. It is resumed to re-derive the causes.
 - **Pilot phase D's agent,** `a279f7e700e54e76b`, is done, and is resumed for any marks F finds wrong.
 - **Done, and resumable:** the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`.
 - **Stage 1 step 2b's agents,** done. They can be resumed for their ranges: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
