@@ -467,7 +467,38 @@ Step 2b added 46 places (59 rows in `pass2/places-1.tsv` to `places-4.tsv`, as r
 
 ### Unknowns
 
-To follow after the build and its review.
+`unknowns.tsv` has five rows, one for each axis whose `today` has an `unknown` part. Each part is at a place whose only row is `proposed` or `ended`. The same five parts have been in today since the first build (see the counts after each review round).
+
+- **By who could close them:**
+  - `founder`, one: YA-40, the anti-usury law at the House of Representatives in Sana'a's area. Saba is the source item 038 gives for the House's vote. saba.ye answered HTTP 403 to the run fetched from outside Yemen, and the founder saved one Saba page (F01) from inside Yemen.
+  - `agent`, four: YA-77, the National Wallet Company's services; YA-88, the e-money limit at place not stated; YA-99, NFC at Cash; YA-169, who collects revenue in the Hadramawt local authority's area. Each needs a source online, of the kinds the runs captured from outside Yemen.
+  - `reader`, none. The one held text read for them that can't be read in full is a figure the OCR garbles (item 050, line 390, under YA-88), and pass 1 took no row from that line.
+- **What the cases need.** No case needs a state that no source shows, beyond these five parts:
+  - no case has a bare `unknown`, and none adds an unknown part;
+  - every case keeps the five parts of today, except YC-187, which puts YA-88's part at YQ-E118's ended state (basis `occurred`);
+  - a `proposed` state builds no case, so the other four parts are in all 350 cases.
+
+  So `unknowns.tsv` has no row about a case. Each row's `why_not_held` gives how many cases carry its part.
+- **How they were looked for.** Each row's `read` gives its search, and each file read with whether it could be read. Every search ran over all the readable text the brief allows, 826 files:
+  - the item texts of the three web runs, 449: each item folder's `.txt` files except `headers.txt` and `duplicate-of.txt`, and its `raw.json` (cited sources 264, operators 112, Sana'a rules 73). 38 of them come from items the manifests list as blocked or gone, and hold a block or error page;
+  - the community clients' files, 338: those under 2 MB that aren't images or lock files;
+  - the OCR texts under `derived/`, 24, and the founder's page texts under `derived/blocked-evidence-founder/`, 15.
+
+  `attestations/` holds only `TEMPLATE.md`. Items blocked with no text, such as nine of the Sana'a central bank's pages in the Sana'a rules run, have nothing to search. The two of them that bear on YA-88 are named in its row.
+- **The five rows:**
+  - **YA-40 (YG-075), founder.** The only row at the House of Representatives in Sana'a's area is the bill it passed in final form on 21 March 2023 (YQ-B063, proposed). The rows that give the law in force are at Houthis' area and Houthi-controlled areas, and the House in Sana'a has no cited tie to them (Problems with the method). Item 073 says 'the DFA legislature' passed the law (YQ-D340) and, at line 7226, that it was 'issued by the Sana'a parliament', which is no pass 1 row. The seven saba.ye items of the Sana'a rules run hold only a security check.
+  - **YA-77 (YG-163), agent.** The only row at the National Wallet Company's service is Telepin's deal of 21 January 2020, with the wallet being launched (YQ-E006, proposed). Item 134 is the only file that names the company or Telepin. ONE Cash's operator, the National Electronic Wallet Company, and MEPS Yemen's National Wallet have close names, but no source names either with it, as step 2c found for the places.
+  - **YA-88 (YG-183), agent.** The only row at place not stated is item 153's 'previous regulations', under which a bank may issue e-money up to 15 percent of its capital and statutory reserves, and which the 2020 decree overrides (YQ-E118, ended). Item 153 names no authority. Its footnote 29 cites the brief held as item 154, which gives the rule as CBY Circular No. 11 of 2014 (YQ-E191, held at Central Bank of Yemen's area). Step 2b kept YQ-E118 at place not stated, and step 2c changes no state, so the part stays.
+  - **YA-99 (YG-213), agent.** The only row at Cash's service is NFC to come (YQ-C043, proposed, from the ymp.ye listing), and Cash's own page says the same (item 210, line 23). Cash's other pages and its app's listing don't mention NFC.
+  - **YA-169 (YG-476), agent.** The only row at the Hadramawt local authority's area is its statement that it would deposit all central revenues with CBY-Aden (YQ-E488, proposed, November 2025). Two passages read bear on it, but pass 1 took no row from either, and pass 2 adds no citation:
+    - item 161, line 75: on 28 March 2026 Hadramawt's governor warned that the governorate could withhold revenue transfers if its demands went unaddressed;
+    - item 046, line 214: 'The governors of Marib, Hadhramaut and Shabwah keep a percentage of taxes and fees'. Pass 1 took another sentence of the line (YQ-D191).
+
+**Sources opened for the unknowns, after the build:**
+- the files in each row's `read`, to look for the state its part needs;
+- the four runs' `README.md`, the three web runs' `manifest.tsv`, and `evidence/yemen/blocked-evidence-founder/README.md` and `manifest.tsv`: to see where each item was fetched from, and which were blocked.
+
+That README also says the founder reports that the remaining addresses on the fetch list could not be opened from inside Yemen either. That is the founder's report, not evidence of what saba.ye does, so YA-40's route rests on the 403s and on F01.
 
 ## Review round: groups returned to step 2a
 
@@ -751,3 +782,56 @@ As in the review round: the reviewers' fixes are advice, and each was decided un
   - YQ-E366: 'significant power outages (18–20 hours per day in some districts)';
   - YQ-E436: 'prolonged blackouts', with cuts 'up to 20 hours a day'.
 - **Why this label.** The three quotes all give the figure, but the group's rows without a figure state the same outages (YQ-E126, E340, E454, all 'prolonged outages'). A shared label of 'outages up to 20 hours a day' would set those rows against these in the axis again. So all six rows take the label of what they all state, 'prolonged outages', and each figure stays in its row's note.
+
+## After the build
+
+### Counts
+
+- `groups.tsv`: 739 groups over all 2,532 rows. `places.tsv`: 393 places, 160 of them grouped with another.
+- The build: 227 axes, 512 constants and 350 cases. The third review let this `axes.tsv` through, at the sha256 that `review-axes.md` names.
+- The cases:
+  - YC-00, today's case;
+  - 288 cases, one per non-today state: 21 `in force`, 267 `occurred`;
+  - 61 cases, one per combination of `held` states that a single source shows at one dated time: 2 `in force`, 59 `occurred`;
+  - none is `provided for`.
+- Today has 10 disputed parts on 9 axes, and 5 unknown parts on 5 axes (see Unknowns, under step 2c).
+
+### Disputed parts in today
+
+Each part's states, with their rows and citations. Each axis's `note` records the states, unresolved.
+
+- **YA-01 (YG-001), place not stated.** YER 2,000 (YQ-D056 [YE-D061], 2 August 2025), YER 3,000 (YQ-D458 [YE-D656, YE-D657], 2025) and YER 2,065 (YQ-E644 [YE-E719], 2025). Three sources' rates tie under the precision rule; the review round left the tie (Fixes, YG-001).
+- **YA-05 (YG-006), the internationally recognized government's area.** Fixed and enforced (YQ-D065 [YE-D067], 13 February 2026), against floating (YQ-E756 [YE-E893], YQ-E783 [YE-E923], February 2026). It is in the list under step 2a (Disagreements).
+- **YA-20 (YG-031), Aden, 15 February 2026.** Short (YQ-E602 [YE-E668, YE-E670, YE-E672]), against no real shortage, cash poorly distributed (YQ-E603 [YE-E672, YE-E673, YE-E1081]). It is in the list.
+- **YA-59 (YG-119), Houthis' area, February 2026.** In the currency sent (YQ-E790 [YE-E929, YE-E931]), and in Saudi riyals (YQ-E791 [YE-E930, YE-E931]). Both come from one source, item 249. It gives the first as the Sana'a-based exchange association's rule of February 2024 and the second as HC-CB's of March 2024, and says 'These practices have persisted' (YE-E931). It is not in the list, which is of sources that disagree: these are one source's two statements (Problems with the method).
+- **YA-60 (YG-120), Cash e-wallet's service, 10 October 2026.** Named as a possibility, through MoneyGram or Western Union (YQ-C041 [YE-C028]), against available (YQ-C169 [YE-C151]). It is in the list.
+- **YA-62 (YG-125), Wise's service, 10 October 2026.** Available (YQ-E580 [YE-E635, YE-E636]), against unavailable (YQ-E581 [YE-E637, YE-E638, YE-E639, YE-E640]). It is in the list.
+- **YA-64 (YG-131), Aden and Sana'a, 2023.** It is in the list. The list's YQ-D347 and D348 now stand at the IRG's area and Houthis' area, outside these parts.
+  - At Aden: 91 companies (YQ-D352 [YE-D477, YE-D478], YQ-D432 [YE-D613]), against 332 outlets, 96 companies and 86 agents licensed (YQ-D429 [YE-D612]).
+  - At Sana'a: 415 companies (YQ-D351 [YE-D477, YE-D478], YQ-D431 [YE-D613]), against over 170 companies licensed (YQ-D430 [YE-D612]).
+- **YA-71 (YG-154), ONE Cash's service, 10 October 2026.** Returned to the sender after 30 days (YQ-C233 [YE-C214]), against within 14 days (YQ-E045 [YE-E050, YE-E045], YQ-E064 [YE-E068, YE-E062]). It is in the list.
+- **YA-227 (YG-737), place not stated.** 8.8 percent (YQ-D365 [YE-D498], 2022), against 10 percent (YQ-E661 [YE-E738, YE-E1096, YE-E1107], July 2022). The two tie under the precision rule; the second review round left the tie (YA-197).
+
+### The disagreements listed under step 2a, after the review rounds
+
+The list's group ids are step 2a's. The review rounds changed some of its entries:
+- **Two are no longer disagreements,** as the second review round found:
+  - Cash's cash-out hours: YQ-C127 is now in YG-638, and YQ-C178 in YG-734;
+  - the number of e-wallets on 11 July 2026: YQ-C444, C445 and C461 share '8 to 10' in YG-640, and YQ-C462 is in YG-735.
+- **Rows now in other groups:**
+  - YQ-B025 is in YG-569, YQ-D490 in YG-605, YQ-E795 in YG-612, YQ-E196 in YG-736, and YQ-C076 in YG-027;
+  - YQ-E155 and E208 are in YG-737, and YQ-E706 and E707 in YG-722;
+  - YQ-D365 (the whole population) is in YG-737, apart from YQ-E096 and E768 (adults), which stay in YG-513.
+
+### Problems with the method, after the build
+
+- **Proposed states.** A `proposed` state builds no case (rule 7). So a place whose only row is proposed is `unknown` in today, and in every case that keeps its axis at today: four of the five unknown parts are in all 350 cases.
+- **Place not stated.** It counts as one more place (rule 4). So a single `ended` row there makes an unknown part (YA-88), which only a held state from a source that names no place would fill. The same rule from a source that names its authority stands at that authority's area (YQ-E191).
+
+### The full check
+
+`python3 -I method/check_yemen_cases.py studies/yemen-cases <out>`, with no flag, after `unknowns.tsv` and these notes:
+- no errors and no warnings;
+- one review-level note: the 227 axes pass the brief's stop at 20, and were reviewed in `review-axes.md`;
+- all 4,052 quotes are found in the files they cite;
+- `axes.tsv`, `constants.tsv` and `cases.tsv` are what the build gives.
