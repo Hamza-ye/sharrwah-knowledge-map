@@ -121,6 +121,7 @@ If an authority's area or a party's service you need isn't in `places.tsv`, add 
 - **`provided for`:** an enacted law or issued decision provides for the state, its effective date is after its source's date, and no source shows it in effect.
 - **`ended`:** a source says the state held and then ended, such as a suspension lifted or a rule repealed.
 - **`proposed`:** a draft, plan or announcement, not enacted or issued. It is listed on its axis, but is never today and builds no case.
+- A forecast or estimate of a value is `proposed` too: no source shows it held.
 
 **`now`:** `yes` on the state a source presents as current, when the same source gives an earlier state for the same place dated the same at the coarser precision. Otherwise it is empty.
 
