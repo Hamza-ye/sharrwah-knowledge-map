@@ -83,3 +83,23 @@ Format changes applied to every row:
 
 ## What changed, by variation point
 
+### S01-VP-01 "holds the funds"
+
+- **Changed form:** S01-V-027 (bigcommerce) changed from `gap` (S01-BC-G01) to an answer from S01-BC-051 and S01-BC-055: "all transactions made through BigCommerce Payments flow through your new BigCommerce Payments account". The new row S01-V-532 is a `gap` row with A2's S01-BC-G04, which asks who holds the funds.
+- **Gap and absent rows kept:**
+  - S01-V-025 (zid) stays `gap`, now with A2's S01-ZD-G10, S01-ZD-G11 and S01-ZD-G12.
+  - S01-V-022 (salla) stays `absent`; the audit confirms S01-SA-N01.
+- **New statements placed:**
+  - S01-SA-144 joins S01-V-016.
+  - S01-WC-132 and S01-WC-148 join S01-V-009 (Stripe).
+  - S01-WC-143 is S01-V-013 ("pooled merchant funds accounts").
+- **S01-WC-129 left this variation point.** Its only basis was a reference to the section of S01-WC-120, on its own platform. Compared with another platform's statement, no basis holds. Its row, S01-V-013, now holds S01-WC-143.
+- **Rechecked against another platform** (first compared within their own platform, or with no statement named): S01-V-001 to S01-V-007, S01-V-010, S01-V-011, S01-V-015, S01-V-016, S01-V-017, S01-V-020 and S01-V-026.
+  - S01-V-011 lost `identifiers`, which it shared only with S01-WC-122.
+  - S01-V-016 and S01-V-017 lost `term`, which they shared only with Salla statements.
+- **Translations:** the Arabic rows S01-V-016 to S01-V-019, S01-V-021, S01-V-023 and S01-V-024 now mark the translations that `answers` rests on as mine.
+- **Not placed:** these A2 statements do not say who or what holds the funds:
+  - S01-SA-148 and S01-SA-157: tracking of electronic payments in the wallet is "قادم قريبًا";
+  - S01-SA-149: tracking of cash on delivery amounts is through the shipping company;
+  - S01-BC-058: funds are "managed within a dedicated balance dashboard".
+
