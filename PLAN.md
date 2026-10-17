@@ -384,4 +384,4 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - the parties to the subject are one party on every platform: the merchant, the buyer, and the platform itself (its name, its payment product, its company);
   - "names a law" means a particular law, or a particular regulator with its rule. Generic legal wording doesn't count.
 
-  Phase C re-applies steps 3 to 5. Its first run stays in git history (commit after `0abc81b`).
+  Phase C re-applies steps 3 to 5. Its first run stays in git history, at commit `34a32b9`.
