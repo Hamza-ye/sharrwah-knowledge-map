@@ -800,3 +800,52 @@ S01-V-601 (S01-VP-19) now also holds S01-SA-126 and S01-SA-125, which take the s
 - 6 marks for S01-VP-01 name the removed S01-V-024;
 - 13 marks for S01-VP-11 name the removed S01-V-194;
 - 51 are for cases of the rebuilt `cases.tsv`.
+
+# Salla follow-up on S01-VP-06, after Salla's A2 and A3
+
+Salla's A2 took the `not covered` row S01-V-655 ("agent"). It gave statements S01-SA-190 to S01-SA-201 and gap S01-SA-G07. A3 confirmed the gap and added S01-SA-202. Each statement was placed under rule 4 as it now reads, the role test included. Rows these statements don't touch are unchanged.
+
+## Placed
+
+- **S01-SA-190, S01-SA-191 and S01-SA-192** (the merchant authorises Salla to hold waybill amounts from the wallet balance and pay the carrier). Their bullet (c) is in S01-V-601 (S01-VP-19) with S01-SA-125: the label value, taken from the funds before payout.
+  - Their bullet (a) fits no variation point. Paying a carrier from the wallet is a payment for a service, not collecting or holding the buyer's payment. The same was found for S01-SA-125 under S01-VP-06 and S01-VP-08 above.
+- **S01-SA-195** ("you'll authorize Salla to use it for payment processing", for payment methods for charities):
+  - the new row S01-V-660 under S01-VP-06: Salla acts with the merchant's own "{{name}} account";
+  - S01-V-085 (S01-VP-04), Salla processing payments;
+  - S01-V-187 (S01-VP-11), the merchant's account at the payment gateway, with S01-SA-112.
+- **S01-SA-198** (the store's courier "يقدم خدمة تحصيل المبالغ عند التسليم", my translation: "offers a service of collecting the amounts on delivery"): S01-V-091 (S01-VP-04), with "مندوبك الخاص".
+- **S01-SA-200** (صندوق سلة, "تُحصَّل تلقائيًا من مبيعات متجرك عبر مدفوعات سلة", my translation: "collected automatically from your store's sales through Salla Payments"): S01-V-475 (S01-VP-19).
+- **S01-SA-202** (a blog post), in three rows:
+  - S01-V-085 (S01-VP-04): Salla's solution "يستقبل أموالك" (my translation: "receives your money");
+  - S01-V-055 (S01-VP-03): it "يحولها لحسابك" (my translation: "transfers it to your account");
+  - S01-V-256 (S01-VP-13): "ولا توقع عقود مع شركات دفع خارجية" (my translation: "nor do you sign contracts with external payment companies").
+
+**S01-V-655** is now a `gap` row with S01-SA-G07: in what capacity Salla, or another party, receives or holds buyers' payments made through مدفوعات سلة. Salla's rows under S01-VP-06 are now S01-V-660 (charities) and S01-V-655 (the gap).
+
+## Under no variation point (6)
+
+- S01-SA-193: the reason for the holding policy, "تسهيل المعاملات المالية بين التاجر وشركاء متجر التطبيقات" (my translation: "facilitating financial transactions between the merchant and the app store's partners"). These are payments to app partners, outside the flow.
+- S01-SA-194: the merchant authorises Salla to pay app partners, as S01-SA-124 does. Its bullet (d) part disclaims dealings between the merchant and the partner, which no variation point asks about.
+- S01-SA-196 and S01-SA-197: the areas in which Salla seeks payment and merchant-of-record partners. They name no party.
+- S01-SA-199: the store is "الطرف الوحيد الذي يملك صلاحية تعديل طلبك أو إعادة مبلغك" (my translation: "the only party with the authority to change your order or return your money"). No (a) variation point asks who refunds the buyer.
+- S01-SA-201: settlement methods for cash on delivery "تختلف ... بحسب سياسة شركة الشحن" (my translation: "differ ... according to the shipping company's policy"). It names no time, schedule or condition.
+
+46 statements are now under no variation point, all named in these notes.
+
+## Other changes
+
+- **`raised_by`** adds the placed statements.
+- **`x_words`** gains:
+  - Salla's part of S01-VP-06, "authorize Salla to use it for payment processing";
+  - "يستقبل أموالك" and "payment processing" (S01-VP-04);
+  - "يحولها لحسابك" (S01-VP-03);
+  - "عقود مع شركات دفع خارجية" (S01-VP-13).
+- **S01-V-475:** the quotation of S01-SA-131 now matches the statement byte for byte. Its diacritics were in another order.
+
+## Answer sets changed
+
+Only S01-VP-06: Salla moves from `not covered` to an answer (S01-V-660) and a gap (S01-V-655). S01-VP-03, -04, -11, -13 and -19 gained statements for answers they already had.
+
+## Result
+
+There are 614 rows: 576 answers, 36 `gap`, 2 `absent` and 0 `not covered`. `s01-check-b6` reports no error. Its review line lists the 46 statements under no variation point.
