@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 13:03 UTC.
+**Updated:** 17 October 2026, 13:28 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -101,7 +101,15 @@ Agents started earlier keep their effort.
     - PayPal shows `Available`, which hides send-only.
 
     Q2's five example axes are all covered. The internet shutdowns of 2020 and 2022 are recorded nowhere.
-  - **Its fixes 1 to 5 and 7 are with step 2a** (running). The coordinator checks the changed axes, then the build writes cases again. Precision ties stay disputes, and D marks them `unknown`. D reads each part's date until the method changes;
+  - **Its fixes 1 to 5 and 7 are made and checked** (commit `900c24a`):
+    - the 2024 bank bans end at each side's area;
+    - PayPal reads "Sending from Yemen", with "only" in the note and quote;
+    - the government's exchange rate reads "fixed";
+    - the notes withdrawal is `provided for`;
+    - YA-40's founder unknown closes from held evidence.
+
+    Now 228 axes, 513 constants and 342 cases. The full check is clean. Precision ties stay disputes, and D marks them `unknown`. D reads each part's date until the method changes;
+  - **the targeted check of S-01's axes is running:** the independent reviewer checks the 15 axes and constants in phase D's `bears-on.tsv` against their quotes;
   - **next for the pilot:** once D's checkpoint lists the axes S-01 bears on, the independent reviewer checks those against their quotes, and step 2a fixes what it finds, before D marks on;
   - **before Stage 4:**
     - a `within` relation between places, so a later state supersedes the places inside its own;
@@ -188,7 +196,12 @@ Agents started earlier keep their effort.
     - Ten statements fit no variation point. All are peripheral, such as where to track cash-on-delivery amounts or a dashboard's name, so no variation point is missing.
     - Its notes on the brief: different words in one language, empty definitions, partly contradicted gaps, and the scope separator. They go to the method report. The B brief's reading list now names `absence-audit.tsv`.
   - C is done; its 12 founder items wait for the register entry, after D;
-  - **D is running** (`max`), in parallel with Stage 1's independent review. It stops after `bears-on.tsv` and YC-00's marks, so the coordinator can test the checker's step 2 on its first rows;
+  - **D's first checkpoint is done** (commit `2786cb4`):
+    - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
+    - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
+    - the checker passed the first rows.
+
+    D's brief gap is fixed: a condition naming only countries is checked against Q2's frame, cited as `Q2`, as the coordinator's own (`PLAN.md` section 11);
   - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
   - F;
   - the method report;
@@ -219,9 +232,9 @@ Agents started earlier keep their effort.
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
 - **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
 - **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
-- **Stage 1 step 2a, fixes from the independent review:** agent `a4a6021a9605c1efe` (`max`).
-- **Stage 1's independent reviewer,** `a0755eeb78b50b2c8`, is done. It is resumed to check the axes S-01 bears on.
-- **Pilot phase D:** agent `a279f7e700e54e76b` (`max`), writing `bears-on.tsv`, `yemen-marks.tsv` and `notes-d.md` in `studies/subjects/S-01/`. It stops at a checkpoint after YC-00's marks.
+- **Stage 1's independent reviewer, checking S-01's axes:** agent `a0755eeb78b50b2c8` (`max`).
+- **Stage 1 step 2a's agent,** `a4a6021a9605c1efe`, is done with the review's fixes. It is resumed for fixes the check finds.
+- **Pilot phase D:** agent `a279f7e700e54e76b` (`max`), paused at its checkpoint (`bears-on.tsv` and YC-00's marks, commit `2786cb4`). It is resumed once S-01's axes are checked: to redo YC-00's marks on the fixed axes, then mark the other cases. The brief now lets it cite Q2's frame, `Q2`.
 - **Done, and resumable:** the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`.
 - **Stage 1 step 2b's agents,** done. They can be resumed for their ranges: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
