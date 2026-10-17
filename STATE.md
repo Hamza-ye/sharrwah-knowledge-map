@@ -135,7 +135,11 @@ Agents started earlier keep their effort.
   - It made 21 BigCommerce gaps' pages readable, and the checker reported 42 routes to the founder for pages now held.
   - The checker now counts such a page as read once A2 or A3 names its held copy in `read`. An address alone doesn't count, because BigCommerce's first A2 listed the addresses it was refused.
   - A "page not read" gap left open after every page it waited on was read is an error.
-  - BigCommerce's A2 is re-running on the capture (`medium`), from S01-BC-066. Phase B places those statements in a follow-up, then A3 audits any new claim of absence.
+  - **BigCommerce's A2 re-run on the capture is done** (`medium`). It added S01-BC-066 to 124, from items 1 to 8 and 40.
+    - G01, G04, G06, G07 and G13 close in full, and eight more gaps in part. G24 to G40 record what is still not stated.
+    - BigCommerce Payments holds funds in "a brand new PayPal platform account" that "will handle all settlement". A new account's initial payments are held up to 21 days. The service is offered in the UK as well as the US, which contradicts S01-BC-028 ("only US").
+    - The checker reports no error in BigCommerce's files, and all 1,521 quotes are found.
+  - **A3 is auditing its 14 new claims of absence** (`high`), with the agreements BigCommerce's terms incorporate among its sources. Phase B then places the new statements in a follow-up.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
   - B's second pass, now running: it places the 157 statements A2 and A3 added under the existing variation points, and revisits every gap, absence and row not covered;
@@ -169,7 +173,7 @@ Agents started earlier keep their effort.
 
 **Agents running when last checked (17 October 2026, 06:40 UTC):**
 - **Pilot phase B, second pass:** agent `a9e10fcc19233f104`. It places BigCommerce statements only up to S01-BC-065, and gets a follow-up for the rest.
-- **Pilot A2, BigCommerce's re-run on the Help Center capture:** agent `a78ea1ca9dfa9e408` (`medium`).
+- **Pilot A3, BigCommerce's new claims of absence (G24 to G31, G35 to G40):** agent `acdad5f7116bb6e5c` (`high`).
 - **Stage 1, the axes review,** two agents at `max` drafting returns to step 2a for the `axes.tsv` with sha256 `cad03aa3…`, into the scratchpad's `y-review/` (`returns-<k>.tsv`, `review-notes-<k>.md`):
   - YA-01 to YA-126: agent `ac1ab6f9db5c9443e`;
   - YA-127 to YA-253: agent `a9826e37d14145ed2`.
