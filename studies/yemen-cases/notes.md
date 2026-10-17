@@ -10,7 +10,7 @@
 
 ### Counts
 
-- `groups.tsv`: 561 groups over all 2,532 rows; each row is in exactly one group. The review round raised this to 728 (see its counts, at the end).
+- `groups.tsv`: 561 groups over all 2,532 rows; each row is in exactly one group. The review round raised this to 728, and the second review round to 739 (see their counts, at the end).
 - 213 groups join rows from more than one part, bringing together 644 pass 1 wordings (listed below).
 - 84 pass 1 wordings have their rows split between two or more groups, under rule 2 (listed below).
 - `places.tsv`: 346 places: the 283 places pass 1 gives, 61 parties' services, and two authority areas added for step 2b (the European Union's area; the unified Republic's area).
@@ -660,3 +660,86 @@ To follow after the build and its review.
   - nine that the review left alone as made by the sources: the fixed rate at the IRG's area (YA-05), Aden's cash (YA-20), the payout rules at Houthis' area (YA-60), Cash's international transfers (YA-61), Wise's two pages (YA-63), the counts at Aden and at Sana'a (YA-66, two parts), ONE Cash's 30 against 14 days (YA-74), and Cash's hours (YA-225);
   - the wallet counts of 11 July 2026 (YA-226): two articles each give 8 to 10 and, from an interviewee, possibly over 15.
 - Today has 5 unknown parts, each at a place whose only row is proposed or ended, as before the round (YA-40, YA-80, YA-91, YA-103, YA-176).
+
+## Second review round: returns fixed
+
+### What was read
+
+- `review/returns-1b.tsv` (22 rows) and `review/returns-2b.tsv` (16 rows): 38 rows on 37 axes. Their axis ids are those of the `axes.tsv` at commit `71ab056`, and so are the ids below, except under "Counts after the round".
+- The "Second review" sections of `review/review-notes-1.md` and `review-notes-2.md`, and `review-axes.md`.
+
+### How the fixes were made
+
+As in the review round: the reviewers' fixes are advice, and each was decided under the brief. New groups take ids from YG-729 to YG-739. Rows were relabelled or placed in `pass2/states-<k>.tsv`, keeping each row's `group_id` equal to its group in `groups.tsv`. Most returns are labels: a figure, list or detail given with and without the rest, now one label of what all the rows state, with the rest in `note`.
+
+### Fixes, by axis and group
+
+- **YA-15, YG-024.** Followed in part. YQ-E620 moves to Houthis' area: its own source, item 201, gives the ban as the Houthis' (YE-E697, YQ-E621). YQ-D220 stays at Houthi-controlled areas: item 046 says the new notes 'were banned' in Ansar Allah-controlled areas but names no authority that banned them (opened to check), so step 2b's rule for a rule an authority sets can't place it without inference, and its pass 1 place stands.
+- **YA-17, YG-026.** Followed: YQ-E317 (coins circulating in everyday trade) and YQ-E605 (Aden's 200-rial note refused by exchange companies) split to YG-729, on whether the new coins and notes circulate or are accepted in practice; YG-026 keeps the rules.
+- **YA-33, YG-061.** Followed: YQ-D492, D001, D493, C383, E339 and E526 share 'banks decided to move to Aden', the March 2025 decision with and without its count and list, which stay in note.
+- **YA-43, YG-079.** Followed: YQ-D437 takes 'Severely restricted', the closure of the dollar accounts in note.
+- **YA-51, YG-106.** Followed: YQ-D028 (transfers tied to one specified network, with ceilings) splits to YG-730 by the brief's parts of one source, since item 006 states it beside the ban on the unified network (YQ-D029).
+- **YA-52, YG-107.** Followed the second fix: YQ-C390, on the national switch, splits to its own condition, YG-731; YG-107 keeps the unified network's members. The first fix, one condition at the act with each network's service as the place, was not taken: no place lists either network's service, and the new condition needs none.
+- **YA-57, YG-114.** Followed: YQ-D627 takes 'Increased', its 300 percent in note; the group becomes a constant.
+- **YA-65, YG-130.** Followed in substance: YQ-D356, D211 and D428 share one label, and so do YQ-E770 and D080, which state the same at other detail. The label is 'many unlicensed', what all state: YQ-D211 gives no figure (1,350 offices, 'most of them' unlicensed), so 'about 800' would add to it. Each count, the licensed count and its fall from 605 are in note. The group becomes a constant.
+- **YA-70, YG-147.** Followed: YQ-E207 takes 'Available', registered merchants in note; the group becomes a constant.
+- **YA-78, YG-160.** Followed the second fix: the four partial lists at place not stated (YQ-B057, E750, D094, F069) share 'wallets available', each list in note, so no list replaces another. One condition per source's list was not used: these lists are not additions to one list, and the shared label keeps them in the condition they answer.
+- **YA-80, YG-163.** Followed: YQ-D522, D091, D092 and F070 share 'Transfers, purchases and bills, among others', as at the services, each list in note.
+- **YA-102, YG-212.** Followed: SabaCash's offer (YQ-C317) and Hasseb's (YQ-C361, C362, C364, C365, C366, C430, C433, C434) share 'discounts or cashback offered', where and how long in note; the group becomes a constant.
+- **YA-106, YG-222.** Followed: YQ-E115 moves to Houthis' area and YQ-E116 to the IRG's area, as rules the two central bank branches set (YE-E126), beside item 154's account of the same models (YQ-E152, E153). At the IRG's area, YQ-E116's 'banks only' (September 2025) is now the latest state, against the Aden central bank's instructions of 2022 and 2023 ('banks and licensed non-bank institutions'): a disagreement between sources, at different dates.
+- **YA-108, YG-225.** Followed: YQ-D376 and B051 share 'rules in force', each list in note.
+- **YA-118, YG-247.** Followed, and extended within the group: E-Pay's YQ-F067 and F052 take 'the rial', how each client sets it in note; YQ-F010 (Aden Bank) and F059 (SabaCash), which state the same default at their services, take it too, so one state carries one label.
+- **YA-123, YG-278.** Followed: Shamil Bank's YQ-D097 and E731 share 'Mastercard cards', and CAC Bank's YQ-E666 and E702 share 'Visa Classic, Gold and Electron cards', what each pair states, the rest in note. This corrects the first round, which gave YQ-E702 the cards page's whole list. 'Among others' is left out, since YQ-D097 and E702 name no other cards.
+- **YA-124, YG-279.** Followed: YQ-E160 is labelled 'about 400,000 active debit cards', the 1,206 credit cards in note.
+- **YA-159, YG-401.** Followed in another form. The year 2022 doesn't mark a different decision: the ministry's archive (item 040, opened to check) links its entry for decision No. 10 to the file of decision No. 10 of 1446 on American and Israeli goods, item 051, which is YQ-F131's decision. So YQ-B067 states the same decision at lower detail and takes the label the other five rows share, 'American goods banned', rather than a new 'goods boycotted under decision 10', which would misname YQ-E358's directive of 23 April 2025, issued before the decision. The archive's year is in note. The group becomes a constant.
+- **YA-163, YG-422.** Followed: YQ-D391 takes 'price caps in force', with YQ-D195 and E428; the group becomes a constant.
+- **YA-165, YG-432.** Followed: CAC Bank's permission to collect customs revenue in e-rials (YQ-E196) splits to YG-736; YG-432 keeps public revenue generally.
+- **YA-170, YG-446.** Followed: YQ-E857 is labelled '50 million rials for goods or 40 million for services', importers' registration in note, since the group asks only the threshold.
+- **YA-175, YG-473.** Followed the first fix: YQ-E360 and E649 share 'taxes and levies imposed', what both state, each source's words in note; the group becomes a constant and is renamed to fit.
+- **YA-178, YG-480.** Followed: YQ-E256 and D446 share 'through exchange companies', how they pay in note; the group becomes a constant.
+- **YA-197, YG-513.** Followed: the share of the whole population (YQ-D088, E155, E208, D043, D365, E661) splits to YG-737; YG-513 keeps the share of adults (YQ-E095, E154, E767, E768, E096, B048, E283). YQ-E767 ('fewer than 12% of Yemenis', 2021) is placed by its source: item 249 cites it to the World Bank's Global Findex and gives the 2022 figure as 'Yemeni adults' (YQ-E768), so it stays with adults. In the new condition, YQ-D365 ('about 8.8 percent of the population', 2022) and E661 ('ninety percent of the population is unbanked', July 2022) tie by the precision rule; they can't both hold, so the dispute stands.
+- **YA-206, YG-552.** Followed: YQ-D044 and E351 share 'frequent outages', speed and cost in note, and YQ-D190 (services still functioning at a basic level) splits to YG-738.
+- **YA-209, YG-561.** Followed: YQ-E366 takes 'prolonged outages', its figure in note, with the other rows at government-controlled areas.
+- **YA-210, YG-562.** Followed: YQ-D187 (the average of Aden dealers' quotes on one page), E447 (an average at the beginning of July 2024) and E392 (the average toward the end of February 2026, then maintained) go back to YG-001 as rates at one time, labelled by the rate, with the source's 'average' in note.
+- **YA-213, YG-566.** Followed: YQ-D465 and E727 share 'remittances from abroad', the Houthi group's control in note; the group becomes a constant.
+- **YA-214, YG-568.** The label return is followed: YQ-E180 takes 'old notes in use'. The rule 5 return is not followed: 'the south' stays its own place. Item 155 says the Aden central bank's notes 'now circulate in the south' (YE-E266) and, 300 lines later, that they 'soon flooded into government-controlled areas' (YE-E296), but it doesn't use the two names for one area; reading them as one would be inference. Item 274 also names the government's areas 'the IRG-controlled south and east of Yemen', more than the south. So today keeps 'new notes in use' at both places, which state the same thing and don't conflict.
+- **YA-220, YG-623.** Followed: the survey's fees (YQ-E815) split to YG-733, and the costs by channel (YQ-D304) to YG-732; YG-623 keeps the costs by provider (YQ-E817).
+- **YA-223, YG-630.** Followed: YQ-E223 is labelled with the uses it names, 'transfers between accounts, capped cash in and out, and few bills'.
+- **YA-225, YG-638.** Followed: YQ-C178 (cash around the clock) splits to YG-734, so YQ-C127 states the agents' hours alone. The first round kept the two as a dispute the sources make; the reviewer's reason holds: Cash's English page gives cash-out 'through Automatic Teller Machine (ATM) during off work times' (YE-E774), so withdrawals at agents during working hours and cash around the clock hold together.
+- **YA-226, YG-640.** Followed, and the reviewer's reason holds over the review round's. The review round took the 11 July 2026 figures as a disagreement between the sources. But each article gives both side by side and sets neither against the other: item 076 counts 'ما بين 8 و10' wallets (YE-C471) and then 'نحو 9' best known, adding that the number 'قد يصل ... إلى أكثر من 15' (YE-C474); item 077 gives 'ما بين ثماني وعشر' (YE-C488) and an interviewee's 'قد يتجاوز 15' (YE-C489). 'May' gives a possible total, not a competing count. So YQ-C444, C445 and C461 share '8 to 10', with 'may exceed 15' in YQ-C445's note, and YQ-C462, which gives the possible total alone, splits to YG-735. It doesn't take '8 to 10', which its quote doesn't state.
+- **YA-229, YG-645.** Followed: YQ-E044 and E063 take 'none', with ONE Cash's 3,000,000-rial ceiling in note; the group becomes a constant.
+- **YA-232, YG-665.** Followed: YQ-F081 and F117 share 'pre-funded in currencies the central bank approves', the rial and the major foreign currencies in note; the group becomes a constant.
+- **YA-233, YG-668.** Followed: YQ-F071, E009, E583 and F078 share 'community integration code exists', the wallets or providers each names in note; the group becomes a constant.
+- **YA-241, YG-728.** Followed: YQ-E239 (those cut off from grid-supplied electricity, relabelled 'most cut off from the grid', its 'collapsed' supply in note) splits to YG-739; YG-728 keeps the share with access to electricity (YQ-E819).
+
+### Outside the returns
+
+- **YG-022.** Renamed 'General exchange rate customs uses to assess duty'. The first reviewer's second review notes, without returning it, that the review round's name ('goods other than luxury and non-essential goods') fits its rows only from May 2026: in 2025 the rate covered all goods. The name was the review round's error, so it is corrected; no state changes.
+- **YG-631.** Relabelled YQ-E546 'the launching banks' customers'. The second reviewer's notes, without returning it, say the label 'low', left by the review round's split from YG-511, no longer answers 'Who uses phone wallets'. It is the same defect as YQ-E223 (YA-223, returned), so it is corrected; YG-631 is a constant, and no axis changes.
+
+### Returns not followed, or followed in part
+
+- **YA-15 (YG-024), rule 4, in part.** YQ-D220 stays at Houthi-controlled areas: item 046 says the new notes were banned in Ansar Allah-controlled areas but names no authority that banned them, so placing the ban at Houthis' area would be inference. YQ-E620, whose own source names the Houthis, moved.
+- **YA-214 (YG-568), rule 5, not followed.** 'The south' stays its own place: item 155 does not use it and 'government-controlled areas' for one area. It says the notes circulate in the south, and elsewhere that they flooded into government-controlled areas; item 274 names the government's areas 'the IRG-controlled south and east of Yemen'.
+- **YA-65 (YG-130), in substance.** The shared label is 'many unlicensed', not a figure, since YQ-D211 gives none.
+- **YA-159 (YG-401), in another form.** The year 2022 is the archive's: its entry links the 1446 decision's own file, so YQ-B067 joins the other rows' label, 'American goods banned', rather than 'goods boycotted under decision 10', which would misname the directive of 23 April 2025.
+
+### The two disputes no source makes (YA-225, YA-226)
+
+- **YA-225, Cash's hours.** The reviewer's reversal holds: Cash's English page gives cash-out through ATMs outside working hours (YE-E774), so withdrawals at agents during working hours (YQ-C127) and cash around the clock (YQ-C178) hold together. YQ-C178 has its own condition, and the dispute is gone.
+- **YA-226, the wallet counts of 11 July 2026.** The reviewer's reason holds over the review round's. Each article gives its count of 8 to 10 and, beside it, that the number 'may' exceed 15. It sets neither against the other, and 'may' gives a possible total, not a competing count. The counts share '8 to 10'. YQ-C462, which gives the possible total alone, has its own condition, and the dispute is gone.
+
+### Sources opened in the second review round
+
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/046-bti-project.org/text.txt` (YA-15 YG-024): to see whether item 046 names the authority that banned the new notes (YQ-D220): it does not.
+- `evidence/yemen/runs/20261010T061420Z-sanaa-rules-search/items/040-moit.gov.ye/raw.html` (line 1200) and the fetch records of items 040 and 051 (YA-159 YG-401): to see which file the archive's entry for decision No. 10 links (YQ-B067's year 2022): the file of decision No. 10 of 1446 on American and Israeli goods, item 051.
+
+### Counts after the round
+
+- `groups.tsv`: 739 groups over all 2,532 rows.
+- The build: 227 axes and 512 constants. It is past 20 axes, so the build stops for review. The axis ids in this section are the new build's.
+- Today has 10 disputed parts:
+  - the precision tie at YA-01's place not stated, which stands;
+  - eight parts that the first review left alone as made by the sources: the fixed rate at the IRG's area (YA-05), Aden's cash (YA-20), the payout rules at Houthis' area (YA-59), Cash's international transfers (YA-60), Wise's two pages (YA-62), the counts at Aden and at Sana'a (YA-64, two parts), and ONE Cash's 30 against 14 days (YA-71);
+  - a new precision tie at place not stated (YA-227, from the split of YG-513, returned as YA-197): 'about 8.8 percent of the population' (YQ-D365, 2022) and 'ninety percent of the population is unbanked' (YQ-E661, July 2022). These states can't both hold, so the dispute stands.
+- Today has 5 unknown parts, each at a place whose only row is proposed or ended, as before (YA-40, YA-77, YA-88, YA-99, YA-169).
