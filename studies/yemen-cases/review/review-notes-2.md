@@ -214,3 +214,34 @@ Each split kept its conditions whole, except:
   - **YA-238 on 2023-09-14** ("sparse" and "widely available"). Its source makes this dispute: one article says both.
   - **YA-197 in 2022** ("12 percent of adults", "8.8 percent" and, at year precision, "10 percent"). The sources don't make this dispute: they measure adults on one side and the whole population on the other. This is YA-197's return.
   - **YA-209 at Aden in 2025.** "15-hour daily blackouts throughout the year" ties with the October and December figures. These cover different spans of time, so they are not a dispute.
+
+## Third review
+
+This round reviews the axes at commit `f3ed2df`. I checked that `axes.tsv` has sha256 02850db51259fb99cdb706c2f5b7580c2136a5c0cb98c3238b2b9166e6812375. It covers the nine axes listed in `changed-3-2.txt`.
+
+I read three things:
+- `notes.md`, section "Second review round";
+- the current tables, compared with the same files at commit `71ab056`;
+- the rows' quotes in `citations.tsv`.
+
+I opened no evidence file and edited nothing under `studies/` or `evidence/`.
+
+**Second-round returns.** Step 2a followed all 16 second-round returns in my range. Each fix removed the breach it named:
+- **Four groups are still axes:** YA-104 (YG-225), YA-114 (YG-247), YA-119 (YG-278) and YA-120 (YG-279).
+- **YG-432 is still an axis, YA-159.** YQ-E196 moved out to its own constant, YG-736.
+- **Three groups are still axes:** YA-164 (YG-446), YA-189 (YG-513) and YA-200 (YG-561).
+- **YG-513's split made a new axis, YA-227 (YG-737).**
+- **Eight groups became constants:** YG-401, YG-422, YG-473, YG-480, YG-552, YG-665, YG-668 and YG-728.
+- **Three groups split off as constants:** YG-736, YG-738 and YG-739.
+
+**Still a breach.** One row, YA-200, is in `/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/y-review/returns-2c.tsv`, under the label rule.
+- The fix gave YQ-E366 and YQ-E436 the label "prolonged outages". YQ-E379 gives the same up-to-20-hours outages and comes from YQ-E366's own source, but it keeps "outages up to 20 hours a day".
+- This matters little. YQ-E379 sits at another place ("Aden, Hadramawt and other areas"), so `today` shows no change that no source states. It still breaks "word for word".
+
+**The disputed part in `today`.** YA-227's disputed part is made by its sources. Both rows are 2022 figures for the whole population, and they tie at year precision:
+- YQ-D365: "about 8.8 percent of the population owned an account of any type";
+- YQ-E661: "Ninety percent of the population is unbanked".
+
+The two figures can't both hold, so the dispute stands.
+
+**The return step 2a followed in another form.** This is the second round's YA-159 (YG-401), and its reason holds. Step 2a opened the archive entry for YQ-B067 and found that it links the file of decision No. 10 of 1446, the decision of YQ-F131. So YQ-B067 states that decision, which bans American goods, and takes the label all the rows state. The alternative, "goods boycotted under decision 10", would misname YQ-E358's directive of 23 April 2025, which came before the decision.

@@ -350,3 +350,41 @@ The unnamed restorations (YK-371, YK-372) can't be tied to any ban, since their 
 - **YA-83:** Floosak's reply on updating identity data (YQ-E017) may hold together with its activation steps (YQ-C246). It is not today.
 - **YA-89:** the same three currencies carry "more than one currency" at Cash and "the rial, Saudi riyal and US dollar" at ONE Cash, as the new label line gives each service's pages. Today is unaffected.
 - **YA-221:** the Civil Status Authority in Sana'a stays apart from Houthis' area, since no source joins them.
+
+## Third review
+
+- **Reviewed:** `studies/yemen-cases/axes.tsv` at commit `f3ed2df`, sha256 `02850db51259fb99cdb706c2f5b7580c2136a5c0cb98c3238b2b9166e6812375`: the 15 axes in `changed-3-1.txt`. I read `notes.md`, "Second review round". All 2,532 rows sit in exactly one group. No evidence was opened, and nothing under `studies/` or `evidence/` was changed.
+- **Returned:** nothing. `returns-1c.tsv` has its header only.
+
+### Each axis
+
+| Axis now | Group | My second-round return | Resolved? |
+| --- | --- | --- | --- |
+| YA-01 | YG-001 | YA-210, rule 1: YQ-D187, E447 and E392 came back as rates at one time. They make no new tie. | yes |
+| YA-15 | YG-024 | rule 4: YQ-E620 moved; YQ-D220 stays (below) | in part; the reason holds |
+| YA-17 | YG-026 | rule 1: YQ-E317 and E605 went to YG-729 | yes |
+| YA-33 | YG-061 | label: one label for the March 2025 decision; the 15 March tie is gone | yes |
+| YA-43 | YG-079 | label: YQ-D437 | yes |
+| YA-51 | YG-106 | rule 2: YQ-D028 went to YG-730 | yes |
+| YA-52 | YG-107 | rule 1: YQ-C390 went to YG-731, my second fix | yes |
+| YA-75 | YG-160 | rule 2: one label for the four lists, my second fix | yes |
+| YA-77 | YG-163 | rule 2: one label for the lists at place not stated | yes |
+| YA-102 | YG-222 | rule 4: YQ-E115 and E116 at the two authorities' areas | yes |
+| YA-201 | YG-562 | rule 1: only period averages remain | yes |
+| YA-204 | YG-568 | label: YQ-E180. Rule 5: not followed (below) | label yes; the rule 5 reason holds |
+| YA-212 | YG-630 | label: YQ-E223 now names its uses | yes |
+| YA-214 | YG-640 | rule 2: one count, 8 to 10; YQ-C462 went to YG-735 | yes; the dispute is gone |
+| YA-226 | YG-729 | new, from my YA-17 return | breaks no rule |
+
+None of the 15 axes breaks a rule now. My other returned groups (YG-114, YG-130, YG-147, YG-212, YG-566, YG-623, YG-638 and YG-645) are now constants, so they are outside this list.
+
+### Returns step 2a didn't follow
+
+- **YA-15, YQ-D220 at Houthi-controlled areas: the reason holds.**
+  - Item 046 says the new notes "were banned" in Ansar Allah-controlled areas, and names no authority that banned them.
+  - Step 2b's first branch needs a rule that an authority sets, so its pass 1 place stands without inference.
+  - The part says what the Houthis' area part says. Parts may overlap, and these two don't conflict.
+- **YA-204, 'the south' left apart: the reason holds.**
+  - Item 155 says the notes "now circulate in the south" (YE-E266). About 300 lines later it says they "flooded into government-controlled areas" (YE-E296). It never uses the two names for one area.
+  - Item 274 calls the government's areas "the IRG-controlled south and east of Yemen", which is more than the south.
+  - Rule 5's `source` needs a single source that uses both names for the same area. Without one, the two parts stand. Both state "new notes in use".
