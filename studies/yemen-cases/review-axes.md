@@ -93,3 +93,14 @@ Step 2a made fixes 1 to 5 and 7. The coordinator diffed the result against the `
 - **YA-40.** The founder unknown is closed from held evidence (YQ-D636, YE-D1000), and its `unknowns.tsv` row is gone.
 
 The coordinator lets this `axes.tsv` through, at sha256 ef7e2d6c70aae0e46218cc95c1dd9e14c15a8beec43428f7fe1e69d1f4837f06.
+
+## The fixes from the check of S-01's axes, checked by the coordinator, 17 October 2026
+
+The independent reviewer checked against their quotes the axes and constants in the pilot's `bears-on.tsv` ("Check of S-01's axes" in `review-independent.md`). Step 2a made its six fixes. The coordinator diffed the result against the file let through above:
+- **What changed:** axes YA-62, 126, 128 and 130; constant YK-23; one new constant, YK-514. No other axis or constant changed or moved. The checks run clean.
+- **PayPal's receiving** is its own condition, constant YK-514: "cannot receive money @ PayPal's service" (YQ-D634, YE-D997). YA-62 keeps "Sending from Yemen" from YQ-E728.
+- **YK-23** reads "personal or humanitarian transfers allowed if the recipient is not on a sanctions list", as YE-D420 says.
+- **Zid Pay's** "Unavailable" is placed at "Zid Pay Kuwait (Zid)'s service", the scope of the terms it comes from.
+- **YA-130:** Wagbat's label names cash on delivery. **YA-126 and YA-128:** labels that state one thing now share one label.
+
+The coordinator lets this `axes.tsv` through, at sha256 5e2efc31910483b7732065d96bf88306d0194cdee34014746185532c346581f4.

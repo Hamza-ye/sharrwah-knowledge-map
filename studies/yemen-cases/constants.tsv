@@ -21,7 +21,7 @@ YK-19	Whether exchange businesses the Aden central bank finds speculating keep t
 YK-20	Whether US persons may deal with the 12 individuals and entities OFAC designated in December 2024, among them the Sana'a central bank's governor	12 individuals and entities designated, among them the Sana'a central bank's governor	the United States' area	YQ-E825	YE-E968, YE-E969	
 YK-21	Whether foreign financial institutions risk US secondary sanctions for significant transactions on behalf of designated persons	at risk for significant transactions for designated persons	the United States' area	YQ-A016	YE-A050, YE-A051, YE-A052	
 YK-22	Whether US sanctions allow trade with the Yemeni people	OFAC's assurance that trade with Yemenis is not targeted withdrawn	the United States' area	YQ-E515	YE-E548, YE-E549	
-YK-23	Whether sending money to Yemen is lawful under US rules	allowed if the recipient is not on a sanctions list	the United States' area	YQ-D306	YE-D420	
+YK-23	Whether sending money to Yemen is lawful under US rules	personal or humanitarian transfers allowed if the recipient is not on a sanctions list	the United States' area	YQ-D306	YE-D420	
 YK-24	Whether US sanctions limit e-commerce in Yemen	named as a limit on e-commerce	place not stated	YQ-E088	YE-E099, YE-E098	
 YK-25	What financial institutions must do when serving customers to counter money laundering	risk-based due diligence, with records kept five years	the unified Republic's area	YQ-B064	YE-B092, YE-B093, YE-B094, YE-B098, YE-B099	
 YK-26	Whether banks and exchange companies must screen customers against sanctions lists	required (circular No. 4 of 2025)	the internationally recognized government's area	YQ-D290, YQ-F118	YE-D384, YE-F256, YE-F257, YE-F255, YE-F254	
@@ -512,3 +512,4 @@ YK-510	Whether customs revenue can be paid in e-rials through CAC Bank	CAC Bank 
 YK-511	Whether telecom and internet services still function despite damage to the sector	functioning at a basic level	place not stated	YQ-D190	YE-D210	
 YK-512	How many people are cut off from grid-supplied electricity	most cut off from the grid	place not stated	YQ-E239	YE-E245	
 YK-513	Which payment options a guide lists for use in Yemen	listed among the best payment options for use in Yemen	Wise's service	YQ-E580	YE-E635, YE-E636	
+YK-514	Whether an account in Yemen can receive money through an international payment service	cannot receive money	PayPal's service	YQ-D634	YE-D997	

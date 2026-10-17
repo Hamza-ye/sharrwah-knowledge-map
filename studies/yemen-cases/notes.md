@@ -997,3 +997,55 @@ The list's group ids are step 2a's. The review rounds changed some of its entrie
   - the House of Representatives' place, which YQ-D636 now answers.
 - Finding 15: part B's quotes that are not byte-verbatim, and the dates of YQ-C207 and YQ-C080.
 - Items 6 (the `in force` basis of the precision-tie cases) and 8 (how markers read `today`) are the coordinator's.
+
+## Check of S-01's axes: fixes
+
+### What was read
+
+- The section "Check of S-01's axes" at the end of `review-independent.md`: its four must-fix items and its two minor labels.
+- The coordinator's message, which asks for those six fixes.
+
+### Fixes
+
+**1. YA-62, PayPal (must fix 1).** Receiving now has its own condition.
+- YQ-D634 split from YG-125 to YG-742, 'Whether an account in Yemen can receive money through an international payment service'. It is labelled 'cannot receive money', what its source says of receiving: Yemen can only send money through PayPal, 'أي لا تستطيع استقبال الأموال' (YE-D997).
+- Receiving is a second fact of that source, so it is its own condition (step 2a's rule 2, parts of one source). It is not YQ-E728's state at more detail, since YQ-E728's page says nothing of receiving in Yemen. YG-742 is built as the constant YK-514, at PayPal's service.
+- YQ-E728 stays on YA-62 as 'Sending from Yemen'.
+- YG-125's `what_varies` no longer names 'send only', which no state carries.
+- YQ-E579 (Wise's guide: 'Yes, PayPal is accepted in Yemen', undated) stays 'Available', as its quote reads. The review notes that a marker must not read it as receiving.
+
+**2. YK-23, YG-052 (must fix 2).** YQ-D306 is relabelled 'personal or humanitarian transfers allowed if the recipient is not on a sanctions list'. YE-D420 speaks only of transfers 'لأغراض شخصية أو إنسانية', and nothing of payment for a merchant's sales.
+
+**3. YA-62, Zid Pay (must fix 3).** YQ-E897 moved from 'Zid Pay's service' to 'Zid Pay Kuwait (Zid)'s service', under step 2b's product rule:
+- its source is the terms for Zid Pay in Kuwait ('Terms and Conditions for Zed Pay – Kuwait', YE-E1332; 'as outlined by Zid Pay or the State of Kuwait or the merchant's country of activity', YE-E1333);
+- the new place is added in `pass2/places-2.tsv` and joined into `places.tsv`;
+- its label, 'Unavailable', is unchanged. It now speaks for Zid Pay under its Kuwait terms, not for all of Zid Pay's service.
+
+**4. YA-130, YG-302, Wagbat (must fix 4).** YQ-C486 is relabelled 'cash on delivery or the Rasidi service', as its quote gives both: 'الدفع نقدًا عند الاستلام أو عبر خدمة رصيدي' (YE-C520).
+
+**5. Minor labels.**
+- **YA-126, YG-292.** YQ-E663's quotes give the difficulty of transfers between institutions, not its cause (YE-E746, YE-E747). So it and YQ-E555 share the label of what both state, 'difficult'. YQ-E555's cause, the lack of comprehensive national payments infrastructure, stays in its note. Today's part at place not stated now reads 'difficult'. Without the shared label, YQ-E663 would make a case that differs from today by the cause alone.
+- **YA-128, YG-300, Awsan.** YQ-C560 is relabelled 'available inside Sana'a', as the three other Sana'a-only stores read. The listing offers cash on delivery 'لجميع العملاء في العاصمة صنعاء' (YE-C636).
+  - YQ-C557, from the same listing, shares the label. It states cash on delivery without the scope, and the listing gives that scope on its next line.
+  - Two labels from one listing on one date would make a dispute that no source makes.
+
+### Not done here
+
+`studies/subjects/S-01/bears-on.tsv` is phase D's, outside this study's folder:
+- the review asks for YG-742 to be added there for the PayPal value propositions;
+- its basis needs redoing against the new labels.
+
+### Counts after the fixes
+
+- `groups.tsv`: 742 groups over all 2,533 rows. `places.tsv`: 395 places.
+- The build: 228 axes and 514 constants. It stops for review, since `axes.tsv` changed (sha256 `5e2efc31910483b7732065d96bf88306d0194cdee34014746185532c346581f4`), and it writes no cases.
+- Axes changed: YA-62, YA-126, YA-128 and YA-130. Constants changed: YK-23, and the new YK-514. No axis or constant id moved.
+- Today still has 4 disputed parts and 4 unknown parts, as before these fixes.
+
+### The full check
+
+`python3 -I method/check_yemen_cases.py studies/yemen-cases <out>`, with no flag:
+- one error: today's case is missing, as the build writes no cases until a review names this `axes.tsv`'s sha256;
+- one review-level note: the 228 axes pass the stop at 20;
+- all 4,053 quotes are found;
+- `--groups` and `--states states.tsv` report no issues.
