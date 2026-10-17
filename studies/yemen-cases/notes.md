@@ -1049,3 +1049,76 @@ The list's group ids are step 2a's. The review rounds changed some of its entrie
 - one review-level note: the 228 axes pass the stop at 20;
 - all 4,053 quotes are found;
 - `--groups` and `--states states.tsv` report no issues.
+
+## Check of the S-01 entry's axes: fixes
+
+### What was read
+
+- The section "Check of the S-01 entry's axes" at the end of `review-independent.md`: its two must-fix items and its three should-fix labels.
+- The coordinator's message, which asks for those fixes, or a reason in these notes where another fix is better.
+
+### Must fix
+
+**1. YA-102, YG-222.** The reviewer's fix is applied under the brief's rules.
+- **The two models.** YQ-E115 and YQ-E116, item 153's two models, split to YG-743, 'Which model e-money services follow', labelled 'non-bank model' and 'bank-led model'.
+  - Item 153 says the two models emerged from the two central bank branches (YE-E126). That describes the market; it is not a rule on who may be licensed.
+  - A bank-led market and the licensing of non-bank providers hold together, so under rule 2 the models are not alternatives to YG-222's states.
+  - As statements about the market, not rules an authority sets, the rows take the areas their source names: Houthi-controlled areas and government-controlled areas. The second review had placed them at the two authorities' areas as rules.
+- **YG-222's `what_varies`** no longer says '(bank-led)' and '(non-bank-led)'.
+- **YQ-E809** is dated February 2026, its report's date. The report lists Resolution No. 547/CBY/2023 among the measures Government CBY 'has introduced' (item 249, line 1539), so it states the resolution still holds. YQ-E116 was dated by its own report too.
+- **YQ-E151 is `ended`.** Its source gives banks only as 'the legal framework prior to 2014', and goes on that by 2016 the central bank was split and CBY-Sana'a moved to a nonbank-led model (YE-E156, YE-E157). YQ-D089 at the same place was already `ended`.
+- **Today:**
+  - the government's area reads 'banks and licensed non-bank institutions' (February 2026). Item 154's 'banks only' there (YQ-E153, March 2022) is now a past state;
+  - YA-102's part at `place not stated` is now unknown. Both of that place's rows ended, and every later rule in the evidence is given by area. `unknowns.tsv` has a row about it (`agent`), and like YA-88's part, it comes from rows with no place.
+- **Left in YG-222:**
+  - YQ-E152 (item 154: CBY-Sana'a 'has increasingly taken steps' to a nonbank-led model) and YQ-B056 (the bank and fintech wallets in Sana'a's area). Their sources speak of the central bank's steps, and of who provides e-money.
+  - the stale 'banks only @ Central Bank of Yemen's area' (2014), which is finding 2's, still open.
+
+**2. YA-105, YG-227.** YQ-D119 now takes the instrument's label: 'a joint-stock company with paid-up capital of at least 500 million rials, 750 million for a system operator'.
+- YQ-D119 is a news report of the Aden central bank's September 2022 instructions (YE-D113), which are YQ-F080's instrument. Where the instrument gives 750 million for a system operator (YE-F135; the page 5 image of item 049 reads the same), the report gives 700 (YE-D117). The report's 700 is recorded in its note, as the report's figure, not a later state.
+- With one label, YG-227 is now a constant, YK-515.
+- **Disagreement:** the report's 700 million (YQ-D119 [YE-D117]) against the instrument's 750 million (YQ-F080 [YE-F135]).
+
+**Ids.** The build numbers axes and constants by their order in `groups.tsv`. So YG-743 is listed where YG-227 was, and YG-227 at the end:
+- **YA-105** now names 'Which model e-money services follow';
+- **the licence requirement** is the new constant YK-515;
+- **no other axis or constant id moves.** Listed in id order, 123 axes and 392 constants would have moved.
+
+### Should fix
+
+- **3. YA-129, YG-301.**
+  - YQ-E572 is relabelled 'cash on delivery, preferred by 74 percent of 180 Bazzarry users surveyed'. The respondents are a convenience sample of Bazzarry's customers in Aden (YE-E623, YE-E624), not Aden's buyers.
+  - The review's smaller point is fixed too. YQ-E102 is relabelled 'mostly cash, with cash on delivery popular': its source counts cash, 'including 61.9 percent of those made online' (YE-E113), and says only that cash-on-delivery options are popular (YE-E114).
+- **4. YA-44, YG-082.** YQ-D319 is relabelled 'The Aden central bank's'.
+  - The World Bank says the Aden bank regulates and supervises private banks (YE-D435). The same report says both central banks supervise the sector (YE-D437).
+  - The 'only' is YQ-C071's, the Aden bank's own claim of 2020, which is now a past state.
+- **5. YA-106, YG-229.** YQ-C100, E203, E549 and F103 are relabelled 'held at a bank', what all their quotes state.
+  - Cash's terms (YQ-C100) give a pooled account at the settlement bank, and nothing on pre-funding.
+  - The 2021 blog (YQ-E549) gives cash cover at the service bank, and no pooled account.
+  - The 2014 circular (YQ-E203) and the 2023 instructions (YQ-F103) give both.
+  - 'Pre-funded', 'pooled' and 'settlement bank' stay in the notes of the rows that state them.
+
+### Not done here
+
+- The review's minor items, which the message doesn't list, are open:
+  - YA-68: make YQ-C039 `proposed`, as YQ-C040 and C041 are for the same paragraph;
+  - YA-103: YQ-B058's place, 'Council of Ministers' area', which names no seat.
+- What the review says of the S-01 entry's wording on wallet licences (`review.md` finding 18) is for the entry, outside this study.
+
+### Counts after the fixes
+
+- `groups.tsv`: 743 groups over all 2,533 rows. `places.tsv`: 395 places.
+- The build: 228 axes and 515 constants. It stops for review, since `axes.tsv` changed (sha256 `5d6bbb08e9a06cade3330fc223c0d7c02c2e1c07cfd7ab4cfb6f0b31babe6709`), and it writes no cases.
+- Axes changed:
+  - YA-44, YA-102, YA-106 and YA-129;
+  - YA-105, which now names a new condition.
+- Constants: the new YK-515.
+- Today has 4 disputed parts (YA-01, YA-20, YA-71, YA-227) and 5 unknown parts (YA-77, YA-88, YA-99, YA-102, YA-169). `unknowns.tsv` has a row for each unknown part.
+
+### The full check
+
+`python3 -I method/check_yemen_cases.py studies/yemen-cases <out>`, with no flag:
+- one error: today's case is missing, as the build writes no cases until a review names this `axes.tsv`'s sha256;
+- one review-level note: the 228 axes pass the stop at 20;
+- all 4,053 quotes are found;
+- `--groups` and `--states states.tsv` report no issues.

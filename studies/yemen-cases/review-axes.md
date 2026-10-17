@@ -104,3 +104,13 @@ The independent reviewer checked against their quotes the axes and constants in 
 - **YA-130:** Wagbat's label names cash on delivery. **YA-126 and YA-128:** labels that state one thing now share one label.
 
 The coordinator lets this `axes.tsv` through, at sha256 5e2efc31910483b7732065d96bf88306d0194cdee34014746185532c346581f4.
+
+## The fixes from the check of the S-01 entry's axes, checked by the coordinator, 17 October 2026
+
+The independent reviewer checked against their quotes the Stage 1 facts the pilot's register entry cites ("Check of the S-01 entry's axes" in `review-independent.md`). Step 2a made its fixes. The coordinator diffed the result against the file let through above:
+- **What changed:** axes YA-44, 102, 105, 106 and 129; one new constant, YK-515. The checks run clean.
+- **YA-102.** The government's area reads "banks and licensed non-bank institutions", from the Aden central bank's 2022 and 2023 instruments. A 2025 report's "bank-led model" (YQ-E115, YQ-E116) has its own condition. YQ-E151 is `ended`. The part with no place stated is `unknown`, with a row in `unknowns.tsv`.
+- **YA-105's id now names a different condition.** The licence requirement became a constant, YK-515: "a joint-stock company with paid-up capital of at least 500 million rials, 750 million for a system operator", the instrument's figure. Its old axis id, YA-105, now names "Which model e-money services follow". Step 2a reused it so that no other id would move. A citation of YA-105 made before this change means YK-515.
+- **YA-44** drops "only", **YA-106** drops "pre-funded", and **YA-129** names its source's 180 surveyed users.
+
+The coordinator lets this `axes.tsv` through, at sha256 5d6bbb08e9a06cade3330fc223c0d7c02c2e1c07cfd7ab4cfb6f0b31babe6709.
