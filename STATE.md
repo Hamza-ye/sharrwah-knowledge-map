@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 17:02 UTC.
+**Updated:** 17 October 2026, 17:10 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -241,6 +241,7 @@ Agents started earlier keep their effort.
 
       Now 228 axes, 515 constants and 345 cases.
     - **Running:** phase C re-derives every cause, and phase D redoes `bears-on.tsv` and every mark, in parallel. Then the coordinator rewrites the entry, and F re-checks;
+    - **Salla's `not covered` row on S01-VP-06** ("agent", S01-V-655), left by phase B's re-check, goes back to A2 as the B brief says. If A2 records a gap or an absence, A3 audits it. Then phase B places what A2 adds, and phases C and D revisit S01-VP-06;
   - **D's first checkpoint** (commit `2786cb4`):
     - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
     - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
@@ -275,16 +276,15 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (17 October 2026, 06:40 UTC):**
-- **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
-- **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
-- **Done, and resumable for Stage 1:** the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`.
-- **Pilot phase C, third run:** agent `adc0057894ed0a4d9` (`max`).
-- **Pilot phase D, redoing the marks:** agent `a279f7e700e54e76b` (`max`).
-- **Done, and resumable:** pilot F `a349d058600a20b3a`, resumed to re-check; phase B `a9e10fcc19233f104`; Stage 1's reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`.
-- **Pilot phase D's agent,** `a279f7e700e54e76b`, is done, and is resumed for any marks F finds wrong.
-- **Done, and resumable:** the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`.
-- **Stage 1 step 2b's agents,** done. They can be resumed for their ranges: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
+**Agents running when last checked (17 October 2026, 17:10 UTC):**
+- **Running:**
+  - pilot phase C, third run: `adc0057894ed0a4d9` (`max`);
+  - pilot phase D, redoing `bears-on.tsv` and the marks: `a279f7e700e54e76b` (`max`);
+  - pilot A2 for Salla on S01-VP-06 ("agent"): `aa3fbffb0ec8e81cc`.
+- **Done, and resumable:**
+  - pilot F `a349d058600a20b3a`, to re-check the fixes; phase B `a9e10fcc19233f104`, to place what A2 adds;
+  - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
+  - Stage 1 step 2b, by range: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
 
