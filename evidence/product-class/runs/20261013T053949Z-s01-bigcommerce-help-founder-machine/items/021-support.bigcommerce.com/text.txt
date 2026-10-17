@@ -1,0 +1,256 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+Mobile App
+Orders
+Troubleshooting Orders
+VIEWING ORDERS
+Order Statuses
+Order IDs
+Viewing Orders
+MANAGING ORDERS
+Backorders
+Draft Orders
+Manual Orders
+Editing Orders
+Invoices
+Importing and Exporting Orders
+Capturing Funds
+Order Actions
+Packing Slips
+Refunds
+Returns
+Shipments
+Shipping Labels
+ORDER NOTIFICATIONS
+Order Notifications
+Customer Order Notifications
+Requirements
+Enabling
+Reply-to Email Address
+Customizing
+Troubleshooting
+FAQ
+Customers
+BigCommerce For WordPress
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Customer Order Notifications
+What We'll Cover
+Requirements
+Enabling customer order notifications
+Reply-to email address
+Customizing customer order notifications
+Troubleshooting
+FAQ
+
+Customers receive an email when they successfully place an order and when an order's status changes. Customer order notifications provide an excellent opportunity to engage with your customer base and keep them updated throughout the order fulfillment process. Additionally, you can use them as a marketing opportunity to upsell and drive revenue.
+
+Customer order notifications should not be confused with notifications you receive as the merchant. See Order Notifications for more information.
+
+ 
+Requirements
+To enable or disable order status change notifications, you must have the Manage Settings permission enabled on your user account.
+To manage store email templates, you must have the Read Channels and Store Design permissions enabled on your user account.
+ 
+Enabling Customer Order Notifications
+
+To access your order status change notification settings, go to Settings › Order notifications.
+
+Under Email customers when, select which order statuses you would like to use to trigger a customer email notification. This is separate from the order confirmation email (also called the invoice) that is sent immediately after the customer places an order.
+
+Order status notifications are universal and apply to all customers. For example, you can't specify that a particular customer group doesn't get a certain status notification.
+
+ 
+
+Did you know? You can customize the names of Order Statuses in the control panel. Customized order statuses will continue to use their original name in certain areas of the control panel, including order notification settings.
+
+ORDER CONFIRMATION EMAIL
+
+The order confirmation email is managed separately from individual order status notification settings and is enabled by default. To enable or disable the email, go to Marketing › Transactional Emails, then click the Action menu next to the Order Email template and make the appropriate selection.
+
+When disabled, customers will no longer receive the confirmation email that is sent immediately after a storefront order is placed.
+
+ 
+
+Want a copy? You can receive a copy of the order confirmation email by specifying forwarding addresses in your store's Miscellaneous settings.
+
+ 
+Reply-to Email Address
+
+The order confirmation email is sent from your store using the email address entered in your store profile contact information. If a customer replies to an order email message, this is the address it will attempt to deliver to.
+
+To help ensure that your store emails are received by customers, it is best practice for the profile email to have your domain name, and not a free third-party domain such as gmail.com or yahoo.com. If store emails are not sent from the store’s domain, the customer’s email provider may have issues validating that the email was sent by you and reject it.
+
+You can update this email address under Settings › Store profile.
+
+ 
+
+Using Multi-Storefront? You can use the global setting or specify a store email address per storefront. See Single-Storefront vs. Multi-Storefront for other settings moved into Channel Manager.
+
+ 
+Customizing Customer Order Notifications
+
+You can customize the email templates for both order confirmation and status update notifications. Editing your customer order notifications allows you to engage with your customers and provide value beyond the sale.
+
+Some common elements you can include in your emails are:
+
+requests for feedback or
+discount codes to encourage repeat purchases
+suggestions for other products your customer may like
+incentives and prompts for your loyalty or referral programs
+social sharing links that encourage customers to connect with you and share their experience with their friends
+product education and FAQs to build value and brand awareness
+ 
+
+Did you know? You can use apps to help automate your email marketing efforts. See our App Marketplace for more options.
+
+ 
+Troubleshooting
+
+If your customers are not receiving order notification emails from your store, there are several symptoms and possible causes that we’ll cover in this section. First, you’ll want to gather some information to help narrow down the issue, such as:
+
+Which emails are not being received?
+Order confirmation emails, order status update emails, or both?
+If only order status update emails, which status(es)?
+Are all customers affected or just a few?
+Create a test order to see if you receive your store emails.
+Are reports coming from customers using the same email provider?
+For example, gmail.com or yahoo.com email addresses.
+Did you receive a bounceback email at your store profile email address?
+The details in this email can provide more information.
+
+After identifying the delivery failure symptoms, follow the corresponding troubleshooting steps below to resolve the issue.
+
+No emails are being received
+Emails are rejected by a specific mail provider
+Customers not receiving order confirmation emails
+Customers not receiving status update emails
+NO EMAILS ARE BEING RECEIVED
+
+If no emails from the store are being received, they may be blocked by the recipient’s mail provider or routing to spam folders. You may need to update your store profile email address or your SPF or DMARC records.
+
+Your store profile email address is the address that store mail is sent from and customers can reply to. Make sure that the email address entered in the store profile uses your domain name, and not a third-party domain such as gmail.com or yahoo.com. Store emails set from outside the store’s domain are often rejected due to the recipient email host's DMARC policies.
+
+Make sure that your SPF record, at minimum, contains the BigCommerce SPF include:_spf.bigcommerce.com. If you have any additional SPF records, such as from your mail host, they should also be present in the record.
+
+You’ll want to have at least a basic DMARC record to satisfy most mail provider authentication requirements. Without this record, some mail providers may reject mail from bulk senders. Depending on the amount of emails you send in a day, you may be considered a bulk sender by these organizations and your mail rejected.
+
+See Email in BigCommerce for more details on SPF and DMARC records.
+
+When using third-party email hosting, you’ll also need to make sure that you have properly set up your host’s MX records. If your host provided you with custom SMTP login details, work with them to ensure that SPF, DKIM, and DMARC records are appropriately configured for your mail server.
+
+EMAILS ARE REJECTED BY A SPECIFIC MAIL PROVIDER
+
+If you find that a specific provider is rejecting your store’s emails, make sure that you have at least a basic DMARC record. Your store may be sending enough email to users of the same provider to be considered a bulk sender. See Email in BigCommerce for more details on DMARC records.
+
+You may also be receiving bounceback error emails that provide more details on mail that is rejected by a provider. If you receive a bounceback due to a blacklist or MTA reputation error, then one of our mail servers may have been flagged for sending spam. Save a copy of the bounceback email and contact our support team.
+
+CUSTOMERS NOT RECEIVING ORDER CONFIRMATION EMAILS
+
+If customers are not receiving order confirmation emails, but are receiving other store emails, such as order status updates, check that the Order Email template is enabled.
+
+Go to Marketing › Transactional Emails and check the status of the template. If disabled, click on the Action menu next to the Order Email template and select Enable. Place a test order to confirm that the email is being sent.
+
+Email templates have global and storefront-specific versions reachable through a drop-down menu at the top of the page. Even if you do not have more than one storefront, confirm that both global and storefront versions of the template are enabled.
+
+ 
+
+Orders created via API? Orders created via our API do not trigger the order confirmation (invoice) email, but do trigger emails for order status updates. You can use the Resend invoice order action to manually send the confirmation email.
+
+CUSTOMERS NOT RECEIVING STATUS UPDATE EMAILS
+
+Not all order statuses trigger order status update email notifications by default. Go to Settings › Order notifications and check that notifications are enabled for your desired statuses.
+
+If all order status updates are not being received and order statuses are enabled, the Order Status Update email template may be disabled.
+
+Go to Marketing › Transactional Emails and check the status of the template. If disabled, click on the Action menu next to the Order Status Update template and select Enable. Place a test order and change the order status to confirm that the email is being sent.
+
+Email templates have global and storefront-specific versions reachable through a drop-down menu at the top of the page. Even if you do not have more than one storefront, confirm that both global and storefront versions of the template are enabled.
+
+ 
+FAQ
+
+Why am I receiving bounceback emails with blacklist or MTA reputation errors?
+
+If you receive a bounceback due to a blacklist or MTA reputation error, then one of our mail servers may have been flagged for sending spam. Save a copy of the bounceback email and contact our support team. We will investigate further and reach out to the services that listed the server to have it removed from their lists.
+
+Can I resend customer order notifications?
+
+Order confirmation emails can be resent by selecting Resend invoice from the Action menu next to an order. They can also be resent in bulk.
+
+Order status update emails are sent automatically when an order’s status changes. If you need to resend a status change, change the order’s status to one that does not have email notifications enabled (to avoid sending unwanted status updates). Then, change the status back to what it was previously, which will re-trigger the email notification for that status.
+
+Can I send order notifications via SMS messages?
+
+The App Marketplace contains several apps that can send SMS messages for marketing, alerts, order notifications, and more.
+
+Why isn’t the “Order ready for pickup” template sent when I change an order’s status to “Awaiting pickup”?
+
+The Order ready for pickup template is sent when an order that was placed using Buy Online, Pick up in Store APIs is marked as ready for pickup. Changing an order’s status to Awaiting Pickup triggers the Order Status Update email template.
+
+Additional Resources
+Order Statuses
+Order Notifications
+Customizing Transactional Emails
+Store Profile Settings
+Editing and Printing Invoices
+Third-Party Email Hosting
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Customer Order Notifications

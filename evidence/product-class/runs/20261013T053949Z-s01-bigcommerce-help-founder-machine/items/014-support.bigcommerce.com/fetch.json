@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://support.bigcommerce.com/s/article/B2B-Edition-User-Roles-and-Permissions",
+ "dir": "items/014-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/B2B-Edition-User-Roles-and-Permissions?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190821,
+ "cited_in": [
+  "BC-C-065"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ddfac60d59644021e19a689327194c96866e2e41f1433807fbb7f84c124e25de",
+ "raw_ext": "html"
+}

@@ -1,0 +1,417 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+Mobile App
+Orders
+Troubleshooting Orders
+VIEWING ORDERS
+Order Statuses
+Order IDs
+Viewing Orders
+MANAGING ORDERS
+Backorders
+Draft Orders
+Manual Orders
+Editing Orders
+Invoices
+Importing and Exporting Orders
+Capturing Funds
+Order Actions
+Packing Slips
+Refunds
+Requirements
+Limitations
+Performing a Refund
+Confirm Refund
+Refund Adjustments
+Refunding with Avalara AvaTax
+FAQ
+Returns
+Shipments
+Shipping Labels
+ORDER NOTIFICATIONS
+Order Notifications
+Customer Order Notifications
+Customers
+BigCommerce For WordPress
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Processing Refunds
+What We'll Cover
+Requirements
+Limitations
+Performing a refund
+Confirm refund
+Refund adjustments
+Refunding with Avalara AvaTax
+FAQ
+
+Refunds can be performed directly through the BigCommerce control panel for most payment gateways, keeping your order details easily accessible in one location. The built-in feature allows for refunding an entire order, individual line items, or a custom amount. Funds can be returned to a customer’s credit card or issued as a store credit.
+
+The line item refund functionality will help you determine the average return rate for each customer, perform multiple partial refunds on the same order, and refund additional line items, such as gift wrapping or handling fees.
+
+ 
+
+Note: If your payment gateway does not support processing refunds in the BigCommerce control panel, you will need to log into the gateway's dashboard to process the refund, then manually update the order status in BigCommerce to Refunded or Partially Refunded.
+
+ 
+Requirements
+To issue refunds, you must have the Manage Orders and Refund Orders permissions enabled on your user account.
+ 
+Limitations
+Refunding with multiple payment gateways (split refunds) is not supported.
+Store credit will not be shown as a refund method when an order is paid using a non-default currency.
+Store credit will only appear as a refund method on orders from customers with storefront accounts.
+Guest orders cannot be refunded as store credit.
+Refunding items via return request is not supported.
+ 
+Performing a Refund
+
+Go to Orders › All orders. Locate the order you wish to refund and from the Action menu (⋯), select Refund.
+
+ 
+
+Transactions must be captured before refunding. If your payment gateway is configured to Authorize Only, transactions will need to be captured before any refunds can be performed. Orders with transactions that have yet to be captured will have the order status as Awaiting Payment.
+
+CUSTOMER DETAILS
+
+The customer details section displays the order's billing information. You will see the customer's first and last name, email address, billing address, and their refund rate. The refund rate allows you to proactively detect and assess if the customer is exploiting your refund policy.
+
+ORDER SUMMARY
+
+The order summary provides a short rundown of the order. You will see various pieces of information, such as the current status of the order, when it was created, whether it has been previously refunded, payment methods used, where it originated, and the shipping and tax totals.
+
+REFUNDABLE ITEMS
+
+In this section, you can refund individual items, refund the entire order, or apply an order-level refund. Note that any existing order tax will not be recalculated for an order-level refund.
+
+Refund individual items — This option refunds specific line items, such as products or fees, within the order.
+If you select this option and use an automatic tax provider, the sales tax to be refunded will be calculated by the tax provider and included in the total amount to refund to the customer.
+By refunding specific line items, you perform a partial refund on the order.
+Refund entire order — This option refunds all line items within the order.
+If you select this option and use an automatic tax provider, the sales tax to be refunded will be calculated by the tax provider and included in the total amount to refund to the customer.
+If this is the first refund that is performed on the order, this option will appear as Refund entire order.
+If you have previously refunded individual items on the order, then this option will appear as Refund all remaining items.
+Apply an order level refund — This option refunds a custom value.
+If you use this option, your tax provider will not automatically recalculate the order tax or include an added tax amount to be refunded.
+ 
+
+Be careful! Refunding items or orders can automatically adjust product stock levels depending on your store’s settings. See Inventory Tracking for more information.
+
+Regardless of the refund type, the following item types can be refunded:
+
+Physical Products
+Digital Products
+Gift Wrapping
+Shipping Fees
+Shipping Handling Fees
+Purchased Gift Certificates
+
+In the case of orders with mixed item types, such as when a physical product and a gift certificate is purchased together in the same order, they will be displayed separately during the refund process.
+
+ 
+
+Pro Tip! You can also refund specific items for orders with multiple shipping addresses. Similar to orders with mixed product types, each address will display the products previously assigned to be shipped to that location.
+
+To refund an item, click the Units to refund drop-down box next to the item you wish to refund and select the number of units. The Refund item total will update accordingly.
+
+Line items that do not have a shipping cost associated with them (such as digital products and gift certificates) will have no shipping costs to refund.
+
+If the line item does not have a unit count associated with it, such as shipping charges, handling fees, and order-level fees added via API, you can specify the amount to refund.
+
+Line items that have discounts applied to them will be indicated with an information icon next to their price. You can view which type of discount (Automatic promotion, coupon code, or product level discount) was applied by hovering over it.
+
+Depending on your payment gateway, you will be able to perform multiple partial refunds through the BigCommerce control panel. To help protect you from over refunding, we have included the refunded amount next to the quantity ordered in the Refundable Items section and in the Order Summary section.
+
+When you are ready, click Continue to proceed to the Confirm refund step. You will not be able to move forward if the entered refund amount is higher than an individual unit price or the total available funds.
+
+ 
+Confirm Refund
+
+The Confirm refund step provides a summary of the refund and allows you to override the refund amount, select a refund method, and add internal notes before completing the refund request.
+
+REFUND SUMMARY
+
+The refund summary is a snapshot of the items you have selected to refund, along with the total amount to be refunded. If you have chosen to perform an order-level refund, instead you will be presented with a summary of the refunded amount.
+
+REFUND OVERRIDE
+
+For individual item and entire order refunds, you can manually alter the refund total and apply a custom value by clicking Override. Note that order-level refunds cannot be overridden as they are a custom value by default.
+
+In the Override Refund Amount window, enter your new refund total. You can adjust the total up to the maximum amount listed in the window. Click Override to apply your changes to the refund summary.
+
+The refund summary will reflect the new total that you have entered with the original subtotal and tax refund crossed out. To undo an override before completing the refund, click Remove Override.
+
+ 
+
+Performing multiple partial refunds? If an order’s partial refund value was previously overridden, the difference between the original suggested refund value and the override will be added to subsequent refunds as an overcharge. If you need to change the new refund total, perform another override.
+
+REFUND METHOD
+
+When performing a refund, you can choose your preferred refund method. In addition to debit/credit card and store credit refund methods, you also have the option to process a refund in the BigCommerce control panel or process the payment external to BigCommerce.
+
+Note that if you perform a refund back to a debit or credit card, it may take an additional 3-10 business days (depending on your payment provider and banking financial institution) for the refund to be received by your customer.
+
+Any excess amount that could not be refunded back to the original payment method will be applied to the customer's account as store credit.
+
+The Refund customer through third party provider option allows you to record refunds which are not processed through the original payment provider. This allows you to record refunds that are processed via methods that are not native to BigCommerce, such as gift certificates, bank transfers, by check, and physically in-store.
+
+ 
+
+You will need to manually provide the refund. Selecting this option means that funds will not be refunded automatically to the customer after submitting the refund in BigCommerce.
+
+When refunding through the original payment provider’s dashboard, the Refund transaction processed external to BigCommerce option allows you to record that the refund was processed. Selecting this option means that funds will not be refunded automatically after submitting the refund in BigCommerce.
+
+ 
+
+You will need to manually provide the refund via the payment provider dashboard. Selecting this option means that funds will not be refunded automatically to the customer after submitting the refund in BigCommerce.
+
+The following chart breaks down how a particular payment method is refunded, depending on how the customer originally paid for the order.
+
+Online Payment Method	Available Refund Methods
+Credit Card	
+
+Credit Card*
+
+Store Credit**
+
+Third party provider
+
+Original payment provider processed external to BigCommerce
+
+
+Debit Card	
+
+Debit Card
+
+Store Credit**
+
+Third party provider
+
+Original payment provider processed external to BigCommerce
+
+
+Gift Certificate	
+
+Store Credit**
+
+Third party provider
+
+
+Store Credit	
+
+Store Credit
+
+Third party provider
+
+*If your payment gateway does not support processing refunds in the BigCommerce control panel, the Credit Card method will not be available. See your gateway’s documentation for available features.
+**Store credit will not appear as a refund method if the order was paid using a non-default currency or if the order was placed by a guest customer.
+
+Offline Payment Method	Available Refund Method
+
+
+Bank Deposit
+
+Cash on Delivery (COD)
+
+Check
+
+Money Order
+
+	
+
+Original payment provider processed external to BigCommerce
+
+Store Credit
+
+Third party provider
+
+REASON FOR REFUND
+
+Once you have selected your preferred refund method, enter any notes in the Reasons for refund section to document the reason for the refund. This note will not be displayed to customers and only appears in the order timeline.
+
+Click Confirm Refund to complete the refund process.
+
+Once an order has been refunded, the order status will automatically update to Partially Refunded or Refunded. If you have enabled customer email notifications to be sent when an order status changes, an email will be automatically sent to your customer to notify them of the partial or full refund.
+
+If a refund fails to process, you’ll receive a notification in the control panel dashboard, visible by clicking the bell icon.
+
+In many instances, additional details regarding the failure can be found in the order timeline and your store logs.
+
+Failed refunds cannot be retried in the BigCommerce control panel and must be completed in your payment processor’s dashboard.
+
+ 
+
+Having trouble issuing a refund? Make sure that the payment in question has been settled. Some payment gateways settle transactions at a particular time every day or dictate that a transaction must be older than 24 hours before it can be refunded.
+
+ 
+Refund Adjustments
+
+There are some situations in which sales tax may be overcharged. For example, a connection failure with an automatic tax provider can result in a fallback rate being applied, or you may have a tax-exempt customer who was erroneously charged.
+
+Additionally, if you override the value of a partial refund, the overridden value will be counted as an overcharge on any subsequent refunds to that order.
+
+In the event that you are refunding an order where BigCommerce has detected an overcharge, the amount that was overcharged ("adjustment") will become the minimum refund amount. For example, if a customer was overcharged tax by $4.76, and you are trying to make a refund on the order, you will see that a $4.76 minimum refund is required because of the tax adjustment.
+
+If there is an adjustment on an order, an alert will display on the refund screen.
+
+If you need to change the refund amount after it was adjusted, you can override the total from the refund summary.
+
+ 
+Refunding with Avalara AvaTax
+
+If you are using Avalara AvaTax to calculate sales tax, when order data submission is enabled, tax documents capturing the sales tax calculated on the order will be submitted to Avalara.
+
+If an order later receives a change that affects its tax liabilities, such as when you process a refund, the original tax document generated for the order will be fully refunded and a new tax document will be submitted to Avalara. This means that when you process a refund, changes to the order will be recorded against the actual date the refund was made. This approach helps with reconciliation when a refund is processed in a different reporting period than when the order was originally placed.
+
+Another advantage of using Avalara AvaTax for your sales tax calculation is that all of your sales tax calculations are centralized in one location. This is beneficial as it allows you to take advantage of Avalara’s tax returns product, Avalara Returns. By using both Avalara AvaTax and Avalara Returns together, your sales tax forms for each state can be automatically prepared and ready for you to file. Alternatively, you can also opt to let Avalara handle everything, including filing and payment on your behalf, giving you even more time to focus on growing your business with BigCommerce.
+
+ 
+
+Changing tax providers? If you plan on switching tax providers (such as moving from basic tax to an automatic tax provider, we recommend making the switch during a time when you have low order volumes. Switching tax providers during high order volume periods can lead to refund calculation anomalies, as your source of truth for the sales tax would have changed.
+
+ 
+FAQ
+General
+Refund methods
+Troubleshooting
+GENERAL
+
+How soon can my customers expect to be refunded?
+
+The time it takes for the refund to be issued to your customer will vary depending on the payment gateway, payment processor, and financial institution your merchant bank account is set up with.
+It may take anywhere between 3-10 business days for your customer to receive the refund.
+
+How will I know if a refund does not complete successfully?
+
+Store notifications and alerts appear in the BigCommerce control panel dashboard and can be accessed by clicking the bell icon. If a refund fails to complete, an alert will be displayed here.
+
+Once you have the order information, check the order timeline and store logs as they may contain more details regarding the failure.
+
+Failed refunds cannot be retried in the BigCommerce control panel and must be completed in your payment processor’s dashboard.
+
+What happens when I edit an order by adding, removing, or changing the price of a discounted product?
+
+Changing the price of a discounted product will not affect the discount, as they are disabled during the editing process. However, any discounts associated with that product will be removed from the order if the product is removed.
+
+How can I charge a restocking fee when refunding a returned order?
+
+While you cannot add a charge when processing a return, you can deduct your restocking fee from the total amount to refund to the customer. We recommend clearly stating your restocking fee in your returns policy page.
+
+REFUND METHODS
+
+When can I perform an offline refund?
+
+You can perform an offline refund if:
+
+You are refunding a customer who paid via an offline payment method (cash, bank deposit, cheque or money order).
+You actioned the refund directly via the payment gateway/processor, and not through BigCommerce.
+In this case, performing an offline refund is an optional manual process to record (within BigCommerce) that a refund has been actioned against an order.
+This ensures that your order information is up-to-date on your BigCommerce store, which is important if you perform future partial refunds against the same order.
+
+Can I refund an order that was paid with a gift certificate?
+
+Yes. In this case, you will technically not be refunding the funds back to the gift certificate, but crediting the customer’s account with store credit.
+
+Can I refund an order that was paid with store credit?
+
+Yes. As with gift certificates, this refund will be in the form of crediting the customer’s account with the respective amount via store credit.
+
+TROUBLESHOOTING
+
+Why does my refund keep getting declined by my payment gateway?
+
+Make sure that the payment in question has been settled. Some payment gateways settle transactions at a particular time every day or dictate that a transaction must be older than 24 hours before it can be refunded. These are the most common causes of refunds not being processed correctly.
+
+Why is a tax refund being subtracted from the refund total?
+
+If tax is applied to an order after it has been placed, the tax total will be subtracted from the refund amount when making an order-level refund. This can occur if you edit your tax zones or change your tax provider so that the order becomes tax-eligible. The tax total is also subtracted from the total refund amount available to override in the refund summary.
+
+After the refund is processed, the tax total will appear in the order's details as well as sales tax reports.
+
+I processed a refund as offline in error. Is it possible to re-process the refund to correct this?
+
+No. To reduce the risk of double-refunding, it is not possible to change the status and re-process a refund once it has been completed in BigCommerce. You will need to refund the order through the payment gateway's dashboard.
+
+Why are product stock levels being updated after I process a refund?
+
+If you track inventory on products, stock levels can be set to automatically adjust based on order status changes. Depending on your settings, stock levels can update when orders are placed into Completed, Shipped, Refunded, and Cancelled statuses.
+
+See “Inventory Settings” in Inventory Tracking for more information.
+
+Why am I getting “Order [number] cannot be refunded. Negative shipping costs detected during tax estimation. Please contact support@bigcommerce.com for assistance” when I attempt a refund?
+
+The root cause of this error involves the wrong discount being applied for a shipping address. To help identify the specific cause, contact our support team. Our team can investigate and advise on how to prevent the error in the future.
+
+As a workaround, you can edit the order to use a different shipping quote. To do so, follow these steps:
+
+Edit the order and click Next until you get to the Fulfillment page.
+Under Choose a provider, select a different shipping method (deselect Use Existing Quote).
+For example, select Custom and enter the correct shipping price.
+Click Next to proceed to the Summary page, then click Submit to save the order. You should now be able to refund the order.
+Additional Resources
+Automatic Tax Setup
+Available Payment Gateways
+Avalara AvaTax
+Basic Tax Setup
+Giving Customers a Store Credit
+Manually Capturing Transactions (Authorize Only)
+Order Statuses
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Processing Refunds

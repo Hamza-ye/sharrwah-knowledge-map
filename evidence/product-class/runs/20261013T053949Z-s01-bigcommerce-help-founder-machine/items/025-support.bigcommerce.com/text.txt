@@ -1,0 +1,350 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Requirements
+How It Works
+Stored Credit Cards
+Stored PayPal Accounts
+Stored ACH Direct Debit
+Stored SEPA Direct Debit
+Deleting Payment Methods
+FAQ
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Enabling Stored Payment Methods
+What We'll Cover
+Requirements
+How it works
+Enabling stored credit cards
+Enabling stored PayPal accounts
+Enabling stored ACH Direct Debit
+Enabling stored SEPA Direct Debit
+Deleting stored payment methods
+FAQ
+
+Having a payment method saved on their account allows your customers to safely and securely complete future purchases faster. It’s a convenient way for shoppers to get through the checkout process quickly and easily, improving conversions.
+
+If your store is using a compatible Stencil theme, customers can also add new cards, delete cards, select a default card, and edit the billing details of existing cards from their customer account area of your storefront. If you have ACH Direct Debit, PayPal, or SEPA Direct Debit payment methods enabled with a compatible gateway, customers can also save their ACH account, PayPal account, and SEPA account details. Payment data is stored securely with the payment gateway.
+
+ 
+Requirements
+Your store must be on a Growth plan or higher.
+Your store’s checkout type must be Optimized One-Page Checkout or Custom Checkout.
+In order for customers to manage their stored credit cards or PayPal accounts from their storefront account, you must be using a theme based on Cornerstone 6.10.0 or newer.
+Managing stored ACH accounts requires a theme based on Cornerstone 6.12.0 or newer.
+To enable stored payment methods on your payment gateways, the Manage Payments and Manage Settings permissions must be enabled on your user account.
+ 
+How It Works
+Checkout page experience
+Storefront account experience
+ 
+
+Make sure your payment pages are PCI Compliant! If you are adding scripts to customize any of your payment pages, including checkout, web pages, and the My Account page, you must add a subresource integrity (SRI) hash to ensure these pages are secure and maintain PCI compliance. For more information on SRI hashes, see Using Script Manager in the Help Center, and our Developer Docs on Scripts.
+
+CHECKOUT PAGE EXPERIENCE
+
+When a customer logged in to their storefront account reaches the payment step of checkout, they are given the option of saving their payment method. They can also designate it as the default card or account for all future purchases.
+
+Credit/Debit cards
+
+PayPal accounts
+
+US bank account (ACH)
+
+The next time they go through checkout, they will be able to see and select saved payment methods when they get to the Payment section.
+
+STOREFRONT ACCOUNT EXPERIENCE
+
+If your store is using a compatible theme, customers can also manage their stored payment methods from the Payment Methods tab of their storefront account area. They can see the existing methods they have on file, choose a method to be their default, update the billing address associated with credit cards, delete old cards, add new cards, and edit or delete stored PayPal accounts.
+
+Note that the billing address on a saved ACH account cannot be edited from the storefront account; customers must delete and re-create their saved ACH account in order to update the address. Stored SEPA accounts cannot be managed from the customer storefront account.
+
+ 
+
+Using a third-party theme? If your theme isn’t built from a compatible version of Cornerstone, ask your theme developer about updating their theme to support Stored Payment Methods.
+
+ 
+Enabling Stored Credit Cards
+
+If your payment gateway supports stored credit cards, you can enable the feature in the gateway settings in the BigCommerce control panel. See Available Payment Gateways for a list of gateways that support stored credit cards and links to their respective setup articles.
+
+In addition to toggling the feature in the BigCommerce control panel, the below payment gateways have additional setup steps:
+
+Authorize.net
+Chase Merchant Services
+CyberSource
+Opayo by Elavon
+Stripe OCS
+AUTHORIZE.NET
+
+In order to use Authorize.net for stored credit cards, you will need to sign up for the Customer Information Manager (CIM) in the Authorize.net Dashboard. To learn more, see Authorize.net’s documentation on the classic experience (1.0) and new experience (2.0).
+
+CHASE MERCHANT SERVICES
+
+In order to use Chase for stored credit cards, you will need to enable the Profile Management feature on your Chase account. For more information, contact your Chase sales representative.
+
+CYBERSOURCE
+
+CyberSource requires Card Tokenization on the merchant account. You will need to contact CyberSource customer support and request this feature.
+
+OPAYO BY ELAVON
+
+Opayo requires tokenized payments enabled on your merchant account before adding this feature to your checkout. Contact Elavon customer services for further information.
+
+STRIPE OCS
+
+In order to use Stripe OCS for stored credit cards, you will need to enable it in both your Stripe Dashboard and the BigCommerce control panel.
+
+ 
+
+Using stored payments with BigCommerce Payments, Braintree, or PayPal? When stored credit cards are enabled, you can also enable real-time account updater, an optional paid service that automatically updates stored card information, such as new numbers, new expiration dates, and closed accounts. See your gateway’s Help Center article for more details and setup requirements.
+
+ 
+Enabling Stored PayPal Accounts
+
+If you are using BigCommerce Payments, PayPal, or Braintree as your payment gateway, you can activate stored PayPal accounts on your storefront. See the sections below for the setup steps specific to your gateway.
+
+ 
+
+Stored PayPal accounts are synced with the shipping address used when first saving the account credentials. If a customer uses a different shipping address at checkout, they will be prompted to re-enter their PayPal account information. After the order is placed, the new shipping address will be synced with their stored account for future purposes.
+
+BigCommerce Payments
+Braintree
+PayPal
+BIGCOMMERCE PAYMENTS
+
+To offer stored PayPal accounts with BigCommerce Payments, go to Settings › Payments and click the BigCommerce Payments tab. Scroll down to Transaction Settings and toggle Stored PayPal accounts, then click Save.
+
+BRAINTREE
+
+To offer stored PayPal accounts with Braintree, go to Settings › Payments and click the Braintree tab. Toggle Enable Stored PayPal Accounts, then click Save.
+
+PAYPAL
+
+Before setting up stored PayPal accounts via the PayPal payment gateway, make sure that your store meets the gateway’s prerequisites.
+
+Once you’ve confirmed your eligibility, go to Settings › Payments and click the PayPal tab. Check the box next to Enable Stored PayPal Accounts and save your changes to offer stored PayPal accounts on your storefront.
+
+ 
+Enabling Stored ACH Direct Debit
+
+Stored ACH accounts are supported by BlueSnap Direct, Braintree, and Stripe OCS. See the sections below for more information.
+
+Stored ACH with BlueSnap Direct
+Stored ACH with Braintree
+Stored ACH with Stripe OCS
+STORED ACH WITH BLUESNAP DIRECT
+
+Before you can enable stored ACH Direct Debit on your storefront, you must first configure Instant Payment Notifications and enable ACH in your BlueSnap account.
+
+Next, in the BigCommerce control panel, go to Settings › Payments and select Bluesnap Direct. Check the box next to Enable stored Electronic Check (ACH/ECP) accounts, then save your changes.
+
+STORED ACH WITH BRAINTREE
+
+Before you can enable stored ACH Direct Debit on your storefront, you must first complete the ACH enablement steps for Braintree.
+
+Next, in the BigCommerce control panel, go to Settings › Payments and select Braintree. Check the box next to Enable stored ACH accounts, then save your changes.
+
+STORED ACH WITH STRIPE OCS
+
+Before you can enable stored ACH Direct Debit on your storefront, you must first enable it in your Stripe Dashboard.
+
+Next, in the BigCommerce control panel, go to Settings › Payments and select Stripe OCS. Check the box next to Enable stored ACH accounts with Stripe, then save your changes.
+
+ 
+Enabling Stored SEPA Direct Debit
+
+Stored SEPA Direct Debit accounts are supported by Adyen v2 and BlueSnap Direct. See the sections below for more information.
+
+Stored SEPA with Adyen
+Stored SEPA with BlueSnap Direct
+STORED SEPA WITH ADYEN
+ 
+
+Stored SEPA accounts are not supported in the latest version of Adyen. Stored SEPA is only available in the previous version of Adyen, also known as v2. For more information about updating Adyen, see “Updating to the Latest Version” in Connecting with Adyen.
+
+Before you can enable stored SEPA Direct Debit on your storefront, you must first request SEPA Direct Debit to be added to your Adyen account.
+
+Next, in the BigCommerce control panel, go to Settings › Payments and select Adyen. Check the box next to Enable stored SEPA with Adyen, then click Save.
+
+STORED SEPA WITH BLUESNAP DIRECT
+
+Before you can enable stored SEPA Direct Debit on your storefront, you must first configure Instant Payment Notifications and enable SEPA Direct Debit in your BlueSnap account.
+
+Next, in the BigCommerce control panel, go to Settings › Payments and select Bluesnap Direct. Check the box next to Enable SEPA Direct Debit, enter the Creditor’s Name provided to you by your business’s bank, then check the box next to Enable Stored SEPA Direct Debit. When you are ready, click Save.
+
+ 
+Deleting Stored Payment Methods
+
+Logged-in customers can delete their stored payment methods in the Payments section of checkout. If they have one or more stored cards, they will see a link to Manage them.
+
+Stored payment methods can only be deleted from the customer's account by the customer themselves. Merchants cannot delete customers' stored payment methods.
+
+The Manage Card screen will show the cards that the customer has stored. To remove a stored credit card from the list, click Delete next to the card and click Yes, delete on the confirmation prompt.
+
+If your store is using a compatible theme, customers can also manage their stored cards from the Payment Methods tab of their storefront account area.
+
+ 
+FAQ
+General
+Security and fraud
+Troubleshooting
+GENERAL
+
+Can I delete payment methods from my payment processor's customer management portal?
+
+No. In order to keep the customer records synchronized between your BigCommerce storefront and the provider’s vault, all payment methods must be deleted from the BigCommerce storefront.
+
+Deleting payment methods from the processor’s customer management will cause synchronization problems with your storefront, and prevent shoppers from being able to manage the affected payment methods.
+
+To prevent issues, only shoppers should delete their payment methods.
+
+Can I delete payment methods that have been stored in a customer’s storefront account?
+
+No, only shoppers can delete their payment methods.
+
+Can stored payment methods be used on Manual Orders?
+
+No, stored payment methods are only available to shoppers during checkout.
+
+Can stored payment methods be used with multiple shipping addresses?
+
+Yes, customers can add and use stored payment methods on orders with multiple shipping addresses.
+
+Are stored payment methods supported on Checkout SDK and embedded checkout?
+
+Yes, stored payment methods are supported. See our developer documentation on Checkout SDK for more information.
+
+Can stored PayPal accounts be saved after using the PayPal button on the cart page?
+
+No, shoppers can only save their PayPal account from the checkout page.
+
+Are stored payment methods supported in stores using B2B Edition?
+
+If you are using B2B Edition, B2B buyers can save their payment credentials at checkout with supporting gateways. While stores using B2B Edition’s legacy storefront experience allow customers to manage their stored payment methods from the checkout page and their storefront account page, the Buyer Portal experience only supports stored payment management from the checkout page at this time.
+
+Can I view credit/debit card instruments that have been vaulted with my payment provider?
+
+If your payment provider vaults instruments for logged in or guest customers, details can be retrieved via our V3 Transactions API from the provider_instrument_token and provider_customer_id fields. To request access to these fields, contact our support team.
+
+SECURITY AND FRAUD
+
+Is storing payment methods PCI compliant?
+
+Yes, our servers are PCI DSS validated at level 1. Your store is PCI compliant as long as you are not using scripts to customize your payment pages.
+
+If you have customized any of your payment pages, including the My Account page, you must add a subresource integrity (SRI) hash to maintain PCI compliance. For more information on SRI hashes, see Using Script Manager.
+
+Do I need to continue to ask customers for a CVV for credit cards?
+
+The security standards for some payment gateways will require shoppers to enter their CVV every time.
+
+TROUBLESHOOTING
+
+What if I don't see Stored Credit Cards/PayPal Accounts as an option in my control panel?
+
+Make sure your store meets all the requirements. Stores on a Core plan will need to upgrade to a Growth plan or higher.
+
+I'm using Braintree for stored payments, and my customers are reporting that they see a $1.00 hold fee. What is this?
+
+When a new card is stored, to validate it, a small authorization amount appears on the card (usually $1.00 or less) but is never actually captured. This charge will expire and disappear from the customer's account after a couple of days.
+
+Will my customers' stored payment methods be lost if I disconnect and reconnect my payment gateway?
+
+No, if you disconnect your payment gateway, any payment methods stored by your customers will still be available when you reconnect the gateway.
+
+ 
+ 
+Do this in my store
+
+Go to Payments in my store
+
+Additional Resources
+Available Payment Gateways
+Optimized One-Page Checkout
+ACH (Automated Clearing House) Direct Debit
+SEPA Direct Debit
+Checkout SDK (Developer Docs)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Enabling Stored Payment Methods

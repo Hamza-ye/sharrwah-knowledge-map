@@ -1,0 +1,18 @@
+{
+ "n": 33,
+ "url": "https://support.bigcommerce.com/s/article/Managing-Currencies",
+ "dir": "items/033-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:36Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Managing-Currencies?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190829,
+ "cited_in": [
+  "BC-C-074"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1ed6eb661686c75ac470e37970c86d126b932cc8feb8d53d6e818bba73b19786",
+ "raw_ext": "html"
+}

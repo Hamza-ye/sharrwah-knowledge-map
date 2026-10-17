@@ -1,0 +1,481 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+QUICKSTART
+GETTING STARTED
+V3 PRODUCTS
+PROMOTIONS
+B2B EDITION
+HEADLESS COMMERCE
+MULTI-STOREFRONT
+SITE SPEED
+SEO
+KEYWORD RESEARCH
+GOOGLE ANALYTICS
+ECOMMERCE ANALYTICS REPORTS
+ECOMMERCE INSIGHTS
+CATALOG IMPORT/EXPORT (MODERN)
+CATALOG IMPORT/EXPORT (LEGACY)
+BIGTOOLS
+BIGAI: PREDICTIVE ANALYTICS (LTV)
+BIGAI: PREDICTIVE ANALYTICS (INVENTORY)
+ALTERNATIVE PAYMENT METHODS (APMS)
+Intro To APMs
+Benefits of APMs
+Types of APMs
+APM Order Flow
+Available APMs
+Ratepay
+LATAM PAYMENTS
+CRYPTOCURRENCY
+ORDER FULFILLMENT
+ORDER MANAGEMENT
+PHISHING ATTEMPTS
+FRAUD PREVENTION
+ACCESSIBILITY AND ADA COMPLIANCE
+CCPA
+BIGCOMMERCE FOR WORDPRESS
+PINTEREST
+DOMAIN & DNS
+REVERSE PROXIES
+INVENTORY MANAGEMENT
+CUSTOMER MANAGEMENT
+SHIPPING
+EMAIL
+CHANGING THEMES
+TROUBLESHOOTING IMAGES
+STORE TRANSFER
+MIGRATING FROM SHOPIFY
+MIGRATING FROM WOOCOMMERCE
+MIGRATING FROM MAGENTO
+B2B NINJA
+DATA LEVELS
+V3 CATALOG MIGRATION
+V2 PRODUCTS
+Guide to Alternative Payment Methods
+CHAPTER 1:
+Introduction to Alternative Payment Methods
+
+Alternative payment methods (APMs), also called local or additional payment methods, are popular means of payment that do not require a shopper to use a major credit card scheme, such as Visa or Mastercard. Many regions around the world prefer to check out with their local APMs rather than entering credit card information, so adding them to your store’s checkout helps you reach a global audience and improve international conversions.
+
+APMs range from digital wallets available around the world, such as Apple Pay and Google Pay, to region-specific payment options like iDEAL in the Netherlands or SEPA in the European Union. Just as seeing PayPal on checkout can help American consumers feel more comfortable about a purchase, seeing these offerings can make your customers feel more comfortable with purchasing from your store.
+
+In contrast with traditional payment methods, APMs are typically offered through a cooperating payment gateway. For example, ACH Direct Debit is enabled through Adyen or BlueSnap Direct as opposed to a standalone integration.
+
+In this guide, we will cover the benefits of offering APMs at checkout, explain the different types of APMs, walk through the typical order flow, and provide a breakdown of supported gateways and countries for each APM available in BigCommerce.
+
+ 
+
+What is an Open Payment Provider fee? For stores on self-serve plans, transactions processed with APMs through a payment provider that is not on our Embedded Payment Provider list are assessed an Open Payment Provider fee. Orders processed through Embedded Payment Providers and Performance plan stores operating under contracted terms are not subject to this fee.
+
+ 
+ 
+In This Chapter
+Benefits of Alternative Payment Methods
+Types of APMs
+APM order flow
+Available APMs
+ 
+Benefits of Alternative Payment Methods
+CONVENIENCE
+
+Alternative payment methods have become popular because they provide a direct, hassle-free option for shoppers who prefer not to use traditional forms of online payment. For example, digital wallets and mobile payment options streamline the checkout process for shoppers, or allow them to bypass checkout entirely by auto-filling their credentials and billing information.
+
+By enabling APMs alongside your existing payment gateways, you enhance the variety of options and ease-of-use of your store’s customer experience.
+
+SELLING INTERNATIONALLY
+
+APMs are a valuable tool when selling your products outside the US. The popularity of payment gateways differs greatly by region and country, and many shoppers expect to see region-specific payment options at checkout.
+
+Once enabled, local payment methods have country and currency prerequisites that ensure shoppers will see only the local payment methods applicable for their geolocation. Including region-specific APMs that shoppers both recognize and trust will help you expand your global customer base.
+
+ 
+Types of APMs
+
+“Alternative payment methods” is a blanket term that covers a variety of payment methods. Each APM can be classified as one of the following types, each with its own distinct advantages:
+
+Bank transfers — Bank transfer APMs allow shoppers to complete transactions from a bank account instead of entering in credit card details. An example of bank transfer APMs include Open Banking and iDEAL.
+Direct debit — Direct debit APMs pull funds directly from the shopper’s bank account, similar to bank transfers. These are popular for recurring or subscription-based payments. Examples of direct debit APMs include ACH and SEPA.
+Cash payment — When a shopper uses a cash payment method to place an order, they receive a payment slip or voucher to present to a participating retail location. From there, the shopper completes the transaction in cash and the merchant is notified of the successful payment. Examples of cash payment APMs include Boleto Bancário and Fawry.
+Digital wallets — A digital wallet allows shoppers to load and store funds on a third-party account. They can then complete transactions quickly, without having to enter payment information or create a separate account on the checkout. Examples of digital wallet APMs include Alipay and Venmo.
+Mobile payments — Mobile payment APMs use credit card and address information saved on your mobile device to complete transactions with the tap of a button. Examples of mobile payment APMs include Apple Pay and Google Pay.
+Delayed or installment payments — These APMs enable shoppers to ‘Buy Now and Pay Later’ in a single payment or a series of scheduled installments. Examples of delayed payment APMs include Klarna and PayPal Pay Later.
+ 
+APM Order Flow
+
+Once you’ve enabled an alternative payment method in your store, your shoppers will see them listed with your other payment options at checkout. Unlike most payment gateways, an APM's display name on the checkout page cannot be customized.
+
+Some digital wallets and mobile payment options bypass the checkout by appearing as buttons on your cart page and quick cart modal.
+
+When using an APM during checkout, shoppers will be redirected to the payment method to finalize their payment, then redirected back to the store once checkout is completed. This gives shoppers a unified experience, and ensures that they see any important information on your order confirmation page.
+
+Orders placed using an APM can be identified in Orders › View by looking in the Payment Method field in the order’s details.
+
+APM orders share the same fulfillment process as other orders. However, features such as delayed capture or in-control panel refunds may not be supported.
+
+ 
+Available APMs
+
+The following table contains all of the alternative payment methods that can be enabled within BigCommerce, as well as their supported payment gateways and countries. For specific details on an APM, click the corresponding link to view its chapter.
+
+Alternative Payment Method	Supporting Payment Gateways	Countries Supported
+ACH Direct Debit	
+Adyen
+BlueSnap Direct
+Braintree
+PayPal
+Stripe OCS
+Stripe UPE
+	US
+Affirm	
+Stripe OCS
+	CA, US
+Afterpay	
+Adyen
+BigCommerce Payments
+Stripe OCS
+	Supported countries depend on the connected gateway.
+Alipay	
+Adyen
+Barclaycard Smartpay Advance
+Nexi XPay
+Stripe OCS
+Stripe UPE
+	Supported countries depend on the connected gateway.
+Amazon Pay	
+Nexi XPay
+Stripe OCS
+	Supported countries depend on the connected gateway.
+Apple Pay	
+Adyen
+Authorize.net
+Bank of New Zealand
+BigCommerce Payments
+Bolt Payments
+Braintree
+Chase Merchant Services
+Checkout.com
+Cybersource
+Moneris
+Nexi XPay
+PayPal
+Stripe OCS
+Stripe UPE
+	Supported countries depend on the connected gateway.
+Australia BECS Direct Debit	
+Stripe OCS
+Stripe UPE
+	AU
+BACS Direct Debit	
+Stripe OCS
+Stripe UPE
+	UK
+Bancontact	
+Adyen
+BigCommerce Payments
+Braintree
+Checkout.com
+Nexi XPay
+PayPal
+Stripe OCS
+Stripe UPE
+	BE
+Bancomat Pay	
+Nexi XPay
+	IT
+Billie	
+Klarna Payments
+Stripe OCS
+	Supported countries depend on the connected gateway.
+Bizum	
+Adyen
+Stripe OCS
+	ES
+BLIK	
+Adyen
+BigCommerce Payments
+Braintree
+PayPal
+Stripe OCS
+	PL
+Boleto Bancário	
+Adyen
+Stripe OCS
+Stripe UPE
+	BR
+Boost Wallet	
+Adyen
+	MY
+Cash App Pay	
+Stripe OCS
+	US
+Clearpay	
+Adyen
+BigCommerce Payments
+Stripe OCS
+	UK
+eNETS	
+BlueSnap Direct
+	SG
+EPS	
+Adyen
+BigCommerce Payments
+Braintree
+Checkout.com
+Nexi XPay
+PayPal
+Stripe OCS
+Stripe UPE
+	AT
+Fawry	
+Checkout.com
+	EG
+Finnish E-Banking	
+Adyen
+	FI
+FPX	
+Stripe OCS
+	MY
+GCash	
+Adyen
+	PH
+Google Pay	
+Access Worldpay
+Adyen
+Authorize.net
+Bank of New Zealand
+BigCommerce Payments
+Braintree
+Chase Merchant Services
+Checkout.com
+Cybersource
+PayPal
+Stripe OCS
+Stripe UPE
+	Supported countries depend on the connected gateway.
+GrabPay	
+Adyen
+Stripe OCS
+Stripe UPE
+	MY, PH, SG
+iDEAL	
+Adyen
+Barclaycard Smartpay Advance
+BigCommerce Payments
+BlueSnap Direct
+Braintree
+Checkout.com
+Nexi XPay
+PayPal
+Stripe OCS
+Stripe UPE
+	NL
+KakaoPay	
+Adyen
+	KR
+Klarna	
+Adyen
+BigCommerce Payments
+Nexi XPay
+Stripe
+	Supported countries depend on the connected gateway.
+Korean Cyber Payment (KCP)	
+Adyen
+	KR
+Local Bank Transfer	
+BlueSnap Direct
+	Over 200 countries worldwide
+MB WAY	
+Adyen
+Stripe OCS
+	PT
+Mercado Pago Payment Methods	
+Mercado Pago offers a variety of payment methods in Latin America. See Mercado Pago Payment Methods for more information.
+	AR, BR, CL, CO, MX, PE, UY
+MobilePay	
+Adyen
+Stripe OCS
+	DK, FI
+MoMo	
+Adyen
+	VN
+Moneybookers	
+BlueSnap Direct
+Nexi XPay
+	Over 200 countries worldwide
+Multibanco	
+Checkout.com
+Nexi XPay
+Stripe OCS
+	PT
+MyBank	
+BigCommerce Payments
+Braintree
+Nexi XPay
+PayPal
+	IT
+NaverPay	
+Adyen
+	KR
+Oney	
+Adyen
+	ES, FR, IT
+Online Banking Poland	
+Adyen
+	PL
+Open Banking	
+Access Worldpay
+Adyen
+	UK
+Optty Payment Methods	
+Optty offers a variety of Buy Now, Pay Later payment options across 59 countries and in 36 currencies. See Optty Payment Methods for more information.
+	Over 50 countries worldwide
+OXXO	
+Stripe OCS
+Stripe UPE
+	MX
+PayCo	
+Adyen
+	KR
+PagoInConto	
+Nexi XPay
+	IT
+PayPal	
+Nexi XPay
+	See what countries and services are available.
+PayNow	
+Stripe OCS
+Stripe UPE
+	SG
+PayPal Pay Later	
+BigCommerce Payments
+Braintree
+PayPal
+	US, UK, AU, FR, DE, ES, IT
+Pix	
+Adyen
+	BR
+Przelewy24	
+BigCommerce Payments
+Braintree
+Checkout.com
+Nexi XPay
+PayPal
+Stripe OCS
+	PL
+QPay	
+Checkout.com
+	QA
+Ratepay	
+PayPal
+	DE
+Revolut Pay	
+Stripe OCS
+	EU and UK
+Satispay	
+Nexi XPay
+Stripe OCS
+	IT
+SEPA Direct Debit	
+Adyen
+BigCommerce Payments
+BlueSnap Direct
+Braintree
+PayPal
+Stripe OCS
+Stripe UPE
+	Supported countries depend on the connected gateway.
+Sofort	
+Barclaycard Smartpay Advance
+Checkout.com
+	DE, AT, CH, BE, ES, NL
+Swish	
+Adyen
+	SE
+Tilopay Payment Methods	
+Tilopay offers a variety of payment methods in Central America and the Caribbean. See Tilopay Payment Methods for more information
+	AG, AI, AW ,BS, BB, BZ, BM, VG, BQ, KY, CR, CW, DM, DO, SV, GD, GT, GY, HN, JM, NI, PA, BQ, KN, LC, SX, VC, TT, TC
+Touch 'n Go	
+Adyen
+	MY
+Trustly	
+Adyen
+	DK, EE, ES, FI, IE, LT, LV, NO, SE, UK
+TWINT	
+Stripe OCS
+Stripe UPE
+	CH
+UnionPay	
+Adyen
+	AE, AT, AU, BE, CA, CH, CN, CY, CZ, DE, DK, EE, ES, FI, FR, GI, GR, HK, HR, HU, IE, IS, IT, JP, KR, LI, LT, LU, LV, MT, MY, NL, NO, NZ, PL, PT, RO, SE, SG, SI, SK, TH, UK, US
+Venmo	
+BigCommerce Payments
+Braintree
+PayPal
+Stripe OCS
+	US
+Vipps	
+Adyen
+	NO
+WeChat Pay	
+Adyen
+Nexi XPay
+Stripe OCS
+Stripe UPE
+	CN
+Zip	
+Adyen
+Stripe OCS
+	AU
+All Chapters
+Ratepay
+Intro to APMs
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Introduction to Alternative Payment Methods

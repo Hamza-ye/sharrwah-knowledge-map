@@ -1,0 +1,18 @@
+{
+ "n": 16,
+ "url": "https://support.bigcommerce.com/s/article/Checkout-Settings",
+ "dir": "items/016-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Optimized-Single-Page-Checkout?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190825,
+ "cited_in": [
+  "BC-C-016"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "565486717cfc2ff09c60c1c6640c5feae8ef7403708c3374a942afc3d8ff40ae",
+ "raw_ext": "html"
+}

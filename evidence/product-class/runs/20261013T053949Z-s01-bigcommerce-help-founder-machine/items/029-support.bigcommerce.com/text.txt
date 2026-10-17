@@ -1,0 +1,296 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+Channel Manager
+Getting Started With Localization
+Create Storefronts
+Localization Settings
+Domains
+Currency
+Merchandising Strategy
+Products
+Promotions and Emails
+Looking Ahead
+Multi-Storefront | International Enhancements
+Multi-Storefront Payment Methods
+Storefronts
+Catalyst
+BigCommerce for WordPress
+DEITY Falcon
+Marketplaces
+Ads And Social
+Point Of Sale
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Getting Started with Localization on Multi-Storefronts
+What We'll Cover
+Creating a storefront
+Localizing settings
+Domains
+Currency
+Customizing your merchandising strategy
+Localizing products
+Localizing promotions and store communications
+Looking ahead
+
+Grow your international business with tools to sell cross-border, as well as deliver localized shopping experience to customers by using Multi-Storefront (MSF). With the ability to support separate storefronts per region while managing your store from a single dashboard, our international enhancements for MSF make it easy to take your brand globally.
+
+Merchants selling in different regions need to be able to customize settings per storefronts in order to provide shoppers with local units of measurement, currencies, and localized content. This is equally applicable for businesses already established in multiple countries and selling domestically into those countries, as it is for domestic businesses starting to expand into neighboring countries.
+
+By unlocking this functionality via the APIs that power our control panel and the Stencil framework, we give you the flexibility to choose the right path for your business, whether that’s using Stencil or headless storefronts.
+
+ 
+Creating a Storefront
+
+When a new storefront is created, you will be able to select a default shopper-facing language for that storefront.
+
+This language is used to provide default content translations for theme, checkout page, system messages on storefront, and payment error messages. This setting also provides translations for default order statuses, return reasons and actions, and other areas.
+
+For more information on creating a storefront, see Creating an International Storefront and our general documentation on creating storefronts.
+
+ 
+Localizing Settings
+
+There are several settings in the BigCommerce dashboard that you can customize for each storefront to display unique content. We will give a quick overview of these settings, and provide additional resources to help you in leveraging them on your storefronts to offer a rich domestic shopping experience.
+
+Contact information and search engine optimization
+Localization
+CONTACT INFORMATION AND SEARCH ENGINE OPTIMIZATION
+
+Store profile settings can be localized on each of the storefronts to include a localized storefront shopper-facing store name, address, email, and phone number.
+
+SEO settings can be set per each of the storefronts to set localized home page title, meta keywords and meta description for search engines.
+
+For more information on contact information fields and homepage SEO settings, see Store Profile Settings and SEO Fields.
+
+LOCALIZATION
+
+Localization settings can be customized on each storefront to set the country, language, physical dimensions, date, and timezone. This allows your storefront to present itself as a domestic store based in the country that you are planning to sell to.
+
+The selected default language determines default content translations for theme, checkout page, system messages on storefront, payment error messages, default order statuses, and return reasons and actions.
+
+Stores with multiple languages enabled configure their global country, language, physical dimensions, and date and timezone settings under Settings › Localization. See Localization Settings to learn more. For older stores, see Store Profile for more information on Locale settings, and Store Settings for physical dimensions and date and timezone settings.
+
+Learn more about localization settings from the International Enhancements for Multi-Storefront documentation.
+
+ 
+
+Note: The selected country determines tax and shipping zone settings. This functionality is still in development for International Enhancements for Multi-Storefront.
+
+ 
+Domains
+
+Maximize your search engine rankings when deciding on how to structure your website and your domain strategy by choosing a localized domain for your storefront.
+
+You can connect a localized domain (such as “cats.fr”) or subdomain (such as “fr.cats.com”) to a storefront by navigating to the storefront in Channel Manager, and selecting Domains in the side navigation. See our documentation on Multi-Storefront for more information on domains and SSL certificates for storefronts.
+
+Using a subfolder domain (such as "cats.com/nl") is available on headless storefronts. See Domain Settings for Headless Storefronts and Sites in our Developer Docs for more information on configuring the necessary sites and routes.
+
+ 
+Currency
+
+Allow shoppers to pay in their local currency in order to increase conversion and make the shopping experience feel as local as possible.
+
+You can set the default currency for each storefront from the list of enabled currencies on your store, which is displayed to shoppers whenever they visit a given storefront.
+
+Shoppers will see prices in the default storefront currency, with the ability to change the currency to any other one enabled on the store level. See Using Multiple Currencies for more information on display and transactional currencies, multicurrency, and how this feature works.
+
+ 
+Customizing Your Merchandising Strategy
+
+Shoppers are more likely to purchase from stores that they feel are tailored to them through the use of local language and dialect, region-specific promotions, and other features. Align your merchandising strategy to meet your shoppers’ diverse needs on each storefront by customizing your store’s design, content web pages, and product categories.
+
+Localizing the theme and checkout
+Widgets
+Categories
+Web pages
+LOCALIZING THE THEME AND CHECKOUT
+
+The Cornerstone theme and checkout page are automatically translated to enable a localized experience, based on the selected default language on each storefront. However, you can customize your theme’s files and the checkout json file manually to fine tune your content for your customers.
+
+See the Dev Center for more information on localizing theme files and localizing the checkout, as additional customization will require developer work outside of the BigCommerce control panel.
+
+WIDGETS
+
+Create localized content blocks on your store by using widgets via Page Builder. Widgets can be assigned to a specific storefront, allowing you to create banners and slideshows that will only display on certain storefronts and their pages.
+
+ 
+
+Note: Legacy marketing banners and home page carousel are not part of Page Builder and only apply to the default storefront. Use widgets to add design elements such as text blocks, videos, slideshows, images, and hero banners to additional storefronts.
+
+CATEGORIES
+
+As part of our multi-storefront functionality, each storefront has its own category navigation, allowing you to create localized categories and subcategories to enhance the local shopping experience.
+
+While editing your categories, you can customize the category url, add a description with the WYSIWYG editor, upload a category image, and configure its SEO fields to target shoppers on that specific storefront.
+
+You can also select a different category page layout template than the default one to better fit the needs of specific locale or language. See Product Categories for more information on managing and assigning categories to products, and our Multi-Storefront documentation for channel-specific behavior.
+
+WEB PAGES
+
+You can create web pages that will show only on its associated storefront, using the storefront’s local language. Customize the page name, content, and its URL to create an inclusive experience for customers.
+
+Additionally SEO fields can be edited on each page, such as the page title, meta keywords, meta description, and search keywords to ensure that web pages are indexed by search engines in each storefront’s local language. See Adding Web Pages for more information on the various options and fields available while creating pages.
+
+ 
+Localizing Products
+
+Shoppers are more likely to build trust in a brand if products are localized in their own language and have cultural sensitive accuracy. With the ability to customize product details, product filtering, and pricing per storefront, we allow you to control how your products and overall brand are viewed by local shoppers.
+
+Products
+Product filtering
+Pricing
+PRODUCTS
+
+When editing products, you can select a storefront and localize various product fields so that they use the storefront’s language and preferred content, instead of the product’s original, global content.
+
+Available fields include:
+
+Name
+Description
+Categories
+Images
+Variant options names and values
+Modifier options names and values
+Featured on this storefront
+Search keywords
+Warranty information
+Availability message for preorders
+Page title
+Meta description
+Product URL
+Custom fields*
+
+*Overrides to custom field names and values will not update product filter facets. However, filter names can be updated on the storefront-level using contextual filters.
+
+For more information on customizing product details per storefront, see International Enhancements for Multi-Storefront.
+
+See Adding Products (v3) for more information on product fields, and our Guide to v3 Products for an overview on configuring your catalog.
+
+PRODUCT FILTERING
+
+You can localize the display names of product filters and filter settings on each storefront. Filtering values will be automatically translated, based on the selected default language on the specific storefront.
+
+See Product Filtering for more information on using this feature.
+
+PRICING
+
+You can set different prices per storefront by using price lists. By creating a channel-specific price list, you can set different prices in the same currency per different storefronts. For example, by having separate price lists for Spain and for France, merchants can set different prices in EUR for Spain and for France by assigning each price list to its related storefront.
+
+Price lists can also be assigned to a customer group or a combination of a storefront and customer group.
+
+See Using Price Lists for more information on how this feature works.
+
+ 
+Localizing Promotions and Store Communications
+
+Promotions can vary by cultural, seasonal, regulatory, legal and brand strategy differences. For example, coupons can be embarrassing in some Southeast Asian countries. This is why having the ability to tailor transactional email and abandoned cart templates, set availability for promotions on storefronts, and providing translated order statuses and return reasons and actions is vital for continuing to provide a localized shopping experience to customers after check out.
+
+Promotions
+Emails
+Order status
+Return reasons and actions
+PROMOTIONS
+
+You can create localized promotions for each storefront by assigning the promotion to only selected storefront channels and customizing the shopper-facing content within the promotion to match the storefront’s language.
+
+See Automatic and Coupon Promotions (Standard Editor) for more information on viewing and creating promotions.
+
+EMAILS
+
+You can localize transactional email templates and abandoned cart emails per storefront, allowing you to communicate with shoppers in the storefront’s local language. Additionally, you can control which emails are sent out to shoppers.
+
+By default, the content within each email template will be automatically translated, based on the selected default language of the storefront. However, you can manually edit templates for additional customization. See Customizing Emails and Using the Abandoned Cart Saver for more information.
+
+ORDER STATUS
+
+The default order statuses in your BigCommerce store will be automatically translated per storefront, based on the selected default language for the storefront.
+
+ 
+
+Watch out! Do not customize your store’s order status labels, as this breaks the translation automation.
+
+RETURN REASONS AND ACTIONS
+
+You can click to enable returns for your store. The default values for return reasons and actions will be automatically translated per storefront, based on the selected default language for the storefront. See Processing Returns for more information on using this feature.
+
+ 
+
+Watch out! Do not customize your store’s return reasons and actions, as this breaks the translation automation.
+
+ 
+Looking Ahead
+
+As these International Enhancements for Multi-Storefront are built on our previous localization features, such as the Locale setting for stores, we will be adding support for other areas of the control panel. and expanding our localization functionality. We look forward to helping you grow your business with quickly provisioned regional storefronts that offer customers a local shopping experience while allowing you to refine your brand’s vision.
+
+Do this in my store
+
+GO TO CHANNEL MANAGER IN MY STORE
+
+Additional Resources
+International Enhancements for Multi-Storefront
+Multi-Storefront
+Store Profile Settings
+SEO Fields
+Domain Settings for Headless Storefronts
+Using Multiple Currencies
+Sites (Developer Docs)
+Localizing Stores (Developer Docs)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Getting Started with Localization on Multi-Storefronts

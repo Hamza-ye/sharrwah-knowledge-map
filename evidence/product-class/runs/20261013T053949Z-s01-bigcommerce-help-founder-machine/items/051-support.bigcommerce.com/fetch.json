@@ -1,0 +1,18 @@
+{
+ "n": 51,
+ "url": "https://support.bigcommerce.com/s/article/Using-the-Abandoned-Cart-Saver",
+ "dir": "items/051-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:41:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Using-the-Abandoned-Cart-Saver?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190833,
+ "cited_in": [
+  "BC-C-015"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "25563190976ff783fbeb74b7c852986e964ac48b4ea20e40c7fbc8110ca2dacf",
+ "raw_ext": "html"
+}

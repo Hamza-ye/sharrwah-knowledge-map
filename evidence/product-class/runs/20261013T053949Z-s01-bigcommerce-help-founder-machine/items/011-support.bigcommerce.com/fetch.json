@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://support.bigcommerce.com/s/article/301-Redirects",
+ "dir": "items/011-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/MSF-301-Redirects?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190824,
+ "cited_in": [
+  "BC-C-041"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0b764413123395d734009196c9f867ceecfe3c65e8f34fd584893e5cecc42e0c",
+ "raw_ext": "html"
+}

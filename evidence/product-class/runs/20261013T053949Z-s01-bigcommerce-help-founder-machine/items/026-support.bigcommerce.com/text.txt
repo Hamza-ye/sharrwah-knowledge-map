@@ -1,0 +1,251 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Fastlane by PayPal
+What We'll Cover
+How it works
+Requirements
+Setup
+Fastlane Settings
+Testing the Fastlane checkout flow
+FAQ
+
+Fastlane by PayPal is a guest checkout solution for card payments that allows BigCommerce Payments, PayPal, and Braintree users to leverage PayPal's network to recognize millions of shoppers and provide them with a fast, frictionless checkout using their securely saved credentials in as little as one click.
+
+ 
+How It Works
+
+Fastlane by PayPal makes it easy for your shoppers to set up a Fastlane profile for frictionless purchases. When a shopper proceeds to the checkout page, selects your credit card payment method, and enters their payment information, they will be prompted to create a profile with Fastlane by PayPal and provide their mobile number.
+
+After completing the order, the shopper will receive an email confirming that their Fastlane profile has been created. When they enter their email address during subsequent checkouts, they will be prompted to enter a verification code sent to their mobile device.
+
+If a shopper has a PayPal account associated with their email address and has not yet created a Fastlane profile, they will be prompted to create one when entering their email address at the beginning of checkout, rather than after selecting PayPal as their payment method. After receiving a verification code to the mobile number associated with their PayPal account, the checkout page will be pre-filled with the shipping, billing, and payment information saved in their PayPal account.
+
+ 
+Requirements
+You must be using BigCommerce Payments, Braintree, or PayPal as your payment gateway.
+Your checkout type must be set to Optimized One-Page Checkout or Custom Checkout.
+Custom checkouts must be built using checkout-js version 1.508.0 or checkout-sdk-js version 1.630.3, or higher
+Your Braintree merchant account or PayPal business account must be configured in a supported country.
+Your store must be located in a supported country.
+You must offer one of the supported transactional currencies for a supported country.
+Fastlane by PayPal is only available for shoppers located in a supported country and using a supported currency.
+To configure Fastlane by PayPal in your control panel, you must have the Manage Payments and Manage Settings permissions enabled in your user account.
+You must enable credit card payments in your gateway.
+ 
+Setup
+
+Setup for Fastlane by PayPal differs depending on your payment gateway and your store’s country.
+
+BigCommerce Payments
+Braintree
+PayPal
+BigCommerce control panel
+BIGCOMMERCE PAYMENTS
+
+Stores using the BigCommerce Payments gateway must enable Fastlane in the BigCommerce control panel. See Connecting with BigCommerce Payments for settings, privacy, and customization options.
+
+BRAINTREE
+
+Stores using the Braintree payment gateway must first configure Fastlane in their Braintree production account. Once configured, Fastlane can then be enabled in the BigCommerce control panel.
+
+PAYPAL
+
+Non-US stores using the PayPal payment gateway must first configure Fastlane in their PayPal dashboard. Once configured, Fastlane can then be enabled in the BigCommerce control panel.
+
+US stores do not need to configure Fastlane in their PayPal dashboard. Additionally, Fastlane is enabled in the BigCommerce control panel by default after setting up the PayPal payment gateway for the first time. Note that stores with existing PayPal connections must enable Fastlane in the BigCommerce control panel.
+
+BIGCOMMERCE CONTROL PANEL
+
+When you are ready to set up Fastlane in the BigCommerce control panel, go to Settings › Payments and click your gateway’s settings tab. Scroll down to the Credit Card area and check the box next to Enable Fastlane by PayPal.
+
+After saving your changes, you can configure Fastlane’s settings to provide your desired checkout experience.. We also recommend testing your checkout flow after enabling Fastlane to ensure it works properly, especially if you are using a custom checkout.
+
+To disable Fastlane, uncheck Enable Fastlane by PayPal from your gateway settings tab.
+
+ 
+Fastlane Settings
+
+Fastlane by PayPal includes several settings to manage the appearance and behavior of Fastlane elements on your checkout page. See the list below to learn more:
+
+Delivery method
+Privacy settings
+Advanced style settings
+DELIVERY METHOD
+
+Default delivery method — Shoppers are taken directly to the Payment step at checkout with your Default shipping option preselected.
+Shoppers can click Edit next to the Shipping step to choose a different method.
+Select delivery method — Shoppers are directed to the Shipping step, allowing them to select a shipping method after signing into their Fastlane account.
+PRIVACY SETTINGS
+
+When a shopper signs up for a Fastlane profile, their email address is shared with PayPal. Depending on your region’s privacy requirements, such as GDPR or CCPA, you may need to communicate specific information to your shoppers.
+
+Use Fastlane by PayPal’s privacy setting — When enabled, the Fastlane logo is displayed in the email address field on the checkout page.
+Hovering your cursor over the logo displays PayPal’s privacy disclaimer with a link for more information.
+When unchecked, the checkout email address field instead displays an info icon with a link to your store’s privacy policy, if it is enabled in your Checkout settings.
+ 
+
+Not sure which privacy display option is right for your business? We highly recommend consulting your legal advisor to ensure you are displaying the necessary information at checkout. Note that our support team is not qualified to give advice on regional privacy requirements.
+
+ 
+ADVANCED STYLE SETTINGS
+
+Fastlane by PayPal allows you to customize the colors, font, and spacing of the pop-up elements that your shoppers interact with at checkout.
+
+Customize Fastlane’s Appearance — When unchecked, Fastlane uses the default styling.
+When enabled, additional styling settings are displayed.
+
+General Appearance
+
+Background Color — Enter a hex code to specify the color of the pop-up background.
+Error Color — Enter a hex code to specify the color of error messaging.
+
+Form fields
+
+Background Color — Enter a hex code to specify the color of input fields.
+Text Color Base — Enter a hex code to specify the color of input text.
+Border Color — Enter a hex code to specify the color of the input field borders.
+Focus Border Base — Enter a hex code to specify the color of the input field borders when highlighted.
+ 
+Testing the Fastlane Checkout Flow
+
+Fastlane by PayPal works seamlessly with Optimized One-Page Checkout, but custom checkout builds or apps that significantly modify your checkout page can potentially cause conflicts. After enabling Fastlane in your store, we recommend performing a test checkout without making a purchase to ensure that it is working correctly.
+
+On your storefront, add one or more products to the cart and proceed to checkout as a guest shopper. In the Customer step of checkout, you should see Fastlane branding under the email address field.
+
+Enter an email address associated with a Fastlane profile or create a new profile, and then enter the one-time passcode. You should see the profile’s address populate automatically at the shipping step, and the address selection form should also display Fastlane branding.
+
+At the Payment step, you should see the credit/debit card payment method selected with pre-filled card details.
+
+If you have enabled Fastlane correctly and the checkout page is missing any Fastlane elements, we recommend disabling any custom scripts or apps and testing again to confirm if they are causing compatibility issues.
+
+ 
+FAQ
+General
+Troubleshooting
+GENERAL
+
+What countries are supported by Fastlane by PayPal?
+
+Fastlane by PayPal supports the following store, Braintree merchant account or PayPal business account, and shopper countries. Note that shoppers must also use a supported transactional currency.
+
+Andorra	Finland	Lichtenstein	Romania
+Australia	France	Lithuania	San Marino
+Austria	Germany	Luxembourg	Singapore
+Canada	Greece	Malaysia	Slovakia
+China	Hong Kong	Malta	Slovenia
+Croatia	Hungary	Monaco	Spain
+Cyprus	Iceland	Netherlands	United Kingdom
+Czechia	Ireland	New Zealand	United States
+Denmark	Italy	Norway	
+Estonia	Latvia	Portugal	
+
+Can shoppers with a Fastlane profile change their shipping address after verifying with Fastlane at checkout?
+
+When the Default delivery method setting is selected, shoppers are still able to change their shipping address or shipping method.
+
+Before completing the order, they can click Edit next to their shipping address. This opens a pop-up where they can select another address they previously saved to their Fastlane profile, or click + Add an address to enter a new one.
+
+Can shoppers change the information saved in their Fastlane profile?
+
+Yes, they can update their shipping address, billing address, and credit card details from the checkout page after entering their verification code. They can also log in to their Fastlane profile to edit their information.
+
+Can customers with a storefront account use Fastlane by PayPal for accelerated checkouts?
+
+No, Fastlane is only available for guest shoppers. However, customers with storefront accounts can save their payment credentials for a faster checkout experience.
+
+Does Fastlane support 3D Secure?
+
+Yes. If you have 3D Secure enabled in your gateway, shoppers will be prompted to authenticate when using Fastlane at checkout.
+
+Can customers use Fastlane in conjunction with other PayPal or Braintree payment methods?
+
+No, Fastlane is currently only supported with credit card and PayPal Checkout payments.
+
+Can shoppers opt out of creating a Fastlane profile at checkout?
+
+Yes, shoppers can toggle off Fastlane by PayPal after entering their credit card information at checkout, and PayPal will not create a Fastlane profile for them. This remains toggled off for future purchases until they manually opt in.
+
+Can I preview style changes to Fastlane before applying them to my live storefront?
+
+No, the Fastlane styling settings will appear in your storefront immediately after saving your changes.
+
+TROUBLESHOOTING
+
+Why can’t my shoppers enter multiple shipping addresses at checkout?
+
+Fastlane does not support the use of multiple shipping addresses. When you enable Fastlane in your payment gateways settings, the action to enter multiple addresses is not visible at checkout.
+
+As an alternative, shoppers can place separate orders for each shipping destination.
+
+Why can't a shopper create a Fastlane profile from their PayPal account?
+
+Fastlane uses the mobile number associated with a shopper’s PayPal account to verify their information and create a Fastlane profile. If the number in their account is out of date or incorrect, they cannot receive the verification text message, and will not be able to create their Fastlane profile.
+
+Additional Resources
+Connecting with BigCommerce Payments
+Connecting with Braintree
+Connecting with PayPal
+Optimized One-Page Checkout
+Fastlane Setup and Integration (Braintree)
+FAQ (Fastlane by PayPal)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Fastlane by PayPal

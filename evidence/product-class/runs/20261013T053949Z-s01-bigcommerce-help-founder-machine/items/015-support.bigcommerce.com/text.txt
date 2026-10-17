@@ -1,0 +1,323 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+Overview
+Adding Products
+Adding Products
+Product Options
+Digital Products
+Inventory Import/Export
+PRODUCT ATTRIBUTES
+Custom Fields
+Brands
+Product Availability
+Inventory Tracking
+How It Works
+Requirements
+Setup
+Updating Stock Levels
+Inventory Settings
+Stock Level Settings
+Backorder Display
+Email Notifications Settings
+FAQ
+Multi-Location
+Reviews
+Bulk Pricing
+Viewing Products
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Inventory Tracking
+What We'll Cover
+How it works
+Requirements
+Enabling inventory tracking on a product
+Updating stock levels
+Inventory settings
+Stock level settings
+Backorder display
+Email notifications settings
+FAQ
+
+In BigCommerce, inventory tracking can refer to many things, including:
+
+maintaining an accurate count of how many of each of your products are available for purchase.
+sending low stock notifications to yourself or your suppliers.
+communicating stock levels and product availability to your shoppers.
+automating stock level adjustments.
+setting up out of stock product behavior.
+
+BigCommerce provides several tools and features to help you prevent overselling and communicate accurate expectations to your customers.
+
+ 
+
+Managing inventory across multiple locations? Our Buy Online, Pick up in Store (BOPIS) APIs and Multi-Location features in the control panel allow you to assign location-specific stock and pickup methods while providing your customers with convenient fulfillment options.
+
+ 
+How It Works
+
+When you set stock levels for a product, you define the maximum quantity of that product that your shoppers can purchase at a given time. This can represent all of the stock you have on hand, or you can specify a quantity of “safety stock” that cannot be purchased online. This is helpful if you have a physical location and you want to reserve stock for on-premises sale.
+
+Stock Keeping Units, or SKUs, are unique identifiers used for tracking inventory. They can be assigned to simple products and to products with variations like different sizes or colors.
+
+While simple products do not require SKUs to assign stock levels, SKUs are generated automatically when you assign variants to a product. Additionally, some sales channels like Amazon and Facebook require products to have inventory tracking enabled and be assigned a SKU before they can be listed.
+
+When a product or variant is out of stock, your inventory settings define whether it is still visible to shoppers and how you communicate its availability to shoppers. When you update inventory levels for an out-of-stock product, it is once again purchasable on your storefront.
+
+ 
+Requirements
+To view and edit products and product options, the Manage Products, Edit Products, and Product Options permissions must be enabled on your user account.
+To view and edit stock levels in the inventory editor, the Manage Products and View Inventory permission must be enabled.
+To view and manage inventory settings, the Manage Settings permission must be enabled.
+ 
+Enabling Inventory Tracking on a Product
+
+Go to Products › All products and edit a product by clicking its name, or add a new one. On the Add/Edit Product page, click Inventory in the side navigation.
+
+ 
+
+Using the legacy experience? If you are using the v2 Product Add/Edit experience, inventory tracking settings and stock levels are located in the Inventory tab.
+
+Check the box next to Track Inventory and select whether you will track stock levels On the product level or On the variant level (per variant SKU).
+
+Once you have made your selection, update your stock levels for the product or for each variant. 
+
+ 
+
+Look different? If you have opted in for Multi-Location BOPIS functionality on your store, the inventory tracking selector will look different, and you will need to use the inventory editor to fill in Stock, Low stock, and Safety stock values.
+
+ 
+Updating Stock Levels
+On the product level
+On the variant level
+From the product list
+By CSV import
+
+When you track inventory on a product, you can manage your stock values values from the control panel as well as by CSV import.
+
+The following inventory fields are available:
+
+Adjust by — If you have recently restocked, enter the quantity of new stock in this field to update the total quantity of available stock.
+Current Stock — The total quantity of stock before adjusting for safety stock.
+Low Stock — When the product’s Current Stock reaches this quantity, receive a low stock notification.
+BPN — The bin picking number; a product identifier commonly used to assign storage locations within a warehouse.
+Safety Stock — Set a quantity of your Current Stock that cannot be purchased on your storefront.
+Availability — This determines whether your product is available to sell. When disabled, the product cannot be purchased, even if it has available stock.
+ 
+
+Did you know? Additional inventory fields allow you to manage stock levels and sell products beyond the items you have on hand. For more information, see Backorders.
+
+ON THE PRODUCT LEVEL
+
+If you have elected to track inventory On the product level, enter values for the Current Stock and Low Stock fields.
+
+ON THE VARIANT LEVEL 
+
+To update stock On the variant level, click Variations in the side navigation. In the Variants table, enter values for the Current Stock and Low Stock fields.
+
+Use the Edit columns drop-down to display the Current Stock and Low Stock fields if you don't see these fields on your product.
+
+FROM THE PRODUCT LIST
+
+If your store is using the single channel product list, stock for products and variants can also be updated from the Products › All products screen. Click the plus icon (+) next to the product thumbnail to display the stock level fields.
+
+If your store is using the latest product list, hover over a product's stock field and click the pencil icon to edit stock levels and more in the inventory editor.
+
+You can update several products at once by checking the box next to each product, then clicking Edit inventory from the menu that appears at the top of the list.
+
+Click the gear icon in the top right to customize the visible columns, change column display order, and toggle between the side panel and fullscreen editor as the default single item view.
+
+Expand, contract, and close the side panel using the buttons at the top right.
+
+Click Save to save your current changes and stay on the page, or Save and exit to save and return to the product list.
+
+For more information on the inventory editor , see “Editing Prices and Inventory” on our Product List article.
+
+BY CSV IMPORT
+
+Stock for multiple products can be updated at the same time by importing a CSV file.
+
+Track Inventory, Current Stock Level, and Low Stock Level are all updatable fields when importing a product CSV file using the legacy or modern import tools.
+
+If your products or variants have SKUs assigned, you can also update Current Stock Level values using a streamlined import file that is available for both modern and legacy import experiences. See “Importing Product SKUs” on our Legacy Product Import/Export guide for more details.
+
+Stores using the modern Import/Export experience can also use a specialized inventory template for managing stock across multiple locations.
+
+ 
+Inventory Settings
+General settings
+When a product is out of stock
+When an option is out of stock
+Update stock levels
+Automatic stock adjustments
+
+To manage the inventory behavior in your store, go to Settings › Inventory. Under these sections you can determine:
+
+what the shopper sees when a product or variant is out of stock.
+when store stock levels should be adjusted during the ordering process.
+storefront stock level display.
+storefront out-of-stock messaging.
+merchant low and out-of-stock email notifications.
+ 
+
+Enable inventory settings on the global or storefront level. If your store has multiple storefronts, you can select whether you want these settings to apply to all storefronts (global), or only to a specific storefront. See Multi-Storefront for more information.
+
+GENERAL SETTINGS
+
+The General settings allow you to specify the storefront behavior when products or variants are out of stock. When these situations occur, this enables you to provide a satisfactory experience for shoppers by providing alternative products or variants, “in stock” alerts that shoppers can enroll in, or simply hiding the product page.
+
+To avoid overselling, you can specify if stock levels should be adjusted when an order is placed, or when the order is fulfilled. You can also specify if inventory should be automatically adjusted for refunds and cancelled orders.
+
+WHEN A PRODUCT IS OUT OF STOCK
+Hide the product — This setting will remove the product from product listing pages (e.g. category pages, brand pages, and the featured and new product panels on the homepage), and make the product details page inaccessible to visitors and search engines.
+Hide the product, but leave the product page accessible — This setting will remove the product from product listing pages but will leave the product details page accessible to those who have its specific URL, and search engines will continue to be able to crawl it.
+Redirect to category page — This setting will remove the product from product listing pages, and those who try to access the specific URL of the product details page will be redirected to the product's category.
+Don't do anything — This setting leaves the product visible on product listing pages and leaves the product details page accessible.
+WHEN AN OPTION IS OUT OF STOCK
+Hide the option — This setting will completely remove the option from the product details page.
+Mark the option as out of stock — This setting will leave the option on the product details page, but will mark it with a slash to visually indicate it is unavailable. If a shopper tries to select the option, they will receive a message: "The selected product combination is currently unavailable." If this setting is selected, you will have the additional option to hide out of stock options in product filtering results.
+Don't do anything — This setting will leave the option on the product details page, and does not visually indicate that it is out of stock. If a shopper tries to select the option, they will receive a message: "The selected product combination is currently unavailable."
+UPDATE STOCK LEVELS
+When an order is placed — This setting will adjust the product's stock level when an order is successfully placed. If you edit an order to add or remove products, the stock level is automatically updated.
+When order status is changed to Completed or Shipped — This setting will adjust the product's stock level when an order's status is changed to Completed or Shipped. If you edit an order to add or remove products, the stock level will not update until the order status is changed*.
+
+*If the order’s status is already set to Completed or Shipped, any new edits to product quantity will automatically update stock levels.
+
+AUTOMATIC STOCK ADJUSTMENTS
+
+Check the box next to Automatically adjust stock levels when the order status is updated to: “Refunded” or “Cancelled” if you want product stock levels to automatically adjust when an order is placed into the Refunded or Cancelled status.
+
+Note that processing refunds in the BigCommerce control panel updates an order’s status to Refunded or Partially Refunded. Orders updated to Partially Refunded do not trigger automatic stock level adjustments. 
+
+ 
+
+Issuing multiple refunds on an order? If a partial refund covers the remaining items or monetary value of an order, the order’s status will update from Partially Refunded to Refunded. When automatic stock adjustments are enabled, the update to the Refunded status will trigger automatic stock adjustments for all items on the order, including those previously refunded.
+
+ 
+Stock Level Settings
+Stock level display
+Out-of-stock message
+
+These settings determine whether stock levels will be displayed on the storefront, and allow you to customize and display an out-of-stock message on product listing pages.
+
+This setting determines if shoppers can see exactly how many units of a product or variant remain in stock on the product details page.
+
+STOCK LEVEL DISPLAY
+
+The stock level display setting determines if shoppers can see exactly how many units of a product or variant remain in stock on the product details page.
+
+Show stock levels — This setting shows stock levels on the product details page.
+Only show stock levels when stock is low — This setting shows stock levels on the product details page if the product's inventory is at or below its Low Stock Level.
+Don't show stock levels — This setting will hide stock levels on the product details page.
+
+To show stock levels for pre-order products with inventory tracking enabled, check the box next to Show pre-order inventory.
+
+OUT-OF-STOCK MESSAGE
+
+You can define a custom Out-of-stock message to display instead of the default generic "Sold Out" message.
+
+If Stock level display is set to Show stock levels, your custom message will appear on the product details page. Check the box for Show out of stock message on product listing pages to include the custom message on listing pages, such as category pages, brand pages, and the featured and new product panels on the homepage.
+
+Products with out-of-stock variants will only display the custom message when an out-of-stock variant is selected on the product details page.
+
+ 
+Backorder Display
+
+If you allow purchases beyond the available stock on-hand, the display settings for backorders allow you to optionally communicate backorder stock and fulfillment expectations to shoppers across your storefront, checkout, and customer order notification emails. For more information, including requirements, setup, and order management, see Backorders.
+
+ 
+Email Notifications Settings
+
+Enter your preferred email address if you would like to be notified whenever a product's inventory is low or has run out of stock.
+
+To be notified by email when a product's inventory is low or has run out, enter the address that you'd like to be emailed at in one or both of the following fields.
+
+Low stock level reached — When a product's inventory has reached its configured low stock level.
+Out of stock reached — When a product's inventory has reached 0.
+
+For stores using Multi-Location, email notifications will only be sent for the default location. We plan to add this functionality for non-default locations at a later date.
+
+ 
+FAQ
+
+How does inventory tracking occur across multiple channels?
+
+Each channel in Channel Manager will have its own system for adjusting inventory, and may not use the same rules as your BigCommerce store when determining stock levels. We recommend reviewing the channel's documentation for a full understanding of how it manages inventory, or utilizing one of the third-party apps and integration partners that can streamline and automate inventory management across all sales channels.
+
+Can I track inventory for digital products?
+
+Yes. If you are offering limited quantities of a digital product, you can enter a stock level for that product to track inventory levels.
+
+Why did I receive an email notification if my product's stock level is higher than the threshold?
+
+You will receive a low stock or out of stock email notification as soon as a product's inventory is low or has run out of stock. Stock levels may be updated after the notification has been sent. Common reasons for stock to be updated include order failures, refunds, cancellations, and inventory updates by other users or an integration.
+
+To prevent overselling, stock is temporarily removed from a product when a customer attempts to check out. If the order fails, such as by payment being declined, the stock will return to the product after a short delay.
+
+If your store’s inventory settings are set to automatically adjust stock levels for orders placed into the Refunded and Cancelled order statuses, issuing a refund or updating the order status can also adjust stock levels over the notification threshold.
+
+Additional Resources
+Adding Products (v3)
+Importing and Exporting Multi-Location Inventory
+Legacy Product Import/Export
+Modern Product Import/Export
+Product List
+Product Options (v3)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Inventory Tracking

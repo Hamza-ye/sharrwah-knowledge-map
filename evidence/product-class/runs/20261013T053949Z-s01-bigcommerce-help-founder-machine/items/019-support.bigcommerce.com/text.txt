@@ -1,0 +1,270 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+Mobile App
+Orders
+Troubleshooting Orders
+VIEWING ORDERS
+Order Statuses
+Order IDs
+Viewing Orders
+MANAGING ORDERS
+Backorders
+Draft Orders
+Manual Orders
+How It Works
+Requirements
+Creating
+Customer Info
+Items
+Fulfillment Details
+Finalizing
+FAQ
+Editing Orders
+Invoices
+Importing and Exporting Orders
+Capturing Funds
+Order Actions
+Packing Slips
+Refunds
+Returns
+Shipments
+Shipping Labels
+ORDER NOTIFICATIONS
+Order Notifications
+Customer Order Notifications
+Customers
+BigCommerce For WordPress
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Creating a Manual Order
+What We'll Cover
+How it works
+Requirements
+Creating a manual order
+Adding customer info
+Adding items
+Fulfillment details
+Finalizing the order
+FAQ
+
+If a customer has placed an order outside of your online storefront, such as over the phone or in-person, you can record the transaction by creating a manual order. This allows you to enter the order’s details for tracking and fulfillment purposes.
+
+ 
+
+Look different? This article covers the old experience for creating manual orders. See Manual Orders and Draft Orders for help with the new experience.
+
+ 
+How It Works
+
+When you create a manual order, you can build an order from scratch using your store’s existing customer, product, and shipping details. You can also enter custom information to take orders with products and shipping rates that aren’t available on your storefront.
+
+Manual orders can reference an offline payment such as cash or check, or you can manually enter their credit card details if you are using a non-hosted payment gateway. Non-credit card online payment methods, such as PayPal or Apple Pay, cannot be used in a manual order.
+
+Additionally, you can save an order as a draft, which will generate a cart URL. This unique URL can then be sent to customers, allowing them to go directly to your storefront cart page with a pre-populated cart that is ready for check out. See Creating a Draft Order for more details.
+
+ 
+Requirements
+Your store must have your default currency assigned to the default storefront channel (channel ID 1). See the FAQ for more information.
+To create a manual order, the Manage Orders and Add Orders permissions must be enabled on your user account.
+To select the Manual payment option during the Payment step, the Finalize Manual Orders using Manual Payments permission must be enabled.
+ 
+Creating a Manual Order
+
+Go to Orders › Add. You will be taken to the Add an Order screen. Creating a manual order consists of four phases:
+
+Customer info — Entering the billing details.
+Items — Adding items to the cart.
+Fulfillment — Entering the shipping details.
+Payment — Selecting a payment gateway and entering the payment details.
+ 
+Adding Customer Info
+
+When you create a manual order, you will start on the Customer info step. Under Customer information, select whether the order is for an Existing customer or a New customer.
+
+For a new customer, enter their email address, and any other additional account signup fields you have added, such as their birth date or a pet's name. Specify a password if you want to create a storefront account for them after submitting the order, or leave the password fields empty to check them out as a guest.
+
+For an existing customer, enter their name, email address, or company name in the Search field and select their customer account from the drop-down list.
+
+Select the currency that should be used for the transaction from the Currency drop-down list.
+
+If you entered information for a new customer or are entering a new address for an existing customer, you can enter their billing address in the fields under Billing information. Check the box next to Save to customer's address book if you want the customer to access the billing address at checkout.
+
+For existing customers, a list of available billing addresses will appear on the right side of Billing information. Click Use this address to populate the billing information form with the customer's saved address.
+
+ 
+
+Not seeing any addresses? The customer might not have saved their address on the checkout page. You will need to manually enter the address to continue creating the order.
+
+When you have finished entering the customer's details, click Next to begin adding items to the cart.
+
+ 
+Adding Items
+
+On the Add products step, use the Search field to search by product name or SKU. The results will display up to 10 products that match your search criteria.
+
+To add a product or service that is not in your product catalog, click Add a custom product under the search bar. For example, you could use this to add a $10 convenience fee for a special delivery.
+
+Give the custom product a name and a price, and then specify the quantity to add. You can also optionally add a SKU for the custom product. Click Add item to include it in the manual order.
+
+You can also click the Browse categories button to browse your catalog. Select a category in the Search by category section, then select products in the lower window. You can filter results by typing values into the Search by product name field. Click Select to add the highlighted product to the cart.
+
+If the product has options, a customization window will appear. Select the option values corresponding to the desired variant or modifiers in the Options tab. In the Basic details tab, you can specify the quantity or override the product’s default price with custom pricing. When you are finished, click Add item to add the product to the cart.
+
+The products you’ve added to the order appear in a table. You can adjust each product’s quantity or price from here, or open the Action menu (⋯) next to a product to select one of the following actions:
+
+Customize — Update a product’s selected options, quantity or price.
+For custom products, you can select this to update any of its fields.
+Copy — Copy the product in the order.
+Delete — Remove the product from the manual order.
+
+When you have finished creating the cart, click Next to enter the shipping information.
+
+ 
+Fulfillment Details
+
+The Fulfillment step is where you add the customer’s shipping address and select the shipping method used for their order. To specify the shipping destination, select one of the following options:
+
+Billing address specified — Choose this if the shipping address is the same as the billing address.
+New single address — Choose this if the order is being shipped to a different location.
+For existing customers, you can select one of their existing addresses,
+New multiple addresses — Choose this if the order is being shipped to more than one destination.
+ 
+
+Creating an order with digital products only? Since digital products do not require shipping, you do not need to select shipping addresses or methods. If the order contains a mix of physical and digital products, you can still enter shipping details.
+
+Click Fetch shipping quotes to generate a list of shipping methods based on your shipping zones. Select the desired shipping method, then click Next to enter the payment details and finalize the order.
+
+Use the Custom option to add a custom shipping method. Enter a name in the Shipping method field and specify its Cost value.
+
+If you don't want to apply any shipping charges to this order, select None as the shipping method.
+
+SHIPPING TO MULTIPLE ADDRESSES
+
+To ship items to more than one address, select New multiple address. Check the box next to one or more items, then click Select destination for products. You can also select Select destination from the Action menu (⋯) next to an item.
+
+In the pop-up window, enter the Quantity to ship and select a saved address or enter a new address. Scroll down to choose a shipping method, then click Allocate products when finished.
+
+The Shipping destination table displays all shipping addresses with their line items and shipping methods. Open the Action menu (⋯) to Change or Delete an existing destination.
+
+Repeat for any additional unallocated products, then click Next to enter the payment details and finalize the order.
+
+ 
+Finalizing the Order
+
+On the Payment step, review the billing, shipping, and cart details before selecting a payment method. Click Change to return to any specific step and update its details.
+
+In the Summary section, provide a manual discount, enter a coupon code or gift certificate and view the order totals. If your store is on a Performance plan, you can add multiple coupon codes to a single manual order. See the “Using Multiple Coupons on Orders” section of Automatic and Coupon Promotions (Standard Editor) to learn more.
+
+Enter any customer-facing comments or internal staff notes by scrolling down to the Comments and notes section. Comments are visible on invoices, while staff notes are only visible in the control panel and are not seen by customers.
+
+The Payment section is where you select the payment method for the order. The drop-down menu displays any online or offline payment options you have enabled.
+
+ 
+
+Missing the Manual payment option? You must have the Finalize Manual Orders using Manual Payments permission enabled on your user account to select this payment option.
+
+The Manual payment option can be used in record-keeping for over-the-phone or in-person orders that have already been paid. Note that these orders are counted toward your BigCommerce account billing. See BigCommerce Pricing to learn more.
+
+Use the Description field to provide details on the type of manual payment used for the order.
+
+When you are finished, click Save & process payment. If you did not select a payment method, clicking Save will instead save the order as a draft.
+
+ 
+
+Be careful! Payment methods cannot be changed once an order is created. If you need to change the payment method after processing a manual order, cancel or refund the order and then create a new order.
+
+ 
+FAQ
+
+Can I create a manual order for a gift certificate?
+
+No, gift certificates can only be purchased through the storefront.
+
+Can I use store credit on a manual order?
+
+No, store credit cannot be applied to manual orders. However, you can apply a discount to the order and then adjust the amount of store credit on the customer's account afterwards, under Customers › All customers.
+
+Can I use PayPal's credit card method to process manual orders?
+
+While non-credit card online payment methods, such as PayPal and Apple Pay, cannot be used in a manual order, you can use PayPal’s credit card payment method for manual orders. However, you will need to enable Require CVV for Manual Orders under the PayPal tab in the BigCommerce control panel to add this functionality. See Connecting with PayPal to learn more.
+
+Can I create manual orders that use pickup methods?
+
+No, manual orders in the control panel do not support pickup locations and methods configured via Buy Online, Pick up in Store APIs. However, you can create manual pickup orders with an API request.
+
+When I add a custom product to a manual order, is it saved to my catalog?
+
+No, the custom product is unique to that order and will not appear in your product list.
+
+Why am I getting a "Something went wrong” error when going to Orders › Add?
+
+To access the Add an order page, your store must have your default currency assigned to the default storefront channel (channel ID 1). This is enabled by default in stores with a single storefront, but you may need to reconfigure your currencies if you have multiple storefronts.
+
+Go to Settings › Currencies, assign the currency to your store’s default channel, then refresh your browser tab.
+
+Additional Resources
+Automatic and Coupon Promotions (Standard Editor)
+Coupon Promotions (Legacy Editor)
+Creating a Draft Order
+Manual Orders and Draft Orders
+Offline Payment Methods
+Shipping Setup
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Creating a Manual Order

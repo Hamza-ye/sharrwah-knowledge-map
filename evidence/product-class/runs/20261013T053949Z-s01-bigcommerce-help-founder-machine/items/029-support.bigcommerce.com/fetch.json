@@ -1,0 +1,18 @@
+{
+ "n": 29,
+ "url": "https://support.bigcommerce.com/s/article/Getting-Started-with-Localization-on-Multi-Storefronts",
+ "dir": "items/029-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Getting-Started-with-Localization-on-Multi-Storefronts?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190826,
+ "cited_in": [
+  "BC-C-048"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2d777d70f8c2346d116f998361fb7e1f20c0c61fe82324145e40d23215ae1ddd",
+ "raw_ext": "html"
+}

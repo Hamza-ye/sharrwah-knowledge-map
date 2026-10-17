@@ -1,0 +1,180 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Requirements
+Adding
+Default Currency
+FAQ
+Multicurrency
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Managing Currencies
+What We'll Cover
+Requirements
+Adding a currency
+Changing your default currency
+FAQ
+
+Your store’s currency settings influence how your product prices appear on the storefront, which payment methods are available at checkout, and how shipping, tax, and discounts are calculated on orders. Displaying product prices and the checkout in your customers’ local currencies provides a more familiar shopping experience and can increase conversion when expanding your store to a new region.
+
+In this article, you’ll learn how to add currencies to your store, update your store’s default currency, and manage how prices appear on your storefront when a specific currency is selected. For more information on how multicurrency works in BigCommerce, see Using Multiple Currencies.
+
+ 
+Requirements
+
+In order to manage the currency settings in your store, you must have the Manage Settings permission enabled on your user account. This is enabled by default for users with the Store Administrator or Store Owner role.
+
+To learn more about the requirements for offering multiple transactional currencies in your store, see Using Multiple Currencies.
+
+ 
+Adding a Currency
+Setup
+Currency display configurations
+Transactions
+Additional display settings
+SETUP
+
+When you first create your store, your default currency is assigned based on your location. You can enable additional currencies to display prices and allow transactions where your frequent customers live.
+
+If a currency code is already set up, it will not be available in the list of currency codes when setting up a new currency. Existing currencies can be edited at any time. Use the following steps to add a currency.
+
+ 
+
+Localized Store Experiences: Local currency tokens are available for display in all of our supported languages. For more information on the default language store setting, see Store Profile Settings.
+
+1. Go to Settings › Currencies, then click Add new currency.
+
+2. Select the currency code that corresponds to the currency you want to set up, then click Next.
+
+3. Configure your currency’s display and transactional settings.
+
+4. Save your changes.
+
+CURRENCY DISPLAY CONFIGURATIONS
+Display Name — used to identify his currency on the storefront. For example, Canadian Dollar.
+Default to [Currency Code] in these countries — visitors in these countries will have this currency selected by default. For example, Canada.
+
+TRANSACTIONS
+Transacting currency — determines if the currency will be transactional or display-only. To learn more about the difference between display and transactional currencies, see our article on Using Multiple Currencies
+Exchange rate — Currencies that are display-only have the option of having their exchange rate be static or dynamic. Transactional currencies use static conversion rates, while display-only currencies can use either static or dynamic conversion rates.
+Static — Set the exchange rate to automatically convert your prices and shipping quotes for this currency. The rate is measured against your configured default currency. For example, 1 USD equals 1.3475 CAD. Click Get current rate to retrieve the current exchange rate.
+Dynamic — BigCommerce will automatically check and update the exchange rate for this currency every 4 hours.
+
+ADDITIONAL DISPLAY SETTINGS
+
+The currency display settings affect how your store’s prices will appear when the currency is selected. The example price gives you a preview of any changes made to these settings.
+
+Symbol — the symbol or word for the currency. For example, $.
+Symbol placement — display the symbol to the left ($10) or the right (10$) of the price
+Decimal token — the symbol used to indicate a decimal point
+Thousand token — the symbol that denotes groups of thousands
+Decimal places — the number of decimal places that display for prices in this currency. You can display up to four decimal places.
+
+ 
+Changing Your Default Currency
+
+To change your store's default currency, you will first need to add the currency that you want to be the new default, if it’s not already present in your store. Once this is done, go to Settings › Currencies, and click Action › Set as default next to the desired currency. You can also do this while editing the currency.
+
+ 
+FAQ
+
+How do I set up a storefront-specific default currency with multi-storefront?
+
+By default, a multi-storefront store will use the default currency enabled in Settings › Currencies. To assign a storefront-specific default currency, go to Channel Manager and click a storefront name to access its settings page. In Currencies, click on the Action menu and select Set as Channel default currency.
+
+How do I assign currencies to my storefront channels?
+
+If you have multiple storefronts, you can select the currencies that appear for each storefront. Open the Channels menu next to a currency and select Manage channels. Select the desired storefronts for the currency and click Apply.
+
+Do this in my store
+
+GO TO CURRENCIES IN MY STORE
+
+Additional Resources
+Using Multiple Currencies
+Store Profile Settings
+Multi-Storefront
+List of currency symbols (Wikipedia)
+Currency decimal points (Wikipedia)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Managing Currencies

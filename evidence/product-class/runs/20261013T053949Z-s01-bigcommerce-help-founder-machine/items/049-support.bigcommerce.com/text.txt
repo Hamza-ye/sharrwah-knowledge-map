@@ -1,0 +1,284 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Requirements
+Display vs. Transactional
+How It Works
+Payment Methods
+Storefront Currency
+Price Lists
+FAQ
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Using Multiple Currencies
+What We'll Cover
+Requirements and limitations
+Display vs. transactional currency
+How multicurrency works in different parts of the store
+Setting up payment methods for additional transactional currencies
+Changing the currency on the storefront
+Using Price Lists to set fixed pricing by currency
+FAQ
+
+Your store can be configured to show prices in different currencies and allow shoppers to check out using their preferred currency. Allowing customers to shop and check out in their native currency provides a more consistent and positive shopping experience.
+
+Maintaining price expectations throughout the shopping process can encourage conversion, and being able to pay in their native currency helps customers to avoid currency conversion fees that may be charged by their bank or funding institution.
+
+ 
+Requirements and Limitations
+
+To use multiple transactional currencies, your store must meet the following requirements:
+
+Your store must be using a Stencil theme.
+Your store must be using the Optimized One-Page Checkout.
+Your store must have enabled a payment gateway that supports multicurrency.
+You must have the Manage Settings permission enabled on your user account to add and edit currencies.
+ 
+
+Note: Automatic tax calculation and document submission is compatible with multiple currencies. However, the application of automatic tax depends on the countries supported by the tax provider.
+
+Some BigCommerce features do not support multiple transactional currencies, including:
+
+Blueprint themes
+Gift wrapping
+Legacy checkout
+Storefront product filtering (currency cannot be used as a facet)
+Storefront search (price ranges are not currency-aware)
+Store credit*
+
+*Store credit currently only works with the store’s default currency. If a shopper selects a transactional currency other than the default currency, they will not be able to see or use any assigned store credit.
+
+ 
+Display vs. Transactional Currencies
+
+In BigCommerce, there are two types of currency that can be set up: display currency and transactional currency.
+
+DISPLAY CURRENCY
+
+When a currency is set to display-only, shoppers located in countries that use this currency will see prices on the storefront in that currency, but the actual order will be transacted in the store’s default currency.
+
+For display-only currencies, shoppers at checkout see the estimated price in the display currency, with a note indicating the actual currency and amount to be charged.
+
+TRANSACTIONAL CURRENCY
+
+When a currency is enabled as transactional, shoppers located in countries that use this currency will see prices on the storefront in that currency and they will be charged in that currency when they check out.
+
+By offering localized transactional currencies, you allow shoppers to transact in the currency of their preference, which gives them a more accurate representation of exactly how much they will be charged and helps them avoid additional conversion fees.
+
+ 
+
+Note: If the shopper’s card-issuing bank differs from the merchant's bank account country, additional cross-border fees may apply that can change the final settlement amount.
+
+You can choose whether a currency should be display-only or transactional when adding or editing a currency.
+
+ 
+How Multicurrency Works in Different Parts of the Store
+
+You can enable multiple currencies in your control panel from Settings › Currencies. To learn how to add new currencies and set your default currency, see Managing Currencies.
+
+In Bigcommerce, a currency can be transactional or used for display only. In order for a currency to be transactional, a payment gateway that supports the currency must be enabled.
+
+Once you’ve enabled multiple currencies, certain aspects of the store, such as orders, payment methods, and analytics, will be handled differently.
+
+Orders
+Shipping
+Refunds
+Supported Payment Methods
+Price Lists
+Modifiers
+Analytics
+ORDERS
+
+The View Orders page in the control panel includes the currency the order was transacted in.
+
+The order history page in a customer's storefront account displays past orders in the currency their order was transacted in. This may be different from the display currency selected by the customer when shopping and checking out.
+
+Customer order invoices include the currency of the transaction.
+
+SHIPPING
+
+For products with a product-level fixed shipping cost, that value is set in the store’s default currency. At checkout, BigCommerce will show the converted shipping cost in the display currency, using the configured exchange rate.
+
+Flat-rate shipping methods are also set in the store’s default currency and will show the converted amount in the selected display currency at checkout.
+
+Depending on the carrier, real-time shipping quotes are returned in the applicable transactional currency. If the carrier does not support returning quotes in the selected currency, BigCommerce will convert the returned quote, using the configured exchange rate.
+
+REFUNDS
+
+Refunds for orders made using a transactional currency are shown in that currency. When processing refunds, the customer is refunded the transactional currency amount.
+
+Refunds for orders made using a display-only currency are shown in the store’s default currency. When processing refunds, the customer is refunded the store’s default currency amount, as the customer would have been charged in the default currency during the initial transaction.
+
+For example, a store uses USD as the default currency but also has CAD set up as a display currency. A customer places an order for $26.95 using the CAD display currency. Since the CAD-to-USD exchange rate is set to 1.3475, the shopper is charged $20 USD at checkout (26.95 / 1.3475 = 20). Therefore, if the order happens to be refunded, the customer will be refunded $20 USD, as the store is not configured to transact in CAD.
+
+SUPPORTED PAYMENT METHODS
+
+Payment gateways that support multicurrency are listed in Available Payment Gateways. The Test Payment Gateway can be used to transact in multiple currencies as well, allowing you to test multi-currency functionality on your checkout. See Setting up Payment Methods for Additional Transactional Currencies for more information.
+
+Customers can select from your available currencies when purchasing a gift certificate, but it can only be redeemed in the selected currency. Store credit can only be used in your default currency.
+
+PRICE LISTS
+
+Price Lists (limited to Performance plans) can be created using any currency set up in the store. Both transactional and display currencies are available to use in Price Lists. See Using Price Lists to Set Fixed Pricing by Currency for more information.
+
+MODIFIERS
+
+For product rules or modifiers that change the price, these values are converted using the autoconversion rate.
+
+For example, if your store has USD as its default currency and offers GBP as a transactional currency, a €30 keychain with a modifier for engraving (add $5) will have its price calculated as:
+
+€30 + [$5 x (the autoconversion rate)]
+
+ANALYTICS
+
+Store analytics are displayed in the store’s default currency, using the configured exchange rate. Since there is a conversion, these are approximate values.
+
+ 
+Setting up Payment Methods for Additional Transactional Currencies
+
+The store’s default currency, assigned during store creation, is always a transactional currency. When you create an additional transactional currency, you'll need to set up which payment methods you want to use for that currency. Display currencies transact in your store's default currency. As such, they use the payment methods configured for the store’s default currency.
+
+See Available Payment Gateways for a table of payment gateways that support additional transactional currencies. All offline payment methods support additional transactional currencies.
+
+If there are no payment methods currently set up for a transactional currency, you'll see a Set up button in the Payment provider column, under Additional Currencies in your store’s Currencies settings.
+
+If your store has additional storefronts, you will be able to manage which transactional currencies are available on each storefront, allowing you to create a unique set of supported currencies per storefront. See Currencies in our Multi-Storefront article for more information.
+
+ 
+Changing the Currency on the Storefront
+
+If you have multiple currencies enabled, a currency converter will display on your store that will allow customers to choose among the currencies you have set up. If a visitor's IP address matches a supported country, they will see the appropriate currency automatically.
+
+ 
+Using Price Lists to Set Fixed Pricing by Currency
+
+You can use Price Lists to set fixed prices by currency. “Fixed pricing” means that these prices are entered manually and remain static — they are not calculated using a conversion rate percentage. For example, you can price the same product at $5 USD when transacting in US dollars and $6 CAN when transacting in Canadian dollars.
+
+Fixed pricing by currency is supported for transactional currencies only. A price record will need to be created for each currency, as individual price records are not copied from one currency to another.
+
+The Price Lists feature is limited to Performance plans and requires a Stencil theme. Note that visitors must belong to a customer group to see price lists, so you'll need to create a Customer Group for Guests to ensure that visitors who are not logged in will see the appropriate price list. See Using Price Lists to learn more about setting up price lists and other uses of this feature.
+
+To change currencies when editing a price list, use the Viewing currency drop-down.
+
+ 
+
+Note: The Price List Importer/Exporter app supports importing prices in any currency on your store.
+
+ 
+FAQ
+
+What happens if a shopper changes their currency after adding an item to the cart?
+
+If a shopper has added at least one item to the cart and selects a different currency, the cart will update to reflect the new currency, provided that the store is using a theme based on Cornerstone 4.8.0 or later.
+
+Updating your theme to the most recent version of Cornerstone will automatically enable this feature. If you still prefer to use an older theme version or a custom theme, contact your theme's developer for assistance in manually updating your theme to support this feature.
+
+How does price rounding work when converting between currencies?
+
+Rounding is done after the price has been converted from the default currency to the different currency.
+
+The precision to which prices are rounded, or the number of decimal places used in calculation, is determined by the decimal places setting in that currency’s display settings. For more information, see the section on Adding a Currency in Managing Currencies.
+
+How does tax document submission work with multiple currencies?
+
+There are three common scenarios for filing your taxes with multiple currencies:
+
+Automatically send your order/invoice data to your tax provider.
+BigCommerce will capture and store a snapshot of the transaction data associated with your customer's transaction. You can choose to automatically send this data to your tax provider's system per transaction by enabling automatic tax. This streamlines the tax filing process as all transactions are centralized within the Tax Provider's system at the time of tax filing.
+Manually file tax documentation in a currency that is equivalent to the currency transacted at checkout.
+For example, a shopper pays in USD, and the merchant files taxes to US tax entities in USD.
+If you choose to file taxes in the same currency as your customers used during checkout, you may experience a smoother tax filing process, as all transactions being filed are within a consistent, single currency.
+Work with your accountant and selected tax provider to ensure accurate tax document lodgement with the appropriate government tax authorities.
+Manually file tax documentation in a currency that is different from the transacted currency.
+For example, a shopper pays in USD, and the merchant files taxes to CA tax entities in CAD.
+If you choose to file taxes in a currency (CAD) that differs from the currency your customer paid with at checkout (USD), you will need to manually manage the currency conversion of these transactions.
+Work with your accountant and selected tax provider to ensure accurate tax document lodgement with the appropriate government tax authorities.
+Additional Resources
+Managing Currencies
+Available Payment Gateways
+Offline Payment Gateways
+Optimized One-Page Checkout
+Using Price Lists
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Using Multiple Currencies

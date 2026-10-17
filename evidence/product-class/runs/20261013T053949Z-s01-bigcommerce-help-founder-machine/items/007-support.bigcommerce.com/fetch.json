@@ -1,0 +1,20 @@
+{
+ "n": 7,
+ "url": "https://support.bigcommerce.com/s/article/Processing-Refunds",
+ "dir": "items/007-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:39:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Processing-Refunds?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190828,
+ "cited_in": [
+  "S01-BC-G07",
+  "S01-BC-G23",
+  "BC-C-021"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2b4e801da14c6963c251a6b281396a28d18c02769c5d4017f4ac9bf90b5757db",
+ "raw_ext": "html"
+}

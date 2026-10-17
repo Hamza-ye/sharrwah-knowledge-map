@@ -1,0 +1,472 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Connecting with PayPal
+What We'll Cover
+Requirements
+Setting up PayPal
+Settings
+PayPal Pay Later
+Fastlane by PayPal
+FAQ
+
+The PayPal payment gateway is a unified payments integration that allows you to accept payments in over 100 currencies from 325 million active customers across 200 markets.
+
+PayPal offers several features to optimize checkout conversion and grow your business:
+
+local payment methods and PayPal Pay Later to expand your global customer base and encourage larger purchases
+Fastlane by PayPal provides guest shoppers a fast, passwordless checkout solution
+stored credit cards and PayPal accounts
+real-time Account Updater to automatically refresh stored card information when it expires
+risk management tools to prevent fraud and minimize chargebacks
+Level 2 and 3 data collection for commercial transactions
+ 
+
+This article contains information for the standalone PayPal payment gateway. For information about the PayPal alternative payment method, see PayPal.
+
+ 
+Requirements
+Your store’s checkout type must be Optimized One-Page Checkout or Custom Checkout.
+To set up and manage PayPal, you must have the Manage Payments and Manage Settings permissions enabled on your user account.
+Your store must be in a supported country.
+All countries supported by PayPal are supported by BigCommerce, except India and Israel.
+You must have an existing or create a new PayPal business account.
+ 
+Setting up PayPal
+
+1. To connect PayPal with your store, go to Settings › Payments, scroll down and expand Online payment methods, then click Set up next to PayPal.
+
+2. On the PayPal settings tab, click Connect with PayPal to log into your existing PayPal business account or create a new one.
+
+ 
+
+Existing PayPal accounts and Starting Order Number: If you are connecting an existing PayPal account that has past transactions, you will need to change your store's Starting Order Number. For more information, see our FAQ.
+
+3. Click Grant Permission to allow BigCommerce to connect to your PayPal account and return to the BigCommerce control panel.
+
+4. Configure your desired settings, then click Save to complete setup.
+
+ 
+Settings
+
+Once you have connected PayPal to your store, you can configure the integration and customize your customer’s payment experience. 
+
+Account information
+PayPal wallet
+PayPal Pay Later messaging
+Credit/debit card
+Fastlane by PayPal
+3D Secure
+Stored credit cards
+Wallet button experience
+Post purchase
+PayPal sandbox
+ACCOUNT INFORMATION
+
+Account connected — Displays the PayPal business account connected to your store.
+Transaction type — Select Authorize and capture to automatically charge customers or Authorize only to manually capture funds.
+To learn more, see Manually Capturing Transactions (Authorize Only). 
+Enable Stored PayPal Accounts — When enabled, customers can save their PayPal account credentials to streamlate future purchases.
+Your store must be on a Growth plan or higher.
+Your store must use a supported country and currency combination.
+Note that enabling stored PayPal accounts will disable Pay Later.
+PAYPAL WALLET
+
+Enable PayPal Checkout — Check to add PayPal a button to product, cart, and checkout pages.
+PayPal will also appear as a payment option on the payment step of checkout.
+When enabled, shoppers will be able to pay using their PayPal account.
+PayPal buttons on product pages may need to be enabled in your theme, if supported.
+Enable Pay Later button — Check to add a Pay Later button to product, cart, and checkout pages.
+Control whether the button proceeds to or bypasses the checkout page through the Wallet button experience options.
+Enabled by default for new stores.
+Note that Pay Later is disabled if Enable Stored PayPal Accounts is checked.
+PayPal Business Accounts that have Billing Agreements enabled with PayPal are unable to use PayPal Pay Later method.
+PAYPAL PAY LATER MESSAGING
+
+You can customize the appearance and location of PayPal Pay Later storefront messaging. For more information, see PayPal Pay Later.
+
+CREDIT/DEBIT CARD
+
+Enable credit/debit card payments through PayPal — Check to enable credit/debit card payments at checkout.
+Your store must use a supported country and currency combination.
+If you have multiple payment gateways set up for a currency, we recommend only using one to accept credit/debit payments.
+Display name — Enter how the payment method is labeled at checkout, customer invoices, and order details.
+Require card security code (CVV) for Manual orders — Check to require CVV/CVV2/CVSD code during manual order creation in the BigCommerce control panel.
+Note that this setting must be enabled to process manual orders using credit cards through PayPal.
+FASTLANE BY PAYPAL
+
+Fastlane by PayPal provides merchants with a fast, passwordless checkout solution for guest shoppers. With Fastlane, shoppers create a payment profile after making a credit card or PayPal payment, then use that profile on future orders to complete checkout with a single click.
+
+To learn more about Fastlane, its requirements, and setup instructions, see Fastlane by PayPal.
+
+3D SECURE
+
+Use 3D Secure – Check to enable 3D Secure, a payment processing security feature that requires customers to enter a password that is tied to their credit card when making a purchase.
+Note that when enabled, 3d Secure will also apply to Fastlane by PayPal.
+Strong Customer Authentication When Required — Selecting this option only enforces Strong Customer Authentication (SCA) based on local regulations.
+Strong Customer Authentication Always — Selecting this option enforces SCA on all credit/debit card and Fastlane by PayPal transactions.
+STORED CREDIT CARDS
+
+Enable stored credit cards — Check to allow customers with a storefront account to securely save their card information for future purchases.
+Your store must be on a Growth plan or higher.
+Your store must use a supported country and currency combination.
+Enable real-time account updater — When stored credit cards are enabled, check to enable real-time account updater, an optional paid service that automatically updates stored card information, such as new numbers, new expiration dates, and closed accounts.
+Your store must be located in the United States.
+Real-time account updater must first be activated in your PayPal account Payment Preferences.
+Only stored Mastercard and Visa cards with United States billing addresses are supported.
+Real-time account updater cannot be used with stored PayPal accounts.
+Enable automated card delete — When real-time account updater is enabled, check to automatically delete closed customer cards from a customer’s list of saved payment methods.
+WALLET BUTTON EXPERIENCE
+ 
+
+Note: PayPal wallet is limited to 10 shipping options during checkout, including BOPIS options. If you offer more than 10 shipping and pickup options, select Redirect to checkout instead.
+
+Pay Now — Check to allow shoppers to bypass the checkout page when they click any PayPal button including PayPal Checkout, Pay Later, and Venmo. 
+The shopper is redirected to the PayPal modal window to select a shipping method based on the shipping address in their PayPal account and complete payment.
+After completing payment, shoppers are taken directly to the order confirmation page.
+Pay Now is enabled by default for new stores.
+Redirect to checkout — Check to redirect shoppers to the checkout page when they click any PayPal button including PayPal Checkout, Pay Later, and Venmo.
+POST PURCHASE
+ 
+
+Note: Post purchase features are only available for stores located in Australia, Canada, France, Germany, Italy, Spain, the United Kingdom, or the United States and are enabled by default.
+
+Sync order transaction statuses with PayPal — Shares order actions and statuses in PayPal with BigCommerce.
+Sync shipping and item info with PayPal — Shares shipping and product details with PayPal.
+This setting can help to shorten fund hold times, lowers your minimum account reserve, and enables Seller Protection against chargebacks and claims.
+Let PayPal provide package tracking to customers — When Sync shipping and item info with PayPal is enabled, check to provide customers who pay with PayPal and use the PayPal app with automatic live shipping updates on packages.
+Send order IDs to PayPal — Associates a PayPal transaction to a BigCommerce order, allowing customers to provide their order ID during post-purchase communications.
+Note that PayPal requires order IDs to be unique.
+If the provided order ID has been used for a prior transaction, PayPal will decline payments.
+PAYPAL SANDBOX
+
+The PayPal sandbox can be used to test transactions on your store without using a live PayPal account.
+
+To get started, click Connect PayPal Sandbox and log into your PayPal sandbox account. Note that this account is separate from your PayPal business account. If you don’t have one already, you’ll need to create one.
+
+Enable test mode on store — Check to use PayPal’s sandbox to test transactions on your store.
+To return to processing live transactions, uncheck the box and click Save.
+
+If you need to switch to a different PayPal sandbox account, click Change PayPal sandbox account.
+
+ 
+PayPal Pay Later
+
+PayPal Pay Later lets customers buy now and pay over time. This feature means that the shopper will owe the money to PayPal while you, the merchant, always get paid. PayPay Pay Later also includes messaging banners that inform your customers of the installment options available at checkout. This can encourage larger purchases and increase your average order value (AOV).
+
+Note that PayPal Pay Later is displayed as PayPal Pay in 4 for AU stores, PayPal Pay in 4X for FR stores, PayPal Pay in 3 for UK, IT, and ES stores, and PayPal Ratenzahlung for DE stores.
+
+Requirements
+Pay Later button
+Customizing Pay Later messaging
+REQUIREMENTS
+Store requirements
+Your store must be located in Australia, France, Germany, Italy, Spain, the United Kingdom, or the United States.
+Note that some activities involving PayPal Pay Later in the United Kingdom are regulated.
+Before activating PayPal Pay Later buttons on your website, speak to PayPal Business customer support or your PayPal Customer Success Manager for more information and to obtain the 4-digit code to unlock PayPal Pay Later for your store.
+Your store must use a supported country and currency combination:
+US (USD)
+UK (GBP)
+DE (EUR)
+ES (EUR)
+FR (EUR)
+IT (EUR)
+AU (AUD)
+Shopper requirements
+Shoppers must use an address in Australia, France, Germany, Italy, Spain, the United Kingdom, or the United States.
+The shopper’s order value must be within PayPal’s supported range for their selected currency.
+See “Pay Later Offers” in PayPal’s documentation for each currency’s order value range.
+PAY LATER BUTTON
+
+When Enable Pay Later button is checked, a PayPal Pay Later button will display on product, cart, and checkout pages allowing your shoppers to quickly pay using Pay Later. While the dedicated button offers a convenient option, shoppers can still select PayPal Pay Later at checkout.
+
+You can control whether the button proceeds to or bypasses the checkout page through the options under Wallet button experience.
+
+If you are using Cornerstone 6.13.0 or newer, you can adjust the color, shape, and text of the PayPal Pay Later button on storefront product pages, cart page, the top of the checkout page, and the Payment step of checkout. These settings can be found in Page Builder under Theme Styles › Payment buttons.
+
+If you are using a different theme, check your theme’s documentation to see if it supports payment button customization. 
+
+CUSTOMIZING PAY LATER MESSAGING
+
+The PayPal Pay Later Messaging settings section allows you to select which pages the messaging will appear on, as well as customize the PayPal logo type, text color, and text size to match your theme design. In the preview pane, view changes to your banners in real-time for desktops and mobile devices, and in dark mode.
+
+Note that the banner location in the preview pane provides a demonstration of how the banner may look on a specific page. The actual location will vary, depending on your theme.
+
+ 
+
+Not seeing the PayPal Pay Later messaging settings? If you do not meet all of the eligibility requirements, the messaging settings will not be displayed. Instead, you will see a list of requirements that still need to be met on your store before this feature will be available for use.
+
+ 
+Fastlane by PayPal
+
+Fastlane by PayPal provides merchants with a fast, passwordless checkout solution for guest shoppers. With Fastlane, shoppers create a payment profile after making a credit card or PayPal payment, then use that profile on future orders to complete checkout with a single click.
+
+See Fastlane by PayPal to learn more about Fastlane’s requirements and setup instructions.
+
+ 
+FAQ
+General
+Pricing and fees
+Account eligibility
+Transactions
+Refunds
+Additional features
+Troubleshooting and payment disputes
+GENERAL
+
+What is PayPal Commerce Platform?
+
+PayPal Commerce Platform, also known as PayPal Complete Payments (PPCP), is another name for PayPal's dedicated payment gateway, used to distinguish it from other PayPal solutions supported by BigCommerce. In most instances, it is simply referred to as PayPal.
+
+Why am I being asked to update the PayPal integration?
+
+After enabling certain features in your PayPal settings, an Update button may appear at the top of the tab, along with a list of features dependent on the update. This button refreshes the integration and enables the new features on your storefront.
+
+I connected the wrong PayPal account. How do I switch my configuration to the correct account? 
+
+To switch PayPal accounts, you must disconnect your current configuration and reconnect the PayPal integration. 
+
+To disconnect PayPal, go to Settings › Payments and select the appropriate currency from the drop-down list. Expand Online payment methods, then click the toggle switch next to PayPal.
+
+Once disconnected, go back through the PayPal setup flow and connect the desired account.
+
+PRICING AND FEES
+
+What fees are associated with PayPal?
+
+PayPal has no monthly fees, but charges a per-transaction fee based on your region. Additionally, the Real-time Account Updater is a paid feature in your PayPal business account. To learn more, go to PayPal Merchant Fees and locate the rates in your region.
+
+ACCOUNT ELIGIBILITY
+
+What currencies and countries does PayPal support?
+
+You can review a list of supported currencies and countries in PayPal’s documentation:
+
+Supported currencies
+Supported countries
+
+What items are restricted for merchants to sell?
+
+You can review a list of restricted items on PayPal’s Acceptable Use Policy.
+
+TRANSACTIONS
+
+After I create an account, what is the waiting period before I can process transactions?
+
+Once you link your PayPal account to BigCommerce, you can begin transacting right away.
+
+How long until the funds are transferred to my bank?
+
+Funds are deposited immediately into your PayPal account. You can request a withdrawal to your bank at any time, using an Instant Transfer or Standard Transfer (1-3 business days).
+
+Does PayPal send email notifications to me or my customers?
+
+Yes, both you and your customers will receive emails when transactions are received and for disputes or chargebacks.
+
+REFUNDS
+
+How soon after a transaction can I perform a refund?
+
+Once a payment is captured, there is no delay before you can issue a refund.
+
+Are there any fees for chargebacks/refunds?
+
+You can read about PayPal’s policies on chargebacks and refunds in the PayPal User Agreement.
+
+ADDITIONAL FEATURES
+
+Are there any fraud filtering options available?
+
+You can review PayPal’s Seller Protection Policy for Merchants to understand how they help protect your online sales, minimize claims and chargebacks and help prevent merchant fraud.
+
+Does PayPal support delayed or manual capture payments?
+
+Yes, PayPal supports manual capture when using the Authorize only Transaction type. 
+
+Does PayPal support multicurrency?
+
+Yes, multicurrency is supported. To learn more about adding and configuring currencies, see Managing Currencies.
+
+Can I connect a single PayPal account to multiple BigCommerce storefront channels?
+
+Yes, PayPal supports Multi-Storefront. You can either connect a single PayPal account to multiple channels or create multiple PayPal accounts and assign them to their respective storefront channels. There is no limit to the amount of PayPal configurations that can be created per currency.
+
+Does PayPal support stored cards and recurring payments?
+
+Yes, PayPal supports stored credit cards and PayPal accounts for streamlined checkout with subsequent orders. Note that this feature is only available to stores on a Growth plan or higher.
+
+PayPal is compatible with the Payments API, and can be used in conjunction with subscription/recurring billing apps or custom development to create subscription models with stored credit cards. Real-time Account Updater further enhances the recurring billing experience by ensuring that expired and recently changed stored card information is up-to-date.
+
+Can I display PayPal Pay Later messaging banners on my storefront without enabling the Pay Later button?
+
+Yes. The Pay Later button and Pay Later messaging are separate features that operate independently of each other. While the button provides a quick and easy way to access Pay Later, shoppers can still choose the option at checkout.
+
+How do I add payment buttons to my product pages?
+
+If you are using Cornerstone 6.6.1 or newer and have not customized your theme files, you can enable payment buttons for PayPal Checkout and Venmo on product pages. In Page Builder navigate to Theme Styles › Products, scroll down to Display settings and check the box next to Show quick payment buttons.
+
+If you are using a different theme, or you have customized your Cornerstone theme files, your theme will require additional customization in order to support product page payment buttons.
+
+For assistance with applying these customizations to your theme files, we recommend reaching out to a BigCommerce Partner by visiting our Partner Directory or submitting an Agency Design Request.
+
+Can I customize the appearance of my PayPal payment buttons?
+
+If you are using Cornerstone 6.13.0 or newer, you can configure your theme’s Payment buttons settings to customize your PayPal Checkout, PayPal Pay Later, and Venmo buttons on storefront product pages, cart page, the top of the checkout page, and the Payment step of checkout.
+
+How can I place payment buttons at the top of my checkout page?
+
+You can place payment buttons at the top of checkout by checking Show wallet buttons at the top of checkout located under Settings › Checkout. Note that buttons will appear above the Customer step for guest shoppers only.
+
+What is the customer experience with PayPal’s package tracking service?
+
+Customers who use the PayPal app will be able to track packages in the app and receive push notifications with live shipping updates. This will be provided automatically for customers who shop at your store and pay with PayPal. Customers can also add packages manually by entering a tracking number.
+
+Can I turn off package tracking and still sync order details, to retain benefits like shorter hold times and seller protection eligibility?
+
+Yes, you can. Package tracking is offered as a separate, optional benefit that can be turned toggled off/on without affecting any other setting.
+
+Which alternative payment methods (APMs) are available with PayPal?
+
+The following payment methods can be enabled in PayPal. The appropriate payment method will display to the shopper on checkout based on the shopper's IP address and transaction currency. Keep in mind the following considerations:
+
+Alternative payment method transactions are Authorize and capture only, regardless of the Transaction type option selected for PayPal.
+Delayed capture is not supported.
+Recurring or subscription payments are not supported..
+
+To learn more about the prerequisites and setup steps for an APM, click the corresponding link in the list below.
+
+Apple Pay
+Bancontact
+BLIK
+EPS
+Google Pay
+iDEAL
+	
+MyBank
+OXXO
+Przelewy24
+Ratepay
+SEPA Direct Debit
+Venmo
+
+Does PayPal support Level 2 and Level 3 data fields?
+
+Yes, Level 2 and Level 3 data fields are supported for corporate and purchase credit card transactions placed by commercial shoppers. See PayPal's documentation for more information on supported card networks and data field mapping. Note that Level 2 and Level 3 cost optimization benefits are not applicable to debit cards.
+
+Which Level 2 and Level 3 data fields are collected by PayPal?
+
+See PayPal’s documentation for a list of required fields in order for transactions to be processed as Level 2 or Level 3. However, the card network and cardholder issuing bank are the final authority on determining whether a transaction qualifies for Level 2 or Level 3 processing.
+
+TROUBLESHOOTING AND PAYMENT DISPUTES
+
+What does the “Something’s gone wrong” error message mean?
+
+In some instances, payment issues are indicated through a generic error message that displays at checkout. Additional details are not able to be displayed if the processor doesn’t provide them when the payment fails. For a list of common errors and troubleshooting steps, see PayPal’s Why was my payment declined?
+
+If a shopper receives this error when using a quick pay button at the top of the checkout or on product or cart pages, you may need to adjust the button behavior. When Pay Now is selected, PayPal wallet is limited to 10 shipping options during checkout, including BOPIS options. If you offer more than 10 shipping and pickup options, select Redirect to checkout instead.
+
+How are payment disputes handled?
+
+Log in to your PayPal account and visit the Resolution Center.
+
+How do I resolve "The requested action could not be performed, semantically incorrect, or failed business validation" errors?
+
+These errors in the store logs are generally due to issues with your account credentials. To resolve, you must disconnect your current configuration and reconnect the PayPal integration. 
+
+Go to Settings › Payments and select the appropriate currency from the drop-down list. Click Online Payment Methods, then click the toggle switch next to PayPal.
+
+Once disconnected, go back through the PayPal setup flow and connect the desired account.
+
+What does the “Duplicate Invoice ID detected. To avoid a potential duplicate transaction your account setting requires that Invoice Id be unique for each transaction” error message mean?
+
+If you are starting a new BigCommerce store and are connecting an existing PayPal account that has past transactions, you will need to change your store's Starting Order Number. By default, the store's starting order number is "100".
+
+If you have an existing PayPal Invoice ID of "100", transactions will fail with an error message like "Duplicate Invoice ID detected. To avoid a potential duplicate transaction your account setting requires Invoice ID to be unique for each transaction."
+
+To avoid this, you'll need to update your store’s Starting Order Number to a number higher than any of your existing PayPal Invoice IDs.
+
+Once resolved, the issue should not affect any customers thereafter. If one of your customers has received the above error (prior to you resolving it), they will need to clear their cart and start over before they can successfully check out.
+
+Why aren't my guest customers able to see the PayPal Checkout, PayPal Pay Later button, and Pay Later messaging on the cart page?
+
+If the PayPal Checkout, Pay Later button, and messaging is missing for guest customers only, it could be due to your store's customer settings in Settings › Checkout. Guest customers will not be able to access PayPal from the cart if either Customers must have or create an account to check out or Require existing accounts to sign in is enabled. See Optimized One-Page Checkout for more information.
+
+Why are the PayPal Pay Later messaging settings not appearing in my control panel?
+
+If your store does not meet the requirements or is using a theme that does not support PayPal Pay Later messaging banners, such as an older Stencil theme or a Blueprint theme, Pay Later messaging settings will not display.
+
+How do I contact PayPal’s Support team?
+
+Visit PayPal’s Contact Us page to get in touch with PayPal’s Support team.
+
+Do this in my store
+
+GO TO PAYMENTS IN MY STORE
+
+Additional Resources
+Fastlane by PayPal
+Introduction to Alternative Payment Methods
+Managing Currencies
+Manually Capturing Transactions (Authorize Only)
+Optimized One-Page Checkout
+Processing Refunds
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Connecting with PayPal

@@ -1,0 +1,18 @@
+{
+ "n": 24,
+ "url": "https://support.bigcommerce.com/s/article/Editing-Form-Fields",
+ "dir": "items/024-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Editing-Form-Fields?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190835,
+ "cited_in": [
+  "BC-C-032"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8706413f22d068fd8d2865bd4795a064f7269127a658851ba59cda4c4f55f54e",
+ "raw_ext": "html"
+}

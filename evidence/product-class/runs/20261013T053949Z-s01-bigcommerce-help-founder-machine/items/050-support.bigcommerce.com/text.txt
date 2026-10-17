@@ -1,0 +1,202 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+Themes Overview
+Design Basics
+Content Pages
+Blog
+Files And Images
+Customizing Themes
+Script Manager
+Script Types
+Adding and Editing Scripts
+Deleting Scripts
+FAQ
+Cornerstone Theme Manual
+Customizing Emails
+Stencil Themes
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Using Script Manager
+What We'll Cover
+Script types
+Adding and editing scripts
+Deleting scripts
+FAQ
+
+The BigCommerce Script Manager is a visual organization of scripts installed on your store. Any scripts applied by apps or created within the Script Manager are conveniently listed for easier management and access. This can help store owners see which scripts are installed on their site without having to search through several lines of code. This feature is only available to stores using Stencil themes.
+To access the Script Manager, go to Storefront › Script Manager.
+
+ 
+
+Using Multi-Storefront? Script Manager and other storefront-specific settings can be found within Channel Manager. See Single-Storefront vs. Multi-Storefront for more information.
+
+ 
+Script Types
+
+Any scripts listed in the Script Manager will have several labels in the overview, such as the script's name, the date of installation, the location of the script in the storefront, header or footer, and whether the script was installed by a third-party app or was manually entered into the Script Manager.
+
+3rd party — scripts created by apps are read-only. They can be viewed only.
+User-created — scripts manually entered into the Script Manager. These scripts can be edited and deleted.
+ 
+Adding and Editing Scripts
+ 
+
+This is an advanced feature that requires knowledge of scripting. If you are unfamiliar, please consider working with one of our partners.
+To add a script to your storefront, click Create a Script. Configure your script using the following information fields.
+
+Script name — Enter an internal name for reference. This field is required.
+Description — State the script’s purpose. This field is optional.
+Placement — Select whether the script should be in the header or footer of the page.
+Location* — Select which pages the scripts will run on. You will have the following options:
+Storefront pages: all pages, except for checkout or order confirmation pages
+Checkout: checkout page (only works with Optimized One-Page Checkout)
+Order Confirmation: order confirmation page
+All pages: includes storefront, checkout, order confirmation, and cart page
+Script category — Select a category that describes the purpose of the script. This categorization is used by the storefront cookie consent banner. When enabled, the cookie consent banner allows shoppers to opt-out of categories of cookies and scripts used by the store, which helps your store to comply with privacy laws like GDPR and CCPA. See Security and Privacy Settings to learn more about your store’s built-in customer privacy settings.
+Essential: These scripts are essential for the site and any requested services to work, but they do not perform any additional or secondary function. Uncategorized scripts default to this category. Shoppers cannot opt out of essential scripts.
+Analytics: These scripts provide statistical information on site usage such as web analytics, leading to website improvements over time.
+Functional: These scripts enable enhanced functionality, such as videos and live chat. If you do not allow these, then some or all of these functions may not work properly.
+Targeting/Advertising: These scripts are used to create profiles or personalize content to enhance your shopping experience.
+Script Type — Select whether you are linking to a script by a URL or manually entering in the script.
+Integrity Hash — Enter up to 5 subresource integrity (SRI) hashes for any scripts that affect your payment pages. Integrity hashes ensure the script matches with the expected hash integrity value before a browser can execute it. If the script has been altered, it will not match the integrity value, and the browser will fail to load the script with a network error.
+To comply with PCI DSS requirements, you must include at least 1 integrity hash for any scripts used to customize your payment pages, such as the checkout page, or the My Account page if your store accepts stored credit cards. Note that if the host or provider of the script you are using updates the script, the previously used hash will become invalid and you will need to add a new one.
+Load Method — Select the load method of the script.
+Async — The script will be fetched in parallel to parsing and evaluated as soon as it's available.
+Defer — The script will execute in the order it appears on the page.
+Default — This setting will load the script according to the default attribute settings found in browsers.
+
+*All payment page scripts added via Script Manager are automatically authorized when nonce-based authorization is enabled.
+Once you finish this form, click Save to apply the script to your storefront. After creating a script, you can edit it by clicking the action icon and selecting Edit from the menu.
+
+ 
+
+The Script Manager supports Handlebars. This allows you to access Stencil objects using scripts. To learn more about the Script API, see our Dev Center.
+
+ 
+Deleting Scripts
+
+You can remove both user-created and third-party scripts. It is not recommended that you remove a third-party script before uninstalling the app, as it can cause unexpected behavior.
+Click the Action icon and select Delete to remove the script from your store. Alternatively, select View and click Delete. Click Delete again on the confirmation popup.
+
+ 
+FAQ
+
+Can I place verification meta tags in the Script Manager?
+
+Site verification HTML meta tags should be placed into the Site Verification Tags section of the control panel. Go to Settings › Data solutions, then click Connect next to Site Verification Tags, under Web Analytics.
+
+How do I get an SRI hash?
+
+The host/provider of your script can generate SRI hashes for you.
+
+How do I update the SRI hash if the script I am using is updated or changes?
+
+If the contents of your script changes, it will no longer match with the expected integrity value and you will need to contact your script host/provider to generate a new SRI hash.
+
+What is a payment page?
+
+Payment pages are any pages where credit card information can be entered by a shopper, such as checkout, web pages, and the My Account page of a customer's storefront area. PCI DSS 4.0 requires that any scripts on payment pages have methods implemented to ensure its integrity and confirm that each script is authorized. To do so, we recommend adding an SRI hash to external scripts and enabling nonce-based authorization if you have scripts that affect these pages.
+
+Can I still paste scripts in Footer Scripts?
+
+Footer Scripts is the legacy script area for inserting scripts on Stencil themes. You can continue to use the Footer Scripts field, and any scripts already there will continue to work. However, the Script Manager allows for additional functionality and precision.
+
+We recommend moving any existing scripts in the legacy Footer Scripts to Script Manager so they can be categorized and loaded based on your shoppers' cookie consent settings. See Security and Privacy Settings to learn more about your store’s built-in customer privacy settings.
+
+Why do I receive the error "Enter a valid script" when I enter my script into the Script Manager?
+
+If you enter code without \<script> tags or containing \<noscript> tags, the script cannot be saved and this error will be displayed.
+Code containing tags will also cause this error.
+
+What is the maximum script size?
+
+Scripts must be 64KB (65,536 characters) or less.
+
+How can I see if a script has been changed in the Script Manager?
+
+When a script is created, updated or deleted in the Script Manager, a notification will appear in the control panel dashboard. The notification will indicate which script was changed and whether it was created, updated or deleted.
+
+You can also see records of created, updated and deleted scripts in the Store Logs.
+
+Why isn't the script I updated appearing on my storefront?
+
+Scripts have a cache time of 20 seconds, so any scripts you have created, updated, or deleted may not appear on the storefront immediately.
+
+Can I dismiss a Script Manager notification after viewing it?
+
+For security purposes, control panel notifications about Script Manager script changes cannot be dismissed. The notification will remain in the control panel dashboard for 14 days, after which it will be automatically removed.
+
+Can I use Script Manager with my Catalyst storefront?
+
+Yes, Catalyst supports loading scripts using the Scripts API and Script Manager. See Creating Scripts for Catalyst Storefronts in the Developer Center for more information.
+
+Do this in my store
+
+GO TO SCRIPT MANAGER IN MY STORE
+
+Additional Resources
+Using the App Marketplace
+Data Solutions
+Security and Privacy Settings
+General Data Protection Regulation (GDPR)
+Guide to CCPA
+Scripts API (Dev Center)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Using Script Manager

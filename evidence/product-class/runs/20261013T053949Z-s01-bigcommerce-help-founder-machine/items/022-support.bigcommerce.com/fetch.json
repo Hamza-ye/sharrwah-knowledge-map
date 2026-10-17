@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://support.bigcommerce.com/s/article/Customizing-Emails",
+ "dir": "items/022-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:20Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Customizing-Emails?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190828,
+ "cited_in": [
+  "BC-C-046"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "91807d4723ab97291da753e272946d30cae228fb22e7a79fb578497ac6a37e6c",
+ "raw_ext": "html"
+}

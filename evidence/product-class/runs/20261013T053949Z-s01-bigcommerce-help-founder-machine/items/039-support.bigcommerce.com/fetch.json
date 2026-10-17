@@ -1,0 +1,18 @@
+{
+ "n": 39,
+ "url": "https://support.bigcommerce.com/s/article/Price-Lists",
+ "dir": "items/039-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Price-Lists?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190826,
+ "cited_in": [
+  "BC-C-007"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4ee0780c155895282dc81f2afb0e87f39d77db971913527b1dfa870be0a23a37",
+ "raw_ext": "html"
+}

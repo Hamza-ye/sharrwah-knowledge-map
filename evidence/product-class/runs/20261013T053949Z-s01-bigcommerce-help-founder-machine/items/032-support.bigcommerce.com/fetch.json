@@ -1,0 +1,18 @@
+{
+ "n": 32,
+ "url": "https://support.bigcommerce.com/s/article/Intro-to-APMs",
+ "dir": "items/032-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:35Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Intro-to-APMs?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190829,
+ "cited_in": [
+  "BC-C-026"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1fb7df42b0d53f07cab3f5d19cf775633b83784223862150cbb1078a29ce31cb",
+ "raw_ext": "html"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 13,
+ "url": "https://support.bigcommerce.com/s/article/B2B-Edition-Settings",
+ "dir": "items/013-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/B2B-Edition-Settings?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190821,
+ "cited_in": [
+  "BC-C-031",
+  "BC-C-065"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "af1998bf47bdc58ed397b044c5908d4109ab59e7e8056f940c1dfcb06cd2342b",
+ "raw_ext": "html"
+}
