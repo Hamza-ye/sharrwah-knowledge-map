@@ -27,7 +27,7 @@ Don't read `notes*.md` files or any `note` column.
 Go down this list and take the first tag that applies *(the order is the coordinator's own)*. Compare by Mill's methods of agreement and difference.
 
 1. `no difference` *(the coordinator's own)*: no variant is `gap`, `not covered` or `absent`; at least two platforms answer; and every `variant` excerpt names the same who or what.
-2. `market, named rule`: a cited statement names a law or a regulator's rule as the reason for, or the condition of, a variant that differs from the others.
+2. `market, named rule`: a cited statement names a law or a regulator's rule as the reason for, or the condition of, a variant that differs from the others. *(The coordinator's own:)* it names a particular law, or a particular regulator with its rule. Generic wording such as "applicable law" or "a regulatory authority" doesn't count.
 3. `maturity`: a variant that differs from the others has a statement carrying a release marker, recorded in `marker`.
 4. `business model` *(this test is the coordinator's own)*: WooCommerce differs from the four hosted platforms, which agree among themselves, and a cited WooCommerce statement says what it does or doesn't provide.
 5. `market, pattern`: Salla and Zid agree with each other, and differ from Shopify and from BigCommerce.
@@ -36,6 +36,7 @@ Go down this list and take the first tag that applies *(the order is the coordin
 
 **Rules for comparing:**
 - **Same, agree, differ.** Two things are the same when they use the same words, or a platform's own translation of them in `terms.tsv`, or name the same party or identifier. Two platforms agree on a variation point when their sets of answers are the same; otherwise they differ.
+  - *(The coordinator's own:)* the parties to the subject are one party on every platform: the merchant, the buyer, and the platform itself. The platform itself includes its own name, its own payment product, and its own company. So Salla naming Salla and Zid naming Zid name the same party. Any other party, such as Stripe or PayPal, is the same only by name.
 - **Like with like.** Compare declarations (`stated`, `official page`, `shipped`) with declarations, and `observed` with `observed`, as Q1's 12 October rule does. A cause resting on a declaration set against an observation is `unknown`, with why.
 - **Scopes** *(the coordinator's own)*. Compare variants whose scopes overlap: the same country, or general. Record the scopes compared in `scopes_compared`.
 - **Absence** counts only from an `absent` variant, which rests on a complete list. A `gap` is not absence. Absence ids (`S01-XX-N…`) may be cited wherever statements are.

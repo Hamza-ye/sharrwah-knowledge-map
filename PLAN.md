@@ -380,3 +380,8 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - rows that state one thing at different detail share one label, with the rest in `note`.
 
   The record is `studies/yemen-cases/review-axes.md`. It names an `axes.tsv` in full only when the review lets it through.
+- **17 October 2026,** the pilot's phase C, after its first run. Its rule for "same" named the merchant as one party everywhere, but each platform's name as a different party. So two platforms that each name themselves "differed", and 14 of 23 variation points read as vendor choice, 12 of them founder decisions. Two changes follow, both marked in `briefs/C-analysis.md` as the coordinator's own:
+  - the parties to the subject are one party on every platform: the merchant, the buyer, and the platform itself (its name, its payment product, its company);
+  - "names a law" means a particular law, or a particular regulator with its rule. Generic legal wording doesn't count.
+
+  Phase C re-applies steps 3 to 5. Its first run stays in git history (commit after `0abc81b`).
