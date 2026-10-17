@@ -6,6 +6,9 @@
 #
 # The observed repositories' fetch archives (WARC) are searched too. Their text is extracted once per commit into a
 # cache outside the repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
+# So are this repository's capture runs, and the founder's saves for the platform
+# (evidence/product-class/blocked-evidence-founder/<platform>/: browser saves, and PDFs through pdftotext).
+# An address held more than once shows its fullest copy.
 #
 # Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N]
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
@@ -187,6 +190,17 @@ def documents(platform):
                         text += "\n" + html_text(open(raw, encoding="utf-8", errors="replace").read())
                     rel = os.path.relpath(tp, SKM)
                     yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it)", r["url"], "", text)
+    # The founder's saves for the platform: browser saves, and the documents saved beside them.
+    for path in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/blocked-evidence-founder", platform, "**", "*"),
+                              recursive=True)):
+        if path.endswith(".html"):
+            text = html_text(open(path, encoding="utf-8", errors="replace").read())
+        elif path.endswith(".pdf"):
+            text = subprocess.run(["pdftotext", "-q", path, "-"], capture_output=True, text=True, timeout=120).stdout
+        else:
+            continue
+        yield ("founder's saves", f"sharrwah-knowledge-map@{head}:{os.path.relpath(path, SKM)}", "",
+               os.path.basename(path), text)
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
@@ -201,16 +215,21 @@ def main():
     # A term in Latin letters matches whole words; an Arabic term matches inside words, which carry prefixes.
     pats = [re.compile(r"(?<![a-z0-9])" + re.escape(w) + r"(?![a-z0-9])") if re.search(r"[a-z]", w) else None
             for w in want]
-    shown, total, seen = {}, {}, set()
+    best, order = {}, []
     for corpus, loc, url, title, text in documents(platform):
-        key = (url or loc)
-        if key in seen:
-            continue
         body = fold(title + "\n" + url + "\n" + text)
         hits = [w for w, p in zip(want, pats) if (p.search(body) if p else w in body)]
         if not hits or (every and len(hits) < len(want)):
             continue
-        seen.add(key)
+        key = url or loc
+        if key not in best:
+            order.append(key)
+        elif len(text.strip()) <= len(best[key][4].strip()):
+            continue                         # an address held more than once shows its fullest copy, not its first
+        best[key] = (corpus, loc, url, title, text, body, hits)
+    shown, total = {}, {}
+    for key in order:
+        corpus, loc, url, title, text, body, hits = best[key]
         total[corpus] = total.get(corpus, 0) + 1
         if shown.get(corpus, 0) >= cap:
             continue
