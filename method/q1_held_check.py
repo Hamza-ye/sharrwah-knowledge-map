@@ -10,7 +10,7 @@
 #   H5 no source named  a "searched, not found" that names no source it read
 # A row already re-routed (its why_not_held starts with "Stage 0") is left as it is, so the script can run again.
 #
-# Usage: python3 -I method/q1_held_check.py STUDY_DIR [--dry-run]
+# Usage: python3 -I method/q1_held_check.py STUDY_DIR [--dry-run] [--date='17 October 2026']
 import csv, glob, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from held_index import CORPORA as HELD_CORPORA, Held, describe, names_a_source, urls_in
@@ -34,6 +34,7 @@ ALIASES = {  # route -> (held structure, why it is a candidate)
 UNREAD = re.compile(r"403|bot[- ]challenge|could not be read|couldn't be read|cannot be read|can't be read|"
                     r"not reachable|unreachable|refus|blocked", re.I)
 DATE = "12 October 2026"
+WHEN = next((a[7:] for a in sys.argv[2:] if a.startswith("--date=")), DATE)   # a later run, on evidence held since
 
 def clean(s):
     return " ".join(s.split())
@@ -48,7 +49,7 @@ def apply(plat, r):
         if key in route and os.path.isdir(os.path.join(ROOTS["observed-sa"], loc.split(":", 1)[1])):
             return "H4", {"gap_kind": "page not read", "who_can": "agent", "means": "read the held structure",
                           "route": f"{loc} (a candidate: {reason}); then {route}",
-                          "why_not_held": f"Stage 0, {DATE}: a held structure may show it. {before}"}, loc
+                          "why_not_held": f"Stage 0, {WHEN}: a held structure may show it. {before}"}, loc
     could_not_read = "save a page from a browser" in means or (kind == "page not read" and who == "founder")
     if could_not_read or UNREAD.search(why):
         held, idx_only, unheld = [], [], []
@@ -72,25 +73,25 @@ def apply(plat, r):
             parts += [f"{u} not held" for u in unheld]
             return "H1", {"gap_kind": "page not read", "who_can": "agent", "means": "read the held page",
                           "route": "; ".join(parts),
-                          "why_not_held": f"Stage 0, {DATE}: the page is held, and the run could not read it. {before}"}, \
+                          "why_not_held": f"Stage 0, {WHEN}: the page is held, and the run could not read it. {before}"}, \
                    "; ".join(describe(hs[0]) for _, hs in held)
         if idx_only:
             parts = [f"{u} held only in an index: {describe(h)}" for u, h in idx_only] + [f"{u} not held" for u in unheld]
             return "H1", {"gap_kind": "page not read", "who_can": "founder", "means": "commit the held archive",
                           "route": "; ".join(parts),
-                          "why_not_held": f"Stage 0, {DATE}: the page is held, but its archive is not in git. {before}"}, \
+                          "why_not_held": f"Stage 0, {WHEN}: the page is held, but its archive is not in git. {before}"}, \
                    "; ".join(describe(h) for _, h in idx_only)
     if plat == "woocommerce" and kind == "page not read" and who == "founder" and "Connected Account Agreement" in route:
         return "H3", {"who_can": "agent",
-                      "why_not_held": f"Stage 0, {DATE}: PLAN.md section 6, agreed at G0, allows reading an agreement "
+                      "why_not_held": f"Stage 0, {WHEN}: PLAN.md section 6, agreed at G0, allows reading an agreement "
                                       f"a platform's terms incorporate. {before}"}, ""
     if kind == "searched, not found" and plat in CORPORA and CORPORA[plat][0] not in route + " " + why:
         return "H2", {"gap_kind": "page not read", "who_can": "agent", "means": "search the held corpus",
                       "route": f"{CORPORA[plat][1]}; then {route}",
-                      "why_not_held": f"Stage 0, {DATE}: the held corpus was not searched. {before}"}, CORPORA[plat][1]
+                      "why_not_held": f"Stage 0, {WHEN}: the held corpus was not searched. {before}"}, CORPORA[plat][1]
     if kind == "searched, not found" and not names_a_source(route + " " + why):
         return "H5", {"gap_kind": "page not read", "who_can": "agent",
-                      "why_not_held": f"Stage 0, {DATE}: the search named no source it read. {before}"}, ""
+                      "why_not_held": f"Stage 0, {WHEN}: the search named no source it read. {before}"}, ""
     return None
 
 log = [["platform", "concern_id", "placement", "rule", "before_kind", "before_who", "before_means",
@@ -133,7 +134,7 @@ if os.path.exists(TO_SAVE):
         if not line.startswith("- [ ] "):
             continue
         us = urls_in(line)
-        hs = [h for h in (H.lookup(us[-1]) if us else []) if h["readable"]]
+        hs = [h for h in (H.lookup(us[0]) if us else []) if h["readable"]]   # the line's own address comes first
         if hs:
             lines[i] = "- [x] " + line[6:] + f" (held: {describe(hs[0])})"
             ticked += 1
