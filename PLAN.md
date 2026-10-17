@@ -385,3 +385,9 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - "names a law" means a particular law, or a particular regulator with its rule. Generic legal wording doesn't count.
 
   Phase C re-applies steps 3 to 5. Its first run stays in git history, at commit `34a32b9`.
+- **17 October 2026,** the pilot's phase D, at its first checkpoint. No Stage 1 id says where the merchant is, so a variant whose condition names only countries ("merchants in Saudi Arabia", "outside the Kingdom") could never be shown to fail, and `no placement` could never be given on 22 variation points. Every case shares Q2's frame: the merchant sells in the Yemeni market. A condition naming only countries or regions is checked against that frame, cited as `Q2`. This is marked in `briefs/D-yemen-marks.md` as the coordinator's own, and the checker accepts `Q2` as case evidence.
+- **17 October 2026,** Stage 1, after its independent review found errors in `today` on 12 of 45 sampled axes. Before Stage 4:
+  - a `within` relation between places, each link on a source, so that a strictly later state supersedes the states at places inside its own;
+  - a faithfulness pass over every axis.
+
+  Until then, for the pilot, the axes S-01 bears on are checked against their quotes before phase D marks on, and phase D reads each part of `today` with its date.

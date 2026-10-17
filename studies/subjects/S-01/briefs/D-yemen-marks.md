@@ -41,6 +41,7 @@ A case differs from today's case, `YC-00`, only on the axes its `name` lists. So
      - a statement under (e) marked `none stated`, whose `identifier` appears in the variant's statements;
      - the scope of the variant's own statements. An empty scope is no condition.
    - **the case's evidence:** the Stage 1 ids showing whether the case meets that condition. These are `YA` axis ids, whose state is the one `cases.tsv` gives the case; `YK` constants; or `YE` citations. Cite only the axes and constants listed for the variation point in `bears-on.tsv`, and their `YE` ids.
+     - *(The coordinator's own:)* every case shares one frame, Q2's: the merchant sells in the Yemeni market. A condition that names only countries or regions, such as "merchants in Saudi Arabia" or "outside the Kingdom", is checked against that frame, and cited as `Q2`.
 
    Without both, the mark is `unknown`. Say what would show it. If the case's state on an axis the mark needs is `disputed` or `unknown`, the mark is `unknown`.
 2. **No placement** is a claim about every answer variant of the variation point: every variant that isn't `gap`, `absent` or `not covered`.

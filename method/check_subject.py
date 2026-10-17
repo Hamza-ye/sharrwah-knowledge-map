@@ -472,6 +472,7 @@ if marks is not None or bears is not None:
     axes_y = {r["axis_id"]: r for r in (read(os.path.join(yc, "axes.tsv"), "axes.tsv", False) or [])}
     consts_y = {r["constant_id"]: r for r in (read(os.path.join(yc, "constants.tsv"), "constants.tsv", False) or [])}
     ye = set(axes_y) | set(consts_y) | {r["cite_id"] for r in (read(os.path.join(yc, "citations.tsv"), "citations.tsv", False) or [])}
+    ye.add("Q2")                             # the frame every case shares: the merchant sells in the Yemeni market
     # What each variation point bears on: a case that changes none of its axes carries YC-00's mark.
     bear = {}
     for b in (bears or []):
@@ -507,7 +508,7 @@ if marks is not None or bears is not None:
         for y in evidence:
             if y not in ye:
                 err("yemen-marks.tsv", key, f"case evidence {y} is not a Stage 1 id")
-            elif allowed is not None and y not in allowed:
+            elif allowed is not None and y not in allowed and y != "Q2":
                 err("yemen-marks.tsv", key, f"case evidence {y} is not among the axes and constants bears-on.tsv lists for {r['vp_id']}, or their citations")
         if r["mark"] != "unknown":
             if not ids(r["condition_stmt_ids"]) or not ids(r["case_evidence"]):
