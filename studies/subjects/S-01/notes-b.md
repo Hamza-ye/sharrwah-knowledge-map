@@ -78,6 +78,8 @@ Read, in addition to the first pass: each platform's `a2.tsv` and `absence-audit
 
 Before this pass there were 531 rows: 491 answers, 2 `absent`, 28 `gap` and 10 `not covered`.
 
+As the coordinator asked, BigCommerce statements were placed only up to S01-BC-065. A re-run of BigCommerce's phase A2 was rewriting its files during this pass. Its statements from S01-BC-066 onward, and any change to its `a2.tsv`, are left for a follow-up; the BigCommerce `a2.tsv` read here is the one dated 13 October.
+
 Format changes applied to every row:
 - `scope`: when the statements of a row give different scopes, each scope is now followed by its `stmt_ids`, and the scopes are `;`-separated (rule 5). A statement with no scope still adds nothing.
 
@@ -116,7 +118,8 @@ Format changes applied to every row:
   - S01-SA-135 is under S01-VP-18;
   - S01-SA-137 is under S01-VP-13 and S01-VP-14;
   - S01-SA-138 is under S01-VP-15;
-  - S01-SA-136 is under the payout end only.
+  - S01-SA-136 carries only the payout end.
+- **Gap not used:** A2 also gave S01-SA-G01 for this variation point. It is a bullet (b) gap, so it cannot cover this (a) variation point. It is used under S01-VP-11 to S01-VP-13.
 - **Rechecked against another platform:** S01-V-028 to S01-V-032, S01-V-035 and S01-V-043. S01-V-043 lost `term`: BigCommerce's "Settlement Currency" and Shopify's "Settlement" have different definitions in `terms.tsv`.
 - **Translations:** S01-V-039 now marks its translation as mine.
 
@@ -402,9 +405,66 @@ Format changes applied to every row:
   - S01-V-609: S01-SA-167;
   - S01-V-610: S01-SA-184.
 
-  S01-BC-056, which A2 gave for this variation point, carries only the payout end.
+  A2 also gave two other statements for this variation point:
+  - S01-BC-056 carries only the payout end;
+  - S01-BC-049 names a country, not a currency ("If the shopper’s card-issuing bank differs from the merchant's bank account country"), and is under S01-VP-19 only.
 - **Rechecked against another platform:**
   - S01-V-512 (X is quoted from it), S01-V-513 and S01-V-515.
   - S01-V-522 (X is quoted from it), S01-V-523 and S01-V-524. S01-V-523 and S01-V-524 lost the `identifiers` they shared only with S01-WC-048. S01-V-524 now shares `identifiers` with S01-SH-067: currencies by country.
 - **Translations:** the Arabic rows S01-V-516 to S01-V-519 and S01-V-526 to S01-V-528 now mark the translations that `answers` rests on as mine.
 
+## Statements that fit no variation point
+
+**Under no variation point.** None of these says who or what fills the X of a variation point of its bullet, and no basis holds.
+- S01-SA-057 and S01-SA-149, UAE and Kuwait: "تابع المبالغ من خلال شركة الشحن التي فعّلتها بعقد خارجي أو من خلال مندوب متجرك الخاص" (my translation: "follow the amounts through the shipping company you activated under an external contract or through your store's own courier"). They say where to track cash on delivery amounts, not who collects or holds them.
+- S01-SA-148 and S01-SA-157: tracking of electronic payments in the wallet is "قادم قريبًا" (my translation: "coming soon").
+- S01-SA-162: "Invoice frequency depends on your plan".
+- S01-WC-161: "the payments that we manage for you".
+- S01-ZD-151: a Gulf merchant moving the store to another country must first empty the wallet.
+- S01-BC-041: "the merchant’s PayPal dashboard".
+- S01-BC-047: "Each provider has its own application process".
+- S01-BC-058: "funds are conveniently managed within a dedicated balance dashboard".
+
+**A second bullet that fits no variation point of that bullet.** These add to the first pass's list under problem 5. Each is under a variation point of its other bullet.
+- (a) S01-SA-163: "They remain pending" names no holder. It is under S01-VP-16.
+- (a) S01-WC-152: names no holder. It is under S01-VP-15.
+- (a) S01-BC-050: "Stripe ... handles the FX conversion". It is under S01-VP-19 and S01-VP-23.
+
+**Left for the follow-up:** BigCommerce statements from S01-BC-066 onward. When the checker last ran, the re-run had added 59 statements (S01-BC-066 to S01-BC-124). These 44 carry bullets (a) to (d) and are under no variation point:
+
+S01-BC-066, S01-BC-068, S01-BC-069, S01-BC-070, S01-BC-071, S01-BC-072, S01-BC-073, S01-BC-074, S01-BC-075, S01-BC-076, S01-BC-077, S01-BC-078, S01-BC-079, S01-BC-081, S01-BC-082, S01-BC-083, S01-BC-084, S01-BC-087, S01-BC-088, S01-BC-089, S01-BC-090, S01-BC-092, S01-BC-094, S01-BC-096, S01-BC-097, S01-BC-098, S01-BC-099, S01-BC-100, S01-BC-103, S01-BC-104, S01-BC-105, S01-BC-106, S01-BC-107, S01-BC-108, S01-BC-109, S01-BC-115, S01-BC-116, S01-BC-117, S01-BC-118, S01-BC-119, S01-BC-121, S01-BC-122, S01-BC-123, S01-BC-124.
+
+## `not covered` rows after the second pass
+
+None remain. Of the ten first-pass `not covered` rows:
+- S01-V-101 became an answer;
+- the other nine became `gap`: S01-V-111, S01-V-124, S01-V-134, S01-V-151, S01-V-166, S01-V-170, S01-V-171, S01-V-172 and S01-V-394.
+
+## Result of the second pass
+
+There are 611 rows: 571 answers, 2 `absent`, 38 `gap` and 0 `not covered`. 80 rows are new: 75 answers and 5 `gap`.
+
+**14 rows changed form:**
+- S01-V-101: `not covered` to answer.
+- S01-V-111, S01-V-124, S01-V-134, S01-V-151, S01-V-166, S01-V-170, S01-V-171, S01-V-172 and S01-V-394: `not covered` to `gap`.
+- S01-V-027, S01-V-205, S01-V-272 and S01-V-531: `gap` to answer.
+
+The other 26 first-pass `gap` and `absent` rows keep their form, with A2's `gap_ids` where A2 gave new ones.
+
+**Rechecks.** Of the 491 first-pass answer rows:
+- 434 have new `basis_evidence`, compared with a `raised_by` statement of another platform where there is one;
+- 106 changed `basis`;
+- 204 now mark the translations that `answers` rests on as mine.
+
+The 57 unchanged rows were already compared with another platform, or are bullet (d) rows.
+
+## Problems with the method, second pass
+
+1. **Different words in one language.** Rule 0 now lets `answers` rest on my translation of a platform's words. It says nothing about English words that differ from X but name the same thing: "custody" or "remain in" for "holds", "hold" for "withhold", "flow through". These rows keep `answers`, and `basis_evidence` records that the words differ.
+2. **A term defined by one platform only.** For `term`, I took a term that one platform's `terms.tsv` lists without a definition as not having a different definition, for example WooCommerce's "Payment Facilitator". The brief does not say how to treat an empty definition.
+3. **`raised_by` grows during the pass.** Statements A2 added become comparison partners once placed, for example S01-WC-137 ("Payment Facilitator") and S01-BC-051 ("flow through"). Which comparisons are possible depends on what has been placed. The brief does not fix an order.
+4. **Partly contradicted gaps.** The audit finds S01-SA-G01, S01-SA-G03 and S01-SA-G05 partly contradicted. They were kept as `gap` next to the new answers, because A2 gave them to the variation point. Gaps the audit finds contradicted (S01-BC-G02, S01-BC-G15, S01-WC-G02) were not kept. The brief does not say what to do with a partly contradicted gap.
+5. **What A2 gave that cannot be a variant.** `a2.tsv` lists some statements under variation points whose bullet they do not carry: payout-end statements, bullet (e) statements, and statements of another bullet. These were not placed under those variation points, as the rules allow only statements of the variation point's bullet, or bullet (d).
+6. **Scope separator.** Rule 5 separates scopes with `;`, but some scopes contain `;` themselves, for example "السعودية; الكويت". Each scope is followed by its `stmt_ids` in parentheses, which keeps them apart.
+7. **Files changing during the pass.** BigCommerce's `statements.tsv`, `gaps.tsv` and `a2.tsv` were rewritten while this pass ran, and one read failed in the middle of a write. Gaps S01-BC-G01 to S01-BC-G23, which the rows cite, are unchanged.
+8. **Reading list.** The brief's reading list names `a2.tsv`, while its "Second pass" section also names `absence-audit.tsv`. Both were read, without the `note` column.

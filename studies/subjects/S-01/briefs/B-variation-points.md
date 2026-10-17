@@ -5,7 +5,7 @@ This is `PLAN.md` Stage 2, the pilot. You are one agent with one task.
 **Read only this brief and:**
 - the five platforms' phase A outputs in `studies/subjects/S-01/{shopify,salla,woocommerce,zid,bigcommerce}/`, which hold `statements.tsv`, `terms.tsv`, `absences.tsv`, `gaps.tsv` and `citations.tsv`;
 - `studies/subjects/S-01/kinds.tsv`, which gives each statement's and each absence's kind by rule;
-- in the second pass, each platform's `a2.tsv`.
+- in the second pass, each platform's `a2.tsv` and `absence-audit.tsv`.
 
 Don't read `notes.md` files or any `note` column.
 
