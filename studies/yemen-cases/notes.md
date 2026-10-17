@@ -444,4 +444,27 @@ Sources that disagree, each with its rows and their citations; the group each si
 
 ## Step 2c: unknowns and notes
 
-To follow after step 2b and the build.
+### Places step 2b added
+
+Step 2b added 46 places (59 rows in `pass2/places-1.tsv` to `places-4.tsv`, as ranges added some of the same): 24 products, named `<product> (<party>)'s service`; 16 parties' services; and 6 authorities' areas. The join listed each grouped with itself. With them, `places.tsv` has 392 places, and 158 are grouped with another (113 areas, 45 authorities), against 155 before step 2c.
+
+**Grouped:**
+- `Sana'a-Based Authority (SBA)'s area` → `the Sana'a authorities' area (سلطات صنعاء)` (variant): the same name reordered and translated, with Based and its abbreviation, as item 091 writes it (the authorities based in Sana'a (SBA), YE-D788). It chains to `Houthis' area`.
+- For the rows on the July 2024 agreement between the two sides, which step 2b kept at areas naming both, two of those names join `the Yemeni government's and the Houthi group's areas` (items 192 and 231, YQ-E587, YQ-E721):
+  - `government-held and rebel-held areas` (item 108, YQ-D539) (source, YE-E829, YE-E832, YE-E833): item 231, which carries the same report, names the parties Yemen's government and the Houthi rebels and their areas government-held and rebel-held areas;
+  - `the areas controlled by the government and by the Houthis (مناطق سيطرة الحكومة والحوثيين)` (item 077 of the operators run, YQ-C465) (variant): the same names shortened and reordered, translated.
+
+**Kept apart:**
+- **Brand and company.** `Kuraimi Islamic Bank's service` (YQ-C397, YQ-C398) stays apart from `Kuraimi Islamic Microfinance Bank's service`: no cited source uses both names. The page these rows come from names its bank بنك الكريمي الإسلامي in its footer and nowhere names it a microfinance bank, and lists 12 branches, against 243 and 210 for the microfinance bank (YQ-D608, YQ-E638). Its brand may be Ki Bank: item 131 calls the Ki Bank app Alkuraimi Islamic Bank's (YQ-D635), which range 2 placed at `Ki Bank (Kuraimi Islamic Microfinance Bank)'s service`. No source joins the two banks, so I couldn't settle which bank Ki Bank belongs to.
+- `National Wallet Company's service` (YQ-E006): its name is close to ONE Cash's operator, the National Electronic Wallet Company, and to MEPS Yemen's National Wallet, but no cited source names it with either.
+- **Products.** The ranges named each product's party as `places.tsv` names it, so no two product places are one. A product stays apart from its party's service, under step 2b's product rule. `e-invoicing (MEPS Yemen)'s service` and `E-billing (MEPS Yemen)'s service` are two products: MEPS Yemen's pages give them as خدمة الفوترة الإلكترونية (item 229) and نظام تحصيل الفواتير (item 228).
+- **Authorities.** `Ministry of Finance's area` (YQ-E197, YQ-E198): item 154 says its circular paid salaries across Houthi-controlled areas (YE-E201), but names no governing body it belongs to. `Ministry of Justice's area` (YQ-E631, YQ-E889) is seatless: item 278 says its circular carries out Council of Ministers decision No. 13 of 2025 (YE-E1317), but that council's place is seatless too, and a seatless body groups only on a source that gives its seat or side. `Governor of Aden's area`, and the Al-Mahra and Hadramawt local authorities' areas: no cited source ties them to a governing body, and item 164 says Al-Mahra's local authority defied the government's orders (YE-E512).
+- **The July 2024 agreement.** `IRG and HC areas` (item 249, YQ-E794) stays apart: no cited source uses it with the name above or with `the areas of the internationally recognized government and the Houthis' areas of influence` (areas of influence is not the same word as controlled). In YG-041 the agreement therefore stands at two places that name both sides, besides YQ-E445 at `place not stated`.
+
+**Sources opened in step 2c:**
+- `evidence/yemen/runs/20261010T072550Z-sanaa-operators-search/items/061-kibanks.com/text.txt` (line 140): to read the name of the bank whose service points page gives YQ-C397 and YQ-C398. The rows give it only from the footer.
+- `evidence/yemen/runs/20261010T050304Z-cited-sources/items/228-mepsyemen.com/raw.html` (lines 40-46) and `229-mepsyemen.com/text.txt` (lines 30-37): to read the product names above the texts of YQ-E715 and YQ-E718, which their quotes leave out.
+
+### Unknowns
+
+To follow after the build and its review.

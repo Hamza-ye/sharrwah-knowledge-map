@@ -219,7 +219,7 @@ Aden and the occupied governorates (عدن والمحافظات المحتلة)	
 from areas under 'occupation' control to areas of 'national control'	from areas under 'occupation' control to areas of 'national control'	area			A route between the two sides, as item 127 names them.
 areas of 'national control'	areas of 'national control'	area			The Sana'a side's name for its own areas (item 127). No cited source uses it with a name grouped as Houthi-controlled areas, so it stays apart.
 the Red Sea	the Red Sea	area			
-the Yemeni government's and the Houthi group's areas	the Yemeni government's and the Houthi group's areas	area			Both sides' areas, as items 192 and 231 name them.
+the Yemeni government's and the Houthi group's areas	the Yemeni government's and the Houthi group's areas	area			Both sides' areas, as items 192 and 231 name them, for the agreement of July 2024 between the two sides.
 In Aden or in other areas (سواء في عدن أو في المناطق الأخرى)	In Aden or in other areas (سواء في عدن أو في المناطق الأخرى)	area			
 northern governorates (المحافظات الشمالية)	northern governorates (المحافظات الشمالية)	area			
 the Northern region	the Northern region	area			
@@ -238,7 +238,7 @@ Sana'a, Al-Hasaba (صنعاء – الحصبة)	Sana'a, Al-Hasaba (صنعاء �
 Sana'a, Hadda (صنعاء - حدة)	Sana'a, Hadda (صنعاء - حدة)	area			A district of Sana'a.
 Sana'a and various Yemeni cities (صنعاء ومختلف المدن اليمنية)	Sana'a and various Yemeni cities (صنعاء ومختلف المدن اليمنية)	area			
 Sana'a and other Yemeni cities (صنعاء ومدن يمنية أخرى)	Sana'a and other Yemeni cities (صنعاء ومدن يمنية أخرى)	area			
-the areas controlled by the government and by the Houthis (مناطق سيطرة الحكومة والحوثيين)	the areas controlled by the government and by the Houthis (مناطق سيطرة الحكومة والحوثيين)	area			Both sides' areas, as item 077 of the operators run names them.
+the areas controlled by the government and by the Houthis (مناطق سيطرة الحكومة والحوثيين)	the Yemeni government's and the Houthi group's areas	area	variant		Both sides' areas, as item 077 of the operators run names them: the same names shortened (the government, the Houthis) and reordered; translated. Grouped in step 2c.
 most areas of Sana'a (أغلب مناطق صنعاء)	most areas of Sana'a (أغلب مناطق صنعاء)	area			
 Hadda Street, Raymas roundabout (ش. حدة، جولة ريماس)	Hadda Street, Raymas roundabout (ش. حدة، جولة ريماس)	area			A shop's address in Sana'a.
 Ibb city and all of Ibb's districts and countryside (مدينة إب. وجميع مديريات إب والريف)	Ibb city and all of Ibb's districts and countryside (مدينة إب. وجميع مديريات إب والريف)	area			
@@ -260,7 +260,7 @@ northern and southern governorates	northern and southern governorates	area
 European Union	European Union	area			The area of the EU's restrictive measures.
 south Yemen	south Yemen	area			
 the south	the south	area			
-government-held and rebel-held areas	government-held and rebel-held areas	area			Both sides' areas.
+government-held and rebel-held areas	the Yemeni government's and the Houthi group's areas	area	source	YE-E829, YE-E832, YE-E833	Both sides' areas, as item 108 names them. Item 231 (The New Arab), which carries the same report, names the parties Yemen's government and the Houthi rebels (YE-E829) and their areas government-held areas (YE-E832) and rebel-held areas (YE-E833). Grouped in step 2c for the rows on the July 2024 agreement.
 ports under Houthi control	ports under Houthi control	area			
 YemenNet's area (Houthi-run)	YemenNet's area (Houthi-run)	area			Where YemenNet provides internet; what a source says of YemenNet's own service takes YemenNet's service (step 2b).
 the rest of the country (outside Houthi-controlled northern areas)	the rest of the country (outside Houthi-controlled northern areas)	area			
@@ -345,7 +345,7 @@ Shein's service	Shein's service	service
 Alibaba's service	Alibaba's service	service			
 Amazon's service	Amazon's service	service			
 YemenPay's service	YemenPay's service	service			The gateway the community project thejulan/yemenpay describes.
-Sana'a-Based Authority (SBA)'s area	Sana'a-Based Authority (SBA)'s area	authority			Added by step 2b (YQ-D528): the SBA, the source's name for the authorities based in Sana'a, which prohibited the new notes.
+Sana'a-Based Authority (SBA)'s area	the Sana'a authorities' area (سلطات صنعاء)	authority	variant		Added by step 2b (YQ-D528). The same name as the Sana'a authorities (سلطات صنعاء), reordered and translated, with Based and its abbreviation: item 091 writes the authorities based in Sana'a (SBA) (YE-D788). Grouped in step 2c; chains through the Sana'a authorities to Houthis' area.
 Ministry of Justice's area	Ministry of Justice's area	authority			Added by step 2b (YQ-E631, YQ-E889): the Minister of Justice's decision No. 15/2025 and the ministry's circular; the sources name no seat.
 Arab Bank's service	Arab Bank's service	service			Added by step 2b (YQ-E502): Arab Bank closing its branches.
 Kuraimi Islamic Bank's service	Kuraimi Islamic Bank's service	service			Added by step 2b (YQ-C397, YQ-C398): the bank whose service points page (kibanks.com) names it Kuraimi Islamic Bank in its footer.
