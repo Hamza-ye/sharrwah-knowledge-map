@@ -173,3 +173,180 @@ Users' reviews dated before the capture date become earlier states of a service,
   - This is a disagreement between sources that the current placement hides.
 
 **Outside this review's rules, not checked:** `holds` values and dates, except where they produce an `unknown` part.
+
+## Second review
+
+- **Reviewed:** `studies/yemen-cases/axes.tsv` at commit `71ab056`, sha256 `0b7ef7ade6e5e96be8790a219a9d2581cd4681921dae243f9348cdae748f03aa`: the 71 axes in `changed-1.txt`, whose rows come from the groups of my first review (YG-001 to YG-223) and their splits.
+- **Read:**
+  - `brief.md` (Pass 2, with rule 2's new sub-bullets and step 2b's new label line);
+  - `axes.tsv`, `groups.tsv`, `states.tsv`, `conditions.tsv`, `places.tsv` and `constants.tsv`;
+  - `notes.md`, the review round;
+  - quotes in `citations.tsv`.
+- **Evidence opened** (read only):
+  - `evidence/yemen/runs/20261010T072550Z-sanaa-operators-search/items/001-ymp.ye/raw.json`: the Cash wallet's about text, in both languages (YA-61);
+  - `.../20261010T072550Z-sanaa-operators-search/items/015-play.google.com/text.txt`, lines 25 to 45: Cash's app listing (YA-225);
+  - `evidence/yemen/runs/20261010T050304Z-cited-sources/items/154-sanaacenter.org/text.txt`: lines 1190 to 1250 (YA-70), and a search for the names it gives the new-rial area (YA-214).
+- **Files and code:** no file under `studies/` or `evidence/` was changed. Python ran with `-I`, and nothing ran from inside `evidence/`.
+- **Rows:** all 2,532 rows sit in exactly one group. The moves between groups match `notes.md`.
+- **Returned:** 22 rows on 21 axes, in `returns-1b.tsv`:
+
+  | Rule | Rows | Axes |
+  | --- | --- | --- |
+  | 1 | 3 | YA-17, YA-52, YA-210 |
+  | 2 | 6 | YA-51, YA-78, YA-80, YA-220, YA-225, YA-226 |
+  | 4 | 2 | YA-15, YA-106 |
+  | 5 | 1 | YA-214 |
+  | label | 10 | YA-33, YA-43, YA-57, YA-65, YA-70, YA-102, YA-213, YA-214, YA-223, YA-229 |
+
+### Did the fixes resolve the first review's returns?
+
+**Resolved, and no rule broken now (33 axes):**
+- YA-01, YA-05, YA-08, YA-09, YA-10, YA-14;
+- YA-25, YA-27, YA-32, YA-34, YA-36, YA-38;
+- YA-41, YA-42, YA-45, YA-49, YA-54, YA-55;
+- YA-58, YA-62, YA-68, YA-69, YA-75, YA-76;
+- YA-81, YA-82, YA-83, YA-85, YA-89, YA-94;
+- YA-95, YA-96, YA-98.
+
+YA-01's own fix is right. The rows it sent to YG-562 include my error (see YA-210).
+
+**Not followed, and the reason holds; no other breach (5 axes):** YA-06, YA-20, YA-24, YA-56 and YA-61 (see "Returns step 2a didn't follow").
+
+**New axes from the splits, with no breach (12 axes):**
+- YA-211, YA-212, YA-215, YA-216, YA-217, YA-218;
+- YA-219, YA-221, YA-222, YA-224, YA-227, YA-228.
+
+**Returned again (21 axes):**
+
+| Axis | First return | Fixed? | What still breaks |
+| --- | --- | --- | --- |
+| YA-15 | old YA-16: 2, 1, label | yes; the label return not followed (reason holds) | 4: two rows of the Houthis' ban sit at Houthi-controlled areas |
+| YA-17 | old YA-18: 2 | yes; the dispute is gone | 1: circulation and practice beside the rules |
+| YA-33 | old YA-40: 2 | yes; IBY is at its service | label: the March 2025 decision with and without its count |
+| YA-43 | old YA-51: label | yes, for the rows returned | label: YQ-D437 |
+| YA-51 | old YA-60: 2 | yes; the D027 dispute is gone | 2: YQ-D028 beside YQ-D029, from one source |
+| YA-52 | old YA-61: 2, 1 | yes | 1: YQ-C390 is the national switch |
+| YA-57 | old YA-67: 4 | not followed (reason holds) | label: 'Up 300%' against 'Increased' |
+| YA-65 | old YA-77: 2 | yes | label: the same count under two labels |
+| YA-70 | old YA-84: 1 | yes | label: YQ-E207 |
+| YA-78 | old YA-93: 2 | in part: counts and development split | 2: partial lists still hold together |
+| YA-80 | old YA-96: 2 | yes, for Floosak and ONE Cash | 2: lists at place not stated |
+| YA-102 | old YA-121: 2 | yes, for Hasseb | label: SabaCash against Hasseb |
+| YA-106 | old YA-125: 2 | yes | 4: YQ-E115 and YQ-E116 |
+| YA-210 | (from old YA-01) | | 1: three point rates among the period averages |
+| YA-213 | (from old YA-10) | | label: one origin under two labels |
+| YA-214 | (from old YA-16) | | 5: 'the south'; label: YQ-E180 |
+| YA-220 | (from old YA-73) | | 2: survey fees beside providers' and channels' costs |
+| YA-223 | (from old YA-84 and returns-2) | | label: 'low' |
+| YA-225 | (from old YA-90) | | 2: Cash's hours, a dispute no source makes |
+| YA-226 | (from old YA-93) | | 2: wallet counts, a dispute no source makes |
+| YA-229 | (from old YA-112) | | label: 'none' against 'none, up to 3,000,000 rials' |
+
+Where the breaches come from:
+- **The fix round:**
+  - YA-210: step 2a added YQ-E447 and YQ-E392 to my YQ-D187.
+  - YA-213, YA-223 and YA-229: the new axes' labels.
+  - YA-214: a place left ungrouped.
+  - YA-225 and YA-226: the disputes left after the splits.
+- **My first review's fixes:** YA-78 and YA-220. I proposed "which wallets or providers are named" and "the cost by channel or provider" as conditions, and their lists hold together.
+- **Missed in my first review:**
+  - YA-15, YA-17, YA-51, YA-52 and YA-80;
+  - YA-65: YQ-D356 and YQ-D211 already gave the same count under two labels.
+- **Under step 2b's new label line** (a measure with and without its figure or list): YA-33, YA-43, YA-57, YA-70, YA-102, and YQ-E180 in YA-214. In YA-57, YA-70, YA-102, YA-213 and YA-229, one label makes the group a constant, because the labels are its only difference.
+
+### Corrections to my first review
+
+- **YQ-D187.** My return on YA-01 listed it among "averages over a stated period". Its quote, "متوسط أسعار صرف الدولار في عدن" (YE-D203), is the average of dealers' quotes on one page, with no period. Step 2a followed me. It is returned under YA-210, together with YQ-E447 and YQ-E392.
+- **Cash's hours.** My first notes listed them as a dispute the sources make (old YA-90). Cash's own English page gives cash-out "through Automatic Teller Machine (ATM) during off work times" (YE-E774). So "official working hours" at agents (YE-C110) and cash "على مدار الساعة" (around the clock, YE-C155) hold together. Returned under YA-225.
+- **YQ-E115 and YQ-E116.** My first notes left them unreturned (old YA-125). Step 2a has since kept item 154's account of the same two models at the two authorities' areas (YQ-E152, YQ-E153). Step 2b's place rule takes a rule an authority sets to that authority's area, whatever area its text names. Returned under YA-106. At the IRG's area, the move makes "banks only" (September 2025) today, a disagreement that the current places hide.
+
+### Constants from my returned groups
+
+I checked only that each split kept every condition whole. The returned groups now give 102 groups: 18 are axes, all in the list above, and 84 are constants.
+- 19 returned groups became constants: YG-020, YG-027, YG-030, YG-042, YG-044, YG-047, YG-049, YG-072, YG-080, YG-111, YG-123, YG-127, YG-134, YG-140, YG-149, YG-162, YG-164, YG-188 and YG-202.
+- 65 are new groups from the splits.
+
+Each constant keeps its rows together, and they answer one question under one label. Apart from the three cases below, no sibling holds a row that is an earlier or later state of the same question.
+
+In these three cases a condition reaches into a sibling, because a row goes in one group only. I did not return them:
+- **YK-354 (YG-567), the customs rate for luxury and non-essential goods.**
+  - Its 2025 state, the general 750 and then 700, stays in YG-022. The May 2026 decision raised the rate "from YR750" (YE-E390).
+  - So the constant shows no change, though YQ-E377's own state records the rise.
+  - YG-022's name, "goods other than luxury and non-essential goods", fits its rows only from May 2026. In 2025 the rate covered all goods: the planned increase "will not include basic food items" (YE-E360).
+- **Swaid & Sons' designation** is in YK-376 (YG-591, one row with Al-Omgy) and in YK-377 (YG-592).
+- **The bar on exchange companies** is in YK-423 (YG-652, YQ-D117). YQ-F079 also states it, from YG-222.
+
+The unnamed restorations (YK-371, YK-372) can't be tied to any ban, since their sources are headlines (YE-C376, YE-C378).
+
+### Returns step 2a didn't follow
+
+**Place not stated: the reason holds under the brief.**
+- **The returns:**
+  - YG-007: YQ-E749;
+  - YG-031: YQ-D066, D283 and B159;
+  - YG-040: YQ-E606;
+  - YG-114: YQ-D478.
+- **Why it holds:**
+  - Step 2b's last branch gives a row that is no rule, no party's service and not across Yemen its pass 1 place, as `places.tsv` groups it.
+  - Rule 5 groups no authority's area or named area into `place not stated`.
+- **What remains:** market facts sit at an authority's area, against rule 4's kinds. This is the brief's problem, as `notes.md` records.
+
+**Routes and the corridor: the reason holds.**
+- **The returns:** YG-113, YG-120 and YG-123.
+- **Why it holds:**
+  - Rule 5 joins a route to no area.
+  - Step 2b keeps the pass 1 place of a row that is no rule and no single party's service.
+  - For YQ-A008 (YA-61), step 2b's own line decides it: "A row about several parties' services keeps its grouped place, and its label names the parties."
+- **What remains in today:**
+  - YA-56: one direction's fee at five places;
+  - YA-219: the Saudi corridor's cost at two places (2.70% at the corridor, 2.4% at place not stated);
+  - YA-24: 3.3 trillion at three places.
+
+**Followed in part:**
+- **YG-024 (no label per list of parties): the reason holds.**
+  - YG-571 is sized to banks and exchange firms, which every row names.
+  - The other parties stay in note, because a row can't be split.
+- **YG-106 (UNMONEY's rule and the closure of own networks kept as one rule): the reason holds.** From 26 June 2024, one decision states both.
+- **YG-107 (owners and status as one condition): the reason holds.** YQ-E748, D120 and D284 each state both.
+- **YG-046:** followed in substance, by lists that grow.
+- **YG-147 (YQ-D105 to its own condition rather than YG-508): the reason holds.** In YG-508, it would hold together with how widely buyers pay.
+
+### Disputed parts in today
+
+**In my axes:**
+- **YA-01, place not stated: not made by the sources.**
+  - "YER 2,000" (YQ-D056, 2 August 2025) ties by precision with "YER 3,000" and "YER 2,065" (YQ-D458, YQ-E644, dated 2025).
+  - These are rates at different moments of one year. They are alternatives, so no rule is broken. The dispute comes from the build's precision rule.
+- **YA-05, the IRG's area: made by the sources.**
+  - Al-Ayyam (13 February 2026): all must keep to the rate the central bank sets (YQ-D065).
+  - The IGC (February 2026): the rate is "allowed ... to fluctuate with market conditions" (YQ-E756, YQ-E783).
+- **YA-20, Aden: made by the source.** Item 197 quotes banking sources ("short", YQ-E602) and an economist ("no real shortage, cash poorly distributed", YQ-E603).
+- **YA-61, Cash e-wallet's service: made by the sources.**
+  - The about page lists international transfers through MoneyGram and Western Union among services that may be added in future: "مع إمكانية إضافة العديد من الخدمات إلى المحفظة مستقبلاً ... والتحويلات الدولية". This is the Arabic text of the field that YE-C028 quotes in English.
+  - The app listing offers withdrawing remittances of "الشبكات المحلية والدولية" (local and international networks) now (YE-C151).
+- **YA-225, Cash e-wallet's service: not made by the sources.** Returned.
+- **YA-226, place not stated: not made by the sources.**
+  - Each article gives 8 to 10 and a possible total over 15, side by side.
+  - Returned.
+
+**Outside my list:** YA-60, YA-63, YA-66 and YA-74 hold the other disputed parts in today.
+
+**Unknown part:** YA-80 has `unknown @ National Wallet Company's service`, from a proposed row only. No rule is broken.
+
+### Seen and not returned
+
+- **YA-10:**
+  - "money exchangers" (YQ-D361, 2024) may overlap "the parallel market".
+  - Today is unaffected.
+- **YA-25, Houthis' area:**
+  - YQ-E793 (2024) ties by precision with the ended YQ-E723 (23 July 2024), so "13 Aden-based banks barred" stays in today.
+  - The 23 July 2024 cancellation sits at a joint place, `the Yemeni government's and the Houthi group's areas`, which supersedes neither side.
+  - YQ-E586 stays at the seatless central bank. Item 192 gives no seat.
+- **YA-41:**
+  - "Sana'a banks pressed by the Houthis to leave SWIFT" (YQ-E449) holds together with "connected".
+  - It is not today, since `across Yemen` supersedes it.
+- **YA-49:** "Largely absent" and "Very little" state the same scarcity at different places. With no effect on today or cases, I left it.
+- **YA-54:** YQ-E754 and YQ-E803 tie in February 2026. Their states are alternatives, and neither is the latest.
+- **YA-83:** Floosak's reply on updating identity data (YQ-E017) may hold together with its activation steps (YQ-C246). It is not today.
+- **YA-89:** the same three currencies carry "more than one currency" at Cash and "the rial, Saudi riyal and US dollar" at ONE Cash, as the new label line gives each service's pages. Today is unaffected.
+- **YA-221:** the Civil Status Authority in Sana'a stays apart from Houthis' area, since no source joins them.

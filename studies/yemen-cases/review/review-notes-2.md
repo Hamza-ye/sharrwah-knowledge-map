@@ -134,3 +134,83 @@ This is a draft for the coordinator. The review changes nothing. Each row of `re
   - If any cited source uses "the north" for a different area, the one-area limit applies and the return falls. I found none.
   - Item 271 itself uses "الشمال" for the zone where the dollar costs 531 rials against 1,554 in the south (YE-E1285), and where the Sana'a bank's ban keeps the old notes stable (YE-E1288).
   - Other quotes use "the north" for the Houthi side too: YE-D477, YE-E1090 and YE-E1308.
+
+## Second review
+
+This round reviews the axes at commit `71ab056`. I checked that `axes.tsv` has sha256 0b7ef7ade6e5e96be8790a219a9d2581cd4681921dae243f9348cdae748f03aa. The 45 axes listed in `changed-2.txt` are renumbered, and all of them rest on rows from YG-224 to YG-561.
+
+### What was read
+
+- **`brief.md`, again,** for two new rules:
+  - rule 2's new sub-bullets: lists that grow, instruments in force together, and parts of one source;
+  - step 2b's new label line on one thing at different detail.
+- **`notes.md`, section "Review round":** how the fixes were made, the fixes by group, and the returns not followed.
+- **The current tables:** `axes.tsv`, `groups.tsv`, `states.tsv`, `constants.tsv` and `places.tsv`. I compared them with the same files at commit `233a74c`, which the first review read, to see each row's change.
+- **Quotes:** from `conditions.tsv` and `citations.tsv`.
+- **Nothing else.** I opened no evidence file and edited nothing under `studies/` or `evidence/`.
+
+### Results
+
+Step 2a followed every first-round return in this range, either in full, in another form or in part. Each fix removed the breach it named. The nine disputed parts in `today` that the first review found are all gone. None of the 45 axes has a `disputed` or `unknown` part in `today`.
+
+| Outcome | Axes |
+|---|---|
+| Resolved, nothing left | YA-112, 115, 125, 127, 146, 162, 164, 169, 177, 181, 185, 193, 195, 198, 230, 231, 239, 240 |
+| Still breaks a rule: `returns-2b.tsv` | YA-108, 118, 123, 124, 159, 163, 165, 170, 175, 178, 197, 206, 209, 232, 233, 241 |
+| Label wording only | YA-153, 205 |
+| Unsure, not returned | YA-110, 129, 151, 180, 234, 235, 236, 237, 238 |
+
+**The returns.** The 16 returns are in `/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/y-review/returns-2b.tsv`: 11 under the label rule and 5 under rule 2.
+
+- **Eleven matter more,** because the axis shows a change or a measure that no source states, or `today` carries another condition's fact: YA-108, 118, 123, 124, 165, 170, 175, 197, 206, 209 and 241.
+- **Five matter less.** In YA-159, 163, 178, 232 and 233, `today` is right, but the axis exists only because rows word one state differently.
+
+Several of the remaining breaches come from fixes that followed my first returns as written, or from rows those fixes left behind:
+- **YA-206.** My first return put YQ-D190 with reliability.
+- **YA-241.** My first return joined grid supply with access to electricity.
+- **YA-165.** My first return listed YQ-E196 under public revenue generally.
+- **YA-123.** My first return proposed the site's whole card list as the shared label.
+- **YA-209.** The fix relabelled YQ-E436 but left YQ-E366, which gives the same figure.
+
+**The two label-wording cases:**
+- **YA-153.** YQ-E536's label keeps "at one store selling Shein and Amazon goods". Those are words about the place, which the build now adds at the EB store's service.
+- **YA-205.** YQ-E826 gives 26.7 percent but is labelled "27 percent", which is the label of YQ-E121's different 2017 figure.
+
+**Unsure, not returned:**
+- **YA-110 (YG-229).** The axis rests only on Jawali's "matched in guarantee accounts", against "pre-funded and held in a pooled account at a settlement bank" elsewhere. If Jawali's guarantee accounts are pooled accounts at a settlement bank, the rows need one label. Jawali's terms don't say where the accounts are held.
+- **YA-129 (YG-291).** The group still joins the fast payment system and the real-time gross settlement system. No part conflicts now.
+- **YA-151 (YG-343).** The Noon post's "through transport offices" (YQ-C553) stands against the Alibaba and SHEIN posts' next-day delivery from the Sana'a warehouse. These may be processes for different stores, as in YG-342, or a change in 2023.
+- **YA-180 (YG-483).** "Only those loyal to the powerholders" and "licences granted to traders loyal to the Houthis" state one rule at two places. The parties-named line allows naming the Houthis.
+- **YA-234 (YG-670).** "The buyer, from the provider's app" (E-Pay) and "the buyer, from the buyer's own wallet app" (YemenPay) both answer yes. Which app it is may be part of the state, as the group's `what_varies` has it.
+- **YA-235 (YG-704).** "Extra fees demanded by officials" and "bribes and continuous levies on transport companies" both answer the group's only state, "demanded", at different places. The labels name who pays and what.
+- **YA-236 (YG-713).** The move from "removal ordered" (February 2026) to "being closed" (April 2026) is a development that a source dates. YQ-E484's label still carries "illegal checkpoint tolls", which is YG-486's fact.
+- **YA-237 (YG-719).** Two rows state account holding without a figure, rather than access: YQ-D099 ("most have accounts", a bank manager's claim) and YQ-D213 ("private bank accounts are the exception"). My first return put them here. YQ-D099's contrary claim is a dispute its source makes.
+- **YA-238 (YG-722).** "Sparse" (YQ-E706) may be "coverage gaps" in other words.
+
+### Returns step 2a didn't follow in full
+
+- **YG-224, cumulative labels not used.** The reason holds. No row states the whole list at each date, and the new sub-bullet on lists that grow gives each decision its own condition, as the fix did.
+- **YG-243, followed in another form.** The reason holds, since rule 3 puts each row in one group. The label of what both pages state matches the new label line.
+- **YG-310, transport links not split from roads and fuel.** The reason holds: YQ-E135 and YQ-E145 each state all three.
+- **YG-446, importers' registration not split.** The reason holds for the split, because every such row also states a threshold. But the new label line would still keep the importer clause out of YQ-E857's label (YA-170).
+- **YG-502, market supply not split.** The reason holds, and the labels now give the change only.
+- **YG-508, YQ-E226 sent to its own condition rather than YG-510.** The reason holds and my suggestion was wrong: e-money's share of all payments (YQ-E225) is a different measure on the same date.
+
+### Constants made from the returned groups
+
+Each split kept its conditions whole, except:
+- **YG-659 and YG-660 are probably one instrument.** YE-E178 says the CBY issued Circular No. 11 of 2014 "In late 2014" for the bank-led e-money model. YE-E655 dates the CBY's "new mobile banking regulations" to 11 December 2014. If they are one instrument, YQ-E589 belongs in YG-659, under rule 1.
+- **YG-654 and YG-655 both give SBYB's and IBY's licences.** YQ-E195's early-2021 permissions ("such as IBY, SBYB, One and Tamkeen") repeat YQ-E163's January licences. The two constants agree, so this is a note only.
+- **YG-659 lacks the Sana'a side.** YQ-E881 says Circular No. 11 stays in force there, but the row sits in YG-661, whose label still carries "with Circular No. 11 of 2014 still in force".
+- **YG-672 (credit cards) lacks YQ-E160's 1,206 for 2019.** That figure is in YG-279's label, which is YA-124's return.
+- **Two labels the splits left behind no longer answer their new conditions:**
+  - YG-631 ("Who uses phone wallets") keeps "low" for YQ-E546, whose source limits use to the launching banks' customers.
+  - YQ-E223 keeps "low" in YG-630 ("What buyers use phone wallets for", YA-223, which is on part 1's list), though its source names the uses.
+
+### Disputed parts
+
+- **In today:** none of the 45 axes has one. The ten axes that do (YA-01, 05, 20, 60, 61, 63, 66, 74, 225 and 226) are outside this list.
+- **Past states that tie:**
+  - **YA-238 on 2023-09-14** ("sparse" and "widely available"). Its source makes this dispute: one article says both.
+  - **YA-197 in 2022** ("12 percent of adults", "8.8 percent" and, at year precision, "10 percent"). The sources don't make this dispute: they measure adults on one side and the whole population on the other. This is YA-197's return.
+  - **YA-209 at Aden in 2025.** "15-hour daily blackouts throughout the year" ties with the October and December figures. These cover different spans of time, so they are not a dispute.

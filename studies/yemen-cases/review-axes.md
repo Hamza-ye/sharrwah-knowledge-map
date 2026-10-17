@@ -33,4 +33,28 @@ This file names an `axes.tsv` in full by its sha256 only when the review lets it
   - The seatless `Central Bank of Yemen's area` leaves stale or doubled parts in today. The seat rule allows it, unless a cited source gives the side.
   - A year-only date ties with every date in its year, under the brief's precision rule. Where such states can't hold together, the dispute stands.
 
+## Second review, 17 October 2026: 38 returns on 37 axes
+
+- **Reviewed:** `axes.tsv` at commit `71ab056`, sha256 `0b7ef7ad…03aa`, after step 2a's fix round: 728 groups, 241 axes and 487 constants.
+- **The review covered** the 116 axes that rest on rows of the first review's returned groups. The same two agents reviewed them: 71 axes from YG-001 to 223, and 45 from YG-224 to 561.
+- **What it found:**
+  - every first-round return was followed, or step 2a's reason for not following it holds under the brief;
+  - every split kept each condition whole;
+  - 38 returns remain, on 37 axes. Their drafts are `review/returns-1b.tsv` and `returns-2b.tsv`, and each reviewer's notes have a "Second review" section.
+
+  | Rule | Rows |
+  | --- | --- |
+  | step 2b's label rule | 21 |
+  | 2, states are alternatives | 11 |
+  | 1, one condition | 3 |
+  | 4, places | 2 |
+  | 5, grouping | 1 |
+
+- **Most of the label returns** are a figure or a list given with and without its detail, under the brief's new label line.
+- **Disputed parts left in today:**
+  - three are made by their sources, and stay;
+  - one is a tie under the precision rule, YA-01's, and stays;
+  - two are made by no source: Cash's hours (YA-225) and the wallet counts of 11 July 2026 (YA-226). They are returned.
+- **The coordinator's decision:** all 38 go back to step 2a. A third review checks only the axes they change.
+
 Cases stay unbuilt until a review lets an `axes.tsv` through.
