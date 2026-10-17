@@ -103,3 +103,156 @@ Format changes applied to every row:
   - S01-SA-149: tracking of cash on delivery amounts is through the shipping company;
   - S01-BC-058: funds are "managed within a dedicated balance dashboard".
 
+### S01-VP-02 "settlement of funds"
+
+- **Gap rows:**
+  - S01-V-040 (zid) stays `gap`, now with A2's S01-ZD-G10, S01-ZD-G11 and S01-ZD-G12.
+  - S01-V-534 (salla) is a new `gap` row with S01-SA-G03, which A2 gave this variation point. The audit finds S01-SA-G03 partly contradicted by S01-SA-139.
+- **New statements placed:**
+  - S01-SA-139 is the new row S01-V-533 ("settling transactions").
+  - S01-WC-142 and S01-WC-145 (Network International, "responsible for disbursement of User’s Settlement Funds") replace S01-WC-129 in S01-V-036, for the reason given under S01-VP-01.
+- **Not placed:** A2 also listed S01-SA-134 to S01-SA-138 for this variation point. None of them carries bullet (a) with a "تسوية" or "settle" answer:
+  - S01-SA-134 is under S01-VP-03 and S01-VP-14;
+  - S01-SA-135 is under S01-VP-18;
+  - S01-SA-137 is under S01-VP-13 and S01-VP-14;
+  - S01-SA-138 is under S01-VP-15;
+  - S01-SA-136 is under the payout end only.
+- **Rechecked against another platform:** S01-V-028 to S01-V-032, S01-V-035 and S01-V-043. S01-V-043 lost `term`: BigCommerce's "Settlement Currency" and Shopify's "Settlement" have different definitions in `terms.tsv`.
+- **Translations:** S01-V-039 now marks its translation as mine.
+
+### S01-VP-03 "payouts"
+
+- **Gap rows:**
+  - S01-V-066 (zid) stays `gap`, now with A2's S01-ZD-G10, S01-ZD-G11 and S01-ZD-G12.
+  - S01-V-537 (bigcommerce) is a new `gap` row with A2's S01-BC-G05, which asks who sends payouts for arrangements other than BitPay. The statements A2 gave with it (S01-BC-040, S01-BC-042, S01-BC-045, S01-BC-052, S01-BC-053 and S01-BC-056) carry only the payout end, not bullets (a) to (d), so they cannot be variants.
+- **New statements placed:**
+  - S01-SA-134 joins S01-V-055 (سلة).
+  - S01-WC-150 is S01-V-535 (JCB transactions in Japan).
+  - S01-WC-158, a bullet (d) statement, is S01-V-536: WooCommerce is "unable to assist with Stripe account issues (including ... payouts".
+- **Not placed:** A2 gave S01-SA-150, S01-SA-158 and S01-SA-168 for Salla. They carry only the payout end, so they cannot be variants.
+- **Rechecked against another platform:** S01-V-044 to S01-V-054, S01-V-060 and S01-V-067.
+  - Shopify, WooCommerce and Salla define "payout(s)" differently in `terms.tsv`. Rows that had `term` on "payout" between them, or within one platform, now have `answers` only.
+  - S01-V-060 lost `identifiers`, which it shared only between two Zid statements.
+- **Translations:** the Arabic rows S01-V-055 to S01-V-065 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-04 "collect payment"
+
+- **Changed form:** S01-V-101 (bigcommerce) changed from `not covered` to an answer from S01-BC-051 and S01-BC-055: "PayPal powers the payment processing behind the scenes through your linked PayPal account". The new row S01-V-542 is a `gap` row with A2's S01-BC-G06, for arrangements other than BigCommerce Payments.
+- **Gap rows:** S01-V-100 (zid) stays `gap`, now with A2's S01-ZD-G10, S01-ZD-G11 and S01-ZD-G12.
+- **New statements placed:**
+  - S01-ZD-146 and S01-ZD-147, which A2 gave this variation point, are S01-V-540 and S01-V-541.
+  - S01-SH-151 (PayPal) and S01-SH-152 (Adyen) are S01-V-538 and S01-V-539.
+  - S01-SA-139 joins S01-V-085 (سلة).
+- **Not placed:** S01-BC-044, which A2 also gave this variation point, carries bullet (b) only. It is under the (b) variation points.
+- **S01-SA-057 left S01-V-091, and S01-SA-149 was not placed.**
+  - Their words, "تابع المبالغ من خلال شركة الشحن" (my translation: "follow the amounts through the shipping company"), say where to track the amounts. They do not say who collects them.
+  - The first pass had placed S01-SA-057 beside S01-SA-097, on its own platform. Compared with "to collect payment" (S01-WC-002), no basis holds.
+  - S01-SA-149 is the same text for Kuwait.
+- **Rechecked against another platform:** S01-V-069 to S01-V-084.
+  - The Payment Processor List rows (S01-V-073 to S01-V-080) lost `identifiers`, which they shared only with S01-SH-005.
+  - S01-V-081 and S01-V-082 had been compared only with the statement X is quoted from.
+- **Translations:** the Arabic rows S01-V-085 to S01-V-099 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-05 "pay you directly"
+
+- **Changed form:** S01-V-111 (bigcommerce) changed from `not covered` to `gap`, with A2's S01-BC-G07 (offline payment methods).
+- **New statements:** none placed.
+- **Rechecked against another platform:** S01-V-102 (X is quoted from it), S01-V-103, S01-V-104, S01-V-105 and S01-V-107.
+- **Translations:** S01-V-108 to S01-V-110 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-06 "agent"
+
+- **Changed form:** S01-V-124 (bigcommerce) changed from `not covered` to `gap`, with A2's S01-BC-G08.
+- **New statements placed:**
+  - S01-WC-132, S01-WC-142 and S01-WC-148 join S01-V-117 (Stripe).
+  - S01-WC-150 is S01-V-543 ("当社", for JCB transactions in Japan).
+- **Rechecked against another platform:** S01-V-112 to S01-V-115, which had been compared with Shopify statements only.
+- **Translations:** S01-V-122 and S01-V-123 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-07 "Reserve"
+
+- **Changed form:** S01-V-134 (salla) changed from `not covered` to `gap`, with A2's S01-SA-G04. Salla's pages were searched for a reserve and none was found; the audit confirms the gap.
+- **Gap rows:** S01-V-135 (bigcommerce) stays `gap`, now with A2's S01-BC-G09 in place of S01-BC-G01.
+- **New statements placed:**
+  - S01-WC-145 is S01-V-544 (Network International).
+  - S01-SH-149 is S01-V-545 ("Shopify and/or the Acquirer may debit your Payout Account or Reserve").
+- **Rechecked against another platform:** S01-V-125 (X is quoted from it), S01-V-126 to S01-V-129 and S01-V-133.
+  - S01-V-126 and S01-V-129 lost `term`. They had compared "Reserve Account" with another Shopify statement, and WooCommerce defines "Reserve Account" differently.
+  - S01-V-127 lost `term`, for the same reason.
+- **Translations:** S01-V-133 now marks its translation as mine.
+
+### S01-VP-08 "withhold"
+
+- **Changed form:** S01-V-151 (bigcommerce) changed from `not covered` to `gap`, with A2's S01-BC-G10.
+- **New statements placed:** S01-SA-181 and S01-SA-180 are S01-V-546 ("held by the issuing bank due to disputes"). The audit lists them against S01-SA-G01; they carry bullets (a) and (c).
+- **Rechecked against another platform:** S01-V-136 to S01-V-140, S01-V-142 and S01-V-149.
+  - S01-V-137 to S01-V-140 name "hold", not "withhold". They stay on `answers`, and the difference in words is recorded.
+- **Translations:** the Arabic rows S01-V-144 to S01-V-148 and S01-V-150 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-09 "deduct"
+
+- **Changed form:** S01-V-166 (bigcommerce) changed from `not covered` to `gap`, with A2's S01-BC-G11.
+- **New statements placed:**
+  - S01-SH-149 is S01-V-547 ("Shopify and/or the Acquirer may debit").
+  - S01-WC-150 is S01-V-548 ("当社", JCB).
+  - S01-ZD-152 joins S01-V-158 (زد باي and the service providers).
+- **Rechecked against another platform:** S01-V-152 (X is quoted from it), S01-V-153, S01-V-154 and S01-V-156.
+- **Translations:** the Arabic rows S01-V-157 to S01-V-165 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-10 "security interest"
+
+- **Changed form:**
+  - S01-V-170 (salla): `not covered` to `gap`, with A2's S01-SA-G05. The audit finds S01-SA-G05 partly contradicted by S01-SA-187 and S01-SA-188, which concern صندوق سلة.
+  - S01-V-171 (zid): `not covered` to `gap`, with A2's S01-ZD-G19.
+  - S01-V-172 (bigcommerce): `not covered` to `gap`, with A2's S01-BC-G12.
+- **New statements placed:**
+  - S01-WC-132 is S01-V-549 (Stripe's lien, Singapore).
+  - S01-SA-187 is S01-V-550: صندوق سلة is "بلا أوراق ولا ضمانات" (my translation: "without paperwork or collateral"). It names no holder.
+- **Not placed:** S01-SA-188 carries bullet (c) only; see S01-VP-19.
+- **Rechecked against another platform:** S01-V-167 (X is quoted from it) and S01-V-168.
+
+### S01-VP-11 "account"
+
+- **Changed form:** S01-V-205 (bigcommerce) changed from `gap` (S01-BC-G02) to an answer from S01-BC-051 and S01-BC-055: "you create a new BigCommerce Payments account". The audit finds S01-BC-G02 contradicted.
+- **New rows for BigCommerce:**
+  - S01-V-551: "your linked PayPal account";
+  - S01-V-552: "your Stripe account", from S01-BC-061;
+  - S01-V-553: "a PayPal Braintree account", from S01-BC-062;
+  - S01-V-554: a `gap` row with A2's S01-BC-G13, for other providers.
+- **Gap rows kept:**
+  - S01-V-189 (salla) stays `gap` with S01-SA-G01, which the audit finds only partly contradicted. S01-SA-178 and S01-SA-179 are the new answer row S01-V-557 ("لحساب المتجر", Salla's translation "for the store's account").
+  - S01-V-202 (zid) stays `gap`, now with A2's S01-ZD-G13 to S01-ZD-G16.
+- **New statements placed:**
+  - S01-WC-165 joins S01-V-180 ("a single Stripe Express account").
+  - S01-WC-141 is S01-V-555: no account with Network International.
+  - S01-WC-147 is S01-V-556: no account with SMCC.
+- **Not placed here:** A2 gave these BigCommerce statements to this variation point, but none uses "account" words:
+  - S01-BC-039, S01-BC-043 and S01-BC-044 ("payment relationship", "direct relationship with PayPal") are under S01-VP-13;
+  - S01-BC-041 ("the merchant’s PayPal dashboard") and S01-BC-047 ("Each provider has its own application process") fit no variation point;
+  - S01-BC-046, S01-BC-054 and S01-BC-057 carry bullet (e) only.
+- **Rechecked against another platform:** S01-V-174, S01-V-178, S01-V-180 (X is quoted from it) and S01-V-181 to S01-V-184.
+- **Translations:** the Arabic rows S01-V-185 to S01-V-188, S01-V-190 and S01-V-192 to S01-V-201 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-12 "licensed"
+
+- **Gap rows** (none changed form):
+  - S01-V-219 (woocommerce) stays `gap`, now with A2's S01-WC-G03, which the audit confirms: no licence by a regulator was found for Australia, Japan, New Zealand, Singapore or the United Arab Emirates.
+  - S01-V-221 (salla) stays `gap` with S01-SA-G01.
+  - S01-V-223 (zid) stays `gap`, now with S01-ZD-G13.
+  - S01-V-224 (bigcommerce) stays `gap`, now with S01-BC-G14.
+  - S01-V-211 (shopify) stays `absent`; the audit confirms S01-SH-N02.
+- **New statements placed:** A2's statements name the acquirer, Payment Facilitator or Independent Sales Organization for each of those countries. They are new rows:
+  - S01-V-558 to S01-V-560: S01-WC-134 to S01-WC-136;
+  - S01-V-561 and S01-V-562: S01-WC-137 and S01-WC-138;
+  - S01-V-563: S01-WC-133 and S01-WC-141;
+  - S01-V-564: S01-WC-139;
+  - S01-V-565: S01-WC-144.
+
+  Their basis is `identifiers`, the same topic as S01-SH-108's "the Acquirer listed in the respective jurisdiction", and, for "Payment Facilitator" and "registered as", `term`. S01-SH-148 is S01-V-566.
+- **Elsewhere:** A2's other statements for this variation point (S01-WC-130 to S01-WC-153) are under S01-VP-01, S01-VP-02, S01-VP-03, S01-VP-06, S01-VP-07, S01-VP-09, S01-VP-10, S01-VP-11, S01-VP-13 or S01-VP-17. S01-WC-146 carries bullet (e) only.
+- **Rechecked against another platform:**
+  - S01-V-206 (X is quoted from it);
+  - S01-V-207 to S01-V-210, which had been compared with Shopify statements only. S01-V-209 lost `identifiers`, which it shared only with S01-SH-108.
+  - S01-V-213, S01-V-214 and S01-V-216 to S01-V-218. These keep `answers`, and the difference in words is recorded.
+- **Translations:** S01-V-220 and S01-V-222 now mark the translations that `answers` rests on as mine.
+
