@@ -100,7 +100,7 @@ Founder items: 12 before, 13 after.
   - New founder item: "On what conditions should funds Sharrwah holds go back to the buyers instead of to the merchant: a breach of the platform's terms, verification or registration not completed in time, payments whose legitimacy is not shown, or a demand by a processor or regulator?"
   - Why: phase B now gives the role as "the condition on which the funds go back to the buyers", not who receives them.
     - Salla names one condition, a breach of the first clause of its Article Ten (S01-SA-082).
-    - Zid names three others: activation data not corrected, legitimacy not shown, and registration not completed (S01-ZD-011, S01-ZD-014, S01-ZD-024). Salla's set, which has no gap, contains none of them.
+    - Zid names other conditions, among them activation data not corrected, legitimacy not shown, and registration not completed (S01-ZD-011, S01-ZD-014, S01-ZD-024). Salla's set, which has no gap, contains none of them.
     - Zid's gap (V-509) does not stop a difference shown from Zid's side.
 - **S01-VP-01 (review finding 6).** BigCommerce: `A` → `B`.
   - The letter rests on S01-BC-067 (BigCommerce Payments needs the right plan and store location), S01-BC-080 (it takes the standalone PayPal gateway's place on migration) and S01-BC-047 (other gateways are added by configuration).
@@ -126,7 +126,10 @@ Founder items: 12 before, 13 after.
 
 - **S01-VP-05 (review finding 2).** Stays `no difference`, now on the brief's new line rather than a reading of mine (old problem 4). V-105 and the second part of V-109 are bullet (d) statements and name no one filling X, so every filler named is the merchant.
 - **S01-VP-04 (review finding 4).** `cause_basis` cited S01-ZD-095 by mistake. For Zid naming the platform itself it now cites S01-ZD-002, S01-ZD-069 and S01-ZD-071 (V-094, V-096, V-097), and the reading cites them too. BigCommerce's `A` now rests on S01-BC-051 and S01-BC-066.
-- **S01-VP-12 (review finding 3).** The reading no longer says the licensed parties all differ: Salla's and Shopify's are both the platform itself, under two different statuses. The cause rests on Stripe PSP (S01-WC-113, S01-WC-114) and تاب (S01-ZD-082), parties no other platform's set contains. The reading also no longer names تاب's regulator "the Saudi Central Bank", since S01-ZD-082 says only "البنك المركزي".
+- **S01-VP-12 (review finding 3).** The reading no longer says the licensed parties all differ.
+  - As the review suggests, the cause now rests on Stripe PSP alone, authorised by the Central Bank of Ireland and by the UK Financial Conduct Authority (S01-WC-113, S01-WC-114). No other platform's variants in an overlapping scope name that party. `cause_basis` and `scopes_compared` now hold only that comparison.
+  - The note records that Salla's party (S01-SA-089) and Shopify's Canadian company (S01-SH-035, S01-SH-036) are both the platform itself.
+  - The reading no longer cites تاب (S01-ZD-082). It had called تاب's regulator "the Saudi Central Bank", but the statement says only "البنك المركزي".
 - **S01-VP-06.** Salla's V-123 is gone. Salla is now `not covered` (V-655), read as a gap, so Salla and Zid are still not compared.
 - **S01-VP-09.** Salla's observed V-164 is gone. The reading rests on V-165 alone.
 - **S01-VP-10.** Salla's one answer (V-550) is gone. Salla, Zid and BigCommerce are all gap only. Still `unknown`.
@@ -184,11 +187,17 @@ S01-VP-21 was `unknown` in the first and second runs. In the third run it is `ve
     - صندوق سلة runs "بالشراكة مع تنامي" (S01-SA-130).
 
     Each such product now counts as the platform itself, and the partner as a second party in the same set. So the set of a platform whose own product a partner powers holds two parties for that product, where another platform's holds one.
-13. **New with the same rule: role terms are not covered.** "Stripe Connect Platform" (S01-SH-131, S01-WC-104) and "Platform" in the Adyen terms (S01-SH-125) mean the platform in context, but they are not its name, payment product or company. I counted them by name. No cause in this run depends on them (VP-06, VP-09, VP-19 rest on other answers).
-14. **New with the same rule: it does not say whether it also applies inside one platform.** I applied it across platforms (step 3) and left step 4 on the variants as recorded. If it also merged one platform's own variants, these letters would turn `unknown`, each because that platform's variants become one answer:
-    - VP-01, Zid: V-023 and V-024 are both the platform itself;
-    - VP-05, BigCommerce: V-111, V-621 and V-622 all name the merchant;
-    - VP-08, Zid: V-144 to V-146 are all the platform itself;
-    - VP-21, Zid: all its answers name the buyer.
-
-    The `follows` cells of VP-05 and VP-21 would then lose "the platform carries all the variants at once".
+13. **New with the same rule: role terms are not covered.** "Stripe Connect Platform" (S01-SH-131, S01-WC-104) and "Platform" in the Adyen terms (S01-SH-125) mean the platform in context, but they are not its name, payment product or company. I counted them by name. No cause in the second or third run depends on them (VP-06, VP-09, VP-19 rest on other answers).
+14. **Settled by the amended brief (third run).** *Whether the same rule applies inside one platform.* The brief now says it does not merge one platform's own variants in step 4, which is how I had applied it. So the letters this problem listed stay as recorded: Zid on VP-01, BigCommerce on VP-05, and Zid on VP-08 and VP-21.
+15. **New in the third run: a "no part" statement under bullet (a).**
+    - V-623 (VP-06) rests on S01-BC-128, recorded under bullet (a): "No agency, partnership, joint venture or employment relationship is created by this Agreement". It names the platform's own company ("Commerce") only to say it is not the merchant's agent, as a bullet (d) statement would.
+    - Test 1's new line speaks of bullet (d) statements only, so I counted V-623 as an answer. VP-06 is `vendor choice`, with a founder item.
+    - Read as naming no one, V-623 would leave BigCommerce only a gap (V-124), with Salla not covered (V-655). VP-06 would then be `unknown`, and "kept open as a variation point until evidence settles it" would replace the founder item.
+16. **New in the third run: VP-22's difference rests on wording.**
+    - Shopify's merchant receives "full payment" "After you capture the payment" (S01-SH-054). BigCommerce's merchant gets "paid up front" (S01-BC-024) and "always get paid" (S01-BC-094).
+    - Under "the same words", these are different answers, so the global pair differs and VP-22 is a founder item.
+    - The brief's sameness rule does not say whether "after capture" and "up front" can name the same time.
+17. **New in the third run: an observation on one side only.**
+    - On VP-08, Salla's only answer other than the platform itself is observed (V-546), and Zid has no observed variant.
+    - Like with like therefore leaves the Saudi pair agreeing on declarations, with the observation set against nothing.
+    - So an answer a platform has only by observation cannot separate it from a platform with no observations.
