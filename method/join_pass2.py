@@ -1,9 +1,10 @@
 # Joins Stage 1's step 2b files (studies/yemen-cases/brief.md) for the build:
 #   1. adds to places.tsv each place a step 2b agent added in pass2/places-<k>.tsv and places.tsv doesn't list;
-#   2. joins pass2/states-<k>.tsv into states.tsv, taking each row's place to the place places.tsv groups it with.
+#   2. joins pass2/states-<k>.tsv into states.tsv, taking each row's place to the place places.tsv groups it with,
+#      through every link where groupings chain.
 # It is idempotent. Run it once after step 2b, so that step 2c can group variants among the added places, and
 # again after step 2c, so that the rows follow those groupings. It refuses a states file whose header differs,
-# or a row given twice.
+# a row given twice, or groupings that form a cycle.
 #
 # Usage: python3 -I method/join_pass2.py STUDY_DIR
 import csv, glob, os, sys
@@ -50,10 +51,12 @@ def main(study):
             if r[0] in seen:
                 problems.append(f"{path}: {r[0]} is given twice")
             seen.add(r[0])
-            place = r[3]
-            for _ in range(10):                      # follow a grouping to the place grouped with itself
-                if grouped.get(place, place) == place:
+            place, passed = r[3], set()
+            while grouped.get(place, place) != place:   # follow groupings to the place grouped with itself
+                if place in passed:
+                    problems.append(f"places.tsv: the groupings from {r[3]} form a cycle")
                     break
+                passed.add(place)
                 place = grouped[place]
             states.append(r[:3] + [place] + r[4:])
     if problems:

@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 12 October 2026, 18:55 UTC.
+**Updated:** 17 October 2026, 06:30 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -66,8 +66,15 @@ Agents started earlier keep their effort.
     - dates after the capture count as the capture date;
     - the "same role" conflict is settled by "states are alternatives";
     - the commit given in the agents' prompts is the one cited.
+- **Step 2a is done**, 13 October 2026, 02:00 UTC. It made 561 groups over the 2,532 rows, 213 of them joining rows from more than one part. It listed 346 places, 148 grouped with another (37 by rule, 45 as variants, 66 on a source), so the rows fall in 198 places.
+  - Its notes showed two checker faults, both fixed:
+    - groupings may chain, each link with its own basis, and the rows take the place the chain ends at;
+    - a seat named in either language is one seat.
+  - `method/join_pass2.py` follows a chain through every link and refuses a cycle. The build reads places only from the joined `states.tsv`.
+  - Its agent is now adding the chains and translated names it held back.
 - **Next:**
-  - step 2a (one agent, `max`), then step 2b (four agents by range of groups, `high`), then `method/join_pass2.py` and the build;
+  - step 2b once 2a's chains are in: four agents at `high`, by range of groups, YG-001 to 076 (633 rows), 077 to 165 (650), 166 to 331 (637) and 332 to 561 (612), recounted if 2a changes the groups;
+  - then `method/join_pass2.py` and the build;
   - the review stop if past 20 axes (`review-axes.md`), then cases;
   - step 2c, the checker, an independent review, and a comparison with Q2's example axes.
 
@@ -90,7 +97,10 @@ Agents started earlier keep their effort.
     - B matches against another platform's statement;
     - B may rest an answer on its own translation, marked as its own.
 - **A2 is done** for Salla, WooCommerce, Zid and BigCommerce, at `medium` effort. Shopify had no gap. The four platforms added 72 statements in all.
-  - **A miss.** The founder pointed at Salla's help articles on payout settlement. One of them ("Salla Payments Kuwait payouts settlement") is held, but neither phase A nor A2 read it. Salla's A2 is re-running at `high`, with a sweep of every held help article in both languages that uses Salla's own words for the subject. This follows the effort policy's re-run rule.
+  - **A miss.** The founder pointed at Salla's help articles on payout settlement. One of them ("Salla Payments Kuwait payouts settlement") is held, but neither phase A nor A2 read it. Salla's A2 was re-run at `high`, with a sweep of every held help article in both languages that uses Salla's own words for the subject. This follows the effort policy's re-run rule.
+    - The sweep listed 597 held articles, of which 564 had never been cited. It added S01-SA-137 to 177, all scoped by country or bank.
+    - Who settles Salla Payments funds is still not stated, and the payment services agreement isn't held.
+    - Kuwait's minimum payout differs between the English and Arabic articles. Both are recorded, unresolved.
   - **Captured:** the live pages A2 cites (run `20261013T003518Z-s01-a2-sources`). With them, all 1,209 quotes are found.
     - BigCommerce's Help Center pages render empty even in a browser.
     - The held index now counts an empty capture as held but not readable, so the reader must be extended there.
@@ -111,7 +121,8 @@ Agents started earlier keep their effort.
   Until they're saved, those gaps stand as recorded.
 - **Next:**
   - test the checker's step 2 (marks) on D's first rows before D runs on;
-  - B, A2, capture and kinds again, B's second pass, C;
+  - B's second pass, now running: it places the 157 statements A2 and A3 added under the existing variation points, and revisits every gap, absence and row not covered;
+  - C, at `max`;
   - D, after Stage 1;
   - the entry (Q3's rows are no longer a pilot step: they are reconciled once, at close-out, per `PLAN.md` section 11);
   - F;
@@ -133,19 +144,15 @@ Agents started earlier keep their effort.
 
 ## If the work was interrupted
 
-**The usage limit has stopped the running agents three times on 12 October 2026:**
+**The usage limit has stopped the running agents four times:**
 - at about 09:50 UTC, when all ten restarted at 10:10 UTC as new agents continuing from their files;
 - at about 10:55 UTC, until 15:00 UTC. The six still running were resumed at 18:53 UTC, each from its own transcript;
-- at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript.
+- at about 20:10 UTC, until 23:50 UTC. Part E, phase B and the third inspection were resumed at 23:58 UTC, each from its own transcript;
+- on 13 October 2026 at about 02:05 UTC, the weekly limit, until 17 October 05:00 UTC. The check-in below fired every two hours but could do nothing until the reset. Phase B's second pass and step 2a were resumed at 06:20 UTC, each from its own transcript.
 
-**Agents running when last checked (12 October 2026, 23:58 UTC):**
-- **Pilot A2, Salla's re-run: done** (`high`).
-  - The sweep listed 597 held articles; 564 had never been cited.
-  - It added S01-SA-137 to 177, all scoped by country or bank.
-  - Who settles Salla Payments funds is still not stated, and the payment services agreement isn't held.
-  - Kuwait's minimum payout differs between the English and Arabic articles. Both are recorded, unresolved.
-- **Pilot phase B, second pass:** agent `a9e10fcc19233f104`, resumed after A2 and A3.
-- **Stage 1 pass 2, step 2a:** one agent (`a4a6021a9605c1efe`, `max`), writing `groups.tsv`, `places.tsv` and `notes.md` in `studies/yemen-cases/`. It is resumed later for step 2c.
+**Agents running when last checked (17 October 2026, 06:20 UTC):**
+- **Pilot phase B, second pass:** agent `a9e10fcc19233f104`.
+- **Stage 1 pass 2, step 2a, the chains:** agent `a4a6021a9605c1efe` (`max`), writing `places.tsv` and `notes.md` in `studies/yemen-cases/`. It is resumed later for step 2c.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Delete it when no agent is running for long stretches, or when the founder asks.
 
