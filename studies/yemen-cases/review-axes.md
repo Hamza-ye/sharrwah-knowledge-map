@@ -57,4 +57,16 @@ This file names an `axes.tsv` in full by its sha256 only when the review lets it
   - two are made by no source: Cash's hours (YA-225) and the wallet counts of 11 July 2026 (YA-226). They are returned.
 - **The coordinator's decision:** all 38 go back to step 2a. A third review checks only the axes they change.
 
-Cases stay unbuilt until a review lets an `axes.tsv` through.
+## Third review, 17 October 2026: the axes are let through
+
+- **Reviewed:** `axes.tsv` at commit `f3ed2df`, sha256 `02850db5…2375`, after step 2a's second fix round: 739 groups, 227 axes and 512 constants.
+- **The review covered** the 24 axes that round changed. The same two agents reviewed them: 15 axes from YG-001 to 223, and 9 from YG-224 to 561. Their drafts are `review/returns-1c.tsv` and `returns-2c.tsv`, with a "Third review" section in each reviewer's notes.
+- **What it found:**
+  - every second-round return was fixed;
+  - the two returns step 2a didn't follow give reasons that hold under the brief. Item 046 doesn't name who banned the notes, and item 155 never uses "the south" and "government-controlled areas" for one area;
+  - one label return remained. In YA-200, YQ-E379 kept "outages up to 20 hours a day" where YQ-E366 and YQ-E436, stating the same outages, read "prolonged outages".
+- **The last fix.** Step 2a gave YQ-E379 "prolonged outages", with its figure in `note`. The coordinator checked the result:
+  - the join, `--groups` and `--states` run clean;
+  - against the reviewed file, only YA-200's `states` and `today` change, by that label.
+- **Disputed parts left in today: 10.** Each is made by its sources, or is a tie under the precision rule (YA-01, and YA-227's 8.8 against 10 percent of the population in 2022).
+- **The coordinator's decision:** the review lets this `axes.tsv` through, at sha256 47b5c642765d2e25db20f0795fceebbce3e175a6ffdfa884271f005dadf8c735.

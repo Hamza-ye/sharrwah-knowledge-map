@@ -743,3 +743,11 @@ As in the review round: the reviewers' fixes are advice, and each was decided un
   - eight parts that the first review left alone as made by the sources: the fixed rate at the IRG's area (YA-05), Aden's cash (YA-20), the payout rules at Houthis' area (YA-59), Cash's international transfers (YA-60), Wise's two pages (YA-62), the counts at Aden and at Sana'a (YA-64, two parts), and ONE Cash's 30 against 14 days (YA-71);
   - a new precision tie at place not stated (YA-227, from the split of YG-513, returned as YA-197): 'about 8.8 percent of the population' (YQ-D365, 2022) and 'ninety percent of the population is unbanked' (YQ-E661, July 2022). These states can't both hold, so the dispute stands.
 - Today has 5 unknown parts, each at a place whose only row is proposed or ended, as before (YA-40, YA-77, YA-88, YA-99, YA-169).
+
+## Third review: one return
+
+- **YA-200, YG-561 (label).** YQ-E379 now carries 'prolonged outages', with its figure in note. Its quote (YE-E394), like YQ-E366's (YE-E379) and YQ-E436's (YE-E454), gives power cuts of up to 20 hours a day:
+  - YQ-E379: 'endured up to 20 hours without power each day';
+  - YQ-E366: 'significant power outages (18–20 hours per day in some districts)';
+  - YQ-E436: 'prolonged blackouts', with cuts 'up to 20 hours a day'.
+- **Why this label.** The three quotes all give the figure, but the group's rows without a figure state the same outages (YQ-E126, E340, E454, all 'prolonged outages'). A shared label of 'outages up to 20 hours a day' would set those rows against these in the axis again. So all six rows take the label of what they all state, 'prolonged outages', and each figure stays in its row's note.
