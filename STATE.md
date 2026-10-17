@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 17:10 UTC.
+**Updated:** 17 October 2026, 18:00 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -242,6 +242,14 @@ Agents started earlier keep their effort.
       Now 228 axes, 515 constants and 345 cases.
     - **Running:** phase C re-derives every cause, and phase D redoes `bears-on.tsv` and every mark, in parallel. Then the coordinator rewrites the entry, and F re-checks;
     - **Salla's `not covered` row on S01-VP-06** ("agent", S01-V-655), left by phase B's re-check, goes back to A2 as the B brief says. If A2 records a gap or an absence, A3 audits it. Then phase B places what A2 adds, and phases C and D revisit S01-VP-06;
+    - **Done since** (17 October, 17:20 to 18:00 UTC):
+      - **phase D's redo** (commit `bd84076`): 183 marks in 30 cases. At `YC-00`, VP-01 is now `unknown`, and VP-10 is `no placement`, with a product gap and a founder item. No case changes any mark from today's;
+      - **phase C's third run** (commit `4561770`): VP-08 is `unknown`, VP-21 is a founder item, and VP-22's question is reworded. 13 founder items;
+      - **two rulings for phase C** (commit `059f3ef`, `PLAN.md` section 11): a "no part" statement names no one, whatever its bullet, and shows the party isn't in its platform's set; a platform may carry more than one coexistence letter;
+      - **Salla's A2 on "agent"** (commit `0b59a65`): S01-SA-190 to 201, and gap S01-SA-G07: no held source says in what capacity Salla holds buyers' payments;
+      - **the entry, rewritten** (draft, commits `90fa73b` and `28828a4`): 14 decisions, each with its own answer line, and the links between them marked as the coordinator's reading;
+      - **the method report** (draft, commit `50e031f`): F's findings and what changed, what a subject costs, and the proposed changes before more subjects;
+    - **Next, in order:** A3 audits S01-SA-G07 (running); phase B places S01-SA-190 to 201 and S01-VP-06's row; phase C re-applies steps 3 to 5 under the two rulings; phase D re-marks the variation points whose variants changed; the coordinator updates the entry; F re-checks; the method report is completed; G1;
   - **D's first checkpoint** (commit `2786cb4`):
     - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
     - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
@@ -276,13 +284,11 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (17 October 2026, 17:10 UTC):**
+**Agents running when last checked (17 October 2026, 18:00 UTC):**
 - **Running:**
-  - pilot phase C, third run: `adc0057894ed0a4d9` (`max`);
-  - pilot phase D, redoing `bears-on.tsv` and the marks: `a279f7e700e54e76b` (`max`);
-  - pilot A2 for Salla on S01-VP-06 ("agent"): `aa3fbffb0ec8e81cc`.
+  - pilot A3 for Salla's gap S01-SA-G07: `a1fbfec156e90bb84` (`high`).
 - **Done, and resumable:**
-  - pilot F `a349d058600a20b3a`, to re-check the fixes; phase B `a9e10fcc19233f104`, to place what A2 adds;
+  - pilot F `a349d058600a20b3a`, to re-check the fixes; phase B `a9e10fcc19233f104`, to place what A2 adds; phase C `adc0057894ed0a4d9` and phase D `a279f7e700e54e76b`, for the rulings and S01-VP-06; Salla's A2 `aa3fbffb0ec8e81cc`;
   - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
   - Stage 1 step 2b, by range: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
