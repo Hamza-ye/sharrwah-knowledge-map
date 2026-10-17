@@ -78,7 +78,7 @@ Read, in addition to the first pass: each platform's `a2.tsv` and `absence-audit
 
 Before this pass there were 531 rows: 491 answers, 2 `absent`, 28 `gap` and 10 `not covered`.
 
-As the coordinator asked, BigCommerce statements were placed only up to S01-BC-065. A re-run of BigCommerce's phase A2 was rewriting its files during this pass. Its statements from S01-BC-066 onward, and any change to its `a2.tsv`, are left for a follow-up; the BigCommerce `a2.tsv` read here is the one dated 13 October.
+As the coordinator asked, BigCommerce statements were placed only up to S01-BC-065. A re-run of BigCommerce's phase A2 was rewriting its files during this pass. Its statements from S01-BC-066 onward, and any change to its `a2.tsv`, are left for a follow-up; the BigCommerce `a2.tsv` read here is the one dated 13 October. The follow-up is the last section of these notes.
 
 Format changes applied to every row:
 - `scope`: when the statements of a row give different scopes, each scope is now followed by its `stmt_ids`, and the scopes are `;`-separated (rule 5). A statement with no scope still adds nothing.
@@ -430,9 +430,7 @@ Format changes applied to every row:
 - (a) S01-WC-152: names no holder. It is under S01-VP-15.
 - (a) S01-BC-050: "Stripe ... handles the FX conversion". It is under S01-VP-19 and S01-VP-23.
 
-**Left for the follow-up:** BigCommerce statements from S01-BC-066 onward. When the checker last ran, the re-run had added 59 statements (S01-BC-066 to S01-BC-124). These 44 carry bullets (a) to (d) and are under no variation point:
-
-S01-BC-066, S01-BC-068, S01-BC-069, S01-BC-070, S01-BC-071, S01-BC-072, S01-BC-073, S01-BC-074, S01-BC-075, S01-BC-076, S01-BC-077, S01-BC-078, S01-BC-079, S01-BC-081, S01-BC-082, S01-BC-083, S01-BC-084, S01-BC-087, S01-BC-088, S01-BC-089, S01-BC-090, S01-BC-092, S01-BC-094, S01-BC-096, S01-BC-097, S01-BC-098, S01-BC-099, S01-BC-100, S01-BC-103, S01-BC-104, S01-BC-105, S01-BC-106, S01-BC-107, S01-BC-108, S01-BC-109, S01-BC-115, S01-BC-116, S01-BC-117, S01-BC-118, S01-BC-119, S01-BC-121, S01-BC-122, S01-BC-123, S01-BC-124.
+**BigCommerce from S01-BC-066 onward** was left for the follow-up and is placed there; see "BigCommerce follow-up" below. From that follow-up: S01-BC-071 is under no variation point; S01-BC-068 and S01-BC-078 under bullet (a), and S01-BC-096 under bullet (c), fit no variation point of that bullet.
 
 ## `not covered` rows after the second pass
 
@@ -468,3 +466,99 @@ The 57 unchanged rows were already compared with another platform, or are bullet
 6. **Scope separator.** Rule 5 separates scopes with `;`, but some scopes contain `;` themselves, for example "السعودية; الكويت". Each scope is followed by its `stmt_ids` in parentheses, which keeps them apart.
 7. **Files changing during the pass.** BigCommerce's `statements.tsv`, `gaps.tsv` and `a2.tsv` were rewritten while this pass ran, and one read failed in the middle of a write. Gaps S01-BC-G01 to S01-BC-G23, which the rows cite, are unchanged.
 8. **Reading list.** The brief's reading list names `a2.tsv`, while its "Second pass" section also names `absence-audit.tsv`. Both were read, without the `note` column.
+
+# BigCommerce follow-up, after BigCommerce's A2 re-run and second A3 audit
+
+The coordinator asked for this after BigCommerce's A2 re-run (S01-BC-066 to S01-BC-124) and its second A3 audit (S01-BC-125 to S01-BC-128).
+
+Read: BigCommerce's new statements and terms; its `a2.tsv` as it now reads; its new gaps S01-BC-G24 to S01-BC-G40; and its `absence-audit.tsv`, without the `note` column. The coordinator later corrected S01-BC-G08 to `partly contradicted`, citing S01-BC-128, and that row was re-read. Statements S01-BC-001 to S01-BC-038 are unchanged since the first pass, and the excerpts of every row still match their statements. No variation point was added, split or merged.
+
+**Counts.**
+- BigCommerce before: 46 rows — 27 answers and 19 `gap`.
+- BigCommerce after: 88 rows — 72 answers and 16 `gap`.
+- All platforms after: 653 rows — 616 answers, 2 `absent`, 35 `gap`, 0 `not covered`.
+
+**Changed form** (`gap` to answer), where A2 now gives no gap and new statements answer:
+- S01-V-532, S01-VP-01: "your merchant account with your merchant service provider" (S01-BC-088);
+- S01-V-542, S01-VP-04: hosted payment gateways, S01-BC-089;
+- S01-V-111, S01-VP-05: Bank Deposit "directly into your bank account", S01-BC-115;
+- S01-V-554, S01-VP-11: S01-BC-088.
+
+**Gap rows kept, with A2's new gap ids:**
+- S01-V-537, S01-VP-03: G24, G32;
+- S01-V-124, S01-VP-06: G25, G32. The audit finds G25 and G08 partly contradicted by S01-BC-128, which is the new answer row S01-V-623.
+- S01-V-135, S01-VP-07: G26, G32;
+- S01-V-151, S01-VP-08: G27, G32;
+- S01-V-166, S01-VP-09: G28, G32. The audit finds G28 partly contradicted by S01-BC-125 to S01-BC-127, which carry bullet (c) only and are under S01-VP-19.
+- S01-V-172, S01-VP-10: G29, G32;
+- S01-V-224, S01-VP-12: G30, G33;
+- S01-V-326, S01-VP-14: G35, G34;
+- S01-V-349, S01-VP-15: G34;
+- S01-V-365, S01-VP-16: G36, G34;
+- S01-V-395, S01-VP-17: G37, G34;
+- S01-V-449, S01-VP-18: G34;
+- S01-V-490, S01-VP-19: G38, G34;
+- S01-V-501, S01-VP-20: G39, G34;
+- S01-V-511, S01-VP-21: G40, G34.
+- S01-V-627 is a new `gap` row for S01-VP-13, with G31 and G33.
+
+**Rows added (42, S01-V-612 to S01-V-653):**
+- S01-VP-02: S01-BC-069, S01-BC-070, S01-BC-121.
+- S01-VP-03: S01-BC-098, S01-BC-090.
+- S01-VP-04: S01-BC-066 with S01-BC-077; S01-BC-070 with S01-BC-079; S01-BC-097; S01-BC-104.
+- S01-VP-05: S01-BC-116 to S01-BC-118 ("pay you"); S01-BC-119.
+- S01-VP-06: S01-BC-128.
+- S01-VP-11: S01-BC-068 to S01-BC-070 ("a brand new PayPal platform account"); S01-BC-105 and S01-BC-106 ("a Braintree account").
+- S01-VP-13: S01-BC-096 ("the PayPal User Agreement"), and the `gap` row S01-V-627.
+- S01-VP-14: S01-BC-073; S01-BC-098 with S01-BC-099; S01-BC-090.
+- S01-VP-15:
+  - S01-BC-074, two rows (Fast, Standard);
+  - S01-BC-090;
+  - S01-BC-081;
+  - S01-BC-082 with S01-BC-083;
+  - S01-BC-098;
+  - S01-BC-107;
+  - S01-BC-108;
+  - S01-BC-099;
+  - S01-BC-121.
+- S01-VP-17: S01-BC-092 with S01-BC-109.
+- S01-VP-18:
+  - S01-BC-082 with S01-BC-083;
+  - S01-BC-083;
+  - S01-BC-092 with S01-BC-109;
+  - S01-BC-122.
+- S01-VP-19:
+  - S01-BC-075 with S01-BC-087;
+  - S01-BC-076;
+  - S01-BC-100;
+  - S01-BC-123 with S01-BC-124;
+  - S01-BC-125;
+  - S01-BC-126;
+  - S01-BC-127.
+- S01-VP-22: S01-BC-094.
+
+**Answer rows rechecked, because new statements bear on them:**
+- S01-V-026 (S01-VP-01) and S01-V-348 (S01-VP-15), from S01-BC-023, now also hold S01-BC-090. S01-BC-090 gives the same answer for "the standalone PayPal payment gateway", so the rows' `scope` now shows that arrangement.
+  - S01-V-026 also holds S01-BC-077 ("PayPal Checkout on BigCommerce is a standalone PayPal integration").
+  - S01-V-203 (S01-VP-11) has the same statement, but no new bullet (b) statement gives its answer, so it is unchanged.
+- S01-V-027 (S01-VP-01) adds S01-BC-072 and S01-BC-084, and S01-V-205 (S01-VP-11) adds S01-BC-070, S01-BC-078 and S01-BC-084. All of them name the BigCommerce Payments account.
+- S01-V-041 (S01-VP-02) and S01-V-531 (S01-VP-23) add S01-BC-100: "payouts to your account are settled in your default currency".
+- S01-V-552 (S01-VP-11) adds S01-BC-103 ("Stripe merchant account").
+- S01-V-101 and S01-V-551 are unchanged. They name "your linked PayPal account" through which PayPal processes payments (S01-BC-051, S01-BC-055). S01-BC-070 says the BigCommerce Payments account and the PayPal Business account "are two distinct accounts", and that the BigCommerce Payments account "processes and settles all transactions"; that answer is in rows of its own.
+
+**Not placed:**
+- A2 gave statements that carry the payout end only, or bullet (e) only, and these cannot be variants: S01-BC-067, S01-BC-080, S01-BC-085, S01-BC-086, S01-BC-091, S01-BC-093, S01-BC-095, S01-BC-101, S01-BC-102, S01-BC-110, S01-BC-111, S01-BC-112, S01-BC-113, S01-BC-114 and S01-BC-120.
+- A2 also gave statements to variation points whose bullet they do not carry. These were placed only under variation points of their own bullets:
+  - S01-BC-122 (bullet (c)), given to S01-VP-01 and S01-VP-04, is under S01-VP-18.
+  - S01-BC-090 is under S01-VP-01, S01-VP-03, S01-VP-14 and S01-VP-15.
+- S01-BC-071 is under no variation point. It says "fund holds" are shown in the Actions section, but gives no time or condition on which funds are held.
+- Second bullets that fit no variation point of that bullet:
+  - (a) of S01-BC-068 and S01-BC-078: an account is created, or "only handles the transactions", but nothing is said to hold, settle or collect;
+  - (c) of S01-BC-096: it points to PayPal's policies and states no condition.
+- S01-BC-058, S01-BC-041 and S01-BC-047 remain under no variation point. S01-BC-066 has S01-BC-058's words about the Balance dashboard; it is placed only for "powered by PayPal ... accept various payment methods".
+
+**Checker:** `s01-check-b3` reports no error. Its review line lists 11 statements under no variation point, all named in these notes: S01-SA-057, -148, -149, -157, -162, S01-WC-161, S01-ZD-151, S01-BC-041, -047, -058, -071.
+
+**Problems with the brief, follow-up:**
+- A2's `a2.tsv` lists statements under variation points of a bullet they do not carry, and statements of bullet (e) or the payout end only. The brief does not say whether those entries should be read as placements.
+- A gap that A2 no longer gives may still describe a part of the arrangement that has no answer, as S01-BC-G04, G06, G07 and G13 did. I followed `a2.tsv` and changed those rows to the answers.
