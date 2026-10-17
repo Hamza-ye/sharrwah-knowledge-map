@@ -764,3 +764,39 @@ Its errors are all in `yemen-marks.tsv`, phase D's file, which this pass does no
    - I kept S01-V-536, which is.
    - Rows that name the role and say no one, or no account, fills it remain: S01-V-168, S01-V-174, S01-V-183, S01-V-188 and S01-V-256.
 5. **Bank-account requirements and holds.** I removed the payout bank account's requirements from S01-VP-18. Rows whose own words tie a requirement to a delay, pause or hold of transfers stay: S01-V-424, S01-V-587, S01-V-588 and S01-V-592. The line is mine; the ruling does not draw it.
+
+## Follow-up: the role test on every basis, and wallets
+
+The coordinator answered problems 1 and 2 above.
+- Rule 4 now applies the role test whatever a variant's basis.
+- A wallet statement answers when its words say the wallet holds the merchant's sales proceeds. One that says only that it holds top-ups for the platform's services doesn't.
+- The flow ends at the payout to the merchant's own bank account. A wallet that holds sales proceeds before that is in the flow.
+
+I applied these as follows. Where the wallet itself is the answer (S01-VP-01, S01-VP-11), the statement's own words must say the wallet holds sales proceeds. Rows on a time, condition, fee or deduction acting on an in-flow wallet's funds stay.
+
+**Removed (8):**
+- S01-V-143 (S01-VP-08) and S01-V-421 (S01-VP-18): S01-WC-080, revenue of Woo Marketplace vendors.
+- S01-V-149 (S01-VP-08) and S01-V-434 (S01-VP-18): S01-SA-120, S01-SA-121 and S01-SA-123, an app partner's holding payment, "transfered to the Partner".
+- S01-V-194 (S01-VP-11): S01-ZD-059 and S01-ZD-064 name the wallet's IBAN and account but don't say the wallet holds sales proceeds. S01-ZD-059 bars the IBAN from use "خارج خدمات منصة زد" (my translation: "outside the Zid platform's services").
+- S01-V-061 (S01-VP-03) and S01-V-318 (S01-VP-14): S01-ZD-069's transfer "إلى محفظة التاجر" is not the payout. Both move (below).
+- S01-V-435 (S01-VP-18): a label's value held from the Electronic Payments Balance is what the label costs, taken before payout. S01-SA-126 joins S01-V-601 (S01-VP-19).
+
+No other variant on `term`, `identifiers` or `definition` names something outside the flow.
+
+**Added or restored (5):**
+- S01-V-656 (S01-VP-01, zid): "محفظة التاجر", where Zid transfers the dues it collects "من العملاء النهائيين" (S01-ZD-069), for زد شب.
+- S01-V-657 (S01-VP-01, salla): "المحفظة", where the money collected "من العملاء" is transferred (S01-SA-031).
+- S01-V-658 (S01-VP-02, zid): Zid transfers the dues to the merchant's wallet (S01-ZD-069), moved from S01-V-061.
+- S01-V-659 (S01-VP-15, zid): the dues reach the wallet "مرتين كل شهر ميلادي" (S01-ZD-069), moved from S01-V-318.
+- S01-V-602 (S01-VP-19, salla), restored: international label fees settled from the wallet balance (S01-SA-171). The wallet is in the flow (S01-SA-031).
+
+S01-V-601 (S01-VP-19) now also holds S01-SA-126 and S01-SA-125, which take the same label value from the Electronic Payments Balance or the wallet.
+
+**Answer sets changed:** S01-VP-01, -02, -03, -08, -11, -14, -15, -18 and -19.
+
+**Under no variation point:** 40 statements. New since the section above: S01-SA-120, S01-SA-121, S01-SA-123, S01-WC-080, S01-ZD-059 and S01-ZD-064, for the reasons given under "Removed". S01-SA-125 and S01-SA-171 are placed again.
+
+**Result:** 613 rows: 575 answers, 35 `gap`, 2 `absent` and 1 `not covered`. `s01-check-b5` reports no error in `variants.tsv` or `variation-points.tsv`. Its 70 errors are in `yemen-marks.tsv`, phase D's file:
+- 6 marks for S01-VP-01 name the removed S01-V-024;
+- 13 marks for S01-VP-11 name the removed S01-V-194;
+- 51 are for cases of the rebuilt `cases.tsv`.
