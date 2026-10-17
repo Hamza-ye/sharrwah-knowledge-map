@@ -1,6 +1,6 @@
 # S-01 method report: what broke and what changed
 
-**Draft, 17 October 2026.** Written by the coordinator through the independent review (F) and the fixes after it. It is completed after F's re-check.
+**17 October 2026.** Written by the coordinator through the independent review (F), its two re-checks, and the fixes after them. It is complete but for G1.
 
 ## Where the pilot stands
 
@@ -150,22 +150,22 @@ Each of these faults made an agent think something was missing, or readable, whe
 
 ### 12. What a subject costs
 
-**The pilot's agents processed about 1.9 billion tokens,** by their own transcripts. Most of that is context re-read on each turn.
+**The pilot's agents processed about 2.1 billion tokens,** by their own transcripts. Most of that is context re-read on each turn.
 
 | Phase | Agents | Millions of tokens |
 | --- | --- | --- |
 | A, reading each platform | 9 | 636 |
 | A2, closing gaps | 7 | 248 |
-| A3, auditing claims of absence | 7 | 257 |
-| B, variation points | 1 | 326 |
-| C, cause and coexistence | 1 | 128 |
-| D, the Yemen marks | 1 | 169 |
-| F, independent review | 1 | 79 |
+| A3, auditing claims of absence | 7 | 296 |
+| B, variation points | 1 | 346 |
+| C, cause and coexistence | 1 | 172 |
+| D, the Yemen marks | 1 | 194 |
+| F, independent review and its two re-checks | 1 | 173 |
 | Inspections of the briefs | 3 | 40 |
 
 - **Not counted:** Stage 1, which every subject shares, took about 3.1 billion more. The coordinator's own session isn't counted either.
-- **Rework is a large share.** A2 and A3 together cost four-fifths as much as phase A. B, C and D each ran again after the review.
-- **Against the usage limit.** The founder reported reaching a third of a week's limit on the first day of this week's work. By that measure, the pilot took very roughly two-fifths of a week's limit, and a batch of three to five subjects at the same cost would take one or more weeks' limits. This is a rough estimate: the tokens counted here aren't the plan's meter.
+- **Rework is a large share.** A2 and A3 together cost nearly as much as phase A. B, C and D each ran again after the review, and C four times in all.
+- **Against the usage limit.** The founder reported reaching a third of a week's limit on the first day of this week's work. By that measure, the pilot took very roughly half of a week's limit, and a batch of three to five subjects at the same cost would take one or more weeks' limits. This is a rough estimate: the tokens counted here aren't the plan's meter.
 
 ## Proposed changes before more subjects
 
@@ -187,5 +187,5 @@ Each of these faults made an agent think something was missing, or readable, whe
 
 ## To complete
 
-- The independent reviewer's re-check of the fixes.
-- G1: whether the founder can decide from the entry, and the founder's choice to scale up, change the method, or re-frame.
+- **The independent review's verdict, after two re-checks:** the entry lets the founder decide (`review.md`, "Second re-check"). No must-fix finding is open.
+- **G1:** whether the founder can decide from the entry, and the founder's choice to scale up, change the method, or re-frame.

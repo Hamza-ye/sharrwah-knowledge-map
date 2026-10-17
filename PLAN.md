@@ -403,4 +403,5 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   Phase C re-applies steps 3 to 5 under both. Phase B's rows don't change.
 - **17 October 2026,** recorded after the independent review's re-check (`studies/subjects/S-01/review.md`, finding 37). The coordinator gave phase B this ruling the same day, with the role test, and it is now marked in `briefs/B-variation-points.md`:
   - the subject's flow ends at the payout to the merchant's own bank account;
-  - a wallet is in the flow when its own words say it holds the merchant's sales proceeds before that payout. One whose words say only that it holds top-ups for the platform's services is outside it.
+  - a wallet is in the flow when its own words say it holds the merchant's sales proceeds before that payout. Where the wallet itself is the answer, the statement must say so. One whose words say only that it holds top-ups for the platform's services is outside it;
+  - a time, condition, fee or deduction acting on an in-flow wallet's funds answers as usual.

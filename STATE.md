@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 18:50 UTC.
+**Updated:** 17 October 2026, 21:05 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -256,7 +256,9 @@ Agents started earlier keep their effort.
       - phase C's fourth run: no cause or founder item changed; 55 letters became `A+B`, and 15 rows gained a `follows` row (commit `44e09ab`). So `follows` now separates the variation points by cause only (notes-c problem 18), which goes to the method report;
       - the entry takes these results (commit `4685b61`);
       - the method report's proposals were rewritten after the founder's question on cost (commit `3b59fe3`). It is a draft for G1;
-    - **Next:** F re-checks the fixes (running); then the method report is completed, and G1 goes to the founder;
+    - **F's re-checks** (commits `f04e525` and `b67bcd2`): the first found 13 of 14 must-fix items fixed, and one new overreach on option B (finding 32). The coordinator fixed it with the optional findings (commit `978e7a9`). The second re-check's verdict: the entry lets the founder decide, with no must-fix item open. Its optional findings 38 to 40 are fixed too;
+    - **the method report is complete but for G1:** about 2.1 billion tokens in all, and seven proposals before more subjects;
+    - **Next: G1 goes to the founder in chat,** with the entry's decisions and G1's own question (scale up, change the method, or re-frame);
   - **D's first checkpoint** (commit `2786cb4`):
     - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
     - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
@@ -291,11 +293,11 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (17 October 2026, 18:50 UTC):**
+**Agents running when last checked (17 October 2026, 21:05 UTC):**
 - **Running:**
-  - pilot F, re-checking the fixes: `a349d058600a20b3a` (`max`).
+  - none.
 - **Done, and resumable:**
-  - phase B `a9e10fcc19233f104`, to place what A2 adds; phase C `adc0057894ed0a4d9` and phase D `a279f7e700e54e76b`, for the rulings and S01-VP-06; Salla's A2 `aa3fbffb0ec8e81cc`;
+  - the pilot: F `a349d058600a20b3a`; phase B `a9e10fcc19233f104`; phase C `adc0057894ed0a4d9`; phase D `a279f7e700e54e76b`; Salla's A2 `aa3fbffb0ec8e81cc` and A3 `a1fbfec156e90bb84`;
   - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
   - Stage 1 step 2b, by range: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
