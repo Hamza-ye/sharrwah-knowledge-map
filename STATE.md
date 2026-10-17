@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 13:44 UTC.
+**Updated:** 17 October 2026, 14:36 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -202,7 +202,15 @@ Agents started earlier keep their effort.
     - Ten statements fit no variation point. All are peripheral, such as where to track cash-on-delivery amounts or a dashboard's name, so no variation point is missing.
     - Its notes on the brief: different words in one language, empty definitions, partly contradicted gaps, and the scope separator. They go to the method report. The B brief's reading list now names `absence-audit.tsv`.
   - C is done; its 12 founder items wait for the register entry, after D;
-  - **D's first checkpoint is done** (commit `2786cb4`):
+  - **D is done** (commit `60a9468`), on Stage 1 at `b9928d9`.
+    - 122 marks: 62 carried unchanged, 20 carried only with a partner, 40 unknown, and no `no placement`. So there's no product gap and no founder item from the marks, and no moves. No case changes any mark from today's.
+    - With PayPal unable to receive (YK-514), today's marks rest on Zid's wallet, "available to all merchants outside the Kingdom" (S01-ZD-121, met under Q2), for VP-01, 09, 11, 14, 15, 18, 19 and 23. VP-02, 03 and 04 are carried with a partner: a courier, or a card acquirer.
+  - **The register entry is written** (`entry.md`, commit `0cf1487`). The 12 founder items are one root decision, who holds the funds (S01-VP-01), and eleven that follow. The coordinator recommends, marked as such:
+    - for Yemen now, the provider of each payment method holds and Sharrwah holds none, behind one interface that can carry a Sharrwah-held balance where a licence allows;
+    - installments: defer;
+    - currency: several per merchant, with the rial's two editions apart.
+  - **F, the independent review, is running** (`max`). It writes `review.md`. Then the method report is completed, and G1 goes to the founder;
+  - **D's first checkpoint** (commit `2786cb4`):
     - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
     - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
     - the checker passed the first rows.
@@ -239,7 +247,8 @@ Agents started earlier keep their effort.
 - **Pilot phase C's agent,** `adc0057894ed0a4d9`, is done.
 - **Pilot phase B's agent,** `a9e10fcc19233f104`, is done, and can be resumed for the pilot's variation points.
 - **Done, and resumable for Stage 1:** the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`.
-- **Pilot phase D, marking on the fixed Stage 1:** agent `a279f7e700e54e76b` (`max`). It redoes `bears-on.tsv` and YC-00's marks, then marks the other cases. It reads each part of `today` with its date, and cites Q2's frame, `Q2`, for country conditions.
+- **Pilot F, the independent review:** agent `a349d058600a20b3a` (`max`), writing `studies/subjects/S-01/review.md`.
+- **Pilot phase D's agent,** `a279f7e700e54e76b`, is done, and is resumed for any marks F finds wrong.
 - **Done, and resumable:** the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`.
 - **Stage 1 step 2b's agents,** done. They can be resumed for their ranges: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
