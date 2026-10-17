@@ -187,3 +187,51 @@ Read on 2026-10-17, following `studies/subjects/S-01/briefs/A2-close-gaps.md` an
 - **`corpus_search.py` matches whole words now.** Phase A3 noted substring matches. Partial words such as "licen" and "terminat" find nothing, so I searched with full word forms.
 - **The same words in several articles.** The Pay Later sentence is in three articles, and the 21-day note three times in item 1. Each such statement quotes the first occurrence and cites the others.
 - **The checker writes outside this folder.** It writes `studies/subjects/S-01/kinds.tsv` again.
+
+# Absence audit: the A2 re-run's gaps
+
+Phase A3, read on 2026-10-17, following `studies/subjects/S-01/briefs/A3-absence-audit.md` and the coordinator's message. Statements S01-BC-125 to S01-BC-128, citations S01-BC-C216 to S01-BC-C222 and the `absence-audit.tsv` rows for G24 to G31 and G35 to G40 are from this pass. No existing row was changed.
+
+## What I found
+
+- **Claims audited:** the fourteen `searched, not found` gaps of the A2 re-run, G24 to G31 and G35 to G40. G32 to G34 are `page not read` and are left out. `absences.tsv` has no rows.
+- **Partly contradicted: G25, G28 and G38.**
+  - **G25 (agency).** The Master Services Agreement's "Independent Contractors" clause says no agency relationship "is created by this Agreement or your use of the Services" (S01-BC-128). Nothing speaks of agency for PayPal, Stripe, Braintree or another provider.
+  - **G28 (who takes fees).** Three sources name who charges processing or chargeback fees:
+    - for the standalone PayPal gateway, "PayPal ... charges a per-transaction fee" (S01-BC-125);
+    - for eligible Embedded Payment Providers, the product page's FAQ says "Standard payment processing fees from your chosen payment provider still apply" (S01-BC-126). This text is in the raw page only;
+    - in general, "Some credit card processors charge a fee for chargebacks or refunds" (S01-BC-127).
+
+    None says the fees or chargebacks are taken from the merchant's funds or payouts.
+  - **G38 (what is deducted before payout).** It leaves out two statements already recorded. S01-BC-049 says cross-border fees "can change the final settlement amount". S01-BC-014 says "the merchant has to pay a conversion fee". No statement was added for G38.
+- **Confirmed:** G24, G26, G27, G29, G30, G31, G35, G36, G37, G39 and G40. No held BigCommerce document does any of the following:
+  - names who issues the payout from the BigCommerce Payments balance or from Braintree;
+  - names who holds a reserve or holds back funds, or when a reserve is kept;
+  - mentions a lien, security interest or set-off;
+  - names a licence or terms under which funds are held;
+  - gives a payout schedule or the payout frequencies offered, or a minimum payout;
+  - says what happens to funds, or to shoppers' money, when an account or store closes.
+- **Agreements incorporated by BigCommerce's terms.** The coordinator's message asked me to read the agreement for the PayPal account that BigCommerce Payments holds funds in, if BigCommerce's terms name it as binding on the merchant. They don't:
+  - The Master Services Agreement (held, revision June 1, 2026; the live page, rendered on 2026-10-17, shows the same revision) names no PayPal, Braintree or Stripe agreement. Its "Incorporated Terms" list names no payments agreement either.
+  - Its Scope says only that Third-Party Products "are governed by their own terms of service".
+  - The Help Center names "the PayPal User Agreement" only as where PayPal's policies on chargebacks and refunds can be read, for the standalone PayPal gateway (S01-BC-096). The BigCommerce Payments article names no agreement.
+
+  So I read and cited no PayPal agreement.
+- **Sources.** Every new citation is to a held capture (`access_path` `local`). I cited no live URL. The only live page I read is `https://www.commerce.com/terms/`, rendered through `method/capture/page_text.mjs` to compare it with the held copy. It is not cited.
+
+## Searches too large to read in full
+
+- **The partner, country and plan searches** together listed 143 documents. "United Kingdom" / "United States" / "UK" / "US" alone listed 92, and the plan names listed 102.
+- **How I narrowed them:**
+  - I extracted every sentence matching the claim words from every held capture of the bigcommerce.com, commerce.com and bitpay.com hosts, text and raw page: 384 sentences from 73 documents. I read all of them. The claim words were payout, reserve, withhold, held, on hold, hold times, frozen, agent, agency, on behalf, lien, security interest, set-off, licence, regulated, money transmitter, e-money, user agreement, disburse, deduct, chargeback, discontinue, disconnect, terminate, suspend, closed account and settle.
+  - I read in full item 1 (Connecting with BigCommerce Payments) and the FAQ sections of items 3 and 5, then read the matching passages of the other Help Center items.
+  - I read these Master Services Agreement sections: Scope, Incorporated Terms, Effects of Termination, Independent Contractors and Third-Party Product Integration.
+- **The Trust Center files** in `evidence/product-class/blocked-evidence-founder/bigcommerce/` are not searched by `corpus_search.py`. I converted them to text with `pdftotext` and searched them for the claim words. They speak of security, certification and PCI, not of funds.
+
+## Problems with the method
+
+- **`corpus_search.py` can hide a capture behind an older shell of the same address.** It lists each address once, and the first capture seen wins. The `refund` search matched `Processing-Refunds` through its address, in an earlier run that holds only the Help Center's shell ("Loading", "Sorry to interrupt"). So it showed that shell as the snippet, not the founder's full capture. A term that appears only in the full capture is still found, because the empty shell doesn't match. A term that matches the address shows the wrong snippet. I read the founder's capture of every Help Center article that the searches listed.
+- **`stmt_ids` for G38 names statements I didn't add.** The checker requires statements for a contradicted gap, and the brief's column is "the statements you added". G38 is contradicted only by phase A and A2 statements, so its row names those (S01-BC-049, S01-BC-014), and its note says so.
+- **An earlier audit row missed a clause.** The first A3 pass confirmed G08 (agency), and its note lists the Master Services Agreement's definitions as the only agency passages there. The same agreement's "Independent Contractors" clause (S01-BC-128) bears on G08 too. The brief forbids changing existing rows, so G08's row stands as it was.
+- **The coordinator's premise about the PayPal agreement** isn't borne out by BigCommerce's terms, as above. Two things could still count it as incorporated: BigCommerce Payments' requirement of a PayPal Business account, or the Help Center's pointer to the PayPal User Agreement. Either would take a decision on the method. Neither is a statement in BigCommerce's terms.
+- **The checker writes outside this folder.** It writes `studies/subjects/S-01/kinds.tsv` again.
