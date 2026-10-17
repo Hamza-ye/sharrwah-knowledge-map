@@ -340,3 +340,67 @@ These are findings 2 (places), 7 (disputes no source makes), 9 (dates of time-li
 - the rest of finding 8 (YA-55 and the internet shutdowns), and findings 9, 10, 11 and 12;
 - the axes that don't vary (13);
 - the minor place and quote faults (14, 15).
+
+## Check of S-01's axes
+
+**Checked, 17 October 2026.** The axes and constants that phase D's `studies/subjects/S-01/bears-on.tsv` names, at commit `900c24a` (`axes.tsv` sha256 `ef7e2d6c70aae0e46218cc95c1dd9e14c15a8beec43428f7fe1e69d1f4837f06`):
+- axes YA-27, YA-62, YA-126, YA-128, YA-130 and YA-131;
+- constants YK-22, YK-23, YK-24, YK-161, YK-167, YK-184, YK-203, YK-206 and YK-513.
+
+**How.** For each one I read every row's pass-1 state, label, place, `holds`, date and quotes, and opened the source where a quote left a question. I also checked the 9 cases that vary these axes: YC-120, 121, 155, 200, 201, 203, 309, 336 and 339.
+
+**Result.** What isn't listed below says what its quotes say, and each `today` part is the latest the evidence shows for its place. I sampled YA-130 in the first review and called it faithful; the Wagbat fault below is one I missed.
+
+### Must fix before phase D marks on
+
+1. **YA-62, PayPal: the fact a merchant needs, that an account in Yemen can't receive, is only in a note.**
+   - `today` reads "Sending from Yemen @ PayPal's service". YQ-D634 and YQ-E728 share that label, and the source's "only" stays in YQ-D634's `note`.
+   - YE-D997: "الدول العربية التي تستطيع إرسال الأموال فقط (أي لا تستطيع استقبال الأموال) عن طريق هذه الخدمة هي: جزر القمر، جيبوتي، موريتانيا، الصومال، اليمن."
+   - "Can't receive" is not the same thing at more detail. YQ-E728's page says nothing of receiving (YE-E842: "يلزم وجود حساب لإرسال وتلقي المدفوعات."). It is a second fact of the same source, which step 2a's rule 2 ("parts of one source") makes its own condition.
+   - **Fix:** split it off, as YK-513 was for Wise: a condition "whether a PayPal account in Yemen can receive payments", holding YQ-D634's "not received" at PayPal's service. Add it to `bears-on.tsv` for the PayPal value propositions. YA-62's `what_varies` still names "send only", which no state now carries.
+   - YC-155 ("Available @ PayPal's service", `occurred`) rests on the Wise guide's "Is PayPal available in Yemen? Yes, PayPal is accepted in Yemen." (YE-E634). Its label follows its quote, but a marker must not read it as receiving.
+2. **YK-23: the label drops the source's purpose limit.**
+   - Label: "allowed if the recipient is not on a sanctions list".
+   - YE-D420: "وفقًا للوائح وزارة الخزانة الأمريكية، التحويلات لأغراض شخصية أو إنسانية مسموحة طالما أن المستلم ليس مدرجًا على قوائم العقوبات الدولية."
+   - The source speaks only of personal or humanitarian transfers. It says nothing of payment for a merchant's sales.
+   - **Fix:** "personal or humanitarian transfers allowed if the recipient is not on a sanctions list".
+3. **YA-62, Zid Pay: the state comes from Zid Pay's Kuwait terms, but its place is Zid Pay as a whole.**
+   - YQ-E897: "Unavailable @ Zid Pay's service".
+   - YE-E1332: "Terms and Conditions for Zed Pay – Kuwait". YE-E1333: "as outlined by Zid Pay or the State of Kuwait or the merchant's country of activity". The page's address ends `zidpay-terms-conditions-kw`.
+   - **Fix:** under step 2b's place rule, place it at the product: "Zid Pay Kuwait (Zid)'s service". S-01's Zid Pay value propositions (VP-16, VP-20, VP-21) should not read it as Zid Pay's terms everywhere.
+4. **YA-130, Wagbat: the label leaves out cash on delivery, which its own quote names.**
+   - YQ-C486: "the Rasidi service @ Wagbat's service". YE-C520: "الدفع نقدًا عند الاستلام أو عبر خدمة رصيدي."
+   - The axis lists the methods each seller accepts, and its other parts include cash on delivery where the source gives it.
+   - **Fix:** "cash on delivery or the Rasidi service".
+
+### Minor
+
+- **YA-126.** YQ-E663 shares the label "difficult, for lack of national infrastructure", but its quotes (BPC, July 2022) give only "the large number of people who face daily" (YE-E746) and "difficulties in transferring funds between" (YE-E747). No `today` or case changes.
+- **YA-128.** Awsan's cash on delivery is "لجميع العملاء في العاصمة صنعاء" (YE-C636, YQ-C560), but its label is "available". Three other stores' Sana'a-only cash on delivery reads "available inside Sana'a".
+
+### Other axes and constants on the same services and rails, left out of S-01's list
+
+- **Cards** (beside YK-161):
+  - YA-107: MEPS Yemen's gateway lets banks give merchants acceptance of "Mastercard - Visa - American Express  UnionPay" (YE-E814). At place not stated it is "nearly stopped" (YE-E973, 2023) and "lacking" (YE-D187, 2025).
+  - YK-162: online stores that accept cards.
+  - YK-335 (YE-E974, 2023): "Yemeni people no longer use MasterCards or Visas, which was not the case before the war broke out."
+- **Online payment through a bank or wallet** (beside YA-130 and YA-131):
+  - YA-68, which carries Bazzarry's own listing (YQ-D123, 10 October 2026): "يمكنك الآن الدفع بأمان عبر بنك القطيبي من خلال تكامل أونلاين كامل". It is later than YA-130's 2025 part for Bazzarry, and shows the bank payment that YC-203 gives only as `occurred`.
+  - YK-131: the payment APIs merchants can use.
+- **Bank transfers** (beside YA-126 and YA-131):
+  - YK-61: wires from abroad come only through intermediary banks. YE-E323: "direct wire transfers from western banks to Yemen have not been possible".
+  - YK-168: the Aden bank's count of SWIFT transfers between local banks, 356 in Q3 2024.
+  - YK-505: the national switch for transfers, launched with seven banks in March 2024.
+- **Cash on delivery** (beside YA-128 and YK-203):
+  - YA-129 (YE-E622, Bazzarry's customers in Aden): "Cash on delivery was the preferred payment method for 74.44% of respondents".
+- **Sanctions** (beside YA-27 and YK-22 to YK-24). YK-22 records an assurance withdrawn, not a prohibition. What YK-22's source says remains allowed sits elsewhere:
+  - YA-28: the general licences.
+  - YK-392 (YE-E550): "FAQ 1219 indicates that non-US persons will not expose themselves to secondary sanctions risk if they engage in or facilitate transactions for which a US person would not require a specific license".
+
+  From other sources:
+  - YK-21: secondary-sanctions risk for significant transactions with designated persons.
+  - YK-370: Yemen Kuwait Bank is designated, and its own page presents ONE Cash, Floosak and Cash (YQ-A048).
+
+### Anything else
+
+`bears-on.tsv` still quotes YA-62's old labels, "Available @ PayPal's service" (today) and "Send only @ PayPal's service". The rebuild replaced both, so its basis needs redoing against `900c24a`.
