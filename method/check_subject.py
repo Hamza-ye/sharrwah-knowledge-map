@@ -94,6 +94,16 @@ def read(path, name, check_head=True):
 def ids(s):
     return [x for x in re.split(r"[,\s;]+", s or "") if x]
 
+def read_later(plat):
+    """What phases A2 and A3 list as read for a platform."""
+    return " ".join(r.get("read", "") for n in ("a2.tsv", "absence-audit.tsv")
+                    for r in (read(os.path.join(subj, plat, n), f"{plat}/{n}", check_head=False) or []))
+
+def was_read(held, later):
+    """A page a gap was routed to, read since by phase A2 or A3: they name its held copy (a capture by its item's
+    folder), not only its address, which may have been listed when it couldn't be fetched."""
+    return any((os.path.dirname(h["location"]) if h["kind"] == "capture" else h["location"]) in later for h in held)
+
 def unique(name, recs, key, pat):
     for k, n in Counter(r[key] for r in recs).items():
         if n > 1:
@@ -118,6 +128,7 @@ for plat, code in PLATFORMS.items():
     tm = read(os.path.join(d, "terms.tsv"), f"{plat}/terms.tsv") or []
     ab = read(os.path.join(d, "absences.tsv"), f"{plat}/absences.tsv")
     gp = read(os.path.join(d, "gaps.tsv"), f"{plat}/gaps.tsv") or []
+    later = read_later(plat)
     ct = read(os.path.join(d, "citations.tsv"), f"{plat}/citations.tsv") or []
     if ab is None:
         err(f"{plat}/absences.tsv", "", "file missing (a header row alone is fine)")
@@ -210,7 +221,7 @@ for plat, code in PLATFORMS.items():
         if g["who_can"] in ("founder", "either"):
             for u in urls_in(g["route"]):
                 held = [h for h in HELD.lookup(u) if h["readable"]]
-                if held:
+                if held and not was_read(held, later):   # once A2 or A3 reads it, a2.tsv says what remains
                     err(f, gid, f"{u} is held at {describe(held[0])}: read it instead of routing it to the founder")
     for c in ct:
         cid, src, f = c["cite_id"], c["source"], f"{plat}/citations.tsv"
@@ -391,6 +402,7 @@ if var is not None:
                                 f"{', '.join(unplaced[:12])}", "review")
 for plat in PLATFORMS:
     a2 = read(os.path.join(subj, plat, "a2.tsv"), f"{plat}/a2.tsv")
+    later = read_later(plat)
     for r in a2 or []:
         if r["vp_id"] not in vp:
             err(f"{plat}/a2.tsv", r["vp_id"], "not a variation point")
@@ -400,6 +412,11 @@ for plat in PLATFORMS:
         for g in ids(r["gap_ids"]):
             if g not in gaps:
                 err(f"{plat}/a2.tsv", r["vp_id"], f"{g} is not a gap")
+                continue
+            route = [(u, [h for h in HELD.lookup(u) if h["readable"]]) for u in urls_in(gaps[g]["route"])]
+            if gaps[g]["gap_kind"] == "page not read" and route and all(h and was_read(h, later) for u, h in route):
+                err(f"{plat}/a2.tsv", r["vp_id"], f"{g} remains, but every page it waited on has been read: "
+                                                  "record what they state, or a new gap listing what was read")
         for a in ids(r["absence_ids"]):
             if a not in absences:
                 err(f"{plat}/a2.tsv", r["vp_id"], f"{a} is not an absence")
