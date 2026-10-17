@@ -156,3 +156,23 @@ Brief `briefs/A2-close-gaps.md`. Task: `variants.tsv` row S01-V-655, Salla's `no
 **Problems with the method**
 - `corpus_search.py` matches an Arabic term as a string, so 'الجمعيات الخيرية' does not match 'للجمعيات الخيرية': the `--all` search for it with 'الإذن' found nothing, and the search with 'الخيرية' found `payments.json`.
 - `check_subject.py` rewrites `studies/subjects/S-01/kinds.tsv` when it runs; the run at the end of this phase adds the new statements' rows to it.
+
+## Absence audit, second run (S01-SA-G07), 2026-10-17
+
+Phase A3, brief `briefs/A3-absence-audit.md`, for the one claim phase A2 added: S01-SA-G07 (in what capacity Salla, or another party, receives or holds buyers' payments made through مدفوعات سلة). One row added to `absence-audit.tsv`; the seven earlier rows are unchanged. Added S01-SA-202 (one statement), S01-SA-C322 and C323, and two terms (أموالك; حل متكامل). No existing row was changed.
+
+**What I found**
+- G07, confirmed. No held or captured source names Salla or a partner as the merchant's agent for these payments, says it receives or holds them on the merchant's behalf or under its authorization, or names another capacity. The agency and authorization words occur only where phase A2 recorded them (carrier-app waybill consent, the holding management policy for partner apps, charity gateway accounts, the cross-border MoR partnership area) and in senses unrelated to the money: app OAuth permissions, ads, domains, AI agents, chat agents, carriers' agents, and the affiliate agreement's clause that it creates no agency between Salla and the affiliate.
+- Two older salla.com blog posts (shown as 'نشر منذ 3 سنوات') describe payment gateways in general as 'وسيط إلكتروني بين طرفين' and 'وسيط إلكتروني -بين المشتري والتاجر - لاستلام وتسليم الأموال'. They do not apply it to Salla's own service. Nothing was recorded from them.
+- Recorded without closing the gap: a salla.com blog post held in the fetch archive, in Arabic and in Salla's English, says 'ما يحتاج تروح لبنك، ولا توقع عقود مع شركات دفع خارجية. سلة تعطيك حل متكامل يستقبل أموالك ويحولها لحسابك بكل أمان' (S01-SA-202). It names no entity, account or capacity, and names neither مدفوعات سلة nor عقد خدمات الدفع.
+- `held_index.py https://s.salla.sa/payments/kyc` (the route's page): not held.
+
+**Searches too broad to read in full, and how I narrowed them**
+- 72 `corpus_search.py` commands, each with `--max 500`, listed 1,206 documents in all. Broad hits: 'agent' (about 340 documents, mostly docs.salla.dev navigation, 'user-agent' fields, AI and chat agents), 'authorization' (about 170, mostly app permission texts and API headers), 'أمين' (146 Arabic articles, matching تأمين), 'on your behalf' and 'نيابة عنك' (about 110, mostly apps.salla.sa permission texts).
+- I read titles and snippets of every listed document. Then, with a script run with `python3 -I` from my scratchpad, I printed every paragraph of every listed document that carries both an agency, capacity or receipt word and a word for the money (98 paragraphs), and read those. I read in full the documents whose paragraphs bore on the claim.
+- The `--all` searches that pair مدفوعات سلة with لحساب or وسيط match mostly through the salla.com and help.salla.sa navigation menus ('المدفوعات', and لحساب inside 'الحساب'). I read the listed help articles at their لحساب paragraphs; the salla.com pages by URL and snippet.
+
+**Problems with the method**
+- `corpus_search.py` matches an Arabic term inside words, so 'لحساب' matches 'الحساب' and 'مُيسّر' matches 'ميسر' (Moyasar). These searches list far more than they should.
+- The capture-run locators in the search output carry this repository's current commit, which changed while the searches ran (four different commits appear across the outputs).
+- The brief defines `stmt_ids` only for contradictions, so the row for this confirmed claim leaves it empty; S01-SA-202 is named in its note.

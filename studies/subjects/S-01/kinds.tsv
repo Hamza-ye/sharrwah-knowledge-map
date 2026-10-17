@@ -363,6 +363,7 @@ S01-SA-198	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/
 S01-SA-199	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-SA-200	observed	structures/salla/dashboard-translations is built from a recorded session
 S01-SA-201	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-202	stated	run 20261008T121631Z-com-pages fetched pages
 S01-SA-N01	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
 S01-WC-001	official page	the address is a terms, policy, legal or pricing page
 S01-WC-002	official page	the address is a terms, policy, legal or pricing page
