@@ -4,9 +4,11 @@ Status: redone on two updated inputs:
 - Stage 1 as rebuilt at `4e3f3dd` (228 axes, 515 constants, 345 cases);
 - `variants.tsv` after phase B's re-check (613 variants).
 
+Then followed up after phase B placed Salla's statements on agent (commit `4fff36c`). S01-VP-03, 04, 06, 11, 13 and 19 were re-marked; see the last section. The other variation points' rows are as they were.
+
 `bears-on.tsv` has the 23 variation points. `yemen-marks.tsv` has 183 rows in 30 cases: `YC-00` and every case whose `name` lists an axis that a variation point bears on. The other 29 cases are `YC-120` to `YC-123`, `YC-156`, `YC-164`, `YC-191` to `YC-194`, `YC-196` to `YC-205`, `YC-294`, `YC-299`, `YC-310`, `YC-311`, `YC-329`, `YC-338`, `YC-341`, `YC-343` and `YC-344`.
 
-The checker (`s01-check-d2`) reports no errors. Its one review line is about `variants.tsv`, phase B's file.
+The checker reports no errors, both after the redo (`s01-check-d2`) and after the follow-up (`s01-check-d3`). Its one review line is about `variants.tsv`, phase B's file.
 
 ## The marks
 
@@ -31,7 +33,7 @@ The checker (`s01-check-d2`) reports no errors. Its one review line is about `va
   - S01-VP-13 (S01-V-244) rests on WooCommerce, Inc. as the party for residents outside the Designated Countries (S01-WC-012, S01-WC-014), checked against Q2's frame.
   - S01-VP-05 (S01-V-102, direct bank transfer) and S01-VP-11 (S01-V-195, Zid's bank transfer, the merchant as account owner) rest on YA-131.
 - **Carried only with a partner:**
-  - S01-VP-02 (S01-V-038) and S01-VP-04 (S01-V-093): a carrier outside Salla's shipping labels. The partner is Torod, on YK-203.
+  - S01-VP-02 (S01-V-038): a carrier outside Salla's shipping labels. S01-VP-04 (S01-V-091): the shipping company, or the store's delegate, collects cash on delivery. In both, the partner is Torod, on YK-203.
   - S01-VP-03 (S01-V-059): SoftPOS through a card service provider. The partner is SabaCard, on YK-161.
 - **No placement:** S01-VP-10, in all six of its cases. See the next section.
 - **Unknown:** S01-VP-01, 06, 07, 08, 12, 16, 17, 20, 21 and 22.
@@ -151,7 +153,7 @@ YA-122's "not operating @ place not stated" (2026-02) and SabaCard's part (2026-
   - the variant's condition is shown met and its role is held by the platform or the merchant's own account (Zid's wallet, direct bank transfer, cheques, Zid's bank transfer);
   - the condition names the party and Q2 meets it (WooCommerce, Inc.).
 - I gave `carried only with a partner` when the variant puts a role with a party outside the platform and Stage 1 names one that can take it:
-  - "شركة الشحن" in S01-SA-090 and S01-SA-091, taken by Torod;
+  - "شركة الشحن" in S01-SA-090 and S01-SA-091, and the store's delegates in S01-SA-198 ("مندوب محلي أو شركة شحن خارجية غير مرتبطة مباشرة بسلة"), taken by Torod;
   - "مزود الخدمة مثل جيديا" in S01-SA-113, taken by SabaCard;
   - "البنك" in S01-ZD-075 (S01-V-269), taken by Kuraimi.
 
@@ -213,3 +215,42 @@ The other 20 marks are unchanged.
 - **Moves.** None of the cited evidence names a move that would change a mark:
   - YA-62's WooPayments part, "a request to add it open" (YE-E641, YE-E642, YE-E645), is a feature request on WooCommerce's site. That is not a consultation, partnership, licence or regulator's action.
   - YA-28's general licences are licences, but no mark rests on S01-SH-047 or on Zid Pay's prohibited-activity conditions.
+
+## Follow-up: Salla's statements on agent (commit `4fff36c`)
+
+**What changed in the inputs.** Phase B placed Salla's new statements:
+- S01-VP-06 gained an answer, S01-V-660: a charity connects its own gateway account and authorises Salla to use it (S01-SA-195). The (e) statement S01-SA-072 conditions S01-SA-195: charities can't use Salla's gateway and must connect an outside one, "pay tabs".
+- S01-V-655 became a gap (S01-SA-G07).
+- Seven rows gained statements:
+  - S01-V-055 (S01-SA-202);
+  - S01-V-085 (S01-SA-195, S01-SA-202);
+  - S01-V-091 (S01-SA-198);
+  - S01-V-187 (S01-SA-195);
+  - S01-V-256 (S01-SA-202);
+  - S01-V-475 (S01-SA-200);
+  - S01-V-601 (S01-SA-190 to S01-SA-192).
+
+**How the new conditions were read.**
+
+| Condition | Read as | Why |
+| --- | --- | --- |
+| S01-SA-202's scope, "السعودية" (a salla.com guide to starting e-commerce in Saudi Arabia) | not met on Q2 | it names only a place |
+| S01-SA-198's scope, "مناديب المتجر: مندوب محلي أو شركة شحن خارجية غير مرتبطة مباشرة بسلة" | the same as the carrier scope of S01-SA-090 and S01-SA-091 | it is the store's delegates, a local one or an outside shipping company. YK-203 shows Torod collecting money from recipients for business accounts, a party that can take that role |
+| S01-SA-190's scope, "{{carrier}} app" | a carrier's app, with YK-206 | it is Salla's English for "تطبيق {{carrier}}" |
+| S01-SA-195 and S01-SA-072 (charities), S01-SA-200 ("صندوق سلة") | bearing on no Stage 1 axis or constant | Q2's frame does not settle them |
+
+For S01-SA-198: YA-128 gives online sellers in Yemen taking cash on delivery, but not who collects it. So it doesn't show the merchant's own delegate taking the role, and the mark is the partner one.
+
+**`bears-on.tsv`.** The rows of the six variation points now quote the new conditions. No row gained an axis or a constant, so the cases to mark are the same.
+
+**What I revisited.** I re-marked S01-VP-03, 04, 06, 11, 13 and 19 in every case their rows cover: 13, 11, 6, 19, 24 and 6 cases. No other row changed.
+
+**What changed.**
+
+| VP | Rows | Change | Why |
+| --- | --- | --- | --- |
+| S01-VP-04 | all 11 | the named variant changes from S01-V-093 to S01-V-091; the mark stays `carried only with a partner` | S01-V-091 now holds with a partner through S01-SA-198, with YK-203, and it is the lower id |
+| S01-VP-06 | all 6 | mark unchanged (`unknown`); the note and `what_would_show_it` now name S01-V-660 | S01-V-660 rests on the charity conditions, which Stage 1 doesn't settle |
+| S01-VP-19 | all 6 | mark unchanged; the note's list of lower variants now gives S01-SA-200 for S01-V-475 | S01-V-475 gained a statement |
+| S01-VP-03, 11 and 13 | all | rows unchanged | their marks don't change: S01-V-055 and S01-V-256 gain a statement that fails on Q2 but keep ones with no stated condition, and S01-V-187 stays unsettled |
+
