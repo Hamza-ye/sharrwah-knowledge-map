@@ -256,3 +256,84 @@ Format changes applied to every row:
   - S01-V-213, S01-V-214 and S01-V-216 to S01-V-218. These keep `answers`, and the difference in words is recorded.
 - **Translations:** S01-V-220 and S01-V-222 now mark the translations that `answers` rests on as mine.
 
+### S01-VP-13 "terms of service"
+
+- **Changed form:** S01-V-272 (bigcommerce) changed from `gap` (S01-BC-G02) to an answer from S01-BC-039, S01-BC-043 and S01-BC-044: "the merchant’s payment relationship remains directly with PayPal".
+  - A2 gave S01-BC-G15 for this variation point, and the audit finds it contradicted by S01-BC-062 to S01-BC-064, so no `gap` row was kept.
+  - New BigCommerce rows: S01-V-567 ("the beta terms", S01-BC-059) and S01-V-568 ("a Pricing Contract", S01-BC-062).
+- **Gap rows:**
+  - S01-V-254 (salla) stays `gap` with S01-SA-G01, which A2 gave again.
+  - S01-V-271 (zid) stays `gap`, now with S01-ZD-G13.
+- **New statements placed:**
+  - S01-SA-137, S01-SA-147 and S01-SA-156 join S01-V-253 (عقد خدمات الدفع, "payment services agreement").
+  - Shopify: S01-SH-159 (S01-V-569), S01-SH-147 (S01-V-570) and S01-SH-158 (S01-V-571; with S01-SH-148, S01-V-572).
+  - WooCommerce:
+    - S01-WC-130 (S01-V-573);
+    - S01-WC-133, S01-WC-140, S01-WC-141, S01-WC-142 and S01-WC-151 (S01-V-574, the Network International Terms);
+    - S01-WC-148 (S01-V-575);
+    - S01-WC-153 (S01-V-576);
+    - S01-WC-149 and S01-WC-150 (S01-V-577).
+- **Rechecked against another platform:**
+  - S01-V-225 (X is quoted from it), S01-V-227 to S01-V-239, S01-V-244, S01-V-245, S01-V-248 to S01-V-251, S01-V-264, S01-V-266, S01-V-273 and S01-V-274.
+  - The Payment Processor List rows (S01-V-234 to S01-V-238) lost `identifiers`, which they shared only with S01-SH-006. S01-V-234 keeps `term`, against S01-WC-102 and S01-WC-103.
+  - S01-V-244, S01-V-245, S01-V-248 and S01-V-266 now have `identifiers` against S01-SH-147 or S01-SH-159, two statements A3 added.
+- **Translations:** the Arabic rows S01-V-253 to S01-V-270 and S01-V-275 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-14 "payout schedule"
+
+- **Gap rows:** S01-V-326 (bigcommerce) stays `gap`, now with A2's S01-BC-G16 in place of S01-BC-G03.
+- **New statements placed:**
+  - S01-SA-134 joins S01-V-292.
+  - S01-SA-151 and S01-SA-152 join S01-V-301 (الإمارات, "كل يوم خميس").
+  - S01-SA-142 and S01-SA-143 join S01-V-302 (الكويت, next business day).
+  - S01-SA-137 joins S01-V-303.
+  - S01-SA-164 joins S01-V-308 (Tuesday).
+  - S01-WC-164 is S01-V-578 (instant payout requirements).
+  - S01-ZD-150 is S01-V-579 ("أكثر من عملية سحب في اليوم").
+- **Not placed:** S01-SA-162, which A2 gave this variation point. It gives the invoice frequency per plan ("Invoice frequency depends on your plan"), not when funds are paid out, and fits no variation point.
+- **Rechecked against another platform:** S01-V-276 (X is quoted from it) to S01-V-291 and S01-V-309.
+  - Shopify and WooCommerce define "payout schedule" differently in `terms.tsv`. Rows that had `term` on it now have `answers` only.
+  - S01-V-277 lost `identifiers`, which it shared only with S01-WC-041.
+- **Translations:** the Arabic rows S01-V-292 to S01-V-325 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-15 "payout timing"
+
+- **Gap rows** (none changed form):
+  - S01-V-347 (zid) stays `gap`, now with A2's S01-ZD-G17.
+  - S01-V-349 (bigcommerce) stays `gap`, now with A2's S01-BC-G17.
+- **New statements placed:**
+  - S01-SA-138 joins S01-V-341 (الكويت).
+  - S01-ZD-150 joins S01-V-343 (2 to 5 working days).
+  - S01-WC-152 is S01-V-580: no access "prior to such funds being credited to User’s Payout Account".
+- **Rechecked against another platform:** S01-V-327 (X is quoted from it) to S01-V-340, S01-V-348 and S01-V-521.
+  - S01-V-328, S01-V-329, S01-V-335 and S01-V-521 lost `identifiers`, which they shared only with statements of their own platform.
+  - S01-V-330 lost `term`, which it shared only with S01-SH-061.
+  - S01-V-331 and S01-V-337 now share `identifiers` with each other: the time until funds can be paid out, by country.
+- **Translations:** the Arabic rows S01-V-341 and S01-V-343 to S01-V-346 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-16 "Minimum payout amount"
+
+- **Gap rows:** S01-V-365 (bigcommerce) stays `gap`, now with A2's S01-BC-G18.
+- **New statements placed:** all six statements A2 gave this variation point join existing Salla rows, together with three that A2 gave other variation points.
+  - S01-SA-166 joins S01-V-354 (100 riyals).
+  - S01-SA-163 joins S01-V-355 (SAR/AED 100).
+  - S01-SA-151, S01-SA-153 and S01-SA-154 join S01-V-357 (AED 250).
+  - S01-SA-140 and S01-SA-143 join S01-V-358 (KWD 1).
+  - S01-SA-141 joins S01-V-359 (no minimum, الكويت).
+  - S01-V-358 and S01-V-359 both cover الكويت, with different answers. Both are kept as variants.
+- **Rechecked against another platform:** S01-V-350 (X is quoted from it) and S01-V-351.
+- **Translations:** the Arabic rows S01-V-354, S01-V-356 to S01-V-364 now mark the translations that `answers` rests on as mine.
+
+### S01-VP-17 "reserve"
+
+- **Changed form:** S01-V-394 (salla) changed from `not covered` to `gap`, with A2's S01-SA-G06, which the audit confirms.
+- **Gap rows:** S01-V-395 (bigcommerce) stays `gap`, now with A2's S01-BC-G19.
+- **New statements placed:**
+  - S01-WC-131 is S01-V-581 (the Reserve Notice, Australia).
+  - S01-SH-161 is S01-V-582 (Reserve provisions "continue after termination").
+  - S01-SH-149 is S01-V-583 (the Reserve may be debited for refunds, reversals and chargebacks).
+- **Rechecked against another platform:** every Shopify and WooCommerce row except S01-V-379 and S01-V-392. That is S01-V-366 (X is quoted from it) to S01-V-378 and S01-V-380 to S01-V-391; most had been compared within their own platform.
+  - Shopify and WooCommerce define "reserve", "Reserve Account" and "rolling reserve" differently in `terms.tsv`, so those rows have `answers` only.
+  - The Shopify Help Center rows keep `term` against Zid's "مبلغ احتياطي" (S01-ZD-020). Shopify's own Arabic for "reserve" in `terms.tsv` is "الاحتياطي", and Zid gives no definition. Those rows are S01-V-366, S01-V-367 and S01-V-371 to S01-V-374.
+- **Translations:** S01-V-393 now marks its translation as mine.
+
