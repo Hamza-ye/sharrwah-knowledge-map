@@ -162,14 +162,21 @@ Each of these faults made an agent think something was missing, or readable, whe
 
 ## Proposed changes before more subjects
 
-These are the coordinator's proposals, for the founder at G1:
-1. **Keep the rulings made in the pilot,** recorded in `PLAN.md` section 11, and the checks that enforce them.
-2. **Start phase A from the corpus search.** A3 found what A missed by searching the held corpora in every language. Running `method/corpus_search.py` on the subject's terms before reading should make A2 and A3 smaller. A3 stays, to audit what is still claimed missing.
-3. **Phase C marks the dependencies between founder items,** so a root decision can be answered once.
-4. **Stage 1's `within` relation and its faithfulness pass run before the next subject's phase D,** so marks don't rest on unchecked facts. Both are already planned before Stage 4.
-5. **Every Yemen fact an entry cites is checked against its quotes before the review,** as the pilot's marked facts were.
-6. **One independent review per subject stays.** It found what the rule-based checks couldn't.
-7. **The first batch measures the cost per subject,** and the batch size is set from it.
+**Why.** Very roughly half of the pilot's cost was one-time or rework: restarts after usage limits, new tools, and re-runs after the review found faults in the method. But a subject run cleanly this way would still cost about a billion tokens, very roughly a fifth to a quarter of a week's limit. The method protects against the right faults: unsupported claims, missed evidence, and anchoring. Its cost doesn't scale. The coordinator didn't measure cost until the pilot's end, and should have.
+
+**The coordinator's proposals,** for the founder at G1:
+1. **Scope each subject to its decisions first.** The pilot split one subject into 23 variation points, one per word the platforms use. They gave 14 founder items, and one decision settles 11 of them. Every later phase multiplied by 23. A subject should first name its few root decisions, from the platforms' own top-level statements. Then its variation points should be the facets that can change one of them. The rest stay as notes.
+2. **Reuse what is recorded.** Each subject re-reads the same platform documents. Record each platform's statements once, tagged by subject, so later subjects start from them.
+3. **Keep each agent's run short.** An agent re-reads its whole history on every turn, so cost grows with the length of the run. Some ran for 800 to 1,400 turns. Give agents smaller tasks with fresh contexts, and give the mechanical steps to scripts.
+4. **Set a budget per subject,** measured on the first one, and stop to review when a phase runs past it.
+5. **Match depth to risk.** Go deep where a decision is both expensive to change and uncertain, and run a light check where the references agree and Yemen's facts don't bear on it.
+6. **Take standing decisions early.** The founder's answer to the pilot's root decision may settle parts of later subjects before they run (`PLAN.md` section 5).
+7. **Keep what worked:**
+   - the rulings made in the pilot (`PLAN.md` section 11), and the checks that enforce them;
+   - the corpus search before any claim of absence, with the audit of what is still claimed missing;
+   - Stage 1's `within` relation and faithfulness pass, before the next subject's phase D;
+   - every Yemen fact an entry cites checked against its quotes before review;
+   - one independent review per subject.
 
 ## To complete
 
