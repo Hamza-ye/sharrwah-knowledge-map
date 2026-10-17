@@ -1,6 +1,6 @@
 # S-01 method report: what broke and what changed
 
-**Draft, 17 October 2026.** Written by the coordinator through phase D and the register entry. It is completed after the independent review (F).
+**Draft, 17 October 2026.** Written by the coordinator through the independent review (F) and the fixes after it. It is completed after F's re-check.
 
 ## Where the pilot stands
 
@@ -103,12 +103,75 @@ Each of these faults made an agent think something was missing, or readable, whe
 
 ### 10. The register entry
 
-- **Twelve founder items aren't twelve decisions.** Phase C's founder items each came from one variation point. But who holds the funds (S01-VP-01) decides most of the others: who settles, who pays out, who collects, the agency, deductions, accounts, timing, netting and termination.
-  - **What changed:** the entry presents one root decision with options A, A2, B, C and defer, and gives each dependent item the answer each option implies.
+- **Founder items aren't independent decisions.** Phase C's founder items each come from one variation point. But who holds the funds (S01-VP-01) decides most of the others in the references: who settles, pays out, collects and deducts, the agency, the accounts, the timing, and what happens to held funds.
+  - **What changed:** the entry gives every item its own answer line. It also gives, as the coordinator's reading, what each answer to the root decision implies for the others, so the founder can answer it once as a standing decision.
   - **For later subjects:** phase C should mark the dependencies between founder items, so the entry needn't find them.
-- **The options' outside needs come from Stage 1.** Yemen's licensing for holding others' funds (YA-102, YA-103, YA-105, YA-106), and the processors' unavailability (YA-62, YK-514), are what make the options decidable.
+- **The options' outside needs come from Stage 1.** Yemen's licensing for holding others' funds (YA-102, YA-103, YA-106, YA-217, YK-515), and the processors' unavailability (YA-62, YK-514), are what make the options decidable.
+
+### 11. The independent review (F)
+
+- **What it found.** Its verdict was "Not yet": 31 findings, 14 of them must-fix (`review.md`). Each option of the entry's root decision rested on a claim the files didn't support. By where each fault began:
+  - **The method's rules, 5 findings:**
+    - phase B placed 83 variants on meaning, where their own words named no one in the variation point's role, and one under a different question (findings 26 and 25);
+    - phase C applied its same-party rule to some readings and not others, and its test 1 had no rule for a statement that a party has no part (1 and 2);
+    - the source-kinds rules filed terms pages as `stated` (28).
+  - **Stage 1's facts behind the entry, 2 findings (13 and 14).** The facts the entry cited beyond `bears-on.tsv` had never been checked against their quotes. Two were wrong, each because a later report overrode the instrument it described: "banks only" for who may provide e-money in the government's area, and 700 million rials for a system operator's capital.
+  - **The coordinator's entry, 7 findings (12 and 15 to 20).** It said more than the files hold:
+    - that no reference processor serves a merchant in Yemen, with BitPay unsettled;
+    - an option resting on Zid holding funds abroad, which nothing showed;
+    - a split of the platforms into three arrangements, which the same-party rule contradicts;
+    - phase D's support for its recommended option;
+    - items 2 to 12 without answer lines;
+    - two misquoted Yemen lines.
+- **What changed:**
+  - **Three rulings,** each recorded in `PLAN.md` section 11 and marked in its brief as the coordinator's own:
+    - phase B's `answers` rests on what a statement's own words name in the variation point's role, whatever its basis;
+    - a statement that a party has no part names no one filling the role, whatever its bullet, and shows that the party isn't in its platform's set;
+    - a platform may carry more than one coexistence letter.
+  - **Phase B re-checked every variant.** It rewrote 118, removed or merged 46 and added 6, so the variants went from 653 to 613. The answer sets changed on 15 variation points.
+  - **The source-kinds rules were fixed,** and 32 variants' kinds became `official page`.
+  - **Stage 1's independent reviewer checked every Yemen fact the entry cites** against its quotes. Step 2a fixed the two faults and three labels, and the coordinator checked the result (`studies/yemen-cases/review-axes.md`).
+  - **Salla's row on "agent",** left with no answer by phase B's re-check, went back to A2 and A3.
+  - **Phase C re-derived every cause, and phase D every mark.**
+    - VP-08's cause became `unknown`, and VP-21 became a founder item.
+    - VP-01's Yemen mark became `unknown`, since Zid's wallet no longer answers it.
+    - VP-10's mark became `no placement`. That adds a product gap and a founder item.
+  - **The coordinator rewrote the entry.** Each decision has its own answer line, the links between decisions are marked as the coordinator's reading, and the Yemen facts are as checked.
+- **Lessons:**
+  - **The coordinator's own work needs the agents' checks.** The entry's faults were the coordinator's. For later subjects, every Yemen fact an entry cites is checked against its quotes before review, and every grouping of evidence is marked as a reading.
+  - **Rules that let a judgment rest on meaning drift.** Matching on meaning in phase B, and naming parties in phase C, both had to be re-ruled. Each ruling ties the judgment to what a statement's own words say.
+
+### 12. What a subject costs
+
+**The pilot's agents processed about 1.9 billion tokens,** by their own transcripts. Most of that is context re-read on each turn.
+
+| Phase | Agents | Millions of tokens |
+| --- | --- | --- |
+| A, reading each platform | 9 | 636 |
+| A2, closing gaps | 7 | 248 |
+| A3, auditing claims of absence | 7 | 257 |
+| B, variation points | 1 | 326 |
+| C, cause and coexistence | 1 | 128 |
+| D, the Yemen marks | 1 | 169 |
+| F, independent review | 1 | 79 |
+| Inspections of the briefs | 3 | 40 |
+
+- **Not counted:** Stage 1, which every subject shares, took about 3.1 billion more. The coordinator's own session isn't counted either.
+- **Rework is a large share.** A2 and A3 together cost four-fifths as much as phase A. B, C and D each ran again after the review.
+- **Against the usage limit.** The founder reported reaching a third of a week's limit on the first day of this week's work. By that measure, the pilot took very roughly two-fifths of a week's limit, and a batch of three to five subjects at the same cost would take one or more weeks' limits. This is a rough estimate: the tokens counted here aren't the plan's meter.
+
+## Proposed changes before more subjects
+
+These are the coordinator's proposals, for the founder at G1:
+1. **Keep the rulings made in the pilot,** recorded in `PLAN.md` section 11, and the checks that enforce them.
+2. **Start phase A from the corpus search.** A3 found what A missed by searching the held corpora in every language. Running `method/corpus_search.py` on the subject's terms before reading should make A2 and A3 smaller. A3 stays, to audit what is still claimed missing.
+3. **Phase C marks the dependencies between founder items,** so a root decision can be answered once.
+4. **Stage 1's `within` relation and its faithfulness pass run before the next subject's phase D,** so marks don't rest on unchecked facts. Both are already planned before Stage 4.
+5. **Every Yemen fact an entry cites is checked against its quotes before the review,** as the pilot's marked facts were.
+6. **One independent review per subject stays.** It found what the rule-based checks couldn't.
+7. **The first batch measures the cost per subject,** and the batch size is set from it.
 
 ## To complete
 
-- The independent review's findings (F), and what changed after them.
-- Whether the founder can decide from the entry (G1).
+- The independent reviewer's re-check of the fixes.
+- G1: whether the founder can decide from the entry, and the founder's choice to scale up, change the method, or re-frame.
