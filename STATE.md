@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 21:05 UTC.
+**Updated:** 18 October 2026, 21:30 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -50,14 +50,29 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 
 **Running: step R1, the platforms' broad areas** (`PLAN.md` section 4).
 - **Expected cost:** agents 122 million (the five platform runs 69 with re-runs; the review 53 with its brief's check and re-checks); coordinator 30 million.
-- **Started at 21:01 UTC, at commit `7fec7f0`:**
-  - five platform runs at `high`, from `briefs/R1-areas-one-platform.md`: Shopify `a0469a445d1b0e914`, Salla `a20553ba016ad3ada`, WooCommerce `aaf2643a96501f5d8`, Zid `a12d49e9152c9e5b0`, BigCommerce `a1907bde61272f6ac`. Each writes `studies/proposals/areas/areas-<platform>.tsv`, its notes, and its entries file;
-  - the check of the review brief (`briefs/R1-areas-review.md`) at `max`, `a267d6bf2f56848c9`. It writes `studies/proposals/checks/R1-review-brief-check.md`.
+- **The five platform runs are done** (commits `9b359b2`, `66c457a`, `60367cd`): Shopify 29 areas, Salla 28, WooCommerce 28, Zid 29, BigCommerce 30. Every concern is placed, and `check_areas.py` reports no problems on all five.
+  - They cost 15.2 million in all, follow-ups included (`costs.tsv`), against 69 sized.
+  - The checker now accepts a platform's group headings, out-of-scope entries and bilingual halves as its own names. Zid and Salla then added their headings, and Salla rests four more groupings on them. Shopify and WooCommerce found no heading that names a whole group.
+- **The corpus search reads Shopify's Help Center** held in observed-sh (English Markdown and Arabic content), each page under its address (commit `66c457a`). Before, it reached the Help Center only through older fetch archives.
+- **The merged list** (commit `c7ce5db`):
+  - `areas.tsv`: 29 merged areas over the 144 platform areas, each tied to the questions that draw on it. Products and inventory, and analytics, draw on none, each with its reason;
+  - `depth.tsv`: 20 in-depth pairs, each with why and the concerns it cites;
+  - `areas.md`: the founder's version.
+
+  `check_areas.py merged` reports no problems.
+- **The sample**, by the plan's rule (the in-depth run whose candidate statements are nearest the median, the lower on a tie): **Q2 on Salla**, with 543 candidate statements. The median is 572.5, and Q2 on Salla ties with Q4 on Salla at 29.5 from it.
+- **R2's tools and briefs** (commit `681df43`):
+  - `copy_statements.py` copies in two phases. Tying whole areas copies over 1,000 statements for several runs, so the recording run marks the candidate concerns first;
+  - `check_proposals.py records` is the checker for record folders;
+  - `briefs/R3-recording.md` and `briefs/R3-checking.md`, the briefs for the runs.
+- **Running:**
+  - the check of the review brief, `a267d6bf2f56848c9`. Its output is `studies/proposals/checks/R1-review-brief-check.md`;
+  - the check of the two R3 briefs, `a7540c280cead6255`, at `max`. It writes `studies/proposals/checks/R3-briefs-check.md`.
 - **Next:**
-  1. as each run finishes: re-run `check_areas.py` and `place_entries.py` on its files, record its cost in `costs.tsv`, and commit;
-  2. fix what the review brief's check finds;
-  3. merge the five lists into `areas.tsv`, `areas.md` and `depth.tsv` (`check_areas.py merged`), and pick the sample by the plan's rule;
-  4. the review, its re-checks, then the areas list to the founder (G2). The sample runs during the marking, once its briefs are checked and `copy_statements.py` and `check_proposals.py` are built.
+  1. fix what the review brief's check finds, then run the review (`briefs/R1-areas-review.md`, at `max`), and its re-checks;
+  2. fix what the R3 briefs' check finds;
+  3. the areas list to the founder (G2). The sample runs while the founder marks: `copy_statements.py candidates Q2 salla`, then the run from `briefs/R3-recording.md`;
+  4. measure the sample (`count_tokens.py`), re-size, and tell the founder in the next message.
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
 - `max`: inspections, Stage 1's step 2a, and the pilot's B, C, D and F;
@@ -348,15 +363,13 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (18 October 2026, 21:05 UTC):**
+**Agents running when last checked (18 October 2026, 21:30 UTC):**
 - **Running:**
-  - step R1's five platform runs: Shopify `a0469a445d1b0e914`, Salla `a20553ba016ad3ada`, WooCommerce `aaf2643a96501f5d8`, Zid `a12d49e9152c9e5b0`, BigCommerce `a1907bde61272f6ac`;
-  - the check of R1's review brief, `a267d6bf2f56848c9`.
-- **Done, and resumable:** the R0 check, `aaa90803d4fe66dba`.
+  - the check of R1's review brief, `a267d6bf2f56848c9`;
+  - the check of the R3 briefs, `a7540c280cead6255`.
 - **Done, and resumable:**
-  - the pilot: F `a349d058600a20b3a`; phase B `a9e10fcc19233f104`; phase C `adc0057894ed0a4d9`; phase D `a279f7e700e54e76b`; Salla's A2 `aa3fbffb0ec8e81cc` and A3 `a1fbfec156e90bb84`;
-  - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
-  - Stage 1 step 2b, by range: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
+  - R1's platform runs: Shopify `a0469a445d1b0e914`, Salla `a20553ba016ad3ada`, WooCommerce `aaf2643a96501f5d8`, Zid `a12d49e9152c9e5b0`, BigCommerce `a1907bde61272f6ac`;
+  - the R0 check, `aaa90803d4fe66dba`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. **On again** from 21:01 UTC on 18 October 2026, while step R1 runs. Pause it when no agent runs. Delete it when the founder asks.
 
