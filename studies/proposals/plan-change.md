@@ -1,6 +1,6 @@
 # The plan change after G1 (draft)
 
-**Status: draft, 18 October 2026, revised after the check of the drafts (`studies/proposals/check-of-the-draft.md`).** Nothing here is in `PLAN.md` yet. It goes in only with the founder's go (`PLAN.md` section 9: a change to the frame needs the founder's go). Until then, `PLAN.md` stands as it is, and no work agent runs.
+**Status: entered into `PLAN.md` on 18 October 2026,** with the founder's go and the founder's five changes (`founder-messages/2026-10-18-go-on-the-plan-change.md`; `founder-decisions.tsv`). It was drafted, checked (`studies/proposals/check-of-the-draft.md`), fixed and re-checked before the go. `PLAN.md` is now the plan; this file keeps the change as it went in.
 
 **What this file holds:**
 - **Part 1:** the dated entry for `PLAN.md` section 11;
@@ -15,7 +15,7 @@
 
 # Part 1. The entry for section 11
 
-- **18 October 2026, the re-frame after G1,** by the founder's answer (`founder-messages/2026-10-18-g1-answer.md`; `founder-decisions.tsv`, G1). The pilot's entry let the founder decide, and the founder chose to re-frame. This change has the founder's go of [date to be filled in].
+- **18 October 2026, the re-frame after G1,** by the founder's answer (`founder-messages/2026-10-18-g1-answer.md`; `founder-decisions.tsv`, G1). The pilot's entry let the founder decide, and the founder chose to re-frame. This change has the founder's go of 18 October 2026, with five changes of the founder's, made here (`founder-messages/2026-10-18-go-on-the-plan-change.md`).
   - **The aim.** For each item of the founder's intent (that message's section B), the best of what the five platforms do, framed as Sharrwah's proposed model. The work ends when the founder has accepted or changed the proposals. This replaces the safe shore and G4.
   - **Questions, not subjects.** Section B's items are the questions the work answers, in neutral words. There is no subject list, and there are no batches.
   - **Stopped:**
@@ -26,29 +26,25 @@
     Stage 0's freeze ends: new reading is allowed where the work needs it.
   - **Kept:**
     - verbatim quotes at a pinned commit;
-    - the search and audit behind anything a proposal rests on that was not found, or is recorded absent;
+    - the search and audit behind anything a proposal cites that was not found, or is recorded absent;
     - a separate check of each brief before it runs;
     - one independent review of each result before it reaches the founder;
     - gate G2, on the areas list.
   - **Added:**
-    - a budget: the agents' work aims to stay within about the pilot's cost, with the coordinator's own work shown on top;
-    - a sample that measures the cost per statement before recording runs in full;
-    - a stop at the first step that runs past its expected cost;
+    - a budget: 2 billion agent tokens, in the corrected count, with the coordinator's own work shown on top;
+    - a sample that measures the cost per new statement before recording runs in full, and re-sizes the rest. It doesn't stop the work;
+    - re-sizing whenever a step runs past its expected cost, told to the founder in the coordinator's next message, and a stop only when the re-sized whole would pass the budget;
     - the founder's guard on holding sellers' money;
     - plain words in everything that reaches the founder.
   - **Replaced:**
     - sections 1 to 9 are rewritten in full (Part 2), and the plan's status line and opening paragraph;
     - Stages 3 to 5 become steps R0 to R6;
-    - Q3's rows are proposed for dropping, for the founder's go (section 6);
+    - Q3's rows are checked once, at the end, against the proposals (section 6);
     - Stage 1's `within` relation, and its faithfulness pass over every axis, are replaced by re-checking each Yemen fact a proposal uses (section 6).
-  - **The count of tokens is corrected.** The method report's first count took each API request once per line of its transcript, and so roughly doubled the pilot's figures (`studies/subjects/S-01/method-report.md`, section 12). The founder's budget and bar were stated in that count. In the corrected count, which this plan uses:
-    - the budget, "about the pilot's cost", is about 1.0 billion tokens. The founder's message says 2 billion;
-    - the sample's bar, half the pilot's cost per statement for phases A and A2, is about 0.26 million. The founder's message says 1.1 million halved.
-
-    The shares of a week's limit are almost unchanged: a week is about 2.8 billion tokens in this count.
+  - **The count of tokens is corrected.** The method report's first count took each API request once per line of its transcript, and so roughly doubled the pilot's figures (`studies/subjects/S-01/method-report.md`, section 12). The founder's G1 answer stated its budget and bar in that count. At the go, the founder set the budget at 2 billion agent tokens in the corrected count, which this plan uses, and made the sample a measurement with no bar. A week's limit is about 2.8 billion tokens in this count.
   - **Rulings that still bind,** each with the steps it governs:
     - **kinds of source by rule** (12 October; `method/source_kinds.py`). Kinds are compared like with like: R3, R4, R6;
-    - **claims of absence** (13 October). A "not in what was read" shows the corpus search behind it, in every language the platform uses and by each country, plan and arrangement it names. The audit by an agent that made none of the claims now covers what a proposal rests on (R5);
+    - **claims of absence** (13 October). A "not in what was read" shows the corpus search behind it, in every language the platform uses and by each country, plan and arrangement it names. The audit by an agent that made none of the claims now covers what each proposal cites (R5);
     - **the role test** (17 October). A statement answers only where its own words name what fills the role the question asks about. It now anchors matching basis 4 (section 6): R3, R4, R6;
     - **one party on every platform** (17 October, phase C): the merchant, the buyer, and the platform itself. R4, R6;
     - **"no part"** (17 October). A statement that a party has no part names no one, but shows that party isn't in its platform's set: R4, R6;
@@ -59,11 +55,11 @@
     - **agents' effort by step** (13 October), extended to the new steps below.
   - **Rulings that lapse:**
     - with the test form: step 3's order of tags, "no difference" and the "business model" test; step 5's added rows and its letter rule; causes compared on overlapping scopes; coexistence `unknown`; several coexistence letters joined by `+`; "names a law";
-    - with Q3's rows, if they are dropped: the mapping of when a row must be answered (`briefs/E-rows.md`), and the four time-bomb types;
+    - also with the test form, since they rest on step 5's rows: the mapping of when a Q3 row must be answered (`briefs/E-rows.md`), and the four time-bomb types. The check of Q3's rows at the end gets its own brief;
     - Q3 at close-out, which this change supersedes.
   - **Effort by step:**
     - `max`: each brief's check; the check of this change; R1's review; R4's drafting runs and its company-decisions run; R6's review and its check of interactions;
-    - `high`: R1's per-platform runs; R5's re-checks and audits;
+    - `high`: R1's per-platform runs; R5's re-checks and audits; the check of Q3's rows at the end;
     - `medium`: recording and checking runs (R2 and R3). A run whose check or review shows gaps is re-run at `high`, and the re-run counts in its step's cost;
     - `low`: one-off mechanical questions.
   - **The coordinator's own.** These are the coordinator's, not the founder's message's. The founder may overturn any:
@@ -75,17 +71,16 @@
     - two review batches, and a separate check of how the proposals bear on each other (step R6);
     - the capture list sent when recording ends (step R3);
     - what a "must do" mark does (step R1);
-    - "rests on" read as "the recommendation would change without it" (section 6);
     - the form of a decision item (section 5);
     - risks 15 to 18 (section 7);
-    - the case for dropping Q3's rows (section 6);
+    - the check of Q3's rows run just before the proposals reach the founder, so that its list comes with them (section 6);
     - Stage 1's open items done only if a proposal uses them (section 6).
 
 # Part 2. The text, rewritten
 
 ## Status line and opening paragraph *(replace the current ones)*
 
-**Status: agreed by the founder on 12 October 2026 (gate G0), and re-framed after G1 with the founder's go of [date] (section 11).** `STATE.md` says where the work is.
+**Status: agreed by the founder on 12 October 2026 (gate G0), and re-framed after G1 with the founder's go of 18 October 2026 (section 11).** `STATE.md` says where the work is.
 
 The coordinating session wrote this plan after the founder asked who would manage the work until it reaches a safe shore, with the right engineering, sequence and framing, leaving the founder only what is genuinely theirs to decide. At G1 the founder re-framed it: the work now ends with proposals the founder accepts or changes (section 1). Where a rule comes from known practice, it names its source, and section 10 lists the sources. A rule without a source is the coordinator's own.
 
@@ -106,7 +101,9 @@ That should be enough to start the design of the first build.
 - **Hide what is likely to change.** Each decision likely to change sits behind its own module (Parnas 1972).
 - **Effort follows risk.** Analysis effort goes where a wrong decision costs most (Fairbanks 2010; Boehm 1988), and each decision is taken at the last responsible moment (Poppendieck & Poppendieck 2003).
 
-**The end.** The work ends when the founder has accepted or changed every proposal. Then the design of the first build starts, under its own plan. What that build covers first is for that plan.
+**The end.** The work ends when the founder has accepted or changed every proposal. Then the design of the first build starts, under its own plan.
+- **It starts from the areas list, with the founder's marks, as Sharrwah's whole extent.** What the first build covers within it is for that plan.
+- **It reads open-source commerce platforms,** such as Saleor, Medusa and Vendure, for how each part is structured. Never as evidence of what sellers get.
 - Anything the accepted proposals leave open comes to the founder during that design, when it is needed. How far currencies can be set or changed is one such item.
 - No proposal rests on a derived document, or on the founder's words taken as evidence of what a platform does.
 
@@ -141,7 +138,7 @@ That should be enough to start the design of the first build.
    - attestations.
 6. **Every proposal for section B,** accepted or changed.
 7. **Whether any arrangement that holds sellers' money through Sharrwah goes live.**
-8. **Changes to this plan's frame,** and what to cut when the plan can't fit its budget.
+8. **Changes to this plan's frame,** and what to cut when the re-sized plan would pass its budget.
 9. **The gates** in section 5.
 
 **Nothing reaches the founder without a decision attached.** Each item comes with its evidence, its options and the coordinator's recommendation, marked as such. Section 5 says when each is needed and what an item looks like. Everything that reaches the founder:
@@ -173,7 +170,7 @@ It never takes the founder's decisions, and never treats the founder's words as 
 - quotes are verbatim, at a commit;
 - a statement a script copied is unchanged, with its citation;
 - each record is tied to a question;
-- each fact a proposal rests on is tied to a statement or a Stage 1 id;
+- each fact a proposal cites is tied to a statement or a Stage 1 id;
 - a "not in what was read" lists what was read, with the corpus search behind it;
 - an absence rests on a complete list;
 - a page read new is committed before it is cited.
@@ -192,6 +189,7 @@ Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stage
 2. An agent that did none of the drafting checks them against the founder's G1 answer and the recorded data, for whether they can work and what they will cost.
 3. The coordinator fixes what it finds, and the same agent checks the fixes.
 4. The founder gets a plain summary. Nothing else runs before the founder's go.
+5. The founder's go, of 18 October 2026, with five changes of the founder's, made in this text.
 
 ### Step R1. The platforms' broad areas, then gate G2
 
@@ -207,7 +205,7 @@ Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stage
    - It ties each area to the questions that draw on it. For each question, a script later copies the statements under those areas' concerns (step R3).
    - For each area, it says what a "won't do" mark removes from the work, and what evidence the questions keep anyway.
    - For each area no question draws on, it writes one line saying why the work leaves it out. This replaces Stage 5's last sweep.
-   - For each question, it picks which platforms to read in depth and which only to check for anything that differs from or goes beyond them, each with why and what that rests on. A platform is left out of a question only under a cut the founder took (`studies/proposals/sizing.md`).
+   - For each question, it picks which platforms to read in depth and which only to check for anything that differs from or goes beyond them, each with why and what that rests on. Every platform is read for every question, in depth or as a check.
    - It picks the sample (step R2).
 
    Its files are `areas.tsv`, `areas.md` and `depth.tsv`, as `briefs/R1-areas-review.md` describes them.
@@ -225,8 +223,8 @@ Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stage
 2. **The recording brief and the checking brief** are each checked before they run.
 3. **The sample** is one of the in-depth runs step R3 will make: one question on one platform. It is chosen after the depth choice, by a stated rule: of the in-depth runs, the one whose copied statements are nearest the median. It runs while the founder marks the areas, since the marks can't remove a question.
 4. **What is measured:** the run's tokens, by its transcript, over the statements it records that a script didn't copy.
-5. **The bar.** If it isn't below half the pilot's cost per statement for phases A and A2, about 0.26 million in the corrected count, the work stops and comes to the founder.
-6. **Otherwise** the steps that record or audit statements are re-sized from the measurement, and the others as before.
+5. **For comparison,** the pilot's phases A and A2 cost 0.52 million per statement, or 0.75 million per statement not taken from the concern map.
+6. **Whatever it shows, the work goes on.** The steps that record or audit statements are re-sized from the measurement, and the others as before. The work stops and comes to the founder only if the re-sized whole would pass the budget (section 8).
 
 ### Step R3. Recording, by question
 
@@ -266,19 +264,20 @@ Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stage
 
 ### Step R5. Checks by risk
 
-Once a proposal or company decision is drafted, and before its review, with each brief checked first:
-- **Each fact it rests on** is re-checked against its source.
-- **Anything it rests on that wasn't found, or is recorded absent,** gets the corpus search, and an audit by an agent that made none of the claims, batched by platform.
+Once a proposal or company decision is drafted, and before its review, with each brief checked first, everything it cites gets the full checks:
+- **Each fact it cites** is re-checked against its source.
+- **Anything it cites as not found, or recorded absent,** gets the corpus search, and an audit by an agent that made none of the claims, batched by platform.
 - **Each Yemen fact it uses** is re-checked against its quotes, including whether a later state covers the same place or a place that contains it.
-- **A "Yemen's evidence doesn't show" it rests on** gets the search and audit too.
+- **A "Yemen's evidence doesn't show" it cites** gets the search and audit too.
 - **Every quote is checked by script.**
-- **The rest is recorded as read,** without audits.
+- **What no proposal cites** is recorded as read, without audits.
 
 ### Step R6. Independent review, then the founder
 
 - **An agent that did none of the work reviews the proposals,** in two batches of four, with the company decisions in the second, and re-checks the fixes.
 - **One short run checks how the proposals bear on each other,** for bindings that conflict: such as currency, payment methods, payouts, what must be met before taking payment, and the guard (Calder et al. 2003). This replaces Stage 5's check of interactions.
-- **Then the founder** gets the proposals and the company decisions, several in one message, each with its own answer line, with the method rulings made since the last message.
+- **One short run checks Q3's rows** against the reviewed proposals (section 6). Its list comes with them.
+- **Then the founder** gets the proposals and the company decisions, several in one message, each with its own answer line, with the method rulings made since the last message, and the rows of Q3's lists the proposals don't answer.
 
 ## 5. The gates
 
@@ -286,18 +285,17 @@ Once a proposal or company decision is drafted, and before its review, with each
 | --- | --- | --- |
 | G0 | 12 October 2026, done | The plan |
 | G1 | 18 October 2026, done | Re-frame, with the decisions in `founder-decisions.tsv` |
-| The go on the change | After step R0 | The plan change, the old question lists, and what to cut to fit the budget |
+| The go on the change | 18 October 2026, done | The plan change, with five changes; Q3's rows checked at the end; no cuts |
 | G2 | After step R1 | The areas: what Sharrwah won't do, and what it must |
 | The proposals | After step R6 | Each proposal, accepted or changed, and the company decisions |
 
 The proposals replace G3 and G4. The work ends when every proposal is accepted or changed.
 
 **When the founder is needed:**
-- **At the go:** this change, what happens to the old question lists, and what to cut to fit the budget (`studies/proposals/sizing.md`).
 - **At G2:** the marks on the areas list.
 - **After recording:** the capture list, which is optional.
-- **At the proposals:** each proposal, and the company decisions.
-- **Between these, only when work stops** under section 8.
+- **At the proposals:** each proposal, and the company decisions, with the rows of Q3's lists the proposals don't answer.
+- **Between these, only when work stops** under section 8. A step that ran past its expected cost is told in the next message, with the re-sized whole.
 
 **What a decision item looks like** (the coordinator's own form, after the architecture decision record: Nygard 2011), in plain words:
 - the question in one line, and why it is the founder's;
@@ -348,8 +346,8 @@ These rules are settled, each from the source named. The founder may challenge a
 
 ### Checks by risk
 
-- **A fact a proposal rests on** is one its recommendation would change without (the coordinator's reading). Each gets the full checks: a re-check against its source, and, for anything not found or recorded absent, the search and audit.
-- **The rest** is recorded as read, without audits.
+- **Everything a proposal cites** gets the full checks, by the founder's choice at the go: a re-check against its source, and, for anything not found or recorded absent, the search and audit.
+- **What no proposal cites** is recorded as read, without audits.
 
 ### Comparing platforms
 
@@ -388,18 +386,17 @@ Matching on names alone fails on synonyms and homonyms (Rahm & Bernstein 2001), 
 
 ### Q3's rows
 
-Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge Map's 179 questions (`register/README.md`). The coordinator proposes dropping them, for the founder's go.
-- **What they were kept for.** They are agent-written beliefs that might return as false requirements. The founder said at G0 that some may be genuine questions.
-- **Why they can be dropped.** Nothing in this plan reads them. Section B and the areas list come from the founder and the platforms, so the rows can't return as requirements here.
-- **What dropping them loses.** Nothing would then show whether a genuine question among the 260 rows goes unanswered by the proposals.
-- **They stay in `register/` as a record.**
-- **If the founder would rather reconcile them,** one short run after step R6 places each row against the accepted proposals, and lists the rows they don't answer. It costs about 15 to 20 million tokens, with its brief's check. A row never adds to a proposal.
+Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge Map's 179 questions (`register/README.md`). They are checked once, at the end, by the founder's choice at the go.
+- **Why.** They are agent-written beliefs that might return as false requirements, and the founder said at G0 that some may be genuine questions. Nothing else in this plan reads them, so they can't steer the work.
+- **How.** After the review (step R6), one short run, from its own checked brief, places each row against the reviewed proposals. It lists the rows the proposals don't answer, and the rows that state as a requirement something the proposals' evidence contradicts. It reads each row only for its `id`, `question`, `needed_by` and `lane`.
+- **What comes of it.** Its list reaches the founder with the proposals. A row never adds to a proposal by itself: the founder decides what an unanswered row needs.
+- **They stay in `register/`.**
 
 ## 7. Risks, and what happens when one shows
 
 | # | Risk | How it shows | What happens |
 | --- | --- | --- | --- |
-| 1 | The work grows past what the proposals need | A record tied to no question; a step past its expected cost | The checker rejects untied records. A step past its expected cost stops and comes to the founder |
+| 1 | The work grows past what the proposals need | A record tied to no question; a step past its expected cost | The checker rejects untied records. A step past its expected cost re-sizes the rest, and the founder hears of it in the next message. The work stops only when the re-sized whole would pass the budget |
 | 2 | A word of ours, or the founder's, makes the result, as our category names, the matching example and the salla.com rule did | A brief or question uses a working word as a category; an agent records under it | Questions and briefs are checked before they run. The independent review looks for it. Each error is traced to its cause, and everything it touched is re-run |
 | 3 | Evidence we hold goes unread | A gap's route is held | The gap can't go to the founder; the reader is extended |
 | 4 | A search claims more than it read | A "not in what was read" without its list and search | The checker rejects it |
@@ -413,17 +410,18 @@ Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge 
 | 12 | An agent misreads: the quote is right but the meaning wrong | The independent review disagrees | The source is re-read, and the disagreement is recorded |
 | 13 | The frame is wrong | The proposals let the founder decide nothing | The frame is re-examined, with evidence. This was met at G1 |
 | 14 | Old documents return as evidence | A citation to a derived or excluded path | The checker rejects it |
-| 15 | Statements a script copied carry an old error | A copy fails its quote check, or the review finds it wrong | Copies are checked like new ones. A fact a proposal rests on gets the full checks |
+| 15 | Statements a script copied carry an old error | A copy fails its quote check, or the review finds it wrong | Copies are checked like new ones. Everything a proposal cites gets the full checks |
 | 16 | Depth by question misses a platform's different answer | A checked platform shows something the in-depth platforms don't | Checking runs record what differs or goes beyond. The review checks each depth choice against the records |
-| 17 | The budget doesn't fit | A step's measured cost, scaled, passes the total | The plan says what it would cut, and the founder decides |
+| 17 | The budget doesn't fit | The re-sized whole would pass 2 billion agent tokens | The work stops and comes to the founder, with what it would cut, and the founder decides |
 | 18 | A count of cost is wrong, as the pilot's first count was | A run's count disagrees with its transcript checked by hand | A script counts each run. At R2, the coordinator checks the sample's count by hand |
 
 ## 8. When work stops and comes to the founder
 
 - **An error touches results already delivered.** It is measured and reported, then fixed.
-- **The sample misses its bar.**
-- **A step runs past its expected cost.** No new run in it starts, and the founder gets what is done, what is left, and what finishing would cost. This replaces the stop for a stage that overruns its size twice.
-- **The plan can't fit its budget.** The coordinator says what it would cut, and the founder decides.
+- **The re-sized whole would pass the budget,** 2 billion agent tokens.
+  - When a step runs past its expected cost, it doesn't stop. The coordinator re-sizes the rest, and tells the founder in its next message.
+  - The work stops and comes to the founder only when the re-sized whole would pass the budget. The coordinator then says what it would cut, and the founder decides.
+  - This replaces the stop for a stage that overruns its size twice.
 - **A decision that is genuinely the founder's blocks the next step,** or a proposal.
 - **New evidence changes more than one finished proposal,** or the records of more than one question.
 - **Something needs money, contact with a third party, or a legal judgment.**
@@ -447,7 +445,7 @@ Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge 
 - **Pages read new** are captured with the repository's capture tool into `evidence/product-class/runs/<time>-proposals-<question>-<platform>/`, and committed before they are cited.
 - **How the kept checks run on these files:**
   - verbatim quotes: `method/check_proposals.py`, on every record and draft;
-  - the search and audit: R5's runs, on what each proposal rests on;
+  - the search and audit: R5's runs, on what each proposal cites;
   - each brief's check: a separate agent, before the brief runs;
   - the independent review: R1's review of the areas list, and R6's of the proposals.
 - **`CLAUDE.md` sets what each session reads first.**

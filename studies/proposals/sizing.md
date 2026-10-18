@@ -1,6 +1,6 @@
 # What each step is expected to cost (draft, 18 October 2026)
 
-**Status: draft, revised after the check of the drafts (`studies/proposals/check-of-the-draft.md`, findings 34 to 40), and re-counted.** It is checked again before the founder's go.
+**Status: the sizing at the founder's go of 18 October 2026,** with the founder's decisions (`founder-decisions.tsv`): the budget is 2 billion agent tokens in the corrected count; no cuts; checks cover everything a proposal cites; Q3's rows are checked at the end; the sample measures and has no bar. It was drafted, checked and re-checked before the go (`studies/proposals/check-of-the-draft.md`). Each step's expected cost is re-sized as measured costs come in, and `STATE.md` records them.
 
 ## How tokens are counted
 
@@ -9,9 +9,7 @@
   - A transcript writes a request over several lines, one per block of the reply, and each line repeats the request's whole usage.
   - The method report's first count took every line, and so roughly doubled every figure. Its section 12 is now corrected.
   - All figures here are in the corrected count.
-- **The founder's budget and bar** were stated in the first count:
-  - the budget, "about the pilot's cost", is about **1.0 billion** agent tokens in this count. The founder's message says 2 billion;
-  - the sample's bar, half the pilot's cost per statement for phases A and A2, is about **0.26 million**. The founder's message says 1.1 million halved.
+- **The budget,** set by the founder at the go: **2 billion** agent tokens in this count. The founder's G1 answer had stated a budget and a bar in the first count; at the go the founder set the budget anew, and made the sample a measurement with no bar.
 - **The coordinator's own work** is estimated apart, on top.
 
 ## The measures this rests on
@@ -49,31 +47,32 @@ The scaling is what each run must read and record, against the pilot run it is s
 | R1. Each platform's areas | 5, and re-runs | the R0 check, 17, for about 250 KB read | Shopify 271 KB and Salla 233 KB at about 17 each; Zid 89 KB 8, WooCommerce 67 KB 7, BigCommerce 52 KB 6. A quarter more for re-runs | 55 + 14 = **69** |
 | R1. Review of the areas list: its brief's check, a first pass and two re-checks | 4 | brief checks, 5; F's rounds, 38, 37 and 12 | It weighs fewer claims than F, but reads five areas files, the merged list and samples of the records: a first pass of about 30, re-checks of about 12 and 6 | 5 + 30 + 12 + 6 = **53** |
 | R2. Checks of the recording and checking briefs | 2 | brief checks, 5 | A little longer than the pilot's | **12** |
-| R2. The sample | 1 | the bar | About 45 new statements: 12 at the bar, 23 at the pilot's rate for all its statements, 34 at its rate for new ones | **12** (up to 34) |
-| R3. In-depth recording runs | 20 | the bar, once the sample passes | About 945 new statements in all. For each in-depth platform: Q1 50, Q2 70, Q3 45, Q4 30, Q5 60, Q6 30, Q7 35, Q8 40. In-depth platforms: three for Q1, Q2, Q3 and Q5, two for the others | 945 × 0.26 = **246** |
+| R2. The sample | 1 | recording, at the planning rate | About 45 new statements: 12 at 0.26 per statement, 18 at the planning rate of 0.4, 34 at the pilot's 0.75 per new statement | **18** (12 to 34) |
+| R3. In-depth recording runs | 20 | recording, at the planning rate until the sample measures it | About 945 new statements in all. For each in-depth platform: Q1 50, Q2 70, Q3 45, Q4 30, Q5 60, Q6 30, Q7 35, Q8 40. In-depth platforms: three for Q1, Q2, Q3 and Q5, two for the others. The planning rate, 0.4 per new statement, lies between half the pilot's rate (0.26) and its rate for new statements (0.75) | 945 × 0.4 = **378** (246 to 709) |
 | R3. Checking runs | 20 | what each must read | Each reads the in-depth accounts for its question and its own platform's copies, and records little. About 5 each | **100** |
-| R3. Re-runs at `high` | | about a tenth of the runs | | **35** |
+| R3. Re-runs at `high` | | about a tenth of the runs | | **48** |
 | R4. Check of the drafting brief | 1 | brief checks | | **6** |
 | R4. Drafting, one run per question | 8 | phase C's first run, 16 | Each reads its question's five accounts, the records they cite, a digest of Stage 1 and the areas list: about 15 each. Q5 also reads the pilot's entry and records: about 25 | **130** |
 | R4. Re-runs of drafting | | phase C's re-runs | Fewer than C's, since the rulings are settled: about a third | **40** |
 | R4. Gathering the evidence for the company decisions | 1 | | One short run over the drafts and their records | **10** |
 | R5. Checks of the briefs for re-checking facts, auditing and Yemen | 3 | brief checks | | **18** |
-| R5. Re-checking each fact a proposal rests on | about 300 facts | F's re-check, 0.16 per item | About 35 facts per proposal, and 20 for the company decisions. A fresh run reads more than F did: about 0.25 each | **75** |
-| R5. Searching and auditing what a proposal rests on that wasn't found | about 40 claims | A3, 2.7 per claim | About five per proposal | **108** |
-| R5. Re-checking the Yemen facts used, and auditing what Yemen's evidence doesn't show | about 45 facts and 8 claims | Stage 1's re-checks, 1.25 per fact; A3 | About 60 facts in all, 15 of them checked in the pilot at Stage 1's current commit | 56 + 22 = **78** |
-| R5. Re-checks after fixes | | | | **20** |
+| R5. Re-checking each fact a proposal cites | about 350 facts | F's re-check, 0.16 per item | About 40 facts per proposal, and 30 for the company decisions. A fresh run reads more than F did: about 0.25 each | **88** |
+| R5. Searching and auditing what a proposal cites as not found, or absent | about 60 claims | A3, 2.7 per claim | About seven per proposal, and a few for the company decisions | **162** |
+| R5. Re-checking the Yemen facts used, and auditing what Yemen's evidence doesn't show | about 45 facts and 15 claims | Stage 1's re-checks, 1.25 per fact; A3 | About 60 facts in all, 15 of them checked in the pilot at Stage 1's current commit | 56 + 40 = **96** |
+| R5. Re-checks after fixes | | | | **25** |
 | R6. Check of the review brief | 1 | brief checks | | **6** |
 | R6. Independent review | 2 batches of four | F's rounds, 38, 37 and 12 | Each batch about F's whole review: a first pass of about 40, re-checks of about 30 and 10 | 2 × 80 = **160** |
 | R6. The company decisions' review, in the second batch | | | | **10** |
 | R6. How the proposals bear on each other | 1 | brief checks and F | One short run over the eight proposals | **12** |
+| R6. The check of Q3's rows: its brief's check, and one run | 2 | brief checks; F's re-check | One run over 260 rows and the reviewed proposals | 5 + 13 = **18** |
 
-**Agents' total: about 1.24 billion,** if the sample meets the founder's bar. The range is about 0.9 to 1.6 billion. That is about a fifth over the budget, the pilot's 1.03 billion.
+**Agents' total: about 1.5 billion** at the planning rate, within the budget of 2 billion. At 0.26 per new statement it would be about 1.35 billion. At the pilot's 0.75, with the audits re-sized in proportion, it would be about 2.0 billion, at the budget's edge. The sample measures the rate before recording runs in full.
 
-**If the sample comes in below the bar,** step R3 costs less. At two thirds of the bar, R3's in-depth runs cost about 165 million rather than 246.
+**The sample re-sizes it.** Its cost per new statement replaces the planning rate in R2, R3 and R5's audits. Other steps are re-sized as their runs are measured. A step past its expected cost is told to the founder in the coordinator's next message, and the work stops only if the re-sized whole would pass 2 billion.
 
-## If it can't fit: what would be cut, in order
+## If the re-sized whole would pass the budget: what would be cut, in order
 
-Each cut is the founder's to decide, with what it saves and what it loses.
+The founder took none of these at the go. They stay listed for the case where the re-sized whole would pass 2 billion, when the founder decides.
 
 | # | Cut | Saves (millions) | What it loses |
 | --- | --- | --- | --- |
@@ -82,7 +81,7 @@ Each cut is the founder's to decide, with what it saves and what it loses.
 | 3 | Checking runs only where a platform's recorded material suggests an answer the in-depth platforms might not show. The depth choice marks the rest "none", with why | about 40 | A platform's different answer is likelier to be missed (risk 16). The review still checks each "none" |
 | 4 | One in-depth platform fewer for each question, checked instead | about 50 | Every proposal rests on fewer platforms read in depth |
 
-**With cuts 1 to 3:** about 1.14 billion. **With all four:** about 1.09 billion.
+**With cuts 1 to 3:** about 100 million less. **With all four:** about 150 million less.
 
 ## The coordinator's own work, shown apart
 
@@ -108,15 +107,15 @@ These are estimates, from the measured share of about 0.2 tokens per agent token
 | --- | --- | --- | --- | --- |
 | R0 | 39 + 80 = 119 | 4% | done | with the plain summary, for the go |
 | R1 | 122 + 30 = 152 | 5% | half a day | with the areas list, for marking (G2) |
-| R2 | 24 + 15 = 39 | 1% | runs during the founder's marking | only if the sample misses the bar |
-| R3 | 381 + 50 = 431 | 15% | 1 to 1.5 | only if a step runs past its expected cost; the capture list when recording ends |
+| R2 | 30 + 15 = 45 | 2% | runs during the founder's marking | one line in the next message: the measured rate, and the re-sized whole |
+| R3 | 526 + 50 = 576 | 20% | 1.5 to 2 | the capture list when recording ends, with any step past its cost |
 | R4 | 186 + 30 = 216 | 8% | half a day | no |
-| R5 | 299 + 20 = 319 | 11% | half a day to a day | no |
-| R6 | 188 + 25 = 213 | 8% | half a day to a day | with the proposals and the company decisions, several in one message |
+| R5 | 389 + 25 = 414 | 15% | about a day | no |
+| R6 | 206 + 25 = 231 | 8% | half a day to a day | with the proposals, the company decisions and the rows of Q3's lists they don't answer, several in one message |
 | Throughout | 15 | 1% | | |
-| **Whole plan** | **about 1.24 + 0.27 = 1.51 billion** | **about 53%** | **about 4 to 5 days of work** | |
+| **Whole plan** | **about 1.50 + 0.27 = 1.77 billion** | **about 62%** | **about 5 to 6 days of work** | |
 
 **By the calendar:**
-- **From the go to the proposals:** about 4 to 6 days. The founder's marking of the areas is the one wait inside that span, and the sample runs during it.
-- **Usage windows:** about four windows' worth of work.
-- **The week's limit:** about 43 percent of this week's limit is used already, R0's work so far included. What is left of the plan needs about 50 percent more. So it fits before the reset on 24 October only if nothing else uses the limit and no step runs over. Expect a pause at the weekly limit, most likely late in step R5 or R6, until the reset. The cuts above make that less likely.
+- **From the go to the proposals:** about 6 to 8 days. The founder's marking of the areas is the one wait inside that span, and the sample runs during it.
+- **Usage windows:** about four and a half windows' worth of work.
+- **The week's limit:** about 43 percent of this week's limit was used by the go, R0's work included. What is left of the plan needs about 58 percent more. So it will pass this week's limit before the reset on 24 October at 05:00 UTC, and pause there until the reset.
