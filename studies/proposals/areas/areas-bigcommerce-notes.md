@@ -38,3 +38,10 @@ Entries that don't fit their area's plain line well:
 - In BC-A-22 (Open APIs): `Store Information [rest/admin/management/store-information/v3]`. The concern map ties it to Metafields (BC-C-049, whose terms include `Store Information`), but by its name it reads as the store's profile, which BC-A-18's plain line covers.
 - In BC-A-01 (Catalog): `store/product/inventory/updated`, `store/product/inventory/order/updated`, `store/sku/inventory/updated` and `store/sku/inventory/order/updated`. They are tied to products (BC-C-001) only, but they report stock changes, which BC-A-02's plain line covers.
 - In BC-A-18 (store settings and email): `store/channel/{channel_id}/socialMediaLinks/updated`. Social media links are not named in the plain line, though they are a store-wide setting like the others there.
+
+## Re-cut after the review
+
+The coordinator re-cut these areas after the review of the areas list (`review.md`, findings 2, 4 and 5), on 18 October 2026. Each area's note says why.
+- BC-A-19 keeps currencies. BC-A-31 (Store Locale and Store Translations) and BC-A-34 (Geography) are split from it.
+- BC-A-32 holds BigCommerce Payments (from BC-A-10).
+- BC-A-33 holds price lists (from BC-A-03).

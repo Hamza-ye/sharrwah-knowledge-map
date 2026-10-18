@@ -2,7 +2,7 @@ inv_id	list	entry	concern_ids	area_ids	split
 SH-I-0001	api-resources	Access	SH-C-158	SH-A-25	
 SH-I-0002	api-resources	Analytics	SH-C-145	SH-A-22	
 SH-I-0003	api-resources	Apps	SH-C-156	SH-A-24	
-SH-I-0004	api-resources	B2B	SH-C-037;SH-C-044;SH-C-045	SH-A-09	
+SH-I-0004	api-resources	B2B	SH-C-037;SH-C-044;SH-C-045	SH-A-33;SH-A-09	yes
 SH-I-0005	api-resources	Billing	SH-C-019	SH-A-04	
 SH-I-0006	api-resources	Bulk operations	SH-C-171	SH-A-25	
 SH-I-0007	api-resources	Cart	SH-C-046	SH-A-10	
@@ -12,7 +12,7 @@ SH-I-0010	api-resources	Common objects	SH-C-171	SH-A-25
 SH-I-0011	api-resources	Customers	SH-C-039	SH-A-08	
 SH-I-0012	api-resources	Discounts and marketing	SH-C-127;SH-C-129	SH-A-18;SH-A-19	yes
 SH-I-0013	api-resources	Inventory	SH-C-022	SH-A-06	
-SH-I-0014	api-resources	Localizations	SH-C-032	SH-A-17	
+SH-I-0014	api-resources	Localizations	SH-C-032	SH-A-30	
 SH-I-0015	api-resources	Metafields	SH-C-028	SH-A-07	
 SH-I-0016	api-resources	Metaobjects	SH-C-028	SH-A-07	
 SH-I-0017	api-resources	Online store	SH-C-029;SH-C-030;SH-C-031	SH-A-07	
@@ -220,10 +220,10 @@ SH-I-0225	access-scopes	read_fulfillment_constraint_rules	SH-C-123;SH-C-158	SH-A
 SH-I-0226	access-scopes	write_fulfillment_constraint_rules	SH-C-123;SH-C-158	SH-A-12;SH-A-25	yes
 SH-I-0227	access-scopes	read_fulfillments	SH-C-119;SH-C-158	SH-A-12;SH-A-25	yes
 SH-I-0228	access-scopes	write_fulfillments	SH-C-119;SH-C-158	SH-A-12;SH-A-25	yes
-SH-I-0229	access-scopes	read_gift_card_transactions	SH-C-025;SH-C-158	SH-A-05;SH-A-25	yes
-SH-I-0230	access-scopes	write_gift_card_transactions	SH-C-025;SH-C-158	SH-A-05;SH-A-25	yes
-SH-I-0231	access-scopes	read_gift_cards	SH-C-025;SH-C-158	SH-A-05;SH-A-25	yes
-SH-I-0232	access-scopes	write_gift_cards	SH-C-025;SH-C-158	SH-A-05;SH-A-25	yes
+SH-I-0229	access-scopes	read_gift_card_transactions	SH-C-025;SH-C-158	SH-A-32;SH-A-25	yes
+SH-I-0230	access-scopes	write_gift_card_transactions	SH-C-025;SH-C-158	SH-A-32;SH-A-25	yes
+SH-I-0231	access-scopes	read_gift_cards	SH-C-025;SH-C-158	SH-A-32;SH-A-25	yes
+SH-I-0232	access-scopes	write_gift_cards	SH-C-025;SH-C-158	SH-A-32;SH-A-25	yes
 SH-I-0233	access-scopes	write_inventory	SH-C-022;SH-C-158	SH-A-06;SH-A-25	yes
 SH-I-0234	access-scopes	read_inventory	SH-C-022;SH-C-158	SH-A-06;SH-A-25	yes
 SH-I-0235	access-scopes	read_inventory_purchase_orders	SH-C-023;SH-C-158	SH-A-06;SH-A-25	yes
@@ -237,8 +237,8 @@ SH-I-0242	access-scopes	read_legal_policies	SH-C-034;SH-C-158	SH-A-10;SH-A-25	ye
 SH-I-0243	access-scopes	write_legal_policies	SH-C-034;SH-C-158	SH-A-10;SH-A-25	yes
 SH-I-0244	access-scopes	read_delivery_option_generators	SH-C-124;SH-C-158	SH-A-12;SH-A-25	yes
 SH-I-0245	access-scopes	write_delivery_option_generators	SH-C-124;SH-C-158	SH-A-12;SH-A-25	yes
-SH-I-0246	access-scopes	read_locales	SH-C-032;SH-C-158	SH-A-17;SH-A-25	yes
-SH-I-0247	access-scopes	write_locales	SH-C-032;SH-C-158	SH-A-17;SH-A-25	yes
+SH-I-0246	access-scopes	read_locales	SH-C-032;SH-C-158	SH-A-30;SH-A-25	yes
+SH-I-0247	access-scopes	write_locales	SH-C-032;SH-C-158	SH-A-30;SH-A-25	yes
 SH-I-0248	access-scopes	write_locations	SH-C-024;SH-C-158	SH-A-06;SH-A-25	yes
 SH-I-0249	access-scopes	read_locations	SH-C-024;SH-C-158	SH-A-06;SH-A-25	yes
 SH-I-0250	access-scopes	read_marketing_integrated_campaigns	SH-C-129;SH-C-158	SH-A-19;SH-A-25	yes
@@ -302,16 +302,16 @@ SH-I-0307	access-scopes	read_shopify_payments_disputes	SH-C-072;SH-C-158	SH-A-14
 SH-I-0308	access-scopes	write_shopify_payments_disputes	SH-C-072;SH-C-158	SH-A-14;SH-A-25	yes
 SH-I-0309	access-scopes	read_content	SH-C-030;SH-C-158	SH-A-07;SH-A-25	yes
 SH-I-0310	access-scopes	write_content	SH-C-030;SH-C-158	SH-A-07;SH-A-25	yes
-SH-I-0311	access-scopes	read_store_credit_account_transactions	SH-C-026;SH-C-158	SH-A-08;SH-A-25	yes
-SH-I-0312	access-scopes	write_store_credit_account_transactions	SH-C-026;SH-C-158	SH-A-08;SH-A-25	yes
-SH-I-0313	access-scopes	read_store_credit_accounts	SH-C-026;SH-C-158	SH-A-08;SH-A-25	yes
+SH-I-0311	access-scopes	read_store_credit_account_transactions	SH-C-026;SH-C-158	SH-A-32;SH-A-25	yes
+SH-I-0312	access-scopes	write_store_credit_account_transactions	SH-C-026;SH-C-158	SH-A-32;SH-A-25	yes
+SH-I-0313	access-scopes	read_store_credit_accounts	SH-C-026;SH-C-158	SH-A-32;SH-A-25	yes
 SH-I-0314	access-scopes	write_theme_code	SH-C-029;SH-C-158	SH-A-07;SH-A-25	yes
 SH-I-0315	access-scopes	read_themes	SH-C-029;SH-C-158	SH-A-07;SH-A-25	yes
 SH-I-0316	access-scopes	write_themes	SH-C-029;SH-C-158	SH-A-07;SH-A-25	yes
 SH-I-0317	access-scopes	read_third_party_fulfillment_orders	SH-C-118;SH-C-119;SH-C-158	SH-A-12;SH-A-25	yes
 SH-I-0318	access-scopes	write_third_party_fulfillment_orders	SH-C-118;SH-C-119;SH-C-158	SH-A-12;SH-A-25	yes
-SH-I-0319	access-scopes	read_translations	SH-C-032;SH-C-158	SH-A-17;SH-A-25	yes
-SH-I-0320	access-scopes	write_translations	SH-C-032;SH-C-158	SH-A-17;SH-A-25	yes
+SH-I-0319	access-scopes	read_translations	SH-C-032;SH-C-158	SH-A-30;SH-A-25	yes
+SH-I-0320	access-scopes	write_translations	SH-C-032;SH-C-158	SH-A-30;SH-A-25	yes
 SH-I-0321	access-scopes	read_pixels	SH-C-146;SH-C-158	SH-A-19;SH-A-25	yes
 SH-I-0322	access-scopes	write_pixels	SH-C-146;SH-C-158	SH-A-19;SH-A-25	yes
 SH-I-0323	access-scopes	customer_read_companies	SH-C-041;SH-C-044;SH-C-158	SH-A-08;SH-A-09;SH-A-25	yes
@@ -323,8 +323,8 @@ SH-I-0328	access-scopes	customer_read_markets	SH-C-041;SH-C-106;SH-C-158	SH-A-08
 SH-I-0329	access-scopes	customer_read_metaobjects	SH-C-028;SH-C-041;SH-C-158	SH-A-07;SH-A-08;SH-A-25	yes
 SH-I-0330	access-scopes	customer_read_orders	SH-C-041;SH-C-054;SH-C-158	SH-A-08;SH-A-11;SH-A-25	yes
 SH-I-0331	access-scopes	customer_write_orders	SH-C-041;SH-C-054;SH-C-158	SH-A-08;SH-A-11;SH-A-25	yes
-SH-I-0332	access-scopes	customer_read_store_credit_account_transactions	SH-C-026;SH-C-041;SH-C-158	SH-A-08;SH-A-25	yes
-SH-I-0333	access-scopes	customer_read_store_credit_accounts	SH-C-026;SH-C-041;SH-C-158	SH-A-08;SH-A-25	yes
+SH-I-0332	access-scopes	customer_read_store_credit_account_transactions	SH-C-026;SH-C-041;SH-C-158	SH-A-32;SH-A-08;SH-A-25	yes
+SH-I-0333	access-scopes	customer_read_store_credit_accounts	SH-C-026;SH-C-041;SH-C-158	SH-A-32;SH-A-08;SH-A-25	yes
 SH-I-0334	access-scopes	unauthenticated_write_bulk_operations	SH-C-139;SH-C-158;SH-C-171	SH-A-20;SH-A-25	yes
 SH-I-0335	access-scopes	unauthenticated_read_bulk_operations	SH-C-139;SH-C-158;SH-C-171	SH-A-20;SH-A-25	yes
 SH-I-0336	access-scopes	unauthenticated_read_bundles	SH-C-139;SH-C-158;SH-C-188	SH-A-20;SH-A-25;SH-A-05	yes
@@ -501,9 +501,9 @@ SH-I-0506	webhook-topics	inventory_transfers/ready_to_ship	SH-C-023;SH-C-162	SH-
 SH-I-0507	webhook-topics	inventory_transfers/remove_items	SH-C-023;SH-C-162	SH-A-06;SH-A-25	yes
 SH-I-0508	webhook-topics	inventory_transfers/update_item_quantities	SH-C-023;SH-C-162	SH-A-06;SH-A-25	yes
 SH-I-0509	webhook-topics	inventory_transfers/updated	SH-C-023;SH-C-162	SH-A-06;SH-A-25	yes
-SH-I-0510	webhook-topics	locales/create	SH-C-032;SH-C-162	SH-A-17;SH-A-25	yes
-SH-I-0511	webhook-topics	locales/destroy	SH-C-032;SH-C-162	SH-A-17;SH-A-25	yes
-SH-I-0512	webhook-topics	locales/update	SH-C-032;SH-C-162	SH-A-17;SH-A-25	yes
+SH-I-0510	webhook-topics	locales/create	SH-C-032;SH-C-162	SH-A-30;SH-A-25	yes
+SH-I-0511	webhook-topics	locales/destroy	SH-C-032;SH-C-162	SH-A-30;SH-A-25	yes
+SH-I-0512	webhook-topics	locales/update	SH-C-032;SH-C-162	SH-A-30;SH-A-25	yes
 SH-I-0513	webhook-topics	locations/activate	SH-C-024;SH-C-162	SH-A-06;SH-A-25	yes
 SH-I-0514	webhook-topics	locations/create	SH-C-024;SH-C-162	SH-A-06;SH-A-25	yes
 SH-I-0515	webhook-topics	locations/deactivate	SH-C-024;SH-C-162	SH-A-06;SH-A-25	yes
@@ -728,7 +728,7 @@ SH-I-0733	settings	Domains	SH-C-033	SH-A-07
 SH-I-0734	settings	Customer events	SH-C-146	SH-A-19	
 SH-I-0735	settings	Notifications	SH-C-150	SH-A-03	
 SH-I-0736	settings	Metafields and metaobjects	SH-C-028	SH-A-07	
-SH-I-0737	settings	Languages	SH-C-032	SH-A-17	
+SH-I-0737	settings	Languages	SH-C-032	SH-A-30	
 SH-I-0738	settings	Customer privacy	SH-C-148	SH-A-27	
 SH-I-0739	settings	Policies	SH-C-034	SH-A-10	
 SH-I-0740	settings	Billing	SH-C-016	SH-A-04	
@@ -740,7 +740,7 @@ SH-I-0746	admin-navigation	Collections	SH-C-021	SH-A-05
 SH-I-0747	admin-navigation	Inventory	SH-C-022	SH-A-06	
 SH-I-0748	admin-navigation	Purchase orders	SH-C-023	SH-A-06	
 SH-I-0749	admin-navigation	Transfers	SH-C-023	SH-A-06	
-SH-I-0750	admin-navigation	Gift cards	SH-C-025	SH-A-05	
+SH-I-0750	admin-navigation	Gift cards	SH-C-025	SH-A-32	
 SH-I-0751	admin-navigation	Customers	SH-C-039	SH-A-08	
 SH-I-0752	admin-navigation	Segments	SH-C-040	SH-A-08	
 SH-I-0753	admin-navigation	Companies	SH-C-044	SH-A-09	
@@ -755,7 +755,7 @@ SH-I-0761	admin-navigation	Files	SH-C-027	SH-A-07
 SH-I-0762	admin-navigation	Menus	SH-C-031	SH-A-07	
 SH-I-0763	admin-navigation	Blog posts	SH-C-030	SH-A-07	
 SH-I-0764	admin-navigation	Markets	SH-C-106	SH-A-17	
-SH-I-0765	admin-navigation	Catalogs	SH-C-037	SH-A-09	
+SH-I-0765	admin-navigation	Catalogs	SH-C-037	SH-A-33	
 SH-I-0766	admin-navigation	Rollouts	SH-C-112	SH-A-17	
 SH-I-0767	admin-navigation	Analytics	SH-C-145	SH-A-22	
 SH-I-0768	admin-navigation	Reports	SH-C-145	SH-A-22	
@@ -776,7 +776,7 @@ SH-I-0785	admin-navigation	Billing	SH-C-015;SH-C-016	SH-A-04
 SH-I-0786	admin-navigation	Blockchain	SH-C-190	SH-A-05	
 SH-I-0787	admin-navigation	Capital	SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097	SH-A-15	
 SH-I-0788	admin-navigation	Cards	SH-C-089	SH-A-15	
-SH-I-0789	admin-navigation	Catalogs	SH-C-037	SH-A-09	
+SH-I-0789	admin-navigation	Catalogs	SH-C-037	SH-A-33	
 SH-I-0790	admin-navigation	Checkout	SH-C-047	SH-A-10	
 SH-I-0791	admin-navigation	Collections	SH-C-021	SH-A-05	
 SH-I-0792	admin-navigation	CommerceProtection	SH-C-051	SH-A-10	
@@ -793,7 +793,7 @@ SH-I-0802	admin-navigation	Email	SH-C-130	SH-A-19
 SH-I-0805	admin-navigation	Finances	SH-C-059;SH-C-069;SH-C-098	SH-A-13;SH-A-14;SH-A-15	yes
 SH-I-0806	admin-navigation	Flow	SH-C-151	SH-A-23	
 SH-I-0807	admin-navigation	Foundation	SH-C-014	SH-A-28	
-SH-I-0808	admin-navigation	GiftCards	SH-C-025	SH-A-05	
+SH-I-0808	admin-navigation	GiftCards	SH-C-025	SH-A-32	
 SH-I-0809	admin-navigation	Growth	SH-C-129	SH-A-19	
 SH-I-0811	admin-navigation	Intents	SH-C-164	SH-A-25	
 SH-I-0812	admin-navigation	Inventory	SH-C-022	SH-A-06	
@@ -822,7 +822,7 @@ SH-I-0837	admin-navigation	Shipping	SH-C-114	SH-A-12
 SH-I-0838	admin-navigation	ShippingLabels	SH-C-116	SH-A-12	
 SH-I-0839	admin-navigation	ShopifyFulfillmentNetwork	SH-C-120	SH-A-12	
 SH-I-0840	admin-navigation	Sidekick	SH-C-152	SH-A-23	
-SH-I-0841	admin-navigation	StoreLanguages	SH-C-032	SH-A-17	
+SH-I-0841	admin-navigation	StoreLanguages	SH-C-032	SH-A-30	
 SH-I-0842	admin-navigation	Taxes	SH-C-100;SH-C-101;SH-C-103;SH-C-104	SH-A-16	
 SH-I-0844	admin-navigation	Trust	SH-C-008	SH-A-01	
 SH-I-0846	other:staff-roles	Associate	SH-C-010;SH-C-142	SH-A-01;SH-A-21	yes
@@ -865,8 +865,8 @@ SH-I-0882	other:staff-permissions	Orders > Delete	SH-C-010;SH-C-054	SH-A-01;SH-A
 SH-I-0883	other:staff-permissions	Orders > Returns and refunds	SH-C-010;SH-C-057;SH-C-058	SH-A-01;SH-A-11	yes
 SH-I-0884	other:staff-permissions	Orders > Returns and refunds > Return	SH-C-010;SH-C-058	SH-A-01;SH-A-11	yes
 SH-I-0885	other:staff-permissions	Orders > Returns and refunds > Refund to original payment	SH-C-010;SH-C-057	SH-A-01;SH-A-11	yes
-SH-I-0886	other:staff-permissions	Orders > Returns and refunds > Over-refund orders previously refunded to store credit	SH-C-010;SH-C-026;SH-C-057	SH-A-01;SH-A-08;SH-A-11	yes
-SH-I-0887	other:staff-permissions	Orders > Returns and refunds > Refund to store credit	SH-C-010;SH-C-026;SH-C-057	SH-A-01;SH-A-08;SH-A-11	yes
+SH-I-0886	other:staff-permissions	Orders > Returns and refunds > Over-refund orders previously refunded to store credit	SH-C-010;SH-C-026;SH-C-057	SH-A-01;SH-A-32;SH-A-11	yes
+SH-I-0887	other:staff-permissions	Orders > Returns and refunds > Refund to store credit	SH-C-010;SH-C-026;SH-C-057	SH-A-01;SH-A-32;SH-A-11	yes
 SH-I-0888	other:staff-permissions	Orders > Abandoned checkouts	SH-C-010;SH-C-050	SH-A-01;SH-A-10	yes
 SH-I-0889	other:staff-permissions	Orders > Abandoned checkouts > Manage	SH-C-010;SH-C-050	SH-A-01;SH-A-10	yes
 SH-I-0890	other:staff-permissions	Drafts 0/9	SH-C-010;SH-C-055	SH-A-01;SH-A-11	yes
@@ -892,11 +892,11 @@ SH-I-0909	other:staff-permissions	Products > Inventory > Manage inventory (exclu
 SH-I-0910	other:staff-permissions	Products > Inventory > View transfers	SH-C-010;SH-C-023	SH-A-01;SH-A-06	yes
 SH-I-0911	other:staff-permissions	Products > Inventory > Manage transfers	SH-C-010;SH-C-023	SH-A-01;SH-A-06	yes
 SH-I-0912	other:staff-permissions	Products > Inventory > Manage shipments	SH-C-010;SH-C-023	SH-A-01;SH-A-06	yes
-SH-I-0913	other:staff-permissions	Gift cards 0/4	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
-SH-I-0914	other:staff-permissions	Gift cards > View	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
-SH-I-0915	other:staff-permissions	Gift cards > Create and edit	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
-SH-I-0916	other:staff-permissions	Gift cards > Export	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
-SH-I-0917	other:staff-permissions	Gift cards > Deactivate	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
+SH-I-0913	other:staff-permissions	Gift cards 0/4	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
+SH-I-0914	other:staff-permissions	Gift cards > View	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
+SH-I-0915	other:staff-permissions	Gift cards > Create and edit	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
+SH-I-0916	other:staff-permissions	Gift cards > Export	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
+SH-I-0917	other:staff-permissions	Gift cards > Deactivate	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
 SH-I-0918	other:staff-permissions	Customers 0/15	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
 SH-I-0919	other:staff-permissions	Customers > View	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
 SH-I-0920	other:staff-permissions	Customers > Create and edit	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
@@ -904,16 +904,16 @@ SH-I-0921	other:staff-permissions	Customers > Erase personal data	SH-C-010;SH-C-
 SH-I-0922	other:staff-permissions	Customers > Request data	SH-C-010;SH-C-149	SH-A-01;SH-A-27	yes
 SH-I-0923	other:staff-permissions	Customers > Export	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
 SH-I-0924	other:staff-permissions	Customers > Merge	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
-SH-I-0925	other:staff-permissions	Customers > View store credit transactions	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
-SH-I-0926	other:staff-permissions	Customers > Edit store credit	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
+SH-I-0925	other:staff-permissions	Customers > View store credit transactions	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
+SH-I-0926	other:staff-permissions	Customers > Edit store credit	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
 SH-I-0927	other:staff-permissions	Customers > Delete	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
 SH-I-0928	other:staff-permissions	Customers > Companies	SH-C-010;SH-C-044	SH-A-01;SH-A-09	yes
 SH-I-0929	other:staff-permissions	Customers > Companies > View	SH-C-010;SH-C-044	SH-A-01;SH-A-09	yes
 SH-I-0930	other:staff-permissions	Customers > Companies > Create and edit	SH-C-010;SH-C-044	SH-A-01;SH-A-09	yes
 SH-I-0931	other:staff-permissions	Customers > Companies > Assign staff to company locations	SH-C-010;SH-C-044	SH-A-01;SH-A-09	yes
 SH-I-0932	other:staff-permissions	Customers > Companies > Delete	SH-C-010;SH-C-044	SH-A-01;SH-A-09	yes
-SH-I-0933	other:staff-permissions	Customers > Companies > View store credit transactions	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
-SH-I-0934	other:staff-permissions	Customers > Companies > Edit store credit	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
+SH-I-0933	other:staff-permissions	Customers > Companies > View store credit transactions	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
+SH-I-0934	other:staff-permissions	Customers > Companies > Edit store credit	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
 SH-I-0935	other:staff-permissions	Marketing 0/4	SH-C-010;SH-C-129	SH-A-01;SH-A-19	yes
 SH-I-0936	other:staff-permissions	Marketing > View, create, and delete marketing activities and automations	SH-C-010;SH-C-129	SH-A-01;SH-A-19	yes
 SH-I-0937	other:staff-permissions	Marketing > Campaigns	SH-C-010;SH-C-129	SH-A-01;SH-A-19	yes
@@ -942,16 +942,16 @@ SH-I-0959	other:staff-permissions	Markets > View	SH-C-010;SH-C-106	SH-A-01;SH-A-
 SH-I-0960	other:staff-permissions	Markets > Create and edit	SH-C-010;SH-C-106	SH-A-01;SH-A-17	yes
 SH-I-0961	other:staff-permissions	Markets > Delete	SH-C-010;SH-C-106	SH-A-01;SH-A-17	yes
 SH-I-0962	other:staff-permissions	Markets > Select existing legal entity	SH-C-005;SH-C-010	SH-A-02;SH-A-01	yes
-SH-I-0963	other:staff-permissions	Markets > Catalogs	SH-C-010;SH-C-037	SH-A-01;SH-A-09	yes
-SH-I-0964	other:staff-permissions	Markets > Catalogs > View	SH-C-010;SH-C-037	SH-A-01;SH-A-09	yes
-SH-I-0965	other:staff-permissions	Markets > Catalogs > Create and edit	SH-C-010;SH-C-037	SH-A-01;SH-A-09	yes
-SH-I-0966	other:staff-permissions	Markets > Catalogs > Delete	SH-C-010;SH-C-037	SH-A-01;SH-A-09	yes
+SH-I-0963	other:staff-permissions	Markets > Catalogs	SH-C-010;SH-C-037	SH-A-01;SH-A-33	yes
+SH-I-0964	other:staff-permissions	Markets > Catalogs > View	SH-C-010;SH-C-037	SH-A-01;SH-A-33	yes
+SH-I-0965	other:staff-permissions	Markets > Catalogs > Create and edit	SH-C-010;SH-C-037	SH-A-01;SH-A-33	yes
+SH-I-0966	other:staff-permissions	Markets > Catalogs > Delete	SH-C-010;SH-C-037	SH-A-01;SH-A-33	yes
 SH-I-0967	other:staff-permissions	Markets > Catalogs > View rollouts	SH-C-010;SH-C-112	SH-A-01;SH-A-17	yes
 SH-I-0968	other:staff-permissions	Markets > Catalogs > Create and edit rollouts	SH-C-010;SH-C-112	SH-A-01;SH-A-17	yes
 SH-I-0969	other:staff-permissions	Markets > Catalogs > Delete rollouts	SH-C-010;SH-C-112	SH-A-01;SH-A-17	yes
 SH-I-0970	other:staff-permissions	Checkout and customer accounts 0/3	SH-C-010;SH-C-041;SH-C-047	SH-A-01;SH-A-08;SH-A-10	yes
 SH-I-0971	other:staff-permissions	Checkout and customer accounts > View and edit	SH-C-010;SH-C-047	SH-A-01;SH-A-10	yes
-SH-I-0972	other:staff-permissions	Checkout and customer accounts > Manage store credit visibility	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
+SH-I-0972	other:staff-permissions	Checkout and customer accounts > Manage store credit visibility	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
 SH-I-0973	other:staff-permissions	Checkout and customer accounts > Manage identity providers	SH-C-010;SH-C-042	SH-A-01;SH-A-08	yes
 SH-I-0974	other:staff-permissions	Quick sale 0/1	SH-C-010;SH-C-142	SH-A-01;SH-A-21	yes
 SH-I-0975	other:staff-permissions	Quick sale > Quick sale	SH-C-010;SH-C-142	SH-A-01;SH-A-21	yes
@@ -1003,24 +1003,24 @@ SH-I-1020	other:staff-permissions	BILLING_SUBSCRIPTIONS	SH-C-010;SH-C-015	SH-A-0
 SH-I-1021	other:staff-permissions	BUY_SHIPPING_LABELS	SH-C-010;SH-C-116	SH-A-01;SH-A-12	yes
 SH-I-1022	other:staff-permissions	CANCEL_ORDERS	SH-C-010;SH-C-054	SH-A-01;SH-A-11	yes
 SH-I-1023	other:staff-permissions	CAPTURE_PAYMENTS_FOR_ORDERS	SH-C-010;SH-C-084	SH-A-01;SH-A-13	yes
-SH-I-1024	other:staff-permissions	CREATE_AND_EDIT_CATALOGS	SH-C-010;SH-C-037	SH-A-01;SH-A-09	yes
+SH-I-1024	other:staff-permissions	CREATE_AND_EDIT_CATALOGS	SH-C-010;SH-C-037	SH-A-01;SH-A-33	yes
 SH-I-1025	other:staff-permissions	CREATE_AND_EDIT_COMPANIES	SH-C-010;SH-C-044	SH-A-01;SH-A-09	yes
 SH-I-1026	other:staff-permissions	CREATE_AND_EDIT_CUSTOMERS	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
 SH-I-1027	other:staff-permissions	CREATE_AND_EDIT_DRAFT_ORDERS	SH-C-010;SH-C-055	SH-A-01;SH-A-11	yes
-SH-I-1028	other:staff-permissions	CREATE_AND_EDIT_GIFT_CARDS	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
+SH-I-1028	other:staff-permissions	CREATE_AND_EDIT_GIFT_CARDS	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
 SH-I-1029	other:staff-permissions	CREATE_AND_EDIT_INVENTORY_TRANSFERS	SH-C-010;SH-C-023	SH-A-01;SH-A-06	yes
 SH-I-1030	other:staff-permissions	CREATE_AND_EDIT_MARKETS	SH-C-010;SH-C-106	SH-A-01;SH-A-17	yes
 SH-I-1031	other:staff-permissions	CREATE_AND_EDIT_ROLLOUTS	SH-C-010;SH-C-112	SH-A-01;SH-A-17	yes
 SH-I-1032	other:staff-permissions	CREATE_AND_UPDATE_MARKETING_INTEGRATED_CAMPAIGNS	SH-C-010;SH-C-129	SH-A-01;SH-A-19	yes
-SH-I-1033	other:staff-permissions	CREATE_COMPANY_STORE_CREDIT_ACCOUNT_TRANSACTIONS	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
+SH-I-1033	other:staff-permissions	CREATE_COMPANY_STORE_CREDIT_ACCOUNT_TRANSACTIONS	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
 SH-I-1034	other:staff-permissions	CREATE_FILES	SH-C-010;SH-C-027	SH-A-01;SH-A-07	yes
-SH-I-1035	other:staff-permissions	CREATE_STORE_CREDIT_ACCOUNT_TRANSACTIONS	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
+SH-I-1035	other:staff-permissions	CREATE_STORE_CREDIT_ACCOUNT_TRANSACTIONS	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
 SH-I-1036	other:staff-permissions	CUSTOM_PIXELS_MANAGEMENT	SH-C-010;SH-C-146	SH-A-01;SH-A-19	yes
 SH-I-1037	other:staff-permissions	CUSTOM_PIXELS_VIEW	SH-C-010;SH-C-146	SH-A-01;SH-A-19	yes
 SH-I-1038	other:staff-permissions	CUSTOMERS	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
 SH-I-1039	other:staff-permissions	DASHBOARD	SH-C-010;SH-C-145	SH-A-01;SH-A-22	yes
-SH-I-1040	other:staff-permissions	DEACTIVATE_GIFT_CARDS	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
-SH-I-1041	other:staff-permissions	DELETE_CATALOGS	SH-C-010;SH-C-037	SH-A-01;SH-A-09	yes
+SH-I-1040	other:staff-permissions	DEACTIVATE_GIFT_CARDS	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
+SH-I-1041	other:staff-permissions	DELETE_CATALOGS	SH-C-010;SH-C-037	SH-A-01;SH-A-33	yes
 SH-I-1042	other:staff-permissions	DELETE_COMPANIES	SH-C-010;SH-C-044	SH-A-01;SH-A-09	yes
 SH-I-1043	other:staff-permissions	DELETE_CUSTOMERS	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
 SH-I-1044	other:staff-permissions	DELETE_DRAFT_ORDERS	SH-C-010;SH-C-055	SH-A-01;SH-A-11	yes
@@ -1043,11 +1043,11 @@ SH-I-1060	other:staff-permissions	ENABLE_PRIVATE_APPS	SH-C-010;SH-C-167	SH-A-01;
 SH-I-1061	other:staff-permissions	ERASE_CUSTOMER_DATA	SH-C-010;SH-C-149	SH-A-01;SH-A-27	yes
 SH-I-1062	other:staff-permissions	EXPORT_CUSTOMERS	SH-C-010;SH-C-039	SH-A-01;SH-A-08	yes
 SH-I-1063	other:staff-permissions	EXPORT_DRAFT_ORDERS	SH-C-010;SH-C-055	SH-A-01;SH-A-11	yes
-SH-I-1064	other:staff-permissions	EXPORT_GIFT_CARDS	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
+SH-I-1064	other:staff-permissions	EXPORT_GIFT_CARDS	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
 SH-I-1065	other:staff-permissions	EXPORT_ORDERS	SH-C-010;SH-C-054	SH-A-01;SH-A-11	yes
 SH-I-1066	other:staff-permissions	EXPORT_PRODUCTS	SH-C-010;SH-C-020	SH-A-01;SH-A-05	yes
 SH-I-1067	other:staff-permissions	FULFILL_AND_SHIP_ORDERS	SH-C-010;SH-C-118	SH-A-01;SH-A-12	yes
-SH-I-1068	other:staff-permissions	GIFT_CARDS	SH-C-010;SH-C-025	SH-A-01;SH-A-05	yes
+SH-I-1068	other:staff-permissions	GIFT_CARDS	SH-C-010;SH-C-025	SH-A-01;SH-A-32	yes
 SH-I-1069	other:staff-permissions	LIMITED_APPLICATIONS	SH-C-010;SH-C-156	SH-A-01;SH-A-24	yes
 SH-I-1070	other:staff-permissions	LINKS	SH-C-010;SH-C-031	SH-A-01;SH-A-07	yes
 SH-I-1071	other:staff-permissions	LOCATIONS	SH-C-010;SH-C-024	SH-A-01;SH-A-06	yes
@@ -1063,7 +1063,7 @@ SH-I-1080	other:staff-permissions	MANAGE_ORDERS_INFORMATION	SH-C-010;SH-C-054	SH
 SH-I-1081	other:staff-permissions	MANAGE_PAYMENTS_SETTINGS	SH-C-010;SH-C-062	SH-A-01;SH-A-13	yes
 SH-I-1082	other:staff-permissions	MANAGE_POLICIES	SH-C-010;SH-C-034	SH-A-01;SH-A-10	yes
 SH-I-1083	other:staff-permissions	MANAGE_PRODUCTS	SH-C-010;SH-C-020	SH-A-01;SH-A-05	yes
-SH-I-1084	other:staff-permissions	MANAGE_STORE_CREDIT_SETTINGS	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
+SH-I-1084	other:staff-permissions	MANAGE_STORE_CREDIT_SETTINGS	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
 SH-I-1085	other:staff-permissions	MANAGE_TAXES_SETTINGS	SH-C-010;SH-C-100;SH-C-101	SH-A-01;SH-A-16	yes
 SH-I-1086	other:staff-permissions	MARK_DRAFT_ORDERS_AS_PAID	SH-C-010;SH-C-079	SH-A-01;SH-A-13	yes
 SH-I-1087	other:staff-permissions	MARK_ORDERS_AS_PAID	SH-C-010;SH-C-079	SH-A-01;SH-A-13	yes
@@ -1077,7 +1077,7 @@ SH-I-1094	other:staff-permissions	METAOBJECTS_DELETE	SH-C-010;SH-C-028	SH-A-01;S
 SH-I-1095	other:staff-permissions	METAOBJECTS_EDIT	SH-C-010;SH-C-028	SH-A-01;SH-A-07	yes
 SH-I-1096	other:staff-permissions	METAOBJECTS_VIEW	SH-C-010;SH-C-028	SH-A-01;SH-A-07	yes
 SH-I-1097	other:staff-permissions	ORDERS	SH-C-010;SH-C-054	SH-A-01;SH-A-11	yes
-SH-I-1098	other:staff-permissions	OVER_REFUND_TO_ORIGINAL_PAYMENT	SH-C-010;SH-C-026;SH-C-057	SH-A-01;SH-A-08;SH-A-11	yes
+SH-I-1098	other:staff-permissions	OVER_REFUND_TO_ORIGINAL_PAYMENT	SH-C-010;SH-C-026;SH-C-057	SH-A-01;SH-A-32;SH-A-11	yes
 SH-I-1099	other:staff-permissions	OVERVIEWS	SH-C-010;SH-C-145	SH-A-01;SH-A-22	yes
 SH-I-1100	other:staff-permissions	PAGES	SH-C-010;SH-C-030	SH-A-01;SH-A-07	yes
 SH-I-1101	other:staff-permissions	PAY_DRAFT_ORDERS_BY_CREDIT_CARD	SH-C-010;SH-C-084	SH-A-01;SH-A-13	yes
@@ -1089,7 +1089,7 @@ SH-I-1106	other:staff-permissions	PREFERENCES	SH-C-010;SH-C-013	SH-A-01;SH-A-03	
 SH-I-1107	other:staff-permissions	PRODUCTS	SH-C-010;SH-C-020	SH-A-01;SH-A-05	yes
 SH-I-1108	other:staff-permissions	QUICK_SALE	SH-C-010;SH-C-142	SH-A-01;SH-A-21	yes
 SH-I-1109	other:staff-permissions	REFUND_ORDERS	SH-C-010;SH-C-057	SH-A-01;SH-A-11	yes
-SH-I-1110	other:staff-permissions	REFUND_TO_STORE_CREDIT	SH-C-010;SH-C-026;SH-C-057	SH-A-01;SH-A-08;SH-A-11	yes
+SH-I-1110	other:staff-permissions	REFUND_TO_STORE_CREDIT	SH-C-010;SH-C-026;SH-C-057	SH-A-01;SH-A-32;SH-A-11	yes
 SH-I-1111	other:staff-permissions	REPORTS	SH-C-010;SH-C-145	SH-A-01;SH-A-22	yes
 SH-I-1112	other:staff-permissions	REQUEST_CUSTOMER_DATA	SH-C-010;SH-C-149	SH-A-01;SH-A-27	yes
 SH-I-1113	other:staff-permissions	RETURN_ORDERS	SH-C-010;SH-C-058	SH-A-01;SH-A-11	yes
@@ -1099,9 +1099,9 @@ SH-I-1116	other:staff-permissions	SET_PAYMENT_TERMS_FOR_ORDERS	SH-C-010;SH-C-045
 SH-I-1117	other:staff-permissions	SHOPIFY_PAYMENTS_ACCOUNTS	SH-C-010;SH-C-063	SH-A-01;SH-A-14	yes
 SH-I-1118	other:staff-permissions	SHOPIFY_PAYMENTS_TRANSFERS	SH-C-010;SH-C-069	SH-A-01;SH-A-14	yes
 SH-I-1119	other:staff-permissions	THEMES	SH-C-010;SH-C-029	SH-A-01;SH-A-07	yes
-SH-I-1120	other:staff-permissions	VIEW_CATALOGS	SH-C-010;SH-C-037	SH-A-01;SH-A-09	yes
+SH-I-1120	other:staff-permissions	VIEW_CATALOGS	SH-C-010;SH-C-037	SH-A-01;SH-A-33	yes
 SH-I-1121	other:staff-permissions	VIEW_COMPANIES	SH-C-010;SH-C-044	SH-A-01;SH-A-09	yes
-SH-I-1122	other:staff-permissions	VIEW_COMPANY_STORE_CREDIT_ACCOUNT_TRANSACTIONS	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
+SH-I-1122	other:staff-permissions	VIEW_COMPANY_STORE_CREDIT_ACCOUNT_TRANSACTIONS	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
 SH-I-1123	other:staff-permissions	VIEW_FILES	SH-C-010;SH-C-027	SH-A-01;SH-A-07	yes
 SH-I-1124	other:staff-permissions	VIEW_INVENTORY_TRANSFERS	SH-C-010;SH-C-023	SH-A-01;SH-A-06	yes
 SH-I-1125	other:staff-permissions	VIEW_MARKETING_INTEGRATED_CAMPAIGNS	SH-C-010;SH-C-129	SH-A-01;SH-A-19	yes
@@ -1110,7 +1110,7 @@ SH-I-1127	other:staff-permissions	VIEW_PAYOUTS	SH-C-010;SH-C-069	SH-A-01;SH-A-14
 SH-I-1128	other:staff-permissions	VIEW_PRIVATE_APPS	SH-C-010;SH-C-167	SH-A-01;SH-A-24	yes
 SH-I-1129	other:staff-permissions	VIEW_PRODUCT_COSTS	SH-C-010;SH-C-020	SH-A-01;SH-A-05	yes
 SH-I-1130	other:staff-permissions	VIEW_ROLLOUTS	SH-C-010;SH-C-112	SH-A-01;SH-A-17	yes
-SH-I-1131	other:staff-permissions	VIEW_STORE_CREDIT_ACCOUNT_TRANSACTIONS	SH-C-010;SH-C-026	SH-A-01;SH-A-08	yes
+SH-I-1131	other:staff-permissions	VIEW_STORE_CREDIT_ACCOUNT_TRANSACTIONS	SH-C-010;SH-C-026	SH-A-01;SH-A-32	yes
 SH-I-1132	other:staff-permissions	VIEW_TAX_DOCUMENTS	SH-C-010;SH-C-099	SH-A-01;SH-A-16	yes
 SH-I-1133	other:partner-permissions	View financials	SH-C-168;SH-C-169	SH-A-26	
 SH-I-1134	other:partner-permissions	Manage app subscriptions	SH-C-019;SH-C-168	SH-A-04;SH-A-26	yes
@@ -1126,7 +1126,7 @@ SH-I-1144	plan-features	Sell unlimited products	SH-C-020	SH-A-05
 SH-I-1145	plan-features	World's best-converting checkout	SH-C-047	SH-A-10	
 SH-I-1146	plan-features	Sell on social and marketplaces	SH-C-135	SH-A-20	
 SH-I-1147	plan-features	Sell in AI chats	SH-C-140	SH-A-20	
-SH-I-1148	plan-features	Shopify B2B	SH-C-037;SH-C-044	SH-A-09	
+SH-I-1148	plan-features	Shopify B2B	SH-C-037;SH-C-044	SH-A-33;SH-A-09	yes
 SH-I-1149	plan-features	Inventory management	SH-C-022	SH-A-06	
 SH-I-1150	plan-features	Inventory locations	SH-C-024	SH-A-06	
 SH-I-1151	plan-features	Additional staff accounts	SH-C-009	SH-A-01	
@@ -1165,7 +1165,7 @@ SH-I-1188	plan-features	Chat with customers	SH-C-153	SH-A-08
 SH-I-1189	plan-features	Create marketing automations	SH-C-129	SH-A-19	
 SH-I-1190	plan-features	Abandoned checkout recovery	SH-C-050	SH-A-10	
 SH-I-1191	plan-features	Create and share discount codes	SH-C-127	SH-A-18	
-SH-I-1192	plan-features	Sell gift cards	SH-C-025	SH-A-05	
+SH-I-1192	plan-features	Sell gift cards	SH-C-025	SH-A-32	
 SH-I-1193	plan-features	Acquire customers risk-free with Shop Campaigns	SH-C-133	SH-A-19	
 SH-I-1195	plan-features	Shipping discounts	SH-C-116	SH-A-12	
 SH-I-1196	plan-features	Buy and print shipping labels	SH-C-116	SH-A-12	
@@ -1180,8 +1180,8 @@ SH-I-1206	plan-features	Checkout customization	SH-C-048;SH-C-049	SH-A-10
 SH-I-1207	plan-features	Build custom apps using Shopify APIs	SH-C-167	SH-A-24	
 SH-I-1208	plan-features	API rate limits	SH-C-171	SH-A-25	
 SH-I-1209	plan-features	Build headless storefronts	SH-C-139	SH-A-20	
-SH-I-1211	plan-features	Translate your storefront	SH-C-032	SH-A-17	
-SH-I-1212	plan-features	Show prices in local currencies*	SH-C-108	SH-A-17	
+SH-I-1211	plan-features	Translate your storefront	SH-C-032	SH-A-30	
+SH-I-1212	plan-features	Show prices in local currencies*	SH-C-108	SH-A-31	
 SH-I-1213	plan-features	Localized selling with Shopify Markets	SH-C-106	SH-A-17	
 SH-I-1214	plan-features	Accept local payment methods*	SH-C-080	SH-A-13	
 SH-I-1215	plan-features	Assign local domains	SH-C-111	SH-A-17	
@@ -1215,7 +1215,7 @@ SH-I-1246	plan-features	Sell unlimited products	SH-C-020	SH-A-05
 SH-I-1247	plan-features	World's best-converting checkout	SH-C-047	SH-A-10	
 SH-I-1248	plan-features	Sell on social and marketplaces	SH-C-135	SH-A-20	
 SH-I-1249	plan-features	Sell in AI chats	SH-C-140	SH-A-20	
-SH-I-1250	plan-features	Shopify B2B	SH-C-037;SH-C-044	SH-A-09	
+SH-I-1250	plan-features	Shopify B2B	SH-C-037;SH-C-044	SH-A-33;SH-A-09	yes
 SH-I-1251	plan-features	Inventory management	SH-C-022	SH-A-06	
 SH-I-1252	plan-features	Inventory locations	SH-C-024	SH-A-06	
 SH-I-1253	plan-features	Additional staff accounts	SH-C-009	SH-A-01	
@@ -1240,7 +1240,7 @@ SH-I-1275	plan-features	Chat with customers	SH-C-153	SH-A-08
 SH-I-1276	plan-features	Create marketing automations	SH-C-129	SH-A-19	
 SH-I-1277	plan-features	Abandoned checkout recovery	SH-C-050	SH-A-10	
 SH-I-1278	plan-features	Create and share discount codes	SH-C-127	SH-A-18	
-SH-I-1279	plan-features	Sell gift cards	SH-C-025	SH-A-05	
+SH-I-1279	plan-features	Sell gift cards	SH-C-025	SH-A-32	
 SH-I-1281	plan-features	Import unlimited orders from marketplaces	SH-C-137	SH-A-20	
 SH-I-1282	plan-features	50 synced marketplace orders per month	SH-C-137	SH-A-20	
 SH-I-1283	plan-features	Over 50 synced marketplace orders	SH-C-137	SH-A-20	
@@ -1249,8 +1249,8 @@ SH-I-1286	plan-features	Checkout customization	SH-C-048;SH-C-049	SH-A-10
 SH-I-1287	plan-features	Build custom apps using Shopify APIs	SH-C-167	SH-A-24	
 SH-I-1288	plan-features	API rate limits	SH-C-171	SH-A-25	
 SH-I-1289	plan-features	Build headless storefronts	SH-C-139	SH-A-20	
-SH-I-1291	plan-features	Translate your storefront	SH-C-032	SH-A-17	
-SH-I-1292	plan-features	Show prices in local currencies*	SH-C-108	SH-A-17	
+SH-I-1291	plan-features	Translate your storefront	SH-C-032	SH-A-30	
+SH-I-1292	plan-features	Show prices in local currencies*	SH-C-108	SH-A-31	
 SH-I-1293	plan-features	Localized selling with Shopify Markets	SH-C-106	SH-A-17	
 SH-I-1294	plan-features	Accept local payment methods*	SH-C-080	SH-A-13	
 SH-I-1295	plan-features	Assign local domains	SH-C-111	SH-A-17	
@@ -1345,8 +1345,8 @@ SH-I-1388	legal-agreements	Financial Products	SH-C-178	SH-A-15
 SH-I-1389	legal-agreements	Submit a financial complaint	SH-C-178	SH-A-15	
 SH-I-1390	legal-agreements	Shopify Fulfillment Network Terms of Service	SH-C-120	SH-A-12	
 SH-I-1391	legal-agreements	View fulfillment network terms	SH-C-120	SH-A-12	
-SH-I-1392	legal-agreements	Shopify Gift Card and Store Credit Terms	SH-C-025;SH-C-026	SH-A-05;SH-A-08	yes
-SH-I-1393	legal-agreements	View terms	SH-C-025;SH-C-026	SH-A-05;SH-A-08	yes
+SH-I-1392	legal-agreements	Shopify Gift Card and Store Credit Terms	SH-C-025;SH-C-026	SH-A-32	
+SH-I-1393	legal-agreements	View terms	SH-C-025;SH-C-026	SH-A-32	
 SH-I-1394	legal-agreements	Legal Notices	SH-C-177	SH-A-28	
 SH-I-1395	legal-agreements	Digital Service Act	SH-C-177	SH-A-28	
 SH-I-1396	legal-agreements	Legal notices	SH-C-177	SH-A-28	
@@ -1442,7 +1442,7 @@ SH-I-1485	extension-points	Credit card (credit_card_payments)	SH-C-076	SH-A-13
 SH-I-1486	extension-points	Custom credit card (custom_credit_card_payments)	SH-C-076	SH-A-13	
 SH-I-1487	extension-points	Custom onsite (custom_onsite_payments)	SH-C-076	SH-A-13	
 SH-I-1488	extension-points	Offsite (offsite_payments)	SH-C-076	SH-A-13	
-SH-I-1489	extension-points	Redeemable (redeemable_payments)	SH-C-025;SH-C-076	SH-A-05;SH-A-13	yes
+SH-I-1489	extension-points	Redeemable (redeemable_payments)	SH-C-025;SH-C-076	SH-A-32;SH-A-13	yes
 SH-I-1490	extension-points	Sales channel configuration (channel_config)	SH-C-135	SH-A-20	
 SH-I-1491	extension-points	Order Attribution Config (order_attribution_config)	SH-C-131	SH-A-19	
 SH-I-1492	extension-points	Tax calculation (tax_calculation)	SH-C-103	SH-A-16	
@@ -1773,10 +1773,10 @@ SH-I-1818	other:app-store-categories	Customer loyalty - Other	SH-C-187	SH-A-19
 SH-I-1819	other:app-store-categories	Donation apps	SH-C-187	SH-A-19	
 SH-I-1820	other:app-store-categories	Loyalty and reward apps	SH-C-187	SH-A-19	
 SH-I-1821	other:app-store-categories	Wishlist apps	SH-C-187	SH-A-19	
-SH-I-1822	other:app-store-categories	Gift apps	SH-C-025	SH-A-05	
-SH-I-1823	other:app-store-categories	Gift card apps	SH-C-025	SH-A-05	
+SH-I-1822	other:app-store-categories	Gift apps	SH-C-025	SH-A-32	
+SH-I-1823	other:app-store-categories	Gift card apps	SH-C-025	SH-A-32	
 SH-I-1824	other:app-store-categories	Gift wrap and message apps	SH-C-189	SH-A-05	
-SH-I-1825	other:app-store-categories	Gifts - Other	SH-C-025	SH-A-05	
+SH-I-1825	other:app-store-categories	Gifts - Other	SH-C-025	SH-A-32	
 SH-I-1826	other:app-store-categories	Marketing apps	SH-C-129	SH-A-19	
 SH-I-1827	other:app-store-categories	Abandoned cart apps	SH-C-050	SH-A-10	
 SH-I-1828	other:app-store-categories	Email marketing apps	SH-C-129;SH-C-130	SH-A-19	
@@ -1867,7 +1867,7 @@ SH-I-1912	other:app-store-categories	Images and media - Other	SH-C-193	SH-A-07
 SH-I-1913	other:app-store-categories	Video and livestream apps	SH-C-193	SH-A-07	
 SH-I-1914	other:app-store-categories	Internationalization apps	SH-C-106	SH-A-17	
 SH-I-1915	other:app-store-categories	Cookie consent apps	SH-C-148	SH-A-27	
-SH-I-1916	other:app-store-categories	Currency and translation apps	SH-C-032;SH-C-108	SH-A-17	
+SH-I-1916	other:app-store-categories	Currency and translation apps	SH-C-032;SH-C-108	SH-A-30;SH-A-31	yes
 SH-I-1917	other:app-store-categories	Geolocation apps	SH-C-111	SH-A-17	
 SH-I-1918	other:app-store-categories	Internationalization - Other	SH-C-106	SH-A-17	
 SH-I-1919	other:app-store-categories	Notification apps	SH-C-193	SH-A-07	
@@ -2014,25 +2014,25 @@ SH-I-2062	other:notification-templates	New change request	SH-C-150	SH-A-03
 SH-I-2063	other:notification-templates	Sales attribution edited	SH-C-150	SH-A-03	
 SH-I-2064	other:notification-templates	New draft order	SH-C-150	SH-A-03	
 SH-I-2065	other:notification-templates	Recipients	SH-C-150	SH-A-03	
-SH-I-2066	other:translatable-resources	Collections	SH-C-032	SH-A-17	
-SH-I-2067	other:translatable-resources	Products	SH-C-032	SH-A-17	
-SH-I-2068	other:translatable-resources	Blog posts	SH-C-032	SH-A-17	
-SH-I-2069	other:translatable-resources	Blog titles	SH-C-032	SH-A-17	
-SH-I-2070	other:translatable-resources	Cookie banner	SH-C-032	SH-A-17	
-SH-I-2071	other:translatable-resources	Filters	SH-C-032	SH-A-17	
-SH-I-2072	other:translatable-resources	Metaobjects	SH-C-032	SH-A-17	
-SH-I-2073	other:translatable-resources	Pages	SH-C-032	SH-A-17	
-SH-I-2074	other:translatable-resources	Policies	SH-C-032	SH-A-17	
-SH-I-2075	other:translatable-resources	Store metadata	SH-C-032	SH-A-17	
-SH-I-2076	other:translatable-resources	Menu	SH-C-032	SH-A-17	
-SH-I-2077	other:translatable-resources	App embeds	SH-C-032	SH-A-17	
-SH-I-2078	other:translatable-resources	Default theme content	SH-C-032	SH-A-17	
-SH-I-2079	other:translatable-resources	Section groups	SH-C-032	SH-A-17	
-SH-I-2080	other:translatable-resources	Static sections	SH-C-032	SH-A-17	
-SH-I-2081	other:translatable-resources	Templates	SH-C-032	SH-A-17	
-SH-I-2082	other:translatable-resources	Theme settings	SH-C-032	SH-A-17	
-SH-I-2083	other:translatable-resources	Notifications	SH-C-032	SH-A-17	
-SH-I-2084	other:translatable-resources	Shipping and delivery	SH-C-032	SH-A-17	
+SH-I-2066	other:translatable-resources	Collections	SH-C-032	SH-A-30	
+SH-I-2067	other:translatable-resources	Products	SH-C-032	SH-A-30	
+SH-I-2068	other:translatable-resources	Blog posts	SH-C-032	SH-A-30	
+SH-I-2069	other:translatable-resources	Blog titles	SH-C-032	SH-A-30	
+SH-I-2070	other:translatable-resources	Cookie banner	SH-C-032	SH-A-30	
+SH-I-2071	other:translatable-resources	Filters	SH-C-032	SH-A-30	
+SH-I-2072	other:translatable-resources	Metaobjects	SH-C-032	SH-A-30	
+SH-I-2073	other:translatable-resources	Pages	SH-C-032	SH-A-30	
+SH-I-2074	other:translatable-resources	Policies	SH-C-032	SH-A-30	
+SH-I-2075	other:translatable-resources	Store metadata	SH-C-032	SH-A-30	
+SH-I-2076	other:translatable-resources	Menu	SH-C-032	SH-A-30	
+SH-I-2077	other:translatable-resources	App embeds	SH-C-032	SH-A-30	
+SH-I-2078	other:translatable-resources	Default theme content	SH-C-032	SH-A-30	
+SH-I-2079	other:translatable-resources	Section groups	SH-C-032	SH-A-30	
+SH-I-2080	other:translatable-resources	Static sections	SH-C-032	SH-A-30	
+SH-I-2081	other:translatable-resources	Templates	SH-C-032	SH-A-30	
+SH-I-2082	other:translatable-resources	Theme settings	SH-C-032	SH-A-30	
+SH-I-2083	other:translatable-resources	Notifications	SH-C-032	SH-A-30	
+SH-I-2084	other:translatable-resources	Shipping and delivery	SH-C-032	SH-A-30	
 SH-I-2085	other:partner-dashboard	Home	SH-C-168	SH-A-26	
 SH-I-2086	other:partner-dashboard	Stores	SH-C-168	SH-A-26	
 SH-I-2087	other:partner-dashboard	Sales	SH-C-168	SH-A-26	
@@ -2046,7 +2046,7 @@ SH-I-2094	other:partner-dashboard	Dev dashboard	SH-C-168	SH-A-26
 SH-I-2095	other:value-lists	Tracking carriers (204 options)	SH-C-126	SH-A-12	
 SH-I-2096	other:value-lists	Return reasons (10 options)	SH-C-058	SH-A-11	
 SH-I-2097	other:value-lists	Inventory adjustment reasons (7 options)	SH-C-022	SH-A-06	
-SH-I-2098	other:value-lists	Add language (136 languages)	SH-C-032	SH-A-17	
+SH-I-2098	other:value-lists	Add language (136 languages)	SH-C-032	SH-A-30	
 SH-I-2099	other:help-center-sections	About apps	SH-C-156	SH-A-24	
 SH-I-2100	other:help-center-sections	Apps made by Shopify	SH-C-156	SH-A-24	
 SH-I-2101	other:help-center-sections	Finding and choosing apps	SH-C-156	SH-A-24	
@@ -2060,7 +2060,7 @@ SH-I-2108	other:help-center-sections	Customizing and editing your checkout and a
 SH-I-2109	other:help-center-sections	Setting up tipping options for online orders	SH-C-047	SH-A-10	
 SH-I-2110	other:help-center-sections	Set up address collection preferences	SH-C-047	SH-A-10	
 SH-I-2111	other:help-center-sections	Set up order processing and archiving	SH-C-054	SH-A-11	
-SH-I-2112	other:help-center-sections	Translating your checkout	SH-C-032;SH-C-047	SH-A-17;SH-A-10	yes
+SH-I-2112	other:help-center-sections	Translating your checkout	SH-C-032;SH-C-047	SH-A-30;SH-A-10	yes
 SH-I-2113	other:help-center-sections	Set a limit to the maximum quantity of items per cart	SH-C-046	SH-A-10	
 SH-I-2114	other:help-center-sections	Ship and pickup in one order in Shopify Checkout	SH-C-121	SH-A-12	
 SH-I-2115	other:help-center-sections	Split shipping in Shopify Checkout	SH-C-118	SH-A-12	
@@ -2099,11 +2099,11 @@ SH-I-2147	other:help-center-sections	Setting up shipping and order fulfillment	S
 SH-I-2148	other:help-center-sections	Managing orders	SH-C-054	SH-A-11	
 SH-I-2149	other:help-center-sections	Fulfilling orders	SH-C-118	SH-A-12	
 SH-I-2150	other:help-center-sections	Fulfillment Network	SH-C-120	SH-A-12	
-SH-I-2151	other:help-center-sections	Pricing in local currencies	SH-C-108	SH-A-17	
+SH-I-2151	other:help-center-sections	Pricing in local currencies	SH-C-108	SH-A-31	
 SH-I-2152	other:help-center-sections	Set up automatic storefront redirection for your customers	SH-C-111	SH-A-17	
 SH-I-2153	other:help-center-sections	Using the Geolocation app	SH-C-111	SH-A-17	
 SH-I-2154	other:help-center-sections	International domains	SH-C-111	SH-A-17	
-SH-I-2155	other:help-center-sections	Localization and translation	SH-C-032	SH-A-17	
+SH-I-2155	other:help-center-sections	Localization and translation	SH-C-032	SH-A-30	
 SH-I-2156	other:help-center-sections	Duties and import taxes	SH-C-105	SH-A-16	
 SH-I-2157	other:help-center-sections	Payments	SH-C-062	SH-A-13	
 SH-I-2158	other:help-center-sections	International shipping	SH-C-114	SH-A-12	
@@ -2111,33 +2111,33 @@ SH-I-2159	other:help-center-sections	Duty and tax inclusive pricing	SH-C-100;SH-
 SH-I-2160	other:help-center-sections	Understanding the General Product Safety Regulation (GPSR)	SH-C-175	SH-A-28	
 SH-I-2161	other:help-center-sections	CPSC eFiling compliance	SH-C-175	SH-A-28	
 SH-I-2162	other:help-center-sections	Managed Markets	SH-C-110	SH-A-17	
-SH-I-2163	other:help-center-sections	Add language translations using the Translate & Adapt app	SH-C-032	SH-A-17	
-SH-I-2164	other:help-center-sections	Understanding checkout restrictions	SH-C-108	SH-A-17	
-SH-I-2165	other:help-center-sections	Accepted currencies with restrictions in France	SH-C-108	SH-A-17	
-SH-I-2166	other:help-center-sections	Currency conversions and exchange rates	SH-C-109	SH-A-17	
-SH-I-2167	other:help-center-sections	Primary gateways for international and local pricing support	SH-C-062;SH-C-108	SH-A-13;SH-A-17	yes
-SH-I-2168	other:help-center-sections	Guidelines and restrictions for selling in local currencies	SH-C-108	SH-A-17	
-SH-I-2169	other:help-center-sections	Volatile currencies	SH-C-109	SH-A-17	
-SH-I-2170	other:help-center-sections	Rounding prices	SH-C-108	SH-A-17	
+SH-I-2163	other:help-center-sections	Add language translations using the Translate & Adapt app	SH-C-032	SH-A-30	
+SH-I-2164	other:help-center-sections	Understanding checkout restrictions	SH-C-108	SH-A-31	
+SH-I-2165	other:help-center-sections	Accepted currencies with restrictions in France	SH-C-108	SH-A-31	
+SH-I-2166	other:help-center-sections	Currency conversions and exchange rates	SH-C-109	SH-A-31	
+SH-I-2167	other:help-center-sections	Primary gateways for international and local pricing support	SH-C-062;SH-C-108	SH-A-13;SH-A-31	yes
+SH-I-2168	other:help-center-sections	Guidelines and restrictions for selling in local currencies	SH-C-108	SH-A-31	
+SH-I-2169	other:help-center-sections	Volatile currencies	SH-C-109	SH-A-31	
+SH-I-2170	other:help-center-sections	Rounding prices	SH-C-108	SH-A-31	
 SH-I-2171	other:help-center-sections	Dynamic tax-inclusive pricing	SH-C-100	SH-A-16	
-SH-I-2172	other:help-center-sections	Testing your multiple currency setup	SH-C-108	SH-A-17	
-SH-I-2173	other:help-center-sections	Fees and costs	SH-C-109	SH-A-17	
-SH-I-2174	other:help-center-sections	Formatting how currency displays to your customers	SH-C-108	SH-A-17	
+SH-I-2172	other:help-center-sections	Testing your multiple currency setup	SH-C-108	SH-A-31	
+SH-I-2173	other:help-center-sections	Fees and costs	SH-C-109	SH-A-31	
+SH-I-2174	other:help-center-sections	Formatting how currency displays to your customers	SH-C-108	SH-A-31	
 SH-I-2175	other:help-center-sections	Discounts	SH-C-127	SH-A-18	
-SH-I-2176	other:help-center-sections	Gift cards	SH-C-025	SH-A-05	
+SH-I-2176	other:help-center-sections	Gift cards	SH-C-025	SH-A-32	
 SH-I-2177	other:help-center-sections	Refunds	SH-C-057	SH-A-11	
 SH-I-2178	other:help-center-sections	Customizing markets	SH-C-106	SH-A-17	
 SH-I-2179	other:help-center-sections	Getting started with markets	SH-C-106	SH-A-17	
 SH-I-2180	other:help-center-sections	Rollouts	SH-C-112	SH-A-17	
-SH-I-2181	other:help-center-sections	Discounts and gift cards in Markets	SH-C-025;SH-C-127	SH-A-05;SH-A-18	yes
+SH-I-2181	other:help-center-sections	Discounts and gift cards in Markets	SH-C-025;SH-C-127	SH-A-32;SH-A-18	yes
 SH-I-2182	other:help-center-sections	International SEO for markets	SH-C-111	SH-A-17	
 SH-I-2183	other:help-center-sections	Backup region in Markets	SH-C-113	SH-A-17	
-SH-I-2184	other:help-center-sections	Bulgaria currency change in Markets	SH-C-108	SH-A-17	
+SH-I-2184	other:help-center-sections	Bulgaria currency change in Markets	SH-C-108	SH-A-31	
 SH-I-2185	other:help-center-sections	Adding and removing market customizations	SH-C-106	SH-A-17	
-SH-I-2186	other:help-center-sections	Creating catalogs for markets	SH-C-037	SH-A-09	
-SH-I-2187	other:help-center-sections	Setting up currencies for markets	SH-C-108	SH-A-17	
+SH-I-2186	other:help-center-sections	Creating catalogs for markets	SH-C-037	SH-A-33	
+SH-I-2187	other:help-center-sections	Setting up currencies for markets	SH-C-108	SH-A-31	
 SH-I-2188	other:help-center-sections	Customizing online store for markets	SH-C-106	SH-A-17	
-SH-I-2189	other:help-center-sections	Assigning domains and languages to markets	SH-C-032;SH-C-111	SH-A-17	
+SH-I-2189	other:help-center-sections	Assigning domains and languages to markets	SH-C-032;SH-C-111	SH-A-30;SH-A-17	yes
 SH-I-2190	other:help-center-sections	Setting up duties and taxes for markets	SH-C-105	SH-A-16	
 SH-I-2191	other:help-center-sections	Setting up business entities for markets	SH-C-004;SH-C-005	SH-A-02	
 SH-I-2192	other:help-center-sections	Getting paid	SH-C-062;SH-C-069	SH-A-13;SH-A-14	yes
@@ -2160,7 +2160,7 @@ SH-I-2208	other:help-center-sections	Setting up Shopify Payments	SH-C-063;SH-C-0
 SH-I-2209	other:help-center-sections	Configuring Shopify Payments	SH-C-063	SH-A-14	
 SH-I-2210	other:help-center-sections	Testing Shopify Payments	SH-C-063	SH-A-14	
 SH-I-2211	other:help-center-sections	Shopify Payments transactions	SH-C-084	SH-A-13	
-SH-I-2212	other:help-center-sections	Store Currencies	SH-C-107	SH-A-17	
+SH-I-2212	other:help-center-sections	Store Currencies	SH-C-107	SH-A-31	
 SH-I-2213	other:help-center-sections	Getting paid with Shopify Payments	SH-C-069	SH-A-14	
 SH-I-2214	other:help-center-sections	Managed payment methods	SH-C-063	SH-A-14	
 SH-I-2215	other:help-center-sections	Using Shopify Payments with a third-party provider	SH-C-063;SH-C-076	SH-A-14;SH-A-13	yes
@@ -2187,12 +2187,12 @@ SH-I-2235	other:help-center-sections	Shopify Payments refunds	SH-C-057	SH-A-11
 SH-I-2236	other:help-center-sections	Overview of reserves in Shopify Payments	SH-C-070	SH-A-14	
 SH-I-2237	other:help-center-sections	Shopify Payments account holds	SH-C-070	SH-A-14	
 SH-I-2238	other:help-center-sections	Understanding your store and payout currencies	SH-C-069	SH-A-14	
-SH-I-2239	other:help-center-sections	Selling and getting paid in different currencies	SH-C-108;SH-C-109	SH-A-17	
+SH-I-2239	other:help-center-sections	Selling and getting paid in different currencies	SH-C-108;SH-C-109	SH-A-31	
 SH-I-2240	other:help-center-sections	Supported payout currencies	SH-C-069	SH-A-14	
-SH-I-2241	other:help-center-sections	Changing your store currency	SH-C-107	SH-A-17	
-SH-I-2242	other:help-center-sections	Multi-currency	SH-C-108	SH-A-17	
+SH-I-2241	other:help-center-sections	Changing your store currency	SH-C-107	SH-A-31	
+SH-I-2242	other:help-center-sections	Multi-currency	SH-C-108	SH-A-31	
 SH-I-2243	other:help-center-sections	Managing Multi-Currency Payouts with Shopify Payments	SH-C-069	SH-A-14	
-SH-I-2244	other:help-center-sections	Currency conversion fee calculation for Shopify Payments orders	SH-C-109	SH-A-17	
+SH-I-2244	other:help-center-sections	Currency conversion fee calculation for Shopify Payments orders	SH-C-109	SH-A-31	
 SH-I-2245	other:help-center-sections	Shopify Payments for Australia	SH-C-063	SH-A-14	
 SH-I-2246	other:help-center-sections	Shopify Payments for Austria	SH-C-063	SH-A-14	
 SH-I-2247	other:help-center-sections	Shopify Payments for Bulgaria	SH-C-063	SH-A-14	
@@ -2369,7 +2369,7 @@ SH-I-2432	other:admin-operation-areas	banking	SH-C-088;SH-C-089;SH-C-090	SH-A-15
 SH-I-2433	other:admin-operation-areas	contractmanagement	SH-C-201	SH-A-04	
 SH-I-2434	other:admin-operation-areas	completeness_engine	SH-C-004	SH-A-02	
 SH-I-2435	other:admin-operation-areas	profile_assessment	SH-C-008;SH-C-068	SH-A-01;SH-A-14	yes
-SH-I-2436	other:admin-operation-areas	server_intents	SH-C-009;SH-C-010;SH-C-020;SH-C-021;SH-C-023;SH-C-024;SH-C-028;SH-C-030;SH-C-037;SH-C-039;SH-C-044;SH-C-055;SH-C-106;SH-C-112;SH-C-114;SH-C-127	SH-A-01;SH-A-05;SH-A-06;SH-A-07;SH-A-09;SH-A-08;SH-A-11;SH-A-17;SH-A-12;SH-A-18	yes
+SH-I-2436	other:admin-operation-areas	server_intents	SH-C-009;SH-C-010;SH-C-020;SH-C-021;SH-C-023;SH-C-024;SH-C-028;SH-C-030;SH-C-037;SH-C-039;SH-C-044;SH-C-055;SH-C-106;SH-C-112;SH-C-114;SH-C-127	SH-A-01;SH-A-05;SH-A-06;SH-A-07;SH-A-33;SH-A-08;SH-A-09;SH-A-11;SH-A-17;SH-A-12;SH-A-18	yes
 SH-I-2437	other:staff-permissions	VIEW_INVENTORY_PURCHASE_ORDERS	SH-C-010;SH-C-023	SH-A-01;SH-A-06	yes
 SH-I-2438	other:staff-permissions	CREATE_AND_EDIT_INVENTORY_PURCHASE_ORDERS	SH-C-010;SH-C-023	SH-A-01;SH-A-06	yes
 SH-I-2439	other:staff-permissions	VIEW_INVENTORY_COUNTS	SH-C-010;SH-C-022	SH-A-01;SH-A-06	yes
@@ -2426,7 +2426,7 @@ SH-I-2489	other:app-store-built-in-features	Customer accounts	SH-C-041	SH-A-08
 SH-I-2490	other:app-store-built-in-features	Customer segmentation	SH-C-040	SH-A-08	
 SH-I-2491	other:app-store-built-in-features	Domains	SH-C-033	SH-A-07	
 SH-I-2492	other:app-store-built-in-features	Draft orders	SH-C-055	SH-A-11	
-SH-I-2493	other:app-store-built-in-features	Gift cards	SH-C-025	SH-A-05	
+SH-I-2493	other:app-store-built-in-features	Gift cards	SH-C-025	SH-A-32	
 SH-I-2494	other:app-store-built-in-features	Inventory management	SH-C-022	SH-A-06	
 SH-I-2495	other:app-store-built-in-features	Shopify Magic for blog posts	SH-C-202	SH-A-23	
 SH-I-2496	other:app-store-built-in-features	Shopify Magic for product descriptions	SH-C-202	SH-A-23	
@@ -2447,25 +2447,25 @@ SH-I-2510	other:app-store-built-in-features	Shopify Tax	SH-C-100	SH-A-16
 SH-I-2511	other:app-store-built-in-features	Shopify Tax	SH-C-100	SH-A-16	
 SH-I-2512	other:app-store-built-in-features	Shopify Theme Store	SH-C-029	SH-A-07	
 SH-I-2513	other:app-store-built-in-features	Sidekick, your AI cofounder	SH-C-152	SH-A-23	
-SH-I-2514	other:app-store-built-in-features	Store credit	SH-C-026	SH-A-08	
+SH-I-2514	other:app-store-built-in-features	Store credit	SH-C-026	SH-A-32	
 SH-I-2515	other:merchant-legal-entities	My Store - entity	SH-C-004	SH-A-02	
 SH-I-2516	other:merchant-legal-entities	Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NjQyMjY3MA	SH-C-004;SH-C-005	SH-A-02	
 SH-I-2517	other:merchant-legal-entities	Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NjQyMzc4OQ	SH-C-004;SH-C-005	SH-A-02	
 SH-I-2518	other:merchant-legal-entities	Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NzUyNTQ1Mg	SH-C-004	SH-A-02	
-SH-I-2522	other:store-entitlements	accountManagement	SH-C-032	SH-A-17	
-SH-I-2523	other:store-entitlements	b2b	SH-C-037;SH-C-044	SH-A-09	
-SH-I-2524	other:store-entitlements	sellsOnShopifyPlatforms	SH-C-033;SH-C-037	SH-A-07;SH-A-09	yes
+SH-I-2522	other:store-entitlements	accountManagement	SH-C-032	SH-A-30	
+SH-I-2523	other:store-entitlements	b2b	SH-C-037;SH-C-044	SH-A-33;SH-A-09	yes
+SH-I-2524	other:store-entitlements	sellsOnShopifyPlatforms	SH-C-033;SH-C-037	SH-A-07;SH-A-33	yes
 SH-I-2526	other:store-entitlements	abandonedCartRecovery	SH-C-050	SH-A-10	
 SH-I-2527	other:store-entitlements	productsCollections	SH-C-021	SH-A-05	
 SH-I-2528	other:store-entitlements	discountCodes	SH-C-127	SH-A-18	
-SH-I-2529	other:store-entitlements	products	SH-C-020;SH-C-021;SH-C-022;SH-C-023;SH-C-025	SH-A-05;SH-A-06	yes
+SH-I-2529	other:store-entitlements	products	SH-C-020;SH-C-021;SH-C-022;SH-C-023;SH-C-025	SH-A-05;SH-A-06;SH-A-32	yes
 SH-I-2530	other:store-entitlements	inventory	SH-C-022;SH-C-023	SH-A-06	
 SH-I-2533	other:store-entitlements	webCheckout	SH-C-047;SH-C-048	SH-A-10	
 SH-I-2534	other:store-entitlements	customerSegmentation	SH-C-040	SH-A-08	
-SH-I-2535	other:store-entitlements	giftCards	SH-C-025	SH-A-05	
+SH-I-2535	other:store-entitlements	giftCards	SH-C-025	SH-A-32	
 SH-I-2536	other:store-entitlements	customers	SH-C-041	SH-A-08	
 SH-I-2538	other:store-entitlements	policies	SH-C-034	SH-A-10	
-SH-I-2539	other:store-entitlements	markets	SH-C-037;SH-C-044	SH-A-09	
+SH-I-2539	other:store-entitlements	markets	SH-C-037;SH-C-044	SH-A-33;SH-A-09	yes
 SH-I-2540	other:store-entitlements	maximumLocations	SH-C-024	SH-A-06	
 SH-I-2541	other:store-entitlements	metaobjects	SH-C-027;SH-C-028;SH-C-030;SH-C-031	SH-A-07	
 SH-I-2542	other:store-entitlements	storefront	SH-C-029;SH-C-030;SH-C-031;SH-C-055;SH-C-129;SH-C-145;SH-C-146;SH-C-148	SH-A-07;SH-A-11;SH-A-19;SH-A-22;SH-A-27	yes

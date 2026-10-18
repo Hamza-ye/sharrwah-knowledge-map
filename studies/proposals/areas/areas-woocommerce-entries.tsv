@@ -541,7 +541,7 @@ WC-I-0539	other:marketplace-categories	Extensions > Store content and customizat
 WC-I-0540	other:marketplace-categories	Extensions > Store management > Payment management	WC-C-005	WC-A-01	
 WC-I-0541	other:marketplace-categories	Extensions > Store management > Business insights	WC-C-109	WC-A-26	
 WC-I-0542	other:marketplace-categories	Extensions > Store management > Import and export	WC-C-109	WC-A-26	
-WC-I-0543	other:marketplace-categories	Extensions > Store management > Merchant financing	WC-C-016	WC-A-03	
+WC-I-0543	other:marketplace-categories	Extensions > Store management > Merchant financing	WC-C-016	WC-A-29	
 WC-I-0544	other:marketplace-categories	Extensions > Store management > Order management	WC-C-109	WC-A-26	
 WC-I-0545	other:marketplace-categories	Extensions > Store management > Policy and security	WC-C-109	WC-A-26	
 WC-I-0546	other:marketplace-categories	Extensions > Store management > Sales tax and duties	WC-C-056;WC-C-058	WC-A-11	
@@ -602,11 +602,11 @@ WC-I-0600	other:woopayments-doc-topics	Fees and Debits	WC-C-012;WC-C-051	WC-A-03
 WC-I-0601	other:woopayments-doc-topics	Fraud and Disputes	WC-C-013;WC-C-115;WC-C-116	WC-A-04	
 WC-I-0602	other:woopayments-doc-topics	In-Person Payments	WC-C-014	WC-A-28	
 WC-I-0603	other:woopayments-doc-topics	Managing Money and Refunds	WC-C-007	WC-A-03	
-WC-I-0604	other:woopayments-doc-topics	Our Policies	WC-C-008;WC-C-009;WC-C-011;WC-C-018;WC-C-019;WC-C-049	WC-A-03;WC-A-02;WC-A-07;WC-A-01;WC-A-10	yes
+WC-I-0604	other:woopayments-doc-topics	Our Policies	WC-C-008;WC-C-009;WC-C-011;WC-C-018;WC-C-019;WC-C-049	WC-A-03;WC-A-02;WC-A-07;WC-A-01;WC-A-30	yes
 WC-I-0605	other:woopayments-doc-topics	Payment Failures / Declines	WC-C-006	WC-A-02	
 WC-I-0606	other:woopayments-doc-topics	Payment Methods	WC-C-006	WC-A-02	
 WC-I-0607	other:woopayments-doc-topics	Payouts	WC-C-007;WC-C-051	WC-A-03;WC-A-05	yes
-WC-I-0608	other:woopayments-doc-topics	Stripe Capital	WC-C-016	WC-A-03	
+WC-I-0608	other:woopayments-doc-topics	Stripe Capital	WC-C-016	WC-A-29	
 WC-I-0609	other:woopayments-doc-topics	Subscriptions	WC-C-100	WC-A-24	
 WC-I-0610	other:woopayments-doc-topics	Taxes and Documents	WC-C-021	WC-A-11	
 WC-I-0611	other:woopayments-doc-topics	Testing and Troubleshooting	WC-C-006	WC-A-02	
@@ -627,7 +627,7 @@ WC-I-0626	other:tos-woo-services	WooPayments	WC-C-006;WC-C-023	WC-A-02;WC-A-08	y
 WC-I-0627	other:tos-woo-services	WooCommerce Shipping	WC-C-023;WC-C-060	WC-A-08;WC-A-12	yes
 WC-I-0628	other:tos-woo-services	WooCommerce Tax	WC-C-023;WC-C-055	WC-A-08;WC-A-11	yes
 WC-I-0629	other:tos-woo-services	MailPoet	WC-C-023;WC-C-113	WC-A-08;WC-A-17	yes
-WC-I-0630	legal-agreements	Terms of Service	WC-C-015;WC-C-019;WC-C-023;WC-C-026;WC-C-027;WC-C-028;WC-C-029;WC-C-040;WC-C-041;WC-C-042;WC-C-049;WC-C-057;WC-C-058;WC-C-117	WC-A-02;WC-A-01;WC-A-08;WC-A-07;WC-A-09;WC-A-10;WC-A-11	yes
+WC-I-0630	legal-agreements	Terms of Service	WC-C-015;WC-C-019;WC-C-023;WC-C-026;WC-C-027;WC-C-028;WC-C-029;WC-C-040;WC-C-041;WC-C-042;WC-C-049;WC-C-057;WC-C-058;WC-C-117	WC-A-02;WC-A-01;WC-A-08;WC-A-07;WC-A-09;WC-A-30;WC-A-11;WC-A-10	yes
 WC-I-0631	legal-agreements	Privacy Policy	WC-C-024;WC-C-040;WC-C-042;WC-C-043	WC-A-09;WC-A-02	yes
 WC-I-0632	legal-agreements	Privacy Notice for California Users	WC-C-024	WC-A-09	
 WC-I-0633	legal-agreements	Do not sell or share my personal information	WC-C-024	WC-A-09	

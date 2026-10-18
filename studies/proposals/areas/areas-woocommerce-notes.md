@@ -31,3 +31,9 @@ What sits oddly against the plain lines:
 - WC-A-06 holds the 46 payment provider suggestions (through WC-C-004) and also `Compatibility` [other:woopayments-doc-topics], through WC-C-010. Its plain line covers the suggestions by store country.
 - WC-A-10 holds `Our Policies`, `Terms of Service` and `wooads-policy` because they carry WC-C-049 or WC-C-117 among others; the area's plain line covers only their passages on data sent to Woo.
 - WC-A-20 holds most `wc-admin` endpoints (notices, features, experiments, options, plugins, onboarding) through WC-C-081, which its plain line covers as "onboarding tasks and inbox".
+
+## Re-cut after the review
+
+The coordinator re-cut these areas after the review of the areas list (`review.md`, findings 3 and 6), on 18 October 2026. Each area's note says why.
+- WC-A-29 holds merchant financing through Stripe Capital (from WC-A-03).
+- WC-A-30 holds the WordPress.com account and Jetpack connection (from WC-A-10).

@@ -29,7 +29,9 @@ For the merged list, it reads areas.tsv and depth.tsv, and checks:
 - an area no question draws on says why the work leaves it out;
 - depth.tsv has one row for each question and platform, a depth of "in depth" or "check", a reason,
   and what the reason cites, each cited id being a concern, a citation or a pilot statement that
-  exists; and each question has at least one platform in depth. A depth of "none" is allowed only
+  exists, and each cited concern reached by the row's question (it sits in an area tied to it); and
+  each question has at least one platform in depth;
+- an area that questions draw on gives no left_out. A depth of "none" is allowed only
   under the founder's cuts: for every row of Q8 under cut 2 (Q8 without recording runs), and for a
   row that would otherwise be "check" under cut 3 (checking runs only where the recorded material
   suggests a different answer).
@@ -249,6 +251,31 @@ def check_merged(d, cuts):
             for c in split(r.get("cites")):
                 if c not in ids:
                     problems.append(f"depth.tsv: {key} cites {c}, which isn't a concern, citation or pilot statement id")
+        # Each concern a reason cites, directly or through a citation, is reached by the row's question: it sits
+        # in a platform area of a merged area tied to that question. The pilot's statements are offered to every
+        # question, so they are always reached.
+        tied = {}
+        for r in rows:
+            for pa in split(r.get("platform_area_ids")):
+                tied[pa] = set(split(r.get("questions")))
+        reach, by_cite = {}, {}
+        for p in PLATFORMS:
+            for r in read(os.path.join(d, f"areas-{p}.tsv"), COLS, []):
+                for c in split(r.get("concern_ids")):
+                    reach[c] = tied.get(r["area_id"], set())
+            with open(os.path.join(CM, p, "statements.tsv"), encoding="utf-8") as f:
+                for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
+                    for c in split(r.get("cite_ids")):
+                        by_cite.setdefault(c, set()).add(r["concern_id"])
+        for r in drows:
+            q = r.get("question")
+            for c in split(r.get("cites")):
+                concerns = {c} if c in reach else by_cite.get(c, set())
+                if concerns and not any(q in reach.get(x, set()) for x in concerns):
+                    problems.append(f"depth.tsv: ({q}, {r.get('platform')}) cites {c}, whose concern sits in no area tied to {q}")
+        for r in rows:
+            if split(r.get("questions")) and (r.get("left_out") or "").strip():
+                problems.append(f"{r.get('area_id')}: questions draw on it, yet left_out says the work doesn't read it")
         for q in QUESTIONS:
             ds = [seen.get((q, p)) for p in PLATFORMS]
             if None in ds:

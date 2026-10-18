@@ -13,7 +13,7 @@ Don't answer the question in your own words, compare your platform with any othe
 - this brief;
 - your question, in `studies/proposals/questions-for-agents.md`: its own section, and "How a run uses its question". Its sentences are numbered in square brackets. Use those numbers;
 - the files in your folder;
-- for Q5 only: the pilot's `studies/subjects/S-01/<platform>/absence-audit.tsv`, only for the absences you rely on (step 2);
+- if you copy the pilot's row (S-01): the pilot's `studies/subjects/S-01/<platform>/absence-audit.tsv`, only for the absences you rely on (step 2);
 - your platform's `studies/concern-map/platforms/<platform>/concerns.tsv`, only to add a concern (step 1);
 - your platform's own material, held or live, as the table below gives it. For every platform this includes any agreement its terms incorporate, or name as binding on the seller.
 
@@ -60,21 +60,22 @@ Don't answer the question in your own words, compare your platform with any othe
      - `set aside` if it doesn't, with the reason in `reason`.
    - Add a row with action `add`, and its reason, for any other concern of your platform that bears on the question. Take its id and terms from `concerns.tsv`.
    - Judge by the terms. Where they don't decide it, run `copy_statements.py show` for that concern, and judge by its statements. The description is the concern map's words, not the platform's.
+   - The last row, `S-01`, is the pilot's statements, gaps and absences on who holds a seller's money. For Q5 it is set to `copy` already. For other questions, judge it like the others.
    - Then run `python3 -I method/copy_statements.py copy <question> <platform>`. It copies every row unchanged:
      - `copied.tsv`, the statements, with ids such as `Q2-SA-K1553`;
      - `copied-gaps.tsv`, the gaps: what an earlier run didn't find, with ids such as `Q2-SA-G0007`;
      - `copied-citations.tsv`, their citations;
-     - for Q5, the pilot's statements (`copied-pilot.tsv`, P ids), gaps (`copied-pilot-gaps.tsv`, H ids) and absences (`copied-pilot-absences.tsv`, A ids);
+     - if S-01 is copied, the pilot's statements (`copied-pilot.tsv`, P ids), gaps (`copied-pilot-gaps.tsv`, H ids) and absences (`copied-pilot-absences.tsv`, A ids);
      - two views of the statements: `copied-index.tsv` and `copied-view.tsv`.
 
      A copy's id is its line in its source. If you add a concern later, add its row and copy again: the ids already copied don't change.
 2. **Read the copies through their views.** They are recorded already, so don't record them again. Never read `copied.tsv`, `copied-gaps.tsv` or `copied-citations.tsv` whole.
    1. Read `copied-index.tsv` whole: each copy's id, concern and identifier.
    2. Before you record a statement, search `copied-view.tsv` with `grep` for a distinctive phrase of it. If a copy already says it, don't record it.
-   3. Read the copied gaps only of the concerns that bear on a sentence of your question, with `grep` for the concern's id in `copied-gaps.tsv`. For Q5, search `copied-pilot-gaps.tsv` with `grep` for the terms of the sentence you are reading for.
+   3. Read the copied gaps only of the concerns that bear on a sentence of your question, with `grep` for the concern's id in `copied-gaps.tsv`. If S-01 is copied, search `copied-pilot-gaps.tsv` with `grep` for the terms of the sentence you are reading for.
    4. When you write the account, read `copied-view.tsv` once.
    5. Open `copied-citations.tsv` only for a `cite_id`, with `grep`.
-   6. For Q5, read `copied-pilot-absences.tsv`. Read the pilot's `absence-audit.tsv` only for the absences you rely on.
+   6. If S-01 is copied, read `copied-pilot-absences.tsv`. Read the pilot's `absence-audit.tsv` only for the absences you rely on.
 3. **Read for what the copies don't show,** one sentence of your question at a time, in this order:
    1. your platform's map of its help, if it has one: at most 10 pages, chosen by their titles;
    2. one corpus search in your platform's own words, in each language it uses, as alternatives in one call. Read at most 5 of the documents it lists, or 10 if your platform has no map;
@@ -84,7 +85,7 @@ Don't answer the question in your own words, compare your platform with any othe
 4. **Go deep only where a sentence concerns money flows, legal structure, the data model or partner contracts.** For those sentences, and within at most 5 more pages each:
    - record the platform's own structure: the things it names, and the levels its settings are set at, each named as the platform names it;
    - record the contracts behind its providers as your platform's material shows them: what it says of them, and any agreement its terms incorporate or name as binding on the seller, which you may read. Don't read a provider's own terms otherwise. Where your platform names such terms, record them as not in what was read, with their address.
-5. **Record what you don't find,** in `not-found.tsv` (rules 6 and 7). A copied gap that is still open and bears on a sentence is cited by its G id, or for Q5 the pilot's H id. Record a not-found only for what no copied gap covers.
+5. **Record what you don't find,** in `not-found.tsv` (rules 6 and 7). A copied gap that is still open and bears on a sentence is cited by its G id, or the pilot's H id. Record a not-found only for what no copied gap covers.
 6. **Write the account** (Output).
 
 ## Rules
@@ -152,8 +153,8 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 **`account.md`** is a short account of what your platform shows for the question, in its own terms.
 - **Its sections:** one for each sentence your points answer, in order, headed by the sentence's number, as `## [2]`. A point that answers several sentences goes under the first.
 - **Each point,** a list item or a paragraph, ends with the ids it rests on:
-  - copy ids, such as `Q2-SA-K1553`, and for Q5 the pilot's, such as `Q5-SA-P0003`;
-  - copied gap ids, such as `Q2-SA-G0007`, and for Q5 the pilot's H and A ids;
+  - copy ids, such as `Q2-SA-K1553`, and the pilot's, such as `Q5-SA-P0003`;
+  - copied gap ids, such as `Q2-SA-G0007`, and the pilot's H and A ids;
   - your `stmt_id`s and `nf_id`s.
 
   A point without an id doesn't belong in it.

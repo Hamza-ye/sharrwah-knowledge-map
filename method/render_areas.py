@@ -25,7 +25,7 @@ merged = rows(os.path.join(D, "areas.tsv"))
 depth = rows(os.path.join(D, "depth.tsv"))
 out = ["# The platforms' broad areas, for your marks", "",
  "**Step R1, 18 October 2026.** This is the areas list your G1 answer asked for, before the detailed work. The files behind it are `areas.tsv`, `depth.tsv` and each platform's `areas-<platform>.tsv`, in this folder.", "",
- "**What it is.** Each platform's own areas, named in its own words by one short run per platform, merged into 29 areas. "
+ f"**What it is.** Each platform's own areas, named in its own words by one short run per platform, merged into {len(merged)} areas. "
  "Where a merged area's heading is one platform's own name, it says whose. Where no one name covers all the platforms, the heading is mine, and marked as mine.", "",
  "**What your marks do.** With your marks, this list becomes Sharrwah's whole extent for the design of its first build.",
  "- **Won't do:** the area is outside Sharrwah. The first build's design leaves it out, and no proposal provides for it. Its recorded evidence still serves the questions that draw on it.",
@@ -44,8 +44,8 @@ for r in merged:
     for pa in r["platform_area_ids"].split(";"):
         code = pa[:2]
         lst = by.setdefault(code, [])
-        ns = [re.sub(r"\s*\[[^\]]+\]$", "", x.strip()) for x in plat[pa]["platform_names"].split(";") if x.strip()]
-        lst.extend(n for n in ns[:3] if n not in lst)
+        ns = [re.sub(r"\s*\[[^\]]+\]$", "", x.strip()).rstrip(" :") for x in plat[pa]["platform_names"].split(";") if x.strip()]
+        lst.extend(n for n in ns if n not in lst)     # every name, so that what a note or plain line relies on shows
     out.append("- **The platforms' own names:** " + "; ".join(f"{P[c]}: {', '.join(v)}" for c, v in by.items()) + ".")
     qs = [q for q in r["questions"].split(";") if q]
     out.append("- **Questions that draw on it:** " + (", ".join(f"{q} ({Q[q]})" for q in qs) if qs else "none") + ".")

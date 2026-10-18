@@ -30,3 +30,11 @@ None. Every one of the extract's 198 concerns is placed under one area.
 These splits follow from how entries were given concerns, not from where areas were drawn. No grouping of the 198 concerns would remove them, short of joining the developer area or the account area to every other area.
 
 Area sizes: SH-A-25 holds 742 entries, most of them webhook topics, access scopes and extension points, which fit its plain line. SH-A-01 holds 348, most of them staff permissions and roles. SH-A-03 holds the 68 notification templates (order confirmation, shipping and pickup messages, and so on), which fit its plain line on the notifications the store sends. SH-A-23 holds the Flow connectors listed under extension points (Asana, Trello, Slack, Google Sheets for Shopify Flow, OpenAI) and the plan features `Website builder` and `Millions of tokens`, which fit as Flow and Sidekick entries. SH-A-28 holds the Help Center pages `Dropshipping` and `Product fulfillment documentation`, because their concern is SH-C-175 (merchant compliance). SH-A-29 holds only 3 entries. I saw no area whose entries fall outside its plain line.
+
+## Re-cut after the review
+
+The coordinator re-cut these areas after the review of the areas list (`review.md`, findings 4 to 6), on 18 October 2026. Each area's note says why.
+- SH-A-17 keeps Markets, Managed Markets, rollouts, the backup region, and international domains and geolocation. It is now marked as a grouping of our own.
+- SH-A-30 (Languages) and SH-A-31 (the currency pages of International sales tools, with the store currency) are split from it.
+- SH-A-32 joins gift cards (from SH-A-05) and store credit (from SH-A-08).
+- SH-A-33 holds catalogs (from SH-A-09).

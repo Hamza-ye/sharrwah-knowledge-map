@@ -33,3 +33,10 @@ None. All 96 concerns in the extract are placed under one area each.
 - ZD-A-21 (App Market) holds 58 entries, of which 34 are the App Market's own categories (the 35th, الشحن والتخزين, follows its concern to shipping, ZD-A-13). That fits its plain line: the categories describe the apps on offer, though the subjects they name (shipping, tax, marketing, CRM) also have areas of their own.
 - ZD-A-26 holds 15 entries, 12 of them `manage.store.ecosystem.*` staff permissions tied to زد نمو; its plain line was written to match them.
 - The other areas' entries fit their plain lines.
+
+## Re-cut after the review
+
+The coordinator re-cut these areas after the review of the areas list (`review.md`, findings 4 and 5), on 18 October 2026. Each area's note says why.
+- ZD-A-10 keeps الأسواق (Markets).
+- ZD-A-30 holds the store's languages and currencies (لغة وعملات المتجر), and ZD-A-31 the countries Zid serves, Zid Egypt, and the store's operating countries and cities.
+- ZD-A-32 holds customer wallets (from ZD-A-16).

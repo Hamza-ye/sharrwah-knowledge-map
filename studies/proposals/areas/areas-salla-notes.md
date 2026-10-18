@@ -56,3 +56,11 @@ Two areas hold far more entries than their plain lines' weight would suggest:
 - **SA-A-13 holds 235 entries.** Most are the storefront's web components and the e-commerce events in the developer documentation.
 
 Every area's entries fit its plain line.
+
+## Re-cut after the review
+
+The coordinator re-cut these areas after the review of the areas list (`review.md`, findings 2 to 5 and 7), on 18 October 2026. Each area's note says why.
+- SA-A-21 keeps Markets. SA-A-29 (Currencies) is split from it, and SA-A-30 (Languages) from SA-A-02.
+- SA-A-31 holds Salla Payments (from SA-A-17), and SA-A-33 charity stores' payment gateways (from SA-A-17), under the help centre's 🤝 Charity stores.
+- SA-A-32 holds financing (from SA-A-18).
+- SA-A-34 holds the customer wallet (from SA-A-09).

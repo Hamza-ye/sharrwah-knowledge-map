@@ -1,6 +1,6 @@
 inv_id	list	entry	concern_ids	area_ids	split
 ZD-I-0001	api-resources	Merchant APIs > Account > Me	ZD-C-077	ZD-A-25	
-ZD-I-0002	api-resources	Merchant APIs > Account > Store	ZD-C-077;ZD-C-035;ZD-C-050	ZD-A-25;ZD-A-11;ZD-A-10	yes
+ZD-I-0002	api-resources	Merchant APIs > Account > Store	ZD-C-077;ZD-C-035;ZD-C-050	ZD-A-25;ZD-A-11;ZD-A-30	yes
 ZD-I-0003	api-resources	Merchant APIs > Orders > Order Tags	ZD-C-080	ZD-A-15	
 ZD-I-0004	api-resources	Merchant APIs > Orders	ZD-C-080;ZD-C-054	ZD-A-15;ZD-A-12	yes
 ZD-I-0005	api-resources	Merchant APIs > Reverse Orders	ZD-C-081;ZD-C-054	ZD-A-15;ZD-A-12	yes
@@ -26,14 +26,14 @@ ZD-I-0024	api-resources	Merchant APIs > Shipping	ZD-C-062	ZD-A-13
 ZD-I-0025	api-resources	Merchant APIs > Marketing > Coupons	ZD-C-088	ZD-A-16	
 ZD-I-0026	api-resources	Merchant APIs > Marketing > Bundle Offers	ZD-C-089	ZD-A-16	
 ZD-I-0027	api-resources	Merchant APIs > Marketing > Loyalty Program	ZD-C-090	ZD-A-16	
-ZD-I-0028	api-resources	Merchant APIs > Marketing > Customer Wallets > Cashback Rules	ZD-C-019	ZD-A-16	
-ZD-I-0029	api-resources	Merchant APIs > Marketing > Customer Wallets > Wallet Analytics	ZD-C-019	ZD-A-16	
-ZD-I-0030	api-resources	Merchant APIs > Marketing > Customer Wallets > Manager Customer Wallet	ZD-C-019	ZD-A-16	
+ZD-I-0028	api-resources	Merchant APIs > Marketing > Customer Wallets > Cashback Rules	ZD-C-019	ZD-A-32	
+ZD-I-0029	api-resources	Merchant APIs > Marketing > Customer Wallets > Wallet Analytics	ZD-C-019	ZD-A-32	
+ZD-I-0030	api-resources	Merchant APIs > Marketing > Customer Wallets > Manager Customer Wallet	ZD-C-019	ZD-A-32	
 ZD-I-0031	api-resources	Merchant APIs > Customers > Customer Tags	ZD-C-091	ZD-A-17	
 ZD-I-0032	api-resources	Merchant APIs > Customers > Customer Portal Tickets	ZD-C-092	ZD-A-17	
 ZD-I-0033	api-resources	Merchant APIs > Customers	ZD-C-091	ZD-A-17	
-ZD-I-0034	api-resources	Merchant APIs > Store Settings	ZD-C-077;ZD-C-051;ZD-C-012;ZD-C-033;ZD-C-097	ZD-A-25;ZD-A-12;ZD-A-02;ZD-A-10;ZD-A-24	yes
-ZD-I-0035	api-resources	Merchant APIs > Countries and Cities	ZD-C-033	ZD-A-10	
+ZD-I-0034	api-resources	Merchant APIs > Store Settings	ZD-C-077;ZD-C-051;ZD-C-012;ZD-C-033;ZD-C-097	ZD-A-25;ZD-A-12;ZD-A-02;ZD-A-31;ZD-A-24	yes
+ZD-I-0035	api-resources	Merchant APIs > Countries and Cities	ZD-C-033	ZD-A-31	
 ZD-I-0036	api-resources	Merchant APIs > Blogs > Settings	ZD-C-093	ZD-A-19	
 ZD-I-0037	api-resources	Merchant APIs > Blogs > Categories	ZD-C-093	ZD-A-19	
 ZD-I-0038	api-resources	Merchant APIs > Blogs > Posts > Media	ZD-C-093	ZD-A-19	
@@ -87,7 +87,7 @@ ZD-I-0085	webhook-topics	merchant_linked	ZD-C-010	ZD-A-01
 ZD-I-0086	webhook-topics	payment_paid	ZD-C-010	ZD-A-01	
 ZD-I-0087	webhook-topics	refund_status_changed	ZD-C-010	ZD-A-01	
 ZD-I-0088	access-scopes	third_account_identity_read	ZD-C-077	ZD-A-25	
-ZD-I-0089	access-scopes	third_store_details_read	ZD-C-077;ZD-C-050	ZD-A-25;ZD-A-10	yes
+ZD-I-0089	access-scopes	third_store_details_read	ZD-C-077;ZD-C-050	ZD-A-25;ZD-A-30	yes
 ZD-I-0090	access-scopes	third_store_business_read	ZD-C-035	ZD-A-11	
 ZD-I-0091	access-scopes	third_store_details_write	ZD-C-077	ZD-A-25	
 ZD-I-0092	access-scopes	third_order_read	ZD-C-080	ZD-A-15	
@@ -111,13 +111,13 @@ ZD-I-0109	access-scopes	third_bundle_offers_write	ZD-C-089	ZD-A-16
 ZD-I-0110	access-scopes	loyalty_program.read	ZD-C-090	ZD-A-16	
 ZD-I-0111	access-scopes	loyalty_program.read_write	ZD-C-090	ZD-A-16	
 ZD-I-0112	access-scopes	third_loyalty_read	ZD-C-090	ZD-A-16	
-ZD-I-0113	access-scopes	third_customer_wallet_read	ZD-C-019	ZD-A-16	
-ZD-I-0114	access-scopes	third_customer_wallet_write	ZD-C-019	ZD-A-16	
+ZD-I-0113	access-scopes	third_customer_wallet_read	ZD-C-019	ZD-A-32	
+ZD-I-0114	access-scopes	third_customer_wallet_write	ZD-C-019	ZD-A-32	
 ZD-I-0115	access-scopes	third_customers_read	ZD-C-091	ZD-A-17	
 ZD-I-0116	access-scopes	third_customers_write	ZD-C-091	ZD-A-17	
 ZD-I-0117	access-scopes	account.read	ZD-C-077;ZD-C-012	ZD-A-25;ZD-A-02	yes
 ZD-I-0118	access-scopes	third_vat_read	ZD-C-051	ZD-A-12	
-ZD-I-0119	access-scopes	countries_cities.read	ZD-C-033	ZD-A-10	
+ZD-I-0119	access-scopes	countries_cities.read	ZD-C-033	ZD-A-31	
 ZD-I-0120	access-scopes	third_one_signal_write	ZD-C-097	ZD-A-24	
 ZD-I-0121	access-scopes	third_payment_read	ZD-C-012;ZD-C-005	ZD-A-02;ZD-A-01	yes
 ZD-I-0122	access-scopes	third_webhook_read	ZD-C-072	ZD-A-22	
@@ -138,7 +138,7 @@ ZD-I-0136	settings	عام › اعدادات الضريبة ( لوحة التح�
 ZD-I-0137	settings	عام › خصائص الطلبات والمنتجات | المنتجات ( لوحة التحكم الجديدة )	ZD-C-100	ZD-A-14	
 ZD-I-0138	settings	عام › خصائص الطلبات والمنتجات | الطلبات ( لوحة التحكم الجديدة )	ZD-C-100	ZD-A-14	
 ZD-I-0139	settings	عام › اعدادات الفواتير (لوحة التحكم الجديدة )	ZD-C-052	ZD-A-12	
-ZD-I-0140	settings	عام › لغة وعملات المتجر ( لوحة التحكم الجديدة )	ZD-C-050	ZD-A-10	
+ZD-I-0140	settings	عام › لغة وعملات المتجر ( لوحة التحكم الجديدة )	ZD-C-050	ZD-A-30	
 ZD-I-0141	settings	عام › اعدادات الامان (لوحة التحكم الجديدة )	ZD-C-095	ZD-A-25	
 ZD-I-0142	settings	عام › اعدادات الحساب ( لوحة التحكم الجديدة )	ZD-C-077	ZD-A-25	
 ZD-I-0143	settings	التواصل › تجديد اسم المرسل ( لوحة التحكم الجديدة )	ZD-C-098	ZD-A-24	
@@ -350,9 +350,9 @@ ZD-I-0349	plan-features	Customer Management / إدارة العملاء › Q&A 
 ZD-I-0350	plan-features	Customer Management / إدارة العملاء › Create Customer Groups / إنشاء مجموعات عملاء	ZD-C-091	ZD-A-17	
 ZD-I-0351	plan-features	Customer Management / إدارة العملاء › Points-Earning Customers / العملاء المكتسبون للنقاط	ZD-C-090	ZD-A-16	
 ZD-I-0352	plan-features	Customer Management / إدارة العملاء › Customer Display Screen / شاشة عرض العملاء	ZD-C-108	ZD-A-23	
-ZD-I-0353	plan-features	Other / اخرى › Zid Wallet / محفظة زد	ZD-C-019	ZD-A-16	
+ZD-I-0353	plan-features	Other / اخرى › Zid Wallet / محفظة زد	ZD-C-019	ZD-A-32	
 ZD-I-0354	plan-features	Other / اخرى › Full & Partial Returns / الإرجاع الكامل والجزئي	ZD-C-081	ZD-A-15	
-ZD-I-0357	plan-features	Other / اخرى › Geo-Based Currency Settings / ضبط العملات على الموقع الجغرافي	ZD-C-050	ZD-A-10	
+ZD-I-0357	plan-features	Other / اخرى › Geo-Based Currency Settings / ضبط العملات على الموقع الجغرافي	ZD-C-050	ZD-A-30	
 ZD-I-0358	plan-features	Other / اخرى › Team Notifications / إشعارات الفريق	ZD-C-097	ZD-A-24	
 ZD-I-0359	plan-features	Other / اخرى › Ticketing & Chat System / نظام التذاكر والدردشة	ZD-C-114	ZD-A-29	
 ZD-I-0363	plan-features	Other / اخرى › Message Settings / إعدادات الرسائل	ZD-C-097	ZD-A-24	
@@ -470,11 +470,11 @@ ZD-I-0474	other:product-lines	Marketing Tools	ZD-C-106	ZD-A-16
 ZD-I-0475	other:product-lines	Marketplaces	ZD-C-110	ZD-A-07	
 ZD-I-0476	other:product-lines	ZID Assurance	ZD-C-111	ZD-A-28	
 ZD-I-0477	other:product-lines	Whatsapp	ZD-C-107	ZD-A-24	
-ZD-I-0478	other:countries	Egypt	ZD-C-032;ZD-C-031	ZD-A-10	
-ZD-I-0479	other:countries	UAE	ZD-C-032	ZD-A-10	
-ZD-I-0480	other:countries	Kuwait	ZD-C-032	ZD-A-10	
-ZD-I-0481	other:countries	Oman	ZD-C-032	ZD-A-10	
-ZD-I-0482	other:countries	Syria	ZD-C-032	ZD-A-10	
+ZD-I-0478	other:countries	Egypt	ZD-C-032;ZD-C-031	ZD-A-31	
+ZD-I-0479	other:countries	UAE	ZD-C-032	ZD-A-31	
+ZD-I-0480	other:countries	Kuwait	ZD-C-032	ZD-A-31	
+ZD-I-0481	other:countries	Oman	ZD-C-032	ZD-A-31	
+ZD-I-0482	other:countries	Syria	ZD-C-032	ZD-A-31	
 ZD-I-0483	other:staff-permissions	manage.store.marketing (Manage store marketing / إدارة تسويق المتجر)	ZD-C-106	ZD-A-16	
 ZD-I-0484	other:staff-permissions	manage.app.market.details (Manage app market details / purchase subscription / إدارة تفاصيل السوق / اشتراك الشراء)	ZD-C-070;ZD-C-022	ZD-A-21	
 ZD-I-0485	other:staff-permissions	manage.zidship.settings (Manage Zid Ship settings / إدارة إعدادات زد شب)	ZD-C-060	ZD-A-13	

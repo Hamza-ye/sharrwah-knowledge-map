@@ -10,8 +10,9 @@ A question draws on the merged areas whose `questions` column names it (studies/
 platform, those merged areas hold some of its platform areas (areas-<platform>.tsv), and those hold concerns.
 
 `candidates` writes OUT_DIR/selection.tsv: one row per concern of those areas, with its terms, the concern map's
-description, how many statements and gaps it holds, and its area, and with action `candidate`. For Q5 it adds a row
-`S-01` with action `copy`: the pilot's statements, gaps and absences, reused for the money paragraph of Q5.
+description, how many statements and gaps it holds, and its area, and with action `candidate`. Last comes a row `S-01`:
+the pilot's statements, gaps and absences on who holds the merchant's funds. It is `copy` for Q5, whose money
+paragraph reuses them, and `candidate` for the other questions, whose runs judge it like any other row.
 
 `show` prints the statements of the concerns named: concern_id, line (in the concern map's statements.tsv),
 identifier and statement. A run uses it to judge a concern whose terms don't decide it.
@@ -26,8 +27,8 @@ and writes, unchanged, each row after three columns: copy_id, source_file, sourc
 line, so it names the same row however the selection changes: Q2-SA-K1553 is line 1553 of Salla's statements.tsv.
 - copied.tsv (K ids): every statement of the concern map under a `copy` or `add` concern;
 - copied-gaps.tsv (G ids): every gap of the concern map under those concerns;
-- for Q5 only, the pilot's: copied-pilot.tsv (P ids), its statements; copied-pilot-gaps.tsv (H ids), its gaps;
-  copied-pilot-absences.tsv (A ids), its absences;
+- when S-01 is copied, the pilot's: copied-pilot.tsv (P ids), its statements; copied-pilot-gaps.tsv (H ids), its
+  gaps; copied-pilot-absences.tsv (A ids), its absences;
 - copied-citations.tsv: source_file, then every column of each citation the copies cite;
 - two views, to read instead of the copies: copied-index.tsv (copy_id, concern_id, identifier) and copied-view.tsv
   (copy_id, identifier, statement, scope), for every K and P copy. The pilot's concern_id is S-01.
@@ -120,11 +121,11 @@ def candidates(question, platform, out):
     ns, ng = tallies(platform)
     rows = [[c, info[c]["platform_terms"] or "", info[c]["concern"] or "", str(ns.get(c, 0)), str(ng.get(c, 0)), a,
              "candidate", ""] for c, a in candidates_for(question, platform)]
-    if question == PILOT_QUESTION:
-        n = len(read(os.path.join(PILOT, platform, "statements.tsv"))[1])
-        rows.append(["S-01", "", "the pilot's statements, gaps and absences on who holds the merchant's funds", str(n),
-                     str(len(read(os.path.join(PILOT, platform, "gaps.tsv"))[1])), "", "copy",
-                     "reused for the money paragraph of Q5"])
+    n = len(read(os.path.join(PILOT, platform, "statements.tsv"))[1])
+    pilot = question == PILOT_QUESTION
+    rows.append(["S-01", "", "the pilot's statements, gaps and absences on who holds the merchant's funds", str(n),
+                 str(len(read(os.path.join(PILOT, platform, "gaps.tsv"))[1])), "", "copy" if pilot else "candidate",
+                 "reused for the money paragraph of Q5" if pilot else ""])
     write(os.path.join(out, "selection.tsv"), SEL, rows)
     return len(rows)
 

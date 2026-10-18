@@ -5,7 +5,7 @@ SA-I-0005	api-resources	Support	SA-C-234;SA-C-203	SA-A-25
 SA-I-0006	api-resources	Security Considerations	SA-C-234	SA-A-25	
 SA-I-0008	api-resources	Webhooks	SA-C-192	SA-A-25	
 SA-I-0009	api-resources	Conditional Webhooks	SA-C-192	SA-A-25	
-SA-I-0010	api-resources	Multi-Language Support	SA-C-008	SA-A-02	
+SA-I-0010	api-resources	Multi-Language Support	SA-C-008	SA-A-30	
 SA-I-0013	api-resources	Authorization	SA-C-190	SA-A-25	
 SA-I-0014	api-resources	Change Log	SA-C-202	SA-A-25	
 SA-I-0016	api-resources	Orders	SA-C-040	SA-A-06	
@@ -26,7 +26,7 @@ SA-I-0030	api-resources	Product Quantity	SA-C-025	SA-A-05
 SA-I-0031	api-resources	Product Variants	SA-C-021	SA-A-05	
 SA-I-0032	api-resources	Customers	SA-C-060	SA-A-07	
 SA-I-0033	api-resources	Customer Groups	SA-C-061	SA-A-07	
-SA-I-0034	api-resources	Customer Wallet	SA-C-063	SA-A-09	
+SA-I-0034	api-resources	Customer Wallet	SA-C-063	SA-A-34	
 SA-I-0035	api-resources	Abandoned Carts	SA-C-048	SA-A-09	
 SA-I-0036	api-resources	Special Offers	SA-C-071	SA-A-09	
 SA-I-0037	api-resources	Affiliates	SA-C-072	SA-A-10	
@@ -51,13 +51,13 @@ SA-I-0055	api-resources	Store Scopes	SA-C-165	SA-A-21
 SA-I-0056	api-resources	Brands	SA-C-023	SA-A-05	
 SA-I-0057	api-resources	Exports	SA-C-027	SA-A-05	
 SA-I-0058	api-resources	Transactions	SA-C-123	SA-A-18	
-SA-I-0059	api-resources	Payments	SA-C-110;SA-C-117	SA-A-17	
-SA-I-0060	api-resources	Currencies	SA-C-163	SA-A-21	
+SA-I-0059	api-resources	Payments	SA-C-110;SA-C-117	SA-A-31;SA-A-17	yes
+SA-I-0060	api-resources	Currencies	SA-C-163	SA-A-29	
 SA-I-0061	api-resources	Merchant	SA-C-001	SA-A-01	
 SA-I-0062	api-resources	Taxes	SA-C-160	SA-A-20	
 SA-I-0063	api-resources	SEO	SA-C-033	SA-A-09	
 SA-I-0064	api-resources	DNS Records	SA-C-007	SA-A-02	
-SA-I-0065	api-resources	Languages	SA-C-008	SA-A-02	
+SA-I-0065	api-resources	Languages	SA-C-008	SA-A-30	
 SA-I-0066	api-resources	Employees	SA-C-009	SA-A-01	
 SA-I-0067	api-resources	Advertisements	SA-C-083	SA-A-09	
 SA-I-0068	api-resources	Webhooks	SA-C-192	SA-A-25	
@@ -139,7 +139,7 @@ SA-I-0144	api-resources	Profile	SA-C-091	SA-A-13
 SA-I-0145	api-resources	Product	SA-C-091	SA-A-13	
 SA-I-0146	api-resources	Booking	SA-C-091	SA-A-13	
 SA-I-0147	api-resources	Rating	SA-C-091	SA-A-13	
-SA-I-0148	api-resources	Currency	SA-C-091;SA-C-163	SA-A-13;SA-A-21	yes
+SA-I-0148	api-resources	Currency	SA-C-091;SA-C-163	SA-A-13;SA-A-29	yes
 SA-I-0149	api-resources	Order	SA-C-091	SA-A-13	
 SA-I-0150	api-resources	Component	SA-C-091	SA-A-13	
 SA-I-0151	api-resources	Elements	SA-C-091	SA-A-13	
@@ -490,7 +490,7 @@ SA-I-0550	access-scopes	categories	SA-C-022;SA-C-191	SA-A-05;SA-A-25	yes
 SA-I-0551	access-scopes	brands	SA-C-023;SA-C-191	SA-A-05;SA-A-25	yes
 SA-I-0552	access-scopes	products	SA-C-020;SA-C-191	SA-A-05;SA-A-25	yes
 SA-I-0553	access-scopes	webhooks	SA-C-192;SA-C-191	SA-A-25	
-SA-I-0554	access-scopes	payments	SA-C-110;SA-C-191	SA-A-17;SA-A-25	yes
+SA-I-0554	access-scopes	payments	SA-C-110;SA-C-191	SA-A-31;SA-A-25	yes
 SA-I-0555	access-scopes	taxes	SA-C-160;SA-C-191	SA-A-20;SA-A-25	yes
 SA-I-0556	access-scopes	dns-records	SA-C-007;SA-C-191	SA-A-02;SA-A-25	yes
 SA-I-0557	access-scopes	specialoffers	SA-C-071;SA-C-191	SA-A-09;SA-A-25	yes
@@ -498,13 +498,13 @@ SA-I-0558	access-scopes	countries	SA-C-166;SA-C-191	SA-A-22;SA-A-25	yes
 SA-I-0559	access-scopes	shippings	SA-C-144;SA-C-142;SA-C-191	SA-A-19;SA-A-25	yes
 SA-I-0560	access-scopes	marketing	SA-C-070;SA-C-072;SA-C-191	SA-A-09;SA-A-10;SA-A-25	yes
 SA-I-0561	access-scopes	reviews	SA-C-030;SA-C-191	SA-A-08;SA-A-25	yes
-SA-I-0562	access-scopes	metadata	SA-C-163;SA-C-008;SA-C-033;SA-C-166;SA-C-191	SA-A-21;SA-A-02;SA-A-09;SA-A-22;SA-A-25	yes
+SA-I-0562	access-scopes	metadata	SA-C-163;SA-C-008;SA-C-033;SA-C-166;SA-C-191	SA-A-29;SA-A-30;SA-A-09;SA-A-22;SA-A-25	yes
 SA-I-0563	access-scopes	transactions	SA-C-123;SA-C-191	SA-A-18;SA-A-25	yes
 SA-I-0564	access-scopes	settlements	SA-C-124;SA-C-191	SA-A-18;SA-A-25	yes
 SA-I-0565	access-scopes	store-settings	SA-C-002;SA-C-191	SA-A-02;SA-A-25	yes
 SA-I-0566	access-scopes	exports	SA-C-027;SA-C-191	SA-A-05;SA-A-25	yes
 SA-I-0567	access-scopes	subscriptions	SA-C-125;SA-C-191	SA-A-17;SA-A-25	yes
-SA-I-0568	access-scopes	customer-wallets	SA-C-063;SA-C-191	SA-A-09;SA-A-25	yes
+SA-I-0568	access-scopes	customer-wallets	SA-C-063;SA-C-191	SA-A-34;SA-A-25	yes
 SA-I-0569	webhook-topics	app.uninstalled	SA-C-193	SA-A-25	
 SA-I-0570	webhook-topics	app.trial.started	SA-C-193	SA-A-25	
 SA-I-0571	webhook-topics	app.trial.expired	SA-C-193	SA-A-25	
@@ -519,7 +519,7 @@ SA-I-0579	webhook-topics	order.shipment.created	SA-C-144	SA-A-19
 SA-I-0580	webhook-topics	order.shipment.creating	SA-C-144	SA-A-19	
 SA-I-0581	webhook-topics	order.total.price.updated	SA-C-040	SA-A-06	
 SA-I-0582	webhook-topics	order.created	SA-C-040	SA-A-06	
-SA-I-0583	webhook-topics	order.payment.updated	SA-C-040;SA-C-110	SA-A-06;SA-A-17	yes
+SA-I-0583	webhook-topics	order.payment.updated	SA-C-040;SA-C-110	SA-A-06;SA-A-31	yes
 SA-I-0584	webhook-topics	order.products.updated	SA-C-040	SA-A-06	
 SA-I-0585	webhook-topics	order.customer.updated	SA-C-040	SA-A-06	
 SA-I-0586	webhook-topics	order.cancelled	SA-C-046	SA-A-06	
@@ -583,7 +583,7 @@ SA-I-0643	webhook-topics	subscription.charge.succeeded	SA-C-125	SA-A-17
 SA-I-0644	webhook-topics	subscription.charge.failed	SA-C-125	SA-A-17	
 SA-I-0645	webhook-topics	subscription.cancelled	SA-C-125	SA-A-17	
 SA-I-0646	webhook-topics	communication.whatsapp.send	SA-C-200	SA-A-24	
-SA-I-0647	webhook-topics	wallet.action	SA-C-063	SA-A-09	
+SA-I-0647	webhook-topics	wallet.action	SA-C-063	SA-A-34	
 SA-I-0648	webhook-topics	app.store.authorize	SA-C-193	SA-A-25	
 SA-I-0649	webhook-topics	app.installed	SA-C-193	SA-A-25	
 SA-I-0650	webhook-topics	app.updated	SA-C-193	SA-A-25	
@@ -617,7 +617,7 @@ SA-I-0678	settings	General	SA-C-002	SA-A-02
 SA-I-0679	settings	Store plan	SA-C-004	SA-A-03	
 SA-I-0680	settings	Manage stores	SA-C-003	SA-A-01	
 SA-I-0682	settings	Balance & billing	SA-C-005	SA-A-18	
-SA-I-0683	settings	Payments	SA-C-110	SA-A-17	
+SA-I-0683	settings	Payments	SA-C-110	SA-A-31	
 SA-I-0684	settings	Domain	SA-C-007	SA-A-02	
 SA-I-0685	settings	Checkout	SA-C-100	SA-A-17	
 SA-I-0686	settings	Taxes	SA-C-160;SA-C-162	SA-A-20	
@@ -628,7 +628,7 @@ SA-I-0691	settings	Orders	SA-C-040	SA-A-06
 SA-I-0692	settings	Shipping & delivery	SA-C-142;SA-C-140	SA-A-19	
 SA-I-0693	settings	Customers	SA-C-060	SA-A-07	
 SA-I-0694	settings	Marketing	SA-C-070;SA-C-072	SA-A-09;SA-A-10	yes
-SA-I-0695	settings	Customer wallet	SA-C-063	SA-A-09	
+SA-I-0695	settings	Customer wallet	SA-C-063	SA-A-34	
 SA-I-0696	settings	Loyalty programNew	SA-C-064	SA-A-09	
 SA-I-0697	settings	GiftingNew	SA-C-077	SA-A-09	
 SA-I-0698	settings	Blog	SA-C-081	SA-A-09	
@@ -645,7 +645,7 @@ SA-I-0709	settings	Automatic welcome message	SA-C-072	SA-A-10
 SA-I-0710	settings	Status settings	SA-C-072	SA-A-10	
 SA-I-0711	settings	Commission period	SA-C-072	SA-A-10	
 SA-I-0712	settings	Offer priority	SA-C-071	SA-A-09	
-SA-I-0713	settings	Cashback eligibility	SA-C-063	SA-A-09	
+SA-I-0713	settings	Cashback eligibility	SA-C-063	SA-A-34	
 SA-I-0714	settings	Login & registration options	SA-C-062	SA-A-07	
 SA-I-0715	settings	reCAPTCHA verification	SA-C-062	SA-A-07	
 SA-I-0716	settings	WhatsApp verification	SA-C-062;SA-C-200	SA-A-07;SA-A-24	yes
@@ -655,8 +655,8 @@ SA-I-0719	settings	Thank you message	SA-C-030	SA-A-08
 SA-I-0720	settings	Add media to reviews	SA-C-030	SA-A-08	
 SA-I-0721	settings	Edit or delete review	SA-C-030	SA-A-08	
 SA-I-0722	settings	Store activity	SA-C-002	SA-A-02	
-SA-I-0723	settings	Languages	SA-C-008	SA-A-02	
-SA-I-0724	settings	Currencies	SA-C-163	SA-A-21	
+SA-I-0723	settings	Languages	SA-C-008	SA-A-30	
+SA-I-0724	settings	Currencies	SA-C-163	SA-A-29	
 SA-I-0725	settings	Salla AI Connector	SA-C-012	SA-A-02	
 SA-I-0726	settings	Maintenance mode	SA-C-002	SA-A-02	
 SA-I-0727	settings	Selected markets	SA-C-077	SA-A-09	
@@ -698,9 +698,9 @@ SA-I-0762	settings	Edit profile	SA-C-001	SA-A-01
 SA-I-0763	settings	Registered devices	SA-C-001	SA-A-01	
 SA-I-0764	settings	Quick access	SA-C-001	SA-A-01	
 SA-I-0765	settings	Cash on delivery	SA-C-115;SA-C-116	SA-A-17	
-SA-I-0766	settings	Maximum Credit Usage Limit	SA-C-063	SA-A-09	
-SA-I-0767	settings	Gift cards	SA-C-063	SA-A-09	
-SA-I-0768	settings	Wallet & Cashback Notifications	SA-C-063	SA-A-09	
+SA-I-0766	settings	Maximum Credit Usage Limit	SA-C-063	SA-A-34	
+SA-I-0767	settings	Gift cards	SA-C-063	SA-A-34	
+SA-I-0768	settings	Wallet & Cashback Notifications	SA-C-063	SA-A-34	
 SA-I-0769	settings	Markets	SA-C-165	SA-A-21	
 SA-I-0772	admin-navigation	All orders	SA-C-040	SA-A-06	
 SA-I-0774	admin-navigation	Order settings	SA-C-040	SA-A-06	
@@ -735,7 +735,7 @@ SA-I-0816	admin-navigation	Influencers	SA-C-076	SA-A-10
 SA-I-0817	admin-navigation	Promotional Offers	SA-C-071	SA-A-09	
 SA-I-0818	admin-navigation	Campaigns	SA-C-075	SA-A-09	
 SA-I-0819	admin-navigation	Marketing calendar	SA-C-075	SA-A-09	
-SA-I-0820	admin-navigation	Customer wallet	SA-C-063	SA-A-09	
+SA-I-0820	admin-navigation	Customer wallet	SA-C-063	SA-A-34	
 SA-I-0821	admin-navigation	Affiliate marketing	SA-C-072	SA-A-10	
 SA-I-0822	admin-navigation	SEO	SA-C-033	SA-A-09	
 SA-I-0823	admin-navigation	Loyalty program	SA-C-064	SA-A-09	
@@ -772,7 +772,7 @@ SA-I-0869	admin-navigation	Packaging	SA-C-149	SA-A-19
 SA-I-0871	admin-navigation	Shipment log	SA-C-144	SA-A-19	
 SA-I-0872	admin-navigation	Shipping Routes	SA-C-143	SA-A-19	
 SA-I-0873	admin-navigation	International Shipping Readiness	SA-C-146	SA-A-19	
-SA-I-0875	admin-navigation	Payment methods	SA-C-110	SA-A-17	
+SA-I-0875	admin-navigation	Payment methods	SA-C-110	SA-A-31	
 SA-I-0876	admin-navigation	Wallet	SA-C-111;SA-C-005;SA-C-115	SA-A-18;SA-A-17	yes
 SA-I-0877	admin-navigation	Payment restrictions	SA-C-121	SA-A-17	
 SA-I-0879	admin-navigation	Tax settings	SA-C-160	SA-A-20	
@@ -789,7 +789,7 @@ SA-I-0892	admin-navigation	Deleted orders	SA-C-040	SA-A-06
 SA-I-0893	admin-navigation	Deleted products	SA-C-020	SA-A-05	
 SA-I-0894	admin-navigation	Digital card history	SA-C-024	SA-A-05	
 SA-I-0895	admin-navigation	SMS log	SA-C-011	SA-A-02	
-SA-I-0896	admin-navigation	Translation log	SA-C-008	SA-A-02	
+SA-I-0896	admin-navigation	Translation log	SA-C-008	SA-A-30	
 SA-I-0905	admin-navigation	Dashboard	SA-C-204	SA-A-26	
 SA-I-0906	admin-navigation	My Apps	SA-C-194	SA-A-24	
 SA-I-0908	admin-navigation	My Themes	SA-C-208	SA-A-13	
@@ -827,23 +827,23 @@ SA-I-0949	plan-features	عدد لا محدود من المنتجات	SA-C-020	SA
 SA-I-0950	plan-features	عدد لا محدود من الطلبات	SA-C-040	SA-A-06	
 SA-I-0951	plan-features	بوليصات شحن سلة المُخفضة	SA-C-140	SA-A-19	
 SA-I-0952	plan-features	إضافة كل أنواع المنتجات	SA-C-020	SA-A-05	
-SA-I-0953	plan-features	تفعيل الدفع الإلكتروني	SA-C-110	SA-A-17	
+SA-I-0953	plan-features	تفعيل الدفع الإلكتروني	SA-C-110	SA-A-31	
 SA-I-0954	plan-features	إعلانات سلة	SA-C-073	SA-A-11	
 SA-I-0956	plan-features	التحويل البنكي	SA-C-117	SA-A-17	
 SA-I-0957	plan-features	نظام المدفوعات الفورية عبر سريع	SA-C-117	SA-A-17	
 SA-I-0958	plan-features	الدفع عند الاستلام	SA-C-115;SA-C-116	SA-A-17	
-SA-I-0959	plan-features	الدفع عبر مدى	SA-C-110	SA-A-17	
-SA-I-0960	plan-features	الدفع عبر البطاقة الائتمانية (فيزا وماستر كارد)	SA-C-110	SA-A-17	
+SA-I-0959	plan-features	الدفع عبر مدى	SA-C-110	SA-A-31	
+SA-I-0960	plan-features	الدفع عبر البطاقة الائتمانية (فيزا وماستر كارد)	SA-C-110	SA-A-31	
 SA-I-0961	plan-features	PayPal الدفع عبر	SA-C-119	SA-A-17	
-SA-I-0962	plan-features	Apple Pay الدفع عبر	SA-C-110	SA-A-17	
-SA-I-0963	plan-features	stc pay الدفع عبر	SA-C-110;SA-C-119	SA-A-17	
-SA-I-0964	plan-features	Google Pay الدفع عبر	SA-C-110	SA-A-17	
+SA-I-0962	plan-features	Apple Pay الدفع عبر	SA-C-110	SA-A-31	
+SA-I-0963	plan-features	stc pay الدفع عبر	SA-C-110;SA-C-119	SA-A-31;SA-A-17	yes
+SA-I-0964	plan-features	Google Pay الدفع عبر	SA-C-110	SA-A-31	
 SA-I-0965	plan-features	الدفع بالتقسيط عبر تابي وتمارا	SA-C-118	SA-A-17	
 SA-I-0966	plan-features	مكافأة الراجحي	SA-C-119	SA-A-17	
 SA-I-0967	plan-features	زر الشراء السريع	SA-C-079	SA-A-09	
 SA-I-0968	plan-features	إرسال رابط الدفع للعميل	SA-C-126	SA-A-17	
 SA-I-0969	plan-features	حاسبة رسوم المدفوعات الإلكترونية	SA-C-113	SA-A-18	
-SA-I-0970	plan-features	إتاحة الدفع عبر +33 عملة	SA-C-163	SA-A-21	
+SA-I-0970	plan-features	إتاحة الدفع عبر +33 عملة	SA-C-163	SA-A-29	
 SA-I-0971	plan-features	نظام الحماية من الاحتيال	SA-C-122	SA-A-17	
 SA-I-0973	plan-features	إضافة خيارات متعددة للمنتج الواحد	SA-C-021	SA-A-05	
 SA-I-0974	plan-features	تصنيفات المنتجات	SA-C-022	SA-A-05	
@@ -876,8 +876,8 @@ SA-I-1002	plan-features	التسويق مع المؤثرين	SA-C-076	SA-A-10
 SA-I-1003	plan-features	السلات المتروكة	SA-C-048	SA-A-09	
 SA-I-1004	plan-features	العروض الخاصة	SA-C-071	SA-A-09	
 SA-I-1005	plan-features	عروض السلة	SA-C-071	SA-A-09	
-SA-I-1006	plan-features	محفظة العميل  *برسوم إضافية	SA-C-063	SA-A-09	
-SA-I-1007	plan-features	عروض الكاش باك	SA-C-063	SA-A-09	
+SA-I-1006	plan-features	محفظة العميل  *برسوم إضافية	SA-C-063	SA-A-34	
+SA-I-1007	plan-features	عروض الكاش باك	SA-C-063	SA-A-34	
 SA-I-1008	plan-features	إنشاء مجموعة كوبونات	SA-C-070	SA-A-09	
 SA-I-1009	plan-features	كوبونات محلي	SA-C-070;SA-C-096	SA-A-09;SA-A-16	yes
 SA-I-1010	plan-features	حملات تسويقية عبر الرسائل النصية وإشعارات التطبيق	SA-C-075	SA-A-09	
@@ -936,8 +936,8 @@ SA-I-1069	plan-features	سوق الجملة	SA-C-098	SA-A-16
 SA-I-1071	plan-features	الأسئلة والتقييمات	SA-C-030	SA-A-08	
 SA-I-1072	plan-features	إتاحة إضافة صور في تقييم المنتج	SA-C-030	SA-A-08	
 SA-I-1073	plan-features	نظام التذاكر	SA-C-179	SA-A-08	
-SA-I-1074	plan-features	إتاحة 40 لغة في المتجر	SA-C-008	SA-A-02	
-SA-I-1075	plan-features	الترجمة الفورية *برسوم إضافية	SA-C-008	SA-A-02	
+SA-I-1074	plan-features	إتاحة 40 لغة في المتجر	SA-C-008	SA-A-30	
+SA-I-1075	plan-features	الترجمة الفورية *برسوم إضافية	SA-C-008	SA-A-30	
 SA-I-1076	plan-features	الصفحات التعريفية	SA-C-093	SA-A-12	
 SA-I-1078	plan-features	زيادة عدد المستخدمين *برسوم إضافية	SA-C-009	SA-A-01	
 SA-I-1079	plan-features	إدارة الأدوار الوظيفية	SA-C-009	SA-A-01	
@@ -952,7 +952,7 @@ SA-I-1088	plan-features	إدارة قائمة المتاجر المرتبطة	SA
 SA-I-1090	plan-features	إنشاء روابط مخصصة	SA-C-093	SA-A-12	
 SA-I-1091	plan-features	أرشيف الرسائل النصية	SA-C-011	SA-A-02	
 SA-I-1092	plan-features	تفريغ الكاش	SA-C-002	SA-A-02	
-SA-I-1093	plan-features	ميزة ترجمة الرسائل	SA-C-008	SA-A-02	
+SA-I-1093	plan-features	ميزة ترجمة الرسائل	SA-C-008	SA-A-30	
 SA-I-1094	plan-features	بيع عبر نقاط البيع مع سلة بوينت	SA-C-095	SA-A-15	
 SA-I-1095	plan-features	نظام التذاكر	SA-C-179	SA-A-08	
 SA-I-1096	plan-features	جرد المنتجات والمخزون	SA-C-025	SA-A-05	
@@ -965,7 +965,7 @@ SA-I-1102	plan-features	إحصائيات وتقارير أداء المتجر	SA
 SA-I-1103	plan-features	إطلاق عروض وخصومات	SA-C-071;SA-C-070	SA-A-09	
 SA-I-1104	plan-features	حجز اسم دومين (رابط) مُخصص لموقع متجرك	SA-C-007	SA-A-02	
 SA-I-1105	plan-features	شحن محلي وعالمي مع أكثر من 100 شركة شحن	SA-C-139	SA-A-19	
-SA-I-1106	plan-features	تفعيل الدفع الإلكتروني عبر مدى وأبل باي وتابي وغيرها	SA-C-110;SA-C-118	SA-A-17	
+SA-I-1106	plan-features	تفعيل الدفع الإلكتروني عبر مدى وأبل باي وتابي وغيرها	SA-C-110;SA-C-118	SA-A-31;SA-A-17	yes
 SA-I-1108	plan-features	كوبونات تسويقية	SA-C-070	SA-A-09	
 SA-I-1109	plan-features	صفحات هبوط المنتج	SA-C-082	SA-A-12	
 SA-I-1110	plan-features	عروض البنك	SA-C-080	SA-A-09	
@@ -1007,7 +1007,7 @@ SA-I-1155	plan-features	عدد لا محدود من المنتجات	SA-C-020	SA
 SA-I-1156	plan-features	عدد لا محدود من الطلبات	SA-C-040	SA-A-06	
 SA-I-1157	plan-features	بوليصات شحن سلة المُخفضة	SA-C-140	SA-A-19	
 SA-I-1158	plan-features	إضافة كل أنواع المنتجات	SA-C-020	SA-A-05	
-SA-I-1159	plan-features	تفعيل الدفع الإلكتروني	SA-C-110	SA-A-17	
+SA-I-1159	plan-features	تفعيل الدفع الإلكتروني	SA-C-110	SA-A-31	
 SA-I-1160	plan-features	إعلانات سلة	SA-C-073	SA-A-11	
 SA-I-1161	plan-features	محلي	SA-C-096	SA-A-16	
 SA-I-1162	plan-features	تحسين ظهور المتجر على محركات البحث (SEO)	SA-C-033	SA-A-09	
@@ -1015,7 +1015,7 @@ SA-I-1163	plan-features	دعم ضريبة القيمة المضافة مع رب�
 SA-I-1174	plan-features	عدد لا محدود من المنتجات	SA-C-020	SA-A-05	
 SA-I-1175	plan-features	عدد لا محدود من الطلبات	SA-C-040	SA-A-06	
 SA-I-1176	plan-features	إضافة كل أنواع المنتجات	SA-C-020	SA-A-05	
-SA-I-1177	plan-features	تفعيل الدفع الإلكتروني	SA-C-110	SA-A-17	
+SA-I-1177	plan-features	تفعيل الدفع الإلكتروني	SA-C-110	SA-A-31	
 SA-I-1178	plan-features	تحسين ظهور المتجر على محركات البحث (SEO)	SA-C-033	SA-A-09	
 SA-I-1188	plan-features	ربط تكاملي ذكي	SA-C-194;SA-C-210	SA-A-24	
 SA-I-1189	plan-features	نقل البيانات بسلاسة	SA-C-027	SA-A-05	
@@ -1180,9 +1180,9 @@ SA-I-1359	other:staff-permissions	seo_enhancement_management	SA-C-033	SA-A-09
 SA-I-1360	other:staff-permissions	affiliate_browse	SA-C-072	SA-A-10	
 SA-I-1361	other:staff-permissions	affiliate_management	SA-C-072	SA-A-10	
 SA-I-1362	other:staff-permissions	loyalty_system_management	SA-C-064	SA-A-09	
-SA-I-1365	other:staff-permissions	browse_cashback_offers	SA-C-063	SA-A-09	
-SA-I-1366	other:staff-permissions	manage_cashback_offers	SA-C-063	SA-A-09	
-SA-I-1367	other:staff-permissions	delete_cashback_offers	SA-C-063	SA-A-09	
+SA-I-1365	other:staff-permissions	browse_cashback_offers	SA-C-063	SA-A-34	
+SA-I-1366	other:staff-permissions	manage_cashback_offers	SA-C-063	SA-A-34	
+SA-I-1367	other:staff-permissions	delete_cashback_offers	SA-C-063	SA-A-34	
 SA-I-1368	other:staff-permissions	coupon_delete	SA-C-070	SA-A-09	
 SA-I-1369	other:staff-permissions	coupon_statistics	SA-C-070	SA-A-09	
 SA-I-1370	other:staff-permissions	reorder_reminders_browse	SA-C-078	SA-A-09	
@@ -1202,7 +1202,7 @@ SA-I-1384	other:staff-permissions	store_setting_browse	SA-C-002	SA-A-02
 SA-I-1385	other:staff-permissions	store_setting_edit_basic_info	SA-C-002	SA-A-02	
 SA-I-1386	other:staff-permissions	store_setting_edit_setting	SA-C-002	SA-A-02	
 SA-I-1387	other:staff-permissions	store_setting_edit_social_media_account	SA-C-002	SA-A-02	
-SA-I-1388	other:staff-permissions	currency_setting_edit	SA-C-163	SA-A-21	
+SA-I-1388	other:staff-permissions	currency_setting_edit	SA-C-163	SA-A-29	
 SA-I-1389	other:staff-permissions	domain_management	SA-C-007	SA-A-02	
 SA-I-1390	other:staff-permissions	restore_data_management	SA-C-040;SA-C-020	SA-A-06;SA-A-05	yes
 SA-I-1391	other:staff-permissions	store_setting_purchase_from_salla_store	SA-C-005	SA-A-18	
@@ -1210,7 +1210,7 @@ SA-I-1392	other:staff-permissions	shipping_options_management	SA-C-142	SA-A-19
 SA-I-1393	other:staff-permissions	wallet_and_invoices_management	SA-C-005	SA-A-18	
 SA-I-1394	other:staff-permissions	register_fields_management	SA-C-062	SA-A-07	
 SA-I-1395	other:staff-permissions	size_guides_management	SA-C-020	SA-A-05	
-SA-I-1396	other:staff-permissions	languages_management	SA-C-008	SA-A-02	
+SA-I-1396	other:staff-permissions	languages_management	SA-C-008	SA-A-30	
 SA-I-1397	other:staff-permissions	landing_pages_management	SA-C-082	SA-A-12	
 SA-I-1398	other:staff-permissions	quick_checkout_management	SA-C-079	SA-A-09	
 SA-I-1399	other:staff-permissions	quick_donation_management	SA-C-020	SA-A-05	
@@ -1245,8 +1245,8 @@ SA-I-1428	other:staff-permissions	roles_browse	SA-C-009	SA-A-01
 SA-I-1429	other:staff-permissions	roles_management	SA-C-009	SA-A-01	
 SA-I-1430	other:staff-permissions	order_auto_assign_browse	SA-C-043	SA-A-06	
 SA-I-1431	other:staff-permissions	order_auto_assign_management	SA-C-043	SA-A-06	
-SA-I-1433	other:staff-permissions	payment_method_browse	SA-C-110	SA-A-17	
-SA-I-1434	other:staff-permissions	payment_methods_activation	SA-C-110	SA-A-17	
+SA-I-1433	other:staff-permissions	payment_method_browse	SA-C-110	SA-A-31	
+SA-I-1434	other:staff-permissions	payment_methods_activation	SA-C-110	SA-A-31	
 SA-I-1435	other:staff-permissions	bank_accounts_management	SA-C-117	SA-A-17	
 SA-I-1436	other:staff-permissions	list_epayments	SA-C-111	SA-A-18	
 SA-I-1438	other:staff-permissions	mahally_browse	SA-C-096	SA-A-16	
@@ -1379,9 +1379,9 @@ SA-I-1576	other:partner-access-permissions	seo_enhancement_management	SA-C-033	S
 SA-I-1577	other:partner-access-permissions	affiliate_browse	SA-C-072	SA-A-10	
 SA-I-1578	other:partner-access-permissions	affiliate_management	SA-C-072	SA-A-10	
 SA-I-1579	other:partner-access-permissions	loyalty_system_management	SA-C-064	SA-A-09	
-SA-I-1582	other:partner-access-permissions	browse_cashback_offers	SA-C-063	SA-A-09	
-SA-I-1583	other:partner-access-permissions	manage_cashback_offers	SA-C-063	SA-A-09	
-SA-I-1584	other:partner-access-permissions	delete_cashback_offers	SA-C-063	SA-A-09	
+SA-I-1582	other:partner-access-permissions	browse_cashback_offers	SA-C-063	SA-A-34	
+SA-I-1583	other:partner-access-permissions	manage_cashback_offers	SA-C-063	SA-A-34	
+SA-I-1584	other:partner-access-permissions	delete_cashback_offers	SA-C-063	SA-A-34	
 SA-I-1585	other:partner-access-permissions	coupon_delete	SA-C-070	SA-A-09	
 SA-I-1586	other:partner-access-permissions	coupon_statistics	SA-C-070	SA-A-09	
 SA-I-1587	other:partner-access-permissions	reorder_reminders_browse	SA-C-078	SA-A-09	
@@ -1401,7 +1401,7 @@ SA-I-1601	other:partner-access-permissions	store_setting_browse	SA-C-002	SA-A-02
 SA-I-1602	other:partner-access-permissions	store_setting_edit_basic_info	SA-C-002	SA-A-02	
 SA-I-1603	other:partner-access-permissions	store_setting_edit_setting	SA-C-002	SA-A-02	
 SA-I-1604	other:partner-access-permissions	store_setting_edit_social_media_account	SA-C-002	SA-A-02	
-SA-I-1605	other:partner-access-permissions	currency_setting_edit	SA-C-163	SA-A-21	
+SA-I-1605	other:partner-access-permissions	currency_setting_edit	SA-C-163	SA-A-29	
 SA-I-1606	other:partner-access-permissions	domain_management	SA-C-007	SA-A-02	
 SA-I-1607	other:partner-access-permissions	restore_data_management	SA-C-040;SA-C-020	SA-A-06;SA-A-05	yes
 SA-I-1608	other:partner-access-permissions	store_setting_purchase_from_salla_store	SA-C-005	SA-A-18	
@@ -1409,7 +1409,7 @@ SA-I-1609	other:partner-access-permissions	shipping_options_management	SA-C-142	
 SA-I-1610	other:partner-access-permissions	wallet_and_invoices_management	SA-C-005	SA-A-18	
 SA-I-1611	other:partner-access-permissions	register_fields_management	SA-C-062	SA-A-07	
 SA-I-1612	other:partner-access-permissions	size_guides_management	SA-C-020	SA-A-05	
-SA-I-1613	other:partner-access-permissions	languages_management	SA-C-008	SA-A-02	
+SA-I-1613	other:partner-access-permissions	languages_management	SA-C-008	SA-A-30	
 SA-I-1614	other:partner-access-permissions	landing_pages_management	SA-C-082	SA-A-12	
 SA-I-1615	other:partner-access-permissions	quick_checkout_management	SA-C-079	SA-A-09	
 SA-I-1616	other:partner-access-permissions	quick_donation_management	SA-C-020	SA-A-05	
@@ -1438,8 +1438,8 @@ SA-I-1638	other:partner-access-permissions	audit_logs_management	SA-C-010	SA-A-0
 SA-I-1639	other:partner-access-permissions	whatsapp_chat_browse	SA-C-200	SA-A-24	
 SA-I-1640	other:partner-access-permissions	export_logs_management	SA-C-010	SA-A-01	
 SA-I-1641	other:partner-access-permissions	custom_fields_management	SA-C-042	SA-A-06	
-SA-I-1643	other:partner-access-permissions	payment_method_browse	SA-C-110	SA-A-17	
-SA-I-1644	other:partner-access-permissions	payment_methods_activation	SA-C-110	SA-A-17	
+SA-I-1643	other:partner-access-permissions	payment_method_browse	SA-C-110	SA-A-31	
+SA-I-1644	other:partner-access-permissions	payment_methods_activation	SA-C-110	SA-A-31	
 SA-I-1645	other:partner-access-permissions	bank_accounts_management	SA-C-117	SA-A-17	
 SA-I-1646	other:partner-access-permissions	list_epayments	SA-C-111	SA-A-18	
 SA-I-1648	other:partner-access-permissions	mahally_browse	SA-C-096	SA-A-16	
@@ -1476,17 +1476,17 @@ SA-I-1680	other:order-statuses	مسترجع	SA-C-041	SA-A-06
 SA-I-1681	other:order-statuses	قيد الإسترجاع	SA-C-041	SA-A-06	
 SA-I-1682	other:order-statuses	طلب عرض سعر	SA-C-041	SA-A-06	
 SA-I-1683	other:order-statuses	مكتمل	SA-C-041	SA-A-06	
-SA-I-1684	other:store-payment-methods	mada	SA-C-110	SA-A-17	
-SA-I-1685	other:store-payment-methods	credit_card	SA-C-110	SA-A-17	
-SA-I-1686	other:store-payment-methods	stc_pay	SA-C-110;SA-C-119	SA-A-17	
-SA-I-1687	other:store-payment-methods	apple_pay	SA-C-110	SA-A-17	
+SA-I-1684	other:store-payment-methods	mada	SA-C-110	SA-A-31	
+SA-I-1685	other:store-payment-methods	credit_card	SA-C-110	SA-A-31	
+SA-I-1686	other:store-payment-methods	stc_pay	SA-C-110;SA-C-119	SA-A-31;SA-A-17	yes
+SA-I-1687	other:store-payment-methods	apple_pay	SA-C-110	SA-A-31	
 SA-I-1688	other:store-payment-methods	tabby_installment	SA-C-118	SA-A-17	
 SA-I-1689	other:store-payment-methods	tamara_installment	SA-C-118	SA-A-17	
 SA-I-1690	other:store-payment-methods	mispay_installment	SA-C-118	SA-A-17	
 SA-I-1691	other:store-payment-methods	emkan_installment	SA-C-118	SA-A-17	
 SA-I-1692	other:store-payment-methods	madfu_installment	SA-C-118	SA-A-17	
 SA-I-1693	other:store-payment-methods	cod	SA-C-115;SA-C-116	SA-A-17	
-SA-I-1694	other:store-payment-methods	customer_wallet	SA-C-063	SA-A-09	
+SA-I-1694	other:store-payment-methods	customer_wallet	SA-C-063	SA-A-34	
 SA-I-1695	other:store-payment-methods	paypal	SA-C-119	SA-A-17	
 SA-I-1696	other:store-payment-methods	bank	SA-C-117	SA-A-17	
 SA-I-1697	other:store-payment-methods	mokafaa_alrajhi_loyalty	SA-C-119	SA-A-17	
@@ -1759,8 +1759,8 @@ SA-I-1968	other:dashboard-features	aymakan	SA-C-139	SA-A-19
 SA-I-1969	other:dashboard-features	barq	SA-C-139	SA-A-19	
 SA-I-1970	other:dashboard-features	beez	SA-C-139	SA-A-19	
 SA-I-1972	other:dashboard-features	careem	SA-C-139	SA-A-19	
-SA-I-1973	other:dashboard-features	languages	SA-C-008	SA-A-02	
-SA-I-1974	other:dashboard-features	custom-message-translation	SA-C-008	SA-A-02	
+SA-I-1973	other:dashboard-features	languages	SA-C-008	SA-A-30	
+SA-I-1974	other:dashboard-features	custom-message-translation	SA-C-008	SA-A-30	
 SA-I-1975	other:dashboard-features	daftra-service	SA-C-210	SA-A-24	
 SA-I-1977	other:dashboard-features	diggipacks	SA-C-139	SA-A-19	
 SA-I-1978	other:dashboard-features	eijack	SA-C-139	SA-A-19	
@@ -1876,9 +1876,9 @@ SA-I-2102	other:dashboard-features	products-importer	SA-C-027	SA-A-05
 SA-I-2103	other:dashboard-features	custom-import	SA-C-027	SA-A-05	
 SA-I-2106	other:dashboard-features	advertisements	SA-C-083	SA-A-09	
 SA-I-2107	other:dashboard-features	bayan-pay	SA-C-120	SA-A-17	
-SA-I-2108	other:dashboard-features	stc-pay	SA-C-110	SA-A-17	
-SA-I-2109	other:dashboard-features	apple-pay	SA-C-110	SA-A-17	
-SA-I-2110	other:dashboard-features	google-pay	SA-C-110	SA-A-17	
+SA-I-2108	other:dashboard-features	stc-pay	SA-C-110	SA-A-31	
+SA-I-2109	other:dashboard-features	apple-pay	SA-C-110	SA-A-31	
+SA-I-2110	other:dashboard-features	google-pay	SA-C-110	SA-A-31	
 SA-I-2111	other:dashboard-features	pay-tabs	SA-C-120	SA-A-17	
 SA-I-2112	other:dashboard-features	store-checkout	SA-C-100	SA-A-17	
 SA-I-2113	other:dashboard-features	guest-checkout	SA-C-100	SA-A-17	
@@ -1891,7 +1891,7 @@ SA-I-2119	other:dashboard-features	google-maps-service	SA-C-065	SA-A-07
 SA-I-2120	other:dashboard-features	here-service	SA-C-065	SA-A-07	
 SA-I-2121	other:dashboard-features	location-i-q-service	SA-C-065	SA-A-07	
 SA-I-2122	other:dashboard-features	nominatim-service	SA-C-065	SA-A-07	
-SA-I-2123	other:dashboard-features	checkout-save-cards	SA-C-110	SA-A-17	
+SA-I-2123	other:dashboard-features	checkout-save-cards	SA-C-110	SA-A-31	
 SA-I-2124	other:dashboard-features	ucp-embedded-checkout	SA-C-100	SA-A-17	
 SA-I-2125	other:dashboard-features	tamara	SA-C-118	SA-A-17	
 SA-I-2126	other:dashboard-features	klarna	SA-C-118	SA-A-17	
@@ -1900,7 +1900,7 @@ SA-I-2128	other:dashboard-features	tabby	SA-C-118	SA-A-17
 SA-I-2129	other:dashboard-features	tap	SA-C-120	SA-A-17	
 SA-I-2130	other:dashboard-features	hyperpay	SA-C-120	SA-A-17	
 SA-I-2131	other:dashboard-features	moyasar	SA-C-120	SA-A-17	
-SA-I-2132	other:dashboard-features	knet	SA-C-120;SA-C-110	SA-A-17	
+SA-I-2132	other:dashboard-features	knet	SA-C-120;SA-C-110	SA-A-17;SA-A-31	yes
 SA-I-2133	other:dashboard-features	qpay	SA-C-120	SA-A-17	
 SA-I-2134	other:dashboard-features	benefit	SA-C-120	SA-A-17	
 SA-I-2135	other:dashboard-features	omannet	SA-C-120	SA-A-17	
@@ -1913,12 +1913,12 @@ SA-I-2142	other:dashboard-features	madfu	SA-C-118	SA-A-17
 SA-I-2143	other:dashboard-features	utm-campaign	SA-C-074	SA-A-11	
 SA-I-2144	other:dashboard-features	geidea	SA-C-120	SA-A-17	
 SA-I-2145	other:dashboard-features	paypal	SA-C-119	SA-A-17	
-SA-I-2146	other:dashboard-features	mahally-customer-wallet	SA-C-063;SA-C-096	SA-A-09;SA-A-16	yes
-SA-I-2147	other:dashboard-features	customer-wallet	SA-C-063	SA-A-09	
+SA-I-2146	other:dashboard-features	mahally-customer-wallet	SA-C-063;SA-C-096	SA-A-34;SA-A-16	yes
+SA-I-2147	other:dashboard-features	customer-wallet	SA-C-063	SA-A-34	
 SA-I-2148	other:dashboard-features	cod	SA-C-115;SA-C-116	SA-A-17	
 SA-I-2149	other:dashboard-features	bank	SA-C-117	SA-A-17	
-SA-I-2150	other:dashboard-features	mada	SA-C-110	SA-A-17	
-SA-I-2151	other:dashboard-features	credit_card	SA-C-110	SA-A-17	
+SA-I-2150	other:dashboard-features	mada	SA-C-110	SA-A-31	
+SA-I-2151	other:dashboard-features	credit_card	SA-C-110	SA-A-31	
 SA-I-2153	other:dashboard-features	iyzico	SA-C-120	SA-A-17	
 SA-I-2154	other:dashboard-features	my-fatoorah	SA-C-120	SA-A-17	
 SA-I-2155	other:dashboard-features	paylink	SA-C-120	SA-A-17	
@@ -2054,10 +2054,10 @@ SA-I-2296	other:dashboard-features	batch-order-items-save	SA-C-040	SA-A-06
 SA-I-2297	other:dashboard-features	bundle-zero-price-guard	SA-C-020	SA-A-05	
 SA-I-2298	other:dashboard-features	payments-operations	SA-C-123	SA-A-18	
 SA-I-2299	other:dashboard-features	payments-rules	SA-C-121	SA-A-17	
-SA-I-2300	other:dashboard-features	e-payment-charity	SA-C-127	SA-A-17	
+SA-I-2300	other:dashboard-features	e-payment-charity	SA-C-127	SA-A-33	
 SA-I-2301	other:dashboard-features	recurring-payment	SA-C-125	SA-A-17	
 SA-I-2302	other:dashboard-features	recurring-apple-pay	SA-C-125	SA-A-17	
-SA-I-2303	other:dashboard-features	salla-pay-basic-trial	SA-C-110	SA-A-17	
+SA-I-2303	other:dashboard-features	salla-pay-basic-trial	SA-C-110	SA-A-31	
 SA-I-2304	other:dashboard-features	reports	SA-C-220	SA-A-28	
 SA-I-2305	other:dashboard-features	app-performance-reports	SA-C-220	SA-A-28	
 SA-I-2306	other:dashboard-features	reports-download-async	SA-C-220	SA-A-28	
@@ -2067,16 +2067,16 @@ SA-I-2310	other:dashboard-features	special-offer	SA-C-071	SA-A-09
 SA-I-2311	other:dashboard-features	special-offer-export	SA-C-071	SA-A-09	
 SA-I-2312	other:dashboard-features	discount-offer-table	SA-C-071	SA-A-09	
 SA-I-2313	other:dashboard-features	conditional-offer	SA-C-071	SA-A-09	
-SA-I-2314	other:dashboard-features	cashback-accessibility	SA-C-063	SA-A-09	
-SA-I-2315	other:dashboard-features	order-summary-cashback	SA-C-063	SA-A-09	
+SA-I-2314	other:dashboard-features	cashback-accessibility	SA-C-063	SA-A-34	
+SA-I-2315	other:dashboard-features	order-summary-cashback	SA-C-063	SA-A-34	
 SA-I-2316	other:dashboard-features	customer-group-offer	SA-C-071	SA-A-09	
 SA-I-2317	other:dashboard-features	prebuilt-cart-offer	SA-C-071	SA-A-09	
 SA-I-2318	other:dashboard-features	tiered-offer	SA-C-071	SA-A-09	
 SA-I-2319	other:dashboard-features	external-purchases-tiered-offer	SA-C-071	SA-A-09	
 SA-I-2320	other:dashboard-features	tiered-offer-hide-until-threshold	SA-C-071	SA-A-09	
-SA-I-2321	other:dashboard-features	wallet-payment-offer-combination	SA-C-063	SA-A-09	
+SA-I-2321	other:dashboard-features	wallet-payment-offer-combination	SA-C-063	SA-A-34	
 SA-I-2322	other:dashboard-features	bundle-aware-coupon	SA-C-070	SA-A-09	
-SA-I-2323	other:dashboard-features	reflect-market-currency	SA-C-163	SA-A-21	
+SA-I-2323	other:dashboard-features	reflect-market-currency	SA-C-163	SA-A-29	
 SA-I-2324	other:dashboard-features	multi_coupon	SA-C-070	SA-A-09	
 SA-I-2325	other:dashboard-features	enable-offers-for-mobile-app	SA-C-071	SA-A-09	
 SA-I-2326	other:dashboard-features	cart-offer-applied-tier	SA-C-071	SA-A-09	
@@ -2101,14 +2101,14 @@ SA-I-2346	other:dashboard-features	seo-meta-tag	SA-C-033	SA-A-09
 SA-I-2347	other:dashboard-features	sender-name-ad	SA-C-011	SA-A-02	
 SA-I-2348	other:dashboard-features	sms-balance	SA-C-011	SA-A-02	
 SA-I-2349	other:dashboard-features	remove-salla-copyright	SA-C-090	SA-A-12	
-SA-I-2350	other:dashboard-features	restriction-online-payment-activation	SA-C-110	SA-A-17	
+SA-I-2350	other:dashboard-features	restriction-online-payment-activation	SA-C-110	SA-A-31	
 SA-I-2351	other:dashboard-features	restriction-product-type	SA-C-020	SA-A-05	
 SA-I-2352	other:dashboard-features	sender-name	SA-C-011	SA-A-02	
 SA-I-2353	other:dashboard-features	store-status	SA-C-002	SA-A-02	
 SA-I-2355	other:dashboard-features	support-access	SA-C-013	SA-A-01	
 SA-I-2356	other:dashboard-features	shipping-indicator	SA-C-144	SA-A-19	
 SA-I-2357	other:dashboard-features	product-sorting	SA-C-020	SA-A-05	
-SA-I-2358	other:dashboard-features	currency	SA-C-163	SA-A-21	
+SA-I-2358	other:dashboard-features	currency	SA-C-163	SA-A-29	
 SA-I-2359	other:dashboard-features	custom-urls	SA-C-093	SA-A-12	
 SA-I-2360	other:dashboard-features	feedback-bulk-actions	SA-C-030	SA-A-08	
 SA-I-2361	other:dashboard-features	price-quote	SA-C-040	SA-A-06	
@@ -2167,7 +2167,7 @@ SA-I-2417	other:dashboard-features	influencer-resource-page	SA-C-076	SA-A-10
 SA-I-2418	other:dashboard-features	new-apps	SA-C-194	SA-A-24	
 SA-I-2419	other:dashboard-features	app-actions-history	SA-C-194	SA-A-24	
 SA-I-2420	other:dashboard-features	services-redesign	SA-C-205	SA-A-27	
-SA-I-2421	other:dashboard-features	apple-pay.merchants	SA-C-110	SA-A-17	
+SA-I-2421	other:dashboard-features	apple-pay.merchants	SA-C-110	SA-A-31	
 SA-I-2422	other:dashboard-features	partners-chat	SA-C-205	SA-A-27	
 SA-I-2423	other:dashboard-features	partners-chat-notifications	SA-C-205	SA-A-27	
 SA-I-2424	other:dashboard-features	ready-store-theme-purchase	SA-C-090	SA-A-12	
@@ -2185,7 +2185,7 @@ SA-I-2435	other:dashboard-features	apps-store-builder	SA-C-194	SA-A-24
 SA-I-2436	other:dashboard-features	services-redirect	SA-C-205	SA-A-27	
 SA-I-2437	other:dashboard-features	apps-country-filter	SA-C-194	SA-A-24	
 SA-I-2438	other:dashboard-features	renew-price-by-slug	SA-C-004	SA-A-03	
-SA-I-2439	other:dashboard-features	currency-exchange	SA-C-163	SA-A-21	
+SA-I-2439	other:dashboard-features	currency-exchange	SA-C-163	SA-A-29	
 SA-I-2440	other:dashboard-features	apps-onboarding	SA-C-194	SA-A-24	
 SA-I-2441	other:dashboard-features	billing-native	SA-C-005	SA-A-18	
 SA-I-2442	other:dashboard-features	header-notify-app-subscription	SA-C-194	SA-A-24	
@@ -2232,7 +2232,7 @@ SA-I-2483	other:dashboard-features	upload-gif-image	SA-C-020	SA-A-05
 SA-I-2484	other:dashboard-features	category-image	SA-C-022	SA-A-05	
 SA-I-2485	other:dashboard-features	product-price-tax-included	SA-C-160	SA-A-20	
 SA-I-2486	other:dashboard-features	order-options	SA-C-042	SA-A-06	
-SA-I-2487	other:dashboard-features	financial-support	SA-C-128	SA-A-18	
+SA-I-2487	other:dashboard-features	financial-support	SA-C-128	SA-A-32	
 SA-I-2488	other:dashboard-features	ai-description-generator	SA-C-012	SA-A-02	
 SA-I-2489	other:dashboard-features	ai-seo-generator	SA-C-033;SA-C-012	SA-A-09;SA-A-02	yes
 SA-I-2490	other:dashboard-features	product-sale-start	SA-C-020	SA-A-05	
@@ -2241,7 +2241,7 @@ SA-I-2492	other:dashboard-features	bulk-seo	SA-C-033	SA-A-09
 SA-I-2494	other:dashboard-features	product-advance-management	SA-C-020	SA-A-05	
 SA-I-2495	other:dashboard-features	inventory-order	SA-C-025	SA-A-05	
 SA-I-2496	other:dashboard-features	digital-code	SA-C-024	SA-A-05	
-SA-I-2497	other:dashboard-features	wallet-gift-card	SA-C-063	SA-A-09	
+SA-I-2497	other:dashboard-features	wallet-gift-card	SA-C-063	SA-A-34	
 SA-I-2498	other:dashboard-features	digital-file	SA-C-024	SA-A-05	
 SA-I-2499	other:dashboard-features	digital-product-settings	SA-C-024	SA-A-05	
 SA-I-2500	other:dashboard-features	multi-countries	SA-C-165	SA-A-21	
@@ -2275,7 +2275,7 @@ SA-I-2528	other:dashboard-features	plans	SA-C-004	SA-A-03
 SA-I-2529	other:dashboard-apps	@salla.sa/ui-merchant-orders	SA-C-040	SA-A-06	
 SA-I-2530	other:dashboard-apps	@salla.sa/ui-merchant-products	SA-C-020	SA-A-05	
 SA-I-2532	other:dashboard-apps	@salla.sa/ui-merchant-reports	SA-C-220	SA-A-28	
-SA-I-2533	other:dashboard-apps	@salla.sa/ui-merchant-manage	SA-C-093;SA-C-192;SA-C-179;SA-C-232;SA-C-163;SA-C-013;SA-C-003	SA-A-12;SA-A-25;SA-A-08;SA-A-04;SA-A-21;SA-A-01	yes
+SA-I-2533	other:dashboard-apps	@salla.sa/ui-merchant-manage	SA-C-093;SA-C-192;SA-C-179;SA-C-232;SA-C-163;SA-C-013;SA-C-003	SA-A-12;SA-A-25;SA-A-08;SA-A-04;SA-A-29;SA-A-01	yes
 SA-I-2534	other:dashboard-apps	@salla.sa/ui-merchant-login	SA-C-001	SA-A-01	
 SA-I-2535	other:dashboard-apps	@salla.sa/ui-merchant-marketing-campaign	SA-C-075;SA-C-033	SA-A-09	
 SA-I-2536	other:dashboard-apps	@salla.sa/ui-merchant-marketing	SA-C-074;SA-C-072;SA-C-083;SA-C-077;SA-C-079;SA-C-078	SA-A-11;SA-A-10;SA-A-09	yes
@@ -2291,14 +2291,14 @@ SA-I-2545	other:dashboard-apps	@salla.sa/ui-merchant-customers	SA-C-060	SA-A-07
 SA-I-2546	other:dashboard-apps	@salla.sa/ui-merchant-themes	SA-C-090;SA-C-082	SA-A-12	
 SA-I-2547	other:dashboard-apps	@salla.sa/ui-merchant-devstore	SA-C-209	SA-A-26	
 SA-I-2548	other:dashboard-apps	@salla.sa/ui-merchant-logs	SA-C-010	SA-A-01	
-SA-I-2549	other:dashboard-apps	@salla.sa/ui-merchant-payments	SA-C-110;SA-C-006;SA-C-100	SA-A-17;SA-A-04	yes
+SA-I-2549	other:dashboard-apps	@salla.sa/ui-merchant-payments	SA-C-110;SA-C-006;SA-C-100	SA-A-31;SA-A-04;SA-A-17	yes
 SA-I-2550	other:dashboard-apps	@salla.sa/ui-merchant-partner-marketing	SA-C-206;SA-C-072;SA-C-076	SA-A-26;SA-A-10	yes
 SA-I-2551	other:dashboard-apps	@salla.sa/ui-merchant-channel	SA-C-097;SA-C-093	SA-A-16;SA-A-12	yes
 SA-I-2552	other:dashboard-apps	@salla.sa/ui-merchant-feedback	SA-C-030	SA-A-08	
 SA-I-2553	other:dashboard-apps	@salla.sa/ui-merchant-vendors	SA-C-098	SA-A-16	
 SA-I-2554	other:dashboard-apps	@salla.sa/ui-merchant-chat	SA-C-099	SA-A-08	
 SA-I-2555	other:dashboard-apps	@salla.sa/ui-merchant-blog	SA-C-081	SA-A-09	
-SA-I-2556	other:dashboard-apps	@salla.sa/ui-merchant-languages	SA-C-008	SA-A-02	
+SA-I-2556	other:dashboard-apps	@salla.sa/ui-merchant-languages	SA-C-008	SA-A-30	
 SA-I-2559	other:dashboard-apps	@salla.sa/ui-merchant-ticketing-system	SA-C-179	SA-A-08	
 SA-I-2560	other:dashboard-apps	@salla.sa/ui-merchant-app-maker	SA-C-094	SA-A-14	
 SA-I-2561	other:dashboard-apps	@salla.sa/ui-merchant-ads-snapchat	SA-C-073	SA-A-11	
@@ -2306,7 +2306,7 @@ SA-I-2562	other:dashboard-apps	@salla.sa/ui-merchant-ads-tiktok	SA-C-073	SA-A-11
 SA-I-2563	other:dashboard-apps	@salla.sa/ui-merchant-ads-google	SA-C-073	SA-A-11	
 SA-I-2564	other:dashboard-apps	@salla.sa/ui-merchant-ads-youtube	SA-C-073	SA-A-11	
 SA-I-2565	other:dashboard-apps	@salla.sa/ui-merchant-ads-manageads	SA-C-073	SA-A-11	
-SA-I-2567	other:dashboard-apps	@salla.sa/ui-merchant-localization	SA-C-008	SA-A-02	
+SA-I-2567	other:dashboard-apps	@salla.sa/ui-merchant-localization	SA-C-008	SA-A-30	
 SA-I-2568	other:dashboard-apps	@salla.sa/ui-merchant-reports_mfe	SA-C-220	SA-A-28	
 SA-I-2569	other:dashboard-apps	@salla.sa/ui-merchant-ads-meta	SA-C-073	SA-A-11	
 SA-I-2570	other:dashboard-apps	chat-mf	SA-C-099	SA-A-08	
@@ -2327,8 +2327,8 @@ SA-I-2585	other:dashboard-apps	@salla.sa/ui-merchant-embedded	SA-C-197	SA-A-25
 SA-I-2586	other:dashboard-apps	@salla.sa/ui-merchant-utils	SA-C-002	SA-A-02	
 SA-I-2587	other:dashboard-apps	@salla.sa/ui-merchant-importer	SA-C-027	SA-A-05	
 SA-I-2588	other:dashboard-apps	@salla.sa/ui-merchant-ads-media	SA-C-073	SA-A-11	
-SA-I-2589	other:dashboard-apps	@salla.sa/ui-merchant-offers	SA-C-071;SA-C-080;SA-C-063	SA-A-09	
-SA-I-2590	other:dashboard-apps	@salla.sa/ui-merchant-wallet	SA-C-063	SA-A-09	
+SA-I-2589	other:dashboard-apps	@salla.sa/ui-merchant-offers	SA-C-071;SA-C-080;SA-C-063	SA-A-09;SA-A-34	yes
+SA-I-2590	other:dashboard-apps	@salla.sa/ui-merchant-wallet	SA-C-063	SA-A-34	
 SA-I-2591	other:dashboard-apps	@salla.sa/ui-merchant-abandoned_carts	SA-C-048	SA-A-09	
 SA-I-2592	other:dashboard-apps	@salla.sa/ui-merchant-ads-media-v2	SA-C-073	SA-A-11	
 SA-I-2593	other:dashboard-apps	@salla.sa/ui-merchant-ads-snapchat-v2	SA-C-073	SA-A-11	
@@ -2349,7 +2349,7 @@ SA-I-2609	other:dashboard-apps	@salla.sa/ui-merchant-inventory	SA-C-026;SA-C-025
 SA-I-2611	legal-agreements	سياسة البيع	SA-C-172	SA-A-23	
 SA-I-2612	legal-agreements	عقد خدمات الدفع	SA-C-177	SA-A-23	
 SA-I-2613	legal-agreements	سياسة الاستخدام على منصة سلة	SA-C-170	SA-A-23	
-SA-I-2614	legal-agreements	اتفاقية الوكالة بالاستثمار	SA-C-128	SA-A-18	
+SA-I-2614	legal-agreements	اتفاقية الوكالة بالاستثمار	SA-C-128	SA-A-32	
 SA-I-2615	legal-agreements	سياسة الشروط والاستخدام – متجر تطبيقات سلة	SA-C-175;SA-C-230;SA-C-235	SA-A-23	
 SA-I-2616	legal-agreements	سياسة الانضمام إلى برنامج شركاء سلة	SA-C-176;SA-C-204;SA-C-230;SA-C-231;SA-C-235	SA-A-23;SA-A-26;SA-A-04	yes
 SA-I-2617	legal-agreements	الشروط والأحكام لاستخدام متجر الثيمات – منصة سلة	SA-C-208;SA-C-090;SA-C-230;SA-C-231;SA-C-235	SA-A-13;SA-A-12;SA-A-23;SA-A-04	yes

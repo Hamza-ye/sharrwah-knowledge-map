@@ -34,7 +34,7 @@ BC-I-0037	api-resources	Currencies [rest/admin/management/currencies]	BC-C-074	B
 BC-I-0038	api-resources	Customers V3 [rest/admin/management/customers/v3]	BC-C-032	BC-A-14	
 BC-I-0039	api-resources	Customers V2 [rest/admin/management/customers/v2]	BC-C-032	BC-A-14	
 BC-I-0040	api-resources	Customer Segmentation [rest/admin/management/customer-segmentation]	BC-C-034	BC-A-14	
-BC-I-0041	api-resources	Geography [rest/admin/management/geography]	BC-C-075	BC-A-19	
+BC-I-0041	api-resources	Geography [rest/admin/management/geography]	BC-C-075	BC-A-34	
 BC-I-0042	api-resources	Infrastructure Hosting [rest/admin/management/infrastructure-hosting]	BC-C-052	BC-A-21	
 BC-I-0043	api-resources	Inventory [rest/admin/management/inventory]	BC-C-004	BC-A-02	
 BC-I-0044	api-resources	Orders V2 [rest/admin/management/orders]	BC-C-018	BC-A-06	
@@ -43,7 +43,7 @@ BC-I-0046	api-resources	Pickup [rest/admin/management/pickup]	BC-C-006	BC-A-08
 BC-I-0047	api-resources	Pickup Methods [rest/admin/management/pickup/pickup-methods]	BC-C-006	BC-A-08	
 BC-I-0048	api-resources	Pickup Options [rest/admin/management/pickup/pickup-options]	BC-C-006	BC-A-08	
 BC-I-0049	api-resources	Pricing [rest/admin/management/pricing]	BC-C-008	BC-A-03	
-BC-I-0050	api-resources	Price Lists [rest/admin/management/price-lists]	BC-C-007	BC-A-03	
+BC-I-0050	api-resources	Price Lists [rest/admin/management/price-lists]	BC-C-007	BC-A-33	
 BC-I-0051	api-resources	Promotions API [rest/admin/management/promotions]	BC-C-009	BC-A-03	
 BC-I-0052	api-resources	Promotion Settings API [rest/admin/management/promotion-settings]	BC-C-009	BC-A-03	
 BC-I-0053	api-resources	Redirects [rest/admin/management/redirects]	BC-C-041	BC-A-15	
@@ -167,18 +167,18 @@ BC-I-0171	webhook-topics	store/order/transaction/updated	BC-C-020	BC-A-06
 BC-I-0172	webhook-topics	store/order/metafield/created	BC-C-018;BC-C-049	BC-A-06;BC-A-22	yes
 BC-I-0173	webhook-topics	store/order/metafield/updated	BC-C-018;BC-C-049	BC-A-06;BC-A-22	yes
 BC-I-0174	webhook-topics	store/order/metafield/deleted	BC-C-018;BC-C-049	BC-A-06;BC-A-22	yes
-BC-I-0175	webhook-topics	store/priceList/created	BC-C-007	BC-A-03	
-BC-I-0176	webhook-topics	store/priceList/updated	BC-C-007	BC-A-03	
-BC-I-0177	webhook-topics	store/priceList/activated	BC-C-007	BC-A-03	
-BC-I-0178	webhook-topics	store/priceList/deactivated	BC-C-007	BC-A-03	
-BC-I-0179	webhook-topics	store/priceLists/deleted	BC-C-007	BC-A-03	
-BC-I-0180	webhook-topics	store/priceList/record/created	BC-C-007	BC-A-03	
-BC-I-0181	webhook-topics	store/priceList/record/updated	BC-C-007	BC-A-03	
-BC-I-0182	webhook-topics	store/priceList/record/deleted	BC-C-007	BC-A-03	
-BC-I-0183	webhook-topics	store/priceList/records/created	BC-C-007	BC-A-03	
-BC-I-0184	webhook-topics	store/priceList/records/updated	BC-C-007	BC-A-03	
-BC-I-0185	webhook-topics	store/priceList/records/deleted	BC-C-007	BC-A-03	
-BC-I-0186	webhook-topics	store/priceList/assignment/updated	BC-C-007	BC-A-03	
+BC-I-0175	webhook-topics	store/priceList/created	BC-C-007	BC-A-33	
+BC-I-0176	webhook-topics	store/priceList/updated	BC-C-007	BC-A-33	
+BC-I-0177	webhook-topics	store/priceList/activated	BC-C-007	BC-A-33	
+BC-I-0178	webhook-topics	store/priceList/deactivated	BC-C-007	BC-A-33	
+BC-I-0179	webhook-topics	store/priceLists/deleted	BC-C-007	BC-A-33	
+BC-I-0180	webhook-topics	store/priceList/record/created	BC-C-007	BC-A-33	
+BC-I-0181	webhook-topics	store/priceList/record/updated	BC-C-007	BC-A-33	
+BC-I-0182	webhook-topics	store/priceList/record/deleted	BC-C-007	BC-A-33	
+BC-I-0183	webhook-topics	store/priceList/records/created	BC-C-007	BC-A-33	
+BC-I-0184	webhook-topics	store/priceList/records/updated	BC-C-007	BC-A-33	
+BC-I-0185	webhook-topics	store/priceList/records/deleted	BC-C-007	BC-A-33	
+BC-I-0186	webhook-topics	store/priceList/assignment/updated	BC-C-007	BC-A-33	
 BC-I-0187	webhook-topics	store/product/*	BC-C-001	BC-A-01	
 BC-I-0188	webhook-topics	store/product/deleted	BC-C-001	BC-A-01	
 BC-I-0189	webhook-topics	store/product/created	BC-C-001	BC-A-01	
@@ -250,7 +250,7 @@ BC-I-0254	webhook-topics	store/channel/{channel_id}/order/message/created	BC-C-0
 BC-I-0255	webhook-topics	store/channel/{channel_id}/order/refund/created	BC-C-021	BC-A-06	
 BC-I-0256	webhook-topics	store/channel/{channel_id}/page/created	BC-C-045	BC-A-17	
 BC-I-0257	webhook-topics	store/channel/{channel_id}/page/updated	BC-C-045	BC-A-17	
-BC-I-0258	webhook-topics	store/priceList/assignment/updated	BC-C-007	BC-A-03	
+BC-I-0258	webhook-topics	store/priceList/assignment/updated	BC-C-007	BC-A-33	
 BC-I-0259	webhook-topics	store/channel/{channel_id}/product/assigned	BC-C-038	BC-A-15	
 BC-I-0260	webhook-topics	store/channel/{channel_id}/product/unassigned	BC-C-038	BC-A-15	
 BC-I-0261	webhook-topics	store/channel/{channel_id}/category/product/assigned	BC-C-038	BC-A-15	
@@ -261,9 +261,9 @@ BC-I-0265	webhook-topics	store/channel/{channel_id}/script/updated	BC-C-044	BC-A
 BC-I-0266	webhook-topics	store/channel/{channel_id}/settings/*	BC-C-047	BC-A-18	
 BC-I-0267	webhook-topics	store/channel/{channel_id}/settings/currency/updated	BC-C-074	BC-A-19	
 BC-I-0268	webhook-topics	store/channel/{channel_id}/settings/profile/updated	BC-C-047	BC-A-18	
-BC-I-0269	webhook-topics	store/channel/{channel_id}/settings/locale/added	BC-C-048	BC-A-19	
-BC-I-0270	webhook-topics	store/channel/{channel_id}/settings/locale/updated	BC-C-048	BC-A-19	
-BC-I-0271	webhook-topics	store/channel/{channel_id}/settings/locale/deleted	BC-C-048	BC-A-19	
+BC-I-0269	webhook-topics	store/channel/{channel_id}/settings/locale/added	BC-C-048	BC-A-31	
+BC-I-0270	webhook-topics	store/channel/{channel_id}/settings/locale/updated	BC-C-048	BC-A-31	
+BC-I-0271	webhook-topics	store/channel/{channel_id}/settings/locale/deleted	BC-C-048	BC-A-31	
 BC-I-0272	webhook-topics	store/channel/{channel_id}/settings/logo/updated	BC-C-047	BC-A-18	
 BC-I-0273	webhook-topics	store/channel/{channel_id}/settings/logo/image/updated	BC-C-047	BC-A-18	
 BC-I-0274	webhook-topics	store/channel/{channel_id}/settings/favicon/image/updated	BC-C-047	BC-A-18	
@@ -355,8 +355,8 @@ BC-I-0359	access-scopes	store_locations	BC-C-005	BC-A-02
 BC-I-0360	access-scopes	store_locations_read_only	BC-C-005	BC-A-02	
 BC-I-0361	access-scopes	store_stored_payment_instruments_read_only	BC-C-024	BC-A-09	
 BC-I-0362	access-scopes	store_stored_payment_instruments	BC-C-024	BC-A-09	
-BC-I-0363	access-scopes	store_translations_read_only	BC-C-048	BC-A-19	
-BC-I-0364	access-scopes	store_translations	BC-C-048	BC-A-19	
+BC-I-0363	access-scopes	store_translations_read_only	BC-C-048	BC-A-31	
+BC-I-0364	access-scopes	store_translations	BC-C-048	BC-A-31	
 BC-I-0365	access-scopes	store_themes_manage	BC-C-042	BC-A-17	
 BC-I-0366	access-scopes	store_themes_read_only	BC-C-042	BC-A-17	
 BC-I-0367	access-scopes	store_b2b_manage	BC-C-065;BC-C-031	BC-A-13	
@@ -379,7 +379,7 @@ BC-I-0383	settings	Inventory Notifications	BC-C-004	BC-A-02
 BC-I-0384	settings	Logo	BC-C-047	BC-A-18	
 BC-I-0385	settings	Logo Image	BC-C-047	BC-A-18	
 BC-I-0386	settings	Search Filters	BC-C-011	BC-A-04	
-BC-I-0387	settings	Store Locale	BC-C-048	BC-A-19	
+BC-I-0387	settings	Store Locale	BC-C-048	BC-A-31	
 BC-I-0388	settings	Store Profile	BC-C-047	BC-A-18	
 BC-I-0389	settings	Storefront Category	BC-C-003	BC-A-01	
 BC-I-0390	settings	Storefront Product	BC-C-001	BC-A-01	
@@ -410,7 +410,7 @@ BC-I-0414	plan-features	Stored credit cards	BC-C-024	BC-A-09
 BC-I-0415	plan-features	Google customer reviews	BC-C-012	BC-A-04	
 BC-I-0416	plan-features	Product filtering	BC-C-011	BC-A-04	
 BC-I-0417	plan-features	Custom product filtering	BC-C-011	BC-A-04	
-BC-I-0418	plan-features	Price Lists	BC-C-007	BC-A-03	
+BC-I-0418	plan-features	Price Lists	BC-C-007	BC-A-33	
 BC-I-0419	plan-features	Advanced promotions management	BC-C-009	BC-A-03	
 BC-I-0420	plan-features	Inventory locations	BC-C-005	BC-A-02	
 BC-I-0421	plan-features	GMV cap	BC-C-030	BC-A-12	
@@ -422,7 +422,7 @@ BC-I-0426	plan-features	Multi-storefront	BC-C-039	BC-A-15
 BC-I-0427	plan-features	Point of sale	BC-C-069	BC-A-08	
 BC-I-0428	plan-features	Amazon / eBay / Walmart	BC-C-068	BC-A-16	
 BC-I-0429	plan-features	Google / Meta / TikTok / Microsoft / Pinterest (Feedonomics Surface)	BC-C-067;BC-C-068	BC-A-16	
-BC-I-0435	other:embedded-payment-providers	BigCommerce Payments	BC-C-025;BC-C-026	BC-A-10	
+BC-I-0435	other:embedded-payment-providers	BigCommerce Payments	BC-C-025;BC-C-026	BC-A-32;BC-A-10	yes
 BC-I-0436	other:embedded-payment-providers	Adyen	BC-C-026	BC-A-10	
 BC-I-0437	other:embedded-payment-providers	Affirm	BC-C-026	BC-A-10	
 BC-I-0438	other:embedded-payment-providers	Afterpay	BC-C-026	BC-A-10	
@@ -489,7 +489,7 @@ BC-I-0501	other:product-lines	Abandoned cart recovery	BC-C-015	BC-A-05
 BC-I-0502	other:product-lines	Refunds & returns	BC-C-021	BC-A-06	
 BC-I-0503	other:product-lines	B2B Edition	BC-C-065	BC-A-13	
 BC-I-0504	other:product-lines	Buyer portal	BC-C-065	BC-A-13	
-BC-I-0505	other:product-lines	Customer-specific pricing	BC-C-065;BC-C-007	BC-A-13;BC-A-03	yes
+BC-I-0505	other:product-lines	Customer-specific pricing	BC-C-065;BC-C-007	BC-A-13;BC-A-33	yes
 BC-I-0506	other:product-lines	Customer-specific catalogs	BC-C-065	BC-A-13	
 BC-I-0507	other:product-lines	Sales rep ordering	BC-C-065	BC-A-13	
 BC-I-0508	other:product-lines	Company account hierarchy	BC-C-065	BC-A-13	
