@@ -7,7 +7,7 @@
 **What I read:**
 - the brief, and its diff since the re-check (`git diff fc98f4b..7fec7f0`);
 - `PLAN.md`: step R1, section 6, and the lines of sections 1 to 3, 7 and 9 that the brief's wording rests on;
-- `method/check_areas.py`, and the two scripts it depends on or follows: `areas_extract.py` (its `own_names`) and `place_entries.py`;
+- `method/check_areas.py`, and the two scripts it depends on or follows: `areas_extract.py` (its `own_names`) and `place_entries.py`. I also read the docstring of `copy_statements.py` at `681df43`, the script that acts on the `questions` column;
 - `studies/proposals/questions.md` and `briefs/R1-areas-one-platform.md`;
 - `check-of-the-draft.md`: findings 26 to 33 (31 and 32 among them), 43 and 44, and the Re-check;
 - `sizing.md` and `costs.tsv`, for the review's expected cost and the runs' measured costs;
