@@ -6,7 +6,8 @@
 #
 # The observed repositories' fetch archives (WARC) are searched too. Their text is extracted once per commit into a
 # cache outside the repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
-# So are this repository's capture runs, and the founder's saves for the platform
+# So are Shopify's Help Center pages held in observed-sh (English as Markdown, Arabic as content HTML), this
+# repository's capture runs, and the founder's saves for the platform
 # (evidence/product-class/blocked-evidence-founder/<platform>/: browser saves, and PDFs through pdftotext).
 # An address held more than once shows its fullest copy.
 #
@@ -35,8 +36,20 @@ HELD = {  # text corpora held in the observed repositories: (repository, path gl
               ("observed-sa", "structures/salla/help-articles/en/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/com-policies/*/text.txt", "text"),
               ("observed-sa", "structures/salla/dashboard-translations/*/*.json", "text")],
-    "shopify": [("observed-sh", "structures/shopify/**/items.jsonl", "lines")],
+    "shopify": [("observed-sh", "structures/shopify/**/items.jsonl", "lines"),
+                # The Help Center as its own menus hold it: English pages as Markdown, Arabic pages as content HTML.
+                ("observed-sh", "structures/shopify/help-center/help.shopify.com@en-ar/md/en/**/*.md", "help-md"),
+                ("observed-sh", "structures/shopify/help-center/help.shopify.com@en-ar/content.html/ar/**/*.html", "help-html")],
 }
+HELP_ROOT = "structures/shopify/help-center/help.shopify.com@en-ar/"
+
+def help_url(name):
+    """The Help Center address of a held page: md/en/a/b.md -> https://help.shopify.com/en/a/b."""
+    rel = name[len(HELP_ROOT):]
+    rel = re.sub(r"^(md|content\.html)/", "", rel)
+    rel = re.sub(r"\.(md|html)$", "", rel)
+    rel = re.sub(r"/index$", "", rel)
+    return "https://help.shopify.com/" + rel
 
 def fold(s):
     s = HARAKAT.sub("", norm(s)).casefold()
@@ -45,15 +58,28 @@ def fold(s):
     return s
 
 def git_files(repo, pattern):
+    """(commit, name, text) for each file at HEAD whose path matches the pattern, read from git's objects in one
+    batch."""
     root = REPOS[repo]
     commit = subprocess.run(["git", "-C", root, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
     names = subprocess.run(["git", "-C", root, "ls-tree", "-r", "--name-only", commit], capture_output=True,
                            text=True).stdout.split("\n")
     rx = re.compile("^" + re.escape(pattern).replace(r"\*\*/", "(?:.*/)?").replace(r"\*", "[^/]*") + "$")
-    for n in names:
-        if rx.match(n):
-            yield commit, n, subprocess.run(["git", "-C", root, "show", f"{commit}:{n}"],
-                                            capture_output=True).stdout.decode("utf-8", "replace")
+    wanted = [n for n in names if rx.match(n)]
+    if not wanted:
+        return
+    out = subprocess.run(["git", "-C", root, "cat-file", "--batch"], capture_output=True,
+                         input="".join(f"{commit}:{n}\n" for n in wanted).encode("utf-8")).stdout
+    pos = 0
+    for n in wanted:
+        end = out.index(b"\n", pos)
+        head = out[pos:end].split()
+        pos = end + 1
+        if len(head) < 3 or head[1] == b"missing":
+            continue
+        size = int(head[2])
+        yield commit, n, out[pos:pos + size].decode("utf-8", "replace")
+        pos += size + 1
 
 def members(path):
     """(offset, bytes) of each gzip member of a fetch archive: one WARC record each."""
@@ -167,6 +193,11 @@ def documents(platform):
             elif kind == "lines":
                 for i, line in enumerate(raw.splitlines(), start=1):
                     yield (f"{repo}:{name}", f"{repo}@{commit}:{name} line {i}", "", "", line)
+            elif kind == "help-md":
+                title = next((l[2:].strip() for l in raw.splitlines() if l.startswith("# ")), "")
+                yield ("observed-sh: Help Center, en", f"{repo}@{commit}:{name}", help_url(name), title, raw)
+            elif kind == "help-html":
+                yield ("observed-sh: Help Center, ar", f"{repo}@{commit}:{name}", help_url(name), "", html_text(raw))
             else:
                 yield (f"{repo}:{name}", f"{repo}@{commit}:{name}", "", "", raw)
     if platform in ARCHIVES:

@@ -15,7 +15,9 @@ script runs, or OBSERVED_SH_COMMIT / OBSERVED_SA_COMMIT. Nothing is read from th
 and nothing in them is run.
 
 own_names(platform) gives the platform's own names by label, for method/check_areas.py. A concern's
-terms are separated by ";" or "|", as the platforms' concern files write them.
+terms are separated by ";" or "|", as the platforms' concern files write them. A list entry's names are the
+entry, each part of its path (" › " or " > "), and each half of an English / Arabic pair, whether or not
+the entry is in the concern map's scope.
 """
 import csv, json, os, re, subprocess, sys
 from collections import Counter
@@ -107,12 +109,26 @@ def salla_tree():
     return commit, tree
 
 
+def entry_names(entry):
+    """An entry's own names: the whole entry; each part of a path such as 'Payments / الدفع › Cash on Delivery';
+    and each half of a part that pairs an English and an Arabic name with ' / '."""
+    out = {entry.strip()}
+    for part in re.split(r"\s+[›>]\s+", entry):
+        part = part.strip()
+        if part:
+            out.add(part)
+            halves = [h.strip() for h in part.split(" / ")]
+            if len(halves) == 2 and all(halves):
+                out.update(halves)
+    return out
+
+
 def own_names(platform):
     """The platform's own names, by the label a name carries in an areas file."""
     names = {}
     for r in rows(os.path.join(CM, platform, "inventory.tsv")):
-        if not r["out_of_scope_reason"]:
-            names.setdefault(r["list"], set()).add(r["entry"].strip())
+        # An entry out of the concern map's scope is still the platform's own name, such as a menu's group heading.
+        names.setdefault(r["list"], set()).update(entry_names(r["entry"]))
     for r in rows(os.path.join(CM, platform, "concerns.tsv")):
         for t in re.split(r"[;|]", r["platform_terms"] or ""):
             if t.strip():
