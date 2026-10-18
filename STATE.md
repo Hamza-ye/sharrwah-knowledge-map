@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 22:10 UTC.
+**Updated:** 18 October 2026, 22:24 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -75,14 +75,22 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - `agent_questions.py`: each question's sentences numbered;
   - both briefs rewritten; the optional findings 3, 12 to 14 and 16 to 18 taken too, and 4 and 15 in part;
   - `PLAN.md` section 11: a dated entry, with two narrowings of the plan (the contracts behind providers; the search behind a not-found) and live pages captured after each run.
+- **The review of the areas list** (`areas/review.md`, commit `c613452`): 25 findings, 15 must fix. It cost 41.7 million tokens (`costs.tsv`).
+- **Its fixes** (commit `2731962`; `PLAN.md` section 11, the last entry):
+  - 34 areas: languages (A-30), currencies (A-31), gift cards, store credit and customer wallets (A-32), catalogs and price lists (A-33) and charity stores (A-34) added;
+  - platform areas re-cut, each with its reason: the platforms' own payment services all in A-12, financing in A-13, WooCommerce's account in A-01, Zid's countries in A-16;
+  - each question draws on the areas where the review found statements bearing on it, and Q8 on every area;
+  - depth reasons corrected; Zid in depth for Q6 (21 in-depth runs, 19 checks); the pilot's statements offered to every question;
+  - `check_areas.py merged` checks that each depth cite is reached by its question; `areas.md` shows every name.
+- **The sample is now Q3 on Salla:** the same rule, applied to the revised list, gives a median of 875 candidate statements, and Q3 on Salla holds exactly 875.
 - **Running:**
-  - the review of the areas list (`briefs/R1-areas-review.md`), `a5b8a8b2950f1c3ff`, at `max`, started at 21:52 UTC. It writes `studies/proposals/areas/review.md`;
-  - the re-check of the R3 briefs' fixes, by the same agent that checked them, `a7540c280cead6255`, at `max`, from 22:08 UTC. It writes `studies/proposals/checks/R3-briefs-recheck.md`.
+  - the re-check of the areas list's fixes, by the agent that reviewed it, `a5b8a8b2950f1c3ff`, at `max`. It writes `studies/proposals/areas/review-recheck.md`;
+  - the re-check of the R3 briefs' fixes, `a7540c280cead6255`, at `max`, from 22:08 UTC. It writes `studies/proposals/checks/R3-briefs-recheck.md`.
 - **Next:**
-  1. fix what the review finds, and have its fixes re-checked;
-  2. fix what the re-check finds;
-  3. the areas list to the founder (G2), with the method rulings since the last message, one plain line each. The sample runs while the founder marks: `copy_statements.py candidates Q2 salla`, then the run from `briefs/R3-recording.md`;
-  4. measure the sample (`count_tokens.py`), re-size, and tell the founder in the next message.
+  1. fix what the two re-checks find;
+  2. the areas list to the founder (G2), with the method rulings since the last message, one plain line each, and the steps past their expected cost with the re-sized whole. The sample runs while the founder marks: `copy_statements.py candidates Q3 salla`, then the run from `briefs/R3-recording.md`;
+  3. measure the sample (`count_tokens.py`), re-size, and tell the founder in the next message;
+  4. name in the starting messages of the Q1, Q7 and Q8 runs the out-of-scope Shopify entries the review pointed to (its finding 8), and in the check runs' messages the holes in BigCommerce's and Salla's records (its finding 25).
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
 - `max`: inspections, Stage 1's step 2a, and the pilot's B, C, D and F;
