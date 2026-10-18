@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 19:05 UTC.
+**Updated:** 18 October 2026, 20:10 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -20,10 +20,21 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - `briefs/R1-areas-one-platform.md` and `briefs/R1-areas-review.md`, the first step's briefs;
   - `sizing.md`: about 1.49 billion agent tokens if the sample meets the founder's bar, with about 0.43 billion of the coordinator's own on top;
   - `areas/extract-<platform>.md`, written by `method/areas_extract.py`, and `method/check_areas.py` for the first step's runs.
-- **The independent check of the drafts** (`briefs/R0-check-of-the-draft.md`, commit `178d313`): agent `aaa90803d4fe66dba`, at `max`, started at 19:05 UTC. Expected cost: about 40 million tokens. It writes `studies/proposals/check-of-the-draft.md`.
+- **The independent check of the drafts** (`briefs/R0-check-of-the-draft.md`): agent `aaa90803d4fe66dba`, at `max`. Its findings, `studies/proposals/check-of-the-draft.md` (commit `4b4ccbe`): 40, 19 of them must fix. It cost 17 million tokens, by its transcript.
+- **The token count is corrected** (commit `e75ce9a`). The coordinator's counts took each API request once per line of its transcript, and a request is written over several lines. So every earlier figure was roughly doubled.
+  - Counted once per request (`method/count_tokens.py`), the pilot's agents processed about 1.03 billion tokens, not 2.1 billion. Phases A and A2 come to about 0.52 million per statement, not 1.1 million.
+  - Section 12 of the method report is corrected. The founder's budget and bar, set from the old figures, are about 1.0 billion and 0.26 million in this count.
+  - A week's limit is about 2.8 billion in this count, and about 43 percent of this week's was used by 20:00 UTC on 18 October.
+- **The fixes** (commits `11e4e1d`, `e75ce9a`, `d61c08f`, `58edb02`):
+  - the first step's scripts, rewritten or new: `areas_extract.py`, `check_areas.py`, `place_entries.py`;
+  - both R1 briefs;
+  - the questions re-worded;
+  - the plan change rewritten in full;
+  - the sizing re-counted. It now comes to about 1.22 billion agent tokens at the founder's bar, about a fifth over the pilot, with cuts offered.
+- **Running: the re-check of the fixes,** by the same agent, resumed at 20:10 UTC. It appends `## Re-check` to `check-of-the-draft.md`.
 - **Next:**
-  1. fix what the check finds;
-  2. bring the founder the plain summary their message asks for;
+  1. fix what the re-check finds;
+  2. bring the founder the plain summary their message asks for, with three answers: the go, the old question lists, and the budget's cuts;
   3. nothing else runs before the founder's go, which puts the change into `PLAN.md` section 11.
 - **Waiting on the go:** Stage 1's fixes listed "before Stage 4", which the plan change replaces, and Q3's rows, which it proposes dropping.
 
@@ -314,9 +325,9 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (18 October 2026, 19:05 UTC):**
+**Agents running when last checked (18 October 2026, 20:10 UTC):**
 - **Running:**
-  - the re-frame's R0 check, `aaa90803d4fe66dba`.
+  - the re-frame's R0 check, `aaa90803d4fe66dba`, re-checking the fixes.
 - **Done, and resumable:**
   - the pilot: F `a349d058600a20b3a`; phase B `a9e10fcc19233f104`; phase C `adc0057894ed0a4d9`; phase D `a279f7e700e54e76b`; Salla's A2 `aa3fbffb0ec8e81cc` and A3 `a1fbfec156e90bb84`;
   - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
