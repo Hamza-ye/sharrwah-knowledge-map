@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 20:35 UTC.
+**Updated:** 18 October 2026, 21:05 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -12,7 +12,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - the guard: no arrangement that holds sellers' money through Sharrwah goes live without the founder's decision;
 - nothing runs before the founder's go on the plan change.
 
-**Running: the re-frame, step R0 (the plan change).**
+**Step R0, the plan change: done on 18 October 2026, with the founder's go.**
 - **observed-sh** was pulled to `c8b5fbee2`: Shopify's Help Center in English and Arabic, organized as Shopify organizes it.
 - **The drafts** (commit `103eeb9`), in `studies/proposals/`:
   - `plan-change.md`: the section 11 entry, and the sections it rewrites;
@@ -35,22 +35,37 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - The re-check confirmed the recount from the agents' own transcripts.
   - The coordinator fixed 41 to 48 (commit `2ab910c`), and re-ran the re-check's tests: 52 behave as expected. The one other case was written for the old numbering of the cuts, and passes once its cut is named.
   - The check and re-check together cost 39 million tokens.
-- **The summary for the founder** is `studies/proposals/summary-for-the-founder.md`, sent in chat at 20:35 UTC. It asks for three answers:
-  1. the go on the plan change;
-  2. the old question lists, dropped or checked at the end;
-  3. the budget's cuts. The coordinator recommends cuts 1 and 2 now, about 1.18 billion agent tokens.
+- **The summary for the founder** (`studies/proposals/summary-for-the-founder.md`) went in chat at 20:35 UTC.
+- **The founder's go, 18 October 2026** (`founder-messages/2026-10-18-go-on-the-plan-change.md`; `founder-decisions.tsv`). Go, with five changes:
+  - the sample measures and doesn't stop the work;
+  - the budget is 2 billion agent tokens, in the corrected count, with the coordinator's work on top;
+  - a step past its expected cost doesn't stop: the coordinator re-sizes the rest and tells the founder in its next message. The work stops only if the re-sized whole would pass 2 billion;
+  - checks cover everything a proposal cites;
+  - the first build's design starts from the marked areas list as Sharrwah's whole extent, and reads open-source platforms (Saleor, Medusa, Vendure) for structure only.
+
+  Q3's rows are checked at the end. No cuts. The coordinator didn't push back.
+- **`PLAN.md` holds the change** (commit `7fec7f0`): the status line and sections 1 to 9 rewritten, Stages 0 to 2 kept as a record, and the dated entry in section 11. Stage 1's fixes "before Stage 4" are replaced, as section 6 says.
+- **R0's measured cost** (`studies/proposals/costs.tsv`): agents 39.4 million (expected 39), coordinator 65.5 million (expected 80).
+- **The sizing at the go** (`studies/proposals/sizing.md`): about 1.5 billion agent tokens at a planning rate of 0.4 million per new statement, 1.35 to 2.0 billion by what the sample measures. With the coordinator's work, about 62 percent of a week's limit. It will pass this week's limit before the reset on 24 October at 05:00 UTC.
+
+**Running: step R1, the platforms' broad areas** (`PLAN.md` section 4).
+- **Expected cost:** agents 122 million (the five platform runs 69 with re-runs; the review 53 with its brief's check and re-checks); coordinator 30 million.
+- **Started at 21:01 UTC, at commit `7fec7f0`:**
+  - five platform runs at `high`, from `briefs/R1-areas-one-platform.md`: Shopify `a0469a445d1b0e914`, Salla `a20553ba016ad3ada`, WooCommerce `aaf2643a96501f5d8`, Zid `a12d49e9152c9e5b0`, BigCommerce `a1907bde61272f6ac`. Each writes `studies/proposals/areas/areas-<platform>.tsv`, its notes, and its entries file;
+  - the check of the review brief (`briefs/R1-areas-review.md`) at `max`, `a267d6bf2f56848c9`. It writes `studies/proposals/checks/R1-review-brief-check.md`.
 - **Next:**
-  1. wait for the founder's answers. Nothing else runs before the go;
-  2. on the go, enter the change in `PLAN.md` (Part 1 in section 11, Part 2's text in place) and record the answers in `founder-decisions.tsv`;
-  3. before R1's review runs, a quick separate check of its brief's last change (finding 44);
-  4. then step R1, from `studies/proposals/plan-change.md`.
-- **Waiting on the go:** Stage 1's fixes listed "before Stage 4", which the plan change replaces, and Q3's rows, which it proposes dropping.
+  1. as each run finishes: re-run `check_areas.py` and `place_entries.py` on its files, record its cost in `costs.tsv`, and commit;
+  2. fix what the review brief's check finds;
+  3. merge the five lists into `areas.tsv`, `areas.md` and `depth.tsv` (`check_areas.py merged`), and pick the sample by the plan's rule;
+  4. the review, its re-checks, then the areas list to the founder (G2). The sample runs during the marking, once its briefs are checked and `copy_statements.py` and `check_proposals.py` are built.
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
 - `max`: inspections, Stage 1's step 2a, and the pilot's B, C, D and F;
 - `high`: step 2b;
 - `medium`: reading and recording evidence, re-run at `high` where checks or review show gaps;
 - `low`: one-off mechanical questions.
+
+From 18 October 2026, the re-frame's steps (`PLAN.md` section 11): `max` for brief checks, R1's review, R4's drafting and R6's review; `high` for R1's platform runs, R5's re-checks and audits, and the check of Q3's rows; `medium` for recording (R2 and R3), re-run at `high` where a check shows gaps.
 
 Agents started earlier keep their effort.
 
@@ -333,15 +348,17 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (18 October 2026, 20:35 UTC):**
+**Agents running when last checked (18 October 2026, 21:05 UTC):**
 - **Running:**
-  - none. The R0 check, `aaa90803d4fe66dba`, is done and resumable.
+  - step R1's five platform runs: Shopify `a0469a445d1b0e914`, Salla `a20553ba016ad3ada`, WooCommerce `aaf2643a96501f5d8`, Zid `a12d49e9152c9e5b0`, BigCommerce `a1907bde61272f6ac`;
+  - the check of R1's review brief, `a267d6bf2f56848c9`.
+- **Done, and resumable:** the R0 check, `aaa90803d4fe66dba`.
 - **Done, and resumable:**
   - the pilot: F `a349d058600a20b3a`; phase B `a9e10fcc19233f104`; phase C `adc0057894ed0a4d9`; phase D `a279f7e700e54e76b`; Salla's A2 `aa3fbffb0ec8e81cc` and A3 `a1fbfec156e90bb84`;
   - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
   - Stage 1 step 2b, by range: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
-**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran; **paused** again since, while the go waits for the founder. Turn it back on when agents run again. Delete it when the founder asks.
+**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. **On again** from 21:01 UTC on 18 October 2026, while step R1 runs. Pause it when no agent runs. Delete it when the founder asks.
 
 **To resume:**
 1. Commit whatever files are on disk, as an unchecked checkpoint.

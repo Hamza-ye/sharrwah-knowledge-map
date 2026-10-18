@@ -1,0 +1,4 @@
+step	run	agent	started	ended	tokens_millions	note
+R0	check of the drafts	aaa90803d4fe66dba	2026-10-18T19:04	2026-10-18T19:42	16.9	max
+R0	re-check of the fixes	aaa90803d4fe66dba	2026-10-18T20:06	2026-10-18T20:23	22.5	max; the same agent, resumed
+R0	coordinator	(this session)	2026-10-18T18:37	2026-10-18T21:01	65.5	drafting, fixes, the recount, the summary, the go
