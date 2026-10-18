@@ -2,7 +2,7 @@
 
 **Step R1, 18 October 2026.** This is the areas list your G1 answer asked for, before the detailed work. The files behind it are `areas.tsv`, `depth.tsv` and each platform's `areas-<platform>.tsv`, in this folder.
 
-**What it is.** Each platform's own areas, named in its own words by one short run per platform, merged into 34 areas. Where a merged area's heading is one platform's own name, it says whose. Where no one name covers all the platforms, the heading is mine, and marked as mine.
+**What it is.** Each platform's own areas, named in its own words by one short run per platform, re-cut by me where the independent review found things joined or split wrongly, and merged into 34 areas. Where a merged area's heading is one platform's own name, it says whose. Where no one name covers all the platforms, the heading is mine, and marked as mine.
 
 **What your marks do.** With your marks, this list becomes Sharrwah's whole extent for the design of its first build.
 - **Won't do:** the area is outside Sharrwah. The first build's design leaves it out, and no proposal provides for it. Its recorded evidence still serves the questions that draw on it.
@@ -62,7 +62,7 @@
 - **What it covers:** The seller's own tools for selling more: discounts and coupons, campaigns, affiliates and ads, loyalty, and the blog and search-engine settings.
 - **The platforms' own names:** Shopify: Discounts, Marketing and promotions, Marketing, Campaigns, Attribution, Customer events, Shopify Audiences, Shopify Collabs; Salla: Marketing, أدوات التسويق, Coupons, Promotional Offers, Abandoned carts, Campaigns, Marketing calendar, Loyalty program, Gifting, Quick checkout, Reorder Reminder, عروض البنك, Advertisements, Blog, SEO, Affiliate marketing, Influencers, التسويق بالعمولة, التسويق مع المؤثرين, Salla Ads, إعلانات سلة, Pixels & feeds; Zid: Marketing & Growth Tools / أدوات التسويق والنمو, Marketing & Growth Tools, Marketing Tools, Coupons, Bundle Offers, Loyalty Program, Abandoned Carts, Zid Voice; WooCommerce: Marketing, Marketing > Coupons, Order Attribution, Extensions > Marketing, MailPoet, WooAds; BigCommerce: Pricing, Advanced promotions management, Promotions API, Coupons, discounts, and gift cards, Marketing.
 - **Questions that draw on it:** Q2 (what a place's rules and the platform's own choices change), Q5 (payment methods: who decides, and where the money goes), Q8 (how the platform is organized and grows).
-- **If you mark it "won't do":** Marketing tools would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. BigCommerce's gift certificates, which it files with its coupons, would go with them.
+- **If you mark it "won't do":** Marketing tools would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it.
 - **Kept anyway:** Its statements stay as evidence for Q2, Q5 and Q8.
 - **Note:** Customer wallets, store credit and gift cards are in A-32, except BigCommerce's gift certificates, which BigCommerce files with its coupons and so are here.
 
@@ -144,23 +144,23 @@
 - **If you mark it "won't do":** Tax handling would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it.
 - **Kept anyway:** Its statements stay as evidence for Q1, Q2, Q3, Q6 and Q8.
 
-### A-15. Selling to several countries from one store *(my heading)*
+### A-15. Per-country versions of one store *(my heading)*
 
-- **What it covers:** Per-country versions of one store, each with its own settings, which Shopify, Salla and Zid call markets; Shopify's Managed Markets, international domains and geolocation; and the countries and regions a store's addresses use.
-- **The platforms' own names:** Shopify: Markets, Managed Markets, Rollouts; Salla: Markets, Multi-market, Market selection; Zid: الأسواق; BigCommerce: Geography.
+- **What it covers:** Separate versions of one store for different countries, each with its own settings, which Shopify, Salla and Zid call markets; with Shopify's Managed Markets, international domains and geolocation.
+- **The platforms' own names:** Shopify: Markets, Managed Markets, Rollouts; Salla: Markets, Multi-market, Market selection; Zid: الأسواق.
 - **Questions that draw on it:** Q1 (places a store sells in or operates from), Q2 (what a place's rules and the platform's own choices change), Q3 (what a seller must do before doing particular things), Q5 (payment methods: who decides, and where the money goes), Q6 (who can register, and from where), Q7 (currencies), Q8 (how the platform is organized and grows).
-- **If you mark it "won't do":** Selling to several countries from one store would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. Languages and currencies are areas of their own (A-30 and A-31), so this mark doesn't remove them.
+- **If you mark it "won't do":** Per-country versions of one store would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. A store could still sell to buyers in other countries, as one version: the countries a store sells to are in A-16, and languages and currencies in A-30 and A-31, so this mark removes none of them.
 - **Kept anyway:** Its statements stay as evidence for Q1, Q2, Q3, Q5, Q6, Q7 and Q8.
-- **Note:** The heading is ours: Shopify, Salla and Zid name this Markets, Multi-market or الأسواق, and WooCommerce and BigCommerce have no such setting. BigCommerce's Geography, the countries and states its stores' addresses use, is here. Languages and currencies, which the platforms keep apart from markets, are in A-30 and A-31.
+- **Note:** The heading is ours: Shopify, Salla and Zid name this Markets, Multi-market or الأسواق, and WooCommerce and BigCommerce have no such setting. Languages and currencies, which the platforms keep apart from markets, are in A-30 and A-31.
 
-### A-16. Where the platform operates *(my heading)*
+### A-16. Where the platform operates, and where a store sells *(my heading)*
 
-- **What it covers:** Where the platform operates: the countries it serves or doesn't, the country a seller gives at sign-up, and the payment providers it suggests for each country.
-- **The platforms' own names:** Shopify: Unsupported countries and regions, Country/region, Sanctions; Salla: مدعوم في, Available in, Countries; Zid: ZID is available in, Egypt, UAE, Kuwait, Oman, Syria, About Zid Egypt, Countries and Cities; WooCommerce: Selling location(s), Shipping location(s), Set up payments, payment-gateway-suggestions, WooPayments in Your Country, supported countries, MaxMind Geolocation, Default customer location, Data, data/countries, data/continents.
+- **What it covers:** Where the platform operates and where a store sells: the countries the platform serves or doesn't, the country a seller gives at sign-up, the payment providers it suggests for each country, and the countries a store sells and ships to and keeps for addresses.
+- **The platforms' own names:** Shopify: Unsupported countries and regions, Country/region, Sanctions; Salla: مدعوم في, Available in, Countries; Zid: ZID is available in, Egypt, UAE, Kuwait, Oman, Syria, About Zid Egypt, Countries and Cities; WooCommerce: Selling location(s), Shipping location(s), Set up payments, payment-gateway-suggestions, WooPayments in Your Country, supported countries, MaxMind Geolocation, Default customer location, Data, data/countries, data/continents; BigCommerce: Geography.
 - **Questions that draw on it:** Q1 (places a store sells in or operates from), Q2 (what a place's rules and the platform's own choices change), Q3 (what a seller must do before doing particular things), Q5 (payment methods: who decides, and where the money goes), Q6 (who can register, and from where), Q7 (currencies), Q8 (how the platform is organized and grows).
-- **If you mark it "won't do":** Choosing where Sharrwah operates would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. Sharrwah must operate somewhere, so this mark is unlikely.
+- **If you mark it "won't do":** Choosing where Sharrwah operates, and the countries a store sells and ships to, would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. Sharrwah must operate somewhere, so this mark is unlikely.
 - **Kept anyway:** Its statements stay as evidence for Q1, Q2, Q3, Q5, Q6, Q7 and Q8.
-- **Note:** Shopify, Salla, WooCommerce and Zid each list the places they serve under a different name (Unsupported countries and regions, مدعوم في, Selling locations, ZID is available in). Zid Egypt, Zid's company in Egypt, is here too.
+- **Note:** Shopify, Salla and Zid each list the places they serve under a different name (Unsupported countries and regions, مدعوم في, ZID is available in). WooCommerce's selling and shipping locations, Zid's store countries and cities, and BigCommerce's Geography are the store's own settings, and are here too, with Zid Egypt, Zid's company in Egypt.
 
 ### A-17. What may not be sold, and who may not use the platform *(my heading)*
 
@@ -169,7 +169,7 @@
 - **Questions that draw on it:** Q2 (what a place's rules and the platform's own choices change), Q3 (what a seller must do before doing particular things), Q5 (payment methods: who decides, and where the money goes), Q6 (who can register, and from where), Q8 (how the platform is organized and grows).
 - **If you mark it "won't do":** Rules on what may not be sold would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it.
 - **Kept anyway:** Its statements stay as evidence for Q2, Q3, Q5, Q6 and Q8.
-- **Note:** WooCommerce and BigCommerce give these rules an area of their own. The others keep them elsewhere: Shopify's sanctions with where it operates (A-16), Zid's prohibited activities with Zid Pay (A-12), and Salla's with its terms and verification (A-19 and A-18).
+- **Note:** WooCommerce and BigCommerce give these rules an area of their own. The others keep them elsewhere: Shopify's sanctions with where it operates (A-16), its Acceptable Use Policy with its terms (A-19) and Shopify Payments' prohibited businesses with its payment service (A-12); Zid's prohibited activities with Zid Pay (A-12); and Salla's with its terms and verification (A-19 and A-18).
 
 ### A-18. Store Verification *(Salla's own name)*
 
@@ -280,14 +280,14 @@
 - **Questions that draw on it:** Q1 (places a store sells in or operates from), Q8 (how the platform is organized and grows).
 - **If you mark it "won't do":** A store in more than one language would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it.
 - **Kept anyway:** Its statements stay as evidence for Q1 and Q8.
-- **Note:** Shopify, Salla and BigCommerce name languages apart from currencies. Zid sets a store's languages and currencies on one settings page (لغة وعملات المتجر), which is in A-31.
+- **Note:** Shopify, Salla and BigCommerce name languages apart from currencies. Zid sets a store's languages and currencies on one settings page (لغة وعملات المتجر), which is in A-31. WooCommerce offers languages through extensions, in its International and localization category (A-24).
 
 ### A-31. Currencies *(Salla's own name)*
 
 - **What it covers:** The store's currency, the currencies prices are shown and paid in, and currency conversion.
 - **The platforms' own names:** Shopify: International sales tools, store currency, Currency conversions and exchange rates; Salla: Currencies; Zid: لغة وعملات المتجر; WooCommerce: Currency, base currency, Currencies, multi-currency, Payout currencies, currency conversion fee; BigCommerce: Multi-currency, Currencies.
 - **Questions that draw on it:** Q1 (places a store sells in or operates from), Q2 (what a place's rules and the platform's own choices change), Q3 (what a seller must do before doing particular things), Q5 (payment methods: who decides, and where the money goes), Q7 (currencies), Q8 (how the platform is organized and grows).
-- **If you mark it "won't do":** Setting a store's currencies would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. Every store needs at least one currency, so this mark is unlikely.
+- **If you mark it "won't do":** Prices and payments in more than one currency would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. A store would have one currency.
 - **Kept anyway:** Its statements stay as evidence for Q1, Q2, Q3, Q5, Q7 and Q8.
 - **Note:** Zid sets a store's languages and currencies on one settings page (لغة وعملات المتجر), so Zid's languages are here too.
 
@@ -302,7 +302,7 @@
 
 ### A-33. Catalogs and price lists *(my heading)*
 
-- **What it covers:** Sets of products and prices offered to particular buyers: catalogs for a market or a business customer, and price lists for a sales channel or a customer group.
+- **What it covers:** Sets of products and prices offered to particular buyers: catalogs for one of Shopify's markets or for a business customer, and price lists for a sales channel or a customer group.
 - **The platforms' own names:** Shopify: Catalogs; BigCommerce: Price Lists.
 - **Questions that draw on it:** Q1 (places a store sells in or operates from), Q7 (currencies), Q8 (how the platform is organized and grows).
 - **If you mark it "won't do":** Catalogs and price lists would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it.
@@ -316,7 +316,7 @@
 - **Questions that draw on it:** Q2 (what a place's rules and the platform's own choices change), Q3 (what a seller must do before doing particular things), Q5 (payment methods: who decides, and where the money goes), Q6 (who can register, and from where), Q8 (how the platform is organized and grows).
 - **If you mark it "won't do":** Charity stores would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it.
 - **Kept anyway:** Its statements stay as evidence for Q2, Q3, Q5, Q6 and Q8.
-- **Note:** The heading is ours. Salla files charity stores as a help-centre category of its own (🤝 Charity stores); no other platform gives them an area. Salla's donation options on products are in A-04, Zid's charity business type in A-18, and Shopify's non-profit business entity in A-01.
+- **Note:** The heading is Salla's help-centre category, 🤝 Charity stores, without its emoji, so it is marked as ours. No other platform gives charity stores an area. Salla's donation options on products are in A-04, Zid's charity business type in A-18, and Shopify's non-profit business entity in A-01.
 
 ## Which platforms each question reads in depth
 
@@ -350,7 +350,7 @@ For each question, some platforms are read in depth, and the others only checked
   - **Zid:** Zid records Zid Pay's activation, identity checks through Nafath (Saudi Arabia's national sign-in service), store verification, financing requirements and prohibited activities: requirements set by Zid and by its partners.
 - **Checked:** WooCommerce, BigCommerce.
   - **WooCommerce:** WooCommerce's store launch, with its coming-soon mode that hides a store until it opens, WooPayments' identity checks and restricted businesses are recorded; a check records what differs.
-  - **BigCommerce:** BigCommerce records little here beyond BigCommerce Payments, fees and the store's profile; a check records what it requires.
+  - **BigCommerce:** BigCommerce records BigCommerce Payments, fees, the store's profile, and that the seller must screen its own customers for sanctions; a check records what else it requires.
 
 ### Q4: orders paid outside the platform
 

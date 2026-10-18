@@ -40,3 +40,4 @@ The coordinator re-cut these areas after the review of the areas list (`review.m
 - ZD-A-10 keeps الأسواق (Markets).
 - ZD-A-30 holds the store's languages and currencies (لغة وعملات المتجر), and ZD-A-31 the countries Zid serves, Zid Egypt, and the store's operating countries and cities.
 - ZD-A-32 holds customer wallets (from ZD-A-16).
+- The counts of areas and entries given above predate the re-cut. `areas-zid.tsv` and `areas-zid-entries.tsv` hold the current areas and placing.

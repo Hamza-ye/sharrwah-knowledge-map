@@ -37,3 +37,4 @@ What sits oddly against the plain lines:
 The coordinator re-cut these areas after the review of the areas list (`review.md`, findings 3 and 6), on 18 October 2026. Each area's note says why.
 - WC-A-29 holds merchant financing through Stripe Capital (from WC-A-03).
 - WC-A-30 holds the WordPress.com account and Jetpack connection (from WC-A-10).
+- The counts of areas and entries given above predate the re-cut. `areas-woocommerce.tsv` and `areas-woocommerce-entries.tsv` hold the current areas and placing.

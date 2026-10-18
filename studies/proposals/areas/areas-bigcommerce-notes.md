@@ -45,3 +45,4 @@ The coordinator re-cut these areas after the review of the areas list (`review.m
 - BC-A-19 keeps currencies. BC-A-31 (Store Locale and Store Translations) and BC-A-34 (Geography) are split from it.
 - BC-A-32 holds BigCommerce Payments (from BC-A-10).
 - BC-A-33 holds price lists (from BC-A-03).
+- The counts of areas and entries given above predate the re-cut. `areas-bigcommerce.tsv` and `areas-bigcommerce-entries.tsv` hold the current areas and placing.

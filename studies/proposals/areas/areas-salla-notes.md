@@ -64,3 +64,4 @@ The coordinator re-cut these areas after the review of the areas list (`review.m
 - SA-A-31 holds Salla Payments (from SA-A-17), and SA-A-33 charity stores' payment gateways (from SA-A-17), under the help centre's 🤝 Charity stores.
 - SA-A-32 holds financing (from SA-A-18).
 - SA-A-34 holds the customer wallet (from SA-A-09).
+- The counts of areas and entries given above predate the re-cut. `areas-salla.tsv` and `areas-salla-entries.tsv` hold the current areas and placing.

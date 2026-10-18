@@ -25,7 +25,7 @@ merged = rows(os.path.join(D, "areas.tsv"))
 depth = rows(os.path.join(D, "depth.tsv"))
 out = ["# The platforms' broad areas, for your marks", "",
  "**Step R1, 18 October 2026.** This is the areas list your G1 answer asked for, before the detailed work. The files behind it are `areas.tsv`, `depth.tsv` and each platform's `areas-<platform>.tsv`, in this folder.", "",
- f"**What it is.** Each platform's own areas, named in its own words by one short run per platform, merged into {len(merged)} areas. "
+ f"**What it is.** Each platform's own areas, named in its own words by one short run per platform, re-cut by me where the independent review found things joined or split wrongly, and merged into {len(merged)} areas. "
  "Where a merged area's heading is one platform's own name, it says whose. Where no one name covers all the platforms, the heading is mine, and marked as mine.", "",
  "**What your marks do.** With your marks, this list becomes Sharrwah's whole extent for the design of its first build.",
  "- **Won't do:** the area is outside Sharrwah. The first build's design leaves it out, and no proposal provides for it. Its recorded evidence still serves the questions that draw on it.",

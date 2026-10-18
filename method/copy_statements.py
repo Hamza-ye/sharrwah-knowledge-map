@@ -7,7 +7,8 @@ Usage:
   python3 -I method/copy_statements.py --counts
 
 A question draws on the merged areas whose `questions` column names it (studies/proposals/areas/areas.tsv). For a
-platform, those merged areas hold some of its platform areas (areas-<platform>.tsv), and those hold concerns.
+platform, those merged areas hold some of its platform areas (areas-<platform>.tsv), and those hold concerns. A few
+single concerns that the reviews found bearing on a question its areas miss are added from extra-candidates.tsv.
 
 `candidates` writes OUT_DIR/selection.tsv: one row per concern of those areas, with its terms, the concern map's
 description, how many statements and gaps it holds, and its area, and with action `candidate`. Last comes a row `S-01`:
@@ -103,10 +104,19 @@ def candidates_for(question, platform):
         if question in split(r["questions"]):
             wanted.update(split(r["platform_area_ids"]))
     _, mine = read(os.path.join(AREAS, f"areas-{platform}.tsv"))
-    out = []
+    out, area = [], {}
     for _, r in mine:
+        for c in split(r["concern_ids"]):
+            area[c] = r["area_id"]
         if r["area_id"] in wanted:
             out.extend((c, r["area_id"]) for c in split(r["concern_ids"]))
+    extra = os.path.join(AREAS, "extra-candidates.tsv")
+    if os.path.exists(extra):           # single concerns the reviews found bearing on a question its areas miss
+        have = {c for c, _ in out}
+        for _, r in read(extra)[1]:
+            if r["question"] == question and r["platform"] == platform and r["concern_id"] not in have:
+                out.append((r["concern_id"], area[r["concern_id"]]))
+                have.add(r["concern_id"])
     return out
 
 

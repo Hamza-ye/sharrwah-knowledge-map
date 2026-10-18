@@ -38,3 +38,4 @@ The coordinator re-cut these areas after the review of the areas list (`review.m
 - SH-A-30 (Languages) and SH-A-31 (the currency pages of International sales tools, with the store currency) are split from it.
 - SH-A-32 joins gift cards (from SH-A-05) and store credit (from SH-A-08).
 - SH-A-33 holds catalogs (from SH-A-09).
+- The counts of areas and entries given above predate the re-cut. `areas-shopify.tsv` and `areas-shopify-entries.tsv` hold the current areas and placing.
