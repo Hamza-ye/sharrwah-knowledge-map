@@ -1,29 +1,52 @@
 # Brief: one question on one platform, as a check (step R3)
 
-**Status: draft. It is checked before it runs.**
+**Status: revised after its check (`studies/proposals/checks/R3-briefs-check.md`). It is read once more before the first checking run.**
 
-You are one agent with one short task: one question, on one platform, as a check. The message that started you names both, and the platforms read in depth for the question. You run at `medium` effort.
+You are one agent with one short task: one question, on one platform, as a check. The message that started you names both, the platforms read in depth for the question, and a scratch directory. You run at `medium` effort.
 
 **Follow `studies/proposals/briefs/R3-recording.md`,** with the differences below. Read it first.
 
 ## What differs
 
-1. **Your task.** Other platforms were read in depth for this question. You record only what your platform shows that **differs from** what their accounts show, or **goes beyond** it.
-   - "Differs" means your platform does or says something else about the same thing. For example, it sets something at another level, someone else decides it, or a condition or a place differs.
-   - "Goes beyond" means your platform shows something the accounts don't mention at all.
-   - Where your platform shows the same as an account, you needn't record it again. Your account says so, with the copy ids that show it.
-2. **Also read** the in-depth platforms' accounts for your question: `studies/proposals/records/<question>/<in-depth platform>/account.md`, for each in-depth platform the message names.
-   - Open their statements only where an account point is unclear.
-   - Their accounts tell you what to compare against. They are never evidence about your platform.
-3. **Steps 1 and 2 are the same:** choose what to copy, then read the copies.
-4. **Step 3, reading,** goes to what the copies don't show and the accounts suggest may differ. You needn't read everything on the question.
-5. **Rule 12:** stop and report once you pass 60 new statements.
-6. **`account.md`** has one section for each sentence of the question. Each section says one of these, with its ids:
-   - **differs:** what differs, in your platform's own terms;
-   - **goes beyond:** what it shows that the accounts don't;
-   - **the same:** it shows the same, with the copy or statement ids that show it;
-   - **nothing found:** nothing found that differs, in what was read, with the `nf_id` that lists what you read.
+1. **Your task.** Other platforms were read in depth for this question. You record what your platform shows that **differs from** what their accounts show, or **goes beyond** it, and which of their points your platform doesn't show.
+   - The recording brief's "compare your platform with no other" still holds, with one exception: you sort what your platform shows against the accounts' points, as below.
+   - You don't rank, explain or judge a difference.
+2. **Also read** the in-depth platforms' accounts for your question: `studies/proposals/records/<question>/<in-depth platform>/account.md`, for each platform the message names.
+   - If a named account is missing, or `python3 -I method/check_proposals.py records <question> <in-depth platform>` reports errors for its folder, stop and report.
+   - Where an account point is unclear, look up only the ids it cites, with `grep` for each id in that platform's folder: at most 10 ids for each account. Never open their sources.
+   - The accounts tell you what to sort against. They are never evidence about your platform.
+   - Never use an in-depth platform's terms in your statements, identifiers, scopes or headings.
+3. **When something matches an account point.** It matches only on one of these bases, each shown in the platforms' own words:
+   1. the same term, including a platform's own translation of it;
+   2. the same identifier, such as a key, a scope or a route;
+   3. the same definition, with both quoted;
+   4. the same role in what the question's sentence asks, each by its own words.
 
-   At most about 800 words.
+   A name alone is not a basis: the same word can name different things, and different words the same thing.
+4. **The labels.** Each point of your account carries one of these:
+   - **the same:** it matches an account point on a basis, and your source says nothing else about it;
+   - **differs:** it matches an account point on a basis, and your source says something else about it, such as its scope, its level, who sets it, a condition or a place, or anything else your platform states differently;
+   - **goes beyond:** it matches no account point on any basis;
+   - **not in what was read:** an account point that your platform's reading doesn't show.
 
-Everything else in the recording brief holds, including the quotes, citations, files and checks.
+   When unsure between "the same" and "differs", use "differs".
+5. **Steps 1 and 2 are the same:** choose what to copy, then read the copies through their views.
+6. **Step 3, reading:**
+   - **With a map of your platform's help:** find in it the question's topics, and list the titles of the pages it files there. Read the pages whose titles name something no account point names, and the pages an account point needs: at most 10 in all.
+   - **Without a map:** run one corpus search for the question's topics in your platform's words, and read at most 10 of the documents it lists.
+   - **Then,** for each account point not yet matched, run one corpus search in your platform's words, and read at most 3 of the documents it lists.
+   - **Live pages** only where what is held doesn't show it: at most 5 in all.
+7. **Step 4 doesn't apply.**
+8. **Step 5** records only the account points your platform's reading doesn't show: one `not in what was read` row for each point, with its corpus search (rule 7). Its `what_is_missing` says what is missing in plain words, not in the in-depth platform's term.
+9. **Recording.**
+   - When your reading, not a copy, shows the same as an account point, record the statement and cite it. It counts toward the cap.
+   - **Rule 12:** stop reading once you pass 60 new statements.
+10. **`account.md`:**
+    - its sections are as in the recording brief: one for each sentence its points answer, headed as `## [2]`;
+    - each point starts with its label in bold, such as `- **differs:**`;
+    - each point but "goes beyond" names the account point it is sorted against, by that account's ids;
+    - each point ends with your own folder's ids that it rests on: copy ids, statement ids, or for "not in what was read" the `nf_id`;
+    - at most about 800 words.
+11. **Before you finish,** run the checker with `--check`: `python3 -I method/check_proposals.py records <question> <platform> --check`.
+
+Everything else in the recording brief holds, including the quotes, citations and files.
