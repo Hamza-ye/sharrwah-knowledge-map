@@ -8,7 +8,7 @@ Ids lead to the evidence:
 
 Arabic statements are given here in English paraphrase, and the id leads to the platform's own words. A statement marked **not reached** is carried by no concern in an area tied to the question named. I checked each such case by script.
 
-By the time I finished, the branch was at d54e414. Between the two commits, the areas files, the scripts and my brief are unchanged. `questions-for-agents.md` has only gained numbers for each question's sentences, and I cite those numbers in brackets, as in Q4 [3].
+By the time I finished, the branch had moved on to d54e414, and then to checkpoints that hold only this file. Between 7cc6c78 and d54e414, the areas files, the scripts and my brief are unchanged. `questions-for-agents.md` has only gained numbers for each question's sentences, and I cite those numbers in brackets, as in Q4 [3].
 
 ## Severity at a glance
 
