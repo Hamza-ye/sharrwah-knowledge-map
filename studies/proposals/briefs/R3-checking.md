@@ -39,7 +39,7 @@ You are one agent with one short task: one question, on one platform, as a check
 7. **Step 4 doesn't apply.**
 8. **Step 5** records only the account points your platform's reading doesn't show: one `not in what was read` row for each point, with its corpus search (rule 7). Its `what_is_missing` says what is missing in plain words, not in the in-depth platform's term.
    - Record at most 20 such rows: first those for points on money flows, legal structure, the data model or partner contracts.
-   - List the other points in `notes.md`, as not checked.
+   - List the other points in `notes.md`, as not checked. They stay out of `account.md`.
 9. **Recording.**
    - When your reading, not a copy, shows the same as an account point, record the statement and cite it. It counts toward the cap.
    - **Rule 12:** stop reading once you pass 60 new statements.

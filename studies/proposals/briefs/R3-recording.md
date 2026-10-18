@@ -31,16 +31,16 @@ Don't answer the question in your own words, compare your platform with any othe
 - **Shopify:**
   - `python3 -I method/help_map.py shopify` lists the Help Center's menus, each with its line number;
   - `python3 -I method/help_map.py shopify <line>` lists the pages that menu files: level, title and path;
-  - `python3 -I method/help_map.py shopify page <path>` prints one page, after the source to cite it by. English pages are `md/en/…`. A page's Arabic version is at the same path with `md/en/` changed to `content.html/ar/` and `.md` to `.html`.
+  - `python3 -I method/help_map.py shopify page <path>` prints one page, after the source to cite it by. English pages are `md/en/…`. A page's Arabic version is at the same path with `md/en/` changed to `content.html/ar/` and `.md` to `.html`. An Arabic page may show HTML entities, such as `&gt;` in a settings path: in an identifier, write the character it stands for (`>`).
 - **Salla:**
-  - `python3 -I method/help_map.py salla [en|ar]` lists the help centre's categories: id, breadcrumb and subcategories;
+  - `python3 -I method/help_map.py salla [ar|en]` lists the help centre's categories, in Arabic unless you give `en`: id, breadcrumb and subcategories;
   - `python3 -I method/help_map.py salla <category id>` lists the articles that category files, with their Arabic and English titles. The Arabic help centre is the fuller one: about a quarter of its articles have no English version;
   - `python3 -I method/help_map.py salla page <article id> [ar|en]` prints one article, in Arabic unless you give `en`, after the source and locator to cite it by.
 - **WooCommerce, Zid and BigCommerce:** no map is held. Start from the corpus search.
 
 **WooCommerce's release files** are code and built files, some of them megabytes long. Never read one whole: search it with `grep`, from outside the folder, and read the lines around what you find.
 
-**BigCommerce's founder's saves** are mostly PDFs. Read one with `pdftotext -q '<file>' -`, and cite it as `sharrwah-knowledge-map@<commit>:<path>`: the checker reads it the same way.
+**BigCommerce's founder's saves** are mostly PDFs. Read one with `pdftotext -q "<file>" -`, in double quotes, since some names hold an apostrophe, and cite it as `sharrwah-knowledge-map@<commit>:<path>`: the checker reads it the same way.
 
 **Tools:**
 - to search everything held for your platform, in every language, run `python3 -I method/corpus_search.py <platform> <terms> [--max N] [--with <terms>]`. A document matches when it holds any of the terms, and, with `--with`, also any of the terms after `--with`. Its snippets are folded for matching: never quote one, quote the document;
@@ -64,7 +64,7 @@ Don't answer the question in your own words, compare your platform with any othe
      - `set aside` if it doesn't, with the reason in `reason`.
    - Add a row with action `add`, and its reason, for any other concern of your platform that bears on the question. Take its id and terms from `concerns.tsv`.
    - Judge by the terms. Where they don't decide it, run `copy_statements.py show` for that concern, and judge by its statements. The description is the concern map's words, not the platform's.
-   - The last row, `S-01`, is the pilot's statements, gaps and absences on who holds a seller's money. For Q5 it is set to `copy` already. For other questions, judge it like the others: `show` prints its statements, cut short.
+   - The last row, `S-01`, is the pilot's statements, gaps and absences on who holds a seller's money. For Q5 it is set to `copy` already. For other questions, judge it like the others: `show` prints its identifiers.
    - For a concern with no statements, `show` prints its gaps instead. Their wording is the concern map's: judge by what they say is missing.
    - Then run `python3 -I method/copy_statements.py copy <question> <platform>`. It copies every row unchanged:
      - `copied.tsv`, the statements, with ids such as `Q2-SA-K1553`;

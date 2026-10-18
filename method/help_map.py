@@ -4,7 +4,8 @@ Usage:
   python3 -I method/help_map.py shopify                     the Help Center's menus, each with its line in outline.md
   python3 -I method/help_map.py shopify LINE [--anchors]    the pages the menu at that line files: level, title, held
                                                             path; with --anchors, each page's anchored sections too
-  python3 -I method/help_map.py salla [en|ar]               the help centre's categories: id, breadcrumb, subcategories
+  python3 -I method/help_map.py salla [ar|en]               the help centre's categories: id, breadcrumb, subcategories;
+                                                            Arabic unless en is given
   python3 -I method/help_map.py salla CATEGORY_ID          the articles that category files, in both languages:
                                                             article id, sub-section, Arabic title, English title
                                                             ("-" where that language has none)
@@ -107,7 +108,7 @@ def salla(args):
     rest = [a for a in args if a not in ("en", "ar")]
     if rest[:1] == ["page"] and len(rest) > 1:
         return salla_page(rest[1], lang or "ar")
-    lang = lang or "en"
+    lang = lang or "ar"                          # the fuller help centre
     commit = head(OSA)
     if not rest:
         path = f"structures/salla/help-tree/{lang}/items.jsonl"

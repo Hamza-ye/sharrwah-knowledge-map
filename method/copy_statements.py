@@ -16,7 +16,8 @@ paragraph reuses them, and `candidate` for the other questions, whose runs judge
 
 `show` prints the statements of the concerns named: concern_id, line (in the concern map's statements.tsv),
 identifier and statement. A run uses it to judge a concern whose terms don't decide it. For S-01 it prints the pilot's
-statements, each cut to 160 characters, and for a concern with no statements, its gaps, marked as such.
+distinct identifiers, each with the line of its first statement and how many statements carry it, and for a concern
+with no statements, its gaps, marked as such.
 
 The recording run then sets each row's action:
 - `copy`: the concern bears on the question;
@@ -137,8 +138,8 @@ def candidates(question, platform, out):
 
 
 def show(platform, concern_ids):
-    """Print the statements of each concern named; for S-01, the pilot's, each cut to 160 characters; for a concern
-    with no statements, its gaps, marked as such (their wording is the concern map's, not the platform's)."""
+    """Print the statements of each concern named; for S-01, the pilot's distinct identifiers; for a concern with no
+    statements, its gaps, marked as such (their wording is the concern map's, not the platform's)."""
     _, con = read(os.path.join(CM, platform, "concerns.tsv"))
     known = {r["concern_id"] for _, r in con} | {"S-01"}
     unknown = [c for c in concern_ids if c not in known]
@@ -148,10 +149,15 @@ def show(platform, concern_ids):
     _, gp = read(os.path.join(CM, platform, "gaps.tsv"))
     print("concern_id\tline\tidentifier\tstatement")
     for c in concern_ids:
-        if c == "S-01":
+        if c == "S-01":                 # its distinct identifiers, each with how many statements carry it
             _, pst = read(os.path.join(PILOT, platform, "statements.tsv"))
+            first, n = {}, {}
             for line, r in pst:
-                print(f"S-01\t{line}\t{r['identifier'] or ''}\t{(r['statement'] or '')[:160]}")
+                k = r["identifier"] or ""
+                first.setdefault(k, line)
+                n[k] = n.get(k, 0) + 1
+            for k, line in first.items():
+                print(f"S-01\t{line}\t{k}\t({n[k]} statement{'s' if n[k] > 1 else ''})")
             continue
         mine = [(line, r) for line, r in st if r["concern_id"] == c]
         for line, r in mine:
