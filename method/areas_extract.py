@@ -14,7 +14,8 @@ Held files are read from the observed repositories' git objects at one commit: H
 script runs, or OBSERVED_SH_COMMIT / OBSERVED_SA_COMMIT. Nothing is read from their working trees,
 and nothing in them is run.
 
-own_names(platform) gives the platform's own names by label, for method/check_areas.py.
+own_names(platform) gives the platform's own names by label, for method/check_areas.py. A concern's
+terms are separated by ";" or "|", as the platforms' concern files write them.
 """
 import csv, json, os, re, subprocess, sys
 from collections import Counter
@@ -113,7 +114,7 @@ def own_names(platform):
         if not r["out_of_scope_reason"]:
             names.setdefault(r["list"], set()).add(r["entry"].strip())
     for r in rows(os.path.join(CM, platform, "concerns.tsv")):
-        for t in (r["platform_terms"] or "").split(";"):
+        for t in re.split(r"[;|]", r["platform_terms"] or ""):
             if t.strip():
                 names.setdefault(TERM, set()).add(t.strip())
     if platform == "shopify":

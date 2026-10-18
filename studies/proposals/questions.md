@@ -86,10 +86,10 @@ The founder's item: B8, "built gradually, in parts".
 
 > How does the platform organize what it offers, in its own names, and how does that grow? Record the units it names, whatever it calls them. For each: what it depends on and what it shares with others, how new ones are added or existing ones extended, and how the platform introduces them, for example by plan, by place or by release stage.
 
-Much of this comes from the areas list (step R1) and what is recorded. A run records only what those don't show. If the founder takes the first cut in `sizing.md`, Q8 has no recording runs, and its proposal is drafted from the areas list and what is recorded.
+Much of this comes from the areas list (step R1) and what is recorded. A run records only what those don't show. If the founder takes the second cut in `sizing.md`, Q8 has no recording runs, and its proposal is drafted from the areas list and what is recorded.
 
 ## What isn't a question
 
 - **The guard** on arrangements that hold sellers' money is a decision of the founder's (`founder-decisions.tsv`, G1). The money proposals say what the design provides for. Whether any such arrangement goes live is the founder's to decide.
 - **Company decisions** are where the company is based, which providers and partners Sharrwah works with, any licence, and who may register. They aren't questions agents are given. The work collects the evidence that bears on each, and the coordinator brings each to the founder in plain words, with a recommendation and whether it needs a lawyer.
-- **Areas no question covers,** such as tax, show on the areas list. The founder marks them, and each gets a line saying why the work leaves it out.
+- **Areas no question draws on** show on the areas list. Which areas each question draws on is settled with the areas list, from what the platforms record, not here. The founder marks them, and each area no question draws on gets a line saying why the work leaves it out.

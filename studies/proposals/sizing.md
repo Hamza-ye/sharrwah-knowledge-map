@@ -18,7 +18,7 @@
 
 **The usage limit,** from the session's transcripts, in this count:
 - **A week's limit.** From the weekly reset (17 October, 05:00 UTC) to the founder's report of 33 percent used (17:28 UTC), this session processed 936 million tokens: 145 million by the coordinator and 791 million by agents. So a week's limit is about **2.8 billion**, and 1 percent is about 28 million. This is rough: the founder's figure may include use outside this session, and the meter isn't a token count.
-- **One usage window.** On 17 October, the stretches of work that a session limit stopped processed 357 and 371 million tokens. So a window holds about **0.36 billion**.
+- **One usage window.** On 17 October, three stretches of work that a session limit stopped processed about 357, 411 and 381 million tokens, depending on where each is taken to start. So a window holds about **0.38 billion**.
 - **This week so far.** From the reset to 20:00 UTC on 18 October, about 1.22 billion, about **43 percent** of the week. The week resets on 24 October at 05:00 UTC.
 - **The coordinator's share.** Over the work so far, the coordinator processed about 0.2 tokens for each agent token: 742 million against 3,965 million.
 
@@ -45,9 +45,9 @@ The scaling is what each run must read and record, against the pilot run it is s
 
 | Step | Runs | Sized from | Scaling | Agents (millions) |
 | --- | --- | --- | --- | --- |
-| R0. Check of the drafts, and its re-check of the fixes | 2 | measured, and the same agent's re-check | The check measured 17. The re-check continues the same agent, over the fixes only | 17 + 10 = **27** |
+| R0. Check of the drafts, and its re-check of the fixes | 2 | measured | The check measured 17, and the re-check 22: continuing the same agent re-reads its long context on every turn | 17 + 22 = **39** |
 | R1. Each platform's areas | 5, and re-runs | the R0 check, 17, for about 250 KB read | Shopify 271 KB and Salla 233 KB at about 17 each; Zid 89 KB 8, WooCommerce 67 KB 7, BigCommerce 52 KB 6. A quarter more for re-runs | 55 + 14 = **69** |
-| R1. Review of the areas list: its brief's check, a first pass and two re-checks | 4 | brief checks, 5; F's rounds, 38, 37 and 12 | It weighs fewer claims than F, but reads five areas files, the merged list and samples of the records: a first pass of about 25, re-checks of about 12 and 6 | 5 + 25 + 12 + 6 = **48** |
+| R1. Review of the areas list: its brief's check, a first pass and two re-checks | 4 | brief checks, 5; F's rounds, 38, 37 and 12 | It weighs fewer claims than F, but reads five areas files, the merged list and samples of the records: a first pass of about 30, re-checks of about 12 and 6 | 5 + 30 + 12 + 6 = **53** |
 | R2. Checks of the recording and checking briefs | 2 | brief checks, 5 | A little longer than the pilot's | **12** |
 | R2. The sample | 1 | the bar | About 45 new statements: 12 at the bar, 23 at the pilot's rate for all its statements, 34 at its rate for new ones | **12** (up to 34) |
 | R3. In-depth recording runs | 20 | the bar, once the sample passes | About 945 new statements in all. For each in-depth platform: Q1 50, Q2 70, Q3 45, Q4 30, Q5 60, Q6 30, Q7 35, Q8 40. In-depth platforms: three for Q1, Q2, Q3 and Q5, two for the others | 945 × 0.26 = **246** |
@@ -67,7 +67,7 @@ The scaling is what each run must read and record, against the pilot run it is s
 | R6. The company decisions' review, in the second batch | | | | **10** |
 | R6. How the proposals bear on each other | 1 | brief checks and F | One short run over the eight proposals | **12** |
 
-**Agents' total: about 1.22 billion,** if the sample meets the founder's bar. The range is about 0.9 to 1.6 billion. That is about a fifth over the budget, the pilot's 1.03 billion.
+**Agents' total: about 1.24 billion,** if the sample meets the founder's bar. The range is about 0.9 to 1.6 billion. That is about a fifth over the budget, the pilot's 1.03 billion.
 
 **If the sample comes in below the bar,** step R3 costs less. At two thirds of the bar, R3's in-depth runs cost about 165 million rather than 246.
 
@@ -77,12 +77,12 @@ Each cut is the founder's to decide, with what it saves and what it loses.
 
 | # | Cut | Saves (millions) | What it loses |
 | --- | --- | --- | --- |
-| 1 | Question 8 drafted from the areas list and what is recorded, with no recording runs | about 40 | No new reading on how the platforms add and extend what they offer |
-| 2 | Checking runs only where a platform's recorded material suggests an answer the in-depth platforms might not show. The depth choice marks the rest "none", with why | about 40 | A platform's different answer is likelier to be missed (risk 16). The review still checks each "none" |
-| 3 | One in-depth platform fewer for each question, checked instead | about 50 | Every proposal rests on fewer platforms read in depth |
-| 4 | A second re-check of a review batch only if the first leaves a must-fix finding open | up to 20 | Little: a second re-check only confirms fixes |
+| 1 | A second re-check of a review batch only if the first leaves a must-fix finding open | up to 20 | Little: a second re-check only confirms fixes |
+| 2 | Question 8 drafted from the areas list and what is recorded, with no recording runs | about 40 | No new reading on how the platforms add and extend what they offer |
+| 3 | Checking runs only where a platform's recorded material suggests an answer the in-depth platforms might not show. The depth choice marks the rest "none", with why | about 40 | A platform's different answer is likelier to be missed (risk 16). The review still checks each "none" |
+| 4 | One in-depth platform fewer for each question, checked instead | about 50 | Every proposal rests on fewer platforms read in depth |
 
-**With cuts 1, 2 and 4:** about 1.12 billion. **With all four:** about 1.07 billion.
+**With cuts 1 to 3:** about 1.14 billion. **With all four:** about 1.09 billion.
 
 ## The coordinator's own work, shown apart
 
@@ -90,7 +90,7 @@ These are estimates, from the measured share of about 0.2 tokens per agent token
 
 | Step | What the coordinator does | Millions |
 | --- | --- | --- |
-| R0 | drafting, the fixes after the check, the re-count, the summary for the founder | 80 (45 measured by 20:00 UTC on 18 October) |
+| R0 | drafting, the fixes after the check and re-check, the re-count, the summary for the founder | 80 (55 measured by 20:24 UTC on 18 October) |
 | R1 | merging five lists into one, the depth choice, the message to the founder | 30 |
 | R2 | the copy script, the checker, the sample, the measurement and the re-sizing | 15 |
 | R3 | starting and checking about 40 short runs, and the copies for each question | 50 |
@@ -106,15 +106,15 @@ These are estimates, from the measured share of about 0.2 tokens per agent token
 
 | Step | Agents + coordinator (millions) | Share of a week's limit | Days of work | Comes back to the founder |
 | --- | --- | --- | --- | --- |
-| R0 | 27 + 80 = 107 | 4% | done but for the re-check | with the plain summary, for the go |
-| R1 | 117 + 30 = 147 | 5% | half a day | with the areas list, for marking (G2) |
+| R0 | 39 + 80 = 119 | 4% | done | with the plain summary, for the go |
+| R1 | 122 + 30 = 152 | 5% | half a day | with the areas list, for marking (G2) |
 | R2 | 24 + 15 = 39 | 1% | runs during the founder's marking | only if the sample misses the bar |
 | R3 | 381 + 50 = 431 | 15% | 1 to 1.5 | only if a step runs past its expected cost; the capture list when recording ends |
 | R4 | 186 + 30 = 216 | 8% | half a day | no |
 | R5 | 299 + 20 = 319 | 11% | half a day to a day | no |
 | R6 | 188 + 25 = 213 | 8% | half a day to a day | with the proposals and the company decisions, several in one message |
 | Throughout | 15 | 1% | | |
-| **Whole plan** | **about 1.22 + 0.27 = 1.49 billion** | **about 52%** | **about 4 to 5 days of work** | |
+| **Whole plan** | **about 1.24 + 0.27 = 1.51 billion** | **about 53%** | **about 4 to 5 days of work** | |
 
 **By the calendar:**
 - **From the go to the proposals:** about 4 to 6 days. The founder's marking of the areas is the one wait inside that span, and the sample runs during it.

@@ -31,7 +31,7 @@ You review the areas list before it reaches the founder. You made none of it. Yo
 
 **`depth.tsv`**: one row per question and platform:
 - `question`, `platform`;
-- `depth`: `in depth`, `check`, or `none`;
+- `depth`: `in depth` or `check`. A depth of `none` is allowed only under a cut the founder took, as recorded in `founder-decisions.tsv`: cut 2 makes every row of Q8 `none`, and cut 3 lets a row that would be `check` be `none` where the platform's recorded material suggests nothing the in-depth platforms won't show;
 - `why`;
 - `cites`: the concern or statement ids the reason rests on.
 
@@ -39,7 +39,7 @@ You review the areas list before it reaches the founder. You made none of it. Yo
 
 ## What to check
 
-1. **The checks by script.** Run `python3 -I method/check_areas.py <platform>` for each platform, and `python3 -I method/check_areas.py merged`. Report anything they find.
+1. **The checks by script.** Run `python3 -I method/check_areas.py <platform>` for each platform, and `python3 -I method/check_areas.py merged`, adding `--cuts` and the numbers of the cuts the founder took, if any (`founder-decisions.tsv`). Report anything they find.
 2. **Groupings.**
    - Each grouping that isn't the platform's own is marked as the agent's or the coordinator's, with its reason.
    - Look for groupings that hide a difference between platforms, or that join things one platform keeps apart.
@@ -60,6 +60,7 @@ You review the areas list before it reaches the founder. You made none of it. Yo
 8. **Depth by question.**
    - Check each "why" in `depth.tsv` against what it cites.
    - Flag a platform marked `check` whose recorded material suggests an answer the in-depth platforms might not show.
+   - Check each row marked `none` against the cut that allows it, and its "why" against what it cites. Under cut 3, flag any whose recorded material suggests a different answer.
 
 ## Output
 

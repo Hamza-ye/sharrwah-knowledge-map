@@ -207,7 +207,7 @@ Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stage
    - It ties each area to the questions that draw on it. For each question, a script later copies the statements under those areas' concerns (step R3).
    - For each area, it says what a "won't do" mark removes from the work, and what evidence the questions keep anyway.
    - For each area no question draws on, it writes one line saying why the work leaves it out. This replaces Stage 5's last sweep.
-   - For each question, it picks which platforms to read in depth and which only to check for anything that differs from or goes beyond them, each with why and what that rests on.
+   - For each question, it picks which platforms to read in depth and which only to check for anything that differs from or goes beyond them, each with why and what that rests on. A platform is left out of a question only under a cut the founder took (`studies/proposals/sizing.md`).
    - It picks the sample (step R2).
 
    Its files are `areas.tsv`, `areas.md` and `depth.tsv`, as `briefs/R1-areas-review.md` describes them.

@@ -11,8 +11,10 @@ request once per block. The method report's first count did that, and so roughly
 pilot's figures (`studies/subjects/S-01/method-report.md`, section 12). This script counts each
 request once, by its message id.
 
-A transcript also records each request's output at its start, so output is undercounted. Output
-is a small part of what a run processes, which is mostly its context read again on each turn.
+A transcript also records each request's output at its start, so output is undercounted, and it
+doesn't record the requests that compact a long run's context, about 0.4 percent of the pilot's
+tokens. Both are small parts of what a run processes, which is mostly its context read again on
+each turn.
 
 --since and --until keep only requests whose timestamp falls between them, as ISO times in UTC
 (such as 2026-10-17T05:00). Prints one line per transcript and, for several, the total.

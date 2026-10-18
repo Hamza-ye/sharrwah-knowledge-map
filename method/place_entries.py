@@ -5,12 +5,13 @@ Usage: python3 -I method/place_entries.py PLATFORM [AREAS_DIR]
 AREAS_DIR defaults to studies/proposals/areas. Reads areas-<platform>.tsv (the concerns each area
 holds) and the concern map's inventory.tsv, and writes areas-<platform>-entries.tsv with the columns
 inv_id, list, entry, concern_ids, area_ids, split.
-- An entry goes under the area of each of its concerns.
+- An entry goes under the area of each of its concerns. The inventories separate an entry's concern
+  ids with ";", "," or spaces, by platform.
 - `split` is "yes" when its concerns fall in different areas. Such an entry is under each of them.
 - An entry whose concerns are all under none is under none (`area_ids` is empty).
 Prints how many entries each area holds, and how many are split or under none.
 """
-import csv, os, sys
+import csv, os, re, sys
 from collections import Counter
 
 csv.field_size_limit(10**9)
@@ -35,7 +36,7 @@ def main(platform, d):
     for r in rows(os.path.join(CM, platform, "inventory.tsv")):
         if r["out_of_scope_reason"]:
             continue
-        cs = [c.strip() for c in (r["concern_ids"] or "").split(";") if c.strip()]
+        cs = [c for c in re.split(r"[;,\s]+", r["concern_ids"] or "") if c]
         areas = []
         for c in cs:
             a = area_of.get(c)

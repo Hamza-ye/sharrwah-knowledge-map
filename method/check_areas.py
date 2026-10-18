@@ -1,10 +1,13 @@
 """Check the areas files of step R1.
 
 Usage:
-  python3 -I method/check_areas.py PLATFORM [AREAS_DIR]   one platform's areas file
-  python3 -I method/check_areas.py merged [AREAS_DIR]     the coordinator's merged list and depth choice
+  python3 -I method/check_areas.py PLATFORM [AREAS_DIR]                 one platform's areas file
+  python3 -I method/check_areas.py merged [AREAS_DIR] [--cuts 2,3]      the merged list and depth choice
 
 AREAS_DIR defaults to studies/proposals/areas. Files are read tab-separated, with no quoting.
+Held files in the observed repositories are read at the commits the platform's extract names.
+--cuts names the cuts in studies/proposals/sizing.md that the founder took, as recorded in
+founder-decisions.tsv. Only cuts 2 and 3 change what the depth choice may hold.
 
 For one platform, it reads areas-<platform>.tsv and areas-<platform>-notes.md, and checks:
 - the columns;
@@ -24,9 +27,12 @@ For the merged list, it reads areas.tsv and depth.tsv, and checks:
   a heading of the coordinator's own gives its reason in note;
 - each area has a plain line, what a "won't do" mark removes, and what is kept anyway;
 - an area no question draws on says why the work leaves it out;
-- depth.tsv has one row for each question and platform, a depth of "in depth", "check" or "none",
-  a reason, and what the reason cites; and each question has at least one platform in depth,
-  unless all its rows are "none".
+- depth.tsv has one row for each question and platform, a depth of "in depth" or "check", a reason,
+  and what the reason cites, each cited id being a concern, a citation or a pilot statement that
+  exists; and each question has at least one platform in depth. A depth of "none" is allowed only
+  under the founder's cuts: for every row of Q8 under cut 2 (Q8 without recording runs), and for a
+  row that would otherwise be "check" under cut 3 (checking runs only where the recorded material
+  suggests a different answer).
 It warns when the merged list has fewer than 10 or more than 60 areas.
 
 Exit status 1 if there is any problem. Warnings don't fail.
@@ -84,9 +90,36 @@ def under_none(notes):
     return ids, bad
 
 
+def pin_commits(d, platform):
+    """Read held files at the commits the platform's extract names, not at the repositories' HEAD."""
+    path = os.path.join(d, f"extract-{platform}.md")
+    if not os.path.exists(path):
+        return
+    text = open(path, encoding="utf-8").read()
+    for repo, env in (("observed-sh", "OBSERVED_SH_COMMIT"), ("observed-sa", "OBSERVED_SA_COMMIT")):
+        m = re.search(rf"{repo}@([0-9a-f]{{40}})", text)
+        if m:
+            os.environ[env] = m.group(1)
+
+
+def known_ids():
+    """Every concern id and citation id in the concern map, and every pilot statement id."""
+    ids = set()
+    for p in PLATFORMS:
+        for name, col in (("concerns.tsv", "concern_id"), ("citations.tsv", "cite_id")):
+            with open(os.path.join(CM, p, name), encoding="utf-8") as f:
+                ids.update(r[col] for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE))
+        pilot = os.path.join(SKM, "studies", "subjects", "S-01", p, "statements.tsv")
+        if os.path.exists(pilot):
+            with open(pilot, encoding="utf-8") as f:
+                ids.update(r["stmt_id"] for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE))
+    return ids
+
+
 def check_platform(platform, d):
     problems, warnings = [], []
     code = CODE[platform]
+    pin_commits(d, platform)
     names = own_names(platform)
     with open(os.path.join(CM, platform, "concerns.tsv"), encoding="utf-8") as f:
         con = {r["concern_id"] for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE)}
@@ -139,7 +172,7 @@ def check_platform(platform, d):
     return f"{platform}: {len(rows)} areas, {len(placed)} concerns placed, {len(none)} under none", problems, warnings
 
 
-def check_merged(d):
+def check_merged(d, cuts):
     problems, warnings = [], []
     platform_areas, platform_names = {}, {}
     for p in PLATFORMS:
@@ -149,6 +182,7 @@ def check_merged(d):
             continue
         for r in read(path, COLS, problems):
             platform_areas[r["area_id"]] = p
+        pin_commits(d, p)
         platform_names[p] = own_names(p)
     rows = read(os.path.join(d, "areas.tsv"), MERGED_COLS, problems)
     ids, member = set(), {}
@@ -194,6 +228,7 @@ def check_merged(d):
         problems.append("depth.tsv is missing")
     else:
         drows = read(depth_path, DEPTH_COLS, problems)
+        ids = known_ids()
         seen = {}
         for r in drows:
             key = (r.get("question"), r.get("platform"))
@@ -201,22 +236,30 @@ def check_merged(d):
                 problems.append(f"depth.tsv: unknown question or platform {key}")
             if key in seen:
                 problems.append(f"depth.tsv: {key} given twice")
-            seen[key] = r.get("depth")
-            if r.get("depth") not in ("in depth", "check", "none"):
-                problems.append(f"depth.tsv: {key} depth is '{r.get('depth')}'")
+            depth = r.get("depth")
+            seen[key] = depth
+            if depth not in ("in depth", "check", "none"):
+                problems.append(f"depth.tsv: {key} depth is '{depth}'")
+            if depth == "none" and not ((key[0] == "Q8" and "2" in cuts) or "3" in cuts):
+                problems.append(f"depth.tsv: {key} is 'none', which only cut 2 (for Q8) or cut 3 allows")
+            if key[0] == "Q8" and "2" in cuts and depth != "none":
+                problems.append(f"depth.tsv: {key} must be 'none' under cut 2, which records nothing for Q8")
             if not (r.get("why") or "").strip() or not (r.get("cites") or "").strip():
                 problems.append(f"depth.tsv: {key} needs both why and cites")
+            for c in split(r.get("cites")):
+                if c not in ids:
+                    problems.append(f"depth.tsv: {key} cites {c}, which isn't a concern, citation or pilot statement id")
         for q in QUESTIONS:
             ds = [seen.get((q, p)) for p in PLATFORMS]
             if None in ds:
                 problems.append(f"depth.tsv: {q} lacks a row for some platform")
-            elif "in depth" not in ds and set(ds) != {"none"}:
+            elif "in depth" not in ds and not (q == "Q8" and "2" in cuts):
                 problems.append(f"depth.tsv: {q} has no platform in depth")
     return f"merged: {len(rows)} areas over {len(platform_areas)} platform areas", problems, warnings
 
 
-def main(which, d):
-    head, problems, warnings = check_merged(d) if which == "merged" else check_platform(which, d)
+def main(which, d, cuts):
+    head, problems, warnings = check_merged(d, cuts) if which == "merged" else check_platform(which, d)
     print(f"{head}; {len(problems)} problems, {len(warnings)} warnings")
     for p in problems:
         print("  problem: " + p)
@@ -226,4 +269,10 @@ def main(which, d):
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else os.path.join(SKM, "studies", "proposals", "areas")))
+    args = sys.argv[1:]
+    cuts = set()
+    if "--cuts" in args:
+        i = args.index("--cuts")
+        cuts = {c.strip() for c in args[i + 1].split(",") if c.strip()}
+        del args[i:i + 2]
+    sys.exit(main(args[0], args[1] if len(args) > 1 else os.path.join(SKM, "studies", "proposals", "areas"), cuts))
