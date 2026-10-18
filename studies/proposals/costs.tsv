@@ -13,3 +13,4 @@ R1	review of the areas list	a5b8a8b2950f1c3ff	2026-10-18T21:29	2026-10-18T22:11	
 R2	re-check of the R3 briefs	a7540c280cead6255	2026-10-18T22:07	2026-10-18T22:32	36.4	max; the same agent, resumed; 84 requests
 R2	verification of the re-check's fixes	a657b904d1804a564	2026-10-18T22:36	2026-10-18T22:56	8.8	max
 R1	re-check of the areas list's fixes	a5b8a8b2950f1c3ff	2026-10-18T22:24	2026-10-18T22:58	34.0	max; the same agent, resumed
+R2	the sample, Q3 on Salla	a5c2909e43b0782a6	2026-10-18T23:02	2026-10-18T23:21	18.7	medium; 72 new statements, 3 not-found rows; 0.26 per new statement

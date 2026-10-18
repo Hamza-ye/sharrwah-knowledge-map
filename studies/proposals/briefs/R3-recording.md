@@ -103,6 +103,7 @@ Don't answer the question in your own words, compare your platform with any othe
 4. **Release marker.** When the source marks a stage of release for what the statement describes, such as beta or sunset, copy that word into `marker`, verbatim.
 5. **Lists.** Record a list in full, as one statement, such as the countries where something is offered.
    - The statement is the source's text from the list's first item to its last, on one line, keeping the source's own markers, such as `- `.
+   - Where the items aren't consecutive in the source, or the list is a table, record each run of consecutive items, or each row, as its own statement, so that each is verbatim in its source.
    - Cite each item, or each run of items. A quote may run over consecutive items of one list.
    - Cite the words that present the list as complete, if there are any.
    - A statement may run past 300 characters; only quotes are capped.
@@ -135,7 +136,7 @@ Don't answer the question in your own words, compare your platform with any othe
 - **Quotes are verbatim,** at most 300 characters, with no ellipses, and within one paragraph of the source. Arabic stays as written. The checker collapses whitespace, removes HTML tags and decodes entities, on both sides.
 - **A local source** is `<repository>@<commit>:<path>`, with the full commit from the table, or `woocommerce-11.2.1:<path>`.
   - A Help Center page or a help article is cited by the source, and for an article the locator, that `help_map.py` prints.
-  - A record in a fetch archive is cited by its archive path, with the offset as the locator.
+  - A record in a fetch archive is cited by its archive path, with the offset as the locator. A page that `held_index.py` shows held only in a fetch archive is cited this way, not by its URL.
 - **A captured page** is cited by its URL, with `from` = `held`.
 - **A live source** is the exact URL you fetched: the `.md` endpoint if that is what you read. The coordinator captures every cited live page after your run, and before any proposal cites it. Until then the checker reports its quotes as "pending capture".
 - **`locator`** is the heading, anchor or line.

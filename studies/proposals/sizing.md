@@ -119,3 +119,31 @@ These are estimates, from the measured share of about 0.2 tokens per agent token
 - **From the go to the proposals:** about 6 to 8 days. The founder's marking of the areas is the one wait inside that span, and the sample runs during it.
 - **Usage windows:** about four and a half windows' worth of work.
 - **The week's limit:** about 43 percent of this week's limit was used by the go, R0's work included. What is left of the plan needs about 58 percent more. So it will pass this week's limit before the reset on 24 October at 05:00 UTC, and pause there until the reset.
+
+## Re-sized at the sample, 18 October 2026
+
+The sample, Q3 on Salla, recorded 72 new statements and 3 not-found rows for 18.7 million tokens: **0.26 million per new statement**, against the planning rate of 0.4. It read only held material. The measured costs so far are in `costs.tsv`.
+
+**What is measured** (agents, millions):
+
+| Step | Expected | Measured |
+| --- | --- | --- |
+| R0 | 39 | 39.4 |
+| R1 | 122 | 103.0: the platform runs 15.2, the review brief's check 12.1, the review 41.7, its re-check 34.0 |
+| R2 | 30 | 78.6: the R3 briefs' check 14.7, re-check 36.4 and verification 8.8; the sample 18.7 |
+| **So far** | 191 | **221** |
+
+**What is re-sized** (agents, millions):
+- **In-depth recording (R3):** 21 runs now, since Zid is read in depth for Q6, with about 975 new statements expected. 20 are left.
+  - At the sample's 0.26 per new statement, with the expected counts, they come to about 240.
+  - The sample recorded 72 new statements where 45 were expected for Q3. If the other runs record as many more, they come to about 390. **I plan with 390.**
+- **Checking runs (R3):** 19 runs. The sample suggests a run's fixed reading (its selection, its copies' index and its help map) is larger than the 5 each planned. **I plan with about 9 each, 170 in all,** until the first checking run is measured.
+- **Re-runs at `high` (R3):** a tenth of these, about 56.
+- **R4, R5 and R6:** unchanged at 186, 389 and 206. R5's audits are sized from the pilot's audits, which the recording rate doesn't change.
+
+**The re-sized whole:**
+- **Agents:** 221 measured and about 1,395 to come: **about 1.62 billion,** under the budget of 2 billion.
+- **The coordinator's own:** 162 so far (65.5 in R0, 96.4 since), against 125 planned for R0 to R2. At that ratio the rest comes to about 165: **about 0.33 billion.**
+- **Together:** **about 1.95 billion,** about 69 percent of a week's limit.
+
+The lower case: with the expected counts of statements, and checking runs at the planned 5 each, the agents come to about 1.37 billion.
