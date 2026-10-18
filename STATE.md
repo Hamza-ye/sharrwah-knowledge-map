@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 20:10 UTC.
+**Updated:** 18 October 2026, 20:35 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -31,11 +31,19 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - the questions re-worded;
   - the plan change rewritten in full;
   - the sizing re-counted. It now comes to about 1.22 billion agent tokens at the founder's bar, about a fifth over the pilot, with cuts offered.
-- **Running: the re-check of the fixes,** by the same agent, resumed at 20:10 UTC. It appends `## Re-check` to `check-of-the-draft.md`.
+- **The re-check of the fixes** (`check-of-the-draft.md`, `## Re-check`, commit `fc98f4b`): 17 of the 19 must-fix findings fixed and 2 partly. Four small new must-fix findings, 41 to 44, and five optional ones.
+  - The re-check confirmed the recount from the agents' own transcripts.
+  - The coordinator fixed 41 to 48 (commit `2ab910c`), and re-ran the re-check's tests: 52 behave as expected. The one other case was written for the old numbering of the cuts, and passes once its cut is named.
+  - The check and re-check together cost 39 million tokens.
+- **The summary for the founder** is `studies/proposals/summary-for-the-founder.md`, sent in chat at 20:35 UTC. It asks for three answers:
+  1. the go on the plan change;
+  2. the old question lists, dropped or checked at the end;
+  3. the budget's cuts. The coordinator recommends cuts 1 and 2 now, about 1.18 billion agent tokens.
 - **Next:**
-  1. fix what the re-check finds;
-  2. bring the founder the plain summary their message asks for, with three answers: the go, the old question lists, and the budget's cuts;
-  3. nothing else runs before the founder's go, which puts the change into `PLAN.md` section 11.
+  1. wait for the founder's answers. Nothing else runs before the go;
+  2. on the go, enter the change in `PLAN.md` (Part 1 in section 11, Part 2's text in place) and record the answers in `founder-decisions.tsv`;
+  3. before R1's review runs, a quick separate check of its brief's last change (finding 44);
+  4. then step R1, from `studies/proposals/plan-change.md`.
 - **Waiting on the go:** Stage 1's fixes listed "before Stage 4", which the plan change replaces, and Q3's rows, which it proposes dropping.
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
@@ -325,15 +333,15 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (18 October 2026, 20:10 UTC):**
+**Agents running when last checked (18 October 2026, 20:35 UTC):**
 - **Running:**
-  - the re-frame's R0 check, `aaa90803d4fe66dba`, re-checking the fixes.
+  - none. The R0 check, `aaa90803d4fe66dba`, is done and resumable.
 - **Done, and resumable:**
   - the pilot: F `a349d058600a20b3a`; phase B `a9e10fcc19233f104`; phase C `adc0057894ed0a4d9`; phase D `a279f7e700e54e76b`; Salla's A2 `aa3fbffb0ec8e81cc` and A3 `a1fbfec156e90bb84`;
   - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
   - Stage 1 step 2b, by range: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
-**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. **Turned back on** on 18 October 2026 at 19:05 UTC, while the R0 check runs. Pause it again when no agent runs. Delete it when the founder asks.
+**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran; **paused** again since, while the go waits for the founder. Turn it back on when agents run again. Delete it when the founder asks.
 
 **To resume:**
 1. Commit whatever files are on disk, as an unchecked checkpoint.
