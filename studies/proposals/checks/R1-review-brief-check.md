@@ -253,6 +253,24 @@ I tested held sources with `git --git-dir ... cat-file`, from outside the observ
   - Re-size the review's first pass in `sizing.md` from what the brief names.
 - **Severity:** optional.
 
+### 13. The brief describes the copy as it was before it became two-phase
+
+- **Where:** the line for `questions` ("A script copies the statements under its concerns for each of these questions"); check 5's last line ("This decides what a script copies for each question"); PLAN.md section 2 (line 42), step R1 (item 3) and step R3 ("A script copies first").
+- **The problem:**
+  - Since `681df43`, `copy_statements.py` works in two phases:
+    - `candidates` lists the concerns of the areas a question draws on;
+    - the recording run marks each one `copy` or `set aside`, with a reason, and may `add` a concern from outside those areas;
+    - `copy` then copies only the concerns chosen.
+  - So tying an area to a question now decides which concerns a run starts from, not what is copied. Drawing on too much now costs each run a reason for every concern it sets aside. Missing an area means its concerns reach a run only if the run adds them.
+  - Check 5 weighs both kinds of error by what the brief says the tie decides, and the brief still describes a direct copy.
+  - PLAN.md says the same as the brief, and has no dated entry for the change.
+- **The evidence:** the docstring of `copy_statements.py` at `681df43`. The commit's message gives the reason: "Tying whole areas to a question would have copied over 1,000 statements for several runs".
+- **The fix:**
+  - Re-word the line for `questions`: "A script lists its concerns as candidates for each of these questions. The recording run copies, sets aside or adds."
+  - Re-word check 5's last line to match.
+  - Give PLAN.md its dated entry in section 11, and change sections 2 and R1 and R3 to say the same.
+- **Severity:** optional. The review can be done either way, but check 5 is judged against the wrong consequence.
+
 ## What a run will read
 
 | What the brief names | Size | Note |
@@ -275,10 +293,6 @@ The sizes are taken at `c7ce5db`.
 
 The brief and the checker agree on everything that changed since the re-check. The brief no longer allows a "none" depth. The checker, run as the brief runs it (without `--cuts`), rejects one, and my tests of the committed checker confirm it.
 
-**Also worth taking now, at a line each:** findings 4, 5 and 6. Finding 12 changes what the review costs more than what it finds. Its reading guidance would keep the first pass near the sizing.
-
-**One condition.** The message of commit `c7ce5db` says area-level copies are too broad, so the copy script "becomes two-phase next". If that change lands before the review runs, then:
-- the brief's line for `questions` ("A script copies the statements under its concerns") and check 5's last line should say what tying an area to a question then decides;
-- PLAN.md's steps R1 and R3, which say the same, need their dated entry in section 11.
+**Also worth taking now, at a line each:** findings 4, 5, 6 and 13. Finding 13 matters because the copy changed while this check ran, and check 5 should be judged by what the tie now decides. Finding 12 changes what the review costs more than what it finds. Its reading guidance would keep the first pass near the sizing.
 
 The fixes are small, so a separate check can confirm them from their diff.
