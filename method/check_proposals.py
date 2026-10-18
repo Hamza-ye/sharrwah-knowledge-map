@@ -1,20 +1,25 @@
 """Check the proposals' files mechanically (PLAN.md section 3, the checker).
 
 Usage:
-  python3 -I method/check_proposals.py records QUESTION PLATFORM [--dir DIR] [CAPTURE_RUN ...]
+  python3 -I method/check_proposals.py records QUESTION PLATFORM [--dir DIR] [--check] [CAPTURE_RUN ...]
 
 `records` checks one recording run's folder, studies/proposals/records/<QUESTION>/<platform>/ (step R3):
-- selection.tsv: each row's action is copy, set aside or add, and a set aside or add row gives its reason;
-- the copies: each row of copied.tsv, copied-pilot.tsv and copied-gaps.tsv is unchanged from the source line it
-  names; copied.tsv holds every statement of the concerns chosen, and no other; each row of copied-citations.tsv is
-  unchanged from its source's row;
+- selection.tsv: each row's action is copy, set aside or add; a set aside or add row gives its reason; every
+  candidate concern a fresh `copy_statements.py candidates` run gives is in it;
+- the copies (copied.tsv, copied-gaps.tsv and, for Q5, copied-pilot.tsv, copied-pilot-gaps.tsv and
+  copied-pilot-absences.tsv): each row, after its first three columns, is its source line unchanged, byte for byte;
+  each copy_id names that line; each file holds every row of the concerns chosen, and no other; each row of
+  copied-citations.tsv is its source's row unchanged, and every citation the copies cite is there;
 - statements.tsv and citations.tsv: their columns; ids of the form Q-XX-001 and Q-XX-C001, each used once; each
-  cite_id known; bears_on numbers; `from` held or live; each statement found verbatim in its first cited source,
-  and each quote in its own; every citation used;
+  cite_id known; bears_on numbers among the question's sentences (studies/proposals/questions-for-agents.md);
+  `from` held or live; each statement found verbatim in its first cited source, and each quote in its own; every
+  citation used;
 - not-found.tsv: its kinds; a "not in what was read" that names what was read and shows the corpus search; an
   absent that cites its list and the words that make it complete; who_can; no route to the founder for a page that
   is held and readable;
-- account.md: each id it cites exists in the folder, and each point cites at least one.
+- account.md: each section is headed by a sentence's number, as `## [2]`; each point (a list item or a paragraph)
+  cites at least one id, and each id it cites exists in the folder. With --check (a checking run), each point also
+  starts with its label: differs, goes beyond, the same or not in what was read.
 
 A live source is checked against the capture runs named, and in this repository's capture runs. Before the
 coordinator captures it, a quote from it is "pending capture", which doesn't fail. Prints each problem, and exits 1
@@ -25,6 +30,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quote_check import Sources
 from source_kinds import kind_of
 from held_index import Held, describe, names_a_source, urls_in
+from copy_statements import COPIES, LEAD, candidates_for, copy_id
+from agent_questions import sentences
 
 csv.field_size_limit(10**9)
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -41,6 +48,7 @@ HEAD = {
                       "complete_cite_ids", "who_can", "route"],
 }
 ACCESS = {"md", "raw", "rendered", "local"}
+LABELS = ("differs", "goes beyond", "the same", "not in what was read")
 KINDS = {"not in what was read", "absent"}
 WHO = {"agent", "founder", "either"}
 issues = []
@@ -75,12 +83,10 @@ def ids(s):
     return [x for x in re.split(r"[,\s;]+", s or "") if x]
 
 
-def source_line(rel, line):
-    with open(os.path.join(SKM, rel), encoding="utf-8", newline="") as f:
-        for n, text in enumerate(f, start=1):
-            if n == line:
-                return text.rstrip("\n").rstrip("\r")
-    return None
+def raw_lines(path):
+    """The lines of a file as written: no field stripped, only the line ending removed."""
+    with open(path, encoding="utf-8", newline="") as f:
+        return [l.rstrip("\n").rstrip("\r") for l in f]
 
 
 def check_copies(d, q, platform, code):
@@ -88,53 +94,102 @@ def check_copies(d, q, platform, code):
     if not sel:
         err("selection.tsv", "", "missing or empty: run copy_statements.py candidates, then set each action")
         return set()
-    keep = set()
+    keep, listed, pilot = set(), {}, False
     for n, r in sel:
+        c = r.get("concern_id")
+        if c in listed:
+            err("selection.tsv", f"line {n}", f"{c} is listed twice, first at line {listed[c]}")
+        listed.setdefault(c, n)
         if r.get("action") not in ("copy", "set aside", "add"):
             err("selection.tsv", f"line {n}", f"action '{r.get('action')}' is not copy, set aside or add")
         if r.get("action") in ("set aside", "add") and not r.get("reason"):
             err("selection.tsv", f"line {n}", f"a '{r['action']}' row needs its reason")
-        if r.get("action") in ("copy", "add") and r.get("concern_id") != "S-01":
-            keep.add(r["concern_id"])
-    copy_ids = set()
-    for name in ("copied.tsv", "copied-pilot.tsv", "copied-gaps.tsv", "copied-citations.tsv"):
-        h, rows = read(os.path.join(d, name))
-        if h is None:
-            if name != "copied-pilot.tsv":
-                err(name, "", "missing: run copy_statements.py copy after setting the selection")
+        if r.get("action") in ("copy", "add") and c != "S-01":
+            keep.add(c)
+        if c == "S-01" and r.get("action") == "copy":
+            pilot = True
+    for c, _ in candidates_for(q, platform):
+        if c not in listed:
+            err("selection.tsv", c, "a candidate concern is missing: set it aside with a reason instead of deleting it")
+    copy_ids, cited = set(), {}
+    for name, (letter, base, fname) in COPIES.items():
+        path = os.path.join(d, name)
+        from_pilot = name.startswith("copied-pilot")
+        if from_pilot and not pilot:
+            if os.path.exists(path):
+                err(name, "", "the selection doesn't copy S-01: run the copy again")
             continue
-        if name == "copied-citations.tsv":
-            by_file = {}
-            for n, r in rows:
-                by_file.setdefault(r["source_file"], {})
-            for f in by_file:
-                _, src = read(os.path.join(SKM, f))
-                by_file[f] = {x["cite_id"]: x for _, x in src}
-            for n, r in rows:
-                orig = by_file[r["source_file"]].get(r["cite_id"])
-                if orig is None or any((orig.get(k) or "") != (r.get(k) or "") for k in orig):
-                    err(name, r["cite_id"], "not unchanged from its source's row")
+        if not os.path.exists(path):
+            err(name, "", "missing: run copy_statements.py copy after setting the selection")
             continue
-        start = 3 if name != "copied-gaps.tsv" else 2
-        for n, r in rows:
-            line = source_line(r["source_file"], int(r["source_line"]))
-            row_text = "\t".join(list(r.values())[start:])
-            if line is None or line.strip() != row_text.strip():
-                err(name, r.get("copy_id") or f"line {n}", f"not unchanged from {r['source_file']} line {r['source_line']}")
-            if name == "copied.tsv" and r["concern_id"] not in keep:
-                err(name, r["copy_id"], f"{r['concern_id']} isn't chosen in selection.tsv")
-            if "copy_id" in r:
-                copy_ids.add(r["copy_id"])
-    _, st = read(os.path.join(SKM, "studies", "concern-map", "platforms", platform, "statements.tsv"))
-    want = sum(1 for _, r in st if r["concern_id"] in keep)
-    _, got = read(os.path.join(d, "copied.tsv"))
-    if got and len(got) != want:
-        err("copied.tsv", "", f"holds {len(got)} statements; the concerns chosen hold {want}: run the copy again")
+        src_path = os.path.join(base, platform, fname)
+        src_rel = os.path.relpath(src_path, SKM)
+        src = raw_lines(src_path)
+        lines = raw_lines(path)
+        head = lines[0].split("\t") if lines else []
+        if head != LEAD + src[0].split("\t"):
+            err(name, "", f"header isn't {LEAD} and then {src_rel}'s header")
+            continue
+        got = set()
+        for n, raw in enumerate(lines[1:], start=2):
+            if not raw.strip():
+                continue
+            f = raw.split("\t")
+            cid = f[0]
+            try:
+                line = int(f[2])
+            except ValueError:
+                err(name, cid or f"line {n}", f"source_line '{f[2]}' isn't a line number")
+                continue
+            if f[1] != src_rel:
+                err(name, cid, f"source_file is {f[1]}, not {src_rel}")
+            if cid != copy_id(q, platform, letter, line):
+                err(name, cid, f"copy_id doesn't name its source line: it is {copy_id(q, platform, letter, line)}")
+            if not 2 <= line <= len(src) or "\t".join(f[3:]) != src[line - 1]:
+                err(name, cid, f"not unchanged from {src_rel} line {line}")
+                continue
+            got.add(line)
+            copy_ids.add(cid)
+            row = dict(zip(head, f))
+            if not from_pilot and row["concern_id"] not in keep:
+                err(name, cid, f"{row['concern_id']} isn't chosen in selection.tsv")
+            for col in ("cite_ids", "list_cite_ids", "complete_cite_ids"):
+                for c in ids(row.get(col)):
+                    cited.setdefault(os.path.relpath(os.path.join(base, platform, "citations.tsv"), SKM), set()).add(c)
+        want = set()
+        for n, raw in enumerate(src[1:], start=2):
+            if raw.strip() and (from_pilot or raw.split("\t")[0] in keep):
+                want.add(n)
+        if want - got:
+            err(name, "", f"{len(want - got)} rows of the concerns chosen are missing, such as {src_rel} line "
+                          f"{min(want - got)}: run the copy again")
+    path = os.path.join(d, "copied-citations.tsv")
+    if not os.path.exists(path):
+        err("copied-citations.tsv", "", "missing: run copy_statements.py copy after setting the selection")
+        return copy_ids
+    srcs, have = {}, {}
+    for n, raw in enumerate(raw_lines(path)[1:], start=2):
+        if not raw.strip():
+            continue
+        f = raw.split("\t")
+        if f[0] not in srcs:
+            if not os.path.exists(os.path.join(SKM, f[0])):
+                err("copied-citations.tsv", f"line {n}", f"source_file {f[0]} doesn't exist")
+                continue
+            srcs[f[0]] = {l.split("\t")[0]: l for l in raw_lines(os.path.join(SKM, f[0]))[1:] if l.strip()}
+        have.setdefault(f[0], set()).add(f[1] if len(f) > 1 else "")
+        if srcs[f[0]].get(f[1] if len(f) > 1 else "") != "\t".join(f[1:]):
+            err("copied-citations.tsv", f[1] if len(f) > 1 else f"line {n}", "not unchanged from its source's row")
+    for sf, cs in cited.items():
+        missing = sorted(cs - have.get(sf, set()))
+        if missing:
+            err("copied-citations.tsv", "", f"{len(missing)} citations the copies cite are missing, such as {missing[0]}")
     return copy_ids
 
 
 def check_own(d, q, code, src, held):
     pre = f"{q}-{code}"
+    nsent = len(sentences(q))
     _, cits = read(os.path.join(d, "citations.tsv"), HEAD["citations.tsv"])
     _, sts = read(os.path.join(d, "statements.tsv"), HEAD["statements.tsv"])
     _, nfs = read(os.path.join(d, "not-found.tsv"), HEAD["not-found.tsv"])
@@ -153,8 +208,8 @@ def check_own(d, q, code, src, held):
         if sid in own:
             err("statements.tsv", sid, "stmt_id used twice")
         own.add(sid)
-        if not r["bears_on"] or not all(x.isdigit() for x in ids(r["bears_on"])):
-            err("statements.tsv", sid, "bears_on gives the question's sentence numbers")
+        if not r["bears_on"] or not all(x.isdigit() and 1 <= int(x) <= nsent for x in ids(r["bears_on"])):
+            err("statements.tsv", sid, f"bears_on gives the question's sentence numbers, 1 to {nsent}")
         if r["from"] not in ("held", "live"):
             err("statements.tsv", sid, f"from '{r['from']}' is neither held nor live")
         cs = ids(r["cite_ids"])
@@ -182,8 +237,8 @@ def check_own(d, q, code, src, held):
             err("not-found.tsv", nid, f"kind '{r['kind']}' is not one of {sorted(KINDS)}")
         if r["who_can"] not in WHO:
             err("not-found.tsv", nid, f"who_can '{r['who_can']}' is not one of {sorted(WHO)}")
-        if not r["bears_on"] or not all(x.isdigit() for x in ids(r["bears_on"])):
-            err("not-found.tsv", nid, "bears_on gives the question's sentence numbers")
+        if not r["bears_on"] or not all(x.isdigit() and 1 <= int(x) <= nsent for x in ids(r["bears_on"])):
+            err("not-found.tsv", nid, f"bears_on gives the question's sentence numbers, 1 to {nsent}")
         if not r["read"] or not names_a_source(r["read"]):
             err("not-found.tsv", nid, "read names what was read: held paths at a commit, live URLs with a date")
         if r["kind"] == "not in what was read" and "corpus_search.py" not in r["searched"]:
@@ -224,24 +279,48 @@ def check_own(d, q, code, src, held):
     return own
 
 
-def check_account(d, q, code, known):
+def points(text):
+    """(line, text) of each point of an account: each list item, with its continuation lines, and each paragraph.
+    Headings and blank lines separate points."""
+    out, cur = [], None
+    for n, line in enumerate(text.splitlines(), start=1):
+        if not line.strip() or line.lstrip().startswith("#"):
+            cur = None
+            continue
+        if re.match(r"^\s*([-*]|\d+[.)])\s+\S", line) or cur is None:
+            cur = [n, line.strip()]
+            out.append(cur)
+        else:
+            cur[1] += " " + line.strip()
+    return [tuple(p) for p in out]
+
+
+def check_account(d, q, code, known, checking=False):
     path = os.path.join(d, "account.md")
     if not os.path.exists(path):
         err("account.md", "", "missing")
         return
     text = open(path, encoding="utf-8").read()
-    pat = re.compile(rf"\b{q}-{code}-(?:K\d{{4}}|P\d{{4}}|N\d{{2}}|\d{{3}})\b")
+    pat = re.compile(rf"\b{q}-{code}-(?:[KPGHA]\d{{4}}|N\d{{2}}|\d{{3}})\b")
     for c in sorted(set(pat.findall(text)) - known):
         err("account.md", c, "cites an id the folder doesn't hold")
+    nsent = len(sentences(q))
     for n, line in enumerate(text.splitlines(), start=1):
-        if re.match(r"^\s*[-*]\s+\S", line) and not pat.search(line):
-            err("account.md", f"line {n}", "a point that cites no id", "warning")
+        if line.startswith("##"):
+            m = re.match(r"^## \[(\d+)\]\s*$", line)
+            if not m or not 1 <= int(m.group(1)) <= nsent:
+                err("account.md", f"line {n}", f"a section is headed by one sentence's number, from [1] to [{nsent}], as ## [2]")
+    for n, p in points(text):
+        if not pat.search(p):
+            err("account.md", f"line {n}", "a point that cites no id of this folder")
+        if checking and not re.match(r"^([-*]|\d+[.)])?\s*\**(" + "|".join(LABELS) + r")\b", p):
+            err("account.md", f"line {n}", f"a point starts with its label: {', '.join(LABELS)}")
     words = len(re.findall(r"\w+", text))
-    if words > 1800:
+    if words > (900 if checking else 1800):
         err("account.md", "", f"{words} words, past the brief's length", "warning")
 
 
-def records(q, platform, captures, d=None):
+def records(q, platform, captures, d=None, checking=False):
     code = CODE[platform]
     d = d or os.path.join(SKM, "studies", "proposals", "records", q, platform)
     if not os.path.isdir(d):
@@ -251,7 +330,7 @@ def records(q, platform, captures, d=None):
     held = Held(ROOTS, caps)
     copies = check_copies(d, q, platform, code)
     own = check_own(d, q, code, src, held)
-    check_account(d, q, code, copies | own)
+    check_account(d, q, code, copies | own, checking)
 
 
 def main(argv):
@@ -261,9 +340,11 @@ def main(argv):
             i = rest.index("--dir")
             d = rest[i + 1]
             del rest[i:i + 2]
-        records(argv[1], argv[2], rest, d)
+        checking = "--check" in rest
+        rest = [x for x in rest if x != "--check"]
+        records(argv[1], argv[2], rest, d, checking)
     else:
-        sys.exit("usage: check_proposals.py records QUESTION PLATFORM [--dir DIR] [CAPTURE_RUN ...]")
+        sys.exit("usage: check_proposals.py records QUESTION PLATFORM [--dir DIR] [--check] [CAPTURE_RUN ...]")
     levels = {}
     for level, f, i, x in issues:
         levels[level] = levels.get(level, 0) + 1

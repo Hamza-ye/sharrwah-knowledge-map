@@ -2,6 +2,7 @@
 
 Usage:
   python3 -I method/copy_statements.py candidates QUESTION PLATFORM [OUT_DIR]
+  python3 -I method/copy_statements.py show PLATFORM CONCERN_ID [CONCERN_ID ...]
   python3 -I method/copy_statements.py copy QUESTION PLATFORM [OUT_DIR]
   python3 -I method/copy_statements.py --counts
 
@@ -10,7 +11,10 @@ platform, those merged areas hold some of its platform areas (areas-<platform>.t
 
 `candidates` writes OUT_DIR/selection.tsv: one row per concern of those areas, with its terms, the concern map's
 description, how many statements and gaps it holds, and its area, and with action `candidate`. For Q5 it adds a row
-`S-01` with action `copy`: the pilot's statements, reused for the money paragraph of Q5.
+`S-01` with action `copy`: the pilot's statements, gaps and absences, reused for the money paragraph of Q5.
+
+`show` prints the statements of the concerns named: concern_id, line (in the concern map's statements.tsv),
+identifier and statement. A run uses it to judge a concern whose terms don't decide it.
 
 The recording run then sets each row's action:
 - `copy`: the concern bears on the question;
@@ -18,12 +22,15 @@ The recording run then sets each row's action:
 - `add`: a concern of the same platform outside those areas that bears on the question, with its reason.
 
 `copy` reads selection.tsv, refuses while a row is still `candidate` or a `set aside` or `add` row has no reason,
-and writes, unchanged:
-- copied.tsv: copy_id, source_file, source_line, then every column of the concern map's statement row, for each
-  statement under a `copy` or `add` concern;
-- copied-gaps.tsv: source_file, source_line, then every column of the concern map's gaps under those concerns;
-- copied-pilot.tsv (Q5 only): copy_id, source_file, source_line, then every column of the pilot's statement row;
-- copied-citations.tsv: source_file, then every column of each citation the copies cite.
+and writes, unchanged, each row after three columns: copy_id, source_file, source_line. A copy's id is its source
+line, so it names the same row however the selection changes: Q2-SA-K1553 is line 1553 of Salla's statements.tsv.
+- copied.tsv (K ids): every statement of the concern map under a `copy` or `add` concern;
+- copied-gaps.tsv (G ids): every gap of the concern map under those concerns;
+- for Q5 only, the pilot's: copied-pilot.tsv (P ids), its statements; copied-pilot-gaps.tsv (H ids), its gaps;
+  copied-pilot-absences.tsv (A ids), its absences;
+- copied-citations.tsv: source_file, then every column of each citation the copies cite;
+- two views, to read instead of the copies: copied-index.tsv (copy_id, concern_id, identifier) and copied-view.tsv
+  (copy_id, identifier, statement, scope), for every K and P copy. The pilot's concern_id is S-01.
 
 `--counts` prints, for every question and platform, the candidate concerns and the statements and gaps they hold.
 
@@ -42,6 +49,15 @@ CODE = {"shopify": "SH", "salla": "SA", "woocommerce": "WC", "zid": "ZD", "bigco
 QUESTIONS = [f"Q{i}" for i in range(1, 9)]
 PILOT_QUESTION = "Q5"
 SEL = ["concern_id", "terms", "description", "statements", "gaps", "area_id", "action", "reason"]
+LEAD = ["copy_id", "source_file", "source_line"]
+# copied file -> (id letter, where its rows come from: concern map or pilot, the source file's name)
+COPIES = {
+    "copied.tsv": ("K", CM, "statements.tsv"),
+    "copied-gaps.tsv": ("G", CM, "gaps.tsv"),
+    "copied-pilot.tsv": ("P", PILOT, "statements.tsv"),
+    "copied-pilot-gaps.tsv": ("H", PILOT, "gaps.tsv"),
+    "copied-pilot-absences.tsv": ("A", PILOT, "absences.tsv"),
+}
 
 
 def read(path):
@@ -57,6 +73,10 @@ def split(v):
 
 def rel(path):
     return os.path.relpath(path, SKM)
+
+
+def copy_id(question, platform, letter, line):
+    return f"{question}-{CODE[platform]}-{letter}{line:04d}"
 
 
 def write(path, header, rows):
@@ -102,14 +122,39 @@ def candidates(question, platform, out):
              "candidate", ""] for c, a in candidates_for(question, platform)]
     if question == PILOT_QUESTION:
         n = len(read(os.path.join(PILOT, platform, "statements.tsv"))[1])
-        rows.append(["S-01", "", "the pilot's statements on who holds the merchant's funds", str(n), "", "", "copy",
+        rows.append(["S-01", "", "the pilot's statements, gaps and absences on who holds the merchant's funds", str(n),
+                     str(len(read(os.path.join(PILOT, platform, "gaps.tsv"))[1])), "", "copy",
                      "reused for the money paragraph of Q5"])
     write(os.path.join(out, "selection.tsv"), SEL, rows)
     return len(rows)
 
 
+def show(platform, concern_ids):
+    _, con = read(os.path.join(CM, platform, "concerns.tsv"))
+    known = {r["concern_id"] for _, r in con}
+    unknown = [c for c in concern_ids if c not in known]
+    if unknown:
+        sys.exit(f"not concerns of {platform}: {', '.join(unknown)}")
+    _, st = read(os.path.join(CM, platform, "statements.tsv"))
+    print("concern_id\tline\tidentifier\tstatement")
+    for c in concern_ids:
+        for line, r in st:
+            if r["concern_id"] == c:
+                print(f"{c}\t{line}\t{r['identifier'] or ''}\t{r['statement'] or ''}")
+
+
+def copy_rows(question, platform, name, keep=None):
+    """(header, rows) of a copied file: each source row, unchanged, after its copy id, source file and line. The
+    concern map's rows are those of the concerns in keep; the pilot's are all."""
+    letter, base, fname = COPIES[name]
+    path = os.path.join(base, platform, fname)
+    head, rows = read(path)
+    out = [[copy_id(question, platform, letter, line), rel(path), str(line)] + [r[c] or "" for c in head]
+           for line, r in rows if keep is None or r["concern_id"] in keep]
+    return LEAD + head, out
+
+
 def copy(question, platform, out):
-    code = CODE[platform]
     _, sel = read(os.path.join(out, "selection.tsv"))
     problems = []
     for line, r in sel:
@@ -123,37 +168,38 @@ def copy(question, platform, out):
     problems += [f"selection.tsv: {c} isn't a concern of {platform}" for c in sorted(keep - known)]
     if problems:
         sys.exit("\n".join(problems))
-    st_path = os.path.join(CM, platform, "statements.tsv")
-    st_head, st = read(st_path)
-    copied, cites = [], []
-    for line, r in st:
-        if r["concern_id"] in keep:
-            copied.append([f"{question}-{code}-K{len(copied) + 1:04d}", rel(st_path), str(line)] + [r[c] or "" for c in st_head])
-            cites.extend(c for c in split(r["cite_ids"]) if c not in cites)
-    write(os.path.join(out, "copied.tsv"), ["copy_id", "source_file", "source_line"] + st_head, copied)
-    gp_path = os.path.join(CM, platform, "gaps.tsv")
-    gp_head, gp = read(gp_path)
-    gaps = [[rel(gp_path), str(line)] + [r[c] or "" for c in gp_head] for line, r in gp if r["concern_id"] in keep]
-    write(os.path.join(out, "copied-gaps.tsv"), ["source_file", "source_line"] + gp_head, gaps)
-    sources = [(os.path.join(CM, platform, "citations.tsv"), cites)]
-    pilot = []
-    if any(r["concern_id"] == "S-01" and r["action"] == "copy" for _, r in sel):
-        pst_path = os.path.join(PILOT, platform, "statements.tsv")
-        pst_head, pst = read(pst_path)
-        pcites = []
-        for line, r in pst:
-            pilot.append([f"{question}-{code}-P{len(pilot) + 1:04d}", rel(pst_path), str(line)] + [r[c] or "" for c in pst_head])
-            pcites.extend(c for c in split(r["cite_ids"]) if c not in pcites)
-        write(os.path.join(out, "copied-pilot.tsv"), ["copy_id", "source_file", "source_line"] + pst_head, pilot)
-        sources.append((os.path.join(PILOT, platform, "citations.tsv"), pcites))
+    pilot = any(r["concern_id"] == "S-01" and r["action"] == "copy" for _, r in sel)
+    names = ["copied.tsv", "copied-gaps.tsv"] + (["copied-pilot.tsv", "copied-pilot-gaps.tsv",
+                                                  "copied-pilot-absences.tsv"] if pilot else [])
+    files, index, view, wanted = {}, [], [], {}
+    for name in names:
+        head, rows = copy_rows(question, platform, name, None if name.startswith("copied-pilot") else keep)
+        files[name] = rows
+        write(os.path.join(out, name), head, rows)
+        src = os.path.join(COPIES[name][1], platform, "citations.tsv")
+        for r in rows:
+            d = dict(zip(head, r))
+            for col in ("cite_ids", "list_cite_ids", "complete_cite_ids"):
+                for c in split(d.get(col)):
+                    wanted.setdefault(src, [])
+                    if c not in wanted[src]:
+                        wanted[src].append(c)
+            if name in ("copied.tsv", "copied-pilot.tsv"):
+                index.append([d["copy_id"], d.get("concern_id") or "S-01", d["identifier"]])
+                view.append([d["copy_id"], d["identifier"], d["statement"], d["scope"]])
+    for name in [n for n in COPIES if n.startswith("copied-pilot") and n not in names]:
+        if os.path.exists(os.path.join(out, name)):
+            os.remove(os.path.join(out, name))          # a pilot copy left from an earlier selection
     out_cites, cit_head = [], None
-    for path, wanted in sources:
+    for path, ids in wanted.items():
         head, rows = read(path)
         cit_head = cit_head or head
         by = {r["cite_id"]: r for _, r in rows}
-        out_cites.extend([rel(path)] + [by[c][h] or "" for h in cit_head] for c in wanted if c in by)
+        out_cites.extend([rel(path)] + [by[c][h] or "" for h in cit_head] for c in ids if c in by)
     write(os.path.join(out, "copied-citations.tsv"), ["source_file"] + (cit_head or []), out_cites)
-    return len(keep), len(copied), len(gaps), len(pilot)
+    write(os.path.join(out, "copied-index.tsv"), ["copy_id", "concern_id", "identifier"], index)
+    write(os.path.join(out, "copied-view.tsv"), ["copy_id", "identifier", "statement", "scope"], view)
+    return {n: len(r) for n, r in files.items()}, len(keep)
 
 
 def counts():
@@ -170,11 +216,16 @@ if __name__ == "__main__":
     if args[:1] == ["--counts"]:
         counts()
         sys.exit(0)
+    if len(args) >= 3 and args[0] == "show" and args[1] in PLATFORMS:
+        show(args[1], args[2:])
+        sys.exit(0)
     if len(args) < 3 or args[0] not in ("candidates", "copy") or args[1] not in QUESTIONS or args[2] not in PLATFORMS:
-        sys.exit("usage: copy_statements.py candidates|copy QUESTION PLATFORM [OUT_DIR], or --counts")
+        sys.exit("usage: copy_statements.py candidates|copy QUESTION PLATFORM [OUT_DIR], "
+                 "show PLATFORM CONCERN_ID [CONCERN_ID ...], or --counts")
     phase, q, p = args[:3]
     out = args[3] if len(args) > 3 else os.path.join(SKM, "studies", "proposals", "records", q, p)
     if phase == "candidates":
         print(f"{q} {p}: {candidates(q, p, out)} rows written to {rel(out)}/selection.tsv")
     else:
-        print(f"{q} {p}: %d concerns, %d statements, %d gaps and %d pilot statements copied to {rel(out)}" % copy(q, p, out))
+        n, k = copy(q, p, out)
+        print(f"{q} {p}: {k} concerns; " + ", ".join(f"{v} rows to {name}" for name, v in n.items()) + f", in {rel(out)}")

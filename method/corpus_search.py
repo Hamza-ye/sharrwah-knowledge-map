@@ -6,14 +6,16 @@
 #
 # The observed repositories' fetch archives (WARC) are searched too. Their text is extracted once per commit into a
 # cache outside the repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
-# So are Shopify's Help Center pages held in observed-sh (English as Markdown, Arabic as content HTML), this
-# repository's capture runs, and the founder's saves for the platform
-# (evidence/product-class/blocked-evidence-founder/<platform>/: browser saves, and PDFs through pdftotext).
-# An address held more than once shows its fullest copy.
+# So are Shopify's Help Center pages held in observed-sh (English as Markdown, Arabic as content HTML), WooCommerce's
+# release files (its code, and its language template i18n/languages/woocommerce.pot), this repository's capture
+# runs, and the founder's saves for the platform (evidence/product-class/blocked-evidence-founder/<platform>/:
+# browser saves, and PDFs through pdftotext). An address held more than once shows its fullest copy.
 #
-# Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N]
+# Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
-#   (every TERM with --all). At most N documents per corpus are listed (default 40).
+#   (every TERM with --all) and, with --with, also any of the terms after --with: such as a thing's names, with the
+#   places or plans it may hold for. At most N documents per corpus are listed (default 40).
+#   Snippets are folded for matching (case, diacritics, letter forms): never quote one; quote the document.
 import csv, glob, gzip, json, os, re, subprocess, sys, unicodedata, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quote_check import norm, HARAKAT, html_text
@@ -42,6 +44,10 @@ HELD = {  # text corpora held in the observed repositories: (repository, path gl
                 ("observed-sh", "structures/shopify/help-center/help.shopify.com@en-ar/content.html/ar/**/*.html", "help-html")],
 }
 HELP_ROOT = "structures/shopify/help-center/help.shopify.com@en-ar/"
+RELEASES = {  # release files held outside the repositories: platform -> (citation prefix, folder)
+    "woocommerce": ("woocommerce-11.2.1", os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce")),
+}
+RELEASE_TEXT = re.compile(r"\.(php|js|jsx|ts|tsx|json|txt|html|md|pot|csv)$")
 
 def help_url(name):
     """The Help Center address of a held page: md/en/a/b.md -> https://help.shopify.com/en/a/b."""
@@ -190,18 +196,27 @@ def documents(platform):
                         continue
                     yield (f"{repo}:{name}", f"{repo}@{commit}:{name} position {o.get('position')}",
                            o.get("url", ""), titles.get(o.get("url", ""), ""), o.get("text", ""))
-            elif kind == "lines":
+            elif kind == "lines":            # a corpus is the whole pattern, so that --max caps it, not each file
                 for i, line in enumerate(raw.splitlines(), start=1):
-                    yield (f"{repo}:{name}", f"{repo}@{commit}:{name} line {i}", "", "", line)
+                    yield (f"{repo}:{pattern}", f"{repo}@{commit}:{name} line {i}", "", "", line)
             elif kind == "help-md":
                 title = next((l[2:].strip() for l in raw.splitlines() if l.startswith("# ")), "")
                 yield ("observed-sh: Help Center, en", f"{repo}@{commit}:{name}", help_url(name), title, raw)
             elif kind == "help-html":
                 yield ("observed-sh: Help Center, ar", f"{repo}@{commit}:{name}", help_url(name), "", html_text(raw))
             else:
-                yield (f"{repo}:{name}", f"{repo}@{commit}:{name}", "", "", raw)
+                yield (f"{repo}:{pattern}", f"{repo}@{commit}:{name}", "", "", raw)
     if platform in ARCHIVES:
         yield from archive_documents(ARCHIVES[platform])
+    if platform in RELEASES:              # read as files, never run
+        prefix, root = RELEASES[platform]
+        for d, dirs, files in os.walk(root):
+            dirs.sort()
+            for fn in sorted(files):
+                if RELEASE_TEXT.search(fn):
+                    path = os.path.join(d, fn)
+                    yield (f"{prefix} release", f"{prefix}:{os.path.relpath(path, root)}", "", "",
+                           open(path, encoding="utf-8", errors="replace").read())
     head = subprocess.run(["git", "-C", SKM, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
     for mf in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/runs/*/manifest.tsv"))):
         run = os.path.dirname(mf)
@@ -233,43 +248,71 @@ def documents(platform):
         yield ("founder's saves", f"sharrwah-knowledge-map@{head}:{os.path.relpath(path, SKM)}", "",
                os.path.basename(path), text)
 
-def main():
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    every = "--all" in sys.argv
-    cap = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 40
-    if "--max" in sys.argv:
-        args.remove(str(cap))
-    if not args or args[0] not in HOSTS:
-        sys.exit(f"usage: corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N]; PLATFORM is one of {sorted(HOSTS)}")
-    platform, terms = args[0], args[1:]
+def parse(argv):
+    """(platform, terms, --with terms, --all, --max) from the command line."""
+    every, cap, terms, also, into = False, 40, [], [], None
+    i = 0
+    while i < len(argv):
+        a = argv[i]
+        if a == "--all":
+            every = True
+        elif a == "--max":
+            cap = int(argv[i + 1])
+            i += 1
+        elif a == "--with":
+            into = also
+        elif a.startswith("--"):
+            sys.exit(f"unknown option {a}")
+        else:
+            (into if into is not None else terms).append(a)
+        i += 1
+    if not terms or terms[0] not in HOSTS or len(terms) < 2:
+        sys.exit("usage: corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]; "
+                 f"PLATFORM is one of {sorted(HOSTS)}")
+    return terms[0], terms[1:], also, every, cap
+
+def matcher(terms):
+    """The folded terms, and a test of which of them a folded text holds. A term in Latin letters matches whole
+    words; an Arabic term matches inside words, which carry prefixes."""
     want = [fold(t) for t in terms]
-    # A term in Latin letters matches whole words; an Arabic term matches inside words, which carry prefixes.
     pats = [re.compile(r"(?<![a-z0-9])" + re.escape(w) + r"(?![a-z0-9])") if re.search(r"[a-z]", w) else None
             for w in want]
+    def hits(body):
+        return [(t, w, p) for t, w, p in zip(terms, want, pats) if (p.search(body) if p else w in body)]
+    return hits
+
+def main():
+    platform, terms, also, every, cap = parse(sys.argv[1:])
+    main_hits, also_hits = matcher(terms), matcher(also)
     best, order = {}, []
     for corpus, loc, url, title, text in documents(platform):
         body = fold(title + "\n" + url + "\n" + text)
-        hits = [w for w, p in zip(want, pats) if (p.search(body) if p else w in body)]
-        if not hits or (every and len(hits) < len(want)):
+        hits = main_hits(body)
+        if not hits or (every and len(hits) < len(terms)):
+            continue
+        with_hits = also_hits(body) if also else []
+        if also and not with_hits:
             continue
         key = url or loc
         if key not in best:
             order.append(key)
         elif len(text.strip()) <= len(best[key][4].strip()):
             continue                         # an address held more than once shows its fullest copy, not its first
-        best[key] = (corpus, loc, url, title, text, body, hits)
+        best[key] = (corpus, loc, url, title, text, body, hits, with_hits)
     shown, total = {}, {}
     for key in order:
-        corpus, loc, url, title, text, body, hits = best[key]
+        corpus, loc, url, title, text, body, hits, with_hits = best[key]
         total[corpus] = total.get(corpus, 0) + 1
         if shown.get(corpus, 0) >= cap:
             continue
         shown[corpus] = shown.get(corpus, 0) + 1
-        p0 = pats[want.index(hits[0])]
-        i = p0.search(body).start() if p0 else body.find(hits[0])
+        _, w, p = hits[0]
+        i = p.search(body).start() if p else body.find(w)
         snippet = re.sub(r"\s+", " ", body[max(0, i - 80):i + 160]).strip()
-        print(f"{loc}\n    {url}\n    title: {title}\n    matched: {', '.join(terms[want.index(h)] for h in hits)}\n    …{snippet}…")
-    print(f"\nsearched {platform} for {terms} ({'every' if every else 'any'} term):",
+        print(f"{loc}\n    {url}\n    title: {title}\n    matched: {', '.join(t for t, _, _ in hits)}"
+              + (f"; with: {', '.join(t for t, _, _ in with_hits)}" if also else "") + f"\n    …{snippet}…")
+    print(f"\nsearched {platform} for {terms} ({'every' if every else 'any'} term)"
+          + (f", with any of {also}" if also else "") + ":",
           "; ".join(f"{c}: {n} documents{' (first ' + str(cap) + ' listed)' if n > cap else ''}" for c, n in total.items())
           or "no document matched")
 
