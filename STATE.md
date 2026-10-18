@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 23:03 UTC.
+**Updated:** 18 October 2026, 23:24 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -85,12 +85,16 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **The sample is now Q3 on Salla:** the same rule, applied to the revised list, gives a median of 875 candidate statements, and Q3 on Salla holds exactly 875.
 - **The re-check of the areas list's fixes** (`areas/review-recheck.md`, 34.0 million tokens): 21 of the 25 findings fixed, all 15 must-fix among them; one new must-fix (A-15's heading), fixed with the optional ones (commit `529e48c`). Single concerns the re-check found outside their questions' areas are candidates through `areas/extra-candidates.tsv`; the pointers for the runs' starting messages are in `briefs/R3-starting-messages.md`.
 - **Gate G2: the areas list went to the founder** at 23:03 UTC (`areas/message-for-the-founder.md`), with the method rulings since the summary and the steps past their cost: agents re-sized to about 1.54 billion, the coordinator to about 0.34 billion.
-- **Running: the sample, Q3 on Salla,** `a5c2909e43b0782a6`, at `medium`, from 23:02 UTC, in `studies/proposals/records/Q3/salla/` (selection written by `copy_statements.py candidates Q3 salla`: 72 rows).
+- **The sample, Q3 on Salla, is done** (commit `a00a865`): 72 new statements and 3 not-found rows, all from held material, and the checker reports no issues. It cost 18.7 million tokens: **0.26 million per new statement**, against the planning rate of 0.4.
+- **Re-sized at the sample** (`sizing.md`, its last section): agents about 1.62 billion (221 measured), the coordinator about 0.33 billion, together about 1.95 billion. The founder hears it in the next message.
+
+**Running: step R3, recording by question.** The in-depth runs' selections are written (commit `f7b6162`). They run in batches, at `medium`, each started from `briefs/R3-recording.md` with the pointers in `briefs/R3-starting-messages.md`.
+- **Batch 1, from 23:24 UTC:** Q1 on Shopify `a913f51554c4e1a4e`, Salla `a8b1cd628deaf886b`, BigCommerce `a64785d0374c593da`; Q2 on Shopify `a2930a83d7b12fd4a`, Salla `a811ae60b74c2c36d`, WooCommerce `aea99008a49343fea`.
 - **Next:**
-  1. when the sample ends: run `check_proposals.py records Q3 salla`, capture the live pages it cites, measure it with `count_tokens.py`, and re-size R3 and R5's audits by its cost per new statement;
-  2. tell the founder the measured rate and the re-sized whole in the next message;
-  3. record the founder's marks in `founder-decisions.tsv` when they come, and carry them into `areas.tsv`;
-  4. then the in-depth runs (R3), with the starting messages in `briefs/R3-starting-messages.md`, and the checking brief read once more before the first checking run.
+  1. as each run ends: `check_proposals.py records`, capture the live pages it cites (with the language it read them in), measure it, commit;
+  2. the next batches: Q3 on Shopify and Zid; Q4 on Shopify and Salla; Q5 on Shopify, Salla and BigCommerce; Q6 on Shopify, Salla and Zid; Q7 on Shopify and Zid; Q8 on Shopify and WooCommerce;
+  3. once a question's in-depth runs are done: its checking runs, after the checking brief is read once more;
+  4. record the founder's marks in `founder-decisions.tsv` when they come, and carry them into `areas.tsv`.
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
 - `max`: inspections, Stage 1's step 2a, and the pilot's B, C, D and F;
