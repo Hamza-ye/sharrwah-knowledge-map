@@ -17,6 +17,7 @@ None. Every one of the extract's 198 concerns is placed under one area.
 - Country differences are spread across many lists (Shopify Payments by country, Capital by country, POS equipment agreements by country, contracting parties by billing region, data hosting locations). The extract has no one country list for Shopify itself, other than the sign-up list (233 options) and the business entity country list (237 options), whose values it does not show.
 - Many store-features and store-entitlements keys are out of the concern map's scope ("no Shopify source held ties this key to a concern"), so eligibility by plan or store can be read only through the concerns' scopes, not through those keys.
 - The extract's concerns end at SH-C-196 and then go to SH-C-201 and SH-C-202; SH-C-197 to SH-C-200 do not appear.
+- After the checker was widened (parts of an entry's path, entries out of scope, halves of English / Arabic pairs), I checked each of my own groupings (SH-A-03, 04, 07, 08, 20, 23, 24, 25, 28, 29) for a heading the platform itself gives to that same group. None fits. The nearest headings each cover a different set: the staff permission headings `Finance`, `Store settings` and `Online store`; the plan-features group headings `AI features`, `Hosting` and `Customization`; the App Store category `Store management apps`; and the Help Center menus `Compliance` and `AI-powered tools`. They are either wider than my group or leave out part of it, so all ten stay `agent's own`.
 
 ## Entries
 
