@@ -150,26 +150,36 @@ Each of these faults made an agent think something was missing, or readable, whe
 
 ### 12. What a subject costs
 
-**The pilot's agents processed about 2.1 billion tokens,** by their own transcripts. Most of that is context re-read on each turn.
+**Corrected on 18 October 2026.** The first version of this section counted each API request once for every line its transcript writes it on.
+- **What went wrong.** A transcript writes a request's reply over several lines, one per block (thinking, text, each tool call), and each line repeats the request's whole usage. So the first count roughly doubled every figure.
+- **The fix.** `method/count_tokens.py` counts each request once.
+- **What it touched.** The founder set the re-frame's budget and the sample's bar from the first count's figures (`founder-messages/2026-10-18-g1-answer.md`). In this count, the same budget is about 1.0 billion tokens, and the same bar, half the rate of phases A and A2, is about 0.26 million per statement.
 
-| Phase | Agents | Millions of tokens |
-| --- | --- | --- |
-| A, reading each platform | 9 | 636 |
-| A2, closing gaps | 7 | 248 |
-| A3, auditing claims of absence | 7 | 296 |
-| B, variation points | 1 | 346 |
-| C, cause and coexistence | 1 | 172 |
-| D, the Yemen marks | 1 | 194 |
-| F, independent review and its two re-checks | 1 | 173 |
-| Inspections of the briefs | 3 | 40 |
+**The pilot's agents processed about 1.03 billion tokens,** by their own transcripts. Most of that is context re-read on each turn.
 
-- **Not counted:** Stage 1, which every subject shares, took about 3.1 billion more. The coordinator's own session isn't counted either.
+| Phase | Agents | Millions of tokens | First count |
+| --- | --- | --- | --- |
+| A, reading each platform | 9 | 295 | 636 |
+| A2, closing gaps | 7 | 132 | 248 |
+| A3, auditing claims of absence | 7 | 162 | 296 |
+| B, variation points | 1 | 163 | 346 |
+| C, cause and coexistence | 1 | 72 | 172 |
+| D, the Yemen marks | 1 | 104 | 194 |
+| F, independent review and its two re-checks | 1 | 87 | 173 |
+| Inspections of the briefs | 2 | 13 | 40, with one inspection of Stage 1's brief counted in |
+| **Total** | | **1,029** | **2,105** |
+
+- **Per statement.**
+  - Phases A and A2: 0.52 million for each of the 821 statements (the first count gave 1.1). That is 0.75 million for each of the 566 statements not taken from the concern map.
+  - Phases A, A2 and A3: 0.72 million (first count 1.4).
+  - The whole pilot: 1.25 million (first count 2.6).
+- **Not counted:** Stage 1, which every subject shares, took about 1.5 billion more (first count 3.1). The coordinator's own session isn't counted either.
 - **Rework is a large share.** A2 and A3 together cost nearly as much as phase A. B, C and D each ran again after the review, and C four times in all.
-- **Against the usage limit.** The founder reported reaching a third of a week's limit on the first day of this week's work. By that measure, the pilot took very roughly half of a week's limit, and a batch of three to five subjects at the same cost would take one or more weeks' limits. This is a rough estimate: the tokens counted here aren't the plan's meter.
+- **Against the usage limit.** The founder reported reaching a third of a week's limit on the first day of this week's work. In this count, that is about 0.94 billion tokens, so a week's limit is about 2.8 billion. By that measure the pilot's agents took about a third of a week's limit, and about two fifths with the coordinator's own work. This is a rough estimate: the tokens counted here aren't the plan's meter.
 
 ## Proposed changes before more subjects
 
-**Why.** Very roughly half of the pilot's cost was one-time or rework: restarts after usage limits, new tools, and re-runs after the review found faults in the method. But a subject run cleanly this way would still cost about a billion tokens, very roughly a fifth to a quarter of a week's limit. The method protects against the right faults: unsupported claims, missed evidence, and anchoring. Its cost doesn't scale. The coordinator didn't measure cost until the pilot's end, and should have.
+**Why.** Very roughly half of the pilot's cost was one-time or rework: restarts after usage limits, new tools, and re-runs after the review found faults in the method. But a subject run cleanly this way would still cost about half a billion tokens, very roughly a fifth of a week's limit (section 12's corrected count). The method protects against the right faults: unsupported claims, missed evidence, and anchoring. Its cost doesn't scale. The coordinator didn't measure cost until the pilot's end, and should have.
 
 **The coordinator's proposals,** for the founder at G1:
 1. **Scope each subject to its decisions first.** The pilot split one subject into 23 variation points, one per word the platforms use. They gave 14 founder items, and in the coordinator's reading one decision settles most of the others. Every later phase multiplied by 23. A subject should first name its few root decisions, from the platforms' own top-level statements. Then its variation points should be the facets that can change one of them. The rest stay as notes.
