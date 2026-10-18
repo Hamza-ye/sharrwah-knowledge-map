@@ -1,12 +1,16 @@
 # zid: its own organizing lists, as recorded
 
-From `studies/concern-map/platforms/zid/inventory.tsv` (543 entries) and `concerns.tsv` (96 concerns). Each entry keeps its `inv_id` and `cite_id`; the citation gives its source at a commit. List names are the inventory's own labels for where each list came from.
+From `studies/concern-map/platforms/zid/inventory.tsv` (543 entries), `concerns.tsv` (96 concerns) and `statements.tsv`.
+
+**Whose words.** Entry names, the platform's terms and the help-centre names are the platform's own words. List labels (such as `legal-agreements`) and each concern's description are the concern map's words: they say where a list came from and what a concern is about, and are never names of the platform's.
+
+**Labels for names.** A name taken from a list carries that list's label in brackets, as `Payments [settings]`. A concern's term carries `[term]`; a Shopify Help Center menu name `[Help Center]`; a Salla help-centre name `[help centre]`.
 
 
 ## Lists
 
 
-### plan-features (182 entries, 6 out of the concern map's scope)
+### List `plan-features` (182 entries, 6 out of the concern map's scope)
 
 - Basic Features / المزايا الأساسية › Security Settings / إعدادات الأمان (ZD-I-0186, ZD-S-0176; concerns ZD-C-095)
 - Basic Features / المزايا الأساسية › Invoice Printing / طباعة الفواتير (ZD-I-0187, ZD-S-0177; concerns ZD-C-052)
@@ -188,7 +192,7 @@ From `studies/concern-map/platforms/zid/inventory.tsv` (543 entries) and `concer
 Out of the concern map's scope: Basic Features / المزايا الأساسية › Universal Search Center / مركز البحث الشامل (A dashboard-wide search tool across products, orders and customers; the line ties it to no single concern.); Other / اخرى › Bulk Actions / إجراءات جماعية (A dashboard-wide bulk tool across products and customers; the line ties it to no single concern.); Other / اخرى › Bulk Printing / الطباعة الجماعية (A dashboard-wide printing tool; the line names no data type, so it ties to no single concern.); Other / اخرى › Data Filtering / تصفية البيانات (A dashboard-wide filter tool across products and customers; the line ties it to no single concern.); Other / اخرى › Delete All / حذف الكل (A dashboard-wide bulk delete tool; the line ties it to no single concern.); Other / اخرى › Disable All / تعطيل الكل (A dashboard-wide bulk disable tool for products or ads; the line ties it to no single concern.)
 
 
-### other:staff-permissions (57 entries, 2 out of the concern map's scope)
+### List `other:staff-permissions` (57 entries, 2 out of the concern map's scope)
 
 Entries: manage.store.marketing (Manage store marketing / إدارة تسويق المتجر); manage.app.market.details (Manage app market details / purchase subscription / إدارة تفاصيل السوق / اشتراك الشراء); manage.zidship.settings (Manage Zid Ship settings / إدارة إعدادات زد شب); manage.store.ecosystem.consultation (E-commerce consulting service / خدمة الاستشارات في التجارة الإلكترونية); manage.store.ecosystem.packaging (Manage packaging / إدارة التغليف); manage.store.vat.settings (Manage VAT settings / إدارة إعدادات الضريبة); manage.store.discount.rules (Manage automatic discounts / إدارة الخصومات التلقائية); pos.cashiers.page (Access cashier page / الدخول إلى صفحة الكاشير); manage.store.abandonedcarts (Manage abandoned carts / إدارة السلات المتروكة); manage.store.bundleoffers (Manage marketing bundles / إدارة الحزم التسويقية); manage.zidpay.setting (Manage Zid Pay settings / إدارة إعدادات زدباي); view.store.dashboard (View store dashboard / عرض لوحة معلومات المتجر); pos.cashier.usage (Use cashier for sales operations / استخدام الكاشير لعمليات البيع); manage.zidship.orders (Manage shipping orders / إدارة أوامر الشحن); pos.homepage (Access POS homepage / الدخول إلى الصفحة الرئيسية لنقاط البيع); list.store.customers (List store customers / قائمة العملاء في المتجر); manage.store.ecosystem.orderfulfillment (Manage orders and operations / إدارة الطلبات والعمليات); manage.app.market.settings (Manage application settings / إدارة إعدادات التطبيق); list.zidpay.transactions (List transactions / قائمة العمليات); manage.store.ecosystem.printings (Manage promotional printings / إدارة المطبوعات الدعائية); view.app.market.home (View app market homepage / عرض الصفحة الرئيسية لسوق التطبيقات); view.zidship.reports (View Zid Ship reports / عرض تقارير زد شب); manage.zid.financing (Manage Zid financing / إدارة تمويل زد); manage.store.front.customization (Customize store front / تخصيص واجهة المتجر); list.store.orders (List store orders / قائمة طلبات المتجر); manage.store.ecosystem.designs (Manage designs / إدارة التصميمات); manage.store.custom.domain (Manage custom domain / إدارة النطاق المخصص); manage.store.inventory.addresses (Manage inventory locations / إدارة مواقع المخزون); manage.store.ecosystem.payments (Manage payments / إدارة الدفع); manage.store.ecosystem.marketing (Manage marketing / إدارة التسويق); list.store.products (List all products / قائمة جميع المنتجات); manage.store.affiliate (Manage affiliate marketing / إدارة التسويق بالعمولة); list.store.categories (List product categories / قائمة تصنيفات المنتجات); manage.store.ecosystem.mobileapps (Mobile app service / خدمة تطبيق الجوال); manage.store.staff.notifications (Manage team notifications / إدارة الإشعارات للفريق); manage.store.settings (Manage store settings / إدارة إعدادات المتجر); manage.store.ecosystem.storepreparation (Store preparation service / خدمة تجهيز المتجر); refund.zidpay.transactions (Refund transactions / استرداد المبالغ); manage.zidship.payments (Manage service payments / إدارة الدفع للخدمات); pos.payment.methods (Manage payment methods / إدارة طرق الدفع); manage.store.ecosystem.delivery (Manage shipping and delivery / إدارة الشحن والتوصيل); manage.store.ecosystem.selfstorage (Manage self-storage units / إدارة وحدات التخزين الذاتي); manage.store.subscription (Manage subscriptions / إدارة الاشتراكات); list.zidpay.deposits (List account statement / قائمة كشف الحساب); pos.analytics (View POS reports / عرض تقارير نقاط البيع); create.store.orders (Create customer order / إنشاء طلب للعميل); list.store.order.drafts (List order drafts / قائمة المسودات); manage.store.ecosystem.photographics (Manage photography / إدارة التصوير); manage.store.account.settings (Manage account settings / إدارة إعدادات الحساب); manage.store.ecosystem.workplaces (Manage co-working spaces / إدارة المساحات العمل المشتركة); edit.store.orders (Edit customer order / تعديل طلب العميل); manage.store.zid.keys (Manage Zid keys / إدارة مفاتيح زد); manage.store.coupons (Manage discount coupons / إدارة قسائم التخفيض); view.app.market.browse (Browse app by category / تصفح التطبيق حسب الفئة); manage.store.front.pages (Manage additional pages / إدارة الصفحات الإضافية)
 
@@ -196,17 +200,17 @@ Entries: manage.store.marketing (Manage store marketing / إدارة تسويق 
 Out of the concern map's scope: view.zid.academy (View Zid Academy / عرض أكاديمية زد) (Access to Zid Academy, Zid's learning content for merchants; not a store or platform concern.); view.store.home (View store homepage / عرض الصفحة الرئيسية للمتجر) (Access to a dashboard home page; the permission ties to no single concern.)
 
 
-### api-resources (56 entries, 0 out of the concern map's scope)
+### List `api-resources` (56 entries, 0 out of the concern map's scope)
 
 Entries: Merchant APIs > Account > Me; Merchant APIs > Account > Store; Merchant APIs > Orders > Order Tags; Merchant APIs > Orders; Merchant APIs > Reverse Orders; Merchant APIs > Abandoned Carts; Merchant APIs > Products > Managing Products; Merchant APIs > Products > Digital Vouchers; Merchant APIs > Products > Product Categories; Merchant APIs > Products > Product Brands; Merchant APIs > Products > Product Badge; Merchant APIs > Products > Product Attributes; Merchant APIs > Products > Product Attribute Presets; Merchant APIs > Products > Product Variants; Merchant APIs > Products > Product Sorting; Merchant APIs > Products > Product Images; Merchant APIs > Products > Product Availability Notifications; Merchant APIs > Products > Product Export; Merchant APIs > Products > Product Stock; Merchant APIs > Products > Product Questions & Answers; Merchant APIs > Products > Product Reviews; Merchant APIs > Products > Digital Products; Merchant APIs > Inventories; Merchant APIs > Shipping; Merchant APIs > Marketing > Coupons; Merchant APIs > Marketing > Bundle Offers; Merchant APIs > Marketing > Loyalty Program; Merchant APIs > Marketing > Customer Wallets > Cashback Rules; Merchant APIs > Marketing > Customer Wallets > Wallet Analytics; Merchant APIs > Marketing > Customer Wallets > Manager Customer Wallet; Merchant APIs > Customers > Customer Tags; Merchant APIs > Customers > Customer Portal Tickets; Merchant APIs > Customers; Merchant APIs > Store Settings; Merchant APIs > Countries and Cities; Merchant APIs > Blogs > Settings; Merchant APIs > Blogs > Categories; Merchant APIs > Blogs > Posts > Media; Merchant APIs > Blogs > Posts; Merchant APIs > Blogs > Tags; Merchant APIs > Blogs > Storefront > Posts; Merchant APIs > Blogs > Storefront > Categories; Merchant APIs > Blogs > Storefront > Tags; Webhooks > APIs; App Management > APIs; API's > Authentication; API's > Products; API's > Categories; API's > Checkout; API's > Account; API's > Storefront; API's > Countries; Payment; ApplePay; Refund; Webhooks
 
 
-### access-scopes (38 entries, 0 out of the concern map's scope)
+### List `access-scopes` (38 entries, 0 out of the concern map's scope)
 
 Entries: third_account_identity_read; third_store_details_read; third_store_business_read; third_store_details_write; third_order_read; third_order_write; third_create_order; orders.read_write; orders.read; abandoned_carts.read; third_abandoned_carts_read; products.read_write; products.read; third_categories_write; inventories.read_write; inventories.read; shipping.read; coupons.read; third_coupons_write; coupons.read_write; third_bundle_offers_read; third_bundle_offers_write; loyalty_program.read; loyalty_program.read_write; third_loyalty_read; third_customer_wallet_read; third_customer_wallet_write; third_customers_read; third_customers_write; account.read; third_vat_read; countries_cities.read; third_one_signal_write; third_payment_read; third_webhook_read; third_webhook_write; webhooks.read_write; embedded_apps_tokens_write
 
 
-### other:plan-cards (38 entries, 0 out of the concern map's scope)
+### List `other:plan-cards` (38 entries, 0 out of the concern map's scope)
 
 - Starter › Add your products to mazeed marketplace in front of 5 million customers (ZD-I-0368, ZD-S-0354; concerns ZD-C-109)
 - Starter › Unlimited number of products, orders, and customers (ZD-I-0369, ZD-S-0355; concerns ZD-C-020)
@@ -247,7 +251,7 @@ Entries: third_account_identity_read; third_store_details_read; third_store_busi
 - Professional › Connect your store with external systems (via API) (ZD-I-0404, ZD-S-0387; concerns ZD-C-074)
 - Professional › Inventory counting, transfer, and display by customer city (ZD-I-0405, ZD-S-0388; concerns ZD-C-085)
 
-### other:app-market-categories (35 entries, 0 out of the concern map's scope)
+### List `other:app-market-categories` (35 entries, 0 out of the concern map's scope)
 
 - الشحن والتخزين (ZD-I-0429, ZD-S-0412; concerns ZD-C-061)
 - الذكاء الاصطناعي والتحليلات (ZD-I-0430, ZD-S-0413; concerns ZD-C-070)
@@ -285,7 +289,7 @@ Entries: third_account_identity_read; third_store_details_read; third_store_busi
 - التسويق والنمو › البريد الإلكتروني والرسائل النصية (ZD-I-0462, ZD-S-0445; concerns ZD-C-070)
 - التسويق والنمو › SEO وتحسين الظهور (ZD-I-0463, ZD-S-0446; concerns ZD-C-070)
 
-### other:help-centre-zid-products (32 entries, 0 out of the concern map's scope)
+### List `other:help-centre-zid-products` (32 entries, 0 out of the concern map's scope)
 
 - مزيد (ZD-I-0154, ZD-S-0152; concerns ZD-C-109, ZD-C-024)
 - مزيد › عن مزيد (ZD-I-0155, ZD-S-0153; concerns ZD-C-109)
@@ -320,12 +324,12 @@ Entries: third_account_identity_read; third_store_details_read; third_store_busi
 - سوق الثيمات › الصفحات (ZD-I-0184, ZD-S-0175; concerns ZD-C-113)
 - تطبيق الجوال (ZD-I-0185, ZD-S-0152; concerns ZD-C-116)
 
-### webhook-topics (31 entries, 0 out of the concern map's scope)
+### List `webhook-topics` (31 entries, 0 out of the concern map's scope)
 
 Entries: order.create; order.status.update; order.payment_status.update; product.create; product.update; product.publish; product.delete; abandoned_cart.created; abandoned_cart.completed; customer.create; customer.update; customer.merchant.update; customer.login; category.create; category.update; category.delete; app.market.application.authorized; app.market.subscription.active; app.market.application.install; app.market.subscription.warning; app.market.subscription.suspended; app.market.subscription.expired; app.market.subscription.renew; app.market.subscription.upgrade; app.market.subscription.refunded; app.market.application.uninstall; app.market.application.rated; app.market.private.plan.request; merchant_linked; payment_paid; refund_status_changed
 
 
-### settings (28 entries, 0 out of the concern map's scope)
+### List `settings` (28 entries, 0 out of the concern map's scope)
 
 - عام › خاصية إعادة توجيه الروابط ( لوحة التحكم الجديدة) (ZD-I-0126, ZD-S-0124; concerns ZD-C-102)
 - عام › الأسواق ( لوحة التحكم الجديدة ) (ZD-I-0127, ZD-S-0125; concerns ZD-C-034)
@@ -356,7 +360,7 @@ Entries: order.create; order.status.update; order.payment_status.update; product
 - المتجر › فريق العمل (لوحة التحكم الجديدة ) (ZD-I-0152, ZD-S-0150; concerns ZD-C-094)
 - المتجر › اوقات العمل الرسمية (لوحة التحكم الجديدة ) (ZD-I-0153, ZD-S-0151; concerns ZD-C-104)
 
-### legal-agreements (23 entries, 0 out of the concern map's scope)
+### List `legal-agreements` (23 entries, 0 out of the concern map's scope)
 
 - Terms & Conditions / الشروط والأحكام (ZD-I-0406, ZD-S-0389; concerns ZD-C-030, ZD-C-020, ZD-C-021, ZD-C-036, ZD-C-014, ZD-C-016, ZD-C-096)
 - Privacy Policy / سياسة الخصوصية (ZD-I-0407, ZD-S-0390; concerns ZD-C-040, ZD-C-041, ZD-C-042)
@@ -382,7 +386,7 @@ Entries: order.create; order.status.update; order.payment_status.update; product
 - Theme Partner terms (ZD-I-0427, ZD-S-0410; concerns ZD-C-076)
 - Theme commercial policy (ZD-I-0428, ZD-S-0411; concerns ZD-C-076)
 
-### other:product-lines (14 entries, 0 out of the concern map's scope)
+### List `other:product-lines` (14 entries, 0 out of the concern map's scope)
 
 - E-store (ZD-I-0464, ZD-S-0447; concerns ZD-C-113)
 - POS (Point of Sales) (ZD-I-0465, ZD-S-0448; concerns ZD-C-108)
@@ -399,7 +403,7 @@ Entries: order.create; order.status.update; order.payment_status.update; product
 - ZID Assurance (ZD-I-0476, ZD-S-0459; concerns ZD-C-111)
 - Whatsapp (ZD-I-0477, ZD-S-0460; concerns ZD-C-107)
 
-### other:countries (5 entries, 0 out of the concern map's scope)
+### List `other:countries` (5 entries, 0 out of the concern map's scope)
 
 - Egypt (ZD-I-0478, ZD-S-0461; concerns ZD-C-032, ZD-C-031)
 - UAE (ZD-I-0479, ZD-S-0462; concerns ZD-C-032)
@@ -407,106 +411,108 @@ Entries: order.create; order.status.update; order.payment_status.update; product
 - Oman (ZD-I-0481, ZD-S-0464; concerns ZD-C-032)
 - Syria (ZD-I-0482, ZD-S-0465; concerns ZD-C-032)
 
-### extension-points (4 entries, 0 out of the concern map's scope)
+### List `extension-points` (4 entries, 0 out of the concern map's scope)
 
 Entries: Subscription Apps › Public apps; Subscription Apps › Private apps; Shipping apps › Shipping and fulfillment company; Shipping apps › Shipping company only
 
 
 ## Concerns recorded for this platform
 
-- ZD-C-001: Zid Pay activation / تفعيل زد باي. Terms: تفعيل زد باي; تفعيل الدفع الالكتروني; Activate Zid Payments; متطلبات تفعيل الدفع الالكتروني
-- ZD-C-002: Zid Pay transactions and refunds / العمليات والاسترداد. Terms: العمليات; العمليات والاسترداد ( لوحة التحكم الجديدة ); استرداد المبلغ للعميل; Refund Flexibility
-- ZD-C-003: Zid Pay deposits and account statement / الإيداعات وكشف الحساب. Terms: الإيداعات; كشف الحساب والإيداعات; Funds Collection; تحصيل المبالغ; Crystal-Clear Deposits
-- ZD-C-004: Bank accounts / الحسابات البنكية. Terms: الحسابات البنكية; الحسابات البنكية ( لوحة التحكم الجديدة )
-- ZD-C-005: Zid Pay payment networks / شبكات الدفع. Terms: شبكات الدفع; Supported Payment Networks; Zid Payments gateway to accept Mada, Visa, and Mastercard; Enable Apple Pay for faster checkout
-- ZD-C-006: Zid Pay transaction fees / رسوم زد باي. Terms: رسوم زد باي; رسوم العمليات; Transaction Fees; Fair and Clear Pricing
-- ZD-C-007: Zid Pay chargebacks, fraud and held funds / charge back والاحتيال واحتجاز الأموال. Terms: charge back; Fraud; Fraud Shield; Fraud protection to prevent losses; احتجاز الأموال; مبلغ احتياطي
-- ZD-C-008: Payment links / روابط الدفع. Terms: روابط الدفع; Quick Payment Links; payment_link
-- ZD-C-009: Payment service providers behind Zid Pay / مقدمي خدمات الدفع. Terms: مقدمي خدمات الدفع; مزود الخدمة; payment service providers; التعاقد من الباطن
-- ZD-C-010: Zid Payments Open APIs for payment service providers. Terms: Zid Payments; Open APIs integration model; Merchant Activation; Direct payment; Embedded payment; Link Merchant Event; Payment Paid Event; Refund Event
-- ZD-C-011: Other payment gateways / بوابات الدفع الأُخرى. Terms: بوابات الدفع الأُخرى; باي موب Paymob; اموال باي amwal pay; بوابة الدفع تاب Tap
-- ZD-C-012: Store payment methods / طرق الدفع. Terms: طرق الدفع; List Payment Methods; Get Payment Options; Various Payment Methods; Advanced Payment Methods
-- ZD-C-013: Instalment services (buy now, pay later) / خدمات التقسيط. Terms: خدمات التقسيط; الدفع لاحقاً; Flexible Payments; Tamara; Tabby; MISPay; Emkan; Madfu
-- ZD-C-014: Cash on delivery option / الدفع عند الاستلام. Terms: الدفع عند الاستلام; خدمة الدفع عند التوصيل; Cash on Delivery; Block Cash on Delivery
-- ZD-C-015: COD collection through Zid shipping / تحصيل الدفع عند الاستلام. Terms: خدمة الدفع عند الاستلام (COD); تحصيل الدفع عند الاستلام; Cash on Delivery Collection
-- ZD-C-016: Bank transfer option / خدمة التحويل البنكي. Terms: خدمة التحويل البنكي; الدفع بالتحويل البنكي; Bank Transfer Payment
-- ZD-C-017: Zid Wallet (merchant wallet) / محفظة زد. Terms: محفظة زد; محفظة التاجر; Zid Wallet; Zid Electronic Wallet
-- ZD-C-018: Wallet deduction from Zid Pay / الاستقطاع للمحفظة. Terms: الاستقطاع للمحفظة
-- ZD-C-019: Customer wallet and cashback / محفظة العميل والكاش باك. Terms: محفظة العميل والكاش باك; Customer Wallets; Cashback Rules; Zid Wallet (customer payment option on the compare table)
-- ZD-C-020: Zid subscription plans and fees / الاشتراكات. Terms: الاشتراكات; Subscriptions; Subscription Fees; إدارة الاشتراك; Starter; Rise; Growth; Pro; Lite plan
-- ZD-C-021: Purchases from Zid and their payment processing / المدفوعات والمشتريات. Terms: المدفوعات والمشتريات; Payments and Purchases; third-party payment processor
-- ZD-C-022: App Market subscriptions and partner payouts. Terms: App Subscription Events; Subscription Details; Update Usage-Based Charges; Partner Payouts; Payouts
-- ZD-C-023: Zid Financing / تمويل زد. Terms: تمويل زد; Zid Financing; Financing; جهة التمويل
-- ZD-C-024: Mazeed collections and dues / المستحقات المالية لمزيد. Terms: المستحقات المالية لمزيد; تحصيلات مزيد; الأحكام المالية
-- ZD-C-025: Zid Agent / وكيل زد. Terms: وكيل زد (Zid Agent); Zid Agent
-- ZD-C-026: Value added services / خدمة المميزات الإضافية VAS. Terms: خدمة المميزات الإضافية VAS; Value Added Services (VAS)
-- ZD-C-028: Order payment status / حالة الدفع. Terms: order.payment_status.update; Payment Status; Bulk Payment Status Update
-- ZD-C-030: Zid's contracting entity and governing law. Terms: شركة القدرة التقنية لتقنية المعلومات والاتصالات; Al-Qudrah Al-Taqniyah for Technology and Communication Company; Commercial Registration Number 1010365366; Governing Law and Dispute Resolution
-- ZD-C-031: Zid Egypt / زد مصر. Terms: About Zid Egypt; حول زد مصر; Zid Egypt
-- ZD-C-032: Countries Zid serves. Terms: ZID is available in; زد متاحة في; Egypt; UAE; Kuwait; Oman; Syria
-- ZD-C-033: Store country, operating countries and cities. Terms: Countries and Cities; List Store Operating Countries; countries_cities.read
-- ZD-C-034: Markets / الأسواق. Terms: الأسواق; خاصية الأسواق
-- ZD-C-035: Store business data and verification / بيانات المتجر. Terms: بيانات المتجر; تفاصيل النشاط التجاري; Business; KYC (Know Your Customer); third_store_business_read
-- ZD-C-036: E-commerce store regulations / ضوابط المتجر الإلكتروني. Terms: ضوابط المتجر الإلكتروني; E-Commerce Store Regulations
-- ZD-C-037: Zid Pay prohibited activities and sanctions / الأنشطة المحظورة. Terms: الأنشطة المحظورة; Prohibited Activities
-- ZD-C-038: Nafath identity verification / التحقق من نفاذ. Terms: اجتياز التحقق من نفاذ; Verify your identity with Nafath
-- ZD-C-039: Store legal pages / الصفحات القانونية. Terms: الصفحات القانونية
-- ZD-C-040: Privacy and personal data / سياسة الخصوصية. Terms: سياسة الخصوصية; Privacy Policy
-- ZD-C-041: Cross-border data transfer / نقل البيانات عبر الحدود. Terms: نقل البيانات عبر الحدود; THE DATA TRANSFER ACROSS THE BORDERS
-- ZD-C-042: AI data processing / معالجة البيانات بالذكاء الاصطناعي. Terms: معالجة البيانات بالذكاء الاصطناعي; AI Data Processing
-- ZD-C-043: Digital products and vouchers / المنتجات الرقمية. Terms: Digital Products; Digital Vouchers; المنتجات الرقمية; Downloadables
-- ZD-C-044: Export requests / طلبات التصدير. Terms: طلبات التصدير
-- ZD-C-050: Store languages and currencies / لغة وعملات المتجر. Terms: لغة وعملات المتجر; اللغات والعملات; خاصية العملات; Geo-Based Currency Settings; Localization
-- ZD-C-051: Tax settings (VAT) / اعدادات الضريبة. Terms: اعدادات الضريبة; ضريبة القيمة المضافة; Invoice & Tax Settings; Tax-Applicable Countries; Retrieve VAT Settings; Calculate and display VAT
-- ZD-C-052: Invoice settings / اعدادات الفواتير. Terms: اعدادات الفواتير; Invoice Printing
-- ZD-C-053: ZATCA e-invoicing integration / الربط مع منصة فاتورة. Terms: الربط مع منصة فاتورة ZATCA
-- ZD-C-054: Credit notes / إشعارات الدائن. Terms: List Order Credit Notes; Calculate Reverse Totals; Credit notes
-- ZD-C-060: Zid Logistics and direct shipping / زد لوجستيات وزد شب. Terms: زد لوجستيات; زد لوجيستك; زد شب; الشحن المباشر; ZidShip; Zid Logistics: One Contract for 35 Carriers
-- ZD-C-061: Shipping apps and third-party logistics companies. Terms: شركات الخدمات اللوجستية الطرف الثالث; Shipping apps; Shipping and fulfillment company; الشحن والتخزين
-- ZD-C-062: Store shipping methods / طرق الشحن. Terms: List Store Shipping Methods; delivery-options; طرق الشحن; shipping.read
-- ZD-C-063: Shipping and payment restrictions / قيود الشحن و الدفع. Terms: قيود الشحن و الدفع; قيود الدفع
-- ZD-C-070: Zid App Market / سوق تطبيقات زد. Terms: سوق تطبيقات زد; Zid App Market; App Market categories
-- ZD-C-071: OAuth authorization and app scopes. Terms: Authorization; OAuth 2.0; Scopes; Zid App Activation & OAuth Policy
-- ZD-C-072: Webhooks. Terms: Webhooks; Webhook Health Tracking; Create Webhook
-- ZD-C-073: Embedded apps. Terms: Embedded Apps; embedded_apps_tokens_write
-- ZD-C-074: Private apps and direct API access. Terms: Private apps; API Access; خدمة الربط المباشرة (APIs); Connect your store with external systems (via API)
-- ZD-C-075: Storefront APIs. Terms: API's; Authentication; Checkout; Storefront
-- ZD-C-076: Theme Market and themes / سوق ثيمات زد. Terms: سوق ثيمات زد; سوق الثيمات; Themes; Theme Market
-- ZD-C-077: Store account and profile. Terms: Account; Me; Store; Retrieve Store Manager Profile; اعدادات الحساب; Account Details
-- ZD-C-080: Orders / الطلبات. Terms: Orders; Order Tags; Custom Order Status; Draft Orders
-- ZD-C-081: Reverse orders and returns. Terms: Reverse Orders; Full & Partial Returns; Returned Orders
-- ZD-C-082: Abandoned carts / السلات المتروكة. Terms: Abandoned Carts; abandoned_cart.created
-- ZD-C-083: Products / المنتجات. Terms: Products; Managing Products; Product Variants; Product Images
-- ZD-C-084: Product categories / التصنيفات. Terms: Product Categories; category.create
-- ZD-C-085: Inventory and stock / المخزون. Terms: Inventories; Product Stock; Inventory Management
-- ZD-C-086: Product reviews and questions. Terms: Product Reviews; Product Questions & Answers; Review Management
-- ZD-C-087: Product availability notifications. Terms: Product Availability Notifications; Product Availability Notification
-- ZD-C-088: Coupons and discounts. Terms: Coupons; Add Discount Coupons; Discounts; Card Discount
-- ZD-C-089: Bundle offers. Terms: Bundle Offers; Add Dynamic Bundle
-- ZD-C-090: Loyalty program. Terms: Loyalty Program; Loyalty Programs
-- ZD-C-091: Customers / العملاء. Terms: Customers; Customer Tags; Customer Information
-- ZD-C-092: Customer self-service portal / بوابة خدمة العملاء الذاتية. Terms: Customer Portal Tickets; بوابة خدمة عملاء متاجر زد الذاتية; Zid Stores' Customer Complaints
-- ZD-C-093: Blogs. Terms: Blogs
-- ZD-C-094: Team members and permissions / فريق العمل. Terms: فريق العمل; مجموعات الفريق; Add Team Members; User Roles and Permissions
-- ZD-C-095: Security settings / اعدادات الامان. Terms: اعدادات الامان; Security Settings
-- ZD-C-096: Domains / النطاقات. Terms: شراء نطاق جديد; قائمة النطاقات; Custom Domain Linking; zid.store
-- ZD-C-097: Notifications and order status messages. Terms: تنبيهات زد; إشعارات الفريق; رسائل حالات الطلب; Team Notifications; OneSignal Store Settings
-- ZD-C-098: Sender name / اسم المرسل. Terms: تفعيل اسم المرسل; تجديد اسم المرسل; Sender Name
-- ZD-C-099: Checkout page settings / إعدادات صفحة إتمام عملية الشراء. Terms: إعدادات صفحة إتمام عملية الشراء
-- ZD-C-100: Order and product properties / خصائص الطلبات والمنتجات. Terms: خصائص الطلبات والمنتجات; Custom Fields
-- ZD-C-101: Gifting / خاصية الإهداء. Terms: خاصية الإهداء
-- ZD-C-102: URL redirects / خاصية إعادة توجيه الروابط. Terms: خاصية إعادة توجيه الروابط
-- ZD-C-103: Google Maps / تفعيل Google maps. Terms: تفعيل Google maps
-- ZD-C-104: Working hours / اوقات العمل الرسمية. Terms: اوقات العمل الرسمية
-- ZD-C-105: Reports and analytics / التقارير والتحليلات. Terms: Reports & Analytics; التقارير والتحليلات
-- ZD-C-106: Marketing tools / أدوات التسويق. Terms: Marketing Tools; Marketing & Growth Tools; أدوات التسويق والنمو
-- ZD-C-107: WhatsApp / واتساب زد. Terms: Whatsapp; واتساب زد; Free WhatsApp (Basic Plan)
-- ZD-C-108: Zid POS / زد كاشير. Terms: POS (Point of Sales); زد كاشير; Zid POS (Cashier)
-- ZD-C-109: Mazeed marketplace / مزيد. Terms: Mazeed Marketplace; مزيد
-- ZD-C-110: Sales channels (marketplaces) / منصات البيع. Terms: Marketplaces; Sold on Amazon and Trendyol and Jahez; منصات البيع
-- ZD-C-111: Zid Assurance / ضمان زد. Terms: ZID Assurance; ضمان زد
-- ZD-C-112: Zid Voice. Terms: Zid Voice; زد فويس
-- ZD-C-113: Online store and store design / المتجر الإلكتروني وتصميم المتجر. Terms: E-store; Store Design; تصميم المتجر
-- ZD-C-114: Merchant support. Terms: Live Chat Support; Ticketing & Chat System; 24/7 priority support
-- ZD-C-115: Zid Growth / زد نمو. Terms: زد نمو
-- ZD-C-116: Store mobile app / تطبيق الجوال. Terms: تطبيق الجوال
+Each with the platform's own terms, the concern map's description, its statements by placement, and the scopes its statements give (the 12 most frequent).
+
+- **ZD-C-001.** The platform's terms: تفعيل زد باي; تفعيل الدفع الالكتروني; Activate Zid Payments; متطلبات تفعيل الدفع الالكتروني. The concern map's description: Zid Pay activation / تفعيل زد باي. Statements: 11 (boundary 2, decides 5, reason 1, responsible 2, where 1). Scopes: Zid Pay, Saudi Arabia (3); متطلبات تفعيل الدفع الالكتروني للسعودية (1); المملكة العربية السعودية; دولة الكويت (1); plan Rise; the Starter card lists Basic payment methods (bank transfer, cash on delivery) (1).
+- **ZD-C-002.** The platform's terms: العمليات; العمليات والاسترداد ( لوحة التحكم الجديدة ); استرداد المبلغ للعميل; Refund Flexibility. The concern map's description: Zid Pay transactions and refunds / العمليات والاسترداد. Statements: 9 (boundary 2, decides 3, responsible 2, where 2). Scopes: Zid Pay, Saudi Arabia (3); staff permission (الاعدادات > فريق عمل) (1).
+- **ZD-C-003.** The platform's terms: الإيداعات; كشف الحساب والإيداعات; Funds Collection; تحصيل المبالغ; Crystal-Clear Deposits. The concern map's description: Zid Pay deposits and account statement / الإيداعات وكشف الحساب. Statements: 13 (decides 8, responsible 3, where 2). Scopes: Zid Pay, Saudi Arabia (6); Zid Pay, Kuwait (2).
+- **ZD-C-004.** The platform's terms: الحسابات البنكية; الحسابات البنكية ( لوحة التحكم الجديدة ). The concern map's description: Bank accounts / الحسابات البنكية. Statements: 6 (decides 4, responsible 1, where 1). Scopes: Zid Pay, Saudi Arabia (1).
+- **ZD-C-005.** The platform's terms: شبكات الدفع; Supported Payment Networks; Zid Payments gateway to accept Mada, Visa, and Mastercard; Enable Apple Pay for faster checkout. The concern map's description: Zid Pay payment networks / شبكات الدفع. Statements: 10 (boundary 2, decides 4, reason 1, responsible 2, where 1). Scopes: Zid Pay, Saudi Arabia (2); plan Rise (1); Kuwait (1).
+- **ZD-C-006.** The platform's terms: رسوم زد باي; رسوم العمليات; Transaction Fees; Fair and Clear Pricing. The concern map's description: Zid Pay transaction fees / رسوم زد باي. Statements: 8 (decides 5, responsible 2, where 1). Scopes: Zid Pay, Saudi Arabia (5); mada, plan النمو (1).
+- **ZD-C-007.** The platform's terms: charge back; Fraud; Fraud Shield; Fraud protection to prevent losses; احتجاز الأموال; مبلغ احتياطي. The concern map's description: Zid Pay chargebacks, fraud and held funds / charge back والاحتيال واحتجاز الأموال. Statements: 7 (decides 4, responsible 2, where 1). Scopes: Zid Pay, Saudi Arabia (5); plan Growth (1).
+- **ZD-C-008.** The platform's terms: روابط الدفع; Quick Payment Links; payment_link. The concern map's description: Payment links / روابط الدفع. Statements: 3 (boundary 1, decides 1, where 1).
+- **ZD-C-009.** The platform's terms: مقدمي خدمات الدفع; مزود الخدمة; payment service providers; التعاقد من الباطن. The concern map's description: Payment service providers behind Zid Pay / مقدمي خدمات الدفع. Statements: 7 (boundary 1, decides 2, responsible 3, where 1). Scopes: Zid Pay, Saudi Arabia (4).
+- **ZD-C-010.** The platform's terms: Zid Payments; Open APIs integration model; Merchant Activation; Direct payment; Embedded payment; Link Merchant Event; Payment Paid Event; Refund Event. The concern map's description: Zid Payments Open APIs for payment service providers. Statements: 8 (boundary 4, decides 2, where 2).
+- **ZD-C-011.** The platform's terms: بوابات الدفع الأُخرى; باي موب Paymob; اموال باي amwal pay; بوابة الدفع تاب Tap. The concern map's description: Other payment gateways / بوابات الدفع الأُخرى. Statements: 11 (boundary 2, decides 6, responsible 2, where 1). Scopes: الإمارات، السعودية، عمان (1); عمان (1); السعودية، الكويت، البحرين، الإمارات، قطر، عمان (1); Zid Pay, Saudi Arabia (1); مستخدمي دول الخليج (1).
+- **ZD-C-012.** The platform's terms: طرق الدفع; List Payment Methods; Get Payment Options; Various Payment Methods; Advanced Payment Methods. The concern map's description: Store payment methods / طرق الدفع. Statements: 7 (boundary 3, decides 3, where 1). Scopes: compare-plans: starter, launch, growth, pro (2).
+- **ZD-C-013.** The platform's terms: خدمات التقسيط; الدفع لاحقاً; Flexible Payments; Tamara; Tabby; MISPay; Emkan; Madfu. The concern map's description: Instalment services (buy now, pay later) / خدمات التقسيط. Statements: 8 (boundary 2, decides 3, responsible 2, where 1).
+- **ZD-C-014.** The platform's terms: الدفع عند الاستلام; خدمة الدفع عند التوصيل; Cash on Delivery; Block Cash on Delivery. The concern map's description: Cash on delivery option / الدفع عند الاستلام. Statements: 7 (boundary 1, decides 3, reason 1, responsible 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (2).
+- **ZD-C-015.** The platform's terms: خدمة الدفع عند الاستلام (COD); تحصيل الدفع عند الاستلام; Cash on Delivery Collection. The concern map's description: COD collection through Zid shipping / تحصيل الدفع عند الاستلام. Statements: 7 (decides 4, responsible 2, where 1). Scopes: الشحن المباشر (زد شب) (1); compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-016.** The platform's terms: خدمة التحويل البنكي; الدفع بالتحويل البنكي; Bank Transfer Payment. The concern map's description: Bank transfer option / خدمة التحويل البنكي. Statements: 6 (boundary 1, decides 2, responsible 2, where 1). Scopes: compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-017.** The platform's terms: محفظة زد; محفظة التاجر; Zid Wallet; Zid Electronic Wallet. The concern map's description: Zid Wallet (merchant wallet) / محفظة زد. Statements: 12 (boundary 1, decides 6, responsible 2, where 3). Scopes: merchants outside Saudi Arabia (2); compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-018.** The platform's terms: الاستقطاع للمحفظة. The concern map's description: Wallet deduction from Zid Pay / الاستقطاع للمحفظة. Statements: 6 (boundary 1, decides 2, reason 1, responsible 1, where 1). Scopes: Saudi and Kuwaiti merchants with Zid Pay (1).
+- **ZD-C-019.** The platform's terms: محفظة العميل والكاش باك; Customer Wallets; Cashback Rules; Zid Wallet (customer payment option on the compare table). The concern map's description: Customer wallet and cashback / محفظة العميل والكاش باك. Statements: 6 (boundary 1, decides 2, responsible 1, where 2). Scopes: الباقة الاحترافية; add-on for lower plans (1); compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-020.** The platform's terms: الاشتراكات; Subscriptions; Subscription Fees; إدارة الاشتراك; Starter; Rise; Growth; Pro; Lite plan. The concern map's description: Zid subscription plans and fees / الاشتراكات. Statements: 7 (boundary 1, decides 3, responsible 2, where 1).
+- **ZD-C-021.** The platform's terms: المدفوعات والمشتريات; Payments and Purchases; third-party payment processor. The concern map's description: Purchases from Zid and their payment processing / المدفوعات والمشتريات. Statements: 4 (boundary 1, decides 1, responsible 1, where 1).
+- **ZD-C-022.** The platform's terms: App Subscription Events; Subscription Details; Update Usage-Based Charges; Partner Payouts; Payouts. The concern map's description: App Market subscriptions and partner payouts. Statements: 11 (boundary 3, decides 3, responsible 3, where 2).
+- **ZD-C-023.** The platform's terms: تمويل زد; Zid Financing; Financing; جهة التمويل. The concern map's description: Zid Financing / تمويل زد. Statements: 10 (boundary 2, decides 5, responsible 2, where 1). Scopes: المملكة العربية السعودية (1).
+- **ZD-C-024.** The platform's terms: المستحقات المالية لمزيد; تحصيلات مزيد; الأحكام المالية. The concern map's description: Mazeed collections and dues / المستحقات المالية لمزيد. Statements: 11 (boundary 2, decides 4, reason 1, responsible 2, where 2).
+- **ZD-C-025.** The platform's terms: وكيل زد (Zid Agent); Zid Agent. The concern map's description: Zid Agent / وكيل زد. Statements: 5 (boundary 1, decides 2, responsible 1, where 1).
+- **ZD-C-026.** The platform's terms: خدمة المميزات الإضافية VAS; Value Added Services (VAS). The concern map's description: Value added services / خدمة المميزات الإضافية VAS. Statements: 4 (decides 2, responsible 1, where 1).
+- **ZD-C-028.** The platform's terms: order.payment_status.update; Payment Status; Bulk Payment Status Update. The concern map's description: Order payment status / حالة الدفع. Statements: 4 (boundary 1, decides 2, where 1). Scopes: compare-plans: starter, launch, growth, pro (2).
+- **ZD-C-030.** The platform's terms: شركة القدرة التقنية لتقنية المعلومات والاتصالات; Al-Qudrah Al-Taqniyah for Technology and Communication Company; Commercial Registration Number 1010365366; Governing Law and Dispute Resolution. The concern map's description: Zid's contracting entity and governing law. Statements: 9 (decides 3, responsible 5, where 1). Scopes: Zid Pay, Kuwait (2); partner payout invoices (1).
+- **ZD-C-031.** The platform's terms: About Zid Egypt; حول زد مصر; Zid Egypt. The concern map's description: Zid Egypt / زد مصر. Statements: 6 (reason 1, responsible 3, where 2).
+- **ZD-C-032.** The platform's terms: ZID is available in; زد متاحة في; Egypt; UAE; Kuwait; Oman; Syria. The concern map's description: Countries Zid serves. Statements: 3 (decides 2, where 1). Scopes: Zid Payments (1).
+- **ZD-C-033.** The platform's terms: Countries and Cities; List Store Operating Countries; countries_cities.read. The concern map's description: Store country, operating countries and cities. Statements: 6 (boundary 2, decides 3, where 1). Scopes: مستخدمي دول الخليج (1).
+- **ZD-C-034.** The platform's terms: الأسواق; خاصية الأسواق. The concern map's description: Markets / الأسواق. Statements: 3 (decides 2, where 1). Scopes: باقة الانطلاقة; باقة النمو; الباقة الاحترافية (1).
+- **ZD-C-035.** The platform's terms: بيانات المتجر; تفاصيل النشاط التجاري; Business; KYC (Know Your Customer); third_store_business_read. The concern map's description: Store business data and verification / بيانات المتجر. Statements: 8 (boundary 1, decides 3, reason 1, responsible 1, where 2). Scopes: تجار السعودية (1); السعودية (1).
+- **ZD-C-036.** The platform's terms: ضوابط المتجر الإلكتروني; E-Commerce Store Regulations. The concern map's description: E-commerce store regulations / ضوابط المتجر الإلكتروني. Statements: 6 (boundary 1, decides 2, reason 1, responsible 1, where 1).
+- **ZD-C-037.** The platform's terms: الأنشطة المحظورة; Prohibited Activities. The concern map's description: Zid Pay prohibited activities and sanctions / الأنشطة المحظورة. Statements: 9 (decides 6, responsible 2, where 1). Scopes: Zid Pay, Saudi Arabia (7); Zid Pay, Kuwait (1); Zid Pay, Saudi Arabia (English text) (1).
+- **ZD-C-038.** The platform's terms: اجتياز التحقق من نفاذ; Verify your identity with Nafath. The concern map's description: Nafath identity verification / التحقق من نفاذ. Statements: 6 (boundary 2, decides 2, responsible 1, where 1).
+- **ZD-C-039.** The platform's terms: الصفحات القانونية. The concern map's description: Store legal pages / الصفحات القانونية. Statements: 5 (boundary 1, decides 2, responsible 1, where 1).
+- **ZD-C-040.** The platform's terms: سياسة الخصوصية; Privacy Policy. The concern map's description: Privacy and personal data / سياسة الخصوصية. Statements: 10 (boundary 3, decides 2, reason 1, responsible 3, where 1).
+- **ZD-C-041.** The platform's terms: نقل البيانات عبر الحدود; THE DATA TRANSFER ACROSS THE BORDERS. The concern map's description: Cross-border data transfer / نقل البيانات عبر الحدود. Statements: 3 (decides 2, responsible 1).
+- **ZD-C-042.** The platform's terms: معالجة البيانات بالذكاء الاصطناعي; AI Data Processing. The concern map's description: AI data processing / معالجة البيانات بالذكاء الاصطناعي. Statements: 5 (boundary 2, decides 1, responsible 1, where 1).
+- **ZD-C-043.** The platform's terms: Digital Products; Digital Vouchers; المنتجات الرقمية; Downloadables. The concern map's description: Digital products and vouchers / المنتجات الرقمية. Statements: 5 (boundary 2, decides 1, where 2). Scopes: Zid Pay, Saudi Arabia (1).
+- **ZD-C-044.** The platform's terms: طلبات التصدير. The concern map's description: Export requests / طلبات التصدير. Statements: 4 (boundary 1, decides 1, reason 1, where 1).
+- **ZD-C-050.** The platform's terms: لغة وعملات المتجر; اللغات والعملات; خاصية العملات; Geo-Based Currency Settings; Localization. The concern map's description: Store languages and currencies / لغة وعملات المتجر. Statements: 8 (boundary 3, decides 4, where 1). Scopes: compare-plans: starter, launch, growth, pro (1); مدفوعات زد (السعودية، الكويت) (1).
+- **ZD-C-051.** The platform's terms: اعدادات الضريبة; ضريبة القيمة المضافة; Invoice & Tax Settings; Tax-Applicable Countries; Retrieve VAT Settings; Calculate and display VAT. The concern map's description: Tax settings (VAT) / اعدادات الضريبة. Statements: 8 (boundary 1, decides 4, reason 1, responsible 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (2); plan Growth (1); المتاجر السعودية (1).
+- **ZD-C-052.** The platform's terms: اعدادات الفواتير; Invoice Printing. The concern map's description: Invoice settings / اعدادات الفواتير. Statements: 5 (boundary 1, decides 2, responsible 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-053.** The platform's terms: الربط مع منصة فاتورة ZATCA. The concern map's description: ZATCA e-invoicing integration / الربط مع منصة فاتورة. Statements: 6 (boundary 2, decides 2, reason 1, where 1).
+- **ZD-C-054.** The platform's terms: List Order Credit Notes; Calculate Reverse Totals; Credit notes. The concern map's description: Credit notes / إشعارات الدائن. Statements: 6 (boundary 2, decides 2, reason 1, where 1).
+- **ZD-C-060.** The platform's terms: زد لوجستيات; زد لوجيستك; زد شب; الشحن المباشر; ZidShip; Zid Logistics: One Contract for 35 Carriers. The concern map's description: Zid Logistics and direct shipping / زد لوجستيات وزد شب. Statements: 14 (boundary 2, decides 5, reason 1, responsible 4, where 2). Scopes: compare-plans: starter, launch, growth, pro (1); plan Rise (1); plan Professional (1); staff permission (1); Global Shipping (1).
+- **ZD-C-061.** The platform's terms: شركات الخدمات اللوجستية الطرف الثالث; Shipping apps; Shipping and fulfillment company; الشحن والتخزين. The concern map's description: Shipping apps and third-party logistics companies. Statements: 10 (boundary 3, decides 3, responsible 2, where 2). Scopes: المملكة العربية السعودية; دول الخليج (1).
+- **ZD-C-062.** The platform's terms: List Store Shipping Methods; delivery-options; طرق الشحن; shipping.read. The concern map's description: Store shipping methods / طرق الشحن. Statements: 4 (boundary 2, where 2).
+- **ZD-C-063.** The platform's terms: قيود الشحن و الدفع; قيود الدفع. The concern map's description: Shipping and payment restrictions / قيود الشحن و الدفع. Statements: 4 (decides 2, reason 1, where 1). Scopes: باقة النمو; الباقة الاحترافية; باقة الأعمال الكبيرة (1).
+- **ZD-C-070.** The platform's terms: سوق تطبيقات زد; Zid App Market; App Market categories. The concern map's description: Zid App Market / سوق تطبيقات زد. Statements: 11 (boundary 2, decides 4, responsible 3, where 2). Scopes: staff permission (1).
+- **ZD-C-071.** The platform's terms: Authorization; OAuth 2.0; Scopes; Zid App Activation & OAuth Policy. The concern map's description: OAuth authorization and app scopes. Statements: 10 (boundary 2, decides 3, reason 2, responsible 2, where 1).
+- **ZD-C-072.** The platform's terms: Webhooks; Webhook Health Tracking; Create Webhook. The concern map's description: Webhooks. Statements: 7 (boundary 1, decides 2, reason 1, responsible 1, where 2).
+- **ZD-C-073.** The platform's terms: Embedded Apps; embedded_apps_tokens_write. The concern map's description: Embedded apps. Statements: 5 (boundary 1, decides 1, reason 1, responsible 1, where 1).
+- **ZD-C-074.** The platform's terms: Private apps; API Access; خدمة الربط المباشرة (APIs); Connect your store with external systems (via API). The concern map's description: Private apps and direct API access. Statements: 8 (boundary 1, decides 4, responsible 2, where 1). Scopes: plan Professional (1); staff permission (1).
+- **ZD-C-075.** The platform's terms: API's; Authentication; Checkout; Storefront. The concern map's description: Storefront APIs. Statements: 3 (boundary 1, where 2).
+- **ZD-C-076.** The platform's terms: سوق ثيمات زد; سوق الثيمات; Themes; Theme Market. The concern map's description: Theme Market and themes / سوق ثيمات زد. Statements: 6 (boundary 1, decides 2, responsible 2, where 1). Scopes: plan Rise (1).
+- **ZD-C-077.** The platform's terms: Account; Me; Store; Retrieve Store Manager Profile; اعدادات الحساب; Account Details. The concern map's description: Store account and profile. Statements: 7 (boundary 2, decides 2, responsible 1, where 2). Scopes: compare-plans: starter, launch, growth, pro (1); staff permission (1).
+- **ZD-C-080.** The platform's terms: Orders; Order Tags; Custom Order Status; Draft Orders. The concern map's description: Orders / الطلبات. Statements: 11 (boundary 4, decides 5, where 2). Scopes: compare-plans: starter, launch, growth, pro (2); staff permission (1).
+- **ZD-C-081.** The platform's terms: Reverse Orders; Full & Partial Returns; Returned Orders. The concern map's description: Reverse orders and returns. Statements: 9 (boundary 4, decides 3, where 2). Scopes: compare-plans: starter, launch, growth, pro (2).
+- **ZD-C-082.** The platform's terms: Abandoned Carts; abandoned_cart.created. The concern map's description: Abandoned carts / السلات المتروكة. Statements: 9 (boundary 3, decides 5, where 1). Scopes: compare-plans: starter, launch, growth, pro (1); staff permission (1); الباقات المجانية (1); الباقة الاحترافية; باقة الأعمال الكبيرة (1).
+- **ZD-C-083.** The platform's terms: Products; Managing Products; Product Variants; Product Images. The concern map's description: Products / المنتجات. Statements: 6 (boundary 2, decides 3, where 1). Scopes: compare-plans: starter, launch, growth, pro (2); staff permission (1).
+- **ZD-C-084.** The platform's terms: Product Categories; category.create. The concern map's description: Product categories / التصنيفات. Statements: 6 (boundary 2, decides 3, where 1). Scopes: compare-plans: starter, launch, growth, pro (1); staff permission (1); الباقة المجانية (1).
+- **ZD-C-085.** The platform's terms: Inventories; Product Stock; Inventory Management. The concern map's description: Inventory and stock / المخزون. Statements: 11 (boundary 2, decides 7, responsible 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (2); staff permission (1); plan Growth (1); الباقة الاحترافية (1); باقة الأعمال الكبيرة (1); الباقات المجانية (1).
+- **ZD-C-086.** The platform's terms: Product Reviews; Product Questions & Answers; Review Management. The concern map's description: Product reviews and questions. Statements: 7 (boundary 1, decides 3, reason 1, where 2). Scopes: compare-plans: starter, launch, growth, pro (2).
+- **ZD-C-087.** The platform's terms: Product Availability Notifications; Product Availability Notification. The concern map's description: Product availability notifications. Statements: 5 (boundary 2, decides 1, where 2). Scopes: compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-088.** The platform's terms: Coupons; Add Discount Coupons; Discounts; Card Discount. The concern map's description: Coupons and discounts. Statements: 6 (boundary 1, decides 4, where 1). Scopes: compare-plans: starter, launch, growth, pro (2); staff permission (1).
+- **ZD-C-089.** The platform's terms: Bundle Offers; Add Dynamic Bundle. The concern map's description: Bundle offers. Statements: 7 (boundary 1, decides 4, reason 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (1); staff permission (1); باقة النمو (1).
+- **ZD-C-090.** The platform's terms: Loyalty Program; Loyalty Programs. The concern map's description: Loyalty program. Statements: 6 (boundary 1, decides 4, where 1). Scopes: compare-plans: starter, launch, growth, pro (1); plan Professional (1); الباقة الاحترافية (1).
+- **ZD-C-091.** The platform's terms: Customers; Customer Tags; Customer Information. The concern map's description: Customers / العملاء. Statements: 8 (boundary 2, decides 3, responsible 1, where 2). Scopes: compare-plans: starter, launch, growth, pro (2); staff permission (1).
+- **ZD-C-092.** The platform's terms: Customer Portal Tickets; بوابة خدمة عملاء متاجر زد الذاتية; Zid Stores' Customer Complaints. The concern map's description: Customer self-service portal / بوابة خدمة العملاء الذاتية. Statements: 6 (boundary 2, reason 1, where 3).
+- **ZD-C-093.** The platform's terms: Blogs. The concern map's description: Blogs. Statements: 7 (boundary 2, decides 1, reason 1, where 3). Scopes: باقة النمو; الباقة الاحترافية (1).
+- **ZD-C-094.** The platform's terms: فريق العمل; مجموعات الفريق; Add Team Members; User Roles and Permissions. The concern map's description: Team members and permissions / فريق العمل. Statements: 5 (boundary 1, decides 2, reason 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-095.** The platform's terms: اعدادات الامان; Security Settings. The concern map's description: Security settings / اعدادات الامان. Statements: 5 (boundary 1, decides 2, reason 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-096.** The platform's terms: شراء نطاق جديد; قائمة النطاقات; Custom Domain Linking; zid.store. The concern map's description: Domains / النطاقات. Statements: 6 (boundary 1, decides 3, responsible 1, where 1). Scopes: النمو; الباقة الاحترافية (1); compare-plans: starter, launch, growth, pro (1); staff permission (1).
+- **ZD-C-097.** The platform's terms: تنبيهات زد; إشعارات الفريق; رسائل حالات الطلب; Team Notifications; OneSignal Store Settings. The concern map's description: Notifications and order status messages. Statements: 5 (boundary 1, decides 3, where 1). Scopes: compare-plans: starter, launch, growth, pro (1); staff permission (1).
+- **ZD-C-098.** The platform's terms: تفعيل اسم المرسل; تجديد اسم المرسل; Sender Name. The concern map's description: Sender name / اسم المرسل. Statements: 7 (boundary 1, decides 3, reason 1, responsible 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-099.** The platform's terms: إعدادات صفحة إتمام عملية الشراء. The concern map's description: Checkout page settings / إعدادات صفحة إتمام عملية الشراء. Statements: 2 (boundary 1, where 1).
+- **ZD-C-100.** The platform's terms: خصائص الطلبات والمنتجات; Custom Fields. The concern map's description: Order and product properties / خصائص الطلبات والمنتجات. Statements: 4 (boundary 1, decides 2, where 1). Scopes: compare-plans: starter, launch, growth, pro (1).
+- **ZD-C-101.** The platform's terms: خاصية الإهداء. The concern map's description: Gifting / خاصية الإهداء. Statements: 1 (where 1).
+- **ZD-C-102.** The platform's terms: خاصية إعادة توجيه الروابط. The concern map's description: URL redirects / خاصية إعادة توجيه الروابط. Statements: 2 (reason 1, where 1).
+- **ZD-C-103.** The platform's terms: تفعيل Google maps. The concern map's description: Google Maps / تفعيل Google maps. Statements: 1 (where 1).
+- **ZD-C-104.** The platform's terms: اوقات العمل الرسمية. The concern map's description: Working hours / اوقات العمل الرسمية. Statements: 1 (where 1).
+- **ZD-C-105.** The platform's terms: Reports & Analytics; التقارير والتحليلات. The concern map's description: Reports and analytics / التقارير والتحليلات. Statements: 8 (decides 6, reason 1, where 1). Scopes: compare-plans: starter, launch, growth, pro (3); staff permission (1); الباقة الاحترافية; باقة الأعمال الكبيرة (1); باقة الأعمال الكبيره; النخبة; الإحترافية (1).
+- **ZD-C-106.** The platform's terms: Marketing Tools; Marketing & Growth Tools; أدوات التسويق والنمو. The concern map's description: Marketing tools / أدوات التسويق. Statements: 4 (decides 3, where 1). Scopes: compare-plans: starter, launch, growth, pro (2); staff permission (1).
+- **ZD-C-107.** The platform's terms: Whatsapp; واتساب زد; Free WhatsApp (Basic Plan). The concern map's description: WhatsApp / واتساب زد. Statements: 10 (boundary 1, decides 5, reason 1, responsible 2, where 1). Scopes: plan Rise (1); plan Professional (1).
+- **ZD-C-108.** The platform's terms: POS (Point of Sales); زد كاشير; Zid POS (Cashier). The concern map's description: Zid POS / زد كاشير. Statements: 9 (boundary 2, decides 3, responsible 2, where 2). Scopes: compare-plans: starter, launch, growth, pro (1); plan Professional (1); staff permission (1).
+- **ZD-C-109.** The platform's terms: Mazeed Marketplace; مزيد. The concern map's description: Mazeed marketplace / مزيد. Statements: 10 (boundary 2, decides 3, reason 1, responsible 2, where 2).
+- **ZD-C-110.** The platform's terms: Marketplaces; Sold on Amazon and Trendyol and Jahez; منصات البيع. The concern map's description: Sales channels (marketplaces) / منصات البيع. Statements: 13 (boundary 3, decides 6, reason 1, responsible 2, where 1). Scopes: جاهز (1); النمو; الانطلاقة; الاحترافية (1); باقة زد لايت (1); السعودية; الإمارات (1); احد مدن المملكة (1).
+- **ZD-C-111.** The platform's terms: ZID Assurance; ضمان زد. The concern map's description: Zid Assurance / ضمان زد. Statements: 5 (boundary 1, decides 1, reason 1, responsible 1, where 1).
+- **ZD-C-112.** The platform's terms: Zid Voice; زد فويس. The concern map's description: Zid Voice. Statements: 7 (boundary 1, decides 2, reason 1, responsible 1, where 2).
+- **ZD-C-113.** The platform's terms: E-store; Store Design; تصميم المتجر. The concern map's description: Online store and store design / المتجر الإلكتروني وتصميم المتجر. Statements: 9 (boundary 1, decides 6, where 2). Scopes: compare-plans: starter, launch, growth, pro (2); staff permission (1); الباقة الاحترافية; باقة الأعمال الكبيرة (1); الباقة الإحترافية; باقة الاعمال الكبيرة (1).
+- **ZD-C-114.** The platform's terms: Live Chat Support; Ticketing & Chat System; 24/7 priority support. The concern map's description: Merchant support. Statements: 4 (decides 2, where 2). Scopes: compare-plans: starter, launch, growth, pro (2); plan Professional (1).
+- **ZD-C-115.** The platform's terms: زد نمو. The concern map's description: Zid Growth / زد نمو. Statements: 5 (decides 2, responsible 1, where 2). Scopes: staff permission (1); الباقة الإحترافية (1).
+- **ZD-C-116.** The platform's terms: تطبيق الجوال. The concern map's description: Store mobile app / تطبيق الجوال. Statements: 9 (boundary 1, decides 2, reason 1, responsible 2, where 3). Scopes: staff permission (1).

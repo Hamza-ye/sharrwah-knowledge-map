@@ -1,17 +1,21 @@
 # woocommerce: its own organizing lists, as recorded
 
-From `studies/concern-map/platforms/woocommerce/inventory.tsv` (654 entries) and `concerns.tsv` (118 concerns). Each entry keeps its `inv_id` and `cite_id`; the citation gives its source at a commit. List names are the inventory's own labels for where each list came from.
+From `studies/concern-map/platforms/woocommerce/inventory.tsv` (654 entries), `concerns.tsv` (118 concerns) and `statements.tsv`.
+
+**Whose words.** Entry names, the platform's terms and the help-centre names are the platform's own words. List labels (such as `legal-agreements`) and each concern's description are the concern map's words: they say where a list came from and what a concern is about, and are never names of the platform's.
+
+**Labels for names.** A name taken from a list carries that list's label in brackets, as `Payments [settings]`. A concern's term carries `[term]`; a Shopify Help Center menu name `[Help Center]`; a Salla help-centre name `[help centre]`.
 
 
 ## Lists
 
 
-### api-resources (211 entries, 0 out of the concern map's scope)
+### List `api-resources` (211 entries, 0 out of the concern map's scope)
 
 Entries: wc/v1; wc/v2; wc/v3; wc-telemetry; wc/v4; wc/store/v1; wc/private; wc-admin; wc-analytics; wccom-site/v3; wc/v3 > coupons; wc/v3 > customer-downloads; wc/v3 > customers; wc/v3 > network-orders; wc/v3 > order-notes; wc/v3 > order-refunds; wc/v3 > orders; wc/v3 > product-attribute-terms; wc/v3 > product-attributes; wc/v3 > product-categories; wc/v3 > product-custom-fields; wc/v3 > product-reviews; wc/v3 > product-shipping-classes; wc/v3 > product-tags; wc/v3 > products; wc/v3 > product-variations; wc/v3 > refunds; wc/v3 > reports-sales; wc/v3 > reports-top-sellers; wc/v3 > reports-orders-totals; wc/v3 > reports-products-totals; wc/v3 > reports-customers-totals; wc/v3 > reports-coupons-totals; wc/v3 > reports-reviews-totals; wc/v3 > reports; wc/v3 > settings; wc/v3 > settings-options; wc/v3 > shipping-zones; wc/v3 > shipping-zone-locations; wc/v3 > shipping-zone-methods; wc/v3 > tax-classes; wc/v3 > taxes; wc/v3 > variations; wc/v3 > webhooks; wc/v3 > system-status; wc/v3 > system-status-tools; wc/v3 > shipping-methods; wc/v3 > payment-gateways; wc/v3 > data; wc/v3 > data-continents; wc/v3 > data-countries; wc/v3 > data-currencies; wc/v3 > paypal-standard; wc/v3 > paypal-webhooks; wc/v3 > paypal-buttons; wc/v4 > fulfillments; wc/v4 > products; wc/v4 > customers; wc/v4 > order-notes; wc/v4 > shipping-zones; wc/v4 > shipping-zone-method; wc/v4 > orders; wc/v4 > refunds; wc/v4 > offline-payment-methods; wc/v4 > settings-general; wc/v4 > settings-email; wc/v4 > settings-emails; wc/v4 > settings-products; wc/v4 > settings-payment-gateways; wc/v4 > settings-tax; wc/v4 > settings-account; wc/v4 > settings; wc/store/v1 > /batch; wc/store/v1 > /cart; wc/store/v1 > /cart/add-item; wc/store/v1 > /cart/apply-coupon; wc/store/v1 > /cart/coupons; wc/store/v1 > /cart/coupons/(?P<code>[\w-]+); wc/store/v1 > /cart/extensions; wc/store/v1 > /cart/items; wc/store/v1 > /cart/items/(?P<key>[\w-]{32}); wc/store/v1 > /cart/remove-coupon; wc/store/v1 > /cart/remove-item; wc/store/v1 > /cart/select-shipping-rate; wc/store/v1 > /cart/update-item; wc/store/v1 > /cart/update-customer; wc/store/v1 > /checkout; wc/store/v1 > /checkout/(?P<id>[\d]+); wc/store/v1 > /order/(?P<id>[\d]+); wc/store/v1 > /products/attributes; wc/store/v1 > /products/attributes/(?P<id>[\d]+); wc/store/v1 > /products/attributes/(?P<attribute_id>[\d]+)/terms; wc/store/v1 > /products/categories; wc/store/v1 > /products/categories/(?P<id>[\d]+); wc/store/v1 > /products/brands; wc/store/v1 > /products/brands/(?P<identifier>[\w-]+); wc/store/v1 > /products/collection-data; wc/store/v1 > /products/reviews; wc/store/v1 > /products/tags; wc/store/v1 > /products; wc/store/v1 > /products/(?P<id>[\d]+); wc/store/v1 > /products/(?P<slug>[\S]+); wc/private > /patterns; wc/store/v1 > /shopper-lists; wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+); wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+)/items; wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+)/items/(?P<key>[\w-]{32}); wc-admin > notice (Notice); wc-admin > features (Features); wc-admin > experiments (Experiments); wc-admin > marketing (Marketing); wc-admin > marketing/overview (MarketingOverview); wc-admin > marketing/recommendations (MarketingRecommendations); wc-admin > marketing/channels (MarketingChannels); wc-admin > marketing/campaigns (MarketingCampaigns); wc-admin > marketing/campaign-types (MarketingCampaignTypes); wc-admin > options (Options); wc-admin > payment-gateway-suggestions (PaymentGatewaySuggestions); wc-admin > themes (Themes); wc-admin > plugins (Plugins); wc-admin > onboarding/free-extensions (OnboardingFreeExtensions); wc-admin > onboarding/product-types (OnboardingProductTypes); wc-admin > onboarding/profile (OnboardingProfile); wc-admin > onboarding/tasks (OnboardingTasks); wc-admin > onboarding/themes (OnboardingThemes); wc-admin > onboarding/plugins (OnboardingPlugins); wc-admin > onboarding (OnboardingProducts); wc-admin > mobile-app (MobileAppMagicLink); wc-admin > mobile-app (MobileAppQRLogin); wc-admin > shipping-partner-suggestions (ShippingPartnerSuggestions); wc-analytics > admin/notes (Notes); wc-analytics > NoteActions; wc-analytics > Coupons; wc-analytics > Data; wc-analytics > DataCountries; wc-analytics > data/download-ips (DataDownloadIPs); wc-analytics > Orders; wc-analytics > Products; wc-analytics > ProductAttributes; wc-analytics > ProductAttributeTerms; wc-analytics > ProductCategories; wc-analytics > ProductVariations; wc-analytics > ProductReviews; wc-analytics > ProductsLowInStock; wc-analytics > activity-panel/counts (ActivityPanelCounts); wc-analytics > SettingOptions; wc-analytics > Taxes; wc-analytics > customers (Customers); wc-analytics > leaderboards (Leaderboards); wc-analytics > Reports/Controller; wc-analytics > reports/import (Reports/Import/Controller); wc-analytics > reports/(?P<type>[a-z]+)/export (Reports/Export/Controller); wc-analytics > reports/products (Reports/Products/Controller); wc-analytics > reports/variations (Reports/Variations/Controller); wc-analytics > reports/products/stats (Reports/Products/Stats/Controller); wc-analytics > reports/variations/stats (Reports/Variations/Stats/Controller); wc-analytics > reports/revenue/stats (Reports/Revenue/Stats/Controller); wc-analytics > reports/orders (Reports/Orders/Controller); wc-analytics > reports/orders/stats (Reports/Orders/Stats/Controller); wc-analytics > reports/categories (Reports/Categories/Controller); wc-analytics > reports/taxes (Reports/Taxes/Controller); wc-analytics > reports/taxes/stats (Reports/Taxes/Stats/Controller); wc-analytics > reports/coupons (Reports/Coupons/Controller); wc-analytics > reports/coupons/stats (Reports/Coupons/Stats/Controller); wc-analytics > reports/stock (Reports/Stock/Controller); wc-analytics > reports/stock/stats (Reports/Stock/Stats/Controller); wc-analytics > reports/downloads (Reports/Downloads/Controller); wc-analytics > reports/downloads/stats (Reports/Downloads/Stats/Controller); wc-analytics > reports/customers (Reports/Customers/Controller); wc-analytics > reports/customers/stats (Reports/Customers/Stats/Controller); wc-analytics > imports (AnalyticsImports); wc-analytics > reports/performance-indicators (Reports/PerformanceIndicators/Controller); wc-admin > launch-your-store; wccom-site/v3 > connection; wccom-site/v3 > installer; wccom-site/v3 > ssr; wccom-site/v3 > status; wc-telemetry > tracker; Introduction; Authentication; Index; Coupons; Customers; Orders; Order actions; Order notes; Order refunds; Products; Product variations; Product attributes; Product attribute terms; Product categories; Product custom fields; Product shipping classes; Product tags; Product reviews; Reports; Refunds; Tax rates; Tax classes; Webhooks; Settings; Setting options; Payment gateways; Shipping zones; Shipping zone locations; Shipping zone methods; Shipping methods; System status; System status tools; Data
 
 
-### other:marketplace-categories (79 entries, 0 out of the concern map's scope)
+### List `other:marketplace-categories` (79 entries, 0 out of the concern map's scope)
 
 - Extensions (WC-I-0489, WC-S-0694; concerns WC-C-017 WC-C-059)
 - Themes (WC-I-0490, WC-S-0695; concerns WC-C-017 WC-C-111)
@@ -93,12 +97,12 @@ Entries: wc/v1; wc/v2; wc/v3; wc-telemetry; wc/v4; wc/store/v1; wc/private; wc-a
 - Business services > Productivity (WC-I-0566, WC-S-0771; concerns WC-C-112)
 - Business services > Support (WC-I-0567, WC-S-0772; concerns WC-C-112)
 
-### extension-points (50 entries, 0 out of the concern map's scope)
+### List `extension-points` (50 entries, 0 out of the concern map's scope)
 
 Entries: WC_Payment_Gateway; woocommerce_payment_gateways; WC_Payment_Gateway_CC; WC_Payment_Gateway_ECheck; WC_Payment_Token; WC_Shipping_Method; woocommerce_shipping_methods; WC_Integration; woocommerce_integrations; woocommerce_email_classes; woocommerce_get_settings_pages; WC_Address_Provider; WC_Log_Handler; woocommerce_webhook_topics; woocommerce_rest_api_get_rest_namespaces; woocommerce_admin_rest_controllers; wc_admin_register_page; IntegrationInterface; AbstractPaymentMethodType; ExtendSchema; woocommerce_register_additional_checkout_field; FeaturesUtil::declare_compatibility; Extending the Store API; Available extensible endpoints; Adding fields and passing values; Exposing your data; Available Formatters; Marking a cart item as a child of another cart item; Updating the cart on-demand; Getting started with Cart and Checkout extensibility; Additional checkout fields; Available slots; Checkout flow and events; Filtering payment methods in the Checkout block; Payment method integration; Checkout Utilities; DOM events; Available Filters; Inner block types; Cart line items; Checkout and place order button; Coupons; Order summary items; Totals footer item; How the checkout block processes an order; Removing checkout fields; Product collection block; DOM events sent from product collection block; Registering custom collections in product collection block; On-Sale Badge block
 
 
-### other:payment-extension-suggestions (46 entries, 0 out of the concern map's scope)
+### List `other:payment-extension-suggestions` (46 entries, 0 out of the concern map's scope)
 
 - airwallex (WC-I-0365, WC-S-0365; concerns WC-C-004)
 - antom (WC-I-0366, WC-S-0366; concerns WC-C-004)
@@ -147,7 +151,7 @@ Entries: WC_Payment_Gateway; woocommerce_payment_gateways; WC_Payment_Gateway_CC
 - mypos (WC-I-0409, WC-S-0409; concerns WC-C-004)
 - heliopay (WC-I-0410, WC-S-0410; concerns WC-C-004)
 
-### admin-navigation (40 entries, 0 out of the concern map's scope)
+### List `admin-navigation` (40 entries, 0 out of the concern map's scope)
 
 - Status > System status (WC-I-0036, WC-S-0036; concerns WC-C-083)
 - Status > Tools (WC-I-0037, WC-S-0037; concerns WC-C-083)
@@ -190,7 +194,7 @@ Entries: WC_Payment_Gateway; woocommerce_payment_gateways; WC_Payment_Gateway_CC
 - Analytics > Stock (WC-I-0074, WC-S-0074; concerns WC-C-038 WC-C-068)
 - Analytics > Settings (WC-I-0075, WC-S-0075; concerns WC-C-038)
 
-### settings (35 entries, 0 out of the concern map's scope)
+### List `settings` (35 entries, 0 out of the concern map's scope)
 
 - General (WC-I-0001, WC-S-0001; concerns WC-C-030 WC-C-052)
 - Products (WC-I-0002, WC-S-0002; concerns WC-C-064)
@@ -228,7 +232,7 @@ Entries: WC_Payment_Gateway; woocommerce_payment_gateways; WC_Payment_Gateway_CC
 - Tax > Reduced rate rates (WC-I-0034, WC-S-0034; concerns WC-C-054)
 - Tax > Zero rate rates (WC-I-0035, WC-S-0035; concerns WC-C-054)
 
-### other:features (32 entries, 0 out of the concern map's scope)
+### List `other:features` (32 entries, 0 out of the concern map's scope)
 
 - WooCommerce Analytics (WC-I-0325, WC-S-0325; concerns WC-C-038 WC-C-088)
 - Product gallery videos (WC-I-0326, WC-S-0326; concerns WC-C-064 WC-C-088)
@@ -263,7 +267,7 @@ Entries: WC_Payment_Gateway; woocommerce_payment_gateways; WC_Payment_Gateway_CC
 - High-Performance order storage (WC-I-0355, WC-S-0355; concerns WC-C-033 WC-C-088)
 - Cost of Goods Sold (WC-I-0356, WC-S-0356; concerns WC-C-088 WC-C-093)
 
-### legal-agreements (25 entries, 8 out of the concern map's scope)
+### List `legal-agreements` (25 entries, 8 out of the concern map's scope)
 
 - Terms of Service (WC-I-0630, WC-S-0643; concerns WC-C-015 WC-C-019 WC-C-023 WC-C-026 WC-C-027 WC-C-028 WC-C-029 WC-C-040 WC-C-041 WC-C-042 WC-C-049 WC-C-057 WC-C-058 WC-C-117)
 - Privacy Policy (WC-I-0631, WC-S-0830; concerns WC-C-024 WC-C-040 WC-C-042 WC-C-043)
@@ -286,7 +290,7 @@ Entries: WC_Payment_Gateway; woocommerce_payment_gateways; WC_Payment_Gateway_CC
 Out of the concern map's scope: Woo trademark guidelines (Rules for using Woo's own trademarks and logos; no store concern is placed by them.); Brand and logo guidelines (Rules for using Woo's own trademarks and logos; no store concern is placed by them.); Cookie Policy (Covers cookies on the WooCommerce.com website itself, not the merchant's store.); customer-research-agreement (Terms for taking part in Woo's customer research, not a store concern.); code-of-conduct (Community code of conduct for Woo events and spaces, not a store concern.); terms-conditions/woopayments-promotion (Time-limited WooPayments promotional offer terms; they set no standing placement.); terms-conditions/woopayments-mid-2025-promotional-offer-terms-and-conditions (Time-limited WooPayments promotional offer terms; they set no standing placement.); terms-conditions/woopayments-action-promotion-2023 (Time-limited WooPayments promotional offer terms; they set no standing placement.)
 
 
-### other:emails (23 entries, 0 out of the concern map's scope)
+### List `other:emails` (23 entries, 0 out of the concern map's scope)
 
 - New order (WC_Email_New_Order) (WC-I-0294, WC-S-0294; concerns WC-C-076)
 - Cancelled order (WC_Email_Cancelled_Order) (WC-I-0295, WC-S-0295; concerns WC-C-076)
@@ -312,12 +316,12 @@ Out of the concern map's scope: Woo trademark guidelines (Rules for using Woo's 
 - Order withdrawal request (WC_Email_Order_Withdrawal_Requested) (WC-I-0315, WC-S-0315; concerns WC-C-076 WC-C-091)
 - Partially refunded order (WC_Email_Customer_Partially_Refunded_Order) (WC-I-0316, WC-S-0316; concerns WC-C-071 WC-C-076)
 
-### webhook-topics (17 entries, 0 out of the concern map's scope)
+### List `webhook-topics` (17 entries, 0 out of the concern map's scope)
 
 Entries: coupon.created; coupon.updated; coupon.deleted; coupon.restored; customer.created; customer.updated; customer.deleted; order.created; order.updated; order.deleted; order.restored; product.created; product.updated; product.deleted; product.restored; product.published; action
 
 
-### other:onboarding-tasks (17 entries, 0 out of the concern map's scope)
+### List `other:onboarding-tasks` (17 entries, 0 out of the concern map's scope)
 
 - Set up additional payment options (WC-I-0417, WC-S-0417; concerns WC-C-004)
 - Choose your theme (WC-I-0418, WC-S-0418; concerns WC-C-111)
@@ -337,7 +341,7 @@ Entries: coupon.created; coupon.updated; coupon.deleted; coupon.restored; custom
 - Discover ways of extending your store with a tour of the Woo Marketplace (WC-I-0432, WC-S-0432; concerns WC-C-063)
 - Get paid with WooPayments (WC-I-0433, WC-S-0433; concerns WC-C-006)
 
-### other:woopayments-doc-topics (16 entries, 0 out of the concern map's scope)
+### List `other:woopayments-doc-topics` (16 entries, 0 out of the concern map's scope)
 
 - Account Management (WC-I-0596, WC-S-0801; concerns WC-C-009 WC-C-048)
 - Compatibility (WC-I-0597, WC-S-0802; concerns WC-C-006 WC-C-010)
@@ -356,7 +360,7 @@ Entries: coupon.created; coupon.updated; coupon.deleted; coupon.restored; custom
 - Taxes and Documents (WC-I-0610, WC-S-0815; concerns WC-C-021)
 - Testing and Troubleshooting (WC-I-0611, WC-S-0816; concerns WC-C-006)
 
-### other:plugin-page-features (13 entries, 1 out of the concern map's scope)
+### List `other:plugin-page-features` (13 entries, 1 out of the concern map's scope)
 
 - Create beautiful, enticing storefronts (WC-I-0612, WC-S-0817; concerns WC-C-111)
 - Increase revenue (WC-I-0613, WC-S-0818; concerns WC-C-072)
@@ -374,12 +378,12 @@ Entries: coupon.created; coupon.updated; coupon.deleted; coupon.restored; custom
 Out of the concern map's scope: Build on a platform that scales (A scalability claim on the plugin page; it names no concern with a placement.)
 
 
-### access-scopes (9 entries, 0 out of the concern map's scope)
+### List `access-scopes` (9 entries, 0 out of the concern map's scope)
 
 Entries: customer; shop_manager; manage_woocommerce; create_customers; view_woocommerce_reports; product, shop_order, shop_coupon; Read; Write; Read/Write
 
 
-### other:core-shipping-methods (9 entries, 0 out of the concern map's scope)
+### List `other:core-shipping-methods` (9 entries, 0 out of the concern map's scope)
 
 - Flat rate (flat_rate) (WC-I-0284, WC-S-0284; concerns WC-C-075)
 - Free shipping (free_shipping) (WC-I-0285, WC-S-0285; concerns WC-C-075)
@@ -391,7 +395,7 @@ Entries: customer; shop_manager; manage_woocommerce; create_customers; view_wooc
 - Local pickup (local_pickup) (WC-I-0291, WC-S-0291; concerns WC-C-075)
 - Local pickup (pickup_location) (WC-I-0292, WC-S-0292; concerns WC-C-075)
 
-### other:order-statuses (8 entries, 0 out of the concern map's scope)
+### List `other:order-statuses` (8 entries, 0 out of the concern map's scope)
 
 - Pending payment (WC-I-0317, WC-S-0317; concerns WC-C-070)
 - Processing (WC-I-0318, WC-S-0318; concerns WC-C-070)
@@ -402,7 +406,7 @@ Entries: customer; shop_manager; manage_woocommerce; create_customers; view_wooc
 - Failed (WC-I-0323, WC-S-0323; concerns WC-C-070)
 - Draft (checkout-draft) (WC-I-0324, WC-S-0324; concerns WC-C-070 WC-C-072)
 
-### other:privacy-exporters-erasers (8 entries, 0 out of the concern map's scope)
+### List `other:privacy-exporters-erasers` (8 entries, 0 out of the concern map's scope)
 
 - add_exporter: WooCommerce Customer Data (WC-I-0357, WC-S-0357; concerns WC-C-045)
 - add_exporter: WooCommerce Customer Orders (WC-I-0358, WC-S-0358; concerns WC-C-045)
@@ -413,7 +417,7 @@ Entries: customer; shop_manager; manage_woocommerce; create_customers; view_wooc
 - add_eraser: WooCommerce Customer Downloads (WC-I-0363, WC-S-0363; concerns WC-C-045 WC-C-066)
 - add_eraser: WooCommerce Customer Payment Tokens (WC-I-0364, WC-S-0364; concerns WC-C-045 WC-C-098)
 
-### other:shipping-partner-suggestions (6 entries, 0 out of the concern map's scope)
+### List `other:shipping-partner-suggestions` (6 entries, 0 out of the concern map's scope)
 
 - ShipStation (WC-I-0411, WC-S-0411; concerns WC-C-061)
 - Skydropx (WC-I-0412, WC-S-0412; concerns WC-C-061)
@@ -422,7 +426,7 @@ Entries: customer; shop_manager; manage_woocommerce; create_customers; view_wooc
 - Packlink (WC-I-0415, WC-S-0415; concerns WC-C-061)
 - WooCommerce Shipping (WC-I-0416, WC-S-0416; concerns WC-C-060)
 
-### other:tos-woo-services (5 entries, 0 out of the concern map's scope)
+### List `other:tos-woo-services` (5 entries, 0 out of the concern map's scope)
 
 - WooCommerce (WC-I-0625, WC-S-0458; concerns WC-C-023)
 - WooPayments (WC-I-0626, WC-S-0458; concerns WC-C-006 WC-C-023)
@@ -430,134 +434,136 @@ Entries: customer; shop_manager; manage_woocommerce; create_customers; view_wooc
 - WooCommerce Tax (WC-I-0628, WC-S-0458; concerns WC-C-023 WC-C-055)
 - MailPoet (WC-I-0629, WC-S-0458; concerns WC-C-023 WC-C-113)
 
-### other:core-payment-gateways (4 entries, 0 out of the concern map's scope)
+### List `other:core-payment-gateways` (4 entries, 0 out of the concern map's scope)
 
 - Direct bank transfer (WC-I-0280, WC-S-0280; concerns WC-C-002)
 - Check payments (WC-I-0281, WC-S-0281; concerns WC-C-002)
 - Cash on delivery (WC-I-0282, WC-S-0282; concerns WC-C-002)
 - PayPal Standard (WC-I-0283, WC-S-0283; concerns WC-C-003)
 
-### other:core-integrations (1 entries, 0 out of the concern map's scope)
+### List `other:core-integrations` (1 entries, 0 out of the concern map's scope)
 
 - MaxMind Geolocation (WC-I-0293, WC-S-0293; concerns WC-C-046)
 
 ## Concerns recorded for this platform
 
-- WC-C-001: Buyer payments through payment gateways (no balance held in core). Terms: Payment gateways; Payments
-- WC-C-002: Offline payment methods (direct bank transfer, check, cash on delivery). Terms: Direct bank transfer; Check payments; Cash on delivery; offline
-- WC-C-003: PayPal Standard (core gateway that redirects to PayPal). Terms: PayPal Standard
-- WC-C-004: Payment provider suggestions per store country (Payments settings). Terms: Payments; Set up payments; payment-gateway-suggestions
-- WC-C-005: Third-party payment extensions (Marketplace Official payments). Terms: Official payments; Processors & gateways; Wallets & express checkouts; Buy now pay later; Crypto payments; B2B payments
-- WC-C-006: WooPayments payment processing (Woo-made extension and service). Terms: WooPayments
-- WC-C-007: WooPayments account balance and payouts. Terms: Payouts; account balance
-- WC-C-008: WooPayments reserves (funds withheld for risk). Terms: reserve
-- WC-C-009: WooPayments know-your-customer verification. Terms: Know Your Customer; KYC
-- WC-C-010: WooPayments availability by country. Terms: WooPayments in Your Country; supported countries
-- WC-C-011: Restricted and prohibited businesses on WooPayments. Terms: prohibited or restricted; restricted businesses or activities
-- WC-C-012: WooPayments fees. Terms: Fees; Fees and Debits
-- WC-C-013: WooPayments fraud protection rules set by the merchant. Terms: fraud protection; Fraud and Disputes
-- WC-C-014: WooPayments in-person payments (card readers, Tap to Pay). Terms: In-Person Payments
-- WC-C-015: WooPay (saved checkout details across stores). Terms: WooPay
-- WC-C-016: Merchant financing (Stripe Capital). Terms: Stripe Capital; Merchant financing
-- WC-C-017: Woo Marketplace sales and vendor revenue share. Terms: Woo Marketplace; Marketplace Vendor Agreement; Refund Policy
-- WC-C-018: Cardholder data security for WooPayments (PCI DSS). Terms: PCI DSS; Level 1 service provider
-- WC-C-019: PCI DSS compliance of the merchant's store. Terms: PCI-DSS compliance and WooCommerce
-- WC-C-020: Licence under which WooPayments funds are held and moved. Terms: Connected Account Agreement
-- WC-C-021: Tax reporting tied to payments (Form 1099-K, tax invoices for fees). Terms: Taxes and Documents; Form 1099-K; Documents
-- WC-C-022: Prohibited items for e-commerce on WordPress.com sites (Store guidelines). Terms: Store guidelines
-- WC-C-023: Contracting entity for Woo services. Terms: Woo services; WooCommerce, Inc.; WooCommerce Ireland Ltd.
-- WC-C-024: Data controller for Woo services. Terms: Controllers and Responsible Companies
-- WC-C-025: Core software licence and warranty. Terms: GPLv3; open-source
-- WC-C-026: Governing law and courts. Terms: Jurisdiction and Applicable Law
-- WC-C-027: Merchant responsibility for the store's sales, receipts, refunds and consumer law. Terms: Ecommerce Services; Your responsibilities
-- WC-C-028: US sanctions on access to Automattic and Woo services. Terms: US Economic Sanctions; OFAC
-- WC-C-029: Sanctions and export compliance of the merchant's own sales. Terms: export, import, and sanctions laws
-- WC-C-030: Selling and shipping locations. Terms: Selling location(s); Shipping location(s)
-- WC-C-031: Checkout rate limiting. Terms: Rate limit Checkout
-- WC-C-032: Store data in the merchant's own WordPress database. Terms: Own and control your store data – forever
-- WC-C-033: Order storage tables (High-Performance Order Storage). Terms: High-Performance order storage; HPOS
-- WC-C-034: Hosting of the store. Terms: WooCommerce Server Recommendations
-- WC-C-035: Usage tracking sent to WooCommerce. Terms: WooCommerce usage tracking; wc-telemetry
-- WC-C-036: Remote logging to WooCommerce. Terms: Remote Logging
-- WC-C-037: Store logs. Terms: Logs; Logging in WooCommerce
-- WC-C-038: Store analytics and reports kept in the store. Terms: Analytics; Reports; WooCommerce Analytics
-- WC-C-039: WooCommerce Analytics service (data synced to Automattic). Terms: WooCommerce Analytics data syncing
-- WC-C-040: Data shared with payment providers. Terms: Privacy considerations when using official payments extensions
-- WC-C-041: Data shared with shipping providers. Terms: Privacy considerations when using official shipping extensions
-- WC-C-042: WooPayments data and saved-card tokens held by the payment partner. Terms: payment token
-- WC-C-043: Transfer outside the EEA and UK of data processed by Automattic. Terms: Transferring Information
-- WC-C-044: Automattic as processor of site visitors' data (data processing agreement). Terms: Data Processing Agreement
-- WC-C-045: Personal data export, erasure and retention. Terms: Accounts & Privacy; Personal data retention
-- WC-C-046: Customer geolocation (MaxMind and IP lookup services). Terms: MaxMind Geolocation; Default customer location
-- WC-C-047: Address autocomplete providers. Terms: Address autocomplete; Preferred address autocomplete provider
-- WC-C-048: WooPayments dependence on Stripe and processor substitution. Terms: built in partnership with Stripe
-- WC-C-049: WordPress.com / Jetpack connection for Woo services. Terms: WordPress.com account; Jetpack connection
-- WC-C-050: Woo-made extensions (Developed by Woo). Terms: Developed by Woo
-- WC-C-051: WooPayments payout currency and currency conversion. Terms: Payout currencies; currency conversion fee
-- WC-C-052: Store currency (one base currency per store). Terms: Currency; base currency
-- WC-C-053: Selling in more than one currency (multi-currency). Terms: multi-currency; International and localization
-- WC-C-054: Core tax calculation with merchant-entered rates. Terms: Tax; Tax options; Standard rates; Collect sales tax
-- WC-C-055: WooCommerce Tax (automated tax calculation service). Terms: WooCommerce Tax; Automated taxes
-- WC-C-056: Third-party tax extensions (Sales tax and duties). Terms: Sales tax and duties
-- WC-C-057: Taxes on Woo's own fees. Terms: Taxes; VAT/GST/CT on fees
-- WC-C-058: Customs duties and import taxes on shipments. Terms: customs charges, import taxes or duties
-- WC-C-115: Stripe Radar screening on WooPayments accounts. Terms: Stripe Radar
-- WC-C-116: Disputes (chargebacks) on WooPayments transactions. Terms: Managing Disputes; dispute; chargeback
-- WC-C-117: Store data synced to Automattic for Jetpack-connected Woo services. Terms: Jetpack Sync; What data does Jetpack sync
-- WC-C-059: Third-party extensions and services (general). Terms: Third-Party Services; extensions
-- WC-C-060: WooCommerce Shipping (labels and carrier rates). Terms: WooCommerce Shipping
-- WC-C-061: Third-party shipping carriers and shipping extensions. Terms: Shipping, delivery and fulfillment; shipping partner suggestions
-- WC-C-062: Support for Woo and Marketplace products. Terms: WooCommerce Support Policy
-- WC-C-063: WooCommerce.com connection, extension installs and Marketplace subscriptions. Terms: WooCommerce.com; Extensions; Connection to WooCommerce.com
-- WC-C-064: Products and catalogue structure (types, variations, attributes, categories, tags, brands). Terms: Products; Product variations; Attributes; Categories; Tags; Brands
-- WC-C-065: Product reviews and review requests. Terms: Reviews; Product reviews; Review request
-- WC-C-066: Downloadable products and customer downloads. Terms: Downloadable products; Downloads
-- WC-C-067: Product import and export (CSV). Terms: Product Import; Product Export; Import your products
-- WC-C-068: Inventory and stock levels. Terms: Inventory; Stock
-- WC-C-069: Back-in-stock notifications. Terms: Back in Stock Notifications; Stock Notifications
-- WC-C-070: Orders and order statuses. Terms: Orders; Order statuses; Order notes
-- WC-C-071: Refunds. Terms: Refunds; Order refunds; Refunded
-- WC-C-072: Cart and checkout. Terms: Cart; Checkout; Cart & Checkout Blocks; Page setup
-- WC-C-073: Customer accounts. Terms: Customers; Customer; Accounts & Privacy
-- WC-C-074: Coupons and discounts. Terms: Coupons
-- WC-C-075: Shipping zones, methods and classes (core). Terms: Shipping zones; Shipping settings; Classes; Flat rate; Free shipping; Local pickup
-- WC-C-076: Transactional emails. Terms: Emails; Email options
-- WC-C-077: Webhooks. Terms: Webhooks; webhook topics
-- WC-C-078: REST API, API keys and settings API. Terms: WooCommerce REST API; REST API keys; Legacy API
-- WC-C-079: Store API (public storefront API). Terms: Store API
-- WC-C-080: Roles and capabilities. Terms: Customer; Shop manager; manage_woocommerce
-- WC-C-081: Store administration: home, setup wizard, onboarding tasks and inbox. Terms: Home; Setup Wizard; onboarding
-- WC-C-082: Site visibility (coming soon and launch). Terms: Site visibility; Coming soon; Launch your store
-- WC-C-083: Store status, tools and system report. Terms: Status; System status; Tools
-- WC-C-084: Marketing hub (channels, campaigns, recommendations). Terms: Marketing; Overview
-- WC-C-085: Order attribution. Terms: Order Attribution
-- WC-C-086: Extension framework (settings pages, integrations, admin pages, feature compatibility). Terms: Integration; Settings API; WC_Integration
-- WC-C-087: Block extensibility (cart, checkout and product blocks) and Store API extensions. Terms: Cart and Checkout extensibility; Additional checkout fields; ExtendSchema; Product collection block
-- WC-C-088: Feature settings (opt-in and opt-out features). Terms: Features
-- WC-C-089: Point of Sale in the mobile app. Terms: Point of Sale; POS
-- WC-C-090: Mobile app and push notifications. Terms: WooCommerce mobile app; Push Notifications
-- WC-C-091: Order withdrawal requests. Terms: Order withdrawal
-- WC-C-092: Order fulfillments and shipping providers. Terms: Order Fulfillments; Shipping providers
-- WC-C-093: Cost of goods sold. Terms: Cost of Goods Sold
-- WC-C-094: Blueprint (export and import of store configuration). Terms: Blueprint (beta)
-- WC-C-095: WooCommerce MCP (AI assistant access to the store). Terms: WooCommerce MCP; Model Context Protocol
-- WC-C-096: AI features offered by Automattic. Terms: Artificial Intelligence; AI Guidelines
-- WC-C-097: Shopper lists (wishlists, save for later). Terms: Wishlists; Save for Later in Cart; shopper-lists
-- WC-C-098: Saved payment methods (payment tokens). Terms: Payment Token API; WooCommerce Customer Payment Tokens
-- WC-C-099: Reference data (countries, continents). Terms: Data; data/countries; data/continents
-- WC-C-100: Subscriptions (recurring billing). Terms: Subscriptions
-- WC-C-101: Bookings and appointments. Terms: Bookings and appointments
-- WC-C-102: Memberships. Terms: Memberships
-- WC-C-103: B2B selling (wholesale, quotes, B2B payments). Terms: B2B; B2B payments
-- WC-C-104: Merchandising extensions (bundles, gifts, product options, pricing, display, variations, extra purchases, order options). Terms: Merchandising; Bundles; Gifts; Product options; Pricing; Product display; Product variations; Additional purchases; Order options
-- WC-C-105: Conversion extensions (feedback, promotions, order recovery, loyalty, alerts, upsells). Terms: Conversion
-- WC-C-106: Customer service extensions (accounts, live chat, customer management, post-purchase, support). Terms: Customer service
-- WC-C-107: Store content and customization extensions (checkout features, media, search, page enhancements). Terms: Store content and customizations
-- WC-C-108: International and localization extensions. Terms: International and localization
-- WC-C-109: Store management extensions (insights, import/export, order management, policy and security, notifications, accounting). Terms: Store management
-- WC-C-110: Marketing extensions (advertising, automation, CRM, reporting, sales channels, SEO, email, social). Terms: Marketing
-- WC-C-111: Storefront design (themes and block patterns). Terms: Themes; Choose your theme; Customize your store
-- WC-C-112: Business services (formation, legal, compliance, insurance, finance). Terms: Business services
-- WC-C-113: Email marketing (MailPoet, a Woo service). Terms: MailPoet
-- WC-C-114: WooAds (ad campaign data service). Terms: WooAds
-- WC-C-118: EU VAT number collection and validation (EU VAT Number, a Woo-made extension). Terms: EU VAT Number
+Each with the platform's own terms, the concern map's description, its statements by placement, and the scopes its statements give (the 12 most frequent).
+
+- **WC-C-001.** The platform's terms: Payment gateways; Payments. The concern map's description: Buyer payments through payment gateways (no balance held in core). Statements: 19 (boundary 10, decides 1, responsible 2, where 6). Scopes: gateway type: Form based (1).
+- **WC-C-002.** The platform's terms: Direct bank transfer; Check payments; Cash on delivery; offline. The concern map's description: Offline payment methods (direct bank transfer, check, cash on delivery). Statements: 19 (boundary 5, decides 3, where 11). Scopes: Direct bank transfer (bacs) (2); Check payments (cheque) (2); Cash on delivery (cod) (2); gateway type: Offline (1).
+- **WC-C-003.** The platform's terms: PayPal Standard. The concern map's description: PayPal Standard (core gateway that redirects to PayPal). Statements: 11 (boundary 5, decides 3, responsible 1, where 2).
+- **WC-C-004.** The platform's terms: Payments; Set up payments; payment-gateway-suggestions. The concern map's description: Payment provider suggestions per store country (Payments settings). Statements: 286 (boundary 3, decides 280, where 3). Scopes: store country GB (3); store country FR (3); store country AU (3); store country CA (2); store country US (2); store country AT (2); store country BE (2); store country HR (2); store country CY (2); store country DK (2); store country FI (2); store country DE (2); and 236 more.
+- **WC-C-005.** The platform's terms: Official payments; Processors & gateways; Wallets & express checkouts; Buy now pay later; Crypto payments; B2B payments. The concern map's description: Third-party payment extensions (Marketplace Official payments). Statements: 21 (boundary 3, decides 2, responsible 4, where 12). Scopes: Stripe extension (2); Square extension (2); PayPal Payments extension (1).
+- **WC-C-006.** The platform's terms: WooPayments. The concern map's description: WooPayments payment processing (Woo-made extension and service). Statements: 18 (boundary 4, decides 2, reason 2, responsible 4, where 6). Scopes: residents outside the Designated Countries (1); residents of the Designated Countries (1).
+- **WC-C-007.** The platform's terms: Payouts; account balance. The concern map's description: WooPayments account balance and payouts. Statements: 11 (boundary 2, decides 5, reason 1, responsible 1, where 2). Scopes: account country other than the U.S. (1); debit cards outside the U.S. (1); Ecommerce Services (Terms 8.j), which name WooPayments (1); paused payouts (1).
+- **WC-C-008.** The platform's terms: reserve. The concern map's description: WooPayments reserves (funds withheld for risk). Statements: 6 (boundary 2, decides 2, reason 1, where 1).
+- **WC-C-009.** The platform's terms: Know Your Customer; KYC. The concern map's description: WooPayments know-your-customer verification. Statements: 7 (boundary 1, decides 2, reason 2, where 2).
+- **WC-C-010.** The platform's terms: WooPayments in Your Country; supported countries. The concern map's description: WooPayments availability by country. Statements: 13 (decides 10, reason 3). Scopes: readme.txt of WooCommerce 11.2.1 (1); U.S. businesses (1); UK businesses (1); UAE (1).
+- **WC-C-011.** The platform's terms: prohibited or restricted; restricted businesses or activities. The concern map's description: Restricted and prohibited businesses on WooPayments. Statements: 12 (boundary 1, decides 6, reason 1, responsible 2, where 2). Scopes: restricted accounts (2); merchants selling CBD (1).
+- **WC-C-012.** The platform's terms: Fees; Fees and Debits. The concern map's description: WooPayments fees. Statements: 9 (boundary 2, decides 3, reason 1, responsible 2, where 1). Scopes: Amazon Pay non-card payments (1); Amazon Pay (1).
+- **WC-C-013.** The platform's terms: fraud protection; Fraud and Disputes. The concern map's description: WooPayments fraud protection rules set by the merchant. Statements: 4 (boundary 1, decides 1, reason 1, where 1).
+- **WC-C-014.** The platform's terms: In-Person Payments. The concern map's description: WooPayments in-person payments (card readers, Tap to Pay). Statements: 6 (boundary 1, decides 2, responsible 2, where 1).
+- **WC-C-015.** The platform's terms: WooPay. The concern map's description: WooPay (saved checkout details across stores). Statements: 7 (boundary 1, decides 3, responsible 1, where 2). Scopes: U.S. merchants (1).
+- **WC-C-016.** The platform's terms: Stripe Capital; Merchant financing. The concern map's description: Merchant financing (Stripe Capital). Statements: 6 (boundary 1, decides 1, reason 1, responsible 1, where 2).
+- **WC-C-017.** The platform's terms: Woo Marketplace; Marketplace Vendor Agreement; Refund Policy. The concern map's description: Woo Marketplace sales and vendor revenue share. Statements: 12 (boundary 1, decides 2, responsible 5, where 4).
+- **WC-C-018.** The platform's terms: PCI DSS; Level 1 service provider. The concern map's description: Cardholder data security for WooPayments (PCI DSS). Statements: 6 (boundary 2, reason 1, responsible 2, where 1).
+- **WC-C-019.** The platform's terms: PCI-DSS compliance and WooCommerce. The concern map's description: PCI DSS compliance of the merchant's store. Statements: 10 (boundary 1, decides 3, reason 1, responsible 3, where 2). Scopes: direct gateways (1); stores using WooPayments (1); sites using a gateway that processes payments off-site or through hosted fields (1).
+- **WC-C-020.** The platform's terms: Connected Account Agreement. The concern map's description: Licence under which WooPayments funds are held and moved. Statements: 1 (responsible 1).
+- **WC-C-021.** The platform's terms: Taxes and Documents; Form 1099-K; Documents. The concern map's description: Tax reporting tied to payments (Form 1099-K, tax invoices for fees). Statements: 7 (boundary 1, decides 2, reason 1, responsible 1, where 2). Scopes: U.S. persons (2); U.S. (2); EU and UK merchants (1); Japan-based merchants (1).
+- **WC-C-022.** The platform's terms: Store guidelines. The concern map's description: Prohibited items for e-commerce on WordPress.com sites (Store guidelines). Statements: 3 (decides 2, responsible 1). Scopes: WordPress.com sites (2); Ecommerce Services (Terms 8.j) (1).
+- **WC-C-023.** The platform's terms: Woo services; WooCommerce, Inc.; WooCommerce Ireland Ltd.. The concern map's description: Contracting entity for Woo services. Statements: 6 (decides 1, responsible 5). Scopes: residents outside the Designated Countries (1); residents of the Designated Countries (1).
+- **WC-C-024.** The platform's terms: Controllers and Responsible Companies. The concern map's description: Data controller for Woo services. Statements: 5 (decides 1, responsible 4).
+- **WC-C-025.** The platform's terms: GPLv3; open-source. The concern map's description: Core software licence and warranty. Statements: 7 (decides 1, reason 1, responsible 2, where 3).
+- **WC-C-026.** The platform's terms: Jurisdiction and Applicable Law. The concern map's description: Governing law and courts. Statements: 4 (decides 1, responsible 3).
+- **WC-C-027.** The platform's terms: Ecommerce Services; Your responsibilities. The concern map's description: Merchant responsibility for the store's sales, receipts, refunds and consumer law. Statements: 6 (decides 1, reason 1, responsible 4).
+- **WC-C-028.** The platform's terms: US Economic Sanctions; OFAC. The concern map's description: US sanctions on access to Automattic and Woo services. Statements: 7 (decides 5, reason 1, responsible 1).
+- **WC-C-029.** The platform's terms: export, import, and sanctions laws. The concern map's description: Sanctions and export compliance of the merchant's own sales. Statements: 2 (decides 1, responsible 1). Scopes: Ecommerce Services (Terms 8.j) (1).
+- **WC-C-030.** The platform's terms: Selling location(s); Shipping location(s). The concern map's description: Selling and shipping locations. Statements: 7 (boundary 2, decides 4, where 1).
+- **WC-C-031.** The platform's terms: Rate limit Checkout. The concern map's description: Checkout rate limiting. Statements: 8 (boundary 2, decides 4, reason 1, where 1). Scopes: Store API endpoints (1).
+- **WC-C-032.** The platform's terms: Own and control your store data – forever. The concern map's description: Store data in the merchant's own WordPress database. Statements: 9 (boundary 2, decides 2, reason 1, responsible 1, where 3).
+- **WC-C-033.** The platform's terms: High-Performance order storage; HPOS. The concern map's description: Order storage tables (High-Performance Order Storage). Statements: 7 (boundary 2, decides 2, reason 1, where 2).
+- **WC-C-034.** The platform's terms: WooCommerce Server Recommendations. The concern map's description: Hosting of the store. Statements: 3 (decides 1, where 2).
+- **WC-C-035.** The platform's terms: WooCommerce usage tracking; wc-telemetry. The concern map's description: Usage tracking sent to WooCommerce. Statements: 10 (boundary 4, decides 1, reason 1, responsible 1, where 3).
+- **WC-C-036.** The platform's terms: Remote Logging. The concern map's description: Remote logging to WooCommerce. Statements: 6 (boundary 1, decides 3, reason 1, where 1).
+- **WC-C-037.** The platform's terms: Logs; Logging in WooCommerce. The concern map's description: Store logs. Statements: 4 (boundary 1, decides 1, where 2).
+- **WC-C-038.** The platform's terms: Analytics; Reports; WooCommerce Analytics. The concern map's description: Store analytics and reports kept in the store. Statements: 67 (boundary 50, decides 3, where 14).
+- **WC-C-039.** The platform's terms: WooCommerce Analytics data syncing. The concern map's description: WooCommerce Analytics service (data synced to Automattic). Statements: 4 (boundary 1, decides 1, responsible 1, where 1).
+- **WC-C-040.** The platform's terms: Privacy considerations when using official payments extensions. The concern map's description: Data shared with payment providers. Statements: 6 (boundary 1, decides 1, responsible 2, where 2).
+- **WC-C-041.** The platform's terms: Privacy considerations when using official shipping extensions. The concern map's description: Data shared with shipping providers. Statements: 3 (boundary 1, responsible 1, where 1).
+- **WC-C-042.** The platform's terms: payment token. The concern map's description: WooPayments data and saved-card tokens held by the payment partner. Statements: 6 (boundary 1, decides 1, responsible 2, where 2).
+- **WC-C-043.** The platform's terms: Transferring Information. The concern map's description: Transfer outside the EEA and UK of data processed by Automattic. Statements: 3 (reason 1, responsible 1, where 1). Scopes: information processed when the Services are used in the EU or the UK (1).
+- **WC-C-044.** The platform's terms: Data Processing Agreement. The concern map's description: Automattic as processor of site visitors' data (data processing agreement). Statements: 7 (boundary 1, decides 1, reason 1, responsible 3, where 1). Scopes: WordPress.com account (my.wordpress.com/me/account, Preferences > Privacy) (1); WordPress.com site owners (1).
+- **WC-C-045.** The platform's terms: Accounts & Privacy; Personal data retention. The concern map's description: Personal data export, erasure and retention. Statements: 13 (boundary 8, decides 2, responsible 1, where 2). Scopes: a store on WordPress.com that collects and stores other people's names and addresses (1).
+- **WC-C-046.** The platform's terms: MaxMind Geolocation; Default customer location. The concern map's description: Customer geolocation (MaxMind and IP lookup services). Statements: 10 (boundary 3, decides 3, reason 1, where 3).
+- **WC-C-047.** The platform's terms: Address autocomplete; Preferred address autocomplete provider. The concern map's description: Address autocomplete providers. Statements: 5 (boundary 2, decides 2, where 1).
+- **WC-C-048.** The platform's terms: built in partnership with Stripe. The concern map's description: WooPayments dependence on Stripe and processor substitution. Statements: 12 (boundary 3, decides 6, responsible 2, where 1).
+- **WC-C-049.** The platform's terms: WordPress.com account; Jetpack connection. The concern map's description: WordPress.com / Jetpack connection for Woo services. Statements: 10 (boundary 4, decides 2, reason 1, responsible 1, where 2). Scopes: WooPayments (4).
+- **WC-C-050.** The platform's terms: Developed by Woo. The concern map's description: Woo-made extensions (Developed by Woo). Statements: 4 (decides 2, responsible 1, where 1).
+- **WC-C-051.** The platform's terms: Payout currencies; currency conversion fee. The concern map's description: WooPayments payout currency and currency conversion. Statements: 7 (boundary 1, decides 5, reason 1).
+- **WC-C-052.** The platform's terms: Currency; base currency. The concern map's description: Store currency (one base currency per store). Statements: 7 (boundary 1, decides 5, where 1).
+- **WC-C-053.** The platform's terms: multi-currency; International and localization. The concern map's description: Selling in more than one currency (multi-currency). Statements: 5 (boundary 1, decides 2, where 2). Scopes: WooPayments (4).
+- **WC-C-054.** The platform's terms: Tax; Tax options; Standard rates; Collect sales tax. The concern map's description: Core tax calculation with merchant-entered rates. Statements: 19 (boundary 5, decides 4, responsible 2, where 8). Scopes: WooPayments (1); Ecommerce Services (Terms 8.j) (1).
+- **WC-C-055.** The platform's terms: WooCommerce Tax; Automated taxes. The concern map's description: WooCommerce Tax (automated tax calculation service). Statements: 12 (boundary 3, decides 1, reason 1, responsible 5, where 2).
+- **WC-C-056.** The platform's terms: Sales tax and duties. The concern map's description: Third-party tax extensions (Sales tax and duties). Statements: 4 (decides 1, responsible 2, where 1).
+- **WC-C-057.** The platform's terms: Taxes; VAT/GST/CT on fees. The concern map's description: Taxes on Woo's own fees. Statements: 5 (boundary 1, decides 1, responsible 2, where 1). Scopes: EU and UK merchants (1); WooPayments (1); VAT-registered businesses whose invoice shows VAT reverse charged (1).
+- **WC-C-058.** The platform's terms: customs charges, import taxes or duties. The concern map's description: Customs duties and import taxes on shipments. Statements: 7 (boundary 1, decides 1, reason 1, responsible 2, where 2). Scopes: shipping Services (Terms 8.j) (1); follows "When using DHL's services:" (Terms 8.j) (1).
+- **WC-C-115.** The platform's terms: Stripe Radar. The concern map's description: Stripe Radar screening on WooPayments accounts. Statements: 3 (decides 1, reason 1, where 1).
+- **WC-C-116.** The platform's terms: Managing Disputes; dispute; chargeback. The concern map's description: Disputes (chargebacks) on WooPayments transactions. Statements: 11 (boundary 2, decides 3, reason 2, responsible 2, where 2).
+- **WC-C-117.** The platform's terms: Jetpack Sync; What data does Jetpack sync. The concern map's description: Store data synced to Automattic for Jetpack-connected Woo services. Statements: 8 (boundary 3, decides 1, responsible 2, where 2).
+- **WC-C-059.** The platform's terms: Third-Party Services; extensions. The concern map's description: Third-party extensions and services (general). Statements: 11 (boundary 1, decides 3, responsible 6, where 1). Scopes: third-party Marketplace developers (1); EU residents' personal data (GDPR) (1).
+- **WC-C-060.** The platform's terms: WooCommerce Shipping. The concern map's description: WooCommerce Shipping (labels and carrier rates). Statements: 10 (boundary 5, decides 3, responsible 1, where 1).
+- **WC-C-061.** The platform's terms: Shipping, delivery and fulfillment; shipping partner suggestions. The concern map's description: Third-party shipping carriers and shipping extensions. Statements: 12 (boundary 4, decides 1, responsible 1, where 6).
+- **WC-C-062.** The platform's terms: WooCommerce Support Policy. The concern map's description: Support for Woo and Marketplace products. Statements: 6 (boundary 2, decides 1, responsible 2, where 1). Scopes: the free, core WooCommerce plugin (1); products made by Marketplace developers (1).
+- **WC-C-063.** The platform's terms: WooCommerce.com; Extensions; Connection to WooCommerce.com. The concern map's description: WooCommerce.com connection, extension installs and Marketplace subscriptions. Statements: 15 (boundary 8, decides 1, where 6).
+- **WC-C-064.** The platform's terms: Products; Product variations; Attributes; Categories; Tags; Brands. The concern map's description: Products and catalogue structure (types, variations, attributes, categories, tags, brands). Statements: 51 (boundary 39, decides 1, where 11).
+- **WC-C-065.** The platform's terms: Reviews; Product reviews; Review request. The concern map's description: Product reviews and review requests. Statements: 10 (boundary 4, decides 3, where 3). Scopes: Customer review request (2).
+- **WC-C-066.** The platform's terms: Downloadable products; Downloads. The concern map's description: Downloadable products and customer downloads. Statements: 11 (boundary 6, decides 3, where 2).
+- **WC-C-067.** The platform's terms: Product Import; Product Export; Import your products. The concern map's description: Product import and export (CSV). Statements: 7 (boundary 2, decides 2, where 3).
+- **WC-C-068.** The platform's terms: Inventory; Stock. The concern map's description: Inventory and stock levels. Statements: 8 (boundary 3, decides 3, where 2).
+- **WC-C-069.** The platform's terms: Back in Stock Notifications; Stock Notifications. The concern map's description: Back-in-stock notifications. Statements: 4 (boundary 2, decides 1, where 1).
+- **WC-C-070.** The platform's terms: Orders; Order statuses; Order notes. The concern map's description: Orders and order statuses. Statements: 17 (boundary 14, decides 2, where 1).
+- **WC-C-071.** The platform's terms: Refunds; Order refunds; Refunded. The concern map's description: Refunds. Statements: 10 (boundary 5, decides 1, responsible 2, where 2). Scopes: Ecommerce Services (Terms 8.j) (2).
+- **WC-C-072.** The platform's terms: Cart; Checkout; Cart & Checkout Blocks; Page setup. The concern map's description: Cart and checkout. Statements: 10 (boundary 8, decides 1, where 1).
+- **WC-C-073.** The platform's terms: Customers; Customer; Accounts & Privacy. The concern map's description: Customer accounts. Statements: 19 (boundary 11, decides 3, where 5).
+- **WC-C-074.** The platform's terms: Coupons. The concern map's description: Coupons and discounts. Statements: 18 (boundary 13, decides 2, where 3).
+- **WC-C-075.** The platform's terms: Shipping zones; Shipping settings; Classes; Flat rate; Free shipping; Local pickup. The concern map's description: Shipping zones, methods and classes (core). Statements: 34 (boundary 16, decides 2, where 16).
+- **WC-C-076.** The platform's terms: Emails; Email options. The concern map's description: Transactional emails. Statements: 30 (boundary 3, decides 2, where 25).
+- **WC-C-077.** The platform's terms: Webhooks; webhook topics. The concern map's description: Webhooks. Statements: 25 (boundary 22, decides 1, reason 1, where 1).
+- **WC-C-078.** The platform's terms: WooCommerce REST API; REST API keys; Legacy API. The concern map's description: REST API, API keys and settings API. Statements: 24 (boundary 18, decides 2, where 4).
+- **WC-C-079.** The platform's terms: Store API. The concern map's description: Store API (public storefront API). Statements: 47 (boundary 44, decides 1, where 2).
+- **WC-C-080.** The platform's terms: Customer; Shop manager; manage_woocommerce. The concern map's description: Roles and capabilities. Statements: 6 (boundary 1, decides 4, where 1).
+- **WC-C-081.** The platform's terms: Home; Setup Wizard; onboarding. The concern map's description: Store administration: home, setup wizard, onboarding tasks and inbox. Statements: 23 (boundary 15, decides 2, where 6).
+- **WC-C-082.** The platform's terms: Site visibility; Coming soon; Launch your store. The concern map's description: Site visibility (coming soon and launch). Statements: 8 (boundary 2, decides 2, reason 2, where 2). Scopes: coming-soon pages (1).
+- **WC-C-083.** The platform's terms: Status; System status; Tools. The concern map's description: Store status, tools and system report. Statements: 8 (boundary 4, decides 1, where 3).
+- **WC-C-084.** The platform's terms: Marketing; Overview. The concern map's description: Marketing hub (channels, campaigns, recommendations). Statements: 10 (boundary 6, decides 1, where 3).
+- **WC-C-085.** The platform's terms: Order Attribution. The concern map's description: Order attribution. Statements: 6 (boundary 1, decides 2, reason 1, where 2).
+- **WC-C-086.** The platform's terms: Integration; Settings API; WC_Integration. The concern map's description: Extension framework (settings pages, integrations, admin pages, feature compatibility). Statements: 9 (boundary 7, decides 1, where 1).
+- **WC-C-087.** The platform's terms: Cart and Checkout extensibility; Additional checkout fields; ExtendSchema; Product collection block. The concern map's description: Block extensibility (cart, checkout and product blocks) and Store API extensions. Statements: 35 (boundary 33, decides 1, where 1).
+- **WC-C-088.** The platform's terms: Features. The concern map's description: Feature settings (opt-in and opt-out features). Statements: 4 (boundary 1, decides 2, where 1).
+- **WC-C-089.** The platform's terms: Point of Sale; POS. The concern map's description: Point of Sale in the mobile app. Statements: 12 (boundary 1, decides 3, reason 1, where 7).
+- **WC-C-090.** The platform's terms: WooCommerce mobile app; Push Notifications. The concern map's description: Mobile app and push notifications. Statements: 5 (boundary 2, decides 1, where 2).
+- **WC-C-091.** The platform's terms: Order withdrawal. The concern map's description: Order withdrawal requests. Statements: 9 (boundary 1, decides 3, responsible 1, where 4).
+- **WC-C-092.** The platform's terms: Order Fulfillments; Shipping providers. The concern map's description: Order fulfillments and shipping providers. Statements: 8 (boundary 2, decides 2, where 4).
+- **WC-C-093.** The platform's terms: Cost of Goods Sold. The concern map's description: Cost of goods sold. Statements: 4 (boundary 1, decides 2, where 1).
+- **WC-C-094.** The platform's terms: Blueprint (beta). The concern map's description: Blueprint (export and import of store configuration). Statements: 5 (boundary 1, decides 2, reason 1, where 1). Scopes: multisite (1).
+- **WC-C-095.** The platform's terms: WooCommerce MCP; Model Context Protocol. The concern map's description: WooCommerce MCP (AI assistant access to the store). Statements: 5 (boundary 3, decides 1, where 1).
+- **WC-C-096.** The platform's terms: Artificial Intelligence; AI Guidelines. The concern map's description: AI features offered by Automattic. Statements: 6 (boundary 1, decides 1, responsible 2, where 2).
+- **WC-C-097.** The platform's terms: Wishlists; Save for Later in Cart; shopper-lists. The concern map's description: Shopper lists (wishlists, save for later). Statements: 8 (boundary 4, decides 3, where 1).
+- **WC-C-098.** The platform's terms: Payment Token API; WooCommerce Customer Payment Tokens. The concern map's description: Saved payment methods (payment tokens). Statements: 6 (boundary 4, decides 1, where 1).
+- **WC-C-099.** The platform's terms: Data; data/countries; data/continents. The concern map's description: Reference data (countries, continents). Statements: 8 (boundary 6, decides 1, where 1).
+- **WC-C-100.** The platform's terms: Subscriptions. The concern map's description: Subscriptions (recurring billing). Statements: 4 (boundary 1, decides 1, where 2). Scopes: WooCommerce Subscriptions (3).
+- **WC-C-101.** The platform's terms: Bookings and appointments. The concern map's description: Bookings and appointments. Statements: 4 (boundary 2, decides 1, where 1). Scopes: WooCommerce Bookings (3).
+- **WC-C-102.** The platform's terms: Memberships. The concern map's description: Memberships. Statements: 1 (where 1).
+- **WC-C-103.** The platform's terms: B2B; B2B payments. The concern map's description: B2B selling (wholesale, quotes, B2B payments). Statements: 3 (boundary 1, decides 1, where 1). Scopes: WooCommerce Purchase Order Gateway (1); WooCommerce Purchase Order Gateway (version 1.5.12) (1).
+- **WC-C-104.** The platform's terms: Merchandising; Bundles; Gifts; Product options; Pricing; Product display; Product variations; Additional purchases; Order options. The concern map's description: Merchandising extensions (bundles, gifts, product options, pricing, display, variations, extra purchases, order options). Statements: 10 (boundary 1, where 9). Scopes: Product Bundles (1).
+- **WC-C-105.** The platform's terms: Conversion. The concern map's description: Conversion extensions (feedback, promotions, order recovery, loyalty, alerts, upsells). Statements: 10 (boundary 2, decides 1, where 7). Scopes: Back In Stock Notifications (2); WooCommerce Points and Rewards (1).
+- **WC-C-106.** The platform's terms: Customer service. The concern map's description: Customer service extensions (accounts, live chat, customer management, post-purchase, support). Statements: 8 (boundary 1, decides 1, where 6). Scopes: Advanced Notifications (2).
+- **WC-C-107.** The platform's terms: Store content and customizations. The concern map's description: Store content and customization extensions (checkout features, media, search, page enhancements). Statements: 9 (boundary 2, decides 1, reason 1, where 5). Scopes: Checkout Field Editor (4).
+- **WC-C-108.** The platform's terms: International and localization. The concern map's description: International and localization extensions. Statements: 1 (where 1).
+- **WC-C-109.** The platform's terms: Store management. The concern map's description: Store management extensions (insights, import/export, order management, policy and security, notifications, accounting). Statements: 9 (boundary 1, decides 1, where 7). Scopes: Xero (2).
+- **WC-C-110.** The platform's terms: Marketing. The concern map's description: Marketing extensions (advertising, automation, CRM, reporting, sales channels, SEO, email, social). Statements: 11 (boundary 1, decides 1, where 9). Scopes: Google for WooCommerce (2).
+- **WC-C-111.** The platform's terms: Themes; Choose your theme; Customize your store. The concern map's description: Storefront design (themes and block patterns). Statements: 7 (boundary 4, where 3).
+- **WC-C-112.** The platform's terms: Business services. The concern map's description: Business services (formation, legal, compliance, insurance, finance). Statements: 13 (boundary 1, decides 1, where 11). Scopes: Woo Agency Partners (2).
+- **WC-C-113.** The platform's terms: MailPoet. The concern map's description: Email marketing (MailPoet, a Woo service). Statements: 10 (boundary 2, decides 2, reason 1, responsible 3, where 2). Scopes: MailPoet accounts created to send emails or to purchase a plan (1); residents outside the Designated Countries (1); residents of the Designated Countries (1).
+- **WC-C-114.** The platform's terms: WooAds. The concern map's description: WooAds (ad campaign data service). Statements: 5 (boundary 2, decides 1, responsible 1, where 1).
+- **WC-C-118.** The platform's terms: EU VAT Number. The concern map's description: EU VAT number collection and validation (EU VAT Number, a Woo-made extension). Statements: 7 (boundary 1, decides 2, reason 1, responsible 1, where 2). Scopes: EU VAT Number (3); B2C sales of digital goods (1).
