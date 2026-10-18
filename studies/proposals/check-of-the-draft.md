@@ -782,3 +782,296 @@ With the cuts in finding 38, items 1 to 5, the agents' total comes to about 2.0 
 - The extract script reproduces its output exactly.
 - The extracts hold every list, entry and concern.
 - The questions are close to neutral. Five need re-wording.
+
+---
+
+## Re-check
+
+**18 October 2026.** The same agent re-checked the coordinator's fixes, as F re-checked the pilot's. The fixes are in commits `11e4e1d`, `e75ce9a`, `d61c08f` and `58edb02`, read as diffs against my check at `4b4ccbe`.
+
+**What I read for the recount:**
+- the pilot's transcripts listed in `pilot-transcripts.tsv`;
+- the usage lines of every transcript in the session's folder;
+- the agents' `.meta.json` files.
+
+The transcripts were read as data only.
+
+**How.** I used scripts of my own, in my scratch directory, run with `python3 -I`. Nothing ran in `evidence/` or the observed repositories. Held files were read with `git --git-dir ... show`. This section is the only change to the repository.
+
+**In short:**
+- **The 19 must-fix findings:** 17 are fixed and 2 are partly fixed (26 and 27). None is left unfixed.
+- **The 21 optional findings the coordinator took:** all are fixed. Three have small gaps, which findings 43, 44 and 46 take up.
+- **New:** the fixes bring 9 new findings, numbered 41 to 49. Four are must fix (41 to 44), and each is small: two one-line script errors, one line in `questions.md`, and a rule the review brief and checker state differently from the plan.
+- **The recount holds:** `count_tokens.py`, my own independent counter and the corrected section 12 agree to the decimal.
+
+### 1. The 19 must-fix findings
+
+| # | Finding | Status | Where, and why |
+| --- | --- | --- | --- |
+| 1 | Stage 5's interactions and last sweep | Fixed | R6: "One short run checks how the proposals bear on each other ... This replaces Stage 5's check of interactions", sized at 12. R1: each area no question draws on gets a line, which "replaces Stage 5's last sweep" |
+| 2 | Which rulings still bind | Fixed | Part 1 lists the 10 rulings that bind, each with its steps; the rulings that lapse; and effort for every R step. The two R1 briefs give the same effort |
+| 3 | Stops naming subjects | Fixed | Section 8 is re-worded around steps and proposals. The budget's stop replaces "twice", and says what the founder gets |
+| 4 | Matching basis 4 | Fixed | Section 6: "both fill the same role in what a question asks, each by its own words (the role test)", marked as the coordinator's own. The role test is listed as binding |
+| 5 | Company decisions unreviewed | Fixed | R5 checks "a proposal or company decision". R6 reviews the company decisions in the second batch. Sized at 10 |
+| 6 | No rule for what bears on a question | Fixed | Areas are tied to questions (`areas.tsv`, `questions`), and a script copies the statements under those areas' concerns. Runs add or set aside statements, with reasons, in `selection.tsv`. The review's check 5 tests the tie. Finding 43 is about one line that could bias it |
+| 17 | Question 1 | Fixed | It asks "What does the platform set up differently for sellers based in different places?", and about the platform adding a place. "A market" is gone |
+| 18 | Question 2 | Fixed | It asks for every way equally: what is offered, the terms, which company contracts, the product, and where data is held |
+| 21 | Question 5 | Fixed | "Who decides ... Record each party the platform names as deciding"; and the money "including when it goes straight to the seller" |
+| 23 | Question 7 | Fixed | "are a seller's prices held ... At what level does the platform set each" |
+| 24 | Question 8 | Fixed | "the units it names, whatever it calls them", and how they are introduced: by plan, by place or by release stage |
+| 26 | Ids the extract didn't show | Partly fixed | The design is right: the runs place concerns, and `place_entries.py` places the entries through their concerns. But the script misreads four platforms' concern ids (finding 42) |
+| 27 | The checker accepted names that aren't the platform's | Partly fixed | Names are now matched whole, under their label, against the platform's own names. My tests reject the founder's words, fragments, headings, list labels, the concern map's descriptions and wrong labels. But on Salla and BigCommerce it rejects a single concern term (finding 41) |
+| 31 | The review couldn't read the recorded data | Fixed | The reading list adds the concern map's `concerns.tsv` and `statements.tsv` and the pilot's statements, as far as `depth.tsv` cites them or the reviewer samples |
+| 34 | Re-runs and missing runs | Fixed | Re-runs are counted in R1, R3, R4, R5 and R6. These runs are added: R0's re-check, the checking brief's check, gathering and reviewing the company decisions, the Yemen audits, and checking runs sized by what they read. R0's re-check is sized low (finding 47) |
+| 35 | The pilot's rate counted copied statements | Fixed | The sizing gives both rates, 0.52 million per statement and 0.75 per new statement, and says the bar is half of the first |
+| 36 | C's input, and drafting's volume | Fixed | C's input is now "its brief named about 780 KB". Drafting is one run per question, from the R3 runs' short accounts and a digest of Stage 1 made by script |
+| 37 | R5's counts | Fixed | About 300 facts, 40 not-found claims, 45 Yemen facts and 8 Yemen claims. "Rests on" now means "the recommendation would change without it", marked as the coordinator's reading |
+| 38 | The cuts | Fixed | Replaced by four real cuts, each saying what it loses. The cut that introduces a "none" depth and the order of the cuts are findings 44 and 48 |
+
+### 2. The optional findings the coordinator took
+
+All 21 are fixed:
+- **7:** R3: "This is how depth reaches the data model and the partner contracts". Question 2 asks where data is held, and question 5 asks what happens when a provider stops. Tax is the exception: see finding 43.
+- **8:** R1's `left_out` gives one line per area no question draws on, and the review's check 7 tests it.
+- **9:** G2: "Must do" confirms the area is in scope. Where no question draws on it, the founder gets the reading it would need, and its cost.
+- **10:** Section 5: defer binds nothing for Decisions 1 to 14 "by the founder's G1 answer". For later items, "the coordinator reads it the same way, unless the founder says otherwise".
+- **11:** Decisions 1 to 13 go with question 5, and Decision 14 with question 7, along with B7's line on the rial.
+- **12:** Part 1, "The coordinator's own", 13 items.
+- **13:** Section 6, "What dropping them loses".
+- **14:** sections 2, 3 (the checker), 6, and 9 (the capture path).
+- **15:** Part 2 gives the full text of the status line, the opening paragraph and sections 1 to 9. The risks and section 9 are re-worded.
+- **16:**
+  - section 1: "What that build covers first is for that plan";
+  - section 2: the matches aren't used; a copied concern's gaps come with it; section B's items aren't standing decisions;
+  - section 3: "Nothing reaches the founder without a decision attached";
+  - section 5: `founder-decisions.tsv`.
+- **19, 20 and 22:** re-worded as proposed.
+- **25:** "How far it reads, in what order, and when it stops are set by its brief".
+- **28:** the checker now:
+  - needs an "## Under none" line with a reason;
+  - needs at least one name per area, and unique ids;
+  - takes only concern ids;
+  - reads with no quoting;
+  - warns outside 15 to 30 areas.
+
+  My tests confirm each.
+- **29:** each concern line gives its statements by placement, and up to 12 scopes.
+- **30:** the labels are defined; held sources are read with `git --git-dir ... show`; and the extract script reads git objects at a commit. Finding 46 is about the checker.
+- **32:** the merged files' columns are specified, and `check_areas.py merged` checks them. The review checks plain words. Findings 44 and 45 are the gaps.
+- **33:** the sample is chosen after the depth choice, by a stated rule.
+- **39:** the sources are marked; the coordinator's tables agree at 265; and brief checks are measured at about 5 million each.
+- **40:** one wait inside the span, and a pause at the weekly limit expected.
+
+**The cuts that replace finding 38's.**
+- **Cuts adopted as method.** Entries placed by script, drafting from short accounts, and the narrower "rests on" are real savings, and each is marked as the coordinator's own. The narrower "rests on" is the one the founder should see plainly: fewer facts get the full checks.
+- **Merging checking runs by platform.** Not adopting it holds. A checking run costs about 5 million, mostly reading. A merged run would carry several questions' accounts and copies on every turn, and the pilot shows cost growing with a run's length. Its saving isn't shown, and could be negative.
+- **The sizing's four cuts.** All four are real and say what they lose. With all four, the agents come to about 1.07 billion, about 4 percent over the pilot's 1.03, which is still "about the pilot's cost". Findings 44 and 48 cover what to watch.
+
+### 3. What the fixes broke or introduced
+
+#### 41. A single concern term is rejected on Salla and BigCommerce
+
+- **Where:** `method/areas_extract.py`, `own_names`: `for t in (r["platform_terms"] or "").split(";")`.
+- **The problem:**
+  - The concern map separates terms with " | " on Salla (136 of 152 concerns) and BigCommerce (74 of 88), and with ";" on the other three.
+  - So on those two, a single term isn't one of the platform's own names under `[term]`; only the whole joined field is.
+  - The R1 brief tells the run to take names from "the concerns' terms", labelled `[term]`. A run following it fails the checker. Or it passes by using a whole joined field as the area's name, such as "Currencies | Multi-currency".
+- **The evidence:**
+  - Rejected under `[term]`: Salla's "Your profile", "Maintenance mode" and "Merchant"; BigCommerce's "Currencies" and "Multi-currency".
+  - Accepted: "Currencies | Multi-currency" as one name.
+  - Salla's "Store Verification" passes only because it is all of SA-C-112's field.
+- **The fix:** split terms on both ";" and "|", and re-test.
+- **Severity:** must fix.
+
+#### 42. `place_entries.py` puts 405 entries under none on four platforms
+
+- **Where:** `method/place_entries.py`: `(r["concern_ids"] or "").split(";")`.
+- **The problem:** the inventory separates an entry's concern ids with ";" on Shopify, a space on Salla and WooCommerce, and ", " on Zid and BigCommerce. The script splits only on ";". So on four platforms, an entry with several concerns is read as one unknown id: it is placed under none, and never marked "split".
+- **The evidence:** with every concern placed, the script reports:
+
+  | Platform | Under none | Split |
+  | --- | --- | --- |
+  | Shopify | 0 | 1,140 |
+  | Salla | 126 | 0 |
+  | Zid | 37 | 0 |
+  | WooCommerce | 164 | 0 |
+  | BigCommerce | 78 | 0 |
+
+  Each "under none" figure is exactly that platform's count of entries with several concerns. The runs' notes would report entries missing that aren't. The review's "Every inventory entry is placed" would fail because of the script, not the runs.
+- **The fix:** split on `[;,\s]+`, and re-test.
+- **Severity:** must fix.
+
+#### 43. "Areas no question covers, such as tax" contradicts question 2
+
+- **Where:** `questions.md`, "What isn't a question", last bullet.
+- **The problem:** question 2 asks what the platform does differently "because of a place's laws". Tax law is the recorded data's clearest case of a law landing in the product:
+  - Salla's and Zid's ZATCA e-invoicing links (SA-C-161, ZD-C-053);
+  - tax set by place (SA-C-160 "Taxes per market", ZD-C-051, SH-C-100 to 105, WC-C-054 to 058, BC-C-072 and 073).
+
+  The line steers the coordinator, who ties areas to questions, and the R1 reviewer, who reads `questions.md`, toward leaving tax areas out of question 2's copies. The founder would then see tax as "left out" at G2. That would tilt B2's evidence toward the founder's expectation, that rules land as availability.
+- **The fix:** say that a place's tax laws, and what the platform does because of them, bear on question 2. Give another example of an area no question covers, or none.
+- **Severity:** must fix.
+
+#### 44. A depth of "none" isn't limited to the founder's cuts, and nothing reviews it
+
+- **Where:** `briefs/R1-areas-review.md` (`depth`: "`in depth`, `check`, or `none`", and check 8); `method/check_areas.py`, merged mode; `plan-change.md`, R1 step 3; `sizing.md`, cut 2.
+- **The problem:**
+  - The founder's method has two depths, "which platforms to read in depth and which only to check", and so does the plan's R1.
+  - "None" appears only in the sizing's cut 2, which is the founder's to choose. It is also needed for question 8 under cut 1.
+  - But the review brief and the checker accept "none" for any platform of any question, with no cut taken. In my test, "none" for two of question 2's platforms passes.
+  - The sizing says "The review still checks each 'none'", but check 8 covers only platforms marked `check`.
+- **The fix:**
+  - Allow "none" only where the founder takes cut 1 or cut 2, and say so in R1 and in the review brief.
+  - Add "none" rows to check 8.
+- **Severity:** must fix.
+
+#### 45. The merged check takes any text as a citation
+
+- **Where:** `method/check_areas.py`, merged mode.
+- **The problem:** `cites` is defined as "the concern or statement ids the reason rests on", but it is only checked for being non-empty. "see the notes" passes.
+- **The fix:** check each cite as an id of the platform named.
+- **Severity:** optional.
+
+#### 46. The checker reads the observed repositories at HEAD, while the extract cites a commit
+
+- **Where:** `own_names`, through `commit_of(..., "OBSERVED_SH_COMMIT")`.
+- **The problem:** if a held repository moves between the extract and a check, the help-centre names can differ. The checker could then reject a name copied from the extract, or accept one the extract doesn't show.
+- **The fix:** take the commit from the extract's heading, or pin both through the environment variables.
+- **Severity:** optional.
+
+#### 47. Three small gaps in the measures
+
+- **Where:** `sizing.md`, R0 and "The measures this rests on"; `method/count_tokens.py`.
+- **The problem:**
+  1. **R0's re-check is sized at 10.** It continues the same agent, so each request re-reads the first task: about 0.5 million per request, against 0.25 in the first task. At the time of writing it stands at 20.6 million over 39 requests, so R0 comes to about 39, not 27.
+  2. **"357 and 371" can't be reproduced.** On 17 October, three stretches stopped at a limit, and each resumed about five hours after it began:
+     - 06:14 to 08:27: 357.0 million;
+     - 11:02 to 15:19: 410.7 million;
+     - 16:01 to 19:41: 381.2 million.
+
+     That is a mean of 0.38 billion per window, against the sizing's 0.36.
+  3. **`count_tokens.py` misses compaction.** When a context fills, the summarizing request is written as a `compact_boundary` record with `preTokens`, not as an assistant line. The pilot had 5, reading about 4.0 million, which is 0.4 percent. Output is recorded only at each request's start. Both are small, and the pilot and the new runs are counted alike.
+- **The fix:** put R0's measured cost in `costs.tsv`, give the three windows, and say both omissions in the script's docstring.
+- **Severity:** optional.
+
+#### 48. The cuts' order
+
+- **Where:** `sizing.md`, the cuts.
+- **The problem:** cut 4, a second re-check only if the first leaves a must-fix finding open, loses least, but comes last.
+- **The fix:** offer it first.
+- **Severity:** optional.
+
+#### 49. The founder's budget and bar are restated
+
+- **Where:** `plan-change.md`, Part 1; `sizing.md`, "How tokens are counted".
+- **The problem:** the founder said "2 billion tokens" and "half the pilot's 1.1 million". The plan uses 1.0 billion and 0.26 million.
+
+  I think this is the right reading. "About the pilot's cost" and "counted as the pilot was" both lead to the corrected pilot figures, and the share of a week's limit is the same either way. But it changes the founder's own numbers, and it puts the plan about a fifth over budget.
+- **The fix:** put it to the founder in one plain line, as part of the go, together with the cuts.
+- **Severity:** optional.
+
+### 4. The scripts
+
+- **`areas_extract.py`.** Re-run into my scratch directory, all five extracts are byte-identical to the committed ones:
+
+  | Platform | Bytes |
+  | --- | --- |
+  | Shopify | 270,838 |
+  | Salla | 233,466 |
+  | WooCommerce | 66,871 |
+  | Zid | 89,160 |
+  | BigCommerce | 51,955 |
+
+  The script reads held files from git objects, and cites full commit hashes. Each extract says whose words are whose, and defines the labels.
+- **`check_areas.py`, one platform.** I ran 41 test files across all five platforms.
+  - 35 behaved as they should: a correct file is accepted, and each error the docstring names is rejected.
+  - 6 didn't: five single terms on Salla and BigCommerce were rejected, and a whole joined terms field was accepted (finding 41).
+  - A plain line opening with a quotation mark is now read as written.
+- **`check_areas.py merged`.** I ran 16 test files. 14 behaved as they should:
+  - areas in two merged areas or in none;
+  - a coordinator's heading with no reason;
+  - a heading that isn't the platform's own;
+  - missing fields;
+  - an unknown question;
+  - a missing depth row;
+  - a question with no platform in depth.
+
+  Two didn't: a "none" depth with no cut taken (finding 44), and a citation that isn't an id (finding 45).
+- **`place_entries.py`.** On BigCommerce with every concern placed, its 555 rows agree with my own placing of the ids it reads. An entry whose only concern is under none stays under none. But it misreads multi-concern ids on four platforms (finding 42).
+- **`count_tokens.py`.** It runs, and on every phase it agrees with my own counter, which keys by request id and keeps the fullest line.
+
+### 5. The recount
+
+**Usage repeats across a request's lines.** Phase C's transcript holds 454 assistant lines for 199 requests, each request with one `requestId`.
+- 172 requests are written over more than one line, one line per reply block.
+- In 166 of those, every line carries the same usage. In the other 6, only the output count differs.
+- Counted on every line, C comes to 172.4 million. Counted once per request, it comes to 72.1 million.
+
+**Section 12, recounted per phase:**
+
+| Phase | Runs | Every line (the first count) | Each request once | Section 12, corrected |
+| --- | --- | --- | --- | --- |
+| A | 9 | 636.5 | 295.4 | 295 |
+| A2 | 7 | 248.4 | 132.1 | 132 |
+| A3 | 7 | 296.1 | 162.1 | 162 |
+| B | 1 | 346.1 | 163.4 | 163 |
+| C | 1 | 172.4 | 72.1 | 72 |
+| D | 1 | 194.0 | 103.5 | 104 |
+| F | 1 | 173.1 | 87.1 | 87 |
+| Inspections | 2 | 30.0 | 13.2 | 13 |
+| **Total** | | **2,096.7** | **1,028.8** | **1,029** |
+
+**Checks on that table:**
+- The map covers every S-01 run named in the agents' `.meta.json` files.
+- Stage 1's 25 agents come to 3,196 million on every line and 1,539 once, which matches "3.1" and "about 1.5".
+- The per-statement rates follow: 427.5 / 821 = 0.52; 427.5 / 566 = 0.75; 589.6 / 821 = 0.72; 1,028.8 / 821 = 1.25.
+
+**The sizing's measures:**
+
+| Measure | Sizing | My count |
+| --- | --- | --- |
+| 17 October, 05:00 to 17:28 | 936 (145 + 791) | 936.1 (145.0 + 791.1), so a week is about 2.84 billion |
+| Reset to 18 October, 20:00 | 1.22 billion, 43% | 1,216.8 (237.9 + 978.9), 42.9% |
+| Coordinator per agent token | 742 against 3,965 | 756.0 against 3,972.3 now; 0.19 |
+| One usage window | 357 and 371 | 357.0, 410.7 and 381.2 (finding 47) |
+| R0's first check | 17 | 16.9, over 69 requests |
+| F's rounds | 38, 37, 12 | 38.0; 37.3 (13.7 + 23.6 after a compaction); 11.7 |
+| C's first run, and its re-runs | 16; 3.5 times | 15.7; 56.4, which is 3.6 times |
+| Stage 1's two targeted checks | 40 for 32 facts | 19.3 + 20.6 = 39.9, for 15 + 17 = 32 axes and constants |
+| Brief checks | 30 for 6 | 30.4: 4.8, 5.3, 3.2 and 3.9 for Stage 1's; 9.8 and 3.4 for the pilot's |
+
+**The sizing's arithmetic.** The rows sum to 1,222 million, and the steps to 27, 117, 24, 381, 186, 299 and 188. The shares follow at 2.84 billion a week: 52 percent for the whole plan. The other figures check too:
+- the cuts: 1.12 and 1.07 billion;
+- R3's statements: 3 × 225 + 2 × 135 = 945, × 0.26 = 246;
+- the sample: 45 × 0.26, 0.52 and 0.75 = 12, 23 and 34;
+- R4: 7 × 15 + 25 = 130.
+
+R1's three small platforms carry a floor that isn't shown: 8, 7 and 6 against 6.1, 4.6 and 3.5 by size.
+
+**Is each step's figure fair, in the corrected count?**
+- **Fair:**
+  - R1's runs, which scale from R0's measured check over a similar reading;
+  - R3, at the founder's bar, with checking runs sized by what they read;
+  - R4, whose 15 per run is generous against C's 16 for 780 KB, since drafting reads short accounts;
+  - R5, at measured rates: 0.25 per fact, A3's 2.7 per claim, 1.25 per Yemen fact;
+  - R6, each batch near F's whole review, 87.
+- **Low:**
+  - R0, by about 12 million (finding 47);
+  - R1's first review pass, 25, may be low. It reads five extracts of about 710 KB in all, plus the entries files, and F's first pass was 38.
+
+  Neither changes the total by more than about 2 percent. So my figure for the agents is **about 1.24 to 1.25 billion** at the bar, within the sizing's stated range of 0.9 to 1.6. With all four cuts, it is about 1.09 billion.
+
+### 6. Verdict
+
+**Not yet, but close.** The drafts can go to the founder in summary once findings 41 to 44 are fixed:
+- the term split in `own_names`;
+- the id split in `place_entries.py`;
+- the tax line in `questions.md`;
+- "none" limited to the founder's cuts in R1, in the review brief and in its check 8.
+
+The test files in my scratch directory re-run in a minute and would show the two script fixes, since the fixes change only these lines. For the briefs, the founder's rule is "a separate check of each brief before it runs". The review brief changes in two places, so its change should be confirmed before R1 runs. My test files are in `/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/r0-check/recheck-tests/`.
+
+**What the summary should carry,** besides what the founder's message lists:
+- the restated budget and bar (finding 49);
+- the plan at about 1.22 billion against the pilot's 1.03, with the four cuts;
+- three readings, each in one plain line: the narrower "rests on", the meaning of "must do", and defer for later items.
