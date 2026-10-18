@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 21:55 UTC.
+**Updated:** 18 October 2026, 22:10 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -66,13 +66,22 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - `check_proposals.py records` is the checker for record folders;
   - `briefs/R3-recording.md` and `briefs/R3-checking.md`, the briefs for the runs.
 - **The review brief's check** (`checks/R1-review-brief-check.md`): 13 findings, 3 must fix, all fixed (commit `7cc6c78`). Agents now get the questions from `questions-for-agents.md`, written by `method/agent_questions.py` without the founder's items and expectations. PLAN.md records the method fixes of R1 in section 11.
+- **The R3 briefs' check** (`checks/R3-briefs-check.md`, commit `271f105`): 32 findings, 21 must fix. It cost 14.7 million tokens (`costs.tsv`).
+- **Its fixes** (commits `e66cee8` for the tools, `d8c2410` for the briefs and `PLAN.md`):
+  - `copy_statements.py`: each copy's id is its line in its source (K statements, G gaps; for Q5 the pilot's P, H and A), so ids never move; `show` prints a concern's statements for judging it; the copy writes two views to read instead of the copies;
+  - `check_proposals.py`: copies compared byte for byte with their source lines, and their ids with their lines; a deleted candidate reported; `bears_on` within the question's sentences; every account point cites an id; `--check` for checking runs;
+  - `corpus_search.py`: WooCommerce's release files searched; `--with` for required terms; `--max` caps a whole corpus;
+  - `help_map.py`, new: the Shopify and Salla help maps one part at a time, and one page or article with the line to cite it by;
+  - `agent_questions.py`: each question's sentences numbered;
+  - both briefs rewritten; the optional findings 3, 12 to 14 and 16 to 18 taken too, and 4 and 15 in part;
+  - `PLAN.md` section 11: a dated entry, with two narrowings of the plan (the contracts behind providers; the search behind a not-found) and live pages captured after each run.
 - **Running:**
   - the review of the areas list (`briefs/R1-areas-review.md`), `a5b8a8b2950f1c3ff`, at `max`, started at 21:52 UTC. It writes `studies/proposals/areas/review.md`;
-  - the check of the two R3 briefs, `a7540c280cead6255`, at `max`. It writes `studies/proposals/checks/R3-briefs-check.md`.
+  - the re-check of the R3 briefs' fixes, by the same agent that checked them, `a7540c280cead6255`, at `max`, from 22:08 UTC. It writes `studies/proposals/checks/R3-briefs-recheck.md`.
 - **Next:**
   1. fix what the review finds, and have its fixes re-checked;
-  2. fix what the R3 briefs' check finds;
-  3. the areas list to the founder (G2). The sample runs while the founder marks: `copy_statements.py candidates Q2 salla`, then the run from `briefs/R3-recording.md`;
+  2. fix what the re-check finds;
+  3. the areas list to the founder (G2), with the method rulings since the last message, one plain line each. The sample runs while the founder marks: `copy_statements.py candidates Q2 salla`, then the run from `briefs/R3-recording.md`;
   4. measure the sample (`count_tokens.py`), re-size, and tell the founder in the next message.
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
