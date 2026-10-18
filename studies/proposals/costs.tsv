@@ -2,3 +2,7 @@ step	run	agent	started	ended	tokens_millions	note
 R0	check of the drafts	aaa90803d4fe66dba	2026-10-18T19:04	2026-10-18T19:42	16.9	max
 R0	re-check of the fixes	aaa90803d4fe66dba	2026-10-18T20:06	2026-10-18T20:23	22.5	max; the same agent, resumed
 R0	coordinator	(this session)	2026-10-18T18:37	2026-10-18T21:01	65.5	drafting, fixes, the recount, the summary, the go
+R1	areas, shopify	a0469a445d1b0e914	2026-10-18T21:01	2026-10-18T21:06	3.8	high
+R1	areas, woocommerce	aaf2643a96501f5d8	2026-10-18T21:01	2026-10-18T21:06	1.7	high
+R1	areas, zid	a12d49e9152c9e5b0	2026-10-18T21:01	2026-10-18T21:05	1.8	high
+R1	areas, bigcommerce	a1907bde61272f6ac	2026-10-18T21:01	2026-10-18T21:05	1.2	high

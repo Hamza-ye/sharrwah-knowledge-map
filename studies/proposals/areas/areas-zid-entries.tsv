@@ -1,0 +1,536 @@
+inv_id	list	entry	concern_ids	area_ids	split
+ZD-I-0001	api-resources	Merchant APIs > Account > Me	ZD-C-077	ZD-A-25	
+ZD-I-0002	api-resources	Merchant APIs > Account > Store	ZD-C-077;ZD-C-035;ZD-C-050	ZD-A-25;ZD-A-11;ZD-A-10	yes
+ZD-I-0003	api-resources	Merchant APIs > Orders > Order Tags	ZD-C-080	ZD-A-15	
+ZD-I-0004	api-resources	Merchant APIs > Orders	ZD-C-080;ZD-C-054	ZD-A-15;ZD-A-12	yes
+ZD-I-0005	api-resources	Merchant APIs > Reverse Orders	ZD-C-081;ZD-C-054	ZD-A-15;ZD-A-12	yes
+ZD-I-0006	api-resources	Merchant APIs > Abandoned Carts	ZD-C-082	ZD-A-16	
+ZD-I-0007	api-resources	Merchant APIs > Products > Managing Products	ZD-C-083	ZD-A-14	
+ZD-I-0008	api-resources	Merchant APIs > Products > Digital Vouchers	ZD-C-043	ZD-A-14	
+ZD-I-0009	api-resources	Merchant APIs > Products > Product Categories	ZD-C-084	ZD-A-14	
+ZD-I-0010	api-resources	Merchant APIs > Products > Product Brands	ZD-C-083	ZD-A-14	
+ZD-I-0011	api-resources	Merchant APIs > Products > Product Badge	ZD-C-083	ZD-A-14	
+ZD-I-0012	api-resources	Merchant APIs > Products > Product Attributes	ZD-C-083	ZD-A-14	
+ZD-I-0013	api-resources	Merchant APIs > Products > Product Attribute Presets	ZD-C-083	ZD-A-14	
+ZD-I-0014	api-resources	Merchant APIs > Products > Product Variants	ZD-C-083	ZD-A-14	
+ZD-I-0015	api-resources	Merchant APIs > Products > Product Sorting	ZD-C-083	ZD-A-14	
+ZD-I-0016	api-resources	Merchant APIs > Products > Product Images	ZD-C-083	ZD-A-14	
+ZD-I-0017	api-resources	Merchant APIs > Products > Product Availability Notifications	ZD-C-087	ZD-A-14	
+ZD-I-0018	api-resources	Merchant APIs > Products > Product Export	ZD-C-083	ZD-A-14	
+ZD-I-0019	api-resources	Merchant APIs > Products > Product Stock	ZD-C-085	ZD-A-14	
+ZD-I-0020	api-resources	Merchant APIs > Products > Product Questions & Answers	ZD-C-086	ZD-A-17	
+ZD-I-0021	api-resources	Merchant APIs > Products > Product Reviews	ZD-C-086	ZD-A-17	
+ZD-I-0022	api-resources	Merchant APIs > Products > Digital Products	ZD-C-043	ZD-A-14	
+ZD-I-0023	api-resources	Merchant APIs > Inventories	ZD-C-085	ZD-A-14	
+ZD-I-0024	api-resources	Merchant APIs > Shipping	ZD-C-062	ZD-A-13	
+ZD-I-0025	api-resources	Merchant APIs > Marketing > Coupons	ZD-C-088	ZD-A-16	
+ZD-I-0026	api-resources	Merchant APIs > Marketing > Bundle Offers	ZD-C-089	ZD-A-16	
+ZD-I-0027	api-resources	Merchant APIs > Marketing > Loyalty Program	ZD-C-090	ZD-A-16	
+ZD-I-0028	api-resources	Merchant APIs > Marketing > Customer Wallets > Cashback Rules	ZD-C-019	ZD-A-16	
+ZD-I-0029	api-resources	Merchant APIs > Marketing > Customer Wallets > Wallet Analytics	ZD-C-019	ZD-A-16	
+ZD-I-0030	api-resources	Merchant APIs > Marketing > Customer Wallets > Manager Customer Wallet	ZD-C-019	ZD-A-16	
+ZD-I-0031	api-resources	Merchant APIs > Customers > Customer Tags	ZD-C-091	ZD-A-17	
+ZD-I-0032	api-resources	Merchant APIs > Customers > Customer Portal Tickets	ZD-C-092	ZD-A-17	
+ZD-I-0033	api-resources	Merchant APIs > Customers	ZD-C-091	ZD-A-17	
+ZD-I-0034	api-resources	Merchant APIs > Store Settings	ZD-C-077;ZD-C-051;ZD-C-012;ZD-C-033;ZD-C-097	ZD-A-25;ZD-A-12;ZD-A-02;ZD-A-10;ZD-A-24	yes
+ZD-I-0035	api-resources	Merchant APIs > Countries and Cities	ZD-C-033	ZD-A-10	
+ZD-I-0036	api-resources	Merchant APIs > Blogs > Settings	ZD-C-093	ZD-A-19	
+ZD-I-0037	api-resources	Merchant APIs > Blogs > Categories	ZD-C-093	ZD-A-19	
+ZD-I-0038	api-resources	Merchant APIs > Blogs > Posts > Media	ZD-C-093	ZD-A-19	
+ZD-I-0039	api-resources	Merchant APIs > Blogs > Posts	ZD-C-093	ZD-A-19	
+ZD-I-0040	api-resources	Merchant APIs > Blogs > Tags	ZD-C-093	ZD-A-19	
+ZD-I-0041	api-resources	Merchant APIs > Blogs > Storefront > Posts	ZD-C-093	ZD-A-19	
+ZD-I-0042	api-resources	Merchant APIs > Blogs > Storefront > Categories	ZD-C-093	ZD-A-19	
+ZD-I-0043	api-resources	Merchant APIs > Blogs > Storefront > Tags	ZD-C-093	ZD-A-19	
+ZD-I-0044	api-resources	Webhooks > APIs	ZD-C-072	ZD-A-22	
+ZD-I-0045	api-resources	App Management > APIs	ZD-C-022	ZD-A-21	
+ZD-I-0046	api-resources	API's > Authentication	ZD-C-075	ZD-A-22	
+ZD-I-0047	api-resources	API's > Products	ZD-C-075	ZD-A-22	
+ZD-I-0048	api-resources	API's > Categories	ZD-C-075	ZD-A-22	
+ZD-I-0049	api-resources	API's > Checkout	ZD-C-075	ZD-A-22	
+ZD-I-0050	api-resources	API's > Account	ZD-C-075	ZD-A-22	
+ZD-I-0051	api-resources	API's > Storefront	ZD-C-075	ZD-A-22	
+ZD-I-0052	api-resources	API's > Countries	ZD-C-075	ZD-A-22	
+ZD-I-0053	api-resources	Payment	ZD-C-010	ZD-A-01	
+ZD-I-0054	api-resources	ApplePay	ZD-C-010	ZD-A-01	
+ZD-I-0055	api-resources	Refund	ZD-C-010	ZD-A-01	
+ZD-I-0056	api-resources	Webhooks	ZD-C-010	ZD-A-01	
+ZD-I-0057	webhook-topics	order.create	ZD-C-080	ZD-A-15	
+ZD-I-0058	webhook-topics	order.status.update	ZD-C-080	ZD-A-15	
+ZD-I-0059	webhook-topics	order.payment_status.update	ZD-C-028	ZD-A-02	
+ZD-I-0060	webhook-topics	product.create	ZD-C-083	ZD-A-14	
+ZD-I-0061	webhook-topics	product.update	ZD-C-083	ZD-A-14	
+ZD-I-0062	webhook-topics	product.publish	ZD-C-083	ZD-A-14	
+ZD-I-0063	webhook-topics	product.delete	ZD-C-083	ZD-A-14	
+ZD-I-0064	webhook-topics	abandoned_cart.created	ZD-C-082	ZD-A-16	
+ZD-I-0065	webhook-topics	abandoned_cart.completed	ZD-C-082	ZD-A-16	
+ZD-I-0066	webhook-topics	customer.create	ZD-C-091	ZD-A-17	
+ZD-I-0067	webhook-topics	customer.update	ZD-C-091	ZD-A-17	
+ZD-I-0068	webhook-topics	customer.merchant.update	ZD-C-091	ZD-A-17	
+ZD-I-0069	webhook-topics	customer.login	ZD-C-091	ZD-A-17	
+ZD-I-0070	webhook-topics	category.create	ZD-C-084	ZD-A-14	
+ZD-I-0071	webhook-topics	category.update	ZD-C-084	ZD-A-14	
+ZD-I-0072	webhook-topics	category.delete	ZD-C-084	ZD-A-14	
+ZD-I-0073	webhook-topics	app.market.application.authorized	ZD-C-071	ZD-A-22	
+ZD-I-0074	webhook-topics	app.market.subscription.active	ZD-C-022	ZD-A-21	
+ZD-I-0075	webhook-topics	app.market.application.install	ZD-C-070	ZD-A-21	
+ZD-I-0076	webhook-topics	app.market.subscription.warning	ZD-C-022	ZD-A-21	
+ZD-I-0077	webhook-topics	app.market.subscription.suspended	ZD-C-022	ZD-A-21	
+ZD-I-0078	webhook-topics	app.market.subscription.expired	ZD-C-022	ZD-A-21	
+ZD-I-0079	webhook-topics	app.market.subscription.renew	ZD-C-022	ZD-A-21	
+ZD-I-0080	webhook-topics	app.market.subscription.upgrade	ZD-C-022	ZD-A-21	
+ZD-I-0081	webhook-topics	app.market.subscription.refunded	ZD-C-022	ZD-A-21	
+ZD-I-0082	webhook-topics	app.market.application.uninstall	ZD-C-070	ZD-A-21	
+ZD-I-0083	webhook-topics	app.market.application.rated	ZD-C-070	ZD-A-21	
+ZD-I-0084	webhook-topics	app.market.private.plan.request	ZD-C-022	ZD-A-21	
+ZD-I-0085	webhook-topics	merchant_linked	ZD-C-010	ZD-A-01	
+ZD-I-0086	webhook-topics	payment_paid	ZD-C-010	ZD-A-01	
+ZD-I-0087	webhook-topics	refund_status_changed	ZD-C-010	ZD-A-01	
+ZD-I-0088	access-scopes	third_account_identity_read	ZD-C-077	ZD-A-25	
+ZD-I-0089	access-scopes	third_store_details_read	ZD-C-077;ZD-C-050	ZD-A-25;ZD-A-10	yes
+ZD-I-0090	access-scopes	third_store_business_read	ZD-C-035	ZD-A-11	
+ZD-I-0091	access-scopes	third_store_details_write	ZD-C-077	ZD-A-25	
+ZD-I-0092	access-scopes	third_order_read	ZD-C-080	ZD-A-15	
+ZD-I-0093	access-scopes	third_order_write	ZD-C-080	ZD-A-15	
+ZD-I-0094	access-scopes	third_create_order	ZD-C-080	ZD-A-15	
+ZD-I-0095	access-scopes	orders.read_write	ZD-C-080;ZD-C-081	ZD-A-15	
+ZD-I-0096	access-scopes	orders.read	ZD-C-080;ZD-C-054	ZD-A-15;ZD-A-12	yes
+ZD-I-0097	access-scopes	abandoned_carts.read	ZD-C-082	ZD-A-16	
+ZD-I-0098	access-scopes	third_abandoned_carts_read	ZD-C-082	ZD-A-16	
+ZD-I-0099	access-scopes	products.read_write	ZD-C-083;ZD-C-043;ZD-C-086;ZD-C-087	ZD-A-14;ZD-A-17	yes
+ZD-I-0100	access-scopes	products.read	ZD-C-083;ZD-C-043	ZD-A-14	
+ZD-I-0101	access-scopes	third_categories_write	ZD-C-084	ZD-A-14	
+ZD-I-0102	access-scopes	inventories.read_write	ZD-C-085	ZD-A-14	
+ZD-I-0103	access-scopes	inventories.read	ZD-C-085	ZD-A-14	
+ZD-I-0104	access-scopes	shipping.read	ZD-C-062	ZD-A-13	
+ZD-I-0105	access-scopes	coupons.read	ZD-C-088	ZD-A-16	
+ZD-I-0106	access-scopes	third_coupons_write	ZD-C-088	ZD-A-16	
+ZD-I-0107	access-scopes	coupons.read_write	ZD-C-088	ZD-A-16	
+ZD-I-0108	access-scopes	third_bundle_offers_read	ZD-C-089	ZD-A-16	
+ZD-I-0109	access-scopes	third_bundle_offers_write	ZD-C-089	ZD-A-16	
+ZD-I-0110	access-scopes	loyalty_program.read	ZD-C-090	ZD-A-16	
+ZD-I-0111	access-scopes	loyalty_program.read_write	ZD-C-090	ZD-A-16	
+ZD-I-0112	access-scopes	third_loyalty_read	ZD-C-090	ZD-A-16	
+ZD-I-0113	access-scopes	third_customer_wallet_read	ZD-C-019	ZD-A-16	
+ZD-I-0114	access-scopes	third_customer_wallet_write	ZD-C-019	ZD-A-16	
+ZD-I-0115	access-scopes	third_customers_read	ZD-C-091	ZD-A-17	
+ZD-I-0116	access-scopes	third_customers_write	ZD-C-091	ZD-A-17	
+ZD-I-0117	access-scopes	account.read	ZD-C-077;ZD-C-012	ZD-A-25;ZD-A-02	yes
+ZD-I-0118	access-scopes	third_vat_read	ZD-C-051	ZD-A-12	
+ZD-I-0119	access-scopes	countries_cities.read	ZD-C-033	ZD-A-10	
+ZD-I-0120	access-scopes	third_one_signal_write	ZD-C-097	ZD-A-24	
+ZD-I-0121	access-scopes	third_payment_read	ZD-C-012;ZD-C-005	ZD-A-02;ZD-A-01	yes
+ZD-I-0122	access-scopes	third_webhook_read	ZD-C-072	ZD-A-22	
+ZD-I-0123	access-scopes	third_webhook_write	ZD-C-072	ZD-A-22	
+ZD-I-0124	access-scopes	webhooks.read_write	ZD-C-072	ZD-A-22	
+ZD-I-0125	access-scopes	embedded_apps_tokens_write	ZD-C-073	ZD-A-21	
+ZD-I-0126	settings	عام › خاصية إعادة توجيه الروابط ( لوحة التحكم الجديدة)	ZD-C-102	ZD-A-19	
+ZD-I-0127	settings	عام › الأسواق ( لوحة التحكم الجديدة )	ZD-C-034	ZD-A-10	
+ZD-I-0128	settings	عام › الأسئلة الشائعة لضمان زد	ZD-C-111	ZD-A-28	
+ZD-I-0129	settings	عام › الربط مع منصة فاتورة ZATCA ( لوحة التحكم الجديدة)	ZD-C-053	ZD-A-12	
+ZD-I-0130	settings	عام › إشعارات الفريق ( لوحة التحكم الجديدة )	ZD-C-097	ZD-A-24	
+ZD-I-0131	settings	عام › تفعيل Google maps ( لوحة التحكم الجديدة )	ZD-C-103	ZD-A-25	
+ZD-I-0132	settings	عام › طلبات التصدير ( لوحة التحكم الجديدة )	ZD-C-044	ZD-A-25	
+ZD-I-0133	settings	عام › خاصية الإهداء ( لوحة التحكم الجديدة )	ZD-C-101	ZD-A-15	
+ZD-I-0134	settings	عام › قيود الشحن و الدفع (لوحة التحكم الجديدة )	ZD-C-063	ZD-A-13	
+ZD-I-0135	settings	عام › إعدادات صفحة إتمام عملية الشراء ( لوحة التحكم الجديدة )	ZD-C-099	ZD-A-25	
+ZD-I-0136	settings	عام › اعدادات الضريبة ( لوحة التحكم الجديدة )	ZD-C-051	ZD-A-12	
+ZD-I-0137	settings	عام › خصائص الطلبات والمنتجات | المنتجات ( لوحة التحكم الجديدة )	ZD-C-100	ZD-A-14	
+ZD-I-0138	settings	عام › خصائص الطلبات والمنتجات | الطلبات ( لوحة التحكم الجديدة )	ZD-C-100	ZD-A-14	
+ZD-I-0139	settings	عام › اعدادات الفواتير (لوحة التحكم الجديدة )	ZD-C-052	ZD-A-12	
+ZD-I-0140	settings	عام › لغة وعملات المتجر ( لوحة التحكم الجديدة )	ZD-C-050	ZD-A-10	
+ZD-I-0141	settings	عام › اعدادات الامان (لوحة التحكم الجديدة )	ZD-C-095	ZD-A-25	
+ZD-I-0142	settings	عام › اعدادات الحساب ( لوحة التحكم الجديدة )	ZD-C-077	ZD-A-25	
+ZD-I-0143	settings	التواصل › تجديد اسم المرسل ( لوحة التحكم الجديدة )	ZD-C-098	ZD-A-24	
+ZD-I-0144	settings	التواصل › تنبيهات زد ( لوحة التحكم الجديدة )	ZD-C-097	ZD-A-24	
+ZD-I-0145	settings	التواصل › رسائل حالات الطلب ( لوحة التحكم الجديدة )	ZD-C-097	ZD-A-24	
+ZD-I-0146	settings	التواصل › تفعيل اسم المرسل ( لوحة التحكم الجديدة )	ZD-C-098	ZD-A-24	
+ZD-I-0147	settings	المتجر › الصفحات القانونية ( لوحة التحكم الجديدة )	ZD-C-039	ZD-A-08	
+ZD-I-0148	settings	المتجر › بيانات المتجر لتجار السعودية ( لوحة التحكم الجديدة )	ZD-C-035	ZD-A-11	
+ZD-I-0149	settings	المتجر › شراء نطاق جديد ( لوحة التحكم الجديدة)	ZD-C-096	ZD-A-25	
+ZD-I-0150	settings	المتجر › قائمة النطاقات (لوحة التحكم الجديدة )	ZD-C-096	ZD-A-25	
+ZD-I-0151	settings	المتجر › مجموعات الفريق ( لوحة التحكم الجديدة )	ZD-C-094	ZD-A-25	
+ZD-I-0152	settings	المتجر › فريق العمل (لوحة التحكم الجديدة )	ZD-C-094	ZD-A-25	
+ZD-I-0153	settings	المتجر › اوقات العمل الرسمية (لوحة التحكم الجديدة )	ZD-C-104	ZD-A-25	
+ZD-I-0154	other:help-centre-zid-products	مزيد	ZD-C-109;ZD-C-024	ZD-A-06	
+ZD-I-0155	other:help-centre-zid-products	مزيد › عن مزيد	ZD-C-109	ZD-A-06	
+ZD-I-0156	other:help-centre-zid-products	مزيد › خصائص و مميزات مزيد	ZD-C-109	ZD-A-06	
+ZD-I-0157	other:help-centre-zid-products	زد لوجيستك	ZD-C-060	ZD-A-13	
+ZD-I-0158	other:help-centre-zid-products	زد لوجيستك › باقات البوليصات	ZD-C-060	ZD-A-13	
+ZD-I-0159	other:help-centre-zid-products	زد لوجيستك › طرق الشحن	ZD-C-062;ZD-C-060	ZD-A-13	
+ZD-I-0160	other:help-centre-zid-products	زد لوجيستك › تتبع الشحنات	ZD-C-060	ZD-A-13	
+ZD-I-0161	other:help-centre-zid-products	زد لوجيستك › اللوجستيات	ZD-C-060	ZD-A-13	
+ZD-I-0162	other:help-centre-zid-products	زد باي	ZD-C-001;ZD-C-002;ZD-C-003;ZD-C-004;ZD-C-005;ZD-C-008	ZD-A-01	
+ZD-I-0163	other:help-centre-zid-products	زد باي › العمليات	ZD-C-002	ZD-A-01	
+ZD-I-0164	other:help-centre-zid-products	زد باي › روابط الدفع	ZD-C-008	ZD-A-01	
+ZD-I-0165	other:help-centre-zid-products	زد باي › الإيداعات	ZD-C-003	ZD-A-01	
+ZD-I-0166	other:help-centre-zid-products	زد باي › الحسابات البنكية	ZD-C-004	ZD-A-01	
+ZD-I-0167	other:help-centre-zid-products	زد باي › المدفوعات	ZD-C-005;ZD-C-013	ZD-A-01;ZD-A-02	yes
+ZD-I-0168	other:help-centre-zid-products	زد باي › تفعيل زد باي	ZD-C-001;ZD-C-038	ZD-A-01	
+ZD-I-0169	other:help-centre-zid-products	سوق التطبيقات	ZD-C-070	ZD-A-21	
+ZD-I-0170	other:help-centre-zid-products	سوق التطبيقات › طرق الربط	ZD-C-070;ZD-C-074	ZD-A-21;ZD-A-22	yes
+ZD-I-0171	other:help-centre-zid-products	سوق التطبيقات › التطبيقات	ZD-C-070	ZD-A-21	
+ZD-I-0172	other:help-centre-zid-products	سوق التطبيقات › تطبيق الجوال	ZD-C-116	ZD-A-27	
+ZD-I-0173	other:help-centre-zid-products	زد نمو	ZD-C-115	ZD-A-26	
+ZD-I-0174	other:help-centre-zid-products	زد كاشير	ZD-C-108	ZD-A-23	
+ZD-I-0175	other:help-centre-zid-products	زد كاشير › عن زد كاشير	ZD-C-108	ZD-A-23	
+ZD-I-0176	other:help-centre-zid-products	زد كاشير › خصائص و مميزات زد كاشير	ZD-C-108	ZD-A-23	
+ZD-I-0177	other:help-centre-zid-products	تمويل زد	ZD-C-023	ZD-A-05	
+ZD-I-0178	other:help-centre-zid-products	تمويل زد › تمويل زد	ZD-C-023	ZD-A-05	
+ZD-I-0179	other:help-centre-zid-products	تمويل زد › إدارة التمويل	ZD-C-023	ZD-A-05	
+ZD-I-0180	other:help-centre-zid-products	تمويل زد › متطلبات التمويل	ZD-C-023	ZD-A-05	
+ZD-I-0181	other:help-centre-zid-products	سوق الثيمات	ZD-C-076	ZD-A-20	
+ZD-I-0182	other:help-centre-zid-products	سوق الثيمات › الثيمات	ZD-C-076	ZD-A-20	
+ZD-I-0183	other:help-centre-zid-products	سوق الثيمات › تحسين محركات البحث	ZD-C-106	ZD-A-16	
+ZD-I-0184	other:help-centre-zid-products	سوق الثيمات › الصفحات	ZD-C-113	ZD-A-19	
+ZD-I-0185	other:help-centre-zid-products	تطبيق الجوال	ZD-C-116	ZD-A-27	
+ZD-I-0186	plan-features	Basic Features / المزايا الأساسية › Security Settings / إعدادات الأمان	ZD-C-095	ZD-A-25	
+ZD-I-0187	plan-features	Basic Features / المزايا الأساسية › Invoice Printing / طباعة الفواتير	ZD-C-052	ZD-A-12	
+ZD-I-0188	plan-features	Basic Features / المزايا الأساسية › Shipping Label Printing / طباعة بوليصة الشحن	ZD-C-060	ZD-A-13	
+ZD-I-0190	plan-features	Basic Features / المزايا الأساسية › Order Performance Indicator (Order Streaks) / مؤشر أداء الطلبات (Order Streaks)	ZD-C-105	ZD-A-18	
+ZD-I-0191	plan-features	Basic Features / المزايا الأساسية › Mobile & Tablet POS App / تطبيق الكاشير للجوال والتابلت	ZD-C-108	ZD-A-23	
+ZD-I-0192	plan-features	Basic Features / المزايا الأساسية › Account Details / تفاصيل الحساب	ZD-C-077	ZD-A-25	
+ZD-I-0193	plan-features	Basic Features / المزايا الأساسية › Zid Wallet / محفظة زد	ZD-C-017	ZD-A-03	
+ZD-I-0194	plan-features	Basic Features / المزايا الأساسية › WhatsApp Login / تسجيل الدخول عبر واتساب	ZD-C-091	ZD-A-17	
+ZD-I-0195	plan-features	Basic Features / المزايا الأساسية › Customer Information / معلومات العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0196	plan-features	Basic Features / المزايا الأساسية › Add Team Members / إضافة فريق عمل	ZD-C-094	ZD-A-25	
+ZD-I-0197	plan-features	Basic Features / المزايا الأساسية › Custom Domain Linking / ربط دومين خاص	ZD-C-096	ZD-A-25	
+ZD-I-0198	plan-features	Basic Features / المزايا الأساسية › Advanced Payment Methods / طرق الدفع المتقدمة	ZD-C-012;ZD-C-013;ZD-C-014	ZD-A-02	
+ZD-I-0199	plan-features	Basic Features / المزايا الأساسية › Live Chat Support / الدعم الفني عبر المحادثات	ZD-C-114	ZD-A-29	
+ZD-I-0200	plan-features	Basic Features / المزايا الأساسية › Invoice & Tax Settings / إعدادات الفواتير والضرائب	ZD-C-051;ZD-C-052	ZD-A-12	
+ZD-I-0201	plan-features	Basic Features / المزايا الأساسية › CSS interface customization / تخصيص الواجهة CSS	ZD-C-113	ZD-A-19	
+ZD-I-0202	plan-features	Shipping / الشحن › Low-Cost Shipping Starting from 11 SAR/Order / الشحن بأقل تكلفة يبدأ من (11 ريال للطلب)	ZD-C-060	ZD-A-13	
+ZD-I-0203	plan-features	Shipping / الشحن › Shipping Management from One Dashboard / إدارة الشحن من لوحة تحكم واحدة	ZD-C-060	ZD-A-13	
+ZD-I-0204	plan-features	Shipping / الشحن › Cancel & Edit Shipping Labels / إلغاء وتعديل بوليصة الشحن	ZD-C-060	ZD-A-13	
+ZD-I-0205	plan-features	Shipping / الشحن › Automatic Label Generation / إنشاء البوليصات تلقائياً	ZD-C-060	ZD-A-13	
+ZD-I-0206	plan-features	Shipping / الشحن › Zid Logistics: One Contract for 35 Carriers / (زد الوجيستيات) عقد واحد يجمع 35 شركة شحن	ZD-C-060	ZD-A-13	
+ZD-I-0207	plan-features	Shipping / الشحن › Choose Delivery Carriers / اختيار شركات الشحن للتوصيل	ZD-C-060	ZD-A-13	
+ZD-I-0208	plan-features	Shipping / الشحن › Choose Return Carriers / اختيار شركة شحن الاسترجاع	ZD-C-060	ZD-A-13	
+ZD-I-0209	plan-features	Shipping / الشحن › Prepaid Label Packages / باقات البوليصات المدفوعة مقدماً	ZD-C-060	ZD-A-13	
+ZD-I-0210	plan-features	Shipping / الشحن › Merchant Pickup Service / خدمة استلام الشحنات من التاجر	ZD-C-060	ZD-A-13	
+ZD-I-0211	plan-features	Shipping / الشحن › Schedule Order Pickups / تحديد مواعيد استلام الطلبات	ZD-C-060	ZD-A-13	
+ZD-I-0212	plan-features	Shipping / الشحن › Cash on Delivery Collection / تحصيل الدفع عند الاستلام	ZD-C-015	ZD-A-13	
+ZD-I-0213	plan-features	Shipping / الشحن › Full Coverage Across All KSA Regions / تغطية كاملة لجميع مناطق المملكة	ZD-C-060	ZD-A-13	
+ZD-I-0214	plan-features	Shipping / الشحن › International Shipping / شحن دولي	ZD-C-060	ZD-A-13	
+ZD-I-0215	plan-features	Shipping / الشحن › Comprehensive Shipping Reports / تقارير شاملة للشحن	ZD-C-060	ZD-A-13	
+ZD-I-0216	plan-features	Shipping / الشحن › Unlimited Monthly Shipping Orders / طلبات شحن شهرية بدون حدود	ZD-C-060	ZD-A-13	
+ZD-I-0217	plan-features	Shipping / الشحن › Multiple Shipping Types (Express, Standard, Refrigerated, Heavy) / أنواع الشحن المتعددة (سريع، عادي، مبرد، ثقيل)	ZD-C-060	ZD-A-13	
+ZD-I-0218	plan-features	Payments / الدفع › Cash on Delivery / الدفع عند الاستلام	ZD-C-014	ZD-A-02	
+ZD-I-0219	plan-features	Payments / الدفع › Bank Transfer Payment / الدفع بالتحويل البنكي	ZD-C-016	ZD-A-02	
+ZD-I-0220	plan-features	Payments / الدفع › Batch Print Shipping Papers / طباعة دفعة لأوراق الشحن	ZD-C-060	ZD-A-13	
+ZD-I-0221	plan-features	Payments / الدفع › Payment Status / حالة الدفع	ZD-C-028	ZD-A-02	
+ZD-I-0222	plan-features	Payments / الدفع › Bulk Payment Status Update / تغيير حالة الدفع بالجملة	ZD-C-028	ZD-A-02	
+ZD-I-0223	plan-features	Payments / الدفع › Various Payment Methods / طرق الدفع المتنوعة	ZD-C-012;ZD-C-005;ZD-C-013	ZD-A-02;ZD-A-01	yes
+ZD-I-0224	plan-features	Payments / الدفع › Block Cash on Delivery / حظر الدفع عند الاستلام	ZD-C-014	ZD-A-02	
+ZD-I-0225	plan-features	Payments / الدفع › Card Discount / خصم على البطاقة	ZD-C-088	ZD-A-16	
+ZD-I-0226	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Product Categories / تصنيف المنتجات	ZD-C-084	ZD-A-14	
+ZD-I-0227	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Custom Product Pricing / تحديد سعر المنتج مخصص	ZD-C-083	ZD-A-14	
+ZD-I-0228	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Add Products / إضافة منتجات	ZD-C-083	ZD-A-14	
+ZD-I-0229	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Import Products / استيراد المنتجات	ZD-C-083	ZD-A-14	
+ZD-I-0230	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Best-Selling Products / المنتجات الأكثر مبيعاً	ZD-C-105	ZD-A-18	
+ZD-I-0231	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Duplicate Product / تكرار المنتج	ZD-C-083	ZD-A-14	
+ZD-I-0232	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Sort Products / ترتيب المنتجات	ZD-C-083	ZD-A-14	
+ZD-I-0233	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Top-Selling Products / أعلى المنتجات مبيعاً	ZD-C-105	ZD-A-18	
+ZD-I-0234	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Product Management - Product Sales / إدارة المنتجات - مبيعات المنتجات	ZD-C-105	ZD-A-18	
+ZD-I-0235	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Average Products per Order / متوسط عدد المنتجات لكل طلب	ZD-C-105	ZD-A-18	
+ZD-I-0236	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Product Management - Bulk Add Products / إدارة المنتجات - إضافة منتجات مجمعة	ZD-C-083	ZD-A-14	
+ZD-I-0237	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Product Actions / إجراءات المنتج	ZD-C-083	ZD-A-14	
+ZD-I-0238	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Update Product Prices / تحديث أسعار المنتجات	ZD-C-083	ZD-A-14	
+ZD-I-0239	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Inventory Management / إدارة المخزون	ZD-C-085	ZD-A-14	
+ZD-I-0240	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Inventory Withdrawal Priority / أولوية السحب من المخزون	ZD-C-085	ZD-A-14	
+ZD-I-0241	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Export Full Quantities / تصدير الكميات الكاملة	ZD-C-085	ZD-A-14	
+ZD-I-0242	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Add Dynamic Bundle / إضافة حزمة ديناميكية	ZD-C-089	ZD-A-16	
+ZD-I-0243	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Sales by Inventory Location / مبيعات حسب موقع الجرد	ZD-C-085	ZD-A-14	
+ZD-I-0244	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Inventory Management Logs / سجلات إدارة المخزون	ZD-C-085	ZD-A-14	
+ZD-I-0245	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Update Product Weights / تحديث أوزان المنتجات	ZD-C-083	ZD-A-14	
+ZD-I-0246	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Quick Bulk Edit / تعديل جماعي سريع	ZD-C-083	ZD-A-14	
+ZD-I-0247	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Product Management - Update Product Quantities / إدارة المنتجات - تحديث كميات المنتجات	ZD-C-085	ZD-A-14	
+ZD-I-0248	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Product Availability Notification / إشعار توفر المنتج	ZD-C-087	ZD-A-14	
+ZD-I-0249	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Barcode Printing / طباعة الباركود	ZD-C-083	ZD-A-14	
+ZD-I-0250	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Export Products / تصدير المنتجات	ZD-C-083	ZD-A-14	
+ZD-I-0251	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Inventory Management Logs / سجلات إدارة المخزون	ZD-C-085	ZD-A-14	
+ZD-I-0252	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Inventory Count / جرد المخزون	ZD-C-085	ZD-A-14	
+ZD-I-0253	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Product Cost Report / تقرير تكلفة المنتج	ZD-C-105	ZD-A-18	
+ZD-I-0254	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Transfer Inventory Between Branches / نقل المخزون بين الفروع	ZD-C-085	ZD-A-14	
+ZD-I-0255	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Inventory Count / جرد المخزون	ZD-C-085	ZD-A-14	
+ZD-I-0256	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Request Inventory via POS / طلب المخزون عبر الكاشير	ZD-C-085;ZD-C-108	ZD-A-14;ZD-A-23	yes
+ZD-I-0257	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Display Products by Customer City / عرض المنتجات حسب مدينة العميل	ZD-C-085	ZD-A-14	
+ZD-I-0258	plan-features	Product & Inventory Management / إدارة المنتجات والمخزون › Transfer Inventory Between Branches / نقل المخزون بين الفروع	ZD-C-085	ZD-A-14	
+ZD-I-0259	plan-features	Order Management / إدارة الطلبات › Schedule Order Pickups - Zid Ship / تحديد مواعيد استلام الطلبات - زد شيب	ZD-C-060	ZD-A-13	
+ZD-I-0260	plan-features	Order Management / إدارة الطلبات › View Order Sequence / عرض تسلسل الطلبات	ZD-C-080	ZD-A-15	
+ZD-I-0261	plan-features	Order Management / إدارة الطلبات › Orders Summary / ملخص الطلبات	ZD-C-080	ZD-A-15	
+ZD-I-0262	plan-features	Order Management / إدارة الطلبات › Customize Order Table Columns / تخصيص أعمدة جدول الطلبات	ZD-C-080	ZD-A-15	
+ZD-I-0263	plan-features	Order Management / إدارة الطلبات › Bulk Export Orders / تصدير الطلبات بالجملة	ZD-C-080	ZD-A-15	
+ZD-I-0264	plan-features	Order Management / إدارة الطلبات › Order Status / حالة الطلب	ZD-C-080	ZD-A-15	
+ZD-I-0265	plan-features	Order Management / إدارة الطلبات › Filter Orders / تصفية الطلبات	ZD-C-080	ZD-A-15	
+ZD-I-0266	plan-features	Order Management / إدارة الطلبات › Change Order Statuses / تغيير حالات الطلبات	ZD-C-080	ZD-A-15	
+ZD-I-0267	plan-features	Order Management / إدارة الطلبات › Bulk Change Order Status / تغيير حالة الطلبات بالجملة	ZD-C-080	ZD-A-15	
+ZD-I-0268	plan-features	Order Management / إدارة الطلبات › Draft Orders / الطلبات المسودة	ZD-C-080	ZD-A-15	
+ZD-I-0269	plan-features	Order Management / إدارة الطلبات › Order Summary / ملخص الطلب	ZD-C-080	ZD-A-15	
+ZD-I-0270	plan-features	Order Management / إدارة الطلبات › Export Order Fulfillment List / تصدير قائمة تجهيز الطلبات	ZD-C-080	ZD-A-15	
+ZD-I-0271	plan-features	Order Management / إدارة الطلبات › Order Notes / ملاحظات الطلب	ZD-C-080	ZD-A-15	
+ZD-I-0272	plan-features	Order Management / إدارة الطلبات › Order Update History / تاريخ تحديثات الطلب	ZD-C-080	ZD-A-15	
+ZD-I-0273	plan-features	Order Management / إدارة الطلبات › Delayed Orders / طلبات متأخرة	ZD-C-080	ZD-A-15	
+ZD-I-0274	plan-features	Order Management / إدارة الطلبات › Long-Term Order Management / إدارة الطلبات على المدى الطويل	ZD-C-080	ZD-A-15	
+ZD-I-0275	plan-features	Order Management / إدارة الطلبات › Order Tags / وسوم الطلبات	ZD-C-080	ZD-A-15	
+ZD-I-0276	plan-features	Order Management / إدارة الطلبات › Order Click Rate / نسبة النقر على الطلبات	ZD-C-105	ZD-A-18	
+ZD-I-0277	plan-features	Order Management / إدارة الطلبات › Total Value of Carts Converted to Orders / القيمة الإجمالية لعربات التسوق المحولة إلى طلبات	ZD-C-082	ZD-A-16	
+ZD-I-0278	plan-features	Order Management / إدارة الطلبات › Custom Order Status / حالة الطلب المخصصة	ZD-C-080	ZD-A-15	
+ZD-I-0279	plan-features	Order Management / إدارة الطلبات › Order Management - Order Click Rate / إدارة الطلبات - نسبة النقر على الطلبات	ZD-C-105	ZD-A-18	
+ZD-I-0280	plan-features	Order Management / إدارة الطلبات › Total Order Sales Using Discount Codes / إجمالي مبيعات الطلبات باستخدام أكواد الخصم	ZD-C-088	ZD-A-16	
+ZD-I-0281	plan-features	Order Management / إدارة الطلبات › Orders per Auto Discount / عدد الطلبات لكل خصم تلقائي	ZD-C-088	ZD-A-16	
+ZD-I-0282	plan-features	Order Management / إدارة الطلبات › Orders Using Discount Codes / عدد الطلبات باستخدام أكواد الخصم	ZD-C-088	ZD-A-16	
+ZD-I-0283	plan-features	Order Management / إدارة الطلبات › Recovery Rate from Carts Converted to Orders / نسبة الاسترداد من العربات المحولة لطلبات	ZD-C-082	ZD-A-16	
+ZD-I-0284	plan-features	Order Management / إدارة الطلبات › Unlimited Order Editing / تعديل الطلبات بدون حدود	ZD-C-080	ZD-A-15	
+ZD-I-0285	plan-features	Order Management / إدارة الطلبات › Canceled Orders Value / قيمة الطلبات الملغاة	ZD-C-105	ZD-A-18	
+ZD-I-0286	plan-features	Order Management / إدارة الطلبات › Returned Orders / الطلبات المُعادة	ZD-C-081	ZD-A-15	
+ZD-I-0287	plan-features	Order Management / إدارة الطلبات › Order Status Notifications (Limited) / إشعارات حالة الطلب (حدود محددة)	ZD-C-097	ZD-A-24	
+ZD-I-0288	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Add Discount Coupons / إضافة كوبونات خصم	ZD-C-088	ZD-A-16	
+ZD-I-0289	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Abandoned Cart Value / قيمة السلات المتروكة	ZD-C-082	ZD-A-16	
+ZD-I-0290	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Abandoned Cart Count / عدد السلات المتروكة	ZD-C-082	ZD-A-16	
+ZD-I-0291	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Abandoned Cart Details / تفاصيل السلات المتروكة	ZD-C-082	ZD-A-16	
+ZD-I-0292	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Export Affiliate Data / تصدير بيانات الشركاء	ZD-C-106	ZD-A-16	
+ZD-I-0293	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Number of Discount Codes / عدد أكواد الخصم	ZD-C-088	ZD-A-16	
+ZD-I-0294	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Commission / العمولة	ZD-C-106	ZD-A-16	
+ZD-I-0295	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Affiliate Information / معلومات الشركاء	ZD-C-106	ZD-A-16	
+ZD-I-0296	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Affiliate Links / روابط الشركاء	ZD-C-106	ZD-A-16	
+ZD-I-0297	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Discounts / الخصومات	ZD-C-088	ZD-A-16	
+ZD-I-0298	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Add Marketing Affiliates / إضافة شركاء تسويق	ZD-C-106	ZD-A-16	
+ZD-I-0299	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Abandoned Cart Stage / مرحلة سلة الشراء المهجورة	ZD-C-082	ZD-A-16	
+ZD-I-0300	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Store SEO Customization / تأهيل المتجر لمحركات البحث	ZD-C-106	ZD-A-16	
+ZD-I-0301	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Marketing - SMS Content / التسويق - محتوى الرسائل النصية	ZD-C-106	ZD-A-16	
+ZD-I-0302	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Multiple Coupons with Advanced Analytics / كوبونات متعددة مع تحليلات متقدمة	ZD-C-088	ZD-A-16	
+ZD-I-0303	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Average Cart Value / متوسط قيمة السلة	ZD-C-105	ZD-A-18	
+ZD-I-0304	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Bulk Customer Alerts / تنبيهات جماعية للعملاء	ZD-C-106	ZD-A-16	
+ZD-I-0305	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Abandoned Cart Sales Over Time / مبيعات السلات المتروكة مع الوقت	ZD-C-082	ZD-A-16	
+ZD-I-0306	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Total Abandoned Cart Value / القيمة الإجمالية للسلات المتروكة	ZD-C-082	ZD-A-16	
+ZD-I-0307	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Coupons - Coupon Results / الكوبونات - نتائج الكوبونات	ZD-C-088	ZD-A-16	
+ZD-I-0308	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Create New Campaign / إنشاء حملة جديدة	ZD-C-106	ZD-A-16	
+ZD-I-0309	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Campaign Title / عنوان الحملة	ZD-C-106	ZD-A-16	
+ZD-I-0310	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Loyalty - Points Expiry Period / برامج الولاء - فترة انتهاء صلاحية النقاط	ZD-C-090	ZD-A-16	
+ZD-I-0311	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Loyalty - Earned Points / برامج الولاء - النقاط المكتسبة	ZD-C-090	ZD-A-16	
+ZD-I-0312	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Loyalty - Points Redemption Methods / برامج الولاء - طرق استبدال النقاط	ZD-C-090	ZD-A-16	
+ZD-I-0313	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Loyalty Programs / برامج الولاء - الولاء	ZD-C-090	ZD-A-16	
+ZD-I-0314	plan-features	Marketing & Growth Tools / أدوات التسويق والنمو › Loyalty - Redeemed Points / برامج الولاء - النقاط المستبدلة	ZD-C-090	ZD-A-16	
+ZD-I-0315	plan-features	Reports & Analytics / التقارير والتحليلات › Visit Count / عدد الزيارات	ZD-C-105	ZD-A-18	
+ZD-I-0316	plan-features	Reports & Analytics / التقارير والتحليلات › Sales Value Over Time / قيمة المبيعات مع الوقت	ZD-C-105	ZD-A-18	
+ZD-I-0317	plan-features	Reports & Analytics / التقارير والتحليلات › Total Sales / إجمالي المبيعات	ZD-C-105	ZD-A-18	
+ZD-I-0318	plan-features	Reports & Analytics / التقارير والتحليلات › Top-Selling Cities / أعلى المدن مبيعاً	ZD-C-105	ZD-A-18	
+ZD-I-0319	plan-features	Reports & Analytics / التقارير والتحليلات › Reports - Sales Channels / التقارير - قنوات البيع	ZD-C-105	ZD-A-18	
+ZD-I-0320	plan-features	Reports & Analytics / التقارير والتحليلات › Export Data / تصدير البيانات	ZD-C-105	ZD-A-18	
+ZD-I-0321	plan-features	Reports & Analytics / التقارير والتحليلات › Reports - Sales Value Over Time / التقارير - قيمة المبيعات مع الوقت	ZD-C-105	ZD-A-18	
+ZD-I-0322	plan-features	Reports & Analytics / التقارير والتحليلات › Traffic Sources / مصادر الزيارات	ZD-C-105	ZD-A-18	
+ZD-I-0323	plan-features	Reports & Analytics / التقارير والتحليلات › Customer Journey Stages / مراحل رحلة العميل	ZD-C-105	ZD-A-18	
+ZD-I-0324	plan-features	Reports & Analytics / التقارير والتحليلات › Reports - Total Sales / التقارير - إجمالي المبيعات	ZD-C-105	ZD-A-18	
+ZD-I-0325	plan-features	Reports & Analytics / التقارير والتحليلات › Reports - Total Profit / التقارير - إجمالي الأرباح	ZD-C-105	ZD-A-18	
+ZD-I-0326	plan-features	Store Design / تصميم المتجر › Search Bar / شريط البحث	ZD-C-113	ZD-A-19	
+ZD-I-0327	plan-features	Store Design / تصميم المتجر › Responsive Design / تصميم متجاوب (Responsive)	ZD-C-113	ZD-A-19	
+ZD-I-0328	plan-features	Store Design / تصميم المتجر › Various Ready-Made Templates / قوالب جاهزة متنوعة	ZD-C-113	ZD-A-19	
+ZD-I-0329	plan-features	Store Design / تصميم المتجر › Customize Colors & Fonts / تخصيص الألوان والخطوط	ZD-C-113	ZD-A-19	
+ZD-I-0330	plan-features	Store Design / تصميم المتجر › Filtering / التصفية	ZD-C-113	ZD-A-19	
+ZD-I-0331	plan-features	Store Design / تصميم المتجر › Filter Criteria & Options / معايير وفلاتر التصفية	ZD-C-113	ZD-A-19	
+ZD-I-0332	plan-features	Store Design / تصميم المتجر › Store - Landing Page / المتجر - صفحة الهبوط	ZD-C-113	ZD-A-19	
+ZD-I-0333	plan-features	Store Design / تصميم المتجر › Store - SDK Template Design (Up to 2) / المتجر - تصميم القالب البرمجي (SDK) (حتى 2)	ZD-C-113	ZD-A-19	
+ZD-I-0334	plan-features	Customer Management / إدارة العملاء › Review Management / إدارة التقييمات	ZD-C-086	ZD-A-17	
+ZD-I-0335	plan-features	Customer Management / إدارة العملاء › Top Customers / أفضل العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0336	plan-features	Customer Management / إدارة العملاء › Customer Details / تفاصيل العميل	ZD-C-091	ZD-A-17	
+ZD-I-0337	plan-features	Customer Management / إدارة العملاء › Average Orders per Customer / متوسط الطلبات لكل عميل	ZD-C-091	ZD-A-17	
+ZD-I-0338	plan-features	Customer Management / إدارة العملاء › Customers Using Discount Codes / عدد العملاء المستخدمين لكود الخصم	ZD-C-091	ZD-A-17	
+ZD-I-0339	plan-features	Customer Management / إدارة العملاء › Customer Wishlist / قائمة رغبات العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0340	plan-features	Customer Management / إدارة العملاء › Edit Customer Data / تعديل بيانات العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0341	plan-features	Customer Management / إدارة العملاء › Average Customer Sales / متوسط مبيعات العميل	ZD-C-091	ZD-A-17	
+ZD-I-0342	plan-features	Customer Management / إدارة العملاء › Filter Customers / تصفية العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0343	plan-features	Customer Management / إدارة العملاء › Block Customers / حظر العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0344	plan-features	Customer Management / إدارة العملاء › Customer Location / موقع العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0345	plan-features	Customer Management / إدارة العملاء › Export Customer Data / تصدير بيانات العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0346	plan-features	Customer Management / إدارة العملاء › Customer Targeting / استهداف العملاء	ZD-C-091	ZD-A-17	
+ZD-I-0347	plan-features	Customer Management / إدارة العملاء › Returning Customer Rate / نسبة العملاء العائدين	ZD-C-091	ZD-A-17	
+ZD-I-0348	plan-features	Customer Management / إدارة العملاء › Add Business Customers / إضافة عملاء تجاريين	ZD-C-091	ZD-A-17	
+ZD-I-0349	plan-features	Customer Management / إدارة العملاء › Q&A and Review Messages / رسائل الأسئلة والتقييمات	ZD-C-086	ZD-A-17	
+ZD-I-0350	plan-features	Customer Management / إدارة العملاء › Create Customer Groups / إنشاء مجموعات عملاء	ZD-C-091	ZD-A-17	
+ZD-I-0351	plan-features	Customer Management / إدارة العملاء › Points-Earning Customers / العملاء المكتسبون للنقاط	ZD-C-090	ZD-A-16	
+ZD-I-0352	plan-features	Customer Management / إدارة العملاء › Customer Display Screen / شاشة عرض العملاء	ZD-C-108	ZD-A-23	
+ZD-I-0353	plan-features	Other / اخرى › Zid Wallet / محفظة زد	ZD-C-019	ZD-A-16	
+ZD-I-0354	plan-features	Other / اخرى › Full & Partial Returns / الإرجاع الكامل والجزئي	ZD-C-081	ZD-A-15	
+ZD-I-0357	plan-features	Other / اخرى › Geo-Based Currency Settings / ضبط العملات على الموقع الجغرافي	ZD-C-050	ZD-A-10	
+ZD-I-0358	plan-features	Other / اخرى › Team Notifications / إشعارات الفريق	ZD-C-097	ZD-A-24	
+ZD-I-0359	plan-features	Other / اخرى › Ticketing & Chat System / نظام التذاكر والدردشة	ZD-C-114	ZD-A-29	
+ZD-I-0363	plan-features	Other / اخرى › Message Settings / إعدادات الرسائل	ZD-C-097	ZD-A-24	
+ZD-I-0364	plan-features	Other / اخرى › Sender Name / اسم المرسل	ZD-C-098	ZD-A-24	
+ZD-I-0365	plan-features	Other / اخرى › Message Language / لغة الرسائل	ZD-C-097	ZD-A-24	
+ZD-I-0366	plan-features	Other / اخرى › Custom Fields / حقول مخصصة	ZD-C-100	ZD-A-14	
+ZD-I-0367	plan-features	Other / اخرى › Tax-Applicable Countries / تحديد الدول الخاضعة للضرائب	ZD-C-051	ZD-A-12	
+ZD-I-0368	other:plan-cards	Starter › Add your products to mazeed marketplace in front of 5 million customers	ZD-C-109	ZD-A-06	
+ZD-I-0369	other:plan-cards	Starter › Unlimited number of products, orders, and customers	ZD-C-020	ZD-A-04	
+ZD-I-0370	other:plan-cards	Starter › Add discount coupons	ZD-C-088	ZD-A-16	
+ZD-I-0371	other:plan-cards	Starter › Basic payment methods (bank transfer, cash on delivery)	ZD-C-014;ZD-C-016	ZD-A-02	
+ZD-I-0372	other:plan-cards	Starter › Basic payment methods (bank transfer, cash on delivery)	ZD-C-014;ZD-C-016	ZD-A-02	
+ZD-I-0373	other:plan-cards	Starter › Integration with shipping companies via Zid logistics	ZD-C-060	ZD-A-13	
+ZD-I-0374	other:plan-cards	Rise › 50% cashback (for annual package only)	ZD-C-020	ZD-A-04	
+ZD-I-0375	other:plan-cards	Rise › Store management authority for one extra person	ZD-C-094	ZD-A-25	
+ZD-I-0376	other:plan-cards	Rise › Zid Payments gateway to accept Mada, Visa, and Mastercard	ZD-C-005	ZD-A-01	
+ZD-I-0377	other:plan-cards	Rise › Enable Apple Pay for faster checkout	ZD-C-005	ZD-A-01	
+ZD-I-0378	other:plan-cards	Rise › Access to themes store (Over 50 professional themes)	ZD-C-076	ZD-A-20	
+ZD-I-0379	other:plan-cards	Rise › Link a custom domain to boost customer trust	ZD-C-096	ZD-A-25	
+ZD-I-0380	other:plan-cards	Rise › Shipping rates starting from 11 SAR	ZD-C-060	ZD-A-13	
+ZD-I-0381	other:plan-cards	Rise › Free WhatsApp (Basic Plan)	ZD-C-107	ZD-A-24	
+ZD-I-0382	other:plan-cards	Rise › Free Zid POS on Basic Plan	ZD-C-108	ZD-A-23	
+ZD-I-0383	other:plan-cards	Growth › 50% cashback (on annual plan only)	ZD-C-020	ZD-A-04	
+ZD-I-0384	other:plan-cards	Growth › Free WhatsApp (Basic Plan)	ZD-C-107	ZD-A-24	
+ZD-I-0385	other:plan-cards	Growth › One year free on Zid Cashier (Basic/Pro Package)	ZD-C-108	ZD-A-23	
+ZD-I-0386	other:plan-cards	Growth › Calculate and display VAT	ZD-C-051	ZD-A-12	
+ZD-I-0387	other:plan-cards	Growth › Store management access for 5 additional people	ZD-C-094	ZD-A-25	
+ZD-I-0388	other:plan-cards	Growth › Inventory management across 2 branches or warehouses	ZD-C-085	ZD-A-14	
+ZD-I-0389	other:plan-cards	Growth › Segment customers for exclusive offers	ZD-C-091	ZD-A-17	
+ZD-I-0390	other:plan-cards	Growth › Fraud protection to prevent losses	ZD-C-007	ZD-A-01	
+ZD-I-0391	other:plan-cards	Growth › Instant financing to grow your business with Zid Financing	ZD-C-023	ZD-A-05	
+ZD-I-0392	other:plan-cards	Growth › CSS interface customization	ZD-C-113	ZD-A-19	
+ZD-I-0393	other:plan-cards	Growth › Shipping rates starting from 10.5 SAR	ZD-C-060	ZD-A-13	
+ZD-I-0394	other:plan-cards	Professional › 24/7 priority support	ZD-C-114	ZD-A-29	
+ZD-I-0395	other:plan-cards	Professional › Dedicated merchant relation manager to support your growth and improve performance	ZD-C-114	ZD-A-29	
+ZD-I-0396	other:plan-cards	Professional › 50% cashback (on annual plan only)	ZD-C-020	ZD-A-04	
+ZD-I-0397	other:plan-cards	Professional › Shipping rates starting from 8.5 SAR	ZD-C-060	ZD-A-13	
+ZD-I-0398	other:plan-cards	Professional › Completely free WhatsApp	ZD-C-107	ZD-A-24	
+ZD-I-0399	other:plan-cards	Professional › Completely free Zid POS - two cashiers	ZD-C-108	ZD-A-23	
+ZD-I-0400	other:plan-cards	Professional › Store management access for 20 additional people	ZD-C-094	ZD-A-25	
+ZD-I-0401	other:plan-cards	Professional › Profitability and cost reports to optimize profit margins	ZD-C-105	ZD-A-18	
+ZD-I-0402	other:plan-cards	Professional › Inventory management across 5 branches or warehouses	ZD-C-085	ZD-A-14	
+ZD-I-0403	other:plan-cards	Professional › Complete loyalty program to increase customer retention	ZD-C-090	ZD-A-16	
+ZD-I-0404	other:plan-cards	Professional › Connect your store with external systems (via API)	ZD-C-074	ZD-A-22	
+ZD-I-0405	other:plan-cards	Professional › Inventory counting, transfer, and display by customer city	ZD-C-085	ZD-A-14	
+ZD-I-0406	legal-agreements	Terms & Conditions / الشروط والأحكام	ZD-C-030;ZD-C-020;ZD-C-021;ZD-C-036;ZD-C-014;ZD-C-016;ZD-C-096	ZD-A-08;ZD-A-04;ZD-A-02;ZD-A-25	yes
+ZD-I-0407	legal-agreements	Privacy Policy / سياسة الخصوصية	ZD-C-040;ZD-C-041;ZD-C-042	ZD-A-09	
+ZD-I-0408	legal-agreements	Zid Pay Terms and Conditions (Saudi Arabia) / شروط وأحكام زد باي	ZD-C-001;ZD-C-002;ZD-C-003;ZD-C-006;ZD-C-007;ZD-C-009;ZD-C-037	ZD-A-01	
+ZD-I-0409	legal-agreements	Terms and Conditions for Zed Pay – Kuwait	ZD-C-001;ZD-C-002;ZD-C-003;ZD-C-006;ZD-C-007;ZD-C-009;ZD-C-037	ZD-A-01	
+ZD-I-0410	legal-agreements	Domestic Shipping terms	ZD-C-060	ZD-A-13	
+ZD-I-0411	legal-agreements	Global Shipping terms	ZD-C-060	ZD-A-13	
+ZD-I-0412	legal-agreements	Logistics terms and conditions	ZD-C-060	ZD-A-13	
+ZD-I-0413	legal-agreements	Zid Stores' Customer Complaints / شكاوي عملاء متاجر زد	ZD-C-092	ZD-A-17	
+ZD-I-0414	legal-agreements	الشروط والأحكام › خدمة وكيل زد (Zid Agent)	ZD-C-025	ZD-A-26	
+ZD-I-0415	legal-agreements	الشروط والأحكام › شركات الخدمات اللوجستية الطرف الثالث على متجر زد للتطبيقات (ZAM)	ZD-C-061	ZD-A-13	
+ZD-I-0416	legal-agreements	الشروط والأحكام › زد شب	ZD-C-060;ZD-C-015	ZD-A-13	
+ZD-I-0417	legal-agreements	الشروط والأحكام › سوق تطبيقات زد	ZD-C-070;ZD-C-022	ZD-A-21	
+ZD-I-0418	legal-agreements	الشروط والأحكام › سوق ثيمات زد	ZD-C-076	ZD-A-20	
+ZD-I-0419	legal-agreements	الشروط والأحكام › زد كاشير	ZD-C-108	ZD-A-23	
+ZD-I-0420	legal-agreements	الشروط والأحكام › محفظة زد	ZD-C-017;ZD-C-018	ZD-A-03	
+ZD-I-0421	legal-agreements	الشروط والأحكام › خدمة المميزات الإضافية VAS	ZD-C-026	ZD-A-26	
+ZD-I-0422	legal-agreements	الشروط والأحكام › مزيد	ZD-C-109;ZD-C-024	ZD-A-06	
+ZD-I-0423	legal-agreements	الشروط والأحكام › زد باي	ZD-C-001;ZD-C-002;ZD-C-003;ZD-C-006;ZD-C-007;ZD-C-009;ZD-C-037	ZD-A-01	
+ZD-I-0424	legal-agreements	الشروط والأحكام › تمويل زد	ZD-C-023	ZD-A-05	
+ZD-I-0425	legal-agreements	Zid App Activation & OAuth Policy	ZD-C-071	ZD-A-22	
+ZD-I-0426	legal-agreements	App Partner terms	ZD-C-070;ZD-C-022	ZD-A-21	
+ZD-I-0427	legal-agreements	Theme Partner terms	ZD-C-076	ZD-A-20	
+ZD-I-0428	legal-agreements	Theme commercial policy	ZD-C-076	ZD-A-20	
+ZD-I-0429	other:app-market-categories	الشحن والتخزين	ZD-C-061	ZD-A-13	
+ZD-I-0430	other:app-market-categories	الذكاء الاصطناعي والتحليلات	ZD-C-070	ZD-A-21	
+ZD-I-0431	other:app-market-categories	الذكاء الاصطناعي والتحليلات › الذكاء الاصطناعي ومساعدو المتجر	ZD-C-070	ZD-A-21	
+ZD-I-0432	other:app-market-categories	الذكاء الاصطناعي والتحليلات › التحليلات والتقارير	ZD-C-070	ZD-A-21	
+ZD-I-0433	other:app-market-categories	الذكاء الاصطناعي والتحليلات › مراقبة الأسعار والمنافسين	ZD-C-070	ZD-A-21	
+ZD-I-0434	other:app-market-categories	تجربة المتجر والعملاء	ZD-C-070	ZD-A-21	
+ZD-I-0435	other:app-market-categories	تجربة المتجر والعملاء › خدمة العملاء والمحادثات	ZD-C-070	ZD-A-21	
+ZD-I-0436	other:app-market-categories	تجربة المتجر والعملاء › تحسين واجهة المتجر	ZD-C-070	ZD-A-21	
+ZD-I-0437	other:app-market-categories	تجربة المتجر والعملاء › تطبيقات الجوال للمتجر	ZD-C-070	ZD-A-21	
+ZD-I-0438	other:app-market-categories	تجربة المتجر والعملاء › الحجوزات والاشتراكات	ZD-C-070	ZD-A-21	
+ZD-I-0439	other:app-market-categories	المالية والمدفوعات	ZD-C-070	ZD-A-21	
+ZD-I-0440	other:app-market-categories	المالية والمدفوعات › المحاسبة والفوترة	ZD-C-070	ZD-A-21	
+ZD-I-0441	other:app-market-categories	المالية والمدفوعات › الضريبة والزكاة	ZD-C-070	ZD-A-21	
+ZD-I-0442	other:app-market-categories	العمليات وإدارة المتجر	ZD-C-070	ZD-A-21	
+ZD-I-0443	other:app-market-categories	العمليات وإدارة المتجر › الربط مع الأنظمة (ERP/POS)	ZD-C-070	ZD-A-21	
+ZD-I-0444	other:app-market-categories	العمليات وإدارة المتجر › إدارة المنتجات والمخزون	ZD-C-070	ZD-A-21	
+ZD-I-0445	other:app-market-categories	العمليات وإدارة المتجر › إدارة الطلبات	ZD-C-070	ZD-A-21	
+ZD-I-0446	other:app-market-categories	العمليات وإدارة المتجر › إيجاد المنتجات (Dropshipping)	ZD-C-070	ZD-A-21	
+ZD-I-0447	other:app-market-categories	العمليات وإدارة المتجر › المرتجعات والاستبدال	ZD-C-070	ZD-A-21	
+ZD-I-0448	other:app-market-categories	زيادة المبيعات والتحويل	ZD-C-070	ZD-A-21	
+ZD-I-0449	other:app-market-categories	زيادة المبيعات والتحويل › العروض والترقيات	ZD-C-070	ZD-A-21	
+ZD-I-0450	other:app-market-categories	زيادة المبيعات والتحويل › المحتوى المرئي والقصص	ZD-C-070	ZD-A-21	
+ZD-I-0451	other:app-market-categories	زيادة المبيعات والتحويل › البيع المتقاطع والإضافي	ZD-C-070	ZD-A-21	
+ZD-I-0452	other:app-market-categories	زيادة المبيعات والتحويل › قنوات البيع	ZD-C-070	ZD-A-21	
+ZD-I-0453	other:app-market-categories	زيادة المبيعات والتحويل › المراجعات والتقييمات	ZD-C-070	ZD-A-21	
+ZD-I-0454	other:app-market-categories	زيادة المبيعات والتحويل › استرداد السلال المتروكة	ZD-C-070	ZD-A-21	
+ZD-I-0455	other:app-market-categories	التسويق والنمو	ZD-C-070	ZD-A-21	
+ZD-I-0456	other:app-market-categories	التسويق والنمو › التسويق عبر واتساب	ZD-C-070	ZD-A-21	
+ZD-I-0457	other:app-market-categories	التسويق والنمو › تتبع الحملات والإسناد	ZD-C-070	ZD-A-21	
+ZD-I-0458	other:app-market-categories	التسويق والنمو › أتمتة التسويق والحملات	ZD-C-070	ZD-A-21	
+ZD-I-0459	other:app-market-categories	التسويق والنمو › برامج الولاء والمكافآت	ZD-C-070	ZD-A-21	
+ZD-I-0460	other:app-market-categories	التسويق والنمو › التسويق بالعمولة والمؤثرين	ZD-C-070	ZD-A-21	
+ZD-I-0461	other:app-market-categories	التسويق والنمو › إدارة العملاء (CRM)	ZD-C-070	ZD-A-21	
+ZD-I-0462	other:app-market-categories	التسويق والنمو › البريد الإلكتروني والرسائل النصية	ZD-C-070	ZD-A-21	
+ZD-I-0463	other:app-market-categories	التسويق والنمو › SEO وتحسين الظهور	ZD-C-070	ZD-A-21	
+ZD-I-0464	other:product-lines	E-store	ZD-C-113	ZD-A-19	
+ZD-I-0465	other:product-lines	POS (Point of Sales)	ZD-C-108	ZD-A-23	
+ZD-I-0466	other:product-lines	Payments	ZD-C-001;ZD-C-002;ZD-C-003;ZD-C-005;ZD-C-006;ZD-C-007;ZD-C-008	ZD-A-01	
+ZD-I-0467	other:product-lines	Shipping	ZD-C-060	ZD-A-13	
+ZD-I-0468	other:product-lines	Inventory Management	ZD-C-085	ZD-A-14	
+ZD-I-0469	other:product-lines	Zid Voice	ZD-C-112	ZD-A-16	
+ZD-I-0470	other:product-lines	Apps	ZD-C-070	ZD-A-21	
+ZD-I-0471	other:product-lines	Themes	ZD-C-076	ZD-A-20	
+ZD-I-0472	other:product-lines	Mazeed Marketplace	ZD-C-109	ZD-A-06	
+ZD-I-0473	other:product-lines	Financing	ZD-C-023	ZD-A-05	
+ZD-I-0474	other:product-lines	Marketing Tools	ZD-C-106	ZD-A-16	
+ZD-I-0475	other:product-lines	Marketplaces	ZD-C-110	ZD-A-07	
+ZD-I-0476	other:product-lines	ZID Assurance	ZD-C-111	ZD-A-28	
+ZD-I-0477	other:product-lines	Whatsapp	ZD-C-107	ZD-A-24	
+ZD-I-0478	other:countries	Egypt	ZD-C-032;ZD-C-031	ZD-A-10	
+ZD-I-0479	other:countries	UAE	ZD-C-032	ZD-A-10	
+ZD-I-0480	other:countries	Kuwait	ZD-C-032	ZD-A-10	
+ZD-I-0481	other:countries	Oman	ZD-C-032	ZD-A-10	
+ZD-I-0482	other:countries	Syria	ZD-C-032	ZD-A-10	
+ZD-I-0483	other:staff-permissions	manage.store.marketing (Manage store marketing / إدارة تسويق المتجر)	ZD-C-106	ZD-A-16	
+ZD-I-0484	other:staff-permissions	manage.app.market.details (Manage app market details / purchase subscription / إدارة تفاصيل السوق / اشتراك الشراء)	ZD-C-070;ZD-C-022	ZD-A-21	
+ZD-I-0485	other:staff-permissions	manage.zidship.settings (Manage Zid Ship settings / إدارة إعدادات زد شب)	ZD-C-060	ZD-A-13	
+ZD-I-0486	other:staff-permissions	manage.store.ecosystem.consultation (E-commerce consulting service / خدمة الاستشارات في التجارة الإلكترونية)	ZD-C-115	ZD-A-26	
+ZD-I-0487	other:staff-permissions	manage.store.ecosystem.packaging (Manage packaging / إدارة التغليف)	ZD-C-115	ZD-A-26	
+ZD-I-0488	other:staff-permissions	manage.store.vat.settings (Manage VAT settings / إدارة إعدادات الضريبة)	ZD-C-051	ZD-A-12	
+ZD-I-0489	other:staff-permissions	manage.store.discount.rules (Manage automatic discounts / إدارة الخصومات التلقائية)	ZD-C-088	ZD-A-16	
+ZD-I-0490	other:staff-permissions	pos.cashiers.page (Access cashier page / الدخول إلى صفحة الكاشير)	ZD-C-108	ZD-A-23	
+ZD-I-0491	other:staff-permissions	manage.store.abandonedcarts (Manage abandoned carts / إدارة السلات المتروكة)	ZD-C-082	ZD-A-16	
+ZD-I-0492	other:staff-permissions	manage.store.bundleoffers (Manage marketing bundles / إدارة الحزم التسويقية)	ZD-C-089	ZD-A-16	
+ZD-I-0493	other:staff-permissions	manage.zidpay.setting (Manage Zid Pay settings / إدارة إعدادات زدباي)	ZD-C-001;ZD-C-005	ZD-A-01	
+ZD-I-0494	other:staff-permissions	view.store.dashboard (View store dashboard / عرض لوحة معلومات المتجر)	ZD-C-105	ZD-A-18	
+ZD-I-0495	other:staff-permissions	pos.cashier.usage (Use cashier for sales operations / استخدام الكاشير لعمليات البيع)	ZD-C-108	ZD-A-23	
+ZD-I-0496	other:staff-permissions	manage.zidship.orders (Manage shipping orders / إدارة أوامر الشحن)	ZD-C-060	ZD-A-13	
+ZD-I-0497	other:staff-permissions	pos.homepage (Access POS homepage / الدخول إلى الصفحة الرئيسية لنقاط البيع)	ZD-C-108	ZD-A-23	
+ZD-I-0498	other:staff-permissions	list.store.customers (List store customers / قائمة العملاء في المتجر)	ZD-C-091	ZD-A-17	
+ZD-I-0499	other:staff-permissions	manage.store.ecosystem.orderfulfillment (Manage orders and operations / إدارة الطلبات والعمليات)	ZD-C-115	ZD-A-26	
+ZD-I-0500	other:staff-permissions	manage.app.market.settings (Manage application settings / إدارة إعدادات التطبيق)	ZD-C-070	ZD-A-21	
+ZD-I-0501	other:staff-permissions	list.zidpay.transactions (List transactions / قائمة العمليات)	ZD-C-002	ZD-A-01	
+ZD-I-0502	other:staff-permissions	manage.store.ecosystem.printings (Manage promotional printings / إدارة المطبوعات الدعائية)	ZD-C-115	ZD-A-26	
+ZD-I-0503	other:staff-permissions	view.app.market.home (View app market homepage / عرض الصفحة الرئيسية لسوق التطبيقات)	ZD-C-070	ZD-A-21	
+ZD-I-0504	other:staff-permissions	view.zidship.reports (View Zid Ship reports / عرض تقارير زد شب)	ZD-C-060	ZD-A-13	
+ZD-I-0505	other:staff-permissions	manage.zid.financing (Manage Zid financing / إدارة تمويل زد)	ZD-C-023	ZD-A-05	
+ZD-I-0506	other:staff-permissions	manage.store.front.customization (Customize store front / تخصيص واجهة المتجر)	ZD-C-113	ZD-A-19	
+ZD-I-0507	other:staff-permissions	list.store.orders (List store orders / قائمة طلبات المتجر)	ZD-C-080	ZD-A-15	
+ZD-I-0508	other:staff-permissions	manage.store.ecosystem.designs (Manage designs / إدارة التصميمات)	ZD-C-115	ZD-A-26	
+ZD-I-0509	other:staff-permissions	manage.store.custom.domain (Manage custom domain / إدارة النطاق المخصص)	ZD-C-096	ZD-A-25	
+ZD-I-0510	other:staff-permissions	manage.store.inventory.addresses (Manage inventory locations / إدارة مواقع المخزون)	ZD-C-085	ZD-A-14	
+ZD-I-0511	other:staff-permissions	manage.store.ecosystem.payments (Manage payments / إدارة الدفع)	ZD-C-115	ZD-A-26	
+ZD-I-0512	other:staff-permissions	manage.store.ecosystem.marketing (Manage marketing / إدارة التسويق)	ZD-C-115	ZD-A-26	
+ZD-I-0513	other:staff-permissions	list.store.products (List all products / قائمة جميع المنتجات)	ZD-C-083	ZD-A-14	
+ZD-I-0514	other:staff-permissions	manage.store.affiliate (Manage affiliate marketing / إدارة التسويق بالعمولة)	ZD-C-106	ZD-A-16	
+ZD-I-0515	other:staff-permissions	list.store.categories (List product categories / قائمة تصنيفات المنتجات)	ZD-C-084	ZD-A-14	
+ZD-I-0517	other:staff-permissions	manage.store.ecosystem.mobileapps (Mobile app service / خدمة تطبيق الجوال)	ZD-C-116	ZD-A-27	
+ZD-I-0518	other:staff-permissions	manage.store.staff.notifications (Manage team notifications / إدارة الإشعارات للفريق)	ZD-C-097	ZD-A-24	
+ZD-I-0519	other:staff-permissions	manage.store.settings (Manage store settings / إدارة إعدادات المتجر)	ZD-C-077	ZD-A-25	
+ZD-I-0520	other:staff-permissions	manage.store.ecosystem.storepreparation (Store preparation service / خدمة تجهيز المتجر)	ZD-C-115	ZD-A-26	
+ZD-I-0521	other:staff-permissions	refund.zidpay.transactions (Refund transactions / استرداد المبالغ)	ZD-C-002	ZD-A-01	
+ZD-I-0522	other:staff-permissions	manage.zidship.payments (Manage service payments / إدارة الدفع للخدمات)	ZD-C-060	ZD-A-13	
+ZD-I-0523	other:staff-permissions	pos.payment.methods (Manage payment methods / إدارة طرق الدفع)	ZD-C-108	ZD-A-23	
+ZD-I-0524	other:staff-permissions	manage.store.ecosystem.delivery (Manage shipping and delivery / إدارة الشحن والتوصيل)	ZD-C-115	ZD-A-26	
+ZD-I-0525	other:staff-permissions	manage.store.ecosystem.selfstorage (Manage self-storage units / إدارة وحدات التخزين الذاتي)	ZD-C-115	ZD-A-26	
+ZD-I-0526	other:staff-permissions	manage.store.subscription (Manage subscriptions / إدارة الاشتراكات)	ZD-C-020	ZD-A-04	
+ZD-I-0527	other:staff-permissions	list.zidpay.deposits (List account statement / قائمة كشف الحساب)	ZD-C-003	ZD-A-01	
+ZD-I-0528	other:staff-permissions	pos.analytics (View POS reports / عرض تقارير نقاط البيع)	ZD-C-108	ZD-A-23	
+ZD-I-0530	other:staff-permissions	create.store.orders (Create customer order / إنشاء طلب للعميل)	ZD-C-080	ZD-A-15	
+ZD-I-0531	other:staff-permissions	list.store.order.drafts (List order drafts / قائمة المسودات)	ZD-C-080	ZD-A-15	
+ZD-I-0532	other:staff-permissions	manage.store.ecosystem.photographics (Manage photography / إدارة التصوير)	ZD-C-115	ZD-A-26	
+ZD-I-0533	other:staff-permissions	manage.store.account.settings (Manage account settings / إدارة إعدادات الحساب)	ZD-C-077	ZD-A-25	
+ZD-I-0534	other:staff-permissions	manage.store.ecosystem.workplaces (Manage co-working spaces / إدارة المساحات العمل المشتركة)	ZD-C-115	ZD-A-26	
+ZD-I-0535	other:staff-permissions	edit.store.orders (Edit customer order / تعديل طلب العميل)	ZD-C-080	ZD-A-15	
+ZD-I-0536	other:staff-permissions	manage.store.zid.keys (Manage Zid keys / إدارة مفاتيح زد)	ZD-C-074	ZD-A-22	
+ZD-I-0537	other:staff-permissions	manage.store.coupons (Manage discount coupons / إدارة قسائم التخفيض)	ZD-C-088	ZD-A-16	
+ZD-I-0538	other:staff-permissions	view.app.market.browse (Browse app by category / تصفح التطبيق حسب الفئة)	ZD-C-070	ZD-A-21	
+ZD-I-0539	other:staff-permissions	manage.store.front.pages (Manage additional pages / إدارة الصفحات الإضافية)	ZD-C-113	ZD-A-19	
+ZD-I-0540	extension-points	Subscription Apps › Public apps	ZD-C-070	ZD-A-21	
+ZD-I-0541	extension-points	Subscription Apps › Private apps	ZD-C-074	ZD-A-22	
+ZD-I-0542	extension-points	Shipping apps › Shipping and fulfillment company	ZD-C-061	ZD-A-13	
+ZD-I-0543	extension-points	Shipping apps › Shipping company only	ZD-C-061	ZD-A-13	
