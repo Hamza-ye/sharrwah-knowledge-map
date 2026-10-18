@@ -5,16 +5,25 @@ Usage:
   python3 -I method/help_map.py shopify LINE [--anchors]    the pages the menu at that line files: level, title, held
                                                             path; with --anchors, each page's anchored sections too
   python3 -I method/help_map.py salla [en|ar]               the help centre's categories: id, breadcrumb, subcategories
-  python3 -I method/help_map.py salla CATEGORY_ID [en|ar]   the articles that category files: sub-section, title, address
+  python3 -I method/help_map.py salla CATEGORY_ID          the articles that category files, in both languages:
+                                                            article id, sub-section, Arabic title, English title
+                                                            ("-" where that language has none)
   python3 -I method/help_map.py shopify page PATH            one held page, by the path the menu listing gives
                                                             (md/en/... or content.html/ar/...), as text
-  python3 -I method/help_map.py salla page ARTICLE [en|ar]   one held article, by its id (the end of its address) or its
-                                                            address, as text
+  python3 -I method/help_map.py salla page ARTICLE [ar|en]   one held article, by its id (the end of its address) or its
+                                                            address, as text; Arabic unless en is given
+
+Salla's Arabic help centre is the fuller one: 1,658 articles against 1,280, and about a quarter of the Arabic
+articles have no English version. A Shopify page's Arabic version is at the English path with md/en/ changed to
+content.html/ar/ and .md to .html. Arabic pages print as the quote checker reads them (method/quote_check.py,
+html_text), so a quote copied from the output passes the checker.
 
 Reads the held files from git's objects at observed-sh's and observed-sa's HEAD, from outside the repositories.
 A page or article is printed after the line to cite it by: its source, and for a Salla article its locator.
 """
-import html, json, os, re, subprocess, sys, urllib.parse
+import json, os, re, subprocess, sys, urllib.parse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from quote_check import html_text
 
 OSH = os.environ.get("OBSERVED_SH", "/home/user/observed-sh")
 OSA = os.environ.get("OBSERVED_SA", "/home/user/observed-sa")
@@ -35,11 +44,8 @@ def shopify_page(path):
     if not raw:
         sys.exit(f"not held: {SH_ROOT}{path}")
     print(f"source: observed-sh@{commit}:{SH_ROOT}{path}\n")
-    if path.endswith(".html"):                       # the checker reads it with its tags removed, as here
-        raw = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", raw)
-        raw = re.sub(r"(?i)<(br|/p|/li|/h\d|/tr|/div)\b[^>]*>", "\n", raw)
-        raw = html.unescape(re.sub(r"<[^>]+>", "", raw))
-        raw = re.sub(r"\n\s*\n+", "\n\n", raw)
+    if path.endswith(".html"):                       # as the checker reads it
+        raw = html_text(raw)
     print(raw)
 
 
@@ -97,10 +103,11 @@ def shopify(args):
 
 
 def salla(args):
-    lang = next((a for a in args if a in ("en", "ar")), "en")
+    lang = next((a for a in args if a in ("en", "ar")), None)
     rest = [a for a in args if a not in ("en", "ar")]
     if rest[:1] == ["page"] and len(rest) > 1:
-        return salla_page(rest[1], lang)
+        return salla_page(rest[1], lang or "ar")
+    lang = lang or "en"
     commit = head(OSA)
     if not rest:
         path = f"structures/salla/help-tree/{lang}/items.jsonl"
@@ -114,18 +121,28 @@ def salla(args):
             print(f"{cid}\t{' › '.join(d.get('breadcrumb') or [])}\t{subs}")
         return
     cat = rest[0]
-    path = f"structures/salla/help-articles/{lang}/items.jsonl"
-    print(f"observed-sa@{commit}:{path}")
-    for line in git(OSA, "show", f"{commit}:{path}").decode("utf-8").splitlines():
-        if not line.strip():
-            continue
-        d = json.loads(line)
-        r = d.get("record") or {}
-        if r.get("section_id") == cat:
+    titles, subs, order = {}, {}, []
+    for lg in ("ar", "en"):
+        path = f"structures/salla/help-articles/{lg}/items.jsonl"
+        if lg == "ar":
+            print(f"observed-sa@{commit}:structures/salla/help-articles/{{ar,en}}/items.jsonl")
+        for line in git(OSA, "show", f"{commit}:{path}").decode("utf-8").splitlines():
+            if not line.strip():
+                continue
+            d = json.loads(line)
+            r = d.get("record") or {}
+            if r.get("section_id") != cat:
+                continue
+            aid = r.get("id") or d.get("url", "").rstrip("/").split("/")[-1]
+            if aid not in titles:
+                order.append(aid)
+                titles[aid] = {}
+            titles[aid][lg] = r.get("title", "")
             sub = r.get("sub_section")
-            sub = sub.get("name", "") if isinstance(sub, dict) else (sub or "")
-            print(f"{sub}\t{r.get('title', '')}\t{d.get('url', '')}\tposition {d.get('position')}")
-
+            subs.setdefault(aid, sub.get("name", "") if isinstance(sub, dict) else (sub or ""))
+    print("article id\tsub-section\tArabic title\tEnglish title")
+    for aid in order:
+        print(f"{aid}\t{subs[aid]}\t{titles[aid].get('ar', '-')}\t{titles[aid].get('en', '-')}")
 
 if __name__ == "__main__":
     if not sys.argv[1:] or sys.argv[1] not in ("shopify", "salla"):

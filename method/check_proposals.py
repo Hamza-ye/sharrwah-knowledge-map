@@ -230,7 +230,7 @@ def check_own(d, q, code, src, held):
                 err("statements.tsv", sid, f"{c}'s kind is unknown under method/source_kinds.py", "warning")
     for n, r in nfs:
         nid = r["nf_id"]
-        if not re.fullmatch(rf"{pre}-N\d{{2}}", nid):
+        if not re.fullmatch(rf"{pre}-N\d{{2,3}}", nid):
             err("not-found.tsv", nid, f"nf_id isn't of the form {pre}-N01")
         own.add(nid)
         if r["kind"] not in KINDS:
@@ -301,7 +301,7 @@ def check_account(d, q, code, known, checking=False):
         err("account.md", "", "missing")
         return
     text = open(path, encoding="utf-8").read()
-    pat = re.compile(rf"\b{q}-{code}-(?:[KPGHA]\d{{4}}|N\d{{2}}|\d{{3}})\b")
+    pat = re.compile(rf"\b{q}-{code}-(?:[KPGHA]\d{{4}}|N\d{{2,3}}|\d{{3}})\b")
     for c in sorted(set(pat.findall(text)) - known):
         err("account.md", c, "cites an id the folder doesn't hold")
     nsent = len(sentences(q))

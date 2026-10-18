@@ -7,7 +7,8 @@
 # The observed repositories' fetch archives (WARC) are searched too. Their text is extracted once per commit into a
 # cache outside the repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
 # So are Shopify's Help Center pages held in observed-sh (English as Markdown, Arabic as content HTML), WooCommerce's
-# release files (its code, and its language template i18n/languages/woocommerce.pot), this repository's capture
+# release files (its code first, built bundles last, and its language template i18n/languages/woocommerce.pot one
+# entry at a time), this repository's capture
 # runs, and the founder's saves for the platform (evidence/product-class/blocked-evidence-founder/<platform>/:
 # browser saves, and PDFs through pdftotext). An address held more than once shows its fullest copy.
 #
@@ -48,6 +49,22 @@ RELEASES = {  # release files held outside the repositories: platform -> (citati
     "woocommerce": ("woocommerce-11.2.1", os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce")),
 }
 RELEASE_TEXT = re.compile(r"\.(php|js|jsx|ts|tsx|json|txt|html|md|pot|csv)$")
+RELEASE_FIRST = ("includes/", "src/", "templates/")
+RELEASE_LAST = ("assets/", "packages/", "vendor/", "lib/")
+
+def pot_entries(text):
+    """(first line, text) of each entry of a .pot file: the blocks between blank lines."""
+    start, block = 1, []
+    for i, line in enumerate(text.split("\n"), start=1):
+        if line.strip():
+            if not block:
+                start = i
+            block.append(line)
+        elif block:
+            yield start, "\n".join(block)
+            block = []
+    if block:
+        yield start, "\n".join(block)
 
 def help_url(name):
     """The Help Center address of a held page: md/en/a/b.md -> https://help.shopify.com/en/a/b."""
@@ -210,13 +227,20 @@ def documents(platform):
         yield from archive_documents(ARCHIVES[platform])
     if platform in RELEASES:              # read as files, never run
         prefix, root = RELEASES[platform]
+        rels = []
         for d, dirs, files in os.walk(root):
             dirs.sort()
-            for fn in sorted(files):
-                if RELEASE_TEXT.search(fn):
-                    path = os.path.join(d, fn)
-                    yield (f"{prefix} release", f"{prefix}:{os.path.relpath(path, root)}", "", "",
-                           open(path, encoding="utf-8", errors="replace").read())
+            rels += [os.path.relpath(os.path.join(d, fn), root) for fn in sorted(files) if RELEASE_TEXT.search(fn)]
+        # The platform's own code and templates first; built bundles and bundled libraries last, so that a capped
+        # listing reaches the code.
+        rels.sort(key=lambda r: (0 if r.startswith(RELEASE_FIRST) else 2 if r.startswith(RELEASE_LAST) else 1, r))
+        for rel in rels:
+            text = open(os.path.join(root, rel), encoding="utf-8", errors="replace").read()
+            if rel.endswith(".pot"):          # the language template, one entry at a time, each with its line
+                for start, block in pot_entries(text):
+                    yield (f"{prefix} release", f"{prefix}:{rel} line {start}", "", "", block)
+            else:
+                yield (f"{prefix} release", f"{prefix}:{rel}", "", "", text)
     head = subprocess.run(["git", "-C", SKM, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
     for mf in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/runs/*/manifest.tsv"))):
         run = os.path.dirname(mf)

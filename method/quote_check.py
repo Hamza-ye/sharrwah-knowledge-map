@@ -96,12 +96,18 @@ class Sources:
             p = subprocess.run(["git", "-C", root, "show", f"{commit}:{rel}"], capture_output=True)
             if p.returncode != 0:
                 return None, f"git show {commit}:{rel} failed in {root}"
-            raw = p.stdout.decode("utf-8", errors="replace")
+            data = p.stdout
         else:
             fp = os.path.join(root, rel)
             if not os.path.isfile(fp):
                 return None, f"no file {fp}"
-            raw = open(fp, encoding="utf-8", errors="replace").read()
+            data = open(fp, "rb").read()
+        if rel.lower().endswith(".pdf"):           # a PDF is read as its text, through pdftotext
+            p = subprocess.run(["pdftotext", "-q", "-", "-"], input=data, capture_output=True, timeout=120)
+            if p.returncode != 0:
+                return None, f"pdftotext could not read {rel}"
+            data = p.stdout
+        raw = data.decode("utf-8", errors="replace")
         texts = [raw]
         if rel.endswith((".json", ".jsonl")):
             texts.append(json_unescaped(raw))

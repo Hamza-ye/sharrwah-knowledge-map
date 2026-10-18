@@ -31,12 +31,16 @@ Don't answer the question in your own words, compare your platform with any othe
 - **Shopify:**
   - `python3 -I method/help_map.py shopify` lists the Help Center's menus, each with its line number;
   - `python3 -I method/help_map.py shopify <line>` lists the pages that menu files: level, title and path;
-  - `python3 -I method/help_map.py shopify page <path>` prints one page, after the source to cite it by. English pages are `md/en/…`, Arabic pages `content.html/ar/…`.
+  - `python3 -I method/help_map.py shopify page <path>` prints one page, after the source to cite it by. English pages are `md/en/…`. A page's Arabic version is at the same path with `md/en/` changed to `content.html/ar/` and `.md` to `.html`.
 - **Salla:**
   - `python3 -I method/help_map.py salla [en|ar]` lists the help centre's categories: id, breadcrumb and subcategories;
-  - `python3 -I method/help_map.py salla <category id> [en|ar]` lists the articles that category files;
-  - `python3 -I method/help_map.py salla page <article id> [en|ar]` prints one article, after the source and locator to cite it by.
+  - `python3 -I method/help_map.py salla <category id>` lists the articles that category files, with their Arabic and English titles. The Arabic help centre is the fuller one: about a quarter of its articles have no English version;
+  - `python3 -I method/help_map.py salla page <article id> [ar|en]` prints one article, in Arabic unless you give `en`, after the source and locator to cite it by.
 - **WooCommerce, Zid and BigCommerce:** no map is held. Start from the corpus search.
+
+**WooCommerce's release files** are code and built files, some of them megabytes long. Never read one whole: search it with `grep`, from outside the folder, and read the lines around what you find.
+
+**BigCommerce's founder's saves** are mostly PDFs. Read one with `pdftotext -q '<file>' -`, and cite it as `sharrwah-knowledge-map@<commit>:<path>`: the checker reads it the same way.
 
 **Tools:**
 - to search everything held for your platform, in every language, run `python3 -I method/corpus_search.py <platform> <terms> [--max N] [--with <terms>]`. A document matches when it holds any of the terms, and, with `--with`, also any of the terms after `--with`. Its snippets are folded for matching: never quote one, quote the document;
@@ -60,7 +64,8 @@ Don't answer the question in your own words, compare your platform with any othe
      - `set aside` if it doesn't, with the reason in `reason`.
    - Add a row with action `add`, and its reason, for any other concern of your platform that bears on the question. Take its id and terms from `concerns.tsv`.
    - Judge by the terms. Where they don't decide it, run `copy_statements.py show` for that concern, and judge by its statements. The description is the concern map's words, not the platform's.
-   - The last row, `S-01`, is the pilot's statements, gaps and absences on who holds a seller's money. For Q5 it is set to `copy` already. For other questions, judge it like the others.
+   - The last row, `S-01`, is the pilot's statements, gaps and absences on who holds a seller's money. For Q5 it is set to `copy` already. For other questions, judge it like the others: `show` prints its statements, cut short.
+   - For a concern with no statements, `show` prints its gaps instead. Their wording is the concern map's: judge by what they say is missing.
    - Then run `python3 -I method/copy_statements.py copy <question> <platform>`. It copies every row unchanged:
      - `copied.tsv`, the statements, with ids such as `Q2-SA-K1553`;
      - `copied-gaps.tsv`, the gaps: what an earlier run didn't find, with ids such as `Q2-SA-G0007`;
@@ -78,10 +83,10 @@ Don't answer the question in your own words, compare your platform with any othe
    6. If S-01 is copied, read `copied-pilot-absences.tsv`. Read the pilot's `absence-audit.tsv` only for the absences you rely on.
 3. **Read for what the copies don't show,** one sentence of your question at a time, in this order:
    1. your platform's map of its help, if it has one: at most 10 pages, chosen by their titles;
-   2. one corpus search in your platform's own words, in each language it uses, as alternatives in one call. Read at most 5 of the documents it lists, or 10 if your platform has no map;
+   2. one corpus search in your platform's own words, in each language it uses, as alternatives in one call, with `--max 10`. Read at most 5 of the documents it lists, or 10 if your platform has no map;
    3. live pages, only where what is held doesn't show it: at most 5.
 
-   Stop reading for a sentence sooner once 5 pages in a row add nothing new. Read each page in one of its languages, and open the other only to quote it. Record each new statement.
+   Stop reading for a sentence sooner once 5 pages in a row add nothing new. A sentence that only gives examples, limits or restates the question has no reading of its own: it shares the reading of the sentence it serves. Read each page in one of its languages, and open the other only to quote it. Record each new statement.
 4. **Go deep only where a sentence concerns money flows, legal structure, the data model or partner contracts.** For those sentences, and within at most 5 more pages each:
    - record the platform's own structure: the things it names, and the levels its settings are set at, each named as the platform names it;
    - record the contracts behind its providers as your platform's material shows them: what it says of them, and any agreement its terms incorporate or name as binding on the seller, which you may read. Don't read a provider's own terms otherwise. Where your platform names such terms, record them as not in what was read, with their address.
@@ -146,7 +151,7 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 | `selection.tsv` | as the script wrote it, with `action` and `reason` set by you (step 1) |
 | `statements.tsv` | `stmt_id` (`Q-XX-001`…) · `bears_on` · `identifier` · `statement` · `scope` · `marker` · `cite_ids` · `from` (`held` or `live`) · `note` |
 | `citations.tsv` | `cite_id` (`Q-XX-C001`…) · `source` · `locator` · `quote` · `source_date` · `date_basis` · `accessed` · `access_path` (`md`, `raw`, `rendered` or `local`) |
-| `not-found.tsv` | `nf_id` (`Q-XX-N01`…) · `bears_on` · `what_is_missing` · `kind` (`not in what was read` or `absent`) · `read` · `searched` · `list_cite_ids` · `complete_cite_ids` · `who_can` (`agent`, `founder` or `either`) · `route` |
+| `not-found.tsv` | `nf_id` (`Q-XX-N01`…, three digits past 99) · `bears_on` · `what_is_missing` · `kind` (`not in what was read` or `absent`) · `read` · `searched` · `list_cite_ids` · `complete_cite_ids` · `who_can` (`agent`, `founder` or `either`) · `route` |
 | `account.md` | below |
 | `notes.md` | what you read; each live URL you read, with the language it was served in; what you couldn't read; copies you found wrong or out of date; problems with the method |
 

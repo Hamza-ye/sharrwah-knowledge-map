@@ -15,7 +15,7 @@ You are one agent with one short task: one question, on one platform, as a check
    - If a named account is missing, or `python3 -I method/check_proposals.py records <question> <in-depth platform>` reports errors for its folder, stop and report.
    - Where an account point is unclear, look up only the ids it cites, with `grep` for each id in that platform's folder: at most 10 ids for each account. Never open their sources.
    - The accounts tell you what to sort against. They are never evidence about your platform.
-   - Never use an in-depth platform's terms in your statements, identifiers, scopes or headings.
+   - Use only your own platform's words in your statements, identifiers, scopes and headings. Never take a word from an account that your own source doesn't use.
 3. **When something matches an account point.** It matches only on one of these bases, each shown in the platforms' own words:
    1. the same term, including a platform's own translation of it;
    2. the same identifier, such as a key, a scope or a route;
@@ -33,11 +33,13 @@ You are one agent with one short task: one question, on one platform, as a check
 5. **Steps 1 and 2 are the same:** choose what to copy, then read the copies through their views.
 6. **Step 3, reading:**
    - **With a map of your platform's help:** find in it the question's topics, and list the titles of the pages it files there. Read the pages whose titles name something no account point names, and the pages an account point needs: at most 10 in all.
-   - **Without a map:** run one corpus search for the question's topics in your platform's words, and read at most 10 of the documents it lists.
-   - **Then,** for each account point not yet matched, run one corpus search in your platform's words, and read at most 3 of the documents it lists.
+   - **Without a map:** run one corpus search for the question's topics in your platform's words, with `--max 10`, and read at most 10 of the documents it lists.
+   - **Then,** for each sentence, run one corpus search with the terms of its account points not yet matched, in your platform's words, as alternatives in one call, with `--max 10`. Read at most 5 of the documents it lists.
    - **Live pages** only where what is held doesn't show it: at most 5 in all.
 7. **Step 4 doesn't apply.**
 8. **Step 5** records only the account points your platform's reading doesn't show: one `not in what was read` row for each point, with its corpus search (rule 7). Its `what_is_missing` says what is missing in plain words, not in the in-depth platform's term.
+   - Record at most 20 such rows: first those for points on money flows, legal structure, the data model or partner contracts.
+   - List the other points in `notes.md`, as not checked.
 9. **Recording.**
    - When your reading, not a copy, shows the same as an account point, record the statement and cite it. It counts toward the cap.
    - **Rule 12:** stop reading once you pass 60 new statements.

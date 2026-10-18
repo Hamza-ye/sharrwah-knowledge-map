@@ -15,7 +15,8 @@ the pilot's statements, gaps and absences on who holds the merchant's funds. It 
 paragraph reuses them, and `candidate` for the other questions, whose runs judge it like any other row.
 
 `show` prints the statements of the concerns named: concern_id, line (in the concern map's statements.tsv),
-identifier and statement. A run uses it to judge a concern whose terms don't decide it.
+identifier and statement. A run uses it to judge a concern whose terms don't decide it. For S-01 it prints the pilot's
+statements, each cut to 160 characters, and for a concern with no statements, its gaps, marked as such.
 
 The recording run then sets each row's action:
 - `copy`: the concern bears on the question;
@@ -38,7 +39,7 @@ line, so it names the same row however the selection changes: Q2-SA-K1553 is lin
 OUT_DIR defaults to studies/proposals/records/<QUESTION>/<platform>/. Files are tab-separated, with a header row and
 no quoting.
 """
-import csv, os, sys
+import csv, os, re, sys
 
 csv.field_size_limit(10**9)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -70,6 +71,11 @@ def read(path):
 
 def split(v):
     return [x.strip() for x in (v or "").split(";") if x.strip()]
+
+
+def cite_split(v):
+    """Cite ids, which some rows separate with spaces or commas rather than ";", as the checker reads them."""
+    return [x for x in re.split(r"[,\s;]+", v or "") if x]
 
 
 def rel(path):
@@ -131,17 +137,29 @@ def candidates(question, platform, out):
 
 
 def show(platform, concern_ids):
+    """Print the statements of each concern named; for S-01, the pilot's, each cut to 160 characters; for a concern
+    with no statements, its gaps, marked as such (their wording is the concern map's, not the platform's)."""
     _, con = read(os.path.join(CM, platform, "concerns.tsv"))
-    known = {r["concern_id"] for _, r in con}
+    known = {r["concern_id"] for _, r in con} | {"S-01"}
     unknown = [c for c in concern_ids if c not in known]
     if unknown:
         sys.exit(f"not concerns of {platform}: {', '.join(unknown)}")
     _, st = read(os.path.join(CM, platform, "statements.tsv"))
+    _, gp = read(os.path.join(CM, platform, "gaps.tsv"))
     print("concern_id\tline\tidentifier\tstatement")
     for c in concern_ids:
-        for line, r in st:
-            if r["concern_id"] == c:
-                print(f"{c}\t{line}\t{r['identifier'] or ''}\t{r['statement'] or ''}")
+        if c == "S-01":
+            _, pst = read(os.path.join(PILOT, platform, "statements.tsv"))
+            for line, r in pst:
+                print(f"S-01\t{line}\t{r['identifier'] or ''}\t{(r['statement'] or '')[:160]}")
+            continue
+        mine = [(line, r) for line, r in st if r["concern_id"] == c]
+        for line, r in mine:
+            print(f"{c}\t{line}\t{r['identifier'] or ''}\t{r['statement'] or ''}")
+        if not mine:
+            for line, r in gp:
+                if r["concern_id"] == c:
+                    print(f"{c}\tgaps.tsv line {line}\t(no statements; a gap, in the concern map's words)\t{r['what_would_show_it'] or ''}")
 
 
 def copy_rows(question, platform, name, keep=None):
@@ -181,7 +199,7 @@ def copy(question, platform, out):
         for r in rows:
             d = dict(zip(head, r))
             for col in ("cite_ids", "list_cite_ids", "complete_cite_ids"):
-                for c in split(d.get(col)):
+                for c in cite_split(d.get(col)):
                     wanted.setdefault(src, [])
                     if c not in wanted[src]:
                         wanted[src].append(c)
