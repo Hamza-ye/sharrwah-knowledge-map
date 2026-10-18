@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 22:57 UTC.
+**Updated:** 18 October 2026, 23:03 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -83,17 +83,14 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - depth reasons corrected; Zid in depth for Q6 (21 in-depth runs, 19 checks); the pilot's statements offered to every question;
   - `check_areas.py merged` checks that each depth cite is reached by its question; `areas.md` shows every name.
 - **The sample is now Q3 on Salla:** the same rule, applied to the revised list, gives a median of 875 candidate statements, and Q3 on Salla holds exactly 875.
-- **Running:**
-  - the re-check of the areas list's fixes, by the agent that reviewed it, `a5b8a8b2950f1c3ff`, at `max`. It writes `studies/proposals/areas/review-recheck.md`;
-- **The R3 briefs are ready for the sample:**
-  - the re-check (`checks/R3-briefs-recheck.md`, 36.4 million tokens): 31 of the 32 first findings fixed, 11 new, 7 of them must fix; all fixed (commit `5fd5079`);
-  - a short verification of those fixes by a fresh agent (`checks/R3-briefs-recheck-verify.md`, 8.8 million): all 11 fixed, and the brief can run the sample; its four optional points fixed (commit `2464b16`).
-  - The checking brief is to be read once more before the first checking run, as the re-check advised.
+- **The re-check of the areas list's fixes** (`areas/review-recheck.md`, 34.0 million tokens): 21 of the 25 findings fixed, all 15 must-fix among them; one new must-fix (A-15's heading), fixed with the optional ones (commit `529e48c`). Single concerns the re-check found outside their questions' areas are candidates through `areas/extra-candidates.tsv`; the pointers for the runs' starting messages are in `briefs/R3-starting-messages.md`.
+- **Gate G2: the areas list went to the founder** at 23:03 UTC (`areas/message-for-the-founder.md`), with the method rulings since the summary and the steps past their cost: agents re-sized to about 1.54 billion, the coordinator to about 0.34 billion.
+- **Running: the sample, Q3 on Salla,** `a5c2909e43b0782a6`, at `medium`, from 23:02 UTC, in `studies/proposals/records/Q3/salla/` (selection written by `copy_statements.py candidates Q3 salla`: 72 rows).
 - **Next:**
-  1. fix what the areas list's re-check finds;
-  2. the areas list to the founder (G2), with the method rulings since the last message, one plain line each, and the steps past their expected cost with the re-sized whole. The sample runs while the founder marks: `copy_statements.py candidates Q3 salla`, then the run from `briefs/R3-recording.md`;
-  3. measure the sample (`count_tokens.py`), re-size, and tell the founder in the next message;
-  4. name in the starting messages of the Q1, Q7 and Q8 runs the out-of-scope Shopify entries the review pointed to (its finding 8), and in the check runs' messages the holes in BigCommerce's and Salla's records (its finding 25).
+  1. when the sample ends: run `check_proposals.py records Q3 salla`, capture the live pages it cites, measure it with `count_tokens.py`, and re-size R3 and R5's audits by its cost per new statement;
+  2. tell the founder the measured rate and the re-sized whole in the next message;
+  3. record the founder's marks in `founder-decisions.tsv` when they come, and carry them into `areas.tsv`;
+  4. then the in-depth runs (R3), with the starting messages in `briefs/R3-starting-messages.md`, and the checking brief read once more before the first checking run.
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
 - `max`: inspections, Stage 1's step 2a, and the pilot's B, C, D and F;
