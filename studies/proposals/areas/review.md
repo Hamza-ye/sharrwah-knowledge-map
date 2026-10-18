@@ -8,6 +8,8 @@ Ids lead to the evidence:
 
 Arabic statements are given here in English paraphrase, and the id leads to the platform's own words. A statement marked **not reached** is carried by no concern in an area tied to the question named. I checked each such case by script.
 
+By the time I finished, the branch was at d54e414. Between the two commits, the areas files, the scripts and my brief are unchanged. `questions-for-agents.md` has only gained numbers for each question's sentences, and I cite those numbers in brackets, as in Q4 [3].
+
 ## Severity at a glance
 
 - **Must fix (15):** findings 2, 3, 4, 5, 7, 11 to 19, and 22.
@@ -276,7 +278,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
     - A-21, A-22 and A-28;
     - the Q8 reasons for Shopify ("parts a store adds") and WooCommerce ("a platform built in parts").
 
-    Q8 asks for "the units it names, whatever it calls them", so "parts" presupposes the answer.
+    Q8 [2] asks for "the units it names, whatever it calls them", so "parts" presupposes the answer.
   - **"market":**
     - as our word: Q3 Zid ("in a market near Yemen's");
     - as Salla's and Zid's own word, but unmarked: Q1 and Q2 Salla ("per market") and Q7 Zid ("for each market").
@@ -295,7 +297,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 - **Where:** `depth.tsv`, ten rows, and the `questions` column of `areas.tsv`.
 - **Problem:** each row's reason rests on concerns it cites, but these nine concerns (ten citations) sit in areas not tied to that row's question:
 
-  | Row | Depth | Cited concern | Its area | Area tied to |
+  | Row | Depth | Cited concern | Its area | Questions its area is tied to |
   |---|---|---|---|---|
   | Q1 Shopify | in depth | SH-C-037, catalogs | A-23 | Q4 |
   | Q7 Shopify | in depth | SH-C-037, catalogs | A-23 | Q4 |
@@ -327,7 +329,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 ### 12. Q1 misses what is set up differently by the seller's place in A-03, A-13, A-18, A-20, A-22 and A-23
 
 - **Where:** Q1's ties (A-01, A-10, A-11, A-12, A-14, A-15, A-16, A-19, A-21).
-- **Problem:** Q1 asks, "What does the platform set up differently for sellers based in different places?" Offers that differ by the seller's place are recorded across most areas. Six areas Q1 doesn't draw on hold them.
+- **Problem:** Q1 [3] asks, "What does the platform set up differently for sellers based in different places?" Offers that differ by the seller's place are recorded across most areas. Six areas Q1 doesn't draw on hold them.
 - **Evidence (all not reached for Q1):**
   - **A-13, Shopify (in depth):**
     - SH-S-0472: "Eligible businesses based in Australia, Canada, France, Germany, Ireland, the Netherlands, Spain, the United Kingdom, and the United States can apply for Shopify Capital";
@@ -348,7 +350,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 ### 13. Q2 misses a place's laws and the platform's own partners in A-01, A-02, A-05, A-10 and A-22
 
 - **Where:** Q2's ties (A-06, A-11 to A-20).
-- **Problem:** Q2 asks what changes "because of a place's laws, sanctions or licensing, or because of its own choice of partners and providers ... wherever it shows". Two kinds of evidence sit outside its ties:
+- **Problem:** Q2 [1] and [2] ask what changes "because of a place's laws, sanctions or licensing, or because of its own choice of partners and providers", recorded "wherever it shows". Two kinds of evidence sit outside its ties:
   - a place's law changing the product;
   - the platform's own choice of carriers and providers.
 - **Evidence (all not reached for Q2):**
@@ -360,10 +362,10 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
     - SA-S-5059: Salla's labels need no contract with a carrier or payment gateway;
     - SA-S-5065 and SA-S-5066: Salla holds label amounts from the wallet and settles with the carrier after its commission.
   - **A-10, Zid (check):**
-    - ZD-S-0839: Zid is "a technical intermediary" and not a carrier;
+    - ZD-S-0839, paraphrased: Zid is a technical intermediary for shipping, not a carrier, and compensation follows the carriers' terms;
     - ZD-S-0848: merchants in Saudi Arabia or the Gulf can ship through licensed logistics companies.
   - **A-02, Zid:** ZD-S-1046 and ZD-S-0959, sender names and promotional messages under the Communications and IT Commission's rules.
-  - **A-05, Salla:** SA-S-5017, from Salla's FAQ on abandoned carts: a rule given "in line with" the terms the Saudi Communications and IT Commission approved for the service.
+  - **A-05, Salla:** SA-S-5017, from Salla's FAQ on abandoned carts, paraphrased: a rule given as being in line with the terms the Saudi Communications and IT Commission approved for the service.
   - **A-01, Shopify:** SH-S-0262, identity verification "helps Shopify comply with financial regulations".
 - **Fix:** tie A-01, A-02, A-05, A-10 and A-22 to Q2.
 - **Severity:** must fix.
@@ -371,7 +373,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 ### 14. Q3 misses requirements on the seller in A-04, A-14, A-15, A-16, A-20, A-21 and A-22
 
 - **Where:** Q3's ties (A-01, A-02, A-03, A-11, A-12, A-13, A-17, A-18, A-19).
-- **Problem:** Q3 asks what a seller must do or meet before "opening the store to buyers, taking payments, receiving payouts, or selling particular products". Such requirements sit in seven areas it doesn't draw on.
+- **Problem:** Q3 [1] and [2] ask what a seller must do or meet before doing particular things, such as "opening the store to buyers, taking payments, receiving payouts, or selling particular products". Such requirements sit in seven areas it doesn't draw on.
 - **Evidence (all not reached for Q3):**
   - **A-22, Shopify (in depth):** SH-S-0047 and SH-S-7262: "If you use our POS Services, you must use the same payment processor that you use for the Online Services".
   - **A-22, WooCommerce (check):** WC-S-0893 and WC-S-0894: the store address must be in a supported country, and "You must be using that country's native currency as the store currency".
@@ -388,7 +390,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 ### 15. Q4 misses Zid Pay's payment links, a Salla limit on cash on delivery, and reports
 
 - **Where:** Q4's ties (A-03, A-09, A-10, A-11, A-22, A-23).
-- **Problem:** Q4 asks what limits apply to orders paid outside the platform. It also asks for "any way of paying outside the checkout ... where the platform or a service it provides collects the money". Three areas it doesn't draw on hold such evidence.
+- **Problem:** Q4 [4] asks what limits apply to orders paid outside the platform. Q4 [5] also asks for "any way of paying outside the checkout ... where the platform or a service it provides collects the money". Three areas it doesn't draw on hold such evidence.
 - **Evidence (all not reached for Q4):**
   - **A-12, Zid (check):** ZD-S-0586 and ZD-S-0587, paraphrased: Zid Pay's payment links are made as manual orders (Orders > Manual orders > New).
   - **A-18, Salla (in depth):** SA-S-0110, paraphrased: cash on delivery is hidden from customers blocked in other Salla stores.
@@ -399,7 +401,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 ### 16. Q5 misses where the money goes and who decides, in A-01, A-04, A-06, A-15, A-17, A-18, A-21 and A-23
 
 - **Where:** Q5's ties (A-03, A-05, A-08 to A-13, A-16, A-22, A-24).
-- **Problem:** Q5 asks who decides which methods a seller can offer, and on what basis, and "Where does the money from each method go on its way to the seller". Eight areas it doesn't draw on hold the answers, several for in-depth platforms.
+- **Problem:** Q5 [1] asks who decides which methods a seller can offer, and on what basis. Q5 [5] asks, "Where does the money from each method go on its way to the seller". Eight areas it doesn't draw on hold the answers, several for in-depth platforms.
 - **Evidence (all not reached for Q5):**
   - **A-18, Salla (in depth):** SA-S-0094 and SA-S-0098, paraphrased: Salla transfers the store's dues to the bank account tied to store verification, whose holder's name must match the verification.
   - **A-04 and A-06, Shopify (in depth):**
@@ -416,13 +418,13 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 ### 17. Q6 misses what isn't offered in a seller's place, in A-10, A-11, A-13, A-14, A-20, A-21 and A-22
 
 - **Where:** Q6's ties (A-01, A-02, A-12, A-15 to A-19).
-- **Problem:** Q6 asks "What can a seller do when they are based in, or sell from, a place where the platform, or part of what it offers, isn't available, and how does the platform say so?" Q6 draws on only one area for this: A-12, the platform's own payment service. Most of what isn't offered in a place sits elsewhere.
+- **Problem:** Q6 [2] asks "What can a seller do when they are based in, or sell from, a place where the platform, or part of what it offers, isn't available, and how does the platform say so?" Q6 draws on only one area for this: A-12, the platform's own payment service. Most of what isn't offered in a place sits elsewhere.
 - **Evidence (all not reached for Q6):**
   - **A-11:**
     - SH-S-0414: "Shop Pay Installments is available to eligible stores in the United States, Canada, and the United Kingdom";
     - ZD-S-0605: Paymob is for merchants in the UAE, Saudi Arabia and Oman;
     - BC-S-0143 and BC-S-0157: BigCommerce Payments and Braintree, for US-based businesses only;
-    - SA-S-0084 (also in A-10), paraphrased: tracking cash on delivery in the wallet "isn't available for UAE stores", so track it through the carrier or your own courier. This is Q6's exact case.
+    - SA-S-0084 (also in A-10), paraphrased: tracking cash on delivery in the wallet isn't available to stores in the UAE for now, so track the amounts through the carrier or your own courier. This is Q6's exact case.
   - **A-13:**
     - SH-S-0472, SH-S-0479 and SH-S-0498: Capital and Bill Pay, by country;
     - ZD-S-0693: Zid's financing, Saudi Arabia only.
@@ -439,7 +441,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 ### 18. Q7 misses currency rules in A-01, A-09, A-11, A-16, A-22 and A-23
 
 - **Where:** Q7's ties (A-03, A-12, A-15).
-- **Problem:** Q7 asks, among other things, in what currencies buyers pay and sellers are paid out, "and what decides it". Q7 draws on three areas, and currency rules sit in six others.
+- **Problem:** Q7 [1] and [2] ask, among other things, in what currencies buyers pay and sellers are paid out, and "what decides it". Q7 draws on three areas, and currency rules sit in six others.
 - **Evidence (all not reached for Q7):**
   - **A-11, Shopify (in depth):**
     - SH-S-0388: "To accept manual payments in multiple currencies, you need to use Shopify Payments and activate the international sales tools";
@@ -457,7 +459,7 @@ Arabic statements are given here in English paraphrase, and the id leads to the 
 ### 19. Q8 misses most of what the record says about how units are added and introduced
 
 - **Where:** Q8's ties (A-03, A-07, A-21, A-22, A-24, A-25, A-26, A-28, A-29).
-- **Problem:** Q8 asks, for each unit, "how new ones are added or existing ones extended, and how the platform introduces them, for example by plan, by place or by release stage". Such statements sit in nearly every area, and most of them fall outside Q8's nine. This includes the material named in the Q8 reasons themselves.
+- **Problem:** Q8 [3] asks, for each unit, "how new ones are added or existing ones extended, and how the platform introduces them, for example by plan, by place or by release stage". Such statements sit in nearly every area, and most of them fall outside Q8's nine. This includes the material named in the Q8 reasons themselves.
 - **Evidence (all not reached for Q8):**
   - **Salla's dashboard feature flags (Salla is a check).** Each flag records whether it is released, and the plans and countries it is scoped to. Counted once per merged area, they appear 520 times. 399 of those fall in areas not tied to Q8: 262 scoped by plan and 133 not yet released. They sit mostly in A-04, A-05, A-09, A-10 and A-11. Examples:
     - SA-S-3110, Google Pay: unreleased, on the Plus, Pro and Special plans (A-11);
@@ -525,8 +527,8 @@ A-05's and A-15's "won't do" texts are findings 4 and 5. A-12's "kept anyway" is
 
 - **Where:** the `left_out` and "kept anyway" fields of A-27 and A-04.
 - **Problem:**
-  - **A-27.** Its reason is "None of the eight items asks about reports." But Q4 asks: "what does the platform do and not do: recording the payment, the order's status, refunds, fees and reports?" The founder would read a wrong reason, and the Q4 runs would start without the reports.
-  - **A-04.** Its reason is "None of the eight items asks about products or stock as such." But Q3 names "selling particular products", and A-04 holds:
+  - **A-27.** Its reason is "None of the eight items asks about reports." But Q4 [3] asks: "what does the platform do and not do: recording the payment, the order's status, refunds, fees and reports?" The founder would read a wrong reason, and the Q4 runs would start without the reports.
+  - **A-04.** Its reason is "None of the eight items asks about products or stock as such." But Q3 [2] names "selling particular products", and A-04 holds:
     - statements that bear on Q3 and Q5;
     - the plan and release flags Q8 asks about.
 
@@ -579,12 +581,12 @@ A-05's and A-15's "won't do" texts are findings 4 and 5. A-12's "kept anyway" is
   - Shopify bars sanctioned regions, Syria among them, outright (SH-C-174);
   - Salla serves Saudi Arabia and the Gulf (SA-C-167).
 
-  Zid's record shows something neither of them shows. Zid lists Syria among its countries, while Zid Pay bars dealings with Syria. Zid Pay is offered only in Saudi Arabia and Kuwait. And one answer says Zid serves merchants "of all nationalities". The Q6 reason doesn't mention any of this.
+  Zid's record shows something neither of them shows. Zid lists Syria among its countries, while Zid Pay bars dealings with Syria. Zid Pay is offered only in Saudi Arabia and Kuwait. And one answer says Zid serves merchants of all nationalities (من جميع الجنسيات). The Q6 reason doesn't mention any of this.
 - **Evidence:**
   - ZD-S-0741: zid.sa/llms.txt, "Other countries": Egypt, UAE, Kuwait, Oman, Syria (2026-10-12).
-  - ZD-C-037: Zid Pay's prohibited activities include dealing with countries under international sanctions, "including Iran, Syria, ...".
-  - ZD-S-0743: Zid Payments "Currently in Saudi Arabia and Kuwait".
-  - ZD-S-0742, dated 2023: Zid serves merchants in Saudi Arabia and the Gulf only, "of all nationalities".
+  - ZD-C-037 (Zid Pay, Saudi Arabia), paraphrased: the prohibited activities include dealing, directly or indirectly, with countries under international sanctions, among them Iran and Syria.
+  - ZD-S-0743: Zid Payments, "Currently in Saudi Arabia and Kuwait".
+  - ZD-S-0742, dated 2023, paraphrased: Zid currently serves merchants located in Saudi Arabia and the Gulf only, of all nationalities.
   - ZD-S-0737: Zid Egypt has its own commercial registration, yet zid.eg serves the Saudi terms (gap on ZD-C-031).
   - ZD-C-030: Kuwaiti merchants' Zid Pay contract is under Saudi law, with Riyadh courts.
   - ZD-S-0746: the wallet must be emptied before the store's country changes.
@@ -614,7 +616,7 @@ A-05's and A-15's "won't do" texts are findings 4 and 5. A-12's "kept anyway" is
     - S01-BC-029, S01-BC-086 and S01-BC-091: where BigCommerce Payments and PayPal are offered. These bear on Q6.
   - **BigCommerce answers that differ.** BigCommerce's record shows answers the in-depth platforms may not:
     - **Q3:** the merchant must screen its own customers for sanctions: "conducting sanctions screenings of your Relevant Parties and customers" (BC-S-0438, with BC-S-0437). The gap notes that BigCommerce states no screening of its own;
-    - **Q7:** the settlement currency is set through the payment provider (BC-S-0403), and the conversion rate is "outside of BigCommerce's scope" (BC-S-0405, BC-S-0406). Shopify and Zid, read in depth, set these themselves.
+    - **Q7:** the settlement currency is set through the payment provider (BC-S-0403), and the conversion rate is "outside of BigCommerce's scope" (BC-S-0405, BC-S-0406). Shopify, read in depth, sets payout currencies through its own service (SH-C-069). Zid, also in depth, applies the activated gateway's exchange rate (ZD-S-0809), but records nothing on who sets the settlement currency.
 - **Fix:**
   - Cite the pilot's statements in these rows.
   - Tell these check runs where the record's holes are (BigCommerce's Help Center, and salla.com's held pages), and how to find the held captures (`method/held_index.py`).
@@ -632,10 +634,9 @@ A-05's and A-15's "won't do" texts are findings 4 and 5. A-12's "kept anyway" is
 - **Something missing.** Charity stores, a category of Salla's own, appear nowhere (finding 7).
 - **Questions starting without what bears on them.** Every one of the eight questions would start without evidence that bears on it, often for in-depth platforms. This includes concerns that `depth.tsv`'s own reasons cite, and reports, which A-27's reason wrongly says no question asks about (findings 11 to 19 and 22).
 
-Most of the fixes are edits to `areas.tsv`:
-- the `questions` column;
-- the "won't do", "kept anyway", `left_out` and note texts;
-- four `depth.tsv` cites.
+Most of the fixes are edits:
+- to `areas.tsv`: its `questions` column, and its "won't do", "kept anyway", `left_out` and note texts;
+- to `depth.tsv`: two cites, with the words of the reasons that rest on them.
 
 A few need platform areas re-cut: SA-A-17, SA-A-18, BC-A-10 and WC-A-03, and, for the better fix to A-15, SH-A-17, SA-A-21, ZD-A-10 and BC-A-19. After that, run `method/check_areas.py`, ideally with the two checks from finding 1, and `method/render_areas.py`.
 
