@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 21:30 UTC.
+**Updated:** 18 October 2026, 21:55 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -65,11 +65,12 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
   - `copy_statements.py` copies in two phases. Tying whole areas copies over 1,000 statements for several runs, so the recording run marks the candidate concerns first;
   - `check_proposals.py records` is the checker for record folders;
   - `briefs/R3-recording.md` and `briefs/R3-checking.md`, the briefs for the runs.
+- **The review brief's check** (`checks/R1-review-brief-check.md`): 13 findings, 3 must fix, all fixed (commit `7cc6c78`). Agents now get the questions from `questions-for-agents.md`, written by `method/agent_questions.py` without the founder's items and expectations. PLAN.md records the method fixes of R1 in section 11.
 - **Running:**
-  - the check of the review brief, `a267d6bf2f56848c9`. Its output is `studies/proposals/checks/R1-review-brief-check.md`;
+  - the review of the areas list (`briefs/R1-areas-review.md`), `a5b8a8b2950f1c3ff`, at `max`, started at 21:52 UTC. It writes `studies/proposals/areas/review.md`;
   - the check of the two R3 briefs, `a7540c280cead6255`, at `max`. It writes `studies/proposals/checks/R3-briefs-check.md`.
 - **Next:**
-  1. fix what the review brief's check finds, then run the review (`briefs/R1-areas-review.md`, at `max`), and its re-checks;
+  1. fix what the review finds, and have its fixes re-checked;
   2. fix what the R3 briefs' check finds;
   3. the areas list to the founder (G2). The sample runs while the founder marks: `copy_statements.py candidates Q2 salla`, then the run from `briefs/R3-recording.md`;
   4. measure the sample (`count_tokens.py`), re-size, and tell the founder in the next message.
@@ -365,9 +366,10 @@ Agents started earlier keep their effort.
 
 **Agents running when last checked (18 October 2026, 21:30 UTC):**
 - **Running:**
-  - the check of R1's review brief, `a267d6bf2f56848c9`;
+  - the review of the areas list, `a5b8a8b2950f1c3ff`;
   - the check of the R3 briefs, `a7540c280cead6255`.
 - **Done, and resumable:**
+  - the check of R1's review brief, `a267d6bf2f56848c9`;
   - R1's platform runs: Shopify `a0469a445d1b0e914`, Salla `a20553ba016ad3ada`, WooCommerce `aaf2643a96501f5d8`, Zid `a12d49e9152c9e5b0`, BigCommerce `a1907bde61272f6ac`;
   - the R0 check, `aaa90803d4fe66dba`.
 
