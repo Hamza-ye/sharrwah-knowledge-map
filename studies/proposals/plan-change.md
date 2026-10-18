@@ -286,14 +286,14 @@ Once a proposal or company decision is drafted, and before its review, with each
 | --- | --- | --- |
 | G0 | 12 October 2026, done | The plan |
 | G1 | 18 October 2026, done | Re-frame, with the decisions in `founder-decisions.tsv` |
-| The go on the change | After step R0 | The plan change, and the old question lists |
+| The go on the change | After step R0 | The plan change, the old question lists, and what to cut to fit the budget |
 | G2 | After step R1 | The areas: what Sharrwah won't do, and what it must |
 | The proposals | After step R6 | Each proposal, accepted or changed, and the company decisions |
 
 The proposals replace G3 and G4. The work ends when every proposal is accepted or changed.
 
 **When the founder is needed:**
-- **At the go:** this change, and what happens to the old question lists.
+- **At the go:** this change, what happens to the old question lists, and what to cut to fit the budget (`studies/proposals/sizing.md`).
 - **At G2:** the marks on the areas list.
 - **After recording:** the capture list, which is optional.
 - **At the proposals:** each proposal, and the company decisions.
