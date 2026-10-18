@@ -2,9 +2,30 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 17 October 2026, 21:05 UTC.
+**Updated:** 18 October 2026, 19:05 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
+
+**Gate G1:** answered on 18 October 2026: **re-frame.** The founder's message is `founder-messages/2026-10-18-g1-answer.md`. Its section A is recorded in `founder-decisions.tsv` as four decisions:
+- plain business words in everything for the founder, several decisions per message, and method rulings listed one plain line each;
+- the pilot's Decisions 1 to 14 deferred: they stay open and bind nothing, not even per market;
+- the guard: no arrangement that holds sellers' money through Sharrwah goes live without the founder's decision;
+- nothing runs before the founder's go on the plan change.
+
+**Running: the re-frame, step R0 (the plan change).**
+- **observed-sh** was pulled to `c8b5fbee2`: Shopify's Help Center in English and Arabic, organized as Shopify organizes it.
+- **The drafts** (commit `103eeb9`), in `studies/proposals/`:
+  - `plan-change.md`: the section 11 entry, and the sections it rewrites;
+  - `questions.md`: section B's eight items as neutral questions;
+  - `briefs/R1-areas-one-platform.md` and `briefs/R1-areas-review.md`, the first step's briefs;
+  - `sizing.md`: about 1.49 billion agent tokens if the sample meets the founder's bar, with about 0.43 billion of the coordinator's own on top;
+  - `areas/extract-<platform>.md`, written by `method/areas_extract.py`, and `method/check_areas.py` for the first step's runs.
+- **The independent check of the drafts** (`briefs/R0-check-of-the-draft.md`, commit `178d313`): agent `aaa90803d4fe66dba`, at `max`, started at 19:05 UTC. Expected cost: about 40 million tokens. It writes `studies/proposals/check-of-the-draft.md`.
+- **Next:**
+  1. fix what the check finds;
+  2. bring the founder the plain summary their message asks for;
+  3. nothing else runs before the founder's go, which puts the change into `PLAN.md` section 11.
+- **Waiting on the go:** Stage 1's fixes listed "before Stage 4", which the plan change replaces, and Q3's rows, which it proposes dropping.
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
 - `max`: inspections, Stage 1's step 2a, and the pilot's B, C, D and F;
@@ -30,7 +51,7 @@ Agents started earlier keep their effort.
   - `method/quote_check.py` (the shared verbatim check).
 - **observed-sh's 70 fetch archives** weren't in git at Stage 0. They landed later the same day, at `36a6319e`.
 
-**Running: Stage 1, Yemen's axes and cases.**
+**Stage 1, Yemen's axes and cases: done but for the fixes listed "before Stage 4",** which the plan change would replace (see the re-frame above).
 - **First run: stopped by its brief.** It hit the cap on axes after reading 23 of 262 items, and never reached the other runs or the founder's pages. It is kept in `studies/yemen-cases/first-run-stopped/` as a record.
 - **The brief is reworked** into two passes:
   - every source is read first, recording conditions at the size of an act or availability;
@@ -124,7 +145,7 @@ Agents started earlier keep their effort.
   - the review stop if past 20 axes (`review-axes.md`), then cases;
   - step 2c, the checker, an independent review, and a comparison with Q2's example axes.
 
-**Running: Stage 2, the pilot (S-01).**
+**Stage 2, the pilot (S-01): done.** G1 went to the founder on 17 October 2026 and was answered on 18 October 2026.
 - **Briefs:** `studies/subjects/S-01/briefs/`.
   - Brief A was inspected three times, with all findings fixed.
   - Briefs B to F and A2 were inspected twice. A third check follows before B runs.
@@ -258,7 +279,7 @@ Agents started earlier keep their effort.
       - the method report's proposals were rewritten after the founder's question on cost (commit `3b59fe3`). It is a draft for G1;
     - **F's re-checks** (commits `f04e525` and `b67bcd2`): the first found 13 of 14 must-fix items fixed, and one new overreach on option B (finding 32). The coordinator fixed it with the optional findings (commit `978e7a9`). The second re-check's verdict: the entry lets the founder decide, with no must-fix item open. Its optional findings 38 to 40 are fixed too;
     - **the method report is complete but for G1:** about 2.1 billion tokens in all, and seven proposals before more subjects;
-    - **Next: G1 goes to the founder in chat,** with the entry's decisions and G1's own question (scale up, change the method, or re-frame);
+    - **G1 went to the founder in chat,** with the entry's decisions and G1's own question (scale up, change the method, or re-frame). The founder answered "re-frame" on 18 October 2026;
   - **D's first checkpoint** (commit `2786cb4`):
     - `bears-on.tsv` lists, for each variation point, the axes and constants its variants' conditions bear on;
     - YC-00's marks: 10 carried unchanged, nine of them through PayPal on YA-62's old "Available"; 1 with a partner; 12 unknown;
@@ -293,15 +314,15 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 
-**Agents running when last checked (17 October 2026, 21:05 UTC):**
+**Agents running when last checked (18 October 2026, 19:05 UTC):**
 - **Running:**
-  - none.
+  - the re-frame's R0 check, `aaa90803d4fe66dba`.
 - **Done, and resumable:**
   - the pilot: F `a349d058600a20b3a`; phase B `a9e10fcc19233f104`; phase C `adc0057894ed0a4d9`; phase D `a279f7e700e54e76b`; Salla's A2 `aa3fbffb0ec8e81cc` and A3 `a1fbfec156e90bb84`;
   - Stage 1: the independent reviewer `a0755eeb78b50b2c8`; step 2a `a4a6021a9605c1efe`; the axes reviewers `ac1ab6f9db5c9443e` and `a9826e37d14145ed2`;
   - Stage 1 step 2b, by range: range 1 `a2697a25622282d23`, range 2 `afd16cf2925a43e1f`, range 3 `a1c52ff4913f2ba6c`, range 4 `abfbdaaac8cd9a9b3`.
 
-**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. **Paused** on 17 October 2026 at 21:05 UTC, while no agent runs and G1 waits for the founder. Turn it back on when agents run again. Delete it when the founder asks.
+**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. **Turned back on** on 18 October 2026 at 19:05 UTC, while the R0 check runs. Pause it again when no agent runs. Delete it when the founder asks.
 
 **To resume:**
 1. Commit whatever files are on disk, as an unchecked checkpoint.
