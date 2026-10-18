@@ -616,7 +616,9 @@ A-05's and A-15's "won't do" texts are findings 4 and 5. A-12's "kept anyway" is
     - S01-BC-029, S01-BC-086 and S01-BC-091: where BigCommerce Payments and PayPal are offered. These bear on Q6.
   - **BigCommerce answers that differ.** BigCommerce's record shows answers the in-depth platforms may not:
     - **Q3:** the merchant must screen its own customers for sanctions: "conducting sanctions screenings of your Relevant Parties and customers" (BC-S-0438, with BC-S-0437). The gap notes that BigCommerce states no screening of its own;
-    - **Q7:** the settlement currency is set through the payment provider (BC-S-0403), and the conversion rate is "outside of BigCommerce's scope" (BC-S-0405, BC-S-0406). Shopify, read in depth, sets payout currencies through its own service (SH-C-069). Zid, also in depth, applies the activated gateway's exchange rate (ZD-S-0809), but records nothing on who sets the settlement currency.
+    - **Q7:** the settlement currency is set through the payment provider (BC-S-0403), and the conversion rate is "outside of BigCommerce's scope" (BC-S-0405, BC-S-0406). On the platforms read in depth, the platform's own service decides:
+      - Shopify sets payout currencies through Shopify Payments (SH-C-069);
+      - Zid Pay charges buyers in the store's base currency, Saudi riyals or Kuwaiti dinars, whatever currency prices are shown in (ZD-S-0808, paraphrased).
 - **Fix:**
   - Cite the pilot's statements in these rows.
   - Tell these check runs where the record's holes are (BigCommerce's Help Center, and salla.com's held pages), and how to find the held captures (`method/held_index.py`).
