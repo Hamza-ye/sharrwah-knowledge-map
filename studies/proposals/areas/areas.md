@@ -76,11 +76,11 @@
 
 ### A-07. Online store and themes *(my heading)*
 
-- **What it covers:** How the storefront looks and is built: themes, theme markets, pages and blogs, storefront search, and the engines theme builders use.
+- **What it covers:** How the storefront looks and is built: themes and where they are sold, pages and blogs, storefront search, and the engines theme builders use.
 - **The platforms' own names:** Shopify: Online Store, Content, Custom data; Salla: Store design & themes, Online Store, تصميم المتجر, Storefront, Themes, Twilight Engine; Zid: Store Design / تصميم المتجر, Store Design, E-store, سوق الثيمات, Themes, الشروط والأحكام › سوق ثيمات زد; WooCommerce: Themes, Choose your theme, Customize your store; BigCommerce: Product filtering, Custom product filtering, Search Filters, Themes, Custom Template Associations, Mobile responsive website.
 - **Questions that draw on it:** Q8 (how the platform is organized and grows).
 - **If you mark it "won't do":** Themes and the storefront's design would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it.
-- **Kept anyway:** Its statements stay as evidence for Q8, where theme markets and theme engines are ways the platform grows.
+- **Kept anyway:** Its statements stay as evidence for Q8, where the places themes are sold, and theme engines, are ways the platform grows.
 - **Note:** The platforms name this Online Store, Store design & themes, Store Design or Themes; no one name covers them all.
 
 ### A-08. Cart and checkout *(my heading)*
@@ -143,7 +143,7 @@
 - **If you mark it "won't do":** Tax handling would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it.
 - **Kept anyway:** Its statements stay as evidence for Q1 (what differs by place) and Q2 (where a tax law lands in the product, such as e-invoicing).
 
-### A-15. Selling to several countries: markets, languages and currencies *(my heading)*
+### A-15. Selling to several countries: per-country store versions, languages and currencies *(my heading)*
 
 - **What it covers:** Selling to several countries from one store: per-country versions of the store (which some platforms call markets), languages and translation, and the currencies prices are shown and paid in.
 - **The platforms' own names:** Shopify: Markets, International sales tools; Salla: Markets, Multi-market, Market selection; Zid: ZID is available in, Egypt, UAE; WooCommerce: Currency, base currency, Currencies; BigCommerce: Multi-currency, Currencies, Store Locale.
@@ -221,10 +221,10 @@
 
 ### A-24. Apps *(Shopify's own name)*
 
-- **What it covers:** Apps and extensions a seller adds from the platform's marketplace, and the services listed there.
+- **What it covers:** Apps and extensions a seller adds from the platform's own store of apps, and the services listed there.
 - **The platforms' own names:** Shopify: Apps, Shopify App Store; Salla: Apps & integrations, App Store, Installed apps; Zid: سوق التطبيقات, Apps, الشروط والأحكام › سوق تطبيقات زد; WooCommerce: WooCommerce > Extensions, Marketplace, Woo Marketplace, Extensions > Merchandising, Extensions > Merchandising > Subscriptions, Extensions > Merchandising > Bookings and appointments, Extensions > Conversion, Extensions > Customer service, Extensions > Store management, Business services; BigCommerce: Integrations, Composable commerce, App Marketplace.
 - **Questions that draw on it:** Q5 (payment methods: who decides, and where the money goes), Q8 (how the platform is organized and grows).
-- **If you mark it "won't do":** An app marketplace would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. Payment methods that come through apps, which section B's item 5 names, would go with it.
+- **If you mark it "won't do":** A store of apps for sellers would be outside Sharrwah's extent: the first build's design would leave it out, and no proposal would provide for it. Payment methods that come through apps, which section B's item 5 names, would go with it.
 - **Kept anyway:** Its statements stay as evidence for Q5 (payment methods that come through apps) and Q8.
 
 ### A-25. Build & integrate *(Shopify's own name)*

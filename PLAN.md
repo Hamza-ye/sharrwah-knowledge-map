@@ -200,9 +200,12 @@ Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stage
 ### Step R3. Recording, by question
 
 - **Depth by question.** For each question, the platforms chosen with the areas list are read in depth. The others are checked only for anything that differs or goes beyond.
-- **A script copies first.** For each question and platform, it copies the statements under the concerns of the areas the question draws on, unchanged, with their citations. The run then:
-  - may add concerns or statements that bear on the question, and set aside copied ones that don't, each with its reason (`selection.tsv`);
-  - reads only what is still needed: held material first, through the corpus search; new material only where what is held doesn't show it.
+- **A script copies first, in two phases** (`method/copy_statements.py`):
+  - it lists as candidates the concerns of the areas the question draws on;
+  - the run marks each candidate as bearing on the question or not, gives its reason for each set aside, and may add concerns from other areas (`selection.tsv`);
+  - the script then copies the chosen concerns' statements, gaps and citations, unchanged.
+
+  The run then reads only what is still needed: held material first, starting from the platform's own organization of its help where it is held, then the corpus search; new material only where what is held doesn't show it.
 - **Each run is short:** one question on one platform.
 - **An in-depth run records:**
   - each statement in the platform's own words and terms, scoped as its source scopes it;
@@ -297,7 +300,7 @@ These rules are settled, each from the source named. The founder may challenge a
 
 ### Recording
 
-- **Questions, not categories.** Agents get section B's items only as the neutral questions in `studies/proposals/questions.md`.
+- **Questions, not categories.** Agents get section B's items only as the neutral questions in `studies/proposals/questions-for-agents.md`. A script writes it from `studies/proposals/questions.md`, leaving out the founder's items and expectations.
 - **The platforms' own words.** Agents record what each platform says and does in its own words and terms. The founder's working words never become the names or categories they record under. The rule against our own category names (Q1, 11 October, rule 1; the pilot's A brief, rule 1) holds for everything agents record.
 - **No level or setter fixed in advance.** Nothing fixes where something is set or decided, or who sets it. "Per market" in the founder's section B is a working description, not a fixed level.
 - **All that is recorded, not only menus:** how the platforms organize their products, and also their terms, country rules, eligibility and availability.
@@ -575,3 +578,10 @@ Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge 
     - risks 15 to 18 (section 7);
     - the check of Q3's rows run just before the proposals reach the founder, so that its list comes with them (section 6);
     - Stage 1's open items done only if a proposal uses them (section 6).
+- **18 October 2026,** method fixes during step R1, within this plan. Each is listed to the founder in one plain line in the next message:
+  - **A platform's own names** include each part of a list entry's path, each half of an English / Arabic pair, and entries out of the concern map's scope. These are all the platform's own words; scope decides only what is placed (`method/areas_extract.py`).
+  - **The corpus search reads Shopify's Help Center** held in observed-sh, in English and Arabic, under each page's address. Before, it reached the Help Center only through older fetch archives (`method/corpus_search.py`).
+  - **The copy is in two phases** (step R3, above). Tying whole areas to a question would have handed several runs over 1,000 statements, most not bearing on it.
+  - **Agents get the questions without the founder's items or expectations,** from `studies/proposals/questions-for-agents.md` (section 6). The check of the review brief found that `questions.md` carried both.
+  - **The sample is Q2 on Salla,** by step R2's rule: of the in-depth runs, the one whose candidate statements are nearest the median, the lower on a tie.
+
