@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 18 October 2026, 22:24 UTC.
+**Updated:** 18 October 2026, 22:57 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -85,9 +85,12 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **The sample is now Q3 on Salla:** the same rule, applied to the revised list, gives a median of 875 candidate statements, and Q3 on Salla holds exactly 875.
 - **Running:**
   - the re-check of the areas list's fixes, by the agent that reviewed it, `a5b8a8b2950f1c3ff`, at `max`. It writes `studies/proposals/areas/review-recheck.md`;
-  - the re-check of the R3 briefs' fixes, `a7540c280cead6255`, at `max`, from 22:08 UTC. It writes `studies/proposals/checks/R3-briefs-recheck.md`.
+- **The R3 briefs are ready for the sample:**
+  - the re-check (`checks/R3-briefs-recheck.md`, 36.4 million tokens): 31 of the 32 first findings fixed, 11 new, 7 of them must fix; all fixed (commit `5fd5079`);
+  - a short verification of those fixes by a fresh agent (`checks/R3-briefs-recheck-verify.md`, 8.8 million): all 11 fixed, and the brief can run the sample; its four optional points fixed (commit `2464b16`).
+  - The checking brief is to be read once more before the first checking run, as the re-check advised.
 - **Next:**
-  1. fix what the two re-checks find;
+  1. fix what the areas list's re-check finds;
   2. the areas list to the founder (G2), with the method rulings since the last message, one plain line each, and the steps past their expected cost with the re-sized whole. The sample runs while the founder marks: `copy_statements.py candidates Q3 salla`, then the run from `briefs/R3-recording.md`;
   3. measure the sample (`count_tokens.py`), re-size, and tell the founder in the next message;
   4. name in the starting messages of the Q1, Q7 and Q8 runs the out-of-scope Shopify entries the review pointed to (its finding 8), and in the check runs' messages the holes in BigCommerce's and Salla's records (its finding 25).
