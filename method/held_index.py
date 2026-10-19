@@ -130,8 +130,14 @@ class Held:
                     if not url.startswith("http") or not files:
                         continue
                     status = str(a.get("http_status") or "200")
-                    self._add(url, {"repo": repo, "commit": commit, "kind": "step", "status": status, "redirect": "",
-                                    "location": files[0], "readable": a.get("outcome") in (None, "ok") and status.startswith("2")})
+                    h = {"repo": repo, "commit": commit, "kind": "step", "status": status, "redirect": "",
+                         "location": files[0], "readable": a.get("outcome") in (None, "ok") and status.startswith("2")}
+                    self._add(url, h)
+                    # Shopify's help links its admin without a store (admin.shopify.com/settings/payments), and the
+                    # admin opens that address in the signed-in store: a store's page is held for it too
+                    m = re.match(r"^(https://admin\.shopify\.com)/store/[^/?#]+(/.*)?$", url)
+                    if m:
+                        self._add(m.group(1) + (m.group(2) or "/"), dict(h))
         # Corpora held as rows, one address per row: Salla's help-centre articles (observed-sa item 11).
         for items in sorted(glob.glob(os.path.join(root, "structures/salla/help-articles/*/items.jsonl"))):
             lang_dir = os.path.relpath(os.path.dirname(items), root)
