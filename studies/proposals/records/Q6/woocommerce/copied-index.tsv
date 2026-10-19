@@ -1,0 +1,422 @@
+copy_id	concern_id	identifier
+Q6-WC-K0051	WC-C-004	Set up additional payment options
+Q6-WC-K0052	WC-C-004	Set up payments
+Q6-WC-K0053	WC-C-004	DefaultPaymentGateways
+Q6-WC-K0054	WC-C-004	PaymentsExtensionSuggestions::$country_extensions
+Q6-WC-K0055	WC-C-004	PaymentsExtensionSuggestions::$country_extensions
+Q6-WC-K0056	WC-C-004	woocommerce_show_marketplace_suggestions
+Q6-WC-K0057	WC-C-004	woocommerce_show_marketplace_suggestions
+Q6-WC-K0058	WC-C-004	PaymentsExtensionSuggestions::get_country_extensions
+Q6-WC-K0059	WC-C-004	PaymentsExtensionSuggestions::get_country_extensions
+Q6-WC-K0060	WC-C-004	PaymentsExtensionSuggestions::with_store_state_details
+Q6-WC-K0061	WC-C-004	$country_extensions['CA']
+Q6-WC-K0062	WC-C-004	$country_extensions['CA']
+Q6-WC-K0063	WC-C-004	$country_extensions['PM']
+Q6-WC-K0064	WC-C-004	$country_extensions['US']
+Q6-WC-K0065	WC-C-004	$country_extensions['US']
+Q6-WC-K0066	WC-C-004	$country_extensions['UM']
+Q6-WC-K0067	WC-C-004	$country_extensions['GB']
+Q6-WC-K0068	WC-C-004	$country_extensions['GB']
+Q6-WC-K0069	WC-C-004	$country_extensions['GB']
+Q6-WC-K0070	WC-C-004	$country_extensions['AX']
+Q6-WC-K0071	WC-C-004	$country_extensions['AL']
+Q6-WC-K0072	WC-C-004	$country_extensions['AD']
+Q6-WC-K0073	WC-C-004	$country_extensions['AM']
+Q6-WC-K0074	WC-C-004	$country_extensions['AT']
+Q6-WC-K0075	WC-C-004	$country_extensions['AT']
+Q6-WC-K0076	WC-C-004	$country_extensions['BY']
+Q6-WC-K0077	WC-C-004	$country_extensions['BE']
+Q6-WC-K0078	WC-C-004	$country_extensions['BE']
+Q6-WC-K0079	WC-C-004	$country_extensions['BA']
+Q6-WC-K0080	WC-C-004	$country_extensions['BV']
+Q6-WC-K0081	WC-C-004	$country_extensions['BG']
+Q6-WC-K0082	WC-C-004	$country_extensions['HR']
+Q6-WC-K0083	WC-C-004	$country_extensions['HR']
+Q6-WC-K0084	WC-C-004	$country_extensions['CY']
+Q6-WC-K0085	WC-C-004	$country_extensions['CY']
+Q6-WC-K0086	WC-C-004	$country_extensions['CZ']
+Q6-WC-K0087	WC-C-004	$country_extensions['DK']
+Q6-WC-K0088	WC-C-004	$country_extensions['DK']
+Q6-WC-K0089	WC-C-004	$country_extensions['EE']
+Q6-WC-K0090	WC-C-004	$country_extensions['FI']
+Q6-WC-K0091	WC-C-004	$country_extensions['FI']
+Q6-WC-K0092	WC-C-004	$country_extensions['FO']
+Q6-WC-K0093	WC-C-004	$country_extensions['FR']
+Q6-WC-K0094	WC-C-004	$country_extensions['FR']
+Q6-WC-K0095	WC-C-004	$country_extensions['FR']
+Q6-WC-K0096	WC-C-004	$country_extensions['PF']
+Q6-WC-K0097	WC-C-004	$country_extensions['GI']
+Q6-WC-K0098	WC-C-004	$country_extensions['DE']
+Q6-WC-K0099	WC-C-004	$country_extensions['DE']
+Q6-WC-K0100	WC-C-004	$country_extensions['GR']
+Q6-WC-K0101	WC-C-004	$country_extensions['GL']
+Q6-WC-K0102	WC-C-004	$country_extensions['GG']
+Q6-WC-K0103	WC-C-004	$country_extensions['VA']
+Q6-WC-K0104	WC-C-004	$country_extensions['HU']
+Q6-WC-K0105	WC-C-004	$country_extensions['IS']
+Q6-WC-K0106	WC-C-004	$country_extensions['IE']
+Q6-WC-K0107	WC-C-004	$country_extensions['IE']
+Q6-WC-K0108	WC-C-004	$country_extensions['IM']
+Q6-WC-K0109	WC-C-004	$country_extensions['IT']
+Q6-WC-K0110	WC-C-004	$country_extensions['JE']
+Q6-WC-K0111	WC-C-004	$country_extensions['LV']
+Q6-WC-K0112	WC-C-004	$country_extensions['LI']
+Q6-WC-K0113	WC-C-004	$country_extensions['LT']
+Q6-WC-K0114	WC-C-004	$country_extensions['LU']
+Q6-WC-K0115	WC-C-004	$country_extensions['MT']
+Q6-WC-K0116	WC-C-004	$country_extensions['MD']
+Q6-WC-K0117	WC-C-004	$country_extensions['MC']
+Q6-WC-K0118	WC-C-004	$country_extensions['ME']
+Q6-WC-K0119	WC-C-004	$country_extensions['NL']
+Q6-WC-K0120	WC-C-004	$country_extensions['MK']
+Q6-WC-K0121	WC-C-004	$country_extensions['NO']
+Q6-WC-K0122	WC-C-004	$country_extensions['PL']
+Q6-WC-K0123	WC-C-004	$country_extensions['PT']
+Q6-WC-K0124	WC-C-004	$country_extensions['RO']
+Q6-WC-K0125	WC-C-004	$country_extensions['RU']
+Q6-WC-K0126	WC-C-004	$country_extensions['SM']
+Q6-WC-K0127	WC-C-004	$country_extensions['RS']
+Q6-WC-K0128	WC-C-004	$country_extensions['SK']
+Q6-WC-K0129	WC-C-004	$country_extensions['SI']
+Q6-WC-K0130	WC-C-004	$country_extensions['ES']
+Q6-WC-K0131	WC-C-004	$country_extensions['ES']
+Q6-WC-K0132	WC-C-004	$country_extensions['SJ']
+Q6-WC-K0133	WC-C-004	$country_extensions['SE']
+Q6-WC-K0134	WC-C-004	$country_extensions['CH']
+Q6-WC-K0135	WC-C-004	$country_extensions['TR']
+Q6-WC-K0136	WC-C-004	$country_extensions['UA']
+Q6-WC-K0137	WC-C-004	$country_extensions['AG']
+Q6-WC-K0138	WC-C-004	$country_extensions['AI']
+Q6-WC-K0139	WC-C-004	$country_extensions['AR']
+Q6-WC-K0140	WC-C-004	$country_extensions['AR']
+Q6-WC-K0141	WC-C-004	$country_extensions['AW']
+Q6-WC-K0142	WC-C-004	$country_extensions['BS']
+Q6-WC-K0143	WC-C-004	$country_extensions['BB']
+Q6-WC-K0144	WC-C-004	$country_extensions['BZ']
+Q6-WC-K0145	WC-C-004	$country_extensions['BM']
+Q6-WC-K0146	WC-C-004	$country_extensions['BO']
+Q6-WC-K0147	WC-C-004	$country_extensions['BQ']
+Q6-WC-K0148	WC-C-004	$country_extensions['BR']
+Q6-WC-K0149	WC-C-004	$country_extensions['BR']
+Q6-WC-K0150	WC-C-004	$country_extensions['VG']
+Q6-WC-K0151	WC-C-004	$country_extensions['KY']
+Q6-WC-K0152	WC-C-004	$country_extensions['CL']
+Q6-WC-K0153	WC-C-004	$country_extensions['CL']
+Q6-WC-K0154	WC-C-004	$country_extensions['CO']
+Q6-WC-K0155	WC-C-004	$country_extensions['CO']
+Q6-WC-K0156	WC-C-004	$country_extensions['CR']
+Q6-WC-K0157	WC-C-004	$country_extensions['CU']
+Q6-WC-K0158	WC-C-004	$country_extensions['CW']
+Q6-WC-K0159	WC-C-004	$country_extensions['DM']
+Q6-WC-K0160	WC-C-004	$country_extensions['DO']
+Q6-WC-K0161	WC-C-004	$country_extensions['EC']
+Q6-WC-K0162	WC-C-004	$country_extensions['SV']
+Q6-WC-K0163	WC-C-004	$country_extensions['FK']
+Q6-WC-K0164	WC-C-004	$country_extensions['GF']
+Q6-WC-K0165	WC-C-004	$country_extensions['GD']
+Q6-WC-K0166	WC-C-004	$country_extensions['GP']
+Q6-WC-K0167	WC-C-004	$country_extensions['GT']
+Q6-WC-K0168	WC-C-004	$country_extensions['GY']
+Q6-WC-K0169	WC-C-004	$country_extensions['HT']
+Q6-WC-K0170	WC-C-004	$country_extensions['HN']
+Q6-WC-K0171	WC-C-004	$country_extensions['JM']
+Q6-WC-K0172	WC-C-004	$country_extensions['MQ']
+Q6-WC-K0173	WC-C-004	$country_extensions['MX']
+Q6-WC-K0174	WC-C-004	$country_extensions['MX']
+Q6-WC-K0175	WC-C-004	$country_extensions['MS']
+Q6-WC-K0176	WC-C-004	$country_extensions['NI']
+Q6-WC-K0177	WC-C-004	$country_extensions['PA']
+Q6-WC-K0178	WC-C-004	$country_extensions['PY']
+Q6-WC-K0179	WC-C-004	$country_extensions['PE']
+Q6-WC-K0180	WC-C-004	$country_extensions['PE']
+Q6-WC-K0181	WC-C-004	$country_extensions['PR']
+Q6-WC-K0182	WC-C-004	$country_extensions['BL']
+Q6-WC-K0183	WC-C-004	$country_extensions['KN']
+Q6-WC-K0184	WC-C-004	$country_extensions['LC']
+Q6-WC-K0185	WC-C-004	$country_extensions['MF']
+Q6-WC-K0186	WC-C-004	$country_extensions['VC']
+Q6-WC-K0187	WC-C-004	$country_extensions['SX']
+Q6-WC-K0188	WC-C-004	$country_extensions['GS']
+Q6-WC-K0189	WC-C-004	$country_extensions['SR']
+Q6-WC-K0190	WC-C-004	$country_extensions['TT']
+Q6-WC-K0191	WC-C-004	$country_extensions['TC']
+Q6-WC-K0192	WC-C-004	$country_extensions['UY']
+Q6-WC-K0193	WC-C-004	$country_extensions['UY']
+Q6-WC-K0194	WC-C-004	$country_extensions['VI']
+Q6-WC-K0195	WC-C-004	$country_extensions['VE']
+Q6-WC-K0196	WC-C-004	$country_extensions['AQ']
+Q6-WC-K0197	WC-C-004	$country_extensions['AS']
+Q6-WC-K0198	WC-C-004	$country_extensions['AU']
+Q6-WC-K0199	WC-C-004	$country_extensions['AU']
+Q6-WC-K0200	WC-C-004	$country_extensions['AU']
+Q6-WC-K0201	WC-C-004	$country_extensions['BD']
+Q6-WC-K0202	WC-C-004	$country_extensions['IO']
+Q6-WC-K0203	WC-C-004	$country_extensions['BN']
+Q6-WC-K0204	WC-C-004	$country_extensions['KH']
+Q6-WC-K0205	WC-C-004	$country_extensions['CN']
+Q6-WC-K0206	WC-C-004	$country_extensions['CX']
+Q6-WC-K0207	WC-C-004	$country_extensions['CC']
+Q6-WC-K0208	WC-C-004	$country_extensions['CK']
+Q6-WC-K0209	WC-C-004	$country_extensions['FJ']
+Q6-WC-K0210	WC-C-004	$country_extensions['GU']
+Q6-WC-K0211	WC-C-004	$country_extensions['HM']
+Q6-WC-K0212	WC-C-004	$country_extensions['HK']
+Q6-WC-K0213	WC-C-004	$country_extensions['IN']
+Q6-WC-K0214	WC-C-004	$country_extensions['ID']
+Q6-WC-K0215	WC-C-004	$country_extensions['JP']
+Q6-WC-K0216	WC-C-004	$country_extensions['JP']
+Q6-WC-K0217	WC-C-004	$country_extensions['KI']
+Q6-WC-K0218	WC-C-004	$country_extensions['LA']
+Q6-WC-K0219	WC-C-004	$country_extensions['MO']
+Q6-WC-K0220	WC-C-004	$country_extensions['MY']
+Q6-WC-K0221	WC-C-004	$country_extensions['MV']
+Q6-WC-K0222	WC-C-004	$country_extensions['MH']
+Q6-WC-K0223	WC-C-004	$country_extensions['FM']
+Q6-WC-K0224	WC-C-004	$country_extensions['MN']
+Q6-WC-K0225	WC-C-004	$country_extensions['MM']
+Q6-WC-K0226	WC-C-004	$country_extensions['NR']
+Q6-WC-K0227	WC-C-004	$country_extensions['NP']
+Q6-WC-K0228	WC-C-004	$country_extensions['NC']
+Q6-WC-K0229	WC-C-004	$country_extensions['NZ']
+Q6-WC-K0230	WC-C-004	$country_extensions['NZ']
+Q6-WC-K0231	WC-C-004	$country_extensions['NU']
+Q6-WC-K0232	WC-C-004	$country_extensions['NF']
+Q6-WC-K0233	WC-C-004	$country_extensions['MP']
+Q6-WC-K0234	WC-C-004	$country_extensions['PW']
+Q6-WC-K0235	WC-C-004	$country_extensions['PG']
+Q6-WC-K0236	WC-C-004	$country_extensions['PH']
+Q6-WC-K0237	WC-C-004	$country_extensions['PN']
+Q6-WC-K0238	WC-C-004	$country_extensions['WS']
+Q6-WC-K0239	WC-C-004	$country_extensions['SG']
+Q6-WC-K0240	WC-C-004	$country_extensions['SB']
+Q6-WC-K0241	WC-C-004	$country_extensions['LK']
+Q6-WC-K0242	WC-C-004	$country_extensions['KR']
+Q6-WC-K0243	WC-C-004	$country_extensions['TW']
+Q6-WC-K0244	WC-C-004	$country_extensions['TH']
+Q6-WC-K0245	WC-C-004	$country_extensions['TL']
+Q6-WC-K0246	WC-C-004	$country_extensions['TK']
+Q6-WC-K0247	WC-C-004	$country_extensions['TO']
+Q6-WC-K0248	WC-C-004	$country_extensions['TV']
+Q6-WC-K0249	WC-C-004	$country_extensions['VU']
+Q6-WC-K0250	WC-C-004	$country_extensions['VN']
+Q6-WC-K0251	WC-C-004	$country_extensions['WF']
+Q6-WC-K0252	WC-C-004	$country_extensions['DZ']
+Q6-WC-K0253	WC-C-004	$country_extensions['AO']
+Q6-WC-K0254	WC-C-004	$country_extensions['BJ']
+Q6-WC-K0255	WC-C-004	$country_extensions['BW']
+Q6-WC-K0256	WC-C-004	$country_extensions['BF']
+Q6-WC-K0257	WC-C-004	$country_extensions['BI']
+Q6-WC-K0258	WC-C-004	$country_extensions['CV']
+Q6-WC-K0259	WC-C-004	$country_extensions['CM']
+Q6-WC-K0260	WC-C-004	$country_extensions['CF']
+Q6-WC-K0261	WC-C-004	$country_extensions['TD']
+Q6-WC-K0262	WC-C-004	$country_extensions['KM']
+Q6-WC-K0263	WC-C-004	$country_extensions['CG']
+Q6-WC-K0264	WC-C-004	$country_extensions['CI']
+Q6-WC-K0265	WC-C-004	$country_extensions['EG']
+Q6-WC-K0266	WC-C-004	$country_extensions['CD']
+Q6-WC-K0267	WC-C-004	$country_extensions['DJ']
+Q6-WC-K0268	WC-C-004	$country_extensions['GQ']
+Q6-WC-K0269	WC-C-004	$country_extensions['ER']
+Q6-WC-K0270	WC-C-004	$country_extensions['SZ']
+Q6-WC-K0271	WC-C-004	$country_extensions['ET']
+Q6-WC-K0272	WC-C-004	$country_extensions['TF']
+Q6-WC-K0273	WC-C-004	$country_extensions['GA']
+Q6-WC-K0274	WC-C-004	$country_extensions['GH']
+Q6-WC-K0275	WC-C-004	$country_extensions['GM']
+Q6-WC-K0276	WC-C-004	$country_extensions['GN']
+Q6-WC-K0277	WC-C-004	$country_extensions['GW']
+Q6-WC-K0278	WC-C-004	$country_extensions['KE']
+Q6-WC-K0279	WC-C-004	$country_extensions['LS']
+Q6-WC-K0280	WC-C-004	$country_extensions['LR']
+Q6-WC-K0281	WC-C-004	$country_extensions['LY']
+Q6-WC-K0282	WC-C-004	$country_extensions['MG']
+Q6-WC-K0283	WC-C-004	$country_extensions['MW']
+Q6-WC-K0284	WC-C-004	$country_extensions['ML']
+Q6-WC-K0285	WC-C-004	$country_extensions['MR']
+Q6-WC-K0286	WC-C-004	$country_extensions['MU']
+Q6-WC-K0287	WC-C-004	$country_extensions['YT']
+Q6-WC-K0288	WC-C-004	$country_extensions['MA']
+Q6-WC-K0289	WC-C-004	$country_extensions['MZ']
+Q6-WC-K0290	WC-C-004	$country_extensions['NA']
+Q6-WC-K0291	WC-C-004	$country_extensions['NE']
+Q6-WC-K0292	WC-C-004	$country_extensions['NG']
+Q6-WC-K0293	WC-C-004	$country_extensions['RE']
+Q6-WC-K0294	WC-C-004	$country_extensions['RW']
+Q6-WC-K0295	WC-C-004	$country_extensions['SH']
+Q6-WC-K0296	WC-C-004	$country_extensions['ST']
+Q6-WC-K0297	WC-C-004	$country_extensions['SN']
+Q6-WC-K0298	WC-C-004	$country_extensions['SC']
+Q6-WC-K0299	WC-C-004	$country_extensions['SL']
+Q6-WC-K0300	WC-C-004	$country_extensions['SO']
+Q6-WC-K0301	WC-C-004	$country_extensions['ZA']
+Q6-WC-K0302	WC-C-004	$country_extensions['SS']
+Q6-WC-K0303	WC-C-004	$country_extensions['TZ']
+Q6-WC-K0304	WC-C-004	$country_extensions['TG']
+Q6-WC-K0305	WC-C-004	$country_extensions['TN']
+Q6-WC-K0306	WC-C-004	$country_extensions['UG']
+Q6-WC-K0307	WC-C-004	$country_extensions['EH']
+Q6-WC-K0308	WC-C-004	$country_extensions['ZM']
+Q6-WC-K0309	WC-C-004	$country_extensions['ZW']
+Q6-WC-K0310	WC-C-004	$country_extensions['AF']
+Q6-WC-K0311	WC-C-004	$country_extensions['AZ']
+Q6-WC-K0312	WC-C-004	$country_extensions['BH']
+Q6-WC-K0313	WC-C-004	$country_extensions['BT']
+Q6-WC-K0314	WC-C-004	$country_extensions['GE']
+Q6-WC-K0315	WC-C-004	$country_extensions['IR']
+Q6-WC-K0316	WC-C-004	$country_extensions['IQ']
+Q6-WC-K0317	WC-C-004	$country_extensions['IL']
+Q6-WC-K0318	WC-C-004	$country_extensions['JO']
+Q6-WC-K0319	WC-C-004	$country_extensions['KZ']
+Q6-WC-K0320	WC-C-004	$country_extensions['KW']
+Q6-WC-K0321	WC-C-004	$country_extensions['KG']
+Q6-WC-K0322	WC-C-004	$country_extensions['LB']
+Q6-WC-K0323	WC-C-004	$country_extensions['OM']
+Q6-WC-K0324	WC-C-004	$country_extensions['PK']
+Q6-WC-K0325	WC-C-004	$country_extensions['PS']
+Q6-WC-K0326	WC-C-004	$country_extensions['QA']
+Q6-WC-K0327	WC-C-004	$country_extensions['SA']
+Q6-WC-K0328	WC-C-004	$country_extensions['SD']
+Q6-WC-K0329	WC-C-004	$country_extensions['TJ']
+Q6-WC-K0330	WC-C-004	$country_extensions['TM']
+Q6-WC-K0331	WC-C-004	$country_extensions['AE']
+Q6-WC-K0332	WC-C-004	$country_extensions['UZ']
+Q6-WC-K0333	WC-C-004	$country_extensions['YE']
+Q6-WC-K0334	WC-C-004	wc-admin > payment-gateway-suggestions (PaymentGatewaySuggestions)
+Q6-WC-K0335	WC-C-004	wccom/payment-gateway-suggestions/2.0/suggestions.json
+Q6-WC-K0336	WC-C-004	woocommerce_admin_payment_gateway_suggestion_specs
+Q6-WC-K0393	WC-C-009	WooPayments built in partnership with Stripe
+Q6-WC-K0394	WC-C-009	How quickly will you confirm my identity?
+Q6-WC-K0395	WC-C-009	“Know your customer”
+Q6-WC-K0396	WC-C-009	How do I delete my WooPayments account?
+Q6-WC-K0397	WC-C-009	WooPayments built in partnership with Stripe
+Q6-WC-K0398	WC-C-009	Why do I have to share this information?
+Q6-WC-K0399	WC-C-009	“Know your customer”
+Q6-WC-K0400	WC-C-010	WooPayments in Your Country
+Q6-WC-K0401	WC-C-010	Supported countries
+Q6-WC-K0402	WC-C-010	Supported countries
+Q6-WC-K0403	WC-C-010	Other countries
+Q6-WC-K0404	WC-C-010	readme.txt: ALL THE TOOLS YOU NEED TO SELL
+Q6-WC-K0405	WC-C-010	Restrictions on account types
+Q6-WC-K0406	WC-C-010	Supported countries
+Q6-WC-K0407	WC-C-010	Outlying territories of the U.S.
+Q6-WC-K0408	WC-C-010	Outlying territories of the UK
+Q6-WC-K0409	WC-C-010	Outlying territories of the Netherlands
+Q6-WC-K0410	WC-C-010	Restrictions on account types
+Q6-WC-K0411	WC-C-010	Restrictions on account types
+Q6-WC-K0412	WC-C-010	Other countries
+Q6-WC-K0413	WC-C-011	Restricted accounts
+Q6-WC-K0414	WC-C-011	prohibited and restricted businesses
+Q6-WC-K0415	WC-C-011	What businesses and products are prohibited or restricted on WooPayments?
+Q6-WC-K0416	WC-C-011	What businesses and products are prohibited or restricted on WooPayments?
+Q6-WC-K0417	WC-C-011	Alcohol and CBD
+Q6-WC-K0418	WC-C-011	8. j. More on WooPayments Specifically
+Q6-WC-K0419	WC-C-011	Restricted accounts
+Q6-WC-K0420	WC-C-011	Restricted accounts
+Q6-WC-K0421	WC-C-011	8. j. More on WooPayments Specifically
+Q6-WC-K0422	WC-C-011	prohibited and restricted businesses
+Q6-WC-K0423	WC-C-011	Restricted accounts
+Q6-WC-K0424	WC-C-011	What businesses and products are prohibited or restricted on WooPayments?
+Q6-WC-K0438	WC-C-014	WooPayments: In-Person Payments
+Q6-WC-K0439	WC-C-014	WooPayments: In-Person Payments
+Q6-WC-K0440	WC-C-014	Currencies
+Q6-WC-K0441	WC-C-014	8. j. More on WooPayments Specifically (in-person payments)
+Q6-WC-K0442	WC-C-014	8. j. More on WooPayments Specifically (in-person payments)
+Q6-WC-K0443	WC-C-014	WooPayments: In-Person Payments
+Q6-WC-K0444	WC-C-015	8. d. WooPay
+Q6-WC-K0445	WC-C-015	Payments > Settings > Express checkouts
+Q6-WC-K0446	WC-C-015	8. j. More on WooPay Specifically
+Q6-WC-K0447	WC-C-015	Requirements
+Q6-WC-K0448	WC-C-015	Enabling WooPay
+Q6-WC-K0449	WC-C-015	8. j. More on WooPay Specifically
+Q6-WC-K0450	WC-C-015	8. j. More on WooPay Specifically
+Q6-WC-K0451	WC-C-016	Extensions > Store management > Merchant financing
+Q6-WC-K0452	WC-C-016	WooPayments: Stripe Capital Overview
+Q6-WC-K0453	WC-C-016	Eligibility
+Q6-WC-K0454	WC-C-016	Eligibility (footnote)
+Q6-WC-K0455	WC-C-016	Repayment
+Q6-WC-K0456	WC-C-016	Repayment
+Q6-WC-K0493	WC-C-022	Store guidelines
+Q6-WC-K0494	WC-C-022	Store guidelines
+Q6-WC-K0495	WC-C-022	Store Guidelines
+Q6-WC-K0496	WC-C-023	1. Who's Who
+Q6-WC-K0497	WC-C-023	1. Who's Who: Woo Services
+Q6-WC-K0498	WC-C-023	1. Who's Who: Woo Services
+Q6-WC-K0499	WC-C-023	1. Who's Who: Woo Services
+Q6-WC-K0500	WC-C-023	1. Who's Who
+Q6-WC-K0501	WC-C-023	Terms of Service (opening)
+Q6-WC-K0507	WC-C-025	readme.txt: Description
+Q6-WC-K0508	WC-C-025	8. Specific Service Terms: c. Woo
+Q6-WC-K0509	WC-C-025	readme.txt: Contribute and translate
+Q6-WC-K0510	WC-C-025	GPLv3 section 2. Basic Permissions
+Q6-WC-K0511	WC-C-025	readme.txt: header
+Q6-WC-K0512	WC-C-025	license.txt: 15. Disclaimer of Warranty
+Q6-WC-K0513	WC-C-025	readme.txt: Description
+Q6-WC-K0524	WC-C-028	18. US Economic Sanctions
+Q6-WC-K0525	WC-C-028	18. US Economic Sanctions
+Q6-WC-K0526	WC-C-028	18. US Economic Sanctions
+Q6-WC-K0527	WC-C-028	8. j. Ecommerce Services: Prohibited Uses
+Q6-WC-K0528	WC-C-028	18. US Economic Sanctions
+Q6-WC-K0529	WC-C-028	18. US Economic Sanctions
+Q6-WC-K0530	WC-C-028	18. US Economic Sanctions
+Q6-WC-K0531	WC-C-029	8. j. Ecommerce Services: Prohibited Uses
+Q6-WC-K0532	WC-C-029	8. j. Ecommerce Services: Your responsibilities
+Q6-WC-K0564	WC-C-034	WooCommerce Server Recommendations
+Q6-WC-K0565	WC-C-034	How and Why We Share Information: Third-party vendors
+Q6-WC-K0566	WC-C-034	WooCommerce Server Recommendations
+Q6-WC-K0723	WC-C-049	Connecting to WordPress.com with WooPayments
+Q6-WC-K0724	WC-C-049	Jetpack
+Q6-WC-K0725	WC-C-049	WordPress.com account
+Q6-WC-K0726	WC-C-049	Ecommerce Services (Privacy Policy)
+Q6-WC-K0727	WC-C-049	8. Specific Service Terms: c. Woo
+Q6-WC-K0728	WC-C-049	8. Specific Service Terms: c. Woo
+Q6-WC-K0729	WC-C-049	Connecting to WordPress.com with WooPayments
+Q6-WC-K0730	WC-C-049	Set up WooCommerce Tax: Before you start
+Q6-WC-K0731	WC-C-049	Changing the WordPress.com account you're connected to
+Q6-WC-K0732	WC-C-049	WordPress.com account
+Q6-WC-K0775	WC-C-055	Set up WooCommerce Tax: Before you start
+Q6-WC-K0776	WC-C-055	WooCommerce: Tax Calculations
+Q6-WC-K0777	WC-C-055	Coverage and tax locations: Supported store countries
+Q6-WC-K0778	WC-C-055	WooCommerce Tax Guide
+Q6-WC-K0779	WC-C-055	8. j. Ecommerce Services: Tax Calculations
+Q6-WC-K0780	WC-C-055	8. j. Ecommerce Services: Tax Calculations
+Q6-WC-K0781	WC-C-055	Understand the primary tax location
+Q6-WC-K0782	WC-C-055	WooCommerce Tax Guide
+Q6-WC-K0783	WC-C-055	Set up WooCommerce Tax: Before you start
+Q6-WC-K0784	WC-C-055	Troubleshoot WooCommerce Tax: WordPress.com connection errors
+Q6-WC-K0785	WC-C-055	WooCommerce
+Q6-WC-K0786	WC-C-055	Important notes
+Q6-WC-K0836	WC-C-060	WooCommerce Shipping
+Q6-WC-K0837	WC-C-060	WooCommerce Shipping
+Q6-WC-K0838	WC-C-060	WooCommerce Shipping
+Q6-WC-K0839	WC-C-060	readme.txt: ALL THE TOOLS YOU NEED TO SELL
+Q6-WC-K0840	WC-C-060	8. j. More on Shipping Services Specifically
+Q6-WC-K0841	WC-C-060	8. j. More on Shipping Services Specifically
+Q6-WC-K0842	WC-C-060	WooCommerce: Shipping Rates and Labels
+Q6-WC-K0843	WC-C-060	WooCommerce Shipping
+Q6-WC-K0844	WC-C-060	WooCommerce Shipping
+Q6-WC-K0845	WC-C-060	WooCommerce: Shipping Rates and Labels
+Q6-WC-K0846	WC-C-061	Extensions > Shipping, delivery and fulfillment
+Q6-WC-K0847	WC-C-061	Extensions > Shipping, delivery and fulfillment > Delivery options and enhancements
+Q6-WC-K0848	WC-C-061	Extensions > Shipping, delivery and fulfillment > Fulfillment and dropshipping
+Q6-WC-K0849	WC-C-061	Extensions > Shipping, delivery and fulfillment > Inventory and order management
+Q6-WC-K0850	WC-C-061	Extensions > Shipping, delivery and fulfillment > Label printing
+Q6-WC-K0851	WC-C-061	Extensions > Shipping, delivery and fulfillment > Shipping rates at checkout
+Q6-WC-K0852	WC-C-061	8. j. Ecommerce Services: Third-Party Services
+Q6-WC-K0853	WC-C-061	11. Third-Party Services
+Q6-WC-K0854	WC-C-061	wc-admin > shipping-partner-suggestions (ShippingPartnerSuggestions)
+Q6-WC-K0855	WC-C-061	Privacy considerations when using official shipping extensions
+Q6-WC-K0856	WC-C-061	Shipping method API
+Q6-WC-K0857	WC-C-061	WC_Shipping_Method
+Q6-WC-K1313	WC-C-089	Point of Sale
+Q6-WC-K1314	WC-C-089	POS completed order (WC_Email_Customer_POS_Completed_Order)
+Q6-WC-K1315	WC-C-089	POS refunded order (WC_Email_Customer_POS_Refunded_Order)
+Q6-WC-K1316	WC-C-089	Extensions > Official payments > In-person payments
+Q6-WC-K1317	WC-C-089	Extensions > Store management > Point of sale
+Q6-WC-K1318	WC-C-089	point_of_sale
+Q6-WC-K1319	WC-C-089	Woo Mobile App: Point of Sale Mode
+Q6-WC-K1320	WC-C-089	Requirements
+Q6-WC-K1321	WC-C-089	Requirements
+Q6-WC-K1322	WC-C-089	woocommerce_pos_*
+Q6-WC-K1323	WC-C-089	Woo Mobile App: Point of Sale Mode
+Q6-WC-K1324	WC-C-089	woocommerce_pos_*

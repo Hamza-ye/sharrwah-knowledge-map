@@ -1,0 +1,22 @@
+[
+{
+"n": 1,
+"url": "https://wordpress.com/tos/",
+"dir": "items/001-wordpress.com",
+"fetched_at": "2026-10-19T02:09:59Z",
+"http_raw": 200,
+"http_browser": 403,
+"final_url": "https://wordpress.com/tos/",
+"content_type": "text/html; charset=UTF-8",
+"cited_in": "studies/proposals/records/Q6/woocommerce/citations.tsv",
+"note": "",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "816c178a793786148173961d7d0739bfb4d88e2f08ce34cf1b00c719283df12e",
+"bytes": 214001,
+"date_hint": "2014-09-19",
+"date_source": "meta:published",
+"age_class": "before-2023",
+"text_file": "text.txt"
+}
+]
