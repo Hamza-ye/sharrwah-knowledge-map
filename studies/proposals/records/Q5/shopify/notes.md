@@ -114,3 +114,60 @@ None were read.
 ### Problems
 
 - A Shopify corpus search took one to several minutes. The searches for sentences 1, 2 and 4 listed mostly translation answers (MarketingConsentLabels, ThemeLocaleTranslations) whose text holds the terms, so they pointed at no payment pages. The payment pages were found through the pointers, `held_index.py` and the runs' `actions.jsonl`.
+
+## Re-check against the step text from saved HTML, 19 October 2026
+
+All files below are at observed-sh 51626891aa711ee9c3ef2d05ce63c95396dca949.
+
+### What was read
+
+- `docs/READING.md`, its entry for `derived/step-text-from-html/`, and that folder's `meta.json` and `index.tsv`.
+- Searches (each listed the corpus "observed-sh: step text from saved HTML" where it says so):
+  - `python3 -I method/corpus_search.py shopify "Amazon Pay" "أمازون باي" --with "customer agreement" "policies" "اتفاقية" "سياسات" --max 10` (Q5-SH-N01): no step text from saved HTML listed;
+  - `python3 -I method/corpus_search.py shopify "merchant account" "حساب التاجر" "payout" "الدفعات" --with "third-party" "مزود دفع خارجي" "مزود" --max 10` (Q5-SH-N02): 6 documents, each a sweep's step 416, the Shopify Payments Terms of Service, none opened;
+  - `python3 -I method/corpus_search.py shopify "payment-gateways" "payment gateways" "بوابات الدفع" --max 10` (Q5-SH-N03): no step text from saved HTML listed;
+  - `python3 -I method/held_index.py https://www.shopify.com/payment-gateways` (Q5-SH-N03): held, readable only in a fetch archive (`raw/runs/20260930T050139Z-shopify-com-pages/fetch.warc.gz@41642451`); no run step listed. Not read, as outside this re-check's folder;
+  - `python3 -I method/corpus_search.py shopify "Payment providers" "مزودو الدفع" "Payment methods" "طرق الدفع" "Activate" "تنشيط" --max 10` (sentences 1 and 2): 716 documents; the first listed were Local payment methods (step 414) and plan pages (step 98);
+  - `python3 -I method/corpus_search.py shopify "Additional payment methods" "طرق الدفع الإضافية" "Third-party payment providers" "مزودو الدفع الخارجيون" "Manual payment methods" "طرق الدفع اليدوية" --max 10` (sentence 3): 122 documents, the sweeps' steps 387, 388 and 393;
+  - `python3 -I method/corpus_search.py shopify "no longer supported" "Deactivate" "إلغاء التنشيط" "لم يعد مدعومًا" "choose a new provider" --with "payment" "الدفع" --max 10` (sentence 4): 99 documents, the sweeps' steps 388 (provider pages) among them;
+  - `python3 -I method/corpus_search.py shopify "Payouts" "الدفعات" "Mark as paid" "وضع علامة مدفوع" "payout account" --max 10` (sentence 5): 460 documents, the first listed the partner payouts pages (steps 373 to 375) and payouts routes (steps 402 to 405); none opened beyond the payouts step below.
+- Texts read, under `derived/step-text-from-html/`, with each run's `actions.jsonl` for the step's address, title and date:
+  - `20260930T045741Z-sweep-trial2/`: `376`, `377`, `383`, `387`, `393`, `397`, `414` (`.html.txt`);
+  - `20261002T003831Z-sweep-capture-plus/`: `376`, `387`, `388`, `477`;
+  - `20261002T004032Z-sweep-capture-grow/387`;
+  - `20260930T103225Z-sweep-dev/`: `376`, `387`, `388`, `397`;
+  - `20260930T002940Z-sweep-trial/388`;
+  - `20260930T025819Z-journey-buyer-checkout/`: the Payment sections of `039` and `040`.
+- To compare with the trees: `steps/387.aria.yaml` and `376.aria.yaml` of `20260930T045741Z-sweep-trial2`; `376`, `387` and `388` of `20261002T003831Z-sweep-capture-plus`; `388` of `20260930T002940Z-sweep-trial`.
+
+### Open items
+
+- Q5-SH-N01: unchanged. The search listed no step text from saved HTML. The search was added to `searched`.
+- Q5-SH-N02: unchanged. The search listed only the Shopify Payments Terms of Service steps, whose snippets are about Shopify Payments and cryptocurrency payout accounts. The search was added to `searched`.
+- Q5-SH-N03: unchanged in what is missing. No step's page is the payment gateways page. The two provider lists read here (Q5-SH-094, Q5-SH-095) were added to the row's parenthesis, and its `read` and `searched` were extended.
+- No copied gap is cited by `account.md`. No row is routed to the founder or to either. Q5's draft isn't written, so there is no "For the draft" list.
+
+### Wording
+
+- Q5-SH-N03: "stores with countryCode YE" became "stores with countryCode YE or Store address Yemen", since store capture-plus's country is stated by its General page (Q5-SH-C153), not by an answer read here. Its other details are unchanged; the quoted phrases of the three rows were checked in the previous re-check.
+
+### Stores and what the texts are
+
+- Each new statement is from a saved page's markup, said so in its `note`. Q5-SH-098 is a dialog's text that the step's `aria.yaml` does not show; the note says it is in the markup, not shown as open. No recorded text stands between `⟦hidden⟧` and `⟦/hidden⟧`.
+- The card labels in Q5-SH-094 and Q5-SH-095 are `accessibilitylabel` attributes as the text file gives them; the aria trees show the provider names and Supports 3DS but not these labels.
+- Store capture-plus is named as the step addresses (`/store/capture-plus/`) give it. Its country, store type and currency come from the same run's General settings page (step 477, Q5-SH-C153). The page titles of these steps end "Shopify Plus"; no plan name was recorded as scope.
+- Store fake-demo-sharrwah (Q5-SH-098) is named by the step address; its countryCode is cited from the paid-store sweep's PaymentProviders answer (Q5-SH-C128, observed 2026-10-05), a different date from the step's.
+- Store ibx5bt-xy (Q5-SH-094): countryCode from Q5-SH-C121.
+- The same five-provider list was also in the saved HTML of `20261002T004032Z-sweep-capture-grow/387` and `20260930T103225Z-sweep-dev/387`. Not recorded again. The development-store notice and Test payment gateway text were also in `20260930T103225Z-sweep-dev/376` and `388`. Not recorded again.
+- The buyer checkout journey's step 39 (store demo-fake-dev-store) showed Credit card with Testing instruction under Payment. Not recorded: it is a development store's test gateway and adds nothing to Q5-SH-096 and Q5-SH-097.
+- The payouts routes of `20260930T045741Z-sweep-trial2` and `20260930T103225Z-sweep-dev` (step 397) read "There's no page at this address".
+- The Payments page of `20260930T045741Z-sweep-trial2` (step 376) holds a two-step authentication dialog ("You need to set-up two-step authentication before adding a bank account."), not in its aria tree. Not recorded.
+
+### Not read
+
+- The sweeps' steps 416 (Shopify Payments Terms of Service, covered by copies), 398 to 413 and 415, the capture-advanced sweep, the sweep-instances runs' provider pages, the partner payouts pages, and the frames of the checkout journey.
+
+### Problems
+
+- `corpus_search.py` has no option to search one corpus, so each search ran over every corpus; seven searches run together took about four minutes. The run-steps corpora were listed but not opened, as this re-check reads only the saved-HTML texts.
+- To name store fake-demo-sharrwah, the first row of `20260930T002940Z-sweep-trial/answers.jsonl` was looked at; the step's address names the same store.
