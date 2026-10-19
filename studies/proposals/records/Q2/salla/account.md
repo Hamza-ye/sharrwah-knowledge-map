@@ -23,6 +23,7 @@
 - VAT registration with ZATCA is required above 375 thousand riyals a year. The ZATCA e-invoicing link and the international shipping gateway are "مخصصة حالياً للمتاجر في المملكة العربية السعودية فقط". Q2-SA-K1927, Q2-SA-K1936, Q2-SA-K1884, Q2-SA-044
 
 - The country chosen at sign-up sets the government documents the store must provide. The UAE accepts certain UAE trade licences, and Kuwait asks for beneficial-owner data. Q2-SA-K0083, Q2-SA-K0085, Q2-SA-K0086
+- On the onboarding question page of store store-1-da, observed 8 October 2026, the page said the choice of country sets the store's legal requirements, and asked from which country the store is registered, by the country that issues its government documents. Its options were السعودية, الإمارات, الكويت, قطر, عمان, البحرين and دولة أخرى. Q2-SA-061, Q2-SA-062, Q2-SA-063
 - Salla Payments requires a plan, verification and activation by Salla's team. For UAE and Kuwait stores, the payout account must be at a local bank in AED or KWD, and the fees, settlement and transfer follow the payment services contract (عقد خدمات الدفع) signed during verification. Q2-SA-K1522, Q2-SA-K1526, Q2-SA-K1523, Q2-SA-K1964, Q2-SA-K1965, Q2-SA-K2015, Q2-SA-K2016, Q2-SA-K2017, Q2-SA-P0064
 - Payout schedules and minimums differ by country. COD tracking in the wallet is not available for UAE or Kuwait stores, and COD through Salla labels is "قريبًا" in the UAE. Bank transfer can be unavailable "لدولتك". Q2-SA-P0052, Q2-SA-P0062, Q2-SA-K1796, Q2-SA-P0150, Q2-SA-P0096, Q2-SA-P0101
 - Payment methods differ by country: KNET for Kuwait, BNPL offered by country (Tabby and Tamara in the UAE, Tabby and Deema in Kuwait), and PayPal in the UAE. Q2-SA-K1529, Q2-SA-K1622, Q2-SA-K1623, Q2-SA-K1635
@@ -30,10 +31,11 @@
 - Salla provides payments "عبر شركائها" and may cancel or change the payment methods it offers. Its dealings with third-party providers are independent contracts, outside Salla's responsibility. Q2-SA-P0079, Q2-SA-013, Q2-SA-004, Q2-SA-P0077
 - Shipping and logistics come through third parties. Some are used through labels issued under an agreement between Salla and the provider, and international shipping goes through Salla's gateway, also under such an agreement. Providers set their own conditions. Q2-SA-021, Q2-SA-023, Q2-SA-025, Q2-SA-026, Q2-SA-K1778
 - An external gateway replaces Salla Payments ("ستُحصَّل مدفوعاتك عبر {{name}} بدلًا من مدفوعات سلة"). An active Tap link blocks Salla Payments, and charities cannot use Salla's gateway. Q2-SA-K1639, Q2-SA-K1653, Q2-SA-P0073
+- In the payment methods answer of store real-merchant ("merchant_type":"KSA"), observed 12 October 2026, the one online payment gateway had the slug salla and the label noon. Q2-SA-064
 - Salla announced it is acquiring Paylink, which it describes as licensed by the Saudi Central Bank. Q2-SA-046, Q2-SA-047
 - The KYC schema carries a check "CheckSallaBlacklisted" with the message "ID suspended due to compliance or terms violations. New store registration is unavailable." Q2-SA-059
 
-- The pages read do not say which company processes or acquires Salla Payments, or under which licence. Q2-SA-G0113, Q2-SA-G0114, Q2-SA-H0002
+- The pages read do not say which company processes or acquires Salla Payments, or under which licence. The gateway answer above gives a label only, with no licence. Q2-SA-G0113, Q2-SA-G0114, Q2-SA-H0002, Q2-SA-064
 - The parties of the payment services contract are not shown. Q2-SA-G0176, Q2-SA-G0177
 - No statement on sanctions screening, or on countries refused for sanctions, was found. Q2-SA-N01
 
@@ -41,12 +43,15 @@
 
 - **Terms.** The usage agreement is "العقد فيما بين التاجر و منصة سلة فقط لا غير", whatever the merchant's legal form. Its Arabic text prevails over any translation. Q2-SA-028, Q2-SA-030
 - **Which company contracts.** The UAE pages of the agreement name the same Saudi company. No clause naming an entity per market was found. Q2-SA-032, Q2-SA-033, Q2-SA-G0213, Q2-SA-G0214
+- **Bank account owner.** The checkout texts a store's dashboard loaded (store merchant, observed 8 October 2026) give the account owner as شركة منصة سلة للاتصالات وتقنية المعلومات, and under the key bank_owner_name_ae as SALLA PLATFORM CIT COMPANY (SINGLE PERSON COMPANY). Q2-SA-065
 - **The payment contract.** For UAE and Kuwait stores, the help names a payment services contract signed during verification, without its parties. Q2-SA-K2015, Q2-SA-P0138, Q2-SA-G0177
 - **Data.** The privacy policy names شركة تطبيق سلة لتقنية المعلومات as the platform's owner and the data protection department of شركة منصة سلة للاتصالات و تقنية المعلومات. It allows information to be shared with shipping companies, payment solution providers and technical providers under the Saudi PDPL, and with the competent authorities or banks when a user's activity is irregular. Q2-SA-040, Q2-SA-038, Q2-SA-039, Q2-SA-036, Q2-SA-037, Q2-SA-024
 - **Where data is held.** The privacy policy read does not say where personal data is stored, or whether it is transferred abroad. Q2-SA-G0218, Q2-SA-G0221
+- **Addresses of stored files.** In store real-merchant's payment methods answer, observed 12 October 2026, the IBAN certificate's address is on kyc-customer-docs.s3.eu-central-1.amazonaws.com. In store demo, observed 8 October 2026, the link to download an exported report is on sallaexport.s3.amazonaws.com, with a credential naming eu-central-1. Q2-SA-066, Q2-SA-067
 
 ## [3]
 
+- **The store's country.** The onboarding page: "اختيارك للدولة يحدِّد المتطلبات القانونية اللازمة لمتجرك." The documents set up the store "وفقًا لأنظمتها". Q2-SA-061, Q2-SA-062
 - **Online payments.** Salla offers them "بغرض التسهيل والمحافظة على حقوق التجار والمتاجر". Q2-SA-012
 - **Logistics.** Salla offers logistic services as "تسهيلًا وتعاونًا منها" and is not bound to offer them. Q2-SA-022
 - **Products withheld.** The selling policy states its purpose: "خلق بيئة تجارية موثوقة وآمنة للجميع". Q2-SA-041

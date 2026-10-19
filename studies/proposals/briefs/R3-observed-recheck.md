@@ -36,7 +36,8 @@ Don't answer the question in your own words, compare your platform with any othe
 A run document is listed by its own place, never merged with another store's or run's. The same answer received in several runs is one document, listing each place.
 
 **Reading a run's file.** Run `git --git-dir=<root>/.git show <commit>:<path>` from outside the repository.
-- Answers and saved responses are JSON, often one long line. Never print one over 20 KB whole. Print the part you need: pipe it to `python3 -I -c '<code>'` that reads stdin and prints the keys or items you want, or use `grep -o '.\{0,200\}<term>.\{0,200\}'`.
+- Answers and saved responses are JSON, often one long line. Never print one over 20 KB whole.
+- Some saved responses write Arabic as `\uXXXX` escapes. Quote such Arabic as the letters it stands for: the checker reads a JSON file with its escapes decoded. To see them, pipe the file to `python3 -I -c 'import json,sys; print(json.dumps(json.load(sys.stdin), ensure_ascii=False))'`. Print the part you need: pipe it to `python3 -I -c '<code>'` that reads stdin and prints the keys or items you want, or use `grep -o '.\{0,200\}<term>.\{0,200\}'`.
 - A step's files are `raw/runs/<run>/steps/NNN.aria.yaml` and `NNN.text.txt`. The search lists them as `raw/runs/<run>/steps/ (NNN.aria.yaml, NNN.text.txt, …)`: cite the one file that holds your quote. The run's `actions.jsonl` gives each step's address and page title.
 - What an operation asks: observed-sh's `derived/admin-operations.jsonl` prints each operation's query. `index/operations.jsonl` lists the runs and steps that called it. For Salla, `index/rest-endpoints.tsv` lists each endpoint the pages called.
 
