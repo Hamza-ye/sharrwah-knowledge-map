@@ -1,0 +1,112 @@
+copy_id	concern_id	identifier
+Q6-SA-K0076	SA-C-006	Store Verification
+Q6-SA-K0077	SA-C-006	@salla.sa/ui-merchant-payments
+Q6-SA-K0078	SA-C-006	business_certificate_management
+Q6-SA-K0079	SA-C-006	business_certificate_management
+Q6-SA-K0080	SA-C-006	kyc_new_workflow
+Q6-SA-K0081	SA-C-006	wathq-v6
+Q6-SA-K0082	SA-C-006	sbc-registration
+Q6-SA-K0083	SA-C-006	ثانياً: نظرة عامة عن متجرك
+Q6-SA-K0084	SA-C-006	3. حدّد نوع الكيان
+Q6-SA-K0085	SA-C-006	الأسئلة الشائعة
+Q6-SA-K0086	SA-C-006	ماذا تجهّز قبل البدء؟
+Q6-SA-K0087	SA-C-006	ثالثاً: مرحلة ما بعد إرسال طلب التوثيق
+Q6-SA-K0088	SA-C-006	ثانياً: نظرة عامة عن متجرك
+Q6-SA-K0089	SA-C-006	1. ادخل بيانات مالك المتجر بدقة
+Q6-SA-K0090	SA-C-006	توثيق متجرك في الإمارات
+Q6-SA-K0091	SA-C-006	common.verification_required_tooltip
+Q6-SA-K0092	SA-C-006	لماذا يجب توثيق متجرك؟
+Q6-SA-K0093	SA-C-006	answer4
+Q6-SA-K1495	SA-C-110	Payments
+Q6-SA-K1496	SA-C-110	Payment methods
+Q6-SA-K1497	SA-C-110	@salla.sa/ui-merchant-payments
+Q6-SA-K1498	SA-C-110	المدفوعات الإلكترونية
+Q6-SA-K1499	SA-C-110	تفعيل الدفع الإلكتروني
+Q6-SA-K1500	SA-C-110	الدفع عبر مدى
+Q6-SA-K1501	SA-C-110	الدفع عبر البطاقة الائتمانية (فيزا وماستر كارد)
+Q6-SA-K1502	SA-C-110	Apple Pay الدفع عبر
+Q6-SA-K1503	SA-C-110	stc pay الدفع عبر
+Q6-SA-K1504	SA-C-110	Google Pay الدفع عبر
+Q6-SA-K1505	SA-C-110	تفعيل الدفع الإلكتروني عبر مدى وأبل باي وتابي وغيرها
+Q6-SA-K1506	SA-C-110	payment_method_browse
+Q6-SA-K1507	SA-C-110	payment_methods_activation
+Q6-SA-K1508	SA-C-110	payment_method_browse
+Q6-SA-K1509	SA-C-110	payment_methods_activation
+Q6-SA-K1510	SA-C-110	stc-pay
+Q6-SA-K1511	SA-C-110	apple-pay
+Q6-SA-K1512	SA-C-110	google-pay
+Q6-SA-K1513	SA-C-110	checkout-save-cards
+Q6-SA-K1514	SA-C-110	knet
+Q6-SA-K1515	SA-C-110	mada
+Q6-SA-K1516	SA-C-110	credit_card
+Q6-SA-K1517	SA-C-110	salla-pay-basic-trial
+Q6-SA-K1518	SA-C-110	restriction-online-payment-activation
+Q6-SA-K1519	SA-C-110	apple-pay.merchants
+Q6-SA-K1520	SA-C-110	الأسئلة الشائعة
+Q6-SA-K1521	SA-C-110	الأسئلة الشائعة
+Q6-SA-K1522	SA-C-110	متطلبات تفعيل مدفوعات سلة
+Q6-SA-K1523	SA-C-110	متطلبات تفعيل مدفوعات سلة
+Q6-SA-K1524	SA-C-110	salla_payments.trial.note
+Q6-SA-K1525	SA-C-110	أولاً- تفعيل المدفوعات الإلكترونية
+Q6-SA-K1526	SA-C-110	متطلبات تفعيل مدفوعات سلة
+Q6-SA-K1527	SA-C-110	متطلبات تفعيل مدفوعات سلة
+Q6-SA-K1528	SA-C-110	متطلبات تفعيل مدفوعات سلة
+Q6-SA-K1529	SA-C-110	كي نت (KNET)
+Q6-SA-K1530	SA-C-110	الأسئلة الشائعة
+Q6-SA-K1531	SA-C-110	2. وسائل الدفع المفعلة
+Q6-SA-K1532	SA-C-110	سياسة البيع
+Q6-SA-K1533	SA-C-110	عقد خدمات الدفع
+Q6-SA-K1534	SA-C-110	Payments
+Q6-SA-K1535	SA-C-110	payments
+Q6-SA-K1536	SA-C-110	order.payment.updated
+Q6-SA-K1537	SA-C-110	الربط مع stc pay ضمن مدفوعات سلة
+Q6-SA-K1562	SA-C-112	الأسئلة الشائعة
+Q6-SA-K1563	SA-C-112	تحديث الحساب البنكي لاستلام مستحقاتك من سلة
+Q6-SA-K1564	SA-C-112	الخطوة 3: المعلومات البنكية
+Q6-SA-K1565	SA-C-112	الخطوة 3: المعلومات البنكية
+Q6-SA-K1566	SA-C-112	الأسئلة الشائعة
+Q6-SA-K1567	SA-C-112	الأسئلة الشائعة
+Q6-SA-K1568	SA-C-112	الحساب البنكي المستخدم لاستلام التحويلات
+Q6-SA-K1963	SA-C-164	ثانياً: تخصيص المدفوعات الإلكترونية > دورة التحويل
+Q6-SA-K1964	SA-C-164	الخطوة 3: المعلومات البنكية
+Q6-SA-K1965	SA-C-164	الخطوة 3: المعلومات البنكية
+Q6-SA-K1987	SA-C-167	## 1. Entity identity
+Q6-SA-K1988	SA-C-167	kyc_new_workflow
+Q6-SA-K1989	SA-C-167	ثانياً: نظرة عامة عن متجرك
+Q6-SA-K1990	SA-C-167	## 7. Markets
+Q6-SA-K1991	SA-C-170	https://salla.com/terms
+Q6-SA-K1992	SA-C-170	سياسة الاستخدام على منصة سلة
+Q6-SA-K2015	SA-C-177	الرسوم
+Q6-SA-K2016	SA-C-177	كيف تعمل التحويلات؟
+Q6-SA-K2017	SA-C-177	عقد خدمات الدفع
+Q6-SA-K2507	SA-C-230	سياسة الشروط والاستخدام – متجر تطبيقات سلة > المقدّمة
+Q6-SA-K2508	SA-C-230	سياسة الانضمام إلى برنامج شركاء سلة > تمهيد
+Q6-SA-K2509	SA-C-230	المادة الأولى – المقدّمة والتعريفات
+Q6-SA-K2510	SA-C-230	الشروط والأحكام لاستخدام متجر الثيمات > المقدمة
+Q6-SA-K2511	SA-C-230	اتفاقية استخدام برنامج التسويق بالعمولة > المقدمة
+Q6-SA-K2512	SA-C-230	footer
+Q6-SA-K2513	SA-C-230	footer
+Q6-SA-K2514	SA-C-230	ملخص العلامة التجارية
+Q6-SA-K2515	SA-C-230	## 1. Entity identity
+Q6-SA-K2516	SA-C-230	المقدمة
+Q6-SA-K2517	SA-C-230	"سلة" (التعريفات)
+Q6-SA-K2518	SA-C-231	ماهي رخصة التسويق (موثوق)؟
+Q6-SA-K2519	SA-C-231	answer4
+Q6-SA-K2520	SA-C-231	الأسئلة الشائعة
+Q6-SA-K2521	SA-C-231	المادة الثانية – أهلية الشريك القانونية
+Q6-SA-K2522	SA-C-231	القسم 5: معلومات التواصل
+Q6-SA-K2523	SA-C-231	ثانياً: نظرة عامة عن متجرك
+Q6-SA-K2524	SA-C-231	المادة الثالثة – شروط قبول و تسجيل الشركاء
+Q6-SA-K2525	SA-C-231	2.1 التأهيل والامتثال النظامي
+Q6-SA-K2526	SA-C-231	basic_settings.main_store_data.description
+Q6-SA-K2527	SA-C-231	لماذا يجب توثيق متجرك؟
+Q6-SA-K2528	SA-C-232	@salla.sa/ui-merchant-manage
+Q6-SA-K2529	SA-C-232	/manage/violation
+Q6-SA-K2530	SA-C-232	violations.desc
+Q6-SA-K2531	SA-C-232	disable_cod_for_banned_customers_desc
+Q6-SA-K2532	SA-C-232	المادة (7) – إيقاف الخدمة أو التطبيق
+Q6-SA-K2533	SA-C-232	## ⚠️ **Important Notes**
+Q6-SA-K2534	SA-C-232	المادة (4) – شروط استخدام التطبيقات (للتجار)
+Q6-SA-K2535	SA-C-232	ماذا تجهّز قبل البدء؟
+Q6-SA-K2536	SA-C-232	سياسة نشر التطبيق في متجر التطبيقات
+Q6-SA-K2537	SA-C-232	1. ادخل بيانات مالك المتجر بدقة
