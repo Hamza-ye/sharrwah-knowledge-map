@@ -131,7 +131,10 @@ These add to `R3-recording.md`'s rules 1 to 12, which hold.
   - every copied gap `account.md` cites;
   - every row routed to the founder or to either (`who_can`);
   - if your question's draft is written (`studies/proposals/drafts/<question>/draft.md`, which you may read): each Shopify id the draft cites. For each, read the id with `record_ids.py`, and look in the new texts for the same flow, page or setting. Where they show something that changes or adds to what the id says, record it.
-- **Text the folder's `meta.json` marks as hidden** was in the page's HTML but not shown on it. Record it only with that said in the statement's `note`, and never as what the page showed.
+- **These files are the saved markup's text, not what the page showed** (the folder's entry in observed-sh's `docs/READING.md`). They include text a stylesheet hid, unmarked, such as a closed menu's items or a dialog that wasn't open; text the markup itself hid stands between `⟦hidden⟧` and `⟦/hidden⟧`; and field values are as the markup states them. So:
+  - a statement from them says what the saved page's markup held at that step, in its `note` ("in the saved HTML of step N"), never that the page showed it or that a menu was open;
+  - text between `⟦hidden⟧` and `⟦/hidden⟧` is recorded only with that said in the `note`;
+  - where the same step also has `steps/NNN.aria.yaml`, say whether its tree shows the same words.
 - **Citing:** `source` is `observed-sh@<the commit the message names>:<the text file's path>`, and `locator` the run, the step and the frame, if any.
 - **For the draft:** in `notes.md`'s new section, under "For the draft", list each draft id the new texts change or add to, with the new statement ids and one plain line on what changed. Don't edit the draft.
 - **Your new section** in `notes.md` is headed `## Re-check against the step text from saved HTML, <date>`.

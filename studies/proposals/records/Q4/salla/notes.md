@@ -78,3 +78,8 @@ The reports journey steps, the export templates steps, the community `latest.jso
 ### Problems
 
 - The checker reads a JSON answer's HTML-bearing string with its tags in place in one of its forms, so a statement that ran from a key across the tags (`"answer": "<div >…`) was not found; Q4-SA-077 records the answer's text alone, with the question in its identifier.
+
+
+## The coordinator's correction, 19 October 2026
+
+Q4-SA-022 and Q4-SA-030 each cited the other's quote first (C049 and C050, two keys of the same translations file), as Q4's draft found. Each now cites its own quote first: 022 cites C050, 030 cites C049. Both statements' text is unchanged.

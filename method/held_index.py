@@ -5,7 +5,8 @@
 #   structure  a structure in observed-sa or observed-sh whose meta.json names the address (text or rows in git)
 #   capture    a page in this repository's evidence/product-class/runs, with its text file
 #   step       a step of a browser run in observed-sa or observed-sh whose page ended at the address, with its page
-#              text in git (steps/NNN.text.txt or NNN.aria.yaml; read it with git show)
+#              text in git (steps/NNN.text.txt or NNN.aria.yaml, or observed-sh's text of the saved HTML in
+#              derived/step-text-from-html/<run>/NNN.html.txt; read it with git show)
 #   warc       a record in a fetch archive that is in git (read it with method/warc_text.py)
 #   cdx-only   an index line whose archive is not in git: held, but not readable from the repository
 import csv, glob, json, os, re, subprocess, unicodedata, urllib.parse
@@ -114,7 +115,8 @@ class Held:
                                 "location": os.path.relpath(os.path.dirname(meta), root),
                                 "readable": status.startswith("2")})
         # The pages browser runs' steps ended at, each with its page text in git (the steps' witnesses).
-        steps = set(git(root, "ls-files", "raw/runs/*/steps/*.text.txt", "raw/runs/*/steps/*.aria.yaml").split())
+        steps = set(git(root, "ls-files", "raw/runs/*/steps/*.text.txt", "raw/runs/*/steps/*.aria.yaml",
+                        "derived/step-text-from-html/*/*.html.txt").split())
         for acts in sorted(glob.glob(os.path.join(root, "raw/runs/*/actions.jsonl"))):
             run = os.path.basename(os.path.dirname(acts))
             with open(acts, encoding="utf-8", errors="replace") as f:
@@ -125,7 +127,8 @@ class Held:
                     except Exception:
                         continue
                     url = a.get("url") or ""
-                    files = [f"raw/runs/{run}/steps/{n:03d}.{k}" for k in ("text.txt", "aria.yaml")]
+                    files = [f"raw/runs/{run}/steps/{n:03d}.{k}" for k in ("text.txt", "aria.yaml")] + \
+                            [f"derived/step-text-from-html/{run}/{n:03d}.html.txt"]
                     files = [x for x in files if x in steps]
                     if not url.startswith("http") or not files:
                         continue
