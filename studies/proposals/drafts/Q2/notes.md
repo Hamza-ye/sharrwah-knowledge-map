@@ -1,0 +1,44 @@
+# Q2 draft: notes
+
+## What I read
+
+- The brief, `studies/proposals/briefs/R4-drafting.md`, whole.
+- Q2's section of `studies/proposals/questions-for-agents.md` (sentences [1] to [3]), and nothing else in that file.
+- Q2's five rows of `studies/proposals/areas/depth.tsv`, for the order and depth only: Shopify, Salla and WooCommerce in depth; Zid and BigCommerce checks.
+- The five accounts, in that order: `studies/proposals/records/Q2/<platform>/account.md`.
+- From each platform's `notes.md`, only its lists of account points not checked and of copies found wrong or out of date: Zid's "Account points not checked" and "Copies"; BigCommerce's "Copies and gaps" and "Account points not checked"; WooCommerce's "Copies found wrong or out of date"; Salla's "Copies". Shopify's notes have no such list: its headings, and a search of the file for "wrong", "out of date", "stale", "superseded" and "correct", found none. No copy is listed as wrong or out of date for any platform.
+- With `method/record_ids.py`, every id of each platform's own records that the five accounts cite: Shopify 244, Salla 129, WooCommerce 172, Zid 115, BigCommerce 148, 808 in all, read whole. None of the 121 platform ids the draft cites had quotes cut short. After the tool change, `--all` for the five cited Stage 1 ids whose quotes had been cut: YA-27, YA-44, YA-62, YK-131 and YK-247.
+- `method/source_kinds.py` on the 248 distinct sources those ids cite, to compare like with like.
+- In `studies/proposals/areas/areas.md`, the 19 areas whose questions include Q2: A-01, A-02, A-05, A-06, A-10, A-11, A-12, A-13, A-14, A-15, A-16, A-17, A-18, A-19, A-20, A-22, A-31, A-32 and A-34. Section 4 names the ones its parts serve; their text is not used as evidence.
+- `studies/proposals/yemen-digest.md`, whole and once, after sections 1 to 5 and 7 were written.
+- Stage 1's rows, by id with `record_ids.py`: YK-12, YA-44, YK-124, YK-452, YA-62, YK-131, YA-110, YA-27, YK-28, YK-26, YA-150, YK-200, YK-247, YK-290, YK-252, YA-157, YK-343, YA-103, YK-273, YK-128, YK-332 and YK-369. The draft cites 12 of them: YA-44, YK-124, YK-452, YA-62, YK-131, YA-27, YK-28, YA-150, YK-247, YK-252, YA-103 and YK-290.
+- Not read: the other drafts in `studies/proposals/drafts/`, other questions' records, the method tools' source, and everything else the brief excludes.
+
+## What the records don't show
+
+- Which company processes and acquires Salla Payments, and under which licence: the page is held, not read (Q2-SA-G0113, Q2-SA-G0114). Reading the held page would show it.
+- Whether Salla's usage agreement names a company per market: the page is held, not read (Q2-SA-G0213, Q2-SA-G0214). Reading the agreement's party clause would show it.
+- The parties of Salla's payment services contract (Q2-SA-G0177). The contract as presented at store verification would show them.
+- Where Salla and Zid store data (Q2-SA-G0218, page held, not read; Q2-ZD-G0060, searched, not found). Salla's held privacy page read, and a Zid statement of where it stores data, would show it.
+- Who screens against the sanctions lists at Zid Pay (Q2-ZD-G0055), whether Zid restricts stores by country or sanctions outside Zid Pay (Q2-ZD-N01), and any Salla statement on sanctions (Q2-SA-N01). A question to Zid, and a Salla statement, would show them.
+- How a platform combines a setting for a country with one for an area within it, when the two differ. No record gives a rule of precedence; the **Place** tree's inheritance, an area's own setting over its ancestor's, is Sharrwah's proposed design. A platform's documentation of how its country and territory settings combine would show one.
+- A reason for several placements: Shopify's contracting party by billing region (Q2-SH-G0005), Salla's one company across markets (Q2-SA-G0216, page held, not read). The copied gaps say what would show them.
+- In Yemen's evidence: an identity service a platform can use to check a seller, and a personal-data protection law or a rule on where a platform must hold personal data. Section 6 says what would show each. Whether a store's records on a platform count as a sales-tax registered seller's books under YK-290 is not settled; a ruling of the tax administration would settle it.
+
+## Past the guide's counts
+
+- 110 statements, copies and citations, against about 40. Q2 asks for every way a place's rules or a platform's choice of partners changes what a seller gets, wherever it shows, across 19 areas and five platforms. Each element of section 2 rests on the same thing shown on several platforms: places at three levels with defaults, several place references, rule sources and setters, the contracting company by place and by service, providers by place, legal form and date, agreements the platform isn't party to, and data location. Each match cites one id per platform. Section 1 cites 102 of them ([1] 64, [2] 31, [3] 7 new). Sections 2, 3 and 7 add 8, for the company decisions and two setters: Q2-SH-K1603, Q2-SH-K1614, Q2-SA-042, Q2-SA-047, Q2-ZD-K0004, Q2-ZD-K0091, Q2-BC-K0386 and Q2-BC-K0460.
+- 11 not-found rows, copied gaps and pilot absences, against about 7. The proposal rests on what the readings didn't show for Salla's payment processor (Q2-SA-G0113), its per-market contracting clause (Q2-SA-G0213), its payment contract's parties (Q2-SA-G0177), its data storage (Q2-SA-G0218) and its sanctions statements (Q2-SA-N01); for Zid's store-wide restriction (Q2-ZD-N01), its screening (Q2-ZD-G0055) and its data storage (Q2-ZD-G0060); on two reason gaps (Q2-SH-G0005, Q2-SA-G0216); and on one pilot absence (Q2-SH-A0002).
+- 17 Yemen facts, against about 8. Q2's elements are set per place, and Yemen's evidence shows the country split into two areas. The facts are: two regulators by area (YA-44, two places); providers that differ by area and by currency zone (YK-124, YK-452); three of the platforms' payment services unavailable for Yemen (YA-62, three places), and a local one (YK-131); sanctions regimes outside and inside Yemen (YA-27, two places; YK-28); a requirement that differs by area (YA-150, two places); goods banned in one area (YK-247); and one fact each for the language of product details (YK-252), the location of a seller's books (YK-290) and the licensing of e-payment services (YA-103).
+- "Yemen's evidence doesn't show": 2, as the guide expects.
+- Length: about 4,970 words without ids and Yemen citations, about 5,250 with the Yemen citations' places and dates. Section 1 takes about 1,780 of them, about 36%. The checker gives no length warning.
+
+## Problems with the brief or the tools
+
+- The Shopify account cites several ids from Q2-SH-027 to Q2-SH-035 one off from what the records say. It cites Q2-SH-030 for the admin's Customer data hosting location, which is Q2-SH-031 (Q2-SH-030 is Google Consent Mode v2). It cites Q2-SH-031 to Q2-SH-033 for address and tax fields, which are Q2-SH-032 and Q2-SH-034. It cites Q2-SH-034 and Q2-SH-035 for the `.at` and `.fr` domains, which are Q2-SH-035. It cites Q2-SH-027 and Q2-SH-028 for cookie and data-sharing settings, which are Q2-SH-028 (Q2-SH-027 is the checkout restriction's reason). The Zid check cites Q2-SH-031 for Shopify's address fields, and BigCommerce's list of points not checked carries the same labels. The draft cites each record by what it says.
+- Before the coordinator's tool change, the checker read a Yemen fact whose place holds its own brackets, such as E-Pay (Kuraimi Islamic Microfinance Bank)'s service, as having no date, so the draft briefly wrote those places with commas. The changed checker reads them, and the draft now gives Stage 1's place names unchanged.
+- Before `--all`, `record_ids.py` cut the quotes of five cited Yemen ids; they were read in full after the change, and support the parts cited.
+- The harness refused to save a `.md` working file in the scratch directory, calling it a report; the per-sentence working analysis is in the scratch directory as `analysis.txt`.
+- The brief puts the open finding on WooCommerce's policy pages under section 8, for Q5 and Q7. The Q2 draft rests on one such page (Q2-WC-K0416), so section 1 says its standing among WooCommerce's terms is open.
+- Zid Pay's Saudi and Kuwaiti lists of sanctioned countries both end وما إلى ذلك ("and so on"). The draft says only which countries each names.
+- Records that disagree, which the draft doesn't rest on and doesn't cite: BigCommerce Payments' countries (Q2-BC-P0087 and Q2-BC-P0068 of 13 October 2026 name UK and US stores; Q2-BC-P0058 of 6 October 2026 names UK and EMEA customers; Q2-BC-P0030 says "initially" US- and UK-based merchants), and Salla's company names and registration numbers across its documents (Q2-SA-P0076 against Q2-SA-K2507, Q2-SA-K2510 and Q2-SA-K2511), as Salla's notes record. One disagreement the draft does cite, with both dates: Salla's agreement and its UAE help on a UAE store's bank account (Q2-SA-035, Q2-SA-K1964).
