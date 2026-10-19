@@ -14,6 +14,8 @@
 - Salla Payments in the UAE and Kuwait requires the Plus, Pro or Special plan. The dashboard's feature flags list the plans plus, pro and special for stc-pay, apple-pay, tamara, tabby, hyperpay and the other gateways. Q5-SA-K1522, Q5-SA-K1528, Q5-SA-K1510, Q5-SA-K1511, Q5-SA-K1614, Q5-SA-K1617, Q5-SA-K1643
 - A method can need store verification first. The request to activate Salla Payments is reviewed during the verification review, and payment and settlement operations are suspended until verification is complete. Q5-SA-K0091, Q5-SA-K1527, Q5-SA-P0136
 - Activating electronic payments includes agreeing to سياسة البيع. That policy states its aim and lists the products and services it bans outright. Q5-SA-K1532, Q5-SA-010, Q5-SA-011
+- In the runs, the gateways answer for store merchant (the page shows بيسك), on 8 October 2026, marked مدى and the other quick methods `"blocked_by": "requires_paid_plan"`, with the reason "قم بترقية باقتك لتفعيل المدفوعات الإلكترونية". Its verification was uncompleted, with `"blocks_payment_activation": true`. Its طرق الدفع page said مدفوعات سلة is "متاحة في بلس وبرو وسبيشل", and that the store was not verified. Q5-SA-069, Q5-SA-070, Q5-SA-071, Q5-SA-072
+- For store real-merchant (Pro, `"merchant_type": "KSA"`), on 12 October 2026, verification was completed, `"blocks_payment_activation": false`, and the summary showed `"has_approved_epayment_request": true`. Q5-SA-074
 - The selling policy's clauses on who may change it, and on the Salla entity bound by it, were not in what was read. Q5-SA-G0169, Q5-SA-G0170
 
 ### Country
@@ -52,7 +54,8 @@
 - Charities connect an external gateway instead of Salla's. Salla's guidance on gateways such as Moyasar or HyperPay is written for charities and digital stores. Q5-SA-P0073, Q5-SA-029, Q5-SA-030, Q5-SA-031, Q5-SA-058
 - Cash on delivery runs either through Salla's shipping labels or through the merchant's own carrier. Point-of-sale card payments in Salla Point go through a Geidea account. Q5-SA-P0095, Q5-SA-K1598, Q5-SA-K1436
 - The usage agreement defines مزود الخدمة as services Salla provides through third parties, where Salla only provides the connection. Q5-SA-004, Q5-SA-P0077, Q5-SA-006, Q5-SA-061
-- No list was found that is presented as the complete set of gateways a merchant can connect. Q5-SA-N04
+- The real store's gateways answer, on 12 October 2026, grouped its methods as online_payment_gateways (one item: slug salla, labelled noon), digital_wallets (paypal), bnpl (tabby, tamara, mispay, madfu, emkan) and other_payment_methods (mokafaa-alrajhi, cod). Q5-SA-073
+- No list was found that is presented as the complete set of gateways a merchant can connect. The comparison page مقارنة بوابات الدفع is not held. Q5-SA-N04
 
 ### Apps
 - Apps from Salla's App Store can hold the payments, transactions, settlements and subscriptions scopes. Q5-SA-K2048, Q5-SA-K2057, Q5-SA-K2058, Q5-SA-K2061
@@ -77,6 +80,7 @@
 - Payments are settled and transferred under the payment services contract (عقد خدمات الدفع) signed during verification. Q5-SA-P0054, Q5-SA-P0064
 - These were not in what was read: the contract's parties, the entity or licence under which Salla Payments funds are held, who settles them, and in what capacity Salla receives them. Q5-SA-G0113, Q5-SA-G0114, Q5-SA-G0115, Q5-SA-G0177, Q5-SA-H0002, Q5-SA-H0004, Q5-SA-H0008
 - When a merchant activates Salla's payment gateway, all payments are received in Saudi riyals. Q5-SA-P0168
+- The real store's wallet summary, on 12 October 2026, listed three wallets: Wallet, Electronic Payments (salla_pay) and Cash on Delivery Payments (salla_cod), the second with its total fees and tax. Its last e-payment payout, paid, carried the hint "It will reach your account within 2-4 business days." Its online-payments wallet page took total fees and tax on fees from total payments to give total payouts. Q5-SA-075, Q5-SA-076, Q5-SA-077
 
 ### Tabby, Tamara, Mokafaa Al Rajhi, other gateways and PayPal
 - Payments through Tabby are collected by Tabby, not by Salla Payments, and the store receives its dues under its agreement with Tabby. Q5-SA-P0102, Q5-SA-067
