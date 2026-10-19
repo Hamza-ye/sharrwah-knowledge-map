@@ -297,27 +297,48 @@ def points(text):
     return [tuple(p) for p in out]
 
 
-def check_account(d, q, code, known, checking=False):
+def check_account(d, q, code, known, checking=False, nf_ids=()):
     path = os.path.join(d, "account.md")
     if not os.path.exists(path):
         err("account.md", "", "missing")
         return
     text = open(path, encoding="utf-8").read()
     pat = re.compile(rf"\b{q}-{code}-(?:[KPGHA]\d{{4}}|N\d{{2,3}}|\d{{3}})\b")
+    any_id = re.compile(rf"\b{q}-[A-Z]{{2}}-(?:[KPGHA]\d{{4}}|N\d{{2,3}}|C\d{{3}}|\d{{3}})\b")   # any platform's
     for c in sorted(set(pat.findall(text)) - known):
         err("account.md", c, "cites an id the folder doesn't hold")
     nsent = len(sentences(q))
+    seen, first_section = [], None
     for n, line in enumerate(text.splitlines(), start=1):
         if re.match(r"^##(?!#)", line):     # a section; ### subheadings within it are free
             m = re.match(r"^## \[(\d+)\]\s*$", line)
             if not m or not 1 <= int(m.group(1)) <= nsent:
                 err("account.md", f"line {n}", f"a section is headed by one sentence's number, from [1] to [{nsent}], as ## [2]")
+            elif checking:
+                k = int(m.group(1))
+                if seen and k <= seen[-1]:
+                    err("account.md", f"line {n}", f"section [{k}] comes after [{seen[-1]}]: one section per sentence, in order")
+                seen.append(k)
+            first_section = first_section or n
+        elif checking and re.match(r"^#+\s*\[\d+\]", line):
+            err("account.md", f"line {n}", "a sentence's section is headed as ## [n], at the second level")
+    cited_nf = set()
     for n, p in points(text):
         if not pat.search(p):
             err("account.md", f"line {n}", "a point that cites no id of this folder")
-        if checking and not re.match(r"^([-*]|\d+[.)])?\s*\**(" + "|".join(LABELS) + r")\b", p):
-            err("account.md", f"line {n}", f"a point starts with its label: {', '.join(LABELS)}")
-    words = len(re.findall(r"\w+", pat.sub("", text)))     # ids aren't words
+        cited_nf.update(x for x in pat.findall(p) if re.search(r"-N\d+$", x))
+        if checking:
+            m = re.match(r"^([-*]|\d+[.)])?\s*\**(" + "|".join(LABELS) + r")\b", p)
+            if not m:
+                err("account.md", f"line {n}", f"a point starts with its label: {', '.join(LABELS)}")
+            elif m.group(2) == "not in what was read" and not re.search(rf"\b{q}-{code}-(?:[GH]\d{{4}}|N\d{{2,3}})\b", p):
+                err("account.md", f"line {n}", "a 'not in what was read' point cites its not-found row or copied gap")
+            if first_section is None or n < first_section:
+                err("account.md", f"line {n}", "a point before the first section")
+    if checking:
+        for nid in sorted(set(nf_ids) - cited_nf):
+            err("account.md", nid, "a not-found row that no point cites")
+    words = len(re.findall(r"\w+", any_id.sub("", text)))     # ids, of any platform, aren't words
     if words > (900 if checking else 1800):
         err("account.md", "", f"{words} words, past the brief's length", "warning")
 
@@ -332,7 +353,7 @@ def records(q, platform, captures, d=None, checking=False):
     held = Held(ROOTS, caps)
     copies = check_copies(d, q, platform, code)
     own = check_own(d, q, code, src, held)
-    check_account(d, q, code, copies | own, checking)
+    check_account(d, q, code, copies | own, checking, {x for x in own if re.search(r"-N\d+$", x)})
 
 
 def main(argv):
