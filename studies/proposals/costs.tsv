@@ -39,3 +39,4 @@ R3	verification of the checking brief's fixes	a4945b3ce98c65937	2026-10-19T01:04
 R3	check, Q2 on Zid	a9d69ae8b9f83510e	2026-10-19T01:33	2026-10-19T01:45	14.6	medium; 40 points (30 differs, 2 goes beyond, 8 not in what was read); 25 new statements, 6 not-found rows
 R3	check, Q3 on WooCommerce	a65727bfcf9fde438	2026-10-19T01:33	2026-10-19T01:45	8.8	medium; 44 points (28 differs, 7 goes beyond, 9 not in what was read); 41 new statements, 9 not-found rows
 R3	check, Q3 on BigCommerce	a347f6caee1194e0a	2026-10-19T01:33	2026-10-19T01:45	8.8	medium; 45 points (21 differs, 2 goes beyond, 22 not in what was read); 33 new statements, 17 not-found rows; one live page captured
+R3	check, Q1 on Zid	a98668589cfd01840	2026-10-19T01:33	2026-10-19T01:46	9.6	medium; 42 points (21 differs, 3 goes beyond, 18 not in what was read); 34 new statements, 17 not-found rows
