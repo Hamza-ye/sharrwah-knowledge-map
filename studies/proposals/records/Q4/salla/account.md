@@ -8,6 +8,8 @@
 - The bank account added under payment methods (طرق الدفع) is used to receive customers' bank transfers and is shown to them at checkout. Q4-SA-P0100, Q4-SA-K1603, Q4-SA-021 (bank_transfer.empty.description: "أضف حسابًا بنكيًا لمتجرك لاستقبال الحوالات البنكية من عملائك.")
 - The merchant adds it from the payment methods page, section التحويل البنكي, giving bank name, account holder, account number, IBAN and, optionally, an alternate identifier for SARIE (نظام الحوالات السريع), whose details then show on the checkout page. More than one account can be added. Q4-SA-003, Q4-SA-004, Q4-SA-006, Q4-SA-001
 - Bank transfer is a feature flag (`bank`) enabled with no plan list, and a payment method key (`bank`) in the order data. Q4-SA-K1608, Q4-SA-050, Q4-SA-061
+- In one store (real-merchant, `merchant_type` KSA), observed on 12 October 2026, the payment methods page listed under Other payment methods مكافآت الراجحي and الدفع عند الاستلام (`cod`, `"is_active": false`), and under Bank transfer one bank account of the store, Al Rajhi Bank. Q4-SA-067, Q4-SA-068, Q4-SA-069
+- In one storefront's checkout (store.rasasi.com.sa), observed on 9 October 2026, bank transfer showed the store's account and asked: "Upload your bank transfer receipt and enter the sender's name so we can verify your payment.", with a "Give me 24 hours" option. Q4-SA-074
 
 ### Cash on delivery through the merchant's own carrier or courier
 
@@ -36,6 +38,7 @@
 
 - The names in the dashboard and help: التحويل البنكي / تحويل بنكي (key `bank`), حوالة بنكية, الدفع عند الاستلام / دفع عند الاستلام (key `cod`, "Cash on delivery"), and in Salla Point الدفع نقداً / نقدًا, whose permission `salla_point_cod_orders` is named الطلبات النقدية in one source and طلبات الدفع عند الاستلام in another. Q4-SA-K1604, Q4-SA-K1579, Q4-SA-050, Q4-SA-054, Q4-SA-031, Q4-SA-038, Q4-SA-041, Q4-SA-K1426
 - The plan feature lists file التحويل البنكي, نظام المدفوعات الفورية عبر سريع and الدفع عند الاستلام under the payment group. Q4-SA-K1604, Q4-SA-K1605, Q4-SA-K1580
+- On a bank transfer order of the real-merchant store, the order's refund action names the method `"payment_method_label": "حوالة بنكية"`. Q4-SA-071
 
 ## [3]
 
@@ -45,6 +48,8 @@
 - In the order, the merchant picks the bank receipt image (اختر صورة الإيصال البنكي), and for partial payments attaches proof of payment (إرفاق إثبات الدفع). Q4-SA-015, Q4-SA-016, Q4-SA-K0563
 - The order API's payment object carries `store_bank_id`, `receipt_image_path` ("The URL link of the receipt image") and `cash_on_delivery` with its amount; a sample order payload shows `"payment_method": "bank"` with a `receipt_image` and status `under_review`. Q4-SA-059, Q4-SA-060, Q4-SA-061, Q4-SA-K0577
 - Not found: how a merchant reviews a customer's bank transfer receipt and confirms the payment, and whether Salla takes part. Q4-SA-N02
+- On a bank transfer order of the real-merchant store (order 24438069, created from the dashboard), observed on 12 October 2026, the order data held `"payment_method": "bank"` and a `receipt_image`, and the order page showed "Payment transferred" with "Al Rajhi Bank Bank transfer". Q4-SA-070, Q4-SA-072
+- Its order activity showed محمد المغربي and AJEX changing the status, three times to بإنتظار المراجعة, then to تم الشحن and تم التوصيل. Q4-SA-073
 
 ### Order status
 
@@ -59,6 +64,7 @@
 
 - Refund through Salla needs the payment method to be mada, Visa, Apple Pay or Tamara, with enough balance in the payments balance; otherwise the merchant can transfer the amount to the customer's bank account using their IBAN, or add it to the customer's wallet in the store. Q4-SA-008, Q4-SA-009
 - Setting قيد الاسترجاع does not return the amount; bank transfer is not supported for automatic cashback refund, which goes to the customer wallet. Q4-SA-010, Q4-SA-053
+- The same bank transfer order's refund action held `"has_refund_amount": false` and `"can_refund_to_wallet": true`. Q4-SA-071
 - Salla Point reports show cash refunded from the drawer and drawer difference. Q4-SA-042, Q4-SA-043, Q4-SA-044
 
 ### Fees
@@ -84,12 +90,15 @@
 - A shipping label can be cancelled through support only if the order was paid electronically, not on delivery. Q4-SA-012
 - In Salla Point, cash and the direct link remain available when the card subscription has lapsed. Q4-SA-040
 - Not found: any limit on the amount of a bank-transfer order other than restrictions the merchant sets. Q4-SA-N03
+- In the real-merchant store, observed on 12 October 2026, the cash on delivery settings excluded two categories (الأشمغة, منتجات دولية), and one order's data answered `"is_available": false` with ".خدمة الدفع عند الاستلام غير متاحة للتصنيفات في السلة". Q4-SA-075, Q4-SA-076
 
 ## [5]
 
 - With Salla shipping labels, cash on delivery is offered for orders from SAR 20 to SAR 1,000, through the carriers listed (one article names Aymakan, Aramex and J&T; another adds SMSA, Redbox and Shipa); in the UAE the method is "coming soon". Q4-SA-062, Q4-SA-K1585, Q4-SA-K1586, Q4-SA-014, Q4-SA-P0095, Q4-SA-K1589
 - The flow: the customer pays cash on delivery and the carrier transfers the amount to Salla; Salla transfers cash-on-delivery dues to the merchant's bank account on a schedule according to the plan, on Sundays and Wednesdays for label carriers. Q4-SA-P0041, Q4-SA-P0042, Q4-SA-P0039, Q4-SA-P0093, Q4-SA-K1587
 - The wallet has a cash-on-delivery payments tab (المدفوعات عند الاستلام) showing dues from orders paid on delivery that will be transferred to the bank account, totals before fees and tax, and fees that include the carrier's COD fee and the purchase-experience fee. Q4-SA-P0038, Q4-SA-023, Q4-SA-024, Q4-SA-025, Q4-SA-K1590
+- The real-merchant store's cash on delivery wallet page, observed on 12 October 2026, showed: "Customer pays on delivery", "The carrier transfers the payment to Salla", "Your dues are transferred to your bank account ending in 1444", and payouts "every Sunday and Wednesday". Q4-SA-078
+- The Aramex card under Salla shipping labels in the demo store, observed on 9 October 2026, answered its question هل يتوفر الدفع عند الاستلام؟ with "نعم بوليصات سلة تدعم الدفع عن الإستلام". Q4-SA-077
 - In the UAE and Kuwait, cash-on-delivery tracking is not in the wallet; the merchant follows amounts through the carrier activated under an external contract or its own courier. Q4-SA-K1602, Q4-SA-P0150
 - The order API's `cash_on_delivery` object carries the amount for cash on delivery. Q4-SA-060
 - Still open: who collects and holds cash-on-delivery amounts collected through Salla shipping labels before payout. Q4-SA-G0117, Q4-SA-H0008
