@@ -1,0 +1,15 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 19 Oct 2026 05:21:18 GMT
+content-type: text/html;charset=utf-8
+content-length: 8193
+server: nginx
+content-language: ar
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+set-cookie: JSESSIONID=nodeaef-default-283--f-609qr97y45fmb08caxyyqs68ro8o1627564.nodeaef-default-283--f-609q; Path=/; Secure; HttpOnly; Secure; SameSite=None; Partitioned
+set-cookie: _BEAMER_USER_ID_ibbIuQVd28400=86b21e6b-1060-4791-9d6b-f21005b9bcff; Path=/; Domain=.zid.sa; Max-Age=25920000; Secure; Partitioned; SameSite=None
+vary: Accept-Encoding, User-Agent
+content-encoding: gzip
+via: 1.1 google
+
