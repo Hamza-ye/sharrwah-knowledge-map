@@ -5,9 +5,9 @@
 ### Bank transfer (التحويل البنكي)
 
 - On the basic plan (باقة بيسك) the merchant can turn on bank transfer, "حيث يقوم العميل بتحويل مبلغ الطلب مباشرة من حسابه البنكي إلى حسابك"; electronic payment methods are only on paid plans. Q4-SA-P0099, Q4-SA-P0068
-- The bank account added under payment methods (طرق الدفع) is used to receive customers' bank transfers and is shown to them at checkout. Q4-SA-P0100, Q4-SA-K1603, Q4-SA-015 (bank_transfer.empty.description: "أضف حسابًا بنكيًا لمتجرك لاستقبال الحوالات البنكية من عملائك.")
+- The bank account added under payment methods (طرق الدفع) is used to receive customers' bank transfers and is shown to them at checkout. Q4-SA-P0100, Q4-SA-K1603, Q4-SA-021 (bank_transfer.empty.description: "أضف حسابًا بنكيًا لمتجرك لاستقبال الحوالات البنكية من عملائك.")
 - The merchant adds it from the payment methods page, section التحويل البنكي, giving bank name, account holder, account number, IBAN and, optionally, an alternate identifier for SARIE (نظام الحوالات السريع), whose details then show on the checkout page. More than one account can be added. Q4-SA-003, Q4-SA-004, Q4-SA-006, Q4-SA-001
-- Bank transfer is a feature flag (`bank`) enabled with no plan list, and a payment method key (`bank`) in the order and coupon data. Q4-SA-K1608, Q4-SA-050, Q4-SA-058
+- Bank transfer is a feature flag (`bank`) enabled with no plan list, and a payment method key (`bank`) in the order data. Q4-SA-K1608, Q4-SA-050, Q4-SA-061
 
 ### Cash on delivery through the merchant's own carrier or courier
 
@@ -23,7 +23,7 @@
 ### Orders created by the merchant, and Salla Point
 
 - A manual order (إنشاء طلب جديد يدوياً) takes one of: bank transfer with the bank chosen and the receipt uploaded, cash on delivery with its commission, or other methods. Q4-SA-007, Q4-SA-K0504
-- Salla Point (سلة بوينت), the point-of-sale product, takes cash (الدفع نقداً: "استلم المدفوعات مباشرة من العميل بشكل نقدي.") and lists bank transfer and cash among its methods; cash and payment link are available at once, card needs an application. Q4-SA-031, Q4-SA-037, Q4-SA-033, Q4-SA-039, Q4-SA-K1402
+- Salla Point (سلة بوينت), the point-of-sale product, takes cash (الدفع نقداً: "استلم المدفوعات مباشرة من العميل بشكل نقدي.") and lists bank transfer and cash among its methods; cash and payment link are available at once, card needs an application. Q4-SA-031, Q4-SA-038, Q4-SA-033, Q4-SA-039, Q4-SA-K1402
 - Salla Point has custom payment methods (طرق الدفع المخصصة) "لتسجيل المدفوعات عبر الوسطاء (مثل جاهز، مرسول، هنقرستيشن)", for delivery apps or indirect payment sources. Q4-SA-034, Q4-SA-035
 
 ### Gateways and wallets the merchant connects
@@ -34,7 +34,7 @@
 
 ## [2]
 
-- The names in the dashboard and help: التحويل البنكي / تحويل بنكي (key `bank`), حوالة بنكية, الدفع عند الاستلام / دفع عند الاستلام (key `cod`, "Cash on delivery"), and in Salla Point الدفع نقداً / نقدًا, whose permission `salla_point_cod_orders` is named الطلبات النقدية in one source and طلبات الدفع عند الاستلام in another. Q4-SA-K1604, Q4-SA-K1579, Q4-SA-050, Q4-SA-054, Q4-SA-038, Q4-SA-040, Q4-SA-K1426
+- The names in the dashboard and help: التحويل البنكي / تحويل بنكي (key `bank`), حوالة بنكية, الدفع عند الاستلام / دفع عند الاستلام (key `cod`, "Cash on delivery"), and in Salla Point الدفع نقداً / نقدًا, whose permission `salla_point_cod_orders` is named الطلبات النقدية in one source and طلبات الدفع عند الاستلام in another. Q4-SA-K1604, Q4-SA-K1579, Q4-SA-050, Q4-SA-054, Q4-SA-031, Q4-SA-038, Q4-SA-041, Q4-SA-K1426
 - The plan feature lists file التحويل البنكي, نظام المدفوعات الفورية عبر سريع and الدفع عند الاستلام under the payment group. Q4-SA-K1604, Q4-SA-K1605, Q4-SA-K1580
 
 ## [3]
@@ -42,7 +42,7 @@
 ### Recording the payment
 
 - Orders can be filtered by payment method on the orders page. Q4-SA-002
-- In the order, the merchant picks the bank receipt image (اختر صورة الإيصال البنكي), and for partial payments attaches proof of payment (إرفاق إثبات الدفع). Q4-SA-013, Q4-SA-014, Q4-SA-K0563
+- In the order, the merchant picks the bank receipt image (اختر صورة الإيصال البنكي), and for partial payments attaches proof of payment (إرفاق إثبات الدفع). Q4-SA-015, Q4-SA-016, Q4-SA-K0563
 - The order API's payment object carries `store_bank_id`, `receipt_image_path` ("The URL link of the receipt image") and `cash_on_delivery` with its amount; a sample order payload shows `"payment_method": "bank"` with a `receipt_image` and status `under_review`. Q4-SA-059, Q4-SA-060, Q4-SA-061, Q4-SA-K0577
 - Not found: how a merchant reviews a customer's bank transfer receipt and confirms the payment, and whether Salla takes part. Q4-SA-N02
 
@@ -63,7 +63,7 @@
 
 ### Fees
 
-- For bank transfer orders, the shipping label is not deducted from the order amount but from the merchant's balance, which must be topped up if short. Q4-SA-012
+- For bank transfer orders, the shipping label is not deducted from the order amount but from the merchant's balance, which must be topped up if short. Q4-SA-013
 - With the merchant's own carrier, the merchant enters the cash-on-delivery commission agreed in its contract with the carrier; the merchant can raise or lower the COD fee from what the carrier charges. Q4-SA-P0059, Q4-SA-K1593, Q4-SA-K1588
 - "بدون عمولة منصة على مبيعاتك" appears in the plan lines of سلة سبيشل. Q4-SA-K0051
 - Not found: whether Salla charges any fee of its own on bank-transfer orders, or on cash on delivery through the merchant's own carrier. Q4-SA-N01
@@ -81,7 +81,7 @@
 - Cash on delivery terms (شروط الدفع عند الاستلام): minimum and maximum order value, maximum cart weight, excluded categories and products, and hiding COD from customers banned in other Salla stores; the option must also be enabled in the carrier's settings. Q4-SA-022, Q4-SA-026, Q4-SA-027, Q4-SA-028, Q4-SA-029, Q4-SA-030, Q4-SA-066, Q4-SA-K1584, Q4-SA-K1591
 - One cash-on-delivery order per customer per day can be set (تقييد طلبات الدفع عند الاستلام للعميل الواحد). Q4-SA-020
 - Payment restrictions (قيود الدفع) can hide cash on delivery by cart value, customer group, category or market. Q4-SA-055, Q4-SA-056, Q4-SA-057, Q4-SA-058, Q4-SA-K1664
-- A shipping label can be cancelled through support only if the order was paid electronically, not on delivery. Q4-SA-K1585, Q4-SA-024
+- A shipping label can be cancelled through support only if the order was paid electronically, not on delivery. Q4-SA-012
 - In Salla Point, cash and the direct link remain available when the card subscription has lapsed. Q4-SA-040
 - Not found: any limit on the amount of a bank-transfer order other than restrictions the merchant sets. Q4-SA-N03
 

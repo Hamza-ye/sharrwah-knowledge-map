@@ -29,7 +29,7 @@ import csv, glob, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quote_check import Sources
 from source_kinds import kind_of
-from held_index import Held, describe, names_a_source, urls_in
+from held_index import Held, describe, names_a_source, norm_url, urls_in
 from copy_statements import COPIES, LEAD, candidates_for, copy_id
 from agent_questions import sentences
 
@@ -254,6 +254,8 @@ def check_own(d, q, code, src, held):
                         err("not-found.tsv", nid, f"{col}: {c} not in citations")
         if r["who_can"] in ("founder", "either"):
             for u in urls_in(r["route"]):
+                if norm_url(u).split("?")[0].endswith("/") or "/" not in norm_url(u):
+                    continue                    # a bare host names a site, not the page to capture
                 hits = [h for h in held.lookup(u) if h["readable"]]
                 if hits:
                     err("not-found.tsv", nid, f"{u} is held at {describe(hits[0])}: read it instead of routing it to the founder")

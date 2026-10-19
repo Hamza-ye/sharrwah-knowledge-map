@@ -25,6 +25,7 @@ def md_plain(s):
     s = s.replace("**", "").replace("__", "").replace("`", "").replace("\\", "")
     s = re.sub(r"(^|\s)#{1,6}\s", r"\1", s)
     s = s.replace("|", " ")
+    s = re.sub(r"\s+([.,;:!?،؛])", r"\1", s)      # a tag removed before punctuation leaves no space, on both sides
     return re.sub(r"\s+", " ", s).strip()
 
 def variants(s):
