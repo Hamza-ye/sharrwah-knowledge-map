@@ -60,6 +60,14 @@
 - `.at` and `.fr` domain contact information can't be updated from the admin. EU domain extensions may require identity verification. Q2-SH-034; Q2-SH-035
 - Shopify Shipping and shipping insurance vary by location and carrier. Q2-SH-K1987; Q2-SH-K1989; Q2-SH-K2000; Q2-SH-K1998
 
+### What the admin answered in the observed runs
+
+- For store fake-demo-sharrwah (countryCode YE, currencyCode YER), observed 2026-09-30, the admin answered Shopify Payments with "eligible":false, and an empty localPaymentMethodsForMerchantCountry. Q2-SH-058; Q2-SH-059
+- For the same store, Stripe was "available":false and "eligible":false, Amazon Pay and PayPal Express Checkout were "eligible":false, and threeDSecureEligibilityForCountry was false. Q2-SH-060; Q2-SH-061; Q2-SH-062; Q2-SH-063
+- For store ts15uk-ug (countryCode YE), observed 2026-10-07, the Third-party payment providers page listed (for testing) Bogus Gateway, Cybersource, Integration-UseePay, ONERWAY (Direct), PagBrasil - Cartão de crédito and Tap Payments. Q2-SH-064
+- The checkout's own strings, as the admin returned them, include "Payment method is not supported in your country.", "This payment method isn't available for your shipping country.", a product removed from the cart because "it's not available in your country/region", a monetary limit "for this region", and "We don't ship to this country or region." Q2-SH-065; Q2-SH-066; Q2-SH-067; Q2-SH-068; Q2-SH-069
+- For store zyd38b-ze (countryCode YE), observed 2026-09-21, the admin's rate preview answered: "DDP and Managed Markets rates are not supported for the same origin and destination countries." Q2-SH-070
+
 ## [2]
 
 **Which company contracts with the seller.** The Shopify Contracting Party depends on the billing address. Shopify Inc. and Shopify Technology (USA) Inc. contract for the United States or Canada. Shopify Commerce Singapore Pte. Ltd contracts for Asia Pacific. Shopify International Limited contracts for all other jurisdictions. Q2-SH-K1243; Q2-SH-K1244; Q2-SH-K1246; Q2-SH-K1247; Q2-SH-K1248; Q2-SH-G0003; Q2-SH-G0004
