@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 19 October 2026, 01:04 UTC.
+**Updated:** 19 October 2026, 01:17 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -387,6 +387,7 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 08:30 UTC, the session limit, until 11:00 UTC. It stopped both second axes reviewers as they started. They were resumed at 11:03 UTC, each from its own transcript;
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 - on 18 October 2026 at about 23:35 UTC, the session limit, until 19 October 00:00 UTC. It stopped five of R3's first six runs. All five were resumed just after midnight, each from its own transcript, and finished.
+- on 19 October 2026, before 01:17 UTC, the container restarted. It stopped the verification of the checking brief's fixes, which was resumed at 01:17 UTC from its own transcript. The repositories, the scratch directory and the search cache survived.
 
 **Agents running when last checked (19 October 2026, 01:04 UTC):** R3's in-depth recording runs, each in `studies/proposals/records/<question>/<platform>/`.
 - **Running:** the verification of the checking brief's fixes, `a4945b3ce98c65937`, at `max`, writing `studies/proposals/checks/R3-checking-brief-verify.md`. The last read itself (`checks/R3-checking-brief-read.md`, 15.5 million tokens) found 14 findings, 8 must fix, all fixed in commit `73588ac`.
