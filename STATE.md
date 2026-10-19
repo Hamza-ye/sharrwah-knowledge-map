@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 19 October 2026, 05:10 UTC.
+**Updated:** 19 October 2026, 05:35 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -393,10 +393,11 @@ Agents started earlier keep their effort.
 - on 19 October 2026 at about 02:10 UTC, the session limit, until 05:00 UTC. It stopped five checking runs: Q6 on BigCommerce, Q7 on Salla, WooCommerce and BigCommerce, and Q8 on Salla. Their files were committed as a checkpoint, and all five were resumed at 05:09 UTC, each from its own transcript. The session's worker restarted several times while it waited;
 - on 19 October 2026, before 01:17 UTC, the container restarted. It stopped the verification of the checking brief's fixes, which was resumed at 01:17 UTC from its own transcript. The repositories, the scratch directory and the search cache survived.
 
-**Agents running when last checked (19 October 2026, 05:10 UTC):** R3's checking runs, each in `studies/proposals/records/<question>/<platform>/`.
-- **Running:** six checking runs, from `briefs/R3-checking.md` at `medium`: Q6 on BigCommerce `ad02c4a2fe915f436`; Q7 on Salla `a8085b4e114ff9b31`, WooCommerce `a7b3a29b2ca2b6718` and BigCommerce `ac3081075df831347`; Q8 on Salla `a17cee4ed4f4bd78c` and Zid `a2fe2b24af17ca3e5`. All but the last were resumed after the limit.
-- **Done and committed:** all 21 in-depth recording runs. The checking brief's last read (14 findings, 8 must fix) and the verification of its fixes (11 fixed, 3 partly; its last points fixed in commit `9538f19`). Twelve checking runs: Q1 on Zid and WooCommerce; Q2 on Zid and BigCommerce; Q3 on WooCommerce and BigCommerce; Q4 on WooCommerce, BigCommerce and Zid; Q5 on WooCommerce and Zid; Q6 on WooCommerce. Q3 and Q4 on WooCommerce and Q4 on Zid were continued under the brief's fix of 19 October, to 20 rows each.
-- **Not yet started:** Q8 on BigCommerce. Its selection is written. Its starting message names the in-depth platforms in the order of `depth.tsv`, with the BigCommerce pointer in `briefs/R3-starting-messages.md`.
+**Agents running when last checked (19 October 2026, 05:35 UTC):** R3's last two checking runs, each in `studies/proposals/records/<question>/<platform>/`.
+- **Running:** Q8 on Zid `a2fe2b24af17ca3e5` and BigCommerce `acaf5581327b6b8f3`, from `briefs/R3-checking.md` at `medium`.
+- **Done and committed:** all 21 in-depth recording runs, the checking brief's last read and the verification of its fixes, and 17 checking runs: Q1 on Zid and WooCommerce; Q2 on Zid and BigCommerce; Q3 on WooCommerce and BigCommerce; Q4 on WooCommerce, BigCommerce and Zid; Q5 on WooCommerce and Zid; Q6 on WooCommerce and BigCommerce; Q7 on Salla, WooCommerce and BigCommerce; Q8 on Salla. Q3 and Q4 on WooCommerce and Q4 on Zid were continued under the brief's fix of 19 October, to 20 rows each.
+
+**The founder's choice, 19 October 2026, about 05:30 UTC,** near the week's usage limit: finish recording, write the drafting brief and have it checked, then stop and talk. The drafting runs wait for that talk and for the marks on the areas list. The progress report before it (05:15 UTC) gave the sample's rate, the steps past their cost, the re-sized whole (agents about 1.50 billion, the coordinator about 0.45, together about 1.95) and the method rulings since the G2 message.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. **On again** from 21:01 UTC on 18 October 2026, while step R1 runs. Pause it when no agent runs. Delete it when the founder asks.
 
