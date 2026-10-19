@@ -157,7 +157,7 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 | `notes.md` | what you read; each live URL you read, with the language it was served in; what you couldn't read; copies you found wrong or out of date; problems with the method |
 
 **`account.md`** is a short account of what your platform shows for the question, in its own terms.
-- **Its sections:** one for each sentence your points answer, in order, headed by the sentence's number, as `## [2]`. A point that answers several sentences goes under the first.
+- **Its sections:** one for each sentence your points answer, in order, headed by the sentence's number, as `## [2]`. A point that answers several sentences goes under the first. Within a section you may group points under `###` subheadings.
 - **Each point,** a list item or a paragraph, ends with the ids it rests on:
   - copy ids, such as `Q2-SA-K1553`, and the pilot's, such as `Q5-SA-P0003`;
   - copied gap ids, such as `Q2-SA-G0007`, and the pilot's H and A ids;

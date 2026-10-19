@@ -284,8 +284,8 @@ def points(text):
     Headings and blank lines separate points."""
     out, cur = [], None
     for n, line in enumerate(text.splitlines(), start=1):
-        if not line.strip() or line.lstrip().startswith("#"):
-            cur = None
+        if not line.strip() or line.lstrip().startswith("#") or re.match(r"^\s*\*\*[^*]+\*\*:?\s*$", line):
+            cur = None                  # a heading, or a line that is only a bold subheading, is no point
             continue
         if re.match(r"^\s*([-*]|\d+[.)])\s+\S", line) or cur is None:
             cur = [n, line.strip()]
