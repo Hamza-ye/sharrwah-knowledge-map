@@ -36,3 +36,4 @@ R3	in depth, Q8 on WooCommerce	ae391e5f5e09154a9	2026-10-19T00:33	2026-10-19T00:
 R3	in depth, Q8 on Shopify	ac56fa743ec86ec67	2026-10-19T00:29	2026-10-19T00:44	14.7	medium; 97 new statements, 2 not-found rows
 R3	the checking brief's last read	a13a7a6b457730f91	2026-10-19T00:30	2026-10-19T01:01	15.5	max; 14 findings, 8 must fix
 R3	verification of the checking brief's fixes	a4945b3ce98c65937	2026-10-19T01:04	2026-10-19T01:31	11.4	max; stopped once by a container restart and resumed
+R3	check, Q2 on Zid	a9d69ae8b9f83510e	2026-10-19T01:33	2026-10-19T01:45	14.6	medium; 40 points (30 differs, 2 goes beyond, 8 not in what was read); 25 new statements, 6 not-found rows
