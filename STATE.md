@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 19 October 2026, 06:15 UTC.
+**Updated:** 19 October 2026, 15:45 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -94,7 +94,20 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **The founder's capture list** (`studies/proposals/capture-list.md`, by `method/capture_list.py`): 46 rows routed to the founder or to either, by platform, as pages to capture and questions to ask. Optional; the work doesn't wait for it.
 - **R4 is prepared:** the digest of Stage 1 (`yemen-digest.md`, by `method/yemen_digest.py`), the id lookup (`method/record_ids.py`), the drafting brief (`briefs/R4-drafting.md`) and the checker's `drafts` mode.
 - **The drafting brief's check** (`checks/R4-drafting-brief-check.md`, 14.2 million tokens): 18 findings, 8 must fix. All but one are fixed, in the brief and the checker; the coordinator adds the last (how far currencies can be set or changed) to Q7's proposal when finishing it. The rulings are in `PLAN.md` section 11, 19 October.
-- **Stopped here, by the founder's choice of 05:30 UTC,** to talk before drafting. The drafting runs wait for that talk and for the marks on the areas list.
+- **Stopped from 05:30 to about 15:00 UTC, by the founder's choice,** to talk before drafting.
+- **The founder's answer, 19 October 2026** (`founder-messages/2026-10-19-areas-drafting-and-observed-evidence.md`; five rows in `founder-decisions.tsv`; `PLAN.md` section 11):
+  - **G2: no marks.** All 34 areas stay in; when each part is built is decided in the design;
+  - **the drafts' citing counts are a guide, not a limit:** the brief and the checker now say so (the checker counts them as notes);
+  - **before drafting,** read observed-sh's and observed-sa's own guides and use what they describe; re-check every not-found row and the capture list against the runs, and record what they show;
+  - **check every not-found row's wording** against what was read; Q6-SH-N01's filter to be verified;
+  - **the capture list: not now.**
+
+  The founder is at about 80 percent of the week's limit: if the work stops on it, it resumes after the reset (24 October, 05:00 UTC). The founder offered, if needed, Shopify's traces (`trace.zip`, not in git) and runs from their own machine in the signed-in stores, for targeted, bounded evidence. Not asked for yet.
+- **Done for it** (commit `35b50a8`):
+  - **the search covers the observed runs** (`method/runs_corpus.py`, through `corpus_search.py`): observed-sh's answers (97,781 distinct), observed-sa's saved responses (9,537 distinct), every step's page text (15,145 and 4,081 steps), the requests the pages sent, the indexes and derived tables, and the structures' source files. Folded once per commit into `~/.cache/sharrwah-corpus/<repository>-runs-<commit>.txt`; a search adds about a second;
+  - **the wording check** (`method/check_not_found_wording.py`, `studies/proposals/checks/not-found-wording.tsv`): 13 of 390 rows had a quoted or labelled phrase not found as written in what they read. The five on Zid are lists whose every item is found. The eight on Shopify and Salla go to their re-check runs. Q6-SH-N01's "Type in your country" is in the held copy of the page it read (the archive record at 41642451), so the founder's doubt is answered: the label is held;
+  - **the re-check brief** (`briefs/R3-observed-recheck.md`): one run per question on Shopify and on Salla, 16 in all, at `medium`. Tested by its first runs rather than a separate check.
+- **Running: the re-check's first two runs,** Q6 on Shopify and Q6 on Salla, started at 15:40 UTC. When they report: check, read their output, fix the brief, commit, then start the other 14 in batches of about six.
 - **The checking runs** follow `briefs/R3-checking.md`, made runnable by its last read (14 findings, 8 must fix) and the verification of its fixes. **Twelve are done** (commits `2b5ce9f` to `ff660b5`), each passing `--check` with no issues. With the three continued, they cost 135.9 million tokens, about 11.3 million a run.
 - **Fixed after the first runs** (`PLAN.md` section 11, 19 October): some runs chose their search terms before reading and left account points unchecked, about 30 each in Q4 on WooCommerce and on Zid. A run may now search once more for points its first search left out, and records a row for every point its reading doesn't show, up to 20. Q3 and Q4 on WooCommerce and Q4 on Zid are continued under the fix.
 - **Noticed by the runs, for the drafting brief:** copies that disagree. In Q2 on BigCommerce, K0132 and P0029 say BigCommerce Payments is offered in the US only, and P0030, P0068 and P0087 say the UK and US (its `notes.md`). The drafting brief should say how a proposal treats statements that disagree: both cited, each with its date.
@@ -397,12 +410,12 @@ Agents started earlier keep their effort.
 - on 19 October 2026 at about 02:10 UTC, the session limit, until 05:00 UTC. It stopped five checking runs: Q6 on BigCommerce, Q7 on Salla, WooCommerce and BigCommerce, and Q8 on Salla. Their files were committed as a checkpoint, and all five were resumed at 05:09 UTC, each from its own transcript. The session's worker restarted several times while it waited;
 - on 19 October 2026, before 01:17 UTC, the container restarted. It stopped the verification of the checking brief's fixes, which was resumed at 01:17 UTC from its own transcript. The repositories, the scratch directory and the search cache survived.
 
-**Agents running when last checked (19 October 2026, 06:15 UTC):** none. The work is stopped, by the founder's choice, until the talk.
-- **Done and committed:** all of R3's recording, and R4's preparation with the drafting brief's check and fixes.
+**Agents running when last checked (19 October 2026, 15:45 UTC):** the re-check's first two runs, Q6 on Shopify and Q6 on Salla, from `briefs/R3-observed-recheck.md`. If a limit stops them, commit their folders as a checkpoint and resume each from its own transcript (SendMessage), saying the limit stopped it.
+- **Done and committed:** all of R3's recording, R4's preparation with the drafting brief's check and fixes, and the founder's decisions of 19 October with the search over the observed runs (`35b50a8`).
 
 **The founder's choice, 19 October 2026, about 05:30 UTC,** near the week's usage limit: finish recording, write the drafting brief and have it checked, then stop and talk. The drafting runs wait for that talk and for the marks on the areas list. The progress report before it (05:15 UTC) gave the sample's rate, the steps past their cost, the re-sized whole (agents about 1.50 billion, the coordinator about 0.45, together about 1.95) and the method rulings since the G2 message.
 
-**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. On from 21:01 UTC on 18 October 2026 through R1 to R3. **Paused** at 05:56 UTC on 19 October 2026, while the work waits for the founder's talk. Turn it on again when agents run. Delete it when the founder asks.
+**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. On from 21:01 UTC on 18 October 2026 through R1 to R3. Paused at 05:56 UTC on 19 October 2026, while the work waited for the founder's talk. **On again** from 15:40 UTC on 19 October 2026, with the re-check's runs. Delete it when the founder asks.
 
 **To resume:**
 1. Commit whatever files are on disk, as an unchecked checkpoint.
