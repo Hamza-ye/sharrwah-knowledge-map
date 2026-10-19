@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/schedule.md",
+ "dir": "items/001-raw.githubusercontent.com",
+ "fetched_at": "2026-10-19T00:44:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/schedule.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 1653,
+ "cited_in": [
+  "studies/proposals/records/Q8/woocommerce/citations.tsv"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b44d6abb02062f7b5dd261f363310a9de6d2c145a6fbb066965fdd0a62df41e9",
+ "raw_ext": "txt"
+}

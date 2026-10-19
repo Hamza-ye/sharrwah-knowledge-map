@@ -1,0 +1,32 @@
+[
+{
+"n": 1,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/schedule.md",
+"dir": "items/001-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/prereleases.md",
+"dir": "items/002-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/core-concepts/example-header-plugin-comment.md",
+"dir": "items/003-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/submitting-your-product.mdx",
+"dir": "items/004-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/excellence-verified-badge.md",
+"dir": "items/005-raw.githubusercontent.com",
+"keep_body": false
+}
+]
