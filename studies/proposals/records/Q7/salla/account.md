@@ -1,0 +1,48 @@
+# Q7 on Salla, as a check against Shopify and Zid
+
+## [1]
+
+### The store's currency
+- **differs** (term): Salla's store sets العملة الحالية للمتجر under مركز الإعدادات > عام > العملات, with other currencies turned on and added there. Store performance reports convert every amount to العملة الأساسية للمتجر at the exchange rate when the order was created. Sorted against Zid [1]: Q7-ZD-001 ("In the help, the seller chooses"); Shopify [1]: Q7-SH-K1934 ("Shopify names a store currency"); Shopify [1]: Q7-SH-074 ("Reports can be viewed only"). Q7-SA-001 Q7-SA-K1955 Q7-SA-009
+- **differs** (role): the Merchant API's `GET /currencies` lists currencies with `name`, `code`, `symbol` and `status`, and `POST /currencies` activates one currency or a group. The Twilight SDK's `salla.currency.list()` lists the store's currencies, "although the store payouts can be in a different currency". Sorted against Zid [1]: Q7-ZD-005 ("The Merchant API returns"); Shopify [1]: Q7-SH-K2893 ("In the Admin GraphQL API"); Shopify [1]: Q7-SH-002 ("Shopify names a payout currency"). Q7-SA-013 Q7-SA-014 Q7-SA-015 Q7-SA-K1948 Q7-SA-K1962
+
+### Currency shown to buyers
+- **differs** (role): the buyer picks one of the store's currencies from the list beside the cart, and product prices then show in that currency. The default currency shown depends on the buyer's location, not on the store settings' default, so prices may show in a local currency automatically. Sorted against Zid [1]: Q7-ZD-K0300 ("With مدفوعات زد active and other currencies"); Zid [1]: Q7-ZD-K0299 ("On the compare-plans page"); Shopify [1]: Q7-SH-K1941 ("A market's currency is the one displayed"). Q7-SA-K1956 Q7-SA-002 Q7-SA-K1957 Q7-SA-003
+- **differs** (role): in a store with several markets, the money values of offers are shown and applied in the buyer's active market currency. A store with one market keeps them in the store's currency. Sorted against Shopify [1]: Q7-SH-111 ("Reports can be viewed only"). Q7-SA-010 Q7-SA-011
+
+### Currency paid by buyers
+- **differs** (role): when the merchant turns on بوابة دفع سلة, all payments are received in الريال السعودي. Sorted against Zid [1]: Q7-ZD-K0300 ("With مدفوعات زد, the final payment"); Shopify [1]: Q7-SH-K1937 ("Only stores whose primary gateway"). Q7-SA-K1963 Q7-SA-P0168
+- **differs** (role): a plan lists إتاحة الدفع عبر +33 عملة; a payments page says more than 15 currencies and payments from more than 79 countries. Sorted against Shopify [1]: Q7-SH-135 ("Shopify publishes a list of currencies"). Q7-SA-K1949 Q7-SA-K1959
+- **differs** (role): PayPal lets customers pay in different currencies through their PayPal account. Sorted against Shopify [1]: Q7-SH-087 ("With Adyen, transactions"). Q7-SA-012
+- **differs** (role): the order webhook's example carries the order's `currency`, and under `amounts` an `exchange_rate` with `base_currency`, `exchange_currency` and `rate`, plus `scope_exchange_rate`. Sorted against Shopify [1]: Q7-SH-124 ("An order records both"); Zid [1]: Q7-ZD-008 ("Each order records an"). Q7-SA-016
+- **not in what was read:** an exchange rate or fee applied when a buyer pays in a currency other than the one the store is paid out in. Sorted against Shopify [1]: Q7-SH-013 ("When a customer pays"); Zid [1]: Q7-ZD-K0301 ("With مدفوعات زد, the final payment"). Q7-SA-N01
+- **not in what was read:** which payment methods take payment in the buyer's chosen currency. Sorted against Shopify [1]: Q7-SH-089 ("Within Shopify Payments"). Q7-SA-N03
+- **not in what was read:** payment methods or balances in cryptocurrency. Sorted against Shopify [1]: Q7-SH-P0016 ("Under the Shopify Payments terms"). Q7-SA-N04
+
+### Currency paid out to the seller
+- **differs** (role): the payout bank account must be with a bank of the country, in its currency: الدرهم الإماراتي (UAE), الدينار الكويتي (Kuwait), الريال القطري (Qatar). Sorted against Shopify [1]: Q7-SH-002 ("Shopify names a payout currency"); Shopify [1]: Q7-SH-018 ("Shopify publishes, per store location"). Q7-SA-K1964 Q7-SA-K1965 Q7-SA-P0185
+- **differs** (role): payout minimums are given in currencies: 100 ريال سعودي ("SAR/AED 100" on the English page), 250 درهم in the UAE, and one Kuwaiti dinar in Kuwait, where another passage says there is no minimum. A wallet withdrawal costs 8.05 ريال. Sorted against Zid [1]: Q7-ZD-K0025 ("Zid Pay deposit minimums"); Zid [1]: Q7-ZD-K0156 ("Zid's fees are in"). Q7-SA-K1544 Q7-SA-P0013 Q7-SA-K1547 Q7-SA-K1548 Q7-SA-K1553 Q7-SA-P0085
+- **differs** (role): IBAN guides name Bahraini, Kuwaiti and Emirati banks for receiving sales proceeds. Sorted against Zid [1]: Q7-ZD-K0039 ("The bank list holds"). Q7-SA-P0173 Q7-SA-P0174 Q7-SA-P0175 Q7-SA-P0176 Q7-SA-P0177
+- **not in what was read:** payouts in more than one currency, or to bank accounts by currency. Sorted against Shopify [1]: Q7-SH-P0155 ("With Multi-Currency Payouts"). Q7-SA-N02
+- **goes beyond:** the stored feature flags `reflect-market-currency` and `currency-exchange` are enabled for the answering store. Q7-SA-K1952 Q7-SA-K1954
+
+## [2]
+- **differs** (term): under الأسواق المتعددة, each market has its countries, chosen when it is added, and "العملات": a default currency and other supported currencies. A Gulf country or region's market is customised by design, prices, currency, domain and shipping. The feature is on the Special plan, and the stored flags list `multi-countries` on the special and pro plans. Sorted against Shopify [2]: Q7-SH-076 ("The currency is set per market"); Zid [2]: Q7-ZD-020 ("Markets are a level below"). Q7-SA-K1977 Q7-SA-008 Q7-SA-K1976 Q7-SA-007 Q7-SA-K1978 Q7-SA-K1973
+- **differs** (role): for each market, the merchant either enters a custom price or lets prices be set automatically from the product's base price and the currency's exchange rate. Sorted against Shopify [2]: Q7-SH-071 ("Showing prices in local currencies"); Zid [1]: Q7-ZD-018 ("Under الأسواق, a price"); Zid [3]: Q7-ZD-022. Q7-SA-005 Q7-SA-006 Q7-SA-K1958
+- **differs** (role): the stored flag `currency` lists the plus, pro and special plans. Sorted against Zid [2]: Q7-ZD-016 ("The payments page says"); Shopify [2]: Q7-SH-K2660 ("Showing prices in local currencies"). Q7-SA-K1953
+- **differs** (role): Salla Payments is activated per country (UAE, Kuwait), each with its own payment methods. Sorted against Zid [2]: Q7-ZD-K0300 ("مدفوعات زد is available"). Q7-SA-K1522 Q7-SA-K1528 Q7-SA-K1520 Q7-SA-K1521 Q7-SA-K1529
+- **not in what was read:** whether the store's currency is tied to the store's country. Sorted against Zid [2]: Q7-ZD-007 ("The store's currency is set at the store level"). Q7-SA-N05
+- **not in what was read:** what a market shows where a currency chosen for it cannot be used. Sorted against Shopify [2]: Q7-SH-083 ("If a country's local currency"). Q7-SA-N06
+
+## [3]
+- **differs** (role): the store's default currency can be changed, provided there are no customer orders. Sorted against Shopify [3]: Q7-SH-008 ("Only the store owner can change"); Zid [3]: Q7-ZD-001 ("The seller can change"). Q7-SA-004
+- **differs** (role): currency settings are a staff permission, `currency_setting_edit` (إعدادات العملات). Sorted against Shopify [3]: Q7-SH-008 ("Only the store owner can change"). Q7-SA-K1950 Q7-SA-K1951
+- **differs** (role): the payout bank account is changed by a new verification request and contacting support; the Salla team reviews edits first. Sorted against Shopify [3]: Q7-SH-015 ("A payout currency is added"). Q7-SA-P0147 Q7-SA-P0156 Q7-SA-P0170
+- **not in what was read:** what changing the default currency does to product prices, discounts and amounts already recorded. Sorted against Shopify [3]: Q7-SH-006 ("Shopify lists the effects"); Zid [3]: Q7-ZD-K0302 ("The help says that when"). Q7-SA-N07
+- **not in what was read:** the currency of a refund to the buyer. Sorted against Shopify [3]: Q7-SH-068 ("Refunds go out"). Q7-SA-N08
+- **not in what was read:** moving a store to another country, and what that requires of its balances. Sorted against Zid [3]: Q7-ZD-K0230 ("For Gulf merchants"). Q7-SA-N09
+
+## [4]
+- **differs** (role): payments go first to رصيد المدفوعات الإلكترونية, which holds the store's sales proceeds until they are transferred. Amounts below the minimum (100 riyals, or 250 dirhams in the UAE) stay in that balance. It is separate from رصيد المتجر, used for Salla's subscriptions and services; money can't move from the first to the second. Withdrawals from the store wallet are capped at 5,000 Saudi riyals a day. What was read doesn't name the currency of either balance. Sorted against Zid [4]: Q7-ZD-K0136 ("محفظة زد is in الريال السعودي"); Zid [4]: Q7-ZD-K0033 ("Zid Pay keeps a merchant balance"); Zid [4]: Q7-ZD-K0133 ("The wallet's withdrawal limit"); Shopify [4]: Q7-SH-131 ("Shopify Payments' account in the API"). Q7-SA-K1558 Q7-SA-K1560 Q7-SA-K1561 Q7-SA-P0009 Q7-SA-P0056 Q7-SA-K0075 Q7-SA-P0086 Q7-SA-G0151 Q7-SA-G0153
+- **differs** (role): cash on delivery amounts are collected by the shipping company and transferred to Salla, and the wallet holds a cash on delivery balance. Sorted against Zid [4]: Q7-ZD-K0117 ("Zid collects cash on delivery"). Q7-SA-P0041 Q7-SA-P0042 Q7-SA-P0029
+- **differs** (role): Salla provides payment and settlement through its partners, and payments are settled under the payment services contract signed at verification. Sorted against Shopify [4]: Q7-SH-P0010 ("The Shopify Payments terms place settlement"). Q7-SA-P0079 Q7-SA-K1533 Q7-SA-K1557 Q7-SA-H0002
