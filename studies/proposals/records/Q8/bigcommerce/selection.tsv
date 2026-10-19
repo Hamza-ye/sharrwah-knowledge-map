@@ -1,0 +1,90 @@
+concern_id	terms	description	statements	gaps	area_id	action	reason
+BC-C-001	Catalog - Products | Catalog - Product variants | Catalog - Product variant options | Catalog - Product modifiers | Products	Products (catalog products, variants, variant options and modifiers)	7	2	BC-A-01	candidate	
+BC-C-002	Catalog - Brands	Brands	3	3	BC-A-01	candidate	
+BC-C-003	Catalog - Categories | Catalog - Category trees	Categories and category trees	5	2	BC-A-01	candidate	
+BC-C-004	Inventory | Store Inventory | Inventory management	Inventory	7	1	BC-A-02	candidate	
+BC-C-005	Store Locations | Locations | Inventory locations	Inventory locations	6	2	BC-A-02	candidate	
+BC-C-008	Pricing	Storefront pricing	2	3	BC-A-03	candidate	
+BC-C-009	Promotions API | Promotion Settings API | Advanced promotions management	Promotions	7	1	BC-A-03	candidate	
+BC-C-010	Marketing | Coupons, discounts, and gift cards	Marketing: coupons, banners and gift certificates	3	2	BC-A-03	candidate	
+BC-C-011	Search Filters | Storefront Search | Product filtering | Custom product filtering	Product filtering and storefront search	7	2	BC-A-04	candidate	
+BC-C-012	Product ratings and reviews | Google customer reviews	Product ratings and reviews	3	3	BC-A-04	candidate	
+BC-C-013	Beta Product Recommendations	Product recommendations (beta)	7	0	BC-A-04	candidate	
+BC-C-014	Carts | Storefront Carts | Persistent cart	Carts	5	2	BC-A-05	candidate	
+BC-C-015	Abandoned carts | Abandoned Cart Emails | Abandoned cart saver	Abandoned carts	5	2	BC-A-05	candidate	
+BC-C-016	Checkouts | Storefront Checkouts | Checkout Content | Single-page checkout	Checkouts	8	1	BC-A-05	candidate	
+BC-C-017	Beta Checkout Extensions	Checkout extensions (beta)	4	1	BC-A-05	candidate	
+BC-C-018	Orders V2 | Storefront Orders | Orders	Orders	6	3	BC-A-06	candidate	
+BC-C-020	Order Transactions | Transactions API (Beta)	Order transactions	6	0	BC-A-06	candidate	
+BC-C-021	Refunds | Refunds & returns	Refunds	4	3	BC-A-06	candidate	
+BC-C-019	Order Fulfillment | Fulfillment Methods | Shipments	Order fulfillment and shipments	3	3	BC-A-07	candidate	
+BC-C-070	Shipping V2 | Shipping | Real-time shipping quotes | ShipperHQ shipping rules engine	Shipping	5	3	BC-A-07	candidate	
+BC-C-071	Shipping Providers	Shipping providers	4	3	BC-A-07	candidate	
+BC-C-006	Pickup | Pickup Methods | Pickup Options | Storefront Pickup Options | Buy online, pick up in store	Pickup (buy online, pick up in store)	5	3	BC-A-08	candidate	
+BC-C-069	Point of sale | POS integrations | POS & In-Store	Point of sale	3	2	BC-A-08	candidate	
+BC-C-022	Payment Processing | Create Payments	Payment processing (Payments API)	10	0	BC-A-09	candidate	
+BC-C-023	Payment Methods | Payment Methods V3 | Payment Methods V2	Payment methods	3	2	BC-A-09	candidate	
+BC-C-024	Stored Instruments API (Beta) | Stored Payment Instruments | Stored credit cards	Stored payment instruments	6	2	BC-A-09	candidate	
+BC-C-027	Apple Pay, Google Pay, and Amazon Pay | Digital wallets	Digital wallets	4	2	BC-A-09	candidate	
+BC-C-026	Embedded Payment Providers | Open Payment Providers | Open Payment Provider Fee | Embedded Payment Provider List | Payment freedom	Payment providers: Embedded and Open Payment Providers	11	3	BC-A-10	candidate	
+BC-C-028	Payment Cards | Checkout Environment; PCI | PCI Compliance	Payment card security (PCI DSS)	7	0	BC-A-11	candidate	
+BC-C-078	Free sitewide HTTPS and dedicated SSL | Storefront Security | Security & compliance	Storefront HTTPS and storefront security	4	2	BC-A-11	candidate	
+BC-C-029	Unified Billing | Merchant Unified Billing | Unified Billing Partner	Unified Billing (app charges on the BigCommerce invoice)	12	1	BC-A-12	candidate	
+BC-C-030	Fees and Billing | GMV cap | Open Payment Provider Fees	Fees and billing (subscription, GMV and plan)	8	1	BC-A-12	candidate	
+BC-C-031	Invoice Management | Payments | Invoicing & net terms	B2B Edition invoices and payments	5	2	BC-A-13	candidate	
+BC-C-065	B2B Edition | B2B REST APIs | Buyer portal	B2B Edition (companies, users, quotes, shopping lists, sales staff)	6	2	BC-A-13	candidate	
+BC-C-032	Customers V3 | Customers V2 | Storefront Customers | Storefront Form Fields | Customers	Customers	4	3	BC-A-14	candidate	
+BC-C-033	Customer Login (SSO) | Current Customer | Customers Login	Customer login (SSO) and current customer	6	2	BC-A-14	candidate	
+BC-C-034	Customer Segmentation | Customer groups and segmentation | Customer groups	Customer groups and segmentation	5	2	BC-A-14	candidate	
+BC-C-035	Subscribers | Storefront Subscriptions	Subscribers	2	3	BC-A-14	candidate	
+BC-C-036	Wishlist	Wishlists	1	4	BC-A-14	candidate	
+BC-C-037	Storefront Cookie Consent	Storefront cookie consent	4	1	BC-A-14	candidate	
+BC-C-038	Channels | Channel Settings | Channel Listings | Online storefront | Omnichannel management	Channels	8	2	BC-A-15	candidate	
+BC-C-039	Multi-storefront | Multi-Storefront | MSF	Multi-Storefront	4	1	BC-A-15	candidate	
+BC-C-040	Sites | Sites & Routes	Sites and routes	3	3	BC-A-15	candidate	
+BC-C-041	Redirects	Redirects	2	3	BC-A-15	candidate	
+BC-C-067	Feedonomics | Feedonomics Surface | Feedonomics Platform | Feedonomics enrichment	Feedonomics	4	1	BC-A-16	candidate	
+BC-C-068	Amazon / eBay / Walmart | Marketplaces | Social channels | Google Shopping | Sales Channels	Marketplaces and social channels	3	2	BC-A-16	candidate	
+BC-C-042	Themes | Custom Template Associations | Design Themes	Themes	8	1	BC-A-17	candidate	
+BC-C-043	Widgets | Page widgets | Beta Page Widgets	Widgets and page widgets	4	3	BC-A-17	candidate	
+BC-C-044	Scripts	Scripts	4	2	BC-A-17	candidate	
+BC-C-045	Pages V3 | Content | Built-in blog	Pages and store content	7	1	BC-A-17	candidate	
+BC-C-046	Email Templates | Email Statuses | Notifications	Email templates and transactional emails	4	2	BC-A-18	candidate	
+BC-C-047	Settings V3 | Store Information V2 | Store Profile | Storefront Status | Storefront SEO | Information & Settings	Store profile and storefront settings	9	2	BC-A-18	candidate	
+BC-C-074	Currencies | Multi-currency	Currencies	14	0	BC-A-19	candidate	
+BC-C-072	Tax | Tax Classes | Tax Settings	Tax configuration	5	1	BC-A-20	candidate	
+BC-C-073	Tax Provider API | Tax Providers	Tax providers	10	1	BC-A-20	candidate	
+BC-C-050	Catalyst | Headless commerce	Catalyst storefront framework	3	3	BC-A-21	candidate	
+BC-C-051	Makeswift	Makeswift visual editor	3	2	BC-A-21	candidate	
+BC-C-052	Infrastructure Hosting | Native Hosting	Native Hosting (Infrastructure Hosting)	5	1	BC-A-21	candidate	
+BC-C-053	Storefront API | GraphQL Storefront API | Storefront API tokens | Storefront API Tokens	GraphQL Storefront API and storefront API tokens	4	2	BC-A-21	candidate	
+BC-C-066	Powered By | Beta Powered By | Commerce-as-a-Service	Powered By (Commerce-as-a-Service)	6	2	BC-A-21	candidate	
+BC-C-049	Metafields | Metafield Ownership | Metafields Access | Store Information	Metafields	5	3	BC-A-22	candidate	
+BC-C-054	Admin API	GraphQL Admin API	2	3	BC-A-22	candidate	
+BC-C-055	Account API | GraphQL Account API | Account resource scopes	Account-level resources (GraphQL Account API)	4	3	BC-A-22	candidate	
+BC-C-056	API Accounts | OAuth scopes | API Terms | Open APIs	API accounts, OAuth scopes and API Terms	6	0	BC-A-22	candidate	
+BC-C-057	Rate limits | Volume Limits	API rate limits	9	0	BC-A-22	candidate	
+BC-C-058	Webhooks v3 | Delivery exception hooks	Webhooks	7	1	BC-A-22	candidate	
+BC-C-059	App Marketplace | App Extensions | Apps & Integrations | Integrations	Apps and the App Marketplace	7	1	BC-A-23	candidate	
+BC-C-084	Third-Party Products | Third-Party Product Integration	Third-Party Products and their integration	5	1	BC-A-23	candidate	
+BC-C-063	MCP Server | Agentic checkout | AI discovery | Agentic Search	MCP server and agentic commerce	7	1	BC-A-24	candidate	
+BC-C-064	AI Features | BigAI | BigCommerce Companion | Conversational shopping | Ecommerce AI	AI features	5	1	BC-A-24	candidate	
+BC-C-062	Professional reporting tools | Reporting & analytics | Analytics | Big Open Data Solutions	Reporting and analytics	6	2	BC-A-25	candidate	
+BC-C-060	System Logs | Store logs	System logs and store logs	2	4	BC-A-26	candidate	
+BC-C-061	Staff accounts | Account Users	Staff accounts and control panel users	3	2	BC-A-26	candidate	
+BC-C-076	Staging environments | Staging Pro	Staging environments	4	2	BC-A-26	candidate	
+BC-C-077	BigCommerce mobile app | Mobile App Terms | Commerce Mobile Application	BigCommerce mobile app	4	2	BC-A-26	candidate	
+BC-C-081	Data Processing Addendum | Processor | Controller | Privacy Policy	Personal data processing roles	5	1	BC-A-27	candidate	
+BC-C-082	Data Transfer | International Data Transfer	Data transfer and storage location	9	2	BC-A-27	candidate	
+BC-C-083	Third-Party Subprocessors | Hosting Services	Subprocessors and hosting services	6	1	BC-A-27	candidate	
+BC-C-079	Contracting Entity | Commerce Entity | Governing Law	Contracting entity and governing law	10	1	BC-A-28	candidate	
+BC-C-080	Anti-Corruption, Export and Sanctions Compliance | Sanctions List	Anti-corruption, export and sanctions compliance	5	2	BC-A-29	candidate	
+BC-C-085	Acceptable Use Policy | Highly Regulated Products	Acceptable use and highly regulated products	4	2	BC-A-29	candidate	
+BC-C-088	Infringing Materials Protocol	Infringing materials	4	1	BC-A-29	candidate	
+BC-C-086	Store Terms | Stores and Materials | Your Materials | Your Users	Stores and merchant materials	5	1	BC-A-30	candidate	
+BC-C-087	Merchant-Client Terms | Agents	Agents acting for clients	4	1	BC-A-30	candidate	
+BC-C-048	Store Locale | Store Translations	Locales and translations	6	2	BC-A-31	candidate	
+BC-C-025	BigCommerce Payments | BigCommerce Payments by PayPal	BigCommerce Payments	10	1	BC-A-32	candidate	
+BC-C-007	Price Lists	Price lists	5	2	BC-A-33	candidate	
+BC-C-075	Geography	Geography (countries and states)	1	4	BC-A-34	candidate	
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	128	40		candidate	

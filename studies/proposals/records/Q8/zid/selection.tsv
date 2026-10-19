@@ -1,0 +1,98 @@
+concern_id	terms	description	statements	gaps	area_id	action	reason
+ZD-C-001	تفعيل زد باي; تفعيل الدفع الالكتروني; Activate Zid Payments; متطلبات تفعيل الدفع الالكتروني	Zid Pay activation / تفعيل زد باي	11	1	ZD-A-01	candidate	
+ZD-C-002	العمليات; العمليات والاسترداد ( لوحة التحكم الجديدة ); استرداد المبلغ للعميل; Refund Flexibility	Zid Pay transactions and refunds / العمليات والاسترداد	9	1	ZD-A-01	candidate	
+ZD-C-003	الإيداعات; كشف الحساب والإيداعات; Funds Collection; تحصيل المبالغ; Crystal-Clear Deposits	Zid Pay deposits and account statement / الإيداعات وكشف الحساب	13	3	ZD-A-01	candidate	
+ZD-C-004	الحسابات البنكية; الحسابات البنكية ( لوحة التحكم الجديدة )	Bank accounts / الحسابات البنكية	6	2	ZD-A-01	candidate	
+ZD-C-005	شبكات الدفع; Supported Payment Networks; Zid Payments gateway to accept Mada, Visa, and Mastercard; Enable Apple Pay for faster checkout	Zid Pay payment networks / شبكات الدفع	10	0	ZD-A-01	candidate	
+ZD-C-006	رسوم زد باي; رسوم العمليات; Transaction Fees; Fair and Clear Pricing	Zid Pay transaction fees / رسوم زد باي	8	2	ZD-A-01	candidate	
+ZD-C-007	charge back; Fraud; Fraud Shield; Fraud protection to prevent losses; احتجاز الأموال; مبلغ احتياطي	Zid Pay chargebacks, fraud and held funds / charge back والاحتيال واحتجاز الأموال	7	2	ZD-A-01	candidate	
+ZD-C-008	روابط الدفع; Quick Payment Links; payment_link	Payment links / روابط الدفع	3	2	ZD-A-01	candidate	
+ZD-C-009	مقدمي خدمات الدفع; مزود الخدمة; payment service providers; التعاقد من الباطن	Payment service providers behind Zid Pay / مقدمي خدمات الدفع	7	2	ZD-A-01	candidate	
+ZD-C-010	Zid Payments; Open APIs integration model; Merchant Activation; Direct payment; Embedded payment; Link Merchant Event; Payment Paid Event; Refund Event	Zid Payments Open APIs for payment service providers	8	2	ZD-A-01	candidate	
+ZD-C-037	الأنشطة المحظورة; Prohibited Activities	Zid Pay prohibited activities and sanctions / الأنشطة المحظورة	9	3	ZD-A-01	candidate	
+ZD-C-038	اجتياز التحقق من نفاذ; Verify your identity with Nafath	Nafath identity verification / التحقق من نفاذ	6	1	ZD-A-01	candidate	
+ZD-C-011	بوابات الدفع الأُخرى; باي موب Paymob; اموال باي amwal pay; بوابة الدفع تاب Tap	Other payment gateways / بوابات الدفع الأُخرى	11	1	ZD-A-02	candidate	
+ZD-C-012	طرق الدفع; List Payment Methods; Get Payment Options; Various Payment Methods; Advanced Payment Methods	Store payment methods / طرق الدفع	7	2	ZD-A-02	candidate	
+ZD-C-013	خدمات التقسيط; الدفع لاحقاً; Flexible Payments; Tamara; Tabby; MISPay; Emkan; Madfu	Instalment services (buy now, pay later) / خدمات التقسيط	8	1	ZD-A-02	candidate	
+ZD-C-014	الدفع عند الاستلام; خدمة الدفع عند التوصيل; Cash on Delivery; Block Cash on Delivery	Cash on delivery option / الدفع عند الاستلام	7	0	ZD-A-02	candidate	
+ZD-C-016	خدمة التحويل البنكي; الدفع بالتحويل البنكي; Bank Transfer Payment	Bank transfer option / خدمة التحويل البنكي	6	1	ZD-A-02	candidate	
+ZD-C-028	order.payment_status.update; Payment Status; Bulk Payment Status Update	Order payment status / حالة الدفع	4	2	ZD-A-02	candidate	
+ZD-C-017	محفظة زد; محفظة التاجر; Zid Wallet; Zid Electronic Wallet	Zid Wallet (merchant wallet) / محفظة زد	12	2	ZD-A-03	candidate	
+ZD-C-018	الاستقطاع للمحفظة	Wallet deduction from Zid Pay / الاستقطاع للمحفظة	6	0	ZD-A-03	candidate	
+ZD-C-020	الاشتراكات; Subscriptions; Subscription Fees; إدارة الاشتراك; Starter; Rise; Growth; Pro; Lite plan	Zid subscription plans and fees / الاشتراكات	7	1	ZD-A-04	candidate	
+ZD-C-021	المدفوعات والمشتريات; Payments and Purchases; third-party payment processor	Purchases from Zid and their payment processing / المدفوعات والمشتريات	4	2	ZD-A-04	candidate	
+ZD-C-023	تمويل زد; Zid Financing; Financing; جهة التمويل	Zid Financing / تمويل زد	10	2	ZD-A-05	candidate	
+ZD-C-109	Mazeed Marketplace; مزيد	Mazeed marketplace / مزيد	10	0	ZD-A-06	candidate	
+ZD-C-024	المستحقات المالية لمزيد; تحصيلات مزيد; الأحكام المالية	Mazeed collections and dues / المستحقات المالية لمزيد	11	0	ZD-A-06	candidate	
+ZD-C-110	Marketplaces; Sold on Amazon and Trendyol and Jahez; منصات البيع	Sales channels (marketplaces) / منصات البيع	13	1	ZD-A-07	candidate	
+ZD-C-030	شركة القدرة التقنية لتقنية المعلومات والاتصالات; Al-Qudrah Al-Taqniyah for Technology and Communication Company; Commercial Registration Number 1010365366; Governing Law and Dispute Resolution	Zid's contracting entity and governing law	9	3	ZD-A-08	candidate	
+ZD-C-036	ضوابط المتجر الإلكتروني; E-Commerce Store Regulations	E-commerce store regulations / ضوابط المتجر الإلكتروني	6	0	ZD-A-08	candidate	
+ZD-C-039	الصفحات القانونية	Store legal pages / الصفحات القانونية	5	1	ZD-A-08	candidate	
+ZD-C-040	سياسة الخصوصية; Privacy Policy	Privacy and personal data / سياسة الخصوصية	10	0	ZD-A-09	candidate	
+ZD-C-041	نقل البيانات عبر الحدود; THE DATA TRANSFER ACROSS THE BORDERS	Cross-border data transfer / نقل البيانات عبر الحدود	3	4	ZD-A-09	candidate	
+ZD-C-042	معالجة البيانات بالذكاء الاصطناعي; AI Data Processing	AI data processing / معالجة البيانات بالذكاء الاصطناعي	5	2	ZD-A-09	candidate	
+ZD-C-034	الأسواق; خاصية الأسواق	Markets / الأسواق	3	3	ZD-A-10	candidate	
+ZD-C-035	بيانات المتجر; تفاصيل النشاط التجاري; Business; KYC (Know Your Customer); third_store_business_read	Store business data and verification / بيانات المتجر	8	0	ZD-A-11	candidate	
+ZD-C-051	اعدادات الضريبة; ضريبة القيمة المضافة; Invoice & Tax Settings; Tax-Applicable Countries; Retrieve VAT Settings; Calculate and display VAT	Tax settings (VAT) / اعدادات الضريبة	8	0	ZD-A-12	candidate	
+ZD-C-052	اعدادات الفواتير; Invoice Printing	Invoice settings / اعدادات الفواتير	5	1	ZD-A-12	candidate	
+ZD-C-053	الربط مع منصة فاتورة ZATCA	ZATCA e-invoicing integration / الربط مع منصة فاتورة	6	1	ZD-A-12	candidate	
+ZD-C-054	List Order Credit Notes; Calculate Reverse Totals; Credit notes	Credit notes / إشعارات الدائن	6	2	ZD-A-12	candidate	
+ZD-C-060	زد لوجستيات; زد لوجيستك; زد شب; الشحن المباشر; ZidShip; Zid Logistics: One Contract for 35 Carriers	Zid Logistics and direct shipping / زد لوجستيات وزد شب	14	1	ZD-A-13	candidate	
+ZD-C-015	خدمة الدفع عند الاستلام (COD); تحصيل الدفع عند الاستلام; Cash on Delivery Collection	COD collection through Zid shipping / تحصيل الدفع عند الاستلام	7	3	ZD-A-13	candidate	
+ZD-C-061	شركات الخدمات اللوجستية الطرف الثالث; Shipping apps; Shipping and fulfillment company; الشحن والتخزين	Shipping apps and third-party logistics companies	10	1	ZD-A-13	candidate	
+ZD-C-062	List Store Shipping Methods; delivery-options; طرق الشحن; shipping.read	Store shipping methods / طرق الشحن	4	3	ZD-A-13	candidate	
+ZD-C-063	قيود الشحن و الدفع; قيود الدفع	Shipping and payment restrictions / قيود الشحن و الدفع	4	2	ZD-A-13	candidate	
+ZD-C-083	Products; Managing Products; Product Variants; Product Images	Products / المنتجات	6	2	ZD-A-14	candidate	
+ZD-C-084	Product Categories; category.create	Product categories / التصنيفات	6	2	ZD-A-14	candidate	
+ZD-C-085	Inventories; Product Stock; Inventory Management	Inventory and stock / المخزون	11	2	ZD-A-14	candidate	
+ZD-C-087	Product Availability Notifications; Product Availability Notification	Product availability notifications	5	2	ZD-A-14	candidate	
+ZD-C-043	Digital Products; Digital Vouchers; المنتجات الرقمية; Downloadables	Digital products and vouchers / المنتجات الرقمية	5	3	ZD-A-14	candidate	
+ZD-C-100	خصائص الطلبات والمنتجات; Custom Fields	Order and product properties / خصائص الطلبات والمنتجات	4	2	ZD-A-14	candidate	
+ZD-C-080	Orders; Order Tags; Custom Order Status; Draft Orders	Orders / الطلبات	11	2	ZD-A-15	candidate	
+ZD-C-081	Reverse Orders; Full & Partial Returns; Returned Orders	Reverse orders and returns	9	2	ZD-A-15	candidate	
+ZD-C-101	خاصية الإهداء	Gifting / خاصية الإهداء	1	4	ZD-A-15	candidate	
+ZD-C-106	Marketing Tools; Marketing & Growth Tools; أدوات التسويق والنمو	Marketing tools / أدوات التسويق	4	3	ZD-A-16	candidate	
+ZD-C-088	Coupons; Add Discount Coupons; Discounts; Card Discount	Coupons and discounts	6	2	ZD-A-16	candidate	
+ZD-C-089	Bundle Offers; Add Dynamic Bundle	Bundle offers	7	1	ZD-A-16	candidate	
+ZD-C-090	Loyalty Program; Loyalty Programs	Loyalty program	6	2	ZD-A-16	candidate	
+ZD-C-082	Abandoned Carts; abandoned_cart.created	Abandoned carts / السلات المتروكة	9	2	ZD-A-16	candidate	
+ZD-C-112	Zid Voice; زد فويس	Zid Voice	7	2	ZD-A-16	candidate	
+ZD-C-091	Customers; Customer Tags; Customer Information	Customers / العملاء	8	1	ZD-A-17	candidate	
+ZD-C-086	Product Reviews; Product Questions & Answers; Review Management	Product reviews and questions	7	1	ZD-A-17	candidate	
+ZD-C-092	Customer Portal Tickets; بوابة خدمة عملاء متاجر زد الذاتية; Zid Stores' Customer Complaints	Customer self-service portal / بوابة خدمة العملاء الذاتية	6	2	ZD-A-17	candidate	
+ZD-C-105	Reports & Analytics; التقارير والتحليلات	Reports and analytics / التقارير والتحليلات	8	2	ZD-A-18	candidate	
+ZD-C-113	E-store; Store Design; تصميم المتجر	Online store and store design / المتجر الإلكتروني وتصميم المتجر	9	2	ZD-A-19	candidate	
+ZD-C-093	Blogs	Blogs	7	1	ZD-A-19	candidate	
+ZD-C-102	خاصية إعادة توجيه الروابط	URL redirects / خاصية إعادة توجيه الروابط	2	3	ZD-A-19	candidate	
+ZD-C-076	سوق ثيمات زد; سوق الثيمات; Themes; Theme Market	Theme Market and themes / سوق ثيمات زد	6	1	ZD-A-20	candidate	
+ZD-C-070	سوق تطبيقات زد; Zid App Market; App Market categories	Zid App Market / سوق تطبيقات زد	11	1	ZD-A-21	candidate	
+ZD-C-022	App Subscription Events; Subscription Details; Update Usage-Based Charges; Partner Payouts; Payouts	App Market subscriptions and partner payouts	11	1	ZD-A-21	candidate	
+ZD-C-073	Embedded Apps; embedded_apps_tokens_write	Embedded apps	5	0	ZD-A-21	candidate	
+ZD-C-071	Authorization; OAuth 2.0; Scopes; Zid App Activation & OAuth Policy	OAuth authorization and app scopes	10	0	ZD-A-22	candidate	
+ZD-C-072	Webhooks; Webhook Health Tracking; Create Webhook	Webhooks	7	0	ZD-A-22	candidate	
+ZD-C-074	Private apps; API Access; خدمة الربط المباشرة (APIs); Connect your store with external systems (via API)	Private apps and direct API access	8	1	ZD-A-22	candidate	
+ZD-C-075	API's; Authentication; Checkout; Storefront	Storefront APIs	3	3	ZD-A-22	candidate	
+ZD-C-108	POS (Point of Sales); زد كاشير; Zid POS (Cashier)	Zid POS / زد كاشير	9	2	ZD-A-23	candidate	
+ZD-C-097	تنبيهات زد; إشعارات الفريق; رسائل حالات الطلب; Team Notifications; OneSignal Store Settings	Notifications and order status messages	5	2	ZD-A-24	candidate	
+ZD-C-098	تفعيل اسم المرسل; تجديد اسم المرسل; Sender Name	Sender name / اسم المرسل	7	1	ZD-A-24	candidate	
+ZD-C-107	Whatsapp; واتساب زد; Free WhatsApp (Basic Plan)	WhatsApp / واتساب زد	10	0	ZD-A-24	candidate	
+ZD-C-077	Account; Me; Store; Retrieve Store Manager Profile; اعدادات الحساب; Account Details	Store account and profile	7	1	ZD-A-25	candidate	
+ZD-C-094	فريق العمل; مجموعات الفريق; Add Team Members; User Roles and Permissions	Team members and permissions / فريق العمل	5	1	ZD-A-25	candidate	
+ZD-C-095	اعدادات الامان; Security Settings	Security settings / اعدادات الامان	5	1	ZD-A-25	candidate	
+ZD-C-096	شراء نطاق جديد; قائمة النطاقات; Custom Domain Linking; zid.store	Domains / النطاقات	6	1	ZD-A-25	candidate	
+ZD-C-104	اوقات العمل الرسمية	Working hours / اوقات العمل الرسمية	1	4	ZD-A-25	candidate	
+ZD-C-103	تفعيل Google maps	Google Maps / تفعيل Google maps	1	4	ZD-A-25	candidate	
+ZD-C-099	إعدادات صفحة إتمام عملية الشراء	Checkout page settings / إعدادات صفحة إتمام عملية الشراء	2	3	ZD-A-25	candidate	
+ZD-C-044	طلبات التصدير	Export requests / طلبات التصدير	4	1	ZD-A-25	candidate	
+ZD-C-025	وكيل زد (Zid Agent); Zid Agent	Zid Agent / وكيل زد	5	1	ZD-A-26	candidate	
+ZD-C-026	خدمة المميزات الإضافية VAS; Value Added Services (VAS)	Value added services / خدمة المميزات الإضافية VAS	4	2	ZD-A-26	candidate	
+ZD-C-115	زد نمو	Zid Growth / زد نمو	5	3	ZD-A-26	candidate	
+ZD-C-116	تطبيق الجوال	Store mobile app / تطبيق الجوال	9	0	ZD-A-27	candidate	
+ZD-C-111	ZID Assurance; ضمان زد	Zid Assurance / ضمان زد	5	0	ZD-A-28	candidate	
+ZD-C-114	Live Chat Support; Ticketing & Chat System; 24/7 priority support	Merchant support	4	3	ZD-A-29	candidate	
+ZD-C-050	لغة وعملات المتجر; اللغات والعملات; خاصية العملات; Geo-Based Currency Settings; Localization	Store languages and currencies / لغة وعملات المتجر	8	2	ZD-A-30	candidate	
+ZD-C-031	About Zid Egypt; حول زد مصر; Zid Egypt	Zid Egypt / زد مصر	6	3	ZD-A-31	candidate	
+ZD-C-032	ZID is available in; زد متاحة في; Egypt; UAE; Kuwait; Oman; Syria	Countries Zid serves	3	3	ZD-A-31	candidate	
+ZD-C-033	Countries and Cities; List Store Operating Countries; countries_cities.read	Store country, operating countries and cities	6	2	ZD-A-31	candidate	
+ZD-C-019	محفظة العميل والكاش باك; Customer Wallets; Cashback Rules; Zid Wallet (customer payment option on the compare table)	Customer wallet and cashback / محفظة العميل والكاش باك	6	1	ZD-A-32	candidate	
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	158	19		candidate	

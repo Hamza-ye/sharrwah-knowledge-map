@@ -144,6 +144,9 @@ class Sources:
         """The texts of every capture of the address: a quote is found if any capture holds it, since an earlier
         capture may hold an empty shell where a later one holds the page."""
         key = url.split("#")[0]
+        if key not in self.manifest:            # the same page under its .md endpoint, or with or without a slash
+            base = key[:-3] if key.endswith(".md") else key.rstrip("/")
+            key = next((k for k in (base, base + ".md", base + "/") if k in self.manifest), key)
         if key not in self.manifest:
             return None, "not captured"
         texts, results = [], []
