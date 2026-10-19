@@ -22,7 +22,7 @@
 ### Organization, stores and the admin
 - An Organization holds stores. On Shopify Plus, expansion stores are "additional .myshopify.com stores that fall under the same organization and contract". Dev stores are a further kind of store. Q8-SH-K1254; Q8-SH-K1256; Q8-SH-046; Q8-SH-051
 - The admin's sections include Plan, Apps, Sales channels, Markets, Banking, Growth and Analytics. Q8-SH-K1312; Q8-SH-K2163; Q8-SH-K2062; Q8-SH-K1928; Q8-SH-K1791; Q8-SH-K2042; Q8-SH-K2117
-- On store capture-plus (observed 7 October 2026), the admin's navigation showed Home, Orders, Products, Customers, Growth, Discounts, Content, Markets and Analytics. Under Sales channels it showed Online Store, Agentic and Shop, and under Apps an installed app. Q8-SH-104
+- On store capture-plus (observed 7 October 2026), the admin's navigation showed, in this order, Home, Orders, Products, Customers, Growth, Discounts, Content, Markets, Analytics, Sales channels, Online Store, Agentic, Shop, Apps and Capture app. Q8-SH-104
 - The same store's settings list showed General, Plan, Payments, Checkout, Customer accounts, Shipping and delivery, Taxes and duties, Locations, Apps, Sales channels, Domains, Customer events, Notifications, Metafields and metaobjects, Languages, Customer privacy and Policies. Q8-SH-103
 
 ### Sales channels, Markets and POS
@@ -51,7 +51,7 @@
 - Custom Level 2 PII apps need the Grow plan or higher. Stores on any plan can use public App Store apps that contain functions. Q8-SH-035; Q8-SH-K2213
 - Shopify Plus organizations can have ten stores on their contract with no additional cost. Expansion stores share no data by default. Apps are billed per store, and theme licenses are needed for each store. The Plus terms and the 3-year renewal flow are shown only in a Plus store's admin. Q8-SH-050; Q8-SH-047; Q8-SH-048; Q8-SH-049; Q8-SH-K2636; Q8-SH-G0245; Q8-SH-G0246
 - On store capture-plus (observed 7 October 2026), the Plan page's Plan details showed "Plus" and "Development store", with a link to the Plus terms. The PlusContractTerms answer on that page was `"currentContractTerms":null`, so the terms themselves were not shown. Q8-SH-101; Q8-SH-102; Q8-SH-G0245
-- On store capture-grow (observed 2 October 2026), the Plus trial's review page said the store "will automatically roll onto a Plus term" at the end of the trial. It also said: "Select between a 1- or 3-year term once your 2 month trial ends." Q8-SH-106; Q8-SH-107; Q8-SH-G0246
+- On store capture-grow (observed 2 October 2026), the Plus trial's review page said the store "will automatically roll onto a Plus term" at the end of the trial. It also said: "Select between a 1- or 3-year term once your 2 month trial ends." Q8-SH-105; Q8-SH-106; Q8-SH-G0246
 - Some Shopify for enterprise services are marked as dependent on contract terms, which were not found. Q8-SH-N02
 
 ### By place
