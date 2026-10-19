@@ -1,0 +1,448 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Execute Payment Request
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /{ProviderUrl}/payments:
+    post:
+      summary: Execute Payment Request
+      deprecated: false
+      description: &gt;-
+        This is the request that is going to be sent from Zid Payments to you as
+        a payment provider for creating / executing payments.
+      tags:
+        - Default module/Payment API/Payment
+      parameters:
+        - name: ProviderUrl
+          in: path
+          description: &gt;-
+            The base URL of the payment provider’s API. ZidPay will use this URL
+            to send requests such as token generation, payment execution,
+            refunds, and Apple Pay registration. This should point to the root
+            domain or environment-specific endpoint provided by the payment
+            provider.
+          required: true
+          example: https://api.paymentprovider.com
+          schema:
+            type: string
+        - name: Authorization
+          in: header
+          description: &gt;-
+            All secured endpoints require an Authorization header using Basic
+            Authentication. The value should be the secret key provided by the
+            payment provider during merchant onboarding.
+          required: true
+          example: 'Authorization: Basic secret_key'
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              title: CreatePaymentRequestDto
+              description: &gt;-
+                Request body for executing a payment via ZidPay to the payment
+                provider.
+              properties:
+                amount:
+                  type: integer
+                  description: &gt;-
+                    Total payment amount in the smallest currency unit. For SAR,
+                    amount is provided in Halala (1 SAR = 100 Halalas).
+                  examples:
+                    - 24900
+                currency:
+                  type: string
+                  description: Currency code in ISO 4217 format.
+                  examples:
+                    - SAR
+                callbackUrl:
+                  type: string
+                  description: &gt;-
+                    The URL to which the provider should redirect or send
+                    confirmation after a successful payment.
+                  examples:
+                    - &gt;-
+                      https://zidpay.org/api/payment/98bbb6fb-bbd7-41cb-8d5f-f8854b13c9b1/ThirdPartyCallback
+                errorUrl:
+                  type: string
+                  description: &gt;-
+                    The URL to which the provider should redirect or notify in
+                    case of payment failure.
+                  examples:
+                    - &gt;-
+                      https://zidpay.org/api/payment/98bbb6fb-bbd7-41cb-8d5f-f8854b13c9b1/ThirdPartyCallbackError
+                source:
+                  type: object
+                  title: SourceDto
+                  description: &gt;-
+                    Contains the token type and value for processing the
+                    payment.
+                  properties:
+                    type:
+                      type: string
+                      description: |-
+                        Type of token being used for the transaction.
+                        “token” =&gt; For card payments
+                        “applepay" =&gt; For Apple Pay 
+                      enum:
+                        - token
+                        - applepay
+                      examples:
+                        - token
+                    token:
+                      type: string
+                      description: &gt;-
+                        The actual token value obtained from direct, embedded,
+                        or Apple Pay flow.
+                      examples:
+                        - tok_1Hh1XYZabc123456
+                  required:
+                    - type
+                    - token
+                  x-apidog-orders:
+                    - type
+                    - token
+                  x-apidog-ignore-properties: []
+                metadata:
+                  type: object
+                  description: &gt;-
+                    Optional metadata for logging purposes only. This does not
+                    affect payment processing.
+                  properties: {}
+                  x-apidog-orders: []
+                  examples:
+                    - PaymentReferenceId: 98bbb6fb-bbd7-41cb-8d5f-f8854b13c9b1
+                  x-apidog-ignore-properties: []
+              required:
+                - amount
+                - currency
+                - callbackUrl
+                - errorUrl
+                - source
+              x-apidog-orders:
+                - amount
+                - currency
+                - callbackUrl
+                - errorUrl
+                - source
+                - metadata
+              x-apidog-ignore-properties: []
+            example:
+              amount: 24900
+              currency: SAR
+              callbackUrl: &gt;-
+                https://zidpay.org/api/payment/98bbb6fb-bbd7-41cb-8d5f-f8854b13c9b1/ThirdPartyCallback
+              errorUrl: &gt;-
+                https://zidpay.org/api/payment/98bbb6fb-bbd7-41cb-8d5f-f8854b13c9b1/ThirdPartyCallbackr
+              source:
+                type: token
+                token: '###'
+              metadata:
+                PaymentReferenceId: 98bbb6fb-bbd7-41cb-8d5f-f8854b13c9b1
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                title: PaymentExecutionResponse
+                description: &gt;-
+                  Response body returned by the payment provider after executing
+                  a payment request.
+                properties:
+                  id:
+                    type: string
+                    description: Payment ID assigned by the provider.
+                    examples:
+                      - pay_abc123xyz789
+                  status:
+                    type: string
+                    description: Current payment status.
+                    enum:
+                      - paid
+                      - pending
+                    examples:
+                      - paid
+                  amount:
+                    type: integer
+                    description: &gt;-
+                      The amount processed in the smallest currency unit (e.g.
+                      Halala).
+                    examples:
+                      - 24900
+                  currency:
+                    type: string
+                    description: Currency code in ISO 4217 format.
+                    examples:
+                      - SAR
+                  transactionUrl:
+                    type: string
+                    description: &gt;-
+                      Redirect URL for 3D Secure authentication or additional
+                      payment steps.
+                    examples:
+                      - &gt;-
+                        https://secure.paymentprovider.com/3ds/redirect?txn_id=abc123
+                required:
+                  - id
+                  - status
+                  - amount
+                  - currency
+                  - transactionUrl
+                x-apidog-orders:
+                  - id
+                  - status
+                  - amount
+                  - currency
+                  - transactionUrl
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: OK
+        '400':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                title: FailedResponseModel
+                description: &gt;-
+                  Standard error response returned by the payment provider in
+                  case of failure.
+                properties:
+                  message:
+                    type: string
+                    description: A human-readable summary of the error.
+                    examples:
+                      - Payment authorization failed due to insufficient funds.
+                  errors:
+                    type: array
+                    description: &gt;
+                      Required in case it’s a payment gateway error (e.g.
+                      insufficient funds, expired card, declined transaction ..
+                      etc ) for payments that are attempted to be captured at
+                      this point (i.e. no 3d-secure step). In this case the
+                      error should be an error code from this list:
+                      https://docs.zid.sa/doc-1042597 
+
+
+                      Otherwise it’s optional, and can contain additional error
+                      data or messages.
+                    items:
+                      type: string
+                      examples:
+                        - ZDP001
+                    examples:
+                      - - ZDP001
+                        - ZDP004
+                required:
+                  - message
+                  - errors
+                x-apidog-orders:
+                  - message
+                  - errors
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Bad Request
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '2':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '3':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Payment API/Payment
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-17112105-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>
