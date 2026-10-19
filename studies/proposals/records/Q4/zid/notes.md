@@ -15,17 +15,27 @@ All reading was of held captures in `sharrwah-knowledge-map@7d4a58f6c0d717982322
 
 ZD-C-011 (other gateways) was set aside at first and added after reading the Salla account, whose [1] has a point on gateways the merchant connects; the copy was re-run.
 
+## Searches added after the brief was fixed
+
+The first per-sentence searches left out the terms of 33 account points. Following the fixed item 8, the points and their terms were listed in the scratch directory (`left-out-points.md`), and one more search was run for each sentence group whose search had left them out. All read 2026-10-19, held only; the commit printed was `dcabee220a75fb21b48e889f271b9dcf71287532`.
+
+- [1] and [5]: `"PayPal" "باي بال" "stc pay" "اس تي سي" "كاشير" "مرسول" "هنقرستيشن" "وسيط" "الإمارات" "الكويت" "app" "apps" --with "الدفع عند الاستلام" "نقد" "cash on delivery" "COD" "طرق الدفع" --max 10`: read help.zid.sa/zid-pos-app/ (held in run 20261013T003518Z-s01-a2-sources), docs.zid.sa/-user-roles-and-permissions-604944m0.md, help.zid.sa/category/zid-pay/, help.zid.sa/gcc-merchants/.
+- [3]: `"تعليمات" "instruction" "instructions" "إثبات الدفع" "دفع جزئي" "partial payment" "partial payments" "مسودة" "draft order" "draft orders" "محفظة العميل" "cashback" "الدرج" "cash drawer" "cash drawers" "تقارير الشحن" "رسالة تأكيد" "إلغاء الطلب" --max 10`: read help.zid.sa/customer-wallet/; credit-debit-notifications and change-order-status again.
+- [4]: `"إلغاء البوليصة" "إلغاء بوليصة" "B2B" "error code" "error codes" "انتهاء الاشتراك" "Interac" "email transfer" "email transfers" --max 10`: read docs.zid.sa/get-payment-options-43307434e0.md.
+
+They added statements Q4-ZD-033 to Q4-ZD-040 and rows Q4-ZD-N14 to Q4-ZD-N20. The wallet-tab point (Salla Q4-SA-A0002) had no term of its own in these searches; its row Q4-ZD-N16 gives the [5] search, which carried "محفظة".
+
+Citations' `access_path` is now `rendered` for capture text files and `raw` for the Terms page's `raw.html`.
+
 ## Account points not checked
 
-Rows were recorded for 13 points. These account points were not checked and have no row:
+20 rows are recorded. These points come past the 20th row in item 10's order and were not checked:
 
-- Shopify [1]/[5]: Q4-SH-045, Q4-SH-046 (COD in Italy as a custom method, and COD apps) beyond what Q4-ZD-N07 covers.
-- Shopify [3]: Q4-SH-006, Q4-SH-009 (payment instructions); Q4-SH-011 (mark as paid not captured again); Q4-SH-026 (draft order amount received); Q4-SH-031, Q4-SH-032 (cancelling unpaid fulfilled orders).
-- Shopify [4]: Q4-SH-027 (email money transfers), Q4-SH-029 (B2B drafts), Q4-SH-043 (error codes).
-- Salla [1]: Q4-SA-034, Q4-SA-035 (Salla Point custom methods); Q4-SA-K1626, Q4-SA-K1627 (PayPal, stc pay); Q4-SA-A0002 (wallet tabs).
-- Salla [3]: Q4-SA-016, Q4-SA-K0563 (proof of partial payment); Q4-SA-063 (COD confirmation message); Q4-SA-032 (Salla Point cash orders); Q4-SA-010, Q4-SA-053 (قيد الاسترجاع, cashback); Q4-SA-042 to Q4-SA-044 (drawer); Q4-SA-051, Q4-SA-052, Q4-SA-064, Q4-SA-065 (COD in reports); Q4-SA-036, Q4-SA-037.
-- Salla [4]: Q4-SA-012 (label cancellation), Q4-SA-040 (Salla Point lapsed card subscription).
 - Salla [5]: Q4-SA-K1602, Q4-SA-P0150 (COD tracking in the UAE and Kuwait).
+- Shopify [3]: Q4-SH-011 (mark as paid not captured again; confirmation email); Q4-SH-032 (cancelling a fulfilled unpaid order).
+- Salla [3]: Q4-SA-063 (COD confirmation message).
+- Shopify [4]: Q4-SH-027 (email money transfers), Q4-SH-029 (B2B drafts).
+- Salla [4]: Q4-SA-012 (label cancellation), Q4-SA-040 (Salla Point after the card subscription lapses).
 
 ## Problems with the method
 
