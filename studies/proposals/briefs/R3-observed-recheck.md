@@ -121,3 +121,17 @@ These add to `R3-recording.md`'s rules 1 to 12, which hold.
 - Run nothing from inside `evidence/` or the observed repositories, and never change directory into them, even for `grep`, `wc` or `awk`. Read them only.
 - Write working copies only in your scratch directory.
 - Don't commit.
+
+## The second re-check: observed-sh's step text from saved HTML (Shopify only)
+
+**When the message that started you says so,** you re-check your folder against one more held source only: the text observed-sh extracted from the saved HTML of steps that had no `text.txt`, in `derived/step-text-from-html/`, at the commit the message names. Read observed-sh's `docs/READING.md` at that commit for the folder, and the folder's `meta.json`, before anything else. Everything above holds, except:
+- **What you read:** only the folder's texts and its index, found through the corpus search or the index, and the runs' `actions.jsonl` for each step's address and title. Don't search the other corpora again.
+- **Your open items:**
+  - every row of `not-found.tsv`;
+  - every copied gap `account.md` cites;
+  - every row routed to the founder or to either (`who_can`);
+  - if your question's draft is written (`studies/proposals/drafts/<question>/draft.md`, which you may read): each Shopify id the draft cites. For each, read the id with `record_ids.py`, and look in the new texts for the same flow, page or setting. Where they show something that changes or adds to what the id says, record it.
+- **Text the folder's `meta.json` marks as hidden** was in the page's HTML but not shown on it. Record it only with that said in the statement's `note`, and never as what the page showed.
+- **Citing:** `source` is `observed-sh@<the commit the message names>:<the text file's path>`, and `locator` the run, the step and the frame, if any.
+- **For the draft:** in `notes.md`'s new section, under "For the draft", list each draft id the new texts change or add to, with the new statement ids and one plain line on what changed. Don't edit the draft.
+- **Your new section** in `notes.md` is headed `## Re-check against the step text from saved HTML, <date>`.
