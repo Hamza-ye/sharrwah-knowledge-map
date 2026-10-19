@@ -61,7 +61,7 @@ You are one agent with one short task: one question, on one platform, as a check
     - each point but "goes beyond" names the account points it is sorted against (item 6);
     - each point ends with your own folder's ids that it rests on: copy ids, statement ids, or for "not in what was read" the `nf_id` or copied gap id. A point resting on an `absent` row is labelled `- **not in what was read** (absent):`;
     - every not-found row you record is cited by a point;
-    - at most about 800 words, not counting ids.
+    - at most about 1,200 words, not counting ids.
 13. **Before you finish,** run the checker with `--check`: `python3 -I method/check_proposals.py records <question> <platform> --check`.
 
 Everything else in the recording brief holds, including the quotes, citations and files.

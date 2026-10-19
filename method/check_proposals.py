@@ -339,7 +339,7 @@ def check_account(d, q, code, known, checking=False, nf_ids=()):
         for nid in sorted(set(nf_ids) - cited_nf):
             err("account.md", nid, "a not-found row that no point cites")
     words = len(re.findall(r"\w+", any_id.sub("", text)))     # ids, of any platform, aren't words
-    if words > (900 if checking else 1800):
+    if words > (1300 if checking else 1800):
         err("account.md", "", f"{words} words, past the brief's length", "warning")
 
 
