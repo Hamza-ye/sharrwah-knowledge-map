@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 19 October 2026, 00:19 UTC.
+**Updated:** 19 October 2026, 00:24 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -89,7 +89,7 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **Re-sized at the sample** (`sizing.md`, its last section): agents about 1.62 billion (221 measured), the coordinator about 0.33 billion, together about 1.95 billion. The founder hears it in the next message.
 
 **Running: step R3, recording by question.** The in-depth runs' selections are written (commit `f7b6162`). They run in batches, at `medium`, each started from `briefs/R3-recording.md` with the pointers in `briefs/R3-starting-messages.md`.
-- **Done:** 8 of the 21 in-depth runs, each checked with no issues, its live pages captured, and its cost in `costs.tsv`: 9.5 to 18.7 million each, 0.10 to 0.29 per new statement.
+- **Done:** 13 of the 21 in-depth runs, each checked with no issues, its live pages captured, and its cost in `costs.tsv`: 6.9 to 18.7 million each, 0.10 to 0.29 per new statement.
 - **Running and not yet started:** as listed under "If the work was interrupted" below. About six run at once.
 - **Tool and brief fixes from the runs' notes:** the quote checker reads every capture of a page; the checker doesn't count ids as words, and takes a bold subheading as no point; the brief counts a table's rows as one statement toward the cap, says how to cite a page held only in a fetch archive, and says not to nest lists.
 - **Next:**
@@ -388,10 +388,10 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 - on 18 October 2026 at about 23:35 UTC, the session limit, until 19 October 00:00 UTC. It stopped five of R3's first six runs. All five were resumed just after midnight, each from its own transcript, and finished.
 
-**Agents running when last checked (19 October 2026, 00:19 UTC):** R3's in-depth recording runs, each in `studies/proposals/records/<question>/<platform>/`.
-- **Running:** Q3 on Shopify `a73125e1a7fdbf9b5`; Q4 on Shopify `a42eed47eb7a5454e`; Q4 on Salla `a1b6469bcc6aaf4f0`; Q5 on Shopify `a1c7948a2f678f736`; Q5 on Salla `abbad4da96cb1dd89`; Q5 on BigCommerce `aa850d94c56bad8f8`.
-- **Done and committed:** Q1 on Shopify, Salla and BigCommerce; Q2 on Shopify, Salla and WooCommerce; Q3 on Salla (the sample) and Zid.
-- **Not yet started:** Q6 on Shopify, Salla and Zid; Q7 on Shopify and Zid; Q8 on Shopify and WooCommerce. Their selections are written; each starts from `briefs/R3-recording.md` with the pointers in `briefs/R3-starting-messages.md`.
+**Agents running when last checked (19 October 2026, 00:24 UTC):** R3's in-depth recording runs, each in `studies/proposals/records/<question>/<platform>/`.
+- **Running:** Q5 on BigCommerce `aa850d94c56bad8f8`; Q6 on Shopify `a50620a580214aefe`, Salla `a47641e3be475f3ea`, Zid `a72b87ec3a338e707`; Q7 on Shopify `a44b96314ef10d95b`, Zid `a80fe978fa7358456`.
+- **Done and committed:** Q1 on Shopify, Salla and BigCommerce; Q2 on Shopify, Salla and WooCommerce; Q3 on Shopify, Salla (the sample) and Zid; Q4 on Shopify and Salla; Q5 on Shopify and Salla.
+- **Not yet started:** Q8 on Shopify and WooCommerce. Their selections are written; each starts from `briefs/R3-recording.md` with the pointers in `briefs/R3-starting-messages.md`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. **On again** from 21:01 UTC on 18 October 2026, while step R1 runs. Pause it when no agent runs. Delete it when the founder asks.
 
