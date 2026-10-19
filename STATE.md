@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 19 October 2026, 00:30 UTC.
+**Updated:** 19 October 2026, 00:48 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -89,13 +89,13 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **Re-sized at the sample** (`sizing.md`, its last section): agents about 1.62 billion (221 measured), the coordinator about 0.33 billion, together about 1.95 billion. The founder hears it in the next message.
 
 **Running: step R3, recording by question.** The in-depth runs' selections are written (commit `f7b6162`). They run in batches, at `medium`, each started from `briefs/R3-recording.md` with the pointers in `briefs/R3-starting-messages.md`.
-- **Done:** 14 of the 21 in-depth runs, each checked with no issues, its live pages captured, and its cost in `costs.tsv`: 6.9 to 18.7 million each, 0.10 to 0.29 per new statement.
-- **Running and not yet started:** as listed under "If the work was interrupted" below. About six run at once.
+- **All 21 in-depth runs are done** (commit `144e2b6`): 1,664 new statements, each record passing the checker with no issues, every cited live page captured in the language it was read in. They cost 267.7 million tokens, the sample included: about 0.16 million per new statement, and 12.7 million a run, against 390 million planned.
+- **Running and not yet started:** as listed under "If the work was interrupted" below.
 - **Tool and brief fixes from the runs' notes:** the quote checker reads every capture of a page; the checker doesn't count ids as words, and takes a bold subheading as no point; the brief counts a table's rows as one statement toward the cap, says how to cite a page held only in a fetch archive, and says not to nest lists.
 - **Next:**
   1. as each run ends: `check_proposals.py records`, capture the live pages it cites (with the language it read them in), measure it, commit;
-  2. the next batches: Q3 on Shopify and Zid; Q4 on Shopify and Salla; Q5 on Shopify, Salla and BigCommerce; Q6 on Shopify, Salla and Zid; Q7 on Shopify and Zid; Q8 on Shopify and WooCommerce;
-  3. once a question's in-depth runs are done: its checking runs, after the checking brief is read once more;
+  2. the 19 checking runs, once the checking brief's last read is done and its findings fixed: Q1 on Zid and WooCommerce; Q2 on Zid and BigCommerce; Q3 on WooCommerce and BigCommerce; Q4 on Zid, WooCommerce and BigCommerce; Q5 on WooCommerce and Zid; Q6 on WooCommerce and BigCommerce; Q7 on Salla, WooCommerce and BigCommerce; Q8 on Salla, Zid and BigCommerce;
+  3. when recording ends: the founder's capture list, gathered from the not-found rows routed to the founder;
   4. record the founder's marks in `founder-decisions.tsv` when they come, and carry them into `areas.tsv`.
 
 **Agents' effort** is set by step from 13 October 2026 (`PLAN.md` section 11):
@@ -388,10 +388,10 @@ Agents started earlier keep their effort.
 - on 17 October 2026 at about 14:40 UTC, the session limit, until 16:00 UTC. It stopped pilot phase B's re-check and Stage 1's check of the entry's facts as they started. Both were resumed at 16:02 UTC.
 - on 18 October 2026 at about 23:35 UTC, the session limit, until 19 October 00:00 UTC. It stopped five of R3's first six runs. All five were resumed just after midnight, each from its own transcript, and finished.
 
-**Agents running when last checked (19 October 2026, 00:30 UTC):** R3's in-depth recording runs, each in `studies/proposals/records/<question>/<platform>/`.
-- **Running:** Q6 on Shopify `a50620a580214aefe`, Salla `a47641e3be475f3ea`, Zid `a72b87ec3a338e707`; Q7 on Shopify `a44b96314ef10d95b`, Zid `a80fe978fa7358456`; Q8 on Shopify `ac56fa743ec86ec67`; and the checking brief's last read before checking runs start, `a13a7a6b457730f91`, at `max`, writing `studies/proposals/checks/R3-checking-brief-read.md`.
-- **Done and committed:** Q1 on Shopify, Salla and BigCommerce; Q2 on Shopify, Salla and WooCommerce; Q3 on Shopify, Salla (the sample) and Zid; Q4 on Shopify and Salla; Q5 on Shopify, Salla and BigCommerce.
-- **Not yet started:** Q8 on WooCommerce. Their selections are written; each starts from `briefs/R3-recording.md` with the pointers in `briefs/R3-starting-messages.md`.
+**Agents running when last checked (19 October 2026, 00:48 UTC):** R3's in-depth recording runs, each in `studies/proposals/records/<question>/<platform>/`.
+- **Running:** the checking brief's last read before checking runs start, `a13a7a6b457730f91`, at `max`, writing `studies/proposals/checks/R3-checking-brief-read.md`.
+- **Done and committed:** all 21 in-depth recording runs.
+- **Not yet started:** the 19 checking runs. Their selections are written; each starts from `briefs/R3-checking.md` with the pointers in `briefs/R3-starting-messages.md`, once the brief's last read is done and its findings fixed.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. **On again** from 21:01 UTC on 18 October 2026, while step R1 runs. Pause it when no agent runs. Delete it when the founder asks.
 
