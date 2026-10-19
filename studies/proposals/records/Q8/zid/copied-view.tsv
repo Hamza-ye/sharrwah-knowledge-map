@@ -1,0 +1,287 @@
+copy_id	identifier	statement	scope
+Q8-ZD-K0002	المدفوعات > تفعيل الدفع الالكتروني	ابدأ بتفعيل الدفع الإلكتروني عبر التوجه إلى القائمة الجانبية واختيار المدفوعات و بعد ذلك ، قم بالضغط على ايقونة تفعيل الدفع الالكتروني	
+Q8-ZD-K0003	متطلبات تفعيل الدفع الالكتروني	لإتاحة خيار الدفع الإلكتروني في المتجر يتطلب تزويد بوابة الدفع بمتطلبات التفعيل حسب الكيان التجاري (فرد – شركة – مؤسسة) ليتم اعتماد الحساب لدى بوابة الدفع.	متطلبات تفعيل الدفع الالكتروني للسعودية
+Q8-ZD-K0004	الشروط العامة	يمكن فقط للشركات، والمؤسسات، والأشخاص، والمنظمات المسموح لهم إجراء عمليات دفع واستلام أموال داخل بلادهم من الجهات الرسمية، الاشتراك لاستخدام زد باي.	Zid Pay, Saudi Arabia
+Q8-ZD-K0005	FAQ: تفعيل زد باي من خارج السعودية	في الوقت الحالي خيار زد باي متاح لتجار المملكة العربية السعودية و دولة الكويت.	المملكة العربية السعودية; دولة الكويت
+Q8-ZD-K0006	Rise (package_code rise): All features of Starter package, plus:	Zid Payments gateway to accept Mada, Visa, and Mastercard	plan Rise; the Starter card lists Basic payment methods (bank transfer, cash on delivery)
+Q8-ZD-K0007	ملاحظة: منتج منشور	لابد من اضافة منتج واحد منشور ومطابق للنشاط في المتجر قبل رفع طلب التفعيل	
+Q8-ZD-K0008	الشروط العامة	يجب أن يكون التاجر قد تحصّل على متجره وفق شروط وأحكام الدفع الإلكتروني المعتمدة في زد عند الاشتراك ومتوافقة مع جميع المتطلبات النظامية والقانونية، التاجر وحده مسؤولا عن الالتزام بكافة هذه المتطلبات.	Zid Pay, Saudi Arabia
+Q8-ZD-K0009	شروط وأحكام زد باي	تمثل الشروط والأحكام المذكورة أدناه العقد المبرم بين مستخدمي زد باي وشركة زد.	Zid Pay, Saudi Arabia
+Q8-ZD-K0010	Link Merchant webhook (merchant_linked)	After the onboarding of the merchant happens at the provider side (a new merchant account / record is created), the provider must share the Public/Secret Keys of the merchant with Zid Payments through this webhook	
+Q8-ZD-K0011	storeId	Upon redirection to the provider's login page, Zid Payments will append the "storeId" query string parameter to the URL, which is the unique identifier for the merchant at Zid.	
+Q8-ZD-K0012	العدد المتوقع لعمليات الدفع	مشاركة عدد العمليات المتوقعة لغرض ضمان حقك المالي ولا يوجد تأثير على رسوم الخدمة.	
+Q8-ZD-K0069	زد باي (definition)	زد باي: هي خدمة تمكين التاجر من تنفيذ عمليات البيع والتجارة الإلكترونية من خلال مقدمي خدمات الدفع على منصة تابعة لزد	Zid Pay, Saudi Arabia
+Q8-ZD-K0070	المنتجات الرقمية	المنتجات الرقمية : يتم قبول بعض المنتجات الرقمية بناء على تقييم نوع المنتجات من قبل مزود الخدمة	Zid Pay, Saudi Arabia
+Q8-ZD-K0071	طلب التحقق	يكون طلب التحقق باسم مزود الخدمة.	
+Q8-ZD-K0072	زد باي: حدود المسؤولية	يوافق التاجر ويدرك أن زد لن تكون مسؤولة عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو خاصة أو تبعية أو فادحة بما في ذلك على سبيل الذكر لا الحصر الأضرار الناجمة عن خسارة الربح أو السمعة أو الاستخدام أو البيانات أو الخسائر غير الملموسة الأخرى الناتجة من استخدام الخدمة أو عدم القدرة على استخدامها أو عدم تقديم شركات مقدمي خدمات الدفع للخدمة بطريقة فعّالة.	
+Q8-ZD-K0073	التعاقد من الباطن	يحق لزد باي تقديم الخدمة عن طريق التعاقد من الباطن دون أي إشعارات أو إفصاحات.	Zid Pay, Saudi Arabia
+Q8-ZD-K0074	فشل في النظام المصرفي	لن تتحمل زد باي أي مسؤولية عن أي خسارة أو تأخير بسبب الحريق، أو الكوارث الطبيعية أو فشل في النظام المصرفي، أو انقطاع الكهرباء، أو مشاكل في الاتصالات السلكية واللاسلكية، أو الحروب، أو الإضرابات، أو اندلاع أعمال شغب، أو هجمات إرهابية، أو فشل في أداء التجار أو أي حوادث أو أحداث زد باي ليس لها القدرة على التحكم فيها.	Zid Pay, Saudi Arabia
+Q8-ZD-K0075	Open APIs integration model	The Open APIs integration model sets an API contract for our partners to implement.	
+Q8-ZD-K0076	zidpay.org	These are the base URLs for Zid Payments' system based on the environment: - Testing environment: https://testing.zidpay.org/ - Production environment: https://zidpay.org/	
+Q8-ZD-K0077	Zid Payments	This document provides a clear explanation for partners / payment service providers (PSPs) who want to integrate with Zid Payments through the Open APIs model.	
+Q8-ZD-K0078	Direct payment; Embedded payment	There are two types of payment checkout on Zid and the provider will choose based on their preference;	
+Q8-ZD-K0079	thirdPartyProviderId	thirdPartyProviderId is the unique ID of the payment service provider (Zid Payments assigns and provides this ID to the partner upfront before starting the integration)	
+Q8-ZD-K0080	Direct payment	Zid will draw the payment form, then collect and submit the card info using an API, exposed by the provider, through a call made directly from the client side.	
+Q8-ZD-K0081	/api/webhook/v1/thirdpartywebhook	This section describes the Webhook endpoint used to send events to Zid Payments.	
+Q8-ZD-K0082	domain association file	During the initial steps of the integration process, a file for each country where the payment provider operates must be provided.	
+Q8-ZD-K0083	execute payment	Then, a request will be sent to Zid Payments backend with the encrypted payment payload / token. From there, an execute payment API request will be sent to the payment provider passing the token.	
+Q8-ZD-K0084	المدفوعات > بوابات الدفع الأُخرى	يمكنك الوصول الى بوابات الدفع الأُخرى من خلال : المدفوعات > بوابات الدفع الأُخرى	
+Q8-ZD-K0085	Paymob	بوابة الدفع باي موب (Paymob) متاحة للتجار في الإمارات، السعودية، وعمان.	الإمارات، السعودية، عمان
+Q8-ZD-K0086	amwal pay	بوابة الدفع اموال باي amwal pay متاحة للتجار في عمان	عمان
+Q8-ZD-K0087	Tap	بوابة الدفع تاب متاحة لتجار السعودية والكويت والبحرين والامارات ، قطر وعمان	السعودية، الكويت، البحرين، الإمارات، قطر، عمان
+Q8-ZD-K0088	تفعيل الخدمة	عند تفعيلك لخدمة زد باي ستتعطل بوابة الدفع الأخرى من المتجر.	Zid Pay, Saudi Arabia
+Q8-ZD-K0089	تمارا و تابي	لا يمكن تفعيل أي بوابة دفع أخرى مع زد باي باستثناء تمارا و تابي.	
+Q8-ZD-K0090	الاعدادات > طرق الدفع	يمكنك تفعيل بوابة الدفع تاب من خلال الاعدادات > طرق الدفع	مستخدمي دول الخليج
+Q8-ZD-K0091	تاب	تاب بوابة دفع الكترونية مصرحة من البنك المركزي تسمح لك باستقبال المدفوعات عن طريق الوسائل المختلفة مثل مدى، ڤيزا ، ماستر كارد وغيرها كما انها تقدم خدماتها لجميع التجار في السعودية و دول الخليج ومصر.	
+Q8-ZD-K0092	مسؤولية زد أمام المستهلك والتاجر	زد غير مسؤولة بأي شكل من الأشكال عن أي أداء غير مرضِ أو متأخر من قبل المتاجر أو شركات الشحن أو بوابات الدفع الإلكتروني أو البنوك	
+Q8-ZD-K0093	رقم الهوية المسجل في تاب	ادخل رقم الهوية المسجل في تاب للتحقق عن طريق نفاذ واكمل المعلومات المطلوبة	
+Q8-ZD-K0094	مفاتيح الربط	قم بإدخال مفاتيح الربط	
+Q8-ZD-K0095	Merchant APIs > Store Settings	Merchant APIs > Store Settings [List Payment Methods](https://docs.zid.sa/list-of-payment-method.md)	
+Q8-ZD-K0096	Various Payment Methods	name:{ar:"طرق الدفع المتنوعة",en:"Various Payment Methods"},description:{ar:"وفر خيارات دفع متعددة (بطاقات ائتمانية، مدى، الدفع بالتقسيط، وغيرها) لتسهيل الشراء وزيادة معدل إتمام الطلبات.",en:"Provide multiple payment options (credit cards, Mada, installments, etc.) to simplify purchasing and increase checkout rates."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0097	Advanced Payment Methods	name:{ar:"طرق الدفع المتقدمة",en:"Advanced Payment Methods"},description:{ar:"وفر خيارات دفع متعددة مثل تابي، تمارا، الدفع عند الاستلام لتسهيل الشراء",en:"Provide multiple payment options like Tabby, Tamara, and COD to simplify purchasing."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0098	طرق الدفع	الدفع عند الاستلام مع شركات التوصيل. التحويل البنكي. مدى. فيزا / ماستر كارد. آبل باي (Apple Pay). أمريكان إكسبريس. سامسونج باي. سداد.	
+Q8-ZD-K0099	GET /v1/managers/store/payment-options	`third_payment_read` - third_payment_read	
+Q8-ZD-K0100	GET /v1/managers/store/payment-methods	`account.read` - Account Read	
+Q8-ZD-K0101	POS payment methods	**Note:** This API does not return the active payment methods configured in POS.	
+Q8-ZD-K0102	لوحة التحكم > المدفوعات > الدفع لاحقاً	يمكنك الوصول الى خيارات الدفع بالتقسيط من خلال : لوحة التحكم > المدفوعات > الدفع لاحقاً	
+Q8-ZD-K0103	مدفوع	لتفعيل خدمة مدفوع بالمتجر يتطلب أن يكون لديك حساب لديهم	
+Q8-ZD-K0104	إمكان مع زد باي	لتفعيل خدمة إمكان ادفع لاحقا بالمتجر في حال تفعيل زد باي في المتجر اتبع التالي:	
+Q8-ZD-K0105	MIS pay	تقدم لك أم آي إس باي خدمة الدفع بالأقساط وتقسيم قيمة مدفوعات العملاء على 3 دفعات شهرية بدون رسوم تأخير و بحد أدنى للطلب 200 ريال و حد أعلى 2000 ريال.	
+Q8-ZD-K0106	تابي	تقدم لك تابي حلولاً لتسهيل عمليات التسوق و الدفع من غير فوائد وتقسيم قيمة مدفوعاتهم على 4 دفعات شهرية وتقوم تابي بالدفع للمتاجر مباشرة عن طريق عمليات الشراء المدفوعة	
+Q8-ZD-K0107	تمارا	إدخال اكواد الـ ( Merchant Key /API and Notification Token ) الخاصة بتمارا ستصلك من تمارا على البريد الإلكتروني بعد توقيع العقد	
+Q8-ZD-K0108	App ID and App Secret	بعد الانتهاء من عملية التسجيل، ستظهر لك مفاتيح التفعيل (App ID and App Secret) ومن ثم بإمكانك ربط أم آي إس باي على متجركم في زد.	
+Q8-ZD-K0109	رمز وثيقة العمل الحر	في حال لا يوجد لديك حساب في تابي وترغب في تفعيله ، قم بإدخال رمز وثيقة العمل الحر وسنقوم بطلب إنشاء الحساب لك تلقائيا من لوحة التحكم	
+Q8-ZD-K0130	ما هي محفظة التاجر في زد؟	هي محفظة تمكن التاجر من حفظ وإدارة المبالغ الخاصة به والخاصة بمتجره الإلكتروني في منصة زد، من خلال إضافة رصيد مالي والاستفادة منه في شراء المنتجات، أو الخدمات المعروضة في منصة زد، أو بتحويل الأموال إلى خارج المحفظة، وذلك وفقاً لهذه الشروط والأحكام (“المحفظة”) أو (“محفظة التاجر”).	
+Q8-ZD-K0131	لوحة التحكم > المالية > المحفظة	يمكنك إضافة رصيد من خلال الضغط على أيقونة إضافة رصيد للمحفظة من اعلى الصفحة او من خلال لوحة التحكم > المالية > المحفظة	
+Q8-ZD-K0132	محفظة لكل متجر	سيتم إنشاء محفظة لكل متجر.	
+Q8-ZD-K0133	حد السحب	يحق للتاجر إنشاء عملية سحب من المحفظة إلى حسابه البنكي بشرط ألا يتجاوز المبلغ عشرين ألف (20,000) ريال للعملية الواحدة.	
+Q8-ZD-K0134	حد الشحن بالبطاقة	في حال رغبة التاجر في شحن رصيده في محفظة زد من خلال (البطاقات الائتمانية / أبل باي)، يكون الحد الأقصى للتحويل هو خمسة آلاف (5,000) ريال.	
+Q8-ZD-K0135	توثيق الحساب	يمكنك إضافة رصيد للمحفظة و يمكنك الشراء عن طريق المحفظة لكن لا يتاح لك سحب المبالغ حتى يتم إكمال عملية توثيق الحساب .	
+Q8-ZD-K0136	عملة المحفظة	استخدام المحفظة متاح لجميع التجار خارج المملكة ومحددة بالريال السعودي كعملة أساسية، ويُستثنى من ذلك التجار في دول مجلس التعاون الخليجي (مملكة البحرين، دولة الكويت، سلطنة عُمان، دولة الإمارات العربية المتحدة، ودولة قطر)، حيث يُتاح لهم تفعيل، شحن، واستخدام رصيد المحفظة بالعملة المحلية لبلدهم.	merchants outside Saudi Arabia
+Q8-ZD-K0137	عملات لا يمكن سحبها	يقر التاجر بأنه لا يمكن سحب المبالغ المالية المتاحة في المحفظة للعملات التالية: (الريال العماني، الدرهم الإماراتي، الدينار الكويتي، والدينار البحريني).	merchants outside Saudi Arabia
+Q8-ZD-K0138	Zid Wallet	name:{ar:"محفظة زد",en:"Zid Wallet"},description:{ar:"استخدم رصيدك في محفظة زد لدفع رسوم الخدمات والباقات بسهولة وسرعة.",en:"Use your Zid Wallet balance to pay for services and plans quickly and easily."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0139	الخصم الآلي	يحق لزد الخصم الآلي والمباشر من أي مبالغ تُودع أو تُدخل في محفظة التاجر وذلك فور إيداعها لتسوية وسداد أي مستحقات، أو فروقات مالية، أو مبالغ مطالب بها لصالح زد كلما كان ذلك ضرورياً.	
+Q8-ZD-K0140	رقم الآيبان الخاص بالمحفظة	يقر التاجر ويوافق بأنه لا يحق له استخدام رقم الآيبان الخاص بمحفظته لدى منصة زد في -على سبيل المثال لا الحصر- استقبال الحوالات الخارجية، أو خارج خدمات منصة زد، أو استخدامه لغير الأغراض المخصصة له.	
+Q8-ZD-K0141	معلومات مستندات اعرف عميلك	إذا كان التاجر مفعلاً لخدمة (زد باي) فإنه يتم الاعتماد على معلومات مستندات اعرف عميلك التي تم توثيق حساب (زد باي) بناءً عليها كمعلومات معتمدة لدى المحفظة والتي ستظهر مباشرة في لوحة تحكم المحفظة.	
+Q8-ZD-K0148	التسويق ← برامج الولاء ← محفظة العميل	من لوحة التحكم: التسويق ← برامج الولاء ← محفظة العميل	
+Q8-ZD-K0149	Merchant APIs > Marketing > Customer Wallets > Manager Customer Wallet	Merchant APIs > Marketing > Customer Wallets > Manager Customer Wallet [List Customer Wallets](https://docs.zid.sa/list-customer-wallets-42874798e0.md)	
+Q8-ZD-K0150	الباقة الاحترافية	خاصية محفظة العميل والكاش باك متاحة في الباقة الاحترافية ، في حال كانت الباقة اقل يمكنك شرائها من خلال الاضافات > خاصية محفظة العميل	الباقة الاحترافية; add-on for lower plans
+Q8-ZD-K0151	Zid Wallet (Other group)	name:{ar:"محفظة زد",en:"Zid Wallet"},description:{ar:"قدّم لعملائك خيارات دفع مرنة وسريعة عبر محفظة زد الرقمية لتعزيز تجربة الشراء وزيادة التحويلات.",en:"Offer your customers flexible and fast payment options via Zid digital wallet to enhance the purchase experience and increase conversions."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0152	إجمالي الأرصدة	إجمالي الأرصدة: مجموع الأرصدة المتاحة حالياً في محافظ كل عملاء متجرك (التزام مستقبلي عليك)	
+Q8-ZD-K0153	POST /v1/customer-wallets/customers/{customer_id}/credit/	`third_customer_wallet_write` - Customer Wallet Write	
+Q8-ZD-K0154	إدارة الأشتراك	يمكنك الوصول الى إدارة الاشتراك من خلال : الضغط على شعار المتجر اعلى الصفحة > إدارة الأشتراك	
+Q8-ZD-K0155	Starter; Rise; Growth; Pro	StarterFree forever Rise99 SAR/month Growth299 SAR/month ProLet's talk	
+Q8-ZD-K0156	عملة الرسوم	جميع الرسوم تكون بالريال السعودي أو بعملة التاجر المحلية ويجب أن تكون جميع المدفوعات بالعملة المحلية.	
+Q8-ZD-K0157	تغيير الأسعار	يجوز لنا تغيير خطط الاشتراك وأسعار الرسوم والخدمات التي نقدمها من وقت لآخر؛ ومع ذلك، سنقوم بإشعارك بأي تغييرات في الأسعار أو تغييرات في خطط الاشتراك أو الخدمات قبل تطبيقها بـ(7) سبعة أيام على الأقل.	
+Q8-ZD-K0158	ضريبة القيمة المضافة	أنت مسؤول عن سداد ودفع كافة الرسوم الضريبية، بما في ذلك ضريبة القيمة المضافة.	
+Q8-ZD-K0159	لغة الفاتورة	الأصل أن تُقدم الفاتورة باللغة العربية ويمكن كذلك تقديمها باللغة العربية والإنجليزية معًا، وعلى أن تتضمن الفاتورة تاريخ إصدارها، ومعلوماتنا وبياناتنا الرسمية، ونوع الخدمة ووصفها وسعرها وكميتها.	
+Q8-ZD-K0160	package_code=rise	https://dashboard.zid.sa/en/register?package_code=rise	
+Q8-ZD-K0165	Payments → Payouts	Everything about payouts lives under Payments → Payouts in the Partner Dashboard.	
+Q8-ZD-K0166	App Management > Events	Subscription app events notify applications about important subscription activities, such as installation, authorization, renewals, and expiration.	
+Q8-ZD-K0167	app-plan payment	Any required app-plan payment is completed through Zid before activation becomes available.	
+Q8-ZD-K0168	applicable Zid plans	For standard apps, keep app charges within the applicable Zid plans; account linking must not introduce another partner-side payment.	
+Q8-ZD-K0169	Partner rate	Your partner rate is set in the agreement you sign with Zid before publishing, and it may change subject to Zid's approval.	
+Q8-ZD-K0170	monthly payouts	The merchant pays Zid, the transaction joins the next payout cycle, and Zid settles your payout once the invoicing step is complete.	
+Q8-ZD-K0171	تحصيل زد لرسوم تفعيل الخدمة	يقر التاجر ويفهم أنه في حال تحصيل زد لرسوم تفعيل الخدمة من التاجر ، سيكون هذا التحصيل وفق ما يتفق عليه مع الشريك من خلال الاتفاقيات والوثائق بينهما، ولا تكون زد مسؤولة عن أية مطالبات، أو الاسترجاعات ناقصة، أو تغيير رسوم الخدمة حيث أن زد مجرد أداة تقنية يستخدمها التاجر والشريك.	
+Q8-ZD-K0172	Withholding tax	Non-Saudi bank account: in USD, deducting withholding tax (WHT): 15% for apps and 5% for themes.	
+Q8-ZD-K0173	Subscription Details	This endpoint enables app partners to fetch details about a merchant's app subscription, including plan, status, and billing information.	
+Q8-ZD-K0174	Update Usage-Based Charges	This endpoint allows app partners to update the outstanding balance for their app's usage-based plan, ensuring flexible billing adjustments to align with merchants' pay-as-you-go consumption.	
+Q8-ZD-K0175	app.market.subscription.active	`app.market.subscription.active` | Send notification on successful activation of subscription.	
+Q8-ZD-K0176	تمويل زد (definition)	تمويل زد: هي خدمة إلكترونية تقدمها زد، تتيح للتجار الاستفادة من عروض التمويل لجهة التمويل، وتتيح لجهة التمويل استلام دفعات السداد عن طريق الاستقطاع من عمليات بيع التاجر المنفذة على منصة زد لحلول الدفع (“زد باي”) خلال مدة اشتراكه في هذه الخدمة.	
+Q8-ZD-K0177	الدولة	الدولة : متاح لتجار المملكة العربية السعودية فقط.	المملكة العربية السعودية
+Q8-ZD-K0178	بوابة الدفع	بوابة الدفع: تفعيل واعتماد زد باي.	
+Q8-ZD-K0179	الباقات	تمويل زد متاح لجميع الباقات ماعدا لايت	
+Q8-ZD-K0180	تقدير جهة التمويل	بناء على الفقرة (1) ، فإن قبول أو رفض تقديم خدمة التمويل، وكذلك تحديد عرض السعر للتمويل، خاضع لتقدير جهة التمويل باستقلال عن زد	
+Q8-ZD-K0181	إلغاء زد باي	بعد اشتراك التاجر في الخدمة، فإنه لن يتمكن من إلغاء اشتراكه في زد باي، أو التحويل إلى قناة دفع أخرى إلى حين استكمال كامل التزاماته بالسداد.	
+Q8-ZD-K0182	جهة التمويل	يفهم التاجر ويوافق على أن جهة التمويل هي المقدم لخدمة التمويل وأن علاقته بجهة التمويل مستقلة عن علاقته بزد، وأن زد مجرد مقدم للحلول الالكترونية للتمويل بحسب التعريف الوارد في هذه الشروط والأحكام.	
+Q8-ZD-K0183	تعذر الاستقطاع	في حال لم تتمكن زد باي من استقطاع التزامات السداد أو حدّها الشهري الأدنى بحسب اتفاق التاجر وجهة التمويل، لأيّ سبب، اختياري أو قهري، عائد إليها أو إلى التاجر، فإن التاجر يفهم أن ذلك لا يعفيه من التزامه بالسداد في مقابل جهة التمويل، وأنه عليه استكمال التزاماته عن طريق التحويل البنكي، أو أي طريقة أخرى يتفق التاجر وجهة التمويل عليها.	
+Q8-ZD-K0184	مشاركة المعلومات	لأغراض تقديم الخدمة، ستشارك زد كافة المعلومات المتعلقة بمبيعات التاجر مع جهة التمويل.	
+Q8-ZD-K0185	الحد الأدنى للسداد	الحد الأدنى للسداد بناء على عقد التمويل الذي تم توقيعه مع شريك التمويل: هو الحد الأدنى لسداد مبلغ التمويل خلال الشهر	
+Q8-ZD-K0197	المحفظة الرقمية الخاصة بوكيل زد	تتيح الخدمة للتاجر شحن رصيد المحفظة الرقمية الخاصة بوكيل زد للاستفادة من المزايا المختلفة	
+Q8-ZD-K0198	متجر نشط	للاستفادة من خدمات "وكيل زد (Zid Agent)" يجب أن يمتلك التاجر متجرًا نشطًا ومفعلاً على منصة زد.	
+Q8-ZD-K0199	النافذة الزمنية للاسترجاع	النافذة الزمنية للاسترجاع: تكون المدة المسموحة لطلب استرجاع مبلغ الشحن هي ساعتان (٢) فقط تبدأ من وقت إتمام عملية الشحن.	
+Q8-ZD-K0200	شركاء ومزودو التقنية	تملك منصة زد الحق في توفير الخدمة من خلالها مباشرة أو عبر شركائها ومزودي التقنية الخارجيين.	
+Q8-ZD-K0201	Google Cloud Vertex AI	Zid Agent uses Google Cloud Vertex AI as a data processor to power AI-assisted features including product research, store optimization, campaign management, and conversational assistance.	
+Q8-ZD-K0202	طلب استرداد باقة جديدة/حالية	يرفع التاجر طلب الاسترجاع من خلال الذهاب إلى لوحة التحكم > فتح تذكرة جديدة > اختيار فئة التذكرة “طلبات على المتجر” > اختيار الفئة الفرعية “طلب استرداد باقة جديدة/حالية” > وصف الطلب وإرفاق نسخة من شهادة الآيبان.	
+Q8-ZD-K0203	متجر مفعل	للاستفادة من خدمة المميزات الإضافية يجب أن يكون لديك متجرًا مفعلاً على منصة زد.	
+Q8-ZD-K0204	الأسعار	تملك منصة زد الحق في مراجعة وتحديث أسعار خدمة المميزات الإضافية في أي وقت ولأي سبب من الأسباب بعد إشعار التاجر بذلك.	
+Q8-ZD-K0205	شركاء	تملك منصة زد الحق في توفير الخدمة من خلالها أو من خلال شركائها.	
+Q8-ZD-K0219	Zid Egypt	Zid has expanded its operations to Egypt as part of its regional growth strategy, empowering merchants with advanced e-commerce solutions tailored to the local market.	
+Q8-ZD-K0220	Egypt	Join thousands of merchants in Egypt and launch your online store easily.	
+Q8-ZD-K0221	Commercial Registration No.: 201574	:Zid Egypt operates officially under Commercial Registration No.:201574 Tax ID No.: 711-549-443	
+Q8-ZD-K0222	رقم السجل التجاري: 201574	تعمل زد مصر رسميًا تحت: رقم السجل التجاري: 201574 الرقم الضريبي: 711-459-443	
+Q8-ZD-K0223	Address	Address: 55 Street 18, Sarayat Maadi, Cairo, Egypt	
+Q8-ZD-K0224	compliance	Ensuring full compliance with Egyptian regulatory and taxation requirements.	
+Q8-ZD-K0225	Other countries	- [Egypt](https://zid.sa/en/egypt/) - [UAE](https://zid.sa/en/uae/) - [Kuwait](https://zid.sa/en/kuwait/) - [Oman](https://zid.sa/en/oman/) - [Syria](https://zid.sa/en/syria/)	
+Q8-ZD-K0226	السعودية ودول الخليج	حاليًا زد يخدم التجار المتواجدين في السعودية ودول الخليج فقط من جميع الجنسيات	
+Q8-ZD-K0227	Is this available across the GCC?	Is this available across the GCC?","answer":"Currently in Saudi Arabia and Kuwait.	Zid Payments
+Q8-ZD-K0234	الاعدادات > الأسواق	يمكنك الوصول الى خاصية الأسواق من خلال : الاعدادات > الأسواق	
+Q8-ZD-K0235	عدد الأسواق حسب الباقة	خاصية الأسواق تتيح لك عدد من الأسواق حسب باقتك: باقة الانطلاقة سوق واحد افتراضي باقة النمو سوقين افتراضي وجديد الباقة الاحترافية خمس أسواق	باقة الانطلاقة; باقة النمو; الباقة الاحترافية
+Q8-ZD-K0236	عملة السوق	عملة السوق: حدّد العملة التي سيتم اعتمادها لعرض أسعار المنتجات داخل هذا السوق.	
+Q8-ZD-K0298	لوحة التحكم > الاعدادات > اللغات والعملات	لتفعيل العملة الرئيسية للمتجر أو إضافة عملات أخرى من خلال: لوحة التحكم > الاعدادات > اللغات والعملات	
+Q8-ZD-K0299	Geo-Based Currency Settings	name:{ar:"ضبط العملات على الموقع الجغرافي",en:"Geo-Based Currency Settings"},description:{ar:"ضبط العملات تلقائياً حسب موقع العميل لتجربة شراء سلسة ومحترفة.",en:"Automatically adjust currencies based on customer location for a smooth and professional buying experience."},plans:{starter:"1",launch:"1",growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0300	الدفع بالعملة الأساسية	في حال تم تفعيل المدفوعات لزد [ مدفوعات زد متاحة لتجار السعودية و الكويت] كخيار دفع إلكتروني وتم تفعيل عملات أخرى غير العملة الأساسية (الريال السعودي \ الدينار الكويتي) بالمتجر ، سيتم استعراض أسعار المنتجات بالعملة المختارة مثل الريال العماني من قبل العميل لكن في مرحلة الدفع النهائي سيتم الدفع بالعملة الأساسية للمتجر (الريال السعودي\ الدينار الكويتي) لجميع الشبكات ما عدا “كي نت” سيتم الدفع بالدينار الكويتي.	مدفوعات زد (السعودية، الكويت)
+Q8-ZD-K0301	سعر الصرف لبوابة الدفع	المبلغ المدفوع خاضع لتحويل سعر الصرف لبوابة الدفع المفعلة.	
+Q8-ZD-K0302	سعر الصرف عند تغيير العملة	عند تغيير العملة سيتم تحويل أسعار المنتجات إلى العملة الجديدة بناءً على سعر الصرف في وقت التغيير، ونتيجة لذلك قد يحصل تغيير في مجموع المبيعات.	
+Q8-ZD-K0303	order_currency.exchange_rate	Exchange rate applied to the order currency relative to the store currency.	
+Q8-ZD-K0304	Currency Handling for Orders	When the store currency, order currency, and the currency of the shipping address (for cash on delivery) are different, partners must convert the order total to the appropriate currency.	
+Q8-ZD-K0305	GET /v1/managers/account/store/localization	Retrieves the store's supported languages and currencies, indicating the currently active language and the default currency.	
+Q8-ZD-K0328	الشحن المباشر	هي أداة تُتيح للتاجر شحن وتوصيل الطلبات إلى العملاء النهائيين عبر إتاحة وصول التاجر لشركات شحن متعددة بخيارات توصيل متنوعة، وتُفعّل فورياً من لوحة تحكم التاجر، على أن تُدار جميع رسومها والتسويات المالية المتعلقة بها تلقائياً من محفظة التاجر وفقاً لهذه الشروط والأحكام.	
+Q8-ZD-K0329	لوحة التحكم > اللوجستيات > طرق الشحن	للوصول الى طرق الشحن من خلال : لوحة التحكم > اللوجستيات > طرق الشحن	
+Q8-ZD-K0330	Zid Logistics: One Contract for 35 Carriers	name:{ar:"(زد الوجيستيات) عقد واحد يجمع 35 شركة شحن",en:"Zid Logistics: One Contract for 35 Carriers"},description:{ar:"وفر وقتك وجهدك بعقد واحد يجمع 35 شركة شحن بدلاً من التعامل مع كل شركة على حدة",en:"Save time and effort with one contract covering 35 carriers instead of dealing with each separately."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0331	باقة التاجر	تختلف أسعار بوالص الشحن والأوزان المحددة والرسوم المتعلقة بها باختلاف نوع باقة التاجر لدى منصة زد.	
+Q8-ZD-K0332	Rise: All features of Starter package, plus:	Shipping rates starting from 11 SAR	plan Rise
+Q8-ZD-K0333	Professional: Standout Features	Shipping rates starting from 8.5 SAR	plan Professional
+Q8-ZD-K0334	manage.zidship.settings	`manage.zidship.settings` | Manage Zid Ship settings | إدارة إعدادات زد شب	staff permission
+Q8-ZD-K0335	وسيطاً تقنياً	تُعد زد وسيطاً تقنياً ومسهّلاً لخدمات الشحن، ولا تُعد شركة نقل مباشرة؛ وتخضع كافة أحكام التعويض لسياسات وشروط شركات الشحن المزودة للخدمة.	
+Q8-ZD-K0336	قرار قبول التعويض	في حالة تعذر العثور على الشحنة، تنتقل زد إلى مرحلة المطالبة بالتعويض من شركة الشحن. غير أن قرار قبول التعويض أو رفضه، وتحديد قيمته، يخضع لسياسات شركة الشحن المعتمدة، وليس لزد سيطرة على هذا القرار.	
+Q8-ZD-K0337	شروط شركة الشحن	تخضع كل خدمة شحن للشروط والأحكام الخاصة بشركة الشحن المزودة لها، والمعلنة ضمن إعدادات وسيلة الشحن في لوحة تحكم المتجر.	
+Q8-ZD-K0338	Customs duties	Customs duties will be charged to the merchant if the end customer refuses to pay them, and the fees will be deducted from the Zid wallet.	Global Shipping
+Q8-ZD-K0339	قياسات شركة الشحن	تتولى شركة الشحن المعتمدة قياس وتدقيق الوزن الفعلي والحجمي للشحنة في أي مرحلة من مراحل الاستلام أو الشحن أو التوصيل، وتُحدَّث بيانات الشحنة بناءً على قياسات شركة الشحن؛ وبناءً عليه تقوم زد بتحديث تكلفة الشحنة تلقائياً وخصم الفروق المالية المستحقة من محفظة التاجر.	
+Q8-ZD-K0340	integrated with ZidShip	Fulfillment & Shipping Apps integrated with ZidShip: 0.30 SAR per transaction	
+Q8-ZD-K0341	Zid Logistics: One Contract for 35 Carriers	Save time and effort with one contract covering 35 carriers instead of dealing with each separately.	
+Q8-ZD-K0342	category id 5	"id":5,"parent_id":null,"name":"الشحن والتخزين"	
+Q8-ZD-K0343	Shipping apps	Shipping apps are specifically designed to integrate logistics and shipping services into the merchant's store.	
+Q8-ZD-K0344	logistic type	The app should not be of the "logistic" type, as all shipping and fulfillment apps must be public.	
+Q8-ZD-K0345	السعودية أو أي من دول الخليج	بإمكان التاجر إذا كان موجودا في المملكة العربية السعودية أو أي من دول الخليج تفعيل الشحن من خلال شركات الخدمات اللوجستية المرخصة من داخل الموقع / التطبيق لتسليم البضائع التي تم شراؤها من متجر زد الخاص به.	المملكة العربية السعودية; دول الخليج
+Q8-ZD-K0346	الربط المخصص مع شركة الشحن	الربط المخصص مع شركة الشحن: في حالة قيام التاجر بربط حسابه مباشرة مع شركة شحن محددة (عبر عقد خاص بين التاجر والشركة)، يتم خصم رسوم خدمة قدرها 1 ريال (غير شاملة لضريبة القيمة المضافة) لكل بوليصة شحن يتم إصدارها عبر هذا الربط المخصص.	
+Q8-ZD-K0347	ليست طرفًا	قد يوقع التاجر وشركات الخدمات اللوجستية الثالثة اتفاقيات ووثائق قانونية تنظم العلاقة بينهما، ويقر التاجر ويفهم أن زد ليست طرفًا في هذه الالتزامات، ولا ما ينشأ عنها.	
+Q8-ZD-K0348	عدم تقديم الخدمة بطريقة فعّالة	يوافق التاجر ويدرك أن زد لن تكون مسؤولة عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو خاصة أو تبعية أو فادحة بما في ذلك على سبيل الذكر لا الحصر الأضرار الناجمة عن خسارة الربح أو السمعة أو الاستخدام أو البيانات أو الخسائر غير الملموسة الأخرى الناتجة من استخدام الخدمة أو عدم القدرة على استخدامها أو عدم تقديم شركات الخدمات اللوجستية الطرف الثالث الخدمة بطريقة فعّالة.	
+Q8-ZD-K0349	Merchant APIs > Orders [Add Order Comment]	Merchant APIs > Orders [Add Order Comment](https://docs.zid.sa/add-order-comment-17440706e0.md)	
+Q8-ZD-K0350	Shipping apps cycle	Shipping apps follow a different cycle: the record is created on the 1st of the month, and Zid uploads an invoice for activation and order fees that the partner pays.	
+Q8-ZD-K0351	Shipping Apps	Shipping Apps: 0.70 SAR per transaction	
+Q8-ZD-K0360	سوق تطبيقات زد (definition)	سوق تطبيقات زد: هي منصة مملوكة لزد توفر حلول الربط التقني بين التاجر والشريك، وذلك لتمكين التاجر من ربط متجره بأحد تطبيقات المعروضة في خدمة سوق تطبيقات زد، وذلك لمساعدته في إدارة عمليات متجره بسهولة.	
+Q8-ZD-K0361	category id 19	"id":19,"parent_id":null,"name":"المالية والمدفوعات"	
+Q8-ZD-K0362	Public apps	Public apps:** Apps designed for wider use and are listed in Zid App Market. All merchants on the platform can view, install, and benefit from these apps.	
+Q8-ZD-K0363	Submit for Review	After developing the app, our team will take some time to review your submission and test the app functionality before publishing it to the public.	
+Q8-ZD-K0364	Review and enforcement	Apps that do not comply may be returned for correction, rejected during review, suspended until corrected or removed when the flow creates material security, privacy, usability or merchant-trust risk.	
+Q8-ZD-K0365	manage.app.market.details	`manage.app.market.details` | Manage app market details / purchase subscription | إدارة تفاصيل السوق / اشتراك الشراء	staff permission
+Q8-ZD-K0366	الشريك هو المقدم للخدمة	يفهم التاجر ويوافق على أن الشريك هو المقدم للخدمة وأن علاقته بالشريك مستقلة عن علاقته بزد، وأن زد مجرد مقدم لحلول الربط التقني للاستفادة من سوق تطبيقات زد حسب التعريف الوارد أعلاه فى بند التعريفات.	
+Q8-ZD-K0367	المشاكل التقنية	لا تتحمل زد أي مسؤولية عن المشاكل التقنية التي تقع في التطبيقات أو الخدمات التي تم تطويرها أو تقديمها من قبل شركاء سوق التطبيقات.	
+Q8-ZD-K0368	لا تضمن زد	تبذل زد أقصى جهودها لاختبار وتدقيق التطبيقات للتأكد من كفاءة الجودة المقدمة قبل إطلاق أي تطبيق ولا تضمن زد أي طرف ثالث مستقل مقدم للخدمة	
+Q8-ZD-K0369	صلاحيات النطاقات	يفهم التاجر ويوافق على تحمله مسؤولية مشاركة بيانات المتجر مع الشريك بعد تثبيت تطبيق الخدمة وإعطاءه صلاحيات النطاقات المطلوبة بحسب طبيعة الخدمة المقدمة.	
+Q8-ZD-K0370	app.market.application.install	`app.market.application.install` | Send notification on the installation of the application.	
+Q8-ZD-K0371	https://oauth.zid.sa	**Base OAuth Server URL**: This URL is for handling app authentication.	
+Q8-ZD-K0372	scopes approval	The merchant will see the scopes that your application is requesting and approve (or decline)	
+Q8-ZD-K0373	Partner Dashboard scopes	Zid AppMarket supports many scopes to be requested from the merchant; you can select the needed scopes for your application via your application page in the Partner Dashboard	
+Q8-ZD-K0374	Select App Scopes	Be sure to provide clear justifications for each scope to help the review team approve your selections.	
+Q8-ZD-K0375	Manual credentials	Never ask merchants to paste Zid access or refresh tokens, manager tokens, API keys, client secrets or Zid passwords into your app.	
+Q8-ZD-K0376	Request only the scopes needed	Request only the scopes needed for the app's documented functionality.	
+Q8-ZD-K0377	Authorization; X-Manager-Token	All API requests into our system require the call to be authorized, usally by sending `Authorization` & `X-Manager-Token` headers	
+Q8-ZD-K0378	app.market.application.authorized	`app.market.application.authorized` | Triggered when a merchant authorizes an app prior to installation.	
+Q8-ZD-K0379	Scoped Permissions	**Scoped Permissions**: Define specific access levels through scopes, allowing merchants to control what data your app can access.	
+Q8-ZD-K0380	Partner-managed setup	This path is for apps whose service may require meaningful preparation before a Zid store can be connected—for example, creating or selecting an operational tenant, provisioning a carrier account, completing contractual checks or configuring an existing business platform.	
+Q8-ZD-K0381	circuit breaker	Zid automatically monitors the health of your webhook endpoints using a circuit breaker pattern.	
+Q8-ZD-K0382	Webhooks > APIs	Webhooks > APIs [Health Summary](https://docs.zid.sa/health-summary-37247358e0.md)	
+Q8-ZD-K0383	broken	| broken | The endpoint has failed 30 or more times in the past hour | Event delivery is suspended until you recover the webhook |	
+Q8-ZD-K0384	conditions	**Note:** Conditions are currently supported only for the `order.create` and `order.status.update` events.	
+Q8-ZD-K0385	No new events are dispatched	**No new events are dispatched** to that endpoint. Pending undelivered events for the webhook are also discarded to prevent backlogs.	
+Q8-ZD-K0386	POST /v1/managers/webhooks	`third_webhook_write` - Webhooks Read & Write	
+Q8-ZD-K0387	health states	When an endpoint starts failing consistently, its status transitions through health states that reduce noise and protect your systems from unnecessary traffic — and notify you before things get worse.	
+Q8-ZD-K0388	iframe	These applications are integrated directly into the dashboard through an iframe, allowing merchants to access and interact with your app without leaving the Zid Merchant Dashboard.	
+Q8-ZD-K0389	Embedded applications	Embedded apps should open inside the Zid Merchant Dashboard without an unnecessary separate partner login.	
+Q8-ZD-K0390	embedded authentication mechanism	Use the embedded authentication mechanism supported by Zid for your integration.	
+Q8-ZD-K0391	embedded_apps_tokens_write	Ensure you include the `embedded_apps_tokens_write` scope in your initial OAuth request.	
+Q8-ZD-K0392	bypass standard logins	The embedded apps feature is designed to bypass standard logins.	
+Q8-ZD-K0393	سوق التطبيقات> تطبيقاتي	تفعيل التطبيق في المتجر من خلال صفحه سوق التطبيقات> تطبيقاتي	
+Q8-ZD-K0394	Professional or Enterprise plan; API Access	The store must have a Professional or Enterprise plan subscription, or the merchant must have activated [API Access](https://web.zid.sa/subscriptions) from the dashboard to be able to install the private app.	
+Q8-ZD-K0395	خدمة الربط المباشرة (APIs)	او في حال كانت باقة المتجر اقل من الاحترافية يمكنك شراء خاصيه الربط الخاص API من خلال : المالية > الفوترة > الإضافات > تصفح الإضافات > خدمة الربط المباشرة (APIs)	
+Q8-ZD-K0396	Professional: Standout Features	Connect your store with external systems (via API)	plan Professional
+Q8-ZD-K0397	manage.store.zid.keys	`manage.store.zid.keys` | Manage Zid keys | إدارة مفاتيح زد	staff permission
+Q8-ZD-K0398	التاجر (Merchant)	• التعاقد مع المطور التقني أو مزود النظام الخارجي.	
+Q8-ZD-K0399	منصة زد (Zid)	• توفير الواجهات البرمجية (APIs) وأدوات الربط.	
+Q8-ZD-K0400	Private apps	Private apps:** Apps intended for specific stores only. They are not listed in the Zid App Market and can only be installed by stores explicitly granted access.	
+Q8-ZD-K0401	API's > Checkout	API's > Checkout [Get Cart](https://docs.zid.sa/get-cart-26082659e0.md)	
+Q8-ZD-K0402	API's > Authentication	API's > Authentication [Logout](https://docs.zid.sa/logout-25508912e0.md)	
+Q8-ZD-K0403	Role: Customer	When interacting with the API, set the **`Role`** header in the request to **`Customer`** to perform operations as a customer.	
+Q8-ZD-K0404	سوق الثيمات (definition)	سوق الثيمات: هو منصة مملوكة لزد تحتوي على العديد من الثيمات المجانية، أو المدفوعة، لتمكن التاجر من تصميم متجره.	
+Q8-ZD-K0405	Rise: All features of Starter package, plus:	Access to themes store (Over 50 professional themes)	plan Rise
+Q8-ZD-K0406	إعادة المتجر الى احد الثيمات المجانية	في حال انتهى اشتراك التاجر في خدمة الثيمات المخصصة، يتم إعادة المتجر الى احد الثيمات المجانية التي تقدمها زد.	
+Q8-ZD-K0407	شريك سوق الثيمات	في حال شراء او تفعيل أحد ثيمات شركاء سوق الثيمات يقر التاجر ويوافق على أن الشريك هو المقدم للخدمة وأن علاقته بالشريك مستقلة عن علاقته بزد.	
+Q8-ZD-K0408	حقوق الملكية الفكرية	تمتلك زد حقوق الملكية الفكرية للثيمات التابعة لها.	
+Q8-ZD-K0409	Partner Share	Partner Share = (Paid Amount by Merchant Excluding VAT) × Partner Rate	
+Q8-ZD-K0527	Marketing Tools	Marketing ToolsTurn Your Store into a Customer Magnet	
+Q8-ZD-K0528	Add Marketing Affiliates	name:{ar:"إضافة شركاء تسويق",en:"Add Marketing Affiliates"},description:{ar:"وازن فريق شركاء التسويق لزيادة انتشار متجرك وتحقيق مبيعات أعلى.",en:"Balance your affiliate team to increase your store's reach and achieve higher sales."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0529	Create New Campaign	name:{ar:"إنشاء حملة جديدة",en:"Create New Campaign"},description:{ar:"ابدأ حملتك التسويقية بخطوات سهلة لتزيد مبيعاتك وتوسع قاعدة عملائك.",en:"Start your marketing campaign with easy steps to increase sales and expand your customer base."},plans:{starter:!1,launch:!1,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0530	manage.store.marketing	`manage.store.marketing` | Manage store marketing | إدارة تسويق المتجر	staff permission
+Q8-ZD-K0531	واتساب زد	تجربة واتساب متكاملة داخل متجرك، والقناة الأمثل للتواصل مع عملائك.	
+Q8-ZD-K0532	Rise: All features of Starter package, plus:	Free WhatsApp (Basic Plan)	plan Rise
+Q8-ZD-K0533	Professional: Standout Features	Completely free WhatsApp	plan Professional
+Q8-ZD-K0534	زد كاشير (definition)	زد كاشير: هي خدمة تقدمها زد تمكن التاجر من ربط بيانات المعارض التجارية الخاصة بالتاجر ببيانات متجره الإلكتروني في منصة واحدة	
+Q8-ZD-K0535	تطبيق زد كاشير > الاعدادات > ربط جهاز الدفع	تطبيق زد كاشير > الاعدادات > ربط جهاز الدفع	
+Q8-ZD-K0536	Mobile & Tablet POS App	name:{ar:"تطبيق الكاشير للجوال والتابلت",en:"Mobile & Tablet POS App"},description:{ar:"أدر مبيعاتك وحرّر فواتيرك مباشرة من جوالك او جهاز التابلت عبر تطبيق الكاشير (متوفر لأجهزة iOS و Android).",en:"Manage your sales and process invoices directly from your phone or tablet via the POS app (available for iOS and Android)."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0537	Professional: Standout Features	Completely free Zid POS - two cashiers	plan Professional
+Q8-ZD-K0538	pos.payment.methods	`pos.payment.methods` | Manage payment methods | إدارة طرق الدفع	staff permission
+Q8-ZD-K0539	تركيب أجهزة نقاط البيع	يقر ويوافق التاجر على أن زد لا تتحمل مسؤولية تركيب أجهزة نقاط البيع.	
+Q8-ZD-K0540	ضمان الأجهزة	يتحمل الوكيل مسؤولية ضمان الأجهزة.	
+Q8-ZD-K0541	أجهزة نقاط البيع	أجهزة نقاط البيع: هي أجهزة تمكن التاجر من الإشراف، والمتابعة على جميع عمليات متجره في منصة واحدة متنقلة بما في ذلك المبيعات، والمخزون، وتسوية فورية للمعاملات المالية وقبول جميع طرق الدفع.	
+Q8-ZD-K0542	فوترة إلكترونية	نعم ، كفوترة إلكترونية مع العلم أن زد حاصلة على جوائز واعتماد من الهيئة	
+Q8-ZD-K0543	مزيد (definition)	مزيد هي منصة/تطبيق للتجارة الإلكترونية تتيح للمستخدمين من تجار زد عرض وبيع المنتجات، كما تتيح للعملاء تسوق مجموعة متنوعة من هذه المنتجات المعروضة.	
+Q8-ZD-K0544	منصات البيع	لوحة التحكم > منصات البيع > تفعيل منصة البيع > ربط منصات البيع .	
+Q8-ZD-K0545	مشترك بأحد الباقات	يجب أن يكون لديك متجر على منصة زد، ومشترك بأحد الباقات.	
+Q8-ZD-K0546	أنظمة المملكة العربية السعودية	يجب أن يكون نشاط التاجر صحيح، ولا يخدم أي من النشاطات المحظورة حسب أنظمة المملكة العربية السعودية.	
+Q8-ZD-K0547	تجار الخليج	نعم متاح لجميع متاجر زد.	
+Q8-ZD-K0548	الممثل القانوني للبائع	يقر التاجر بكامل أهليته المعتبرة شرعا وقانونا بموجب هذه الشروط والأحكام بتفويض زد متمثلة في منصة "مزيد" على اعتبار أنها الممثل القانوني للبائع أمام الأطراف التجارية الأخرى التي قد تتعامل مع البائع، بما في ذلك على سبيل المثال لا الحصر منصات التجارة الإلكترونية الأخرى أو شركات الشحن أو المزودين مثل منصة PIK.	
+Q8-ZD-K0549	شحن وتوصيل الطلب	يتحمل التاجر مسؤولية شحن، و توصيل الطلب إلى العميل النهائي	
+Q8-ZD-K0550	إضافة المنتجات بشكل تلقائي	يقر التاجر ويوافق على إضافة منتجات متجره إلى منصة "مزيد" بشكل تلقائي، بحيث تظهر منتجاته المتوفرة في متجره على منصة "مزيد" دون الحاجة إلى أي إجراء إضافي من قبله	
+Q8-ZD-K0551	بيانات عملاء التاجر	يحق لشركة زد الاطلاع على بيانات عملاء التاجر على سبيل المثال (العمليات الشرائية )، وذلك بغرض التقييم وتحسين تجربة العميل الشرائية في مزيد.	
+Q8-ZD-K0552	بغرض التقييم	وذلك بغرض التقييم وتحسين تجربة العميل الشرائية في مزيد.	
+Q8-ZD-K0553	Marketplaces	MarketplacesSold on Amazon and Trendyol and Jahez	
+Q8-ZD-K0554	جاهز	عن طريق مزيد لا يوجد تغيير.	جاهز
+Q8-ZD-K0555	is_marketplace_order	When `is_marketplace_order` is true, the order is from an external provider, and certain customer information, such as `customer.name`, `customer.email`, and `customer.phone`, will be masked for privacy.	
+Q8-ZD-K0556	masked for privacy	When `is_marketplace_order` is true, the order is from an external provider, and certain customer information, such as `customer.name`, `customer.email`, and `customer.phone`, will be masked for privacy.	
+Q8-ZD-K0557	صفحة إتمام الشراء > ضمان زد	كيف يمكن الغاء برنامج ضمان زد كتاجر؟من خلال لوحة التحكم > الإعدادات > صفحة إتمام الشراء > ضمان زد	
+Q8-ZD-K0558	100% optional	A 100% optional service that we don't impose on anyone	
+Q8-ZD-K0559	entirely on Zid	The service is entirely on Zid and we cover all costs of sending order status updates to customers and handle any complaints or inquiries	
+Q8-ZD-K0560	WhatsApp updates; badge	A free program from Zid that sends your customers real-time order updates via WhatsApp, and adds the "Zid Assurance" badge to your store	
+Q8-ZD-K0561	Ministry of Commerce	After collaborating with the Ministry of Commerce in processing complaints with merchants and helping them resolve them, we noticed that many cases could have been resolved before reaching any escalation.	
+Q8-ZD-K0562	Zid Voice	Zid VoiceRecover abandoned carts with a voice agent	
+Q8-ZD-K0563	E-store	E-storeTurn Your Idea into a Thriving E-Store	
+Q8-ZD-K0564	Store - SDK Template Design (Up to 2)	name:{ar:"المتجر - تصميم القالب البرمجي (SDK) (حتى 2)",en:"Store - SDK Template Design (Up to 2)"},description:{ar:"خصص مظهر متجرك بالـSDK عبر تعديل قوالب جاهزة لتعكس هوية علامتك التجارية.",en:"Customize your store's appearance with the SDK by modifying ready-made templates to reflect your brand."},plans:{starter:!1,launch:!1,growth:!1,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0565	CSS interface customization	name:{ar:"تخصيص الواجهة CSS",en:"CSS interface customization"},description:{ar:"تحكّم في مظهر متجرك من خلال أكواد",en:"Customize your storefront's look and feel with custom CSS."},plans:{starter:!1,launch:!1,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0566	manage.store.front.customization	`manage.store.front.customization` | Customize store front | تخصيص واجهة المتجر	staff permission
+Q8-ZD-K0567	API's > Storefront	API's > Storefront [Store Scripts](https://docs.zid.sa/store-scripts-26360853e0.md)	
+Q8-ZD-K0568	Ticketing & Chat System	name:{ar:"نظام التذاكر والدردشة",en:"Ticketing & Chat System"},description:{ar:"احصل على دعم فني سريع وفعّال عبر نظام تذاكر مخصص ودردشة مباشرة لحل مشاكلك التقنية بسهولة.",en:"Get fast and effective technical support via a dedicated ticketing system and live chat to solve your technical issues easily."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0569	Live Chat Support	name:{ar:"الدعم الفني عبر المحادثات",en:"Live Chat Support"},description:{ar:"احصل على مساعدة فورية من فريق زد عبر المحادثات المباشرة لحل أي مشكلة تواجهك.",en:"Get instant help from the Zid team via live chat to resolve any issue you face."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}}	compare-plans: starter, launch, growth, pro
+Q8-ZD-K0570	Professional: Standout Features	24/7 priority support	plan Professional
+Q8-ZD-K0571	زد نمو	تعاون مع حلول زد لتطوير وتحسين نشاطك التجاري، وابرز الأسئلة الشائعة حول حلول زد.	
+Q8-ZD-K0572	manage.store.ecosystem.packaging	`manage.store.ecosystem.packaging` | Manage packaging | إدارة التغليف	staff permission
+Q8-ZD-K0573	تطبيق الجوال	تعرّف على متطلبات تطبيق الجوال للمتاجر، وخصائص التطبيق والأسئلة الشائعة حوله	
+Q8-ZD-K0574	manage.store.ecosystem.mobileapps	`manage.store.ecosystem.mobileapps` | Mobile app service | خدمة تطبيق الجوال	staff permission
+Q8-ZD-K0619	حساب Meta للأعمال	هذه الخطوة تتطلب أن يكون لديك حساب Meta للأعمال جاهزًا مع بيانات نشاطك التجارية مكتملة.	
+Q8-ZD-K0620	سياسات ميتا	لا، مشاكل التقييد أو الحظر تخضع بالكامل لسياسات ميتا، والقرار النهائي من جهتهم فقط.	
+Q8-ZD-K0621	ميتا	مشاكل التقييد أو الحظر على حافظة الأعمال أو رقم الواتساب لاتستطيع زد التحكم فيها أو الإطلاع على أسبابها، والقرار النهائي في رفعها أو الإبقاء عليها يعود لميتا.	
+Q8-ZD-K0622	منصة واتساب للأعمال (API)	واتساب زد مبني على منصة واتساب للأعمال (API) ومربوط بمتجرك مباشرة، فلا تحتاج مطورًا ولا مزود خدمة آخر.	
+Q8-ZD-K0623	رصيد النقاط	تُصنّف ميتا الرسائل إلى أربعة أنواع، وتختلف تكلفة كل رسالة تبعًا لنوعها ومفتاح دولة رقم العميل المستلم. وتُحتسب التكلفة عن كل رسالة مُسلَّمة وتُخصم من رصيد النقاط في متجرك.	
+Q8-ZD-K0624	شركة ميتا	تقوم شركة ميتا بتحديث أسعارها دوريًا (كل ربع سنة تقريبًا) والذي تعتمد عليها النقاط المحسوبة.	
+Q8-ZD-K0625	مراجعة ميتا	تتولّى زد صياغة القوالب بعناية مع ضبط المتغيرات (Variables) والتحقق من الصياغة وإظهار رسالة خطأ عند الصياغة الخاطئة قبل إرسال القالب لمراجعة ميتا، بهدف رفع فرص قبولها وتقليل حالات الرفض.	
+Q8-ZD-K0626	أمازون البائعين	نعم، تحتاج إلى حساب نشط على أمازون البائعين للاستفادة من خدمة ربط زد بأمازون.	
+Q8-ZD-K0627	GDPR; CCPA; PCI-DSS	تم تصميم التكامل للامتثال إلى أعلى معايير الامتثال التنظيمي، بما في ذلك GDPR، CCPA، وPCI-DSS.	
+Q8-ZD-K0628	نسبة زد من أمازون	نسبة زد من أمازون حسب الباقة : النمو: 5% الانطلاقة : 8% الاحترافية:0.95%	النمو; الانطلاقة; الاحترافية
+Q8-ZD-K0629	المحفظة	يتم فرض الرسوم باستخدام المحفظة. نسمح بحد أقصى 500 ريال سعودي كرصيد. بعد ذلك، سيتوقف التطبيق عن العمل حتى تقوم بإعادة شحن محفظتك.	
+Q8-ZD-K0630	باقة زد لايت	لا، تطبيق ربط قنوات البيع غير متاح على باقة زد لايت.	باقة زد لايت
+Q8-ZD-K0631	أمازون	حاليًا، لدينا أمازون في السعودية والإمارات.	السعودية; الإمارات
+Q8-ZD-K0632	شروط الانضمام لـ جاهز	1- سجل تجاري او وثيقة عمل حر. 2-تفعيل مزيد. 3-المنتجات سريعة التحضير او الجاهزة التي لا يتعدى تحضيرها 10 دقائق. 4-موقع المتجر او المخزون في احد مدن المملكة.	احد مدن المملكة
+Q8-ZD-K0633	واجهات برمجة التطبيقات (APIs)	يستخدم التكامل واجهات برمجة التطبيقات (APIs) لمزامنة البيانات بين نظام زد ونظام قناة البيع.	
+Q8-ZD-K0634	مندوب جاهز	الشحن سيتم إنشاؤه بشكل تلقائي بأسم مندوب جاهز ولا يظهر في متجرك، فقط لعملاء جاهز في التطبيق.	
+Q8-ZD-K0635	زد فويس	من القائمة الرئيسية ← الطلبات ← زد فويس.	
+Q8-ZD-K0636	100 مكالمة مجانية	100 مكالمة مجانية.	
+Q8-ZD-K0637	Limited pilot	Available now for abandoned cart recovery · Limited pilot	
+Q8-ZD-K0638	بالنيابة عنك	ذكاء اصطناعي يتواصل بالنيابة عنك.	
+Q8-ZD-K0639	السلات المتروكة	حدد طريقة اختيار العملاء من السلات المتروكة او رفع ملف عندك	
+Q8-ZD-K0640	A call, not another message.	Instead of messages that get missed, Zid Voice reaches customers with a smart, personal call and responds to hesitation in real time.	
+Q8-ZD-K0641	تصميم المتجر	يمكنك تخصيص تصميم متجرك و إضافة شعار المتجر و أيقونة المتجر من خلال: لوحة التحكم > تصميم المتجر	
+Q8-ZD-K0642	القائمة الرئيسية	القائمة الرئيسية : متاحة في الباقة الاحترافية وباقة الأعمال الكبيرة.	الباقة الاحترافية; باقة الأعمال الكبيرة
+Q8-ZD-K0643	تخصيص الثيمات	خاصية تخصيص الثيمات متاحة للباقة الإحترافية وباقة الاعمال الكبيرة فقط	الباقة الإحترافية; باقة الاعمال الكبيرة
+Q8-ZD-K0644	صنع بواسطة زد	إفتراضياً يظهر أسفل المتجر نص حقوق (صنع بواسطة زد)، يمكنك تعديل النص بحيث يكون بأي نص تفضله	
+Q8-ZD-K0645	تذكرة	يمكنك رفع طلب أو تقديم اعتراض عبر لوحة تحكم متجرك من خلال: لوحة التحكم > الضغط على أيقونة تذكرة	
+Q8-ZD-K0646	النمو	يمكنك الوصول الى خدمات النمو من خلال : لوحة التحكم > النمو	
+Q8-ZD-K0647	مدير العلاقة	مدير العلاقة متاح للباقة الإحترافية	الباقة الإحترافية
+Q8-ZD-K0648	شركاء يقدمون الخدمة	شركاء يقدمون الخدمة. رقم الجوال للتواصل. قم بقراءة الشروط والأحكام ثم قم بالضغط على إضافة الى السلة وسيتم نقلك لصفحة الاشتراك لمتابعة الدفع	
+Q8-ZD-K0649	عناقيد التطبيقات	بإمكانك إنشاء تطبيق لمتجرك بواسطة عناقيد التطبيقات.	
+Q8-ZD-K0650	سوق التطبيقات في زد	يمكن الوصول للتطبيق من سوق التطبيقات في زد أو مباشرة عبر الرابط من هنا	
+Q8-ZD-K0651	مدة الاشتراك	مدة الاشتراك في التطبيق سنة واحدة، وعند انتهاء فترة التجديد ينتهي الاشتراك.	
+Q8-ZD-K0652	حساب مطورين (شركات)	يلتزم التاجر بإنشاء حساب مطورين (شركات) في متاجر التطبيقات ابل / قوقل وتزويد فريق عناقيد التطبيقات بالبيانات الخاصة بالحساب، ليتمكن فريق عناقيد من رفع تطبيق التاجر على متجر التطبيقات.	
+Q8-ZD-K0653	عناقيد التطبيقات	في حال عدم توفر حساب مطورين ستقوم عناقيد التطبيقات برفع التطبيق على أحد الحسابات الشخصية الفرعية التابعة لعناقيد التطبيقات مجانًا في منصة ابل فقط.	
+Q8-ZD-K0654	لوحة التحكم	إدارة واحدة من لوحة التحكم لمحتويات المتجر من منتجات وتصنيفات والصفحات واستقبال الطلبات.	
+Q8-ZD-K0655	لماذا يهمك تطبيق الجوال لمتجرك	تعزيز العلامة التجارية الخاصة بمشروعك وذلك بتواجدك على متجر ابل iOS وقوقل بلاي Android.	

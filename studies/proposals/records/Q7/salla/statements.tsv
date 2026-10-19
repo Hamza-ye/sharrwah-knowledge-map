@@ -1,0 +1,17 @@
+stmt_id	bears_on	identifier	statement	scope	marker	cite_ids	from	note
+Q7-SA-001	1;2	مركز الإعدادات > عام > العملات	1- عيّن العملة الحالية للمتجر.			Q7-SA-C001	held	
+Q7-SA-002	1	❓كيف يستطيع العميل اختيار العملة التي يُفضل الدفع بها؟	فتظهر له أسعار المنتجات بالعملة المختارة، بالشكل:			Q7-SA-C002	held	
+Q7-SA-003	1;2	💡 توضيح مهم	هذا يعني أن الأسعار قد تُعرض بعملة محلية مختلفة تلقائياً لتسهيل تجربة الشراء لدى عملائك من بلدان متعددة.			Q7-SA-C003	held	
+Q7-SA-004	3	❓هل يمكنني تغيير العملة الافتراضية للمتجر عندما أرغب بذلك؟	نعم ، بشرط أن لا يكون هناك طلبات شراء للعملاء.			Q7-SA-C004	held	
+Q7-SA-005	2;3	ثانياً- تخصيص تسعير المنتجات	هل سيُدخل التاجر أسعار المنتجات بشكل مخصص لكل الأسواق أم سيعتمد تحديد سعر المنتجات تلقائياً بناء على سعرها الأساسي وسعر الصرف للعملة.	الأسواق المتعددة		Q7-SA-C005	held	
+Q7-SA-006	2;3	ثانياً- تخصيص تسعير المنتجات	في حال اختار التاجر تسعير المنتجات وفق سعر مخصص من قبل التاجر سيتعين عليه إدخال الأسعار لمختلف الأسواق.	الأسواق المتعددة		Q7-SA-C006	held	
+Q7-SA-007	2	🚀الأسواق المتعددة	- التصميم - الأسعار - العملة - دومين المتجر - خيارات الشحن	أي دولة أو منطقة من دول الخليج		Q7-SA-C007	held	the items following the copy Q7-SA-K1976
+Q7-SA-008	2	القسم 1: المعلومات الأساسية	اختر الدول التي سيُعرض لها السوق، واسم يدل على هذه السوق، بالإضافة للغة الافتراضية واللغات الأخرى المدعومة للسوق، وهل تريد إظهار السوق للعملاء أم لا.	الأسواق المتعددة		Q7-SA-C008	held	
+Q7-SA-009	1;3	العملات والمتاجر المتعددة	عند العمل بأكثر من عملة أو متجر، يتم تحويل جميع المبالغ إلى العملة الأساسية للمتجر باستخدام سعر الصرف وقت إنشاء الطلب. حيث يساعد ذلك على توحيد البيانات وعرض التقارير بقيم قابلة للمقارنة.	صفحة أداء المتجر		Q7-SA-C009	held	
+Q7-SA-010	1	❓كيف تظهر عملة العرض في المتاجر متعددة الأسواق؟	في حال كان متجرك يدعم أسواقًا متعددة، يتم عرض وتطبيق القيم المالية المرتبطة بالعروض وفق عملة السوق النشط للعميل.			Q7-SA-C010	held	
+Q7-SA-011	1	❓كيف تظهر عملة العرض في المتاجر متعددة الأسواق؟	أما المتاجر التي تستخدم سوقًا واحدًا، فتستمر العروض بالعمل كالمعتاد وفق عملة المتجر.			Q7-SA-C011	held	
+Q7-SA-012	1	ماهو بايبال Paypal؟	هي وسيلة دفع إلكترونية لعملاء متجرك تسهّل عملية الدفع بعملات مختلفة في جميع أنحاء العالم عبر حسابهم في بايبال، وتعد وسيلة سهلة لتلقي المدفوعات بأمان عبر الإنترنت.	بايبال		Q7-SA-C012	held	
+Q7-SA-013	1	GET /currencies (List Currencies)	This endpoint allows you to fetch a list of all currencies alongside their details, such as `name`, `code`, `symbol` and `status`.		released	Q7-SA-C013	held	x-apidog-status: released
+Q7-SA-014	1;3	POST /currencies (Activate Currencies)	This endpoint allows activating either a single currency or a group of currencies.			Q7-SA-C014	held	
+Q7-SA-015	1	salla.currency.list()	This endpoint is used to list the currencies of a merchant's store. Although the store payouts can be in a different currency, the store's owners can list the different available currencies in the store.	Twilight SDK		Q7-SA-C015	held	
+Q7-SA-016	1	amounts.exchange_rate; scope_exchange_rate	"exchange_rate": { "base_currency": "KWD", "exchange_currency": "KWD", "rate": "1.00000000" }, "scope_exchange_rate": "12.13695338",	Orders Webhook Events Model (example payload)		Q7-SA-C016	held	an example payload, not a schema description

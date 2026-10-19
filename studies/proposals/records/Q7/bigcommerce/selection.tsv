@@ -1,22 +1,23 @@
 concern_id	terms	description	statements	gaps	area_id	action	reason
-BC-C-018	Orders V2 | Storefront Orders | Orders	Orders	6	3	BC-A-06	candidate	
-BC-C-020	Order Transactions | Transactions API (Beta)	Order transactions	6	0	BC-A-06	candidate	
-BC-C-021	Refunds | Refunds & returns	Refunds	4	3	BC-A-06	candidate	
-BC-C-006	Pickup | Pickup Methods | Pickup Options | Storefront Pickup Options | Buy online, pick up in store	Pickup (buy online, pick up in store)	5	3	BC-A-08	candidate	
-BC-C-069	Point of sale | POS integrations | POS & In-Store	Point of sale	3	2	BC-A-08	candidate	
-BC-C-022	Payment Processing | Create Payments	Payment processing (Payments API)	10	0	BC-A-09	candidate	
-BC-C-023	Payment Methods | Payment Methods V3 | Payment Methods V2	Payment methods	3	2	BC-A-09	candidate	
-BC-C-024	Stored Instruments API (Beta) | Stored Payment Instruments | Stored credit cards	Stored payment instruments	6	2	BC-A-09	candidate	
-BC-C-027	Apple Pay, Google Pay, and Amazon Pay | Digital wallets	Digital wallets	4	2	BC-A-09	candidate	
-BC-C-026	Embedded Payment Providers | Open Payment Providers | Open Payment Provider Fee | Embedded Payment Provider List | Payment freedom	Payment providers: Embedded and Open Payment Providers	11	3	BC-A-10	candidate	
-BC-C-029	Unified Billing | Merchant Unified Billing | Unified Billing Partner	Unified Billing (app charges on the BigCommerce invoice)	12	1	BC-A-12	candidate	
-BC-C-030	Fees and Billing | GMV cap | Open Payment Provider Fees	Fees and billing (subscription, GMV and plan)	8	1	BC-A-12	candidate	
-BC-C-074	Currencies | Multi-currency	Currencies	14	0	BC-A-19	candidate	
-BC-C-060	System Logs | Store logs	System logs and store logs	2	4	BC-A-26	candidate	
-BC-C-061	Staff accounts | Account Users	Staff accounts and control panel users	3	2	BC-A-26	candidate	
-BC-C-076	Staging environments | Staging Pro	Staging environments	4	2	BC-A-26	candidate	
-BC-C-077	BigCommerce mobile app | Mobile App Terms | Commerce Mobile Application	BigCommerce mobile app	4	2	BC-A-26	candidate	
-BC-C-025	BigCommerce Payments | BigCommerce Payments by PayPal	BigCommerce Payments	10	1	BC-A-32	candidate	
-BC-C-007	Price Lists	Price lists	5	2	BC-A-33	candidate	
-BC-C-075	Geography	Geography (countries and states)	1	4	BC-A-34	candidate	
-S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	128	40		candidate	
+BC-C-018	Orders V2 | Storefront Orders | Orders	Orders	6	3	BC-A-06	set aside	order management terms; no currency term
+BC-C-020	Order Transactions | Transactions API (Beta)	Order transactions	6	0	BC-A-06	copy	
+BC-C-021	Refunds | Refunds & returns	Refunds	4	3	BC-A-06	set aside	refunds; no currency term
+BC-C-006	Pickup | Pickup Methods | Pickup Options | Storefront Pickup Options | Buy online, pick up in store	Pickup (buy online, pick up in store)	5	3	BC-A-08	set aside	pickup; not about currencies
+BC-C-069	Point of sale | POS integrations | POS & In-Store	Point of sale	3	2	BC-A-08	set aside	point of sale; not about currencies
+BC-C-022	Payment Processing | Create Payments	Payment processing (Payments API)	10	0	BC-A-09	set aside	payment processing through gateways; no currency term
+BC-C-023	Payment Methods | Payment Methods V3 | Payment Methods V2	Payment methods	3	2	BC-A-09	set aside	listing accepted payment methods; no currency term
+BC-C-024	Stored Instruments API (Beta) | Stored Payment Instruments | Stored credit cards	Stored payment instruments	6	2	BC-A-09	set aside	stored payment instruments; not about currencies
+BC-C-027	Apple Pay, Google Pay, and Amazon Pay | Digital wallets	Digital wallets	4	2	BC-A-09	set aside	digital wallets; no currency term
+BC-C-026	Embedded Payment Providers | Open Payment Providers | Open Payment Provider Fee | Embedded Payment Provider List | Payment freedom	Payment providers: Embedded and Open Payment Providers	11	3	BC-A-10	copy	
+BC-C-029	Unified Billing | Merchant Unified Billing | Unified Billing Partner	Unified Billing (app charges on the BigCommerce invoice)	12	1	BC-A-12	set aside	app charges on the invoice; not about store currencies
+BC-C-030	Fees and Billing | GMV cap | Open Payment Provider Fees	Fees and billing (subscription, GMV and plan)	8	1	BC-A-12	copy	
+BC-C-074	Currencies | Multi-currency	Currencies	14	0	BC-A-19	copy	
+BC-C-060	System Logs | Store logs	System logs and store logs	2	4	BC-A-26	set aside	logs; not about currencies
+BC-C-061	Staff accounts | Account Users	Staff accounts and control panel users	3	2	BC-A-26	set aside	staff accounts; not about currencies
+BC-C-076	Staging environments | Staging Pro	Staging environments	4	2	BC-A-26	set aside	staging environments; not about currencies
+BC-C-077	BigCommerce mobile app | Mobile App Terms | Commerce Mobile Application	BigCommerce mobile app	4	2	BC-A-26	set aside	mobile app; not about currencies
+BC-C-025	BigCommerce Payments | BigCommerce Payments by PayPal	BigCommerce Payments	10	1	BC-A-32	copy	
+BC-C-007	Price Lists	Price lists	5	2	BC-A-33	copy	
+BC-C-075	Geography	Geography (countries and states)	1	4	BC-A-34	set aside	countries and states data; no currency term
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	128	40		copy	
+BC-C-039	Multi-storefront | Multi-Storefront | MSF					add	transactional currencies are added through the MSF-enabled control panel
