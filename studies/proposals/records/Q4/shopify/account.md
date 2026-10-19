@@ -6,6 +6,9 @@
 - A seller picks a suggested manual payment method, or creates a custom one, on the Payment providers settings page (Settings > Payments). The admin files it as the "Manual payment methods" page under Payments. Q4-SH-K1735, Q4-SH-K1738, Q4-SH-K2859, Q4-SH-K2860, Q4-SH-K1193
 - Shopify's terms say any contract of sale is "directly and only between you and the customer", and that the seller is the merchant of record. Q4-SH-K1491, Q4-SH-K1492
 - For Italy, the Help Center says to set up COD (Cash on Delivery) as a custom manual payment method. Q4-SH-045
+- In the runs, a store's Manual payment methods settings page showed: "Payments made outside your online store. Orders paid manually must be approved before being fulfilled." Q4-SH-047
+- In the founder's imported capture, the admin's `PaymentProviderCreate` answer for store zyd38b-ze returned a new payment provider named "Cash on Delivery (COD)" (PaymentProvider/140). Q4-SH-050
+- On store capture-plus, the Shopify Flow template "Mark order as paid when webhook received" was described as "Built for bank transfer, invoice and cash on delivery orders that Shopify cannot capture itself." Q4-SH-057
 - The copied gaps on who is responsible for manual payment methods, and why they are placed as they are, stay open. Q4-SH-G0101, Q4-SH-G0102
 
 ## [2]
@@ -13,7 +16,8 @@
 - Shopify calls these "Manual payment methods" (Arabic: "طرق الدفع اليدوية") and names cash on delivery (COD), money orders and bank transfers as common types. Q4-SH-003, Q4-SH-004
 - A custom method takes a "Custom payment method name". The names Bank Deposit, Cash, Cash on Delivery (COD), custom, External Credit, External Debit, Gift Card, Money Order and Store Credit are reserved by Shopify. Q4-SH-007
 - In the Admin API, Shopify records such payments with `orderCreateManualPayment` and `orderMarkAsPaid`, both described as recording "payments received outside the standard checkout process". Q4-SH-035, Q4-SH-039
-- The list of suggested methods offered in Settings > Payments wasn't in what was read. Q4-SH-N03
+- On the Manual payment methods page, the admin's `PaymentProviders` answer listed `manualProviders`: Cash on Delivery (COD), Money Order and Bank Deposit, each with `"group":"MANUAL"`. The same list came back for a store with `"shopifyPlus":true` and one with `"shopifyPlus":false`. Q4-SH-048, Q4-SH-049
+- The list as the Manual payment methods drop-down menu displays it wasn't in what was read: the held pages show the drop-down closed. Q4-SH-N03
 
 ## [3]
 
@@ -31,6 +35,9 @@
 - On Shopify Plus, partial payments can be recorded through Collect payment > Record payment for orders with payment terms. "Manual payments aren't captured by Shopify." A recorded partial payment changes the order status to Partially paid and shows in the customer's account. Q4-SH-021, Q4-SH-022, Q4-SH-023, Q4-SH-024
 - For a draft order marked as paid under international sales tools, the "Amount received" is converted at the live rate, and the seller updates it "for reporting purposes" if it differs. Q4-SH-026
 
+### Recording the payment, as a run shows it
+- In a journey on store demo-fake-dev-store, an order created from a draft order marked as paid got the timeline event "You manually marked YER699.95 as paid for this order.", with event label `order_sale_success`. Q4-SH-051
+
 ### Payment terms
 - Orders with Payment pending can take payment terms: Due on receipt, Due on fulfillment, Net term (net 7 to net 90) or Fixed term. An order not paid by the due date becomes Overdue, and the payment status shows "Due". Q4-SH-014, Q4-SH-015, Q4-SH-019, Q4-SH-K0917, Q4-SH-K1448
 
@@ -41,7 +48,9 @@
 - The terms place refunds, among other things, on the seller. Q4-SH-K1492
 - Orders paid with a manual payment method are among the only order types that can be deleted. Deleted orders "are no longer tracked in reports". Q4-SH-030, Q4-SH-031
 - Cancelling an order that is fulfilled but whose payment isn't collected "prevents you from collecting payment". Q4-SH-032
-- How a refund of an order paid by a manual method is handled wasn't in what was read. Q4-SH-N02
+- In the same journey, the Refund page for that order showed its refund amount as "Manual Enter manual refund amount YER". The admin's suggested refund transaction had `"formattedGateway":"Manual"` and `"isOutOfBandRecordingRequired":false`. Q4-SH-053, Q4-SH-052
+- The refund created a transaction with `"status":"SUCCESS"` and `"kind":"REFUND"`. The timeline recorded "You manually marked YER699.95 as refunded." (`order_refund_success`), and the order's balance showed Refunded. Q4-SH-054, Q4-SH-055, Q4-SH-056
+- Whether any money moves through Shopify in such a refund, and the refund of an order placed at checkout with a named manual payment method, weren't in what was read. Q4-SH-N02
 
 ### Reports
 - In the payments finance reports, an order marked as paid with the method "Other" shows its payment method as "Manual". These reports "are based on captured payments across your payment gateways". Q4-SH-033, Q4-SH-034
@@ -53,9 +62,11 @@
 - Manual payment methods don't support test mode: testing one takes a real order. Q4-SH-028
 - For B2B company locations whose orders are submitted as drafts, manual payment methods don't display during the initial checkout. Q4-SH-029
 - The API's `amount` field on `orderCreateManualPayment` needs a Shopify Plus store. Both mutations need the `write_orders` scope and the mark_orders_as_paid permission. The mutation's error codes include AMOUNT_EXCEEDS_BALANCE and CURRENCY_MISMATCH. Q4-SH-036, Q4-SH-042, Q4-SH-043
+- Both stores whose `PaymentProviders` answers are recorded stated `"countryCode":"YE"`; one had `"shopifyPlus":true`, the other `"shopifyPlus":false`, and both were given the same `manualProviders` list. Q4-SH-048, Q4-SH-049
 - A statement of the countries or plans where manual payment methods are offered wasn't in what was read. Q4-SH-N04
 
 ## [5]
 
 - For Italy, the Help Center sends sellers to set up COD as a custom manual payment method, and points to App Store apps related to COD. Q4-SH-045, Q4-SH-046
+- On store capture-plus, the Shopify Flow template "Flag COD draft orders and block repeat offenders" was described as giving "sight of COD orders that never pass through your normal checkout". Q4-SH-058
 - A Shopify service that collects cash on delivery for the seller wasn't in what was read. Q4-SH-N01
