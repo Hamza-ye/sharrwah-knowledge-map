@@ -17,10 +17,13 @@
 - The pricing table prices Basic, Grow, Advanced and Plus by month and by year. The API object `ShopPlan` "Indicates the plan tier (such as Basic, Advanced, or Plus)". Q8-SH-K2733; Q8-SH-K2734; Q8-SH-K2889; Q8-SH-K2890
 - Shopify for enterprise is offered as the full platform or as "modular components": Shop Pay, Checkout and cart component, and Storefront component. Q8-SH-023; Q8-SH-024; Q8-SH-025; Q8-SH-026; Q8-SH-027
 - The Agentic plan lets a merchant add products to Shopify Catalog and sell them through Shopify agentic storefronts without a Shopify online store. Q8-SH-016
+- In the Flow app's answer on store capture-plus (observed 7 October 2026), the billing plan's public display name has these possible values: Advanced, Agentic, Agentic Enterprise, Basic, Development, Grow, Inactive, Lite, Other, Paused, Plus, Plus Trial, Retail, Shop Component, Staff Business, Starter and Trial. Q8-SH-098
 
 ### Organization, stores and the admin
 - An Organization holds stores. On Shopify Plus, expansion stores are "additional .myshopify.com stores that fall under the same organization and contract". Dev stores are a further kind of store. Q8-SH-K1254; Q8-SH-K1256; Q8-SH-046; Q8-SH-051
 - The admin's sections include Plan, Apps, Sales channels, Markets, Banking, Growth and Analytics. Q8-SH-K1312; Q8-SH-K2163; Q8-SH-K2062; Q8-SH-K1928; Q8-SH-K1791; Q8-SH-K2042; Q8-SH-K2117
+- On store capture-plus (observed 7 October 2026), the admin's navigation showed Home, Orders, Products, Customers, Growth, Discounts, Content, Markets and Analytics. Under Sales channels it showed Online Store, Agentic and Shop, and under Apps an installed app. Q8-SH-104
+- The same store's settings list showed General, Plan, Payments, Checkout, Customer accounts, Shipping and delivery, Taxes and duties, Locations, Apps, Sales channels, Domains, Customer events, Notifications, Metafields and metaobjects, Languages, Customer privacy and Policies. Q8-SH-103
 
 ### Sales channels, Markets and POS
 - A sales channel app "connects a merchant's online store to surfaces outside Shopify". Q8-SH-K2063; Q8-SH-K2064
@@ -47,6 +50,8 @@
 - The Agentic plan has no monthly subscription fee. Five features are not available on it, and products and settings carry over to a paid plan. Its enterprise version adds unlimited staff, Combined Listings, carrier-calculated shipping, payment capture per fulfillment and more locations. Q8-SH-017; Q8-SH-018; Q8-SH-019; Q8-SH-020; Q8-SH-021; Q8-SH-022
 - Custom Level 2 PII apps need the Grow plan or higher. Stores on any plan can use public App Store apps that contain functions. Q8-SH-035; Q8-SH-K2213
 - Shopify Plus organizations can have ten stores on their contract with no additional cost. Expansion stores share no data by default. Apps are billed per store, and theme licenses are needed for each store. The Plus terms and the 3-year renewal flow are shown only in a Plus store's admin. Q8-SH-050; Q8-SH-047; Q8-SH-048; Q8-SH-049; Q8-SH-K2636; Q8-SH-G0245; Q8-SH-G0246
+- On store capture-plus (observed 7 October 2026), the Plan page's Plan details showed "Plus" and "Development store", with a link to the Plus terms. The PlusContractTerms answer on that page was `"currentContractTerms":null`, so the terms themselves were not shown. Q8-SH-101; Q8-SH-102; Q8-SH-G0245
+- On store capture-grow (observed 2 October 2026), the Plus trial's review page said the store "will automatically roll onto a Plus term" at the end of the trial. It also said: "Select between a 1- or 3-year term once your 2 month trial ends." Q8-SH-106; Q8-SH-107; Q8-SH-G0246
 - Some Shopify for enterprise services are marked as dependent on contract terms, which were not found. Q8-SH-N02
 
 ### By place
@@ -70,6 +75,7 @@
 - Admin routes gated by named "betas" include product imports, inventory counts, the merchant audit log, the theme editor and WorldFirst setup. The seller-protection terms sit at a path containing "beta". Q8-SH-K0014; Q8-SH-K0166; Q8-SH-K0178; Q8-SH-K0183; Q8-SH-K0199; Q8-SH-K2849
 - On Shopify Plus, feature test drives let an organization activate upcoming features on chosen stores before release to all stores, with auto-release timelines. Q8-SH-042; Q8-SH-043; Q8-SH-044; Q8-SH-045
 - Feature previews give early access on dev stores, one preview per store. Six are listed, among them `market_driven_shipping`, `physical_inventory_apis` and `ship_and_pickup_in_one_order`. Q8-SH-071; Q8-SH-072; Q8-SH-073; Q8-SH-074; Q8-SH-075; Q8-SH-076; Q8-SH-077; Q8-SH-078; Q8-SH-079
+- On the Create store page for a dev store (organization 239421532, observed 7 October 2026), "Test a feature preview on this store" offered previews of "changes to Shopify and APIs before they're generally available". It listed Ship and pickup in one order (available to Plus merchants), Market-driven shipping, both together, Physical inventory, Liquid July '26 changes and Shopify admin's new design. Q8-SH-099; Q8-SH-100
 - A backwards-incompatible change reaches merchants' admins nine months after the stable version that brings it. Q8-SH-080
 - APIs are released every three months. Each stable version is supported for at least 12 months. The version types are Stable, Release candidate and Unstable. Q8-SH-036; Q8-SH-K2243; Q8-SH-066; Q8-SH-067; Q8-SH-068
 - Deprecated parts are announced in the developer changelog. An app that keeps using unsupported resources becomes unsupported and is delisted from the Shopify App Store. Q8-SH-069; Q8-SH-070; Q8-SH-037
