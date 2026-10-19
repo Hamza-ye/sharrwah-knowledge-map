@@ -37,9 +37,12 @@
 
 ### Recording the payment, as a run shows it
 - In a journey on store demo-fake-dev-store, an order created from a draft order marked as paid got the timeline event "You manually marked YER699.95 as paid for this order.", with event label `order_sale_success`. Q4-SH-051
+- In the saved HTML of that journey's new draft order (step 6), and of order #1006 in another journey (step 45), the Collect payment menu held two items, "Credit card" and "Mark as paid"; the draft order also held "Payment due later". These are the saved markup's text: the steps' accessibility trees show the Collect payment button, not its items. Q4-SH-059, Q4-SH-060
+- On order #1006, the Mark as paid dialog read: "Mark this order as paid if you received $1.00 USD from another payment method." Q4-SH-061
 
 ### Payment terms
 - Orders with Payment pending can take payment terms: Due on receipt, Due on fulfillment, Net term (net 7 to net 90) or Fixed term. An order not paid by the due date becomes Overdue, and the payment status shows "Due". Q4-SH-014, Q4-SH-015, Q4-SH-019, Q4-SH-K0917, Q4-SH-K1448
+- In the saved HTML of store capture-plus's New company page, the Payment terms section held: No payment terms, Due on fulfillment, and Net 7 to Net 90. Its accessibility tree shows the heading only. Q4-SH-062
 
 ### Fees
 - No third-party transaction fees are charged on manual payment methods, including draft orders marked as paid with a manual method. Q4-SH-K1740, Q4-SH-K1335, Q4-SH-025
