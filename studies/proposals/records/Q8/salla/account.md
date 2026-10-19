@@ -2,7 +2,7 @@
 
 ## [1]
 
-- **differs** (role): Salla's own summary calls it "a Saudi software-as-a-service (SaaS) commerce platform", and lists "connected products such as Salla Point, Salla Ads, Mahally, an app maker, an app marketplace, and enterprise-oriented services". vs Shopify [1]: Q8-SH-052; WooCommerce [1]: Q8-WC-K0507. Q8-SA-K2515; Q8-SA-K1382
+- **differs** (role): Salla is "a Saudi software-as-a-service (SaaS) commerce platform" with "connected products": Salla Point, Salla Ads, Mahally, an app maker, an app marketplace and enterprise-oriented services. vs Shopify [1]: Q8-SH-052; WooCommerce [1]: Q8-WC-K0507. Q8-SA-K2515; Q8-SA-K1382
 - **the same** (role): "تختلف باقات سلة لتناسب مراحل نمو متجرك واحتياجاتك". vs Shopify [1]: Q8-SH-001. Q8-SA-001
 - **not in what was read**: a periodic announcement of what is new across the platform. vs Shopify [1]: Q8-SH-064; Q8-SH-065. Q8-SA-N02
 
@@ -10,12 +10,12 @@
 
 ### Plans (باقات)
 - **differs** (term): the plans are باقة بيسك (free), بلس, برو and سبيشال "للشركات والمؤسسات الكبرى". The store's `plans` setting holds basic, plus, pro and special, each with a `features_count` (50, 100, 150, 5000). The dashboard has a "Store plan" page. vs Shopify [2] Plans: Q8-SH-002; Q8-SH-K2889; Shopify [2] Organization: Q8-SH-K1312. Q8-SA-002; Q8-SA-003; Q8-SA-004; Q8-SA-005; Q8-SA-K0055; Q8-SA-K0048
-- **goes beyond**: باقة الدعم is a reduced-price stage for a new store, with all paid-plan features, for up to 3 months or the first 5 electronically paid orders. Q8-SA-026; Q8-SA-027
-- **goes beyond**: متجر سلة sells add-ons to a plan: upgrades and renewals, SMS credit, more branches, more users, instant translation. Q8-SA-017
+- **goes beyond**: باقة الدعم gives a new store paid-plan features at a reduced price, until 3 months or 5 electronically paid orders. Q8-SA-026; Q8-SA-027
+- **goes beyond**: متجر سلة sells upgrades, SMS credit, more branches, more users and instant translation. Q8-SA-017
 
 ### Stores and markets
 - **differs** (role): one account can hold several linked stores ("Manage stores", `multi-stores`). vs Shopify [2] Organization: Q8-SH-K1254. Q8-SA-K0041; Q8-SA-K0044; Q8-SA-K0046
-- **differs** (term): Markets (الأسواق المتعددة) create copies of a store for each country, region or city, with their own currencies. Store Scopes in the API serve "multi-country functionality". vs Shopify [2] Sales channels, Markets and POS: Q8-SH-K1930. Q8-SA-K1967; Q8-SA-K1976; Q8-SA-K1977; Q8-SA-K1980
+- **differs** (term): Markets (الأسواق المتعددة) are copies of a store for each country, region or city. Store Scopes serve "multi-country functionality". vs Shopify [2] Sales channels, Markets and POS: Q8-SH-K1930. Q8-SA-K1967; Q8-SA-K1976; Q8-SA-K1977; Q8-SA-K1980
 
 ### Sales channels, POS and other products
 - **differs** (term): the dashboard's "Sales channels" section has a channel column, and a channel shows as disabled where it isn't available to the store. vs Shopify [2] Sales channels, Markets and POS: Q8-SH-K2063. Q8-SA-K1453; Q8-SA-K1461
@@ -32,22 +32,22 @@
 
 ### Entities and feature settings
 - **differs** (identifier): each store feature setting carries `enabled`, `released`, `plans`, `countries` and `type` ("feature" or "app"). vs Shopify [2] Entitlements: Q8-SH-K0175; WooCommerce [2] Features: Q8-WC-K1310. Q8-SA-K0052; Q8-SA-K2104; Q8-SA-K1973
-- **differs** (role): the policies name different companies: شركة تطبيق سلة لتقنية المعلومات (App Store and partner policies), شركة منصة سلة للاتصالات وتقنية المعلومات (theme store, affiliate marketing), and شركة سلة القابضة in the footer. vs Shopify [3] By place: Q8-SH-K1243. Q8-SA-K2008; Q8-SA-K2012; Q8-SA-K2510; Q8-SA-K2511; Q8-SA-K2512
+- **differs** (role): the policies name شركة تطبيق سلة لتقنية المعلومات, شركة منصة سلة للاتصالات وتقنية المعلومات and شركة سلة القابضة. vs Shopify [3] By place: Q8-SH-K1243. Q8-SA-K2008; Q8-SA-K2012; Q8-SA-K2510; Q8-SA-K2511; Q8-SA-K2512
 - **not in what was read**: a plan for selling through AI agents without an online store. vs Shopify [2] Plans: Q8-SH-016. Q8-SA-N03
 - **not in what was read**: parts developed separately and then loaded into or merged with the core. vs WooCommerce [2] WooCommerce and its packages: Q8-WC-005; WooCommerce [3] How core grows: Q8-WC-007. Q8-SA-N04
 
 ## [3]
 
 ### By plan
-- **differs** (role): the comparison table gives each feature by بيسك, بلس and برو. E-payments, Salla Ads, Mahally and theme choice start at بلس; SEO, VAT with the ZATCA link, CSS and JS theme code, and customer groups need برو. vs Shopify [3] By plan: Q8-SH-K2743. Q8-SA-006; Q8-SA-007; Q8-SA-008; Q8-SA-009; Q8-SA-010; Q8-SA-011; Q8-SA-012; Q8-SA-013; Q8-SA-014
+- **differs** (role): the comparison table sets features by بيسك, بلس and برو: e-payments, Salla Ads, Mahally and theme choice from بلس; SEO, VAT, CSS/JS theme code and customer groups on برو. vs Shopify [3] By plan: Q8-SH-K2743. Q8-SA-006; Q8-SA-007; Q8-SA-008; Q8-SA-009; Q8-SA-010; Q8-SA-011; Q8-SA-012; Q8-SA-013; Q8-SA-014
 - **differs** (role): feature settings list their plans, such as `multi-countries` for special and pro with `limit` 10, and `app-maker`, `salla-point-app` and `mahly` for plus, pro and special. Markets and the operations log are features of باقة سبيشل. vs Shopify [3] By plan: Q8-SH-K2812. Q8-SA-K1973; Q8-SA-K1391; Q8-SA-K1433; Q8-SA-K1449; Q8-SA-K1978; Q8-SA-028
 - **differs** (role): third-party apps such as `convert-flow` and `microsoft-clarity` carry `"type": "app"` and the plans plus, pro and special. The App Store says it is "لجميع تجار سلة بمختلف الباقات". vs Shopify [3] By plan: Q8-SH-035; Q8-SH-K2213. Q8-SA-K2105; Q8-SA-K2111; Q8-SA-020
-- **goes beyond**: upgrades, freezing a subscription for up to 30 days twice a year, the return to باقة البيسك when a plan isn't renewed, and support "وفقاً لامتيازات الباقة". Adding services "يخضع لسياسة باقات وعروض منصة سلّة". Special includes a dedicated account manager. Q8-SA-016; Q8-SA-015; Q8-SA-033; Q8-SA-032; Q8-SA-036; Q8-SA-037; Q8-SA-K0190
+- **goes beyond**: upgrades, freezing a subscription, the return to باقة البيسك on lapse, support "وفقاً لامتيازات الباقة", and added services under "سياسة باقات وعروض منصة سلّة"; Special has an account manager. Q8-SA-016; Q8-SA-015; Q8-SA-033; Q8-SA-032; Q8-SA-036; Q8-SA-037; Q8-SA-K0190
 
 ### How apps, themes and partners are added
 - **differs** (role): "يحتفظ فريق سلة بحق مراجعة وقبول أو رفض أي تطبيق". Themes are reviewed before publication, and so are Ready Stores. vs Shopify [3] How new units are added: Q8-SH-028; WooCommerce [3] How extensions and themes are added: Q8-WC-071. Q8-SA-K2007; Q8-SA-K2400; Q8-SA-K2408
-- **differs** (role): paid apps are paid through Salla, which keeps a share for "خدمات الاستضافة والتكامل" and pays developers after about 15 days. vs Shopify [3] How new units are added: Q8-SH-030; WooCommerce [3]: Q8-WC-K0461. Q8-SA-K2138; Q8-SA-K2145; Q8-SA-K2146
-- **differs** (role): apps are free or paid, are installed on monthly or yearly app plans set by the provider, and can have trials. vs Shopify [3] How new units are added: Q8-SH-030; WooCommerce [3]: Q8-WC-K0735. Q8-SA-021; Q8-SA-025; Q8-SA-K2082; Q8-SA-K2083
+- **differs** (role): paid apps are paid through Salla, which keeps a share and pays developers after about 15 days. vs Shopify [3] How new units are added: Q8-SH-030; WooCommerce [3]: Q8-WC-K0461. Q8-SA-K2138; Q8-SA-K2145; Q8-SA-K2146
+- **differs** (role): apps are free or paid, on the provider's monthly or yearly app plans, with trials. vs Shopify [3] How new units are added: Q8-SH-030; WooCommerce [3]: Q8-WC-K0735. Q8-SA-021; Q8-SA-025; Q8-SA-K2082; Q8-SA-K2083
 - **differs** (role): a partner must meet the partner programme's conditions, which Salla reviews. Developers test in up to 10 free demo stores. vs Shopify [3] How new units are added: Q8-SH-K2183; Shopify [2] Organization: Q8-SH-051; WooCommerce [3]: Q8-WC-060. Q8-SA-K2342; Q8-SA-K2346; Q8-SA-K2405
 - **goes beyond**: before installation the merchant authorizes the app for its scope. Q8-SA-022; Q8-SA-K2085
 - **differs** (role): third-party strategic or logistic services have "أحكامها المستقلة التي تتم بين التاجر وبين الطرف الثالث". vs Shopify [3] How new units are added: Q8-SH-K2169. Q8-SA-034; Q8-SA-035
