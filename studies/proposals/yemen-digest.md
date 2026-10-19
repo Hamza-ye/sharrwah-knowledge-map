@@ -1,0 +1,1674 @@
+# Yemen's evidence, digested for the drafting runs
+
+Written by `method/yemen_digest.py` from Stage 1's files in `studies/yemen-cases/` (axes.tsv sha256 `5d6bbb08e9a06cad`). Don't edit it by hand: re-run the script.
+
+## How to read it
+
+- **An axis** is a condition Stage 1 found in more than one state; **a constant**, one it found in a single state.
+- **Today** is each place's latest held state, as Stage 1's build takes it. Each part gives the state, its place after
+  "@", the date it held at ("as of", from the condition's `held_at`), and the citations it rests on. A part reads
+  `unknown` where the latest state at that place ended, and `disputed` where sources of the same date disagree.
+- **Ids.** `YA-` an axis and `YK-` a constant, in `studies/yemen-cases/axes.tsv` and `constants.tsv`; `YQ-` a
+  condition, in `conditions.tsv`; `YE-` a citation with its quote, in `citations.tsv`. This digest gives no `YE-`
+  ids. A state's citations are in its axis's `states` column, after the state, and a constant's in its `cite_ids`
+  column. Its other rows (ended, proposed, or at places where it no longer holds) are in its `note` column.
+- **Stage 1's rules for reading a state** (`PLAN.md` section 6, Yemen):
+  - a condition's states are alternatives: only one holds at a place and time;
+  - a state's place is the scope its source gives it;
+  - only a state whose source says it holds in all of Yemen ("across Yemen") supersedes states at other places;
+  - a proposed state is never today;
+  - each part of today is read with its date.
+- **Q2's frame:** the merchant sells in the Yemeni market. A condition naming only countries or regions is read
+  against that.
+- **Not shown** is not shown: where no axis, constant or citation gives a fact, Yemen's evidence doesn't show it.
+
+## Axes
+
+- **YA-01** Rial price of one US dollar in the exchange market: the number of rials a US dollar buys or sells for at a point in time (buying and selling where given).
+  - today: YER 1,562 buying, 1,567 selling @ Aden (as of 2026-10-10)
+  - today: over YER 1,800 @ Aden and areas under the Yemeni government's control (as of 2024-06-28)
+  - today: over YER 1,768 buying, 1,776 selling @ Aden and the occupied governorates (عدن والمحافظات المحتلة) (as of 2024-06-01)
+  - today: YER 531 to 534 @ Houthi-controlled areas (as of 2026-06)
+  - today: YER 532 buying, 534 selling @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: YER 533 @ Sana'a (as of 2026-10-08)
+  - today: YER 1,560 @ areas controlled by the legitimate government (as of 2026-04-27)
+  - today: YER 1,628 @ government-controlled areas (as of 2025-12)
+  - today: YER 1,562 @ the new-rial zone (as of 2026-06)
+  - today: disputed @ place not stated, between YER 2,000 @ place not stated / YER 3,000 @ place not stated / YER 2,065 @ place not stated (as of 2025-08-02, 2025)
+  - other states recorded: 54, in axes.tsv
+- **YA-02** Rial price of one Saudi riyal in the exchange market: the number of rials a Saudi riyal buys or sells for (buying and selling where given, or an average).
+  - today: YER 411 buying, 411.50 selling @ Aden (as of 2026-10-10)
+  - today: YER 477 selling @ Aden and areas under the Yemeni government's control (as of 2024-06-28)
+  - today: YER 139.70 buying, 140.10 selling @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: YER 139.50 buying, 140.20 selling @ Sana'a (as of 2026-10-08)
+  - today: YER 500 @ place not stated (as of 2025-08-02)
+  - other states recorded: 5, in axes.tsv
+- **YA-03** Rial rate of the US dollar that a central bank sets, caps or publishes: the official rate: the rate a central bank fixes, the highest selling price it approves, or the rate it publishes.
+  - today: highest selling price YER 530.50 @ Houthis' area (as of 2026-03-17)
+  - today: fixed at YER 1,558 @ the internationally recognized government's area (as of 2026-02-15)
+  - today: official rate YER 250 @ place not stated (as of 2017-06)
+  - other states recorded: 24, in axes.tsv
+- **YA-04** Rial rate of the Saudi riyal that a central bank sets or caps: the official rate a central bank fixes, or the highest selling price it approves.
+  - today: fixed at YER 425 buying, 428 selling @ Central Bank of Yemen's area (as of 2025-09-01)
+  - today: highest selling price YER 140 @ Houthis' area (as of 2026-03-17)
+  - today: fixed at YER 410 buying, 413 selling @ the internationally recognized government's area (as of 2026-02-13)
+  - other states recorded: 1, in axes.tsv
+- **YA-05** Whether the authority fixes and enforces the exchange rate, or lets it float: fixed or capped and enforced by the central bank or authorities, or floating with the market.
+  - today: fixed and enforced @ Houthi-controlled areas (as of 2026-05)
+  - today: fixed and enforced @ Houthis' area (as of 2026-02)
+  - today: fixed @ the internationally recognized government's area (as of 2026-04-24)
+  - other states recorded: 4, in axes.tsv
+- **YA-06** How the rial's exchange rate is moving: stable, fluctuating, falling or improving.
+  - today: relatively stable @ Houthi-controlled areas (as of 2025-07-22)
+  - today: fluctuating @ government-controlled areas (as of 2025-09-15)
+  - today: improved markedly @ the internationally recognized government's area (as of 2025-07-30)
+  - today: falling sharply and continuously @ the new-rial zone (as of 2026-02-17)
+  - today: stable @ place not stated (as of 2026-07-31)
+- **YA-07** Rial rate of the US dollar that international data providers quote: the quoted rate.
+  - today: YER 236.197 @ place not stated (as of 2026-10-10)
+  - other states recorded: 2, in axes.tsv
+- **YA-08** How the central bank supplies foreign currency for imports: the mechanism: financing from reserves at the official rate, Saudi-deposit letters of credit, currency auctions, or the import committee's approvals.
+  - today: essential imports financed by the central bank at the official rate @ Central Bank of Yemen's area (as of 2016)
+  - today: import committee's approvals @ the internationally recognized government's area (as of 2026-02)
+  - other states recorded: 2, in axes.tsv
+- **YA-09** Whether banks and importers must or may use the Aden central bank's letters of credit, SWIFT connection and currency auctions: required, or banks barred from them.
+  - today: banks barred from the Aden central bank's mechanisms @ Houthis' area (as of 2026-02-17)
+  - today: letters of credit, SWIFT connection and auction participation required @ the internationally recognized government's area (as of 2026-02-17)
+  - other states recorded: 1, in axes.tsv
+- **YA-10** Through which channel importers obtain foreign currency: the main channel: money exchangers or the parallel market.
+  - today: the parallel market @ place not stated (as of 2026)
+  - other states recorded: 1, in axes.tsv
+- **YA-11** How available foreign currency is: ample, scarce or severely short.
+  - today: severe shortage (as of 2026)
+  - today: hard to obtain @ place not stated (as of 2026-02-17)
+  - other states recorded: 1, in axes.tsv
+- **YA-12** Whether exchange businesses may buy and sell foreign currency: allowed, barred from selling to merchants or importers, or suspended.
+  - today: suspended @ Houthis' area (as of 2020-09-09)
+  - today: suspended @ the internationally recognized government's area (as of 2025-07-22)
+  - other states recorded: 1, in axes.tsv
+- **YA-13** How much foreign currency a person can sell for rials: the daily ceiling banks and exchangers apply, or refusal to convert.
+  - today: some exchangers refuse, others cap at 100 Saudi riyals or US$50 a day, banks at 200 Saudi riyals or US$50 a day @ government-controlled areas (as of 2026-02)
+  - today: banks buy up to 10,000 Saudi riyals a day @ the internationally recognized government's area (as of 2026-04-24)
+- **YA-14** General exchange rate customs uses to assess duty: the rials per US dollar used.
+  - today: YER 700 @ the internationally recognized government's area (as of 2025-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-15** Which rial banknote prints may be used for payment: old notes only with the Aden central bank's new notes barred, all notes legal tender, or notes printed before 2016 withdrawn.
+  - today: old notes only @ Dakhm store's service (as of 2026-10-10)
+  - today: old notes only, Aden's new notes barred @ Houthi-controlled areas (as of 2020)
+  - today: old notes only, Aden's new notes barred @ Houthis' area (as of 2026-10-10)
+  - today: all notes, new and old, legal tender @ the internationally recognized government's area (as of 2020-02-26)
+  - other states recorded: 1, in axes.tsv
+- **YA-16** What holders of banknotes withdrawn from use must do with them: where and by when they must hand the notes in, who may, and what they get for them.
+  - today: individuals other than traders, banks and exchangers hand in Aden's new notes at e-wallet agents within 30 days, for e-money or legal notes up to a ceiling @ Houthis' area (as of 2020-01)
+  - today: hand in pre-2016 notes within 60 days @ the internationally recognized government's area (as of 2024-06-01)
+- **YA-17** Whether a central bank's new coins and notes may be used for payment: acceptable, refused, or barred as illegal, for which coin or note.
+  - today: 200-rial note acceptable @ Central Bank of Yemen's area (as of no date)
+  - today: Sana'a's new coins and notes barred as illegal @ the internationally recognized government's area (as of 2026-08-07)
+- **YA-18** Whether worn or damaged banknotes are accepted in payment: accepted, or refused by merchants and in daily trade.
+  - today: damaged notes refused @ Sana'a (as of 2026-07-11)
+  - today: damaged notes refused @ areas controlled by the legitimate government (as of 2026-04-27)
+  - today: damaged notes hard to pay with @ place not stated (as of 2026-08-14)
+  - other states recorded: 1, in axes.tsv
+- **YA-19** How much of the cash in circulation is usable: the share of notes that are sound or damaged, and which denominations are affected.
+  - today: about 10% of notes sound @ Houthi-controlled areas (as of 2026-07-11)
+  - today: about 10% of notes sound @ place not stated (as of 2026-07-11)
+  - other states recorded: 2, in axes.tsv
+- **YA-20** How available rial cash is: ample, short or in crisis, and in which notes.
+  - today: short (as of 2026-02-11)
+  - today: disputed @ Aden, between short @ Aden / no real shortage, cash poorly distributed @ Aden (as of 2026-02-15)
+  - today: short (as of 2026-02-11)
+  - today: short (as of 2026-02-11)
+  - today: short @ the areas of the internationally recognized government and the Houthis' areas of influence (as of 2026-07-11)
+  - today: short @ the internationally recognized government's area (as of 2026-03-29)
+  - today: short @ place not stated (as of 2026-10-10)
+  - other states recorded: 3, in axes.tsv
+- **YA-21** Currency in which domestic sales and contracts must be paid: the rial only, or whether a seller may require or a buyer may use foreign currency, and the exceptions.
+  - today: rial only @ Council of Ministers' area (مجلس الوزراء) (as of 2025-08-12)
+  - today: rial only @ Ministry of Justice's area (as of 2025-08-18)
+  - today: rial only @ the internationally recognized government's area (as of 2026-04-24)
+  - today: seller may not require payment in a foreign currency @ the unified Republic's area (as of 2010)
+- **YA-22** Which currencies buyers and sellers use in everyday dealings: the rial, or foreign currencies such as the Saudi riyal and the US dollar.
+  - today: Saudi riyal dominant @ Aden and areas under the Yemeni government's control (as of 2025-10-28)
+  - today: Saudi riyal widely used @ place not stated (as of 2025-12-26)
+  - other states recorded: 1, in axes.tsv
+- **YA-23** Whether the electronic rial may be used for payment: available and for what, or warned against for banks, exchangers and businesses.
+  - today: available, with no measurable effect @ Houthi-controlled areas (as of 2026)
+  - today: used in place of e-wallets @ Houthis' area (as of 2024-04-05)
+  - today: warned against @ the internationally recognized government's area (as of 2020-09-21)
+  - other states recorded: 2, in axes.tsv
+- **YA-24** Amount of currency circulating outside the banking system: the amount.
+  - today: YER 3.3 trillion @ Aden (as of 2025)
+  - today: YER 3.3 trillion @ government-controlled areas (as of 2026-04-24)
+  - today: YER 3.3 trillion @ place not stated (as of 2024)
+  - other states recorded: 2, in axes.tsv
+- **YA-25** Whether the 2024 bans by the central banks in Sana'a and Aden on dealing with each other's banks stand: barred (the 13 Aden-based banks at the Houthis' area, the 6 Sana'a-based banks at the government's area), ended, or cancelled by the July 2024 agreement.
+  - today: the bar on the 6 Sana'a-based banks cancelled @ Central Bank of Yemen's area (as of 2024-07-23)
+  - today: the bar on the 13 Aden-based banks cancelled @ Houthis' area (as of 2024-07-23)
+  - today: some bank restrictions partly reversed @ IRG and HC areas (as of 2024-07)
+  - today: the bar on the 6 Sana'a-based banks cancelled @ the internationally recognized government's area (as of 2025-03-15)
+  - today: both sides' bans on banks cancelled @ place not stated (as of 2024-07-23)
+  - other states recorded: 3, in axes.tsv
+- **YA-26** Which e-wallets and e-payment services banks and exchange companies may deal with: licensed ones only, with the unlicensed services named, or the ban lifted.
+  - today: the ban on the 12 wallets reversed @ the internationally recognized government's area (as of 2025-06-15)
+  - other states recorded: 2, in axes.tsv
+- **YA-27** Whether parties may deal with Ansarallah (the Houthis): the designations Ansarallah carries in all, as each source lists them (Foreign Terrorist Organization, Specially Designated Global Terrorist, EU listing, a group classified as terrorist), or their revocation.
+  - today: listed under EU restrictive measures @ the European Union's area (as of 2026-10-10)
+  - today: FTO and SDGT @ the United States' area (as of 2025-03-05)
+  - today: classified as terrorist @ the internationally recognized government's area (as of 2024-05-30)
+  - other states recorded: 2, in axes.tsv
+- **YA-28** Which transactions involving Ansarallah US persons may carry out under general licences: the transactions each set of general licences authorizes.
+  - today: general licences 22A, 23A, 24A, 26A and 28A @ the United States' area (as of 2026-10-10)
+  - other states recorded: 2, in axes.tsv
+- **YA-29** What financial institutions must do with funds of persons listed for freezing: freeze and report, under which list.
+  - today: freeze under the UN sanctions regime of resolution 2140 @ UN Security Council's area (as of 2026-11-14)
+  - today: freeze and report funds of a designated terrorist organisation @ the United States' area (as of 2025-03-04)
+  - today: freeze at once and report to the Financial Information Unit @ the unified Republic's area (as of 2013-09-12)
+- **YA-30** What financial institutions must do with a suspicious transaction: the reporting duty.
+  - today: reports suspected activity @ Cash e-wallet's service (as of 2026-10-10)
+  - today: report to the Financial Information Unit at once @ the unified Republic's area (as of 2013-09-12)
+- **YA-31** Due diligence foreign financial institutions apply to Yemen: risk-based, enhanced, or transactions ceased.
+  - today: risk-based @ FATF's area (as of 2026-06-19)
+  - today: stricter, or Yemen transactions ceased @ place not stated (as of 2026-02)
+- **YA-32** Whether banks must move their head offices to Aden: required or not, the deadline and the penalty, and whether the measures were withdrawn.
+  - today: move to Aden @ the internationally recognized government's area (as of 2026-02-17)
+  - other states recorded: 2, in axes.tsv
+- **YA-33** Where banks' head offices and operations are: in Sana'a or in Aden, and which banks have moved, decided to move or refused.
+  - today: Sana'a banks moving to Aden @ Houthi-controlled areas (as of 2025-09-15)
+  - today: Sana'a banks moving to Aden, IBY refusing @ Houthi-controlled areas and Aden (as of 2025-04-17)
+  - today: IBY refuses to move @ International Bank of Yemen's service (as of 2025-04-17)
+  - today: Kuraimi moved to Aden @ Kuraimi Islamic Microfinance Bank's service (as of 2025-06-22)
+  - today: Sana'a banks moving to Aden @ Sana'a and Aden (as of 2026-05)
+  - today: most banks moved to Aden @ the internationally recognized government's area (as of 2025-06-22)
+  - today: Sana'a banks moved to Aden @ place not stated (as of 2026-09-10)
+  - other states recorded: 9, in axes.tsv
+- **YA-34** Whether a named bank's branches are open to customers: open and serving as usual, closed, reopened, or being closed, for each bank at its own service, or for the banks a row names.
+  - today: Arab Bank closing its branches @ Arab Bank's service (as of 2024)
+  - today: Kuraimi branches open as usual @ Kuraimi Islamic Microfinance Bank's service (as of 2025-06-22)
+  - today: Rafidain Bank and Qatar National Bank closing their Sana'a branches @ Sana'a (as of 2026-02-02)
+  - other states recorded: 2, in axes.tsv
+- **YA-35** How many branches a bank has, and where: the number of branches and agents and the cities named.
+  - today: 12 branches in 9 cities @ Kuraimi Islamic Bank's service (as of 2026-10-10)
+  - today: 243 branches and 440 Kuraimi Express agents @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-36** Where formal banking services are available: concentrated in cities or reaching rural areas, and the main centres.
+  - today: even more limited, as banking concentrates in Aden @ Houthi-controlled areas (as of 2025)
+  - today: concentrated in Aden @ south Yemen (as of no date)
+  - today: concentrated in cities, thin in rural areas @ place not stated (as of 2025-09-15)
+- **YA-37** How many banks operate: the number and kinds of banks.
+  - today: 31 registered banks @ place not stated (as of 2026-02)
+  - other states recorded: 2, in axes.tsv
+- **YA-38** Whether depositors can draw the deposits banks have frozen, or are repaid them: frozen, banks unable to pay, or partly repaid, generally or at a named bank.
+  - today: deposits frozen @ Houthi-controlled areas (as of 2025-12-15)
+  - today: small depositors being repaid @ Houthis' area (as of 2025-07)
+  - today: International Bank of Yemen deposits frozen @ International Bank of Yemen's service (as of 2024-05)
+  - today: deposits frozen @ place not stated (as of 2026-04-29)
+  - other states recorded: 1, in axes.tsv
+- **YA-39** How much cash a bank customer can withdraw a day: the daily ceiling, or that withdrawals are restricted.
+  - today: daily ceilings, YER 30,000 at Kuraimi @ Houthi-controlled areas (as of 2026-07-11)
+  - today: YER 80,000 a day @ areas controlled by the legitimate government (as of 2026-04-27)
+  - today: daily ceilings @ place not stated (as of 2026-07-11)
+  - other states recorded: 1, in axes.tsv
+- **YA-40** Whether interest-bearing transactions are allowed: allowed, or banned by law (and from when, and how far applied).
+  - today: banned by law @ House of Representatives in Sana'a's area (مجلس النواب بصنعاء) (as of 2024-04-05)
+  - today: banned by law @ Houthi-controlled areas (as of 2022)
+  - today: banned by law @ Houthis' area (as of 2025-08-12)
+  - today: allowed @ the internationally recognized government's area (as of 2025-09-10)
+- **YA-41** Whether commercial banks can reach SWIFT: connected, cut off or pressed to leave, for the banks named or for commercial banks generally.
+  - today: commercial banks connected (as of 2026-02)
+  - today: commercial banks connected (as of 2026-02)
+  - today: commercial banks connected (as of 2026-02)
+  - today: commercial banks connected (as of 2026-02)
+  - today: commercial banks connected (as of 2026-02)
+  - other states recorded: 4, in axes.tsv
+- **YA-42** Whether the central bank takes part in the Buna regional payment platform: joined, or refuses.
+  - today: Refuses to take part in Buna @ Houthis' area (as of 2026-02)
+  - today: Joined Buna @ the internationally recognized government's area (as of 2026-04-29)
+  - today: Joined Buna @ place not stated (as of 2024-04-05)
+- **YA-43** Whether Yemeni banks have correspondent banking relationships: kept, limited, or severed, and with whom.
+  - today: Severed @ Houthi-controlled areas (as of 2026-02)
+  - today: Limited, through some GCC banks @ government-controlled areas (as of 2026-02)
+  - today: Severely restricted @ place not stated (as of 2026-04-29)
+- **YA-44** Which central bank's licence and rules banks are subject to: the Sana'a central bank's, the Aden central bank's, or both.
+  - today: The Sana'a central bank's @ Houthis' area (as of 2024-05-31)
+  - today: The Aden central bank's @ the internationally recognized government's area (as of 2024-04-05)
+  - today: Both central banks' @ place not stated (as of 2024-04-05)
+  - other states recorded: 1, in axes.tsv
+- **YA-45** Which central bank banks must report their data to: the Aden central bank, or barred from reporting to it.
+  - today: Barred from reporting to the Aden central bank @ Houthis' area (as of 2020-11)
+  - today: Must report to the Aden central bank @ the internationally recognized government's area (as of 2020-06)
+- **YA-46** Minimum capital a commercial bank must hold: the amount.
+  - today: YER 45 billion @ the internationally recognized government's area (as of 2022)
+  - today: YER 6 billion @ the unified Republic's area (as of 2022-03)
+- **YA-47** Whether buyers can use a bank's or wallet's mobile app: working, stopped for technical reasons, or blocked.
+  - today: Apps of banks that moved to Aden blocked @ Houthis' area (as of 2026-01-16)
+  - today: Stopped by a technical fault @ Kuraimi Islamic Microfinance Bank's service (as of 2026-01-16)
+  - today: Stopped for technical updates @ Kuraimi Jawal (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-09-13)
+- **YA-48** Whether banks run one system across the government-held and Houthi-held areas: one system, or separate systems for each area.
+  - today: Separate systems for each area @ Kuraimi Islamic Microfinance Bank's service (as of 2026-07-11)
+  - today: Separate systems for each area at several banks, Kuraimi among them @ the Yemeni government's and the Houthi group's areas (as of 2026-07-11)
+- **YA-49** Whether firms can get bank credit: available or scarce, and on what terms.
+  - today: Largely absent @ Houthi-controlled areas (as of 2025)
+  - today: Project financing up to YER 200 million @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: Very little @ place not stated (as of 2021)
+- **YA-50** What collateral lenders require: the collateral.
+  - today: A commercial or gold guarantee, or an account balance @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: Deeds, personal assets or gold, sometimes over 100% of the loan @ place not stated (as of 2022)
+- **YA-51** Which networks exchange companies may or must use for domestic transfers: the unified network (UNMONEY) required, the only one allowed with their own networks closed, or barred; or a Sana'a unified network planned.
+  - today: UNMONEY barred @ Houthis' area (as of 2025-12-15)
+  - today: UNMONEY only, banks' and exchange companies' own networks closed @ the internationally recognized government's area (as of 2026-01-22)
+  - proposed, never today: A Sana'a unified network that all major networks must join @ Houthis' area (as of 2025-02-12)
+  - other states recorded: 2, in axes.tsv
+- **YA-52** Which banks, exchange companies and e-wallets are linked to the unified money transfer network: the banks, exchange companies and e-wallets linked to it.
+  - today: All banks and e-wallets @ the internationally recognized government's area (as of 2026-01-22)
+  - today: Running, with many companies and banks linked @ the liberated areas (المناطق المحررة) (as of 2024-03-16)
+  - other states recorded: 1, in axes.tsv
+- **YA-53** Through which channels money is moved within Yemen in practice: the main channels (exchange and hawala networks, Kuraimi Express, banks) and how far they are supervised.
+  - today: Exchange and hawala networks, rather than banks @ Houthi-controlled areas (as of 2026-08-07)
+  - today: Kuraimi Express, among the largest networks @ Kuraimi Express (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-06-22)
+  - today: Exchange and hawala networks, rather than banks @ Sana'a (as of 2025-12)
+  - today: Exchange and hawala networks, rather than banks @ place not stated (as of 2026-02)
+- **YA-54** Through which channels remittances from abroad reach Yemen: the main channels (banks, international transfer companies, exchange companies, hawala, informal networks) and their shares.
+  - today: Mostly informal, through exchange companies and hawala @ place not stated (as of 2026-04-29)
+  - other states recorded: 2, in axes.tsv
+- **YA-55** Whether and through whom money can be sent between areas held by different parties: possible or stopped, and through whom.
+  - today: Stopped at exchange companies, open only through Kuraimi @ the liberated areas (المناطق المحررة) (as of 2024-03-16)
+  - today: Through money exchangers, not banks @ place not stated (as of 2024-04-05)
+- **YA-56** Fee for sending money from government-held areas to Houthi-held areas: the fee or loss, as a share or amount.
+  - today: About 30% or more @ Houthi-controlled areas (as of 2020-08-25)
+  - today: Up to 180% @ Sana'a and Aden (as of 2026-07-10)
+  - today: About 20% @ from areas under 'occupation' control to areas of 'national control' (as of no date)
+  - today: About 30% or more @ government-controlled areas to Houthi-controlled areas (as of 2020-08-25)
+  - today: About 30% or more @ place not stated (as of 2020-09-09)
+  - other states recorded: 2, in axes.tsv
+- **YA-57** How much may be sent in one money transfer through exchange companies and networks: the ceiling per transfer, per customer or between governorates, or none.
+  - today: 100,000 rials between governorates @ Houthis' area (as of 2020-08-25)
+  - today: No ceiling on the number of transactions, up to over US$40,000 each @ place not stated (as of 2024-04-05)
+- **YA-58** Who may pay out remittances from abroad: which banks, exchange companies and agents are allowed.
+  - today: Only branches the Sana'a central bank authorizes, no agents outside the Houthi areas @ Houthis' area (as of 2024-03-17)
+  - today: Only banks and exchange companies the Aden central bank approves @ the internationally recognized government's area (as of 2024-05-28, 2024)
+- **YA-59** Currency in which remittances from abroad are paid out: in the currency sent, in rials, in Saudi riyals, or not in US dollars.
+  - today: Not in US dollars @ Houthi-controlled areas (as of 2025-07-22)
+  - today: Not in US dollars @ Houthis' area (as of 2024-05-28)
+  - today: In the currency sent, or as the beneficiary decides @ the internationally recognized government's area (as of 2024-05-28)
+  - other states recorded: 2, in axes.tsv
+- **YA-60** Whether a buyer can send and receive international money transfers through a service: available or not at the service named, and through which transfer companies (Western Union, MoneyGram, Ria, stablecoins).
+  - today: Available @ Cash e-wallet's service (as of 2026-10-10)
+  - today: Available @ Digibank's service (as of 2026-10-10)
+  - today: Available @ Floosak's service (as of 2026-10-10)
+  - today: Available @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: Available @ Mahfathati (Tadhamon Bank)'s service (as of 2026-10-10)
+  - today: Available @ ONE Cash's service (as of 2026-10-10)
+  - today: MoneyGram, STC Pay, Fawri and Western Union priced in the corridor @ Saudi Arabia to Yemen (corridor) (as of 2025-09-02)
+  - today: Available @ Tadhamon Pay (Tadhamon Bank)'s service (as of 2024-04-05)
+  - today: Available, limited to the cities @ Western Union's service (as of 2025-04-24)
+  - proposed, never today: Named as a possibility, through MoneyGram or Western Union @ Cash e-wallet's service (as of 2026-10-10)
+- **YA-61** How readily remittance recipients in each area can use formal financial services: access, cost and speed.
+  - today: Constrained by financial disruption and sanctions @ Houthi-controlled areas (as of 2026-03-15)
+  - today: Weaker access, costlier and slower @ government-controlled areas (as of 2026-02)
+- **YA-62** Whether international payment services can be used for payments from or to Yemen: available, sending from Yemen, or unavailable at the service named; or a request to add it open.
+  - today: Unavailable @ CoinGate's service (as of 2026-10-10)
+  - today: Available @ Mellow's service (as of 2026-10-10)
+  - today: Sending from Yemen @ PayPal's service (as of 2026-10-10)
+  - today: Unavailable @ Rho's service (as of 2026-10-10)
+  - today: Unavailable @ Stripe's service (as of 2026-10-10)
+  - today: Unavailable @ Wallex's service (as of 2026-10-10)
+  - today: Unavailable @ Wise's service (as of 2026-10-10)
+  - today: Not available, a request to add it open @ WooPayments's service (as of 2026-10-10)
+  - today: Available @ Yemeni Store for E-Payment's service (as of 2026-10-10)
+  - today: Unavailable @ Zid Pay Kuwait (Zid)'s service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-63** Who may obtain an exchange licence: the capital required and limits on new licences and branches by area.
+  - today: Restricted in urban areas, expanded in rural regions @ Central Bank of Yemen's area (as of 2026-02)
+  - today: Higher minimum capital, and limits on new licences or branches by area @ Houthis' area (as of 2024-04-05)
+  - today: Higher minimum capital, and limits on new licences or branches by area @ the internationally recognized government's area (as of 2024-04-05)
+  - other states recorded: 2, in axes.tsv
+- **YA-64** How many exchange businesses operate: the number of money exchangers, or of exchange companies and shops.
+  - today: 91 money exchangers @ Aden (as of 2023)
+  - today: 415 money exchangers @ Sana'a (as of 2023)
+  - today: Thousands @ place not stated (as of 2024-07-09)
+  - other states recorded: 3, in axes.tsv
+- **YA-65** What exchange companies must do with unclaimed transfers: report them, to whom and by when.
+  - today: Report them to the Aden central bank within twenty days @ the internationally recognized government's area (as of 2024-06-26)
+  - other states recorded: 1, in axes.tsv
+- **YA-66** How closely the central bank supervises exchange companies and transfers: strict supervision, electronic tracking of transfers, inspections, or minimal or disabled oversight.
+  - today: Electronic tracking of transfers @ Houthis' area (as of 2024-07-09)
+  - today: Strict supervision @ the internationally recognized government's area (as of 2026-04-24)
+  - today: Minimal oversight @ place not stated (as of 2026-02)
+  - other states recorded: 1, in axes.tsv
+- **YA-67** What a recipient must present to collect a money transfer in cash: the identification required, by amount.
+  - today: National ID or passport above 50,000 rials, other cards below @ Central Bank of Yemen's area (as of 2014)
+  - today: The remittance number only @ ONE Cash's service (as of 2026-10-10)
+  - today: National ID or passport above 150,000 rials, other cards below @ the internationally recognized government's area (as of 2023-08-08)
+- **YA-68** Whether a buyer can pay for online purchases from a phone wallet or bank app: available, coming later, or not, at the wallet or at the online store named (and which wallets the store accepts).
+  - today: Accepted: e-wallet apps @ Al Naeem Delivery's service (as of 2026-10-10)
+  - today: Accepted: Kuraimi's M Floos with Hasseb @ Anayees store's service (as of 2026-10-10)
+  - today: Accepted: Al-Qutaibi Bank, fully integrated @ Bazzarry's service (as of 2026-10-10)
+  - today: Available @ Cash Pay (Cash e-wallet)'s service (as of 2026-10-10)
+  - today: Not yet available, coming later @ Cash e-wallet's service (as of 2026-10-10)
+  - today: Accepted: Jaib, Jawali and Cash @ Dakhm store's service (as of 2026-10-10)
+  - today: Accepted: local wallets @ DeliFast's service (as of 2026-10-10)
+  - today: Accepted: Kuraimi and e-wallets @ Etlobni's service (as of 2026-10-10)
+  - today: Available @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: Available @ Jawali's service (as of 2026-10-10)
+  - today: Available @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: Available @ Mahfathati (Tadhamon Bank)'s service (as of 2026-10-10)
+  - today: Available @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: Available @ ONE Cash's service (as of 2026-10-10)
+  - today: Accepted: the Cash wallet among e-payments @ OnTime (Quality Connect)'s service (as of 2026-10-10)
+  - today: Accepted: Floosak, Jawali, BYES, Cash and Hasseb @ Procorners's service (as of 2023-08-09)
+  - today: Accepted: Mobile Money, M Floos and Kuraimi @ Taiba Hypermarket's service (as of 2026-10-10)
+  - today: Accepted: Kuraimi, Jaib, Cash and Jawali @ Yes Media store's service (as of 2026-10-10)
+  - today: Supported by some platforms, Souq Al-Yemen and Yemen Commerce @ place not stated (as of 2025-09-12)
+  - other states recorded: 1, in axes.tsv
+- **YA-69** Whether a buyer can use a phone wallet without internet or a smartphone: available by SMS or USSD or on basic phones, or the app needs internet.
+  - today: Available without internet @ BYES (Al-Amal Bank)'s service (as of 2026-10-10)
+  - today: Available without internet @ Cash e-wallet's service (as of 2026-10-10)
+  - today: Available without internet @ Floosak's service (as of 2026-10-10)
+  - today: Available without internet @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-02-22)
+  - today: Available without internet @ Jawali's service (as of 2026-10-10)
+  - today: Available without internet @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: Available without internet @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: Available without internet @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: Available without internet @ ONE Cash's service (as of 2026-10-10)
+  - today: Available without internet, by USSD for Sabafon numbers only @ SabaCash's service (as of 2026-10-10)
+  - today: Available without internet @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+  - today: Needs internet @ place not stated (as of 2022-03)
+  - other states recorded: 1, in axes.tsv
+- **YA-70** Whether a buyer can transfer money between different providers' wallets: available or not, and through which link (WeNet, Wasel), at the service named or across the market.
+  - today: Available @ Cash e-wallet's service (as of 2026-10-10)
+  - today: Available @ Floosak's service (as of 2026-06-29)
+  - today: Available @ Jawali's service (as of 2026-10-10)
+  - today: Available @ MEPS Yemen's service (as of 2026-10-10)
+  - today: Available @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: Available @ National Wallet (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: Available @ ONE Cash's service (as of 2026-10-10)
+  - today: Available @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+  - today: Limited @ place not stated (as of 2025-06-15)
+  - other states recorded: 3, in axes.tsv
+- **YA-71** What happens to a wallet transfer to someone without a wallet that is not collected: returned or suspended, and after how long.
+  - today: disputed @ ONE Cash's service, between Returned to the sender after 30 days @ ONE Cash's service / Returned to the sender within 14 days @ ONE Cash's service (as of 2026-10-10)
+- **YA-72** Whether a buyer can put cash into and take cash out of a phone wallet at agents, branches or partner networks: available or not, and where (agents, branches, exchange networks, post offices).
+  - today: Available @ Cash e-wallet's service (as of 2026-10-10)
+  - today: Available @ Floosak's service (as of 2026-10-10)
+  - today: Available @ Jaib's service (as of 2026-10-10)
+  - today: Available @ Jawali's service (as of 2026-10-10)
+  - today: Available @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: Available @ Mahfathati (Tadhamon Bank)'s service (as of 2026-10-10)
+  - today: Available @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: Available @ National Wallet (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: Available @ ONE Cash's service (as of 2026-10-10)
+  - today: Available @ SabaCash's service (as of 2026-10-10)
+  - today: Available @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+  - today: Available @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+  - today: Redeemable in cash on request @ the internationally recognized government's area (as of 2023-08-08)
+  - today: Available at branches and agents, but agents scarce and withdrawals restricted @ place not stated (as of 2022-03)
+- **YA-73** How large a phone wallet's network of agents is: the number of agents and points of sale, or how widely they are spread.
+  - today: Wide network across Yemen @ Cash e-wallet's service (as of 2026-10-10)
+  - today: More than 3,000 agents and 18,000 points of sale @ Jawali's service (as of 2024-05-02)
+  - today: 132 branches, 2,626 agents and 7,620 points of sale @ Kuraimi Islamic Microfinance Bank's service (as of 2022-03)
+  - today: Wide network across Yemen @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: Wide network across Yemen @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: Wide network across Yemen @ ONE Cash's service (as of 2026-10-10)
+  - today: The branches and agents of partner exchange companies @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+- **YA-74** Whether a buyer can move money between a phone wallet and a bank account: available or not at the service named, and with which banks.
+  - today: Available @ Cash e-wallet's service (as of 2026-10-10)
+  - today: Available @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: Available @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: Available @ MB wallet's service (as of 2024-11-24)
+  - today: Available @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: Available @ ONE Cash's service (as of 2026-10-10)
+  - today: Available @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+  - today: Available @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+  - today: Widely available through Wasel and WeNet @ place not stated (as of 2024-10-21)
+  - other states recorded: 1, in axes.tsv
+- **YA-75** Which phone wallets are available to buyers: the wallets or providers named.
+  - today: Available @ Aden Cash (Aden Islamic Bank for Microfinance)'s service (as of 2026-10-10)
+  - today: Yemen Wallet being rolled out @ Houthis' area (as of 2025-08-12)
+  - today: Available @ Mahfathati (Tadhamon Bank)'s service (as of 2024-04-05)
+  - today: Mobile Money, Quality Connect and M Floos @ Sana'a and the governorates under the Supreme Political Council and the National Salvation Government (صنعاء والمحافظات الواقعة تحت سلطة المجلس السياسي الأعلى وحكومة الإنقاذ الوطني) (as of 2019-12-24)
+  - today: ONE Cash, Floosak and Cash @ Yemen Kuwait Bank's service (as of 2026-10-10)
+  - today: wallets available @ place not stated (as of 2026-08-17)
+- **YA-76** Which phone wallets buyers use most: the wallets named as leading or most used.
+  - today: Jaib, Jawali, Mahfathati and Mobile Money lead @ place not stated (as of 2026-02-11)
+  - other states recorded: 2, in axes.tsv
+- **YA-77** Which services a phone wallet offers buyers: the range of services the wallet lists (transfers, purchases, bills, top-ups, cash in and out, salaries and others).
+  - today: Transfers, purchases and bills, among others @ Cash e-wallet's service (as of 2026-10-10)
+  - today: Transfers, purchases and bills, among others @ Floosak's service (as of 2026-10-10)
+  - today: Transfers, purchases and bills, among others @ Jawali's service (as of 2026-10-10)
+  - today: Account control, instant transfers and balances @ Ki Bank (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-01-13)
+  - today: Deposits, bills and purchases @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: Linked to banks, ATMs and transfer networks @ MB wallet's service (as of 2024-11-24)
+  - today: Holding and transferring small sums @ National Wallet (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: unknown @ National Wallet Company's service (undated)
+  - today: Transfers, purchases and bills, among others @ ONE Cash's service (as of 2026-10-10)
+  - today: Transfers, purchases and bills, among others @ SabaCash's service (as of 2026-10-10)
+  - today: Mobile financial transactions, linked bank accounts and virtual cards @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+  - today: Transfers, purchases and bills, among others @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+  - today: Transfers, purchases and bills, among others @ place not stated (as of 2026-08-17)
+  - proposed, never today: Receive, load and send money without internet @ National Wallet Company's service (as of 2020-01-21)
+- **YA-78** Whether a buyer needs a bank account to pay by phone: not needed, or a bank account required, at the service named or under the rules.
+  - today: Not needed @ BYES (Al-Amal Bank)'s service (as of 2026-10-10)
+  - today: A bank account needed @ Central Bank of Yemen's area (as of 2014)
+  - today: Not needed @ Floosak's service (as of 2026-10-10)
+  - today: Not needed @ Jawali's service (as of 2026-10-10)
+  - today: A bank account needed @ Kuraimi Jawal (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: Not needed @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: Not needed @ ONE Cash's service (as of 2026-10-10)
+  - today: Not needed @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+  - today: Not needed for some wallets @ place not stated (as of 2026-09-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-79** What a buyer must provide to open a phone wallet: the documents and data required.
+  - today: a personal ID with a national number @ Central Bank of Yemen's area (as of 2014)
+  - today: an active mobile number and a copy of the ID card, or passport for non-Yemenis @ Floosak's service (as of 2026-10-10)
+  - today: an active mobile number and a valid ID card, or passport and residence for non-Yemenis @ Jawali's service (as of 2026-10-10)
+  - today: an ID document @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: the personal ID card and a subscription request at a branch or office @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: an ID card and personal data @ ONE Cash's service (as of 2026-10-10)
+  - today: an active mobile number owned by the user and a copy of an ID card or passport, merchants also a commercial register @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+  - today: a national ID card or passport, an activation form with personal data, and a locally registered mobile number @ the internationally recognized government's area (as of 2023-08-08)
+  - today: usually a Yemeni phone number, personal data and proof of identity @ place not stated (as of 2025-05)
+  - other states recorded: 2, in axes.tsv
+- **YA-80** What a buyer must do to activate a phone wallet: the verification steps (ID photos, a selfie, a visit to an agent, SMS codes).
+  - today: an agent checks the data against the ID card, with SMS confirmation and activation codes @ Floosak's service (as of 2026-10-10)
+  - today: a photo of the ID card @ Jaib's service (as of 2026-09-12)
+  - today: a photo of the ID and a selfie @ Jawali's service (as of 2026-09-06)
+  - today: the account verified before use @ ONE Cash's service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-81** Whether a buyer can transact from a wallet before it is activated: which transactions work.
+  - today: receiving and topping up work, sending to other wallets fails @ Jawali's service (as of 2026-09-06)
+  - today: simple transactions, for a limited time @ ONE Cash's service (as of 2026-10-10)
+- **YA-82** Whether a buyer can open a wallet or bank account remotely: yes in the app or by electronic know-your-customer, partly (registration only), or only at an agent.
+  - today: registration in the app, activation at an agent @ Floosak's service (as of 2026-10-10)
+  - today: yes, in the app, activated through customer service or at an agent @ Jawali's service (as of 2026-10-10)
+  - today: yes, for customers outside Yemen, through the remote customer-service app @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: yes, in the app @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: yes, in the app, as an unverified customer with limited ceilings @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: registration in the app @ ONE Cash's service (as of 2026-10-10)
+  - today: yes, in the app @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+  - today: allowed by electronic know-your-customer, for natural persons, with the central bank's approval @ the internationally recognized government's area (as of 2026-10-10)
+- **YA-83** Where a buyer can open a phone wallet: at agents, branches or offices.
+  - today: at any authorized agent, or the bank's branches and offices @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: at ONE Cash agents @ ONE Cash's service (as of 2026-10-10)
+  - today: at the bank or any of its agents @ place not stated (as of 2022-03)
+- **YA-84** Who may open a phone wallet: the persons and bodies allowed.
+  - today: a person with legal capacity who registers and accepts the terms @ Cash e-wallet's service (as of 2026-10-10)
+  - today: citizens and residents with a local mobile line, and service providers, points of sale, legal persons and organizations @ Floosak's service (as of 2026-10-10)
+- **YA-85** How many wallet accounts one customer may hold: the maximum.
+  - today: three at most @ Central Bank of Yemen's area (as of 2026-10-10)
+  - today: three, each on a different mobile number @ Floosak's service (as of 2026-10-10)
+  - today: three, each on a different mobile number @ ONE Cash's service (as of 2026-10-10)
+  - today: three, each on a different mobile number @ the internationally recognized government's area (as of 2023-08-08)
+- **YA-86** Which currencies a phone wallet account can hold: the rial only, or also foreign currencies (which).
+  - today: more than one currency @ Cash e-wallet's service (as of 2026-10-10)
+  - today: more than one currency, in separate accounts within the wallet @ Jaib's service (as of 2026-10-10)
+  - today: more than one currency @ Jawali's service (as of 2026-10-10)
+  - today: the rial, Saudi riyal and US dollar @ ONE Cash's service (as of 2026-10-10)
+  - today: the rial and the major foreign currencies (US dollar, Saudi riyal, UAE dirham) @ the internationally recognized government's area (as of 2025-07-09)
+  - other states recorded: 1, in axes.tsv
+- **YA-87** Limits on a phone wallet's balance and transactions: the ceilings (per transaction, day, month, balance) or that ceilings apply.
+  - today: ceilings by customer profile, set by the provider @ Cash e-wallet's service (as of 2026-10-10)
+  - today: ceilings apply, under central bank instructions @ Central Bank of Yemen's area (as of 2026-10-10)
+  - today: up to 3,000,000 rials a day and 10,000,000 a month @ Floosak's service (as of 2025-07-25)
+  - today: purchases up to 100,000 rials a day @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: limited ceilings for self-registered customers @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - today: ceilings by customer category: temporary customers bills only, 10,000 rials a day and 100,000 a month, permanent customers up to 30 million rials @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+  - today: individuals 1,000,000 rials per transaction, 2,000,000 a day, 5,000,000 a month, 50,000,000 a year, balance 8,000,000, and set limits in foreign currency @ the internationally recognized government's area (as of 2025-07-09)
+  - other states recorded: 2, in axes.tsv
+- **YA-88** Limit on the e-money one institution may issue: a ceiling tied to capital, or no limit.
+  - today: up to 15 percent of the bank's capital and statutory reserves @ Central Bank of Yemen's area (as of 2014)
+  - today: no limit @ Houthis' area (as of 2020, 2020-03)
+  - today: unknown @ place not stated (as of no date)
+- **YA-89** Fee for withdrawing cash from a phone wallet: a commission, or free.
+  - today: a commission @ Cash e-wallet's service (as of 2026-10-10)
+  - today: none @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YA-90** Fee for putting money into a phone wallet: commissions, or free.
+  - today: commissions by funding type and account type @ Cash e-wallet's service (as of 2026-10-10)
+  - today: none @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YA-91** Fees a phone wallet charges for payments and transactions: none, low or 'reasonable', may apply, or set by the provider at will.
+  - today: commissions may apply, by payment type and account type @ Cash e-wallet's service (as of 2026-10-10)
+  - today: reasonable fees @ Floosak's service (as of 2026-10-10)
+  - today: none @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-03-03)
+  - today: any fees the provider sets, deducted from the account @ Jawali's service (as of 2026-10-10)
+  - today: reasonable fees @ ONE Cash's service (as of 2026-10-10)
+  - today: reasonable fees @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YA-92** Fee for sending money from a phone wallet: free, free during a campaign, or varying with the amount.
+  - today: varies with the amount @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: none @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-93** How a payment service provider must disclose its fees: where and how far in advance fees and changes are published.
+  - today: announced on the website, in newspapers, by SMS or at service points @ Cash e-wallet's service (as of 2026-10-10)
+  - today: disclosed and displayed, with changes notified at least a month ahead @ the internationally recognized government's area (as of 2022-09-13)
+- **YA-94** What happens to an unused wallet account: dormant after how long, and where the balance goes.
+  - today: after a year unused and the holder unreachable, the balance moves to a separate account for 15 years, then to the central bank's government account @ Cash e-wallet's service (as of 2026-10-10)
+  - today: dormant after a year unused, and may be cancelled with no balance and no deposit within a year @ Jawali's service (as of 2026-10-10)
+- **YA-95** How quickly a phone wallet or e-money provider must handle a complaint: the acknowledgment and decision deadlines, and the right to refer to the central bank.
+  - today: by email within 48 hours @ Cash e-wallet's service (as of 2026-10-10)
+  - today: within 10 working days, with the right to refer to the central bank @ the internationally recognized government's area (as of 2023-08-08)
+- **YA-96** Terms for ending a financial service agreement: notice the provider must give, and the customer's freedom to end or switch.
+  - today: three months' notice from the provider, the customer may end it at any time @ Cash e-wallet's service (as of 2026-10-10)
+  - today: the consumer is free to end or switch, and the provider acts within 30 days @ the internationally recognized government's area (as of 2023-08-20)
+- **YA-97** Whether a buyer can recover a wallet payment sent to the wrong account: the provider helps, or no recovery route.
+  - today: the provider helps recover it @ Cash e-wallet's service (as of 2026-10-10)
+  - today: no recovery route given @ ONE Cash's service (as of 2026-10-10)
+- **YA-98** Whether a phone wallet issues a payment card to buyers: a virtual or prepaid card available, on which platforms, or not.
+  - today: available @ Cash e-wallet's service (as of 2026-10-10)
+  - today: available @ Mobile Money (CAC Bank)'s service (as of 2026-04-16)
+  - today: a prepaid card, usable locally and internationally @ National Wallet (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: Visa cards issued and topped up through the wallet @ ONE Cash's service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-99** Whether phone payments can be made by NFC (contactless): available to buyers or merchants, coming, or not.
+  - today: unknown @ Cash e-wallet's service (undated)
+  - today: available, without internet @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-08-22)
+  - today: available @ M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: available, without internet @ Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+  - proposed, never today: to come @ Cash e-wallet's service (as of 2026-10-10)
+- **YA-100** Whether a buyer outside Yemen can use a Yemeni phone wallet or payment service to pay in Yemen: available or not, and on what condition.
+  - today: available @ Cash Mughtarib (Cash e-wallet)'s service (as of 2026-10-10)
+  - today: available @ DeliFast's service (as of 2026-10-10)
+  - today: available @ Floosak's service (as of 2026-10-10)
+  - today: available @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: available, if the Yemeni number stays active @ ONE Cash's service (as of 2026-10-10)
+  - today: available, if the telecom provider allows international use @ Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+- **YA-101** What a buyer must confirm to withdraw cash from a phone wallet: the confirmation required.
+  - today: identity confirmation @ Cash e-wallet's service (as of 2026-10-10)
+  - today: confirmation in the app @ Jawali's service (as of 2026-09)
+- **YA-102** Who may provide e-money and electronic payment services: banks only, or also licensed non-bank institutions, and whether exchange companies may.
+  - today: banks only @ Central Bank of Yemen's area (as of 2014, 2014-12-11)
+  - today: banks and non-bank institutions @ Houthis' area (as of 2026-02-11)
+  - today: banks and licensed non-bank institutions @ the internationally recognized government's area (as of 2026-02)
+  - today: unknown @ place not stated (as of 2014)
+  - other states recorded: 1, in axes.tsv
+- **YA-103** Which authority must license e-money and e-payment services: the central bank (which seat), and whether other bodies may license.
+  - today: the central bank, with ministries licensing only after its technical permit @ Council of Ministers' area (مجلس الوزراء) (as of 2018-10-30)
+  - today: the central bank in Aden @ the internationally recognized government's area (as of 2024-06-30)
+  - today: the central bank @ the unified Republic's area (as of 2006-12-28)
+- **YA-104** Whether e-money and payment services have a legal framework: rules in force, or none ratified.
+  - today: rules in force @ place not stated (as of 2026-02-11)
+  - other states recorded: 1, in axes.tsv
+- **YA-105** Which model e-money services follow: bank-led or non-bank, at the area named.
+  - today: non-bank model @ Houthi-controlled areas (as of 2025-09-15)
+  - today: bank-led model @ government-controlled areas (as of 2025-09-15)
+- **YA-106** Where the funds backing e-money must be held: pre-funded and held in a pooled or guarantee account at a settlement bank.
+  - today: held at a bank @ Cash e-wallet's service (as of 2026-10-10)
+  - today: held at a bank @ Central Bank of Yemen's area (as of 2014)
+  - today: matched in guarantee accounts @ Jawali's service (as of 2026-10-10)
+  - today: held at a bank @ the internationally recognized government's area (as of 2023-08-08)
+  - today: held at a bank @ place not stated (as of 2021-12-09)
+- **YA-107** Whether online card-payment gateways are available to merchants: available, lacking, or stopped.
+  - today: available by card payment link in an e-invoice @ e-invoicing (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: available through banks, for local and international cards @ e-payment gateway (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: lacking @ place not stated (as of 2025-09-12)
+  - other states recorded: 1, in axes.tsv
+- **YA-108** How a merchant takes wallet payments at the point of sale: by QR code, point-of-sale number, phone number or card.
+  - today: by QR code @ Cash e-wallet's service (as of 2026-10-10)
+  - today: by QR code or point-of-sale number @ Jaib's service (as of 2026-10-10)
+  - today: by QR code @ Jawali's service (as of 2026-10-10)
+  - today: by QR code @ Mobile Money Business (CAC Bank)'s service (as of 2026-10-10)
+  - today: by card or QR code @ National Wallet (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: by QR code or point-of-sale number @ ONE Cash's service (as of 2026-10-10)
+  - today: by QR code or the buyer's phone number @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YA-109** Which services a phone wallet offers merchants: the range of merchant services listed.
+  - today: invoices, currency exchange, cash withdrawal with business limits, and internal and external remittances @ Cash e-wallet's service (as of 2026-10-10)
+  - today: receiving payments, paying merchants, cash out, refunds, cash in and transfers to bank accounts @ ONE Cash's service (as of 2026-10-10)
+- **YA-110** What a merchant needs to take a provider's online payments: the accounts, site or app, and agreements required.
+  - today: a wallet account and integration with the provider's technical support @ Cash Pay (Cash e-wallet)'s service (as of 2026-10-10)
+  - today: an app or website, a physical address, an account at the bank and signed agreements @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: an app or website, a company account at the bank, and signed agreements @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+- **YA-111** What a merchant needs to open a merchant account or payment point: the documents, accounts and equipment required.
+  - today: a commercial account profile under the merchant contract @ Cash e-wallet's service (as of 2026-10-10)
+  - today: an active mobile number, an ID card or passport, and the commercial register or work licence @ Floosak's service (as of 2026-10-10)
+  - today: an account at the bank, among other requirements @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+- **YA-112** How a payment to a merchant through a provider's API is authorised and completed: the buyer's one-time code, PIN, voucher, or own transfer verified by the merchant.
+  - today: the buyer's one-time code, entered by the merchant @ Aden Bank's service (as of 2024-03-23)
+  - today: the buyer's one-time code, entered by the merchant @ Al-Qutaibi Bank's service (as of 2024-03-06)
+  - today: the buyer's one-time code, entered by the merchant @ Cash Pay (Cash e-wallet)'s service (as of 2024-03-17)
+  - today: the buyer's 4-digit PIN, sent with the merchant's request @ E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-05-26)
+  - today: the buyer's one-time code, entered by the merchant @ Floosak's service (as of 2025-06-17)
+  - today: a voucher and the receiver's number, checked by inquiry before cash-out @ Jawali's service (as of 2025-07-16)
+  - today: the buyer's one-time code, entered by the merchant @ SabaCash's service (as of 2023-12-17)
+  - today: the buyer's own transfer, matched by an app on the merchant's phone @ YemenPay's service (as of 2026-08-22)
+- **YA-113** What a buyer gives a merchant to start a payment through a provider's API: phone number, payment code or PIN.
+  - today: the buyer's phone number @ Aden Bank's service (as of 2024-03-23)
+  - today: the buyer's phone number and a payment code @ Al-Qutaibi Bank's service (as of 2024-03-06)
+  - today: the buyer's phone number and a payment code @ Cash Pay (Cash e-wallet)'s service (as of 2024-03-17)
+  - today: the buyer's PIN, with the merchant's own customer ID @ E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-05-26)
+  - today: the buyer's phone number @ Floosak's service (as of 2025-06-17)
+  - today: the buyer's phone number @ SabaCash's service (as of 2023-12-17)
+  - today: the chosen wallet and its phone number, or the sender's name for Kuraimi @ YemenPay's service (as of 2026-08-22)
+- **YA-114** Which currency a merchant's payment request through a provider's API names: the rial, or also the Saudi riyal and US dollar.
+  - today: the rial @ Aden Bank's service (as of 2024-03-23)
+  - today: the rial, Saudi riyal and US dollar @ Al-Qutaibi Bank's service (as of 2024-03-06)
+  - today: the rial, Saudi riyal and US dollar @ Cash Pay (Cash e-wallet)'s service (as of 2024-03-17)
+  - today: the rial @ E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-05-26)
+  - today: the rial @ SabaCash's service (as of 2023-12-17)
+  - today: the rial, Saudi riyal and US dollar @ YemenPay's service (as of 2026-08-22)
+- **YA-115** What a merchant must hold to use a provider's payment API: the credentials and equipment required.
+  - today: a merchant username and password @ Aden Bank's service (as of 2024-03-23)
+  - today: an app key, an API key and a payment destination @ Al-Qutaibi Bank's service (as of 2024-03-06)
+  - today: a username, a service-provider ID and an encrypted password, and a certificate for release @ Cash Pay (Cash e-wallet)'s service (as of 2024-03-17)
+  - today: a supplier username and password from the bank @ E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-05-26)
+  - today: the merchant's phone and short code, and an OTP-obtained token valid for a year @ Floosak's service (as of 2025-06-17)
+  - today: system login, agent wallet credentials, and organization and user IDs @ Jawali's service (as of 2025-07-16)
+  - today: a merchant username and password @ SabaCash's service (as of 2023-12-17)
+  - today: a merchant ID and secret key, an active subscription and an Android phone running its app @ YemenPay's service (as of 2026-08-22)
+  - other states recorded: 3, in axes.tsv
+- **YA-116** Whether a merchant can refund or reverse a buyer's wallet or API payment: available or not, and who may do it.
+  - today: available @ Cash Pay (Cash e-wallet)'s service (as of 2026-10-10)
+  - today: available @ E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-05-26)
+  - today: available @ Floosak's service (as of 2025-06-17)
+  - today: available, by the users' manager or an authorised cashier @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: available @ Mobile Money Business (CAC Bank)'s service (as of 2026-10-10)
+- **YA-117** Limits on what a merchant's wallet can receive: a ceiling applies, or raised.
+  - today: a ceiling may apply @ Cash e-wallet's service (as of 2026-10-10)
+  - today: a ceiling applies @ Mobile Money Business (CAC Bank)'s service (as of 2026-08-23)
+- **YA-118** Whether a merchant can move money between a business wallet, bank accounts and other wallets: available or not, and the fee.
+  - today: available, free between the merchant's own accounts @ Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: available @ Mobile Money Business (CAC Bank)'s service (as of 2026-10-10)
+  - today: available @ ONE Cash's service (as of 2026-10-10)
+- **YA-119** Which payment cards buyers can get, and from whom: the card brands and types issued (Visa, Mastercard, UnionPay; debit, credit, prepaid) and by which bank or company.
+  - today: Visa Classic, Gold and Electron cards @ CAC Bank's service (as of 2026-10-10)
+  - today: prepaid cards allowed as payment instruments @ Houthis' area (as of 2020-03)
+  - today: Mastercard cards @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: Mastercard debit cards usable in Yemen and abroad @ Kuraimi Pluto Debit (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+  - today: prepaid, credit and debit cards issued for financial institutions @ MEPS Yemen's service (as of 2026-10-10)
+  - today: Mastercard, with Yemen Commercial Bank, and Visa @ SabaCard's service (as of 2026-10-10)
+  - today: Mastercard cards @ Shamil Bank of Yemen and Bahrain's service (as of 2026-10-10)
+  - proposed, never today: UnionPay cards @ CAC Bank's service (as of 2014-12-29)
+- **YA-120** How many active debit cards there are: the number.
+  - today: about 400,000 active debit cards @ place not stated (as of 2019-12)
+  - other states recorded: 2, in axes.tsv
+- **YA-121** What a buyer must provide to obtain a payment card: the documents, accounts and collateral required.
+  - today: cash collateral for credit cards, among other requirements @ CAC Bank's service (as of 2026-10-10)
+  - today: a bank account, an ID and the fee, or a Shamil Money account for the virtual card, and a credit study and deposit for credit cards @ Shamil Bank of Yemen and Bahrain's service (as of 2026-10-10)
+- **YA-122** Whether an interbank switch links banks' cards, ATMs and points of sale: operating or not, and who runs it.
+  - today: operating, run by MEPS Yemen @ MEPS Yemen's service (as of 2026-10-10)
+  - today: operating, run by SabaCard @ SabaCard's service (as of 2026-10-10)
+  - today: operating, run by WeNet @ WeNet's service (as of 2022-07)
+  - today: not operating @ place not stated (as of 2026-02)
+  - other states recorded: 2, in axes.tsv
+- **YA-123** How many ATMs there are: the number.
+  - today: 354 ATMs @ Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+  - today: 914 ATMs @ place not stated (as of 2025-06)
+  - other states recorded: 1, in axes.tsv
+- **YA-124** How many card terminals merchants have: the number of POS terminals.
+  - today: 791 terminals @ place not stated (as of 2025-06)
+  - other states recorded: 1, in axes.tsv
+- **YA-125** Whether an instant payment and real-time settlement system is available: absent, planned or under development, or operating (and whose).
+  - today: operating, the Houthi authorities' own @ Houthi-controlled areas (as of 2026-09-10)
+  - today: operating, among six banks, with limited acceptance @ WeNet's service (as of 2022-03)
+  - today: under development @ government-controlled areas (as of 2026-07-31)
+  - today: under development @ the internationally recognized government's area (as of 2026-09-10)
+  - today: absent @ place not stated (as of 2026-02)
+  - proposed, never today: operating, open to any licensed provider's customers @ WeNet's service (as of 2022-07)
+  - other states recorded: 4, in axes.tsv
+- **YA-126** Whether payments can move electronically between different banks and institutions: possible, or limited to cash, cheques, SWIFT orders and payments within one institution.
+  - today: none, only cash, cheques or within one institution @ government-controlled areas (as of 2026-07-31)
+  - today: difficult @ place not stated (as of 2026-09-10)
+  - other states recorded: 2, in axes.tsv
+- **YA-127** Who settles payments between banks and e-wallets: the company authorized, and by which central bank.
+  - today: WeNet, authorized by CBY-Sana'a @ Houthis' area (as of 2021-03)
+  - today: the Yemen Payments and Clearing Company, licensed but not yet operating @ the internationally recognized government's area (as of 2026-05)
+- **YA-128** Whether a buyer can pay cash on delivery for an online order: available or not at the seller or app named.
+  - today: available @ Al Naeem Delivery's service (as of 2026-10-10)
+  - today: available inside Sana'a @ Anayees store's service (as of 2026-10-10)
+  - today: available inside Sana'a @ Awsan fashion store's service (as of 2026-10-10)
+  - today: available @ Bazzarry's service (as of 2026-10-10)
+  - today: available inside Sana'a @ Dakhm store's service (as of 2026-10-10)
+  - today: available @ Etlobni's service (as of 2026-10-10)
+  - today: available @ OnTime (Quality Connect)'s service (as of 2026-10-10)
+  - today: available @ Perfume Garden's service (as of 2026-10-10)
+  - today: not available, payment in advance @ Procorners's service (as of 2022-12-20)
+  - today: available @ Taiba Hypermarket's service (as of 2026-10-10)
+  - today: available @ Tawseel One's service (as of 2026-10-10)
+  - today: available @ Uptown restaurant's service (as of 2026-10-10)
+  - today: available @ Wagbat's service (as of 2026-10-10)
+  - today: available @ Wassi's service (as of 2026-10-10)
+  - today: available inside Sana'a @ Yes Media store's service (as of 2026-10-10)
+  - today: available @ place not stated (as of 2025-04-15)
+- **YA-129** Which payment method online buyers mostly use: cash on delivery or electronic payment, and their shares.
+  - today: cash on delivery, preferred by 74 percent of 180 Bazzarry users surveyed @ Aden (as of 2026-08-31)
+  - today: mostly cash, with cash on delivery popular @ place not stated (as of 2025-09-15)
+  - other states recorded: 2, in axes.tsv
+- **YA-130** Which payment methods an online seller, app or courier accepts: the methods listed (cash on delivery, wallets, bank, cards, in-app wallet).
+  - today: cash on delivery, e-wallets and ATMs @ Bazzarry's service (as of 2025-09-15)
+  - today: cash on delivery, Kuraimi, Jaib, ONE Cash and other e-wallets, and an in-app wallet @ Etlobni's service (as of 2026-10-10)
+  - today: on pickup, on delivery, or by Jaib, Jawali, Floosak or Kuraimi wallet @ Torod's service (as of 2026-10-10)
+  - today: cash on delivery or the Rasidi service @ Wagbat's service (as of 2026-10-10)
+  - today: cash on delivery and electronic payment @ jeeey's service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-131** Whether a buyer can pay an online seller by money transfer: available or not, by exchange-company or bank transfer, and in advance.
+  - today: accepted, by money transfer @ Anayees store's service (as of 2026-10-10)
+  - today: accepted, by money transfer or to the store's Kuraimi accounts @ Dakhm store's service (as of 2026-10-10)
+  - today: in advance, to the seller's account @ Sana'a (as of 2025-05-14)
+  - today: in advance, to the seller's account @ Taiz (as of 2025-09-12)
+  - today: accepted, by money transfer @ Yes Media store's service (as of 2026-10-10)
+  - today: accepted, by money transfer @ place not stated (as of 2025-09-12)
+- **YA-132** What a buyer must give to authorize an online wallet payment: the codes and numbers required.
+  - today: an OTP code @ CardNet's service (as of 2026-10-10)
+  - today: the wallet's phone number, a purchase code from the app and an SMS code @ Cash Pay (Cash e-wallet)'s service (as of 2026-10-10)
+- **YA-133** Whether a buyer can order deliveries through a delivery app: available or not at the app named, and what it delivers.
+  - today: available @ Al Naeem Delivery's service (as of 2026-10-10)
+  - today: available @ DeliFast's service (as of 2026-10-10)
+  - today: available @ Etlobni's service (as of 2026-10-10)
+  - today: available @ OnTime (Quality Connect)'s service (as of 2026-10-10)
+  - today: available @ Talqa's service (as of 2026-02-01)
+  - today: available @ Tawseel One's service (as of 2026-10-10)
+  - today: available @ Wagbat's service (as of 2026-10-10)
+  - today: available @ Wassi's service (as of 2026-10-10)
+  - today: Etlobni, Tuyu, Talabat, Wajeez and Al-Wajba @ place not stated (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-134** Whether online orders are delivered to the buyer's door: delivered or not, by the seller, an app or a delivery company, and where.
+  - today: available @ Bazzarry's service (as of 2026-10-10)
+  - today: available inside the main cities @ Market Yemen's service (as of 2025-09-12)
+  - today: available from local delivery companies @ Sana'a, Aden, Taiz and Hodeidah (as of 2025-09-08)
+  - today: available @ Taiba Hypermarket's service (as of 2026-10-10)
+  - today: available to all governorates, with delays in remote areas @ Taiseer's service (as of 2025-09-12)
+  - today: available @ Uptown restaurant's service (as of 2026-10-10)
+- **YA-135** Whether a buyer can order from several stores in one basket: available or not.
+  - today: available @ Tawseel One's service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-136** Whether prices on delivery apps match shop prices: the same, or higher.
+  - today: the same as the shops @ Etlobni's service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-137** Delivery fee for an online order: free, by zone, by distance and weight, or high.
+  - today: high @ Aden (as of 2026-08-31)
+  - today: free @ Awsan fashion store's service (as of 2026-10-10)
+  - today: free on a promotion @ Bazzarry's service (as of 2023-02-25)
+  - today: free delivery coupons offered @ Etlobni's service (as of 2026-10-10)
+  - today: free delivery coupons offered @ Tawseel One's service (as of 2026-10-10)
+  - today: by distance, weight, type and service, with extra fees @ Torod's service (as of 2026-10-10)
+  - today: by zone, zone 1 free, others 500 to 2,500 rials @ Uptown restaurant's service (as of 2026-10-10)
+  - today: free above a set order value @ jeeey's service (as of 2026-10-10)
+- **YA-138** Delivery time for an online order within Yemen: the time, by destination.
+  - today: same day inside Sana'a, 2 to 4 days to other governorates @ Anayees store's service (as of 2026-10-10)
+  - today: same day @ Awsan fashion store's service (as of 2026-10-10)
+  - today: within 48 hours to all governorates @ Procorners's service (as of 2025-10-30)
+  - today: 1 to 4 hours within a city, 1 to 3 working days between cities @ Torod's service (as of 2026-10-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-139** Whether online sellers ship orders to other governorates: available or not, and through which carriers.
+  - today: available @ Al-Hajar Al-Aswad transport agency's service (as of 2024-03-16)
+  - today: available, through shipping offices @ Awsan fashion store's service (as of 2026-10-10)
+  - today: available @ Perfume Garden's service (as of 2026-10-10)
+  - today: available, through Al-Jawwal, Al-Maqtari, Al-Qudsi or Al-Farza @ Yes Media store's service (as of 2026-10-10)
+  - today: available from local delivery companies, though some routes are difficult @ place not stated (as of 2025-09-08)
+- **YA-140** Whether a buyer can return or exchange an online purchase: allowed or not, within what time, and on what conditions.
+  - today: within a month, with defects replaced within 6 months @ Anayees store's service (as of 2026-10-10)
+  - today: allowed @ Awsan fashion store's service (as of 2026-10-10)
+  - today: within 48 hours, unused and in original condition @ Perfume Garden's service (as of 2026-10-10)
+  - today: only when the wrong order arrives @ Procorners's service (as of 2022-12-20)
+  - today: many sellers take back or exchange goods that do not match @ Taiz (as of 2025-09-12)
+  - today: allowed @ jeeey's service (as of 2026-10-10)
+- **YA-141** Whether a buyer can have the seller supply a product on request: available or not.
+  - today: not available @ Anayees store's service (as of 2026-10-10)
+  - today: available @ DeliFast's service (as of 2026-10-10)
+- **YA-142** Whether a buyer can buy from foreign online stores for delivery in Yemen: available or not, through which intermediary, app, courier or reseller, and for which stores.
+  - today: available, from international sites @ Etlobni's service (as of 2026-10-10)
+  - today: available @ Procorners's service (as of 2024-10-26)
+  - today: possible but tiring, with no returns @ Sana'a (as of 2025-09-12)
+  - today: available for Shein @ Tawseel One's service (as of 2026-10-10)
+  - today: available, through its international warehouses @ Torod's service (as of 2026-10-10)
+  - today: through resellers, via a pick-up point in Saudi Arabia, in one to two weeks @ place not stated (as of 2025-05-14)
+- **YA-143** Whether foreign online stores ship to Yemen: ship directly or not, and for which products.
+  - today: some products ship to Yemen, not all @ Noon's service (as of 2023-08-09)
+  - today: not offered by Shein, Alibaba or Amazon @ place not stated (as of 2025-05-14)
+- **YA-144** Whether a buyer can pay foreign online stores: possible or not, and with which card, bank or wallet.
+  - today: available @ Jawali's service (as of 2026-10-10)
+  - today: available by card @ National Wallet (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: available by card @ Sana'a (as of 2025-05-14)
+  - today: available by card @ Shamil Bank of Yemen and Bahrain's service (as of 2025-06-15)
+  - today: possible in rials through some banks (Al-Kuraimi, Yemen Kuwait Bank), not in every governorate @ place not stated (as of 2025-06-15)
+- **YA-145** What a buyer must do to buy from a foreign store through an intermediary: the steps.
+  - today: send the link by WhatsApp, confirm with name, address and phone, then transfer to the account given @ Procorners's service (as of 2023-08-09)
+  - other states recorded: 2, in axes.tsv
+- **YA-146** What a buyer pays for an order bought abroad through an intermediary: the price, delivery and customs costs charged, or free delivery.
+  - today: store price plus delivery and customs, commission usually at most 10 percent @ Procorners's service (as of 2022-12-20)
+  - other states recorded: 2, in axes.tsv
+- **YA-147** How an order bought abroad is delivered within Yemen: where and when it is delivered.
+  - today: to the door in Sana'a and all governorates through transport offices @ Procorners's service (as of 2023-08-09)
+  - other states recorded: 1, in axes.tsv
+- **YA-148** Whether a buyer can pay part of an order from abroad on arrival: the split.
+  - today: 50 percent on ordering and 50 percent on arrival, for orders under 1,000 dollars @ Procorners's service (as of 2022-12-20)
+  - other states recorded: 1, in axes.tsv
+- **YA-149** Currency in which online sellers price goods: the rial, the US dollar, the Saudi riyal or other foreign currencies.
+  - today: US dollars @ Bab Al-Mandab's service (as of 2026-10-10)
+  - today: Saudi riyals only, at one store selling Shein and Amazon goods @ EB store's service (as of 2025-04-15)
+  - today: foreign currencies, as some platforms require @ place not stated (as of 2025-09-15)
+- **YA-150** When a company must apply for entry in the commercial register: the deadline.
+  - today: within thirty days of founding or licensing @ Houthis' area (as of 2026-10-10)
+  - today: within sixty days of starting its activity @ the unified Republic's area (as of 1991)
+- **YA-151** Whether a merchant needs a fixed place of business: required, and any exception.
+  - today: required @ Houthis' area (as of 2026-10-10)
+  - today: required, unless covered by a registration system the Minister issues @ the unified Republic's area (as of 1991, 1991-04-13)
+- **YA-152** What a merchant must show on its business correspondence and shopfront: the details required.
+  - today: register number and trade name @ Houthis' area (as of 2019-12-14)
+  - today: trade name, register office and entry number @ the unified Republic's area (as of 2003-03-05)
+  - other states recorded: 1, in axes.tsv
+- **YA-153** Who may act as a commercial agent of a foreign company: the agent's nationality, residence, register and company ownership.
+  - today: a Yemeni national resident in Yemen appointed directly by the manufacturer, or a wholly Yemeni-owned company @ Houthis' area (as of 2026-10-10)
+  - today: a Yemeni national resident in Yemen, or a wholly Yemeni-owned company @ the unified Republic's area (as of 1997-04-06)
+- **YA-154** Whether investors may transfer profits and capital abroad: allowed, and on what condition.
+  - today: allowed, once obligations to government bodies are met @ Houthis' area (as of 2025-01-05)
+  - today: allowed without limit @ the unified Republic's area (as of 2026)
+- **YA-155** Whether petroleum may be imported through Houthi-controlled ports under US rules: allowed, or banned and enforced.
+  - today: petroleum discharges at Houthi-held ports banned and enforced by designations @ the United States' area (as of 2025-06-20)
+  - other states recorded: 1, in axes.tsv
+- **YA-156** How a seller must show prices: written on the goods, displayed, or advertised.
+  - today: written on the goods or displayed where offered @ the unified Republic's area (as of 2008-10-07, 2008)
+  - other states recorded: 1, in axes.tsv
+- **YA-157** Whether a buyer can return goods for a refund or exchange within ten days, under Law 46 of 2008, or under a store's own guarantee: allowed, within what time, and the exceptions.
+  - today: money back guaranteed @ Anayees store's service (as of 2026-10-10)
+  - today: refund or exchange within ten days of purchase @ the unified Republic's area (as of 2008-10-07, 2008)
+- **YA-158** How traders set their prices: by the daily exchange rate, or on another area's rate.
+  - today: by the daily exchange rate @ Aden and the liberated governorates (as of 2025-08-02)
+  - today: traders price on the occupied areas' exchange rate @ areas of 'national control' (as of no date)
+- **YA-159** Whether public revenue can be paid electronically: possible or not, through which wallets, banks or platforms.
+  - today: possible for most public revenue @ Houthis' area (as of 2025-08-12)
+  - today: only through one entity such as CAC Bank @ Sana'a (as of 2025-06-15)
+  - today: possible through several wallets @ northern governorates (المحافظات الشمالية) (as of 2026-02-11)
+  - other states recorded: 2, in axes.tsv
+- **YA-160** General sales tax rate: the general rate, and the rates on particular items.
+  - today: 5 percent @ the unified Republic's area (as of 2020)
+  - today: 5 percent @ place not stated (as of 2022-01-01)
+  - other states recorded: 1, in axes.tsv
+- **YA-161** Services exempt from the general sales tax: the services exempt.
+  - today: financial and banking, insurance, health, education, transport, housing, utilities and others @ the unified Republic's area (as of 2005-07-18)
+  - other states recorded: 1, in axes.tsv
+- **YA-162** Goods exempt from the general sales tax: the goods exempt.
+  - today: the 2005 list plus factory inputs, solar and electric cars and renewable-energy equipment @ Houthis' area (as of 2020-05-03)
+  - today: wheat and flour, rice, medicines, raw gold, travellers' effects and currency @ the unified Republic's area (as of 2005-07-18)
+  - other states recorded: 1, in axes.tsv
+- **YA-163** How sales tax on imported goods is paid: before customs release, and the exceptions.
+  - today: before customs release, except registered manufacturers' inputs @ the unified Republic's area (as of 2005-07-18)
+  - other states recorded: 1, in axes.tsv
+- **YA-164** What sales threshold the General Sales Tax Law sets for registration: the threshold, as issued and as amended.
+  - today: at least 50 million rials, as the Minister sets @ the unified Republic's area (as of 2020)
+  - other states recorded: 1, in axes.tsv
+- **YA-165** What sales invoice a sales-tax registered seller must issue, and what it shows: one invoice per sale, its copies, and the data it must show.
+  - today: original and copy, with serial number, both parties, goods, value and tax @ Tax Authority's area (مصلحة الضرائب) (as of 2002-05-25)
+  - today: one invoice per sale, original and copy @ the unified Republic's area (as of 2020)
+  - today: one paper or electronic invoice per sale, in duplicate, with the buyer's details @ place not stated (as of 2022-01-01)
+- **YA-166** How a sales-tax registered seller must state an invoice issued in a foreign currency: the rial value and which exchange rate.
+  - today: rial value at the prevailing rate @ Tax Authority's area (مصلحة الضرائب) (as of 2002-05-25)
+  - other states recorded: 1, in axes.tsv
+- **YA-167** What a small business must do to get a tax-exemption certificate: the steps and terms.
+  - today: renewed automatically every three years, free through the post @ Tax Authority's area (مصلحة الضرائب) (as of 2023-11-23)
+  - other states recorded: 1, in axes.tsv
+- **YA-168** How a business must declare and pay zakat, and to whom: the declaration, the payee and who may collect.
+  - today: paid to the General Zakat Authority only @ General Zakat Authority's area (الهيئة العامة للزكاة) (as of 2019-05-07)
+  - today: declared and paid to the duties authority, a quarter may be given directly @ the unified Republic's area (as of 1999-01-13)
+- **YA-169** Which authority collects customs and taxes: the authority, and whether local authorities keep revenue.
+  - today: the Houthis @ Hudaydah port (as of 2024-07-08)
+  - today: the governorate keeps local sales taxes and 70 percent of customs @ the Al-Mahra local authority's area (as of 2025-11)
+  - today: unknown @ the Hadramawt local authority's area (undated)
+  - today: the central customs administration, local authorities barred from exemptions @ the internationally recognized government's area (as of 2025-10)
+  - proposed, never today: the governorate deposits central revenues with CBY-Aden @ the Hadramawt local authority's area (as of 2025-11)
+- **YA-170** Customs duties and levies on imported goods: the duties, and whether raised.
+  - today: 35,000 rials per 1,000 tons of grain and fodder, six times the earlier tariff @ Al-Salif port (Houthi-controlled) (as of 2020)
+  - today: customs and levies raised @ Houthi-controlled areas (as of 2026-07-10)
+  - today: doubled on clothing, 30 million rials per truckload @ Houthis' area (as of 2024-09)
+  - today: 1 million rials per truckload of clothing @ the internationally recognized government's area (as of 2024-10-16)
+  - today: raised on some products @ place not stated (as of 2025-05-14)
+- **YA-171** Who controls imports into Yemen: the coalition, or the Houthis through their ports.
+  - today: the Houthis import through their ports @ ports under Houthi control (as of 2025-09-11)
+  - today: the coalition's blockade eased @ place not stated (as of 2022)
+  - other states recorded: 1, in axes.tsv
+- **YA-172** Who may obtain import and trade licences: those loyal to the authorities.
+  - today: licences granted to traders loyal to the Houthis @ Houthi-controlled areas (as of 2026-08-07)
+  - today: only those loyal to the powerholders @ place not stated (as of 2026)
+- **YA-173** What tolls and levies goods transport pays on the roads: the tolls, levies and checkpoint charges, by place.
+  - today: a 200,000-rial checkpoint toll per truck @ Abyan (as of 2025-11)
+  - today: illegal tolls at the Al-Alam checkpoint @ Aden (as of 2026-04-24)
+  - today: Houthi levies raising transport costs 20 to 30 percent @ Houthi-controlled areas (as of 2026-08-07)
+  - today: repeated levies at many collection points @ Lahj (لحج) (as of no date)
+  - today: illegal tolls by the Taiz Military Axis @ Taiz (as of 2026-02-02)
+- **YA-174** Whether roads between areas are open for goods transport: open, reopened, or closed.
+  - today: opened @ Abyan (as of no date)
+  - today: access improving @ Al-Bayda and Abyan (as of 2025-08-12)
+  - today: opened @ Taiz (as of 2024)
+  - today: opened @ between Taiz and Aden (بين تعز وعدن) (as of 2026-10-10)
+- **YA-175** How secure road transport of goods is: disrupted by clashes, blockades or detentions, or not.
+  - today: disrupted by detentions @ Abyan (as of 2025-10)
+  - today: fuel held at tribal checkpoints, which the alliance denies @ Hadramawt (as of 2024-08)
+  - today: disrupted by tribal clashes and blockades @ Marib (as of 2026-07-31)
+  - today: disrupted by tribal clashes and blockades @ Marib and Abyan (as of 2026-04-24)
+- **YA-176** Whether goods may move freely between governorates: free, or barred by an authority's order.
+  - today: gas barred from leaving Aden @ Governor of Aden's area (as of 2025-12-08)
+  - today: free, unless an epidemic risk is proven @ the unified Republic's area (as of 2007)
+- **YA-177** Whether goods may be traded between areas held by different parties: traded freely, burdened with extra fees, restricted, or banned.
+  - today: restricted by extra customs fees @ Houthis' area (as of 2025-12)
+  - today: traded without measures @ the internationally recognized government's area (as of 2025-12)
+  - today: hindered @ place not stated (as of 2026-02-17)
+- **YA-178** How much fuel is imported through each side's ports: the change in fuel imports.
+  - today: down 73 percent @ Houthi-controlled areas (as of 2026-05)
+  - today: up 24 percent @ Red Sea ports (as of 2024-07)
+  - today: down 60 percent @ government-controlled areas (as of 2026-05)
+  - today: down 27 percent @ southern ports (as of 2024-07)
+  - other states recorded: 4, in axes.tsv
+- **YA-179** Who supplies fuel: the companies or authorities that control fuel supply.
+  - today: the Houthis @ Houthi-controlled areas (as of 2026-08-07)
+  - today: Emirati companies @ Socotra (as of 2025-10-28)
+- **YA-180** How cooking gas prices are set, and at what level: an official or subsidized price, liberalized, or above the cap.
+  - today: an official price of 8,500 rials a cylinder @ Aden (as of 2026-01)
+  - today: liberalized @ Houthi-controlled areas (as of 2026-07-31)
+  - today: above the official cap, over 30,000 rials a cylinder @ Socotra (as of 2025-10-28)
+  - today: subsidized @ government-controlled areas (as of 2026-07-31)
+  - today: set by Yemen Gas Company circular @ most government-controlled governorates (as of 2025-10-28)
+- **YA-181** How petrol and diesel prices are set, and at what level: an official or subsidized price, or liberalized.
+  - today: liberalized @ Aden and Taiz (as of 2026-02-02)
+  - today: set by the Yemeni Petroleum Company @ Aden, Lahj, Abyan and Al-Dhalea (as of 2025-08)
+  - today: raised to a cost price of 1,550 rials a litre @ Hadramawt (as of 2024-08-25)
+  - today: official prices @ Houthi-controlled areas (as of 2025-10-28)
+  - today: subsidized at 400 rials a litre @ Marib (as of 2026-02-02)
+- **YA-182** Whether imports can get through Yemen's ports: ports operating, damaged, slowed or blocked, and their capacity.
+  - today: may lack capacity @ Aden port (as of 2024-10-16)
+  - today: inactive, rehabilitation agreed @ Al-Makha port (as of 2026-02-02)
+  - today: slowed @ Hodeidah and Salif ports (as of 2025-07)
+  - today: capacity reduced by strikes @ Houthi-controlled areas (as of 2025)
+  - today: damaged, shipping suspended @ Hudaydah port (as of 2025-05)
+  - today: final leg effectively blocked @ IRG-controlled ports (as of 2026-05)
+  - today: final leg effectively blocked @ government-controlled ports (as of 2026-07-31)
+  - today: capacity reduced by strikes @ northern ports (as of 2026-02)
+  - today: operational, though damaged @ the other Red Sea ports (as of 2025-07-22)
+  - other states recorded: 1, in axes.tsv
+- **YA-183** Which ports importers use, and which are open to them: the ports used, closed or favoured.
+  - today: privileges for importers @ Hodeidah ports (موانئ الحديدة) (as of 2026-10-03)
+  - today: illegal ports ordered closed @ the internationally recognized government's area (as of 2025-10)
+  - today: imports redirected toward Houthi-controlled ports @ place not stated (as of 2023)
+- **YA-184** Cost of shipping and insuring imports: the freight, insurance and surcharges, and whether rising.
+  - today: rising @ Yemeni ports (as of 2026-05)
+  - today: lower @ the Red Sea (as of 2026-02-02)
+  - today: rising @ place not stated (as of 2026-08-07)
+  - other states recorded: 1, in axes.tsv
+- **YA-185** How much food is imported through each side's ports: the change in food imports.
+  - today: down 13 percent @ Houthi-controlled areas (as of 2025-11)
+  - today: up 28 percent @ government-controlled areas (as of 2025-11)
+  - today: up 21 percent @ place not stated (as of 2026-05)
+  - other states recorded: 2, in axes.tsv
+- **YA-186** How far payments in Yemen are made in cash: how far cash dominates payment, and alongside what.
+  - today: mostly cash @ Houthi-controlled areas (as of 2026-05)
+  - today: mostly cash @ place not stated (as of 2026-09-10)
+  - other states recorded: 2, in axes.tsv
+- **YA-187** How widely buyers use electronic payment: how widely, and by whom, electronic payment is used or known.
+  - today: widespread @ cities (as of 2025-06-15)
+  - today: unfamiliar to some @ rural areas (as of 2025-06-15)
+  - today: few use it @ place not stated (as of 2026, 2026-02)
+- **YA-188** How many e-money accounts and wallet subscribers there are: the count, in all or at one wallet.
+  - today: over a million @ Jawali's service (as of 2026-10-10)
+  - today: about 800,000 @ place not stated (as of 2026-02-11)
+  - other states recorded: 3, in axes.tsv
+- **YA-189** What share of adults hold a financial or bank account: the share.
+  - today: 12 percent of adults @ place not stated (as of 2026-02-17)
+  - other states recorded: 2, in axes.tsv
+- **YA-190** What share of women hold a financial account: the share.
+  - today: 1 percent @ place not stated (as of 2024-04-05)
+  - other states recorded: 1, in axes.tsv
+- **YA-191** What share of firms hold a bank account: the share, by kind of firm.
+  - today: 54 percent of formal firms @ Houthi-controlled areas (as of 2022)
+  - today: 63 percent of formal firms @ government-controlled areas (as of 2022)
+  - today: 58 percent of formal and 18 percent of informal firms @ place not stated (as of 2022)
+- **YA-192** Through which channel public-sector salaries are paid: cash at tellers, exchange houses or post, the e-payment system, or a named bank.
+  - today: through Al-Kuraimi @ Houthi-controlled areas (as of 2025-06-22)
+  - today: through the e-payment system @ Ministry of Finance's area (as of 2022)
+  - today: cash at tellers, exchange houses or the post @ government-controlled areas (as of 2024-04-05)
+  - today: digitization decreed, limited by infrastructure @ the internationally recognized government's area (as of 2026-07-31)
+- **YA-193** Whether public-sector salaries are being paid: paid, in arrears, unpaid or suspended.
+  - today: suspended @ Houthis' area (as of 2020-11)
+  - today: in arrears up to four months @ the internationally recognized government's area (as of 2025-11)
+  - other states recorded: 1, in axes.tsv
+- **YA-194** Where buyers pay utility bills: at post or exchange outlets, or through an e-billing platform.
+  - today: through an e-billing platform @ E-billing (MEPS Yemen)'s service (as of 2026-10-10)
+  - today: at post or exchange outlets @ place not stated (as of 2022-03)
+- **YA-195** Which areas a phone wallet serves: the areas.
+  - today: all governorates @ Jawali's service (as of 2026-10-10)
+  - today: all districts @ Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YA-196** Fare for a ride within a city: the fare.
+  - today: double the Sana'a fare @ Aden (as of 2026-07-11)
+  - today: about 100 rials @ Sana'a (as of 2026-07-11)
+- **YA-197** What share of people have internet access: the share.
+  - today: 17.7 percent @ place not stated (as of 2024-01)
+  - other states recorded: 2, in axes.tsv
+- **YA-198** Whether 4G mobile internet is available: launched or not, by which operator, and where.
+  - today: limited, being tested @ Sabafon's service (as of 2024)
+  - today: launched @ Yemen Mobile's service (as of 2022-01)
+  - today: covering most of the region @ the Northern region (as of 2023-02-23)
+- **YA-199** Whether Starlink satellite internet may be sold and used, and is available: banned, or sold and available, and through whom.
+  - today: sold @ Aden (as of no date)
+  - today: banned @ Houthis' area (as of 2025-09-15)
+  - today: sold @ Public Telecommunications Corporation's service (as of 2025-09-15)
+  - today: available, through authorized distributors @ the internationally recognized government's area (as of 2024-09-18)
+  - today: available @ place not stated (as of 2026, 2026-02)
+  - other states recorded: 1, in axes.tsv
+- **YA-200** How reliable the electricity supply is: hours of supply and outages.
+  - today: over 20 hours a day of supply @ Aden (as of 2026-02)
+  - today: improved, six hours off for two on @ Aden and other cities under the internationally recognized government (as of 2026-06)
+  - today: prolonged outages @ Aden, Hadramawt and other areas (as of 2026-05)
+  - today: two hours on for three off @ Mukalla and other coastal cities in Hadramawt (as of 2024-08)
+  - today: over 85 percent of capacity cut @ Wadi Hadramawt (as of 2026-01)
+  - today: prolonged outages @ government-controlled areas (as of 2026-07-31)
+  - other states recorded: 3, in axes.tsv
+- **YA-201** Average rial price of one US dollar in the exchange market over a stated period: the average, for the year or month stated.
+  - today: average YER 2,091 @ Aden (as of 2025)
+  - today: average YER 535 @ Sana'a (as of 2025)
+  - today: average YER 1,578 @ government-controlled areas (as of 2026-02)
+  - other states recorded: 9, in axes.tsv
+- **YA-202** Whether the central bank's supply of foreign currency for imports is running, curtailed or tightened: curtailed as funds ran out, repeatedly suspended, or managed more tightly.
+  - today: import financing managed more tightly @ the internationally recognized government's area (as of 2026-02)
+  - other states recorded: 2, in axes.tsv
+- **YA-203** Whether banks and importers must or may use the import committee's financing mechanism: the committee's approval required, or banks barred from the committee's mechanism.
+  - today: banks and exchange companies barred from the import committee's mechanism @ Houthis' area (as of 2025, 2025-08)
+  - today: import committee's approval required @ the internationally recognized government's area (as of 2025-09)
+- **YA-204** Which rial banknote prints circulate: old notes, new notes, or both, in use in an area.
+  - today: new notes in use @ Aden (as of 2019-12-24)
+  - today: old notes in use @ Houthi-controlled areas (as of 2026-07-11)
+  - today: new notes in use @ areas under the control of the 'occupation' and the 'mercenary government' (as of no date)
+  - today: new notes in use @ government-controlled areas (as of 2026-10-10)
+  - today: new notes in use @ the rest of the country (outside Houthi-controlled northern areas) (as of 2022-03)
+  - today: new notes in use @ the south (as of 2026-02-17)
+- **YA-205** Whether exchange businesses keep their licences, under the Aden central bank's suspensions of June and July 2024: how many and which are suspended: 3 on 27 June, 15 in all by 4 July.
+  - today: 12 more exchange businesses suspended, 15 in all (Hawam, Pure Money, Top Top, Al-Sahem Al-Asra', Al-Qasimi Express, Al-Nasseri, Al-Arabi Express, Al-Hadath, Al-Saeed Express, Basma Express, Dawood Al-Amri) @ the internationally recognized government's area (as of 2024-07-04)
+  - other states recorded: 1, in axes.tsv
+- **YA-206** Whether depositors may draw deposits made after the central bank's split: allowed, from the date each side gives.
+  - today: only deposits made since 2017 may be drawn @ Houthis' area (as of 2024-04-05)
+  - today: only deposits made after September 2016 may be drawn @ the internationally recognized government's area (as of 2024-04-05)
+- **YA-207** Whether the central banks themselves can reach SWIFT: connected, reconnected but inoperable, or cut off, for each central bank.
+  - today: CBY-Sana'a cut off @ Houthis' area (as of 2026-02)
+  - today: CBY-Aden connected @ the internationally recognized government's area (as of 2026-02-17)
+  - other states recorded: 1, in axes.tsv
+- **YA-208** How the unified money transfer network is run, and who owns and leads it: launched by the Government CBY, being restructured, or restructured with the banks as shareholders and leaders.
+  - today: Restructured, with the banks as shareholders @ the internationally recognized government's area (as of 2026-07-27)
+  - other states recorded: 3, in axes.tsv
+- **YA-209** Cost of sending money from Saudi Arabia to Yemen: the cost as a share of the amount sent.
+  - today: 2.70% average @ Saudi Arabia to Yemen (corridor) (as of 2025-09-02)
+  - today: 2.4% @ place not stated (as of 2024-06)
+- **YA-210** Whether expired personal ID cards are accepted for financial transactions: void after ten years, or accepted for a set extra period.
+  - today: ID cards under ten years old only @ Civil Status and Civil Registry Authority in Sana'a's area (مصلحة الأحوال المدنية والسجل المدني في صنعاء) (as of 2025-11-13)
+  - today: Expired ID cards accepted for one more month @ Houthis' area (as of 2026-03-14)
+  - other states recorded: 1, in axes.tsv
+- **YA-211** What data exchange companies and transfer agents must record about a customer: the data and copies to be kept, by amount.
+  - today: ID copy and phone number above $3,000 @ Houthis' area (as of 2020-08-25)
+  - today: Full name, address, phone, and source and purpose of funds @ the internationally recognized government's area (as of 2025-02)
+- **YA-212** What buyers use phone wallets for: the uses named.
+  - today: transfers between accounts, capped cash in and out, and few bills (as of 2022-03)
+  - today: In use in markets, shops and for transport fares @ Sana'a and other Yemeni cities (صنعاء ومدن يمنية أخرى) (as of 2026-07-11)
+  - today: In use in markets, shops and for transport fares @ Sana'a and various Yemeni cities (صنعاء ومختلف المدن اليمنية) (as of 2026-07-11)
+- **YA-213** Whether a payment through a phone wallet goes through, in users' reports: failed or refused in one case, at the service named.
+  - today: Refused in one case @ Jawali's service (as of 2026-09)
+  - today: Failed for fibre bundles in one case @ Kuraimi Jawal (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-09-12)
+- **YA-214** How many phone wallets there are: the number each source gives.
+  - today: More than 9 at a digital payment fair @ Aden (as of 2026-01-22)
+  - today: 16 wallets on the central bank's list @ Central Bank of Yemen's area (as of 2026-10-10)
+  - today: 8 to 10 @ place not stated (as of 2026-07-11)
+  - other states recorded: 3, in axes.tsv
+- **YA-215** How developed the phone wallet market is: emerging, under development, fragmented, limited, or lacking at many banks.
+  - today: Some banks beginning to offer them @ Houthi-controlled areas (as of 2026-02)
+  - today: Limited access @ government-controlled areas (as of 2026-02)
+  - today: Lacking at many banks @ place not stated (as of 2026-02)
+  - other states recorded: 3, in axes.tsv
+- **YA-216** What forms and verification a buyer must complete to open a phone wallet: the forms and verification steps.
+  - today: a phone number and verification @ Floosak's service (as of 2026-10-10)
+  - today: a know-your-customer form with correct and complete data @ Jawali's service (as of 2026-10-10)
+- **YA-217** Whether ONE Cash holds an e-money licence, and from which central bank: licensed by CBY-Sana'a, or its request not accepted by CBY-Aden.
+  - today: ONE Cash licensed by CBY-Sana'a @ Houthis' area (as of 2022)
+  - today: ONE Cash's licence request not accepted by CBY-Aden @ the internationally recognized government's area (as of 2022-03)
+- **YA-218** Which laws and rules a provider says its e-money service operates under: the instruments each provider names.
+  - today: Law No. 40 of 2006, Circular No. 11 of 2014 and Decision No. 1 of 2020 @ Cash e-wallet's service (as of 2026-10-10)
+  - today: Law No. 40 of 2006 and Circular No. 11 of 2014 @ SabaCash's service (as of 2026-10-10)
+- **YA-219** Whether a buyer starts a payment to a merchant from an app: the buyer, from the provider's app or own wallet.
+  - today: the buyer, from the provider's app @ E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-05-26)
+  - today: the buyer, from the buyer's own wallet app @ YemenPay's service (as of 2026-08-22)
+- **YA-220** Whether officials demand bribes and extra fees of businesses: demanded.
+  - today: bribes and continuous levies on transport companies @ Houthi-controlled areas (as of 2020-08-25)
+  - today: extra fees demanded by officials @ place not stated (as of 2026)
+- **YA-221** Whether illegal checkpoints are being removed: removal ordered, or unlicensed checkpoints being closed.
+  - today: unlicensed checkpoints being closed @ the internationally recognized government's area (as of 2026-04)
+  - other states recorded: 1, in axes.tsv
+- **YA-222** Whether formal financial services are accessible: limited, or most have accounts.
+  - today: limited @ place not stated (as of 2026, 2026-09-10)
+  - other states recorded: 1, in axes.tsv
+- **YA-223** Where internet service reaches: coverage gaps, sparse or widely available.
+  - today: coverage gaps @ place not stated (as of 2025-09-12)
+  - other states recorded: 2, in axes.tsv
+- **YA-224** Who controls internet and telecom services: Ansar Allah through YemenNet, or each party's monopoly in its area.
+  - today: each party's monopoly in its area @ place not stated (as of 2025-09-15)
+  - other states recorded: 1, in axes.tsv
+- **YA-225** How many mobile subscriptions there are per 100 people: subscriptions per 100 people, or penetration.
+  - today: 46 subscriptions per 100 people @ place not stated (as of 2021)
+  - proposed, never today: about 73 percent, forecast @ place not stated (as of 2020)
+  - other states recorded: 1, in axes.tsv
+- **YA-226** Whether a central bank's new coins and notes circulate or are accepted in practice: circulating in everyday trade, or refused, for the coin or note named.
+  - today: Aden's 200-rial note refused by exchange companies @ Aden (as of 2026-02-15)
+  - today: coins circulating in everyday trade @ place not stated (as of 2025-07-18)
+- **YA-227** What share of the whole population holds a bank account: the share.
+  - today: disputed @ place not stated, between 10 percent @ place not stated / 8.8 percent @ place not stated (as of 2022-07, 2022)
+  - other states recorded: 1, in axes.tsv
+- **YA-228** How many exchange businesses a central bank has licensed or registered: the count of licensed or registered companies, establishments, outlets and agents, by central bank.
+  - today: 332 outlets, 96 companies and 86 agents licensed @ Aden (as of 2023)
+  - today: Over 170 companies registered @ Houthis' area (as of 2023)
+  - today: Over 170 companies licensed @ Sana'a (as of 2023)
+  - today: 96 companies, 233 institutions and 68 agencies registered @ the internationally recognized government's area (as of 2023)
+
+## Constants
+
+- **YK-01** Price in Saudi riyals at which a US dollar is sold, as a central bank states it: 3.79 Saudi riyals per US dollar, at Houthis' area (as of 2026-03-17)
+- **YK-02** Whether the market exchange rate differs from the official rate: differs from the official rate, at Sana'a (as of 2025-12-26); place not stated (as of 2024-04-05)
+- **YK-03** Whether every exchanger deals at the same rate: differs from shop to shop, at place not stated (as of no date)
+- **YK-04** What foreign currency bought at the central bank's auctions may be used for: imports through the port of Aden only, at the internationally recognized government's area (as of 2024-07-08)
+- **YK-05** Whether foreign currency may be bought and sold through digital platforms: cash only, not through digital platforms, at the internationally recognized government's area (as of 2025-02-22)
+- **YK-06** What the central bank does to banks and exchange companies that speculate in foreign currency: recent purchases confiscated and speculators penalised, at Central Bank of Yemen's area (as of 2025-09-01)
+- **YK-07** How much foreign currency a person may buy: capped, at the internationally recognized government's area (as of 2025-08)
+- **YK-08** How much foreign currency exchange companies may hold: surplus sold to licensed banks by the next business day, at the internationally recognized government's area (as of 2025-02)
+- **YK-09** Currency in which banks settle import payments: the euro, at place not stated (as of 2019)
+- **YK-10** Whether a central bank is issuing new banknotes or coins: new notes or coins issued, at Central Bank of Yemen's area (as of no date); Houthis' area (as of 2026-08-07); the internationally recognized government's area (as of 2026-10-10)
+- **YK-11** Problems of paying in cash: problems of handling cash, at place not stated (as of 2026-10-10)
+- **YK-12** Whether one currency and one central bank serve the whole country: split, at Houthi-controlled areas (as of 2024-07-23); Sana'a and Aden (as of 2026); place not stated (as of 2026, 2026-09-10)
+- **YK-13** Currency in which government fees are charged: Saudi riyals, at the Ministry of Endowments and Guidance's area (as of 2025-10-28)
+- **YK-14** Main foreign currency of exchange transactions: the Saudi riyal, at government-controlled areas (as of 2026-04-24); place not stated (as of 2026-02-13)
+- **YK-15** Currency used in trade between areas held by different parties: the US dollar and the Saudi riyal, at northern and southern governorates (as of 2025-12)
+- **YK-16** Whether electronic balances trade at par with cash: priced apart from cash, at Sana'a (as of 2025-12)
+- **YK-17** What parties barred from dealing with a bank must do with their balances there: liquidate within 15 days, at Houthis' area (as of 2025-07-11)
+- **YK-18** Whether banks the central bank has stopped dealing with must keep serving the public: must keep serving customers until further notice, at the internationally recognized government's area (as of 2024-06-02)
+- **YK-19** Whether exchange businesses the Aden central bank finds speculating keep their licences: licences of speculating exchange businesses revoked, at the internationally recognized government's area (as of 2026-02-02)
+- **YK-20** Whether US persons may deal with the 12 individuals and entities OFAC designated in December 2024, among them the Sana'a central bank's governor: 12 individuals and entities designated, among them the Sana'a central bank's governor, at the United States' area (as of 2024-12-18)
+- **YK-21** Whether foreign financial institutions risk US secondary sanctions for significant transactions on behalf of designated persons: at risk for significant transactions for designated persons, at the United States' area (as of 2025-01-17)
+- **YK-22** Whether US sanctions allow trade with the Yemeni people: OFAC's assurance that trade with Yemenis is not targeted withdrawn, at the United States' area (as of 2025-03-05)
+- **YK-23** Whether sending money to Yemen is lawful under US rules: personal or humanitarian transfers allowed if the recipient is not on a sanctions list, at the United States' area (as of 2025-04-24)
+- **YK-24** Whether US sanctions limit e-commerce in Yemen: named as a limit on e-commerce, at place not stated (as of 2025-05-14)
+- **YK-25** What financial institutions must do when serving customers to counter money laundering: risk-based due diligence, with records kept five years, at the unified Republic's area (as of 2013-09-12)
+- **YK-26** Whether banks and exchange companies must screen customers against sanctions lists: required (circular No. 4 of 2025), at the internationally recognized government's area (as of 2026-10-10)
+- **YK-27** Yemen's standing with the FATF: on the grey list, at place not stated (as of 2026-06-19)
+- **YK-28** Which companies parties may deal with under the Houthi authorities' own sanctions: 13 entities, 9 individuals and 2 assets, among them ExxonMobil and Chevron, at Houthis' area (as of 2025-09-30)
+- **YK-29** Bank branch opening hours: 08:00 to 14:30, at Kuraimi Islamic Bank's service (as of 2026-10-10)
+- **YK-30** What it took a bank to reopen branches the authorities closed: about one billion rials paid to the Houthi group, at Sana'a and Hodeidah (صنعاء والحديدة) (as of 2020-09-30)
+- **YK-31** Businesses' access to a functioning bank branch: under 50% of large, 18.5% of medium and 6.1% of small firms, at place not stated (as of 2018)
+- **YK-32** Whether depositors are rushing to withdraw from banks: rush of withdrawals, at Kuraimi Islamic Microfinance Bank's service (as of 2025-06); place not stated (as of 2019)
+- **YK-33** Where merchants and households keep their savings: exchange companies, at Houthi-controlled areas (as of 2025-12-15); place not stated (as of 2024-07-08)
+- **YK-34** Whether banks can draw their balances at the central bank: restricted, at Central Bank of Yemen's area (as of 2019)
+- **YK-35** Whether banks can pay the salaries of organisations and companies they serve: unable, undeclared, at Houthi-controlled areas (as of 2024-07-09)
+- **YK-36** Whether bank accounts in Yemen use IBAN: IBAN in use, at the internationally recognized government's area (as of 2026-10-10)
+- **YK-37** Whether banks must implement SWIFT Scope: Implement SWIFT Scope, at the internationally recognized government's area (as of 2024-04-05)
+- **YK-38** Which banks a central bank treats as compliant: Each central bank issues its own list, at place not stated (as of 2026-02-17)
+- **YK-39** Minimum capital a microfinance bank must hold: YER 15 billion, at the internationally recognized government's area (as of 2023)
+- **YK-40** Whether exchange and microfinance activities may be combined: Prohibited, at the internationally recognized government's area (as of 2025-12)
+- **YK-41** How much a microfinance bank may lend to one borrower: US$1,000, at the internationally recognized government's area (as of 2024-04-05)
+- **YK-42** Whether banks and money exchangers must have audited financial statements: Required, at the internationally recognized government's area (as of 2024-04-05)
+- **YK-43** Who sets interest rates on deposits: The central bank governor, at the internationally recognized government's area (as of 2026-10-10)
+- **YK-44** Whether nonbank lenders are regulated: Lightly regulated, if at all, at place not stated (as of 2024-04-05)
+- **YK-45** Which laws govern banking and money exchange: The banking, Islamic banking, AML-CFT, microfinance, deposit insurance, money exchange, payment systems and leasing laws, at the unified Republic's area (as of 2024-04-05)
+- **YK-46** Whether a merchant can send and receive international commercial transfers through a bank: Available, at Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+- **YK-47** Whether a business can run its bank account through electronic services: Available, at Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+- **YK-48** Who performs banking tasks: Exchange companies, in place of banks, at place not stated (as of 2026)
+- **YK-49** What services banks mainly offer: Foreign currency services, transfers and letters of credit, rather than lending and deposits, at place not stated (as of 2024-04-05)
+- **YK-50** Cost of bank credit: An average lending rate of 22%, at place not stated (as of 2013)
+- **YK-51** Cost of microfinance credit: An average interest rate of 19%, at place not stated (as of 2021)
+- **YK-52** Whether lenders can check borrowers' credit history: 0 of 8 on depth of credit information, at place not stated (as of 2019)
+- **YK-53** Whether SME loans can be guaranteed: A guarantee programme operates, banks reluctant, at place not stated (as of 2022)
+- **YK-54** What a business needs to open a bank account: Founding papers or practice licence, commercial registration, IDs and KYC and beneficial-owner forms, at Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+- **YK-55** Whether one may buy assets seized from banks: Invalid and sanctionable, at the internationally recognized government's area (as of 2026-05)
+- **YK-56** Whether foreign currency may be moved from one side's area to the other: Dollar transfers out limited, electronically and physically, at Houthis' area (as of 2020-09-09)
+- **YK-57** Whether digital payments work across the lines of control: Hampered by the lack of interoperability, at place not stated (as of 2026-09-10)
+- **YK-58** Fee for domestic money transfers: Increased, at Houthis' area (as of 2024-06-28); areas under the control of the 'occupation' and the 'mercenary government' (as of no date); place not stated (as of 2023-02-23)
+- **YK-59** Currency in which transfers between areas are priced: An intermediate foreign currency, the Saudi riyal or US dollar, at IRG and HC areas (as of 2026-02); place not stated (as of 2020-09-09)
+- **YK-60** How exchange companies settle transfers between areas: Foreign currency only, at Sana'a and Aden (as of no date)
+- **YK-61** Whether banks can receive wire transfers from abroad: Through intermediary banks, not direct, at place not stated (as of 2026-02)
+- **YK-62** Average cost of sending money to Yemen: 3.74% average, at place not stated (as of 2024-06)
+- **YK-63** Currencies of transfers into Yemen through banks: Mostly US dollars, then Saudi riyals, euros and UAE dirhams, at place not stated (as of 2022)
+- **YK-64** Whether and how an exchange business must renew its licence: Renewal required, through the Sana'a central bank's e-portal by 30 April 2026, at Houthis' area (as of 2026-04-30)
+- **YK-65** Which exchange businesses are licensed to operate: 100 companies, 231 establishments and 111 remittance agents listed for 2026, at the internationally recognized government's area (as of 2026-10-10); place not stated (as of 2026-12-31)
+- **YK-66** Whether customers of a failed exchange company are compensated from its licence guarantee: A guarantee required, but compensation not applied, at Houthi-controlled areas (as of 2025-12-15)
+- **YK-67** How many exchange businesses work without a licence: many unlicensed, at place not stated (as of 2022)
+- **YK-68** What an exchange company closed by the central bank must do to resume: Pay sums through back doors, at Houthi-controlled areas (as of 2025-12-15)
+- **YK-69** Whether an exchange company may move its operations out of the Houthi-held areas: Prevented, at Houthi-controlled areas (as of 2025-02-12)
+- **YK-70** Whether exchange companies may hold customer accounts and take deposits: Prohibited, at the internationally recognized government's area (as of 2024-04-05); the unified Republic's area (as of 2022-03); place not stated (as of 2026)
+- **YK-71** What a money exchanger may do under the exchange law: Currency trading, incoming transfers and cheques, but no deposits, accounts or other banking functions, at the unified Republic's area (as of 2025-12)
+- **YK-72** What money exchangers must report to the central bank: Monthly prudential data, at the internationally recognized government's area (as of 2024-04-05)
+- **YK-73** Whether exchange companies may hold accounts with each other: Prohibited, at the internationally recognized government's area (as of 2025-02)
+- **YK-74** Which identity documents a customer must show for a financial transaction or transfer: Unexpired ID card, passport, family card, social security card or driving licence, or a commercial register, at Houthis' area (as of 2025-11-13)
+- **YK-75** In what form a customer may draw balances and transfers held at exchange firms: In cash, in the same currency, without restriction, at Houthis' area (as of 2026-01-21)
+- **YK-76** Whether exchange firms may charge a commission for paying out in cash: Not allowed, at Houthis' area (as of 2026-01-21)
+- **YK-77** Whether a buyer can send money within Yemen through a transfer network: Available, at Kuraimi Express (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+- **YK-78** Whether buyers have digital transfers available: Not available to most of the rural population, at rural areas (as of 2026-04-27)
+- **YK-79** What a bank's transfer agencies offer customers: Transfers from inside and outside Yemen, deposits, bill payments and currency exchange, at Kuraimi Express (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+- **YK-80** Whether a buyer can pay for purchases at shops from a phone wallet or bank app: Available, at BYES (Al-Amal Bank)'s service (as of 2026-10-10); Cash e-wallet's service (as of 2026-10-10); Floosak's service (as of 2026-10-10); Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Jaib's service (as of 2026-10-10); Jawali's service (as of 2026-10-10); Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10); M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Mahfathati (Tadhamon Bank)'s service (as of 2026-10-10); Mobile Money (CAC Bank)'s service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10); SabaCash's service (as of 2026-10-10); Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10); Yemen Wallet (Yemen Post)'s service (as of 2026-10-10); place not stated (as of 2022-03)
+- **YK-81** Whether a buyer can pay bills and fees from a phone wallet or bank app: Available, at BYES (Al-Amal Bank)'s service (as of 2026-10-10); CardNet's service (as of 2026-10-10); Cash e-wallet's service (as of 2026-10-10); Floosak's service (as of 2026-10-10); Jaib's service (as of 2026-10-10); Jawali's service (as of 2026-10-10); Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10); Kuraimi Jawal (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Mahfathati (Tadhamon Bank)'s service (as of 2026-10-10); Mobile Money (CAC Bank)'s service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10); SabaCard's service (as of 2026-10-10); SabaCash's service (as of 2026-10-10); Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10); Yemen Telecom's service (as of 2024-08-05); Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YK-82** Whether a buyer can send money to another person from a phone wallet or bank app: Available, at BYES (Al-Amal Bank)'s service (as of 2026-10-10); Cash e-wallet's service (as of 2026-10-10); Floosak's service (as of 2026-10-10); Jaib's service (as of 2026-10-10); Jawali's service (as of 2026-10-10); Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10); M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Mahfathati (Tadhamon Bank)'s service (as of 2026-10-10); Mobile Money (CAC Bank)'s service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10); SabaCash's service (as of 2026-10-10); Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10); Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YK-83** Whether a buyer can send money from a phone wallet to someone without one: Available, at Floosak's service (as of 2026-10-10); Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10); M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Mobile Money (CAC Bank)'s service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10); Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10); Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YK-84** Whether a buyer can withdraw cash from a phone wallet at ATMs: Available, at Floosak's service (as of 2026-10-10); MB wallet's service (as of 2024-11-24); Mahfathati (Tadhamon Bank)'s service (as of 2026-10-10); Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+- **YK-85** Whether a buyer can send and receive transfers between a phone wallet and local transfer networks: Available, at Cash e-wallet's service (as of 2026-10-10); Floosak's service (as of 2026-10-10); Jaib's service (as of 2026-10-10); Jawali's service (as of 2026-10-10); MB wallet's service (as of 2024-11-24); ONE Cash's service (as of 2026-10-10); Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10); Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YK-86** Which companies and banks provide a wallet service: WeCash, with Yemen Kuwait Bank, Yemen Commercial Bank and the Yemeni Bank for Reconstruction and Development, at Jawali's service (as of 2026-10-10)
+- **YK-87** Which services a licensed payment service provider may offer: Transfers, collections, prepaid cards, remittances, payment instruments and e-money, at the internationally recognized government's area (as of 2022-09-13)
+- **YK-88** Minimum age to open a phone wallet: 18 years, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-89** Fee to open a phone wallet: free, at Cash e-wallet's service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10)
+- **YK-90** How long opening a phone wallet takes: three days, at Jaib's service (as of 2025-09-17)
+- **YK-91** Whether a buyer can register a wallet on a phone number in someone else's name: allowed if the number is in the holder's possession, under the holder's own ID, at Floosak's service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10)
+- **YK-92** Whether a buyer can use an alias number instead of the phone number for a wallet: available, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-93** Which mobile operators' subscribers can use a phone wallet: subscribers of all telecom companies in Yemen, at Mobile Money (CAC Bank)'s service (as of 2026-10-10)
+- **YK-94** How much a bank customer may transact through a mobile banking app: up to 10 million rials a day and 3 million per transaction, at Kuraimi Jawal (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+- **YK-95** Who may set ceilings on payment instruments: the central bank, at the internationally recognized government's area (as of 2022-09-13)
+- **YK-96** Fee on a declined payment by a wallet's card: a commission on each declined transaction, at Mobile Money (CAC Bank)'s service (as of 2026-08-30)
+- **YK-97** How wallet commissions are charged: a percentage, a fixed amount or both, deducted from the balance, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-98** Whether a buyer sees the fee before confirming a wallet payment: shown before confirmation, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-99** Whether a phone wallet balance earns interest or incentives: none, at Cash e-wallet's service (as of 2026-10-10); the internationally recognized government's area (as of 2023-08-08)
+- **YK-100** Where a wallet holder can take an unresolved complaint: the central bank, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-101** Which forum hears disputes over a wallet account: Yemeni courts, exclusively, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-102** When a provider may suspend or close a wallet without notice: breach of the terms or law, or fraud, money laundering, terrorist financing or other crime, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-103** When a provider may suspend a wallet at any time: an authority's investigation or proceedings against the holder, or any reason raising doubts about the provider's reputation, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-104** How changes to a wallet's terms take effect: a week after notice unless the holder objects and closes the account, exchange-rate changes at once, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-105** Language of a wallet's contract and correspondence: Arabic, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-106** Who bears consumers' losses from fraud, embezzlement or misuse: the provider, unless the customer's negligence or fraud caused it, at Cash e-wallet's service (as of 2026-10-10); the internationally recognized government's area (as of 2023-08-20); the unified Republic's area (as of 2006-12-28)
+- **YK-107** Deadline to claim back an unauthorized or mistaken wallet payment: within 24 hours, if the recipient has not used the funds, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-108** Whether a buyer can reverse a wallet payment made to a merchant: not accepted, a matter between buyer and merchant, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-109** Whether a buyer can dispute a wallet cash withdrawal made at an ATM: not allowed, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-110** Whether a buyer can let a third party operate a wallet account: only under formal authorization documented by contract, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-111** Whether a wallet account is a bank account: not a bank account, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-112** What notice a wallet user gets of each transaction: an instant electronic notice of each transaction with amount, balance and beneficiary, at the internationally recognized government's area (as of 2023-08-08)
+- **YK-113** Whether a buyer can link an international card to a phone wallet: proposed, at no place where it holds. Other rows: 1, in constants.tsv
+- **YK-114** Whether a buyer gets discounts or cashback for paying by phone: discounts or cashback offered, at Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-08); SabaCash's service (as of 2026-08-24)
+- **YK-115** Whether a buyer can pay for games and foreign digital subscriptions from a phone wallet: available, at Floosak's service (as of 2026-10-10); Jaib's service (as of 2026-10-10); Jawali's service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10)
+- **YK-116** Whether organisations can pay salaries, aid and other bulk payments into phone wallets: available, at Cash e-wallet's service (as of 2026-10-10); Floosak's service (as of 2026-10-10); Jawali's service (as of 2026-10-10); MEPS Yemen's service (as of 2026-10-10); Mobile Money (CAC Bank)'s service (as of 2026-10-10); Mobile Money Business (CAC Bank)'s service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10); place not stated (as of 2022-03)
+- **YK-117** Whether a buyer can move money between a phone wallet and a postal account: available, at Yemen Wallet (Yemen Post)'s service (as of 2026-10-10)
+- **YK-118** How long a network transfer takes to reach a phone wallet: 8 hours, up to a full day, at Cash e-wallet's service (as of 2023-04-20)
+- **YK-119** Which wallets and banks are connected to a shared bill-payment platform: Yemen Wallet, Rial Mobile, Kuraimi, Jawali, Mobile Money, ONE Cash, Cash, Yemen Kuwait Bank, Yemen Bank for Reconstruction and Development, Shamil Money, Floosak, BYES, Al-Mutakamila, Jaib, Yemen Commercial Bank and SabaCash, at e-sadad (Yemen Telecom)'s service (as of 2024-08-05)
+- **YK-120** Which goods may not be bought or sold with wallet payments: goods banned by the tax, money-laundering and related laws, including drugs, weapons, pornography, incitement and forged ID tools, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-121** Whether a provider says a central bank licenses its e-money service: licensed by the Central Bank of Yemen, at Cash e-wallet's service (as of 2026-10-10); Floosak's service (as of 2026-10-10); Jawali's service (as of 2026-10-10); Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+- **YK-122** Whether financial consumers are protected by rules: consumer protection instructions of 2023, at the internationally recognized government's area (as of 2026-10-10)
+- **YK-123** What a licensed bank needs to provide payment services: the central bank's approval on application, at the internationally recognized government's area (as of 2022-09-21)
+- **YK-124** Whether payment providers from one area may operate in the other: only with separate infrastructure in the other area, at Aden (as of 2024-04-05)
+- **YK-125** How long payment providers keep customer records: five years, at Jawali's service (as of 2026-10-10)
+- **YK-126** Whether a payment service provider may run cross-border payment services: only with the central bank's written approval, at the internationally recognized government's area (as of 2022-09-13)
+- **YK-127** What a payment service provider may not do: borrowing without approval, deposits, credit, virtual currencies and debit instruments, at the internationally recognized government's area (as of 2022-09-13)
+- **YK-128** Whether a financial service provider may make exclusive arrangements with banks, telecom companies, agents or merchants: not allowed, at the internationally recognized government's area (as of 2023-08-20)
+- **YK-129** What a wallet agent may do, and who may be one: agents may open accounts, buy and sell e-money and answer complaints, must be Yemeni nationals or registered companies, and may not sub-contract, deal in foreign currency or overcharge, at the internationally recognized government's area (as of 2023-08-08)
+- **YK-130** Whether a mobile e-money system must be ready to interoperate, under the Aden central bank's e-money instructions of August 2023: systems must be ready to interoperate once a platform exists, at the internationally recognized government's area (as of 2023-08-08)
+- **YK-131** Whether a merchant can take online payments through a wallet's or bank's payment API: available, at Cash Pay (Cash e-wallet)'s service (as of 2026-10-10); E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Fatora's service (as of 2022-10-24); Floosak's service (as of 2026-10-10); Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10); Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2025-06-15)
+- **YK-132** Whether a merchant can receive buyers' payments at the point of sale through a wallet or bank: available, at Cash e-wallet's service (as of 2026-10-10); Floosak's service (as of 2026-10-10); Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Jawali's service (as of 2026-10-10); M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Mobile Money Business (CAC Bank)'s service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10); Shamil Money (Shamil Bank of Yemen and Bahrain)'s service (as of 2026-10-10)
+- **YK-133** Whether a merchant can start a payment through a provider's API: the merchant, at Aden Bank's service (as of 2024-03-23); Al-Qutaibi Bank's service (as of 2024-03-06); Cash Pay (Cash e-wallet)'s service (as of 2024-03-17); E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-05-26); Floosak's service (as of 2025-06-17); SabaCash's service (as of 2023-12-17)
+- **YK-134** How long a merchant has to complete an API payment after requesting it: 10 minutes, at Aden Bank's service (as of 2024-03-23)
+- **YK-135** Whether a merchant can check an API payment's status: available, at Aden Bank's service (as of 2024-03-23); Cash Pay (Cash e-wallet)'s service (as of 2024-03-17); Floosak's service (as of 2024-01-30); Jawali's service (as of 2025-07-16); SabaCash's service (as of 2023-12-17)
+- **YK-136** Whether a buyer's wallet must be allowed to pay online: a buyer can be refused as not allowed to pay online, at Cash Pay (Cash e-wallet)'s service (as of 2024-03-17)
+- **YK-137** Limits on the amount of an API payment to a merchant: a limit applies, its amount not stated, at Cash Pay (Cash e-wallet)'s service (as of 2024-03-17)
+- **YK-138** Whether a merchant must host an API that the bank calls to verify its customers: required, at E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-05-26)
+- **YK-139** Whether a merchant can withdraw wallet balance as cash: available, at Cash Pay (Cash e-wallet)'s service (as of 2026-10-10); Cash e-wallet's service (as of 2026-10-10)
+- **YK-140** How fast an electronic payment reaches the merchant: immediately, at Cash Pay (Cash e-wallet)'s service (as of 2026-10-10); Kuraimi Islamic Microfinance Bank's service (as of 2026-10-10)
+- **YK-141** Whether a merchant can issue invoices that buyers pay from a wallet: available, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-142** Whether a wallet holder can exchange between currencies inside the wallet: available, at Cash e-wallet's service (as of 2026-10-10); Floosak's service (as of 2026-10-10)
+- **YK-143** Exchange rate for currency conversion in a wallet: the current rate, changed without notice, with a possible commission, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-144** Whether a merchant can run offers for buyers through a wallet: available, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-145** Whether a merchant can advertise through a wallet's app: available, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-146** Whether a merchant can link branches or points of sale to one wallet account: available, at Cash e-wallet's service (as of 2026-10-10); Mobile Money Business (CAC Bank)'s service (as of 2026-10-10)
+- **YK-147** Whether a merchant can send and receive transfers from a wallet within Yemen and abroad: available, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-148** Limit on a merchant's cash withdrawal from a wallet: ceilings suited to the business, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-149** Whether a wallet payment a merchant receives is final: reversible if the payer's side recovers or reverses the funds, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-150** Fee a merchant pays to receive wallet payments: commissions may apply, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-151** Who is responsible for the legality of goods sold for wallet payment: the account holder, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-152** Whether a merchant's wallet may be restricted because of a payment received: occurred, after a buyer's transfer, at Jaib's service (as of 2026-08-06)
+- **YK-153** Whether a merchant can sign up to accept electronic payments remotely: yes, online or in the app, at Hasseb (Kuraimi Islamic Microfinance Bank)'s service (as of 2025-11-12); Mobile Money Business (CAC Bank)'s service (as of 2026-10-10); ONE Cash's service (as of 2026-10-10)
+- **YK-154** Whether a merchant can pay suppliers and other businesses from a business wallet: available, at Mobile Money Business (CAC Bank)'s service (as of 2026-10-10)
+- **YK-155** Whether a merchant can pay the Yemen Petroleum Company for fuel from a business wallet: available, at Mobile Money Business (CAC Bank)'s service (as of 2026-10-10)
+- **YK-156** Whether a business wallet can receive transfers from other providers' wallets: not yet, at Mobile Money Business (CAC Bank)'s service (as of 2026-08-23)
+- **YK-157** Whether a merchant earns a commission on wallet payments received: offered for a limited period, at SabaCash's service (as of 2026-08-24)
+- **YK-158** How wallet agents are paid: competitive commissions, at ONE Cash's service (as of 2026-10-10)
+- **YK-159** Which QR code standard financial institutions must use: a single national QR code standard, at the internationally recognized government's area (as of 2026-03-29)
+- **YK-160** Fees and limits on payment cards: a 1,000-rial issuing fee, a 30 percent commission on cash withdrawals, and a daily purchase limit, at CAC Bank's service (as of 2026-10-10)
+- **YK-161** Whether merchants can accept card payments: acquiring of local and international Visa and Mastercard cards, at SabaCard's service (as of 2026-10-10). Other rows: 1, in constants.tsv
+- **YK-162** Whether a buyer can pay online stores by card: accepted, at DeliFast's service (as of 2026-10-10); Taiseer's service (as of 2025-09-12)
+- **YK-163** Who may operate ATMs: licensed banks and institutions the central bank licenses, at the unified Republic's area (as of 2006-12-28)
+- **YK-164** Which currencies can be withdrawn at ATMs: rials, US dollars and Saudi riyals, at place not stated (as of 2025-06)
+- **YK-165** How much merchants take by card at points of sale: 1.699 billion rials in Q3 2024, at place not stated (as of 2024-09)
+- **YK-166** Where ATMs are concentrated: Sana'a 35%, Aden 20%, Taiz 13%, Hadramawt 11%, Marib 4%, at Sana'a, Aden, Taiz, Hadramawt and Marib (as of 2025-06)
+- **YK-167** Whether cheques are cleared through the central bank: 3,092 cheques in Q3 2024, at central bank and its branches in Mukalla, Seiyun and Taiz (as of 2024-09)
+- **YK-168** Whether banks transfer through SWIFT within Yemen: 356 transfers in Q3 2024, at place not stated (as of 2024-09)
+- **YK-169** Who provides payment services: mainly banks and money exchangers, and the post, at place not stated (as of 2024-04-05)
+- **YK-170** Which payment services the post office offers: non-electronic bill payments, pensions, domestic transfers and deposits, at Yemen Post's service (as of 2022-03)
+- **YK-171** Whether payment providers can use mobile networks' USSD and voice channels: refused by mobile network operators, at place not stated (as of 2022-03)
+- **YK-172** Whether a buyer can cancel a money transfer already sent: within 24 hours, at ONE Cash's service (as of 2026-10-10)
+- **YK-173** How a buyer proves payment to an online seller: a photo of the payment notice on WhatsApp, at Dakhm store's service (as of 2026-10-10)
+- **YK-174** Whether a buyer can pay an online order from a wallet topped up in the seller's app: available, at Etlobni's service (as of 2026-10-10)
+- **YK-175** Who delivers online orders to buyers: the seller's own fleet, or pickup by the buyer, at Bazzarry's service (as of 2025-09-15)
+- **YK-176** Whether roads, fuel and transport links constrain delivery to buyers: constrained by roads, fuel shortages and weak transport links, at place not stated (as of 2025-09-15)
+- **YK-177** Whether a buyer can order a delivery by phone call when the internet is slow: available, at Etlobni's service (as of 2026-10-10); Tawseel One's service (as of 2026-10-10)
+- **YK-178** Whether delivery services through online platforms are regulated: regulated by the telecom ministry, at Houthis' area (as of 2025-08-12)
+- **YK-179** Whether a buyer or merchant can send goods by parcel post: available, up to 50 kg, between governorates or abroad, at Yemen Post's service (as of 2026-10-10)
+- **YK-180** Whether a parcel sent by post can be insured: general insurance, and optional insurance, at Yemen Post's service (as of 2026-10-10)
+- **YK-181** Whether a parcel sent by post can be tracked online: available, at Yemen Post's service (as of 2026-10-10)
+- **YK-182** Fee to send a parcel by post: by weight and destination under the postal tariff, plus a 5% local-authority fee, at Yemen Post's service (as of 2026-10-10)
+- **YK-183** Delivery time for a parcel sent by post: 12 to 84 hours within Yemen, 12 to 96 hours to Arab countries, 96 to 120 hours elsewhere, at Yemen Post's service (as of 2026-10-10)
+- **YK-184** Whether a buyer can pay for, collect or return an online order at the seller's shop: available, at Anayees store's service (as of 2026-10-10)
+- **YK-185** What a buyer must do to return an online purchase: contact customer service with the order number, send photos, await approval, then ship, at Perfume Garden's service (as of 2026-10-10)
+- **YK-186** When a buyer is refunded for a returned online purchase: within 2 to 3 working days of an approved return, by the agreed method, at Perfume Garden's service (as of 2026-10-10)
+- **YK-187** Whether a buyer gets money back for an order the seller cancels: problems getting the money back, at OnTime (Quality Connect)'s service (as of 2026-07-14)
+- **YK-188** Whether a buyer can try and inspect a product before buying it: available, at Anayees store's service (as of 2026-10-10)
+- **YK-189** How a buyer can raise a problem with an online order: the contact page, email or mobile, or the service point, at Anayees store's service (as of 2026-10-10)
+- **YK-190** Whether a merchant can order wholesale from a foreign online store through an intermediary: available, at Procorners's service (as of 2022-12-20)
+- **YK-191** How goods bought abroad are carried into Yemen: by individual truck owners from Saudi Arabia, breakage shared with the reseller, at place not stated (as of 2025-05-14)
+- **YK-192** Whether a buyer can pay for foreign purchases in rials: available, at Procorners's service (as of 2023-08-10)
+- **YK-193** Whether a buyer can get photos of goods bought abroad before shipping: available, at Procorners's service (as of 2022-12-20)
+- **YK-194** Whether a buyer can have goods bought abroad inspected: available for an extra fee, at Procorners's service (as of 2022-12-20)
+- **YK-195** Whether a buyer is refunded if an order from abroad does not arrive: guaranteed, at Procorners's service (as of 2022-12-20)
+- **YK-196** Delivery time for an order from abroad, under a buying service's general shipping policy: 2 to 60 days free or 2 to 30 days fast, for orders over 50 dollars, at Procorners's service (as of 2022-12-22)
+- **YK-197** Whether a buyer can negotiate the price of an order through an intermediary: not possible, prices are fixed, at Procorners's service (as of 2022-10-23)
+- **YK-198** Whether merchants sell through social media: social media, at place not stated (as of 2025-09-15)
+- **YK-199** Whether merchants can sell through an online marketplace: available, registration free, at Bab Al-Mandab's service (as of 2026-10-10)
+- **YK-200** Whether online stores need a government licence or approval: approval given to an online store, at Ministry of Trade and Industry's area (as of 2026-10-10). Other rows: 1, in constants.tsv
+- **YK-201** How buyers find online sellers they trust: word of mouth and personal networks, at place not stated (as of 2025-09-15)
+- **YK-202** Whether paying online sellers in advance carries a risk of fraud: fake stores take advance payment and disappear, at place not stated (as of 2026-03-29)
+- **YK-203** Whether a courier collects payment on delivery for merchants: available to business accounts, at Torod's service (as of 2026-10-10)
+- **YK-204** What a merchant must provide to open a business account with a courier: business name and commercial registration, activated within a working day, at Torod's service (as of 2026-10-10)
+- **YK-205** What a customer must provide to open a courier account: phone number, SMS code and identity document, at Torod's service (as of 2026-10-10)
+- **YK-206** Whether an online store can be linked to a courier: not available, being developed, at Torod's service (as of 2026-10-10)
+- **YK-207** Which delivery destinations a merchant can offer at checkout: the merchant's choice among 21 cities, or all of them, at YemenPay's service (as of 2026-08-22)
+- **YK-208** Whether a merchant can buy stock from a supplier through an app: available, paying cash, by transfer or on credit, at CardNet's service (as of 2026-10-10)
+- **YK-209** Whether a merchant must be entered in the commercial register to trade: required, only those in the register may trade from a shop, at Houthis' area (as of 2019-12-14); the unified Republic's area (as of 1991, 1991-04-13)
+- **YK-210** When an individual merchant must apply for entry in the commercial register: within sixty days of starting to trade, at Houthis' area (as of 2026-10-10); the unified Republic's area (as of 1991)
+- **YK-211** When a foreign company's branch or agency must apply for entry in the commercial register: within sixty days of starting its activity, at the unified Republic's area (as of 1991)
+- **YK-212** Which merchants are exempt from the commercial register: small merchants the regulation defines, exempted by the Minister, at the unified Republic's area (as of 1991)
+- **YK-213** How long a commercial register entry lasts before it must be renewed: five years, with a 25 percent fine for late renewal, at Houthis' area (as of 2019-12-14); the unified Republic's area (as of 1991, 1991-04-13)
+- **YK-214** Whether a merchant may let another person use its commercial register entry: not allowed, at Houthis' area (as of 2019-12-14)
+- **YK-215** Whether a merchant must register its trade name to trade: required, applying within sixty days of starting, at the unified Republic's area (as of 2003-03-05)
+- **YK-216** What trade name a merchant may register: names in Arabic letters, not misleading, famous, sectarian or religious, at the unified Republic's area (as of 2003-03-05)
+- **YK-217** How long a trade-name reservation lasts: up to sixty days, at Houthis' area (as of 2026-10-10)
+- **YK-218** Whether a foreign company's commercial agency needs a prior licence from the ministry, under Law 23 of 1997: required, a prior licence from the ministry, at the unified Republic's area (as of 1997-04-06)
+- **YK-219** What registering a commercial agency requires: certified contract, register and tax card, quality certificate and a spare-parts undertaking, at Houthis' area (as of 2026-10-10)
+- **YK-220** Whether commercial agencies whose licences were revoked or struck off can be restored: restorable within a 90-day grace period, at Houthis' area (as of 2026-07-31)
+- **YK-221** Whether goods needing maintenance may be imported without a registered agency: not allowed without a registered agency, at the unified Republic's area (as of 1997-04-06)
+- **YK-222** What an agent selling foreign vehicles, machinery or appliances must provide: unused goods, with maintenance staff, spare parts and workshops, at the unified Republic's area (as of 2000-09-27)
+- **YK-223** Whether goods under a registered agency may be imported other than through the agent: only if the agent refused a written request without lawful excuse, at the unified Republic's area (as of 1997-04-06)
+- **YK-224** In which fields a foreign company may operate through a branch in Yemen: banking, technical services, contracting, tourism, industry, oil and minerals, agriculture and fisheries, and fields the cabinet approves, at the unified Republic's area (as of 2000-09-27)
+- **YK-225** What a foreign company's branch needs before operating in Yemen: a licence and publication in the commercial register, at the unified Republic's area (as of 1997-04-06)
+- **YK-226** Whether a foreign business needs a Yemeni partner: not required, at the unified Republic's area (as of 2026)
+- **YK-227** Which legal forms a commercial company may take: general or limited partnership, joint venture, joint-stock, partnership limited by shares, or limited liability, at the unified Republic's area (as of 1997-04-06)
+- **YK-228** Who may be a general partner in a partnership company: Yemeni nationals aged 18 or over, at the unified Republic's area (as of 1997-04-06)
+- **YK-229** How many shareholders and how much capital a joint-stock company needs: at least five shareholders, capital 50 million rials if public or 15 million if closed, at the unified Republic's area (as of 2004)
+- **YK-230** Who must make up the majority of a joint-stock company's board: Yemeni nationals domiciled in Yemen, unless the cabinet exempts, at the unified Republic's area (as of 1997-04-06)
+- **YK-231** How many partners a limited-liability company may have: two to thirty, at the unified Republic's area (as of 2004)
+- **YK-232** What minimum capital a limited-liability company needs: none fixed, at the unified Republic's area (as of 2008)
+- **YK-233** Who licenses a limited-liability company, and how fast: the registrar, within seven working days, silence counting as acceptance, at the unified Republic's area (as of 2009)
+- **YK-234** Who may found a commercial company, and how many founders it needs: at least five partners aged 18 or over, at Houthis' area (as of 2026-10-10)
+- **YK-235** Whether a merchant can apply online for the ministry's registrations: yes, through the e-portal, at Houthis' area (as of 2026-10-10)
+- **YK-236** Whether a commercial-registration applicant must attend in person: yes, in person or by official proxy, at Houthis' area (as of 2026-10-10)
+- **YK-237** What an individual needs to enter the commercial register: in person or by proxy, with ID, trade-name reservation and certified lease, in three days, at Houthis' area (as of 2026-10-10)
+- **YK-238** What an individual trading establishment needs to enter the commercial register: proof of premises, ID, photos, form and trade-name reservation, in three days, at Houthis' area (as of 2026-10-10)
+- **YK-239** Whether a foreigner may enter the commercial register as an individual merchant: allowed, with residence and work permits, at Houthis' area (as of 2026-10-10)
+- **YK-240** What form a commercial register takes: electronic only, at Houthis' area (as of 2024-01-08)
+- **YK-241** Whether a merchant needs other authorities' licences besides the commercial register before trading: required, at Houthis' area (as of 2025-12)
+- **YK-242** What government fees small producers and small projects pay: exempt from government fees, at Houthis' area (as of 2025-08-12); Prime Minister in Sana'a's area (رئيس مجلس الوزراء بصنعاء) (as of 2025-07-21)
+- **YK-243** How quickly a small project's permit application must be decided: within three days, at Prime Minister in Sana'a's area (رئيس مجلس الوزراء بصنعاء) (as of 2025-07-21)
+- **YK-244** Whether a trading business can get the investment law's guarantees and incentives: excluded, at Houthis' area (as of 2025-01-05)
+- **YK-245** Whether an investment project must run its finances through a licensed bank: required, except small and micro projects, at Houthis' area (as of 2025-01-05)
+- **YK-246** How an exporting project must bring in export proceeds to get export incentives: proceeds brought in through an approved bank, or used for the project's imports, at Houthis' area (as of 2025-01-05)
+- **YK-247** Whether American and Israeli goods may be imported and sold: American goods banned, at Houthis' area (as of 2025-10-05); Prime Minister's area (رئيس مجلس الوزراء) (as of 2026-10-10)
+- **YK-248** Whether goods with a local equivalent may be imported, under the economy and finance ministries' joint decision to protect local production: goods with a local equivalent banned, some agricultural imports stopped or cut, at Houthis' area (as of 2025-08-12)
+- **YK-249** Whether consumer-protection rules cover online sales: covered, e-commerce included, at the unified Republic's area (as of 2008-10-07, 2008)
+- **YK-250** What a label on goods offered for sale must show: an Arabic label giving contents, origin, producer, dates and weight, at the unified Republic's area (as of 2008-10-07, 2008)
+- **YK-251** Whether goods are sold with accurate labels: imported cement relabelled as local, at Sana'a (as of 2026-02-02)
+- **YK-252** In what language a seller must give product and service details: Arabic, a foreign language may be added, at the unified Republic's area (as of 2008-10-07)
+- **YK-253** What a seller must show on the documents it issues to consumers, under Law 46 of 2008: register entry, activity and trademark, at the unified Republic's area (as of 2008-10-07, 2008)
+- **YK-254** Whether a seller may refuse a sale, impose other purchases or charge above the announced price: not allowed, at the unified Republic's area (as of 2010)
+- **YK-255** Whether a seller must give the buyer an invoice: required on request, free of charge, at the unified Republic's area (as of 2010)
+- **YK-256** Whether importers, wholesalers and producers must invoice every sale: required, refusal fined 20,000 to 100,000 rials, at the unified Republic's area (as of 2007)
+- **YK-257** What a seller must disclose before an instalment sale: credit provider, cash price, total cost, instalments, period, penalties and ownership, at the unified Republic's area (as of 2010)
+- **YK-258** What warranty a seller owes on goods and services, under Law 46 of 2008: quality and hidden defects, after-sales service on durable goods for at least five years, at the unified Republic's area (as of 2008-10-07, 2008)
+- **YK-259** Whether a seller of goods sold by weight or measure must use approved instruments: required, at the unified Republic's area (as of 2008-10-07, 2008)
+- **YK-260** Whether counterfeit or non-conforming goods may be sold: not allowed, at the unified Republic's area (as of 2008-10-07)
+- **YK-261** Whether a seller may announce discounts or prizes: only under the competent bodies' rules, at the unified Republic's area (as of 2008-10-07, 2008)
+- **YK-262** What a seller may advertise: nothing misleading, and no banned or unlicensed goods or activities, at the unified Republic's area (as of 2008-10-07, 2008)
+- **YK-263** Whether unfair terms in a consumer contract bind the consumer: void, at the unified Republic's area (as of 2010)
+- **YK-264** Penalty for breaching consumer protection rules: at least a year's imprisonment, with the judgment published, at the unified Republic's area (as of 2008)
+- **YK-265** Whether price caps on basic goods are in force: price caps in force, at Houthi-controlled areas (as of 2026-05); Houthis' area (as of 2026); government-controlled areas (as of 2025-08)
+- **YK-266** Whether a seller must take and settle consumer complaints: required, at the unified Republic's area (as of 2010)
+- **YK-267** What a seller must do on finding a harmful defect in goods it sells: within five days, warn, withdraw and refund or replace, at the unified Republic's area (as of 2010)
+- **YK-268** Whether sellers may monopolise a market: banned, at the unified Republic's area (as of 2010)
+- **YK-269** Whether spoiled, damaged or expired goods may be sold: not allowed, up to six months in jail or a 500,000-rial fine, at the unified Republic's area (as of 2007)
+- **YK-270** Whether prohibited or smuggled goods may be sold: not allowed, one to five years in jail and confiscation, at the unified Republic's area (as of 2007)
+- **YK-271** Whether pharmacies and private facilities may sell tuberculosis drugs: not allowed, at Houthis' area (as of 2025-08-12)
+- **YK-272** Which consumer protection law is in force: Law 46 of 2008, at Sana'a (as of 2026-02-02); place not stated (as of 2008)
+- **YK-273** Whether e-commerce has its own legal protection: no specific law, at the Ministry of Trade and Industry in Aden's area (as of 2025-04-15); place not stated (as of 2025-09-15)
+- **YK-274** Whether taxpayers can use the Tax Authority's services electronically: available, through e-services, at Tax Authority's area (مصلحة الضرائب) (as of 2026-10-10)
+- **YK-275** Sales tax rate on exported goods and services: 0 percent, at the unified Republic's area (as of 2005-07-18)
+- **YK-276** Sales tax rates on specific goods and services: set item by item in schedule 3, at the unified Republic's area (as of 2005-07-18)
+- **YK-277** Sales tax obligations of non-resident sellers: appoint a representative, otherwise the resident pays, at place not stated (as of 2022-01-01)
+- **YK-278** Whether digital services sold to consumers in Yemen by non-residents are taxed: no specific legislation, at place not stated (as of 2022-01-01)
+- **YK-279** Whether registered sellers may deduct input tax from the sales tax due: deducted, except on petroleum, cars and club fees, at the unified Republic's area (as of 2002-08-29)
+- **YK-280** How sales tax on qat is collected: collected in qat markets and at city entrances, farming-out banned, at the unified Republic's area (as of 2005-07-18)
+- **YK-281** Which goods bear the production and consumption tax instead of sales tax: goods in schedule 3, under the production and consumption tax, at the unified Republic's area (as of 2002-08-29)
+- **YK-282** On what value sales tax is charged: the real invoice value, at the unified Republic's area (as of 2005)
+- **YK-283** How often and by when a seller must file a sales tax return: monthly, within 21 days of the month's end, at Tax Authority in Sana'a's area (مصلحة الضرائب بصنعاء) (as of 2026-04-08); the unified Republic's area (as of 2020); place not stated (as of 2022-01-01)
+- **YK-284** Penalty for late payment of sales tax: 2 percent a month, at the unified Republic's area (as of 2005-07-18)
+- **YK-285** Whether a sales-tax registered seller must show its tax number on its documents: required, at the unified Republic's area (as of 2005-05-01)
+- **YK-286** Whether a sales-tax registered seller must display its registration certificate: required, at the unified Republic's area (as of 2005-05-01)
+- **YK-287** In what language a sales-tax invoice must be: Arabic, or translated into Arabic, at Tax Authority's area (مصلحة الضرائب) (as of no date)
+- **YK-288** Whether a sales-tax registered seller may issue invoices electronically: allowed, with all invoice data, at Tax Authority's area (مصلحة الضرائب) (as of 2002-05-25)
+- **YK-289** Whether a retail seller may record cash sales on cash registers instead of issuing an invoice for each sale: allowed for cash sales, under the tax administration's control, at Tax Authority's area (مصلحة الضرائب) (as of 2005-06-20)
+- **YK-290** What records a sales-tax registered seller must keep: regular books, computer systems kept in Yemen, at the unified Republic's area (as of 2005)
+- **YK-291** What a seller needs to bid in government tenders: a sales-tax registration certificate, at Tax Authority's area (مصلحة الضرائب) (as of 2007)
+- **YK-292** Whether a business needs a tax card to contract, trade or renew licences: required, renewed yearly, at Tax Authority's area (مصلحة الضرائب) (as of 2022-12)
+- **YK-293** When a business must notify the tax administration that it has started trading: within 30 days, or 60 days for property letting and exempt small enterprises, at Tax Authority's area (مصلحة الضرائب) (as of 2022-12)
+- **YK-294** What a business needs to obtain a tax number: a start-of-activity notice with ID, premises proof, register and licences, free, in 3 working days, at Tax Authority's area (مصلحة الضرائب) (as of 2022-12)
+- **YK-295** What guarantee a business must give the Tax Authority to import: a one-year cash bank guarantee from first-time importers, at Tax Authority's area (مصلحة الضرائب) (as of 2022-12)
+- **YK-296** When a business must notify the tax administration of a new activity or changed data: within 30 days, or 21 days for sales-tax data, at Tax Authority's area (مصلحة الضرائب) (as of 2022-12)
+- **YK-297** Whether a small business pays profits tax: small and micro enterprises exempt, except listed trades, at Tax Authority's area (مصلحة الضرائب) (as of 2022-12)
+- **YK-298** What suspends a business's tax number: missed returns or payments, closure or absence from the address, at Tax Authority's area (مصلحة الضرائب) (as of 2022-12)
+- **YK-299** When a business can reclaim tax it paid: within five years of paying, refunded within 40 days or a month, at Tax Authority's area (مصلحة الضرائب) (as of 2024-03)
+- **YK-300** How a business receives a tax refund: by cheque, set-off or carry-forward, at Tax Authority's area (مصلحة الضرائب) (as of 2024-03)
+- **YK-301** What zakat a business must pay on goods it holds for sale: 2.5 percent a lunar year on trade goods above the nisab, at the unified Republic's area (as of 1999-01-13)
+- **YK-302** What zakat certain service businesses must pay on their income: the trade rate on net income, deducted from tax, at the unified Republic's area (as of 1999-01-13)
+- **YK-303** Whether a business must pay zakat for past years: not required, at General Zakat Authority's area (الهيئة العامة للزكاة) (as of 2026-09-30)
+- **YK-304** What a merchant gets for declaring and paying zakat: customs and tax privileges, implementation under discussion, at Zakat Authority in Sana'a's area (صنعاء: هيئة الزكاة) (as of 2026-05-17)
+- **YK-305** Whether businesses in Houthi-held areas face taxes and levies beyond the ordinary, in general accounts: taxes and levies imposed, at Houthis' area (as of 2026-08-07)
+- **YK-306** How heavily taxes and fees weigh on an online store: taxes, fees and rents cut into an online store's margin, at Aden (as of 2025-04-15)
+- **YK-307** Whether the authorities seize merchants' property and bank accounts: seizures reported, at Houthi-controlled areas (as of 2026, 2026-02-02); Houthis' area (as of 2026-07-31); Sana'a (as of 2021); place not stated (as of 2026)
+- **YK-308** Whether goods are taxed or cleared through customs more than once: more than once, at Aden to Sana'a (as of 2026); place not stated (as of 2023-02-23)
+- **YK-309** Whether local drug manufacturers owe sales tax on production inputs: relieved, at Houthis' area (as of 2020-05-03)
+- **YK-310** Whether importers pay foreign suppliers through exchange companies: through exchange companies, at place not stated (as of 2025-12)
+- **YK-311** Whether foreign suppliers accept digital payment from Yemeni importers: refused, at place not stated (as of 2025-06-15)
+- **YK-312** Which trade agreements cover Yemen's trade: WTO since 2014 and the Greater Arab Free Trade Area, at place not stated (as of 2026)
+- **YK-313** Which outside trade hubs Yemeni merchants use: Oman's Mazunah free zone, at place not stated (as of 2026)
+- **YK-314** Whether cooking gas is in short supply: cooking gas shortage, at Aden (as of 2026-07-31); Aden and other cities under government control (as of 2025-12)
+- **YK-315** Whether fuel sold is of sound quality: contaminated fuel, at Sana'a and other cities under Houthi control (as of 2026-06)
+- **YK-316** Where buyers can buy fuel: stations, community leaders, designated outlets and the parallel market, at place not stated (as of 2024-03)
+- **YK-317** Whether a courier offers international shipping to and from Yemen: available, 5 to 15 working days, at Torod's service (as of 2026-10-10)
+- **YK-318** Whether goods are in supply in a city's markets: supply crisis, at Taiz (as of 2026-10-09)
+- **YK-319** Whether merchants can get their inputs: cut off, at place not stated (as of no date)
+- **YK-320** Whether vehicle gas-conversion workshops may operate: ordered closed, at Governor of Aden's area (as of 2026-04-09)
+- **YK-321** How customs duties on parcels from abroad are collected: cleared by the post, duties collected on delivery, non-commercial parcels exempt, at Parcel service (Yemen Post)'s service (as of 2026-10-10)
+- **YK-322** How widely electronic payment means are available: limited, at place not stated (as of 2025-09-08)
+- **YK-323** What share of payments by value is made with e-money: 1 percent, at place not stated (as of 2018)
+- **YK-324** How widely buyers use phone wallets: low, at place not stated (as of 2026-02)
+- **YK-325** How far account holding differs between men and women: 13 percentage points, at place not stated (as of 2022)
+- **YK-326** How many bank accounts there are: 5,202,019, at place not stated (as of 2025-06)
+- **YK-327** How many active microfinance depositors there are: 3.3 million, at Kuraimi Islamic Microfinance Bank's service (as of 2023)
+- **YK-328** Which financial intermediaries firms mainly use: exchange companies first, then banks, at place not stated (as of 2022)
+- **YK-329** How businesses pay their staff: almost all in cash or cash transfer, at place not stated (as of 2026)
+- **YK-330** How businesses pay their suppliers: mostly cash, then exchange transfers, few through banks, at place not stated (as of 2025-09-15)
+- **YK-331** Whether Yemenia issues tickets in Houthi-controlled areas: tickets not issued in Houthi-controlled areas, at Yemenia's service (as of 2024-06)
+- **YK-332** Whether buyers hold a national identity card: more than half of adults have none, at place not stated (as of 2022-03)
+- **YK-333** Where online buyers are: concentrated in cities, at place not stated (as of 2025-09-15)
+- **YK-334** How far women take part in online selling and buying: urban women most engaged, rural women hindered, at place not stated (as of 2025-09-15)
+- **YK-335** Whether buyers use international payment cards: no longer used, at place not stated (as of 2023-02-23)
+- **YK-336** Whether public employees can pay food merchants with vouchers: a voucher system at an undervalued rate, at Houthis' area (as of 2017-04)
+- **YK-337** Where money exchangers' services reach: large segments, remote rural areas included, at place not stated (as of 2022-03)
+- **YK-338** Whether goods and services are bartered: common in many areas, at place not stated (as of no date)
+- **YK-339** Whether households buy on credit: 40 percent of households, at place not stated (as of 2026)
+- **YK-340** What customer identity records transport businesses must give the authorities: passenger lists with ID copies and phone numbers before travel, at Houthis' area (as of 2020-08-25)
+- **YK-341** Whether a cybercrime law is in force: proposed, at no place where it holds. Other rows: 1, in constants.tsv
+- **YK-342** Whether electronic funds transfer is an accepted means of payment: accepted, at the unified Republic's area (as of 2025-06-15)
+- **YK-343** Whether electronic records and signatures have the legal effect of written ones: same legal effect as written ones, at the internationally recognized government's area (as of 2023-11-09); the unified Republic's area (as of 2006-12-28, 2006)
+- **YK-344** Whether an offer or acceptance may be made by electronic message: accepted, at the unified Republic's area (as of 2006-12-28)
+- **YK-345** What institutions providing electronic funds transfer must do: comply with central bank laws, provide safe services and keep secrecy, at the unified Republic's area (as of 2006-12-28)
+- **YK-346** Who may issue electronic-signature certificates or provide electronic-signature services: only licensed entities, at the unified Republic's area (as of 2006-12-28)
+- **YK-347** Whether people may deal with network and pyramid marketing companies: warned against, at Central Bank of Yemen's area (as of no date); Houthis' area (as of 2026-05-18)
+- **YK-348** How a buyer can check whether a financial or investment entity is licensed: the central bank's free number, at Central Bank of Yemen's area (as of no date)
+- **YK-349** Whether banks, exchange companies and payment providers may deal in virtual assets: banned, at the internationally recognized government's area (as of 2026-10-10)
+- **YK-350** Whether crypto-assets are legal tender: not legal tender, at place not stated (as of 2026-07-09)
+- **YK-351** Whether crypto trading is used to move funds in the parallel market: used to obscure the origin of funds, at place not stated (as of 2025-12)
+- **YK-352** Which crypto exchanges are available to users in Yemen: Binance, OKX, Kraken and Changelly, at place not stated (as of 2026-07-09)
+- **YK-353** Whether crypto can be traded peer to peer in Yemeni rials: available, at Binance's service (as of 2026-07-09); place not stated (as of 2026-07-09)
+- **YK-354** How users in Yemen can fund crypto purchases: bank transfer, cards and Apple Pay, at place not stated (as of 2026-07-09)
+- **YK-355** How reliable internet access is: frequent outages, at place not stated (as of 2025-07-22)
+- **YK-356** Mobile data speed: 3.98 Mbps, at place not stated (as of 2023-05)
+- **YK-357** Fixed broadband speed: about 10 Mbps, at place not stated (as of 2025)
+- **YK-358** Cost of internet access: high, at place not stated (as of 2022-10-24)
+- **YK-359** Which internet and telecom providers operate: Yemen Mobile, YOU and Sabafon, with ADSL, Yemen 4G and TeleYemen, at place not stated (as of 2026-10-10)
+- **YK-360** Which websites and social media can be reached: critical sites blocked, social media intermittently, at YemenNet's service (as of 2025-09-15). Other rows: 1, in constants.tsv
+- **YK-361** What share of people have a mobile phone: 63 percent, at place not stated (as of 2019)
+- **YK-362** Whether banks must finance imports for companies the authorities name: banks made to finance imports for Houthi-aligned companies, at Houthis' area (as of 2026-02-17)
+- **YK-363** Where the foreign currency that finances imports comes from: remittances from abroad, at Houthis' area (as of 2025-12); place not stated (as of 2021-08-02)
+- **YK-364** Exchange rate customs uses to assess duty on luxury and non-essential goods: YER 1,550 for luxury and non-essential goods, at the internationally recognized government's area (as of 2026-05)
+- **YK-365** Whether the Aden central bank's new 500-rial note may be dealt in, under the Salvation Government's directive of June 2017: barred, at Houthis' area (as of 2017-11)
+- **YK-366** Whether the Aden central bank's new 1,000-rial note may be dealt in, under the Salvation Government's warning of March 2018: barred, at Houthis' area (as of 2018-03-28)
+- **YK-367** Whether banks and exchange firms on the Sana'a side may deal in the Aden central bank's new notes: barred, at Houthis' area (as of 2024-05-30); Sana'a (as of 2026-02-17)
+- **YK-368** Whether importers, wholesalers, malls and fuel stations may deal in the new 500- and 1,000-rial notes, under the Ministry of Industry and Trade's circular of June 2018: barred, at Houthis' area (as of 2018-06)
+- **YK-369** Whether parties in the Houthis' area may deal with Kuraimi Islamic Microfinance Bank, under the Sana'a central bank's June 2025 circular: Kuraimi Islamic Microfinance Bank barred, at Houthis' area (as of 2025-06-26)
+- **YK-370** Whether US persons may deal with Yemen Kuwait Bank for Trade and Investment, under the US Treasury's January 2025 designation: Yemen Kuwait Bank designated, at the United States' area (as of 2025-01-17, 2025-01)
+- **YK-371** Whether US persons may deal with International Bank of Yemen, under the US Treasury's April 2025 designation: International Bank of Yemen designated, at the United States' area (as of 2025-04-17, 2025-04)
+- **YK-372** Whether US persons may deal with two Yemeni banks the US Treasury designated in January 2025, which the source doesn't name: two unnamed banks designated, at the United States' area (as of 2025-01)
+- **YK-373** Whether exchange companies and transfer networks may deal with banks the Sana'a central bank hasn't licensed, under the Sana'a exchangers' association's March 2024 circular: only banks the Sana'a central bank licenses, at Houthis' area (as of 2024-03)
+- **YK-374** Whether traders in Houthi-controlled areas may deal with four domestic banks, three headquartered in Aden, under the Houthi authorities' 2023 directives: 4 banks barred to traders, at Houthis' area (as of 2023)
+- **YK-375** Whether banks deal with Kuraimi Islamic Microfinance Bank in practice: Kuraimi cut off voluntarily by banks favoured by the Aden government, at place not stated (as of 2025-06-22)
+- **YK-376** Whether parties may deal with the 21 exchange companies the central bank in Sana'a had barred by May 2025: 21 exchange companies barred, at Houthis' area (as of 2025-05)
+- **YK-377** Whether parties may deal with Ahmed Al-Haddad Express Exchange and Ahmed Al-Haddad Exchange, under the exchangers' association's circular of June 2025: Ahmed Al-Haddad Express Exchange and Ahmed Al-Haddad Exchange barred, at Houthis' area (as of 2025-06-22, 2025-06)
+- **YK-378** Whether parties may deal with Al-Qasimi International Exchange, under the Sana'a exchangers' association's 24 June 2025 circular: Al-Qasimi International Exchange barred, at Houthis' area (as of 2025-06-24)
+- **YK-379** Whether parties may deal with seven exchange establishments (Cash In Go, Majed Radman, Tilal Sana'a, Al-Qa'afi, Al-Barti, Ard Al-Wisam Express, Al-Rukn Al-Dhahabi), under the Sana'a exchangers' association's January 2026 circular: 7 named exchange firms barred (Cash In Go, Majed Radman, Tilal Sana'a, Al-Qa'afi, Al-Barti, Ard Al-Wisam Express, Al-Rukn Al-Dhahabi), at Houthis' area (as of 2026-01-04)
+- **YK-380** Whether parties may deal with five exchange establishments (Ibn Bazdan, Al-Muljami, Issam Bazdan, Al-Lahbi, Al-Ammari), under the Sana'a exchangers' association's September 2026 circular: 5 named exchange firms barred (Ibn Bazdan, Al-Muljami, Issam Bazdan, Al-Lahbi, Al-Ammari), at Houthis' area (as of 2026-09-17)
+- **YK-381** Whether parties may deal with two exchange establishments whose dealings were restored on 26 September 2026, which the source doesn't name: dealing with two exchange establishments restored, at Houthis' area (as of 2026-09-26)
+- **YK-382** Whether parties may deal with one exchange establishment whose dealings were restored on 3 October 2026, which the source doesn't name: dealing with one exchange establishment restored, at Houthis' area (as of 2026-10-03)
+- **YK-383** Whether the exchange businesses named in the Aden central bank governor's decisions Nos. 14, 15, 17 and 18 keep their licences: licences of named exchange businesses suspended (decisions 14, 15, 17 and 18), at the internationally recognized government's area (as of no date)
+- **YK-384** Whether a company, two exchange establishments and a transfer agent suspended on 26 September 2026 keep their licences, which the source doesn't name: a company, two exchange establishments and a transfer agent suspended, at the internationally recognized government's area (as of 2026-09-26)
+- **YK-385** Whether US persons may deal with Nabco Money Exchange and Al Rawda Exchange, under the US Treasury's December 2023 designation: Nabco and Al Rawda designated, after AlAlamiyah Express and Al-Hadha Exchange, at the United States' area (as of 2023-12-28)
+- **YK-386** Whether US persons may deal with Al-Omgy and Brother Exchanger and Swaid & Sons Exchange, under the US designations of 2016 and 2021 that item 073 lists: Al-Omgy and Brother and Swaid & Sons designated, at the United States' area (as of 2024-04-05)
+- **YK-387** Whether US persons may deal with Swaid and Sons for Exchange Co., under the US designation the Treasury's January 2025 release names: Swaid and Sons designated, at the United States' area (as of 2025-01-17)
+- **YK-388** Whether Ansarallah (the Houthis) is designated a Foreign Terrorist Organization, under the US redesignation of 2025: FTO, at the United States' area (as of 2025-03-04)
+- **YK-389** Whether US persons may deal with eight cryptocurrency addresses the Houthis control, under OFAC's April 2025 designation: eight Houthi cryptocurrency addresses designated, at the United States' area (as of 2025-04-02)
+- **YK-390** Whether US persons may deal with the 32 individuals and entities and four vessels OFAC designated in September 2025: 32 individuals and entities and four vessels designated, at the United States' area (as of 2025-09-11, 2025-09)
+- **YK-391** Whether US persons may deal with the 21 individuals and entities and one vessel OFAC designated in January 2026: 21 individuals and entities and one vessel designated, at the United States' area (as of 2026-01-16)
+- **YK-392** Whether foreign financial institutions risk US secondary sanctions for transactions a US person could do without a specific licence: none for transactions a US person could do without a specific licence, at the United States' area (as of 2025-03-05)
+- **YK-393** Whether banks may operate in Aden, under the Sana'a central bank's November 2020 order: banks ordered to cease operations in Aden, at Houthis' area (as of 2020-11)
+- **YK-394** Whether the six Sana'a-based banks' branches in government-controlled areas are open, after the Houthis forced them closed in July 2024: the six Sana'a banks' branches in government areas closed by the Houthis, at Houthis' area (as of 2024-07)
+- **YK-395** How dense bank branches and service points are: 1.6 branches and 6.4 ATMs per 100,000 adults, at place not stated (as of 2015)
+- **YK-396** Whether Yemenia's funds held in Sana'a banks are frozen: Yemenia's funds frozen, at Sana'a (as of 2024-07-23)
+- **YK-397** Whether banks must show proof of relocation to Aden to keep their international transactions: Show proof of relocation to Aden, at the internationally recognized government's area (as of 2025-12)
+- **YK-398** Whether banks still operating from Sana'a must comply with the Aden central bank to keep access to international payments: Comply with the Aden central bank, at Sana'a (as of 2025-07-14)
+- **YK-399** What data banks must report to the central bank: Regular financial statements to the central bank, at the unified Republic's area (as of 2020-11-27)
+- **YK-400** What share of firms has a bank loan or line of credit: A loan or credit line at 9.5% of firms, at place not stated (as of 2022)
+- **YK-401** Whether parties may deal with the Kuraimi Express network, under the Sana'a exchangers' association's March 2025 circular: Kuraimi Express barred, at Houthis' area (as of 2025-03)
+- **YK-402** Whether the central bank branch in Sana'a deals with major exchange firms and transfer networks: Major exchange firms' networks barred, at Houthis' area (as of 2025-12-15)
+- **YK-403** Whether banks may make domestic transfers through exchange companies' networks and agents, under the Aden central bank's February 2024 circular: Banks to transfer only through UNMONEY, not exchange companies' networks, at the internationally recognized government's area (as of 2024-02-18)
+- **YK-404** What exchange companies must do with their pending balances with UNMONEY or any similar network: Pending balances with UNMONEY or similar networks to be settled within two weeks, at the internationally recognized government's area (as of 2025-02)
+- **YK-405** How the Sa'id al-Jamal network moved funds to Houthi-aligned firms in Yemen, by the US Treasury's account: Through exchange houses abroad into Yemeni exchange companies' accounts, at place not stated (as of 2023-12-28)
+- **YK-406** How difficult it is to send money between areas held by different parties: Very difficult, at place not stated (as of 2026)
+- **YK-407** Whether rial cash may be moved from one side's area to the other: Old rial cash barred from moving south, at Houthis' area (as of 2024-04-05)
+- **YK-408** Fee for sending money from Sana'a to Aden: About 5,000 rials per million, at from Sana'a to Aden (as of no date)
+- **YK-409** Fee for sending money between the government's and the Houthis' areas, direction not stated: About 30% or more, at IRG and HC areas (as of 2026-02)
+- **YK-410** How much a remote-area transfer agent may send or receive in one transfer: 2,000,000 rials per transaction and per customer a day, for remote-area agents, at place not stated (as of 2026)
+- **YK-411** What share of remittance inflows each area receives: Most inflows, at Houthi-controlled areas (as of 2026-02)
+- **YK-412** Whether banks have the cash to pay out remittances: Banks lack the cash to pay them out, at Houthi-controlled areas (as of 2026-02)
+- **YK-413** Cost of sending money to Yemen from the United States and the United Arab Emirates through formal channels: Formal transfers from the US and UAE substantially costlier, at place not stated (as of 2026-04-29)
+- **YK-414** Cost of sending money to Yemen by provider: Fawri 2.07%, MoneyGram 3.90%, Western Union 4.41%, at place not stated (as of 2024-06)
+- **YK-415** Whether the cost of sending money to Yemen has risen: Up to 50% at times, at place not stated (as of 2026)
+- **YK-416** Who makes up the parallel currency market: Unlicensed companies part of the parallel market, at place not stated (as of 2025-12)
+- **YK-417** Whether exchange companies take deposits and hold customer accounts in practice: some take deposits, at Houthi-controlled areas (as of 2025-12-15); place not stated (as of 2025-12)
+- **YK-418** How strictly identity is checked for international transfers: Strengthened identity checks for international transfers, at the internationally recognized government's area (as of 2026-02)
+- **YK-419** Who uses phone wallets: the launching banks' customers, at place not stated (as of 2021-12-09)
+- **YK-420** Whether phone wallet use is growing: increasingly popular, at place not stated (as of 2023-02-23)
+- **YK-421** Who pays electronically: limited to the middle classes and company staff, at place not stated (as of 2025-06-15)
+- **YK-422** How many people know how to deal electronically: most do not know how, at place not stated (as of 2024-06-26)
+- **YK-423** Whether retailers accept electronic payment: Accepted easily by retailers, at place not stated (as of 2025-06-15)
+- **YK-424** What share of e-money transaction value goes to bills and purchases: 1 percent, at place not stated (as of 2018)
+- **YK-425** At what hours a phone wallet's agents pay out cash: Available during official working hours, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-426** How many merchants accept payment through a phone wallet: More than 14,000 retail outlets and 800 corporations, at ONE Cash's service (as of 2025-09-15)
+- **YK-427** Which payments a buyer may make with mobile e-money, under the Aden central bank's instructions: E-money transfers, bills, merchant purchases and bank-received remittances, at the internationally recognized government's area (as of 2023-08-08)
+- **YK-428** Whether a phone wallet checked a user's identity, in users' reports: no ID or photo check, at Floosak's service (as of 2026-08-13)
+- **YK-429** Fee for sending money to another account of the same phone wallet: none, at M Floos (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-08); ONE Cash's service (as of 2026-10-10)
+- **YK-430** How a mobile e-money issuer must notify users of changes to its fees, under the Aden central bank's e-money instructions of August 2023: changes notified to users at least two weeks ahead and to the central bank 14 days ahead, at the internationally recognized government's area (as of 2023-08-08)
+- **YK-431** How a bank or provider must disclose its fees to consumers, under the Aden central bank's consumer protection instructions of August 2023: no undisclosed fee, fees published at least every three months and shown on the website and premises, changes notified in advance, at the internationally recognized government's area (as of 2023-08-20)
+- **YK-432** How quickly a financial service provider must decide a consumer's complaint, under the Aden central bank's consumer protection instructions of August 2023: a decision within 10 working days, extendable to 30, with referral to the central bank within 14 days, at the internationally recognized government's area (as of 2023-08-20)
+- **YK-433** Who answers for transactions made on an e-money account with the customer's credentials: the customer, at Jawali's service (as of 2026-10-10); the internationally recognized government's area (as of 2023-08-08)
+- **YK-434** Who bears a failure by an e-money issuer's settlement bank, telecom company or agent: the issuer, for failures by its settlement bank, telecom company or agent, at the internationally recognized government's area (as of 2023-08-08)
+- **YK-435** Who bears losses a payment service provider's negligence causes, under the Aden central bank's payment service provider instructions of September 2022: the provider, where its clear and deliberate negligence caused it, at the internationally recognized government's area (as of 2022-09-13)
+- **YK-436** Whether exchange companies may provide payment services, under the Aden central bank's regulation of September 2022: banks and licensed non-bank payment service providers, not exchange companies unless they convert, at the internationally recognized government's area (as of 2022-09-21)
+- **YK-437** Which banks held e-money licences by 2019, as item 154 lists them: Kuraimi, Tadhamon, Al-Amal and Yemen Kuwait Bank licensed by the CBY, and CAC Bank by CBY-Sana'a, at place not stated (as of 2019)
+- **YK-438** Whether Shamil Bank of Yemen and Bahrain and International Bank of Yemen may offer e-money, under CBY-Sana'a's licences of January 2021: Shamil Bank of Yemen and Bahrain and International Bank of Yemen added by CBY-Sana'a, at Houthis' area (as of 2021-01)
+- **YK-439** Whether IBY, SBYB, ONE and Tamkeen may provide e-rials, under the permissions of early 2021: IBY, SBYB, ONE and Tamkeen permitted to provide e-rials, at Houthis' area (as of 2021-03)
+- **YK-440** Which platforms may exchange the new rial notes for e-rials, under CBY-Sana'a's circular of December 2019: M Floos, Mobile Money and Quality Connect authorized to exchange new rial notes for e-rials, at Houthis' area (as of 2019-12-18)
+- **YK-441** Whether Law No. 40 of 2006 on payment systems and electronic banking applies: Law No. 40 of 2006 on payment systems and electronic banking, at Houthis' area (as of 2024-05-31)
+- **YK-442** Whether Circular No. 11 of 2014 on mobile e-money services applies: Circular No. 11 of 2014, in full, at the internationally recognized government's area (as of 2020-02-26)
+- **YK-443** Whether the Central Bank of Yemen's mobile banking regulations of 11 December 2014 apply: the CBY mobile banking regulations of 11 December 2014, at Central Bank of Yemen's area (as of 2014-12-11)
+- **YK-444** Whether CBY-Sana'a's Decision No. 1 of 2020 on e-money services applies: Decision No. 1 of 2020, with Circular No. 11 of 2014 still in force, at Houthis' area (as of 2020-03-19)
+- **YK-445** Whether Resolution No. 720/CBY/2022 on payment service providers applies: Resolution No. 720/CBY/2022 on payment service providers, at the internationally recognized government's area (as of 2022)
+- **YK-446** Whether the Aden central bank's payment and e-money instructions apply: the Aden central bank's payment and e-money instructions, at the internationally recognized government's area (as of 2026-10-10)
+- **YK-447** Against which currencies e-money may be issued: pre-funded in currencies the central bank approves, at the internationally recognized government's area (as of 2025-07-09)
+- **YK-448** Whether a financial service provider must use interoperable systems, under the Aden central bank's consumer protection instructions of August 2023: interoperable systems required, at the internationally recognized government's area (as of 2023-08-20)
+- **YK-449** Whether the Aden central bank has approved linking e-wallets: linking of e-wallets approved, at the internationally recognized government's area (as of 2026-03-29)
+- **YK-450** What community integration code exists for a provider's payment gateway: community integration code exists, at Aden Bank's service (as of 2024-03-23); Al-Qutaibi Bank's service (as of 2024-03-06); Cash Pay (Cash e-wallet)'s service (as of 2024-03-17); E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10); Floosak's service (as of 2025-06-17); Jawali's service (as of 2025-07-16); SabaCash's service (as of 2023-12-17); YemenPay's service (as of 2026-08-22); place not stated (as of 2026-10-10)
+- **YK-451** Which account a buyer's wallet purchase is paid into: from the buyer's wallet to the merchant's point-of-sale account, at Jawali's service (as of 2026-10-10)
+- **YK-452** Which rial zone's customers a provider's payment API accepts: by currency zone, old, new or all, at E-Pay (Kuraimi Islamic Microfinance Bank)'s service (as of 2026-10-10)
+- **YK-453** How many active credit cards there are: just over 6,600 active credit cards, at place not stated (as of 2014)
+- **YK-454** How many payment cards are in issue in all: 2,341,752 cards, 98% debit, at place not stated (as of 2025-06)
+- **YK-455** How the number of payment cards issued changed: fell 27.7% in Q2 2024 and rose 20.2% in Q3 2024, at place not stated (as of 2024-09)
+- **YK-456** How many ATMs there are per inhabitant: 6.4 ATMs per 100,000 inhabitants, at place not stated (as of 2014)
+- **YK-457** Whether delivery points, sudden closures or absent customers obstruct delivery to buyers: obstructed by delivery points, closures and customers unavailable, at place not stated (as of 2025-04-15)
+- **YK-458** Delivery time to Yemen for an order from Alibaba: varies by product, 30 to 90 days for Alibaba orders, at Procorners's service (as of 2022-12-20)
+- **YK-459** Delivery time to Yemen for an order from SHEIN: 10 to 25 days for SHEIN orders, at Procorners's service (as of 2022-10-23)
+- **YK-460** Delivery time to Yemen for an order from Noon: 10 to 40 days, at Procorners's service (as of 2023-08-09)
+- **YK-461** Whether merchants sell through specialised e-commerce platforms such as Bazzarry and Jeeey: specialised platforms such as Bazzarry and Jeeey, at place not stated (as of 2025-09-15)
+- **YK-462** When a foreign company's commercial agency must be registered with the ministry, under the agencies law's regulation of 2000: required, registration with the ministry within sixty days of the contract, at the unified Republic's area (as of 2000-09-27)
+- **YK-463** Whether a merchant's online registration must then be completed in person at the ministry's office: online, then completed in person at the ministry's office, at Houthis' area (as of 2025-12)
+- **YK-464** Whether alcohol, explosives, hazardous waste and certain foods such as pork may be imported: alcohol, explosives, hazardous waste and certain foods such as pork, at place not stated (as of 2026)
+- **YK-465** Whether wheat flour may be imported: wheat flour, at place not stated (as of 2026-03-15)
+- **YK-466** Whether dairy, juices, mineral water, paper towels, sponges and iron poles and pipes may be imported, under the Houthi authorities' ban of June 2025: dairy, juices, mineral water, paper towels, sponges and iron poles and pipes, at Houthis' area (as of 2025-06-02)
+- **YK-467** Whether imported frozen chicken may be sold, under the Houthi-affiliated Ministry of Agriculture's ban: imported frozen chicken, at Houthis' area (as of 2023)
+- **YK-468** Whether imported medicines are on the market in Houthi-controlled areas: imported medicines replaced by local ones, at Houthi-controlled areas (as of 2026-07-31)
+- **YK-469** What a seller must show on the documents it issues to consumers, under the executive regulation of Law 46 of 2008: name, address, phones, register number and trademark, at the unified Republic's area (as of 2010)
+- **YK-470** What warranty a seller owes on durable goods, under the executive regulation of Law 46 of 2008: the contract period or five years on durable goods, repair or replacement within five days, at the unified Republic's area (as of 2010)
+- **YK-471** Whether a buyer can have defective goods repaired, replaced or refunded within the warranty period, under the executive regulation of Law 46 of 2008: repair, replacement or refund within the warranty period, at the unified Republic's area (as of 2010)
+- **YK-472** Whether the Prime Minister may cap basic goods' prices, under internal trade law 5 of 2007: market prices, the Prime Minister may cap basic goods in emergencies, at the unified Republic's area (as of 2007)
+- **YK-473** Whether the Minister may cap basic goods' prices, under consumer protection law 46 of 2008 and its regulation: the Minister may cap basic goods' prices with cabinet approval, at the unified Republic's area (as of 2010)
+- **YK-474** Which pricing rules the government sets or proposes for merchants: proposed, at no place where it holds. Other rows: 2, in constants.tsv
+- **YK-475** Whether commercial-registration fees can be paid electronically: through Mobile Money, at Houthis' area (as of 2026-10-10)
+- **YK-476** Whether income and sales tax can be paid electronically: income and sales tax through electronic collection, at Tax Authority's area (مصلحة الضرائب) (as of 2023-05-30)
+- **YK-477** Whether a business wallet can make government payments: available, at Mobile Money Business (CAC Bank)'s service (as of 2026-10-10)
+- **YK-478** How sales tax on imported services is paid: services by the beneficiary, at the unified Republic's area (as of 2020)
+- **YK-479** What sales threshold the Minister of Finance's registration decision sets for general sales tax: 50 million rials for goods or 40 million for services, and every importer, at the unified Republic's area (as of 2005-05-01)
+- **YK-480** Who must register for general sales tax, as the Tax Authority's guide and a tax guide state it: 50 million rials of sales, and every importer, at Tax Authority's area (مصلحة الضرائب) (as of 2022-12); place not stated (as of 2022-01-01)
+- **YK-481** Whether some businesses must pay a 20 percent levy, under Ansar Allah's reading of the Zakat law: a 20 percent levy on some businesses, at Houthis' area (as of 2026)
+- **YK-482** Whether businesses must pay state and war-effort taxes and mandatory donations in Houthi-held areas: state and war-effort taxes and mandatory donations, at Houthis' area (as of 2026-07-31)
+- **YK-483** Whether businesses in Al-Thawra and Bani al-Harith must pay a tax for the airport: a tax campaign for the airport, with threats of arrest, at Houthis' area (as of 2025-07-22)
+- **YK-484** Whether the Houthis levy imports and take a share of surplus profits: levies, sales taxes, an import tax and a share of surplus profits, at Houthis' area (as of 2026-02-02)
+- **YK-485** Whether fees are collected from exchange and commercial businesses for the Houthi intelligence service, as OFAC states it: fees collected for the Houthi intelligence service, at place not stated (as of 2025-09-11)
+- **YK-486** Whether importers pay foreign suppliers through banks with letters of credit: through banks, with letters of credit, at place not stated (as of 2014)
+- **YK-487** Whether importers pay foreign suppliers through hawala and other unregulated networks: through hawala and other unregulated networks, at place not stated (as of 2026-02-17)
+- **YK-488** Whether a Houthi procurement network pays for imports in USDT, as the US Treasury states it: in USDT through Tron wallets, by a Houthi procurement network, at Houthi-controlled areas (as of 2025-04-02)
+- **YK-489** Whether importers can open letters of credit: letters of credit hard to open, at place not stated (as of 2025-07-19)
+- **YK-490** Who may import poultry into Houthi-controlled areas: poultry imports monopolised by the Houthis, at Houthi-controlled areas (as of 2024-08)
+- **YK-491** Whether importing is restricted to Yemeni nationals: Yemeni nationals only, at place not stated (as of 2013)
+- **YK-492** Whether the government has lowered freight transport fees to Houthi-held areas: freight fees to Houthi-held areas cut by 20 percent, at the internationally recognized government's area (as of 2025-07-22)
+- **YK-493** Whether gas from Marib may be sold in the Houthis' area: Marib gas banned from sale, at Houthis' area (as of 2023-05)
+- **YK-494** Whether aviation fuel is in short supply: aviation fuel shortage, at across Yemen (as of 2026-05)
+- **YK-495** Whether road fuel is in short supply: fuel crisis, at Houthi-controlled areas (as of 2025)
+- **YK-496** How much wheat is imported through Hudaydah: down 54 percent, at Houthi-controlled areas (as of 2024-09)
+- **YK-497** Where electronic payment means reach: only in cities, at place not stated (as of 2022-10-24)
+- **YK-498** How wholesalers prefer to be paid: wholesalers prefer cash, at place not stated (as of 2025-06-15)
+- **YK-499** Whether Yemenia honours tickets its Sana'a office issued: tickets bought in Sana'a not accepted, at Yemenia's service (as of 2025-05-31)
+- **YK-500** What share of people have mobile internet: 1.7 percent with mobile internet, at place not stated (as of 2015)
+- **YK-501** What internet data costs as a share of income: data at 10 percent of monthly income per head, at place not stated (as of 2021)
+- **YK-502** How many internet and telecom providers may operate: one provider only, at place not stated (as of 2018)
+- **YK-503** How many people have access to electricity: two-thirds have access, at place not stated (as of 2026-02)
+- **YK-504** Whether money transfers in Houthi-controlled areas are tied to one specified network, with ceilings: Tied to one specified network, with strict ceilings, at Houthi-controlled areas (as of 2025-12-15)
+- **YK-505** Which banks are linked to the national switch for money transfers: First phase launched with seven banks, at Central Bank of Yemen's area (as of 2024-03-09)
+- **YK-506** Cost of sending money to Yemen by channel (banks, Western Union, informal offices): 5-8% at banks, 5-10% at Western Union, 5-12% at informal offices, at place not stated (as of 2025-04-24)
+- **YK-507** What fees migrants surveyed paid to send money to Yemen: USD 1-10 a transfer for most, in a survey of migrants, at place not stated (as of 2026-02)
+- **YK-508** Whether a phone wallet's cash is available around the clock: Available around the clock, at Cash e-wallet's service (as of 2026-10-10)
+- **YK-509** Whether the number of phone wallets may exceed 15, by an interviewee's estimate: Possibly over 15, at place not stated (as of 2026-07-11)
+- **YK-510** Whether customs revenue can be paid in e-rials through CAC Bank: CAC Bank permitted to collect customs revenue in e-rials, at Houthis' area (as of 2021-03)
+- **YK-511** Whether telecom and internet services still function despite damage to the sector: functioning at a basic level, at place not stated (as of 2026)
+- **YK-512** How many people are cut off from grid-supplied electricity: most cut off from the grid, at place not stated (as of 2022-03)
+- **YK-513** Which payment options a guide lists for use in Yemen: listed among the best payment options for use in Yemen, at Wise's service (as of 2026-10-10)
+- **YK-514** Whether an account in Yemen can receive money through an international payment service: cannot receive money, at PayPal's service (as of 2026-10-10)
+- **YK-515** What a payment service provider licence requires: a joint-stock company with paid-up capital of at least 500 million rials, 750 million for a system operator, at the internationally recognized government's area (as of 2022-09-21)
+
+## What Stage 1 couldn't find
+
+- **YA-77** Which services the National Wallet Company's wallet offers buyers now: a source after 21 January 2020, when Telepin announced the deal and was 'well on our way towards launching' (YQ-E006), that names the National Wallet Company and gives its wallet's services, or that it never launched.
+- **YA-88** The limit at the place item 153 leaves unstated: a source that, naming no place, gives whether a bank may still issue e-money only up to 15 percent of its capital and statutory reserves, the 'previous regulations' that item 153 says the 2020 decree overrides (YQ-E118, ended).
+- **YA-99** Whether Cash e-wallet offers NFC (contactless) payment now: a source that gives it available, or not, at Cash, after the provider listing and Cash's own page that say the company 'will provide in future' NFC (YQ-C043, captured 10 October 2026).
+- **YA-102** Who may provide e-money and electronic payment services where no place is named: a source that, naming no place, gives the rule in force now. Both rows at place not stated give banks only as a past framework, before 2014 (YQ-E151) and until 2020 (YQ-D089).
+- **YA-169** Which authority collects customs and taxes in the Hadramawt local authority's area now: a source after November 2025, when the local authority said it would deposit all central revenues with CBY-Aden (YQ-E488), that gives whether it does, or keeps them.
