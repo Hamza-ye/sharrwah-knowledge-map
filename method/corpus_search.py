@@ -15,9 +15,8 @@
 # Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
 #   (every TERM with --all) and, with --with, also any of the terms after --with: such as a thing's names, with the
-#   places or plans it may hold for. At most N documents per corpus are listed (default 40): those holding
-#   two or more of the terms first, then those where the terms are densest; the addresses past the cap follow,
-#   one line each.
+#   places or plans it may hold for. At most N documents per corpus are listed (default 40), those where the terms
+#   are densest first; the addresses past the cap follow, one line each.
 #   Snippets are folded for matching (case, diacritics, letter forms): never quote one; quote the document.
 import csv, glob, gzip, json, os, re, subprocess, sys, unicodedata, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -325,8 +324,8 @@ def main():
         elif len(text.strip()) <= len(best[key][4].strip()):
             continue                         # an address held more than once shows its fullest copy, not its first
         best[key] = (corpus, loc, url, title, text, body, hits, with_hits)
-    # Within each corpus, documents holding two or more of the terms come first, and then those where the terms are
-    # densest, so that a capped listing reaches the pages most about the terms, not the longest reference pages.
+    # Within each corpus, the documents where the terms are densest come first, so that a capped listing reaches the
+    # pages most about the terms, not the longest reference pages.
     def density(k):
         body, hits = best[k][5], best[k][6]
         n = sum(len(p.findall(body)) if p else body.count(w) for _, w, p in hits)
@@ -336,7 +335,7 @@ def main():
         if best[key][0] not in corpora:
             corpora.append(best[key][0])
     order = [k for c in corpora for k in sorted((k for k in order if best[k][0] == c),
-                                                key=lambda k: (-min(len(best[k][6]), 2), -density(k)))]
+                                                key=lambda k: -density(k))]
     shown, total, past = {}, {}, {}
     for key in order:
         corpus, loc, url, title, text, body, hits, with_hits = best[key]

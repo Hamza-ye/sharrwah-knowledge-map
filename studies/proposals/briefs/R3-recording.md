@@ -26,7 +26,7 @@ Don't answer the question in your own words, compare your platform with any othe
 | bigcommerce | the pages in this repository's capture runs, and the founder's saves in `evidence/product-class/blocked-evidence-founder/bigcommerce/` | docs.bigcommerce.com, bigcommerce.com and its legal pages, support.bigcommerce.com where it can be read |
 
 **The pages in this repository's capture runs** are found by the corpus search and by `held_index.py`. To read one, run `python3 -I method/held_index.py <url>`, then read the text file it names. Cite it by its URL: the checker finds it in the capture.
-- Some captures' text files hold only the site's error page, such as zid.sa's "عفواً! حدث خطأ." or "Oops! Something went wrong.". Their text is in the raw page beside the text file (`raw.html`), which the corpus search and the checker read. Search that file with `grep`.
+- Some captures' text files hold only the site's error page, such as zid.sa's "عفواً! حدث خطأ." or "Oops! Something went wrong.". Their text is in the raw page beside the text file (`raw.html`), which the corpus search and the checker read. That page is often one very long line, so search it for a term with a bounded match, such as `grep -o '.\{0,200\}<term>.\{0,200\}' raw.html`, and quote from what it prints.
 - Never read a captured page over 100 KB whole: search its text with `grep` for your terms, and read the lines around what you find.
 
 **Your platform's own map of its help.** Where your platform's help is held with its map, start there. The map shows where the platform itself files each topic, in its own words. Read it only through `method/help_map.py`. Never read a map file whole: `outline.md`, `pages.jsonl`, `items.jsonl` and `texts.jsonl` are too large.
