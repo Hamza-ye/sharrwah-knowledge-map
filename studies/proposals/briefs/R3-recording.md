@@ -96,6 +96,7 @@ Don't answer the question in your own words, compare your platform with any othe
 ## Rules
 
 1. **A statement** is your platform's own words or data, or those of an agreement its terms incorporate, copied verbatim. It carries the platform's identifiers where it has them, such as a key, an access scope, a route, a plan name or a section heading.
+   - The checker looks for each statement, as written, in the source of its first citation. So a statement is one passage of its source, or one run of a list's items: never quotes joined from different places.
    - Never use a category name of ours, and never the words of your question, as a heading or label.
    - The concern map's descriptions, the copies' `placement` and `structure` values, and the copied gaps' wording are ours, not the platform's. Never use them in a statement, identifier, scope, note or the account.
 2. **`bears_on`:** the numbers of the question's sentences the statement answers, `;`-separated.
