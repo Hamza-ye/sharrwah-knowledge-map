@@ -4,23 +4,29 @@
 
 - **differs** (role): Salla is "a Saudi software-as-a-service (SaaS) commerce platform" with "connected products": Salla Point, Salla Ads, Mahally, an app maker, an app marketplace and enterprise-oriented services. vs Shopify [1]: Q8-SH-052; WooCommerce [1]: Q8-WC-K0507. Q8-SA-K2515; Q8-SA-K1382
 - **the same** (role): "تختلف باقات سلة لتناسب مراحل نمو متجرك واحتياجاتك". vs Shopify [1]: Q8-SH-001. Q8-SA-001
-- **not in what was read**: a periodic announcement of what is new across the platform. vs Shopify [1]: Q8-SH-064; Q8-SH-065. Q8-SA-N02
+- **differs** (role): one store's "تحديثات المنصة" page shows updates "حسب التصنيفات المحددة", such as a post "نشرة تطبيقات الشركاء (19)" under متجر التطبيقات. Its 22 categories include تحسينات المنصة, متجر التطبيقات, متجر الثيمات وتصميم المتجر, خدمات التاجر, قنوات البيع, محلي, سلة بوينت, إعلانات سلة and مشمر من سلة. vs Shopify [1]: Q8-SH-064; Q8-SH-065. Q8-SA-038; Q8-SA-039; Q8-SA-040
 
 ## [2]
 
 ### Plans (باقات)
 - **differs** (term): the plans are باقة بيسك (free), بلس, برو and سبيشال "للشركات والمؤسسات الكبرى". The store's `plans` setting holds basic, plus, pro and special, each with a `features_count` (50, 100, 150, 5000). The dashboard has a "Store plan" page. vs Shopify [2] Plans: Q8-SH-002; Q8-SH-K2889; Shopify [2] Organization: Q8-SH-K1312. Q8-SA-002; Q8-SA-003; Q8-SA-004; Q8-SA-005; Q8-SA-K0055; Q8-SA-K0048
+- **differs** (term): one store's plan page offers Salla Basic "For new sellers & explorers" (Free), Salla Plus "For small businesses" (99.00 SAR a month) and Salla Pro "For established companies" (299.00 SAR a month), each with its features. vs Shopify [2] Plans: Q8-SH-002. Q8-SA-049
+- **goes beyond**: one Pro store's add-ons answer lists "Warehouses & branches" (`current_limit` 5) and "Staff accounts" (`current_limit` 10), with `type` "addon", and "Instant translation", with `type` "translation" and `unit` "letters". Q8-SA-043
 - **goes beyond**: باقة الدعم gives a new store paid-plan features at a reduced price, until 3 months or 5 electronically paid orders. Q8-SA-026; Q8-SA-027
 - **goes beyond**: متجر سلة sells upgrades, SMS credit, more branches, more users and instant translation. Q8-SA-017
 
 ### Stores and markets
 - **differs** (role): one account can hold several linked stores ("Manage stores", `multi-stores`). vs Shopify [2] Organization: Q8-SH-K1254. Q8-SA-K0041; Q8-SA-K0044; Q8-SA-K0046
+- **differs** (role): one store's "قائمة المتاجر" lets a user move between stores "دون الحاجة لتسجيل الدخول في كل مرة", and gives each store its own الباقة and الدور الوظيفي. vs Shopify [2] Organization: Q8-SH-K1254. Q8-SA-050
 - **differs** (term): Markets (الأسواق المتعددة) are copies of a store for each country, region or city. Store Scopes serve "multi-country functionality". vs Shopify [2] Sales channels, Markets and POS: Q8-SH-K1930. Q8-SA-K1967; Q8-SA-K1976; Q8-SA-K1977; Q8-SA-K1980
 
 ### Sales channels, POS and other products
 - **differs** (term): the dashboard's "Sales channels" section has a channel column, and a channel shows as disabled where it isn't available to the store. vs Shopify [2] Sales channels, Markets and POS: Q8-SH-K2063. Q8-SA-K1453; Q8-SA-K1461
 - **differs** (role): Salla Point is "Salla's point-of-sale product". Card payment in its cashier needs a Geidea account. vs Shopify [2] Sales channels, Markets and POS: Q8-SH-K2109; WooCommerce [3] What units depend on: Q8-WC-K0008. Q8-SA-K1402; Q8-SA-K1436
 - **goes beyond**: Mahally is "a discovery and sales channel connected to Salla merchants". سوق الجملة sells to retailers. App Maker builds "a branded mobile commerce app". Salla Ads runs ad campaigns. Q8-SA-K1441; Q8-SA-K1474; Q8-SA-K1381; Q8-SA-K0931; Q8-SA-K1444; Q8-SA-K1404; Q8-SA-K0933
+
+### Payment methods
+- **goes beyond**: one store's payments answer groups its methods as `quick_methods` (mada, credit_card, apple_pay, stc_pay), `online_payment_gateways` (salla, labelled noon), `digital_wallets` (paypal), `bnpl` (tabby, tamara, mispay, madfu, emkan) and `other_payment_methods` (mokafaa-alrajhi, cod). Q8-SA-042
 
 ### Apps, themes and services
 - **differs** (term): the App Store's apps are "من تطوير سلة أو مطور آخر من مجتمع تطوير سلة". Apps are divided "بشكل فئات وأصناف", and app requests can be private ("طلبات التطبيقات الخاصة"). vs Shopify [2] Apps: Q8-SH-028; Q8-SH-K2165; WooCommerce [2] Extensions: Q8-WC-043. Q8-SA-018; Q8-SA-019; Q8-SA-024; Q8-SA-K2096
@@ -55,10 +61,15 @@
 ### By place
 - **differs** (identifier): every feature setting has a `countries` field, empty in those copied. `apps-country-filter` and `multi-market-origin-country-filter` exist. vs Shopify [3] By place: Q8-SH-055; Shopify [2] Entitlements: Q8-SH-K0041. Q8-SA-K2126; Q8-SA-K1969; Q8-SA-K0172
 - **goes beyond**: the global-selling programme offers partners "المدفوعات و البيع بالنيابة (MoR)". Q8-SA-K2560; Q8-SA-K2561
-- **not in what was read**: which payment services Salla offers in which countries. vs Shopify [3] By place: Q8-SH-K1537; WooCommerce [3] By place: Q8-WC-K0054; Q8-WC-K0400. Q8-SA-N01
+- **differs** (role): store setup asks "من أي دولة تسجِّل متجرك؟" and says the choice "يحدِّد المتطلبات القانونية اللازمة لمتجرك". The options are السعودية, الإمارات, الكويت, قطر, عمان, البحرين and دولة أخرى. vs Shopify [3] By place: Q8-SH-K1243. Q8-SA-051
+- **differs** (role): one store's payments answer gives `merchant_type` "KSA", and each gateway in it carries `available_countries`, empty there. vs WooCommerce [3] By place: Q8-WC-K0054; Q8-WC-K0400. Q8-SA-041; Q8-SA-042
+- **goes beyond**: a store's theme copies carry `countries`, `cities` and `language`, null in those observed. Q8-SA-046
+- **not in what was read**: which payment services Salla offers in which countries beyond one store's answer. vs Shopify [3] By place: Q8-SH-K1537; WooCommerce [3] By place: Q8-WC-K0054; Q8-WC-K0400. Q8-SA-N01
 
 ### By release stage
 - **differs** (role): feature settings carry `released` true or false, separately from `enabled`. vs Shopify [3] By release stage: Q8-SH-K0014; WooCommerce [3] How features are introduced: Q8-WC-011. Q8-SA-K0052; Q8-SA-K2131; Q8-SA-K0173
+- **differs** (role): dashboard navigation items carry `feature`, `isBeta` and `tags`. "Advanced import" (`custom-import`) had `"isBeta": true` and a "جديد" ("New") tag with `visible_days` 14; "Import from platforms" had a "تجريبي" ("Beta") tag. vs Shopify [3] By release stage: Q8-SH-K0014. Q8-SA-044; Q8-SA-045
+- **goes beyond**: marketplace themes carry `is_beta`, `version`, `installed_version` and `is_upgradable`, and a theme's `change_log` lists dated versions, such as 1.62.0, "general enhancement and release of new features". Q8-SA-047; Q8-SA-048
 - **differs** (term): "App Functions are currently in **beta** and **free of charge**". Pricing comes when they are generally available. vs Shopify [3] By release stage: Q8-SH-059. Q8-SA-029
 - **differs** (role): "APIs should only be versioned up when a breaking change occurs", under URI versioning. A Change Log is kept, and a "Deprecation Notice" gives a date for deprecated webhook variables. vs Shopify [3] By release stage: Q8-SH-080; Q8-SH-069. Q8-SA-K2318; Q8-SA-K2321; Q8-SA-K2317; Q8-SA-031
 - **not in what was read**: terms for beta features. vs Shopify [3] By release stage: Q8-SH-060. Q8-SA-N05
