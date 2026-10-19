@@ -17,8 +17,8 @@
 - The terms' section الحسابات requires legal capacity and an age of at least 18, "أو قد بلغت سن الرشد حسب الأنظمة واللوائح ذات العلاقة الخاضعة لها الدولة التي تستخدم منها الخدمة". Q6-ZD-009
 - An institution, company or other legal form that registers must itself have the required legal capacity. Q6-ZD-K0242
 - Registration requires a name as in official papers, the current address, a mobile number, an email address and whatever else the registration form asks. Q6-ZD-010
-- Information must be accurate, complete and up to date. Failing this may lead to immediate termination of the account. Q6-ZD-011
-- "يحق لزد رفض طلب إنشاء أي حساب". Q6-ZD-012 (stmt Q6-ZD-011)
+- Information must be accurate, complete and up to date. Failing this may lead to immediate termination of the account. Q6-ZD-012
+- "يحق لزد رفض طلب إنشاء أي حساب". Q6-ZD-011
 - The terms belong to شركة القدرة التقنية لتقنية المعلومات والاتصالات ذ.م.م, CR 1010365366, and are governed by Saudi law. Q6-ZD-K0214; Q6-ZD-K0211
 - Whether Zid has separate entities for the Gulf countries, and which terms and entity apply in Egypt, remain open. Q6-ZD-G0041; Q6-ZD-G0044; Q6-ZD-G0047
 
@@ -34,11 +34,11 @@
 
 ### Business details and documents
 
-- In store data, the seller chooses a business type and attaches official documents "حسب دولتك". Q6-ZD-021
+- In store data, the seller chooses a business type and attaches official documents "حسب دولتك". Q6-ZD-022
 - Requirements differ by business type and country. Q6-ZD-K0240
 - For Saudi Arabia the types are فرد، مؤسسة، شركة، جمعية خيرية. Q6-ZD-K0239
 - For Saudi merchants there is documentation on the Saudi Business Center platform. Q6-ZD-K0238
-- Saudi stores upload a national address proof from SPL, "مطلوبة لتفعيل بعد الخدمات مثل المدفوعات". Q6-ZD-022
+- Saudi stores upload a national address proof from SPL, "مطلوبة لتفعيل بعد الخدمات مثل المدفوعات". Q6-ZD-023
 - The requirements for stores outside Saudi Arabia were not in what was read. Q6-ZD-N03
 - A commercial registration is not required unless the seller wants to connect payment gateways. Q6-ZD-K0241; Q6-ZD-K0244
 - Stores must show their name, address, CR and tax number or freelance document, and official contact details. Q6-ZD-K0245; Q6-ZD-K0247
@@ -49,9 +49,9 @@
 - Only those officially permitted to make and receive payments in their own country may subscribe to Zid Pay. Q6-ZD-K0004
 - For Saudi Arabia the supported entities are فرد، مؤسسة، شركة. Q6-ZD-013
 - Individuals need وثيقة عمل حر، الهوية الوطنية، حساب بنكي تجاري، شهادة العنوان الوطني. Q6-ZD-014
-- Institutions need CR, national ID, a commercial bank account and national address. Q6-ZD-018
-- Companies need the same, plus the articles of association and "ترخيص الاستثمار (للشركات الأجنبية)". Q6-ZD-019
-- Some activities need licences, decided after review. Q6-ZD-020
+- Institutions need CR, national ID, a commercial bank account and national address. Q6-ZD-019
+- Companies need the same, plus the articles of association and "ترخيص الاستثمار (للشركات الأجنبية)". Q6-ZD-020
+- Some activities need licences, decided after review. Q6-ZD-021
 - In Kuwait the entities are فرد and شركة. Separate document lists are given for فرد, مؤسسة and شركة. Q6-ZD-015; Q6-ZD-016; Q6-ZD-017; Q6-ZD-018
 - The store owner must pass Nafath verification, using the store owner's ID. Q6-ZD-K0261; Q6-ZD-K0265; Q6-ZD-K0262
 - No stated reason for the Nafath requirement was found. Q6-ZD-G0058

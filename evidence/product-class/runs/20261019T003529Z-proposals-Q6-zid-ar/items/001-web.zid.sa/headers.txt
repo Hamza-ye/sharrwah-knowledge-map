@@ -1,0 +1,45 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Mon, 19 Oct 2026 00:35:30 GMT
+content-type: text/html; charset=utf-8
+location: https://dashboard.zid.sa/ar-sa/register
+x-powered-by: PHP/8.1.28
+cache-control: no-store, private
+pragma: no-cache
+expires: Fri, 01 Jan 1990 00:00:00 GMT
+strict-transport-security: max-age=0; includeSubDomains
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+cf-cache-status: DYNAMIC
+set-cookie: XSRF-TOKEN=eyJpdiI6IjBiak9QKytCendOWDU3MHRycVRORHc9PSIsInZhbHVlIjoiRGpRMFd2NWxDaUYyNDlpZTRnN2hWaXdIMktWdGtyckF5c1E1anlFU1RRRDlvcGQvVFN6WjlGaTV1ZkI3dzJSTzRlVGdVeS80Y2ZNZU0yZWFpUVRzZ3J5UXJ3UDFBSGRtNEtkamVENm9OU3dTejMwWW1lZDNJa1hZek13VkxPaHgiLCJtYWMiOiJlNTcwZjk3YjE1NjJjYTljNTJlNDQyN2U5OTA0YmY4ZTY1MWNiOGQ1NzZhYTJjZWYxOTI0ZjRhY2RlZDYwODA1IiwidGFnIjoiIn0%3D; expires=Mon, 19 Oct 2026 02:35:30 GMT; Max-Age=7200; path=/; domain=web.zid.sa; samesite=lax
+set-cookie: merchant_portal_sessions=eyJpdiI6IjhSaDkzY3BSZHN3czZRNTZUM0VDZlE9PSIsInZhbHVlIjoiSTR3anEyak1SUGhGVkpoZDIvUi9xbkF1REdHWHpmZ1lvdVBKQzloSmhzN2dzdWlZdDYzV3FOOWRySE1ETnE2bGxjMGFRWnlESlJMZVBBdXU1RnRWWUFNRVhodURJT25NVmZibHpJK2ZhSTMrU2pNQy9OUVppcGd3NTlBVFphNXgiLCJtYWMiOiJlZjQ5N2I3ZTNlNTYxZmY0YmNiMjgwZjE1YWQ4Mjg0NGVhZWZkMzU4ZjllMzkxYTliY2RmODE3ODM1MDhkOTE4IiwidGFnIjoiIn0%3D; expires=Mon, 19 Oct 2026 02:35:30 GMT; Max-Age=7200; path=/; domain=web.zid.sa; httponly; samesite=lax
+set-cookie: __cf_bm=90pNtYCA3vvMmuWaFERijfkAFGD4MoUnP3nzThrpKK0-1792370130.060535-1.0.1.1-gipN8yPk7bwk9VP1H5HgZ60lpUh6yBJUJQ08vHTgT_LeS.7w7zy2FKo1sGnDb29pksfkD7k0qDDwZ9tCibN31w0n0.ZSzOzHHU0J6CaFQnOa6drMrufvjk3UQ8net6TP; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Mon, 19 Oct 2026 01:05:30 GMT
+set-cookie: _cfuvid=ZaAvv9SJ89XQKkkblTDYM3o8sEmsXgHY4WtH5UmRVtY-1792370130.060535-1.0.1.1-ngclh3CKrp5kVAnZlRyxNcPScd2_l1QTZIQk_.41thw; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+server: cloudflare
+cf-ray: a4cbb400d8ada45b-IAD
+
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 19 Oct 2026 00:35:30 GMT
+content-type: text/html; charset=utf-8
+strict-transport-security: max-age=0; includeSubDomains
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=E%2F2qb3biLk2PUdIJT2BaOCgqkG%2Fmj7pWKXiAZVTfWDExsiO3ld%2FQq9Lw8ZS%2BMjgta8q%2FR4xs%2BywIGpS5qZrtajHPlo9i%2FYy86VfTGdZrJ5U8iWpygWTRKljuzmmOjvuXkCkY"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+access-control-allow-origin: *
+cache-control: no-store, must-revalidate
+x-xss-protection: 1; mode=block
+link: </assets/manifest-59783b47.js>; rel="modulepreload", </assets/entry.client-DSv6Co16.js>; rel="modulepreload", </assets/rolldown-runtime-Cg8Cgep_.js>; rel="modulepreload", </assets/api-resources-D4S6aa2P.js>; rel="modulepreload", </assets/api-client-MYFOmtCH.js>; rel="modulepreload", </assets/ui-components-CN9B23io.js>; rel="modulepreload", </assets/ui-libs-D5SARsLR.js>; rel="modulepreload", </assets/setup-highcharts-options-BvhiZiEr.js>; rel="modulepreload", </assets/ThemeProvider-C7mfWMZ1.js>; rel="modulepreload", </assets/exports-BxMEv5kd.js>; rel="modulepreload", </assets/core-Bx1Qvces.js>; rel="modulepreload", </assets/ui-date-Dzqq8-Rs.js>; rel="modulepreload", </assets/ui-utils-k3GB1Cuc.js>; rel="modulepreload", </assets/chart-text-BWvPofnm.js>; rel="modulepreload", </assets/colors-CYg5n-zU.js>; rel="modulepreload", </assets/root-CVPnO3W9.js>; rel="modulepreload", </assets/whatsapp-socket-context-BgUOEA7Y.js>; rel="modulepreload", </assets/store-path-DMtI1yYt.js>; rel="modulepreload", </assets/gateway-code-DVlU1tCs.js>; rel="modulepreload", </assets/use-is-zam-partner-store-BFivxGfs.js>; rel="modulepreload", </assets/check-subscription-BYyEpbQ7.js>; rel="modulepreload", </assets/resolve-post-auth-redirect-lMa4OxdU.js>; rel="modulepreload", </assets/order-post-payment-poller-_SlcwJKP.js>; rel="modulepreload", </assets/track-event-_AzUtmbs.js>; rel="modulepreload", </assets/navigation-apps-Ctz5IJ5A.js>; rel="modulepreload", </assets/payment-methods-BrWim9dj.js>; rel="modulepreload", </assets/use-get-merchant-kyc-status-DL4__Vf1.js>; rel="modulepreload", </assets/constants-BRlB2kBK.js>; rel="modulepreload", </assets/customer-service-2-line-Bjp2ebra.js>; rel="modulepreload", </assets/apps-2-line-DuJqk-bA.js>; rel="modulepreload", </assets/close-line-DlS3x72j.js>; rel="modulepreload", </assets/refresh-line-BZt7xkfu.js>; rel="modulepreload", </assets/hooks-BG-JsDBE.js>; rel="modulepreload", </assets/client-C5UqD-Vr.js>; rel="modulepreload", </assets/enum.types-Iti-eSzQ.js>; rel="modulepreload", </assets/return-to-redirect-BvnyPamQ.js>; rel="modulepreload"
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+vary: accept-encoding
+server: cloudflare
+cf-cache-status: DYNAMIC
+set-cookie: __cf_bm=6NVsB9VsRBzS_USfVz506TjCtE9MtswsMJ1wxKLP0sE-1792370130.570739-1.0.1.1-fEyDY4PI3YtB.xI6xqdoJIDx2jMX.OJSxKHRpXR.9LzFL6Oo6FXL_jT_I5w.j7CDjXuQsmdAdvTaHRO4Cfq7Xylu1ILEmFO9hu0PLVqn54pCUk7bIhs2DuKW_REKhiTb; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Mon, 19 Oct 2026 01:05:30 GMT
+set-cookie: _cfuvid=vKfidmpsMa6DlL_Qv29tuh22P5nmFZlLRN_sxd_UbHA-1792370130.570739-1.0.1.1-pzvg.uBpqvQAueWAIADRrvJeM3yBzSQpgJq.7Uk2PNc; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+content-encoding: gzip
+cf-ray: a4cbb40409bf7700-IAD
+
