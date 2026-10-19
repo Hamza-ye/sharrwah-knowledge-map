@@ -206,6 +206,27 @@ def check_copies(d, q, platform, code):
     return copy_ids
 
 
+def check_closed(d, q, code, own):
+    """not-found-closed.tsv (the re-check against the observed runs): the not-found rows a run closed, each with the
+    statements that close it. A closed row is no longer the folder's: nothing may cite it."""
+    path = os.path.join(d, "not-found-closed.tsv")
+    if not os.path.exists(path):
+        return
+    _, rows = read(path, HEAD["not-found.tsv"] + ["closed_by"])
+    for n, r in rows:
+        nid = r["nf_id"]
+        if not re.fullmatch(rf"{q}-{code}-N\d{{2,3}}", nid):
+            err("not-found-closed.tsv", nid, "nf_id isn't one of this folder's not-found ids")
+        if nid in own:
+            err("not-found-closed.tsv", nid, "closed, and still in not-found.tsv")
+        by = ids(r.get("closed_by", ""))
+        if not by:
+            err("not-found-closed.tsv", nid, "closed_by names the statements that close it")
+        for i in by:
+            if i not in own:
+                err("not-found-closed.tsv", nid, f"closed_by: {i} is not a statement of this folder")
+
+
 def check_own(d, q, code, src, held):
     pre = f"{q}-{code}"
     nsent = len(sentences(q))
@@ -358,7 +379,7 @@ def check_account(d, q, code, known, checking=False, nf_ids=()):
         for nid in sorted(set(nf_ids) - cited_nf):
             err("account.md", nid, "a not-found row that no point cites")
     words = len(re.findall(r"\w+", any_id.sub("", text)))     # ids, of any platform, aren't words
-    if words > (1300 if checking else 1800):
+    if words > (1800 if checking else 2300):    # with the re-check against the observed runs (19 October 2026)
         err("account.md", "", f"{words} words, past the brief's length", "warning")
 
 
@@ -372,6 +393,7 @@ def records(q, platform, captures, d=None, checking=False):
     held = Held(ROOTS, caps)
     copies = check_copies(d, q, platform, code)
     own = check_own(d, q, code, src, held)
+    check_closed(d, q, code, own)
     check_account(d, q, code, copies | own, checking, {x for x in own if re.search(r"-N\d+$", x)})
 
 
@@ -509,8 +531,8 @@ def drafts(q, d=None, name="draft.md", cited=False):
                             ("not-found rows, copied gaps and pilot absences", nf, lim[1]),
                             ("Yemen facts (an axis or constant at one place)", sorted(facts_y), lim[2]),
                             ("\"Yemen's evidence doesn't show\" points", doesnt_show, lim[3])]:
-        if len(got) > cap:
-            err(name, "", f"{len(got)} {label} cited, past the brief's about {cap}", "warning")
+        if len(got) > cap:                    # a guide, not a limit (the founder, 19 October 2026)
+            err(name, "", f"{len(got)} {label} cited, past the guide's about {cap}: say in notes.md for what", "note")
     strip = lambda t: rid.AREA_ID.sub("", rid.VP_ID.sub("", rid.YEMEN_ID.sub("", rid.PLATFORM_ID.sub("", t))))
     words = len(re.findall(r"\w+", strip(text)))
     if words > lim[4] * 1.1:

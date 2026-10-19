@@ -1,6 +1,6 @@
 # Brief: one question's draft proposal (step R4)
 
-**Status: revised after its check (`studies/proposals/checks/R4-drafting-brief-check.md`), 19 October 2026.**
+**Status: revised after its check (`studies/proposals/checks/R4-drafting-brief-check.md`), and for the founder's decisions of 19 October 2026: no marks on the areas list, and citing counts that are a guide, not a limit.**
 
 You are one agent with one task: the draft proposal for one question. The message that started you names the question and a scratch directory. Your folder is `studies/proposals/drafts/<question>/`. You run at `max` effort.
 
@@ -22,7 +22,6 @@ You are one agent with one task: the draft proposal for one question. The messag
    - From each platform's `notes.md`, read only its lists of account points not checked, and of copies found wrong or out of date.
    - For Q5 and Q7, to find a pilot statement no account cites, search your question's `copied-view.tsv` files with `grep -F` for a term, and read only the lines it prints.
 5. **The areas list:** in `studies/proposals/areas/areas.md`, the areas whose questions include yours (for Q8, every area). They show what each platform files where, in its own names.
-   - `studies/proposals/areas/areas.tsv` holds the founder's mark for each area in its `mark` column, where there is one. With no `mark` column, no area is marked yet.
 6. **Yemen's evidence:** `studies/proposals/yemen-digest.md`, read whole once, after you have written sections 1 to 5, and Stage 1's rows by id with `record_ids.py`.
 7. **For Q5 and Q7 only,** the pilot's variation points named under section 8 below: in `studies/subjects/S-01/variation-points.tsv`, only their `vp_id`, `question` and `x_words` columns.
 
@@ -36,14 +35,14 @@ Read nothing else: not the platforms' own pages or files, other questions' recor
   - It limits only what goes live. It neither requires the design to provide for either arrangement nor rules one out.
   - Where your proposal provides for one, say so, and that it goes live only by the founder's decision.
 - **The pilot's Decisions 1 to 14 are deferred.** They stay open and bind nothing, not even for one place. Q5's draft frames Decisions 1 to 13 again, and Q7's draft Decision 14, from the question's records (section 8 below).
-- **The areas' marks.** An area marked `won't do` is outside Sharrwah: propose nothing for it, though its evidence may still show how the platforms handle your question. `must do`, or no mark, means the area is in.
+- **The areas list.** The founder marked no area: all 34 areas are in Sharrwah. When each part is built is decided in the design, not in your draft.
 
 ## Order of work
 
 1. Read your question, its `depth.tsv` rows, and the five accounts.
 2. In your scratch directory, for each sentence: what each platform shows, which points match across platforms and on which basis, and where they differ.
 3. Choose what your proposal will rest on, look up those ids, and read their quotes and dates.
-4. Read the areas list for your question's areas, with their marks.
+4. Read the areas list for your question's areas.
 5. Write sections 1 to 5, and 7.
 6. Read the Yemen digest whole, once. List the facts that bear on the elements of sections 2 and 3, look up those you will use, and write section 6. Where a fact changes what the design must keep open, add it to section 5.
 7. For Q5 and Q7, read the decisions under section 8 and their variation points, and write section 8.
@@ -118,17 +117,17 @@ Section 8 is for Q5 and Q7 only. Each list item is a point of its own, and a sub
 
 ### Citing
 
-Everything your draft cites gets checked after you: each fact against its source; each not-found or absent row by a fresh search and an audit; each Yemen fact against its quotes; and each "Yemen's evidence doesn't show" by a search and an audit. So cite what your proposal rests on, and only that.
+Everything your draft cites gets checked after you: each fact against its source; each not-found or absent row by a fresh search and an audit; each Yemen fact against its quotes; and each "Yemen's evidence doesn't show" by a search and an audit. So cite what your proposal needs, and nothing it doesn't rest on.
 
 - **Every point ends with the ids it rests on,** as the accounts' points do. A point is a list item or a paragraph. The exceptions: a part in section 4 that only builds on bold elements of sections 2 and 3; a point in section 6 that says only what Yemen's evidence doesn't show; and in section 8, a decision's variation point counts as an id.
 - **Cite the one or two ids that show a point best,** not every id an account gives for it.
-- **How much to cite:**
-  - the platforms' statements, copies and citations: at most about 40 distinct ids (Q5, about 60);
-  - not-found rows, copied gaps and pilot absences: at most about 7 (Q5, about 10);
-  - Yemen facts, each an axis or constant at one place: at most about 8 (Q5, about 12);
-  - "Yemen's evidence doesn't show": at most about 2 (Q5, about 3).
+- **How much to cite: a guide, not a limit** (the founder's decision of 19 October 2026). A draft usually needs about:
+  - the platforms' statements, copies and citations: 40 distinct ids (Q5, 60);
+  - not-found rows, copied gaps and pilot absences: 7 (Q5, 10);
+  - Yemen facts, each an axis or constant at one place: 8 (Q5, 12);
+  - "Yemen's evidence doesn't show": 2 (Q5, 3).
 
-  Past these, the checker warns. Say in `notes.md` why you needed more.
+  Cite what your proposal needs, past these where it needs more. The checker counts them as notes. Say in `notes.md` where you went past them, and for what.
 - **Not found.** Cite a not-found row or copied gap only where your proposal rests on a platform's reading not showing something. A point that says a reading didn't show something always cites one. Otherwise leave the point out.
 - **"Absent"** only where an `absent` not-found row or a pilot absence (`A` id) says so. Anything else a reading didn't show is "not in what was read".
 - **Records that disagree:** cite both, each with its date, and say which, if either, the proposal rests on.
@@ -204,7 +203,7 @@ The proposal follows these rules, and says which one each choice rests on:
 - **`notes.md`:**
   - what you read: the accounts, the ids you looked up, the areas, the digest, and for Q5 and Q7 the variation points;
   - under "What the records don't show": each thing your proposal needed and no record gives, with what would show it;
-  - anything past the citing limits, and why;
+  - where you cited past the guide's counts, and for what;
   - problems with this brief or the tools.
 
 Write working copies in your scratch directory, never in the repository.
@@ -216,6 +215,6 @@ Run `python3 -I method/check_proposals.py drafts <question>`, and fix every erro
 - that every point cites an id, but for the exceptions under "Citing"; that each id exists among your question's records, Stage 1's files, the pilot's variation points or the areas; that no id is another question's; and that nothing the rules above forbid is cited;
 - that each quoted word, each word in backticks and each run of Arabic is found in a platform's or Stage 1's record the point cites;
 - that a point saying a reading didn't show something cites its not-found row or copied gap, and that "absent" rests on an absent row or a pilot absence;
-- as warnings: each Yemen fact's date, the citing limits, and the length.
+- as warnings: each Yemen fact's date, and the length; as notes: the counts past the citing guide.
 
 Then report in a few lines: the ids cited, by kind; the length; what the checker reports; and anything in this brief or the tools that got in your way.

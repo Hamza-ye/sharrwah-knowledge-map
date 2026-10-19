@@ -12,6 +12,12 @@
 # runs, and the founder's saves for the platform (evidence/product-class/blocked-evidence-founder/<platform>/:
 # browser saves, and PDFs through pdftotext). An address held more than once shows its fullest copy.
 #
+# For Shopify and Salla, the observed repositories' runs are searched too (method/runs_corpus.py): what the admin's
+# own API answered (observed-sh's answers) or Salla's hosts returned (observed-sa's saved responses), what each step's
+# page showed (steps/NNN.aria.yaml and NNN.text.txt, journeys and sweeps alike), the requests the pages sent, the
+# indexes and derived tables built from them, and the structures' source files. Each document of a run is listed by
+# its own place, never merged with another store's or run's.
+#
 # Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
 #   (every TERM with --all) and, with --with, also any of the terms after --with: such as a thing's names, with the
@@ -21,6 +27,7 @@
 import csv, glob, gzip, json, os, re, subprocess, sys, unicodedata, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quote_check import norm, HARAKAT, html_text
+import runs_corpus
 
 csv.field_size_limit(10**9)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -310,15 +317,21 @@ def main():
     platform, terms, also, every, cap = parse(sys.argv[1:])
     main_hits, also_hits = matcher(terms), matcher(also)
     best, order = {}, []
-    for corpus, loc, url, title, text in documents(platform):
-        body = fold(title + "\n" + url + "\n" + text)
+    runs = set(runs_corpus.corpus_names(runs_corpus.RUN_REPO[platform])) if platform in runs_corpus.RUN_REPO else set()
+    def every_document():
+        for doc in documents(platform):
+            yield doc + (None,)
+        for corpus, loc, url, title, body in runs_corpus.search(platform, fold, terms, every, also):
+            yield corpus, loc, url, title, body, body          # folded already
+    for corpus, loc, url, title, text, body in every_document():
+        body = body if body is not None else fold(title + "\n" + url + "\n" + text)
         hits = main_hits(body)
         if not hits or (every and len(hits) < len(terms)):
             continue
         with_hits = also_hits(body) if also else []
         if also and not with_hits:
             continue
-        key = url or loc
+        key = loc if corpus in runs else (url or loc)   # a run's document is its own observation
         if key not in best:
             order.append(key)
         elif len(text.strip()) <= len(best[key][4].strip()):
@@ -341,7 +354,7 @@ def main():
         corpus, loc, url, title, text, body, hits, with_hits = best[key]
         total[corpus] = total.get(corpus, 0) + 1
         if shown.get(corpus, 0) >= cap:
-            past.setdefault(corpus, []).append(url or loc)
+            past.setdefault(corpus, []).append(f"{loc}: {title[:160]}" if corpus in runs else (url or loc))
             continue
         shown[corpus] = shown.get(corpus, 0) + 1
         _, w, p = hits[0]

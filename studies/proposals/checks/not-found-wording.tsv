@@ -1,0 +1,16 @@
+nf_id	platform	question	kind	phrase	who_can	sources not read by this check
+Q1-SA-N01	salla	Q1	parentheses	إنشاء متجر جديد خارج السعودية - الإمارات	agent	observed-sa@4ca2e896a729215f422a137a364e7e9488610ba3:raw/runs/20261005T230958Z-com-states/fetch.warc.gz (a fetch archive is cited with its record's offset as the locator); https://salla.com/ai-info (not captured)
+Q1-SA-N02	salla	Q1	parentheses	تسعير تلقائي حسب سعر الصرف	founder	observed-sa@4ca2e896a729215f422a137a364e7e9488610ba3:raw/runs/20261008T121631Z-com-pages/fetch.warc.gz (a fetch archive is cited with its record's offset as the locator); https://salla.com/blog/expand-online-store-to-gcc (not captured)
+Q1-SA-N02	salla	Q1	parentheses	الأسواق المتعددة > الإعدادات > تسعير المنتجات	founder	observed-sa@4ca2e896a729215f422a137a364e7e9488610ba3:raw/runs/20261008T121631Z-com-pages/fetch.warc.gz (a fetch archive is cited with its record's offset as the locator); https://salla.com/blog/expand-online-store-to-gcc (not captured)
+Q2-ZD-N02	zid	Q2	parentheses	تابي، تمارا، مدفوع، إمكان، أم آي إس باي	agent	
+Q3-SA-N01	salla	Q3	parentheses	توثيق المتجر, https://s.salla.sa/payments/kyc; not held	founder	
+Q3-SA-N03	salla	Q3	parentheses	المخالفات, /manage/violation	founder	
+Q3-ZD-N04	zid	Q3	parentheses	بيع الكتب, وزارة الإعلام	either	
+Q5-SA-N04	salla	Q5	parentheses	مثل; ميسر - هايبر باي	founder	
+Q6-SA-N01	salla	Q6	quoted	هل يمكنني استخدام سلة خارج السعودية؟	agent	observed-sa@4ca2e896a729215f422a137a364e7e9488610ba3:raw/runs/20261005T235211Z-com-en-scheme/fetch.warc.gz (a fetch archive is cited with its record's offset as the locator); observed-sa@4ca2e896a729215f422a137a364e7e9488610ba3:raw/runs/20261006T030341Z-com-toplevel/fetch.warc.gz (a fetch archive is cited with its record's offset as the locator); https://salla.com/en-sa/plans (not captured); https://salla.com/ar-ae/plans (not captured); https://salla.com/ar-ae/salla-vs-shopify (not captured)
+Q6-SA-N04	salla	Q6	parentheses	Salla Payments methods, shipping labels, instalment providers, bank transfer	agent	
+Q6-SA-N04	salla	Q6	parentheses	تفعيل شركات الشحن بعقدك الخاص في الإمارات, - في الكويت	agent	
+Q6-ZD-N03	zid	Q6	parentheses	تفاصيل النشاط التجاري: entity types and documents	founder	
+Q7-SH-N04	shopify	Q7	parentheses	Part II, Managed Markets	agent	
+Q7-ZD-N01	zid	Q7	parentheses	رصيد حسابك في زد باي; رصيد قيد المعالجة; لم يتم الإيداع	either	
+Q7-ZD-N04	zid	Q7	parentheses	باي موب Paymob, اموال باي amwal pay, بوابة الدفع تاب Tap	either	
