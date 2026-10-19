@@ -91,10 +91,12 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 **Running: step R3, recording by question.** The in-depth runs' selections are written (commit `f7b6162`). They run in batches, at `medium`, each started from `briefs/R3-recording.md` with the pointers in `briefs/R3-starting-messages.md`.
 - **All 21 in-depth runs are done** (commit `144e2b6`): 1,664 new statements, each record passing the checker with no issues, every cited live page captured in the language it was read in. They cost 267.7 million tokens, the sample included: about 0.16 million per new statement, and 12.7 million a run, against 390 million planned.
 - **Running and not yet started:** as listed under "If the work was interrupted" below.
+- **The checking runs** follow `briefs/R3-checking.md`, made runnable by its last read (14 findings, 8 must fix) and the verification of its fixes. **Five are done** (commits `2b5ce9f` to `5597a2f`), each passing `--check` with no issues: Q1 on Zid, Q2 on Zid and BigCommerce, Q3 on WooCommerce and BigCommerce. They cost 53.5 million tokens, about 10.7 million a run.
+- **Noticed by the runs, for the drafting brief:** copies that disagree. In Q2 on BigCommerce, K0132 and P0029 say BigCommerce Payments is offered in the US only, and P0030, P0068 and P0087 say the UK and US (its `notes.md`). The drafting brief should say how a proposal treats statements that disagree: both cited, each with its date.
 - **Tool and brief fixes from the runs' notes:** the quote checker reads every capture of a page; the checker doesn't count ids as words, and takes a bold subheading as no point; the brief counts a table's rows as one statement toward the cap, says how to cite a page held only in a fetch archive, and says not to nest lists.
 - **Next:**
   1. as each run ends: `check_proposals.py records`, capture the live pages it cites (with the language it read them in), measure it, commit;
-  2. the 19 checking runs, once the checking brief's last read is done and its findings fixed: Q1 on Zid and WooCommerce; Q2 on Zid and BigCommerce; Q3 on WooCommerce and BigCommerce; Q4 on Zid, WooCommerce and BigCommerce; Q5 on WooCommerce and Zid; Q6 on WooCommerce and BigCommerce; Q7 on Salla, WooCommerce and BigCommerce; Q8 on Salla, Zid and BigCommerce;
+  2. the 19 checking runs, about six at a time, as listed under "If the work was interrupted" below;
   3. when recording ends: the founder's capture list, gathered from the not-found rows routed to the founder;
   4. record the founder's marks in `founder-decisions.tsv` when they come, and carry them into `areas.tsv`.
 
@@ -389,10 +391,10 @@ Agents started earlier keep their effort.
 - on 18 October 2026 at about 23:35 UTC, the session limit, until 19 October 00:00 UTC. It stopped five of R3's first six runs. All five were resumed just after midnight, each from its own transcript, and finished.
 - on 19 October 2026, before 01:17 UTC, the container restarted. It stopped the verification of the checking brief's fixes, which was resumed at 01:17 UTC from its own transcript. The repositories, the scratch directory and the search cache survived.
 
-**Agents running when last checked (19 October 2026, 01:33 UTC):** R3's in-depth recording runs, each in `studies/proposals/records/<question>/<platform>/`.
-- **Running:** R3's first six checking runs, from `briefs/R3-checking.md` at `medium`: Q1 on Zid `a98668589cfd01840` and WooCommerce `a472f432cfed79623`; Q2 on Zid `a9d69ae8b9f83510e` and BigCommerce `afe99459f0311dff3`; Q3 on WooCommerce `a65727bfcf9fde438` and BigCommerce `a347f6caee1194e0a`.
-- **Done and committed:** all 21 in-depth recording runs. The checking brief's last read (14 findings, 8 must fix) and the verification of its fixes (11 fixed, 3 partly; its last points fixed in commit `9538f19`).
-- **Not yet started:** 13 checking runs: Q4 on Zid, WooCommerce and BigCommerce; Q5 on WooCommerce and Zid; Q6 on WooCommerce and BigCommerce; Q7 on Salla, WooCommerce and BigCommerce; Q8 on Salla, Zid and BigCommerce. Their selections are written. Each starting message names the in-depth platforms in the order of `depth.tsv`, with the pointers in `briefs/R3-starting-messages.md`.
+**Agents running when last checked (19 October 2026, 01:50 UTC):** R3's checking runs, each in `studies/proposals/records/<question>/<platform>/`.
+- **Running:** six checking runs, from `briefs/R3-checking.md` at `medium`: Q1 on WooCommerce `a472f432cfed79623`; Q4 on Zid `a4a018c7b60704f60`, WooCommerce `aff789416dc4af389` and BigCommerce `a0a29878241a02467`; Q5 on WooCommerce `a29bb7354110f491c` and Zid `ac5535a7346372726`.
+- **Done and committed:** all 21 in-depth recording runs. The checking brief's last read (14 findings, 8 must fix) and the verification of its fixes (11 fixed, 3 partly; its last points fixed in commit `9538f19`). Five checking runs: Q1 on Zid, Q2 on Zid and BigCommerce, Q3 on WooCommerce and BigCommerce.
+- **Not yet started:** 8 checking runs: Q6 on WooCommerce and BigCommerce; Q7 on Salla, WooCommerce and BigCommerce; Q8 on Salla, Zid and BigCommerce. Their selections are written. Each starting message names the in-depth platforms in the order of `depth.tsv`, with the pointers in `briefs/R3-starting-messages.md`.
 
 **A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. **On again** from 21:01 UTC on 18 October 2026, while step R1 runs. Pause it when no agent runs. Delete it when the founder asks.
 
