@@ -41,3 +41,4 @@ R3	check, Q3 on WooCommerce	a65727bfcf9fde438	2026-10-19T01:33	2026-10-19T01:45	
 R3	check, Q3 on BigCommerce	a347f6caee1194e0a	2026-10-19T01:33	2026-10-19T01:45	8.8	medium; 45 points (21 differs, 2 goes beyond, 22 not in what was read); 33 new statements, 17 not-found rows; one live page captured
 R3	check, Q1 on Zid	a98668589cfd01840	2026-10-19T01:33	2026-10-19T01:46	9.6	medium; 42 points (21 differs, 3 goes beyond, 18 not in what was read); 34 new statements, 17 not-found rows
 R3	check, Q2 on BigCommerce	afe99459f0311dff3	2026-10-19T01:33	2026-10-19T01:47	11.7	medium; 47 points (34 differs, 13 not in what was read); 54 new statements, 16 not-found rows; no live pages
+R3	check, Q1 on WooCommerce	a472f432cfed79623	2026-10-19T01:33	2026-10-19T01:50	13.8	medium; 45 points (31 differs, 2 goes beyond, 12 not in what was read); 40 new statements, 12 not-found rows; no live pages
