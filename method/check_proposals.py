@@ -2,6 +2,7 @@
 
 Usage:
   python3 -I method/check_proposals.py records QUESTION PLATFORM [--dir DIR] [--check] [CAPTURE_RUN ...]
+  python3 -I method/check_proposals.py drafts QUESTION [--dir DIR] [--file NAME] [--cited]
 
 `records` checks one recording run's folder, studies/proposals/records/<QUESTION>/<platform>/ (step R3):
 - selection.tsv: each row's action is copy, set aside or add; a set aside or add row gives its reason; every
@@ -21,6 +22,19 @@ Usage:
   cites at least one id, and each id it cites exists in the folder. With --check (a checking run), each point also
   starts with its label: differs, goes beyond, the same or not in what was read.
 
+`drafts` checks one draft proposal, studies/proposals/drafts/<QUESTION>/draft.md (step R4,
+studies/proposals/briefs/R4-drafting.md), or another file of that folder with --file:
+- its sections, `## 1.` to `## 7.`, and `## 8.` for Q5 and Q7, in order; section 1's subsections, one heading for each
+  of the question's sentences, in order, as `### [2]` or `### [1] [2]`;
+- every point cites an id, except in section 4 and a section 6 point that says only what Yemen's evidence doesn't
+  show; each id exists among the question's records, Stage 1's files, the pilot's variation points or the areas
+  (method/record_ids.py), and no id is another question's;
+- each quoted word ("..." or the curly or angled kinds), each word in backticks and each run of Arabic is found in
+  the text of a record the point cites, its quotes included;
+- "absent" rests on an absent not-found row or a pilot absence;
+- as warnings: the brief's citing limits, a Yemen fact without its date in section 6, the length, and section 1's
+  share of it. notes.md must exist. --cited prints the ids cited, by kind, and section 6's "doesn't show" points.
+
 A live source is checked against the capture runs named, and in this repository's capture runs. Before the
 coordinator captures it, a quote from it is "pending capture", which doesn't fail. Prints each problem, and exits 1
 on any error.
@@ -32,6 +46,7 @@ from source_kinds import kind_of
 from held_index import Held, describe, names_a_source, norm_url, urls_in
 from copy_statements import COPIES, LEAD, candidates_for, copy_id
 from agent_questions import sentences
+import record_ids as rid
 
 csv.field_size_limit(10**9)
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -356,8 +371,140 @@ def records(q, platform, captures, d=None, checking=False):
     check_account(d, q, code, copies | own, checking, {x for x in own if re.search(r"-N\d+$", x)})
 
 
+LIMITS = {"Q5": (70, 10, 12, 7000)}               # facts, not-found and absent, Stage 1, words
+DEFAULT_LIMITS = (45, 7, 8, 5000)
+QUOTED = re.compile(r'"([^"\n]+)"|\u201c([^\u201d\n]+)\u201d|\u00ab([^\u00bb\n]+)\u00bb|`([^`\n]+)`')
+ARABIC = re.compile(r"[\u0600-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]+"
+                    r"(?:[ \u200c\u200e\u200f]+[\u0600-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]+)*")
+ARABIC_LETTER = re.compile(r"[\u0621-\u064a\u066e-\u06d3\u06fa-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]")
+
+
+def draft_ids(text):
+    return (rid.PLATFORM_ID.findall(text), rid.YEMEN_ID.findall(text), rid.VP_ID.findall(text),
+            rid.AREA_ID.findall(text))
+
+
+def drafts(q, d=None, name="draft.md", cited=False):
+    d = d or os.path.join(SKM, "studies", "proposals", "drafts", q)
+    path = os.path.join(d, name)
+    if not os.path.exists(path):
+        sys.exit(f"no file {os.path.relpath(path, SKM)}")
+    if not os.path.exists(os.path.join(d, "notes.md")):
+        err("notes.md", "", "missing")
+    text = open(path, encoding="utf-8").read()
+    lines = text.splitlines()
+    nsent = len(sentences(q))
+    want = list(range(1, 9 if q in ("Q5", "Q7") else 8))
+    heads, seen_sent = [], []
+    for n, line in enumerate(lines, start=1):
+        if re.match(r"^##(?!#)", line):
+            m = re.match(r"^## (\d+)\.\s+\S", line)
+            if not m:
+                err(name, f"line {n}", "a section is headed by its number, as ## 2. Proposed: ...")
+                continue
+            heads.append((int(m.group(1)), n))
+        elif re.match(r"^###(?!#)", line) and heads and heads[-1][0] == 1:
+            ks = [int(x) for x in re.findall(r"\[(\d+)\]", line)]
+            if not ks or any(not 1 <= k <= nsent for k in ks):
+                err(name, f"line {n}", f"a subsection of section 1 is headed by sentence numbers, from [1] to [{nsent}]")
+            seen_sent += ks
+    if [h for h, _ in heads] != want:
+        err(name, "", f"sections {[h for h, _ in heads]}: want {want}, in order")
+    if seen_sent != list(range(1, nsent + 1)):
+        err(name, "", f"section 1's subsections give sentences {seen_sent}: want each of 1 to {nsent} once, in order")
+
+    def section(n):
+        k = 0
+        for h, at in heads:
+            if at <= n:
+                k = h
+        return k
+
+    plat, yem, cited_ids, doesnt_show = set(), set(), {}, []
+    for n, p in points(text):
+        sec = section(n)
+        if sec == 0:
+            err(name, f"line {n}", "a point before the first section")
+            continue
+        pids, yids, vids, aids = draft_ids(p)
+        for i in pids:
+            if not i.startswith(q + "-"):
+                err(name, f"line {n}", f"{i}: an id of another question")
+            elif not rid.lookup(i):
+                err(name, f"line {n}", f"{i}: no such record")
+        for i in yids + vids + aids:
+            if not rid.lookup(i):
+                err(name, f"line {n}", f"{i}: no such id")
+        evid = [i for i in pids + yids + vids if rid.lookup(i)]
+        says_not_shown = sec == 6 and re.search(r"doesn.t show|does not show", p, re.I)
+        if says_not_shown:
+            doesnt_show.append(n)
+        if not (pids or yids or vids) and sec != 4 and not says_not_shown:
+            err(name, f"line {n}", "a point that cites no record")
+        texts = [rid.text_of(i) for i in evid]
+        for m in QUOTED.finditer(p):
+            words = rid.norm(next(g for g in m.groups() if g is not None))
+            if len(words) < 2 or rid.PLATFORM_ID.fullmatch(words.upper()):
+                continue
+            if not any(words in t for t in texts if t):
+                err(name, f"line {n}", f"quoted words not found in the records the point cites: {words[:80]}")
+        for m in ARABIC.finditer(p):
+            run = rid.norm(m.group(0)).strip("\u060c\u061b\u061f\u066a\u06d4 ")
+            if not ARABIC_LETTER.search(run):
+                continue
+            if not any(run in t for t in texts if t):
+                err(name, f"line {n}", f"Arabic not found in the records the point cites: {run[:60]}")
+        if re.search(r"\babsent\b", p, re.I):
+            ok = any(re.search(r"-A\d{4}$", i) or (re.search(r"-N\d+$", i) and
+                     (rid.lookup(i)[1].get("kind") == "absent")) for i in pids if rid.lookup(i))
+            if not ok:
+                err(name, f"line {n}", "'absent' without an absent row or a pilot absence")
+        if sec == 6 and any(re.match(r"Y[AK]-", i) for i in yids) and not re.search(r"\b(19|20)\d\d\b", p):
+            err(name, f"line {n}", "a Yemen fact without its date", "warning")
+        for i in evid:
+            cited_ids.setdefault(i, n)
+        plat.update(i for i in pids if i.startswith(q + "-") and rid.lookup(i))
+        yem.update(i for i in yids if rid.lookup(i))
+
+    facts = sorted(i for i in plat if re.search(r"-(?:[KP]\d{4}|C\d{3}|\d{3})$", i))
+    nf = sorted(i for i in plat if re.search(r"-(?:[GHA]\d{4}|N\d{2,3})$", i))
+    lim = LIMITS.get(q, DEFAULT_LIMITS)
+    for label, got, cap in [("statements, copies and citations", facts, lim[0]),
+                            ("not-found rows, copied gaps and pilot absences", nf, lim[1]),
+                            ("Stage 1's ids", sorted(yem), lim[2])]:
+        if len(got) > cap:
+            err(name, "", f"{len(got)} {label} cited, past the brief's about {cap}", "warning")
+    strip = lambda t: rid.AREA_ID.sub("", rid.VP_ID.sub("", rid.YEMEN_ID.sub("", rid.PLATFORM_ID.sub("", t))))
+    words = len(re.findall(r"\w+", strip(text)))
+    if words > lim[3] * 1.1:
+        err(name, "", f"{words} words, past the brief's about {lim[3]}", "warning")
+    one = [at for h, at in heads if h == 1]
+    two = [at for h, at in heads if h == 2]
+    if one and two and words:
+        w1 = len(re.findall(r"\w+", strip("\n".join(lines[one[0]:two[0] - 1]))))
+        if w1 > 0.55 * words:
+            err(name, "", f"section 1 is {w1} of {words} words, past about half", "warning")
+    if cited:
+        print(f"facts\t{len(facts)}\t{' '.join(facts)}")
+        print(f"not found or absent\t{len(nf)}\t{' '.join(nf)}")
+        print(f"Stage 1\t{len(yem)}\t{' '.join(sorted(yem))}")
+        print(f"doesn't show (section 6 lines)\t{len(doesnt_show)}\t{' '.join(map(str, doesnt_show))}")
+        print(f"words\t{words}")
+
+
 def main(argv):
-    if len(argv) >= 3 and argv[0] == "records":
+    if len(argv) >= 2 and argv[0] == "drafts":
+        rest, d, name = argv[2:], None, "draft.md"
+        for flag in ("--dir", "--file"):
+            if flag in rest:
+                i = rest.index(flag)
+                if flag == "--dir":
+                    d = rest[i + 1]
+                else:
+                    name = rest[i + 1]
+                del rest[i:i + 2]
+        drafts(argv[1], d, name, "--cited" in rest)
+    elif len(argv) >= 3 and argv[0] == "records":
         rest, d = argv[3:], None
         if "--dir" in rest:
             i = rest.index("--dir")
@@ -367,7 +514,8 @@ def main(argv):
         rest = [x for x in rest if x != "--check"]
         records(argv[1], argv[2], rest, d, checking)
     else:
-        sys.exit("usage: check_proposals.py records QUESTION PLATFORM [--dir DIR] [--check] [CAPTURE_RUN ...]")
+        sys.exit("usage: check_proposals.py records QUESTION PLATFORM [--dir DIR] [--check] [CAPTURE_RUN ...]\n"
+                 "       check_proposals.py drafts QUESTION [--dir DIR] [--file NAME] [--cited]")
     levels = {}
     for level, f, i, x in issues:
         levels[level] = levels.get(level, 0) + 1
