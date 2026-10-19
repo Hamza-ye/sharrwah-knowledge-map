@@ -1,4 +1,15 @@
 copy_id	identifier	statement	scope
+Q4-SA-K0048	Store plan	{"position": 3, "kind": "link", "text": "Store plan", "href": "/plan"}	
+Q4-SA-K0049	إدارة الاشتراك في تطبيق سلة على iOS برصيد آيتونز	"extra_icons": null}, {"parent_code": "adar-alhsab-oalmtgr", "title": "إدارة الاشتراك في تطبيق سلة على iOS برصيد آيتونز", "description": null, "icon": null, "icon_color": null, "icon_background": null, "extra_icons": null}, {"parent_code": "adar-alhsab-oalmtgr"	plan: سلة بلس
+Q4-SA-K0050	إمكانية تجميد الاشتراك السنوي حتى 30 يومًا	"extra_icons": null}, {"parent_code": "adar-alhsab-oalmtgr", "title": "إمكانية تجميد الاشتراك السنوي حتى 30 يومًا", "description": null, "icon": null, "icon_color": null, "icon_background": null, "extra_icons": null}, {"parent_code": "adar-alhsab-oalmtgr"	plan: سلة بلس
+Q4-SA-K0051	بدون عمولة منصة على مبيعاتك	بدون عمولة منصة على مبيعاتك	plan: سلة سبيشل
+Q4-SA-K0052	enable-special-plan-purchase	{"position": 434, "name": "enable-special-plan-purchase", "value": {"enabled": true, "released": false, "plans": [], "countries": [], "type": "feature"}}	the answering store (merchant@en)
+Q4-SA-K0053	renew-price-by-slug	{"position": 477, "name": "renew-price-by-slug", "value": {"enabled": false, "released": false, "plans": [], "countries": [], "type": "feature"}}	the answering store (merchant@en)
+Q4-SA-K0054	plan-free-trial	{"position": 491, "name": "plan-free-trial", "value": {"enabled": false, "released": false, "plans": [], "countries": [], "type": "feature"}}	the answering store (merchant@en)
+Q4-SA-K0055	plans	{"position": 567, "name": "plans", "value": {"basic": {"active": true, "features_count": 50}, "plus": {"active": false, "features_count": 100}, "pro": {"active": false, "features_count": 150}, "special": {"active": false, "features_count": 5000}}}	the answering store (merchant@en)
+Q4-SA-K0056	"سلة" (التعريفات)	• "سلة": شركة منصة سلة للاتصالات وتقنية المعلومات (شخص واحد) ، المملكة العربية السعودية.	الشروط والأحكام لحملة اليوم الوطني (95) – باقات/بكجات سلة
+Q4-SA-K0057	💰 طريقة استرجاع المبلغ	في حال استحقاق الاسترجاع، يتم إعادة المبلغ إلى رصيد المتجر (المحفظة) ليتمكن التاجر من استخدامه داخل المنصة (مثل تجديد الاشتراك أو شراء خدمات أخرى).	
+Q4-SA-K0058	❓ لماذا لا يظهر خيار إلغاء الباقة؟	يظهر خيار إلغاء الاشتراك فقط في حالات محددة تتيح لك استرداد كامل مبلغ الاشتراك.	
 Q4-SA-K0492	Orders	{"position": 15, "kind": "link", "text": "Orders", "href": "/orders"}	
 Q4-SA-K0493	Customer notes	"orders/customer-notes":"Customer notes"	
 Q4-SA-K0494	Reorder	"orders/reorder":"Reorder"	
