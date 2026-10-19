@@ -15,7 +15,7 @@ An id is one of:
 For each id it prints the file it is in and its row, then the citations it rests on, each with its source,
 locator, date and quote: the first 12, or every one with --all. `texts(question)` gives, for the drafts' checks, each id's own text and its quotes.
 """
-import csv, html, os, re, sys
+import csv, html, os, re, sys, unicodedata
 from functools import lru_cache
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from copy_statements import COPIES, cite_split
@@ -117,9 +117,10 @@ def lookup(i):
 
 
 def norm(s):
-    """Text as the checks compare it: entities decoded, tags and markdown emphasis removed, quotes and dashes
-    made plain, whitespace collapsed, Latin letters in lower case."""
-    s = html.unescape(re.sub(r"<[^>]+>", " ", s or ""))
+    """Text as the checks compare it: entities decoded, tags and markdown emphasis removed, Unicode composed (NFC, so
+    that marks on one letter compare in any order), quotes and dashes made plain, whitespace collapsed, Latin letters in
+    lower case."""
+    s = unicodedata.normalize("NFC", html.unescape(re.sub(r"<[^>]+>", " ", s or "")))
     s = s.translate(str.maketrans({"‘": "'", "’": "'", "“": '"', "”": '"', "–": "-",
                                    "—": "-", " ": " ", "ـ": ""}))
     s = re.sub(r"[*_]{1,2}", "", s)
