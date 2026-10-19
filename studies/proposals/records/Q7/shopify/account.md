@@ -6,6 +6,8 @@
 - Shopify names a **store currency**: the currency of the Shopify admin, the one products are priced in and reports run in, and the one displayed to customers on the online store. Shopify calls it the primary currency customers use when purchasing. Q7-SH-K1934 Q7-SH-K1935 Q7-SH-K2916 Q7-SH-001 Q7-SH-003
 - Reports can be viewed only in the store currency. Fixed price discounts exist only in the store default currency. Q7-SH-074 Q7-SH-111
 - In the Admin GraphQL API (2026-10), the shop's currency is `Shop.currencyCode`. Amounts are carried as a `MoneyBag`, whose `shopMoney` is the amount in the shop's base currency and whose `presentmentMoney` is the amount in the customer's selected currency. Q7-SH-K2893 Q7-SH-122 Q7-SH-123
+- In the stores the runs observed, the store currency was the Yemeni Rial. The General settings page's **Store defaults** showed, under **Currency display**, "Yemeni Rial (YER)" on store fake-demo-sharrwah (store address Sanaa, Yemen, observed 5 October 2026). The admin's answer to `MarketsHomeCurrencyOptions` gave `shop.currencyCode` "YER" on store capture-plus (observed 2 October 2026). Q7-SH-191 Q7-SH-192
+- On the page that creates a gift card product, the **Currency** menu offered "Store currency (YER) Yemeni Rial" and, under "Market currencies", nine currencies from Czech Koruna to Yemeni Rial, each marked "Not eligible" and disabled (store demo-fake-dev-store, observed 30 September 2026). On store ts15uk-ug the same page said that gift cards are issued in the store currency and can be redeemed in any currency, with exchange rates determined at checkout using the Market settings (observed 7 October 2026). Q7-SH-196 Q7-SH-197
 
 ### Currency shown to buyers and paid by them
 - A market's currency is the one displayed to customers on the online store, and transactions are performed in it. Each market can have a currency customization, and prices are displayed in the currency set for the customer's market. Q7-SH-K1941 Q7-SH-K1931 Q7-SH-076
@@ -18,6 +20,8 @@
 - An order records both `Order.currencyCode` and `Order.presentmentCurrencyCode`. In the admin, the order's **Paid** section shows the amount in the customer's currency (the presentment currency). An order whose payment was converted back to the store currency at checkout doesn't display as a multi-currency order. Q7-SH-124 Q7-SH-125 Q7-SH-105
 - Under the Shopify Payments terms, cryptocurrency wallets can be a Payment Method, and settlement funds include cryptocurrency. Under the Cryptocurrency Credit Reward Program, some Credits may be paid in stablecoins such as USD Coin. Q7-SH-P0016 Q7-SH-P0014 Q7-SH-K1757
 - Between August 8, 2025 and December 31, 2026, businesses selling in Bulgaria in Euros must display prices in both Euros and Bulgarian Lev. Transactions still take place in one currency. Q7-SH-115 Q7-SH-116
+- In a run on store demo-fake-dev-store (30 September 2026), the European Union market's **Use local currencies** setting said "Let customers pay in their region’s currency", and that product pricing will include, when applicable, a 2% conversion rate fee paid by customers, with exchange rates determined at the time of purchases and refunds. On store capture-plus, the admin's `MarketsHomeCurrencyOptions` answer gave `foreignExchangeFee` "0.02" (2 October 2026). Q7-SH-198 Q7-SH-199 Q7-SH-193
+- In the order journey on store demo-fake-dev-store (30 September 2026), a return's `maximumRefundable` carried both `presentmentMoney` and `shopMoney`, each in `currencyCode` "YER". Q7-SH-200
 
 ### Currency paid out to the seller
 - Shopify names a **payout currency**: the currency that Shopify Payments deposits into the seller's bank account in. The customer's payment currency, and the store currency, can differ from it. Q7-SH-002 Q7-SH-004 Q7-SH-010
@@ -40,6 +44,7 @@
 - In the API, a market's currency settings are `MarketCurrencySettings.baseCurrency` and `localCurrencies`, and the shop lists `enabledPresentmentCurrencies`. Q7-SH-128 Q7-SH-129 Q7-SH-126 Q7-SH-127
 - Showing prices in local currencies requires Shopify Payments. Shopify's plan comparison marks it "Included" on all four plans. Setting product prices and percentage adjustments per market doesn't require Shopify Payments. A price list carries its own `PriceList.currency`. Q7-SH-K2660 Q7-SH-K2790 Q7-SH-071 Q7-SH-130
 - In the stored admin answers, the store feature `multiCurrencyGatewayEnabled` reads `false` on stores ibx5bt-xy, capture-plus and capture-grow in their first set, and `true` on capture-plus and capture-grow from their second set. Q7-SH-186 Q7-SH-187 Q7-SH-188 Q7-SH-189 Q7-SH-190
+- On store capture-plus (2 October 2026), the admin's `ShopifyPaymentsData` answer gave Shopify Payments `"eligible":false`. Its `MarketsHomeCurrencyOptions` answer listed 130 currencies; the YER item had `automaticRate` null. Q7-SH-195 Q7-SH-194
 - A draft order with no customer uses the store's default currency. Otherwise the customer's shipping address decides the market, and its currency. Q7-SH-103 Q7-SH-102
 
 ### Payout currency

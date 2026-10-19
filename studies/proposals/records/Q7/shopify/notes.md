@@ -53,3 +53,52 @@ Both statements name K1936 in their note.
 ## Problems with the method
 - Some statements first combined quotes from places in a page that aren't next to each other. The checker rejects a statement that isn't verbatim in its first cited source, so each of those quotes became its own statement. One list statement, Q7-SH-059, now includes a "Learn more" sentence that sits between two of its items.
 - Some quotes ran past 300 characters. They were split into consecutive pieces, each cited separately.
+
+## Re-check against the observed runs, 19 October 2026
+
+All files below were read from observed-sh at commit c8b5fbee25966372a0475e6ed81f0b7760ac2921, with `git show`.
+
+### What was read
+- The guides: `README.md` and `docs/READING.md`, whole.
+- Searches (`python3 -I method/corpus_search.py shopify … --max 10`):
+  - N01: "Reserved funds" "reserve" "Payout balance" "الأموال المحجوزة" "الاحتياطي" --with "currency" "USD" "عملة";
+  - N02: "existing orders" "past orders" "previous orders" "الطلبات السابقة" "الطلبات الحالية" --with "currency" "currencies" "عملة" "العملة";
+  - N03: "Change store currency" "Store currency" "I understand the risk of changing the store currency" "تغيير عملة المتجر" "عملة المتجر";
+  - N04: "Global-e" "Managed Markets" "Global-e account" "الأسواق المُدارة" "Managed markets" --with "currency" "currencies" "عملة" "العملة";
+  - sentence 1: "presentmentCurrencyCode" "presentmentMoney" "shopMoney" "Currency display" "عرض العملة";
+  - sentence 2: "Local currencies" "baseCurrency" "localCurrencies" "enabledPresentmentCurrencies" "العملات المحلية";
+  - sentence 3: "Change currency" "Manage currencies" "Exchange rate" "تغيير العملة" "سعر الصرف" --with "market" "Markets" "الأسواق";
+  - sentence 4: "Payout currency" "payout account" "defaultCurrency" "عملة الدفع" "عملة المدفوعات".
+- `python3 -I method/held_index.py` on https://admin.shopify.com/payments/payouts, /settings/general and /settings/payments.
+- Run files opened:
+  - raw/runs/20261005T013804Z-sweep-paid-store/steps/170.text.txt (General settings, fake-demo-sharrwah);
+  - raw/runs/20261006T225457Z-sweep-trial-my-store-8/steps/170.text.txt (General settings, ts15uk-ug) and steps/450.text.txt (gift card product);
+  - raw/runs/20261002T003831Z-sweep-capture-plus/steps/170.aria.yaml (General settings), and its answers MarketsHomeCurrencyOptions/c0db7883….json and ShopifyPaymentsData/383a6cb4….json, with its `answers.jsonl` and `actions.jsonl`;
+  - raw/runs/20260930T113624Z-journey-giftcard-product/steps/002.aria.yaml;
+  - raw/runs/20260930T170204Z-journey-market/steps/099.aria.yaml and 089.aria.yaml;
+  - raw/runs/20260930T014656Z-journey-order-lifecycle: `answers.jsonl`, the answers SuggestedFinancialOutcomeQuery/6e6d198f….json, OrderDetailsPayment/72ab439f….json and OrderDetails/9dcdca0a….json (the last two hold no currency beyond YER amounts and were not recorded);
+  - raw/runs/20261005T035526Z-sweep-staff-customer-support/steps/397.text.txt (payouts page);
+  - `derived/admin-operations.jsonl` (the query of MarketsHomeCurrencyOptions) and `index/operations.jsonl` (the runs calling the pointer operations).
+- Stores: each store is named as the run's `answers.jsonl` names it. Run 20261005T013804Z-sweep-paid-store names two stores (fake-demo-sharrwah and ctcbwa-r1); Q7-SH-191 names fake-demo-sharrwah from its step's address.
+- The `MarketsHomeCurrencyOptions` answer's `currencies` list holds 130 items. Only the YER item is recorded (Q7-SH-194); the shop's own currency is YER.
+
+### Open items
+- Q7-SH-N01: unchanged. No run shows the payouts page to the store owner: its held steps are staff sweeps that show "You need permission to view this feature". Search and file added to the row.
+- Q7-SH-N02: unchanged. Search added to the row.
+- Q7-SH-N03: unchanged. The held General settings steps show the **Store defaults** section with "Yemeni Rial (YER)" (recorded as Q7-SH-191), but no step opens the Change store currency menu. Search, files and a narrowed route added.
+- Q7-SH-N04: unchanged. Search and file added to the row.
+- No copied gap is cited in the account. The starting message listed no phrases.
+
+### Wording changes (step 4)
+- Every name kept in the rows ("Reserved funds", "Payout balance", "Payment Processor Account", "Store defaults", "Currency display", "Change store currency", "drop-down menu", "Global-e account", "currency customization") is in a page the row's `read` names. No detail was removed.
+- Routes of N01 and N03 no longer give an admin address (see problems).
+
+### New statements
+Q7-SH-191 to Q7-SH-200 (10), with citations Q7-SH-C216 to Q7-SH-C228.
+
+### Not read
+- The answers of `PaymentProviders` and the third-party payment providers pages (pointers): they name providers, not currencies, and were not opened.
+- The other run documents the sentence searches listed (MarketsPicker, MarketGraphProductPricingDetail and DraftOrderMarkets answers, other journey-market steps, staff sweeps' General settings steps, Shopify Payments terms steps, AnalyticsShopifyQl answers).
+
+### Problems with the brief or the tools
+- The checker reports a founder route whose address any held step holds, even where the held steps show a different state of the page (a staff permission page, or a menu left closed). For N01 and N03 the route now names the page in the Help Center's words instead of its address, and says what the held steps show.
