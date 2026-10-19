@@ -95,3 +95,54 @@ Q3-SH-100 to Q3-SH-105, citations Q3-SH-C140 to Q3-SH-C149.
 
 - `held_index.py` reports `https://admin.shopify.com/settings/payments`, the address the Help Center links, as not held; the runs' steps are held under `https://admin.shopify.com/store/<handle>/settings/payments`, and only that form lists them.
 - A corpus search whose `--with` term is a path (`settings/payments`) matched over 5,000 answers, since many answers carry admin addresses.
+
+## Re-check against the step text from saved HTML, 19 October 2026
+
+### What was read
+
+All at observed-sh `51626891aa711ee9c3ef2d05ce63c95396dca949`, through `git show`.
+
+- **Guides:** `docs/READING.md` (the folder's entry and the run files' table) and `derived/step-text-from-html/meta.json`; `derived/step-text-from-html/index.tsv`, for the runs it covers.
+- **Searches,** each with `--only "step text from saved HTML" --max 10`:
+  - N01 and N03: `python3 -I method/corpus_search.py shopify "payouts are paused" "complete verification" "verify your identity" "verification deadline" "Activate Shopify Payments" "Complete account setup" "إيقاف الدفعات مؤقتًا" "إكمال التحقق" "التحقق من هويتك" "تفعيل Shopify Payments"` (35 documents: account security, sign-in, staff invitation and policy steps);
+  - N03 and Q3-SH-100: `... "Shopify Payments" "شوبيفاي للمدفوعات" --with "eligible" "not available" "isn't available" "unavailable" "Activate" "verification" "غير متاح" "مؤهل"` (163 documents, led by the plan pages);
+  - N01: `... "deadline" "payouts paused" "on hold" "suspended" "restricted" "store is paused" "الموعد النهائي" "معلق" --with "payouts" "Shopify Payments" "store" "checkout" "verification"`;
+  - N02: `... "license" "licence" "age verification" "ترخيص" "التحقق من العمر" --with "alcohol" "hemp" "cannabis" "CBD" "الكحول" "القنب"` (2 documents: Dev Dashboard Catalogs, product category names);
+  - Q3-SH-027, 028, 101 (sentence [1]): `... "select a plan" "Pick a plan" "trial has expired" "password protected" "Remove password" "store is unavailable" "اختر خطة" "انتهت الفترة التجريبية" "محمي بكلمة مرور"` and `... "private mode" "Store access" "password page" "Opening soon" "can't accept orders" "can’t accept payments" "الوضع الخاص" "الوصول إلى المتجر"`;
+  - Q3-SH-012, 015, 017, 020, 023, 041, 043, 061, 062: `... "government-issued ID" "account representative" "beneficial owner" "upload documents" "bank statement" "Proof of Liveness" "information requests" "هوية حكومية" "ممثل الحساب" "كشف حساب بنكي"` (only the account profile's name field matched);
+  - Q3-SH-057, 058, 077, 083, K1536, K2268, A0002: `... "not available in your country" "not supported in your country" "isn't available in your region" "not eligible" "isn't eligible" "requirements" "غير متاح في بلدك" "غير مؤهل" --with "Shopify Payments" "Shop" "Balance" "Capital" "payouts" "bank account"` (currency and pickup-location eligibility, discount requirements) and `... "chargeback rate" "eligible products" "Shopify Balance" "Shopify Capital" "Shop Pay Installments" "American Express" "payout account" "bank account" --with "requirement" "required" "eligible" "eligibility" "unavailable" "not available" "you need" "must"`;
+  - Q3-SH-K1237: `... "Create a Shopify account" "legal name" "Business details" "Store owner" "business entity" "الاسم القانوني" "تفاصيل النشاط التجاري" "مالك المتجر" --with "required" "must" "add" "Add"`.
+- **Files opened** (`derived/step-text-from-html/`): `20260930T103225Z-sweep-dev/376.html.txt` and `396.html.txt`; `20260930T045741Z-sweep-trial2/376.html.txt`, `387.html.txt`, `408.html.txt`, `422.html.txt`, `154.html.txt`, `125.html.txt` (grep); `20261002T003831Z-sweep-capture-plus/376.html.txt`; `20261002T004032Z-sweep-capture-grow/376.html.txt`; `20260930T002940Z-sweep-trial/376.html.txt` and `059.html.txt`; `20261004T115543Z-storefront-page-types/001.html.txt`, `001.frame-0.html.txt`, `001.frame-1.html.txt`; `20261004T223401Z-journey-business-entity/013.html.txt`. With `grep` only, for verif, identity document, deadline and Activate Shopify Payments: steps 380 to 382, 396, 399, 400, 413 and 417 of the sweep-dev and sweep-trial2 runs (none holds them).
+- **Run files,** for addresses, titles, dates, stores and the aria comparison: the `actions.jsonl` and `answers.jsonl` (store field only) of runs 20260930T103225Z-sweep-dev, 20260930T045741Z-sweep-trial2, 20261004T115543Z-storefront-page-types and 20261004T223401Z-journey-business-entity; `steps/376.aria.yaml` and `422.aria.yaml` of the first two, `steps/408.aria.yaml` of sweep-trial2, `steps/001.frame-0.aria.yaml` of storefront-page-types and `steps/013.aria.yaml` of journey-business-entity, with `grep` for the recorded words.
+- **Not read:** the other 160 Shopify Payments documents past the first ten (the same plan pages in other runs and steps); the Shop Pay Installments terms past section 2; the account profile pages (step 465), whose match was the name field's help text; the pickup-point and currency "Not eligible" lists, which bear on other questions.
+
+### Open items
+
+- Copied gaps cited in `account.md`: none (Q3-SH-A0002 is a pilot absence).
+- **Q3-SH-N01:** unchanged. Search and files added to `searched` and `read`.
+- **Q3-SH-N02:** unchanged. Search added to `searched`.
+- **Q3-SH-N03** (routed to the founder): unchanged, still routed to the founder. The Payments pages saved in the 30 September sweeps show a test payment gateway (a development store, Q3-SH-106) or a third-party provider and no Shopify Payments section, and the routes for onboarding, information requests and identity documents all ended at the same page. Search and files added.
+- **The draft's Shopify ids:** each was read with `record_ids.py`. What the new texts add is listed under "For the draft". The others showed nothing in the new texts: Q3-SH-012, 014, 015, 017, 020, 023, 041, 043, 053, 057, 058, 061, 062, 065, 066, 070, 072, 073, 077, 083, 086, 095, 101, A0002, K1237, K1536, K2268, N01, N02, P0045, P0085.
+
+### Wording changes (step 4)
+
+- None. N01, N02 and N03 name nothing the new texts contradict, and every name and path they give is still in what their `read` names or in the folder's statements.
+
+### New statements
+
+Q3-SH-106 to Q3-SH-111, citations Q3-SH-C150 to Q3-SH-C155. Each `note` says it is in the saved HTML of its step and whether the step's aria tree shows the same words.
+- Stores are named as each run's `answers.jsonl` names them: demo-fake-dev-store, ibx5bt-xy, capture-plus, capture-advanced. The steps' addresses name the same handles.
+- Q3-SH-107 is in a dialog in the markup, not between hidden markers; the aria tree of its step doesn't show it, and its note says so.
+- Q3-SH-106 and Q3-SH-107 begin with the extractor's `[heading: …]` marker, kept so that the heading and the words after it are one passage of the file.
+
+### For the draft
+
+- **Q3-SH-100:** Q3-SH-108. On another store (ibx5bt-xy, 30 September 2026), the plan page's saved HTML says "Shopify Payments is not available on your store."
+- **Q3-SH-K1274:** Q3-SH-107. A trial store's saved Payments page holds, in a dialog, "You need to set-up two-step authentication before adding a bank account."
+- **Q3-SH-027 and Q3-SH-028:** Q3-SH-109 and Q3-SH-106. On development stores, the saved Preferences page holds Private mode on with "Your online store is in development. To let visitors access your store, give them the password.", and the saved Payments page "Development stores can only process test payments".
+- Not tied to a draft id: Q3-SH-110 (Shop Pay Installments terms: Affirm may deny access; information identifying the seller and beneficial owners is required) and Q3-SH-111 (a US Individual entity's SSN field, "Used for tax filing and verification").
+
+### Problems
+
+- The extracted text keeps markers such as `[heading: …]` and `[label: …]` inline, so a heading and the paragraph after it can only be quoted together with the marker.
+- A search with a common term in `--with` (such as "store" or "Capital") matches the admin's navigation and keyboard-shortcut text on almost every page, so its first ten documents are mostly noise.

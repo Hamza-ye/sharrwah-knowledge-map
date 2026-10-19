@@ -111,3 +111,66 @@ No live page was read.
 ## The coordinator's correction, 19 October 2026
 
 Q2 on Shopify's account cited some of Q2-SH-027 to Q2-SH-035 one number off, in six points: a statement was inserted after those points were written (the Q2 draft's notes found it). The ids are corrected by what each statement says, in Shopify's account and in the points and notes here that name them.
+
+
+## Re-check against the step text from saved HTML, 19 October 2026
+
+Source: observed-sh at `51626891aa711ee9c3ef2d05ce63c95396dca949`, folder `derived/step-text-from-html/`. Every statement below says what the saved page's markup held at that step, not what the page showed.
+
+### What was read
+
+- observed-sh's `docs/READING.md` (the folder's entry and the `steps/NNN.text.txt` entry) and `derived/step-text-from-html/meta.json`, at the commit. `README.md` was not re-read.
+- The draft's Shopify ids, with `python3 -I method/record_ids.py` (35 ids).
+- Searches, each `python3 -I method/corpus_search.py shopify <terms> --only "step text from saved HTML" --max 10`:
+  - "hemp" "CBD" "القنب": 4 documents (Fabric metafield values, Dev Dashboard catalogs); none opened.
+  - "Managed Markets" "Global-e": 17 documents. Opened `20261002T004032Z-sweep-capture-grow/316.html.txt` and `20260930T170204Z-journey-market/089.html.txt`.
+  - "Shopify Payments" "eligible" "not available in your country" "isn't available": 459 documents. Opened `20260930T002940Z-sweep-trial/422.html.txt`; checked the same lines in `20260930T103225Z-sweep-dev/422.html.txt` and `20261002T003831Z-sweep-capture-plus/422.html.txt`.
+  - "Shopify Capital" "Capital" "YouLend" "lender": 5,370 documents. Opened `20260930T045741Z-sweep-trial2/133.html.txt` (route capital:account:terms; it ended at `/capital/offers`).
+  - "I'm located in" "unsupported" "sanction" "embargo" "Crimea": no document.
+  - "third-party providers" "Third-party payment providers" "Supports 3DS": 22 documents. Opened step 387 of `20260930T002940Z-sweep-trial`, `20260930T103225Z-sweep-dev` and `20261002T003831Z-sweep-capture-plus`.
+  - "Customer data hosting location" "data hosting" "stored in": no document.
+  - "contracting party" "billing address" "Shopify International Limited" "Shopify Commerce Singapore": 407 documents; none opened (billing-address forms and draft orders; none names a Shopify company).
+  - Sentence [1]: "not available in your country" "not available in your region" "isn't available in your country" "only available in" "not supported in your" "غير متاح في بلدك" "غير متوفر في": no document.
+  - Sentence [3]: "regulations" "required by law" "due to local" "comply with" "legal requirements" "اللوائح": 132 documents; none opened beyond those below (Point of Sale app listing for NF525, already in the records as Q2-SH-053 to Q2-SH-057; Policies pages; Shop Pay Installments terms).
+  - Sentence [2]: "legal entity" "Legal entities" "business entity" "data hosting": 154 documents. Opened `20261002T003831Z-sweep-capture-plus/060.html.txt` (settings/general).
+  - For draft ids K2134, K1865, K1867, K1743, K1745, K1561, K1563: "Cookie banner" "privacy settings for each" "Data sharing" "regions where" (131; opened `20260930T002940Z-sweep-trial/444.html.txt`, checked `20261002T003831Z-sweep-capture-plus/443.html.txt`); "Shopify Tax" "tax services" "collect duties" (198; opened `20260930T002940Z-sweep-trial/542.html.txt`); "local payment methods" "payment methods are activated" (44; opened `20260930T002940Z-sweep-trial/414.html.txt`, which shows only ONERWAY (Direct) in test mode); "Payment Processor" "Stripe Payments" "Payment Facilitator" (54; the Shopify Payments terms and Balance pages, already copied; none opened).
+- Each step's `actions.jsonl` row for its address, title and date, and `answers.jsonl` for the store names. Where the step has `steps/NNN.aria.yaml`, it was searched for the same words; each statement's note says what it showed.
+
+### Open items
+
+- Q2-SH-N01: unchanged. `searched` extended.
+- Q2-SH-N02: unchanged. Neither Managed Markets page opened gives a reason. `searched` and `read` extended.
+- Copied gaps G0003, G0004, G0005, G0011, G0093, G0096, G0097, G0117, G0146, G0219: unchanged. No text read gives a reason, place or boundary for them.
+- Routed to the founder or either:
+  - G0119, G0121 (Capital in Canada, Australia): unchanged. The route capital:account:terms, on store ibx5bt-xy (prices in YER), ended at `/capital/offers` with "There are no funding offers at the moment"; no terms, lender or provider. No store in Canada or Australia was observed.
+  - G0216 (where the unsupported-region restriction applies): unchanged. The search for the sign-up list and the restriction's words listed no document.
+  - G0217 (screening interface): unchanged. Nothing listed.
+- New statements: Q2-SH-071 to Q2-SH-082 (12), citations Q2-SH-C077 to Q2-SH-C101.
+
+### Wording check
+
+- Q2-SH-N01 and Q2-SH-N02: no detail rests on the new texts; no change.
+
+### Lists
+
+- Q2-SH-078: the Tax regions table's first page only (15 rows); the saved HTML holds Previous and Next controls and no other page.
+- Q2-SH-072, Q2-SH-073: recorded in full, with the card brand labels the markup states between the provider names.
+
+### For the draft
+
+- Q2-SH-058 (Shopify Payments "eligible":false for fake-demo-sharrwah): Q2-SH-071 adds the Subscribe to Plus page's words for the same store and for demo-fake-dev-store and capture-plus: "Shopify Payments is not available on your store."
+- Q2-SH-K1337 (Transaction Fees with providers other than Shopify Payments): Q2-SH-071 adds the page's "0.2% third-party transaction fees apply if not using Shopify Payments" for the Plus plan, in those stores.
+- Q2-SH-064 (third-party providers for ts15uk-ug on 2026-10-07): Q2-SH-072 and Q2-SH-073 add the lists for three other stores; fake-demo-sharrwah's held no ONERWAY (Direct), and demo-fake-dev-store's and capture-plus's held no Bogus Gateway.
+- Q2-SH-K1865 and Q2-SH-K1867 (tax services by location; Shopify Tax destinations): Q2-SH-077, Q2-SH-078 and Q2-SH-079 add one store's Taxes page: Shopify Tax "now active" in the EU and UK, the tax service named per region (Manual, Basic or Shopify Tax), and shipping tax calculated automatically for Canada, the EU and the US.
+- Q2-SH-K2134 (privacy settings per country and region): Q2-SH-080, Q2-SH-081 and Q2-SH-082 add the Cookie banner page's words on markets and regions that require a banner, and that compliance is the seller's responsibility.
+- Q2-SH-K1243 and Q2-SH-K1248 (contracting party by billing address): nothing changes. Q2-SH-074 to Q2-SH-076 add, for one store's General page, that the store address must be in the business entity's country and that changing country can affect subscription fees and billing currency; they name no Shopify company.
+- The other draft ids: nothing in the new texts read changes them.
+
+### Not read
+
+- The other documents the searches listed beyond those named above, including the other stores' step 316, 414, 443, 444 and 542 pages and the ended-trial runs' pages.
+
+### Problems
+
+- Statements Q2-SH-072, Q2-SH-073 and Q2-SH-078 hold the extracted text's bracketed attribute labels (`[accessibilitylabel: …]`) and line breaks as spaces, because the statement must be verbatim in the file; the checker's whitespace collapsing carries them.
+- The dialogs' text (Q2-SH-074 to Q2-SH-076, Q2-SH-082) is in the saved markup but not the step's aria tree; nothing in the file says whether a dialog was open.
