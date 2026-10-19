@@ -12,6 +12,7 @@
 - The areas whose questions include Q4, in `studies/proposals/areas/areas.md`: A-03, A-09, A-10, A-11, A-12, A-18, A-22, A-23 and A-27.
 - `studies/proposals/yemen-digest.md`, read whole once, after sections 1 to 5 and 7 were written.
 - Stage 1's rows by id, with `record_ids.py --all`: YA-128, YA-131, YK-173, YA-112, YK-36, YA-108, YK-108, YK-203, YK-87, YA-21, YA-22, YA-01, YK-452 and YA-56. YK-108, YK-87, YA-22 and YA-01 were read and not used.
+- For the revision the coordinator asked for on 19 October 2026: the three new points under [3] in Shopify's `account.md`; in Shopify's `notes.md`, the section "Re-check against the step text from saved HTML, 19 October 2026", its part "For the draft"; Q4-SH-059 to Q4-SH-062, looked up with `record_ids.py --all`; and `source_kinds.py` on their sources, the derived step text from saved HTML, which it gives as shipped.
 
 ## What the records don't show
 
@@ -23,7 +24,7 @@
 
 ## Cited past the guide's counts
 
-- Statements, copies and citations: 95 against about 40. Section 1 alone cites 84: five sentences compared across five platforms, one id per platform per point. Section 2's eleven elements each draw on two to four platforms, and sections 2 to 7 add about 11 ids beyond section 1's.
+- Statements, copies and citations: 98 against about 40. Section 1 alone cites 83: five sentences compared across five platforms, one id per platform per point. Section 2's eleven elements each draw on two to four platforms, and sections 2 to 7 add 15 ids beyond section 1's.
 - Yemen facts: 10 against about 8. They bear on seven elements (cash on delivery, bank transfer to the seller, the receiving account, proof of payment, payment events, couriers, and currency) and on the two items they add to section 5 (a rial amount's zone, and accounts per buyer area).
 - Not-found rows and copied gaps: 4, within the guide. "Yemen's evidence doesn't show": 2 lines, within the guide.
 
@@ -39,3 +40,16 @@
 - YK-87's "collections", in its quote, is the collection and payment of electronic money (خدمات إدارة تحصيل و/أو سداد الأموال الإلكترونية), not cash. The draft rests nothing on it.
 - The run was paused at 16:45 UTC and resumed under the updated tools. The first lookups used `record_ids.py` without `--all`; none of those ids rests on more than nine quotes, so none was cut short.
 - Outside this folder, the one repository file that changed during this run is the bytecode cache `method/__pycache__/record_ids.cpython-313.pyc` (rewritten at 18:33 UTC, after `record_ids.py` changed). Importing `record_ids.py` rewrites it, so running the tools may have done so; other drafting runs were active at the same time.
+
+## Revised for the step text from saved HTML
+
+The coordinator's re-check of Shopify's records added Q4-SH-059 to Q4-SH-062, from the text of saved step HTML (observed-sh at commit 51626891aa711ee9c3ef2d05ce63c95396dca949). The draft says each as the saved markup's text of one step, with its store and date, and with what its note gives of the step's accessibility tree; it doesn't compare them with sources of another kind.
+
+- Section 1 [3], after the point on recording the payment (Q4-SH-012): a new point. In the saved markup's text of two steps on store demo-fake-dev-store (30 September 2026), the Collect payment menu of a draft order and of order #1006 holds "Credit card" and "Mark as paid" (markup only), and order #1006's Mark as paid dialog holds "Mark this order as paid if you received $1.00 USD from another payment method.", words its accessibility tree holds too. Q4-SH-059, Q4-SH-060, Q4-SH-061
+- Section 1 [3], after the point on time to pay (Q4-SH-014): a new point. In the saved markup's text of store capture-plus's New company page (2 October 2026), the Payment terms options are No payment terms, Due on fulfillment, and Net 7 to Net 90 (markup only; the accessibility tree holds the heading). Q4-SH-062
+- Section 2, **Payment record**: a new sub-item. The seller confirms the amount and currency received before the entry is written, drawing on the Mark as paid dialog's words. Q4-SH-061
+- Section 2, **Payment window**: a new sub-item. Payment terms can be set on one order or for a business customer. Q4-SH-014, Q4-SH-062
+- Section 3: a new level, "Set per business customer: payment terms". Q4-SH-062
+- Not used: the words "Payment due later" in Q4-SH-059's text, on which the proposal doesn't rest.
+- Length: with these points the checker warned at 5,526 words. To stay near the brief's 5,000, the draft drops section 1's point on cash-on-delivery tracking in the UAE (Q4-SA-K1602), on which the proposal didn't rest, and tightens wording in sections 1, 2, 5 and 6 without changing what they say.
+- The checker after the revision: no errors and no warnings; two notes, on 98 statements, copies and citations and on 10 Yemen facts past the guide.

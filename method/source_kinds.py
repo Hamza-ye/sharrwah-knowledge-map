@@ -86,7 +86,7 @@ def kind_of(source, roots):
         return "stated", f"run {run} fetched pages"
     if path.startswith("derived/"):
         name = path.split("/")[1]
-        if re.search(r"by-store|store|journey|session|staff|writes|map-steps|map-units", name, re.I):
+        if re.search(r"by-store|store|journey|session|staff|writes|map-steps|map-units|step-text", name, re.I):
             return "observed", f"derived/{name} is built from recorded runs"
         if re.search(r"help", name, re.I):
             return "stated", f"derived/{name} is built from help pages"
