@@ -1,0 +1,188 @@
+copy_id	concern_id	identifier
+Q8-BC-K0042	BC-C-009	/developer/api-reference/rest/admin/management/promotions
+Q8-BC-K0043	BC-C-009	/developer/api-reference/rest/admin/management/promotion-settings
+Q8-BC-K0044	BC-C-009	Marketing > Promotions > Automatic
+Q8-BC-K0045	BC-C-009	Advanced promotions management
+Q8-BC-K0046	BC-C-009	active promotions
+Q8-BC-K0047	BC-C-009	store_v2_marketing
+Q8-BC-K0048	BC-C-009	active promotions
+Q8-BC-K0062	BC-C-013	Beta Product Recommendations > Product Recommendations
+Q8-BC-K0063	BC-C-013	Google Vertex AI
+Q8-BC-K0064	BC-C-013	Closed Betas
+Q8-BC-K0065	BC-C-013	Enterprise plans
+Q8-BC-K0066	BC-C-013	Google Cloud account
+Q8-BC-K0067	BC-C-013	GraphQL Storefront API
+Q8-BC-K0068	BC-C-013	BigCommerce Analytics
+Q8-BC-K0087	BC-C-017	Beta Checkout Extensions > Extensions
+Q8-BC-K0088	BC-C-017	Closed Betas
+Q8-BC-K0089	BC-C-017	Route
+Q8-BC-K0090	BC-C-017	custom checkouts
+Q8-BC-K0100	BC-C-020	/developer/api-reference/rest/admin/payments/transactions
+Q8-BC-K0101	BC-C-020	Transactions API prerequisites
+Q8-BC-K0102	BC-C-020	Provider configuration required
+Q8-BC-K0103	BC-C-020	store_v2_transactions
+Q8-BC-K0104	BC-C-020	store/order/transaction/created
+Q8-BC-K0105	BC-C-020	Transactions API prerequisites
+Q8-BC-K0123	BC-C-024	/developer/api-reference/rest/admin/payments/stored-instruments
+Q8-BC-K0124	BC-C-024	Stored credit cards
+Q8-BC-K0125	BC-C-024	30002
+Q8-BC-K0126	BC-C-024	store_stored_payment_instruments
+Q8-BC-K0127	BC-C-024	store/customer/payment/instrument/default/updated
+Q8-BC-K0128	BC-C-024	payments.bigcommerce.com
+Q8-BC-K0129	BC-C-025	BigCommerce Payments by PayPal
+Q8-BC-K0130	BC-C-025	Money Dashboard
+Q8-BC-K0131	BC-C-025	Embedded Payment Provider List
+Q8-BC-K0132	BC-C-025	BigCommerce Payments availability
+Q8-BC-K0133	BC-C-025	BigCommerce Retail Plan
+Q8-BC-K0134	BC-C-025	Card processing rate
+Q8-BC-K0135	BC-C-025	PCI compliance
+Q8-BC-K0136	BC-C-025	Configure
+Q8-BC-K0137	BC-C-025	BigCommerce Payments
+Q8-BC-K0138	BC-C-025	BigCommerce Payments
+Q8-BC-K0139	BC-C-026	pre-integrated online payment solutions
+Q8-BC-K0140	BC-C-026	Choose Your Region
+Q8-BC-K0141	BC-C-026	Open Payment Provider Fee
+Q8-BC-K0142	BC-C-026	Orders through Embedded Payment Providers
+Q8-BC-K0143	BC-C-026	Open Payment Provider Fee
+Q8-BC-K0144	BC-C-026	Embedded Payment Provider List
+Q8-BC-K0145	BC-C-026	PayPal Braintree
+Q8-BC-K0146	BC-C-026	PayPal Braintree
+Q8-BC-K0147	BC-C-026	Open Payment Provider Fees
+Q8-BC-K0148	BC-C-026	Embedded Payment Providers
+Q8-BC-K0149	BC-C-026	connected payment gateways
+Q8-BC-K0161	BC-C-029	Unified Billing
+Q8-BC-K0162	BC-C-029	Opt-in and Opt-out
+Q8-BC-K0163	BC-C-029	Partner Portal Account
+Q8-BC-K0164	BC-C-029	Unified Billing Partner
+Q8-BC-K0165	BC-C-029	Collection and Distribution
+Q8-BC-K0166	BC-C-029	Unified Billing Apps
+Q8-BC-K0167	BC-C-029	Invoicing
+Q8-BC-K0168	BC-C-029	Unified Billing Partner
+Q8-BC-K0169	BC-C-029	account_checkouts_create
+Q8-BC-K0170	BC-C-029	GraphQL Account API
+Q8-BC-K0171	BC-C-029	third-party payment processors
+Q8-BC-K0172	BC-C-029	Unified Billing badge
+Q8-BC-K0173	BC-C-030	Fees
+Q8-BC-K0174	BC-C-030	GMV cap
+Q8-BC-K0175	BC-C-030	Automatic Upgrades
+Q8-BC-K0176	BC-C-030	Scale
+Q8-BC-K0177	BC-C-030	Fees
+Q8-BC-K0178	BC-C-030	Late Payments
+Q8-BC-K0179	BC-C-030	Taxes
+Q8-BC-K0180	BC-C-030	Authorized Payment Method
+Q8-BC-K0208	BC-C-038	/developer/api-reference/rest/admin/management/channels
+Q8-BC-K0209	BC-C-038	channel
+Q8-BC-K0210	BC-C-038	Online storefront
+Q8-BC-K0211	BC-C-038	channel
+Q8-BC-K0212	BC-C-038	store_channel_settings
+Q8-BC-K0213	BC-C-038	store_channel_listings
+Q8-BC-K0214	BC-C-038	store/channel/created
+Q8-BC-K0215	BC-C-038	type and platform
+Q8-BC-K0216	BC-C-039	Multi-Storefront
+Q8-BC-K0217	BC-C-039	Multi-storefront
+Q8-BC-K0218	BC-C-039	partners
+Q8-BC-K0219	BC-C-039	Multi-storefront
+Q8-BC-K0225	BC-C-042	/developer/api-reference/rest/admin/content/themes
+Q8-BC-K0226	BC-C-042	/developer/api-reference/rest/admin/content/custom-template-associations
+Q8-BC-K0227	BC-C-042	Stencil
+Q8-BC-K0228	BC-C-042	Multiple Stores
+Q8-BC-K0229	BC-C-042	Design Themes
+Q8-BC-K0230	BC-C-042	Theme Components
+Q8-BC-K0231	BC-C-042	store_themes_manage
+Q8-BC-K0232	BC-C-042	store/channel/{channel_id}/theme/configuration/activated
+Q8-BC-K0233	BC-C-043	/developer/api-reference/rest/admin/content/widgets
+Q8-BC-K0234	BC-C-043	/developer/api-reference/rest/admin/content/page-widgets
+Q8-BC-K0235	BC-C-043	Beta Page Widgets > Page Widgets
+Q8-BC-K0236	BC-C-043	Closed Betas
+Q8-BC-K0272	BC-C-050	/developer/docs/storefront/catalyst/overview
+Q8-BC-K0273	BC-C-050	Catalyst (Storefront Framework)
+Q8-BC-K0274	BC-C-050	GraphQL Storefront API
+Q8-BC-K0275	BC-C-051	/developer/docs/storefront/catalyst/makeswift/overview
+Q8-BC-K0276	BC-C-051	Makeswift, Inc.
+Q8-BC-K0277	BC-C-051	MAKESWIFT_SITE_API_KEY
+Q8-BC-K0278	BC-C-052	/developer/api-reference/rest/admin/management/infrastructure-hosting
+Q8-BC-K0279	BC-C-052	Native Hosting
+Q8-BC-K0280	BC-C-052	closed beta
+Q8-BC-K0281	BC-C-052	OpenNext Cloudflare adapter
+Q8-BC-K0282	BC-C-052	Native Hosting
+Q8-BC-K0283	BC-C-053	/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/overview
+Q8-BC-K0284	BC-C-053	Storefront API
+Q8-BC-K0285	BC-C-053	store_storefront_api
+Q8-BC-K0286	BC-C-053	GraphQL
+Q8-BC-K0287	BC-C-054	Admin API
+Q8-BC-K0288	BC-C-054	/graphql
+Q8-BC-K0289	BC-C-055	/developer/api-reference/graphql/account/overview
+Q8-BC-K0290	BC-C-055	Account API
+Q8-BC-K0291	BC-C-055	account_read
+Q8-BC-K0292	BC-C-055	Account-level API credentials
+Q8-BC-K0293	BC-C-056	API accounts
+Q8-BC-K0294	BC-C-056	Settings > Store-level API accounts
+Q8-BC-K0295	BC-C-056	Store-level API accounts
+Q8-BC-K0296	BC-C-056	User Information
+Q8-BC-K0297	BC-C-056	default scope
+Q8-BC-K0298	BC-C-056	OAuth scope
+Q8-BC-K0315	BC-C-059	single-click and connector
+Q8-BC-K0316	BC-C-059	Marketplace team
+Q8-BC-K0317	BC-C-059	Unlisted
+Q8-BC-K0318	BC-C-059	Third-Party Products
+Q8-BC-K0319	BC-C-059	store_app_extensions_manage
+Q8-BC-K0320	BC-C-059	store/app/uninstalled
+Q8-BC-K0321	BC-C-059	Single-Click
+Q8-BC-K0327	BC-C-062	Big Open Data Solutions
+Q8-BC-K0328	BC-C-062	Settings V3: Analytics
+Q8-BC-K0329	BC-C-062	Professional reporting tools
+Q8-BC-K0330	BC-C-062	Commerce Analytics
+Q8-BC-K0331	BC-C-062	BODL
+Q8-BC-K0332	BC-C-062	Enable data layer mutation
+Q8-BC-K0333	BC-C-063	/developer/api-reference/mcp/overview
+Q8-BC-K0334	BC-C-063	Settings > API and MCP > MCP
+Q8-BC-K0335	BC-C-063	store owner
+Q8-BC-K0336	BC-C-063	Storefront MCP
+Q8-BC-K0337	BC-C-063	Agentic Search
+Q8-BC-K0338	BC-C-063	Agentic checkout
+Q8-BC-K0339	BC-C-063	Agentic Search
+Q8-BC-K0340	BC-C-064	BigCommerce Companion
+Q8-BC-K0341	BC-C-064	BigAI
+Q8-BC-K0342	BC-C-064	AI Features
+Q8-BC-K0343	BC-C-064	AI (Third- Party) Enablement
+Q8-BC-K0344	BC-C-064	No Input Training
+Q8-BC-K0345	BC-C-065	/developer/api-reference/rest/b2b/overview
+Q8-BC-K0346	BC-C-065	/developer/api-reference/rest/b2b/management/overview
+Q8-BC-K0347	BC-C-065	B2B Edition
+Q8-BC-K0348	BC-C-065	B2B Edition enabled
+Q8-BC-K0349	BC-C-065	store_b2b_manage
+Q8-BC-K0350	BC-C-065	store/company/created
+Q8-BC-K0351	BC-C-066	Beta Powered By > Stores
+Q8-BC-K0352	BC-C-066	Powered By
+Q8-BC-K0353	BC-C-066	Powered by
+Q8-BC-K0354	BC-C-066	Closed Betas
+Q8-BC-K0355	BC-C-066	billing relationship
+Q8-BC-K0356	BC-C-066	Beta Powered By > Plans
+Q8-BC-K0357	BC-C-067	Feedonomics Platform
+Q8-BC-K0358	BC-C-067	Google / Meta / TikTok / Microsoft / Pinterest (Feedonomics Surface)
+Q8-BC-K0359	BC-C-067	Feedonomics Holdings, LLC
+Q8-BC-K0360	BC-C-067	Feedonomics Holdings LLC
+Q8-BC-K0361	BC-C-068	Marketplaces
+Q8-BC-K0362	BC-C-068	Amazon / eBay / Walmart
+Q8-BC-K0363	BC-C-068	amazon
+Q8-BC-K0364	BC-C-069	POS integrations
+Q8-BC-K0365	BC-C-069	Point of sale
+Q8-BC-K0366	BC-C-069	square
+Q8-BC-K0406	BC-C-076	Staging environments
+Q8-BC-K0407	BC-C-076	StagingPro
+Q8-BC-K0408	BC-C-076	StagingPro
+Q8-BC-K0409	BC-C-076	StagingPro public API
+Q8-BC-K0410	BC-C-077	Commerce Mobile Application
+Q8-BC-K0411	BC-C-077	BigCommerce mobile app
+Q8-BC-K0412	BC-C-077	License
+Q8-BC-K0413	BC-C-077	Compatibility; Performance
+Q8-BC-K0453	BC-C-084	Scope
+Q8-BC-K0454	BC-C-084	Third-Party Product Integration
+Q8-BC-K0455	BC-C-084	Third-Party Products
+Q8-BC-K0456	BC-C-084	Third-Party Product Provider
+Q8-BC-K0457	BC-C-084	Extension
+Q8-BC-K0462	BC-C-086	Store
+Q8-BC-K0463	BC-C-086	Content Removal
+Q8-BC-K0464	BC-C-086	Your Materials
+Q8-BC-K0465	BC-C-086	Privacy Policy
+Q8-BC-K0466	BC-C-086	User Agreement
