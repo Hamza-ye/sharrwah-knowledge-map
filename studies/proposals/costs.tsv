@@ -26,3 +26,4 @@ R3	in depth, Q4 on Salla	a1b6469bcc6aaf4f0	2026-10-19T00:06	2026-10-19T00:21	18.
 R3	in depth, Q5 on Shopify	a1c7948a2f678f736	2026-10-19T00:06	2026-10-19T00:21	9.5	medium; 77 new statements, 3 not-found rows
 R3	in depth, Q3 on Shopify	a73125e1a7fdbf9b5	2026-10-19T00:03	2026-10-19T00:21	12.8	medium; 99 new statements, 3 not-found rows
 R3	in depth, Q5 on Salla	abbad4da96cb1dd89	2026-10-19T00:06	2026-10-19T00:23	16.4	medium; 68 new statements, 4 not-found rows
+R3	in depth, Q5 on BigCommerce	aa850d94c56bad8f8	2026-10-19T00:19	2026-10-19T00:29	10.8	medium; 107 new statements (45 of them gateway table rows), 3 not-found rows; two live pages read, neither cited
