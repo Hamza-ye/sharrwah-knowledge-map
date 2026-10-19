@@ -1,44 +1,44 @@
 concern_id	terms	description	statements	gaps	area_id	action	reason
-BC-C-001	Catalog - Products | Catalog - Product variants | Catalog - Product variant options | Catalog - Product modifiers | Products	Products (catalog products, variants, variant options and modifiers)	7	2	BC-A-01	candidate	
-BC-C-002	Catalog - Brands	Brands	3	3	BC-A-01	candidate	
-BC-C-003	Catalog - Categories | Catalog - Category trees	Categories and category trees	5	2	BC-A-01	candidate	
-BC-C-004	Inventory | Store Inventory | Inventory management	Inventory	7	1	BC-A-02	candidate	
-BC-C-005	Store Locations | Locations | Inventory locations	Inventory locations	6	2	BC-A-02	candidate	
-BC-C-006	Pickup | Pickup Methods | Pickup Options | Storefront Pickup Options | Buy online, pick up in store	Pickup (buy online, pick up in store)	5	3	BC-A-08	candidate	
-BC-C-069	Point of sale | POS integrations | POS & In-Store	Point of sale	3	2	BC-A-08	candidate	
-BC-C-022	Payment Processing | Create Payments	Payment processing (Payments API)	10	0	BC-A-09	candidate	
-BC-C-023	Payment Methods | Payment Methods V3 | Payment Methods V2	Payment methods	3	2	BC-A-09	candidate	
-BC-C-024	Stored Instruments API (Beta) | Stored Payment Instruments | Stored credit cards	Stored payment instruments	6	2	BC-A-09	candidate	
-BC-C-027	Apple Pay, Google Pay, and Amazon Pay | Digital wallets	Digital wallets	4	2	BC-A-09	candidate	
-BC-C-026	Embedded Payment Providers | Open Payment Providers | Open Payment Provider Fee | Embedded Payment Provider List | Payment freedom	Payment providers: Embedded and Open Payment Providers	11	3	BC-A-10	candidate	
-BC-C-028	Payment Cards | Checkout Environment; PCI | PCI Compliance	Payment card security (PCI DSS)	7	0	BC-A-11	candidate	
-BC-C-078	Free sitewide HTTPS and dedicated SSL | Storefront Security | Security & compliance	Storefront HTTPS and storefront security	4	2	BC-A-11	candidate	
-BC-C-029	Unified Billing | Merchant Unified Billing | Unified Billing Partner	Unified Billing (app charges on the BigCommerce invoice)	12	1	BC-A-12	candidate	
-BC-C-030	Fees and Billing | GMV cap | Open Payment Provider Fees	Fees and billing (subscription, GMV and plan)	8	1	BC-A-12	candidate	
-BC-C-038	Channels | Channel Settings | Channel Listings | Online storefront | Omnichannel management	Channels	8	2	BC-A-15	candidate	
-BC-C-039	Multi-storefront | Multi-Storefront | MSF	Multi-Storefront	4	1	BC-A-15	candidate	
-BC-C-040	Sites | Sites & Routes	Sites and routes	3	3	BC-A-15	candidate	
-BC-C-041	Redirects	Redirects	2	3	BC-A-15	candidate	
-BC-C-067	Feedonomics | Feedonomics Surface | Feedonomics Platform | Feedonomics enrichment	Feedonomics	4	1	BC-A-16	candidate	
-BC-C-068	Amazon / eBay / Walmart | Marketplaces | Social channels | Google Shopping | Sales Channels	Marketplaces and social channels	3	2	BC-A-16	candidate	
-BC-C-046	Email Templates | Email Statuses | Notifications	Email templates and transactional emails	4	2	BC-A-18	candidate	
-BC-C-047	Settings V3 | Store Information V2 | Store Profile | Storefront Status | Storefront SEO | Information & Settings	Store profile and storefront settings	9	2	BC-A-18	candidate	
-BC-C-074	Currencies | Multi-currency	Currencies	14	0	BC-A-19	candidate	
-BC-C-072	Tax | Tax Classes | Tax Settings	Tax configuration	5	1	BC-A-20	candidate	
-BC-C-073	Tax Provider API | Tax Providers	Tax providers	10	1	BC-A-20	candidate	
-BC-C-060	System Logs | Store logs	System logs and store logs	2	4	BC-A-26	candidate	
-BC-C-061	Staff accounts | Account Users	Staff accounts and control panel users	3	2	BC-A-26	candidate	
-BC-C-076	Staging environments | Staging Pro	Staging environments	4	2	BC-A-26	candidate	
-BC-C-077	BigCommerce mobile app | Mobile App Terms | Commerce Mobile Application	BigCommerce mobile app	4	2	BC-A-26	candidate	
-BC-C-081	Data Processing Addendum | Processor | Controller | Privacy Policy	Personal data processing roles	5	1	BC-A-27	candidate	
-BC-C-082	Data Transfer | International Data Transfer	Data transfer and storage location	9	2	BC-A-27	candidate	
-BC-C-083	Third-Party Subprocessors | Hosting Services	Subprocessors and hosting services	6	1	BC-A-27	candidate	
-BC-C-079	Contracting Entity | Commerce Entity | Governing Law	Contracting entity and governing law	10	1	BC-A-28	candidate	
-BC-C-080	Anti-Corruption, Export and Sanctions Compliance | Sanctions List	Anti-corruption, export and sanctions compliance	5	2	BC-A-29	candidate	
-BC-C-085	Acceptable Use Policy | Highly Regulated Products	Acceptable use and highly regulated products	4	2	BC-A-29	candidate	
-BC-C-088	Infringing Materials Protocol	Infringing materials	4	1	BC-A-29	candidate	
-BC-C-086	Store Terms | Stores and Materials | Your Materials | Your Users	Stores and merchant materials	5	1	BC-A-30	candidate	
-BC-C-087	Merchant-Client Terms | Agents	Agents acting for clients	4	1	BC-A-30	candidate	
-BC-C-025	BigCommerce Payments | BigCommerce Payments by PayPal	BigCommerce Payments	10	1	BC-A-32	candidate	
-BC-C-075	Geography	Geography (countries and states)	1	4	BC-A-34	candidate	
-S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	128	40		candidate	
+BC-C-001	Catalog - Products | Catalog - Product variants | Catalog - Product variant options | Catalog - Product modifiers | Products	Products (catalog products, variants, variant options and modifiers)	7	2	BC-A-01	set aside	terms and statements are about Products (catalog products, variants, variant options and modifiers), not a requirement on the seller before acting
+BC-C-002	Catalog - Brands	Brands	3	3	BC-A-01	set aside	terms and statements are about Brands, not a requirement on the seller before acting
+BC-C-003	Catalog - Categories | Catalog - Category trees	Categories and category trees	5	2	BC-A-01	set aside	terms and statements are about Categories and category trees, not a requirement on the seller before acting
+BC-C-004	Inventory | Store Inventory | Inventory management	Inventory	7	1	BC-A-02	set aside	terms and statements are about Inventory, not a requirement on the seller before acting
+BC-C-005	Store Locations | Locations | Inventory locations	Inventory locations	6	2	BC-A-02	set aside	terms and statements are about Inventory locations, not a requirement on the seller before acting
+BC-C-006	Pickup | Pickup Methods | Pickup Options | Storefront Pickup Options | Buy online, pick up in store	Pickup (buy online, pick up in store)	5	3	BC-A-08	set aside	terms and statements are about Pickup (buy online, pick up in store), not a requirement on the seller before acting
+BC-C-069	Point of sale | POS integrations | POS & In-Store	Point of sale	3	2	BC-A-08	set aside	terms and statements are about Point of sale, not a requirement on the seller before acting
+BC-C-022	Payment Processing | Create Payments	Payment processing (Payments API)	10	0	BC-A-09	set aside	terms and statements are about Payment processing (Payments API), not a requirement on the seller before acting
+BC-C-023	Payment Methods | Payment Methods V3 | Payment Methods V2	Payment methods	3	2	BC-A-09	set aside	terms and statements are about Payment methods, not a requirement on the seller before acting
+BC-C-024	Stored Instruments API (Beta) | Stored Payment Instruments | Stored credit cards	Stored payment instruments	6	2	BC-A-09	set aside	terms and statements are about Stored payment instruments, not a requirement on the seller before acting
+BC-C-027	Apple Pay, Google Pay, and Amazon Pay | Digital wallets	Digital wallets	4	2	BC-A-09	set aside	terms and statements are about Digital wallets, not a requirement on the seller before acting
+BC-C-026	Embedded Payment Providers | Open Payment Providers | Open Payment Provider Fee | Embedded Payment Provider List | Payment freedom	Payment providers: Embedded and Open Payment Providers	11	3	BC-A-10	copy	statements give eligibility and approval for providers (PayPal Braintree: US-based business, application, review)
+BC-C-028	Payment Cards | Checkout Environment; PCI | PCI Compliance	Payment card security (PCI DSS)	7	0	BC-A-11	copy	terms PCI Compliance; statements give conditions the seller must meet (PCI merchant requirements, unmodified checkout)
+BC-C-078	Free sitewide HTTPS and dedicated SSL | Storefront Security | Security & compliance	Storefront HTTPS and storefront security	4	2	BC-A-11	set aside	terms and statements are about Storefront HTTPS and storefront security, not a requirement on the seller before acting
+BC-C-029	Unified Billing | Merchant Unified Billing | Unified Billing Partner	Unified Billing (app charges on the BigCommerce invoice)	12	1	BC-A-12	set aside	terms and statements are about Unified Billing (app charges on the BigCommerce invoice), not a requirement on the seller before acting
+BC-C-030	Fees and Billing | GMV cap | Open Payment Provider Fees	Fees and billing (subscription, GMV and plan)	8	1	BC-A-12	copy	terms GMV cap; statements give plan qualification and automatic upgrades
+BC-C-038	Channels | Channel Settings | Channel Listings | Online storefront | Omnichannel management	Channels	8	2	BC-A-15	set aside	terms and statements are about Channels, not a requirement on the seller before acting
+BC-C-039	Multi-storefront | Multi-Storefront | MSF	Multi-Storefront	4	1	BC-A-15	set aside	terms and statements are about Multi-Storefront, not a requirement on the seller before acting
+BC-C-040	Sites | Sites & Routes	Sites and routes	3	3	BC-A-15	set aside	terms and statements are about Sites and routes, not a requirement on the seller before acting
+BC-C-041	Redirects	Redirects	2	3	BC-A-15	set aside	terms and statements are about Redirects, not a requirement on the seller before acting
+BC-C-067	Feedonomics | Feedonomics Surface | Feedonomics Platform | Feedonomics enrichment	Feedonomics	4	1	BC-A-16	set aside	terms and statements are about Feedonomics, not a requirement on the seller before acting
+BC-C-068	Amazon / eBay / Walmart | Marketplaces | Social channels | Google Shopping | Sales Channels	Marketplaces and social channels	3	2	BC-A-16	set aside	terms and statements are about Marketplaces and social channels, not a requirement on the seller before acting
+BC-C-046	Email Templates | Email Statuses | Notifications	Email templates and transactional emails	4	2	BC-A-18	set aside	terms and statements are about Email templates and transactional emails, not a requirement on the seller before acting
+BC-C-047	Settings V3 | Store Information V2 | Store Profile | Storefront Status | Storefront SEO | Information & Settings	Store profile and storefront settings	9	2	BC-A-18	copy	terms Storefront Status: the store being open to buyers
+BC-C-074	Currencies | Multi-currency	Currencies	14	0	BC-A-19	set aside	terms and statements are about Currencies, not a requirement on the seller before acting
+BC-C-072	Tax | Tax Classes | Tax Settings	Tax configuration	5	1	BC-A-20	set aside	terms and statements are about Tax configuration, not a requirement on the seller before acting
+BC-C-073	Tax Provider API | Tax Providers	Tax providers	10	1	BC-A-20	set aside	terms and statements are about Tax providers, not a requirement on the seller before acting
+BC-C-060	System Logs | Store logs	System logs and store logs	2	4	BC-A-26	set aside	terms and statements are about System logs and store logs, not a requirement on the seller before acting
+BC-C-061	Staff accounts | Account Users	Staff accounts and control panel users	3	2	BC-A-26	set aside	staff accounts: the question excludes staff permissions
+BC-C-076	Staging environments | Staging Pro	Staging environments	4	2	BC-A-26	set aside	terms and statements are about Staging environments, not a requirement on the seller before acting
+BC-C-077	BigCommerce mobile app | Mobile App Terms | Commerce Mobile Application	BigCommerce mobile app	4	2	BC-A-26	set aside	terms and statements are about BigCommerce mobile app, not a requirement on the seller before acting
+BC-C-081	Data Processing Addendum | Processor | Controller | Privacy Policy	Personal data processing roles	5	1	BC-A-27	set aside	terms and statements are about Personal data processing roles, not a requirement on the seller before acting
+BC-C-082	Data Transfer | International Data Transfer	Data transfer and storage location	9	2	BC-A-27	set aside	terms and statements are about Data transfer and storage location, not a requirement on the seller before acting
+BC-C-083	Third-Party Subprocessors | Hosting Services	Subprocessors and hosting services	6	1	BC-A-27	set aside	terms and statements are about Subprocessors and hosting services, not a requirement on the seller before acting
+BC-C-079	Contracting Entity | Commerce Entity | Governing Law	Contracting entity and governing law	10	1	BC-A-28	set aside	terms and statements are about Contracting entity and governing law, not a requirement on the seller before acting
+BC-C-080	Anti-Corruption, Export and Sanctions Compliance | Sanctions List	Anti-corruption, export and sanctions compliance	5	2	BC-A-29	copy	terms Sanctions List; statements are representations the seller must make and controls it must implement
+BC-C-085	Acceptable Use Policy | Highly Regulated Products	Acceptable use and highly regulated products	4	2	BC-A-29	copy	terms Highly Regulated Products: requirements before selling particular products
+BC-C-088	Infringing Materials Protocol	Infringing materials	4	1	BC-A-29	set aside	terms and statements are about Infringing materials, not a requirement on the seller before acting
+BC-C-086	Store Terms | Stores and Materials | Your Materials | Your Users	Stores and merchant materials	5	1	BC-A-30	copy	statements are obligations on the seller for its stores (privacy policy, user agreement)
+BC-C-087	Merchant-Client Terms | Agents	Agents acting for clients	4	1	BC-A-30	set aside	terms and statements are about Agents acting for clients, not a requirement on the seller before acting
+BC-C-025	BigCommerce Payments | BigCommerce Payments by PayPal	BigCommerce Payments	10	1	BC-A-32	copy	terms name the payment service; statements give who qualifies (US-based, Retail plan) and setup steps (add bank account)
+BC-C-075	Geography	Geography (countries and states)	1	4	BC-A-34	set aside	terms and statements are about Geography (countries and states), not a requirement on the seller before acting
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	128	40		copy	statements include who can join and where BigCommerce Payments is available, and payouts
