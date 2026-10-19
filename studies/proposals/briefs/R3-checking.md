@@ -1,6 +1,6 @@
 # Brief: one question on one platform, as a check (step R3)
 
-**Status: revised after its last read (`studies/proposals/checks/R3-checking-brief-read.md`).**
+**Status: revised after its last read (`studies/proposals/checks/R3-checking-brief-read.md`), and on 19 October 2026 after the first runs (`PLAN.md` section 11).**
 
 You are one agent with one short task: one question, on one platform, as a check. The message that started you names both, the platforms read in depth for the question, and a scratch directory. You run at `medium` effort.
 
@@ -41,17 +41,18 @@ You are one agent with one short task: one question, on one platform, as a check
 8. **Step 3, reading:**
    - **With a map of your platform's help:** find in it the question's topics, and list the titles of the pages it files there. Read the pages whose titles name something no account point names, and the pages an account point needs: at most 10 in all.
    - **Without a map:** run one corpus search for the question's topics in your platform's words, in each language it uses, with `--max 10`, and read at most 10 of the documents it lists.
-   - **Then,** for each sentence, run one corpus search for the account points not yet matched, with `--max 10`: their terms in each language your platform uses, and plain words for what each describes, as alternatives in one call. Give each Arabic term in its shortest form, such as "الدفع اليدوي" rather than "طرق الدفع اليدوية", since the search finds Arabic inside words; and each English term in the singular and the plural, since it finds Latin letters as whole words. These are search terms only: they go in `searched`, and you record only your platform's own words. Read at most 5 of the documents it lists.
+   - **Then,** for each sentence, run one corpus search for the account points not yet matched, with `--max 10`. First list those points in your scratch directory, each with its terms in each language your platform uses and plain words for what it describes, and put every point's terms in the one call, as alternatives. Give each Arabic term in its shortest form, such as "الدفع اليدوي" rather than "طرق الدفع اليدوية", since the search finds Arabic inside words; and each English term in the singular and the plural, since it finds Latin letters as whole words. These are search terms only: they go in `searched`, and you record only your platform's own words. Read at most 5 of the documents it lists.
+   - **If a point's terms were left out of its sentence's search,** run one more search for the points left out, the same way, and read at most 5 of the documents it lists. A sentence gets at most these two searches. Sentences may share their searches.
    - **Live pages** only where what is held doesn't show it: at most 5 in all.
    - Choose what to read by address and snippet. Step 3's last paragraph in the recording brief holds.
 9. **Step 4 doesn't apply.**
 10. **Step 5** records only the account points your platform's reading doesn't show.
     - Where one of your copied gaps still open covers such a point, label the point "not in what was read" and cite the gap's G or H id. Record a row only for what no copied gap covers.
     - Each row is `not in what was read`, unless a complete list of your platform leaves the point out: then it is `absent` (rule 6).
-    - A row's search is item 8's search for its sentence: give that command in `searched`, and read for the row only among the documents it listed. Run rule 7's `--with` search only where the row is about a place or plan your statements name.
+    - A row's search is the item 8 search that carried its point's terms: give that command in `searched`, and read for the row only among the documents it listed. Run rule 7's `--with` search only where the row is about a place or plan your statements name.
     - Its `what_is_missing` says what is missing in plain words, not in the in-depth platform's term.
     - Route a row to the founder only where your platform's own material names the page or setting it would show on, in its own words. Otherwise `who_can` is `agent`, with no route.
-    - Record at most 20 rows: first those for points on money flows, legal structure, the data model or partner contracts; then in the order of the question's sentences, and within a sentence in the accounts' order, taking the accounts in the order the message names them. List the other points in `notes.md`, as not checked. They stay out of `account.md`.
+    - Record a row for each such point, up to 20 rows: first those for points on money flows, legal structure, the data model or partner contracts; then in the order of the question's sentences, and within a sentence in the accounts' order, taking the accounts in the order the message names them. Only the points past the 20th row go in `notes.md`, as not checked. They stay out of `account.md`.
 11. **Recording.**
     - When your reading, not a copy, shows the same as an account point, record the statement and cite it. It counts toward the cap.
     - **Rule 12 holds, with 60 in place of 120.**

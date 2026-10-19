@@ -141,7 +141,8 @@ Don't answer the question in your own words, compare your platform with any othe
 - **A local source** is `<repository>@<commit>:<path>`, with the full commit from the table, or `woocommerce-11.2.1:<path>`.
   - A Help Center page or a help article is cited by the source, and for an article the locator, that `help_map.py` prints.
   - A record in a fetch archive is cited by its archive path, with the offset as the locator. A page that `held_index.py` shows held only in a fetch archive is cited this way, not by its URL.
-- **A captured page** is cited by its URL, with `from` = `held`.
+- **A captured page** is cited by its URL, with `from` = `held`, and `access_path` = `rendered` for its text file or `raw` for its `raw.html`.
+- **This repository's commit** moves while you work, as other runs are committed. Cite a file of this repository at the commit the search or tool that showed it printed. Any commit that holds the file unchanged is valid.
 - **A live source** is the exact URL you fetched: the `.md` endpoint if that is what you read. The coordinator captures every cited live page after your run, and before any proposal cites it. Until then the checker reports its quotes as "pending capture".
 - **`locator`** is the heading, anchor or line.
 - **`source_date`** is the date the source shows: published, updated or effective. For an undated live page, it is the date you read it. `date_basis` says which.

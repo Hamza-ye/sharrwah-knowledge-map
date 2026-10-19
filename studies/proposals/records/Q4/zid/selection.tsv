@@ -1,36 +1,36 @@
 concern_id	terms	description	statements	gaps	area_id	action	reason
-ZD-C-001	تفعيل زد باي; تفعيل الدفع الالكتروني; Activate Zid Payments; متطلبات تفعيل الدفع الالكتروني	Zid Pay activation / تفعيل زد باي	11	1	ZD-A-01	candidate	
-ZD-C-002	العمليات; العمليات والاسترداد ( لوحة التحكم الجديدة ); استرداد المبلغ للعميل; Refund Flexibility	Zid Pay transactions and refunds / العمليات والاسترداد	9	1	ZD-A-01	candidate	
-ZD-C-003	الإيداعات; كشف الحساب والإيداعات; Funds Collection; تحصيل المبالغ; Crystal-Clear Deposits	Zid Pay deposits and account statement / الإيداعات وكشف الحساب	13	3	ZD-A-01	candidate	
-ZD-C-004	الحسابات البنكية; الحسابات البنكية ( لوحة التحكم الجديدة )	Bank accounts / الحسابات البنكية	6	2	ZD-A-01	candidate	
-ZD-C-005	شبكات الدفع; Supported Payment Networks; Zid Payments gateway to accept Mada, Visa, and Mastercard; Enable Apple Pay for faster checkout	Zid Pay payment networks / شبكات الدفع	10	0	ZD-A-01	candidate	
-ZD-C-006	رسوم زد باي; رسوم العمليات; Transaction Fees; Fair and Clear Pricing	Zid Pay transaction fees / رسوم زد باي	8	2	ZD-A-01	candidate	
-ZD-C-007	charge back; Fraud; Fraud Shield; Fraud protection to prevent losses; احتجاز الأموال; مبلغ احتياطي	Zid Pay chargebacks, fraud and held funds / charge back والاحتيال واحتجاز الأموال	7	2	ZD-A-01	candidate	
-ZD-C-008	روابط الدفع; Quick Payment Links; payment_link	Payment links / روابط الدفع	3	2	ZD-A-01	candidate	
-ZD-C-009	مقدمي خدمات الدفع; مزود الخدمة; payment service providers; التعاقد من الباطن	Payment service providers behind Zid Pay / مقدمي خدمات الدفع	7	2	ZD-A-01	candidate	
-ZD-C-010	Zid Payments; Open APIs integration model; Merchant Activation; Direct payment; Embedded payment; Link Merchant Event; Payment Paid Event; Refund Event	Zid Payments Open APIs for payment service providers	8	2	ZD-A-01	candidate	
-ZD-C-037	الأنشطة المحظورة; Prohibited Activities	Zid Pay prohibited activities and sanctions / الأنشطة المحظورة	9	3	ZD-A-01	candidate	
-ZD-C-038	اجتياز التحقق من نفاذ; Verify your identity with Nafath	Nafath identity verification / التحقق من نفاذ	6	1	ZD-A-01	candidate	
-ZD-C-011	بوابات الدفع الأُخرى; باي موب Paymob; اموال باي amwal pay; بوابة الدفع تاب Tap	Other payment gateways / بوابات الدفع الأُخرى	11	1	ZD-A-02	candidate	
-ZD-C-012	طرق الدفع; List Payment Methods; Get Payment Options; Various Payment Methods; Advanced Payment Methods	Store payment methods / طرق الدفع	7	2	ZD-A-02	candidate	
-ZD-C-013	خدمات التقسيط; الدفع لاحقاً; Flexible Payments; Tamara; Tabby; MISPay; Emkan; Madfu	Instalment services (buy now, pay later) / خدمات التقسيط	8	1	ZD-A-02	candidate	
-ZD-C-014	الدفع عند الاستلام; خدمة الدفع عند التوصيل; Cash on Delivery; Block Cash on Delivery	Cash on delivery option / الدفع عند الاستلام	7	0	ZD-A-02	candidate	
-ZD-C-016	خدمة التحويل البنكي; الدفع بالتحويل البنكي; Bank Transfer Payment	Bank transfer option / خدمة التحويل البنكي	6	1	ZD-A-02	candidate	
-ZD-C-028	order.payment_status.update; Payment Status; Bulk Payment Status Update	Order payment status / حالة الدفع	4	2	ZD-A-02	candidate	
-ZD-C-017	محفظة زد; محفظة التاجر; Zid Wallet; Zid Electronic Wallet	Zid Wallet (merchant wallet) / محفظة زد	12	2	ZD-A-03	candidate	
-ZD-C-018	الاستقطاع للمحفظة	Wallet deduction from Zid Pay / الاستقطاع للمحفظة	6	0	ZD-A-03	candidate	
-ZD-C-020	الاشتراكات; Subscriptions; Subscription Fees; إدارة الاشتراك; Starter; Rise; Growth; Pro; Lite plan	Zid subscription plans and fees / الاشتراكات	7	1	ZD-A-04	candidate	
-ZD-C-021	المدفوعات والمشتريات; Payments and Purchases; third-party payment processor	Purchases from Zid and their payment processing / المدفوعات والمشتريات	4	2	ZD-A-04	candidate	
-ZD-C-035	بيانات المتجر; تفاصيل النشاط التجاري; Business; KYC (Know Your Customer); third_store_business_read	Store business data and verification / بيانات المتجر	8	0	ZD-A-11	candidate	
-ZD-C-060	زد لوجستيات; زد لوجيستك; زد شب; الشحن المباشر; ZidShip; Zid Logistics: One Contract for 35 Carriers	Zid Logistics and direct shipping / زد لوجستيات وزد شب	14	1	ZD-A-13	candidate	
-ZD-C-015	خدمة الدفع عند الاستلام (COD); تحصيل الدفع عند الاستلام; Cash on Delivery Collection	COD collection through Zid shipping / تحصيل الدفع عند الاستلام	7	3	ZD-A-13	candidate	
-ZD-C-061	شركات الخدمات اللوجستية الطرف الثالث; Shipping apps; Shipping and fulfillment company; الشحن والتخزين	Shipping apps and third-party logistics companies	10	1	ZD-A-13	candidate	
-ZD-C-062	List Store Shipping Methods; delivery-options; طرق الشحن; shipping.read	Store shipping methods / طرق الشحن	4	3	ZD-A-13	candidate	
-ZD-C-063	قيود الشحن و الدفع; قيود الدفع	Shipping and payment restrictions / قيود الشحن و الدفع	4	2	ZD-A-13	candidate	
-ZD-C-080	Orders; Order Tags; Custom Order Status; Draft Orders	Orders / الطلبات	11	2	ZD-A-15	candidate	
-ZD-C-081	Reverse Orders; Full & Partial Returns; Returned Orders	Reverse orders and returns	9	2	ZD-A-15	candidate	
-ZD-C-101	خاصية الإهداء	Gifting / خاصية الإهداء	1	4	ZD-A-15	candidate	
-ZD-C-105	Reports & Analytics; التقارير والتحليلات	Reports and analytics / التقارير والتحليلات	8	2	ZD-A-18	candidate	
-ZD-C-108	POS (Point of Sales); زد كاشير; Zid POS (Cashier)	Zid POS / زد كاشير	9	2	ZD-A-23	candidate	
-ZD-C-114	Live Chat Support; Ticketing & Chat System; 24/7 priority support	Merchant support	4	3	ZD-A-29	candidate	
-S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	158	19		candidate	
+ZD-C-001	تفعيل زد باي; تفعيل الدفع الالكتروني; Activate Zid Payments; متطلبات تفعيل الدفع الالكتروني	Zid Pay activation / تفعيل زد باي	11	1	ZD-A-01	set aside	Zid Pay activation: a payment service the platform provides, not payment arranged directly or collected outside the checkout
+ZD-C-002	العمليات; العمليات والاسترداد ( لوحة التحكم الجديدة ); استرداد المبلغ للعميل; Refund Flexibility	Zid Pay transactions and refunds / العمليات والاسترداد	9	1	ZD-A-01	set aside	Zid Pay transactions and refunds: payments through the platform's own service
+ZD-C-003	الإيداعات; كشف الحساب والإيداعات; Funds Collection; تحصيل المبالغ; Crystal-Clear Deposits	Zid Pay deposits and account statement / الإيداعات وكشف الحساب	13	3	ZD-A-01	set aside	Zid Pay deposits: payments through the platform's own service
+ZD-C-004	الحسابات البنكية; الحسابات البنكية ( لوحة التحكم الجديدة )	Bank accounts / الحسابات البنكية	6	2	ZD-A-01	set aside	bank accounts for Zid Pay payouts; not about orders paid outside the platform
+ZD-C-005	شبكات الدفع; Supported Payment Networks; Zid Payments gateway to accept Mada, Visa, and Mastercard; Enable Apple Pay for faster checkout	Zid Pay payment networks / شبكات الدفع	10	0	ZD-A-01	set aside	card networks of Zid Pay
+ZD-C-006	رسوم زد باي; رسوم العمليات; Transaction Fees; Fair and Clear Pricing	Zid Pay transaction fees / رسوم زد باي	8	2	ZD-A-01	set aside	Zid Pay transaction fees
+ZD-C-007	charge back; Fraud; Fraud Shield; Fraud protection to prevent losses; احتجاز الأموال; مبلغ احتياطي	Zid Pay chargebacks, fraud and held funds / charge back والاحتيال واحتجاز الأموال	7	2	ZD-A-01	set aside	Zid Pay chargebacks and held funds
+ZD-C-008	روابط الدفع; Quick Payment Links; payment_link	Payment links / روابط الدفع	3	2	ZD-A-01	set aside	payment links paid through the platform
+ZD-C-009	مقدمي خدمات الدفع; مزود الخدمة; payment service providers; التعاقد من الباطن	Payment service providers behind Zid Pay / مقدمي خدمات الدفع	7	2	ZD-A-01	set aside	providers behind Zid Pay
+ZD-C-010	Zid Payments; Open APIs integration model; Merchant Activation; Direct payment; Embedded payment; Link Merchant Event; Payment Paid Event; Refund Event	Zid Payments Open APIs for payment service providers	8	2	ZD-A-01	set aside	Open APIs for payment service providers
+ZD-C-037	الأنشطة المحظورة; Prohibited Activities	Zid Pay prohibited activities and sanctions / الأنشطة المحظورة	9	3	ZD-A-01	set aside	Zid Pay prohibited activities
+ZD-C-038	اجتياز التحقق من نفاذ; Verify your identity with Nafath	Nafath identity verification / التحقق من نفاذ	6	1	ZD-A-01	set aside	identity verification for Zid Pay
+ZD-C-011	بوابات الدفع الأُخرى; باي موب Paymob; اموال باي amwal pay; بوابة الدفع تاب Tap	Other payment gateways / بوابات الدفع الأُخرى	11	1	ZD-A-02	copy	
+ZD-C-012	طرق الدفع; List Payment Methods; Get Payment Options; Various Payment Methods; Advanced Payment Methods	Store payment methods / طرق الدفع	7	2	ZD-A-02	copy	
+ZD-C-013	خدمات التقسيط; الدفع لاحقاً; Flexible Payments; Tamara; Tabby; MISPay; Emkan; Madfu	Instalment services (buy now, pay later) / خدمات التقسيط	8	1	ZD-A-02	set aside	instalment services paid through providers at checkout
+ZD-C-014	الدفع عند الاستلام; خدمة الدفع عند التوصيل; Cash on Delivery; Block Cash on Delivery	Cash on delivery option / الدفع عند الاستلام	7	0	ZD-A-02	copy	
+ZD-C-016	خدمة التحويل البنكي; الدفع بالتحويل البنكي; Bank Transfer Payment	Bank transfer option / خدمة التحويل البنكي	6	1	ZD-A-02	copy	
+ZD-C-028	order.payment_status.update; Payment Status; Bulk Payment Status Update	Order payment status / حالة الدفع	4	2	ZD-A-02	copy	
+ZD-C-017	محفظة زد; محفظة التاجر; Zid Wallet; Zid Electronic Wallet	Zid Wallet (merchant wallet) / محفظة زد	12	2	ZD-A-03	copy	
+ZD-C-018	الاستقطاع للمحفظة	Wallet deduction from Zid Pay / الاستقطاع للمحفظة	6	0	ZD-A-03	set aside	wallet deduction from Zid Pay balance
+ZD-C-020	الاشتراكات; Subscriptions; Subscription Fees; إدارة الاشتراك; Starter; Rise; Growth; Pro; Lite plan	Zid subscription plans and fees / الاشتراكات	7	1	ZD-A-04	set aside	subscription plans and their fees; statements are not about orders
+ZD-C-021	المدفوعات والمشتريات; Payments and Purchases; third-party payment processor	Purchases from Zid and their payment processing / المدفوعات والمشتريات	4	2	ZD-A-04	set aside	merchant purchases from Zid
+ZD-C-035	بيانات المتجر; تفاصيل النشاط التجاري; Business; KYC (Know Your Customer); third_store_business_read	Store business data and verification / بيانات المتجر	8	0	ZD-A-11	set aside	store business data and verification
+ZD-C-060	زد لوجستيات; زد لوجيستك; زد شب; الشحن المباشر; ZidShip; Zid Logistics: One Contract for 35 Carriers	Zid Logistics and direct shipping / زد لوجستيات وزد شب	14	1	ZD-A-13	copy	
+ZD-C-015	خدمة الدفع عند الاستلام (COD); تحصيل الدفع عند الاستلام; Cash on Delivery Collection	COD collection through Zid shipping / تحصيل الدفع عند الاستلام	7	3	ZD-A-13	copy	
+ZD-C-061	شركات الخدمات اللوجستية الطرف الثالث; Shipping apps; Shipping and fulfillment company; الشحن والتخزين	Shipping apps and third-party logistics companies	10	1	ZD-A-13	set aside	third-party shipping apps; statements are about shipping, not payment
+ZD-C-062	List Store Shipping Methods; delivery-options; طرق الشحن; shipping.read	Store shipping methods / طرق الشحن	4	3	ZD-A-13	set aside	shipping methods listing; no payment terms
+ZD-C-063	قيود الشحن و الدفع; قيود الدفع	Shipping and payment restrictions / قيود الشحن و الدفع	4	2	ZD-A-13	copy	
+ZD-C-080	Orders; Order Tags; Custom Order Status; Draft Orders	Orders / الطلبات	11	2	ZD-A-15	copy	
+ZD-C-081	Reverse Orders; Full & Partial Returns; Returned Orders	Reverse orders and returns	9	2	ZD-A-15	copy	
+ZD-C-101	خاصية الإهداء	Gifting / خاصية الإهداء	1	4	ZD-A-15	set aside	gifting feature
+ZD-C-105	Reports & Analytics; التقارير والتحليلات	Reports and analytics / التقارير والتحليلات	8	2	ZD-A-18	copy	
+ZD-C-108	POS (Point of Sales); زد كاشير; Zid POS (Cashier)	Zid POS / زد كاشير	9	2	ZD-A-23	set aside	in-store POS devices, not online orders
+ZD-C-114	Live Chat Support; Ticketing & Chat System; 24/7 priority support	Merchant support	4	3	ZD-A-29	set aside	merchant support
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	158	19		copy	
