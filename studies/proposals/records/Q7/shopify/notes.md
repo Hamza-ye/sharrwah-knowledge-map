@@ -102,3 +102,51 @@ Q7-SH-191 to Q7-SH-200 (10), with citations Q7-SH-C216 to Q7-SH-C228.
 
 ### Problems with the brief or the tools
 - The checker reports a founder route whose address any held step holds, even where the held steps show a different state of the page (a staff permission page, or a menu left closed). For N01 and N03 the route now names the page in the Help Center's words instead of its address, and says what the held steps show.
+
+## Re-check against the step text from saved HTML, 19 October 2026
+
+All files below were read from observed-sh at commit 51626891aa711ee9c3ef2d05ce63c95396dca949, with `git show`.
+
+### What was read
+- `docs/READING.md` (the entry for `derived/step-text-from-html/` and the run files table) and `derived/step-text-from-html/meta.json`.
+- Searches, each with `--only "step text from saved HTML" --max 10` (`python3 -I method/corpus_search.py shopify …`):
+  - N03 and the draft's ids Q7-SH-008, Q7-SH-181, Q7-SH-191: "Change store currency" "Store currency" "I understand the risk of changing the store currency" "تغيير عملة المتجر" "عملة المتجر"; then "I understand the risk" "reason for changing the currency" "Select a currency" "United States Dollar (USD)" --with "Change store currency" (no document);
+  - N01: "Reserved funds" "Payout balance" "reserve" "Payouts" "الأموال المحجوزة" "الاحتياطي" "رصيد الدفعات" --with "currency" "USD" "YER" "عملة";
+  - N02, sentence 3 and the draft's ids Q7-SH-076, Q7-SH-078, Q7-SH-079: "Manual exchange rate" "Dynamic" "Exchange rate" "Use local currencies" "existing orders" "سعر الصرف" "العملات المحلية" --with "currency" "Markets";
+  - N04, sentence 4 and the draft's ids Q7-SH-004, Q7-SH-131, Q7-SH-K1600, Q7-SH-P0010, Q7-SH-P0155: "Global-e" "Managed Markets" "Payout currency" "payout account" "Shopify Payments" "الأسواق المُدارة" "عملة الدفع" --with "currency" "currencies" "عملة";
+  - sentence 1 and the draft's ids Q7-SH-123, Q7-SH-124, Q7-SH-K1937, Q7-SH-K1938: "Market currency" "Other currencies" "Local currency" "presentment" "عملة السوق" "العملة المحلية".
+- Texts opened (`derived/step-text-from-html/…`), with each run's `actions.jsonl` for the step's address, title and date, and `answers.jsonl` for the store:
+  - 20261002T003831Z-sweep-capture-plus/060.html.txt (General settings) and 428.html.txt (Plus trial page);
+  - 20260930T014656Z-journey-order-lifecycle/005.html.txt (draft order); the run's other step texts were only counted for lines with "currenc", "exchange rate" or "presentment" (steps 001 to 009 hold one each, the Markets section; 010 to 032 none);
+  - 20260930T170204Z-journey-market/021.html.txt, 042.html.txt and 089.html.txt;
+  - 20260930T144209Z-sweep-instances/001.html.txt (a report).
+- Each new statement's step was compared with its `steps/NNN.aria.yaml`, as each statement's note says. Step 042's saved text ("Saudi Riyal Dynamic FX : 1 YER = 0.0024448788 SAR") is also in its aria.yaml, so nothing was recorded from it.
+- The "All currencies" list of journey-market step 021 holds 129 items; only the item marked "Store currency" is recorded (Q7-SH-203).
+- Stores: sweep-instances names fake-demo-sharrwah and ctcbwa-r1 in `answers.jsonl`; Q7-SH-206 and Q7-SH-207 name fake-demo-sharrwah from the step's address.
+
+### Open items
+- Q7-SH-N01: unchanged. No saved text listed is a payouts page. Search added to the row.
+- Q7-SH-N02: unchanged. Search and the two texts opened added to the row.
+- Q7-SH-N03: unchanged. The saved HTML of capture-plus's General settings holds the Change store currency heading with Save and Cancel, and no list (Q7-SH-205). Search, file and route updated.
+- Q7-SH-N04: unchanged. Search and the three texts opened added to the row.
+- No copied gap is cited in the account.
+
+### Wording changes (step 4)
+- None removed. N03's route adds what the saved HTML holds, in its words ("Change store currency", "Save", "Cancel").
+
+### New statements
+Q7-SH-201 to Q7-SH-207 (7), with citations Q7-SH-C229 to Q7-SH-C235. Q7-SH-206 and Q7-SH-207 are text the markup hid (between ⟦hidden⟧ and ⟦/hidden⟧), as their notes say.
+
+### For the draft
+- Q7-SH-123, Q7-SH-124 (presentment and shop currency): Q7-SH-201 adds that a draft order page's markup held a **Currency** choice for the market Yemen, "Market currency" Yemeni Rial (YER) and eight "Other currencies".
+- Q7-SH-076, Q7-SH-078, Q7-SH-079 (a market's currency customization; Dynamic or Manual): Q7-SH-202, Q7-SH-203, Q7-SH-204 add that a market's currency customization held SAR as "Recommended" for a market including Saudi Arabia, an "All currencies" list with YER marked "Store currency", **Price rounding** options and **Exchange rate (FX)** Dynamic or Manual.
+- Q7-SH-008, Q7-SH-181 (changing the store currency in General settings): Q7-SH-205 adds that the General settings page's markup held a **Change store currency** heading with Save and Cancel only; it does not show the risk checkbox or a currency list.
+- Q7-SH-004 (payout currency): Q7-SH-206 adds an admin report metric, "Payout amount in payout currency", described as the value of the payout in the currency the payout was issued in (hidden in the markup).
+- Q7-SH-013 (exchange rate and conversion fee when the customer pays in another currency): Q7-SH-207 adds an admin report metric, "Foreign exchange fees", described as currency conversion fees paid when customers purchase in a different currency (hidden in the markup).
+- No change: Q7-SH-006, Q7-SH-012, Q7-SH-068, Q7-SH-099, Q7-SH-107, Q7-SH-131, Q7-SH-191, Q7-SH-K1268, Q7-SH-K1600, Q7-SH-K1935, Q7-SH-K1937, Q7-SH-K1938, Q7-SH-P0010, Q7-SH-P0155, Q7-SH-N01, Q7-SH-N04.
+
+### Not read
+- The other texts the searches listed: the gift card pages (their currency menu is already recorded from aria.yaml, Q7-SH-196), the other draft order and General settings steps of other runs, the plan selection pages, and journey-market steps 043 to 046, 073, 074 and 099.
+
+### Problems with the brief or the tools
+- The journey-order-lifecycle step texts were counted by a `grep -c` over all 32 files, beyond the 3 documents a search allows reading; only step 005 was read.

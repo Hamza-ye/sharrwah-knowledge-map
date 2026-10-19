@@ -18,6 +18,7 @@
 - Shopify POS sells in a location's local currency only when the store has a business entity with Shopify Payments set up for that country. Q7-SH-072
 - Under Managed Markets, customers pay in their own currency, and Shopify Payments is used for all Managed Markets transactions and payouts. Q7-SH-184 Q7-SH-182
 - An order records both `Order.currencyCode` and `Order.presentmentCurrencyCode`. In the admin, the order's **Paid** section shows the amount in the customer's currency (the presentment currency). An order whose payment was converted back to the store currency at checkout doesn't display as a multi-currency order. Q7-SH-124 Q7-SH-125 Q7-SH-105
+- In the saved HTML of a draft order page on store demo-fake-dev-store (30 September 2026), the **Markets** section held, for the market Yemen, **Currency** with "Market currency" Yemeni Rial (YER) and "Other currencies" from Czech Koruna (CZK Kč) to US Dollar (USD $), eight in all. Q7-SH-201
 - Under the Shopify Payments terms, cryptocurrency wallets can be a Payment Method, and settlement funds include cryptocurrency. Under the Cryptocurrency Credit Reward Program, some Credits may be paid in stablecoins such as USD Coin. Q7-SH-P0016 Q7-SH-P0014 Q7-SH-K1757
 - Between August 8, 2025 and December 31, 2026, businesses selling in Bulgaria in Euros must display prices in both Euros and Bulgarian Lev. Transactions still take place in one currency. Q7-SH-115 Q7-SH-116
 - In a run on store demo-fake-dev-store (30 September 2026), the European Union market's **Use local currencies** setting said "Let customers pay in their region’s currency", and that product pricing will include, when applicable, a 2% conversion rate fee paid by customers, with exchange rates determined at the time of purchases and refunds. On store capture-plus, the admin's `MarketsHomeCurrencyOptions` answer gave `foreignExchangeFee` "0.02" (2 October 2026). Q7-SH-198 Q7-SH-199 Q7-SH-193
@@ -29,6 +30,7 @@
 - With Multi-Currency Payouts, orders paid in a currency that has its own payout account are paid out to that account. Orders in any other currency are converted to the default account's currency. On plans without Multi-Currency Payouts, all payouts are converted to the domestic currency. Q7-SH-P0155 Q7-SH-062 Q7-SH-065 Q7-SH-057
 - Shopify publishes, per store location, the domestic payout currency and the additional payout currencies available, in a 39-row table running from Australia to the United States. A separate table gives each country's settlement currency. Q7-SH-018 Q7-SH-056 Q7-SH-P0068 Q7-SH-P0156
 - In the API, a payout bank account carries `ShopifyPaymentsBankAccount.currency`, and the Shopify Payments account carries `defaultCurrency`. Q7-SH-134 Q7-SH-133
+- In the saved HTML of a report page on store fake-demo-sharrwah (30 September 2026), text the markup hid described "Payout amount in payout currency" as the value of the payout in the currency the payout was issued in, and "Foreign exchange fees" as currency conversion fees paid when customers purchase in a different currency. Q7-SH-206 Q7-SH-207
 
 ## [2]
 
@@ -59,11 +61,13 @@
 
 ### Changing the store currency
 - Only the store owner can change the store currency, under **Settings > General > Store defaults**. A change after the first order requires checking **I understand the risk of changing the store currency**. A copied statement from the account-setup page says to contact Shopify Support for a change after the first sale. Q7-SH-008 Q7-SH-181 Q7-SH-K1936
+- In the saved HTML of the General settings page of store capture-plus (2 October 2026), the markup held a **Change store currency** heading with Save and Cancel, and no list of currencies. Q7-SH-205 Q7-SH-N03
 - Shopify lists the effects of a change. Product prices and discount rates take the new currency but keep the same amount. Shipping rates aren't updated, and gift cards in the old currency stop working. Reports, pending payments and later refunds may be affected. With a provider other than Shopify Payments, every market moves to the new currency. Managed Markets is deactivated. Q7-SH-006 Q7-SH-009
 - After the change, the admin doesn't show product or discount prices in the earlier currency. Q7-SH-007
 
 ### Changing market currencies, rates and drafts
 - Under each market's currency settings, the seller chooses **Dynamic** or **Manual** exchange rates. A single-country market's currency can be changed to any supported currency. Q7-SH-078 Q7-SH-079 Q7-SH-K1942
+- In the saved HTML of a market's currency customization on store demo-fake-dev-store (market Capture market, which includes Saudi Arabia, 30 September 2026), the markup held **Currency** with Saudi Riyal (SAR) under "Recommended", an "All currencies" list of 129 currencies in which Yemeni Rial (YER) is marked "Store currency", **Price rounding** options, and **Exchange rate (FX)** with Dynamic and Manual, beside "1 YER = 0.0024448788 SAR". Q7-SH-202 Q7-SH-203 Q7-SH-204
 - A draft order keeps the exchange rate from its creation, unless it is edited later, which reprices the whole order. The seller can override the currency on a draft order. Q7-SH-101 Q7-SH-102
 - Editing orders placed in international currencies is available only to some stores. Q7-SH-073
 - Shopify does not say, in what was read, what changing a market's currency does to orders already placed. For a market's business entity, a change affects only new orders. Q7-SH-N02 Q7-SH-119
