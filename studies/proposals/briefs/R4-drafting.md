@@ -190,6 +190,7 @@ The proposal follows these rules, and says which one each choice rests on:
 ### No inference
 
 - Say nothing about what a platform does beyond what its records show.
+- **An observed statement,** whose source is one of an observed repository's runs (`source_kinds.py` gives it as `observed`), shows what one store's pages showed, in what the run did, on one date. Say it as that, with the store and date its scope gives, never as what the platform does for every store or country.
 - Each proposal is marked as Sharrwah's proposed design, never as what a platform does.
 - Notes record what you read, what the records don't show, and problems: never inference.
 
