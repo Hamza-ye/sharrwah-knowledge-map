@@ -6,7 +6,8 @@ Written by `method/yemen_digest.py` from Stage 1's files in `studies/yemen-cases
 
 - **An axis** is a condition Stage 1 found in more than one state; **a constant**, one it found in a single state.
 - **Today** is each place's latest held state, as Stage 1's build takes it. Each part gives the state, its place after
-  "@", and the date it held at ("as of", from the condition's `held_at`). A part reads `unknown` where the latest
+  "@", and the date it held at ("as of", from the condition's `held_at`; a date after the capture of 10 October 2026
+  counts as that day, as the build counts it, and the condition's own `held_at` is given beside it). A part reads `unknown` where the latest
   state at that place ended, and `disputed` where sources of the same date disagree.
 - **Ids.** `YA-` an axis and `YK-` a constant, in `studies/yemen-cases/axes.tsv` and `constants.tsv`; `YQ-` a
   condition, in `conditions.tsv`; `YE-` a citation with its quote, in `citations.tsv`. This digest gives no `YE-`
@@ -160,7 +161,7 @@ Written by `method/yemen_digest.py` from Stage 1's files in `studies/yemen-cases
   - today: general licences 22A, 23A, 24A, 26A and 28A @ the United States' area (as of 2026-10-10)
   - other states recorded: 2, in axes.tsv
 - **YA-29** What financial institutions must do with funds of persons listed for freezing: freeze and report, under which list.
-  - today: freeze under the UN sanctions regime of resolution 2140 @ UN Security Council's area (as of 2026-11-14)
+  - today: freeze under the UN sanctions regime of resolution 2140 @ UN Security Council's area (as of 2026-10-10; Stage 1's held_at is 2026-11-14, after the capture)
   - today: freeze and report funds of a designated terrorist organisation @ the United States' area (as of 2025-03-04)
   - today: freeze at once and report to the Financial Information Unit @ the unified Republic's area (as of 2013-09-12)
 - **YA-30** What financial institutions must do with a suspicious transaction: the reporting duty.
@@ -1213,7 +1214,7 @@ Written by `method/yemen_digest.py` from Stage 1's files in `studies/yemen-cases
 - **YK-62** Average cost of sending money to Yemen: 3.74% average, at place not stated (as of 2024-06)
 - **YK-63** Currencies of transfers into Yemen through banks: Mostly US dollars, then Saudi riyals, euros and UAE dirhams, at place not stated (as of 2022)
 - **YK-64** Whether and how an exchange business must renew its licence: Renewal required, through the Sana'a central bank's e-portal by 30 April 2026, at Houthis' area (as of 2026-04-30)
-- **YK-65** Which exchange businesses are licensed to operate: 100 companies, 231 establishments and 111 remittance agents listed for 2026, at the internationally recognized government's area (as of 2026-10-10); place not stated (as of 2026-12-31)
+- **YK-65** Which exchange businesses are licensed to operate: 100 companies, 231 establishments and 111 remittance agents listed for 2026, at the internationally recognized government's area (as of 2026-10-10); place not stated (as of 2026-10-10; Stage 1's held_at is 2026-12-31, after the capture)
 - **YK-66** Whether customers of a failed exchange company are compensated from its licence guarantee: A guarantee required, but compensation not applied, at Houthi-controlled areas (as of 2025-12-15)
 - **YK-67** How many exchange businesses work without a licence: many unlicensed, at place not stated (as of 2022)
 - **YK-68** What an exchange company closed by the central bank must do to resume: Pay sums through back doors, at Houthi-controlled areas (as of 2025-12-15)

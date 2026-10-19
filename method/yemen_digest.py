@@ -15,7 +15,8 @@ as written: the digest is refused if they differ, since Stage 1's files would th
 import hashlib, os, re, sys
 from collections import OrderedDict, defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_yemen_cases import (ACROSS, full, ids, joined, pick, place_order, read_tsv, settle, uniq, when)
+from build_yemen_cases import (ACROSS, CAPTURED, full, ids, joined, later, pick, place_order, read_tsv, settle, uniq,
+                               when)
 
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STUDY = os.path.join(SKM, "studies", "yemen-cases")
@@ -25,7 +26,8 @@ HOW = """## How to read it
 
 - **An axis** is a condition Stage 1 found in more than one state; **a constant**, one it found in a single state.
 - **Today** is each place's latest held state, as Stage 1's build takes it. Each part gives the state, its place after
-  "@", and the date it held at ("as of", from the condition's `held_at`). A part reads `unknown` where the latest
+  "@", and the date it held at ("as of", from the condition's `held_at`; a date after the capture of 10 October 2026
+  counts as that day, as the build counts it, and the condition's own `held_at` is given beside it). A part reads `unknown` where the latest
   state at that place ended, and `disputed` where sources of the same date disagree.
 - **Ids.** `YA-` an axis and `YK-` a constant, in `studies/yemen-cases/axes.tsv` and `constants.tsv`; `YQ-` a
   condition, in `conditions.tsv`; `YE-` a citation with its quote, in `citations.tsv`. This digest gives no `YE-`
@@ -62,8 +64,20 @@ def parts_of(rs):
     return out
 
 
+def at(held):
+    """A held_at as Stage 1's build reads it: a date after the capture counts as the capture's date (`when`)."""
+    m = re.match(r"^(?:after\s+)?(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?", (held or "").strip(), re.I)
+    if not m or not when(held):
+        return held
+    w = tuple(int(x) for x in m.groups() if x)
+    if not later(w, CAPTURED):
+        return held
+    cap = "-".join(f"{x:02d}" if i else str(x) for i, x in enumerate(CAPTURED[:len(w)]))
+    return f"{cap}; Stage 1's held_at is {held}, after the capture"
+
+
 def dated(top):
-    ats = uniq(r["at"] for r in top if r["at"])
+    ats = uniq(at(r["at"]) for r in top if r["at"])
     return f" (as of {', '.join(ats)})" if ats else " (undated)"
 
 

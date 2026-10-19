@@ -1,0 +1,39 @@
+# Q3: notes on the draft proposal
+
+## What was read
+
+- **The brief,** `studies/proposals/briefs/R4-drafting.md`, whole.
+- **The question:** Q3's section of `studies/proposals/questions-for-agents.md` (lines 22 to 26), four sentences, [1] to [4].
+- **Depth:** Q3's five rows of `studies/proposals/areas/depth.tsv`: Shopify, Salla and Zid in depth; WooCommerce and BigCommerce checks.
+- **The five accounts,** in depth.tsv's order: `records/Q3/shopify/account.md`, `salla/account.md`, `zid/account.md`, then the checks `woocommerce/account.md` and `bigcommerce/account.md`.
+- **From each platform's `notes.md`,** only the lists named: Shopify's, Salla's, Zid's and WooCommerce's "Copies" sections (no copy found wrong or out of date on any platform); WooCommerce's "Account points not checked" and BigCommerce's "Account points" (BigCommerce left none unchecked). Shopify's and Salla's notes have no list of account points not checked; I opened the "Open items" sections of their re-checks only far enough to see that they list not-found rows and gaps, not account points, and read no further.
+- **Records, by id,** with `python3 -I method/record_ids.py`: every id of its own platform that each account cites, which is Shopify 158, Salla 136, Zid 154, WooCommerce 137 and BigCommerce 96 ids. No other platform record was read.
+- **Source kinds,** with `python3 -I method/source_kinds.py`, for the source forms the draft compares: Shopify's help-centre structure (stated), its runs' admin answers (observed), shopify.com/legal (official page); Salla's help articles (stated), its terms (official page), its KYC schema, dashboard translations and features, and runs (observed); help.zid.sa (stated) and zid.sa/ar/legal (official page); woocommerce.com documents (stated), wordpress.com/tos (official page) and the WooCommerce release (shipped); support.bigcommerce.com and docs.bigcommerce.com (stated), commerce.com/terms and the pricing page's captured copy (official page), bigcommerce.com/payments (stated).
+- **The areas list:** in `studies/proposals/areas/areas.md`, only the 18 areas whose questions include Q3: A-01 to A-04, A-11 to A-22, A-31 and A-34. Not the section on which platforms each question reads in depth.
+- **Yemen's evidence:** `studies/proposals/yemen-digest.md`, whole, once, after sections 1 to 5 and 7 were written. Then, by id: YA-27, YA-29, YA-48, YA-62, YA-110, YA-111, YA-150, YA-210, YK-12, YK-26, YK-28, YK-36, YK-54, YK-74, YK-120, YK-124, YK-151, YK-153, YK-200, YK-209, YK-210, YK-212, YK-213, YK-239, YK-240, YK-241, YK-247, YK-273, YK-292, YK-332, YK-343, YK-344, YK-469, YK-514. Of these the draft cites YA-27, YA-62, YA-111, YA-150, YK-36, YK-74, YK-200, YK-209, YK-247 and YK-344.
+- **Not read:** anything else, including the platforms' own pages, other questions' records, `copied-view.tsv` (its search is for Q5 and Q7), `PLAN.md`, `STATE.md`, `founder-messages/`, `founder-decisions.tsv`, `questions.md`, `register/` and `studies/subjects/`.
+
+## What the records don't show
+
+- **How long Salla's period (المهلة) is** before an unverified store's payments and settlement are suspended, and when it starts (Q3-SA-N01). The **Escalation** schedule needs it for a Salla-like place. A question to Salla merchant support would show it.
+- **A full list of products needing a licence,** on Salla or Zid, and when Shopify checks licences and confirmations beyond asking for documents (Q3-SA-N02, Q3-ZD-N04, Q3-SH-N02). The **Product rule** needs it. The platforms' support, or each place's legal advice, would show it.
+- **A verification deadline and its effects outside Europe and the UK** on Shopify (Q3-SH-N01). It would show whether an **Escalation** schedule is ever set for a whole platform rather than per place. Shopify's other countries' requirements pages would show it.
+- **How Zid records an activation's or verification's status in its data,** and how BigCommerce does (Q3-BC-N13 for BigCommerce; for Zid, no record and no not-found row). The **Capability status** draws on Shopify, Salla and WooCommerce only. A capture of Zid's dashboard answers for its payments page while an activation is pending (Q3-ZD-N02's route) would show Zid's.
+- **What BigCommerce Payments' KYC asks for, and who sets it** (Q3-BC-N01, Q3-BC-N15). A capture of BigCommerce Payments' onboarding in a store's control panel would show it.
+- **Who holds Salla Payments' funds, and with whom the payment services contract (عقد خدمات الدفع) is signed** (Q3-SA-H0002, Q3-SA-G0177). It bears on who checks a seller in Salla's model (section 5's first item). Saving the contract from the verification flow, or asking Salla, would show it.
+- **For Yemen:** whether a store that sells only online needs a commercial register entry or a ministry's approval before it opens to buyers; the ministry's rule on registering or approving online stores would show it. And whether Yemen has an identity service a platform can call to check a seller online; a source naming one, and who may use it, would show it.
+
+## Where the draft cites past the guide's counts
+
+- **Platforms' statements, copies and citations: 121 distinct ids, against about 40.** Section 1 compares five platforms on four sentences, and gives each platform's claim its own record, one id per claim (two where a platform's records disagree, as BigCommerce's on plans, or where an observed record confirms a stated one). Sections 2 to 7 reuse section 1's ids, adding about a dozen where an element rests on a record section 1 doesn't need: Q3-SA-085 (registration place), Q3-SA-072 (a per-country set), Q3-ZD-013 (validity), Q3-SH-083 (lists change), Q3-SA-057 (declaration), Q3-SH-070 (a restriction lifting), Q3-SA-001 (the alternative not taken), Q3-WC-K0714 (agreement), Q3-ZD-039 (a government record), and Q3-SA-005, Q3-SH-K2268, Q3-BC-K0430 and Q3-SH-015 for company decisions.
+- **Not-found rows, copied gaps and pilot absences: 7,** at the guide.
+- **Yemen facts: 11, against about 8.** Each bears on a different element of sections 2 and 3: the registration place (YA-150 at two places, which is the point: they differ), the commercial register requirement (YK-209), an online store's approval (YK-200), identity documents (YK-74), a Yemeni provider's own requirements (YA-111), the unavailability of the partner WooPayments' check uses (YA-62), a product rule at one area (YK-247), a sanctions designation (YA-27), electronic acceptance (YK-344) and IBAN for the payout account (YK-36).
+- **"Yemen's evidence doesn't show": 2,** at the guide.
+
+## Problems with the brief or the tools
+
+- **Working copies.** The harness refused a working file named `.md` in the scratch directory as a report file, so the per-sentence working copy is `analysis.txt` there.
+- **`record_ids.py` on long axes** prints only the first citations and then "... and N more citations" (YA-62 shows 59 more). The quotes behind YA-62's rows for Stripe, WooPayments and Zid Pay Kuwait were therefore not readable with the tool; the draft rests on the digest's state and date for Stripe's row.
+- **The checker and Yemen ids.** It reads every mention of a Yemen id as a fact needing its state and date, and counts it again; a bare id repeated at the end of a point is flagged. The draft writes each Yemen fact once per point, in full, at the point's end.
+- **WooCommerce's policy pages.** The brief's open question, whether they count among WooCommerce's terms, is set under section 8 (Q5 and Q7). The draft treats them as help pages (stated), as `source_kinds.py` gives them, and never calls them terms.
+- **A digest date after today.** YA-29 gives its state at the UN Security Council's area as of 2026-11-14, after today (19 October 2026); its quotes are dated 2025-11-14 and say the measures were renewed "until 14 November 2026". The draft doesn't use YA-29.

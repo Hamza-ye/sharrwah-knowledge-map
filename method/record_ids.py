@@ -1,6 +1,6 @@
 """Look up the ids a proposal cites (steps R4 and R5), with the text each stands for.
 
-Usage: python3 -I method/record_ids.py ID [ID ...]
+Usage: python3 -I method/record_ids.py [--all] ID [ID ...]
 
 An id is one of:
 - a record's, in studies/proposals/records/<question>/<platform>/: a statement (Q5-SA-001), a citation
@@ -13,7 +13,7 @@ An id is one of:
   evidence of what a platform does.
 
 For each id it prints the file it is in and its row, then the citations it rests on, each with its source,
-locator, date and quote. `texts(question)` gives, for the drafts' checks, each id's own text and its quotes.
+locator, date and quote: the first 12, or every one with --all. `texts(question)` gives, for the drafts' checks, each id's own text and its quotes.
 """
 import csv, html, os, re, sys
 from functools import lru_cache
@@ -135,7 +135,7 @@ def text_of(i):
     return norm(" ".join([own] + [c.get("quote", "") for c in rests]))
 
 
-def show(i):
+def show(i, cap=12):
     hit = lookup(i)
     if not hit:
         return f"{i}: not found"
@@ -144,18 +144,20 @@ def show(i):
     for k, v in row.items():
         if v and k not in ("copy_id", "source_file", "source_line"):
             lines.append(f"  {k}: {v}")
-    for c in rests[:12]:
+    for c in rests[:cap]:
         lines.append(f"  cites {c.get('cite_id')}: {c.get('source')} | {c.get('locator')} | "
                      f"{c.get('source_date')} | {c.get('quote')}")
-    if len(rests) > 12:
-        lines.append(f"  ... and {len(rests) - 12} more citations")
+    if cap is not None and len(rests) > cap:
+        lines.append(f"  ... and {len(rests) - cap} more citations (--all prints every one)")
     return "\n".join(lines)
 
 
 def main(argv):
+    every = "--all" in argv
+    argv = [a for a in argv if a != "--all"]
     if not argv:
         sys.exit(__doc__)
-    print("\n\n".join(show(i) for i in argv))
+    print("\n\n".join(show(i, None if every else 12) for i in argv))
 
 
 if __name__ == "__main__":

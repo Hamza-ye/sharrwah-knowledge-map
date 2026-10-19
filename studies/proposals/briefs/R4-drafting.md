@@ -18,7 +18,7 @@ You are one agent with one task: the draft proposal for one question. The messag
 3. **The five accounts:** `studies/proposals/records/<question>/<platform>/account.md`. Read the in-depth ones first, in `depth.tsv`'s order, then the checks.
    - Each account says what its platform shows for the question, in its own terms, and each point ends with the ids it rests on.
    - A check's points carry labels. "the same" and "differs" name the in-depth points they match, and the basis; "goes beyond" matches none; "not in what was read" is an in-depth point the check's reading didn't show.
-4. **The records behind the accounts,** by id: `python3 -I method/record_ids.py <id> [<id> ...]` prints each id's row and the quotes it rests on, with each source and its date. Look up what your proposal will rest on, and wherever an account point is unclear.
+4. **The records behind the accounts,** by id: `python3 -I method/record_ids.py <id> [<id> ...]` prints each id's row and the quotes it rests on, with each source and its date: the first 12 quotes, or every one with `--all`. Look up what your proposal will rest on, and wherever an account point is unclear.
    - From each platform's `notes.md`, read only its lists of account points not checked, and of copies found wrong or out of date.
    - For Q5 and Q7, to find a pilot statement no account cites, search your question's `copied-view.tsv` files with `grep -F` for a term, and read only the lines it prints.
 5. **The areas list:** in `studies/proposals/areas/areas.md`, the areas whose questions include yours (for Q8, every area). They show what each platform files where, in its own names.

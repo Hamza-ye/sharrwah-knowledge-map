@@ -407,7 +407,7 @@ ARABIC_LETTER = re.compile(r"[\u0621-\u064a\u066e-\u06d3\u06fa-\u06ff\u0750-\u07
 NOT_SHOWN = re.compile(r"not in what was read|didn.t show|did not show|not shown|wasn.t shown|was not shown", re.I)
 DOESNT_SHOW = re.compile(r"doesn.t show|does not show", re.I)
 FORBIDDEN = re.compile(r"\bS01-(?!VP-)[A-Z0-9]+(?:-[A-Z0-9]+)*\b|(?:studies/subjects/|register/|founder-messages/)\S*")
-YEMEN_FACT = re.compile(r"\b(Y[AK]-\d{2,3})\b(?:\s*\(([^)]*)\))?")
+YEMEN_FACT = re.compile(r"\b(Y[AK]-\d{2,3})\b(?:\s*\(((?:[^()]|\([^()]*\))*)\))?")   # a place may hold its own brackets
 DATE = re.compile(r"\b(?:19|20)\d\d(?:-\d\d){0,2}\b")
 
 
