@@ -104,6 +104,7 @@ Don't answer the question in your own words, compare your platform with any othe
 5. **Lists.** Record a list in full, as one statement, such as the countries where something is offered.
    - The statement is the source's text from the list's first item to its last, on one line, keeping the source's own markers, such as `- `.
    - Where the items aren't consecutive in the source, or the list is a table, record each run of consecutive items, or each row, as its own statement, so that each is verbatim in its source.
+   - A table of more than 20 rows: record every row only where an absence rests on it (rule 6). Otherwise record the rows that bear on your question, and list in `notes.md` what you left.
    - Cite each item, or each run of items. A quote may run over consecutive items of one list.
    - Cite the words that present the list as complete, if there are any.
    - A statement may run past 300 characters; only quotes are capped.
@@ -129,7 +130,7 @@ Don't answer the question in your own words, compare your platform with any othe
    - Close a copied gap only where it bears on a sentence of your question, from pages you read for that sentence. The statement that closes it names the gap's id in its `note`. Don't read for a gap otherwise.
 10. **Credentials.** Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. Never skip, withhold or mask a file because of them. They come from synthetic environments the founder rotates.
 11. **No inference, anywhere.** Notes record what was read, what couldn't be read, and problems. They never record inference.
-12. **Keep it short.** Once you pass 120 new statements, stop reading. Write the account from what is recorded, list in `notes.md` what you didn't read, run the checker, and report.
+12. **Keep it short.** Once you pass 120 new statements, stop reading. The rows of one table, or the runs of one list, count as one statement toward this cap. Write the account from what is recorded, list in `notes.md` what you didn't read, run the checker, and report.
 
 ## Quotes and citations
 

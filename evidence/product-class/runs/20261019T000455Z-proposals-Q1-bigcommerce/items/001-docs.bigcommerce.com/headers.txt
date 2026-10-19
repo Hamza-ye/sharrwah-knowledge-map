@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 19 Oct 2026 00:04:56 GMT
+content-type: text/markdown; charset=utf-8
+age: 2225
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-CMH
+x-vercel-id: cle1::rckvk-1792368296276-99ab66f5ff9a
+content-encoding: br
+etag: W/"f88836d788ae27be2cc76368fc69b2c3"
+link: </developer/docs/admin/multi-storefront/msf-international-enhancements/overview.md>; rel="alternate"; type="text/markdown", </developer/docs/admin/multi-storefront/msf-international-enhancements/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qkC5I%2FfCPm5xuO3HXegRnax9PjVpvvfVNep9s%2FxuMQdsPvXxooKeyKii2iZ8V%2B73nU3%2F9VcbGDXU0RBYno%2FPS5%2BRPl%2FsQGvAhThmujT3icGt7hyMdQ8uX6YQyjQcBmjKDntM3va3Hh5cDQ%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=I42ypQ4UFzVpzuOT_qdcvXCOdsIwxCfFDhvWuJ7EE2I-1792368296.2484856-1.0.1.1-WrC1TyRQ3VfLuGZG8KUs7p8DZzfB2Yt3FTLhwq4Cjwwr5oZFqXOf58NdvFQ033BCfvCEdD0nQ4k0vbAjeY1MDSgQsXaNBkNfW.b94WLtNaTX7yZ_wENZ0MXy8cBAm91L; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 19 Oct 2026 00:34:56 GMT
+bc-ray: 1
+cf-ray: a4cb873b8842d46e-IAD
+alt-svc: h3=":443"; ma=86400
+

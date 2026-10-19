@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/msf-international-enhancements/overview.md",
+ "dir": "items/001-docs.bigcommerce.com",
+ "fetched_at": "2026-10-19T00:04:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/msf-international-enhancements/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2602,
+ "cited_in": [
+  "studies/proposals/records/Q1/bigcommerce/citations.tsv"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "6ecddb2a3961af508402ed5f1e60cbc62fb9e5f78c9bdd033bb873058ee72799",
+ "raw_ext": "txt"
+}

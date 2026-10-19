@@ -82,7 +82,7 @@ class Sources:
                 continue
             with open(mf, encoding="utf-8", newline="") as f:
                 for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
-                    self.manifest.setdefault(r["url"].split("#")[0], (cap, r))
+                    self.manifest.setdefault(r["url"].split("#")[0], []).append((cap, r))   # every capture of it
 
     def local_texts(self, source, locator=""):
         m = re.match(r"^([a-z0-9.-]+)(?:@([0-9a-f]{6,40}))?:(.+)$", source)
@@ -140,26 +140,31 @@ class Sources:
         return [text, html_text(text), warc_html_text(text)], ""
 
     def web_texts(self, url):
+        """The texts of every capture of the address: a quote is found if any capture holds it, since an earlier
+        capture may hold an empty shell where a later one holds the page."""
         key = url.split("#")[0]
         if key not in self.manifest:
             return None, "not captured"
-        cap, r = self.manifest[key]
-        d = os.path.join(cap, r["dir"])
-        texts = []
-        for name in sorted(os.listdir(d)):  # raw.*, raw-browser.*, rendered.html, text.txt
-            fp = os.path.join(d, name)
-            if not os.path.isfile(fp) or not name.startswith(("raw", "rendered", "text")):
+        texts, results = [], []
+        for cap, r in self.manifest[key]:
+            results.append(r.get("result", ""))
+            d = os.path.join(cap, r["dir"])
+            if not os.path.isdir(d):
                 continue
-            if name.endswith((".pdf", ".bin", ".png", ".jpg", ".jpeg", ".gif", ".webp")):
-                continue
-            raw = open(fp, encoding="utf-8", errors="replace").read()
-            texts.append(raw)
-            if name.endswith(".html"):
-                texts.append(html_text(raw))
-            if name.endswith(".json"):
-                texts.append(json_unescaped(raw))
+            for name in sorted(os.listdir(d)):  # raw.*, raw-browser.*, rendered.html, text.txt
+                fp = os.path.join(d, name)
+                if not os.path.isfile(fp) or not name.startswith(("raw", "rendered", "text")):
+                    continue
+                if name.endswith((".pdf", ".bin", ".png", ".jpg", ".jpeg", ".gif", ".webp")):
+                    continue
+                raw = open(fp, encoding="utf-8", errors="replace").read()
+                texts.append(raw)
+                if name.endswith(".html"):
+                    texts.append(html_text(raw))
+                if name.endswith(".json"):
+                    texts.append(json_unescaped(raw))
         if not texts:
-            return None, f"captured as '{r['result']}' with no readable text"
+            return None, f"captured as '{'; '.join(results)}' with no readable text"
         return texts, ""
 
     def texts(self, source, locator=""):

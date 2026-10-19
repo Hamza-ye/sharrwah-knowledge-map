@@ -1,0 +1,29 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 19 Oct 2026 00:04:56 GMT
+content-type: text/html; charset=utf-8
+age: 333
+cache-control: public, max-age=0, must-revalidate
+content-encoding: br
+content-security-policy: frame-ancestors 'self' app.makeswift.com
+document-policy: js-profiling
+etag: W/"besogau63u16p5g"
+referrer-policy: no-referrer-when-downgrade
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-matched-path: /en-GB/[[...path]]
+x-powered-by: Next.js
+x-vercel-cache: HIT
+x-vercel-id: iad1::iad1::whrq6-1792368296408-870534dc3e27
+cf-cache-status: DYNAMIC
+vary: accept-encoding
+set-cookie: c_consent=%7B%22anonymousId%22%3A%22dc725049-6c9a-4733-a60c-ba5826a311ca%22%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Tue, 19 Oct 2027 00:04:56 GMT; Domain=bigcommerce.co.uk; SameSite=lax
+set-cookie: originUrl=www.bigcommerce.co.uk; Path=/; Expires=Tue, 19 Oct 2027 00:04:56 GMT; Domain=bigcommerce.co.uk; SameSite=lax
+set-cookie: c_user=%7B%22anonymousId%22%3A%22dc725049-6c9a-4733-a60c-ba5826a311ca%22%2C%22traits%22%3A%7B%7D%7D; Path=/; Expires=Tue, 19 Oct 2027 00:04:56 GMT; Domain=bigcommerce.co.uk; SameSite=lax
+set-cookie: ajs_anonymous_id=dc725049-6c9a-4733-a60c-ba5826a311ca; Path=/; Expires=Tue, 19 Oct 2027 00:04:56 GMT; Domain=bigcommerce.co.uk; SameSite=lax
+set-cookie: segmentAnonId=dc725049-6c9a-4733-a60c-ba5826a311ca; Path=/; Expires=Tue, 19 Oct 2027 00:04:56 GMT; Domain=bigcommerce.co.uk; SameSite=lax
+set-cookie: __cf_bm=Ct8tUBec4JcgM6KG7FJx89fg0Jm_KwNJJCLrPN_VlE0-1792368296.3886805-1.0.1.1-w70uwtZnc.pqOTIMhis1GANWezYXC2rswXWiW8shqwV6R_3H03oXZ.hcPFmmSC4fvD4qwK8ZYbf1gIUuGixhLYN9EIxiJ8wY7SIiGaSFunlRdA1u6ptrm6D6a9vcY87w; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.co.uk; Expires=Mon, 19 Oct 2026 00:34:56 GMT
+cf-ray: a4cb873c692e9acd-IAD
+alt-svc: h3=":443"; ma=86400
+

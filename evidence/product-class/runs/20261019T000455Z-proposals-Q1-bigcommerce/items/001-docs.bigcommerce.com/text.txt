@@ -1,0 +1,110 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# International Enhancements for Multi-Storefront
+
+> **Note**
+>
+> These features are currently available for Performance plan stores and Partner Sandboxes. If the feature is not working as expected, please contact technical support, as the feature likely needs to be enabled for the individual store.
+> If you are interested in upgrading to the Performance plan, [contact our sales team](https://bigcommerce.com/contact-sales/).
+
+*International Enhancements for Multi-Storefront* allow merchants to deliver localized experiences to fit different shopper needs. You can express product details differently across cultures and countries.
+For example, when selling products internationally, you can add information for products in various languages.
+Shoppers can then see key product details in the language of their choice throughout the complete checkout and post-order experience for a personalized shopping experience.
+This personalized shopping experience helps shoppers find and learn information about a product before purchasing.
+
+The following pages provide sample queries:
+
+* [Basic product information](/developer/docs/admin/multi-storefront/msf-international-enhancements/product-basic-information)
+* [Product SEO information](/developer/docs/admin/multi-storefront/msf-international-enhancements/product-seo-information)
+* [Product variant options](/developer/docs/admin/multi-storefront/msf-international-enhancements/product-variant-options)
+* [Product modifier options](/developer/docs/admin/multi-storefront/msf-international-enhancements/product-modifier-options)
+* [Product URL](/developer/docs/admin/multi-storefront/msf-international-enhancements/product-url)
+* [Additional product attributes](/developer/docs/admin/multi-storefront/msf-international-enhancements/product-attributes)
+* [Product custom fields](/developer/docs/admin/multi-storefront/msf-international-enhancements/product-custom-fields)
+* [Product images (beta)](/developer/docs/admin/multi-storefront/msf-international-enhancements/product-images)
+
+You can create webhooks that trigger for the following events:
+
+* [Product updated](/developer/docs/integrations/webhooks/event-reference#products)
+* [Product or shared option updated](/developer/docs/integrations/webhooks/event-reference#options)
+* [Product or shared modifier updated](/developer/docs/integrations/webhooks/event-reference#modifiers)
+
+## Use cases
+
+To use these features, set product attributes to locales within storefront channels. This update overrides global product attributes.
+Product attributes you can customize include the product name, description, variant options, modifier options, and SEO settings.
+
+This allows you to perform the following:
+
+* Customize product name and description for culture or language
+* Optimize SEO or display product options and variations based on country
+* Create additional brands to position the same product to multiple market segments and shopper personas
+* Tailor product content for different countries that have different compliance regulations
+* Display relevant seasonal or featured products
+* Enable two-way syncing of listings data to catalog between channels
+
+## GraphQL schema
+
+The catalog features in *International Enhancements for MSF* are part of the GraphQL Admin API. You can use this GraphQL management API to set and query catalog data for a locale *within a channel*.
+
+**Request URL:**
+
+`https://api.bigcommerce.com/stores/{{STORE_HASH}}/graphql`
+
+**Path Parameters:**
+
+| Name         | Type   | Description           | Required |
+| :----------- | :----- | :-------------------- | :------- |
+| `STORE_HASH` | string | Unique ID for a store | Yes      |
+
+For a full schema, see the [GraphQL Admin API reference](/developer/api-reference/graphql/account/overview).
+
+### Input fields
+
+Setting or removing information requires that you specify ID fields in the input. These ID fields contain global IDs that you can retrieve from REST API endpoints.
+
+For example, the `productId` field contains the global product ID. Retrieve the global product ID from the response body of the [Get all products](/developer/api-reference/rest/admin/catalog/products/get-products) endpoint. A product with a global ID of `111` has a `productId` of `"bc/store/product/111"`.
+
+The following table describes the ID fields that you can use in inputs for mutations:
+
+| Field in Input  | Description                   | Global ID                                                                                                                                             | Example                                                                                                                        |
+| :-------------- | :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| `productId`     | Product ID                    | [Get all products](/developer/api-reference/rest/admin/catalog/products/get-products)                                                                 | `"bc/store/product/111"`                                                                                                       |
+| `channelId`     | Channel ID                    | [Get all channels](/developer/api-reference/rest/admin/management/channels/get-channels)                                                              | `"bc/store/channel/2"`                                                                                                         |
+| `optionId`      | Variant option ID             | [Get all product variant options](/developer/api-reference/rest/admin/catalog/product-variant-options/get-product-variant-options)                    | `"bc/store/productOption/108"`                                                                                                 |
+|                 | Shared variant option ID      | Navigate to **Products  >Product Options  >*OptionName*** in the control panel.  Retrieve the global ID from the URL.                                 | `"bc/store/sharedProductOption/1"`                                                                                             |
+| `modifierId`    | Modifier ID                   | [Get all product modifiers](/developer/api-reference/rest/admin/catalog/product-modifiers/get-product-modifiers)                                      | `"bc/store/productModifier/121"`                                                                                               |
+|                 | Shared modifier ID            | Navigate to **Products  >Product Options  >Shared Modifiers  >*ModifierName***  in the control panel.   Retrieve the global ID from the URL.          | `"bc/store/sharedProductModifier/2"`                                                                                           |
+| `valueId`       | Variant option value ID       | [Get all product variant option values](/developer/api-reference/rest/admin/catalog/product-variant-options/values/get-product-variant-option-values) | Product variant options: `"bc/store/productOptionValue/68"`  Shared variant options: `"bc/store/sharedProductOptionValue/123"` |
+|                 | Modifier value ID             | [Get all modifier values](/developer/api-reference/rest/admin/catalog/product-modifiers/values/get-product-modifier-values)                           | Product modifiers: `"bc/store/productModifierValue/107"`  Shared modifiers: `"bc/store/sharedProductModifierValue/107"`        |
+| `customFieldId` | ID for a product custom field | [Get product custom fields](/developer/api-reference/rest/admin/catalog/products/custom-fields/get-product-custom-fields)                             | `"bc/store/productCustomField/1"`                                                                                              |
+| `imageId`       | Image ID.                     | [Get all product images](/developer/api-reference/rest/admin/catalog/products/images/get-product-images)                                              | `"bc/store/productImage/1"`                                                                                                    |
+
+## Authentication
+
+The GraphQL Admin API works with [store-level API accounts](/developer/docs/overview/api-fundamentals/api-accounts#store-level-api-accounts).
+
+### Authentication header
+
+Your requests should have the following for authentication.
+
+| Header         | Argument       | Description                                                                                                                                                          |
+| :------------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `X-Auth-Token` | `access_token` | For more about API accounts that generate `access_token`s, see [API Accounts and OAuth Scopes](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts). |
+
+For example requests and more information about authenticating BigCommerce APIs, see [Authentication and Example Requests](/developer/docs/overview/api-fundamentals/api-accounts#x-auth-token-header-example-requests).
+
+### OAuth scopes
+
+The API account should have the following OAuth scopes.
+
+| UI Name  | Permission | Parameter                     |
+| :------- | :--------- | :---------------------------- |
+| Products | modify     | `store_v2_products`           |
+| Products | read-only  | `store_v2_products_read_only` |
+
+For more about BigCommerce OAuth scopes, see [API Accounts and OAuth Scopes](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes).
