@@ -8,6 +8,9 @@ What each file is, is in each repository's own guide, docs/READING.md. The docum
 - what each step's page showed: `steps/NNN.aria.yaml`, `NNN.text.txt`, an Android screen's `NNN.uia.xml`, and each
   frame's, one document per step, titled from the run's `actions.jsonl`; a terminal run's `transcript.plain.txt`;
   the files a step downloaded;
+- observed-sh's text of the saved step and frame HTML that has no `text.txt` (`derived/step-text-from-html/<run>/
+  NNN.html.txt` and `NNN.frame-K.html.txt`), one document per step, titled from the run's `actions.jsonl`. It is the
+  saved markup's text, not what the page showed: its guide says what it holds;
 - the requests a run's pages sent: observed-sh's `guard.jsonl` and observed-sa's `writes.jsonl`, one line each;
 - the indexes and tables built from the runs: observed-sh's `index/operations.jsonl` and `derived/`, observed-sa's
   `index/rest-endpoints.tsv` and `derived/`, one line each where the file has lines;
@@ -28,13 +31,14 @@ SEP = "\x1f"
 LINES = (".jsonl", ".tsv", ".csv")
 TEXTUAL = re.compile(r"\.(json|jsonl|tsv|csv|txt|md|html|xml|yaml|yml)$")
 STEP = re.compile(r"^raw/runs/([^/]+)/steps/(\d+)\.(?:(frame-\d+)\.)?(aria\.yaml|text\.txt|uia\.xml)$")
+HTML_TEXT = re.compile(r"^derived/step-text-from-html/([^/]+)/(\d+)\.(?:(frame-\d+)\.)?html\.txt$")
 
 
 def corpus_names(repo):
     """The corpora a repository's runs make, in the order a search lists them."""
     what = "answers" if repo == "observed-sh" else "saved responses"
     return [f"{repo}: {what}", f"{repo}: run steps", f"{repo}: run requests", f"{repo}: indexes and derived tables",
-            f"{repo}: structures"]
+            f"{repo}: structures", f"{repo}: step text from saved HTML"]
 
 
 def git(root, *args, **kw):
@@ -155,12 +159,26 @@ def build(repo, fold):
         files = ", ".join(n.rsplit("/", 1)[1] for n in names)
         docs.append([corp[1], f"{repo}@{commit}:raw/runs/{r}/steps/ ({files})", a.get("url") or a.get("target") or "",
                      [title], names, "text"])
+    # the text of saved step HTML that has no text.txt (observed-sh), one document per step, titled the same way
+    html_steps = defaultdict(list)
+    for n in tree:
+        m = HTML_TEXT.match(n)
+        if m:
+            html_steps[(m.group(1), m.group(2))].append(n)
+    for (r, nnn), names in sorted(html_steps.items()):
+        names.sort(key=lambda n: (".frame-" in n, n))
+        a = acts.get((r, int(nnn)), {})
+        title = f"run {r}, step {nnn}: {a.get('title') or ''} | {a.get('intent') or ''}"
+        files = ", ".join(n.rsplit("/", 1)[1] for n in names)
+        docs.append([corp[5], f"{repo}@{commit}:derived/step-text-from-html/{r}/ ({files})",
+                     a.get("url") or a.get("target") or "", [title], names, "text"])
     for n in sorted(tree):
         if re.match(r"^raw/runs/[^/]+/(transcript\.plain\.txt|downloads/.+\.(csv|txt))$", n):
             docs.append([corp[1], f"{repo}@{commit}:{n}", "", [f"run {n.split('/')[2]}: {n.split('/', 3)[3]}"], [n], "text"])
     # line files: requests sent, indexes, derived tables, structures' items
     line_files = [n for n in sorted(tree) if re.match(r"^raw/runs/[^/]+/(guard|writes)\.jsonl$", n)]
-    index_files = [n for n in sorted(tree) if (n.startswith("derived/") and TEXTUAL.search(n))
+    index_files = [n for n in sorted(tree) if (n.startswith("derived/") and TEXTUAL.search(n)
+                                               and not n.startswith("derived/step-text-from-html/"))
                    or n in ("index/operations.jsonl", "index/rest-endpoints.tsv")]
     struct = "structures/salla/" if repo == "observed-sa" else "structures/shopify/"
     struct_files = [n for n in sorted(tree) if n.startswith(struct) and TEXTUAL.search(n)
