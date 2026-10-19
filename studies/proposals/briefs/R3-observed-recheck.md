@@ -1,6 +1,6 @@
 # Brief: one question's records on Shopify or Salla, re-checked against the observed runs (step R3, re-check)
 
-**Status: written 19 October 2026, for the founder's decision of that day. Its first run tests it before the others start.**
+**Status: written 19 October 2026, for the founder's decision of that day; revised after its first two runs (Q6 on Shopify and on Salla).**
 
 You are one agent with one task: one question, on Shopify or Salla. The message that started you names both, and a scratch directory. Your folder is `studies/proposals/records/<question>/<platform>/`, which a recording run filled. You run at `medium` effort.
 
@@ -65,7 +65,7 @@ A run document is listed by its own place, never merged with another store's or 
      - **a copied gap:** the closing statement's `note` names the gap's id. Copies are never edited.
    - **If it shows a part,** record that part, and narrow the row's `what_is_missing` to what is still missing.
    - **If it shows nothing,** add your search to the row's `searched`, and the run documents you opened to its `read`, with their commit.
-   - **A row routed to the founder or to either** (`who_can`): if a run shows the page or setting it asks for, read it there. Then the row closes or narrows, and any row that stays is routed as what is still missing.
+   - **A row routed to the founder or to either** (`who_can`): if a run shows the page or setting it asks for, read it there. Then the row closes or narrows, and any row that stays is routed as what is still missing. `python3 -I method/held_index.py <url>` now also lists the runs' steps whose page ended at an address, and the checker reports a route to the founder whose address a step holds.
 4. **Check each row's wording.** For every not-found row that stays, every name, label, path or phrase it gives as the platform's must be in what its `read` names or in your folder's records:
    - keep a detail only if one of them shows it, and word it as they do;
    - a detail nothing read shows comes out of the row;
@@ -87,7 +87,9 @@ These add to `R3-recording.md`'s rules 1 to 12, which hold.
 - **A statement from a run** is the platform's own data or words as the run holds them: the keys and values of an answer or saved response, or a step's page text. Copy it verbatim from the file, as `git show` prints it. Keep its keys, so that each value says what it is, such as `"eligible":false`.
   - Its `identifier` is the operation or endpoint, and the keys that lead to the value, as the answer names them, such as `ShopifyPaymentsData: shopifyPaymentsAccount.eligible`.
   - A list in an answer, such as the providers a page offered, is recorded in full, as one statement (rule 5).
+  - A list of more than 20 items, such as countries: record it in full only where an absence rests on it. Otherwise record the items that bear on your question, such as Yemen or the places your records name, each with the list's own key or heading, and say in `notes.md` how many items the list holds.
 - **Its scope** is the store and the date the run observed it: `store <the store as the run names it>, observed <date>`. Where an answer or a page of the same store states its country, plan or currency, add it in the platform's words, and cite that file too.
+  - The run names its store in `answers.jsonl` (observed-sh) or `run.json`'s `extra.store` (observed-sa). Where it names none, or where an answer's own address or variables name another store, name the store as a saved answer or page of the same run states it (its handle, name or id), cite that file, and say so in `notes.md`. If none states it, write `store not named by the run`.
 - **An observation shows what one store's pages showed, in what the run did, on that date.** Record it as that, never as what the platform does for every store or country.
   - A run that didn't show something shows nothing about it.
   - "Absent" still needs a complete list whose own words present it as the full set (rule 6).

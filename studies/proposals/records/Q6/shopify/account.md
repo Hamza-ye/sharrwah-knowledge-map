@@ -15,6 +15,7 @@
 - The free trial steps include "3. Specify your business location." Q6-SH-007
 - The sign-up page has a combobox labelled "I'm located in:". The captured page lists 233 options, with Yemen marked [selected]. Q6-SH-K2662; Q6-SH-010
 - A store was created from that sign-up with `country=YE`. `storeCreate` returned no `userErrors`, and the store's billing address has `"countryCode":"YE"`. For the organization of another store, ctcbwa-r1, the admin's legal entity record holds `"countryCode":"YE"`, with entity types Individual, Company and Non-Profit. Q6-SH-011; Q6-SH-012; Q6-SH-K2674; Q6-SH-K2675; Q6-SH-K2676; Q6-SH-K2677
+- On 6 October 2026 the sign-up page, with "[Yemen]" in its location field, showed "Start your free trial" and "3 days free, then 3 months for $1/month". Q6-SH-043
 - The seller must keep an accurate location in the admin and update it after changing jurisdictions. To change the store's country, the seller must first deactivate all financial services: Shopify Payments, Balance, Capital and Credit. Q6-SH-K1271; Q6-SH-006
 - No words were found that present the "I'm located in:" options as the full set of places a seller can register from. Q6-SH-N03
 
@@ -29,7 +30,9 @@
 - The seller contracts with a "Shopify Contracting Party" chosen by the store's billing address: Shopify Inc. and Shopify Technology (USA) Inc. for the United States or Canada; Shopify Commerce Singapore Pte. Ltd for Asia Pacific; and Shopify International Limited (Ireland) for "All other jurisdictions". Elsewhere Shopify describes this entity as contracting with merchants in EMEA and LATAM. The terms are governed by the laws of Ontario. Q6-SH-K1243; Q6-SH-K1244; Q6-SH-K1246; Q6-SH-K1247; Q6-SH-K1248; Q6-SH-K1249; Q6-SH-K1250; Q6-SH-K1253
 - The billing address determines the billing taxes, the payment methods and billing currencies available, and "the Shopify company that issues your bill". Its country must match one of the seller's active business entities, and you can't enter a country you have no entity in. To use an unlisted country, you first add a business entity for it. Q6-SH-013; Q6-SH-K1259; Q6-SH-014; Q6-SH-015
 - A business entity is "the registered business, or the individual, that your store operates as". It is used to verify the business, and it sets what must be provided for financial services. Q6-SH-K1260
-- Selling with several entities is available only with Shopify Payments, and only for organizations on the Shopify Plus and Shopify Enterprise Commerce plans. Q6-SH-K1264; Q6-SH-K1265
+- In store ts15uk-ug (My Store 8), observed 7 October 2026, Settings > General showed, under Business details, "Business entity used for financial products, markets, apps, and taxes in this shop", with "My Store 8 - entity" in Yemen. The store's own answer gives `"countryCode":"YE","currencyCode":"YER"`. Q6-SH-035
+- In store capture-advanced, observed 4 October 2026, saving business details with Country code "United States" and "Individual / Sole proprietorship" was refused: "Couldn't save changes", "Capture Entity is already associated with an individual business entity in this country. Add someone else or switch entities in Settings > General." Q6-SH-042
+- Selling with several entities is available only with Shopify Payments, and only for organizations on the Shopify Plus and Shopify Enterprise Commerce plans. For store ts15uk-ug, whose business entity is in Yemen, the admin's answer gave `"multiLegalEntitiesPhase":"INELIGIBLE"`. Q6-SH-K1264; Q6-SH-K1265; Q6-SH-035; Q6-SH-039
 - No clause was found that names who is responsible when a store sells with several entities. Q6-SH-G0009
 
 ### Paying for a plan
@@ -56,7 +59,9 @@
 - In Shopify's own words: "If your country isn't listed, or if Shopify Payments doesn't support your business category, then you need to use a third-party payment provider." Its eligibility page says: "If you aren't eligible for Shopify Payments, then you can add a third-party payment provider." Q6-SH-022; Q6-SH-020
 - The pricing overview says: "If Shopify Payments isn't available in your country, or if you prefer not to use it", the seller can activate a third-party provider. Shopify then charges third-party transaction fees that depend on the plan, and the provider charges its own rates. Q6-SH-024
 - In the admin: "If Shopify Payments isn't available in your country, then in the Payment providers section, click Choose a provider." Q6-SH-025
-- What that page shows a store whose Shopify Payments answers `"eligible":false` was not read. Q6-SH-N02
+- For store ts15uk-ug, observed 7 October 2026, `ShopifyPaymentsData` also gave Shopify Payments `"eligible":false`. Its `PaymentProviders` answer gave the business entity `"countryCode":"YE"`, with `"thirdPartyDirectEligible":true`, and Stripe `"available":false,"eligible":false`. Q6-SH-036; Q6-SH-037; Q6-SH-038
+- That store's Payments settings page showed "Payment providers": "Providers that enable you to accept payment methods at a rate set by the third-party. An additional fee will apply to new orders once you select a plan.", with "Choose a provider". Its Third-party payment providers page listed (for testing) Bogus Gateway, Cybersource, Integration-UseePay, ONERWAY (Direct), PagBrasil - Cartão de crédito and Tap Payments. Q6-SH-040; Q6-SH-041
+- What the same pages show in store 2jiwxs-gr, created with `country=YE`, was not read. Q6-SH-N02
 - For the store created with `country=YE`, the admin's `ShopifyPaymentsData` answer gives Shopify Payments `"eligible":false` and `"cardPresentSupported":false`, with `localPaymentMethodsForMerchantCountry` and `shopifyPaymentsRates` empty. Q6-SH-033; Q6-SH-034
 - Shopify points sellers to its payment gateways page, which it describes as "Third-party payment providers for countries where Shopify Payments is unavailable". There you can filter providers by country or region. Q6-SH-029; Q6-SH-027
 - What the payment gateways page lists for a given country was not read. Q6-SH-N01

@@ -9,7 +9,9 @@
 - In the onboarding, "🌍دولة المتجر" asks from which country the store is registered, "because that determines the government documents". The step "🎯الكيان القانوني" asks for the store's legal entity. Q6-SA-K0083, Q6-SA-K1989, Q6-SA-K0088, Q6-SA-K2523
 - The dashboard's sign-up strings say "اختيارك للدولة يحدِّد المتطلبات القانونية اللازمة لمتجرك." / "Your country selection sets the legal requirements for your store." Q6-SA-008
 - For an individual (فرد), the UAE onboarding asks for the status of "متطلباتك النظامية للبيع في الإمارات". The Kuwait article carries the same sentence, with الإمارات. Q6-SA-005
-- What the country step lists, and what it connects to, is not held. Q6-SA-G0162
+- On the onboarding question page (/persona/qna), a run of 8 October 2026 showed the question "من أي دولة تسجِّل متجرك؟" with the options السعودية, الإمارات, الكويت, قطر, عمان, البحرين and دولة أخرى. Q6-SA-060
+- The page's saved response for store store-sherawya, the same day, gives the question "Where is your business based?" with "is_mandatory": true and the options SA, AE, KW, QA, OM, BH and other, each with "dependent_questions": []. Q6-SA-059
+- What each choice connects to is not held: the runs show the question before any option is chosen. Q6-SA-G0162, Q6-SA-N03
 
 ### Who may register: the usage agreement (اتفاقية الاستخدام)
 
@@ -43,6 +45,7 @@
 - Salla calls verification "مبادرة من شركة سلة". It does not replace verification with government bodies. Q6-SA-039
 - For stores on باقة بيسك, verification is "متطلب أساسي للبدء في عملية البيع". Q6-SA-036
 - Without verification, payment and settlement operations are suspended until it is completed. Q6-SA-037
+- For store store-sherawya on 8 October 2026, the payment methods page's saved response gave verification "status": "uncompleted" with "blocks_payment_activation": true, and "merchant_type": "KSA". Q6-SA-061
 - Verification enables e-payment gateways, shipping services and "كامل خصائص منصة سلة دون قيود". Q6-SA-028, Q6-SA-034
 - Verification takes 24 to 48 hours, and Salla's team reviews each request. Q6-SA-042, Q6-SA-K0087
 - The dashboard holds a permission for شهادة توثيق منصة الأعمال. Salla's FAQ calls the Business Platform e-commerce certificate mandatory under Ministry of Commerce rules. Q6-SA-K0079, Q6-SA-K0093, Q6-SA-K2519
@@ -77,5 +80,6 @@
 - When Salla's payment gateway is activated, all payments are received in Saudi riyals. Q6-SA-K1963
 - A dashboard string reads "التحويل البنكي غير متاح حالياً لدولتك ({{country}})." Q6-SA-058
 - The answer to the plans pages' question "Can I use Salla outside Saudi Arabia?" was not found. Q6-SA-N01
-- Other options for a seller outside the countries named were not found. Q6-SA-N03
+- Other options for a seller outside the countries named were not found. The onboarding question offers "Other country" / دولة أخرى, and what follows it is not held. Q6-SA-N03, Q6-SA-059, Q6-SA-060
+- For store real-merchant ("merchant_type": "KSA") on 12 October 2026, the payment methods page's saved response lists online_payment_gateways, digital_wallets, bnpl and other_payment_methods, each method with "available_countries": []. Q6-SA-062
 - A per-country list of available services was not found. Q6-SA-N04

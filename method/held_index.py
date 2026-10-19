@@ -4,13 +4,15 @@
 # Readable forms, best first:
 #   structure  a structure in observed-sa or observed-sh whose meta.json names the address (text or rows in git)
 #   capture    a page in this repository's evidence/product-class/runs, with its text file
+#   step       a step of a browser run in observed-sa or observed-sh whose page ended at the address, with its page
+#              text in git (steps/NNN.text.txt or NNN.aria.yaml; read it with git show)
 #   warc       a record in a fetch archive that is in git (read it with method/warc_text.py)
 #   cdx-only   an index line whose archive is not in git: held, but not readable from the repository
 import csv, glob, json, os, re, subprocess, unicodedata, urllib.parse
 from collections import defaultdict
 
 csv.field_size_limit(10**9)
-RANK = {"structure": 0, "capture": 1, "warc": 2, "cdx-only": 3}
+RANK = {"structure": 0, "capture": 1, "step": 2, "warc": 3, "cdx-only": 4}
 URL_RE = re.compile(r"https?://[^\s,;)\]>\"'|]+")
 BARE_RE = re.compile(r"(?<![\w@/.-])((?:[a-z0-9-]+\.)+(?:com|sa|dev|net|org|io|ae|me|co|app|store|partners)"
                      r"(?:/[^\s,;)\]>\"'|]*)?)", re.I)
@@ -111,6 +113,25 @@ class Held:
                 self._add(uri, {"repo": repo, "commit": commit, "kind": "structure", "status": status, "redirect": "",
                                 "location": os.path.relpath(os.path.dirname(meta), root),
                                 "readable": status.startswith("2")})
+        # The pages browser runs' steps ended at, each with its page text in git (the steps' witnesses).
+        steps = set(git(root, "ls-files", "raw/runs/*/steps/*.text.txt", "raw/runs/*/steps/*.aria.yaml").split())
+        for acts in sorted(glob.glob(os.path.join(root, "raw/runs/*/actions.jsonl"))):
+            run = os.path.basename(os.path.dirname(acts))
+            with open(acts, encoding="utf-8", errors="replace") as f:
+                for line in f:
+                    try:
+                        a = json.loads(line)
+                        n = int(a.get("step"))
+                    except Exception:
+                        continue
+                    url = a.get("url") or ""
+                    files = [f"raw/runs/{run}/steps/{n:03d}.{k}" for k in ("text.txt", "aria.yaml")]
+                    files = [x for x in files if x in steps]
+                    if not url.startswith("http") or not files:
+                        continue
+                    status = str(a.get("http_status") or "200")
+                    self._add(url, {"repo": repo, "commit": commit, "kind": "step", "status": status, "redirect": "",
+                                    "location": files[0], "readable": a.get("outcome") in (None, "ok") and status.startswith("2")})
         # Corpora held as rows, one address per row: Salla's help-centre articles (observed-sa item 11).
         for items in sorted(glob.glob(os.path.join(root, "structures/salla/help-articles/*/items.jsonl"))):
             lang_dir = os.path.relpath(os.path.dirname(items), root)
