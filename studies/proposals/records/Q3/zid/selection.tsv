@@ -60,4 +60,6 @@ ZD-C-050	لغة وعملات المتجر; اللغات والعملات; خاص
 ZD-C-031	About Zid Egypt; حول زد مصر; Zid Egypt	Zid Egypt / زد مصر	6	3	ZD-A-31	set aside	statements are on Zid Egypt's own registration
 ZD-C-032	ZID is available in; زد متاحة في; Egypt; UAE; Kuwait; Oman; Syria	Countries Zid serves	3	3	ZD-A-31	set aside	statements are on the countries Zid serves, not on requirements before particular actions
 ZD-C-033	Countries and Cities; List Store Operating Countries; countries_cities.read	Store country, operating countries and cities	6	2	ZD-A-31	copy	
+ZD-C-025	وكيل زد (Zid Agent); Zid Agent					add	its statements include a requirement on the seller before using the service (an active store)
+ZD-C-116	تطبيق الجوال					add	its statements include a requirement on the seller before a store mobile app is published (a developer account)
 S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	158	19		copy	
