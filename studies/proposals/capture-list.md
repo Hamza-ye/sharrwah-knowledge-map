@@ -4,55 +4,53 @@ Written by `method/capture_list.py` from the recording runs' rows that only you 
 
 **How to save a page:** SingleFile from a normal browser, into `evidence/product-class/blocked-evidence-founder/<platform>/`, as before. Captured accounts are synthetic, so nothing needs masking.
 
-## Shopify (11)
+## Shopify (10)
 
 **To capture:**
 
-- **each captured store's admin, Settings > General (admin.shopify.com/settings/general, not held): the store address and billing country section**
-  - It would show: The country of each captured store's address or billing address, held beside its RequestDetails feature values (Q1, `Q1-SH-N04`)
-- **Capture, on a store with Shopify Payments, the page reached from Settings > Payments > Shopify Payments in the Shopify admin (admin.shopify.com/settings/payments) while a verification request or the Activate Shopify Payments flow is open: each step's fields and any deadline shown.**
+- **Capture, on a store with Shopify Payments (the runs' stores show "eligible":false), the page reached from Settings > Payments > Shopify Payments in the Shopify admin while a verification request or the Activate Shopify Payments flow is open: each step's fields and any deadline shown.**
   - It would show: What the Shopify Payments verification request in the admin asks a given store for, and the deadlines it displays: the pages read say a deadline is displayed in the Shopify admin (Q3-SH-069) and that the request is reached from Settings > Payments > Shopify Payments, but show no such request. (Q3, `Q3-SH-N03`)
 - **help.shopify.com pages on refunding orders paid by manual payment methods; or a refund of a test order paid with a manual payment method on a held store**
-  - It would show: What happens when a seller refunds an order paid with a manual payment method: whether Shopify moves any money, and how the refund is recorded on the order (Q4, `Q4-SH-N02`)
-- **https://admin.shopify.com/settings/payments: the Payment providers section, Manual payment methods drop-down, with its list of suggested methods**
-  - It would show: The list of suggested manual payment methods that Settings > Payments offers in the Payment providers section (Q4, `Q4-SH-N03`)
+  - It would show: Whether any money moves through Shopify or a provider when a seller refunds an order paid outside the checkout, as Shopify states it; and the refund of an order placed at checkout with a named manual payment method, such as Cash on Delivery (COD) (Q4, `Q4-SH-N02`)
+- **in the admin, Settings > Payments > Manual payment methods: the Manual payment method drop-down, opened, with the list it displays (the held steps of that page show it closed)**
+  - It would show: The list of suggested manual payment methods as the Manual payment methods drop-down menu displays it; the runs hold the PaymentProviders answer's manualProviders, and the page with its drop-down closed (Q4, `Q4-SH-N03`)
 - **the payment gateways page of shopify.com (its held copy and the live page read here show only the unfiltered list): type a country in its 'Type in your country' filter and capture the list it then shows**
   - It would show: The payment providers that https://www.shopify.com/payment-gateways lists for a given country or region once a country is typed in its filter (Type in your country) (Q6, `Q6-SH-N01`)
 - **admin.shopify.com/store/2jiwxs-gr/settings/payments: the whole Payments page, then the list that Choose a provider opens in the Payment providers section**
-  - It would show: What the Payments settings page shows to a store whose Shopify Payments provider answers "eligible":false (store 2jiwxs-gr.myshopify.com, signed up with country=YE): its Payment providers section and the list behind Choose a provider (Q6, `Q6-SH-N02`)
+  - It would show: What the Payments settings page of store 2jiwxs-gr.myshopify.com itself shows (signed up with country=YE; its Shopify Payments provider answers "eligible":false): its Payment providers section and the list behind Choose a provider. For store ts15uk-ug, whose Shopify Payments provider also answers "eligible":false, these pages were read (Q6-SH-040, Q6-SH-041) (Q6, `Q6-SH-N02`)
 - **the sign-up flow on accounts.shopify.com (its held copy was read): choose, in I'm located in:, each place the held list leaves out, if it can be entered, and capture any message shown**
   - It would show: Words, on the sign-up page or in Shopify's help, that present the options of the combobox I'm located in: as the full set of places a seller can register from, or that name the places it leaves out (Q6, `Q6-SH-N03`)
-- **admin.shopify.com/payments/payouts in a store with Shopify Payments active and a reserve or a balance: the Payout balance and Reserved funds amounts, with the currency each is shown in**
+- **the Shopify Payments payouts page, opened by the store owner (not a staff account) of a store with Shopify Payments active and a reserve or a balance: the Payout balance and Reserved funds amounts, with the currency each is shown in. The held steps of this page are staff sweeps that show "You need permission to view this feature"**
   - It would show: The currency in which Shopify Payments holds Reserved funds, and the currency of funds held in a Payment Processor Account before a payout is made (Q7, `Q7-SH-N01`)
-- **admin.shopify.com/settings/general, Store defaults section, menu > Change store currency: the full drop-down list of currencies, in one store whose location is set to a country without Shopify Payments and one with it**
+- **the General settings page, Store defaults section, under Currency display, menu > Change store currency, with the drop-down menu opened: the full list of currencies. The held steps of this page show the section with the menu closed**
   - It would show: The full list of currencies offered as store currency in the Change store currency drop-down (Q7, `Q7-SH-N03`)
-- **a store invited by Shopify to a Beta Service: the beta terms shown in the Shopify admin before the store first uses it**
+- **a store invited by Shopify to a Beta Service: the additional terms and conditions that Shopify provides before the store's use of the Beta Services**
   - It would show: The additional terms and conditions that apply to a Beta Service, which the Terms of Service say Shopify will provide before its use, and which Beta Services are offered (Q8, `Q8-SH-N01`)
-- **Shopify's enterprise sales team, through the contact form on Shopify's enterprise page: the enterprise agreement or order form that sets these services**
+- **Shopify for enterprise, through the get in touch link on the Help Center's Shopify for enterprise page: the contract terms on which the services marked *Dependent on contract terms depend**
   - It would show: The contract terms on which the Shopify for enterprise services marked *Dependent on contract terms depend (Q8, `Q8-SH-N02`)
 
 ## Salla (13)
 
 **To capture:**
 
-- **Merchant dashboard https://s.salla.sa/localization/settings (الأسواق المتعددة > الإعدادات > تسعير المنتجات), as the owner of a Special-plan store with Markets active: capture the Product pricing setting with Automatic pricing by exchange rate selected, and any text on the rate used**
-  - It would show: Where the exchange rate used by Automatic pricing by exchange rate (تسعير تلقائي حسب سعر الصرف) comes from, and who sets or can change it. (Q1, `Q1-SA-N02`)
-- **Merchant dashboard, Orders (الطلبات): open an order placed by bank transfer in status بانتظار المراجعة and save the order page, showing the attached receipt and the actions offered on it (https://s.salla.sa/orders, not held)**
+- **Merchant dashboard, Orders (الطلبات): open an order a customer placed by bank transfer while it is in status بانتظار المراجعة, and save the order page showing the attached receipt and the actions offered on it**
   - It would show: The steps by which a merchant reviews a bank transfer receipt (إيصال) attached by a customer and confirms the payment, moving the order out of بانتظار المراجعة, and whether Salla takes part in that review (Q4, `Q4-SA-N02`)
-- **Merchant dashboard: (الكل) › الإعدادات والأدوات › طرق الدفع › المحافظ الرقمية › PayPal: capture the connection drawer's text when PayPal is activated**
+- **Merchant dashboard: (الكل) › الإعدادات والأدوات › طرق الدفع › المحافظ الرقمية › PayPal: capture the connection drawer's text when PayPal is activated. The page's list is held in the runs; the drawer is not**
   - It would show: Where payments made by customers through PayPal go: into the PayPal account whose email the merchant enters, or through Salla (Q5, `Q5-SA-N02`)
 - **no address in Salla's material read; the providers' own merchant agreements**
   - It would show: The terms of the merchant's own agreements with the providers Salla's articles name: عقد التاجر مع تمارا, اتفاقية التاجر مع تابي and عقد التاجر مع جيديا. Salla's material read names them and gives no address for them (Q5, `Q5-SA-N03`)
-- **Merchant dashboard: the page مقارنة بوابات الدفع at /payments/gateways/comparison (the path as payments.json's breadcrumb key names it), and the page طرق الدفع at /payments/gateways**
+- **Merchant dashboard: the page مقارنة بوابات الدفع at /payments/gateways/comparison (the path as payments.json's breadcrumb key names it)**
   - It would show: A list, presented as complete, of the payment gateways (بوابات الدفع الأخرى) a merchant can connect besides مدفوعات سلة. The pages read give examples only (مثل; ميسر - هايبر باي) (Q5, `Q5-SA-N04`)
-- **Store sign-up at https://s.salla.sa/auth/register (not held): the country step (دولة المتجر), choosing a country outside the list, and the screen that follows**
-  - It would show: What Salla states a seller based in a country other than Saudi Arabia, the UAE and Kuwait can do, beyond the sign-up message countryOther.description and the help centre's answer on a foreign merchant registering with a Saudi commercial registration (Q6, `Q6-SA-N03`)
+- **The onboarding question page https://s.salla.sa/persona/qna (held in the sweep runs at its country question only): choose دولة أخرى / Other country and capture the screen that follows; or store sign-up at https://s.salla.sa/auth/register (not held), then the same question**
+  - It would show: What Salla states a seller based in a country other than Saudi Arabia, the UAE and Kuwait can do, beyond the sign-up message countryOther.description, the help centre's answer on a foreign merchant registering with a Saudi commercial registration, and the onboarding country question's options (Q6-SA-059, Q6-SA-060): the runs read show that question before any option is chosen, and the saved response gives "dependent_questions": [] for the option "Other country" / دولة أخرى (Q6, `Q6-SA-N03`)
 
 **To ask:**
 
+- **Question to Salla's merchant support: which exchange rate source Automatic pricing by exchange rate (تسعير تلقائي حسب سعر الصرف) uses in Markets, how often it is updated, and whether a merchant can set or change the rate**
+  - It would show: Where the exchange rate used by Automatic pricing by exchange rate (تسعير تلقائي حسب سعر الصرف) comes from, and who sets or can change it. The setting's panel, as one store's page showed it, says only that product prices are set automatically according to the current exchange rate. (Q1, `Q1-SA-N02`)
 - **Question to Salla merchant support, asked from the merchant dashboard: does Salla screen merchants, owners or payments against sanctions lists, which lists, and which countries are refused**
   - It would show: A statement that Salla restricts or withholds its platform, Salla Payments or stores for a country, person or customer because of sanctions or a sanctions list, with the list it applies and its reason; the held KYC schema names a check CheckSallaBlacklisted ('ID suspended due to compliance or terms violations') without naming what it checks against (Q2, `Q2-SA-N01`)
-- **Merchant dashboard, store verification page (توثيق المتجر, https://s.salla.sa/payments/kyc; not held) of a store not yet verified: capture any notice or banner that states the period before payments are suspended; or ask Salla merchant support (dashboard help) how long the period is.**
+- **Question to Salla merchant support (dashboard help): how long the period (المهلة) is after which payment and settlement operations (عمليات الدفع والسداد) of a store that is not verified are suspended, and when it starts.**
   - It would show: The length of the period (المهلة) after which payment and settlement operations (عمليات الدفع والسداد) of a store that is not verified are suspended, and when that period starts. (Q3, `Q3-SA-N01`)
 - **Question to Salla merchant support (dashboard help): which products or activities need a licence before they can be sold on Salla, and whether and when Salla checks it.**
   - It would show: A list of the products or activities for which Salla requires a licence before they are sold, or a statement of whether, when and how Salla checks such a licence. (Q3, `Q3-SA-N02`)
