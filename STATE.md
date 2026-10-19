@@ -402,7 +402,7 @@ Agents started earlier keep their effort.
 
 **The founder's choice, 19 October 2026, about 05:30 UTC,** near the week's usage limit: finish recording, write the drafting brief and have it checked, then stop and talk. The drafting runs wait for that talk and for the marks on the areas list. The progress report before it (05:15 UTC) gave the sample's rate, the steps past their cost, the re-sized whole (agents about 1.50 billion, the coordinator about 0.45, together about 1.95) and the method rulings since the G2 message.
 
-**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. **On again** from 21:01 UTC on 18 October 2026, while step R1 runs. Pause it when no agent runs. Delete it when the founder asks.
+**A scheduled check-in** (Routine `trig_01QJwaNYp764mJnJLh5n5ago`, every two hours at :09 UTC) wakes this session to resume agents a limit stopped. Paused on 17 October 2026 at 21:05 UTC, while G1 waited for the founder. On from 19:05 to 20:26 UTC on 18 October 2026, while the R0 check ran. On from 21:01 UTC on 18 October 2026 through R1 to R3. **Paused** at 05:56 UTC on 19 October 2026, while the work waits for the founder's talk. Turn it on again when agents run. Delete it when the founder asks.
 
 **To resume:**
 1. Commit whatever files are on disk, as an unchecked checkpoint.
