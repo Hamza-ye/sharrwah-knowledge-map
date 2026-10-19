@@ -163,7 +163,7 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
   - copied gap ids, such as `Q2-SA-G0007`, and the pilot's H and A ids;
   - your `stmt_id`s and `nf_id`s.
 
-  A point without an id doesn't belong in it.
+  A point without an id doesn't belong in it. Don't nest lists: each list item is a point, and carries its own ids.
 - **It adds no claim of its own.** It compares with no other platform, ranks nothing, and recommends nothing.
 - **Length:** at most about 1,500 words.
 

@@ -1,0 +1,282 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Documentation / Products / WooPay / WooPay Customer Documentation
+WooPay Customer Documentation
+
+WooPay is an express checkout solution built by Woo. It saves your payment information so that you can quickly and securely purchase from any WooCommerce store that uses WooPayments with WooPay enabled.
+
+WooPay is currently available for U.S. customers only.
+
+NOTE: This document is intended for customers who would like to pay for orders using WooPay. If you are a merchant who would like to use WooPay on your site, please see our merchant documentation instead.
+
+Signing up
+
+There are two ways to sign up for WooPay:
+
+By using the WooPay button (if present).
+Via a participating store’s checkout page.
+
+Both of those methods are shown below.
+
+Using the WooPay button
+
+If you do not yet have a WooPay account, click the WooPay button on the cart page, the checkout page, or a product page. You’ll enter the WooPay signup process, which begins by redirecting you to pay.woo.com and asking for your email:
+
+Enter your email and click Continue with WooPay. After verifying your phone number with a six-digit code, you’ll be taken to the WooPay checkout page to complete the order.
+
+During this process, you will also receive a welcome email with some general information about WooPay. This email will also contain a Verify your email address link. Click the button to verify that you own the email address in question.
+
+During checkout
+
+When checking out for the first time on a store that uses WooPay, you’ll see a pre-checked box prompting you to enter your mobile phone number.
+
+By entering your mobile phone number, you’ll create an account and securely save your information to WooPay when you place the order.
+
+NOTE: Whether or not the Securely save my information box is pre-checked depends upon the store country. As of July 18, 2024, it’s only pre-checked for U.S. stores.
+
+After checking out, you will also receive a welcome email with some general information about WooPay. This email will also contain a Verify your email address link. Click the button to verify that you own the email address in question.
+
+Using WooPay to check out
+
+The next time you check out on any WooPay-enabled store, we’ll recognize your email address and automatically send a six-digit verification code to your phone. You can also click the Send via Email link to receive a code in an email.
+
+After entering the verification code, you’ll be sent to WooPay to check out.
+
+Once you’ve placed the order, you’ll be sent back to the site for confirmation. WooPay will be shown in the payment method area.
+
+Using the express checkout button
+
+If the merchant of the site you’re on has enabled it, you may see the WooPay express checkout button on individual product pages, on the cart page, on the checkout page itself, or some combination of those. You can use it to check out even faster!
+
+Click the WooPay button and you will be redirected to pay.woo.com to log in. Once you’ve verified your phone number by entering the six-digit code, you can complete your checkout.
+
+Direct Checkout
+
+In some cases, you may be automatically sent to pay.woo.com to check out, even if you haven’t clicked the WooPay button. This happens when these conditions are met:
+
+You have a WooPay account and are logged into pay.woo.com.
+You’ve clicked a checkout button/link on the merchant’s site.
+
+By sending you to WooPay’s checkout, you can complete your purchase even faster, since your payment and address information is already stored in WooPay.
+
+If you prefer to use the merchant’s checkout page, clicking the Alternative payment methods link in the Pay with section will take you back to their checkout page.
+
+If you don’t want to use Direct Checkout on any site, click the Checkout as guest link at the bottom of the WooPay checkout page. This will completely sign you out of WooPay and send you back to the merchant’s site.
+
+The checkout page
+
+Unlike some other express checkout methods, WooPay uses its own hosted checkout interface. The checkout page has the following sections:
+
+Contact shows you the email address associated with your WooPay account. If you do not want to use your WooPay account to check out, click the three-dot icon (⋮) and then click the Checkout as guest button to be taken back to the merchant’s checkout page.
+Ship to displays the default shipping address you have on file. Click the down arrow to the right if you want to change it. Note that this field may be hidden if the merchant forces customers to use their billing address as the shipping address.
+Shipping method shows you the various shipping options offered by the store you’re purchasing from. Click the down arrow to the right if you want to change it. Note that this field may be hidden in some cases, e.g. if all the products in your order are virtual.
+Pay with lets you choose the payment method you’d like to use for your order. Click the down arrow to the right if you want to change it or add a new card.
+Order summary shows you a list of the products in your order, as well as the order subtotal, shipping fees, and so on. Click Add a coupon to apply a discount code to your order.
+Click Place order for… to complete your order via WooPay.
+Managing your account
+
+You can manage your WooPay account via pay.woo.com/account. Once you’ve logged into the dashboard, you’ll be able to see the orders you’ve placed via WooPay, as well as add payment methods and addresses to your account.
+
+To get assistance with WooPay, click the hamburger icon (≡) on the top-right of the page and select either:
+
+Help & FAQ to read our documentation.
+Contact support to send our support staff an email.
+Feedback to send us any thoughts or ideas you have about WooPay.
+Log Out to log out of the WooPay dashboard.
+Home page
+
+The Home page, which you can access via the  icon, shows you the cards and addresses you’ve added to WooPay. You can set one card and one address as the default for your account, and you can add or remove additional card or address details.
+
+NOTE: The default card and address details cannot be removed. To remove existing default information, you must first add new details and set the new information as the default for your account.
+
+Orders page
+
+The Orders page, which you can access via the  icon, shows all the orders you’ve placed with WooPay, even if they’re from different stores. Click on an order to see the confirmation details for that order.
+
+You can filter the list using the All Statuses and All Stores dropdown menus. You can also alter the number of orders listed at once using the Orders per page dropdown at the bottom.
+
+Account page
+
+On the Account page, which you can access via the  icon, you’ll see the email and phone number on file with WooPay. You can change your phone number, if needed, via the three-dot icon (⋮) in the Phone section.
+
+The Trusted Devices section contains a list of all the browsers and devices that you’ve used to log into WooPay. You can click the X icon to log out of a particular browser or device.
+
+Lastly, the Delete Account button lets you delete your WooPay account.
+
+Frequently asked questions
+
+We’ve collected some common questions that customers like you may have about WooPay and answered them below. Please contact support if your question is not covered here.
+
+How can I leave feedback on the WooPay experience?
+
+First, log into your WooPay account on pay.woo.com/account. From there, click the question mark icon in the header and then click Feedback.
+
+I have a question about an order I paid for with WooPay
+
+For questions related to orders you paid for with WooPay, you should contact the merchant you ordered from. Even though you checked out using WooPay, your order was still placed with the merchant themselves.
+
+To find the merchant you ordered from, visit WooPay’s Orders page. Click on the order you have a question about, and that will take you to the merchant’s website. From there, you should be able to find a way to contact them.
+
+What does the “Auto Refunded” order status mean?
+
+Sometimes problems can occur during the WooPay checkout process. For example, the merchant’s site could go offline, or the item you’re trying to order could go out of stock before you complete the purchase.
+
+We do our best to detect such cases and automatically refund your card. If this happens, you’ll see an error notice to that effect during checkout, and the status of the order in the WooPay dashboard will change to “Auto Refunded.”
+
+If you want to retry the purchase, you can follow the link in the error notice.
+
+Why don’t I see the “Save my info” box during checkout?
+
+You will only see the “Save my info” box on the checkout page if you don’t already have a WooPay account. If you have an account already and you enter your email into the checkout form, we’ll automatically send you a verification code that you can use to sign into WooPay.
+
+What if I don’t want to check out with WooPay?
+
+If you prefer to use the merchant’s checkout page instead of WooPay, clicking the Alternative payment methods link in the Pay with section will take you back to the normal checkout on the merchant site.
+
+How does WooPay handle subscription products?
+
+If you use WooPay to purchase a subscription product, WooPay is only involved in the initial order. After that, all renewal orders are handled by the merchant’s website — not by WooPay.
+
+If you wish to cancel your subscription, change your payment method, or perform an early renewal, you will need to do so on the merchant’s site. Deleting the subscription payment method from WooPay will not cancel the subscription.
+
+How do I log out of WooPay?
+
+If you’re on a WooPay checkout page and wish to log out, click the Checkout as guest link in the footer at the bottom. This will completely sign you out of WooPay and send you back to the merchant’s site.
+
+If you’re on pay.woo.com/account and wish to log out, click the three-dot icon (⋮) next to your name and email address, then click Sign out.
+
+How can I update my email address?
+
+To request a change to your email address, please contact support.
+
+How can I update my phone number?
+
+You can update your phone number on this page, after you’ve logged in.
+
+If you’ve lost access to your phone and cannot log in, you have a couple options:
+
+If you verified your email address after you used WooPay for the first time, you can sign in and use your email to verify, instead of your phone number. This will allow you to access the account and change your phone number on the Account page.
+If you did not verify your email address, then we have no secure method to use to authenticate you, and your only remaining option is to delete your account. You can do this as along as you have access to the email address on file.
+How do I delete my default payment method?
+
+If you want to change the default payment method for your WooPay account, first add a new payment method and set it as the default. Then, you can delete the current default payment method. WooPay requires a valid payment method, so you cannot delete the default payment method without adding another one.
+
+How do I stop receiving verification text messages?
+
+Reply STOP to our verification texts to opt out of these messages. In the future, we’ll send verification codes to your email address instead, providing this address was verified after signing up.
+
+If you did not verify your email during signup, you’ll need to opt back into text messages when placing your next order via WooPay:
+
+How can I contact support?
+
+First, log into your WooPay account on pay.woo.com/account. From there, click the question mark icon in the header and then click Contact Support.
+
+How do I delete my WooPay account?
+Go to pay.woo.com/account/delete.
+Enter your WooPay account email address.
+Click Submit Request.
+In the confirmation email, click the Delete my account button.
+You should see the “Your account has been successfully deleted” message.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Signing up
+Using the WooPay button
+During checkout
+Using WooPay to check out
+Using the express checkout button
+Direct Checkout
+The checkout page
+Managing your account
+Home page
+Orders page
+Account page
+Frequently asked questions
+How can I leave feedback on the WooPay experience?
+I have a question about an order I paid for with WooPay
+What does the "Auto Refunded" order status mean?
+Why don’t I see the "Save my info" box during checkout?
+What if I don’t want to check out with WooPay?
+How does WooPay handle subscription products?
+How do I log out of WooPay?
+How can I update my email address?
+How can I update my phone number?
+How do I delete my default payment method?
+How do I stop receiving verification text messages?
+How can I contact support?
+How do I delete my WooPay account?
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+THINGAMAJIG
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

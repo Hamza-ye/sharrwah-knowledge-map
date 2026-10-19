@@ -315,7 +315,7 @@ def check_account(d, q, code, known, checking=False):
             err("account.md", f"line {n}", "a point that cites no id of this folder")
         if checking and not re.match(r"^([-*]|\d+[.)])?\s*\**(" + "|".join(LABELS) + r")\b", p):
             err("account.md", f"line {n}", f"a point starts with its label: {', '.join(LABELS)}")
-    words = len(re.findall(r"\w+", text))
+    words = len(re.findall(r"\w+", pat.sub("", text)))     # ids aren't words
     if words > (900 if checking else 1800):
         err("account.md", "", f"{words} words, past the brief's length", "warning")
 
