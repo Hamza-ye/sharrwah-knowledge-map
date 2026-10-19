@@ -31,6 +31,12 @@
 - Managed payment methods are activated according to the regions where the merchant sells. Q5-SH-K1745
 - Each additional payment method app has its own requirements, typically an account with the payment provider. Third-party providers may require the merchant's bank account information. Q5-SH-053, Q5-SH-011
 
+### What the admins of stores with countryCode YE showed
+
+- In store ibx5bt-xy (countryCode YE, currencyCode YER), observed on 30 September 2026, the admin's answers gave Shopify Payments, Amazon Pay and PayPal Express Checkout as `"eligible":false`, and Stripe as `"available":false,"eligible":false`. Q5-SH-078, Q5-SH-080, Q5-SH-081, Q5-SH-082
+- In store fake-demo-sharrwah (countryCode YE), observed on 5 October 2026, the answer gave `"thirdPartyDirectEligible":true` and `"thirdPartyAdditionalPaymentMethodsEligible":true`. Its Third-party payment providers page listed (for testing) Bogus Gateway, Cybersource, Integration-UseePay, PagBrasil - Cartão de crédito and Tap Payments. Its Payments page showed ONERWAY (Direct) in test mode, with "0.6% transaction fee • Card rates set by ONERWAY (Direct)". Q5-SH-084, Q5-SH-085, Q5-SH-086
+- In store ts15uk-ug (countryCode YE), observed on 7 October 2026, the Payments page described Payment providers as "Providers that enable you to accept payment methods at a rate set by the third-party", and said "An additional fee will apply to new orders once you select a plan." Q5-SH-090
+
 ## [3]
 
 - Shopify names these kinds: Shopify Payments, which it calls "the only payment gateway designed and operated by Shopify"; third-party credit card payment providers, over 100 of them, either **direct providers** or **external providers**; **Additional payment methods**, such as PayPal Express Checkout, buy now pay later services and regional payment methods, some of which are installed as apps; accelerated checkouts; and manual payment methods. Q5-SH-K1533, Q5-SH-006, Q5-SH-007, Q5-SH-049, Q5-SH-050, Q5-SH-051, Q5-SH-052, Q5-SH-K1725, Q5-SH-K1735, Q5-SH-027
@@ -39,6 +45,9 @@
 - Add-ons on the developer side are payments extensions built with the Payments Apps API. There are five types: credit card, custom credit card, alternative, offsite and redeemables. The methods they support are cards, buy now pay later, bank transfers, cryptocurrency, cash and ATM, and wallets. Q5-SH-K1694, Q5-SH-056, Q5-SH-057, Q5-SH-K1695, Q5-SH-K1159
 - Apple Pay, Google Pay, Meta Pay, Amazon Pay and PayPal Express Checkout are each a "Third Party Service" under section 9.9 of the Terms of Service. Q5-SH-K1721, Q5-SH-K1722, Q5-SH-K1723, Q5-SH-K1724, Q5-SH-K1711
 - Shopify Payments is run with Payment Processors (Stripe entities, PayPal, Adyen, and others, by Designated Country). In the EU/EEA and UK it runs as Payment Facilitator, with Adyen N.V. as Acquirer. Q5-SH-K1555, Q5-SH-K1566, Q5-SH-K1574, Q5-SH-K1576, Q5-SH-K1607, Q5-SH-K1611
+- In the stores observed: store ibx5bt-xy's answer listed the manual providers Cash on Delivery (COD), Money Order and Bank Deposit, each with `"group":"MANUAL"`, and gave `"localPaymentMethodsForMerchantCountry":[]`. Q5-SH-083, Q5-SH-079
+- In store fake-demo-sharrwah, the third-party provider ONERWAY (Direct) was answered with `"kind":"app"`, and the answer behind the Add payment method page listed providers such as Tabby and Tap Payments. Q5-SH-087, Q5-SH-088, Q5-SH-089
+- In store ts15uk-ug, the Payments page's "More ways to pay" read "Offer methods processed offsite or through custom checkout integrations". Q5-SH-091
 
 ## [4]
 
@@ -63,4 +72,5 @@
 - **Payments apps:** they must settle transactions for merchants within 5 days at most. Q5-SH-064
 - **Cryptocurrency:** paid directly by customers on-chain, or settled into a Payment Processor Account (Bridge, an affiliate of Stripe). Coinbase takes no custody. Q5-SH-K1756, Q5-SH-K1752, Q5-SH-K1754, Q5-SH-K1578
 - **Manual payment methods:** the merchant arranges to receive the payment, and such orders are marked unpaid. Q5-SH-K1737, Q5-SH-K1736, Q5-SH-027
+- **Marked as paid, in one store:** in store demo-fake-dev-store (countryCode YE), observed on 30 September 2026, the Mark as paid dialog said "Mark this order as paid if you received YER 699.95 from another payment method", and the order's timeline then showed "You manually marked YER699.95 as paid for this order." Q5-SH-092, Q5-SH-093
 - **Not read:** Amazon's customer agreement and policies. Q5-SH-N01
