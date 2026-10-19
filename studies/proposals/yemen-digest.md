@@ -6,19 +6,19 @@ Written by `method/yemen_digest.py` from Stage 1's files in `studies/yemen-cases
 
 - **An axis** is a condition Stage 1 found in more than one state; **a constant**, one it found in a single state.
 - **Today** is each place's latest held state, as Stage 1's build takes it. Each part gives the state, its place after
-  "@", the date it held at ("as of", from the condition's `held_at`), and the citations it rests on. A part reads
-  `unknown` where the latest state at that place ended, and `disputed` where sources of the same date disagree.
+  "@", and the date it held at ("as of", from the condition's `held_at`). A part reads `unknown` where the latest
+  state at that place ended, and `disputed` where sources of the same date disagree.
 - **Ids.** `YA-` an axis and `YK-` a constant, in `studies/yemen-cases/axes.tsv` and `constants.tsv`; `YQ-` a
   condition, in `conditions.tsv`; `YE-` a citation with its quote, in `citations.tsv`. This digest gives no `YE-`
   ids. A state's citations are in its axis's `states` column, after the state, and a constant's in its `cite_ids`
   column. Its other rows (ended, proposed, or at places where it no longer holds) are in its `note` column.
-- **Stage 1's rules for reading a state** (`PLAN.md` section 6, Yemen):
+- **Stage 1's rules for reading a state:**
   - a condition's states are alternatives: only one holds at a place and time;
   - a state's place is the scope its source gives it;
   - only a state whose source says it holds in all of Yemen ("across Yemen") supersedes states at other places;
   - a proposed state is never today;
   - each part of today is read with its date.
-- **Q2's frame:** the merchant sells in the Yemeni market. A condition naming only countries or regions is read
+- **The frame:** the merchant sells in the Yemeni market. A condition naming only countries or regions is read
   against that.
 - **Not shown** is not shown: where no axis, constant or citation gives a fact, Yemen's evidence doesn't show it.
 
