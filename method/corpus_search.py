@@ -19,10 +19,13 @@
 # its own place, never merged with another store's or run's.
 #
 # Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]
+#                                           [--runs-only | --only TEXT]
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
 #   (every TERM with --all) and, with --with, also any of the terms after --with: such as a thing's names, with the
 #   places or plans it may hold for. At most N documents per corpus are listed (default 40), those where the terms
 #   are densest first; the addresses past the cap follow, one line each.
+#   --runs-only searches only the observed repositories' runs (Shopify and Salla), in seconds; --only TEXT searches only
+#   the run corpora whose name holds TEXT, such as --only "step text from saved HTML".
 #   Snippets are folded for matching (case, diacritics, letter forms): never quote one; quote the document.
 import csv, glob, gzip, json, os, re, subprocess, sys, unicodedata, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -280,13 +283,20 @@ def documents(platform):
         yield ("founder's saves", f"sharrwah-knowledge-map@{head}:{os.path.relpath(path, SKM)}", "",
                os.path.basename(path), text)
 
+ONLY = {"runs": False, "text": ""}      # --runs-only and --only: which corpora a search reads
+
 def parse(argv):
     """(platform, terms, --with terms, --all, --max) from the command line."""
     every, cap, terms, also, into = False, 40, [], [], None
     i = 0
     while i < len(argv):
         a = argv[i]
-        if a == "--all":
+        if a == "--runs-only":
+            ONLY["runs"] = True
+        elif a == "--only":
+            ONLY["runs"], ONLY["text"] = True, argv[i + 1]
+            i += 1
+        elif a == "--all":
             every = True
         elif a == "--max":
             cap = int(argv[i + 1])
@@ -318,10 +328,15 @@ def main():
     main_hits, also_hits = matcher(terms), matcher(also)
     best, order = {}, []
     runs = set(runs_corpus.corpus_names(runs_corpus.RUN_REPO[platform])) if platform in runs_corpus.RUN_REPO else set()
+    if ONLY["runs"] and not runs:
+        sys.exit(f"--runs-only and --only search the observed runs, which only shopify and salla have")
     def every_document():
-        for doc in documents(platform):
-            yield doc + (None,)
+        if not ONLY["runs"]:
+            for doc in documents(platform):
+                yield doc + (None,)
         for corpus, loc, url, title, body in runs_corpus.search(platform, fold, terms, every, also):
+            if ONLY["text"] and ONLY["text"] not in corpus:
+                continue
             yield corpus, loc, url, title, body, body          # folded already
     for corpus, loc, url, title, text, body in every_document():
         body = body if body is not None else fold(title + "\n" + url + "\n" + text)

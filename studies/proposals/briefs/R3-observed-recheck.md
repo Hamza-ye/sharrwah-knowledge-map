@@ -125,7 +125,7 @@ These add to `R3-recording.md`'s rules 1 to 12, which hold.
 ## The second re-check: observed-sh's step text from saved HTML (Shopify only)
 
 **When the message that started you says so,** you re-check your folder against one more held source only: the text observed-sh extracted from the saved HTML of steps that had no `text.txt`, in `derived/step-text-from-html/`, at the commit the message names. Read observed-sh's `docs/READING.md` at that commit for the folder, and the folder's `meta.json`, before anything else. Everything above holds, except:
-- **What you read:** only the folder's texts and its index, found through the corpus search or the index, and the runs' `actions.jsonl` for each step's address and title. Don't search the other corpora again.
+- **What you read:** only the folder's texts and its index, found through the corpus search or the index, and the runs' `actions.jsonl` for each step's address and title. Don't search the other corpora again: add `--only "step text from saved HTML"` to each corpus search, which then takes about a second.
 - **Your open items:**
   - every row of `not-found.tsv`;
   - every copied gap `account.md` cites;
