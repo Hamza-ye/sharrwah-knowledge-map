@@ -1,117 +1,117 @@
 concern_id	terms	description	statements	gaps	area_id	action	reason
-SH-C-001	Account; Store Owner; Your store	Shopify account and Store Owner	8	1	SH-A-01	candidate	
-SH-C-007	Security; Continue with Google; Sign in with passkey; two-step authentication	Sign-in and account security	8	1	SH-A-01	candidate	
-SH-C-008	Trust; identity-verification; Profile Assessment	Identity verification of the people behind an account	8	1	SH-A-01	candidate	
-SH-C-009	Users; Staff Accounts; Additional staff accounts; Users and permissions	Users and staff accounts	22	1	SH-A-01	candidate	
-SH-C-010	Roles; permissions; Custom user groups	Roles and permissions	15	1	SH-A-01	candidate	
-SH-C-011	Collaborator access; Invite third-party collaborators	Collaborators (outside parties with store access)	9	0	SH-A-01	candidate	
-SH-C-155	24/7 support; Free Shopify Academy courses; Shopify Learn; Shopify Community	Merchant support and learning	3	3	SH-A-01	candidate	
-SH-C-003	Organization; OrganizationSettings; Free expansion stores	Organization and its stores	9	3	SH-A-02	candidate	
-SH-C-004	Business entity; Individual; Company; Non-Profit; Add business entity	Business entities (the registered business or individual a store operates as)	25	0	SH-A-02	candidate	
-SH-C-005	Selling with multiple entities; SELECT_EXISTING_LEGAL_ENTITY	Selling with multiple entities	12	1	SH-A-02	candidate	
-SH-C-015	Plan; Basic; Grow; Advanced; Plus; basic; professional; unlimited; shopify_plus	Subscription plans	19	1	SH-A-04	candidate	
-SH-C-016	Billing; Subscription charges; Platform fees; Other fees; App fees; Billing history	Shopify bills (charges to the merchant, invoices, payment of bills)	24	1	SH-A-04	candidate	
-SH-C-017	Taxes; Shopify billing and tax responsibilities	Taxes on Shopify's own charges	7	2	SH-A-04	candidate	
-SH-C-018	Third-party transaction fees; Transaction fees; Transaction fees discount	Transaction fees on sales through payment providers other than Shopify Payments	8	1	SH-A-04	candidate	
-SH-C-019	App fees; Shopify Billing Resource; app_subscriptions/update; Manage app billing; Approve app charges	App charges billed through Shopify	21	0	SH-A-04	candidate	
-SH-C-201	Shopify Plus Terms; Switch to 3-year term; Renew on a 3-year term; PlusContractDetails; PlusContractTerms; RenewalsQuery; contractmanagement	Shopify Plus contract terms and renewals	6	3	SH-A-04	candidate	
-SH-C-060	Order Routing Location Rule; fulfillment_orders/order_routing_complete	Order routing	5	2	SH-A-12	candidate	
-SH-C-114	Shipping and delivery; profiles/create; read_shipping	Shipping profiles, zones and rates	14	1	SH-A-12	candidate	
-SH-C-115	3rd-party calculated shipping rates; DeliveryCarrierService; Shipping rate apps	Third-party calculated shipping rates	8	2	SH-A-12	candidate	
-SH-C-116	Shipping labels; Buy and print shipping labels; Shipping discounts; Shipping fees	Shopify Shipping (shipping labels)	20	1	SH-A-12	candidate	
-SH-C-117	Shipping insurance*; Insurance premiums	Shipping insurance	7	1	SH-A-12	candidate	
-SH-C-118	fulfillment_orders/split; fulfillments/create; Fulfill and ship; Shipping and fulfillment	Fulfillment orders and fulfillments	29	1	SH-A-12	candidate	
-SH-C-119	read_fulfillments; FulfillmentService; External 3PL transaction fees; Third-party logistics (3PL) apps	Fulfillment services and third-party logistics	32	1	SH-A-12	candidate	
-SH-C-120	Shopify Fulfillment Network; Shopify Logistics; ShopifyFulfillmentNetwork	Shopify Fulfillment Network and Shopify Logistics	6	1	SH-A-12	candidate	
-SH-C-121	Local pick up; Local delivery; read_product_pickup_locations	Local pickup and local delivery	8	2	SH-A-12	candidate	
-SH-C-122	Delivery Customization; read_delivery_customizations	Delivery customization (Shopify Function)	8	1	SH-A-12	candidate	
-SH-C-123	Fulfillment Constraints; read_fulfillment_constraint_rules	Fulfillment constraints (Shopify Function)	8	1	SH-A-12	candidate	
-SH-C-124	Pickup point delivery option generator; Local pickup delivery option generator; Fulfillment option generator	Delivery option generators (Shopify Functions)	6	1	SH-A-12	candidate	
-SH-C-125	delivery_promise_settings/update; read_delivery_promises	Delivery promises	8	2	SH-A-12	candidate	
-SH-C-126	Tracking carriers; Shipping update; Order tracking apps	Shipment tracking and carriers	4	2	SH-A-12	candidate	
-SH-C-059	orders/risk_assessment_changed; Built-in fraud analysis*; Risk	Order risk and fraud analysis	11	1	SH-A-13	candidate	
-SH-C-062	Payments; Payment providers; Manage other payment settings	Payment providers settings (which payment methods a store accepts)	12	0	SH-A-13	candidate	
-SH-C-074	Shop Pay; dev.shopify.shop_pay; Shop Pay Wallet API	Shop Pay	14	0	SH-A-13	candidate	
-SH-C-075	Shop Pay Installments; unauthenticated_read_shop_pay_installments_pricing	Shop Pay Installments	13	0	SH-A-13	candidate	
-SH-C-076	Payments Apps API; Payments extensions; Payment apps; paymentSessionResolve	Third-party payment providers through payments apps	27	0	SH-A-13	candidate	
-SH-C-077	PayPal Express Checkout; PayPal Wallet rates	PayPal Express Checkout	13	1	SH-A-13	candidate	
-SH-C-078	Apple Pay; Google Pay; Meta Pay; Amazon Pay; com.google.pay	Third-party wallets (Apple Pay, Google Pay, Meta Pay, Amazon Pay)	15	0	SH-A-13	candidate	
-SH-C-079	Manual payment methods; Record payments; Mark as paid	Manual payment methods	9	2	SH-A-13	candidate	
-SH-C-080	Accept local payment methods*; MB WAY rates; Bizum rates	Local payment methods	14	1	SH-A-13	candidate	
-SH-C-081	USDC rates; Cryptocurrency Payment Protocol; Cryptocurrency Credit Reward Program	Cryptocurrency and stablecoin payments	11	1	SH-A-13	candidate	
-SH-C-082	Shop Cash	Shop Cash	3	2	SH-A-13	candidate	
-SH-C-083	Payment Customization; read_payment_customizations	Payment customization (Shopify Function)	12	1	SH-A-13	candidate	
-SH-C-084	order_transactions/create; tender_transactions/create; Capture payments	Payment authorization, capture and order transactions	9	0	SH-A-13	candidate	
-SH-C-085	customer_payment_methods/create; read_customer_payment_methods; read_payment_mandate; Charge vaulted payment method	Saved customer payment methods and payment mandates	16	2	SH-A-13	candidate	
-SH-C-063	Shopify Payments; Shopify Payments Terms of Service	Shopify Payments	36	0	SH-A-14	candidate	
-SH-C-064	Payment Processor; Payment Processing; Payment Processor List	Payment processing and settlement for Shopify Payments	33	0	SH-A-14	candidate	
-SH-C-065	Payment Processor Account; Financial Services Provider; Payout Account	Holding the merchant's funds from Shopify Payments sales	16	1	SH-A-14	candidate	
-SH-C-066	Payment Facilitator; Shopify Payments EU Limited; Shopify Payments UK Limited; Acquirer	Payment facilitation in the EU/EEA and UK	11	2	SH-A-14	candidate	
-SH-C-067	Regulated Payment Services; Shopify Payment Activities Inc.	Regulated payment services in Canada	3	3	SH-A-14	candidate	
-SH-C-068	Verification and Underwriting; ProfileAssessment; read_financial_kyc_information; finance_kyc_information/update	Onboarding, KYC and underwriting for Shopify Payments	21	0	SH-A-14	candidate	
-SH-C-069	Payouts; read_shopify_payments_payouts; View Shopify Payments payouts; Shopify Payments activity report	Payouts	19	0	SH-A-14	candidate	
-SH-C-070	Reserves; Reserve Account; account holds	Reserves and payout holds	10	0	SH-A-14	candidate	
-SH-C-071	Online standard card rates; Online international rates; In-person card rates; IC++ fees	Shopify Payments processing rates	9	1	SH-A-14	candidate	
-SH-C-072	disputes/create; read_shopify_payments_disputes; Manage disputes; Disputes	Chargebacks and disputes	24	1	SH-A-14	candidate	
-SH-C-073	Shopify Protect; orders/shopify_protect_eligibility_changed	Shopify Protect	11	1	SH-A-14	candidate	
-SH-C-173	Prohibited and Restricted Businesses	Prohibited and restricted businesses for Shopify Payments	7	3	SH-A-14	candidate	
-SH-C-088	Shopify Balance; Banking; Balance; Manage money with Shopify Balance	Shopify Balance account	45	0	SH-A-15	candidate	
-SH-C-089	Cards; Shopify Balance Visa® Commercial cards	Shopify Balance cards	7	2	SH-A-15	candidate	
-SH-C-090	Shopify Credit; Credit; Shopify Credit pay-in-full Visa® card	Shopify Credit	33	0	SH-A-15	candidate	
-SH-C-091	Capital - US loan; Capital - US Merchant Cash Advance (MCA)	Shopify Capital in the United States	23	1	SH-A-15	candidate	
-SH-C-092	Capital - UK Merchant Cash Advance (MCA)	Shopify Capital in the United Kingdom	15	1	SH-A-15	candidate	
-SH-C-093	Capital - Canada Merchant Cash Advance (MCA)	Shopify Capital in Canada	11	2	SH-A-15	candidate	
-SH-C-094	Capital - Australia	Shopify Capital in Australia	10	2	SH-A-15	candidate	
-SH-C-095	Shopify Capital loans; Banking Circle S.A.; YouLend SAS; Shopify Commerce France SAS	Shopify Capital in France	13	1	SH-A-15	candidate	
-SH-C-096	Shopify Capital loans; YouLend GmbH; Shopify Commerce Germany GmbH	Shopify Capital in Germany	13	1	SH-A-15	candidate	
-SH-C-097	Shopify Capital merchant cash advances; YouLend	Shopify Capital merchant cash advances in Ireland, the Netherlands and Spain	16	1	SH-A-15	candidate	
-SH-C-098	Shopify Bill Pay; Bill Pay	Shopify Bill Pay	13	1	SH-A-15	candidate	
-SH-C-178	Financial Products; Submit a financial complaint	Complaints about financial products	4	3	SH-A-15	candidate	
-SH-C-099	VIEW_TAX_DOCUMENTS; 1099-MISC forms	Tax forms and tax documents issued to the merchant	14	0	SH-A-16	candidate	
-SH-C-100	Taxes and duties; Automated sales tax calculations; Tax transaction fees; read_taxes	Sales tax and VAT calculation at checkout	36	0	SH-A-16	candidate	
-SH-C-101	Tax liability tracking; Taxes and duties	Tax registrations and liability tracking	12	2	SH-A-16	candidate	
-SH-C-102	VAT validation, exemptions, and invoicing	VAT validation, exemptions and invoicing	7	1	SH-A-16	candidate	
-SH-C-103	Tax calculation; tax_services/create; write_taxes; Avalara add-on fees; Advanced tax platform; Tax apps	Third-party tax calculation (tax apps and add-ons)	26	1	SH-A-16	candidate	
-SH-C-104	Automated filing; Shopify Tax Automated Filing	Automated tax filing	17	1	SH-A-16	candidate	
-SH-C-105	Estimate and collect duties and taxes; Duties and import tax transaction fees; Shipping duties and import taxes	Duties and import taxes	12	0	SH-A-16	candidate	
-SH-C-106	Markets; Shopify Markets; Localized selling with Shopify Markets; markets/create	Markets	24	1	SH-A-17	candidate	
-SH-C-110	Managed Markets; Managed Markets shipping fees	Managed Markets	18	0	SH-A-17	candidate	
-SH-C-111	Assign local domains; Geolocation apps	International domains and geolocation	4	1	SH-A-17	candidate	
-SH-C-112	Rollouts; rollouts/create; read_rollouts	Rollouts	15	2	SH-A-17	candidate	
-SH-C-113	markets_backup_region/update	Backup region	5	2	SH-A-17	candidate	
-SH-C-135	Sales channels; SalesChannels; read_publications; Sales channel configuration	Sales channels and publishing	23	1	SH-A-20	candidate	
-SH-C-136	Shop; Shop App; Shop: Track, Pay, Discover; Shop API; Shop Minis	Shop (consumer app and sales channel)	9	1	SH-A-20	candidate	
-SH-C-137	Import unlimited orders from marketplaces; Over 50 synced marketplace orders; read_marketplace_orders	Marketplace order sync (Marketplace Connect)	26	1	SH-A-20	candidate	
-SH-C-138	product_feeds/create; product_listings/add; read_product_listings	Product feeds and listings for channels	11	2	SH-A-20	candidate	
-SH-C-139	Build headless storefronts; CustomStorefronts; Storefront API; Hydrogen framework	Headless and custom storefronts	26	1	SH-A-20	candidate	
-SH-C-140	Sell in AI chats; Agentic; dev.ucp.shopping; WebMCP Tools	Agentic commerce (AI chats, Universal Commerce Protocol)	20	1	SH-A-20	candidate	
-SH-C-141	Sell and source products with Shopify Collective	Shopify Collective	6	1	SH-A-20	candidate	
-SH-C-086	In-person card rates; Tap to Pay transaction fees; Card present	In-person card payments	11	2	SH-A-21	candidate	
-SH-C-087	read_cash_tracking; CashDrawer	Cash management at POS	6	3	SH-A-21	candidate	
-SH-C-142	Point of Sale; Retail; POS Pro; Shopify Point of Sale (POS)	Point of Sale	11	0	SH-A-21	candidate	
-SH-C-143	POS Equipment Agreement and Return Policies; POS Equipment	POS hardware	5	1	SH-A-21	candidate	
-SH-C-144	POS UI extensions; POS action; POS block; POS smart grid	POS UI extensions	8	0	SH-A-21	candidate	
-SH-C-147	Shopify Network Intelligence; Enhanced Services	Shopify Network Intelligence (Enhanced Services)	6	1	SH-A-27	candidate	
-SH-C-148	Customer privacy; Privacy; Cookie banner; Customer Privacy API; read_privacy_settings	Customer privacy settings, cookie banner and consent	18	0	SH-A-27	candidate	
-SH-C-149	Request data; Erase personal data; read_customer_data_erasure	Customer data requests and erasure	11	1	SH-A-27	candidate	
-SH-C-179	guidelines for legal requests for information	Legal requests for information	9	1	SH-A-27	candidate	
-SH-C-180	Data Processing Addendum; Data Controller; Data Processor	Data protection roles for the merchant's customer data	7	2	SH-A-27	candidate	
-SH-C-181	Data hosting locations; Binding Corporate Rules	Where data is stored and processed	24	0	SH-A-27	candidate	
-SH-C-182	Subprocessors	Subprocessors	11	1	SH-A-27	candidate	
-SH-C-183	retain store information for two years	Retention and deletion of store data after closure	6	1	SH-A-27	candidate	
-SH-C-184	PCI DSS; Account Data	Payment card data security	5	3	SH-A-27	candidate	
-SH-C-002	Shopify Contracting Party; Shopify Inc.; Shopify Technology (USA) Inc.; Shopify Commerce Singapore Pte. Ltd; Shopify International Limited	Shopify Contracting Party for the platform services, by the merchant's billing region	11	3	SH-A-28	candidate	
-SH-C-014	Reactivate your store; store-unavailable; Term and Termination	Store suspension, termination, reactivation and closure	17	1	SH-A-28	candidate	
-SH-C-172	Acceptable Use Policy; Report an issue with a merchant	Acceptable use and enforcement	12	0	SH-A-28	candidate	
-SH-C-175	Consumer protection laws; Alcohol products; Hemp and hemp-derived products; General Product Safety Regulation (GPSR); TSE Compliance in Germany	Merchant compliance with product, consumer and fiscal rules	8	2	SH-A-28	candidate	
-SH-C-176	Intellectual Property; copyright policy; trademark policy	Intellectual property reports	4	1	SH-A-28	candidate	
-SH-C-177	Legal Notices; Digital Service Act; Submit a P2B complaint	EU and UK platform rules (P2B complaints, Digital Services Act)	7	1	SH-A-28	candidate	
-SH-C-006	I'm located in:; Country/region	Merchant location at sign-up	3	2	SH-A-29	candidate	
-SH-C-174	Unsupported countries and regions; Sanctions; Sanctioned Person	Sanctions and unsupported countries and regions	20	2	SH-A-29	candidate	
-SH-C-032	Languages; Localizations; Translate your storefront; read_translations; locales/create	Languages and translations	18	1	SH-A-30	candidate	
-SH-C-107	store currency; Store Currencies	Store currency	5	2	SH-A-31	candidate	
-SH-C-108	Show prices in local currencies*	Prices in local currencies	10	2	SH-A-31	candidate	
-SH-C-109	Currency conversions and exchange rates	Currency conversion and exchange rates	12	1	SH-A-31	candidate	
-SH-C-037	Catalogs; Shopify B2B; read_catalogs	Catalogs (market and B2B product and price catalogs)	17	2	SH-A-33	candidate	
-SH-C-132	Optimize ads with Shopify Audiences	Shopify Audiences	7	0	SH-A-19	candidate	
-S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	161	0		candidate	
+SH-C-001	Account; Store Owner; Your store	Shopify account and Store Owner	8	1	SH-A-01	set aside	its terms name no place, country, currency or provider setup
+SH-C-007	Security; Continue with Google; Sign in with passkey; two-step authentication	Sign-in and account security	8	1	SH-A-01	set aside	its terms name no place, country, currency or provider setup
+SH-C-008	Trust; identity-verification; Profile Assessment	Identity verification of the people behind an account	8	1	SH-A-01	set aside	its terms name no place, country, currency or provider setup
+SH-C-009	Users; Staff Accounts; Additional staff accounts; Users and permissions	Users and staff accounts	22	1	SH-A-01	set aside	its terms name no place, country, currency or provider setup
+SH-C-010	Roles; permissions; Custom user groups	Roles and permissions	15	1	SH-A-01	set aside	its terms name no place, country, currency or provider setup
+SH-C-011	Collaborator access; Invite third-party collaborators	Collaborators (outside parties with store access)	9	0	SH-A-01	set aside	its terms name no place, country, currency or provider setup
+SH-C-155	24/7 support; Free Shopify Academy courses; Shopify Learn; Shopify Community	Merchant support and learning	3	3	SH-A-01	set aside	its terms name no place, country, currency or provider setup
+SH-C-003	Organization; OrganizationSettings; Free expansion stores	Organization and its stores	9	3	SH-A-02	copy	
+SH-C-004	Business entity; Individual; Company; Non-Profit; Add business entity	Business entities (the registered business or individual a store operates as)	25	0	SH-A-02	copy	
+SH-C-005	Selling with multiple entities; SELECT_EXISTING_LEGAL_ENTITY	Selling with multiple entities	12	1	SH-A-02	copy	
+SH-C-015	Plan; Basic; Grow; Advanced; Plus; basic; professional; unlimited; shopify_plus	Subscription plans	19	1	SH-A-04	set aside	its terms name no place, country, currency or provider setup
+SH-C-016	Billing; Subscription charges; Platform fees; Other fees; App fees; Billing history	Shopify bills (charges to the merchant, invoices, payment of bills)	24	1	SH-A-04	set aside	its terms name no place, country, currency or provider setup
+SH-C-017	Taxes; Shopify billing and tax responsibilities	Taxes on Shopify's own charges	7	2	SH-A-04	copy	
+SH-C-018	Third-party transaction fees; Transaction fees; Transaction fees discount	Transaction fees on sales through payment providers other than Shopify Payments	8	1	SH-A-04	set aside	its terms name no place, country, currency or provider setup
+SH-C-019	App fees; Shopify Billing Resource; app_subscriptions/update; Manage app billing; Approve app charges	App charges billed through Shopify	21	0	SH-A-04	set aside	its terms name no place, country, currency or provider setup
+SH-C-201	Shopify Plus Terms; Switch to 3-year term; Renew on a 3-year term; PlusContractDetails; PlusContractTerms; RenewalsQuery; contractmanagement	Shopify Plus contract terms and renewals	6	3	SH-A-04	set aside	its terms name no place, country, currency or provider setup
+SH-C-060	Order Routing Location Rule; fulfillment_orders/order_routing_complete	Order routing	5	2	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-114	Shipping and delivery; profiles/create; read_shipping	Shipping profiles, zones and rates	14	1	SH-A-12	copy	
+SH-C-115	3rd-party calculated shipping rates; DeliveryCarrierService; Shipping rate apps	Third-party calculated shipping rates	8	2	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-116	Shipping labels; Buy and print shipping labels; Shipping discounts; Shipping fees	Shopify Shipping (shipping labels)	20	1	SH-A-12	copy	
+SH-C-117	Shipping insurance*; Insurance premiums	Shipping insurance	7	1	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-118	fulfillment_orders/split; fulfillments/create; Fulfill and ship; Shipping and fulfillment	Fulfillment orders and fulfillments	29	1	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-119	read_fulfillments; FulfillmentService; External 3PL transaction fees; Third-party logistics (3PL) apps	Fulfillment services and third-party logistics	32	1	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-120	Shopify Fulfillment Network; Shopify Logistics; ShopifyFulfillmentNetwork	Shopify Fulfillment Network and Shopify Logistics	6	1	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-121	Local pick up; Local delivery; read_product_pickup_locations	Local pickup and local delivery	8	2	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-122	Delivery Customization; read_delivery_customizations	Delivery customization (Shopify Function)	8	1	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-123	Fulfillment Constraints; read_fulfillment_constraint_rules	Fulfillment constraints (Shopify Function)	8	1	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-124	Pickup point delivery option generator; Local pickup delivery option generator; Fulfillment option generator	Delivery option generators (Shopify Functions)	6	1	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-125	delivery_promise_settings/update; read_delivery_promises	Delivery promises	8	2	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-126	Tracking carriers; Shipping update; Order tracking apps	Shipment tracking and carriers	4	2	SH-A-12	set aside	its terms name no place, country, currency or provider setup
+SH-C-059	orders/risk_assessment_changed; Built-in fraud analysis*; Risk	Order risk and fraud analysis	11	1	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-062	Payments; Payment providers; Manage other payment settings	Payment providers settings (which payment methods a store accepts)	12	0	SH-A-13	copy	
+SH-C-074	Shop Pay; dev.shopify.shop_pay; Shop Pay Wallet API	Shop Pay	14	0	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-075	Shop Pay Installments; unauthenticated_read_shop_pay_installments_pricing	Shop Pay Installments	13	0	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-076	Payments Apps API; Payments extensions; Payment apps; paymentSessionResolve	Third-party payment providers through payments apps	27	0	SH-A-13	copy	
+SH-C-077	PayPal Express Checkout; PayPal Wallet rates	PayPal Express Checkout	13	1	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-078	Apple Pay; Google Pay; Meta Pay; Amazon Pay; com.google.pay	Third-party wallets (Apple Pay, Google Pay, Meta Pay, Amazon Pay)	15	0	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-079	Manual payment methods; Record payments; Mark as paid	Manual payment methods	9	2	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-080	Accept local payment methods*; MB WAY rates; Bizum rates	Local payment methods	14	1	SH-A-13	copy	
+SH-C-081	USDC rates; Cryptocurrency Payment Protocol; Cryptocurrency Credit Reward Program	Cryptocurrency and stablecoin payments	11	1	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-082	Shop Cash	Shop Cash	3	2	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-083	Payment Customization; read_payment_customizations	Payment customization (Shopify Function)	12	1	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-084	order_transactions/create; tender_transactions/create; Capture payments	Payment authorization, capture and order transactions	9	0	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-085	customer_payment_methods/create; read_customer_payment_methods; read_payment_mandate; Charge vaulted payment method	Saved customer payment methods and payment mandates	16	2	SH-A-13	set aside	its terms name no place, country, currency or provider setup
+SH-C-063	Shopify Payments; Shopify Payments Terms of Service	Shopify Payments	36	0	SH-A-14	copy	
+SH-C-064	Payment Processor; Payment Processing; Payment Processor List	Payment processing and settlement for Shopify Payments	33	0	SH-A-14	copy	
+SH-C-065	Payment Processor Account; Financial Services Provider; Payout Account	Holding the merchant's funds from Shopify Payments sales	16	1	SH-A-14	set aside	its terms name no place, country, currency or provider setup
+SH-C-066	Payment Facilitator; Shopify Payments EU Limited; Shopify Payments UK Limited; Acquirer	Payment facilitation in the EU/EEA and UK	11	2	SH-A-14	copy	
+SH-C-067	Regulated Payment Services; Shopify Payment Activities Inc.	Regulated payment services in Canada	3	3	SH-A-14	copy	
+SH-C-068	Verification and Underwriting; ProfileAssessment; read_financial_kyc_information; finance_kyc_information/update	Onboarding, KYC and underwriting for Shopify Payments	21	0	SH-A-14	set aside	its terms name no place, country, currency or provider setup
+SH-C-069	Payouts; read_shopify_payments_payouts; View Shopify Payments payouts; Shopify Payments activity report	Payouts	19	0	SH-A-14	set aside	its terms name no place, country, currency or provider setup
+SH-C-070	Reserves; Reserve Account; account holds	Reserves and payout holds	10	0	SH-A-14	set aside	its terms name no place, country, currency or provider setup
+SH-C-071	Online standard card rates; Online international rates; In-person card rates; IC++ fees	Shopify Payments processing rates	9	1	SH-A-14	copy	
+SH-C-072	disputes/create; read_shopify_payments_disputes; Manage disputes; Disputes	Chargebacks and disputes	24	1	SH-A-14	set aside	its terms name no place, country, currency or provider setup
+SH-C-073	Shopify Protect; orders/shopify_protect_eligibility_changed	Shopify Protect	11	1	SH-A-14	copy	
+SH-C-173	Prohibited and Restricted Businesses	Prohibited and restricted businesses for Shopify Payments	7	3	SH-A-14	set aside	its terms name no place, country, currency or provider setup
+SH-C-088	Shopify Balance; Banking; Balance; Manage money with Shopify Balance	Shopify Balance account	45	0	SH-A-15	copy	
+SH-C-089	Cards; Shopify Balance Visa® Commercial cards	Shopify Balance cards	7	2	SH-A-15	set aside	its terms name no place, country, currency or provider setup
+SH-C-090	Shopify Credit; Credit; Shopify Credit pay-in-full Visa® card	Shopify Credit	33	0	SH-A-15	copy	
+SH-C-091	Capital - US loan; Capital - US Merchant Cash Advance (MCA)	Shopify Capital in the United States	23	1	SH-A-15	copy	
+SH-C-092	Capital - UK Merchant Cash Advance (MCA)	Shopify Capital in the United Kingdom	15	1	SH-A-15	copy	
+SH-C-093	Capital - Canada Merchant Cash Advance (MCA)	Shopify Capital in Canada	11	2	SH-A-15	copy	
+SH-C-094	Capital - Australia	Shopify Capital in Australia	10	2	SH-A-15	copy	
+SH-C-095	Shopify Capital loans; Banking Circle S.A.; YouLend SAS; Shopify Commerce France SAS	Shopify Capital in France	13	1	SH-A-15	copy	
+SH-C-096	Shopify Capital loans; YouLend GmbH; Shopify Commerce Germany GmbH	Shopify Capital in Germany	13	1	SH-A-15	copy	
+SH-C-097	Shopify Capital merchant cash advances; YouLend	Shopify Capital merchant cash advances in Ireland, the Netherlands and Spain	16	1	SH-A-15	copy	
+SH-C-098	Shopify Bill Pay; Bill Pay	Shopify Bill Pay	13	1	SH-A-15	set aside	its terms name no place, country, currency or provider setup
+SH-C-178	Financial Products; Submit a financial complaint	Complaints about financial products	4	3	SH-A-15	set aside	its terms name no place, country, currency or provider setup
+SH-C-099	VIEW_TAX_DOCUMENTS; 1099-MISC forms	Tax forms and tax documents issued to the merchant	14	0	SH-A-16	set aside	its terms name no place, country, currency or provider setup
+SH-C-100	Taxes and duties; Automated sales tax calculations; Tax transaction fees; read_taxes	Sales tax and VAT calculation at checkout	36	0	SH-A-16	copy	
+SH-C-101	Tax liability tracking; Taxes and duties	Tax registrations and liability tracking	12	2	SH-A-16	copy	
+SH-C-102	VAT validation, exemptions, and invoicing	VAT validation, exemptions and invoicing	7	1	SH-A-16	copy	
+SH-C-103	Tax calculation; tax_services/create; write_taxes; Avalara add-on fees; Advanced tax platform; Tax apps	Third-party tax calculation (tax apps and add-ons)	26	1	SH-A-16	set aside	its terms name no place, country, currency or provider setup
+SH-C-104	Automated filing; Shopify Tax Automated Filing	Automated tax filing	17	1	SH-A-16	set aside	its terms name no place, country, currency or provider setup
+SH-C-105	Estimate and collect duties and taxes; Duties and import tax transaction fees; Shipping duties and import taxes	Duties and import taxes	12	0	SH-A-16	copy	
+SH-C-106	Markets; Shopify Markets; Localized selling with Shopify Markets; markets/create	Markets	24	1	SH-A-17	copy	
+SH-C-110	Managed Markets; Managed Markets shipping fees	Managed Markets	18	0	SH-A-17	copy	
+SH-C-111	Assign local domains; Geolocation apps	International domains and geolocation	4	1	SH-A-17	copy	
+SH-C-112	Rollouts; rollouts/create; read_rollouts	Rollouts	15	2	SH-A-17	copy	
+SH-C-113	markets_backup_region/update	Backup region	5	2	SH-A-17	copy	
+SH-C-135	Sales channels; SalesChannels; read_publications; Sales channel configuration	Sales channels and publishing	23	1	SH-A-20	set aside	its terms name no place, country, currency or provider setup
+SH-C-136	Shop; Shop App; Shop: Track, Pay, Discover; Shop API; Shop Minis	Shop (consumer app and sales channel)	9	1	SH-A-20	set aside	its terms name no place, country, currency or provider setup
+SH-C-137	Import unlimited orders from marketplaces; Over 50 synced marketplace orders; read_marketplace_orders	Marketplace order sync (Marketplace Connect)	26	1	SH-A-20	set aside	its terms name no place, country, currency or provider setup
+SH-C-138	product_feeds/create; product_listings/add; read_product_listings	Product feeds and listings for channels	11	2	SH-A-20	set aside	its terms name no place, country, currency or provider setup
+SH-C-139	Build headless storefronts; CustomStorefronts; Storefront API; Hydrogen framework	Headless and custom storefronts	26	1	SH-A-20	set aside	its terms name no place, country, currency or provider setup
+SH-C-140	Sell in AI chats; Agentic; dev.ucp.shopping; WebMCP Tools	Agentic commerce (AI chats, Universal Commerce Protocol)	20	1	SH-A-20	set aside	its terms name no place, country, currency or provider setup
+SH-C-141	Sell and source products with Shopify Collective	Shopify Collective	6	1	SH-A-20	set aside	its terms name no place, country, currency or provider setup
+SH-C-086	In-person card rates; Tap to Pay transaction fees; Card present	In-person card payments	11	2	SH-A-21	set aside	its terms name no place, country, currency or provider setup
+SH-C-087	read_cash_tracking; CashDrawer	Cash management at POS	6	3	SH-A-21	set aside	its terms name no place, country, currency or provider setup
+SH-C-142	Point of Sale; Retail; POS Pro; Shopify Point of Sale (POS)	Point of Sale	11	0	SH-A-21	set aside	its terms name no place, country, currency or provider setup
+SH-C-143	POS Equipment Agreement and Return Policies; POS Equipment	POS hardware	5	1	SH-A-21	set aside	its terms name no place, country, currency or provider setup
+SH-C-144	POS UI extensions; POS action; POS block; POS smart grid	POS UI extensions	8	0	SH-A-21	set aside	its terms name no place, country, currency or provider setup
+SH-C-147	Shopify Network Intelligence; Enhanced Services	Shopify Network Intelligence (Enhanced Services)	6	1	SH-A-27	set aside	its terms name no place, country, currency or provider setup
+SH-C-148	Customer privacy; Privacy; Cookie banner; Customer Privacy API; read_privacy_settings	Customer privacy settings, cookie banner and consent	18	0	SH-A-27	set aside	its terms name no place, country, currency or provider setup
+SH-C-149	Request data; Erase personal data; read_customer_data_erasure	Customer data requests and erasure	11	1	SH-A-27	set aside	its terms name no place, country, currency or provider setup
+SH-C-179	guidelines for legal requests for information	Legal requests for information	9	1	SH-A-27	set aside	its terms name no place, country, currency or provider setup
+SH-C-180	Data Processing Addendum; Data Controller; Data Processor	Data protection roles for the merchant's customer data	7	2	SH-A-27	set aside	its terms name no place, country, currency or provider setup
+SH-C-181	Data hosting locations; Binding Corporate Rules	Where data is stored and processed	24	0	SH-A-27	copy	
+SH-C-182	Subprocessors	Subprocessors	11	1	SH-A-27	set aside	its terms name no place, country, currency or provider setup
+SH-C-183	retain store information for two years	Retention and deletion of store data after closure	6	1	SH-A-27	set aside	its terms name no place, country, currency or provider setup
+SH-C-184	PCI DSS; Account Data	Payment card data security	5	3	SH-A-27	set aside	its terms name no place, country, currency or provider setup
+SH-C-002	Shopify Contracting Party; Shopify Inc.; Shopify Technology (USA) Inc.; Shopify Commerce Singapore Pte. Ltd; Shopify International Limited	Shopify Contracting Party for the platform services, by the merchant's billing region	11	3	SH-A-28	copy	
+SH-C-014	Reactivate your store; store-unavailable; Term and Termination	Store suspension, termination, reactivation and closure	17	1	SH-A-28	set aside	its terms name no place, country, currency or provider setup
+SH-C-172	Acceptable Use Policy; Report an issue with a merchant	Acceptable use and enforcement	12	0	SH-A-28	set aside	its terms name no place, country, currency or provider setup
+SH-C-175	Consumer protection laws; Alcohol products; Hemp and hemp-derived products; General Product Safety Regulation (GPSR); TSE Compliance in Germany	Merchant compliance with product, consumer and fiscal rules	8	2	SH-A-28	copy	
+SH-C-176	Intellectual Property; copyright policy; trademark policy	Intellectual property reports	4	1	SH-A-28	set aside	its terms name no place, country, currency or provider setup
+SH-C-177	Legal Notices; Digital Service Act; Submit a P2B complaint	EU and UK platform rules (P2B complaints, Digital Services Act)	7	1	SH-A-28	copy	
+SH-C-006	I'm located in:; Country/region	Merchant location at sign-up	3	2	SH-A-29	copy	
+SH-C-174	Unsupported countries and regions; Sanctions; Sanctioned Person	Sanctions and unsupported countries and regions	20	2	SH-A-29	copy	
+SH-C-032	Languages; Localizations; Translate your storefront; read_translations; locales/create	Languages and translations	18	1	SH-A-30	copy	
+SH-C-107	store currency; Store Currencies	Store currency	5	2	SH-A-31	copy	
+SH-C-108	Show prices in local currencies*	Prices in local currencies	10	2	SH-A-31	copy	
+SH-C-109	Currency conversions and exchange rates	Currency conversion and exchange rates	12	1	SH-A-31	copy	
+SH-C-037	Catalogs; Shopify B2B; read_catalogs	Catalogs (market and B2B product and price catalogs)	17	2	SH-A-33	copy	
+SH-C-132	Optimize ads with Shopify Audiences	Shopify Audiences	7	0	SH-A-19	set aside	its terms name no place, country, currency or provider setup
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	161	0		set aside	who holds the seller's money; not about what differs between places
