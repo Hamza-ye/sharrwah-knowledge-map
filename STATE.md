@@ -2,7 +2,7 @@
 
 Where the work is, kept by the coordinating session under `PLAN.md` section 9. Updated and committed at every checkpoint.
 
-**Updated:** 19 October 2026, 06:00 UTC.
+**Updated:** 19 October 2026, 06:15 UTC.
 
 **Gate G0:** passed on 12 October 2026 (`founder-decisions.tsv`).
 
@@ -92,7 +92,9 @@ Where the work is, kept by the coordinating session under `PLAN.md` section 9. U
 - **All 21 in-depth runs are done** (commit `144e2b6`): 1,664 new statements, each record passing the checker with no issues, every cited live page captured in the language it was read in. They cost 267.7 million tokens, the sample included: about 0.16 million per new statement, and 12.7 million a run, against 390 million planned.
 - **Recording is done** (commit `85fc690`): the 19 checking runs passed `--check` with no issues, and cost 186.3 million tokens with the three continued, about 9.8 million a run. R3's agents came to 462.2 million in all, the sample (R2) apart. Every live page a run read was captured in the language it was read in.
 - **The founder's capture list** (`studies/proposals/capture-list.md`, by `method/capture_list.py`): 46 rows routed to the founder or to either, by platform, as pages to capture and questions to ask. Optional; the work doesn't wait for it.
-- **R4 is prepared:** the digest of Stage 1 (`yemen-digest.md`, by `method/yemen_digest.py`), the id lookup (`method/record_ids.py`), the drafting brief (`briefs/R4-drafting.md`) and the checker's `drafts` mode. The brief is being checked.
+- **R4 is prepared:** the digest of Stage 1 (`yemen-digest.md`, by `method/yemen_digest.py`), the id lookup (`method/record_ids.py`), the drafting brief (`briefs/R4-drafting.md`) and the checker's `drafts` mode.
+- **The drafting brief's check** (`checks/R4-drafting-brief-check.md`, 14.2 million tokens): 18 findings, 8 must fix. All but one are fixed, in the brief and the checker; the coordinator adds the last (how far currencies can be set or changed) to Q7's proposal when finishing it. The rulings are in `PLAN.md` section 11, 19 October.
+- **Stopped here, by the founder's choice of 05:30 UTC,** to talk before drafting. The drafting runs wait for that talk and for the marks on the areas list.
 - **The checking runs** follow `briefs/R3-checking.md`, made runnable by its last read (14 findings, 8 must fix) and the verification of its fixes. **Twelve are done** (commits `2b5ce9f` to `ff660b5`), each passing `--check` with no issues. With the three continued, they cost 135.9 million tokens, about 11.3 million a run.
 - **Fixed after the first runs** (`PLAN.md` section 11, 19 October): some runs chose their search terms before reading and left account points unchecked, about 30 each in Q4 on WooCommerce and on Zid. A run may now search once more for points its first search left out, and records a row for every point its reading doesn't show, up to 20. Q3 and Q4 on WooCommerce and Q4 on Zid are continued under the fix.
 - **Noticed by the runs, for the drafting brief:** copies that disagree. In Q2 on BigCommerce, K0132 and P0029 say BigCommerce Payments is offered in the US only, and P0030, P0068 and P0087 say the UK and US (its `notes.md`). The drafting brief should say how a proposal treats statements that disagree: both cited, each with its date.
@@ -395,8 +397,8 @@ Agents started earlier keep their effort.
 - on 19 October 2026 at about 02:10 UTC, the session limit, until 05:00 UTC. It stopped five checking runs: Q6 on BigCommerce, Q7 on Salla, WooCommerce and BigCommerce, and Q8 on Salla. Their files were committed as a checkpoint, and all five were resumed at 05:09 UTC, each from its own transcript. The session's worker restarted several times while it waited;
 - on 19 October 2026, before 01:17 UTC, the container restarted. It stopped the verification of the checking brief's fixes, which was resumed at 01:17 UTC from its own transcript. The repositories, the scratch directory and the search cache survived.
 
-**Agents running when last checked (19 October 2026, 06:00 UTC):** the check of the drafting brief, `ae2242d5520baa278`, at `max`, writing `studies/proposals/checks/R4-drafting-brief-check.md`.
-- **Done and committed:** all of R3's recording: the 21 in-depth runs, the checking brief's last read and the verification of its fixes, and the 19 checking runs (three of them continued under the brief's fix of 19 October).
+**Agents running when last checked (19 October 2026, 06:15 UTC):** none. The work is stopped, by the founder's choice, until the talk.
+- **Done and committed:** all of R3's recording, and R4's preparation with the drafting brief's check and fixes.
 
 **The founder's choice, 19 October 2026, about 05:30 UTC,** near the week's usage limit: finish recording, write the drafting brief and have it checked, then stop and talk. The drafting runs wait for that talk and for the marks on the areas list. The progress report before it (05:15 UTC) gave the sample's rate, the steps past their cost, the re-sized whole (agents about 1.50 billion, the coordinator about 0.45, together about 1.95) and the method rulings since the G2 message.
 

@@ -26,14 +26,18 @@ Usage:
 studies/proposals/briefs/R4-drafting.md), or another file of that folder with --file:
 - its sections, `## 1.` to `## 7.`, and `## 8.` for Q5 and Q7, in order; section 1's subsections, one heading for each
   of the question's sentences, in order, as `### [2]` or `### [1] [2]`;
-- every point cites an id, except in section 4 and a section 6 point that says only what Yemen's evidence doesn't
-  show; each id exists among the question's records, Stage 1's files, the pilot's variation points or the areas
-  (method/record_ids.py), and no id is another question's;
-- each quoted word ("..." or the curly or angled kinds), each word in backticks and each run of Arabic is found in
-  the text of a record the point cites, its quotes included;
-- "absent" rests on an absent not-found row or a pilot absence;
-- as warnings: the brief's citing limits, a Yemen fact without its date in section 6, the length, and section 1's
-  share of it. notes.md must exist. --cited prints the ids cited, by kind, and section 6's "doesn't show" points.
+- every point cites a platform's or Stage 1's record, but for a part in section 4 that names its elements in bold, a
+  section 6 point that says only what Yemen's evidence doesn't show, and section 8, where a variation point counts;
+  each id exists among the question's records, Stage 1's files, the pilot's variation points or the areas
+  (method/record_ids.py); no id is another question's; the pilot's entry, variants and own ids, and paths under
+  studies/subjects/, register/ and founder-messages/, are never cited;
+- each quoted word (double, single, curly or angled marks, or backticks) and each run of Arabic is found in the text
+  of a platform's or Stage 1's record the point cites, its quotes included; no id is quoted;
+- a point saying a reading didn't show something cites its not-found row or copied gap, outside section 6 and
+  "not checked on" points; "absent", outside quotation marks, rests on an absent not-found row or a pilot absence;
+- as warnings: a Yemen fact without its date; the brief's citing limits, with Yemen facts counted by axis or
+  constant and place; the length, and section 1's share of it. notes.md must exist. --cited prints what is cited,
+  by kind, and section 6's "doesn't show" points, for the checks that follow (step R5).
 
 A live source is checked against the capture runs named, and in this repository's capture runs. Before the
 coordinator captures it, a quote from it is "pending capture", which doesn't fail. Prints each problem, and exits 1
@@ -371,17 +375,27 @@ def records(q, platform, captures, d=None, checking=False):
     check_account(d, q, code, copies | own, checking, {x for x in own if re.search(r"-N\d+$", x)})
 
 
-LIMITS = {"Q5": (70, 10, 12, 7000)}               # facts, not-found and absent, Stage 1, words
-DEFAULT_LIMITS = (45, 7, 8, 5000)
-QUOTED = re.compile(r'"([^"\n]+)"|\u201c([^\u201d\n]+)\u201d|\u00ab([^\u00bb\n]+)\u00bb|`([^`\n]+)`')
+LIMITS = {"Q5": (60, 10, 12, 3, 7000)}            # facts, not-found and absent, Yemen facts, doesn't show, words
+DEFAULT_LIMITS = (40, 7, 8, 2, 5000)
+QUOTED = re.compile(r'"([^"\n]+)"|\u201c([^\u201d\n]+)\u201d|\u00ab([^\u00bb\n]+)\u00bb|`([^`\n]+)`'
+                    r"|(?<![\w'])'([^'\n]{3,}?)'(?![\w])|\u2018([^\u2019\n]{3,}?)\u2019(?![\w])")
 ARABIC = re.compile(r"[\u0600-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]+"
                     r"(?:[ \u200c\u200e\u200f]+[\u0600-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]+)*")
 ARABIC_LETTER = re.compile(r"[\u0621-\u064a\u066e-\u06d3\u06fa-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]")
+NOT_SHOWN = re.compile(r"not in what was read|didn.t show|did not show|not shown|wasn.t shown|was not shown", re.I)
+DOESNT_SHOW = re.compile(r"doesn.t show|does not show", re.I)
+FORBIDDEN = re.compile(r"\bS01-(?!VP-)[A-Z0-9]+(?:-[A-Z0-9]+)*\b|(?:studies/subjects/|register/|founder-messages/)\S*")
+YEMEN_FACT = re.compile(r"\b(Y[AK]-\d{2,3})\b(?:\s*\(([^)]*)\))?")
+DATE = re.compile(r"\b(?:19|20)\d\d(?:-\d\d){0,2}\b")
 
 
 def draft_ids(text):
     return (rid.PLATFORM_ID.findall(text), rid.YEMEN_ID.findall(text), rid.VP_ID.findall(text),
             rid.AREA_ID.findall(text))
+
+
+def unquoted(p):
+    return QUOTED.sub(" ", p)
 
 
 def drafts(q, d=None, name="draft.md", cited=False):
@@ -409,7 +423,7 @@ def drafts(q, d=None, name="draft.md", cited=False):
                 err(name, f"line {n}", f"a subsection of section 1 is headed by sentence numbers, from [1] to [{nsent}]")
             seen_sent += ks
     if [h for h, _ in heads] != want:
-        err(name, "", f"sections {[h for h, _ in heads]}: want {want}, in order")
+        err(name, "", f"sections {[h for h, _ in heads]}: want {want}, in order, each headed as ## 1. ... at level 2")
     if seen_sent != list(range(1, nsent + 1)):
         err(name, "", f"section 1's subsections give sentences {seen_sent}: want each of 1 to {nsent} once, in order")
 
@@ -420,12 +434,14 @@ def drafts(q, d=None, name="draft.md", cited=False):
                 k = h
         return k
 
-    plat, yem, cited_ids, doesnt_show = set(), set(), {}, []
+    plat, facts_y, doesnt_show = set(), set(), []
     for n, p in points(text):
         sec = section(n)
         if sec == 0:
             err(name, f"line {n}", "a point before the first section")
             continue
+        for m in FORBIDDEN.finditer(p):
+            err(name, f"line {n}", f"{m.group(0)}: the pilot's entry, variants, pilot ids and these paths are never cited")
         pids, yids, vids, aids = draft_ids(p)
         for i in pids:
             if not i.startswith(q + "-"):
@@ -435,16 +451,31 @@ def drafts(q, d=None, name="draft.md", cited=False):
         for i in yids + vids + aids:
             if not rid.lookup(i):
                 err(name, f"line {n}", f"{i}: no such id")
-        evid = [i for i in pids + yids + vids if rid.lookup(i)]
-        says_not_shown = sec == 6 and re.search(r"doesn.t show|does not show", p, re.I)
+        records = [i for i in pids + yids if i.startswith(("Q", "Y")) and rid.lookup(i)
+                   and (not i.startswith("Q") or i.startswith(q + "-"))]
+        plain = unquoted(p)
+        says_not_shown = sec == 6 and DOESNT_SHOW.search(plain)
         if says_not_shown:
             doesnt_show.append(n)
-        if not (pids or yids or vids) and sec != 4 and not says_not_shown:
-            err(name, f"line {n}", "a point that cites no record")
-        texts = [rid.text_of(i) for i in evid]
+        has_id = bool(pids or yids or (sec == 8 and vids))
+        if not has_id:
+            if sec == 4:
+                if not re.search(r"\*\*[^*]+\*\*", p):
+                    err(name, f"line {n}", "a part with no id names, in bold, the elements of sections 2 and 3 it builds on")
+            elif says_not_shown:
+                if re.search(r"\b(allows?|forbids?)\b", plain, re.I):
+                    err(name, f"line {n}", "a point that says what Yemen's evidence allows or forbids cites the fact")
+            else:
+                err(name, f"line {n}", "a point that cites no record")
+        texts = [rid.text_of(i) for i in records]
         for m in QUOTED.finditer(p):
-            words = rid.norm(next(g for g in m.groups() if g is not None))
-            if len(words) < 2 or rid.PLATFORM_ID.fullmatch(words.upper()):
+            raw = next(g for g in m.groups() if g is not None)
+            words = rid.norm(raw)
+            if len(words) < 2:
+                continue
+            if rid.PLATFORM_ID.fullmatch(raw.strip()) or rid.YEMEN_ID.fullmatch(raw.strip()) \
+                    or rid.VP_ID.fullmatch(raw.strip()) or rid.AREA_ID.fullmatch(raw.strip()):
+                err(name, f"line {n}", f"an id in quotation marks: {raw}")
                 continue
             if not any(words in t for t in texts if t):
                 err(name, f"line {n}", f"quoted words not found in the records the point cites: {words[:80]}")
@@ -454,30 +485,36 @@ def drafts(q, d=None, name="draft.md", cited=False):
                 continue
             if not any(run in t for t in texts if t):
                 err(name, f"line {n}", f"Arabic not found in the records the point cites: {run[:60]}")
-        if re.search(r"\babsent\b", p, re.I):
+        if NOT_SHOWN.search(plain) and sec != 6 and not re.search(r"not checked on", plain, re.I):
+            if not any(re.search(r"-(?:[GH]\d{4}|N\d{2,3})$", i) for i in pids):
+                err(name, f"line {n}", "a point saying a reading didn't show something cites its not-found row or copied gap")
+        if re.search(r"\babsent\b", plain, re.I) and pids:
             ok = any(re.search(r"-A\d{4}$", i) or (re.search(r"-N\d+$", i) and
                      (rid.lookup(i)[1].get("kind") == "absent")) for i in pids if rid.lookup(i))
             if not ok:
                 err(name, f"line {n}", "'absent' without an absent row or a pilot absence")
-        if sec == 6 and any(re.match(r"Y[AK]-", i) for i in yids) and not re.search(r"\b(19|20)\d\d\b", p):
-            err(name, f"line {n}", "a Yemen fact without its date", "warning")
-        for i in evid:
-            cited_ids.setdefault(i, n)
+        for m in YEMEN_FACT.finditer(p):
+            if not DATE.search(m.group(2) or p[m.end():m.end() + 80]):
+                err(name, f"line {n}", f"{m.group(1)}: a Yemen fact without its date", "warning")
+            place = re.split(r"[,;]", (m.group(2) or "").split("@", 1)[1])[0].strip() if "@" in (m.group(2) or "") else ""
+            if rid.lookup(m.group(1)):
+                facts_y.add((m.group(1), place))
         plat.update(i for i in pids if i.startswith(q + "-") and rid.lookup(i))
-        yem.update(i for i in yids if rid.lookup(i))
 
     facts = sorted(i for i in plat if re.search(r"-(?:[KP]\d{4}|C\d{3}|\d{3})$", i))
     nf = sorted(i for i in plat if re.search(r"-(?:[GHA]\d{4}|N\d{2,3})$", i))
+    yem_ids = sorted({i for i, _ in facts_y} | {i for i in rid.YEMEN_ID.findall(text) if i.startswith(("YQ", "YE"))})
     lim = LIMITS.get(q, DEFAULT_LIMITS)
     for label, got, cap in [("statements, copies and citations", facts, lim[0]),
                             ("not-found rows, copied gaps and pilot absences", nf, lim[1]),
-                            ("Stage 1's ids", sorted(yem), lim[2])]:
+                            ("Yemen facts (an axis or constant at one place)", sorted(facts_y), lim[2]),
+                            ("\"Yemen's evidence doesn't show\" points", doesnt_show, lim[3])]:
         if len(got) > cap:
             err(name, "", f"{len(got)} {label} cited, past the brief's about {cap}", "warning")
     strip = lambda t: rid.AREA_ID.sub("", rid.VP_ID.sub("", rid.YEMEN_ID.sub("", rid.PLATFORM_ID.sub("", t))))
     words = len(re.findall(r"\w+", strip(text)))
-    if words > lim[3] * 1.1:
-        err(name, "", f"{words} words, past the brief's about {lim[3]}", "warning")
+    if words > lim[4] * 1.1:
+        err(name, "", f"{words} words, past the brief's about {lim[4]}", "warning")
     one = [at for h, at in heads if h == 1]
     two = [at for h, at in heads if h == 2]
     if one and two and words:
@@ -487,7 +524,8 @@ def drafts(q, d=None, name="draft.md", cited=False):
     if cited:
         print(f"facts\t{len(facts)}\t{' '.join(facts)}")
         print(f"not found or absent\t{len(nf)}\t{' '.join(nf)}")
-        print(f"Stage 1\t{len(yem)}\t{' '.join(sorted(yem))}")
+        print(f"Yemen facts\t{len(facts_y)}\t" + "; ".join(f"{i} @ {pl}" if pl else i for i, pl in sorted(facts_y)))
+        print(f"Stage 1 ids\t{len(yem_ids)}\t{' '.join(yem_ids)}")
         print(f"doesn't show (section 6 lines)\t{len(doesnt_show)}\t{' '.join(map(str, doesnt_show))}")
         print(f"words\t{words}")
 
