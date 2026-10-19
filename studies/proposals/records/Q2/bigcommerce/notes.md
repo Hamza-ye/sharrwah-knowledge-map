@@ -27,14 +27,19 @@ None read.
 ## Account points not checked (past the cap, or set aside by order)
 
 Not recorded as rows and left out of `account.md`:
-- Shopify [1]: Shop Cash exceptions (Q2-SH-K1759); Bill Pay, BACS notifications and Audiences (Q2-SH-K1852; Q2-SH-K1827; Q2-SH-K2053); Managed Markets' DDU/DDP, Shopify Protect and order caps (Q2-SH-010; Q2-SH-021); EEA consent mode, address and tax fields, compare-at prices, `.at`/`.fr` domains (Q2-SH-029; Q2-SH-031; Q2-SH-024; Q2-SH-034); France's Shopify Payments requirements (Q2-SH-038); Singapore GTO (Q2-SH-048).
+- Shopify [1]: Shop Cash exceptions (Q2-SH-K1759); Bill Pay, BACS notifications and Audiences (Q2-SH-K1852; Q2-SH-K1827; Q2-SH-K2053); Managed Markets' DDU/DDP, Shopify Protect and order caps (Q2-SH-010; Q2-SH-021); EEA consent mode, address and tax fields, compare-at prices, `.at`/`.fr` domains (Q2-SH-030; Q2-SH-032; Q2-SH-024; Q2-SH-035); France's Shopify Payments requirements (Q2-SH-038); Singapore GTO (Q2-SH-048).
 - Salla [1]: Paylink acquisition (Q2-SA-046); CheckSallaBlacklisted (Q2-SA-059); pharmacies (Q2-SA-057); Business Platform certificate (Q2-SA-K0093); external gateway replacing Salla Payments (Q2-SA-K1639).
 - WooCommerce [1]: WooPay (Q2-WC-K0447); iDEAL KVK (Q2-WC-018); Przelewy24 changes and MCCs (Q2-WC-020; Q2-WC-023); Alipay and WeChat Pay prohibited types (Q2-WC-014); In-Person Payments country lists (Q2-WC-K0439, apart from the fees sorted in the account); Store Guidelines (Q2-WC-K0493).
 - WooCommerce [2]: Stripe as additional data party (Q2-WC-068); Canada and UAE data notices (Q2-WC-066).
-- [3] reasons on domains, Brexit card rates, BACS, WooPay, UAE trade licence and WooPayments country priority (Q2-SH-034; Q2-SH-037; Q2-SH-K1827; Q2-WC-041; Q2-WC-K0411; Q2-WC-K0403).
+- [3] reasons on domains, Brexit card rates, BACS, WooPay, UAE trade licence and WooPayments country priority (Q2-SH-035; Q2-SH-037; Q2-SH-K1827; Q2-WC-041; Q2-WC-K0411; Q2-WC-K0403).
 
 ## Problems with the method
 
 - `R3-checking.md` changed on disk during the run: its account limit went from about 800 to about 1,200 words. The account was written to the shorter limit.
 - The Help Center pages read are undated; their `source_date` is the capture date, with `date_basis` "undated; date captured".
 - The corpus search's `--max 10` lists up to 10 documents per corpus (capture runs and founder's saves separately), so a search listed more than 10.
+
+
+## The coordinator's correction, 19 October 2026
+
+Q2 on Shopify's account cited some of Q2-SH-027 to Q2-SH-035 one number off, in six points: a statement was inserted after those points were written (the Q2 draft's notes found it). The ids are corrected by what each statement says, in Shopify's account and in the points and notes here that name them.

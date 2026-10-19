@@ -28,7 +28,7 @@
 - **differs** (role): Salla [1]: Q2-SA-K1936; Shopify [1]: Q2-SH-K1865. Saudi stores display a VAT certificate; the ZATCA link meets phase two. Q2-ZD-K0313; Q2-ZD-K0322; Q2-ZD-K0317
 - **differs** (role): Shopify [1]: Q2-SH-K2930. Zid POS pairs only with SurePay devices; its national-day offers apply in Saudi Arabia only. Q2-ZD-P0145; Q2-ZD-005; Q2-ZD-G0133
 - **differs** (role): Salla [1]: Q2-SA-K0798. Requiring the national address is a setting, for shipments inside the Kingdom. Q2-ZD-021
-- **differs** (role): Shopify [1]: Q2-SH-031. The seller customises address fields by country. Q2-ZD-022
+- **differs** (role): Shopify [1]: Q2-SH-032. The seller customises address fields by country. Q2-ZD-022
 - **differs** (role): WooCommerce [1]: Q2-WC-K1362. Zid Agent uses Google Cloud Vertex AI as processor. Q2-ZD-K0284; Q2-ZD-K0286
 - **goes beyond**: sender names follow CITC requirements through ينيفونك; WhatsApp restrictions are Meta's decision, priced by recipient country. Q2-ZD-K0509; Q2-ZD-K0511; Q2-ZD-K0620; Q2-ZD-K0623
 - **not in what was read**: Shopify [1]: Q2-SH-K1956. A third party selling as seller of record abroad. Q2-ZD-N03

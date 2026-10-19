@@ -53,11 +53,11 @@
 - Singapore: POS has no GTO reporting, and third parties provide it. Q2-SH-048
 - POS must use the same payment processor as online. Interac can't be taken offline in Canada. In-person processing is limited to countries where Shopify Payments supports it. POS Equipment terms apply by country. Q2-SH-K2930; Q2-SH-K1784; Q2-SH-K1788; Q2-SH-K1783; Q2-SH-K2112
 
-- Cookie banner and data-sharing settings are managed per region, while Shopify Network Intelligence is global. Privacy settings can be customized per country and region. Q2-SH-027; Q2-SH-028; Q2-SH-K2134
-- EEA event data isn't used for personalized advertising without Google Consent Mode v2 and valid consent. Q2-SH-029
-- Address fields and tax fields vary by customer country. Email marketing consent is preselected by regions Shopify recommends. Q2-SH-031; Q2-SH-032; Q2-SH-033
+- Cookie banner and data-sharing settings are managed per region, while Shopify Network Intelligence is global. Privacy settings can be customized per country and region. Q2-SH-028; Q2-SH-029; Q2-SH-K2134
+- EEA event data isn't used for personalized advertising without Google Consent Mode v2 and valid consent. Q2-SH-030
+- Address fields and tax fields vary by customer country. Email marketing consent is preselected by regions Shopify recommends. Q2-SH-032; Q2-SH-033; Q2-SH-034
 - Compare-at price display for EEA customers depends on whether the primary market is in the EEA. Q2-SH-024; Q2-SH-025
-- `.at` and `.fr` domain contact information can't be updated from the admin. EU domain extensions may require identity verification. Q2-SH-034; Q2-SH-035
+- `.at` and `.fr` domain contact information can't be updated from the admin. EU domain extensions may require identity verification. Q2-SH-035; Q2-SH-036
 - Shopify Shipping and shipping insurance vary by location and carrier. Q2-SH-K1987; Q2-SH-K1989; Q2-SH-K2000; Q2-SH-K1998
 
 ### What the admin answered in the observed runs
@@ -77,7 +77,7 @@
 - The billing country must match an active business entity. Entities are assigned to markets and each has its own Shopify Payments account. Q2-SH-K1259; Q2-SH-K1266; Q2-SH-K1268
 
 **Where data is held.** New merchants in Europe have their data stored at rest in Europe by default. Data from the EEA, UK and Switzerland is first processed by Shopify International Limited. Transfers rely on BCRs and SCCs. Q2-SH-K2321; Q2-SH-K2330; Q2-SH-K2331; Q2-SH-K2341; Q2-SH-K2339; Q2-SH-K2327
-- The admin shows the Customer data hosting location. Q2-SH-030
+- The admin shows the Customer data hosting location. Q2-SH-031
 - Within 90 days of termination, EU merchants' personal information is deleted except as legally required. Q2-SH-K2356
 
 ## [3]
@@ -87,7 +87,7 @@
 - For France's Shopify Payments requirements: to comply with regulations and to prevent financial crimes. For hemp requirements: to ensure compliance with the regulations for selling hemp. Q2-SH-038; Q2-SH-005
 - For per-region privacy settings: privacy laws vary across regions. For receipts in France: to comply with the GDPR, no staff information is shown. Q2-SH-K2134; Q2-SH-056
 - For Managed Markets prohibited items: each country's restrictions, and those of carriers and payment processors. Q2-SH-020
-- For the domain limits: Austrian and French regulations, and NIS2. Q2-SH-034; Q2-SH-035
+- For the domain limits: Austrian and French regulations, and NIS2. Q2-SH-035; Q2-SH-036
 - For card rates: Brexit changes by Visa and Mastercard. Q2-SH-037
 - For checkout restrictions: avoiding customer conversion fees. Q2-SH-027
 - For BACS notifications: the regulations require them. For the 1099-K: US tax laws. Q2-SH-K1827; Q2-SH-K1856

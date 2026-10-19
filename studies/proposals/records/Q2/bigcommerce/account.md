@@ -37,7 +37,7 @@
 - **differs** (role): the merchant pays Taxes on the Services. Shopify [1]: Q2-SH-K1329; WooCommerce [1]: Q2-WC-K0792. Q2-BC-K0179
 - **differs** (role): an HS code passes as customs information. WooCommerce [1]: Q2-WC-K0797. Q2-BC-054
 - **differs** (role): product content can be tailored for countries' compliance regulations. Shopify [1]: Q2-SH-019. Q2-BC-029
-- **differs** (role): cookie consent is a storefront setting; owners answer for GDPR and CCPA; geolocation and a ticked newsletter box carry GDPR risk. Shopify [1]: Q2-SH-027; WooCommerce [1]: Q2-WC-052; WooCommerce [1]: Q2-WC-K0697; Salla [1]: Q2-SA-K0805. Q2-BC-K0205; Q2-BC-K0206; Q2-BC-K0465; Q2-BC-021; Q2-BC-030; Q2-BC-042; Q2-BC-052
+- **differs** (role): cookie consent is a storefront setting; owners answer for GDPR and CCPA; geolocation and a ticked newsletter box carry GDPR risk. Shopify [1]: Q2-SH-028; WooCommerce [1]: Q2-WC-052; WooCommerce [1]: Q2-WC-K0697; Salla [1]: Q2-SA-K0805. Q2-BC-K0205; Q2-BC-K0206; Q2-BC-K0465; Q2-BC-021; Q2-BC-030; Q2-BC-042; Q2-BC-052
 - **differs** (role): carriers' real-time rates. Shopify [1]: Q2-SH-K1987; Salla [1]: Q2-SA-021; WooCommerce [1]: Q2-WC-K0838. Q2-BC-K0370
 - **differs** (role): point of sale through integrations. Shopify [1]: Q2-SH-K2930. Q2-BC-K0365
 - **not in what was read**: country rules for in-person sales or receipts. Shopify [1]: Q2-SH-042; Shopify [1]: Q2-SH-K2975. Q2-BC-N10
@@ -52,7 +52,7 @@
 - **not in what was read**: regional terms for funds. WooCommerce [2]: Q2-WC-054. Q2-BC-H0032
 - **differs** (role): a Commerce Entity is Processor, the Merchant Controller. WooCommerce [2]: Q2-WC-K0502; Salla [2]: Q2-SA-040. Q2-BC-K0435; Q2-BC-K0436
 - **differs** (role): data sits mainly in U.S.-Central1, also Europe-West3 and Australia-SE1; regional hosting is available; transfers rely on the Data Privacy Framework, SCCs, an IGA or consent. Shopify [2]: Q2-SH-K2321; WooCommerce [2]: Q2-WC-K0548. Q2-BC-031; Q2-BC-032; Q2-BC-033; Q2-BC-034; Q2-BC-035; Q2-BC-K0438; Q2-BC-K0439; Q2-BC-K0442; Q2-BC-K0445; Q2-BC-K0446
-- **not in what was read**: EU data after termination; hosting-location display. Shopify [2]: Q2-SH-K2356; Shopify [2]: Q2-SH-030. Q2-BC-N07; Q2-BC-N08
+- **not in what was read**: EU data after termination; hosting-location display. Shopify [2]: Q2-SH-K2356; Shopify [2]: Q2-SH-031. Q2-BC-N07; Q2-BC-N08
 
 ## [3]
 

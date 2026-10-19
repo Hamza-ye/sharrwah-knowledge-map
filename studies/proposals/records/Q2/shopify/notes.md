@@ -106,3 +106,8 @@ No live page was read.
 
 - The pilot import run's answers have no step, only a HAR entry. Q2-SH-C075 and C076 give "step -" with the HAR entry in `locator` and `date_basis`.
 - A step's `.text.txt` puts each list item on its own line. Q2-SH-064 and C068 write the list on one line and rely on the checker collapsing whitespace.
+
+
+## The coordinator's correction, 19 October 2026
+
+Q2 on Shopify's account cited some of Q2-SH-027 to Q2-SH-035 one number off, in six points: a statement was inserted after those points were written (the Q2 draft's notes found it). The ids are corrected by what each statement says, in Shopify's account and in the points and notes here that name them.

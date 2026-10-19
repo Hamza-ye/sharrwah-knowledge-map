@@ -40,3 +40,8 @@ No copy was found wrong or out of date. The general terms page (`terms-condition
 - To learn the citation format I opened the first three lines of Salla's `citations.tsv`, which the checking brief does not list among what may be opened from another run's folder. Nothing from it was used.
 - Dates: for the Zid Pay terms and the privacy policy no date was found in the text read; `source_date` is the capture date, and `date_basis` says so. The copies date these pages from the sitemap.
 - The corpus search term "نظام" matched too widely; "موثوق" matched the word موثوقية.
+
+
+## The coordinator's correction, 19 October 2026
+
+Q2 on Shopify's account cited some of Q2-SH-027 to Q2-SH-035 one number off, in six points: a statement was inserted after those points were written (the Q2 draft's notes found it). The ids are corrected by what each statement says, in Shopify's account and in the points and notes here that name them.
