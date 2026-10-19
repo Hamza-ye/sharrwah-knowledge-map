@@ -306,7 +306,7 @@ def check_account(d, q, code, known, checking=False):
         err("account.md", c, "cites an id the folder doesn't hold")
     nsent = len(sentences(q))
     for n, line in enumerate(text.splitlines(), start=1):
-        if line.startswith("##"):
+        if re.match(r"^##(?!#)", line):     # a section; ### subheadings within it are free
             m = re.match(r"^## \[(\d+)\]\s*$", line)
             if not m or not 1 <= int(m.group(1)) <= nsent:
                 err("account.md", f"line {n}", f"a section is headed by one sentence's number, from [1] to [{nsent}], as ## [2]")
