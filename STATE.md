@@ -38,7 +38,11 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** no agents. The scheduled check-in (`trig_01QJwaNYp764mJnJLh5n5ago`) is off. It is turned on only while a task runs (`METHOD.md` section 9).
+**In flight,** since 24 October 2026 at 20:45 UTC: two checks, each writing one file.
+- **The level 3 check of D-001 and D-004.** It writes `decisions/checks/D-001-D-004-level3.tsv`.
+- **The level 2 review of D-002 and D-003.** It writes `decisions/checks/D-002-D-003-review.md`.
+
+The scheduled check-in (`trig_01QJwaNYp764mJnJLh5n5ago`) is on while they run (`METHOD.md` section 9). If one stops, it is started again on what its file holds.
 
 **Budget:**
 - M0 used one agent: the independent review in planning processed 7.3 million tokens over 51 requests, counted by `method/count_tokens.py`.
