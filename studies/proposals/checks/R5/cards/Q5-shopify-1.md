@@ -64,6 +64,7 @@
 - note: first run's citation
 
 **Citation SH-S-0319:** `https://help.shopify.com/en/manual/payments.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/047-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:00Z, captured)
 - quote: When a customer checks out, they can choose to pay for their order using any of the methods that you've activated in the
 - title: Payments
 - the page opens: Make sure that you understand the payment process. When a customer checks out, they can choose to pay for their order using any of the methods that you've activated in the Payment providers area of your Shopify admin. You can activate a variety of payment methods using Shopify. If you want to let your customers pay using a credit card, then you can use Shopify Payments, a third-party provider, or both together. There are also several ways for customers to pay online without using a credit card, …
@@ -125,6 +126,7 @@
 - note: first run's citation
 
 **Citation SH-S-0589:** `https://shopify.dev/docs/api/functions/latest/payment-customization.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/109-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
 - quote: enables you to rename, reorder, hide the payment methods available to customers during checkout, set payment terms, and add a review requirement for a specific order.
 - title: Payment Customization Function API
 - the page opens: A payment customization enables you to rename, reorder, hide the payment methods available to customers during checkout, set payment terms, and add a review requirement for a specific order. Examples of payment methods that you can customize include credit cards, gift cards, and wallets such as Shop Pay, Apple Pay, and Google Pay. Payment terms allow buyers to pay for their order at a later date instead of at checkout, and can be set as fixed, net, or event-based terms with optional deposits. To…
@@ -168,6 +170,7 @@
 - note: first run's citation
 
 **Citation SH-S-0441:** `https://shopify.dev/docs/apps/build/payments.md` | Extensions for payments, note | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: The option to build a custom payment extensions is limited to eligible Shopify Plus Merchants only.
 - title: Extensions for payments
 - the page opens: Payments extensions integrate with the Shopify admin and checkout to provide customized payment processing services for merchants. Only approved Partners can build payments extensions on Shopify's Payments Platform. Payments extensions provide merchant stores with the following features: * provide additional payment methods * perform specific operations on payment methods * control payment security for buyers * automate payment services, such as reoccurring payments * decide if they want to capt…
@@ -188,6 +191,8 @@
 - note: first run's citation
 
 **Citation SH-S-0325:** `https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/065-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:02Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/034-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:12Z, captured)
 - quote: Shopify Payments is an integrated payment gateway offered by Shopify. Only eligible merchants can use Shopify Payments.
 - title: Shopify Payments eligibility
 - the page opens: Shopify Payments is an integrated payment gateway offered by Shopify. Only eligible merchants can use Shopify Payments. To be eligible for Shopify Payments, you must meet the following criteria: * Your business is located in a supported country. * Your business type and products aren't prohibited. * You comply with all applicable laws, regulations, and the Shopify Payments terms and conditions for your country and industry. * You must be at least 18 years old to set up a Shopify Payments account…
@@ -230,6 +235,7 @@
 - note: first run's citation
 
 **Citation SH-S-0440:** `https://shopify.dev/docs/apps/build/payments.md` | Extensions for payments, introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: Only approved Partners can build payments extensions on Shopify's Payments Platform.
 - title: Extensions for payments
 - the page opens: Payments extensions integrate with the Shopify admin and checkout to provide customized payment processing services for merchants. Only approved Partners can build payments extensions on Shopify's Payments Platform. Payments extensions provide merchant stores with the following features: * provide additional payment methods * perform specific operations on payment methods * control payment security for buyers * automate payment services, such as reoccurring payments * decide if they want to capt…
@@ -249,6 +255,7 @@
 - from: held
 
 **Citation Q5-SH-C097:** `https://www.shopify.com/partners/terms` | C.4. Additional Terms Applicable to Payments Developers, New Payments Application Feature Approval | 2026-02-27 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (fetched 2026-10-11T06:13:12Z, captured)
 - quote: New Payments Application Feature Approval. Any updates or changes to an existing Payments Application, including the addition of new product features or new payment methods, must be submitted for review and approval.
 - title: Shopify Partner Program - Partner Program Agreement - Shopify
 - in context: … Developer Guidelines and best practices that Payments Developers must follow. Every Payments Developer must adhere to these guidelines and every Payments Application must meet the technical and other specifications that it describes. Sync Data to Shopify. All payments and order data received from transactions processed on the Payments Application must be automatically synced to Shopify as specified in the Payments Platform Developer Guidelines. ⟪New Payments Application Feature Approval. Any updates or changes to an existing Payments Application, including the addition of new product features or new payment methods, must be submitted for review and approval.⟫ Merchant Flexibility. Payments Applications must allow for Shopify Merchants to terminate their agreement with the payment provider within 7 days' notice, without any penalty, fine, or other consequence. Settlements. All Payments Applications must settle transactions for the Merchants within a maximum of 5 days, as outlined in the Payments Platform Developer Guidelines. Wind Down Period. If Payments Developer wishes to no longer support the Paym…
@@ -266,6 +273,7 @@
 - from: held
 
 **Citation Q5-SH-C082:** `https://shopify.dev/docs/apps/build/payments.md` | How it works > How a merchant installs a payments extension | 2026-10-11 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: The payments app is installed by merchants directly through an installation link that's shared by the payments developer, or through Shopify's public list of payment gateways in the Shopify admin.
 - title: Extensions for payments
 - the page opens: Payments extensions integrate with the Shopify admin and checkout to provide customized payment processing services for merchants. Only approved Partners can build payments extensions on Shopify's Payments Platform. Payments extensions provide merchant stores with the following features: * provide additional payment methods * perform specific operations on payment methods * control payment security for buyers * automate payment services, such as reoccurring payments * decide if they want to capt…
@@ -273,42 +281,49 @@
 - in context: …you publish your payments extensions, your extensions becomes available, and merchants can install and use them in their Shopify stores. How a merchant installs a payments extension The following diagram describes the different phases of the onboarding cycle for payments extensions: A diagram showing the lifecycle of a payments app 1. ⟪The payments app is installed by merchants directly through an installation link that's shared by the payments developer, or through Shopify's public list of payment gateways in the Shopify admin.⟫ 2. The merchant installs the app on the OAuth grant page. 3. The merchant is redirected to the payments app page to configure the payments app settings. Until configuration is complete, a banner indicates that the provider isn't ready to process payments. 4. The merchant configures the payments app. 5. The app marks itself as ready by…  (matched markup removed)
 
 **Citation Q5-SH-C083:** `https://shopify.dev/docs/apps/build/payments.md` | How it works > How a merchant installs a payments extension | 2026-10-11 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: The merchant installs the app on the OAuth grant page.
 - title, opening and note boxes: as for this source's citation above
 - headings: Extensions for payments > How it works > How a merchant installs a payments extension
 - in context: …irectly through an [installation link](https://shopify.dev/docs/apps/build/payments/onboard-a-merchant-payments-extension#payments-app-installation-url) that's shared by the payments developer, or through [Shopify's public list of payment gateways](https://help.shopify.com/manual/payments/alternative-payments) in the Shopify admin. 2. ⟪The merchant installs the app on the OAuth grant page.⟫ 3. The merchant is redirected to the payments app page to configure the payments app settings. Until configuration is complete, a banner indicates that the provider isn't ready to process payments. 4. The merchant configures the payments app. 5. The app marks itself as ready by calling the Shopify API. 6. Shopify enables the app to be…
 
 **Citation Q5-SH-C084:** `https://shopify.dev/docs/apps/build/payments.md` | How it works > How a merchant installs a payments extension | 2026-10-11 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: The merchant is redirected to the payments app page to configure the payments app settings. Until configuration is complete, a banner indicates that the provider isn't ready to process payments.
 - title, opening and note boxes: as for this source's citation above
 - headings: Extensions for payments > How it works > How a merchant installs a payments extension
 - in context: …/docs/apps/build/payments/onboard-a-merchant-payments-extension#payments-app-installation-url) that's shared by the payments developer, or through [Shopify's public list of payment gateways](https://help.shopify.com/manual/payments/alternative-payments) in the Shopify admin. 2. The merchant installs the app on the OAuth grant page. 3. ⟪The merchant is redirected to the payments app page to configure the payments app settings. Until configuration is complete, a banner indicates that the provider isn't ready to process payments.⟫ 4. The merchant configures the payments app. 5. The app marks itself as ready by calling the Shopify API. 6. Shopify enables the app to be activated by the merchant in the Shopify admin. 7. The merchant activates the app. 8. The merchant [deactivates the legacy payment gateway](https://help.shopify.com/manual/payments/alternative-paym…
 
 **Citation Q5-SH-C085:** `https://shopify.dev/docs/apps/build/payments.md` | How it works > How a merchant installs a payments extension | 2026-10-11 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: The merchant configures the payments app.
 - title, opening and note boxes: as for this source's citation above
 - headings: Extensions for payments > How it works > How a merchant installs a payments extension
 - in context: …/help.shopify.com/manual/payments/alternative-payments) in the Shopify admin. 2. The merchant installs the app on the OAuth grant page. 3. The merchant is redirected to the payments app page to configure the payments app settings. Until configuration is complete, a banner indicates that the provider isn't ready to process payments. 4. ⟪The merchant configures the payments app.⟫ 5. The app marks itself as ready by calling the Shopify API. 6. Shopify enables the app to be activated by the merchant in the Shopify admin. 7. The merchant activates the app. 8. The merchant [deactivates the legacy payment gateway](https://help.shopify.com/manual/payments/alternative-payments) to avoid duplicate payment methods duri…
 
 **Citation Q5-SH-C086:** `https://shopify.dev/docs/apps/build/payments.md` | How it works > How a merchant installs a payments extension | 2026-10-11 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: The app marks itself as ready by calling the Shopify API.
 - title, opening and note boxes: as for this source's citation above
 - headings: Extensions for payments > How it works > How a merchant installs a payments extension
 - in context: …-payments) in the Shopify admin. 2. The merchant installs the app on the OAuth grant page. 3. The merchant is redirected to the payments app page to configure the payments app settings. Until configuration is complete, a banner indicates that the provider isn't ready to process payments. 4. The merchant configures the payments app. 5. ⟪The app marks itself as ready by calling the Shopify API.⟫ 6. Shopify enables the app to be activated by the merchant in the Shopify admin. 7. The merchant activates the app. 8. The merchant [deactivates the legacy payment gateway](https://help.shopify.com/manual/payments/alternative-payments) to avoid duplicate payment methods during checkout, if applicable. *** ## Where you can build Paymen…
 
 **Citation Q5-SH-C087:** `https://shopify.dev/docs/apps/build/payments.md` | How it works > How a merchant installs a payments extension | 2026-10-11 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: Shopify enables the app to be activated by the merchant in the Shopify admin.
 - title, opening and note boxes: as for this source's citation above
 - headings: Extensions for payments > How it works > How a merchant installs a payments extension
 - in context: … app on the OAuth grant page. 3. The merchant is redirected to the payments app page to configure the payments app settings. Until configuration is complete, a banner indicates that the provider isn't ready to process payments. 4. The merchant configures the payments app. 5. The app marks itself as ready by calling the Shopify API. 6. ⟪Shopify enables the app to be activated by the merchant in the Shopify admin.⟫ 7. The merchant activates the app. 8. The merchant [deactivates the legacy payment gateway](https://help.shopify.com/manual/payments/alternative-payments) to avoid duplicate payment methods during checkout, if applicable. *** ## Where you can build Payments extensions integrate with Shopify checkout to process payments during the cust…
 
 **Citation Q5-SH-C088:** `https://shopify.dev/docs/apps/build/payments.md` | How it works > How a merchant installs a payments extension | 2026-10-11 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: The merchant activates the app.
 - title, opening and note boxes: as for this source's citation above
 - headings: Extensions for payments > How it works > How a merchant installs a payments extension
 - in context: …age to configure the payments app settings. Until configuration is complete, a banner indicates that the provider isn't ready to process payments. 4. The merchant configures the payments app. 5. The app marks itself as ready by calling the Shopify API. 6. Shopify enables the app to be activated by the merchant in the Shopify admin. 7. ⟪The merchant activates the app.⟫ 8. The merchant [deactivates the legacy payment gateway](https://help.shopify.com/manual/payments/alternative-payments) to avoid duplicate payment methods during checkout, if applicable. *** ## Where you can build Payments extensions integrate with Shopify checkout to process payments during the customer's purchase flow. [Checkout\ \ …
 
 **Citation Q5-SH-C089:** `https://shopify.dev/docs/apps/build/payments.md` | How it works > How a merchant installs a payments extension | 2026-10-11 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: The merchant deactivates the legacy payment gateway to avoid duplicate payment methods during checkout, if applicable.
 - title, opening and note boxes: as for this source's citation above
 - headings: Extensions for payments > How it works > How a merchant installs a payments extension
@@ -461,6 +476,8 @@
 - note: first run's citation
 
 **Citation SH-S-0082:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, A. The Payment Processor | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
 - quote: The processing and settlement of Transactions ("Payment Processing") is carried out by one or more Payment Processors and any of its Financial Services Providers under the separate terms of service identified in the Payment Processor List (the "Payment Processor Terms").
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …f this Agreement, and you agree to the Payment Facilitator Terms by accepting this Agreement. The Payment Processor. The Payment Processor under this Agreement may be one or more of the entities identified for your Designated Country in the Payment Processor list available here (the "Payment Processor List"). Each Payment Processor may offer their services as an agent of one or more financial institutions (each, a "Financial Services Provider"). ⟪The processing and settlement of Transactions ("Payment Processing") is carried out by one or more Payment Processors and any of its Financial Services Providers under the separate terms of service identified in the Payment Processor List (the "Payment Processor Terms").⟫ By accepting this Agreement, you are also accepting and agreeing to be bound by all of the Payment Processor Terms applicable in your Designated Country, which, in each case, is a legal agreement between you and the applicable Payment Processor. Shopify is not a party to any of the Payment Processor Terms and is not liable to you in respect thereof. By accepting this Agreement and the Payment Processor Terms for your Designated Country you are a…
@@ -558,6 +575,7 @@
 - note: first run's citation
 
 **Citation SH-S-0445:** `https://shopify.dev/docs/apps/build/payments.md` | Build options | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: There are five types of payments extensions:
 - title: Extensions for payments
 - the page opens: Payments extensions integrate with the Shopify admin and checkout to provide customized payment processing services for merchants. Only approved Partners can build payments extensions on Shopify's Payments Platform. Payments extensions provide merchant stores with the following features: * provide additional payment methods * perform specific operations on payment methods * control payment security for buyers * automate payment services, such as reoccurring payments * decide if they want to capt…

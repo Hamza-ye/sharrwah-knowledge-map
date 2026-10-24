@@ -56,6 +56,7 @@
 - cite_ids: WC-S-0874
 
 **Citation WC-S-0874:** `https://woocommerce.com/document/shop-currency/` | Shop currency | 2026-10-09 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/040-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:02Z, captured)
 - quote: WooCommerce only allows for one base currency per store.
 - title: Shop currency: documentation - WooCommerce
 - in context: … displays and charges in. It does not convert any amounts for you. Your product prices keep the same numbers. A product priced at 10 will show as 10 in the new currency, not a converted amount - update your prices yourself if you need to. Orders placed before the change keep the currency and symbol they were placed in, and their totals stay the same. Check that your payment gateway supports the new currency before you switch. Multiple currencies ⟪WooCommerce only allows for one base currency per store.⟫ If you'd like to display products in different currencies (or allow customers to pay in a currency that differs from your shop's base currency), you will need to add a multi-currency extension/plugin. We urge you to evaluate the reasons for opting for a multi-currency setup to help choose the right extension(s) to help achieve your goals. Here are some options for additional currencies: WooPayments gives you free access to multi-currency functio…
@@ -73,6 +74,7 @@
 - cite_ids: WC-S-0876
 
 **Citation WC-S-0876:** `https://woocommerce.com/document/shop-currency/` | Setting a store’s base currency | 2026-10-09 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/040-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:02Z, captured)
 - quote: Each WooCommerce store can set one base currency. WooCommerce uses it to display product prices and record new orders.
 - title: Shop currency: documentation - WooCommerce
 - in context: … Site administration / Store settings / Shop currency Shop currency Currency settings ↑ Back to top WooCommerce has several currency options to choose from when setting up your store. This document will guide you through the following: How to set your shop's base currency. Suggestions for displaying products in currencies other than your base currency. Basic information about exchange rates and fees. Setting a store's base currency ↑ Back to top ⟪Each WooCommerce store can set one base currency. WooCommerce uses it to display product prices and record new orders.⟫ Before changing the currency, confirm that your payment gateway supports it. You need access to WooCommerce settings in your WordPress dashboard. To set the store's currency: From your WordPress admin, navigate to WooCommerce > Settings > General and scroll to the bottom of that screen. Under the Currency options, configure your currency settings as needed: Currency: Choose the currency the store will display on products. Currency position: Choo…
@@ -108,6 +110,7 @@
 - from: held
 
 **Citation Q7-WC-C013:** `https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/` | Configuring multi-currency | 2026-09-25 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/058-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:04Z, captured)
 - quote: Initially, the Enabled currencies list will only show your default store currency.
 - title: Multi-currency with WooPayments Documentation - WooCommerce
 - in context: …at. Enabling multi-currency ↑ Back to top To enable the multi-currency feature, if it's not already: Go to Payments > Settings in your WordPress dashboard. Scroll down to the bottom and click on Advanced settings. Check the Enable Multi-Currency box. Click Save changes at the bottom. Configuring multi-currency ↑ Back to top Once WooPayments multi-currency has been enabled, a tab for it's settings will be added to the WooCommerce > Settings page. ⟪Initially, the Enabled currencies list will only show your default store currency.⟫ Enabled currencies ↑ Back to top Clicking the Add/remove currencies button will show a list of supported currencies. From this list, you can select all the currencies that you want to allow your customers to view prices in. After selecting any additional currencies you'd like to add to your store, click Update selected to save that list. Afterward, the Enabled currencies list will reflect those changes. Currencies can also be removed by unchecki…
@@ -126,6 +129,7 @@
 - from: held
 
 **Citation Q7-WC-C029:** `https://woocommerce.com/document/shop-currency/` | Multiple currencies | 2026-10-09 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/040-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:02Z, captured)
 - quote: Currency Converter Widget changes the display of prices only. It will not change the currency you charge customers — your store’s base currency is still used.
 - title: Shop currency: documentation - WooCommerce
 - in context: … in a currency that differs from your shop's base currency), you will need to add a multi-currency extension/plugin. We urge you to evaluate the reasons for opting for a multi-currency setup to help choose the right extension(s) to help achieve your goals. Here are some options for additional currencies: WooPayments gives you free access to multi-currency functionality, enabling customers to view and pay for products in their preferred currency. ⟪Currency Converter Widget changes the display of prices only. It will not change the currency you charge customers - your store's base currency is still used.⟫ Using the Currency Converter Widget enables your store to run on a single currency, which simplifies store administration, accounting, and general maintenance; and helps customers to view your product catalog in their native currency. TIV Multi-Currency for WooCommerce allows customers to pay in the currency of their choice. MultilingualPress can display your content, products, and prices in multiple languages and currencies. Currency Switcher f…
@@ -144,6 +148,7 @@
 - from: held
 
 **Citation Q7-WC-C004:** `https://woocommerce.com/document/woopayments/currencies/currencies-overview/` | Currencies in a transaction | 2026-09-25 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/057-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:04Z, captured)
 - quote: The payout currency is the currency in which funds are paid out into your bank account.
 - title: Currencies with WooPayments Documentation - WooCommerce
 - in context: …ntially involve multiple currencies: The customer currency is the currency displayed to customers while they browse your store and the currency they are charged in when they pay for their order. This can also be referred to as the "presentment currency." By default, the customer currency will be the same as the store currency in your WooCommerce settings. Using WooPayments' built-in multi-currency functions, the customer currency can be changed. ⟪The payout currency is the currency in which funds are paid out into your bank account.⟫ This can also be referred to as the "settlement currency." The payout currency may not always be the same as the customer currency. For some merchants, it's possible to receive payouts in different currencies into different bank accounts. Tracking currencies The WooPayments dashboard can track the currencies involved in each transaction, including payouts, payments, and disputes. This section highlights the elements of the dashboard that provide…
@@ -161,6 +166,8 @@
 - cite_ids: WC-S-0535
 
 **Citation WC-S-0535:** `https://woocommerce.com/document/woopayments/payouts/payout-currencies/` | Payout currencies | 2026-09-25 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/075-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:05Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/098-woocommerce.com/text.txt` (fetched 2026-10-12T10:51:09Z, captured)
 - quote: If you take a payment in a currency that doesn’t match the currency of one of your bank accounts, it will be converted into your default currency and paid out into the default account.
 - title: Payout currencies Documentation - WooCommerce
 - in context: …cumentation / WooPayments: Payouts / Payout currencies Payout currencies WooPayments can accept payments in over 100 different currencies. However, if the customer's currency differs from your account's payout currency, you will be charged a currency conversion fee. To avoid these fees, you may be able to have funds in different currencies paid out into separate bank accounts. When using multiple bank accounts, one must be chosen as the default. ⟪If you take a payment in a currency that doesn't match the currency of one of your bank accounts, it will be converted into your default currency and paid out into the default account.⟫ EXAMPLE: A merchant in Germany sells goods throughout Europe, and has a default bank account in Euros. They have also added a second bank account denominated in Swiss francs. As a result, payouts for orders that were paid for in Swiss francs will be sent to the Swiss franc bank account. Payments for other orders will be converted to Euros (if needed) and paid out into the default Euro bank account. Eligibility To see if you are eligible to add b…
@@ -194,6 +201,8 @@
 - cite_ids: WC-S-0536
 
 **Citation WC-S-0536:** `https://woocommerce.com/document/woopayments/payouts/payout-currencies/` | Eligibility | 2026-09-25 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/075-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:05Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/098-woocommerce.com/text.txt` (fetched 2026-10-12T10:51:09Z, captured)
 - quote: If your country only has a single currency listed, that means you can only accept payouts in that currency, and those payouts can only be sent to banks in your country.
 - title: Payout currencies Documentation - WooCommerce
 - in context: …LE PAYOUT CURRENCIES Australia AUD Bulgaria BGN, CHF, DKK, EUR, GBP, NOK, SEK, USD Canada CAD, USD Czech Republic CHF, CZK, DKK, EUR, GBP, NOK, SEK, USD Hong Kong HKD Hungary CHF, DKK, EUR, GBP, HUF, NOK, SEK, USD Japan JPY New Zealand NZD Poland CHF, DKK, EUR, GBP, NOK, PLN, SEK, USD Romania CHF, DKK, EUR, GBP, NOK, RON, SEK, USD Singapore SGD United Arab Emirates AED United States USD Other supported countries CHF, DKK, EUR, GBP, NOK, SEK, USD ⟪If your country only has a single currency listed, that means you can only accept payouts in that currency, and those payouts can only be sent to banks in your country.⟫ The rest of this section - including the second chart below - does not apply to you. If your country does have multiple currencies listed, consult the second chart below, which lists the countries where you can pay out funds in each currency. CURRENCY CAN BE PAID OUT TO BANKS IN... AED United Arab Emirates AUD Australia BGN Bulgaria CAD Canada CHF Liechtenstein, Switzerland CZK Czech Republic DKK Denmark EUR Austria, Belgium, Bulgaria, Croatia, …
@@ -211,6 +220,7 @@
 - from: held
 
 **Citation Q7-WC-C027:** `https://woocommerce.com/document/shop-currency/` | Changing the base currency | 2026-10-09 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/040-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:02Z, captured)
 - quote: Orders placed before the change keep the currency and symbol they were placed in, and their totals stay the same.
 - title: Shop currency: documentation - WooCommerce
 - in context: …nd its functionality, we recommend working with a Woo Agency Partner or a WooCommerce developer on Codeable. Changing the base currency ↑ Back to top Changing your base currency changes which currency your store displays and charges in. It does not convert any amounts for you. Your product prices keep the same numbers. A product priced at 10 will show as 10 in the new currency, not a converted amount - update your prices yourself if you need to. ⟪Orders placed before the change keep the currency and symbol they were placed in, and their totals stay the same.⟫ Check that your payment gateway supports the new currency before you switch. Multiple currencies ↑ Back to top WooCommerce only allows for one base currency per store. If you'd like to display products in different currencies (or allow customers to pay in a currency that differs from your shop's base currency), you will need to add a multi-currency extension/plugin. We urge you to evaluate the reasons for opting for a multi-currency setup to hel…
@@ -237,6 +247,7 @@
 - from: held
 
 **Citation Q7-WC-C019:** `https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/` | Refunds and currencies | 2026-09-25 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/058-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:04Z, captured)
 - quote: If you refund a currency-converted payment, the amount deducted from your balance is converted to the customer currency using the exchange rate at the time you issued the refund.
 - title: Multi-currency with WooPayments Documentation - WooCommerce
 - in context: …rance > Widgets and look for the "Currency Switcher" widget and add it to the best location in your theme. In the widget setting, choose if you want the widget to display currency symbols and flags next to the currency name. Customer default currency ↑ Back to top Lastly, your customers can choose their preferred currency on the My Account > Account Details page. Selecting your default currency as a customer. Refunds and currencies ↑ Back to top ⟪If you refund a currency-converted payment, the amount deducted from your balance is converted to the customer currency using the exchange rate at the time you issued the refund.⟫ Since exchange rates can vary over time, the amount deducted from your balance may be more or less than the original payment. Put another way: the customer will always be refunded the exact amount that they paid and in the currency that they paid in, regardless of any rate fluctuations between the time of the transaction and the time of the refund. For example, if your payout currency is EUR and you receive a 60 USD order when the exchange rate …
@@ -271,6 +282,7 @@
 - from: held
 
 **Citation Q7-WC-C048:** `https://woocommerce.com/document/woopayments/managing-money/` | Overview | 2026-09-25 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/090-woocommerce.com/text.txt` (fetched 2026-10-12T10:51:01Z, captured)
 - quote: If you have added multiple bank accounts to receive payouts in different currencies, a dropdown is shown so you can view your balance in each currency.
 - title: Managing Money with WooPayments Documentation - WooCommerce
 - in context: …ey can move through your site and your account. This document explains how WooPayments presents information to you about where your money came from and where it's going. Overview ↑ Back to top The Payments > Overview page gives you a brief summary of how money is flowing through your WooPayments account. The top section shows your account balance. Click the question mark icons to learn more about what each figure means, or consult this document. ⟪If you have added multiple bank accounts to receive payouts in different currencies, a dropdown is shown so you can view your balance in each currency.⟫ Occasionally, the top box may change, such as if you have a dispute nearing its deadline or if there's another time-sensitive action needed for your account. To keep your store and WooPayments account running smoothly, it is recommended that you attend to any tasks that appear here. Below that, the Payouts section shows a list of your recent payouts and their amounts. The Account Details section shows your account's status. In most cases, your a…

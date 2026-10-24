@@ -90,6 +90,7 @@
 - from: held
 
 **Citation Q4-BC-C025:** `https://support.bigcommerce.com/s/article/Creating-a-Manual-Order` | introduction | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/019-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:15Z, captured)
 - quote: Manual orders can reference an offline payment such as cash or check, or you can manually enter their credit card details if you are using a non-hosted payment gateway.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -108,6 +109,8 @@
 - from: held
 
 **Citation Q4-BC-C006:** `https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US` | Configuring Offline Payment Methods (list of tabs) | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/022-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:42Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/006-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:57Z, captured)
 - quote: Bank deposit Cash on delivery Check Money order Pay in store
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -127,6 +130,8 @@
 - from: held
 
 **Citation Q4-BC-C007:** `https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US` | Configuring Offline Payment Methods: Bank Deposit | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/022-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:42Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/006-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:57Z, captured)
 - quote: Display Name — Enter what will your customers see this option called during checkout.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -162,6 +167,8 @@
 - cite_ids: BC-S-0111
 
 **Citation BC-S-0111:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/transactions.md` | page introduction | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/053-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:08Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/002-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T10:49:37Z, captured)
 - quote: The Transactions API lets you create transaction records in BigCommerce for payments that were processed externally. This enables merchants to use BigCommerce for post-order actions such as capture, void, and refund on transactions that originated outside of BigCommerce.
 - title: Transactions API (Beta)
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. The Transactions API lets you create transaction records in BigCommerce for payments that were processed externally. This enables merchants to use BigCommerce for post-order actions such as capture, v…
@@ -182,12 +189,16 @@
 - from: held
 
 **Citation Q4-BC-C022:** `https://support.bigcommerce.com/s/article/Processing-Refunds` | FAQ: When can I perform an offline refund? | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/023-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:43Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/007-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:59Z, captured)
 - quote: In this case, performing an offline refund is an optional manual process to record (within BigCommerce) that a refund has been actioned against an order.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …t your restocking fee from the total amount to refund to the customer. We recommend clearly stating your restocking fee in your returns policy page. REFUND METHODS When can I perform an offline refund? You can perform an offline refund if: You are refunding a customer who paid via an offline payment method (cash, bank deposit, cheque or money order). You actioned the refund directly via the payment gateway/processor, and not through BigCommerce. ⟪In this case, performing an offline refund is an optional manual process to record (within BigCommerce) that a refund has been actioned against an order.⟫ This ensures that your order information is up-to-date on your BigCommerce store, which is important if you perform future partial refunds against the same order. Can I refund an order that was paid with a gift certificate? Yes. In this case, you will technically not be refunding the funds back to the gift certificate, but crediting the customer's account with store credit. Can I refund an order that was paid with store credit? Yes. As with gift…
 
 **Citation Q4-BC-C023:** `https://support.bigcommerce.com/s/article/Processing-Refunds` | FAQ: When can I perform an offline refund? | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/023-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:43Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/007-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:59Z, captured)
 - quote: You are refunding a customer who paid via an offline payment method (cash, bank deposit, cheque or money order).
 - title, opening and note boxes: as for this source's citation above
 - in context: …th that product will be removed from the order if the product is removed. How can I charge a restocking fee when refunding a returned order? While you cannot add a charge when processing a return, you can deduct your restocking fee from the total amount to refund to the customer. We recommend clearly stating your restocking fee in your returns policy page. REFUND METHODS When can I perform an offline refund? You can perform an offline refund if: ⟪You are refunding a customer who paid via an offline payment method (cash, bank deposit, cheque or money order).⟫ You actioned the refund directly via the payment gateway/processor, and not through BigCommerce. In this case, performing an offline refund is an optional manual process to record (within BigCommerce) that a refund has been actioned against an order. This ensures that your order information is up-to-date on your BigCommerce store, which is important if you perform future partial refunds against the same order. Can I refund an order that was paid…
@@ -206,17 +217,23 @@
 - from: held
 
 **Citation Q4-BC-C012:** `https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US` | What is an Open Payment Provider fee? | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/022-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:42Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/006-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:57Z, captured)
 - quote: For stores on self-serve plans, orders processed using offline payment methods and payment providers that are not on our Embedded Payment Provider list are assessed an Open Payment Provider fee.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …works Requirements Enabling offline payment methods Configuring offline payment methods FAQ Offline payment methods are ways to pay for orders that do not require a credit card or a traditional payment gateway. These can be helpful alternatives to make payments attainable for shoppers. Unlike most online payment methods, such as through a payment gateway, collecting payment is not immediate in these methods. What is an Open Payment Provider fee? ⟪For stores on self-serve plans, orders processed using offline payment methods and payment providers that are not on our Embedded Payment Provider list are assessed an Open Payment Provider fee.⟫ Orders processed through Embedded Payment Providers and Performance plan stores operating under contracted terms are not subject to this fee. How It Works Once enabled, shoppers will see your offline method as an available payment method at checkout. After the customer places their order, they will be shown the information and instructions you configured during setup in their email invoice and on the order confirmation page. Orders placed using …
 
 **Citation Q4-BC-C013:** `https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US` | What is an Open Payment Provider fee? | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/022-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:42Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/006-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:57Z, captured)
 - quote: Orders processed through Embedded Payment Providers and Performance plan stores operating under contracted terms are not subject to this fee.
 - title, opening and note boxes: as for this source's citation above
 - in context: …ayment gateway. These can be helpful alternatives to make payments attainable for shoppers. Unlike most online payment methods, such as through a payment gateway, collecting payment is not immediate in these methods. What is an Open Payment Provider fee? For stores on self-serve plans, orders processed using offline payment methods and payment providers that are not on our Embedded Payment Provider list are assessed an Open Payment Provider fee. ⟪Orders processed through Embedded Payment Providers and Performance plan stores operating under contracted terms are not subject to this fee.⟫ How It Works Once enabled, shoppers will see your offline method as an available payment method at checkout. After the customer places their order, they will be shown the information and instructions you configured during setup in their email invoice and on the order confirmation page. Orders placed using an offline payment method are placed in Awaiting Payment order status. After receiving the payment, you can manually set the order to the Awai…
 
 **Citation Q4-BC-C014:** `https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US` | OFFLINE PAYMENT METHODS | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:35Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:51Z, captured)
 - quote: In addition to the above payment gateway integrations, orders processed using offline payment methods are also subject to the Open Payment Provider fee.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -272,6 +289,7 @@
 - from: held
 
 **Citation Q4-BC-C027:** `https://support.bigcommerce.com/s/article/Creating-a-Manual-Order` | Requirements | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/019-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:15Z, captured)
 - quote: To select the Manual payment option during the Payment step, the Finalize Manual Orders using Manual Payments permission must be enabled.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -290,6 +308,7 @@
 - from: held
 
 **Citation Q4-BC-C034:** `https://support.bigcommerce.com/s/article/Using-Multiple-Currencies` | transactional currencies | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:41:00Z, captured)
 - quote: All offline payment methods support additional transactional currencies.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…

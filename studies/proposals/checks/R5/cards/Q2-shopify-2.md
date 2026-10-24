@@ -239,6 +239,8 @@
 - note: first run's citation
 
 **Citation SH-S-0007:** `https://www.shopify.com/legal/terms` | 13. Shopify Contracting Party and Forum, table row "All other jurisdictions" | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: Shopify International Limited, a private company limited by shares incorporated in Ireland under registration number 560279
 - title: Shopify Terms of Service - Shopify
 - in context: …defined Section 13.4 below. 151 O'Connor Street, Ground floor, Ottawa, Ontario, K2P 2L8, Canada Asia Pacific (including Australia, New Zealand, China, Japan, and Singapore) Shopify Commerce Singapore Pte. Ltd, a corporation formed under the laws of Singapore 77 Robinson Road, #13-00 Robinson 77, Singapore 068896 Courts of Singapore All other jurisdictions (including EMEA, Europe, the Middle East, Africa, South America, the Caribbean, and Mexico) ⟪Shopify International Limited, a private company limited by shares incorporated in Ireland under registration number 560279⟫ (VAT number IE 3347697KH) The Sidings, 4th Floor, Grand Canal Quay, Dublin D02 E7K8, Ireland Courts of Ireland Billing and Collection. Shopify Inc. may act as the billing agent for Shopify Technology (USA) Inc. and/or another Shopify Contracting Party, including to collect and remit Fees and remit taxes in some jurisdictions, as applicable. Regulated Payment Services (Canada). The Shopify Contracting Party shall be Shopify Payment Activities Inc…
@@ -258,6 +260,8 @@
 - note: first run's citation
 
 **Citation SH-S-0009:** `https://www.shopify.com/legal/terms` | 13. Shopify Contracting Party and Forum, Regulated Payment Services (Canada) | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: Regulated Payment Services (Canada). The Shopify Contracting Party shall be Shopify Payment Activities Inc., solely with respect to any aspect of the Services that are payment activities regulated under the Canadian Retail Payment Activities Act ("Regulated Payment Services").
 - title: Shopify Terms of Service - Shopify
 - in context: …onal Limited, a private company limited by shares incorporated in Ireland under registration number 560279 (VAT number IE 3347697KH) The Sidings, 4th Floor, Grand Canal Quay, Dublin D02 E7K8, Ireland Courts of Ireland Billing and Collection. Shopify Inc. may act as the billing agent for Shopify Technology (USA) Inc. and/or another Shopify Contracting Party, including to collect and remit Fees and remit taxes in some jurisdictions, as applicable. ⟪Regulated Payment Services (Canada). The Shopify Contracting Party shall be Shopify Payment Activities Inc., solely with respect to any aspect of the Services that are payment activities regulated under the Canadian Retail Payment Activities Act ("Regulated Payment Services").⟫ 14. Term and Termination Which means To initiate a termination, you must contact Support. Shopify will respond with specific information regarding the termination process for your account. Once termination is confirmed, domains purchased through Shopify will no longer be automatically renewed. If you cancel in the middle of your billing cycle, you'll have one last email invoice. We may terminate your account at any time. The term of these Terms …
@@ -276,6 +280,8 @@
 - note: first run's citation, moved from boundary: governing law of the Terms of Service is a legal placement, not a boundary of the software
 
 **Citation SH-S-0010:** `https://www.shopify.com/legal/terms` | 16. General Conditions | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: The Terms of Service will be governed by and interpreted in accordance with the laws of the Province of Ontario and the laws of Canada applicable therein, without regard to principles of conflicts of laws.
 - title: Shopify Terms of Service - Shopify
 - in context: …f Service, unless otherwise provided in these Terms of Service, no person or entity who is not a party to these Terms of Service will have any right to enforce any term of these Terms of Service, regardless of whether such person or entity has been identified by name, as a member of a class or as answering a particular description. For the avoidance of doubt, this will not affect the rights of any permitted assignee or transferee of these Terms. ⟪The Terms of Service will be governed by and interpreted in accordance with the laws of the Province of Ontario and the laws of Canada applicable therein, without regard to principles of conflicts of laws.⟫ The United Nations Convention on Contracts for the International Sale of Goods will not apply to these Terms of Service. The Terms of Service may be available in languages other than English. To the extent of any inconsistencies or conflicts between these English Terms of Service and Shopify's Terms of Service available in another language, the most current English version of the Terms of Service at https://www.shopify.com/legal/aup will prevail…
@@ -294,6 +300,8 @@
 - note: first run's citation
 
 **Citation SH-S-0083:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, A. The Payment Processor | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
 - quote: Shopify is not a party to any of the Payment Processor Terms and is not liable to you in respect thereof.
 - title: Shopify Payments Terms of Service - Shopify
 - in context: … is carried out by one or more Payment Processors and any of its Financial Services Providers under the separate terms of service identified in the Payment Processor List (the "Payment Processor Terms"). By accepting this Agreement, you are also accepting and agreeing to be bound by all of the Payment Processor Terms applicable in your Designated Country, which, in each case, is a legal agreement between you and the applicable Payment Processor. ⟪Shopify is not a party to any of the Payment Processor Terms and is not liable to you in respect thereof.⟫ By accepting this Agreement and the Payment Processor Terms for your Designated Country you are agreeing to open financial accounts and/or cryptocurrency wallets with one or more Payment Processors for Payment Processing (each a "Payment Processor Account"). You authorize Shopify to determine which Payment Processor Account(s) we will facilitate opening on your behalf, and where you have multiple Payment Processor Accounts, which Payment Process…
@@ -339,6 +347,7 @@
 - note: first run's citation
 
 **Citation SH-S-0298:** `https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md` | introduction | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/101-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: Shopify is unable to support business involving certain regions due to local regulatory requirements, commercial partnerships, and/or other pertinent factors.
 - title: Unsupported countries and regions
 - the page opens: Shopify is unable to support business involving certain regions due to local regulatory requirements, commercial partnerships, and/or other pertinent factors. The following list contains the countries and regions that aren't supported by Shopify: * Cuba * Iran * North Korea * Syria * The Crimea region of Ukraine, and the so-called Donetsk and Luhansk People's Republics in Ukraine The following restrictions apply to all users of Shopify: * Individuals and businesses within unsupported countries a…
@@ -359,6 +368,7 @@
 - note: first run's citation
 
 **Citation SH-S-0272:** `https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/105-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:06Z, captured)
 - quote: Third-party transaction fees cover the cost for Shopify to provide a secure checkout platform and integrate with external payment providers.
 - title: Third-party transaction fees on your Shopify bills
 - the page opens: Third-party transaction fees cover the cost for Shopify to provide a secure checkout platform and integrate with external payment providers. Transaction fees vary depending on the Shopify plan that you choose, and are charged in the following circumstances: * When you use a third-party payment provider to accept customer payments. * When an order includes store credit or gift cards as a payment method, on Shopify stores created on or after May 12, 2025. For example, if your store uses Shopify Pa…
@@ -383,6 +393,8 @@
 - note: first run's citation, moved from decides: the sentence names a Shopify affiliate acting as Payment Facilitator, which answers who is responsible
 
 **Citation SH-S-0081:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, A. The Shopify Payments Service | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
 - quote: In certain Designated Countries, pursuant to separate Payment Facilitator Terms, a Shopify affiliate acts as a Payment Facilitator (as defined in the Payment Facilitator Terms) to facilitate your acceptance of Transactions (as defined below).
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …r, Grand Canal Quay, Dublin D02 E7K8, Ireland Australia, Hong Kong, Japan, New Zealand, Singapore, Shopify Commerce Singapore Pte. Ltd., organized under the laws of Singapore, with offices at 77 Robinson Road, 13-00 Robinson 77, Singapore 068896 None of the Shopify entities listed above are licensed as a bank, payment institution, or money services business, but are instead, respectively, a supplier of the Payments Services under this Agreement. ⟪In certain Designated Countries, pursuant to separate Payment Facilitator Terms, a Shopify affiliate acts as a Payment Facilitator (as defined in the Payment Facilitator Terms) to facilitate your acceptance of Transactions (as defined below).⟫ The Designated Countries where a Shopify affiliate acts as a Payment Facilitator are listed in the Payment Facilitator Terms. If your Designated Country is one where a Shopify affiliate acts as a Payment Facilitator, the Payment Facilitator Terms apply and form part of this Agreement, and you agree to the Payment Facilitator Terms by accepting this Agreement. The Payment Processor. The Payment Processor under this Agreement may be one or more of…

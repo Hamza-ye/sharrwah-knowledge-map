@@ -67,6 +67,7 @@
 - note: first run's citation; the item sits under the list of unsupported countries and regions
 
 **Citation SH-S-0303:** `https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md` | list of unsupported countries and regions | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/101-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: * The Crimea region of Ukraine, and the so-called Donetsk and Luhansk People’s Republics in Ukraine
 - title: Unsupported countries and regions
 - the page opens: Shopify is unable to support business involving certain regions due to local regulatory requirements, commercial partnerships, and/or other pertinent factors. The following list contains the countries and regions that aren't supported by Shopify: * Cuba * Iran * North Korea * Syria * The Crimea region of Ukraine, and the so-called Donetsk and Luhansk People's Republics in Ukraine The following restrictions apply to all users of Shopify: * Individuals and businesses within unsupported countries a…
@@ -87,6 +88,7 @@
 - note: first run's citation
 
 **Citation SH-S-0304:** `https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md` | restrictions that apply to all users | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/101-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: * Individuals and businesses within unsupported countries and regions are prohibited from creating a Shopify account.
 - title: Unsupported countries and regions
 - the page opens: Shopify is unable to support business involving certain regions due to local regulatory requirements, commercial partnerships, and/or other pertinent factors. The following list contains the countries and regions that aren't supported by Shopify: * Cuba * Iran * North Korea * Syria * The Crimea region of Ukraine, and the so-called Donetsk and Luhansk People's Republics in Ukraine The following restrictions apply to all users of Shopify: * Individuals and businesses within unsupported countries a…
@@ -107,6 +109,7 @@
 - note: first run's citation
 
 **Citation SH-S-0306:** `https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md` | restrictions that apply to all users | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/101-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: * Products originating from unsupported countries and regions are prohibited.
 - title: Unsupported countries and regions
 - the page opens: Shopify is unable to support business involving certain regions due to local regulatory requirements, commercial partnerships, and/or other pertinent factors. The following list contains the countries and regions that aren't supported by Shopify: * Cuba * Iran * North Korea * Syria * The Crimea region of Ukraine, and the so-called Donetsk and Luhansk People's Republics in Ukraine The following restrictions apply to all users of Shopify: * Individuals and businesses within unsupported countries a…
@@ -127,6 +130,7 @@
 - note: first run's citation
 
 **Citation SH-S-0307:** `https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md` | restrictions that apply to all users | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/101-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: * Orders shipping to unsupported countries and regions are prohibited.
 - title: Unsupported countries and regions
 - the page opens: Shopify is unable to support business involving certain regions due to local regulatory requirements, commercial partnerships, and/or other pertinent factors. The following list contains the countries and regions that aren't supported by Shopify: * Cuba * Iran * North Korea * Syria * The Crimea region of Ukraine, and the so-called Donetsk and Luhansk People's Republics in Ukraine The following restrictions apply to all users of Shopify: * Individuals and businesses within unsupported countries a…
@@ -147,6 +151,8 @@
 - note: first run's citation
 
 **Citation SH-S-0122:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, D. (after limitation of liability) | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
 - quote: You may not use the Payments Services if you are a resident of a sanctioned country or region embargoed by the United States, Canada, or the European Union, or are a person or entity blocked or denied by the governments of the United States, Canada or the European Union.
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …d from facilities in Canada and the United States. We make no representations that the Payments Services are appropriate or available for use in other locations. Those who access or use the Payments Services from other jurisdictions do so at their own volition and are entirely responsible for compliance with all applicable United States, Canada, foreign and local laws and regulations, including, but not limited to, export and import regulations. ⟪You may not use the Payments Services if you are a resident of a sanctioned country or region embargoed by the United States, Canada, or the European Union, or are a person or entity blocked or denied by the governments of the United States, Canada or the European Union.⟫ Disputes, Choice of Law, Jurisdiction, Venue and Miscellaneous. You agree that any disputes arising out of or relating to this Agreement or the Payments Services shall be resolved in accordance with this Part I, Section D9. This Agreement is governed by the law identified below as the Governing Law for your Designated Country except for any security interest created pursuant to Part I, Section C2 above, which will be governed by and construed in…
@@ -173,6 +179,8 @@
 - note: first run's citation
 
 **Citation SH-S-0143:** `https://www.shopify.com/legal/processor-list` | introduction | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/139-shopify.com/text.txt` (fetched 2026-10-11T06:13:10Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/116-shopify.com/text.txt` (fetched 2026-10-12T10:51:22Z, captured)
 - quote: The following tables identify, for each Designated Country, (a) the Payment Processor(s), and (b) the agreements and documents that comprise the Payment Processor Terms.
 - title: Payment Processors for Shopify Payments - Shopify
 - in context: …XTEND SHOPIFY Commerce for Agents Build with our agent tools Shopify App Store Largest commerce ecosystem Shopify.dev Dev docs, CLI, and more NON-STOP INNOVATION Shopify Editions 150+ updates to Shopify, twice a year. LATEST UPDATES Agentic Storefronts Campaign Autopilot Shopify AI Toolkit for devs Pricing Enterprise Log in Start for free Payment Processors for Shopify Payments TABLE OF CONTENTS A. Global B. North America C. EMEA D. Asia-Pacific ⟪The following tables identify, for each Designated Country, (a) the Payment Processor(s), and (b) the agreements and documents that comprise the Payment Processor Terms.⟫ By accepting the Shopify Payments Terms of Service, you accept and agree to be bound by the Payment Processor Terms identified for your Designated Country. A. Global DESIGNATED COUNTRY PAYMENT PROCESSOR PAYMENT PROCESSOR TERMS All Shopify Payments regions The Bridge entity (an affiliate of Stripe) that applies based on your location. See here. Account Terms Bridge Terms B. North America DESIGNATED COUNTRY PAYMENT PROCESSOR PAYMENT PROCESSOR TERM…
@@ -191,6 +199,8 @@
 - note: first run's citation
 
 **Citation SH-S-0085:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, A. The Payment Processor | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
 - quote: We reserve the right to change the Payment Processors, subject to the terms of our agreement with each Payment Processor.
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …ur Designated Country you are agreeing to open financial accounts and/or cryptocurrency wallets with one or more Payment Processors for Payment Processing (each a "Payment Processor Account"). You authorize Shopify to determine which Payment Processor Account(s) we will facilitate opening on your behalf, and where you have multiple Payment Processor Accounts, which Payment Processor shall perform Payment Processing services for each Transaction. ⟪We reserve the right to change the Payment Processors, subject to the terms of our agreement with each Payment Processor.⟫ In the event of any inconsistency between this Agreement and any of the Payment Processor Terms, this Agreement shall prevail, except in the event of any inconsistency between this Agreement and the relevant Payment Processor Terms concerning Payment Processing or the Payment Processor Account, in which case the applicable Payment Processor Terms shall prevail. The Payment Processor's role in relation to the Payments Services is to accept and pr…
@@ -209,6 +219,7 @@
 - note: first run's citation
 
 **Citation SH-S-0424:** `https://help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/061-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:01Z, captured)
 - quote: Instead of manually activating payment methods in your settings, eligible payment methods are activated based on the regions where you sell.
 - title: Managed payment methods
 - the page opens: With managed payment methods on Shopify Payments, you can choose to automatically activate local payment methods and personalize the checkout experience for your customers. Instead of manually activating payment methods in your settings, eligible payment methods are activated based on the regions where you sell. Your customers are offered the most relevant payment options for their location, which can help increase conversion. When you activate managed payment methods, the following changes are …
@@ -230,6 +241,7 @@
 - note: first run's citation
 
 **Citation SH-S-0582:** `https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/060-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:01Z, captured)
 - quote: Each method is available only when a customer is in a supported country and selects an eligible currency.
 - title: Local payment methods
 - the page opens: Caution To offer local payment methods in countries outside your business location, ensure those countries are set up as markets. Learn more about international payments. You can activate local payment methods with Shopify Payments to offer customers region-specific ways to pay at checkout. Each method is available only when a customer is in a supported country and selects an eligible currency. Orders paid using local payment methods are included in your Shopify Payments payouts alongside credit…
@@ -251,6 +263,8 @@
 - note: first run's citation
 
 **Citation SH-S-0032:** `https://www.shopify.com/legal/terms` | 5. Payment of Fees and Taxes | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: including but not limited to applicable fees relating to the value of sales made through your Store when using all payment providers other than Shopify Payments ("Transaction Fees")
 - title: Shopify Terms of Service - Shopify
 - in context: …ent of Fees is unsuccessful within 28 days of our initial attempt to process payment, Shopify may freeze your store. You are responsible for all taxes relating to your Store or use of the Services. You may be required to remit Taxes to Shopify or to self-remit to your local taxing authority. No refunds. You will pay the Fees applicable to your subscription to Online Service and/or POS Services ("Subscription Fees") and any other applicable fees, ⟪including but not limited to applicable fees relating to the value of sales made through your Store when using all payment providers other than Shopify Payments ("Transaction Fees")⟫, and any fees relating to your purchase or use of any products or services such as Shopify Payments, POS Equipment, shipping, apps, Themes, domain names, Shopify App Store, or Third Party Services ("Additional Fees"). Together, the Subscription Fees, Transaction Fees and the Additional Fees are referred to as the "Fees". You must keep a valid payment method on file with us to pay for all incurred and recurring Fees. Shopify will charge applicabl…
@@ -269,6 +283,8 @@
 - note: first run's citation
 
 **Citation SH-S-0108:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, B. Prohibited and Restricted Businesses | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
 - quote: Prohibited Business and Restricted Business categories may be imposed by law or through the Payment Network Rules, by Shopify or the requirements of a Payment Processor's Financial Services Providers.
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …he Payments Services and Shopify Payments Account may only be used in the Designated Country. By accepting this Agreement, you confirm that you will satisfy these requirements. Prohibited and Restricted Businesses. Certain categories of businesses and business practices are prohibited from using the Payments Services ("Prohibited Businesses"), or require additional review and approval by us to use the Payments Services ("Restricted Businesses"). ⟪Prohibited Business and Restricted Business categories may be imposed by law or through the Payment Network Rules, by Shopify or the requirements of a Payment Processor's Financial Services Providers.⟫ The types of business categories and business practices that are considered Prohibited Businesses or Restricted Businesses are provided by each Payment Processor in your Designated Country and can be located at the links found in the Payment Processor List. These lists are meant to be representative but not exhaustive. If you are uncertain as to whether your business is a Prohibited Business or Restricted Business, or you have questions about ho…
@@ -287,6 +303,8 @@
 - note: first run's citation
 
 **Citation SH-S-0328:** `https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md` | Prohibited businesses and products | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/065-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:02Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/034-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:12Z, captured)
 - quote: The list of prohibited products and services isn't exhaustive and it varies depending on your region.
 - title: Shopify Payments eligibility
 - the page opens: Shopify Payments is an integrated payment gateway offered by Shopify. Only eligible merchants can use Shopify Payments. To be eligible for Shopify Payments, you must meet the following criteria: * Your business is located in a supported country. * Your business type and products aren't prohibited. * You comply with all applicable laws, regulations, and the Shopify Payments terms and conditions for your country and industry. * You must be at least 18 years old to set up a Shopify Payments account…
@@ -369,6 +387,7 @@
 - note: first run's citation
 
 **Citation SH-S-0662:** `https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings.md` | introduction | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/080-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:03Z, captured)
 - quote: Because privacy laws and regulations vary across different regions, the **Customer privacy** settings lets you customize your privacy settings for each country and region where you sell to.
 - title: Managing customer privacy settings
 - the page opens: As a Shopify merchant, it's crucial to prioritize customer privacy and comply with applicable privacy laws. To help you manage your privacy settings and maintain compliance and transparency, you can customize the Customer privacy settings in your Shopify admin. Because privacy laws and regulations vary across different regions, the Customer privacy settings lets you customize your privacy settings for each country and region where you sell to. Note The content in this section provides general in…
@@ -462,6 +481,7 @@
 - note: first run's citation
 
 **Citation SH-S-0508:** `https://help.shopify.com/en/manual/taxes.md` | Tax service availability by region | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/089-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:04Z, captured)
 - quote: The tax services or settings that you can use for your Shopify store depend on the location of your business.
 - title: Taxes
 - the page opens: As a seller, you might need to charge taxes on your sales, and then report and remit those taxes to your government. Although tax laws and regulations are complex and can change often, you can set up Shopify to automatically handle most common sales tax calculations. You can also set up tax overrides to address unique tax laws and situations. Shopify uses many default sales tax rates, which are updated regularly. If you use the default rates, then you need to confirm that the rates are current a…
@@ -483,6 +503,7 @@
 - note: first run's citation
 
 **Citation SH-S-0514:** `https://help.shopify.com/en/manual/taxes/shopify-tax/considerations.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/096-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: Calculations using Shopify Tax are available only for certain transactions, where the order's destination is a location in the United States, European Union, United Kingdom, or Canada.
 - title: Considerations for using Shopify Tax
 - the page opens: Note This guide is for merchants who use Shopify Tax calculations to sell in the United States, European Union, or United Kingdom. If you set your tax rates manually, then refer to Manual tax settings. It's your responsibility to consult with local tax authorities or a tax professional to verify that you charge your customers the correct tax rates, and to ensure you file and remit your taxes correctly. Calculations using Shopify Tax are available only for certain transactions, where the order's …

@@ -115,6 +115,20 @@ class Context:
                 self.raw[key] = self.src.local_texts(source, locator)[0] or []
         return self.raw[key]
 
+    def captures(self, source):
+        """Each capture of a live address: its text file in this repository, with when it was fetched."""
+        if not re.match(r"^https?://", source or ""):
+            return []
+        key = source.split("#")[0]
+        if key not in self.src.manifest:
+            base = key[:-3] if key.endswith(".md") else key.rstrip("/")
+            key = next((k for k in (base, base + ".md", base + "/") if k in self.src.manifest), key)
+        out = []
+        for cap, r in self.src.manifest.get(key, []):
+            f = os.path.join(cap, r.get("dir", ""), r.get("text_file") or r.get("primary_file") or "")
+            out.append(f"`{os.path.relpath(f, SKM)}` (fetched {r.get('fetched_at', '')}, {r.get('result', '')})")
+        return out
+
     def git(self, repo, *args):
         return subprocess.run(["git", "-C", ROOTS[repo], *args], capture_output=True).stdout.decode("utf-8", "replace")
 
@@ -262,6 +276,8 @@ def citation_lines(c, ctx, label="", shown=None, width=WIDTH):
     found = ctx.src.check_quote(quote, source, locator)[0] if source and quote else "no quote"
     lines = ["", f"**Citation {c.get('cite_id')}{label}:** `{source}` | {locator} | {c.get('source_date', '')} | "
                  f"kind: {kind} | quote check: {found}"]
+    for cap in ctx.captures(source):
+        lines.append(f"- captured: {cap}")
     st, files = ctx.step(source) if source else (None, [])
     if st:
         lines.append(f"- step {st.get('step')}: {st.get('intent')} | {st.get('url')} | \"{st.get('title')}\" | "

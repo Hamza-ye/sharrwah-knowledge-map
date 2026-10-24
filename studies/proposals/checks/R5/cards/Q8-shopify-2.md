@@ -81,6 +81,8 @@
 - note: first run's citation
 
 **Citation SH-S-0058:** `https://www.shopify.com/legal/terms` | 9.9 Third Party Services and Third Party Partners | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").
 - title: Shopify Terms of Service - Shopify
 - in context: … to us sharing your data (and potentially the data of your customers) to those services. If you use third party services you agree that we do not provide a warranty, so get advice beforehand. Shopify may provide you with access to or enable third party software, applications ("Apps"), products, services or website links (collectively, "Third Party Services") for your consideration or use, including via the Shopify App Store or Partner Directory. ⟪Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").⟫ In addition to these Terms of Service, you also agree to be bound by the additional service-specific terms applicable to services you purchase from, or that are provided by, Third Party Providers. Your use of Third Party Services is entirely at your own risk and discretion, and it is your responsibility to read the terms and conditions between you and the Third Party Providers. In some instances, Shopify may receive a revenue share from Third Pa…
@@ -99,6 +101,7 @@
 - note: first run's citation
 
 **Citation SH-S-0215:** `https://www.shopify.com/legal/api-terms` | 2. Using the Shopify API | 2026-10-07 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/131-shopify.com/text.txt` (fetched 2026-10-11T06:13:09Z, captured)
 - quote: Developer must obtain an API Client by registering for a Partner Account and agreeing to and complying with the terms and conditions of the Partner Program Agreement
 - title: Shopify API License and Terms of Use - Shopify
 - in context: …ch you use the Shopify API. If you are accessing or using the Shopify API on behalf of an entity, you represent and warrant that you have the authority to bind that entity to the Terms and by accepting the Terms, you are doing so on behalf of that entity (and all references to "you" in the Terms refer to that entity). Except in the case of Private API Credentials or unauthenticated Checkout Kit access, in order to access and use the Shopify API, ⟪Developer must obtain an API Client by registering for a Partner Account and agreeing to and complying with the terms and conditions of the Partner Program Agreement⟫ shopify.com/partners/terms or other written agreement with Shopify relating to Developer's access to and use of the Shopify API and participation in the Partner Program. If you are accessing and using the Shopify API by Private API Credentials, you may only do so with the express authorization of the account owner for the applicable Merchant Store, and only for the purposes of providing your Application's service to the Merchant to whom the Priv…
@@ -161,6 +164,7 @@
 - from: held
 
 **Citation Q8-SH-C073:** `https://shopify.dev/docs/api/usage/versioning.md` | Deprecation practices | 2026-10-11 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
 - quote: When part of a Shopify API becomes unnecessary, unsafe, or outdated, it's deprecated across all supported stable versions and announced in the developer changelog with migration guidance.
 - title: About Shopify API versioning
 - the page opens: Shopify releases new API versions on a predictable quarterly schedule, giving you time to adopt changes before older versions are retired. Each version's release notes list the changes in that version, including anything that requires action. Subscribe to the developer changelog and keep your developer contact details up to date to stay informed about upcoming changes. * Versioned and unversioned APIs Not all Shopify APIs follow the same versioning model. Versioned APIs and libraries follow the …
@@ -180,6 +184,7 @@
 - from: held
 
 **Citation Q8-SH-C074:** `https://shopify.dev/docs/api/usage/versioning.md` | Deprecation practices | 2026-10-11 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
 - quote: If your app continues to use unsupported resources after the upgrade deadline, it's delisted from the Shopify App Store.
 - title: About Shopify API versioning
 - the page opens: Shopify releases new API versions on a predictable quarterly schedule, giving you time to adopt changes before older versions are retired. Each version's release notes list the changes in that version, including anything that requires action. Subscribe to the developer changelog and keep your developer contact details up to date to stay informed about upcoming changes. * Versioned and unversioned APIs Not all Shopify APIs follow the same versioning model. Versioned APIs and libraries follow the …
@@ -259,6 +264,8 @@
 - from: held
 
 **Citation Q8-SH-C056:** `https://www.shopify.com/legal/terms` | 3. Shopify Rights | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: The Services have a range of features and functionalities. Not all Services or features will be available to all Merchants at all times and we are under no obligation to make any Services or features available in any jurisdiction.
 - title: Shopify Terms of Service - Shopify
 - in context: … make our Services available to and we can modify them at any time. We also have the right to refuse or remove Materials from any part of the Services, including your Store. We may offer our services to your competitors, but we will never share your confidential information with them in doing so. In the event of an ownership dispute over a Shopify Account, we can freeze a Shopify Account or transfer it to the rightful owner, as determined by us. ⟪The Services have a range of features and functionalities. Not all Services or features will be available to all Merchants at all times and we are under no obligation to make any Services or features available in any jurisdiction.⟫ Except where prohibited in these Terms of Service or by applicable law, we reserve the right to modify the Services or any part thereof for any reason, without notice and at any time. It is in Shopify's sole discretion to refuse or remove any Materials from any part of the Services, including if we determine in our sole discretion that the goods or services that you offer through the Services, or the Materials uploaded or posted to the Services,…
@@ -285,6 +292,8 @@
 - from: held
 
 **Citation Q8-SH-C062:** `https://www.shopify.com/legal/terms` | 9.10 Beta Services | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: From time to time, Shopify may, in its sole discretion, invite you to use, on a trial basis, pre-release or beta features that are in development and not yet available to all merchants ("Beta Services").
 - title: Shopify Terms of Service - Shopify
 - in context: …ty Service or your relationship with a Third Party Provider. 9.10 Beta Services Which means Beta Services may be offered from time to time. They are not a part of the regular Services, and they might have errors or change at any time. You use Beta Services at your own risk, and we are not responsible for any losses or harm that might come from using a Beta Service. You may be required to keep your participation in the Beta Services confidential. ⟪From time to time, Shopify may, in its sole discretion, invite you to use, on a trial basis, pre-release or beta features that are in development and not yet available to all merchants ("Beta Services").⟫ Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Shopify will provide to you prior to your use of the Beta Services. Such Beta Services and all associated conversations and materials relating thereto will be considered Shopify Confidential Information and subject to the confidentiality provisions in this agreement. Without limiting the generality of the foregoing, you agree th…
@@ -303,6 +312,8 @@
 - from: held
 
 **Citation Q8-SH-C063:** `https://www.shopify.com/legal/terms` | 9.10 Beta Services | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Shopify will provide to you prior to your use of the Beta Services.
 - title: Shopify Terms of Service - Shopify
 - in context: … errors or change at any time. You use Beta Services at your own risk, and we are not responsible for any losses or harm that might come from using a Beta Service. You may be required to keep your participation in the Beta Services confidential. From time to time, Shopify may, in its sole discretion, invite you to use, on a trial basis, pre-release or beta features that are in development and not yet available to all merchants ("Beta Services"). ⟪Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Shopify will provide to you prior to your use of the Beta Services.⟫ Such Beta Services and all associated conversations and materials relating thereto will be considered Shopify Confidential Information and subject to the confidentiality provisions in this agreement. Without limiting the generality of the foregoing, you agree that you will not make any public statements or otherwise disclose your participation in the Beta Services without Shopify's prior written consent. Shopify makes no representations or warra…
@@ -443,6 +454,7 @@
 - from: held
 
 **Citation Q8-SH-C070:** `https://shopify.dev/docs/api/usage/versioning.md` | version types | 2026-10-11 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
 - quote: * Stable: Recommended for production. Guaranteed not to change for its supported lifetime.
 - title: About Shopify API versioning
 - the page opens: Shopify releases new API versions on a predictable quarterly schedule, giving you time to adopt changes before older versions are retired. Each version's release notes list the changes in that version, including anything that requires action. Subscribe to the developer changelog and keep your developer contact details up to date to stay informed about upcoming changes. * Versioned and unversioned APIs Not all Shopify APIs follow the same versioning model. Versioned APIs and libraries follow the …
@@ -450,12 +462,14 @@
 - in context: … to each API's reference for the exact URL pattern. If you're using an official Shopify library or a Storefront SDK, version configuration is handled for you automatically. API responses include the X-Shopify-API-Version header reflecting the version used to fulfill the request. If it differs from what you requested, your app is targeting an inaccessible version and Shopify has fallen forward to the default. Shopify supports three version types: ⟪* Stable: Recommended for production. Guaranteed not to change for its supported lifetime.⟫ * Release candidate: Published on the same date as the stable release. For example, when 2026-04 releases on April 1, 2026, the 2026-07 release candidate also becomes available. May include backwards-incompatible changes, so not recommended for production. * Unstable: Updated continuously with in-progress changes. Features can be added or removed at any time with no guarantee of release. Use it for early testing only. * Deprecation practices Whe…  (matched markup removed)
 
 **Citation Q8-SH-C071:** `https://shopify.dev/docs/api/usage/versioning.md` | version types | 2026-10-11 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
 - quote: * Release candidate: Published on the same date as the stable release. For example, when 2026-04 releases on April 1, 2026, the 2026-07 release candidate also becomes available. May include backwards-incompatible changes, so not recommended for production.
 - title, opening and note boxes: as for this source's citation above
 - headings: About Shopify API versioning > Making requests to an API version
 - in context: …rary or a Storefront SDK, version configuration is handled for you automatically. API responses include the X-Shopify-API-Version header reflecting the version used to fulfill the request. If it differs from what you requested, your app is targeting an inaccessible version and Shopify has fallen forward to the default. Shopify supports three version types: * Stable: Recommended for production. Guaranteed not to change for its supported lifetime. ⟪* Release candidate: Published on the same date as the stable release. For example, when 2026-04 releases on April 1, 2026, the 2026-07 release candidate also becomes available. May include backwards-incompatible changes, so not recommended for production.⟫ * Unstable: Updated continuously with in-progress changes. Features can be added or removed at any time with no guarantee of release. Use it for early testing only. * Deprecation practices When part of a Shopify API becomes unnecessary, unsafe, or outdated, it's deprecated across all supported stable versions and announced in the developer changelog with migration guidance. Deprecated fields or types are removed in a subsequent release-for examp…  (matched markup removed)
 
 **Citation Q8-SH-C072:** `https://shopify.dev/docs/api/usage/versioning.md` | version types | 2026-10-11 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
 - quote: * Unstable: Updated continuously with in-progress changes. Features can be added or removed at any time with no guarantee of release. Use it for early testing only.
 - title, opening and note boxes: as for this source's citation above
 - headings: About Shopify API versioning > Making requests to an API version

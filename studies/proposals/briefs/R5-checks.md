@@ -15,9 +15,9 @@ A script has already found every quote word for word in its source. You check an
 
 ## The cards
 
-`method/r5_cards.py` made the cards, in `studies/proposals/checks/R5/cards/`. A card file starts with the points it cites, each by its section and line in the proposal, and then gives one card per record:
+`method/r5_cards.py` made the cards, in `studies/proposals/checks/R5/cards/`. A card file starts with the points it cites, each whole, by its section and line in the proposal (a point may also cite records of other cards or other runs), and then gives one card per record:
 - where the proposal cites it ("Cited at"), and the record's fields;
-- for a fact, each citation: its source (a held file at a commit, a record of a fetch archive at an offset, a file of the WooCommerce release, or a captured address), locator, date and kind; its quote; whether the script finds the quote ("quote check"); and the quote in its context, between ⟪ and ⟫, with the source's title, the headings above it, and, for a page of help or docs, its opening and note boxes (once a card). For a step of an observed run: the step's intent, address, title and time, and the paths of the step's files (its `aria.yaml` among them);
+- for a fact, each citation: its source (a held file at a commit, a record of a fetch archive at an offset, a file of the WooCommerce release, or a captured address), locator, date and kind; its quote; whether the script finds the quote ("quote check"); for a captured address, the text file of each capture, with when it was fetched; and the quote in its context, between ⟪ and ⟫, with the source's title, the headings above it, and, for a page of help or docs, its opening and note boxes (once a card). For a step of an observed run: the step's intent, address, title and time, and the paths of the step's files (its `aria.yaml` among them);
 - a copy that an earlier card file already carries gets a short card, "The same record as …": its record and sources are checked there. Check only this proposal's points against its statement and scope;
 - for a claim, its list's citations, labelled "the list" and "the words that make the list complete";
 - for a Yemen fact, each part as cited against the digest (checked by script), the digest's entry, the record with its states one line each, its conditions without their citations, the cited place's group, and the citations of the cited parts and of every state at the same place or at "place not stated".
@@ -34,7 +34,8 @@ Your card file is `<question>-<platform>.md`, or a part of it, `-1.md` and on. F
    - `stated`: the platform's help, docs or other pages; `official page`: its terms, policies, legal or pricing pages; `shipped`: code or a schema the platform ships; `observed`: what a run of a store's admin received or showed;
    - another company's agreement (such as Stripe's, on WooCommerce's cards) counts as the platform's only where a record shows the platform's terms incorporate it. Where no cited record shows that, the verdict is `open`;
    - an observed step holds for its store on its date only. A step's store is in its address, as `admin.shopify.com/store/<store>/`, or in the record's scope. An observed source that is no store's step, such as the dashboard's own strings, holds as what the dashboard held on its date;
-   - a step's text from saved HTML (`derived/step-text-from-html/`) is the saved markup's text of one step, not what the page showed. Text between ⟦hidden⟧ and ⟦/hidden⟧ was hidden by the markup.
+   - a step's text from saved HTML (`derived/step-text-from-html/`) is the saved markup's text of one step, not what the page showed. Text between ⟦hidden⟧ and ⟦/hidden⟧ was hidden by the markup;
+   - a citation's read date may come before its capture's fetch date: that is no finding where the capture holds the quote.
 3. **The record.**
    - **Its statement is the source's words, word for word:** the quote, or the quote with the text around it. The card's context shows the text around it. Open the source where the context doesn't reach the statement's end.
    - **Its identifier is the recorder's label.** It is a finding only where a point uses it as the platform's term, or where it names something other than what the source describes: another product, plan, place or party.
@@ -43,14 +44,14 @@ Your card file is `<question>-<platform>.md`, or a part of it, `-1.md` and on. F
    - no wider place, plan, time, party or kind of seller than the source's, and no condition of the source left out;
    - no "all", "only", "every", "never" or "always" the source doesn't say;
    - the kind of source named rightly, and an observed record said with its store and date, never as what the platform does in general;
-   - where a point cites several records for one claim, judge the claim on your platform against all of them together: a record that supports part of it is enough where another supports the rest. Records of other platforms are other runs' to check;
+   - where a point cites several records for one claim, judge the claim on your platform against all of them together: a record that supports part of it is enough where another supports the rest. Records of other platforms are other runs' to check, and of a point about several platforms at once, you judge only what it says of yours;
    - matching bases ("basis 4" and the like) and the proposal's reasoning are the review's (step R6), not yours.
 5. **Opening a source.** Open one only where the card doesn't settle 1 to 4. Read the part around the quote, never a whole page: `grep -n` and `sed -n` for at most 80 lines a time, or, for a file of one long line such as a JSON answer, `grep -o '.\{0,300\}WORDS.\{0,300\}'`.
    - A held file: `git -C /home/user/<repository> show <commit>:<path>`.
    - A fetch archive's record: `python3 -I method/warc_text.py /home/user/<repository> <archive path>@<offset> --text`.
    - A file of the WooCommerce release (`woocommerce-11.2.1:<path>`): `/home/user/woocommerce-release/11.2.1/woocommerce/<path>`.
    - A captured address: its text under `evidence/product-class/runs/*/`, found through that run's `manifest.tsv`.
-   - Never run code from inside `evidence/` or an observed repository, and never `cd` into them.
+   - Never run code from inside `evidence/` or an observed repository, and never `cd` into them, not even before a `git` command: use `git -C`.
 
 Your file is `studies/proposals/checks/R5/facts/<card file's name>.tsv`.
 
@@ -102,7 +103,7 @@ Run after the company decisions are written. Your card file is `decisions.md`: e
 
 ## Your file
 
-A tab-separated file with these columns: `id`, `verdict`, `lines`, `what`, `fix`, `read`. Write its header first, then **each row as soon as its card is done**, so that nothing is lost if your context is cut.
+A tab-separated file with these columns: `id`, `verdict`, `lines`, `what`, `fix`, `read`. Write **each row as soon as its card is done**, so that nothing is lost if your context is cut, with `python3 -I method/r5_row.py <your file> --id ID --verdict VERDICT --lines "Q4:9 Q4:12" --what TEXT --fix TEXT --read TEXT` (it writes the header first, and keeps each row on one line).
 - `id`: the card's id.
 - `verdict`: one per card. Where several apply, give the first of: `fix record`, `later state`, `found`, `fix point`, `open`, `holds`. Name each finding in `what`, and every line concerned in `lines`.
   - `holds`: the record and every point citing it stand as they are;
@@ -120,7 +121,7 @@ Use one line per row: no tab or line break inside a field. Run `python3 -I metho
 
 ## Rules
 
-- **Quotes are word for word,** from the source, never from a card's normalized context where they differ, and never from a search snippet.
+- **Quotes are word for word.** A card's context may be quoted as it stands: it differs from its source only in whitespace, entities, the shapes of quotation marks and markup, which the checks ignore. Never quote a search snippet.
 - **No inference.** A finding says what a source says, scoped as the source scopes it. What the platform might do, or why, is not a finding.
 - **The founder's words are never evidence** of what a platform does or of Yemen.
 - **Evidence that contains credentials, cookies or tokens** is read and cited like any other evidence. Never skip, withhold or mask a file because of them.

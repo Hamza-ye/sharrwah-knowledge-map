@@ -64,6 +64,8 @@
 - note: first run's citation
 
 **Citation SH-S-0385:** `https://help.shopify.com/en/manual/payments/manual-payments.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/052-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:01Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/031-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:09Z, captured)
 - quote: When your customers use a manual payment method, you can arrange to receive their payment in a way that works best for them.
 - title: Manual payment methods
 - the page opens: Some customers don't want to pay for their orders using a credit card. These customers can still place their orders online if you set up a manual payment method. When your customers use a manual payment method, you can arrange to receive their payment in a way that works best for them. You can send an invoice to your customer. After you receive the payment, you can then manually approve the order. Common types of manual payments include cash on delivery (COD), money orders, and bank transfers. I…
@@ -105,6 +107,8 @@
 - note: first run's citation
 
 **Citation SH-S-0011:** `https://www.shopify.com/legal/terms` | 4. Your Responsibilities | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: You acknowledge and agree that the Services are not a marketplace, and any contract of sale made through the Services is directly and only between you and the customer. You are the seller or merchant of record for all sales through the Services.
 - title: Shopify Terms of Service - Shopify
 - in context: …you access the Shopify API, your use of the Shopify API is subject to the API Terms. You acknowledge and agree to provide public-facing contact information, terms of service, a refund policy, and shipping policies (including order fulfilment timelines) on your Shopify Store. Public-facing contact information should include your name, address, telephone number, and email address. You should inform your customers if you use a third-party supplier. ⟪You acknowledge and agree that the Services are not a marketplace, and any contract of sale made through the Services is directly and only between you and the customer. You are the seller or merchant of record for all sales through the Services.⟫ You are responsible for the creation and operation of your Shopify Store, your Materials, the goods and services that you may sell through the Services, and all aspects of the transactions between you and your customer(s). This includes, but is not limited to, authorizing the charge to the customer in respect of the customer's purchase, determining and collecting taxes, refunds, returns, fulfilling any sales or customer service, fraudulent trans…
@@ -314,6 +318,7 @@
 - note: first run's citation
 
 **Citation SH-S-0322:** `https://help.shopify.com/en/manual/payments/shopify-payments.md` | transaction fees paragraph | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/059-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:01Z, captured)
 - quote: and you aren't charged transaction fees on manual payment methods such as cash, cash on delivery (COD), and bank transfers.
 - title: Shopify Payments
 - the page opens: Shopify Payments is the simplest way to accept payments online. It eliminates the hassle of setting up a third-party payment provider or merchant account and having to enter the credentials into Shopify. With Shopify Payments you're automatically set up to accept all major payment methods as soon as you create your Shopify store. If you already use a direct third-party payment provider, then you can also use Shopify Payments alongside your existing provider to offer additional payment methods su…

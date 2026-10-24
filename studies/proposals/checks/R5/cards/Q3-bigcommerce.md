@@ -45,6 +45,7 @@
 - note: GET https://api.bigcommerce.com/stores/{store_hash}/v3/settings/storefront/status
 
 **Citation Q3-BC-C014:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/storefront-status/get-settings-storefront-status.md` | Types: StorefrontStatus | 2026-10-19 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261019T014616Z-proposals-Q3-bigcommerce/items/001-docs.bigcommerce.com/text.txt` (fetched 2026-10-19T01:46:16Z, captured)
 - quote: `prelaunch_password` (string, optional) — A read-only value representing the auto-generated storefront password.
 - title: Get Storefront Status
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. GET https://api.bigcommerce.com/stores/{store_hash}/v3/settings/storefront/status Returns storefront status-related settings. - Channel ID can be used as a query parameter for getting channel-specific…
@@ -92,6 +93,8 @@
 - from: index:BC-C-025:BC-S-0143
 
 **Citation S01-BC-C030:** `https://www.bigcommerce.com/payments/bigcommerce-payments/` | FAQs: Where is it available? | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/100-bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:49Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/109-bigcommerce.com/text.txt` (fetched 2026-10-12T10:51:17Z, captured)
 - quote: Initially, BigCommerce Payments is available only to US-based merchants with self-serve and retail plans.
 - title: BigCommerce Payments – a native payments experience.
 - in context: …compliant? Yes. BigCommerce Payments is built with PayPal's infrastructure, which manages PCI compliance and risk controls at the platform level, so your team doesn't have to. Can I still use a third-party payments provider? BigCommerce supports multiple payment providers. Activating BigCommerce Payments does not prevent you from maintaining other gateway connections. Contact your account manager for configuration details. Where is it available? ⟪Initially, BigCommerce Payments is available only to US-based merchants with self-serve and retail plans.⟫ Additional regions and countries will be launching soon. See BigCommerce documentation or contact support to confirm whether your account qualifies. Where payments work Built with PayPal. Run inside BigCommerce. One platform for everything payments without the usual overhead slowing you down. Start your free trial PayPal is a trademark of PayPal, Inc., used under license. Availability and features may vary by region and merchant eligibility. See…
@@ -118,6 +121,8 @@
 - from: held
 
 **Citation Q3-BC-C023:** `https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en_US` | Common Questions: Account eligibility | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/019-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:39Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/004-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:54Z, captured)
 - quote: See Stripe's documentation for a list of prohibited and restricted businesses.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -144,6 +149,7 @@
 - from: held
 
 **Citation Q3-BC-C005:** `https://www.commerce.com/terms/store-terms/` | Ownership & Disputes: Generally | 2025-07-31 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/119-commerce.com/text.txt` (fetched 2026-10-12T04:21:04Z, captured)
 - quote: The entity or person who creates the Commerce Account, Store, or website will generally be deemed the owner.
 - title: Store Terms | Commerce
 - in context: … and your use of the Website or Services. Communications. You are solely responsible for all communications between you and Your Users. You represent, covenant, and warrant that all email communications between you and Your Users using the Services will be in compliance with your privacy policy and all Laws, including, without limitation, all Laws related to unsolicited emails, privacy, obscenity, and defamation. Ownership & Disputes. Generally. ⟪The entity or person who creates the Commerce Account, Store, or website will generally be deemed the owner.⟫ Commerce may allow only the owner or the point of contact designated by the owner to make changes, cancellations, or designate a new point of contact. Disclaimer. To the fullest extent permitted by applicable law, Commerce will have no obligation or liability whatsoever to you or any third party (i) to resolve any ownership dispute, or (ii) for any act taken to resolve any ownership dispute. Remedies. If a dispute arises between you and one or m…
@@ -181,6 +187,8 @@
 - from: held
 
 **Citation Q3-BC-C022:** `https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en_US` | Common Questions: Transactions | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/019-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:39Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/004-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:54Z, captured)
 - quote: There is no waiting period. However, Stripe does flag accounts for verification after a certain processing threshold.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…

@@ -68,6 +68,8 @@
 - from: held
 
 **Citation Q6-SH-C003:** `https://www.shopify.com/legal/terms` | 2. Account Activation, Which means | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: If you sign up on behalf of your employer, your employer is the Store Owner responsible for your Account.
 - title: Shopify Terms of Service - Shopify
 - in context: …, audio files, code, information, product reviews, or other business content and data provided or made available by you or on your behalf to Shopify or its affiliates. 2. Account Activation Which means Only one person can be the "Store Owner", usually the person signing up for the Shopify Service. The Store Owner is responsible for the Account, is bound by these Terms of Service and is responsible for the actions of others accessing the Account. ⟪If you sign up on behalf of your employer, your employer is the Store Owner responsible for your Account.⟫ We automatically create certain accounts for you to accept payments. You are responsible for activating and deactivating these accounts and complying with their terms, which may be with various third parties, including but not limited to PayPal, Apple Pay, Google Payment and Shop Pay. Any domain you purchase through us will automatically renew unless you opt out. 2.1 Store Owner Subject to Section 2.1.2, the person signing up for the Service by …
@@ -86,6 +88,7 @@
 - note: first run's citation
 
 **Citation SH-S-0248:** `https://help.shopify.com/en/manual/your-account/business-entities.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/100-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: A business entity is the registered business, or the individual, that your store operates as. Your business entity is used to verify your business, and it determines the information that you need to provide for financial services such as Shopify Payments.
 - title: Managing business entities
 - the page opens: A business entity is the registered business, or the individual, that your store operates as. Your business entity is used to verify your business, and it determines the information that you need to provide for financial services such as Shopify Payments. As your business grows, your business structure might change. When your business changes, you need to update the business details required for your type of business. For example, if you expand your business into international markets, then you …
@@ -109,6 +112,8 @@
 - note: first run's citation
 
 **Citation SH-S-0017:** `https://www.shopify.com/legal/terms` | 1. Account Terms | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: To complete your Account registration, you must provide us with your full legal name, business address, phone number, a valid email address, and any other information indicated as required. Shopify may reject your application for an Account, or cancel an existing Account, for any reason, at our sole discretion.
 - title: Shopify Terms of Service - Shopify
 - in context: … terms. Be sure to occasionally check back for updates. 1. Account Terms Which means You are responsible for your Account, the Materials you upload to the Shopify Service and the operation of your Shopify Store. If you violate Shopify's terms of service we may cancel your service access. If we need to reach you, we will communicate via the Primary Email Address. To access and use the Services, you must register for a Shopify account ("Account"). ⟪To complete your Account registration, you must provide us with your full legal name, business address, phone number, a valid email address, and any other information indicated as required. Shopify may reject your application for an Account, or cancel an existing Account, for any reason, at our sole discretion.⟫ You must be the older of: (i) 18 years, or (ii) at least the age of majority in the jurisdiction where you reside and from which you use the Services to open an Account. You confirm that you are receiving any Services provided by Shopify for the purposes of carrying on a business activity and not for any personal, household or family purpose. You acknowledge that Shopify will use the email address you provide on opening an Account or as updated …
@@ -126,6 +131,8 @@
 - from: held
 
 **Citation Q6-SH-C001:** `https://www.shopify.com/legal/terms` | 1. Account Terms | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: You must be the older of: (i) 18 years, or (ii) at least the age of majority in the jurisdiction where you reside and from which you use the Services to open an Account.
 - title: Shopify Terms of Service - Shopify
 - in context: … we will communicate via the Primary Email Address. To access and use the Services, you must register for a Shopify account ("Account"). To complete your Account registration, you must provide us with your full legal name, business address, phone number, a valid email address, and any other information indicated as required. Shopify may reject your application for an Account, or cancel an existing Account, for any reason, at our sole discretion. ⟪You must be the older of: (i) 18 years, or (ii) at least the age of majority in the jurisdiction where you reside and from which you use the Services to open an Account.⟫ You confirm that you are receiving any Services provided by Shopify for the purposes of carrying on a business activity and not for any personal, household or family purpose. You acknowledge that Shopify will use the email address you provide on opening an Account or as updated by you from time to time as the primary method for communication with you ("Primary Email Address"). You must monitor the Primary Email Address you provide to Shopify and…
@@ -143,6 +150,8 @@
 - from: held
 
 **Citation Q6-SH-C002:** `https://www.shopify.com/legal/terms` | 1. Account Terms | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: You confirm that you are receiving any Services provided by Shopify for the purposes of carrying on a business activity and not for any personal, household or family purpose.
 - title: Shopify Terms of Service - Shopify
 - in context: …tion, you must provide us with your full legal name, business address, phone number, a valid email address, and any other information indicated as required. Shopify may reject your application for an Account, or cancel an existing Account, for any reason, at our sole discretion. You must be the older of: (i) 18 years, or (ii) at least the age of majority in the jurisdiction where you reside and from which you use the Services to open an Account. ⟪You confirm that you are receiving any Services provided by Shopify for the purposes of carrying on a business activity and not for any personal, household or family purpose.⟫ You acknowledge that Shopify will use the email address you provide on opening an Account or as updated by you from time to time as the primary method for communication with you ("Primary Email Address"). You must monitor the Primary Email Address you provide to Shopify and your Primary Email Address must be capable of both sending and receiving messages. Your email communications with Shopify can only be authenticated if they come from your Pri…
@@ -234,6 +243,7 @@
 - note: first run's citation
 
 **Citation SH-S-0251:** `https://help.shopify.com/en/manual/your-account/business-entities.md` | Considerations | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/100-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: The country of your billing address must match the country of one of your active business entities.
 - title: Managing business entities
 - the page opens: A business entity is the registered business, or the individual, that your store operates as. Your business entity is used to verify your business, and it determines the information that you need to provide for financial services such as Shopify Payments. As your business grows, your business structure might change. When your business changes, you need to update the business details required for your type of business. For example, if you expand your business into international markets, then you …

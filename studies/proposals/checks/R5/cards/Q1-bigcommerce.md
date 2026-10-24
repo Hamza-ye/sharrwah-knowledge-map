@@ -54,12 +54,14 @@
 - from: held
 
 **Citation Q1-BC-C005:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Use Cases | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Depending on your business model, multi-storefront may work for some merchants as a multi-region or cross-border solution. However, some store functions are global and are shared across storefronts, such as the built-in blog.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …t.js, Gatsby.js, Nuxt.js, Contentful, Prismic, Contentstack, Uniform, Amplience, Shogun Frontend, and Bloomreach. Use Cases Multi-storefront can be useful for merchants who have multiple brands or who serve multiple segments like B2C, B2B, retail, and wholesale segments. You can also use additional storefronts as a marketing tool. For example, you can create a new storefront as a "microsite" that focuses on a specific product or campaign launch. ⟪Depending on your business model, multi-storefront may work for some merchants as a multi-region or cross-border solution. However, some store functions are global and are shared across storefronts, such as the built-in blog.⟫ Additionally, even though the same product can be assigned to different storefronts, product attributes (like description and name) cannot be overridden into a different language without customization. Stores on a Performance plan will have access to additional product localization fields. Features With multiple native storefronts, you can do all of this within the control panel: Create and manage multiple BigCommerce storefronts within a single…
 
 **Citation Q1-BC-C006:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Use Cases | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Additionally, even though the same product can be assigned to different storefronts, product attributes (like description and name) cannot be overridden into a different language without customization. Stores on a Performance plan will have access to additional product localization fields.
 - title, opening and note boxes: as for this source's citation above
 - in context: …ike B2C, B2B, retail, and wholesale segments. You can also use additional storefronts as a marketing tool. For example, you can create a new storefront as a "microsite" that focuses on a specific product or campaign launch. Depending on your business model, multi-storefront may work for some merchants as a multi-region or cross-border solution. However, some store functions are global and are shared across storefronts, such as the built-in blog. ⟪Additionally, even though the same product can be assigned to different storefronts, product attributes (like description and name) cannot be overridden into a different language without customization. Stores on a Performance plan will have access to additional product localization fields.⟫ Features With multiple native storefronts, you can do all of this within the control panel: Create and manage multiple BigCommerce storefronts within a single control panel. Configure storefront settings and internal notifications for each storefront. Connect different domain names and SSL certificates for each storefront. Apply and customize themes, page templates, email templates, widgets, web pages, scripts, and social media links for each st…
@@ -78,42 +80,50 @@
 - from: held
 
 **Citation Q1-BC-C007:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Features | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: With multiple native storefronts, you can do all of this within the control panel: Create and manage multiple BigCommerce storefronts within a single control panel. Configure storefront settings and internal notifications for each storefront.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …refronts, such as the built-in blog. Additionally, even though the same product can be assigned to different storefronts, product attributes (like description and name) cannot be overridden into a different language without customization. Stores on a Performance plan will have access to additional product localization fields. Features ⟪With multiple native storefronts, you can do all of this within the control panel: Create and manage multiple BigCommerce storefronts within a single control panel. Configure storefront settings and internal notifications for each storefront.⟫ Connect different domain names and SSL certificates for each storefront. Apply and customize themes, page templates, email templates, widgets, web pages, scripts, and social media links for each storefront. Set and manage default storefront currency and unique sets of currencies per storefront. Configure unique checkout settings per s…
 
 **Citation Q1-BC-C008:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Features | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Connect different domain names and SSL certificates for each storefront. Apply and customize themes, page templates, email templates, widgets, web pages, scripts, and social media links for each storefront. Set and manage default storefront currency and unique sets of currencies per storefront.
 - title, opening and note boxes: as for this source's citation above
 - in context: …es on a Performance plan will have access to additional product localization fields. Features With multiple native storefronts, you can do all of this within the control panel: Create and manage multiple BigCommerce storefronts within a single control panel. Configure storefront settings and internal notifications for each storefront. ⟪Connect different domain names and SSL certificates for each storefront. Apply and customize themes, page templates, email templates, widgets, web pages, scripts, and social media links for each storefront. Set and manage default storefront currency and unique sets of currencies per storefront.⟫ Configure unique checkout settings per storefront. Set up web analytics (like Google Analytics) specific to each storefront. Set up a Meta Pixel specific to each storefront. Create storefront-unique categories and make products available on one or multiple storefronts. Stores on a Performance plan will have access to additional produc…
 
 **Citation Q1-BC-C009:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Features | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Configure unique checkout settings per storefront. Set up web analytics (like Google Analytics) specific to each storefront. Set up a Meta Pixel specific to each storefront. Create storefront-unique categories and make products available on one or multiple storefronts.
 - title, opening and note boxes: as for this source's citation above
 - in context: …ernal notifications for each storefront. Connect different domain names and SSL certificates for each storefront. Apply and customize themes, page templates, email templates, widgets, web pages, scripts, and social media links for each storefront. Set and manage default storefront currency and unique sets of currencies per storefront. ⟪Configure unique checkout settings per storefront. Set up web analytics (like Google Analytics) specific to each storefront. Set up a Meta Pixel specific to each storefront. Create storefront-unique categories and make products available on one or multiple storefronts.⟫ Stores on a Performance plan will have access to additional product localization fields. Configure inventory settings for each storefront, including notifications. Control product filtering settings per storefront and per category. Configure category and web page URL structure per storefront. Use Price Lists for custom pricing on each…
 
 **Citation Q1-BC-C010:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Features | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Stores on a Performance plan will have access to additional product localization fields. Configure inventory settings for each storefront, including notifications. Control product filtering settings per storefront and per category. Configure category and web page URL structure per storefront.
 - title, opening and note boxes: as for this source's citation above
 - in context: … storefront currency and unique sets of currencies per storefront. Configure unique checkout settings per storefront. Set up web analytics (like Google Analytics) specific to each storefront. Set up a Meta Pixel specific to each storefront. Create storefront-unique categories and make products available on one or multiple storefronts. ⟪Stores on a Performance plan will have access to additional product localization fields. Configure inventory settings for each storefront, including notifications. Control product filtering settings per storefront and per category. Configure category and web page URL structure per storefront.⟫ Use Price Lists for custom pricing on each storefront. View and manage orders and customers for multiple storefronts in one place. Control product purchasability per storefront. Create Automatic and Coupon Promotions per storefront (using the Standard Promotions editor). Manage customer groups (like retail or wholesale) for each store…
 
 **Citation Q1-BC-C011:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Features | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Use Price Lists for custom pricing on each storefront. View and manage orders and customers for multiple storefronts in one place. Control product purchasability per storefront. Create Automatic and Coupon Promotions per storefront (using the Standard Promotions editor).
 - title, opening and note boxes: as for this source's citation above
 - in context: … available on one or multiple storefronts. Stores on a Performance plan will have access to additional product localization fields. Configure inventory settings for each storefront, including notifications. Control product filtering settings per storefront and per category. Configure category and web page URL structure per storefront. ⟪Use Price Lists for custom pricing on each storefront. View and manage orders and customers for multiple storefronts in one place. Control product purchasability per storefront. Create Automatic and Coupon Promotions per storefront (using the Standard Promotions editor).⟫ Manage customer groups (like retail or wholesale) for each storefront and set the default group. Create category-level discounts per storefront for specific customer groups. Create customers and manage login access to each storefront. Control storefront status for all storefronts from Channel Manager. Filter ecommerce sales reports by…
 
 **Citation Q1-BC-C012:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Features | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Manage customer groups (like retail or wholesale) for each storefront and set the default group. Create category-level discounts per storefront for specific customer groups. Create customers and manage login access to each storefront.
 - title, opening and note boxes: as for this source's citation above
 - in context: …y. Configure category and web page URL structure per storefront. Use Price Lists for custom pricing on each storefront. View and manage orders and customers for multiple storefronts in one place. Control product purchasability per storefront. Create Automatic and Coupon Promotions per storefront (using the Standard Promotions editor). ⟪Manage customer groups (like retail or wholesale) for each storefront and set the default group. Create category-level discounts per storefront for specific customer groups. Create customers and manage login access to each storefront.⟫ Control storefront status for all storefronts from Channel Manager. Filter ecommerce sales reports by native storefront channel. Collect and export newsletter subscriptions per storefront. Create and manage 301 redirects per storefront. Manage shipping methods and out of delivery zone messaging per storefront. With multiple headless s…
 
 **Citation Q1-BC-C013:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Features | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Control storefront status for all storefronts from Channel Manager. Filter ecommerce sales reports by native storefront channel. Collect and export newsletter subscriptions per storefront. Create and manage 301 redirects per storefront.
 - title, opening and note boxes: as for this source's citation above
 - in context: …efront. Create Automatic and Coupon Promotions per storefront (using the Standard Promotions editor). Manage customer groups (like retail or wholesale) for each storefront and set the default group. Create category-level discounts per storefront for specific customer groups. Create customers and manage login access to each storefront. ⟪Control storefront status for all storefronts from Channel Manager. Filter ecommerce sales reports by native storefront channel. Collect and export newsletter subscriptions per storefront. Create and manage 301 redirects per storefront.⟫ Manage shipping methods and out of delivery zone messaging per storefront. With multiple headless storefronts, you can do all of this within the control panel: Create and manage multiple headless storefronts within a single control panel. Configure storefront settings for each storefront. Connect different domain names and SSL certifi…
 
 **Citation Q1-BC-C014:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Features | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Manage shipping methods and out of delivery zone messaging per storefront.
 - title, opening and note boxes: as for this source's citation above
 - in context: …orefront for specific customer groups. Create customers and manage login access to each storefront. Control storefront status for all storefronts from Channel Manager. Filter ecommerce sales reports by native storefront channel. Collect and export newsletter subscriptions per storefront. Create and manage 301 redirects per storefront. ⟪Manage shipping methods and out of delivery zone messaging per storefront.⟫ With multiple headless storefronts, you can do all of this within the control panel: Create and manage multiple headless storefronts within a single control panel. Configure storefront settings for each storefront. Connect different domain names and SSL certificates for each storefront (this is managed outside of BigCommerce for headl…
@@ -131,12 +141,14 @@
 - from: held
 
 **Citation Q1-BC-C059:** `https://support.bigcommerce.com/s/article/Getting-Started-with-Localization-on-Multi-Storefronts` | Localizing Products: Pricing | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/029-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:30Z, captured)
 - quote: You can set different prices per storefront by using price lists. By creating a channel-specific price list, you can set different prices in the same currency per different storefronts.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …front. See Adding Products (v3) for more information on product fields, and our Guide to v3 Products for an overview on configuring your catalog. PRODUCT FILTERING You can localize the display names of product filters and filter settings on each storefront. Filtering values will be automatically translated, based on the selected default language on the specific storefront. See Product Filtering for more information on using this feature. PRICING ⟪You can set different prices per storefront by using price lists. By creating a channel-specific price list, you can set different prices in the same currency per different storefronts.⟫ For example, by having separate price lists for Spain and for France, merchants can set different prices in EUR for Spain and for France by assigning each price list to its related storefront. Price lists can also be assigned to a customer group or a combination of a storefront and customer group. See Using Price Lists for more information on how this feature works. Localizing Promotions and Store Communications Promotions can vary by cultural, …
 
 **Citation Q1-BC-C060:** `https://support.bigcommerce.com/s/article/Getting-Started-with-Localization-on-Multi-Storefronts` | Localizing Products: Pricing | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/029-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:30Z, captured)
 - quote: For example, by having separate price lists for Spain and for France, merchants can set different prices in EUR for Spain and for France by assigning each price list to its related storefront. Price lists can also be assigned to a customer group or a combination of a storefront and customer group.
 - title, opening and note boxes: as for this source's citation above
 - in context: …isplay names of product filters and filter settings on each storefront. Filtering values will be automatically translated, based on the selected default language on the specific storefront. See Product Filtering for more information on using this feature. PRICING You can set different prices per storefront by using price lists. By creating a channel-specific price list, you can set different prices in the same currency per different storefronts. ⟪For example, by having separate price lists for Spain and for France, merchants can set different prices in EUR for Spain and for France by assigning each price list to its related storefront. Price lists can also be assigned to a customer group or a combination of a storefront and customer group.⟫ See Using Price Lists for more information on how this feature works. Localizing Promotions and Store Communications Promotions can vary by cultural, seasonal, regulatory, legal and brand strategy differences. For example, coupons can be embarrassing in some Southeast Asian countries. This is why having the ability to tailor transactional email and abandoned cart templates, set availability for promotions on storefronts, and providing translated…
@@ -154,6 +166,7 @@
 - from: held
 
 **Citation Q1-BC-C167:** `https://support.bigcommerce.com/s/article/Manual-Tax-Setup` | Tax Zones | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/034-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:38Z, captured)
 - quote: Zone type — how the zone is defined. Zones can be based on country, state, or postal code.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -172,12 +185,14 @@
 - from: held
 
 **Citation Q1-BC-C085:** `https://support.bigcommerce.com/s/article/Using-Multiple-Currencies` | Setting up Payment Methods for Additional Transactional Currencies | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:41:00Z, captured)
 - quote: The store’s default currency, assigned during store creation, is always a transactional currency. When you create an additional transactional currency, you'll need to set up which payment methods you want to use for that currency. Display currencies transact in your store's default currency.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …your store has USD as its default currency and offers GBP as a transactional currency, a €30 keychain with a modifier for engraving (add $5) will have its price calculated as: €30 + [$5 x (the autoconversion rate)] ANALYTICS Store analytics are displayed in the store's default currency, using the configured exchange rate. Since there is a conversion, these are approximate values. Setting up Payment Methods for Additional Transactional Currencies ⟪The store's default currency, assigned during store creation, is always a transactional currency. When you create an additional transactional currency, you'll need to set up which payment methods you want to use for that currency. Display currencies transact in your store's default currency.⟫ As such, they use the payment methods configured for the store's default currency. See Available Payment Gateways for a table of payment gateways that support additional transactional currencies. All offline payment methods support additional transactional currencies. If there are no payment methods currently set up for a transactional currency, you'll see a Set up button in the Payment provider column, under Additional Currencies in your store'…
 
 **Citation Q1-BC-C086:** `https://support.bigcommerce.com/s/article/Using-Multiple-Currencies` | Setting up Payment Methods for Additional Transactional Currencies | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:41:00Z, captured)
 - quote: As such, they use the payment methods configured for the store’s default currency.
 - title, opening and note boxes: as for this source's citation above
 - in context: … the configured exchange rate. Since there is a conversion, these are approximate values. Setting up Payment Methods for Additional Transactional Currencies The store's default currency, assigned during store creation, is always a transactional currency. When you create an additional transactional currency, you'll need to set up which payment methods you want to use for that currency. Display currencies transact in your store's default currency. ⟪As such, they use the payment methods configured for the store's default currency.⟫ See Available Payment Gateways for a table of payment gateways that support additional transactional currencies. All offline payment methods support additional transactional currencies. If there are no payment methods currently set up for a transactional currency, you'll see a Set up button in the Payment provider column, under Additional Currencies in your store's Currencies settings. If your store has additional storefronts, you will be able t…
@@ -195,6 +210,7 @@
 - from: held
 
 **Citation Q1-BC-C004:** `https://support.bigcommerce.com/s/article/Multi-Storefront` | Introduction to Multi-Storefront | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/035-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:39Z, captured)
 - quote: Orders from all channels come into your BigCommerce orders area. Orders include storefront attribution and can be sorted per storefront.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -213,6 +229,7 @@
 - from: held
 
 **Citation Q1-BC-C034:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/store-configuration.md` | Editing store configuration settings: Global-only settings | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/075-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:30Z, captured)
 - quote: Currently, the following settings are inherently global and cannot be modified with channel-specific overrides:
 - title: Store Configuration
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Settings API reference documentation BigCommerce's Settings APIs can manage many of the configuration settings that are exposed to merchants in their store control panel, such as the store's name and …
@@ -220,12 +237,14 @@
 - in context: …55-555-555", "store_name": "My Channel-Specific Name For Channel 124", "store_address": "124 Channel St" }, "meta": {} } ``` Because channel-specific values exist for all store profile object properties, this channel is configured to override all the global default store profile configuration settings. Changes to the global defaults will not affect this channel. ## Editing store configuration settings > **Note** > > #### Global-only settings > > ⟪Currently, the following settings are inherently global and cannot be modified with channel-specific overrides:⟫ > > * store\_address\_type > * store\_country You can modify global and channel-specific settings alike by sending `PUT` requests to the relevant endpoints. The following example uses the [Update store profile settings](/developer/api-reference/rest/admin/management/settings/store-profile/update-settings-store-profile) endpoint to modify a store's global default configuration: **`Example request: Update global store profile settings`** ```http t…
 
 **Citation Q1-BC-C035:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/store-configuration.md` | Editing store configuration settings: Global-only settings | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/075-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:30Z, captured)
 - quote: * store\_address\_type
 - title, opening and note boxes: as for this source's citation above
 - headings: Store Configuration > Editing store configuration settings
 - in context: …{} } ``` Because channel-specific values exist for all store profile object properties, this channel is configured to override all the global default store profile configuration settings. Changes to the global defaults will not affect this channel. ## Editing store configuration settings > **Note** > > #### Global-only settings > > Currently, the following settings are inherently global and cannot be modified with channel-specific overrides: > > ⟪* store\_address\_type⟫ > * store\_country You can modify global and channel-specific settings alike by sending `PUT` requests to the relevant endpoints. The following example uses the [Update store profile settings](/developer/api-reference/rest/admin/management/settings/store-profile/update-settings-store-profile) endpoint to modify a store's global default configuration: **`Example request: Update global store profile settings`** ```http title="Example request: Upda…
 
 **Citation Q1-BC-C036:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/store-configuration.md` | Editing store configuration settings: Global-only settings | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/075-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:30Z, captured)
 - quote: * store\_country
 - title, opening and note boxes: as for this source's citation above
 - headings: Store Configuration > Editing store configuration settings
@@ -244,6 +263,7 @@
 - from: held
 
 **Citation Q1-BC-C032:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/store-configuration.md` | Global settings and channel-specific settings | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/075-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:30Z, captured)
 - quote: Once a merchant starts to take advantage of multi-storefront or other multi-channel functionality, they often want to configure settings differently for each sales channel.
 - title: Store Configuration
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Settings API reference documentation BigCommerce's Settings APIs can manage many of the configuration settings that are exposed to merchants in their store control panel, such as the store's name and …
@@ -251,6 +271,7 @@
 - in context: …# Global settings and channel-specific settings ![settings-diagram.webp](https://storage.cloud.google.com/bigcommerce-production-dev-center/images/msf-beta-guide/settings-diagram.webp) The majority of BigCommerce merchants sell their products exclusively through the storefront website that comes preconfigured with their plan. When these merchants configure their store settings, they're modifying the **global default** versions of their settings. ⟪Once a merchant starts to take advantage of multi-storefront or other multi-channel functionality, they often want to configure settings differently for each sales channel.⟫ Each new channel will use the store's global default values unless the merchant chooses to override them by defining **channel-specific** settings. The Settings APIs use query parameters to distinguish which set of settings a request is accessing. Consider the following request to the [Get store profile settings](/developer/api-reference/rest/admin/management/settings/store-profile/get-settings-store-profile) endpoint: #### Request **`Example re…
 
 **Citation Q1-BC-C033:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/store-configuration.md` | Global settings and channel-specific settings | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/075-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:30Z, captured)
 - quote: Each new channel will use the store's global default values unless the merchant chooses to override them by defining **channel-specific** settings.
 - title, opening and note boxes: as for this source's citation above
 - headings: Store Configuration > Global settings and channel-specific settings
@@ -269,6 +290,7 @@
 - cite_ids: BC-S-0412
 
 **Citation BC-S-0412:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/geography.md` | page introduction | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/027-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:19:42Z, captured)
 - quote: Get countries, states, and provinces. Use these endpoints to retrieve geographic data for use in shipping, tax, and address validation workflows.
 - title: Geography
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Get countries, states, and provinces. Use these endpoints to retrieve geographic data for use in shipping, tax, and address validation workflows.…
@@ -289,6 +311,7 @@
 - cite_ids: BC-S-0432
 
 **Citation BC-S-0432:** `https://www.commerce.com/terms/` | Contracting Entity table | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: Any other jurisdiction Commerce.com Pty. Ltd., an Australia proprietary limited company New York Ecommerce Platform, Extensions, and certain Professional Services
 - title: Master Services Agreement | Commerce
 - in context: … Software UK Ltd., a United Kingdom limited company England and Wales Ecommerce Platform, Extensions, and certain Professional Services European Union Commerce Software Ireland Ltd., an Irish limited company Ireland Ecommerce Platform, Extensions, and certain Professional Services Australia Commerce.com Pty. Ltd., an Australia proprietary limited company New South Wales, Australia Ecommerce Platform, Extensions, and certain Professional Services ⟪Any other jurisdiction Commerce.com Pty. Ltd., an Australia proprietary limited company New York Ecommerce Platform, Extensions, and certain Professional Services⟫ If purchasing and/or contracting solely with Feedonomics Worldwide Feedonomics Holdings, LLC, a Delaware corporation in the United States New York Feedonomics Platform Worldwide Makeswift, Inc. a Delaware Corporation in the United States New York Makeswift visual editor / builder Eligibility. Minimum Age. The Services are available only to persons who are the age of majority and can form legally binding contracts under applicable law. Without li…
@@ -341,6 +364,7 @@
 - from: held
 
 **Citation Q1-BC-C093:** `https://support.bigcommerce.com/s/article/Managing-Currencies` | Adding a Currency: Setup | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/033-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:36Z, captured)
 - quote: When you first create your store, your default currency is assigned based on your location. You can enable additional currencies to display prices and allow transactions where your frequent customers live.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -359,6 +383,7 @@
 - cite_ids: BC-S-0188
 
 **Citation BC-S-0188:** `https://www.commerce.com/terms/fees-and-billing/` | Fees | 2026-06-15 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/112-commerce.com/text.txt` (fetched 2026-10-12T04:20:57Z, captured)
 - quote: Fees are payable in U.S. Dollars, unless otherwise specified.
 - title: Fees and Billing | Commerce
 - in context: …PressPress Contact UsContact Us The terms below are incorporated into, and form an integral part of, the Commerce Master Services Agreement. Unless otherwise defined herein, capitalized terms shall have the meaning ascribed to them in the Agreement. Any breach of the terms below will be deemed a material breach of the Agreement. Fees. Commerce fees are due in the amount and at the billing date cycle identified on the Website or applicable Order. ⟪Fees are payable in U.S. Dollars, unless otherwise specified.⟫ If you are purchasing Services with a payment card, Commerce will automatically charge your payment card based on your billing date until you validly cancel the Services. The pricing identified on the Website or any Order includes Services for a single store only, unless otherwise specified. Fees may include subscription fees, GMV overage fees, Open Payment Provider Fees, and any other fees described on the Website or in an applicable Order. Ope…
@@ -376,6 +401,7 @@
 - cite_ids: BC-S-0222
 
 **Citation BC-S-0222:** `https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/overview.md` | ## Channels | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/072-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:27Z, captured)
 - quote: A merchant creates a new channel to sell in a new context.
 - title: Introduction to Multi-Storefront
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Some merchants want to sell their products in different places. They may want to maintain multiple website-based eCommerce storefronts, or sell products from their store's catalog on other channels, s…
@@ -398,6 +424,7 @@
 - from: new
 
 **Citation S01-BC-C031:** `https://www.bigcommerce.co.uk/payments/bigcommerce-payments/` | FAQs: Where is it available? | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/106-bigcommerce.co.uk/text.txt` (fetched 2026-10-12T10:51:14Z, captured)
 - quote: Initially, BigCommerce Payments is available only to US- and UK-based merchants with self-serve and retail plans. Additional regions and countries will be launching soon.
 - title: BigCommerce Payments – a native payments experience.
 - in context: …then add payment options as you grow. One platform. One payout. PayPal confidence. Start your free trial SIMPLE AND EASY Pricing that scales with you. No hidden monthly fees. Rates vary by plan. All plans include access to PayPal, PayPal Pay Later, Klarna, Clearpay, Apple Pay, and Google Pay in one integration. Core Card processing rate: 1.4% + £0.30 Growth Card processing rate: 1.4% + £0.30 Scale & Performance Card processing rate: 1.2% + £0.30 ⟪Initially, BigCommerce Payments is available only to US- and UK-based merchants with self-serve and retail plans. Additional regions and countries will be launching soon.⟫ See BigCommerce documentation or contact support to confirm whether your account qualifies. Additional payment methods: PayPal Pay Later & Checkout: 2.9% + £0.30 BNPL (Klarna, Clearpay): 4.99% + £0.30 Rates shown are indicative, not guaranteed. Availability and features may vary by region and merchant eligibility. See BigCommerce documentation for details. NATIVE FEATURES Everything under one roof - from checkout to payouts. The payment methods …
@@ -415,6 +442,7 @@
 - from: held
 
 **Citation Q1-BC-C094:** `https://support.bigcommerce.com/s/article/Managing-Currencies` | Requirements | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/033-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:36Z, captured)
 - quote: In order to manage the currency settings in your store, you must have the Manage Settings permission enabled on your user account. This is enabled by default for users with the Store Administrator or Store Owner role.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -433,6 +461,7 @@
 - from: held
 
 **Citation Q1-BC-C078:** `https://support.bigcommerce.com/s/article/Using-Multiple-Currencies` | How Multicurrency Works in Different Parts of the Store | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:41:00Z, captured)
 - quote: In Bigcommerce, a currency can be transactional or used for display only. In order for a currency to be transactional, a payment gateway that supports the currency must be enabled.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -453,11 +482,13 @@
 - note: The page lists 21 Embedded Payment Providers, BigCommerce Payments among them.
 
 **Citation S01-BC-C061:** `https://www.bigcommerce.com/payments/embedded-payment-providers/` | How to add or switch a payment provider: 2. Choose | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/011-bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:32Z, captured)
 - quote: Each provider has its own application process.
 - title: Embedded Payment Providers | BigCommerce
 - in context: …end to end, depending on the provider, account underwriting, and reconciliation needs. The four-step process includes: 1. Decide Compare your current fee exposure to the cost of switching. For some customers the fee is smaller than the switching cost. Additional information can be found in the Help Center about Payment Gateways. 2. Choose Pick a provider from the list above based on your country, currency, payment methods, and integration needs. ⟪Each provider has its own application process.⟫ 3. Apply and configure Apply with your chosen provider, complete underwriting, then add them in your BigCommerce dashboard under Store Setup, Payments. 4. Test and launch Run test transactions before going live. Review your reconciliation flows. Monitor your first few weeks of orders to confirm everything is working. Need help along the way? BigCommerce support is available throughout the process. Detailed setup guides are available in the Help …
 
 **Citation S01-BC-C062:** `https://www.bigcommerce.com/payments/embedded-payment-providers/` | How to add or switch a payment provider: 3. Apply and configure | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/011-bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:32Z, captured)
 - quote: Apply with your chosen provider, complete underwriting, then add them in your BigCommerce dashboard under Store Setup, Payments.
 - title: Embedded Payment Providers | BigCommerce
 - in context: …ciliation needs. The four-step process includes: 1. Decide Compare your current fee exposure to the cost of switching. For some customers the fee is smaller than the switching cost. Additional information can be found in the Help Center about Payment Gateways. 2. Choose Pick a provider from the list above based on your country, currency, payment methods, and integration needs. Each provider has its own application process. 3. Apply and configure ⟪Apply with your chosen provider, complete underwriting, then add them in your BigCommerce dashboard under Store Setup, Payments.⟫ 4. Test and launch Run test transactions before going live. Review your reconciliation flows. Monitor your first few weeks of orders to confirm everything is working. Need help along the way? BigCommerce support is available throughout the process. Detailed setup guides are available in the Help Center. Frequently asked questions What is the Open Payment Provider Fee? A monthly fee charged by BigCommerce for orders processed through Open Payment…

@@ -239,6 +239,8 @@
 - note: first run's citation
 
 **Citation SH-S-0137:** `https://www.shopify.com/legal/terms-payfac` | Part I, D. Assignment and Amendment | 2026-09-22 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/147-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/118-shopify.com/text.txt` (fetched 2026-10-12T10:51:24Z, captured)
 - quote: We may amend Part II at any time, in our sole discretion, including to add, remove, or replace an Acquirer for any Designated Country, or to add a new Designated Country.
 - title: Shopify Payments Facilitator Terms (Merchant Agreement) - Shopify
 - in context: …the provision and/or auditing of records requested in relation to inquiries by us, Acquirer, and/or Payment Networks with respect to chargebacks, suspected fraud, and requests for information from us, Acquirer, Payment Networks, tax or other governmental authorities. Assignment and Amendment. You agree and authorize the assignment of this Supplement, without additional approval, to a different Acquirer as determined by us in our sole discretion. ⟪We may amend Part II at any time, in our sole discretion, including to add, remove, or replace an Acquirer for any Designated Country, or to add a new Designated Country.⟫ Your continued use of the services after that time is acceptance of the amended Part II. Help Center. Our Help Center has guides, policies, and instructions that explain how the service works and what we need from you, including information about payments and your account. We may update the Help Center from time to time, and the current version is the one that applies. You can read it at help.shopify.com. If anything in the Help Center conflicts…
@@ -257,6 +259,7 @@
 - note: first run's citation
 
 **Citation SH-S-0361:** `https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/understanding-store-and-payout-currencies.md` | Store currency | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/074-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:03Z, captured)
 - quote: Your store currency is the currency used within your Shopify admin for pricing products and running reports.
 - title: Understanding your store and payout currencies
 - the page opens: The currency on your Shopify admin and that is displayed to your customers on your online store is your store currency. The currency your deposits from Shopify Payments orders are made in is your payout currency. Store currency Your store currency is the currency used within your Shopify admin for pricing products and running reports. This is the primary currency that your customers will use when making purchases on your store. You can select any currency from the available options in your store…
@@ -277,6 +280,7 @@
 - note: first run's citation
 
 **Citation SH-S-0370:** `https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/063-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:02Z, captured)
 - quote: If you need to change your store currency after making your first sale, then contact Shopify Support.
 - title: Setting up your Shopify Payments account
 - the page opens: To get started with Shopify Payments, first check the list of supported countries to confirm availability in your region. After confirming your eligibility, you can activate the service and complete the verification process. Your Shopify Payments payouts might be placed on hold until two-step authentication is activated on your store. Two-step authentication helps to prevent security breaches that can lead to misdirected payouts or other financial loss. You need to choose your store currency bef…
@@ -341,6 +345,7 @@
 - note: first run's citation
 
 **Citation SH-S-0545:** `https://help.shopify.com/en/manual/international/payments.md` | Shopify Payments and other payment providers | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/036-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
 - quote: Only stores with [Shopify Payments](/manual/payments/shopify-payments) or [Adyen](/manual/payments/third-party-providers/adyen-gateway) as the primary gateway can process payments in a customer's local currency.
 - title: Payments
 - the page opens: Your market settings include a payments card that displays eligible local payment methods, as well as a link to your payment settings where you can activate and customize a variety of payment methods. Shopify Payments and other payment providers {#other-payment-providers} Only stores with Shopify Payments or Adyen as the primary gateway can process payments in a customer's local currency. The following payment options are compatible with multi-currency processing: * Shopify Payments credit card …
@@ -385,6 +390,8 @@
 - note: first run's citation
 
 **Citation SH-S-0384:** `https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md` | Stripe availability in Shopify Payments regions | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/079-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:03Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/044-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:22Z, captured)
 - quote: then standalone Stripe isn't available as an alternative.
 - title: Understanding payment gateway availability
 - the page opens: When setting up payments on your Shopify store, select payment gateways and providers that are compatible and available in your region. Use the Shopify payment gateways page as your primary resource for up-to-date information about which payment solutions are available for your store. Check payment gateway availability by country You can filter available payment providers by country or region to find detailed and updated information about which payment gateways are available in your store's loca…
@@ -405,6 +412,7 @@
 - note: first run's citation
 
 **Citation SH-S-0442:** `https://shopify.dev/docs/apps/build/payments.md` | Considerations table, Approval process | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/121-shopify.dev/text.txt` (fetched 2026-10-11T06:13:08Z, captured)
 - quote: To make sure merchants can present a positive buyer experience, payments apps must be approved by Shopify.
 - title: Extensions for payments
 - the page opens: Payments extensions integrate with the Shopify admin and checkout to provide customized payment processing services for merchants. Only approved Partners can build payments extensions on Shopify's Payments Platform. Payments extensions provide merchant stores with the following features: * provide additional payment methods * perform specific operations on payment methods * control payment security for buyers * automate payment services, such as reoccurring payments * decide if they want to capt…
@@ -444,6 +452,8 @@
 - note: first run's citation
 
 **Citation SH-S-0038:** `https://www.shopify.com/legal/terms` | 5. Payment of Fees and Taxes | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: You must maintain an accurate location in the administrative console of your Shopify Store. If you change jurisdictions you must promptly update your location in the administrative console.
 - title: Shopify Terms of Service - Shopify
 - in context: …ethod ignoring any such deduction or withholding that may be required. You are solely responsible for determining, collecting, withholding, reporting, and remitting applicable taxes, duties, fees, surcharges and additional charges that arise from or as a result of any sale on your Shopify Store or your use of the Services. The Services are not a marketplace. Any contract of sale made through the Services is directly between you and the customer. ⟪You must maintain an accurate location in the administrative console of your Shopify Store. If you change jurisdictions you must promptly update your location in the administrative console.⟫ Shopify does not provide refunds. Your access to and use of any tools that Shopify offers to you that help you calculate or estimate taxes that arise from or as a result of a sale on your Store ("Shopify Tax") is subject to the Shopify Tax Terms of Service or that help you file such taxes ("Shopify Tax Automated Filing") is subject to the Shopify Tax Automated Filing Terms of Service. 6. Confidentiality Which means Both you and Shopify agree to …
@@ -552,6 +562,7 @@
 - note: first run's citation
 
 **Citation SH-S-0563:** `https://help.shopify.com/en/manual/international/managed-markets.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/034-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
 - quote: When you use Managed Markets, Global-e becomes the _merchant of record_.
 - title: Managed Markets
 - the page opens: Managed Markets expands the capabilities of the international sales tools. Along with tools that help you to set up and manage selling in international markets, Managed Markets offers additional features powered by Global-e to help you scale and optimize your international markets directly from your Shopify admin. Managed Markets is only available to merchants based in the continental United States, and to certain stores in Canada and the United Kingdom. Read more about the requirements and cons…
@@ -572,6 +583,8 @@
 - note: first run's citation
 
 **Citation SH-S-0634:** `https://help.shopify.com/en/manual/international/managed-markets/overview.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/035-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/028-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:06Z, captured)
 - quote: You can use Managed Markets to sell to customers in other countries without registering a business, registering for tax, or arranging customs clearance in each destination.
 - title: Overview of Managed Markets
 - the page opens: You can use Managed Markets to sell to customers in other countries without registering a business, registering for tax, or arranging customs clearance in each destination. Your customers buy from your store, in your brand's checkout, and pay in their own currency. Their order arrives without a surprise bill at the door. Managed Markets builds on Shopify Markets, the tools built into every store for selling in other countries, including localized domains and store translation. With Shopify Marke…
@@ -593,6 +606,7 @@
 - note: first run's citation
 
 **Citation SH-S-0638:** `https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md` | Data hosting locations | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/083-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:04Z, captured)
 - quote: New merchants in Europe automatically avail of this new infrastructure and now have their store data, order data and customer personal data stored at rest in Europe by default.
 - title: Onward transfers of personal data
 - the page opens: In order to provide our services to you effectively, the personal data that you provide to the Shopify entity that you contract with is transferred to the following recipients: * certain other Shopify entities, and * carefully selected and trusted subprocessors This section provides information on how onward transfers are governed. Onward transfers of personal data from the European Economic Area (EEA) and the United Kingdom (UK) Shopify International Limited, an Irish-registered entity, is Shop…
@@ -633,6 +647,8 @@
 - note: first run's citation
 
 **Citation SH-S-0125:** `https://www.shopify.com/legal/terms-shopify-payments` | Part II, B. Canada, Regulated Payment Services | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
 - quote: Shopify Payment Activities Inc. is registered with the Bank of Canada as a Payment Service Provider under the Retail Payment Activities Act.
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …yment Services. Where the Payments Services include payment activities that are regulated under the Retail Payment Activities Act (Canada) (collectively, "Regulated Payment Services"), solely with respect to the provision of such Regulated Payment Services to you, "Shopify", "we", "us", or "our" shall mean Shopify Payment Activities Inc., a Canadian corporation, with offices located at 151 O'Connor Street, Ground floor, Ottawa, Ontario, K2P 2L8. ⟪Shopify Payment Activities Inc. is registered with the Bank of Canada as a Payment Service Provider under the Retail Payment Activities Act.⟫ Shop Pay Installments. By using Shop Pay Installments, you accept and agree to be bound by the Shop Pay Installments Terms and the Merchant Agreement (Shop Pay Installments) with Affirm. You may disable Shop Pay Installments on the Shopify Admin. Managed Markets. By accepting this Agreement, you are also accepting and agreeing to be bound by the Service Terms - Shopify Managed Markets (the "Managed Markets Terms") with Global-e, the merchant of …
@@ -651,6 +667,8 @@
 - note: first run's citation
 
 **Citation SH-S-0144:** `https://www.shopify.com/legal/processor-list` | introduction | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/139-shopify.com/text.txt` (fetched 2026-10-11T06:13:10Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/116-shopify.com/text.txt` (fetched 2026-10-12T10:51:22Z, captured)
 - quote: By accepting the Shopify Payments Terms of Service, you accept and agree to be bound by the Payment Processor Terms identified for your Designated Country.
 - title: Payment Processors for Shopify Payments - Shopify
 - in context: …Editions 150+ updates to Shopify, twice a year. LATEST UPDATES Agentic Storefronts Campaign Autopilot Shopify AI Toolkit for devs Pricing Enterprise Log in Start for free Payment Processors for Shopify Payments TABLE OF CONTENTS A. Global B. North America C. EMEA D. Asia-Pacific The following tables identify, for each Designated Country, (a) the Payment Processor(s), and (b) the agreements and documents that comprise the Payment Processor Terms. ⟪By accepting the Shopify Payments Terms of Service, you accept and agree to be bound by the Payment Processor Terms identified for your Designated Country.⟫ A. Global DESIGNATED COUNTRY PAYMENT PROCESSOR PAYMENT PROCESSOR TERMS All Shopify Payments regions The Bridge entity (an affiliate of Stripe) that applies based on your location. See here. Account Terms Bridge Terms B. North America DESIGNATED COUNTRY PAYMENT PROCESSOR PAYMENT PROCESSOR TERMS Canada Stripe Payments Canada, Ltd. Account Terms Stripe Connected Account Agreement Stripe Services Agreement Stripe Payment Method Terms Privacy Policy …
@@ -669,6 +687,7 @@
 - note: first run's citation
 
 **Citation SH-S-0304:** `https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md` | restrictions that apply to all users | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/101-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:05Z, captured)
 - quote: * Individuals and businesses within unsupported countries and regions are prohibited from creating a Shopify account.
 - title: Unsupported countries and regions
 - the page opens: Shopify is unable to support business involving certain regions due to local regulatory requirements, commercial partnerships, and/or other pertinent factors. The following list contains the countries and regions that aren't supported by Shopify: * Cuba * Iran * North Korea * Syria * The Crimea region of Ukraine, and the so-called Donetsk and Luhansk People's Republics in Ukraine The following restrictions apply to all users of Shopify: * Individuals and businesses within unsupported countries a…

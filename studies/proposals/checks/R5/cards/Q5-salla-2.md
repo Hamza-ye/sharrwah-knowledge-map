@@ -80,6 +80,8 @@
 - note: In the help centre section 'مقالات قديمة'.
 
 **Citation S01-SA-C019:** `https://help.salla.sa/article/-إدارة-طرق-الدفع-وتفعيل-المدفوعات-الإلكترونية/dtdojcntv3f4lwqzj4h0jvij` | الأسئلة الشائعة (line 879 of the rendered text) | 2026-08-22 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/013-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:32Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/014-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:46Z, captured)
 - quote: - باقة بلس: يتم الإيداع مرة واحدة أسبوعياً، حيث تصدر الفاتورة كل يوم أربعاء ثم تُحوَّل المبالغ إلى حسابك البنكي.
 - title: تفعيل طرق الدفع الإلكتروني في متجرك | مركز المساعدة - سلة
 - the page opens: تفعيل طرق الدفع الإلكتروني في متجرك مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل…
@@ -101,6 +103,8 @@
 - note: In the help centre section 'مقالات قديمة'.
 
 **Citation S01-SA-C021:** `https://help.salla.sa/article/-إدارة-طرق-الدفع-وتفعيل-المدفوعات-الإلكترونية/dtdojcntv3f4lwqzj4h0jvij` | الأسئلة الشائعة (line 883 of the rendered text) | 2026-08-22 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/013-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:32Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/014-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:46Z, captured)
 - quote: - باقة سلة سبيشل: يتم الإيداع يومياً.
 - title: تفعيل طرق الدفع الإلكتروني في متجرك | مركز المساعدة - سلة
 - the page opens: تفعيل طرق الدفع الإلكتروني في متجرك مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل…
@@ -156,6 +160,8 @@
 - cite_ids: SA-S-0178
 
 **Citation SA-S-0178:** `https://docs.salla.dev/1973350f0.md` | # Settlements (line 6 of the markdown) | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/002-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:30Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/009-docs.salla.dev/text.txt` (fetched 2026-10-12T10:49:43Z, captured)
 - quote: This endpoint allows you to temporarily withhold a specific amount of money for settlement from the Merchant's wallet.
 - title: Settlements
 - the page opens: Docs - List Instant Settlements: This endpoint lists all the instant settlements including details such as amount and status that are associated with the store. - Create Instant Settlement: This endpoint allows you to temporarily withhold a specific amount of money for settlement from the Merchant's wallet. - Update Instant Settlement: This endpoint allows you to update the status and the amount of a specific settlment by by passing the id as a path parameter. - Instant Settlement Details: This …
@@ -287,6 +293,8 @@
 - from: index:SA-C-112:SA-S-0085
 
 **Citation S01-SA-C054:** `https://help.salla.sa/article/تحويلات-مدفوعات-سلة-والتسويات-في-الإمارات-سلة/nvs6bt51hvlweulqzayp3o76` | الحساب البنكي المستخدم لاستلام التحويلات (line 725 of the rendered text) | 2026-09-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/021-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:40Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/018-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:52Z, captured)
 - quote: تُرسل التحويلات إلى الحساب البنكي الذي قدّمته أثناء توثيق المتجر. تأكد من تطابق بيانات الحساب مع مستنداتك البنكية.
 - title: تحويلات مدفوعات سلة والتسويات في الإمارات | سلة | مركز المساعدة - سلة
 - the page opens: Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل حلول تقنية متقدمة لنمو أعمال كبار التجار المدفوعات طرق …
@@ -328,6 +336,8 @@
 - from: index:SA-C-111:SA-S-0083
 
 **Citation S01-SA-C056:** `https://help.salla.sa/article/تحويلات-مدفوعات-سلة-والتسويات-في-الإمارات-سلة/nvs6bt51hvlweulqzayp3o76` | الأسئلة الشائعة (line 843 of the rendered text) | 2026-09-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/021-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:40Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/018-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:52Z, captured)
 - quote: لا. رصيد المتجر مخصص لاشتراكات سلة وخدماتها ومشترياتها، بينما يحتفظ رصيد المدفوعات الإلكترونية بمستحقات مبيعات المتجر قبل تحويلها.
 - title: تحويلات مدفوعات سلة والتسويات في الإمارات | سلة | مركز المساعدة - سلة
 - the page opens: Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل حلول تقنية متقدمة لنمو أعمال كبار التجار المدفوعات طرق …

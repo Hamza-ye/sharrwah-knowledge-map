@@ -90,6 +90,8 @@
 - note: Answer to 'هل تقوم سلة بتحصيل مبالغ الدفع عند الاستلام عند استخدام شركة شحن خارج نطاق بوليصات سلة؟'.
 
 **Citation S01-SA-C095:** `https://help.salla.sa/article/تفعيل-وإدارة-الدفع-عند-الاستلام-مع-بوليصات-سلة/koda8pykc6pdhylg7zb2iu0g` | الأسئلة الشائعة (line 786 of the rendered text) | 2026-08-31 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/027-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:44Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/023-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:59Z, captured)
 - quote: لا تتولى سلة تحصيل مبالغ الدفع عند الاستلام في هذه الحالة.
 - title: تفعيل الدفع عند الاستلام وإدارته | مركز المساعدة - سلة
 - the page opens: تفعيل الدفع عند الاستلام وإدارته مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل حل…
@@ -111,6 +113,8 @@
 - note: Same answer as the preceding statement. About 200 carrier articles (old articles sections) each answer ما هي آلية تسوية المبالغ؟ with that carrier's schedule; not recorded one by one (see notes.md).
 
 **Citation S01-SA-C096:** `https://help.salla.sa/article/تفعيل-وإدارة-الدفع-عند-الاستلام-مع-بوليصات-سلة/koda8pykc6pdhylg7zb2iu0g` | الأسئلة الشائعة (line 788 of the rendered text) | 2026-08-31 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/027-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:44Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/023-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:59Z, captured)
 - quote: تتم تسوية مبالغ الدفع عند الاستلام مباشرة بين التاجر وشركة الشحن وفقاً للاتفاق المبرم بين الطرفين.
 - title: تفعيل الدفع عند الاستلام وإدارته | مركز المساعدة - سلة
 - the page opens: تفعيل الدفع عند الاستلام وإدارته مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل حل…

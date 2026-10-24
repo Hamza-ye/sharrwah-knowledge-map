@@ -63,6 +63,8 @@
 - from: held
 
 **Citation Q8-SH-C055:** `https://www.shopify.com/legal/terms` | preamble | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: Any such service or services offered by Shopify are referred to in these Terms of Services as the "Service(s)". Any new features or tools which are added to the current Services will also be subject to the Terms of Service.
 - title: Shopify Terms of Service - Shopify
 - in context: …ce activities. Among other features, this platform includes a range of tools for merchants to build and customize online stores, sell in multiple places (including web, mobile, social media, online marketplaces and other online locations ("Online Services") and in person ("POS Services")), manage products, inventory, payments, fulfillment, shipping, business operations, marketing and advertising, and engage with existing and potential customers. ⟪Any such service or services offered by Shopify are referred to in these Terms of Services as the "Service(s)". Any new features or tools which are added to the current Services will also be subject to the Terms of Service.⟫ You can review the current version of the Terms of Service at any time at https://shopify.com/legal/terms. You must read, agree with and accept all of the terms and conditions contained or expressly referenced in these Terms of Service, including Shopify's Acceptable Use Policy ("AUP") and Privacy Policy, and, if applicable, the Supplementary Terms of Service for E.U. Merchants ("EU Terms"), the Shopify API License and Terms of Use ("API Terms")…
@@ -100,6 +102,8 @@
 - from: held
 
 **Citation Q8-SH-C066:** `https://www.shopify.com/legal/terms` | site header, NON-STOP INNOVATION, Shopify Editions | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: 150+ updates to Shopify, twice a year.
 - title: Shopify Terms of Service - Shopify
 - in context: …arketplaces Global B2B Across Markets MARKETING & ANALYTICS Advertising & Campaigns Email & Customer Chat Discounts Analytics Test & Launch RUN YOUR BUSINESS Orders & Inventory Shipping Finances & Funding Workflow Automation GET PAID Checkout Payments Taxes CUSTOMIZE & EXTEND SHOPIFY Commerce for Agents Build with our agent tools Shopify App Store Largest commerce ecosystem Shopify.dev Dev docs, CLI, and more NON-STOP INNOVATION Shopify Editions ⟪150+ updates to Shopify, twice a year.⟫ LATEST UPDATES Agentic Storefronts Campaign Autopilot Shopify AI Toolkit for devs Pricing Enterprise Log in Start for free Terms of Service TABLE OF CONTENTS 1. Account Terms 2. Account Activation 3. Shopify Rights 4. Your Responsibilities 5. Payment of Fees and Taxes 6. Confidentiality 7. Limitation of Liability and Indemnification 8. Intellectual Property and Your Materials 9. Additional Services 10. Feedback and Reviews 11. Intellectual Prope…
@@ -169,6 +173,8 @@
 - from: held
 
 **Citation Q8-SH-C060:** `https://www.shopify.com/legal/terms` | 9. Additional Services, 9.1 Scope | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: Your use of, and access to, any Additional Services is subject to these Terms or, in some cases, may be subject to additional and separate fees, terms, and policies (the "Additional Service Terms").
 - title: Shopify Terms of Service - Shopify
 - in context: …wledge and agree that the Terms of Service do not give you any right to implement Shopify patents. 9. Additional Services 9.1 Scope Shopify may make available certain services, products, applications and tools, in addition to the Services, including but not limited to, Shopify Payments, Shopify Capital, Shopify Shipping, point-of-sale (POS) services and equipment, and the services outlined in this Section 9 (collectively, "Additional Services"). ⟪Your use of, and access to, any Additional Services is subject to these Terms or, in some cases, may be subject to additional and separate fees, terms, and policies (the "Additional Service Terms").⟫ 9.2 Enhanced Services Which means Enhanced Services are powered by Shopify Network Intelligence, which securely uses your customer data alongside data from other merchants and from Shopify to protect, grow, and improve your business. When you receive Shopify Enhanced Services, you should ensure you meet privacy requirements wherever you do business - check out our tools to help with that or visit the Shopify Help Center to learn more. You have a…
@@ -296,6 +302,7 @@
 - note: first run's citation
 
 **Citation SH-S-0699:** `https://shopify.dev/docs/apps/build/sales-channels.md` | What is a sales channel? | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/125-shopify.dev/text.txt` (fetched 2026-10-11T06:13:09Z, captured)
 - quote: A sales channel app connects a merchant's online store to surfaces outside Shopify.
 - title: Apps as sales channels
 - the page opens: * What is a sales channel? A sales channel app connects a merchant's online store to surfaces outside Shopify. Examples include traffic-driving channels like Google and Meta, and marketplaces like Amazon that have their own checkout. Sales channel apps help merchants distribute their catalog to where their buyers shop. * When to create a sales channel? Create a sales channel when you want to access the millions of sellers on Shopify and provide a way to push their catalog and inventory to your c…
@@ -336,6 +343,7 @@
 - note: first run's citation
 
 **Citation SH-S-0540:** `https://help.shopify.com/en/manual/markets.md` | introduction | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/040-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
 - quote: You can use Markets to manage how different customers experience your store based on their location, customer group, retail location, or sales channel.
 - title: Markets
 - the page opens: You can use Markets to manage how different customers experience your store based on their location, customer group, retail location, or sales channel. Markets let you define audiences using conditions and tailor their experience with customizations, including currency, language, pricing, and theme content. You can manage your markets from the Markets page in your Shopify admin. Understanding and setting up markets Get familiar with the key markets concepts, such as conditions and customizations…

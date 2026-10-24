@@ -55,6 +55,7 @@
 - cite_ids: BC-S-0437
 
 **Citation BC-S-0437:** `https://www.commerce.com/terms/` | Anti-Corruption, Export and Sanctions Compliance | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: are not, and will ensure that your Relevant Parties and customers are not, (a) nationals, residents, agents or representatives of Iran, Cuba, North Korea, Syria, the Crimea Region of Ukraine, or any other region subject to comprehensive U.S. sanctions
 - title: Master Services Agreement | Commerce
 - in context: …in, retain, or direct regulatory approvals, licenses, permits, business, contracts, investments, sales, tax or duty assessments, import or export clearances, foreign exchange clearances, or other advantages; shall cause all of your employees, officers, directors, agents, contractors, vendors, and partners (collectively, "Relevant Parties") to comply with all of the terms contained in this Anti-Corruption, Export and Sanctions Compliance Section; ⟪are not, and will ensure that your Relevant Parties and customers are not, (a) nationals, residents, agents or representatives of Iran, Cuba, North Korea, Syria, the Crimea Region of Ukraine, or any other region subject to comprehensive U.S. sanctions⟫; (b) on the List of Specially Designated Nationals & Blocked Persons, the Sectoral Sanctions Identifications (SSI) List, or Foreign Sanctions Evaders List maintained by the Office of Foreign Assets Control of the U.S. Department of the Treasury, or any other applicable list of sanctioned, embargoed, blocked, criminal, or debarred persons maintained by any U.S. or non-U.S. government, the European Union, Interpol, the United Nations, the World Ba…
@@ -72,6 +73,7 @@
 - cite_ids: BC-S-0438
 
 **Citation BC-S-0438:** `https://www.commerce.com/terms/` | Anti-Corruption, Export and Sanctions Compliance | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: shall implement an effective, risk-based compliance program and necessary internal controls (including, but not limited to, conducting sanctions screenings of your Relevant Parties and customers)
 - title: Master Services Agreement | Commerce
 - in context: …rtue of such person being a director or owning voting shares or interests), or acts, directly or indirectly, for or on behalf of, any person or entity on a Sanctions List; or (d) otherwise the target of any sanctions, suspensions, embargoes or debarment by the U.S. government or any other government or public international organization; shall secure all necessary export/sanctions licenses or authorizations to the extent applicable and necessary; ⟪shall implement an effective, risk-based compliance program and necessary internal controls (including, but not limited to, conducting sanctions screenings of your Relevant Parties and customers)⟫ to ensure compliance with Applicable ABAC Laws and this Anti-Corruption, Export and Sanctions Compliance Section; shall review and adhere to Commerce's Company Associate Compliance Guide if provided by Commerce; and shall reasonably cooperate with Commerce to (a) ensure compliance with sanctions, embargoes, and other Applicable ABAC Laws and/or (b) review and remediate actual or potential violations of sanctions or other Applicable ABAC Laws, in…
@@ -89,6 +91,8 @@
 - from: held
 
 **Citation Q2-BC-C042:** `https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?language=en_US` | Payment Methods: Local Payment Methods | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/016-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:36Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/001-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:50Z, captured)
 - quote: Note that availability for local payment methods depend on your store’s country and currency combination.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -107,6 +111,7 @@
 - cite_ids: BC-S-0154
 
 **Citation BC-S-0154:** `https://www.bigcommerce.com/pricing/` | How the Open Payment Provider Fee Works | 2026-10-12 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/102-bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:51Z, captured)
 - quote: BigCommerce charges a monthly fee on self-service plans (Core, Growth, and Scale) for orders processed through Open Payment Providers.
 - title: BigCommerce Pricing and Plan Information | BigCommerce
 - in context: …Embedded Payment Providers listed are not subject to any additional order fees. Any payment provider not on this list is considered an Open Payment Provider and is subject to the fee. *This list reflects our current Embedded Payment Provider program and may change over time. Any updates apply to future orders only; they won't affect charges already billed. Learn more about reducing or eliminating this fee. How the Open Payment Provider Fee Works ⟪BigCommerce charges a monthly fee on self-service plans (Core, Growth, and Scale) for orders processed through Open Payment Providers.⟫ This fee is billed by BigCommerce directly to you, not your shoppers, and appears as a separate line item on your monthly invoice. It's separate from any fees your payment provider charges. Fee Rates by Plan Each order is attributed to the payment provider that processes it. For example, if an Embedded Payment Provider processes the order, no fee applies to that transaction. If all orders are processed through Embedded Payment Providers, your fe…
@@ -125,6 +130,7 @@
 - cite_ids: BC-S-0216
 
 **Citation BC-S-0216:** `https://docs.bigcommerce.com/developer/docs/storefront/catalyst/features/cookie-consent.md` | ## Enable cookie consent | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/094-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:49Z, captured)
 - quote: Cookie consent is controlled by a storefront-level setting in the BigCommerce control panel.
 - title: Cookie Consent
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. > How Catalyst's built-in cookie consent manager, powered by c15t, gates Script Manager scripts by consent category, and how to choose a consent storage mode. Catalyst includes a built-in cookie conse…
@@ -144,6 +150,7 @@
 - cite_ids: BC-S-0388
 
 **Citation BC-S-0388:** `https://docs.bigcommerce.com/developer/api-reference/rest/integrations/tax-provider.md` | page introduction | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/060-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:15Z, captured)
 - quote: Use BigCommerce’s platform-to-platform Tax Provider API to integrate a tax calculation engine into the BigCommerce storefront and control panel.
 - title: Tax Provider API
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Use BigCommerce's platform-to-platform Tax Provider API to integrate a tax calculation engine into the BigCommerce storefront and control panel. Supports estimate, adjust, commit, and void operations.…
@@ -163,6 +170,7 @@
 - cite_ids: BC-S-0426
 
 **Citation BC-S-0426:** `https://www.commerce.com/terms/` | Governing Law; Jurisdiction | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: The law that will govern the validity and construction of this Agreement and apply in any dispute or lawsuit arising out of or relating to this Agreement is as set forth in table in the Contracting Entity Section above.
 - title: Master Services Agreement | Commerce
 - in context: …ED BY APPLICABLE LAW, COMMERCE WILL HAVE NO LIABILITY FOR ANY HARM OR DAMAGE ARISING OUT OF OR IN CONNECTION WITH ANY PRE-RELEASEPRODUCT. Customer's rights with respect to a PRE-RELEASE Services terminate upon the earliest of: (i) commercial release of a generally available version, (ii) end of any applicable subscription term in an Order or otherwise noted by Commerce, or (iii) notice by either party. Miscellaneous. Governing Law; Jurisdiction. ⟪The law that will govern the validity and construction of this Agreement and apply in any dispute or lawsuit arising out of or relating to this Agreement is as set forth in table in the Contracting Entity Section above.⟫ YOU HEREBY CONSENT TO, AND WAIVE ALL DEFENSES OF LACK OF PERSONAL JURISDICTION AND FORUM NON CONVENIENS WITH RESPECT TO, THE JURISDICTION AND VENUE OF THE FEDERAL AND STATE COURTS LOCATED IN TRAVIS COUNTY, TEXAS (USA). The prevailing party in any dispute arising out of this Agreement shall be entitled to recover its reasonable attorney's fees and costs, in addition to any other relief granted. The United Nations Convention on Contracts for the I…
@@ -188,6 +196,7 @@
 - from: held
 
 **Citation Q2-BC-C017:** `https://www.commerce.com/terms/` | Miscellaneous: Language | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: Language. This Agreement has been prepared in the English language. In the event of any conflict or inconsistency between the English language version of this Agreement and any translation thereof, the English language version shall prevail.
 - title: Master Services Agreement | Commerce
 - in context: …CONVENIENS WITH RESPECT TO, THE JURISDICTION AND VENUE OF THE FEDERAL AND STATE COURTS LOCATED IN TRAVIS COUNTY, TEXAS (USA). The prevailing party in any dispute arising out of this Agreement shall be entitled to recover its reasonable attorney's fees and costs, in addition to any other relief granted. The United Nations Convention on Contracts for the International Sale of Goods will not apply to this Agreement and is hereby expressly excluded. ⟪Language. This Agreement has been prepared in the English language. In the event of any conflict or inconsistency between the English language version of this Agreement and any translation thereof, the English language version shall prevail.⟫ Severability. If any provision of this Agreement is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the Agreement will otherwise remain in full force and effect and enforceable. Waiver. No waiver of any provision of this Agreement, nor consent by Commerce to the breach of or departure from any provision of this Agreement, will in any event be binding on or effective again…
@@ -207,6 +216,7 @@
 - note: Press release dated October 20, 2025, announcing BigCommerce Payments before its launch.
 
 **Citation S01-BC-C047:** `https://www.commerce.com/press/bigcommerce-payments-powered-by-paypal/` | paragraph beginning "The BigCommerce Payments architecture" | 2025-10-20 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/012-commerce.com/text.txt` (fetched 2026-10-13T00:35:31Z, captured)
 - quote: While BigCommerce Payments is co-branded and embedded into BigCommerce, the merchant’s payment relationship remains directly with PayPal.
 - title: Commerce Introduces BigCommerce Payments Powered by PayPal
 - in context: …them to seize the future with confidence and agility," said Michelle Gill, Executive Vice President and General Manager, Small Business & Financial Services, PayPal. "By bringing together PayPal's world-renowned reliability, security and global reach with Commerce's merchant-focused platform, we're helping merchants thrive in the next era of ecommerce." The BigCommerce Payments architecture is built to ensure transparency and merchant ownership. ⟪While BigCommerce Payments is co-branded and embedded into BigCommerce, the merchant's payment relationship remains directly with PayPal.⟫ BigCommerce Payments will introduce a dedicated "Money" dashboard within the BigCommerce Control Panel, offering merchants direct access to manage and monitor their payments and balance activity. Features include: Real-time balance insights Top-ups and payouts Bank and card connections Currency management This embedded experience will mirror key capabilities of the merchant's PayPal dashboard, providing a streamlined experience where merchants c…
@@ -258,6 +268,7 @@
 - cite_ids: BC-S-0443
 
 **Citation BC-S-0443:** `https://www.commerce.com/privacy/` | Shoppers: Information Usage | 2026-01-28 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/105-commerce.com/text.txt` (fetched 2026-10-12T04:20:50Z, captured)
 - quote: We use this information as a Processor to provide our services to Merchants, support and Process orders, and manage risk and fraud. The Merchant is the Controller of this information
 - title: Privacy Policy | Commerce
 - in context: …tionality we do not control. We may share Contact Information within Commerce. We may also share information as identified in Section 8 below. Shoppers. Information Collected. When Shoppers interact with a Merchant's ecommerce offering through the Commerce.com platform, we may collect and Process Contact Information, Browser Information, Security Information and Transaction Information of the Shopper on behalf of the Merchant. Information Usage. ⟪We use this information as a Processor to provide our services to Merchants, support and Process orders, and manage risk and fraud. The Merchant is the Controller of this information⟫ and Shoppers who have questions about our use of this information should contact the Merchant. We may also use certain information as a Controller to improve and personalize our services, and manage risk and fraud. Merchant Privacy Policies. Merchants are responsible to provide their Shoppers: • required privacy notices and policies outlining their privacy practices and how the Merchant, Commerce.com and relevant third parties collect and Proces…
@@ -275,6 +286,7 @@
 - cite_ids: BC-S-0467
 
 **Citation BC-S-0467:** `https://www.commerce.com/terms/acceptable-use-policy/` | Highly Regulated Products: Disclaimer | 2025-07-31 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/109-commerce.com/text.txt` (fetched 2026-10-12T04:20:54Z, captured)
 - quote: Commerce disclaims any responsibility for evaluating or confirming the legality of your products or services. You are solely responsible for ensuring that your products comply with applicable laws.
 - title: Acceptable Use Policy | Commerce
 - in context: …sibility to verify compliance with all applicable laws. Indemnification. You agree to indemnify and hold harmless Commerce and its affiliates from any claims, losses, damages, liabilities, or costs (including reasonable attorneys' fees) arising from your breach of this Section 2 or related representations, including claims involving product liability, regulatory violations, or other legal claims relating to your products or services. Disclaimer. ⟪Commerce disclaims any responsibility for evaluating or confirming the legality of your products or services. You are solely responsible for ensuring that your products comply with applicable laws.⟫ Commerce shall not be liable for any damages, losses, or liabilities related to regulatory changes or third-party service provider policies affecting regulated products or services. Inapplicability of Damage Exclusions and Limitation of Liability. The limitation of liability provisions outlined in the Agreement do not apply to your breach of the Representations and Warranties section or your Indemnification obligations under this Acceptable Use …
@@ -292,6 +304,7 @@
 - cite_ids: BC-S-0393
 
 **Citation BC-S-0393:** `https://docs.bigcommerce.com/developer/docs/integrations/tax-providers.md` | ## Configure tax provider settings in the control panel | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/085-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:40Z, captured)
 - quote: Before you can provide tax estimates, the merchant must choose which regions they want you to service.
 - title: Tax Providers
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. The Tax Provider API allows you to provide business-to-consumer sales tax estimates to shoppers on the storefront and to merchants in the control panel; it can also be used to submit documents for tax…

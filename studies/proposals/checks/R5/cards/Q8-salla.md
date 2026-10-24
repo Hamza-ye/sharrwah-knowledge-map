@@ -254,6 +254,7 @@
 - cite_ids: SA-S-0197
 
 **Citation SA-S-0197:** `https://docs.salla.dev/embedded-sdk/overview.md` | Overview (line 3 of the markdown) | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/006-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:31Z, captured)
 - quote: The **Salla Embedded SDK** is a powerful communication bridge that allows your third-party application (running in an iframe) to interact securely with the Salla Merchant Dashboard.
 - title: Welcome to Salla Embedded SDK 💫
 - the page opens: The Salla Embedded SDK is a powerful communication bridge that allows your third-party application (running in an iframe) to interact securely with the Salla Merchant Dashboard. It provides a set of helper methods to sync themes, handle navigation, trigger UI components, and manage authentication ensuring your app feels like a native part of the Salla platform. This documentation is written for third-party developers to help build seamless, integrated applications that live directly within the S…
@@ -273,6 +274,7 @@
 - cite_ids: SA-S-0209
 
 **Citation SA-S-0209:** `https://docs.salla.dev/partner-apis/app-snippet.md` | # Intro to App Snippets (line 3 of the markdown) | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/007-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:31Z, captured)
 - quote: **App Snippet** lets you extend any merchant store with custom **JavaScript** from the App Snippets section in the [Salla Partners Portal](https://portal.salla.partners). The Snippet is injected automatically when your app is installed.
 - title: Intro to App Snippets
 - the page opens: App Snippet lets you extend any merchant store with custom JavaScript from the App Snippets section in the Salla Partners Portal. The Snippet is injected automatically when your app is installed. Salla uploads your snippet as a.js file to its CDN and serves it on stores that have your app installed, no deployment or hosting needed on your end. The editor has been rebuilt from the ground up. What was once an HTML field is now a dedicated JavaScript editor, which means raw markup injection is gone…
@@ -292,6 +294,7 @@
 - from: held
 
 **Citation Q8-SA-C030:** `https://docs.salla.dev/app-functions/welcome.md` | ## What are App Functions? | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/003-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:31Z, captured)
 - quote: App Functions allow you to embed custom logic directly into the lifecycle of merchant and customer activities on Salla.
 - title: Welcome 👋
 - the page opens: Overview Welcome to the App Functions documentation for third-party developers. This comprehensive guide will help you build powerful, event-driven applications on Salla platform. What are App Functions? App Functions allow you to embed custom logic directly into the lifecycle of merchant and customer activities on Salla. Write serverless functions that execute automatically when specific events occur in a store - no infrastructure to manage, automatic scaling, and seamless integration with Sall…
@@ -311,6 +314,7 @@
 - cite_ids: SA-S-0198
 
 **Citation SA-S-0198:** `https://partners.salla.com/legal/privacy` | المادة الأولى – المقدّمة والتعريفات (line 36 of the rendered text) | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/037-partners.salla.com/text.txt` (fetched 2026-10-10T23:51:51Z, captured)
 - quote: مزود الخدمة: الشريك الذي يقدم خدماته لتجار سلة من خلال منصة الشركاء، ويُعد طرفًا مستقلاً.
 - title: سياسة الانضمام إلى برنامج شركاء سلة | شركاء سلة
 - in context: … شريك منصة سلة أو الشريك: كل من ينضم إلى برنامج شركاء سلة لتقديم خدمات أو حلول أو منتجات إلى تجار سلة، ويشمل ذلك (مطوري التطبيقات، مطوري الثيمات، مزودي الخدمات، والمسوقين بالعمولة)، سواء كان شخصًا طبيعياً أو اعتبارياً. • التاجر: كل تاجر يستخدم منصة سلة لإنشاء متجره الإلكتروني ويستفيد من الخدمات و الحلول المقدمة من الشركاء. • الاتفاقية: تعني هذه الاتفاقية التي تتضمن شروط وأحكام استخدام منصة سلة من قبل الشريك، وتنظم العلاقة بين منصة سلة والشريك. • ⟪مزود الخدمة: الشريك الذي يقدم خدماته لتجار سلة من خلال منصة الشركاء، ويُعد طرفًا مستقلاً.⟫ المادة الثانية - أهلية الشريك القانونية: • يقر الشريك بأنه يتمتع بأهلية قانونية ونظامية وفقًا للأنظمة السارية في المملكة العربية السعودية. • إذا كان الشريك كيانًا نظاميًا (شركة أو مؤسسة)، فيجب أن يكون مرخصًا ومصرحًا له بممارسة النشاط التجاري ذي العلاقة. • يقر الشريك بأنه مسؤول مسؤولية كاملة عن الخدمات أو المنتجات التي يقدمها عبر منصة الشركاء. المادة الثالثة - شروط قبول و تسجيل الشركاء شروط القبول في البرنامج ١. هوية واضحة: يجب تقديم بيانات شخصية…
@@ -344,6 +348,7 @@
 - cite_ids: SA-S-0027
 
 **Citation SA-S-0027:** `https://partners.salla.com/legal/apps-policy` | المادة (5) – العمولات والدفع (line 55 of the rendered text) | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/036-partners.salla.com/text.txt` (fetched 2026-10-10T23:51:51Z, captured)
 - quote: تُصرف مستحقات المطورين بعد مرور فترة ضمان الجودة والاسترداد (عادة 15 يومًا).
 - title: سياسة الشروط والاستخدام – متجر تطبيقات سلة | شركاء سلة
 - in context: …كلفته وبيانات المطور قبل التفعيل. • يحق للتاجر إلغاء الاشتراك أو حذف التطبيق في أي وقت، دون استحقاق لاسترداد كامل في حال كانت الخدمة مدفوعة حسب سياسة المطور. • يجب عدم استخدام التطبيقات في أنشطة مخالفة للأنظمة أو تتعارض مع قيم المجتمع. المادة (5) - العمولات والدفع: • في حال كان التطبيق مدفوعًا، فإن عملية الدفع تتم عبر منصة سلة وتخضع للعمولات والنسب المعتمدة. • تحتفظ منصة سلة بحقها في اقتطاع نسبة من قيمة الاشتراك مقابل خدمات الاستضافة والتكامل. • ⟪تُصرف مستحقات المطورين بعد مرور فترة ضمان الجودة والاسترداد (عادة 15 يومًا).⟫ المادة (6) - الملكية الفكرية: • جميع حقوق التطبيقات تعود للمطورين ما لم يتم الاتفاق خلاف ذلك، فيما تعود واجهة المتجر والتكاملات الداخلية لمنصة سلة، ولا يجوز لأي طرف استخدامها دون إذن كتابي مسبق. المادة (7) - إيقاف الخدمة أو التطبيق: • تحتفظ منصة سلة بحقها في إيقاف أي تطبيق مؤقتًا أو دائمًا إذا تبين وجود مخالفات فنية أو قانونية. • يحق للمطور حذف تطبيقه من المتجر بعد إشعار التجار المشتركين به، ويجب أن يتم ذلك وفق سياسة إشعار مدتها 15 يومًا. • يجوز…
@@ -361,6 +366,7 @@
 - cite_ids: SA-S-0207
 
 **Citation SA-S-0207:** `https://docs.salla.dev/versioning.md` | ### When to Add a New Version? (line 19 of the markdown) | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/012-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:32Z, captured)
 - quote: APIs should only be versioned up when a breaking change occurs.
 - title: Versioning
 - the page opens: Changes in an API are inevitable as your understanding and experience with a system evolve. To effectively manage the impact of these changes, we have implemented URI versioning. URI Versioning One approach to version a REST API is by incorporating the version number within the URI path. When the version is introduced in the URI space, the representations of resources are treated as immutable. Therefore, when modifications are necessary, a new URI space must be created. For instance, consider an…
@@ -380,6 +386,7 @@
 - cite_ids: SA-S-0208
 
 **Citation SA-S-0208:** `https://docs.salla.dev/versioning.md` | # Versioning (line 3 of the markdown) | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/012-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:32Z, captured)
 - quote: To effectively manage the impact of these changes, we have implemented URI versioning.
 - title: Versioning
 - the page opens: Changes in an API are inevitable as your understanding and experience with a system evolve. To effectively manage the impact of these changes, we have implemented URI versioning. URI Versioning One approach to version a REST API is by incorporating the version number within the URI path. When the version is introduced in the URI space, the representations of resources are treated as immutable. Therefore, when modifications are necessary, a new URI space must be created. For instance, consider an…

@@ -125,6 +125,7 @@
 - note: first run's citation
 
 **Citation SH-S-0541:** `https://help.shopify.com/en/manual/markets.md` | Customizing market experiences | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/040-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
 - quote: Customizations control settings, such as currency, product availability, theme content, domains, languages, and taxes.
 - title: Markets
 - the page opens: You can use Markets to manage how different customers experience your store based on their location, customer group, retail location, or sales channel. Markets let you define audiences using conditions and tailor their experience with customizations, including currency, language, pricing, and theme content. You can manage your markets from the Markets page in your Shopify admin. Understanding and setting up markets Get familiar with the key markets concepts, such as conditions and customizations…
@@ -188,6 +189,7 @@
 - note: first run's citation
 
 **Citation SH-S-0258:** `https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md` | Connect Shopify Payments to each entity | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/066-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:02Z, captured)
 - quote: Each entity has its own Shopify Payments account, payout currency, and bank account, so you need to complete this process for every entity that you want to activate.
 - title: Selling with multiple entities
 - the page opens: Plan requirement Selling from multiple entities with Shopify Payments is available only for organizations on the Shopify Plus and Shopify Enterprise Commerce plan. You can sell from multiple entities in a single store both online and using Shopify POS with Shopify Payments. This lets you streamline your business operations, operate multiple legal entities within the same country, expand internationally, and manage payouts and orders in the same store. Supported structures include online and reta…
@@ -348,6 +350,8 @@
 - note: first run's citation
 
 **Citation SH-S-0001:** `https://www.shopify.com/legal/terms` | 13. Shopify Contracting Party and Forum | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
 - quote: Contracting Party. You are contracting with the Shopify Contracting Party or Parties below, based on the billing address of your Store.
 - title: Shopify Terms of Service - Shopify
 - in context: …of the Services; b. using third-party proxies or other interventions that impair the security of Account Data; or c. using the Services otherwise in violation of these Terms of Service. To the extent that you impair the security of Account Data, Shopify cannot ensure PCI DSS compliance and is not responsible for the security of Account Data. Information on PCI DSS can be found on the PCI Council's website. 13. Shopify Contracting Party and Forum ⟪Contracting Party. You are contracting with the Shopify Contracting Party or Parties below, based on the billing address of your Store.⟫ Forum Selection. Any dispute or claim relating to the Services or these Terms of Service can only be brought in the courts listed in the table below. Those courts have exclusive jurisdiction, and each party agrees to that jurisdiction and will not object to it. MERCHANT BILLING ADDRESS REGION SHOPIFY CONTRACTING PARTY/PARTIES REGISTERED OFFICE FORUM United States or Canada Shopify Inc., a Canadian corporation 151 O'Connor Street, Ground floor, O…
@@ -446,6 +450,8 @@
 - note: first run's citation
 
 **Citation SH-S-0088:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, A. Your Role | 2026-10-10 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
 - quote: Your Role. To utilize the Payments Services, you must be a business located in your Designated Country.
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …Cryptocurrency Payment Protocol into a Payment Processor Account, the legal terms of the applicable Payment Processor will apply. Unless you are using another Coinbase product or have separately created an account with Coinbase for this purpose, Coinbase does not provide, and is not responsible for the security of, any cryptocurrency wallet that you use as a Payout Account or otherwise to receive payments via the Cryptocurrency Payment Protocol. ⟪Your Role. To utilize the Payments Services, you must be a business located in your Designated Country.⟫ The Payments Services. Shopify hereby grants you a non-exclusive, non-transferable, non-sublicensable, limited, revocable right to use the Payments Services (the "License"). The License shall be for the term of this Agreement only. Neither the License nor any other provision hereof shall grant any rights in the Payments Services or other intellectual property rights except the limited License of use set out above. You shall not: (i) permit any t…

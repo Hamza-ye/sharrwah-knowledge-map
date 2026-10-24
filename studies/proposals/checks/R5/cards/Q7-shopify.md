@@ -126,6 +126,7 @@
 - note: first run's citation
 
 **Citation SH-S-0546:** `https://help.shopify.com/en/manual/international/payments.md` | Shopify Payments and other payment providers | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/036-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
 - quote: At checkout, the price will be converted to your store's default currency, and your customer will be charged in that currency.
 - title: Payments
 - the page opens: Your market settings include a payments card that displays eligible local payment methods, as well as a link to your payment settings where you can activate and customize a variety of payment methods. Shopify Payments and other payment providers {#other-payment-providers} Only stores with Shopify Payments or Adyen as the primary gateway can process payments in a customer's local currency. The following payment options are compatible with multi-currency processing: * Shopify Payments credit card …
@@ -657,6 +658,8 @@
 - note: first run's citation
 
 **Citation SH-S-0565:** `https://help.shopify.com/en/manual/international/managed-markets/overview.md` | Flow of funds | 2026-10-10 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/035-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/028-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:06Z, captured)
 - quote: After an international Managed Markets order is placed in your store, Shopify Payments processes the transaction and holds the money in a Global-e account.
 - title: Overview of Managed Markets
 - the page opens: You can use Managed Markets to sell to customers in other countries without registering a business, registering for tax, or arranging customs clearance in each destination. Your customers buy from your store, in your brand's checkout, and pay in their own currency. Their order arrives without a surprise bill at the door. Managed Markets builds on Shopify Markets, the tools built into every store for selling in other countries, including localized domains and store translation. With Shopify Marke…

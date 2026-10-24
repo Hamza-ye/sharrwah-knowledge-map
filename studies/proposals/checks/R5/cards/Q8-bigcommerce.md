@@ -72,6 +72,7 @@
 - from: held
 
 **Citation Q8-BC-C021:** `https://www.commerce.com/terms/` | Certain Definitions | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: “Services” means all products, services, and materials offered by Commerce or its Affiliates which are located on or accessible through the Website or otherwise described in an Order Form or Program Document, including an Extension.
 - title: Master Services Agreement | Commerce
 - in context: … requirements. "Order Form" or "Order" means one or more order forms that reference this Agreement and are executed by Customer and Commerce or its Affiliate(s) for the purchase of Services. By entering into an Order Form hereunder, an Affiliate agrees to be bound by the terms of this Agreement as if it were an original party hereto; however pricing and Services are subject to change with the addition of each new Customer Affiliate's Order Form. ⟪"Services" means all products, services, and materials offered by Commerce or its Affiliates which are located on or accessible through the Website or otherwise described in an Order Form or Program Document, including an Extension.⟫ "Store" means an individual admin panel for the Customer to connect and manage one or multiple Storefront(s) by way of distinct settings and configurations. "Storefront" means an individual website, or a shopping cart offered through the Ecommerce Platform identified by a unique domain. "Third-Party Product(s)" means any third-party information, website, product, service, or materials referenced in, accessible through, or provided in connection …
@@ -89,12 +90,14 @@
 - from: held
 
 **Citation Q8-BC-C003:** `https://support.bigcommerce.com/s/article/Pricing` | About BigCommerce Pricing | 2026-10-13 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/040-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:47Z, captured)
 - quote: BigCommerce pricing is designed to grow predictably with your business. GMV thresholds for each plan reflect the size of businesses within each tier, and moving into a higher-tier plan comes with access to additional features.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …igible orders Viewing sales volume Viewing your Open Payment Provider fee summary Manually calculating your sales volume FAQ When you create your store, you can select a subscription plan based on your desired feature set and anticipated sales volume. BigCommerce offers plans that scale to fit your business's needs, whether you're just starting out or are ready for advanced features like stored payment methods, product filtering, or price lists. ⟪BigCommerce pricing is designed to grow predictably with your business. GMV thresholds for each plan reflect the size of businesses within each tier, and moving into a higher-tier plan comes with access to additional features.⟫ Overage fees increase linearly, so costs remain proportional as your sales grow. BigCommerce Store Plans BigCommerce offers several store subscription plans, sized to fit your store's sales volume or feature needs. Our first three plans, which also offer self-service upgrades or downgrades, can be billed monthly or annually. Our Performance plan is a custom-priced plan designed for larger stores with more complex needs. For more information on p…
 
 **Citation Q8-BC-C004:** `https://support.bigcommerce.com/s/article/Pricing` | About BigCommerce Pricing | 2026-10-13 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/040-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:47Z, captured)
 - quote: Overage fees increase linearly, so costs remain proportional as your sales grow.
 - title, opening and note boxes: as for this source's citation above
 - in context: …nticipated sales volume. BigCommerce offers plans that scale to fit your business's needs, whether you're just starting out or are ready for advanced features like stored payment methods, product filtering, or price lists. BigCommerce pricing is designed to grow predictably with your business. GMV thresholds for each plan reflect the size of businesses within each tier, and moving into a higher-tier plan comes with access to additional features. ⟪Overage fees increase linearly, so costs remain proportional as your sales grow.⟫ BigCommerce Store Plans BigCommerce offers several store subscription plans, sized to fit your store's sales volume or feature needs. Our first three plans, which also offer self-service upgrades or downgrades, can be billed monthly or annually. Our Performance plan is a custom-priced plan designed for larger stores with more complex needs. For more information on plans, pricing, and features, see BigCommerce Pricing and Plan Information. Plan N…
@@ -114,6 +117,7 @@
 - note: Cells of the Multi-storefront line, in plan order Core, Growth, Scale, Performance.
 
 **Citation BC-S-0228:** `https://www.bigcommerce.com/pricing/` | Compare plans table (raw HTML) | 2026-10-12 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/102-bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:51Z, captured)
 - quote: Add storefront $30/mo (max. 3) Add storefront $50/mo (max. 5) Add storefront $100/mo (max. 8) Contact Sales
 - title: BigCommerce Pricing and Plan Information | BigCommerce
 - in context: … plan thresholds. Starting June 1, you can manage your plan at any time in your account under Account > Upgrade Plan. Sales Channels Sales Channels Core Growth Scale Performance Online storefront Multi-storefront iCreate and manage multiple, unique storefronts within your BigCommerce dashboard. Whether you manage multiple brands, sell across customer segments or build across different regions - streamline your operations from one single account. ⟪Add storefront $30/mo (max. 3) Add storefront $50/mo (max. 5) Add storefront $100/mo (max. 8) Contact Sales⟫ Point of sale iConnect your offline and online business with POS integrations to Square, Vend, Clover, Heartland Retail, and more. Amazon / eBay / Walmart iConnect your store to the world's largest marketplaces to reach millions of new shoppers while managing all your orders from BigCommerce. Google / Meta / TikTok / Microsoft / Pinterest (Feedonomics Surface) Free with every plan Advertise on Google, Meta, TikTok, and more with Feedonomics Surf…
@@ -131,6 +135,7 @@
 - from: held
 
 **Citation Q8-BC-C028:** `https://www.commerce.com/terms/` | preamble | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: Your access to and use of the Services is also subject to any additional guidelines or rules applicable to such Services or features that may be posted from time to time and any addenda agreed to by the Parties. All such guidelines or rules are hereby incorporated by reference into this Agreement.
 - title: Master Services Agreement | Commerce
 - in context: … of the terms of our relationship. By utilizing the Services, you accept these terms and conditions in full. The term "Commerce," "we," "us," or "our" refers to the Commerce entity providing the Services. "You" or "Customer" refers to the individual or entity using the Services, whether by registering an account, clicking to accept this Agreement, executing an Order that references this Agreement, or simply by using our Services in any capacity. ⟪Your access to and use of the Services is also subject to any additional guidelines or rules applicable to such Services or features that may be posted from time to time and any addenda agreed to by the Parties. All such guidelines or rules are hereby incorporated by reference into this Agreement.⟫ Except as may be provided in an Order Form, this Agreement is effective as of the date you first use or access any Service or when you click "I agree" (or similar button or checkbox) to register for an account, whichever occurs first. Your continued use of the Services constitutes your acceptance of this Agreement. This Agreement does not require a physical signature to be legally binding; your electronic assent or use of our Services signifies …
@@ -148,6 +153,7 @@
 - cite_ids: BC-S-0464
 
 **Citation BC-S-0464:** `https://www.commerce.com/terms/` | Certain Definitions: Extension | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: For the avoidance of doubt, an Extension is a Service and is not a Third-Party Product.
 - title: Master Services Agreement | Commerce
 - in context: …s attributable to actions or inactions on the part of the Customer, such as failure to validate their account, accessing the fulfilled Ecommerce Platform or Service, development and setup activities, or the go-live or launching of a Store. "Extension" means a service developed by a third party but implemented and provided by Commerce that is identified in the Order Form as an Extension and further described in the corresponding Program Document. ⟪For the avoidance of doubt, an Extension is a Service and is not a Third-Party Product.⟫ "Multi-Storefront" or "MSF" means the ability to manage multiple unique Storefronts within one Store. A Multi-Storefront enabled Store must meet additional requirements. "Order Form" or "Order" means one or more order forms that reference this Agreement and are executed by Customer and Commerce or its Affiliate(s) for the purchase of Services. By entering into an Order Form hereunder, an Affiliate agrees to be bound by the terms of this Agreemen…
@@ -165,6 +171,7 @@
 - cite_ids: BC-S-0301
 
 **Citation BC-S-0301:** `https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts.md` | ### Account-level API accounts | 2026-10-12 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/091-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:46Z, captured)
 - quote: Account-level API credentials provide direct access to all the account's stores, not just the store that was signed in at the time of creation.
 - title: API Accounts
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. > Create API accounts, authenticate requests, and configure OAuth scopes and access tokens for BigCommerce APIs. BigCommerce offers a suite of APIs that let you manage store data, sign customers in, m…
@@ -184,6 +191,7 @@
 - cite_ids: BC-S-0220
 
 **Citation BC-S-0220:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/channels.md` | ## Channels | 2026-10-12 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/022-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:19:37Z, captured)
 - quote: A channel is anywhere a merchant sells their products. This encompasses headless storefronts, marketplaces, POS systems, and marketing platforms.
 - title: Channels
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Create and manage sales channels, their sites, and their product listings. Channels A channel is anywhere a merchant sells their products. This encompasses headless storefronts, marketplaces, POS syst…
@@ -204,6 +212,7 @@
 - note: table row 2 of 3, first two cells
 
 **Citation Q8-BC-C090:** `https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps.md` | Visibility table | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/080-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:35Z, captured)
 - quote: Unlisted | Apps submitted and approved but not listed on the [App Marketplace](https://www.bigcommerce.com/apps/)
 - title: Types of Apps
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. The first step when developing an app is deciding which type of app to develop. The two types of apps, single-click and connector, are defined by the method of authentication. Single-click apps use an…
@@ -224,6 +233,7 @@
 - from: held
 
 **Citation Q8-BC-C052:** `https://docs.bigcommerce.com/developer/docs/beta/checkout-extensions/overview.md` | Architecture | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0426Z-q1-bigcommerce-sources-2/items/010-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:27:05Z, captured)
 - quote: The extension is a web app hosted outside of BigCommerce, that's accessible with a URL or packaged as an offering available on the BC app marketplace.
 - title: Checkout Extensions (Beta)
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Overview > Note > > Beta access > > This API is currently in beta. Checkout extension is available without restrictions in development and on a live store. We may introduce breaking changes without no…
@@ -243,6 +253,7 @@
 - from: held
 
 **Citation Q8-BC-C092:** `https://docs.bigcommerce.com/developer/api-reference/rest/integrations/tax-provider.md` | Tax Provider API | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/060-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:15Z, captured)
 - quote: Use BigCommerce’s platform-to-platform Tax Provider API to integrate a tax calculation engine into the BigCommerce storefront and control panel.
 - title: Tax Provider API
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Use BigCommerce's platform-to-platform Tax Provider API to integrate a tax calculation engine into the BigCommerce storefront and control panel. Supports estimate, adjust, commit, and void operations.…
@@ -262,6 +273,7 @@
 - from: held
 
 **Citation Q8-BC-C055:** `https://www.bigcommerce.com/apps/` | page tabs | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/097-bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:46Z, captured)
 - quote: Apps & Integrations Themes Partner Services
 - title: Ecommerce Apps &amp; Integrations | BigCommerce
 - in context: …wards See where we're winning. PARTNERS Overview Discover your partner in growth. Become a Partner Join our global partner ecosystem. Find an Agency Partner Get ecommerce help from certified experts. Find a Technology Partner Explore powerful integrations and apps. Powered By Resell ecommerce with Commerce-as-a-Service. The Global B2B Buyer Behavior Report This in-depth report provides actionable strategies to help you sell more online. READ NOW ⟪Apps & Integrations Themes Partner Services⟫ APPS AND INTEGRATIONS Build your stack. Grow your business. All Categories Accounting & Tax Ecommerce AI Analytics & Reporting B2B/Wholesale Catalog & Order Management Checkout CMS & Hosting CRM & Customer Service Data Transfer/Migration Services ERP Financing Marketing Merchandising Mobile Payments & Security POS & In-Store Product & Shipping Protection Product Sourcing Sales Channels Shipping & Fulfillment Site Tools Spotlight PayFabric Paymen…
@@ -288,12 +300,14 @@
 - note: list
 
 **Citation Q8-BC-C074:** `https://support.bigcommerce.com/s/article/Unified-Billing-for-Partners` | Requirements and Limitations | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/048-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:59Z, captured)
 - quote: To be eligible for Unified Billing: You must have a Technology Partner account, with up to date Partner Portal login credentials. You must sign the Commerce Partner Agreement (CPA) or, prior to September 1, 2025, have signed the Technology Partner Program Agreement (TPPA).
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …trial period before the recurring charge starts Plan adjustments such as upgrades, downgrades, and cancellations cancellations will process at the end of the agreed upon billing cycle. For example, if a customer is on a monthly billing cycle, their subscription will be cancelled at the end of the month. updates to an existing charge require the customer's approval (the customer must proceed through the checkout flow) Requirements and Limitations ⟪To be eligible for Unified Billing: You must have a Technology Partner account, with up to date Partner Portal login credentials. You must sign the Commerce Partner Agreement (CPA) or, prior to September 1, 2025, have signed the Technology Partner Program Agreement (TPPA).⟫ Your business must be based in the US, UK, CA, or IN. Your app must be a Single-Click App. Your billing model must support fixed recurring rates or fixed one-time rates. A trial period can be included, but is optional. SUPPORTED BILLING MODELS The following billing models, or a combination of the models, are supported: Tiered pricing model - customers are offered a selection of different package levels or "tiers". Base tiers generally include "m…
 
 **Citation Q8-BC-C075:** `https://support.bigcommerce.com/s/article/Unified-Billing-for-Partners` | Requirements and Limitations | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/048-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:59Z, captured)
 - quote: Your business must be based in the US, UK, CA, or IN. Your app must be a Single-Click App. Your billing model must support fixed recurring rates or fixed one-time rates.
 - title, opening and note boxes: as for this source's citation above
 - in context: …elled at the end of the month. updates to an existing charge require the customer's approval (the customer must proceed through the checkout flow) Requirements and Limitations To be eligible for Unified Billing: You must have a Technology Partner account, with up to date Partner Portal login credentials. You must sign the Commerce Partner Agreement (CPA) or, prior to September 1, 2025, have signed the Technology Partner Program Agreement (TPPA). ⟪Your business must be based in the US, UK, CA, or IN. Your app must be a Single-Click App. Your billing model must support fixed recurring rates or fixed one-time rates.⟫ A trial period can be included, but is optional. SUPPORTED BILLING MODELS The following billing models, or a combination of the models, are supported: Tiered pricing model - customers are offered a selection of different package levels or "tiers". Base tiers generally include "must-have" features, with each successive tier including the previous tier and additional features for a higher price. Freemium model - basic services are provided at no c…
@@ -320,6 +334,7 @@
 - from: held
 
 **Citation Q8-BC-C069:** `https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements.md` | Functionality (note) | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/079-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:34Z, captured)
 - quote: We have paused all new externally built payment integrations for our publicly available BigCommerce Marketplace. We are updating our available APIs to create a more robust experience and hope to re-open this program in the near future.
 - title: App Store Approval Requirements
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. The Marketplace team reviews all app submissions and tests apps to verify they meet App Marketplace listing standards. Verify your app meets the requirements below before submitting it for approval. G…
@@ -339,6 +354,7 @@
 - cite_ids: BC-S-0179
 
 **Citation BC-S-0179:** `https://www.commerce.com/terms/merchant-unified-billing/` | Opt-in and Opt-out | 2025-07-31 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/117-commerce.com/text.txt` (fetched 2026-10-12T04:21:02Z, captured)
 - quote: Effective upon opt-in, you acknowledge that the Unified Billing Partners have appointed Commerce as agent for the collection and disbursement of monies, in the name of the Unified Billing Partners, for your purchases from the Unified Billing Partners processed on or through the Website and/or the
 - title: Merchant Unified Billing | Commerce
 - in context: …ble products & services for the Commerce SaaS-based ecommerce platform. Unless otherwise defined herein, capitalized terms shall have the meaning ascribed to them in the Agreement, and these Merchant Unified Billing terms shall take precedence over any conflicting terms in the Agreement. Opt-in and Opt-out. You opt into unified billing by purchasing, on or through the Website and/or the Commerce Marketplace, goods from a Unified Billing Partner. ⟪Effective upon opt-in, you acknowledge that the Unified Billing Partners have appointed Commerce as agent for the collection and disbursement of monies, in the name of the Unified Billing Partners, for your purchases from the Unified Billing Partners processed on or through the Website and/or the⟫ Commerce Marketplace, as further described in these terms. Commerce does not act for you in collecting and disbursing such monies and Commerce will not process any payments directly, and it will rely on third-party payment processors to handle all payments made by you to Unified Billing Partners. You may opt out of unified billing only by canceling your agreement with the Unified Billing Partner for the applicable goods, effective at the end of …
@@ -357,6 +373,7 @@
 - from: held
 
 **Citation Q8-BC-C011:** `https://support.bigcommerce.com/s/article/Pricing` | Plan thresholds and automatic upgrades | 2026-10-13 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/040-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:47Z, captured)
 - quote: Each self-serve plan has a GMV threshold designed to reflect the size of business it supports. When your trailing 12-month Inclusive GMV exceeds your current plan’s threshold, your plan is automatically upgraded.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -375,11 +392,13 @@
 - from: held
 
 **Citation Q8-BC-C029:** `https://www.commerce.com/terms/` | Contracting Entity | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: Contracting Entity. “Commerce” means the Commerce entity with which you are entering into this Agreement. If you have previously entered into an agreement with a Commerce entity, then “Commerce” means that entity.
 - title: Master Services Agreement | Commerce
 - in context: …gh the Ecommerce Platform identified by a unique domain. "Third-Party Product(s)" means any third-party information, website, product, service, or materials referenced in, accessible through, or provided in connection with, the Website or Services. "Website" means the Commerce website located at www.commerce.com (including all associated internet country codes), together with all Commerce websites accessible there, and the Account control panel. ⟪Contracting Entity. "Commerce" means the Commerce entity with which you are entering into this Agreement. If you have previously entered into an agreement with a Commerce entity, then "Commerce" means that entity.⟫ If you have not previously entered into an agreement with a Commerce entity, then "Commerce" means the entity identified in the following table: Any other jurisdiction Commerce.com Pty. Ltd., an Australia proprietary limited company New York Ecommerce Platform, Extensions, and certain Professional Services If purchasing and/or contracting solely with Feedonomics Worldwide Feedonomics Holdings, LLC, a Delaware corporation in the United States New…
 
 **Citation Q8-BC-C030:** `https://www.commerce.com/terms/` | Contracting Entity | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: If you have not previously entered into an agreement with a Commerce entity, then “Commerce” means the entity identified in the following table:
 - title, opening and note boxes: as for this source's citation above
 - in context: …ion with, the Website or Services. "Website" means the Commerce website located at www.commerce.com (including all associated internet country codes), together with all Commerce websites accessible there, and the Account control panel. Contracting Entity. "Commerce" means the Commerce entity with which you are entering into this Agreement. If you have previously entered into an agreement with a Commerce entity, then "Commerce" means that entity. ⟪If you have not previously entered into an agreement with a Commerce entity, then "Commerce" means the entity identified in the following table:⟫ Any other jurisdiction Commerce.com Pty. Ltd., an Australia proprietary limited company New York Ecommerce Platform, Extensions, and certain Professional Services If purchasing and/or contracting solely with Feedonomics Worldwide Feedonomics Holdings, LLC, a Delaware corporation in the United States New York Feedonomics Platform Eligibility. Minimum Age. The Services are available only to persons who are the age of majority and can form legally …
@@ -397,6 +416,7 @@
 - from: held
 
 **Citation Q8-BC-C035:** `https://www.commerce.com/terms/jurisdiction-specific-terms/` | Incorporated Terms – Jurisdiction-Specific Terms | 2025-10-17 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/115-commerce.com/text.txt` (fetched 2026-10-12T04:21:00Z, captured)
 - quote: The following terms supplement, replace or modify the referenced terms for Customers domiciled in the jurisdictions below.
 - title: Jurisdiction-Specific Terms | Commerce
 - in context: … FeedonomicsFeedonomics MakeswiftMakeswift United States AboutAbout CareersCareers PressPress ContactContact Become an investorBecome an investor Incorporated Terms - Jurisdiction-Specific Terms Date of Last Revision: October 17, 2025 The terms below are incorporated into, and form an integral part of, the Commerce Master Services Agreement. Unless otherwise defined herein, capitalized terms shall have the meaning ascribed them in the Agreement. ⟪The following terms supplement, replace or modify the referenced terms for Customers domiciled in the jurisdictions below.⟫ EMEA. European Union and United Kingdom. For Customers domiciled within the European Union or the United Kingdom: Arbitration. The 'Arbitration Agreement and Class Action Waiver' section of the Agreement is supplemented with the following two additional provisions:| Internal Dispute Resolution. If you are a business established within the European Union or the United Kingdom, you are also eligible to make use of our internal dispute resolution p…
@@ -415,6 +435,7 @@
 - from: held
 
 **Citation Q8-BC-C033:** `https://www.commerce.com/terms/` | Pre-release Services | 2026-06-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
 - quote: From time to time, Commerce may, in its sole discretion, allow Customer to access pre-release, early access, trial, or beta features, products, or functionality as part of the Services that are not yet generally available ("Pre-release Services").
 - title: Master Services Agreement | Commerce
 - in context: …ing the Changes to its Website. Your continued use of the Website or Services following notice of the Changes (or posting of the Agreement incorporating the Changes in the event your email address is no longer valid, is blocked, or is otherwise not able to receive the notice) will mean that you accept and agree to the Changes. Such Changes will apply prospectively beginning on the date the Changes are posted to the Website. Pre-release Services. ⟪From time to time, Commerce may, in its sole discretion, allow Customer to access pre-release, early access, trial, or beta features, products, or functionality as part of the Services that are not yet generally available ("Pre-release Services").⟫ Customer's use of any Pre-release Services constitutes acceptance of this Section. All Pre-release Services and all associated conversations, performance data, and materials relating thereto are Commerce's Confidential Information. Customer will not make any public statements or otherwise disclose its participation in any Pre-release Services without Commerce's prior written consent. Commerce has no obligation to announce, release, or support an…
@@ -433,6 +454,7 @@
 - cite_ids: BC-S-0077
 
 **Citation BC-S-0077:** `https://docs.bigcommerce.com/developer/docs/beta.md` | Closed Betas | 2026-10-12 | kind: stated | quote check: found (markup removed)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/078-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:33Z, captured)
 - quote: These features are in closed beta and are not available by default. To request access, contact BigCommerce support.
 - title: Closed Betas
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. > Note > > These features are in closed beta and are not available by default. To request access, contact BigCommerce support. The functionality documented here will not work unless your store has bee…
@@ -452,6 +474,8 @@
 - cite_ids: BC-S-0140
 
 **Citation BC-S-0140:** `https://www.bigcommerce.com/payments/bigcommerce-payments/` | Native features | 2026-10-12 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/100-bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:49Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/109-bigcommerce.com/text.txt` (fetched 2026-10-12T10:51:17Z, captured)
 - quote: Built with PayPal's infrastructure, which manages PCI compliance and risk controls so your team can focus on selling, not on maintaining payment security.
 - title: BigCommerce Payments – a native payments experience.
 - in context: …processing rate: 2.39% + $0.30 Additional payment methods: PayPal button and Venmo: 3.49% + $0.49 BNPL with Afterpay or Klarna: 4.99% + $0.30 Rates apply to eligible US merchants. Availability and features may vary by region and merchant eligibility. See BigCommerce documentation for details. NATIVE FEATURES Everything under one roof - from checkout to payouts. The payment methods your customers trust: built in, ready to go, and handled for you. ⟪Built with PayPal's infrastructure, which manages PCI compliance and risk controls so your team can focus on selling, not on maintaining payment security.⟫ What's included, and why it matters. Native setup in BigCommerce Sell faster. No new gateway to configure, no extra logins to manage. Unified payouts and reconciliation Save time on ops every single month. Get everything in one place. PayPal at checkout Helps reduce friction and cart abandonment the moment it matters most. Fastlane guest checkout Streamline one-click checkout for returning buyers, and reduce drop-off on guest orders. Buy now, pa…
