@@ -122,3 +122,75 @@ There are 9 new statements, Q8-SH-098 to Q8-SH-106, with citations Q8-SH-C102 to
 ### Tools
 
 - The five corpus searches ran together in the background. They took more than ten minutes in all.
+
+## Re-check against the step text from saved HTML, 19 October 2026
+
+### What was read
+
+- observed-sh at `51626891aa711ee9c3ef2d05ce63c95396dca949`: `docs/READING.md`, the entry for `derived/step-text-from-html/`, and that folder's `meta.json`.
+- Corpus searches, all with `--only "step text from saved HTML" --max 10`:
+  - `"Beta Services" "beta" "early access" "تجريبي"` (Q8-SH-N01; sentence 3, release stage);
+  - `"Dependent on contract terms" "Shopify for enterprise" "Commerce Components"` (Q8-SH-N02): no document listed;
+  - `"Plus terms" "Choose a plan" "Plan details" "اختيار خطة"` (Q8-SH-G0245, Q8-SH-G0246; sentences 2 and 3, by plan);
+  - `"feature preview" "test drive" "Developer preview" "معاينة"` (draft ids Q8-SH-043, Q8-SH-044, Q8-SH-051, Q8-SH-073);
+  - `"Sales channels" "Apps and sales channels" "قنوات البيع"` (draft ids Q8-SH-014, Q8-SH-015, Q8-SH-K2063);
+  - `"Shopify Balance" "Locations" "Custom apps" "App extensions"` (draft ids Q8-SH-K0041, Q8-SH-K2591, Q8-SH-033, Q8-SH-081);
+  - `"Feature test drives" "test drive" "Shopify Editions" "Plus terms"` (Q8-SH-043, Q8-SH-044, Q8-SH-064): only the Plus review pages were listed, no test drive page;
+  - `"Shopify Balance" "Shopify Capital" "not available in your country" "غير متاح"` (Q8-SH-K0041, Q8-SH-055): only the Capital pages of run 20260930T045741Z-sweep-trial2 were listed;
+  - `"Custom apps" "Develop apps" "App extensions" "Built for Shopify"` (Q8-SH-033, Q8-SH-081, Q8-SH-029): App Store category pages and the admin Apps pages.
+- Texts opened under `derived/step-text-from-html/`, with each step's row in its run's `actions.jsonl` and, for comparison, its `steps/NNN.aria.yaml`:
+  - `20261002T003831Z-sweep-capture-plus/321.html.txt` (plan choice) and `024.html.txt` (Sales channels settings);
+  - `20260930T232928Z-journey-dev-stores/010.html.txt` (Create a dev store);
+  - `20261002T004032Z-sweep-capture-grow/420.html.txt` (Plus trial review) and `277.html.txt` (Growth);
+  - `20260930T045741Z-sweep-trial2/423.html.txt` (Plus upgrade review) and `128.html.txt` (Capital offers).
+
+### Stores, as the runs name them
+
+- Q8-SH-108: the Create a dev store page belongs to no store. As for Q8-SH-099, the scope names the organization in the page's address (`store-create/organization/238086467`) and says the run names no store.
+- The other new statements' stores are as the runs' `answers.jsonl` name them (capture-plus, capture-grow).
+
+### Open items
+
+- Q8-SH-N01 (beta terms, routed to the founder): unchanged. The texts show "Early access" for Campaign Autopilot on the Growth page (Q8-SH-111), but no terms. The search and the text read were added to `searched` and `read`.
+- Q8-SH-N02 (enterprise contract terms, routed to the founder): unchanged. The search listed nothing; it was added to `searched`.
+- Q8-SH-G0245 (the Plus agreement): stays open. The Plus review pages' markup holds only the link "Plus terms" (and "Plus trial terms"), not the terms.
+- Q8-SH-G0246 (the Plus term and renewals): stays open. The review pages add the organization move (Q8-SH-109) and the term prices already in their accessibility trees; no renewal route is among the texts listed.
+
+### Wording changes (step 4)
+
+None. The two rows' wording was checked in the last re-check, and nothing read here bears on it.
+
+### New statements
+
+There are 5 new statements, Q8-SH-107 to Q8-SH-111, with citations Q8-SH-C112 to Q8-SH-C119. Each says in its `note` that it is from the saved HTML and whether the step's `aria.yaml` shows the same words:
+- Q8-SH-107: the aria tree holds the same plan headings and items, but not the prices;
+- Q8-SH-108: the aria tree holds neither the plan options nor the feature-preview options; they are the select's options as the markup states them;
+- Q8-SH-109 and Q8-SH-111: the aria tree holds the same words;
+- Q8-SH-110: the aria tree holds only the footnote "¹ Variable fees may apply for larger businesses."; the Variable fees text is in the markup, likely a dialog that wasn't open.
+
+None is between `⟦hidden⟧` and `⟦/hidden⟧`.
+
+Not recorded:
+- The feature preview list in `20260930T232928Z-journey-dev-stores/010.html.txt` (30 September) is the same six previews as Q8-SH-100 (7 October).
+- Run 20260930T045741Z-sweep-trial2, step 423 (store ibx5bt-xy, 30 September) says the same as Q8-SH-109 in other words ("When you subscribe to the Plus plan, this store will move out of the My Store organization into a new organization.").
+- The Capital offers page of store ibx5bt-xy (step 128): "There are no funding offers at the moment", with amounts in YER. It doesn't bear on how Shopify organizes what it offers.
+- Sales channels settings (capture-plus, step 024): the settings list already recorded as Q8-SH-103, and "My Store 5 stores Organization Users Billing".
+
+### For the draft
+
+- Q8-SH-001 (several plans): Q8-SH-107 adds the plan choice page's offer on store capture-plus, Basic, Grow and Advanced with their prices and features.
+- Q8-SH-K2743 (staff accounts by plan): Q8-SH-107 shows the same page saying "Up to 5 staff accounts" for Grow and "Up to 15 staff accounts" for Advanced.
+- Q8-SH-051 and Q8-SH-073 (dev stores and feature previews): Q8-SH-108 adds that the Create a dev store page's markup held Basic, Grow, Advanced and Plus as plans to preview.
+- Q8-SH-046 and Q8-SH-047 (expansion stores, organization): Q8-SH-109 adds that a store moving onto Plus moves out of its organization into a new one, keeping its payment method and user roles.
+- Q8-SH-060 and Q8-SH-061 (Beta Services): Q8-SH-111 adds a feature the admin marks "Early access" (Campaign Autopilot). The page doesn't call it a Beta Service, and Q8-SH-N01 stays open.
+- Q8-SH-110 (variable platform fees on Plus) bears on the draft's plan points but changes no id it cites.
+
+The other draft ids (Q8-SH-014, 015, 016, 029, 030, 033, 035, 036, 040, 043, 044, 054, 055, 058, 064, 068, 069, 070, 081, 085, 095, K0041, K0175, K0191, K1243, K1930, K2063, K2169, K2183, K2591, K2696, K2812, N01) are unchanged by the texts read.
+
+### Not read
+
+- The other listed documents: the Growth page in other stores and runs; the Plus review pages of capture-advanced and sweep-dev; the reactivation plan pages (step 098); the domains `Developer preview` pages (step 227); the Capital pages beyond step 128; the Locations and Companies pages; the App Store category pages and the admin Apps pages.
+
+### Tools
+
+- Nothing got in the way. Each `--only` search took a few seconds.
