@@ -2,6 +2,8 @@
 
 Questions agreed with the founder, the evidence captured to answer them, and derived documents written in October 2026 by Claude Code agents.
 
+**How it got here.** `HISTORY.md` lists the baselines: the commits at the founder's decision points and at planned pauses.
+
 **Where the work stands.** The three questions in `questions/` drive the work now. `NEXT.md` gives their order. `PLAN.md`, agreed on 12 October 2026, re-centres them on the decisions that are expensive to change and sets the order of work. `STATE.md` says where the work is.
 
 **What the documents draw on.** The derived documents draw on two kinds of source:
