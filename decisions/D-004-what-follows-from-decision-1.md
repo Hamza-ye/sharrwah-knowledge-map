@@ -30,13 +30,13 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 | --- | --- | --- |
 | held through Sharrwah | A or B, as the founder's guard names them; under C, neither | `founder-decisions.tsv` (G1) |
 | settlement and payout | Each provider's own, on its own terms; Sharrwah sends no payouts | `GQL:3229`; `SA-en:807`; `HC:payments/getting-paid.md:13` |
-| payment provider | The company that processes or receives a payment for a method | `HC:payments/getting-paid.md:3`; `SA-en:24` |
-| seller's own account | The seller's account with each provider, under its own contract, linked to Sharrwah by its own credentials or keys | `HC:payments/third-party-providers/configuring-providers.md:32`; `SA-en:318` |
+| payment provider | The company that processes or receives a payment for a method. A courier is named apart, and "provider or courier" means both | `HC:payments/getting-paid.md:3`; `SA-en:24` |
+| seller's own account | An account the seller opened with a provider or courier itself, under its own contract, into which it receives or settles the buyer's payment, linked by the seller's own credentials, keys, account number or email. A bank account that only receives payouts from a platform balance is not C | `HC:payments/third-party-providers/configuring-providers.md:32`; `SA-en:318`; `SA-en:793`; `SA-en:277` |
 | cash on delivery | Collected by a courier under the seller's own contract, which settles with the seller | `SA-en:565`; `SA-en:234`; `SA-ar:359` |
-| provider fees | Each provider deducts its own | `SA-en:1241`; `GQL:3605` |
+| provider fees | Each provider or courier charges its own on its own terms, deducting it from what it settles or invoicing the seller | `SA-en:1241`; `GQL:3605`; `SA-ar:359`; `SA-en:234` |
 | Sharrwah's fees | Billed apart from sellers' money, never deducted from it | `HC:payments/getting-paid.md:11` (a precedent) |
-| refund and void | Made through each provider, on its own terms | `HC:fulfillment/managing-orders/refunding-orders.md:16`; `SA-en:804` |
-| agency role | Sharrwah takes none | S01-VP-06 |
+| refund and void | Made through each provider, on its own terms; for a manual method, by the seller directly | `HC:fulfillment/managing-orders/refunding-orders.md:16`; `SA-en:804`; `SA-en:994` |
+| agency role | Sharrwah is appointed no seller's agent to receive or hold buyers' payments. Sending a provider the seller's instructions with the seller's own keys, such as a capture or a refund, is not an agency role | S01-VP-06 |
 | security interest | Sharrwah takes none | S01-VP-10 |
 
 ## Scope
@@ -45,7 +45,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 - The pilot's Decisions 2 to 12, each as column C of its table, as listed under the outcome.
 
 **Takes as given:**
-- D-001's outcome: C at launch, with A and B reserved (in `depends_on`).
+- D-001's outcome as proposed: C at launch, with A and B reserved (in `depends_on`). This record is confirmed with D-001, or falls with it.
 
 **Leaves open:**
 - Sharrwah's terms with sellers, and the company that offers them — S-08. Carried: the terms say that each provider's terms govern the money it holds, whichever company offers them.
@@ -72,12 +72,12 @@ Chosen option: **1, column C,** with the pilot's recommendation for each:
 | --- | --- |
 | 2. Who settles the funds to the seller (S01-VP-02) | each provider |
 | 3. Who sends payouts (S01-VP-03) | each provider, or the seller withdraws from their own account with it; Sharrwah sends no payouts |
-| 4. Who collects the buyer's payment (S01-VP-04) | each provider: the wallet, the courier, or the seller's own bank account |
+| 4. Who collects the buyer's payment (S01-VP-04) | each provider or courier: the wallet, the courier, or the seller's own bank |
 | 5. Whether Sharrwah acts as the seller's agent (S01-VP-06) | no agency role |
-| 6. Who deducts fees and refunds (S01-VP-09) | each provider its own; Sharrwah bills its own fees separately |
+| 6. Who deducts fees and refunds (S01-VP-09) | each provider or courier its own, on its own terms; Sharrwah bills its own fees separately |
 | 7. Which accounts a seller holds (S01-VP-11) | an account with each provider, linked through Sharrwah; a Sharrwah account serves only Sharrwah's own billing |
-| 8. Payout timing (S01-VP-15) | each provider's own settlement time. What the seller is shown of it is left to S-07 |
-| 9. Deducted before payout, or billed apart (S01-VP-19) | each provider deducts its own; Sharrwah bills its fees separately |
+| 8. Payout timing (S01-VP-15) | each provider's own settlement and payout times, and each courier's transfer days, under its agreement with the seller. Under a manual method the buyer pays the seller directly. What the seller is shown of them is left to S-07 |
+| 9. Deducted before payout, or billed apart (S01-VP-19) | each provider or courier charges its own on its own terms, deducting it from what it settles or invoicing the seller; Sharrwah bills its fees separately |
 | 10. Funds held when the service ends (S01-VP-20) | Sharrwah holds nothing; its terms say each provider's terms apply |
 | 11. When funds go back to buyers (S01-VP-21) | none for Sharrwah; its terms say each provider's terms apply |
 | 12. A security interest over the seller's funds (S01-VP-10) | Sharrwah takes none; each provider's terms apply to the funds it holds |
@@ -106,4 +106,6 @@ The pilot's variation points and their statements (`studies/subjects/S-01/variat
 
   Each is answered from D-001 to D-004 alone.
 - **Checks:** level 3, with D-001.
-- **Gaps:** none bears on these answers. Which providers' terms would ask for an agency role or a security interest is read when S-07 proposes each provider.
+- **Gaps:** none bears on these answers.
+  - Which providers' terms would ask Sharrwah for an agency role or a security interest is read when S-07 proposes each provider.
+  - How either platform returns money for a manual method isn't in the held evidence. The work: a capture of each platform's refund page for a bank-transfer order, at S-05.

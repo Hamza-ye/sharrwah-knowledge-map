@@ -35,14 +35,29 @@ This is the pilot's Decision 1 (`studies/subjects/S-01/entry.md`, S01-VP-01). Th
 - C is what is shown working there today: a wallet that pays into the seller's own account, a courier that collects payment on delivery for business accounts, and transfers into the seller's own account.
 
 **The line's words,** as the glossary defines them from Shopify's and Salla's own settings (`architecture/12-glossary.md`):
-- **Sellers' money:** what a buyer pays for a seller's order, until the seller has it. Not Sharrwah's own fees, and not store credit, which is value a seller owes rather than money paid in.
-- **Held through Sharrwah:** A, Sharrwah holds it, as Salla presents the balance of its electronic payments; or B, a payment company holds it in an account opened through Sharrwah, the way Shopify Payments is set up inside Shopify. A seller linking its own account with a provider, by its own keys, is neither.
-- **At launch:** from the day Sharrwah first goes live, for as long as you haven't switched A or B on.
-- **Reserved, not built:** nothing that holds money is designed, built or contracted. The payment boundary (D-002) leaves room to add either later without redesigning the rest.
+- **Sellers' money:** what a buyer pays for a seller's order, until it reaches an account the seller holds outside Sharrwah, or the seller's own hands. Not Sharrwah's own fees, and not store credit, which is value a seller owes rather than money paid in.
+- **Held through Sharrwah:** your guard of 18 October covers "No arrangement that holds sellers' money through Sharrwah", and names two forms:
+  - A, Sharrwah holds it, as Salla presents the balance of its electronic payments;
+  - B, a payment company holds it in an account opened through Sharrwah. That is Sharrwah's own payment service, the way Shopify Payments is set up inside Shopify. It is also an account Sharrwah creates or requests for the seller with another company, the way Salla requests a Tabby account for a seller, or Shopify generates a PayPal account at sign-up.
 
-**What confirming it also settles:** the first version has no Sharrwah payment service or balance, like Salla's electronic payments, and no Sharrwah shipping that collects cash into a balance, like Salla's own shipping labels. Each would be A or B. If you want either in the first version, say so instead of confirming.
+  An account the seller opens with a provider itself, and links by its own keys, is neither. That is C. A case between B and C comes to you before it goes live. *My reading, for you to confirm or correct:* the guard also covers arrangements it doesn't name, such as a courier collecting cash under Sharrwah's own contract with it.
+- **At launch:** from the day Sharrwah first goes live in any market, and in each market for as long as you haven't switched A or B on there.
+- **Reserved, not built:** nothing of A or B is designed, built, integrated or contracted. The payment boundary (D-002) leaves room to add either later without redesigning the rest.
 
-**What it leaves to later subjects,** none of which can undo it: which providers and methods are offered (S-07), shipping with cash on delivery (S-05), gift cards and store credit (S-05), how Sharrwah bills its fees (S-03), and the company (S-08).
+**What confirming it also settles.** The first version has none of these, and each would be held through Sharrwah:
+- a Sharrwah payment service or balance, like Salla's electronic payments;
+- Sharrwah shipping that collects cash under Sharrwah's contract, like Salla's own shipping labels;
+- a Sharrwah business account that receives sellers' payouts, like Shopify Balance;
+- Sharrwah opening or requesting a seller's account with a payment company, as Salla does for Tabby. Sellers open their own accounts and link them.
+
+If you want any of these in the first version, say so instead of confirming.
+
+**What it leaves to later subjects,** none of which can undo it:
+- which providers and methods are offered, and, for any whose account would be opened from inside Sharrwah, a decision by you (S-07);
+- shipping with cash on delivery (S-05);
+- gift cards and store credit (S-05);
+- how Sharrwah bills its fees (S-03);
+- the company, and each market's licensing rules (S-08).
 
 **It also settles Decisions 2 to 12** as column C of the pilot's table (D-004). Decision 13 is deferred (D-005), and Decision 14, currency, moves to the markets subject.
 
@@ -62,16 +77,16 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 
 | Term | What this record relies on it to cover | Sources |
 | --- | --- | --- |
-| sellers' money | What a buyer pays for a seller's order, until the seller has it. Not Sharrwah's fees, stored value, or money products such as loans | `founder-decisions.tsv` (G1); `HC:payments/shopify-payments/payouts/view-details.md:3`; `SA-en:1240` |
-| held through Sharrwah | A, Sharrwah holds it; B, a payment company holds it in an account opened through Sharrwah. Nothing else | `founder-decisions.tsv` (G1); `HC:payments/shopify-payments/onboarding.md:3`; `SA-en:807`; `SA-ar:1501` |
-| seller's own account | The seller's account with a provider or courier under its own contract, linked by its own credentials, keys or account number: option C | `HC:payments/third-party-providers/configuring-providers.md:32`; `SA-en:318`; `SA-ar:1064`; `SA-en:277` |
+| sellers' money | What a buyer pays for a seller's order, until it reaches an account the seller holds outside Sharrwah, or the seller's own hands. Not Sharrwah's fees, stored value, or money products such as loans | `founder-decisions.tsv` (G1); `HC:payments/shopify-payments/payouts/view-details.md:3`; `SA-en:1240` |
+| held through Sharrwah | Any arrangement that holds sellers' money through Sharrwah. A: Sharrwah holds it. B: a payment company holds it in an account opened through Sharrwah, by Sharrwah's own service, or by Sharrwah creating or requesting the account for the seller. A case between B and C comes to the founder | `founder-decisions.tsv` (G1); `HC:payments/shopify-payments/onboarding.md:3`; `HC:payments/paypal/set-up-paypal.md:3`; `SA-en:807`; `SA-en:576`; `SA-ar:880` |
+| seller's own account | An account the seller opened with a provider or courier itself, under its own contract, into which it receives or settles the buyer's payment, linked by the seller's own credentials, keys, account number or email: option C. A bank account that only receives payouts from a platform balance is not C | `HC:payments/third-party-providers/configuring-providers.md:32`; `SA-en:318`; `SA-ar:1064`; `SA-en:793`; `SA-en:277` |
 | at launch | From first going live in any market, for as long as the founder hasn't switched A or B on there | This record's line |
-| reserved, not built | Nothing that holds money is designed, built, integrated or contracted; switching on is the founder's, after it is built | This record; D-002 |
-| payment method | Kinds 1 and 2 of the glossary: paid through a provider, or paid to the seller directly and recorded by hand. Stored value is outside this record | `HC:payments.md:3`; `SA-en:807`; `SA-en:921` |
-| payment provider | The company that processes or receives a payment for a method, a platform's own service included | `HC:payments/getting-paid.md:3`; `SA-en:24` |
-| manual payment method | The buyer pays the seller directly, and the seller records it | `HC:payments/manual-payments.md:5`; `SA-en:565` |
-| cash on delivery | Cash to a courier or to the seller's own staff. A courier under the seller's own contract holds it until it settles with the seller. Cash collected into a platform balance is A | `SA-en:565`; `SA-en:234`; `SA-ar:359`; `SA-en:570`; S01-V-038 |
-| platform balance | A balance of a platform's own payment service: A or B | `GQL:3193`; `SA-en:1240` |
+| reserved, not built | Nothing of A or B is designed, built, integrated or contracted. Building either changes this record, by the founder's decision; switching either on in a market is the founder's too | This record; D-002 |
+| payment method | Kinds 1 and 2 of the glossary: paid through a provider, or paid outside any provider, to the seller or its courier, and recorded by hand. Stored value is outside this record | `HC:payments.md:3`; `SA-en:807`; `SA-en:921` |
+| payment provider | The company that processes or receives a payment for a method, a platform's own service included. A courier is named apart | `HC:payments/getting-paid.md:3`; `SA-en:24` |
+| manual payment method | The buyer pays outside any provider, to the seller directly or, for cash on delivery, to a courier that settles with the seller; the seller records it | `HC:payments/manual-payments.md:5`; `SA-en:565` |
+| cash on delivery | Cash to a courier or to the seller's own staff. A courier under the seller's own contract holds it until it settles with the seller (C). Cash a courier collects under Sharrwah's own contract is held through Sharrwah | `SA-en:565`; `SA-en:234`; `SA-ar:359`; `SA-en:570`; S01-V-038 |
+| platform balance | A balance a platform keeps for a seller, from its own payment service or from cash on delivery its own labels collect: held through Sharrwah | `GQL:3193`; `SA-en:1240` |
 | settlement and payout | Each provider's own, on its own terms | `GQL:3229`; `SA-en:807` |
 | Sharrwah's fees | Billed apart from sellers' money, never deducted from it | `HC:payments/getting-paid.md:11` (a precedent) |
 
@@ -79,24 +94,24 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 
 **Decides:**
 - From the first time Sharrwah goes live, in every market, no sellers' money is held through Sharrwah: neither A nor B is built (C at launch).
-- The money for each sale stays where its payment method's arrangement puts it: with a provider, in the seller's own account; with a courier, until it settles with the seller; or with the seller, for a manual method.
-- A and B stay possible behind the payment boundary. Only the founder switches either on, in a market, after it is built.
-- So the first version has no platform payment service or balance (area A-12), and no account that would hold sellers' money through Sharrwah (part of area A-13). The order of the areas (S-02) takes this as given.
+- The money for each sale stays where its payment method's arrangement puts it: with a provider, in the seller's own account; with a courier under the seller's own contract, until it settles with the seller; or with the seller, for a manual method.
+- A and B stay possible behind the payment boundary. Building either is a change to this record (Review), by the founder's decision. Switching either on in a market is the founder's decision too.
+- So the first version has no platform payment service or balance (area A-12); no account that would hold sellers' money through Sharrwah (part of area A-13); no shipping that collects cash under Sharrwah's own contract (part of area A-10); and no opening or requesting of sellers' accounts with payment companies from inside Sharrwah (part of area A-11). The order of the areas (S-02) takes this as given.
 
 **Takes as given:**
 - The founder's guard of 18 October, which names A and B (`founder-decisions.tsv`, G1).
 - F-00, one platform for many markets with the first market not the design target, and the market guard (`founder-decisions.tsv`; `METHOD.md` section 3a).
 
 **Leaves open:**
-- Which payment methods and providers Sharrwah offers, in which markets, and the contracts with them — S-07. Carried: under C any provider fits that keeps the money in the seller's own account. One that needs an account opened through Sharrwah is B, which only the founder switches on.
-- Where linking ends and B begins, for a provider whose onboarding the seller would start from inside Sharrwah — S-07. Carried: the line is defined (glossary, *held through Sharrwah*), and a case on B's side comes to the founder under this record.
-- Shipping with cash on delivery, including any Sharrwah shipping labels — S-05. Carried: a courier under the seller's own contract is C. Cash collected into a Sharrwah balance is A, which this record keeps off.
+- Which payment methods and providers Sharrwah offers, in which markets, and the contracts with them — S-07. Carried: under C any provider fits whose account the seller opened with it itself and links by its own keys. One whose account is opened through Sharrwah, by Sharrwah's own service or by Sharrwah creating or requesting it for the seller, is B and comes to the founder.
+- Where linking ends and B begins, for a provider whose onboarding would start from inside Sharrwah — S-07. Carried: by the guard's words an account Sharrwah opens, creates or requests for the seller is B, and a case between B and C comes to the founder before it goes live. How S-07 places a provider never changes this record.
+- Shipping with cash on delivery, including any Sharrwah shipping labels — S-05. Carried: a courier under the seller's own contract is C. Cash a courier collects under Sharrwah's own contract, whether into a Sharrwah balance or settled to sellers, is held through Sharrwah, and comes to the founder before it goes live. That rests on the glossary's reading of the guard's leading clause, which the founder confirms with this line.
 - Gift cards, store credit and customer wallets — S-05. Carried: they spend value the seller owes and hold no sellers' money. A wallet buyers pay money into would hold buyers' money, which is outside this record and would be a founder decision of its own (`METHOD.md` section 3).
-- Money products for sellers that hold no sales money, such as loans, cash advances, cards and bill pay (area A-13) — S-02 places them in the first version's order. Carried: they hold no sellers' money for a sale. A part that would, such as a business account receiving payouts through Sharrwah, is B and stays off.
-- Selling in person, and sales channels or marketplaces — S-10. Carried: in person the money goes through the seller's providers, or to the seller in cash. A marketplace collecting buyers' payments for sellers would be A or B, which stay off.
+- Money products for sellers that hold no sales money, such as loans, cash advances, cards and bill pay (area A-13) — S-02 places them in the first version's order. Carried: they hold no sellers' money for a sale. A part that would, such as a business account receiving payouts through Sharrwah, is held through Sharrwah and stays off.
+- Selling in person, and sales channels or marketplaces — S-10. Carried: in person the money goes through the seller's providers, or to the seller in cash. A marketplace Sharrwah runs, collecting buyers' payments for sellers, would be held through Sharrwah, which stays off. An outside marketplace where the seller sells under its own account and contract keeps the money under that contract (C), or comes to the founder if its account would be opened through Sharrwah.
 - How Sharrwah bills its own fees, and its pricing — S-03. Carried: whatever the fees, they are billed apart from sellers' money.
 - What the seller is shown of each provider's balances and payouts — S-07. Carried: showing reads a provider's records and holds nothing.
-- The company that contracts with sellers, and any licence if A were ever proposed — S-08. Carried: nothing is held, so no licence is needed for C, whichever company is chosen.
+- The company that contracts with sellers, and each market's licensing rules — S-08. Carried: nothing is held, so no licence to hold sellers' money is needed for C. Whether a market's rules license a platform that only links sellers' own providers is read at S-08. That would change where, and by which company, Sharrwah may run, not who holds the money.
 - When the seller is paid under installments (D-005, deferred) — S-07. Carried: under C the installment provider pays the seller.
 - Currencies — S-04. Carried: no money is held, so no currency is held either.
 
@@ -118,7 +133,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 | --- | --- | --- | --- |
 | **A. Sharrwah holds a balance for the seller** | in accounts in Sharrwah's name, with a balance per seller, as Salla and Zid present their balances | a ledger of seller balances, collection into Sharrwah's accounts, payouts and reconciliation | in the first market, a licence or permission to provide payment services under each area's rules (YA-102, YK-515). *(The coordinator's reading: other markets have rules of their own, and no cited source shows whether a licensed partner could hold the money for Sharrwah instead.)* |
 | **B. A processor holds it, in an account the seller opens through Sharrwah** | with the processor, as Shopify Payments' processors (its Payment Processors; Adyen N.V.) hold, and as Stripe's terms say of funds held by Stripe, within the scopes under Evidence | an integration with the processor, onboarding sellers to it, and showing its balance | a processor that serves the market and holds funds in accounts opened through Sharrwah |
-| **C. Each payment method's provider holds it, in the seller's own account with that provider** | with each provider, as in BigCommerce's "merchant account with your merchant service provider" (S01-V-532) | an integration with each provider, and one boundary over them (D-002) | a contract between the seller and each provider |
+| **C. Each payment method's own arrangement holds it:** a provider, in the seller's own account with it; a courier under the seller's own contract, until it settles with the seller; the seller, for a manual method | with each provider, as in BigCommerce's "merchant account with your merchant service provider" (S01-V-532); with each courier; with the seller | an integration with each provider and courier (none for a manual method), and one boundary over them (D-002) | a contract between the seller and each provider or courier |
 | **Defer** | undecided | the boundary only | nothing now |
 
 ## Decision outcome
@@ -211,7 +226,9 @@ Each fact carries the conditions its source gives.
 
 **Review** when a licence or a licensed partner becomes available in a market Sharrwah serves, or a processor offers accounts opened through Sharrwah.
 
-**Gaps.** None of these bears on C at launch:
-- Whether any provider serving the first market would hold funds in an account opened through a platform: Stage 1's records don't say. The work: ask each provider when S-07 proposes it. It is needed only if B is ever considered there.
+**Gaps.** None of these changes C at launch. The first decides which providers fit it:
+- Whether each provider serving a market opens its sellers' accounts itself, or through a platform: Stage 1's records don't say for the first market. The work: ask each provider when S-07 proposes it. It decides which providers are C at launch, since one whose account would be opened through Sharrwah comes to the founder.
+- The guard's reach beyond A and B, such as a courier collecting cash under Sharrwah's own contract, is the coordinator's reading of its leading clause. The work: the founder confirms or corrects it with this line.
+- Whether a market's rules license a platform that only links sellers' own providers: the first market's sources name a licence for "payment services" (YA-102) without saying whether it turns on holding funds. The work: read the central banks' own definitions at S-08.
 - PayPal's limit in the first market rests on one undated third-party article (YK-514). The work: capture PayPal's own country list. It is needed at S-07, if PayPal is proposed.
 - Whether Salla limits outside gateways to some kinds of store isn't settled by the held articles (glossary, *payment provider*). Nothing here turns on it.

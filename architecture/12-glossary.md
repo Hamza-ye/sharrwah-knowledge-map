@@ -19,7 +19,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 ## Money, and who holds it
 
 ### sellers' money
-- **Here:** the money a buyer pays for a seller's order, from the buyer's payment until the seller has it. The founder's guard of 18 October uses these words (`founder-decisions.tsv`, G1).
+- **Here:** the money a buyer pays for a seller's order, from the buyer's payment until it reaches an account the seller holds outside Sharrwah, such as its own account with a provider or its own bank account, or the seller's own hands. Money paid out into an account opened through Sharrwah is still sellers' money. The founder's guard of 18 October uses these words (`founder-decisions.tsv`, G1).
 - **Covers:** payments for orders by any payment method, and refunds of them.
 - **Leaves out:** Sharrwah's own fees (*Sharrwah's fees*); value a seller owes a buyer, such as store credit, which is not money paid in (*stored value*); money products a platform offers sellers, such as loans (area A-13).
 - **Shopify:** "The **Payout balance** amount represents the funds that have been captured but not yet added to a scheduled payout, not including reserved funds." (`HC:payments/shopify-payments/payouts/view-details.md:3`)
@@ -27,21 +27,25 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-001, D-004.
 
 ### held through Sharrwah
-- **Here:** sellers' money is held through Sharrwah under either of two arrangements, as the founder's guard of 18 October names them (`founder-decisions.tsv`, G1):
+- **Here:** the founder's guard of 18 October: "No arrangement that holds sellers' money through Sharrwah goes live anywhere without the founder's decision" (`founder-decisions.tsv`, G1). It names two forms:
   - **A:** Sharrwah itself holds it;
   - **B:** a payment company holds it in an account opened through Sharrwah.
-
-  Nothing else is held through Sharrwah.
-- **An account opened through Sharrwah** (B) is one the seller sets up from inside the platform, with the platform's own payment service. **The seller's own account** (C) is one the seller holds with a provider under its own contract, and links to the platform. Both platforms draw this line:
-  - **Shopify** sets up its own service inside the admin: "You can activate Shopify Payments from the **Payments** page in your Shopify admin" (`HC:payments/shopify-payments/onboarding.md:3`), to "complete your Shopify Payments account setup" (`HC:payments/shopify-payments/onboarding.md:5`). A third-party provider is linked instead: "Enter your account credentials for the provider that you selected." (`HC:payments/third-party-providers/configuring-providers.md:32`)
-  - **Salla's** own service: "Electronic payments is a Salla service that processes payments in your store directly" (`SA-en:807`); "خدمة تقدمها سلة لمعالجة المدفوعات في متجرك بشكل مباشر" (`SA-ar:1501`). Its money sits in a balance Salla keeps (`SA-en:1240`), which D-001 classes as A. An outside gateway is linked: "you need the Secret Key from your Moyasar merchant account" (`SA-en:318`); "فستحتاج إلى الحصول على المفتاح السري (Secret Key) وإعدادات API الخاصة بحسابك" (`SA-ar:1064`). Then "payments flow straight through to your account" (`SA-en:318`).
-- *Open:* a provider whose onboarding the seller would start from inside Sharrwah, with its contract directly with the seller, would sit on this line. Which side such a provider falls is decided when one is proposed (S-07), and a case that is B goes to the founder.
+- **An account opened through Sharrwah** is one the seller doesn't open with the company itself. That covers an account with Sharrwah's own payment service, and an account Sharrwah creates for the seller, or requests for it by sending the seller's details to the company. **The seller's own account** (C) is one the seller opens with the company itself and links to Sharrwah. A case between the two comes to the founder before it goes live.
+- *Interpretation:* the guard's leading clause covers any arrangement that holds sellers' money through Sharrwah, and names A and B as its forms. This glossary reads it as also covering an arrangement it doesn't name, such as a courier collecting cash under Sharrwah's own contract with it. The founder confirms or corrects this reading with D-001's line.
+- **Shopify** shows all three:
+  - its own service, set up inside the admin: "You can activate Shopify Payments from the **Payments** page in your Shopify admin" (`HC:payments/shopify-payments/onboarding.md:3`), to "complete your Shopify Payments account setup" (`HC:payments/shopify-payments/onboarding.md:5`);
+  - an account it generates with another company: "a PayPal Express Checkout account is automatically generated using the email address that you use to sign in" and "This account allows you to receive payments from PayPal orders." (`HC:payments/paypal/set-up-paypal.md:3`); "Shopify asks for your email to set up this account, which is then shared with PayPal" (`HC:payments/paypal.md:5`);
+  - a provider the seller links: "Enter your account credentials for the provider that you selected." (`HC:payments/third-party-providers/configuring-providers.md:32`)
+- **Salla** shows all three:
+  - its own service: "Electronic payments is a Salla service that processes payments in your store directly" (`SA-en:807`); "خدمة تقدمها سلة لمعالجة المدفوعات في متجرك بشكل مباشر" (`SA-ar:1501`), into a balance Salla keeps (`SA-en:1240`), which D-001 classes as A;
+  - an account it requests from another company: "To request a new Tabby Business account through Salla" (`SA-en:576`); "إرسال طلب فتح حساب أعمال" and "راجع المعلومات التي سيشاركها متجرك مع تابي" (`SA-ar:880`), for stores in Saudi Arabia only, "حالياً للمتاجر في المملكة العربية السعودية فقط" (`SA-ar:880`). The seller then links it, "Enter the Merchant Key for your Tabby account" (`SA-en:29`), and Tabby collects under the seller's own agreement: "تُحصّل المدفوعات التي تتم عبر تابي من خلال تابي وليس من خلال مدفوعات سلة" and "للاتفاقية المبرمة بينك وبين تابي" (`SA-ar:865`). Tamara is the same: "إنشاء حساب أعمال جديد على تمارا وتفعيله" (`SA-ar:881`). The agreement is the seller's own, but the account was opened through the platform: by the guard's words, B;
+  - a gateway the seller links: "you need the Secret Key from your Moyasar merchant account" (`SA-en:318`); "فستحتاج إلى الحصول على المفتاح السري (Secret Key) وإعدادات API الخاصة بحسابك" (`SA-ar:1064`). Then "payments flow straight through to your account" (`SA-en:318`).
 - **Used by:** D-001, D-004.
 
 ### seller's own account
-- **Here:** an account the seller holds with a provider or courier under its own contract, linked to Sharrwah with the seller's own credentials, keys or account number. It is option C of D-001. See *held through Sharrwah* for where it ends and B begins.
+- **Here:** an account the seller opened with a provider or courier itself, under its own contract, into which that provider or courier receives or settles the buyer's payment. The seller links it to Sharrwah with its own credentials, keys, account number or account email. It is option C of D-001. A bank account that only receives payouts from a platform balance, or from an account opened through Sharrwah, is not C. See *held through Sharrwah* for where C ends and B begins.
 - **Shopify:** "Enter your account credentials for the provider that you selected." (`HC:payments/third-party-providers/configuring-providers.md:32`)
-- **Salla:** a gateway, "you need the Secret Key from your Moyasar merchant account" (`SA-en:318`). A carrier: "The connection is made once the contract between the two parties is in place and your account number is linked in Salla." (`SA-en:277`)
+- **Salla:** a gateway: "you need the Secret Key from your Moyasar merchant account" (`SA-en:318`). PayPal is linked by its email: "the email address for your PayPal account in the field provided" (`SA-en:793`). A carrier: "The connection is made once the contract between the two parties is in place and your account number is linked in Salla." (`SA-en:277`)
 - **Used by:** D-001, D-004.
 
 ### at launch
@@ -50,7 +54,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-001.
 
 ### reserved, not built
-- **Here:** for A and B (D-001), nothing that holds money is designed, built, integrated or contracted. The payment boundary (D-002) leaves room for either behind it, and the settlement contract is named there but not designed. **Switching on** A or B in a market is the founder's decision. It can come only after the arrangement is built, with its licence or its processor.
+- **Here:** nothing of A or B (D-001) is designed, built, integrated or contracted. The payment boundary (D-002) leaves room for either behind it, and the settlement contract is named there but not designed. Building either is a change to D-001, by the founder's decision. **Switching on** either in a market is the founder's decision too, after it is built, with its licence or its processor.
 - **Used by:** D-001, D-002.
 
 ### custodian
@@ -66,7 +70,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-002, D-003.
 
 ### platform balance
-- **Here:** money a platform keeps for a seller in a balance of its own payment service. In D-001's terms it is A or B, and it is not built at launch.
+- **Here:** money a platform keeps for a seller in a balance, from its own payment service or from cash on delivery that its own shipping labels collect. In D-001's terms it is held through Sharrwah, and it is not built at launch.
 - **Shopify:** `ShopifyPaymentsAccount`, which "Tracks current balances across all supported currencies, payout schedules" (`GQL:3193`). Shopify Balance is a different product: "Shopify Balance is a money management account" (`HC:finance/shopify-balance.md:3`), in area A-13.
 - **Salla:** "three main balances:" "Store balance", "Electronic payments balance" and "Cash on Delivery (COD) payments balance" (`SA-en:1240`). The store balance is "Used for internal store services, such as:" "Auto-renewing your subscription plan" (`SA-en:1240`).
 - **Used by:** D-001.
@@ -94,7 +98,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 ### payment method
 - **Here:** a way a buyer pays for an order, which the seller turns on. The platforms have three kinds:
   1. **through a provider:** cards, wallets, local methods and pay later, processed by a provider, including a platform's own payment service;
-  2. **paid to the seller directly and recorded by hand:** bank transfer, cash on delivery, money order (*manual payment method*);
+  2. **paid outside any provider, to the seller or to its courier, and recorded by hand:** bank transfer, cash on delivery, money order (*manual payment method*);
   3. **stored value spent at checkout:** gift cards, store credit, a customer's wallet. These spend value the seller already owes, and no money moves (*stored value*).
 
   In M1's records "payment method" means kinds 1 and 2, unless a record says otherwise. Whether kind 3 is a payment method in Sharrwah is left to S-05.
@@ -104,20 +108,20 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-001, D-002, D-004, D-005.
 
 ### payment provider
-- **Here:** the company that processes or receives a payment for a method: a processor or gateway, a wallet, a bank, or an installment company. A platform's own payment service is a provider too. D-001 names a courier collecting cash on delivery apart from providers.
+- **Here:** the company that processes or receives a payment for a method: a processor or gateway, a wallet, a bank, or an installment company. A platform's own payment service is a provider too. A courier collecting cash on delivery is named apart, and where a record means both it says "provider or courier".
 - **Shopify:** "All Shopify-supported payment methods rely on third-party providers to process your transactions." (`HC:payments/getting-paid.md:3`); "Shopify supports two different types of credit card payment providers: **direct providers** and **external providers**." (`HC:payments/third-party-providers.md:5`). Each transaction names its gateway (`GQL:2447`).
 - **Salla:** "Electronic Payments is a service provided by Salla that allows your store to process online transactions automatically." (`SA-en:24`). Outside gateways sit beside it (`SA-en:807`). Each transaction names its provider, "Payment Provider Name" (`SAPI:208`).
 - *Open:* the held articles don't settle whether Salla limits outside gateways to some kinds of store; one guide is addressed to "charities and digital stores" (`SA-en:2`). This doesn't bear on M1's decisions.
 - **Used by:** D-001, D-002, D-004, D-005.
 
 ### manual payment method
-- **Here:** the buyer pays the seller outside any provider integration, and the seller records the payment by hand: a bank transfer to the seller's account, cash on delivery, a money order, or a method the seller names. The money goes to the seller directly.
+- **Here:** the buyer pays outside any provider integration, and the seller records the payment by hand: a bank transfer to the seller's account, cash on delivery, a money order, or a method the seller names. The money goes to the seller directly or, for cash on delivery through a courier, to the courier (*cash on delivery*).
 - **Shopify:** "Common types of manual payments include cash on delivery (COD), money orders, and bank transfers." (`HC:payments/manual-payments.md:5`); "Orders that accept manual payments are marked as unpaid on the **Orders** page." (`HC:payments/manual-payments.md:10`); "Manual payments aren't captured by Shopify." (`HC:payments/partial-payments.md:44`). The seller records it: "**Mark as paid** - Use when you've already received payment for the current order" (`HC:fulfillment/managing-orders/payments/deferred-payments.md:129`). The seller can also name a method of its own, apart from the names Shopify reserves (`HC:payments/manual-payments.md:59`).
 - **Salla:** "Bank transfer (customers transfer payment directly to your account)" (`SA-en:565`). The buyer uploads a receipt: "customers must complete the bank transfer immediately and upload the payment receipt during checkout." (`SA-en:495`). The order waits in "بإنتظار الدفع" (`SSTAT:2`) or "بإنتظار المراجعة" (`SSTAT:3`). No method of the seller's own naming was found (inventory, section 4).
 - **Used by:** D-001, D-002.
 
 ### cash on delivery
-- **Here:** the buyer pays cash when the order is delivered, to a courier or to the seller's own staff. Under D-001 the courier holds the cash until it settles with the seller under their agreement, and Sharrwah holds none. Cash collected through a platform's own shipping labels into a platform balance would be A, which is not built at launch (D-001).
+- **Here:** the buyer pays cash when the order is delivered, to a courier or to the seller's own staff. Under D-001 a courier under the seller's own contract holds the cash until it settles with the seller under their agreement, and Sharrwah holds none. Cash a courier collects under Sharrwah's own contract with it, whether into a platform balance, as Salla's labels do, or settled to sellers, is held through Sharrwah. It comes to the founder before it goes live (D-001; *held through Sharrwah*).
 - **Shopify:** a manual method: "Common types of manual payments include cash on delivery (COD), money orders, and bank transfers." (`HC:payments/manual-payments.md:5`). The held evidence shows no collection or settlement by Shopify itself (inventory, section 15). Apps fill it: "Cash/Collect on Delivery (COD) Apps" (`HC:intro-to-shopify/initial-setup/sell-in-italy/italy-cash-on-delivery.md:12`).
 - **Salla:** "Cash on Delivery (collected by the shipping company or your own courier)" (`SA-en:565`). Two arrangements:
   - **Salla's own labels:** the cash goes to Salla's cash-on-delivery balance, and Salla transfers it: "The transfer days for cash on delivery balances from shipping companies that support COD via Salla shipping labels are:" (`SA-en:570`); "الأيام المحددة لتحويل رصيد الدفع عند الاستلام من الشركات التي تدعم الدفع عند الاستلام في بوليصات سلة إلى التاجر هي" (`SA-ar:878`). "This feature is currently available only for stores operating within the Kingdom of Saudi Arabia." (`SA-en:570`)
@@ -241,7 +245,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 ## Legal words (D-004)
 
 ### agency role
-- **Here:** whether Sharrwah acts for the seller in collecting or handling payments. Under C it has none (D-004, row 5).
+- **Here:** whether Sharrwah is appointed the seller's agent to receive or hold buyers' payments, as the references' clauses do. Sending a provider the seller's instructions with the seller's own keys, such as a capture or a refund, is not an agency role here. Under C Sharrwah has none (D-004, row 5).
 - **The references,** from the pilot's variation point S01-VP-06 (`studies/subjects/S-01/variation-points.tsv`, quotes checked in the pilot):
   - Shopify: "appoint us as your agent";
   - Stripe, behind WooPayments: "appoints Stripe as User’s agent";
