@@ -2,11 +2,19 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 24 October 2026, 20:40 UTC.
+**Updated:** 24 October 2026, 21:05 UTC.
 
 **The method:** `METHOD.md`, adopted on 24 October 2026 with amendment 1.
 
-**Milestone:** M0, the re-baseline (subject S-00). It closes when its pull request merges with `reports/M0.md`. **Next:** M1, the money boundary (S-01).
+**Milestone:** M1, the money boundary (subject S-01), at step 4, Verify. M0 closed with PR #6 (`reports/M0.md`).
+- **Records, all proposed:**
+  - D-001, who holds sellers' money: the founder's line;
+  - D-002, the payment boundary;
+  - D-003, the seller ledger;
+  - D-004, Decisions 2 to 12 under C;
+  - D-005, installments, deferred.
+- **The guard** flags none of them.
+- **The Knowledge Map:** S-01's 8 questions have dispositions.
 
 **Settled** (`founder-decisions.tsv`):
 - **The guard on money:** nothing that holds sellers' money through Sharrwah goes live without the founder (G1, 18 October).
@@ -38,11 +46,9 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 
 **The backlog:** `python3 -I method/decision_status.py` gives 16 subjects and no decision records yet.
 
-**Next step:** once M0 merges, frame S-01 (`METHOD.md` section 5 step 1, and section 14):
-- the three corrections first;
-- then Decision 1's line;
-- the payment boundary record, from the seam's contract v0 after the guard test;
-- the ledger;
-- Decisions 2 to 12.
+**Next step:**
+- the level 3 check of D-001 and D-004, and the level 2 review of D-002 and D-003;
+- then fix what they find, and put D-001's line to the founder;
+- then the walkthrough, `reports/M1.md`, and the merge.
 
 **To resume:** `METHOD.md` section 9. Read `METHOD.md`, then this file, then the open subject's records.
