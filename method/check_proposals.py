@@ -329,33 +329,57 @@ def check_own(d, q, code, src, held):
 
 def decisions(path):
     """The company decisions' evidence (studies/proposals/briefs/R4-company-decisions.md): its decisions headed
-    `## D1.` and on, in order; every point cites a record that exists, of any question, but for the "Raised by" and
-    "Bears on" lines; quoted words and Arabic are found in the records the point cites; a Yemen fact gives its date;
-    a reading that didn't show something cites its not-found row or gap; "absent" rests on an absent row."""
+    `## D1.` and on, in order, and nothing but a title and a line before the first; every point cites a record that
+    exists and that a draft cites, but for the "Raised by" and "Bears on" lines and a point naming a draft's line of
+    what Yemen's evidence doesn't show (as Q4:150); quoted words and Arabic are found in the records the point cites;
+    a Yemen fact gives its state, place and date as the digest does; a reading that didn't show something cites its
+    not-found row or gap; "absent" rests on an absent row; and every point of the drafts' sections 7 is raised by a
+    decision or named in notes.md."""
+    from r5_cards import digest_entries, part_matches, cited as cited_by_draft
     name = os.path.relpath(path, SKM)
     text = open(path, encoding="utf-8").read()
-    want = 1
+    entries = digest_entries()
+    drafts_cite, sec7 = set(), set()
+    for q in [f"Q{n}" for n in range(1, 9)]:
+        ids, _ = cited_by_draft(q, "draft.md")
+        drafts_cite.update(ids)
+        for i, uses in ids.items():
+            sec7.update(f"{q}:{n}" for sec, n, _ in uses if sec == 7)
+    want, first = 1, None
     for n, line in enumerate(text.splitlines(), start=1):
         m = re.match(r"^## D(\d+)\.\s+\S", line)
         if re.match(r"^##(?!#)", line):
             if not m or int(m.group(1)) != want:
                 err(name, f"line {n}", f"a decision is headed as ## D{want}. followed by its question")
             want += 1
+            first = first or n
     if want == 1:
         err(name, "", "no decision headed ## D1.")
+    raised = set()
     for n, p in points(text):
-        if re.match(r"^[-*]?\s*\*\*(Raised by|Bears on):?\*\*", p):
+        if first is None or n < first:
+            continue                        # the title and the line saying what the file is
+        if re.match(r"^[-*]?\s*\*\*Raised by:?\*\*", p):
+            for q, ln in re.findall(r"\b(Q[1-8])\s*\((?:line|lines)\s*([\d, and]+)\)", p):
+                raised.update(f"{q}:{x}" for x in re.findall(r"\d+", ln))
+            raised.update(re.findall(r"\bQ[1-8]:\d+\b", p))
+            continue
+        if re.match(r"^[-*]?\s*\*\*Bears on:?\*\*", p):
             continue
         pids, yids, vids, aids = draft_ids(p)
         for i in pids + yids:
             if not rid.lookup(i):
                 err(name, f"line {n}", f"{i}: no such record")
+            elif i not in drafts_cite:
+                err(name, f"line {n}", f"{i}: no draft cites it")
         records = [i for i in pids + yids if rid.lookup(i)]
+        plain = unquoted(p)
         if not records:
+            if re.search(r"\bQ[1-8]:\d+\b", p) and DOESNT_SHOW.search(plain):
+                continue                    # a draft's point of what Yemen's evidence doesn't show, by its line
             err(name, f"line {n}", "a point that cites no record")
             continue
         texts = [rid.text_of(i) for i in records]
-        plain = unquoted(p)
         for m in QUOTED.finditer(p):
             raw = next(g for g in m.groups() if g is not None)
             words = rid.norm(raw)
@@ -375,9 +399,25 @@ def decisions(path):
             if not any(re.search(r"-A\d{4}$", i) or (re.search(r"-N\d+$", i) and rid.lookup(i) and
                        rid.lookup(i)[1].get("kind") == "absent") for i in pids):
                 err(name, f"line {n}", "'absent' without an absent row or a pilot absence")
-        for m in YEMEN_FACT.finditer(p):
-            if not DATE.search(m.group(2) or p[m.end():m.end() + 80]):
-                err(name, f"line {n}", f"{m.group(1)}: a Yemen fact without its date", "warning")
+        for i in yids:
+            if not re.match(r"^Y[AK]-", i):
+                continue
+            m = next((m for m in YEMEN_FACT.finditer(p) if m.group(1) == i and m.group(2)), None)
+            if not m:
+                err(name, f"line {n}", f"{i}: a Yemen fact without its state, place and date, as (state @ place, as of date)")
+                continue
+            ok, why = part_matches(i, m.group(2), entries)
+            if not ok:
+                err(name, f"line {n}", f"{i}: {why}")
+    notes_path = os.path.join(os.path.dirname(path), "notes.md")
+    notes = open(notes_path, encoding="utf-8").read() if os.path.exists(notes_path) else ""
+    if not notes:
+        err("notes.md", "", "missing")
+    named = set(re.findall(r"\bQ[1-8]:\d+\b", notes))
+    for q, ln in re.findall(r"\b(Q[1-8])\s*\((?:line|lines)\s*([\d, and]+)\)", notes):
+        named.update(f"{q}:{x}" for x in re.findall(r"\d+", ln))
+    for x in sorted(sec7 - raised - named, key=lambda s: (s[:2], int(s.split(":")[1]))):
+        err(name, "", f"{x}: a point of a draft's section 7 that no decision raises and notes.md doesn't name")
 
 
 def points(text):
@@ -463,7 +503,8 @@ QUOTED = re.compile(r'"([^"\n]+)"|\u201c([^\u201d\n]+)\u201d|\u00ab([^\u00bb\n]+
 ARABIC = re.compile(r"[\u0600-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]+"
                     r"(?:[ \u200c\u200e\u200f]+[\u0600-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]+)*")
 ARABIC_LETTER = re.compile(r"[\u0621-\u064a\u066e-\u06d3\u06fa-\u06ff\u0750-\u077f\ufb50-\ufdff\ufe70-\ufeff]")
-NOT_SHOWN = re.compile(r"not in what was read|didn.t show|did not show|not shown|wasn.t shown|was not shown", re.I)
+NOT_SHOWN = re.compile(r"not in what was read|didn.t show|did not show|not shown|wasn.t shown|was not shown|"
+                       r"wasn.t found|was not found|weren.t found|were not found", re.I)
 DOESNT_SHOW = re.compile(r"doesn.t show|does not show", re.I)
 FORBIDDEN = re.compile(r"\bS01-(?!VP-)[A-Z0-9]+(?:-[A-Z0-9]+)*\b|(?:studies/subjects/|register/|founder-messages/)\S*")
 YEMEN_FACT = re.compile(r"\b(Y[AK]-\d{2,3})\b(?:\s*\(((?:[^()]|\([^()]*\))*)\))?")   # a place may hold its own brackets

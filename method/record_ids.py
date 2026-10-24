@@ -9,6 +9,8 @@ An id is one of:
 - Stage 1's, in studies/yemen-cases/: an axis (YA-01), a constant (YK-01), a condition (YQ-B005) or a citation
   (YE-A001);
 - a pilot variation point (S01-VP-01), in studies/subjects/S-01/variation-points.tsv;
+- an original a copy keeps (a pilot statement, gap or absence, S01-SA-090; a pilot or concern map citation,
+  S01-SH-C146 or SH-S-5001), found as its first copy among the questions' records;
 - an area of the areas list (A-01), in studies/proposals/areas/areas.tsv: the coordinator's grouping, never
   evidence of what a platform does.
 
@@ -71,7 +73,7 @@ def platform_rows(question):
                     continue
                 own = " ".join(r.get(f) or "" for f in OWN[name])
                 rests = [pool[c] for c in cite_split(r.get(CITES.get(name, ""), "")) if c in pool]
-                if name == "not-found.tsv":
+                if name in ("not-found.tsv", "copied-pilot-absences.tsv"):   # and the words that make its list complete
                     rests += [pool[c] for c in cite_split(r.get("complete_cite_ids", "")) if c in pool]
                 out[rid] = (os.path.relpath(os.path.join(d, name), SKM), r, own, rests)
     return out
@@ -90,8 +92,11 @@ def stage1_rows():
         for r in read(os.path.join(STAGE1, name)):
             own = " ".join(r.get(f) or "" for f in fields)
             rests = [cits[c] for col in cite_cols for c in cite_split(r.get(col, "")) if c in cits]
-            if name == "axes.tsv":      # every state's citations, written after it in `states`
-                rests += [cits[c] for c in re.findall(r"\bYE-[A-Z]\d{3,4}\b", r.get("states", "")) if c in cits]
+            if name == "axes.tsv":      # every state's citations, written after it in `states`, once each
+                have = {c.get("cite_id") for c in rests}
+                for c in dict.fromkeys(re.findall(r"\bYE-[A-Z]\d{3,4}\b", r.get("states", ""))):
+                    if c in cits and c not in have:
+                        rests.append(cits[c])
             out[r[key]] = (os.path.relpath(os.path.join(STAGE1, name), SKM), r, own, rests)
     return out
 
@@ -107,13 +112,34 @@ def other_rows():
     return out
 
 
+@lru_cache(maxsize=None)
+def originals():
+    """{an original's id: its first copy's (file, row, own text, [citation rows])}: a pilot statement, gap or absence
+    (S01-SA-090), a pilot or concern map citation (S01-SH-C146, SH-S-5001), as the copies keep them."""
+    out = {}
+    for q in sorted(os.listdir(RECORDS)) if os.path.isdir(RECORDS) else []:
+        if not re.fullmatch(r"Q\d", q):
+            continue
+        for path, row, own, rests in platform_rows(q).values():
+            for key in ("stmt_id", "absence_id", "gap_id"):
+                if row.get(key) and not row[key].startswith(q + "-"):
+                    out.setdefault(row[key], (path, row, own, rests))
+        qdir = os.path.join(RECORDS, q)
+        for platform in sorted(os.listdir(qdir)):
+            f = os.path.join(qdir, platform, "copied-citations.tsv")
+            for r in read(f):
+                if r.get("cite_id"):
+                    out.setdefault(r["cite_id"], (os.path.relpath(f, SKM), r, r.get("quote", ""), [r]))
+    return out
+
+
 def lookup(i):
     m = re.match(r"^(Q\d)-", i)
     if m:
         return platform_rows(m.group(1)).get(i)
     if YEMEN_ID.fullmatch(i):
         return stage1_rows().get(i)
-    return other_rows().get(i)
+    return other_rows().get(i) or originals().get(i)
 
 
 def norm(s):
