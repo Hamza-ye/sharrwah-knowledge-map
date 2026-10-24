@@ -1,0 +1,17 @@
+id	subject	milestone	areas	km_areas	covers	door	risk	needed_by	arc42	status	budget_m	notes
+S-00	Re-baseline: the method adopted and the record repaired	M0			METHOD.md amendment 1; F-00 to F-06; O-01	two-way	M	now		in progress	0	No agents. Closes with reports/M0.md
+S-01	The money boundary	M1	A-12 A-13	PAY	S-01 Decisions 1 to 14; KM-ENG-05; drafts Q4 Q5; F-06; the payment seam v0; PAY-01 to PAY-81	one-way	H	model	4 5 8 9	open	20	Decision 1 is the founder's one line; the rest are engineering records (METHOD.md section 14)
+S-02	The spine: capability map, system context, quality scenarios, constraints and glossary	M2	A-01 to A-34	MTH INT SRF EVO OPS	KM-ENG-02 KM-ENG-03 KM-ENG-06 KM-WLD-03; draft Q8	one-way	H	spine	1 2 3 10 12	open		A feasibility test first; the founder sets the order of the areas and the business targets
+S-03	Tenancy, identity and permissions	M3	A-01 A-02 A-03 A-20	ACC STF PLN ONB TRU	KM-ENG-01 KM-ENG-08	two-way	H	model	4 5 8	open		Outside experience: writing on multi-tenant SaaS, and Shopify's on pods
+S-04	Markets and currency, as configuration	M4	A-15 A-16 A-30 A-31	MKS LNG WLD	S-01 Decision 14; F-02; F-03; drafts Q1 Q2 Q7	two-way	H	model	8	open		The guard's main test: F-03, and the Q7 draft's two rials against G1's B7
+S-05	Core commerce, and how it divides into modules	M5	A-04 A-05 A-06 A-08 A-09 A-10 A-14 A-32 A-34	CAT SEL INV CHK ORD SHP RET CUS TAX MKT LOY MIG	KM-ENG-04	two-way	H	model	4 5 6 8	open		A-32's wallets and stored value fall under the guard on money
+S-06	Apps, events and webhooks	M6	A-24 A-25	APP API DVT AUT NTF	KM-ENG-07	two-way	H	model	5 8	open		Outside sources on webhooks and app platforms are added here
+S-07	Seller conditions and payment methods	M7	A-11 A-17 A-18		KM-ACC-04 KM-PAY-01 KM-TRU-05 KM-WLD-04; drafts Q3 Q5 Q6	one-way	H	model	8	open		Who may register as a seller is the founder's
+S-08	The company and compliance	last	A-19		O-01; F-01; KM-TRU-06 KM-PLN-08	one-way	H	launch	2 11	open		Founder decisions with one lawyer consultation; the result is configuration
+S-09	Storefront and themes	set at S-02	A-07	SFR CNT		two-way	H	model	5 8	open		Rendering many stores' storefronts (KM-SFR-07) is high risk
+S-10	Sales channels, point of sale and the mobile app	set at S-02	A-21 A-22 A-29	CHN POS		two-way	M	later	5	open		
+S-11	B2B, catalogs and price lists	set at S-02	A-23 A-33	B2B		two-way	M	later	5	open		
+S-12	Analytics and customer service	set at S-02	A-27	ANL SUP		two-way	M	later	5	open		
+S-13	Partners and services for sellers	set at S-02	A-26	PTN		set at framing	M	later	3 5	open		
+S-14	AI and agentic commerce	set at S-02	A-28	AIA		two-way	M	later	5	open		
+S-15	Evaluation and the first full architecture description	M8	A-01 to A-34		The Knowledge Map's 179 questions and the 81 payment rows, reconciled	one-way	H		1 to 12	open		A walkthrough in ATAM's style; the founder's go or no-go on production code, part by part

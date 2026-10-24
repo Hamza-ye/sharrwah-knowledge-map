@@ -1,13 +1,14 @@
 # Read first
 
 **The coordinating session.** Before anything else, read:
-- `PLAN.md`: the plan the founder agreed on 12 October 2026;
+- `METHOD.md`: how the work is done, adopted by the founder on 24 October 2026;
 - `STATE.md`: where the work is;
-- `founder-decisions.tsv`: what the founder has decided.
+- `founder-decisions.tsv`: what the founder has decided;
+- `HISTORY.md`: the baselines, by commit.
 
-Continue from `STATE.md`'s next step. Change the plan only by a dated entry in its section 11.
+Continue from `STATE.md`'s next step. Change the method only by a numbered amendment in its section 12. `PLAN.md` is the record of the earlier plan and is no longer followed.
 
-**An agent working from a brief.** Read only your brief and what it names. Nothing in `PLAN.md`, `STATE.md` or this repository's studies should steer your reading.
+**An agent working from a brief.** Read only your brief and what it names. Nothing in `METHOD.md`, `PLAN.md`, `STATE.md` or this repository's studies should steer your reading.
 
 **Everyone:**
 - `observed-sh` and `observed-sa` are read-only here. Never commit or push to them.
