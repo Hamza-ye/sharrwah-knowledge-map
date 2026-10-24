@@ -38,7 +38,7 @@ This is the pilot's Decision 1 (`studies/subjects/S-01/entry.md`, S01-VP-01). Th
 - **Sellers' money:** what a buyer pays for a seller's order, until it reaches an account the seller holds outside Sharrwah, or the seller's own hands. Not Sharrwah's own fees, and not store credit, which is value a seller owes rather than money paid in.
 - **Held through Sharrwah:** your guard of 18 October covers "No arrangement that holds sellers' money through Sharrwah", and names two forms:
   - A, Sharrwah holds it, as Salla presents the balance of its electronic payments;
-  - B, a payment company holds it in an account opened through Sharrwah. That is Sharrwah's own payment service, the way Shopify Payments is set up inside Shopify. It is also an account Sharrwah creates or requests for the seller with another company, the way Salla requests a Tabby account for a seller, or Shopify generates a PayPal account at sign-up.
+  - B, a payment company holds it in an account opened through Sharrwah. That is Sharrwah's own payment service, the way Shopify Payments is set up inside Shopify. It is also an account Sharrwah creates for the seller with another company, or requests for it there, the way a seller can request a Tabby account through Salla, which shares the store's details with Tabby, or Shopify generates a PayPal account at sign-up.
 
   An account the seller opens with a provider itself, and links by its own keys, is neither. That is C. A case between B and C comes to you before it goes live. *My reading, for you to confirm or correct:* the guard also covers arrangements it doesn't name, such as a courier collecting cash under Sharrwah's own contract with it.
 - **At launch:** from the day Sharrwah first goes live in any market, and in each market for as long as you haven't switched A or B on there.
@@ -48,7 +48,7 @@ This is the pilot's Decision 1 (`studies/subjects/S-01/entry.md`, S01-VP-01). Th
 - a Sharrwah payment service or balance, like Salla's electronic payments;
 - Sharrwah shipping that collects cash under Sharrwah's contract, like Salla's own shipping labels;
 - a Sharrwah business account that receives sellers' payouts, like Shopify Balance;
-- Sharrwah opening or requesting a seller's account with a payment company, as Salla does for Tabby. Sellers open their own accounts and link them.
+- Sharrwah opening or requesting a seller's account with a payment company, as Salla does for Tabby requests. Sellers open their own accounts and link them.
 
 If you want any of these in the first version, say so instead of confirming.
 
