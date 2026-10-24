@@ -234,7 +234,8 @@ class Context:
             k = int(ln.group(1))
             if 0 < k <= len(rows):
                 one = [v for t in (rows[k - 1], json_unescaped(rows[k - 1])) for v in variants(t)]
-                texts = one + list(texts or [])
+                if any(q and q in t for (kind, q) in variants(quote) for (tk, t) in one if tk == kind):
+                    texts = one                     # the cited line holds it: show it there, nowhere else
         for level, (kind, q) in enumerate(variants(quote)):
             if not q:
                 continue

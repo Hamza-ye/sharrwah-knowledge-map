@@ -485,7 +485,7 @@
 
 **Citation SH-S-7211:** `observed-sh@e49840729:structures/shopify/app-store-built-in-features/apps.shopify.com_built-in-features_b2b/items.jsonl` | line 2 (span) | 2026-09-30 | kind: stated | quote check: found
 - quote: Included with Shopify Plus
-- in context: h3 B2B span ⟪Included with Shopify Plus⟫ h4 Grow your wholesale and direct-to-consumer businesses all in one place a Get started Get started https://help.shopify.com/en/manual/b2b?surface_detail=b2b&surface_type=built_in_feature_page div Illustration depicting a pile of boxes and a checkout cart, with each item in the cart having a count of 100. h4 How it works h5 Set up and manage company profiles right from your Shopify admin p Set up multiple buyers and locations with unique permiss…
+- in context: {"position": 1, "tag": "span", "text": "⟪Included with Shopify Plus⟫", "links": []}
 
 ### Q8-SH-047
 
