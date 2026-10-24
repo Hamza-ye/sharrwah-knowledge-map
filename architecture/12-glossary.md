@@ -54,18 +54,18 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-001.
 
 ### reserved, not built
-- **Here:** nothing of A or B (D-001) is designed, built, integrated or contracted. The payment boundary (D-002) leaves room for either behind it, and the settlement contract is named there but not designed. Building either is a change to D-001, by the founder's decision. **Switching on** either in a market is the founder's decision too, after it is built, with its licence or its processor.
+- **Here:** nothing of A or B (D-001) is designed, built, integrated or contracted. The payment boundary (D-002) leaves room for either behind it. D-002 also reserves two things it names without designing: the settlement contract, and stored permissions to charge a buyer later. Building either is a change to D-001, by the founder's decision. **Switching on** either in a market is the founder's decision too, after it is built, with its licence or its processor.
 - **Used by:** D-001, D-002.
 
 ### custodian
-- **Here:** who holds a payment's money at a given time:
+- **Here:** who holds a payment's money when its outcome is recorded:
   - the provider, on the provider's own record;
   - the courier, for cash it collected on delivery;
   - the seller, where the buyer paid the seller directly.
 
-  D-002 (element 3) defines it, and D-003 keeps sums apart by it.
+  D-002 (element 3) defines it, and D-003 keeps sums apart by it as posted. Later changes of custody, such as a courier settling, are in payments' custody records.
 - **Shopify:** no field names one. Cash taken at the counter is tracked per drawer: "Tracks the balance in a cash drawer for a point of sale device over the course of a shift." (`GQL:318`)
-- **Salla:** keeps cash collected on delivery apart in a balance, which "Shows confirmed COD payments collected from customers." (`SA-en:1240`). With its own carriers, a carrier holds the cash until it transfers it: "If there are cash on delivery amounts held for you, the invoice total is deducted from them." (`SA-en:277`)
+- **Salla:** keeps cash collected on delivery apart in a balance, which "Shows confirmed COD payments collected from customers." (`SA-en:1240`). With a carrier under the seller's own contract, the carrier holds the cash until it transfers it, and may first deduct its own invoices from it: "If there are cash on delivery amounts held for you, the invoice total is deducted from them." (`SA-en:277`)
 - *Interpretation:* neither platform names a custodian on each payment. Sharrwah does because, under C, the money for one store's orders sits with several parties at once.
 - **Used by:** D-002, D-003.
 
@@ -90,7 +90,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 ### Sharrwah's fees
 - **Here:** what Sharrwah charges a seller. Sharrwah bills them apart from sellers' money, and never deducts them from it (D-004). Which fees, and how they are billed, is left to S-03 (area A-03).
 - **Shopify, a precedent:** a platform fee on sales through other providers. "you're charged third-party transaction fees for all orders that aren't brokered financially by Shopify" (`HC:payments/getting-paid.md:11`); "Transaction fees don't apply for POS orders or for manual payment methods" (`HC:your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md:23`).
-- **Salla:** invoices its own fees: "Payment processing fees VAT is included in the monthly Purchase Invoice issued by Salla." (`SA-en:143`)
+- **Salla:** invoices the VAT on its own payment service's processing fees: "Payment processing fees VAT is included in the monthly Purchase Invoice issued by Salla." (`SA-en:143`). Those are provider fees of Salla's own service, so this is a precedent for invoicing apart, not for a platform's own fee on sales.
 - **Used by:** D-001, D-003, D-004.
 
 ## Ways to pay
@@ -108,7 +108,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-001, D-002, D-004, D-005.
 
 ### payment provider
-- **Here:** the company that processes or receives a payment for a method: a processor or gateway, a wallet, a bank, or an installment company. A platform's own payment service is a provider too. A courier collecting cash on delivery is named apart, and where a record means both it says "provider or courier".
+- **Here:** the company that processes or receives a payment for a method: a processor or gateway, a wallet, a bank, or an installment company. A platform's own payment service is a provider too. A courier collecting cash on delivery is named apart, and where a record means both it says "provider or courier". In D-002 only a provider Sharrwah integrates with sends outcomes on its own record. A bank that only receives a transfer into the seller's account, with no integration, sends none, and its payments are manual.
 - **Shopify:** "All Shopify-supported payment methods rely on third-party providers to process your transactions." (`HC:payments/getting-paid.md:3`); "Shopify supports two different types of credit card payment providers: **direct providers** and **external providers**." (`HC:payments/third-party-providers.md:5`). Each transaction names its gateway (`GQL:2447`).
 - **Salla:** "Electronic Payments is a service provided by Salla that allows your store to process online transactions automatically." (`SA-en:24`). Outside gateways sit beside it (`SA-en:807`). Each transaction names its provider, "Payment Provider Name" (`SAPI:208`).
 - *Open:* the held articles don't settle whether Salla limits outside gateways to some kinds of store; one guide is addressed to "charities and digital stores" (`SA-en:2`). This doesn't bear on M1's decisions.
@@ -117,7 +117,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 ### manual payment method
 - **Here:** the buyer pays outside any provider integration, and the seller records the payment by hand: a bank transfer to the seller's account, cash on delivery, a money order, or a method the seller names. The money goes to the seller directly or, for cash on delivery through a courier, to the courier (*cash on delivery*).
 - **Shopify:** "Common types of manual payments include cash on delivery (COD), money orders, and bank transfers." (`HC:payments/manual-payments.md:5`); "Orders that accept manual payments are marked as unpaid on the **Orders** page." (`HC:payments/manual-payments.md:10`); "Manual payments aren't captured by Shopify." (`HC:payments/partial-payments.md:44`). The seller records it: "**Mark as paid** - Use when you've already received payment for the current order" (`HC:fulfillment/managing-orders/payments/deferred-payments.md:129`). The seller can also name a method of its own, apart from the names Shopify reserves (`HC:payments/manual-payments.md:59`).
-- **Salla:** "Bank transfer (customers transfer payment directly to your account)" (`SA-en:565`). The buyer uploads a receipt: "customers must complete the bank transfer immediately and upload the payment receipt during checkout." (`SA-en:495`). The order waits in "بإنتظار الدفع" (`SSTAT:2`) or "بإنتظار المراجعة" (`SSTAT:3`). No method of the seller's own naming was found (inventory, section 4).
+- **Salla:** "Bank transfer (customers transfer payment directly to your account)" (`SA-en:565`). The buyer uploads a receipt: "customers must complete the bank transfer immediately and upload the payment receipt during checkout." (`SA-en:495`). Salla's order statuses include "بإنتظار الدفع" (`SSTAT:2`) and "بإنتظار المراجعة" (`SSTAT:3`), though neither status names a method. The held articles tie review to a bank transfer only for Salla's own subscription renewals: "If payment is made via bank transfer, the order will be under review and the package will be activated within 24-48 hours" (`SA-en:816`). No method of the seller's own naming was found (inventory, section 4).
 - **Used by:** D-001, D-002.
 
 ### cash on delivery
@@ -142,16 +142,16 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-002, D-003, D-004.
 
 ### manual reversal
-- **Here:** a refund made outside the provider, because the method can't reverse, as with a bank transfer or cash. D-002's outcome is "manual reversal required", and the seller's attestation that they paid back closes it.
-- **Shopify:** "Some payment methods can't be refunded to the original payment method." (`HC:fulfillment/managing-orders/refunding-orders.md:19`); "If the refund can't be completed to the original payment method, then you can resolve the customer outside the original payment method" (`HC:payments/shopify-payments/refunds-troubleshooting.md:91`).
+- **Here:** a refund made outside the provider, because the method can't reverse, as with a bank transfer or cash. D-002's outcome is "manual reversal required", and the seller's attestation that they paid back closes it. Shopify also resolves one by store credit or a gift card; whether Sharrwah can is S-05's.
+- **Shopify:** "Some payment methods can't be refunded to the original payment method." (`HC:fulfillment/managing-orders/refunding-orders.md:19`); "If the refund can't be completed to the original payment method, then you can resolve the customer outside the original payment method, such as by issuing store credit, creating a gift card, or arranging another manual payment method." (`HC:payments/shopify-payments/refunds-troubleshooting.md:91`).
 - **Salla:** "Automatic refunds are not supported for orders paid through bank transfer." and "Automatic refunds are not supported for cash-on-delivery payments." (`SA-en:994`)
 - **Used by:** D-002.
 
 ### rules on payment methods
 - **Here:** the seller's rules that change which methods a buyer sees at checkout, or what happens when one is used. D-002 decides only that rules which hide, reorder or rename methods are applied by the order side's checkout. Rules that reject a payment or hold an order for review are left to S-07, and whether apps can supply rules to S-06.
-- **Shopify:** "This payment method customization allows you to sort, reorder, hide, rename payment methods and set payment terms on a checkout" (`HC:checkout-settings/checkout-customization.md:73`). Apps make them: "Developers can rename, reorder, and sort the payment methods available to customers during checkout" (`HC:checkout-settings/customize-checkout-configurations/customization-options.md:213`).
+- **Shopify:** "This payment method customization allows you to sort, reorder, hide, rename payment methods and set payment terms on a checkout" (`HC:checkout-settings/checkout-customization.md:73`). Apps make them: "Developers can rename, reorder, and sort the payment methods available to customers during checkout" (`HC:checkout-settings/customize-checkout-configurations/customization-options.md:213`). The function can also "add a review requirement for a specific order" (E036:54).
 - **Salla:** "Payment restrictions are specific conditions applied to payment methods in your store" (`SA-en:923`), "قيود الدفع" in Arabic (`SA-ar:165`). Their actions are "Reject the transaction", "Place the order under review" and "Hide the payment method" (`SA-en:923`). The merchant sets them, and no reorder or rename was found (inventory, section 7).
-- **Where they differ:** Shopify's held evidence shows sorting, reordering, hiding, renaming and payment terms, made by apps. Salla's shows rejecting, holding for review and hiding, set by the merchant.
+- **Where they differ:** Shopify's held evidence shows sorting, reordering, hiding, renaming, payment terms and a review requirement, made by apps through a function. Salla's shows rejecting, holding for review and hiding, set by the merchant, with the seller's own message to the buyer (`SA-en:923`).
 - **Used by:** D-002.
 
 ### payment terms
@@ -202,7 +202,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 
 ### outcome record
 - **Here:** what payments posts to the order for each result: its id, its attempt, the outcome it draws on, its kind (sale, authorization, capture, refund or void), status, amount, evidence level, custodian, method, provider reference, time, and test or live (D-002, element 3).
-- **Leaves out:** three of Shopify's eight kinds, CHANGE, EMV_AUTHORIZATION and SUGGESTED_REFUND (`GQL:2452`). *Interpretation:* the first two belong to point of sale (S-10), and the third reads, by its name, as a calculation rather than a result. The schema line doesn't describe them.
+- **Leaves out:** three of Shopify's eight kinds, CHANGE, EMV_AUTHORIZATION and SUGGESTED_REFUND (`GQL:2452`). *Interpretation:* the first two belong to point of sale (S-10), and the third reads, by its name, as a calculation rather than a result. The schema line doesn't describe them. It also leaves out Salla's `reverse` action, which its held line doesn't describe (`SAPI:211`), and the money a lost dispute moves, which crosses only as a verdict (`GQL:1441`).
 - **Shopify:** an order's transactions, `OrderTransaction` (`GQL:2447`), with the kinds SALE, CAPTURE, AUTHORIZATION, VOID, REFUND, CHANGE, EMV_AUTHORIZATION and SUGGESTED_REFUND (`GQL:2452`).
 - **Salla:** a transaction names its provider (`SAPI:208`), and can be refunded, voided or reversed (`SAPI:211`).
 - **Used by:** D-002, D-003.
@@ -210,7 +210,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 ### evidence level
 - **Here:** what an outcome's claim rests on: the provider's record, a courier event, a seller attestation or a buyer claim (D-002, element 3).
 - **Shopify:** the seller marks a manual method's payment as received: "**Mark as paid** - Use when you've already received payment for the current order" (`HC:fulfillment/managing-orders/payments/deferred-payments.md:129`). A transaction says whether its gateway is manual, `manualPaymentGateway` (`GQL:2447`).
-- **Salla:** a bank transfer carries the buyer's receipt, "Payment receipt image URL, if available." (`SAPI:5`), and waits in "بإنتظار المراجعة" (`SSTAT:3`).
+- **Salla:** a buyer paying by bank transfer uploads a receipt at checkout (`SA-en:495`), which the order carries, "Payment receipt image URL, if available." (`SAPI:5`).
 - *Interpretation:* neither platform names levels. Both tell a provider's result apart from a payment the seller or the buyer reports.
 - **Used by:** D-002, D-003.
 
@@ -226,7 +226,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-002.
 
 ### live and test
-- **Here:** whether an outcome moved real money. The seller ledger posts only from live outcomes (D-003).
+- **Here:** whether an outcome is real or made in test mode; a test moves no real money. The seller ledger posts only from live outcomes (D-003).
 - **Shopify:** `OrderTransaction.test` (`GQL:2447`), and `test` on a balance transaction (`GQL:3197`).
 - **Used by:** D-002, D-003.
 

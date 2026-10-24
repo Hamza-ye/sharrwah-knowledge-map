@@ -50,7 +50,49 @@ The coordinator's record of the independent checks of amendment 2's pass (`METHO
 
 ## D-002 and D-003, level 2
 
-Pending the review's return.
+`M1-terms-scope-check-D002-D003.tsv`: 75 items. 39 hold, 23 fix, 6 not carried, 7 open.
+
+**The evidence the findings rest on.** The review's new evidence was checked before anything was applied:
+- by script: `SA-en:816`, `SA-en:923`, `HC:payments/shopify-payments/refunds-troubleshooting.md:91`, `HC:shopify-flow/reference/actions/charge-vaulted-payment-for-b2b-order.md:3`, `HC:sell-in-person/shopify-pos/payment-management/multiple-partial-payments.md:12`, `HC:your-account/users/roles/permissions/store-permissions.md:203`, `GQL:2354`, `SAPI:211`;
+- by reading the schema: `settlementCurrencyRate` at `GQL:2447`; `GQL:2485`'s mandate types SUBSCRIPTIONS, ORDERS and DRAFT_ORDERS; and 47 failure codes at `GQL:2450`, 7 of them AMAZON_PAYMENTS_*;
+- by reading the sources: E032:146–163, the buyer's email, phone, billing and shipping addresses in Shopify's payment request; and E036:54 and :60, the payment function's review requirement.
+
+All of it holds. The count in D-003 (114 types, 38 reversals, 36 twins) was reproduced independently.
+
+**"How it grows" is withdrawn.** The reviewer judged, as an interpretation, that it changed D-002's substance rather than making its first consequence explicit. It let attempt states, outcome kinds, reason categories and evidence levels grow, and the order side reads those. The coordinator agrees: it had been added in this pass to make open items carried, and it broadened the decision. With it gone, D-002's vocabularies are part of what it decides, and an item that needs a new value is not carried.
+
+**What that means for D-002 and D-003.** D-002 doesn't carry nine of the items it leaves open, and D-003 four. Neither can be accepted now (`METHOD.md` section 6's acceptance rule). Both stay proposed, as the working basis. Each item is in their Scope, with its evidence and the subject that settles it, and their Gaps say the records are revised to carry them before acceptance. They weren't redesigned in this pass, because that is S-05's and S-07's work.
+
+**Applied:**
+
+| Finding | What was done |
+| --- | --- |
+| D2-05, open | A bank that only receives a transfer, with no integration, sends no provider's record, and its payments are manual (D-002's Terms; the glossary). |
+| D2-06 | The manual payment method entry and kind 2 already include cash paid to a courier (the C13 fix). |
+| D2-07 | Cash on delivery's outcome includes the seller's attestation where the seller's own staff collect. |
+| D2-10 | The outcome kinds left out include Salla's undescribed `reverse`, and the money a lost dispute moves. |
+| D2-13, D2-47 | The manual reversal quote is given whole: Shopify also resolves one by store credit or a gift card. |
+| D2-14 | The custodian is who holds the money when the outcome is recorded; later custody is in payments' records. A carrier may deduct its invoices from the cash it holds. |
+| D2-18 | Shopify's payment function can also add a review requirement (E036:54). Rules setting payment terms are S-11's; rules rejecting or holding for review are S-07's. |
+| D2-22 | Live and test: real or test mode. |
+| D2-23 | "Reserved, not built" names the settlement contract and stored permissions to charge later. |
+| D2-27 | B7 is cited through F-03's row of `founder-decisions.tsv`, as the founder's intent that row records as prevailing. The market guard is cited to its own row. |
+| D2-38 | "Option 1 wins": the schema fields are named without overclaiming. The Amazon codes are noted, and the conclusion is marked as an interpretation. |
+| D2-39 | Amounts: Shopify's order amounts are MoneyBags, and a transaction names its settlement currency and rate (`GQL:2447`). |
+| D2-40 | Withdrawn, as above. |
+| D2-43 | The first consequence holds only "as long as its interface fits the elements", which isn't shown yet (E032:146–163). A new capability changes the record. |
+| D2-44 | Corrected, and it was the coordinator's error. Salla's review status and receipt aren't tied to bank transfers by the held structures, and its articles tie review to bank transfer only for Salla's own subscription renewals (`SA-en:816`). D-002's guard precedents and the glossary now say so. |
+| D2-48 | The seam's figures and words are quoted as the seam has them (seam.md:17–18, 28, 33). For Salla, the no-polling point is marked as the seam's reading only. |
+| D2-49 | Shopify's provider contract is E030 to E032. The missing buyer data is a new gap. |
+| D3-01 | The guard's condition, "without the founder's decision", is restored in driver 1. |
+| D3-02 | "Break reconciliation" is marked as an interpretation. |
+| D3-06 | New entry types: the rules hold for every type, and what posts a new type changes the record. |
+| D3-12, open | Fixed. The posting key is the outcome id with the entry's type. The provider's reference is carried, not used as the key, since one Salla transaction can carry several partial refunds (`SAPI:211`). |
+| D3-14 | The glossary's Salla line on Sharrwah's fees: what Salla invoices is the VAT on its own service's processing fees, a precedent for invoicing apart only. |
+| D3-18 | D-003 takes D-001's outcome "as proposed, that at launch …". |
+| D3-26 | Gaps: lost disputes, and fees with no sale. |
+
+**Not carried, now marked in the records:** D2-29 (stored value), D2-30 (methods and providers), D2-33 (statuses and edits), D2-35 (payment terms), D3-21 (stored value in the ledger), D3-22 (fees with no sale). D2-31 (capture timing), D2-32 (seller rules' messages), D2-36 (split payment), D2-42 (a courier's deductions) and D3-11 (lost disputes) were open. They are marked "Not carried", because a record can't claim to carry what is unsettled.
 
 ## Re-check
 
