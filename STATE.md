@@ -2,14 +2,13 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 24 October 2026, 23:00 UTC.
+**Updated:** 24 October 2026, 23:45 UTC.
 
-**The method:** `METHOD.md`, adopted on 24 October 2026 with amendments 1 and 2. Amendment 2 adds Terms and Scope to every decision record, and the rule that a record rests on evidence and accepted outcomes, never on another record's wording.
+**The method:** `METHOD.md`, adopted on 24 October 2026 with amendments 1, 2 and 3. Amendment 3 (the founder, 23:01 UTC) sets the evidence standard, checks that try to refute, and the acceptance rule: no record is accepted while something it leaves open could reverse it. Amendment 2 adds Terms and Scope to every decision record, and the rule that a record rests on evidence and accepted outcomes, never on another record's wording.
 
-**Milestone:** M1, the money boundary (subject S-01). **Stopped at a stop line** (`METHOD.md` section 7): amendment 2's pass had about 5 million agent tokens, and its first step, the terms inventory, cost 23.8 million. The founder decides whether the pass goes on (`reports/M1.md`); Decision 1 comes after it.
-- **The inventory** is `decisions/checks/M1-terms-inventory.md`: 15 payment terms as Shopify and Salla bound them, by path. `python3 -I method/inventory_quotes.py` finds 283 of its 299 quoted strings in the records it cites; 10 are search terms, and 6 are names or titles checked by hand.
-- **What it found:** six words in M1's records are narrower or vaguer than the platforms show (payment method, cash on delivery, fees, what the seller is shown, the seller's rules on methods, store credit), and D-003 rests one driver on a seam note the schema contradicts. None changes Decision 1's line.
-- **Records D-001 to D-005** are checked: D-001 and D-004 at level 3, D-002 and D-003 at level 2. The guard flags none. `decision_status.py` reports their 10 missing sections until the pass adds them.
+**Milestone:** M1, the money boundary (subject S-01). The founder chose to finish amendment 2's pass while it stays productive (23:01 UTC). The glossary (`architecture/12-glossary.md`) and the Terms and Scope of D-001 to D-005 are written (`24961d6`), and two independent checks are running. Decision 1 comes back after them.
+- **Under the acceptance rule:** D-001 and D-004 carry everything they leave open, and can be put for acceptance. D-002 doesn't carry one item, the first providers' interfaces, so it stays proposed until S-07 walks them through it; D-003 depends on it.
+- **Records D-001 to D-005:** their earlier checks were D-001 and D-004 at level 3, D-002 and D-003 at level 2. The guard flags none, and `decision_status.py` finds no fault in their Terms and Scope. The inventory the pass used is `decisions/checks/M1-terms-inventory.md`.
 - **M0** closed with PR #6. M1's pull request is PR #7.
 
 **Settled** (`founder-decisions.tsv`):
@@ -37,7 +36,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** no agents. The scheduled check-in is off.
+**In flight:** two read-only checkers, each trying to refute the pass's sections at commit `24961d6`: D-001 and D-004 at level 3, writing `decisions/checks/M1-terms-scope-check-D001-D004.tsv`; D-002 and D-003 at level 2, writing `decisions/checks/M1-terms-scope-check-D002-D003.tsv`. Each is capped at 40 tool calls. The scheduled check-in is on while they run.
 
 **M2's feasibility test** is done (read-only; 8.2 million tokens). Its report is in the coordinator's scratchpad, and goes into M2's pull request once M1 merges. Its verdict is **partly feasible:**
 - **Within each platform,** the structures say which permission gates which page.
