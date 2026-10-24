@@ -147,3 +147,34 @@ The sample, Q3 on Salla, recorded 72 new statements and 3 not-found rows for 18.
 - **Together:** **about 1.95 billion,** about 69 percent of a week's limit.
 
 The lower case: with the expected counts of statements, and checking runs at the planned 5 each, the agents come to about 1.37 billion.
+
+## Re-sized after the drafts, 24 October 2026
+
+All eight drafts are written, and seven are revised for the step text from saved HTML (Q7's revision is running). The measured costs are in `costs.tsv`.
+
+**What is measured** (agents, millions):
+
+| Step | Expected at the sample | Measured |
+| --- | --- | --- |
+| R0 to R2 | 221 | 221.0 |
+| R3, recording and checking | 616 | 462.2 |
+| R3b, the re-check against the observed runs (the founder's decision of 19 October) | none | 101.4 |
+| R3c, the second re-check, against the step text from saved HTML (the founder's note of 19 October) | none | 41.4 |
+| R4, so far: the drafting brief's check 14.2, the eight drafts 271.8, six revisions for the step text 59.1 | 186 | 345.1 |
+| **So far** | | **1,171.1** |
+
+**Past its expected cost: R4,** by about 190 with what is still to come. The drafts cite 86 to 142 records each, since the founder made the citing counts a guide on 19 October, and each run at `max` processed 21 to 54 million; the revisions for the step text add 59. R3 came in about 150 under.
+
+**What is still to come** (agents, millions):
+- **R4:** Q7's revision, about 10; the company decisions' run, about 20.
+- **R5,** about 275, against 389 expected. Its brief and the company decisions' brief are checked by one run, about 20. The proposals cite about 1,000 records, about 910 once each by origin: about 860 facts, about 50 rows of what a reading didn't find, 55 of Stage 1's facts and about 17 "doesn't show" points. A script (`method/r5_cards.py`) gives each run a card per record, with each quote in its source's context, so a run opens a source only where its card doesn't settle a check:
+  - facts, one run per proposal and platform, about 40 runs at about 3 each: about 120;
+  - absences, one run per platform, 5 runs at about 12: about 60;
+  - Yemen, 2 or 3 runs: about 45;
+  - re-checks after fixes, and of what the coordinator's finishing and the company decisions add: about 30.
+- **R6,** about 222, as sized, with its brief checks at their measured cost of about 15.
+
+**The re-sized whole:**
+- **Agents:** 1,171 measured and about 527 to come: **about 1.70 billion,** under the budget of 2 billion. If each facts run took 5 rather than 3, and R6 300 rather than 222, it would be about 1.86 billion.
+- **The coordinator's own:** about 440 million since the re-frame began (18 October, 18:37 UTC), against about 330 expected for the whole; with what remains, about **0.6 billion**.
+- **Together:** about **2.3 billion,** about 82 percent of a week's limit. This week, from the reset on 24 October at 05:00 UTC to 08:40 UTC, used about 117 million.
