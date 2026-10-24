@@ -1,6 +1,6 @@
 # Plan: from the evidence to the decisions that are expensive to change
 
-**Status: agreed by the founder on 12 October 2026 (gate G0), and re-framed after G1 with the founder's go of 18 October 2026 (section 11).** `STATE.md` says where the work is.
+**Status: superseded by `METHOD.md` on 24 October 2026 (section 11), and kept as the record.** It was agreed by the founder on 12 October 2026 (gate G0), and re-framed after G1 with the founder's go of 18 October 2026. `STATE.md` says where the work is.
 
 The coordinating session wrote this plan after the founder asked who would manage the work until it reaches a safe shore, with the right engineering, sequence and framing, leaving the founder only what is genuinely theirs to decide. At G1 the founder re-framed it: the work now ends with proposals the founder accepts or changes (section 1). Where a rule comes from known practice, it names its source, and section 10 lists the sources. A rule without a source is the coordinator's own.
 
@@ -632,3 +632,11 @@ Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge 
   - **A later Yemen state counts at a place** if it is at the same place (as `places.tsv` groups places), or at "place not stated" with a quote saying it holds in all of Yemen; never by geography.
   - **In a proposal's section 6, "allows" is read as what Yemen's evidence allows:** a state showing a practice offered, available or in use supports it at its place and date. Saying that a law, a licence or an authority permits or requires something needs a state that says so.
   - **"Was not found" said of a reading needs its row,** in the drafts' checks too.
+- **24 October 2026: this plan is superseded by `METHOD.md`.**
+  - The founder accepted the method on 24 October, and approved its amendment 1 with the plan of that evening (`founder-messages/2026-10-24-method-accepted.md`, `founder-messages/2026-10-24-approved-plan.md`, `founder-decisions.tsv`).
+  - From then on `METHOD.md` governs the work. This plan stays as the record of the work from 12 to 24 October.
+  - Its principles carry over in `METHOD.md` section 3a:
+    - "Yemen is the first market, not the design target" (section 1);
+    - one platform for many markets;
+    - Yemen's evidence read after the design.
+  - `METHOD.md` section 13 lists the earlier decisions it changes.

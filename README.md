@@ -4,7 +4,12 @@ Questions agreed with the founder, the evidence captured to answer them, and der
 
 **How it got here.** `HISTORY.md` lists the baselines: the commits at the founder's decision points and at planned pauses.
 
-**Where the work stands.** The three questions in `questions/` drive the work now. `NEXT.md` gives their order. `PLAN.md`, agreed on 12 October 2026, re-centres them on the decisions that are expensive to change and sets the order of work. `STATE.md` says where the work is.
+**Where the work stands.**
+- **`METHOD.md`**, adopted by the founder on 24 October 2026, governs the work.
+- **`STATE.md`** says where the work is.
+- **`decisions/subjects.tsv`** lists the subjects, one at a time; the decision records go in `decisions/`.
+- **`reports/`** holds a report at each milestone.
+- **Earlier plans, kept as the record:** the three questions in `questions/`, with `NEXT.md`, were the first plan; `PLAN.md` followed it, from 12 to 24 October.
 
 **What the documents draw on.** The derived documents draw on two kinds of source:
 
@@ -19,6 +24,10 @@ Questions agreed with the founder, the evidence captured to answer them, and der
 
 | Folder | What it holds |
 | --- | --- |
+| `decisions/` | The backlog of subjects (`subjects.tsv`), the decision records, and the record template (`README.md`). |
+| `reports/` | The milestone reports for the founder, one per milestone or planned pause. |
+| `risks.tsv` | The risk register. |
+| `founder-decisions.tsv`, `founder-messages/` | What the founder has decided, and their messages, copied verbatim. |
 | `questions/` | The three agreed questions: Q1, the concern map; Q2, the Yemen stress test; Q3, placing the rows. Each file holds the question as agreed and what was settled before it runs. |
 | `method/capture/` | The capture tools that make the copies in `evidence/`, and how to run them. |
 | `shopify-payments-study/` | Eight reading passes over Shopify's Help Center, developer docs and API schemas: arrangements (A1), the processor (A2), order obligations (B), the payment provider slot (C), the money model (D), point of sale, finance and billing (E), country variability (F) and the Universal Commerce Protocol (G). Statements are from the docs unless marked "Inference". |

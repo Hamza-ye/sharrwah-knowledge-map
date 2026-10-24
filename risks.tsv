@@ -1,0 +1,25 @@
+id	risk	likelihood	impact	mitigation	owner	status	trigger	decisions
+W-01	Research grows without end	M	H	Risk-driven stop; investigations timeboxed; a budget per subject (METHOD.md section 7)	coordinator	open	a subject passes its budget plus a quarter	
+W-02	The founder is asked too much, or can't follow	M	H	Only one-way doors go to the founder, each on one page, in plain words; a report at each milestone and planned pause	coordinator	open	a report runs past two pages, or asks more than its one-way decisions	
+W-03	The plan keeps being rewritten	M	H	METHOD.md changes only by amendment; decisions are superseded, never rewritten	coordinator	open	a change to METHOD.md without an amendment	
+W-04	Agents misread or over-generalize a source	H	M	Checks scaled by level on the facts decisions rest on; quotes by script; conditions written out	coordinator	open	a check finds a fact that says more than its source	
+W-05	Usage limits stop work in flight	M	M	Small tasks, at most 2 at a time, fresh restarts; the check-in is on only while a task runs	coordinator	open	a task stopped by a limit	
+W-06	A market's facts change (two central banks, sanctions, rates)	H	M	Each record that depends on a market names its facts and their dates, and a trigger for review	coordinator	open	a newer source contradicts a cited fact	
+W-07	The first market shapes the core	H	H	The market guard (METHOD.md section 3a), checked by method/decision_status.py --guard	coordinator	open	the guard flags a Built record	
+W-08	Earlier work is lost or redone	M	M	The baseline is frozen and mapped (METHOD.md section 13); HISTORY.md names every baseline by commit	coordinator	open	work that repeats a held record	
+W-09	The guard becomes ceremony	M	M	One field per record, and a script; people review only at levels 2 and 3	coordinator	open	guard sections written by rote	
+W-10	Over-correcting drops real constraints, such as cash on delivery or long-pending payments	M	H	General mechanisms with a precedent are allowed (METHOD.md section 3a)	coordinator	open	a scenario of the first market can't be answered	
+W-11	Scope balloons	M	H	Only the questions a subject needs, at framing; budgets and stop rules	coordinator	open	a subject's framing lists more decisions than a day holds	
+W-12	Spikes become the product	M	H	A separate repository, a timebox, and no promotion of their code (METHOD.md section 5)	coordinator	open	spike code proposed for production	
+W-13	Engineering decisions pass by silent veto	M	M	The veto window starts at the report; level 2 decisions get an independent review	coordinator	open	a report without its engineering decisions listed	
+W-14	Copying Shopify's scale too early	M	M	A blog is one company's account; prefer options that can grow, with stated triggers	coordinator	open	a decision justified only by another platform's scale	
+R-01	The drafts' points say more than their source: about 3 in 10 of those checked; Q5 to Q8 mostly unchecked	H	M	Each fact a decision rests on is checked at the decision's level (METHOD.md section 6)	coordinator	open	a record cites a draft point	
+R-02	Records leave out a limit their source gives: about 1 in 8 of those checked	M	M	Conditions written out at levels 2 and 3	coordinator	open	a record rests on a re-frame record	
+R-03	The Knowledge Map's Salla citations point to moved paths (46 of 51), and its pointers date from 8 October	H	L	Repaired only when a row is used; method/km_select.py marks them	coordinator	open	a subject uses a Salla pointer	
+R-04	The engineering sources cover payments only, and 14 of their 37 are from before 2023	H	M	Each subject adds the outside sources its decisions need (METHOD.md section 5)	coordinator	open	a subject needs outside experience	
+R-05	The Q7 draft keeps the currency table able to hold two rials, against G1's B7	H	H	The guard, at the markets and currency subject	coordinator	open	S-04 framing	S-04
+R-06	The payment seam's contract v0 puts a currency "edition" on every amount, against G1's B7	H	M	The guard test in the first subject	coordinator	open	S-01 framing	S-01
+R-07	Decision 1's evidence needs three corrections: the one-way bar between Sana'a and Aden, Stripe's exclusion, and YK-131	H	H	Corrected before the founder's line (METHOD.md section 14)	coordinator	open	S-01 framing	S-01
+R-08	The company's country is open (O-01), and a design that assumes one would be hard to undo	M	H	The constraint that the design assumes no country for the company, and the change scenario with the company in Oman	founder	open	S-08, or a decision that names the company's country	S-08
+R-09	These sessions can't push git tags, so baselines have no git names	H	L	Baselines named by commit in HISTORY.md	coordinator	accepted		
+R-10	The scheduled check-in's old prompt would resume stopped work	H	H	Turned off on 24 October; its prompt is rewritten to METHOD.md section 9, and it is on only while a task runs	coordinator	mitigated		
