@@ -16,4 +16,11 @@ Continue from `STATE.md`'s next step. Change the method only by a numbered amend
 - `observed-sh` and `observed-sa` are read-only here. Never commit or push to them.
 - Run Python that reads evidence with `python3 -I`.
 - The founder's words are never evidence of what a platform does.
+- **The evidence standard** (`METHOD.md` section 6). Every claim is one of three:
+  - a fact, traced to a file at a commit, an authoritative source with its date, or a check anyone can re-run;
+  - an interpretation, marked as one;
+  - an assumption, marked as one.
+
+  Where evidence falls short, say so and name the work that would settle it. A check tries to refute; it doesn't agree by default.
+- Look evidence up through the evidence repositories' own indexes first: their `README.md` and `docs/READING.md`.
 - Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. Never skip, withhold or mask a file because of them. They come from synthetic environments the founder rotates.

@@ -4,7 +4,8 @@
 # It also runs amendment 2's checks on each record (METHOD.md sections 4, 6 and 10; decisions/README.md):
 # - it has a Terms section and a Scope section;
 # - each term in its Terms table is a "### " heading in architecture/12-glossary.md, and its row names sources;
-# - each top-level item under **Leaves open** names a subject in the backlog (S-nn);
+# - each top-level item under **Leaves open** names a subject in the backlog (S-nn), and says "Carried:" or
+#   "Not carried:"; an accepted record has no item not carried (METHOD.md section 6's acceptance rule);
 # - each record in its depends_on field exists, and it is not accepted before them;
 # - each record id under **Takes as given** is accepted or in its depends_on field.
 # The meaning of a term and the extent of a scope are checked at the record's level, not by this script.
@@ -146,21 +147,28 @@ def terms_scope(records, subject_ids):
                 faults.append(f"{rid}: depends on a record that doesn't exist: {d}")
             elif f.get("status", "").startswith("accepted") and not status_of[d].startswith("accepted"):
                 faults.append(f"{rid}: accepted before {d}, which it depends on ({status_of[d]})")
-        part = None
+        part, items = None, []                 # each top-level item with the lines indented under it
         for n, line in secs.get("Scope", []):
             m = re.match(r"\*\*(Decides|Takes as given|Leaves open):?\*\*", line.strip())
             if m:
                 part = m.group(1)
-                continue
-            if not line.startswith("- "):
-                continue
+            elif line.startswith("- "):
+                items.append([part, n, line.strip()])
+            elif items and line.startswith((" ", "\t")) and line.strip():
+                items[-1][2] += " " + line.strip()
+        accepted = f.get("status", "").startswith("accepted")
+        for part, n, text in items:
             if part == "Leaves open":
-                ids = SUBJECT_ID.findall(line)
+                ids = SUBJECT_ID.findall(text)
                 if not ids:
-                    faults.append(f"{rid}:{n}: left open without a subject: {line.strip()[:100]}")
+                    faults.append(f"{rid}:{n}: left open without a subject: {text[:100]}")
                 faults += [f"{rid}:{n}: no such subject: {s}" for s in ids if s not in subject_ids]
+                if not re.search(r"\b(Not carried|Carried):", text):
+                    faults.append(f"{rid}:{n}: left open without saying whether it is carried: {text[:100]}")
+                elif accepted and "Not carried:" in text:
+                    faults.append(f"{rid}:{n}: accepted, with an item left open that it doesn't carry: {text[:100]}")
             elif part == "Takes as given":
-                for d in RECORD_ID.findall(line):
+                for d in RECORD_ID.findall(text):
                     if d != rid and d not in deps and not status_of.get(d, "").startswith("accepted"):
                         faults.append(f"{rid}:{n}: takes {d} as given, but {d} is neither accepted nor in depends_on")
     return faults

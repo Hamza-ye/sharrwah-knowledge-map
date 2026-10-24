@@ -1,6 +1,6 @@
 # Sharrwah design method
 
-**Status: adopted on 24 October 2026, with amendments 1 and 2 (section 12).** It governs the work. `PLAN.md` stays as the record of how the work got here and is no longer followed. This document changes only by a numbered amendment (section 12). Version 1 as first proposed is at commit `b78686e`.
+**Status: adopted on 24 October 2026, with amendments 1, 2 and 3 (section 12).** It governs the work. `PLAN.md` stays as the record of how the work got here and is no longer followed. This document changes only by a numbered amendment (section 12). Version 1 as first proposed is at commit `b78686e`.
 
 ## 1. What the work must produce
 
@@ -30,7 +30,9 @@ Each part of the method is an established practice, not one invented here. When 
 | Stakeholder needs, stated and confirmed | ISO/IEC/IEEE 29148 | What a stakeholder says is stated as the need or decision it carries, in the project's terms, and the stakeholder confirms it. Here: the founder's messages are framed before they are acted on (section 3). |
 | Ready and done checks for a decision | Zimmermann: START and ecADR | A decision is taken only when it is ready, and is closed only when it meets the done checklist. |
 | One-way and two-way doors | Bezos, 2015 letter to shareholders | Decisions that are hard to undo go to the founder. Decisions that are cheap to undo are made quickly by engineering. |
-| Integrity levels | IEEE 1012 | Verification effort scales with the consequence of being wrong, not uniformly. |
+| Integrity levels | IEEE 1012 | Verification effort scales with the consequence of being wrong, not uniformly. Checkers are independent, and try to refute (section 6). |
+| Claims, arguments and evidence | ISO/IEC/IEEE 15026-2 (assurance cases); Kitchenham, Dybå and Jørgensen 2004 | Every claim is a fact traced to its source, an interpretation marked as one, or an assumption marked as one. A gap in the evidence stays visible, with the work that would close it (section 6). |
+| Decision dependencies | Zimmermann et al. 2009 | A record is accepted only when nothing it leaves open can reverse it (section 6). |
 | Quality-attribute scenarios | ATAM, SEI 2000 | The design is judged by concrete scenarios with expected outcomes, walked through the decisions. |
 | Architecture description | ISO/IEC/IEEE 42010:2022; arc42 | The shape of what the work produces (section 4). |
 | Last responsible moment | Poppendieck 2003 | No decision and no document before it is needed. |
@@ -139,6 +141,8 @@ The guard makes this checkable. It comes from the frame of 10 October (`8946887:
    - cost against budget;
    - what is needed from the founder: one-way decisions only, each with a recommendation and an answer line.
 
+**Every claim in an artifact meets the evidence standard** (section 6).
+
 Briefs, check sheets and notes are working material for a task, made only when the task needs them. They are never deliverables.
 
 ## 5. How work is organized: one subject at a time
@@ -168,6 +172,7 @@ There is one exception. **While a subject waits only for the founder's answer, t
 2. **Evidence** (timeboxed).
    - Take what each decision turns on from the held records: Shopify and Salla first, then the first market's facts from the Stage 1 digest.
    - Take the extent of each term it turns on from the platforms' own structures, and enter it in the glossary (section 4).
+   - **Look evidence up through its own indexes first** (amendment 3e): the evidence repositories' guides (`README.md`, `docs/READING.md`) name their structures, ledgers, derived tables and run notes. Search comes after them, and nothing is read broadly. Each brief names the entry points its task needs.
    - Where something is missing, run one investigation with a stated question, a timebox and a budget. Where documents can't settle it, ask a provider, a lawyer or an official source. **Merchants are not asked** (the founder, 24 October).
    - **An investigation may be a spike:** throwaway code that answers one stated question within a timebox, kept in a separate repository. Its result is evidence, and its code is never promoted.
 3. **Propose.** Each record states:
@@ -178,7 +183,7 @@ There is one exception. **While a subject waits only for the founder's answer, t
    - the consequences, including what would have to change if the decision were reversed;
    - the recommendation.
 4. **Verify,** at the decision's integrity level (section 6).
-5. **Decide.** The founder answers founder decisions. Engineering decisions stand once the two-day veto window, which starts with the milestone report, has passed.
+5. **Decide.** A record is put for acceptance only when it meets section 6's acceptance rule. The founder answers founder decisions. Engineering decisions stand once the two-day veto window, which starts with the milestone report, has passed.
 6. **Close.**
    - Walk the subject's scenarios, and its change scenarios (section 3a), through the accepted decisions (section 8).
    - Run the guard check, and write the arc42 sections the subject fills.
@@ -206,6 +211,19 @@ Following IEEE 1012, checking scales with what a wrong decision would cost. It c
 
 **A record's terms and scope are checked like its facts,** at the same level (amendment 2): each term's meaning and extent against the paths it cites, and each item of its scope against what the record actually decides. At every level, a script checks that each term is in the glossary, that each item left open names a subject in the backlog, and that no record is accepted before the records it depends on.
 
+**The evidence standard** (amendment 3). Every claim in a record, the glossary, a report or a checker's output is one of three, and says which:
+- **a fact,** traced to a file at a commit, to an authoritative source with its date, or to a check anyone can re-run, such as a script and its output;
+- **an interpretation:** a reading of facts, marked as one, naming the facts it reads;
+- **an assumption:** taken as true without evidence, marked as one, with what would confirm or refute it.
+
+Where the evidence is insufficient, the record says so where the claim is made. Its Confirmation section lists each such gap, with the work that would close it and when that work is needed.
+
+**Checks try to refute** (amendment 3). Each checker's brief asks it to test every claim against the evidence, and to report counter-evidence and missing evidence, not agreement. The coordinator checks each finding against its evidence before applying it, and says why when it doesn't apply one.
+
+**When a record is accepted** (amendment 3). Only when its drivers, options, trade-offs, scope and material risks have been examined enough for its level, and nothing it leaves open can reverse it.
+- For each item under **Leaves open**, the record says whether every outcome the deciding subject could reach can be carried without changing the record.
+- If one could not, the record stays proposed until that subject decides, or it is narrowed until none could.
+
 A record is **done** when it passes Zimmermann's ecADR checklist:
 - **E:** we are confident enough that it will work;
 - **C:** at least two options were compared against the criteria;
@@ -218,7 +236,7 @@ A record is **done** when it passes Zimmermann's ecADR checklist:
 These keep the plan bounded. They are the only stop rules.
 1. **A budget per subject,** set at framing. If a subject reaches its budget plus a quarter, work stops and the coordinator reports to the founder before going on. This replaces the rule of 18 October that work stops only if the whole would pass 2 billion tokens (amendment 1h). The 2 billion stays as an upper bound.
 2. **Sample before scaling.** Any check of more than 10 items is first run on 5. If 2 or more of the 5 fail, the check stops, and the step that produced the fault is fixed first.
-3. **Stop on risk, not on completeness.** A subject's investigation stops when its decisions meet the ecADR "E" (confident enough), not when every fact has been checked (Fairbanks: effort in proportion to risk).
+3. **Stop on risk, not on completeness.** A subject's investigation stops when its decisions meet the ecADR "E" (confident enough), not when every fact has been checked (Fairbanks: effort in proportion to risk). The founder's priority, 24 October: evidence-backed closure of the foundational decisions before anything builds on them, in proportion. Not certainty at any cost, endless investigation, or artifacts for their own sake.
 4. **At most 2 agent tasks at a time.** A task starts only if it can finish within the usage window that remains. A task that is stopped is started again on what it has left, not resumed with its old context.
 5. **No new layers.** A new concern goes into the risk register, and an existing practice handles it. Changing the method needs an amendment.
 
@@ -229,6 +247,7 @@ These keep the plan bounded. They are the only stop rules.
   - every evidence id resolves, and every quote is found word for word (by script);
   - at levels 2 and 3, every fact it rests on is written with the conditions its source gives;
   - its terms and scope pass their checks (section 6);
+  - every claim it makes meets the evidence standard, and it meets the acceptance rule (section 6);
   - it passes the guard (section 3a).
 - **Each subject:** it passes its scenarios, and its change scenarios.
   - A scenario follows ATAM's form: a stimulus (something happens), the environment (where and when), the expected response, and how we know.
@@ -246,6 +265,7 @@ These keep the plan bounded. They are the only stop rules.
 ## 10. Change control
 
 - **A decision changes only through a new record that supersedes it.** Both records link to each other, and the old one is never edited.
+  - An accepted record is superseded only on new evidence or a changed context, never by a later decision that could have been foreseen when it was accepted (amendment 3).
 - **What a record rests on** (amendment 2c): its facts on evidence, its terms on the glossary, and what it takes as given on accepted outcomes, which are accepted records and the founder's decisions. Never on another record's or a draft's wording.
   - A record may take a proposed record's outcome as given only by naming it in its `depends_on` field. It is then accepted no earlier than that record.
 - **When evidence changes** (a new capture, a correction), a script lists the records that cite it. They become `under review` and are verified again at their own level.
@@ -275,6 +295,9 @@ These open the risk register, `risks.tsv`, which also holds the risks found on 2
 | W-14 | Copying Shopify's scale too early | A blog is one company's account; options that can grow, with stated triggers |
 | W-15 | A record fixes a word's meaning without knowing its extent, decides beyond its limits, or rests on another record's wording | Terms and Scope in every record, checked at its level; the glossary; section 10's rule on what a record rests on (amendment 2) |
 | W-16 | A message's wording is recorded in place of what it means | Each message from the founder is framed first, and the founder can correct the framing (section 3) |
+| W-17 | Agent costs are estimated without the growth of what an agent re-reads at each step | A step cap in each brief, evidence looked up through its indexes, and the cost measured after the first 10 steps |
+| W-18 | A decision is accepted early, and superseded by a later decision that could have been foreseen | The acceptance rule: no record is accepted while something it leaves open could reverse it (section 6) |
+| W-19 | Checkers agree with a record, or with each other, instead of testing it | Checks try to refute, and the coordinator verifies each finding against its evidence (section 6) |
 
 ## 12. Amendments
 
@@ -323,6 +346,24 @@ It asks each record to know its words and its boundary with work not yet done. I
 - **2d. The founder's messages** are framed first, and the framing is recorded, not the message (section 3).
 - **2e. M1's five records** get 2a to 2c in one pass of about 5 million agent tokens, before Decision 1 goes back to the founder. The pass neither broadens a decision nor starts another subject (section 14).
 - Its practices are added to section 2, and its risks, W-15 and W-16, to section 11.
+
+### Amendment 3, 24 October 2026
+
+**Approval.** The founder set these requirements in their message of 23:01 UTC. This is the coordinator's framing of them, which the founder may correct (`founder-decisions.tsv`).
+
+**Reason.** The founder's requirements, framed:
+- the first decisions and milestones are the foundation for everything after, so they need a clear evidence standard;
+- a decision is accepted only once it has been examined enough. A decision accepted at M1 must not be superseded at M2 by something that could have been foreseen;
+- the priority is evidence-backed closure, in proportion;
+- the held evidence is well indexed, and should be looked up through its indexes.
+
+**What it changes:**
+- **3a. The evidence standard** (sections 4, 6 and 8): every claim is a traced fact, a marked interpretation or a marked assumption. Gaps stay explicit, with the work that would close them.
+- **3b. Checks try to refute** (section 6). The coordinator verifies each finding against its evidence before applying it.
+- **3c. The acceptance rule** (sections 5, 6 and 10): a record is accepted only when examined enough for its level, and when nothing it leaves open can reverse it. An accepted record is superseded only on new evidence or a changed context.
+- **3d. Proportion** (section 7, rule 3).
+- **3e. Evidence is looked up through its own indexes first** (section 5, step 2).
+- Its practices are added to section 2, and its risks, W-17 to W-19, to section 11.
 
 ## 13. Where we start: the position on 24 October 2026
 
@@ -425,9 +466,11 @@ The areas these leave out, such as the storefront, sales channels, B2B, analytic
 - IEEE 1012, *Standard for System, Software, and Hardware Verification and Validation* (integrity levels).
 - IEEE 828, *Standard for Configuration Management in Systems and Software Engineering.*
 - ISO 31000:2018, *Risk management: Guidelines.*
+- ISO/IEC/IEEE 15026-2:2022, *Systems and software assurance, Part 2: Assurance case* (claims, arguments, evidence and assumptions).
 - ISO/IEC/IEEE 29148:2018, *Requirements engineering* (traceability; stakeholder needs and requirements).
 - ISO/IEC/IEEE 42010:2022, *Architecture description.*
 - Kazman, R., Klein, M., Clements, P. (2000). *ATAM: Method for Architecture Evaluation.* CMU/SEI-2000-TR-004.
+- Kitchenham, B., Dybå, T., Jørgensen, M. (2004). Evidence-Based Software Engineering. *Proceedings of the 26th International Conference on Software Engineering (ICSE 2004),* pp. 273–281.
 - Lago, P., van Vliet, H. (2005). Explicit Assumptions Enrich Architectural Models. *Proceedings of the 27th International Conference on Software Engineering (ICSE 2005),* pp. 206–214.
 - MADR, *Markdown Architectural Decision Records,* version 4: https://adr.github.io/madr/
 - Nygard, M. (2011). Documenting Architecture Decisions: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
@@ -436,5 +479,6 @@ The areas these leave out, such as the storefront, sales channels, B2B, analytic
 - Poppendieck, M. and T. (2003). *Lean Software Development: An Agile Toolkit.* Addison-Wesley.
 - Tyree, J., Akerman, A. (2005). Architecture Decisions: Demystifying Architecture. *IEEE Software* 22(2), pp. 19–27 (assumptions, implications and related decisions).
 - Zave, P., Jackson, M. (1997). Four Dark Corners of Requirements Engineering. *ACM Transactions on Software Engineering and Methodology* 6(1).
+- Zimmermann, O., Koehler, J., Leymann, F., Polley, R., Schuster, N. (2009). Managing Architectural Decision Models with Dependency Relations, Integrity Constraints, and Production Rules. *Journal of Systems and Software* 82(8), pp. 1249–1267.
 - Zimmermann, O. (2020). A Definition of Done for Architectural Decision Making (ecADR): https://ozimmer.ch/practices/2020/05/22/ADDefinitionOfDone.html
 - Zimmermann, O. (2023). A Definition of Ready for Architectural Decisions (START): https://ozimmer.ch/practices/2023/12/01/ADDefinitionOfReady.html
