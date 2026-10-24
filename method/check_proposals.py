@@ -3,6 +3,7 @@
 Usage:
   python3 -I method/check_proposals.py records QUESTION PLATFORM [--dir DIR] [--check] [CAPTURE_RUN ...]
   python3 -I method/check_proposals.py drafts QUESTION [--dir DIR] [--file NAME] [--cited]
+  python3 -I method/check_proposals.py decisions FILE
 
 `records` checks one recording run's folder, studies/proposals/records/<QUESTION>/<platform>/ (step R3):
 - selection.tsv: each row's action is copy, set aside or add; a set aside or add row gives its reason; every
@@ -38,6 +39,11 @@ studies/proposals/briefs/R4-drafting.md), or another file of that folder with --
 - as warnings: a Yemen fact without its date; the brief's citing limits, with Yemen facts counted by axis or
   constant and place; the length, and section 1's share of it. notes.md must exist. --cited prints what is cited,
   by kind, and section 6's "doesn't show" points, for the checks that follow (step R5).
+
+`decisions` checks the company decisions' evidence (studies/proposals/briefs/R4-company-decisions.md): its decisions,
+headed `## D1.` and on; every point cites a record of any question or of Stage 1, but for its "Raised by" and "Bears
+on" lines; and the drafts' rules on quoted words, Arabic, Yemen facts' dates, readings that didn't show something and
+"absent".
 
 A live source is checked against the capture runs named, and in this repository's capture runs. Before the
 coordinator captures it, a quote from it is "pending capture", which doesn't fail. Prints each problem, and exits 1
@@ -321,6 +327,59 @@ def check_own(d, q, code, src, held):
     return own
 
 
+def decisions(path):
+    """The company decisions' evidence (studies/proposals/briefs/R4-company-decisions.md): its decisions headed
+    `## D1.` and on, in order; every point cites a record that exists, of any question, but for the "Raised by" and
+    "Bears on" lines; quoted words and Arabic are found in the records the point cites; a Yemen fact gives its date;
+    a reading that didn't show something cites its not-found row or gap; "absent" rests on an absent row."""
+    name = os.path.relpath(path, SKM)
+    text = open(path, encoding="utf-8").read()
+    want = 1
+    for n, line in enumerate(text.splitlines(), start=1):
+        m = re.match(r"^## D(\d+)\.\s+\S", line)
+        if re.match(r"^##(?!#)", line):
+            if not m or int(m.group(1)) != want:
+                err(name, f"line {n}", f"a decision is headed as ## D{want}. followed by its question")
+            want += 1
+    if want == 1:
+        err(name, "", "no decision headed ## D1.")
+    for n, p in points(text):
+        if re.match(r"^[-*]?\s*\*\*(Raised by|Bears on):?\*\*", p):
+            continue
+        pids, yids, vids, aids = draft_ids(p)
+        for i in pids + yids:
+            if not rid.lookup(i):
+                err(name, f"line {n}", f"{i}: no such record")
+        records = [i for i in pids + yids if rid.lookup(i)]
+        if not records:
+            err(name, f"line {n}", "a point that cites no record")
+            continue
+        texts = [rid.text_of(i) for i in records]
+        plain = unquoted(p)
+        for m in QUOTED.finditer(p):
+            raw = next(g for g in m.groups() if g is not None)
+            words = rid.norm(raw)
+            if len(words) < 2:
+                continue
+            if rid.PLATFORM_ID.fullmatch(raw.strip()) or rid.YEMEN_ID.fullmatch(raw.strip()):
+                err(name, f"line {n}", f"an id in quotation marks: {raw}")
+            elif not any(words in t for t in texts if t):
+                err(name, f"line {n}", f"quoted words not found in the records the point cites: {words[:80]}")
+        for m in ARABIC.finditer(p):
+            run = rid.norm(m.group(0)).strip("\u060c\u061b\u061f\u066a\u06d4 ")
+            if ARABIC_LETTER.search(run) and not any(run in t for t in texts if t):
+                err(name, f"line {n}", f"Arabic not found in the records the point cites: {run[:60]}")
+        if NOT_SHOWN.search(plain) and not any(re.search(r"-(?:[GH]\d{4}|N\d{2,3})$", i) for i in pids):
+            err(name, f"line {n}", "a point saying a reading didn't show something cites its not-found row or copied gap")
+        if re.search(r"\babsent\b", plain, re.I) and pids:
+            if not any(re.search(r"-A\d{4}$", i) or (re.search(r"-N\d+$", i) and rid.lookup(i) and
+                       rid.lookup(i)[1].get("kind") == "absent") for i in pids):
+                err(name, f"line {n}", "'absent' without an absent row or a pilot absence")
+        for m in YEMEN_FACT.finditer(p):
+            if not DATE.search(m.group(2) or p[m.end():m.end() + 80]):
+                err(name, f"line {n}", f"{m.group(1)}: a Yemen fact without its date", "warning")
+
+
 def points(text):
     """(line, text) of each point of an account: each list item, with its continuation lines, and each paragraph.
     Headings and blank lines separate points."""
@@ -564,6 +623,8 @@ def main(argv):
                     name = rest[i + 1]
                 del rest[i:i + 2]
         drafts(argv[1], d, name, "--cited" in rest)
+    elif len(argv) == 2 and argv[0] == "decisions":
+        decisions(argv[1])
     elif len(argv) >= 3 and argv[0] == "records":
         rest, d = argv[3:], None
         if "--dir" in rest:
@@ -575,7 +636,8 @@ def main(argv):
         records(argv[1], argv[2], rest, d, checking)
     else:
         sys.exit("usage: check_proposals.py records QUESTION PLATFORM [--dir DIR] [--check] [CAPTURE_RUN ...]\n"
-                 "       check_proposals.py drafts QUESTION [--dir DIR] [--file NAME] [--cited]")
+                 "       check_proposals.py drafts QUESTION [--dir DIR] [--file NAME] [--cited]\n"
+                 "       check_proposals.py decisions FILE")
     levels = {}
     for level, f, i, x in issues:
         levels[level] = levels.get(level, 0) + 1
