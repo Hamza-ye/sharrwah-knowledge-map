@@ -2,19 +2,13 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 24 October 2026, 21:05 UTC.
+**Updated:** 24 October 2026, 21:35 UTC.
 
 **The method:** `METHOD.md`, adopted on 24 October 2026 with amendment 1.
 
-**Milestone:** M1, the money boundary (subject S-01), at step 4, Verify. M0 closed with PR #6 (`reports/M0.md`).
-- **Records, all proposed:**
-  - D-001, who holds sellers' money: the founder's line;
-  - D-002, the payment boundary;
-  - D-003, the seller ledger;
-  - D-004, Decisions 2 to 12 under C;
-  - D-005, installments, deferred.
-- **The guard** flags none of them.
-- **The Knowledge Map:** S-01's 8 questions have dispositions.
+**Milestone:** M1, the money boundary (subject S-01). It waits on the founder's line for Decision 1 (`reports/M1.md`).
+- **Records D-001 to D-005** are checked: D-001 and D-004 at level 3, D-002 and D-003 at level 2. The guard flags none.
+- **M0** closed with PR #6. M1's pull request is PR #7.
 
 **Settled** (`founder-decisions.tsv`):
 - **The guard on money:** nothing that holds sellers' money through Sharrwah goes live without the founder (G1, 18 October).
@@ -38,21 +32,18 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** the level 3 check of D-001 and D-004, on its third pass. It writes `decisions/checks/D-001-D-004-level3.tsv`.
-- **Its first two samples stopped it,** each with 3 fixes. The fixes are applied, and the samples' rows are kept in `…-sample1.tsv` and `…-sample2.tsv`.
-- **The level 2 review of D-002 and D-003 is done:** 9 must-fix and 15 optional findings, all addressed (`decisions/checks/D-002-D-003-dispositions.md`).
-
-The scheduled check-in (`trig_01QJwaNYp764mJnJLh5n5ago`) is on while the check runs (`METHOD.md` section 9).
+**In flight:** no agents. The scheduled check-in is off.
 
 **Budget:**
-- M0 used one agent: the independent review in planning processed 7.3 million tokens over 51 requests, counted by `method/count_tokens.py`.
+- M0 used one agent: the independent review in planning processed 7.3 million tokens.
+- M1's agents processed 22.4 million tokens against its budget of 20 million, under the stop line of 25 million. Both are counted by `method/count_tokens.py`.
 - The 2 billion stays as the upper bound. S-01's budget is 20 million agent tokens.
 
-**The backlog:** `python3 -I method/decision_status.py` gives 16 subjects and no decision records yet.
+**The backlog:** `python3 -I method/decision_status.py` gives 16 subjects and 5 decision records: 4 proposed, 1 deferred.
 
 **Next step:**
-- the level 3 check of D-001 and D-004, and the level 2 review of D-002 and D-003;
-- then fix what they find, and put D-001's line to the founder;
-- then the walkthrough, `reports/M1.md`, and the merge.
+- on the founder's line: accept D-001 and D-004; D-002 and D-003 stand after their veto window;
+- merge PR #7 with `reports/M1.md` as its description, and add the row to `HISTORY.md`;
+- then M2, the spine, with the feasibility test first.
 
 **To resume:** `METHOD.md` section 9. Read `METHOD.md`, then this file, then the open subject's records.

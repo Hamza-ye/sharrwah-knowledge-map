@@ -47,7 +47,7 @@ Chosen option: **1, column C,** with the pilot's recommendation for each:
 | 8. Payout timing (S01-VP-15) | each provider's settlement time, shown to the seller per payment method |
 | 9. Deducted before payout, or billed apart (S01-VP-19) | each provider deducts its own; Sharrwah bills its fees separately |
 | 10. Funds held when the service ends (S01-VP-20) | Sharrwah holds nothing; its terms say each provider's terms apply |
-| 11. When funds go back to buyers (S01-VP-21) | none for Sharrwah; each provider's terms apply |
+| 11. When funds go back to buyers (S01-VP-21) | none for Sharrwah; its terms say each provider's terms apply |
 | 12. A security interest over the seller's funds (S01-VP-10) | Sharrwah takes none; each provider's terms apply to the funds it holds |
 
 ## Consequences
