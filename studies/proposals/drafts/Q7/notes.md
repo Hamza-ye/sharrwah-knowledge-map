@@ -52,9 +52,10 @@
 
 ## Where the draft cites past the guide's counts
 
-- **Statements, copies and citations: 80 distinct ids, past about 40.** They are 48 statements, 23 copies and 9 pilot copies: Shopify 23, Zid 17, WooCommerce 14, BigCommerce 13 and Salla 13. Three things push the count up:
+- **Statements, copies and citations: 86 distinct ids, past about 40.** They are 55 statements, 22 copies and 9 pilot copies: Shopify 30, Zid 16, WooCommerce 14, BigCommerce 13 and Salla 13. Four things push the count up:
   - section 1 says, for four sentences, what each of five platforms does, and each match is shown in each platform's own words, so most points need one id per platform;
-  - section 8's Decision 14 needs each platform's payout currency and held-balance evidence (18 ids, almost all reused from section 1);
+  - the step text from saved HTML added seven Shopify statements, Q7-SH-201 to Q7-SH-207 (below);
+  - section 8's Decision 14 needs each platform's payout currency and held-balance evidence (19 ids, almost all reused from section 1);
   - sections 2 to 7 reuse section 1's ids, adding only BC-K0177, ZD-K0156, SH-P0010, SA-P0079 and SH-099 for fees, legal position and per-method capability.
   - An earlier version cited 155 statement ids; it was cut to the one or two ids that best show each platform's part of a point.
 - **Yemen facts: 14 (an axis or constant at one place), past about 8.**
@@ -71,3 +72,20 @@
 - **Records that disagree:** Zid's help pages Q7-ZD-P0149 (3 August 2026) and Q7-ZD-004 (6 August 2026) aren't reconciled on the currency a buyer is charged with Zid Pay. Section 1 cites both, and the proposal rests on neither.
 - **WooCommerce's policy pages:** the draft rests on none. Its WooCommerce points rest on WooCommerce's documentation and shipped code (woocommerce-11.2.1).
 - **Interruptions:** the run was paused twice by the coordinator. The folder and the scratch directory were intact each time.
+
+## Revised for the step text from saved HTML
+
+- **Read for this revision:** in Shopify's `notes.md`, only the "For the draft" list of "Re-check against the step text from saved HTML, 19 October 2026"; Q7-SH-201 to Q7-SH-207, each looked up with `record_ids.py --all`; their sources with `source_kinds.py`, each `observed`. Each is said as what one step's saved markup held, with the store and date its scope gives, not as what a page showed.
+- **Added:**
+  - Section 1, [1], paid out: Q7-SH-206 (store fake-demo-sharrwah, 30 September 2026), the metric "Payout amount in payout currency" and its description, said as text the markup hid.
+  - Section 1, [1], conversion: Q7-SH-207 (same store and date), the metric "Foreign exchange fees" and its description, said as text the markup hid.
+  - Section 1, [2], a market's default currency: Q7-SH-202 and Q7-SH-203 (store demo-fake-dev-store, a market including Saudi Arabia, 30 September 2026), and Q7-SH-201 (same store and date, a draft order for the market Yemen).
+  - Section 1, [3], who may change: Q7-SH-205 (store capture-plus, 2 October 2026), a "Change store currency" heading with only Save and Cancel. It is not read as a dialog shown open, or as what the dialog holds.
+  - Section 1, [3], rates: Q7-SH-204 (store demo-fake-dev-store, 30 September 2026), both rate options and both rounding options as the markup held them, not which was selected.
+  - Section 2, **exchange rate**: converted prices follow the rounding rule of that currency of the market, drawing on Q7-SH-204.
+  - The stated points these four section 1 points add to are now marked "(stated)", since each now mixes kinds.
+- **Where the draft departs from the re-check's list:** Q7-SH-201 (`bears_on` 1;2) is cited beside the market's currency in [2], not with Q7-SH-123 and Q7-SH-124: it holds a draft order's currency choice, not what an order records. Q7-SH-202 to Q7-SH-204 (`bears_on` 2;3) are cited in [2] and [3], not with Q7-SH-076 in [1].
+- **Tried, then taken out:** Q7-SH-204 in section 6, beside the rial's two rates, since section 6 rests on Yemen's evidence only; Q7-SH-204 in section 3, since section 2 carries the rounding; Q7-SH-201 in section 2's **market**, since its "Other currencies" are a draft order's, not currencies buyers pick.
+- **Also fixed:** three observed statements named without their store or date now give them (Salla's wallets in section 2, Salla's staff permission in section 3, Shopify's rounding in section 2).
+- **Cut to keep the length:** section 3's display-only converter plug-in; the [4] sentence repeating Salla's and Zid's wallets; section 5's repeat of section 1's balances; Zid's deposit minimum (Q7-ZD-K0025 dropped; the point keeps Q7-ZD-N02, now also cited in section 8); the not-found clause in section 2's WooCommerce "Not taken" (Q7-WC-N16 stays in section 1); section 3's rate-provider setter, folded into the staff line; section 8's summary, tightened.
+- **Length:** 5,120 words without ids by this run's count, from 5,000 before the revision; the checker gives no length warning.
