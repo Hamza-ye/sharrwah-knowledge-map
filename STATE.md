@@ -32,10 +32,15 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight,** since 21:30 UTC: M2's feasibility test, read-only (`METHOD.md` section 5: no stall while M1 waits on the founder).
-- **The question:** do Shopify's and Salla's own structures join, area by area, into one capability map?
-- **Its output** stays in the coordinator's scratchpad until M1 merges, then goes into M2's pull request.
-- **The scheduled check-in** is on while it runs.
+**In flight:** no agents. The scheduled check-in is off.
+
+**M2's feasibility test** is done (read-only; 8.2 million tokens). Its report is in the coordinator's scratchpad, and goes into M2's pull request once M1 merges. Its verdict is **partly feasible:**
+- **Within each platform,** the structures say which permission gates which page.
+- **Between the two,** nothing joins them automatically:
+  - a hand-made crosswalk of about 80 to 120 terms would let events and API groups join by rule (an estimate);
+  - permissions join only by hand;
+  - placing the platforms' groups into the 34 areas is hand work.
+- **A full map** would take about 18 to 26 agent hours (an estimate). M2's scope and budget are set at its framing, with options for the founder.
 
 **Budget:**
 - M0 used one agent: the independent review in planning processed 7.3 million tokens.
