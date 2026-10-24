@@ -45,7 +45,7 @@
 
 ## Where the draft cites past the guide
 
-- 82 statements, copies and citations, against about 40: Shopify 22, Salla 20, Zid 19, WooCommerce 12, BigCommerce 9. The question has two sentences and the proposal 13 elements, on three platforms read in depth. Each section 1 point that names a match cites one record for each platform in it. Of the 84 ids section 1 cites, 74 are cited again in sections 2 to 7, which add two of their own (Q6-SA-038, Q6-SA-K0083).
+- 86 statements, copies and citations, against about 40: Shopify 26, Salla 20, Zid 19, WooCommerce 12, BigCommerce 9 (82 before the revision below). The question has two sentences and the proposal 13 elements, on three platforms read in depth. Each section 1 point that names a match cites one record for each platform in it. Of the 88 ids section 1 cites, 75 are cited again in sections 2 to 7, which add two of their own (Q6-SA-038, Q6-SA-K0083).
 - 12 Yemen facts, against about 8: seven elements have a Yemen fact bearing on them. **Provider choice** needs the outside services that don't work for Yemen (Stripe, PayPal) and one in Yemen that does (Floosak); **Restricted places**, **Verification** and **Seller entity** each need two facts at different places.
 - 3 "Yemen's evidence doesn't show" points, against about 2: each is a different element's set-up for Yemen (**Verification**, **Seller entity**, **Eligibility rules**).
 - Not-found rows and copied gaps: 4, within the guide.
@@ -53,7 +53,23 @@
 ## Problems with the brief or the tools
 
 - The Write tool refused to write `.md` files from this run ("Subagents should return findings as text"). I wrote `draft.md` and `notes.md` with the shell and Python instead.
-- `record_ids.py` prints only the first citations of a Stage 1 axis or constant ("... and N more citations"). To read the quotes behind the states I used, I looked up their `YE-` citation ids, which it accepts.
-- `check_proposals.py` misses a Yemen fact's date when the place itself has parentheses, as in "E-Pay (Kuraimi Islamic Microfinance Bank)'s service" and "Zid Pay Kuwait (Zid)'s service": it warned "a Yemen fact without its date". The draft writes those inner parentheses as square brackets, with the words unchanged. The check of Yemen facts after me should read them as the digest's places.
+- `record_ids.py` prints only the first citations of a Stage 1 axis or constant ("... and N more citations"). To read the quotes behind the states I used, I looked up their `YE-` citation ids, which it accepts. (Since then, `record_ids.py --all` prints every quote an id rests on.)
+- `check_proposals.py` misses a Yemen fact's date when the place itself has parentheses, as in "E-Pay (Kuraimi Islamic Microfinance Bank)'s service" and "Zid Pay Kuwait (Zid)'s service": it warned "a Yemen fact without its date". I first wrote those inner parentheses as square brackets, with the words unchanged. The checker now reads a Yemen place with its own brackets, and the revised draft gives both places in the digest's wording (see below).
 - The in-depth platforms' `notes.md` have no list of account points left unchecked. WooCommerce's notes list in-depth account points "not sorted because they rest only on N or G ids"; the draft takes these as not "not checked", so it doesn't flag "not checked on WooCommerce" beside the gaps it cites (Q6-SH-G0217, Q6-SA-G0213, Q6-SA-N03, Q6-ZD-G0055).
 - Two readings a checker may want to look at: the match on term for entity types rests on Salla's "فرداَ" and Zid's "فرد" being one word; and Salla's dashboard strings, classed as observed, name no store, so the draft scopes them by their capture date only.
+
+## Revised for the step text from saved HTML
+
+Revised on 24 October 2026, at the coordinator's request, for Shopify's re-check against observed-sh's text of saved step HTML (commit 51626891aa711ee9c3ef2d05ce63c95396dca949).
+
+- Read: Shopify's two new account points (Q6-SH-044 to Q6-SH-048, store ibx5bt-xy, observed 30 September 2026); the "For the draft" part of the section "Re-check against the step text from saved HTML, 19 October 2026" in Shopify's `notes.md`; `record_ids.py --all` for Q6-SH-044 to Q6-SH-048; `source_kinds.py` on their source, which it gives as observed.
+- Each new statement is said as the saved markup's text of one step, with its store and date, and, where its note says so, that the step's accessibility tree showed the same words.
+- Section 1, [1], entity types: added store ibx5bt-xy's organization step, holding two Yemen entities, one "Company" and one "Individual" (Q6-SH-045).
+- Section 1, [1], the seller's place: added store ibx5bt-xy's billing-address step, holding two legal entities marked "YE" and "Country/region [Yemen] Yemen" (Q6-SH-046). The re-check's account point also says the accessibility tree marks that field disabled, with Yemen its one option; that is in the statement's note, not its quote, so the draft doesn't rest on it.
+- Section 1, [2], a store in Yemen: added store ibx5bt-xy's third-party providers step, holding the same six names (Q6-SH-048), and its Payments step, holding "Choose a provider" and "Additional payment providers" (Q6-SH-047).
+- Section 2, **Seller entity**: the types for Yemen now rest on store ibx5bt-xy's organization step (Q6-SH-045), not on Q6-SH-K2674, which section 1 still cites; the same step adds to "A Seller may hold several entities".
+- Section 2, **Provider choice**: two Yemen stores' records name the same six third-party providers (Q6-SH-041, Q6-SH-048).
+- Section 5, several entities and stores: added Q6-SH-045. Section 7, payment providers: added Q6-SH-048.
+- Section 6: the places of YK-452 and of YA-62's Zid Pay Kuwait state are back in the digest's wording, "E-Pay (Kuraimi Islamic Microfinance Bank)'s service" and "Zid Pay Kuwait (Zid)'s service".
+- Not cited: Q6-SH-044. Its Yemen entity on store ibx5bt-xy's General step adds a second store to Q6-SH-035, which the draft doesn't cite; the store's address, which the draft uses, is in the citation all four cited statements share.
+- After the revision: 86 statements, copies and citations; the other counts unchanged; about 5,130 words, section 1 about 1,640 (about 4,980 and 1,520 before). The checker reports no errors or warnings, and the same three notes on counts past the guide.
